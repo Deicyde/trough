@@ -143,7 +143,7 @@ public theorem exists_shriekImage_distTriang_system (f : X₁ ⟶ Y₁)
 
 [Tag 0G53](https://stacks.math.columbia.edu/tag/0G53) in the Stacks Project.
 
-**`CategoryTheory.Pro.exists_diagonalRepresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/DiagonalRepresentation.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/DiagonalRepresentation.lean#L494). The attribute's comment: “diagonal_representation”.
+**`CategoryTheory.Pro.exists_diagonalRepresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/DiagonalRepresentation.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/DiagonalRepresentation.lean#L494). The attribute's comment: “diagonal\_representation”.
 
 > **Stacks Project, Tag 0G53 (diagonal representation).** A countable inverse
 > system of pro-objects, each represented by an inverse sequence, has a diagonal
@@ -157,7 +157,7 @@ public theorem exists_diagonalRepresentation {C : Type u} [Category.{v} C]
     Nonempty (DiagonalRepresentation P M e)
 ```
 
-**`CategoryTheory.Pro.diagonalRepresentation_uniqueUpToIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/DiagonalUniqueness.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/DiagonalUniqueness.lean#L39). The attribute's comment: “diagonal_uniqueness”.
+**`CategoryTheory.Pro.diagonalRepresentation_uniqueUpToIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/DiagonalUniqueness.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/DiagonalUniqueness.lean#L39). The attribute's comment: “diagonal\_uniqueness”.
 
 > The diagonal inverse sequence is uniquely pro-isomorphic to any other representation `G` of
 > the same functor of points: there is a unique pro-morphism to `G` compatible with the comparison
@@ -237,7 +237,7 @@ public theorem compositionRepresentation_uniqueUpToIso {C : Type u'} [Category.{
           (liftedInverseSequence r'.system)).symm φ = r.comparison.hom
 ```
 
-**`AlgebraicGeometry.lowerShriekComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/CompositionLowerShriek.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/CompositionLowerShriek.lean#L216). The attribute's comment: “the definition of Rg_! Rf_! K”.
+**`AlgebraicGeometry.lowerShriekComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/CompositionLowerShriek.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/CompositionLowerShriek.lean#L216). The attribute's comment: “the definition of Rg\_! Rf\_! K”.
 
 > **Stacks Project, Tag 0G54**, the definition. In Situation [Stacks, Tag 0F42] let
 > `f : X ⟶ Y` and `g : Y ⟶ Z` be composable morphisms of `FTS_S`, with compactifications `cf` of `X`
@@ -259,7 +259,7 @@ public noncomputable def lowerShriekComp (f : X ⟶ Y) (g : Y ⟶ Z)
     (K : BoundedCoherentDerived X.left) : ProSeq (BoundedCoherentDerived Z.left)
 ```
 
-**`AlgebraicGeometry.lowerShriekCompPointsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/CompositionLowerShriek.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/CompositionLowerShriek.lean#L229). The attribute's comment: “Hom(Rg_! Rf_! K, L) = colim_n Hom(Rg_! M_n, L) for every inverse system (M_n) giving Rf_! K”.
+**`AlgebraicGeometry.lowerShriekCompPointsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/CompositionLowerShriek.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/CompositionLowerShriek.lean#L229). The attribute's comment: “Hom(Rg\_! Rf\_! K, L) = colim\_n Hom(Rg\_! M\_n, L) for every inverse system (M\_n) giving Rf\_! K”.
 
 > **Stacks Project, Tag 0G54**, the defining property: for every inverse system `(M_n)` of
 > `D^b_{Coh}(𝒪_Y)` giving `Rf_! K`,
@@ -277,7 +277,7 @@ public noncomputable def lowerShriekCompPointsIso (f : X ⟶ Y) (g : Y ⟶ Z)
       colimit (M.rightOp ⋙ ProSeq.pointsFunctor (lowerShriek g cg))
 ```
 
-**`AlgebraicGeometry.lowerShriekCompHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/CompositionLowerShriek.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/CompositionLowerShriek.lean#L242). The attribute's comment: “Hom_Pro(Rg_! Rf_! K, L) = colim_n Hom_Pro(Rg_! M_n, L)”.
+**`AlgebraicGeometry.lowerShriekCompHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/CompositionLowerShriek.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/CompositionLowerShriek.lean#L242). The attribute's comment: “Hom\_Pro(Rg\_! Rf\_! K, L) = colim\_n Hom\_Pro(Rg\_! M\_n, L)”.
 
 > **Stacks Project, Tag 0G54**, the displayed formula with `Hom`-sets of pro-objects: for every
 > inverse system `(M_n)` giving `Rf_! K` and every `L` in `D^b_{Coh}(𝒪_Z)`,
@@ -349,8 +349,8 @@ def lowerShriekCompIso (f : X ⟶ Y) (g : Y ⟶ Z)
 > functorial in `K` in `D^b_{Coh}(𝒪_X)`. This is the third construction of the source: for `L` in
 > `D^b_{Coh}(𝒪_Y)`,
 >
-> `Hom(Rf_! K, L) = Hom_X(K, f^! L) ⟶ Hom_U(K|_U, (f^! L)|_U) = Hom_U(K|_U, g^! L)
->   = Hom(Rg_!(K|_U), L)`,
+> `Hom(Rf\_! K, L) = Hom\_X(K, f^! L) ⟶ Hom\_U(K|\_U, (f^! L)|\_U) = Hom\_U(K|\_U, g^! L)
+>   = Hom(Rg\_!(K|\_U), L)`,
 >
 > by [Stacks, Tag 0G51] twice and `g^! = j^* ∘ f^!` (the construction of the upper shriek
 > functors, `Stacks.Duality.UpperShriekDuality.upperShriekStdPrecompOpenIso`), and the
@@ -383,7 +383,7 @@ theorem lowerShriekOpenImmersionMapOfCompactification_eq_lowerShriekOpenImmersio
       lowerShriekOpenImmersionMap f c i (c.precompOpen i.left)
 ```
 
-**`AlgebraicGeometry.lowerShriekOpenImmersionMapOfCompactification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/LowerShriekCovarianceCompactification.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/LowerShriekCovarianceCompactification.lean#L45). The attribute's comment: “construction (2): Rf̄_* applied to the map Rj'_!(K|_U) ⟶ Rj_! K of Tag 0G4Y”.
+**`AlgebraicGeometry.lowerShriekOpenImmersionMapOfCompactification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/LowerShriekCovarianceCompactification.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/LowerShriekCovarianceCompactification.lean#L45). The attribute's comment: “construction (2): Rf̄\_* applied to the map Rj'\_!(K|\_U) ⟶ Rj\_! K of Tag 0G4Y”.
 
 > **[Stacks, Tag 0G56], construction (2).** Let `f : X ⟶ Y` be a morphism of `FTS_S`,
 > `i : U ⟶ X` an open immersion, `c` a compactification `j : X ⟶ X̄` of `X` over `Y` with structure
@@ -399,7 +399,7 @@ def lowerShriekOpenImmersionMapOfCompactification (f : X ⟶ Y)
       lowerShriek f c
 ```
 
-**`AlgebraicGeometry.lowerShriekOpenImmersionMapOfComposition`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/LowerShriekCovarianceComposition.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/LowerShriekCovarianceComposition.lean#L407). The attribute's comment: “construction (1): Rf_! applied to the map Ri_!(K|_U) ⟶ K of Tag 0G4Y, through Rg_! = Rf_! ∘ Ri_! of Tag 0G55, functorial in K”.
+**`AlgebraicGeometry.lowerShriekOpenImmersionMapOfComposition`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/LowerShriekCovarianceComposition.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/LowerShriekCovarianceComposition.lean#L407). The attribute's comment: “construction (1): Rf\_! applied to the map Ri\_!(K|\_U) ⟶ K of Tag 0G4Y, through Rg\_! = Rf\_! ∘ Ri\_! of Tag 0G55, functorial in K”.
 
 > In Situation [Stacks, Tag 0F42] let `f : X ⟶ Y` be a morphism of `FTS_S`, `i : U ⟶ X` an
 > open immersion and `g = f ∘ i`. The canonical map `Rg_!(K|_U) ⟶ Rf_! K`, functorial in `K` in
@@ -457,8 +457,8 @@ theorem lowerShriekOpenImmersionMapOfComposition_eq_lowerShriekOpenImmersionMapO
 >
 > functorial in `K` in `D^b_{Coh}(𝒪_X)`, defined by the sequence of maps
 >
-> `Hom(Rf_! K, L) = Hom_X(K, f^! L) ⟶ Hom_U(h^* K, h^*(f^! L)) = Hom_U(h^* K, h^! f^! L)
->   = Hom_U(h^* K, g^! L) = Hom(Rg_!(h^* K), L)`
+> `Hom(Rf\_! K, L) = Hom\_X(K, f^! L) ⟶ Hom\_U(h^* K, h^*(f^! L)) = Hom\_U(h^* K, h^! f^! L)
+>   = Hom\_U(h^* K, g^! L) = Hom(Rg\_!(h^* K), L)`
 >
 > for `L` in `D^b_{Coh}(𝒪_Y)`: [Stacks, Tag 0G51] twice, `h^* = h^!` ([Stacks, Tag 0FWI]) and
 > `h^! ∘ f^! = g^!` ([Stacks, Tag 0ATX]); the functoriality in `L` gives the morphism of
@@ -493,8 +493,8 @@ def lowerShriekEtaleMap (f : X ⟶ Y) (c : CompactificationOf (Over.mk f.left)) 
 > ([Stacks, Tag 0B6U], [Stacks, Tag 0BV7], [Stacks, Tag 0BVG], [Stacks, Tag 0BUL]), and the trace
 > element `τ_{U/X} : 𝒪_U ⟶ ω_{U/X}` ([Stacks, Tag 0BVJ]): for `L` in `D^b_{Coh}(𝒪_Y)`,
 >
-> `Hom(Rf_! K, L) = Hom_X(K, f^! L) ⟶ Hom_U(h^* K, h^* f^! L) ⟶ Hom_U(h^* K, h^! f^! L)
->   = Hom_U(h^* K, g^! L) = Hom(Rg_!(h^* K), L)`,
+> `Hom(Rf\_! K, L) = Hom\_X(K, f^! L) ⟶ Hom\_U(h^* K, h^* f^! L) ⟶ Hom\_U(h^* K, h^! f^! L)
+>   = Hom\_U(h^* K, g^! L) = Hom(Rg\_!(h^* K), L)`,
 >
 > by [Stacks, Tag 0G51] twice and `h^! ∘ f^! = g^!` ([Stacks, Tag 0ATX]); the functoriality in `L`
 > gives the morphism of pro-objects by [Stacks, Tag 0G2X] (`AlgebraicGeometry.lowerShriekMapOfHom`).

@@ -14,7 +14,7 @@ Section 60.15 of the Stacks Project, [Tag 07J5](https://stacks.math.columbia.edu
 
 [Tag 07J6](https://stacks.math.columbia.edu/tag/07J6) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.crystalConnectionCris`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalConnectionCris.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalConnectionCris.lean#L347). The attribute's comment: “the canonical connection ∇ : F ⟶ F ⊗_{𝒪_{X/S}} Ω_{X/S} of a crystal F on Cris(X/S), a morphism of abelian sheaves: on every T it is p₁^* s - p₀^* s on the first-order thickening T' of 07J2, read through (F ⊗ Ω_{X/S})_T = F_T ⊗ Ω_{T/S,δ}”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.crystalConnectionCris`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalConnectionCris.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalConnectionCris.lean#L347). The attribute's comment: “the canonical connection ∇ : F ⟶ F ⊗\_\{𝒪\_\{X/S}} Ω\_\{X/S} of a crystal F on Cris(X/S), a morphism of abelian sheaves: on every T it is p₁^* s - p₀^* s on the first-order thickening T' of 07J2, read through (F ⊗ Ω\_\{X/S})\_T = F\_T ⊗ Ω\_\{T/S,δ}”.
 
 > **The canonical connection of a crystal, as a morphism of abelian sheaves
 > `∇ : F ⟶ F ⊗_{𝒪_{X/S}} Ω_{X/S}` on `Cris(X/S)`.**  On the ambient scheme `T` of every object it
@@ -25,7 +25,7 @@ Section 60.15 of the Stacks Project, [Tag 07J5](https://stacks.math.columbia.edu
 def crystalConnectionCris : abelianSheaf F ⟶ tensorDifferentialFormsSheaf F 1
 ```
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.crystalConnectionCris_isIntegrableConnection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalIntegrableConnectionCris.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalIntegrableConnectionCris.lean#L153). The attribute's comment: “a crystal F on Cris(X/S) has a canonical integrable connection: ∇ = crystalConnectionCris : F ⟶ F ⊗ Ω_{X/S}, a morphism of abelian sheaves, satisfies the Leibniz rule, is p₁^* s - p₀^* s on every T, its extension F ⊗ Ω ⟶ F ⊗ Ω² obeys ∇(s ⊗ ω) = ∇(s) ∧ ω + s ⊗ d ω, and ∇ ∘ ∇ = 0”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.crystalConnectionCris_isIntegrableConnection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalIntegrableConnectionCris.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalIntegrableConnectionCris.lean#L153). The attribute's comment: “a crystal F on Cris(X/S) has a canonical integrable connection: ∇ = crystalConnectionCris : F ⟶ F ⊗ Ω\_\{X/S}, a morphism of abelian sheaves, satisfies the Leibniz rule, is p₁^* s - p₀^* s on every T, its extension F ⊗ Ω ⟶ F ⊗ Ω² obeys ∇(s ⊗ ω) = ∇(s) ∧ ω + s ⊗ d ω, and ∇ ∘ ∇ = 0”.
 
 > **A crystal `F` in `𝒪_{X/S}`-modules on `Cris(X/S)` comes equipped with a canonical integrable
 > connection.**  The connection is

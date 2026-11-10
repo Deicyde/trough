@@ -108,7 +108,7 @@ structure NormalizedBlowupFactorization (B : BigFppfSite.{u}) (S : Scheme.{u})
     (f : Y ⟶ X)
 ```
 
-**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.GlobalNormalizedBlowupFactorization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean, line 526](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean#L526). The attribute's comment: “the left-hand side of the equivalence: the factorization of the morphism to X by normalized blowings up at closed points lying over {x₁, …, xₙ}”.
+**`AlgebraicGeometry.Space.ClosedPointNeighborhoods.GlobalNormalizedBlowupFactorization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean, line 526](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizedBlowupsAtClosedPoints.lean#L526). The attribute's comment: “the left-hand side of the equivalence: the factorization of the morphism to X by normalized blowings up at closed points lying over \{x₁, …, xₙ}”.
 
 > **Stacks 0BHL**, the condition on the morphism to `X`: `f : Y ⟶ X` factors as
 >

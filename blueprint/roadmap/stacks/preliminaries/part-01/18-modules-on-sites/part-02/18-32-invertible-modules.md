@@ -173,7 +173,7 @@ theorem isInvertible_iff_exists_tensor_iso_unit
         SheafOfModules.unit (Stacks.SheafOfModules.TensorSheafification.structureSheaf O hO))
 ```
 
-**`Stacks.SheafOfModules.exists_cover_isDirectSummand_finiteFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleSummandNoSliceSheafify.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleSummandNoSliceSheafify.lean#L378). The attribute's comment: “(b), invertible_local_summand”.
+**`Stacks.SheafOfModules.exists_cover_isDirectSummand_finiteFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleSummandNoSliceSheafify.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleSummandNoSliceSheafify.lean#L378). The attribute's comment: “(b), invertible\_local\_summand”.
 
 > **Stacks Project, Tag 0B8N (b).** On a cover of any object, an invertible module embeds as a
 > direct summand of a finite free module. The two sheafification hypotheses are used only by

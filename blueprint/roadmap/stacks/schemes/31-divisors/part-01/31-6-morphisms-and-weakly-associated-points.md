@@ -148,7 +148,7 @@ lemma isWeaklyAssociatedPoint_of_baseChange {k K : Type u} [Field k] [Field K] [
 
 [Tag 0EY0](https://stacks.math.columbia.edu/tag/0EY0) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.PushforwardRegularity.isWeaklyRegular_stalk_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PushforwardRegularity/Basic.lean, line 827](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PushforwardRegularity/Basic.lean#L827). The attribute's comment: “pushforward_two_step”.
+**`Stacks.AlgebraicGeometry.PushforwardRegularity.isWeaklyRegular_stalk_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PushforwardRegularity/Basic.lean, line 827](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PushforwardRegularity/Basic.lean#L827). The attribute's comment: “pushforward\_two\_step”.
 
 > **[Stacks, Tag 0EY0] part (5).** Let `f : X ⟶ S` be a quasi-compact and quasi-separated
 > morphism of schemes and let `F` be a quasi-coherent `𝒪_X`-module flat over `S`. If `a, b` is a
@@ -171,7 +171,7 @@ public theorem isWeaklyRegular_stalk_pushforward [QuasiCompact f] [QuasiSeparate
       ((Scheme.Modules.pushforward f).obj F).val.presheaf s) [a, b]
 ```
 
-**`Stacks.AlgebraicGeometry.PushforwardRegularity.min_depth_le_depth_stalk_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PushforwardRegularity/Depth.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PushforwardRegularity/Depth.lean#L103). The attribute's comment: “flat_pushforward_depth”.
+**`Stacks.AlgebraicGeometry.PushforwardRegularity.min_depth_le_depth_stalk_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PushforwardRegularity/Depth.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PushforwardRegularity/Depth.lean#L103). The attribute's comment: “flat\_pushforward\_depth”.
 
 > **[Stacks, Tag 0EY0] part (6).** Let `f : X ⟶ S` be a quasi-compact and quasi-separated
 > morphism of schemes and let `F` be a quasi-coherent `𝒪_X`-module flat over `S`. If the stalk
@@ -234,7 +234,7 @@ theorem exists_nbhd_openStalkComparison_exact [QuasiCompact f] [QuasiSeparated f
             ∃ y, x = a • y
 ```
 
-**`Stacks.AlgebraicGeometry.PushforwardRegularity.not_isAssociatedPoint_pushforward_of_not_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PushforwardRegularity/OutsideImage.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PushforwardRegularity/OutsideImage.lean#L52). The attribute's comment: “outside_association”.
+**`Stacks.AlgebraicGeometry.PushforwardRegularity.not_isAssociatedPoint_pushforward_of_not_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PushforwardRegularity/OutsideImage.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PushforwardRegularity/OutsideImage.lean#L52). The attribute's comment: “outside\_association”.
 
 > Let `f : X ⟶ S` be a quasi-compact and quasi-separated morphism of schemes and let `F` be a
 > quasi-coherent `𝒪_X`-module. A point of `S` outside the image of `f` is not an associated point
@@ -247,7 +247,7 @@ public theorem not_isAssociatedPoint_pushforward_of_not_mem_range {X S : Scheme.
     ¬ Stacks.Divisors.IsAssociatedPoint ((Scheme.Modules.pushforward f).obj F) s
 ```
 
-**`Stacks.AlgebraicGeometry.PushforwardRegularity.two_le_depth_stalk_of_isIso_unit_of_notMem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PushforwardRegularity/OutsideImageDepth.lean, line 492](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PushforwardRegularity/OutsideImageDepth.lean#L492). The attribute's comment: “part (3), for an open immersion rather than a general quasi-compact quasi-separated morphism, and with S locally Noetherian in place of the tag's Noetherian 𝒪_{S,s} — which is the form both consumers of hdepthOutside use”.
+**`Stacks.AlgebraicGeometry.PushforwardRegularity.two_le_depth_stalk_of_isIso_unit_of_notMem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PushforwardRegularity/OutsideImageDepth.lean, line 492](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PushforwardRegularity/OutsideImageDepth.lean#L492). The attribute's comment: “part (3), for an open immersion rather than a general quasi-compact quasi-separated morphism, and with S locally Noetherian in place of the tag's Noetherian 𝒪\_\{S,s} — which is the form both consumers of hdepthOutside use”.
 
 > **Stacks Project, Tag 0EY0, part (3), for an open immersion.** Let `X` be a locally
 > Noetherian scheme, let `V ⊆ X` be open and let `ℋ` be an `𝒪_X`-module of finite type which is
@@ -295,7 +295,7 @@ public theorem two_le_depth_stalk_pushforward_of_notMem_range [QuasiCompact f] [
 
 Declarations registered for the tag:
 
-- [`Stacks.AlgebraicGeometry.PushforwardRegularity.isSMulRegular_stalk_pushforward`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PushforwardRegularity/Basic.lean#L666), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/PushforwardRegularity/Depth.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PushforwardRegularity/Depth.lean#L64) (StacksFrontier): “pushforward_nonzerodivisor”.
+- [`Stacks.AlgebraicGeometry.PushforwardRegularity.isSMulRegular_stalk_pushforward`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PushforwardRegularity/Basic.lean#L666), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/PushforwardRegularity/Depth.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PushforwardRegularity/Depth.lean#L64) (StacksFrontier): “pushforward\_nonzerodivisor”.
 - [`WeakAssPushforward.not_isWeaklyAssociatedPoint_pushforward_of_not_mem_range`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=WeakAssPushforward.not_isWeaklyAssociatedPoint_pushforward_of_not_mem_range#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/PushforwardRegularity/OutsideImageDepthGeneral.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PushforwardRegularity/OutsideImageDepthGeneral.lean#L107) (StacksFrontier): “part (1)”.
 
 ## Depends on

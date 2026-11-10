@@ -16,8 +16,8 @@ Section 14.12 of the Stacks Project, [Tag 017Z](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.SimplicialObject.Truncated`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.Truncated#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L115) (StacksFrontier): “Simp_n(C), functors Δ_{≤n}ᵒᵖ ⥤ C (morphisms are natural transformations)”. References: SGA 4 V (7.1.0).
-- [`SimplexCategory.Truncated`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SimplexCategory.Truncated#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L117) (StacksFrontier): “Δ_{≤n}”. References: SGA 4 V (7.1.0); SGA 4 Vbis (3.0.1).
+- [`CategoryTheory.SimplicialObject.Truncated`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.Truncated#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L115) (StacksFrontier): “Simp\_n(C), functors Δ\_\{≤n}ᵒᵖ ⥤ C (morphisms are natural transformations)”. References: SGA 4 V (7.1.0).
+- [`SimplexCategory.Truncated`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SimplexCategory.Truncated#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L117) (StacksFrontier): “Δ\_\{≤n}”. References: SGA 4 V (7.1.0); SGA 4 Vbis (3.0.1).
 
 ## Depends on
 

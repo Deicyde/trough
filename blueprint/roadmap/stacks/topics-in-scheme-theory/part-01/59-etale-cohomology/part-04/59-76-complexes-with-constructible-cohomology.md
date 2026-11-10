@@ -14,7 +14,7 @@ Section 59.76 of the Stacks Project, [Tag 095V](https://stacks.math.columbia.edu
 
 [Tag 095W](https://stacks.math.columbia.edu/tag/095W) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.ConstructibleDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/Basic.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/Basic.lean#L67). References: SGA 5 I (App.1.1), “constant Λ coefficients”; SGA 5 IIIB (6.1), “D_c(-)”.
+**`Stacks.EtaleCohomology.ConstructibleDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/Basic.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/Basic.lean#L67). References: SGA 5 I (App.1.1), “constant Λ coefficients”; SGA 5 IIIB (6.1), “D\_c(-)”.
 
 > The full subcategory of the unbounded derived category of small-étale
 > `Λ`-module sheaves with constructible cohomology sheaves.
@@ -31,7 +31,7 @@ public abbrev ConstructibleDerivedCategory (B : BigEtaleSite.{u}) (X : B.Scheme)
       HasWeakSheafify ((SmallEtale.topology B T.1 T.property).over V) (ModuleCat.{w} Λ)]
 ```
 
-**`Stacks.EtaleCohomology.ConstructibleEtaleDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ConstructibleEtaleDerivedCategory.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ConstructibleEtaleDerivedCategory.lean#L48). The attribute's comment: “the full subcategory of D(X_ét, Λ) of complexes whose cohomology sheaves are constructible, for module sections in any universe containing that of the schemes”. References: SGA 5 IIIB (6.1).
+**`Stacks.EtaleCohomology.ConstructibleEtaleDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ConstructibleEtaleDerivedCategory.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/ConstructibleEtaleDerivedCategory.lean#L48). The attribute's comment: “the full subcategory of D(X\_ét, Λ) of complexes whose cohomology sheaves are constructible, for module sections in any universe containing that of the schemes”. References: SGA 5 IIIB (6.1).
 
 > **Stacks 095W.** `D_c(X_ét, Λ)`: the full subcategory of the unbounded derived category of
 > sheaves of `Λ`-modules on the small étale site of `X` on the complexes all of whose cohomology

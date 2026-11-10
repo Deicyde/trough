@@ -28,7 +28,7 @@ public theorem numberOfBranches_eq_encard_normalizationFiber
         Scheme.normalization X hX y = x}
 ```
 
-**`AlgebraicGeometry.numberOfGeometricBranches_eq_card_sigma_sepDegree_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationBranches.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationBranches.lean#L112). The attribute's comment: “geometric_branches”.
+**`AlgebraicGeometry.numberOfGeometricBranches_eq_card_sigma_sepDegree_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationBranches.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationBranches.lean#L112). The attribute's comment: “geometric\_branches”.
 
 > The number of geometric branches at a point is the sum, over the points of the normalization
 > above it, of the separable degrees of the corresponding residue-field extensions, interpreted
@@ -109,7 +109,7 @@ public def IsWedge (A : Type u) {n : ℕ} (B : Fin (n + 1) → Type v)
 
 [Tag 0C42](https://stacks.math.columbia.edu/tag/0C42) in the Stacks Project.
 
-**`Ring.deltaInvariant_ge_numberOfGeometricBranches_sub_one_of_strictlyHenselian`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/DeltaBranchBound.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/DeltaBranchBound.lean#L78). The attribute's comment: “delta_ge_branches_sub_one”.
+**`Ring.deltaInvariant_ge_numberOfGeometricBranches_sub_one_of_strictlyHenselian`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/DeltaBranchBound.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/DeltaBranchBound.lean#L78). The attribute's comment: “delta\_ge\_branches\_sub\_one”.
 
 > The delta invariant of a strictly henselian reduced Nagata
 > local ring is at least the number of its geometric branches minus one.
@@ -123,7 +123,7 @@ public lemma deltaInvariant_ge_numberOfGeometricBranches_sub_one_of_strictlyHens
       numberOfGeometricBranchesOfLocalRing A - 1
 ```
 
-**`Ring.exists_isWedge_of_deltaInvariant_eq_numberOfGeometricBranches_sub_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/DeltaBranchBound.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/DeltaBranchBound.lean#L350). The attribute's comment: “equality_implies_wedge”.
+**`Ring.exists_isWedge_of_deltaInvariant_eq_numberOfGeometricBranches_sub_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/DeltaBranchBound.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/DeltaBranchBound.lean#L350). The attribute's comment: “equality\_implies\_wedge”.
 
 > A strictly henselian, reduced, one-dimensional Nagata local ring attaining the lower bound
 > for its delta invariant is a wedge of a nonempty finite family of strictly henselian discrete

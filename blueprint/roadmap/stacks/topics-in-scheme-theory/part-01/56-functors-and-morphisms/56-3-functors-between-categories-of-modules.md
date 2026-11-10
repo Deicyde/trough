@@ -108,7 +108,7 @@ public noncomputable def tensorFunctorEquivalence :
         (IsLinearRightExactAndPreservesDirectSums R A B)
 ```
 
-**`ModuleCat.tensorFunctorEquivalence_functorIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/LinearTensorEquivalence.lean, line 793](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/LinearTensorEquivalence.lean#L793). The attribute's comment: “given by tensoring”. References: EGA III (7.2.6), “N ↦ T_N”.
+**`ModuleCat.tensorFunctorEquivalence_functorIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/LinearTensorEquivalence.lean, line 793](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsBetweenCategories/LinearTensorEquivalence.lean#L793). The attribute's comment: “given by tensoring”. References: EGA III (7.2.6), “N ↦ T\_N”.
 
 > The functor underlying `tensorFunctorEquivalence` is naturally isomorphic to the functor
 > which sends a module `K` to tensoring with `K`.

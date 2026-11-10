@@ -92,7 +92,7 @@ theorem preservesColimit_higherDirectImage_of_isBasis
 
 [Tag 0A37](https://stacks.math.columbia.edu/tag/0A37) in the Stacks Project.
 
-**`Stacks.Cohomology.SpectralLimit.SpectralAbelianSheafSystem.nonempty_and_isIso_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SpectralSpaceLimit/ComparisonInEveryDegree.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SpectralSpaceLimit/ComparisonInEveryDegree.lean#L270). The attribute's comment: “quasi-compact open: colim_{a : j → i} Hᵖ(f_a⁻¹(Uᵢ), 𝓕ⱼ) = Hᵖ(pᵢ⁻¹(Uᵢ), 𝓕) for every p ≥ 0”.
+**`Stacks.Cohomology.SpectralLimit.SpectralAbelianSheafSystem.nonempty_and_isIso_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SpectralSpaceLimit/ComparisonInEveryDegree.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SpectralSpaceLimit/ComparisonInEveryDegree.lean#L270). The attribute's comment: “quasi-compact open: colim\_\{a : j → i} Hᵖ(f\_a⁻¹(Uᵢ), 𝓕ⱼ) = Hᵖ(pᵢ⁻¹(Uᵢ), 𝓕) for every p ≥ 0”.
 
 > **Stacks 0A37, over a quasi-compact open of a stage.**  For a cofiltered system of spectral
 > spaces `Xⱼ` with spectral transition maps and abelian sheaves `𝓕ⱼ` with compatible `f`-maps, the

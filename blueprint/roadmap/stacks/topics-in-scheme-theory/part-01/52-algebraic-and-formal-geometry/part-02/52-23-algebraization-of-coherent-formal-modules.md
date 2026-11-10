@@ -124,7 +124,7 @@ theorem canonicallyExtends_of_regularSequence (hreg : HasRegularSequenceOnComple
     (h2 : HasFiniteLowDegreeCohomology S F) : CanonicallyExtends S F
 ```
 
-**`Stacks.Algebraization.essImage_completionFunctor_of_regularSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/RegularSequenceCanonicalExtension.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/RegularSequenceCanonicalExtension.lean#L418). The attribute's comment: “in particular, if A is complete, the system is the completion of a coherent 𝒪_U-module”.
+**`Stacks.Algebraization.essImage_completionFunctor_of_regularSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/RegularSequenceCanonicalExtension.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/RegularSequenceCanonicalExtension.lean#L418). The attribute's comment: “in particular, if A is complete, the system is the completion of a coherent 𝒪\_U-module”.
 
 > **Stacks Project, Tag 0EJS, the second sentence.** Under the hypotheses of Stacks 0EJS, if
 > `A` is moreover `I`-adically complete, then `(F_n)` is the completion of a coherent
@@ -267,7 +267,7 @@ theorem canonicallyExtends_of_flatLocalBase (B : FlatLocalBase S F)
     (h3 : HasFiniteLowDegreeCohomology S F) : CanonicallyExtends S F
 ```
 
-**`Stacks.Algebraization.essImage_completionFunctor_of_flatLocalBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/FlatLocalBaseCanonicalExtension.lean, line 505](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/FlatLocalBaseCanonicalExtension.lean#L505). The attribute's comment: “in particular, over an I-adically complete A the system is the completion of a coherent 𝒪_U-module”.
+**`Stacks.Algebraization.essImage_completionFunctor_of_flatLocalBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/FlatLocalBaseCanonicalExtension.lean, line 505](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/FlatLocalBaseCanonicalExtension.lean#L505). The attribute's comment: “in particular, over an I-adically complete A the system is the completion of a coherent 𝒪\_U-module”.
 
 > **Stacks Project, Tag 0EJU, the concluding sentence.** Under the hypotheses of Stacks 0EJU, if
 > `A` is moreover `I`-adically complete, then `(F_n)` is the completion of a coherent
@@ -283,7 +283,7 @@ theorem essImage_completionFunctor_of_flatLocalBase [IsAdicComplete S.I S.A]
 
 [Tag 0EJV](https://stacks.math.columbia.edu/tag/0EJV) in the Stacks Project.
 
-**`Stacks.Algebraization.isCompletionOfCoherent_of_flat_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ProperLocalBaseAlgebraization.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ProperLocalBaseAlgebraization.lean#L82). The attribute's comment: “algebraization: a flat object of Coh(U, 𝔪𝒪_U) with j_*F₁ and R¹j_*F₁ coherent is the completion of a coherent 𝒪_U-module”.
+**`Stacks.Algebraization.isCompletionOfCoherent_of_flat_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ProperLocalBaseAlgebraization.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/ProperLocalBaseAlgebraization.lean#L82). The attribute's comment: “algebraization: a flat object of Coh(U, 𝔪𝒪\_U) with j\_*F₁ and R¹j\_*F₁ coherent is the completion of a coherent 𝒪\_U-module”.
 
 > **Stacks 0EJV, algebraization over a complete local base.** Let `(R, 𝔪)` be a complete
 > Noetherian local ring, let `p : X ⟶ Spec R` be proper, let `Z` be a closed subset of the special
@@ -308,7 +308,7 @@ theorem isCompletionOfCoherent_of_flat_of_isCoherent
     IsCompletionOfCoherent ((baseIdealSheaf R (IsLocalRing.maximalIdeal R) p).comap U.ι) F
 ```
 
-**`Stacks.Algebraization.exists_specialFibre_directImage_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/SpecialFibreDirectImages.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/SpecialFibreDirectImages.lean#L116). The attribute's comment: “the closing paragraph: F₁ is a coherent sheaf on the special fibre U₁, and j_*F₁ = j₁,*F₁ and R¹j_*F₁ = R¹j₁,*F₁ for the special fibre j₁ : U₁ → X₁ of j”.
+**`Stacks.Algebraization.exists_specialFibre_directImage_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/SpecialFibreDirectImages.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/SpecialFibreDirectImages.lean#L116). The attribute's comment: “the closing paragraph: F₁ is a coherent sheaf on the special fibre U₁, and j\_*F₁ = j₁,*F₁ and R¹j\_*F₁ = R¹j₁,*F₁ for the special fibre j₁ : U₁ → X₁ of j”.
 
 > **Stacks 0EJV, the closing paragraph: `j_*F_1` and `R¹j_*F_1` are conditions on the special
 > fibre.** Let `(R, 𝔪)` be a Noetherian local ring, `p : X ⟶ Spec R` proper, `U ⊆ X` open with
@@ -341,7 +341,7 @@ theorem exists_specialFibre_directImage_iso
               1).obj G))
 ```
 
-**`Stacks.Algebraization.isCoherent_specialFibre_directImages_of_hasPropertySk_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/SpecialFibreSerreCriterion.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/SpecialFibreSerreCriterion.lean#L255). The attribute's comment: “the closing paragraph: if X₁ is (S₂) and irreducible, dim(X₁) - dim(Z) ≥ 3 and F₁ is a locally free O_{U₁}-module, then j₁,*F₁ and R¹j₁,*F₁ are coherent”.
+**`Stacks.Algebraization.isCoherent_specialFibre_directImages_of_hasPropertySk_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/SpecialFibreSerreCriterion.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/SpecialFibreSerreCriterion.lean#L255). The attribute's comment: “the closing paragraph: if X₁ is (S₂) and irreducible, dim(X₁) - dim(Z) ≥ 3 and F₁ is a locally free O\_\{U₁}-module, then j₁,*F₁ and R¹j₁,*F₁ are coherent”.
 
 > **Stacks 0EJV, the closing paragraph: the `(S₂)` criterion on the special fibre.** Let
 > `(R, 𝔪)` be a Noetherian local ring, `p : X ⟶ Spec R` locally of finite type, `Z ⊆ X` closed and

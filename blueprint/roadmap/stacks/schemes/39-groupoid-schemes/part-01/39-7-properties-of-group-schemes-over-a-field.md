@@ -59,7 +59,7 @@ theorem isSeparated_of_groupScheme_over_field {k : Type u} [Field k]
 
 [Tag 047M](https://stacks.math.columbia.edu/tag/047M) in the Stacks Project.
 
-**`AlgebraicGeometry.existsUnique_irreducibleComponent_containing_identity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/IdentityComponent.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/IdentityComponent.lean#L283). The attribute's comment: “identity_component_unique”. References: SGA 3 VIA (2.4), “(i) irred., base field”; SGA 3 VIA (2.6.5), “(a)”.
+**`AlgebraicGeometry.existsUnique_irreducibleComponent_containing_identity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/IdentityComponent.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/IdentityComponent.lean#L283). The attribute's comment: “identity\_component\_unique”. References: SGA 3 VIA (2.4), “(i) irred., base field”; SGA 3 VIA (2.6.5), “(a)”.
 
 > **Stacks Project, Tag 047M.** A group scheme over a field has a unique irreducible
 > component containing its identity point.
@@ -72,7 +72,7 @@ theorem existsUnique_irreducibleComponent_containing_identity
       (η[Over.mk f]).left (IsLocalRing.closedPoint k) ∈ (Z : Set G)
 ```
 
-**`AlgebraicGeometry.geometricallyIrreducible_irreducibleComponent_of_identity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/IdentityComponentGeometric.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/IdentityComponentGeometric.lean#L125). The attribute's comment: “identity_component_geometrically_irreducible”. References: SGA 3 VIA (2.4), “(i) geom. irred., field”; SGA 3 VIA (2.6.5), “(ii) geom. irreducible”; SGA 3 VIA (2.6.2).
+**`AlgebraicGeometry.geometricallyIrreducible_irreducibleComponent_of_identity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/IdentityComponentGeometric.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/IdentityComponentGeometric.lean#L125). The attribute's comment: “identity\_component\_geometrically\_irreducible”. References: SGA 3 VIA (2.4), “(i) geom. irred., field”; SGA 3 VIA (2.6.5), “(ii) geom. irreducible”; SGA 3 VIA (2.6.2).
 
 > **Stacks Project, Tag 047M.** An irreducible component of a group scheme over a field
 > which contains the identity is geometrically irreducible over that field.
@@ -88,7 +88,7 @@ theorem geometricallyIrreducible_irreducibleComponent_of_identity
           TopologicalSpace.Closeds G)).subschemeι ≫ f)
 ```
 
-**`AlgebraicGeometry.existsUnique_minimalPrime_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/LocalMinimalPrime.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/LocalMinimalPrime.lean#L183). The attribute's comment: “local_unique_minimal_prime”.
+**`AlgebraicGeometry.existsUnique_minimalPrime_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/LocalMinimalPrime.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/LocalMinimalPrime.lean#L183). The attribute's comment: “local\_unique\_minimal\_prime”.
 
 > **Stacks Project, Tag 047M.** Every local ring of a group scheme over a field has a
 > unique minimal prime ideal.
@@ -104,7 +104,7 @@ theorem existsUnique_minimalPrime_stalk (k : Type u) [Field k]
 
 [Tag 047R](https://stacks.math.columbia.edu/tag/047R) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_closedSubgroupScheme_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverFieldProperties/Reduction.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverFieldProperties/Reduction.lean#L49). References: SGA 3 VIA (0.2), “perfect k: G_red ≤ G”; SGA 3 VIA (5.6), “more general”; SGA 3 VIB (12.1), “Over the base field”; SGA 3 XII (1.0), “partial”.
+**`AlgebraicGeometry.exists_closedSubgroupScheme_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverFieldProperties/Reduction.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverFieldProperties/Reduction.lean#L49). References: SGA 3 VIA (0.2), “perfect k: G\_red ≤ G”; SGA 3 VIA (5.6), “more general”; SGA 3 VIB (12.1), “Over the base field”; SGA 3 XII (1.0), “partial”.
 
 > The reduction of a group scheme over a perfect field is a closed subgroup scheme.
 

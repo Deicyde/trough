@@ -14,7 +14,7 @@ Section 109.10 of the Stacks Project, [Tag 0E0F](https://stacks.math.columbia.ed
 
 [Tag 0E0G](https://stacks.math.columbia.edu/tag/0E0G) in the Stacks Project.
 
-**`AlgebraicGeometry.curvesGeomred_isOpenSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGeometricallyReducedOpen.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGeometricallyReducedOpen.lean#L338). The attribute's comment: “the open substack Curves^{geomred} of Curves”.
+**`AlgebraicGeometry.curvesGeomred_isOpenSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGeometricallyReducedOpen.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGeometricallyReducedOpen.lean#L338). The attribute's comment: “the open substack Curves^\{geomred} of Curves”.
 
 > **Stacks 0E0G, the open substack.** `Curves^{geomred}`, the strictly full subcategory of
 > families of curves whose fibres are geometrically reduced (Stacks 0E08), is an open substack of
@@ -29,7 +29,7 @@ theorem curvesGeomred_isOpenSubstack :
         (curvesSubstackInclusion B hZ _ (isOpenCurvesLocus_curvesGeomred B hZ).prop_of_hom)
 ```
 
-**`AlgebraicGeometry.factors_curvesGeomred_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGeometricallyReducedOpen.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGeometricallyReducedOpen.lean#L351). The attribute's comment: “part (1): the classifying morphism of a family of curves factors through Curves^{geomred} iff the fibres of the family are geometrically reduced”.
+**`AlgebraicGeometry.factors_curvesGeomred_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGeometricallyReducedOpen.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGeometricallyReducedOpen.lean#L351). The attribute's comment: “part (1): the classifying morphism of a family of curves factors through Curves^\{geomred} iff the fibres of the family are geometrically reduced”.
 
 > **Stacks 0E0G, part (1).** The classifying morphism of a family of curves `X ⟶ S` factors
 > through `Curves^{geomred}` exactly when the fibres of `X ⟶ S` are geometrically reduced
@@ -45,7 +45,7 @@ theorem factors_curvesGeomred_iff (U : BigFppfOver B integerBase hZ)
       IsGeometricallyReducedFamily B hZ (y.obj (Over.mk (𝟙 U.left)))
 ```
 
-**`AlgebraicGeometry.factors_curvesGeomred_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGeometricallyReducedOpen.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGeometricallyReducedOpen.lean#L367). The attribute's comment: “part (2): for a proper scheme of dimension at most one over a field, the classifying morphism factors through Curves^{geomred} iff the scheme is geometrically reduced over the field”.
+**`AlgebraicGeometry.factors_curvesGeomred_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGeometricallyReducedOpen.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGeometricallyReducedOpen.lean#L367). The attribute's comment: “part (2): for a proper scheme of dimension at most one over a field, the classifying morphism factors through Curves^\{geomred} iff the scheme is geometrically reduced over the field”.
 
 > **Stacks 0E0G, part (2).** Let `X` be a proper scheme of dimension at most one over a field
 > `k` (with `Spec k` in the site, so that the classifying morphism `Spec k ⟶ Curves` of `X`
@@ -66,7 +66,7 @@ theorem factors_curvesGeomred_over_field_iff
       IsGeometricallyReducedOver X.hom
 ```
 
-**`AlgebraicGeometry.curvesGeomred_isOpenSubstack_and_factors_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGeometricallyReducedOpen.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGeometricallyReducedOpen.lean#L389). The attribute's comment: “the whole statement: the open substack Curves^{geomred} and parts (1) and (2)”.
+**`AlgebraicGeometry.curvesGeomred_isOpenSubstack_and_factors_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGeometricallyReducedOpen.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGeometricallyReducedOpen.lean#L389). The attribute's comment: “the whole statement: the open substack Curves^\{geomred} and parts (1) and (2)”.
 
 > **Stacks 0E0G.** There is an open substack `Curves^{geomred} ⊂ Curves` — the strictly full
 > subcategory of families of curves with geometrically reduced fibres, whose inclusion is

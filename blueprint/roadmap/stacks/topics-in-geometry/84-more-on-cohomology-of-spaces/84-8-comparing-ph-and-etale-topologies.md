@@ -14,7 +14,7 @@ Section 84.8 of the Stacks Project, [Tag 0DGS](https://stacks.math.columbia.edu/
 
 [Tag 0DGT](https://stacks.math.columbia.edu/tag/0DGT) in the Stacks Project.
 
-**`AlgebraicGeometry.BigPHSpaceSite.isIso_phToBigEtale_unit_app_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigPhSmallEtalePullbackSheaf.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigPhSmallEtalePullbackSheaf.lean#L134). The attribute's comment: “part (1), the equality ε_{X,*}a_X⁻¹ℱ = π_X⁻¹ℱ”.
+**`AlgebraicGeometry.BigPHSpaceSite.isIso_phToBigEtale_unit_app_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigPhSmallEtalePullbackSheaf.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigPhSmallEtalePullbackSheaf.lean#L134). The attribute's comment: “part (1), the equality ε\_\{X,*}a\_X⁻¹ℱ = π\_X⁻¹ℱ”.
 
 > **Stacks 0DGT, part (1), `ε_{X,*}a_X⁻¹ℱ = π_X⁻¹ℱ`.** For a sheaf of sets `ℱ` on `X_étale` the
 > unit `π_X⁻¹ℱ ⟶ ε_{X,*}ε_X⁻¹π_X⁻¹ℱ = ε_{X,*}a_X⁻¹ℱ` is an isomorphism.
@@ -28,7 +28,7 @@ theorem isIso_phToBigEtale_unit_app_inverseImage
       ((E.bigToSmallEtaleMorphism (etaleSpace P E h X)).inverseImage.obj ℱ))
 ```
 
-**`AlgebraicGeometry.BigPHSpaceSite.isIso_phToSmallEtale_unit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigPhSmallEtalePullbackSheaf.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigPhSmallEtalePullbackSheaf.lean#L147). The attribute's comment: “part (1), the equality a_{X,*}a_X⁻¹ℱ = ℱ”.
+**`AlgebraicGeometry.BigPHSpaceSite.isIso_phToSmallEtale_unit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigPhSmallEtalePullbackSheaf.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigPhSmallEtalePullbackSheaf.lean#L147). The attribute's comment: “part (1), the equality a\_\{X,*}a\_X⁻¹ℱ = ℱ”.
 
 > **Stacks 0DGT, part (1), `a_{X,*}a_X⁻¹ℱ = ℱ`.** For a sheaf of sets `ℱ` on `X_étale` the unit
 > `ℱ ⟶ a_{X,*}a_X⁻¹ℱ` is an isomorphism. It is the unit of `π_X⁻¹ ⊣ π_{X,*}`, an isomorphism by

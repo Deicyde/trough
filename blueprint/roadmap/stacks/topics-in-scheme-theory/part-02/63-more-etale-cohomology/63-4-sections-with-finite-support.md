@@ -180,7 +180,7 @@ public def finiteSupportPushforward
 
 [Tag 0F6N](https://stacks.math.columbia.edu/tag/0F6N) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.fShriekFunctorIsoProperSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean#L196). The attribute's comment: “functor comparison of the two models of f_!”.
+**`AlgebraicGeometry.SmallEtale.fShriekFunctorIsoProperSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/DerivedLowerShriekQuasiFinite.lean#L196). The attribute's comment: “functor comparison of the two models of f\_!”.
 
 > The two models of the direct image with compact support agree: the
 > sheafification of the finite-support direct image presheaf is the proper-support subsheaf of
@@ -770,7 +770,7 @@ public def cechFamilyIsoProperSupport (hU : ∀ i, IsAffineOpen (U i)) {n : ℕ}
         properSupportFunctor.{u, max (u + 1) v} B (openSchemeι B (coverOpen B U t) ≫ f)
 ```
 
-**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.cechComplexObj_isColimit_cokernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean#L150). The attribute's comment: “f_! F is the cokernel of the penultimate map of the complex of Stacks 0F5H”.
+**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.cechComplexObj_isColimit_cokernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean#L150). The attribute's comment: “f\_! F is the cokernel of the penultimate map of the complex of Stacks 0F5H”.
 
 > **Stacks 0F5I.** For an open covering of `X` and an abelian sheaf `F` on the small étale site
 > of `X`, the sheaf `f_! F` is the cokernel of the penultimate differential of the Čech complex of
@@ -785,7 +785,7 @@ public def cechComplexObj_isColimit_cokernel (hU : (⨆ i, U i) = ⊤)
       ((cechComplexObj.{u, v} B f U F).d_comp_d 2 1 0))
 ```
 
-**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.cechComplex_isColimit_cokernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean#L185). The attribute's comment: “the functor f_! is that cokernel, the alternative construction”.
+**`AlgebraicGeometry.SmallEtale.OpenCoverShriek.cechComplex_isColimit_cokernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekOpenCoverCokernel.lean#L185). The attribute's comment: “the functor f\_! is that cokernel, the alternative construction”.
 
 > **Stacks 0F5I.** The alternative construction of the functor `f_!` for a locally quasi-finite
 > morphism: for an open covering of `X` the functor `f_!` is the cokernel, in the category of
@@ -1107,7 +1107,7 @@ public instance isIso_fShriekBaseChangeMap :
     IsIso (fShriekBaseChangeMap.{u} B p f' f g sq F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekBaseChangeNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 703](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L703). The attribute's comment: “the isomorphism g⁻¹f_!F ≅ f'_!(p⁻¹F), functorial in F”.
+**`AlgebraicGeometry.SmallEtale.fShriekBaseChangeNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean, line 703](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeIso.lean#L703). The attribute's comment: “the isomorphism g⁻¹f\_!F ≅ f'\_!(p⁻¹F), functorial in F”.
 
 > **Stacks 0F5J.** For a cartesian square with `f` locally quasi-finite there is an
 > isomorphism `g⁻¹f_!F ≅ f'_!(p⁻¹F)`, functorial in the abelian sheaf `F` on the small étale site
@@ -1237,7 +1237,7 @@ public def fiberBaseChangeSupport (sq : IsPullback p f' f g)
     FiniteSupport B f' (baseChange B g V)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fiberBaseChangeSectionsMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean, line 614](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean#L614). The attribute's comment: “the pullback map H_Z(F) ⟶ H_{Z'}(p⁻¹F) on supported sections”.
+**`AlgebraicGeometry.SmallEtale.fiberBaseChangeSectionsMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean, line 614](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekBaseChangeSupport.lean#L614). The attribute's comment: “the pullback map H\_Z(F) ⟶ H\_\{Z'}(p⁻¹F) on supported sections”.
 
 > **Stacks 0F5J.** The pullback map on supported sections: a section of `F` supported on a
 > support `E` finite over `V` is carried by the unit of the inverse-image adjunction to a section
@@ -1386,7 +1386,7 @@ public theorem fShriekCompProperIso_eq_of_isSeparated [IsSeparated (B.inclusion.
           (properSupportFunctor.{u, max (u + 1) v} B g)
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekCompProperIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportIso.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportIso.lean#L592). The attribute's comment: “the canonical isomorphism g_! ∘ f'_! ≅ f_!”.
+**`AlgebraicGeometry.SmallEtale.fShriekCompProperIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportIso.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompProperSupportIso.lean#L592). The attribute's comment: “the canonical isomorphism g\_! ∘ f'\_! ≅ f\_!”.
 
 > **Stacks 0F79.** Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of a big étale site with `f`
 > and `f ≫ g` locally quasi-finite (locally of finite type and locally quasi-finite) and `g`
@@ -1476,7 +1476,7 @@ public theorem fShriekCompIso_baseChange :
           (fShriekFunctor.{u, u + 1} B g')
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompIso.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompIso.lean#L136). The attribute's comment: “the canonical isomorphism (g ∘ f)_! ≅ g_! ∘ f_!”.
+**`AlgebraicGeometry.SmallEtale.fShriekCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekCompIso.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekCompIso.lean#L136). The attribute's comment: “the canonical isomorphism (g ∘ f)\_! ≅ g\_! ∘ f\_!”.
 
 > **Stacks 0F6T.** For composable locally quasi-finite morphisms `f : X ⟶ Y` and `g : Y ⟶ Z`
 > there is a canonical isomorphism of functors `(g ∘ f)_! ≅ g_! ∘ f_!` on abelian étale sheaves:

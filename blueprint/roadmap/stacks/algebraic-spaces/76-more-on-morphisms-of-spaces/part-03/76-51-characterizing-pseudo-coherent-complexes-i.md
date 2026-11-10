@@ -65,7 +65,7 @@ theorem nonempty_derivedChowDatum (X : AlgebraicSpaces B (Spec (.of A)) hA)
 
 [Tag 0CTS](https://stacks.math.columbia.edu/tag/0CTS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.DerivedChowDatum.isFinitePresentation_overOpenToOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/Restriction.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/Restriction.lean#L179). The attribute's comment: “the closed immersion c|_W : W ⟶ V of the statement is of finite presentation”.
+**`AlgebraicGeometry.Space.DerivedChowDatum.isFinitePresentation_overOpenToOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/Restriction.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/Restriction.lean#L179). The attribute's comment: “the closed immersion c|\_W : W ⟶ V of the statement is of finite presentation”.
 
 > **Stacks 0CTS, first assertion.** For `X` of finite presentation over `S`, the closed
 > immersion `c|_W : W ⟶ V` is of finite presentation.

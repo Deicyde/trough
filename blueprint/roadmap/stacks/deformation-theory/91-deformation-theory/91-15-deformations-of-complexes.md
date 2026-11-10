@@ -47,7 +47,7 @@ theorem canonicalObstructionMap_baseChange
         ((derivedExtensionScalarsGeneral.{u, u, u} b).maps_boundedAbove ⟨K, hK⟩)).1
 ```
 
-**`Deformation.Obstruction.existsUnique_isCanonicalObstructionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/CanonicalObstructionMap/DerivedMorphism.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/CanonicalObstructionMap/DerivedMorphism.lean#L296). The attribute's comment: “canonical_obstruction_map”.
+**`Deformation.Obstruction.existsUnique_isCanonicalObstructionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/CanonicalObstructionMap/DerivedMorphism.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/CanonicalObstructionMap/DerivedMorphism.lean#L296). The attribute's comment: “canonical\_obstruction\_map”.
 
 > There is a unique morphism represented by the squares of lifted differentials on every
 > bounded-above free representative, independently of the lifts and all comparison data.
@@ -84,7 +84,7 @@ theorem canonicalObstructionMap_natural
             (Deformation.Obstruction.squareZeroKernelObject f hf))
 ```
 
-**`Deformation.Obstruction.canonicalObstructionMap_eq_zero_iff_exists_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/CanonicalObstructionVanishing.lean, line 714](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/CanonicalObstructionVanishing.lean#L714). The attribute's comment: “vanishing_criterion”.
+**`Deformation.Obstruction.canonicalObstructionMap_eq_zero_iff_exists_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/CanonicalObstructionVanishing.lean, line 714](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/CanonicalObstructionVanishing.lean#L714). The attribute's comment: “vanishing\_criterion”.
 
 > A bounded-above derived complex over `R` lifts across a square-zero surjection
 > `R' → R` exactly when its canonical obstruction morphism is zero.

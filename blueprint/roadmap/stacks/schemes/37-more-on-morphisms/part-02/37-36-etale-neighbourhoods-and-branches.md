@@ -36,7 +36,7 @@ theorem encard_minimalPrimes_directLimit
 
 [Tag 0CB4](https://stacks.math.columbia.edu/tag/0CB4) in the Stacks Project.
 
-**`AlgebraicGeometry.numberOfGeometricBranches_eq_iSup_encard`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Branches.lean, line 568](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Branches.lean#L568). The attribute's comment: “geometric_branches_supremum”.
+**`AlgebraicGeometry.numberOfGeometricBranches_eq_iSup_encard`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Branches.lean, line 568](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Branches.lean#L568). The attribute's comment: “geometric\_branches\_supremum”.
 
 > **Stacks Project, Tag 0CB4.** The number of geometric branches at a point is the
 > supremum, over all étale neighborhoods of that point, of the number of irreducible components
@@ -50,7 +50,7 @@ theorem numberOfGeometricBranches_eq_iSup_encard
         Set.encard {Z ∈ irreducibleComponents U.scheme | U.point ∈ Z}
 ```
 
-**`AlgebraicGeometry.numberOfBranches_eq_iSup_encard_irreducibleComponentsThrough`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Branches.lean, line 1093](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Branches.lean#L1093). The attribute's comment: “branches_supremum”.
+**`AlgebraicGeometry.numberOfBranches_eq_iSup_encard_irreducibleComponentsThrough`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Branches.lean, line 1093](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Branches.lean#L1093). The attribute's comment: “branches\_supremum”.
 
 > **Stacks Project, Tag 0CB4.** The number of branches at a point is the
 > supremum, over elementary étale neighborhoods, of the number of irreducible
@@ -64,7 +64,7 @@ theorem numberOfBranches_eq_iSup_encard_irreducibleComponentsThrough
         Set.encard {Z ∈ irreducibleComponents U.scheme | U.point ∈ Z}
 ```
 
-**`AlgebraicGeometry.isUnibranchAt_iff_existsUnique_irreducibleComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/UnibranchEtaleCriterion.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/UnibranchEtaleCriterion.lean#L70). The attribute's comment: “unibranch_iff”.
+**`AlgebraicGeometry.isUnibranchAt_iff_existsUnique_irreducibleComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/UnibranchEtaleCriterion.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/UnibranchEtaleCriterion.lean#L70). The attribute's comment: “unibranch\_iff”.
 
 > **Stacks Project, Tag 0CB4.** A scheme is unibranch at a point if and only if every
 > elementary étale neighbourhood of that point has exactly one irreducible component passing
@@ -77,7 +77,7 @@ theorem isUnibranchAt_iff_existsUnique_irreducibleComponent (X : Scheme.{u}) (x 
         ∃! Z : irreducibleComponents U.scheme, U.point ∈ (Z : Set U.scheme)
 ```
 
-**`AlgebraicGeometry.isGeometricallyUnibranchAt_iff_existsUnique_irreducibleComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/UnibranchEtaleCriterion.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/UnibranchEtaleCriterion.lean#L89). The attribute's comment: “geometrically_unibranch_iff”. References: EGA IV (7.9.10), “more general”; SGA 3 X (5.14.0), “partial”.
+**`AlgebraicGeometry.isGeometricallyUnibranchAt_iff_existsUnique_irreducibleComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/UnibranchEtaleCriterion.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/UnibranchEtaleCriterion.lean#L89). The attribute's comment: “geometrically\_unibranch\_iff”. References: EGA IV (7.9.10), “more general”; SGA 3 X (5.14.0), “partial”.
 
 > **Stacks Project, Tag 0CB4.** A scheme is geometrically unibranch at a point if and only if
 > every étale neighbourhood of that point has exactly one irreducible component passing through its
@@ -95,7 +95,7 @@ theorem isGeometricallyUnibranchAt_iff_existsUnique_irreducibleComponent
 
 [Tag 0CB5](https://stacks.math.columbia.edu/tag/0CB5) in the Stacks Project.
 
-**`AlgebraicGeometry.numberOfBranches_fiber_eq_iSup_encard_irreducibleComponentsThrough`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranches.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranches.lean#L273). The attribute's comment: “fibre_branches”.
+**`AlgebraicGeometry.numberOfBranches_fiber_eq_iSup_encard_irreducibleComponentsThrough`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranches.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranches.lean#L273). The attribute's comment: “fibre\_branches”.
 
 > **Stacks Project, Tag 0CB5.** The branches of a fibre are counted by
 > irreducible components through the distinguished points of fibres of
@@ -112,7 +112,7 @@ public theorem numberOfBranches_fiber_eq_iSup_encard_irreducibleComponentsThroug
               ⟨U.point, by simp [U.map_point]⟩ ∈ Z}
 ```
 
-**`AlgebraicGeometry.numberOfGeometricBranches_fiber_eq_iSup_encard`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranches.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranches.lean#L299). The attribute's comment: “fibre_geometric_branches”.
+**`AlgebraicGeometry.numberOfGeometricBranches_fiber_eq_iSup_encard`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranches.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranches.lean#L299). The attribute's comment: “fibre\_geometric\_branches”.
 
 > **Stacks Project, Tag 0CB5.** Geometric branches of a fibre are counted by
 > irreducible components through the distinguished points of fibres of étale
@@ -129,7 +129,7 @@ public theorem numberOfGeometricBranches_fiber_eq_iSup_encard
               ⟨U.point, by simp [U.map_point]⟩ ∈ Z}
 ```
 
-**`AlgebraicGeometry.isUnibranchAt_fiber_iff_existsUnique_irreducibleComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranches.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranches.lean#L324). The attribute's comment: “fibre_unibranch_iff”.
+**`AlgebraicGeometry.isUnibranchAt_fiber_iff_existsUnique_irreducibleComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranches.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranches.lean#L324). The attribute's comment: “fibre\_unibranch\_iff”.
 
 > **Stacks Project, Tag 0CB5.** The fibre is unibranch at the point if and only if for every
 > elementary étale neighbourhood of the point in the total space there is exactly one irreducible
@@ -145,7 +145,7 @@ public theorem isUnibranchAt_fiber_iff_existsUnique_irreducibleComponent
             (Z : Set ((U.toBase ≫ f).fiber (f x)))
 ```
 
-**`AlgebraicGeometry.isGeometricallyUnibranchAt_fiber_iff_existsUnique_irreducibleComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranches.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranches.lean#L358). The attribute's comment: “fibre_geometrically_unibranch_iff”.
+**`AlgebraicGeometry.isGeometricallyUnibranchAt_fiber_iff_existsUnique_irreducibleComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranches.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranches.lean#L358). The attribute's comment: “fibre\_geometrically\_unibranch\_iff”.
 
 > **Stacks Project, Tag 0CB5, part (4), stated about the fibre.** The fibre is geometrically
 > unibranch at the point if and only if for every étale neighbourhood of the point in the total
@@ -174,7 +174,7 @@ public theorem isGeometricallyUnibranchAt_fiber_iff_existsUnique_irreducibleComp
             (Z : Set ((U.toBase ≫ f).fiber (f x)))
 ```
 
-**`AlgebraicGeometry.not_forall_isGeometricallyUnibranchAt_iff_existsUnique_irreducibleComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranchesLiteralForm.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranchesLiteralForm.lean#L155). The attribute's comment: “part (4) as printed, about X rather than X_s, is FALSE: counterexample”.
+**`AlgebraicGeometry.not_forall_isGeometricallyUnibranchAt_iff_existsUnique_irreducibleComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranchesLiteralForm.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/FiberBranchesLiteralForm.lean#L155). The attribute's comment: “part (4) as printed, about X rather than X\_s, is FALSE: counterexample”.
 
 > It is not true that for every morphism `f : X ⟶ S` and every point `x` of `X`, `X` is
 > geometrically unibranch at `x` if and only if for every étale neighbourhood `(U, u)` of `(X, x)`
@@ -194,7 +194,7 @@ theorem not_forall_isGeometricallyUnibranchAt_iff_existsUnique_irreducibleCompon
 
 [Tag 0DQ2](https://stacks.math.columbia.edu/tag/0DQ2) in the Stacks Project.
 
-**`AlgebraicGeometry.numberOfGeometricBranches_eq_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/SmoothBranches.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/SmoothBranches.lean#L220). The attribute's comment: “geometric_branches”.
+**`AlgebraicGeometry.numberOfGeometricBranches_eq_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/SmoothBranches.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/SmoothBranches.lean#L220). The attribute's comment: “geometric\_branches”.
 
 > **Stacks Project, Tag 0DQ2.** A smooth morphism of schemes preserves the number of geometric
 > branches at a point.
@@ -205,7 +205,7 @@ public theorem numberOfGeometricBranches_eq_of_smooth {X S : Scheme.{u}} (f : X 
     numberOfGeometricBranches X x = numberOfGeometricBranches S (f.base x)
 ```
 
-**`AlgebraicGeometry.numberOfBranches_eq_of_smooth_of_isPurelyInseparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/SmoothBranches.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/SmoothBranches.lean#L229). The attribute's comment: “branches_purely_inseparable”.
+**`AlgebraicGeometry.numberOfBranches_eq_of_smooth_of_isPurelyInseparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/SmoothBranches.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/EtaleNeighbourhood/SmoothBranches.lean#L229). The attribute's comment: “branches\_purely\_inseparable”.
 
 > **Stacks Project, Tag 0DQ2.** A smooth morphism of schemes preserves the number of branches
 > at a point whose residue field is a purely inseparable extension of the residue field of its

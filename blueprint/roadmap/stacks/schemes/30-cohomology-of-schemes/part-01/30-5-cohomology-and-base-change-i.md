@@ -98,7 +98,7 @@ theorem isIso_rightDerivedFunctorPlusUnit_app_of_isAffineHom
 
 [Tag 02KH](https://stacks.math.columbia.edu/tag/02KH) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.FlatBaseChangeDerived.isIso_baseChangeMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/Derived/FlatBaseChange.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/Derived/FlatBaseChange.lean#L76). The attribute's comment: “part (1): the base change map of Tag 02N7 is an isomorphism in D⁺(𝒪_{S'}), hence in every degree i”.
+**`Stacks.AlgebraicGeometry.FlatBaseChangeDerived.isIso_baseChangeMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/Derived/FlatBaseChange.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/Derived/FlatBaseChange.lean#L76). The attribute's comment: “part (1): the base change map of Tag 02N7 is an isomorphism in D⁺(𝒪\_\{S'}), hence in every degree i”.
 
 > **Flat base change in the derived category ([Stacks, Tag 02KH], part (1)).** For a cartesian
 > square of schemes with `g` flat and `f` quasi-compact and quasi-separated, and a quasi-coherent

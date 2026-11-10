@@ -14,7 +14,7 @@ Section 110.44 of the Stacks Project, [Tag 0G64](https://stacks.math.columbia.ed
 
 [Tag 0G65](https://stacks.math.columbia.edu/tag/0G65) in the Stacks Project.
 
-**`Stacks.Examples.flat_perfectClosure_polynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/PerfectClosureNotFormallyEtale.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/PerfectClosureNotFormallyEtale.lean#L295). The attribute's comment: “flatness of the example F_p[T] into its perfect closure”.
+**`Stacks.Examples.flat_perfectClosure_polynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/PerfectClosureNotFormallyEtale.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/PerfectClosureNotFormallyEtale.lean#L295). The attribute's comment: “flatness of the example F\_p[T] into its perfect closure”.
 
 > **Flat and formally unramified is not formally étale**, flatness: the perfect closure of
 > `𝔽ₚ[T]` is flat over `𝔽ₚ[T]`.
@@ -24,7 +24,7 @@ public theorem flat_perfectClosure_polynomial (p : ℕ) [Fact p.Prime] :
     Module.Flat (Polynomial (ZMod p)) (PerfectClosure (Polynomial (ZMod p)) p)
 ```
 
-**`Stacks.Examples.formallyUnramified_perfectClosure_polynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/PerfectClosureNotFormallyEtale.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/PerfectClosureNotFormallyEtale.lean#L302). The attribute's comment: “formal unramifiedness of the example F_p[T] into its perfect closure”.
+**`Stacks.Examples.formallyUnramified_perfectClosure_polynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/PerfectClosureNotFormallyEtale.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/PerfectClosureNotFormallyEtale.lean#L302). The attribute's comment: “formal unramifiedness of the example F\_p[T] into its perfect closure”.
 
 > **Flat and formally unramified is not formally étale**, formal unramifiedness: the perfect
 > closure of `𝔽ₚ[T]` is formally unramified over `𝔽ₚ[T]`.
@@ -34,7 +34,7 @@ public theorem formallyUnramified_perfectClosure_polynomial (p : ℕ) [Fact p.Pr
     Algebra.FormallyUnramified (Polynomial (ZMod p)) (PerfectClosure (Polynomial (ZMod p)) p)
 ```
 
-**`Stacks.Examples.not_formallyEtale_perfectClosure_polynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/PerfectClosureNotFormallyEtale.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/PerfectClosureNotFormallyEtale.lean#L309). The attribute's comment: “the example F_p[T] into its perfect closure is not formally etale”.
+**`Stacks.Examples.not_formallyEtale_perfectClosure_polynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/PerfectClosureNotFormallyEtale.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/PerfectClosureNotFormallyEtale.lean#L309). The attribute's comment: “the example F\_p[T] into its perfect closure is not formally etale”.
 
 > **Flat and formally unramified is not formally étale**, the negative conjunct: the perfect
 > closure of `𝔽ₚ[T]` is not formally étale over `𝔽ₚ[T]`.

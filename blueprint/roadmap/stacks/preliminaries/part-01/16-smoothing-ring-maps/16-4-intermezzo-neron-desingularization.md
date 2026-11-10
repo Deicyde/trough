@@ -28,7 +28,7 @@ structure NeronSituation
 
 [Tag 0BJ3](https://stacks.math.columbia.edu/tag/0BJ3) in the Stacks Project.
 
-**`Stacks.Smoothing.neron_affineBlowup_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/NeronDesingularization.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/NeronDesingularization.lean#L181). The attribute's comment: “neron_localization”.
+**`Stacks.Smoothing.neron_affineBlowup_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/NeronDesingularization.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/NeronDesingularization.lean#L181). The attribute's comment: “neron\_localization”.
 
 > **Stacks 0BJ3.** The affine blowup at `𝔭` commutes with localizing away from an element
 > outside `𝔭`: if `A' = A[𝔭/π]`, then the affine blowup of `A_a` is `A'_a`.
@@ -55,7 +55,7 @@ theorem neron_affineBlowup_localization
         algebraMap Aa B x)
 ```
 
-**`Stacks.Smoothing.blowup_quotient_by_surjection`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/NeronDesingularization.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/NeronDesingularization.lean#L339). The attribute's comment: “neron_surjection”.
+**`Stacks.Smoothing.blowup_quotient_by_surjection`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/NeronDesingularization.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/NeronDesingularization.lean#L339). The attribute's comment: “neron\_surjection”.
 
 > **Stacks 0BJ3.** A surjection `B → A` of flat finite-type `R`-algebras presents the blowup
 > of `A` at `𝔭`: it is the blowup of `B` at the preimage of `𝔭`, modulo the extended kernel and
@@ -83,7 +83,7 @@ lemma blowup_quotient_by_surjection (S : NeronSituation) (π : S.R)
 
 [Tag 0BJ4](https://stacks.math.columbia.edu/tag/0BJ4) in the Stacks Project.
 
-**`Stacks.Smoothing.affineBlowup_smoothAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/NeronBlowupSmooth.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/NeronBlowupSmooth.lean#L373). The attribute's comment: “blowup_smooth”.
+**`Stacks.Smoothing.affineBlowup_smoothAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/NeronBlowupSmooth.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/NeronBlowupSmooth.lean#L373). The attribute's comment: “blowup\_smooth”.
 
 > **Stacks 0BJ4, smoothness.** In a Néron situation with uniformizer `π`, if `A` is smooth over
 > `R` at `𝔭` and the residue-field extension `κ(R) → κ(Λ)` is separable, then the affine blowup
@@ -104,7 +104,7 @@ theorem affineBlowup_smoothAt
         (IsLocalRing.maximalIdeal S.Λ))
 ```
 
-**`Stacks.Smoothing.affineBlowup_differentials_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/NeronBlowupSmooth.lean, line 788](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/NeronBlowupSmooth.lean#L788). The attribute's comment: “differentials_sequence”.
+**`Stacks.Smoothing.affineBlowup_differentials_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/NeronBlowupSmooth.lean, line 788](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/NeronBlowupSmooth.lean#L788). The attribute's comment: “differentials\_sequence”.
 
 > **Stacks 0BJ4, the differential sequence.** In a Néron situation with uniformizer `π`, if `A`
 > is smooth over `R` at `𝔭` and the residue-field extension `κ(R) → κ(Λ)` is separable, then for

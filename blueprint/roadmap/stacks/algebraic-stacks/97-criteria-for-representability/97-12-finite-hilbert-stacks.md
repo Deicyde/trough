@@ -331,7 +331,7 @@ theorem isRepresentableByAlgebraicSpaces_mapRelative_of_representable
 
 [Tag 06CH](https://stacks.math.columbia.edu/tag/06CH) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_finiteHilbertToTargetCFG`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LimitPreserving.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LimitPreserving.lean#L554). The attribute's comment: “p : ℋ_d(𝒳/𝒴) ⟶ 𝒴 is limit preserving on objects”.
+**`AlgebraicGeometry.Stack.isLimitPreservingOnObjects_finiteHilbertToTargetCFG`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LimitPreserving.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LimitPreserving.lean#L554). The attribute's comment: “p : ℋ\_d(𝒳/𝒴) ⟶ 𝒴 is limit preserving on objects”.
 
 > **Stacks 06CH.** Let `F : 𝒳 ⟶ 𝒴` be a 1-morphism of stacks in groupoids over the big fppf
 > site of `S` which is representable by algebraic spaces (Stacks 02ZW) and locally of finite

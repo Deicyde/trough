@@ -487,7 +487,7 @@ theorem weaklyAssociatedPoints_subset_of_shortExact
     weaklyAssociatedPoints B S hS X σ.X₁ ⊆ weaklyAssociatedPoints B S hS X σ.X₂
 ```
 
-**`AlgebraicGeometry.Space.weaklyAssociatedPoints_subset_union_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeaklyAssociatedShortExact.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/WeaklyAssociatedShortExact.lean#L328). The attribute's comment: “middle_term”.
+**`AlgebraicGeometry.Space.weaklyAssociatedPoints_subset_union_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeaklyAssociatedShortExact.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/WeaklyAssociatedShortExact.lean#L328). The attribute's comment: “middle\_term”.
 
 > **Stacks 0CTZ, second inclusion.** In a short exact sequence of `𝒪_X`-modules on an
 > algebraic space, every weakly associated point of the middle module is weakly associated to one
@@ -501,7 +501,7 @@ theorem weaklyAssociatedPoints_subset_union_of_shortExact
       weaklyAssociatedPoints B S hS X σ.X₁ ∪ weaklyAssociatedPoints B S hS X σ.X₃
 ```
 
-**`AlgebraicGeometry.Space.weaklyAssociatedPoints_subset_union_of_shortExact_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeaklyAssociatedShortExactBalanced.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/WeaklyAssociatedShortExactBalanced.lean#L48). The attribute's comment: “middle_term, for sections in any universe containing the universe of the schemes and with no assumed inputs: the balancedness of the category of modules that the general form takes as an instance hypothesis is discharged here”.
+**`AlgebraicGeometry.Space.weaklyAssociatedPoints_subset_union_of_shortExact_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeaklyAssociatedShortExactBalanced.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/WeaklyAssociatedShortExactBalanced.lean#L48). The attribute's comment: “middle\_term, for sections in any universe containing the universe of the schemes and with no assumed inputs: the balancedness of the category of modules that the general form takes as an instance hypothesis is discharged here”.
 
 > **Stacks 0CTZ, second inclusion.** In a short exact sequence of `𝒪_X`-modules on an
 > algebraic space, every weakly associated point of the middle module is weakly associated to one

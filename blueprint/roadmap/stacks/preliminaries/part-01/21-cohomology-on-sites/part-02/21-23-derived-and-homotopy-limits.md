@@ -641,7 +641,7 @@ theorem isIso_to_isDerivedLimit_truncGETower_of_vanishing
 
 [Tag 0D6N](https://stacks.math.columbia.edu/tag/0D6N) in the Stacks Project.
 
-**`Stacks.Cohomology.isIso_to_isDerivedLimit_truncationGETower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergence.lean, line 1305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergence.lean#L1305). The attribute's comment: “the constant-bound case, by taking the degree bound at V to be max d_V m”.
+**`Stacks.Cohomology.isIso_to_isDerivedLimit_truncationGETower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergence.lean, line 1305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergence.lean#L1305). The attribute's comment: “the constant-bound case, by taking the degree bound at V to be max d\_V m”.
 
 > **Stacks Project, Tag 0D6M.** Under local, eventually vanishing cohomology bounds, the
 > canonical map from a derived object to any derived limit of its truncations from below is an
@@ -694,7 +694,7 @@ theorem isIso_to_isDerivedLimit_truncationGETower
     IsIso c
 ```
 
-**`Stacks.Cohomology.isIso_to_isDerivedLimit_truncGETower_of_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergenceUnconditional.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergenceUnconditional.lean#L100). The attribute's comment: “the constant-bound case, by taking the degree bound at V to be max d_V m”.
+**`Stacks.Cohomology.isIso_to_isDerivedLimit_truncGETower_of_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergenceUnconditional.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationTowerConvergenceUnconditional.lean#L100). The attribute's comment: “the constant-bound case, by taking the degree bound at V to be max d\_V m”.
 
 > **Stacks Project, Tag 0D6M.** Let `O` be a sheaf of rings on a site `C`, let `E` be an
 > object of the derived category of sheaves of `O`-modules, and let `B` be a set of objects of
@@ -756,7 +756,7 @@ theorem isIso_to_isDerivedLimit_truncGETower_of_vanishing
 
 [Tag 08U3](https://stacks.math.columbia.edu/tag/08U3) in the Stacks Project.
 
-**`Stacks.Cohomology.isIso_to_isDerivedLimit_truncGETower_of_degreeBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationConvergenceUnderBounds.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationConvergenceUnderBounds.lean#L87). The attribute's comment: “variant: the single-universe form, for a ringed site whose module category has enough injectives and the countable product of the truncation tower; the tag, with neither of these, is Stacks.Cohomology.DegreeBound.isIso_to_isDerivedLimit_truncGETower_of_degreeBound”.
+**`Stacks.Cohomology.isIso_to_isDerivedLimit_truncGETower_of_degreeBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationConvergenceUnderBounds.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/TruncationConvergenceUnderBounds.lean#L87). The attribute's comment: “variant: the single-universe form, for a ringed site whose module category has enough injectives and the countable product of the truncation tower; the tag, with neither of these, is Stacks.Cohomology.DegreeBound.isIso\_to\_isDerivedLimit\_truncGETower\_of\_degreeBound”.
 
 > Degree-dependent bounds for cohomology on a locally covering class imply that the canonical
 > map to the derived limit of the lower-truncation tower is an isomorphism.

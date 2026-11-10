@@ -135,7 +135,7 @@ instance pushoutScheme_isSeparated
     (pushoutScheme s).IsSeparated
 ```
 
-**`AlgebraicGeometry.pushoutToBase_isSeparated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Pushout/Separation.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Pushout/Separation.lean#L81). The attribute's comment: “separated_over_s”.
+**`AlgebraicGeometry.pushoutToBase_isSeparated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Pushout/Separation.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Pushout/Separation.lean#L81). The attribute's comment: “separated\_over\_s”.
 
 > **Stacks Project, Tag 0E26.** If both schemes being glued are separated over the base, then
 > the pushout along a closed immersion and an integral morphism is separated over the base.
@@ -147,7 +147,7 @@ instance pushoutToBase_isSeparated
     IsSeparated (pushoutToBase s)
 ```
 
-**`AlgebraicGeometry.pushoutScheme_quasiSeparatedSpace`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Pushout/Separation.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Pushout/Separation.lean#L118). The attribute's comment: “quasi_separated”.
+**`AlgebraicGeometry.pushoutScheme_quasiSeparatedSpace`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Pushout/Separation.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Pushout/Separation.lean#L118). The attribute's comment: “quasi\_separated”.
 
 > **Stacks Project, Tag 0E26.** If both schemes being glued are quasi-separated, then the
 > pushout along a closed immersion and an integral morphism is quasi-separated.
@@ -159,7 +159,7 @@ instance pushoutScheme_quasiSeparatedSpace
     QuasiSeparatedSpace (pushoutScheme s)
 ```
 
-**`AlgebraicGeometry.pushoutToBase_quasiSeparated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Pushout/Separation.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Pushout/Separation.lean#L131). The attribute's comment: “quasi_separated_over_s”.
+**`AlgebraicGeometry.pushoutToBase_quasiSeparated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Pushout/Separation.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Pushout/Separation.lean#L131). The attribute's comment: “quasi\_separated\_over\_s”.
 
 > **Stacks Project, Tag 0E26.** If both schemes being glued are quasi-separated over the
 > base, then the pushout along a closed immersion and an integral morphism is quasi-separated
@@ -401,7 +401,7 @@ theorem pushout_structureSheafModule_shortExact {Z X Y : Scheme.{u}} (i : Z ⟶ 
 
 [Tag 0CYY](https://stacks.math.columbia.edu/tag/0CYY) in the Stacks Project.
 
-**`AlgebraicGeometry.induced_locallyOfFiniteType_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Pushout/InducedFiniteType.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Pushout/InducedFiniteType.lean#L287). The attribute's comment: “locally_of_finite_type”.
+**`AlgebraicGeometry.induced_locallyOfFiniteType_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Pushout/InducedFiniteType.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Pushout/InducedFiniteType.lean#L287). The attribute's comment: “locally\_of\_finite\_type”.
 
 > In the situation of two closed immersions `i : Z ⟶ X` and `j : Z ⟶ Y`, morphisms
 > `f : X' ⟶ X` and `g : Y' ⟶ Y`, and an isomorphism over `Z` between the two inverse images of `Z`,
@@ -424,7 +424,7 @@ theorem flat_induced_iff (S : CompatiblePushoutMorphismSituation.{u}) :
     Flat S.induced ↔ Flat S.f ∧ Flat S.g
 ```
 
-**`AlgebraicGeometry.flat_locallyOfFinitePresentation_induced_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Pushout/InducedFlat.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Pushout/InducedFlat.lean#L280). The attribute's comment: “flat_locally_of_finite_presentation”.
+**`AlgebraicGeometry.flat_locallyOfFinitePresentation_induced_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Pushout/InducedFlat.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Pushout/InducedFlat.lean#L280). The attribute's comment: “flat\_locally\_of\_finite\_presentation”.
 
 > In the situation of `AlgebraicGeometry.CompatiblePushoutMorphismSituation`, the induced
 > morphism between the two pushouts is flat and locally of finite presentation if and only if both

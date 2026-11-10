@@ -59,7 +59,7 @@ def AreSiblingsPerfect : Prop
 
 [Tag 0G00](https://stacks.math.columbia.edu/tag/0G00) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_fourierMukai_areSiblingsCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/FourierMukaiSibling.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/FourierMukaiSibling.lean#L269). The attribute's comment: “a k-linear exact functor of D^b_Coh sending Coh into Coh has a sibling which is the Fourier-Mukai functor of a coherent kernel flat over X with support finite over Y”.
+**`AlgebraicGeometry.exists_fourierMukai_areSiblingsCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/FourierMukaiSibling.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SiblingFunctors/FourierMukaiSibling.lean#L269). The attribute's comment: “a k-linear exact functor of D^b\_Coh sending Coh into Coh has a sibling which is the Fourier-Mukai functor of a coherent kernel flat over X with support finite over Y”.
 
 > Let `k` be a field, let `X` and `Y` be schemes of finite type over `k` with `X` separated, and
 > let `F : D^b_Coh(𝒪_X) ⥤ D^b_Coh(𝒪_Y)` be a `k`-linear exact functor sending
@@ -95,7 +95,7 @@ theorem exists_fourierMukai_areSiblingsCoherent [IsSeparated X.hom]
 
 [Tag 0G01](https://stacks.math.columbia.edu/tag/0G01) in the Stacks Project.
 
-**`AlgebraicGeometry.nonempty_iso_of_areSiblings_of_isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean, line 739](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean#L739). The attribute's comment: “first sentence: siblings out of D^b_Coh of a reduced projective scheme over a field, the first fully faithful, are isomorphic; the remaining sentences are commentary”.
+**`AlgebraicGeometry.nonempty_iso_of_areSiblings_of_isProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean, line 739](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/Orlov/TwistOfFixing.lean#L739). The attribute's comment: “first sentence: siblings out of D^b\_Coh of a reduced projective scheme over a field, the first fully faithful, are isomorphic; the remaining sentences are commentary”.
 
 > **Stacks Project, Tag 0G01**, its first sentence. Let `k` be a field and `X` a reduced scheme
 > which is projective over `k` (`AlgebraicGeometry.IsProjective` of `f : X ⟶ Spec k`, the first

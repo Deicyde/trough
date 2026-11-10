@@ -38,7 +38,7 @@ Declarations registered for the tag:
 
 [Tag 02FT](https://stacks.math.columbia.edu/tag/02FT) in the Stacks Project.
 
-**`Stacks.LocallyFiniteCover.isColimitCofanProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean#L393). The attribute's comment: “(second displayed formula: ⨁ (j_i)_* F_i = ∏ (j_i)_* F_i)”.
+**`Stacks.LocallyFiniteCover.isColimitCofanProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean#L393). The attribute's comment: “(second displayed formula: ⨁ (j\_i)\_* F\_i = ∏ (j\_i)\_* F\_i)”.
 
 > **Stacks Project, Tag 02FT, second displayed formula.** Let `X = ⋃ i, U i` be a locally
 > finite open covering of a topological space, let `j i : U i → X` be the inclusions and let
@@ -62,7 +62,7 @@ theorem isIso_coproductToProduct (hcov : IsOpenCover U)
     (hlf : LocallyFinite fun i => (U i : Set X)) : IsIso (coproductToProduct U F)
 ```
 
-**`Stacks.LocallyFiniteCover.isIso_sectionsComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean, line 456](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean#L456). The attribute's comment: “(first displayed formula: Γ(V, 𝒢) = ∏ F_i(V ∩ U_i))”.
+**`Stacks.LocallyFiniteCover.isIso_sectionsComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean, line 456](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/LocallyFiniteCoproductSections.lean#L456). The attribute's comment: “(first displayed formula: Γ(V, 𝒢) = ∏ F\_i(V ∩ U\_i))”.
 
 > **Stacks Project, Tag 02FT, first displayed formula.** With `X = ⋃ i, U i` a locally
 > finite open covering and `𝒢 = ⨁ i, (j i)_* (F i)`, for every open `V` of `X` the canonical

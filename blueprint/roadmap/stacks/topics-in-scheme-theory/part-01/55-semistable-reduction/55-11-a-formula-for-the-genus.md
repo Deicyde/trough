@@ -14,7 +14,7 @@ Section 55.11 of the Stacks Project, [Tag 0CA1](https://stacks.math.columbia.edu
 
 [Tag 0CA2](https://stacks.math.columbia.edu/tag/0CA2) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.eulerCharacteristic_addComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ComponentStepEulerCharacteristic.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ComponentStepEulerCharacteristic.lean#L338). The attribute's comment: “χ(X_k, O_D') - χ(X_k, O_D) = χ(X_k, O_X(-D)|_Cᵢ) = -(D · Cᵢ) + χ(Cᵢ, O_Cᵢ)”.
+**`Stacks.Models.RegularProperModelSituation.eulerCharacteristic_addComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ComponentStepEulerCharacteristic.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ComponentStepEulerCharacteristic.lean#L338). The attribute's comment: “χ(X\_k, O\_D') - χ(X\_k, O\_D) = χ(X\_k, O\_X(-D)|\_Cᵢ) = -(D · Cᵢ) + χ(Cᵢ, O\_Cᵢ)”.
 
 > **Stacks Project, Tag 0CA2.** In the situation of [Stacks, Tag 0C61] let `Cᵢ` be an
 > irreducible component of the special fibre `X_k` and let `D, D' ⊂ X` be effective Cartier
@@ -70,7 +70,7 @@ public theorem eulerCharacteristic_addComponent
 
 [Tag 0CA3](https://stacks.math.columbia.edu/tag/0CA3) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.cast_genus_eq_one_add_sum_specialFiberComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GenusFormulaModel.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/GenusFormulaModel.lean#L335). The attribute's comment: “g_C = 1 + Σ mᵢ([κᵢ : k](gᵢ - 1) - (Cᵢ · Cᵢ)/2) at the canonical data of the model”.
+**`Stacks.Models.RegularProperModelSituation.cast_genus_eq_one_add_sum_specialFiberComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GenusFormulaModel.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/GenusFormulaModel.lean#L335). The attribute's comment: “g\_C = 1 + Σ mᵢ([κᵢ : k\](gᵢ - 1) - (Cᵢ · Cᵢ)/2) at the canonical data of the model”.
 
 > **Stacks Project, Tag 0CA3.** In the situation of [Stacks, Tag 0C61] — `R` a discrete
 > valuation ring with fraction field `K` and residue field `k`, `C` a smooth projective curve over
@@ -98,7 +98,7 @@ public theorem cast_genus_eq_one_add_sum_specialFiberComponent :
 
 [Tag 0CA4](https://stacks.math.columbia.edu/tag/0CA4) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.associatedNumericalType_spec_and_genus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ModelNumericalTypeGenus.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ModelNumericalTypeGenus.lean#L60). The attribute's comment: “the data n, m_i, (C_i . C_j), [kappa_i : k], g_i form a numerical type of genus the genus of C”.
+**`Stacks.Models.RegularProperModelSituation.associatedNumericalType_spec_and_genus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ModelNumericalTypeGenus.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ModelNumericalTypeGenus.lean#L60). The attribute's comment: “the data n, m\_i, (C\_i . C\_j), [kappa\_i : k], g\_i form a numerical type of genus the genus of C”.
 
 > **Stacks Project, Tag 0CA4.** In the situation of [Stacks, Tag 0C61], with `C₁, …, Cₙ` the
 > irreducible components of the special fibre enumerated by `e`, `κᵢ = H⁰(Cᵢ, 𝒪_{Cᵢ})` and `gᵢ`
@@ -125,7 +125,7 @@ public theorem associatedNumericalType_spec_and_genus (n : ℕ)
 
 [Tag 0CA5](https://stacks.math.columbia.edu/tag/0CA5) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.associatedNumericalType`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/AssociatedNumericalType.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/AssociatedNumericalType.lean#L88). The attribute's comment: “the numerical type associated to X: n, m_i, (C_i . C_j), [kappa_i : k], g_i of the components of the special fibre”.
+**`Stacks.Models.RegularProperModelSituation.associatedNumericalType`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/AssociatedNumericalType.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/AssociatedNumericalType.lean#L88). The attribute's comment: “the numerical type associated to X: n, m\_i, (C\_i . C\_j), [kappa\_i : k], g\_i of the components of the special fibre”.
 
 > **Stacks Project, Tag 0CA5: the numerical type associated to `X`**, in the situation of
 > [Stacks, Tag 0C61]: the numerical type described in [Stacks, Tag 0CA4], whose data are the number
@@ -271,7 +271,7 @@ public theorem exists_isMinimal_genus_seven_weight_six :
 
 [Tag 0CE8](https://stacks.math.columbia.edu/tag/0CE8) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.exists_isRationalPoint_smoothAt_specialFiber_and_genus_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/RationalPointSpecialFibre.lean, line 658](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/RationalPointSpecialFibre.lean#L658). The attribute's comment: “the k-rational smooth point x of X_k, H⁰(Cᵢ) = k and mᵢ = 1 for the components through x, H⁰(X_k) = k and g(X_k) = g(C)”.
+**`Stacks.Models.RegularProperModelSituation.exists_isRationalPoint_smoothAt_specialFiber_and_genus_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/RationalPointSpecialFibre.lean, line 658](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/RationalPointSpecialFibre.lean#L658). The attribute's comment: “the k-rational smooth point x of X\_k, H⁰(Cᵢ) = k and mᵢ = 1 for the components through x, H⁰(X\_k) = k and g(X\_k) = g(C)”.
 
 > **Stacks Project, Tag 0CE8.** In Situation [Stacks, Tag 0C61] assume that the curve `C` has a
 > `K`-rational point. Then
@@ -326,7 +326,7 @@ theorem surjective_and_not_injective_of_isMinimalModel
 
 [Tag 0CEA](https://stacks.math.columbia.edu/tag/0CEA) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.topologicalGenus_add_geometricGenus_le_finrank_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedFibreGenusBound.lean, line 534](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedFibreGenusBound.lean#L534). The attribute's comment: “dim_k H^1((X_k)_red, O) >= g_top + g_geom(X_k/k) when X_k has a k-rational smooth point, g_top the topological genus of the numerical type associated to X”.
+**`Stacks.Models.RegularProperModelSituation.topologicalGenus_add_geometricGenus_le_finrank_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedFibreGenusBound.lean, line 534](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedFibreGenusBound.lean#L534). The attribute's comment: “dim\_k H^1((X\_k)\_red, O) >= g\_top + g\_geom(X\_k/k) when X\_k has a k-rational smooth point, g\_top the topological genus of the numerical type associated to X”.
 
 > **Stacks Project, Tag 0CEA.** In the situation of [Stacks, Tag 0C61] suppose the special
 > fibre `X_k` has a `k`-rational point `x` which is a smooth point of `X_k ⟶ Spec(k)`. Then
@@ -356,7 +356,7 @@ theorem topologicalGenus_add_geometricGenus_le_finrank_reduction
 
 [Tag 0CEE](https://stacks.math.columbia.edu/tag/0CEE) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.smooth_of_topologicalGenus_add_geometricGenus_eq_finrank_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedFibreGenusEquality.lean, line 534](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedFibreGenusEquality.lean#L534). The attribute's comment: “(1) in full, and (2) with kappa/k separable when H^1(C, O_C) is nonzero (the corrected form)”.
+**`Stacks.Models.RegularProperModelSituation.smooth_of_topologicalGenus_add_geometricGenus_eq_finrank_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedFibreGenusEquality.lean, line 534](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedFibreGenusEquality.lean#L534). The attribute's comment: “(1) in full, and (2) with kappa/k separable when H^1(C, O\_C) is nonzero (the corrected form)”.
 
 > **Stacks Project, Tag 0CEE**, in corrected form, with the
 > separability clause of part (2) asserted for the components of positive genus. In the

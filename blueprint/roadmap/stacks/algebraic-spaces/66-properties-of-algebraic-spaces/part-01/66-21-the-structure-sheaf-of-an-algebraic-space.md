@@ -49,7 +49,7 @@ def structureSheaf (_hF : IsAlgebraicSpace B S hS F) :
 
 [Tag 03G8](https://stacks.math.columbia.edu/tag/03G8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.pushforwardAlgebraIdAlgebraIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BoundedDirectImageAlgebraFactorization.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BoundedDirectImageAlgebraFactorization.lean#L254). The attribute's comment: “the identity clause at the level of algebras: (𝟙_Y)_* 𝒪_Y is 𝒪_Y”.
+**`AlgebraicGeometry.Space.pushforwardAlgebraIdAlgebraIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BoundedDirectImageAlgebraFactorization.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BoundedDirectImageAlgebraFactorization.lean#L254). The attribute's comment: “the identity clause at the level of algebras: (𝟙\_Y)\_* 𝒪\_Y is 𝒪\_Y”.
 
 > **The direct image of `𝒪_Y` along the identity of `Y` is `𝒪_Y`, as an `𝒪_Y`-algebra**, with
 > no anti-equivalence and no hypothesis.
@@ -309,7 +309,7 @@ Declarations registered for the tag:
 
 [Tag 0BGS](https://stacks.math.columbia.edu/tag/0BGS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isReduced_globalFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReducedGlobalFunctions.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ReducedGlobalFunctions.lean#L172). The attribute's comment: “global_sections_reduced”.
+**`AlgebraicGeometry.Space.isReduced_globalFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReducedGlobalFunctions.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ReducedGlobalFunctions.lean#L172). The attribute's comment: “global\_sections\_reduced”.
 
 > **Stacks 0BGS.** The ring of global regular functions of a reduced algebraic space is
 > reduced.  Restriction to a reduced surjective étale chart embeds it into the ring of global
@@ -322,7 +322,7 @@ theorem isReduced_globalFunctions (hF : IsAlgebraicSpace B S hS F)
     _root_.IsReduced (globalFunctions B S hS F)
 ```
 
-**`AlgebraicGeometry.Space.eq_zero_of_forall_zeroLocus_eq_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReducedGlobalFunctions.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ReducedGlobalFunctions.lean#L188). The attribute's comment: “zero_of_full_vanishing_locus”.
+**`AlgebraicGeometry.Space.eq_zero_of_forall_zeroLocus_eq_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReducedGlobalFunctions.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ReducedGlobalFunctions.lean#L188). The attribute's comment: “zero\_of\_full\_vanishing\_locus”.
 
 > **Stacks 0BGS.** A global regular function on a reduced algebraic space whose vanishing
 > locus is all of `F` — its zero locus on every étale chart is the whole chart — is zero.  It
@@ -340,7 +340,7 @@ theorem eq_zero_of_forall_zeroLocus_eq_univ (hF : IsAlgebraicSpace B S hS F)
     f = 0
 ```
 
-**`AlgebraicGeometry.Space.isReduced_iff_forall_localRing_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReducedLocalRings.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ReducedLocalRings.lean#L120). The attribute's comment: “reduced_iff_local_rings_reduced”.
+**`AlgebraicGeometry.Space.isReduced_iff_forall_localRing_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReducedLocalRings.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ReducedLocalRings.lean#L120). The attribute's comment: “reduced\_iff\_local\_rings\_reduced”.
 
 > **Stacks 0BGS.** An algebraic space is reduced exactly when all of its local rings are
 > reduced. Reducedness of the space is the étale-local scheme property of Stacks 03E6 — a

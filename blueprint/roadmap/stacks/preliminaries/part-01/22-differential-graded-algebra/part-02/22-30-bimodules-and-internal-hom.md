@@ -101,7 +101,7 @@ theorem shiftHomModuleIso (k : ℤ) :
 
 [Tag 09LN](https://stacks.math.columbia.edu/tag/09LN) in the Stacks Project.
 
-**`Bimod.tensorHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Bimod/TensorHom.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Bimod/TensorHom.lean#L132). The attribute's comment: “ordinary_tensor_hom”. References: SGA 4 IV (12.14), “punctual topos”.
+**`Bimod.tensorHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Bimod/TensorHom.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Bimod/TensorHom.lean#L132). The attribute's comment: “ordinary\_tensor\_hom”. References: SGA 4 IV (12.14), “punctual topos”.
 
 > **Stacks 09LN, ordinary tensor--hom.**  For a right `A`-module `M`, an `(A,B)`-bimodule
 > `N`, and a right `B`-module `P`, `B`-linear maps from `M ⊗_A N` to `P` are canonically the
@@ -114,7 +114,7 @@ public noncomputable def tensorHomEquiv {A B : Mon (ModuleCat.{u} R)}
     rightLinearMaps (M.tensorBimod N) P ≃ₗ[R] balancedRightLinearMaps M N P
 ```
 
-**`Bimod.tensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Bimod/TensorHom.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Bimod/TensorHom.lean#L254). The attribute's comment: “ordinary_tensor_hom”.
+**`Bimod.tensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Bimod/TensorHom.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Bimod/TensorHom.lean#L254). The attribute's comment: “ordinary\_tensor\_hom”.
 
 > The forward tensor-hom correspondence is evaluation on pure tensors.
 

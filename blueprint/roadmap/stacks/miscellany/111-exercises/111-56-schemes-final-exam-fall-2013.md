@@ -92,7 +92,7 @@ theorem inv_partialY_smul_D_x_eq_neg_inv_partialX_smul_D_y
       -(C.partialX⁻¹ • KaehlerDifferential.D k C.FunctionField C.y)
 ```
 
-**`AlgebraicGeometry.AffinePlaneCurve.inv_partialY_smul_D_x_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PlaneCurveDifferential.lean, line 505](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/PlaneCurveDifferential.lean#L505). The attribute's comment: “well-definedness of ω: dx/f_y is nonzero”.
+**`AlgebraicGeometry.AffinePlaneCurve.inv_partialY_smul_D_x_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PlaneCurveDifferential.lean, line 505](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/PlaneCurveDifferential.lean#L505). The attribute's comment: “well-definedness of ω: dx/f\_y is nonzero”.
 
 > **Stacks 09U0.** If the partial derivative with respect to `y` is nonzero, then
 > `dx/f_y` is a nonzero differential.
@@ -102,7 +102,7 @@ theorem inv_partialY_smul_D_x_ne_zero (hy : C.partialY ≠ 0) :
     C.partialY⁻¹ • KaehlerDifferential.D k C.FunctionField C.x ≠ 0
 ```
 
-**`AlgebraicGeometry.AffinePlaneCurve.neg_inv_partialX_smul_D_y_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PlaneCurveDifferential.lean, line 512](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/PlaneCurveDifferential.lean#L512). The attribute's comment: “well-definedness of ω: -dy/f_x is nonzero”.
+**`AlgebraicGeometry.AffinePlaneCurve.neg_inv_partialX_smul_D_y_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PlaneCurveDifferential.lean, line 512](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/PlaneCurveDifferential.lean#L512). The attribute's comment: “well-definedness of ω: -dy/f\_x is nonzero”.
 
 > **Stacks 09U0.** If the partial derivative with respect to `x` is nonzero, then
 > `-dy/f_x` is a nonzero differential.

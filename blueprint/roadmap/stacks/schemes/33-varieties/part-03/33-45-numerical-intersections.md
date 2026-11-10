@@ -66,7 +66,7 @@ theorem exists_eulerPolynomial_sub_topDimComponents_totalDegree_lt (k : Type u) 
 
 [Tag 0BEP](https://stacks.math.columbia.edu/tag/0BEP) in the Stacks Project.
 
-**`AlgebraicGeometry.intersectionNumber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L192). References: SGA 6 XIII (2.1); SGA 6 X (4.4), “defn of (L_1..L_d;F)”.
+**`AlgebraicGeometry.intersectionNumber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L192). References: SGA 6 XIII (2.1); SGA 6 X (4.4), “defn of (L\_1..L\_d;F)”.
 
 > **Stacks 0BEP.** The intersection number `(𝓛_1 ⋯ 𝓛_d · Z)` of `d` invertible
 > `𝒪_X`-modules against a closed subscheme `i : Z ⟶ X` of dimension at most `d` of a proper
@@ -89,7 +89,7 @@ public noncomputable def intersectionNumber (k : Type u) [Field k] {X Z : Scheme
     [∀ j, SheafOfModules.IsInvertible X.presheaf X.ringCatSheaf.2 (L j)] : ℤ
 ```
 
-**`AlgebraicGeometry.intersectionNumber_eq_coeff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L260). The attribute's comment: “the coefficient of n_1 ⋯ n_d”. References: SGA 6 XIII (2.1), “coeff of n_1⋯n_s”; SGA 6 X (4.4), “defn of (L_1..L_d;F)”.
+**`AlgebraicGeometry.intersectionNumber_eq_coeff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L260). The attribute's comment: “the coefficient of n\_1 ⋯ n\_d”. References: SGA 6 XIII (2.1), “coeff of n\_1⋯n\_s”; SGA 6 X (4.4), “defn of (L\_1..L\_d;F)”.
 
 > **Stacks 0BEP, the coefficient of `n_1 ⋯ n_d`.**  If a rational polynomial `P` in `d`
 > variables of total degree at most `d` takes the Euler characteristics
@@ -117,7 +117,7 @@ public theorem intersectionNumber_eq_coeff (k : Type u) [Field k] {X Z : Scheme.
       P.coeff (Finsupp.equivFunOnFinite.symm fun _ => 1)
 ```
 
-**`AlgebraicGeometry.selfIntersectionNumber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L311). The attribute's comment: “the self-intersection notation (L^d · Z)”. References: SGA 6 XIII (2.1), “all L_i equal”.
+**`AlgebraicGeometry.selfIntersectionNumber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersection.lean#L311). The attribute's comment: “the self-intersection notation (L^d · Z)”. References: SGA 6 XIII (2.1), “all L\_i equal”.
 
 > **Stacks 0BEP, the self-intersection notation `(𝓛^d · Z)`.**  The intersection number of a
 > single invertible `𝒪_X`-module `𝓛` repeated `d` times against a closed subscheme `i : Z ⟶ X` of
@@ -429,7 +429,7 @@ public theorem selfIntersectionNumber_pos (k : Type u) [Field k] {X Z : Scheme.{
     0 < selfIntersectionNumber k f i d hdim.le L
 ```
 
-**`AlgebraicGeometry.degreeWithRespectTo_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Positivity.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Positivity.lean#L297). The attribute's comment: “the degree deg_L(Z) of Tag 0BEW is positive”.
+**`AlgebraicGeometry.degreeWithRespectTo_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Positivity.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/Positivity.lean#L297). The attribute's comment: “the degree deg\_L(Z) of Tag 0BEW is positive”.
 
 > **[Stacks, Tag 0BEV] for the degree** `deg_𝓛(Z)` of [Stacks, Tag 0BEW]: the degree of a
 > closed subscheme with respect to an ample invertible module is positive.
@@ -590,7 +590,7 @@ public theorem degreeWithRespectTo_eq_invertibleCurveDegree (k : Type u) [Field 
 
 [Tag 0BJ8](https://stacks.math.columbia.edu/tag/0BJ8) in the Stacks Project.
 
-**`AlgebraicGeometry.degreeWithRespectTo_div_factorial_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean#L276). The attribute's comment: “the leading coefficient deg_L(X)/d! is a positive constant”.
+**`AlgebraicGeometry.degreeWithRespectTo_div_factorial_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean#L276). The attribute's comment: “the leading coefficient deg\_L(X)/d! is a positive constant”.
 
 > **[Stacks, Tag 0BJ8], the leading coefficient.**  For `X` proper over `k` of dimension `d`
 > and `𝓛` ample, the constant `deg_𝓛(X)/d!` is positive.  The degree `deg_𝓛(X)` is positive by
@@ -601,7 +601,7 @@ public theorem degreeWithRespectTo_div_factorial_pos :
     0 < (degreeWithRespectTo k f (𝟙 X) d hdim L hL : ℚ) / (d.factorial : ℚ)
 ```
 
-**`AlgebraicGeometry.exists_degree_lt_eventually_finrank_globalSections_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean#L382). The attribute's comment: “the asymptotic formula for dim_k Γ(X, L^n)”.
+**`AlgebraicGeometry.exists_degree_lt_eventually_finrank_globalSections_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/AsymptoticRiemannRoch.lean#L382). The attribute's comment: “the asymptotic formula for dim\_k Γ(X, L^n)”.
 
 > **[Stacks, Tag 0BJ8], the asymptotic formula.**  For `X` proper over `k` of dimension `d` and
 > `𝓛` ample, for all sufficiently large `n`

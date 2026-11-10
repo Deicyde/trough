@@ -102,7 +102,7 @@ theorem existsUnique_groupoid_of_isEquivalenceRelation
 
 [Tag 043Z](https://stacks.math.columbia.edu/tag/043Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPullback_comp_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidInSpacesOfComposable.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidInSpacesOfComposable.lean#L476). The attribute's comment: “lower_right”.
+**`AlgebraicGeometry.Space.isPullback_comp_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidInSpacesOfComposable.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidInSpacesOfComposable.lean#L476). The attribute's comment: “lower\_right”.
 
 > For a groupoid in algebraic spaces, composition and the second projection out of the space of
 > composable pairs of arrows form a cartesian square with two copies of the source map: a
@@ -119,7 +119,7 @@ theorem isPullback_comp_source {B : AlgebraicSpaces C S hS}
       G.source G.source
 ```
 
-**`AlgebraicGeometry.Space.isPullback_fst_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidInSpacesOfComposable.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidInSpacesOfComposable.lean#L503). The attribute's comment: “top_square”.
+**`AlgebraicGeometry.Space.isPullback_fst_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidInSpacesOfComposable.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidInSpacesOfComposable.lean#L503). The attribute's comment: “top\_square”.
 
 > For a groupoid in algebraic spaces, the first projection out of the space of composable pairs
 > of arrows and composition form a cartesian square with two copies of the target map: a
@@ -138,7 +138,7 @@ theorem isPullback_fst_comp {B : AlgebraicSpaces C S hS}
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.AlgebraicSpaces.isPullback_fiberProduct`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Category.lean#L403), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidInSpacesOfComposable.lean, line 468](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidInSpacesOfComposable.lean#L468) (StacksFrontier): “lower_left”.
+- [`AlgebraicGeometry.AlgebraicSpaces.isPullback_fiberProduct`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Category.lean#L403), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidInSpacesOfComposable.lean, line 468](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupoidInSpacesOfComposable.lean#L468) (StacksFrontier): “lower\_left”.
 
 ## Tag 0450, a lemma
 

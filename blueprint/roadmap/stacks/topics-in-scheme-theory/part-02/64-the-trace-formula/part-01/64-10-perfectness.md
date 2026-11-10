@@ -14,7 +14,7 @@ Section 64.10 of the Stacks Project, [Tag 03TG](https://stacks.math.columbia.edu
 
 [Tag 03TH](https://stacks.math.columbia.edu/tag/03TH) in the Stacks Project.
 
-**`CategoryTheory.FilteredDerived.PerfectHomotopyCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/Basic.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/Basic.lean#L73). The attribute's comment: “the category K_perf”. References: SGA 4½ Rapport (4.3), “K_parf(Λ)”.
+**`CategoryTheory.FilteredDerived.PerfectHomotopyCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/Basic.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/Basic.lean#L73). The attribute's comment: “the category K\_perf”. References: SGA 4½ Rapport (4.3), “K\_parf(Λ)”.
 
 > The category `K_perf(R)` of bounded complexes of finite projective `R`-modules, with
 > morphisms up to homotopy.
@@ -42,7 +42,7 @@ public def perfectComplexFunctorFullyFaithful (R : Type u) [Ring R] :
     (perfectComplexFunctor.{u, v} R).FullyFaithful
 ```
 
-**`CategoryTheory.FilteredDerived.isPerfect_iff`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/Basic.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/Basic.lean#L142). The attribute's comment: “perfect objects”. References: SGA 4½ Rapport (4.3), “D_parf(Λ)”.
+**`CategoryTheory.FilteredDerived.isPerfect_iff`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/Basic.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/Basic.lean#L142). The attribute's comment: “perfect objects”. References: SGA 4½ Rapport (4.3), “D\_parf(Λ)”.
 
 > A derived object is perfect exactly when it is isomorphic to the image of a bounded
 > complex of finite projective modules.
@@ -55,7 +55,7 @@ public lemma isPerfect_iff (R : Type u) [Ring R]
         finiteProjectiveComplex.{u, v} R K ∧ Nonempty (DerivedCategory.Q.obj K ≅ X)
 ```
 
-**`CategoryTheory.FilteredDerived.PerfectDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/Basic.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/Basic.lean#L178). The attribute's comment: “the category D_perf”. References: SGA 4½ Rapport (4.3), “D_parf(Λ)”.
+**`CategoryTheory.FilteredDerived.PerfectDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/Basic.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FilteredDerived/Perfectness/Basic.lean#L178). The attribute's comment: “the category D\_perf”. References: SGA 4½ Rapport (4.3), “D\_parf(Λ)”.
 
 > The full subcategory `D_perf(R)` of perfect derived objects.
 

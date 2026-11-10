@@ -80,7 +80,7 @@ theorem locallyOfFiniteType_of_comp_of_fppf
 
 [Tag 02KM](https://stacks.math.columbia.edu/tag/02KM) in the Stacks Project.
 
-**`Stacks.Smooth.smooth_of_comp_surjective_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmoothDescent.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SmoothDescent.lean#L143). The attribute's comment: “smooth_case”.
+**`Stacks.Smooth.smooth_of_comp_surjective_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmoothDescent.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SmoothDescent.lean#L143). The attribute's comment: “smooth\_case”.
 
 > **Stacks Project, Tag 02KM (smooth case).** If `f` is surjective and smooth and `f ≫ q` is
 > smooth, then `q` is smooth.
@@ -93,7 +93,7 @@ theorem smooth_of_comp_surjective_smooth (f : X ⟶ Y) (q : Y ⟶ S) [Surjective
     [Smooth (f ≫ q)] : Smooth q
 ```
 
-**`Stacks.Etale.etale_of_comp_surjective_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SurjectiveEtaleDescent.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SurjectiveEtaleDescent.lean#L76). The attribute's comment: “etale_case”. References: EGA IV (17.7.5), “special case”.
+**`Stacks.Etale.etale_of_comp_surjective_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SurjectiveEtaleDescent.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SurjectiveEtaleDescent.lean#L76). The attribute's comment: “etale\_case”. References: EGA IV (17.7.5), “special case”.
 
 > **Stacks 02KM**, étale case. If `f : X ⟶ Y` is surjective and étale and the composite
 > `f ≫ q` is étale, then `q : Y ⟶ S` is étale.
@@ -108,7 +108,7 @@ theorem etale_of_comp_surjective_etale {X Y S : Scheme.{u}}
     Etale q
 ```
 
-**`Stacks.Syntomic.syntomic_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SyntomicLciDescent.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SyntomicLciDescent.lean#L317). The attribute's comment: “syntomic_case”.
+**`Stacks.Syntomic.syntomic_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SyntomicLciDescent.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SyntomicLciDescent.lean#L317). The attribute's comment: “syntomic\_case”.
 
 > **Stacks Project, Tag 02KM (syntomic case).** Syntomicity descends along a surjective
 > syntomic morphism: if `f : X ⟶ Y` is surjective and syntomic and `f ≫ q` is syntomic, then
@@ -127,7 +127,7 @@ theorem syntomic_of_comp (f : X ⟶ Y) (q : Y ⟶ S) [Surjective f] (hf : Syntom
 
 [Tag 05B5](https://stacks.math.columbia.edu/tag/05B5) in the Stacks Project.
 
-**`Stacks.Smooth.smooth_of_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmoothDescent.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SmoothDescent.lean#L116). The attribute's comment: “smooth_permanence”.
+**`Stacks.Smooth.smooth_of_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SmoothDescent.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SmoothDescent.lean#L116). The attribute's comment: “smooth\_permanence”.
 
 > **Stacks Project, Tag 05B5 (smooth case).** Smoothness descends along a surjective flat
 > morphism which is locally of finite presentation: if `f : X ⟶ Y` is surjective, flat and locally
@@ -138,7 +138,7 @@ theorem smooth_of_comp_of_fppf (f : X ⟶ Y) (q : Y ⟶ S) [Surjective f] [Flat 
     [LocallyOfFinitePresentation f] [Smooth (f ≫ q)] : Smooth q
 ```
 
-**`Stacks.Etale.etale_of_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Descent.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Descent.lean#L169). The attribute's comment: “etale_permanence”.
+**`Stacks.Etale.etale_of_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Descent.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Descent.lean#L169). The attribute's comment: “etale\_permanence”.
 
 > **Stacks Project, Tag 05B5 (étale case).** Étaleness descends along a surjective flat
 > morphism which is locally of finite presentation: if `f : X ⟶ Y` is surjective, flat and locally
@@ -153,7 +153,7 @@ theorem etale_of_comp_of_fppf (f : X ⟶ Y) (q : Y ⟶ S) [Surjective f] [Flat f
 
 [Tag 05B7](https://stacks.math.columbia.edu/tag/05B7) in the Stacks Project.
 
-**`AlgebraicGeometry.syntomic_of_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SyntomicDescent.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SyntomicDescent.lean#L130). The attribute's comment: “q_syntomic”.
+**`AlgebraicGeometry.syntomic_of_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/SyntomicDescent.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/SyntomicDescent.lean#L130). The attribute's comment: “q\_syntomic”.
 
 > **Stacks Project, Tag 05B7.** Syntomicity descends along a surjective flat morphism which is
 > locally of finite presentation: if `f : X ⟶ Y` is surjective, flat and locally of finite
@@ -164,7 +164,7 @@ theorem syntomic_of_comp_of_fppf (f : X ⟶ Y) (q : Y ⟶ S) [Surjective f] [Fla
     [LocallyOfFinitePresentation f] (hp : Syntomic (f ≫ q)) : Syntomic q
 ```
 
-**`AlgebraicGeometry.syntomic_of_syntomic_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Descent/Fppf.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Descent/Fppf.lean#L101). The attribute's comment: “f_syntomic”.
+**`AlgebraicGeometry.syntomic_of_syntomic_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Descent/Fppf.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Descent/Fppf.lean#L101). The attribute's comment: “f\_syntomic”.
 
 > **Stacks Project, Tag 05B7.** A surjective flat morphism locally of finite presentation is
 > syntomic as soon as its composite with another morphism is syntomic.
@@ -174,7 +174,7 @@ theorem syntomic_of_syntomic_comp_of_fppf [Surjective f] [Flat f]
     [LocallyOfFinitePresentation f] (hp : Syntomic (f ≫ q)) : Syntomic f
 ```
 
-**`AlgebraicGeometry.syntomic_of_syntomic_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/FactorSyntomic.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/FactorSyntomic.lean#L198). The attribute's comment: “f_syntomic”.
+**`AlgebraicGeometry.syntomic_of_syntomic_comp_of_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/FactorSyntomic.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/FactorSyntomic.lean#L198). The attribute's comment: “f\_syntomic”.
 
 > If `f : X ⟶ Y` is surjective, flat and locally of finite presentation and `f ≫ q` is
 > syntomic, then `f` is syntomic.
@@ -201,7 +201,7 @@ theorem flat_of_comp_of_fppf_refinement
     Flat g
 ```
 
-**`AlgebraicGeometry.locallyOfFiniteType_of_comp_of_fppf_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/MorphismProperty/FppfRefinement.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/MorphismProperty/FppfRefinement.lean#L199). The attribute's comment: “locally_finite_type”.
+**`AlgebraicGeometry.locallyOfFiniteType_of_comp_of_fppf_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/MorphismProperty/FppfRefinement.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/MorphismProperty/FppfRefinement.lean#L199). The attribute's comment: “locally\_finite\_type”.
 
 > **Stacks Project, Tag 06NB (locally finite type).** If `f ≫ g` is locally of finite type
 > and the singleton family consisting of `f` is refined by an fppf covering of `Y`, then `g` is
@@ -215,7 +215,7 @@ theorem locallyOfFiniteType_of_comp_of_fppf_refinement
     LocallyOfFiniteType g
 ```
 
-**`AlgebraicGeometry.locallyOfFinitePresentation_of_comp_of_fppf_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/MorphismProperty/FppfRefinement.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/MorphismProperty/FppfRefinement.lean#L249). The attribute's comment: “locally_finite_presentation”.
+**`AlgebraicGeometry.locallyOfFinitePresentation_of_comp_of_fppf_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/MorphismProperty/FppfRefinement.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/MorphismProperty/FppfRefinement.lean#L249). The attribute's comment: “locally\_finite\_presentation”.
 
 > **Stacks Project, Tag 06NB (locally finite presentation).** If `f ≫ g` is locally of
 > finite presentation and the singleton family consisting of `f` is refined by an fppf covering

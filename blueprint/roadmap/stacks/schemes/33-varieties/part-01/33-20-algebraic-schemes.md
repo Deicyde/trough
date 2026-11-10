@@ -80,7 +80,7 @@ theorem isCatenarySpace_of_locallyOfFiniteType_over_field
     IrreducibleClosedsCodim.IsCatenarySpace X
 ```
 
-**`AlgebraicGeometry.topologicalKrullDimAt_eq_krullDimOfRing_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ClosedPoint.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ClosedPoint.lean#L43). The attribute's comment: “dimension_at_closed_point”.
+**`AlgebraicGeometry.topologicalKrullDimAt_eq_krullDimOfRing_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ClosedPoint.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ClosedPoint.lean#L43). The attribute's comment: “dimension\_at\_closed\_point”.
 
 > At a closed point of a scheme locally of finite type over a field, the local dimension of
 > the scheme equals the Krull dimension of its local ring.
@@ -92,7 +92,7 @@ theorem topologicalKrullDimAt_eq_krullDimOfRing_stalk
     topologicalKrullDimAt X x = ringKrullDim (X.presheaf.stalk x)
 ```
 
-**`AlgebraicGeometry.topologicalKrullDimAt_eq_iSup_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Components.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Components.lean#L181). The attribute's comment: “local_dimension_components”.
+**`AlgebraicGeometry.topologicalKrullDimAt_eq_iSup_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Components.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Components.lean#L181). The attribute's comment: “local\_dimension\_components”.
 
 > For a scheme locally of finite type over a field, the local dimension at a point is the
 > largest dimension of an irreducible component containing that point.
@@ -105,7 +105,7 @@ theorem topologicalKrullDimAt_eq_iSup_irreducibleComponents
       ⨆ Z ∈ {Z ∈ irreducibleComponents X | x ∈ Z}, topologicalKrullDim Z
 ```
 
-**`AlgebraicGeometry.exists_mem_irreducibleComponents_topologicalKrullDim_eq_topologicalKrullDimAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Components.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Components.lean#L190). The attribute's comment: “local_dimension_components”. References: EGA IV (10.6.3), “sup_i dim(Y_i)”.
+**`AlgebraicGeometry.exists_mem_irreducibleComponents_topologicalKrullDim_eq_topologicalKrullDimAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Components.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Components.lean#L190). The attribute's comment: “local\_dimension\_components”. References: EGA IV (10.6.3), “sup\_i dim(Y\_i)”.
 
 > The maximum dimension among the irreducible components through a point is attained.
 
@@ -117,7 +117,7 @@ theorem exists_mem_irreducibleComponents_topologicalKrullDim_eq_topologicalKrull
       x ∈ Z ∧ topologicalKrullDim Z = topologicalKrullDimAt X x
 ```
 
-**`AlgebraicGeometry.topologicalKrullDimAt_eq_trdeg_add_krullDim_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Formula.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Formula.lean#L99). The attribute's comment: “dimension_formula”. References: EGA IV (13.3.4), “special case”; EGA IV (17.15.8); EGA IV (5.2.3); SGA 1 II (5.8), “partial”; SGA 1 II (5.9), “n = trdeg_k κ(x) + p”.
+**`AlgebraicGeometry.topologicalKrullDimAt_eq_trdeg_add_krullDim_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Formula.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Formula.lean#L99). The attribute's comment: “dimension\_formula”. References: EGA IV (13.3.4), “special case”; EGA IV (17.15.8); EGA IV (5.2.3); SGA 1 II (5.8), “partial”; SGA 1 II (5.9), “n = trdeg\_k κ(x) + p”.
 
 > **Stacks Project, Tag 0A21.** The dimension at a point of a scheme locally of finite type
 > over a field is the transcendence degree of its residue field plus the dimension of its local
@@ -134,7 +134,7 @@ theorem topologicalKrullDimAt_eq_trdeg_add_krullDim_stalk
         ringKrullDim (X.presheaf.stalk x)
 ```
 
-**`AlgebraicGeometry.trdeg_residueField_eq_add_one_of_isImmediateSpecialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ImmediateSpecialization.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ImmediateSpecialization.lean#L57). The attribute's comment: “immediate_specialization_trdeg”.
+**`AlgebraicGeometry.trdeg_residueField_eq_add_one_of_isImmediateSpecialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ImmediateSpecialization.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ImmediateSpecialization.lean#L57). The attribute's comment: “immediate\_specialization\_trdeg”.
 
 > **Stacks Project, Tag 0A21.** For an immediate specialization in a scheme locally of finite
 > type over a field, the transcendence degree of the residue field at the more general point is
@@ -151,7 +151,7 @@ theorem trdeg_residueField_eq_add_one_of_isImmediateSpecialization
     Algebra.trdeg k (X.residueField x) = Algebra.trdeg k (X.residueField x') + 1
 ```
 
-**`AlgebraicGeometry.krullDimOfRing_stalk_eq_add_one_of_isImmediateSpecialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ImmediateSpecialization.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ImmediateSpecialization.lean#L222). The attribute's comment: “immediate_specialization_local_ring”.
+**`AlgebraicGeometry.krullDimOfRing_stalk_eq_add_one_of_isImmediateSpecialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ImmediateSpecialization.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ImmediateSpecialization.lean#L222). The attribute's comment: “immediate\_specialization\_local\_ring”.
 
 > For an irreducible or equidimensional scheme locally of finite type over a field, local-ring
 > dimension increases by one under an immediate specialization.
@@ -165,7 +165,7 @@ theorem krullDimOfRing_stalk_eq_add_one_of_isImmediateSpecialization
       ringKrullDim (X.presheaf.stalk x) + 1
 ```
 
-**`AlgebraicGeometry.exists_maximalChain_extending`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/MaximalChain.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/MaximalChain.lean#L121). The attribute's comment: “extend_irreducible_chain”.
+**`AlgebraicGeometry.exists_maximalChain_extending`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/MaximalChain.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/MaximalChain.lean#L121). The attribute's comment: “extend\_irreducible\_chain”.
 
 > Any finite chain of irreducible closed subsets of an irreducible locally algebraic scheme
 > over a field extends to a maximal chain.
@@ -179,7 +179,7 @@ lemma exists_maximalChain_extending
       IsMin q.head ∧ IsMax q.last ∧ Set.range p ⊆ Set.range q
 ```
 
-**`AlgebraicGeometry.maximalChain_length_eq_topologicalKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/MaximalChain.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/MaximalChain.lean#L255). The attribute's comment: “maximal_chain_length”.
+**`AlgebraicGeometry.maximalChain_length_eq_topologicalKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/MaximalChain.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/MaximalChain.lean#L255). The attribute's comment: “maximal\_chain\_length”.
 
 > Every maximal chain of irreducible closed subsets of an irreducible locally algebraic
 > scheme over a field has length equal to the dimension of the scheme.
@@ -193,7 +193,7 @@ theorem maximalChain_length_eq_topologicalKrullDim
     (s.length : WithBot ℕ∞) = topologicalKrullDim X
 ```
 
-**`AlgebraicGeometry.topologicalKrullDim_eq_of_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/NonemptyOpen.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/NonemptyOpen.lean#L129). The attribute's comment: “dimension_nonempty_open”. References: SGA 3 VIB (1.5), “more general”.
+**`AlgebraicGeometry.topologicalKrullDim_eq_of_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/NonemptyOpen.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/NonemptyOpen.lean#L129). The attribute's comment: “dimension\_nonempty\_open”. References: SGA 3 VIB (1.5), “more general”.
 
 > A nonempty open subset of an irreducible scheme locally of finite type over a field has the
 > same Krull dimension as the whole scheme.
@@ -206,7 +206,7 @@ theorem topologicalKrullDim_eq_of_isOpen
     topologicalKrullDim X = topologicalKrullDim U
 ```
 
-**`AlgebraicGeometry.topologicalKrullDim_eq_topologicalKrullDimAt_of_irreducible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/NonemptyOpen.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/NonemptyOpen.lean#L170). The attribute's comment: “dimension_at_point_irreducible”.
+**`AlgebraicGeometry.topologicalKrullDim_eq_topologicalKrullDimAt_of_irreducible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/NonemptyOpen.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/NonemptyOpen.lean#L170). The attribute's comment: “dimension\_at\_point\_irreducible”.
 
 > The dimension of an irreducible scheme locally of finite type over a field equals its
 > dimension at every point.
@@ -218,7 +218,7 @@ theorem topologicalKrullDim_eq_topologicalKrullDimAt_of_irreducible
     topologicalKrullDim X = topologicalKrullDimAt X x
 ```
 
-**`AlgebraicGeometry.topologicalKrullDimAt_le_of_specialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Specialization.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Specialization.lean#L56). The attribute's comment: “specialization_local_dimension”.
+**`AlgebraicGeometry.topologicalKrullDimAt_le_of_specialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Specialization.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Specialization.lean#L56). The attribute's comment: “specialization\_local\_dimension”.
 
 > Local Krull dimension cannot decrease along a specialization.
 
@@ -228,7 +228,7 @@ theorem topologicalKrullDimAt_le_of_specialization {X : Type*} [TopologicalSpace
     topologicalKrullDimAt X x ≤ topologicalKrullDimAt X x'
 ```
 
-**`AlgebraicGeometry.krullDimOfRing_stalk_lt_of_specialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Specialization.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Specialization.lean#L65). The attribute's comment: “specialization_stalk_dimension”.
+**`AlgebraicGeometry.krullDimOfRing_stalk_lt_of_specialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Specialization.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Specialization.lean#L65). The attribute's comment: “specialization\_stalk\_dimension”.
 
 > A nontrivial specialization on a scheme locally of finite type over a field strictly
 > increases the Krull dimension of the local ring.
@@ -240,7 +240,7 @@ theorem krullDimOfRing_stalk_lt_of_specialization
     ringKrullDim (X.presheaf.stalk x) < ringKrullDim (X.presheaf.stalk x')
 ```
 
-**`AlgebraicGeometry.topologicalKrullDimAt_eq_iInf_closedSpecializations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Specialization.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Specialization.lean#L126). The attribute's comment: “local_dimension_closed_specializations”.
+**`AlgebraicGeometry.topologicalKrullDimAt_eq_iInf_closedSpecializations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Specialization.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Specialization.lean#L126). The attribute's comment: “local\_dimension\_closed\_specializations”.
 
 > For a scheme locally of finite type over a field, its local dimension at a point is the
 > minimum of the dimensions of the local rings at the closed specializations of that point.
@@ -254,7 +254,7 @@ theorem topologicalKrullDimAt_eq_iInf_closedSpecializations
         ringKrullDim (X.presheaf.stalk x')
 ```
 
-**`AlgebraicGeometry.length_eq_trdeg_sub_of_maximalSpecializationChain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/SpecializationChain.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/SpecializationChain.lean#L100). The attribute's comment: “specialization_chain_length”.
+**`AlgebraicGeometry.length_eq_trdeg_sub_of_maximalSpecializationChain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/SpecializationChain.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/SpecializationChain.lean#L100). The attribute's comment: “specialization\_chain\_length”.
 
 > The length of a maximal chain of nontrivial specializations on a scheme locally of finite
 > type over a field is the drop in transcendence degree of the residue fields at its endpoints.
@@ -273,7 +273,7 @@ theorem length_eq_trdeg_sub_of_maximalSpecializationChain
       Cardinal.toNat (Algebra.trdeg k (X.residueField x'))
 ```
 
-**`AlgebraicGeometry.trdeg_residueField_lt_of_specialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/SpecializationTrdeg.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/SpecializationTrdeg.lean#L51). The attribute's comment: “specialization_trdeg”.
+**`AlgebraicGeometry.trdeg_residueField_lt_of_specialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/SpecializationTrdeg.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/SpecializationTrdeg.lean#L51). The attribute's comment: “specialization\_trdeg”.
 
 > On a scheme locally of finite type over a field, residue-field transcendence degree strictly
 > decreases along a nontrivial specialization.
@@ -289,7 +289,7 @@ theorem trdeg_residueField_lt_of_specialization
     Algebra.trdeg k (X.residueField x') < Algebra.trdeg k (X.residueField x)
 ```
 
-**`AlgebraicGeometry.topologicalKrullDim_eq_trdeg_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Trdeg.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Trdeg.lean#L100). The attribute's comment: “irreducible_dimension_trdeg”. References: EGA IV (4.1.1), “special case”; EGA IV (5.2.1).
+**`AlgebraicGeometry.topologicalKrullDim_eq_trdeg_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Trdeg.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Trdeg.lean#L100). The attribute's comment: “irreducible\_dimension\_trdeg”. References: EGA IV (4.1.1), “special case”; EGA IV (5.2.1).
 
 > **Stacks Project, Tag 0A21.** The dimension of an irreducible scheme locally of finite type
 > over a field equals the transcendence degree of its residue field at a generic point.
@@ -305,7 +305,7 @@ theorem topologicalKrullDim_eq_trdeg_residueField
       (Cardinal.toENat (Algebra.trdeg k (X.residueField x)) : WithBot ℕ∞)
 ```
 
-**`AlgebraicGeometry.topologicalKrullDim_eq_iSup_trdeg_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Trdeg.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Trdeg.lean#L202). The attribute's comment: “dimension_sup_trdeg”. References: EGA IV (4.1.1); EGA IV (5.2.1), “more general”; EGA IV (5.2.2).
+**`AlgebraicGeometry.topologicalKrullDim_eq_iSup_trdeg_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Trdeg.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/Trdeg.lean#L202). The attribute's comment: “dimension\_sup\_trdeg”. References: EGA IV (4.1.1); EGA IV (5.2.1), “more general”; EGA IV (5.2.2).
 
 > **Stacks Project, Tag 0A21.** The dimension of a scheme locally of finite type over a field
 > is the supremum of the transcendence degrees of the residue fields at the generic points of its
@@ -339,7 +339,7 @@ theorem topologicalKrullDimAt_eq_add_ringKrullDim_stalk (k : Type u) [Field k] {
 
 [Tag 0B2L](https://stacks.math.columbia.edu/tag/0B2L) in the Stacks Project.
 
-**`AlgebraicGeometry.locallyOfFiniteType_fiberToSpecResidueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Fibre.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Fibre.lean#L66). The attribute's comment: “locally_algebraic_fibre”.
+**`AlgebraicGeometry.locallyOfFiniteType_fiberToSpecResidueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Fibre.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Fibre.lean#L66). The attribute's comment: “locally\_algebraic\_fibre”.
 
 > A fibre of a morphism between locally algebraic schemes is locally algebraic over the
 > residue field of the corresponding point.
@@ -353,7 +353,7 @@ public theorem locallyOfFiniteType_fiberToSpecResidueField
     LocallyOfFiniteType (f.fiberToSpecResidueField y)
 ```
 
-**`AlgebraicGeometry.topologicalKrullDim_le_fiber_add_imageClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean#L325). The attribute's comment: “part (2a): dim_x(X_{f(x)}) ≥ d”. References: EGA IV (10.6.1), “(iii), special case”.
+**`AlgebraicGeometry.topologicalKrullDim_le_fiber_add_imageClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean#L325). The attribute's comment: “part (2a): dim\_x(X\_\{f(x)}) ≥ d”. References: EGA IV (10.6.1), “(iii), special case”.
 
 > **Lower bound for the fibre dimension.** For a morphism `f : X ⟶ Y` of schemes locally of
 > finite type over a field with `X` irreducible, the local dimension of every fibre of `f` is at
@@ -373,7 +373,7 @@ public theorem topologicalKrullDim_le_fiber_add_imageClosure
             (Closeds.closure (Set.range (fun x : X => f x)))).subscheme
 ```
 
-**`AlgebraicGeometry.isOpen_and_dense_setOf_topologicalKrullDimAt_fiber_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean#L404). The attribute's comment: “part (2b): {x | dim_x(X_{f(x)}) = d} is dense open”.
+**`AlgebraicGeometry.isOpen_and_dense_setOf_topologicalKrullDimAt_fiber_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean#L404). The attribute's comment: “part (2b): \{x | dim\_x(X\_\{f(x)}) = d} is dense open”.
 
 > **The fibre dimension is generically the expected one.** For a morphism `f : X ⟶ Y` of schemes
 > locally of finite type over a field with `X` irreducible, the set of points at which the local
@@ -396,7 +396,7 @@ public theorem isOpen_and_dense_setOf_topologicalKrullDimAt_fiber_eq
         topologicalKrullDimAt (f.fiber (f x)) (f.asFiber x) = (d : WithBot ℕ∞)}
 ```
 
-**`AlgebraicGeometry.topologicalKrullDimAt_fiber_add_one_le_of_one_le_ringKrullDim_imageClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean, line 571](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean#L571). The attribute's comment: “part (2c): dim_x(X_{f(x)}) ≤ d + dim O_{Z,f(x)} - 1”.
+**`AlgebraicGeometry.topologicalKrullDimAt_fiber_add_one_le_of_one_le_ringKrullDim_imageClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean, line 571](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean#L571). The attribute's comment: “part (2c): dim\_x(X\_\{f(x)}) ≤ d + dim O\_\{Z,f(x)} - 1”.
 
 > **Upper bound for the fibre dimension over a point of higher codimension.** For a morphism
 > `f : X ⟶ Y` of schemes locally of finite type over a field with `X` irreducible, if the local ring
@@ -431,7 +431,7 @@ public theorem topologicalKrullDimAt_fiber_add_one_le_of_one_le_ringKrullDim_ima
           (Closeds.closure (Set.range (fun x : X => f x)))).subscheme.presheaf.stalk z)
 ```
 
-**`AlgebraicGeometry.topologicalKrullDimAt_fiber_eq_of_ringKrullDim_imageClosure_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean, line 621](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean#L621). The attribute's comment: “part (2d): dim O_{Z,f(x)} = 1 implies dim_x(X_{f(x)}) = d”.
+**`AlgebraicGeometry.topologicalKrullDimAt_fiber_eq_of_ringKrullDim_imageClosure_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean, line 621](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean#L621). The attribute's comment: “part (2d): dim O\_\{Z,f(x)} = 1 implies dim\_x(X\_\{f(x)}) = d”.
 
 > **The fibre dimension over a point of codimension one.** For a morphism `f : X ⟶ Y` of schemes
 > locally of finite type over a field with `X` irreducible, if the local ring of the reduced closure
@@ -459,7 +459,7 @@ public theorem topologicalKrullDimAt_fiber_eq_of_ringKrullDim_imageClosure_eq_on
     topologicalKrullDimAt (f.fiber (f x)) (f.asFiber x) = (d : WithBot ℕ∞)
 ```
 
-**`AlgebraicGeometry.topologicalKrullDimAt_le_fiber_add_topologicalKrullDimAt_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean, line 686](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean#L686). The attribute's comment: “part (3): dim_x(X_y) ≥ dim_x(X) - dim_y(Y)”.
+**`AlgebraicGeometry.topologicalKrullDimAt_le_fiber_add_topologicalKrullDimAt_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean, line 686](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/FibreDimension.lean#L686). The attribute's comment: “part (3): dim\_x(X\_y) ≥ dim\_x(X) - dim\_y(Y)”.
 
 > **Local lower bound for the fibre dimension.** For a morphism `f : X ⟶ Y` of schemes locally of
 > finite type over a field and any point `x` of `X` with image `y = f x`,

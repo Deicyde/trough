@@ -318,7 +318,7 @@ theorem isCohenMacaulayAt_of_pullback_snd_of_isFlatAt_base
 
 [Tag 0E10](https://stacks.math.columbia.edu/tag/0E10) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isOpen_setOf_isCohenMacaulayAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohenMacaulay/Locus.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CohenMacaulay/Locus.lean#L136). The attribute's comment: “openness of the Cohen–Macaulay locus”. References: EGA IV (12.1.1), “(vi), F = O_X”.
+**`AlgebraicGeometry.Space.isOpen_setOf_isCohenMacaulayAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohenMacaulay/Locus.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CohenMacaulay/Locus.lean#L136). The attribute's comment: “openness of the Cohen–Macaulay locus”. References: EGA IV (12.1.1), “(vi), F = O\_X”.
 
 > **Stacks 0E10.** The Cohen–Macaulay locus of a flat morphism of algebraic spaces over `S`
 > which is locally of finite presentation is open in the canonical topology of Tag 03BX on the

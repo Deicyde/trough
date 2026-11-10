@@ -26,7 +26,7 @@ public theorem projection_isCofiberedInGroupoids
     IsCofiberedInGroupoids 𝓕.projection
 ```
 
-**`Deformation.Examples.FiniteProjectiveModule.specialFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveModules.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveModules.lean#L158). The attribute's comment: “finite_projective_deformation_category”.
+**`Deformation.Examples.FiniteProjectiveModule.specialFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveModules.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveModules.lean#L158). The attribute's comment: “finite\_projective\_deformation\_category”.
 
 > The pair `(k, V)` consisting of the residue field and a finite-dimensional `k`-vector
 > space: the special-fibre object whose deformations are studied.
@@ -36,7 +36,7 @@ public noncomputable def specialFiber (V : Type t) [AddCommGroup V] [Module k V]
     [Module.Finite k V] : FiniteProjectiveModule.{u, w, w, t} (Λ := Λ) (k := k)
 ```
 
-**`Deformation.Examples.FiniteProjectiveModule.family`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveModules.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveModules.lean#L301). The attribute's comment: “finite_projective_deformation_category”.
+**`Deformation.Examples.FiniteProjectiveModule.family`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveModules.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveModules.lean#L301). The attribute's comment: “finite\_projective\_deformation\_category”.
 
 > The chosen category of finite projective modules over the algebras of `𝒞_Λ`.
 
@@ -44,7 +44,7 @@ public noncomputable def specialFiber (V : Type t) [AddCommGroup V] [Module k V]
 public noncomputable def family : Family.{u, w, t} (Λ := Λ) (k := k)
 ```
 
-**`Deformation.Examples.FiniteProjectiveModule.deformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveModules.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveModules.lean#L307). The attribute's comment: “finite_projective_deformation_category”.
+**`Deformation.Examples.FiniteProjectiveModule.deformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveModules.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveModules.lean#L307). The attribute's comment: “finite\_projective\_deformation\_category”.
 
 > Deformations of a finite-dimensional `k`-vector space `V`: the objects of the category of
 > finite projective modules lying over the special-fibre object `(k, V)`.
@@ -90,7 +90,7 @@ public theorem isDeformationCategory_deformationCategory
 
 [Tag 0DVQ](https://stacks.math.columbia.edu/tag/0DVQ) in the Stacks Project.
 
-**`Deformation.Examples.FiniteProjectiveModule.subsingleton_tangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveTangentSpace.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveTangentSpace.lean#L489). The attribute's comment: “tangent_space_zero”.
+**`Deformation.Examples.FiniteProjectiveModule.subsingleton_tangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveTangentSpace.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveTangentSpace.lean#L489). The attribute's comment: “tangent\_space\_zero”.
 
 > The tangent space of the deformation category of a finite-dimensional vector space has at
 > most one element: it is the zero vector space.
@@ -113,7 +113,7 @@ public theorem subsingleton_tangentSpace
     Subsingleton T
 ```
 
-**`Deformation.Examples.FiniteProjectiveModule.finiteDimensional_tangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveTangentSpace.lean, line 549](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveTangentSpace.lean#L549). The attribute's comment: “tangent_space_zero”.
+**`Deformation.Examples.FiniteProjectiveModule.finiteDimensional_tangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveTangentSpace.lean, line 549](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/FiniteProjectiveTangentSpace.lean#L549). The attribute's comment: “tangent\_space\_zero”.
 
 > The tangent space of the deformation category of a finite-dimensional vector space is
 > finite-dimensional, being the zero vector space.
@@ -136,7 +136,7 @@ public theorem finiteDimensional_tangentSpace
     FiniteDimensional k T
 ```
 
-**`Deformation.Examples.FiniteProjectiveModule.infinitesimalAutomorphismsEquivEnd`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/InfinitesimalAutomorphisms/Endomorphisms.lean, line 1043](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/InfinitesimalAutomorphisms/Endomorphisms.lean#L1043). The attribute's comment: “infinitesimal_automorphisms”.
+**`Deformation.Examples.FiniteProjectiveModule.infinitesimalAutomorphismsEquivEnd`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/InfinitesimalAutomorphisms/Endomorphisms.lean, line 1043](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/InfinitesimalAutomorphisms/Endomorphisms.lean#L1043). The attribute's comment: “infinitesimal\_automorphisms”.
 
 > Infinitesimal automorphisms of a finite-dimensional vector space are its
 > linear endomorphisms, with composition corresponding to addition.
@@ -174,7 +174,7 @@ public noncomputable def infinitesimalAutomorphismsEquivEnd
               a.linear m = m + ε • n }
 ```
 
-**`Deformation.Examples.FiniteProjectiveModule.exists_infinitesimalAutomorphismsLinearEquivEnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/InfinitesimalAutomorphisms/Endomorphisms.lean, line 1082](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/InfinitesimalAutomorphisms/Endomorphisms.lean#L1082). The attribute's comment: “infinitesimal_automorphisms”.
+**`Deformation.Examples.FiniteProjectiveModule.exists_infinitesimalAutomorphismsLinearEquivEnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/InfinitesimalAutomorphisms/Endomorphisms.lean, line 1082](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/InfinitesimalAutomorphisms/Endomorphisms.lean#L1082). The attribute's comment: “infinitesimal\_automorphisms”.
 
 > The infinitesimal automorphism group of the deformations of `V` is the `k`-vector space
 > `Module.End k V`, and is in particular finite-dimensional. The `k`-structure is the one of

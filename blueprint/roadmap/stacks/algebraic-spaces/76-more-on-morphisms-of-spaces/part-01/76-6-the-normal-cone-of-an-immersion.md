@@ -46,7 +46,7 @@ noncomputable def conormalAlgebraOfImmersion (hX : IsAlgebraicSpace B S hS X₀)
       (structureRingSheaf B S hS (⟨Z₀, hZ⟩ : AlgebraicSpaces B S hS))
 ```
 
-**`AlgebraicGeometry.Space.conormalAlgebraPiece`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/ClosedImmersion/ConormalAlgebra.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/ClosedImmersion/ConormalAlgebra.lean#L205). The attribute's comment: “the homogeneous pieces, as inverse images of the ideal powers, for a closed subspace”. References: EGA IV (16.1.2), “I^n/I^{n+1} pieces”.
+**`AlgebraicGeometry.Space.conormalAlgebraPiece`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/ClosedImmersion/ConormalAlgebra.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/ClosedImmersion/ConormalAlgebra.lean#L205). The attribute's comment: “the homogeneous pieces, as inverse images of the ideal powers, for a closed subspace”. References: EGA IV (16.1.2), “I^n/I^\{n+1} pieces”.
 
 > **The homogeneous pieces of the conormal algebra of a closed subspace.**  The degree-`n`
 > piece `𝒞_{Z/X, n}` of the conormal algebra of a closed subspace `Z` of an algebraic space `X`
@@ -86,7 +86,7 @@ def conormalAlgebraPiecePushforwardIso (n : ℕ) :
         (conormalAlgebraPiece B S hS X Z n) ≅ conormalGradedPiece B S hS X Z n
 ```
 
-**`AlgebraicGeometry.Space.isoConormalAlgebraPiece`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraDegreeN.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraDegreeN.lean#L498). The attribute's comment: “the characterizing property 76.6.1.1 determines 𝒞_{Z/X, n} up to isomorphism”.
+**`AlgebraicGeometry.Space.isoConormalAlgebraPiece`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraDegreeN.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraDegreeN.lean#L498). The attribute's comment: “the characterizing property 76.6.1.1 determines 𝒞\_\{Z/X, n} up to isomorphism”.
 
 > **The degree-`n` piece of the conormal algebra is determined by Stacks 09RP.**  An
 > `𝒪_Z`-module whose direct image along the inclusion is `𝓘ⁿ/𝓘ⁿ⁺¹` is isomorphic to `𝒞_{Z/X, n}`,
@@ -310,7 +310,7 @@ theorem conormalAlgebraOfImmersionEtaleRestrictionIso_comp (hX : IsAlgebraicSpac
 
 [Tag 09RS](https://stacks.math.columbia.edu/tag/09RS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.conormalAlgebraOfImmersionSquareMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraOfImmersionSquareMap.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraOfImmersionSquareMap.lean#L229). The attribute's comment: “the canonical map f^*𝒞_{Z'/X',*} ⟶ 𝒞_{Z/X,*} for immersions i, i', on the conormal algebras of immersions of Tag 09RN”.
+**`AlgebraicGeometry.Space.conormalAlgebraOfImmersionSquareMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraOfImmersionSquareMap.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraOfImmersionSquareMap.lean#L229). The attribute's comment: “the canonical map f^*𝒞\_\{Z'/X',*} ⟶ 𝒞\_\{Z/X,*} for immersions i, i', on the conormal algebras of immersions of Tag 09RN”.
 
 > **[Stacks Project, Tag 09RS] for a square of immersions, on the conormal algebras of
 > [Stacks Project, Tag 09RN].**  Let
@@ -401,7 +401,7 @@ noncomputable def conormalAlgebraSquareMapOfPullbackHom (i : Z ⟶ X) (i' : Z' �
       conormalAlgebra B S hS i
 ```
 
-**`AlgebraicGeometry.Space.conormalAlgebraSquareMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/KernelIdealGradedPushforward.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/KernelIdealGradedPushforward.lean#L377). The attribute's comment: “the canonical map f^*𝒞_{Z'/X',*} ⟶ 𝒞_{Z/X,*} of graded algebras”.
+**`AlgebraicGeometry.Space.conormalAlgebraSquareMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/KernelIdealGradedPushforward.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/KernelIdealGradedPushforward.lean#L377). The attribute's comment: “the canonical map f^*𝒞\_\{Z'/X',*} ⟶ 𝒞\_\{Z/X,*} of graded algebras”.
 
 > **[Stacks Project, Tag 09RS]: the canonical map of conormal algebras of a commutative
 > square.**  Let
@@ -444,7 +444,7 @@ noncomputable def conormalAlgebraSquareMap (i : Z ⟶ X) (i' : Z' ⟶ X') (f : Z
 
 [Tag 09RT](https://stacks.math.columbia.edu/tag/09RT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.epi_conormalAlgebraOfImmersionSquareMap_app_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraOfImmersionSquareMapCartesian.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraOfImmersionSquareMapCartesian.lean#L159). The attribute's comment: “surjectivity: for a cartesian square with i, i' immersions, the canonical map f^*𝒞_{Z'/X',*} ⟶ 𝒞_{Z/X,*} of Tag 09RS on the conormal algebras of immersions of Tag 09RN is surjective in every degree”.
+**`AlgebraicGeometry.Space.epi_conormalAlgebraOfImmersionSquareMap_app_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraOfImmersionSquareMapCartesian.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraOfImmersionSquareMapCartesian.lean#L159). The attribute's comment: “surjectivity: for a cartesian square with i, i' immersions, the canonical map f^*𝒞\_\{Z'/X',*} ⟶ 𝒞\_\{Z/X,*} of Tag 09RS on the conormal algebras of immersions of Tag 09RN is surjective in every degree”.
 
 > **[Stacks Project, Tag 09RT], surjectivity, on the conormal algebras of immersions.**  Let
 >
@@ -475,7 +475,7 @@ theorem epi_conormalAlgebraOfImmersionSquareMap_app_of_isPullback {i : 𝒵 ⟶ 
       n)
 ```
 
-**`AlgebraicGeometry.Space.isIso_conormalAlgebraOfImmersionSquareMap_of_isPullback_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraOfImmersionSquareMapCartesian.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraOfImmersionSquareMapCartesian.lean#L199). The attribute's comment: “flat case: for a cartesian square with i, i' immersions and g flat, the canonical map f^*𝒞_{Z'/X',*} ⟶ 𝒞_{Z/X,*} of Tag 09RS on the conormal algebras of immersions of Tag 09RN is an isomorphism of graded algebras”.
+**`AlgebraicGeometry.Space.isIso_conormalAlgebraOfImmersionSquareMap_of_isPullback_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraOfImmersionSquareMapCartesian.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraOfImmersionSquareMapCartesian.lean#L199). The attribute's comment: “flat case: for a cartesian square with i, i' immersions and g flat, the canonical map f^*𝒞\_\{Z'/X',*} ⟶ 𝒞\_\{Z/X,*} of Tag 09RS on the conormal algebras of immersions of Tag 09RN is an isomorphism of graded algebras”.
 
 > **[Stacks Project, Tag 09RT], the flat case, on the conormal algebras of immersions.**  Let
 >
@@ -507,7 +507,7 @@ theorem isIso_conormalAlgebraOfImmersionSquareMap_of_isPullback_of_isFlat {i : �
     IsIso (conormalAlgebraOfImmersionSquareMap B S hS hZ hX hZ' hX' i i' f g sq.w hi hi')
 ```
 
-**`AlgebraicGeometry.Space.epi_conormalAlgebraSquareMap_app_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraSquareMapCartesian.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraSquareMapCartesian.lean#L245). The attribute's comment: “surjectivity: for a cartesian square with i' (hence i) an immersion, the canonical map f^*𝒞_{Z'/X',*} ⟶ 𝒞_{Z/X,*} of Tag 09RS is surjective in every degree”.
+**`AlgebraicGeometry.Space.epi_conormalAlgebraSquareMap_app_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraSquareMapCartesian.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraSquareMapCartesian.lean#L245). The attribute's comment: “surjectivity: for a cartesian square with i' (hence i) an immersion, the canonical map f^*𝒞\_\{Z'/X',*} ⟶ 𝒞\_\{Z/X,*} of Tag 09RS is surjective in every degree”.
 
 > **[Stacks Project, Tag 09RT], surjectivity.**  Let
 >
@@ -536,7 +536,7 @@ theorem epi_conormalAlgebraSquareMap_app_of_isPullback (sq : IsPullback i f g i'
     Epi ((conormalAlgebraSquareMap B S hS i i' f g sq.w).app n)
 ```
 
-**`AlgebraicGeometry.Space.isIso_conormalAlgebraSquareMap_of_isPullback_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraSquareMapCartesian.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraSquareMapCartesian.lean#L310). The attribute's comment: “flat case: for a cartesian square with i' (hence i) an immersion and g flat, the canonical map f^*𝒞_{Z'/X',*} ⟶ 𝒞_{Z/X,*} of Tag 09RS is an isomorphism of graded algebras”.
+**`AlgebraicGeometry.Space.isIso_conormalAlgebraSquareMap_of_isPullback_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraSquareMapCartesian.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraSquareMapCartesian.lean#L310). The attribute's comment: “flat case: for a cartesian square with i' (hence i) an immersion and g flat, the canonical map f^*𝒞\_\{Z'/X',*} ⟶ 𝒞\_\{Z/X,*} of Tag 09RS is an isomorphism of graded algebras”.
 
 > **[Stacks Project, Tag 09RT], the flat case.**  Let
 >
@@ -564,7 +564,7 @@ theorem isIso_conormalAlgebraSquareMap_of_isPullback_of_isFlat (sq : IsPullback 
     IsIso (conormalAlgebraSquareMap B S hS i i' f g sq.w)
 ```
 
-**`AlgebraicGeometry.Space.epi_conormalAlgebraSquareMapOfPullbackHom_app_of_nonneg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraSquareMapDegreePropagation.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraSquareMapDegreePropagation.lean#L223). The attribute's comment: “the surjectivity clause, in every nonnegative degree; the cartesian hypothesis is NOT consumed, three inputs being carried: hunit, h0 and h1, the degree-one one being Tag 04CQ's surjectivity clause in ideal-sheaf form transported to this square; the flat clause is isIso_conormalAlgebraSquareMapOfPullbackHom_app_of_isFlat”.
+**`AlgebraicGeometry.Space.epi_conormalAlgebraSquareMapOfPullbackHom_app_of_nonneg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraSquareMapDegreePropagation.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraSquareMapDegreePropagation.lean#L223). The attribute's comment: “the surjectivity clause, in every nonnegative degree; the cartesian hypothesis is NOT consumed, three inputs being carried: hunit, h0 and h1, the degree-one one being Tag 04CQ's surjectivity clause in ideal-sheaf form transported to this square; the flat clause is isIso\_conormalAlgebraSquareMapOfPullbackHom\_app\_of\_isFlat”.
 
 > **The surjectivity clause of [Stacks Project, Tag 09RT].**  The canonical map
 > `f^*𝒞_{Z'/X',*} ⟶ 𝒞_{Z/X,*}` of [Stacks Project, Tag 09RS] is surjective in every nonnegative
@@ -604,7 +604,7 @@ theorem epi_conormalAlgebraSquareMapOfPullbackHom_app_of_nonneg (i : Z ⟶ X) (i
     Epi ((conormalAlgebraSquareMapOfPullbackHom B S hS i i' f g hsq Ψ).app n)
 ```
 
-**`AlgebraicGeometry.Space.isIso_conormalAlgebraSquareMapOfPullbackHom_app_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraSquareMapFlatClause.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraSquareMapFlatClause.lean#L246). The attribute's comment: “the flat clause: an isomorphism in every nonnegative degree when g is flat, flatness consumed through exactness of the inverse image; the cartesian hypothesis is NOT consumed, four inputs being carried: hunit, h0, h1 (Tag 04CQ's flat half transported) and hiota (the n-th power analogue of idealSheafMap_comp_ι); see the module docs”.
+**`AlgebraicGeometry.Space.isIso_conormalAlgebraSquareMapOfPullbackHom_app_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraSquareMapFlatClause.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalAlgebraSquareMapFlatClause.lean#L246). The attribute's comment: “the flat clause: an isomorphism in every nonnegative degree when g is flat, flatness consumed through exactness of the inverse image; the cartesian hypothesis is NOT consumed, four inputs being carried: hunit, h0, h1 (Tag 04CQ's flat half transported) and hiota (the n-th power analogue of idealSheafMap\_comp\_ι); see the module docs”.
 
 > **The flat clause of [Stacks Project, Tag 09RT].**  If `g` is flat — that is, if the morphism
 > of small étale ringed topoi it induces is flat in the sense of [Stacks Project, Tag 04JB] — then
@@ -652,7 +652,7 @@ theorem isIso_conormalAlgebraSquareMapOfPullbackHom_app_of_isFlat (i : Z ⟶ X) 
 
 [Tag 09RU](https://stacks.math.columbia.edu/tag/09RU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.immersionNormalCone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalConeRelativeSpectrum.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalConeRelativeSpectrum.lean#L155). The attribute's comment: “the normal cone C_ZX = Spec_Z(C_{Z/X,*}) of an immersion, as an algebraic space affine over Z”.
+**`AlgebraicGeometry.Space.immersionNormalCone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalConeRelativeSpectrum.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalConeRelativeSpectrum.lean#L155). The attribute's comment: “the normal cone C\_ZX = Spec\_Z(C\_\{Z/X,*}) of an immersion, as an algebraic space affine over Z”.
 
 > **Stacks Project, Tag 09RU.  The normal cone `C_ZX = \underline{Spec}_Z(𝒞_{Z/X,*})` of an
 > immersion `i : Z ⟶ X` of algebraic spaces**, as an algebraic space affine over `Z`: the relative
@@ -666,7 +666,7 @@ def immersionNormalCone (hX : IsAlgebraicSpace B S hS X₀) (hZ : IsAlgebraicSpa
     AffineOver B S hS (⟨Z₀, hZ⟩ : AlgebraicSpaces B S hS)
 ```
 
-**`AlgebraicGeometry.Space.immersionNormalConePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalConeRelativeSpectrum.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalConeRelativeSpectrum.lean#L167). The attribute's comment: “the direct image of the structure sheaf of the normal cone C_ZX is the conormal algebra C_{Z/X,*}, i.e. C_ZX = Spec_Z(C_{Z/X,*})”.
+**`AlgebraicGeometry.Space.immersionNormalConePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalConeRelativeSpectrum.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalConeRelativeSpectrum.lean#L167). The attribute's comment: “the direct image of the structure sheaf of the normal cone C\_ZX is the conormal algebra C\_\{Z/X,*}, i.e. C\_ZX = Spec\_Z(C\_\{Z/X,*})”.
 
 > **Stacks Project, Tag 09RU.  `C_ZX` is the relative spectrum of `𝒞_{Z/X,*}`**: for its
 > projection `π : C_ZX ⟶ Z`, `π_* 𝒪_{C_ZX} ≅ 𝒞_{Z/X,*}` as sheaves of commutative
@@ -679,7 +679,7 @@ def immersionNormalConePushforwardIso (hX : IsAlgebraicSpace B S hS X₀)
       conormalAlgebraSheafOfImmersion B S hS hX hZ i hi
 ```
 
-**`AlgebraicGeometry.Space.immersionNormalBundle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalConeRelativeSpectrum.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalConeRelativeSpectrum.lean#L180). The attribute's comment: “the normal bundle N_ZX = Spec_Z(Sym(C_{Z/X})) of an immersion, as an algebraic space affine over Z”.
+**`AlgebraicGeometry.Space.immersionNormalBundle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalConeRelativeSpectrum.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalConeRelativeSpectrum.lean#L180). The attribute's comment: “the normal bundle N\_ZX = Spec\_Z(Sym(C\_\{Z/X})) of an immersion, as an algebraic space affine over Z”.
 
 > **Stacks Project, Tag 09RU.  The normal bundle `N_ZX = \underline{Spec}_Z(Sym(𝒞_{Z/X}))` of
 > an immersion `i : Z ⟶ X` of algebraic spaces**, as an algebraic space affine over `Z`: the
@@ -693,7 +693,7 @@ def immersionNormalBundle (hX : IsAlgebraicSpace B S hS X₀) (hZ : IsAlgebraicS
     AffineOver B S hS (⟨Z₀, hZ⟩ : AlgebraicSpaces B S hS)
 ```
 
-**`AlgebraicGeometry.Space.immersionNormalBundlePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalConeRelativeSpectrum.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalConeRelativeSpectrum.lean#L192). The attribute's comment: “the direct image of the structure sheaf of the normal bundle N_ZX is Sym(C_{Z/X}), i.e. N_ZX = Spec_Z(Sym(C_{Z/X}))”.
+**`AlgebraicGeometry.Space.immersionNormalBundlePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalConeRelativeSpectrum.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalConeRelativeSpectrum.lean#L192). The attribute's comment: “the direct image of the structure sheaf of the normal bundle N\_ZX is Sym(C\_\{Z/X}), i.e. N\_ZX = Spec\_Z(Sym(C\_\{Z/X}))”.
 
 > **Stacks Project, Tag 09RU.  `N_ZX` is the relative spectrum of `Sym(𝒞_{Z/X})`**: for its
 > projection `π : N_ZX ⟶ Z`, `π_* 𝒪_{N_ZX} ≅ Sym(𝒞_{Z/X})` as sheaves of commutative

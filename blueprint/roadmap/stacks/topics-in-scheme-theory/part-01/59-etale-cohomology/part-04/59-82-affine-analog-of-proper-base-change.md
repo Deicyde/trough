@@ -133,7 +133,7 @@ theorem bijective_globalSectionsRestriction_of_isConnected_inter_closure
 
 [Tag 09ZH](https://stacks.math.columbia.edu/tag/09ZH) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_globalSectionsComparison_quotient_of_henselianPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/HenselianPairEtaleSections.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/HenselianPairEtaleSections.lean#L66). The attribute's comment: “Γ(X, ℱ) = Γ(Z, ℱ|_Z) for every sheaf of sets ℱ on the small étale site of X = Spec A, where (A, I) is a henselian pair and Z = Spec (A/I): the canonical comparison of global sections along Z ⟶ X is an isomorphism. The ring A is not assumed local”. References: SGA 4 XII (6.13), “special case”.
+**`Stacks.EtaleCohomology.isIso_globalSectionsComparison_quotient_of_henselianPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/HenselianPairEtaleSections.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/HenselianPairEtaleSections.lean#L66). The attribute's comment: “Γ(X, ℱ) = Γ(Z, ℱ|\_Z) for every sheaf of sets ℱ on the small étale site of X = Spec A, where (A, I) is a henselian pair and Z = Spec (A/I): the canonical comparison of global sections along Z ⟶ X is an isomorphism. The ring A is not assumed local”. References: SGA 4 XII (6.13), “special case”.
 
 > **[Stacks, Tag 09ZH].** Let `(A, I)` be a henselian pair, let `X = Spec A` and let
 > `Z = Spec (A ⧸ I)`. Then `Γ(X, ℱ) = Γ(Z, ℱ|_Z)` for every sheaf of sets `ℱ` on the small étale
@@ -159,7 +159,7 @@ public theorem isIso_globalSectionsComparison_quotient_of_henselianPair
 
 [Tag 09ZI](https://stacks.math.columbia.edu/tag/09ZI) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.etaleCohomologyRestrictionMap_bijective_of_henselianPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/Gabber/Theorem.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/Gabber/Theorem.lean#L189). The attribute's comment: “Gabber's theorem: for a henselian pair (A, I), every torsion abelian sheaf F on the small étale site of X = Spec A and every q, restriction H^q(X, F) → H^q(Z, F|_Z) to Z = Spec (A/I) is bijective”. References: SGA 4 XII (6.13), “more general”.
+**`Stacks.EtaleCohomology.etaleCohomologyRestrictionMap_bijective_of_henselianPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/Gabber/Theorem.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/Gabber/Theorem.lean#L189). The attribute's comment: “Gabber's theorem: for a henselian pair (A, I), every torsion abelian sheaf F on the small étale site of X = Spec A and every q, restriction H^q(X, F) → H^q(Z, F|\_Z) to Z = Spec (A/I) is bijective”. References: SGA 4 XII (6.13), “more general”.
 
 > **Gabber's theorem.** Let `(A, I)` be a henselian pair, `X = Spec A` and
 > `Z = Spec (A ⧸ I)`. For every torsion abelian sheaf `F` on `X_étale` and every `q ≥ 0` the
@@ -183,7 +183,7 @@ theorem etaleCohomologyRestrictionMap_bijective_of_henselianPair
 
 [Tag 0A51](https://stacks.math.columbia.edu/tag/0A51) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.subsingleton_H_closed_of_injective_of_affine_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/InjectiveClosedVanishing.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/InjectiveClosedVanishing.lean#L200). The attribute's comment: “X with affine diagonal covered by n + 1 affine opens, Z a closed subscheme, 𝒜 a torsion sheaf of rings on X_et, ℐ an injective 𝒜-module: H^q_et(Z, ℐ|_Z) = 0 for q > n”.
+**`Stacks.EtaleCohomology.subsingleton_H_closed_of_injective_of_affine_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/InjectiveClosedVanishing.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AffineAnalogProper/InjectiveClosedVanishing.lean#L200). The attribute's comment: “X with affine diagonal covered by n + 1 affine opens, Z a closed subscheme, 𝒜 a torsion sheaf of rings on X\_et, ℐ an injective 𝒜-module: H^q\_et(Z, ℐ|\_Z) = 0 for q > n”.
 
 > **[Stacks, Tag 0A51].** Let `X` be a scheme with affine diagonal which can be covered by
 > `n + 1` affine opens, let `i : Z ⟶ X` be a closed immersion, let `𝒜` be a torsion sheaf of rings

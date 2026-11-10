@@ -14,7 +14,7 @@ Section 97.15 of the Stacks Project, [Tag 06CJ](https://stacks.math.columbia.edu
 
 [Tag 06CJ](https://stacks.math.columbia.edu/tag/06CJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.FiniteHilbert.lciLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocus.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocus.lean#L158). The attribute's comment: “the objects of ℋ_d(𝒳/𝒴) with unramified Koszul relative map”.
+**`AlgebraicGeometry.Stack.FiniteHilbert.lciLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocus.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocus.lean#L158). The attribute's comment: “the objects of ℋ\_d(𝒳/𝒴) with unramified Koszul relative map”.
 
 > The objects of the relative finite Hilbert category `ℋ_d(𝒳/𝒴)` whose relative map
 > `x_α : Z ⟶ X_y` of Stacks 06CK is unramified and a local complete intersection morphism, for every
@@ -24,7 +24,7 @@ Section 97.15 of the Stacks Project, [Tag 06CJ](https://stacks.math.columbia.edu
 def lciLocus : ObjectProperty (Object B S hS 𝒳 𝒴 F d)
 ```
 
-**`AlgebraicGeometry.Stack.lciFiniteHilbertCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocus.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocus.lean#L178). The attribute's comment: “the full subcategory ℋ_{d,lci}(𝒳/𝒴) of ℋ_d(𝒳/𝒴)”.
+**`AlgebraicGeometry.Stack.lciFiniteHilbertCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocus.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocus.lean#L178). The attribute's comment: “the full subcategory ℋ\_\{d,lci}(𝒳/𝒴) of ℋ\_d(𝒳/𝒴)”.
 
 > The local complete intersection locus `ℋ_{d,lci}(𝒳/𝒴)`: the full subcategory of the relative
 > finite Hilbert category on the objects whose relative map is unramified and a local complete
@@ -35,7 +35,7 @@ def lciLocus : ObjectProperty (Object B S hS 𝒳 𝒴 F d)
 noncomputable def lciFiniteHilbertCategory : BasedCategory (BigFppfOver B S hS)
 ```
 
-**`AlgebraicGeometry.Stack.lciFiniteHilbertInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocus.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocus.lean#L187). The attribute's comment: “the inclusion ℋ_{d,lci}(𝒳/𝒴) ⊂ ℋ_d(𝒳/𝒴)”.
+**`AlgebraicGeometry.Stack.lciFiniteHilbertInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocus.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocus.lean#L187). The attribute's comment: “the inclusion ℋ\_\{d,lci}(𝒳/𝒴) ⊂ ℋ\_d(𝒳/𝒴)”.
 
 > The inclusion `ℋ_{d,lci}(𝒳/𝒴) ⊂ ℋ_d(𝒳/𝒴)` of the local complete intersection locus into the
 > relative finite Hilbert category, as a 1-morphism of categories over the big fppf site.
@@ -93,7 +93,7 @@ def relativeObj (Z : BigFppfOver B U.left.1 U.left.2) (x : 𝒳.obj)
     TwoFibreProductOver (Over.map U.hom) 𝒳.p 𝒴.p y F.toFunctor
 ```
 
-**`AlgebraicGeometry.Stack.relativeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/RelativeMapToRepresentingSpace.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/RelativeMapToRepresentingSpace.lean#L214). The attribute's comment: “the morphism x_α of the left-hand diagram”.
+**`AlgebraicGeometry.Stack.relativeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/RelativeMapToRepresentingSpace.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/RelativeMapToRepresentingSpace.lean#L214). The attribute's comment: “the morphism x\_α of the left-hand diagram”.
 
 > The morphism `x_α : Z ⟶ X_y` of algebraic spaces over `U` attached to a
 > scheme `Z` over `U`, an object `x` of `𝒳` over `Z` and an isomorphism `α : y|_Z ⟶ F(x)` vertical
@@ -128,7 +128,7 @@ theorem RelativeMapData.exists_iso_map {P : Object B S hS 𝒳 𝒴 F d}
 
 [Tag 06CL](https://stacks.math.columbia.edu/tag/06CL) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_isOpenImmersion_representing_lciFiniteHilbertInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusOpen.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusOpen.lean#L403). The attribute's comment: “the inclusion ℋ_{d,lci}(𝒳/𝒴) ⊂ ℋ_d(𝒳/𝒴) is representable by an open subscheme of the base, with the open locus of Stacks 05X8 and 06CE and isomorphism-invariance of the locus as explicit hypotheses”.
+**`AlgebraicGeometry.Stack.exists_isOpenImmersion_representing_lciFiniteHilbertInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusOpen.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusOpen.lean#L403). The attribute's comment: “the inclusion ℋ\_\{d,lci}(𝒳/𝒴) ⊂ ℋ\_d(𝒳/𝒴) is representable by an open subscheme of the base, with the open locus of Stacks 05X8 and 06CE and isomorphism-invariance of the locus as explicit hypotheses”.
 
 > **Stacks 06CL.** The inclusion `ℋ_{d,lci}(𝒳/𝒴) ⟶ ℋ_d(𝒳/𝒴)` of the local complete
 > intersection locus is representable: every 2-fibre product of it with a scheme-valued point of
@@ -179,7 +179,7 @@ theorem exists_isOpenImmersion_representing_lciFiniteHilbertInclusion
           (presheafOfCategories (yoneda.obj V ⋙ typeToCat)).p)
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_lciFiniteHilbertInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusOpen.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusOpen.lean#L452). The attribute's comment: “the inclusion ℋ_{d,lci}(𝒳/𝒴) ⊂ ℋ_d(𝒳/𝒴) is representable by algebraic spaces, with the open locus of Stacks 05X8 and 06CE and isomorphism-invariance of the locus as explicit hypotheses”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_lciFiniteHilbertInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusOpen.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusOpen.lean#L452). The attribute's comment: “the inclusion ℋ\_\{d,lci}(𝒳/𝒴) ⊂ ℋ\_d(𝒳/𝒴) is representable by algebraic spaces, with the open locus of Stacks 05X8 and 06CE and isomorphism-invariance of the locus as explicit hypotheses”.
 
 > **Stacks 06CL.** The inclusion `ℋ_{d,lci}(𝒳/𝒴) ⟶ ℋ_d(𝒳/𝒴)` of the local complete
 > intersection locus is representable by algebraic spaces, the representing algebraic space of a
@@ -216,7 +216,7 @@ theorem isRepresentableByAlgebraicSpaces_lciFiniteHilbertInclusion
         (d := d))
 ```
 
-**`AlgebraicGeometry.Stack.isOpenImmersion_lciFiniteHilbertInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusOpen.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusOpen.lean#L528). The attribute's comment: “the inclusion ℋ_{d,lci}(𝒳/𝒴) ⊂ ℋ_d(𝒳/𝒴) is an open immersion, with the open locus of Stacks 05X8 and 06CE and isomorphism-invariance of the locus as explicit hypotheses”.
+**`AlgebraicGeometry.Stack.isOpenImmersion_lciFiniteHilbertInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusOpen.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusOpen.lean#L528). The attribute's comment: “the inclusion ℋ\_\{d,lci}(𝒳/𝒴) ⊂ ℋ\_d(𝒳/𝒴) is an open immersion, with the open locus of Stacks 05X8 and 06CE and isomorphism-invariance of the locus as explicit hypotheses”.
 
 > **Stacks 06CL.** The inclusion `ℋ_{d,lci}(𝒳/𝒴) ⟶ ℋ_d(𝒳/𝒴)` of the local complete
 > intersection locus is an open immersion: every algebraic space representing a base change of it
@@ -273,7 +273,7 @@ theorem isOpenImmersion_lciFiniteHilbertInclusion
           ((spacesOverSmallerBaseFunctor B U.left.1 S U.left.2 hS U.hom).obj ⟨P, hP⟩)).hom
 ```
 
-**`AlgebraicGeometry.Stack.isStackInGroupoids_lciFiniteHilbertCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusOpen.lean, line 585](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusOpen.lean#L585). The attribute's comment: “ℋ_{d,lci}(𝒳/𝒴) is a stack in groupoids, with Stacks 05UN for the full subcategories of ℋ_d(𝒳/𝒴), that ℋ_d(𝒳/𝒴) is a stack in groupoids, the open locus of Stacks 05X8 and 06CE and isomorphism-invariance of the locus as explicit hypotheses”.
+**`AlgebraicGeometry.Stack.isStackInGroupoids_lciFiniteHilbertCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusOpen.lean, line 585](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusOpen.lean#L585). The attribute's comment: “ℋ\_\{d,lci}(𝒳/𝒴) is a stack in groupoids, with Stacks 05UN for the full subcategories of ℋ\_d(𝒳/𝒴), that ℋ\_d(𝒳/𝒴) is a stack in groupoids, the open locus of Stacks 05X8 and 06CE and isomorphism-invariance of the locus as explicit hypotheses”.
 
 > **Stacks 06CL.** The local complete intersection locus `ℋ_{d,lci}(𝒳/𝒴)` is a stack in
 > groupoids over the big fppf site of `S`.
@@ -327,7 +327,7 @@ theorem isStackInGroupoids_lciFiniteHilbertCategory
         (d := d)).p (BigFppfOver.topology B S hS)
 ```
 
-**`AlgebraicGeometry.Stack.exists_isOpenImmersion_representing_lciFiniteHilbertInclusion_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusRepresentable.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusRepresentable.lean#L220). The attribute's comment: “the inclusion ℋ_{d,lci}(𝒳/𝒴) ⊂ ℋ_d(𝒳/𝒴) is representable, by an open subscheme of the base”.
+**`AlgebraicGeometry.Stack.exists_isOpenImmersion_representing_lciFiniteHilbertInclusion_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusRepresentable.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusRepresentable.lean#L220). The attribute's comment: “the inclusion ℋ\_\{d,lci}(𝒳/𝒴) ⊂ ℋ\_d(𝒳/𝒴) is representable, by an open subscheme of the base”.
 
 > The inclusion `ℋ_{d,lci}(𝒳/𝒴) ⟶ ℋ_d(𝒳/𝒴)` of the local complete intersection locus is
 > representable: every 2-fibre product of it with a scheme-valued point of `ℋ_d(𝒳/𝒴)` is
@@ -376,7 +376,7 @@ theorem exists_isOpenImmersion_representing_lciFiniteHilbertInclusion_of_flat
           (presheafOfCategories (yoneda.obj V ⋙ typeToCat)).p)
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_lciFiniteHilbertInclusion_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusRepresentable.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusRepresentable.lean#L266). The attribute's comment: “the inclusion ℋ_{d,lci}(𝒳/𝒴) ⊂ ℋ_d(𝒳/𝒴) is representable by algebraic spaces”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_lciFiniteHilbertInclusion_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusRepresentable.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusRepresentable.lean#L266). The attribute's comment: “the inclusion ℋ\_\{d,lci}(𝒳/𝒴) ⊂ ℋ\_d(𝒳/𝒴) is representable by algebraic spaces”.
 
 > The inclusion `ℋ_{d,lci}(𝒳/𝒴) ⟶ ℋ_d(𝒳/𝒴)` of the local complete intersection locus is
 > representable by algebraic spaces, the representing algebraic space of a base change being the
@@ -410,7 +410,7 @@ theorem isRepresentableByAlgebraicSpaces_lciFiniteHilbertInclusion_of_flat
         (d := d))
 ```
 
-**`AlgebraicGeometry.Stack.isOpenImmersion_lciFiniteHilbertInclusion_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusRepresentable.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusRepresentable.lean#L301). The attribute's comment: “the inclusion ℋ_{d,lci}(𝒳/𝒴) ⊂ ℋ_d(𝒳/𝒴) is an open immersion”.
+**`AlgebraicGeometry.Stack.isOpenImmersion_lciFiniteHilbertInclusion_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusRepresentable.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusRepresentable.lean#L301). The attribute's comment: “the inclusion ℋ\_\{d,lci}(𝒳/𝒴) ⊂ ℋ\_d(𝒳/𝒴) is an open immersion”.
 
 > The inclusion `ℋ_{d,lci}(𝒳/𝒴) ⟶ ℋ_d(𝒳/𝒴)` of the local complete intersection locus is an
 > open immersion: every algebraic space representing a base change of it along a scheme-valued
@@ -462,7 +462,7 @@ theorem isOpenImmersion_lciFiniteHilbertInclusion_of_flat
           ((spacesOverSmallerBaseFunctor B U.left.1 S U.left.2 hS U.hom).obj ⟨P, hP⟩)).hom
 ```
 
-**`AlgebraicGeometry.Stack.isStackInGroupoids_lciFiniteHilbertCategory_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusStack.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusStack.lean#L70). The attribute's comment: “ℋ_{d,lci}(𝒳/𝒴) is a stack in groupoids”.
+**`AlgebraicGeometry.Stack.isStackInGroupoids_lciFiniteHilbertCategory_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusStack.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusStack.lean#L70). The attribute's comment: “ℋ\_\{d,lci}(𝒳/𝒴) is a stack in groupoids”.
 
 > **Stacks 06CL.** For a 1-morphism `F : 𝒳 ⟶ 𝒴` of stacks in groupoids over the big fppf site
 > of `S` which is representable by algebraic spaces, flat and locally of finite presentation, the
@@ -587,7 +587,7 @@ theorem isFormallySmoothOnObjects_lciFiniteHilbertToTarget
 
 [Tag 06DA](https://stacks.math.columbia.edu/tag/06DA) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isSurjectiveOnObjects_lciFiniteHilbertCoproductToTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusSurjective.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusSurjective.lean#L264). The attribute's comment: “∐_{d ≥ 1} ℋ_{d,lci}(𝒳/𝒴) ⟶ 𝒴 is surjective on objects, for F representable by algebraic spaces, flat, surjective and locally of finite presentation”.
+**`AlgebraicGeometry.Stack.isSurjectiveOnObjects_lciFiniteHilbertCoproductToTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusSurjective.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/LciLocusSurjective.lean#L264). The attribute's comment: “∐\_\{d ≥ 1} ℋ\_\{d,lci}(𝒳/𝒴) ⟶ 𝒴 is surjective on objects, for F representable by algebraic spaces, flat, surjective and locally of finite presentation”.
 
 > Let `F : 𝒳 ⟶ 𝒴` be a 1-morphism of stacks in groupoids over the big fppf site of `S` which is
 > representable by algebraic spaces, flat, surjective and locally of finite presentation. Then the

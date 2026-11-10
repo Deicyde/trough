@@ -54,7 +54,7 @@ theorem isFlat_and_hasRelativeDimension_of_isPullback
         HasRelativeDimension r D.site D.base D.base_mem g'
 ```
 
-**`AlgebraicGeometry.Space.flatPullback_properPushforward_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperFlatBaseChange.lean, line 644](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperFlatBaseChange.lean#L644). The attribute's comment: “third assertion: the identity g^* f_* α = f'_* (g')^* α in Z_{k+r}(Y') for an arbitrary k-cycle α, at the source's hypotheses”.
+**`AlgebraicGeometry.Space.flatPullback_properPushforward_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperFlatBaseChange.lean, line 644](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperFlatBaseChange.lean#L644). The attribute's comment: “third assertion: the identity g^* f\_* α = f'\_* (g')^* α in Z\_\{k+r}(Y') for an arbitrary k-cycle α, at the source's hypotheses”.
 
 > **Stacks 0EPD, third assertion.** In Situation 0EDT let the four corners of a cartesian
 > square of good algebraic spaces over `B` be good, let `f : X ⟶ Y` be proper and let
@@ -94,7 +94,7 @@ theorem flatPullback_properPushforward_of_isPullback (sq : IsPullback g' f' f g)
         n (flatPullbackMap D sX' hX' sX hX g' hg'base r hg'flat hg'r k n hkn α)
 ```
 
-**`AlgebraicGeometry.Space.flatPullback_properPushforward'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperFlatBaseChangeGenericPoints.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperFlatBaseChangeGenericPoints.lean#L282). The attribute's comment: “third assertion: the identity g^* f_* α = f'_* (g')^* α in Z_{k+r}(Y') for an arbitrary k-cycle α, with no comparison datum and no numerical identity carried”.
+**`AlgebraicGeometry.Space.flatPullback_properPushforward'`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperFlatBaseChangeGenericPoints.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperFlatBaseChangeGenericPoints.lean#L282). The attribute's comment: “third assertion: the identity g^* f\_* α = f'\_* (g')^* α in Z\_\{k+r}(Y') for an arbitrary k-cycle α, with no comparison datum and no numerical identity carried”.
 
 > The identity `g^*f_*α = f'_*(g')^*α` in `Z_{k+r}(Y')`, for a cartesian square of good
 > algebraic spaces over `B` with `f` proper and `g` flat of relative dimension `r`, and for an
@@ -104,7 +104,7 @@ theorem flatPullback_properPushforward_of_isPullback (sq : IsPullback g' f' f g)
 alias flatPullback_properPushforward'
 ```
 
-**`AlgebraicGeometry.Space.flatPullback_properPushforward_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperFlatBaseChangeUnconditional.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperFlatBaseChangeUnconditional.lean#L246). The attribute's comment: “third assertion: the identity g^* f_* α = f'_* (g')^* α in Z_{k+r}(Y') for an arbitrary k-cycle α, at the source's hypotheses”.
+**`AlgebraicGeometry.Space.flatPullback_properPushforward_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperFlatBaseChangeUnconditional.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperFlatBaseChangeUnconditional.lean#L246). The attribute's comment: “third assertion: the identity g^* f\_* α = f'\_* (g')^* α in Z\_\{k+r}(Y') for an arbitrary k-cycle α, at the source's hypotheses”.
 
 > **Stacks 0EPD, third assertion.**  In Situation 0EDT let
 >
@@ -153,7 +153,7 @@ theorem flatPullback_properPushforward_unconditional (sq : IsPullback g' f' f g)
 
 [Tag 0EPE](https://stacks.math.columbia.edu/tag/0EPE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.properPushforward_finiteLocallyFreeCyclePullback_eq_zsmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FiniteLocallyFreeConstructedPullback.lean, line 456](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FiniteLocallyFreeConstructedPullback.lean#L456). The attribute's comment: “f_* f^* alpha = d alpha”.
+**`AlgebraicGeometry.Space.properPushforward_finiteLocallyFreeCyclePullback_eq_zsmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FiniteLocallyFreeConstructedPullback.lean, line 456](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FiniteLocallyFreeConstructedPullback.lean#L456). The attribute's comment: “f\_* f^* alpha = d alpha”.
 
 > In Situation 0EDT let `X/B` and `Y/B` be good and let
 > `f : X ⟶ Y` be finite locally free of degree `d`. Then
@@ -214,7 +214,7 @@ theorem isFlat_and_hasRelativeDimension_zero_of_isFiniteLocallyFreeOfRank
       HasRelativeDimension 0 B S hS f.hom
 ```
 
-**`AlgebraicGeometry.Space.properPushforward_flatCyclePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FiniteLocallyFreePushPull.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FiniteLocallyFreePushPull.lean#L376). The attribute's comment: “f_* f^* alpha = d alpha”.
+**`AlgebraicGeometry.Space.properPushforward_flatCyclePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FiniteLocallyFreePushPull.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FiniteLocallyFreePushPull.lean#L376). The attribute's comment: “f\_* f^* alpha = d alpha”.
 
 > **Stacks 0EPE, third conclusion.** In Situation 0EDT let `X/B` and `Y/B` be good and let
 > `f : X ⟶ Y` be finite locally free of degree `d`. Then `f_*f^*α = dα` for every `α ∈ Z_k(Y)`.
@@ -279,7 +279,7 @@ theorem isFlat_and_hasRelativeDimension_zero_of_isFiniteLocallyFree
       HasRelativeDimension 0 B S hS f.hom
 ```
 
-**`AlgebraicGeometry.Space.properPushforward_flatCyclePullback_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FiniteLocallyFreePushPullUnranked.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FiniteLocallyFreePushPullUnranked.lean#L147). The attribute's comment: “f_* f^* alpha = d alpha”.
+**`AlgebraicGeometry.Space.properPushforward_flatCyclePullback_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FiniteLocallyFreePushPullUnranked.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FiniteLocallyFreePushPullUnranked.lean#L147). The attribute's comment: “f\_* f^* alpha = d alpha”.
 
 > **Stacks 0EPE, third conclusion.** In Situation 0EDT let `X/B` and `Y/B` be good and let
 > `f : X ⟶ Y` be finite locally free, with `hdeg` recording the degree `d` of its fibre over the

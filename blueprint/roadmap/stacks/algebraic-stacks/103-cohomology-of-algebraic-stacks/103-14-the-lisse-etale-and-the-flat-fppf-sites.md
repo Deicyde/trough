@@ -68,7 +68,7 @@ abbrev IsCovering (E : Covering (LisseEtale.{u, w} B S hS 𝒳)) : Prop
 abbrev topology : GrothendieckTopology (LisseEtale.{u, w} B S hS 𝒳)
 ```
 
-**`AlgebraicGeometry.Stack.smoothObject_schemeStack_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSmoothObject.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSmoothObject.lean#L132). The attribute's comment: “lisse_etale_site: smooth objects of the stack of a scheme”.
+**`AlgebraicGeometry.Stack.smoothObject_schemeStack_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSmoothObject.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSmoothObject.lean#L132). The attribute's comment: “lisse\_etale\_site: smooth objects of the stack of a scheme”.
 
 > **Stacks 0787.** An object of the algebraic stack of a scheme `U` over `S` — that is, a scheme
 > `x` over `U` in the big fppf category — is a *smooth object* exactly when the morphism of schemes
@@ -82,7 +82,7 @@ theorem smoothObject_schemeStack_iff (U : BigFppfOver B S hS) (x : Over U) :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Stack.flatObject`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSite.lean#L87), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSite.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSite.lean#L93) (StacksFrontier): “flat_fppf_site: flat objects”.
+- [`AlgebraicGeometry.Stack.flatObject`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSite.lean#L87), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSite.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfSite.lean#L93) (StacksFrontier): “flat\_fppf\_site: flat objects”.
 
 ## Tag 0788, a lemma
 
@@ -532,7 +532,7 @@ theorem isFlat_ringedToposMorphism' :
       (ringedToposMorphism'.{u, w} B S hS 𝒳)
 ```
 
-**`CategoryTheory.Functor.isIso_sheafAdjunctionCocontinuous_counit`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Continuous.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Continuous.lean#L204). The attribute's comment: “(1)(c) and (2)(c): the counit of the cocontinuous sheaf adjunction is invertible”. References: SGA 4 III (2.6), “u ff ⇒ u_* ff”; SGA 4 IV (4.10.5), “more general”.
+**`CategoryTheory.Functor.isIso_sheafAdjunctionCocontinuous_counit`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Continuous.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Continuous.lean#L204). The attribute's comment: “(1)(c) and (2)(c): the counit of the cocontinuous sheaf adjunction is invertible”. References: SGA 4 III (2.6), “u ff ⇒ u\_* ff”; SGA 4 IV (4.10.5), “more general”.
 
 > If `u : C ⥤ D` is cocontinuous, continuous and fully faithful, the counit
 > `g^{-1}g_*F ⟶ F` of `g^{-1} ⊣ g_*` is an isomorphism; equivalently `g_*` is fully faithful.
@@ -549,10 +549,10 @@ public instance isIso_sheafAdjunctionCocontinuous_counit
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.ObjectProperty.fullyFaithfulι`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.ObjectProperty.fullyFaithfulι#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfInclusion.lean, line 820](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfInclusion.lean#L820) (StacksFrontier): “flat_inclusion”. References: SGA 3 I (1.1.1), “Hom_C(X,Y) = Hom_D(X,Y)”; SGA 6 II (3.0), “more general”.
-- [`CategoryTheory.ObjectProperty.fullyFaithfulι`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.ObjectProperty.fullyFaithfulι#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSmoothClosure.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSmoothClosure.lean#L436) (StacksFrontier): “lisse_inclusion”. References: SGA 3 I (1.1.1), “Hom_C(X,Y) = Hom_D(X,Y)”; SGA 6 II (3.0), “more general”.
-- [`CategoryTheory.Functor.sheafPullbackConstruction.sheafPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullbackConstruction.sheafPullback#doc) registered with `add_to_stacks` in [StacksFrontier/Exercises/NonExercises/LisseEtaleLowerShriek.lean, line 25](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Exercises/NonExercises/LisseEtaleLowerShriek.lean#L25) (StacksFrontier): “lisse_sets_shriek”.
-- [`CategoryTheory.Functor.sheafAdjunctionLowerShriek`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L186), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/NonExercises/LisseEtaleLowerShriek.lean, line 27](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Exercises/NonExercises/LisseEtaleLowerShriek.lean#L27) (StacksFrontier): “lisse_sets_shriek”.
+- [`CategoryTheory.ObjectProperty.fullyFaithfulι`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.ObjectProperty.fullyFaithfulι#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfInclusion.lean, line 820](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfInclusion.lean#L820) (StacksFrontier): “flat\_inclusion”. References: SGA 3 I (1.1.1), “Hom\_C(X,Y) = Hom\_D(X,Y)”; SGA 6 II (3.0), “more general”.
+- [`CategoryTheory.ObjectProperty.fullyFaithfulι`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.ObjectProperty.fullyFaithfulι#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSmoothClosure.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LisseEtaleSmoothClosure.lean#L436) (StacksFrontier): “lisse\_inclusion”. References: SGA 3 I (1.1.1), “Hom\_C(X,Y) = Hom\_D(X,Y)”; SGA 6 II (3.0), “more general”.
+- [`CategoryTheory.Functor.sheafPullbackConstruction.sheafPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullbackConstruction.sheafPullback#doc) registered with `add_to_stacks` in [StacksFrontier/Exercises/NonExercises/LisseEtaleLowerShriek.lean, line 25](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Exercises/NonExercises/LisseEtaleLowerShriek.lean#L25) (StacksFrontier): “lisse\_sets\_shriek”.
+- [`CategoryTheory.Functor.sheafAdjunctionLowerShriek`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L186), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/NonExercises/LisseEtaleLowerShriek.lean, line 27](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Exercises/NonExercises/LisseEtaleLowerShriek.lean#L27) (StacksFrontier): “lisse\_sets\_shriek”.
 
 ## Tag 0GR0, a lemma
 
@@ -983,7 +983,7 @@ def sliceModuleCohomologyIso
 
 [Tag 0789](https://stacks.math.columbia.edu/tag/0789) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.FlatFppf.isRightAdjoint_modulePullback`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfModuleShriek.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfModuleShriek.lean#L169). The attribute's comment: “flat_module_shriek”.
+**`AlgebraicGeometry.Stack.FlatFppf.isRightAdjoint_modulePullback`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfModuleShriek.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfModuleShriek.lean#L169). The attribute's comment: “flat\_module\_shriek”.
 
 > **Stacks 0789**, part (2), first assertion: pullback of sheaves of modules along the
 > flat-fppf morphism of ringed topoi `g` admits a left adjoint `g_!`.

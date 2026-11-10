@@ -87,7 +87,7 @@ theorem exists_finite_over_smooth_affine {X S : Scheme.{u}} (f : X ⟶ S) [Local
 
 [Tag 05B8](https://stacks.math.columbia.edu/tag/05B8) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_preimage_le`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/FiniteSingletonFibre.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/FiniteSingletonFibre.lean#L60). The attribute's comment: “inverse_image_neighbourhoods”.
+**`AlgebraicGeometry.exists_open_preimage_le`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/FiniteSingletonFibre.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/FiniteSingletonFibre.lean#L60). The attribute's comment: “inverse\_image\_neighbourhoods”.
 
 > For a finite morphism whose fibre over `y` is the singleton `x`, the inverse image of
 > some open neighbourhood of `y` is contained in any prescribed open neighbourhood of `x`.
@@ -99,7 +99,7 @@ lemma exists_open_preimage_le {X Y : Scheme.{u}} (f : X ⟶ Y) [IsFinite f]
     ∃ V : Y.Opens, y ∈ V ∧ f ⁻¹ᵁ V ≤ U
 ```
 
-**`AlgebraicGeometry.finite_stalkMap_of_preimage_singleton`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/FiniteSingletonFibre.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/FiniteSingletonFibre.lean#L200). The attribute's comment: “finite_local_ring_map”.
+**`AlgebraicGeometry.finite_stalkMap_of_preimage_singleton`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/FiniteSingletonFibre.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/FiniteSingletonFibre.lean#L200). The attribute's comment: “finite\_local\_ring\_map”.
 
 > For a finite morphism with a singleton fibre at `x`, the induced map on the local rings at
 > `f x` and `x` is finite.
@@ -111,7 +111,7 @@ lemma finite_stalkMap_of_preimage_singleton
     (f.stalkMap x).hom.Finite
 ```
 
-**`AlgebraicGeometry.finitePresentation_stalkMap_of_preimage_singleton`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/FiniteSingletonFibre.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/FiniteSingletonFibre.lean#L256). The attribute's comment: “finitely_presented_local_ring_map”.
+**`AlgebraicGeometry.finitePresentation_stalkMap_of_preimage_singleton`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/FiniteSingletonFibre.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/FiniteSingletonFibre.lean#L256). The attribute's comment: “finitely\_presented\_local\_ring\_map”.
 
 > If a finite morphism of finite presentation has a singleton fibre over
 > `f x`, its local-ring map at `x` is of finite presentation.
@@ -123,7 +123,7 @@ lemma finitePresentation_stalkMap_of_preimage_singleton
     (f.stalkMap x).hom.FinitePresentation
 ```
 
-**`AlgebraicGeometry.stalk_isomorphic_pushforward_of_finite_singleton_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/FiniteSingletonFibre.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/FiniteSingletonFibre.lean#L418). The attribute's comment: “pushforward_stalk”.
+**`AlgebraicGeometry.stalk_isomorphic_pushforward_of_finite_singleton_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/FiniteSingletonFibre.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/FiniteSingletonFibre.lean#L418). The attribute's comment: “pushforward\_stalk”.
 
 > Let `f : X ⟶ Y` be finite and suppose that the fibre over `f x` is the
 > singleton `{x}`. For a quasi-coherent `O_X`-module `F`, its stalk at `x`, viewed

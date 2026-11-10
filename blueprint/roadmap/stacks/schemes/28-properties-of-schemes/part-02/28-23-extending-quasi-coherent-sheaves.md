@@ -14,7 +14,7 @@ Section 28.23 of the Stacks Project, [Tag 01PD](https://stacks.math.columbia.edu
 
 [Tag 01PE](https://stacks.math.columbia.edu/tag/01PE) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_quasicoherent_restrict_iso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/OpenExtension.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/OpenExtension.lean#L58). The attribute's comment: “extend_quasicoherent”. References: EGA I (1.4.2).
+**`AlgebraicGeometry.exists_quasicoherent_restrict_iso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/OpenExtension.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/OpenExtension.lean#L58). The attribute's comment: “extend\_quasicoherent”. References: EGA I (1.4.2).
 
 > **Stacks Project, Tag 01PE.** A quasi-coherent module on a quasi-compact open subscheme
 > extends to a quasi-coherent module on the ambient scheme: the pushforward along the open immersion
@@ -26,7 +26,7 @@ public lemma exists_quasicoherent_restrict_iso {U X : Scheme.{u}} (j : U ⟶ X)
     ∃ (F : X.Modules) (_ : F.IsQuasicoherent), Nonempty (F.restrict j ≅ G)
 ```
 
-**`AlgebraicGeometry.exists_quasicoherent_extension`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/QuasiCoherentExtension.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/QuasiCoherentExtension.lean#L111). The attribute's comment: “extend_quasicoherent_morphism”.
+**`AlgebraicGeometry.exists_quasicoherent_extension`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/QuasiCoherentExtension.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/QuasiCoherentExtension.lean#L111). The attribute's comment: “extend\_quasicoherent\_morphism”.
 
 > **Stacks Project, Tag 01PE.** A morphism from a quasi-coherent module on a quasi-compact
 > open subscheme to the restriction of a quasi-coherent module extends to a morphism of
@@ -42,7 +42,7 @@ lemma exists_quasicoherent_extension
       e.hom ≫ φ = (Scheme.Modules.restrictFunctor j).map ψ
 ```
 
-**`AlgebraicGeometry.exists_quasicoherentSubobject_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/QuasiCoherentExtension.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/QuasiCoherentExtension.lean#L142). The attribute's comment: “extend_quasicoherent_subsheaf”.
+**`AlgebraicGeometry.exists_quasicoherentSubobject_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/QuasiCoherentExtension.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionsAndBounds/QuasiCoherentExtension.lean#L142). The attribute's comment: “extend\_quasicoherent\_subsheaf”.
 
 > **Stacks Project, Tag 01PE.** A quasi-coherent submodule of the restriction of a
 > quasi-coherent module to a quasi-compact open subscheme extends to a quasi-coherent submodule

@@ -128,7 +128,7 @@ public theorem isWeaklyAdic_completionAlongIdeal (B : BigFppfSite.{u}) (S : Sche
     IsWeaklyAdic B S hS (completionAlongIdeal B S hS f hA I)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isAdic_and_iso_formalSpectrum_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionAlongIdeal.lean, line 930](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionAlongIdeal.lean#L930). The attribute's comment: “clause (2): formal spectrum of the adic completion”. References: EGA I (10.8.5), “affine case Spf(Â)”; EGA I (10.10.1), “Spf(A) = X_{/X}”; EGA III (5.1.1), “Spf(A) ≅ Ŷ”.
+**`AlgebraicGeometry.FormalSpace.isAdic_and_iso_formalSpectrum_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionAlongIdeal.lean, line 930](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineCompletionAlongIdeal.lean#L930). The attribute's comment: “clause (2): formal spectrum of the adic completion”. References: EGA I (10.8.5), “affine case Spf(Â)”; EGA I (10.10.1), “Spf(A) = X\_\{/X}”; EGA III (5.1.1), “Spf(A) ≅ Ŷ”.
 
 > **Stacks 0GXX (2).** If `I` is finitely generated then the completion `X^∧_Z` of
 > `X = Spec A` along the closed subscheme `Z` of `I` is `Spf (A^∧)` for the `I`-adic completion

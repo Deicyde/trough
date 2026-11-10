@@ -94,7 +94,7 @@ theorem exists_finite_separable_torsionBy_of_two_le_genus [IsCurve k f] [Smooth 
 
 [Tag 0C20](https://stacks.math.columbia.edu/tag/0C20) in the Stacks Project.
 
-**`AlgebraicGeometry.finrank_picardTorsion_le_genus_add_geometricGenus_of_isReduced_dim_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/TorsionReducedProperCurve.lean, line 768](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/TorsionReducedProperCurve.lean#L768). The attribute's comment: “the bound dim Pic(X)[l] ≤ g + g_geom (connectedness not needed)”.
+**`AlgebraicGeometry.finrank_picardTorsion_le_genus_add_geometricGenus_of_isReduced_dim_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/TorsionReducedProperCurve.lean, line 768](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/TorsionReducedProperCurve.lean#L768). The attribute's comment: “the bound dim Pic(X)[l] ≤ g + g\_geom (connectedness not needed)”.
 
 > **Stacks Project, Tag 0C20, the bound.**
 >

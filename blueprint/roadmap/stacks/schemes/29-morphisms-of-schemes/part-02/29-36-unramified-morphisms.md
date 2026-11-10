@@ -408,7 +408,7 @@ public theorem gUnramified_of_fibres {X S : Scheme.{u}} (f : X ⟶ S)
     GUnramified f
 ```
 
-**`AlgebraicGeometry.finite_residueField_of_unramified`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Properties.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Properties.lean#L294). The attribute's comment: “finite_separable_residue”. References: EGA IV (17.4.1), “a) => d'' finiteness”; SGA 3 XI (1.3), “(ii) k(B)/k(A) finite”; SGA 1 I (3.1), “(ii)=>(i) finiteness”.
+**`AlgebraicGeometry.finite_residueField_of_unramified`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Properties.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Properties.lean#L294). The attribute's comment: “finite\_separable\_residue”. References: EGA IV (17.4.1), “a) => d'' finiteness”; SGA 3 XI (1.3), “(ii) k(B)/k(A) finite”; SGA 1 I (3.1), “(ii)=>(i) finiteness”.
 
 > The residue field extension at a point of an unramified morphism is finite.
 
@@ -418,7 +418,7 @@ public instance finite_residueField_of_unramified (f : X ⟶ S) [Unramified f] (
     Module.Finite (S.residueField (f x)) (X.residueField x)
 ```
 
-**`AlgebraicGeometry.isSeparable_residueField_of_unramified`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Properties.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Properties.lean#L320). The attribute's comment: “finite_separable_residue”. References: EGA IV (17.4.1), “a) => d'' separability”; SGA 3 XI (1.3), “(ii) k(B)/k(A) separable”; SGA 1 I (3.1), “(ii)=>(i) separability”.
+**`AlgebraicGeometry.isSeparable_residueField_of_unramified`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Properties.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Properties.lean#L320). The attribute's comment: “finite\_separable\_residue”. References: EGA IV (17.4.1), “a) => d'' separability”; SGA 3 XI (1.3), “(ii) k(B)/k(A) separable”; SGA 1 I (3.1), “(ii)=>(i) separability”.
 
 > The residue field extension at a point of an unramified morphism is separable.
 

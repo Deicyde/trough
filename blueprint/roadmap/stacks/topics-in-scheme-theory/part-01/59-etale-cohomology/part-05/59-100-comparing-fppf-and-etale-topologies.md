@@ -51,7 +51,7 @@ public theorem isIso_fppfToBigEtale_unit_app
         S.property).inverseImage.obj F))
 ```
 
-**`AlgebraicGeometry.smallEtalePullbackSections_isSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/FppfSheafOfSmallEtaleSections.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/FppfSheafOfSmallEtaleSections.lean#L117). The attribute's comment: “the rule X ↦ Γ(X, f_small⁻¹F) is an fppf sheaf, a fortiori an étale sheaf”.
+**`AlgebraicGeometry.smallEtalePullbackSections_isSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/FppfSheafOfSmallEtaleSections.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/FppfSheafOfSmallEtaleSections.lean#L117). The attribute's comment: “the rule X ↦ Γ(X, f\_small⁻¹F) is an fppf sheaf, a fortiori an étale sheaf”.
 
 > **Stacks 0DDL, the sheaf condition.** The rule `(f : X ⟶ S) ↦ Γ(X, f_small⁻¹F)` is a sheaf
 > for the big fppf topology over `S`, and a fortiori for the big étale topology over `S`.
@@ -63,7 +63,7 @@ public theorem smallEtalePullbackSections_isSheaf :
         (smallEtalePullbackSectionsPresheaf B S F)
 ```
 
-**`AlgebraicGeometry.smallEtalePullbackSectionsSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/FppfSheafOfSmallEtaleSections.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/FppfSheafOfSmallEtaleSections.lean#L140). The attribute's comment: “the rule is π_S⁻¹F on (Sch/S)_étale and ε_S⁻¹π_S⁻¹F on (Sch/S)_fppf”.
+**`AlgebraicGeometry.smallEtalePullbackSectionsSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/FppfSheafOfSmallEtaleSections.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/FppfSheafOfSmallEtaleSections.lean#L140). The attribute's comment: “the rule is π\_S⁻¹F on (Sch/S)\_étale and ε\_S⁻¹π\_S⁻¹F on (Sch/S)\_fppf”.
 
 > **Stacks 0DDL, the identification.** The sheaf `X ↦ Γ(X, f_small⁻¹F)` is `π_S⁻¹F` on the
 > big étale site over `S` and `ε_S⁻¹π_S⁻¹F` on the big fppf site over `S`.

@@ -275,7 +275,7 @@ def extAddEquivCohomology_of_objectwiseProjective (G F : PresheafOfModules.{max 
     Abelian.zExt G F (n : ℤ) ≃+ (extCochainComplex G F).homology n
 ```
 
-**`Stacks.CategoryExt.extAddEquivCohomology_of_arrowwiseInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean, line 1123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean#L1123). The attribute's comment: “case (2), every degree, F(U) injective over O(V) for every arrow U ⟶ V; objectwise injectivity does not suffice, see Stacks.CategoryExt.ArrowCounterexample.injective_obj_and_not_nonempty_extAddEquiv_two”.
+**`Stacks.CategoryExt.extAddEquivCohomology_of_arrowwiseInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean, line 1123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/ExtCochainComplexComputesExt.lean#L1123). The attribute's comment: “case (2), every degree, F(U) injective over O(V) for every arrow U ⟶ V; objectwise injectivity does not suffice, see Stacks.CategoryExt.ArrowCounterexample.injective\_obj\_and\_not\_nonempty\_extAddEquiv\_two”.
 
 > Case (2): if each section of the second module remains injective after
 > restriction of scalars along every arrow, the cochain complex computes all `Ext` groups into it:

@@ -55,7 +55,7 @@ theorem triangEnvelope_eq_isPerfect_of_isWeakTriangulatedGenerator (X : Algebrai
       fun E => (smallEtaleRingedSite B S hS X.1 X.2).IsPerfect E.obj
 ```
 
-**`AlgebraicGeometry.Space.exists_isPerfect_isWeakTriangulatedGenerator_triangEnvelope_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectClassicalGenerator.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectClassicalGenerator.lean#L109). The attribute's comment: “the existence of a perfect generator G of D_QCoh(O_X), by 09IY”.
+**`AlgebraicGeometry.Space.exists_isPerfect_isWeakTriangulatedGenerator_triangEnvelope_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectClassicalGenerator.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/PerfectClassicalGenerator.lean#L109). The attribute's comment: “the existence of a perfect generator G of D\_QCoh(O\_X), by 09IY”.
 
 > **Stacks 0GFC, the existence clause.** On a quasi-compact and quasi-separated algebraic space
 > `X` over `S` there is a perfect object `G` of `D(𝒪_X)` which is a generator of `D_QCoh(𝒪_X)`

@@ -63,7 +63,7 @@ theorem exists_hom_of_compatible {X U V W : RingedSpace.{u, u}} (jU : U ⟶ X) (
 
 [Tag 0D66](https://stacks.math.columbia.edu/tag/0D66) in the Stacks Project.
 
-**`Stacks.Cohomology.UnboundedHigherDirectImage.isZero_homologyDerivedPushforward_of_isBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean#L105). The attribute's comment: “negative_sheaves”.
+**`Stacks.Cohomology.UnboundedHigherDirectImage.isZero_homologyDerivedPushforward_of_isBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean#L105). The attribute's comment: “negative\_sheaves”.
 
 > **Vanishing of the cohomology sheaves of `Rf_* K`.** If the degree-`i` hypercohomology
 > `H^i(f⁻¹ V, K)` vanishes for every `V` in a basis of the topology of `Y`, then the degree-`i`
@@ -78,7 +78,7 @@ theorem isZero_homologyDerivedPushforward_of_isBasis (i : ℤ)
       ((derivedPushforward f).obj K))
 ```
 
-**`Stacks.Cohomology.UnboundedHigherDirectImage.isZero_homologyDerivedPreimageSections_of_isBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean#L120). The attribute's comment: “negative_hypercohomology”.
+**`Stacks.Cohomology.UnboundedHigherDirectImage.isZero_homologyDerivedPreimageSections_of_isBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean#L120). The attribute's comment: “negative\_hypercohomology”.
 
 > **Negative hypercohomology over every inverse image.** If `H^i(f⁻¹ V, K) = 0` for `i < 0` and
 > every `V` in a basis of the topology of `Y`, then `H^i(f⁻¹ V, K) = 0` for `i < 0` and *every* open
@@ -95,7 +95,7 @@ theorem isZero_homologyDerivedPreimageSections_of_isBasis
         ((derivedPreimageSections f V).obj K))
 ```
 
-**`Stacks.Cohomology.UnboundedHigherDirectImage.isSheaf_zerothDerivedPreimageCohomologyPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean#L139). The attribute's comment: “zeroth_sheaf”.
+**`Stacks.Cohomology.UnboundedHigherDirectImage.isSheaf_zerothDerivedPreimageCohomologyPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean#L139). The attribute's comment: “zeroth\_sheaf”.
 
 > **The rule `V ↦ H^0(f⁻¹ V, K)` is a sheaf.** If `H^i(f⁻¹ V, K) = 0` for `i < 0` and every `V`
 > in a basis of the topology of `Y`, then the presheaf of `𝒪_Y`-modules `V ↦ H^0(f⁻¹ V, K)` — that
@@ -111,7 +111,7 @@ theorem isSheaf_zerothDerivedPreimageCohomologyPresheaf
       (derivedPreimageCohomologyPresheaf f K 0).presheaf
 ```
 
-**`Stacks.Cohomology.UnboundedHigherDirectImage.subsingleton_shiftedHom_preimageRestrict_of_isBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean#L268). The attribute's comment: “hom_negative_ext”.
+**`Stacks.Cohomology.UnboundedHigherDirectImage.subsingleton_shiftedHom_preimageRestrict_of_isBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean#L268). The attribute's comment: “hom\_negative\_ext”.
 
 > **Negative `Ext` over every inverse image.** If `Ext^i(K|_{f⁻¹ V}, L|_{f⁻¹ V}) = 0` for
 > `i < 0` and every `V` in a basis of the topology of `Y`, then the same vanishing holds for `i < 0`
@@ -127,7 +127,7 @@ theorem subsingleton_shiftedHom_preimageRestrict_of_isBasis
       ((preimageRestrict f V).obj L) i)
 ```
 
-**`Stacks.Cohomology.UnboundedHigherDirectImage.isSheaf_derivedPreimageHomPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean#L289). The attribute's comment: “hom_sheaf”.
+**`Stacks.Cohomology.UnboundedHigherDirectImage.isSheaf_derivedPreimageHomPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ConnectivityOnABasis.lean#L289). The attribute's comment: “hom\_sheaf”.
 
 > **The rule `V ↦ Hom(K|_{f⁻¹ V}, L|_{f⁻¹ V})` is a sheaf.** If
 > `Ext^i(K|_{f⁻¹ V}, L|_{f⁻¹ V}) = 0` for `i < 0` and every `V` in a basis of the topology of `Y`,
@@ -228,7 +228,7 @@ theorem Solution.subsingleton_shiftedHom_self {S : LocallyGiven X} (A : Solution
 > input being `Stacks.DerivedGlueing.restrictHomBelow_eq_restrictDerivedHom`.
 >
 > The conclusion `Stacks.DerivedGlueing.Solution.IsCompatibleHom A B ψ.hom` is by definition
-> `∀ (U : Opens X.carrier) (hU : U ∈ S.opens), (S.restriction U ⊤ le_top).map ψ.hom ≫
+> `∀ (U : Opens X.carrier) (hU : U ∈ S.opens), (S.restriction U ⊤ le\_top).map ψ.hom ≫
 > (B.rho U hU).hom = (A.rho U hU).hom`, which is the clause as the source states it.
 
 ```lean
@@ -364,7 +364,7 @@ theorem exists_solutionOver_inf (S : LocallyGiven X) (U V : Opens X.carrier)
 
 [Tag 0D6A](https://stacks.math.columbia.edu/tag/0D6A) in the Stacks Project.
 
-**`Stacks.DerivedGlueing.exists_solution_of_finite_cover_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/GlueingForHomsWithoutCovering.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/GlueingForHomsWithoutCovering.lean#L113). The attribute's comment: “existence: for X = U_1 ∪ … ∪ U_n with U_i in the collection, intersections of members covered by members, and no negative self-Ext of the prescribed objects, the system has a solution”.
+**`Stacks.DerivedGlueing.exists_solution_of_finite_cover_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/GlueingForHomsWithoutCovering.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/GlueingForHomsWithoutCovering.lean#L113). The attribute's comment: “existence: for X = U\_1 ∪ … ∪ U\_n with U\_i in the collection, intersections of members covered by members, and no negative self-Ext of the prescribed objects, the system has a solution”.
 
 > **[Stacks, Tag 0D6A], existence.**
 > In Situation 0D67, suppose that `X = U_1 ∪ … ∪ U_n` with the `U_i` in the displayed collection,
@@ -388,7 +388,7 @@ theorem exists_solution_of_finite_cover_unconditional (S : LocallyGiven X)
     Nonempty (Solution S)
 ```
 
-**`Stacks.DerivedGlueing.exists_solution_and_unique_solutionIso_of_finite_cover_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/GlueingForHomsWithoutCovering.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/GlueingForHomsWithoutCovering.lean#L137). The attribute's comment: “the whole tag: for X = U_1 ∪ … ∪ U_n with U_i in the collection, intersections of members covered by members, and no negative self-Ext of the prescribed objects, a solution exists and is unique up to unique isomorphism”.
+**`Stacks.DerivedGlueing.exists_solution_and_unique_solutionIso_of_finite_cover_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/GlueingForHomsWithoutCovering.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/GlueingForHomsWithoutCovering.lean#L137). The attribute's comment: “the whole tag: for X = U\_1 ∪ … ∪ U\_n with U\_i in the collection, intersections of members covered by members, and no negative self-Ext of the prescribed objects, a solution exists and is unique up to unique isomorphism”.
 
 > **[Stacks, Tag 0D6A] in full**: under the conditions (1), (2) and (3) of the tag the
 > system has a solution, and any two solutions are identified by exactly one isomorphism of
@@ -397,8 +397,8 @@ theorem exists_solution_of_finite_cover_unconditional (S : LocallyGiven X)
 > Both clauses of the tag in one statement, the existence clause above together with the
 > uniqueness clause of [Stacks, Tag 0D68] over the finite cover.  The conclusion
 > `Stacks.DerivedGlueing.Solution.IsCompatibleHom A B ψ.hom` is by definition
-> `∀ (U : Opens X.carrier) (hU : U ∈ S.opens), (S.restriction U ⊤ le_top).map ψ.hom ≫
-> (B.rho U hU).hom = (A.rho U hU).hom`, which is "compatible with the `ρ_U`" as the source means
+> `∀ (U : Opens X.carrier) (hU : U ∈ S.opens), (S.restriction U ⊤ le\_top).map ψ.hom ≫
+> (B.rho U hU).hom = (A.rho U hU).hom`, which is "compatible with the `ρ\_U`" as the source means
 > it.
 
 ```lean

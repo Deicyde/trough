@@ -91,7 +91,7 @@ theorem isUniversallySubmersive_baseChange_of_isTwoFibreProduct
 
 [Tag 0CHZ](https://stacks.math.columbia.edu/tag/0CHZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSubmersive_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveComposition.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveComposition.lean#L84). The attribute's comment: “composition_submersive”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSubmersive_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveComposition.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveComposition.lean#L84). The attribute's comment: “composition\_submersive”.
 
 > **Stacks 0CHZ.** The composite of two submersive 1-morphisms of algebraic stacks over `S` is
 > submersive.
@@ -102,7 +102,7 @@ theorem isSubmersive_comp {𝒳 𝒴 𝒵 : Stack.AlgebraicStacks.{u, w} B S hS}
     IsSubmersive B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isUniversallySubmersive_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveUniversalComposition.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveUniversalComposition.lean#L132). The attribute's comment: “composition_universally_submersive”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isUniversallySubmersive_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveUniversalComposition.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveUniversalComposition.lean#L132). The attribute's comment: “composition\_universally\_submersive”.
 
 > **Stacks 0CHZ.** The composite of two universally submersive 1-morphisms of algebraic stacks
 > over `S` is universally submersive.

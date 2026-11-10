@@ -355,7 +355,7 @@ theorem exists_nonzero_map_of_derivedObjectSize_le (K : DMod.{w} O) (hK : ¬ IsZ
 
 [Tag 0GZ0](https://stacks.math.columbia.edu/tag/0GZ0) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isTriangulated_rightAdjoint_smallAffineChaoticDerivedQuasiCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteBrownRepresentability.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteBrownRepresentability.lean#L132). The attribute's comment: “part (3) on D_QCoh(S_affine, 𝒪) of an arbitrary scheme, through the equality of that subcategory with QC(S_affine, 𝒪) which is the comparison (4) ≃ (5) of Stacks 0GZZ”.
+**`AlgebraicGeometry.exists_isTriangulated_rightAdjoint_smallAffineChaoticDerivedQuasiCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteBrownRepresentability.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffineSiteBrownRepresentability.lean#L132). The attribute's comment: “part (3) on D\_QCoh(S\_affine, 𝒪) of an arbitrary scheme, through the equality of that subcategory with QC(S\_affine, 𝒪) which is the comparison (4) ≃ (5) of Stacks 0GZZ”.
 
 > **[Stacks, Tag 0GZ0] part (3) on `D_QCoh(S_affine, 𝒪)`.** Let `S` be a scheme and let
 > `(S_affine, 𝒪)` be its small affine Zariski site read with the chaotic topology. An exact functor

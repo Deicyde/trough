@@ -14,7 +14,7 @@ Section 42.9 of the Stacks Project, [Tag 02QS](https://stacks.math.columbia.edu/
 
 [Tag 02QT](https://stacks.math.columbia.edu/tag/02QT) in the Stacks Project.
 
-**`Stacks.Chow.isGenericPoint_component_of_relativeDimension_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CoherentCycle/MaximalDeltaDimension.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/CoherentCycle/MaximalDeltaDimension.lean#L118). The attribute's comment: “maximal_delta_component”.
+**`Stacks.Chow.isGenericPoint_component_of_relativeDimension_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CoherentCycle/MaximalDeltaDimension.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/CoherentCycle/MaximalDeltaDimension.lean#L118). The attribute's comment: “maximal\_delta\_component”.
 
 > A point of a closed subscheme `i : Z ⟶ X` attaining an upper bound for the delta-dimension
 > of `Z` is the generic point of an irreducible component of `Z`.
@@ -27,7 +27,7 @@ theorem isGenericPoint_component_of_relativeDimension_eq (C : ChowSituation.{u})
     ∃ W : irreducibleComponents Z, IsGenericPoint ξ (W : Set Z)
 ```
 
-**`AlgebraicGeometry.isFiniteLength_stalk_of_isGenericPoint_component`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CycleAssociatedClosed/Basic.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/CycleAssociatedClosed/Basic.lean#L48). The attribute's comment: “finite_multiplicity”.
+**`AlgebraicGeometry.isFiniteLength_stalk_of_isGenericPoint_component`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CycleAssociatedClosed/Basic.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/CycleAssociatedClosed/Basic.lean#L48). The attribute's comment: “finite\_multiplicity”.
 
 > **Stacks Project, Tag 02QT.** At the generic point of an irreducible component of a closed
 > subscheme, its local ring has finite length over the ambient local ring.

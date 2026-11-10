@@ -82,7 +82,7 @@ Declarations registered for the tag:
 
 [Tag 02RL](https://stacks.math.columbia.edu/tag/02RL) in the Stacks Project.
 
-**`Stacks.Chow.locallyFinite_closure_notMem_range_algebraMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Vocabulary/PrincipalCycle.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Vocabulary/PrincipalCycle.lean#L164). The attribute's comment: “the prime divisors with f ∉ O_{X,ξ}; no hypothesis f ≠ 0 needed”.
+**`Stacks.Chow.locallyFinite_closure_notMem_range_algebraMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Vocabulary/PrincipalCycle.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Vocabulary/PrincipalCycle.lean#L164). The attribute's comment: “the prime divisors with f ∉ O\_\{X,ξ}; no hypothesis f ≠ 0 needed”.
 
 > **Stacks 02RL.** On a locally Noetherian integral scheme the prime divisors at whose generic
 > point `ξ` a rational function `f` does not lie in the local ring `O_{X,ξ}` form a locally finite
@@ -97,7 +97,7 @@ theorem locallyFinite_closure_notMem_range_algebraMap (X : Scheme.{u}) [IsIntegr
       closure ({(z : X)} : Set X)
 ```
 
-**`Stacks.Chow.locallyFiniteSupport_ord`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Vocabulary/PrincipalCycle.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Vocabulary/PrincipalCycle.lean#L185). The attribute's comment: “the prime divisors with ord_Z(f) ≠ 0”.
+**`Stacks.Chow.locallyFiniteSupport_ord`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Vocabulary/PrincipalCycle.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Vocabulary/PrincipalCycle.lean#L185). The attribute's comment: “the prime divisors with ord\_Z(f) ≠ 0”.
 
 > **Stacks 02RL.** On a locally Noetherian integral scheme the prime divisors along which a
 > rational function `f` has nonzero order form a locally finite collection: the support of

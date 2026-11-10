@@ -14,7 +14,7 @@ Section 29.31 of the Stacks Project, [Tag 01UB](https://stacks.math.columbia.edu
 
 [Tag 01UC](https://stacks.math.columbia.edu/tag/01UC) in the Stacks Project.
 
-**`AlgebraicGeometry.SyntomicAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Defs.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Defs.lean#L51). The attribute's comment: “syntomic_at_point”.
+**`AlgebraicGeometry.SyntomicAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Defs.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Defs.lean#L51). The attribute's comment: “syntomic\_at\_point”.
 
 > A morphism of schemes `f : X ⟶ S` is *syntomic at* `x : X` if there are affine open
 > neighbourhoods `U` of `x` and `V` of `f(x)`, with `f(U) ⊆ V`, for which the induced map
@@ -24,7 +24,7 @@ Section 29.31 of the Stacks Project, [Tag 01UB](https://stacks.math.columbia.edu
 def SyntomicAt {X S : Scheme.{u}} (f : X ⟶ S) (x : X) : Prop
 ```
 
-**`AlgebraicGeometry.Syntomic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Defs.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Defs.lean#L65). The attribute's comment: “syntomic_morphism”.
+**`AlgebraicGeometry.Syntomic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Defs.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Defs.lean#L65). The attribute's comment: “syntomic\_morphism”.
 
 > A morphism of schemes is syntomic if it is syntomic at every point of its source.
 
@@ -32,7 +32,7 @@ def SyntomicAt {X S : Scheme.{u}} (f : X ⟶ S) (x : X) : Prop
 abbrev Syntomic {X S : Scheme.{u}} (f : X ⟶ S) : Prop
 ```
 
-**`AlgebraicGeometry.IsStandardSyntomic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Defs.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Defs.lean#L73). The attribute's comment: “standard_syntomic_morphism”.
+**`AlgebraicGeometry.IsStandardSyntomic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Defs.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Defs.lean#L73). The attribute's comment: “standard\_syntomic\_morphism”.
 
 > A morphism `f : X ⟶ S` of affine schemes is **standard syntomic** if the induced ring map
 > `Γ(S, ⊤) → Γ(X, ⊤)` is a relative global complete intersection. Via the canonical isomorphisms of
@@ -44,7 +44,7 @@ abbrev IsStandardSyntomic {X S : Scheme.{u}} [IsAffine X] [IsAffine S]
     (f : X ⟶ S) : Prop
 ```
 
-**`AlgebraicGeometry.IsLocalCompleteIntersectionOverField`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Defs.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Defs.lean#L100). The attribute's comment: “local_complete_intersection_over_field”.
+**`AlgebraicGeometry.IsLocalCompleteIntersectionOverField`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Defs.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Syntomic/Defs.lean#L100). The attribute's comment: “local\_complete\_intersection\_over\_field”.
 
 > A scheme over a field is a **local complete intersection over the field** if its structure
 > morphism to the spectrum of the field is syntomic.

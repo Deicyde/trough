@@ -55,7 +55,7 @@ theorem preservesInjectiveObjects_sheafOfModulesDirectImage
         hτ)).PreservesInjectiveObjects
 ```
 
-**`AlgebraicGeometry.Stack.abelianDirectImage_preservesInjectiveObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/InjectivePushforward.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/InjectivePushforward.lean#L64). The attribute's comment: “injective_pushforward_abelian”.
+**`AlgebraicGeometry.Stack.abelianDirectImage_preservesInjectiveObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/InjectivePushforward.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/InjectivePushforward.lean#L64). The attribute's comment: “injective\_pushforward\_abelian”.
 
 > **Stacks 06WX, part (1).** Direct image under a fibred 1-morphism preserves injective
 > abelian sheaves, for any of the five associated topologies.
@@ -180,7 +180,7 @@ theorem hasPullbacks_of_isFiberedInGroupoids
 
 [Tag 06WZ](https://stacks.math.columbia.edu/tag/06WZ) in the Stacks Project.
 
-**`CategoryTheory.CatFiberedInGroupoids.preservesPullbacks_homFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FibreProducts.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FibreProducts.lean#L88). The attribute's comment: “preserves_fibre_products”.
+**`CategoryTheory.CatFiberedInGroupoids.preservesPullbacks_homFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FibreProducts.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FibreProducts.lean#L88). The attribute's comment: “preserves\_fibre\_products”.
 
 > **Stacks 06WZ.** A morphism of categories fibred in groupoids over a base category with
 > fibre products preserves fibre products.
@@ -190,7 +190,7 @@ instance preservesPullbacks_homFunctor (f : 𝒳 ⟶ 𝒴) :
     PreservesLimitsOfShape WalkingCospan (homFunctor f)
 ```
 
-**`CategoryTheory.CatFiberedInGroupoids.preservesEqualizers_homFunctor_of_faithful`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FibreProducts.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FibreProducts.lean#L214). The attribute's comment: “preserves_equalizers”.
+**`CategoryTheory.CatFiberedInGroupoids.preservesEqualizers_homFunctor_of_faithful`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FibreProducts.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FibreProducts.lean#L214). The attribute's comment: “preserves\_equalizers”.
 
 > **Stacks 06WZ.** A faithful morphism of categories fibred in groupoids preserves
 > equalizers.
@@ -281,7 +281,7 @@ theorem injective_sheafPushforwardContinuous_obj
       (associatedTopology B S hS p τ) (associatedTopology B S hS q τ)).obj I)
 ```
 
-**`AlgebraicGeometry.Stack.isRightAdjoint_sheafPushforwardContinuous_of_essentiallySmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Injectives.lean, line 513](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Injectives.lean#L513). The attribute's comment: “f⁻¹ has a left adjoint f_!”.
+**`AlgebraicGeometry.Stack.isRightAdjoint_sheafPushforwardContinuous_of_essentiallySmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Injectives.lean, line 513](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Injectives.lean#L513). The attribute's comment: “f⁻¹ has a left adjoint f\_!”.
 
 > **Stacks 06X1, the left adjoint.** For a 1-morphism `f` of categories fibred in groupoids
 > over the big fppf category of `S` and any topology `τ` on the underlying category of schemes,
@@ -357,7 +357,7 @@ theorem injective_sheafPushforwardContinuous_obj_of_essentiallySmall
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.sheafPullbackConstruction.sheafAdjunctionContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullbackConstruction.sheafAdjunctionContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Injectives.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Injectives.lean#L239) (StacksFrontier): “the adjunction f_! ⊣ f⁻¹”. References: SGA 4 III (1.3), “more general”; SGA 4 III (2.6); SGA 4 IV (4.7), “partial”; SGA 4 IV (4.9.1), “partial”; SGA 4 VI (7.4.13.4).
+- [`CategoryTheory.Functor.sheafPullbackConstruction.sheafAdjunctionContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullbackConstruction.sheafAdjunctionContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Injectives.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Injectives.lean#L239) (StacksFrontier): “the adjunction f\_! ⊣ f⁻¹”. References: SGA 4 III (1.3), “more general”; SGA 4 III (2.6); SGA 4 IV (4.7), “partial”; SGA 4 IV (4.9.1), “partial”; SGA 4 VI (7.4.13.4).
 
 ## Tag 06X2, a lemma
 
@@ -472,7 +472,7 @@ theorem injective_sheafOfModules_pushforward_obj
       (ringStructureSheafCoreHom B S hS p q F τ hp hq hcomp hτ)).obj I)
 ```
 
-**`AlgebraicGeometry.Stack.isRightAdjoint_sheafOfModules_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/ModuleLowerShriek.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/ModuleLowerShriek.lean#L93). The attribute's comment: “f^* on sheaves of modules has a left adjoint f_!”.
+**`AlgebraicGeometry.Stack.isRightAdjoint_sheafOfModules_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/ModuleLowerShriek.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/ModuleLowerShriek.lean#L93). The attribute's comment: “f^* on sheaves of modules has a left adjoint f\_!”.
 
 > **Stacks 06X2, existence of `f_!`.** Inverse image of sheaves of modules along a
 > 1-morphism of categories fibred in groupoids over the big fppf category of a scheme has a left
@@ -491,7 +491,7 @@ theorem isRightAdjoint_sheafOfModules_pushforward
       (ringStructureSheafCoreHom B S hS p q F τ hp hq hcomp hτ)).IsRightAdjoint
 ```
 
-**`AlgebraicGeometry.Stack.lowerShriekModulesForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/ModuleLowerShriek.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/ModuleLowerShriek.lean#L129). The attribute's comment: “f_! on sheaves of modules agrees with f_! on abelian sheaves”.
+**`AlgebraicGeometry.Stack.lowerShriekModulesForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/ModuleLowerShriek.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/ModuleLowerShriek.lean#L129). The attribute's comment: “f\_! on sheaves of modules agrees with f\_! on abelian sheaves”.
 
 > **Stacks 06X2, comparison with abelian sheaves.** The lower shriek `f_!` of sheaves of
 > modules along a 1-morphism of categories fibred in groupoids agrees, on underlying abelian
@@ -561,7 +561,7 @@ theorem injective_sheafOfModules_pushforward_obj_of_injective
 
 Declarations registered for the tag:
 
-- [`SheafOfModules.instIsRightAdjointPushforward`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SheafOfModules.instIsRightAdjointPushforward#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Injectives.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Injectives.lean#L306) (StacksFrontier): “the adjunction f_! ⊣ f^* on modules”.
+- [`SheafOfModules.instIsRightAdjointPushforward`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SheafOfModules.instIsRightAdjointPushforward#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Injectives.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/Injectives.lean#L306) (StacksFrontier): “the adjunction f\_! ⊣ f^* on modules”.
 
 ## Depends on
 

@@ -25,7 +25,7 @@ Section 39.4 of the Stacks Project, [Tag 022R](https://stacks.math.columbia.edu/
 structure GroupSchemeOverPoints (S : Scheme.{u})
 ```
 
-**`AlgebraicGeometry.GroupSchemeOverPoints.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/Defs.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/Defs.lean#L85). The attribute's comment: “morphisms of group schemes over S”. References: SGA 3 XI (2.1), “The value of M_H”; SGA 7 VII (2.9.6), “partial”.
+**`AlgebraicGeometry.GroupSchemeOverPoints.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/Defs.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/Defs.lean#L85). The attribute's comment: “morphisms of group schemes over S”. References: SGA 3 XI (2.1), “The value of M\_H”; SGA 7 VII (2.9.6), “partial”.
 
 > **Stacks Project, Tag 022S** (2). A morphism `ψ : (G, m) ⟶ (G', m')` of group schemes over
 > `S`: a morphism `ψ : G ⟶ G'` of schemes over `S` such that for every scheme `T` over `S`, the

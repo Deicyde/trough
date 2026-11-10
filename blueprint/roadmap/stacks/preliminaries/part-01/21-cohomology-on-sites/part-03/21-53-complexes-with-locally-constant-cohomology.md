@@ -70,7 +70,7 @@ public theorem exists_cover_isRepresentedByLocallyConstantComplex_of_isGE_of_isL
 
 [Tag 09BD](https://stacks.math.columbia.edu/tag/09BD) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.exists_coveringSieve_complexMap_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/MapOutOfAConstantComplex.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/MapOutOfAConstantComplex.lean#L395). The attribute's comment: “local_representation_for_the_constant_complex”.
+**`AlgebraicGeometry.RingedSite.exists_coveringSieve_complexMap_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/MapOutOfAConstantComplex.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/MapOutOfAConstantComplex.lean#L395). The attribute's comment: “local\_representation\_for\_the\_constant\_complex”.
 
 > **Maps out of the complex of constant sheaves of modules.** Let `Λ` be a commutative ring, let
 > `K^•` be a bounded complex of finite projective `Λ`-modules, and let `L^•` be a complex of sheaves
@@ -122,7 +122,7 @@ theorem exists_coveringSieve_complexMap_constant
                   DerivedCategory.Q.map β
 ```
 
-**`Stacks.SheafOfModules.Constant.isStrictlyPerfect_constantModuleSheafFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/MapOutOfALocallyConstantComplex.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/MapOutOfALocallyConstantComplex.lean#L158). The attribute's comment: “strict_perfectness_of_the_constant_complex”.
+**`Stacks.SheafOfModules.Constant.isStrictlyPerfect_constantModuleSheafFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/MapOutOfALocallyConstantComplex.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/MapOutOfALocallyConstantComplex.lean#L158). The attribute's comment: “strict\_perfectness\_of\_the\_constant\_complex”.
 
 > The complex of constant sheaves of modules on a bounded complex of finite projective
 > `Λ`-modules is strictly perfect over the constant sheaf of rings `Λ̲`.
@@ -137,7 +137,7 @@ theorem isStrictlyPerfect_constantModuleSheafFunctor
         (ComplexShape.up ℤ)).obj P)
 ```
 
-**`AlgebraicGeometry.RingedSite.exists_coveringSieve_complexMap_of_finite_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/MapOutOfALocallyConstantComplex.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/MapOutOfALocallyConstantComplex.lean#L258). The attribute's comment: “local_representation_for_a_transported_finite_projective_complex”.
+**`AlgebraicGeometry.RingedSite.exists_coveringSieve_complexMap_of_finite_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/MapOutOfALocallyConstantComplex.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/MapOutOfALocallyConstantComplex.lean#L258). The attribute's comment: “local\_representation\_for\_a\_transported\_finite\_projective\_complex”.
 
 > Let `Φ` be an additive right exact functor from `Λ`-modules to sheaves of `O|_U`-modules
 > taking `Λ` to the unit object. Let `K^•` be a bounded complex of finite projective `Λ`-modules
@@ -189,7 +189,7 @@ theorem exists_coveringSieve_complexMap_of_finite_projective
 
 [Tag 09BE](https://stacks.math.columbia.edu/tag/09BE) in the Stacks Project.
 
-**`Stacks.ConstantSheaf.exists_cover_overPullback_eq_constantSheaf_mapHomologicalComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafComplexLocalHom.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafComplexLocalHom.lean#L278). The attribute's comment: “local_constancy_of_a_map_of_constant_complexes”.
+**`Stacks.ConstantSheaf.exists_cover_overPullback_eq_constantSheaf_mapHomologicalComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafComplexLocalHom.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafComplexLocalHom.lean#L278). The attribute's comment: “local\_constancy\_of\_a\_map\_of\_constant\_complexes”.
 
 > **The local constancy of a map of complexes of constant sheaves of modules.** Let `P` be a
 > complex of finite projective `Λ`-modules which is nonzero in only finitely many degrees, let `T`
@@ -263,7 +263,7 @@ theorem exists_cover_overPullback_map_eq_overConstantSheaf_map
 
 [Tag 094H](https://stacks.math.columbia.edu/tag/094H) in the Stacks Project.
 
-**`Stacks.ConstantRingModules.isFiniteTypeLocallyConstantModuleSheaf_homology_constantDerivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/LocallyConstant/ConstantDerivedTensorLocallyConstant.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/LocallyConstant/ConstantDerivedTensorLocallyConstant.lean#L302). The attribute's comment: “the full statement for the derived tensor product over the constant sheaf of commutative rings on Λ: for K and L in D^- of the sheaves of Λ-modules whose cohomology sheaves are locally constant of finite type, so are those of K ⊗^L_Λ L. The site is small and every universe is one, which is the configuration in which the derived tensor product of Stacks 06YU is available; apart from that nothing is assumed, and in particular the bounded case of the tag is proved here and not supposed”.
+**`Stacks.ConstantRingModules.isFiniteTypeLocallyConstantModuleSheaf_homology_constantDerivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/LocallyConstant/ConstantDerivedTensorLocallyConstant.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/LocallyConstant/ConstantDerivedTensorLocallyConstant.lean#L302). The attribute's comment: “the full statement for the derived tensor product over the constant sheaf of commutative rings on Λ: for K and L in D^- of the sheaves of Λ-modules whose cohomology sheaves are locally constant of finite type, so are those of K ⊗^L\_Λ L. The site is small and every universe is one, which is the configuration in which the derived tensor product of Stacks 06YU is available; apart from that nothing is assumed, and in particular the bounded case of the tag is proved here and not supposed”.
 
 > Let `(C, J)` be a small site, `Λ` a Noetherian commutative ring, and let `K` and `L` be
 > objects of `D^-` of the sheaves of `Λ`-modules whose cohomology sheaves are locally constant of
@@ -420,7 +420,7 @@ theorem isFiniteTypeLocallyConstantModuleSheaf_homology_derivedTensorConstant_qu
           (ModuleCat.of Λ (Λ ⧸ I ^ n))))
 ```
 
-**`Stacks.ConstantSheaf.isFiniteTypeLocallyConstantModuleSheaf_homology_tensor_quotientIdealPow_of_isLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/LocallyConstant/DerivedTensorGradedPieces.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/LocallyConstant/DerivedTensorGradedPieces.lean#L459). The attribute's comment: “the induction on n from Λ/I to Λ/Iⁿ, with the source's distinguished triangles and its base change to Λ/I both proved rather than assumed. The derived tensor product enters as a bifunctor parameter, and two of its properties are hypotheses: exactness in the second variable, and that it takes objects in degrees ≤ a and ≤ b to objects in degrees ≤ a + b. The parameter is instantiated, and this tag registered with nothing assumed of the derived tensor product, on Stacks.ConstantRingModules.isFiniteTypeLocallyConstantModuleSheaf_homology_constantDerivedTensor_quotientIdealPow”.
+**`Stacks.ConstantSheaf.isFiniteTypeLocallyConstantModuleSheaf_homology_tensor_quotientIdealPow_of_isLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/LocallyConstant/DerivedTensorGradedPieces.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/LocallyConstant/DerivedTensorGradedPieces.lean#L459). The attribute's comment: “the induction on n from Λ/I to Λ/Iⁿ, with the source's distinguished triangles and its base change to Λ/I both proved rather than assumed. The derived tensor product enters as a bifunctor parameter, and two of its properties are hypotheses: exactness in the second variable, and that it takes objects in degrees ≤ a and ≤ b to objects in degrees ≤ a + b. The parameter is instantiated, and this tag registered with nothing assumed of the derived tensor product, on Stacks.ConstantRingModules.isFiniteTypeLocallyConstantModuleSheaf\_homology\_constantDerivedTensor\_quotientIdealPow”.
 
 > **Stacks Tag 094I.** Let `(C, J)` be a site, let `Λ` be a Noetherian ring, let `I ⊆ Λ` be an
 > ideal and let `K` be an object of `D^-` of the sheaves of `Λ`-modules. Let `T` stand for the

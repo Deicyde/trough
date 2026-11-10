@@ -337,7 +337,7 @@ public noncomputable def bocksteinComplex
 
 [Tag 0GT9](https://stacks.math.columbia.edu/tag/0GT9) in the Stacks Project.
 
-**`Stacks.IdealTorsion.Reduction.reductionComparisonQ`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafReductionDerivedIso.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafReductionDerivedIso.lean#L78). The attribute's comment: “the canonical arrow in D(O_X)”.
+**`Stacks.IdealTorsion.Reduction.reductionComparisonQ`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafReductionDerivedIso.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafReductionDerivedIso.lean#L78). The attribute's comment: “the canonical arrow in D(O\_X)”.
 
 > The canonical arrow `η_I F ⊗ O_X/I ⟶ H^•(F/I)` in `D(O_X)`, for a termwise `I`-torsion-free
 > complex `F`: the image under `DerivedCategory.Q` of the canonical morphism of complexes
@@ -354,7 +354,7 @@ public noncomputable def reductionComparisonQ
       DerivedCategory.Q.obj (bocksteinChainComplex X I ι F hF)
 ```
 
-**`Stacks.IdealTorsion.Reduction.isIso_reductionComparisonQ_of_isLocallyGeneratedByRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafReductionDerivedIsoRegular.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafReductionDerivedIsoRegular.lean#L221). The attribute's comment: “in Situation 0GT4: the canonical arrow of D(O_X) is invertible”.
+**`Stacks.IdealTorsion.Reduction.isIso_reductionComparisonQ_of_isLocallyGeneratedByRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafReductionDerivedIsoRegular.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafReductionDerivedIsoRegular.lean#L221). The attribute's comment: “in Situation 0GT4: the canonical arrow of D(O\_X) is invertible”.
 
 > **Stacks Project, Tag 0GT9.**  In Situation 0GT4, on a complex `F` of `I`-torsion-free
 > `O_X`-modules, the canonical arrow
@@ -375,7 +375,7 @@ public theorem isIso_reductionComparisonQ_of_isLocallyGeneratedByRegular
     IsIso (reductionComparisonQ X I ι F hF)
 ```
 
-**`Stacks.IdealTorsion.Reduction.reductionComparisonQIsoOfRegular`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafReductionDerivedIsoRegular.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafReductionDerivedIsoRegular.lean#L241). The attribute's comment: “in Situation 0GT4: the canonical isomorphism in D(O_X)”.
+**`Stacks.IdealTorsion.Reduction.reductionComparisonQIsoOfRegular`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafReductionDerivedIsoRegular.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafReductionDerivedIsoRegular.lean#L241). The attribute's comment: “in Situation 0GT4: the canonical isomorphism in D(O\_X)”.
 
 > **Stacks Project, Tag 0GT9.**  The canonical isomorphism
 >
@@ -398,7 +398,7 @@ public noncomputable def reductionComparisonQIsoOfRegular
       DerivedCategory.Q.obj (bocksteinChainComplex X I ι F hF)
 ```
 
-**`Stacks.IdealTorsion.Reduction.exists_isIso_reductionComparisonQ_of_isLocallyGeneratedByRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafReductionDerivedIsoRegular.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafReductionDerivedIsoRegular.lean#L300). The attribute's comment: “in Situation 0GT4, for an arbitrary object of D(O_X): a termwise I-torsion-free representative exists and the canonical arrow is invertible on it”.
+**`Stacks.IdealTorsion.Reduction.exists_isIso_reductionComparisonQ_of_isLocallyGeneratedByRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafReductionDerivedIsoRegular.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafReductionDerivedIsoRegular.lean#L300). The attribute's comment: “in Situation 0GT4, for an arbitrary object of D(O\_X): a termwise I-torsion-free representative exists and the canonical arrow is invertible on it”.
 
 > **Stacks Project, Tag 0GT9, at the tag's own quantifier.**  In Situation 0GT4, for an
 > arbitrary object `M` of `D(O_X)` there is a complex `F` of `I`-torsion-free `O_X`-modules with
@@ -506,7 +506,7 @@ public theorem etaTensorInvertible_snd (I : SheafOfModules.{u} Oₓ) (ι : I ⟶
 
 [Tag 0GTA](https://stacks.math.columbia.edu/tag/0GTA) in the Stacks Project.
 
-**`Stacks.IdealTorsion.Eta.isFiniteFreeStalkOfRank_homology_derivedEtaOfRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafStalk.lean, line 599](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafStalk.lean#L599). The attribute's comment: “in Situation 0GT4: if H^n(M)_x is finite free of rank r over O_{X,x}, then so is H^n(Lη_I M)_x, where Lη_I is derivedEtaOfRegular, the functor of Tag 0F8Q for that situation; the uniqueness of the rank over a nonzero stalk is rank_homology_derivedEtaOfRegular_eq”.
+**`Stacks.IdealTorsion.Eta.isFiniteFreeStalkOfRank_homology_derivedEtaOfRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafStalk.lean, line 599](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafStalk.lean#L599). The attribute's comment: “in Situation 0GT4: if H^n(M)\_x is finite free of rank r over O\_\{X,x}, then so is H^n(Lη\_I M)\_x, where Lη\_I is derivedEtaOfRegular, the functor of Tag 0F8Q for that situation; the uniqueness of the rank over a nonzero stalk is rank\_homology\_derivedEtaOfRegular\_eq”.
 
 > **Stacks Project, Tag 0GTA, in Situation 0GT4.**  Let
 > `ι : I ⟶ O_X` be an ideal sheaf locally generated by a section that is a nonzerodivisor on
@@ -533,7 +533,7 @@ public theorem isFiniteFreeStalkOfRank_homology_derivedEtaOfRegular
         ((@derivedEtaOfRegular X I ι monoIncl hregl).obj M)) x r
 ```
 
-**`Stacks.IdealTorsion.Eta.rank_homology_derivedEtaOfRegular_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafStalk.lean, line 656](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafStalk.lean#L656). The attribute's comment: “the clause `of the same rank`, in Situation 0GT4: the ideal is locally generated by a nonzerodivisor and the derived décalage is derivedEtaOfRegular, the functor of Tag 0F8Q for that situation; the condition O_{X,x} ≠ 0 is Nontrivial on the stalk of the structure sheaf, and the finite freeness itself is isFiniteFreeStalkOfRank_homology_derivedEtaOfRegular”.
+**`Stacks.IdealTorsion.Eta.rank_homology_derivedEtaOfRegular_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafStalk.lean, line 656](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/EtaSheafStalk.lean#L656). The attribute's comment: “the clause `of the same rank`, in Situation 0GT4: the ideal is locally generated by a nonzerodivisor and the derived décalage is derivedEtaOfRegular, the functor of Tag 0F8Q for that situation; the condition O\_\{X,x} ≠ 0 is Nontrivial on the stalk of the structure sheaf, and the finite freeness itself is isFiniteFreeStalkOfRank\_homology\_derivedEtaOfRegular”.
 
 > **Stacks Project, Tag 0GTA, the clause "of the same rank", in Situation 0GT4 itself.**  Let
 > `ι : I ⟶ O_X` be an ideal sheaf locally generated by a section that is a nonzerodivisor on

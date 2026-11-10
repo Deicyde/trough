@@ -87,7 +87,7 @@ structure GradedBinaryBiproductData (R : Type w) [Ring R] {C : Type u} [Category
 
 [Tag 09MM](https://stacks.math.columbia.edu/tag/09MM) in the Stacks Project.
 
-**`CategoryTheory.GradedObject.gradedCategoryData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedObject.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/GradedObject.lean#L310). The attribute's comment: “graded_category_of_graded_objects”.
+**`CategoryTheory.GradedObject.gradedCategoryData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedObject.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/GradedObject.lean#L310). The attribute's comment: “graded\_category\_of\_graded\_objects”.
 
 > The graded category of integer-graded objects in a preadditive category.
 
@@ -128,7 +128,7 @@ noncomputable def degreeZeroEquivalence :
 
 [Tag 09MN](https://stacks.math.columbia.edu/tag/09MN) in the Stacks Project.
 
-**`ExternallyGraded.RightModuleCat.homogeneousMapSubmodule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L101). The attribute's comment: “graded_category_of_graded_modules”.
+**`ExternallyGraded.RightModuleCat.homogeneousMapSubmodule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L101). The attribute's comment: “graded\_category\_of\_graded\_modules”.
 
 > The degree-`n` right `𝒜`-linear maps between graded right modules.
 
@@ -137,7 +137,7 @@ def homogeneousMapSubmodule (M N : RightModuleCat 𝒜) (n : ℤ) :
     Submodule R (M.Total →ₗ[R] N.Total)
 ```
 
-**`ExternallyGraded.RightModuleCat.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L282). The attribute's comment: “graded_category_of_graded_modules”.
+**`ExternallyGraded.RightModuleCat.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L282). The attribute's comment: “graded\_category\_of\_graded\_modules”.
 
 > Graded right modules, with finite sums of homogeneous maps as morphisms.
 
@@ -145,7 +145,7 @@ def homogeneousMapSubmodule (M N : RightModuleCat 𝒜) (n : ℤ) :
 instance instCategory : Category (RightModuleCat 𝒜)
 ```
 
-**`ExternallyGraded.RightModuleCat.instGradedCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L361). The attribute's comment: “graded_category_of_graded_modules”.
+**`ExternallyGraded.RightModuleCat.instGradedCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Graded/GradedModule.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Graded/GradedModule.lean#L361). The attribute's comment: “graded\_category\_of\_graded\_modules”.
 
 > The category of graded right modules is graded by the degrees of homogeneous maps.
 

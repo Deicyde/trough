@@ -14,7 +14,7 @@ Section 71.16 of the Stacks Project, [Tag 085K](https://stacks.math.columbia.edu
 
 [Tag 085L](https://stacks.math.columbia.edu/tag/085L) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.closedSubspaceSectionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceIdeal.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceIdeal.lean#L249). The attribute's comment: “the canonical map 𝒜 ⟶ ⨁ π_*((i_*𝒪_Z)(d)), degreewise, built from the carried twists 𝒪_P(d) and homogeneous section maps of Tag 01NR”.
+**`AlgebraicGeometry.Space.closedSubspaceSectionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceIdeal.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceIdeal.lean#L249). The attribute's comment: “the canonical map 𝒜 ⟶ ⨁ π\_*((i\_*𝒪\_Z)(d)), degreewise, built from the carried twists 𝒪\_P(d) and homogeneous section maps of Tag 01NR”.
 
 > **The canonical map `𝒜_d ⟶ π_*((i_*𝒪_Z)(d))` of Stacks 085L**, in degree `d`: the
 > homogeneous section map `𝒜_d ⟶ π_*(𝒪_P(d))` of Stacks 01MP followed by the direct image of the
@@ -42,7 +42,7 @@ def closedSubspaceGradedIdeal (T : ClosedSubspaceTwistSections s P π) (i : Z �
     (s.algebra.piece (d : ℤ)).Submodule
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_closedSubspaceGradedIdealObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceIdeal.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceIdeal.lean#L308). The attribute's comment: “ℐ is a quasi-coherent 𝒪_X-module, degreewise; granted only Tag 03M9 for π as quasi-coherence of the direct images π_*((i_*𝒪_Z)(d)), the kernel clause of Tag 03M1(3) being discharged from the closure lemma, and built from the carried twists of Tag 01NR”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_closedSubspaceGradedIdealObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceIdeal.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceIdeal.lean#L308). The attribute's comment: “ℐ is a quasi-coherent 𝒪\_X-module, degreewise; granted only Tag 03M9 for π as quasi-coherence of the direct images π\_*((i\_*𝒪\_Z)(d)), the kernel clause of Tag 03M1(3) being discharged from the closure lemma, and built from the carried twists of Tag 01NR”.
 
 > **Stacks 085L, the quasi-coherence of `ℐ`.**  The degree-`d` piece of the graded ideal cut
 > out by a closed subspace of the relative Proj is a quasi-coherent `𝒪_X`-module.
@@ -68,7 +68,7 @@ theorem isQuasicoherentOnSite_closedSubspaceGradedIdealObj
     (closedSubspaceGradedIdealObj T i d).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.C1359Bridge.exists_iso_quotientProjHom_psiKernelGradedIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceKernelProj.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceKernelProj.lean#L55). The attribute's comment: “Z ≅ Proj_X(𝒜/ℐ) over P for π quasi-compact, ℐ the kernel of 𝒜 ⟶ ⨁_{d ≥ 0} π_*((i_*𝒪_Z)(d))”.
+**`AlgebraicGeometry.Space.C1359Bridge.exists_iso_quotientProjHom_psiKernelGradedIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceKernelProj.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceKernelProj.lean#L55). The attribute's comment: “Z ≅ Proj\_X(𝒜/ℐ) over P for π quasi-compact, ℐ the kernel of 𝒜 ⟶ ⨁\_\{d ≥ 0} π\_*((i\_*𝒪\_Z)(d))”.
 
 > **Stacks 085L.**  Let `π : P = Proj_X(𝒜) ⟶ X` be the relative Proj of a quasi-coherent graded
 > `𝒪_X`-algebra on an algebraic space `X` (twists `𝒪_P(d)` and `ψ` built from a presentation of
@@ -94,7 +94,7 @@ theorem exists_iso_quotientProjHom_psiKernelGradedIdeal
 
 [Tag 085M](https://stacks.math.columbia.edu/tag/085M) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_finiteType_chartDegreeSubmodule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjChartSituation.lean, line 416](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjChartSituation.lean#L416). The attribute's comment: “the chart half: over an affine étale chart V of X there are d > 0 and a quasi-coherent finite type submodule ℱ of the module restriction (𝒜_d)|_V cutting out a closed subscheme of finite presentation of Proj_V(𝒜|_V), with no hypothesis beyond the tag's own, exactly as the scheme case Tag 0802. The globalization of ℱ to a submodule of 𝒜_d on X — the colimit clause of Tag 0829, still resting on Tag 07V9 — and the descent of the presentation to X are NOT claimed, so the existence assertion of Tag 085M on X is not delivered here”.
+**`AlgebraicGeometry.Space.exists_finiteType_chartDegreeSubmodule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjChartSituation.lean, line 416](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjChartSituation.lean#L416). The attribute's comment: “the chart half: over an affine étale chart V of X there are d > 0 and a quasi-coherent finite type submodule ℱ of the module restriction (𝒜\_d)|\_V cutting out a closed subscheme of finite presentation of Proj\_V(𝒜|\_V), with no hypothesis beyond the tag's own, exactly as the scheme case Tag 0802. The globalization of ℱ to a submodule of 𝒜\_d on X — the colimit clause of Tag 0829, still resting on Tag 07V9 — and the descent of the presentation to X are NOT claimed, so the existence assertion of Tag 085M on X is not delivered here”.
 
 > **Stacks 085M on an affine étale chart.**
 >
@@ -131,7 +131,7 @@ theorem exists_finiteType_chartDegreeSubmodule
               (relativeProjChartSheafAlgebra s V hqc) i ℱ)
 ```
 
-**`AlgebraicGeometry.Space.closedSubspaceDegreeProducts_le_ker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceFiniteType.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceFiniteType.lean#L221). The attribute's comment: “the containment Z ⊆ Proj_X(𝒜/ℱ𝒜) in graded-ideal form: the graded ideal ℱ𝒜 generated by ℱ ⊆ 𝒜_d is killed by every degreewise, bidegree-(d,e)-multiplicative map of graded algebras killing ℱ. The existence of d > 0 and of the finite type quasi-coherent ℱ is not claimed”.
+**`AlgebraicGeometry.Space.closedSubspaceDegreeProducts_le_ker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceFiniteType.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceFiniteType.lean#L221). The attribute's comment: “the containment Z ⊆ Proj\_X(𝒜/ℱ𝒜) in graded-ideal form: the graded ideal ℱ𝒜 generated by ℱ ⊆ 𝒜\_d is killed by every degreewise, bidegree-(d,e)-multiplicative map of graded algebras killing ℱ. The existence of d > 0 and of the finite type quasi-coherent ℱ is not claimed”.
 
 > **Stacks 085M, the containment `Z ⊆ Proj_X(𝒜/ℱ𝒜)`, in graded-ideal form.**
 >
@@ -191,7 +191,7 @@ theorem exists_finiteType_iso_quotientProjHom (s : RelativeProjSituation.{u, u})
 
 [Tag 085N](https://stacks.math.columbia.edu/tag/085N) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.exists_finiteType_degreeSubmodule_range_eq_quotientProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceQuotientPresentation.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceQuotientPresentation.lean#L235). The attribute's comment: “the relative Proj P = Proj_X(𝒜) of Stacks 084A-084B; clause (a) is the equality of the ranges of i : Z ⟶ P and of the closed immersion Proj_X(𝒜/ℱ𝒜) ⟶ P, clause (b) the disjointness from U of the support of 𝒜_d/ℱ; the closed subspace written i : Z → X in the source is i : Z ⟶ P, which condition (3) and clause (a) require”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.exists_finiteType_degreeSubmodule_range_eq_quotientProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceQuotientPresentation.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceQuotientPresentation.lean#L235). The attribute's comment: “the relative Proj P = Proj\_X(𝒜) of Stacks 084A-084B; clause (a) is the equality of the ranges of i : Z ⟶ P and of the closed immersion Proj\_X(𝒜/ℱ𝒜) ⟶ P, clause (b) the disjointness from U of the support of 𝒜\_d/ℱ; the closed subspace written i : Z → X in the source is i : Z ⟶ P, which condition (3) and clause (a) require”.
 
 > **Stacks 085N.**  Let `X` be a quasi-compact and quasi-separated algebraic space over `S`,
 > `𝒜` a quasi-coherent graded `𝒪_X`-algebra and `π : P = Proj_X(𝒜) ⟶ X` its relative Proj
@@ -234,7 +234,7 @@ theorem exists_finiteType_degreeSubmodule_range_eq_quotientProj
             s.space)).obj (cokernel ℱ.ι))) U
 ```
 
-**`AlgebraicGeometry.Space.exists_finiteType_degreeSubmodule_disjoint_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceSupport.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceSupport.lean#L223). The attribute's comment: “the relative Proj P = Proj_X(𝒜) of Stacks 084A-084B; clause (a) as the data ClosedSubspaceDegreeQuotientPresentation (Z identified over P with Proj_X(𝒜/ℱ𝒜) and its closed immersion into P), clause (b) the disjointness from U of the support of 𝒜_d/ℱ; the closed subspace written i : Z → X in the source is i : Z ⟶ P, which condition (3) and clause (a) require”.
+**`AlgebraicGeometry.Space.exists_finiteType_degreeSubmodule_disjoint_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceSupport.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjClosedSubspaceSupport.lean#L223). The attribute's comment: “the relative Proj P = Proj\_X(𝒜) of Stacks 084A-084B; clause (a) as the data ClosedSubspaceDegreeQuotientPresentation (Z identified over P with Proj\_X(𝒜/ℱ𝒜) and its closed immersion into P), clause (b) the disjointness from U of the support of 𝒜\_d/ℱ; the closed subspace written i : Z → X in the source is i : Z ⟶ P, which condition (3) and clause (a) require”.
 
 > **Stacks 085N.**  Let `S` be a scheme, `X` a quasi-compact and quasi-separated algebraic
 > space over `S` and `𝒜` a quasi-coherent graded `𝒪_X`-algebra; let `π : P = Proj_X(𝒜) ⟶ X` be the
@@ -346,7 +346,7 @@ theorem projectiveBundle_sections_invertibleQuotients :
                 (projectiveBundleSectionsEquiv X E hE hb σ))
 ```
 
-**`AlgebraicGeometry.Space.projectiveBundle_sectionConormalIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProjectiveBundle/SectionsConormalClassification.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProjectiveBundle/SectionsConormalClassification.lean#L68). The attribute's comment: “the canonical isomorphism Ker(E -> L) tensor L^{-1} = conormal sheaf of sigma(X) in P(E), and its compatibility with base change”.
+**`AlgebraicGeometry.Space.projectiveBundle_sectionConormalIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProjectiveBundle/SectionsConormalClassification.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProjectiveBundle/SectionsConormalClassification.lean#L68). The attribute's comment: “the canonical isomorphism Ker(E -> L) tensor L^\{-1} = conormal sheaf of sigma(X) in P(E), and its compatibility with base change”.
 
 > **Stacks 0B4I, the conormal isomorphism and its base change.**  For a section `σ` of
 > `𝐏(ℰ) ⟶ X` corresponding to `q : ℰ ⟶ ℒ` there is a unique `Ker(q) ⊗ ℒ^{⊗ -1} ≅ 𝒞_{σ(X)/𝐏(ℰ)}`

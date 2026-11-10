@@ -90,7 +90,7 @@ theorem isCoveringOver_terminalFrom (hK : IsHypercovering J K) (n : ℕ) :
 
 [Tag 0DER](https://stacks.math.columbia.edu/tag/0DER) in the Stacks Project.
 
-**`CategoryTheory.MorphismProperty.IsHypercovering`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismProperty.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismProperty.lean#L140). The attribute's comment: “p_hypercovering”.
+**`CategoryTheory.MorphismProperty.IsHypercovering`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismProperty.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismProperty.lean#L140). The attribute's comment: “p\_hypercovering”.
 
 > **Stacks Project, Tag 0DER.** An augmented simplicial object is a `P`-hypercovering when its
 > degree-zero augmentation, its canonical degree-one morphism to `U₀ ×_X U₀`, and all of its higher
@@ -101,7 +101,7 @@ structure MorphismProperty.IsHypercovering {C : Type u} [Category.{v} C] [HasPul
     (P : MorphismProperty C) (A : SimplicialObject.Augmented C) : Prop
 ```
 
-**`CategoryTheory.MorphismProperty.IsHypercovering.face_mem`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismPropertyCovering.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismPropertyCovering.lean#L104). The attribute's comment: “faces_in_p”.
+**`CategoryTheory.MorphismProperty.IsHypercovering.face_mem`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismPropertyCovering.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismPropertyCovering.lean#L104). The attribute's comment: “faces\_in\_p”.
 
 > Every face map in positive degree of a `P`-hypercovering belongs to `P`.
 
@@ -112,7 +112,7 @@ lemma face_mem (P : MorphismProperty C) [P.IsStableUnderBaseChange] [P.IsMultipl
     P (A.left.δ i)
 ```
 
-**`CategoryTheory.MorphismProperty.IsHypercovering.hom_app`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismPropertyCovering.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismPropertyCovering.lean#L124). The attribute's comment: “levels_in_p”.
+**`CategoryTheory.MorphismProperty.IsHypercovering.hom_app`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismPropertyCovering.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/MorphismPropertyCovering.lean#L124). The attribute's comment: “levels\_in\_p”.
 
 > Every level of a `P`-hypercovering maps to its augmentation point by a morphism in `P`.
 >

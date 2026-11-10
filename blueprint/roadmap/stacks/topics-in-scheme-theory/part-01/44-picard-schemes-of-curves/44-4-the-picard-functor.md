@@ -24,7 +24,7 @@ Section 44.4 of the Stacks Project, [Tag 0B9K](https://stacks.math.columbia.edu/
 def picardPresheaf : (BigFppfOver B S hS)ᵒᵖ ⥤ Type (u + 1)
 ```
 
-**`Stacks.PicardFunctor.picardFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardFunctor.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardFunctor.lean#L176). The attribute's comment: “the Picard functor”. References: SGA 6 X (2.4), “definition of Pic_{X/S}”; SGA 6 XIII (3.1).
+**`Stacks.PicardFunctor.picardFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardFunctor.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardFunctor.lean#L176). The attribute's comment: “the Picard functor”. References: SGA 6 X (2.4), “definition of Pic\_\{X/S}”; SGA 6 XIII (3.1).
 
 > **Stacks Project, Tag 0B9L.** The *Picard functor* `Pic_{X/S} : (Sch/S)_{fppf} ⥤ Sets` of a
 > morphism `f : X ⟶ S` of a big fppf site: the fppf sheafification of the presheaf
@@ -53,7 +53,7 @@ theorem injective_schemePullbackClass_baseChangeProj
     Function.Injective (Stacks.Picard.schemePullbackClass (baseChangeProj B hX hS f T))
 ```
 
-**`Stacks.PicardFunctor.exact_schemePullbackClass_baseChangeProj_toPicardFunctorHom_of_isIso_c`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceMiddleExactness.lean, line 627](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceMiddleExactness.lean#L627). The attribute's comment: “exactness at Pic(X_T)”.
+**`Stacks.PicardFunctor.exact_schemePullbackClass_baseChangeProj_toPicardFunctorHom_of_isIso_c`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceMiddleExactness.lean, line 627](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardScheme/PicardSequenceMiddleExactness.lean#L627). The attribute's comment: “exactness at Pic(X\_T)”.
 
 > If the comparison map `𝒪_T ⟶ f_{T,*}𝒪_{X_T}` is an isomorphism for every `S`-scheme `T` of the
 > site, then a Picard class of `X_T` dies in `Pic_{X/S}(T)` exactly when it is pulled back along the

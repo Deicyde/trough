@@ -237,7 +237,7 @@ Declarations registered for the tag:
 
 [Tag 09WG](https://stacks.math.columbia.edu/tag/09WG) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.componentLowerShriek_preservesLimitsOfShape`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentConnectedLimits.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentConnectedLimits.lean#L77). The attribute's comment: “sheaf_connected_limits”.
+**`CategoryTheory.SimplicialSiteSituation.componentLowerShriek_preservesLimitsOfShape`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentConnectedLimits.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentConnectedLimits.lean#L77). The attribute's comment: “sheaf\_connected\_limits”.
 
 > **Stacks 09WG (4).** Lower shriek from one component of a simplicial site to the total site
 > commutes with finite connected limits.
@@ -248,7 +248,7 @@ theorem componentLowerShriek_preservesLimitsOfShape (S : SimplicialSiteSituation
     PreservesLimitsOfShape L (componentLowerShriek.{u, u} S n)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentLowerShriek_exactFunctor`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentExact.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentExact.lean#L384). The attribute's comment: “abelian_exact”.
+**`CategoryTheory.SimplicialSiteSituation.componentLowerShriek_exactFunctor`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentExact.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentExact.lean#L384). The attribute's comment: “abelian\_exact”.
 
 > **Stacks 09WG (7)** for an arbitrary simplicial-site situation: lower shriek from a
 > simplicial component is exact on abelian sheaves.
@@ -284,7 +284,7 @@ lemma componentLowerShriek_exactFunctor (S : SimplicialSiteSituation.{u})
         (S.componentTopology n) S.totalTopology)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L176). The attribute's comment: “component_inclusion”.
+**`CategoryTheory.SimplicialSiteSituation.componentFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L176). The attribute's comment: “component\_inclusion”.
 
 > **Stacks 09WG.** The canonical inclusion of the category in simplicial degree `n` into the
 > total category.
@@ -294,7 +294,7 @@ def componentFunctor (S : SimplicialSiteSituation.{u}) (n : SimplexCategory) :
     S.component n ⥤ S.totalCategory
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentFunctor_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L184). The attribute's comment: “component_inclusion”.
+**`CategoryTheory.SimplicialSiteSituation.componentFunctor_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L184). The attribute's comment: “component\_inclusion”.
 
 > **Stacks 09WG.** The inclusion of a component in the total site is cocontinuous.
 
@@ -304,7 +304,7 @@ instance componentFunctor_isCocontinuous (S : SimplicialSiteSituation.{u})
     (componentFunctor S n).IsCocontinuous (S.componentTopology n) S.totalTopology
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentFunctor_pullbacksPreservedBy_inl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L252). The attribute's comment: “component_inclusion”.
+**`CategoryTheory.SimplicialSiteSituation.componentFunctor_pullbacksPreservedBy_inl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L252). The attribute's comment: “component\_inclusion”.
 
 > **Stacks 09WG**, case (A). The inclusion of a component into the total category preserves
 > the pullback of any two members of a covering family of that component.
@@ -324,7 +324,7 @@ theorem componentFunctor_pullbacksPreservedBy_inl (C : SimplicialSite.{u})
       (componentFunctor (⟨Sum.inl C⟩ : SimplicialSiteSituation.{u}) n)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentFunctor_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L260). The attribute's comment: “component_inclusion”. References: SGA 4 VI (7.4.4), “1)”.
+**`CategoryTheory.SimplicialSiteSituation.componentFunctor_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L260). The attribute's comment: “component\_inclusion”. References: SGA 4 VI (7.4.4), “1)”.
 
 > **Stacks 09WG.** The inclusion of a component in the total site is continuous.
 
@@ -334,7 +334,7 @@ instance componentFunctor_isContinuous (S : SimplicialSiteSituation.{u})
     (componentFunctor S n).IsContinuous (S.componentTopology n) S.totalTopology
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L383). The attribute's comment: “component_inclusion”.
+**`CategoryTheory.SimplicialSiteSituation.componentMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L383). The attribute's comment: “component\_inclusion”.
 
 > **Stacks 09WG.** The morphism `g_n : Sh(C_n) ⟶ Sh(C_total)` induced by the cocontinuous
 > component inclusion.
@@ -347,7 +347,7 @@ noncomputable def componentMorphism (S : SimplicialSiteSituation.{u}) (n : Simpl
       (Sheaf S.totalTopology (Type u))
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L400). The attribute's comment: “sheaf_left_adjoint”.
+**`CategoryTheory.SimplicialSiteSituation.componentLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L400). The attribute's comment: “sheaf\_left\_adjoint”.
 
 > The lower-shriek functor from sheaves on a simplicial component to sheaves on the total
 > site.
@@ -359,7 +359,7 @@ noncomputable def componentLowerShriek (S : SimplicialSiteSituation.{u}) (n : Si
     Sheaf (S.componentTopology n) (Type w) ⥤ Sheaf S.totalTopology (Type w)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentLowerShriek_adjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L420). The attribute's comment: “sheaf_left_adjoint”.
+**`CategoryTheory.SimplicialSiteSituation.componentLowerShriek_adjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L420). The attribute's comment: “sheaf\_left\_adjoint”.
 
 > The lower-shriek functor is left adjoint to inverse image along the morphism of topoi
 > associated to a simplicial component.
@@ -370,7 +370,7 @@ noncomputable def componentLowerShriek_adjunction (S : SimplicialSiteSituation.{
     componentLowerShriek.{u, u} S n ⊣ (componentMorphism S n).inverseImage
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentLowerShriek_restrictIsoCoproduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentSheafSumFormula.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentSheafSumFormula.lean#L241). The attribute's comment: “sheaf_coproduct_formula”.
+**`CategoryTheory.SimplicialSiteSituation.componentLowerShriek_restrictIsoCoproduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentSheafSumFormula.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentSheafSumFormula.lean#L241). The attribute's comment: “sheaf\_coproduct\_formula”.
 
 > **Stacks 09WG, the sheaf coproduct formula.** On a simplicial site, the degree-`m`
 > restriction of lower shriek from degree `n` of a sheaf of sets is the coproduct, over the
@@ -383,7 +383,7 @@ noncomputable def componentLowerShriek_restrictIsoCoproduct (n m : SimplexCatego
       ∐ fun φ : n ⟶ m => (S.transitionMorphism φ).inverseImage.obj G
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentLowerShriekRestrictionIsoCoproduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentSumFormula.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentSumFormula.lean#L189). The attribute's comment: “abelian_sum_formula”.
+**`CategoryTheory.SimplicialSiteSituation.componentLowerShriekRestrictionIsoCoproduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentSumFormula.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentSumFormula.lean#L189). The attribute's comment: “abelian\_sum\_formula”.
 
 > **Stacks 09WG, the abelian sum formula.** On a simplicial site, lower shriek on abelian
 > sheaves from simplicial degree `n`, restricted back to degree `m`, is naturally the direct sum
@@ -402,8 +402,8 @@ noncomputable def componentLowerShriekRestrictionIsoCoproduct
 Declarations registered for the tag:
 
 - [`CategoryTheory.Functor.sheafPullbackCocontinuousIsoSheafPushforwardContinuous`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L139), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L443) (StacksFrontier): “restriction”.
-- [`CategoryTheory.Functor.sheafPullbackConstruction.sheafPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullbackConstruction.sheafPullback#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L446) (StacksFrontier): “abelian_left_adjoint”.
-- [`CategoryTheory.Functor.sheafPullbackConstruction.sheafAdjunctionContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullbackConstruction.sheafAdjunctionContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L449) (StacksFrontier): “abelian_left_adjoint”. References: SGA 4 III (1.3), “more general”; SGA 4 III (2.6); SGA 4 IV (4.7), “partial”; SGA 4 IV (4.9.1), “partial”; SGA 4 VI (7.4.13.4).
+- [`CategoryTheory.Functor.sheafPullbackConstruction.sheafPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullbackConstruction.sheafPullback#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L446) (StacksFrontier): “abelian\_left\_adjoint”.
+- [`CategoryTheory.Functor.sheafPullbackConstruction.sheafAdjunctionContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullbackConstruction.sheafAdjunctionContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInclusion.lean#L449) (StacksFrontier): “abelian\_left\_adjoint”. References: SGA 4 III (1.3), “more general”; SGA 4 III (2.6); SGA 4 IV (4.7), “partial”; SGA 4 IV (4.9.1), “partial”; SGA 4 VI (7.4.13.4).
 - [`CategoryTheory.SimplicialSite.sigma_ι_comp_componentLowerShriekRestrictionIsoCoproduct_inv_eq_leg`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentSumFormulaLeg.lean#L200), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentSumFormulaLeg.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentSumFormulaLeg.lean#L264) (StacksFrontier): “summand inclusion is the canonical transition, case (A)”.
 - [`sigma_ι_comp_componentLowerShriekRestrictionIsoCoproduct_inv_eq_leg`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=sigma_ι_comp_componentLowerShriekRestrictionIsoCoproduct_inv_eq_leg#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentSumFormulaLegCocontinuous.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentSumFormulaLegCocontinuous.lean#L432) (StacksFrontier): “summand inclusion is the canonical transition, case (B)”.
 
@@ -411,7 +411,7 @@ Declarations registered for the tag:
 
 [Tag 09WH](https://stacks.math.columbia.edu/tag/09WH) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.injective_componentRestriction`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInjective.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInjective.lean#L69). The attribute's comment: “component_injective”.
+**`CategoryTheory.SimplicialSiteSituation.injective_componentRestriction`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInjective.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentInjective.lean#L69). The attribute's comment: “component\_injective”.
 
 > **Stacks 09WH**, first assertion: the restriction of an injective abelian sheaf on the total
 > site of a simplicial-site situation to a component is injective.
@@ -431,7 +431,7 @@ lemma injective_componentRestriction (S : SimplicialSiteSituation.{u}) (n : Simp
     Injective ((S.restrictAb n).obj Inj)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.isKInjective_componentRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentKInjective.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentKInjective.lean#L67). The attribute's comment: “component_k_injective”.
+**`CategoryTheory.SimplicialSiteSituation.isKInjective_componentRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentKInjective.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/ComponentKInjective.lean#L67). The attribute's comment: “component\_k\_injective”.
 
 > **Stacks 09WH**, second assertion: restriction of a K-injective complex of abelian sheaves
 > on the total site of a simplicial-site situation to a component is K-injective.

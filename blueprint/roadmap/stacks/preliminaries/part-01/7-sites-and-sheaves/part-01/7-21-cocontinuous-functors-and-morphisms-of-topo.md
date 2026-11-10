@@ -113,7 +113,7 @@ noncomputable def sheafPullbackCocontinuousIsoTopPullback :
       TopCat.Sheaf.pullback (Type u) f
 ```
 
-**`StacksOpenMapSite.sheafPushforwardCocontinuousIsoTopPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/OpenMapFunctor.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/OpenMapFunctor.lean#L80). References: SGA 4 III (2.7), “Φ_* ≅ (i^{-1})_s”.
+**`StacksOpenMapSite.sheafPushforwardCocontinuousIsoTopPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/OpenMapFunctor.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/OpenMapFunctor.lean#L80). References: SGA 4 III (2.7), “Φ\_* ≅ (i^\{-1})\_s”.
 
 > **Stacks 00XQ.** The pushforward `{}_sv` of the morphism of topoi attached to the cocontinuous
 > functor `v = IsOpenMap.functor` is the usual topological pushforward `f_*` on sheaves of sets.
@@ -178,7 +178,7 @@ instance preservesColimits_sheafPushforwardContinuous :
     PreservesColimits (u.sheafPushforwardContinuous A J K)
 ```
 
-**`CategoryTheory.Functor.sheafAdjunctionLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CoverLifting.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L186). The attribute's comment: “(2)”. References: SGA 4 III (1.3), “1)”; SGA 4 IV (4.9.1), “left adjoint f^s ⊣ f_s”; SGA 4 IV (4.7.4), “sufficiency: F_! exists”; SGA 4 IV (4.6.1), “left adjoint f_!”; SGA 4 IV (4.7), “f̃_! ⊣ f̃^*”; SGA 4 III (5.3), “more general”.
+**`CategoryTheory.Functor.sheafAdjunctionLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/CoverLifting.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L186). The attribute's comment: “(2)”. References: SGA 4 III (1.3), “1)”; SGA 4 IV (4.9.1), “left adjoint f^s ⊣ f\_s”; SGA 4 IV (4.7.4), “sufficiency: F\_! exists”; SGA 4 IV (4.6.1), “left adjoint f\_!”; SGA 4 IV (4.7), “f̃\_! ⊣ f̃^*”; SGA 4 III (5.3), “more general”.
 
 > **Stacks 00XR (2).** `g^{-1}` has a left adjoint `g_! = (u_p\ )^#`.
 >
@@ -201,7 +201,7 @@ instance preservesLimits_sheafPushforwardContinuous :
     PreservesLimits (u.sheafPushforwardContinuous A J K)
 ```
 
-**`CategoryTheory.Functor.preservesFiniteLimits_sheafPushforwardContinuous_of_essentiallySmall`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/CocontinuousSmallModel.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/CocontinuousSmallModel.lean#L104). The attribute's comment: “(3) at the universe of a small model”. References: SGA 4 III (1.8), “special case”; SGA 4½ Arcata (2.3.3), “left exactness of f_*”.
+**`CategoryTheory.Functor.preservesFiniteLimits_sheafPushforwardContinuous_of_essentiallySmall`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/CocontinuousSmallModel.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/CocontinuousSmallModel.lean#L104). The attribute's comment: “(3) at the universe of a small model”. References: SGA 4 III (1.8), “special case”; SGA 4½ Arcata (2.3.3), “left exactness of f\_*”.
 
 > **Stacks 00XR (3) at the universe of a small model.**  Restriction of sheaves of sets in
 > `Type u` along a continuous functor between sites essentially small at `u` is left exact: it is
@@ -238,7 +238,7 @@ public theorem preservesLimitsOfShape_sheafPullback
 
 [Tag 00XT](https://stacks.math.columbia.edu/tag/00XT) in the Stacks Project.
 
-**`CategoryTheory.Functor.isIso_sheafAdjunctionCocontinuous_counit`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Continuous.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Continuous.lean#L204). The attribute's comment: “If `u` is cocontinuous, continuous and fully faithful, the canonical map `g^{-1}g_*F → F` is an isomorphism for every sheaf `F` on `C`. Existence of `g_!` is not needed for this half.”. References: SGA 4 III (2.6), “u ff ⇒ u_* ff”; SGA 4 IV (4.10.5), “more general”.
+**`CategoryTheory.Functor.isIso_sheafAdjunctionCocontinuous_counit`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Continuous.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Continuous.lean#L204). The attribute's comment: “If `u` is cocontinuous, continuous and fully faithful, the canonical map `g^{-1}g_*F → F` is an isomorphism for every sheaf `F` on `C`. Existence of `g_!` is not needed for this half.”. References: SGA 4 III (2.6), “u ff ⇒ u\_* ff”; SGA 4 IV (4.10.5), “more general”.
 
 > If `u : C ⥤ D` is cocontinuous, continuous and fully faithful, the counit
 > `g^{-1}g_*F ⟶ F` of `g^{-1} ⊣ g_*` is an isomorphism; equivalently `g_*` is fully faithful.
@@ -253,7 +253,7 @@ public instance isIso_sheafAdjunctionCocontinuous_counit
     IsIso (u.sheafAdjunctionCocontinuous A J K).counit
 ```
 
-**`CategoryTheory.Functor.isIso_unit_of_sheafPushforwardContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Continuous.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Continuous.lean#L220). The attribute's comment: “If `u` is cocontinuous, continuous and fully faithful, the canonical map `F → g^{-1}g_!F` is an isomorphism, for every left adjoint `g_!` of `g^{-1}`.”. References: SGA 4 III (2.6), “u ff ⇒ u_! ff”; SGA 4 I (5.6), “i⇒iii”; SGA 4 IV (4.10.5), “more general”.
+**`CategoryTheory.Functor.isIso_unit_of_sheafPushforwardContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Continuous.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Continuous.lean#L220). The attribute's comment: “If `u` is cocontinuous, continuous and fully faithful, the canonical map `F → g^{-1}g_!F` is an isomorphism, for every left adjoint `g_!` of `g^{-1}`.”. References: SGA 4 III (2.6), “u ff ⇒ u\_! ff”; SGA 4 I (5.6), “i⇒iii”; SGA 4 IV (4.10.5), “more general”.
 
 > If `u : C ⥤ D` is cocontinuous, continuous and fully faithful, then for every left adjoint `L`
 > of `g^{-1} = u^s` the unit `F ⟶ g^{-1}LF` of `L ⊣ g^{-1}` is an isomorphism.
@@ -269,7 +269,7 @@ public theorem isIso_unit_of_sheafPushforwardContinuous
     IsIso adj.unit
 ```
 
-**`CategoryTheory.Functor.isIso_sheafAdjunctionContinuous_unit`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Continuous.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Continuous.lean#L238). The attribute's comment: “If `u` is cocontinuous, continuous and fully faithful, the canonical map `F → g^{-1}g_!F` is an isomorphism for every sheaf `F` on `C`.”. References: SGA 4 III (2.6), “u ff ⇒ u_! ff”; SGA 4 VII (4.1), “more general”.
+**`CategoryTheory.Functor.isIso_sheafAdjunctionContinuous_unit`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Continuous.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Continuous.lean#L238). The attribute's comment: “If `u` is cocontinuous, continuous and fully faithful, the canonical map `F → g^{-1}g_!F` is an isomorphism for every sheaf `F` on `C`.”. References: SGA 4 III (2.6), “u ff ⇒ u\_! ff”; SGA 4 VII (4.1), “more general”.
 
 > If `u : C ⥤ D` is cocontinuous, continuous and fully faithful and `g^{-1}` has a left adjoint
 > `g_!`, the unit `F ⟶ g^{-1}g_!F` of `g_! ⊣ g^{-1}` is an isomorphism; equivalently `g_!` is fully
@@ -290,7 +290,7 @@ public instance isIso_sheafAdjunctionContinuous_unit
 
 [Tag 00XU](https://stacks.math.columbia.edu/tag/00XU) in the Stacks Project.
 
-**`CategoryTheory.Functor.full_and_faithful_sheafPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/MorphismsOfTopoi.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/MorphismsOfTopoi.lean#L129). The attribute's comment: “The clause that `f^{-1} = g_!` is fully faithful, which needs only that `u` is cocontinuous, continuous and fully faithful. That `u` defines a morphism of sites `f : D → C` is `isMorphismOfSites_of_isTerminal`, and that `f ∘ g` is isomorphic to the identity morphism of `Sh(C)` is `isIso_sheafAdjunctionCocontinuous_counit`.”. References: SGA 4 III (2.6), “u ff ⇒ u_! ff”; SGA 4 I (5.14), “special case”.
+**`CategoryTheory.Functor.full_and_faithful_sheafPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/MorphismsOfTopoi.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/MorphismsOfTopoi.lean#L129). The attribute's comment: “The clause that `f^{-1} = g_!` is fully faithful, which needs only that `u` is cocontinuous, continuous and fully faithful. That `u` defines a morphism of sites `f : D → C` is `isMorphismOfSites_of_isTerminal`, and that `f ∘ g` is isomorphic to the identity morphism of `Sh(C)` is `isIso_sheafAdjunctionCocontinuous_counit`.”. References: SGA 4 III (2.6), “u ff ⇒ u\_! ff”; SGA 4 I (5.14), “special case”.
 
 > **Stacks 00XU**, the clause that `f^{-1}` is fully faithful. Let `(C, J)` and `(D, K)` be sites
 > and let `u : C ⥤ D` be cocontinuous, continuous and fully faithful, and suppose that the inverse

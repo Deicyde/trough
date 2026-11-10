@@ -265,7 +265,7 @@ noncomputable def spacesEtaleRelocalizedTwoIso :
 
 [Tag 04M5](https://stacks.math.columbia.edu/tag/04M5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.chartRelocalizedTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartRelocalization.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartRelocalization.lean#L294). The attribute's comment: “via the identifications of 04M1 at U and V, the morphism (g_small, g^sharp) is 2-isomorphic to the morphism (f_{small,s}, f_s^sharp) of 04J8 for the map s : h_U -> f^{-1}h_V corresponding to g”.
+**`AlgebraicGeometry.Space.chartRelocalizedTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartRelocalization.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartRelocalization.lean#L294). The attribute's comment: “via the identifications of 04M1 at U and V, the morphism (g\_small, g^sharp) is 2-isomorphic to the morphism (f\_\{small,s}, f\_s^sharp) of 04J8 for the map s : h\_U -> f^\{-1}h\_V corresponding to g”.
 
 > **Stacks 04M5.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S`, let `U ⟶ X` and
 > `V ⟶ Y` be étale morphisms from schemes (objects of the small étale sites of `X` and `Y`) and let

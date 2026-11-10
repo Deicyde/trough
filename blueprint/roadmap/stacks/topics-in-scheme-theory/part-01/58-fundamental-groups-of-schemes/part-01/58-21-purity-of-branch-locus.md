@@ -234,7 +234,7 @@ theorem etaleAt_of_quasiFiniteAt_of_unramifiedAt_codimensionOne_of_dim_eq_one
 
 [Tag 0EY6](https://stacks.math.columbia.edu/tag/0EY6) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.flatBaseChange_algebraPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/AlgebraComparisonEpi.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/AlgebraComparisonEpi.lean#L395). The attribute's comment: “flat_base_change”.
+**`Stacks.FundamentalGroup.flatBaseChange_algebraPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/AlgebraComparisonEpi.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/AlgebraComparisonEpi.lean#L395). The attribute's comment: “flat\_base\_change”.
 
 > **The base-change clause of [Stacks, Tag 0EY6].**  For a quasi-compact quasi-separated
 > morphism `f : V ⟶ Y` and a flat morphism `q : Y' ⟶ Y`, the pushed-forward structure sheaf of the
@@ -250,7 +250,7 @@ public theorem flatBaseChange_algebraPullback {V Y Y' : Scheme.{u}} (f : V ⟶ Y
       (pushforwardAlgebra ((Over.pullback q).obj (Over.mk f)).hom).hom
 ```
 
-**`Stacks.FundamentalGroup.exists_extendedEtaleAlgebraComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/ExtensionAlgebra.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/ExtensionAlgebra.lean#L266). The attribute's comment: “flat_base_change”.
+**`Stacks.FundamentalGroup.exists_extendedEtaleAlgebraComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/ExtensionAlgebra.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/ExtensionAlgebra.lean#L266). The attribute's comment: “flat\_base\_change”.
 
 > **[Stacks, Tag 0EY6], flat base change of the extension algebra.**  Let `X` be locally
 > Noetherian, `j : U ⟶ X` an open immersion whose complement carries depth at least two and
@@ -290,7 +290,7 @@ public theorem exists_extendedEtaleAlgebraComparison {U X V U' X' V' : Scheme.{u
           (pushforwardAlgebraMap e.hom).right
 ```
 
-**`Stacks.FundamentalGroup.extendedEtaleAlgebraComparison_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean#L125). The attribute's comment: “flat_base_change”.
+**`Stacks.FundamentalGroup.extendedEtaleAlgebraComparison_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean#L125). The attribute's comment: “flat\_base\_change”.
 
 > **The comparison carries the canonical map of the extension of scalars to the base-change
 > morphism**, transported along the Cartesian comparison of covers.  This is the property that
@@ -319,7 +319,7 @@ public theorem extendedEtaleAlgebraComparison_map {U X V U' X' V' : Scheme.{u}}
             Over.mk (π' ≫ j') ≅ (Over.pullback g).obj (Over.mk (π ≫ j))).hom).right
 ```
 
-**`Stacks.FundamentalGroup.extendedEtaleSpectrumComparison_universalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean#L187). The attribute's comment: “flat_base_change”.
+**`Stacks.FundamentalGroup.extendedEtaleSpectrumComparison_universalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean#L187). The attribute's comment: “flat\_base\_change”.
 
 > **[Stacks, Tag 0EY6], the universal-map equation for the spectrum comparison.**  Under the
 > representing bijection of [Stacks, Tag 01LV] the comparison is the structure morphism of the
@@ -353,7 +353,7 @@ public theorem extendedEtaleSpectrumComparison_universalMap {U X V U' X' V' : Sc
           universalAlgebraMap e⟩
 ```
 
-**`Stacks.FundamentalGroup.isIso_extendedEtaleSpectrumComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean#L216). The attribute's comment: “flat_base_change”.
+**`Stacks.FundamentalGroup.isIso_extendedEtaleSpectrumComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleAlgebra/FlatBaseChange/SpectrumComparison.lean#L216). The attribute's comment: “flat\_base\_change”.
 
 > **[Stacks, Tag 0EY6], the spectrum comparison is an isomorphism.**  The two relative spectra
 > represent functors identified by
@@ -426,7 +426,7 @@ public def extendedEtaleSituation {U X V : Scheme.{u}} [IsLocallyNoetherian X] (
     Stacks.RelativeSpec.RelativeSpecSituation.{u}
 ```
 
-**`Stacks.FundamentalGroup.extendedEtaleSpectrum_flatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/FlatBaseChangeSquare.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/FlatBaseChangeSquare.lean#L122). The attribute's comment: “flat_base_change”.
+**`Stacks.FundamentalGroup.extendedEtaleSpectrum_flatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/FlatBaseChangeSquare.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/FlatBaseChangeSquare.lean#L122). The attribute's comment: “flat\_base\_change”.
 
 > **The `flat_base_change` clause of [Stacks, Tag 0EY6], the Cartesian square of relative
 > spectra.** Let `X` be locally Noetherian, `j : U ⟶ X` an open immersion whose complement
@@ -466,7 +466,7 @@ public theorem extendedEtaleSpectrum_flatBaseChange {U X V U' X' V' : Scheme.{u}
       g (gluedSpectrum (ExtendedEtaleFold.extendedEtaleSituation j π hdepth)).toBase
 ```
 
-**`Stacks.FundamentalGroup.ExtendedEtaleFold.existsUnique_restrictionIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/LargerOpenIso.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/LargerOpenIso.lean#L68). The attribute's comment: “larger_open”.
+**`Stacks.FundamentalGroup.ExtendedEtaleFold.existsUnique_restrictionIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/LargerOpenIso.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/LargerOpenIso.lean#L68). The attribute's comment: “larger\_open”.
 
 > **The `larger_open` clause of [Stacks, Tag 0EY6].** Let `i : U ⟶ U'` and `k : U' ⟶ X` be
 > open immersions into a locally Noetherian scheme with `X ∖ (i ≫ k)(U)` of depth at least two,
@@ -497,7 +497,7 @@ public theorem existsUnique_restrictionIso {U U' X V V' : Scheme.{u}} [IsLocally
           (Over.pullback i).map e.hom ≫ eV.hom = eY.hom
 ```
 
-**`Stacks.FundamentalGroup.ExtendedEtaleFold.etaleAt_iff_isFlatAt_extendedEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Purity.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Purity.lean#L148). The attribute's comment: “etale_iff_flat”.
+**`Stacks.FundamentalGroup.ExtendedEtaleFold.etaleAt_iff_isFlatAt_extendedEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Purity.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Purity.lean#L148). The attribute's comment: “etale\_iff\_flat”.
 
 > **The `etale_iff_flat` clause of [Stacks, Tag 0EY6].** Let `j : U ⟶ X` be an open immersion
 > into a locally Noetherian scheme whose complement carries depth at least two and let
@@ -526,7 +526,7 @@ public theorem etaleAt_iff_isFlatAt_extendedEtale {U X V : Scheme.{u}}
       EtaleAt Y.toBase y ↔ IsFlatAt Y.toBase.toLRSHom.toShHom y
 ```
 
-**`Stacks.FundamentalGroup.ExtendedEtaleFold.etale_iff_isFiniteLocallyFree_extendedEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Purity.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Purity.lean#L238). The attribute's comment: “etale_iff_free”.
+**`Stacks.FundamentalGroup.ExtendedEtaleFold.etale_iff_isFiniteLocallyFree_extendedEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Purity.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/Purity.lean#L238). The attribute's comment: “etale\_iff\_free”.
 
 > **The `etale_iff_free` clause of [Stacks, Tag 0EY6].** The structure morphism of the
 > canonical extension `Y = Spec_X(𝓑)` is étale if and only if `𝓑 = (π ≫ j)_* 𝒪_V` is finite
@@ -554,7 +554,7 @@ public theorem etale_iff_isFiniteLocallyFree_extendedEtale {U X V : Scheme.{u}}
         (AlgebraSheaf.underlyingModule (pushforwardAlgebra (π ≫ j)))
 ```
 
-**`Stacks.FundamentalGroup.ExtendedEtaleFold.isFinite_extendedEtaleToBase`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtension.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtension.lean#L70). The attribute's comment: “unique_extension”.
+**`Stacks.FundamentalGroup.ExtendedEtaleFold.isFinite_extendedEtaleToBase`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtension.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtension.lean#L70). The attribute's comment: “unique\_extension”.
 
 > The extension of a finite étale cover across a depth-two complement is finite over the base:
 > the structure morphism of `Spec_X(𝓑)`, for `𝓑 = (π ≫ j)_* 𝒪_V`, is a finite morphism.
@@ -563,7 +563,7 @@ public theorem etale_iff_isFiniteLocallyFree_extendedEtale {U X V : Scheme.{u}}
 public instance isFinite_extendedEtaleToBase : IsFinite (extendedEtaleToBase j π hdepth)
 ```
 
-**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtaleCoverMap_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionCover.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionCover.lean#L134). The attribute's comment: “unique_extension”.
+**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtaleCoverMap_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionCover.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionCover.lean#L134). The attribute's comment: “unique\_extension”.
 
 > **The comparison morphism identifies the cover with the restriction of the extension to the
 > open subscheme.** This is the pullback clause of [Stacks, Tag 0EY6]: the square formed by the
@@ -576,7 +576,7 @@ public theorem extendedEtaleCoverMap_isPullback :
       (gluedSpectrum (extendedEtaleSituation j π hdepth)).toBase
 ```
 
-**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtale_depth_ge_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionDepth.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionDepth.lean#L284). The attribute's comment: “unique_extension”.
+**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtale_depth_ge_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionDepth.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionDepth.lean#L284). The attribute's comment: “unique\_extension”.
 
 > **The depth clause of [Stacks, Tag 0EY6].** The local rings of the extension
 > `Spec_X(𝓑)` of a finite étale cover across a depth-two complement have depth at least two above
@@ -599,7 +599,7 @@ public theorem extendedEtale_depth_ge_two :
         (Y.presheaf.stalk y)
 ```
 
-**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtale_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionUniqueness.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionUniqueness.lean#L245). The attribute's comment: “unique_extension”.
+**`Stacks.FundamentalGroup.ExtendedEtaleFold.extendedEtale_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionUniqueness.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtale/UniqueExtensionUniqueness.lean#L245). The attribute's comment: “unique\_extension”.
 
 > **The extension of a finite étale cover is the unique finite extension with the same
 > restriction over the open subscheme and the same depth condition off it.** This is the
@@ -627,7 +627,7 @@ public theorem extendedEtale_unique {U X V Y' : Scheme.{u}}
       (g' ≫ e.hom = extendedEtaleCoverMap j π hdepth)
 ```
 
-**`Stacks.FundamentalGroup.extendedEtaleDepth_flatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtaleBaseChange.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtaleBaseChange.lean#L92). The attribute's comment: “flat_base_change”.
+**`Stacks.FundamentalGroup.extendedEtaleDepth_flatBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtaleBaseChange.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ExtendedEtaleBaseChange.lean#L92). The attribute's comment: “flat\_base\_change”.
 
 > **Stacks 0EY6, flat base change: the depth condition.** Depth at least two outside the open
 > subscheme persists after flat base change: if the local rings of `X` at the points outside the

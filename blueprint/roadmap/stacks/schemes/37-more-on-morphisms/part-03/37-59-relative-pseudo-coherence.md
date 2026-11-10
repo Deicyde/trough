@@ -262,7 +262,7 @@ public theorem derivedSectionsPseudoCoherentComparison' (f : X ⟶ S) [LocallyOf
 
 [Tag 09VG](https://stacks.math.columbia.edu/tag/09VG) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.isPseudoCoherentFrom_iff_derivedPushforward_of_reductionImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/ReductionClosedPushforward.lean, line 953](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/ReductionClosedPushforward.lean#L953). The attribute's comment: “corrected statement — Stacks erratum. The source's topological hypothesis, that i induce a homeomorphism of X with a closed subset of Y, makes the lemma false (AlgebraicGeometry.Scheme.Hom.not_forall_isPseudoCoherentFrom_iff_derivedPushforward, over the nodal curve A = {h ∈ k[s] | h(0) = h(1)} with B = k[s, 1/s]); it is replaced here by the hypothesis the source's proof actually uses, that i be a closed immersion on reductions, i.e. that A/rad(A) → B/rad(B) be surjective. Both directions, E and m arbitrary”.
+**`AlgebraicGeometry.Scheme.Hom.isPseudoCoherentFrom_iff_derivedPushforward_of_reductionImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/ReductionClosedPushforward.lean, line 953](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/ReductionClosedPushforward.lean#L953). The attribute's comment: “corrected statement — Stacks erratum. The source's topological hypothesis, that i induce a homeomorphism of X with a closed subset of Y, makes the lemma false (AlgebraicGeometry.Scheme.Hom.not\_forall\_isPseudoCoherentFrom\_iff\_derivedPushforward, over the nodal curve A = \{h ∈ k[s] | h(0) = h(1)} with B = k[s, 1/s]); it is replaced here by the hypothesis the source's proof actually uses, that i be a closed immersion on reductions, i.e. that A/rad(A) → B/rad(B) be surjective. Both directions, E and m arbitrary”.
 
 > Let `f : X ⟶ S` and `g : Y ⟶ S` be morphisms of schemes locally of finite type and let
 > `i : X ⟶ Y` be a morphism over `S` which induces a closed immersion on reductions: there is a
@@ -406,7 +406,7 @@ public theorem isPseudoCoherent_obj₁_of_distinguished [LocallyOfFiniteType f]
 
 [Tag 09UM](https://stacks.math.columbia.edu/tag/09UM) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.isModulePseudoCoherentFrom_neg_one_iff_isFinitelyPresentedRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/RelativeFinitePresentationDegree.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/RelativeFinitePresentationDegree.lean#L153). The attribute's comment: “degree_minus_one”. References: SGA 6 III (1.2.1).
+**`AlgebraicGeometry.Scheme.Hom.isModulePseudoCoherentFrom_neg_one_iff_isFinitelyPresentedRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/RelativeFinitePresentationDegree.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/RelativeFinitePresentationDegree.lean#L153). The attribute's comment: “degree\_minus\_one”. References: SGA 6 III (1.2.1).
 
 > **Stacks 09UM, the degree-minus-one clause.** For a morphism of schemes locally of finite
 > type, a sheaf of `𝒪_X`-modules is `(-1)`-pseudo-coherent relative to the base if and only if it
@@ -428,7 +428,7 @@ public theorem isModulePseudoCoherentFrom_neg_one_iff_isFinitelyPresentedRelativ
       (F.IsQuasicoherent ∧ IsFinitelyPresentedRelative f F)
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.isModulePseudoCoherentFrom_zero_iff_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/RelativeModuleDegrees.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/RelativeModuleDegrees.lean#L65). The attribute's comment: “degree_zero”.
+**`AlgebraicGeometry.Scheme.Hom.isModulePseudoCoherentFrom_zero_iff_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/RelativeModuleDegrees.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/RelativeModuleDegrees.lean#L65). The attribute's comment: “degree\_zero”.
 
 > **Stacks 09UM, the degree-zero clause.** For a morphism of schemes locally of finite type, a
 > sheaf of `𝒪_X`-modules is `0`-pseudo-coherent relative to the base if and only if it is of finite
@@ -445,7 +445,7 @@ public theorem isModulePseudoCoherentFrom_zero_iff_isFiniteType {X S : Scheme.{u
     IsModulePseudoCoherentFrom f F 0 ↔ F.IsFiniteType
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.isModulePseudoCoherentFrom_of_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/TrivialRange.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/TrivialRange.lean#L168). The attribute's comment: “positive_degrees”.
+**`AlgebraicGeometry.Scheme.Hom.isModulePseudoCoherentFrom_of_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/TrivialRange.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/TrivialRange.lean#L168). The attribute's comment: “positive\_degrees”.
 
 > **Stacks 09UM, the positive degrees.** For a morphism of schemes locally of finite type,
 > every sheaf of `𝒪_X`-modules is relatively `m`-pseudo-coherent whenever `0 < m`.

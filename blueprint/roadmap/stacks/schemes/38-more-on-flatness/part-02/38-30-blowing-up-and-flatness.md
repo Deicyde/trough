@@ -22,7 +22,7 @@ Section 38.30 of the Stacks Project, [Tag 080X](https://stacks.math.columbia.edu
 > `c j : V j ⟶ W j`. There is one `U`-admissible blowup `p : S' ⟶ S` whose restriction to each
 > `W j` factors through `c j`.
 >
-> Each `c j` extends to a `U`-admissible blowup `q j : T j ⟶ S` with `IsPullback (c j) _ (W j).ι
+> Each `c j` extends to a `U`-admissible blowup `q j : T j ⟶ S` with `IsPullback (c j) \_ (W j).ι
 > (q j)` by [Stacks, Tag 080M], and [Stacks, Tag 080N] produces a `U`-admissible `p : S' ⟶ S`
 > factoring through every `q j` by a `q j ⁻¹ᵁ U`-admissible blowup `k j`. The restriction
 > `p ∣_ W j` and the composite `(p ⁻¹ᵁ W j).ι ≫ k j` agree over `S`, so the cartesian square of
@@ -119,7 +119,7 @@ public theorem isSolvable_of_local (D : StrictTransformProblem.{u})
     D.IsSolvable
 ```
 
-**`AlgebraicGeometry.StrictTransformProblem.isSolvable_of_isSolvableIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformProblem/Successive.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformProblem/Successive.lean#L135). The attribute's comment: “the successive reduction, the paragraph beginning `The general strategy will be to use that a composition of U-admissible blowups is a U-admissible blowup': it suffices to find a sequence of U-admissible blowups S = S_0 <- S_1 <- ... <- S_n such that, setting F_0 = F and X_0 = X and F_i/X_i the strict transform of F_{i-1}/X_{i-1}, the triple F_n/X_n/S_n has P. The sequence is IsSolvableIn n and the single blowup it is replaced by is IsSolvable”.
+**`AlgebraicGeometry.StrictTransformProblem.isSolvable_of_isSolvableIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformProblem/Successive.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformProblem/Successive.lean#L135). The attribute's comment: “the successive reduction, the paragraph beginning `The general strategy will be to use that a composition of U-admissible blowups is a U-admissible blowup': it suffices to find a sequence of U-admissible blowups S = S\_0 <- S\_1 <- ... <- S\_n such that, setting F\_0 = F and X\_0 = X and F\_i/X\_i the strict transform of F\_\{i-1}/X\_\{i-1}, the triple F\_n/X\_n/S\_n has P. The sequence is IsSolvableIn n and the single blowup it is replaced by is IsSolvable”.
 
 > **[Stacks, Tag 080Y], the successive reduction.** To solve the strict-transform problem it
 > suffices to find a *sequence* of `U`-admissible blowups `S = S₀ ← S₁ ← … ← Sₙ` whose iterated

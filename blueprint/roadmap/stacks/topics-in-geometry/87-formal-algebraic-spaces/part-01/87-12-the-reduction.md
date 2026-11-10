@@ -81,7 +81,7 @@ Declarations registered for the tag:
 
 [Tag 0GB7](https://stacks.math.columbia.edu/tag/0GB7) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isReduction_pullback_reduction_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ReductionSmoothBaseChange.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ReductionSmoothBaseChange.lean#L212). The attribute's comment: “the fibre product X ×_Y Y_red is a reduction of X; read against given reductions and a given fibre product rather than chosen ones, exactly as for Stacks 0GB8. Stacks 0AIN supplies the reductions”.
+**`AlgebraicGeometry.FormalSpace.isReduction_pullback_reduction_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ReductionSmoothBaseChange.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ReductionSmoothBaseChange.lean#L212). The attribute's comment: “the fibre product X ×\_Y Y\_red is a reduction of X; read against given reductions and a given fibre product rather than chosen ones, exactly as for Stacks 0GB8. Stacks 0AIN supplies the reductions”.
 
 > **Stacks 0GB7.** Let `f : X ⟶ Y` be a morphism of formal algebraic spaces over `S` which is
 > representable by algebraic spaces and smooth, let `iY : Yred ⟶ Y` be a reduction of `Y` and let
@@ -105,7 +105,7 @@ theorem isReduction_pullback_reduction_of_smooth {X Y Yred P : FppfSheaf B S hS}
     IsReduction B S hS X P fst
 ```
 
-**`AlgebraicGeometry.FormalSpace.isIso_of_isReduction_of_isPullback_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ReductionSmoothBaseChange.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ReductionSmoothBaseChange.lean#L258). The attribute's comment: “the comparison morphism X_red ⟶ X ×_Y Y_red over X is an isomorphism; read against given reductions and a given fibre product rather than chosen ones, exactly as for Stacks 0GB8. Stacks 0AIN supplies the reductions”.
+**`AlgebraicGeometry.FormalSpace.isIso_of_isReduction_of_isPullback_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ReductionSmoothBaseChange.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ReductionSmoothBaseChange.lean#L258). The attribute's comment: “the comparison morphism X\_red ⟶ X ×\_Y Y\_red over X is an isomorphism; read against given reductions and a given fibre product rather than chosen ones, exactly as for Stacks 0GB8. Stacks 0AIN supplies the reductions”.
 
 > **Stacks 0GB7.** Let `f : X ⟶ Y` be a morphism of formal algebraic spaces over `S` which is
 > representable by algebraic spaces and smooth, let `iX : Xred ⟶ X` and `iY : Yred ⟶ Y` be

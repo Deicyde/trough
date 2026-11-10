@@ -84,7 +84,7 @@ public instance instHasColimits : HasColimits (DividedPowerRing.{u})
 
 [Tag 0H86](https://stacks.math.columbia.edu/tag/0H86) in the Stacks Project.
 
-**`DividedPowerRing.tensorProductQuotientEquivPushoutQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Ring/PushoutQuotient.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Ring/PushoutQuotient.lean#L154). The attribute's comment: “quotient_of_pushout”.
+**`DividedPowerRing.tensorProductQuotientEquivPushoutQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Ring/PushoutQuotient.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Ring/PushoutQuotient.lean#L154). The attribute's comment: “quotient\_of\_pushout”.
 
 > For a pushout of divided power rings, the tensor product of the quotients of the two
 > factors over the quotient of the base is canonically isomorphic to the quotient of the
@@ -102,7 +102,7 @@ public noncomputable def tensorProductQuotientEquivPushoutQuotient
           Ideal.Quotient.mk B''.ideal (g b * g' b')}
 ```
 
-**`DividedPowerRing.tensorProductToPushout_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Ring/PushoutTensor.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Ring/PushoutTensor.lean#L436). The attribute's comment: “tensor_map_surjective”.
+**`DividedPowerRing.tensorProductToPushout_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Ring/PushoutTensor.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Ring/PushoutTensor.lean#L436). The attribute's comment: “tensor\_map\_surjective”.
 
 > In a pushout of divided power rings, the canonical map from the tensor product of the
 > underlying rings to the underlying ring of the pushout is surjective.
@@ -114,7 +114,7 @@ public theorem tensorProductToPushout_surjective
     Function.Surjective (tensorProductToPushout f f' g g' h.w)
 ```
 
-**`DividedPowerRing.dividedPowerIdeal_surjective_of_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Ring/PushoutTensor.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Ring/PushoutTensor.lean#L490). The attribute's comment: “ideal_map_surjective”.
+**`DividedPowerRing.dividedPowerIdeal_surjective_of_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Ring/PushoutTensor.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Ring/PushoutTensor.lean#L490). The attribute's comment: “ideal\_map\_surjective”.
 
 > In a pushout of divided power rings, the canonical map from the sum of the two extended
 > divided power ideals onto the distinguished ideal of the pushout is surjective.

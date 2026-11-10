@@ -14,7 +14,7 @@ Section 71.5 of the Stacks Project, [Tag 0CZ3](https://stacks.math.columbia.edu/
 
 [Tag 0CZ3](https://stacks.math.columbia.edu/tag/0CZ3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.fittingIdealInt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean#L275). The attribute's comment: “the chain Fit_k, k : ℤ”.
+**`AlgebraicGeometry.Space.fittingIdealInt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean#L275). The attribute's comment: “the chain Fit\_k, k : ℤ”.
 
 > **The `k`-th Fitting ideal sheaf of an `𝒪_F`-module, for `k : ℤ`**: the smallest sheaf of
 > ideals of `𝒪_F` whose sections over every affine étale chart contain the module-theoretic `k`-th
@@ -68,7 +68,7 @@ theorem fittingIdeal_obj_eq_fittingIdealOnChart (G : Modules.{u, m} B S hS F hF)
       @fittingIdealOnChart B S hS F hF G r U (hfin U hU)
 ```
 
-**`AlgebraicGeometry.Space.fittingIdealInt_eq_bot_of_lt_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean#L404). The attribute's comment: “Fit_{-1} = 0”.
+**`AlgebraicGeometry.Space.fittingIdealInt_eq_bot_of_lt_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingIdealChain.lean#L404). The attribute's comment: “Fit\_\{-1} = 0”.
 
 > **`Fit₋₁(G) = 0`, and more generally the Fitting ideal sheaves vanish in negative degree**: in
 > negative degree the chartwise Fitting ideal is zero, so every sheaf of ideals belongs to the
@@ -381,7 +381,7 @@ theorem exists_fittingClosedSubspaces_spec (hGqc : G.IsQuasicoherentOnSite)
 
 [Tag 0CZA](https://stacks.math.columbia.edu/tag/0CZA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyClosedSubspace_and_disjoint_fittingRankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean#L338). The attribute's comment: “the strata X_r = Z_{r-1} \ Z_r are disjoint locally closed subspaces”.
+**`AlgebraicGeometry.Space.isLocallyClosedSubspace_and_disjoint_fittingRankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean#L338). The attribute's comment: “the strata X\_r = Z\_\{r-1} \ Z\_r are disjoint locally closed subspaces”.
 
 > **Stacks 0CZA, the Fitting rank strata.**  Let `G` be an `𝒪_X`-module and let
 > `X ⊇ Z_0 ⊇ Z_1 ⊇ …` be closed subspaces of `X` whose defining ideal sheaves are the Fitting
@@ -398,7 +398,7 @@ theorem isLocallyClosedSubspace_and_disjoint_fittingRankStratum
           (⊥ : Subfunctor X.1).sheafify (BigFppfOver.topology B S hS)
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_fittingRankStratum_index`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean#L358). The attribute's comment: “every point of X lies in exactly one stratum X_r = Z_{r-1} \ Z_r”.
+**`AlgebraicGeometry.Space.existsUnique_fittingRankStratum_index`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean#L358). The attribute's comment: “every point of X lies in exactly one stratum X\_r = Z\_\{r-1} \ Z\_r”.
 
 > **Stacks 0CZA, the Fitting rank strata cover `X`.**  Every point of `X` lies in exactly one
 > Fitting rank stratum `X_r = Z_{r-1} \ Z_r`: there is a unique `r` with the point outside `Z_r`
@@ -421,7 +421,7 @@ theorem existsUnique_fittingRankStratum_index (G : Modules.{u, u} B S hS X.1 X.2
       ∀ k < r, x ∈ Set.range (pointsMap B S hS (Z k).1.toFunctor (Z k).1.ι)
 ```
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_fittingRankStratification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean#L399). The attribute's comment: “X' = ∐_{r ≥ 0} X_r is an algebraic space, with its morphism to X”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_fittingRankStratification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FittingRankStrata.lean#L399). The attribute's comment: “X' = ∐\_\{r ≥ 0} X\_r is an algebraic space, with its morphism to X”.
 
 > **Stacks 0CZA, the disjoint union of the Fitting rank strata.**  The disjoint union
 > `X' = ∐_{r ≥ 0} X_r` of the strata `X_r = Z_{r-1} \ Z_r` of a chain `X ⊇ Z_0 ⊇ Z_1 ⊇ …` of closed

@@ -149,7 +149,7 @@ theorem eq_of_twoIso_smallEtaleRingedToposHom
 
 [Tag 04I6](https://stacks.math.columbia.edu/tag/04I6) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_schemeHom_twoIso_of_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/AffineExistence.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/AffineExistence.lean#L212). The attribute's comment: “the existence clause: 2-isomorphic to some (f_small, f_small^sharp)”.
+**`AlgebraicGeometry.exists_schemeHom_twoIso_of_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/AffineExistence.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/AffineExistence.lean#L212). The attribute's comment: “the existence clause: 2-isomorphic to some (f\_small, f\_small^sharp)”.
 
 > **The existence half of [Stacks Project, Tag 04I6].**  Let `X` and `Y` be schemes of a big
 > étale site with `Y` affine, and let

@@ -45,7 +45,7 @@ theorem exists_affineOpen_effectiveCartierDivisor_of_isRegular_fiber (f : X ⟶ 
 
 [Tag 06LI](https://stacks.math.columbia.edu/tag/06LI) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.exists_affineOpen_regularImmersion_flat_of_isRegular_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/RegularSliceThroughPoint.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/RegularSliceThroughPoint.lean#L74). References: EGA IV (11.3.8), “c) ⇒ b') for F = O_X”.
+**`Stacks.AlgebraicGeometry.exists_affineOpen_regularImmersion_flat_of_isRegular_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/RegularSliceThroughPoint.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/RegularSliceThroughPoint.lean#L74). References: EGA IV (11.3.8), “c) ⇒ b') for F = O\_X”.
 
 > **Stacks Project, Lemma 37.24.1 (Tag 06LI).**  Let `f : X ⟶ S` be locally of finite
 > presentation and flat at `x : X`, and let `h : Fin r → 𝒪_{X, x}` be a family whose image in the
@@ -82,7 +82,7 @@ theorem exists_affineOpen_regularImmersion_flat_of_isRegular_fiber
 
 [Tag 056Z](https://stacks.math.columbia.edu/tag/056Z) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.exists_affineOpen_effectiveCartierDivisor_of_one_le_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/EffectiveCartierSlice.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/EffectiveCartierSlice.lean#L367). References: EGA IV (19.9.6), “n = 1, F = O_X”.
+**`Stacks.AlgebraicGeometry.exists_affineOpen_effectiveCartierDivisor_of_one_le_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/EffectiveCartierSlice.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/EffectiveCartierSlice.lean#L367). References: EGA IV (19.9.6), “n = 1, F = O\_X”.
 
 > Let `f : X ⟶ S` be locally of finite presentation and flat at `x : X`, and assume the local
 > ring of the fibre `X_{f x}` at `x` has depth at least one.  Then some affine open neighbourhood

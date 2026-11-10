@@ -14,7 +14,7 @@ Section 33.21 of the Stacks Project, [Tag 0C51](https://stacks.math.columbia.edu
 
 [Tag 0C52](https://stacks.math.columbia.edu/tag/0C52) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_no_quotient_mvPowerSeries_algEquiv_completedLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/CompleteLocal/NoBasePresentation.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/CompleteLocal/NoBasePresentation.lean#L487). The attribute's comment: “presentation_not_always_over_base_field”. References: EGA IV (18.11.6), “counterexample”; EGA 0 (19.6.5.2), “not k-iso to K[[T]]”.
+**`AlgebraicGeometry.exists_no_quotient_mvPowerSeries_algEquiv_completedLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/CompleteLocal/NoBasePresentation.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/CompleteLocal/NoBasePresentation.lean#L487). The attribute's comment: “presentation\_not\_always\_over\_base\_field”. References: EGA IV (18.11.6), “counterexample”; EGA 0 (19.6.5.2), “not k-iso to K[[T]]”.
 
 > A completed local ring can admit no presentation over its residue field compatible with
 > the ground field, even when the scheme is locally Noetherian.
@@ -32,7 +32,7 @@ public theorem exists_no_quotient_mvPowerSeries_algEquiv_completedLocalRing :
             Scheme.completedLocalRing X x)
 ```
 
-**`AlgebraicGeometry.exists_quotient_mvPowerSeries_algEquiv_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/CompleteLocal/SeparablePresentation.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/CompleteLocal/SeparablePresentation.lean#L56). The attribute's comment: “separable_completed_local_ring_presentation”. References: EGA 0 (19.6.3), “(a) ⇒ (c), special case”; EGA 0 (19.8.8), “(i), special case”.
+**`AlgebraicGeometry.exists_quotient_mvPowerSeries_algEquiv_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/CompleteLocal/SeparablePresentation.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/CompleteLocal/SeparablePresentation.lean#L56). The attribute's comment: “separable\_completed\_local\_ring\_presentation”. References: EGA 0 (19.6.3), “(a) ⇒ (c), special case”; EGA 0 (19.8.8), “(i), special case”.
 
 > If the residue field at a point of a locally Noetherian scheme over `k` is separable over
 > `k`, then the completed local ring is a quotient of a formal power series ring over the residue
@@ -62,7 +62,7 @@ public theorem exists_quotient_mvPowerSeries_algEquiv_adicCompletion
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.exists_powerSeries_quotient_ringEquiv_adicCompletion`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/CompleteLocal/PowerSeriesPresentation.lean#L147), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/CompleteLocal/PowerSeriesPresentation.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/CompleteLocal/PowerSeriesPresentation.lean#L273) (StacksFrontier): “completed_local_ring_presentation”.
+- [`AlgebraicGeometry.exists_powerSeries_quotient_ringEquiv_adicCompletion`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/CompleteLocal/PowerSeriesPresentation.lean#L147), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/CompleteLocal/PowerSeriesPresentation.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/CompleteLocal/PowerSeriesPresentation.lean#L273) (StacksFrontier): “completed\_local\_ring\_presentation”.
 
 ## Tag 0C53, an equation
 

@@ -92,7 +92,7 @@ theorem exists_obstructionTheory [IsNoetherianRing Λ]
 
 [Tag 07YI](https://stacks.math.columbia.edu/tag/07YI) in the Stacks Project.
 
-**`Deformation.Artin.KeyExample.objEquivTuple`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L197). The attribute's comment: “x corresponds to a tuple (a_1, …, a_n) killing J”.
+**`Deformation.Artin.KeyExample.objEquivTuple`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L197). The attribute's comment: “x corresponds to a tuple (a\_1, …, a\_n) killing J”.
 
 > An object `x` of `𝒳 = (Sch/Spec R)_{fppf}` over `Spec A`, that is a
 > `Λ`-algebra map `R → A` with `R = Λ[x_1, …, x_n]/J`, is the same datum as a tuple
@@ -104,7 +104,7 @@ noncomputable def objEquivTuple :
       {a : Fin n → A // ∀ f ∈ J, MvPolynomial.aeval a f = 0}
 ```
 
-**`Deformation.Artin.KeyExample.exists_isHomotopyEquiv_nl_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L228). The attribute's comment: “NL_{R/Λ} is canonically homotopy equivalent to J/J² → ⊕ R dx_i”. References: SGA 6 0 (4.3), “partial”; SGA 6 0 (4.4), “special case”.
+**`Deformation.Artin.KeyExample.exists_isHomotopyEquiv_nl_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L228). The attribute's comment: “NL\_\{R/Λ} is canonically homotopy equivalent to J/J² → ⊕ R dx\_i”. References: SGA 6 0 (4.3), “partial”; SGA 6 0 (4.4), “special case”.
 
 > The naive cotangent complex `NL_{R/Λ}` is canonically homotopy equivalent to the two-term
 > complex `J/J² → ⊕_{i = 1, …, n} R dx_i` attached to the presentation `Λ[x_1, …, x_n] → R`:
@@ -119,7 +119,7 @@ theorem exists_isHomotopyEquiv_nl_canonical :
         (NaiveCotangent.nlMap P (NaiveCotangent.canonicalGenerators Λ R) φ)
 ```
 
-**`Deformation.Artin.KeyExample.exists_basis_nl_cotangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L241). The attribute's comment: “the degree-0 term is the free module ⊕_{i = 1, …, n} R dx_i”.
+**`Deformation.Artin.KeyExample.exists_basis_nl_cotangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L241). The attribute's comment: “the degree-0 term is the free module ⊕\_\{i = 1, …, n} R dx\_i”.
 
 > The degree-`0` term of the two-term complex of the key example is the free `R`-module
 > `⊕_{i = 1, …, n} R dx_i` on the classes `dx_i` of the variables.
@@ -131,7 +131,7 @@ theorem exists_basis_nl_cotangentSpace :
         (KaehlerDifferential.D Λ P.toExtension.Ring) (MvPolynomial.X i)
 ```
 
-**`Deformation.Artin.KeyExample.Situation.Lift.obsHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 409](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L409). The attribute's comment: “the map J/J² → I, f ↦ f(a'_1, …, a'_n)”.
+**`Deformation.Artin.KeyExample.Situation.Lift.obsHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 409](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L409). The attribute's comment: “the map J/J² → I, f ↦ f(a'\_1, …, a'\_n)”.
 
 > **The obstruction map**: the `R`-linear map `J/J² → I` sending the class
 > of `f ∈ J` to `f(a'_1, …, a'_n)`, where `a'_i` are the chosen lifts. It is the map induced
@@ -143,7 +143,7 @@ noncomputable def Lift.obsHom (l : t.Lift) :
     P.toExtension.Cotangent →ₗ[R] t.ext.Cotangent
 ```
 
-**`Deformation.Artin.KeyExample.Situation.Lift.obsHom_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 416](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L416). The attribute's comment: “o_x(A') is represented by the map f ↦ f(a'_1, …, a'_n)”.
+**`Deformation.Artin.KeyExample.Situation.Lift.obsHom_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 416](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L416). The attribute's comment: “o\_x(A') is represented by the map f ↦ f(a'\_1, …, a'\_n)”.
 
 > **The obstruction map sends the class of `f ∈ J` to `f(a'_1, …, a'_n) ∈ I`**, through the
 > identification `I/I² = I` of `Situation.cotangentEquivKernel`.
@@ -155,7 +155,7 @@ theorem Lift.obsHom_mk (l : t.Lift) (f : P.ker) :
         ⟨MvPolynomial.aeval l.val (f : MvPolynomial (Fin n) Λ), l.aeval_mem_kernel f⟩
 ```
 
-**`Deformation.Artin.KeyExample.obstructionModule`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L473). The attribute's comment: “the obstruction module Hom_R(J/J², M)/Hom_R(R^{⊕n}, M)”.
+**`Deformation.Artin.KeyExample.obstructionModule`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L473). The attribute's comment: “the obstruction module Hom\_R(J/J², M)/Hom\_R(R^\{⊕n}, M)”.
 
 > **The obstruction module**,
 > `𝒪_x(M) = Hom_R(J/J², M)/Hom_R(R^{⊕n}, M)`: the `R`-linear maps out of the conormal module
@@ -169,7 +169,7 @@ abbrev obstructionModule (P : Algebra.Generators Λ R (Fin n)) (M : Type v) [Add
     [Module R M]
 ```
 
-**`Deformation.Artin.KeyExample.obstructionModuleAddEquivExtOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L490). The attribute's comment: “Hom_R(J/J², M)/Hom_R(R^{⊕n}, M) = Ext¹_R(NL_{R/Λ}, M)”.
+**`Deformation.Artin.KeyExample.obstructionModuleAddEquivExtOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L490). The attribute's comment: “Hom\_R(J/J², M)/Hom\_R(R^\{⊕n}, M) = Ext¹\_R(NL\_\{R/Λ}, M)”.
 
 > The obstruction module `Hom_R(J/J², M)/Hom_R(R^{⊕n}, M)` is
 > `Ext¹_R(NL_{R/Λ}, M)`: the comparison of Stacks 0GPU,
@@ -181,7 +181,7 @@ noncomputable def obstructionModuleAddEquivExtOne
     (P : Algebra.Generators Λ R (Fin n)) (M : Type v) [AddCommGroup M] [Module R M]
 ```
 
-**`Deformation.Artin.KeyExample.Situation.obsClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L501). The attribute's comment: “the obstruction element o_x(A')”.
+**`Deformation.Artin.KeyExample.Situation.obsClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L501). The attribute's comment: “the obstruction element o\_x(A')”.
 
 > **The obstruction element `o_x(A')`**: the class in the obstruction module
 > of the map `J/J² → I`, `f ↦ f(a'_1, …, a'_n)`.
@@ -190,7 +190,7 @@ noncomputable def obstructionModuleAddEquivExtOne
 noncomputable def obsClass (l : t.Lift) : obstructionModule P t.ext.Cotangent
 ```
 
-**`Deformation.Artin.KeyExample.Situation.obsClass_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 509](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L509). The attribute's comment: “o_x(A') is independent of the choice of lifts”.
+**`Deformation.Artin.KeyExample.Situation.obsClass_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 509](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L509). The attribute's comment: “o\_x(A') is independent of the choice of lifts”.
 
 > **`o_x(A')` does not depend on the choice of the lifts `a'_i`.** Two
 > families of lifts induce morphisms of extensions whose maps on conormal modules differ by
@@ -201,7 +201,7 @@ noncomputable def obsClass (l : t.Lift) : obstructionModule P t.ext.Cotangent
 theorem obsClass_eq (l l' : t.Lift) : obsClass l = obsClass l'
 ```
 
-**`Deformation.Artin.KeyExample.Situation.obsClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 605](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L605). The attribute's comment: “o_x(A') = 0 if and only if Lift(x, A') is nonempty”.
+**`Deformation.Artin.KeyExample.Situation.obsClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 605](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L605). The attribute's comment: “o\_x(A') = 0 if and only if Lift(x, A') is nonempty”.
 
 > **`o_x(A') = 0` if and only if `x` lifts.** This is condition (iii) of
 > Stacks 07YG for the key example.
@@ -210,7 +210,7 @@ theorem obsClass_eq (l l' : t.Lift) : obsClass l = obsClass l'
 theorem obsClass_eq_zero_iff (l : t.Lift) : obsClass l = 0 ↔ HasLift t
 ```
 
-**`Deformation.Artin.KeyExample.Situation.coe_cotangentEquivKernel_symm_obsHom_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 629](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L629). The attribute's comment: “a morphism of deformation situations carries o_x(A') to o_y(B')”.
+**`Deformation.Artin.KeyExample.Situation.coe_cotangentEquivKernel_symm_obsHom_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean, line 629](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExample.lean#L629). The attribute's comment: “a morphism of deformation situations carries o\_x(A') to o\_y(B')”.
 
 > **Functoriality of the obstruction element.** For a morphism of deformation
 > situations `(x, A' → A) → (y, B' → B)` the obstruction map of `x` is carried to the
@@ -229,7 +229,7 @@ theorem coe_cotangentEquivKernel_symm_obsHom_pushforward {t₂ : Situation P}
         (l.obsHom (Algebra.Extension.Cotangent.mk f))).1 : t.thick))
 ```
 
-**`Deformation.Artin.KeyExample.baseChangedObstructionModule`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExampleBaseChange.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExampleBaseChange.lean#L184). The attribute's comment: “the obstruction module computed from NL_{R/Λ} ⊗_R A”.
+**`Deformation.Artin.KeyExample.baseChangedObstructionModule`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExampleBaseChange.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExampleBaseChange.lean#L184). The attribute's comment: “the obstruction module computed from NL\_\{R/Λ} ⊗\_R A”.
 
 > **The obstruction module of Stacks 07YI computed after base change**, the cokernel
 > `Hom_A(A ⊗_R J/J², M)/Hom_A(A ⊗_R R^{⊕n}, M)` of the dual of the differential of
@@ -239,7 +239,7 @@ theorem coe_cotangentEquivKernel_symm_obsHom_pushforward {t₂ : Situation P}
 abbrev baseChangedObstructionModule
 ```
 
-**`Deformation.Artin.KeyExample.obstructionModuleBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExampleBaseChange.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExampleBaseChange.lean#L195). The attribute's comment: “Hom_R(J/J², M)/Hom_R(R^{⊕n}, M) = Hom_A(A ⊗ J/J², M)/Hom_A(A ⊗ R^{⊕n}, M)”.
+**`Deformation.Artin.KeyExample.obstructionModuleBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExampleBaseChange.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExampleBaseChange.lean#L195). The attribute's comment: “Hom\_R(J/J², M)/Hom\_R(R^\{⊕n}, M) = Hom\_A(A ⊗ J/J², M)/Hom\_A(A ⊗ R^\{⊕n}, M)”.
 
 > **Stacks 07YI.** The obstruction module `Hom_R(J/J², M)/Hom_R(R^{⊕n}, M)` of the key
 > example agrees with the obstruction module computed from `NL_{R/Λ} ⊗_R A`: the tensor-hom
@@ -250,7 +250,7 @@ def obstructionModuleBaseChange :
     obstructionModule P M ≃+ baseChangedObstructionModule P A M
 ```
 
-**`Deformation.Artin.KeyExample.extOneNaiveCotangentBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExampleBaseChange.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExampleBaseChange.lean#L212). The attribute's comment: “Ext¹_R(NL_{R/Λ}, I) = Ext¹_A(NL_{R/Λ} ⊗_R A, I)”.
+**`Deformation.Artin.KeyExample.extOneNaiveCotangentBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExampleBaseChange.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExampleBaseChange.lean#L212). The attribute's comment: “Ext¹\_R(NL\_\{R/Λ}, I) = Ext¹\_A(NL\_\{R/Λ} ⊗\_R A, I)”.
 
 > **Stacks 07YI: `Ext¹_R(NL_{R/Λ}, M) = Ext¹_A(NL_{R/Λ} ⊗_R A, M)`.** The first extension
 > group of the naive cotangent complex of `R` over `Λ` with coefficients in an `A`-module `M` is
@@ -272,7 +272,7 @@ def extOneNaiveCotangentBaseChange :
         ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj (ModuleCat.of A M)) 1
 ```
 
-**`Deformation.Artin.nlBaseChangeToNaive`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExampleCotangentClass.lean, line 651](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExampleCotangentClass.lean#L651). The attribute's comment: “the map NL_{R/Λ} ⊗_R A → NL_{A/Λ}”.
+**`Deformation.Artin.nlBaseChangeToNaive`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExampleCotangentClass.lean, line 651](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExampleCotangentClass.lean#L651). The attribute's comment: “the map NL\_\{R/Λ} ⊗\_R A → NL\_\{A/Λ}”.
 
 > **The morphism `NL_{R/Λ} ⊗_R A ⟶ NL_{A/Λ}`** in the derived category of `A`-modules:
 > functoriality of the naive cotangent complex for the `Λ`-algebra map `R → A`, with the source
@@ -287,7 +287,7 @@ def nlBaseChangeToNaive :
       derivedNaiveCotangentComplex Λ A
 ```
 
-**`Deformation.Artin.cotangentComposition_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExampleCotangentClass.lean, line 700](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExampleCotangentClass.lean#L700). The attribute's comment: “the composite NL_{R/Λ} ⊗_R A → NL_{A/Λ} → NL_{A/A'} = I[1]”.
+**`Deformation.Artin.cotangentComposition_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExampleCotangentClass.lean, line 700](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExampleCotangentClass.lean#L700). The attribute's comment: “the composite NL\_\{R/Λ} ⊗\_R A → NL\_\{A/Λ} → NL\_\{A/A'} = I[1]”.
 
 > **Stacks 07YI: the invariant description of the obstruction element.** The composite
 > `NL_{R/Λ} ⊗_R A ⟶ NL_{A/Λ} ⟶ NL_{A/A'} = I[1]` in the derived category of `A`-modules is the
@@ -302,7 +302,7 @@ theorem cotangentComposition_eq :
         (ModuleCat.ofHom (compositeObsFunctional Λ R A A' P hq hsq)))
 ```
 
-**`Deformation.Artin.coe_compositeObsFunctional_one_tmul_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExampleCotangentClass.lean, line 801](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExampleCotangentClass.lean#L801). The attribute's comment: “the composite is represented by the map f ↦ f(a'_1, …, a'_n)”.
+**`Deformation.Artin.coe_compositeObsFunctional_one_tmul_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExampleCotangentClass.lean, line 801](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExampleCotangentClass.lean#L801). The attribute's comment: “the composite is represented by the map f ↦ f(a'\_1, …, a'\_n)”.
 
 > **The conormal functional of the composite, in coordinates**: on `1 ⊗ (class of f)` it is
 > `f(a'_1, …, a'_n)`, where `a'_i` are the lifts `canonicalLift i`. This is the map `J/J² → I`
@@ -317,7 +317,7 @@ theorem coe_compositeObsFunctional_one_tmul_mk (f : P.toExtension.ker) :
         P.toExtension.Ring →ₐ[Λ] A') f.1
 ```
 
-**`Deformation.Artin.doubleCokernelExtEquiv_cotangentComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExampleCotangentClass.lean, line 820](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExampleCotangentClass.lean#L820). The attribute's comment: “o_x(A') equals the composite NL_{R/Λ} → NL_{A/Λ} → NL_{A/A'} = I[1]”.
+**`Deformation.Artin.doubleCokernelExtEquiv_cotangentComposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/KeyExampleCotangentClass.lean, line 820](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/KeyExampleCotangentClass.lean#L820). The attribute's comment: “o\_x(A') equals the composite NL\_\{R/Λ} → NL\_\{A/Λ} → NL\_\{A/A'} = I[1]”.
 
 > **Stacks 07YI: the obstruction element is the composite of cotangent complexes.** Under
 > the identification of `Hom_{D(A)}(NL_{R/Λ} ⊗_R A, I[1]) = Ext¹_A(NL_{R/Λ} ⊗_R A, I)` with the

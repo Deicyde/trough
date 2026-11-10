@@ -188,7 +188,7 @@ theorem isIso_quasicoherentDerivedCompareWithPullbackTensor_of_isPerfect
     IsIso (quasicoherentDerivedCompareWithPullbackTensor hZ f hXqc hXqs hYqs K L)
 ```
 
-**`AlgebraicGeometry.Space.isIso_quasicoherentDerivedCompareWithPullback_app_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityPullbackComparisonPerfectDual.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityPullbackComparisonPerfectDual.lean#L63). The attribute's comment: “in particular, the map (0E5P) Lf^*K ⊗ a(O_Y) → a(K) is an isomorphism for K perfect”.
+**`AlgebraicGeometry.Space.isIso_quasicoherentDerivedCompareWithPullback_app_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DualityPullbackComparisonPerfectDual.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DualityPullbackComparisonPerfectDual.lean#L63). The attribute's comment: “in particular, the map (0E5P) Lf^*K ⊗ a(O\_Y) → a(K) is an isomorphism for K perfect”.
 
 > **Stacks 0E5Q, in particular.** For `K ∈ D_QCoh(𝒪_Y)` perfect, the map
 > `Lf^*K ⊗^L a(𝒪_Y) ⟶ a(K)` of Stacks 0E5P is an isomorphism.
@@ -212,7 +212,7 @@ theorem isIso_quasicoherentDerivedCompareWithPullback_app_of_isPerfect
 > `L(g')^*(Lf^*K ⊗^L a(𝒪_Y)) ⟶ L(g')^*a(K) ⟶ a'(Lg^*K)` (`L(g')^*` of Stacks 0E5P, then the base
 > change map of Stacks 0E5D)
 >
-> equals `L(g')^*(Lf^*K ⊗^L a(𝒪_Y)) ⟶ L(g')^*Lf^*K ⊗^L L(g')^*a(𝒪_Y) ⟶ L(f')^*Lg^*K ⊗^L a'(𝒪_{Y'})
+> equals `L(g')^*(Lf^*K ⊗^L a(𝒪\_Y)) ⟶ L(g')^*Lf^*K ⊗^L L(g')^*a(𝒪\_Y) ⟶ L(f')^*Lg^*K ⊗^L a'(𝒪\_\{Y'})
 > ⟶ a'(Lg^*K)`: Stacks 07A4 for `g'`, the identification of the two iterated pullbacks around the
 > square and Stacks 0E5D at `𝒪_Y` followed by `a'(Lg^*𝒪_Y ≅ 𝒪_{Y'})`, then Stacks 0E5P for `f'`.
 

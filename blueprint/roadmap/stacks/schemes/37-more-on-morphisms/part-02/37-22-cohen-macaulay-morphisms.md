@@ -255,7 +255,7 @@ public theorem isCohenMacaulayAt_of_pullback_of_flat_base {X Y Y' : Scheme.{u}}
 
 [Tag 045U](https://stacks.math.columbia.edu/tag/045U) in the Stacks Project.
 
-**`AlgebraicGeometry.isCohenMacaulayAt_set_eq_fiberLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Locus.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Locus.lean#L47). The attribute's comment: “fibre_local_ring_characterization”.
+**`AlgebraicGeometry.isCohenMacaulayAt_set_eq_fiberLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Locus.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Locus.lean#L47). The attribute's comment: “fibre\_local\_ring\_characterization”.
 
 > The Cohen–Macaulay locus of a flat, locally finitely presented morphism is exactly the locus
 > where the local ring of its fibre is Cohen–Macaulay.
@@ -270,7 +270,7 @@ public theorem isCohenMacaulayAt_set_eq_fiberLocalRing
         IsCohenMacaulayLocalRing ((f.fiber (f x)).presheaf.stalk (f.asFiber x))}
 ```
 
-**`AlgebraicGeometry.dense_cohenMacaulayAt_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Locus.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Locus.lean#L122). The attribute's comment: “cm_locus_fibrewise_dense”. References: SGA 4 XVIII (2.3), “fibrewise density”.
+**`AlgebraicGeometry.dense_cohenMacaulayAt_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Locus.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/Locus.lean#L122). The attribute's comment: “cm\_locus\_fibrewise\_dense”. References: SGA 4 XVIII (2.3), “fibrewise density”.
 
 > The Cohen–Macaulay locus of a flat, locally finitely presented morphism is dense in every
 > fibre.
@@ -283,7 +283,7 @@ public theorem dense_cohenMacaulayAt_fiber
     ∀ s : S, Dense ((f.fiberι s) ⁻¹' {x : X | Scheme.Hom.IsCohenMacaulayAt f hf x})
 ```
 
-**`AlgebraicGeometry.isCohenMacaulayAt_pullback_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/LocusBaseChange.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/LocusBaseChange.lean#L267). The attribute's comment: “cm_locus_base_change”. References: EGA IV (6.8.2), “(ii), special case”.
+**`AlgebraicGeometry.isCohenMacaulayAt_pullback_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/LocusBaseChange.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/LocusBaseChange.lean#L267). The attribute's comment: “cm\_locus\_base\_change”. References: EGA IV (6.8.2), “(ii), special case”.
 
 > **Stacks Project, Tag 045U (base change).** The Cohen–Macaulay locus of a flat, locally
 > finitely presented morphism commutes with arbitrary base change.
@@ -301,7 +301,7 @@ public theorem isCohenMacaulayAt_pullback_locus {X S S' : Scheme.{u}}
       g'.base ⁻¹' {x : X | Scheme.Hom.IsCohenMacaulayAt f hf x}
 ```
 
-**`AlgebraicGeometry.isOpen_setOf_isCohenMacaulayAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/LocusOpen.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/LocusOpen.lean#L151). The attribute's comment: “cm_locus_open”. References: EGA IV (12.1.7), “(iii), flat case”; EGA IV (6.11.3), “special case”.
+**`AlgebraicGeometry.isOpen_setOf_isCohenMacaulayAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/LocusOpen.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/LocusOpen.lean#L151). The attribute's comment: “cm\_locus\_open”. References: EGA IV (12.1.7), “(iii), flat case”; EGA IV (6.11.3), “special case”.
 
 > **Stacks Project, Tag 045U (Cohen–Macaulay locus).** For a flat morphism locally of finite
 > presentation, the locus of points at which the morphism is Cohen–Macaulay is open.
@@ -329,7 +329,7 @@ public theorem exists_nat_topologicalKrullDimAt_fiber {X S : Scheme.{u}} (f : X 
       topologicalKrullDimAt (f.fiber (f x)) (f.asFiber x) = (n : WithBot ℕ∞)
 ```
 
-**`AlgebraicGeometry.isCohenMacaulayAt_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/AffineSpaceCriterion.lean, line 882](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/AffineSpaceCriterion.lean#L882). The attribute's comment: “the four equivalent conditions”. References: EGA IV (15.4.3), “F = O_X, f flat”; SGA 4 XVIII (2.4).
+**`AlgebraicGeometry.isCohenMacaulayAt_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/AffineSpaceCriterion.lean, line 882](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/CohenMacaulay/AffineSpaceCriterion.lean#L882). The attribute's comment: “the four equivalent conditions”. References: EGA IV (15.4.3), “F = O\_X, f flat”; SGA 4 XVIII (2.4).
 
 > Let `f : X ⟶ S` be flat and locally of finite presentation and let `n` be the dimension of
 > the fibre of `f` through `x` at `x`. Then `f` is Cohen–Macaulay at `x` if and only if some open

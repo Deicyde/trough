@@ -246,7 +246,7 @@ public def pullbackDescentDataFunctor
 
 [Tag 0ADN](https://stacks.math.columbia.edu/tag/0ADN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Descent.pullbackDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullback.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullback.lean#L224). The attribute's comment: “family_pullback_datum”.
+**`AlgebraicGeometry.Space.Descent.pullbackDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullback.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullback.lean#L224). The attribute's comment: “family\_pullback\_datum”.
 
 > Pullback of a descent datum along a morphism of families of algebraic spaces.
 
@@ -301,7 +301,7 @@ public def pullbackFunctorCoproductComparison :
             ((fullTotalCoproduct f hT hX D).ι (α i)).hom ≫ (E.objIso D).inv.left }
 ```
 
-**`AlgebraicGeometry.Space.Descent.pullbackFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackFunctor.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackFunctor.lean#L81). The attribute's comment: “family_pullback_functor”.
+**`AlgebraicGeometry.Space.Descent.pullbackFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackFunctor.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackFunctor.lean#L81). The attribute's comment: “family\_pullback\_functor”.
 
 > Pullback along a morphism of families is functorial on descent data. This is the pullback
 > functor named by Tag 0ADP.
@@ -311,7 +311,7 @@ public noncomputable def pullbackFunctor :
     PullbackFunctor f f' hT hX hT' hX' α g gᵢ comm
 ```
 
-**`AlgebraicGeometry.Space.Descent.pullbackFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackIndependence.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackIndependence.lean#L306). The attribute's comment: “family_map_independence”.
+**`AlgebraicGeometry.Space.Descent.pullbackFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackIndependence.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackIndependence.lean#L306). The attribute's comment: “family\_map\_independence”.
 
 > The canonical natural isomorphism between the pullback functors induced by two morphisms of
 > families with the same map of targets.

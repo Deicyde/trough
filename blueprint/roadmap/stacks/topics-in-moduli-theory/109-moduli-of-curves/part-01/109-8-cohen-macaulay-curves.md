@@ -236,7 +236,7 @@ theorem isCohenMacaulayDimOneFamily_curveFamilyOfSchemeMorphism_iff
           topologicalKrullDim W = (1 : WithBot ℕ∞))
 ```
 
-**`AlgebraicGeometry.isOpenImmersion_curvesSubstackInclusion_cohenMacaulayDimOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOneSubstack.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOneSubstack.lean#L89). The attribute's comment: “the inclusion of Curves^{CM,1} into Curves is representable by algebraic spaces and an open immersion”.
+**`AlgebraicGeometry.isOpenImmersion_curvesSubstackInclusion_cohenMacaulayDimOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOneSubstack.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesCohenMacaulayDimOneSubstack.lean#L89). The attribute's comment: “the inclusion of Curves^\{CM,1} into Curves is representable by algebraic spaces and an open immersion”.
 
 > **Stacks 0E1F, `Curves^{CM,1}` is open in `Curves`.** The inclusion into the category fibred
 > in groupoids of families of curves of the full subcategory `Curves^{CM,1}` of the families which
@@ -281,7 +281,7 @@ theorem factorsThrough_curvesSubstack_cohenMacaulayDimOne_iff
 > **Stacks 0E1F, part (2).** Let `g : T ⟶ W` be a morphism of the big fppf site of the integers
 > whose target scheme is the spectrum of a field `k`, whose underlying morphism of schemes is
 > proper, and whose source scheme `X` has dimension at most one, and let `z : (Sch/Spec(k)) →
-> Curves` classify the family of curves of `g`. Then `z` factors through `Curves^{CM,1}` if and only
+> Curves` classify the family of curves of `g`. Then `z` factors through `Curves^\{CM,1}` if and only
 > if `X` is Cohen–Macaulay and equidimensional of dimension one, every irreducible component of it
 > having dimension one.
 

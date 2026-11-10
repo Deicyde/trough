@@ -14,7 +14,7 @@ Section 33.34 of the Stacks Project, [Tag 0B2N](https://stacks.math.columbia.edu
 
 [Tag 0B2P](https://stacks.math.columbia.edu/tag/0B2P) in the Stacks Project.
 
-**`AlgebraicGeometry.topologicalKrullDim_projectiveSpaceOverRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Dimension/OverField.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Dimension/OverField.lean#L36). The attribute's comment: “projective_space_dimension”.
+**`AlgebraicGeometry.topologicalKrullDim_projectiveSpaceOverRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Dimension/OverField.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Dimension/OverField.lean#L36). The attribute's comment: “projective\_space\_dimension”.
 
 > **Stacks Project, Tag 0B2P (dimension).** Projective `n`-space over a field has Krull
 > dimension `n` as a topological space.
@@ -24,7 +24,7 @@ theorem topologicalKrullDim_projectiveSpaceOverRing (k : Type u) [Field k] (n : 
     topologicalKrullDim (projectiveSpaceOverRing n (CommRingCat.of k)) = (n : WithBot ℕ∞)
 ```
 
-**`AlgebraicGeometry.projectiveSpaceOver.smooth`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean#L93). The attribute's comment: “projective_space_smooth”. References: EGA IV (17.3.9), “free E, P^n_S”.
+**`AlgebraicGeometry.projectiveSpaceOver.smooth`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean#L93). The attribute's comment: “projective\_space\_smooth”. References: EGA IV (17.3.9), “free E, P^n\_S”.
 
 > **Stacks Project, Tag 0B2P (smoothness).** Projective `n`-space over a scheme `S` is smooth
 > over `S`, being the base change of the integral model, which is smooth over the terminal
@@ -34,7 +34,7 @@ theorem topologicalKrullDim_projectiveSpaceOverRing (k : Type u) [Field k] (n : 
 public instance smooth (n : ℕ) (S : Scheme.{u}) : Smooth (projectiveSpaceOver n S ↘ S)
 ```
 
-**`AlgebraicGeometry.isProjectiveMorphism_projectiveSpaceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean#L106). The attribute's comment: “projective_space_projective”.
+**`AlgebraicGeometry.isProjectiveMorphism_projectiveSpaceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean#L106). The attribute's comment: “projective\_space\_projective”.
 
 > **Stacks Project, Tag 0B2P (projectivity).** Projective `n`-space over a scheme `S` is
 > projective over `S`: the identity is a closed immersion of `ℙⁿ_S` into `ℙⁿ_S` over `S`.
@@ -44,7 +44,7 @@ public theorem isProjectiveMorphism_projectiveSpaceOver (n : ℕ) (S : Scheme.{u
     IsProjectiveMorphism (projectiveSpaceOver n S ↘ S)
 ```
 
-**`AlgebraicGeometry.projectiveSpaceOverRing.isVariety`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean#L153). The attribute's comment: “projective_space_variety”.
+**`AlgebraicGeometry.projectiveSpaceOverRing.isVariety`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean#L153). The attribute's comment: “projective\_space\_variety”.
 
 > **Stacks Project, Tag 0B2P (variety).** Projective `n`-space over a field is a variety over
 > that field: it is integral, and its structure morphism is separated and of finite type because it

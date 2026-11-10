@@ -64,7 +64,7 @@ public theorem isPredeformationFunctor_isomorphismClasses
       (isomorphismClasses 𝓕 h𝓕.cofibered)
 ```
 
-**`Deformation.IsPredeformationFunctor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Predeformation/Basic.lean, line 611](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Predeformation/Basic.lean#L611). The attribute's comment: “predeformation_functor”.
+**`Deformation.IsPredeformationFunctor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Predeformation/Basic.lean, line 611](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Predeformation/Basic.lean#L611). The attribute's comment: “predeformation\_functor”.
 
 > A set-valued functor on `𝒞_Λ` is a predeformation functor when its value at
 > the residue field `k` is a one-element set.
@@ -75,7 +75,7 @@ public abbrev IsPredeformationFunctor
     (F : ArtinianLocalAlgCat.{u, max v w, w} Λ k ⥤ Type t) : Prop
 ```
 
-**`Deformation.isPredeformationCategory_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Predeformation/Basic.lean, line 619](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Predeformation/Basic.lean#L619). The attribute's comment: “predeformation_functor”.
+**`Deformation.isPredeformationCategory_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Predeformation/Basic.lean, line 619](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Predeformation/Basic.lean#L619). The attribute's comment: “predeformation\_functor”.
 
 > A functor is a predeformation functor exactly when its associated cofibered
 > set, the category of elements, is a predeformation category.
@@ -92,7 +92,7 @@ public theorem isPredeformationCategory_iff
 
 [Tag 06GU](https://stacks.math.columbia.edu/tag/06GU) in the Stacks Project.
 
-**`Deformation.objectsOverFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Predeformation/Basic.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Predeformation/Basic.lean#L251). The attribute's comment: “category_of_objects_over_x”.
+**`Deformation.objectsOverFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Predeformation/Basic.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Predeformation/Basic.lean#L251). The attribute's comment: “category\_of\_objects\_over\_x”.
 
 > The structure functor on the category of arrows in `F` with target `x`, obtained by
 > forgetting the arrow to `x` and then applying `p`.
@@ -120,7 +120,7 @@ public theorem isPredeformationCategory_objectsOverFunctor
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Over`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Predeformation/Basic.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Predeformation/Basic.lean#L229) (StacksFrontier): “category_of_objects_over_x”. References: EGA I (10.4.7); EGA I (2.5.1); EGA I (3.3.1); EGA IV (14.5.8); SGA 1 V (6.13); SGA 1 VIII (5.2), “fiber over S”; SGA 3 I (1.3); SGA 3 VIIA (4.0), “more general”; SGA 3 VIII (1.0.3); SGA 4 III (5.1), “special case”; SGA 4 IV (5.1); SGA 4 IV (7.1.8), “more general”; SGA 4 VI (4.1), “partial”; SGA 4½ Arcata (1.6.4), “partial”; SGA 7 VI (3.1(a)), “partial”.
+- [`CategoryTheory.Over`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Predeformation/Basic.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Predeformation/Basic.lean#L229) (StacksFrontier): “category\_of\_objects\_over\_x”. References: EGA I (10.4.7); EGA I (2.5.1); EGA I (3.3.1); EGA IV (14.5.8); SGA 1 V (6.13); SGA 1 VIII (5.2), “fiber over S”; SGA 3 I (1.3); SGA 3 VIIA (4.0), “more general”; SGA 3 VIII (1.0.3); SGA 4 III (5.1), “special case”; SGA 4 IV (5.1); SGA 4 IV (7.1.8), “more general”; SGA 4 VI (4.1), “partial”; SGA 4½ Arcata (1.6.4), “partial”; SGA 7 VI (3.1(a)), “partial”.
 
 ## Depends on
 

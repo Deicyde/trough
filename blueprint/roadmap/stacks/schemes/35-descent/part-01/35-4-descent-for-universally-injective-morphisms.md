@@ -494,7 +494,7 @@ theorem finite_iff_baseChange_of_universallyInjective
     Module.Finite R M ↔ Module.Finite S (TensorProduct R S M)
 ```
 
-**`Module.finitePresentation_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFiniteness.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFiniteness.lean#L213). The attribute's comment: “finite_presentation”. References: EGA IV (2.5.2), “(ii), affine case”; EGA IV (2.5.4), “(ii), affine case”; SGA 1 VIII (1.11), “finite presentation”; SGA 4½ Arcata (1.4.2), “(ii) finite presentation”.
+**`Module.finitePresentation_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFiniteness.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFiniteness.lean#L213). The attribute's comment: “finite\_presentation”. References: EGA IV (2.5.2), “(ii), affine case”; EGA IV (2.5.4), “(ii), affine case”; SGA 1 VIII (1.11), “finite presentation”; SGA 4½ Arcata (1.4.2), “(ii) finite presentation”.
 
 > Finite presentation descends and ascends along a universally injective ring map.
 
@@ -519,7 +519,7 @@ theorem flat_iff_baseChange_of_universallyInjective
     Module.Flat R M ↔ Module.Flat S (TensorProduct R S M)
 ```
 
-**`Module.faithfullyFlat_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFlat.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFlat.lean#L238). The attribute's comment: “faithfully_flat”. References: EGA 0 (6.6.3), “more general”.
+**`Module.faithfullyFlat_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFlat.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFlat.lean#L238). The attribute's comment: “faithfully\_flat”. References: EGA 0 (6.6.3), “more general”.
 
 > Faithful flatness descends and ascends along a universally injective ring map.
 
@@ -531,7 +531,7 @@ theorem faithfullyFlat_iff_baseChange_of_universallyInjective
     Module.FaithfullyFlat R M ↔ Module.FaithfullyFlat S (TensorProduct R S M)
 ```
 
-**`Module.finite_projective_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeProjective.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeProjective.lean#L40). The attribute's comment: “finite_projective”.
+**`Module.finite_projective_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeProjective.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeProjective.lean#L40). The attribute's comment: “finite\_projective”.
 
 > Finite projectivity descends and ascends along a universally injective ring map.
 
@@ -549,7 +549,7 @@ theorem finite_projective_iff_baseChange_of_universallyInjective
 
 [Tag 08XE](https://stacks.math.columbia.edu/tag/08XE) in the Stacks Project.
 
-**`Algebra.finiteType_iff_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeFiniteness.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeFiniteness.lean#L53). The attribute's comment: “finite_type”. References: EGA IV (1.3.1), “special case”.
+**`Algebra.finiteType_iff_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeFiniteness.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeFiniteness.lean#L53). The attribute's comment: “finite\_type”. References: EGA IV (1.3.1), “special case”.
 
 > **Stacks Project, Tag 08XE (finite type).** Finite type descends along a
 > universally injective ring map and is preserved by base change.
@@ -561,7 +561,7 @@ theorem finiteType_iff_tensorProduct
     Algebra.FiniteType R A ↔ Algebra.FiniteType S (A ⊗[R] S)
 ```
 
-**`Algebra.finitePresentation_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeFiniteness.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeFiniteness.lean#L146). The attribute's comment: “finite_presentation”.
+**`Algebra.finitePresentation_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeFiniteness.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeFiniteness.lean#L146). The attribute's comment: “finite\_presentation”.
 
 > Finite presentation of an algebra descends and ascends along a universally injective
 > ring map.
@@ -575,7 +575,7 @@ theorem finitePresentation_iff_baseChange_of_universallyInjective
       Algebra.FinitePresentation S (TensorProduct R S A)
 ```
 
-**`Algebra.formallyUnramified_iff_tensorProduct_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeUnramified.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeUnramified.lean#L52). The attribute's comment: “formally_unramified”.
+**`Algebra.formallyUnramified_iff_tensorProduct_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeUnramified.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeUnramified.lean#L52). The attribute's comment: “formally\_unramified”.
 
 > Formal unramifiedness descends and ascends along a universally injective base-ring map.
 

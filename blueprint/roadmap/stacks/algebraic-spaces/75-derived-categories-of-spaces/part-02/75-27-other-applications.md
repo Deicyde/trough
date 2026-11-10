@@ -86,7 +86,7 @@ theorem hasCountableCohomology_derivedTensor_restrict_of_isPerfect
         ((T.tensor.obj K).obj E)))
 ```
 
-**`AlgebraicGeometry.Space.countable_ext_of_qcqs_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableSectionsEtale.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableSectionsEtale.lean#L161). The attribute's comment: “the sets Ext^i(E|_U, K|_U)”.
+**`AlgebraicGeometry.Space.countable_ext_of_qcqs_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableSectionsEtale.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/CountableSectionsEtale.lean#L161). The attribute's comment: “the sets Ext^i(E|\_U, K|\_U)”.
 
 > **Stacks 0CRU, the clause on `Ext^i(E|_U, K|_U)`.** Let `X` be a quasi-compact
 > quasi-separated algebraic space over `S`, let `K` be an object of `D_QCoh(𝒪_X)` and let `E` be a
@@ -154,7 +154,7 @@ theorem countable_ext_of_qcqs_etale (hZ : B.Contains (⊤_ Scheme.{u}))
       i)
 ```
 
-**`AlgebraicGeometry.Space.countable_ext_etaleRestrict_of_countable_sections_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtRestrictCountableSectionsPerfect.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtRestrictCountableSectionsPerfect.lean#L152). The attribute's comment: “the sets Ext^i(E|_U, K|_U), at the tag's own hypotheses; the H^i(U, K ⊗^𝐋 E) clause is `AlgebraicGeometry.Space.hasCountableCohomology_derivedTensor_restrict_of_isPerfect`”.
+**`AlgebraicGeometry.Space.countable_ext_etaleRestrict_of_countable_sections_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtRestrictCountableSectionsPerfect.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ExtRestrictCountableSectionsPerfect.lean#L152). The attribute's comment: “the sets Ext^i(E|\_U, K|\_U), at the tag's own hypotheses; the H^i(U, K ⊗^𝐋 E) clause is `AlgebraicGeometry.Space.hasCountableCohomology_derivedTensor_restrict_of_isPerfect`”.
 
 > **The `Ext` clause of [Stacks, Tag 0CRU].**  Let `X` be a quasi-compact absolutely
 > quasi-separated algebraic space over `S`, let `K` be an object of `D_QCoh(𝒪_X)` whose cohomology

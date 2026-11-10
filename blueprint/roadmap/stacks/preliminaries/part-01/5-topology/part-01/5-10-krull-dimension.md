@@ -25,7 +25,7 @@ theorem topologicalKrullDim_eq_bot_iff_isEmpty :
     topologicalKrullDim X = ⊥ ↔ IsEmpty X
 ```
 
-**`topologicalKrullDimAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Dimension/Krull.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Dimension/Krull.lean#L49). The attribute's comment: “(4)”. References: EGA 0 (14.1.2), “dim_x formula”; SGA 3 VIB (1.5); SGA 7 XV (1.2).
+**`topologicalKrullDimAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Dimension/Krull.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Dimension/Krull.lean#L49). The attribute's comment: “(4)”. References: EGA 0 (14.1.2), “dim\_x formula”; SGA 3 VIB (1.5); SGA 7 XV (1.2).
 
 > **Stacks 0055 (4).** The Krull dimension of `X` at a point `x`: the infimum of the Krull
 > dimensions of the open neighbourhoods of `x`. It is a minimum, by
@@ -35,7 +35,7 @@ theorem topologicalKrullDim_eq_bot_iff_isEmpty :
 noncomputable def topologicalKrullDimAt (x : X) : WithBot ℕ∞
 ```
 
-**`topologicalKrullDimAt_isLeast`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Dimension/Krull.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Dimension/Krull.lean#L69). The attribute's comment: “(4)”. References: EGA 0 (14.1.2), “dim_x(X)=inf_U dim(U)”; SGA 3 VIB (1.5), “partial”.
+**`topologicalKrullDimAt_isLeast`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Dimension/Krull.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Dimension/Krull.lean#L69). The attribute's comment: “(4)”. References: EGA 0 (14.1.2), “dim\_x(X)=inf\_U dim(U)”; SGA 3 VIB (1.5), “partial”.
 
 > **Stacks 0055 (4).** `topologicalKrullDimAt X x` is the *least* element of the set of
 > Krull dimensions of open neighbourhoods of `x`, which is Stacks' phrasing of part (4) as a

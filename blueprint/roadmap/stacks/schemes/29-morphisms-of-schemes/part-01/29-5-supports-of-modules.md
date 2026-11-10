@@ -78,7 +78,7 @@ public lemma stableUnderSpecialization_supp (X : Scheme.{u}) (F : X.Modules)
 
 [Tag 056J](https://stacks.math.columbia.edu/tag/056J) in the Stacks Project.
 
-**`SheafOfModules.isClosed_supp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/Support.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/Support.lean#L151). The attribute's comment: “closed_support”.
+**`SheafOfModules.isClosed_supp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/Support.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/Support.lean#L151). The attribute's comment: “closed\_support”.
 
 > The support of a sheaf of modules of finite type on a topological space is closed.
 
@@ -88,7 +88,7 @@ lemma isClosed_supp {X : TopCat.{u}} {R : TopCat.Sheaf RingCat.{u} X}
     IsClosed (supp F)
 ```
 
-**`SheafOfModules.mem_supp_iff_nontrivial_stalk`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Support/Defs.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Support/Defs.lean#L53). The attribute's comment: “support_by_stalk”.
+**`SheafOfModules.mem_supp_iff_nontrivial_stalk`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Support/Defs.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Support/Defs.lean#L53). The attribute's comment: “support\_by\_stalk”.
 
 > A point is in the support of a sheaf of modules if and only if its stalk is nonzero.
 
@@ -99,7 +99,7 @@ lemma mem_supp_iff_nontrivial_stalk {X : TopCat.{u}}
       Nontrivial ((show TopCat.Presheaf Ab.{u} X from F.val.presheaf).stalk x)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.nontrivial_stalk_iff_nontrivial_fibre`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Support/FiniteType.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Support/FiniteType.lean#L218). The attribute's comment: “support_by_fibre”.
+**`AlgebraicGeometry.Scheme.Modules.nontrivial_stalk_iff_nontrivial_fibre`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Support/FiniteType.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Support/FiniteType.lean#L218). The attribute's comment: “support\_by\_fibre”.
 
 > A finite type quasi-coherent module has nonzero stalk at `x` exactly when its fibre over
 > the residue field at `x` is nonzero.
@@ -117,7 +117,7 @@ lemma nontrivial_stalk_iff_nontrivial_fibre
         (F.presheaf.stalk x) (X.residueField x))
 ```
 
-**`SheafOfModules.supp_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportPullback/Basic.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportPullback/Basic.lean#L51). The attribute's comment: “pullback_support”.
+**`SheafOfModules.supp_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportPullback/Basic.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportPullback/Basic.lean#L51). The attribute's comment: “pullback\_support”.
 
 > **Stacks Project, Tag 056J.** The support of the pullback of a module of finite type
 > along a morphism of schemes is the inverse image of its support.
@@ -129,7 +129,7 @@ theorem supp_pullback {X Y : Scheme.{u}} (f : Y ⟶ X) (F : X.Modules) [F.IsFini
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.SheafOfModules.pullback_isFiniteType`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/FiniteType.lean#L304), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Support/Pullback.lean, line 29](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Support/Pullback.lean#L29) (StacksFrontier): “pullback_finite_type”.
+- [`AlgebraicGeometry.SheafOfModules.pullback_isFiniteType`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/FiniteType.lean#L304), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Support/Pullback.lean, line 29](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Support/Pullback.lean#L29) (StacksFrontier): “pullback\_finite\_type”.
 
 ## Tag 05JU, a lemma
 

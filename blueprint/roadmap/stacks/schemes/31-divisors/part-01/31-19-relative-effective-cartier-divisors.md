@@ -201,7 +201,7 @@ theorem no_flat_neighbourhood
 
 [Tag 062Y](https://stacks.math.columbia.edu/tag/062Y) in the Stacks Project.
 
-**`Stacks.Divisors.exists_isRelativeEffectiveCartierDivisor_containing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ContainingDivisorFibre.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ContainingDivisorFibre.lean#L313). The attribute's comment: “local_containing_divisor”.
+**`Stacks.Divisors.exists_isRelativeEffectiveCartierDivisor_containing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ContainingDivisorFibre.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ContainingDivisorFibre.lean#L313). The attribute's comment: “local\_containing\_divisor”.
 
 > Let `f : X ⟶ S` be flat and locally of finite presentation, let `Z` be a closed subscheme of
 > `X` and let `x` be a point of `Z` whose fibre over `f x` is an effective Cartier divisor in a
@@ -219,7 +219,7 @@ theorem exists_isRelativeEffectiveCartierDivisor_containing (f : X ⟶ S) [Flat 
           D.comap ((U.ι ≫ f).fiberι (f x))
 ```
 
-**`Stacks.Divisors.exists_isRelativeEffectiveCartierDivisor_of_flat_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatCartierFibre.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatCartierFibre.lean#L296). The attribute's comment: “flat_finitely_presented_case”.
+**`Stacks.Divisors.exists_isRelativeEffectiveCartierDivisor_of_flat_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatCartierFibre.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatCartierFibre.lean#L296). The attribute's comment: “flat\_finitely\_presented\_case”.
 
 > Let `f : X ⟶ S` be flat and locally of finite presentation, let `Z` be a closed subscheme of
 > `X` of finite presentation over `X` and let `x` be a point of `Z` at which `Z` is flat over `S` and
@@ -238,7 +238,7 @@ theorem exists_isRelativeEffectiveCartierDivisor_of_flat_of_finitePresentation (
       IsRelativeEffectiveCartierDivisor (V.ι ≫ f) (Z.comap V.ι)
 ```
 
-**`Stacks.Divisors.isRelativeEffectiveCartierDivisor_of_flat_of_fibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatCartierFibre.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatCartierFibre.lean#L313). The attribute's comment: “flat_fibres_global_case”. References: EGA IV (21.15.3.3), “converse”.
+**`Stacks.Divisors.isRelativeEffectiveCartierDivisor_of_flat_of_fibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatCartierFibre.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/FlatCartierFibre.lean#L313). The attribute's comment: “flat\_fibres\_global\_case”. References: EGA IV (21.15.3.3), “converse”.
 
 > A closed subscheme of a scheme flat and locally of finite presentation over `S`, itself flat
 > and locally of finite presentation over `S`, all of whose fibres are effective Cartier divisors, is
@@ -252,7 +252,7 @@ theorem isRelativeEffectiveCartierDivisor_of_flat_of_fibres (f : X ⟶ S) [Flat 
     IsRelativeEffectiveCartierDivisor f Z
 ```
 
-**`Stacks.Divisors.exists_isRelativeEffectiveCartierDivisor_of_ideal_isPrincipal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/LocallyPrincipalFibre.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/LocallyPrincipalFibre.lean#L393). The attribute's comment: “locally_principal_case”.
+**`Stacks.Divisors.exists_isRelativeEffectiveCartierDivisor_of_ideal_isPrincipal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/LocallyPrincipalFibre.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/LocallyPrincipalFibre.lean#L393). The attribute's comment: “locally\_principal\_case”.
 
 > Let `f : X ⟶ S` be flat and locally of finite presentation, let
 > `Z` be a closed subscheme of `X` and let `x` be a point of `Z` whose fibre over `f x` is an
@@ -270,7 +270,7 @@ theorem exists_isRelativeEffectiveCartierDivisor_of_ideal_isPrincipal (f : X ⟶
       IsRelativeEffectiveCartierDivisor (V.ι ≫ f) (Z.comap V.ι)
 ```
 
-**`Stacks.Divisors.isRelativeEffectiveCartierDivisor_of_isLocallyPrincipal_of_fibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/LocallyPrincipalFibre.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/LocallyPrincipalFibre.lean#L411). The attribute's comment: “locally_principal_global_case”. References: EGA IV (21.15.3.3), “forward direction”.
+**`Stacks.Divisors.isRelativeEffectiveCartierDivisor_of_isLocallyPrincipal_of_fibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/LocallyPrincipalFibre.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/LocallyPrincipalFibre.lean#L411). The attribute's comment: “locally\_principal\_global\_case”. References: EGA IV (21.15.3.3), “forward direction”.
 
 > A locally principal closed subscheme of a scheme flat and locally of finite presentation over
 > `S`, all of whose fibres are effective Cartier divisors, is a relative effective Cartier divisor

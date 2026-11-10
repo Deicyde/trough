@@ -37,7 +37,7 @@ abbrev CycleGroup (C : ChowSituation.{u}) {X : Scheme.{u}} (f : X ⟶ C.S)
 
 [Tag 0GU2](https://stacks.math.columbia.edu/tag/0GU2) in the Stacks Project.
 
-**`AlgebraicGeometry.locallyFiniteDirectSum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Cycles/Basic.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Cycles/Basic.lean#L40). The attribute's comment: “locally_finite_direct_sum”.
+**`AlgebraicGeometry.locallyFiniteDirectSum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Cycles/Basic.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Cycles/Basic.lean#L40). The attribute's comment: “locally\_finite\_direct\_sum”.
 
 > The subgroup of pointwise families whose support meets every quasi-compact open subset of
 > the scheme in a finite set.

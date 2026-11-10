@@ -81,7 +81,7 @@ def componentRingedTwoIso {m n : SimplexCategory} (φ : m ⟶ n) :
 
 [Tag 0DH3](https://stacks.math.columbia.edu/tag/0DH3) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.componentRingedAugmentation_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationFlat.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationFlat.lean#L111). The attribute's comment: “the forward implication: flatness of a gives flatness of every a_n”.
+**`CategoryTheory.SimplicialSiteSituation.componentRingedAugmentation_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationFlat.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/AugmentationFlat.lean#L111). The attribute's comment: “the forward implication: flatness of a gives flatness of every a\_n”.
 
 > If the augmentation `a` of the total ringed topos is flat, then so is the augmentation `a_n`
 > of every simplicial component.

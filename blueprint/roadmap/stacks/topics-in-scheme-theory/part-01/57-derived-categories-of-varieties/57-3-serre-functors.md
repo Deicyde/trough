@@ -41,7 +41,7 @@ Declarations registered for the tag:
 
 [Tag 0H8B](https://stacks.math.columbia.edu/tag/0H8B) in the Stacks Project.
 
-**`AlgebraicGeometry.diagonalPeriodicityEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/DiagonalPeriodicity.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/DiagonalPeriodicity.lean#L85). The attribute's comment: “diagonal_periodicity”.
+**`AlgebraicGeometry.diagonalPeriodicityEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/DiagonalPeriodicity.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/DiagonalPeriodicity.lean#L85). The attribute's comment: “diagonal\_periodicity”.
 
 > The diagonal three-periodicity identification in the Hom double-complex of two
 > distinguished triangles.
@@ -52,7 +52,7 @@ noncomputable def diagonalPeriodicityEquiv
     K.term p q ≃+ K.term (p + 3) (q - 3)
 ```
 
-**`AlgebraicGeometry.diagonalPeriodicityEquiv_d₁`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/DiagonalPeriodicity.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/DiagonalPeriodicity.lean#L385). The attribute's comment: “diagonal_periodicity”.
+**`AlgebraicGeometry.diagonalPeriodicityEquiv_d₁`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/DiagonalPeriodicity.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/DiagonalPeriodicity.lean#L385). The attribute's comment: “diagonal\_periodicity”.
 
 > The diagonal periodicity identification commutes with the first differential.
 
@@ -64,7 +64,7 @@ lemma diagonalPeriodicityEquiv_d₁
       K.d₁ (p + 3) (q - 3) (diagonalPeriodicityEquiv K p q f)
 ```
 
-**`AlgebraicGeometry.diagonalPeriodicityEquiv_d₂`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/DiagonalPeriodicity.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/DiagonalPeriodicity.lean#L417). The attribute's comment: “diagonal_periodicity”.
+**`AlgebraicGeometry.diagonalPeriodicityEquiv_d₂`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/DiagonalPeriodicity.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/DiagonalPeriodicity.lean#L417). The attribute's comment: “diagonal\_periodicity”.
 
 > The diagonal periodicity identification commutes with the second differential.
 
@@ -76,7 +76,7 @@ lemma diagonalPeriodicityEquiv_d₂
       K.d₂ (p + 3) (q - 3) (diagonalPeriodicityEquiv K p q f)
 ```
 
-**`AlgebraicGeometry.HomDoubleComplexSetup.d₁_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/ExactRowsColumns.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/ExactRowsColumns.lean#L228). The attribute's comment: “exact_rows_columns”.
+**`AlgebraicGeometry.HomDoubleComplexSetup.d₁_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/ExactRowsColumns.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/ExactRowsColumns.lean#L228). The attribute's comment: “exact\_rows\_columns”.
 
 > Consecutive horizontal differentials in the Hom double complex are exact.
 
@@ -85,7 +85,7 @@ theorem d₁_exact (K : HomDoubleComplexSetup (C := C)) (p q : ℤ) :
     Function.Exact (K.d₁ p q) (K.d₁ (p + 1) q)
 ```
 
-**`AlgebraicGeometry.HomDoubleComplexSetup.d₂_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/ExactRowsColumns.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/ExactRowsColumns.lean#L243). The attribute's comment: “exact_rows_columns”.
+**`AlgebraicGeometry.HomDoubleComplexSetup.d₂_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/ExactRowsColumns.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/ExactRowsColumns.lean#L243). The attribute's comment: “exact\_rows\_columns”.
 
 > Consecutive vertical differentials in the Hom double complex are exact.
 
@@ -94,7 +94,7 @@ theorem d₂_exact (K : HomDoubleComplexSetup (C := C)) (p q : ℤ) :
     Function.Exact (K.d₂ p q) (K.d₂ p (q + 1))
 ```
 
-**`AlgebraicGeometry.HomDoubleComplexSetup.d₁_comp_d₁`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/HomDoubleComplex.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/HomDoubleComplex.lean#L245). The attribute's comment: “hom_double_complex: the horizontal differential squares to zero”.
+**`AlgebraicGeometry.HomDoubleComplexSetup.d₁_comp_d₁`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/HomDoubleComplex.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/HomDoubleComplex.lean#L245). The attribute's comment: “hom\_double\_complex: the horizontal differential squares to zero”.
 
 > Consecutive horizontal differentials in the Hom double complex compose to zero.
 
@@ -103,7 +103,7 @@ lemma d₁_comp_d₁ (K : HomDoubleComplexSetup (C := C)) (p q : ℤ) :
     AddCommGrpCat.ofHom (K.d₁ p q) ≫ AddCommGrpCat.ofHom (K.d₁ (p + 1) q) = 0
 ```
 
-**`AlgebraicGeometry.HomDoubleComplexSetup.d₂_comp_d₂`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/HomDoubleComplex.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/HomDoubleComplex.lean#L262). The attribute's comment: “hom_double_complex: the vertical differential squares to zero”.
+**`AlgebraicGeometry.HomDoubleComplexSetup.d₂_comp_d₂`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/HomDoubleComplex.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/HomDoubleComplex.lean#L262). The attribute's comment: “hom\_double\_complex: the vertical differential squares to zero”.
 
 > Consecutive vertical differentials in the Hom double complex compose to zero.
 
@@ -112,7 +112,7 @@ lemma d₂_comp_d₂ (K : HomDoubleComplexSetup (C := C)) (p q : ℤ) :
     AddCommGrpCat.ofHom (K.d₂ p q) ≫ AddCommGrpCat.ofHom (K.d₂ p (q + 1)) = 0
 ```
 
-**`AlgebraicGeometry.HomDoubleComplexSetup.d₂_comp_d₁`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/HomDoubleComplex.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/HomDoubleComplex.lean#L272). The attribute's comment: “hom_double_complex: the two differentials commute”.
+**`AlgebraicGeometry.HomDoubleComplexSetup.d₂_comp_d₁`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/HomDoubleComplex.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/HomDoubleComplex.lean#L272). The attribute's comment: “hom\_double\_complex: the two differentials commute”.
 
 > The horizontal and vertical differentials in the Hom double complex commute.
 
@@ -122,7 +122,7 @@ lemma d₂_comp_d₁ (K : HomDoubleComplexSetup (C := C)) (p q : ℤ) :
       AddCommGrpCat.ofHom (K.d₁ p q) ≫ AddCommGrpCat.ofHom (K.d₂ (p + 1) q)
 ```
 
-**`AlgebraicGeometry.HomDoubleComplexSetup.homDoubleComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/HomDoubleComplex.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/HomDoubleComplex.lean#L283). The attribute's comment: “hom_double_complex”.
+**`AlgebraicGeometry.HomDoubleComplexSetup.homDoubleComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/HomDoubleComplex.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/HomDoubleComplex.lean#L283). The attribute's comment: “hom\_double\_complex”.
 
 > The double complex of abelian groups obtained from a pair of distinguished triangles.
 
@@ -216,7 +216,7 @@ public theorem exists_dual_matress (k : Type u) [Field k]
 
 [Tag 0FY6](https://stacks.math.columbia.edu/tag/0FY6) in the Stacks Project.
 
-**`CategoryTheory.serreEquivalence_exists_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/Exactness.lean, line 620](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/Exactness.lean#L620). The attribute's comment: “serre_functor_exact”.
+**`CategoryTheory.serreEquivalence_exists_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/Exactness.lean, line 620](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/Exactness.lean#L620). The attribute's comment: “serre\_functor\_exact”.
 
 > **Stacks Project, Tag 0FY6.** A Serre equivalence has a coherent translation isomorphism
 > under which it is an exact functor of triangulated categories.
@@ -229,7 +229,7 @@ theorem serreEquivalence_exists_isTriangulated
       S.equivalence.functor.IsTriangulated
 ```
 
-**`CategoryTheory.serreEquivalence_uniqueUpToUniqueIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/Uniqueness.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/Uniqueness.lean#L167). The attribute's comment: “serre_functor_unique”.
+**`CategoryTheory.serreEquivalence_uniqueUpToUniqueIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/Uniqueness.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/SerreFunctors/Uniqueness.lean#L167). The attribute's comment: “serre\_functor\_unique”.
 
 > **Stacks Project, Tag 0FY6.** Two Serre functors have a unique natural isomorphism
 > preserving their Serre pairings.

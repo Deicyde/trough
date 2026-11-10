@@ -26,7 +26,7 @@ theorem kunnethIsoOfAffineDiagonal_eq [CompactSpace X] [CompactSpace Y] (n : ℕ
     kunnethIsoOfAffineDiagonal k f g F G n = kunnethIsoOfCovers f g CX CY F G n
 ```
 
-**`Stacks.CechKunneth.kunnethIsoOfAffineDiagonal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/CechKunneth/KunnethFormula.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/CechKunneth/KunnethFormula.lean#L376). The attribute's comment: “for X and Y quasi-compact with affine diagonal over a field k and F, G quasi-coherent: H^n(X x_k Y, pr_1^*F (x) pr_2^*G) is the direct sum over p + q = n of H^p(X, F) (x)_k H^q(Y, G), the isomorphism being the Cech-level cup product of pulled-back cocycles”.
+**`Stacks.CechKunneth.kunnethIsoOfAffineDiagonal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/CechKunneth/KunnethFormula.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/CechKunneth/KunnethFormula.lean#L376). The attribute's comment: “for X and Y quasi-compact with affine diagonal over a field k and F, G quasi-coherent: H^n(X x\_k Y, pr\_1^*F (x) pr\_2^*G) is the direct sum over p + q = n of H^p(X, F) (x)\_k H^q(Y, G), the isomorphism being the Cech-level cup product of pulled-back cocycles”.
 
 > **The Künneth formula** [Stacks, Tag 0BED]. For a field `k`, quasi-compact schemes `X` and `Y`
 > over `k` with affine diagonal, a quasi-coherent `𝒪_X`-module `ℱ` and a quasi-coherent

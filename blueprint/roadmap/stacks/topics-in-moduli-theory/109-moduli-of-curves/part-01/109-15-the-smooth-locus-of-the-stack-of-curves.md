@@ -47,7 +47,7 @@ theorem curvesSmoothLocus_property_iff_isSmooth_schemeDeformation
 
 [Tag 0DZX](https://stacks.math.columbia.edu/tag/0DZX) in the Stacks Project.
 
-**`AlgebraicGeometry.curvesLciPlus_isOpenSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLciPlus.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesLciPlus.lean#L111). The attribute's comment: “the open substack Curves^{lci+} = Curves^{lci} ∩ Curves^{+} of Curves”.
+**`AlgebraicGeometry.curvesLciPlus_isOpenSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLciPlus.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesLciPlus.lean#L111). The attribute's comment: “the open substack Curves^\{lci+} = Curves^\{lci} ∩ Curves^\{+} of Curves”.
 
 > **Stacks 0DZX.** `Curves^{lci+} = Curves^{lci} ∩ Curves^{+}`, the strictly full subcategory of
 > families of curves with local complete intersection structure morphism and singular locus finite
@@ -64,7 +64,7 @@ theorem curvesLciPlus_isOpenSubstack :
         (curvesSubstackInclusion B hZ _ (isOpenCurvesLocus_lciPlus B hZ).prop_of_hom)
 ```
 
-**`AlgebraicGeometry.factors_curvesLciPlus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLciPlus.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesLciPlus.lean#L126). The attribute's comment: “part (2): the classifying morphism of a family of curves factors through Curves^{lci+} iff the family is a local complete intersection morphism whose singular locus, with any (equivalently, some) closed subspace structure, is finite over the base”.
+**`AlgebraicGeometry.factors_curvesLciPlus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLciPlus.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesLciPlus.lean#L126). The attribute's comment: “part (2): the classifying morphism of a family of curves factors through Curves^\{lci+} iff the family is a local complete intersection morphism whose singular locus, with any (equivalently, some) closed subspace structure, is finite over the base”.
 
 > **Stacks 0DZX, part (2).** The classifying morphism of a family of curves `X ⟶ S` factors
 > through `Curves^{lci+}` exactly when `X ⟶ S` is a local complete intersection morphism and its
@@ -95,7 +95,7 @@ theorem factors_curvesLciPlus_iff (U : BigFppfOver B integerBase hZ)
           Space.IsFinite B integerBase hZ (Z.ι ≫ X.toBase.hom))
 ```
 
-**`AlgebraicGeometry.factors_curvesLciPlus_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLciPlus.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesLciPlus.lean#L185). The attribute's comment: “part (3): for a proper scheme of dimension at most one over a field, the classifying morphism factors through Curves^{lci+} iff the scheme is a local complete intersection over the field and is smooth over it except at finitely many points”.
+**`AlgebraicGeometry.factors_curvesLciPlus_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLciPlus.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesLciPlus.lean#L185). The attribute's comment: “part (3): for a proper scheme of dimension at most one over a field, the classifying morphism factors through Curves^\{lci+} iff the scheme is a local complete intersection over the field and is smooth over it except at finitely many points”.
 
 > **Stacks 0DZX, part (3).** Let `X` be a proper scheme of dimension at most one over a field
 > `k` (with `Spec k` in the site, so that the classifying morphism `Spec k ⟶ Curves` of `X` exists).
@@ -116,7 +116,7 @@ theorem factors_curvesLciPlus_over_field_iff
       IsLocalCompleteIntersectionMorphism X.hom ∧ (X.hom.smoothLocus : Set X.left)ᶜ.Finite
 ```
 
-**`AlgebraicGeometry.isSmoothOverIntegers_curvesLciPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLciPlusSmoothUnconditional.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesLciPlusSmoothUnconditional.lean#L44). The attribute's comment: “part (1): Curves^{lci+} → Spec(ℤ) is smooth, on the algebraic stack of curves”.
+**`AlgebraicGeometry.isSmoothOverIntegers_curvesLciPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesLciPlusSmoothUnconditional.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesLciPlusSmoothUnconditional.lean#L44). The attribute's comment: “part (1): Curves^\{lci+} → Spec(ℤ) is smooth, on the algebraic stack of curves”.
 
 > The morphism `Curves^{lci+} → Spec(ℤ)` is smooth. Here
 > `Curves^{lci+} = Curves^{lci} ∩ Curves^{+}` is the open substack of the algebraic stack of curves

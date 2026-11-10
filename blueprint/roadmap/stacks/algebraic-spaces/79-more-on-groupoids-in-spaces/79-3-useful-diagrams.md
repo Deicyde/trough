@@ -41,7 +41,7 @@ Declarations registered for the tag:
 
 [Tag 0451](https://stacks.math.columbia.edu/tag/0451) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.commonTargetPairsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/CommonTargetPairs.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/CommonTargetPairs.lean#L108). The attribute's comment: “the displayed diagram, through its vertical comparison pr_0 × c ∘ (i,1)”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.commonTargetPairsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/CommonTargetPairs.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/CommonTargetPairs.lean#L108). The attribute's comment: “the displayed diagram, through its vertical comparison pr\_0 × c ∘ (i,1)”.
 
 > **Stacks 0450.** The canonical comparison `(α, β) ↦ (α, α⁻¹ ∘ β)` of the space of pairs of
 > arrows of a groupoid in algebraic spaces with a common target with the space of composable pairs
@@ -97,7 +97,7 @@ theorem isPullback_fst_snd_source_target (G : GroupoidInAlgebraicSpaces C S hS B
       G.source G.target
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.commonTargetPairsComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/CommonTargetPairs.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/CommonTargetPairs.lean#L243). The attribute's comment: “the vertical comparison pr_0 × c ∘ (i, 1)”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.commonTargetPairsComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/CommonTargetPairs.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/More/CommonTargetPairs.lean#L243). The attribute's comment: “the vertical comparison pr\_0 × c ∘ (i, 1)”.
 
 > **Stacks 0451.** The vertical comparison `pr_0 × c ∘ (i, 1)` of the diagram: it sends a pair
 > `(α, β)` of arrows with a common target to the composable pair `(α, α⁻¹ ∘ β)`.

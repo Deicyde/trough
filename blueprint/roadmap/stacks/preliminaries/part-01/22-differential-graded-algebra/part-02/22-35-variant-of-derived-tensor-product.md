@@ -231,7 +231,7 @@ def tensorWithComplexDerivedHomSourceExtEquivOver
             (Rep.{u, u, u, u, u, o} X R K).algebra N)))) ≃+ (M ⟶ N⟦n⟧)
 ```
 
-**`AlgebraicGeometry.RingedSite.tensorWithComplexDerivedHomTargetExtEquivOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexDerivedExtClauseOver.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexDerivedExtClauseOver.lean#L263). The attribute's comment: “the target of the canonical map in D(R) read on cohomology: its degree-n cohomology is Ext^n_{D(O)}(M ⊗_E^𝐋 K, N ⊗_E^𝐋 K), for every M, N in D(E, d)”.
+**`AlgebraicGeometry.RingedSite.tensorWithComplexDerivedHomTargetExtEquivOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexDerivedExtClauseOver.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexDerivedExtClauseOver.lean#L263). The attribute's comment: “the target of the canonical map in D(R) read on cohomology: its degree-n cohomology is Ext^n\_\{D(O)}(M ⊗\_E^𝐋 K, N ⊗\_E^𝐋 K), for every M, N in D(E, d)”.
 
 > **Stacks 0CS6, the target of the canonical map in `D(R)`**, read on cohomology and *for
 > every* `M`, `N` *in* `D(E, d)`. The degree-`n` cohomology of the target of
@@ -263,7 +263,7 @@ def tensorWithComplexDerivedHomTargetExtEquivOver
         ((tensorWithComplexDerived.{u, u, u, u, u, o} X R K).obj N)⟦n⟧)
 ```
 
-**`AlgebraicGeometry.RingedSite.tensorWithComplexDerivedHomMapDerivedModulesOver_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexDerivedExtClauseOver.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexDerivedExtClauseOver.lean#L299). The attribute's comment: “H^n of the canonical map is the Ext map induced by - ⊗_E^𝐋 K, for every M, N in D(E, d) and every n, in the source's D(R)”.
+**`AlgebraicGeometry.RingedSite.tensorWithComplexDerivedHomMapDerivedModulesOver_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexDerivedExtClauseOver.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexDerivedExtClauseOver.lean#L299). The attribute's comment: “H^n of the canonical map is the Ext map induced by - ⊗\_E^𝐋 K, for every M, N in D(E, d) and every n, in the source's D(R)”.
 
 > **Stacks 0CS6, the central clause, in the source's `D(R)`.** The degree-`n` cohomology of
 > the canonical map
@@ -303,7 +303,7 @@ theorem tensorWithComplexDerivedHomMapDerivedModulesOver_homology
         (tensorWithComplexDerivedHomSourceExtEquivOver X R K M N n η)
 ```
 
-**`AlgebraicGeometry.RingedSite.tensorWithComplexDerivedHomMapModulesOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexDerivedHomModulesOver.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexDerivedHomModulesOver.lean#L213). The attribute's comment: “the canonical map out of the differential graded Hom complex, into RHom_O(M ⊗_E K, N ⊗_E K), in the source's D(R)”.
+**`AlgebraicGeometry.RingedSite.tensorWithComplexDerivedHomMapModulesOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexDerivedHomModulesOver.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexDerivedHomModulesOver.lean#L213). The attribute's comment: “the canonical map out of the differential graded Hom complex, into RHom\_O(M ⊗\_E K, N ⊗\_E K), in the source's D(R)”.
 
 > **The canonical map in `D(R)`.** The differential graded functor of Tag 09LV acts on the
 > `R`-module-valued differential graded Hom complexes, and the Hom complex of two complexes of
@@ -327,7 +327,7 @@ def tensorWithComplexDerivedHomMapModulesOver
             ((tensorWithComplexDG.{u, u, u, u, u, o} X R K).functor.obj N)))
 ```
 
-**`AlgebraicGeometry.RingedSite.tensorWithComplexDerivedHomMapDerivedModulesOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexDerivedHomModulesOver.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexDerivedHomModulesOver.lean#L330). The attribute's comment: “the canonical map RHom(M, N) ⟶ RHom_O(M ⊗_E^𝐋 K, N ⊗_E^𝐋 K) in the source's D(R), for every M, N in D(E, d)”.
+**`AlgebraicGeometry.RingedSite.tensorWithComplexDerivedHomMapDerivedModulesOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexDerivedHomModulesOver.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexDerivedHomModulesOver.lean#L330). The attribute's comment: “the canonical map RHom(M, N) ⟶ RHom\_O(M ⊗\_E^𝐋 K, N ⊗\_E^𝐋 K) in the source's D(R), for every M, N in D(E, d)”.
 
 > **The canonical map `RHom(M, N) ⟶ RHom_O(M ⊗_E^𝐋 K^•, N ⊗_E^𝐋 K^•)` in `D(R)`**, *for every*
 > `M`, `N` *in* `D(E, d)`. The canonical map of

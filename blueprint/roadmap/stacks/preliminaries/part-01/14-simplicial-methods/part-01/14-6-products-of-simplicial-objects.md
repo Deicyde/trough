@@ -16,7 +16,7 @@ Section 14.6 of the Stacks Project, [Tag 016P](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.combineCones`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.combineCones#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L93) (StacksFrontier): “(1)–(3), for J = the pair and K = Δᵒᵖ: the termwise product U_n × V_n with induced d_i, s_i”.
+- [`CategoryTheory.Limits.combineCones`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.combineCones#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L93) (StacksFrontier): “(1)–(3), for J = the pair and K = Δᵒᵖ: the termwise product U\_n × V\_n with induced d\_i, s\_i”.
 
 ## Tag 016R, a lemma
 

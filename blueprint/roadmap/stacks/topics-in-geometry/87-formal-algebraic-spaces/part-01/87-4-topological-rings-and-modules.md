@@ -14,7 +14,7 @@ Section 87.4 of the Stacks Project, [Tag 0AMQ](https://stacks.math.columbia.edu/
 
 [Tag 0AMR](https://stacks.math.columbia.edu/tag/0AMR) in the Stacks Project.
 
-**`TopologicalModule.Nonuniform.exists_pow_X_smul_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/NonuniformModule.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/NonuniformModule.lean#L128). The attribute's comment: “nonuniform_module_example”.
+**`TopologicalModule.Nonuniform.exists_pow_X_smul_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/NonuniformModule.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/NonuniformModule.lean#L128). The attribute's comment: “nonuniform\_module\_example”.
 
 > The pointwise condition of the source: for every `m` and every `x ∈ ⨁_{n ∈ ℕ} k[[t]]` there
 > is a `j` with `t ^ j • x ∈ M m`. It holds because `x` has only finitely many nonzero
@@ -25,7 +25,7 @@ theorem exists_pow_X_smul_mem (m : ℕ) (x : ℕ →₀ PowerSeries k) :
     ∃ j : ℕ, (X : PowerSeries k) ^ j • x ∈ coordinateSubmodule k m
 ```
 
-**`TopologicalModule.Nonuniform.not_exists_forall_pow_X_smul_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/NonuniformModule.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/NonuniformModule.lean#L194). The attribute's comment: “nonuniform_module_example”.
+**`TopologicalModule.Nonuniform.not_exists_forall_pow_X_smul_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/NonuniformModule.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/NonuniformModule.lean#L194). The attribute's comment: “nonuniform\_module\_example”.
 
 > The uniform condition fails: for `m ≥ 1` there is no `j` with `t ^ j • M ⊆ M m`.
 
@@ -35,7 +35,7 @@ theorem not_exists_forall_pow_X_smul_mem {m : ℕ} (hm : 1 ≤ m) :
       (X : PowerSeries k) ^ j • x ∈ coordinateSubmodule k m
 ```
 
-**`TopologicalModule.Nonuniform.exists_isLinearTopology_not_exists_isOpen_ideal_smul_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/NonuniformModule.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/NonuniformModule.lean#L217). The attribute's comment: “nonuniform_module_example”.
+**`TopologicalModule.Nonuniform.exists_isLinearTopology_not_exists_isOpen_ideal_smul_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/NonuniformModule.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/NonuniformModule.lean#L217). The attribute's comment: “nonuniform\_module\_example”.
 
 > The source's example, as an existence statement: over `R = k[[t]]` with the `t`-adic
 > topology there is a linearly topologized `R`-module `M`, with a fundamental system `N` of open
@@ -53,7 +53,7 @@ theorem exists_isLinearTopology_not_exists_isOpen_ideal_smul_mem :
           ∀ f ∈ I, ∀ x : ℕ →₀ PowerSeries k, f • x ∈ N 1
 ```
 
-**`TopologicalModule.continuousSMul_iff_forall_exists_smul_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/ScalarContinuity.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/ScalarContinuity.lean#L53). The attribute's comment: “scalar_continuity_criterion”.
+**`TopologicalModule.continuousSMul_iff_forall_exists_smul_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/ScalarContinuity.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/ScalarContinuity.lean#L53). The attribute's comment: “scalar\_continuity\_criterion”.
 
 > **Tag 0AMR.** Let `I` be a fundamental system of open ideals of a topological ring `R` and
 > let `N` be a fundamental system of open submodules of an `R`-module `M`. Then scalar
@@ -67,7 +67,7 @@ theorem continuousSMul_iff_forall_exists_smul_mem
     ContinuousSMul R M ↔ ∀ (x : M) (μ : κ), ∃ l : ι, ∀ f ∈ I l, f • x ∈ N μ
 ```
 
-**`TopologicalModule.continuousSMul_iff_forall_exists_coset_smul_coset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/ScalarContinuity.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/ScalarContinuity.lean#L85). The attribute's comment: “scalar_continuity_criterion”.
+**`TopologicalModule.continuousSMul_iff_forall_exists_coset_smul_coset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/ScalarContinuity.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/ScalarContinuity.lean#L85). The attribute's comment: “scalar\_continuity\_criterion”.
 
 > **Tag 0AMR.** The displayed form of the continuity of `R × M → M`: for all `f`, `x` and `μ`
 > there are `λ` and `ν` with `(f + I λ) • (x + N ν) ⊆ f • x + N μ`. The source deduces it from
@@ -82,7 +82,7 @@ theorem continuousSMul_iff_forall_exists_coset_smul_coset
       ∀ g ∈ I l, ∀ y ∈ N ν, (f + g) • (x + y) - f • x ∈ N μ
 ```
 
-**`TopologicalRing.continuous_add_of_hasBasis_addSubgroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean#L166). The attribute's comment: “addition_continuous”.
+**`TopologicalRing.continuous_add_of_hasBasis_addSubgroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean#L166). The attribute's comment: “addition\_continuous”.
 
 > Addition is continuous when translates of additive subgroups form a neighborhood basis.
 
@@ -95,7 +95,7 @@ public theorem continuous_add_of_hasBasis_addSubgroup
     Continuous (fun p : M × M => p.1 + p.2)
 ```
 
-**`TopologicalRing.exists_isOpen_ideal_map_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean#L192). The attribute's comment: “continuous_ring_map_open_ideal”. References: EGA 0 (19.0.3), “𝔍B ⊂ 𝔎 clause”; EGA 0 (7.7.5), “existence of open J”.
+**`TopologicalRing.exists_isOpen_ideal_map_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean#L192). The attribute's comment: “continuous\_ring\_map\_open\_ideal”. References: EGA 0 (19.0.3), “𝔍B ⊂ 𝔎 clause”; EGA 0 (7.7.5), “existence of open J”.
 
 > Every open ideal in the target of a continuous ring homomorphism contains the extension
 > of an open ideal from the source.
@@ -254,7 +254,7 @@ Declarations registered for the tag:
 
 [Tag 0F1S](https://stacks.math.columbia.edu/tag/0F1S) in the Stacks Project.
 
-**`TopologicalRing.exists_isOpen_adic_submodule_completionAlong`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionAlong.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionAlong.lean#L439). The attribute's comment: “open_adic_completion”.
+**`TopologicalRing.exists_isOpen_adic_submodule_completionAlong`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionAlong.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionAlong.lean#L439). The attribute's comment: “open\_adic\_completion”.
 
 > The completion of a module containing an open `I`-adic submodule again contains an open
 > submodule with the `I`-adic topology.
@@ -275,7 +275,7 @@ public lemma exists_isOpen_adic_submodule_completionAlong
           (TopologicalRing.CompletionAlong.limitTopology I N) = I.adicModuleTopology P
 ```
 
-**`TopologicalRing.CompletionAlong.quotPowEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionAlong.lean, line 674](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionAlong.lean#L674). The attribute's comment: “completion_mod_ideal_power”.
+**`TopologicalRing.CompletionAlong.quotPowEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionAlong.lean, line 674](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionAlong.lean#L674). The attribute's comment: “completion\_mod\_ideal\_power”.
 
 > The second conclusion of Tag 0F1S at the level of the filtration `I ^ n N`:
 > `M^ / I ^ n M^ = M / I ^ n M`.
@@ -286,7 +286,7 @@ public noncomputable def quotPowEquiv (I : Ideal R) (hI : I.FG) (N : Submodule R
       (M ⧸ (I ^ n • ⊤ : Submodule R M))
 ```
 
-**`TopologicalRing.exists_isOpen_adic_submodule_completionOverOpen`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionAlong.lean, line 874](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionAlong.lean#L874). The attribute's comment: “open_adic_completion”.
+**`TopologicalRing.exists_isOpen_adic_submodule_completionOverOpen`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionAlong.lean, line 874](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionAlong.lean#L874). The attribute's comment: “open\_adic\_completion”.
 
 > Tag 0F1S, first conclusion, over the completion of `M` taken over all of its open
 > submodules: `M^` has an open submodule whose topology is `I`-adic.
@@ -302,7 +302,7 @@ public lemma exists_isOpen_adic_submodule_completionOverOpen (I : Ideal R) (hI :
           (CompletionOverOpen.limitTopology R M) = I.adicModuleTopology P
 ```
 
-**`TopologicalRing.completionOverOpenQuotPowEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionAlong.lean, line 914](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionAlong.lean#L914). The attribute's comment: “completion_mod_ideal_power”.
+**`TopologicalRing.completionOverOpenQuotPowEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionAlong.lean, line 914](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionAlong.lean#L914). The attribute's comment: “completion\_mod\_ideal\_power”.
 
 > Tag 0F1S, second conclusion, over the completion of `M` taken over all of its open
 > submodules: `M^ / I ^ n M^ = M / I ^ n M` for every `n`, in particular for every `n ≥ 1`.
@@ -329,7 +329,7 @@ public noncomputable def completionOverOpenQuotPowEquiv (I : Ideal R) (hI : I.FG
 def tensorProductTopology : TopologicalSpace (M ⊗[R] N)
 ```
 
-**`TopologicalRing.CompletedTensorProduct`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct.lean#L297). The attribute's comment: “completed tensor product”. References: EGA 0 (7.7.2), “completed tensor product”; EGA 0 (7.7.1); EGA 0 (7.7.5), “completed tensor product”; SGA 3 VIIB (0.3), “def of L⊗̂M”; SGA 3 VIIB (0.5.A), “def of M⊗̂_k N”.
+**`TopologicalRing.CompletedTensorProduct`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct.lean#L297). The attribute's comment: “completed tensor product”. References: EGA 0 (7.7.2), “completed tensor product”; EGA 0 (7.7.1); EGA 0 (7.7.5), “completed tensor product”; SGA 3 VIIB (0.3), “def of L⊗̂M”; SGA 3 VIIB (0.5.A), “def of M⊗̂\_k N”.
 
 > The completed tensor product of two topologized modules: the uniform
 > completion of their tensor product with its tensor product topology.
@@ -503,7 +503,7 @@ public theorem closure_map_eq_ker_completedTensorProduct
 
 [Tag 0GB4](https://stacks.math.columbia.edu/tag/0GB4) in the Stacks Project.
 
-**`TopologicalRing.isAdicStar_completedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarBaseChange.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarBaseChange.lean#L84). The attribute's comment: “the adic_finite clauses, assembled as membership in WAdm^{adic*}”.
+**`TopologicalRing.isAdicStar_completedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarBaseChange.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarBaseChange.lean#L84). The attribute's comment: “the adic\_finite clauses, assembled as membership in WAdm^\{adic*}”.
 
 > The completed tensor product of two objects of `WAdm^{adic*}` over a third is again an
 > object of `WAdm^{adic*}`: it is adic and it has a finitely generated ideal of definition.
@@ -519,7 +519,7 @@ theorem isAdicStar_completedTensorProduct {A₀ A₁ A : Type u}
     IsAdicStar (CompletedTensorProduct (R := A₀) (M := A₁) (N := A))
 ```
 
-**`TopologicalRing.isCountablyWeaklyAdmissible_completedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountablyIndexedBaseChange.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CountablyIndexedBaseChange.lean#L73). The attribute's comment: “the weakly_admissible and countable_basis clauses, assembled as membership in WAdm^count”.
+**`TopologicalRing.isCountablyWeaklyAdmissible_completedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountablyIndexedBaseChange.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CountablyIndexedBaseChange.lean#L73). The attribute's comment: “the weakly\_admissible and countable\_basis clauses, assembled as membership in WAdm^count”.
 
 > **Lemma 87.4.12 (Stacks 0GB4) on the class `WAdm^count`.** The completed tensor product of
 > two countably indexed weakly admissible topological rings over a third is again one: it is
@@ -541,7 +541,7 @@ public theorem isCountablyWeaklyAdmissible_completedTensorProduct {A₀ A₁ A :
       (CompletedTensorProduct (R := A₀) (M := A₁) (N := A))
 ```
 
-**`TopologicalRing.completedTensorProduct_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L364). The attribute's comment: “adic_finite”.
+**`TopologicalRing.completedTensorProduct_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L364). The attribute's comment: “adic\_finite”.
 
 > The completed tensor product of two pre-adic, linearly topologized algebras with finitely
 > generated ideals of definition is adic.
@@ -560,7 +560,7 @@ public theorem completedTensorProduct_isAdic
     TopologicalRing.IsAdic (CompletedTensorProduct (R := B) (M := A) (N := C))
 ```
 
-**`TopologicalRing.exists_fg_ideal_of_definition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L383). The attribute's comment: “adic_finite”.
+**`TopologicalRing.exists_fg_ideal_of_definition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L383). The attribute's comment: “adic\_finite”.
 
 > The completed tensor product has a finitely generated ideal of definition.
 
@@ -579,7 +579,7 @@ public theorem exists_fg_ideal_of_definition
       K.FG ∧ TopologicalRing.IsIdealOfDefinition K
 ```
 
-**`TopologicalRing.completedTensorProduct_isNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean, line 654](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L654). The attribute's comment: “adic_noetherian”.
+**`TopologicalRing.completedTensorProduct_isNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean, line 654](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L654). The attribute's comment: “adic\_noetherian”.
 
 > If the induced quotient map is of finite type, the completed tensor product
 > of pre-adic Noetherian algebras is Noetherian.
@@ -617,7 +617,7 @@ public theorem completedTensorProduct_isAdmissible
       (TopologicalRing.CompletedTensorProduct (R := B) (M := A) (N := C))
 ```
 
-**`TopologicalRing.isCountablyGenerated_nhds_zero_completedTensorProduct`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean, line 922](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L922). The attribute's comment: “countable_basis”.
+**`TopologicalRing.isCountablyGenerated_nhds_zero_completedTensorProduct`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean, line 922](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L922). The attribute's comment: “countable\_basis”.
 
 > The completed tensor product of two linearly topologized rings with
 > countable fundamental systems of open ideals has a countable fundamental
@@ -635,7 +635,7 @@ public lemma isCountablyGenerated_nhds_zero_completedTensorProduct
       (0 : TopologicalRing.CompletedTensorProduct (R := B) (M := A) (N := C))).IsCountablyGenerated
 ```
 
-**`TopologicalRing.completedTensorProduct_isWeaklyAdmissible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean, line 951](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L951). The attribute's comment: “weakly_admissible”.
+**`TopologicalRing.completedTensorProduct_isWeaklyAdmissible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean, line 951](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L951). The attribute's comment: “weakly\_admissible”.
 
 > The completed tensor product of two weakly pre-admissible linearly
 > topologized rings is weakly admissible.

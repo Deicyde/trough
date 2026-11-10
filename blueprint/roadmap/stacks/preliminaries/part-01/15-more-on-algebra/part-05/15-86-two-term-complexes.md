@@ -155,8 +155,8 @@ theorem exists_hom_Q_map_eq_of_comp_canonical
 > isomorphism in `D(R)` (`p` a quasi-iso), postcomposition identifies
 > `Hom_{D(R)}(F, K) ≅ Hom_{D(R)}(M, K)`. By `precomp_quotient_map_projRes_bijective`, precomposition
 > with `[p]` is a bijection `Hom_{K(R)}(M, K) → Hom_{K(R)}(F, K)`. Chasing the square
-> (`Qh.map` is natural and `toHomD = Qh.map`), `toHomD : Hom_{K(R)}(M, K) →
-> Hom_{D(R)}(M, K)` is the composite of these three bijections, hence bijective.
+> (`Qh.map` is natural and `toHomD = Qh.map`), `toHomD : Hom\_\{K(R)}(M, K) →
+> Hom\_\{D(R)}(M, K)` is the composite of these three bijections, hence bijective.
 
 ```lean
 theorem toHomD_bijective

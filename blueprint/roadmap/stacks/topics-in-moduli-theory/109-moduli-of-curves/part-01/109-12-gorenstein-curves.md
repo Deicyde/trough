@@ -14,7 +14,7 @@ Section 109.12 of the Stacks Project, [Tag 0E1L](https://stacks.math.columbia.ed
 
 [Tag 0E1M](https://stacks.math.columbia.edu/tag/0E1M) in the Stacks Project.
 
-**`AlgebraicGeometry.isOpenImmersion_curvesSubstackInclusion_gorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinSubstack.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinSubstack.lean#L84). The attribute's comment: “the inclusion of Curves^{Gorenstein} into Curves is representable by algebraic spaces and an open immersion”.
+**`AlgebraicGeometry.isOpenImmersion_curvesSubstackInclusion_gorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinSubstack.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinSubstack.lean#L84). The attribute's comment: “the inclusion of Curves^\{Gorenstein} into Curves is representable by algebraic spaces and an open immersion”.
 
 > **Stacks 0E1M, `Curves^{Gorenstein}` is open in `Curves`.** The inclusion into the category
 > fibred in groupoids of families of curves of the full subcategory `Curves^{Gorenstein}` of the
@@ -57,7 +57,7 @@ theorem factorsThrough_curvesSubstack_gorenstein_iff
 > **Stacks 0E1M, part (2).** Let `g : T ⟶ W` be a morphism of the big fppf site of the integers
 > whose target scheme is the spectrum of a field `k`, whose underlying morphism of schemes is
 > proper, and whose source scheme `X` has dimension at most one, and let `z : (Sch/Spec(k)) →
-> Curves` classify the family of curves of `g`. Then `z` factors through `Curves^{Gorenstein}` if
+> Curves` classify the family of curves of `g`. Then `z` factors through `Curves^\{Gorenstein}` if
 > and only if `X` is Gorenstein.
 
 ```lean
@@ -87,7 +87,7 @@ theorem factorsThrough_curvesSubstack_gorenstein_over_field_iff
 
 [Tag 0E6M](https://stacks.math.columbia.edu/tag/0E6M) in the Stacks Project.
 
-**`AlgebraicGeometry.isOpenImmersion_curvesSubstackInclusion_gorensteinDimOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinDimOneSubstack.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinDimOneSubstack.lean#L121). The attribute's comment: “the inclusion of Curves^{Gorenstein,1} into Curves is representable by algebraic spaces and an open immersion”.
+**`AlgebraicGeometry.isOpenImmersion_curvesSubstackInclusion_gorensteinDimOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinDimOneSubstack.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinDimOneSubstack.lean#L121). The attribute's comment: “the inclusion of Curves^\{Gorenstein,1} into Curves is representable by algebraic spaces and an open immersion”.
 
 > **`Curves^{Gorenstein,1}` is open in `Curves`.** The inclusion into the category fibred in
 > groupoids of families of curves of the full subcategory `Curves^{Gorenstein,1}` of the families

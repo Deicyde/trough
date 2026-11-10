@@ -224,7 +224,7 @@ def bivariantPieceRestrictionHomOfInvertible :
         (pieceMap_comp_structureMorphism C sX sY f hf UX UY a ha i) p
 ```
 
-**`Stacks.Chow.bivariantPieceEquivOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantDisjoint/PieceGysinSystemOfInvertible.lean, line 550](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantDisjoint/PieceGysinSystemOfInvertible.lean#L550). The attribute's comment: “A^p(X ⟶ Y) = ∏_i A^p(X_i ⟶ Y_{a(i)}) at the Gysin system of the first Chern class rule, with all three Gysin compatibilities discharged”.
+**`Stacks.Chow.bivariantPieceEquivOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantDisjoint/PieceGysinSystemOfInvertible.lean, line 550](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantDisjoint/PieceGysinSystemOfInvertible.lean#L550). The attribute's comment: “A^p(X ⟶ Y) = ∏\_i A^p(X\_i ⟶ Y\_\{a(i)}) at the Gysin system of the first Chern class rule, with all three Gysin compatibilities discharged”.
 
 > **Stacks 0FDZ.** `A^p(X ⟶ Y) = ∏_{i ∈ I} A^p(X_i ⟶ Y_{a(i)})` at the Gysin system of the
 > first Chern class rule of an invertible module: a bivariant class of degree `p` for `f : X ⟶ Y`
@@ -302,7 +302,7 @@ theorem isBivariantClassComposition_bivariantCompositeOfInvertible
       (bivariantCompositeOfInvertible C sX sY sZ f g hf hg p q a b)
 ```
 
-**`Stacks.Chow.completedBivariantGroup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedGroup.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedGroup.lean#L68). The attribute's comment: “completed_bivariant_group”.
+**`Stacks.Chow.completedBivariantGroup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedGroup.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/CompletedGroup.lean#L68). The attribute's comment: “completed\_bivariant\_group”.
 
 > **Stacks 0FE0.** The completed bivariant group `A^*(X ⟶ Y)^∧` of a morphism `f : X ⟶ Y` of
 > schemes locally of finite type over the base: the product, over the connected components `X_i`

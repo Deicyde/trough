@@ -50,7 +50,7 @@ theorem isFinite_iff_representable {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 03ZP](https://stacks.math.columbia.edu/tag/03ZP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsFinite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Finite.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Finite.lean#L49). The attribute's comment: “finite_morphism”.
+**`AlgebraicGeometry.Space.IsFinite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Finite.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Finite.lean#L49). The attribute's comment: “finite\_morphism”.
 
 > A morphism of algebraic spaces over `S` is *finite* when, for every object `U` of the big fppf
 > site with affine underlying scheme and every morphism `ξ` from `yoneda.obj U` to the target, the
@@ -62,7 +62,7 @@ abbrev IsFinite (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
     {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsIntegralHom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Finite.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Finite.lean#L65). The attribute's comment: “integral_morphism”.
+**`AlgebraicGeometry.Space.IsIntegralHom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Finite.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Finite.lean#L65). The attribute's comment: “integral\_morphism”.
 
 > A morphism of algebraic spaces over `S` is *integral* when, for every object `Z` of the big
 > fppf site with affine underlying scheme and every morphism `g` from `yoneda.obj Z` to the target,

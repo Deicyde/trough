@@ -239,7 +239,7 @@ theorem twistsOnBasicOpen {f : S} {d : ℕ} (hf : f ∈ 𝒮 d) :
 
 [Tag 01MT](https://stacks.math.columbia.edu/tag/01MT) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.isInvertible_twistingSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L141). The attribute's comment: “the sheaves 𝒪_X(n) are invertible”. References: EGA II (3.2.5), “Second assertion”.
+**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.isInvertible_twistingSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L141). The attribute's comment: “the sheaves 𝒪\_X(n) are invertible”. References: EGA II (3.2.5), “Second assertion”.
 
 > **Stacks 01MT: the sheaves `𝒪_X(n)` are invertible.**
 >
@@ -291,7 +291,7 @@ public theorem isIso_twistSheafMultiplicationMap (hcover : DegreeOneCover 𝒮)
     IsIso (twistSheafMultiplicationMap 𝒮 F n m)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.nonempty_tensorPowModule_iso_twistingSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L258). The attribute's comment: “the induced identification 𝒪_X(1)^{⊗ n} ≅ 𝒪_X(n)”. References: EGA II (2.5.14), “(2.5.14.2)”.
+**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.nonempty_tensorPowModule_iso_twistingSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L258). The attribute's comment: “the induced identification 𝒪\_X(1)^\{⊗ n} ≅ 𝒪\_X(n)”. References: EGA II (2.5.14), “(2.5.14.2)”.
 
 > **Stacks 01MT: the induced identification `𝒪_X(1)^{⊗ n} ≅ 𝒪_X(n)`**, for every integer `n`,
 > at the canonical integral tensor power `Stacks.Ample.tensorPowModule` of Tag 01CU.
@@ -325,7 +325,7 @@ public theorem isIso_moduleTwistMap (hcover : DegreeOneCover 𝒮) (n : ℤ) :
     IsIso (ProjShifted.moduleTwistMap 𝒮 𝒨 n)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.moduleTwistIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L324). The attribute's comment: “the induced isomorphism M̃ ⊗ 𝒪_X(n) ≅ M(n)~”.
+**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.moduleTwistIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L324). The attribute's comment: “the induced isomorphism M̃ ⊗ 𝒪\_X(n) ≅ M(n)~”.
 
 > **Stacks 01MT: the induced isomorphism `M̃ ⊗_{𝒪_X} 𝒪_X(n) = M̃(n) ≅ M(n)̃`.**
 
@@ -425,7 +425,7 @@ theorem nonvanishingLocus_degreeSection_inter (d n : ℕ) (f : 𝒮 (n * d)) :
 
 [Tag 01MW](https://stacks.math.columbia.edu/tag/01MW) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.CommonDegreeTwist.exists_degree_forall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CommonDegreeTwist/AffineSectionBasis.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CommonDegreeTwist/AffineSectionBasis.lean#L285). The attribute's comment: “degree_exists”.
+**`Stacks.AlgebraicGeometry.CommonDegreeTwist.exists_degree_forall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CommonDegreeTwist/AffineSectionBasis.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CommonDegreeTwist/AffineSectionBasis.lean#L285). The attribute's comment: “degree\_exists”.
 
 > **Stacks Tag 01MW.** Let `S` be a graded ring, `X = Proj(S)` and `Y ⊆ X` a quasi-compact
 > open subscheme; write `𝒪_Y(n)` for the restriction of `𝒪_X(n)` to `Y`. Then there is an integer

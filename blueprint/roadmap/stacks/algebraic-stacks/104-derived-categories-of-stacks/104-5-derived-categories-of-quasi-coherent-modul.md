@@ -14,7 +14,7 @@ Section 104.5 of the Stacks Project, [Tag 07B5](https://stacks.math.columbia.edu
 
 [Tag 07B6](https://stacks.math.columbia.edu/tag/07B6) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.derivedCategoryQuasicoherent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherent.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherent.lean#L152). The attribute's comment: “the Verdier quotient D_QCoh(𝒪_𝒳) = D_LQCoh^fbc(𝒪_𝒳) / D_(Parasitic ∩ LQCoh^fbc)(𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.derivedCategoryQuasicoherent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherent.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherent.lean#L152). The attribute's comment: “the Verdier quotient D\_QCoh(𝒪\_𝒳) = D\_LQCoh^fbc(𝒪\_𝒳) / D\_(Parasitic ∩ LQCoh^fbc)(𝒪\_𝒳)”.
 
 > **Stacks 07B6.** The *derived category of `𝒪_𝒳`-modules with quasi-coherent cohomology
 > sheaves* of an algebraic stack `𝒳`, that is the Verdier quotient
@@ -28,7 +28,7 @@ Section 104.5 of the Stacks Project, [Tag 07B5](https://stacks.math.columbia.edu
 abbrev derivedCategoryQuasicoherent
 ```
 
-**`AlgebraicGeometry.Stack.toDerivedCategoryQuasicoherent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherent.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherent.lean#L157). The attribute's comment: “the quotient functor onto D_QCoh(𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.toDerivedCategoryQuasicoherent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherent.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherent.lean#L157). The attribute's comment: “the quotient functor onto D\_QCoh(𝒪\_𝒳)”.
 
 > **Stacks 07B6**, the quotient functor `D_{LQCoh^fbc}(𝒪_𝒳) ⟶ D_QCoh(𝒪_𝒳)` of the Verdier
 > quotient.
@@ -39,7 +39,7 @@ abbrev toDerivedCategoryQuasicoherent :
       derivedCategoryQuasicoherent B E h S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.derivedCategoryQuasicoherentSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean#L265). The attribute's comment: “the Verdier quotient D_QCoh(𝒪_𝒳) = D_LQCoh^fbc(𝒪_𝒳) / D_(Parasitic ∩ LQCoh^fbc)(𝒪_𝒳), with the flat base change property of LQCoh^fbc read on sheaves of modules as in the source”.
+**`AlgebraicGeometry.Stack.derivedCategoryQuasicoherentSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean#L265). The attribute's comment: “the Verdier quotient D\_QCoh(𝒪\_𝒳) = D\_LQCoh^fbc(𝒪\_𝒳) / D\_(Parasitic ∩ LQCoh^fbc)(𝒪\_𝒳), with the flat base change property of LQCoh^fbc read on sheaves of modules as in the source”.
 
 > **Stacks 07B6**, at the source's `LQCoh^fbc(𝒪_𝒳)`: the derived category with
 > quasi-coherent cohomology `D_QCoh(𝒪_𝒳) = D_{LQCoh^fbc}(𝒪_𝒳) / D_{Parasitic ∩ LQCoh^fbc}(𝒪_𝒳)`,
@@ -51,7 +51,7 @@ abbrev toDerivedCategoryQuasicoherent :
 abbrev derivedCategoryQuasicoherentSheaf
 ```
 
-**`AlgebraicGeometry.Stack.toDerivedCategoryQuasicoherentSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean#L272). The attribute's comment: “the quotient functor D_LQCoh^fbc(𝒪_𝒳) ⟶ D_QCoh(𝒪_𝒳), with the flat base change property read on sheaves of modules as in the source”.
+**`AlgebraicGeometry.Stack.toDerivedCategoryQuasicoherentSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean#L272). The attribute's comment: “the quotient functor D\_LQCoh^fbc(𝒪\_𝒳) ⟶ D\_QCoh(𝒪\_𝒳), with the flat base change property read on sheaves of modules as in the source”.
 
 > **Stacks 07B6**, at the source's `LQCoh^fbc(𝒪_𝒳)`: the quotient functor.
 
@@ -65,7 +65,7 @@ abbrev toDerivedCategoryQuasicoherentSheaf :
 
 [Tag 07B7](https://stacks.math.columbia.edu/tag/07B7) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.cohomologyDerivedCategoryQuasicoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomology.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomology.lean#L327). The attribute's comment: “the cohomology functor H^i : D_QCoh(𝒪_𝒳) ⟶ QCoh(𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.cohomologyDerivedCategoryQuasicoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomology.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomology.lean#L327). The attribute's comment: “the cohomology functor H^i : D\_QCoh(𝒪\_𝒳) ⟶ QCoh(𝒪\_𝒳)”.
 
 > **Stacks 07B7.** The cohomology functor
 >
@@ -109,7 +109,7 @@ def cohomologyDerivedCategoryQuasicoherentFac (i : ℤ)
       cohomologyQuasicoherent B E h S hS 𝒳 hinc hclosed hpres hls hlsD hwp hsep i
 ```
 
-**`AlgebraicGeometry.Stack.cohomologyDerivedCategoryQuasicoherentSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean#L305). The attribute's comment: “the cohomology functor H^i : D_QCoh(𝒪_𝒳) ⟶ QCoh(𝒪_𝒳), descended from Q ∘ H^i with Q the coherator of 0778”.
+**`AlgebraicGeometry.Stack.cohomologyDerivedCategoryQuasicoherentSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean#L305). The attribute's comment: “the cohomology functor H^i : D\_QCoh(𝒪\_𝒳) ⟶ QCoh(𝒪\_𝒳), descended from Q ∘ H^i with Q the coherator of 0778”.
 
 > **Stacks 07B7**: the cohomological functor `H^i : D_QCoh(𝒪_𝒳) ⟶ QCoh(𝒪_𝒳)`, the functor
 > `Q ∘ H^i : D_{LQCoh^fbc}(𝒪_𝒳) ⟶ QCoh(𝒪_𝒳)` descended to the Verdier quotient (Stacks 05RJ),
@@ -135,7 +135,7 @@ def cohomologyDerivedCategoryQuasicoherentSheafFac (i : ℤ) :
         (flatGroupoidPresentation 𝒳).flatBaseChangeCoherator i
 ```
 
-**`AlgebraicGeometry.Stack.isHomological_cohomologyDerivedCategoryQuasicoherentSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean#L324). The attribute's comment: “the descended H^i : D_QCoh(𝒪_𝒳) ⟶ QCoh(𝒪_𝒳) is a cohomological functor”.
+**`AlgebraicGeometry.Stack.isHomological_cohomologyDerivedCategoryQuasicoherentSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean#L324). The attribute's comment: “the descended H^i : D\_QCoh(𝒪\_𝒳) ⟶ QCoh(𝒪\_𝒳) is a cohomological functor”.
 
 > **Stacks 07B7**: `H^i : D_QCoh(𝒪_𝒳) ⟶ QCoh(𝒪_𝒳)` is a cohomological functor.
 
@@ -144,7 +144,7 @@ theorem isHomological_cohomologyDerivedCategoryQuasicoherentSheaf (i : ℤ) :
     (cohomologyDerivedCategoryQuasicoherentSheaf B S hS 𝒳 i).IsHomological
 ```
 
-**`AlgebraicGeometry.Stack.isZero_iff_forall_isZero_cohomologyDerivedCategoryQuasicoherentSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean#L332). The attribute's comment: “E is zero in D_QCoh(𝒪_𝒳) if and only if H^i(E) = 0 for every i”.
+**`AlgebraicGeometry.Stack.isZero_iff_forall_isZero_cohomologyDerivedCategoryQuasicoherentSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentCohomologySheaf.lean#L332). The attribute's comment: “E is zero in D\_QCoh(𝒪\_𝒳) if and only if H^i(E) = 0 for every i”.
 
 > **Stacks 07B7**: an object `E` of `D_QCoh(𝒪_𝒳)` is zero exactly when `H^i(E) = 0` for all
 > `i`, the kernel of `Q` being exactly `Parasitic(𝒪_𝒳) ∩ LQCoh^fbc(𝒪_𝒳)` (Stacks 0779 (1)).
@@ -160,7 +160,7 @@ theorem isZero_iff_forall_isZero_cohomologyDerivedCategoryQuasicoherentSheaf
 
 [Tag 07B8](https://stacks.math.columbia.edu/tag/07B8) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.epsilonPullbackDerived`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean#L328). The attribute's comment: “the right-hand vertical arrow ε^* : D(𝒳_étale, 𝒪_𝒳) ⥤ D(𝒪_𝒳) of the diagram”.
+**`AlgebraicGeometry.Stack.epsilonPullbackDerived`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean#L328). The attribute's comment: “the right-hand vertical arrow ε^* : D(𝒳\_étale, 𝒪\_𝒳) ⥤ D(𝒪\_𝒳) of the diagram”.
 
 > **The right-hand vertical arrow of the diagram of Stacks 07B8**, the triangulated functor
 > `ε^* : D(𝒳_étale, 𝒪_𝒳) ⥤ D(𝒪_𝒳)` induced by the exact functor `ε^*` on modules.
@@ -170,7 +170,7 @@ def epsilonPullbackDerived :
     DerivedCategory (etaleModules B S hS 𝒳) ⥤ DerivedCategory (fppfModules B S hS 𝒳)
 ```
 
-**`AlgebraicGeometry.Stack.epsilonPullbackDerivedLocallyQuasicoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean#L400). The attribute's comment: “the middle vertical arrow ε^* : D_{LQCoh^fbc}(𝒳_étale, 𝒪_𝒳) ⥤ D_{LQCoh^fbc}(𝒪_𝒳) of the diagram”.
+**`AlgebraicGeometry.Stack.epsilonPullbackDerivedLocallyQuasicoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean#L400). The attribute's comment: “the middle vertical arrow ε^* : D\_\{LQCoh^fbc}(𝒳\_étale, 𝒪\_𝒳) ⥤ D\_\{LQCoh^fbc}(𝒪\_𝒳) of the diagram”.
 
 > **Stacks 07B8, the middle vertical arrow of the diagram.**  The functor
 >
@@ -184,7 +184,7 @@ def epsilonPullbackDerivedLocallyQuasicoherent :
       (derivedLocallyQuasicoherentFlatBaseChange B E h S hS 𝒳).FullSubcategory
 ```
 
-**`AlgebraicGeometry.Stack.epsilonPullbackDerivedParasitic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean#L417). The attribute's comment: “the left vertical arrow ε^* : D_{𝒫_𝒳}(𝒳_étale, 𝒪_𝒳) ⥤ D_{Parasitic ∩ LQCoh^fbc}(𝒪_𝒳) of the diagram”.
+**`AlgebraicGeometry.Stack.epsilonPullbackDerivedParasitic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean#L417). The attribute's comment: “the left vertical arrow ε^* : D\_\{𝒫\_𝒳}(𝒳\_étale, 𝒪\_𝒳) ⥤ D\_\{Parasitic ∩ LQCoh^fbc}(𝒪\_𝒳) of the diagram”.
 
 > **Stacks 07B8, the left vertical arrow of the diagram.**  The functor
 >
@@ -199,7 +199,7 @@ def epsilonPullbackDerivedParasitic :
       (derivedParasiticLocallyQuasicoherentFlatBaseChange B E h S hS 𝒳).FullSubcategory
 ```
 
-**`AlgebraicGeometry.Stack.epsilonPullbackDerived_rightSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean#L436). The attribute's comment: “the right-hand square of the diagram: the inclusion D_{LQCoh^fbc}(𝒳_étale, 𝒪_𝒳) ⊆ D(𝒳_étale, 𝒪_𝒳) followed by ε^* is ε^* followed by the inclusion D_{LQCoh^fbc}(𝒪_𝒳) ⊆ D(𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.epsilonPullbackDerived_rightSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean#L436). The attribute's comment: “the right-hand square of the diagram: the inclusion D\_\{LQCoh^fbc}(𝒳\_étale, 𝒪\_𝒳) ⊆ D(𝒳\_étale, 𝒪\_𝒳) followed by ε^* is ε^* followed by the inclusion D\_\{LQCoh^fbc}(𝒪\_𝒳) ⊆ D(𝒪\_𝒳)”.
 
 > **Stacks 07B8, the right-hand square of the diagram commutes.**  Going along the bottom row
 > from `D_{LQCoh^fbc}(𝒳_étale, 𝒪_𝒳)` into `D(𝒳_étale, 𝒪_𝒳)` and then up by `ε^*` is going up by
@@ -216,7 +216,7 @@ theorem epsilonPullbackDerived_rightSquare :
         (derivedLocallyQuasicoherentFlatBaseChange B E h S hS 𝒳).ι
 ```
 
-**`AlgebraicGeometry.Stack.epsilonPullbackDerived_leftSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean#L450). The attribute's comment: “the left-hand square of the diagram: the inclusion D_{𝒫_𝒳}(𝒳_étale, 𝒪_𝒳) ⊆ D_{LQCoh^fbc}(𝒳_étale, 𝒪_𝒳) followed by ε^* is ε^* followed by the inclusion D_{Parasitic ∩ LQCoh^fbc}(𝒪_𝒳) ⊆ D_{LQCoh^fbc}(𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.epsilonPullbackDerived_leftSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean#L450). The attribute's comment: “the left-hand square of the diagram: the inclusion D\_\{𝒫\_𝒳}(𝒳\_étale, 𝒪\_𝒳) ⊆ D\_\{LQCoh^fbc}(𝒳\_étale, 𝒪\_𝒳) followed by ε^* is ε^* followed by the inclusion D\_\{Parasitic ∩ LQCoh^fbc}(𝒪\_𝒳) ⊆ D\_\{LQCoh^fbc}(𝒪\_𝒳)”.
 
 > **Stacks 07B8, the left-hand square of the diagram commutes.**  Going along the bottom row
 > from `D_{𝒫_𝒳}(𝒳_étale, 𝒪_𝒳)` into `D_{LQCoh^fbc}(𝒳_étale, 𝒪_𝒳)` and then up by `ε^*` is going up
@@ -246,7 +246,7 @@ theorem epsilonPullbackDerived_outerRectangle :
         (derivedParasiticLocallyQuasicoherentFlatBaseChange B E h S hS 𝒳).ι
 ```
 
-**`AlgebraicGeometry.Stack.derivedCategoryQuasicoherentEtaleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean, line 524](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean#L524). The attribute's comment: “the last assertion: the induced equivalence D_{LQCoh^fbc}(𝒳_étale, 𝒪_𝒳) / D_{𝒫_𝒳}(𝒳_étale, 𝒪_𝒳) ⟶ D_QCoh(𝒪_𝒳), given that the middle vertical arrow is an equivalence matching the two inverted classes”.
+**`AlgebraicGeometry.Stack.derivedCategoryQuasicoherentEtaleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean, line 524](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentEtaleComparison.lean#L524). The attribute's comment: “the last assertion: the induced equivalence D\_\{LQCoh^fbc}(𝒳\_étale, 𝒪\_𝒳) / D\_\{𝒫\_𝒳}(𝒳\_étale, 𝒪\_𝒳) ⟶ D\_QCoh(𝒪\_𝒳), given that the middle vertical arrow is an equivalence matching the two inverted classes”.
 
 > **Stacks 07B8, the last assertion.**  If the middle vertical arrow
 >
@@ -279,7 +279,7 @@ def derivedCategoryQuasicoherentEtaleEquivalence
       derivedCategoryQuasicoherent B E h S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.epsilonPullbackDerivedSheafFlatBaseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeEtaleFppfDerivedEquivalence.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeEtaleFppfDerivedEquivalence.lean#L169). The attribute's comment: “the middle vertical arrow ε^* : D_{LQCoh^fbc}(𝒳_étale, 𝒪_𝒳) ⥤ D_{LQCoh^fbc}(𝒪_𝒳) of the diagram, for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves”.
+**`AlgebraicGeometry.Stack.epsilonPullbackDerivedSheafFlatBaseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeEtaleFppfDerivedEquivalence.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeEtaleFppfDerivedEquivalence.lean#L169). The attribute's comment: “the middle vertical arrow ε^* : D\_\{LQCoh^fbc}(𝒳\_étale, 𝒪\_𝒳) ⥤ D\_\{LQCoh^fbc}(𝒪\_𝒳) of the diagram, for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves”.
 
 > **Stacks 07B8, the middle vertical arrow of the diagram**,
 >
@@ -296,7 +296,7 @@ abbrev epsilonPullbackDerivedSheafFlatBaseChange :
         (lqcohSheafFbcFppfModules.{u, _, u} B E h S hS 𝒳)).FullSubcategory
 ```
 
-**`AlgebraicGeometry.Stack.epsilonPullbackDerivedParasiticSheafFlatBaseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeEtaleFppfDerivedEquivalence.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeEtaleFppfDerivedEquivalence.lean#L188). The attribute's comment: “the left vertical arrow ε^* : D_{𝒫_𝒳}(𝒳_étale, 𝒪_𝒳) ⥤ D_{Parasitic ∩ LQCoh^fbc}(𝒪_𝒳) of the diagram, for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves”.
+**`AlgebraicGeometry.Stack.epsilonPullbackDerivedParasiticSheafFlatBaseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeEtaleFppfDerivedEquivalence.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeEtaleFppfDerivedEquivalence.lean#L188). The attribute's comment: “the left vertical arrow ε^* : D\_\{𝒫\_𝒳}(𝒳\_étale, 𝒪\_𝒳) ⥤ D\_\{Parasitic ∩ LQCoh^fbc}(𝒪\_𝒳) of the diagram, for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves”.
 
 > **Stacks 07B8, the left vertical arrow of the diagram**,
 >
@@ -376,7 +376,7 @@ theorem isEquivalence_epsilonPullbackDerivedParasiticSheafFlatBaseChange :
       (epsilonPullbackDerivedParasiticSheafFlatBaseChange B E h S hS 𝒳).IsTriangulated
 ```
 
-**`AlgebraicGeometry.Stack.derivedCategoryQuasicoherentEtaleSheafFlatBaseChangeEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeEtaleFppfDerivedEquivalence.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeEtaleFppfDerivedEquivalence.lean#L364). The attribute's comment: “the last assertion: the induced equivalence D_{LQCoh^fbc}(𝒳_étale, 𝒪_𝒳) / D_{𝒫_𝒳}(𝒳_étale, 𝒪_𝒳) ≌ D_QCoh(𝒪_𝒳), for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves”.
+**`AlgebraicGeometry.Stack.derivedCategoryQuasicoherentEtaleSheafFlatBaseChangeEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeEtaleFppfDerivedEquivalence.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeEtaleFppfDerivedEquivalence.lean#L364). The attribute's comment: “the last assertion: the induced equivalence D\_\{LQCoh^fbc}(𝒳\_étale, 𝒪\_𝒳) / D\_\{𝒫\_𝒳}(𝒳\_étale, 𝒪\_𝒳) ≌ D\_QCoh(𝒪\_𝒳), for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves”.
 
 > **Stacks 07B8, the last assertion**: the equivalence
 >
@@ -402,7 +402,7 @@ def derivedCategoryQuasicoherentEtaleSheafFlatBaseChangeEquivalence :
 
 [Tag 07B9](https://stacks.math.columbia.edu/tag/07B9) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.FlatFppf.isZero_derivedModuleRestriction_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedFlatFppfRestriction.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedFlatFppfRestriction.lean#L288). The attribute's comment: “part (2)(b), the kernel of g^* on D_LQCoh^fbc(𝒪_𝒳): g^*K = 0 exactly when K lies in D_(Parasitic ∩ LQCoh^fbc)(𝒪_𝒳), with g^* restriction to the flat-fppf site”.
+**`AlgebraicGeometry.Stack.FlatFppf.isZero_derivedModuleRestriction_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedFlatFppfRestriction.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedFlatFppfRestriction.lean#L288). The attribute's comment: “part (2)(b), the kernel of g^* on D\_LQCoh^fbc(𝒪\_𝒳): g^*K = 0 exactly when K lies in D\_(Parasitic ∩ LQCoh^fbc)(𝒪\_𝒳), with g^* restriction to the flat-fppf site”.
 
 > **Stacks 07B9** (2)(b).  Let `𝒳` be an algebraic stack and set
 > `𝒫_𝒳 = Parasitic(𝒪_𝒳) ∩ LQCoh^fbc(𝒪_𝒳)`.  For a complex `K` of `𝒪_𝒳`-modules lying in
@@ -427,7 +427,7 @@ theorem isZero_derivedModuleRestriction_iff {E : BigEtaleSite.{u}} {h : E.cutoff
       derivedParasiticLocallyQuasicoherentFlatBaseChange B E h S hS 𝒳 K
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.toDerivedCategoryQuasicoherentCompRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedFlatFppfRestriction.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedFlatFppfRestriction.lean#L337). The attribute's comment: “part (2)(d), the functor c : D_QCoh(𝒪_𝒳) ⥤ D(𝒪_{𝒳_flat,fppf}) that g^* induces on the Verdier quotient of 07B6, together with its factorization through the quotient functor; the mutual inverseness of c with Lg_! is not covered”.
+**`AlgebraicGeometry.Stack.FlatFppf.toDerivedCategoryQuasicoherentCompRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedFlatFppfRestriction.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedFlatFppfRestriction.lean#L337). The attribute's comment: “part (2)(d), the functor c : D\_QCoh(𝒪\_𝒳) ⥤ D(𝒪\_\{𝒳\_flat,fppf}) that g^* induces on the Verdier quotient of 07B6, together with its factorization through the quotient functor; the mutual inverseness of c with Lg\_! is not covered”.
 
 > **Stacks 07B9** (2)(d), the commutativity the functor `c` is characterized by: composing the
 > quotient functor `D_{LQCoh^fbc}(𝒪_𝒳) ⟶ D_QCoh(𝒪_𝒳)` of **Stacks 07B6** with `c` gives back
@@ -442,7 +442,7 @@ def toDerivedCategoryQuasicoherentCompRestriction :
         derivedModuleRestriction B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.derivedCategoryB_derivedModuleLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfDerivedQuasicoherentLowerShriek.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfDerivedQuasicoherentLowerShriek.lean#L68). The attribute's comment: “part (2)(c): Lg_! carries D_QCoh(𝒪_{𝒳_flat,fppf}) into D_LQCoh^fbc(𝒪_𝒳), for the derived lower shriek of Stacks 07AS (4) and LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves, at module universe u, at the standard models of the derived categories”.
+**`AlgebraicGeometry.Stack.FlatFppf.derivedCategoryB_derivedModuleLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfDerivedQuasicoherentLowerShriek.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfDerivedQuasicoherentLowerShriek.lean#L68). The attribute's comment: “part (2)(c): Lg\_! carries D\_QCoh(𝒪\_\{𝒳\_flat,fppf}) into D\_LQCoh^fbc(𝒪\_𝒳), for the derived lower shriek of Stacks 07AS (4) and LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves, at module universe u, at the standard models of the derived categories”.
 
 > **Stacks 07B9** (2)(c).  `Lg_!` carries `D_QCoh(𝒪_{𝒳_{flat,fppf}})` into `D_{LQCoh^fbc}(𝒪_𝒳)`,
 > the flat base change property of Stacks 0762 being read with the pullback of sheaves.
@@ -464,7 +464,7 @@ theorem derivedCategoryB_derivedModuleLowerShriek :
           ((derivedModuleLowerShriek B S hS 𝒳).obj H)
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.derivedQuasicoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfDerivedQuasicoherentLowerShriek.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfDerivedQuasicoherentLowerShriek.lean#L109). The attribute's comment: “part (2)(d): g^* and Lg_! define mutually inverse equivalences between D_QCoh(𝒪_𝒳), the Verdier quotient of Stacks 07B6, and D_QCoh(𝒪_{𝒳_flat,fppf}): the functor is induced by g^*, the inverse is q ∘ Lg_!; for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves, at module universe u, at the standard models of the derived categories”.
+**`AlgebraicGeometry.Stack.FlatFppf.derivedQuasicoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfDerivedQuasicoherentLowerShriek.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfDerivedQuasicoherentLowerShriek.lean#L109). The attribute's comment: “part (2)(d): g^* and Lg\_! define mutually inverse equivalences between D\_QCoh(𝒪\_𝒳), the Verdier quotient of Stacks 07B6, and D\_QCoh(𝒪\_\{𝒳\_flat,fppf}): the functor is induced by g^*, the inverse is q ∘ Lg\_!; for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves, at module universe u, at the standard models of the derived categories”.
 
 > **Stacks 07B9** (2)(d).  Restriction `g^*` to the flat-fppf site and `Lg_!` define mutually
 > inverse equivalences between `D_QCoh(𝒪_𝒳)` — the Verdier quotient
@@ -483,7 +483,7 @@ def derivedQuasicoherentEquivalence :
       (DerivedCategoryB.derivedCategoryB (flatQuasicoherentModules B S hS 𝒳)).FullSubcategory
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.derivedCategoryB_derivedModuleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfDerivedQuasicoherentRestriction.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfDerivedQuasicoherentRestriction.lean#L104). The attribute's comment: “part (2)(a): for K in D_LQCoh^fbc(𝒪_𝒳) the restriction g^*K to the flat-fppf site lies in D_QCoh(𝒪_{𝒳_flat,fppf}), for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves, at module universe u, for any models of the derived categories”.
+**`AlgebraicGeometry.Stack.FlatFppf.derivedCategoryB_derivedModuleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfDerivedQuasicoherentRestriction.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfDerivedQuasicoherentRestriction.lean#L104). The attribute's comment: “part (2)(a): for K in D\_LQCoh^fbc(𝒪\_𝒳) the restriction g^*K to the flat-fppf site lies in D\_QCoh(𝒪\_\{𝒳\_flat,fppf}), for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves, at module universe u, for any models of the derived categories”.
 
 > **Stacks 07B9** (2)(a).  For `K` in `D_{LQCoh^fbc}(𝒪_𝒳)` (with the flat base change property
 > of Stacks 0762 read with the pullback of sheaves), the restriction `g^*K` to the flat-fppf site
@@ -498,7 +498,7 @@ theorem derivedCategoryB_derivedModuleRestriction (K : DerivedCategory (fppfModu
       ((derivedModuleRestriction B S hS 𝒳).obj K)
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.isZero_derivedModuleRestriction_iff_derivedParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfDerivedQuasicoherentRestriction.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfDerivedQuasicoherentRestriction.lean#L122). The attribute's comment: “part (2)(b): for K in D_LQCoh^fbc(𝒪_𝒳), g^*K = 0 if and only if K lies in D_{Parasitic ∩ LQCoh^fbc}(𝒪_𝒳), for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves, at module universe u, for any models of the derived categories”.
+**`AlgebraicGeometry.Stack.FlatFppf.isZero_derivedModuleRestriction_iff_derivedParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfDerivedQuasicoherentRestriction.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfDerivedQuasicoherentRestriction.lean#L122). The attribute's comment: “part (2)(b): for K in D\_LQCoh^fbc(𝒪\_𝒳), g^*K = 0 if and only if K lies in D\_\{Parasitic ∩ LQCoh^fbc}(𝒪\_𝒳), for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves, at module universe u, for any models of the derived categories”.
 
 > For `K` in `D_{LQCoh^fbc}(𝒪_𝒳)` (with the flat base change property of Stacks 0762 read with
 > the pullback of sheaves), `g^*K = 0` exactly when `K` lies in `D_{Parasitic ∩ LQCoh^fbc}(𝒪_𝒳)`:
@@ -516,7 +516,7 @@ theorem isZero_derivedModuleRestriction_iff_derivedParasitic
         (lqcohSheafFbcFppfModules.{u, _, u} B E h S hS 𝒳) K
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.derivedQuasicoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleDerivedQuasicoherentEquivalence.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleDerivedQuasicoherentEquivalence.lean#L122). The attribute's comment: “part (1)(d): g^* and Lg_! define mutually inverse equivalences between D_QCoh(𝒪_𝒳), the Verdier quotient of Stacks 07B6, and D_QCoh(𝒪_{𝒳_lisse,étale}), through the equivalence of Stacks 07B8; the inverse is q ∘ ε^* ∘ Lg_! (derivedQuasicoherentEquivalenceInverseIso); for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves, at module universe u, at the standard models of the derived categories”.
+**`AlgebraicGeometry.Stack.LisseEtale.derivedQuasicoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleDerivedQuasicoherentEquivalence.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleDerivedQuasicoherentEquivalence.lean#L122). The attribute's comment: “part (1)(d): g^* and Lg\_! define mutually inverse equivalences between D\_QCoh(𝒪\_𝒳), the Verdier quotient of Stacks 07B6, and D\_QCoh(𝒪\_\{𝒳\_lisse,étale}), through the equivalence of Stacks 07B8; the inverse is q ∘ ε^* ∘ Lg\_! (derivedQuasicoherentEquivalenceInverseIso); for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves, at module universe u, at the standard models of the derived categories”.
 
 > **Stacks 07B9** (1)(d).  Restriction `g^*` to the lisse-étale site and `Lg_!` define mutually
 > inverse equivalences between `D_QCoh(𝒪_𝒳)` — the Verdier quotient
@@ -540,7 +540,7 @@ def derivedQuasicoherentEquivalence :
       (DerivedCategoryB.derivedCategoryB (lisseQuasicoherentModules B S hS 𝒳)).FullSubcategory
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.derivedCategoryB_derivedModuleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleDerivedQuasicoherentRestriction.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleDerivedQuasicoherentRestriction.lean#L200). The attribute's comment: “part (1)(a): for F in D_LQCoh^fbc(𝒳_étale, 𝒪_𝒳) the restriction g^*F to the lisse-étale site lies in D_QCoh(𝒪_{𝒳_lisse,étale}), for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves, at module universe u, for any models of the derived categories”.
+**`AlgebraicGeometry.Stack.LisseEtale.derivedCategoryB_derivedModuleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleDerivedQuasicoherentRestriction.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleDerivedQuasicoherentRestriction.lean#L200). The attribute's comment: “part (1)(a): for F in D\_LQCoh^fbc(𝒳\_étale, 𝒪\_𝒳) the restriction g^*F to the lisse-étale site lies in D\_QCoh(𝒪\_\{𝒳\_lisse,étale}), for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves, at module universe u, for any models of the derived categories”.
 
 > **Stacks 07B9** (1)(a).  For `K` in `D_{LQCoh^fbc}(𝒳_étale, 𝒪_𝒳)` (with the flat base change
 > property of Stacks 0762 read with the pullback of sheaves), `g^*K` lies in
@@ -555,7 +555,7 @@ theorem derivedCategoryB_derivedModuleRestriction
       ((derivedModuleRestriction B S hS 𝒳).obj K)
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.isZero_derivedModuleRestriction_iff_derivedParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleDerivedQuasicoherentRestriction.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleDerivedQuasicoherentRestriction.lean#L216). The attribute's comment: “part (1)(b): for F in D_LQCoh^fbc(𝒳_étale, 𝒪_𝒳), g^*F = 0 if and only if F lies in D_{𝒫_𝒳}(𝒳_étale, 𝒪_𝒳), 𝒫_𝒳 = Parasitic ∩ LQCoh^fbc, for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves, at module universe u, for any models of the derived categories”.
+**`AlgebraicGeometry.Stack.LisseEtale.isZero_derivedModuleRestriction_iff_derivedParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleDerivedQuasicoherentRestriction.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleDerivedQuasicoherentRestriction.lean#L216). The attribute's comment: “part (1)(b): for F in D\_LQCoh^fbc(𝒳\_étale, 𝒪\_𝒳), g^*F = 0 if and only if F lies in D\_\{𝒫\_𝒳}(𝒳\_étale, 𝒪\_𝒳), 𝒫\_𝒳 = Parasitic ∩ LQCoh^fbc, for LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves, at module universe u, for any models of the derived categories”.
 
 > **Stacks 07B9** (1)(b).  For `K` in `D_{LQCoh^fbc}(𝒳_étale, 𝒪_𝒳)`, `g^*K = 0` exactly when
 > `K` lies in `D_{Parasitic ∩ LQCoh^fbc}(𝒳_étale, 𝒪_𝒳)`.
@@ -570,7 +570,7 @@ theorem isZero_derivedModuleRestriction_iff_derivedParasitic
         (locallyQuasicoherentSheafFlatBaseChangeEtaleModules B E h S hS 𝒳) K
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.derivedCategoryB_derivedModuleLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleDerivedQuasicoherentRestriction.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleDerivedQuasicoherentRestriction.lean#L280). The attribute's comment: “part (1)(c): Lg_! carries D_QCoh(𝒪_{𝒳_lisse,étale}) into D_LQCoh^fbc(𝒳_étale, 𝒪_𝒳), for the derived lower shriek of Stacks 07AS (2) and LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves, at module universe u, at the standard models of the derived categories”.
+**`AlgebraicGeometry.Stack.LisseEtale.derivedCategoryB_derivedModuleLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleDerivedQuasicoherentRestriction.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleDerivedQuasicoherentRestriction.lean#L280). The attribute's comment: “part (1)(c): Lg\_! carries D\_QCoh(𝒪\_\{𝒳\_lisse,étale}) into D\_LQCoh^fbc(𝒳\_étale, 𝒪\_𝒳), for the derived lower shriek of Stacks 07AS (2) and LQCoh^fbc with the flat base change property of Stacks 0762 read with the pullback of sheaves, at module universe u, at the standard models of the derived categories”.
 
 > **Stacks 07B9** (1)(c).  `Lg_!` carries `D_QCoh(𝒪_{𝒳_{lisse,étale}})` into
 > `D_{LQCoh^fbc}(𝒳_étale, 𝒪_𝒳)`, the flat base change property of Stacks 0762 being read with the
@@ -600,7 +600,7 @@ theorem derivedCategoryB_derivedModuleLowerShriek :
 
 [Tag 07BA](https://stacks.math.columbia.edu/tag/07BA) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.FlatFppf.leftOrthogonal_parasiticFreePart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticColocalizationTriangle.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticColocalizationTriangle.lean#L199). The attribute's comment: “the orthogonality: Hom_D(𝒪_𝒳)(E', P') = 0 for every P' in D_(Parasitic ∩ LQCoh^fbc)(𝒪_𝒳), at E' = Lg_! g^* E; conditional on the derived module-level Lg_! of 07AS (4), carried as the hypotheses Lsh and adj”.
+**`AlgebraicGeometry.Stack.FlatFppf.leftOrthogonal_parasiticFreePart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticColocalizationTriangle.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticColocalizationTriangle.lean#L199). The attribute's comment: “the orthogonality: Hom\_D(𝒪\_𝒳)(E', P') = 0 for every P' in D\_(Parasitic ∩ LQCoh^fbc)(𝒪\_𝒳), at E' = Lg\_! g^* E; conditional on the derived module-level Lg\_! of 07AS (4), carried as the hypotheses Lsh and adj”.
 
 > **Stacks 07BA**, the orthogonality of the first term.  Every morphism from
 > `K' = Lg_! g^* K` to an object `P'` of `D_{Parasitic ∩ LQCoh^fbc}(𝒪_𝒳)` vanishes, i.e. `K'` lies
@@ -615,7 +615,7 @@ theorem leftOrthogonal_parasiticFreePart (K : DerivedCategory (fppfModules B S h
       (parasiticFreePart B S hS 𝒳 Lsh K)
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.derivedParasitic_obj₃_of_distTriang_parasiticFreePartHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticColocalizationTriangle.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticColocalizationTriangle.lean#L225). The attribute's comment: “the cone: for E' = Lg_! g^* E and E' ⟶ E the counit, every distinguished triangle E' ⟶ E ⟶ P ⟶ E'[1] has P in D_(Parasitic ∩ LQCoh^fbc)(𝒪_𝒳), and all three terms in D_LQCoh^fbc(𝒪_𝒳); conditional on the derived module-level Lg_! of 07AS (4) and on 07B9 (2)(a), (2)(c), carried as the hypotheses Lsh, adj, hunit and hK'”.
+**`AlgebraicGeometry.Stack.FlatFppf.derivedParasitic_obj₃_of_distTriang_parasiticFreePartHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticColocalizationTriangle.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticColocalizationTriangle.lean#L225). The attribute's comment: “the cone: for E' = Lg\_! g^* E and E' ⟶ E the counit, every distinguished triangle E' ⟶ E ⟶ P ⟶ E'[1] has P in D\_(Parasitic ∩ LQCoh^fbc)(𝒪\_𝒳), and all three terms in D\_LQCoh^fbc(𝒪\_𝒳); conditional on the derived module-level Lg\_! of 07AS (4) and on 07B9 (2)(a), (2)(c), carried as the hypotheses Lsh, adj, hunit and hK'”.
 
 > **Stacks 07BA**, the third term of the triangle.  Let `K` be an object of
 > `D_{LQCoh^fbc}(𝒪_𝒳)` whose parasitic-free part `K' = Lg_! g^* K` again lies in
@@ -641,7 +641,7 @@ theorem derivedParasitic_obj₃_of_distTriang_parasiticFreePartHom (hunit : IsIs
     derivedParasiticLocallyQuasicoherentFlatBaseChange B E h S hS 𝒳 P
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.extensionProduct_parasiticFreePart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticColocalizationTriangle.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticColocalizationTriangle.lean#L260). The attribute's comment: “the existence of the triangle: every E in D_LQCoh^fbc(𝒪_𝒳) is an extension of an object of D_(Parasitic ∩ LQCoh^fbc)(𝒪_𝒳) by an object of D_LQCoh^fbc(𝒪_𝒳) left orthogonal to it, the extension being the canonical one on Lg_! g^* E ⟶ E; conditional on the derived module-level Lg_! of 07AS (4) and on 07B9 (2)(a), (2)(c)”.
+**`AlgebraicGeometry.Stack.FlatFppf.extensionProduct_parasiticFreePart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticColocalizationTriangle.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticColocalizationTriangle.lean#L260). The attribute's comment: “the existence of the triangle: every E in D\_LQCoh^fbc(𝒪\_𝒳) is an extension of an object of D\_(Parasitic ∩ LQCoh^fbc)(𝒪\_𝒳) by an object of D\_LQCoh^fbc(𝒪\_𝒳) left orthogonal to it, the extension being the canonical one on Lg\_! g^* E ⟶ E; conditional on the derived module-level Lg\_! of 07AS (4) and on 07B9 (2)(a), (2)(c)”.
 
 > **Stacks 07BA**, in the shape the source states it.  Every object `K` of
 > `D_{LQCoh^fbc}(𝒪_𝒳)` whose parasitic-free part lies in `D_{LQCoh^fbc}(𝒪_𝒳)` fits in a
@@ -668,7 +668,7 @@ theorem extensionProduct_parasiticFreePart (hunit : IsIso adj.unit)
       (derivedParasiticLocallyQuasicoherentFlatBaseChange B E h S hS 𝒳)) K
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.leftOrthogonal_sheafParasiticFreePart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean#L108). The attribute's comment: “the orthogonality: Hom_D(𝒪_𝒳)(E', P') = 0 for every P' in D_(Parasitic ∩ LQCoh^fbc)(𝒪_𝒳), at E' = Lg_! g^* E, for the faithful class LQCoh^fbc of Stacks 0762 (flat base change read with the pullback of sheaves), the actual derived lower shriek Lg_! of Stacks 07AS (4) and any models of the derived categories, with no hypothesis”.
+**`AlgebraicGeometry.Stack.FlatFppf.leftOrthogonal_sheafParasiticFreePart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean#L108). The attribute's comment: “the orthogonality: Hom\_D(𝒪\_𝒳)(E', P') = 0 for every P' in D\_(Parasitic ∩ LQCoh^fbc)(𝒪\_𝒳), at E' = Lg\_! g^* E, for the faithful class LQCoh^fbc of Stacks 0762 (flat base change read with the pullback of sheaves), the actual derived lower shriek Lg\_! of Stacks 07AS (4) and any models of the derived categories, with no hypothesis”.
 
 > **Stacks 07BA**, the orthogonality: `Hom(Lg_! g^* E, P') = Hom(g^* E, g^* P') = 0` for every
 > `P'` in `D_{Parasitic ∩ LQCoh^fbc}(𝒪_𝒳)`.
@@ -680,7 +680,7 @@ theorem leftOrthogonal_sheafParasiticFreePart (K : DerivedCategory (fppfModules 
       (sheafParasiticFreePart B S hS 𝒳 K)
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.exists_iso_sheafParasiticColocalizationTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean#L197). The attribute's comment: “the canonicity of the triangle: a distinguished triangle E'' ⟶ E ⟶ P'' ⟶ E''[1] with E'' left orthogonal to D_(Parasitic ∩ LQCoh^fbc)(𝒪_𝒳) and P'' in it is isomorphic to the triangle on Lg_! g^* E ⟶ E by an isomorphism which is the identity on E (Stacks 0CQP), for the faithful class LQCoh^fbc, any models of the derived categories, with no hypothesis”.
+**`AlgebraicGeometry.Stack.FlatFppf.exists_iso_sheafParasiticColocalizationTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean#L197). The attribute's comment: “the canonicity of the triangle: a distinguished triangle E'' ⟶ E ⟶ P'' ⟶ E''[1] with E'' left orthogonal to D\_(Parasitic ∩ LQCoh^fbc)(𝒪\_𝒳) and P'' in it is isomorphic to the triangle on Lg\_! g^* E ⟶ E by an isomorphism which is the identity on E (Stacks 0CQP), for the faithful class LQCoh^fbc, any models of the derived categories, with no hypothesis”.
 
 > **Stacks 07BA, canonicity** ([Stacks, Tag 0CQP]): a distinguished triangle
 > `E'' ⟶ E ⟶ P'' ⟶ E''[1]` with `E''` left orthogonal to `D_{Parasitic ∩ LQCoh^fbc}(𝒪_𝒳)` and
@@ -708,7 +708,7 @@ theorem exists_iso_sheafParasiticColocalizationTriangle
       e.hom.hom₂ = 𝟙 K
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.derivedParasitic_obj₃_of_distTriang_sheafParasiticFreePartHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean#L235). The attribute's comment: “the cone: for E' = Lg_! g^* E and E' ⟶ E the counit of Lg_! ⊣ g^*, every distinguished triangle E' ⟶ E ⟶ P ⟶ E'[1] with E in D_LQCoh^fbc(𝒪_𝒳) has P in D_(Parasitic ∩ LQCoh^fbc)(𝒪_𝒳), for the faithful class LQCoh^fbc of Stacks 0762 and the actual derived lower shriek of Stacks 07AS (4) at the standard models of the derived categories, with no hypothesis (Stacks 07B9 (2)(a), (2)(c) and 07B3 (2) are proved, not assumed)”.
+**`AlgebraicGeometry.Stack.FlatFppf.derivedParasitic_obj₃_of_distTriang_sheafParasiticFreePartHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean#L235). The attribute's comment: “the cone: for E' = Lg\_! g^* E and E' ⟶ E the counit of Lg\_! ⊣ g^*, every distinguished triangle E' ⟶ E ⟶ P ⟶ E'[1] with E in D\_LQCoh^fbc(𝒪\_𝒳) has P in D\_(Parasitic ∩ LQCoh^fbc)(𝒪\_𝒳), for the faithful class LQCoh^fbc of Stacks 0762 and the actual derived lower shriek of Stacks 07AS (4) at the standard models of the derived categories, with no hypothesis (Stacks 07B9 (2)(a), (2)(c) and 07B3 (2) are proved, not assumed)”.
 
 > **Stacks 07BA**, the cone: for `E` in `D_{LQCoh^fbc}(𝒪_𝒳)`, every cone `P` on the canonical
 > morphism `Lg_! g^* E ⟶ E` lies in `D_{Parasitic ∩ LQCoh^fbc}(𝒪_𝒳)`.
@@ -728,7 +728,7 @@ theorem derivedParasitic_obj₃_of_distTriang_sheafParasiticFreePartHom :
           (lqcohSheafFbcFppfModules.{u, _, u} B E h S hS 𝒳) P
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.exists_sheafParasiticColocalizationTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean#L262). The attribute's comment: “the existence of the triangle: every E in D_LQCoh^fbc(𝒪_𝒳) sits in a distinguished triangle E' ⟶ E ⟶ P ⟶ E'[1] with E' = Lg_! g^* E and E' ⟶ E the counit, E' and P in D_LQCoh^fbc(𝒪_𝒳), P in D_(Parasitic ∩ LQCoh^fbc)(𝒪_𝒳) and Hom(E', P') = 0 for every P' in D_(Parasitic ∩ LQCoh^fbc)(𝒪_𝒳), for the faithful class LQCoh^fbc of Stacks 0762 and the actual derived lower shriek of Stacks 07AS (4) at the standard models of the derived categories, with no hypothesis”.
+**`AlgebraicGeometry.Stack.FlatFppf.exists_sheafParasiticColocalizationTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean#L262). The attribute's comment: “the existence of the triangle: every E in D\_LQCoh^fbc(𝒪\_𝒳) sits in a distinguished triangle E' ⟶ E ⟶ P ⟶ E'[1] with E' = Lg\_! g^* E and E' ⟶ E the counit, E' and P in D\_LQCoh^fbc(𝒪\_𝒳), P in D\_(Parasitic ∩ LQCoh^fbc)(𝒪\_𝒳) and Hom(E', P') = 0 for every P' in D\_(Parasitic ∩ LQCoh^fbc)(𝒪\_𝒳), for the faithful class LQCoh^fbc of Stacks 0762 and the actual derived lower shriek of Stacks 07AS (4) at the standard models of the derived categories, with no hypothesis”.
 
 > **Stacks 07BA**: every `E` in `D_{LQCoh^fbc}(𝒪_𝒳)` sits in a distinguished triangle
 > `E' ⟶ E ⟶ P ⟶ E'[1]` of `D_{LQCoh^fbc}(𝒪_𝒳)`, `E' ⟶ E` the canonical morphism
@@ -758,7 +758,7 @@ theorem exists_sheafParasiticColocalizationTriangle :
             (sheafParasiticFreePart B S hS 𝒳 K)
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.hasColocalizations_locallyQuasicoherentSheafFlatBaseChangeFppfModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean#L294). The attribute's comment: “the triangle as the colocalization of D_LQCoh^fbc(𝒪_𝒳) by D_(Parasitic ∩ LQCoh^fbc)(𝒪_𝒳): every object receives Lg_! g^* E ⟶ E, a morphism with cone in D_(Parasitic ∩ LQCoh^fbc)(𝒪_𝒳) out of an object left orthogonal to it, for the faithful class LQCoh^fbc and the actual Lg_! at the standard models of the derived categories, with no hypothesis”.
+**`AlgebraicGeometry.Stack.FlatFppf.hasColocalizations_locallyQuasicoherentSheafFlatBaseChangeFppfModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeParasiticColocalization.lean#L294). The attribute's comment: “the triangle as the colocalization of D\_LQCoh^fbc(𝒪\_𝒳) by D\_(Parasitic ∩ LQCoh^fbc)(𝒪\_𝒳): every object receives Lg\_! g^* E ⟶ E, a morphism with cone in D\_(Parasitic ∩ LQCoh^fbc)(𝒪\_𝒳) out of an object left orthogonal to it, for the faithful class LQCoh^fbc and the actual Lg\_! at the standard models of the derived categories, with no hypothesis”.
 
 > **Stacks 07BA**, in the form of the colocalization hypothesis of the Verdier quotient
 > `D_{LQCoh^fbc}(𝒪_𝒳) / D_{Parasitic ∩ LQCoh^fbc}(𝒪_𝒳)` (`D_QCoh(𝒪_𝒳)` of **Stacks 07B6**).
@@ -776,7 +776,7 @@ theorem hasColocalizations_locallyQuasicoherentSheafFlatBaseChangeFppfModules :
 
 [Tag 0H11](https://stacks.math.columbia.edu/tag/0H11) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isSaturated_derivedParasiticFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentAdmissibility.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentAdmissibility.lean#L343). The attribute's comment: “the last assertion for D(𝒳_fppf, 𝒪_𝒳): 𝒜, hence D_QCoh(𝒪_𝒳), read inside D(𝒳_fppf, 𝒪_𝒳) is a strictly full saturated triangulated subcategory there”.
+**`AlgebraicGeometry.Stack.isSaturated_derivedParasiticFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentAdmissibility.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/DerivedQuasicoherentAdmissibility.lean#L343). The attribute's comment: “the last assertion for D(𝒳\_fppf, 𝒪\_𝒳): 𝒜, hence D\_QCoh(𝒪\_𝒳), read inside D(𝒳\_fppf, 𝒪\_𝒳) is a strictly full saturated triangulated subcategory there”.
 
 > **Stacks 0H11**, last assertion, inside `D(𝒳_{fppf}, 𝒪_𝒳)`.  The subcategory `𝒜` read in
 > `D(𝒳_{fppf}, 𝒪_𝒳)`, that is the locally quasi-coherent complexes with flat base change which are
@@ -795,7 +795,7 @@ theorem isSaturated_derivedParasiticFree :
       (derivedParasiticFree B E h S hS 𝒳).IsTriangulated
 ```
 
-**`AlgebraicGeometry.Stack.parasiticInLQCoh_isLeftAdmissible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean#L143). The attribute's comment: “the first assertion: D_(Parasitic ∩ LQCoh^fbc)(𝒪_𝒳) ⊂ D_LQCoh^fbc(𝒪_𝒳) is a left admissible subcategory”.
+**`AlgebraicGeometry.Stack.parasiticInLQCoh_isLeftAdmissible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean#L143). The attribute's comment: “the first assertion: D\_(Parasitic ∩ LQCoh^fbc)(𝒪\_𝒳) ⊂ D\_LQCoh^fbc(𝒪\_𝒳) is a left admissible subcategory”.
 
 > **Stacks 0H11**, first assertion. The subcategory
 > `D_{Parasitic ∩ LQCoh^fbc}(𝒪_𝒳) ⊂ D_{LQCoh^fbc}(𝒪_𝒳)` is left admissible: a strictly full
@@ -808,7 +808,7 @@ theorem parasiticInLQCoh_isLeftAdmissible :
       (𝓛 B E h S hS 𝒳)).IsLeftAdmissible
 ```
 
-**`AlgebraicGeometry.Stack.parasiticFreeInLQCoh_isRightAdmissible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean#L154). The attribute's comment: “the second assertion: the left orthogonal 𝒜 of D_(Parasitic ∩ LQCoh^fbc)(𝒪_𝒳) is right admissible in D_LQCoh^fbc(𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.parasiticFreeInLQCoh_isRightAdmissible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean#L154). The attribute's comment: “the second assertion: the left orthogonal 𝒜 of D\_(Parasitic ∩ LQCoh^fbc)(𝒪\_𝒳) is right admissible in D\_LQCoh^fbc(𝒪\_𝒳)”.
 
 > **Stacks 0H11**, second assertion. The left orthogonal `𝒜` of
 > `D_{Parasitic ∩ LQCoh^fbc}(𝒪_𝒳)` in `D_{LQCoh^fbc}(𝒪_𝒳)` is right admissible: a strictly full
@@ -821,7 +821,7 @@ theorem parasiticFreeInLQCoh_isRightAdmissible :
       (𝓛 B E h S hS 𝒳)).IsRightAdmissible
 ```
 
-**`AlgebraicGeometry.Stack.parasiticFreeInLQCoh_ι_comp_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean#L177). The attribute's comment: “the third assertion: the composition 𝒜 ⟶ D_LQCoh^fbc(𝒪_𝒳) ⟶ D_QCoh(𝒪_𝒳) of the inclusion with the Verdier quotient functor of 07B6 is an equivalence”.
+**`AlgebraicGeometry.Stack.parasiticFreeInLQCoh_ι_comp_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean#L177). The attribute's comment: “the third assertion: the composition 𝒜 ⟶ D\_LQCoh^fbc(𝒪\_𝒳) ⟶ D\_QCoh(𝒪\_𝒳) of the inclusion with the Verdier quotient functor of 07B6 is an equivalence”.
 
 > **Stacks 0H11**, third assertion. The composition
 >
@@ -839,7 +839,7 @@ theorem parasiticFreeInLQCoh_ι_comp_isEquivalence :
         (𝓛 B E h S hS 𝒳)).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Stack.parasiticFreeInLQCoh_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean#L191). The attribute's comment: “the last assertion for D_LQCoh^fbc(𝒪_𝒳): 𝒜, hence D_QCoh(𝒪_𝒳), is a strictly full saturated triangulated subcategory of D_LQCoh^fbc(𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.parasiticFreeInLQCoh_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean#L191). The attribute's comment: “the last assertion for D\_LQCoh^fbc(𝒪\_𝒳): 𝒜, hence D\_QCoh(𝒪\_𝒳), is a strictly full saturated triangulated subcategory of D\_LQCoh^fbc(𝒪\_𝒳)”.
 
 > **Stacks 0H11**, last assertion, inside `D_{LQCoh^fbc}(𝒪_𝒳)`. The left orthogonal `𝒜`, which
 > `AlgebraicGeometry.Stack.parasiticFreeInLQCoh_ι_comp_isEquivalence` identifies with
@@ -857,7 +857,7 @@ theorem parasiticFreeInLQCoh_isSaturated :
         (𝓛 B E h S hS 𝒳)).IsTriangulated
 ```
 
-**`AlgebraicGeometry.Stack.parasiticFreeInDerivedFppf_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean#L211). The attribute's comment: “the last assertion for D(𝒳_fppf, 𝒪_𝒳): 𝒜, hence D_QCoh(𝒪_𝒳), read inside D(𝒳_fppf, 𝒪_𝒳) is a strictly full saturated triangulated subcategory there”.
+**`AlgebraicGeometry.Stack.parasiticFreeInDerivedFppf_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean#L211). The attribute's comment: “the last assertion for D(𝒳\_fppf, 𝒪\_𝒳): 𝒜, hence D\_QCoh(𝒪\_𝒳), read inside D(𝒳\_fppf, 𝒪\_𝒳) is a strictly full saturated triangulated subcategory there”.
 
 > **Stacks 0H11**, last assertion, inside `D(𝒳_{fppf}, 𝒪_𝒳)`. The subcategory `𝒜` read in
 > `D(𝒳_{fppf}, 𝒪_𝒳)` — the complexes with cohomology in `LQCoh^fbc(𝒪_𝒳)` admitting no nonzero
@@ -874,7 +874,7 @@ theorem parasiticFreeInDerivedFppf_isSaturated [HasDerivedCategory (fppfModules 
         (𝓛 B E h S hS 𝒳)).IsTriangulated
 ```
 
-**`AlgebraicGeometry.Stack.parasiticFreeToLQCoh_comp_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean#L226). The attribute's comment: “the embedding into D(𝒳_fppf, 𝒪_𝒳): the composition of the inclusion of 𝒜, presented as a subcategory of D(𝒳_fppf, 𝒪_𝒳), with the Verdier quotient functor of 07B6 is an equivalence”.
+**`AlgebraicGeometry.Stack.parasiticFreeToLQCoh_comp_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSemiorthogonalDecomposition.lean#L226). The attribute's comment: “the embedding into D(𝒳\_fppf, 𝒪\_𝒳): the composition of the inclusion of 𝒜, presented as a subcategory of D(𝒳\_fppf, 𝒪\_𝒳), with the Verdier quotient functor of 07B6 is an equivalence”.
 
 > **Stacks 0H11**, the realization of `D_QCoh(𝒪_𝒳)` inside `D(𝒳_{fppf}, 𝒪_𝒳)`: the inclusion
 > of `𝒜`, presented as a subcategory of `D(𝒳_{fppf}, 𝒪_𝒳)`, followed by the Verdier quotient

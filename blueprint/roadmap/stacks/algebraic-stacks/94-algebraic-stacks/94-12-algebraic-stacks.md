@@ -72,7 +72,7 @@ abbrev AlgebraicStacks.{u, w}
 
 [Tag 03YQ](https://stacks.math.columbia.edu/tag/03YQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_iff_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalence.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalence.lean#L143). The attribute's comment: “algebraic_stack_iff_of_equivalence”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_iff_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalence.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalence.lean#L143). The attribute's comment: “algebraic\_stack\_iff\_of\_equivalence”.
 
 > Two categories over the big fppf site of `S` which are equivalent as categories over that
 > site are algebraic stacks at the same time.
@@ -84,7 +84,7 @@ theorem isAlgebraicStack_iff_of_equivalence
     IsAlgebraicStack.{u, w} B S hS 𝒳 ↔ IsAlgebraicStack.{u, w} B S hS 𝒴
 ```
 
-**`AlgebraicGeometry.Stack.isDeligneMumfordStack_iff_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalence.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalence.lean#L191). The attribute's comment: “deligne_mumford_iff_of_equivalence”.
+**`AlgebraicGeometry.Stack.isDeligneMumfordStack_iff_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalence.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalence.lean#L191). The attribute's comment: “deligne\_mumford\_iff\_of\_equivalence”.
 
 > Two categories over the big fppf site of `S` which are equivalent as categories over that
 > site are Deligne-Mumford stacks at the same time.

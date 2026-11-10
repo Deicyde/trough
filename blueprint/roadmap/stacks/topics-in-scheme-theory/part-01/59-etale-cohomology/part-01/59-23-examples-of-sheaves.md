@@ -61,7 +61,7 @@ noncomputable abbrev constantSheafZMod {C : Type u} [Category.{v} C]
     Sheaf J AddCommGrpCat.{w}
 ```
 
-**`Stacks.Sites.multiplicativeGroupSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean#L96). The attribute's comment: “part (2), 𝐆_m on a site of schemes over S”.
+**`Stacks.Sites.multiplicativeGroupSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean#L96). The attribute's comment: “part (2), 𝐆\_m on a site of schemes over S”.
 
 > **Stacks 03P4, part (2).**  `𝐆_m = 𝒪_S^*` as an abelian sheaf on a site of schemes over `S`
 > on which the invertible global functions are a sheaf of types.
@@ -72,7 +72,7 @@ def multiplicativeGroupSheaf (J : GrothendieckTopology C)
     Sheaf J AddCommGrpCat.{u}
 ```
 
-**`AlgebraicGeometry.BigFppfOver.multiplicativeGroupSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean#L130). The attribute's comment: “part (2), 𝐆_m on the big fppf site”.
+**`AlgebraicGeometry.BigFppfOver.multiplicativeGroupSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean#L130). The attribute's comment: “part (2), 𝐆\_m on the big fppf site”.
 
 > **Stacks 03P4, part (2), the big fppf site.**  `𝐆_m` as an abelian sheaf on
 > `(Sch/S)_{fppf}`.
@@ -81,7 +81,7 @@ def multiplicativeGroupSheaf (J : GrothendieckTopology C)
 def multiplicativeGroupSheaf : Sheaf (topology B S hS) AddCommGrpCat.{u}
 ```
 
-**`AlgebraicGeometry.BigSyntomicOver.multiplicativeGroupSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean#L149). The attribute's comment: “part (2), 𝐆_m on the big syntomic site”.
+**`AlgebraicGeometry.BigSyntomicOver.multiplicativeGroupSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean#L149). The attribute's comment: “part (2), 𝐆\_m on the big syntomic site”.
 
 > **Stacks 03P4, part (2), the big syntomic site.**  `𝐆_m` as an abelian sheaf on
 > `(Sch/S)_{syntomic}`.
@@ -90,7 +90,7 @@ def multiplicativeGroupSheaf : Sheaf (topology B S hS) AddCommGrpCat.{u}
 def multiplicativeGroupSheaf : Sheaf (topology B S hS) AddCommGrpCat.{u}
 ```
 
-**`AlgebraicGeometry.BigSmoothOver.multiplicativeGroupSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean#L169). The attribute's comment: “part (2), 𝐆_m on the big smooth site”.
+**`AlgebraicGeometry.BigSmoothOver.multiplicativeGroupSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean#L169). The attribute's comment: “part (2), 𝐆\_m on the big smooth site”.
 
 > **Stacks 03P4, part (2), the big smooth site.**  `𝐆_m` as an abelian sheaf on
 > `(Sch/S)_{smooth}`.
@@ -99,7 +99,7 @@ def multiplicativeGroupSheaf : Sheaf (topology B S hS) AddCommGrpCat.{u}
 def multiplicativeGroupSheaf : Sheaf (topology B S hS) AddCommGrpCat.{u}
 ```
 
-**`AlgebraicGeometry.BigEtaleOver.multiplicativeGroupSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean#L190). The attribute's comment: “part (2), 𝐆_m on the big étale site”.
+**`AlgebraicGeometry.BigEtaleOver.multiplicativeGroupSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean#L190). The attribute's comment: “part (2), 𝐆\_m on the big étale site”.
 
 > **Stacks 03P4, part (2), the big étale site.**  `𝐆_m` as an abelian sheaf on
 > `(Sch/S)_{étale}`.
@@ -108,7 +108,7 @@ def multiplicativeGroupSheaf : Sheaf (topology B S hS) AddCommGrpCat.{u}
 def multiplicativeGroupSheaf : Sheaf (topology B S hS) AddCommGrpCat.{u}
 ```
 
-**`AlgebraicGeometry.BigZariskiOver.multiplicativeGroupSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean#L210). The attribute's comment: “part (2), 𝐆_m on the big Zariski site”.
+**`AlgebraicGeometry.BigZariskiOver.multiplicativeGroupSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean#L210). The attribute's comment: “part (2), 𝐆\_m on the big Zariski site”.
 
 > **Stacks 03P4, part (2), the big Zariski site.**  `𝐆_m` as an abelian sheaf on
 > `(Sch/S)_{Zar}`.
@@ -117,7 +117,7 @@ def multiplicativeGroupSheaf : Sheaf (topology B S hS) AddCommGrpCat.{u}
 def multiplicativeGroupSheaf : Sheaf (topology B S hS) AddCommGrpCat.{u}
 ```
 
-**`AlgebraicGeometry.SmallEtale.multiplicativeGroupSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean#L234). The attribute's comment: “part (2), 𝐆_m on the small étale site”.
+**`AlgebraicGeometry.SmallEtale.multiplicativeGroupSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean#L234). The attribute's comment: “part (2), 𝐆\_m on the small étale site”.
 
 > **Stacks 03P4, part (2), the small étale site.**  `𝐆_m` as an abelian sheaf on
 > `S_{étale}`.
@@ -126,7 +126,7 @@ def multiplicativeGroupSheaf : Sheaf (topology B S hS) AddCommGrpCat.{u}
 def multiplicativeGroupSheaf : Sheaf (topology B S hS) AddCommGrpCat.{u}
 ```
 
-**`AlgebraicGeometry.SmallZariski.multiplicativeGroupSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean#L255). The attribute's comment: “part (2), 𝐆_m on the small Zariski site”.
+**`AlgebraicGeometry.SmallZariski.multiplicativeGroupSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/MultiplicativeGroupSheaf.lean#L255). The attribute's comment: “part (2), 𝐆\_m on the small Zariski site”.
 
 > **Stacks 03P4, part (2), the small Zariski site.**  `𝐆_m` as an abelian sheaf on
 > `S_{Zar}`.
@@ -141,7 +141,7 @@ Declarations registered for the tag:
 - [`AlgebraicGeometry.BigFppfOver.additiveGroupSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheaf.lean#L207), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafSites.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafSites.lean#L53) (StacksFrontier): “part (1), Gₐ on the big fppf site”.
 - [`AlgebraicGeometry.BigEtaleOver.additiveGroupSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheaf.lean#L240), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafSites.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafSites.lean#L55) (StacksFrontier): “part (1), Gₐ on the big étale site”.
 - [`AlgebraicGeometry.BigZariskiOver.additiveGroupSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheaf.lean#L274), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafSites.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafSites.lean#L57) (StacksFrontier): “part (1), Gₐ on the big Zariski site”.
-- [`CategoryTheory.constantSheaf`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.constantSheaf#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/Basic.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/Basic.lean#L40) (StacksFrontier): “constant_sheaf”. References: EGA 0 (15.2.1), “partial”; EGA 0 (3.6.1); SGA 4 IV (11.1.5); SGA 4 IV (2.7.5); SGA 4 IV (4.3.4); SGA 4 IX (2.0); SGA 4 VII (2.1), “partial”; SGA 4½ Arcata (2.2.1); SGA 4½ Arcata (4.3.2).
+- [`CategoryTheory.constantSheaf`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.constantSheaf#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/Basic.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/Basic.lean#L40) (StacksFrontier): “constant\_sheaf”. References: EGA 0 (15.2.1), “partial”; EGA 0 (3.6.1); SGA 4 IV (11.1.5); SGA 4 IV (2.7.5); SGA 4 IV (4.3.4); SGA 4 IX (2.0); SGA 4 VII (2.1), “partial”; SGA 4½ Arcata (2.2.1); SGA 4½ Arcata (4.3.2).
 
 ## Tag 03P5, a remark
 
@@ -714,7 +714,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.BigEtaleOver.structureSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigEtaleStructureSheaf.lean#L60), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/BigEtaleStructureSheaf.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigEtaleStructureSheaf.lean#L72) (StacksFrontier): “big étale structure sheaf”. References: SGA 4½ Arcata (2.2), “structure sheaf O_S”.
+- [`AlgebraicGeometry.BigEtaleOver.structureSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigEtaleStructureSheaf.lean#L60), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/BigEtaleStructureSheaf.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigEtaleStructureSheaf.lean#L72) (StacksFrontier): “big étale structure sheaf”. References: SGA 4½ Arcata (2.2), “structure sheaf O\_S”.
 - [`AlgebraicGeometry.BigFppfOver.structureSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigFppfStructureSheaf.lean#L120), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/BigFppfStructureSheaf.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigFppfStructureSheaf.lean#L134) (StacksFrontier): “big fppf structure sheaf”.
 - [`AlgebraicGeometry.BigSmoothOver.structureSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSmoothStructureSheaf.lean#L60), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/BigSmoothStructureSheaf.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSmoothStructureSheaf.lean#L74) (StacksFrontier): “big smooth structure sheaf”.
 - [`AlgebraicGeometry.BigSyntomicOver.structureSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSyntomicStructureSheaf.lean#L62), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/BigSyntomicStructureSheaf.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSyntomicStructureSheaf.lean#L74) (StacksFrontier): “big syntomic structure sheaf”.
@@ -844,8 +844,8 @@ noncomputable def sheafHZeroAddEquiv [HasSheafify (topology B S hS) AddCommGrpCa
 
 **`AlgebraicGeometry.additiveGroupSheafHZeroFppfEtaleAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheaf.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheaf.lean#L320). The attribute's comment: “degree zero: fppf against étale”.
 
-> **Stacks 03P6 in degree zero, fppf against étale.**  `H^0_{fppf}(S, Gₐ) =
-> H^0_{étale}(S, Gₐ)`: both are the additive group `Γ(S, 𝒪_S)` of global functions.  This is one
+> **Stacks 03P6 in degree zero, fppf against étale.**  `H^0\_\{fppf}(S, Gₐ) =
+> H^0\_\{étale}(S, Gₐ)`: both are the additive group `Γ(S, 𝒪\_S)` of global functions.  This is one
 > leg of the remark's chain of equalities, in the degree in which it needs nothing from
 > [Stacks, Tag 03P2].
 
@@ -857,8 +857,8 @@ noncomputable def additiveGroupSheafHZeroFppfEtaleAddEquiv :
 
 **`AlgebraicGeometry.additiveGroupSheafHZeroFppfZariskiAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheaf.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheaf.lean#L331). The attribute's comment: “degree zero: fppf against Zariski”.
 
-> **Stacks 03P6 in degree zero, fppf against Zariski.**  `H^0_{fppf}(S, Gₐ) =
-> H^0_{Zar}(S, Gₐ)`: both are the additive group `Γ(S, 𝒪_S)` of global functions.  Together with
+> **Stacks 03P6 in degree zero, fppf against Zariski.**  `H^0\_\{fppf}(S, Gₐ) =
+> H^0\_\{Zar}(S, Gₐ)`: both are the additive group `Γ(S, 𝒪\_S)` of global functions.  Together with
 > `AlgebraicGeometry.additiveGroupSheafHZeroFppfEtaleAddEquiv` this is the remark's whole chain
 > of equalities in degree zero, the rightmost term `H^0(S, 𝒪_S)` being `Γ(S, 𝒪_S)` as well.
 
@@ -868,7 +868,7 @@ noncomputable def additiveGroupSheafHZeroFppfZariskiAddEquiv :
       Sheaf.H (BigZariskiOver.additiveGroupSheaf S Bz hSz) 0
 ```
 
-**`AlgebraicGeometry.additiveGroupSheafCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafCohomology.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafCohomology.lean#L233). The attribute's comment: “all degrees p ≥ 0: H^p_τ(X, Gₐ) = H^p(X, 𝒪_X), the specialization of Theorem 03P2 to ℱ = 𝒪_S. τ is a bound variable, so this one declaration is the comparison for all five big sites at once, in particular for the fppf, étale and Zariski sites the remark names. The left-hand side is cohomology of the structure sheaf on the site of opens of the underlying topological space of S, which is this repository's spelling of H^p(X, 𝒪_X), so the rightmost equality of the chain needs no further comparison. The missing ingredient supplied here on top of 03P2 is Gₐ = (𝒪_S)ᵃ, namely overAdditiveGroupSheafIsoAssociatedSheaf”. References: SGA 1 XI (5.3), “G_a clause”; SGA 4 VII (4.2.1), “special case”.
+**`AlgebraicGeometry.additiveGroupSheafCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafCohomology.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafCohomology.lean#L233). The attribute's comment: “all degrees p ≥ 0: H^p\_τ(X, Gₐ) = H^p(X, 𝒪\_X), the specialization of Theorem 03P2 to ℱ = 𝒪\_S. τ is a bound variable, so this one declaration is the comparison for all five big sites at once, in particular for the fppf, étale and Zariski sites the remark names. The left-hand side is cohomology of the structure sheaf on the site of opens of the underlying topological space of S, which is this repository's spelling of H^p(X, 𝒪\_X), so the rightmost equality of the chain needs no further comparison. The missing ingredient supplied here on top of 03P2 is Gₐ = (𝒪\_S)ᵃ, namely overAdditiveGroupSheafIsoAssociatedSheaf”. References: SGA 1 XI (5.3), “G\_a clause”; SGA 4 VII (4.2.1), “special case”.
 
 > For a scheme `S` below the cutoff of a big `τ`-site and every `p`,
 > `H^p(X, 𝒪_X) ≅ H^p_τ(X, Gₐ)`: the left-hand side is the cohomology of the structure sheaf on the
@@ -882,7 +882,7 @@ public def additiveGroupSheafCohomologyIso (p : ℕ) :
         ((opensBelowToOver (κ := cutoff τ B) hS).obj ⊤)
 ```
 
-**`AlgebraicGeometry.additiveGroupSheafCohomologyFppfEtaleIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafCohomology.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafCohomology.lean#L252). The attribute's comment: “all degrees p ≥ 0: H^p_fppf(X, Gₐ) = H^p_étale(X, Gₐ), the first leg of the chain, obtained by composing additiveGroupSheafCohomologyIso at τ = fppf with its inverse at τ = étale. The sheaves are BigFppfOver.additiveGroupSheaf and BigEtaleOver.additiveGroupSheaf themselves, by overAdditiveGroupSheaf_fppf and overAdditiveGroupSheaf_etale. The degree-zero case is additiveGroupSheafHZeroFppfEtaleAddEquiv”.
+**`AlgebraicGeometry.additiveGroupSheafCohomologyFppfEtaleIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafCohomology.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafCohomology.lean#L252). The attribute's comment: “all degrees p ≥ 0: H^p\_fppf(X, Gₐ) = H^p\_étale(X, Gₐ), the first leg of the chain, obtained by composing additiveGroupSheafCohomologyIso at τ = fppf with its inverse at τ = étale. The sheaves are BigFppfOver.additiveGroupSheaf and BigEtaleOver.additiveGroupSheaf themselves, by overAdditiveGroupSheaf\_fppf and overAdditiveGroupSheaf\_etale. The degree-zero case is additiveGroupSheafHZeroFppfEtaleAddEquiv”.
 
 > `H^p_{fppf}(X, Gₐ) ≅ H^p_{étale}(X, Gₐ)` for every `p`, both being `H^p(X, 𝒪_X)`.
 
@@ -894,7 +894,7 @@ public def additiveGroupSheafCohomologyFppfEtaleIso (p : ℕ) :
         ((opensBelowToOver (κ := cutoff .etale Be) hSe).obj ⊤)
 ```
 
-**`AlgebraicGeometry.additiveGroupSheafCohomologyFppfZariskiIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafCohomology.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafCohomology.lean#L267). The attribute's comment: “all degrees p ≥ 0: H^p_fppf(X, Gₐ) = H^p_Zar(X, Gₐ), the second leg of the chain. With additiveGroupSheafCohomologyFppfEtaleIso and additiveGroupSheafCohomologyIso this completes the chain H^p_fppf = H^p_étale = H^p_Zar = H^p(X, 𝒪_X) for all p ≥ 0. The sheaves are BigFppfOver.additiveGroupSheaf and BigZariskiOver.additiveGroupSheaf themselves, by overAdditiveGroupSheaf_fppf and overAdditiveGroupSheaf_zariski. The degree-zero case is additiveGroupSheafHZeroFppfZariskiAddEquiv”.
+**`AlgebraicGeometry.additiveGroupSheafCohomologyFppfZariskiIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafCohomology.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExamplesSheaves/AdditiveGroupSheafCohomology.lean#L267). The attribute's comment: “all degrees p ≥ 0: H^p\_fppf(X, Gₐ) = H^p\_Zar(X, Gₐ), the second leg of the chain. With additiveGroupSheafCohomologyFppfEtaleIso and additiveGroupSheafCohomologyIso this completes the chain H^p\_fppf = H^p\_étale = H^p\_Zar = H^p(X, 𝒪\_X) for all p ≥ 0. The sheaves are BigFppfOver.additiveGroupSheaf and BigZariskiOver.additiveGroupSheaf themselves, by overAdditiveGroupSheaf\_fppf and overAdditiveGroupSheaf\_zariski. The degree-zero case is additiveGroupSheafHZeroFppfZariskiAddEquiv”.
 
 > `H^p_{fppf}(X, Gₐ) ≅ H^p_{Zar}(X, Gₐ)` for every `p`, both being `H^p(X, 𝒪_X)`.
 

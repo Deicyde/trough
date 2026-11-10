@@ -30,7 +30,7 @@ structure GeometricPoint (S : Scheme.{u})
 abbrev LiesOver {S : Scheme.{u}} (s : GeometricPoint S) (x : S) : Prop
 ```
 
-**`AlgebraicGeometry.GeometricPoint.EtaleNeighborhood`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/NeighborhoodsStalksPoints/Basic.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/NeighborhoodsStalksPoints/Basic.lean#L77). The attribute's comment: “part (3)”. References: SGA 4 VIII (3.9), “objects of C_ξ”.
+**`AlgebraicGeometry.GeometricPoint.EtaleNeighborhood`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/NeighborhoodsStalksPoints/Basic.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/NeighborhoodsStalksPoints/Basic.lean#L77). The attribute's comment: “part (3)”. References: SGA 4 VIII (3.9), “objects of C\_ξ”.
 
 > An étale neighborhood of a geometric point consists of an étale scheme over the base together
 > with a lift of the geometric point.

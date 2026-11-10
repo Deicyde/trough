@@ -14,7 +14,7 @@ Section 48.27 of the Stacks Project, [Tag 0FVU](https://stacks.math.columbia.edu
 
 [Tag 0FVV](https://stacks.math.columbia.edu/tag/0FVV) in the Stacks Project.
 
-**`Stacks.Duality.dualityEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/Duality.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/Duality.lean#L364). The attribute's comment: “part (5): the isomorphisms Ext^i_X(K, ω_X) = Hom_k(H^{-i}(X, K), k)”.
+**`Stacks.Duality.dualityEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/Duality.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/Duality.lean#L364). The attribute's comment: “part (5): the isomorphisms Ext^i\_X(K, ω\_X) = Hom\_k(H^\{-i}(X, K), k)”.
 
 > **The duality isomorphisms.** Let `X` be a proper scheme over a field `k` and
 > `ω_X^• = a(𝒪_{Spec k})` its relative dualizing complex. For `K` in `D_QCoh(𝒪_X)` and every `i`
@@ -73,8 +73,8 @@ theorem dualityEquiv_shiftedHomComp (K L : quasiCoherentDerivedCategory X) {i j 
 
 **`Stacks.Duality.dualityLinearMap_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/Duality.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/Duality.lean#L423). The attribute's comment: “part (5): compatibility with shifts”.
 
-> **Compatibility of the duality map with shifts.** Under `Ext^{i+n}_X(K⟦n⟧, ω_X^•) =
-> Ext^i_X(K, ω_X^•)` (composition with the identity of `K⟦n⟧`, an element of `Ext^n_X(K⟦n⟧, K)`) and
+> **Compatibility of the duality map with shifts.** Under `Ext^\{i+n}\_X(K⟦n⟧, ω\_X^•) =
+> Ext^i\_X(K, ω\_X^•)` (composition with the identity of `K⟦n⟧`, an element of `Ext^n\_X(K⟦n⟧, K)`) and
 > the canonical isomorphism `H^{-(i+n)}(X, K⟦n⟧) ≅ H^{-i}(X, K)`, the duality maps of `K⟦n⟧` and
 > of `K` agree.
 
@@ -109,7 +109,7 @@ theorem dualityLinearMap_triangle (T : Pretriangulated.Triangle (DerivedCategory
         ((HX).homologySequenceδ T (-(i + 1)) (-i) (by omega) x)
 ```
 
-**`Stacks.Duality.isDualizingComplex_relativeDualizingComplex_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean#L75). The attribute's comment: “existence: ω_X^• = a(O_{Spec k}) is a dualizing complex”.
+**`Stacks.Duality.isDualizingComplex_relativeDualizingComplex_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean#L75). The attribute's comment: “existence: ω\_X^• = a(O\_\{Spec k}) is a dualizing complex”.
 
 > **[Stacks, Tag 0FVV], existence.** For `X` proper over a field `k`, the complex
 > `ω_X^• = a(𝒪_{Spec k})` is a dualizing complex on `X`.
@@ -122,7 +122,7 @@ theorem isDualizingComplex_relativeDualizingComplex_of_isProper :
       (DerivedPushforward.derivedStructureSheaf (Spec (.of k)))).obj
 ```
 
-**`Stacks.Duality.le_zero_and_le_dim_of_not_isZero_homology_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean#L85). The attribute's comment: “part (1): H^i(ω_X^•) is nonzero only for i ∈ [-dim X, 0]”.
+**`Stacks.Duality.le_zero_and_le_dim_of_not_isZero_homology_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean#L85). The attribute's comment: “part (1): H^i(ω\_X^•) is nonzero only for i ∈ [-dim X, 0]”.
 
 > **[Stacks, Tag 0FVV], part (1).** `H^i(ω_X^•)` is nonzero only for `i ∈ [-dim X, 0]`.
 
@@ -134,7 +134,7 @@ theorem le_zero_and_le_dim_of_not_isZero_homology_of_isProper (i : ℤ)
     i ≤ 0 ∧ (((-i).toNat : ℕ) : WithBot ℕ∞) ≤ topologicalKrullDim X
 ```
 
-**`Stacks.Duality.relativeDualizingModule_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean#L97). The attribute's comment: “part (2): ω_X is a coherent (S₂)-module supported on the components of dimension dim X”.
+**`Stacks.Duality.relativeDualizingModule_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean#L97). The attribute's comment: “part (2): ω\_X is a coherent (S₂)-module supported on the components of dimension dim X”.
 
 > **[Stacks, Tag 0FVV], part (2).** `ω_X = H^{-dim X}(ω_X^•)` is a coherent module with property
 > `(S₂)` whose support is the union of the irreducible components of dimension `dim X`.
@@ -152,7 +152,7 @@ theorem relativeDualizingModule_of_isProper :
       ⋃₀ {C ∈ irreducibleComponents X | topologicalKrullDim C = topologicalKrullDim X}
 ```
 
-**`Stacks.Duality.topologicalKrullDim_supp_homology_le_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean#L113). The attribute's comment: “part (3): dim Supp H^i(ω_X^•) ≤ -i”.
+**`Stacks.Duality.topologicalKrullDim_supp_homology_le_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean#L113). The attribute's comment: “part (3): dim Supp H^i(ω\_X^•) ≤ -i”.
 
 > **[Stacks, Tag 0FVV], part (3).** The support of `H^i(ω_X^•)` has dimension at most `-i`
 > (and is empty for `i > 0`).
@@ -166,7 +166,7 @@ theorem topologicalKrullDim_supp_homology_le_of_isProper (i : ℤ) :
       if i ≤ 0 then (((-i).toNat : ℕ) : WithBot ℕ∞) else ⊥
 ```
 
-**`Stacks.Duality.exists_nontrivial_stalk_homology_iff_depth_le_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean#L126). The attribute's comment: “part (4): H^i(ω_{X,x}^•) ⊕ … ⊕ H^0(ω_{X,x}^•) ≠ 0 iff depth(O_{X,x}) ≤ -i, at closed points”.
+**`Stacks.Duality.exists_nontrivial_stalk_homology_iff_depth_le_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean#L126). The attribute's comment: “part (4): H^i(ω\_\{X,x}^•) ⊕ … ⊕ H^0(ω\_\{X,x}^•) ≠ 0 iff depth(O\_\{X,x}) ≤ -i, at closed points”.
 
 > **[Stacks, Tag 0FVV], part (4).** For `x ∈ X` closed, one of `H^i(ω_{X,x}^•)`, …,
 > `H^0(ω_{X,x}^•)` is nonzero if and only if `depth(𝒪_{X,x}) ≤ -i`.
@@ -182,7 +182,7 @@ theorem exists_nontrivial_stalk_homology_iff_depth_le_of_isProper {x : X}
         (X.presheaf.stalk x) ≤ ((-i).toNat : ℕ∞)
 ```
 
-**`Stacks.Duality.dualizingModuleHomEquivOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean#L150). The attribute's comment: “part (6): Hom(F, ω_X) = Hom_k(H^{dim X}(X, F), k) for F quasi-coherent”.
+**`Stacks.Duality.dualizingModuleHomEquivOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplex.lean#L150). The attribute's comment: “part (6): Hom(F, ω\_X) = Hom\_k(H^\{dim X}(X, F), k) for F quasi-coherent”.
 
 > **[Stacks, Tag 0FVV], part (6).** For `F` quasi-coherent on `X` there is a `k`-linear
 > isomorphism `Hom_X(F, ω_X) ≅ Hom_k(H^{dim X}(X, F), k)`, natural in `F`
@@ -214,7 +214,7 @@ theorem dualizingModuleHomEquivOfIsProper_comp {F G : X.Modules} [F.IsQuasicoher
           φ x)
 ```
 
-**`Stacks.Duality.boundedCoherent_relativeDualizingComplex_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplexCharacterization.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplexCharacterization.lean#L57). The attribute's comment: “footnote to part (5): ω_X^• is in D^b_Coh(O_X)”.
+**`Stacks.Duality.boundedCoherent_relativeDualizingComplex_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplexCharacterization.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplexCharacterization.lean#L57). The attribute's comment: “footnote to part (5): ω\_X^• is in D^b\_Coh(O\_X)”.
 
 > **[Stacks, Tag 0FVV], footnote to part (5): `ω_X^•` lies in `D^b_Coh(𝒪_X)`.** Its cohomology
 > sheaves are coherent ([Stacks, Tag 0A89]) and vanish outside `[-dim X, 0]` (part (1)).
@@ -226,7 +226,7 @@ theorem boundedCoherent_relativeDualizingComplex_of_isProper :
         (DerivedPushforward.derivedStructureSheaf (Spec (.of k)))).obj
 ```
 
-**`Stacks.Duality.existsUnique_iso_relativeDualizingComplex_of_quasiCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplexCharacterization.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplexCharacterization.lean#L127). The attribute's comment: “footnote to part (5): the isomorphisms characterize ω_X^• in D_QCoh(O_X) up to unique isomorphism”.
+**`Stacks.Duality.existsUnique_iso_relativeDualizingComplex_of_quasiCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplexCharacterization.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplexCharacterization.lean#L127). The attribute's comment: “footnote to part (5): the isomorphisms characterize ω\_X^• in D\_QCoh(O\_X) up to unique isomorphism”.
 
 > **[Stacks, Tag 0FVV], footnote to part (5): the duality isomorphisms characterize `ω_X^•` in
 > `D_QCoh(𝒪_X)` up to unique isomorphism.** If `ω ∈ D_QCoh(𝒪_X)` has bijections
@@ -251,7 +251,7 @@ theorem existsUnique_iso_relativeDualizingComplex_of_quasiCoherent
           ((derivedGlobalSectionsOver f).map (α ≫ e.hom)) ≫ traceOverField f = φ K α
 ```
 
-**`Stacks.Duality.existsUnique_iso_relativeDualizingComplex_of_boundedCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplexCharacterization.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplexCharacterization.lean#L156). The attribute's comment: “footnote to part (5): ω_X^• is characterized by the isomorphisms for K in D^b_Coh(O_X)”.
+**`Stacks.Duality.existsUnique_iso_relativeDualizingComplex_of_boundedCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplexCharacterization.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/DualizingComplexCharacterization.lean#L156). The attribute's comment: “footnote to part (5): ω\_X^• is characterized by the isomorphisms for K in D^b\_Coh(O\_X)”.
 
 > **[Stacks, Tag 0FVV], footnote to part (5): it suffices to consider `K ∈ D^b_Coh(𝒪_X)`.** If
 > `ω ∈ D^b_Coh(𝒪_X)` has bijections `Hom(K, ω) ≃ Hom_k(H⁰(X, K), k)` natural in
@@ -284,7 +284,7 @@ theorem existsUnique_iso_relativeDualizingComplex_of_boundedCoherent
           ((derivedGlobalSectionsOver f).map (α ≫ e.hom)) ≫ traceOverField f = φ K hK α
 ```
 
-**`Stacks.Duality.nonempty_relativeDualizingComplex_iso_and_relativeDualizingModule_iso_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/SmoothDualizingModule.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/SmoothDualizingModule.lean#L81). The attribute's comment: “part (7): for X smooth of relative dimension d over k, ω_X^• ≅ ∧^d Ω_{X/k}[d] and ω_X ≅ ∧^d Ω_{X/k}”.
+**`Stacks.Duality.nonempty_relativeDualizingComplex_iso_and_relativeDualizingModule_iso_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/SmoothDualizingModule.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/SmoothDualizingModule.lean#L81). The attribute's comment: “part (7): for X smooth of relative dimension d over k, ω\_X^• ≅ ∧^d Ω\_\{X/k}[d] and ω\_X ≅ ∧^d Ω\_\{X/k}”.
 
 > **[Stacks, Tag 0FVV], part (7).** Let `X` be proper over a field `k`, with
 > `ω_X^• = a(𝒪_{Spec k})`. If `X ⟶ Spec k` is smooth of relative dimension `d`, then
@@ -309,7 +309,7 @@ theorem nonempty_relativeDualizingComplex_iso_and_relativeDualizingModule_iso_of
 
 [Tag 0FVW](https://stacks.math.columbia.edu/tag/0FVW) in the Stacks Project.
 
-**`Stacks.Duality.dualityEquiv_id_eq_traceOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean#L190). The attribute's comment: “the identity of ω_X^• corresponds via 0FVV (5) to the trace t : H^0(X, ω_X^•) → k”.
+**`Stacks.Duality.dualityEquiv_id_eq_traceOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean#L190). The attribute's comment: “the identity of ω\_X^• corresponds via 0FVV (5) to the trace t : H^0(X, ω\_X^•) → k”.
 
 > **The identity of `ω_X^•` corresponds to the trace.** Under the isomorphism of part (5) of
 > [Stacks, Tag 0FVV] in degree zero, `Hom(ω_X^•, ω_X^•) ≅ Hom_k(H⁰(X, ω_X^•), k)`, the identity
@@ -321,7 +321,7 @@ theorem dualityEquiv_id_eq_traceOverField :
     dualityEquiv f ωX 0 (ShiftedHom.mk₀ (0 : ℤ) rfl (𝟙 (ωX).obj)) = (traceOverField f).hom
 ```
 
-**`Stacks.Duality.dualityEquiv_mk₀_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean#L202). The attribute's comment: “the degree-zero pairing Hom_X(K, ω_X^•) × H^0(X, K) → k, (α, β) ↦ t(α(β))”.
+**`Stacks.Duality.dualityEquiv_mk₀_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean#L202). The attribute's comment: “the degree-zero pairing Hom\_X(K, ω\_X^•) × H^0(X, K) → k, (α, β) ↦ t(α(β))”.
 
 > **The degree-zero pairing.** For `K` in `D_QCoh(𝒪_X)`, the identification
 > `Hom(K, ω_X^•) ≅ H⁰(X, K)^∨` of part (5) of [Stacks, Tag 0FVV] is the pairing
@@ -336,7 +336,7 @@ theorem dualityEquiv_mk₀_apply (K : quasiCoherentDerivedCategory X) (α : K.ob
       (traceOverField f).hom (((H⁰).map ((derivedGlobalSectionsOver f).map α)).hom β)
 ```
 
-**`Stacks.Duality.dualityEquiv_apply_eq_traceOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean#L217). The attribute's comment: “the pairing Ext^i_X(K, ω_X^•) × H^{-i}(X, K) → k, (α, β) ↦ t(α(β)), with α a morphism K[-i] → ω_X^• and β in H^0(X, K[-i])”.
+**`Stacks.Duality.dualityEquiv_apply_eq_traceOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean#L217). The attribute's comment: “the pairing Ext^i\_X(K, ω\_X^•) × H^\{-i}(X, K) → k, (α, β) ↦ t(α(β)), with α a morphism K[-i] → ω\_X^• and β in H^0(X, K[-i])”.
 
 > **The pairing in degree `i`.** For `K` in `D_QCoh(𝒪_X)` and `i ∈ ℤ`, the identification
 > `Ext^i_X(K, ω_X^•) ≅ H^{-i}(X, K)^∨` of part (5) of [Stacks, Tag 0FVV] is the pairing
@@ -355,7 +355,7 @@ theorem dualityEquiv_apply_eq_traceOverField (K : quasiCoherentDerivedCategory X
         ((((HX).shiftIso (-i) 0 (-i) (add_zero _)).inv.app K.obj).hom β))
 ```
 
-**`Stacks.Duality.bijective_dualityLinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean#L247). The attribute's comment: “the pairing identifies Ext^i_X(K, ω_X^•) with the k-linear dual of H^{-i}(X, K)”.
+**`Stacks.Duality.bijective_dualityLinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean#L247). The attribute's comment: “the pairing identifies Ext^i\_X(K, ω\_X^•) with the k-linear dual of H^\{-i}(X, K)”.
 
 > **The pairing is nondegenerate on one side.** For `K` in `D_QCoh(𝒪_X)` and every `i`, the
 > pairing `(α, β) ↦ t(α(β))` of `Ext^i_X(K, ω_X^•)` with `H^{-i}(X, K)` identifies
@@ -367,7 +367,7 @@ theorem bijective_dualityLinearMap (K : quasiCoherentDerivedCategory X) (i : ℤ
     Function.Bijective (dualityLinearMap f K.obj i)
 ```
 
-**`Stacks.Duality.exists_not_bijective_dualityLinearMap_flip`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean#L282). The attribute's comment: “the 'not vice versa' clause: on X = Spec k some K in D_QCoh has H^0(X, K) → Hom_X(K, ω_X^•)^∨ not bijective”.
+**`Stacks.Duality.exists_not_bijective_dualityLinearMap_flip`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean#L282). The attribute's comment: “the 'not vice versa' clause: on X = Spec k some K in D\_QCoh has H^0(X, K) → Hom\_X(K, ω\_X^•)^∨ not bijective”.
 
 > **The pairing is in general not nondegenerate on the other side** (the clause "but in general
 > not vice versa" of [Stacks, Tag 0FVW]). For every field `k`, on the proper scheme `X = Spec k`
@@ -383,7 +383,7 @@ theorem exists_not_bijective_dualityLinearMap_flip (k : Type u) [Field k] :
       ¬ Function.Bijective (dualityLinearMap (𝟙 (Spec (.of k))) K.obj 0).flip
 ```
 
-**`Stacks.Duality.finiteDimensional_and_isPerfPair_of_coherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean#L315). The attribute's comment: “K in D^b_Coh: Hom_X(K, ω_X^•), Ext^i_X(K, ω_X^•), H^i(X, K) are finite dimensional and the pairings are perfect”.
+**`Stacks.Duality.finiteDimensional_and_isPerfPair_of_coherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/TracePairing.lean#L315). The attribute's comment: “K in D^b\_Coh: Hom\_X(K, ω\_X^•), Ext^i\_X(K, ω\_X^•), H^i(X, K) are finite dimensional and the pairings are perfect”.
 
 > **The coherent case.** For `K` in `D^b_Coh(𝒪_X)`, the `k`-vector spaces
 > `Hom_X(K, ω_X^•)`, `Ext^i_X(K, ω_X^•)` and `H^n(X, K)` are finite dimensional, and for every `i`
@@ -485,7 +485,7 @@ theorem isPerfPair_dualityCupPairing
 
 [Tag 0FVZ](https://stacks.math.columbia.edu/tag/0FVZ) in the Stacks Project.
 
-**`Stacks.Duality.isDualizingModuleOf_relativeDualizingModule_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/CohenMacaulay.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/CohenMacaulay.lean#L184). The attribute's comment: “part (1): ω_X is a dualizing module on X (Section 0AWH)”.
+**`Stacks.Duality.isDualizingModuleOf_relativeDualizingModule_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/CohenMacaulay.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/CohenMacaulay.lean#L184). The attribute's comment: “part (1): ω\_X is a dualizing module on X (Section 0AWH)”.
 
 > **[Stacks, Tag 0FVZ], part (1).** Let `X` be a proper scheme over a field `k` which is
 > Cohen--Macaulay and equidimensional of dimension `d`. The module `ω_X` of [Stacks, Tag 0FVV] is a
@@ -500,7 +500,7 @@ theorem isDualizingModuleOf_relativeDualizingModule_of_isProper
     IsDualizingModuleOf ωM (ωX).obj (-(d : ℤ))
 ```
 
-**`Stacks.Duality.relativeDualizingModule_isCoherent_cohenMacaulay_supp_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/CohenMacaulay.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/CohenMacaulay.lean#L218). The attribute's comment: “part (2): ω_X is a coherent Cohen-Macaulay module whose support is X”.
+**`Stacks.Duality.relativeDualizingModule_isCoherent_cohenMacaulay_supp_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/CohenMacaulay.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/CohenMacaulay.lean#L218). The attribute's comment: “part (2): ω\_X is a coherent Cohen-Macaulay module whose support is X”.
 
 > **[Stacks, Tag 0FVZ], part (2).** Let `X` be a proper scheme over a field `k` which is
 > Cohen--Macaulay and equidimensional of dimension `d`. The module `ω_X` of [Stacks, Tag 0FVV] is a
@@ -514,7 +514,7 @@ theorem relativeDualizingModule_isCoherent_cohenMacaulay_supp_of_isProper
       _root_.SheafOfModules.supp ωM = Set.univ
 ```
 
-**`Stacks.Duality.dualityEquivShiftOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/CohenMacaulay.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/CohenMacaulay.lean#L246). The attribute's comment: “part (3): the isomorphisms Ext^i_X(K, ω_X[d]) = Hom_k(H^{-i}(X, K), k)”.
+**`Stacks.Duality.dualityEquivShiftOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/CohenMacaulay.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/CohenMacaulay.lean#L246). The attribute's comment: “part (3): the isomorphisms Ext^i\_X(K, ω\_X[d]) = Hom\_k(H^\{-i}(X, K), k)”.
 
 > **[Stacks, Tag 0FVZ], part (3), the isomorphisms.** Let `X` be a proper scheme over a field `k`
 > which is Cohen--Macaulay and equidimensional of dimension `d`. For `K` in `D_QCoh(𝒪_X)` and every
@@ -631,7 +631,7 @@ theorem dualityEquivShiftOfIsProper_triangle (hCM : AlgebraicGeometry.IsCohenMac
         ((HX).homologySequenceδ T (-(i + 1)) (-i) (by omega) x)
 ```
 
-**`Stacks.Duality.dualizingModuleExtEquivOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/CohenMacaulay.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/CohenMacaulay.lean#L379). The attribute's comment: “part (4): Ext^{d-i}(F, ω_X) = Hom_k(H^i(X, F), k) for F quasi-coherent”.
+**`Stacks.Duality.dualizingModuleExtEquivOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/CohenMacaulay.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/CohenMacaulay.lean#L379). The attribute's comment: “part (4): Ext^\{d-i}(F, ω\_X) = Hom\_k(H^i(X, F), k) for F quasi-coherent”.
 
 > **[Stacks, Tag 0FVZ], part (4).** Let `X` be a proper scheme over a field `k` which is
 > Cohen--Macaulay and equidimensional of dimension `d`. For `F` a quasi-coherent `𝒪_X`-module there
@@ -695,7 +695,7 @@ theorem serrePairing_isPerfPair (hCM : AlgebraicGeometry.IsCohenMacaulay X)
 
 [Tag 0FW1](https://stacks.math.columbia.edu/tag/0FW1) in the Stacks Project.
 
-**`Stacks.Duality.nonempty_iso_relativeDualizing_of_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/ChangeOfField.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/ChangeOfField.lean#L293). The attribute's comment: “(1): ω_X^• and ω_X are as in 0FVV for a factorization X → Spec k' → Spec k”.
+**`Stacks.Duality.nonempty_iso_relativeDualizing_of_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/ChangeOfField.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/ChangeOfField.lean#L293). The attribute's comment: “(1): ω\_X^• and ω\_X are as in 0FVV for a factorization X → Spec k' → Spec k”.
 
 > Let `X` be proper over a field `k` with structure morphism `f`, and suppose `f` factors as
 > `f' ≫ g` with `f' : X ⟶ Spec k'` for a field `k'`. Then `ω_X^•` and `ω_X` of [Stacks, Tag 0FVV]
@@ -715,7 +715,7 @@ theorem nonempty_iso_relativeDualizing_of_factorization {k' : Type u} [Field k']
         (DerivedPushforward.derivedStructureSheaf (Spec (.of k'))))
 ```
 
-**`Stacks.Duality.nonempty_iso_relativeDualizing_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/ChangeOfField.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/ChangeOfField.lean#L312). The attribute's comment: “(2): the pullbacks of ω_X^• and ω_X to X_K are as in 0FVV for X_K → Spec K”.
+**`Stacks.Duality.nonempty_iso_relativeDualizing_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/ChangeOfField.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperOverField/ChangeOfField.lean#L312). The attribute's comment: “(2): the pullbacks of ω\_X^• and ω\_X to X\_K are as in 0FVV for X\_K → Spec K”.
 
 > Let `X` be proper over a field `k` with structure morphism `f`, let `K/k` be a field extension
 > and `X_K = X ×_{Spec k} Spec K`, with projections `g' : X_K ⟶ X` and `f_K : X_K ⟶ Spec K`. Then

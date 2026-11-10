@@ -14,7 +14,7 @@ Section 38.37 of the Stacks Project, [Tag 0EV4](https://stacks.math.columbia.edu
 
 [Tag 0EV6](https://stacks.math.columbia.edu/tag/0EV6) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_restrict_compl_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/AlmostBlowUp/IsomorphismAwayFromCenter.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/AlmostBlowUp/IsomorphismAwayFromCenter.lean#L117). The attribute's comment: “isomorphism_away_from_center”.
+**`AlgebraicGeometry.isIso_restrict_compl_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/AlmostBlowUp/IsomorphismAwayFromCenter.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/AlmostBlowUp/IsomorphismAwayFromCenter.lean#L117). The attribute's comment: “isomorphism\_away\_from\_center”.
 
 > **Stacks Project, Tag 0EV6.** The modification of an almost blowup square is an isomorphism
 > over the complement of the centre of the square.
@@ -27,8 +27,8 @@ public theorem isIso_restrict_compl_support {X X' : Scheme.{u}}
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.IsAlmostBlowUpSquare`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/Basic.lean#L44), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/Basic.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/Basic.lean#L60) (StacksFrontier): “almost_blow_up_square”.
-- [`AlgebraicGeometry.supportedSectionsIdeal_ideal`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/AlmostBlowUp/SupportedSections.lean#L95), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/AlmostBlowUp/SupportedSections.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/AlmostBlowUp/SupportedSections.lean#L120) (StacksFrontier): “almost_blow_up_square”.
+- [`AlgebraicGeometry.IsAlmostBlowUpSquare`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/Basic.lean#L44), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/Basic.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/AlmostBlowUp/Basic.lean#L60) (StacksFrontier): “almost\_blow\_up\_square”.
+- [`AlgebraicGeometry.supportedSectionsIdeal_ideal`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/AlmostBlowUp/SupportedSections.lean#L95), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/AlmostBlowUp/SupportedSections.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/AlmostBlowUp/SupportedSections.lean#L120) (StacksFrontier): “almost\_blow\_up\_square”.
 
 ## Tag 0EV7, a lemma
 

@@ -14,7 +14,7 @@ Section 109.25 of the Stacks Project, [Tag 0E99](https://stacks.math.columbia.ed
 
 [Tag 0E9A](https://stacks.math.columbia.edu/tag/0E9A) in the Stacks Project.
 
-**`AlgebraicGeometry.isSeparated_moduliStableCurvesOfGenus_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliStableCurvesUnconditional.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliStableCurvesUnconditional.lean#L73). The attribute's comment: “g ≥ 2 (hg); 𝓜̄_g → Spec(ℤ) is separated, which is what the source says the statement means; nothing is assumed”.
+**`AlgebraicGeometry.isSeparated_moduliStableCurvesOfGenus_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliStableCurvesUnconditional.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliStableCurvesUnconditional.lean#L73). The attribute's comment: “g ≥ 2 (hg); 𝓜̄\_g → Spec(ℤ) is separated, which is what the source says the statement means; nothing is assumed”.
 
 > Let `g ≥ 2`. The stack `𝓜̄_g` is separated: the morphism `𝓜̄_g → Spec(ℤ)` (the inclusion of
 > the open substack of stable families of genus `g` into the small model of the algebraic stack
@@ -53,7 +53,7 @@ theorem compactSpace_points_moduliStableCurvesOfGenusSmall (g : ℕ) (hg : 2 ≤
 
 [Tag 0E9C](https://stacks.math.columbia.edu/tag/0E9C) in the Stacks Project.
 
-**`AlgebraicGeometry.moduliStableCurves_isDeligneMumford_proper_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliStableCurvesProperSmoothReduced.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliStableCurvesProperSmoothReduced.lean#L335). The attribute's comment: “g ≥ 2 (hg); 𝓜̄_g is Deligne–Mumford, proper and smooth over Spec(ℤ), and 𝓜_g is an open substack of 𝓜̄_g whose points are dense in |𝓜̄_g|; nothing is assumed”.
+**`AlgebraicGeometry.moduliStableCurves_isDeligneMumford_proper_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliStableCurvesProperSmoothReduced.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliStableCurvesProperSmoothReduced.lean#L335). The attribute's comment: “g ≥ 2 (hg); 𝓜̄\_g is Deligne–Mumford, proper and smooth over Spec(ℤ), and 𝓜\_g is an open substack of 𝓜̄\_g whose points are dense in |𝓜̄\_g|; nothing is assumed”.
 
 > Let `g ≥ 2`. The algebraic stack `𝓜̄_g` is a Deligne–Mumford stack, proper and smooth over
 > `Spec(ℤ)`. Moreover, the locus `𝓜_g` parametrizing smooth curves is a dense open substack.

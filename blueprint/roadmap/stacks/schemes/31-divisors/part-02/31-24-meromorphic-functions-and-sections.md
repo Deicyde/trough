@@ -71,7 +71,7 @@ theorem isIso_toTotalQuotientSheaf :
 
 [Tag 01X4](https://stacks.math.columbia.edu/tag/01X4) in the Stacks Project.
 
-**`AlgebraicGeometry.meromorphicSectionSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/MeromorphicSections.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/MeromorphicSections.lean#L61). The attribute's comment: “part (1)”. References: EGA IV (20.1.3), “M_X(F)”.
+**`AlgebraicGeometry.meromorphicSectionSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/MeromorphicSections.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/MeromorphicSections.lean#L61). The attribute's comment: “part (1)”. References: EGA IV (20.1.3), “M\_X(F)”.
 
 > The sheaf `K_X(F)` of meromorphic sections of `F`, obtained by extension of scalars from
 > `O` to its sheaf of total quotient rings.
@@ -98,7 +98,7 @@ abbrev MeromorphicSection (O : TopCat.Sheaf CommRingCat.{u} X)
 
 [Tag 02OT](https://stacks.math.columbia.edu/tag/02OT) in the Stacks Project.
 
-**`AlgebraicGeometry.PullbacksMeromorphicSections`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Pullback.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Pullback.lean#L105). References: EGA IV (20.1.11), “M_f = M_X condition”.
+**`AlgebraicGeometry.PullbacksMeromorphicSections`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Pullback.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Pullback.lean#L105). References: EGA IV (20.1.11), “M\_f = M\_X condition”.
 
 > Pullbacks of meromorphic functions are defined for `f` when the pullback to every compatible
 > pair of opens sends regular sections of the target structure sheaf to regular sections of the
@@ -113,7 +113,7 @@ noncomputable abbrev PullbacksMeromorphicSections
 
 [Tag 02OU](https://stacks.math.columbia.edu/tag/02OU) in the Stacks Project.
 
-**`AlgebraicGeometry.pullbacksMeromorphicSections_of_mapsTo_genericPoints`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L86). The attribute's comment: “weakly_associated”.
+**`AlgebraicGeometry.pullbacksMeromorphicSections_of_mapsTo_genericPoints`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L86). The attribute's comment: “weakly\_associated”.
 
 > If a morphism of schemes maps every weakly associated point of its source to the generic
 > point of an irreducible component of its target, then pullbacks of meromorphic functions are
@@ -126,7 +126,7 @@ lemma pullbacksMeromorphicSections_of_mapsTo_genericPoints
     PullbacksMeromorphicSections f.1
 ```
 
-**`AlgebraicGeometry.pullbacksMeromorphicSections_of_reduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L127). The attribute's comment: “reduced_source”.
+**`AlgebraicGeometry.pullbacksMeromorphicSections_of_reduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L127). The attribute's comment: “reduced\_source”.
 
 > **Stacks Project, Tag 02OU (reduced source).** If a morphism from a reduced scheme sends
 > every generic point of an irreducible component to a generic point of an irreducible component,
@@ -138,7 +138,7 @@ theorem pullbacksMeromorphicSections_of_reduced {X Y : Scheme.{u}} (f : X ⟶ Y)
     PullbacksMeromorphicSections f.toLRSHom
 ```
 
-**`AlgebraicGeometry.pullbacksMeromorphicSections_of_isIntegral`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L137). The attribute's comment: “integral_source”.
+**`AlgebraicGeometry.pullbacksMeromorphicSections_of_isIntegral`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L137). The attribute's comment: “integral\_source”.
 
 > **Stacks Project, Tag 02OU (integral source).** If the source of a morphism of schemes is
 > integral and its generic point maps to a generic point of an irreducible component of the target,
@@ -151,7 +151,7 @@ lemma pullbacksMeromorphicSections_of_isIntegral
     PullbacksMeromorphicSections f.toLRSHom
 ```
 
-**`AlgebraicGeometry.pullbacksMeromorphicSections_of_isDominant`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L146). The attribute's comment: “dominant_integral”. References: EGA IV (21.4.5), “(iii), X,X' integral”.
+**`AlgebraicGeometry.pullbacksMeromorphicSections_of_isDominant`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L146). The attribute's comment: “dominant\_integral”. References: EGA IV (21.4.5), “(iii), X,X' integral”.
 
 > **Stacks Project, Tag 02OU.** Pullbacks of meromorphic functions are defined along a
 > dominant morphism between integral schemes.
@@ -162,7 +162,7 @@ lemma pullbacksMeromorphicSections_of_isDominant
     PullbacksMeromorphicSections f.toLRSHom
 ```
 
-**`AlgebraicGeometry.pullbacksMeromorphicSections_of_associatedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L158). The attribute's comment: “associated_points”. References: EGA IV (21.4.5), “(ii), to generic points”.
+**`AlgebraicGeometry.pullbacksMeromorphicSections_of_associatedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L158). The attribute's comment: “associated\_points”. References: EGA IV (21.4.5), “(ii), to generic points”.
 
 > **Stacks Project, Tag 02OU (associated points).** If every associated point of a locally
 > Noetherian source scheme maps to the generic point of an irreducible component of the target,
@@ -176,7 +176,7 @@ theorem pullbacksMeromorphicSections_of_associatedPoints
     PullbacksMeromorphicSections f.toLRSHom
 ```
 
-**`AlgebraicGeometry.pullbacksMeromorphicSections_of_noEmbeddedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L175). The attribute's comment: “no_embedded_points”.
+**`AlgebraicGeometry.pullbacksMeromorphicSections_of_noEmbeddedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PullbackCriteria.lean#L175). The attribute's comment: “no\_embedded\_points”.
 
 > **Stacks Project, Tag 02OU (no embedded points).** If a morphism from a locally Noetherian
 > scheme without embedded points sends every generic point of an irreducible component to a
@@ -205,7 +205,7 @@ theorem pullbacksMeromorphicSections_of_flat
 
 [Tag 0EMF](https://stacks.math.columbia.edu/tag/0EMF) in the Stacks Project.
 
-**`AlgebraicGeometry.regularSectionGerms_eq_nonZeroDivisors_of_weaklyAssociatedPoints_subset_genericPoints`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksWeaklyAssociated.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksWeaklyAssociated.lean#L139). The attribute's comment: “regular_elements_in_stalks”.
+**`AlgebraicGeometry.regularSectionGerms_eq_nonZeroDivisors_of_weaklyAssociatedPoints_subset_genericPoints`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksWeaklyAssociated.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksWeaklyAssociated.lean#L139). The attribute's comment: “regular\_elements\_in\_stalks”.
 
 > If weakly associated points are generic points of irreducible components and
 > quasi-compact opens have finitely many irreducible components, then the germs of regular
@@ -224,7 +224,7 @@ lemma regularSectionGerms_eq_nonZeroDivisors_of_weaklyAssociatedPoints_subset_ge
       nonZeroDivisors (X.presheaf.stalk x)
 ```
 
-**`AlgebraicGeometry.stalk_totalQuotientPresheaf_isFractionRing_of_weaklyAssociatedPoints_subset_genericPoints`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksWeaklyAssociated.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksWeaklyAssociated.lean#L183). The attribute's comment: “stalk_total_quotient_ring”.
+**`AlgebraicGeometry.stalk_totalQuotientPresheaf_isFractionRing_of_weaklyAssociatedPoints_subset_genericPoints`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksWeaklyAssociated.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/StalksWeaklyAssociated.lean#L183). The attribute's comment: “stalk\_total\_quotient\_ring”.
 
 > If every weakly associated point of a scheme is a generic point of an irreducible component
 > and every quasi-compact open has finitely many irreducible components, then the stalk of the
@@ -242,7 +242,7 @@ lemma stalk_totalQuotientPresheaf_isFractionRing_of_weaklyAssociatedPoints_subse
     IsFractionRing (X.presheaf.stalk x) (X.presheaf.totalQuotientPresheaf.stalk x)
 ```
 
-**`AlgebraicGeometry.stalk_totalQuotientSheaf_isFractionRing_of_weaklyAssociated`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Meromorphic/TotalQuotientSheafStalks.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Meromorphic/TotalQuotientSheafStalks.lean#L85). The attribute's comment: “stalk_total_quotient_ring”.
+**`AlgebraicGeometry.stalk_totalQuotientSheaf_isFractionRing_of_weaklyAssociated`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Meromorphic/TotalQuotientSheafStalks.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Meromorphic/TotalQuotientSheafStalks.lean#L85). The attribute's comment: “stalk\_total\_quotient\_ring”.
 
 > If every weakly associated point of a scheme is a generic point of an irreducible component
 > and every quasi-compact open has finitely many irreducible components, then the stalk `K_{X, x}`
@@ -261,7 +261,7 @@ lemma stalk_totalQuotientSheaf_isFractionRing_of_weaklyAssociated
     IsFractionRing (X.presheaf.stalk x) (X.totalQuotientSheaf.presheaf.stalk x)
 ```
 
-**`AlgebraicGeometry.isIso_toGenericPointStalkProduct`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Basic.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Basic.lean#L268). The attribute's comment: “generic_point_decomposition”.
+**`AlgebraicGeometry.isIso_toGenericPointStalkProduct`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Basic.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Basic.lean#L268). The attribute's comment: “generic\_point\_decomposition”.
 
 > The comparison map of sheaves of rings is an isomorphism: it is so on stalks, because the
 > presheaf-level comparison is bijective on the affine opens and the sheafification unit is an
@@ -274,7 +274,7 @@ lemma isIso_toGenericPointStalkProduct
     IsIso (toGenericPointStalkProduct X)
 ```
 
-**`AlgebraicGeometry.meromorphicFunctions_iso_product_genericPointStalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Basic.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Basic.lean#L363). The attribute's comment: “generic_point_decomposition”.
+**`AlgebraicGeometry.meromorphicFunctions_iso_product_genericPointStalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Basic.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Basic.lean#L363). The attribute's comment: “generic\_point\_decomposition”.
 
 > **Stacks 0EMF.** The `𝒪_X`-module of meromorphic functions is the product of the
 > pushed-forward structure sheaves of the local schemes at the generic points of the irreducible
@@ -291,7 +291,7 @@ theorem meromorphicFunctions_iso_product_genericPointStalks
       ∏ᶜ fun η : genericPoints X ↦ genericPointStalkModule X η)
 ```
 
-**`AlgebraicGeometry.meromorphicFunctions_iso_coproduct_genericPointStalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Coproduct.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Coproduct.lean#L247). The attribute's comment: “generic_point_decomposition”.
+**`AlgebraicGeometry.meromorphicFunctions_iso_coproduct_genericPointStalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Coproduct.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicGenericPointDecomposition/Coproduct.lean#L247). The attribute's comment: “generic\_point\_decomposition”.
 
 > **Stacks 0EMF, displayed direct-sum decomposition.** For a scheme whose weakly associated
 > points are generic points of irreducible components and whose quasi-compact opens have finitely

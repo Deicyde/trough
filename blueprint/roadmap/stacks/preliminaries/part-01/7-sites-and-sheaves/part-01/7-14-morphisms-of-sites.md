@@ -70,7 +70,7 @@ theorem topAdjunction_eq_sheafAdjunctionContinuous :
         (Opens.grothendieckTopology X)
 ```
 
-**`StacksZariskiSite.isMorphismOfSites_opensMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean#L83). References: SGA 4 IV (4.1.1), “morphism of topoi Top(f)”; SGA 4 III (1.9.1), “continuity of f^{-1}”.
+**`StacksZariskiSite.isMorphismOfSites_opensMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/TopologicalComparison.lean#L83). References: SGA 4 IV (4.1.1), “morphism of topoi Top(f)”; SGA 4 III (1.9.1), “continuity of f^\{-1}”.
 
 > **Stacks 00X2.** The functor `u = Opens.map f : Y_Zar ⥤ X_Zar`, `V ↦ f⁻¹(V)`, defines a
 > morphism of sites `X_Zar → Y_Zar`: it is continuous, and the induced pullback `u_s = f⁻¹` on
@@ -234,7 +234,7 @@ theorem isQuasiMorphismOfSites_of_isQuasiContinuous
 
 [Tag 08H2](https://stacks.math.columbia.edu/tag/08H2) in the Stacks Project.
 
-**`CategoryTheory.GrothendieckTopology.coversTop_obj_of_preservesTerminal_sheafPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/MorphismsOfSites.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/MorphismsOfSites.lean#L222). The attribute's comment: “For a morphism of sites f : D → C given by u : C ⥤ D, every object V of D has a covering {V_j → V} such that each V_j admits a morphism V_j ⟶ u(U_j) for some object U_j of C.”.
+**`CategoryTheory.GrothendieckTopology.coversTop_obj_of_preservesTerminal_sheafPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/MorphismOfSites/MorphismsOfSites.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/MorphismOfSites/MorphismsOfSites.lean#L222). The attribute's comment: “For a morphism of sites f : D → C given by u : C ⥤ D, every object V of D has a covering \{V\_j → V} such that each V\_j admits a morphism V\_j ⟶ u(U\_j) for some object U\_j of C.”.
 
 > **Stacks 08H2.** Let `u : C ⥤ D` be a continuous functor of sites, giving a morphism of sites
 > `f : D → C`, and assume that `f⁻¹ = u_s : Sh(C) ⥤ Sh(D)` preserves the final object (as it does

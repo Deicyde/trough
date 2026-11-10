@@ -36,7 +36,7 @@ The items of SGA 2 that a declaration of an article carries, numbered as printed
 - (4.6): [10.14 Base change](../../preliminaries/part-01/10-commutative-algebra/part-01/10-14-base-change.md), [15.90 Torsion modules](../../preliminaries/part-01/15-more-on-algebra/part-05/15-90-torsion-modules.md) (“more general”)
 - (4.8): [15.40 Some results on power series rings](../../preliminaries/part-01/15-more-on-algebra/part-02/15-40-some-results-on-power-series-rings.md) (“more general”)
 - (5.1): [47.7 Injective hull of the residue field](../../topics-in-scheme-theory/part-01/47-dualizing-complexes/part-01/47-7-injective-hull-of-the-residue-field.md) (“special case”)
-- (5.3): [10.72 Depth](../../preliminaries/part-01/10-commutative-algebra/part-04/10-72-depth.md), [10.110 Regular rings and global dimension](../../preliminaries/part-01/10-commutative-algebra/part-06/10-110-regular-rings-and-global-dimension.md) (“partial”), [47.11 Depth](../../topics-in-scheme-theory/part-01/47-dualizing-complexes/part-01/47-11-depth.md) (“Ext^i(M,A)=0 for i&lt;n”; “Ext^i_A(k, special case”)
+- (5.3): [10.72 Depth](../../preliminaries/part-01/10-commutative-algebra/part-04/10-72-depth.md), [10.110 Regular rings and global dimension](../../preliminaries/part-01/10-commutative-algebra/part-06/10-110-regular-rings-and-global-dimension.md) (“partial”), [47.11 Depth](../../topics-in-scheme-theory/part-01/47-dualizing-complexes/part-01/47-11-depth.md) (“Ext^i(M,A)=0 for i`<`n”; “Ext^i\_A(k, special case”)
 - (5.5): [15.40 Some results on power series rings](../../preliminaries/part-01/15-more-on-algebra/part-02/15-40-some-results-on-power-series-rings.md) (“special case”)
 
 ### Exposé IX
@@ -48,7 +48,7 @@ The items of SGA 2 that a declaration of an article carries, numbered as printed
 ### Exposé V
 
 - (1.1): [22.26 Differential graded categories](../../preliminaries/part-01/22-differential-graded-algebra/part-01/22-26-differential-graded-categories.md) (“Hom^•(F,G) complex”; “more general”)
-- (2.1): [47.18 The local duality theorem](../../topics-in-scheme-theory/part-01/47-dualizing-complexes/part-01/47-18-the-local-duality-theorem.md) (“Ext^{-i}≅Hom(H^i,E)”)
+- (2.1): [47.18 The local duality theorem](../../topics-in-scheme-theory/part-01/47-dualizing-complexes/part-01/47-18-the-local-duality-theorem.md) (“Ext^\{-i}≅Hom(H^i,E)”)
 - (3.1): [47.16 Dualizing complexes over local rings](../../topics-in-scheme-theory/part-01/47-dualizing-complexes/part-01/47-16-dualizing-complexes-over-local-rings.md) (“(i)”; “(ii)”), [51.4 Cohomological dimension](../../topics-in-scheme-theory/part-01/51-local-cohomology/part-01/51-4-cohomological-dimension.md) (“(i)”; “(iii), special case”)
 - (3.4): [31.17 Complements of affine opens](../../schemes/31-divisors/part-01/31-17-complements-of-affine-opens.md)
 
@@ -102,7 +102,7 @@ The items of SGA 2 that a declaration of an article carries, numbered as printed
 
 ### Exposé XIV
 
-- (1.0): [17.6 Closed immersions and abelian sheaves](../../preliminaries/part-01/17-sheaves-of-modules/part-01/17-6-closed-immersions-and-abelian-sheaves.md) (“sheaf Γ_Y(F)”), [26.9 Schemes](../../schemes/26-schemes/part-01/26-9-schemes.md), [26.21 Separation axioms](../../schemes/26-schemes/part-01/26-21-separation-axioms.md)
+- (1.0): [17.6 Closed immersions and abelian sheaves](../../preliminaries/part-01/17-sheaves-of-modules/part-01/17-6-closed-immersions-and-abelian-sheaves.md) (“sheaf Γ\_Y(F)”), [26.9 Schemes](../../schemes/26-schemes/part-01/26-9-schemes.md), [26.21 Separation axioms](../../schemes/26-schemes/part-01/26-21-separation-axioms.md)
 - (1.1): [59.33 Stalks of the structure sheaf](../../topics-in-scheme-theory/part-01/59-etale-cohomology/part-02/59-33-stalks-of-the-structure-sheaf.md)
 - (1.8.2.1): [59.31 Supports of abelian sheaves](../../topics-in-scheme-theory/part-01/59-etale-cohomology/part-02/59-31-supports-of-abelian-sheaves.md) (“abelian, image criterion”; “abelian, s'=0”), [6.11 Stalks](../../preliminaries/part-01/6-sheaves-on-spaces/part-01/6-11-stalks.md) (“Zariski case”), [66.20 Supports of abelian sheaves](../../algebraic-spaces/66-properties-of-algebraic-spaces/part-01/66-20-supports-of-abelian-sheaves.md) (“abelian, geom. point”; “abelian, spaces”)
 - (1.9): [7.39 Criterion for existence of points](../../preliminaries/part-01/7-sites-and-sheaves/part-02/7-39-criterion-for-existence-of-points.md) (“special case”)

@@ -69,7 +69,7 @@ theorem isAdmissibleBlowup_fittingIdeal [F.IsFinitePresentation] (U : X.Opens) (
     Stacks.Blowup.IsAdmissibleBlowup U (blowUpToBase (fittingIdeal F (r : ℤ)))
 ```
 
-**`AlgebraicGeometry.isFiniteLocallyFreeOfRank_strictTransform_of_dense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingFlatten.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingFlatten.lean#L150). The attribute's comment: “strict_transform_free”.
+**`AlgebraicGeometry.isFiniteLocallyFreeOfRank_strictTransform_of_dense`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingFlatten.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingFlatten.lean#L150). The attribute's comment: “strict\_transform\_free”.
 
 > **Stacks Project, Tag 0ESN, part (2).** The strict transform of a finitely presented module
 > along the blowup of its `r`-th Fitting ideal is finite locally free of rank `r`, provided the

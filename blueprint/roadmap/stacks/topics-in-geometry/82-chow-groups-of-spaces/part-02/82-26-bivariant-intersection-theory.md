@@ -76,7 +76,7 @@ abbrev chowCohomology (D : BaseSpaceDimensionSituation.{u}) (G : ChowGroupSystem
     {X : D.Ambient} (sX : X ⟶ D.space) (hX : D.IsGood sX) : Type (u + 1)
 ```
 
-**`AlgebraicGeometry.Space.ChowCohomologyClass`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChowCohomologyAlgebra.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChowCohomologyAlgebra.lean#L166). The attribute's comment: “the degree p component A^p(X) = A^p(X → X): bivariant classes of degree p for id_X over the constructed Chow groups of Stacks 0EQ6, with the fibre product Y' ×_X X taken to be Y'; flat pullback and Gysin maps are the descended ones of Stacks 0EQB and 0ERA, the proper axiom is stated through cycle representatives”.
+**`AlgebraicGeometry.Space.ChowCohomologyClass`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChowCohomologyAlgebra.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChowCohomologyAlgebra.lean#L166). The attribute's comment: “the degree p component A^p(X) = A^p(X → X): bivariant classes of degree p for id\_X over the constructed Chow groups of Stacks 0EQ6, with the fibre product Y' ×\_X X taken to be Y'; flat pullback and Gysin maps are the descended ones of Stacks 0EQB and 0ERA, the proper axiom is stated through cycle representatives”.
 
 > The group `A^p(X) = A^p(X ⟶ X)` of bivariant classes of degree `p` (Stacks 0ERJ) for the
 > identity of a good algebraic space `X/B`: a rule assigning to every good test space `g : Y' ⟶ X`
@@ -98,7 +98,7 @@ abbrev chowCohomology (D : BaseSpaceDimensionSituation.{u}) (G : ChowGroupSystem
 structure ChowCohomologyClass (hX : D.IsGood sX) (p : ℤ)
 ```
 
-**`AlgebraicGeometry.Space.ChowCohomologyClass.instGRing`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChowCohomologyAlgebra.lean, line 524](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChowCohomologyAlgebra.lean#L524). The attribute's comment: “the graded Z-algebra structure on A^*(X): the product of the degree p and q components is the composition A^p(X → X) × A^q(X → X) → A^{p+q}(X → X) of bivariant classes, associative and bilinear, with unit 1 ∈ A^0(X)”.
+**`AlgebraicGeometry.Space.ChowCohomologyClass.instGRing`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChowCohomologyAlgebra.lean, line 524](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChowCohomologyAlgebra.lean#L524). The attribute's comment: “the graded Z-algebra structure on A^*(X): the product of the degree p and q components is the composition A^p(X → X) × A^q(X → X) → A^\{p+q}(X → X) of bivariant classes, associative and bilinear, with unit 1 ∈ A^0(X)”.
 
 > The graded ring structure on `p ↦ A^p(X) = A^p(X ⟶ X)`: the product of the degree `p` and `q`
 > components is the composition `A^p(X ⟶ X) × A^q(X ⟶ X) ⟶ A^{p+q}(X ⟶ X)` of bivariant classes,
@@ -108,7 +108,7 @@ structure ChowCohomologyClass (hX : D.IsGood sX) (p : ℤ)
 instance instGRing : DirectSum.GRing (ChowCohomologyClass D sX hX)
 ```
 
-**`AlgebraicGeometry.Space.ChowCohomologyAlgebra`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChowCohomologyAlgebra.lean, line 553](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChowCohomologyAlgebra.lean#L553). The attribute's comment: “the Chow cohomology A^*(X): the graded Z-algebra ⊕_p A^p(X → X), with multiplication the composition of bivariant classes”.
+**`AlgebraicGeometry.Space.ChowCohomologyAlgebra`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChowCohomologyAlgebra.lean, line 553](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChowCohomologyAlgebra.lean#L553). The attribute's comment: “the Chow cohomology A^*(X): the graded Z-algebra ⊕\_p A^p(X → X), with multiplication the composition of bivariant classes”.
 
 > The Chow cohomology `A^*(X)` of a good algebraic space `X/B`: the graded `ℤ`-algebra
 > `⊕_p A^p(X)` whose degree `p` component is the group `A^p(X ⟶ X)` of bivariant classes of degree
@@ -131,7 +131,7 @@ abbrev chowCohomologyComponentCanonical (D : BaseSpaceDimensionSituation.{u}) {X
     (sX : X ⟶ D.space) (hX : D.IsGood sX) (p : ℤ)
 ```
 
-**`AlgebraicGeometry.Space.chowCohomologyCanonical`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChowCohomologyCanonical.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChowCohomologyCanonical.lean#L95). The attribute's comment: “the graded group A^*(X) = ⊕_p A^p(X → X) over the constructed Chow groups of Stacks 0EQ6, not the ℤ-algebra: the product is composition of bivariant classes, which needs proper pushforward along an isomorphism to respect rational equivalence (Stacks 0EQC)”.
+**`AlgebraicGeometry.Space.chowCohomologyCanonical`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChowCohomologyCanonical.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChowCohomologyCanonical.lean#L95). The attribute's comment: “the graded group A^*(X) = ⊕\_p A^p(X → X) over the constructed Chow groups of Stacks 0EQ6, not the ℤ-algebra: the product is composition of bivariant classes, which needs proper pushforward along an isomorphism to respect rational equivalence (Stacks 0EQC)”.
 
 > The Chow cohomology `A^*(X)` of a good algebraic space `X/B`: the graded group whose degree
 > `p` part is the group `A^p(X ⟶ X)` of bivariant classes of degree `p` for the identity morphism
@@ -195,7 +195,7 @@ def comap (f : X ⟶ Y) (hf : f ≫ sY = sX) :
 
 [Tag 0ERM](https://stacks.math.columbia.edu/tag/0ERM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.firstChernBivariantClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernBivariantClass.lean, line 685](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernBivariantClass.lean#L685). The attribute's comment: “the rule f : X' → X ↦ c_1(f^*L) ∩ - : CH_k(X') → CH_{k-1}(X'), for X/B good and L an invertible O_X-module, is a bivariant class of degree 1”.
+**`AlgebraicGeometry.Space.firstChernBivariantClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernBivariantClass.lean, line 685](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernBivariantClass.lean#L685). The attribute's comment: “the rule f : X' → X ↦ c\_1(f^*L) ∩ - : CH\_k(X') → CH\_\{k-1}(X'), for X/B good and L an invertible O\_X-module, is a bivariant class of degree 1”.
 
 > In Situation 0EDT let `X/B` be good and let `ℒ` be an invertible `𝒪_X`-module. Then the
 > rule that to `f : X' ⟶ X` assigns `c₁(f^*ℒ) ∩ - : CH_k(X') ⟶ CH_{k-1}(X')` is a bivariant class
@@ -212,7 +212,7 @@ def firstChernBivariantClass :
 
 [Tag 0ERN](https://stacks.math.columbia.edu/tag/0ERN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.flatPullbackBivariantClassCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackBivariantClass.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackBivariantClass.lean#L290). The attribute's comment: “the rule g : Y' → Y ↦ (f')^* : CH_k(Y') → CH_{k+r}(X'), X' = X ×_Y Y', for f flat of relative dimension r between good spaces over B, is a bivariant class of degree -r”.
+**`AlgebraicGeometry.Space.flatPullbackBivariantClassCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackBivariantClass.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackBivariantClass.lean#L290). The attribute's comment: “the rule g : Y' → Y ↦ (f')^* : CH\_k(Y') → CH\_\{k+r}(X'), X' = X ×\_Y Y', for f flat of relative dimension r between good spaces over B, is a bivariant class of degree -r”.
 
 > In Situation 0EDT let `f : X ⟶ Y` be a morphism of good algebraic spaces over `B` which is
 > flat of relative dimension `r`. Then the rule that to `g : Y' ⟶ Y` assigns the flat pullback
@@ -230,7 +230,7 @@ def flatPullbackBivariantClassCanonical :
 
 [Tag 0ERP](https://stacks.math.columbia.edu/tag/0ERP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_bivariantClassCanonical_gysin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/GysinBivariantClass/BivariantClass.lean, line 680](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/GysinBivariantClass/BivariantClass.lean#L680). The attribute's comment: “the rule g : X' → X ↦ (i')^* : CH_k(X') → CH_{k-1}(E'), E' = E ×_X X', for X/B good and (L, s, i : E → X) a triple as in 0ER1, is a bivariant class of degree 1 for i; the cap operation is pinned to the Gysin map of the pulled-back triple carried along Z(g^*s) ≅ E ×_X X'”.
+**`AlgebraicGeometry.Space.exists_bivariantClassCanonical_gysin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/GysinBivariantClass/BivariantClass.lean, line 680](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/GysinBivariantClass/BivariantClass.lean#L680). The attribute's comment: “the rule g : X' → X ↦ (i')^* : CH\_k(X') → CH\_\{k-1}(E'), E' = E ×\_X X', for X/B good and (L, s, i : E → X) a triple as in 0ER1, is a bivariant class of degree 1 for i; the cap operation is pinned to the Gysin map of the pulled-back triple carried along Z(g^*s) ≅ E ×\_X X'”.
 
 > **Stacks 0ERP.**  In Situation 0EDT let `X/B` be good and `(ℒ, σ, i : E → X)` a triple as in
 > Stacks 0ER1: `ℒ` an invertible `𝒪_X`-module, `σ` a global section and `E = Z(σ)` its vanishing
@@ -342,7 +342,7 @@ theorem eq_of_isBivariantProperPushforward (hg : g ≫ sZ = sY)
     d = d'
 ```
 
-**`AlgebraicGeometry.Space.BivariantClassCanonical.properPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/BivariantProperPushforwardCanonical.lean, line 742](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/BivariantProperPushforwardCanonical.lean#L742). The attribute's comment: “the rule α ↦ f'_*(c ∩ α) is a bivariant class of degree p for g: the class f_* ∘ c ∈ A^p(Y → Z) over the constructed Chow groups and operations, with its three axioms proved from those of c, Stacks 0EP2, 0EPD and 0ER5”.
+**`AlgebraicGeometry.Space.BivariantClassCanonical.properPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/BivariantProperPushforwardCanonical.lean, line 742](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/BivariantProperPushforwardCanonical.lean#L742). The attribute's comment: “the rule α ↦ f'\_*(c ∩ α) is a bivariant class of degree p for g: the class f\_* ∘ c ∈ A^p(Y → Z) over the constructed Chow groups and operations, with its three axioms proved from those of c, Stacks 0EP2, 0EPD and 0ER5”.
 
 > **Stacks 0ERQ.** In Situation 0EDT let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of good
 > algebraic spaces over the base, with `f` proper, and let `c ∈ A^p(X ⟶ Z)`.  The rule which to a
@@ -356,7 +356,7 @@ def BivariantClassCanonical.properPushforward :
     BivariantClassCanonical.{max (u + 1) v} D sY hY sZ hZ g hg p
 ```
 
-**`AlgebraicGeometry.Space.BivariantClassCanonical.properPushforward_cap_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/BivariantProperPushforwardCanonical.lean, line 754](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/BivariantProperPushforwardCanonical.lean#L754). The attribute's comment: “the class caps by the rule α ↦ f'_*(c ∩ α)”.
+**`AlgebraicGeometry.Space.BivariantClassCanonical.properPushforward_cap_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/BivariantProperPushforwardCanonical.lean, line 754](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/BivariantProperPushforwardCanonical.lean#L754). The attribute's comment: “the class caps by the rule α ↦ f'\_*(c ∩ α)”.
 
 > **Stacks 0ERQ.** The class `f_* ∘ c` caps by the rule of the source: on a test space
 > `z : Z' ⟶ Z`, `(f_* ∘ c) ∩ α = f'_*(c ∩ α)` in `CH_{k-p}(Z' ×_Z Y)`.
@@ -378,7 +378,7 @@ theorem BivariantClassCanonical.properPushforward_cap_apply {Z' : D.Ambient} (z 
 
 [Tag 0ERR](https://stacks.math.columbia.edu/tag/0ERR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.firstChernBivariantClass_compCap_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernBivariantCentral.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernBivariantCentral.lean#L70). The attribute's comment: “c_1(L) ∈ A^1(X) commutes with every c ∈ A^p(X): the composites c_1(L) ∘ c and c ∘ c_1(L) have the same cap operation on every test space”.
+**`AlgebraicGeometry.Space.firstChernBivariantClass_compCap_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernBivariantCentral.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernBivariantCentral.lean#L70). The attribute's comment: “c\_1(L) ∈ A^1(X) commutes with every c ∈ A^p(X): the composites c\_1(L) ∘ c and c ∘ c\_1(L) have the same cap operation on every test space”.
 
 > **Stacks 0ERR.** In Situation 0EDT let `X/B` be good and let `ℒ` be an invertible
 > `𝒪_X`-module.  Then `c₁(ℒ) ∈ A^1(X)` (Stacks 0ERM,

@@ -14,7 +14,7 @@ Section 7.27 of the Stacks Project, [Tag 04IM](https://stacks.math.columbia.edu/
 
 [Tag 03HT](https://stacks.math.columbia.edu/tag/03HT) in the Stacks Project.
 
-**`CategoryTheory.OverShriek.isIso_ofRestricted_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/MoreLocalization.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/MoreLocalization.lean#L205). The attribute's comment: “j_{U!}G(V) = ∐_{φ : V ⟶ U} G(V →φ U) for a subcanonical topology.”.
+**`CategoryTheory.OverShriek.isIso_ofRestricted_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/MoreLocalization.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/MoreLocalization.lean#L205). The attribute's comment: “j\_\{U!}G(V) = ∐\_\{φ : V ⟶ U} G(V →φ U) for a subcanonical topology.”.
 
 > Let `C` be a site, let `U` be an object of `C` whose representable presheaf `h_U` is a sheaf
 > (for instance because the topology is subcanonical), and let `G` be a sheaf of sets on `C/U`. Let
@@ -36,7 +36,7 @@ public theorem isIso_ofRestricted_unit {C : Type u} [Category.{v} C] (J : Grothe
 
 [Tag 03CE](https://stacks.math.columbia.edu/tag/03CE) in the Stacks Project.
 
-**`StacksLocalizationProducts.bijective_left_comp_prodSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/PushforwardAdjunction.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/PushforwardAdjunction.lean#L122). References: SGA 3 I (1.6), “i_S ⊣ p_S hom bijection”.
+**`StacksLocalizationProducts.bijective_left_comp_prodSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/PushforwardAdjunction.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/PushforwardAdjunction.lean#L122). References: SGA 3 I (1.6), “i\_S ⊣ p\_S hom bijection”.
 
 > **Stacks 03CE(1).** The right adjoint of the localization functor
 > `j_U = Over.forget U : C/U ⥤ C` is `v : X ↦ X × U / U`: for `Y/U` in `C/U` and `X` in `C` the
@@ -135,7 +135,7 @@ noncomputable def sheafPullbackOverPullbackIso :
       (Over.map f).sheafPushforwardContinuous (Type u) (J.over U) (J.over V)
 ```
 
-**`StacksRelocalization.sheafPushforwardObjEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/OverPullbackMorphism.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/OverPullbackMorphism.lean#L67). References: SGA 4 IV (5.5), “f_* formula (5.5.3)”.
+**`StacksRelocalization.sheafPushforwardObjEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/OverPullbackMorphism.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/OverPullbackMorphism.lean#L67). References: SGA 4 IV (5.5), “f\_* formula (5.5.3)”.
 
 > For a sheaf `F` on `C/U` the sections of `j_*F` over an object `X/V` of `C/V` are the sections
 > of `F` over `X ×_V U / U`.

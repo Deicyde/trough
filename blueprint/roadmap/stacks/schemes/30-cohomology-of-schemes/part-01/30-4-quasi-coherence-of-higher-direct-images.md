@@ -259,7 +259,7 @@ instance isQuasicoherent_higherDirectImage {X S : Scheme.{u}} (f : X ⟶ S)
     (((Scheme.Modules.pushforward f).rightDerivedPlus p).obj F).IsQuasicoherent
 ```
 
-**`Stacks.AlgebraicGeometry.HigherDirectImageQcoh.exists_isZero_rightDerived_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean#L439). The attribute's comment: “uniform_vanishing”.
+**`Stacks.AlgebraicGeometry.HigherDirectImageQcoh.exists_isZero_rightDerived_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean#L439). The attribute's comment: “uniform\_vanishing”.
 
 > For a quasi-compact and quasi-separated morphism of schemes whose target is quasi-compact
 > there is an integer, depending on the morphism alone, above which every higher direct image of
@@ -272,7 +272,7 @@ theorem exists_isZero_rightDerived_pushforward {X S : Scheme.{u}} (f : X ⟶ S)
       IsZero (((Scheme.Modules.pushforward f).rightDerivedPlus p).obj F)
 ```
 
-**`Stacks.AlgebraicGeometry.HigherDirectImageQcoh.exists_isZero_rightDerivedNat_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean, line 562](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean#L562). The attribute's comment: “uniform_vanishing”. References: EGA IV (1.7.21), “vanishing bound”; EGA III (1.4.12), “existence of r”.
+**`Stacks.AlgebraicGeometry.HigherDirectImageQcoh.exists_isZero_rightDerivedNat_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean, line 562](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean#L562). The attribute's comment: “uniform\_vanishing”. References: EGA IV (1.7.21), “vanishing bound”; EGA III (1.4.12), “existence of r”.
 
 > For a quasi-compact and quasi-separated morphism of schemes whose target is quasi-compact
 > there is a natural number, depending on the morphism alone, above which `(Rⁿ f_*) F` vanishes for
@@ -286,7 +286,7 @@ theorem exists_isZero_rightDerivedNat_pushforward {X S : Scheme.{u}} (f : X ⟶ 
       IsZero (((Scheme.Modules.pushforward f).rightDerived n).obj F)
 ```
 
-**`Stacks.AlgebraicGeometry.HigherDirectImageQcoh.exists_isZero_rightDerivedPlus_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean, line 586](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean#L586). The attribute's comment: “uniform_vanishing”.
+**`Stacks.AlgebraicGeometry.HigherDirectImageQcoh.exists_isZero_rightDerivedPlus_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean, line 586](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/UniformVanishing.lean#L586). The attribute's comment: “uniform\_vanishing”.
 
 > For a quasi-compact and quasi-separated morphism of schemes whose target is quasi-compact
 > there is an integer, depending on the morphism alone, above which every higher direct image of
@@ -318,9 +318,9 @@ instance higherDirectImage_isQuasicoherent (f : X ⟶ S) [QuasiCompact f] [Quasi
     (((Scheme.Modules.pushforward f).rightDerivedPlus p).obj F).IsQuasicoherent
 ```
 
-**`Stacks.AlgebraicGeometry.Tag01XJUniformVanishing.exists_isZero_rightDerived_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/UniformVanishing/Basic.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/UniformVanishing/Basic.lean#L383). The attribute's comment: “uniform_vanishing”. References: EGA IV (1.7.21), “vanishing bound”; EGA III (1.4.12), “existence of r”.
+**`Stacks.AlgebraicGeometry.Tag01XJUniformVanishing.exists_isZero_rightDerived_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/UniformVanishing/Basic.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/UniformVanishing/Basic.lean#L383). The attribute's comment: “uniform\_vanishing”. References: EGA IV (1.7.21), “vanishing bound”; EGA III (1.4.12), “existence of r”.
 
-> **Stacks Project, Tag 01XJ (uniform_vanishing).** Let `f : X ⟶ S` be a quasi-compact and
+> **Stacks Project, Tag 01XJ (uniform\_vanishing).** Let `f : X ⟶ S` be a quasi-compact and
 > quasi-separated morphism of schemes with `S` quasi-compact.  Then there is an integer `n`,
 > depending only on `f`, such that `R ᵖ f_* F = 0` for every `p ≥ n` and every quasi-coherent
 > `𝒪_X`-module `F`.
@@ -339,7 +339,7 @@ theorem exists_isZero_rightDerived_pushforward (f : X ⟶ S) [QuasiCompact f] [Q
       IsZero (((Scheme.Modules.pushforward f).rightDerivedPlus p).obj F)
 ```
 
-**`AlgebraicGeometry.exists_uniform_isZero_rightDerived_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/UniformVanishingDirectImage/Basic.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/UniformVanishingDirectImage/Basic.lean#L243). The attribute's comment: “base_change_uniform_vanishing”. References: EGA IV (1.7.21), “base change vanishing”; EGA III (1.4.12), “existence of r”.
+**`AlgebraicGeometry.exists_uniform_isZero_rightDerived_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/UniformVanishingDirectImage/Basic.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/UniformVanishingDirectImage/Basic.lean#L243). The attribute's comment: “base\_change\_uniform\_vanishing”. References: EGA IV (1.7.21), “base change vanishing”; EGA III (1.4.12), “existence of r”.
 
 > **Stacks Project, Tag 01XJ (3).** Let `f : X ⟶ S` be a quasi-compact and quasi-separated
 > morphism of schemes with `S` quasi-compact. There is an integer `n = n(X, S, f)` such that for

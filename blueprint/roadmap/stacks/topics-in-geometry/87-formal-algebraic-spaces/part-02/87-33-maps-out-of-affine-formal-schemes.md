@@ -178,7 +178,7 @@ public theorem bijective_map_into_algebraicSpace
 
 [Tag 0GBU](https://stacks.math.columbia.edu/tag/0GBU) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.existsUnique_algebraization_of_adic_into_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletion.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletion.lean#L369). The attribute's comment: “The algebraization, its existence and uniqueness, and both inclusions of its fibre condition g⁻¹(T) = {𝔪}, the second of them by Krull's intersection theorem.”.
+**`AlgebraicGeometry.FormalSpace.existsUnique_algebraization_of_adic_into_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletion.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletion.lean#L369). The attribute's comment: “The algebraization, its existence and uniqueness, and both inclusions of its fibre condition g⁻¹(T) = \{𝔪}, the second of them by Krull's intersection theorem.”.
 
 > **Stacks 0GBU.** Let `S` be a scheme, `X` an algebraic space over `S` and `T` a closed
 > set of points of `X` whose complementary open subspace has quasi-compact inclusion into `X`.
@@ -222,7 +222,7 @@ public theorem existsUnique_algebraization_of_adic_into_completion
           (Sheaf.sectionEquiv (BigFppfOver.topology B S hS) g).down
 ```
 
-**`AlgebraicGeometry.FormalSpace.adicCompletionHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletionEquiv.lean, line 628](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletionEquiv.lean#L628). The attribute's comment: “The bijection between adic morphisms Spf R ⟶ X_{/T} and morphisms g : Spec R ⟶ X with g⁻¹(T) = {𝔪}.”.
+**`AlgebraicGeometry.FormalSpace.adicCompletionHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletionEquiv.lean, line 628](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletionEquiv.lean#L628). The attribute's comment: “The bijection between adic morphisms Spf R ⟶ X\_\{/T} and morphisms g : Spec R ⟶ X with g⁻¹(T) = \{𝔪}.”.
 
 > **Stacks 0GBU.** Let `S` be a scheme, `X` an algebraic space over `S` and `T` a closed set of
 > points of `X` whose complementary open subspace has quasi-compact inclusion into `X`. Let `R` be
@@ -263,7 +263,7 @@ def adicCompletionHomEquiv
           (Sheaf.sectionEquiv (BigFppfOver.topology B S hS) g).down }
 ```
 
-**`AlgebraicGeometry.FormalSpace.adicCompletionHomEquiv_apply_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletionEquiv.lean, line 703](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletionEquiv.lean#L703). The attribute's comment: “The bijection is the correspondence: p ↦ g exactly when g restricts on Spf R to p followed by X_{/T} ⟶ X.”.
+**`AlgebraicGeometry.FormalSpace.adicCompletionHomEquiv_apply_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletionEquiv.lean, line 703](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMapsIntoCompletionEquiv.lean#L703). The attribute's comment: “The bijection is the correspondence: p ↦ g exactly when g restricts on Spf R to p followed by X\_\{/T} ⟶ X.”.
 
 > **Stacks 0GBU, the correspondence.** The bijection `adicCompletionHomEquiv` sends an adic
 > `p : Spf R ⟶ X_{/T}` to `g : Spec R ⟶ X` with `g⁻¹(T) = {𝔪}` exactly when `g` restricts on

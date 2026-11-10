@@ -14,7 +14,7 @@ Section 22.36 of the Stacks Project, [Tag 09QZ](https://stacks.math.columbia.edu
 
 [Tag 09R0](https://stacks.math.columbia.edu/tag/09R0) in the Stacks Project.
 
-**`Stacks.DifferentialGradedModule.SourceProjective.sourceProjective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjective.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjective.lean#L74). The attribute's comment: “source_projective_dg_modules”.
+**`Stacks.DifferentialGradedModule.SourceProjective.sourceProjective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjective.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjective.lean#L74). The attribute's comment: “source\_projective\_dg\_modules”.
 
 > The source-projective objects of the homotopy category of right differential graded
 > `A`-modules: those from which morphisms are unchanged by passage to the derived category.
@@ -24,7 +24,7 @@ abbrev sourceProjective :
     ObjectProperty (DifferentialGradedModule.HomotopyCategory.{u, v, w} A)
 ```
 
-**`Stacks.DifferentialGradedModule.SourceProjective.sourceProjective_isClosedUnderIsomorphisms`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjective.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjective.lean#L189). The attribute's comment: “triangulated_saturated”.
+**`Stacks.DifferentialGradedModule.SourceProjective.sourceProjective_isClosedUnderIsomorphisms`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjective.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjective.lean#L189). The attribute's comment: “triangulated\_saturated”.
 
 > **Stacks Project, Tag 09R0.** Source-projectivity is invariant under isomorphism in the
 > homotopy category.
@@ -34,7 +34,7 @@ instance sourceProjective_isClosedUnderIsomorphisms :
     ObjectProperty.IsClosedUnderIsomorphisms (sourceProjective.{u, v, w} A)
 ```
 
-**`Stacks.DifferentialGradedModule.SourceProjective.sourceProjective_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjective.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjective.lean#L196). The attribute's comment: “triangulated_saturated”.
+**`Stacks.DifferentialGradedModule.SourceProjective.sourceProjective_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjective.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjective.lean#L196). The attribute's comment: “triangulated\_saturated”.
 
 > **Stacks Project, Tag 09R0.** The source-projective objects form a triangulated
 > subcategory of the homotopy category.
@@ -44,7 +44,7 @@ instance sourceProjective_isTriangulated :
     (sourceProjective.{u, v, w} A).IsTriangulated
 ```
 
-**`Stacks.DifferentialGradedModule.SourceProjective.sourceProjective_isSaturated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjective.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjective.lean#L204). The attribute's comment: “triangulated_saturated”.
+**`Stacks.DifferentialGradedModule.SourceProjective.sourceProjective_isSaturated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjective.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjective.lean#L204). The attribute's comment: “triangulated\_saturated”.
 
 > **Stacks Project, Tag 09R0.** The triangulated subcategory of source-projective objects is
 > saturated.
@@ -54,7 +54,7 @@ instance sourceProjective_isSaturated :
     (sourceProjective.{u, v, w} A).IsSaturated
 ```
 
-**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L143). The attribute's comment: “dual_number_counterexample”.
+**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L143). The attribute's comment: “dual\_number\_counterexample”.
 
 > **Stacks Project, Tag 09R0.** The dual-number algebra, as a differential graded algebra
 > concentrated in degree zero.
@@ -64,7 +64,7 @@ noncomputable def dualNumberAlgebra :
     DifferentialGradedAlgebra.{u, u} (DualNumber k)
 ```
 
-**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberAlgebra_carrier`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L169). The attribute's comment: “dual_number_counterexample”.
+**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberAlgebra_carrier`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L169). The attribute's comment: “dual\_number\_counterexample”.
 
 > **Stacks Project, Tag 09R0.** The differential graded algebra has exactly the dual-number
 > ring as its underlying algebra.
@@ -73,7 +73,7 @@ noncomputable def dualNumberAlgebra :
 theorem dualNumberAlgebra_carrier : (dualNumberAlgebra k).A = DualNumber k
 ```
 
-**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberAlgebra_algebraMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L174). The attribute's comment: “dual_number_counterexample”.
+**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberAlgebra_algebraMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L174). The attribute's comment: “dual\_number\_counterexample”.
 
 > **Stacks Project, Tag 09R0.** The scalar structure on the concentrated algebra is the
 > regular one.
@@ -84,7 +84,7 @@ theorem dualNumberAlgebra_algebraMap (r : DualNumber k) :
       (algebraMap (DualNumber k) (dualNumberAlgebra k).A r) = r
 ```
 
-**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberAlgebra_grading`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L181). The attribute's comment: “dual_number_counterexample”.
+**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberAlgebra_grading`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L181). The attribute's comment: “dual\_number\_counterexample”.
 
 > **Stacks Project, Tag 09R0.** The differential graded algebra is concentrated in degree
 > zero.
@@ -94,7 +94,7 @@ theorem dualNumberAlgebra_grading (n : ℤ) :
     (dualNumberAlgebra k).grading n = if n = 0 then ⊤ else ⊥
 ```
 
-**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberAlgebra_differential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L186). The attribute's comment: “dual_number_counterexample”.
+**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberAlgebra_differential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L186). The attribute's comment: “dual\_number\_counterexample”.
 
 > **Stacks Project, Tag 09R0.** The differential graded algebra has zero differential.
 
@@ -102,7 +102,7 @@ theorem dualNumberAlgebra_grading (n : ℤ) :
 theorem dualNumberAlgebra_differential : (dualNumberAlgebra k).d = 0
 ```
 
-**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L287). The attribute's comment: “dual_number_counterexample”.
+**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L287). The attribute's comment: “dual\_number\_counterexample”.
 
 > **Stacks Project, Tag 09R0.** The doubly infinite complex of free rank-one dual-number
 > modules.
@@ -112,7 +112,7 @@ noncomputable def dualNumberModule :
     DifferentialGradedModule.{u, u, u} (dualNumberAlgebra k)
 ```
 
-**`Stacks.DifferentialGradedModule.SourceProjective.gradedFreeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L357). The attribute's comment: “dual_number_counterexample”.
+**`Stacks.DifferentialGradedModule.SourceProjective.gradedFreeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L357). The attribute's comment: “dual\_number\_counterexample”.
 
 > **Stacks Project, Tag 09R0.** An isomorphism from the graded module to a direct sum of
 > shifted copies of its regular module.
@@ -123,7 +123,7 @@ noncomputable def gradedFreeEquiv :
       (⨁ _ : ℤ, MulOpposite (dualNumberAlgebra k).A)
 ```
 
-**`Stacks.DifferentialGradedModule.SourceProjective.gradedFreeEquiv_mem_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L366). The attribute's comment: “dual_number_counterexample”.
+**`Stacks.DifferentialGradedModule.SourceProjective.gradedFreeEquiv_mem_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L366). The attribute's comment: “dual\_number\_counterexample”.
 
 > **Stacks Project, Tag 09R0.** The direct-sum coordinates identify each homogeneous piece
 > with its corresponding shifted copy of the regular module.
@@ -137,7 +137,7 @@ theorem gradedFreeEquiv_mem_iff (n : ℤ) (x : (dualNumberModule k).M) :
             (fun _ => MulOpposite (dualNumberAlgebra k).A) n a
 ```
 
-**`Stacks.DifferentialGradedModule.SourceProjective.gradedPieceEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L385). The attribute's comment: “dual_number_counterexample”.
+**`Stacks.DifferentialGradedModule.SourceProjective.gradedPieceEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L385). The attribute's comment: “dual\_number\_counterexample”.
 
 > **Stacks Project, Tag 09R0.** The chosen regular-module coordinates on a homogeneous
 > component.
@@ -147,7 +147,7 @@ noncomputable def gradedPieceEquiv (n : ℤ) :
     ((dualNumberModule k).grading n) ≃ₗ[DualNumber k] DualNumber k
 ```
 
-**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberModule_differential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L414). The attribute's comment: “dual_number_counterexample”.
+**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberModule_differential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L414). The attribute's comment: “dual\_number\_counterexample”.
 
 > **Stacks Project, Tag 09R0.** In the regular coordinates, the differential is multiplication
 > by `ε`.
@@ -158,7 +158,7 @@ theorem dualNumberModule_differential (n : ℤ) (x : (dualNumberModule k).gradin
       DualNumber.eps * gradedPieceEquiv k n x
 ```
 
-**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberModule_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L459). The attribute's comment: “dual_number_counterexample”.
+**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberModule_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L459). The attribute's comment: “dual\_number\_counterexample”.
 
 > **Stacks Project, Tag 09R0.** The doubly infinite complex is acyclic.
 
@@ -169,7 +169,7 @@ theorem dualNumberModule_acyclic :
         (dualNumberModule k))
 ```
 
-**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberModule_homotopy_id_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 531](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L531). The attribute's comment: “dual_number_counterexample”.
+**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberModule_homotopy_id_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 531](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L531). The attribute's comment: “dual\_number\_counterexample”.
 
 > **Stacks Project, Tag 09R0.** The identity of the complex survives passage to the homotopy
 > category.
@@ -180,7 +180,7 @@ theorem dualNumberModule_homotopy_id_ne_zero :
       (dualNumberModule k))) ≠ 0
 ```
 
-**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberModule_not_sourceProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 543](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L543). The attribute's comment: “dual_number_counterexample”.
+**`Stacks.DifferentialGradedModule.SourceProjective.dualNumberModule_not_sourceProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean, line 543](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjectiveCounterexample.lean#L543). The attribute's comment: “dual\_number\_counterexample”.
 
 > **Stacks Project, Tag 09R0.** Graded freeness does not imply source-projectivity: the
 > acyclic graded-free module above is not source-projective.
@@ -194,13 +194,13 @@ theorem dualNumberModule_not_sourceProjective :
 
 Declarations registered for the tag:
 
-- [`Stacks.DifferentialGradedModule.SourceProjective.sourceProjective_iff_hom_acyclic_subsingleton`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjective.lean#L144), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/DGA/SourceProjective.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjective.lean#L168) (StacksFrontier): “acyclic_target_criterion”.
+- [`Stacks.DifferentialGradedModule.SourceProjective.sourceProjective_iff_hom_acyclic_subsingleton`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjective.lean#L144), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/DGA/SourceProjective.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/SourceProjective.lean#L168) (StacksFrontier): “acyclic\_target\_criterion”.
 
 ## Tag 09R1, a remark
 
 [Tag 09R1](https://stacks.math.columbia.edu/tag/09R1) in the Stacks Project.
 
-**`DifferentialGradedModule.IsFinite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/Finite.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/Finite.lean#L37). The attribute's comment: “finite_differential_graded_module”.
+**`DifferentialGradedModule.IsFinite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/Finite.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/Finite.lean#L37). The attribute's comment: “finite\_differential\_graded\_module”.
 
 > A differential graded module that is finitely generated as a right module over its
 > differential graded algebra.
@@ -312,7 +312,7 @@ theorem exists_subsingleton_hom_of_isZero_homology (A : DifferentialGradedAlgebr
 
 [Tag 09RB](https://stacks.math.columbia.edu/tag/09RB) in the Stacks Project.
 
-**`DifferentialGradedModule.exists_retract_isFiniteFreeAsGradedModule_of_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/CompactFiniteFree.lean, line 634](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/CompactFiniteFree.lean#L634). The attribute's comment: “(1) ⟹ (2), corrected: a compact object is a DIRECT SUMMAND of (the image of) a differential graded module which is finite FREE as a graded module and satisfies Hom_K = Hom_D; the literal statement, with 'represented by' and 'finite projective', is a mistake in the source — see the refutation in Examples/Algebra/CompactObjectNoFiniteProjectiveModel.lean”.
+**`DifferentialGradedModule.exists_retract_isFiniteFreeAsGradedModule_of_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/CompactFiniteFree.lean, line 634](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/CompactFiniteFree.lean#L634). The attribute's comment: “(1) ⟹ (2), corrected: a compact object is a DIRECT SUMMAND of (the image of) a differential graded module which is finite FREE as a graded module and satisfies Hom\_K = Hom\_D; the literal statement, with 'represented by' and 'finite projective', is a mistake in the source — see the refutation in Examples/Algebra/CompactObjectNoFiniteProjectiveModel.lean”.
 
 > **[Stacks, Tag 09RB], the implication (1) ⟹ (2), in the corrected form that the source's own
 > proof establishes.** A compact object `E` of `D(A, d)` is a *direct summand* in `D(A, d)` of the

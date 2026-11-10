@@ -14,7 +14,7 @@ Section 68.4 of the Stacks Project, [Tag 03JR](https://stacks.math.columbia.edu/
 
 [Tag 03II](https://stacks.math.columbia.edu/tag/03II) in the Stacks Project.
 
-**`AlgebraicGeometry.locallyQuasiFinite_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean#L54). The attribute's comment: “etale_locally_quasi_finite”.
+**`AlgebraicGeometry.locallyQuasiFinite_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean#L54). The attribute's comment: “etale\_locally\_quasi\_finite”.
 
 > An étale morphism of schemes is locally quasi-finite.
 
@@ -23,7 +23,7 @@ theorem locallyQuasiFinite_of_etale {X S : Scheme.{u}} (f : X ⟶ S) [Etale f] :
     LocallyOfFiniteType f ∧ LocallyQuasiFinite f
 ```
 
-**`AlgebraicGeometry.flat_and_generalizingMap_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean#L63). The attribute's comment: “etale_flat_generalizing”. References: EGA IV (2.3.4), “(i), special case”.
+**`AlgebraicGeometry.flat_and_generalizingMap_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean#L63). The attribute's comment: “etale\_flat\_generalizing”. References: EGA IV (2.3.4), “(i), special case”.
 
 > An étale morphism of schemes is flat, and hence generalizations lift along it.
 
@@ -32,7 +32,7 @@ theorem flat_and_generalizingMap_of_etale {X S : Scheme.{u}} (f : X ⟶ S) [Etal
     Flat f ∧ GeneralizingMap f.base
 ```
 
-**`AlgebraicGeometry.finite_preimage_singleton_of_etale_of_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean#L71). The attribute's comment: “etale_quasi_compact_finite_fibres”.
+**`AlgebraicGeometry.finite_preimage_singleton_of_etale_of_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean#L71). The attribute's comment: “etale\_quasi\_compact\_finite\_fibres”.
 
 > A quasi-compact étale morphism of schemes has finite fibres.
 >
@@ -43,7 +43,7 @@ theorem finite_preimage_singleton_of_etale_of_quasiCompact {X S : Scheme.{u}} (f
     [Etale f] [QuasiCompact f] (s : S) : (f.base ⁻¹' {s}).Finite
 ```
 
-**`AlgebraicGeometry.discreteTopology_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/Support/EtaleDiscreteFibres.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/Support/EtaleDiscreteFibres.lean#L40). The attribute's comment: “etale_discrete_fibres”.
+**`AlgebraicGeometry.discreteTopology_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/Support/EtaleDiscreteFibres.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/Support/EtaleDiscreteFibres.lean#L40). The attribute's comment: “etale\_discrete\_fibres”.
 
 > Every scheme-theoretic fibre of an étale morphism is a discrete space.
 
@@ -52,7 +52,7 @@ theorem discreteTopology_fiber {X S : Scheme.{u}} (f : X ⟶ S)
     [Etale f] (s : S) : DiscreteTopology (f.fiber s)
 ```
 
-**`AlgebraicGeometry.unramified_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/EtaleUnramified.lean, line 31](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/EtaleUnramified.lean#L31). The attribute's comment: “etale_unramified”.
+**`AlgebraicGeometry.unramified_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/EtaleUnramified.lean, line 31](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/EtaleUnramified.lean#L31). The attribute's comment: “etale\_unramified”.
 
 > An étale morphism of schemes is unramified.
 
@@ -60,7 +60,7 @@ theorem discreteTopology_fiber {X S : Scheme.{u}} (f : X ⟶ S)
 theorem unramified_of_etale {X S : Scheme.{u}} (f : X ⟶ S) [Etale f] : Unramified f
 ```
 
-**`AlgebraicGeometry.etale_iff_iso_coproduct_spectra_finite_separable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/OverField.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/OverField.lean#L75). The attribute's comment: “etale_over_field”. References: EGA IV (17.6.2), “base = Spec k”; SGA 4½ Arcata (2.1.2), “a)”.
+**`AlgebraicGeometry.etale_iff_iso_coproduct_spectra_finite_separable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/OverField.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/OverField.lean#L75). The attribute's comment: “etale\_over\_field”. References: EGA IV (17.6.2), “base = Spec k”; SGA 4½ Arcata (2.1.2), “a)”.
 
 > **Stacks Project, Tag 03PC (over a field).** A morphism to the spectrum of a field is
 > étale if and only if its source is, over that spectrum, a coproduct of spectra of finite

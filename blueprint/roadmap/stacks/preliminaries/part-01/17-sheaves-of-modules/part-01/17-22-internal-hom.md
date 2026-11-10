@@ -102,8 +102,8 @@ theorem internalHomTensorIso_natural_right
 
 Declarations registered for the tag:
 
-- [`Stacks.SheafOfModules.internalHomTensorIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/InternalHom.lean#L212), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/InternalHom.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/InternalHom.lean#L399) (StacksFrontier): “canonical_iso”.
-- [`Stacks.SheafOfModules.tensorHomEquiv`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/InternalHom.lean#L251), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/InternalHom.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/InternalHom.lean#L400) (StacksFrontier): “in_particular”.
+- [`Stacks.SheafOfModules.internalHomTensorIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/InternalHom.lean#L212), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/InternalHom.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/InternalHom.lean#L399) (StacksFrontier): “canonical\_iso”.
+- [`Stacks.SheafOfModules.tensorHomEquiv`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/InternalHom.lean#L251), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/InternalHom.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/TensorAndDuals/InternalHom.lean#L400) (StacksFrontier): “in\_particular”.
 
 ## Tag 01CO, a lemma
 
@@ -168,7 +168,7 @@ noncomputable def homSheaf
     (α : 𝒪₁ ⟶ 𝒪₂) : SheafOfModules.{u} 𝒪₁ ⥤ SheafOfModules.{u} 𝒪₂
 ```
 
-**`RingedSpaceModuleAdjunction.restrictScalarsHomAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/HomSheaf.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/HomSheaf.lean#L438). The attribute's comment: “the bifunctorial Hom identification”. References: SGA 4 IV (14.5), “adjunction i_* ⊣ i^!”.
+**`RingedSpaceModuleAdjunction.restrictScalarsHomAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/HomSheaf.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/HomSheaf.lean#L438). The attribute's comment: “the bifunctorial Hom identification”. References: SGA 4 IV (14.5), “adjunction i\_* ⊣ i^!”.
 
 > Restriction of scalars along a homomorphism of sheaves of rings is left adjoint to the
 > internal-Hom functor `SheafHom_{𝒪₁}(𝒪₂, -)`.
@@ -185,7 +185,7 @@ noncomputable def restrictScalarsHomAdjunction
 
 [Tag 01CP](https://stacks.math.columbia.edu/tag/01CP) in the Stacks Project.
 
-**`Stacks.SheafOfModules.SheafHomStalk.injective_sheafHomStalkLinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHomStalk.lean, line 903](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHomStalk.lean#L903). The attribute's comment: “finite_type_injective”. References: EGA 0 (5.2.6), “partial”.
+**`Stacks.SheafOfModules.SheafHomStalk.injective_sheafHomStalkLinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHomStalk.lean, line 903](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHomStalk.lean#L903). The attribute's comment: “finite\_type\_injective”. References: EGA 0 (5.2.6), “partial”.
 
 > **Injectivity half of Stacks 01CP.** For `F` of finite type the canonical map from the stalk
 > of the internal hom to the module of homomorphisms of the stalks is injective. Only local
@@ -200,7 +200,7 @@ theorem injective_sheafHomStalkLinearMap (H : SheafHom Rc F G) (x : X)
     [F.IsFiniteType] : Function.Injective (sheafHomStalkLinearMap H x)
 ```
 
-**`Stacks.SheafOfModules.SheafHomStalk.sheafHomStalkLinearEquivOfFinitePresentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHomStalk.lean, line 1130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHomStalk.lean#L1130). The attribute's comment: “finite_presentation_isomorphism”.
+**`Stacks.SheafOfModules.SheafHomStalk.sheafHomStalkLinearEquivOfFinitePresentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHomStalk.lean, line 1130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafHomStalk.lean#L1130). The attribute's comment: “finite\_presentation\_isomorphism”.
 
 > **Stacks Project, Tag 01CP.** If `F` is of finite presentation, the canonical map from the
 > stalk of `SheafHom(F, G)` at `x` to the module of `O_{X,x}`-linear maps from `F_x` to `G_x` is an

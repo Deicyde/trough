@@ -16,7 +16,7 @@ Section 35.22 of the Stacks Project, [Tag 02KN](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.MorphismProperty.IsLocalAtTarget`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.IsLocalAtTarget#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnSource/Defs.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnSource/Defs.lean#L51) (StacksFrontier). References: SGA 3 IV (4.6.3), “(e_T)”; SGA 3 VIB (2.0), “b)”.
+- [`CategoryTheory.MorphismProperty.IsLocalAtTarget`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.IsLocalAtTarget#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnSource/Defs.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnSource/Defs.lean#L51) (StacksFrontier). References: SGA 3 IV (4.6.3), “(e\_T)”; SGA 3 VIB (2.0), “b)”.
 
 ## Tag 04QU, a lemma
 

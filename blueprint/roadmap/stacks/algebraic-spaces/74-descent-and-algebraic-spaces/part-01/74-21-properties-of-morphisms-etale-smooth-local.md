@@ -31,7 +31,7 @@ structure IsEtaleSmoothLocalOnSourceAndTarget
 
 [Tag 0CG0](https://stacks.math.columbia.edu/tag/0CG0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.postcomp_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/EtaleSmoothProperties.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/EtaleSmoothProperties.lean#L111). The attribute's comment: “etale_postcomposition”.
+**`AlgebraicGeometry.Space.postcomp_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/EtaleSmoothProperties.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/EtaleSmoothProperties.lean#L111). The attribute's comment: “etale\_postcomposition”.
 
 > **Stacks 0CG0**, étale postcomposition. A property of morphisms of algebraic spaces over `S`
 > which is étale-smooth local on the source-and-target is preserved by postcomposition with an
@@ -46,7 +46,7 @@ theorem postcomp_of_etale
     (hg : IsEtale B S hS g.hom) : P (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.of_comp_etale`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/EtaleSmoothProperties.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/EtaleSmoothProperties.lean#L142). The attribute's comment: “etale_postcomposition_permanence”.
+**`AlgebraicGeometry.Space.of_comp_etale`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/EtaleSmoothProperties.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/EtaleSmoothProperties.lean#L142). The attribute's comment: “etale\_postcomposition\_permanence”.
 
 > **Stacks 0CG0**, cancelling an étale postcomposition. If a property of morphisms of
 > algebraic spaces over `S` is étale-smooth local on the source-and-target and holds for `f ≫ g`
@@ -62,7 +62,7 @@ lemma of_comp_etale
     (hfg : P (f ≫ g)) : P f
 ```
 
-**`AlgebraicGeometry.Space.isLocalAtSource_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/EtaleSmoothProperties.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/EtaleSmoothProperties.lean#L159). The attribute's comment: “etale_local_source”.
+**`AlgebraicGeometry.Space.isLocalAtSource_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/EtaleSmoothProperties.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/EtaleSmoothProperties.lean#L159). The attribute's comment: “etale\_local\_source”.
 
 > **Stacks 0CG0**, étale locality on the source. A property of morphisms of algebraic spaces
 > over `S` which is étale-smooth local on the source-and-target is local at the source for the
@@ -75,7 +75,7 @@ theorem isLocalAtSource_etale
     P.IsLocalAtSource (Topology.precoverage.{u, v} .etale B S hS)
 ```
 
-**`AlgebraicGeometry.Space.isLocalAtTarget_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/EtaleSmoothProperties.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/EtaleSmoothProperties.lean#L207). The attribute's comment: “smooth_local_target”.
+**`AlgebraicGeometry.Space.isLocalAtTarget_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/EtaleSmoothProperties.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/LocalOnSourceAndTarget/EtaleSmoothProperties.lean#L207). The attribute's comment: “smooth\_local\_target”.
 
 > **Stacks 0CG0**, smooth locality on the target. A property of morphisms of algebraic spaces
 > over `S` which is étale-smooth local on the source-and-target is local at the target for the

@@ -33,7 +33,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`IsLocalization.AtPrime.ringKrullDim_eq_height`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalization.AtPrime.ringKrullDim_eq_height#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/KrullDimension/Defs.lean, line 24](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/KrullDimension/Defs.lean#L24) (StacksFrontier). References: EGA 0 (16.1.3), “dim(A_p) = ht(p)”; EGA 0 (16.3.1), “more general”.
+- [`IsLocalization.AtPrime.ringKrullDim_eq_height`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalization.AtPrime.ringKrullDim_eq_height#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/KrullDimension/Defs.lean, line 24](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/KrullDimension/Defs.lean#L24) (StacksFrontier). References: EGA 0 (16.1.3), “dim(A\_p) = ht(p)”; EGA 0 (16.3.1), “more general”.
 
 ## Tag 00KG, a lemma
 

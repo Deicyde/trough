@@ -22,7 +22,7 @@ Declarations registered for the tag:
 
 [Tag 0717](https://stacks.math.columbia.edu/tag/0717) in the Stacks Project.
 
-**`Stacks.RingedSpaceCohomology.derivedSections`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/RingedSpaceCohomology/DerivedSections.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/RingedSpaceCohomology/DerivedSections.lean#L55). The attribute's comment: “RΓ(U, -) : D⁺(X) → D⁺(𝒪_X(U))”.
+**`Stacks.RingedSpaceCohomology.derivedSections`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/RingedSpaceCohomology/DerivedSections.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/RingedSpaceCohomology/DerivedSections.lean#L55). The attribute's comment: “RΓ(U, -) : D⁺(X) → D⁺(𝒪\_X(U))”.
 
 > **The derived sections functor over an open of a ringed space**,
 > `RΓ(U, -) : D⁺(O) ⥤ D⁺(O(U))`: the right derived functor, on bounded below derived categories,

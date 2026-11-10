@@ -14,7 +14,7 @@ Section 30.20 of the Stacks Project, [Tag 02O7](https://stacks.math.columbia.edu
 
 [Tag 02O7](https://stacks.math.columbia.edu/tag/02O7) in the Stacks Project.
 
-**`Stacks.Blowup.pushforwardReesGradedModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModule.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModule.lean#L116). The attribute's comment: “⨁ₙ f_*(ℐⁿℱ) is a graded ⨁ₙ ℐⁿ-module on the base”.
+**`Stacks.Blowup.pushforwardReesGradedModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModule.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModule.lean#L116). The attribute's comment: “⨁ₙ f\_*(ℐⁿℱ) is a graded ⨁ₙ ℐⁿ-module on the base”.
 
 > **[Stacks, Tag 02O7]: the graded `⨁ₙ ℐⁿ`-module `⨁ₙ f_*(ℐⁿℱ)` on the base, in degree
 > zero.**  The maps `pushforwardReesSmul` make the pushforwards of the ideal-power multiples of
@@ -30,7 +30,7 @@ Section 30.20 of the Stacks Project, [Tag 02O7](https://stacks.math.columbia.edu
 public def pushforwardReesGradedModule : SheafOfModules.GradedModule (reesGradedAlgebra I)
 ```
 
-**`Stacks.Blowup.pushforwardReesGradedModulePlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModulePlus.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModulePlus.lean#L450). The attribute's comment: “⨁ₙ R ᵖ f_*(ℐⁿℱ) is a graded ⨁ₙ ℐⁿ-module on the base, in every degree p”. References: EGA III (3.3.1), “special case”.
+**`Stacks.Blowup.pushforwardReesGradedModulePlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModulePlus.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/Quasicoherent/PushforwardIdealPowerGradedModulePlus.lean#L450). The attribute's comment: “⨁ₙ R ᵖ f\_*(ℐⁿℱ) is a graded ⨁ₙ ℐⁿ-module on the base, in every degree p”. References: EGA III (3.3.1), “special case”.
 
 > **[Stacks, Tag 02O7]: the graded `⨁ₙ ℐⁿ`-module `⨁ₙ R ᵖ f_*(ℐⁿℱ)` on the base, in every
 > degree `p`.**  This is the structure the setup paragraph of the source obtains "by localizing and
@@ -246,7 +246,7 @@ public theorem exists_uniform_bound_cohomology_idealPowerQuotient_of_02O8
                 (idealPowerMultiple (baseIdealSheaf A I f) n F).ι)).hom
 ```
 
-**`Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_idealPowerQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/IdealPowerQuotientCohomologyBound.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/IdealPowerQuotientCohomologyBound.lean#L152). The attribute's comment: “granted Tag 02OA, carried as the hypotheses h02OA_image and h02OA_kernel”.
+**`Stacks.Cohomology.FormalFunctions.exists_uniform_bound_cohomology_idealPowerQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/IdealPowerQuotientCohomologyBound.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/IdealPowerQuotientCohomologyBound.lean#L152). The attribute's comment: “granted Tag 02OA, carried as the hypotheses h02OA\_image and h02OA\_kernel”.
 
 > **Stacks Project, Tag 02OB**, granted [Stacks, Tag 02OA].
 >
@@ -344,7 +344,7 @@ theorem exists_uniform_bound_cohomology_idealPowerQuotient_of_isProper [IsNoethe
 
 [Tag 02OC](https://stacks.math.columbia.edu/tag/02OC) in the Stacks Project.
 
-**`Stacks.Cohomology.FormalFunctions.formalFunctionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/AdicCompletionLimitComparison.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/AdicCompletionLimitComparison.lean#L264). The attribute's comment: “the isomorphism of A-modules only, not the homeomorphism for the limit topologies; granted Tag 02OB, whose clauses (1) and (3) are carried as the hypotheses h02OB_ker and h02OB_range”.
+**`Stacks.Cohomology.FormalFunctions.formalFunctionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/AdicCompletionLimitComparison.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/AdicCompletionLimitComparison.lean#L264). The attribute's comment: “the isomorphism of A-modules only, not the homeomorphism for the limit topologies; granted Tag 02OB, whose clauses (1) and (3) are carried as the hypotheses h02OB\_ker and h02OB\_range”.
 
 > **Stacks Project, Tag 02OC**, granted [Stacks, Tag 02OB], and for the `A`-module
 > isomorphism only.
@@ -622,7 +622,7 @@ public theorem nonempty_adicCompletionHigherDirectImageStalkEquiv (f : X ⟶ Y)
         towerLimit (infinitesimalCohomology f F y p) (infinitesimalCohomologyMap f F y p))
 ```
 
-**`Stacks.Cohomology.FormalFunctions.pushforwardPullbackBaseIdealIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/FormalFunctionsTheorem/IdealPowerQuotientSubscheme.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/FormalFunctionsTheorem/IdealPowerQuotientSubscheme.lean#L175). The attribute's comment: “the second step of the tag's proof: the identification i_{n*} ℱ_n ≅ ℱ / 𝔪ⁿ ℱ, over an affine base and for the quotient by the n-th power of the ideal sheaf generated by an ideal of that base. The tag's conclusion is NOT asserted: that needs Tag 02OC, which rests on Tag 02O8, together with Tag 02KH”.
+**`Stacks.Cohomology.FormalFunctions.pushforwardPullbackBaseIdealIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/FormalFunctionsTheorem/IdealPowerQuotientSubscheme.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/FormalFunctionsTheorem/IdealPowerQuotientSubscheme.lean#L175). The attribute's comment: “the second step of the tag's proof: the identification i\_\{n*} ℱ\_n ≅ ℱ / 𝔪ⁿ ℱ, over an affine base and for the quotient by the n-th power of the ideal sheaf generated by an ideal of that base. The tag's conclusion is NOT asserted: that needs Tag 02OC, which rests on Tag 02O8, together with Tag 02KH”.
 
 > **`i_{n*} ℱ_n ≅ ℱ / I ⁿ ℱ`.** The direct image of the restriction of `ℱ` to the infinitesimal
 > neighbourhood `X_n = X ×_{Spec A} Spec (A / I ⁿ)` is the quotient of `ℱ` by the `n`-th power of
@@ -648,7 +648,7 @@ public def pushforwardPullbackBaseIdealIso :
       idealPowerQuotient (baseIdealSheaf A I f) n F
 ```
 
-**`Stacks.FormalFunctions.infinitesimalNeighbourhood`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/InfinitesimalNeighbourhood.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/InfinitesimalNeighbourhood.lean#L260). The attribute's comment: “the infinitesimal neighbourhoods X_n = X ×_Y Spec(𝒪_{Y,y}/𝔪ⁿ) of the fibre, the setup paragraph of the tag. The conclusion -- that the completed stalk of R^p f_* ℱ at y is the limit of the H^p(X_n, ℱ_n) -- is NOT asserted here: see the implementation notes for its three inputs and which of them are now available”.
+**`Stacks.FormalFunctions.infinitesimalNeighbourhood`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalFunctions/InfinitesimalNeighbourhood.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalFunctions/InfinitesimalNeighbourhood.lean#L260). The attribute's comment: “the infinitesimal neighbourhoods X\_n = X ×\_Y Spec(𝒪\_\{Y,y}/𝔪ⁿ) of the fibre, the setup paragraph of the tag. The conclusion -- that the completed stalk of R^p f\_* ℱ at y is the limit of the H^p(X\_n, ℱ\_n) -- is NOT asserted here: see the implementation notes for its three inputs and which of them are now available”.
 
 > The `n`-th infinitesimal neighbourhood `X_n = Spec (𝒪_{Y,y}/𝔪_y ^ n) ×_Y X` of the fibre of
 > `f : X ⟶ Y` over `y`.

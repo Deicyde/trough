@@ -66,7 +66,7 @@ theorem exists_isFinite_morphismRestrict_of_ringKrullDim_stalk_le_one
 
 [Tag 0BFP](https://stacks.math.columbia.edu/tag/0BFP) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isIso_restrict_of_finite_fiber_of_normal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocus.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocus.lean#L369). The attribute's comment: “finite_fibre_normal”. References: EGA III (4.4.9), “proper case”.
+**`AlgebraicGeometry.exists_isIso_restrict_of_finite_fiber_of_normal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocus.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocus.lean#L369). The attribute's comment: “finite\_fibre\_normal”. References: EGA III (4.4.9), “proper case”.
 
 > **Stacks Project, Tag 0BFP (finite fibre, normal local ring).**
 > Let `f : Y ⟶ X` be a proper birational morphism, where `X` is Noetherian and `Y`
@@ -81,7 +81,7 @@ public theorem exists_isIso_restrict_of_finite_fiber_of_normal
     ∃ U : X.Opens, x ∈ U ∧ IsIso (f ∣_ U)
 ```
 
-**`AlgebraicGeometry.mem_maximal_isomorphism_open_of_quasiFiniteAt_of_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocus.lean, line 729](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocus.lean#L729). The attribute's comment: “quasi_finite_point_normal”. References: EGA III (4.4.9), “proper case”.
+**`AlgebraicGeometry.mem_maximal_isomorphism_open_of_quasiFiniteAt_of_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocus.lean, line 729](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometric/BirationalIsomorphismLocus.lean#L729). The attribute's comment: “quasi\_finite\_point\_normal”. References: EGA III (4.4.9), “proper case”.
 
 > **Stacks Project, Tag 0BFP (quasi-finite point over a normal point).** The maximal open
 > over which a proper birational morphism with reduced source is an isomorphism contains every

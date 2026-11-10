@@ -95,7 +95,7 @@ theorem homFunctor_map (hc : ModulePushforwardCoherence B S hS) {U T : s.Schemes
 
 [Tag 08JV](https://stacks.math.columbia.edu/tag/08JV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HomSituation.existsUnique_homMap_of_restrictionsAgree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean#L493). The attribute's comment: “the sheaf property elementwise, for an fpqc covering of test schemes; the same property as CategoryTheory.Presieve.IsSheafFor is isSheafFor_homFunctor”.
+**`AlgebraicGeometry.Space.HomSituation.existsUnique_homMap_of_restrictionsAgree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomFpqcDescent.lean#L493). The attribute's comment: “the sheaf property elementwise, for an fpqc covering of test schemes; the same property as CategoryTheory.Presieve.IsSheafFor is isSheafFor\_homFunctor”.
 
 > **Stacks 08JV.**  In the standing data of Stacks 08JT the relative Hom functor
 > `Hom(F, G)` satisfies the sheaf property for the fpqc topology: for an fpqc covering
@@ -167,7 +167,7 @@ theorem isSheaf_homFunctor_fpqc :
 
 [Tag 0D3S](https://stacks.math.columbia.edu/tag/0D3S) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HomSituation.bijective_morOfSpaceHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean#L165). The attribute's comment: “Mor(T, Hom(F, G)) = {(h, u)}: the construction (h, u) ↦ (a ↦ (h ∘ a, a^*u)) is a bijection from the pairs onto the morphisms T ⟶ Hom(F, G), for every algebraic space T”.
+**`AlgebraicGeometry.Space.HomSituation.bijective_morOfSpaceHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Hom/HomFunctorEtaleDescent.lean#L165). The attribute's comment: “Mor(T, Hom(F, G)) = \{(h, u)}: the construction (h, u) ↦ (a ↦ (h ∘ a, a^*u)) is a bijection from the pairs onto the morphisms T ⟶ Hom(F, G), for every algebraic space T”.
 
 > For an algebraic space `T` over `S`, the morphisms of sheaves `T ⟶ Hom(F, G)` are the pairs
 > `(h, u)` of a morphism `h : T ⟶ base` and a homomorphism `u : F_T ⟶ G_T` of the two modules pulled
@@ -378,7 +378,7 @@ theorem limitPreserving_homFunctor (s : HomSituation B S hS)
 
 [Tag 08K5](https://stacks.math.columbia.edu/tag/08K5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.homFunctorClosedImmersion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomClosedImmersion.lean, line 560](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomClosedImmersion.lean#L560). The attribute's comment: “the identification Hom(F, i_*G') = Hom(i^*F, G') as functors on (Sch/B), conditional on the pseudofunctoriality of the direct images of Stacks 03LU, on the quasi-coherence of i_*G' (Stacks 03M9) and of i^*F (Stacks 03GA), and on the base-change clause of Stacks 07U8 for i”.
+**`AlgebraicGeometry.Space.homFunctorClosedImmersion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeHomClosedImmersion.lean, line 560](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/RelativeHomClosedImmersion.lean#L560). The attribute's comment: “the identification Hom(F, i\_*G') = Hom(i^*F, G') as functors on (Sch/B), conditional on the pseudofunctoriality of the direct images of Stacks 03LU, on the quasi-coherence of i\_*G' (Stacks 03M9) and of i^*F (Stacks 03GA), and on the base-change clause of Stacks 07U8 for i”.
 
 > **Stacks 08K5.**  Let `i : X' ⟶ X` be a closed immersion of algebraic spaces over an
 > algebraic space `Y` over `S`, let `F` be a quasi-coherent `𝒪_X`-module and let `G'` be a

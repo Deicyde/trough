@@ -314,7 +314,7 @@ noncomputable def arithmeticFrobenius (hcard : Fintype.card k = p ^ f) : K ≃�
 
 [Tag 03SV](https://stacks.math.columbia.edu/tag/03SV) in the Stacks Project.
 
-**`Stacks.Frobenius.galoisRestrictionEndo_comp_geometricFrobeniusRestrictionEndo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ArithmeticFrobeniusInverse.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ArithmeticFrobeniusInverse.lean#L434). The attribute's comment: “the Galois action of frob_k after the map induced by the geometric Frobenius is the identity”.
+**`Stacks.Frobenius.galoisRestrictionEndo_comp_geometricFrobeniusRestrictionEndo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ArithmeticFrobeniusInverse.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ArithmeticFrobeniusInverse.lean#L434). The attribute's comment: “the Galois action of frob\_k after the map induced by the geometric Frobenius is the identity”.
 
 > Let `k` be a finite field with `q = p ^ f` elements, let `X` be a scheme over `k`, let
 > `K/k` be an extension and let `σ` be the arithmetic Frobenius `x ↦ x ^ q` of `K`. For an
@@ -339,7 +339,7 @@ public theorem galoisRestrictionEndo_comp_geometricFrobeniusRestrictionEndo (n :
         ((etaleAbelianInverseImage.{u, v} (fieldBaseChangeProj X K)).obj F) n)
 ```
 
-**`Stacks.Frobenius.geometricFrobeniusRestrictionEndo_comp_galoisRestrictionEndo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ArithmeticFrobeniusInverse.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ArithmeticFrobeniusInverse.lean#L471). The attribute's comment: “the map induced by the geometric Frobenius after the Galois action of frob_k is the identity”.
+**`Stacks.Frobenius.geometricFrobeniusRestrictionEndo_comp_galoisRestrictionEndo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ArithmeticFrobeniusInverse.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ArithmeticFrobeniusInverse.lean#L471). The attribute's comment: “the map induced by the geometric Frobenius after the Galois action of frob\_k is the identity”.
 
 > With the data of `galoisRestrictionEndo_comp_geometricFrobeniusRestrictionEndo`, the
 > endomorphism of `H^j(X_K, ℱ|_{X_K})` induced by `π_X × id` undoes the one induced by the Galois
@@ -362,7 +362,7 @@ public theorem geometricFrobeniusRestrictionEndo_comp_galoisRestrictionEndo (n :
 
 [Tag 03SW](https://stacks.math.columbia.edu/tag/03SW) in the Stacks Project.
 
-**`Stacks.Frobenius.geometricFrobeniusStalkFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricFrobeniusStalk.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricFrobeniusStalk.lean#L183). The attribute's comment: “on the stalk functor”. References: SGA 7 XXI (5.0), “F_x acts on G_x̄”; SGA 7 I (6.3); SGA 7 XXII (2.2.4), “The element φ_q”.
+**`Stacks.Frobenius.geometricFrobeniusStalkFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricFrobeniusStalk.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricFrobeniusStalk.lean#L183). The attribute's comment: “on the stalk functor”. References: SGA 7 XXI (5.0), “F\_x acts on G\_x̄”; SGA 7 I (6.3); SGA 7 XXII (2.2.4), “The element φ\_q”.
 
 > **Stacks Project, Tag 03SW.** The geometric Frobenius at a rational point `x` of a scheme
 > over a finite field `k` with `p ^ f` elements, as an endomorphism of the étale stalk functor at
@@ -374,7 +374,7 @@ def geometricFrobeniusStalkFunctor (hcard : Fintype.card k = p ^ f) (x : Spec (.
       (Scheme.pointSmallEtale (rationalGeometricPoint K x).hom).sheafFiber
 ```
 
-**`Stacks.Frobenius.geometricFrobeniusStalk`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricFrobeniusStalk.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricFrobeniusStalk.lean#L191). References: SGA 7 XXI (5.0), “F_x acts on G_x̄”.
+**`Stacks.Frobenius.geometricFrobeniusStalk`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricFrobeniusStalk.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricFrobeniusStalk.lean#L191). References: SGA 7 XXI (5.0), “F\_x acts on G\_x̄”.
 
 > **Stacks Project, Tag 03SW.** The geometric Frobenius at a rational point `x`, acting on
 > the étale stalk of a sheaf `F` at the geometric point over `x`.

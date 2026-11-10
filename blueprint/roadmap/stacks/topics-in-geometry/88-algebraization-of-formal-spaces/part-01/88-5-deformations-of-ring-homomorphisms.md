@@ -340,7 +340,7 @@ public theorem exists_conormal_cramer_relation_of_ext_annihilated
 public def obstruction : P.extension.Cotangent →ₗ[B.carrier] D.target
 ```
 
-**`Rig.ObstructionLift.obstructionBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ObstructionClass.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ObstructionClass.lean#L313). The attribute's comment: “the C-linear extension of o(ψ) over J/J² ⊗_B C”.
+**`Rig.ObstructionLift.obstructionBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ObstructionClass.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ObstructionClass.lean#L313). The attribute's comment: “the C-linear extension of o(ψ) over J/J² ⊗\_B C”.
 
 > **Stacks 0GAP**, the `C`-linear extension of the obstruction map. Since the `B`-action on
 > `IᵐC/I²ᵐC` factors through `C/IᵐC`, the `B`-linear map `o(ψ)` extends to a `C/IᵐC`-linear map
@@ -354,7 +354,7 @@ public def obstructionBaseChange :
     D.base ⊗[B.carrier] P.extension.Cotangent →ₗ[D.base] D.target
 ```
 
-**`Rig.ObstructionLift.extClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ObstructionClass.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ObstructionClass.lean#L383). The attribute's comment: “the obstruction class o(ψₘ) in Ext¹_B(NL^∧_{B/A}, IᵐC/I²ᵐC)”.
+**`Rig.ObstructionLift.extClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ObstructionClass.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ObstructionClass.lean#L383). The attribute's comment: “the obstruction class o(ψₘ) in Ext¹\_B(NL^∧\_\{B/A}, IᵐC/I²ᵐC)”.
 
 > **Stacks 0GAP**, the obstruction class
 >
@@ -439,7 +439,7 @@ public theorem exists_algHom_quotient_of_extClass_eq_zero [IsNoetherianRing A] (
 
 [Tag 0GAQ](https://stacks.math.columbia.edu/tag/0GAQ) in the Stacks Project.
 
-**`Rig.exists_algHom_lift_of_dualSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/LiftingUniformity.lean, line 809](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/LiftingUniformity.lean#L809). The attribute's comment: “with the conclusion at precision I^{n-(2+D)c}, D = max(d,1) -- the level the library's Tag 0GAD reaches -- in place of the source's I^{n-(1+d)c}, and with n > 2(2+D)c for the source's n > 2(1+d)c; the Ext hypothesis is used through Tag 0GAP's cokernel form and Tag 0GAC, so Tags 0E1W, 0G9G and 0GAD are not invoked; carries 0GAC's open duality input as `hdual`, and d, q₀ as a family `S` of DualSituations with m-independent invariants”.
+**`Rig.exists_algHom_lift_of_dualSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/LiftingUniformity.lean, line 809](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/LiftingUniformity.lean#L809). The attribute's comment: “with the conclusion at precision I^\{n-(2+D)c}, D = max(d,1) -- the level the library's Tag 0GAD reaches -- in place of the source's I^\{n-(1+d)c}, and with n > 2(2+D)c for the source's n > 2(1+d)c; the Ext hypothesis is used through Tag 0GAP's cokernel form and Tag 0GAC, so Tags 0E1W, 0G9G and 0GAD are not invoked; carries 0GAC's open duality input as `hdual`, and d, q₀ as a family `S` of DualSituations with m-independent invariants”.
 
 > **Stacks 0GAQ**, with the precision of the conclusion corrected as in the library's Tag 0GAD.
 >
@@ -506,7 +506,7 @@ public theorem exists_algHom_lift_of_dualSituation
       (Ideal.Quotient.mkₐ A ((I.map (algebraMap A C)) ^ (n - (k + 3) * c))).comp φ
 ```
 
-**`Rig.exists_algHom_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/LiftingUniformitySource.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/LiftingUniformitySource.lean#L124). The attribute's comment: “with d = d(Gr_I(C)) and q₀ = q(Gr_I(C)) the defining quantities of Section 0GA6 computed on the blowup of Spec(C) in IC (maximal fibre dimension and the threshold qS), and NL^∧_{B/A} computed from a completed polynomial presentation P of B”.
+**`Rig.exists_algHom_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/LiftingUniformitySource.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/LiftingUniformitySource.lean#L124). The attribute's comment: “with d = d(Gr\_I(C)) and q₀ = q(Gr\_I(C)) the defining quantities of Section 0GA6 computed on the blowup of Spec(C) in IC (maximal fibre dimension and the threshold qS), and NL^∧\_\{B/A} computed from a completed polynomial presentation P of B”.
 
 > **Stacks Project, Tag 0GAQ.** Let `c ≥ 0`, let `I` be an ideal of a Noetherian ring `A`, let
 > `B` be in the category of Stacks 0AL4 for `(A, I)`, with a completed polynomial presentation `P`,

@@ -14,7 +14,7 @@ Section 87.22 of the Stacks Project, [Tag 0GBQ](https://stacks.math.columbia.edu
 
 [Tag 0ANJ](https://stacks.math.columbia.edu/tag/0ANJ) in the Stacks Project.
 
-**`RingHom.QuotientDiagram.isTaut_iff_hasQuotientDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/QuotientDiagram.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/QuotientDiagram.lean#L303). The attribute's comment: “taut_iff_quotient_diagram”.
+**`RingHom.QuotientDiagram.isTaut_iff_hasQuotientDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/QuotientDiagram.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/QuotientDiagram.lean#L303). The attribute's comment: “taut\_iff\_quotient\_diagram”.
 
 > A continuous arrow of weakly admissible linearly topologized rings is taut if and only if
 > its canonical quotients along any chosen decreasing fundamental sequence form the quotient
@@ -30,7 +30,7 @@ public theorem isTaut_iff_hasQuotientDiagram {A B : Type*}
     RingHom.IsTaut f ↔ HasQuotientDiagram f J hJ.2.1
 ```
 
-**`TopologicalRing.isTaut_localizationPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean#L200). The attribute's comment: “taut_is_local_property”.
+**`TopologicalRing.isTaut_localizationPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean#L200). The attribute's comment: “taut\_is\_local\_property”.
 
 > Tautness ascends along a completed étale localization diagram of countably indexed weakly
 > admissible rings.
@@ -43,7 +43,7 @@ public theorem isTaut_localizationPreserves :
         (f : B →+* A) ↦ RingHom.IsTaut f)
 ```
 
-**`TopologicalRing.isTaut_faithfullyFlatDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean#L216). The attribute's comment: “taut_is_local_property”.
+**`TopologicalRing.isTaut_faithfullyFlatDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean#L216). The attribute's comment: “taut\_is\_local\_property”.
 
 > Tautness descends along a completed étale localization diagram whose upper horizontal ring
 > map is faithfully flat.
@@ -56,7 +56,7 @@ public theorem isTaut_faithfullyFlatDescent :
         (f : B →+* A) ↦ RingHom.IsTaut f)
 ```
 
-**`TopologicalRing.isTaut_finiteProductPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean#L251). The attribute's comment: “taut_is_local_property”.
+**`TopologicalRing.isTaut_finiteProductPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocal.lean#L251). The attribute's comment: “taut\_is\_local\_property”.
 
 > Tautness is preserved by finite products of targets.
 
@@ -68,7 +68,7 @@ public theorem isTaut_finiteProductPreserves :
         (f : B →+* A) ↦ RingHom.IsTaut f)
 ```
 
-**`TopologicalRing.isTaut_isomorphismInvariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalRefined.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalRefined.lean#L69). The attribute's comment: “taut_is_local_property”.
+**`TopologicalRing.isTaut_isomorphismInvariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalRefined.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/TautIsLocalRefined.lean#L69). The attribute's comment: “taut\_is\_local\_property”.
 
 > Tautness does not depend on the chosen presentations of the source and the target of a
 > continuous homomorphism: pre- and post-composing with bicontinuous ring isomorphisms preserves

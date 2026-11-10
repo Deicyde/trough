@@ -79,7 +79,7 @@ noncomputable abbrev canonicalConormalSequence
 
 [Tag 08TW](https://stacks.math.columbia.edu/tag/08TW) in the Stacks Project.
 
-**`Stacks.SheafOfModules.naiveCotangentComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/NaiveCotangent.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/NaiveCotangent.lean#L107). References: SGA 6 0 (4.4), “NL_{B/A} construction”.
+**`Stacks.SheafOfModules.naiveCotangentComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/NaiveCotangent.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/NaiveCotangent.lean#L107). References: SGA 6 0 (4.4), “NL\_\{B/A} construction”.
 
 > **Stacks 08TW.** The naive cotangent complex of `B` over `A`, with `I/I²` in degree `-1`
 > and `B ⊗[A[B]] Ω[A[B]/A]` in degree `0`. This two-term complex is the one displayed in
@@ -108,7 +108,7 @@ theorem freeAlgebraMapOfSquare_comp_canonicalPresentation :
       Stacks.Sites.FreeAlgebra.canonicalPresentation J A B a ≫ β
 ```
 
-**`Stacks.SheafOfModules.naiveCotangentComplexMapOfSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/NaiveCotangentSquare.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/NaiveCotangentSquare.lean#L312). The attribute's comment: “the canonical B-linear map of complexes NL_{B/A} ⟶ NL_{B'/A'}”.
+**`Stacks.SheafOfModules.naiveCotangentComplexMapOfSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/NaiveCotangentSquare.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/NaiveCotangentSquare.lean#L312). The attribute's comment: “the canonical B-linear map of complexes NL\_\{B/A} ⟶ NL\_\{B'/A'}”.
 
 > **Stacks 08TX.** The canonical `B`-linear chain map `NL_{B/A} ⟶ NL_{B'/A'}` attached to a
 > commutative square of sheaves of rings: it is the map of conormal sheaves in degree `-1` and the
@@ -177,7 +177,7 @@ theorem naiveCotangentComplexComparison_naturality :
       naiveCotangentComplexComparison.{v, u, w, z} J A B a E₁ α₁
 ```
 
-**`Stacks.SheafOfModules.presentationNaiveCotangentComplexHomologyZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/NaiveCotangent.lean, line 800](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/NaiveCotangent.lean#L800). The attribute's comment: “degree 0 of the canonical isomorphism: H⁰(NL(α)) is Ω_{B/A} for every presentation”.
+**`Stacks.SheafOfModules.presentationNaiveCotangentComplexHomologyZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/NaiveCotangent.lean, line 800](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/NaiveCotangent.lean#L800). The attribute's comment: “degree 0 of the canonical isomorphism: H⁰(NL(α)) is Ω\_\{B/A} for every presentation”.
 
 > **Stacks 08TY** in degree `0`. For every polynomial presentation `α : E ⟶ B` of `B` over
 > `A` the degree `0` cohomology sheaf of `NL(α)` is the sheaf of relative differentials
@@ -215,7 +215,7 @@ theorem isIso_cokernel_map_presentationConormalSequence_f :
         (freeAlgebraSheafCoefficientMap_comp_freeAlgebraMap J A E₁ E₂ h)))
 ```
 
-**`Stacks.SheafOfModules.quasiIso_naiveCotangentComplexComparison_site`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/NaiveCotangentPresentationComparison.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/NaiveCotangentPresentationComparison.lean#L159). The attribute's comment: “the canonical isomorphism NL(α) ≅ NL_{B/A} in D(B): the comparison map of a polynomial presentation is a quasi-isomorphism”.
+**`Stacks.SheafOfModules.quasiIso_naiveCotangentComplexComparison_site`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/NaiveCotangentPresentationComparison.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/NaiveCotangentPresentationComparison.lean#L159). The attribute's comment: “the canonical isomorphism NL(α) ≅ NL\_\{B/A} in D(B): the comparison map of a polynomial presentation is a quasi-isomorphism”.
 
 > **Stacks 08TY.**  For every polynomial presentation `α : E ⟶ B` of `B` over `A` the
 > canonical comparison map `NL(α) ⟶ NL_{B/A}` is a quasi-isomorphism, so `NL(α)` and `NL_{B/A}`

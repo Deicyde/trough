@@ -56,7 +56,7 @@ public abbrev BaseChangeHolds {X S : Scheme.{u}} (f : X ⟶ S) (n q₀ : ℤ) : 
 
 [Tag 0F03](https://stacks.math.columbia.edu/tag/0F03) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.mono_cokernelDesc_higherBaseChangeMapAb_app_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BaseChangeHigher/TorsionSheafEmbedding.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BaseChangeHigher/TorsionSheafEmbedding.lean#L281). The attribute's comment: “part (3), the cokernel inside R^q h_* e⁻¹ of an injective ℤ/nℤ-module sheaf”.
+**`Stacks.EtaleCohomology.mono_cokernelDesc_higherBaseChangeMapAb_app_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BaseChangeHigher/TorsionSheafEmbedding.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BaseChangeHigher/TorsionSheafEmbedding.lean#L281). The attribute's comment: “part (3), the cokernel inside R^q h\_* e⁻¹ of an injective ℤ/nℤ-module sheaf”.
 
 > **Part (3) of [Stacks, Tag 0F03].** In the situation of
 > `mono_higherBaseChangeMapAb_app_of_injective`, with `F` annihilated by `n` contained in the

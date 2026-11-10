@@ -36,7 +36,7 @@ def equivLeftStructure (A B : DifferentialGradedAlgebra.{t, a} R) :
 def asBimodule (φ : A ⟶ B) (hφ : φ.IsUnital) : DifferentialGradedBimodule.{t, a, a} A B
 ```
 
-**`SheafOfModules.DifferentialGradedModule.restrictScalars`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedBimoduleStructures.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedBimoduleStructures.lean#L354). The attribute's comment: “restriction res_φ along a homomorphism of sheaves of differential graded algebras”.
+**`SheafOfModules.DifferentialGradedModule.restrictScalars`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedBimoduleStructures.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedBimoduleStructures.lean#L354). The attribute's comment: “restriction res\_φ along a homomorphism of sheaves of differential graded algebras”.
 
 > **The restriction functor `res_φ : Mod^dg(B, d) ⥤ Mod^dg(A, d)`** attached to a unital
 > homomorphism `φ : A ⟶ B` of sheaves of differential graded algebras.
@@ -46,7 +46,7 @@ def restrictScalars (φ : A ⟶ B) (hφ : φ.IsUnital) :
     DifferentialGradedModule.{t, a, m} B ⥤ DifferentialGradedModule.{t, a, m} A
 ```
 
-**`SheafOfModules.DifferentialGradedAlgebra.Hom.toBimodule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestriction.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestriction.lean#L205). The attribute's comment: “the bimodule _A B_B attached to a homomorphism of differential graded algebras”.
+**`SheafOfModules.DifferentialGradedAlgebra.Hom.toBimodule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestriction.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestriction.lean#L205). The attribute's comment: “the bimodule \_A B\_B attached to a homomorphism of differential graded algebras”.
 
 > The target of a unit-preserving homomorphism `φ : A ⟶ B` of sheaves of differential graded
 > algebras, read as a differential graded `(A, B)`-bimodule `{}_A B_B`: the underlying complex is
@@ -60,7 +60,7 @@ def Hom.toBimodule (φ : A ⟶ B) (hφ : φ.PreservesOne) :
     DifferentialGradedBimodule.{t, a, a} A B
 ```
 
-**`SheafOfModules.DifferentialGradedModule.restrictionObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestriction.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestriction.lean#L245). The attribute's comment: “the restriction functor res_φ on objects”. References: EGA II (2.8.6), “more general”.
+**`SheafOfModules.DifferentialGradedModule.restrictionObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestriction.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestriction.lean#L245). The attribute's comment: “the restriction functor res\_φ on objects”. References: EGA II (2.8.6), “more general”.
 
 > Restriction of scalars of a right differential graded `B`-module along a unit-preserving
 > homomorphism `φ : A ⟶ B` of sheaves of differential graded algebras: the underlying cochain
@@ -74,7 +74,7 @@ def restrictionObj (φ : A ⟶ B) (hφ : φ.PreservesOne)
     (N : DifferentialGradedModule.{t, a, m} B) : DifferentialGradedModule.{t, a, m} A
 ```
 
-**`SheafOfModules.DifferentialGradedModule.restrictionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestriction.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestriction.lean#L268). The attribute's comment: “the restriction functor res_φ on homomorphisms”.
+**`SheafOfModules.DifferentialGradedModule.restrictionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestriction.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestriction.lean#L268). The attribute's comment: “the restriction functor res\_φ on homomorphisms”.
 
 > Restriction of scalars of a homomorphism of right differential graded `B`-modules: the same
 > morphism of underlying cochain complexes.
@@ -85,7 +85,7 @@ def restrictionMap (φ : A ⟶ B) (hφ : φ.PreservesOne)
     restrictionObj φ hφ M ⟶ restrictionObj φ hφ N
 ```
 
-**`SheafOfModules.DifferentialGradedModule.restriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestriction.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestriction.lean#L285). The attribute's comment: “the restriction functor res_φ”.
+**`SheafOfModules.DifferentialGradedModule.restriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestriction.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestriction.lean#L285). The attribute's comment: “the restriction functor res\_φ”.
 
 > **Restriction of scalars** `res_φ : Mod(B, d) ⥤ Mod(A, d)` along a unit-preserving
 > homomorphism `φ : A ⟶ B` of sheaves of differential graded algebras.
@@ -97,7 +97,7 @@ def restriction (φ : A ⟶ B) (hφ : φ.PreservesOne) :
     DifferentialGradedModule.{t, a, m} B ⥤ DifferentialGradedModule.{t, a, m} A
 ```
 
-**`SheafOfModules.DifferentialGradedModule.extensionRestrictionAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestrictionAdjunction.lean, line 836](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestrictionAdjunction.lean#L836). The attribute's comment: “base change is left adjoint to res_phi, given a TensorFunctorData of 0FTE”.
+**`SheafOfModules.DifferentialGradedModule.extensionRestrictionAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestrictionAdjunction.lean, line 836](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRestrictionAdjunction.lean#L836). The attribute's comment: “base change is left adjoint to res\_phi, given a TensorFunctorData of 0FTE”.
 
 > **Extension of scalars is left adjoint to restriction of scalars.** For a unit-preserving
 > homomorphism `φ : A ⟶ B` of sheaves of differential graded `R`-algebras and a tensor product
@@ -180,7 +180,7 @@ theorem bimoduleStructureEquiv_app (hE : IsEndomorphismAlgebra N E) (s : Bimodul
 
 [Tag 0FRS](https://stacks.math.columbia.edu/tag/0FRS) in the Stacks Project.
 
-**`SheafOfModules.isInternalHom_tensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomAdjunction.lean, line 787](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomAdjunction.lean#L787). The attribute's comment: “SheafHom^dg_B(M ⊗_A N, L) = SheafHom^dg_A(M, SheafHom^dg_B(N, L))”.
+**`SheafOfModules.isInternalHom_tensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomAdjunction.lean, line 787](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomAdjunction.lean#L787). The attribute's comment: “SheafHom^dg\_B(M ⊗\_A N, L) = SheafHom^dg\_A(M, SheafHom^dg\_B(N, L))”.
 
 > **Tensor-hom adjunction for sheaves of differential graded modules**, second identity: a
 > complex of sheaves of `R`-modules which is the internal hom `SheafHom^dg_B(M ⊗_A N, L)` is also
@@ -287,7 +287,7 @@ theorem tensorSectionsEquiv_naturality_bimodule (hT : IsTensorProduct M N T)
         ((tensorSectionsEquiv hT' hH' hG' n U p).app i j hij V x)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.tensorHomHomogeneousEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean#L328). The attribute's comment: “Hom_{Mod^dg(B, d)}(M ⊗_A N, L) = Hom_{Mod^dg(A, d)}(M, SheafHom^dg_B(N, L)) as hom-complexes: degreewise, additively, and compatibly with the differentials”.
+**`SheafOfModules.DifferentialGradedModule.tensorHomHomogeneousEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean#L328). The attribute's comment: “Hom\_\{Mod^dg(B, d)}(M ⊗\_A N, L) = Hom\_\{Mod^dg(A, d)}(M, SheafHom^dg\_B(N, L)) as hom-complexes: degreewise, additively, and compatibly with the differentials”.
 
 > **Tensor-hom adjunction for sheaves of differential graded modules**, first identity, in a
 > fixed degree: the degree-`n` homogeneous right-linear maps `M ⊗_A N → L` of right differential
@@ -299,7 +299,7 @@ noncomputable def tensorHomHomogeneousEquiv (hT : IsTensorProduct M N T) (hH : I
     (n : ℤ) : HomogeneousMap B T L n ≃ HomogeneousMap A M H n
 ```
 
-**`SheafOfModules.DifferentialGradedModule.homogeneousEquiv_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean#L420). The attribute's comment: “Hom_{Mod^dg(B, d)}(M ⊗_A N, L) = Hom_{Mod^dg(A, d)}(M, SheafHom^dg_B(N, L)) as hom-complexes: degreewise, additively, and compatibly with the differentials”.
+**`SheafOfModules.DifferentialGradedModule.homogeneousEquiv_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean#L420). The attribute's comment: “Hom\_\{Mod^dg(B, d)}(M ⊗\_A N, L) = Hom\_\{Mod^dg(A, d)}(M, SheafHom^dg\_B(N, L)) as hom-complexes: degreewise, additively, and compatibly with the differentials”.
 
 > **Tensor-hom adjunction for sheaves of differential graded modules**, first identity, on
 > the additions: the identification of the homogeneous morphisms is additive, so each degree of
@@ -312,7 +312,7 @@ theorem homogeneousEquiv_add (hT : IsTensorProduct M N T) (hH : IsSheafHom N L H
       (tensorHomHomogeneousEquiv hT hH n φ).val + (tensorHomHomogeneousEquiv hT hH n φ').val
 ```
 
-**`SheafOfModules.DifferentialGradedModule.homogeneousEquiv_delta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean#L438). The attribute's comment: “Hom_{Mod^dg(B, d)}(M ⊗_A N, L) = Hom_{Mod^dg(A, d)}(M, SheafHom^dg_B(N, L)) as hom-complexes: degreewise, additively, and compatibly with the differentials”.
+**`SheafOfModules.DifferentialGradedModule.homogeneousEquiv_delta`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean#L438). The attribute's comment: “Hom\_\{Mod^dg(B, d)}(M ⊗\_A N, L) = Hom\_\{Mod^dg(A, d)}(M, SheafHom^dg\_B(N, L)) as hom-complexes: degreewise, additively, and compatibly with the differentials”.
 
 > **Tensor-hom adjunction for sheaves of differential graded modules**, first identity, on
 > the differentials: the identification of the homogeneous morphisms commutes with the commutator
@@ -326,7 +326,7 @@ theorem homogeneousEquiv_delta (hT : IsTensorProduct M N T) (hH : IsSheafHom N L
       δ n (n + 1) (tensorHomHomogeneousEquiv hT hH n φ).val
 ```
 
-**`SheafOfModules.DifferentialGradedModule.dgHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean#L490). The attribute's comment: “Hom_{Mod^dg(B, d)}(M ⊗_A N, L) = Hom_{Mod^dg(A, d)}(M, SheafHom^dg_B(N, L)) as hom-complexes: degreewise, additively, and compatibly with the differentials”.
+**`SheafOfModules.DifferentialGradedModule.dgHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean#L490). The attribute's comment: “Hom\_\{Mod^dg(B, d)}(M ⊗\_A N, L) = Hom\_\{Mod^dg(A, d)}(M, SheafHom^dg\_B(N, L)) as hom-complexes: degreewise, additively, and compatibly with the differentials”.
 
 > **Tensor-hom adjunction for sheaves of differential graded modules**, first identity: the
 > degree-`n` homogeneous morphisms `M ⊗_A N → L` of the differential graded category
@@ -341,7 +341,7 @@ noncomputable def dgHomEquiv (hT : IsTensorProduct M N T) (hH : IsSheafHom N L H
         (moduleObject A (dgCategoryData A) H) n
 ```
 
-**`SheafOfModules.DifferentialGradedModule.dgHomEquiv_d`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean#L503). The attribute's comment: “Hom_{Mod^dg(B, d)}(M ⊗_A N, L) = Hom_{Mod^dg(A, d)}(M, SheafHom^dg_B(N, L)) as hom-complexes: degreewise, additively, and compatibly with the differentials”.
+**`SheafOfModules.DifferentialGradedModule.dgHomEquiv_d`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedTensorHomHomComplex.lean#L503). The attribute's comment: “Hom\_\{Mod^dg(B, d)}(M ⊗\_A N, L) = Hom\_\{Mod^dg(A, d)}(M, SheafHom^dg\_B(N, L)) as hom-complexes: degreewise, additively, and compatibly with the differentials”.
 
 > **Tensor-hom adjunction for sheaves of differential graded modules**, first identity: the
 > identification of the two hom-complexes commutes with their differentials, so it is an equality

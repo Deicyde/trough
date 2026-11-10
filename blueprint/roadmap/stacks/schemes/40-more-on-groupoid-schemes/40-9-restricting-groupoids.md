@@ -162,7 +162,7 @@ public noncomputable def doubleRestrictionDiagram {S : Scheme.{u}} (G : Groupoid
 
 [Tag 04MX](https://stacks.math.columbia.edu/tag/04MX) in the Stacks Project.
 
-**`AlgebraicGeometry.restrictionSource_mem_of_composite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestrictionDescent.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestrictionDescent.lean#L64). The attribute's comment: “pullback_to_second_restriction”.
+**`AlgebraicGeometry.restrictionSource_mem_of_composite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestrictionDescent.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestrictionDescent.lean#L64). The attribute's comment: “pullback\_to\_second\_restriction”.
 
 > A property of the source map over a composite restriction descends to the
 > source map over the second restriction when the original target map covers.
@@ -178,7 +178,7 @@ public theorem restrictionSource_mem_of_composite {S : Scheme.{u}} (G : Groupoid
     P ((pullback.snd g' (restrictionTarget G g) ≫ restrictionSource G g).left)
 ```
 
-**`AlgebraicGeometry.descent_to_open_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestrictionDescent.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestrictionDescent.lean#L99). The attribute's comment: “descent_to_open_image”.
+**`AlgebraicGeometry.descent_to_open_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestrictionDescent.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/DoubleRestrictionDescent.lean#L99). The attribute's comment: “descent\_to\_open\_image”.
 
 > A morphism property local on the target descends from the source map of a
 > restriction to the source map after a further restriction, viewed over the

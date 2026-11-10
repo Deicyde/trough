@@ -64,7 +64,7 @@ public theorem subsingleton_etaleH_constantZMod_of_isAffine_constantSequence (p 
     Subsingleton (Sheaf.H.{w, u + 1} (etaleConstantZMod S p) q)
 ```
 
-**`Stacks.ArtinSchreier.subsingleton_etaleH_constantZMod_of_topologicalKrullDim_le_constantSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/ConstantSequenceDatum.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/ConstantSequenceDatum.lean#L216). The attribute's comment: “part (2)”. References: SGA 4½ Arcata (4.4), “H^q(X_0, special case”.
+**`Stacks.ArtinSchreier.subsingleton_etaleH_constantZMod_of_topologicalKrullDim_le_constantSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/ConstantSequenceDatum.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/ConstantSequenceDatum.lean#L216). The attribute's comment: “part (2)”. References: SGA 4½ Arcata (4.4), “H^q(X\_0, special case”.
 
 > **[Stacks, Tag 0A3K] (2).** Let `p` be a prime and let `S` be a quasi-compact and
 > quasi-separated scheme on which `p` vanishes and of dimension at most `d`. Then
@@ -88,7 +88,7 @@ public theorem subsingleton_etaleH_constantZMod_of_topologicalKrullDim_le_consta
 
 [Tag 0A3L](https://stacks.math.columbia.edu/tag/0A3L) in the Stacks Project.
 
-**`fixedPoints_finiteDimensional_of_frobenius_semilinear`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/FrobeniusFixedPoints.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/FrobeniusFixedPoints.lean#L145). The attribute's comment: “kernel_bound”.
+**`fixedPoints_finiteDimensional_of_frobenius_semilinear`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/FrobeniusFixedPoints.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/FrobeniusFixedPoints.lean#L145). The attribute's comment: “kernel\_bound”.
 
 > The fixed points of a Frobenius-semilinear additive endomorphism of a
 > finite-dimensional vector space are finite-dimensional over the prime field.
@@ -101,7 +101,7 @@ theorem fixedPoints_finiteDimensional_of_frobenius_semilinear
     FiniteDimensional (ZMod p) (AddMonoidHom.ker (F - AddMonoidHom.id V))
 ```
 
-**`finrank_fixedPoints_le_of_frobenius_semilinear`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/FrobeniusFixedPoints.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/FrobeniusFixedPoints.lean#L159). The attribute's comment: “kernel_bound”.
+**`finrank_fixedPoints_le_of_frobenius_semilinear`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/FrobeniusFixedPoints.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/FrobeniusFixedPoints.lean#L159). The attribute's comment: “kernel\_bound”.
 
 > The dimension over the prime field of the fixed points of a
 > Frobenius-semilinear additive endomorphism is at most the dimension of the
@@ -184,7 +184,7 @@ theorem finiteDimensional_topCohomology_of_isSeparated {X : Scheme.{u}} (f : X �
     FiniteDimensional k (cohomologyOverField k f F d)
 ```
 
-**`AlgebraicGeometry.finiteDimensional_topCohomology_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeCoherentFiniteness/Separated.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeCoherentFiniteness/Separated.lean#L156). The attribute's comment: “the full statement: for X separated and of finite type over a field k, F a coherent O_X-module and d = dim X, the k-vector space H^d(X, F) is finite-dimensional”.
+**`AlgebraicGeometry.finiteDimensional_topCohomology_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeCoherentFiniteness/Separated.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeCoherentFiniteness/Separated.lean#L156). The attribute's comment: “the full statement: for X separated and of finite type over a field k, F a coherent O\_X-module and d = dim X, the k-vector space H^d(X, F) is finite-dimensional”.
 
 > **[Stacks, Tag 0A3M].** Let `X` be a separated scheme of finite type over a field `k`, with
 > structure morphism `f : X ⟶ Spec k`, let `ℱ` be a coherent `𝒪_X`-module and let `d = dim(X)`.

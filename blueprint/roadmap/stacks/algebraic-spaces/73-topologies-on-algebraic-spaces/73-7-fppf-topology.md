@@ -111,7 +111,7 @@ theorem precoverage_etale_le_fppf :
 
 [Tag 03Y9](https://stacks.math.columbia.edu/tag/03Y9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFppfCovering_fibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean#L133). The attribute's comment: “base_change_cover”.
+**`AlgebraicGeometry.Space.isFppfCovering_fibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean#L133). The attribute's comment: “base\_change\_cover”.
 
 > **Stacks 03Y9.** Pulling an fppf covering of algebraic spaces over `S` back along a
 > morphism of algebraic spaces gives an fppf covering of the new target: the first projections of
@@ -129,7 +129,7 @@ theorem isFppfCovering_fibreProduct
       (fun i => pullback.fst g.hom (f i).hom)
 ```
 
-**`AlgebraicGeometry.Space.isFppfCovering_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean#L167). The attribute's comment: “composition_cover”.
+**`AlgebraicGeometry.Space.isFppfCovering_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparison.lean#L167). The attribute's comment: “composition\_cover”.
 
 > **Stacks 03Y9.** Composing an fppf covering of an algebraic space over `S` with an fppf
 > covering of each of its members gives an fppf covering: flatness and being locally of finite
@@ -149,7 +149,7 @@ theorem isFppfCovering_comp
       (fun p => g p.1 p.2 ≫ f p.1)
 ```
 
-**`AlgebraicGeometry.Space.isFppfCovering_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L194). The attribute's comment: “isomorphism_cover”.
+**`AlgebraicGeometry.Space.isFppfCovering_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoveringComparisonTopologies.lean#L194). The attribute's comment: “isomorphism\_cover”.
 
 > **Stacks 03Y9**, the isomorphism clause. An isomorphism of algebraic spaces over `S`,
 > regarded as a family indexed by a point, is an fppf covering: it is an étale covering by

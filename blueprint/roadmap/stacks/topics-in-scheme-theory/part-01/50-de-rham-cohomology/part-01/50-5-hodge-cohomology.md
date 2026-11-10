@@ -46,7 +46,7 @@ theorem hodgeCupProduct_comm (p p' : ℕ) (q q' : ℤ)
           (hodgeCupProduct B c p' p q' q ζ ξ)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.hodgeTotalCupProduct_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeCohomology/CupProductLaws.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeCohomology/CupProductLaws.lean#L321). The attribute's comment: “the cup product on H^*_Hodge(X/S) = ⨁_{p+q=n} H^q(X, Ω^p) is associative; the cup product is constructed (hodgeCohomologyCupProduct: the 0FKU pairing of the ringed space (X, A) along the wedge product), nothing assumed”.
+**`AlgebraicGeometry.SheafOfModules.hodgeTotalCupProduct_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeCohomology/CupProductLaws.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeCohomology/CupProductLaws.lean#L321). The attribute's comment: “the cup product on H^*\_Hodge(X/S) = ⨁\_\{p+q=n} H^q(X, Ω^p) is associative; the cup product is constructed (hodgeCohomologyCupProduct: the 0FKU pairing of the ringed space (X, A) along the wedge product), nothing assumed”.
 
 > The cup product on `H^*_{Hodge}(X/S)` is associative: `(x ∪ y) ∪ z = x ∪ (y ∪ z)` for `x`,
 > `y`, `z` of total degrees `n`, `m`, `l`, the two sides read in the same group
@@ -60,7 +60,7 @@ theorem hodgeTotalCupProduct_assoc (n m l : ℕ) (x : hodgeCohomology B n)
       hodgeTotalCupProduct B n (m + l) x (hodgeTotalCupProduct B m l y z)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.hodgeTotalCupProduct_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeCohomology/CupProductLaws.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeCohomology/CupProductLaws.lean#L354). The attribute's comment: “the cup product on H^*_Hodge(X/S) is graded commutative, x ∪ y = (-1)^(nm) y ∪ x for x, y of total degrees n, m; the cup product is constructed (hodgeCohomologyCupProduct), nothing assumed”.
+**`AlgebraicGeometry.SheafOfModules.hodgeTotalCupProduct_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeCohomology/CupProductLaws.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeCohomology/CupProductLaws.lean#L354). The attribute's comment: “the cup product on H^*\_Hodge(X/S) is graded commutative, x ∪ y = (-1)^(nm) y ∪ x for x, y of total degrees n, m; the cup product is constructed (hodgeCohomologyCupProduct), nothing assumed”.
 
 > The cup product on `H^*_{Hodge}(X/S)` is graded commutative: `x ∪ y = (-1)^{nm} y ∪ x` for
 > `x` of degree `n` and `y` of degree `m`.

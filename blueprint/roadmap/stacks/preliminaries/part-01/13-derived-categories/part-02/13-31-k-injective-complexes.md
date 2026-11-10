@@ -17,7 +17,7 @@ Section 13.31 of the Stacks Project, [Tag 070G](https://stacks.math.columbia.edu
 Declarations registered for the tag:
 
 - [`CochainComplex.IsKInjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.IsKInjective#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 15](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch13.lean#L15) (StacksFrontier): “definition: every chain map from an acyclic complex is null-homotopic”.
-- [`CochainComplex.isKInjective_iff_rightOrthogonal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.isKInjective_iff_rightOrthogonal#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 17](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch13.lean#L17) (StacksFrontier): “Hom_{K(A)}(M, I) = 0 for every acyclic M”.
+- [`CochainComplex.isKInjective_iff_rightOrthogonal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.isKInjective_iff_rightOrthogonal#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch13.lean, line 17](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch13.lean#L17) (StacksFrontier): “Hom\_\{K(A)}(M, I) = 0 for every acyclic M”.
 
 ## Tag 070I, a lemma
 

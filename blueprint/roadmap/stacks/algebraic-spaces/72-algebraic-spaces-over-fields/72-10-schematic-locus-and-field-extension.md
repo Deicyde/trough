@@ -126,7 +126,7 @@ theorem isFreeOnNonemptyPoints_extensionBaseChange :
       (extensionBaseChange k k' B hk hk' X)
 ```
 
-**`AlgebraicGeometry.Space.isIso_extensionBaseChangeQuotientLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GaloisBaseChangeQuotient.lean, line 635](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GaloisBaseChangeQuotient.lean#L635). The attribute's comment: “X = X_{k'}/G”.
+**`AlgebraicGeometry.Space.isIso_extensionBaseChangeQuotientLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GaloisBaseChangeQuotient.lean, line 635](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GaloisBaseChangeQuotient.lean#L635). The attribute's comment: “X = X\_\{k'}/G”.
 
 > **Stacks 0B86**, the quotient assertion: for a finite Galois extension `k'/k` with Galois
 > group `G`, an algebraic space `X` over `k` is the quotient `X_{k'}/G`.

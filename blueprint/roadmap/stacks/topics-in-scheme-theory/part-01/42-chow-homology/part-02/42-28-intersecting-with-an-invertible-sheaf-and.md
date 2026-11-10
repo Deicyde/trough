@@ -147,7 +147,7 @@ theorem firstChernCapFactorsEverywhere_iff_killsPrincipalDivisor :
     FirstChernCapFactorsEverywhere C k ↔ FirstChernCapKillsPrincipalDivisor C k
 ```
 
-**`Stacks.Chow.firstChernClassCap_eq_zero_of_keyFormula`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/IntersectionCommutativity.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/IntersectionCommutativity.lean#L192). The attribute's comment: “the integral case α = div_X(f), granting the key formula 0AYC”.
+**`Stacks.Chow.firstChernClassCap_eq_zero_of_keyFormula`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/IntersectionCommutativity.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/IntersectionCommutativity.lean#L192). The attribute's comment: “the integral case α = div\_X(f), granting the key formula 0AYC”.
 
 > **The integral case of Stacks 02TI.** On an integral scheme of delta-dimension `k + 2`,
 > intersecting the principal divisor of a rational function with the first Chern class of an
@@ -205,7 +205,7 @@ def firstChernClassCapOnChow
 theorem firstChernCapFactorsEverywhere : FirstChernCapFactorsEverywhere C k
 ```
 
-**`Stacks.Chow.firstChernClassCapChow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapFactors.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapFactors.lean#L176). The attribute's comment: “the descended operation c_1(L) cap - : A_{k+1}(X) ⟶ A_k(X) the factoring produces, with no hypothesis”.
+**`Stacks.Chow.firstChernClassCapChow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapFactors.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/ChernCapFactors.lean#L176). The attribute's comment: “the descended operation c\_1(L) cap - : A\_\{k+1}(X) ⟶ A\_k(X) the factoring produces, with no hypothesis”.
 
 > **Stacks 02TI.** Intersection with the first Chern class of an invertible module, as an
 > operation `c₁(L) ∩ - : A_{k+1}(X) ⟶ A_k(X)` on Chow groups.
@@ -263,7 +263,7 @@ theorem firstChernClassCapOnChowOfInvertible_comm_unconditional
           (firstChernCapKillsPrincipalDivisor C (k + 1)) p L α)
 ```
 
-**`Stacks.Chow.firstChernCapStepsCommute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SplittingPrinciple/TensorPowerSumsDischarge.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/SplittingPrinciple/TensorPowerSumsDischarge.lean#L245). The attribute's comment: “the identity for the degree-raising steps Stacks.Chow.firstChernCapStep that the Chern class power-sum operators of Stacks 0F9B are built from, with no hypothesis: it is Stacks.Chow.GenuineChern.firstChernClassCapChow_comm, which is the tag itself with nothing carried, transported along the equality of degrees n - i = (n - (i+1)) + 1 that separates the two presentations of c_1(L) cap -”.
+**`Stacks.Chow.firstChernCapStepsCommute`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SplittingPrinciple/TensorPowerSumsDischarge.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/SplittingPrinciple/TensorPowerSumsDischarge.lean#L245). The attribute's comment: “the identity for the degree-raising steps Stacks.Chow.firstChernCapStep that the Chern class power-sum operators of Stacks 0F9B are built from, with no hypothesis: it is Stacks.Chow.GenuineChern.firstChernClassCapChow\_comm, which is the tag itself with nothing carried, transported along the equality of degrees n - i = (n - (i+1)) + 1 that separates the two presentations of c\_1(L) cap -”.
 
 > **Stacks 02TJ in the form the power-sum operators consume, with no hypothesis.** For two
 > invertible modules the degree-raising operations `c₁(A) ∩ -` and `c₁(B) ∩ -` of

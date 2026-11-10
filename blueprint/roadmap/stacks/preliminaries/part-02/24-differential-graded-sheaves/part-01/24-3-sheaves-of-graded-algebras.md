@@ -72,7 +72,7 @@ public noncomputable def gradedAlgebraPullbackPushforwardAdjunction :
         ∀ A, G.obj A = pushforwardGradedAlgebra f A }
 ```
 
-**`SheafOfModules.GradedAlgebra.transport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraFunctoriality.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraFunctoriality.lean#L340). The attribute's comment: “graded_algebra_pushforward, graded_algebra_pullback”.
+**`SheafOfModules.GradedAlgebra.transport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraFunctoriality.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraFunctoriality.lean#L340). The attribute's comment: “graded\_algebra\_pushforward, graded\_algebra\_pullback”.
 
 > **The transport of a sheaf of graded algebras along a lax monoidal functor between
 > categories of sheaves of modules**, with homogeneous pieces the images `F(A_n)` of those of
@@ -82,7 +82,7 @@ public noncomputable def gradedAlgebraPullbackPushforwardAdjunction :
 noncomputable def transport : GradedAlgebra.{w, w} (toRingCat K Psharp)
 ```
 
-**`SheafOfModules.GradedAlgebra.transportFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraFunctoriality.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraFunctoriality.lean#L425). The attribute's comment: “graded_algebra_pushforward, graded_algebra_pullback: functoriality”.
+**`SheafOfModules.GradedAlgebra.transportFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraFunctoriality.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraFunctoriality.lean#L425). The attribute's comment: “graded\_algebra\_pushforward, graded\_algebra\_pullback: functoriality”.
 
 > **A lax monoidal functor between categories of sheaves of modules induces a functor between
 > the categories of sheaves of graded algebras.**
@@ -105,7 +105,7 @@ noncomputable def transportAdjunction :
     transportFunctor L hP hO ⊣ transportFunctor G hO hP
 ```
 
-**`Stacks.Sheaves.GradedAlgebraPullback.gradedAlgebraPullbackSpecification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraPullback.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraPullback.lean#L206). The attribute's comment: “graded_algebra_pullback”.
+**`Stacks.Sheaves.GradedAlgebraPullback.gradedAlgebraPullbackSpecification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraPullback.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraPullback.lean#L206). The attribute's comment: “graded\_algebra\_pullback”.
 
 > The degreewise module pullbacks assemble into a functor of sheaves of graded algebras, with
 > the induced multiplication and unit.
@@ -117,7 +117,7 @@ public noncomputable def gradedAlgebraPullbackSpecification :
     GradedAlgebraPullbackSpecification f
 ```
 
-**`Stacks.Sheaves.GradedAlgebraPullback.nonempty_gradedAlgebraPullbackSpecification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraPullback.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraPullback.lean#L222). The attribute's comment: “graded_algebra_pullback”.
+**`Stacks.Sheaves.GradedAlgebraPullback.nonempty_gradedAlgebraPullbackSpecification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraPullback.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraPullback.lean#L222). The attribute's comment: “graded\_algebra\_pullback”.
 
 > A pullback of sheaves of graded algebras exists.
 >
@@ -128,7 +128,7 @@ public theorem nonempty_gradedAlgebraPullbackSpecification :
     Nonempty (GradedAlgebraPullbackSpecification f)
 ```
 
-**`Stacks.Sheaves.GradedAlgebraPushforward.exists_pushforwardGradedAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraPushforward/Construction.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraPushforward/Construction.lean#L264). The attribute's comment: “graded_algebra_pushforward”.
+**`Stacks.Sheaves.GradedAlgebraPushforward.exists_pushforwardGradedAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraPushforward/Construction.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraPushforward/Construction.lean#L264). The attribute's comment: “graded\_algebra\_pushforward”.
 
 > A graded algebra whose pieces and operations are the canonical direct images
 > of those of the source exists.
@@ -145,7 +145,7 @@ public theorem exists_pushforwardGradedAlgebra
       IsPushforwardGradedAlgebra f A B
 ```
 
-**`Stacks.Sheaves.GradedAlgebraPushforward.pushforwardGradedAlgebraData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraPushforward/Construction.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraPushforward/Construction.lean#L277). The attribute's comment: “graded_algebra_pushforward”.
+**`Stacks.Sheaves.GradedAlgebraPushforward.pushforwardGradedAlgebraData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraPushforward/Construction.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedAlgebraPushforward/Construction.lean#L277). The attribute's comment: “graded\_algebra\_pushforward”.
 
 > A graded algebra together with its direct-image specification.
 

@@ -141,7 +141,7 @@ theorem isParasitic_of_epi
     IsParasitic B S hS 𝒳 τ G.val
 ```
 
-**`AlgebraicGeometry.Stack.isSerreClass_parasiticModules`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticSerreSubcategory.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticSerreSubcategory.lean#L255). The attribute's comment: “part (2)(b): the parasitic modules are a Serre subcategory of Mod(𝒳_τ, 𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.isSerreClass_parasiticModules`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticSerreSubcategory.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticSerreSubcategory.lean#L255). The attribute's comment: “part (2)(b): the parasitic modules are a Serre subcategory of Mod(𝒳\_τ, 𝒪\_𝒳)”.
 
 > **Stacks 0774** (2)(b). The full subcategory of `Mod(𝒳_τ, 𝒪_𝒳)` consisting of the parasitic
 > modules is a Serre subcategory: it contains a zero object and is closed under submodules, under
@@ -205,7 +205,7 @@ theorem isParasitic_of_isSmooth_jointlySurjective {J : Type v}
 
 [Tag 0775](https://stacks.math.columbia.edu/tag/0775) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isZero_fppfModuleCohomology_of_isParasitic_atSchemeUniverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticCohomologyVanishingAtSchemeUniverse.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticCohomologyVanishingAtSchemeUniverse.lean#L65). The attribute's comment: “part (1) for τ = fppf at the module universe u of the schemes: H^i(𝒳, ℱ) = 0 for a parasitic ℱ, with H^i = Ext^i(𝒪_𝒳, -) as in FlatFppf.fppfModuleCohomology”.
+**`AlgebraicGeometry.Stack.isZero_fppfModuleCohomology_of_isParasitic_atSchemeUniverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticCohomologyVanishingAtSchemeUniverse.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticCohomologyVanishingAtSchemeUniverse.lean#L65). The attribute's comment: “part (1) for τ = fppf at the module universe u of the schemes: H^i(𝒳, ℱ) = 0 for a parasitic ℱ, with H^i = Ext^i(𝒪\_𝒳, -) as in FlatFppf.fppfModuleCohomology”.
 
 > **Stacks 0775** part (1), for the fppf topology, at the module universe `u` of the schemes.
 > Let `𝒳` be an algebraic stack and `ℱ` a parasitic sheaf of `𝒪_𝒳`-modules (**Stacks 0773**).
@@ -229,7 +229,7 @@ theorem isZero_fppfModuleCohomology_of_isParasitic_atSchemeUniverse
     IsZero ((FlatFppf.fppfModuleCohomology.{u, w, t} B S hS 𝒳 i).obj N)
 ```
 
-**`AlgebraicGeometry.Stack.isZero_ext_unit_of_isParasitic_atSchemeUniverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticCohomologyVanishingAtSchemeUniverse.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticCohomologyVanishingAtSchemeUniverse.lean#L109). The attribute's comment: “part (1) for τ the étale or the fppf topology, at the module universe u of the schemes: H^i_τ(𝒳, ℱ) = Ext^i(𝒪_𝒳, ℱ) = 0 for a parasitic ℱ”.
+**`AlgebraicGeometry.Stack.isZero_ext_unit_of_isParasitic_atSchemeUniverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticCohomologyVanishingAtSchemeUniverse.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticCohomologyVanishingAtSchemeUniverse.lean#L109). The attribute's comment: “part (1) for τ the étale or the fppf topology, at the module universe u of the schemes: H^i\_τ(𝒳, ℱ) = Ext^i(𝒪\_𝒳, ℱ) = 0 for a parasitic ℱ”.
 
 > **Stacks 0775** part (1), for `τ` the étale or the fppf topology, at the module universe `u` of
 > the schemes. Let `𝒳` be an algebraic stack and `ℱ` a parasitic sheaf of `𝒪_𝒳`-modules on `𝒳_τ`
@@ -256,7 +256,7 @@ theorem isZero_ext_unit_of_isParasitic_atSchemeUniverse {τ : SiteKind}
     IsZero ((extFunctorObj.{t} (SheafOfModules.unit _) i).obj N)
 ```
 
-**`AlgebraicGeometry.Stack.isZero_ext_uliftUnit_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticFlatSubsiteCohomology.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticFlatSubsiteCohomology.lean#L218). The attribute's comment: “part (1), for τ the étale or the fppf topology, with no hypothesis: H^i_τ(𝒳, ℱ) = 0 for a parasitic ℱ, at the module universe u + 1 of the objects of the site”.
+**`AlgebraicGeometry.Stack.isZero_ext_uliftUnit_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticFlatSubsiteCohomology.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticFlatSubsiteCohomology.lean#L218). The attribute's comment: “part (1), for τ the étale or the fppf topology, with no hypothesis: H^i\_τ(𝒳, ℱ) = 0 for a parasitic ℱ, at the module universe u + 1 of the objects of the site”.
 
 > **Stacks 0775** part (1). Let `𝒳` be an algebraic stack, let `τ` be the étale or the fppf
 > topology, and let `ℱ` be a parasitic sheaf of `𝒪_𝒳`-modules on `𝒳_τ` (**Stacks 0773**). Then
@@ -282,7 +282,7 @@ theorem isZero_ext_uliftUnit_of_isParasitic (hτ : τ = .etale ∨ τ = .fppf)
         i).obj F)
 ```
 
-**`AlgebraicGeometry.Stack.isParasitic_moduleSheafHigherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticHigherDirectImage.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticHigherDirectImage.lean#L407). The attribute's comment: “part (2), for τ the étale or the fppf topology, at the module universe u + 1 of the objects of the site: R^if_*ℱ is parasitic for a parasitic ℱ”.
+**`AlgebraicGeometry.Stack.isParasitic_moduleSheafHigherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticHigherDirectImage.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticHigherDirectImage.lean#L407). The attribute's comment: “part (2), for τ the étale or the fppf topology, at the module universe u + 1 of the objects of the site: R^if\_*ℱ is parasitic for a parasitic ℱ”.
 
 > **Stacks 0775 (2) at the module universe `u + 1` of the objects of the site.** Let
 > `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks, `τ` the étale or the fppf topology, and `ℱ` a
@@ -303,7 +303,7 @@ theorem isParasitic_moduleSheafHigherDirectImage (hτ : τ = .etale ∨ τ = .fp
       (B.baseTopology τ) (B.baseTopology_le_topology τ) n).obj N).val
 ```
 
-**`AlgebraicGeometry.Stack.isParasitic_stackModuleHigherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticHigherDirectImage.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticHigherDirectImage.lean#L431). The attribute's comment: “part (2), for τ the étale or the fppf topology, at the module universe u of the schemes: R^if_*ℱ is parasitic for a parasitic ℱ”.
+**`AlgebraicGeometry.Stack.isParasitic_stackModuleHigherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticHigherDirectImage.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticHigherDirectImage.lean#L431). The attribute's comment: “part (2), for τ the étale or the fppf topology, at the module universe u of the schemes: R^if\_*ℱ is parasitic for a parasitic ℱ”.
 
 > **Stacks 0775 (2)**, for `τ` the étale or the fppf topology, at the module universe `u` of the
 > schemes. Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks and `ℱ` a parasitic sheaf of
@@ -322,7 +322,7 @@ theorem isParasitic_stackModuleHigherDirectImage (hτ : τ = .etale ∨ τ = .fp
     IsParasitic B S hS 𝒴 τ ((stackModuleHigherDirectImage B S hS k τ n).obj N).val
 ```
 
-**`AlgebraicGeometry.Stack.isParasitic_fppfModulesHigherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticHigherDirectImage.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticHigherDirectImage.lean#L446). The attribute's comment: “part (2) for τ = fppf at the module universe u of the schemes: R^if_*ℱ is parasitic for a parasitic ℱ, with R^if_* as in fppfModulesHigherDirectImage”.
+**`AlgebraicGeometry.Stack.isParasitic_fppfModulesHigherDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticHigherDirectImage.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/ParasiticHigherDirectImage.lean#L446). The attribute's comment: “part (2) for τ = fppf at the module universe u of the schemes: R^if\_*ℱ is parasitic for a parasitic ℱ, with R^if\_* as in fppfModulesHigherDirectImage”.
 
 > **Stacks 0775 (2) for the fppf topology at the module universe `u`**: for every 1-morphism
 > `f : 𝒳 ⟶ 𝒴` of algebraic stacks, the higher direct images

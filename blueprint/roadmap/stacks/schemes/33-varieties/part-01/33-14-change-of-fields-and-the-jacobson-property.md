@@ -33,7 +33,7 @@ public theorem isAlgebraic_residueField_and_jacobsonSpace (p : X ⟶ Spec (.of k
 
 [Tag 0479](https://stacks.math.columbia.edu/tag/0479) in the Stacks Project.
 
-**`AlgebraicGeometry.jacobsonSpace_pullback_of_large_cardinality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Jacobson.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Jacobson.lean#L270). The attribute's comment: “base_change_jacobson”.
+**`AlgebraicGeometry.jacobsonSpace_pullback_of_large_cardinality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Jacobson.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Jacobson.lean#L270). The attribute's comment: “base\_change\_jacobson”.
 
 > The base change of a scheme to every sufficiently large extension of its ground field is a
 > Jacobson scheme.
@@ -46,7 +46,7 @@ theorem jacobsonSpace_pullback_of_large_cardinality
         JacobsonSpace ↑(pullback f (Spec.map (ofHom (algebraMap k K))))
 ```
 
-**`Stacks.AlgebraicGeometry.ClosedPointResidue.exists_cardinal_isAlgebraic_residueField_of_mem_closedPoints_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Varieties/ClosedPointResidue.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Varieties/ClosedPointResidue.lean#L330). The attribute's comment: “closed_point_residue_algebraic”.
+**`Stacks.AlgebraicGeometry.ClosedPointResidue.exists_cardinal_isAlgebraic_residueField_of_mem_closedPoints_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Varieties/ClosedPointResidue.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Varieties/ClosedPointResidue.lean#L330). The attribute's comment: “closed\_point\_residue\_algebraic”.
 
 > For every scheme over a field, after extending the field to one of sufficiently large
 > cardinality, the residue field of every closed point of the base change is algebraic over the

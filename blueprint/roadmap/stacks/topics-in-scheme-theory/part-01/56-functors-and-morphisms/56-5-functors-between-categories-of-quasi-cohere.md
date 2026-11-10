@@ -326,7 +326,7 @@ theorem isFlatOver_kernel_of_exactFunctor (R : Type u) [CommRing R] :
 
 [Tag 0FZH](https://stacks.math.columbia.edu/tag/0FZH) in the Stacks Project.
 
-**`AlgebraicGeometry.isEquivalence_integralTransformExactKernelFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/IntegralTransformQcoh/ExactKernelEquivalence.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/IntegralTransformQcoh/ExactKernelEquivalence.lean#L74). The attribute's comment: “the functor sending a kernel K on X ×_R Y to its integral transform is an equivalence from the kernels flat over X with vanishing higher direct images of pr_1^*F ⊗ K onto the R-linear exact functors QCoh(X) ⥤ QCoh(Y) commuting with arbitrary direct sums”.
+**`AlgebraicGeometry.isEquivalence_integralTransformExactKernelFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/IntegralTransformQcoh/ExactKernelEquivalence.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/IntegralTransformQcoh/ExactKernelEquivalence.lean#L74). The attribute's comment: “the functor sending a kernel K on X ×\_R Y to its integral transform is an equivalence from the kernels flat over X with vanishing higher direct images of pr\_1^*F ⊗ K onto the R-linear exact functors QCoh(X) ⥤ QCoh(Y) commuting with arbitrary direct sums”.
 
 > Let `R` be a ring and let `X` and `Y` be schemes over `R` with `X` quasi-compact and with
 > affine diagonal. The functor sending a quasi-coherent kernel `K` on `X ×_R Y` to its integral
@@ -376,7 +376,7 @@ theorem nonempty_iso_quasicoherentIntegralTransform_iff
 
 [Tag 0GPC](https://stacks.math.columbia.edu/tag/0GPC) in the Stacks Project.
 
-**`AlgebraicGeometry.quasicoherentIntegralTransformConvolutionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/IntegralTransformQcoh/Convolution.lean, line 567](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/IntegralTransformQcoh/Convolution.lean#L567). The attribute's comment: “the composition formula F_L ∘ F_K ≅ F_{pr13,*(pr12^*K ⊗ pr23^*L)} as a natural isomorphism of functors QCoh(O_X) to QCoh(O_Z), for L a kernel of category (2) of 0FZH (so F_L is R-linear, exact and commutes with direct sums), K arbitrary, X quasi-compact with affine diagonal and Y quasi-compact and quasi-separated”.
+**`AlgebraicGeometry.quasicoherentIntegralTransformConvolutionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/IntegralTransformQcoh/Convolution.lean, line 567](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/IntegralTransformQcoh/Convolution.lean#L567). The attribute's comment: “the composition formula F\_L ∘ F\_K ≅ F\_\{pr13,*(pr12^*K ⊗ pr23^*L)} as a natural isomorphism of functors QCoh(O\_X) to QCoh(O\_Z), for L a kernel of category (2) of 0FZH (so F\_L is R-linear, exact and commutes with direct sums), K arbitrary, X quasi-compact with affine diagonal and Y quasi-compact and quasi-separated”.
 
 > **Stacks Project, Tag 0GPC.**  Let `R` be a ring and let `X`, `Y`, `Z` be schemes over `R`,
 > with `X` quasi-compact with affine diagonal and `Y` quasi-compact and quasi-separated.  Let `K`
@@ -414,7 +414,7 @@ def quasicoherentIntegralTransformConvolutionIso (hL : integralTransformExactKer
 
 [Tag 0FZI](https://stacks.math.columbia.edu/tag/0FZI) in the Stacks Project.
 
-**`AlgebraicGeometry.isZero_rightDerived_pushforward_baseChangeKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/IntegralTransformQcoh/BaseChangeAcyclicity.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/IntegralTransformQcoh/BaseChangeAcyclicity.lean#L536). The attribute's comment: “the positive higher direct images of pr_12^*F ⊗ pr_23^*K along pr_13 vanish”.
+**`AlgebraicGeometry.isZero_rightDerived_pushforward_baseChangeKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/IntegralTransformQcoh/BaseChangeAcyclicity.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/IntegralTransformQcoh/BaseChangeAcyclicity.lean#L536). The attribute's comment: “the positive higher direct images of pr\_12^*F ⊗ pr\_23^*K along pr\_13 vanish”.
 
 > **Higher direct images of an integral-transform kernel after base change.**  Let `R` be a
 > ring, let `X` and `Y` be schemes over `R` with the structure morphism of `X` quasi-compact and
@@ -438,7 +438,7 @@ theorem isZero_rightDerived_pushforward_baseChangeKernel (T X Y : Over (Spec (.o
 
 [Tag 0FZJ](https://stacks.math.columbia.edu/tag/0FZJ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_epi_externalTensorProduct_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/IntegralTransformQcoh/DiagonalSurjection.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/IntegralTransformQcoh/DiagonalSurjection.lean#L485). The attribute's comment: “the surjection O_X ⊠ F(O_X) ⟶ K”.
+**`AlgebraicGeometry.exists_epi_externalTensorProduct_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/IntegralTransformQcoh/DiagonalSurjection.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/IntegralTransformQcoh/DiagonalSurjection.lean#L485). The attribute's comment: “the surjection O\_X ⊠ F(O\_X) ⟶ K”.
 
 > **Stacks Project, Tag 0FZJ.**  Let `R` be a ring, let `X` and `Y` be schemes over `R` with
 > `X` quasi-compact, separated and flat over `R`, and let `K` be a quasi-coherent kernel on

@@ -25,7 +25,7 @@ Declarations registered for the tag:
 
 [Tag 0BX8](https://stacks.math.columbia.edu/tag/0BX8) in the Stacks Project.
 
-**`AlgebraicGeometry.GenericPointMapContext.bijective_genericPointMapForRationalMaps_of_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapFinitePresentation.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapFinitePresentation.lean#L279). The attribute's comment: “finite_presentation_bijectivity”. References: EGA IV (20.3.7), “bijectivity (fin pres)”; EGA I (7.1.11), “bijectivity”.
+**`AlgebraicGeometry.GenericPointMapContext.bijective_genericPointMapForRationalMaps_of_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapFinitePresentation.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapFinitePresentation.lean#L279). The attribute's comment: “finite\_presentation\_bijectivity”. References: EGA IV (20.3.7), “bijectivity (fin pres)”; EGA I (7.1.11), “bijectivity”.
 
 > When the target is locally of finite presentation over the base, every
 > compatible collection of points and local maps at the generic points comes
@@ -49,7 +49,7 @@ public theorem genericPointMapForRationalMaps_injective
     Function.Injective C.genericPointMapForRationalMaps
 ```
 
-**`AlgebraicGeometry.GenericPointMapContext.bijective_genericPointMapForRationalMaps_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapReduced.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapReduced.lean#L203). The attribute's comment: “reduced_source_bijectivity”. References: EGA IV (20.2.11), “(ii) reduced case”; EGA I (7.1.11), “bijectivity, X reduced”.
+**`AlgebraicGeometry.GenericPointMapContext.bijective_genericPointMapForRationalMaps_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapReduced.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapReduced.lean#L203). The attribute's comment: “reduced\_source\_bijectivity”. References: EGA IV (20.2.11), “(ii) reduced case”; EGA I (7.1.11), “bijectivity, X reduced”.
 
 > For a reduced source and a target locally of finite type over the base,
 > rational maps over the base are determined by, and realize, arbitrary

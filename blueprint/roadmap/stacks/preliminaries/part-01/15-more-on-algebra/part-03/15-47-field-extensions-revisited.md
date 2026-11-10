@@ -104,7 +104,7 @@ theorem intersection_subfields_07P3 {A : Type*} [Nonempty A]
 
 [Tag 07P4](https://stacks.math.columbia.edu/tag/07P4) in the Stacks Project.
 
-**`iInf_ker_kaehlerDifferentialMap_eq_bot_and_frobeniusFieldRange_eq_iInf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PBasisDifferentials.lean, line 631](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/PBasisDifferentials.lean#L631). References: EGA 0 (21.8.5), “k₀=K^p, L/K finite”; EGA 0 (21.8.3), “a) => c), k₀=F_p”.
+**`iInf_ker_kaehlerDifferentialMap_eq_bot_and_frobeniusFieldRange_eq_iInf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PBasisDifferentials.lean, line 631](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/PBasisDifferentials.lean#L631). References: EGA 0 (21.8.5), “k₀=K^p, L/K finite”; EGA 0 (21.8.3), “a) => c), k₀=F\_p”.
 
 > Let `Kα` be a downward-directed family of subfields of a field `K` of characteristic
 > `p`, each containing the `p`-th powers, and suppose their intersection is exactly the subfield
@@ -131,7 +131,7 @@ public theorem iInf_ker_kaehlerDifferentialMap_eq_bot_and_frobeniusFieldRange_eq
 
 [Tag 07P5](https://stacks.math.columbia.edu/tag/07P5) in the Stacks Project.
 
-**`fractionFields_powerSeries_polynomial_subrings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PBasisDifferentials.lean, line 1230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/PBasisDifferentials.lean#L1230). References: EGA 0 (21.8.8), “∩K_J=K^p, A_J⊂A finite”.
+**`fractionFields_powerSeries_polynomial_subrings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/FieldTheory/PBasisDifferentials.lean, line 1230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/FieldTheory/PBasisDifferentials.lean#L1230). References: EGA 0 (21.8.8), “∩K\_J=K^p, A\_J⊂A finite”.
 
 > Let `x` be a p-basis of a field `k` of characteristic `p`. Inside
 > `A = k[[X₁, ..., Xₙ]][Y₁, ..., Yₘ]`, let `AJ` be obtained by taking coefficients in the

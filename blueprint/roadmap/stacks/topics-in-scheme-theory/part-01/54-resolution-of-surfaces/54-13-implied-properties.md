@@ -14,7 +14,7 @@ Section 54.13 of the Stacks Project, [Tag 0BGF](https://stacks.math.columbia.edu
 
 [Tag 0BGG](https://stacks.math.columbia.edu/tag/0BGG) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_dense_open_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/Basic.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/Basic.lean#L45). The attribute's comment: “dense_regular_open”.
+**`AlgebraicGeometry.exists_dense_open_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/Basic.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/Basic.lean#L45). The attribute's comment: “dense\_regular\_open”.
 
 > An integral locally Noetherian scheme admitting an alteration by a regular scheme has a
 > dense regular open subscheme.

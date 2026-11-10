@@ -64,7 +64,7 @@ public theorem isRigSmooth_iff_hasJacobianCover
     Rig.IsRigSmooth B ↔ HasJacobianCover B P
 ```
 
-**`Rig.isElementPowerTorsion_hneg_of_jacobianChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean#L527). The attribute's comment: “the proof of (4) ⟹ (2): H⁻¹(NL^∧) is b_l-power torsion”.
+**`Rig.isElementPowerTorsion_hneg_of_jacobianChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/Equivalences.lean#L527). The attribute's comment: “the proof of (4) ⟹ (2): H⁻¹(NL^∧) is b\_l-power torsion”.
 
 > **Stacks 0GAJ, inside the proof of (4) ⟹ (2).**  Let `b` carry a Jacobian chart: a
 > subset `T` of `m` of the variables and `m` elements `f₁, …, fₘ` of the presentation ideal `J`
@@ -88,7 +88,7 @@ public theorem isElementPowerTorsion_hneg_of_jacobianChart
       (P.toAlgHom b)
 ```
 
-**`Rig.free_localized_hzero_of_jacobianChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/JacobianChartPointwise.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/JacobianChartPointwise.lean#L411). The attribute's comment: “the proof of (4) ⟹ (2): H⁰(NL^∧) is finite free after inverting b_l”.
+**`Rig.free_localized_hzero_of_jacobianChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/JacobianChartPointwise.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Restricted/RigSmoothCriteria/JacobianChartPointwise.lean#L411). The attribute's comment: “the proof of (4) ⟹ (2): H⁰(NL^∧) is finite free after inverting b\_l”.
 
 > **Stacks 0GAJ, inside the proof of (4) ⟹ (2).**  Let `b` carry a Jacobian chart: a subset
 > `T` of `m` of the variables and `m` elements `f₁, …, fₘ` of the presentation ideal `J` whose

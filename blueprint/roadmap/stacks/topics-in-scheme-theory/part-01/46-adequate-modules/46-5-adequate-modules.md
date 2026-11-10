@@ -16,7 +16,7 @@ Section 46.5 of the Stacks Project, [Tag 06VF](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`Stacks.Adequate.IsAdequate`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/AdequateSheafOfModules.lean#L313), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/AdequateSheafOfModules.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/AdequateSheafOfModules.lean#L348) (StacksFrontier): “Section 46.5: a sheaf of 𝒪-modules on (Sch/S)_τ is adequate when its affine-section functors are adequate over the members of a τ-covering of S by affines”.
+- [`Stacks.Adequate.IsAdequate`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/AdequateSheafOfModules.lean#L313), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/AdequateSheafOfModules.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/AdequateSheafOfModules.lean#L348) (StacksFrontier): “Section 46.5: a sheaf of 𝒪-modules on (Sch/S)\_τ is adequate when its affine-section functors are adequate over the members of a τ-covering of S by affines”.
 
 ## Tag 06VG, a definition
 
@@ -64,7 +64,7 @@ public theorem isAdequate_affineSectionFunctor
 
 [Tag 06ZJ](https://stacks.math.columbia.edu/tag/06ZJ) in the Stacks Project.
 
-**`Stacks.Adequate.isEquivalence_adequateComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AffineEquivalence.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AffineEquivalence.lean#L78). The attribute's comment: “the equivalence itself: the comparison functor 𝓕 ↦ F_{𝓕, A} from adequate 𝒪-modules on (Sch/Spec A)_τ to adequate module-valued functors on the A-algebras of the site is an equivalence of categories, with no hypothesis, at the value universe u of the site. The functor is `Stacks.Adequate.adequateComparison`, which carries the tag for the functor alone; full faithfulness and essential surjectivity are `Stacks.Adequate.fullyFaithful_of_affineSectionsFunctor` and `Stacks.Adequate.essSurj_of_affineSectionsFunctor`, the latter being the quasi-inverse the source builds from an exact sequence 0 → F → M̲ → N̲”.
+**`Stacks.Adequate.isEquivalence_adequateComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AffineEquivalence.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AffineEquivalence.lean#L78). The attribute's comment: “the equivalence itself: the comparison functor 𝓕 ↦ F\_\{𝓕, A} from adequate 𝒪-modules on (Sch/Spec A)\_τ to adequate module-valued functors on the A-algebras of the site is an equivalence of categories, with no hypothesis, at the value universe u of the site. The functor is `Stacks.Adequate.adequateComparison`, which carries the tag for the functor alone; full faithfulness and essential surjectivity are `Stacks.Adequate.fullyFaithful_of_affineSectionsFunctor` and `Stacks.Adequate.essSurj_of_affineSectionsFunctor`, the latter being the quasi-inverse the source builds from an exact sequence 0 → F → M̲ → N̲”.
 
 > **[Stacks, Tag 06ZJ].** For `S = Spec A` affine, the comparison functor
 > `𝓕 ↦ F_{𝓕, A}` from the category `Adeq(𝒪)` of adequate `𝒪`-modules on `(Sch/S)_τ` to the
@@ -208,7 +208,7 @@ public abbrev adequate
 
 [Tag 06VM](https://stacks.math.columbia.edu/tag/06VM) in the Stacks Project.
 
-**`Stacks.Adequate.BigSite.isZero_rightDerived_sections_of_isAdequate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AffineCohomologyVanishingUnconditional.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AffineCohomologyVanishingUnconditional.lean#L141). The attribute's comment: “(3): for an adequate 𝒪-module F on (Sch/S)_τ and every affine scheme U over S, H^q(U, F) = 0 for all q > 0; cohomology is the right derived functor of sections over U of the abelian sheaf underlying F”.
+**`Stacks.Adequate.BigSite.isZero_rightDerived_sections_of_isAdequate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AffineCohomologyVanishingUnconditional.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AffineCohomologyVanishingUnconditional.lean#L141). The attribute's comment: “(3): for an adequate 𝒪-module F on (Sch/S)\_τ and every affine scheme U over S, H^q(U, F) = 0 for all q > 0; cohomology is the right derived functor of sections over U of the abelian sheaf underlying F”.
 
 > **[Stacks, Tag 06VM] (3).** Let `𝓕` be an adequate `𝒪`-module on a chosen big `τ`-site
 > `(Sch/S)_τ` over a scheme `S`. For every affine scheme `U` over `S` belonging to the site,
@@ -229,7 +229,7 @@ public theorem BigSite.isZero_rightDerived_sections_of_isAdequate (B : BigSite �
       ((SheafOfModules.toSheaf B.structureSheaf).obj F))
 ```
 
-**`Stacks.Adequate.BigSite.adequateCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/CohomologyComparison.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/CohomologyComparison.lean#L421). The attribute's comment: “(4): for an adequate 𝒪-module F on (Sch/S)_τ, the canonical isomorphism H^q(S, F|_{S_Zar}) = H^q((Sch/S)_τ, F) in every degree q, cohomology being the right derived functor of global sections”.
+**`Stacks.Adequate.BigSite.adequateCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/CohomologyComparison.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/CohomologyComparison.lean#L421). The attribute's comment: “(4): for an adequate 𝒪-module F on (Sch/S)\_τ, the canonical isomorphism H^q(S, F|\_\{S\_Zar}) = H^q((Sch/S)\_τ, F) in every degree q, cohomology being the right derived functor of global sections”.
 
 > **[Stacks, Tag 06VM] (4).** For an adequate `𝒪`-module `𝓕` on a chosen big `τ`-site
 > `(Sch/S)_τ` over a scheme `S`, the canonical isomorphism
@@ -250,7 +250,7 @@ public noncomputable def BigSite.adequateCohomologyIso (F : SheafOfModules.{u} B
       (B.globalSections.rightDerived q).obj ((SheafOfModules.toSheaf B.structureSheaf).obj F)
 ```
 
-**`Stacks.Adequate.BigSite.isIso_etaleRestrictionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/EtaleRestriction.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/EtaleRestriction.lean#L191). The attribute's comment: “(2), for the small étale site of any big étale site whose schemes are schemes of (Sch/S)_τ: the restriction F|_{S_étale} of an adequate 𝒪-module F is the quasi-coherent module associated to F|_{S_Zar}, the canonical map (F|_{S_Zar})^a → F|_{S_étale} being an isomorphism”.
+**`Stacks.Adequate.BigSite.isIso_etaleRestrictionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/EtaleRestriction.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/EtaleRestriction.lean#L191). The attribute's comment: “(2), for the small étale site of any big étale site whose schemes are schemes of (Sch/S)\_τ: the restriction F|\_\{S\_étale} of an adequate 𝒪-module F is the quasi-coherent module associated to F|\_\{S\_Zar}, the canonical map (F|\_\{S\_Zar})^a → F|\_\{S\_étale} being an isomorphism”.
 
 > **[Stacks, Tag 06VM] (2).** Let `𝓕` be an adequate `𝒪`-module on a chosen big `τ`-site
 > `(Sch/S)_τ` over a scheme `S`. The restriction `𝓕|_{S_étale}` of `𝓕` to the small étale site of
@@ -263,7 +263,7 @@ public theorem BigSite.isIso_etaleRestrictionComparison
     IsIso (B.etaleRestrictionComparison E hSE hle F hF)
 ```
 
-**`Stacks.Adequate.BigSite.isIso_etaleSiteRestrictionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/EtaleRestriction.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/EtaleRestriction.lean#L247). The attribute's comment: “(2): for an adequate 𝒪-module F on (Sch/S)_τ the restriction F|_{S_étale} to the small étale site of S is the quasi-coherent module associated to F|_{S_Zar}, the canonical map (F|_{S_Zar})^a → F|_{S_étale} being an isomorphism”.
+**`Stacks.Adequate.BigSite.isIso_etaleSiteRestrictionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/EtaleRestriction.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/EtaleRestriction.lean#L247). The attribute's comment: “(2): for an adequate 𝒪-module F on (Sch/S)\_τ the restriction F|\_\{S\_étale} to the small étale site of S is the quasi-coherent module associated to F|\_\{S\_Zar}, the canonical map (F|\_\{S\_Zar})^a → F|\_\{S\_étale} being an isomorphism”.
 
 > **[Stacks, Tag 06VM] (2) for the small étale site `S_étale` of `(Sch/S)_τ` itself.** Let `𝓕`
 > be an adequate `𝒪`-module on a chosen big `τ`-site `(Sch/S)_τ`, for any of the five
@@ -279,7 +279,7 @@ public theorem BigSite.isIso_etaleSiteRestrictionComparison
       F hF)
 ```
 
-**`Stacks.Adequate.BigSite.isQuasicoherent_zariskiRestrictModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ZariskiRestriction.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ZariskiRestriction.lean#L61). The attribute's comment: “(1): for an adequate 𝒪-module F on (Sch/S)_τ the restriction F|_{S_Zar} is a quasi-coherent 𝒪_S-module on the scheme S”.
+**`Stacks.Adequate.BigSite.isQuasicoherent_zariskiRestrictModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ZariskiRestriction.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ZariskiRestriction.lean#L61). The attribute's comment: “(1): for an adequate 𝒪-module F on (Sch/S)\_τ the restriction F|\_\{S\_Zar} is a quasi-coherent 𝒪\_S-module on the scheme S”.
 
 > **[Stacks, Tag 06VM] (1).** Let `𝓕` be an adequate `𝒪`-module on a chosen big `τ`-site
 > `(Sch/S)_τ` over a scheme `S`. The restriction `𝓕|_{S_Zar}` of `𝓕` to the small Zariski site of

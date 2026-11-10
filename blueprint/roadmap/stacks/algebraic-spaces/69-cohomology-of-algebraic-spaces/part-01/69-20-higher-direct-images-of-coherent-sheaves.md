@@ -14,7 +14,7 @@ Section 69.20 of the Stacks Project, [Tag 08AP](https://stacks.math.columbia.edu
 
 [Tag 08AQ](https://stacks.math.columbia.edu/tag/08AQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ProjectiveSpaceImmersion.twist`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProjectiveTwistHigherDirectImageVanishing.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProjectiveTwistHigherDirectImageVanishing.lean#L221). The attribute's comment: “the twist L = i^* O_{P^n_Y}(1) of the statement”.
+**`AlgebraicGeometry.Space.ProjectiveSpaceImmersion.twist`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProjectiveTwistHigherDirectImageVanishing.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProjectiveTwistHigherDirectImageVanishing.lean#L221). The attribute's comment: “the twist L = i^* O\_\{P^n\_Y}(1) of the statement”.
 
 > **The twist `L = i^* O_{P^n_Y}(1)` of Stacks 08AQ**: the inverse image of the hyperplane
 > sheaf of `P^n_S` along `X ⟶ P^n_Y ⟶ P^n_S`.

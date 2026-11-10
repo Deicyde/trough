@@ -157,7 +157,7 @@ public theorem isGeometricallyRegularAt_baseChange_iff
       IsGeometricallyRegularAt (pullback.snd f (Spec.map (ofHom (algebraMap k k')))) x'
 ```
 
-**`AlgebraicGeometry.isGeometricallyRegular_baseChange_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/RegularUpstairs.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/RegularUpstairs.lean#L249). The attribute's comment: “in particular: X geometrically regular over k iff X_{k'} is over k'”. References: EGA IV (7.3.10), “special case”; EGA IV (7.3.8), “partial”.
+**`AlgebraicGeometry.isGeometricallyRegular_baseChange_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/RegularUpstairs.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/RegularUpstairs.lean#L249). The attribute's comment: “in particular: X geometrically regular over k iff X\_\{k'} is over k'”. References: EGA IV (7.3.10), “special case”; EGA IV (7.3.8), “partial”.
 
 > **Stacks Project, Tag 038W, the consequence for schemes.** Let `k` be a field, `X` a scheme
 > over `k` and `k'/k` a finitely generated field extension. Then `X` is geometrically regular
@@ -222,7 +222,7 @@ public lemma isGeometricallyRegularAt_iff_smoothAt
 
 [Tag 038Y](https://stacks.math.columbia.edu/tag/038Y) in the Stacks Project.
 
-**`AlgebraicGeometry.curve_isVariety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/CuspidalCurve.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/CuspidalCurve.lean#L322). The attribute's comment: “geometrically_reduced_not_geometrically_normal”. References: EGA IV (6.7.5), “(i) X integral curve”.
+**`AlgebraicGeometry.curve_isVariety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/CuspidalCurve.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/CuspidalCurve.lean#L322). The attribute's comment: “geometrically\_reduced\_not\_geometrically\_normal”. References: EGA IV (6.7.5), “(i) X integral curve”.
 
 > **Stacks Project, Tag 038Y.** The curve is a variety over `𝔽ₚ(t)`.
 
@@ -231,7 +231,7 @@ theorem curve_isVariety (hp : 2 < p) :
     IsVariety (RatFunc (ZMod p)) (curveToBase p)
 ```
 
-**`AlgebraicGeometry.curve_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/CuspidalCurve.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/CuspidalCurve.lean#L336). The attribute's comment: “geometrically_reduced_not_geometrically_normal”. References: EGA IV (6.7.5), “(i) X regular”.
+**`AlgebraicGeometry.curve_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/CuspidalCurve.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/CuspidalCurve.lean#L336). The attribute's comment: “geometrically\_reduced\_not\_geometrically\_normal”. References: EGA IV (6.7.5), “(i) X regular”.
 
 > **Stacks Project, Tag 038Y.** The curve is regular.
 
@@ -240,7 +240,7 @@ theorem curve_isRegular (_hp : 2 < p) :
     IsRegular (curve p)
 ```
 
-**`AlgebraicGeometry.curve_geometricallyReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/CuspidalCurve.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/CuspidalCurve.lean#L348). The attribute's comment: “geometrically_reduced_not_geometrically_normal”. References: EGA IV (6.7.5), “(i) X geom. integral”.
+**`AlgebraicGeometry.curve_geometricallyReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/CuspidalCurve.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/CuspidalCurve.lean#L348). The attribute's comment: “geometrically\_reduced\_not\_geometrically\_normal”. References: EGA IV (6.7.5), “(i) X geom. integral”.
 
 > **Stacks Project, Tag 038Y.** The curve is geometrically reduced.
 
@@ -249,7 +249,7 @@ theorem curve_geometricallyReduced (hp : 2 < p) :
     GeometricallyReduced (curveToBase p)
 ```
 
-**`AlgebraicGeometry.curve_not_isGeometricallyNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/CuspidalCurve.lean, line 448](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/CuspidalCurve.lean#L448). The attribute's comment: “geometrically_reduced_not_geometrically_normal”.
+**`AlgebraicGeometry.curve_not_isGeometricallyNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/CuspidalCurve.lean, line 448](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/CuspidalCurve.lean#L448). The attribute's comment: “geometrically\_reduced\_not\_geometrically\_normal”.
 
 > **Stacks Project, Tag 038Y.** The curve is not geometrically normal.
 
@@ -258,7 +258,7 @@ theorem curve_not_isGeometricallyNormal (hp : 2 < p) :
     ¬ IsGeometricallyNormal (curveToBase p)
 ```
 
-**`AlgebraicGeometry.hypersurface_isVariety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/InseparableHypersurface.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/InseparableHypersurface.lean#L114). The attribute's comment: “regular_not_geometrically_reduced”.
+**`AlgebraicGeometry.hypersurface_isVariety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/InseparableHypersurface.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/InseparableHypersurface.lean#L114). The attribute's comment: “regular\_not\_geometrically\_reduced”.
 
 > **Stacks Project, Tag 038Y.** The hypersurface is a variety over `𝔽ₚ(t)`.
 
@@ -267,7 +267,7 @@ theorem hypersurface_isVariety :
     IsVariety (RatFunc (ZMod p)) (hypersurfaceToBase p)
 ```
 
-**`AlgebraicGeometry.hypersurface_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/InseparableHypersurface.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/InseparableHypersurface.lean#L127). The attribute's comment: “regular_not_geometrically_reduced”.
+**`AlgebraicGeometry.hypersurface_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/InseparableHypersurface.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/InseparableHypersurface.lean#L127). The attribute's comment: “regular\_not\_geometrically\_reduced”.
 
 > **Stacks Project, Tag 038Y.** The hypersurface is regular.
 
@@ -276,7 +276,7 @@ theorem hypersurface_isRegular :
     IsRegular (hypersurface p)
 ```
 
-**`AlgebraicGeometry.hypersurface_not_geometricallyReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/InseparableHypersurface.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/InseparableHypersurface.lean#L141). The attribute's comment: “regular_not_geometrically_reduced”.
+**`AlgebraicGeometry.hypersurface_not_geometricallyReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/InseparableHypersurface.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/InseparableHypersurface.lean#L141). The attribute's comment: “regular\_not\_geometrically\_reduced”.
 
 > **Stacks Project, Tag 038Y.** The hypersurface is not geometrically reduced.
 

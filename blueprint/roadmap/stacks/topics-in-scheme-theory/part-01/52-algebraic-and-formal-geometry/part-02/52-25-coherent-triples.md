@@ -169,7 +169,7 @@ public theorem exists_polynomial_natDegree_le_of_forall_sub_eq {g : ℤ → ℤ}
 
 > **The twists of a coherent triple by the nonnegative tensor powers of an invertible coherent
 > triple.** The zeroth twist is the triple itself and each further one is the tensor product of the
-> previous one with the invertible triple, so the `n`-th is `(F ⊗ L^{⊗ n}, F₀ ⊗ L₀^{⊗ n}, α ⊗ λ^{⊗
+> previous one with the invertible triple, so the `n`-th is `(F ⊗ L^\{⊗ n}, F₀ ⊗ L₀^\{⊗ n}, α ⊗ λ^\{⊗
 > n})` up to the associativity of the tensor product. This is the family whose Euler
 > characteristics [Stacks, Tag 0F27] asserts to be given by a polynomial.
 

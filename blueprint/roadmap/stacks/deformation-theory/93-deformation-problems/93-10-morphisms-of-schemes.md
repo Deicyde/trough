@@ -14,7 +14,7 @@ Section 93.10 of the Stacks Project, [Tag 0E3S](https://stacks.math.columbia.edu
 
 [Tag 0E3T](https://stacks.math.columbia.edu/tag/0E3T) in the Stacks Project.
 
-**`Deformation.Examples.SchemeMorphismFamily`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphisms.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphisms.lean#L68). The attribute's comment: “deformation_category_of_a_scheme_morphism”.
+**`Deformation.Examples.SchemeMorphismFamily`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphisms.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphisms.lean#L68). The attribute's comment: “deformation\_category\_of\_a\_scheme\_morphism”.
 
 > A flat family of morphisms of schemes over an object of `𝒞_Λ`.
 
@@ -23,7 +23,7 @@ structure SchemeMorphismFamily (Λ : Type u) (k : Type v) [CommRing Λ] [Field k
     [Algebra Λ k]
 ```
 
-**`Deformation.Examples.SchemeMorphismFamily.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphisms.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphisms.lean#L94). The attribute's comment: “deformation_category_of_a_scheme_morphism”.
+**`Deformation.Examples.SchemeMorphismFamily.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphisms.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphisms.lean#L94). The attribute's comment: “deformation\_category\_of\_a\_scheme\_morphism”.
 
 > A cartesian morphism of flat families of morphisms of schemes, directed covariantly on the
 > bases.
@@ -32,7 +32,7 @@ structure SchemeMorphismFamily (Λ : Type u) (k : Type v) [CommRing Λ] [Field k
 structure Hom (P Q : SchemeMorphismFamily.{u, v} Λ k)
 ```
 
-**`Deformation.Examples.schemeMorphismFamilyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphisms.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphisms.lean#L133). The attribute's comment: “deformation_category_of_a_scheme_morphism”.
+**`Deformation.Examples.schemeMorphismFamilyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphisms.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphisms.lean#L133). The attribute's comment: “deformation\_category\_of\_a\_scheme\_morphism”.
 
 > The functor sending a flat family of morphisms of schemes to its object of `𝒞_Λ`.
 
@@ -41,7 +41,7 @@ def schemeMorphismFamilyFunctor :
     SchemeMorphismFamily.{u, v} Λ k ⥤ ArtinianLocalAlgCat.{u, v, v} Λ k
 ```
 
-**`Deformation.Examples.schemeMorphismDeformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphisms.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphisms.lean#L183). The attribute's comment: “deformation_category_of_a_scheme_morphism”.
+**`Deformation.Examples.schemeMorphismDeformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphisms.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphisms.lean#L183). The attribute's comment: “deformation\_category\_of\_a\_scheme\_morphism”.
 
 > Deformations of a fixed morphism of schemes over the residue field.
 
@@ -67,7 +67,7 @@ theorem schemeMorphismFamilyFunctor_cofiberedInGroupoids
 
 [Tag 0E3U](https://stacks.math.columbia.edu/tag/0E3U) in the Stacks Project.
 
-**`Deformation.Examples.isDeformationCategory_schemeMorphismDeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsRimSchlessinger.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsRimSchlessinger.lean#L101). The attribute's comment: “the in-particular assertion only: granting (RS) for Example 0E3T as the hypothesis hRS, the deformation category Def_{X ⟶ Y} of a morphism of schemes X ⟶ Y over k is a deformation category. (RS) for Example 0E3T itself is NOT proved here”.
+**`Deformation.Examples.isDeformationCategory_schemeMorphismDeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsRimSchlessinger.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsRimSchlessinger.lean#L101). The attribute's comment: “the in-particular assertion only: granting (RS) for Example 0E3T as the hypothesis hRS, the deformation category Def\_\{X ⟶ Y} of a morphism of schemes X ⟶ Y over k is a deformation category. (RS) for Example 0E3T itself is NOT proved here”.
 
 > The second assertion of Stacks Tag 0E3U. Granting the Rim-Schlessinger condition for the
 > category of all flat families of morphisms of schemes over `𝒞_Λ`, the deformation category of
@@ -84,7 +84,7 @@ theorem isDeformationCategory_schemeMorphismDeformationCategory
     IsDeformationCategory (schemeMorphismDeformationCategoryProjection f pX pY hf)
 ```
 
-**`Deformation.Examples.satisfiesRS_schemeMorphismFamilyFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsRimSchlessingerSquares.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsRimSchlessingerSquares.lean#L183). The attribute's comment: “condition (RS) for the category of all flat families of morphisms of schemes of Example 0E3T -- the first assertion -- with nothing assumed. The two gluing facts it rests on are the last assertion of Tag 07RV and the equivalence assertion of the closing paragraph of Tag 07RX, both proved in this repository: Stacks.Pushout.isPullback_of_isPushout_glued and Stacks.Pushout.isPushout_restrictions_of_flat. The pushout of spectra, the existence of the glued family, the flatness of its two structure morphisms and both halves of the universal property are proved as well. The in-particular assertion, that the deformation category of a fixed morphism of schemes over k is a deformation category, is Deformation.Examples.isDeformationCategory_schemeMorphismDeformationCategoryProjection”.
+**`Deformation.Examples.satisfiesRS_schemeMorphismFamilyFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsRimSchlessingerSquares.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsRimSchlessingerSquares.lean#L183). The attribute's comment: “condition (RS) for the category of all flat families of morphisms of schemes of Example 0E3T -- the first assertion -- with nothing assumed. The two gluing facts it rests on are the last assertion of Tag 07RV and the equivalence assertion of the closing paragraph of Tag 07RX, both proved in this repository: Stacks.Pushout.isPullback\_of\_isPushout\_glued and Stacks.Pushout.isPushout\_restrictions\_of\_flat. The pushout of spectra, the existence of the glued family, the flatness of its two structure morphisms and both halves of the universal property are proved as well. The in-particular assertion, that the deformation category of a fixed morphism of schemes over k is a deformation category, is Deformation.Examples.isDeformationCategory\_schemeMorphismDeformationCategoryProjection”.
 
 > **Stacks Project, Tag 0E3U, first assertion.**  The category of flat families of morphisms
 > of schemes over `𝒞_Λ` of Example 0E3T satisfies the Rim-Schlessinger condition (RS), with no
@@ -100,7 +100,7 @@ theorem satisfiesRS_schemeMorphismFamilyFunctor :
     SatisfiesRS (schemeMorphismFamilyFunctor.{u, v} (Λ := Λ) (k := k))
 ```
 
-**`Deformation.Examples.isDeformationCategory_schemeMorphismDeformationCategoryProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsRimSchlessingerUnconditional.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsRimSchlessingerUnconditional.lean#L73). The attribute's comment: “the in-particular assertion, with nothing assumed: the deformation category Def_{X ⟶ Y} of a morphism of schemes X ⟶ Y over k is a deformation category, by the localization argument of Tag 06JC. Condition (RS) for the category of all flat families of morphisms of schemes of Example 0E3T -- the first assertion -- is Deformation.Examples.satisfiesRS_schemeMorphismFamilyFunctor, proved by gluing the sources and the targets over one cocartesian square of spectra”.
+**`Deformation.Examples.isDeformationCategory_schemeMorphismDeformationCategoryProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsRimSchlessingerUnconditional.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsRimSchlessingerUnconditional.lean#L73). The attribute's comment: “the in-particular assertion, with nothing assumed: the deformation category Def\_\{X ⟶ Y} of a morphism of schemes X ⟶ Y over k is a deformation category, by the localization argument of Tag 06JC. Condition (RS) for the category of all flat families of morphisms of schemes of Example 0E3T -- the first assertion -- is Deformation.Examples.satisfiesRS\_schemeMorphismFamilyFunctor, proved by gluing the sources and the targets over one cocartesian square of spectra”.
 
 > **Stacks Project, Tag 0E3U, second assertion.** The deformation category of a fixed morphism
 > `X ⟶ Y` of schemes over the residue field is a deformation category: a predeformation category
@@ -122,7 +122,7 @@ theorem isDeformationCategory_schemeMorphismDeformationCategoryProjection {X Y :
 
 [Tag 0E3V](https://stacks.math.columbia.edu/tag/0E3V) in the Stacks Project.
 
-**`Deformation.Examples.schemeMorphismTargetForgetful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean#L124). The attribute's comment: “the target-forgetting functor Def_{X ⟶ Y} ⟶ Def_Y, one half of the morphism of deformation categories Def_{X ⟶ Y} ⟶ Def_X × Def_Y of the source's proof”.
+**`Deformation.Examples.schemeMorphismTargetForgetful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean#L124). The attribute's comment: “the target-forgetting functor Def\_\{X ⟶ Y} ⟶ Def\_Y, one half of the morphism of deformation categories Def\_\{X ⟶ Y} ⟶ Def\_X × Def\_Y of the source's proof”.
 
 > The functor from deformations of a morphism `f : X ⟶ Y` of schemes over the residue field
 > to deformations of its target `Y`, keeping the family that deforms `Y` together with its
@@ -147,7 +147,7 @@ theorem schemeMorphismTargetForgetful_comp_projection :
       schemeMorphismDeformationCategoryProjection f pX pY hf
 ```
 
-**`Deformation.Examples.schemeMorphismSourceBased`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean#L203). The attribute's comment: “the source component of the morphism Def_{X → Y} → Def_X × Def_Y”.
+**`Deformation.Examples.schemeMorphismSourceBased`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean#L203). The attribute's comment: “the source component of the morphism Def\_\{X → Y} → Def\_X × Def\_Y”.
 
 > The source-forgetful functor `Def_{X ⟶ Y} ⟶ Def_X`, as a morphism of categories over
 > `𝒞_Λ`.
@@ -159,7 +159,7 @@ def schemeMorphismSourceBased :
         (schemeDeformationCategoryProjection (Λ := Λ) (k := k) (Over.mk pX))
 ```
 
-**`Deformation.Examples.schemeMorphismTargetBased`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean#L213). The attribute's comment: “the target component of the morphism Def_{X → Y} → Def_X × Def_Y”.
+**`Deformation.Examples.schemeMorphismTargetBased`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean#L213). The attribute's comment: “the target component of the morphism Def\_\{X → Y} → Def\_X × Def\_Y”.
 
 > The target-forgetful functor `Def_{X ⟶ Y} ⟶ Def_Y`, as a morphism of categories over
 > `𝒞_Λ`.
@@ -171,7 +171,7 @@ def schemeMorphismTargetBased :
         (schemeDeformationCategoryProjection (Λ := Λ) (k := k) (Over.mk pY))
 ```
 
-**`Deformation.Examples.schemeMorphismInfinitesimalPair`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean#L227). The attribute's comment: “the arrow Inf(Def_{X → Y}) → Inf(Def_X × Def_Y), as the pair of the maps induced on infinitesimal automorphisms by the two endpoint-forgetting 1-morphisms”.
+**`Deformation.Examples.schemeMorphismInfinitesimalPair`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean#L227). The attribute's comment: “the arrow Inf(Def\_\{X → Y}) → Inf(Def\_X × Def\_Y), as the pair of the maps induced on infinitesimal automorphisms by the two endpoint-forgetting 1-morphisms”.
 
 > **Stacks 0E3V**, the arrow `Inf(Def_{X ⟶ Y}) → Inf(Def_X × Def_Y)`: the pair of the
 > `k`-linear maps on infinitesimal automorphisms induced by the two endpoint-forgetting morphisms
@@ -200,7 +200,7 @@ def schemeMorphismInfinitesimalPair
       localizedAutomorphismFunctorTangent QX × localizedAutomorphismFunctorTangent QY
 ```
 
-**`Deformation.Examples.injective_schemeMorphismInfinitesimalPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean#L266). The attribute's comment: “exactness at the first spot: the arrow Inf(Def_{X → Y}) → Inf(Def_X × Def_Y) is injective”.
+**`Deformation.Examples.injective_schemeMorphismInfinitesimalPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean#L266). The attribute's comment: “exactness at the first spot: the arrow Inf(Def\_\{X → Y}) → Inf(Def\_X × Def\_Y) is injective”.
 
 > **Stacks 0E3V, exactness at the first spot.** The arrow
 > `Inf(Def_{X ⟶ Y}) → Inf(Def_X × Def_Y)` is injective, so the sequence
@@ -230,7 +230,7 @@ theorem injective_schemeMorphismInfinitesimalPair
     Function.Injective (schemeMorphismInfinitesimalPair f pX pY hf hM hX hY PM QX QY)
 ```
 
-**`Deformation.Examples.schemeMorphismTangentPair`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean#L296). The attribute's comment: “the arrow T Def_{X → Y} → T(Def_X × Def_Y), as the pair of the maps induced on tangent modules by the two endpoint-forgetting 1-morphisms”.
+**`Deformation.Examples.schemeMorphismTangentPair`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean#L296). The attribute's comment: “the arrow T Def\_\{X → Y} → T(Def\_X × Def\_Y), as the pair of the maps induced on tangent modules by the two endpoint-forgetting 1-morphisms”.
 
 > **Stacks 0E3V**, the arrow `T Def_{X ⟶ Y} → T(Def_X × Def_Y)`: the pair of the `k`-linear
 > maps on tangent modules induced by the two endpoint-forgetting morphisms of deformation
@@ -254,7 +254,7 @@ def schemeMorphismTangentPair
           (schemeDeformationCategoryProjection (Λ := Λ) (k := k) (Over.mk pY))) hY M)
 ```
 
-**`Deformation.Examples.exists_schemeMorphismTangentPair_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean#L357). The attribute's comment: “the image of the arrow T Def_{X → Y} → T(Def_X × Def_Y): a pair of first-order deformations of X and of Y is hit exactly when f deforms along it. The identification of the obstruction with a class in Ext^1(Lf^* NL_{Y/k}, O_X) is NOT proved”.
+**`Deformation.Examples.exists_schemeMorphismTangentPair_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean#L357). The attribute's comment: “the image of the arrow T Def\_\{X → Y} → T(Def\_X × Def\_Y): a pair of first-order deformations of X and of Y is hit exactly when f deforms along it. The identification of the obstruction with a class in Ext^1(Lf^* NL\_\{Y/k}, O\_X) is NOT proved”.
 
 > **Stacks 0E3V**, the image of the arrow `T Def_{X ⟶ Y} → T(Def_X × Def_Y)`. A pair of
 > first-order deformations `X_ε` of `X` and `Y_ε` of `Y` is in the image exactly when `f` deforms
@@ -289,7 +289,7 @@ theorem exists_schemeMorphismTangentPair_eq_iff
             ((squareZeroExtensionArtinian.{u, u, u} Λ k).obj M)).obj mε) yε
 ```
 
-**`Deformation.Examples.schemeMorphismDeformation_endpointArrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean#L421). The attribute's comment: “PARTIAL. Of the six-term exact sequence this establishes: the arrow Inf(Def_{X → Y}) → Inf(Def_X × Def_Y) and the arrow T Def_{X → Y} → T(Def_X × Def_Y), both as the pairs of the maps induced by the source- and target-forgetting 1-morphisms Def_{X → Y} → Def_X and Def_{X → Y} → Def_Y; exactness at the FIRST spot, i.e. exactness of 0 → Inf(Def_{X → Y}) → Inf(Def_X × Def_Y); and the description of the IMAGE of T Def_{X → Y} → T(Def_X × Def_Y) as the pairs of first-order deformations of X and Y along which f deforms. NOT established: the terms Der_k(O_Y, f_*O_X) and Ext^1(Lf^* NL_{Y/k}, O_X), the three arrows Inf(Def_X × Def_Y) → Der_k(O_Y, f_*O_X), Der_k(O_Y, f_*O_X) → T Def_{X → Y} and T(Def_X × Def_Y) → Ext^1(Lf^* NL_{Y/k}, O_X), and exactness at the second, third and fourth spots. Hypotheses carried rather than proved: condition (RS) for Example 0E3T, and that Def_X and Def_Y are deformation categories”.
+**`Deformation.Examples.schemeMorphismDeformation_endpointArrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismEndpoints.lean#L421). The attribute's comment: “PARTIAL. Of the six-term exact sequence this establishes: the arrow Inf(Def\_\{X → Y}) → Inf(Def\_X × Def\_Y) and the arrow T Def\_\{X → Y} → T(Def\_X × Def\_Y), both as the pairs of the maps induced by the source- and target-forgetting 1-morphisms Def\_\{X → Y} → Def\_X and Def\_\{X → Y} → Def\_Y; exactness at the FIRST spot, i.e. exactness of 0 → Inf(Def\_\{X → Y}) → Inf(Def\_X × Def\_Y); and the description of the IMAGE of T Def\_\{X → Y} → T(Def\_X × Def\_Y) as the pairs of first-order deformations of X and Y along which f deforms. NOT established: the terms Der\_k(O\_Y, f\_*O\_X) and Ext^1(Lf^* NL\_\{Y/k}, O\_X), the three arrows Inf(Def\_X × Def\_Y) → Der\_k(O\_Y, f\_*O\_X), Der\_k(O\_Y, f\_*O\_X) → T Def\_\{X → Y} and T(Def\_X × Def\_Y) → Ext^1(Lf^* NL\_\{Y/k}, O\_X), and exactness at the second, third and fourth spots. Hypotheses carried rather than proved: condition (RS) for Example 0E3T, and that Def\_X and Def\_Y are deformation categories”.
 
 > **Stacks 0E3V, the part of the six-term exact sequence that this file establishes.**
 >
@@ -358,7 +358,7 @@ theorem schemeMorphismDeformation_endpointArrows
                 ((squareZeroExtensionArtinian.{u, u, u} Λ k).obj M)).obj mε) yε
 ```
 
-**`Deformation.Examples.schemeMorphismDeformation_sixTermExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismSixTermExact.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismSixTermExact.lean#L234). The attribute's comment: “the canonical exact sequence of k-vector spaces 0 -> Inf(Def_{X -> Y}) -> Inf(Def_X x Def_Y) -> Der_k(O_Y, f_*O_X) -> T Def_{X -> Y} -> T(Def_X x Def_Y) -> Ext^1_{O_X}(Lf^* NL_{Y/k}, O_X) for a morphism of schemes f : X -> Y over k: its five k-linear maps and exactness at all five spots”.
+**`Deformation.Examples.schemeMorphismDeformation_sixTermExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismSixTermExact.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismSixTermExact.lean#L234). The attribute's comment: “the canonical exact sequence of k-vector spaces 0 -> Inf(Def\_\{X -> Y}) -> Inf(Def\_X x Def\_Y) -> Der\_k(O\_Y, f\_*O\_X) -> T Def\_\{X -> Y} -> T(Def\_X x Def\_Y) -> Ext^1\_\{O\_X}(Lf^* NL\_\{Y/k}, O\_X) for a morphism of schemes f : X -> Y over k: its five k-linear maps and exactness at all five spots”.
 
 > Let `f : X → Y` be a morphism of schemes over `k` (Example 0DY7). There is a canonical exact
 > sequence of `k`-vector spaces
@@ -375,8 +375,8 @@ theorem schemeMorphismDeformation_endpointArrows
 > (`Ext¹_{𝒪_X}(Lf^*NL_{Y/k}, 𝒪_X)`), each with its `k`-vector space structure. The products are
 > the source's `Def_X × Def_Y`: for the 2-fibre product `schemeEndpointsProduct pX pY` over `𝒞_Λ`
 > (a deformation category, `isDeformationCategory_schemeEndpointsProduct`), the projections induce
-> `k`-linear equivalences `schemeEndpointsProductInfEquiv` (`Inf(Def_X × Def_Y) ≃ Inf(Def_X) ×
-> Inf(Def_Y)`) and `schemeEndpointsProductTangentEquiv` (`T(Def_X × Def_Y) ≃ T Def_X × T Def_Y`),
+> `k`-linear equivalences `schemeEndpointsProductInfEquiv` (`Inf(Def\_X × Def\_Y) ≃ Inf(Def\_X) ×
+> Inf(Def\_Y)`) and `schemeEndpointsProductTangentEquiv` (`T(Def\_X × Def\_Y) ≃ T Def\_X × T Def\_Y`),
 > and the arrows `a` and `d` below are the maps induced by `Def_{X → Y} → Def_X × Def_Y`
 > (`schemeMorphismEndpointsBased`) followed by these equivalences
 > (`schemeMorphismInfinitesimalPair'_canonical_eq`, `schemeMorphismTangentPair'_eq`).
@@ -432,7 +432,7 @@ theorem schemeMorphismDeformation_sixTermExact :
 
 [Tag 0E3W](https://stacks.math.columbia.edu/tag/0E3W) in the Stacks Project.
 
-**`Deformation.Examples.isFiniteDimensionalDeformationCategory_schemeMorphismDeformationCategoryProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsFiniteDimensional.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsFiniteDimensional.lean#L87). The attribute's comment: “for a morphism f : X -> Y of schemes over k with X and Y both proper over k, Inf(Def_{X -> Y}) and T Def_{X -> Y} are finite dimensional; stated as condition (4) of Deformation.IsFiniteDimensionalDeformationCategory: the tangent space, and the infinitesimal automorphisms at every point over k and every choice of pushforwards, are finite dimensional”.
+**`Deformation.Examples.isFiniteDimensionalDeformationCategory_schemeMorphismDeformationCategoryProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsFiniteDimensional.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsFiniteDimensional.lean#L87). The attribute's comment: “for a morphism f : X -> Y of schemes over k with X and Y both proper over k, Inf(Def\_\{X -> Y}) and T Def\_\{X -> Y} are finite dimensional; stated as condition (4) of Deformation.IsFiniteDimensionalDeformationCategory: the tangent space, and the infinitesimal automorphisms at every point over k and every choice of pushforwards, are finite dimensional”.
 
 > **Stacks Project, Tag 0E3W.** In the setting of Tag 0E3V — a morphism `f : X → Y` of schemes
 > over the field `k` — if `X` and `Y` are both proper over `k`, then `Inf(Def_{X → Y})` and
@@ -455,7 +455,7 @@ theorem isFiniteDimensionalDeformationCategory_schemeMorphismDeformationCategory
 
 [Tag 0ET6](https://stacks.math.columbia.edu/tag/0ET6) in the Stacks Project.
 
-**`Deformation.Examples.exists_hull_schemeMorphismIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsHull.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsHull.lean#L120). The attribute's comment: “the functor of isomorphism classes of Def_{X -> Y} has a hull”. References: SGA 7 VI (4.9), “(a)”.
+**`Deformation.Examples.exists_hull_schemeMorphismIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsHull.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsHull.lean#L120). The attribute's comment: “the functor of isomorphism classes of Def\_\{X -> Y} has a hull”. References: SGA 7 VI (4.9), “(a)”.
 
 > **Stacks 0ET6, the hull.** Let `Λ` be a complete local ring with residue field `k` and let
 > `f : X ⟶ Y` be a morphism of proper `k`-schemes. Then the functor
@@ -473,7 +473,7 @@ theorem exists_hull_schemeMorphismIsomorphismClasses (hΛ : IsClassical Λ k)
       IsHull (categoryOfElements_projection_isCofibered G) ξ
 ```
 
-**`Deformation.Examples.isProrepresentableULift_schemeMorphismIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsHull.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsHull.lean#L139). The attribute's comment: “if Der_k(O_X, O_X) = Der_k(O_Y, O_Y) = 0, the functor of isomorphism classes of Def_{X -> Y} is prorepresentable”.
+**`Deformation.Examples.isProrepresentableULift_schemeMorphismIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsHull.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeMorphismsHull.lean#L139). The attribute's comment: “if Der\_k(O\_X, O\_X) = Der\_k(O\_Y, O\_Y) = 0, the functor of isomorphism classes of Def\_\{X -> Y} is prorepresentable”.
 
 > **Stacks 0ET6, prorepresentability.** Let `Λ` be a complete local ring with residue field
 > `k` and let `f : X ⟶ Y` be a morphism of proper `k`-schemes with

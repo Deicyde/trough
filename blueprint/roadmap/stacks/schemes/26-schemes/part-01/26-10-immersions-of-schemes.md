@@ -14,7 +14,7 @@ Section 26.10 of the Stacks Project, [Tag 01IM](https://stacks.math.columbia.edu
 
 [Tag 01IN](https://stacks.math.columbia.edu/tag/01IN) in the Stacks Project.
 
-**`Stacks.ClosedImmersion.exists_ideal_iso_quotient_of_isAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/ClosedSubspaceScheme.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/ClosedSubspaceScheme.lean#L114). The attribute's comment: “affine_local_quotient”.
+**`Stacks.ClosedImmersion.exists_ideal_iso_quotient_of_isAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/ClosedSubspaceScheme.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/ClosedSubspaceScheme.lean#L114). The attribute's comment: “affine\_local\_quotient”.
 
 > Over an affine open `U` of a scheme `X`, a closed immersion of locally ringed spaces
 > `i : Z ⟶ X` is, compatibly with the canonical presentation of `U` as `Spec Γ(X, U)`, the spectrum
@@ -30,7 +30,7 @@ theorem exists_ideal_iso_quotient_of_isAffineOpen (X : Scheme.{u}) (Z : LocallyR
         e.hom ≫ (Spec.map (CommRingCat.ofHom (Ideal.Quotient.mk I))).toLRSHom
 ```
 
-**`Stacks.ClosedImmersion.exists_scheme_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/ClosedSubspaceScheme.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/ClosedSubspaceScheme.lean#L134). The attribute's comment: “source_is_scheme”.
+**`Stacks.ClosedImmersion.exists_scheme_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/ClosedSubspaceScheme.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/ClosedSubspaceScheme.lean#L134). The attribute's comment: “source\_is\_scheme”.
 
 > The source of a closed immersion of locally ringed spaces into a scheme carries a scheme
 > structure.
@@ -41,7 +41,7 @@ theorem exists_scheme_of_isClosedImmersion (X : Scheme.{u}) (Z : LocallyRingedSp
     ∃ Z' : Scheme.{u}, Z'.toLocallyRingedSpace = Z
 ```
 
-**`Stacks.ClosedImmersion.exists_scheme_of_closedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/ClosedSubspaceScheme.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/ClosedSubspaceScheme.lean#L195). The attribute's comment: “closed_subspace_is_scheme”.
+**`Stacks.ClosedImmersion.exists_scheme_of_closedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/ClosedSubspaceScheme.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/ClosedSubspaceScheme.lean#L195). The attribute's comment: “closed\_subspace\_is\_scheme”.
 
 > The closed subspace of a scheme cut out by a locally generated ideal sheaf carries a scheme
 > structure on its underlying locally ringed space.
@@ -55,7 +55,7 @@ theorem exists_scheme_of_closedSubspace (X : Scheme.{u})
       (closedSubspace X.toLocallyRingedSpace J j hJ).space
 ```
 
-**`Stacks.ClosedImmersion.exists_ideal_idealSheaf_restrict_iso_tilde_of_locallyRingedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/IdealSheafAffineOpen.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/IdealSheafAffineOpen.lean#L264). The attribute's comment: “kernel_on_affine_open”.
+**`Stacks.ClosedImmersion.exists_ideal_idealSheaf_restrict_iso_tilde_of_locallyRingedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/IdealSheafAffineOpen.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/IdealSheafAffineOpen.lean#L264). The attribute's comment: “kernel\_on\_affine\_open”.
 
 > The affine-local description of the ideal sheaf for a closed immersion of locally ringed
 > spaces `i : Z ⟶ X` into a scheme: over an affine open `U = Spec R` of `X` there is an ideal
@@ -86,7 +86,7 @@ theorem exists_ideal_idealSheaf_restrict_iso_tilde_of_locallyRingedSpace (X : Sc
               (Scheme.Modules.restrictUnitIso U.ι).hom
 ```
 
-**`Stacks.ClosedImmersion.isQuasicoherent_idealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/IdealSheafQuasicoherent.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/IdealSheafQuasicoherent.lean#L53). The attribute's comment: “kernel_quasi_coherent”.
+**`Stacks.ClosedImmersion.isQuasicoherent_idealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/IdealSheafQuasicoherent.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/IdealSheafQuasicoherent.lean#L53). The attribute's comment: “kernel\_quasi\_coherent”.
 
 > **Stacks Project, Tag 01IN.** The kernel of `𝒪_X ⟶ i_* 𝒪_Z` for a closed immersion of
 > locally ringed spaces `i : Z ⟶ X` into a scheme is a quasi-coherent sheaf of ideals.
@@ -97,7 +97,7 @@ theorem isQuasicoherent_idealSheaf (X : Scheme.{u}) (Z : LocallyRingedSpace.{u})
     (idealSheaf i.toShHom).IsQuasicoherent
 ```
 
-**`Stacks.ClosedImmersion.isQuasicoherent_iff_localGenerators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/IdealSheafQuasicoherent.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/IdealSheafQuasicoherent.lean#L66). The attribute's comment: “ideal_quasi_coherent_iff_locally_generated”.
+**`Stacks.ClosedImmersion.isQuasicoherent_iff_localGenerators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/IdealSheafQuasicoherent.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/IdealSheafQuasicoherent.lean#L66). The attribute's comment: “ideal\_quasi\_coherent\_iff\_locally\_generated”.
 
 > **Stacks Project, Tag 01IN.** A sheaf of ideals on a scheme is locally generated by sections
 > if and only if it is quasi-coherent.
@@ -122,7 +122,7 @@ Declarations registered for the tag:
 - [`AlgebraicGeometry.IsClosedImmersion`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsClosedImmersion#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Basic.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Basic.lean#L68) (StacksFrontier): “part (3): closed immersions”. References: EGA I (4.2.1); SGA 3 IV (4.7).
 - [`AlgebraicGeometry.Scheme.IdealSheafData`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.IdealSheafData#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Basic.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Basic.lean#L71) (StacksFrontier): “part (4): ideal sheaves”.
 - [`AlgebraicGeometry.Scheme.IdealSheafData.subscheme`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.IdealSheafData.subscheme#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Basic.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Basic.lean#L72) (StacksFrontier): “part (4): closed subscheme”. References: EGA I (10.14.2), “partial”; EGA I (4.1.2); EGA I (4.1.3); EGA I (5.1.9), “more general”; EGA II (4.6.15), “more general”; EGA II (8.13.4); EGA III (5.3.5); EGA IV (21.15.3.3), “more general”; EGA IV (21.2.12), “more general”; EGA IV (21.6.5); EGA IV (4.5.3), “partial”; SGA 3 III (4.5.0).
-- [`AlgebraicGeometry.Scheme.IdealSheafData.subschemeι`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.IdealSheafData.subschemeι#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Basic.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Basic.lean#L85) (StacksFrontier): “part (4): inclusion”. References: EGA I (4.1.7), “special case”; EGA I (5.1.9), “more general”; EGA II (4.6.15), “more general”; EGA II (8.13.4); EGA III (4.1.3), “canonical immersion i_k”; EGA IV (21.15.3.3), “more general”; EGA IV (21.2.12), “more general”; EGA IV (21.6.5); SGA 1 III (7.1), “partial”; SGA 3 III (4.5.0).
+- [`AlgebraicGeometry.Scheme.IdealSheafData.subschemeι`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.IdealSheafData.subschemeι#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Basic.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Basic.lean#L85) (StacksFrontier): “part (4): inclusion”. References: EGA I (4.1.7), “special case”; EGA I (5.1.9), “more general”; EGA II (4.6.15), “more general”; EGA II (8.13.4); EGA III (4.1.3), “canonical immersion i\_k”; EGA IV (21.15.3.3), “more general”; EGA IV (21.2.12), “more general”; EGA IV (21.6.5); SGA 1 III (7.1), “partial”; SGA 3 III (4.5.0).
 - [`AlgebraicGeometry.IsImmersion`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsImmersion#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Basic.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Basic.lean#L96) (StacksFrontier): “part (5): locally closed immersions”. References: EGA I (4.2.1); SGA 3 IV (4.7), “partial”.
 - [`AlgebraicGeometry.IsImmersion.isImmersion_iff_exists`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsImmersion.isImmersion_iff_exists#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Basic.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Basic.lean#L99) (StacksFrontier): “part (5): factorization”. References: EGA I (4.2.1); SGA 6 0 (2.1), “special case”.
 

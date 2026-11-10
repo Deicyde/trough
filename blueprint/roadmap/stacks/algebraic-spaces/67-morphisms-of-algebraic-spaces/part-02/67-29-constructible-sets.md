@@ -45,8 +45,8 @@ theorem isEtaleLocallyConstructible_preimage
 >
 > By Stacks 0ECT it is enough to test the image on an affine étale chart `g : h_V ⟶ Y`. The
 > base change `h_V ×_Y X` is a quasi-compact algebraic space because `g` has quasi-compact
-> source and `f` is quasi-compact, so it has an affine surjective étale chart `t : h_T ⟶
-> h_V ×_Y X` by Stacks 03H6. The chart `T` sits over `V` by a morphism `q` of the site and over
+> source and `f` is quasi-compact, so it has an affine surjective étale chart `t : h\_T ⟶
+> h\_V ×\_Y X` by Stacks 03H6. The chart `T` sits over `V` by a morphism `q` of the site and over
 > `X` by an étale chart, so the inverse image of `E` on `T` is constructible, and `q` is a
 > morphism of affine schemes which is locally of finite presentation because `f` is; Chevalley's
 > theorem for schemes therefore makes its image constructible. That image is the inverse image

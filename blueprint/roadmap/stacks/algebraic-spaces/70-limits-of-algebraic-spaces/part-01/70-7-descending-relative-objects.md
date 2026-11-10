@@ -82,7 +82,7 @@ public theorem exists_model_of_finitePresentation
         Nonempty (Y ≅ (Over.pullback (limit.π D i)).obj Yᵢ)
 ```
 
-**`AlgebraicGeometry.Space.exists_morphism_after_baseChange_of_chartLimitsInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean#L188). The attribute's comment: “fullness, with no bound on the index: the 07SD convention in place of the cardinality bounds of exists_morphism_after_baseChange”.
+**`AlgebraicGeometry.Space.exists_morphism_after_baseChange_of_chartLimitsInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean#L188). The attribute's comment: “fullness, with no bound on the index: the 07SD convention in place of the cardinality bounds of exists\_morphism\_after\_baseChange”.
 
 > **Stacks 07SK, fullness, with no bound on the index.** A morphism between the base changes
 > to the limit of two algebraic spaces of finite presentation over a stage comes from a morphism
@@ -138,7 +138,7 @@ public theorem exists_morphism_after_baseChange_of_chartLimitsInSite
       α.hom ≫ f = (Over.pullback (limit.π D j)).map g ≫ β.hom
 ```
 
-**`AlgebraicGeometry.Space.eventually_eq_of_baseChange_eq_of_chartLimitsInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean#L247). The attribute's comment: “faithfulness, with no bound on the index: the 07SD convention in place of the cardinality bounds of eventually_eq_of_baseChange_eq”.
+**`AlgebraicGeometry.Space.eventually_eq_of_baseChange_eq_of_chartLimitsInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean#L247). The attribute's comment: “faithfulness, with no bound on the index: the 07SD convention in place of the cardinality bounds of eventually\_eq\_of\_baseChange\_eq”.
 
 > **Stacks 07SK, faithfulness, with no bound on the index.** Two morphisms between
 > algebraic spaces of finite presentation over a stage whose base changes to the limit agree
@@ -182,7 +182,7 @@ public theorem eventually_eq_of_baseChange_eq_of_chartLimitsInSite
         (Over.pullback (D.map e)).map g
 ```
 
-**`AlgebraicGeometry.Space.exists_model_of_finitePresentation_of_chartLimitsInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean#L293). The attribute's comment: “essential surjectivity, with no bound on the index: the 07SD convention in place of the cardinality bounds of exists_model_of_finitePresentation”.
+**`AlgebraicGeometry.Space.exists_model_of_finitePresentation_of_chartLimitsInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FinitePresentationDescentUnbounded.lean#L293). The attribute's comment: “essential surjectivity, with no bound on the index: the 07SD convention in place of the cardinality bounds of exists\_model\_of\_finitePresentation”.
 
 > **Stacks 07SK, essential surjectivity, with no bound on the index.** Every algebraic space
 > of finite presentation over the limit is the base change of an algebraic space of finite

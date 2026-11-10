@@ -14,7 +14,7 @@ Section 20.34 of the Stacks Project, [Tag 0G6Y](https://stacks.math.columbia.edu
 
 [Tag 0A3B](https://stacks.math.columbia.edu/tag/0A3B) in the Stacks Project.
 
-**`Stacks.Cohomology.SupportedComplexes.derivedPushforwardAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsCanonicalMaps.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsCanonicalMaps.lean#L277). The attribute's comment: “the adjunction i_*^D ⊣ RℋZ as a term, not an existence statement”.
+**`Stacks.Cohomology.SupportedComplexes.derivedPushforwardAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsCanonicalMaps.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsCanonicalMaps.lean#L277). The attribute's comment: “the adjunction i\_*^D ⊣ RℋZ as a term, not an existence statement”.
 
 > **Stacks 0A3B (1), as a term.** Let `Z` be a closed subset of a ringed space `X` and let
 > `i : (Z, 𝒪_X|_Z) ⟶ (X, 𝒪_X)` be the inclusion. The functor `D(𝒪_X|_Z) ⥤ D(𝒪_X)` induced by
@@ -34,7 +34,7 @@ noncomputable def derivedPushforwardAdjunction (X : RingedSpace.{u, u}) (Z : Set
       derivedSupportedSectionsOnClosed X Z hZ
 ```
 
-**`Stacks.Cohomology.SupportedComplexes.derivedPushforwardCompDerivedSupportedSectionsIsoId`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsCanonicalMaps.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsCanonicalMaps.lean#L378). The attribute's comment: “RℋZ ∘ i_*^D ≅ 𝟭, as a chosen natural isomorphism”.
+**`Stacks.Cohomology.SupportedComplexes.derivedPushforwardCompDerivedSupportedSectionsIsoId`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsCanonicalMaps.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsCanonicalMaps.lean#L378). The attribute's comment: “RℋZ ∘ i\_*^D ≅ 𝟭, as a chosen natural isomorphism”.
 
 > **Stacks 0A3B (2) as a natural isomorphism.** Composing `RH_Z` with the derived pushforward
 > from the closed subset is the identity on `D(𝒪_X|_Z)`, the isomorphism being the inverse of the
@@ -120,7 +120,7 @@ theorem isZero_rightDerivedPlus_supportedSectionsOnClosed_modulePushforward
 
 [Tag 0AEF](https://stacks.math.columbia.edu/tag/0AEF) in the Stacks Project.
 
-**`Stacks.Cohomology.SupportedComplexes.isIso_derivedPushforwardAdjunction_counit_app_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean#L228). The attribute's comment: “part (2): the counit i_*RℋZ(K) ⟶ K is invertible at every K supported on Z, which is the essential-image content of the equivalence”.
+**`Stacks.Cohomology.SupportedComplexes.isIso_derivedPushforwardAdjunction_counit_app_of_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean#L228). The attribute's comment: “part (2): the counit i\_*RℋZ(K) ⟶ K is invertible at every K supported on Z, which is the essential-image content of the equivalence”.
 
 > **Stacks 0AEF, part (2).** For `K` in `D(𝒪_X)` whose cohomology sheaves are supported on
 > the closed subset `Z`, the canonical map `i_* RH_Z(K) ⟶ K` — the counit of the adjunction
@@ -136,7 +136,7 @@ theorem isIso_derivedPushforwardAdjunction_counit_app_of_supported (X : RingedSp
     IsIso ((derivedPushforwardAdjunction X Z hZ).counit.app K)
 ```
 
-**`Stacks.Cohomology.SupportedComplexes.derivedPushforwardSupportedSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean#L246). The attribute's comment: “part (2): the same invertible counit, as the isomorphism i_*RℋZ(K) ≅ K”.
+**`Stacks.Cohomology.SupportedComplexes.derivedPushforwardSupportedSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean#L246). The attribute's comment: “part (2): the same invertible counit, as the isomorphism i\_*RℋZ(K) ≅ K”.
 
 > **Stacks 0AEF, part (2), as an isomorphism.** For `K` in `D(𝒪_X)` with cohomology sheaves
 > supported on `Z`, the canonical map `i_* RH_Z(K) ⟶ K` is an isomorphism `i_* RH_Z(K) ≅ K`.
@@ -151,7 +151,7 @@ def derivedPushforwardSupportedSectionsIso (X : RingedSpace.{u, u}) (Z : Set X.c
         ((derivedSupportedSectionsOnClosed X Z hZ).obj K) ≅ K
 ```
 
-**`Stacks.Cohomology.SupportedComplexes.closedSubsetDerivedPushforwardEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean#L262). The attribute's comment: “part (2): i_* : D(𝒪_X|_Z) ⥤ D_Z(𝒪_X) is an equivalence”.
+**`Stacks.Cohomology.SupportedComplexes.closedSubsetDerivedPushforwardEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean#L262). The attribute's comment: “part (2): i\_* : D(𝒪\_X|\_Z) ⥤ D\_Z(𝒪\_X) is an equivalence”.
 
 > **Stacks 0AEF, part (2).** Derived pushforward along the inclusion of a closed subset `Z`
 > is an equivalence of `D(𝒪_X|_Z)` with the full subcategory `D_Z(𝒪_X)` of `D(𝒪_X)` of complexes
@@ -165,7 +165,7 @@ def closedSubsetDerivedPushforwardEquivalence (X : RingedSpace.{u, u}) (Z : Set 
       SupportedDerivedCategory X Z
 ```
 
-**`Stacks.Cohomology.SupportedComplexes.closedSubsetDerivedPushforwardEquivalence_functor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean#L277). The attribute's comment: “part (2): the functor of the equivalence is i_*”.
+**`Stacks.Cohomology.SupportedComplexes.closedSubsetDerivedPushforwardEquivalence_functor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean#L277). The attribute's comment: “part (2): the functor of the equivalence is i\_*”.
 
 > **Stacks 0AEF, part (2).** The equivalence onto the supported complexes is induced by
 > `i_*`: composed with the inclusion of `D_Z(𝒪_X)` into `D(𝒪_X)` it is `i_*^D`.
@@ -180,7 +180,7 @@ def closedSubsetDerivedPushforwardEquivalence_functor (X : RingedSpace.{u, u})
       (modulePushforward (closedSubsetInclusion X Z)).mapDerivedCategory)
 ```
 
-**`Stacks.Cohomology.SupportedComplexes.closedSubsetDerivedPushforwardEquivalence_inverse`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean#L295). The attribute's comment: “part (2): the quasi-inverse is RℋZ restricted to D_Z”.
+**`Stacks.Cohomology.SupportedComplexes.closedSubsetDerivedPushforwardEquivalence_inverse`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedEquivalence.lean#L295). The attribute's comment: “part (2): the quasi-inverse is RℋZ restricted to D\_Z”.
 
 > **Stacks 0AEF, part (2).** The quasi-inverse of the equivalence is the derived functor
 > `RH_Z` of sections supported on `Z`, restricted to `D_Z(𝒪_X)`.
@@ -214,7 +214,7 @@ def derivedPushforwardSupportedSections_isRightAdjoint (X : RingedSpace.{u, u})
       derivedSupportedSectionsOnClosed X Z hZ ⋙ derivedPushforwardToSupported X Z hZ
 ```
 
-**`Stacks.Cohomology.SupportedComplexes.derivedSupportedSectionsIsoDerivedModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedPullback.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedPullback.lean#L128). The attribute's comment: “part (2): on D_Z the quasi-inverse RℋZ agrees with i⁻¹”.
+**`Stacks.Cohomology.SupportedComplexes.derivedSupportedSectionsIsoDerivedModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedPullback.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedPullback.lean#L128). The attribute's comment: “part (2): on D\_Z the quasi-inverse RℋZ agrees with i⁻¹”.
 
 > On the full subcategory `D_Z(𝒪_X)` of complexes with cohomology sheaves supported on the closed
 > subset `Z`, the right derived functor `RH_Z` of sections supported on `Z` agrees with inverse image
@@ -230,7 +230,7 @@ def derivedSupportedSectionsIsoDerivedModulePullback (X : RingedSpace.{u, u})
         (modulePullback (closedSubsetInclusion X Z)).mapDerivedCategory)
 ```
 
-**`Stacks.Cohomology.SupportedComplexes.closedSubsetDerivedPushforwardEquivalence_inverse_iso_derivedModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedPullback.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedPullback.lean#L152). The attribute's comment: “part (2): the quasi-inverse is i⁻¹ restricted to D_Z”.
+**`Stacks.Cohomology.SupportedComplexes.closedSubsetDerivedPushforwardEquivalence_inverse_iso_derivedModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedPullback.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ClosedSubsetDerivedPullback.lean#L152). The attribute's comment: “part (2): the quasi-inverse is i⁻¹ restricted to D\_Z”.
 
 > The quasi-inverse of the equivalence `i_*^D : D(𝒪_X|_Z) ≌ D_Z(𝒪_X)` is inverse image `i^{-1}`
 > restricted to `D_Z(𝒪_X)`.
@@ -326,7 +326,7 @@ theorem derivedSectionsWithSupportIso_hom_fac
 
 [Tag 0G71](https://stacks.math.columbia.edu/tag/0G71) in the Stacks Project.
 
-**`Stacks.Cohomology.SectionsWithSupport.canonicalDerivedGlobalSections_isRightDerivedFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/CanonicalSectionsWithSupportTriangle.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/CanonicalSectionsWithSupportTriangle.lean#L124). The attribute's comment: “RΓ(X, -) on the unbounded derived category D(O_X) exists: the middle term of the triangle is a genuine right derived functor of global sections”.
+**`Stacks.Cohomology.SectionsWithSupport.canonicalDerivedGlobalSections_isRightDerivedFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/CanonicalSectionsWithSupportTriangle.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/CanonicalSectionsWithSupportTriangle.lean#L124). The attribute's comment: “RΓ(X, -) on the unbounded derived category D(O\_X) exists: the middle term of the triangle is a genuine right derived functor of global sections”.
 
 > `RΓ(X, -)`, with its unit, is a right derived functor of global sections along the
 > quasi-isomorphisms of the unbounded homotopy category.
@@ -338,7 +338,7 @@ public instance canonicalDerivedGlobalSections_isRightDerivedFunctor :
       (HomotopyCategory.quasiIso (ModuleSheaves X) (ComplexShape.up ℤ))
 ```
 
-**`Stacks.Cohomology.SectionsWithSupport.canonicalDerivedSectionsWithSupport_isRightDerivedFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/CanonicalSectionsWithSupportTriangle.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/CanonicalSectionsWithSupportTriangle.lean#L159). The attribute's comment: “RΓ_Z(X, -) on the unbounded derived category D(O_X) exists: the first term of the triangle is a genuine right derived functor of sections with support in Z”.
+**`Stacks.Cohomology.SectionsWithSupport.canonicalDerivedSectionsWithSupport_isRightDerivedFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/CanonicalSectionsWithSupportTriangle.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/CanonicalSectionsWithSupportTriangle.lean#L159). The attribute's comment: “RΓ\_Z(X, -) on the unbounded derived category D(O\_X) exists: the first term of the triangle is a genuine right derived functor of sections with support in Z”.
 
 > `RΓ_Z(X, -)`, with its unit, is a right derived functor of sections with support along
 > the quasi-isomorphisms of the unbounded homotopy category.
@@ -350,7 +350,7 @@ public instance canonicalDerivedSectionsWithSupport_isRightDerivedFunctor :
       (HomotopyCategory.quasiIso (ModuleSheaves X) (ComplexShape.up ℤ))
 ```
 
-**`Stacks.Cohomology.SectionsWithSupport.canonicalDerivedSectionsOnComplement_isRightDerivedFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/CanonicalSectionsWithSupportTriangle.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/CanonicalSectionsWithSupportTriangle.lean#L191). The attribute's comment: “RΓ(U, -) for U = X ∖ Z on the unbounded derived category D(O_X) exists: the third term of the triangle is a genuine right derived functor of sections on the complement”.
+**`Stacks.Cohomology.SectionsWithSupport.canonicalDerivedSectionsOnComplement_isRightDerivedFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/CanonicalSectionsWithSupportTriangle.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/CanonicalSectionsWithSupportTriangle.lean#L191). The attribute's comment: “RΓ(U, -) for U = X ∖ Z on the unbounded derived category D(O\_X) exists: the third term of the triangle is a genuine right derived functor of sections on the complement”.
 
 > `RΓ(U, -)`, with its unit, is a right derived functor of sections on the complement
 > along the quasi-isomorphisms of the unbounded homotopy category.
@@ -362,7 +362,7 @@ public instance canonicalDerivedSectionsOnComplement_isRightDerivedFunctor :
       (HomotopyCategory.quasiIso (ModuleSheaves X) (ComplexShape.up ℤ))
 ```
 
-**`Stacks.Cohomology.SectionsWithSupport.canonicalSectionsWithSupportTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/CanonicalSectionsWithSupportTriangle.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/CanonicalSectionsWithSupportTriangle.lean#L262). The attribute's comment: “the distinguished triangle RΓ_Z(X,K) → RΓ(X,K) → RΓ(U,K) → RΓ_Z(X,K)[1] in D(O_X(X)), at the three constructed derived functors, functorial for K in D(O_X)”.
+**`Stacks.Cohomology.SectionsWithSupport.canonicalSectionsWithSupportTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/CanonicalSectionsWithSupportTriangle.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/CanonicalSectionsWithSupportTriangle.lean#L262). The attribute's comment: “the distinguished triangle RΓ\_Z(X,K) → RΓ(X,K) → RΓ(U,K) → RΓ\_Z(X,K)[1] in D(O\_X(X)), at the three constructed derived functors, functorial for K in D(O\_X)”.
 
 > **Stacks, Tag 0G71.**  Let `Z` be a closed subset of a ringed space `X` and let
 > `U = X ∖ Z`.  The triangle
@@ -427,7 +427,7 @@ noncomputable def derivedSupportedSectionsTriangleδ :
       (DerivedCategory (_root_.SheafOfModules.{u} (structureSheafRing X))) (1 : ℤ)
 ```
 
-**`Stacks.Cohomology.SupportedComplexes.derivedSupportedSectionsTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsCanonicalMaps.lean, line 477](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsCanonicalMaps.lean#L477). The attribute's comment: “the triangle i_*RℋZ(K) ⟶ K ⟶ Rj_*(K|_U) ⟶ [1] is distinguished”.
+**`Stacks.Cohomology.SupportedComplexes.derivedSupportedSectionsTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsCanonicalMaps.lean, line 477](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsCanonicalMaps.lean#L477). The attribute's comment: “the triangle i\_*RℋZ(K) ⟶ K ⟶ Rj\_*(K|\_U) ⟶ [1] is distinguished”.
 
 > **Stacks 0G72.** The triangle of `derivedSupportedSectionsTriangle` is distinguished at every
 > object `K` of `D(𝒪_X)`.
@@ -508,7 +508,7 @@ theorem isZero_derivedSupportedSections_derivedPushforward
 
 [Tag 0G74](https://stacks.math.columbia.edu/tag/0G74) in the Stacks Project.
 
-**`Stacks.Perfect.GysinAbelianSquare.pushforwardLocalCohomologyForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Gysin/GysinDifferentialSquare.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Gysin/GysinDifferentialSquare.lean#L135). The attribute's comment: “part (2) at the GYSIN MAP'S TARGET: the underlying abelian sheaf of i_*H^n_T(F) is i_*^ab H^n_T(F_ab), naturally in F, which is what lets H^n_T act on a morphism that is additive but not O_X-linear. No hypotheses beyond IsClosed T”.
+**`Stacks.Perfect.GysinAbelianSquare.pushforwardLocalCohomologyForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Gysin/GysinDifferentialSquare.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Gysin/GysinDifferentialSquare.lean#L135). The attribute's comment: “part (2) at the GYSIN MAP'S TARGET: the underlying abelian sheaf of i\_*H^n\_T(F) is i\_*^ab H^n\_T(F\_ab), naturally in F, which is what lets H^n\_T act on a morphism that is additive but not O\_X-linear. No hypotheses beyond IsClosed T”.
 
 > The underlying sheaf of abelian groups of `i_*ℋ ⁿ_T(ℱ[0])`, with the local cohomology sheaf
 > taken as the degree-`n` cohomology sheaf of `R𝓗_T(ℱ[0])` in the unbounded derived category — the
@@ -521,7 +521,7 @@ public def pushforwardLocalCohomologyForgetIso {T : Set X} (hT : IsClosed T) (n 
       abelianSheaf X ⋙ abelianLocalCohomologyPushforward X.toRingedSpace T hT n
 ```
 
-**`Stacks.Cohomology.SupportedComplexes.localCohomologySheafForgetComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianLocalCohomologyComparison.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianLocalCohomologyComparison.lean#L250). The attribute's comment: “part (2), the canonical map; invertibility is proved in isIso_localCohomologySheafForgetComparison_of_isRightDerivedFunctor”.
+**`Stacks.Cohomology.SupportedComplexes.localCohomologySheafForgetComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianLocalCohomologyComparison.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianLocalCohomologyComparison.lean#L250). The attribute's comment: “part (2), the canonical map; invertibility is proved in isIso\_localCohomologySheafForgetComparison\_of\_isRightDerivedFunctor”.
 
 > **Stacks 0G74, part (2): the canonical map.** Let `Z` be a closed subset of a ringed space
 > `X`, let `RH` be a right derived functor of the sections supported on `Z` of sheaves of
@@ -542,7 +542,7 @@ def localCohomologySheafForgetComparison
       underlyingDerivedSheaf (structureSheafRing X) ⋙ RHab
 ```
 
-**`Stacks.Cohomology.SupportedComplexes.localCohomologySheafFunctorForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianLocalCohomologyDegreewise.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianLocalCohomologyDegreewise.lean#L122). The attribute's comment: “part (2) degreewise: ℋ ⁿ_Z(ℱ)_ab ≅ ℋ ⁿ_Z(ℱ_ab)”.
+**`Stacks.Cohomology.SupportedComplexes.localCohomologySheafFunctorForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianLocalCohomologyDegreewise.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianLocalCohomologyDegreewise.lean#L122). The attribute's comment: “part (2) degreewise: ℋ ⁿ\_Z(ℱ)\_ab ≅ ℋ ⁿ\_Z(ℱ\_ab)”.
 
 > **Stacks 0G74, part (2), on cohomology sheaves in every degree.** Let `Z` be a closed subset
 > of a ringed space `X` and let `ℱ` be a sheaf of `𝒪_X`-modules with underlying abelian sheaf
@@ -612,7 +612,7 @@ theorem isIso_localCohomologySheafForgetComparison_of_isRightDerivedFunctor
     IsIso (localCohomologySheafForgetComparison X Z hZ RHab aHab RH aH)
 ```
 
-**`Stacks.Cohomology.SupportedComplexes.localCohomologySheafFunctorZeroForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianLocalCohomologySheaves.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianLocalCohomologySheaves.lean#L189). The attribute's comment: “part (2) in degree 0 only; the comparison in higher degrees is not proved here, see isIso_localCohomologySheafForgetComparison_of_isRightDerivedFunctor for the derived form”.
+**`Stacks.Cohomology.SupportedComplexes.localCohomologySheafFunctorZeroForgetIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianLocalCohomologySheaves.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianLocalCohomologySheaves.lean#L189). The attribute's comment: “part (2) in degree 0 only; the comparison in higher degrees is not proved here, see isIso\_localCohomologySheafForgetComparison\_of\_isRightDerivedFunctor for the derived form”.
 
 > **Stacks 0G74, part (2), in degree zero.** Let `Z` be a closed subset of a ringed space `X`
 > and let `ℱ` be a sheaf of `𝒪_X`-modules with underlying abelian sheaf `ℱ_ab`. The degree-zero
@@ -649,7 +649,7 @@ def sectionsWithSupportForgetComparison
       underlyingDerivedSheaf (structureSheafRing X) ⋙ RΓZab
 ```
 
-**`Stacks.Cohomology.UnderlyingAbelianSectionsWithSupport.sectionsWithSupportForgetComparison_isIso`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianSectionsWithSupport.lean, line 560](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianSectionsWithSupport.lean#L560). The attribute's comment: “part (1), the map is an isomorphism, for given right derived functors of Gamma_Z”.
+**`Stacks.Cohomology.UnderlyingAbelianSectionsWithSupport.sectionsWithSupportForgetComparison_isIso`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianSectionsWithSupport.lean, line 560](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/UnderlyingAbelianSectionsWithSupport.lean#L560). The attribute's comment: “part (1), the map is an isomorphism, for given right derived functors of Gamma\_Z”.
 
 > **Stacks 0G74, part (1).**  Let `(X, O_X)` be a ringed space, `Z ⊆ X` a closed subset and
 > `K` an object of `D(O_X)` with image `K_ab` in `D(ℤ_X)`.  The canonical map
@@ -840,7 +840,7 @@ theorem isIso_supportedPullbackMap_of_isOpenImmersion (hZ : IsClosed Z)
     IsIso (supportedPullbackMap f Z hZ hZ' K)
 ```
 
-**`Stacks.Cohomology.SupportedComplexes.isIso_supportedPullbackBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsDerivedPullback.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsDerivedPullback.lean#L449). The attribute's comment: “the Remark's own assertion that the map of functors Lf^* i_* -> i'_* L(f|Z')^* of Remark 20.28.3 (Tag 08HY) is an isomorphism in this case, proved for every M in D(O_X|Z), in particular at M = RHZ(K); the source's stalkwise justification is replaced by the essential-image half of Tag 0AEF part (2)”.
+**`Stacks.Cohomology.SupportedComplexes.isIso_supportedPullbackBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsDerivedPullback.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsDerivedPullback.lean#L449). The attribute's comment: “the Remark's own assertion that the map of functors Lf^* i\_* -> i'\_* L(f|Z')^* of Remark 20.28.3 (Tag 08HY) is an isomorphism in this case, proved for every M in D(O\_X|Z), in particular at M = RHZ(K); the source's stalkwise justification is replaced by the essential-image half of Tag 0AEF part (2)”.
 
 > **[Stacks, Tag 0G78]: the map of functors of [Stacks, Tag 08HY] is an isomorphism in this
 > case**, for every object of `D(𝒪_X|_Z)`. The
@@ -868,7 +868,7 @@ theorem isIso_supportedPullbackBaseChangeMap
     IsIso (supportedPullbackBaseChangeMap f Z M)
 ```
 
-**`Stacks.Cohomology.SupportedComplexes.supportedPullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsDerivedPullback.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsDerivedPullback.lean#L523). The attribute's comment: “the canonical map and the adjunction equation characterizing it; the invertibility of the base-change transformation of Tag 08HY, which is the stalkwise step of the source, is isIso_supportedPullbackBaseChangeMap above”.
+**`Stacks.Cohomology.SupportedComplexes.supportedPullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsDerivedPullback.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsDerivedPullback.lean#L523). The attribute's comment: “the canonical map and the adjunction equation characterizing it; the invertibility of the base-change transformation of Tag 08HY, which is the stalkwise step of the source, is isIso\_supportedPullbackBaseChangeMap above”.
 
 > **[Stacks, Tag 0G78].** Let `f : (X', 𝒪_{X'}) ⟶ (X, 𝒪_X)` be a morphism of ringed spaces,
 > let `Z ⊆ X` be closed and let `Z' = f^{-1}(Z)`. For `K` in `D(𝒪_X)` the canonical map
@@ -905,7 +905,7 @@ theorem supportedPullbackMap_mate (hZ' : IsClosed (closedSubsetPreimage f Z))
       supportedPullbackMateMap f Z hZ K
 ```
 
-**`Stacks.Cohomology.SupportedComplexes.supportedPullbackMap_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsDerivedPullback.lean, line 556](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsDerivedPullback.lean#L556). The attribute's comment: “the uniqueness the Remark asserts: 'we find that the south-east arrow factors UNIQUELY over the south-west arrow'. This is the half of the universality of Tag 0AEF part (3) that supportedPullbackMap_mate does not state, and it is what makes the canonical map canonical -- neither the zero map nor the negative of it satisfies the characterization”.
+**`Stacks.Cohomology.SupportedComplexes.supportedPullbackMap_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsDerivedPullback.lean, line 556](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/SupportedSectionsDerivedPullback.lean#L556). The attribute's comment: “the uniqueness the Remark asserts: 'we find that the south-east arrow factors UNIQUELY over the south-west arrow'. This is the half of the universality of Tag 0AEF part (3) that supportedPullbackMap\_mate does not state, and it is what makes the canonical map canonical -- neither the zero map nor the negative of it satisfies the characterization”.
 
 > The adjunction equation determines the canonical map of [Stacks, Tag 0G78]: no other
 > morphism of that type satisfies it. Together with `supportedPullbackMap_mate` this says the map
@@ -955,7 +955,7 @@ theorem supportedPullbackMap_triangle (hZ' : IsClosed (closedSubsetPreimage f Z)
 
 [Tag 0G79](https://stacks.math.columbia.edu/tag/0G79) in the Stacks Project.
 
-**`Stacks.Cohomology.SupportedComplexes.forgetSupport_pullbackSupportedClass_preimage_shiftedUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ForgetSupportAndPullback.lean, line 502](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ForgetSupportAndPullback.lean#L502). The attribute's comment: “the commuting square for the canonical map of Tag 0G78 itself, at the canonical corepresenting objects: the four groups are corepresented by the shifted structure sheaves of Tag 0G70, the four comparisons between them are the canonical ones, and their agreement across the square -- the pseudofunctoriality of the structure-sheaf comparison of Tag 01CD with respect to the composition isomorphism of derived pullbacks of Tag 0D5S -- is StacksDraft.UnitPullbackComposition.shiftedUnitIso_square_left. The binders are the degree p, the complex K and the class eta, which are the data of a class in H^p_Z(X, K)”.
+**`Stacks.Cohomology.SupportedComplexes.forgetSupport_pullbackSupportedClass_preimage_shiftedUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ForgetSupportAndPullback.lean, line 502](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/SupportedComplexes/ForgetSupportAndPullback.lean#L502). The attribute's comment: “the commuting square for the canonical map of Tag 0G78 itself, at the canonical corepresenting objects: the four groups are corepresented by the shifted structure sheaves of Tag 0G70, the four comparisons between them are the canonical ones, and their agreement across the square -- the pseudofunctoriality of the structure-sheaf comparison of Tag 01CD with respect to the composition isomorphism of derived pullbacks of Tag 0D5S -- is StacksDraft.UnitPullbackComposition.shiftedUnitIso\_square\_left. The binders are the degree p, the complex K and the class eta, which are the data of a class in H^p\_Z(X, K)”.
 
 > **Stacks Project, Tag 0G79, at the canonical corepresenting objects.** The four groups are
 > corepresented by the shifted structure sheaves of [Stacks, Tag 0G70] — `𝒪_X[-p]`, `𝒪_{X'}[-p]`,

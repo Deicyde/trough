@@ -72,7 +72,7 @@ public theorem isGorenstein_of_isRegular (X : Scheme.{u}) (hX : IsRegular X) :
 
 [Tag 0BFQ](https://stacks.math.columbia.edu/tag/0BFQ) in the Stacks Project.
 
-**`Stacks.Duality.isGorenstein_iff_isInvertible_dualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinSchemes/DualizingInvertible.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinSchemes/DualizingInvertible.lean#L214). The attribute's comment: “(1)(a): X is Gorenstein iff its dualizing complex is invertible in D(O_X)”.
+**`Stacks.Duality.isGorenstein_iff_isInvertible_dualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/GorensteinSchemes/DualizingInvertible.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/GorensteinSchemes/DualizingInvertible.lean#L214). The attribute's comment: “(1)(a): X is Gorenstein iff its dualizing complex is invertible in D(O\_X)”.
 
 > **Stacks Project, Tag 0BFQ, clause (1)(a).** A locally Noetherian scheme `X` carrying a
 > dualizing complex `ω_X^•` is Gorenstein if and only if `ω_X^•` is an invertible object of

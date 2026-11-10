@@ -88,7 +88,7 @@ lemma weaklyAssociatedPoints_subset_supp {X : Scheme.{u}} (F : X.Modules) :
 
 [Tag 05AN](https://stacks.math.columbia.edu/tag/05AN) in the Stacks Project.
 
-**`AlgebraicGeometry.weaklyAssociatedPoints_subset_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/WeaklyAssociated.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/WeaklyAssociated.lean#L78). The attribute's comment: “subsheaf_inclusion”.
+**`AlgebraicGeometry.weaklyAssociatedPoints_subset_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/WeaklyAssociated.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/WeaklyAssociated.lean#L78). The attribute's comment: “subsheaf\_inclusion”.
 
 > **Stacks Project, Tag 05AN.** In a short exact sequence of quasi-coherent modules on a
 > scheme, the weakly associated points of the first module are weakly associated points of the
@@ -101,7 +101,7 @@ theorem weaklyAssociatedPoints_subset_of_shortExact {X : Scheme.{u}}
     Stacks.Divisors.weaklyAssociatedPoints S.X₁ ⊆ Stacks.Divisors.weaklyAssociatedPoints S.X₂
 ```
 
-**`AlgebraicGeometry.weaklyAssociatedPoints_subset_union_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/WeaklyAssociated.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/WeaklyAssociated.lean#L89). The attribute's comment: “middle_term_inclusion”.
+**`AlgebraicGeometry.weaklyAssociatedPoints_subset_union_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/WeaklyAssociated.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/WeaklyAssociated.lean#L89). The attribute's comment: “middle\_term\_inclusion”.
 
 > **Stacks Project, Tag 05AN.** In a short exact sequence of sheaves of modules, every weakly
 > associated point of the middle term is weakly associated to an outer term.
@@ -175,7 +175,7 @@ theorem mem_weaklyAssociatedPointsOfScheme_of_isGenericPoint_irreducibleComponen
 
 [Tag 05AR](https://stacks.math.columbia.edu/tag/05AR) in the Stacks Project.
 
-**`AlgebraicGeometry.mem_associatedPoints_iff_mem_weaklyAssociatedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/WeaklyAssociated.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/WeaklyAssociated.lean#L104). The attribute's comment: “finite_generated_maximal_ideal”.
+**`AlgebraicGeometry.mem_associatedPoints_iff_mem_weaklyAssociatedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/WeaklyAssociated.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/WeaklyAssociated.lean#L104). The attribute's comment: “finite\_generated\_maximal\_ideal”.
 
 > **Stacks Project, Tag 05AR.** At a point whose local-ring maximal ideal is finitely
 > generated, associated and weakly associated membership of a sheaf of modules coincide.
@@ -187,7 +187,7 @@ theorem mem_associatedPoints_iff_mem_weaklyAssociatedPoints {X : Scheme.{u}} (F 
       x ∈ Stacks.Divisors.weaklyAssociatedPoints F
 ```
 
-**`AlgebraicGeometry.associatedPoints_eq_weaklyAssociatedPoints`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/WeaklyAssociated.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/WeaklyAssociated.lean#L120). The attribute's comment: “locally_noetherian”.
+**`AlgebraicGeometry.associatedPoints_eq_weaklyAssociatedPoints`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/WeaklyAssociated.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/WeaklyAssociated.lean#L120). The attribute's comment: “locally\_noetherian”.
 
 > **Stacks Project, Tag 05AR.** On a locally Noetherian scheme, the associated points and
 > weakly associated points of a sheaf of modules coincide.

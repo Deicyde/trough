@@ -98,7 +98,7 @@ theorem exists_open_nhds_disjoint_range_of_quasiCompact
 
 [Tag 01RM](https://stacks.math.columbia.edu/tag/01RM) in the Stacks Project.
 
-**`AlgebraicGeometry.isDominant_iff_genericPoint_mem_range`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean#L282). The attribute's comment: “dominant_iff_generic_points_in_image”.
+**`AlgebraicGeometry.isDominant_iff_genericPoint_mem_range`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean#L282). The attribute's comment: “dominant\_iff\_generic\_points\_in\_image”.
 
 > **Stacks Project, Tag 01RM.** A morphism from a scheme with finitely many irreducible
 > components is dominant if and only if its image contains the generic point of every irreducible
@@ -112,7 +112,7 @@ lemma isDominant_iff_genericPoint_mem_range
       ∀ Z : irreducibleComponents S, Z.2.1.genericPoint ∈ Set.range f
 ```
 
-**`AlgebraicGeometry.finite_irreducibleComponents_of_isDominant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean#L313). The attribute's comment: “finite_irreducible_components_target”.
+**`AlgebraicGeometry.finite_irreducibleComponents_of_isDominant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Dominant/GenericPoints.lean#L313). The attribute's comment: “finite\_irreducible\_components\_target”.
 
 > A dominant morphism of schemes with finitely many irreducible components in its source has
 > finitely many irreducible components in its target.

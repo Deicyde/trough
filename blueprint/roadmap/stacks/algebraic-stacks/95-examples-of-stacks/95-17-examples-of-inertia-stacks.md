@@ -24,7 +24,7 @@ Section 95.17 of the Stacks Project, [Tag 0373](https://stacks.math.columbia.edu
 def fixedScheme (Y : Over S) (a : G →* Aut Y) (g : G) : Over S
 ```
 
-**`AlgebraicGeometry.fixedSchemeHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientInertia.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientInertia.lean#L221). The attribute's comment: “X^g = {x ∈ X | g(x) = x} as a functor of points”.
+**`AlgebraicGeometry.fixedSchemeHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientInertia.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientInertia.lean#L221). The attribute's comment: “X^g = \{x ∈ X | g(x) = x} as a functor of points”.
 
 > **Stacks 0374.** The fibre product `Y ×_{(1, 1), Y ×_S Y, (g, 1)} Y` is the locus
 > `Y^g = {y ∈ Y | g(y) = y}`: its `T`-points are exactly the `T`-points of `Y` fixed by the
@@ -103,7 +103,7 @@ lemma inertiaComparison_comp_struct (g : G) :
         (fixedSchemeAut Y a g)
 ```
 
-**`AlgebraicGeometry.inertia_equivalence_stackCoproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientInertiaEquivalence.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientInertiaEquivalence.lean#L313). The attribute's comment: “I_{[X/G]} = ∐_{g ∈ G} [X^g/G]: an equivalence over (Sch/S)_fppf from the coproduct of stacks to the inertia stack, restricting on each summand to the canonical functor”.
+**`AlgebraicGeometry.inertia_equivalence_stackCoproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientInertiaEquivalence.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientInertiaEquivalence.lean#L313). The attribute's comment: “I\_\{[X/G]} = ∐\_\{g ∈ G} [X^g/G]: an equivalence over (Sch/S)\_fppf from the coproduct of stacks to the inertia stack, restricting on each summand to the canonical functor”.
 
 > **Stacks 0374.** Let `S` be a scheme, `G` a commutative group, `Y → S` a scheme over `S` and
 > `a : G →* Aut_S(Y)` an action of `G` on `Y`. Then the inertia stack of `[Y/G]` is the coproduct of
@@ -272,7 +272,7 @@ def autLineBundleMulEquivAutStructure {s : PicardSituation B S hS} (A : PicardOb
     Aut A.lineBundle ≃* Aut (structureModule (s.baseChange A.T))
 ```
 
-**`AlgebraicGeometry.Space.PicardObject.autMulEquivMultiplicativeGroupPoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertia.lean, line 692](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertia.lean#L692). The attribute's comment: “the 𝐆_m factor of the inertia stack: when 𝒪_T ⟶ f_{T,*}𝒪_{X_T} is an isomorphism for every test scheme T, the automorphism group of the invertible module of an object of the Picard stack over T is 𝐆_{m,S}(T)”.
+**`AlgebraicGeometry.Space.PicardObject.autMulEquivMultiplicativeGroupPoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertia.lean, line 692](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertia.lean#L692). The attribute's comment: “the 𝐆\_m factor of the inertia stack: when 𝒪\_T ⟶ f\_\{T,*}𝒪\_\{X\_T} is an isomorphism for every test scheme T, the automorphism group of the invertible module of an object of the Picard stack over T is 𝐆\_\{m,S}(T)”.
 
 > **The `𝐆_m` factor of the inertia stack, as an explicit isomorphism of groups.** When
 > `𝒪_T ⟶ f_{T, *}𝒪_{X_T}` is an isomorphism for every test scheme `T`, the automorphism group of the
@@ -286,7 +286,7 @@ def autMulEquivMultiplicativeGroupPoints (h : s.StructureSheafMapIso) (A : Picar
     Aut A.lineBundle ≃* multiplicativeGroupPointsAt B S hS A.T.left
 ```
 
-**`AlgebraicGeometry.Space.PicardObject.verticalEquivMultiplicativeGroupPoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertia.lean, line 718](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertia.lean#L718). The attribute's comment: “the points of the inertia stack above an object of the Picard stack over T are 𝐆_{m,S}(T), when 𝒪_T ⟶ f_{T,*}𝒪_{X_T} is an isomorphism for every test scheme T”.
+**`AlgebraicGeometry.Space.PicardObject.verticalEquivMultiplicativeGroupPoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertia.lean, line 718](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertia.lean#L718). The attribute's comment: “the points of the inertia stack above an object of the Picard stack over T are 𝐆\_\{m,S}(T), when 𝒪\_T ⟶ f\_\{T,*}𝒪\_\{X\_T} is an isomorphism for every test scheme T”.
 
 > **The points of the inertia stack.** When `𝒪_T ⟶ f_{T, *}𝒪_{X_T}` is an
 > isomorphism for every test scheme `T`, the endomorphisms of an object `(T, b, L)` of
@@ -302,7 +302,7 @@ def verticalEquivMultiplicativeGroupPoints (h : s.StructureSheafMapIso) (A : Pic
     A.Vertical ≃ multiplicativeGroupPointsAt B S hS A.T.left
 ```
 
-**`AlgebraicGeometry.Space.nonempty_autLineBundle_mulEquiv_multiplicativeGroupPoints_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertiaCoordinates.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertiaCoordinates.lean#L241). The attribute's comment: “the 𝐆_m factor of the inertia stack: under the hypothesis that 𝒪_T ⟶ f_{T,*}𝒪_{X_T} is an isomorphism for every test scheme T, the automorphism group of the invertible module of an object of the Picard stack over T is 𝐆_{m,S}(T)”.
+**`AlgebraicGeometry.Space.nonempty_autLineBundle_mulEquiv_multiplicativeGroupPoints_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertiaCoordinates.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertiaCoordinates.lean#L241). The attribute's comment: “the 𝐆\_m factor of the inertia stack: under the hypothesis that 𝒪\_T ⟶ f\_\{T,*}𝒪\_\{X\_T} is an isomorphism for every test scheme T, the automorphism group of the invertible module of an object of the Picard stack over T is 𝐆\_\{m,S}(T)”.
 
 > **The `𝐆_m` factor of the inertia stack.**  Assume that for every test scheme `T`
 > over the base the structure map `𝒪_T ⟶ f_{T, *}𝒪_{X_T}` of the base change is an isomorphism.
@@ -315,7 +315,7 @@ theorem nonempty_autLineBundle_mulEquiv_multiplicativeGroupPoints_of_iso
     Nonempty (Aut A.lineBundle ≃* multiplicativeGroupPointsAt B S hS A.T.left)
 ```
 
-**`AlgebraicGeometry.Space.nonempty_vertical_equiv_multiplicativeGroupPoints_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertiaCoordinates.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertiaCoordinates.lean#L254). The attribute's comment: “the points of the inertia stack above an object of the Picard stack over T are 𝐆_{m,S}(T), under the hypothesis that 𝒪_T ⟶ f_{T,*}𝒪_{X_T} is an isomorphism for every test scheme T”.
+**`AlgebraicGeometry.Space.nonempty_vertical_equiv_multiplicativeGroupPoints_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertiaCoordinates.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertiaCoordinates.lean#L254). The attribute's comment: “the points of the inertia stack above an object of the Picard stack over T are 𝐆\_\{m,S}(T), under the hypothesis that 𝒪\_T ⟶ f\_\{T,*}𝒪\_\{X\_T} is an isomorphism for every test scheme T”.
 
 > **The points of the inertia stack.**  Assume that for every test scheme `T` over the base the
 > structure map `𝒪_T ⟶ f_{T, *}𝒪_{X_T}` of the base change is an isomorphism.  Then the
@@ -328,7 +328,7 @@ theorem nonempty_vertical_equiv_multiplicativeGroupPoints_of_iso
     Nonempty (A.Vertical ≃ multiplicativeGroupPointsAt B S hS A.T.left)
 ```
 
-**`AlgebraicGeometry.Space.nonempty_equivalenceOver_picardInertia_multiplicativeGroupProduct_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertiaCoordinates.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertiaCoordinates.lean#L471). The attribute's comment: “the inertia stack of the Picard stack is 𝐆_{m,S} ×_S Picardstack_{X/B}, as categories over (Sch/S)_fppf, when 𝒪_T ⟶ f_{T,*}𝒪_{X_T} is an isomorphism for every test scheme T”.
+**`AlgebraicGeometry.Space.nonempty_equivalenceOver_picardInertia_multiplicativeGroupProduct_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertiaCoordinates.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertiaCoordinates.lean#L471). The attribute's comment: “the inertia stack of the Picard stack is 𝐆\_\{m,S} ×\_S Picardstack\_\{X/B}, as categories over (Sch/S)\_fppf, when 𝒪\_T ⟶ f\_\{T,*}𝒪\_\{X\_T} is an isomorphism for every test scheme T”.
 
 > Let `f : X ⟶ B` be a morphism of algebraic spaces over `S` such that for
 > every scheme `T` over `B` the structure map `𝒪_T ⟶ f_{T, *}𝒪_{X_T}` of the base change

@@ -49,7 +49,7 @@ public theorem exists_flat_stratification {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 0H3Z](https://stacks.math.columbia.edu/tag/0H3Z) in the Stacks Project.
 
-**`AlgebraicGeometry.HasFlatStratification.of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericFlatness/MorphismFlatStratificationQcqs.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GenericFlatness/MorphismFlatStratificationQcqs.lean#L62). References: EGA IV (6.9.3), “Case F = O_X”; EGA IV (8.9.5), “Case F = O_X”; SGA 6 XIII (1.13), “special case”.
+**`AlgebraicGeometry.HasFlatStratification.of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericFlatness/MorphismFlatStratificationQcqs.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GenericFlatness/MorphismFlatStratificationQcqs.lean#L62). References: EGA IV (6.9.3), “Case F = O\_X”; EGA IV (8.9.5), “Case F = O\_X”; SGA 6 XIII (1.13), “special case”.
 
 > A morphism of finite presentation between quasi-compact quasi-separated
 > schemes has a flat stratification of its base: a finite descending chain of closed subschemes,

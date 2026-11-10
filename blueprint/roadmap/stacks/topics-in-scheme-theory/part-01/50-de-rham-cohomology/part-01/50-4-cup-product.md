@@ -97,7 +97,7 @@ theorem deRhamCupProduct_comm (i j : ℤ) (ξ : deRhamCohomology B D i)
         (deRhamCupProduct B D c j i η ξ)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.deRhamCohomologyCup_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CupProduct/DeRhamCupProductLaws.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/CupProduct/DeRhamCupProductLaws.lean#L87). The attribute's comment: “the cup product on H^*_dR(X/S), the cup product of Cohomology Section 0FKU composed with the wedge product of 0FM2, is associative; no parameter, no hypothesis”.
+**`AlgebraicGeometry.SheafOfModules.deRhamCohomologyCup_assoc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CupProduct/DeRhamCupProductLaws.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/CupProduct/DeRhamCupProductLaws.lean#L87). The attribute's comment: “the cup product on H^*\_dR(X/S), the cup product of Cohomology Section 0FKU composed with the wedge product of 0FM2, is associative; no parameter, no hypothesis”.
 
 > **Stacks Project, Tag 0FM3.** The cup product on `H^*_{dR}(X/S)` is **associative**:
 > `(ξ ∪ η) ∪ ζ = ξ ∪ (η ∪ ζ)`, the left-hand side transported from degree `(i + j) + k` to degree
@@ -112,7 +112,7 @@ theorem deRhamCohomologyCup_assoc (i j k : ℤ) (ξ : deRhamCohomology B D i)
       deRhamCohomologyCup B D i (j + k) ξ (deRhamCohomologyCup B D j k η ζ)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.deRhamCohomologyCup_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CupProduct/DeRhamCupProductLaws.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/CupProduct/DeRhamCupProductLaws.lean#L103). The attribute's comment: “the cup product on H^*_dR(X/S), the cup product of Cohomology Section 0FKU composed with the wedge product of 0FM2, is graded commutative with sign (-1)^(ij); no parameter, no hypothesis”.
+**`AlgebraicGeometry.SheafOfModules.deRhamCohomologyCup_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/CupProduct/DeRhamCupProductLaws.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/CupProduct/DeRhamCupProductLaws.lean#L103). The attribute's comment: “the cup product on H^*\_dR(X/S), the cup product of Cohomology Section 0FKU composed with the wedge product of 0FM2, is graded commutative with sign (-1)^(ij); no parameter, no hypothesis”.
 
 > **Stacks Project, Tag 0FM3.** The cup product on `H^*_{dR}(X/S)` is **graded commutative**:
 > `ξ ∪ η = (-1)^{ij} η ∪ ξ` for `ξ` of degree `i` and `η` of degree `j`, the right-hand side
@@ -166,7 +166,7 @@ theorem wedgeProduct_summand_comm (p q : ℕ) (U : (Opens X.carrier)ᵒᵖ)
 
 [Tag 0FU6](https://stacks.math.columbia.edu/tag/0FU6) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.deRhamDifferentialGradedAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/Basic.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/Basic.lean#L430). The attribute's comment: “relative_de_rham_dga”.
+**`AlgebraicGeometry.SheafOfModules.deRhamDifferentialGradedAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/Basic.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/Basic.lean#L430). The attribute's comment: “relative\_de\_rham\_dga”.
 
 > The relative de Rham complex of `φ`, with wedge multiplication and the unit of the exterior
 > algebra, as a sheaf of differential graded `A`-algebras.
@@ -176,7 +176,7 @@ noncomputable def deRhamDifferentialGradedAlgebra :
     _root_.SheafOfModules.DifferentialGradedAlgebra.{u, u} (underlyingRingSheaf A)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.deRhamDifferentialGradedAlgebra_complex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/Basic.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/Basic.lean#L496). The attribute's comment: “relative_de_rham_dga”.
+**`AlgebraicGeometry.SheafOfModules.deRhamDifferentialGradedAlgebra_complex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/Basic.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/Basic.lean#L496). The attribute's comment: “relative\_de\_rham\_dga”.
 
 > The complex underlying the relative de Rham differential graded algebra is the relative de
 > Rham complex, extended by zero to negative degrees.
@@ -186,7 +186,7 @@ theorem deRhamDifferentialGradedAlgebra_complex :
     (deRhamDifferentialGradedAlgebra B D).complex = deRhamComplexInt B D
 ```
 
-**`AlgebraicGeometry.SheafOfModules.deRhamDifferentialGradedAlgebra_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/Basic.lean, line 502](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/Basic.lean#L502). The attribute's comment: “relative_de_rham_dga”.
+**`AlgebraicGeometry.SheafOfModules.deRhamDifferentialGradedAlgebra_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/Basic.lean, line 502](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/Basic.lean#L502). The attribute's comment: “relative\_de\_rham\_dga”.
 
 > Multiplication in the relative de Rham differential graded algebra is wedge multiplication of
 > differential forms, on every pair of homogeneous local sections.
@@ -201,7 +201,7 @@ theorem deRhamDifferentialGradedAlgebra_mul (p q : ℕ) (U : (Opens X.carrier)�
       (formProduct B p q U ω' η')
 ```
 
-**`AlgebraicGeometry.SheafOfModules.deRhamDifferentialGradedAlgebra_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/Basic.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/Basic.lean#L515). The attribute's comment: “relative_de_rham_dga”.
+**`AlgebraicGeometry.SheafOfModules.deRhamDifferentialGradedAlgebra_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/Basic.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/Basic.lean#L515). The attribute's comment: “relative\_de\_rham\_dga”.
 
 > The unit of the relative de Rham differential graded algebra is the unit of the exterior
 > algebra of `Ω`.
@@ -417,7 +417,7 @@ theorem lift_and_unit_iff_eq_restrictShiftedHom_deRhamClassMorphism (n : ℤ)
         (deRhamClassMorphism B D n ξ))
 ```
 
-**`AlgebraicGeometry.SheafOfModules.deRhamClassDerivedMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/ClassToDerivedMorphism.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/ClassToDerivedMorphism.lean#L197). The attribute's comment: “the morphism of D(f^{-1}O_S) attached to a de Rham class; the discussion of Differential Graded Sheaves Section 0FU3 is carried as the explicit named hypothesis DeRhamDerivedModuleCorrespondence, whose fields are the identification of Tag 0FTX for the regular module, the forgetful map on morphisms and the evaluation at the unit”.
+**`AlgebraicGeometry.SheafOfModules.deRhamClassDerivedMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/ClassToDerivedMorphism.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DifferentialGradedAlgebra/ClassToDerivedMorphism.lean#L197). The attribute's comment: “the morphism of D(f^\{-1}O\_S) attached to a de Rham class; the discussion of Differential Graded Sheaves Section 0FU3 is carried as the explicit named hypothesis DeRhamDerivedModuleCorrespondence, whose fields are the identification of Tag 0FTX for the regular module, the forgetful map on morphisms and the evaluation at the unit”.
 
 > **Stacks Project, Tag 0FU7.** The morphism
 >

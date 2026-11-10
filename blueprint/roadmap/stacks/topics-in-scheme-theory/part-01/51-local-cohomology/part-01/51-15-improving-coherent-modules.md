@@ -14,7 +14,7 @@ Section 51.15 of the Stacks Project, [Tag 0DX2](https://stacks.math.columbia.edu
 
 [Tag 0DX3](https://stacks.math.columbia.edu/tag/0DX3) in the Stacks Project.
 
-**`AlgebraicGeometry.depthOneQuotient_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/Basic.lean, line 948](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/Basic.lean#L948). The attribute's comment: “depth_one_quotient”.
+**`AlgebraicGeometry.depthOneQuotient_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/Basic.lean, line 948](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/Basic.lean#L948). The attribute's comment: “depth\_one\_quotient”.
 
 > The canonical quotient is coherent, surjective, unchanged away from `T`,
 > and of depth at least one along `T`.
@@ -26,7 +26,7 @@ public theorem depthOneQuotient_spec (X : Scheme.{u}) [IsNoetherian X]
     IsDepthOneQuotient T (toDepthOneQuotient X T hT F)
 ```
 
-**`AlgebraicGeometry.depthOneQuotient_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/Basic.lean, line 978](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/Basic.lean#L978). The attribute's comment: “depth_one_quotient”.
+**`AlgebraicGeometry.depthOneQuotient_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/Basic.lean, line 978](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/Basic.lean#L978). The attribute's comment: “depth\_one\_quotient”.
 
 > Every other quotient satisfying the defining properties is uniquely
 > isomorphic to the canonical one over its source.
@@ -40,7 +40,7 @@ public theorem depthOneQuotient_unique (X : Scheme.{u}) [IsNoetherian X]
       toDepthOneQuotient X T hT F ≫ e.hom = g
 ```
 
-**`AlgebraicGeometry.isDepthOneQuotient_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/FlatPullback.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/FlatPullback.lean#L186). The attribute's comment: “flat_pullback”. References: EGA IV (5.9.4), “Noetherian, coherent F”.
+**`AlgebraicGeometry.isDepthOneQuotient_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/FlatPullback.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/DepthOneQuotient/FlatPullback.lean#L186). The attribute's comment: “flat\_pullback”. References: EGA IV (5.9.4), “Noetherian, coherent F”.
 
 > For a flat morphism `f : Y ⟶ X` of Noetherian schemes, the pullback of the canonical
 > depth-one quotient of a coherent module along a specialization-closed set `T` is a depth-one
@@ -196,7 +196,7 @@ public theorem flat_pullback_coherent
 
 [Tag 0DX5](https://stacks.math.columbia.edu/tag/0DX5) in the Stacks Project.
 
-**`AlgebraicGeometry.correctedImprovement_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean, line 462](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean#L462). The attribute's comment: “corrected form (conditions corrected so that existence holds; the source's existence clause is false, Stacks.ImprovementCounterexample.not_exists_isImprovement_cexSheaf): the pullback of the corrected map along a Cohen-Macaulay morphism with Noetherian source satisfies (1), (2) and the corrected surjectivity-and-depth-one condition along f^{-1}(Z), and the depth-two condition on the inverse image of the points of Z generalizing no point as in (2)”.
+**`AlgebraicGeometry.correctedImprovement_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean, line 462](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean#L462). The attribute's comment: “corrected form (conditions corrected so that existence holds; the source's existence clause is false, Stacks.ImprovementCounterexample.not\_exists\_isImprovement\_cexSheaf): the pullback of the corrected map along a Cohen-Macaulay morphism with Noetherian source satisfies (1), (2) and the corrected surjectivity-and-depth-one condition along f^\{-1}(Z), and the depth-two condition on the inverse image of the points of Z generalizing no point as in (2)”.
 
 > **The Cohen–Macaulay pullback under the corrected conditions.**  Let `φ : F ⟶ G` satisfy the
 > corrected conditions along `Z` and let `f : Y ⟶ X` be a Cohen–Macaulay morphism of Noetherian
@@ -262,7 +262,7 @@ public theorem correctedImprovement_pullback {X Y : Scheme.{u}} [IsNoetherian X]
             ((Scheme.Modules.pullback f).obj G).val.presheaf y))
 ```
 
-**`AlgebraicGeometry.existsUnique_isCorrectedImprovement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean, line 557](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean#L557). The attribute's comment: “corrected form (conditions corrected so that existence holds): the source's existence clause is false, refuted by Stacks.ImprovementCounterexample.not_exists_isImprovement_cexSheaf; with condition (3) at the points of Z which generalize a point as in (2) without being one replaced by surjectivity on stalks and depth at least one, a map F -> F'' exists and is unique up to a unique isomorphism under F, at exactly the source's hypotheses”.
+**`AlgebraicGeometry.existsUnique_isCorrectedImprovement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean, line 557](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean#L557). The attribute's comment: “corrected form (conditions corrected so that existence holds): the source's existence clause is false, refuted by Stacks.ImprovementCounterexample.not\_exists\_isImprovement\_cexSheaf; with condition (3) at the points of Z which generalize a point as in (2) without being one replaced by surjectivity on stalks and depth at least one, a map F -> F'' exists and is unique up to a unique isomorphism under F, at exactly the source's hypotheses”.
 
 > **Stacks Project, Tag 0DX5, corrected form: the conditions corrected so that existence
 > holds.**  The existence clause of the source is false
@@ -292,7 +292,7 @@ public theorem existsUnique_isCorrectedImprovement (X : Scheme.{u}) [IsNoetheria
         ∃! e : G ≅ H, φ ≫ e.hom = ψ
 ```
 
-**`AlgebraicGeometry.exists_isImprovement_iff_two_le_depth_depthOneQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean, line 597](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean#L597). The attribute's comment: “corrected form of the existence clause, which is false as stated (refuted by Stacks.ImprovementCounterexample.not_exists_isImprovement_cexSheaf): at exactly the source's hypotheses, a map F -> F'' satisfying (1), (2) and (3) exists if and only if the depth-one quotient F' of Tag 0DX3 has depth at least two at every point of Z which generalizes a point as in (2) without being one; uniqueness and the Cohen-Macaulay pullback hold as stated”.
+**`AlgebraicGeometry.exists_isImprovement_iff_two_le_depth_depthOneQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean, line 597](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/CorrectedImprovement.lean#L597). The attribute's comment: “corrected form of the existence clause, which is false as stated (refuted by Stacks.ImprovementCounterexample.not\_exists\_isImprovement\_cexSheaf): at exactly the source's hypotheses, a map F -> F'' satisfying (1), (2) and (3) exists if and only if the depth-one quotient F' of Tag 0DX3 has depth at least two at every point of Z which generalizes a point as in (2) without being one; uniqueness and the Cohen-Macaulay pullback hold as stated”.
 
 > **Stacks Project, Tag 0DX5, corrected form of the existence clause.**  The existence clause
 > of the source is false: `Stacks.ImprovementCounterexample.not_exists_isImprovement_cexSheaf` of
@@ -478,7 +478,7 @@ public theorem improvement_unique (X : Scheme.{u}) [IsNoetherian X] (Z : Set X) 
 
 [Tag 0EI3](https://stacks.math.columbia.edu/tag/0EI3) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isDepthTwoExtension_of_isCoherent_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ClosedStabilizedExtension.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ClosedStabilizedExtension.lean#L131). The attribute's comment: “existence for a closed subset, conditional only on coherence of the single pushforward of the restriction of the depth-one quotient to the complement; the hypothesis hext of exists_isDepthTwoExtension_of_isStabilizedOpenExtension, namely a coherent stabilized open extension, is discharged here for a closed subset”.
+**`AlgebraicGeometry.exists_isDepthTwoExtension_of_isCoherent_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ClosedStabilizedExtension.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ClosedStabilizedExtension.lean#L131). The attribute's comment: “existence for a closed subset, conditional only on coherence of the single pushforward of the restriction of the depth-one quotient to the complement; the hypothesis hext of exists\_isDepthTwoExtension\_of\_isStabilizedOpenExtension, namely a coherent stabilized open extension, is discharged here for a closed subset”.
 
 > **Stacks Project, Tag 0EI3, existence for a closed subset.** A coherent module `F` on a
 > Noetherian scheme admits a map to a coherent module which is an isomorphism on the stalks away
@@ -564,7 +564,7 @@ public theorem depthTwoExtension_unique
     ∃! e : G ≅ H, φ ≫ e.hom = ψ
 ```
 
-**`AlgebraicGeometry.exists_isDepthTwoExtension_of_hasDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/DepthTwoExtensionConstruction.lean, line 480](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/DepthTwoExtensionConstruction.lean#L480). The attribute's comment: “existence, at the source's hypotheses: X Noetherian with a dualizing complex on an affine open cover, T stable under specialization, F coherent, and depth at least one at the immediate specializations into T from outside T; the witness is the single direct image j_*(F|_{X ∖ Z}) across the closure Z of the low-depth locus, not the source's colimit of pushforwards, and its coherence is proved here from Faltings through Tag 0BJY”.
+**`AlgebraicGeometry.exists_isDepthTwoExtension_of_hasDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/DepthTwoExtensionConstruction.lean, line 480](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/DepthTwoExtensionConstruction.lean#L480). The attribute's comment: “existence, at the source's hypotheses: X Noetherian with a dualizing complex on an affine open cover, T stable under specialization, F coherent, and depth at least one at the immediate specializations into T from outside T; the witness is the single direct image j\_*(F|\_\{X ∖ Z}) across the closure Z of the low-depth locus, not the source's colimit of pushforwards, and its coherence is proved here from Faltings through Tag 0BJY”.
 
 > **Existence of the depth-two extension.**  Let `X` be a Noetherian scheme which locally has a
 > dualizing complex, let `T ⊆ X` be stable under specialization and let `F` be coherent.  Assume
@@ -661,7 +661,7 @@ public theorem depthTwoExtension_pullback
     IsDepthTwoExtension (f ⁻¹' T) ((Scheme.Modules.pullback f).map φ)
 ```
 
-**`AlgebraicGeometry.exists_isDepthTwoExtension_of_isStabilizedOpenExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ExistenceDepthOutside.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ExistenceDepthOutside.lean#L66). The attribute's comment: “existence, conditional only on a coherent stabilized open extension of the depth-one quotient along the subset; the other hypothesis of exists_isDepthTwoExtension, namely Tag 0EY0 part (3), is discharged here”.
+**`AlgebraicGeometry.exists_isDepthTwoExtension_of_isStabilizedOpenExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ExistenceDepthOutside.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ExistenceDepthOutside.lean#L66). The attribute's comment: “existence, conditional only on a coherent stabilized open extension of the depth-one quotient along the subset; the other hypothesis of exists\_isDepthTwoExtension, namely Tag 0EY0 part (3), is discharged here”.
 
 > A coherent module on a Noetherian scheme admits a map to a coherent module which is an
 > isomorphism on the stalks away from a specialization-stable subset and whose stalks on that
@@ -753,7 +753,7 @@ public theorem exists_isDepthTwoExtension_of_finite_depthOne_locus
 
 [Tag 0EI4](https://stacks.math.columbia.edu/tag/0EI4) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isNestedImprovement_of_isStabilizedOpenExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ExistenceDepthOutside.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ExistenceDepthOutside.lean#L81). The attribute's comment: “existence, conditional only on a coherent stabilized open extension of the depth-one quotient along T'; the other hypothesis of exists_isNestedImprovement, namely Tag 0EY0 part (3), is discharged here”.
+**`AlgebraicGeometry.exists_isNestedImprovement_of_isStabilizedOpenExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ExistenceDepthOutside.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/ExistenceDepthOutside.lean#L81). The attribute's comment: “existence, conditional only on a coherent stabilized open extension of the depth-one quotient along T'; the other hypothesis of exists\_isNestedImprovement, namely Tag 0EY0 part (3), is discharged here”.
 
 > A coherent module on a Noetherian scheme admits an improvement along a nested pair `T' ⊆ T`
 > of subsets stable under specialization, as soon as the depth-one quotient along `T` has a

@@ -36,7 +36,7 @@ theorem hasCokernels_iAdicallyCompleteModuleCat
     HasCokernels (IAdicallyCompleteModuleCat.{v} R I)
 ```
 
-**`Stacks.Examples.not_abelian_iAdicallyCompleteModuleCat_of_principal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/CompleteModulesNotAbelian.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/CompleteModulesNotAbelian.lean#L117). The attribute's comment: “not_abelian, for a named ring and a named principal ideal”.
+**`Stacks.Examples.not_abelian_iAdicallyCompleteModuleCat_of_principal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/CompleteModulesNotAbelian.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/CompleteModulesNotAbelian.lean#L117). The attribute's comment: “not\_abelian, for a named ring and a named principal ideal”.
 
 > If `R` is a Noetherian ring without zero divisors which is complete for a principal ideal
 > `I = (π)` whose generator is neither zero nor a unit, and `E : Type v` is an `R`-module with a
@@ -52,7 +52,7 @@ theorem not_abelian_iAdicallyCompleteModuleCat_of_principal
     ¬ Nonempty (Abelian (IAdicallyCompleteModuleCat.{v} R I))
 ```
 
-**`Stacks.Examples.exists_not_abelian_iAdicallyCompleteModuleCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/CompleteModulesNotAbelian.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/CompleteModulesNotAbelian.lean#L319). The attribute's comment: “not_abelian”.
+**`Stacks.Examples.exists_not_abelian_iAdicallyCompleteModuleCat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/CompleteModulesNotAbelian.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/CompleteModulesNotAbelian.lean#L319). The attribute's comment: “not\_abelian”.
 
 > There is a commutative ring with a finitely generated ideal for which the category of
 > adically complete modules is not abelian.

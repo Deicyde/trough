@@ -54,7 +54,7 @@ theorem coherentRelativeDiagonal_affine_finitePresentation :
 
 [Tag 0DLZ](https://stacks.math.columbia.edu/tag/0DLZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoherentSituation.isFiberedQuasiSeparated_and_isLocallyOfFinitePresentation_toBaseCFG`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackQuasiSeparatedFinitePresentation.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackQuasiSeparatedFinitePresentation.lean#L86). The attribute's comment: “quasi-separated as Stacks 04YW for a 1-morphism of categories fibred in groupoids; locally of finite presentation as Stacks 06Q2 (1) for the small models, Coh_{X/B} having its hom types one universe above the site”.
+**`AlgebraicGeometry.Space.CoherentSituation.isFiberedQuasiSeparated_and_isLocallyOfFinitePresentation_toBaseCFG`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackQuasiSeparatedFinitePresentation.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackQuasiSeparatedFinitePresentation.lean#L86). The attribute's comment: “quasi-separated as Stacks 04YW for a 1-morphism of categories fibred in groupoids; locally of finite presentation as Stacks 06Q2 (1) for the small models, Coh\_\{X/B} having its hom types one universe above the site”.
 
 > Let `f : X ⟶ B` be a morphism of algebraic spaces of finite presentation. Then the morphism
 > `Coh_{X/B} ⟶ B` is quasi-separated and locally of finite presentation.
@@ -80,7 +80,7 @@ theorem isFiberedQuasiSeparated_and_isLocallyOfFinitePresentation_toBaseCFG
 
 [Tag 0DM0](https://stacks.math.columbia.edu/tag/0DM0) in the Stacks Project.
 
-**`StacksDraft.CoherentGenericFibre.exists_submodule_finite_flat_isLocalizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackValuativeChart.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackValuativeChart.lean#L246). The attribute's comment: “the affine-chart case: over a valuation ring a module of finite type on the chart of the generic fibre is the generic fibre of a module of finite type on the chart which is flat over the valuation ring, its flatness being Stacks 0539 and its generic fibre being identified by a localization; the base-change reduction of the first step, the gluing of the chart-wise extensions over Stacks 0829, the proper support, the finite presentation of Stacks 0DLR, and hence the statement for the 1-morphism Cohstack_{X/B} -> B in the sense of Stacks 0CLK are not covered”.
+**`StacksDraft.CoherentGenericFibre.exists_submodule_finite_flat_isLocalizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackValuativeChart.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackValuativeChart.lean#L246). The attribute's comment: “the affine-chart case: over a valuation ring a module of finite type on the chart of the generic fibre is the generic fibre of a module of finite type on the chart which is flat over the valuation ring, its flatness being Stacks 0539 and its generic fibre being identified by a localization; the base-change reduction of the first step, the gluing of the chart-wise extensions over Stacks 0829, the proper support, the finite presentation of Stacks 0DLR, and hence the statement for the 1-morphism Cohstack\_\{X/B} -> B in the sense of Stacks 0CLK are not covered”.
 
 > **Stacks 0DM0, on an affine chart over a valuation ring.**  Let `R` be a valuation ring, `A`
 > an `R`-algebra and `A_K` the localization of `A` at the nonzero elements of `R`, that is, the
@@ -167,7 +167,7 @@ theorem isFinitePresentation_of_comp_isProper_of_isSeparated
     IsFinitePresentation B S hS π
 ```
 
-**`AlgebraicGeometry.Space.isFinite_comp_of_isLocallyQuasiFinite_of_comp_isProper_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackPushforwardReduction.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackPushforwardReduction.lean#L85). The attribute's comment: “the finiteness of the composite Z ⟶ X_T ⟶ Y_T in the first paragraph of the proof, the composite being locally quasi-finite”.
+**`AlgebraicGeometry.Space.isFinite_comp_of_isLocallyQuasiFinite_of_comp_isProper_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackPushforwardReduction.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackPushforwardReduction.lean#L85). The attribute's comment: “the finiteness of the composite Z ⟶ X\_T ⟶ Y\_T in the first paragraph of the proof, the composite being locally quasi-finite”.
 
 > Let `i : W ⟶ X`, `π : X ⟶ Y` and `pY : Y ⟶ Z` be morphisms of algebraic spaces over `S`. If
 > `i` and `π` are locally quasi-finite, the composite `W ⟶ Z` is proper and `pY` is separated, then
@@ -187,7 +187,7 @@ theorem isFinite_comp_of_isLocallyQuasiFinite_of_comp_isProper_of_isSeparated
 
 [Tag 0DNA](https://stacks.math.columbia.edu/tag/0DNA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.CoherentSituation.isOpenSubspace_supportFactorizationLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackOpenImmersion.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackOpenImmersion.lean#L176). The attribute's comment: “an ingredient only: the open locus of the source's hint, namely the locus in T above which Supp(F) lands in X_T. The conclusion itself is not stated, the 1-morphism Coh_{X/B} ⟶ Coh_{Y/B} of 0DN9 not being constructed in this development”.
+**`AlgebraicGeometry.Space.CoherentSituation.isOpenSubspace_supportFactorizationLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackOpenImmersion.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackOpenImmersion.lean#L176). The attribute's comment: “an ingredient only: the open locus of the source's hint, namely the locus in T above which Supp(F) lands in X\_T. The conclusion itself is not stated, the 1-morphism Coh\_\{X/B} ⟶ Coh\_\{Y/B} of 0DN9 not being constructed in this development”.
 
 > For an object `(T, g, F)` of `Coh_{Y/B}` the locus in `T` above which `Supp(F)` lands in
 > the open subspace `X_T ⊆ Y_T` is an open subspace of `T`.
@@ -199,7 +199,7 @@ theorem isOpenSubspace_supportFactorizationLocus (hπ : π ≫ D.f = bX)
     IsOpenSubspace B S hS (supportFactorizationLocus D hπ obj hU)
 ```
 
-**`AlgebraicGeometry.Space.CoherentSituation.factorsThrough_supportFactorizationLocus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackOpenImmersion.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackOpenImmersion.lean#L190). The attribute's comment: “an ingredient only: the universal property of that locus, a test object factoring through it exactly when the base change of Supp(F) lands in X_T. The residues are the 1-morphism of 0DN9 and the algebraicity of Coh of 09DS”.
+**`AlgebraicGeometry.Space.CoherentSituation.factorsThrough_supportFactorizationLocus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackOpenImmersion.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackOpenImmersion.lean#L190). The attribute's comment: “an ingredient only: the universal property of that locus, a test object factoring through it exactly when the base change of Supp(F) lands in X\_T. The residues are the 1-morphism of 0DN9 and the algebraicity of Coh of 09DS”.
 
 > A morphism `T' ⟶ T` from an algebraic space factors through the locus exactly when the
 > base change of `Supp(F)` to `T'` lands in `X_T`.
@@ -219,7 +219,7 @@ theorem factorsThrough_supportFactorizationLocus_iff (hπ : π ≫ D.f = bX)
             (supportSubspace D obj hU).ι
 ```
 
-**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_and_isOpenImmersion_cohPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackPushforwardOpenImmersion.lean, line 668](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackPushforwardOpenImmersion.lean#L668). The attribute's comment: “the whole statement: for an open immersion π : X → Y of algebraic spaces separated and of finite presentation over B, the morphism Cohstack_{X/B} → Cohstack_{Y/B} of Tag 0DN9 is representable by algebraic spaces and an open immersion in the sense of Tag 04XB, which together are representability by open immersions (Tag 04YL (1))”.
+**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_and_isOpenImmersion_cohPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackPushforwardOpenImmersion.lean, line 668](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackPushforwardOpenImmersion.lean#L668). The attribute's comment: “the whole statement: for an open immersion π : X → Y of algebraic spaces separated and of finite presentation over B, the morphism Cohstack\_\{X/B} → Cohstack\_\{Y/B} of Tag 0DN9 is representable by algebraic spaces and an open immersion in the sense of Tag 04XB, which together are representability by open immersions (Tag 04YL (1))”.
 
 > **Stacks 0DNA.**  Let `B` be an algebraic space and let `π : X ⟶ Y` be an open immersion of
 > algebraic spaces which are separated and of finite presentation over `B`, the structure morphism
@@ -254,7 +254,7 @@ theorem isRepresentableByAlgebraicSpaces_and_isOpenImmersion_cohPushforward
 
 [Tag 0DNB](https://stacks.math.columbia.edu/tag/0DNB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_and_isClosedImmersion_cohPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackPushforwardClosedImmersion.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackPushforwardClosedImmersion.lean#L460). The attribute's comment: “the whole statement: for a closed immersion π : X → Y of algebraic spaces separated and of finite presentation over B, the morphism Cohstack_{X/B} → Cohstack_{Y/B} of Tag 0DN9 is representable by algebraic spaces and a closed immersion in the sense of Tag 04XB, which together are representability by closed immersions (Tag 04YL (2))”.
+**`AlgebraicGeometry.Space.isRepresentableByAlgebraicSpaces_and_isClosedImmersion_cohPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackPushforwardClosedImmersion.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackPushforwardClosedImmersion.lean#L460). The attribute's comment: “the whole statement: for a closed immersion π : X → Y of algebraic spaces separated and of finite presentation over B, the morphism Cohstack\_\{X/B} → Cohstack\_\{Y/B} of Tag 0DN9 is representable by algebraic spaces and a closed immersion in the sense of Tag 04XB, which together are representability by closed immersions (Tag 04YL (2))”.
 
 > **Stacks 0DNB.**  Let `B` be an algebraic space and let `π : X ⟶ Y` be a closed immersion of
 > algebraic spaces which are separated and of finite presentation over `B`, the structure morphism
@@ -333,7 +333,7 @@ structure NumericalSituation
 
 [Tag 0DND](https://stacks.math.columbia.edu/tag/0DND) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.NumericalSituation.isAlgebraicStack_and_numericalSubstackι_isFlatClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalSubstackAlgebraicFlatClosed.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalSubstackAlgebraicFlatClosed.lean#L62). The attribute's comment: “Coh^P_{X/B} is algebraic and Coh^P_{X/B} -> Coh_{X/B} is a flat closed immersion”.
+**`AlgebraicGeometry.Space.NumericalSituation.isAlgebraicStack_and_numericalSubstackι_isFlatClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalSubstackAlgebraicFlatClosed.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalSubstackAlgebraicFlatClosed.lean#L62). The attribute's comment: “Coh^P\_\{X/B} is algebraic and Coh^P\_\{X/B} -> Coh\_\{X/B} is a flat closed immersion”.
 
 > In Situation 0DNC the substack `Coh^P_{X/B}` of `Coh_{X/B}` cut out by `χ_i = P(i)` is an
 > algebraic stack, and its inclusion into `Coh_{X/B}` is a flat closed immersion: representable by
@@ -351,7 +351,7 @@ theorem isAlgebraicStack_and_numericalSubstackι_isFlatClosedImmersion :
         (D.conditionι N.HasNumericalInvariants N.hasNumericalInvariants_inherited)
 ```
 
-**`AlgebraicGeometry.Space.NumericalSituation.numericalSubstackι_isOpenAndClosedImmersion_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalSubstackOpenClosedImmersion.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalSubstackOpenClosedImmersion.lean#L80). The attribute's comment: “the case I finite: Coh^P_{X/B} is an open and closed substack of Coh_{X/B}”.
+**`AlgebraicGeometry.Space.NumericalSituation.numericalSubstackι_isOpenAndClosedImmersion_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalSubstackOpenClosedImmersion.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalSubstackOpenClosedImmersion.lean#L80). The attribute's comment: “the case I finite: Coh^P\_\{X/B} is an open and closed substack of Coh\_\{X/B}”.
 
 > If `I` is finite, `Coh^P_{X/B}` is an open and closed substack of `Coh_{X/B}`: its inclusion
 > is representable by algebraic spaces, an open immersion and a closed immersion.
@@ -366,7 +366,7 @@ theorem numericalSubstackι_isOpenAndClosedImmersion_of_finite [Finite N.I] :
         (D.conditionι N.HasNumericalInvariants N.hasNumericalInvariants_inherited)
 ```
 
-**`AlgebraicGeometry.Space.NumericalSituation.numericalSubstackι_isOpenAndClosedImmersion_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalSubstackOpenClosedImmersion.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalSubstackOpenClosedImmersion.lean#L96). The attribute's comment: “the case B locally Noetherian: Coh^P_{X/B} is an open and closed substack of Coh_{X/B}”.
+**`AlgebraicGeometry.Space.NumericalSituation.numericalSubstackι_isOpenAndClosedImmersion_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalSubstackOpenClosedImmersion.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalSubstackOpenClosedImmersion.lean#L96). The attribute's comment: “the case B locally Noetherian: Coh^P\_\{X/B} is an open and closed substack of Coh\_\{X/B}”.
 
 > If `B` is locally Noetherian (`hB`) and `I` is arbitrary, `Coh^P_{X/B}` is an open and closed
 > substack of `Coh_{X/B}`: its inclusion is representable by algebraic spaces, an open immersion and
@@ -387,7 +387,7 @@ theorem numericalSubstackι_isOpenAndClosedImmersion_of_isLocallyNoetherian
 
 [Tag 0DNE](https://stacks.math.columbia.edu/tag/0DNE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.NumericalSituation.isClopen_setOf_chi_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalSubstack.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalSubstack.lean#L131). The attribute's comment: “the open-and-closed clause only, at the level of the locus in |T| cut out by the condition chi_i = P i; Coh_{X/B} is no category here, so no substack claim is made”.
+**`AlgebraicGeometry.Space.NumericalSituation.isClopen_setOf_chi_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/NumericalSubstack.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/NumericalSubstack.lean#L131). The attribute's comment: “the open-and-closed clause only, at the level of the locus in |T| cut out by the condition chi\_i = P i; Coh\_\{X/B} is no category here, so no substack claim is made”.
 
 > **Stacks 0DNE, the open-and-closed clause, at the level of the locus in `|T|`.**  For an
 > object `(T, 𝓕)` of `Coh_{X/B}` and an index `i`, the subset of `|T|` on which the numerical

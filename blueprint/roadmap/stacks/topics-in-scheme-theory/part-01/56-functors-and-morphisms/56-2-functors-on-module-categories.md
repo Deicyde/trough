@@ -14,7 +14,7 @@ Section 56.2 of the Stacks Project, [Tag 0GNI](https://stacks.math.columbia.edu/
 
 [Tag 0GNJ](https://stacks.math.columbia.edu/tag/0GNJ) in the Stacks Project.
 
-**`ModuleCat.filteredColimitExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsModuleCategories/Extension.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsModuleCategories/Extension.lean#L71). The attribute's comment: “existence”. References: SGA 4 I (8.7.3), “existence, C=Mod^fp_A”.
+**`ModuleCat.filteredColimitExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsModuleCategories/Extension.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsModuleCategories/Extension.lean#L71). The attribute's comment: “existence”. References: SGA 4 I (8.7.3), “existence, C=Mod^fp\_A”.
 
 > A functor on finitely presented modules has an extension to all modules which preserves
 > filtered colimits.
@@ -26,7 +26,7 @@ public noncomputable def filteredColimitExtension
     FilteredColimitExtension A F
 ```
 
-**`ModuleCat.FilteredColimitExtension.existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsModuleCategories/Extension.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsModuleCategories/Extension.lean#L89). The attribute's comment: “uniqueness”. References: SGA 4 I (8.7.3), “uniqueness, C=Mod^fp_A”; SGA 4 I (8.7.2), “special case”.
+**`ModuleCat.FilteredColimitExtension.existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsModuleCategories/Extension.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsModuleCategories/Extension.lean#L89). The attribute's comment: “uniqueness”. References: SGA 4 I (8.7.3), “uniqueness, C=Mod^fp\_A”; SGA 4 I (8.7.2), “special case”.
 
 > Two filtered-colimit-preserving extensions are related by a unique natural isomorphism
 > compatible with their specified identifications on finitely presented modules.

@@ -264,7 +264,7 @@ theorem isIso_smallEtaleDerivedBaseChangeMap_of_torIndependent (sq : IsPullback 
 
 [Tag 0E4S](https://stacks.math.columbia.edu/tag/0E4S) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_globalDerivedHomBaseChangeMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChangeIso.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChangeIso.lean#L93). The attribute's comment: “case (1): M perfect, K in D_QCoh”.
+**`AlgebraicGeometry.Space.isIso_globalDerivedHomBaseChangeMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChangeIso.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChangeIso.lean#L93). The attribute's comment: “case (1): M perfect, K in D\_QCoh”.
 
 > **Stacks 0E4S, case (1).** Let `g : S' ⟶ S` be a morphism of affine schemes, `R = Γ(S, 𝒪)`,
 > `R' = Γ(S', 𝒪)`, and let `X' = X ×_S S'` for `f : X ⟶ S` quasi-compact and quasi-separated with
@@ -283,7 +283,7 @@ theorem isIso_globalDerivedHomBaseChangeMap_of_isPerfect
     IsIso (globalDerivedHomBaseChangeMap B S hS g f f' g' sq.w M K)
 ```
 
-**`AlgebraicGeometry.Space.isIso_globalDerivedHomBaseChangeMap_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChangeIso.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChangeIso.lean#L118). The attribute's comment: “case (2): M pseudo-coherent, K in D^+_QCoh, R' of finite tor dimension over R”.
+**`AlgebraicGeometry.Space.isIso_globalDerivedHomBaseChangeMap_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChangeIso.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChangeIso.lean#L118). The attribute's comment: “case (2): M pseudo-coherent, K in D^+\_QCoh, R' of finite tor dimension over R”.
 
 > **Stacks 0E4S, case (2).** Let `g : S' ⟶ S` be a morphism of affine schemes, `R = Γ(S, 𝒪)`,
 > `R' = Γ(S', 𝒪)`, and let `X' = X ×_S S'` for `f : X ⟶ S` quasi-compact and quasi-separated with

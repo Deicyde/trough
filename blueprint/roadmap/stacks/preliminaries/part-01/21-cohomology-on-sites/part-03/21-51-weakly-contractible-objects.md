@@ -109,7 +109,7 @@ theorem nonempty_cokernel_iso_homology_one_of_isDerivedLimit_single
       (DerivedCategory.homologyFunctor (SheafOfModules.{t} S.O) 1).obj L)
 ```
 
-**`Stacks.WeaklyContractible.isLimit_productFanInDerivedCategory_of_weaklyContractibleObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/DerivedProducts.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/DerivedProducts.lean#L68). The attribute's comment: “derived_products_termwise”.
+**`Stacks.WeaklyContractible.isLimit_productFanInDerivedCategory_of_weaklyContractibleObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/DerivedProducts.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/DerivedProducts.lean#L68). The attribute's comment: “derived\_products\_termwise”.
 
 > **Stacks 0947(5).** On a ringed site with a covering collection of weakly contractible
 > objects, products in the derived category of sheaves of modules are computed by termwise
@@ -126,7 +126,7 @@ theorem isLimit_productFanInDerivedCategory_of_weaklyContractibleObjectsSituatio
     Nonempty (IsLimit (Stacks.DerivedProducts.productFanInDerivedCategory K))
 ```
 
-**`Stacks.WeaklyContractible.exact_iff_exact_sections_of_weaklyContractibleObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/ExactSections.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/ExactSections.lean#L98). The attribute's comment: “exact_iff_sections”.
+**`Stacks.WeaklyContractible.exact_iff_exact_sections_of_weaklyContractibleObjectsSituation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/ExactSections.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/ExactSections.lean#L98). The attribute's comment: “exact\_iff\_sections”.
 
 > In a site covered by weakly contractible objects, a complex of sheaves of modules is
 > exact if and only if it is exact on sections over every chosen weakly contractible object.

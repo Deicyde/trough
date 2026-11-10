@@ -14,7 +14,7 @@ Section 111.49 of the Stacks Project, [Tag 02AQ](https://stacks.math.columbia.ed
 
 [Tag 02AR](https://stacks.math.columbia.edu/tag/02AR) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.mono_toTotalQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CartierDivisor.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CartierDivisor.lean#L164). The attribute's comment: “unit_sheaf_sequence”.
+**`AlgebraicGeometry.Scheme.mono_toTotalQuotientSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CartierDivisor.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CartierDivisor.lean#L164). The attribute's comment: “unit\_sheaf\_sequence”.
 
 > **Stacks 02AR part (6).** The structure sheaf of a scheme is a subsheaf of its sheaf of
 > total quotient rings.
@@ -24,7 +24,7 @@ theorem Scheme.mono_toTotalQuotientSheaf (Y : Scheme.{u}) :
     Mono Y.toTotalQuotientSheaf
 ```
 
-**`AlgebraicGeometry.Scheme.shortExact_unitGroupSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CartierDivisor.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CartierDivisor.lean#L171). The attribute's comment: “unit_sheaf_sequence”.
+**`AlgebraicGeometry.Scheme.shortExact_unitGroupSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CartierDivisor.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CartierDivisor.lean#L171). The attribute's comment: “unit\_sheaf\_sequence”.
 
 > **Stacks 02AR part (6).** The sequence `0 ⟶ 𝒪_X^* ⟶ 𝒦_X^* ⟶ 𝒦_X^*/𝒪_X^* ⟶ 0` of
 > unit-group sheaves of a scheme is short exact.
@@ -42,7 +42,7 @@ theorem Scheme.shortExact_unitGroupSheaf (Y : Scheme.{u}) :
         simp)).ShortExact
 ```
 
-**`AlgebraicGeometry.Scheme.CartierDivisor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CartierDivisor.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CartierDivisor.lean#L187). The attribute's comment: “cartier_divisor”.
+**`AlgebraicGeometry.Scheme.CartierDivisor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CartierDivisor.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CartierDivisor.lean#L187). The attribute's comment: “cartier\_divisor”.
 
 > **Stacks 02AR part (7).** A Cartier divisor on a scheme is a global section of the quotient
 > sheaf `𝒦_X^*/𝒪_X^*`.
@@ -51,7 +51,7 @@ theorem Scheme.shortExact_unitGroupSheaf (Y : Scheme.{u}) :
 abbrev Scheme.CartierDivisor (Y : Scheme.{u}) : Type u
 ```
 
-**`AlgebraicGeometry.exists_affineOpen_local_representation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean, line 576](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean#L576). The attribute's comment: “cartier_weil_divisor”.
+**`AlgebraicGeometry.exists_affineOpen_local_representation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean, line 576](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean#L576). The attribute's comment: “cartier\_weil\_divisor”.
 
 > **Tag 02AR part (8), the local presentation of clause (b).** Near any point of a locally
 > Noetherian integral scheme, a Cartier divisor is the image of a unit of the sheaf of total
@@ -69,7 +69,7 @@ theorem exists_affineOpen_local_representation [IsIntegral X] [IsLocallyNoetheri
           (rawUnitGroupQuotientMap X.toTotalQuotientSheaf).app (op U) v
 ```
 
-**`AlgebraicGeometry.cartierWeilDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean, line 724](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean#L724). The attribute's comment: “cartier_weil_divisor”.
+**`AlgebraicGeometry.cartierWeilDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean, line 724](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean#L724). The attribute's comment: “cartier\_weil\_divisor”.
 
 > **Stacks 02AR part (8).** The Weil divisor `[τ] = Σ v_Z(τ) [Z]` of a Cartier divisor on a
 > Noetherian integral scheme.
@@ -78,7 +78,7 @@ theorem exists_affineOpen_local_representation [IsIntegral X] [IsLocallyNoetheri
 def cartierWeilDivisor [IsNoetherian X] [IsIntegral X] (τ : X.CartierDivisor) : WeilDivisor X
 ```
 
-**`AlgebraicGeometry.cartierWeilDivisor_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean, line 731](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean#L731). The attribute's comment: “cartier_weil_divisor”.
+**`AlgebraicGeometry.cartierWeilDivisor_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean, line 731](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean#L731). The attribute's comment: “cartier\_weil\_divisor”.
 
 > **Stacks 02AR part (8).** The coefficient of `[τ]` at a prime divisor is the order
 > `v_Z(τ)`.
@@ -89,7 +89,7 @@ theorem cartierWeilDivisor_apply [IsNoetherian X] [IsIntegral X] (τ : X.Cartier
     (cartierWeilDivisor τ).1 Z = cartierMultiplicity τ Z.genericPoint
 ```
 
-**`AlgebraicGeometry.cartierWeilDivisor_apply_of_germ_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean, line 739](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean#L739). The attribute's comment: “cartier_weil_divisor”.
+**`AlgebraicGeometry.cartierWeilDivisor_apply_of_germ_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean, line 739](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean#L739). The attribute's comment: “cartier\_weil\_divisor”.
 
 > **Stacks 02AR part (8), clause (a).** The coefficient of `[τ]` vanishes at a prime divisor at
 > whose generic point the germ of `τ` is zero.
@@ -101,7 +101,7 @@ theorem cartierWeilDivisor_apply_of_germ_eq_zero [IsNoetherian X] [IsIntegral X]
     (cartierWeilDivisor τ).1 Z = 0
 ```
 
-**`AlgebraicGeometry.cartierWeilDivisor_apply_of_local_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean, line 748](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean#L748). The attribute's comment: “cartier_weil_divisor”.
+**`AlgebraicGeometry.cartierWeilDivisor_apply_of_local_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean, line 748](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CartierWeilDivisor.lean#L748). The attribute's comment: “cartier\_weil\_divisor”.
 
 > **Stacks 02AR part (8), clause (b).** The coefficient of `[τ]` at a prime divisor computed
 > from a local presentation `a / b` of `τ` on an open neighbourhood of its generic point.
@@ -124,7 +124,7 @@ theorem cartierWeilDivisor_apply_of_local_eq [IsNoetherian X] [IsIntegral X]
           Ideal.span {X.presheaf.germ U Z.genericPoint hξ b})).toNat : ℤ)
 ```
 
-**`AlgebraicGeometry.effectiveCartierWeilDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartierWeilDivisor.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartierWeilDivisor.lean#L314). The attribute's comment: “effective_cartier_weil_divisor”.
+**`AlgebraicGeometry.effectiveCartierWeilDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartierWeilDivisor.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartierWeilDivisor.lean#L314). The attribute's comment: “effective\_cartier\_weil\_divisor”.
 
 > **Stacks 02AR part (5).** The Weil divisor `[D] = Σ v_Z(D) [Z]` of an effective Cartier
 > divisor on a Noetherian integral scheme.
@@ -138,7 +138,7 @@ def effectiveCartierWeilDivisor [IsNoetherian X] [IsIntegral X] (I : X.IdealShea
     (_hI : Stacks.Divisors.IsEffectiveCartierDivisor I) : WeilDivisor X
 ```
 
-**`AlgebraicGeometry.effectiveCartierWeilDivisor_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartierWeilDivisor.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartierWeilDivisor.lean#L323). The attribute's comment: “effective_cartier_weil_divisor”.
+**`AlgebraicGeometry.effectiveCartierWeilDivisor_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartierWeilDivisor.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartierWeilDivisor.lean#L323). The attribute's comment: “effective\_cartier\_weil\_divisor”.
 
 > **Stacks 02AR part (5).** The coefficient of `[D]` at a prime divisor is the order
 > `v_Z(D)`.
@@ -150,7 +150,7 @@ theorem effectiveCartierWeilDivisor_apply [IsNoetherian X] [IsIntegral X]
     (effectiveCartierWeilDivisor I hI).1 Z = effectiveCartierMultiplicity I Z
 ```
 
-**`AlgebraicGeometry.effectiveCartierWeilDivisor_apply_of_notMem_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartierWeilDivisor.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartierWeilDivisor.lean#L331). The attribute's comment: “effective_cartier_weil_divisor”.
+**`AlgebraicGeometry.effectiveCartierWeilDivisor_apply_of_notMem_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartierWeilDivisor.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartierWeilDivisor.lean#L331). The attribute's comment: “effective\_cartier\_weil\_divisor”.
 
 > **Stacks 02AR part (5), clause (a).** The coefficient of `[D]` at a prime divisor whose
 > generic point lies outside `D` is zero.
@@ -162,7 +162,7 @@ theorem effectiveCartierWeilDivisor_apply_of_notMem_support [IsNoetherian X] [Is
     (effectiveCartierWeilDivisor I hI).1 Z = 0
 ```
 
-**`AlgebraicGeometry.effectiveCartierWeilDivisor_apply_of_ideal_eq_span`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartierWeilDivisor.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartierWeilDivisor.lean#L352). The attribute's comment: “effective_cartier_weil_divisor”.
+**`AlgebraicGeometry.effectiveCartierWeilDivisor_apply_of_ideal_eq_span`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartierWeilDivisor.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartierWeilDivisor.lean#L352). The attribute's comment: “effective\_cartier\_weil\_divisor”.
 
 > **Stacks 02AR part (5), clause (b).** When the generic point of `Z` lies in `D`, the
 > coefficient of `[D]` at `Z` is the length of `𝒪_{X, Z} / (f)` for the nonzerodivisor `f` that
@@ -179,7 +179,7 @@ theorem effectiveCartierWeilDivisor_apply_of_ideal_eq_span [IsNoetherian X] [IsI
           Ideal.span {(X.presheaf.germ U.1 Z.genericPoint hxU).hom f})).toNat : ℤ)
 ```
 
-**`AlgebraicGeometry.Scheme.totalQuotientSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TotalQuotient.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TotalQuotient.lean#L83). The attribute's comment: “total_quotient_sheaf”. References: EGA IV (20.1.3).
+**`AlgebraicGeometry.Scheme.totalQuotientSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TotalQuotient.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TotalQuotient.lean#L83). The attribute's comment: “total\_quotient\_sheaf”. References: EGA IV (20.1.3).
 
 > The sheaf of total quotient rings of a scheme. It is the sheafification of the presheaf
 > which, on each open set, localizes the ring of regular functions at the sections whose germs
@@ -190,7 +190,7 @@ noncomputable abbrev Scheme.totalQuotientSheaf (Y : Scheme.{u}) :
     TopCat.Sheaf CommRingCat.{u} Y
 ```
 
-**`AlgebraicGeometry.Scheme.toTotalQuotientSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TotalQuotient.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TotalQuotient.lean#L90). The attribute's comment: “total_quotient_sheaf”.
+**`AlgebraicGeometry.Scheme.toTotalQuotientSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TotalQuotient.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/TotalQuotient.lean#L90). The attribute's comment: “total\_quotient\_sheaf”.
 
 > The canonical morphism from the structure sheaf to the sheaf of total quotient rings,
 > giving the latter its structure as a sheaf of `𝒪_X`-algebras.
@@ -202,9 +202,9 @@ noncomputable def Scheme.toTotalQuotientSheaf (Y : Scheme.{u}) :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.PrimeDivisor`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/PrimeDivisor.lean#L58), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Divisors/PrimeDivisorStalk.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/PrimeDivisorStalk.lean#L143) (StacksFrontier): “prime_divisor”.
-- [`AlgebraicGeometry.WeilDivisor`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/PrimeDivisor.lean#L90), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Divisors/PrimeDivisorStalk.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/PrimeDivisorStalk.lean#L145) (StacksFrontier): “weil_divisor”.
-- [`Stacks.Divisors.IsEffectiveCartierDivisor`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier.lean#L79), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Divisors/PrimeDivisorStalk.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/PrimeDivisorStalk.lean#L147) (StacksFrontier): “effective_cartier_divisor”.
+- [`AlgebraicGeometry.PrimeDivisor`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/PrimeDivisor.lean#L58), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Divisors/PrimeDivisorStalk.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/PrimeDivisorStalk.lean#L143) (StacksFrontier): “prime\_divisor”.
+- [`AlgebraicGeometry.WeilDivisor`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/PrimeDivisor.lean#L90), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Divisors/PrimeDivisorStalk.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/PrimeDivisorStalk.lean#L145) (StacksFrontier): “weil\_divisor”.
+- [`Stacks.Divisors.IsEffectiveCartierDivisor`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier.lean#L79), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Divisors/PrimeDivisorStalk.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/PrimeDivisorStalk.lean#L147) (StacksFrontier): “effective\_cartier\_divisor”.
 
 ## Depends on
 

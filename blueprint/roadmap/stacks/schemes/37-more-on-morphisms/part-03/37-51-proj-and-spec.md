@@ -14,7 +14,7 @@ Section 37.51 of the Stacks Project, [Tag 0EKF](https://stacks.math.columbia.edu
 
 [Tag 0EKF](https://stacks.math.columbia.edu/tag/0EKF) in the Stacks Project.
 
-**`Stacks.Truncation.span_degreeOne_pow_eq_truncationIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/Truncation.lean, line 727](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/Truncation.lean#L727). The attribute's comment: “the clause that makes the section's cone a blowup: if A is generated over A₀ by elements of degree one then (A₊)^m = A_{≥ m} for every m ≥ 0, so that B = ⨁_{d ≥ 0} A_{≥ d} is the Rees algebra of A₊ and L = Proj(B) ⟶ X = Spec(A) is the blowing up of Z = V(A₊). Nothing else of Section 37.51 is claimed here: the graded ring B with its maps σ, ψ, τ is Tag 0EKG, already in this file; the five localization facts about σ(f), σ(A_d) and ker(τ) on D₊(ψ(f)), the identification B_{σ(f)} ≅ A_f[T] that makes L ⟶ X an isomorphism over U = X ∖ Z, and the description of L over the largest open of P on which 𝒪_P(1) is invertible, are not proved”. References: EGA II (8.2.10), “(iii), special case”.
+**`Stacks.Truncation.span_degreeOne_pow_eq_truncationIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/Truncation.lean, line 727](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/Truncation.lean#L727). The attribute's comment: “the clause that makes the section's cone a blowup: if A is generated over A₀ by elements of degree one then (A₊)^m = A\_\{≥ m} for every m ≥ 0, so that B = ⨁\_\{d ≥ 0} A\_\{≥ d} is the Rees algebra of A₊ and L = Proj(B) ⟶ X = Spec(A) is the blowing up of Z = V(A₊). Nothing else of Section 37.51 is claimed here: the graded ring B with its maps σ, ψ, τ is Tag 0EKG, already in this file; the five localization facts about σ(f), σ(A\_d) and ker(τ) on D₊(ψ(f)), the identification B\_\{σ(f)} ≅ A\_f[T] that makes L ⟶ X an isomorphism over U = X ∖ Z, and the description of L over the largest open of P on which 𝒪\_P(1) is invertible, are not proved”. References: EGA II (8.2.10), “(iii), special case”.
 
 > If `A` is generated over `A_0` by its degree-one part, in the form `A_{d+1} ⊆ A_1 · A_d`
 > for every `d`, then `(A_+)^m = A_{≥ m}` for every `m ≥ 0`.
@@ -125,7 +125,7 @@ theorem pi_preimage_basicOpen (f : A) (d : ℕ) (hf : f ∈ 𝒜 d) (hd : 0 < d)
 theorem isAffineHom_pi : IsAffineHom (pi c)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjAndSpec.zeroSection_comp_pi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjAndSpec.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjAndSpec.lean#L393). The attribute's comment: “π ∘ 0 = id_P”.
+**`Stacks.AlgebraicGeometry.ProjAndSpec.zeroSection_comp_pi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjAndSpec.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjAndSpec.lean#L393). The attribute's comment: “π ∘ 0 = id\_P”.
 
 > **`π ∘ 0 = id_P`**: the zero section is a section of the cone projection.
 
@@ -182,7 +182,7 @@ theorem zeroSection_comp_toSpecA :
     zeroSection c ≫ toSpecA c = Proj.toSpecZero 𝒜 ≫ zToX 𝒜
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.truncationCone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjAndSpecDiagram.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjAndSpecDiagram.lean#L320). The attribute's comment: “π : L → P is a cone over P, whose direct-image algebra is graded by the twists O_P(m), m ≥ 0”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.truncationCone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjAndSpecDiagram.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjAndSpecDiagram.lean#L320). The attribute's comment: “π : L → P is a cone over P, whose direct-image algebra is graded by the twists O\_P(m), m ≥ 0”.
 
 > **`π : L ⟶ P` is a cone over `P`** in the sense of [Stacks, Tag 062R], graded by the algebra
 > `⨁_{m ≥ 0} 𝒪_P(m)` of nonnegative twists: `π` is affine, the homogeneous pieces include in
@@ -218,7 +218,7 @@ theorem zeroSection_appLE_coneIota_eq_zero (m : ℤ) (hm : 0 < m)
       ((coneIota 𝒜 m).val.app (op U) s) = 0
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.projAndSpec_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjAndSpecDiagram.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjAndSpecDiagram.lean#L493). The attribute's comment: “the commutative diagram Spec_P(⨁_{m ∈ ℤ} O_P(m)) → L = Spec_P(⨁_{m ≥ 0} O_P(m)) → P over U → X → Z, with π a cone whose zero section maps set theoretically onto the inverse image of Z in L”. References: EGA II (8.6.3), “special case”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.projAndSpec_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjAndSpecDiagram.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjAndSpecDiagram.lean#L493). The attribute's comment: “the commutative diagram Spec\_P(⨁\_\{m ∈ ℤ} O\_P(m)) → L = Spec\_P(⨁\_\{m ≥ 0} O\_P(m)) → P over U → X → Z, with π a cone whose zero section maps set theoretically onto the inverse image of Z in L”. References: EGA II (8.6.3), “special case”.
 
 > **The diagram of [Stacks, Tag 0EKG].** Let `A` be a graded ring, `X = Spec A`,
 > `Z = V(A₊) = Spec A₀`, `U = X ∖ Z`, `P = Proj A`, and let `L = Proj B` for
@@ -291,7 +291,7 @@ theorem openUInL_ι_comp_toSpecA :
       (toSpecA 𝒜 ∣_ ProjAndSpec.openU 𝒜) ≫ (ProjAndSpec.openU 𝒜).ι
 ```
 
-**`Stacks.AlgebraicGeometry.ProjAndSpecTruncation.truncationConeData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjAndSpecTruncation.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjAndSpecTruncation.lean#L364). The attribute's comment: “the truncation algebra B = ⨁_{d ≥ 0} A_{≥ d} is cone data over A”.
+**`Stacks.AlgebraicGeometry.ProjAndSpecTruncation.truncationConeData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjAndSpecTruncation.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjAndSpecTruncation.lean#L364). The attribute's comment: “the truncation algebra B = ⨁\_\{d ≥ 0} A\_\{≥ d} is cone data over A”.
 
 > The truncation algebra `B = ⨁_{d ≥ 0} A_{≥ d}` is cone data over `A`: the maps `ψ`,
 > `τ` and `σ` satisfy `τ ∘ ψ = id`, the two formulas tying `σ` to `ψ` and `τ`, and the three
@@ -376,7 +376,7 @@ theorem awayToSection_comp_pi_appLE :
       CommRingCat.ofHom (Away.map c.psi f) ≫ Proj.awayToSection ℬ (c.psi f)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjAndSpec.awayToSection_comp_pi_appLE_sigmaMulPsi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeChartPunctured.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeChartPunctured.lean#L105). The attribute's comment: “the punctured cone projection on functions over a standard open is the map of degree-zero localizations A_(f) to B_(sigma f * psi f)”.
+**`Stacks.AlgebraicGeometry.ProjAndSpec.awayToSection_comp_pi_appLE_sigmaMulPsi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeChartPunctured.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeChartPunctured.lean#L105). The attribute's comment: “the punctured cone projection on functions over a standard open is the map of degree-zero localizations A\_(f) to B\_(sigma f * psi f)”.
 
 > **On the chart `D₊(σ f · ψ f)` of the punctured cone the projection acts on functions by the
 > map `A_{(f)} ⟶ B_{(σ f · ψ f)}` of degree-zero localizations.** Through the identifications
@@ -392,7 +392,7 @@ theorem awayToSection_comp_pi_appLE_sigmaMulPsi (hd : 0 < d) (hf : f ∈ 𝒜 d)
         Proj.awayToSection ℬ ((c.sigma f : B) * c.psi f)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjAndSpec.awayToSection_comp_puncturedPi_appLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeChartPunctured.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeChartPunctured.lean#L137). The attribute's comment: “the restricted projection pi|_U on functions over a standard open, on the chart given by the inverse image of D+(sigma f * psi f)”.
+**`Stacks.AlgebraicGeometry.ProjAndSpec.awayToSection_comp_puncturedPi_appLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeChartPunctured.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeChartPunctured.lean#L137). The attribute's comment: “the restricted projection pi|\_U on functions over a standard open, on the chart given by the inverse image of D+(sigma f * psi f)”.
 
 > **The same statement for the restricted projection `π|_U : U ⟶ P`**, whose chart over
 > `D₊(f)` is the inverse image of `D₊(σ f · ψ f)` under the open immersion of `U`: there too the
@@ -448,7 +448,7 @@ def puncturedConeRelativeSpecIsoOpenU :
       (ProjAndSpec.openU 𝒜).toScheme
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeRelativeSpecTwistAlgebraIsoOpenU`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeRelativeSpec.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeRelativeSpec.lean#L248). The attribute's comment: “the left equality: U is Spec_P of the integer twist algebra”. References: EGA II (8.12.5), “special case”; EGA II (8.6.2), “special case”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeRelativeSpecTwistAlgebraIsoOpenU`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeRelativeSpec.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeRelativeSpec.lean#L248). The attribute's comment: “the left equality: U is Spec\_P of the integer twist algebra”. References: EGA II (8.12.5), “special case”; EGA II (8.6.2), “special case”.
 
 > **`Spec_P(⨁_{m ∈ ℤ} 𝒪_P(m)) = U`**: the relative spectrum over `P = Proj A` of the algebra of
 > all integral twists is the open `U = X ∖ V(A₊)` of `X = Spec A`. This is the equality on the left
@@ -465,7 +465,7 @@ def puncturedConeRelativeSpecTwistAlgebraIsoOpenU :
       (ProjAndSpec.openU 𝒜).toScheme
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.degreeZeroRingMap_coneTwistAwayHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraInclusion.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraInclusion.lean#L97). The attribute's comment: “the degreewise inclusion of the sections of O_P(m) into the degree-zero localization of the truncation algebra at psi f, followed by restriction to the chart of the punctured cone, is the punctured degreewise inclusion, for a nonnegative degree m”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.degreeZeroRingMap_coneTwistAwayHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraInclusion.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraInclusion.lean#L97). The attribute's comment: “the degreewise inclusion of the sections of O\_P(m) into the degree-zero localization of the truncation algebra at psi f, followed by restriction to the chart of the punctured cone, is the punctured degreewise inclusion, for a nonnegative degree m”.
 
 > **The degreewise inclusion of `Γ(D₊(f), 𝒪_P(m))` into the functions on the cone chart,
 > followed by restriction to the chart of the punctured cone, is the degreewise inclusion into the
@@ -482,7 +482,7 @@ theorem degreeZeroRingMap_coneTwistAwayHom (m : ℕ) {d : ℕ} (hf : f ∈ 𝒜 
       puncturedConeTwistAwayHom 𝒜 (m : ℤ) d hf hd s
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.appLE_coneTwistApp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraInclusion.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraInclusion.lean#L117). The attribute's comment: “the local degreewise inclusion O_P(m) to pi_* O_L over a standard open, followed by restriction to the punctured cone, is the punctured local degreewise inclusion, for a nonnegative degree m”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.appLE_coneTwistApp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraInclusion.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraInclusion.lean#L117). The attribute's comment: “the local degreewise inclusion O\_P(m) to pi\_* O\_L over a standard open, followed by restriction to the punctured cone, is the punctured local degreewise inclusion, for a nonnegative degree m”.
 
 > **The local degreewise inclusion into `π_* 𝒪_L` over a standard open, followed by restriction
 > along the open immersion of the punctured cone, is the punctured local degreewise inclusion**, for
@@ -501,7 +501,7 @@ theorem appLE_coneTwistApp (m : ℕ) {d : ℕ} (hf : f ∈ 𝒜 d) (hd : 0 < d)
       (puncturedConeTwistApp 𝒜 (m : ℤ) d hf hd).hom s
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.appLE_coneTwistHom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraInclusion.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraInclusion.lean#L161). The attribute's comment: “the degreewise inclusion O_P(m) to pi_* O_L followed by restriction to the punctured cone is the degreewise inclusion O_P(m) to (pi|_U)_* O_U, for a nonnegative degree m”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.appLE_coneTwistHom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraInclusion.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraInclusion.lean#L161). The attribute's comment: “the degreewise inclusion O\_P(m) to pi\_* O\_L followed by restriction to the punctured cone is the degreewise inclusion O\_P(m) to (pi|\_U)\_* O\_U, for a nonnegative degree m”.
 
 > **The degreewise inclusion `𝒪_P(m) ⟶ π_* 𝒪_L` followed by restriction of functions from the
 > cone to the punctured cone is the degreewise inclusion `𝒪_P(m) ⟶ (π|_U)_* 𝒪_U`**, for `m ≥ 0`,
@@ -544,7 +544,7 @@ def nonnegToIntegerTwistAlgebraSheafHom :
     nonnegTwistAlgebraSheaf 𝒜 ⟶ integerTwistAlgebraSheaf 𝒜
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.appLE_coneIota_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraInclusion.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraInclusion.lean#L235). The attribute's comment: “the inclusion of each homogeneous piece of the nonnegative twist algebra in pi_* O_L, followed by restriction to the punctured cone, is the degreewise inclusion in (pi|_U)_* O_U after the inclusion of the two twist algebras”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.appLE_coneIota_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraInclusion.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraInclusion.lean#L235). The attribute's comment: “the inclusion of each homogeneous piece of the nonnegative twist algebra in pi\_* O\_L, followed by restriction to the punctured cone, is the degreewise inclusion in (pi|\_U)\_* O\_U after the inclusion of the two twist algebras”.
 
 > **The degreewise inclusion of each homogeneous piece of `⨁_{m ≥ 0} 𝒪_P(m)` into `π_* 𝒪_L`,
 > followed by restriction to the punctured cone, is the degreewise inclusion into
@@ -630,7 +630,7 @@ theorem coneTotalMap_structureMap (U : Opens (ProjectiveSpectrum.top 𝒜))
       ((pi 𝒜).c.app (op U)).hom r
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneAlgebraSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraSheaf.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraSheaf.lean#L174). The attribute's comment: “the identification pi_* O_L = the nonnegative twist algebra, as sheaves of commutative algebras over the structure sheaf of P, for the cone of the truncation algebra”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneAlgebraSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraSheaf.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistAlgebraSheaf.lean#L174). The attribute's comment: “the identification pi\_* O\_L = the nonnegative twist algebra, as sheaves of commutative algebras over the structure sheaf of P, for the cone of the truncation algebra”.
 
 > **`π_* 𝒪_L` is the algebra of nonnegative twists**, as sheaves of commutative
 > `𝒪_P`-algebras.
@@ -662,7 +662,7 @@ def coneRelativeSpecTwistAlgebraIso :
     Over.mk (pi 𝒜) ≅ Over.mk (relativeSpecToBase (nonnegTwistAlgebraSheaf 𝒜))
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistNatDirectSumHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistConeCoproduct.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistConeCoproduct.lean#L82). The attribute's comment: “the family of degreewise inclusions O_P(m) -> pi_* O_L as one morphism out of the objectwise direct sum over the natural numbers, for the truncation cone”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistNatDirectSumHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistConeCoproduct.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistConeCoproduct.lean#L82). The attribute's comment: “the family of degreewise inclusions O\_P(m) -> pi\_* O\_L as one morphism out of the objectwise direct sum over the natural numbers, for the truncation cone”.
 
 > **The degreewise inclusions `𝒪_P(m) ⟶ π_* 𝒪_L` as a single morphism out of the objectwise
 > direct sum over the natural numbers.**
@@ -733,7 +733,7 @@ def coneStructureSheafifyIso :
       Stacks.Morphisms.pushforwardStructureSheaf (pi 𝒜)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneStructureCoproductIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistConeCoproduct.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistConeCoproduct.lean#L224). The attribute's comment: “the identification pi_* O_L = the coproduct of the homogeneous pieces of the nonnegative twist algebra, as sheaves of O_P-modules, for the cone of the truncation algebra”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneStructureCoproductIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistConeCoproduct.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistConeCoproduct.lean#L224). The attribute's comment: “the identification pi\_* O\_L = the coproduct of the homogeneous pieces of the nonnegative twist algebra, as sheaves of O\_P-modules, for the cone of the truncation algebra”.
 
 > **`π_* 𝒪_L ≅ ∐_{m ∈ ℤ} (nonnegTwistAlgebra 𝒜).piece m`**: the identification of the direct
 > image of the structure sheaf of the cone with the coproduct of the homogeneous pieces of the
@@ -745,7 +745,7 @@ def coneStructureCoproductIso :
       ∐ fun m : ℤ => nonnegTwistingSheaf 𝒜 m
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistAwayHom_degreeZeroRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean#L140). The attribute's comment: “the degreewise inclusion of the sections of O_P(m) into the degree-zero localization of the truncation algebra commutes with restriction between two standard opens”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistAwayHom_degreeZeroRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean#L140). The attribute's comment: “the degreewise inclusion of the sections of O\_P(m) into the degree-zero localization of the truncation algebra commutes with restriction between two standard opens”.
 
 > The degreewise inclusion commutes with restriction between two standard opens, read in the
 > degree-zero localizations of the truncation algebra.
@@ -763,7 +763,7 @@ theorem coneTwistAwayHom_degreeZeroRingMap (m : ℕ) {d e : ℕ} (hf : f ∈ �
         (basicOpen_psi_le 𝒜 hf hd hg he hfg) (coneTwistAwayHom 𝒜 m d hf hd s)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistApp_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean#L194). The attribute's comment: “the degreewise inclusion O_P(m) to pi_* O_L over standard opens is compatible with restriction between two standard opens”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistApp_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean#L194). The attribute's comment: “the degreewise inclusion O\_P(m) to pi\_* O\_L over standard opens is compatible with restriction between two standard opens”.
 
 > The local degreewise inclusion commutes with restriction to a smaller standard open.
 
@@ -779,7 +779,7 @@ theorem coneTwistApp_restrict (m : ℕ) {d e : ℕ} (hf : f ∈ 𝒜 d) (hd : 0 
         ((coneTwistApp 𝒜 m d hf hd).hom s)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistApp_degree_indep`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean#L244). The attribute's comment: “the degreewise inclusion O_P(m) to pi_* O_L over one standard open depends only on that open, not on the degree of the element cutting it out”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistApp_degree_indep`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean#L244). The attribute's comment: “the degreewise inclusion O\_P(m) to pi\_* O\_L over one standard open depends only on that open, not on the degree of the element cutting it out”.
 
 > The local degreewise inclusion depends only on the standard open, not on the degree in
 > which the element cutting it out is homogeneous.
@@ -790,7 +790,7 @@ theorem coneTwistApp_degree_indep (m : ℕ) {d d' : ℕ} (hf : f ∈ 𝒜 d) (hd
     coneTwistApp 𝒜 m d hf hd = coneTwistApp 𝒜 m d' hf' hd'
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean#L286). The attribute's comment: “the degreewise inclusion O_P(m) to pi_* O_L as a morphism of sheaves of O_P-modules, for the truncation cone and a nonnegative degree m”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean#L286). The attribute's comment: “the degreewise inclusion O\_P(m) to pi\_* O\_L as a morphism of sheaves of O\_P-modules, for the truncation cone and a nonnegative degree m”.
 
 > The degreewise inclusion `𝒪_P(m) ⟶ π_* 𝒪_L`, for `m ≥ 0`: the morphism of sheaves of
 > `𝒪_P`-modules glued from the local maps over the standard opens of positive-degree homogeneous
@@ -812,7 +812,7 @@ theorem coneTwistHom_app (m : ℕ) {d : ℕ} (hf : f ∈ 𝒜 d) (hd : 0 < d) :
       coneTwistApp 𝒜 m d hf hd
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneIota`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean#L307). The attribute's comment: “the inclusion of each homogeneous piece of the nonnegative twist algebra in pi_* O_L, for the truncation cone”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneIota`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMap.lean#L307). The attribute's comment: “the inclusion of each homogeneous piece of the nonnegative twist algebra in pi\_* O\_L, for the truncation cone”.
 
 > The inclusion of each homogeneous piece of `⨁_{m ≥ 0} 𝒪_P(m)` in `π_* 𝒪_L`: the glued
 > degreewise inclusion in a nonnegative degree, and the morphism out of the zero sheaf in a
@@ -823,7 +823,7 @@ def coneIota : ∀ n : ℤ, nonnegTwistingSheaf 𝒜 n ⟶
     Stacks.Morphisms.pushforwardStructureSheaf (pi 𝒜)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistHom_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMul.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMul.lean#L97). The attribute's comment: “the glued degreewise inclusion O_P(m) to pi_* O_L is multiplicative over a standard open of a positive-degree homogeneous element”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistHom_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMul.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMul.lean#L97). The attribute's comment: “the glued degreewise inclusion O\_P(m) to pi\_* O\_L is multiplicative over a standard open of a positive-degree homogeneous element”.
 
 > **The glued degreewise inclusion is multiplicative over a standard open** of a
 > positive-degree homogeneous element.
@@ -841,7 +841,7 @@ theorem coneTwistHom_mul {f : A} {d : ℕ} (hf : f ∈ 𝒜 d) (hd : 0 < d) (i j
           (coneTwistHom 𝒜 j).val.app (op (ProjectiveSpectrum.basicOpen 𝒜 f)) y)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistHom_mul_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMul.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMul.lean#L119). The attribute's comment: “the glued degreewise inclusion O_P(m) to pi_* O_L is multiplicative over every open of P, in nonnegative degrees”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistHom_mul_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMul.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMul.lean#L119). The attribute's comment: “the glued degreewise inclusion O\_P(m) to pi\_* O\_L is multiplicative over every open of P, in nonnegative degrees”.
 
 > **The glued degreewise inclusion `𝒪_P(i) ⟶ π_* 𝒪_L` is multiplicative over every open of
 > `P`.** The standard opens of positive-degree homogeneous elements are a basis, and both sides
@@ -857,7 +857,7 @@ theorem coneTwistHom_mul_app (i j : ℕ) (U : Opens (ProjectiveSpectrum.top 𝒜
         (show coneSections 𝒜 U from (coneTwistHom 𝒜 j).val.app (op U) b)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneIota_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMul.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMul.lean#L160). The attribute's comment: “the inclusions of the homogeneous pieces of the nonnegative twist algebra in pi_* O_L are multiplicative, over every open of P and in every integer degree, for the truncation cone”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneIota_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMul.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistGlobalMul.lean#L160). The attribute's comment: “the inclusions of the homogeneous pieces of the nonnegative twist algebra in pi\_* O\_L are multiplicative, over every open of P and in every integer degree, for the truncation cone”.
 
 > **The inclusions of the homogeneous pieces of the algebra of nonnegative twists in `π_* 𝒪_L`
 > multiply as the grading prescribes**, over every open of `P` and in all integer degrees. This is
@@ -875,7 +875,7 @@ theorem coneIota_mul (i j : ℤ) (U : Opens (ProjectiveSpectrum.top 𝒜))
         (show coneSections 𝒜 U from (coneIota 𝒜 j).val.app (op U) b)
 ```
 
-**`Stacks.Truncation.awayToLocalization_map_psi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean#L67). The attribute's comment: “the comparison map (B[1/psi f])_0 to A[1/f] undoes the map of degree-zero localizations attached to psi”.
+**`Stacks.Truncation.awayToLocalization_map_psi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean#L67). The attribute's comment: “the comparison map (B[1/psi f])\_0 to A[1/f] undoes the map of degree-zero localizations attached to psi”.
 
 > The comparison map `(B[1/ψ f])₀ → A[1/f]` undoes `HomogeneousLocalization.Away.map ψ f`:
 > the fraction `ψ a / (ψ f)ᵏ` of the truncation algebra is sent to the fraction `a / fᵏ`.
@@ -886,7 +886,7 @@ theorem awayToLocalization_map_psi (d : ℕ) (hf : f ∈ 𝒜 d)
     awayToLocalization 𝒜 (HomogeneousLocalization.Away.map (psi 𝒜) f r) = r.val
 ```
 
-**`Stacks.Truncation.awayGradingEquivSectionsTwist_symm_degree_indep`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean#L106). The attribute's comment: “the degreewise inclusion of the sections of O_P(m) over D+(f) into the functions on the cone depends only on the standard open, not on the degree of f”.
+**`Stacks.Truncation.awayGradingEquivSectionsTwist_symm_degree_indep`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean#L106). The attribute's comment: “the degreewise inclusion of the sections of O\_P(m) over D+(f) into the functions on the cone depends only on the standard open, not on the degree of f”.
 
 > The degreewise inclusion depends only on the standard open, not on the degree in which `f`
 > is homogeneous.
@@ -919,7 +919,7 @@ theorem awayGradingEquivSectionsTwist_symm_smul (d : ℕ) (hf : f ∈ 𝒜 d) (h
           HomogeneousLocalization.Away (grading 𝒜) (psi 𝒜 f)))
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.awayToSection_pi_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean#L205). The attribute's comment: “the cone projection on functions over a standard open, with the sections over D+(psi f) transported along the identity of opens pi^{-1}(D+(f)) = D+(psi f)”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.awayToSection_pi_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean#L205). The attribute's comment: “the cone projection on functions over a standard open, with the sections over D+(psi f) transported along the identity of opens pi^\{-1}(D+(f)) = D+(psi f)”.
 
 > The cone projection on functions over a standard open: the image of a degree-zero fraction of
 > `A` under `ψ`, read as a function on `D₊(ψ f)` and transported along `π⁻¹(D₊(f)) = D₊(ψ f)`, is
@@ -936,7 +936,7 @@ theorem awayToSection_pi_app (d : ℕ) (hf : f ∈ 𝒜 d) (hd : 0 < d)
         ((AlgebraicGeometry.Proj.awayToSection 𝒜 f).hom r)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistAwayHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean#L231). The attribute's comment: “the degreewise inclusion of the sections of O_P(m) over D+(f) into the degree-zero localization of the truncation algebra, as an additive map”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistAwayHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean#L231). The attribute's comment: “the degreewise inclusion of the sections of O\_P(m) over D+(f) into the degree-zero localization of the truncation algebra, as an additive map”.
 
 > The degreewise inclusion `Γ(D₊(f), 𝒪_P(m)) → (B[1/ψ f])₀`, as an additive map: the
 > inverse of `Stacks.Truncation.awayGradingEquivSectionsTwist` followed by the inclusion of the
@@ -948,7 +948,7 @@ def coneTwistAwayHom (m d : ℕ) (hf : f ∈ 𝒜 d) (hd : 0 < d) :
       HomogeneousLocalization.Away (grading 𝒜) (psi 𝒜 f)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistApp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean#L250). The attribute's comment: “the degreewise inclusion O_P(m) to pi_* O_L over one standard open D+(f), as a map of modules over the sections of O_P there”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistApp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalMap.lean#L250). The attribute's comment: “the degreewise inclusion O\_P(m) to pi\_* O\_L over one standard open D+(f), as a map of modules over the sections of O\_P there”.
 
 > The local degreewise inclusion `Γ(D₊(f), 𝒪_P(m)) ⟶ Γ(D₊(f), π_* 𝒪_L)`, as a morphism of
 > modules over the sections of `𝒪_P` on `D₊(f)`.
@@ -960,7 +960,7 @@ def coneTwistApp (m d : ℕ) (hf : f ∈ 𝒜 d) (hd : 0 < d) :
         (op (AlgebraicGeometry.Proj.basicOpen 𝒜 f))
 ```
 
-**`Stacks.Truncation.awayToLocalization_degreeZeroRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalRestriction.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalRestriction.lean#L99). The attribute's comment: “the comparison maps (B[1/psi f])_0 to A[1/f] commute with the restriction maps of degree-zero localizations, for a general inclusion D+(g) <= D+(f) of standard opens”.
+**`Stacks.Truncation.awayToLocalization_degreeZeroRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalRestriction.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalRestriction.lean#L99). The attribute's comment: “the comparison maps (B[1/psi f])\_0 to A[1/f] commute with the restriction maps of degree-zero localizations, for a general inclusion D+(g) <= D+(f) of standard opens”.
 
 > The comparison maps `(B[1/ψ f])₀ → A[1/f]` commute with the restriction maps of
 > degree-zero localizations: the one of `B` attached to `D₊(ψ g) ⊆ D₊(ψ f)` on the source, the
@@ -1137,7 +1137,7 @@ theorem structureSheafToTwistZero_bijective (U : Opens (ProjectiveSpectrum.top �
     Function.Bijective (structureSheafToTwistZero 𝒜 U)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedTotalPresheafHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedAlgebraSheaf.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedAlgebraSheaf.lean#L97). The attribute's comment: “the degreewise inclusions as a morphism of presheaves of rings from the ungraded realization of the integral twist algebra to (pi|_U)_* O_U, for the truncation cone”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedTotalPresheafHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedAlgebraSheaf.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedAlgebraSheaf.lean#L97). The attribute's comment: “the degreewise inclusions as a morphism of presheaves of rings from the ungraded realization of the integral twist algebra to (pi|\_U)\_* O\_U, for the truncation cone”.
 
 > **The degreewise inclusions as a morphism of presheaves of rings** from the ungraded
 > realization of the algebra of all integral twists into `(π|_U)_* 𝒪_U`.
@@ -1147,7 +1147,7 @@ def puncturedTotalPresheafHom :
     (integerTwistPresheafAlgebra 𝒜).totalPresheaf ⟶ (puncturedConePushforwardRingSheaf 𝒜).obj
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeUngradedSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedAlgebraSheaf.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedAlgebraSheaf.lean#L131). The attribute's comment: “the identification (pi|_U)_* O_U = the ungraded realization of the integral twist algebra, as sheaves of rings, for the punctured cone of the truncation algebra”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeUngradedSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedAlgebraSheaf.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedAlgebraSheaf.lean#L131). The attribute's comment: “the identification (pi|\_U)\_* O\_U = the ungraded realization of the integral twist algebra, as sheaves of rings, for the punctured cone of the truncation algebra”.
 
 > **`(π|_U)_* 𝒪_U` is the ungraded realization of the algebra of all integral twists**, as
 > sheaves of rings.
@@ -1190,7 +1190,7 @@ theorem puncturedTotalMap_structureMap (V : Opens (ProjectiveSpectrum.top 𝒜))
       (((openUInL 𝒜).ι ≫ pi 𝒜).c.app (op V)).hom r
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeAlgebraSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedAlgebraSheaf.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedAlgebraSheaf.lean#L205). The attribute's comment: “the identification (pi|_U)_* O_U = the integral twist algebra, as sheaves of commutative algebras over the structure sheaf of P, for the punctured cone of the truncation algebra”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeAlgebraSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedAlgebraSheaf.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedAlgebraSheaf.lean#L205). The attribute's comment: “the identification (pi|\_U)\_* O\_U = the integral twist algebra, as sheaves of commutative algebras over the structure sheaf of P, for the punctured cone of the truncation algebra”.
 
 > **`(π|_U)_* 𝒪_U` is the algebra of all integral twists**, as sheaves of commutative
 > `𝒪_P`-algebras.
@@ -1221,7 +1221,7 @@ def puncturedConeRelativeSpecTwistAlgebraIso :
       Over.mk (relativeSpecToBase (integerTwistAlgebraSheaf 𝒜))
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedTwistDirectSumHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedCoproduct.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedCoproduct.lean#L95). The attribute's comment: “the family of degreewise inclusions O_P(m) -> (pi|_U)_* O_U as one morphism out of the objectwise direct sum over all integers m, for the truncation cone”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedTwistDirectSumHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedCoproduct.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedCoproduct.lean#L95). The attribute's comment: “the family of degreewise inclusions O\_P(m) -> (pi|\_U)\_* O\_U as one morphism out of the objectwise direct sum over all integers m, for the truncation cone”.
 
 > **The family of punctured degreewise inclusions as a single morphism out of the objectwise
 > direct sum** `⨁_{m ∈ ℤ} 𝒪_P(m) ⟶ (π|_U)_* 𝒪_U`.
@@ -1258,7 +1258,7 @@ def puncturedConeStructureSheafifyIso :
       Stacks.Morphisms.pushforwardStructureSheaf ((openUInL 𝒜).ι ≫ pi 𝒜)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeStructureCoproductIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedCoproduct.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedCoproduct.lean#L169). The attribute's comment: “the identification (pi|_U)_* O_U = the coproduct over all integers m of the twisting sheaves O_P(m), as sheaves of O_P-modules, for the punctured cone of the truncation algebra”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeStructureCoproductIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedCoproduct.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedCoproduct.lean#L169). The attribute's comment: “the identification (pi|\_U)\_* O\_U = the coproduct over all integers m of the twisting sheaves O\_P(m), as sheaves of O\_P-modules, for the punctured cone of the truncation algebra”.
 
 > **`(π|_U)_* 𝒪_U ≅ ∐_{m ∈ ℤ} 𝒪_P(m)`**: the identification of [Stacks, Tag 0EKG] of the direct
 > image of the structure sheaf of the punctured cone with the coproduct, over all integers, of the
@@ -1270,7 +1270,7 @@ def puncturedConeStructureCoproductIso :
       ∐ fun m : ℤ => twistingSheaf 𝒜 m
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeStructurePushforwardCoproductIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedCoproduct.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedCoproduct.lean#L182). The attribute's comment: “the identification (pi|_U)_* O_U = the coproduct over all integers m of the twisting sheaves O_P(m), with the source written as the direct image along the punctured cone projection of the truncation cone data”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeStructurePushforwardCoproductIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedCoproduct.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedCoproduct.lean#L182). The attribute's comment: “the identification (pi|\_U)\_* O\_U = the coproduct over all integers m of the twisting sheaves O\_P(m), with the source written as the direct image along the punctured cone projection of the truncation cone data”.
 
 > **`(π|_U)_* 𝒪_U ≅ ∐_{m ∈ ℤ} 𝒪_P(m)`**, with the source written as the direct image along
 > `Stacks.AlgebraicGeometry.ProjAndSpec.puncturedConeProj` of the structure sheaf of the punctured
@@ -1287,7 +1287,7 @@ def puncturedConeStructurePushforwardCoproductIso :
       ∐ fun m : ℤ => twistingSheaf 𝒜 m
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeTwistApp_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedGlobalMap.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedGlobalMap.lean#L143). The attribute's comment: “the degreewise inclusion O_P(m) to (pi|_U)_* O_U over standard opens is compatible with restriction between two standard opens, for every integer m”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeTwistApp_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedGlobalMap.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedGlobalMap.lean#L143). The attribute's comment: “the degreewise inclusion O\_P(m) to (pi|\_U)\_* O\_U over standard opens is compatible with restriction between two standard opens, for every integer m”.
 
 > **The local punctured degreewise inclusion commutes with restriction to a smaller standard
 > open.** This is the compatibility the gluing principle of [Stacks, Tag 009U] asks for.
@@ -1303,7 +1303,7 @@ theorem puncturedConeTwistApp_restrict (m : ℤ) {d e : ℕ} (hf : f ∈ 𝒜 d)
           (homOfLE hfg).op).hom ((puncturedConeTwistApp 𝒜 m d hf hd).hom s)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeTwistApp_degree_indep`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedGlobalMap.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedGlobalMap.lean#L184). The attribute's comment: “the degreewise inclusion O_P(m) to (pi|_U)_* O_U over one standard open depends only on that open, not on the degree of the element cutting it out, for every integer m”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeTwistApp_degree_indep`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedGlobalMap.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedGlobalMap.lean#L184). The attribute's comment: “the degreewise inclusion O\_P(m) to (pi|\_U)\_* O\_U over one standard open depends only on that open, not on the degree of the element cutting it out, for every integer m”.
 
 > **The local punctured degreewise inclusion depends only on the standard open**, not on the
 > degree in which the element cutting it out is homogeneous.
@@ -1314,7 +1314,7 @@ theorem puncturedConeTwistApp_degree_indep (m : ℤ) {d d' : ℕ} (hf : f ∈ �
     puncturedConeTwistApp 𝒜 m d hf hd = puncturedConeTwistApp 𝒜 m d' hf' hd'
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedTwistHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedGlobalMap.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedGlobalMap.lean#L227). The attribute's comment: “the degreewise inclusion O_P(m) to (pi|_U)_* O_U as a morphism of sheaves of O_P-modules, for the punctured cone of the truncation algebra and every integer m”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedTwistHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedGlobalMap.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedGlobalMap.lean#L227). The attribute's comment: “the degreewise inclusion O\_P(m) to (pi|\_U)\_* O\_U as a morphism of sheaves of O\_P-modules, for the punctured cone of the truncation algebra and every integer m”.
 
 > **The degreewise inclusion `𝒪_P(m) ⟶ (π|_U)_* 𝒪_U`**, for every integer `m`: the morphism of
 > sheaves of `𝒪_P`-modules glued from the local maps over the standard opens of positive-degree
@@ -1338,7 +1338,7 @@ theorem puncturedTwistHom_app (m : ℤ) (p : PositiveElem 𝒜) :
       puncturedConeTwistStandardOpenApp 𝒜 m p
 ```
 
-**`Stacks.Truncation.puncturedToLocalization_degreeZeroRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean#L119). The attribute's comment: “the comparison maps (B[1/sigma f * psi f])_0 to A[1/f] and (B[1/psi f])_0 to A[1/f] agree across the degree-zero restriction map of B attached to D+(sigma f * psi f) <= D+(psi f)”.
+**`Stacks.Truncation.puncturedToLocalization_degreeZeroRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean#L119). The attribute's comment: “the comparison maps (B[1/sigma f * psi f])\_0 to A[1/f] and (B[1/psi f])\_0 to A[1/f] agree across the degree-zero restriction map of B attached to D+(sigma f * psi f) <= D+(psi f)”.
 
 > The comparison maps `(B[1/σ f · ψ f])₀ → A[1/f]` and `(B[1/ψ f])₀ → A[1/f]` agree across the
 > restriction map of `B` attached to `D₊(σ f · ψ f) ⊆ D₊(ψ f)`.
@@ -1356,7 +1356,7 @@ theorem puncturedToLocalization_degreeZeroRingMap
       awayToLocalization 𝒜 z
 ```
 
-**`Stacks.Truncation.puncturedToLocalization_degreeZeroRingMap_map_psi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean#L153). The attribute's comment: “the comparison map (B[1/sigma f * psi f])_0 to A[1/f] undoes the chart description of the punctured cone projection on a standard open”.
+**`Stacks.Truncation.puncturedToLocalization_degreeZeroRingMap_map_psi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean#L153). The attribute's comment: “the comparison map (B[1/sigma f * psi f])\_0 to A[1/f] undoes the chart description of the punctured cone projection on a standard open”.
 
 > The comparison map `(B[1/σ f · ψ f])₀ → A[1/f]` undoes the chart description of the punctured
 > cone projection, the map `A₍f₎ → B₍σ f · ψ f₎` of degree-zero localizations attached to `ψ`
@@ -1373,7 +1373,7 @@ theorem puncturedToLocalization_degreeZeroRingMap_map_psi (d : ℕ) (hf : f ∈ 
       r.val
 ```
 
-**`Stacks.Truncation.puncturedGradingEquivSectionsTwist_symm_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean#L185). The attribute's comment: “the degreewise inclusion of the sections of O_P(m) over D+(f) into the degree-zero localization of the truncation algebra at sigma f * psi f is semilinear for the chart description of the punctured cone projection, for every integer m”.
+**`Stacks.Truncation.puncturedGradingEquivSectionsTwist_symm_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean#L185). The attribute's comment: “the degreewise inclusion of the sections of O\_P(m) over D+(f) into the degree-zero localization of the truncation algebra at sigma f * psi f is semilinear for the chart description of the punctured cone projection, for every integer m”.
 
 > **The degreewise inclusion `Γ(D₊(f), 𝒪_P(m)) → (B[1/σ f · ψ f])₀` is semilinear for the chart
 > description of the punctured cone projection**, the map `A₍f₎ → B₍σ f · ψ f₎` of degree-zero
@@ -1449,7 +1449,7 @@ theorem awayToSection_puncturedPi_app (d : ℕ) (hf : f ∈ 𝒜 d) (hd : 0 < d)
         ((AlgebraicGeometry.Proj.awayToSection 𝒜 f).hom r)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeTwistAwayHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean#L365). The attribute's comment: “the degreewise inclusion of the sections of O_P(m) over D+(f) into the degree-zero localization of the truncation algebra at sigma f * psi f, as an additive map, for every integer m”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeTwistAwayHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean#L365). The attribute's comment: “the degreewise inclusion of the sections of O\_P(m) over D+(f) into the degree-zero localization of the truncation algebra at sigma f * psi f, as an additive map, for every integer m”.
 
 > **The degreewise inclusion `Γ(D₊(f), 𝒪_P(m)) → (B[1/σ f · ψ f])₀`, as an additive map**, for
 > every integer `m`. It is the inverse of
@@ -1462,7 +1462,7 @@ def puncturedConeTwistAwayHom (m : ℤ) (d : ℕ) (hf : f ∈ 𝒜 d) (hd : 0 < 
       HomogeneousLocalization.Away (grading 𝒜) (sigmaMulPsi 𝒜 f)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeTwistApp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean#L384). The attribute's comment: “the degreewise inclusion O_P(m) to (pi|_U)_* O_U over one standard open D+(f), as a map of modules over the sections of O_P there, for every integer m”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeTwistApp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalMap.lean#L384). The attribute's comment: “the degreewise inclusion O\_P(m) to (pi|\_U)\_* O\_U over one standard open D+(f), as a map of modules over the sections of O\_P there, for every integer m”.
 
 > **The local degreewise inclusion `Γ(D₊(f), 𝒪_P(m)) ⟶ Γ(D₊(f), (π|_U)_* 𝒪_U)`, as a morphism
 > of modules over the sections of `𝒪_P` on `D₊(f)`**, for every integer `m`. This is the local
@@ -1475,7 +1475,7 @@ def puncturedConeTwistApp (m : ℤ) (d : ℕ) (hf : f ∈ 𝒜 d) (hd : 0 < d) :
         (op (AlgebraicGeometry.Proj.basicOpen 𝒜 f))
 ```
 
-**`Stacks.Truncation.puncturedToLocalization_degreeZeroRingMap_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalRestriction.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalRestriction.lean#L82). The attribute's comment: “the comparison maps (B[1/sigma f * psi f])_0 to A[1/f] commute with the restriction maps of degree-zero localizations, for a general inclusion D+(g) <= D+(f) of standard opens”.
+**`Stacks.Truncation.puncturedToLocalization_degreeZeroRingMap_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalRestriction.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalRestriction.lean#L82). The attribute's comment: “the comparison maps (B[1/sigma f * psi f])\_0 to A[1/f] commute with the restriction maps of degree-zero localizations, for a general inclusion D+(g) <= D+(f) of standard opens”.
 
 > **The comparison maps `(B[1/σ f · ψ f])₀ → A[1/f]` commute with the restriction maps of
 > degree-zero localizations:** the one of `B` attached to `D₊(σ g · ψ g) ⊆ D₊(σ f · ψ f)` on the
@@ -1511,7 +1511,7 @@ theorem basicOpen_sigmaMulPsi_le_of_basicOpen_le {d e : ℕ} (hf : f ∈ 𝒜 d)
       ProjectiveSpectrum.basicOpen (grading 𝒜) (sigmaMulPsi 𝒜 f)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeTwistAwayHom_degreeZeroRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalRestriction.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalRestriction.lean#L146). The attribute's comment: “the punctured degreewise inclusion of the sections of O_P(m) into the degree-zero localization of the truncation algebra at sigma f * psi f commutes with restriction between two standard opens, for every integer m”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeTwistAwayHom_degreeZeroRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalRestriction.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedLocalRestriction.lean#L146). The attribute's comment: “the punctured degreewise inclusion of the sections of O\_P(m) into the degree-zero localization of the truncation algebra at sigma f * psi f commutes with restriction between two standard opens, for every integer m”.
 
 > **The punctured degreewise inclusion commutes with restriction between two standard opens,
 > read in the degree-zero localizations of the truncation algebra.** On the source the restriction
@@ -1557,7 +1557,7 @@ theorem puncturedConeTwistAwayHom_one (d : ℕ) (hf : f ∈ 𝒜 d) (hd : 0 < d)
         ((twistOne 𝒜).eval (op (ProjectiveSpectrum.basicOpen 𝒜 f))) = 1
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeTwistApp_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedMul.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedMul.lean#L126). The attribute's comment: “the local punctured degreewise inclusion of the sections of O_P(m) into the functions on the punctured cone over D+(f) is multiplicative, in every pair of integer degrees”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeTwistApp_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedMul.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedMul.lean#L126). The attribute's comment: “the local punctured degreewise inclusion of the sections of O\_P(m) into the functions on the punctured cone over D+(f) is multiplicative, in every pair of integer degrees”.
 
 > **The local punctured degreewise inclusion on sections is multiplicative**, in every pair of
 > integer degrees.
@@ -1587,7 +1587,7 @@ theorem puncturedConeTwistApp_one (d : ℕ) (hf : f ∈ 𝒜 d) (hd : 0 < d) :
           ((twistOne 𝒜).eval (op (ProjectiveSpectrum.basicOpen 𝒜 f)))) = 1
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedTwistHom_mul_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedMul.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedMul.lean#L243). The attribute's comment: “the inclusions of the homogeneous pieces of the integral twist algebra in (pi|_U)_* O_U are multiplicative, over every open of P and in every pair of integer degrees, for the punctured cone of the truncation algebra”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedTwistHom_mul_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedMul.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedMul.lean#L243). The attribute's comment: “the inclusions of the homogeneous pieces of the integral twist algebra in (pi|\_U)\_* O\_U are multiplicative, over every open of P and in every pair of integer degrees, for the punctured cone of the truncation algebra”.
 
 > **The inclusions of the homogeneous pieces of the algebra of all integral twists in
 > `(π|_U)_* 𝒪_U` multiply as the grading prescribes**, over every open of `P` and in every pair of
@@ -1629,7 +1629,7 @@ def puncturedConeAlgebraSectionsEquivAway (hf : f ∈ 𝒜 d) (hd : 0 < d) :
       Localization.Away f
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeAlgebraSectionsRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedPushforward.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedPushforward.lean#L82). The attribute's comment: “the footnote computation (π|_U)_* O_U = ⨁_{m ∈ ℤ} O_P(m), over one standard open D₊(f) of P and for the truncation algebra, with the summands written as the homogeneous parts of A[1/f]”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeAlgebraSectionsRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedPushforward.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedPushforward.lean#L82). The attribute's comment: “the footnote computation (π|\_U)\_* O\_U = ⨁\_\{m ∈ ℤ} O\_P(m), over one standard open D₊(f) of P and for the truncation algebra, with the summands written as the homogeneous parts of A[1/f]”.
 
 > The sections of the direct image of the structure sheaf of the punctured cone over a standard
 > open `D₊(f)` of `P = Proj A` are the direct sum, over *all* integer degrees, of the homogeneous
@@ -1642,7 +1642,7 @@ def puncturedConeAlgebraSectionsRingEquiv (hf : f ∈ 𝒜 d) (hd : 0 < d) :
       (⨁ m : ℤ, ↥(puncturedGrading 𝒜 d hf m))
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeAlgebraSectionsEquivTwistSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedPushforward.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedPushforward.lean#L98). The attribute's comment: “the footnote computation (π|_U)_* O_U = ⨁_{m ∈ ℤ} O_P(m), over one standard open D₊(f) of P and for the truncation algebra, with the summands written as the sections of the twisting sheaves”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeAlgebraSectionsEquivTwistSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedPushforward.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedPushforward.lean#L98). The attribute's comment: “the footnote computation (π|\_U)\_* O\_U = ⨁\_\{m ∈ ℤ} O\_P(m), over one standard open D₊(f) of P and for the truncation algebra, with the summands written as the sections of the twisting sheaves”.
 
 > The sections of the direct image of the structure sheaf of the punctured cone over a standard
 > open `D₊(f)` of `P = Proj A` are the direct sum of the sections of the twisting sheaves over
@@ -1656,7 +1656,7 @@ def puncturedConeAlgebraSectionsEquivTwistSections (hf : f ∈ 𝒜 d) (hd : 0 <
         (op (ProjectiveSpectrum.basicOpen 𝒜 f))))
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneAlgebraSectionsEquivTwistSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedPushforward.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedPushforward.lean#L112). The attribute's comment: “the footnote computation π_* O_L = ⨁_{m ≥ 0} O_P(m), over one standard open D₊(f) of P and for the truncation algebra, with the summands written as the sections of the twisting sheaves”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneAlgebraSectionsEquivTwistSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedPushforward.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedPushforward.lean#L112). The attribute's comment: “the footnote computation π\_* O\_L = ⨁\_\{m ≥ 0} O\_P(m), over one standard open D₊(f) of P and for the truncation algebra, with the summands written as the sections of the twisting sheaves”.
 
 > The sections of the direct image of the structure sheaf of the cone over a standard open
 > `D₊(f)` of `P = Proj A` are the direct sum of the sections of the nonnegative twisting sheaves
@@ -1688,7 +1688,7 @@ theorem puncturedConeAlgebraSectionsRingEquiv_symm_of (m : ℤ) (d : ℕ) (hf : 
           (y : HomogeneousLocalization.Away (grading 𝒜) (sigmaMulPsi 𝒜 f)))
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeAlgebraSectionsEquivTwistSections_symm_of`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedStandardOpenSum.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedStandardOpenSum.lean#L104). The attribute's comment: “the m-th summand of the standard-open direct-sum decomposition of the functions on the punctured cone is the local degreewise inclusion of the sections of O_P(m), for the truncation cone and every integer m”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeAlgebraSectionsEquivTwistSections_symm_of`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedStandardOpenSum.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPuncturedStandardOpenSum.lean#L104). The attribute's comment: “the m-th summand of the standard-open direct-sum decomposition of the functions on the punctured cone is the local degreewise inclusion of the sections of O\_P(m), for the truncation cone and every integer m”.
 
 > **The `m`-th summand of the standard-open decomposition
 > `Γ(D₊(f), (π|_U)_* 𝒪_U) = ⨁_{m ∈ ℤ} Γ(D₊(f), 𝒪_P(m))` is the local degreewise inclusion
@@ -1727,7 +1727,7 @@ def puncturedTotalRingHom (V : Opens (ProjectiveSpectrum.top 𝒜)) :
     (integerTwistPresheafAlgebra 𝒜).Total (op V) →+* puncturedConeSections 𝒜 V
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneAlgebraSectionsRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPushforward.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPushforward.lean#L55). The attribute's comment: “the footnote computation π_* O_L = ⨁_{m ≥ 0} O_P(m), over one standard open D₊(f) of P and for the truncation algebra, with the summands written as the homogeneous parts of A[1/f]”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneAlgebraSectionsRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPushforward.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistPushforward.lean#L55). The attribute's comment: “the footnote computation π\_* O\_L = ⨁\_\{m ≥ 0} O\_P(m), over one standard open D₊(f) of P and for the truncation algebra, with the summands written as the homogeneous parts of A[1/f]”.
 
 > The sections of the direct image of the structure sheaf of the cone over a standard open
 > `D₊(f)` of `P = Proj A` are the direct sum, over the nonnegative degrees, of the homogeneous parts
@@ -1800,7 +1800,7 @@ theorem coneProjIsoRelativeSpecTwistAlgebra_hom_comp :
       pi 𝒜
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneRelativeSpecIsoTwistAlgebraViaDirectImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistRelativeSpecInclusion.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistRelativeSpecInclusion.lean#L190). The attribute's comment: “L is, over P, the relative spectrum of the nonnegative twist algebra by the route of the diagram: the presentation of L as the relative spectrum of pi_* O_L composed with the comparison of pi_* O_L with the direct sum of the twists O_P(m) over m at least 0”. References: EGA II (8.7.3), “partial”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneRelativeSpecIsoTwistAlgebraViaDirectImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistRelativeSpecInclusion.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistRelativeSpecInclusion.lean#L190). The attribute's comment: “L is, over P, the relative spectrum of the nonnegative twist algebra by the route of the diagram: the presentation of L as the relative spectrum of pi\_* O\_L composed with the comparison of pi\_* O\_L with the direct sum of the twists O\_P(m) over m at least 0”. References: EGA II (8.7.3), “partial”.
 
 > `L ≅ Spec_P(⨁_{m ≥ 0} 𝒪_P(m))` over `P`, as the presentation of the cone as the relative
 > spectrum of its direct-image algebra `π_* 𝒪_L`
@@ -1813,7 +1813,7 @@ def coneRelativeSpecIsoTwistAlgebraViaDirectImage :
     Over.mk (pi 𝒜) ≅ Over.mk (relativeSpecToBase (nonnegTwistAlgebraSheaf 𝒜))
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneRelativeSpecIsoTwistAlgebraViaDirectImage_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistRelativeSpecInclusion.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistRelativeSpecInclusion.lean#L201). The attribute's comment: “the route through pi_* O_L is the one-step identification of L with the relative spectrum of the nonnegative twist algebra”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneRelativeSpecIsoTwistAlgebraViaDirectImage_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistRelativeSpecInclusion.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistRelativeSpecInclusion.lean#L201). The attribute's comment: “the route through pi\_* O\_L is the one-step identification of L with the relative spectrum of the nonnegative twist algebra”.
 
 > The identification of `L` with `Spec_P(⨁_{m ≥ 0} 𝒪_P(m))` through `π_* 𝒪_L` is
 > `Stacks.AlgebraicGeometry.ProjConeTwist.coneRelativeSpecTwistAlgebraIso`.
@@ -1872,7 +1872,7 @@ def puncturedToConeProj :
       AlgebraicGeometry.Proj (grading 𝒜)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeRelativeSpecTwistAlgebraIsoOpenUOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistRelativeSpecInclusion.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistRelativeSpecInclusion.lean#L308). The attribute's comment: “the left square as an isomorphism over X: the left identification of Spec_P of the integer twist algebra with U is an isomorphism of schemes over X, its source lying over X by the top-left arrow followed by L → X”. References: EGA II (8.12.5), “special case”; EGA II (8.6.2), “special case”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.puncturedConeRelativeSpecTwistAlgebraIsoOpenUOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistRelativeSpecInclusion.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistRelativeSpecInclusion.lean#L308). The attribute's comment: “the left square as an isomorphism over X: the left identification of Spec\_P of the integer twist algebra with U is an isomorphism of schemes over X, its source lying over X by the top-left arrow followed by L → X”. References: EGA II (8.12.5), “special case”; EGA II (8.6.2), “special case”.
 
 > The identification `Spec_P(⨁_{m ∈ ℤ} 𝒪_P(m)) ≅ U` as an isomorphism of schemes over
 > `X = Spec A`, the source lying over `X` by the morphism to `L` followed by `σ : L ⟶ X` and the
@@ -1947,7 +1947,7 @@ theorem coneTwistAwayHom_mul (d : ℕ) (hf : f ∈ 𝒜 d) (hd : 0 < d) (i j : �
       coneTwistAwayHom 𝒜 i d hf hd x * coneTwistAwayHom 𝒜 j d hf hd y
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistApp_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistStandardOpenMul.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistStandardOpenMul.lean#L270). The attribute's comment: “the local degreewise inclusion of the sections of O_P(m) into the functions on the cone over D+(f) is multiplicative, for the truncation cone”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTwistApp_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistStandardOpenMul.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistStandardOpenMul.lean#L270). The attribute's comment: “the local degreewise inclusion of the sections of O\_P(m) into the functions on the cone over D+(f) is multiplicative, for the truncation cone”.
 
 > The local degreewise inclusion `Γ(D₊(f), 𝒪_P(m)) ⟶ Γ(D₊(f), π_* 𝒪_L)` is
 > multiplicative.
@@ -1985,7 +1985,7 @@ theorem coneAlgebraSectionsRingEquiv_symm_of (m d : ℕ) (hf : f ∈ 𝒜 d) (hd
           (y : HomogeneousLocalization.Away (grading 𝒜) (psi 𝒜 f)))
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneAlgebraSectionsEquivTwistSections_symm_of`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistStandardOpenSum.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistStandardOpenSum.lean#L78). The attribute's comment: “the m-th summand of the standard-open direct-sum decomposition of the functions on the cone is the local degreewise inclusion of the sections of O_P(m), for the truncation cone”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneAlgebraSectionsEquivTwistSections_symm_of`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistStandardOpenSum.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistStandardOpenSum.lean#L78). The attribute's comment: “the m-th summand of the standard-open direct-sum decomposition of the functions on the cone is the local degreewise inclusion of the sections of O\_P(m), for the truncation cone”.
 
 > The inclusion of the `m`-th summand of the standard-open decomposition
 > `Γ(D₊(f), π_* 𝒪_L) = ⨁_{m ≥ 0} Γ(D₊(f), 𝒪_P(m))` is the degreewise inclusion
@@ -2021,7 +2021,7 @@ def coneTotalRingHom (U : Opens (ProjectiveSpectrum.top 𝒜)) :
     (nonnegTwistPresheafAlgebra 𝒜).Total (op U) →+* coneSections 𝒜 U
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTotalPresheafHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistUngradedSheaf.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistUngradedSheaf.lean#L97). The attribute's comment: “the degreewise inclusions as a morphism of presheaves of rings from the ungraded realization of the nonnegative twist algebra to pi_* O_L, for the truncation cone”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneTotalPresheafHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistUngradedSheaf.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistUngradedSheaf.lean#L97). The attribute's comment: “the degreewise inclusions as a morphism of presheaves of rings from the ungraded realization of the nonnegative twist algebra to pi\_* O\_L, for the truncation cone”.
 
 > **The degreewise inclusions as a morphism of presheaves of rings** from the ungraded
 > realization of the algebra of nonnegative twists into `π_* 𝒪_L`. Over an open of `P` it is the
@@ -2033,7 +2033,7 @@ def coneTotalPresheafHom :
     (nonnegTwistPresheafAlgebra 𝒜).totalPresheaf ⟶ (conePushforwardRingSheaf 𝒜).obj
 ```
 
-**`Stacks.AlgebraicGeometry.ProjConeTwist.coneUngradedSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistUngradedSheaf.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistUngradedSheaf.lean#L133). The attribute's comment: “the identification pi_* O_L = the ungraded realization of the nonnegative twist algebra, as sheaves of rings, for the cone of the truncation algebra”.
+**`Stacks.AlgebraicGeometry.ProjConeTwist.coneUngradedSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistUngradedSheaf.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistUngradedSheaf.lean#L133). The attribute's comment: “the identification pi\_* O\_L = the ungraded realization of the nonnegative twist algebra, as sheaves of rings, for the cone of the truncation algebra”.
 
 > **`π_* 𝒪_L` is the ungraded realization of the algebra of nonnegative twists**, as sheaves of
 > rings. This is the identification of [Stacks, Tag 0EKG] at the level of sheaves of rings, as
@@ -2109,7 +2109,7 @@ theorem coe_sectionsTwistEquivGradedPiece_mul (hf : f ∈ 𝒜 k) (hk : 0 < k) (
         (sectionsTwistEquivGradedPiece 𝒜 hf hk j y : LocalizedModule.Away f A)
 ```
 
-**`Stacks.Truncation.instGradedRingGrading`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/Truncation.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/Truncation.lean#L318). The attribute's comment: “the graded ring B = ⨁_{d ≥ 0} A_{≥ d}”.
+**`Stacks.Truncation.instGradedRingGrading`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/Truncation.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/Truncation.lean#L318). The attribute's comment: “the graded ring B = ⨁\_\{d ≥ 0} A\_\{≥ d}”.
 
 > `B = ⨁_{d ≥ 0} A_{≥ d}` is a graded ring with degree-`d` part `B_d ≃ A_{≥ d}`.
 
@@ -2176,7 +2176,7 @@ theorem truncationAlgebra_unique :
       e ((s.degreeEquiv d a : s.B)) = ((t.degreeEquiv d a : t.B))
 ```
 
-**`Stacks.Truncation.isInternal_awayGrading`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationGraded.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationGraded.lean#L149). The attribute's comment: “the equality of homogeneous parts (B[1/ψ f])_0 = ⨁_{m ≥ 0} (A[1/f])_m, the ring-theoretic form of the identification of π_* O_L with the sum of the nonnegative twists”.
+**`Stacks.Truncation.isInternal_awayGrading`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationGraded.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationGraded.lean#L149). The attribute's comment: “the equality of homogeneous parts (B[1/ψ f])\_0 = ⨁\_\{m ≥ 0} (A[1/f])\_m, the ring-theoretic form of the identification of π\_* O\_L with the sum of the nonnegative twists”.
 
 > `(B_{ψ f})₀ = ⨁_{m ≥ 0} (A_f)_m`: the degree-zero part of the localization of the
 > truncation algebra at `ψ f` is the internal direct sum of its homogeneous pieces, which the
@@ -2187,7 +2187,7 @@ theorem isInternal_awayGrading (hf : f ∈ 𝒜 d) :
     DirectSum.IsInternal (awayGrading 𝒜 d hf)
 ```
 
-**`Stacks.Truncation.awayGradingEquivAwayPiece`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationGraded.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationGraded.lean#L183). The attribute's comment: “the degree-m piece of (B[1/ψ f])_0 is (A[1/f])_m”.
+**`Stacks.Truncation.awayGradingEquivAwayPiece`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationGraded.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationGraded.lean#L183). The attribute's comment: “the degree-m piece of (B[1/ψ f])\_0 is (A[1/f])\_m”.
 
 > The degree-`m` piece of `(B_{ψ f})₀` is the degree-`m` part `(A_f)_m` of `A_f`.
 
@@ -2196,7 +2196,7 @@ def awayGradingEquivAwayPiece (hf : f ∈ 𝒜 d) (m : ℕ) :
     awayGrading 𝒜 d hf m ≃+ awayPiece 𝒜 d hf m
 ```
 
-**`Stacks.Truncation.puncturedRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean#L211). The attribute's comment: “the equality of rings (B[1/σ f · ψ f])_0 = A[1/f], the functions on the punctured cone over a standard open D₊(f) of P”.
+**`Stacks.Truncation.puncturedRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean#L211). The attribute's comment: “the equality of rings (B[1/σ f · ψ f])\_0 = A[1/f], the functions on the punctured cone over a standard open D₊(f) of P”.
 
 > `(B[1/σ f · ψ f])₀ = A[1/f]`: the degree-zero part of the localization of the truncation
 > algebra at `σ f · ψ f` is the whole localization of `A` at `f`, the comparison map
@@ -2207,7 +2207,7 @@ def puncturedRingEquiv (hf : f ∈ 𝒜 d) :
     HomogeneousLocalization.Away (grading 𝒜) (sigmaMulPsi 𝒜 f) ≃+* Localization.Away f
 ```
 
-**`Stacks.Truncation.isInternal_puncturedGrading`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean#L298). The attribute's comment: “the equality of homogeneous parts (B[1/σ f · ψ f])_0 = ⨁_{m ∈ ℤ} (A[1/f])_m, the ring-theoretic form of the identification of the direct image of the structure sheaf of the punctured cone with the sum of all the integral twists”.
+**`Stacks.Truncation.isInternal_puncturedGrading`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean#L298). The attribute's comment: “the equality of homogeneous parts (B[1/σ f · ψ f])\_0 = ⨁\_\{m ∈ ℤ} (A[1/f])\_m, the ring-theoretic form of the identification of the direct image of the structure sheaf of the punctured cone with the sum of all the integral twists”.
 
 > `(B[1/σ f · ψ f])₀ = ⨁_{m ∈ ℤ} (A[1/f])_m`: the degree-zero part of the localization of the
 > truncation algebra at `σ f · ψ f` is the internal direct sum of its homogeneous pieces, which the
@@ -2218,7 +2218,7 @@ theorem isInternal_puncturedGrading (hf : f ∈ 𝒜 d) :
     DirectSum.IsInternal (puncturedGrading 𝒜 d hf)
 ```
 
-**`Stacks.Truncation.puncturedGradingEquivAwayGrading`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean#L342). The attribute's comment: “the degree-m piece of (B[1/σ f · ψ f])_0 is (A[1/f])_m, for every integer m”.
+**`Stacks.Truncation.puncturedGradingEquivAwayGrading`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean#L342). The attribute's comment: “the degree-m piece of (B[1/σ f · ψ f])\_0 is (A[1/f])\_m, for every integer m”.
 
 > The degree-`m` piece of `(B[1/σ f · ψ f])₀` is the degree-`m` part of `A[1/f]`, for every
 > integer `m`.
@@ -2228,7 +2228,7 @@ def puncturedGradingEquivAwayGrading (hf : f ∈ 𝒜 d) (m : ℤ) :
     puncturedGrading 𝒜 d hf m ≃+ Stacks.ProjectiveCohomology.awayGrading 𝒜 hf m
 ```
 
-**`Stacks.Truncation.awayGradingEquivSectionsTwist`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean#L387). The attribute's comment: “the degree-m summand of the functions on the cone over D₊(f) is the module of sections of O_P(m) over D₊(f), for m ≥ 0”.
+**`Stacks.Truncation.awayGradingEquivSectionsTwist`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean#L387). The attribute's comment: “the degree-m summand of the functions on the cone over D₊(f) is the module of sections of O\_P(m) over D₊(f), for m ≥ 0”.
 
 > The degree-`m` summand of `(B[1/ψ f])₀` is the module of sections of the twisting sheaf
 > `𝒪_P(m)` over `D₊(f)`, for `m ≥ 0`.
@@ -2239,7 +2239,7 @@ def awayGradingEquivSectionsTwist (hf : f ∈ 𝒜 d) (hd : 0 < d) (m : ℕ) :
       (twistingSheaf 𝒜 (m : ℤ)).val.obj (op (ProjectiveSpectrum.basicOpen 𝒜 f))
 ```
 
-**`Stacks.Truncation.puncturedGradingEquivSectionsTwist`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean#L397). The attribute's comment: “the degree-m summand of the functions on the punctured cone over D₊(f) is the module of sections of O_P(m) over D₊(f), for every integer m”.
+**`Stacks.Truncation.puncturedGradingEquivSectionsTwist`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/TruncationLocalizationPunctured.lean#L397). The attribute's comment: “the degree-m summand of the functions on the punctured cone over D₊(f) is the module of sections of O\_P(m) over D₊(f), for every integer m”.
 
 > The degree-`m` summand of `(B[1/σ f · ψ f])₀` is the module of sections of the twisting
 > sheaf `𝒪_P(m)` over `D₊(f)`, for every integer `m`.
@@ -2331,7 +2331,7 @@ theorem projAndSpecDiagram_eq_laurentDiagram_of_isProper :
         Stacks.AlgebraicGeometry.ProjAndSpec.xToZ (grading L)
 ```
 
-**`Stacks.SectionRingProjIso.coneIsoNonnegLaurentOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjIso/DiagramClause.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjIso/DiagramClause.lean#L241). The attribute's comment: “the diagram clause: the nonnegatively graded left-hand entry L of diagram 0EKG becomes Spec_P of the direct sum of the nonnegative tensor powers of the ample module”.
+**`Stacks.SectionRingProjIso.coneIsoNonnegLaurentOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjIso/DiagramClause.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjIso/DiagramClause.lean#L241). The attribute's comment: “the diagram clause: the nonnegatively graded left-hand entry L of diagram 0EKG becomes Spec\_P of the direct sum of the nonnegative tensor powers of the ample module”.
 
 > **The diagram clause of [Stacks, Tag 0EKI], nonnegatively graded entry.** For `P` proper over
 > a ring `R` and `𝓛` an ample invertible `𝒪_P`-module with section ring `A = Γ_*(P, 𝓛)`, the
@@ -2350,7 +2350,7 @@ def coneIsoNonnegLaurentOfIsProper :
       nonnegLaurentRelativeSpecOver L hL
 ```
 
-**`Stacks.SectionRingProjIso.puncturedConeIsoLaurentOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjIso/DiagramClause.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjIso/DiagramClause.lean#L255). The attribute's comment: “the diagram clause: the integer-graded left-hand entry U of diagram 0EKG becomes Spec_P of the direct sum of all integral tensor powers of the ample module”.
+**`Stacks.SectionRingProjIso.puncturedConeIsoLaurentOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjIso/DiagramClause.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjIso/DiagramClause.lean#L255). The attribute's comment: “the diagram clause: the integer-graded left-hand entry U of diagram 0EKG becomes Spec\_P of the direct sum of all integral tensor powers of the ample module”.
 
 > **The diagram clause of [Stacks, Tag 0EKI], integer-graded entry.** For `P` proper over a ring
 > `R` and `𝓛` an ample invertible `𝒪_P`-module with section ring `A = Γ_*(P, 𝓛)`, the
@@ -2375,7 +2375,7 @@ theorem isIso_projHomOfIsAmple_of_isProper (hL : IsAmple X L) {R : CommRingCat.{
     IsIso (projHomOfIsAmple L hL)
 ```
 
-**`Stacks.SectionRingProjIso.projIsoOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjIso/Proper.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjIso/Proper.lean#L125). The attribute's comment: “the identification P = Proj(A) as an isomorphism P ≅ Proj Γ_*(P, 𝓛), for P proper over R”.
+**`Stacks.SectionRingProjIso.projIsoOfIsProper`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjIso/Proper.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjIso/Proper.lean#L125). The attribute's comment: “the identification P = Proj(A) as an isomorphism P ≅ Proj Γ\_*(P, 𝓛), for P proper over R”.
 
 > The isomorphism `P ≅ Proj Γ_*(P, 𝓛)` whose underlying morphism is the canonical one of
 > [Stacks, Tag 01PZ], for `P` proper over `R` and `𝓛` ample.

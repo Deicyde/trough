@@ -66,7 +66,7 @@ noncomputable def dgTensorFunctor :
       CochainComplex (SheafOfModules.{m} (toRingCat J Osharp)) ℤ
 ```
 
-**`SheafOfModules.RelativeTensor.dgUnitorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensorUnitor.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensorUnitor.lean#L135). The attribute's comment: “the unit isomorphism A ⊗_A N ≅ N of complexes, for A the regular right module”.
+**`SheafOfModules.RelativeTensor.dgUnitorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensorUnitor.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedRelativeTensorUnitor.lean#L135). The attribute's comment: “the unit isomorphism A ⊗\_A N ≅ N of complexes, for A the regular right module”.
 
 > **The unit isomorphism of the relative tensor product of differential graded modules**:
 > `A ⊗_A N ≅ N` as cochain complexes of sheaves of modules, for `A` a sheaf of differential graded

@@ -310,7 +310,7 @@ theorem properPushforward_baseChangeCyclePullback
       baseChangeCyclePullback B sX k (properPushforward B.base (f ≫ sX) sX f rfl k z)
 ```
 
-**`Stacks.Chow.properChowPushforward_baseChangeChowPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean#L418). The attribute's comment: “the Chow square, in the generality of every Chow base-change map induced by the cycle-level one of Tag 0FVJ; instantiated at that map, with nothing left to supply, by properChowPushforward_baseChangeChowPullback_of_baseChangeChowPullback below”.
+**`Stacks.Chow.properChowPushforward_baseChangeChowPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean#L418). The attribute's comment: “the Chow square, in the generality of every Chow base-change map induced by the cycle-level one of Tag 0FVJ; instantiated at that map, with nothing left to supply, by properChowPushforward\_baseChangeChowPullback\_of\_baseChangeChowPullback below”.
 
 > **Stacks Project, Tag 0FVL, the Chow square.** In a flat base change of Chow situations,
 > proper pushforward commutes with the base-change map on Chow groups: for `f : Y ⟶ X` proper over
@@ -542,7 +542,7 @@ theorem baseChangeChowPullbackSquare_comp (k : ℤ) :
 
 [Tag 0FVQ](https://stacks.math.columbia.edu/tag/0FVQ) in the Stacks Project.
 
-**`Stacks.Chow.FilteredBaseChangeSystem.exists_stageChowPullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitChow.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitChow.lean#L346). The attribute's comment: “Chow groups, surjectivity: every k-cycle class on X' comes from some X_i”.
+**`Stacks.Chow.FilteredBaseChangeSystem.exists_stageChowPullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitChow.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitChow.lean#L346). The attribute's comment: “Chow groups, surjectivity: every k-cycle class on X' comes from some X\_i”.
 
 > **Stacks Project, Tag 0FVQ, surjectivity for Chow groups.** Every `k`-cycle class on `X'` is
 > the image of a `k`-cycle class on `X_i` for some finite stage `i`.
@@ -556,7 +556,7 @@ theorem exists_stageChowPullback_eq (k : ℤ)
       s.stageChowPullback i k β = α
 ```
 
-**`Stacks.Chow.FilteredBaseChangeSystem.exists_transitionChowPullback_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitChow.lean, line 626](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitChow.lean#L626). The attribute's comment: “Chow groups, eventual injectivity: a k-cycle class on X_j killed by base change to X' is killed by some transition X_i -> X_j”.
+**`Stacks.Chow.FilteredBaseChangeSystem.exists_transitionChowPullback_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitChow.lean, line 626](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitChow.lean#L626). The attribute's comment: “Chow groups, eventual injectivity: a k-cycle class on X\_j killed by base change to X' is killed by some transition X\_i -> X\_j”.
 
 > **Stacks Project, Tag 0FVQ, eventual injectivity for Chow groups.** A `k`-cycle class on
 > `X_j` whose image in `CH_k(X')` vanishes is annihilated by the comparison homomorphism along
@@ -569,7 +569,7 @@ theorem exists_transitionChowPullback_eq_zero (j : I) (k : ℤ)
     ∃ (i : I) (f : i ⟶ j), s.transitionChowPullback f k β = 0
 ```
 
-**`Stacks.Chow.FilteredBaseChangeSystem.exists_stageCyclePullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitCycles.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitCycles.lean#L374). The attribute's comment: “cycle groups, surjectivity: every k-cycle on X' is the image of a k-cycle on X_i”.
+**`Stacks.Chow.FilteredBaseChangeSystem.exists_stageCyclePullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitCycles.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitCycles.lean#L374). The attribute's comment: “cycle groups, surjectivity: every k-cycle on X' is the image of a k-cycle on X\_i”.
 
 > **Stacks Project, Tag 0FVQ, surjectivity for cycle groups.** Every `k`-cycle on `X'` is the
 > image of a `k`-cycle on `X_i` for some finite stage `i`.
@@ -586,7 +586,7 @@ theorem exists_stageCyclePullback_eq (k : ℤ)
       s.stageCyclePullback i k w = z
 ```
 
-**`Stacks.Chow.FilteredBaseChangeSystem.exists_transitionCyclePullback_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitCycles.lean, line 448](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitCycles.lean#L448). The attribute's comment: “cycle groups, eventual injectivity: a k-cycle on X_j killed by base change to X' is killed by some transition X_i -> X_j”.
+**`Stacks.Chow.FilteredBaseChangeSystem.exists_transitionCyclePullback_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitCycles.lean, line 448](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitCycles.lean#L448). The attribute's comment: “cycle groups, eventual injectivity: a k-cycle on X\_j killed by base change to X' is killed by some transition X\_i -> X\_j”.
 
 > **Stacks Project, Tag 0FVQ, eventual injectivity for cycle groups.** A `k`-cycle on `X_j`
 > whose image in `Z_k(X')` vanishes is annihilated by the transition to some finite stage

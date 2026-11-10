@@ -16,8 +16,8 @@ Section 18.16 of the Stacks Project, [Tag 04BE](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.lan`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.lan#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L80) (StacksFrontier): “g_{p!} = u_p, the left Kan extension along `u.op`”.
-- [`CategoryTheory.Functor.sheafPullbackConstruction.sheafPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullbackConstruction.sheafPullback#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L82) (StacksFrontier): “g_! F = (g_{p!} F)^#”.
+- [`CategoryTheory.Functor.lan`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.lan#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L80) (StacksFrontier): “g\_\{p!} = u\_p, the left Kan extension along `u.op`”.
+- [`CategoryTheory.Functor.sheafPullbackConstruction.sheafPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullbackConstruction.sheafPullback#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L82) (StacksFrontier): “g\_! F = (g\_\{p!} F)^#”.
 
 ## Tag 04BG, a lemma
 
@@ -25,10 +25,10 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.lanAdjunction`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.lanAdjunction#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L71) (StacksFrontier): “(1) g_p! ⊣ u^p”. References: SGA 4 IV (4.6.1), “partial”.
-- [`CategoryTheory.Functor.sheafAdjunctionContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafAdjunctionContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L72) (StacksFrontier): “(2) g_! ⊣ g^{-1}”.
-- [`CategoryTheory.Functor.sheafPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullback#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L73) (StacksFrontier): “g_!”.
-- [`CategoryTheory.Functor.sheafPullbackConstruction.sheafAdjunctionContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullbackConstruction.sheafAdjunctionContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L74) (StacksFrontier): “(2) g_! = (g_p! -)^#”. References: SGA 4 III (1.3), “more general”; SGA 4 III (2.6); SGA 4 IV (4.7), “partial”; SGA 4 IV (4.9.1), “partial”; SGA 4 VI (7.4.13.4).
+- [`CategoryTheory.Functor.lanAdjunction`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.lanAdjunction#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L71) (StacksFrontier): “(1) g\_p! ⊣ u^p”. References: SGA 4 IV (4.6.1), “partial”.
+- [`CategoryTheory.Functor.sheafAdjunctionContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafAdjunctionContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L72) (StacksFrontier): “(2) g\_! ⊣ g^\{-1}”.
+- [`CategoryTheory.Functor.sheafPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullback#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L73) (StacksFrontier): “g\_!”.
+- [`CategoryTheory.Functor.sheafPullbackConstruction.sheafAdjunctionContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPullbackConstruction.sheafAdjunctionContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Pullback.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Pullback.lean#L74) (StacksFrontier): “(2) g\_! = (g\_p! -)^#”. References: SGA 4 III (1.3), “more general”; SGA 4 III (2.6); SGA 4 IV (4.7), “partial”; SGA 4 IV (4.9.1), “partial”; SGA 4 VI (7.4.13.4).
 
 ## Tag 04BH, a lemma
 
@@ -98,7 +98,7 @@ public theorem gShriek_preservesFiniteLimits_module
 
 [Tag 077I](https://stacks.math.columbia.edu/tag/077I) in the Stacks Project.
 
-**`stacks077I_counit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekFullyFaithful.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekFullyFaithful.lean#L211). The attribute's comment: “counit”. References: SGA 4 III (2.6), “u ff ⇒ u_* ff, abelian”.
+**`stacks077I_counit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekFullyFaithful.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekFullyFaithful.lean#L211). The attribute's comment: “counit”. References: SGA 4 III (2.6), “u ff ⇒ u\_* ff, abelian”.
 
 > If `u : C ⥤ D` is continuous, cocontinuous and fully faithful, then for every abelian sheaf
 > `F` on `C` the counit `ε_F : g⁻¹ (g_* F) → F` of the adjunction `g⁻¹ ⊣ g_*` is an isomorphism.
@@ -110,7 +110,7 @@ theorem stacks077I_counit_isIso
     IsIso ((adjStar u J K).counit.app F)
 ```
 
-**`stacks077I_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekFullyFaithful.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekFullyFaithful.lean#L221). The attribute's comment: “unit”. References: SGA 4 III (2.6), “u ff ⇒ u_! ff, abelian”; SGA 4 VII (4.1), “Clause (i)”.
+**`stacks077I_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekFullyFaithful.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LowerShriekFullyFaithful.lean#L221). The attribute's comment: “unit”. References: SGA 4 III (2.6), “u ff ⇒ u\_! ff, abelian”; SGA 4 VII (4.1), “Clause (i)”.
 
 > If `u : C ⥤ D` is continuous, cocontinuous and fully faithful, then for every abelian sheaf
 > `F` on `C` the unit `η_F : F → g⁻¹ (g_! F)` of the adjunction `g_! ⊣ g⁻¹` is an isomorphism.

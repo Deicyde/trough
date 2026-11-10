@@ -43,7 +43,7 @@ public def fShriekRUpperShriekAdjunction :
     (fShriekFunctor.{u, v} B f).mapDerivedCategory ⊣ rUpperShriekFunctor.{u, v, w} B f
 ```
 
-**`AlgebraicGeometry.SmallEtale.moduleFShriekDerivedAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedUpperShriekAdjunction.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/DerivedUpperShriekAdjunction.lean#L400). The attribute's comment: “general coefficient ring Λ, from a Λ-linear lift of f_!”.
+**`AlgebraicGeometry.SmallEtale.moduleFShriekDerivedAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedUpperShriekAdjunction.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/DerivedUpperShriekAdjunction.lean#L400). The attribute's comment: “general coefficient ring Λ, from a Λ-linear lift of f\_!”.
 
 > **Stacks 0F5N** for a general coefficient ring. Let `f : X ⟶ Y` be a locally quasi-finite
 > morphism and let `fShriekMod` be a `Λ`-linear lift of the direct image with compact support
@@ -66,7 +66,7 @@ public def moduleFShriekDerivedAdjunction (f : X ⟶ Y)
     moduleFShriekDerivedFunctor.{u, v, w, r} B Λ f fShriekMod hlift ⊣ RfUpperShriek
 ```
 
-**`AlgebraicGeometry.SmallEtale.moduleFShriekRUpperShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekModuleAdjunction.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekModuleAdjunction.lean#L116). The attribute's comment: “general coefficient ring Λ, for f_! and f^! themselves”. References: SGA 4 XVIII (3.1.5), “special case”.
+**`AlgebraicGeometry.SmallEtale.moduleFShriekRUpperShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekModuleAdjunction.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekModuleAdjunction.lean#L116). The attribute's comment: “general coefficient ring Λ, for f\_! and f^! themselves”. References: SGA 4 XVIII (3.1.5), “special case”.
 
 > **Stacks 0F5N.** Let `f : X ⟶ Y` be a locally quasi-finite morphism of schemes and let `Λ` be
 > a ring. The direct image with compact support `f_!` of Stacks 0F6R and the upper shriek `f^!` of
@@ -127,7 +127,7 @@ public theorem moduleTorsionCohomologyProperty_moduleFShriekDerivedFunctor
       ((moduleFShriekDerivedFunctor.{u, v, w, r} B Λ f fShriekMod hlift).obj K)
 ```
 
-**`AlgebraicGeometry.SmallEtale.moduleTorsionSheafProperty_fShriekMod_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsionModule.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsionModule.lean#L70). The attribute's comment: “the sheaf-level input, for f_! with coefficients in Λ itself”.
+**`AlgebraicGeometry.SmallEtale.moduleTorsionSheafProperty_fShriekMod_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsionModule.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsionModule.lean#L70). The attribute's comment: “the sheaf-level input, for f\_! with coefficients in Λ itself”.
 
 > The direct image with compact support with coefficients in a ring `Λ` sends torsion étale
 > sheaves of `Λ`-modules to torsion étale sheaves of `Λ`-modules: on underlying abelian sheaves it
@@ -139,7 +139,7 @@ public theorem moduleTorsionSheafProperty_fShriekMod_obj (F : ModuleSheaf.{u, v,
     moduleTorsionSheafProperty.{u, v, r} B Y Λ ((fShriekMod.{u, v, r} B Λ f).obj F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.moduleTorsionCohomologyProperty_moduleFShriekDerivedFunctor_fShriekMod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsionModule.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsionModule.lean#L90). The attribute's comment: “f_! on D(X_étale, Λ) ⟶ D(Y_étale, Λ) sends complexes with torsion cohomology sheaves to complexes with torsion cohomology sheaves”.
+**`AlgebraicGeometry.SmallEtale.moduleTorsionCohomologyProperty_moduleFShriekDerivedFunctor_fShriekMod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsionModule.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsionModule.lean#L90). The attribute's comment: “f\_! on D(X\_étale, Λ) ⟶ D(Y\_étale, Λ) sends complexes with torsion cohomology sheaves to complexes with torsion cohomology sheaves”.
 
 > **Stacks 0GJX.** Let `f : X ⟶ Y` be a locally quasi-finite morphism of schemes and let `Λ` be
 > a ring. The functor `f_! : D(X_étale, Λ) ⟶ D(Y_étale, Λ)` of Stacks 0F5N sends complexes with

@@ -24,8 +24,8 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Ideal.torsionOf`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.torsionOf#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L162) (StacksFrontier): “(1) Ann(m) = {f | fm = 0}”.
-- [`Module.annihilator`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.annihilator#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L163) (StacksFrontier): “(2) Ann(M) = {f | fm = 0 for all m}”. References: EGA 0 (5.3.7), “special case”; EGA IV (5.6.11); EGA IV (5.6.11.1); SGA 2 III (1.1).
+- [`Ideal.torsionOf`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Ideal.torsionOf#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L162) (StacksFrontier): “(1) Ann(m) = \{f | fm = 0}”.
+- [`Module.annihilator`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.annihilator#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch10.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch10.lean#L163) (StacksFrontier): “(2) Ann(M) = \{f | fm = 0 for all m}”. References: EGA 0 (5.3.7), “special case”; EGA IV (5.6.11); EGA IV (5.6.11.1); SGA 2 III (1.1).
 
 ## Tag 07T8, a lemma
 

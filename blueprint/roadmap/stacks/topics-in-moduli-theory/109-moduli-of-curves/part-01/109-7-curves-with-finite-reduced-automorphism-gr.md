@@ -99,7 +99,7 @@ theorem map_fst_epsTranslate (x : gluingSubring pts) :
 theorem isAffineOpen_gluedCurveAffinePart : IsAffineOpen (gluedCurveAffinePart k pts hpts)
 ```
 
-**`AlgebraicGeometry.gluedCurveAffinePartSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ProjectiveLinesGluedAtDoublePointsAffinePart.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ProjectiveLinesGluedAtDoublePointsAffinePart.lean#L257). The attribute's comment: “O_X(U) is the equalizer of k[t] × k[t] ⇉ ∏ k[t]/(t - a_i)²”.
+**`AlgebraicGeometry.gluedCurveAffinePartSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ProjectiveLinesGluedAtDoublePointsAffinePart.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ProjectiveLinesGluedAtDoublePointsAffinePart.lean#L257). The attribute's comment: “O\_X(U) is the equalizer of k[t] × k[t] ⇉ ∏ k[t]/(t - a\_i)²”.
 
 > **The functions on `U` are the equalizer** `O_X(U) ⟶ k[t] × k[t] ⇉ ∏ᵢ k[t]/(t - aᵢ)²`: the
 > ring of sections of `X` over the affine part is the ring of pairs of polynomials agreeing to first
@@ -122,7 +122,7 @@ def gluedCurveDualNumbersAut :
     Aut (Over.mk (pullback.snd (gluedCurveToBase k pts hpts) (dualNumbersToBase k)))
 ```
 
-**`AlgebraicGeometry.projectiveLineXChart_comp_gluedCurveDualNumbersAut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ProjectiveLinesGluedAtDoublePointsDualNumbers.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ProjectiveLinesGluedAtDoublePointsDualNumbers.lean#L415). The attribute's comment: “the automorphism of X_A is the substitution t ↦ t + ε on the two affine lines”.
+**`AlgebraicGeometry.projectiveLineXChart_comp_gluedCurveDualNumbersAut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ProjectiveLinesGluedAtDoublePointsDualNumbers.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ProjectiveLinesGluedAtDoublePointsDualNumbers.lean#L415). The attribute's comment: “the automorphism of X\_A is the substitution t ↦ t + ε on the two affine lines”.
 
 > **The automorphism of `X_A` restricts on the two affine lines `Spec k[ε][t]` to the
 > substitution `t ↦ t + ε`** of the equalizer diagram
@@ -210,7 +210,7 @@ theorem autScheme_topologicalKrullDim_eq_one_of_genus_eq_one
         topologicalKrullDim G.left = 1
 ```
 
-**`AlgebraicGeometry.GenusZero.autFunctor_projectiveLine_representableBy_projectiveGeneralLinearTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusZero/AutomorphismSchemeDimension.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GenusZero/AutomorphismSchemeDimension.lean#L63). The attribute's comment: “genus zero: Aut(P^1_k) = PGL_{2,k} as functors, an invertible matrix acting by its Moebius map, and PGL_{2,k} has dimension three”.
+**`AlgebraicGeometry.GenusZero.autFunctor_projectiveLine_representableBy_projectiveGeneralLinearTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusZero/AutomorphismSchemeDimension.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GenusZero/AutomorphismSchemeDimension.lean#L63). The attribute's comment: “genus zero: Aut(P^1\_k) = PGL\_\{2,k} as functors, an invertible matrix acting by its Moebius map, and PGL\_\{2,k} has dimension three”.
 
 > **Stacks Project, Tag 0DSV**, genus zero. **`Aut(ℙ¹_k) = PGL_{2,k}` as functors.** The scheme
 > `PGL_{2,k}` represents the automorphism functor of the projective line over `k`, the point of
@@ -227,7 +227,7 @@ theorem autFunctor_projectiveLine_representableBy_projectiveGeneralLinearTwo :
       topologicalKrullDim (projectiveGeneralLinearTwoScheme k).left = 3
 ```
 
-**`AlgebraicGeometry.GenusZero.autScheme_topologicalKrullDim_eq_three_of_genus_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusZero/AutomorphismSchemeSmoothCurve.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GenusZero/AutomorphismSchemeSmoothCurve.lean#L90). The attribute's comment: “genus zero: the automorphism functor of a smooth proper genus zero curve over an algebraically closed field is represented by PGL_{2,k}, and every representing scheme has dimension three”.
+**`AlgebraicGeometry.GenusZero.autScheme_topologicalKrullDim_eq_three_of_genus_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusZero/AutomorphismSchemeSmoothCurve.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GenusZero/AutomorphismSchemeSmoothCurve.lean#L90). The attribute's comment: “genus zero: the automorphism functor of a smooth proper genus zero curve over an algebraically closed field is represented by PGL\_\{2,k}, and every representing scheme has dimension three”.
 
 > **Stacks Project, Tag 0DSV**, genus zero. **The automorphism group scheme of a smooth proper
 > curve of genus zero over an algebraically closed field is `PGL_{2,k}` and has dimension three.**

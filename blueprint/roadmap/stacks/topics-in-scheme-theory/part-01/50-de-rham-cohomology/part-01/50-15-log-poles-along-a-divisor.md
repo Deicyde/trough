@@ -113,7 +113,7 @@ theorem shortExact_logShortComplex {t : R}
 
 [Tag 0FUA](https://stacks.math.columbia.edu/tag/0FUA) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.deRhamComplexLogPoles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/DeRhamComplexLogPoles.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/DeRhamComplexLogPoles.lean#L155). The attribute's comment: “the complex of sheaves of f⁻¹𝒪_S-modules on X, for an arbitrary morphism of schemes and an arbitrary effective Cartier divisor for which the de Rham complex of log poles is defined (0FMV)”.
+**`AlgebraicGeometry.Scheme.Hom.deRhamComplexLogPoles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/DeRhamComplexLogPoles.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/DeRhamComplexLogPoles.lean#L155). The attribute's comment: “the complex of sheaves of f⁻¹𝒪\_S-modules on X, for an arbitrary morphism of schemes and an arbitrary effective Cartier divisor for which the de Rham complex of log poles is defined (0FMV)”.
 
 > **The de Rham complex of log poles** `Ω^•_{X/S}(log Y)` for a
 > morphism of schemes `f : X ⟶ S` and an effective Cartier divisor `Y ⊆ X`, cut out by `I`, for
@@ -143,7 +143,7 @@ def deRhamComplexLogPoles {t : R}
 
 [Tag 0FUP](https://stacks.math.columbia.edu/tag/0FUP) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.logFormsWedgeMap_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean#L73). The attribute's comment: “clause (1): existence, uniqueness among all O_X-bilinear extensions (the Leibniz rule is not needed for uniqueness), and the Leibniz rule”.
+**`AlgebraicGeometry.Scheme.Hom.logFormsWedgeMap_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean#L73). The attribute's comment: “clause (1): existence, uniqueness among all O\_X-bilinear extensions (the Leibniz rule is not needed for uniqueness), and the Leibniz rule”.
 
 > **Stacks Project, Tag 0FUP, clause (1).** The wedge products
 > `Ω^p_{X/S} × Ω^q_{X/S} → Ω^{p+q}_{X/S}` extend to `𝒪_X`-bilinear maps
@@ -175,7 +175,7 @@ theorem logFormsWedgeMap_spec :
           ((-1 : ℤ) ^ p) • (logFormsWedgeMap hI hlog p (q + 1)).app (op W) φ (logD hI hlog ψ))
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.logPolesDifferentialGradedAlgebra_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean#L104). The attribute's comment: “clause (2): the sheaf of differential graded f⁻¹O_S-algebras on the complex of 0FUA, with the multiplication of clause (1), and the inclusion as a homomorphism”.
+**`AlgebraicGeometry.Scheme.Hom.logPolesDifferentialGradedAlgebra_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/LogPolesWedgeProperties.lean#L104). The attribute's comment: “clause (2): the sheaf of differential graded f⁻¹O\_S-algebras on the complex of 0FUA, with the multiplication of clause (1), and the inclusion as a homomorphism”.
 
 > **Stacks Project, Tag 0FUP, clause (2).** With the multiplication of clause (1), the de Rham
 > complex of log poles `Ω^•_{X/S}(log Y)` of Tag 0FUA is a sheaf of differential graded
@@ -243,10 +243,10 @@ theorem logRes_logFormsWedge_spec :
           (logFormsWedge hI hlog ω ((logPolesFormsInclusion f I (q + 1)).val.app (op W) η))) = 0)
 ```
 
-**`Stacks.LogPoles.logWedge`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean#L399). The attribute's comment: “clause (1), existence: the O_X-bilinear extension of the wedge product to the log poles complex of 0FMW, at the ring level for a principal divisor (t); the Leibniz rule for this product is not proved”.
+**`Stacks.LogPoles.logWedge`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean#L399). The attribute's comment: “clause (1), existence: the O\_X-bilinear extension of the wedge product to the log poles complex of 0FMW, at the ring level for a principal divisor (t); the Leibniz rule for this product is not proved”.
 
-> **The product on the de Rham complex of log poles**, `Ω^p(log Y) × Ω^q(log Y) → Ω^{p+q}(log
-> Y)`, as an `𝒪_X`-bilinear map.  On the pair model it is
+> **The product on the de Rham complex of log poles**, `Ω^p(log Y) × Ω^q(log Y) → Ω^\{p+q}(log
+> Y)`, as an `𝒪\_X`-bilinear map.  On the pair model it is
 > `(ω₁, η₁) ∧ (ω₂, η₂) = (ω₁ ∧ ω₂, η₁ ∧ ω₂ + (-1)^{p+1} ω₁ ∧ η₂)`, with the three degenerate cases
 > where a degree is zero given by wedging a function into both components.
 
@@ -271,7 +271,7 @@ theorem logWedge_logInclR
       logInclR t (p + q) (exteriorPower.wedgeMul p q ω η)
 ```
 
-**`Stacks.LogPoles.eq_logWedge_of_logInclR`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean#L495). The attribute's comment: “clause (1): the product built here is THE O_X-bilinear extension, discharging the hypothesis of the uniqueness statement; the Leibniz rule is not proved”.
+**`Stacks.LogPoles.eq_logWedge_of_logInclR`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DeRham/LogPolesProduct.lean#L495). The attribute's comment: “clause (1): the product built here is THE O\_X-bilinear extension, discharging the hypothesis of the uniqueness statement; the Leibniz rule is not proved”.
 
 > **The product of clause (1) is the unique `𝒪_X`-bilinear extension.**  Any `𝒪_X`-bilinear
 > product on the de Rham complex of log poles that restricts to the wedge product on the forms with
@@ -289,7 +289,7 @@ theorem eq_logWedge_of_logInclR
     w = logWedge A ht
 ```
 
-**`Stacks.LogPoles.logWedge_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesWedge.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DeRham/LogPolesWedge.lean#L180). The attribute's comment: “clause (1), the uniqueness half, strengthened by dropping the Leibniz hypothesis: an O_X-bilinear extension of the wedge to the log poles complex of 0FMW is unique. Existence, and clauses (2), (3), (4), are not proved here”.
+**`Stacks.LogPoles.logWedge_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/LogPolesWedge.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DeRham/LogPolesWedge.lean#L180). The attribute's comment: “clause (1), the uniqueness half, strengthened by dropping the Leibniz hypothesis: an O\_X-bilinear extension of the wedge to the log poles complex of 0FMW is unique. Existence, and clauses (2), (3), (4), are not proved here”.
 
 > If `t` is a nonzerodivisor on the forms, two `𝒪_X`-bilinear products on the de Rham complex
 > of log poles that both restrict to the wedge product on the forms with no pole are equal.
@@ -312,7 +312,7 @@ theorem logWedge_unique {t : R}
 
 [Tag 0FUQ](https://stacks.math.columbia.edu/tag/0FUQ) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.LogPolesResidueData.ambientChernBoundary_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean#L355). The attribute's comment: “upper left triangle of the diagram: the map of 0FU7 for c_1^dR(O_X(-Y)), in the description 0FUG gives of it as the boundary map of the residue sequence of 0FUF, is the boundary map of the log poles sequence of 0FMW composed with the restriction of relative forms; the three short exact sequences in global form and the two morphisms between them that the source builds from a formula on local sections are carried as the explicit named hypothesis LogPolesResidueData, the library having none of them globally”.
+**`AlgebraicGeometry.SheafOfModules.LogPolesResidueData.ambientChernBoundary_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean#L355). The attribute's comment: “upper left triangle of the diagram: the map of 0FU7 for c\_1^dR(O\_X(-Y)), in the description 0FUG gives of it as the boundary map of the residue sequence of 0FUF, is the boundary map of the log poles sequence of 0FMW composed with the restriction of relative forms; the three short exact sequences in global form and the two morphisms between them that the source builds from a formula on local sections are carried as the explicit named hypothesis LogPolesResidueData, the library having none of them globally”.
 
 > **Stacks Project, Tag 0FUQ, the upper left triangle.**
 >
@@ -332,7 +332,7 @@ theorem ambientChernBoundary_eq :
     d.ambientChernBoundary = DerivedCategory.Q.map d.restriction ≫ d.boundary
 ```
 
-**`AlgebraicGeometry.SheafOfModules.LogPolesResidueData.boundary_comp_shiftedRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean#L376). The attribute's comment: “lower right triangle of the diagram: the boundary map of the log poles sequence of 0FMW, followed by the twofold translate of the restriction of relative forms, is the map of 0FU7 for c_1^dR(O_X(-Y)|_Y) in the description 0FUG gives of it as the boundary map of the residue sequence of 0FUF on the divisor; the sequences and the two morphisms between them are carried as the explicit named hypothesis LogPolesResidueData”.
+**`AlgebraicGeometry.SheafOfModules.LogPolesResidueData.boundary_comp_shiftedRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean#L376). The attribute's comment: “lower right triangle of the diagram: the boundary map of the log poles sequence of 0FMW, followed by the twofold translate of the restriction of relative forms, is the map of 0FU7 for c\_1^dR(O\_X(-Y)|\_Y) in the description 0FUG gives of it as the boundary map of the residue sequence of 0FUF on the divisor; the sequences and the two morphisms between them are carried as the explicit named hypothesis LogPolesResidueData”.
 
 > **Stacks Project, Tag 0FUQ, the lower right triangle.**
 >
@@ -352,7 +352,7 @@ theorem boundary_comp_shiftedRestriction :
     d.boundary ≫ (DerivedCategory.Q.map d.restriction)⟦(2 : ℤ)⟧' = d.divisorChernBoundary
 ```
 
-**`AlgebraicGeometry.SheafOfModules.LogPolesResidueData.commSq_chernBoundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean#L393). The attribute's comment: “the square of the diagram, deduced from the two triangles exactly as in the source: the restriction of relative forms, in degree zero and in degree two, carries the map of 0FU7 for c_1^dR(O_X(-Y)) to the one for its restriction to the divisor, both read through 0FUG as boundary maps of residue sequences of 0FUF; the sequences and the two morphisms between them are carried as the explicit named hypothesis LogPolesResidueData”.
+**`AlgebraicGeometry.SheafOfModules.LogPolesResidueData.commSq_chernBoundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean#L393). The attribute's comment: “the square of the diagram, deduced from the two triangles exactly as in the source: the restriction of relative forms, in degree zero and in degree two, carries the map of 0FU7 for c\_1^dR(O\_X(-Y)) to the one for its restriction to the divisor, both read through 0FUG as boundary maps of residue sequences of 0FUF; the sequences and the two morphisms between them are carried as the explicit named hypothesis LogPolesResidueData”.
 
 > **Stacks Project, Tag 0FUQ, the square.**
 >
@@ -369,7 +369,7 @@ theorem commSq_chernBoundary :
       DerivedCategory.Q.map d.restriction ≫ d.divisorChernBoundary
 ```
 
-**`AlgebraicGeometry.SheafOfModules.LogPolesResidueData.deRhamClassDerivedMorphism_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean, line 426](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean#L426). The attribute's comment: “upper left triangle with xi' named as the map of 0FU7 attached to the de Rham first Chern class of O_X(-Y), the identification of 0FUG being made through the uniqueness in 0FU7; carried as explicit named hypotheses are LogPolesResidueData (the three short exact sequences in global form and the two morphisms between them), together with the three inputs the library's own 0FUG carries, namely hlift, hev and realizationComparison”.
+**`AlgebraicGeometry.SheafOfModules.LogPolesResidueData.deRhamClassDerivedMorphism_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean, line 426](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean#L426). The attribute's comment: “upper left triangle with xi' named as the map of 0FU7 attached to the de Rham first Chern class of O\_X(-Y), the identification of 0FUG being made through the uniqueness in 0FU7; carried as explicit named hypotheses are LogPolesResidueData (the three short exact sequences in global form and the two morphisms between them), together with the three inputs the library's own 0FUG carries, namely hlift, hev and realizationComparison”.
 
 > **Stacks Project, Tag 0FUQ, the upper left triangle, with `ξ'` named as in the statement of
 > Tag 0FUQ.**
@@ -403,7 +403,7 @@ theorem deRhamClassDerivedMorphism_eq (c : DeRhamDerivedModuleCorrespondence B D
       DerivedCategory.Q.map d.restriction ≫ d.boundary
 ```
 
-**`AlgebraicGeometry.SheafOfModules.LogPolesResidueData.commSq_deRhamClassDerivedMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean, line 455](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean#L455). The attribute's comment: “the square with xi' named as the map of 0FU7 attached to the de Rham first Chern class of O_X(-Y); zeta' stays in the description 0FUG gives of it as the boundary map of the residue sequence of 0FUF on the divisor, since the map of 0FU7 is built from the de Rham differential graded algebra of the ambient data and the comparison along the closed immersion that would supply one on the divisor is not in the library; carried as explicit named hypotheses are LogPolesResidueData and the three inputs of 0FUG, namely hlift, hev and realizationComparison”.
+**`AlgebraicGeometry.SheafOfModules.LogPolesResidueData.commSq_deRhamClassDerivedMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean, line 455](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/BoundaryChernComparison.lean#L455). The attribute's comment: “the square with xi' named as the map of 0FU7 attached to the de Rham first Chern class of O\_X(-Y); zeta' stays in the description 0FUG gives of it as the boundary map of the residue sequence of 0FUF on the divisor, since the map of 0FU7 is built from the de Rham differential graded algebra of the ambient data and the comparison along the closed immersion that would supply one on the divisor is not in the library; carried as explicit named hypotheses are LogPolesResidueData and the three inputs of 0FUG, namely hlift, hev and realizationComparison”.
 
 > **Stacks Project, Tag 0FUQ, the square, with `ξ'` named as in the statement of Tag 0FUQ.**
 >
@@ -429,7 +429,7 @@ theorem commSq_deRhamClassDerivedMorphism (c : DeRhamDerivedModuleCorrespondence
       DerivedCategory.Q.map d.restriction ≫ d.divisorChernBoundary
 ```
 
-**`Stacks.LineBundle.idealChernMorphism_eq_comp_boundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean#L94). The attribute's comment: “the upper left triangle: the map of 0FU7 for c_1^dR(O_X(-Y)) is the boundary map delta of the shifted sequence of 0FMW composed with the restriction of forms”.
+**`Stacks.LineBundle.idealChernMorphism_eq_comp_boundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean#L94). The attribute's comment: “the upper left triangle: the map of 0FU7 for c\_1^dR(O\_X(-Y)) is the boundary map delta of the shifted sequence of 0FMW composed with the restriction of forms”.
 
 > The upper left triangle `ξ' = δ ∘ res`: the map `idealChernMorphism` is the restriction of
 > forms followed by the boundary map of the shifted log poles sequence.
@@ -441,7 +441,7 @@ theorem idealChernMorphism_eq_comp_boundary :
         (Scheme.Hom.logPolesShiftedSequence f hI hlog).boundary
 ```
 
-**`Stacks.LineBundle.logPolesBoundary_comp_restriction_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean#L107). The attribute's comment: “the lower right triangle: the boundary map delta followed by the restriction of forms in degree two is the map of 0FU7 on Y for c_1^dR(O_X(-Y)|_Y), read on X through the exact direct image along the closed immersion”.
+**`Stacks.LineBundle.logPolesBoundary_comp_restriction_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LogPoles/ChernClassRestrictionSquare.lean#L107). The attribute's comment: “the lower right triangle: the boundary map delta followed by the restriction of forms in degree two is the map of 0FU7 on Y for c\_1^dR(O\_X(-Y)|\_Y), read on X through the exact direct image along the closed immersion”.
 
 > The lower right triangle: `res[2] ∘ δ = ζ'`, with `ζ'` read on `X` through the exact direct
 > image along `i : Y ⟶ X` and `Ω^•_{Y/S}` identified with its direct image by
@@ -489,7 +489,7 @@ theorem idealChernMorphism_comp_restriction :
 >
 > The proof is the chain of the source: `c₁^{dR}(𝒪_X(Y)) = -c₁^{dR}(L)` by additivity of the first
 > Chern class, `c₁^{dR}(L) ∪ b = ξ'(b)` by Remark 0FU7, property (3), `ξ' = δ ∘ (restriction of
-> forms)` by the upper left triangle of Tag 0FUQ, and `δ(b|_Y) = 0` because `b|_Y = 0`.
+> forms)` by the upper left triangle of Tag 0FUQ, and `δ(b|\_Y) = 0` because `b|\_Y = 0`.
 >
 > Carried as explicit named hypotheses are the sequences of Tag 0FUQ, `d`; the cup product of
 > Cohomology, Section 0FKU, `cp`; the identification of Differential Graded Sheaves, Section 0FU3,

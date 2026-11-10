@@ -14,7 +14,7 @@ Section 90.14 of the Stacks Project, [Tag 06T0](https://stacks.math.columbia.edu
 
 [Tag 06T1](https://stacks.math.columbia.edu/tag/06T1) in the Stacks Project.
 
-**`Deformation.exists_minimal_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/MinimalDescent.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/VersalObject/MinimalDescent.lean#L195). The attribute's comment: “minimality_lifted”.
+**`Deformation.exists_minimal_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/MinimalDescent.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/VersalObject/MinimalDescent.lean#L195). The attribute's comment: “minimality\_lifted”.
 
 > Every minimal descent object of `x` is, up to isomorphism, the image of a
 > minimal descent object of `y` when `y ⟶ x` lies over a surjection and (S1)
@@ -35,7 +35,7 @@ theorem exists_minimal_preimage
       IsMinimalObject Y ∧ Nonempty ((descentPushforward p hp g).functor.obj Y ≅ X)
 ```
 
-**`Deformation.isMinimal_descentPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/MinimalDescent.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/VersalObject/MinimalDescent.lean#L280). The attribute's comment: “minimality_preserved”.
+**`Deformation.isMinimal_descentPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/MinimalDescent.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/VersalObject/MinimalDescent.lean#L280). The attribute's comment: “minimality\_preserved”.
 
 > Pushforward along a morphism preserves minimal descent objects under (S1).
 
@@ -131,7 +131,7 @@ public theorem exists_minimalVersalFormalObject (hp : IsPredeformationCategory p
     ∃ ξ : FormalObject p, IsMinimalVersal hp.cofibered ξ
 ```
 
-**`Deformation.exists_minimalVersal_powerSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/MinimalPowerSeries.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Formal/VersalObject/MinimalPowerSeries.lean#L62). The attribute's comment: “power_series_extension”.
+**`Deformation.exists_minimalVersal_powerSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/MinimalPowerSeries.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Formal/VersalObject/MinimalPowerSeries.lean#L62). The attribute's comment: “power\_series\_extension”.
 
 > **Stacks 06T5.** Any versal formal object `ξ` of a predeformation category is the
 > pushforward of a minimal versal formal object `η` along a power series ring extension: there is

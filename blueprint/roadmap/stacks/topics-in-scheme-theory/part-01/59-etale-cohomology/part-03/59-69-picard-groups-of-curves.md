@@ -36,7 +36,7 @@ theorem etaleCohomology_rootsOfUnity_smoothProjectiveCurve_of_genus (hn : IsUnit
       ∀ q, 3 ≤ q → Subsingleton (Sheaf.H (smallEtaleConstantZModSheaf E X hX n) q)
 ```
 
-**`Stacks.EtaleCohomology.sheafHTwoRootsOfUnityAddEquivZMod`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/SecondCohomologyOfRootsOfUnity.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/SecondCohomologyOfRootsOfUnity.lean#L252). The attribute's comment: “the q = 2 clause, that H^2_etale(X, mu_n) of a smooth proper curve over an algebraically closed field is cyclic of order n, normalised by the degree through sheafHTwoRootsOfUnityAddEquivZMod_curveKummerCoboundary; the q = 0 clause is AlgebraicGeometry.baseRootsToEtaleH0_bijective_of_isCurve and the q > 2 clause is subsingleton_sheafH_rootsOfUnitySheaf_of_smoothCurve, while the q = 1 clause awaits Stacks 03P8 for the small etale site”. References: SGA 4½ Arcata (6.2.1), “partial”.
+**`Stacks.EtaleCohomology.sheafHTwoRootsOfUnityAddEquivZMod`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/SecondCohomologyOfRootsOfUnity.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/SecondCohomologyOfRootsOfUnity.lean#L252). The attribute's comment: “the q = 2 clause, that H^2\_etale(X, mu\_n) of a smooth proper curve over an algebraically closed field is cyclic of order n, normalised by the degree through sheafHTwoRootsOfUnityAddEquivZMod\_curveKummerCoboundary; the q = 0 clause is AlgebraicGeometry.baseRootsToEtaleH0\_bijective\_of\_isCurve and the q > 2 clause is subsingleton\_sheafH\_rootsOfUnitySheaf\_of\_smoothCurve, while the q = 1 clause awaits Stacks 03P8 for the small etale site”. References: SGA 4½ Arcata (6.2.1), “partial”.
 
 > **[Stacks, Tag 03RQ], the case `q = 2`.**  Let `X` be a smooth proper curve over an
 > algebraically closed field `k` and let `n` be invertible in `k`.  Then `H²_étale(X, μ_n)` is
@@ -56,7 +56,7 @@ def sheafHTwoRootsOfUnityAddEquivZMod :
     Sheaf.H.{u + 1} (rootsOfUnitySheaf.{u, u + 1} X n) 2 ≃+ ZMod n
 ```
 
-**`Stacks.EtaleCohomology.sheafHTwoRootsOfUnityAddEquivZMod_curveKummerCoboundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/SecondCohomologyOfRootsOfUnity.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/SecondCohomologyOfRootsOfUnity.lean#L269). The attribute's comment: “the normalisation of the q = 2 clause by the degree: the coordinate of the Kummer coboundary of a class of H^1_etale(X, G_m) is the degree of the corresponding divisor class modulo n”.
+**`Stacks.EtaleCohomology.sheafHTwoRootsOfUnityAddEquivZMod_curveKummerCoboundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/SecondCohomologyOfRootsOfUnity.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/SecondCohomologyOfRootsOfUnity.lean#L269). The attribute's comment: “the normalisation of the q = 2 clause by the degree: the coordinate of the Kummer coboundary of a class of H^1\_etale(X, G\_m) is the degree of the corresponding divisor class modulo n”.
 
 > **The normalisation of `Stacks.EtaleCohomology.sheafHTwoRootsOfUnityAddEquivZMod`**: the
 > coordinate of the Kummer coboundary of a class in `H¹_étale(X, 𝐆_m)` is the degree of that class
@@ -71,7 +71,7 @@ theorem sheafHTwoRootsOfUnityAddEquivZMod_curveKummerCoboundary
       sheafHOneMultiplicativeDegreeMod g n a
 ```
 
-**`AlgebraicGeometry.baseRootsToEtaleH0_bijective_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/RootsOfUnityCurve.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/RootsOfUnityCurve.lean#L64). The attribute's comment: “the q = 0 clause, H^0_etale(X, mu_n) = mu_n(k); the clauses for q = 1, q = 2 and q >= 3 need Stacks 03P8 and 03RM, which the library does not have”.
+**`AlgebraicGeometry.baseRootsToEtaleH0_bijective_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/RootsOfUnityCurve.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/RootsOfUnityCurve.lean#L64). The attribute's comment: “the q = 0 clause, H^0\_etale(X, mu\_n) = mu\_n(k); the clauses for q = 1, q = 2 and q >= 3 need Stacks 03P8 and 03RM, which the library does not have”.
 
 > **Stacks Project, Tag 03RQ, the case `q = 0`.** Let `X` be a smooth projective curve over an
 > algebraically closed field `k` and let `n` be invertible in `k`. Pullback along the structure
@@ -87,7 +87,7 @@ public theorem baseRootsToEtaleH0_bijective_of_isCurve
     Function.Bijective (baseRootsToEtaleH0 B k X hX f n)
 ```
 
-**`Stacks.Kummer.subsingleton_sheafH_rootsOfUnitySheaf_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Picard/RootsOfUnitySecondCohomology.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Picard/RootsOfUnitySecondCohomology.lean#L164). The attribute's comment: “the clause q >= 3: H^q_etale(X, mu_n) = 0 for every q >= 3”. References: SGA 4½ Arcata (3.3.5), “partial”.
+**`Stacks.Kummer.subsingleton_sheafH_rootsOfUnitySheaf_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Picard/RootsOfUnitySecondCohomology.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Picard/RootsOfUnitySecondCohomology.lean#L164). The attribute's comment: “the clause q >= 3: H^q\_etale(X, mu\_n) = 0 for every q >= 3”. References: SGA 4½ Arcata (3.3.5), “partial”.
 
 > **Stacks Project, Tag 03RQ, the clause `q ≥ 3`.** Let `X` be a smooth projective curve over
 > an algebraically closed field `k` and let `n ≥ 1` be invertible in `k`. Then
@@ -141,7 +141,7 @@ theorem equiv_rootsOfUnityPullbackMap_eq_degreeOver_mul (c : LineBundleClass.{u,
           (isDominant_of_not_constant k πX πY π hnc) : ℕ) : ZMod n) * SY.equiv x
 ```
 
-**`Stacks.EtaleCohomology.sheafHTwoRootsOfUnityAddEquivZMod_rootsOfUnityRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/SecondCohomologyPullbackDegree.lean, line 799](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/SecondCohomologyPullbackDegree.lean#L799). The attribute's comment: “pullback on the second etale cohomology of mu_n along a nonconstant morphism of smooth proper curves over an algebraically closed field is multiplication by the degree of the morphism, in the coordinates of the q = 2 clause of Stacks 03RQ (sheafHTwoRootsOfUnityAddEquivZMod), which identify both groups with Z/nZ and are normalised by the divisor-class degree”.
+**`Stacks.EtaleCohomology.sheafHTwoRootsOfUnityAddEquivZMod_rootsOfUnityRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/SecondCohomologyPullbackDegree.lean, line 799](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/SecondCohomologyPullbackDegree.lean#L799). The attribute's comment: “pullback on the second etale cohomology of mu\_n along a nonconstant morphism of smooth proper curves over an algebraically closed field is multiplication by the degree of the morphism, in the coordinates of the q = 2 clause of Stacks 03RQ (sheafHTwoRootsOfUnityAddEquivZMod), which identify both groups with Z/nZ and are normalised by the divisor-class degree”.
 
 > **[Stacks, Tag 0AMB].**  Let `k` be an algebraically closed field, let `π : X ⟶ Y` be a
 > nonconstant morphism of smooth proper curves over `k`, and let `n` be invertible in `k`.  In the
@@ -195,7 +195,7 @@ theorem etaleCohomology_rootsOfUnity_affineSmoothCurve_of_compactification (hn :
       ∀ q, 2 ≤ q → Subsingleton (Sheaf.H (kummerSmallEtale E X hX n).X₁ q)
 ```
 
-**`AlgebraicGeometry.etaleH0EquivRootsOfUnitySections_val`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/RootsOfUnity.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/RootsOfUnity.lean#L189). The attribute's comment: “degree_zero”.
+**`AlgebraicGeometry.etaleH0EquivRootsOfUnitySections_val`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/RootsOfUnity.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/RootsOfUnity.lean#L189). The attribute's comment: “degree\_zero”.
 
 > The comparison is the canonical evaluation of degree-zero cohomology at the final
 > étale object, followed by the inclusion of the kernel into the units sheaf.
@@ -224,7 +224,7 @@ theorem etaleH0EquivRootsOfUnitySections_val
             (SmallEtale.finalIsTerminal B X hX)) x))
 ```
 
-**`AlgebraicGeometry.rootsOfUnitySections_bijective_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/RootsOfUnity.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/RootsOfUnity.lean#L230). The attribute's comment: “degree_zero”.
+**`AlgebraicGeometry.rootsOfUnitySections_bijective_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/RootsOfUnity.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/RootsOfUnity.lean#L230). The attribute's comment: “degree\_zero”.
 
 > Roots of unity in global sections of an integral scheme over an algebraically
 > closed field are precisely the constants.
@@ -238,7 +238,7 @@ theorem rootsOfUnitySections_bijective_of_isIntegral
       ((rootsOfUnitySections n).map f.op)
 ```
 
-**`AlgebraicGeometry.baseRootsToEtaleH0_bijective_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/RootsOfUnity.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/RootsOfUnity.lean#L270). The attribute's comment: “degree_zero”.
+**`AlgebraicGeometry.baseRootsToEtaleH0_bijective_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/RootsOfUnity.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/RootsOfUnity.lean#L270). The attribute's comment: “degree\_zero”.
 
 > The canonical pullback from the field's roots of unity to degree-zero étale
 > cohomology is bijective over an algebraically closed field.

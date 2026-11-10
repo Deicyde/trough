@@ -14,7 +14,7 @@ Section 29.55 of the Stacks Project, [Tag 035E](https://stacks.math.columbia.edu
 
 [Tag 035E](https://stacks.math.columbia.edu/tag/035E) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.exists_totalQuotientSheaf_iso_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean#L178). The attribute's comment: “K_X = f_* O_Y for X reduced”. References: EGA II (6.3.6), “special case”.
+**`AlgebraicGeometry.Scheme.exists_totalQuotientSheaf_iso_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean#L178). The attribute's comment: “K\_X = f\_* O\_Y for X reduced”. References: EGA II (6.3.6), “special case”.
 
 > Let `X` be a reduced scheme whose quasi-compact opens have finitely many irreducible
 > components, and let `f : Y ⟶ X` be the canonical morphism from the coproduct of the spectra of the
@@ -34,8 +34,8 @@ Declarations registered for the tag:
 - [`AlgebraicGeometry.Scheme.quasiCompactFromGenericPointResidueFields`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Scheme.lean#L65), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean#L189) (StacksFrontier): “the morphism (035M) is quasi-compact”.
 - [`AlgebraicGeometry.Scheme.quasiSeparatedFromGenericPointResidueFields`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Scheme.lean#L86), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean#L191) (StacksFrontier): “the morphism (035M) is quasi-separated”.
 - [`Stacks.AlgebraicGeometry.GenericPointProduct.finiteComponentsOnCompactOpens_of_isLocallyNoetherian`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GenericPointProduct/Decomposition.lean#L73), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean#L193) (StacksFrontier): “a locally Noetherian scheme has locally finitely many irreducible components”.
-- [`AlgebraicGeometry.Scheme.existsUnique_iso_normalizationScheme_reduction`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Reduction.lean#L293), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean#L195) (StacksFrontier): “the normalization of X is the normalization of X_red”.
-- [`AlgebraicGeometry.Scheme.normalizationIsoMeromorphicSpectrum_hom_toBase`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicRelativeSpec.lean#L417), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean#L197) (StacksFrontier): “for X reduced, the normalization is the relative spectrum of the integral closure of O_X in K_X”.
+- [`AlgebraicGeometry.Scheme.existsUnique_iso_normalizationScheme_reduction`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Reduction.lean#L293), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean#L195) (StacksFrontier): “the normalization of X is the normalization of X\_red”.
+- [`AlgebraicGeometry.Scheme.normalizationIsoMeromorphicSpectrum_hom_toBase`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicRelativeSpec.lean#L417), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/MeromorphicPushforward.lean#L197) (StacksFrontier): “for X reduced, the normalization is the relative spectrum of the integral closure of O\_X in K\_X”.
 
 ## Tag 035M, an equation
 
@@ -122,7 +122,7 @@ theorem existsUnique_iso_normalizationScheme_reduction (X : Scheme.{u})
           X.normalizationToReduction hX
 ```
 
-**`AlgebraicGeometry.Scheme.normalizationReductionIso_hom_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Reduction.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Reduction.lean#L353). The attribute's comment: “the iso of X^nu with (X_red)^nu is over X_red”.
+**`AlgebraicGeometry.Scheme.normalizationReductionIso_hom_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Reduction.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Reduction.lean#L353). The attribute's comment: “the iso of X^nu with (X\_red)^nu is over X\_red”.
 
 > **Stacks Project, Tag 035O.** The isomorphism of the normalization of `X` with the
 > normalization of the reduction of `X` is an isomorphism over the reduction: it carries the
@@ -142,7 +142,7 @@ theorem normalizationReductionIso_hom_normalization (X : Scheme.{u})
 
 [Tag 035P](https://stacks.math.columbia.edu/tag/035P) in the Stacks Project.
 
-**`AlgebraicGeometry.preimageNormalizationIsoSpecIntegralClosure_hom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Affine.lean, line 707](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Affine.lean#L707). The attribute's comment: “affine_normalization”.
+**`AlgebraicGeometry.preimageNormalizationIsoSpecIntegralClosure_hom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Affine.lean, line 707](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Affine.lean#L707). The attribute's comment: “affine\_normalization”.
 
 > Under `AlgebraicGeometry.preimageNormalizationIsoSpecIntegralClosure`, the restriction of the
 > normalization morphism is the spectrum map induced by the inclusion into the integral closure.
@@ -160,7 +160,7 @@ theorem preimageNormalizationIsoSpecIntegralClosure_hom_comp
       (Scheme.normalization X hX ∣_ U) ≫ e.inv
 ```
 
-**`AlgebraicGeometry.finite_minimalPrimes_of_affine_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/TotalFractionRing.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/TotalFractionRing.lean#L64). The attribute's comment: “minimal_primes”.
+**`AlgebraicGeometry.finite_minimalPrimes_of_affine_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/TotalFractionRing.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/TotalFractionRing.lean#L64). The attribute's comment: “minimal\_primes”.
 
 > If every quasi-compact open of a scheme has finitely many irreducible components,
 > then a ring presenting an affine open of that scheme has finitely many minimal primes.
@@ -174,7 +174,7 @@ theorem finite_minimalPrimes_of_affine_open
     (minimalPrimes A).Finite
 ```
 
-**`minimalPrimes.totalFractionRing_algEquiv_pi_fractionRing_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/TotalFractionRing.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/TotalFractionRing.lean#L136). The attribute's comment: “total_fraction_ring”. References: EGA II (6.5.1), “partial”.
+**`minimalPrimes.totalFractionRing_algEquiv_pi_fractionRing_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/TotalFractionRing.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/TotalFractionRing.lean#L136). The attribute's comment: “total\_fraction\_ring”. References: EGA II (6.5.1), “partial”.
 
 > The total ring of fractions of a reduced ring with finitely many minimal primes is the
 > product of the fraction fields of its minimal-prime quotients.
@@ -189,7 +189,7 @@ theorem totalFractionRing_algEquiv_pi_fractionRing_quotient
       (∀ p : minimalPrimes A, FractionRing (A ⧸ (p : Ideal A))))
 ```
 
-**`minimalPrimes.integralClosure_fractionRing_algEquiv_pi_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/TotalFractionRing.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/TotalFractionRing.lean#L208). The attribute's comment: “integral_closure_product”. References: EGA II (6.4.7), “integral closure product”.
+**`minimalPrimes.integralClosure_fractionRing_algEquiv_pi_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/TotalFractionRing.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/TotalFractionRing.lean#L208). The attribute's comment: “integral\_closure\_product”. References: EGA II (6.4.7), “integral closure product”.
 
 > The integral closure of a reduced ring in its total fraction ring is the product of the
 > integral closures of its minimal-prime quotients in their fraction fields.
@@ -315,7 +315,7 @@ public theorem finite_minimalPrimes_stalk (X : Scheme.{u})
 
 [Tag 035Q](https://stacks.math.columbia.edu/tag/035Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.exists_iso_sigma_isIntegral_isNormal_normalizationScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Components.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Components.lean#L510). The attribute's comment: “normalization_disjoint_union_of_integral_normal”.
+**`AlgebraicGeometry.Scheme.exists_iso_sigma_isIntegral_isNormal_normalizationScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Components.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Components.lean#L510). The attribute's comment: “normalization\_disjoint\_union\_of\_integral\_normal”.
 
 > **Stacks Project, Tag 035Q.** The normalization of a scheme whose quasi-compact opens have
 > finitely many irreducible components is a disjoint union of integral normal schemes: it is
@@ -330,7 +330,7 @@ theorem exists_iso_sigma_isIntegral_isNormal_normalizationScheme
       Nonempty (X.normalizationScheme hX ≅ ∐ Y)
 ```
 
-**`AlgebraicGeometry.exists_normalizationFactorization_of_integral_of_birational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/IntegralBirational.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/IntegralBirational.lean#L315). The attribute's comment: “normalization_integral_birational”.
+**`AlgebraicGeometry.exists_normalizationFactorization_of_integral_of_birational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/IntegralBirational.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/IntegralBirational.lean#L315). The attribute's comment: “normalization\_integral\_birational”.
 
 > **Stacks Project, Tag 035Q.** An integral morphism which is birational over every
 > quasi-compact open does not change the normalization.
@@ -352,7 +352,7 @@ theorem exists_normalizationFactorization_of_integral_of_birational
         e.hom ≫ Scheme.normalization X' hX' = g
 ```
 
-**`AlgebraicGeometry.Scheme.isIntegralHom_surjective_bijOn_irreducibleComponents_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/SurjectiveComponents.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/SurjectiveComponents.lean#L143). The attribute's comment: “normalization_integral_surjective_bijection_on_components”.
+**`AlgebraicGeometry.Scheme.isIntegralHom_surjective_bijOn_irreducibleComponents_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/SurjectiveComponents.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/SurjectiveComponents.lean#L143). The attribute's comment: “normalization\_integral\_surjective\_bijection\_on\_components”.
 
 > **Stacks Project, Tag 035Q.** Part (2). Let `X` be a scheme such that every quasi-compact
 > open of `X` has finitely many irreducible components. Then the normalization morphism
@@ -373,7 +373,7 @@ theorem isIntegralHom_surjective_bijOn_irreducibleComponents_normalization
         (irreducibleComponents (X.normalizationScheme hX)) (irreducibleComponents X)
 ```
 
-**`AlgebraicGeometry.Scheme.existsUnique_lift_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/UniversalProperty.lean, line 793](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/UniversalProperty.lean#L793). The attribute's comment: “normalization_universal_property”. References: EGA II (6.3.9), “special case”; EGA IV (8.12.11), “special case”.
+**`AlgebraicGeometry.Scheme.existsUnique_lift_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/UniversalProperty.lean, line 793](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/UniversalProperty.lean#L793). The attribute's comment: “normalization\_universal\_property”. References: EGA II (6.3.9), “special case”; EGA IV (8.12.11), “special case”.
 
 > **Stacks Project, Tag 035Q part (4).** A morphism to `X` from a normal scheme each of whose
 > irreducible components dominates an irreducible component of `X` factors uniquely through the

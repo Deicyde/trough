@@ -218,7 +218,7 @@ theorem isIso_kernelMap_and_mono_cokernelMap_directImageStalkMap (f : Y ⟶ X)
 
 [Tag 0AES](https://stacks.math.columbia.edu/tag/0AES) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_geometricModuleStalkGerm_modulePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageGeometricStalk.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageGeometricStalk.lean#L232). The attribute's comment: “generation half, for the geometric point stalk expressed as the filtered colimit over the etale neighbourhoods of x-bar, with the sections on Y times_X V read chartwise; the canonical morphism Spec(O_{X, x-bar}) -> X is not constructed, since the etale local ring lives one universe up and its spectrum is not an object of the site, so neither the source's formula nor its quasi-compact, quasi-separated and quasi-coherent hypotheses appear”.
+**`AlgebraicGeometry.Space.exists_geometricModuleStalkGerm_modulePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageGeometricStalk.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageGeometricStalk.lean#L232). The attribute's comment: “generation half, for the geometric point stalk expressed as the filtered colimit over the etale neighbourhoods of x-bar, with the sections on Y times\_X V read chartwise; the canonical morphism Spec(O\_\{X, x-bar}) -> X is not constructed, since the etale local ring lives one universe up and its spectrum is not an object of the site, so neither the source's formula nor its quasi-compact, quasi-separated and quasi-coherent hypotheses appear”.
 
 > **Stacks 0AES, the generation half of the colimit form.**  Every element of the geometric
 > stalk `(f_*G)_{x̄}` is the germ at `x̄` of a section of `p_V^*G` on `Y ×_X V`, for some small
@@ -233,7 +233,7 @@ theorem exists_geometricModuleStalkGerm_modulePushforward (f : Y ⟶ X)
         ((directImageChartSectionsEquiv B S hS f G N.chart).symm a) = z
 ```
 
-**`AlgebraicGeometry.Space.geometricModuleStalkGerm_modulePushforward_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageGeometricStalk.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageGeometricStalk.lean#L253). The attribute's comment: “separation half, for the geometric point stalk expressed as the filtered colimit over the etale neighbourhoods of x-bar, with the sections on Y times_X V read chartwise; the canonical morphism Spec(O_{X, x-bar}) -> X is not constructed, since the etale local ring lives one universe up and its spectrum is not an object of the site, so neither the source's formula nor its quasi-compact, quasi-separated and quasi-coherent hypotheses appear”.
+**`AlgebraicGeometry.Space.geometricModuleStalkGerm_modulePushforward_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageGeometricStalk.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageGeometricStalk.lean#L253). The attribute's comment: “separation half, for the geometric point stalk expressed as the filtered colimit over the etale neighbourhoods of x-bar, with the sections on Y times\_X V read chartwise; the canonical morphism Spec(O\_\{X, x-bar}) -> X is not constructed, since the etale local ring lives one universe up and its spectrum is not an object of the site, so neither the source's formula nor its quasi-compact, quasi-separated and quasi-coherent hypotheses appear”.
 
 > **Stacks 0AES, the separation half of the colimit form.**  Two sections of the direct image
 > `f_*G` over the chart of a small étale neighbourhood `N` of `x̄` have the same germ in the
@@ -254,7 +254,7 @@ theorem geometricModuleStalkGerm_modulePushforward_eq_iff (f : Y ⟶ X)
             (((modulePushforward B S hS f).obj G).val.map g.hom.op t)
 ```
 
-**`AlgebraicGeometry.Space.directImageGeometricStalkAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageStalkStrictHenselization.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageStalkStrictHenselization.lean#L162). The attribute's comment: “(f_*G)_xbar = Γ(Y ×_X Spec(O_{X,xbar}), p^*G) for f quasi-compact and quasi-separated and G quasi-coherent, as an isomorphism of abelian groups; the source's p^*F is a misprint for p^*G”.
+**`AlgebraicGeometry.Space.directImageGeometricStalkAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageStalkStrictHenselization.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageStalkStrictHenselization.lean#L162). The attribute's comment: “(f\_*G)\_xbar = Γ(Y ×\_X Spec(O\_\{X,xbar}), p^*G) for f quasi-compact and quasi-separated and G quasi-coherent, as an isomorphism of abelian groups; the source's p^*F is a misprint for p^*G”.
 
 > **The stalk of a direct image at a geometric point, over the strict henselization.**  Let `X`
 > be an algebraic space over `S`, `f : Y ⟶ X` a quasi-compact and quasi-separated morphism, `x̄` a
@@ -284,7 +284,7 @@ def directImageGeometricStalkAddEquiv :
 
 [Tag 0AET](https://stacks.math.columbia.edu/tag/0AET) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.closedSubspaceStalkIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/StalkTorsionOfSupportedComplex.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/StalkTorsionOfSupportedComplex.lean#L355). The attribute's comment: “the stalk I_x̄ of the ideal sheaf of Z”.
+**`AlgebraicGeometry.Space.closedSubspaceStalkIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/StalkTorsionOfSupportedComplex.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/StalkTorsionOfSupportedComplex.lean#L355). The attribute's comment: “the stalk I\_x̄ of the ideal sheaf of Z”.
 
 > **Stacks 0AET.** The stalk `I_x̄ ⊆ 𝒪_{X, x̄}` at a geometric point of the ideal sheaf of a
 > closed subspace: the ideal of the étale local ring generated by the germs of the local sections
@@ -296,7 +296,7 @@ noncomputable def closedSubspaceStalkIdeal (X : AlgebraicSpaces B S hS)
     Ideal (etaleLocalRing B S hS X.1 x)
 ```
 
-**`AlgebraicGeometry.Space.isIPowerTorsion_geometricModuleStalk_homology_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/StalkTorsionOfSupportedComplex.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/StalkTorsionOfSupportedComplex.lean#L423). The attribute's comment: “asserted for the stalk Hⁿ(Q)_x̄ of the cohomology sheaf rather than for the cohomology Hⁿ(Q_x̄) of the stalk of Q in D(Ab); the two agree by exactness of the stalk functor at a geometric point, which this development does not have. Stated at module universe m = u”.
+**`AlgebraicGeometry.Space.isIPowerTorsion_geometricModuleStalk_homology_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/StalkTorsionOfSupportedComplex.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/StalkTorsionOfSupportedComplex.lean#L423). The attribute's comment: “asserted for the stalk Hⁿ(Q)\_x̄ of the cohomology sheaf rather than for the cohomology Hⁿ(Q\_x̄) of the stalk of Q in D(Ab); the two agree by exactness of the stalk functor at a geometric point, which this development does not have. Stated at module universe m = u”.
 
 > **Stacks 0AET.** Let `X` be an algebraic space over `S`, let `Z ⊆ X` be a closed subspace
 > whose inclusion is of finite presentation and let `Q ∈ D_QCoh(𝒪_X)` have all its cohomology

@@ -45,7 +45,7 @@ public theorem exists_open_with_preimage_maximal_locus
 
 [Tag 04LI](https://stacks.math.columbia.edu/tag/04LI) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_flat_locus_not_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/PointwiseFlatLocus.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/PointwiseFlatLocus.lean#L355). The attribute's comment: “pointwise_warning”.
+**`AlgebraicGeometry.exists_flat_locus_not_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/PointwiseFlatLocus.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/PointwiseFlatLocus.lean#L355). The attribute's comment: “pointwise\_warning”.
 
 > **Stacks Project, Tag 04LI (pointwise warning).** For some morphism of
 > schemes, its maximal flat open is strictly smaller than its pointwise flat
@@ -63,7 +63,7 @@ public theorem exists_flat_locus_not_open :
 
 [Tag 047W](https://stacks.math.columbia.edu/tag/047W) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_with_preimage_maximal_cohenMacaulayLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/CohenMacaulayLocus.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/CohenMacaulayLocus.lean#L173). The attribute's comment: “cohen_macaulay”.
+**`AlgebraicGeometry.exists_open_with_preimage_maximal_cohenMacaulayLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/CohenMacaulayLocus.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/CohenMacaulayLocus.lean#L173). The attribute's comment: “cohen\_macaulay”.
 
 > The maximal Cohen–Macaulay locus of `h : U' ×_{g,U,t} R ⟶ U` is the
 > inverse image of an open of `U'`.

@@ -175,7 +175,7 @@ theorem upperRightCorner_homology (hpb : IsPullback p q f g)
           (CommAlgCat.torOneTensorProductModule _ _ _))
 ```
 
-**`AlgebraicGeometry.Space.fiberProduct_upperRightCorner_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean#L346). The attribute's comment: “for the fibre product X ×_Z Y with its two projections and every object E fitting into the upper right corner of the diagram of 09DK: H^0(E) = H^{-1}(E) = 0, and H^{-2}(E)_w ≅ Tor_1^R(A, B) ⊗_{A ⊗_R B} C as C-modules for the etale local rings R, A, B, C”.
+**`AlgebraicGeometry.Space.fiberProduct_upperRightCorner_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Spaces/FibreProductCornerCohomology.lean#L346). The attribute's comment: “for the fibre product X ×\_Z Y with its two projections and every object E fitting into the upper right corner of the diagram of 09DK: H^0(E) = H^\{-1}(E) = 0, and H^\{-2}(E)\_w ≅ Tor\_1^R(A, B) ⊗\_\{A ⊗\_R B} C as C-modules for the etale local rings R, A, B, C”.
 
 > **Stacks 09DM.** Let `X ⟶ Z` and `Y ⟶ Z` be morphisms of algebraic spaces over `S`, let
 > `W = X ×_Z Y` with projections `p` and `q`, and let `E` be the object of Stacks 09DK, i.e. any

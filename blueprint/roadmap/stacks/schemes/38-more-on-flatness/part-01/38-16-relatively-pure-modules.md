@@ -205,7 +205,7 @@ theorem isPureAlong_iff_isUniversallyPureAlong_of_isNoetherianRing_stalk
 
 [Tag 05J9](https://stacks.math.columbia.edu/tag/05J9) in the Stacks Project.
 
-**`AlgebraicGeometry.isPureAlong_of_flatPointedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningStratification/PurityDescent.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningStratification/PurityDescent.lean#L102). The attribute's comment: “flat_descend_pure”.
+**`AlgebraicGeometry.isPureAlong_of_flatPointedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningStratification/PurityDescent.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningStratification/PurityDescent.lean#L102). The attribute's comment: “flat\_descend\_pure”.
 
 > **Stacks Project, Tag 05J9.** Purity along the original fibre follows from purity along the
 > fibre of a pointed base change which is flat at its distinguished point.
@@ -220,7 +220,7 @@ public theorem isPureAlong_of_flatPointedBaseChange (H : FlatPointedBaseChangeSi
       PrePureSituation.{u})
 ```
 
-**`AlgebraicGeometry.universallyPureAlong_of_flatPointedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningStratification/PurityDescent.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningStratification/PurityDescent.lean#L180). The attribute's comment: “flat_descend_universally_pure”.
+**`AlgebraicGeometry.universallyPureAlong_of_flatPointedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningStratification/PurityDescent.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningStratification/PurityDescent.lean#L180). The attribute's comment: “flat\_descend\_universally\_pure”.
 
 > **Stacks Project, Tag 05J9.** Universal purity along a fibre descends through a pointed base
 > change which is flat at the new distinguished point.

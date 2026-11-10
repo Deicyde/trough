@@ -14,7 +14,7 @@ Section 17.17 of the Stacks Project, [Tag 05NC](https://stacks.math.columbia.edu
 
 [Tag 05ND](https://stacks.math.columbia.edu/tag/05ND) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.IsFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Flat.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Flat.lean#L285). The attribute's comment: “the definition: F is flat when G ↦ G ⊗_{O_X} F is exact”. References: SGA 4 V (1.1), “commutative case”.
+**`AlgebraicGeometry.SheafOfModules.IsFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/Flat.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/Flat.lean#L285). The attribute's comment: “the definition: F is flat when G ↦ G ⊗\_\{O\_X} F is exact”. References: SGA 4 V (1.1), “commutative case”.
 
 > A sheaf of modules is flat when tensoring on the right with it is an exact
 > endofunctor on sheaves of modules.
@@ -115,7 +115,7 @@ theorem modulePullback_isFlat {X Y : RingedSpace.{u, u}} (f : X ⟶ Y)
 
 [Tag 05NG](https://stacks.math.columbia.edu/tag/05NG) in the Stacks Project.
 
-**`Stacks.SheafOfModules.FlatColimits.isFlat_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatColimits.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatColimits.lean#L225). The attribute's comment: “filtered_colimits_flat”.
+**`Stacks.SheafOfModules.FlatColimits.isFlat_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatColimits.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatColimits.lean#L225). The attribute's comment: “filtered\_colimits\_flat”.
 
 > **Stacks Project, Tag 03EU part (2), filtered colimits.** A filtered colimit of flat
 > sheaves of modules is flat.
@@ -128,7 +128,7 @@ theorem isFlat_colimit {O : Sheaf J CommRingCat.{w}}
     IsFlat (colimit F)
 ```
 
-**`Stacks.SheafOfModules.FlatColimits.isFlat_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatColimits.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatColimits.lean#L241). The attribute's comment: “direct_sums_flat”.
+**`Stacks.SheafOfModules.FlatColimits.isFlat_coproduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatColimits.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FlatColimits.lean#L241). The attribute's comment: “direct\_sums\_flat”.
 
 > **Stacks Project, Tag 03EU part (2), direct sums.** An arbitrary direct sum of flat sheaves
 > of modules is flat. An arbitrary coproduct is the filtered colimit of its finite subcoproducts,

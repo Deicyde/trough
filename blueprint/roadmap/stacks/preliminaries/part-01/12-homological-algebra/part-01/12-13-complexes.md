@@ -93,7 +93,7 @@ Declarations registered for the tag:
 Declarations registered for the tag:
 
 - [`Homotopy.homologyMap_eq`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Homotopy.homologyMap_eq#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Homology/Homotopy.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Homology/Homotopy.lean#L45) (StacksCore): “part 1”. References: EGA 0 (11.2.3), “abutment clause”; SGA 4½ Etat 0 (1.3.2), “partial”.
-- [`HomotopyEquiv.quasiIso_hom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=HomotopyEquiv.quasiIso_hom#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Homology/QuasiIso.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Homology/QuasiIso.lean#L43) (StacksCore): “part 2”. References: EGA III (6.1.4), “special case”; EGA III (6.2.1), “f = id_X”.
+- [`HomotopyEquiv.quasiIso_hom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=HomotopyEquiv.quasiIso_hom#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Homology/QuasiIso.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Homology/QuasiIso.lean#L43) (StacksCore): “part 2”. References: EGA III (6.1.4), “special case”; EGA III (6.2.1), “f = id\_X”.
 
 ## Tag 0111, a lemma
 
@@ -186,7 +186,7 @@ Declarations registered for the tag:
 Declarations registered for the tag:
 
 - [`Homotopy.homologyMap_eq`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Homotopy.homologyMap_eq#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Homology/Homotopy.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Homology/Homotopy.lean#L47) (StacksCore): “part 1”. References: EGA 0 (11.2.3), “abutment clause”; SGA 4½ Etat 0 (1.3.2), “partial”.
-- [`HomotopyEquiv.quasiIso_hom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=HomotopyEquiv.quasiIso_hom#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Homology/QuasiIso.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Homology/QuasiIso.lean#L45) (StacksCore): “part 2”. References: EGA III (6.1.4), “special case”; EGA III (6.2.1), “f = id_X”.
+- [`HomotopyEquiv.quasiIso_hom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=HomotopyEquiv.quasiIso_hom#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Homology/QuasiIso.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Homology/QuasiIso.lean#L45) (StacksCore): “part 2”. References: EGA III (6.1.4), “special case”; EGA III (6.2.1), “f = id\_X”.
 
 ## Tag 0117, a lemma
 

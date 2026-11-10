@@ -63,7 +63,7 @@ theorem exists_algebraicSpace_over_baseChange
           (Fy.1.hom.app (op W) s).left = (ι.hom.app (op W) s).1.1
 ```
 
-**`AlgebraicGeometry.Stack.baseChangeSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean#L99). The attribute's comment: “the representing algebraic space F_y”.
+**`AlgebraicGeometry.Stack.baseChangeSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean#L99). The attribute's comment: “the representing algebraic space F\_y”.
 
 > **Stacks 0402.** The algebraic space `F_y` over `U` representing the 2-fibre product
 > `(Sch/U)_fppf ×_{y, 𝒴} 𝒳` of a 1-morphism `f` representable by algebraic spaces along a point
@@ -75,7 +75,7 @@ theorem exists_algebraicSpace_over_baseChange
 noncomputable def baseChangeSpace : AlgebraicSpaces B U.left.1 U.left.2
 ```
 
-**`AlgebraicGeometry.Stack.nonempty_equivalenceOver_baseChangeSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean#L106). The attribute's comment: “F_y represents the 2-fibre product”.
+**`AlgebraicGeometry.Stack.nonempty_equivalenceOver_baseChangeSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean#L106). The attribute's comment: “F\_y represents the 2-fibre product”.
 
 > **Stacks 0402, the squiggly arrow.** The category of elements of
 > `AlgebraicGeometry.Stack.baseChangeSpace` is equivalent, over the big fppf site of `U`, to the
@@ -88,7 +88,7 @@ theorem nonempty_equivalenceOver_baseChangeSpace :
       (presheafOfCategories ((baseChangeSpace B S hS f hf U y hy).1 ⋙ typeToCat)).p)
 ```
 
-**`AlgebraicGeometry.Stack.baseChangeStructureMap`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean#L124). The attribute's comment: “the structure morphism f_y”.
+**`AlgebraicGeometry.Stack.baseChangeStructureMap`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/BaseChangeSpace.lean#L124). The attribute's comment: “the structure morphism f\_y”.
 
 > **Stacks 0402.** The structure morphism `f_y : F_y ⟶ U` of the display, as a morphism of
 > algebraic spaces over `S` from `AlgebraicGeometry.Stack.baseChangeSpace` to the representable

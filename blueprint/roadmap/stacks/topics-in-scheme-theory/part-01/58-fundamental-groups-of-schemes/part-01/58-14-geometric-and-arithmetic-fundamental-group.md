@@ -178,7 +178,7 @@ theorem etaleFundamentalGroupMap_comp_eq_one_isAlgClosed
           (pullback.fst f (Spec.map (CommRingCat.ofHom (algebraMap k Ω)))) x).toMonoidHom = 1
 ```
 
-**`AlgebraicGeometry.surjective_etaleFundamentalGroupMap_isAlgClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/AlgebraicClosureBaseChange.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/AlgebraicClosureBaseChange.lean#L315). The attribute's comment: “surjectivity of `π₁(X) → π₁(Spec k)`”. References: SGA 7 I (5.2), “surjectivity of π₁(X_η”.
+**`AlgebraicGeometry.surjective_etaleFundamentalGroupMap_isAlgClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/AlgebraicClosureBaseChange.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/AlgebraicClosureBaseChange.lean#L315). The attribute's comment: “surjectivity of `π₁(X) → π₁(Spec k)`”. References: SGA 7 I (5.2), “surjectivity of π₁(X\_η”.
 
 > For a field `k` with an algebraically closed
 > extension `Ω`, a scheme `X` over `k` whose base change `X_Ω` is connected, and a geometric point

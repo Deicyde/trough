@@ -288,7 +288,7 @@ theorem exists_isOpen_flat_fibreDimension_vanishing_epi_near_specialFibre (f : X
 
 [Tag 0E7K](https://stacks.math.columbia.edu/tag/0E7K) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isIso_directImageStructureSheafBaseChangeMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafCommutesBaseChange.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafCommutesBaseChange.lean#L129). The attribute's comment: “clause (b): formation of f_* 𝒪_X commutes with arbitrary base change S' ⟶ S”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isIso_directImageStructureSheafBaseChangeMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafCommutesBaseChange.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafCommutesBaseChange.lean#L129). The attribute's comment: “clause (b): formation of f\_* 𝒪\_X commutes with arbitrary base change S' ⟶ S”.
 
 > **[Stacks, Tag 0E7K], clause (b).** Let `X ⟶ Y ⟶ S` be a commutative triangle of schemes with
 > `X ⟶ S` flat, let `f : X ⟶ Y` be proper with `dim(X_y) ≤ 1` for every `y ∈ Y`, and suppose
@@ -304,7 +304,7 @@ theorem isIso_directImageStructureSheafBaseChangeMap_of_flat {X Y S : Scheme.{u}
     IsIso (directImageStructureSheafBaseChangeMap f (pullback.fst q h))
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isFlatOver_directImageStructureSheaf_of_fibreDimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafCommutesBaseChange.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafCommutesBaseChange.lean#L142). The attribute's comment: “clause (a): f_* 𝒪_X is flat over S”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isFlatOver_directImageStructureSheaf_of_fibreDimension_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafCommutesBaseChange.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/DirectImageStructureSheafCommutesBaseChange.lean#L142). The attribute's comment: “clause (a): f\_* 𝒪\_X is flat over S”.
 
 > **[Stacks, Tag 0E7K], clause (a).** Let `X ⟶ Y ⟶ S` be a commutative triangle of schemes with
 > `X ⟶ S` flat, let `f : X ⟶ Y` be proper with `dim(X_y) ≤ 1` for every `y ∈ Y`, and suppose

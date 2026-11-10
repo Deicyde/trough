@@ -14,7 +14,7 @@ Section 88.29 of the Stacks Project, [Tag 0GDT](https://stacks.math.columbia.edu
 
 [Tag 0GDU](https://stacks.math.columbia.edu/tag/0GDU) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.exists_isProper_completion_iso_of_isFormalModification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationEquivalence.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationEquivalence.lean#L105). The attribute's comment: “existence: a proper f : X' ⟶ X, isomorphism over U, with f_{/T} ≅ 𝔣 over X_{/T}”.
+**`AlgebraicGeometry.FormalSpace.exists_isProper_completion_iso_of_isFormalModification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationEquivalence.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationEquivalence.lean#L105). The attribute's comment: “existence: a proper f : X' ⟶ X, isomorphism over U, with f\_\{/T} ≅ 𝔣 over X\_\{/T}”.
 
 > **Stacks 0GDU, existence.** Let `X` be a locally Noetherian algebraic space over `S`, let
 > `T ⊆ |X|` be closed, `U ⊂ X` the open subspace with `|U| = |X| ∖ T`, and let
@@ -37,7 +37,7 @@ theorem exists_isProper_completion_iso_of_isFormalModification
         Nonempty ((Space.completionOverFunctor B S hS T).obj (Over.mk f) ≅ Over.mk 𝔣)
 ```
 
-**`AlgebraicGeometry.FormalSpace.existsUnique_completionOverFunctor_map_comp_eq_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationEquivalence.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationEquivalence.lean#L141). The attribute's comment: “uniqueness: any two such proper f₁, f₂ are isomorphic over X by a unique isomorphism compatible with the identifications of f₁_{/T} and f₂_{/T} with 𝔣”.
+**`AlgebraicGeometry.FormalSpace.existsUnique_completionOverFunctor_map_comp_eq_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationEquivalence.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationEquivalence.lean#L141). The attribute's comment: “uniqueness: any two such proper f₁, f₂ are isomorphic over X by a unique isomorphism compatible with the identifications of f₁\_\{/T} and f₂\_\{/T} with 𝔣”.
 
 > **Stacks 0GDU, uniqueness.** In the situation of
 > `exists_isProper_completion_iso_of_isFormalModification`, let `f₁ : X₁ ⟶ X` and `f₂ : X₂ ⟶ X`

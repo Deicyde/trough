@@ -14,7 +14,7 @@ Section 94.19 of the Stacks Project, [Tag 04X4](https://stacks.math.columbia.edu
 
 [Tag 04X4](https://stacks.math.columbia.edu/tag/04X4) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.changeOfBaseFibreProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L92). The attribute's comment: “the 2-fibre product X'_S = (Sch/S)_fppf ×_{(Sch/S')_fppf} X', which is an algebraic stack over S' according to Lemma 04T2”.
+**`AlgebraicGeometry.Stack.changeOfBaseFibreProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L92). The attribute's comment: “the 2-fibre product X'\_S = (Sch/S)\_fppf ×\_\{(Sch/S')\_fppf} X', which is an algebraic stack over S' according to Lemma 04T2”.
 
 > **The 2-fibre product `𝒳'_S = (Sch/S)_fppf ×_{(Sch/S')_fppf} 𝒳'` of Section 04X4.** For an
 > algebraic stack `𝒳'` over `S'`, the apex of the canonical 2-fibre product square of the cospan
@@ -27,7 +27,7 @@ def changeOfBaseFibreProduct (𝒳' : AlgebraicStacks.{u, w} B S' hS') :
     AlgebraicStacks.{u, w} B S' hS'
 ```
 
-**`AlgebraicGeometry.Stack.changeOfBaseFibreProductProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L102). The attribute's comment: “the natural 1-morphism p : X'_S → (Sch/S)_fppf”.
+**`AlgebraicGeometry.Stack.changeOfBaseFibreProductProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L102). The attribute's comment: “the natural 1-morphism p : X'\_S → (Sch/S)\_fppf”.
 
 > **The natural 1-morphism `p : 𝒳'_S ⟶ (Sch/S)_fppf` of Section 04X4**: the projection of the
 > 2-fibre product `AlgebraicGeometry.Stack.changeOfBaseFibreProduct` to its first factor, the
@@ -38,7 +38,7 @@ def changeOfBaseFibreProductProjection (𝒳' : AlgebraicStacks.{u, w} B S' hS')
     changeOfBaseFibreProduct B S S' hS hS' g 𝒳' ⟶ schemeStack.{u, w} B S' hS' (Over.mk g)
 ```
 
-**`AlgebraicGeometry.Stack.changeOfBaseFibreProductPair`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L113). The attribute's comment: “the pair (X'_S, p), an algebraic stack over S' with a 1-morphism to (Sch/S)_fppf, i.e. an object of the right-hand side of Lemma 04X5”.
+**`AlgebraicGeometry.Stack.changeOfBaseFibreProductPair`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L113). The attribute's comment: “the pair (X'\_S, p), an algebraic stack over S' with a 1-morphism to (Sch/S)\_fppf, i.e. an object of the right-hand side of Lemma 04X5”.
 
 > **The pair `(𝒳'_S, p)` of Section 04X4**, as an object of the right-hand 2-category of
 > Lemma 04X5: an algebraic stack over `S'` with a 1-morphism to the stack represented by
@@ -49,7 +49,7 @@ def changeOfBaseFibreProductPair (𝒳' : AlgebraicStacks.{u, w} B S' hS') :
     AlgebraicStackPair.{u, w} B S S' hS hS' g
 ```
 
-**`AlgebraicGeometry.Stack.changeOfBaseFibreProductOverBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L123). The attribute's comment: “by Lemma 04X5 the pair (X'_S, p) corresponds in a canonical way to an algebraic stack over S”.
+**`AlgebraicGeometry.Stack.changeOfBaseFibreProductOverBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L123). The attribute's comment: “by Lemma 04X5 the pair (X'\_S, p) corresponds in a canonical way to an algebraic stack over S”.
 
 > **The algebraic stack over `S` that `(𝒳'_S, p)` corresponds to (Section 04X4).** The image of
 > the pair `AlgebraicGeometry.Stack.changeOfBaseFibreProductPair` under the inverse of the
@@ -60,7 +60,7 @@ def changeOfBaseFibreProductOverBase (𝒳' : AlgebraicStacks.{u, w} B S' hS') :
     AlgebraicStacks.{u, w} B S hS
 ```
 
-**`AlgebraicGeometry.Stack.algebraicStackConstructionObjEquiv_changeOfBaseFibreProductOverBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L134). The attribute's comment: “the algebraic stack over S corresponds to (X'_S, p) under Lemma 04X5: Construction A returns X'_S over S' together with p”.
+**`AlgebraicGeometry.Stack.algebraicStackConstructionObjEquiv_changeOfBaseFibreProductOverBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ChangeOfBaseSection.lean#L134). The attribute's comment: “the algebraic stack over S corresponds to (X'\_S, p) under Lemma 04X5: Construction A returns X'\_S over S' together with p”.
 
 > **The correspondence of Lemma 04X5 carries the algebraic stack over `S` of Section 04X4 back
 > to `(𝒳'_S, p)`.** Construction A applied to

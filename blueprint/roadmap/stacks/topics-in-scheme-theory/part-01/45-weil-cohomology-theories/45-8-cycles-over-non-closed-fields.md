@@ -66,7 +66,7 @@ theorem mem_closure_separablePointClasses_of_isProjectiveMorphism (k : Type u) [
 
 [Tag 0FH6](https://stacks.math.columbia.edu/tag/0FH6) in the Stacks Project.
 
-**`Stacks.Chow.chowColimitAddEquiv_algebraicExtensionSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/AlgebraicFieldExtension.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/AlgebraicFieldExtension.lean#L536). The attribute's comment: “CH_i(X_K) is the colimit of the CH_i(X_{k'}) over the finite subextensions K/k'/k of an algebraic extension”.
+**`Stacks.Chow.chowColimitAddEquiv_algebraicExtensionSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/AlgebraicFieldExtension.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/AlgebraicFieldExtension.lean#L536). The attribute's comment: “CH\_i(X\_K) is the colimit of the CH\_i(X\_\{k'}) over the finite subextensions K/k'/k of an algebraic extension”.
 
 > **Stacks Project, Tag 0FH6.** For an algebraic field extension `K/k` and a quasi-compact
 > scheme `X` of finite type over `k`, the Chow group `CH_i(X_K)` is the colimit of the Chow groups

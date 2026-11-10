@@ -14,7 +14,7 @@ Section 93.7 of the Stacks Project, [Tag 0DVX](https://stacks.math.columbia.edu/
 
 [Tag 0D3L](https://stacks.math.columbia.edu/tag/0D3L) in the Stacks Project.
 
-**`Deformation.Examples.ProjectiveGradedAlgebra`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean#L52). The attribute's comment: “graded_algebra_deformation_category: objects”.
+**`Deformation.Examples.ProjectiveGradedAlgebra`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean#L52). The attribute's comment: “graded\_algebra\_deformation\_category: objects”.
 
 > A commutative graded algebra, finite projective in every degree, over an object of the
 > category `𝒞_Λ` of Artinian local `Λ`-algebras with residue field `k`.
@@ -24,7 +24,7 @@ public structure ProjectiveGradedAlgebra (Λ : Type u) (k : Type w)
     [CommRing Λ] [Field k] [Algebra Λ k]
 ```
 
-**`Deformation.Examples.ProjectiveGradedAlgebra.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean#L74). The attribute's comment: “graded_algebra_deformation_category: morphisms”.
+**`Deformation.Examples.ProjectiveGradedAlgebra.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean#L74). The attribute's comment: “graded\_algebra\_deformation\_category: morphisms”.
 
 > A base-change morphism between graded algebras over varying base algebras: a graded ring
 > map, semilinear over a morphism of base algebras, exhibiting the target as an extension of
@@ -35,7 +35,7 @@ public structure Hom {Λ : Type u} {k : Type w} [CommRing Λ] [Field k] [Algebra
     (X Y : ProjectiveGradedAlgebra.{u, v, w, m} Λ k)
 ```
 
-**`Deformation.Examples.ProjectiveGradedAlgebra.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean#L95). The attribute's comment: “graded_algebra_deformation_category: category structure”.
+**`Deformation.Examples.ProjectiveGradedAlgebra.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean#L95). The attribute's comment: “graded\_algebra\_deformation\_category: category structure”.
 
 > The category structure on graded algebras over the algebras of `𝒞_Λ`.
 
@@ -44,7 +44,7 @@ public instance instCategory {Λ : Type u} {k : Type w} [CommRing Λ] [Field k] 
     Category (ProjectiveGradedAlgebra.{u, v, w, m} Λ k)
 ```
 
-**`Deformation.Examples.ProjectiveGradedAlgebra.projection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean#L142). The attribute's comment: “graded_algebra_deformation_category: projection”.
+**`Deformation.Examples.ProjectiveGradedAlgebra.projection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean#L142). The attribute's comment: “graded\_algebra\_deformation\_category: projection”.
 
 > The base-algebra projection.
 
@@ -53,7 +53,7 @@ public def projection {Λ : Type u} {k : Type w} [CommRing Λ] [Field k] [Algebr
     ProjectiveGradedAlgebra.{u, v, w, m} Λ k ⥤ ArtinianLocalAlgCat.{u, v, w} Λ k
 ```
 
-**`Deformation.Examples.ProjectiveGradedAlgebra.specialFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean#L151). The attribute's comment: “graded_algebra_deformation_category: special fiber”.
+**`Deformation.Examples.ProjectiveGradedAlgebra.specialFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean#L151). The attribute's comment: “graded\_algebra\_deformation\_category: special fiber”.
 
 > A graded algebra over `k` viewed as the distinguished special-fibre object.
 
@@ -65,7 +65,7 @@ public noncomputable def specialFiber {Λ : Type u} {k : Type w}
     [∀ d, Module.Finite k (grading d)] : ProjectiveGradedAlgebra.{u, w, w, m} Λ k
 ```
 
-**`Deformation.Examples.ProjectiveGradedAlgebra.deformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean#L163). The attribute's comment: “graded_algebra_deformation_category”.
+**`Deformation.Examples.ProjectiveGradedAlgebra.deformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean#L163). The attribute's comment: “graded\_algebra\_deformation\_category”.
 
 > Deformations of a fixed graded `k`-algebra.
 
@@ -77,7 +77,7 @@ public abbrev deformationCategory {Λ : Type u} {k : Type w}
     [∀ d, Module.Finite k (grading d)]
 ```
 
-**`Deformation.Examples.ProjectiveGradedAlgebra.deformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean#L163). The attribute's comment: “graded_algebra_deformation_category: deformation category”.
+**`Deformation.Examples.ProjectiveGradedAlgebra.deformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebras.lean#L163). The attribute's comment: “graded\_algebra\_deformation\_category: deformation category”.
 
 > Deformations of a fixed graded `k`-algebra.
 
@@ -137,7 +137,7 @@ public theorem isDeformationCategory_deformationCategory
 
 [Tag 0DVZ](https://stacks.math.columbia.edu/tag/0DVZ) in the Stacks Project.
 
-**`Deformation.Examples.ProjectiveGradedAlgebra.infinitesimalAutomorphismGroupEquivDegreeZeroDerivations`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebraDerivations.lean, line 837](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebraDerivations.lean#L837). The attribute's comment: “graded_inf_derivations”.
+**`Deformation.Examples.ProjectiveGradedAlgebra.infinitesimalAutomorphismGroupEquivDegreeZeroDerivations`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebraDerivations.lean, line 837](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebraDerivations.lean#L837). The attribute's comment: “graded\_inf\_derivations”.
 
 > The infinitesimal automorphism group of the deformation category of a graded algebra is the
 > additive group of degree-preserving derivations.
@@ -169,7 +169,7 @@ public noncomputable def infinitesimalAutomorphismGroupEquivDegreeZeroDerivation
       Multiplicative (degreeZeroDerivations grading)
 ```
 
-**`Deformation.Examples.ProjectiveGradedAlgebra.gradedAlgebra_infinitesimalAutomorphisms_finiteDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebraDerivationsFiniteDimensional.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebraDerivationsFiniteDimensional.lean#L114). The attribute's comment: “graded_inf_finite”.
+**`Deformation.Examples.ProjectiveGradedAlgebra.gradedAlgebra_infinitesimalAutomorphisms_finiteDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebraDerivationsFiniteDimensional.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebraDerivationsFiniteDimensional.lean#L114). The attribute's comment: “graded\_inf\_finite”.
 
 > **Stacks 0DVZ.** The infinitesimal automorphisms of the deformation category of a graded
 > algebra of finite type over a field, with finite-dimensional graded pieces, form a
@@ -201,7 +201,7 @@ public theorem gradedAlgebra_infinitesimalAutomorphisms_finiteDimensional
           (∀ a b : G, a + b = a * b) ∧ FiniteDimensional k G
 ```
 
-**`Deformation.Examples.ProjectiveGradedAlgebra.finiteDimensional_tangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebraTangentRecord.lean, line 706](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebraTangentRecord.lean#L706). The attribute's comment: “graded_tangent_finite”.
+**`Deformation.Examples.ProjectiveGradedAlgebra.finiteDimensional_tangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebraTangentRecord.lean, line 706](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebraTangentRecord.lean#L706). The attribute's comment: “graded\_tangent\_finite”.
 
 > **The tangent-space half of Stacks 0DVZ.** The tangent space of the deformation category of
 > a graded `k`-algebra which is finite-dimensional in each degree and of finite type over `k` is
@@ -238,7 +238,7 @@ theorem finiteDimensional_tangentSpace :
 
 [Tag 0ET3](https://stacks.math.columbia.edu/tag/0ET3) in the Stacks Project.
 
-**`Deformation.Examples.ProjectiveGradedAlgebra.exists_hull_isomorphismClasses_gradedAlgebra_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebraHull.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebraHull.lean#L219). The attribute's comment: “Def_P of 0D3L: finite-dimensional graded pieces define it, not an extra hypothesis”.
+**`Deformation.Examples.ProjectiveGradedAlgebra.exists_hull_isomorphismClasses_gradedAlgebra_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/GradedAlgebraHull.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/GradedAlgebraHull.lean#L219). The attribute's comment: “Def\_P of 0D3L: finite-dimensional graded pieces define it, not an extra hypothesis”.
 
 > **Stacks 0ET3.** In Example 0D3L, assume `P` is a finitely generated graded `k`-algebra
 > and `Λ → k` is the classical case (`Λ` a Noetherian complete local ring with residue field `k`).

@@ -134,7 +134,7 @@ theorem isCoherent_X₃_of_shortExact {S : ShortComplex (SheafOfModules.{u} R)} 
     (h₁ : IsCoherent S.X₁) (h₂ : IsCoherent S.X₂) : IsCoherent S.X₃
 ```
 
-**`Stacks.SheafOfModules.coherentModules_isWeakSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/CoherentWeakSerre.lean, line 684](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/CoherentWeakSerre.lean#L684). The attribute's comment: “coherent_weak_serre”.
+**`Stacks.SheafOfModules.coherentModules_isWeakSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/CoherentWeakSerre.lean, line 684](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/CoherentWeakSerre.lean#L684). The attribute's comment: “coherent\_weak\_serre”.
 
 > On a ringed space, the coherent sheaves of modules form a weak Serre subcategory of the
 > category of all sheaves of modules: they contain the zero object, are closed under isomorphisms,
@@ -145,7 +145,7 @@ instance coherentModules_isWeakSerreClass :
     ObjectProperty.IsWeakSerreClass (fun M : SheafOfModules.{u} R => IsCoherent M)
 ```
 
-**`Stacks.SheafOfModules.coherentModules_inclusion_preservesFiniteLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/CoherentInclusionExact.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/CoherentInclusionExact.lean#L40). The attribute's comment: “coherent_inclusion_exact”.
+**`Stacks.SheafOfModules.coherentModules_inclusion_preservesFiniteLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/CoherentInclusionExact.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/CoherentInclusionExact.lean#L40). The attribute's comment: “coherent\_inclusion\_exact”.
 
 > The inclusion of coherent modules preserves finite limits.
 
@@ -156,7 +156,7 @@ instance coherentModules_inclusion_preservesFiniteLimits
     PreservesFiniteLimits (ObjectProperty.ι (coherentModules R))
 ```
 
-**`Stacks.SheafOfModules.coherentModules_inclusion_preservesFiniteColimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/CoherentInclusionExact.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/CoherentInclusionExact.lean#L48). The attribute's comment: “coherent_inclusion_exact”.
+**`Stacks.SheafOfModules.coherentModules_inclusion_preservesFiniteColimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/CoherentInclusionExact.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/CoherentInclusionExact.lean#L48). The attribute's comment: “coherent\_inclusion\_exact”.
 
 > The inclusion of coherent modules preserves finite colimits.
 
@@ -167,7 +167,7 @@ instance coherentModules_inclusion_preservesFiniteColimits
     PreservesFiniteColimits (ObjectProperty.ι (coherentModules R))
 ```
 
-**`SheafOfModules.kernel_isCoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/KernelCokernel.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/KernelCokernel.lean#L57). The attribute's comment: “kernel_coherent”. References: EGA 0 (5.3.4), “Ker(u) coherent”.
+**`SheafOfModules.kernel_isCoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/KernelCokernel.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/KernelCokernel.lean#L57). The attribute's comment: “kernel\_coherent”. References: EGA 0 (5.3.4), “Ker(u) coherent”.
 
 > A kernel of a morphism of coherent sheaves of modules is coherent.
 
@@ -176,7 +176,7 @@ instance kernel_isCoherent {F G : SheafOfModules.{u} R} [F.IsCoherent] [G.IsCohe
     (f : F ⟶ G) : (kernel f).IsCoherent
 ```
 
-**`SheafOfModules.cokernel_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/KernelCokernel.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/KernelCokernel.lean#L65). The attribute's comment: “cokernel_coherent”. References: EGA 0 (5.3.4), “Coker(u) coherent”.
+**`SheafOfModules.cokernel_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/KernelCokernel.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/ImprovingCoherentModules/KernelCokernel.lean#L65). The attribute's comment: “cokernel\_coherent”. References: EGA 0 (5.3.4), “Coker(u) coherent”.
 
 > The cokernel of a morphism of coherent sheaves of modules is coherent.
 

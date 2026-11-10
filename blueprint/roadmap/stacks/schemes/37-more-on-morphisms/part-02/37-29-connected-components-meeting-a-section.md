@@ -14,7 +14,7 @@ Section 37.29 of the Stacks Project, [Tag 055K](https://stacks.math.columbia.edu
 
 [Tag 055K](https://stacks.math.columbia.edu/tag/055K) in the Stacks Project.
 
-**`AlgebraicGeometry.ConnectedAlongSection.mem_locus_iff_asFiber_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean#L57). The attribute's comment: “Situation 055L: X⁰ = ⋃_y X⁰_y, pointwise”.
+**`AlgebraicGeometry.ConnectedAlongSection.mem_locus_iff_asFiber_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean#L57). The attribute's comment: “Situation 055L: X⁰ = ⋃\_y X⁰\_y, pointwise”.
 
 > For a morphism `f : X ⟶ Y` with a section `s`, the subset `X⁰ = ⋃_y X⁰_y` of `X` consists of
 > the points `x` which, viewed as points of their own fibre `X_{f(x)}`, lie in the connected
@@ -35,7 +35,7 @@ theorem mem_locus_iff_asFiber_mem (D : ConnectedAlongSection.{u}) (x : D.X) :
 noncomputable def ofGrpObj : ConnectedAlongSection.{u}
 ```
 
-**`AlgebraicGeometry.GroupScheme.neutralLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean#L98). The attribute's comment: “G⁰ = ⋃_s G⁰_s for the neutral section”. References: EGA IV (15.6.8), “special case”; EGA IV (9.7.12), “special case”; SGA 3 XIX (5.10).
+**`AlgebraicGeometry.GroupScheme.neutralLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean#L98). The attribute's comment: “G⁰ = ⋃\_s G⁰\_s for the neutral section”. References: EGA IV (15.6.8), “special case”; EGA IV (9.7.12), “special case”; SGA 3 XIX (5.10).
 
 > For a group scheme `G ⟶ S` with neutral section `e`, the subset `G⁰ ⊆ G`: the union over
 > `s : S` of the connected components `G⁰_s` of the fibres `G_s` containing `e(s)`, that is, the
@@ -45,7 +45,7 @@ noncomputable def ofGrpObj : ConnectedAlongSection.{u}
 noncomputable def neutralLocus : Set G.left
 ```
 
-**`AlgebraicGeometry.GroupScheme.fiberι_preimage_neutralLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean#L104). The attribute's comment: “the trace of G⁰ on G_s is the component of G_s containing e(s)”.
+**`AlgebraicGeometry.GroupScheme.fiberι_preimage_neutralLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ConnectedComponentSection/GroupScheme.lean#L104). The attribute's comment: “the trace of G⁰ on G\_s is the component of G\_s containing e(s)”.
 
 > For a group scheme `G ⟶ S` with neutral section `e` and a point `s : S`, the trace of `G⁰` on
 > the fibre `G_s` is the connected component of `G_s` containing the point `e(s)`.
@@ -69,7 +69,7 @@ theorem fiberι_preimage_neutralLocus (s : S) (z : G.hom.fiber s)
 structure ConnectedAlongSection
 ```
 
-**`AlgebraicGeometry.ConnectedAlongSection.fiberComponent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Section.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Section.lean#L79). The attribute's comment: “the component X⁰_y”. References: EGA IV (15.6.5); EGA IV (15.6.8).
+**`AlgebraicGeometry.ConnectedAlongSection.fiberComponent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Section.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/Section.lean#L79). The attribute's comment: “the component X⁰\_y”. References: EGA IV (15.6.5); EGA IV (15.6.8).
 
 > **Stacks Project, Tag 055L (the fibrewise component).** The connected component of the
 > fibre over `y` which contains the point supplied by the section.
@@ -169,7 +169,7 @@ theorem locus_mem_nhds_of_isConstructible (D : ConnectedAlongSection.{u})
     D.locus ∈ nhds x
 ```
 
-**`AlgebraicGeometry.ConnectedAlongSection.locus_mem_nhdsSet_fiberComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L103). References: EGA IV (15.6.5), “nbhd of X⁰_y”; EGA IV (15.6.4), “special case”.
+**`AlgebraicGeometry.ConnectedAlongSection.locus_mem_nhdsSet_fiberComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/ShrinkingConsequences.lean#L103). References: EGA IV (15.6.5), “nbhd of X⁰\_y”; EGA IV (15.6.4), “special case”.
 
 > **Stacks Project, Tag 055Q.** For a flat morphism of finite presentation with a section
 > whose fibre over `y` is geometrically reduced, the locus `X⁰` is a neighbourhood of the

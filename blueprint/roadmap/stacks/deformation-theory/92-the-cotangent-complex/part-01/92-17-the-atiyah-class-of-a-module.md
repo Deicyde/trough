@@ -62,7 +62,7 @@ theorem polynomialAtiyahTriangle_distinguished_of_iso
       distinguishedTriangles
 ```
 
-**`CommAlgCat.exists_atiyahDisplayedTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/AtiyahClassBigSiteDisplayed.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/AtiyahClassBigSiteDisplayed.lean#L247). The attribute's comment: “the displayed triangle `L_{B/A} ⊗^L_B M → Lπ_!(P¹(M)) → M → [1]` at the site C_{B/A} itself, with both endpoint identifications proved rather than assumed”.
+**`CommAlgCat.exists_atiyahDisplayedTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/AtiyahClassBigSiteDisplayed.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/AtiyahClassBigSiteDisplayed.lean#L247). The attribute's comment: “the displayed triangle `L_{B/A} ⊗^L_B M → Lπ_!(P¹(M)) → M → [1]` at the site C\_\{B/A} itself, with both endpoint identifications proved rather than assumed”.
 
 > **Stacks 09DD, the displayed triangle.** For a ring map `A → B` and a `B`-module `M` there is
 > an identification `e₁` of the first term of the Atiyah triangle on the site `C_{B/A}` with
@@ -99,7 +99,7 @@ theorem exists_atiyahDisplayedTriangle_distinguished :
 
 [Tag 09DE](https://stacks.math.columbia.edu/tag/09DE) in the Stacks Project.
 
-**`CommAlgCat.polynomialAtiyahClassOfIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/AtiyahClass.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/AtiyahClass.lean#L333). The attribute's comment: “the Atiyah class; the source's identifications Lπ_!(Ω_{𝒪/A} ⊗_𝒪 M) = L_{B/A} ⊗_B^L M (Tag 08PT) and Lπ_!(M) = M (Tag 08QE) are not available here, so they are carried as the extra hypotheses `e₁` and `e₃`, which the source does not have”.
+**`CommAlgCat.polynomialAtiyahClassOfIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/AtiyahClass.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/AtiyahClass.lean#L333). The attribute's comment: “the Atiyah class; the source's identifications Lπ\_!(Ω\_\{𝒪/A} ⊗\_𝒪 M) = L\_\{B/A} ⊗\_B^L M (Tag 08PT) and Lπ\_!(M) = M (Tag 08QE) are not available here, so they are carried as the extra hypotheses `e₁` and `e₃`, which the source does not have”.
 
 > **Stacks 09DE.** The *Atiyah class* of `M`, in the form displayed by the source. For `L`
 > identified with `Lπ_!(Ω_{𝒪/A} ⊗_𝒪 M)` and `N` identified with `Lπ_!(M)` this is the last arrow
@@ -115,7 +115,7 @@ def polynomialAtiyahClassOfIso
     (e₃ : (polynomialAtiyahTriangle A B M).obj₃ ≅ N) : N ⟶ L⟦(1 : ℤ)⟧
 ```
 
-**`CommAlgCat.exists_atiyahDisplayedClass_mem_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/AtiyahClassBigSiteDisplayed.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/AtiyahClassBigSiteDisplayed.lean#L292). The attribute's comment: “the Atiyah class M → (L_{B/A} ⊗^L_B M)[1] at the site C_{B/A} itself, as the last arrow of the displayed distinguished triangle of (92.17.0.1); both endpoint identifications are proved rather than assumed”.
+**`CommAlgCat.exists_atiyahDisplayedClass_mem_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/AtiyahClassBigSiteDisplayed.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/AtiyahClassBigSiteDisplayed.lean#L292). The attribute's comment: “the Atiyah class M → (L\_\{B/A} ⊗^L\_B M)[1] at the site C\_\{B/A} itself, as the last arrow of the displayed distinguished triangle of (92.17.0.1); both endpoint identifications are proved rather than assumed”.
 
 > **Stacks 09DE, the Atiyah class of a module.** For a ring map `A → B` and a `B`-module `M`
 > there is an identification `e₁` of the first term of the Atiyah triangle on the site `C_{B/A}`

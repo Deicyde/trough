@@ -37,7 +37,7 @@ theorem globalSectionsKInjectiveIso_naturality
 
 [Tag 07A6](https://stacks.math.columbia.edu/tag/07A6) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.derivedAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean#L164). The attribute's comment: “for a morphism of ringed topoi presented by a morphism of the underlying sites, at RingedTopos.{u, u, u}”.
+**`Stacks.Cohomology.DerivedPullbackOnRingedTopoi.derivedAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/DerivedPullbackExistence.lean#L164). The attribute's comment: “for a morphism of ringed topoi presented by a morphism of the underlying sites, at RingedTopos.\{u, u, u}”.
 
 > **Stacks 07A6 along an arbitrary morphism of ringed topoi.**  The unbounded derived
 > pullback `Lf^*` is left adjoint to the unbounded derived pushforward `Rf_*`.
@@ -216,7 +216,7 @@ theorem derivedBaseChangeMap_adjoint (h : g.comp f' = f.comp g')
 
 [Tag 0E46](https://stacks.math.columbia.edu/tag/0E46) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedBaseChangePasting.derivedBaseChangeMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangePastingOnRingedTopoi.lean, line 1068](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangePastingOnRingedTopoi.lean#L1068). The attribute's comment: “variant: the special case of squares of morphisms of ringed topoi presented by morphisms of sites; the tag for arbitrary morphisms of ringed topoi is Stacks.Cohomology.DerivedBaseChangeOfToposHom.derivedBaseChangeMapOfTwoIso_vertical”.
+**`Stacks.Cohomology.DerivedBaseChangePasting.derivedBaseChangeMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangePastingOnRingedTopoi.lean, line 1068](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPushforward/BaseChangePastingOnRingedTopoi.lean#L1068). The attribute's comment: “variant: the special case of squares of morphisms of ringed topoi presented by morphisms of sites; the tag for arbitrary morphisms of ringed topoi is Stacks.Cohomology.DerivedBaseChangeOfToposHom.derivedBaseChangeMapOfTwoIso\_vertical”.
 
 > **The vertical pasting law, for ringed topoi presented by morphisms of sites.**  For two
 > vertically composable commutative squares of ringed topoi whose arrows come from morphisms of the
@@ -264,8 +264,8 @@ theorem derivedBaseChangeMap_comp (htop : l.comp f' = f.comp k) (hbot : m.comp g
 > maps of Remark 07A7 for the two squares compose to the base change map of the rectangle: for
 > `K` in `D(𝒪_B)`, the composite
 >
-> `Lm^* R(g ∘ f)_* K = Lm^* Rg_* Rf_* K ⟶ Rg'_* Ll^* Rf_* K ⟶ Rg'_* Rf'_* Lk^* K
->   = R(g' ∘ f')_* Lk^* K`
+> `Lm^* R(g ∘ f)\_* K = Lm^* Rg\_* Rf\_* K ⟶ Rg'\_* Ll^* Rf\_* K ⟶ Rg'\_* Rf'\_* Lk^* K
+>   = R(g' ∘ f')\_* Lk^* K`
 >
 > is the base change map of the rectangle.  The two identifications `=` are the composition
 > isomorphisms of Stacks 0D6E, `derivedPushforwardCompIsoOfAdjoints`.
@@ -314,8 +314,8 @@ theorem derivedBaseChangeMapOfTwoIso_vertical
 > maps of Remark 07A7 for the two squares compose to the base change map of the rectangle: for
 > `K` in `D(𝒪_C)`, the composite
 >
-> `L(h ∘ h')^* Rf_* K = L(h')^* Lh^* Rf_* K ⟶ L(h')^* Rf'_* Lg^* K ⟶ Rf''_* L(g')^* Lg^* K
->   = Rf''_* L(g ∘ g')^* K`
+> `L(h ∘ h')^* Rf\_* K = L(h')^* Lh^* Rf\_* K ⟶ L(h')^* Rf'\_* Lg^* K ⟶ Rf''\_* L(g')^* Lg^* K
+>   = Rf''\_* L(g ∘ g')^* K`
 >
 > is the base change map of the rectangle.  The two identifications `=` are the composition
 > isomorphisms of Stacks 0D6D.

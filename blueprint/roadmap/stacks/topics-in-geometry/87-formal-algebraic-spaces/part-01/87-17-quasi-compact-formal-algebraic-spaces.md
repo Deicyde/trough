@@ -14,7 +14,7 @@ Section 87.17 of the Stacks Project, [Tag 0AJ8](https://stacks.math.columbia.edu
 
 [Tag 0AJ9](https://stacks.math.columbia.edu/tag/0AJ9) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.tfae_isQuasiCompactSpace_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CoproductRepresentableEtaleConsequences.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CoproductRepresentableEtaleConsequences.lean#L80). The attribute's comment: “the equivalence of the three conditions, for every reduction i : Xred ⟶ X of X, a reduction existing by Stacks 0AIN (exists_isReduction_of_isFormalAlgebraicSpace); nothing is assumed beyond the source's hypotheses, the input hCoproductEtale of AlgebraicGeometry.FormalSpace.tfae_isQuasiCompactSpace_of_isReduction being the theorem AlgebraicGeometry.FormalSpace.coproductsRepresentableEtale”.
+**`AlgebraicGeometry.FormalSpace.tfae_isQuasiCompactSpace_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CoproductRepresentableEtaleConsequences.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CoproductRepresentableEtaleConsequences.lean#L80). The attribute's comment: “the equivalence of the three conditions, for every reduction i : Xred ⟶ X of X, a reduction existing by Stacks 0AIN (exists\_isReduction\_of\_isFormalAlgebraicSpace); nothing is assumed beyond the source's hypotheses, the input hCoproductEtale of AlgebraicGeometry.FormalSpace.tfae\_isQuasiCompactSpace\_of\_isReduction being the theorem AlgebraicGeometry.FormalSpace.coproductsRepresentableEtale”.
 
 > Let `X` be a formal algebraic space over `S` and let `i : Xred ⟶ X` be a reduction of `X`.
 > Then quasi-compactness of `Xred`, the existence of an atlas as in Definition 0AIM indexed by a
@@ -114,7 +114,7 @@ theorem tfae_isQuasiCompactSpace
       IsQuasiCompactSpace B S hS X].TFAE
 ```
 
-**`AlgebraicGeometry.FormalSpace.IsQuasiCompactSpace.isQuasiCompactSpaceULift_of_isReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactSpaceCriteriaReduction.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactSpaceCriteriaReduction.lean#L184). The attribute's comment: “the implication (3) ⇒ (1), for every reduction i : Xred ⟶ X of X, a reduction existing by Stacks 0AIN (exists_isReduction_of_isFormalAlgebraicSpace); nothing is assumed beyond the source's hypotheses”.
+**`AlgebraicGeometry.FormalSpace.IsQuasiCompactSpace.isQuasiCompactSpaceULift_of_isReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactSpaceCriteriaReduction.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactSpaceCriteriaReduction.lean#L184). The attribute's comment: “the implication (3) ⇒ (1), for every reduction i : Xred ⟶ X of X, a reduction existing by Stacks 0AIN (exists\_isReduction\_of\_isFormalAlgebraicSpace); nothing is assumed beyond the source's hypotheses”.
 
 > **Stacks 0AJ9, the implication (3) ⇒ (1).** Let `X` be a quasi-compact formal algebraic
 > space over `S` and let `i : Xred ⟶ X` be a reduction of `X`. Then `Xred` is a quasi-compact
@@ -243,7 +243,7 @@ theorem IsQuasiCompactOnSchemeBaseChanges.isQuasiCompact {X Y : FppfSheaf B S hS
     (h : IsQuasiCompactOnSchemeBaseChanges B S hS f) : IsQuasiCompact B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isQuasiCompactOnReductions_iff_isQuasiCompactULift_chosenReductionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactMorphismChosenReduction.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactMorphismChosenReduction.lean#L126). The attribute's comment: “condition (1), in the source's own form — quasi-compactness of the morphism f_red of the chosen reductions — identified with the phrasing of the condition that quantifies over the reductions”.
+**`AlgebraicGeometry.FormalSpace.isQuasiCompactOnReductions_iff_isQuasiCompactULift_chosenReductionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactMorphismChosenReduction.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactMorphismChosenReduction.lean#L126). The attribute's comment: “condition (1), in the source's own form — quasi-compactness of the morphism f\_red of the chosen reductions — identified with the phrasing of the condition that quantifies over the reductions”.
 
 > **Stacks 0AJB, condition (1).** Let `f : X ⟶ Y` be a morphism of formal algebraic spaces over
 > `S`. The morphism `f_red : X_red ⟶ Y_red` of the chosen reductions is a quasi-compact morphism of
@@ -266,7 +266,7 @@ theorem isQuasiCompactOnReductions_iff_isQuasiCompactULift_chosenReductionMap
       Space.IsQuasiCompactULift.{u + 1} B S hS (chosenReductionMap B S hS hX hY f).hom
 ```
 
-**`AlgebraicGeometry.FormalSpace.IsQuasiCompact.isQuasiCompactULift_chosenReductionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactMorphismChosenReduction.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactMorphismChosenReduction.lean#L169). The attribute's comment: “condition (3) implies condition (1), for the morphism f_red of the chosen reductions”.
+**`AlgebraicGeometry.FormalSpace.IsQuasiCompact.isQuasiCompactULift_chosenReductionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactMorphismChosenReduction.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactMorphismChosenReduction.lean#L169). The attribute's comment: “condition (3) implies condition (1), for the morphism f\_red of the chosen reductions”.
 
 > **Stacks 0AJB, condition (3) implies condition (1).** Let `f : X ⟶ Y` be a morphism of formal
 > algebraic spaces over `S` such that every fibre product of `f` with an affine scheme over `S` in
@@ -281,7 +281,7 @@ theorem IsQuasiCompact.isQuasiCompactULift_chosenReductionMap {X Y : FppfSheaf B
     Space.IsQuasiCompactULift.{u + 1} B S hS (chosenReductionMap B S hS hX hY f).hom
 ```
 
-**`AlgebraicGeometry.FormalSpace.IsQuasiCompactOnSchemeBaseChanges.isQuasiCompactULift_chosenReductionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactMorphismChosenReduction.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactMorphismChosenReduction.lean#L181). The attribute's comment: “condition (2) implies condition (1), for the morphism f_red of the chosen reductions”.
+**`AlgebraicGeometry.FormalSpace.IsQuasiCompactOnSchemeBaseChanges.isQuasiCompactULift_chosenReductionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactMorphismChosenReduction.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/QuasiCompactMorphismChosenReduction.lean#L181). The attribute's comment: “condition (2) implies condition (1), for the morphism f\_red of the chosen reductions”.
 
 > **Stacks 0AJB, condition (2) implies condition (1).** The fibre product condition over the
 > quasi-compact schemes over `S` in the site restricts to the affine ones, which already makes the

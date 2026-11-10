@@ -428,7 +428,7 @@ theorem exists_spectralSequence_leray
 
 [Tag 01F4](https://stacks.math.columbia.edu/tag/01F4) in the Stacks Project.
 
-**`Stacks.LeraySections.cohomologyIsoOfVanishingHigherDirectImages`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LeraySectionsCollapse/Leray.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LeraySectionsCollapse/Leray.lean#L230). The attribute's comment: “part (1)”. References: SGA 4½ Arcata (2.3.5), “H^p(X,F)=H^p(Y,f_*F)”.
+**`Stacks.LeraySections.cohomologyIsoOfVanishingHigherDirectImages`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LeraySectionsCollapse/Leray.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LeraySectionsCollapse/Leray.lean#L230). The attribute's comment: “part (1)”. References: SGA 4½ Arcata (2.3.5), “H^p(X,F)=H^p(Y,f\_*F)”.
 
 > **[Stacks, Tag 01F4] part (1).** If the higher direct images of a sheaf of
 > `𝒪_X`-modules along a morphism of ringed spaces vanish, then its cohomology agrees in every
@@ -442,7 +442,7 @@ noncomputable def cohomologyIsoOfVanishingHigherDirectImages
       (Hfunctor (structureSheafRing Y) ⊤ p).obj ((modulePushforward f).obj F)
 ```
 
-**`Deformation.Artin.SectionsSheaf.isIso_edgeMap_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/SectionsEdgeMap.lean, line 630](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/SectionsEdgeMap.lean#L630). The attribute's comment: “(1) for a morphism of schemes, the isomorphism H^p(Y, f_*F) ≅ H^p(X, F) being the edge map, which commutes with the connecting morphisms”.
+**`Deformation.Artin.SectionsSheaf.isIso_edgeMap_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/SectionsEdgeMap.lean, line 630](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/SectionsEdgeMap.lean#L630). The attribute's comment: “(1) for a morphism of schemes, the isomorphism H^p(Y, f\_*F) ≅ H^p(X, F) being the edge map, which commutes with the connecting morphisms”.
 
 > **Stacks 01F4, part (1), through the edge map.** If the higher direct images `R^q p_* G`
 > vanish for `q > 0`, the edge map `|Hⁿ(Y, p_* G)| ⟶ |Hⁿ(X, G)|` is an isomorphism in every

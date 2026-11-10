@@ -227,7 +227,7 @@ theorem isSectionsColimit (hI : #A.I < B.cutoff.ord.cof)
     A.IsSectionsColimit F₀ (A.isAlgebraicSpace_of_mk_lt hI)
 ```
 
-**`AlgebraicGeometry.Space.LimitSituation.isSectionsColimit_of_baseChangeSizeBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasicoherentSectionsColimitSizeBounded.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasicoherentSectionsColimitSizeBounded.lean#L350). The attribute's comment: “Situation 084R on the bounded site, with the size conventions of Tag 07SD read as an index set below the cutoff with uniformly bounded base changes of the stages; with no size condition the statement is false, Refute07SI.not_forall_isSectionsColimit”.
+**`AlgebraicGeometry.Space.LimitSituation.isSectionsColimit_of_baseChangeSizeBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasicoherentSectionsColimitSizeBounded.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasicoherentSectionsColimitSizeBounded.lean#L350). The attribute's comment: “Situation 084R on the bounded site, with the size conventions of Tag 07SD read as an index set below the cutoff with uniformly bounded base changes of the stages; with no size condition the statement is false, Refute07SI.not\_forall\_isSectionsColimit”.
 
 > **Stacks 07SI.**  In Situation 084R, let `ℱ₀` be a quasi-coherent module on `X₀`, and set
 > `ℱᵢ = f_{0i}^*ℱ₀` and `ℱ = f_0^*ℱ₀`.  Then `Γ(X, ℱ) = colim_{i ≥ 0} Γ(Xᵢ, ℱᵢ)`, in the
@@ -295,7 +295,7 @@ theorem exists_isOpenSubspace_isQuasiCompactSpace_preimage_eq (hSize : #I < B.cu
 
 [Tag 084S](https://stacks.math.columbia.edu/tag/084S) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isIso_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean#L363). References: EGA IV (8.8.2.5), “f iso ⇒ f_i iso”.
+**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isIso_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean#L363). References: EGA IV (8.8.2.5), “f iso ⇒ f\_i iso”.
 
 > **Stacks 0852**, and **Stacks 084S**. In the situation of Stacks 084W, if the base change
 > `f` of `f₀` to the limit `B` is an isomorphism and `f₀` is locally of finite presentation, then

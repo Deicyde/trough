@@ -14,7 +14,7 @@ Section 85.31 of the Stacks Project, [Tag 024F](https://stacks.math.columbia.edu
 
 [Tag 024G](https://stacks.math.columbia.edu/tag/024G) in the Stacks Project.
 
-**`AlgebraicGeometry.Simplicial.pointClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean#L135). The attribute's comment: “the subset T_y”.
+**`AlgebraicGeometry.Simplicial.pointClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean#L135). The attribute's comment: “the subset T\_y”.
 
 > The points reached from `y` by a one-simplex whose first face is `y`.
 
@@ -23,7 +23,7 @@ def pointClass (Y : SimplicialObject Scheme.{u}) (y : Y _⦋0⦌) :
     Set (Y _⦋0⦌)
 ```
 
-**`AlgebraicGeometry.Simplicial.mem_pointClass_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean#L142). The attribute's comment: “membership of y in T_y”.
+**`AlgebraicGeometry.Simplicial.mem_pointClass_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/CechNervePointClass.lean#L142). The attribute's comment: “membership of y in T\_y”.
 
 > A point belongs to the subset of points reachable from it.
 

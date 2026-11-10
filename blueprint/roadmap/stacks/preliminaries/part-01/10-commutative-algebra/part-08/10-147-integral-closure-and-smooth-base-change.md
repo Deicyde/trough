@@ -16,10 +16,10 @@ Section 10.147 of the Stacks Project, [Tag 03GC](https://stacks.math.columbia.ed
 
 **`vandermondeProd_isUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RootsOfUnity/VandermondeUnit.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RootsOfUnity/VandermondeUnit.lean#L250).
 
-> **Stacks 03GF.** For every `d < p`, the element `Δ_d = ∏_{0 ≤ i < j < d}
-> (α_i - α_j)` is a unit in `R' = Z[1/p][x]/(Phi(x))`.
+> **Stacks 03GF.** For every `d < p`, the element `Δ\_d = ∏\_\{0 ≤ i < j < d}
+> (α\_i - α\_j)` is a unit in `R' = Z[1/p][x]/(Phi(x))`.
 >
-> Δ_d is a double product of the differences `αᵢ - αⱼ`; each such difference (for
+> Δ\_d is a double product of the differences `αᵢ - αⱼ`; each such difference (for
 > `i < j < d ≤ p-1`) is a unit by `alpha_sub_isUnit`, and a product of units is a
 > unit (`Finset.prod_induction` with `IsUnit.mul`, `isUnit_one`).
 

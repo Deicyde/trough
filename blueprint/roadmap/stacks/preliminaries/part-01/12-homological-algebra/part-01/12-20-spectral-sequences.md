@@ -26,7 +26,7 @@ Section 12.20 of the Stacks Project, [Tag 011M](https://stacks.math.columbia.edu
 abbrev Ungraded
 ```
 
-**`CategoryTheory.SpectralSequence.TowerData.step_Z_unique`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Homology/SpectralSequence/Tower.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Homology/SpectralSequence/Tower.lean#L303). The attribute's comment: “`Z_{r+1}`: the unique `X` with `B_r ⊆ X ⊆ Z_r` and `X/B_r = Ker(d_r)` in `Z_r/B_r`”. References: EGA 0 (11.1.1), “(b) Z_k inverse image”.
+**`CategoryTheory.SpectralSequence.TowerData.step_Z_unique`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Homology/SpectralSequence/Tower.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Homology/SpectralSequence/Tower.lean#L303). The attribute's comment: “`Z_{r+1}`: the unique `X` with `B_r ⊆ X ⊆ Z_r` and `X/B_r = Ker(d_r)` in `Z_r/B_r`”. References: EGA 0 (11.1.1), “(b) Z\_k inverse image”.
 
 > Stacks' characterisation of `Z_{r+1}` at the level of `E_{r₀}`: it is the unique
 > subobject `X` with `B_r ⊆ X ⊆ Z_r` whose image in `E_r = Z_r/B_r` is `Ker(d_r)`.
@@ -38,7 +38,7 @@ lemma step_Z_unique {X : Subobject ((E.page r₀).X pq)} (hB : T.B ≤ X) (hZ : 
     X = T.step.Z
 ```
 
-**`CategoryTheory.SpectralSequence.TowerData.step_B_unique`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Homology/SpectralSequence/Tower.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Homology/SpectralSequence/Tower.lean#L313). The attribute's comment: “`B_{r+1}`: the unique `X` with `B_r ⊆ X ⊆ Z_r` and `X/B_r = Im(d_r)` in `Z_r/B_r`”. References: EGA 0 (11.1.1), “(b) B_k inverse image”.
+**`CategoryTheory.SpectralSequence.TowerData.step_B_unique`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Homology/SpectralSequence/Tower.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Homology/SpectralSequence/Tower.lean#L313). The attribute's comment: “`B_{r+1}`: the unique `X` with `B_r ⊆ X ⊆ Z_r` and `X/B_r = Im(d_r)` in `Z_r/B_r`”. References: EGA 0 (11.1.1), “(b) B\_k inverse image”.
 
 > Stacks' characterisation of `B_{r+1}` at the level of `E_{r₀}`: it is the unique
 > subobject `X` with `B_r ⊆ X ⊆ Z_r` whose image in `E_r = Z_r/B_r` is `Im(d_r)`.
@@ -68,7 +68,7 @@ lemma Z_add_one_self :
     E.Z pq (r₀ + 1) = kernelSubobject ((E.page r₀).d pq ((c r₀).next pq))
 ```
 
-**`CategoryTheory.SpectralSequence.B_add_one_self`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Homology/SpectralSequence/Tower.lean, line 618](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Homology/SpectralSequence/Tower.lean#L618). The attribute's comment: “`B_2 = Im(d_1)`, i.e. `B_{r₀+1} = Im(d_{r₀})`”. References: EGA 0 (11.1.1), “(b) B_{r+1}=Im(d_r)”.
+**`CategoryTheory.SpectralSequence.B_add_one_self`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Homology/SpectralSequence/Tower.lean, line 618](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Homology/SpectralSequence/Tower.lean#L618). The attribute's comment: “`B_2 = Im(d_1)`, i.e. `B_{r₀+1} = Im(d_{r₀})`”. References: EGA 0 (11.1.1), “(b) B\_\{r+1}=Im(d\_r)”.
 
 > Stacks 011N's base step: `B_2 = Im(d_1)`, i.e. `B_{r₀+1} = Im(d_{r₀})`.
 

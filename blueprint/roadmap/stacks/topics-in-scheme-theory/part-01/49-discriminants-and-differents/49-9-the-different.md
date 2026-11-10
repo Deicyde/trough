@@ -229,7 +229,7 @@ theorem isEffectiveCartierDivisor_differentIdealSheaf
     Stacks.Divisors.IsEffectiveCartierDivisor (differentIdealSheaf ω τ)
 ```
 
-**`Stacks.Discriminant.existsUnique_invertibleSheafIso_differentIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EffectiveCartier.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EffectiveCartier.lean#L182). The attribute's comment: “part (3), O_Y(R) = omega_{Y/X}”.
+**`Stacks.Discriminant.existsUnique_invertibleSheafIso_differentIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EffectiveCartier.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EffectiveCartier.lean#L182). The attribute's comment: “part (3), O\_Y(R) = omega\_\{Y/X}”.
 
 > **[Stacks, Tag 0BWA (3)], the isomorphism `𝒪_Y(R) = ω_{Y/X}`.**  Under the hypotheses of
 > [Stacks, Tag 0BWA (3)] there is exactly one isomorphism `𝒪_Y(R) ≅ ω_{Y/X}` carrying the

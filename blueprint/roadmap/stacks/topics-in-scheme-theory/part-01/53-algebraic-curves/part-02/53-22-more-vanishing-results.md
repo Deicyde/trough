@@ -70,7 +70,7 @@ theorem not_isZero_cohomology_zero_idealTwist_or_of_lt (hZ : topologicalKrullDim
         (S.subschemeDegree Z : ℤ) - 1)
 ```
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation.exists_isIso_projectiveLine_of_genus_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistSections.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistSections.lean#L104). The attribute's comment: “in case (2) with Z empty, X is P^1_k and L corresponds to O(-1)”.
+**`AlgebraicGeometry.CohenMacaulayCurveSituation.exists_isIso_projectiveLine_of_genus_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistSections.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/IdealTwistSections.lean#L104). The attribute's comment: “in case (2) with Z empty, X is P^1\_k and L corresponds to O(-1)”.
 
 > **[Stacks, Tag 0E3B], case (2) with `Z = ∅`.** If `g = 0` and `deg(ℒ) = -1`, then `X ≅ 𝐏¹_k`
 > over `k`, and under this isomorphism `ℒ^{⊗ -1}` is the pullback of `𝒪(1)`, i.e. `ℒ` corresponds to

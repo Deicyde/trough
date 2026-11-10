@@ -335,7 +335,7 @@ theorem rightDerivedPushforward_mem_derivedCategoryBPlus
           (S.coarseCoverage.toGrothendieck.over Y)).rightDerivedFunctorPlus.obj K).obj)
 ```
 
-**`Stacks.ComparingTopologies.CohomologyComparison.vanishingCondition_all`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/HigherDirectImageVanishing.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/HigherDirectImageVanishing.lean#L70). The attribute's comment: “(V_n) holds for all n”.
+**`Stacks.ComparingTopologies.CohomologyComparison.vanishingCondition_all`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/HigherDirectImageVanishing.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/HigherDirectImageVanishing.lean#L70). The attribute's comment: “(V\_n) holds for all n”.
 
 > **Stacks 0EZF, the leading assertion.** In the comparison situation of Stacks 0EZ3 the
 > vanishing condition `(V_n)` holds for every `n`: `(V_0)` is empty and Stacks 0EZE is the

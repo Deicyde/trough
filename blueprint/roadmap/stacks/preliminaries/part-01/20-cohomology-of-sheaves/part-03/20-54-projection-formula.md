@@ -31,7 +31,7 @@ theorem injective_tensorSheaf_of_finiteLocallyFree
 
 [Tag 01E8](https://stacks.math.columbia.edu/tag/01E8) in the Stacks Project.
 
-**`Stacks.ProjectionFormula.derivedPushforwardTensorRightRingedSpacePlusIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectionFormula/HigherDirectImageRingedSpace.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectionFormula/HigherDirectImageRingedSpace.lean#L246). The attribute's comment: “the D⁺ clause: for a morphism of ringed spaces f : X ⟶ Y and a finite locally free 𝒪_Y-module ℰ, the isomorphism ℰ ⊗_{𝒪_Y} Rf_*ℱ ≅ Rf_*(f^*ℰ ⊗_{𝒪_X} ℱ) in D^+(Y), functorial in ℱ”. References: EGA 0 (12.2.3), “more general”; SGA 6 III (5.8), “special case”.
+**`Stacks.ProjectionFormula.derivedPushforwardTensorRightRingedSpacePlusIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectionFormula/HigherDirectImageRingedSpace.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectionFormula/HigherDirectImageRingedSpace.lean#L246). The attribute's comment: “the D⁺ clause: for a morphism of ringed spaces f : X ⟶ Y and a finite locally free 𝒪\_Y-module ℰ, the isomorphism ℰ ⊗\_\{𝒪\_Y} Rf\_*ℱ ≅ Rf\_*(f^*ℰ ⊗\_\{𝒪\_X} ℱ) in D^+(Y), functorial in ℱ”. References: EGA 0 (12.2.3), “more general”; SGA 6 III (5.8), “special case”.
 
 > **The `D⁺` clause of [Stacks, Tag 01E8]**: for a morphism of **ringed spaces** `f : X ⟶ Y` and
 > a **finite locally free** `𝒪_Y`-module `ℰ`,
@@ -50,7 +50,7 @@ def derivedPushforwardTensorRightRingedSpacePlusIso :
         (tensorRightSheaf Y E).mapDerivedCategoryPlus
 ```
 
-**`Stacks.ProjectionFormula.higherDirectImageProjectionFormulaRingedSpaceIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectionFormula/HigherDirectImageRingedSpace.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectionFormula/HigherDirectImageRingedSpace.lean#L298). The attribute's comment: “the higher direct image clause: for a morphism of ringed spaces f : X ⟶ Y, an 𝒪_X-module ℱ and a finite locally free 𝒪_Y-module ℰ, the isomorphisms R^n f_*(ℱ ⊗_{𝒪_X} f^*ℰ) ≅ R^n f_*ℱ ⊗_{𝒪_Y} ℰ for every integer n; the tag's q ≥ 0 is the case n = (q : ℤ)”. References: EGA 0 (12.2.3), “partial”.
+**`Stacks.ProjectionFormula.higherDirectImageProjectionFormulaRingedSpaceIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectionFormula/HigherDirectImageRingedSpace.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectionFormula/HigherDirectImageRingedSpace.lean#L298). The attribute's comment: “the higher direct image clause: for a morphism of ringed spaces f : X ⟶ Y, an 𝒪\_X-module ℱ and a finite locally free 𝒪\_Y-module ℰ, the isomorphisms R^n f\_*(ℱ ⊗\_\{𝒪\_X} f^*ℰ) ≅ R^n f\_*ℱ ⊗\_\{𝒪\_Y} ℰ for every integer n; the tag's q ≥ 0 is the case n = (q : ℤ)”. References: EGA 0 (12.2.3), “partial”.
 
 > **The higher direct image clause of [Stacks, Tag 01E8]**: for a morphism of **ringed spaces**
 > `f : X ⟶ Y`, an arbitrary `𝒪_X`-module `ℱ` and a **finite locally free** `𝒪_Y`-module `ℰ`,
@@ -69,7 +69,7 @@ def higherDirectImageProjectionFormulaRingedSpaceIso
         (((pushforwardFunctor f).rightDerivedPlus n).obj F)).obj E
 ```
 
-**`Stacks.AffineProjectionFormula.isIso_projectionFormulaMap_of_isFiniteLocallyFree_class_ringedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectionFormula/LocalityRingedSpace.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectionFormula/LocalityRingedSpace.lean#L417). The attribute's comment: “the q = 0 clause: for a morphism of ringed spaces f, an arbitrary module 𝒢 on the source and a finite locally free module ℋ on the target, the projection formula map f_*𝒢 ⊗ ℋ ⟶ f_*(𝒢 ⊗ f^*ℋ) is an isomorphism”.
+**`Stacks.AffineProjectionFormula.isIso_projectionFormulaMap_of_isFiniteLocallyFree_class_ringedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectionFormula/LocalityRingedSpace.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectionFormula/LocalityRingedSpace.lean#L417). The attribute's comment: “the q = 0 clause: for a morphism of ringed spaces f, an arbitrary module 𝒢 on the source and a finite locally free module ℋ on the target, the projection formula map f\_*𝒢 ⊗ ℋ ⟶ f\_*(𝒢 ⊗ f^*ℋ) is an isomorphism”.
 
 > **The projection formula for an arbitrary morphism of ringed spaces at a finite locally free
 > module on the target**, finite local freeness being the class of [Stacks, Tag 01C6]: for `𝒢` an
@@ -223,7 +223,7 @@ theorem isIso_projectionFormulaMap_of_isPerfect
     IsIso (projectionFormulaMap f E K)
 ```
 
-**`Stacks.Cohomology.ProjectionFormulaPerfect.isIso_projectionFormulaMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaPerfect.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaPerfect.lean#L352). The attribute's comment: “the whole tag: for an arbitrary morphism of ringed spaces f : X ⟶ Y, an arbitrary E in D(𝒪_X) and a perfect K in D(𝒪_Y), the projection-formula morphism Rf_*E ⊗ᴸ K ⟶ Rf_*(E ⊗ᴸ Lf^*K) of Tag 0B53 is invertible”. References: SGA 6 III (3.7), “special case”; SGA 6 IV (2.11.1), “more general”.
+**`Stacks.Cohomology.ProjectionFormulaPerfect.isIso_projectionFormulaMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaPerfect.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaPerfect.lean#L352). The attribute's comment: “the whole tag: for an arbitrary morphism of ringed spaces f : X ⟶ Y, an arbitrary E in D(𝒪\_X) and a perfect K in D(𝒪\_Y), the projection-formula morphism Rf\_*E ⊗ᴸ K ⟶ Rf\_*(E ⊗ᴸ Lf^*K) of Tag 0B53 is invertible”. References: SGA 6 III (3.7), “special case”; SGA 6 IV (2.11.1), “more general”.
 
 > **The projection formula for a perfect complex** [Stacks, Tag 0B54].  For a morphism of
 > ringed spaces `f : (X, 𝒪_X) ⟶ (Y, 𝒪_Y)`, an arbitrary `E ∈ D(𝒪_X)` and a *perfect*
@@ -263,7 +263,7 @@ theorem isIso_projectionFormulaMap_of_isPerfect {X Y : RingedSpace.{u, u}} (f : 
     IsIso (projectionFormulaMap f E K)
 ```
 
-**`Stacks.Cohomology.ProjectionFormulaShiftedUnit.isIso_projectionFormulaMap_isStrictlyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaShiftedUnit.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaShiftedUnit.lean#L333). The attribute's comment: “the dévissage from the structure sheaf to a strictly perfect complex, now with NO hypothesis: the case K = O_Y[i] shifted by any amount, which Stacks.Cohomology.ProjectionFormulaPerfect.isIso_projectionFormulaMap_of_isStrictlyPerfect carries as the hypothesis hunit, is discharged here. What is still not covered of the tag is the reduction of a PERFECT complex to a strictly perfect one, which is local on the base and needs the base-change square of Tag 0B6B along an open immersion composed with a locality statement for invertibility of the map; so this is the tag for a strictly perfect complex, not for a perfect one”.
+**`Stacks.Cohomology.ProjectionFormulaShiftedUnit.isIso_projectionFormulaMap_isStrictlyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaShiftedUnit.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ProjectionFormulaShiftedUnit.lean#L333). The attribute's comment: “the dévissage from the structure sheaf to a strictly perfect complex, now with NO hypothesis: the case K = O\_Y[i] shifted by any amount, which Stacks.Cohomology.ProjectionFormulaPerfect.isIso\_projectionFormulaMap\_of\_isStrictlyPerfect carries as the hypothesis hunit, is discharged here. What is still not covered of the tag is the reduction of a PERFECT complex to a strictly perfect one, which is local on the base and needs the base-change square of Tag 0B6B along an open immersion composed with a locality statement for invertibility of the map; so this is the tag for a strictly perfect complex, not for a perfect one”.
 
 > **The dévissage half of [Stacks, Tag 0B54] with no hypothesis at all.**  For an arbitrary
 > morphism of ringed spaces `f : X ⟶ Y`, an arbitrary `E` in `D(𝒪_X)` and a strictly perfect
@@ -344,7 +344,7 @@ theorem isIso_projectionFormulaMap_of_isClosedEmbedding
     IsIso (projectionFormulaMap f E K)
 ```
 
-**`Stacks.Cohomology.DerivedProjectionFormula.isIso_projectionFormulaMapRight_of_isClosedEmbedding`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ClosedEmbeddingProjectionFormulaRightIso.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ClosedEmbeddingProjectionFormulaRightIso.lean#L67). The attribute's comment: “the right-handed form: the pushforward in the right tensor factor, K ⊗^L Rf_*E ⟶ Rf_*(Lf^*K ⊗^L E), for an arbitrary morphism of ringed spaces whose underlying map is a homeomorphism onto a closed subset and arbitrary K and E”.
+**`Stacks.Cohomology.DerivedProjectionFormula.isIso_projectionFormulaMapRight_of_isClosedEmbedding`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ClosedEmbeddingProjectionFormulaRightIso.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ClosedEmbeddingProjectionFormulaRightIso.lean#L67). The attribute's comment: “the right-handed form: the pushforward in the right tensor factor, K ⊗^L Rf\_*E ⟶ Rf\_*(Lf^*K ⊗^L E), for an arbitrary morphism of ringed spaces whose underlying map is a homeomorphism onto a closed subset and arbitrary K and E”.
 
 > **The projection formula along a closed embedding, with the pushforward in the right tensor
 > factor.**  Let `f : (X, 𝒪_X) ⟶ (Y, 𝒪_Y)` be a morphism of ringed spaces whose underlying
@@ -430,7 +430,7 @@ theorem isIso_projectionFormulaMap'_of_isClosedEmbedding
     IsIso (projectionFormulaMap' f G H)
 ```
 
-**`Stacks.Cohomology.ClosedEmbeddingPushforward.preservesColimitsOfSize_modulePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ClosedEmbeddingPushforwardColimits.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ClosedEmbeddingPushforwardColimits.lean#L171). The attribute's comment: “f_* commutes with direct sums: the input of the source's proof”.
+**`Stacks.Cohomology.ClosedEmbeddingPushforward.preservesColimitsOfSize_modulePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ClosedEmbeddingPushforwardColimits.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ClosedEmbeddingPushforwardColimits.lean#L171). The attribute's comment: “f\_* commutes with direct sums: the input of the source's proof”.
 
 > **Pushforward of sheaves of modules along a morphism of ringed spaces which is a
 > homeomorphism onto a closed subset preserves all small colimits**, in particular arbitrary
@@ -447,7 +447,7 @@ theorem preservesColimitsOfSize_modulePushforward
     PreservesColimitsOfSize.{0, 0} (modulePushforward f)
 ```
 
-**`Stacks.Cohomology.ClosedEmbeddingPushforward.isIso_derivedPushforwardUnit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ClosedEmbeddingPushforwardColimits.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ClosedEmbeddingPushforwardColimits.lean#L203). The attribute's comment: “step 1: Rf_* is computed by applying f_* termwise”.
+**`Stacks.Cohomology.ClosedEmbeddingPushforward.isIso_derivedPushforwardUnit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ClosedEmbeddingPushforwardColimits.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ClosedEmbeddingPushforwardColimits.lean#L203). The attribute's comment: “step 1: Rf\_* is computed by applying f\_* termwise”.
 
 > **For a morphism of ringed spaces which is a homeomorphism onto a closed subset the derived
 > pushforward is computed by applying `f_*` termwise**: the comparison `Qh (f_* K) ⟶ Rf_* (Qh K)`
@@ -465,7 +465,7 @@ theorem isIso_derivedPushforwardUnit_app (f : X ⟶ Y)
     IsIso ((Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.derivedPushforwardUnit f).app K)
 ```
 
-**`Stacks.Cohomology.ClosedEmbeddingPushforward.isIso_totalMap_modulePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ClosedEmbeddingPushforwardColimits.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ClosedEmbeddingPushforwardColimits.lean#L218). The attribute's comment: “f_* commutes with the totalization of an unbounded bicomplex”.
+**`Stacks.Cohomology.ClosedEmbeddingPushforward.isIso_totalMap_modulePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ClosedEmbeddingPushforwardColimits.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/ClosedEmbeddingPushforwardColimits.lean#L218). The attribute's comment: “f\_* commutes with the totalization of an unbounded bicomplex”.
 
 > **`f_*` commutes with the total complex of a bicomplex** when `f` is a homeomorphism onto a
 > closed subset: the comparison `Tot(f_* K) ⟶ f_* Tot(K)` of

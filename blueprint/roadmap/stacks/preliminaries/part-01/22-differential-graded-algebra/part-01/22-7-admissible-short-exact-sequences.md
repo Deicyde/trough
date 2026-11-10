@@ -84,7 +84,7 @@ structure IsAdmissibleShortExact {K L M : LeftModule A} (f : Hom K L) (g : Hom L
 
 [Tag 09JU](https://stacks.math.columbia.edu/tag/09JU) in the Stacks Project.
 
-**`DifferentialGradedModule.connectingHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/ConnectingHom.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/ConnectingHom.lean#L101). The attribute's comment: “clause (i): δ = π ∘ d_L ∘ s is a morphism M ⟶ K[1] of differential graded A-modules”.
+**`DifferentialGradedModule.connectingHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/ConnectingHom.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/ConnectingHom.lean#L101). The attribute's comment: “clause (i): δ = π ∘ d\_L ∘ s is a morphism M ⟶ K[1] of differential graded A-modules”.
 
 > The connecting homomorphism `M ⟶ K[1]` associated to graded splittings of an admissible short
 > exact sequence of differential graded modules, bundled with the formula `δ x = π (d_L (s x))`.

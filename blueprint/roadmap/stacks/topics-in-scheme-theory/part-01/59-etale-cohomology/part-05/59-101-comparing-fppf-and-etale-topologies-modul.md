@@ -14,7 +14,7 @@ Section 59.101 of the Stacks Project, [Tag 0DEV](https://stacks.math.columbia.ed
 
 [Tag 0DEW](https://stacks.math.columbia.edu/tag/0DEW) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.isSheaf_sectionsPresheafOfModules_baseOverTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseFullyFaithful.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseFullyFaithful.lean#L105). The attribute's comment: “clause (1) only: 𝓕ᵃ satisfies the sheaf condition for fppf and a fortiori étale coverings; 𝓕 on S_étale is the associated module of a quasi-coherent module on the scheme S, the source's first reduction”.
+**`AlgebraicGeometry.BigFppfOver.isSheaf_sectionsPresheafOfModules_baseOverTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseFullyFaithful.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseFullyFaithful.lean#L105). The attribute's comment: “clause (1) only: 𝓕ᵃ satisfies the sheaf condition for fppf and a fortiori étale coverings; 𝓕 on S\_étale is the associated module of a quasi-coherent module on the scheme S, the source's first reduction”.
 
 > **Stacks 03DT on each of the five big sites of `S`.**  The pullback-sections presheaf of
 > modules of a quasi-coherent module `F` on `S` is a sheaf for each of the five localized
@@ -32,7 +32,7 @@ public theorem isSheaf_sectionsPresheafOfModules_baseOverTopology (τ : SiteKind
       (sectionsPresheafOfModules B S hS F).presheaf
 ```
 
-**`AlgebraicGeometry.BigFppfOver.baseAssociatedSheafIsoPiPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FppfEtaleComparison/QuasiCoherentPullback.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FppfEtaleComparison/QuasiCoherentPullback.lean#L274). The attribute's comment: “clause (2) only: 𝓕ᵃ = π_S^*𝓕 on (Sch/S)_étale, with 𝓕 on S_étale the associated module of a quasi-coherent module on the scheme S as in the source's first reduction”.
+**`AlgebraicGeometry.BigFppfOver.baseAssociatedSheafIsoPiPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FppfEtaleComparison/QuasiCoherentPullback.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FppfEtaleComparison/QuasiCoherentPullback.lean#L274). The attribute's comment: “clause (2) only: 𝓕ᵃ = π\_S^*𝓕 on (Sch/S)\_étale, with 𝓕 on S\_étale the associated module of a quasi-coherent module on the scheme S as in the source's first reduction”.
 
 > **Stacks 0DEW, clause (2).**  On `(Sch/S)_étale` the associated module `𝓕ᵃ` of a
 > quasi-coherent module is the inverse image `π_S^*𝓕` of its associated module on `S_étale`, along
@@ -44,7 +44,7 @@ public def baseAssociatedSheafIsoPiPullback :
       baseAssociatedSheaf B S hS F .etale
 ```
 
-**`AlgebraicGeometry.BigFppfOver.baseAssociatedSheafIsoAPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FppfEtaleComparison/QuasiCoherentPullback.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FppfEtaleComparison/QuasiCoherentPullback.lean#L284). The attribute's comment: “clause (3) only: 𝓕ᵃ = a_S^*𝓕 on (Sch/S)_fppf, with 𝓕 on S_étale the associated module of a quasi-coherent module on the scheme S as in the source's first reduction”.
+**`AlgebraicGeometry.BigFppfOver.baseAssociatedSheafIsoAPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FppfEtaleComparison/QuasiCoherentPullback.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FppfEtaleComparison/QuasiCoherentPullback.lean#L284). The attribute's comment: “clause (3) only: 𝓕ᵃ = a\_S^*𝓕 on (Sch/S)\_fppf, with 𝓕 on S\_étale the associated module of a quasi-coherent module on the scheme S as in the source's first reduction”.
 
 > **Stacks 0DEW, clause (3).**  On `(Sch/S)_fppf` the associated module `𝓕ᵃ` of a
 > quasi-coherent module is the inverse image `a_S^*𝓕` of its associated module on `S_étale`, along
@@ -124,7 +124,7 @@ public theorem isZero_rightDerived_aPushforward (p : ℕ) (hp : 0 < p) :
       (baseAssociatedSheaf B S hS F .fppf))
 ```
 
-**`AlgebraicGeometry.smallEtaleBigEtaleQuasicoherentEquivalence'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSmallEtaleBigSite.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSmallEtaleBigSite.lean#L273). The attribute's comment: “clause (4): 𝓕 ↦ 𝓕ᵃ is an equivalence between QCoh(S_étale, 𝒪) and QCoh((Sch/S)_étale, 𝒪)”.
+**`AlgebraicGeometry.smallEtaleBigEtaleQuasicoherentEquivalence'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSmallEtaleBigSite.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSmallEtaleBigSite.lean#L273). The attribute's comment: “clause (4): 𝓕 ↦ 𝓕ᵃ is an equivalence between QCoh(S\_étale, 𝒪) and QCoh((Sch/S)\_étale, 𝒪)”.
 
 > **Stacks 0DEW, clause (4).**  The rule `𝓕 ↦ 𝓕^a` is an equivalence between the
 > quasi-coherent `𝒪_S`-modules on `S_étale` and the quasi-coherent modules on
@@ -146,7 +146,7 @@ public noncomputable def smallEtaleBigEtaleQuasicoherentEquivalence'
         (FibredSite.baseRingStructureSheaf BF S hF .etale)).FullSubcategory
 ```
 
-**`AlgebraicGeometry.smallEtaleBigFppfQuasicoherentEquivalence'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSmallEtaleBigSite.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSmallEtaleBigSite.lean#L310). The attribute's comment: “clause (5): 𝓕 ↦ 𝓕ᵃ is an equivalence between QCoh(S_étale, 𝒪) and QCoh((Sch/S)_fppf, 𝒪)”.
+**`AlgebraicGeometry.smallEtaleBigFppfQuasicoherentEquivalence'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSmallEtaleBigSite.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSmallEtaleBigSite.lean#L310). The attribute's comment: “clause (5): 𝓕 ↦ 𝓕ᵃ is an equivalence between QCoh(S\_étale, 𝒪) and QCoh((Sch/S)\_fppf, 𝒪)”.
 
 > **Stacks 0DEW, clause (5).**  The rule `𝓕 ↦ 𝓕^a` is an equivalence between the
 > quasi-coherent `𝒪_S`-modules on `S_étale` and the quasi-coherent modules on
@@ -232,7 +232,7 @@ public theorem isIso_derivedComparison
     IsIso (derivedComparison B A hS RGamma unit M)
 ```
 
-**`AlgebraicGeometry.BigAffineFppf.isIso_derivedComparison_totalRightDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/AffineBaseChangeDerivedExistence.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/AffineBaseChangeDerivedExistence.lean#L123). The attribute's comment: “the canonical map M^• ⟶ RΓ((Aff/S)_fppf, F^•) is a quasi-isomorphism, for the canonical total right derived functor of global sections -- no derived-functor parameter assumed”.
+**`AlgebraicGeometry.BigAffineFppf.isIso_derivedComparison_totalRightDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/AffineBaseChangeDerivedExistence.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/AffineBaseChangeDerivedExistence.lean#L123). The attribute's comment: “the canonical map M^• ⟶ RΓ((Aff/S)\_fppf, F^•) is a quasi-isomorphism, for the canonical total right derived functor of global sections -- no derived-functor parameter assumed”.
 
 > **Stacks 0H0U for the canonical derived functor.** The conclusion of
 > `AlgebraicGeometry.BigAffineFppf.isIso_derivedComparison` with no derived-functor parameter

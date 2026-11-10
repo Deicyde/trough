@@ -49,7 +49,7 @@ structure Hom (K L : SimplicialDerivedModuleSystem S O)
 
 [Tag 0D9P](https://stacks.math.columbia.edu/tag/0D9P) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.derivedModuleSystemData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystemOfObject.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystemOfObject.lean#L308). The attribute's comment: “the system (K_n, K(φ)) is a simplicial system of the derived category of modules”.
+**`CategoryTheory.SimplicialSiteSituation.derivedModuleSystemData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystemOfObject.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/DerivedModuleSystemOfObject.lean#L308). The attribute's comment: “the system (K\_n, K(φ)) is a simplicial system of the derived category of modules”.
 
 > **Stacks 0D9P.** The restrictions `K_n` of an object `K` of the derived category of
 > `O`-modules on the total site, together with the derived transitions `K(φ)`, form a simplicial
@@ -120,7 +120,7 @@ theorem pairDerivedModuleSystem_cartesian (Pr : S.DerivedModuleCocyclePair O) :
 
 [Tag 0D9Q](https://stacks.math.columbia.edu/tag/0D9Q) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.moduleResolutionTensorPostnikovSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionDerivedTensor.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionDerivedTensor.lean#L344). The attribute's comment: “part (1), the Postnikov system of - ⊗^L_O K”.
+**`CategoryTheory.SimplicialSiteSituation.moduleResolutionTensorPostnikovSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionDerivedTensor.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionDerivedTensor.lean#L344). The attribute's comment: “part (1), the Postnikov system of - ⊗^L\_O K”.
 
 > **Stacks 0D9Q(1).** For each length `N`, the triangles
 > `Yₙ₊₁ ⟶ Xₙ₊₁ ⟶ Yₙ ⟶ Yₙ₊₁[1]` with `Xₙ = (g_{n!}Oₙ) ⊗^L_O K` and
@@ -138,7 +138,7 @@ def moduleResolutionTensorPostnikovSystem (N : ℕ) :
       (fun i : Fin N => (derivedTensorRight R T K).map (moduleResolutionTermDiff D (i : ℕ)))
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.isHomotopyColimit_moduleResolutionTensorSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionDerivedTensor.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionDerivedTensor.lean#L360). The attribute's comment: “part (2), the homotopy colimit, K = hocolim Yₙ[n] for Yₙ = (…)[-n] ⊗^L_O K”.
+**`CategoryTheory.SimplicialSiteSituation.isHomotopyColimit_moduleResolutionTensorSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionDerivedTensor.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionDerivedTensor.lean#L360). The attribute's comment: “part (2), the homotopy colimit, K = hocolim Yₙ[n] for Yₙ = (…)[-n] ⊗^L\_O K”.
 
 > **Stacks 0D9Q(2).** `K = hocolim Yₙ[n]` in `D(O)`, where
 > `Yₙ = (g_{n!}Oₙ → … → g_{0!}O₀)[-n] ⊗^L_O K`.
@@ -154,7 +154,7 @@ theorem isHomotopyColimit_moduleResolutionTensorSystem :
     IsHomotopyColimit (moduleResolutionSystem D ⋙ derivedTensorRight R T K) K
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.map_moduleResolutionPostnikovSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionPostnikov.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionPostnikov.lean#L293). The attribute's comment: “part (1), the Postnikov system, for an exact functor in place of - ⊗^L_O K”.
+**`CategoryTheory.SimplicialSiteSituation.map_moduleResolutionPostnikovSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionPostnikov.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionPostnikov.lean#L293). The attribute's comment: “part (1), the Postnikov system, for an exact functor in place of - ⊗^L\_O K”.
 
 > **Stacks 0D9Q(1).** For an exact functor `T` of `D(O)` — such as `- ⊗^L_O K` for an object
 > `K` of `D(O)` — the images under `T` of the brutal-truncation triangles of the module
@@ -169,7 +169,7 @@ def map_moduleResolutionPostnikovSystem
       (fun i : Fin N => T.map (moduleResolutionTermDiff D (i : ℕ)))
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.isHomotopyColimit_map_moduleResolutionSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionPostnikov.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionPostnikov.lean#L305). The attribute's comment: “part (2), the homotopy colimit, for an exact functor in place of - ⊗^L_O K”.
+**`CategoryTheory.SimplicialSiteSituation.isHomotopyColimit_map_moduleResolutionSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionPostnikov.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleResolutionPostnikov.lean#L305). The attribute's comment: “part (2), the homotopy colimit, for an exact functor in place of - ⊗^L\_O K”.
 
 > **Stacks 0D9Q(2).** For an exact functor `T` of `D(O)` commuting with countable direct
 > sums — such as `- ⊗^L_O K` for an object `K` of `D(O)`, for which `T(O) = K` — the object

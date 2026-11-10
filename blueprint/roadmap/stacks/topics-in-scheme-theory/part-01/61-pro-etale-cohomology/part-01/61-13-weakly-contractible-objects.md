@@ -124,7 +124,7 @@ theorem affineIndEtaleProetale_hasEnough_quasiCompact_weaklyContractible [IsAffi
         (AffineIndEtaleProetale.topology B S).IsWeaklyContractible U)
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleOver.hasEnough_affine_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean#L134). The attribute's comment: “the big pro-étale site (Sch/S)_proétale”.
+**`AlgebraicGeometry.ProEtale.BigProetaleOver.hasEnough_affine_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean#L134). The attribute's comment: “the big pro-étale site (Sch/S)\_proétale”.
 
 > **Stacks 0990 for the big pro-étale site `(Sch/S)_proétale`.** Every object of the big
 > pro-étale site of `S` is covered by objects which are affine, quasi-compact objects of the site
@@ -144,7 +144,7 @@ theorem BigProetaleOver.hasEnough_affine_quasiCompact_weaklyContractible :
           (BigProetaleOver.topology B S hS).IsWeaklyContractible T)
 ```
 
-**`AlgebraicGeometry.ProEtale.SmallProetale.hasEnough_affine_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean#L159). The attribute's comment: “the small pro-étale site S_proétale”.
+**`AlgebraicGeometry.ProEtale.SmallProetale.hasEnough_affine_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean#L159). The attribute's comment: “the small pro-étale site S\_proétale”.
 
 > **Stacks 0990 for the small pro-étale site `S_proétale`.** Every object of the small
 > pro-étale site of `S` is covered by objects which are affine, quasi-compact objects of the site
@@ -165,7 +165,7 @@ theorem SmallProetale.hasEnough_affine_quasiCompact_weaklyContractible :
           (SmallProetale.topology B S hS).IsWeaklyContractible U)
 ```
 
-**`AlgebraicGeometry.ProEtale.BigAffineProetale.hasEnough_affine_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean#L336). The attribute's comment: “the big affine pro-étale site (Aff/S)_proétale”.
+**`AlgebraicGeometry.ProEtale.BigAffineProetale.hasEnough_affine_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean#L336). The attribute's comment: “the big affine pro-étale site (Aff/S)\_proétale”.
 
 > **Stacks 0990 for the big affine pro-étale site `(Aff/S)_proétale`.** Every object of the
 > big affine pro-étale site of `S` is covered by objects which are affine, quasi-compact objects
@@ -180,7 +180,7 @@ theorem BigAffineProetale.hasEnough_affine_quasiCompact_weaklyContractible :
           (BigAffineProetale.topology B S hS).IsWeaklyContractible U)
 ```
 
-**`AlgebraicGeometry.ProEtale.SmallAffineProetale.hasEnough_affine_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean#L439). The attribute's comment: “the affine small pro-étale site S_{affine, pro-étale}”.
+**`AlgebraicGeometry.ProEtale.SmallAffineProetale.hasEnough_affine_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean#L439). The attribute's comment: “the affine small pro-étale site S\_\{affine, pro-étale}”.
 
 > **Stacks 0990 for the affine small pro-étale site `S_{affine, proétale}`.** Every object of
 > the affine small pro-étale site of `S` is covered by objects which are affine, quasi-compact

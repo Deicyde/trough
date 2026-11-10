@@ -35,8 +35,8 @@ public theorem injective_restriction_surjective
 
 > **Stacks Project, Tag 01EB (Mayer--Vietoris), in the right-derived model of cohomology.**
 > Every six-term window
-> `H^n(X,F) ⟶ H^n(U,F) ⊞ H^n(V,F) ⟶ H^n(U ⊓ V,F) ⟶ H^{n+1}(X,F) ⟶ H^{n+1}(U,F) ⊞ H^{n+1}(V,F)
-> ⟶ H^{n+1}(U ⊓ V,F)` of the Mayer--Vietoris sequence is exact.  The two outer maps are the
+> `H^n(X,F) ⟶ H^n(U,F) ⊞ H^n(V,F) ⟶ H^n(U ⊓ V,F) ⟶ H^\{n+1}(X,F) ⟶ H^\{n+1}(U,F) ⊞ H^\{n+1}(V,F)
+> ⟶ H^\{n+1}(U ⊓ V,F)` of the Mayer--Vietoris sequence is exact.  The two outer maps are the
 > restriction maps, by `mvFirst_eq` and `mvSecond_eq`.
 
 ```lean

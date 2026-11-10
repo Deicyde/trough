@@ -139,7 +139,7 @@ public theorem map_eq_zero_iff_le_zeroOpen
       ((SmallEtale.toScheme B S hS).map f).opensRange ≤ zeroOpen B S hS F U s
 ```
 
-**`AlgebraicGeometry.supportSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSection.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSection.lean#L136). The attribute's comment: “support_section”.
+**`AlgebraicGeometry.supportSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSection.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSection.lean#L136). The attribute's comment: “support\_section”.
 
 > The support of a section is the complement of its maximal Zariski open
 > zero locus.
@@ -152,7 +152,7 @@ public def supportSection (B : BigEtaleSite.{u}) (S : Scheme.{u})
     Set ((SmallEtale.toScheme B S hS).obj U)
 ```
 
-**`AlgebraicGeometry.zero_restrict_iff_image_le_zeroOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSection.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSection.lean#L146). The attribute's comment: “support_section”.
+**`AlgebraicGeometry.zero_restrict_iff_image_le_zeroOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSection.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSection.lean#L146). The attribute's comment: “support\_section”.
 
 > On an open immersion, the section vanishes precisely when the image is
 > contained in the maximal zero open.
@@ -168,7 +168,7 @@ public theorem zero_restrict_iff_image_le_zeroOpen (B : BigEtaleSite.{u})
   ((SmallEtale.toScheme B S hS).map f).opensRange ≤ zeroOpen B S hS F U s
 ```
 
-**`AlgebraicGeometry.supportSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSheaf.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSheaf.lean#L76). The attribute's comment: “support_sheaf”.
+**`AlgebraicGeometry.supportSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSheaf.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSheaf.lean#L76). The attribute's comment: “support\_sheaf”.
 
 > The points of a scheme at which a geometric stalk of an abelian étale
 > sheaf is nonzero.
@@ -177,7 +177,7 @@ public theorem zero_restrict_iff_image_le_zeroOpen (B : BigEtaleSite.{u})
 public def supportSheaf : Set S
 ```
 
-**`AlgebraicGeometry.mem_supportSheaf_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSheaf.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSheaf.lean#L133). The attribute's comment: “support_sheaf”. References: SGA 4 VIII (6.6), “support of a sheaf”.
+**`AlgebraicGeometry.mem_supportSheaf_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSheaf.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SupportSheaf.lean#L133). The attribute's comment: “support\_sheaf”. References: SGA 4 VIII (6.6), “support of a sheaf”.
 
 > Nonvanishing of a stalk is independent of the geometric point above `x`.
 

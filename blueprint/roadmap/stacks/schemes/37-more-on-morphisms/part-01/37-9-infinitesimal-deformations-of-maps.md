@@ -129,7 +129,7 @@ theorem mapDifferenceSheaf_add (hi : IsFirstOrderThickening i) (hj : IsFirstOrde
         + mapDifferenceSheaf hi hj comm_a comm_b hC V t
 ```
 
-**`Stacks.Thickenings.mapDifferenceSheaf_appLE_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/MapDifferenceDerivationGlobal.lean, line 587](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/MapDifferenceDerivationGlobal.lean#L587). The attribute's comment: “D is 𝒪_S-linear”.
+**`Stacks.Thickenings.mapDifferenceSheaf_appLE_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/MapDifferenceDerivationGlobal.lean, line 587](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/MapDifferenceDerivationGlobal.lean#L587). The attribute's comment: “D is 𝒪\_S-linear”.
 
 > **`D` kills the sections pulled back from the base.** This is `𝒪_S`-linearity: a section of
 > `𝒪_S` over an open `Z` of `S` pulls back to a section of `𝒪_Y` over `j ⁻¹ᵁ V` for `V ≤ q ⁻¹ᵁ Z`,
@@ -556,7 +556,7 @@ def compatibleLiftsPresheafIsoLiftsOverBasePresheaf [IsIso j]
     compatibleLiftsPresheaf pX' pY' a A ≅ liftsOverBasePresheaf i j pX' pY' a
 ```
 
-**`Stacks.Thickenings.exists_simplyTransitive_addAction_liftsOverBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationUnthickenedTargetAction.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationUnthickenedTargetAction.lean#L166). The attribute's comment: “the action of Hom(a^*Ω_{Y/S}, 𝒞_{X/X'}) on the elementary lifting rule, with the group laws, the compatibility with restriction, and simple transitivity over an open carrying a lift”. References: SGA 3 XII (9.4), “partial”.
+**`Stacks.Thickenings.exists_simplyTransitive_addAction_liftsOverBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationUnthickenedTargetAction.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationUnthickenedTargetAction.lean#L166). The attribute's comment: “the action of Hom(a^*Ω\_\{Y/S}, 𝒞\_\{X/X'}) on the elementary lifting rule, with the group laws, the compatibility with restriction, and simple transitivity over an open carrying a lift”. References: SGA 3 XII (9.4), “partial”.
 
 > **The action clause of [Stacks Project, Tag 04FK].** Let `S` be a scheme, let `i : X ⟶ X'`
 > be a first order thickening, let `j : Y ⟶ Y'` be an isomorphism — the case `Y = Y'` of the
@@ -630,7 +630,7 @@ theorem eq_of_isBaseCompatibleConormalMap (sq : IsPullback j h h' k)
     (hB : IsBaseCompatibleConormalMap i j k h h' g' a sq.w ci B) : A = B
 ```
 
-**`Stacks.Thickenings.isBaseCompatibleConormalMap_of_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBase.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBase.lean#L284). The attribute's comment: “the composition g^*𝒞_{Z/Z'} ⟶ a^*𝒞_{Y/Y'} ⟶ 𝒞_{X/X'} is the canonical map induced by g', for the datum of a lift”.
+**`Stacks.Thickenings.isBaseCompatibleConormalMap_of_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBase.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBase.lean#L284). The attribute's comment: “the composition g^*𝒞\_\{Z/Z'} ⟶ a^*𝒞\_\{Y/Y'} ⟶ 𝒞\_\{X/X'} is the canonical map induced by g', for the datum of a lift”.
 
 > **The conormal datum of a lift over the base is compatible with the base.** For a morphism
 > `b : V ⟶ Y'` over `Z'` restricting to `a` on `i⁻¹V`, the canonical map of conormal sheaves of the
@@ -651,7 +651,7 @@ theorem isBaseCompatibleConormalMap_of_lift (sq : IsPullback j h h' k)
       (immersionConormalSheafMap (i ∣_ V) j ((i ⁻¹ᵁ V).ι ≫ a) b (toShHom_square hb₂))
 ```
 
-**`Stacks.Thickenings.isBaseCompatibleConormalMap_of_isCompatibleLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBase.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBase.lean#L313). The attribute's comment: “the composition g^*𝒞_{Z/Z'} ⟶ a^*𝒞_{Y/Y'} ⟶ 𝒞_{X/X'} has to be the canonical map induced by g', for the given datum: a datum with a compatible lift over an open is base compatible there”.
+**`Stacks.Thickenings.isBaseCompatibleConormalMap_of_isCompatibleLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBase.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBase.lean#L313). The attribute's comment: “the composition g^*𝒞\_\{Z/Z'} ⟶ a^*𝒞\_\{Y/Y'} ⟶ 𝒞\_\{X/X'} has to be the canonical map induced by g', for the given datum: a datum with a compatible lift over an open is base compatible there”.
 
 > **A conormal datum that admits a compatible lift is compatible with the base.** If some
 > morphism `b : V ⟶ Y'` out of an open `V` of `X'` is a compatible lift of `a` for the datum `A`,
@@ -719,7 +719,7 @@ def compatibleLiftsPresheafIsoLiftsOverBasePresheafOfBase (sq : IsPullback j h h
     compatibleLiftsPresheaf g' h' a A ≅ liftsOverBasePresheaf i j g' h' a
 ```
 
-**`Stacks.Thickenings.exists_simplyTransitive_addAction_liftsOverBaseOfBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBaseAction.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBaseAction.lean#L265). The attribute's comment: “the action of Hom(a^*Ω_{Y/Z}, 𝒞_{X/X'}) on the elementary lifting rule, with the group laws, the compatibility with restriction, and simple transitivity over an open carrying a lift”. References: SGA 3 XII (9.4), “partial”.
+**`Stacks.Thickenings.exists_simplyTransitive_addAction_liftsOverBaseOfBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBaseAction.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBaseAction.lean#L265). The attribute's comment: “the action of Hom(a^*Ω\_\{Y/Z}, 𝒞\_\{X/X'}) on the elementary lifting rule, with the group laws, the compatibility with restriction, and simple transitivity over an open carrying a lift”. References: SGA 3 XII (9.4), “partial”.
 
 > **The action clause of [Stacks Project, Tag 0CK2].** Let `k : Z ⟶ Z'` be an immersion, let
 > `i : X ⟶ X'` be a first order thickening and `j : Y ⟶ Y'` an immersion, both over `Z'` by
@@ -760,7 +760,7 @@ theorem exists_simplyTransitive_addAction_liftsOverBaseOfBase (hsq : i.ker ^ 2 =
           ∃! θ : deformationHomSections i a h V, act V θ b₀ = c₀
 ```
 
-**`Stacks.Thickenings.liftsOverBaseVAddOfBase_comp_of_homSectionValue_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBaseActionNaturality.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBaseActionNaturality.lean#L200). The attribute's comment: “the action of Hom(a^*Ω_{Y/Z}, 𝒞_{X/X'}) on the elementary lifting rule is natural in the thickening: for two situations of the tag with vertical maps, acting and pushing a lift forward commute, given the commuting square of Tag 04BZ for the two acting sections. This is naturality of the action, not a new construction of it”.
+**`Stacks.Thickenings.liftsOverBaseVAddOfBase_comp_of_homSectionValue_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBaseActionNaturality.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBaseActionNaturality.lean#L200). The attribute's comment: “the action of Hom(a^*Ω\_\{Y/Z}, 𝒞\_\{X/X'}) on the elementary lifting rule is natural in the thickening: for two situations of the tag with vertical maps, acting and pushing a lift forward commute, given the commuting square of Tag 04BZ for the two acting sections. This is naturality of the action, not a new construction of it”.
 
 > **The action of [Stacks Project, Tag 0CK2] on the elementary lifting rule is natural in the
 > thickening.** This is the input a statement about a *sum* of first-order deformations needs: the
@@ -813,7 +813,7 @@ theorem liftsOverBaseVAddOfBase_comp_of_homSectionValue_comm
       w ≫ (liftsOverBaseVAddOfBase hsq₁ sq₁ ci₁ hA₁ V₁ θ₁ c).1
 ```
 
-**`Stacks.Thickenings.isBaseCompatibleConormalMap_of_globalLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBaseGlobalLift.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBaseGlobalLift.lean#L83). The attribute's comment: “the composition g^*C_{Z/Z'} -> a^*C_{Y/Y'} -> C_{X/X'} is the canonical map induced by g', for the datum of a lift defined on all of X'”.
+**`Stacks.Thickenings.isBaseCompatibleConormalMap_of_globalLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBaseGlobalLift.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBaseGlobalLift.lean#L83). The attribute's comment: “the composition g^*C\_\{Z/Z'} -> a^*C\_\{Y/Y'} -> C\_\{X/X'} is the canonical map induced by g', for the datum of a lift defined on all of X'”.
 
 > **The conormal datum of a lift defined on all of `X'` is compatible with the base.** For a
 > morphism `b : X' ⟶ Y'` over `Z'` whose restriction along `i` is `a`, the square it forms with
@@ -833,7 +833,7 @@ theorem isBaseCompatibleConormalMap_of_globalLift (sq : IsPullback j h h' k)
       (immersionConormalSheafMap i j a b (toShHom_square hb₂))
 ```
 
-**`Stacks.Thickenings.exists_simplyTransitive_addAction_liftsOverBaseOfGlobalLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBaseGlobalLift.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBaseGlobalLift.lean#L110). The attribute's comment: “the simply transitive action of Hom(a^*Omega_{Y/Z}, C_{X/X'}) on the lifts of a over the whole space, with the conormal datum discharged by an actual lift”. References: SGA 3 XII (9.4), “partial”.
+**`Stacks.Thickenings.exists_simplyTransitive_addAction_liftsOverBaseOfGlobalLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBaseGlobalLift.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationThickenedBaseGlobalLift.lean#L110). The attribute's comment: “the simply transitive action of Hom(a^*Omega\_\{Y/Z}, C\_\{X/X'}) on the lifts of a over the whole space, with the conormal datum discharged by an actual lift”. References: SGA 3 XII (9.4), “partial”.
 
 > **The action clause of [Stacks Project, Tag 0CK2] over the whole space, from a lift.** Let
 > `k : Z ⟶ Z'` be an immersion, let `i : X ⟶ X'` be a first order thickening and `j : Y ⟶ Y'` an
@@ -908,7 +908,7 @@ theorem eq_of_isBaseCompatibleConormalMap_deformationConormalMap (φ : P ⟶ Q)
       (toShHom_square (specialMap_comp_map φ))
 ```
 
-**`Deformation.Examples.isBaseCompatibleConormalMap_baseChangeDeformationHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeDeformationConormalBaseChange.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeDeformationConormalBaseChange.lean#L378). The attribute's comment: “at the base change of a deformation: the conormal map of the arrow of a deformation onto its base change along a morphism of C_Lambda is a conormal datum compatible with the base. This is the general statement for an arrow of deformations instantiated at baseChangeDeformationHom, not a separate computation”.
+**`Deformation.Examples.isBaseCompatibleConormalMap_baseChangeDeformationHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeDeformationConormalBaseChange.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeDeformationConormalBaseChange.lean#L378). The attribute's comment: “at the base change of a deformation: the conormal map of the arrow of a deformation onto its base change along a morphism of C\_Lambda is a conormal datum compatible with the base. This is the general statement for an arrow of deformations instantiated at baseChangeDeformationHom, not a separate computation”.
 
 > **The conormal map of the arrow of a deformation onto its base change is compatible with the
 > base.** This is `Deformation.Examples.isBaseCompatibleConormalMap_deformationConormalMap` at
@@ -1013,7 +1013,7 @@ theorem derivationActionSheaf_comp_etaleLocalization
 
 [Tag 04BZ](https://stacks.math.columbia.edu/tag/04BZ) in the Stacks Project.
 
-**`Stacks.Thickenings.derivationAction_comp_of_derivation_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationGivenDerivation.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationGivenDerivation.lean#L130). The attribute's comment: “affine case, with the two actions of Tag 0CK1 constructed by Stacks.Thickenings.derivationAction; the remark for arbitrary schemes is Stacks.Thickenings.derivationActionSheaf_comp_of_derivationSection_comm”.
+**`Stacks.Thickenings.derivationAction_comp_of_derivation_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationGivenDerivation.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/InfinitesimalDeformationGivenDerivation.lean#L130). The attribute's comment: “affine case, with the two actions of Tag 0CK1 constructed by Stacks.Thickenings.derivationAction; the remark for arbitrary schemes is Stacks.Thickenings.derivationActionSheaf\_comp\_of\_derivationSection\_comm”.
 
 > **Acting by compatible derivation data commutes with the vertical maps**, the affine case of
 > [Stacks Project, Tag 04BZ]. Let `(h, h')` and `(f, f')` be the vertical maps of a diagram of

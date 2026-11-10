@@ -207,7 +207,7 @@ theorem exists_spectralSequence_of_boundedBelowFilteredComplex (X : RingedSpace.
 
 [Tag 0BKM](https://stacks.math.columbia.edu/tag/0BKM) in the Stacks Project.
 
-**`Stacks.Cohomology.FilteredComplex.exists_canonicalTruncationSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean#L210). The attribute's comment: “truncation_e1_page”.
+**`Stacks.Cohomology.FilteredComplex.exists_canonicalTruncationSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean#L210). The attribute's comment: “truncation\_e1\_page”.
 
 > **Stacks 0BKM.** For every complex of modules on a ringed space, the canonical truncation
 > filtration gives a spectral sequence with
@@ -219,7 +219,7 @@ theorem exists_canonicalTruncationSpectralSequence (X : RingedSpace.{u, u})
     Nonempty (CanonicalTruncationSpectralSequence X K)
 ```
 
-**`Stacks.Cohomology.FilteredComplex.exists_boundedBelowTruncationSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean, line 791](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean#L791). The attribute's comment: “truncation_e1_page”. References: EGA 0 (11.4.3), “''E₂, T = RΓ”; EGA 0 (12.4.1), “''E2, absolute case”.
+**`Stacks.Cohomology.FilteredComplex.exists_boundedBelowTruncationSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean, line 791](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean#L791). The attribute's comment: “truncation\_e1\_page”. References: EGA 0 (11.4.3), “''E₂, T = RΓ”; EGA 0 (12.4.1), “''E2, absolute case”.
 
 > **Stacks 0BKM, through Remark 0BKL.** For a bounded-below complex the canonical truncation
 > spectral sequence can also be built from a bounded-below filtered replacement whose filtration is
@@ -245,7 +245,7 @@ theorem exists_boundedBelowTruncationSpectralSequence (X : RingedSpace.{u, u})
                       (DerivedCategory.Q.obj K)))))
 ```
 
-**`Stacks.Cohomology.FilteredComplex.hypercohomologySpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean, line 872](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean#L872). The attribute's comment: “hypercohomology_e2_page”.
+**`Stacks.Cohomology.FilteredComplex.hypercohomologySpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean, line 872](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean#L872). The attribute's comment: “hypercohomology\_e2\_page”.
 
 > **Stacks 0BKM.** The hypercohomology spectral sequence of an object of the derived category
 > of module sheaves on a ringed space: take a representative, filter it by its canonical
@@ -257,7 +257,7 @@ def hypercohomologySpectralSequence (X : RingedSpace.{u, u})
     HypercohomologySpectralSequence X K
 ```
 
-**`Stacks.Cohomology.FilteredComplex.hypercohomologySpectralSequence_e₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean, line 882](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean#L882). The attribute's comment: “hypercohomology_e2_page”.
+**`Stacks.Cohomology.FilteredComplex.hypercohomologySpectralSequence_e₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean, line 882](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean#L882). The attribute's comment: “hypercohomology\_e2\_page”.
 
 > **Stacks 0BKM.** The second page of the hypercohomology spectral sequence is the
 > hypercohomology of the cohomology objects of `K`: `E_2^{i, j} = H^i(X, H^j(K))`.
@@ -274,7 +274,7 @@ theorem hypercohomologySpectralSequence_e₂ (X : RingedSpace.{u, u})
               (SheafOfModules.{u} (structureSheafRing X)) j).obj K))))
 ```
 
-**`Stacks.Cohomology.FilteredComplex.exists_boundedBelowHypercohomologySpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean, line 923](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean#L923). The attribute's comment: “bounded below: the renumbered sequence is bounded and converges to H^{i+j}(X, K)”. References: EGA 0 (11.4.3), “T = RΓ, bounded below”; EGA III (6.2.1), “absolute case, Y=point”; EGA 0 (12.4.1), “abutment, absolute case”.
+**`Stacks.Cohomology.FilteredComplex.exists_boundedBelowHypercohomologySpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean, line 923](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/HypercohomologySpectralSequence.lean#L923). The attribute's comment: “bounded below: the renumbered sequence is bounded and converges to H^\{i+j}(X, K)”. References: EGA 0 (11.4.3), “T = RΓ, bounded below”; EGA III (6.2.1), “absolute case, Y=point”; EGA 0 (12.4.1), “abutment, absolute case”.
 
 > **Stacks 0BKM, the closing clause.**  If `K^•` is bounded below, the renumbered spectral
 > sequence -- the one whose second page is `H^i(X, H^j(K^•))` -- is **bounded**, and it **converges
@@ -306,7 +306,7 @@ theorem exists_boundedBelowHypercohomologySpectralSequence (X : RingedSpace.{u, 
 
 [Tag 0FLK](https://stacks.math.columbia.edu/tag/0FLK) in the Stacks Project.
 
-**`Stacks.Cohomology.FilteredComplex.exists_stupidTruncationSpectralSequence_iso_cartanEilenbergFirst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/CartanEilenbergComparison.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/CartanEilenbergComparison.lean#L287). The attribute's comment: “bounded below: boundedness, convergence to H^{i + j}(X, F) and the identification with the first spectral sequence of Cartan-Eilenberg (Tag 015J) for one and the same package — the tag's three bounded-below assertions together”. References: EGA 0 (11.4.3), “'E, T = RΓ, bdd below”; EGA 0 (12.4.1), “'E abutment, absolute”; EGA 0 (12.1.7), “boundedness”.
+**`Stacks.Cohomology.FilteredComplex.exists_stupidTruncationSpectralSequence_iso_cartanEilenbergFirst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/CartanEilenbergComparison.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/CartanEilenbergComparison.lean#L287). The attribute's comment: “bounded below: boundedness, convergence to H^\{i + j}(X, F) and the identification with the first spectral sequence of Cartan-Eilenberg (Tag 015J) for one and the same package — the tag's three bounded-below assertions together”. References: EGA 0 (11.4.3), “'E, T = RΓ, bdd below”; EGA 0 (12.4.1), “'E abutment, absolute”; EGA 0 (12.1.7), “boundedness”.
 
 > **Clause (3) of [Stacks, Tag 0FLK] in the existential shape of clauses (1) and (2).** For a
 > bounded below complex of module sheaves there is a brutal-truncation package whose spectral
@@ -327,7 +327,7 @@ theorem exists_stupidTruncationSpectralSequence_iso_cartanEilenbergFirst
         Nonempty (S.spectralSequence ≅ cartanEilenbergFirstSpectralSequence X I)
 ```
 
-**`Stacks.Cohomology.FilteredComplex.exists_stupidTruncationSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/StupidTruncationSpectralSequence.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/StupidTruncationSpectralSequence.lean#L268). The attribute's comment: “for every complex of module sheaves: the brutal truncation filtration gives a spectral sequence with `E_1^{p, q} = H^{p + q}(X, F^p[-p]) = H^q(X, F^p)`. The tag's three further assertions concern F^• bounded below and are exists_boundedBelowStupidTruncationSpectralSequence and exists_stupidTruncationSpectralSequence_iso_cartanEilenbergFirst”.
+**`Stacks.Cohomology.FilteredComplex.exists_stupidTruncationSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/StupidTruncationSpectralSequence.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/StupidTruncationSpectralSequence.lean#L268). The attribute's comment: “for every complex of module sheaves: the brutal truncation filtration gives a spectral sequence with `E_1^{p, q} = H^{p + q}(X, F^p[-p]) = H^q(X, F^p)`. The tag's three further assertions concern F^• bounded below and are exists\_boundedBelowStupidTruncationSpectralSequence and exists\_stupidTruncationSpectralSequence\_iso\_cartanEilenbergFirst”.
 
 > **Stacks 0FLK.** For every complex of module sheaves on a ringed space, the brutal truncation
 > filtration `F^pF^• = σ_{≥ p}F^•` gives a spectral sequence with
@@ -339,7 +339,7 @@ theorem exists_stupidTruncationSpectralSequence (X : RingedSpace.{u, u})
     Nonempty (StupidTruncationSpectralSequence X F)
 ```
 
-**`Stacks.Cohomology.FilteredComplex.exists_boundedBelowStupidTruncationSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/StupidTruncationSpectralSequence.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/StupidTruncationSpectralSequence.lean#L293). The attribute's comment: “bounded below: the sequence is constructed via Remark 0BKL, is bounded and converges to H^{i + j}(X, F); the identification with the first spectral sequence of Cartan-Eilenberg (Tag 015J) is Stacks.Cohomology.FilteredComplex.exists_stupidTruncationSpectralSequence_iso_cartanEilenbergFirst”. References: EGA 0 (11.4.3), “'E, T = RΓ, bdd below”; EGA 0 (12.4.1), “'E abutment, absolute”.
+**`Stacks.Cohomology.FilteredComplex.exists_boundedBelowStupidTruncationSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/StupidTruncationSpectralSequence.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/FilteredComplexSpectralSequence/StupidTruncationSpectralSequence.lean#L293). The attribute's comment: “bounded below: the sequence is constructed via Remark 0BKL, is bounded and converges to H^\{i + j}(X, F); the identification with the first spectral sequence of Cartan-Eilenberg (Tag 015J) is Stacks.Cohomology.FilteredComplex.exists\_stupidTruncationSpectralSequence\_iso\_cartanEilenbergFirst”. References: EGA 0 (11.4.3), “'E, T = RΓ, bdd below”; EGA 0 (12.4.1), “'E abutment, absolute”.
 
 > **Stacks 0FLK, the bounded below case.** If `F^•` is bounded below, the brutal truncation
 > spectral sequence can be built through Remark [Stacks, Tag 0BKL], from a bounded below filtered

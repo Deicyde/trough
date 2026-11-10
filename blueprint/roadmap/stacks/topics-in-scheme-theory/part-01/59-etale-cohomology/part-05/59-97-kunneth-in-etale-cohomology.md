@@ -14,7 +14,7 @@ Section 59.97 of the Stacks Project, [Tag 0F13](https://stacks.math.columbia.edu
 
 [Tag 0F1E](https://stacks.math.columbia.edu/tag/0F1E) in the Stacks Project.
 
-**`Stacks.Cohomology.KunnethMapOnRingedTopoi.directImageMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean#L174). The attribute's comment: “the canonical map Rf_*E ⟶ Rc_*p⁻¹E”.
+**`Stacks.Cohomology.KunnethMapOnRingedTopoi.directImageMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/KunnethMap.lean#L174). The attribute's comment: “the canonical map Rf\_*E ⟶ Rc\_*p⁻¹E”.
 
 > **The canonical map `Rf_*E ⟶ Rc_*Lp^*E`** for a factorization `c = f ∘ p`: the adjoint
 > transpose, for `Lc^* ⊣ Rc_*`, of `pullbackDirectImageCounit`.
@@ -80,13 +80,13 @@ theorem kunnethMapOfCupProduct_eq_kunnethMapOfAdjoint :
 
 [Tag 0F14](https://stacks.math.columbia.edu/tag/0F14) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_etaleKunnethCompositeMap_zmod_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperKunneth/KunnethFiniteType.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperKunneth/KunnethFiniteType.lean#L68). The attribute's comment: “(2); on D((Spec k)_et, ℤ/nℤ), which global sections identify with D(ℤ/nℤ) for k separably closed, so that the direct images to Spec k are the derived global sections”. References: SGA 4½ Th finitude (1.11), “Künneth arrow RΓ(X”.
+**`Stacks.EtaleCohomology.isIso_etaleKunnethCompositeMap_zmod_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperKunneth/KunnethFiniteType.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperKunneth/KunnethFiniteType.lean#L68). The attribute's comment: “(2); on D((Spec k)\_et, ℤ/nℤ), which global sections identify with D(ℤ/nℤ) for k separably closed, so that the direct images to Spec k are the derived global sections”. References: SGA 4½ Th finitude (1.11), “Künneth arrow RΓ(X”.
 
 > **[Stacks, Tag 0F14] (2).** Let `k` be a separably closed field, `f : X ⟶ Spec k` proper,
 > `g : Y ⟶ Spec k` of finite type, and `n ≥ 1`. For `E ∈ D(X_étale, ℤ/nℤ)` and
 > `K ∈ D(Y_étale, ℤ/nℤ)`, unbounded, the Künneth map
-> `RΓ(X, E) ⊗^L_{ℤ/nℤ} RΓ(Y, K) = Rf_*E ⊗^L Rg_*K ⟶ R(pr₂ ≫ g)_*(pr₁⁻¹E ⊗^L pr₂⁻¹K)
-> = RΓ(X ×_k Y, pr₁⁻¹E ⊗^L pr₂⁻¹K)` in `D((Spec k)_étale, ℤ/nℤ) = D(ℤ/nℤ)` is an
+> `RΓ(X, E) ⊗^L\_\{ℤ/nℤ} RΓ(Y, K) = Rf\_*E ⊗^L Rg\_*K ⟶ R(pr₂ ≫ g)\_*(pr₁⁻¹E ⊗^L pr₂⁻¹K)
+> = RΓ(X ×\_k Y, pr₁⁻¹E ⊗^L pr₂⁻¹K)` in `D((Spec k)\_étale, ℤ/nℤ) = D(ℤ/nℤ)` is an
 > isomorphism.
 
 ```lean
@@ -99,13 +99,13 @@ theorem isIso_etaleKunnethCompositeMap_zmod_of_finiteType (n : ℕ) (hn : 0 < n)
       pullback.condition E K)
 ```
 
-**`Stacks.EtaleCohomology.isIso_etaleKunnethCompositeMap_of_isGE_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperKunneth/KunnethIntegral.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperKunneth/KunnethIntegral.lean#L69). The attribute's comment: “(1); on D((Spec k)_et, ℤ), which global sections identify with D(ℤ) for k separably closed, so that the direct images to Spec k are the derived global sections”.
+**`Stacks.EtaleCohomology.isIso_etaleKunnethCompositeMap_of_isGE_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperKunneth/KunnethIntegral.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperKunneth/KunnethIntegral.lean#L69). The attribute's comment: “(1); on D((Spec k)\_et, ℤ), which global sections identify with D(ℤ) for k separably closed, so that the direct images to Spec k are the derived global sections”.
 
 > **[Stacks, Tag 0F14] (1).** Let `k` be a separably closed field, `f : X ⟶ Spec k` proper and
 > `g : Y ⟶ Spec k` with `Y` quasi-compact and quasi-separated. Let `E ∈ D⁺(X_étale)` have torsion
 > cohomology sheaves and `K ∈ D⁺(Y_étale)`. Then the Künneth map
-> `RΓ(X, E) ⊗^L_ℤ RΓ(Y, K) = Rf_*E ⊗^L_ℤ Rg_*K ⟶ R(pr₂ ≫ g)_*(pr₁⁻¹E ⊗^L_ℤ pr₂⁻¹K)
-> = RΓ(X ×_k Y, pr₁⁻¹E ⊗^L_ℤ pr₂⁻¹K)` in `D((Spec k)_étale, ℤ) = D(ℤ)` is an isomorphism.
+> `RΓ(X, E) ⊗^L\_ℤ RΓ(Y, K) = Rf\_*E ⊗^L\_ℤ Rg\_*K ⟶ R(pr₂ ≫ g)\_*(pr₁⁻¹E ⊗^L\_ℤ pr₂⁻¹K)
+> = RΓ(X ×\_k Y, pr₁⁻¹E ⊗^L\_ℤ pr₂⁻¹K)` in `D((Spec k)\_étale, ℤ) = D(ℤ)` is an isomorphism.
 
 ```lean
 theorem isIso_etaleKunnethCompositeMap_of_isGE_of_isProper (k : Type u) [Field k]
@@ -322,8 +322,8 @@ theorem isIso_tensorBaseChangeMap_of_finiteType (K : Type u) [Field K] (n : ℕ)
 > closed field, `X` and `Y` schemes of finite type over `k` (through `f` and `g`), and `n ≥ 1` an
 > integer invertible in `k`. For `E ∈ D(X_étale, ℤ/nℤ)` and `K ∈ D(Y_étale, ℤ/nℤ)` the Künneth map
 >
-> `RΓ(X, E) ⊗^L_{ℤ/nℤ} RΓ(Y, K) = Rf_*E ⊗^L Rg_*K ⟶ R(pr₁ ≫ f)_*(pr₁⁻¹E ⊗^L pr₂⁻¹K)
->   = RΓ(X ×_k Y, pr₁⁻¹E ⊗^L pr₂⁻¹K)`
+> `RΓ(X, E) ⊗^L\_\{ℤ/nℤ} RΓ(Y, K) = Rf\_*E ⊗^L Rg\_*K ⟶ R(pr₁ ≫ f)\_*(pr₁⁻¹E ⊗^L pr₂⁻¹K)
+>   = RΓ(X ×\_k Y, pr₁⁻¹E ⊗^L pr₂⁻¹K)`
 >
 > is an isomorphism in `D((Spec k)_étale, ℤ/nℤ) = D(ℤ/nℤ)`.
 

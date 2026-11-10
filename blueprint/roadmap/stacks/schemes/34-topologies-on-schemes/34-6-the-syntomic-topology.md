@@ -175,7 +175,7 @@ public theorem BigSyntomicSite.exists_isCovering_tautologicallyEquivalent_openCo
           (V.map B.inclusion)
 ```
 
-**`AlgebraicGeometry.exists_siteCovering_refining`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/SiteRefinement.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/SiteRefinement.lean#L78). The attribute's comment: “site_refinement”.
+**`AlgebraicGeometry.exists_siteCovering_refining`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/SiteRefinement.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/SyntomicTopology/SiteRefinement.lean#L78). The attribute's comment: “site\_refinement”.
 
 > Every syntomic covering of an object of a big syntomic site admits a
 > refinement by a covering in the site.
@@ -268,7 +268,7 @@ public theorem BigAffineSyntomic.inclusion_isSpecialCocontinuous
 
 [Tag 04HD](https://stacks.math.columbia.edu/tag/04HD) in the Stacks Project.
 
-**`AlgebraicGeometry.bigSyntomicMorphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L111). The attribute's comment: “big_syntomic_morphism”.
+**`AlgebraicGeometry.bigSyntomicMorphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L111). The attribute's comment: “big\_syntomic\_morphism”.
 
 > **Stacks Project, Tag 04HD.** The big syntomic morphism of topoi attached
 > to `f : T ⟶ S` in a chosen big syntomic site. Its defining functor sends
@@ -280,7 +280,7 @@ public noncomputable def bigSyntomicMorphismOfTopoi : MorphismOfTopoi
     (Sheaf (BigSyntomicOver.topology B S.obj S.property) (Type (u + 1)))
 ```
 
-**`AlgebraicGeometry.bigSyntomicMorphismPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L133). The attribute's comment: “same_morphism”.
+**`AlgebraicGeometry.bigSyntomicMorphismPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L133). The attribute's comment: “same\_morphism”.
 
 > **Stacks Project, Tag 04HD.** The big syntomic morphism of topoi defined by postcomposition
 > along `f` is the morphism of topoi induced by the continuous base-change functor
@@ -294,7 +294,7 @@ public noncomputable def bigSyntomicMorphismPushforwardIso :
         (BigSyntomicOver.topology B T.obj T.property)
 ```
 
-**`AlgebraicGeometry.bigSyntomicLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L143). The attribute's comment: “lower_shriek”.
+**`AlgebraicGeometry.bigSyntomicLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L143). The attribute's comment: “lower\_shriek”.
 
 > **Stacks Project, Tag 04HD.** The lower shriek on big syntomic sheaves is left adjoint to
 > inverse image.
@@ -307,7 +307,7 @@ public noncomputable def bigSyntomicLowerShriekAdjunction :
         (bigSyntomicMorphismOfTopoi B f).inverseImage
 ```
 
-**`AlgebraicGeometry.bigSyntomicLowerShriek_preservesPullbacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L160). The attribute's comment: “lower_shriek”.
+**`AlgebraicGeometry.bigSyntomicLowerShriek_preservesPullbacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L160). The attribute's comment: “lower\_shriek”.
 
 > **Stacks Project, Tag 04HD.** The lower shriek preserves fibre products.
 
@@ -319,7 +319,7 @@ public theorem bigSyntomicLowerShriek_preservesPullbacks :
         (BigSyntomicOver.topology B S.obj S.property))
 ```
 
-**`AlgebraicGeometry.bigSyntomicLowerShriek_preservesEqualizers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L171). The attribute's comment: “lower_shriek”.
+**`AlgebraicGeometry.bigSyntomicLowerShriek_preservesEqualizers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L171). The attribute's comment: “lower\_shriek”.
 
 > **Stacks Project, Tag 04HD.** The lower shriek preserves equalizers.
 
@@ -334,10 +334,10 @@ public theorem bigSyntomicLowerShriek_preservesEqualizers :
 Declarations registered for the tag:
 
 - [`CategoryTheory.GrothendieckTopology.instIsCocontinuousOverMapOver`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.instIsCocontinuousOverMapOver#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L63) (StacksFrontier): “cocontinuity”.
-- [`CategoryTheory.Over.mapPullbackAdj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over.mapPullbackAdj#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L66) (StacksFrontier): “right_adjoint”.
-- [`CategoryTheory.GrothendieckTopology.instIsContinuousOverPullbackOver`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.instIsContinuousOverPullbackOver#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L67) (StacksFrontier): “right_adjoint”.
-- [`CategoryTheory.Functor.sheafPullbackCocontinuousIsoSheafPushforwardContinuous`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L139), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L70) (StacksFrontier): “inverse_image”.
-- [`CategoryTheory.Functor.sheafPushforwardCocontinuousIsoRestriction`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L229), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L73) (StacksFrontier): “direct_image”.
+- [`CategoryTheory.Over.mapPullbackAdj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over.mapPullbackAdj#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L66) (StacksFrontier): “right\_adjoint”.
+- [`CategoryTheory.GrothendieckTopology.instIsContinuousOverPullbackOver`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.instIsContinuousOverPullbackOver#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L67) (StacksFrontier): “right\_adjoint”.
+- [`CategoryTheory.Functor.sheafPullbackCocontinuousIsoSheafPushforwardContinuous`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L139), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L70) (StacksFrontier): “inverse\_image”.
+- [`CategoryTheory.Functor.sheafPushforwardCocontinuousIsoRestriction`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L229), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Syntomic/MorphismOfTopoi.lean#L73) (StacksFrontier): “direct\_image”.
 
 ## Depends on
 

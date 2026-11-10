@@ -14,7 +14,7 @@ Section 47.9 of the Stacks Project, [Tag 0952](https://stacks.math.columbia.edu/
 
 [Tag 0952](https://stacks.math.columbia.edu/tag/0952) in the Stacks Project.
 
-**`Stacks.LocalCohomology.powerTorsionComplexInjectiveResolutionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ModelComparison/InjectiveResolution.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/ModelComparison/InjectiveResolution.lean#L200). The attribute's comment: “RΓ_I(M) is the I-power-torsion subcomplex of an injective resolution”.
+**`Stacks.LocalCohomology.powerTorsionComplexInjectiveResolutionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/ModelComparison/InjectiveResolution.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/ModelComparison/InjectiveResolution.lean#L200). The attribute's comment: “RΓ\_I(M) is the I-power-torsion subcomplex of an injective resolution”.
 
 > **The `I`-power-torsion subcomplex of an injective resolution represents `RΓ_I(M)`.** Let `A`
 > be a commutative ring, `I ⊆ A` a finitely generated ideal and `M` an `A`-module, and let
@@ -81,7 +81,7 @@ noncomputable def localCohomologyFunctor
 
 [Tag 0A6R](https://stacks.math.columbia.edu/tag/0A6R) in the Stacks Project.
 
-**`Dualizing.localCohomologyRightAdjoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/RightAdjoint.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomology/RightAdjoint.lean#L103). The attribute's comment: “local_cohomology_right_adjoint”.
+**`Dualizing.localCohomologyRightAdjoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/RightAdjoint.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomology/RightAdjoint.lean#L103). The attribute's comment: “local\_cohomology\_right\_adjoint”.
 
 > **Stacks 0A6R, local cohomology right adjoint.** The inclusion of the derived category of
 > objects with `I`-power-torsion cohomology has a right adjoint. This construction supplies the
@@ -386,7 +386,7 @@ theorem localCohomology_comp_spectralSequence :
 
 Declarations registered for the tag:
 
-- [`PrimeSpectrum.zeroLocus_sup`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PrimeSpectrum.zeroLocus_sup#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/LocalCohomology.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomology.lean#L403) (StacksFrontier): “intersection_of_zero_loci”. References: EGA I (1.1.2), “(iii), special case”; EGA I (1.1.5), “special case”.
+- [`PrimeSpectrum.zeroLocus_sup`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PrimeSpectrum.zeroLocus_sup#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/LocalCohomology.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomology.lean#L403) (StacksFrontier): “intersection\_of\_zero\_loci”. References: EGA I (1.1.2), “(iii), special case”; EGA I (1.1.5), “special case”.
 
 ## Tag 0AM0, a lemma
 

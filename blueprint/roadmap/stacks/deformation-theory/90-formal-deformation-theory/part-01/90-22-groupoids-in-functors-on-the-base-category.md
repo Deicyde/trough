@@ -48,7 +48,7 @@ public noncomputable def completion {Λ : Type u} {k : Type w} [CommRing Λ]
 
 [Tag 06KF](https://stacks.math.columbia.edu/tag/06KF) in the Stacks Project.
 
-**`Deformation.GroupoidInFunctors.completionRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/Groupoid/CompletionRestrict.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Formal/Groupoid/CompletionRestrict.lean#L43). The attribute's comment: “completion_restrict”.
+**`Deformation.GroupoidInFunctors.completionRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/Groupoid/CompletionRestrict.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Formal/Groupoid/CompletionRestrict.lean#L43). The attribute's comment: “completion\_restrict”.
 
 > The canonical isomorphism from a completed groupoid, restricted back to
 > Artinian local algebras, to the original groupoid. Its two components are the
@@ -70,7 +70,7 @@ public noncomputable def completionRestrictIso
           (Λ := Λ) (k := k)).counit.app G.arrows }
 ```
 
-**`Deformation.GroupoidInFunctors.completionRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/Groupoid/RestrictCompletion.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Formal/Groupoid/RestrictCompletion.lean#L158). The attribute's comment: “restrict_completion”.
+**`Deformation.GroupoidInFunctors.completionRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/Groupoid/RestrictCompletion.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Formal/Groupoid/RestrictCompletion.lean#L158). The attribute's comment: “restrict\_completion”.
 
 > The canonical groupoid isomorphism from the completion of a restricted
 > limit-preserving groupoid to the original groupoid.

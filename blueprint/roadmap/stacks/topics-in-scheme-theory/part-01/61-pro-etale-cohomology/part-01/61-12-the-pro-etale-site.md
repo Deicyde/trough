@@ -527,7 +527,7 @@ public noncomputable def inclusionInverseImageIsoProjectionPushforward :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.ProEtale.smallProetaleToBigProetaleMorphism`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallToBigTopos.lean#L439), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallProjection.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallProjection.lean#L171) (StacksFrontier): “the inclusion i_S is i_id from 098P”.
+- [`AlgebraicGeometry.ProEtale.smallProetaleToBigProetaleMorphism`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallToBigTopos.lean#L439), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallProjection.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallProjection.lean#L171) (StacksFrontier): “the inclusion i\_S is i\_id from 098P”.
 
 ## Tag 098R, a definition
 
@@ -702,7 +702,7 @@ public noncomputable def smallProetaleMorphismFactorizationIso :
           (bigProetaleToSmallProetaleMorphism B S.obj S.property).pushforward
 ```
 
-**`AlgebraicGeometry.ProEtale.smallProetaleMorphismInclusionFactorizationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChange.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChange.lean#L352). The attribute's comment: “part (4), factorization through i_f”.
+**`AlgebraicGeometry.ProEtale.smallProetaleMorphismInclusionFactorizationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChange.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChange.lean#L352). The attribute's comment: “part (4), factorization through i\_f”.
 
 > Equivalently, the small morphism is `π_S ∘ i_f`.
 
@@ -717,7 +717,7 @@ public noncomputable def smallProetaleMorphismInclusionFactorizationIso :
 
 [Tag 0F60](https://stacks.math.columbia.edu/tag/0F60) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.bigSmallProetalePushforwardCommIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChange.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChange.lean#L299). The attribute's comment: “(f_big)_* F restricted to S_proet is (f_small)_* of F restricted to T_proet”.
+**`AlgebraicGeometry.ProEtale.bigSmallProetalePushforwardCommIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChange.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/SmallBaseChange.lean#L299). The attribute's comment: “(f\_big)\_* F restricted to S\_proet is (f\_small)\_* of F restricted to T\_proet”.
 
 > The square of small- and big-site morphisms commutes on direct images.
 

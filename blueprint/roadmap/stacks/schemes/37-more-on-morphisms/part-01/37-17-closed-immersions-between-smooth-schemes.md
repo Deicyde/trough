@@ -118,7 +118,7 @@ public theorem exceptionalDivisor_smooth (_hn : 0 < n) :
       Spec.map (CommRingCat.ofHom (C : R →+* MvPolynomial (Fin m ⊕ Fin n) R)))
 ```
 
-**`Stacks.MoreMorphisms.exists_coordinateReesPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateReesPresentation.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateReesPresentation.lean#L43). The attribute's comment: “the Rees algebra is A[T]/(y_i T_j - y_j T_i)”.
+**`Stacks.MoreMorphisms.exists_coordinateReesPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateReesPresentation.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CoordinateReesPresentation.lean#L43). The attribute's comment: “the Rees algebra is A[T]/(y\_i T\_j - y\_j T\_i)”.
 
 > The Rees algebra of `A = R[x₁,…,x_m,y₁,…,y_n]` with respect to the ideal `(y₁,…,y_n)` is
 > `A[T₁,…,T_n]/(y_i T_j − y_j T_i)`, with `T_i` going to the degree-one element `y_i`.

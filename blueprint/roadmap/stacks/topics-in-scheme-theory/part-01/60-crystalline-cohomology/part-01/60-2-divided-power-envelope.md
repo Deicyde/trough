@@ -30,7 +30,7 @@ public noncomputable def dividedPowerEnvelope (A : DividedPowerRing.{u}) {B : Ty
 
 [Tag 07H9](https://stacks.math.columbia.edu/tag/07H9) in the Stacks Project.
 
-**`Crystalline.dividedPowerEnvelope`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean#L166). The attribute's comment: “the divided power envelope D_{B,gamma}(J) of J in B relative to (A, I, gamma)”.
+**`Crystalline.dividedPowerEnvelope`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DividedPowerEnvelope/Quotient.lean#L166). The attribute's comment: “the divided power envelope D\_\{B,gamma}(J) of J in B relative to (A, I, gamma)”.
 
 > The divided power envelope of an ideal containing the extension of the base divided power
 > ideal. Its fields give the structural divided power morphism and the functorial universal Hom

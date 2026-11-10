@@ -48,7 +48,7 @@ def chowCohomologyAlgebraOfInvertible :
       (chowCohomologyRingOfInvertible C sX).toSemiring
 ```
 
-**`Stacks.Chow.ChowCohomologyGroup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyRing.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyRing.lean#L72). The attribute's comment: “the degree p component A^p(X) = A^p(X → X) of the Chow cohomology: the bivariant classes of degree p of Stacks 0B76 for id_X”.
+**`Stacks.Chow.ChowCohomologyGroup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyRing.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyRing.lean#L72). The attribute's comment: “the degree p component A^p(X) = A^p(X → X) of the Chow cohomology: the bivariant classes of degree p of Stacks 0B76 for id\_X”.
 
 > The group `A^p(X) = A^p(X ⟶ X)` of bivariant classes of degree `p` (Stacks 0B76) for the
 > identity morphism of `X`.
@@ -57,7 +57,7 @@ def chowCohomologyAlgebraOfInvertible :
 abbrev ChowCohomologyGroup (p : ℤ) : Type (u + 1)
 ```
 
-**`Stacks.Chow.ChowCohomologyGroup.instGRing`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyRing.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyRing.lean#L225). The attribute's comment: “the graded Z-algebra structure on A^*(X): the product of the degree p and q components is the composition A^p(X → X) × A^q(X → X) → A^{p+q}(X → X) of Stacks 0B75, associative and bilinear, with unit 1 ∈ A^0(X)”.
+**`Stacks.Chow.ChowCohomologyGroup.instGRing`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyRing.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyRing.lean#L225). The attribute's comment: “the graded Z-algebra structure on A^*(X): the product of the degree p and q components is the composition A^p(X → X) × A^q(X → X) → A^\{p+q}(X → X) of Stacks 0B75, associative and bilinear, with unit 1 ∈ A^0(X)”.
 
 > The family `p ↦ A^p(X)` is a graded ring: the product `A^p(X) × A^q(X) ⟶ A^{p+q}(X)` is the
 > composition of bivariant classes of Stacks 0B75, which is associative and bilinear, with unit the
@@ -67,7 +67,7 @@ abbrev ChowCohomologyGroup (p : ℤ) : Type (u + 1)
 instance instGRing : DirectSum.GRing (ChowCohomologyGroup C sX)
 ```
 
-**`Stacks.Chow.ChowCohomology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyRing.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyRing.lean#L279). The attribute's comment: “the Chow cohomology A^*(X): the graded Z-algebra ⊕_p A^p(X → X), with multiplication the composition of bivariant classes”.
+**`Stacks.Chow.ChowCohomology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyRing.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/ChowCohomologyRing.lean#L279). The attribute's comment: “the Chow cohomology A^*(X): the graded Z-algebra ⊕\_p A^p(X → X), with multiplication the composition of bivariant classes”.
 
 > The *Chow cohomology* `A^*(X)` of `X`: the graded `ℤ`-algebra `⊕_{p ∈ ℤ} A^p(X)` whose degree
 > `p` component is `A^p(X ⟶ X)`, with the multiplication of
@@ -371,7 +371,7 @@ def firstChernClassBivariantCanonical :
 
 [Tag 0B7B](https://stacks.math.columbia.edu/tag/0B7B) in the Stacks Project.
 
-**`Stacks.Chow.GenuineChern.comp_firstChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantFirstChernCentral.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantFirstChernCentral.lean#L75). The attribute's comment: “(2): c ∘ c_1(L) = c_1(f^*L) ∘ c in A^{p+1}(X' → X) for every f : X' → X locally of finite type and every bivariant class c in A^p(X' → X) of Stacks 0B76”.
+**`Stacks.Chow.GenuineChern.comp_firstChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantFirstChernCentral.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantFirstChernCentral.lean#L75). The attribute's comment: “(2): c ∘ c\_1(L) = c\_1(f^*L) ∘ c in A^\{p+1}(X' → X) for every f : X' → X locally of finite type and every bivariant class c in A^p(X' → X) of Stacks 0B76”.
 
 > **Stacks 0B7B (2).** Let `ℒ` be an invertible `𝒪_X`-module, let `f : X' ⟶ X` be locally of
 > finite type and let `c ∈ A^p(X' ⟶ X)` be a bivariant class. Then
@@ -394,7 +394,7 @@ theorem comp_firstChernClass {X' : Scheme.{u}} {sX' : X' ⟶ C.S} [LocallyOfFini
         (Iso.refl X') (by simp)
 ```
 
-**`Stacks.Chow.GenuineChern.firstChernClass_mem_center`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantFirstChernCentral.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantFirstChernCentral.lean#L92). The attribute's comment: “(1): c_1(L) in A^1(X) is in the center of the Chow cohomology ring A^*(X) of Stacks 0B7E, for the bivariant first Chern class of Stacks 0B77”.
+**`Stacks.Chow.GenuineChern.firstChernClass_mem_center`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantFirstChernCentral.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantFirstChernCentral.lean#L92). The attribute's comment: “(1): c\_1(L) in A^1(X) is in the center of the Chow cohomology ring A^*(X) of Stacks 0B7E, for the bivariant first Chern class of Stacks 0B77”.
 
 > **Stacks 0B7B (1).** The first Chern class `c₁(ℒ) ∈ A^1(X)` of an invertible `𝒪_X`-module lies
 > in the center of the Chow cohomology ring `A^*(X)` of Stacks 0B7E. The ring structure is an
@@ -491,7 +491,7 @@ theorem iteratedChernCapOnChow_ofFn_eq_zero_of_topologicalKrullDim_le (d : ℕ) 
       (List.ofFn fun i => invCap C q ((Scheme.Modules.pullback u).obj (N i))) k α = 0
 ```
 
-**`Stacks.Chow.iteratedChernCapOnChow_eq_zero_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernCapDimensionVanishing.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernCapDimensionVanishing.lean#L232). The attribute's comment: “the cap-product form on the test scheme X itself: a product of d+1 or more first Chern class cap operators annihilates every Chow class of X, for X locally of finite type over a Jacobson base whose dimension function vanishes at closed points and of topological dimension at most d. The product of first Chern classes is the iterated cap operation Stacks.Chow.iteratedChernCapOnChow on an arbitrary list of Stacks.Chow.ChernCapOperator, not a composite of bivariant classes: no such composite is constructed in this library, so the equality in A^{d+1}(X) that the source states has no term here. The ample invertible module of the source is not assumed, being used there only to reach Stacks 0AYM. Proved by a delta-dimension count — CH_k(X) is zero outside 0 ≤ k ≤ d — rather than by the induction on d of the source, so the same vanishing holds for every additive map of that bidegree”.
+**`Stacks.Chow.iteratedChernCapOnChow_eq_zero_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernCapDimensionVanishing.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernCapDimensionVanishing.lean#L232). The attribute's comment: “the cap-product form on the test scheme X itself: a product of d+1 or more first Chern class cap operators annihilates every Chow class of X, for X locally of finite type over a Jacobson base whose dimension function vanishes at closed points and of topological dimension at most d. The product of first Chern classes is the iterated cap operation Stacks.Chow.iteratedChernCapOnChow on an arbitrary list of Stacks.Chow.ChernCapOperator, not a composite of bivariant classes: no such composite is constructed in this library, so the equality in A^\{d+1}(X) that the source states has no term here. The ample invertible module of the source is not assumed, being used there only to reach Stacks 0AYM. Proved by a delta-dimension count — CH\_k(X) is zero outside 0 ≤ k ≤ d — rather than by the induction on d of the source, so the same vanishing holds for every additive map of that bidegree”.
 
 > **Stacks 0FDX, the cap-product form on `X` itself.** Let `X` be locally of finite type over
 > a Jacobson base whose dimension function vanishes at closed points, and let the topological
@@ -513,7 +513,7 @@ theorem iteratedChernCapOnChow_eq_zero_of_topologicalKrullDim_le {X : Scheme.{u}
     iteratedChernCapOnChow C p Os k α = 0
 ```
 
-**`Stacks.Chow.firstChernCapTower_eq_zero_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernCapDimensionVanishing.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernCapDimensionVanishing.lean#L289). The attribute's comment: “the conclusion for the product of the first Chern classes of the GIVEN invertible modules L_1, …, L_{d+1} on X: that product annihilates every Chow class of X, for X locally of finite type over a Jacobson base whose dimension function vanishes at closed points and of topological dimension at most d. The product is read as the composite of the Chow-group cap products Stacks.Chow.firstChernCapStep of the modules themselves — Stacks.Chow.firstChernCapTower — and NOT as an equality in A^{d+1}(X): no composite of bivariant classes is constructed in this library, so the source's conclusion has no term here. Carried: Stacks 02TI for each module, as the hypotheses InvertibleChernCapDescends, which by Stacks.Chow.firstChernClassCapFactorsThroughRationalEquivalence_iff are implied by the mere existence of the descended cap products and so are not a weakening. The ample invertible module of the source is not assumed, being used there only to reach Stacks 0AYM. Proved by a delta-dimension count — CH_k(X) is zero outside 0 ≤ k ≤ d — rather than by the induction on d of the source”.
+**`Stacks.Chow.firstChernCapTower_eq_zero_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernCapDimensionVanishing.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernCapDimensionVanishing.lean#L289). The attribute's comment: “the conclusion for the product of the first Chern classes of the GIVEN invertible modules L\_1, …, L\_\{d+1} on X: that product annihilates every Chow class of X, for X locally of finite type over a Jacobson base whose dimension function vanishes at closed points and of topological dimension at most d. The product is read as the composite of the Chow-group cap products Stacks.Chow.firstChernCapStep of the modules themselves — Stacks.Chow.firstChernCapTower — and NOT as an equality in A^\{d+1}(X): no composite of bivariant classes is constructed in this library, so the source's conclusion has no term here. Carried: Stacks 02TI for each module, as the hypotheses InvertibleChernCapDescends, which by Stacks.Chow.firstChernClassCapFactorsThroughRationalEquivalence\_iff are implied by the mere existence of the descended cap products and so are not a weakening. The ample invertible module of the source is not assumed, being used there only to reach Stacks 0AYM. Proved by a delta-dimension count — CH\_k(X) is zero outside 0 ≤ k ≤ d — rather than by the induction on d of the source”.
 
 > **Stacks 0FDX for the first Chern classes of given invertible modules.** Let `X` be locally
 > of finite type over a Jacobson base whose dimension function vanishes at closed points, and let
@@ -538,7 +538,7 @@ theorem firstChernCapTower_eq_zero_of_topologicalKrullDim_le {X : Scheme.{u}} (p
     firstChernCapTower C p n L hfac r α = 0
 ```
 
-**`Stacks.Chow.BivariantClass.cap_eq_zero_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernCapDimensionVanishing.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernCapDimensionVanishing.lean#L316). The attribute's comment: “the conclusion read on the test schemes of dimension at most d: every bivariant class of degree at least d+1 caps every Chow class of such a test scheme to zero, for a Jacobson base whose dimension function vanishes at closed points. This covers the test scheme X itself but not the test schemes of dimension larger than d, so it does not give the equality c = 0 in A^{d+1}(X) that the source states; and the class c is arbitrary of that degree rather than a composite of first Chern classes, no composite of bivariant classes being constructed in this library”.
+**`Stacks.Chow.BivariantClass.cap_eq_zero_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernCapDimensionVanishing.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernCapDimensionVanishing.lean#L316). The attribute's comment: “the conclusion read on the test schemes of dimension at most d: every bivariant class of degree at least d+1 caps every Chow class of such a test scheme to zero, for a Jacobson base whose dimension function vanishes at closed points. This covers the test scheme X itself but not the test schemes of dimension larger than d, so it does not give the equality c = 0 in A^\{d+1}(X) that the source states; and the class c is arbitrary of that degree rather than a composite of first Chern classes, no composite of bivariant classes being constructed in this library”.
 
 > **Stacks 0FDX on the test schemes of dimension at most `d`.** A bivariant class of degree at
 > least `d + 1` caps every Chow class of every test scheme of topological dimension at most `d` to
@@ -582,7 +582,7 @@ theorem firstChernClassProduct_eq_zero_of_topologicalKrullDim_le [QuasiCompact s
 
 [Tag 0FA0](https://stacks.math.columbia.edu/tag/0FA0) in the Stacks Project.
 
-**`Stacks.Chow.localizedBivariantGrading`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGrading.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGrading.lean#L53). The attribute's comment: “localized_bivariant_grading”.
+**`Stacks.Chow.localizedBivariantGrading`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGrading.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGrading.lean#L53). The attribute's comment: “localized\_bivariant\_grading”.
 
 > **Stacks 0FA0.** The group `A⁽ᵖ⁾(Z ⟶ X)` attached to a closed immersion `f : Z ⟶ X` of
 > schemes locally of finite type over the base: operational Chow classes on `X` in the degrees
@@ -769,7 +769,7 @@ theorem localizedBivariantGradingInternalMul_one_right_ofInvertible (p : ℕ) (h
         (localizedBivariantGradingOneOfInvertible C sX f p) = b
 ```
 
-**`Stacks.Chow.localizedMulBivariantChow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L246). The attribute's comment: “the pairing A^i(Z ⟶ X) × A^j(X) ⟶ A^{i+j}(Z ⟶ X) of the remark, composition of bivariant classes”.
+**`Stacks.Chow.localizedMulBivariantChow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L246). The attribute's comment: “the pairing A^i(Z ⟶ X) × A^j(X) ⟶ A^\{i+j}(Z ⟶ X) of the remark, composition of bivariant classes”.
 
 > The first of the three pairings: `A^i(Z ⟶ X) × A^j(X) ⟶ A^{i+j}(Z ⟶ X)`, composition of
 > bivariant classes, read through the equality `f ≫ 𝟙 X = f`.
@@ -779,7 +779,7 @@ def localizedMulBivariantChow (i j : ℤ) (c : BivariantClass C G (f ≫ sX) sX 
     (b : chowCohomologyComponent C G sX j) : BivariantClass C G (f ≫ sX) sX f rfl (i + j)
 ```
 
-**`Stacks.Chow.localizedMulChowBivariant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L322). The attribute's comment: “the pairing A^i(X) × A^j(Z ⟶ X) ⟶ A^{i+j}(Z ⟶ X) of the remark, the restriction A^i(X) ⟶ A^i(Z) of Stacks 0F9Z followed by composition”.
+**`Stacks.Chow.localizedMulChowBivariant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L322). The attribute's comment: “the pairing A^i(X) × A^j(Z ⟶ X) ⟶ A^\{i+j}(Z ⟶ X) of the remark, the restriction A^i(X) ⟶ A^i(Z) of Stacks 0F9Z followed by composition”.
 
 > The second of the three pairings: `A^i(X) × A^j(Z ⟶ X) ⟶ A^{i+j}(Z ⟶ X)`, the restriction
 > `Stacks.Chow.chowCohomologyRestriction : A^i(X) ⟶ A^i(Z)` followed by the composition
@@ -791,7 +791,7 @@ def localizedMulChowBivariant (i j : ℤ) (a : chowCohomologyComponent C G sX i)
     BivariantClass C G (f ≫ sX) sX f rfl (i + j)
 ```
 
-**`Stacks.Chow.localizedMulBivariant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L359). The attribute's comment: “the pairing A^i(Z ⟶ X) × A^j(Z ⟶ X) ⟶ A^{i+j}(Z ⟶ X) of the remark, (c, c') ↦ res(c) ∘ c' for the restriction res of Stacks 0F9Z”.
+**`Stacks.Chow.localizedMulBivariant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L359). The attribute's comment: “the pairing A^i(Z ⟶ X) × A^j(Z ⟶ X) ⟶ A^\{i+j}(Z ⟶ X) of the remark, (c, c') ↦ res(c) ∘ c' for the restriction res of Stacks 0F9Z”.
 
 > The third of the three pairings: `A^i(Z ⟶ X) × A^j(Z ⟶ X) ⟶ A^{i+j}(Z ⟶ X)`, sending
 > `(c, c')` to `res(c) ∘ c'` for the restriction
@@ -803,7 +803,7 @@ def localizedMulBivariant (i j : ℤ) (c : BivariantClass C G (f ≫ sX) sX f rf
     BivariantClass C G (f ≫ sX) sX f rfl (i + j)
 ```
 
-**`Stacks.Chow.localizedBivariantGradingMul`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L469). The attribute's comment: “the canonical multiplication A^(p)(Z ⟶ X) × A^(q)(Z ⟶ X) ⟶ A^(r)(Z ⟶ X) of the remark at every p, q and every target r, assembled degreewise from the three pairings and the pushforward of Stacks 0EPK; its associativity, which the source omits, is localizedBivariantGradingMul_assoc”.
+**`Stacks.Chow.localizedBivariantGradingMul`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L469). The attribute's comment: “the canonical multiplication A^(p)(Z ⟶ X) × A^(q)(Z ⟶ X) ⟶ A^(r)(Z ⟶ X) of the remark at every p, q and every target r, assembled degreewise from the three pairings and the pushforward of Stacks 0EPK; its associativity, which the source omits, is localizedBivariantGradingMul\_assoc”.
 
 > The multiplication `A⁽ᵖ⁾(Z ⟶ X) × A⁽ᑫ⁾(Z ⟶ X) ⟶ A⁽ʳ⁾(Z ⟶ X)` attached to a closed immersion
 > `f : Z ⟶ X` of schemes locally of finite type over the base, at every `p`, `q` and every target
@@ -834,7 +834,7 @@ def localizedBivariantGradingMulMax (p q : ℕ)
     localizedBivariantGrading C G (f ≫ sX) sX f rfl (max p q)
 ```
 
-**`Stacks.Chow.localizedBivariantGradingInternalMul`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L493). The attribute's comment: “the multiplication internal to A^(p)(Z ⟶ X) of the remark's graded algebra, for every p ≥ 0; it is graded, and additive in each argument by localizedBivariantGradingMul_add_left and _add_right”.
+**`Stacks.Chow.localizedBivariantGradingInternalMul`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L493). The attribute's comment: “the multiplication internal to A^(p)(Z ⟶ X) of the remark's graded algebra, for every p ≥ 0; it is graded, and additive in each argument by localizedBivariantGradingMul\_add\_left and \_add\_right”.
 
 > The multiplication internal to `A⁽ᵖ⁾(Z ⟶ X)`, for every `p ≥ 0`:
 > `Stacks.Chow.localizedBivariantGradingMul` at `r = p = q`.
@@ -892,7 +892,7 @@ theorem LocalizedGrading.IsMul.eq {p q r : ℕ}
     (hN : LocalizedGrading.IsMul C G sX f hRG hgysP hgys hgysc p q r N) : M = N
 ```
 
-**`Stacks.Chow.localizedMulBivariantChowOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 943](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L943). The attribute's comment: “the pairing A^i(Z ⟶ X) × A^j(X) ⟶ A^{i+j}(Z ⟶ X) of the remark, at the Gysin system of the first Chern class rule, with nothing assumed”.
+**`Stacks.Chow.localizedMulBivariantChowOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 943](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L943). The attribute's comment: “the pairing A^i(Z ⟶ X) × A^j(X) ⟶ A^\{i+j}(Z ⟶ X) of the remark, at the Gysin system of the first Chern class rule, with nothing assumed”.
 
 > The first pairing `A^i(Z ⟶ X) × A^j(X) ⟶ A^{i+j}(Z ⟶ X)` at the Gysin system
 > `Stacks.Chow.gysinSystemOfInvertible`, with no hypotheses.
@@ -904,7 +904,7 @@ def localizedMulBivariantChowOfInvertible (i j : ℤ)
     BivariantClass C (gysinSystemOfInvertible C) (f ≫ sX) sX f rfl (i + j)
 ```
 
-**`Stacks.Chow.localizedMulChowBivariantOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 955](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L955). The attribute's comment: “the pairing A^i(X) × A^j(Z ⟶ X) ⟶ A^{i+j}(Z ⟶ X) of the remark, at the Gysin system of the first Chern class rule, with nothing assumed”.
+**`Stacks.Chow.localizedMulChowBivariantOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 955](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L955). The attribute's comment: “the pairing A^i(X) × A^j(Z ⟶ X) ⟶ A^\{i+j}(Z ⟶ X) of the remark, at the Gysin system of the first Chern class rule, with nothing assumed”.
 
 > The second pairing `A^i(X) × A^j(Z ⟶ X) ⟶ A^{i+j}(Z ⟶ X)` at the Gysin system
 > `Stacks.Chow.gysinSystemOfInvertible`, with no hypotheses.
@@ -916,7 +916,7 @@ def localizedMulChowBivariantOfInvertible (i j : ℤ)
     BivariantClass C (gysinSystemOfInvertible C) (f ≫ sX) sX f rfl (i + j)
 ```
 
-**`Stacks.Chow.localizedMulBivariantOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 967](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L967). The attribute's comment: “the pairing A^i(Z ⟶ X) × A^j(Z ⟶ X) ⟶ A^{i+j}(Z ⟶ X) of the remark, at the Gysin system of the first Chern class rule, with nothing assumed”.
+**`Stacks.Chow.localizedMulBivariantOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 967](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L967). The attribute's comment: “the pairing A^i(Z ⟶ X) × A^j(Z ⟶ X) ⟶ A^\{i+j}(Z ⟶ X) of the remark, at the Gysin system of the first Chern class rule, with nothing assumed”.
 
 > The third pairing `A^i(Z ⟶ X) × A^j(Z ⟶ X) ⟶ A^{i+j}(Z ⟶ X)`, `(c, c') ↦ res(c) ∘ c'`, at the
 > Gysin system `Stacks.Chow.gysinSystemOfInvertible`, with no hypotheses.
@@ -928,7 +928,7 @@ def localizedMulBivariantOfInvertible (i j : ℤ)
     BivariantClass C (gysinSystemOfInvertible C) (f ≫ sX) sX f rfl (i + j)
 ```
 
-**`Stacks.Chow.localizedBivariantGradingMulOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 982](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L982). The attribute's comment: “the canonical multiplication A^(p)(Z ⟶ X) × A^(q)(Z ⟶ X) ⟶ A^(r)(Z ⟶ X) of the remark at every p, q and every target r, at the Gysin system of the first Chern class rule, with NOTHING ASSUMED: every Gysin compatibility is discharged there and Stacks 02RG on Chow groups, which the pushforward of Stacks 0EPK costs, is a theorem of this repository; its associativity, which the source omits, is localizedBivariantGradingMulOfInvertible_assoc”.
+**`Stacks.Chow.localizedBivariantGradingMulOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean, line 982](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/LocalizedGradingMultiplication.lean#L982). The attribute's comment: “the canonical multiplication A^(p)(Z ⟶ X) × A^(q)(Z ⟶ X) ⟶ A^(r)(Z ⟶ X) of the remark at every p, q and every target r, at the Gysin system of the first Chern class rule, with NOTHING ASSUMED: every Gysin compatibility is discharged there and Stacks 02RG on Chow groups, which the pushforward of Stacks 0EPK costs, is a theorem of this repository; its associativity, which the source omits, is localizedBivariantGradingMulOfInvertible\_assoc”.
 
 > The multiplication `A⁽ᵖ⁾(Z ⟶ X) × A⁽ᑫ⁾(Z ⟶ X) ⟶ A⁽ʳ⁾(Z ⟶ X)`, at every `p`, `q` and every
 > target `r`, at the Gysin system `Stacks.Chow.gysinSystemOfInvertible`, with no hypotheses.

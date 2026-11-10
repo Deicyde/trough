@@ -36,7 +36,7 @@ public theorem globalSections_equivalence_finiteFreeSummand_finiteProjective :
 
 [Tag 0FPG](https://stacks.math.columbia.edu/tag/0FPG) in the Stacks Project.
 
-**`Stacks.Cohomology.InvertibleDerived.hasInvertibleModuleDecomposition_of_isInvertibleObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedClauseOneToTwo.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedClauseOneToTwo.lean#L124). The attribute's comment: “clause (1) implies clause (2): an invertible object of D(𝒪_X) has a locally finite invertible module decomposition”.
+**`Stacks.Cohomology.InvertibleDerived.hasInvertibleModuleDecomposition_of_isInvertibleObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedClauseOneToTwo.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedClauseOneToTwo.lean#L124). The attribute's comment: “clause (1) implies clause (2): an invertible object of D(𝒪\_X) has a locally finite invertible module decomposition”.
 
 > **The implication `(1) ⟹ (2)` of Stacks 0FPG.** If `M` is an invertible object of `D(𝒪_X)`,
 > there is a locally finite direct product decomposition `𝒪_X = ∏ 𝒪_n` and invertible
@@ -71,7 +71,7 @@ public theorem isInvertibleObject_tfae [inst : HasDerivedCategory.{d} (Mod X.she
           HasLocalInvertibleDegree M].TFAE)
 ```
 
-**`Stacks.Cohomology.InvertibleDerived.hasInvertibleModuleDecomposition_iff_hasLocalInvertibleDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedClauseThreeToTwo.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedClauseThreeToTwo.lean#L356). The attribute's comment: “if every stalk of 𝒪_X is a local ring, clauses (2) and (3) are equivalent”.
+**`Stacks.Cohomology.InvertibleDerived.hasInvertibleModuleDecomposition_iff_hasLocalInvertibleDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedClauseThreeToTwo.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedClauseThreeToTwo.lean#L356). The attribute's comment: “if every stalk of 𝒪\_X is a local ring, clauses (2) and (3) are equivalent”.
 
 > **Stacks 0FPG, the equivalence of clauses (2) and (3).** Let `(X, 𝒪_X)` be a ringed space all
 > of whose stalks `𝒪_{X,x}` are local rings, and let `M` be an object of `D(𝒪_X)`. Then `M` admits a
@@ -87,7 +87,7 @@ public theorem hasInvertibleModuleDecomposition_iff_hasLocalInvertibleDegree
     HasInvertibleModuleDecomposition X M ↔ HasLocalInvertibleDegree M
 ```
 
-**`Stacks.Cohomology.InvertibleDerived.isInvertibleObject_of_hasInvertibleModuleDecomposition_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedFlatRestrictScalars.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedFlatRestrictScalars.lean#L85). The attribute's comment: “clause (2) implies clause (1): a locally finite invertible module decomposition of M makes M an invertible object of D(𝒪_X) for the derived tensor product of Stacks 0FPB”.
+**`Stacks.Cohomology.InvertibleDerived.isInvertibleObject_of_hasInvertibleModuleDecomposition_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedFlatRestrictScalars.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedFlatRestrictScalars.lean#L85). The attribute's comment: “clause (2) implies clause (1): a locally finite invertible module decomposition of M makes M an invertible object of D(𝒪\_X) for the derived tensor product of Stacks 0FPB”.
 
 > If `M` admits a locally finite invertible module decomposition, then `M` is an invertible
 > object of `D(𝒪_X)`.
@@ -99,7 +99,7 @@ public theorem isInvertibleObject_of_hasInvertibleModuleDecomposition_unconditio
     IsInvertibleObject M
 ```
 
-**`Stacks.Cohomology.InvertibleDerived.HasInvertibleModuleDecomposition`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedObjects.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedObjects.lean#L317). The attribute's comment: “clause (2) as a condition on M: that there is a locally finite direct product decomposition 𝒪_X = ∏_{n ∈ ℤ} 𝒪_n and for each n an invertible 𝒪_n-module ℋ^n, in the sense of Stacks 01CS, with M = ⨁ ℋ^n[-n] in D(𝒪_X). This is the clause, not an implication between clauses; the decomposition itself is `ProductDecomposition`”.
+**`Stacks.Cohomology.InvertibleDerived.HasInvertibleModuleDecomposition`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedObjects.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedObjects.lean#L317). The attribute's comment: “clause (2) as a condition on M: that there is a locally finite direct product decomposition 𝒪\_X = ∏\_\{n ∈ ℤ} 𝒪\_n and for each n an invertible 𝒪\_n-module ℋ^n, in the sense of Stacks 01CS, with M = ⨁ ℋ^n[-n] in D(𝒪\_X). This is the clause, not an implication between clauses; the decomposition itself is `ProductDecomposition`”.
 
 > **Clause (2) of Stacks 0FPG.** There is a locally finite direct product decomposition
 > `𝒪_X = ∏_{n ∈ ℤ} 𝒪_n` of the structure sheaf and for each `n` an invertible `𝒪_n`-module
@@ -110,7 +110,7 @@ public theorem isInvertibleObject_of_hasInvertibleModuleDecomposition_unconditio
 public def HasInvertibleModuleDecomposition (M : DerivedModules X.sheaf) : Prop
 ```
 
-**`Stacks.Cohomology.InvertibleDerived.isPerfect_of_hasInvertibleModuleDecomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedObjects.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedObjects.lean#L432). The attribute's comment: “clause (2) implies that M is a perfect object of D(𝒪_X)”.
+**`Stacks.Cohomology.InvertibleDerived.isPerfect_of_hasInvertibleModuleDecomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedObjects.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedObjects.lean#L432). The attribute's comment: “clause (2) implies that M is a perfect object of D(𝒪\_X)”.
 
 > **Stacks 0FPG, the perfectness conclusion.** Let `(X, 𝒪_X)` be a ringed space and let `M`
 > be an object of `D(𝒪_X)`. If there is a locally finite direct product decomposition
@@ -128,7 +128,7 @@ public theorem isPerfect_of_hasInvertibleModuleDecomposition (M : DerivedModules
     @Stacks.Cohomology.PerfectComplexes.IsPerfect.{u, u, d} X inst M
 ```
 
-**`Stacks.Cohomology.InvertibleDerived.IsInvertibleObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedObjects.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedObjects.lean#L454). The attribute's comment: “clause (1) as a condition on M: that M is invertible in D(𝒪_X) in the sense of Stacks 0FFN, for the derived tensor product of Stacks 0FPB. This is the clause, not an implication between clauses”.
+**`Stacks.Cohomology.InvertibleDerived.IsInvertibleObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedObjects.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedObjects.lean#L454). The attribute's comment: “clause (1) as a condition on M: that M is invertible in D(𝒪\_X) in the sense of Stacks 0FFN, for the derived tensor product of Stacks 0FPB. This is the clause, not an implication between clauses”.
 
 > **Clause (1) of Stacks 0FPG.** `M` is an invertible object of `D(𝒪_X)`: there is an object
 > `N` of `D(𝒪_X)` with `M ⊗^L N ≅ 𝒪_X` and `N ⊗^L M ≅ 𝒪_X`, the tensor product being the derived
@@ -138,7 +138,7 @@ public theorem isPerfect_of_hasInvertibleModuleDecomposition (M : DerivedModules
 public def IsInvertibleObject (M : DerivedModules X.sheaf) : Prop
 ```
 
-**`Stacks.Cohomology.InvertibleDerived.HasLocalInvertibleDegree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedObjects.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedObjects.lean#L515). The attribute's comment: “clause (3) as a condition on M: that there is an open covering X = ⋃ U_i and for each i an integer n_i with M|_{U_i} represented by an invertible 𝒪_{U_i}-module placed in degree n_i. The source's condition that every stalk 𝒪_{X,x} is a local ring belongs to the equivalence of (3) with the other clauses, which is hasInvertibleModuleDecomposition_iff_hasLocalInvertibleDegree”.
+**`Stacks.Cohomology.InvertibleDerived.HasLocalInvertibleDegree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedObjects.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InvertibleDerivedObjects.lean#L515). The attribute's comment: “clause (3) as a condition on M: that there is an open covering X = ⋃ U\_i and for each i an integer n\_i with M|\_\{U\_i} represented by an invertible 𝒪\_\{U\_i}-module placed in degree n\_i. The source's condition that every stalk 𝒪\_\{X,x} is a local ring belongs to the equivalence of (3) with the other clauses, which is hasInvertibleModuleDecomposition\_iff\_hasLocalInvertibleDegree”.
 
 > **Clause (3) of Stacks 0FPG.** `M` is represented by a complex which, on each member of
 > some open covering of `X`, is quasi-isomorphic to an invertible module placed in a single

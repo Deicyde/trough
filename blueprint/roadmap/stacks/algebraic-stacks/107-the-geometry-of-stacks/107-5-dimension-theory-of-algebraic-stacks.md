@@ -14,7 +14,7 @@ Section 107.5 of the Stacks Project, [Tag 0DRE](https://stacks.math.columbia.edu
 
 [Tag 0DRF](https://stacks.math.columbia.edu/tag/0DRF) in the Stacks Project.
 
-**`Stacks.Examples.DimensionVersusPointSet.dimensionAtPoint_translationQuotient_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DimensionVersusPointSet.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/DimensionVersusPointSet.lean#L371). The attribute's comment: “the first counterexample: 𝔸¹_k/ℤ has dimension 1 at every point”.
+**`Stacks.Examples.DimensionVersusPointSet.dimensionAtPoint_translationQuotient_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DimensionVersusPointSet.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/DimensionVersusPointSet.lean#L371). The attribute's comment: “the first counterexample: 𝔸¹\_k/ℤ has dimension 1 at every point”.
 
 > **Stacks 0DRF.** The dimension of `𝔸¹_k/ℤ` at each of its points is `1`: the affine line
 > is a surjective étale chart and has local dimension `1` at every point.
@@ -28,7 +28,7 @@ theorem dimensionAtPoint_translationQuotient_eq_one
         (isAlgebraicSpace_translationQuotient k B hS) x = 1
 ```
 
-**`Stacks.Examples.DimensionVersusPointSet.topologicalKrullDim_points_translationQuotient_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DimensionVersusPointSet.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/DimensionVersusPointSet.lean#L487). The attribute's comment: “the first counterexample: the point space of 𝔸¹_k/ℤ is of Krull dimension 0”.
+**`Stacks.Examples.DimensionVersusPointSet.topologicalKrullDim_points_translationQuotient_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DimensionVersusPointSet.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/DimensionVersusPointSet.lean#L487). The attribute's comment: “the first counterexample: the point space of 𝔸¹\_k/ℤ is of Krull dimension 0”.
 
 > **Stacks 0DRF.** The point space of `𝔸¹_k/ℤ` is of Krull dimension `0`, being
 > indiscrete.
@@ -190,7 +190,7 @@ noncomputable def relativeDimensionAt
 
 [Tag 0DRH](https://stacks.math.columbia.edu/tag/0DRH) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.relativeDimensionAt_eq_fieldFibreDimensionAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDimensionAtPoint.lean, line 1189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDimensionAtPoint.lean#L1189). The attribute's comment: “relative_dimension_well_defined”.
+**`AlgebraicGeometry.Stack.relativeDimensionAt_eq_fieldFibreDimensionAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDimensionAtPoint.lean, line 1189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDimensionAtPoint.lean#L1189). The attribute's comment: “relative\_dimension\_well\_defined”.
 
 > **The relative dimension `relativeDimensionAt` is well defined.** The value of the
 > formula of Stacks 0DRG at *every* field-valued point `p` representing the image of `t` and every
@@ -218,7 +218,7 @@ theorem relativeDimensionAt_eq_fieldFibreDimensionAt
         (isRepresentableByAlgebraicSpace_fibredCategory B S hS T hT) p q
 ```
 
-**`AlgebraicGeometry.Stack.relativeDimensionAt_eq_iff_hasRelativeDimensionAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDimensionAtPoint.lean, line 1312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDimensionAtPoint.lean#L1312). The attribute's comment: “relative_dimension_agrees_with_spaces”.
+**`AlgebraicGeometry.Stack.relativeDimensionAt_eq_iff_hasRelativeDimensionAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDimensionAtPoint.lean, line 1312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDimensionAtPoint.lean#L1312). The attribute's comment: “relative\_dimension\_agrees\_with\_spaces”.
 
 > **The relative dimension of Stacks 0DRG agrees with the relative dimension of a morphism of
 > algebraic spaces.** For a morphism `g : T ⟶ G` of algebraic spaces over `S`, the relative
@@ -421,7 +421,7 @@ theorem dimensionAtPoint_eq_topologicalKrullDimAt_of_isDeligneMumfordStack_of_qu
       dimensionSubNat (topologicalKrullDimAt (points B S hS 𝒳.val.val 𝒳.val.property) x) 0
 ```
 
-**`Stacks.Examples.AffineLineQuotient.affineLineQuotientStack_points_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Stacks/AffineLineQuotientDimension.lean, line 845](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Stacks/AffineLineQuotientDimension.lean#L845). The attribute's comment: “the example [A¹/Gₘ] over a field: |𝒳| has two points, one a specialisation of the other, |𝒳| has Krull dimension 1, and dim_x(𝒳) = 0 at both points”.
+**`Stacks.Examples.AffineLineQuotient.affineLineQuotientStack_points_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Stacks/AffineLineQuotientDimension.lean, line 845](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Stacks/AffineLineQuotientDimension.lean#L845). The attribute's comment: “the example [A¹/Gₘ] over a field: |𝒳| has two points, one a specialisation of the other, |𝒳| has Krull dimension 1, and dim\_x(𝒳) = 0 at both points”.
 
 > **Stacks 0DRK, the example `[𝔸¹/𝔾ₘ]`.** Over a field `k`, let `[𝔸¹/𝔾ₘ]` be the quotient stack
 > of the multiplicative group acting on the affine line by multiplication. It is an algebraic stack,
@@ -473,7 +473,7 @@ theorem classifyingStack_multiplicativeGroup_dimension {k : Type u} [Field k]
           Stack.dimensionAtPoint C (Spec (.of k)) hk 𝒳 h𝒳 x = ((-1 : ℤ) : EInt)
 ```
 
-**`Stacks.Examples.remark_0DRK`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Stacks/DimensionAtPointRemark.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Stacks/DimensionAtPointRemark.lean#L69). The attribute's comment: “the whole remark: dim_x(𝒳) = dim_x |𝒳| for decent (in particular quasi-separated) locally Noetherian Deligne-Mumford stacks; for [A¹/Gₘ] over a field |𝒳| has two points, one a specialisation of the other, |𝒳| has dimension 1 and dim_x(𝒳) = 0 at both points, so the equality fails; [Spec k/Gₘ] has dimension -1 at its unique point”.
+**`Stacks.Examples.remark_0DRK`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Stacks/DimensionAtPointRemark.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Stacks/DimensionAtPointRemark.lean#L69). The attribute's comment: “the whole remark: dim\_x(𝒳) = dim\_x |𝒳| for decent (in particular quasi-separated) locally Noetherian Deligne-Mumford stacks; for [A¹/Gₘ] over a field |𝒳| has two points, one a specialisation of the other, |𝒳| has dimension 1 and dim\_x(𝒳) = 0 at both points, so the equality fails; [Spec k/Gₘ] has dimension -1 at its unique point”.
 
 > **Stacks 0DRK.** The comparison of the dimension of an algebraic stack at a point (Stacks
 > 0AFN) with the local Krull dimension of its space of points.
@@ -1174,7 +1174,7 @@ theorem
               relativeStackDimensionAt.{u, w} B S hS f hf h𝒯 h𝒳 t
 ```
 
-**`AlgebraicGeometry.Stack.forall_dimension_le_closedSubstackDimension_add_relativeStackDimensionAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DimensionSchemeTheoreticImageInequality.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DimensionSchemeTheoreticImageInequality.lean#L122). The attribute's comment: “the inequality clause, for every f (no quasi-compactness), under the hypotheses of the statement in the Stacks Project other than quasi-compactness of f. The equality clause needs f quasi-compact and is registered on AlgebraicGeometry.Stack.dimension_le_add_and_exists_isOpen_dense_eq_add_relativeStackDimensionAt_of_isQuasiCompactMorphism; without quasi-compactness it is refuted by AlgebraicGeometry.Stack.not_forall_dimension_le_add_and_exists_isOpen_dense_eq”.
+**`AlgebraicGeometry.Stack.forall_dimension_le_closedSubstackDimension_add_relativeStackDimensionAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DimensionSchemeTheoreticImageInequality.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DimensionSchemeTheoreticImageInequality.lean#L122). The attribute's comment: “the inequality clause, for every f (no quasi-compactness), under the hypotheses of the statement in the Stacks Project other than quasi-compactness of f. The equality clause needs f quasi-compact and is registered on AlgebraicGeometry.Stack.dimension\_le\_add\_and\_exists\_isOpen\_dense\_eq\_add\_relativeStackDimensionAt\_of\_isQuasiCompactMorphism; without quasi-compactness it is refuted by AlgebraicGeometry.Stack.not\_forall\_dimension\_le\_add\_and\_exists\_isOpen\_dense\_eq”.
 
 > **The inequality clause of Stacks 0DS4, for every 1-morphism.** Let `f : 𝒯 ⟶ 𝒳` be a
 > 1-morphism locally of finite type of Jacobson, pseudo-catenary, locally Noetherian algebraic
@@ -1212,7 +1212,7 @@ theorem forall_dimension_le_closedSubstackDimension_add_relativeStackDimensionAt
 
 [Tag 0DS5](https://stacks.math.columbia.edu/tag/0DS5) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.classifyingStack_multiplicativeGroup_dimension_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ClassifyingStackMultiplicativeGroupExample.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ClassifyingStackMultiplicativeGroupExample.lean#L307). The attribute's comment: “the example [Spec k/G_m] → Spec k: it need not be that dim T ≥ dim Z, the fibres having negative dimension”.
+**`AlgebraicGeometry.Stack.classifyingStack_multiplicativeGroup_dimension_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ClassifyingStackMultiplicativeGroupExample.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ClassifyingStackMultiplicativeGroupExample.lean#L307). The attribute's comment: “the example [Spec k/G\_m] → Spec k: it need not be that dim T ≥ dim Z, the fibres having negative dimension”.
 
 > **Stacks 0DS5**, the example `[Spec k/𝐆_m] ⟶ Spec k`. Let `k` be a field. The classifying
 > stack `[Spec k/𝐆_m]` is an algebraic stack, of which a model `𝒬` in the 2-category of algebraic
@@ -1343,7 +1343,7 @@ theorem closedSubstackDimension_le_dimension_of_isQuasiCompactMorphism
     closedSubstackDimension B S hS 𝒳 P hP.1 hP.isAlgebraicStack h𝒳 ≤ dimension B S hS 𝒯 h𝒯
 ```
 
-**`AlgebraicGeometry.Stack.closedSubstackDimension_le_dimension_and_xor_relativeDimension_pos_of_ne_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DimensionSchemeTheoreticImage.lean, line 1330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DimensionSchemeTheoreticImage.lean#L1330). The attribute's comment: “the exactly-one form under the added hypothesis that dim T is finite; erratum: false as written when dim T = dim Z = infinity, machine-checked as AlgebraicGeometry.Stack.not_forall_xor_relativeDimension_pos (the affine line over N&lt;X>, N Nagata's ring; Fujita 1975, Brewer-Heinzer 1980), see the docstring”.
+**`AlgebraicGeometry.Stack.closedSubstackDimension_le_dimension_and_xor_relativeDimension_pos_of_ne_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DimensionSchemeTheoreticImage.lean, line 1330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DimensionSchemeTheoreticImage.lean#L1330). The attribute's comment: “the exactly-one form under the added hypothesis that dim T is finite; erratum: false as written when dim T = dim Z = infinity, machine-checked as AlgebraicGeometry.Stack.not\_forall\_xor\_relativeDimension\_pos (the affine line over N`<`X>, N Nagata's ring; Fujita 1975, Brewer-Heinzer 1980), see the docstring”.
 
 > **Stacks 0DS6**, for `𝒯` of finite dimension. Let `f : 𝒯 ⟶ 𝒳` be a quasi-compact, locally of
 > finite type 1-morphism of Jacobson, pseudo-catenary, locally Noetherian algebraic stacks over `S`

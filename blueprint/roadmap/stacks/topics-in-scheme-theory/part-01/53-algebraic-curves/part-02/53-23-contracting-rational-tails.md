@@ -14,7 +14,7 @@ Section 53.23 of the Stacks Project, [Tag 0E3G](https://stacks.math.columbia.edu
 
 [Tag 0E3H](https://stacks.math.columbia.edu/tag/0E3H) in the Stacks Project.
 
-**`Stacks.Curves.isProper_complementaryCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/ContractedCurve.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/ContractedCurve.lean#L86). The attribute's comment: “complementary_curve_is_proper”.
+**`Stacks.Curves.isProper_complementaryCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/ContractedCurve.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/ContractedCurve.lean#L86). The attribute's comment: “complementary\_curve\_is\_proper”.
 
 > **Stacks 0E3H.** The scheme-theoretic closure of the complement of a closed subscheme of a
 > proper scheme over a field is again proper over that field. For a rational tail this is the
@@ -27,7 +27,7 @@ theorem isProper_complementaryCurve
     IsProper (complementaryCurveι C ≫ (X ↘ Spec (.of k)))
 ```
 
-**`Stacks.Curves.topologicalKrullDim_complementaryCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/ContractedCurve.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/ContractedCurve.lean#L104). The attribute's comment: “complementary_curve_has_dimension_one”.
+**`Stacks.Curves.topologicalKrullDim_complementaryCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/ContractedCurve.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/ContractedCurve.lean#L104). The attribute's comment: “complementary\_curve\_has\_dimension\_one”.
 
 > **Stacks 0E3H.** The scheme-theoretic closure `X'` of the complement of a rational tail of
 > a proper one-dimensional curve over a field with only constant global functions is again of
@@ -43,7 +43,7 @@ theorem topologicalKrullDim_complementaryCurve
     topologicalKrullDim (complementaryCurve C) = 1
 ```
 
-**`Stacks.Curves.isIso_globalSections_complementaryCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/ContractedCurve.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/ContractedCurve.lean#L179). The attribute's comment: “complementary_curve_has_constant_global_functions”.
+**`Stacks.Curves.isIso_globalSections_complementaryCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/ContractedCurve.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/ContractedCurve.lean#L179). The attribute's comment: “complementary\_curve\_has\_constant\_global\_functions”.
 
 > **Stacks 0E3H.** The scheme-theoretic closure `X'` of the complement of a rational tail of
 > a proper one-dimensional nodal curve over a field with only constant global functions again has
@@ -61,7 +61,7 @@ theorem isIso_globalSections_complementaryCurve
       (complementaryCurveι C ≫ (X ↘ Spec (.of k))).appTop)
 ```
 
-**`Stacks.Curves.existsUnique_contractionOfRationalTail`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/Existence.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/Existence.lean#L195). The attribute's comment: “canonical_contraction”.
+**`Stacks.Curves.existsUnique_contractionOfRationalTail`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/Existence.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/Existence.lean#L195). The attribute's comment: “canonical\_contraction”.
 
 > **Stacks 0E3H.** A rational tail of a proper one-dimensional nodal curve over a field with
 > only constant global functions admits exactly one contraction onto the scheme-theoretic closure
@@ -80,7 +80,7 @@ theorem existsUnique_contractionOfRationalTail
     ∃! c : X ⟶ complementaryCurve C, IsContractionOfRationalTail hC c
 ```
 
-**`Stacks.Curves.isIso_structureSheaf_to_pushforward_canonicalContraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/Existence.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/Existence.lean#L246). The attribute's comment: “pushforward_structure_sheaf”.
+**`Stacks.Curves.isIso_structureSheaf_to_pushforward_canonicalContraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/Existence.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/Existence.lean#L246). The attribute's comment: “pushforward\_structure\_sheaf”.
 
 > **Stacks 0E3H.** The canonical contraction `c : X ⟶ X'` of a rational tail induces an
 > isomorphism `𝒪_{X'} ⟶ c_*𝒪_X` of sheaves of rings.
@@ -98,7 +98,7 @@ theorem isIso_structureSheaf_to_pushforward_canonicalContraction
     IsIso (canonicalContraction k X hdim hnodal C hC).toRingCatSheafHom
 ```
 
-**`Stacks.Curves.smoothAt_or_isNode_complementaryCurve_of_notMem_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/NodalAwayFromAttaching.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/NodalAwayFromAttaching.lean#L119). The attribute's comment: “at_worst_nodal_away_from_the_attaching_point”.
+**`Stacks.Curves.smoothAt_or_isNode_complementaryCurve_of_notMem_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/NodalAwayFromAttaching.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/NodalAwayFromAttaching.lean#L119). The attribute's comment: “at\_worst\_nodal\_away\_from\_the\_attaching\_point”.
 
 > **Stacks 0E3H, the at-worst-nodal singularities of `X'` away from the attaching point.** Let
 > `X` be a proper one-dimensional scheme over a field `k` with at-worst-nodal singularities and
@@ -122,7 +122,7 @@ theorem smoothAt_or_isNode_complementaryCurve_of_notMem_support
       IsNode k (complementaryCurve C) y
 ```
 
-**`Stacks.Curves.nodal_complementaryCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/SmoothAtAttaching.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/SmoothAtAttaching.lean#L499). The attribute's comment: “complementary_curve_has_at_worst_nodal_singularities”.
+**`Stacks.Curves.nodal_complementaryCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/SmoothAtAttaching.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CanonicalContraction/SmoothAtAttaching.lean#L499). The attribute's comment: “complementary\_curve\_has\_at\_worst\_nodal\_singularities”.
 
 > **Stacks 0E3H: the scheme-theoretic closure of the complement of a rational tail of a proper
 > one-dimensional nodal curve with only constant global functions again has at-worst-nodal
@@ -144,7 +144,7 @@ theorem nodal_complementaryCurve
     HasAtWorstNodalSingularities k (complementaryCurve C)
 ```
 
-**`Stacks.Curves.tail_inf_complementaryCurveIdeal_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ComplementaryCurve/SchemeTheoreticUnion.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ComplementaryCurve/SchemeTheoreticUnion.lean#L158). The attribute's comment: “scheme_theoretic_union”.
+**`Stacks.Curves.tail_inf_complementaryCurveIdeal_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ComplementaryCurve/SchemeTheoreticUnion.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ComplementaryCurve/SchemeTheoreticUnion.lean#L158). The attribute's comment: “scheme\_theoretic\_union”.
 
 > A rational tail `C` on a proper one-dimensional scheme over a field with at-worst-nodal
 > singularities and with only constant global functions, together with the scheme-theoretic closure
@@ -161,7 +161,7 @@ theorem tail_inf_complementaryCurveIdeal_eq_bot (k : Type u) [Field k] (X : Sche
     C ⊓ complementaryCurveIdeal C = ⊥
 ```
 
-**`Stacks.Curves.isNode_attachingPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalTails/AttachingPointNode.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalTails/AttachingPointNode.lean#L46). The attribute's comment: “attaching_point_is_node”.
+**`Stacks.Curves.isNode_attachingPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalTails/AttachingPointNode.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalTails/AttachingPointNode.lean#L46). The attribute's comment: “attaching\_point\_is\_node”.
 
 > **Stacks 0E3H.** The attaching point of a rational tail — where it meets the closure of
 > its complement — is a node of the ambient curve.
@@ -177,7 +177,7 @@ theorem isNode_attachingPoint
     IsNode k X (C.subschemeι hC.attachingPoint)
 ```
 
-**`Stacks.Curves.isFiniteSeparable_residueField_attachingPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalTails/AttachingPointNode.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalTails/AttachingPointNode.lean#L94). The attribute's comment: “finite_separable_residue_field”.
+**`Stacks.Curves.isFiniteSeparable_residueField_attachingPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalTails/AttachingPointNode.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalTails/AttachingPointNode.lean#L94). The attribute's comment: “finite\_separable\_residue\_field”.
 
 > **Stacks 0E3H.** At the attaching point of a rational tail, the extension of the residue
 > field by the residue field of the node (in the sense of `Stacks.Curves.IsNode`) is finite and
@@ -200,7 +200,7 @@ theorem isFiniteSeparable_residueField_attachingPoint
     Module.Finite k (X.residueField x) ∧ Algebra.IsSeparableExtension k (X.residueField x)
 ```
 
-**`AlgebraicGeometry.IsContractionOfRationalTail`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalTails/Contraction.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalTails/Contraction.lean#L63). The attribute's comment: “contraction_of_a_rational_tail”.
+**`AlgebraicGeometry.IsContractionOfRationalTail`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalTails/Contraction.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalTails/Contraction.lean#L63). The attribute's comment: “contraction\_of\_a\_rational\_tail”.
 
 > A morphism contracting a rational tail onto its complementary curve.
 
@@ -210,7 +210,7 @@ def IsContractionOfRationalTail {k : Type u} [Field k] {X : Scheme.{u}}
     (c : X ⟶ complementaryCurve C) : Prop
 ```
 
-**`AlgebraicGeometry.IsRationalTail`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalTails/RationalTail.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalTails/RationalTail.lean#L72). The attribute's comment: “rational_tail”.
+**`AlgebraicGeometry.IsRationalTail`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalTails/RationalTail.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ContractingRationalTails/RationalTail.lean#L72). The attribute's comment: “rational\_tail”.
 
 > An integral irreducible component `C` of a scheme over `k` is a rational tail when the
 > closure of its complement is nonempty, its intersection with `C` is one reduced point, the
@@ -222,7 +222,7 @@ def IsRationalTail (k : Type u) [Field k] (X : Scheme.{u}) [X.Over (Spec (.of k)
     (C : X.IdealSheafData) : Prop
 ```
 
-**`Stacks.Curves.genus_complementaryCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/DirectImage/RationalTailCohomologyIso.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/DirectImage/RationalTailCohomologyIso.lean#L254). The attribute's comment: “complementary_curve”.
+**`Stacks.Curves.genus_complementaryCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/DirectImage/RationalTailCohomologyIso.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/DirectImage/RationalTailCohomologyIso.lean#L254). The attribute's comment: “complementary\_curve”.
 
 > **Contracting a rational tail does not change the genus**: for `X` proper over `k` of
 > dimension one with at worst nodal singularities and only constant global functions, and `C ⊆ X`
@@ -248,7 +248,7 @@ theorem genus_complementaryCurve
     genus (complementaryCurveι C ≫ (X ↘ Spec (.of k))) = genus (X ↘ Spec (.of k))
 ```
 
-**`Stacks.Curves.isZero_rightDerived_one_pushforward_ambientStructureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/DirectImage/RationalTailHigherDirectImage.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/DirectImage/RationalTailHigherDirectImage.lean#L284). The attribute's comment: “higher_direct_image_vanishing”.
+**`Stacks.Curves.isZero_rightDerived_one_pushforward_ambientStructureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/DirectImage/RationalTailHigherDirectImage.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/DirectImage/RationalTailHigherDirectImage.lean#L284). The attribute's comment: “higher\_direct\_image\_vanishing”.
 
 > **`R ¹ c_* 𝒪_X = 0` for a contraction `c` of a rational tail on a nodal curve.**
 >

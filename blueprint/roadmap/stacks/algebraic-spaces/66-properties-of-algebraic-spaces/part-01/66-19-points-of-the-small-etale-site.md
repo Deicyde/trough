@@ -88,7 +88,7 @@ structure Hom (U V : EtaleNeighborhood B S hS F hF x)
 
 [Tag 04JW](https://stacks.math.columbia.edu/tag/04JW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.EtaleNeighborhood.exists_common_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleNeighborhood.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleNeighborhood.lean#L182). The attribute's comment: “common_refinement”.
+**`AlgebraicGeometry.Space.EtaleNeighborhood.exists_common_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleNeighborhood.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleNeighborhood.lean#L182). The attribute's comment: “common\_refinement”.
 
 > Two étale neighbourhoods of a geometric point have a common refinement.
 
@@ -97,7 +97,7 @@ theorem exists_common_refinement (U V : EtaleNeighborhood B S hS F hF x) :
     ∃ W : EtaleNeighborhood B S hS F hF x, Nonempty ((W ⟶ U) × (W ⟶ V))
 ```
 
-**`AlgebraicGeometry.Space.EtaleNeighborhood.exists_equalizing_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleNeighborhood.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleNeighborhood.lean#L227). The attribute's comment: “equalizing_refinement”.
+**`AlgebraicGeometry.Space.EtaleNeighborhood.exists_equalizing_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleNeighborhood.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleNeighborhood.lean#L227). The attribute's comment: “equalizing\_refinement”.
 
 > Two parallel morphisms of étale neighbourhoods of a geometric point are equalized by a
 > further étale neighbourhood.
@@ -107,7 +107,7 @@ theorem exists_equalizing_refinement {U V : EtaleNeighborhood B S hS F hF x} (h�
     ∃ (W : EtaleNeighborhood B S hS F hF x) (h : W ⟶ U), h ≫ h₁ = h ≫ h₂
 ```
 
-**`AlgebraicGeometry.Space.EtaleNeighborhood.exists_smallEtaleNeighborhood_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleNeighborhood.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleNeighborhood.lean#L318). The attribute's comment: “scheme_refinement, in the small étale site”.
+**`AlgebraicGeometry.Space.EtaleNeighborhood.exists_smallEtaleNeighborhood_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleNeighborhood.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleNeighborhood.lean#L318). The attribute's comment: “scheme\_refinement, in the small étale site”.
 
 > Every étale neighbourhood of a geometric point is refined by one coming from the small étale
 > site, i.e. by one in the image of `AlgebraicGeometry.Space.EtaleNeighborhood.ofSmallEtale`.
@@ -117,7 +117,7 @@ theorem exists_smallEtaleNeighborhood_refinement (U : EtaleNeighborhood B S hS F
     ∃ V : SmallEtaleNeighborhood x, Nonempty ((ofSmallEtale hF x).obj V ⟶ U)
 ```
 
-**`AlgebraicGeometry.Space.exists_scheme_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/GeometricPoints.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/GeometricPoints.lean#L167). The attribute's comment: “scheme_refinement”.
+**`AlgebraicGeometry.Space.exists_scheme_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/GeometricPoints.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/GeometricPoints.lean#L167). The attribute's comment: “scheme\_refinement”.
 
 > Every étale neighbourhood of a geometric point admits a refinement by a scheme.
 
@@ -427,7 +427,7 @@ theorem sheafSetStalk_preservesColimits (x : GeometricPoint B S hS X) :
 
 [Tag 04K2](https://stacks.math.columbia.edu/tag/04K2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.abelianPullback_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImage.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImage.lean#L73). The attribute's comment: “abelian_pullback_exact”.
+**`AlgebraicGeometry.Space.abelianPullback_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImage.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImage.lean#L73). The attribute's comment: “abelian\_pullback\_exact”.
 
 > **Stacks 04K2.** Pullback of sheaves of abelian groups along a morphism of algebraic
 > spaces is exact on the small étale sites.
@@ -440,7 +440,7 @@ theorem abelianPullback_exact :
       (abelianPullback B S hS f)
 ```
 
-**`AlgebraicGeometry.Space.smallEtalePullbackRepresentableNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImage.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImage.lean#L88). The attribute's comment: “representable_pullback”.
+**`AlgebraicGeometry.Space.smallEtalePullbackRepresentableNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImage.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImage.lean#L88). The attribute's comment: “representable\_pullback”.
 
 > **Stacks 04K2.** The inverse image of the small étale sheaf represented by an algebraic
 > space `V` étale over `Y` is the sheaf represented by the cartesian base change `X ×_Y V`,
@@ -462,7 +462,7 @@ noncomputable def smallEtalePullbackRepresentableNatIso :
         (SmallEtale.topology B S hS X.1) (SpacesEtale.topology B S hS X))
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleInverseImage_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImage.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImage.lean#L168). The attribute's comment: “sheaf_pullback_exact”.
+**`AlgebraicGeometry.Space.smallEtaleInverseImage_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImage.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImage.lean#L168). The attribute's comment: “sheaf\_pullback\_exact”.
 
 > **Stacks 04K2.** Pullback of sheaves of sets along a morphism of algebraic spaces is exact
 > on the small étale sites.
@@ -487,7 +487,7 @@ def smallEtaleInverseImageFiberIso :
         (etaleSitePoint B S hS X.1 x X.2).sheafFiber (A := Type u)
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleInverseImageStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImageStalk.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImageStalk.lean#L193). The attribute's comment: “stalk_pullback”.
+**`AlgebraicGeometry.Space.smallEtaleInverseImageStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImageStalk.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImageStalk.lean#L193). The attribute's comment: “stalk\_pullback”.
 
 > **Stacks 04K2, part (4).** For a morphism `f : X ⟶ Y` of algebraic spaces over `S` and a
 > geometric point `x` of `X`, the stalk at `x` of the small étale inverse image of a sheaf on `Y`
@@ -501,7 +501,7 @@ def smallEtaleInverseImageStalkIso (f : X ⟶ Y) (x : GeometricPoint B S hS X.1)
         stalkSetFunctor (geometricPointMap f.hom x)
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleAbelianInverseImageStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImageStalkAbelian.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImageStalkAbelian.lean#L256). The attribute's comment: “stalk_pullback, abelian sheaves”.
+**`AlgebraicGeometry.Space.smallEtaleAbelianInverseImageStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImageStalkAbelian.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleInverseImageStalkAbelian.lean#L256). The attribute's comment: “stalk\_pullback, abelian sheaves”.
 
 > **Stacks 04K2, part (4), for abelian sheaves.** For a morphism `f : X ⟶ Y` of algebraic
 > spaces over `S` with representable underlying morphism and a geometric point `x` of `X`, the

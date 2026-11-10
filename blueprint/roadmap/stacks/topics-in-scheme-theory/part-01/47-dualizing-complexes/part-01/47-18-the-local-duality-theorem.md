@@ -200,7 +200,7 @@ public theorem nonempty_localDualityNatIso
 
 [Tag 0AAK](https://stacks.math.columbia.edu/tag/0AAK) in the Stacks Project.
 
-**`Dualizing.LocalDuality.nonempty_adicCompletion_ext_linearEquiv_linearMap_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDualityExt.lean, line 771](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDualityExt.lean#L771). References: SGA 2 V (2.1), “Ext^{-i}≅Hom(H^i,E)”.
+**`Dualizing.LocalDuality.nonempty_adicCompletion_ext_linearEquiv_linearMap_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDualityExt.lean, line 771](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomology/LocalDualityExt.lean#L771). References: SGA 2 V (2.1), “Ext^\{-i}≅Hom(H^i,E)”.
 
 > Let `(A, 𝔪, κ)` be a Noetherian local ring, let `ω` be a normalized dualizing complex, let
 > `ι : κ ⟶ E` be an injective hull of the residue field, and let `K` be an object of `D_Coh(A)`,

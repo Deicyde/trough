@@ -258,7 +258,7 @@ theorem spectralSpace_of_isStableCompact [SpectralSpace X] (W : Set X) (h : IsSt
     SpectralSpace W
 ```
 
-**`SpectralSubset.exists_homeomorph_invLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean#L358). The attribute's comment: “conclusion (b): W ≅ lim U_i”.
+**`SpectralSubset.exists_homeomorph_invLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean#L358). The attribute's comment: “conclusion (b): W ≅ lim U\_i”.
 
 > Conclusion (b): the canonical map `W → InvLimit U` is a homeomorphism.
 
@@ -271,7 +271,7 @@ theorem exists_homeomorph_invLimit
       ∀ w : W, ∀ i, ((φ w).1 i : X) = (w : X)
 ```
 
-**`SpectralSubset.exists_subset_of_subset_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean#L396). The attribute's comment: “conclusion (c): some U_i ⊆ V”.
+**`SpectralSubset.exists_subset_of_subset_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Spectral/QuasiCompactOpenInter.lean#L396). The attribute's comment: “conclusion (c): some U\_i ⊆ V”.
 
 > Conclusion (c): with the family `U_i` from condition (5), every open
 > subset `V` of `X` containing `W` contains some `U_i`.

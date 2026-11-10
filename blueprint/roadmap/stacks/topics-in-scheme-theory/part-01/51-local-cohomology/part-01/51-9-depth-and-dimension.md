@@ -92,7 +92,7 @@ public theorem finite_setOf_depth_eq_and_lt_supportDim (X : Scheme.{u}) [IsNoeth
 
 [Tag 0DWZ](https://stacks.math.columbia.edu/tag/0DWZ) in the Stacks Project.
 
-**`Dualizing.annihilator_moduleExtInto_eq_annihilator_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualExtAnnihilator.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DualExtAnnihilator.lean#L200). The attribute's comment: “part (5): Ext^{-i}(M, ω) and H^i_m(M) have the same annihilator”.
+**`Dualizing.annihilator_moduleExtInto_eq_annihilator_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualExtAnnihilator.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DualExtAnnihilator.lean#L200). The attribute's comment: “part (5): Ext^\{-i}(M, ω) and H^i\_m(M) have the same annihilator”.
 
 > **Stacks Project, Tag 0DWZ, part (5).** Let `(A, 𝔪)` be a Noetherian local ring with a
 > normalized dualizing complex `ω`, and let `M` be a finite `A`-module. Then the dual Ext module
@@ -115,7 +115,7 @@ theorem annihilator_moduleExtInto_eq_annihilator_localCohomology
           ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj (ModuleCat.of A M)) i)
 ```
 
-**`Dualizing.moduleExtInto_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualExtDepthDimension.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DualExtDepthDimension.lean#L72). The attribute's comment: “part (1): each Ext^{-i}(M, ω) is a finite A-module”.
+**`Dualizing.moduleExtInto_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualExtDepthDimension.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DualExtDepthDimension.lean#L72). The attribute's comment: “part (1): each Ext^\{-i}(M, ω) is a finite A-module”.
 
 > **Stacks Project, Tag 0DWZ, part (1): finiteness.** For a finite module `M` over a
 > Noetherian local ring with normalized dualizing complex `ω`, every module
@@ -129,7 +129,7 @@ theorem moduleExtInto_finite {A : Type u} [CommRing A] [IsNoetherianRing A] [IsL
     Module.Finite A (moduleExtInto M K (-i))
 ```
 
-**`Dualizing.moduleExtInto_degree_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualExtDepthDimension.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DualExtDepthDimension.lean#L84). The attribute's comment: “part (1): Ext^{-i}(M, ω) vanishes outside 0 ≤ i ≤ dim Supp(M)”.
+**`Dualizing.moduleExtInto_degree_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualExtDepthDimension.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DualExtDepthDimension.lean#L84). The attribute's comment: “part (1): Ext^\{-i}(M, ω) vanishes outside 0 ≤ i ≤ dim Supp(M)”.
 
 > **Stacks Project, Tag 0DWZ, part (1): degree range.** For a finite module `M` over a
 > Noetherian local ring with normalized dualizing complex `ω`, the module
@@ -145,7 +145,7 @@ theorem moduleExtInto_degree_range {A : Type u} [CommRing A] [IsNoetherianRing A
     ∃ d : ℕ, Module.supportDim A M = (d : WithBot ℕ∞) ∧ i ∈ Set.Icc 0 (d : ℤ)
 ```
 
-**`Dualizing.supportDim_moduleExtInto_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualExtDepthDimension.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DualExtDepthDimension.lean#L104). The attribute's comment: “part (2): dim Supp(Ext^{-i}(M, ω)) ≤ i”.
+**`Dualizing.supportDim_moduleExtInto_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualExtDepthDimension.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DualExtDepthDimension.lean#L104). The attribute's comment: “part (2): dim Supp(Ext^\{-i}(M, ω)) ≤ i”.
 
 > **Stacks Project, Tag 0DWZ, part (2).** For a finite module `M` over a Noetherian local
 > ring with normalized dualizing complex `ω`, the support of `Eⁱ = Ext_A^{-i}(M, ω)` has
@@ -160,7 +160,7 @@ theorem supportDim_moduleExtInto_le {A : Type u} [CommRing A] [IsNoetherianRing 
       if 0 ≤ i then ((i.toNat : ℕ∞) : WithBot ℕ∞) else ⊥
 ```
 
-**`Dualizing.depth_eq_iInf_nontrivial_moduleExtInto`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualExtDepthDimension.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DualExtDepthDimension.lean#L122). The attribute's comment: “part (3): depth(M) is the least i with Ext^{-i}(M, ω) ≠ 0”.
+**`Dualizing.depth_eq_iInf_nontrivial_moduleExtInto`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualExtDepthDimension.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DualExtDepthDimension.lean#L122). The attribute's comment: “part (3): depth(M) is the least i with Ext^\{-i}(M, ω) ≠ 0”.
 
 > **Stacks Project, Tag 0DWZ, part (3).** For a finite module `M` over a Noetherian local
 > ring with normalized dualizing complex `ω`, the depth of `M` is the least `i ≥ 0` for which
@@ -175,7 +175,7 @@ theorem depth_eq_iInf_nontrivial_moduleExtInto {A : Type u} [CommRing A] [IsNoet
       ⨅ (i : ℕ) (_ : Nontrivial (moduleExtInto M K (-(i : ℤ)))), (i : ℕ∞)
 ```
 
-**`Dualizing.mem_support_pi_moduleExtInto_iff_depth_add_ringKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualExtSupportDepthCriterion.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DualExtSupportDepthCriterion.lean#L383). The attribute's comment: “part (4): p ∈ Supp(E⁰ ⊕ … ⊕ Eⁱ) ↔ depth(M_p) + dim(A/p) ≤ i”.
+**`Dualizing.mem_support_pi_moduleExtInto_iff_depth_add_ringKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DualExtSupportDepthCriterion.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DualExtSupportDepthCriterion.lean#L383). The attribute's comment: “part (4): p ∈ Supp(E⁰ ⊕ … ⊕ Eⁱ) ↔ depth(M\_p) + dim(A/p) ≤ i”.
 
 > **Stacks Project, Tag 0DWZ, part (4).** Let `(A, 𝔪)` be a Noetherian local ring with a
 > normalized dualizing complex `ω`, let `M` be a finite `A`-module and write

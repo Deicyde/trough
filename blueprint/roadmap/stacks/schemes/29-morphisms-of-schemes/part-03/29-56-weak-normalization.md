@@ -172,7 +172,7 @@ public theorem mem_relativeSeminormalization_localization_iff
 
 [Tag 0H3N](https://stacks.math.columbia.edu/tag/0H3N) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_initial_universalHomeomorphismFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeInitial.lean, line 1150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeInitial.lean#L1150). The attribute's comment: “weak_initial”.
+**`AlgebraicGeometry.exists_initial_universalHomeomorphismFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeInitial.lean, line 1150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RelativeInitial.lean#L1150). The attribute's comment: “weak\_initial”.
 
 > **Relative weak normalization** ([Stacks, Tag 0H3N]). A quasi-compact, quasi-separated,
 > dominant morphism `f : Y ⟶ X` has an initial factorization `Y ⟶ X' ⟶ X` with `X' ⟶ X` a universal
@@ -186,7 +186,7 @@ public theorem exists_initial_universalHomeomorphismFactorization
       Nonempty (Limits.IsInitial F) ∧ Nonempty F.AffineGluingData
 ```
 
-**`AlgebraicGeometry.weakNormalization_isPullback_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeWeakNormalizationOpen/Basic.lean, line 732](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeWeakNormalizationOpen/Basic.lean#L732). The attribute's comment: “weak_open”.
+**`AlgebraicGeometry.weakNormalization_isPullback_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeWeakNormalizationOpen/Basic.lean, line 732](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeWeakNormalizationOpen/Basic.lean#L732). The attribute's comment: “weak\_open”.
 
 > Relative weak normalization commutes with restriction to an open subscheme
 > of the target, as a factorization of the restricted morphism.

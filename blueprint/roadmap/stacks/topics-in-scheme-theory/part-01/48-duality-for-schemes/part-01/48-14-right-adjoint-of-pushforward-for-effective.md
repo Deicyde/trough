@@ -14,7 +14,7 @@ Section 48.14 of the Stacks Project, [Tag 0B4A](https://stacks.math.columbia.edu
 
 [Tag 0B4B](https://stacks.math.columbia.edu/tag/0B4B) in the Stacks Project.
 
-**`Stacks.Divisors.normalSheafShiftIsoDerivedSheafHomExactSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/EffectiveCartierDerivedSheafHomIso.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/EffectiveCartierDerivedSheafHomIso.lean#L527). The attribute's comment: “the isomorphism 𝒩[-1] ≅ R ℰom(𝒪_D, 𝒪_X), which is what the tag asserts; it is not identified with the canonical comparison morphism Stacks.Divisors.normalSheafShiftToDerivedSheafHomExactSupport”.
+**`Stacks.Divisors.normalSheafShiftIsoDerivedSheafHomExactSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/EffectiveCartierDerivedSheafHomIso.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/EffectiveCartierDerivedSheafHomIso.lean#L527). The attribute's comment: “the isomorphism 𝒩[-1] ≅ R ℰom(𝒪\_D, 𝒪\_X), which is what the tag asserts; it is not identified with the canonical comparison morphism Stacks.Divisors.normalSheafShiftToDerivedSheafHomExactSupport”.
 
 > **[Stacks, Tag 0B4B].** For `X` a scheme and `D ⊆ X` an effective Cartier divisor with
 > closed immersion `i : D ⟶ X` and normal sheaf `𝒩 = 𝒩_{D/X}`, there is an isomorphism
@@ -111,7 +111,7 @@ theorem derivedPullbackTensorSheafHomMap_unique
 
 [Tag 0AA4](https://stacks.math.columbia.edu/tag/0AA4) in the Stacks Project.
 
-**`Stacks.Divisors.normalTensorDerivedSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/EffectiveCartierDerivedSheafHom.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/EffectiveCartierDerivedSheafHom.lean#L270). The attribute's comment: “the canonical map Li^*K ⊗ᴸ 𝒩[-1] ⟶ R ℰom(𝒪_D, K) only, unconditionally; that the map is an isomorphism is not proved, since that needs the isomorphism assertion of Tag 0B4B, which this file states only as a map, and functoriality in K is not proved either”.
+**`Stacks.Divisors.normalTensorDerivedSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/EffectiveCartierDerivedSheafHom.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/EffectiveCartierDerivedSheafHom.lean#L270). The attribute's comment: “the canonical map Li^*K ⊗ᴸ 𝒩[-1] ⟶ R ℰom(𝒪\_D, K) only, unconditionally; that the map is an isomorphism is not proved, since that needs the isomorphism assertion of Tag 0B4B, which this file states only as a map, and functoriality in K is not proved either”.
 
 > **[Stacks, Tag 0AA4], the canonical map**
 >

@@ -55,7 +55,7 @@ theorem effectiveCartierIntersection_eq_firstChernClassCap_of_keyFormula
       firstChernClassCap C p k chernN fundamentalCycle
 ```
 
-**`Stacks.Chow.gysinHomomorphismOfInvertible_eq_firstChernClassCapOfInvertible_of_keyFormula`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ChernCapDivisor.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ChernCapDivisor.lean#L267). The attribute's comment: “the identity i^* div_N(t) = c₁(N|_D) ∩ [D]_{n-1} in A_{n-2}(D), the conclusion of the source, granting the rational equivalence `KeyFormulaRationalEquivalenceOnDivisor` that the key formula 0AYC exhibits on D — the last step of the source's proof — together with the divisor cycle div_N(t) of 02SJ and the fundamental cycle [D]_{n-1} read on D, each with its presentation by a locally finite family of integral closed subschemes of delta-dimension n-1, which is the second step of the source's proof”.
+**`Stacks.Chow.gysinHomomorphismOfInvertible_eq_firstChernClassCapOfInvertible_of_keyFormula`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ChernCapDivisor.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ChernCapDivisor.lean#L267). The attribute's comment: “the identity i^* div\_N(t) = c₁(N|\_D) ∩ [D]\_\{n-1} in A\_\{n-2}(D), the conclusion of the source, granting the rational equivalence `KeyFormulaRationalEquivalenceOnDivisor` that the key formula 0AYC exhibits on D — the last step of the source's proof — together with the divisor cycle div\_N(t) of 02SJ and the fundamental cycle [D]\_\{n-1} read on D, each with its presentation by a locally finite family of integral closed subschemes of delta-dimension n-1, which is the second step of the source's proof”.
 
 > **Stacks 02TM.** Let `X` be integral of delta-dimension `k + 2`, let `E` be an effective
 > Cartier divisor on `X` with closed immersion `i : E ⟶ X`, and let `N` be an invertible module on
@@ -172,7 +172,7 @@ theorem gysin_divisorOfMeromorphicSection_eq_firstChernClassCap (n : ℤ)
 theorem gysinOfInvertibleDescends (C : ChowSituation.{u}) : GysinOfInvertibleDescends C
 ```
 
-**`Stacks.Chow.gysinOfInvertibleFactorsThroughRationalEquivalence_of_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinRationalEquivalenceReduction.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GysinRationalEquivalenceReduction.lean#L208). The attribute's comment: “the Gysin map factors through rational equivalence, granted the single-component case the source's proof reduces to — the Gysin map kills the pushforward of div_V(f) for one integral V and one rational function f, which the source settles with Stacks 02TM, 02TI and 02SP. The reduction to that case, which the source performs with Stacks 02TA and 02S2, is proved”.
+**`Stacks.Chow.gysinOfInvertibleFactorsThroughRationalEquivalence_of_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinRationalEquivalenceReduction.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GysinRationalEquivalenceReduction.lean#L208). The attribute's comment: “the Gysin map factors through rational equivalence, granted the single-component case the source's proof reduces to — the Gysin map kills the pushforward of div\_V(f) for one integral V and one rational function f, which the source settles with Stacks 02TM, 02TI and 02SP. The reduction to that case, which the source performs with Stacks 02TA and 02S2, is proved”.
 
 > **Stacks 02TO from its single-component case.** If the Gysin map of the zero scheme of `s`
 > kills the pushforward of the principal divisor of a rational function on each single integral
@@ -187,7 +187,7 @@ theorem gysinOfInvertibleFactorsThroughRationalEquivalence_of_components
     GysinOfInvertibleFactorsThroughRationalEquivalence C p k L s
 ```
 
-**`Stacks.Chow.gysinHomomorphismOnChowOfInvertibleOfComponents`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinRationalEquivalenceReduction.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GysinRationalEquivalenceReduction.lean#L228). The attribute's comment: “the descended map i^* : A_{k+1}(X) ⟶ A_k(D), granted the single-component case the source's proof reduces to, as in `gysinOfInvertibleFactorsThroughRationalEquivalence_of_components`”.
+**`Stacks.Chow.gysinHomomorphismOnChowOfInvertibleOfComponents`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinRationalEquivalenceReduction.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GysinRationalEquivalenceReduction.lean#L228). The attribute's comment: “the descended map i^* : A\_\{k+1}(X) ⟶ A\_k(D), granted the single-component case the source's proof reduces to, as in `gysinOfInvertibleFactorsThroughRationalEquivalence_of_components`”.
 
 > **Stacks 02TO.** The Gysin homomorphism of the zero scheme of a global section of an
 > invertible module, descended to Chow groups,
@@ -222,7 +222,7 @@ theorem gysinOfInvertibleFactorsThroughRationalEquivalence :
     GysinOfInvertibleFactorsThroughRationalEquivalence C p k L s
 ```
 
-**`Stacks.Chow.gysinChowOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/GysinComponentDischarge.lean, line 853](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/GysinComponentDischarge.lean#L853). The attribute's comment: “the descended map i^* : A_{k+1}(X) ⟶ A_k(D), with no hypothesis: the single-component datum is proved, in `gysinOfInvertibleKillsPrincipalDivisorOnComponent`”.
+**`Stacks.Chow.gysinChowOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/GysinComponentDischarge.lean, line 853](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/KeyFormula/GysinComponentDischarge.lean#L853). The attribute's comment: “the descended map i^* : A\_\{k+1}(X) ⟶ A\_k(D), with no hypothesis: the single-component datum is proved, in `gysinOfInvertibleKillsPrincipalDivisorOnComponent`”.
 
 > **Stacks 02TO, with no hypothesis.** The Gysin homomorphism of the zero scheme `D = Z(s)` of a
 > global section of an invertible module, descended to Chow groups,
@@ -243,7 +243,7 @@ def gysinChowOfInvertible : chowGroup C p (k + 1) →+
 
 [Tag 0F95](https://stacks.math.columbia.edu/tag/0F95) in the Stacks Project.
 
-**`Stacks.Chow.gysinHomomorphismOfInvertible_properPushforward_subschemeι`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/SelfIntersection.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/SelfIntersection.lean#L280). The attribute's comment: “the identity i^* i_* α = c₁(L|_D) ∩ α in A_k(D), with i_* taken on cycles as in the source's proof, with no hypothesis”.
+**`Stacks.Chow.gysinHomomorphismOfInvertible_properPushforward_subschemeι`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/SelfIntersection.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/SelfIntersection.lean#L280). The attribute's comment: “the identity i^* i\_* α = c₁(L|\_D) ∩ α in A\_k(D), with i\_* taken on cycles as in the source's proof, with no hypothesis”.
 
 > **Stacks 0F95.** For the Gysin map of the zero scheme of a global section of an invertible
 > module `L`, the composite with the pushforward along `i` is intersection with the first Chern
@@ -261,7 +261,7 @@ def gysinChowOfInvertible : chowGroup C p (k + 1) →+
 alias gysinHomomorphismOfInvertible_properPushforward_subschemeι
 ```
 
-**`Stacks.Chow.gysinHomomorphismOnChowOfInvertible_properChowPushforward_subschemeι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/SelfIntersection.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/SelfIntersection.lean#L297). The attribute's comment: “the composite A_{k+1}(D) ⟶ A_k(D) of the descended operations, at any descent data h and hchernD; each is discharged by a theorem of this repository (Stacks 02TO and 02TI), so nothing is assumed”.
+**`Stacks.Chow.gysinHomomorphismOnChowOfInvertible_properChowPushforward_subschemeι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/SelfIntersection.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/SelfIntersection.lean#L297). The attribute's comment: “the composite A\_\{k+1}(D) ⟶ A\_k(D) of the descended operations, at any descent data h and hchernD; each is discharged by a theorem of this repository (Stacks 02TO and 02TI), so nothing is assumed”.
 
 > **Stacks 0F95, on Chow groups.** The composite
 > `i^* i_* : A_{k+1}(D) ⟶ A_k(D)` of the two descended operations of an invertible module `L` and a
@@ -344,7 +344,7 @@ theorem gysinChowOfInvertible_properChowPushforward_zeroSchemeι
         ((Scheme.Modules.pullback (Stacks.Divisors.zeroScheme X L s).subschemeι).obj L) α
 ```
 
-**`Stacks.Chow.gysinHomomorphismOfInvertible_properPushforward_zeroSchemeι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/SelfIntersectionFormula.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/SelfIntersectionFormula.lean#L358). The attribute's comment: “the identity i^* i_* α = c₁(L|_D) ∩ α in A_k(D), with i_* taken on cycles as in the source's proof”. References: SGA 5 VII (9.2), “Codimension d = 1”.
+**`Stacks.Chow.gysinHomomorphismOfInvertible_properPushforward_zeroSchemeι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/SelfIntersectionFormula.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/SelfIntersectionFormula.lean#L358). The attribute's comment: “the identity i^* i\_* α = c₁(L|\_D) ∩ α in A\_k(D), with i\_* taken on cycles as in the source's proof”. References: SGA 5 VII (9.2), “Codimension d = 1”.
 
 > **The self-intersection formula.** For the Gysin map of the zero scheme `i : D = Z(s) ⟶ X` of
 > a global section of an invertible module `L`, the composite with the pushforward along `i` is
@@ -391,7 +391,7 @@ theorem gysinNaturality_firstChernIdentityCapRule :
       (canonicalGysinSystem C)
 ```
 
-**`Stacks.Chow.GenuineChern.gysinChowOfInvertible_firstChernClassCapChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/GysinFirstChernCap.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/GysinFirstChernCap.lean#L82). The attribute's comment: “the identity i^* (c_1(N) cap a) = c_1(i^* N) cap i^* a on Chow groups, for every class a, stated for the descended operations of Stacks 02TO and 02TI that the library proves outright (`gysinChowOfInvertible`, `firstChernClassCapChow`); nothing about the Gysin map, the cap product or their descent is left over. The source proves the tag with the proof of Stacks 0B73 through Stacks 02TM on the integral components; here it is deduced from Stacks 0B73 itself for the pair `(L, s)` and the zero section of `N`, using Stacks 02T9 to read `j_* j^*` as the cap product and Stacks 02TA for the pushforward along `Z(0) = X ⟶ X`”.
+**`Stacks.Chow.GenuineChern.gysinChowOfInvertible_firstChernClassCapChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/GysinFirstChernCap.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/GysinFirstChernCap.lean#L82). The attribute's comment: “the identity i^* (c\_1(N) cap a) = c\_1(i^* N) cap i^* a on Chow groups, for every class a, stated for the descended operations of Stacks 02TO and 02TI that the library proves outright (`gysinChowOfInvertible`, `firstChernClassCapChow`); nothing about the Gysin map, the cap product or their descent is left over. The source proves the tag with the proof of Stacks 0B73 through Stacks 02TM on the integral components; here it is deduced from Stacks 0B73 itself for the pair `(L, s)` and the zero section of `N`, using Stacks 02T9 to read `j_* j^*` as the cap product and Stacks 02TA for the pushforward along `Z(0) = X ⟶ X`”.
 
 > Let `ℒ` be an invertible module on `X` with a global section `s` and zero scheme
 > `i : D = Z(s) ⟶ X`, and let `𝒩` be an invertible module on `X`. Then Gysin pullback along `i`
@@ -407,7 +407,7 @@ theorem gysinChowOfInvertible_firstChernClassCapChow (α : chowGroup C p (k + 1 
         (gysinChowOfInvertible C p (k + 1) L s α)
 ```
 
-**`Stacks.Chow.gysinChowOfInvertible_firstChernClassCapChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ChernCapGysinCommute.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ChernCapGysinCommute.lean#L167). The attribute's comment: “the identity i^*(c_1(N) cap alpha) = c_1(i^* N) cap i^* alpha in A_k(D), for the Gysin map of Stacks 02TO and the cap product of Stacks 02TI, with no hypothesis”.
+**`Stacks.Chow.gysinChowOfInvertible_firstChernClassCapChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ChernCapGysinCommute.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ChernCapGysinCommute.lean#L167). The attribute's comment: “the identity i^*(c\_1(N) cap alpha) = c\_1(i^* N) cap i^* alpha in A\_k(D), for the Gysin map of Stacks 02TO and the cap product of Stacks 02TI, with no hypothesis”.
 
 > **Stacks 0B72, with no hypothesis.** For an invertible module `ℒ` with a global section `s`
 > whose zero scheme is `i : D = Z(s) ⟶ X`, and a second invertible module `𝒩` on `X`, Gysin

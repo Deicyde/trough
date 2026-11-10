@@ -86,7 +86,7 @@ theorem curvesSmooth_isStrictlyFull :
 abbrev CurvesSmooth
 ```
 
-**`AlgebraicGeometry.isSmoothDimOneFamily_iff_isSmoothFamily_and_isCohenMacaulayDimOneFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L347). The attribute's comment: “Curves^{smooth,1} is Curves^{smooth} intersected with Curves^{CM,1}”.
+**`AlgebraicGeometry.isSmoothDimOneFamily_iff_isSmoothFamily_and_isCohenMacaulayDimOneFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmooth.lean#L347). The attribute's comment: “Curves^\{smooth,1} is Curves^\{smooth} intersected with Curves^\{CM,1}”.
 
 > **Stacks 0DZZ.** `Curves^{smooth,1}` is the intersection of `Curves^{smooth}` with
 > `Curves^{CM,1}`: a family of curves is smooth of relative dimension one exactly when it is smooth
@@ -293,7 +293,7 @@ theorem isSmoothDimOneFamily_curveFamilyOfSchemeMorphism_iff_irreducibleComponen
 
 [Tag 0E1N](https://stacks.math.columbia.edu/tag/0E1N) in the Stacks Project.
 
-**`AlgebraicGeometry.isSmoothOverIntegers_isSmoothFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothOverIntegers.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothOverIntegers.lean#L67). The attribute's comment: “Curves^{smooth} → Spec(ℤ) is smooth, on the algebraic stack of curves”.
+**`AlgebraicGeometry.isSmoothOverIntegers_isSmoothFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothOverIntegers.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothOverIntegers.lean#L67). The attribute's comment: “Curves^\{smooth} → Spec(ℤ) is smooth, on the algebraic stack of curves”.
 
 > The morphism `Curves^{smooth} → Spec(ℤ)` is smooth: the open substack of the algebraic stack
 > of curves (Stacks 0D5A) where the family of curves is smooth, followed by the structure morphism
@@ -309,7 +309,7 @@ theorem isSmoothOverIntegers_isSmoothFamily :
 
 [Tag 0E81](https://stacks.math.columbia.edu/tag/0E81) in the Stacks Project.
 
-**`AlgebraicGeometry.curvesSmoothH0_isOpenSubstack_and_factors_iff_and_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothH0Open.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothH0Open.lean#L231). The attribute's comment: “the open substack Curves^{smooth,h0} (the moduli stack M of 0E82), its family characterization (1) and the five equivalent conditions (2) over a field”.
+**`AlgebraicGeometry.curvesSmoothH0_isOpenSubstack_and_factors_iff_and_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothH0Open.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSmoothH0Open.lean#L231). The attribute's comment: “the open substack Curves^\{smooth,h0} (the moduli stack M of 0E82), its family characterization (1) and the five equivalent conditions (2) over a field”.
 
 > There is an open substack `Curves^{smooth,h0} ⊂ Curves` — the moduli stack
 > `𝓜 = AlgebraicGeometry.moduliSmoothCurves` of Stacks 0E82, the strictly full subcategory of
@@ -381,7 +381,7 @@ theorem curvesSmoothH0_isOpenSubstack_and_factors_iff_and_tfae :
 
 [Tag 0E82](https://stacks.math.columbia.edu/tag/0E82) in the Stacks Project.
 
-**`AlgebraicGeometry.moduliSmoothCurves`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliCurves.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliCurves.lean#L79). The attribute's comment: “the moduli stack of smooth proper curves, 𝓜 = Curves^{smooth, h0}”.
+**`AlgebraicGeometry.moduliSmoothCurves`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliCurves.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliCurves.lean#L79). The attribute's comment: “the moduli stack of smooth proper curves, 𝓜 = Curves^\{smooth, h0}”.
 
 > **The moduli stack `𝓜 = Curves^{smooth, h0}` of smooth proper curves**: the substack of the
 > stack of curves of the families of curves `f : X → S` which are smooth of relative dimension one
@@ -393,7 +393,7 @@ def moduliSmoothCurves :
     CatFiberedInGroupoids.{u, u + 1, u + 1, u + 1} (BigFppfOver B integerBase hZ)
 ```
 
-**`AlgebraicGeometry.moduliSmoothCurvesOfGenus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesOfGenus.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesOfGenus.lean#L85). The attribute's comment: “the moduli stack of smooth proper curves of genus g, 𝓜_g”.
+**`AlgebraicGeometry.moduliSmoothCurvesOfGenus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesOfGenus.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesOfGenus.lean#L85). The attribute's comment: “the moduli stack of smooth proper curves of genus g, 𝓜\_g”.
 
 > The moduli stack `𝓜_g` of smooth proper curves of genus `g`: the substack of the stack of
 > curves of the families `f : X → S` which are smooth of relative dimension one with
@@ -411,7 +411,7 @@ def moduliSmoothCurvesOfGenus (g : ℕ) :
 
 [Tag 0E83](https://stacks.math.columbia.edu/tag/0E83) in the Stacks Project.
 
-**`AlgebraicGeometry.moduliSmoothCurves_openClosedDecomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean#L173). The attribute's comment: “the decomposition 𝓜 = ∐_{g ≥ 0} 𝓜_g into open and closed substacks, read on the scheme-valued points of 𝓜”.
+**`AlgebraicGeometry.moduliSmoothCurves_openClosedDecomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean#L173). The attribute's comment: “the decomposition 𝓜 = ∐\_\{g ≥ 0} 𝓜\_g into open and closed substacks, read on the scheme-valued points of 𝓜”.
 
 > **The decomposition `𝓜 = ∐_{g ≥ 0} 𝓜_g` into open and closed substacks.**
 > Let `G` be a family of curves in `𝓜` (`AlgebraicGeometry.moduliSmoothCurves`) over a scheme `S`,
@@ -447,7 +447,7 @@ theorem moduliSmoothCurves_openClosedDecomposition (G : CurveFamily B hZ)
               (schemeSpaceMap a.baseMap).hom) ⊆ CurveFamily.fibreGenusLocus B hZ G g)
 ```
 
-**`AlgebraicGeometry.factors_moduliSmoothCurvesOfGenus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean#L244). The attribute's comment: “part (1), with smooth of relative dimension one in (b): read with smooth of arbitrary relative dimension, (b) ⟹ (a) fails for g = 0, see not_factors_moduliSmoothCurvesOfGenus_zero_of_identity”.
+**`AlgebraicGeometry.factors_moduliSmoothCurvesOfGenus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean#L244). The attribute's comment: “part (1), with smooth of relative dimension one in (b): read with smooth of arbitrary relative dimension, (b) ⟹ (a) fails for g = 0, see not\_factors\_moduliSmoothCurvesOfGenus\_zero\_of\_identity”.
 
 > Let `f : X → S` be a family of curves, classified by a
 > scheme-valued point `y` of the stack of curves over `S` with `y(S) ≅ X`. The following are
@@ -475,7 +475,7 @@ theorem factors_moduliSmoothCurvesOfGenus_iff (g : ℕ) (U : BigFppfOver B integ
         CurveFamily.HasGenus B hZ X g
 ```
 
-**`AlgebraicGeometry.factors_moduliSmoothCurvesOfGenus_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean#L323). The attribute's comment: “part (2): over a field, (a) the classifying morphism factors through 𝓜_g, (b)-(e) the conditions on X”.
+**`AlgebraicGeometry.factors_moduliSmoothCurvesOfGenus_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesGenusDecomposition.lean#L323). The attribute's comment: “part (2): over a field, (a) the classifying morphism factors through 𝓜\_g, (b)-(e) the conditions on X”.
 
 > Let `X` be a scheme proper over a field `k` with `dim(X) ≤ 1`, let `k̄` be an algebraic
 > closure of `k` and `g ≥ 0`. The following are equivalent:
@@ -518,7 +518,7 @@ theorem factors_moduliSmoothCurvesOfGenus_over_field_iff (g : ℕ) {k : Type u} 
 
 [Tag 0E84](https://stacks.math.columbia.edu/tag/0E84) in the Stacks Project.
 
-**`AlgebraicGeometry.isSmoothOverIntegers_moduliSmoothCurves_and_moduliSmoothCurvesOfGenus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesSmoothness.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesSmoothness.lean#L67). The attribute's comment: “both morphisms 𝓜 → Spec(ℤ) and 𝓜_g → Spec(ℤ), for every g”.
+**`AlgebraicGeometry.isSmoothOverIntegers_moduliSmoothCurves_and_moduliSmoothCurvesOfGenus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesSmoothness.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliSmoothCurvesSmoothness.lean#L67). The attribute's comment: “both morphisms 𝓜 → Spec(ℤ) and 𝓜\_g → Spec(ℤ), for every g”.
 
 > The morphisms `𝓜 → Spec(ℤ)` and, for every `g`, `𝓜_g → Spec(ℤ)` are smooth. Here
 > `𝓜 = Curves^{smooth, h0}` and `𝓜_g` are the open substacks of the algebraic stack of curves (Stacks

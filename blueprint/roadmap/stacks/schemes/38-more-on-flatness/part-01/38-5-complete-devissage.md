@@ -103,7 +103,7 @@ structure StandardShrinking {X S : Scheme.{u}} (f : X ⟶ S) (F : X.Modules) (x 
 
 [Tag 05HM](https://stacks.math.columbia.edu/tag/05HM) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_standardShrinking_finalTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingFinalTarget.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingFinalTarget.lean#L339). The attribute's comment: “final_target_shrinking”.
+**`AlgebraicGeometry.exists_standardShrinking_finalTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingFinalTarget.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingFinalTarget.lean#L339). The attribute's comment: “final\_target\_shrinking”.
 
 > **Stacks 05HM, final target shrinking.** Let `W` be a principal open neighbourhood of the
 > distinguished point of the smooth scheme of the last stage of a complete dévissage of `F/X/S` at
@@ -125,7 +125,7 @@ theorem exists_standardShrinking_finalTarget {X S : Scheme.{u}} (f : X ⟶ S) (F
         E.restricted_stages W
 ```
 
-**`AlgebraicGeometry.NonemptyCompleteDevissageAt.exists_standardShrinking_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingOverBase.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingOverBase.lean#L169). The attribute's comment: “base_shrinking”.
+**`AlgebraicGeometry.NonemptyCompleteDevissageAt.exists_standardShrinking_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingOverBase.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingOverBase.lean#L169). The attribute's comment: “base\_shrinking”.
 
 > **Stacks 05HM, base shrinking.** Restricting a complete dévissage at `x` over a standard
 > open neighbourhood of `f x` gives a standard shrinking whose base and source are that open
@@ -144,7 +144,7 @@ theorem exists_standardShrinking_base {X S : Scheme.{u}} (f : X ⟶ S) (F : X.Mo
          PointedChainIsBaseChange E.S'.ι E.X'.ι D.pointed E.restricted_devissage.pointed)
 ```
 
-**`AlgebraicGeometry.NonemptyCompleteDevissageAt.exists_standardShrinking_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingSource.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingSource.lean#L101). The attribute's comment: “source_shrinking”.
+**`AlgebraicGeometry.NonemptyCompleteDevissageAt.exists_standardShrinking_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingSource.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Devissage/Complete/ShrinkingSource.lean#L101). The attribute's comment: “source\_shrinking”.
 
 > **Stacks 05HM, source shrinking.** A complete dévissage of `F/X/S` at `x` admits a standard
 > shrinking whose source open lies inside any prescribed open neighbourhood of `x`.

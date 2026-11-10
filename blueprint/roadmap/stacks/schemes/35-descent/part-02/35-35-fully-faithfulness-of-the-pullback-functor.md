@@ -234,7 +234,7 @@ theorem fullyFaithful_canonicalFunctor_comp_familyCoproduct_inverse
 
 [Tag 040L](https://stacks.math.columbia.edu/tag/040L) in the Stacks Project.
 
-**`AlgebraicGeometry.isSheaf_relativeHom_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/MorphismDescent.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/MorphismDescent.lean#L103). The attribute's comment: “the functor `T ↦ Mor_T(X_T, Y_T)` on the schemes over `S` satisfies the sheaf condition for the fpqc topology”. References: SGA 1 VIII (5.2); SGA 3 IV (4.5.13), “Hom_S(X, special case”; SGA 3 VIII (1.7.1), “more general”.
+**`AlgebraicGeometry.isSheaf_relativeHom_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/MorphismDescent.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/MorphismDescent.lean#L103). The attribute's comment: “the functor `T ↦ Mor_T(X_T, Y_T)` on the schemes over `S` satisfies the sheaf condition for the fpqc topology”. References: SGA 1 VIII (5.2); SGA 3 IV (4.5.13), “Hom\_S(X, special case”; SGA 3 VIII (1.7.1), “more general”.
 
 > Let `X` and `Y` be schemes over `S`. The relative morphism functor
 > `Mor_S(X, Y) : (Sch/S)ᵒᵖ ⥤ Set`, which sends an `S`-scheme `T` to the set of morphisms

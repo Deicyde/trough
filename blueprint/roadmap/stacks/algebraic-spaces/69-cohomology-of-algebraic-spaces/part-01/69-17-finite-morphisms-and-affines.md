@@ -14,7 +14,7 @@ Section 69.17 of the Stacks Project, [Tag 07VN](https://stacks.math.columbia.edu
 
 [Tag 0GF7](https://stacks.math.columbia.edu/tag/0GF7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isCoherent_and_supportOfSheaf_eq_univ_modulePushforward_structureSheaf_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageChartCartesian.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageChartCartesian.lean#L259). The attribute's comment: “the whole statement: for f finite and surjective with X locally Noetherian and i : Z -> X a closed immersion, the direct image f'_* O_{Z'} along the induced morphism of the inverse image is a coherent O_Z-module, and its support is all of Z”.
+**`AlgebraicGeometry.Space.isCoherent_and_supportOfSheaf_eq_univ_modulePushforward_structureSheaf_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageChartCartesian.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageChartCartesian.lean#L259). The attribute's comment: “the whole statement: for f finite and surjective with X locally Noetherian and i : Z -> X a closed immersion, the direct image f'\_* O\_\{Z'} along the induced morphism of the inverse image is a coherent O\_Z-module, and its support is all of Z”.
 
 > Let `S` be a scheme and let `f : Y ⟶ X` be a morphism of algebraic spaces over `S` which is
 > finite and surjective, with `X` locally Noetherian.  Let `i : Z ⟶ X` be a closed immersion, let

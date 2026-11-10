@@ -67,7 +67,7 @@ theorem isFinitelyPresentedRelative_resLE
 
 [Tag 09T8](https://stacks.math.columbia.edu/tag/09T8) in the Stacks Project.
 
-**`AlgebraicGeometry.isFinitelyPresentedRelative_iff_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/FinitePresentation.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/FinitePresentation.lean#L163). The attribute's comment: “relative_iff_finite_presentation”.
+**`AlgebraicGeometry.isFinitelyPresentedRelative_iff_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/FinitePresentation.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/FinitePresentation.lean#L163). The attribute's comment: “relative\_iff\_finite\_presentation”.
 
 > **Stacks Project, Tag 09T8.** For a locally finitely presented morphism of schemes, a
 > quasi-coherent sheaf of modules is finitely presented relative to the base if and only if it is
@@ -80,7 +80,7 @@ theorem isFinitelyPresentedRelative_iff_isFinitePresentation
     IsFinitelyPresentedRelative f M ↔ M.IsFinitePresentation
 ```
 
-**`AlgebraicGeometry.locallyOfFinitePresentation_iff_structureSheaf_finitelyPresentedRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/StructureSheaf.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/StructureSheaf.lean#L79). The attribute's comment: “morphism_iff_structure_sheaf_relative”.
+**`AlgebraicGeometry.locallyOfFinitePresentation_iff_structureSheaf_finitelyPresentedRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/StructureSheaf.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/StructureSheaf.lean#L79). The attribute's comment: “morphism\_iff\_structure\_sheaf\_relative”.
 
 > **Stacks Project, Tag 09T8.** A locally finite type morphism is locally of finite
 > presentation if and only if its structure sheaf is finitely presented relative to the base.

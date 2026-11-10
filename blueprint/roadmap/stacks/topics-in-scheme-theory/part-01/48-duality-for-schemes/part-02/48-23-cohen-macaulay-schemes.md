@@ -157,7 +157,7 @@ theorem isCohenMacaulayAt_iff_exists_unique_nonzero_homology_upperShriek [Flat f
 
 [Tag 0C10](https://stacks.math.columbia.edu/tag/0C10) in the Stacks Project.
 
-**`Stacks.Duality.NormalizedOnOpens.nonempty_iso_pullback_tensor_shift_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayTwistNagata.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayTwistNagata.lean#L56). The attribute's comment: “Similar results hold for X and Y of finite type over S, not necessarily separated, with complexes normalized relative to omega_S: omega_X = Lf^* omega_Y (x) omega_{X/Y}[d]”.
+**`Stacks.Duality.NormalizedOnOpens.nonempty_iso_pullback_tensor_shift_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayTwistNagata.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayTwistNagata.lean#L56). The attribute's comment: “Similar results hold for X and Y of finite type over S, not necessarily separated, with complexes normalized relative to omega\_S: omega\_X = Lf^* omega\_Y (x) omega\_\{X/Y}[d]”.
 
 > **[Stacks, Tag 0C10], last sentence, the complexes.** Let `S` be Noetherian with a dualizing
 > complex `ω_S^•` and `f : X ⟶ Y` a separated Cohen–Macaulay morphism of relative dimension `d`
@@ -183,7 +183,7 @@ theorem nonempty_iso_pullback_tensor_shift_nagata
             hCM d hd))
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.exists_homology_iso_pullback_tensor_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayTwistNagata.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayTwistNagata.lean#L82). The attribute's comment: “Similar results hold for X and Y of finite type over S, not necessarily separated, with complexes normalized relative to omega_S: omega_X = f^* omega_Y (x) omega_{X/Y} for connected Cohen-Macaulay schemes”.
+**`Stacks.Duality.NormalizedOnOpens.exists_homology_iso_pullback_tensor_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayTwistNagata.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayTwistNagata.lean#L82). The attribute's comment: “Similar results hold for X and Y of finite type over S, not necessarily separated, with complexes normalized relative to omega\_S: omega\_X = f^* omega\_Y (x) omega\_\{X/Y} for connected Cohen-Macaulay schemes”.
 
 > **[Stacks, Tag 0C10], last sentence, the dualizing modules.** In the situation of
 > `nonempty_iso_pullback_tensor_shift_nagata`, if moreover `Y` is connected and Cohen–Macaulay, the
@@ -216,7 +216,7 @@ theorem exists_homology_iso_pullback_tensor_nagata
             d))
 ```
 
-**`Stacks.Duality.nonempty_upperShriek_iso_pullback_tensor_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean#L58). The attribute's comment: “f^!K = Lf^*K (x) omega_{X/Y}[d] for K in D^+_QCoh”.
+**`Stacks.Duality.nonempty_upperShriek_iso_pullback_tensor_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean#L58). The attribute's comment: “f^!K = Lf^*K (x) omega\_\{X/Y}[d] for K in D^+\_QCoh”.
 
 > **Stacks Project, Tag 0C10, the canonical isomorphism.** For a Cohen–Macaulay morphism
 > `f : X ⟶ Y` of `FTS S` of relative dimension `d` and `K ∈ D⁺_QCoh(𝒪_Y)`,
@@ -234,7 +234,7 @@ theorem nonempty_upperShriek_iso_pullback_tensor_shift
           (relativeDualizingSheafShift f j hCM d hd))
 ```
 
-**`Stacks.Duality.nonempty_upperShriek_comp_iso_pullback_tensor_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean#L74). The attribute's comment: “omega_X = Lf^* omega_Y (x) omega_{X/Y}[d]”.
+**`Stacks.Duality.nonempty_upperShriek_comp_iso_pullback_tensor_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean#L74). The attribute's comment: “omega\_X = Lf^* omega\_Y (x) omega\_\{X/Y}[d]”.
 
 > **Stacks Project, Tag 0C10, "in particular".** For `πY : Y ⟶ T`, `πX = f ≫ πY` and
 > `ω_T ∈ D⁺_QCoh(𝒪_T)` (for instance a dualizing complex), with `ω_Y = πY^!ω_T` and
@@ -254,7 +254,7 @@ theorem nonempty_upperShriek_comp_iso_pullback_tensor_shift
           (relativeDualizingSheafShift f j hCM d hd))
 ```
 
-**`Stacks.Duality.exists_homology_upperShriek_comp_iso_pullback_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean#L94). The attribute's comment: “omega_X = f^* omega_Y (x) omega_{X/Y} for connected Cohen-Macaulay schemes”.
+**`Stacks.Duality.exists_homology_upperShriek_comp_iso_pullback_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean#L94). The attribute's comment: “omega\_X = f^* omega\_Y (x) omega\_\{X/Y} for connected Cohen-Macaulay schemes”.
 
 > **Stacks Project, Tag 0C10, the dualizing modules.** If moreover `ω_T` is a dualizing
 > complex and `Y` is connected and Cohen–Macaulay, then `ω_Y^•` and `ω_X^•` are concentrated in

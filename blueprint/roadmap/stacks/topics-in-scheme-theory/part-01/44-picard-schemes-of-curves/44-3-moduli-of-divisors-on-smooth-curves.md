@@ -200,7 +200,7 @@ theorem isFiniteLocallyFreeOfRank_left (hf : IsPointAddition hH hH' f) :
 
 [Tag 0B9H](https://stacks.math.columbia.edu/tag/0B9H) in the Stacks Project.
 
-**`Stacks.Hilbert.smoothOfRelativeDimension_of_represents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothness.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothness.lean#L425). The attribute's comment: “corrected statement: adds the hypothesis that X -> S is separated, which the printed statement omits and needs (the source uses it through Hilb^1 = X and Tag 0B9G; without it the statement is false, see Stacks.Hilbert.NonSeparated.not_smooth_hilbertScheme_doubledLine); representability is the tag's own hypothesis”.
+**`Stacks.Hilbert.smoothOfRelativeDimension_of_represents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothness.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothness.lean#L425). The attribute's comment: “corrected statement: adds the hypothesis that X -> S is separated, which the printed statement omits and needs (the source uses it through Hilb^1 = X and Tag 0B9G; without it the statement is false, see Stacks.Hilbert.NonSeparated.not\_smooth\_hilbertScheme\_doubledLine); representability is the tag's own hypothesis”.
 
 > **Stacks Project, Tag 0B9H.** Let `X ⟶ S` be a smooth morphism of schemes of relative
 > dimension one such that the functors `Hilb^d_{X/S}` are representable, say by `H d` over `S`.
@@ -225,7 +225,7 @@ theorem smoothOfRelativeDimension_of_represents [IsSeparated X.hom] (H : ℕ →
     SmoothOfRelativeDimension d (H d).hom
 ```
 
-**`Stacks.Hilbert.NonSeparated.not_forall_smoothOfRelativeDimension_of_represents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothnessCounterexample.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothnessCounterexample.lean#L232). The attribute's comment: “the statement as printed is false: without separatedness of X → S it fails (this is the negation of the printed statement); the separated case is Stacks.Hilbert.smoothOfRelativeDimension_of_represents”.
+**`Stacks.Hilbert.NonSeparated.not_forall_smoothOfRelativeDimension_of_represents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothnessCounterexample.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothnessCounterexample.lean#L232). The attribute's comment: “the statement as printed is false: without separatedness of X → S it fails (this is the negation of the printed statement); the separated case is Stacks.Hilbert.smoothOfRelativeDimension\_of\_represents”.
 
 > **Stacks Project, Tag 0B9H, as printed, is false.** The statement "for a smooth morphism of
 > schemes `X ⟶ S` of relative dimension `1` such that the functors `Hilb^d_{X/S}` are representable,
@@ -242,7 +242,7 @@ theorem not_forall_smoothOfRelativeDimension_of_represents :
         ∀ d, SmoothOfRelativeDimension d (H d).hom
 ```
 
-**`Stacks.Hilbert.NonSeparated.not_smooth_hilbertScheme_doubledLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothnessCounterexample.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothnessCounterexample.lean#L288). The attribute's comment: “the statement as printed is false: this is an explicit counterexample, a smooth non-separated relative curve over Spec of a product of copies of F_2 with every Hilb^d representable and no Hilb^d with d >= 1 smooth. The source needs X -> S separated (it uses Hilb^1 = X and Tag 0B9G); the corrected statement is Stacks.Hilbert.smoothOfRelativeDimension_of_represents”.
+**`Stacks.Hilbert.NonSeparated.not_smooth_hilbertScheme_doubledLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothnessCounterexample.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeSmoothnessCounterexample.lean#L288). The attribute's comment: “the statement as printed is false: this is an explicit counterexample, a smooth non-separated relative curve over Spec of a product of copies of F\_2 with every Hilb^d representable and no Hilb^d with d >= 1 smooth. The source needs X -> S separated (it uses Hilb^1 = X and Tag 0B9G); the corrected statement is Stacks.Hilbert.smoothOfRelativeDimension\_of\_represents”.
 
 > **Stacks Project, Tag 0B9H, as printed, is false: the concrete counterexample.**
 >
@@ -304,7 +304,7 @@ theorem not_smooth_hilbertScheme_doubledLine :
 
 [Tag 0B9I](https://stacks.math.columbia.edu/tag/0B9I) in the Stacks Project.
 
-**`Stacks.Hilbert.smoothOfRelativeDimension_and_isProper_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean#L134). The attribute's comment: “(1), ingredient: every representing scheme is smooth of relative dimension d and proper. The whole of (1), with representability, is Stacks.Hilbert.exists_representsHilbertFunctorOfRank_isVariety_of_isCurve”.
+**`Stacks.Hilbert.smoothOfRelativeDimension_and_isProper_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean#L134). The attribute's comment: “(1), ingredient: every representing scheme is smooth of relative dimension d and proper. The whole of (1), with representability, is Stacks.Hilbert.exists\_representsHilbertFunctorOfRank\_isVariety\_of\_isCurve”.
 
 > **Stacks Project, Tag 0B9I, (1), smoothness and properness.** Let `X` be a smooth proper
 > curve over a field `k`. Every scheme representing the degree-`d` Hilbert functor of `X` is smooth
@@ -321,7 +321,7 @@ theorem smoothOfRelativeDimension_and_isProper_of_isCurve [IsProper f] [IsCurve 
     SmoothOfRelativeDimension d H.hom ∧ IsProper H.hom
 ```
 
-**`Stacks.Hilbert.isVariety_and_topologicalKrullDim_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean#L189). The attribute's comment: “(1), ingredient: every representing scheme is a variety of dimension d. The whole of (1), with representability, is Stacks.Hilbert.exists_representsHilbertFunctorOfRank_isVariety_of_isCurve”.
+**`Stacks.Hilbert.isVariety_and_topologicalKrullDim_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/HilbertSchemeCurve.lean#L189). The attribute's comment: “(1), ingredient: every representing scheme is a variety of dimension d. The whole of (1), with representability, is Stacks.Hilbert.exists\_representsHilbertFunctorOfRank\_isVariety\_of\_isCurve”.
 
 > **Stacks Project, Tag 0B9I, (1), the varieties.** Let `X` be a geometrically irreducible
 > smooth proper curve over a field `k`. Every scheme representing the degree-`d` Hilbert functor of

@@ -53,7 +53,7 @@ theorem isSeparated_and_isLocallyOfFinitePresentation_relativeHomProjection_unco
 
 [Tag 0DPP](https://stacks.math.columbia.edu/tag/0DPP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isomSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusInRelativeMorphisms.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusInRelativeMorphisms.lean#L290). The attribute's comment: “the subfunctor Isom_B(Y, X) of Mor_B(Y, X) of isomorphisms”.
+**`AlgebraicGeometry.Space.isomSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusInRelativeMorphisms.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusInRelativeMorphisms.lean#L290). The attribute's comment: “the subfunctor Isom\_B(Y, X) of Mor\_B(Y, X) of isomorphisms”.
 
 > **Stacks 0DPP,** the subfunctor `Isom_Q(Z, X) ⊆ Mor_Q(Z, X)` of relative isomorphisms: its
 > sections over a scheme `T` are the pairs `(a, b)` of Stacks 05Y1 at `T` whose morphism of base
@@ -92,7 +92,7 @@ theorem isOpenSubspace_isomSubfunctor (hzfp : IsFinitePresentation B S hS z)
     IsOpenSubspace B S hS (isomSubfunctor B S hS Z X Q z x hZ hX hQ)
 ```
 
-**`AlgebraicGeometry.Space.isOpenSubspace_isomSubfunctor_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusUnconditional.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusUnconditional.lean#L59). The attribute's comment: “the subfunctor Isom_B(Y, X) of Mor_B(Y, X) of isomorphisms is an open subspace, for Y ⟶ B flat, proper and of finite presentation and X ⟶ B proper and of finite presentation”.
+**`AlgebraicGeometry.Space.isOpenSubspace_isomSubfunctor_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusUnconditional.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/IsomorphismLocusUnconditional.lean#L59). The attribute's comment: “the subfunctor Isom\_B(Y, X) of Mor\_B(Y, X) of isomorphisms is an open subspace, for Y ⟶ B flat, proper and of finite presentation and X ⟶ B proper and of finite presentation”.
 
 > Let `Q` be an algebraic space and `z : Z ⟶ Q`, `x : X ⟶ Q` morphisms of algebraic spaces over
 > `S` with `z` flat, proper and of finite presentation and `x` proper and of finite presentation (in

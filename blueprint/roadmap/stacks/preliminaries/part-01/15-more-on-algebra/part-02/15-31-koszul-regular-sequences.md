@@ -75,7 +75,7 @@ theorem isKoszulRegularOn_and_isKoszulRegular_of_regular
 
 **`Koszul.IsKoszulRegularOn.isH1RegularOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Regular.lean#L336). The attribute's comment: “(1)”.
 
-> If the sequence `f_1, ..., f_r` is `M`-Koszul-regular, then it is `M`-H_1-regular.
+> If the sequence `f_1, ..., f_r` is `M`-Koszul-regular, then it is `M`-H\_1-regular.
 
 ```lean
 theorem IsKoszulRegularOn.isH1RegularOn {f : Fin r → R} {M : Type v} [AddCommGroup M]
@@ -84,7 +84,7 @@ theorem IsKoszulRegularOn.isH1RegularOn {f : Fin r → R} {M : Type v} [AddCommG
 
 **`Koszul.IsKoszulRegular.isH1Regular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Regular.lean#L342). The attribute's comment: “(2)”.
 
-> If the sequence `f_1, ..., f_r` is Koszul-regular, then it is H_1-regular.
+> If the sequence `f_1, ..., f_r` is Koszul-regular, then it is H\_1-regular.
 
 ```lean
 theorem IsKoszulRegular.isH1Regular {f : Fin r → R} (h : IsKoszulRegular f) : IsH1Regular f

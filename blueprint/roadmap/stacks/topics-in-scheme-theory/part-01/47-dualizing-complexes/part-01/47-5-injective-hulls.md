@@ -43,7 +43,7 @@ theorem exists_isInjectiveHull (R : Type u) [Ring R]
 
 [Tag 08Y4](https://stacks.math.columbia.edu/tag/08Y4) in the Stacks Project.
 
-**`Module.mono_of_isEssentialMono_of_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L165). The attribute's comment: “injective_extension”.
+**`Module.mono_of_isEssentialMono_of_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L165). The attribute's comment: “injective\_extension”.
 
 > A morphism which is monic on an essential subobject is a monomorphism.
 
@@ -53,7 +53,7 @@ theorem mono_of_isEssentialMono_of_comp_eq {C : Type u} [Category.{v} C] [Abelia
     (j : N ⟶ J) [Mono j] (ψ : E ⟶ J) (hψ : i ≫ ψ = φ ≫ j) : Mono ψ
 ```
 
-**`Module.isIso_of_isInjectiveHull_of_isEssentialMono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L173). The attribute's comment: “essential_extension_iso”.
+**`Module.isIso_of_isInjectiveHull_of_isEssentialMono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L173). The attribute's comment: “essential\_extension\_iso”.
 
 > A morphism between injective hulls which extends an essential monomorphism is an isomorphism.
 
@@ -70,7 +70,7 @@ theorem isIso_of_isInjectiveHull_of_isEssentialMono
     IsIso psi
 ```
 
-**`Module.isIso_of_isInjectiveHull_of_extends_iso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L197). The attribute's comment: “iso_extension”.
+**`Module.isIso_of_isInjectiveHull_of_extends_iso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L197). The attribute's comment: “iso\_extension”.
 
 > A morphism between injective hulls which extends an isomorphism of the embedded modules is an
 > isomorphism.
@@ -86,7 +86,7 @@ lemma isIso_of_isInjectiveHull_of_extends_iso
     IsIso f
 ```
 
-**`Module.exists_iso_of_isInjectiveHull`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L210). The attribute's comment: “unique_up_to_iso”.
+**`Module.exists_iso_of_isInjectiveHull`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L210). The attribute's comment: “unique\_up\_to\_iso”.
 
 > Any two injective hulls of an object are isomorphic compatibly with their embeddings of that
 > object.
@@ -99,7 +99,7 @@ lemma exists_iso_of_isInjectiveHull {𝒜 : Type u} [Category.{v} 𝒜]
     ∃ e : I ≅ J, i ≫ e.hom = j
 ```
 
-**`Module.exists_iso_biprod_of_isInjectiveHull`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L223). The attribute's comment: “splits_in_injective”.
+**`Module.exists_iso_biprod_of_isInjectiveHull`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L223). The attribute's comment: “splits\_in\_injective”.
 
 > An injective hull is a direct summand of any injective module containing the original module,
 > compatibly with the two embeddings.
@@ -115,8 +115,8 @@ lemma exists_iso_biprod_of_isInjectiveHull
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Injective.factorThru`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Injective.factorThru#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L158) (StacksFrontier): “extend_map”.
-- [`CategoryTheory.Injective.comp_factorThru`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Injective.comp_factorThru#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L159) (StacksFrontier): “extend_map”.
+- [`CategoryTheory.Injective.factorThru`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Injective.factorThru#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L158) (StacksFrontier): “extend\_map”.
+- [`CategoryTheory.Injective.comp_factorThru`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Injective.comp_factorThru#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L159) (StacksFrontier): “extend\_map”.
 
 ## Tag 08Y5, an example
 
@@ -150,7 +150,7 @@ Declarations registered for the tag:
 
 [Tag 08Y7](https://stacks.math.columbia.edu/tag/08Y7) in the Stacks Project.
 
-**`Module.Subobject.isInjectiveHull_arrow_of_indecomposable`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean#L78). The attribute's comment: “injective_hull”.
+**`Module.Subobject.isInjectiveHull_arrow_of_indecomposable`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean#L78). The attribute's comment: “injective\_hull”.
 
 > The inclusion of any nonzero submodule of an indecomposable injective module exhibits the
 > ambient module as its injective hull.
@@ -162,7 +162,7 @@ lemma Subobject.isInjectiveHull_arrow_of_indecomposable
     IsInjectiveHull M.arrow
 ```
 
-**`Module.Subobject.inf_ne_bot_of_indecomposable_injective`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean#L124). The attribute's comment: “nonzero_intersection”.
+**`Module.Subobject.inf_ne_bot_of_indecomposable_injective`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean#L124). The attribute's comment: “nonzero\_intersection”.
 
 > Two nonzero submodules of an indecomposable injective module have nonzero intersection.
 
@@ -172,7 +172,7 @@ lemma Subobject.inf_ne_bot_of_indecomposable_injective (R : Type u) [Ring R]
     (A B : Subobject E) (hA : A ≠ ⊥) (hB : B ≠ ⊥) : A ⊓ B ≠ ⊥
 ```
 
-**`Module.endomorphismRing_isLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean#L220). The attribute's comment: “endomorphism_ring_local”.
+**`Module.endomorphismRing_isLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean#L220). The attribute's comment: “endomorphism\_ring\_local”.
 
 > The endomorphism ring of an indecomposable injective module is a (possibly
 > noncommutative) local ring.
@@ -185,7 +185,7 @@ theorem endomorphismRing_isLocalRing
     IsLocalRing (Module.End R E)
 ```
 
-**`Module.exists_maximalIdeal_endomorphismRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean#L247). The attribute's comment: “endomorphism_ring_local”.
+**`Module.exists_maximalIdeal_endomorphismRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean#L247). The attribute's comment: “endomorphism\_ring\_local”.
 
 > The maximal two-sided ideal of the endomorphism ring consists exactly of the
 > endomorphisms with nonzero kernel, and every endomorphism outside it is invertible.
@@ -200,7 +200,7 @@ theorem exists_maximalIdeal_endomorphismRing
       (∀ φ : Module.End R E, φ ∉ I → IsUnit φ)
 ```
 
-**`Module.exists_prime_eq_zeroDivisorsOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean#L311). The attribute's comment: “zero_divisors_prime”.
+**`Module.exists_prime_eq_zeroDivisorsOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean#L311). The attribute's comment: “zero\_divisors\_prime”.
 
 > The set of zerodivisors on an indecomposable injective module is the underlying set of a prime
 > ideal.
@@ -211,7 +211,7 @@ theorem exists_prime_eq_zeroDivisorsOn {R : Type u} [CommRing R]
     ∃ p : Ideal R, p.IsPrime ∧ (p : Set R) = {r : R | ∃ m : E, m ≠ 0 ∧ r • m = 0}
 ```
 
-**`Module.exists_injective_localizationAtPrime_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean#L331). The attribute's comment: “injective_over_localization”.
+**`Module.exists_injective_localizationAtPrime_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/IndecomposableInjective.lean#L331). The attribute's comment: “injective\_over\_localization”.
 
 > An indecomposable injective module is an injective module over the localization at its prime
 > ideal of zerodivisors.
@@ -231,7 +231,7 @@ theorem exists_injective_localizationAtPrime_module
 
 [Tag 08Y8](https://stacks.math.columbia.edu/tag/08Y8) in the Stacks Project.
 
-**`Module.exists_isInjectiveHull_residueField_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/DirectSumDecomposition.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/DirectSumDecomposition.lean#L300). The attribute's comment: “localized_hull”.
+**`Module.exists_isInjectiveHull_residueField_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/DirectSumDecomposition.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/DirectSumDecomposition.lean#L300). The attribute's comment: “localized\_hull”.
 
 > The injective hull of `R ⧸ p` is naturally an injective hull of the residue field at `p` over
 > `Rₚ`.
@@ -256,7 +256,7 @@ theorem exists_isInjectiveHull_residueField_localization
               IsInjectiveHull j
 ```
 
-**`Module.exists_isInjectiveHull_residueField_of_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L296). The attribute's comment: “hull_of_residue_field”.
+**`Module.exists_isInjectiveHull_residueField_of_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/InjectiveHull/Basic/Existence.lean#L296). The attribute's comment: “hull\_of\_residue\_field”.
 
 > An injective hull of the quotient by a prime ideal is also an injective hull of the prime's
 > residue field.

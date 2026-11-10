@@ -60,7 +60,7 @@ theorem irreducibleSpace_primeSpectrum_of_flat_finitePresentation
 
 [Tag 00I7](https://stacks.math.columbia.edu/tag/00I7) in the Stacks Project.
 
-**`tensorProduct_unique_minimalPrime_of_isSepClosed_right_base`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean#L227). The attribute's comment: “Only the degenerate S = k case; the general R ⊗_k S statement is not formalized.”.
+**`tensorProduct_unique_minimalPrime_of_isSepClosed_right_base`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Spectrum/Prime/IrreducibleFibres.lean#L227). The attribute's comment: “Only the degenerate S = k case; the general R ⊗\_k S statement is not formalized.”.
 
 > **Stacks Tag 00I7 (right-factor-is-the-base-field special case).**
 > Let `k` be a field and let `R` be a `k`-algebra with a unique minimal prime.
@@ -335,7 +335,7 @@ theorem part2 (k K : Type*) [Field k] [Field K] [Algebra k K]
 **`part1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIrreducible/SeparableClosure/SeparablyClosedBase.lean, line 806](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIrreducible/SeparableClosure/SeparablyClosedBase.lean#L806). The attribute's comment: “(1)”. References: EGA IV (4.3.2), “special case”; EGA IV (4.3.3), “special case”; EGA IV (4.4.4), “special case”; EGA IV (4.5.21), “special case”.
 
 > Statement 1 (Geometric irreducibility over `k'`). `K` is geometrically irreducible over `k' =
-> separableClosure k K`: for every field extension `L/k'` the spectrum `Spec(K ⊗_{k'} L)` is
+> separableClosure k K`: for every field extension `L/k'` the spectrum `Spec(K ⊗\_\{k'} L)` is
 > irreducible.
 
 ```lean

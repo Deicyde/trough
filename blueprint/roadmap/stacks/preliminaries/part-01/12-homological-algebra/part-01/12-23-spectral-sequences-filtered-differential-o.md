@@ -180,7 +180,7 @@ public theorem gr_homology_isSubquotient_stablePage {C : Type u} [Category.{v} C
 
 [Tag 012I](https://stacks.math.columbia.edu/tag/012I) in the Stacks Project.
 
-**`FilteredDifferentialObject.WeaklyConvergesTo`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObject.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObject.lean#L218). The attribute's comment: “weakly_converges”.
+**`FilteredDifferentialObject.WeaklyConvergesTo`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObject.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/FilteredDifferentialObject.lean#L218). The attribute's comment: “weakly\_converges”.
 
 > The spectral sequence *weakly converges to `H(X)`* when the comparison
 > `gr^p H(X) ⟶ E_∞^p` is an isomorphism for every `p`.

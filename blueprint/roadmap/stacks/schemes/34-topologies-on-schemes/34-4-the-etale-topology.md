@@ -105,7 +105,7 @@ Declarations registered for the tag:
 
 [Tag 03WW](https://stacks.math.columbia.edu/tag/03WW) in the Stacks Project.
 
-**`AlgebraicGeometry.BigEtaleSite.exists_covering_refining_etale_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/BigSiteCoverings.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/BigSiteCoverings.lean#L82). The attribute's comment: “etale_refinement”.
+**`AlgebraicGeometry.BigEtaleSite.exists_covering_refining_etale_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/BigSiteCoverings.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/BigSiteCoverings.lean#L82). The attribute's comment: “etale\_refinement”.
 
 > **Stacks Project, Tag 03WW.** Every étale covering family of an object of a big étale
 > site, formed in the ambient category of schemes, is refined by a covering family internal to
@@ -120,7 +120,7 @@ public theorem exists_covering_refining_etale_cover
       B.IsCovering ⟨T, 𝒱⟩ ∧ Nonempty ((𝒱.map B.inclusion).Hom 𝒰)
 ```
 
-**`AlgebraicGeometry.BigEtaleSite.exists_isCovering_tautologicallyEquivalent_affineCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/BigSiteCoverings.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/BigSiteCoverings.lean#L166). The attribute's comment: “standard_etale_equivalence”.
+**`AlgebraicGeometry.BigEtaleSite.exists_isCovering_tautologicallyEquivalent_affineCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/BigSiteCoverings.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/BigSiteCoverings.lean#L166). The attribute's comment: “standard\_etale\_equivalence”.
 
 > **Stacks Project, Tag 03WW.** A standard étale covering of an object of a big étale
 > site is tautologically equivalent to a covering belonging to that site.
@@ -136,7 +136,7 @@ public theorem exists_isCovering_tautologicallyEquivalent_affineCover
           (V.map B.inclusion)
 ```
 
-**`AlgebraicGeometry.BigEtaleSite.exists_isCovering_tautologicallyEquivalent_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/BigSiteCoverings.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/BigSiteCoverings.lean#L192). The attribute's comment: “zariski_equivalence”.
+**`AlgebraicGeometry.BigEtaleSite.exists_isCovering_tautologicallyEquivalent_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/BigSiteCoverings.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/BigSiteCoverings.lean#L192). The attribute's comment: “zariski\_equivalence”.
 
 > **Stacks Project, Tag 03WW.** A Zariski covering of an object of a big étale site is
 > tautologically equivalent to a covering belonging to that site.
@@ -232,7 +232,7 @@ public abbrev IsCovering (E : Covering (SmallAffineEtale B S hS)) : Prop
 
 [Tag 021C](https://stacks.math.columbia.edu/tag/021C) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.isSite`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SiteAxioms.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SiteAxioms.lean#L70). The attribute's comment: “small_etale_site”.
+**`AlgebraicGeometry.SmallEtale.isSite`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SiteAxioms.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SiteAxioms.lean#L70). The attribute's comment: “small\_etale\_site”.
 
 > **Stacks 021C, small étale site.** The étale covering families on the
 > small étale category of a scheme satisfy the axioms of a site.
@@ -242,7 +242,7 @@ public lemma SmallEtale.isSite (B : AlgebraicGeometry.BigEtaleSite.{u}) (S : Sch
     (hS : B.Contains S) : IsSite (SmallEtale.IsCovering B S hS)
 ```
 
-**`AlgebraicGeometry.BigAffineEtale.isSite`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SiteAxioms.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SiteAxioms.lean#L111). The attribute's comment: “big_affine_etale_site”.
+**`AlgebraicGeometry.BigAffineEtale.isSite`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SiteAxioms.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SiteAxioms.lean#L111). The attribute's comment: “big\_affine\_etale\_site”.
 
 > **Stacks 021C, big affine étale site.** The standard étale covering families of
 > affine objects over `S` satisfy the site axioms.
@@ -253,7 +253,7 @@ public lemma BigAffineEtale.isSite (B : AlgebraicGeometry.BigEtaleSite.{u})
     (hS : B.Contains S) : IsSite (BigAffineEtale.IsCovering B S hS)
 ```
 
-**`AlgebraicGeometry.SmallAffineEtale.isSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SiteAxioms.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SiteAxioms.lean#L177). The attribute's comment: “small_affine_etale_site”.
+**`AlgebraicGeometry.SmallAffineEtale.isSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SiteAxioms.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SiteAxioms.lean#L177). The attribute's comment: “small\_affine\_etale\_site”.
 
 > **Stacks 021C, small affine étale site.** The standard étale covering families on
 > the small affine étale category of a scheme satisfy the axioms of a site.
@@ -745,7 +745,7 @@ public def smallEtaleRestrictionProjectionPullbackIso :
       (SmallEtale.topology B T.obj T.property)
 ```
 
-**`AlgebraicGeometry.smallEtaleBaseChange_isMorphismOfSites_ringUniverse`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedSiteHom.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedSiteHom.lean#L205). The attribute's comment: “small_etale_morphism at the universe of the structure rings”.
+**`AlgebraicGeometry.smallEtaleBaseChange_isMorphismOfSites_ringUniverse`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedSiteHom.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedSiteHom.lean#L205). The attribute's comment: “small\_etale\_morphism at the universe of the structure rings”.
 
 > **Stacks 021I at the universe of the structure rings.** Base change along `f : T ⟶ S` defines
 > a morphism of sites from the small étale site of `T` to that of `S`, for sheaves of sets valued in
@@ -758,7 +758,7 @@ public instance smallEtaleBaseChange_isMorphismOfSites_ringUniverse :
       (SmallEtale.topology B T.obj T.property)
 ```
 
-**`AlgebraicGeometry.smallEtaleBaseChange_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L247). The attribute's comment: “base_change_continuous”.
+**`AlgebraicGeometry.smallEtaleBaseChange_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L247). The attribute's comment: “base\_change\_continuous”.
 
 > **Stacks 021I, base-change continuity.** Base change along a morphism in a big étale
 > site is a continuous functor between the corresponding small étale sites.
@@ -770,7 +770,7 @@ public instance smallEtaleBaseChange_isContinuous {S T : B.Scheme} (f : T ⟶ S)
       (SmallEtale.topology B T.obj T.property)
 ```
 
-**`AlgebraicGeometry.smallEtaleBaseChange_isMorphismOfSites`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L262). The attribute's comment: “small_etale_morphism”.
+**`AlgebraicGeometry.smallEtaleBaseChange_isMorphismOfSites`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L262). The attribute's comment: “small\_etale\_morphism”.
 
 > **Stacks 021I, small étale morphism.** Base change along `f : T ⟶ S` defines a
 > morphism of sites from the small étale site of `T` to that of `S`.
@@ -782,7 +782,7 @@ public instance smallEtaleBaseChange_isMorphismOfSites {S T : B.Scheme} (f : T �
       (SmallEtale.topology B T.obj T.property)
 ```
 
-**`AlgebraicGeometry.bigSmallEtalePushforwardCommIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L327). The attribute's comment: “commutative_diagram”.
+**`AlgebraicGeometry.bigSmallEtalePushforwardCommIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L327). The attribute's comment: “commutative\_diagram”.
 
 > **Stacks 021I, commutative diagram.** The square formed by small étale base change, big
 > étale base change, and the two projections from big to small étale topoi commutes on direct
@@ -798,7 +798,7 @@ public noncomputable def bigSmallEtalePushforwardCommIso :
         (bigEtaleToSmallEtaleMorphism B S.obj S.property).pushforward
 ```
 
-**`AlgebraicGeometry.smallEtaleToBigEtaleMorphism_comp_inverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L373). The attribute's comment: “big_site_factorization”.
+**`AlgebraicGeometry.smallEtaleToBigEtaleMorphism_comp_inverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L373). The attribute's comment: “big\_site\_factorization”.
 
 > **Stacks 021I, big-site factorization.** The inverse-image functor of `i_f` is naturally
 > isomorphic to the inverse image of `f_big ∘ i_T`.
@@ -810,7 +810,7 @@ public noncomputable def smallEtaleToBigEtaleMorphism_comp_inverseImageIso :
         (smallEtaleToBigEtaleMorphism B T T (𝟙 T)).inverseImage
 ```
 
-**`AlgebraicGeometry.smallEtaleToBigEtaleMorphism_comp_pushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L401). The attribute's comment: “big_site_factorization”.
+**`AlgebraicGeometry.smallEtaleToBigEtaleMorphism_comp_pushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L401). The attribute's comment: “big\_site\_factorization”.
 
 > **Stacks 021I, big-site factorization.** The direct-image comparison for
 > `i_f = f_big ∘ i_T`, naturally in the small étale sheaf.
@@ -822,7 +822,7 @@ public noncomputable def smallEtaleToBigEtaleMorphism_comp_pushforwardIso :
         (bigEtaleMorphism B T S f).pushforward
 ```
 
-**`AlgebraicGeometry.smallEtalePushforwardIsoBigFactorization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L415). The attribute's comment: “small_site_factorization”.
+**`AlgebraicGeometry.smallEtalePushforwardIsoBigFactorization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L415). The attribute's comment: “small\_site\_factorization”.
 
 > **Stacks 021I, small-site factorization.** The small étale direct image is canonically the
 > composite of inclusion into the big étale topos over `T`, big-site direct image along `f`, and
@@ -838,7 +838,7 @@ public noncomputable def smallEtalePushforwardIsoBigFactorization :
           (bigEtaleToSmallEtaleMorphism B S.obj S.property).pushforward
 ```
 
-**`AlgebraicGeometry.smallEtalePushforwardIsoDirectFactorization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L439). The attribute's comment: “small_site_factorization”.
+**`AlgebraicGeometry.smallEtalePushforwardIsoDirectFactorization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L439). The attribute's comment: “small\_site\_factorization”.
 
 > **Stacks 021I, small-site factorization.** The small étale direct image is canonically the
 > composite of the direct morphism `i_f` to the big étale topos over `S` and its projection.
@@ -854,8 +854,8 @@ public noncomputable def smallEtalePushforwardIsoDirectFactorization :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.smallEtaleBaseChange_comp_inclusion`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L153), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L157) (StacksFrontier): “commutative_diagram”.
-- [`CategoryTheory.Functor.sheafPushforwardContinuous_obj_obj_obj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPushforwardContinuous_obj_obj_obj#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L450) (StacksFrontier): “small_site_pushforward”.
+- [`AlgebraicGeometry.smallEtaleBaseChange_comp_inclusion`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L153), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L157) (StacksFrontier): “commutative\_diagram”.
+- [`CategoryTheory.Functor.sheafPushforwardContinuous_obj_obj_obj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPushforwardContinuous_obj_obj_obj#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L450) (StacksFrontier): “small\_site\_pushforward”.
 
 ## Tag 021J, a lemma
 

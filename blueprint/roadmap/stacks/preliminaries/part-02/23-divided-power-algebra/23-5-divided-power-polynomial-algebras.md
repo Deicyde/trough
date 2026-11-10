@@ -87,7 +87,7 @@ public theorem existsUnique_dPMorphism_from_dividedPowerPolynomial
 
 [Tag 07H6](https://stacks.math.columbia.edu/tag/07H6) in the Stacks Project.
 
-**`DividedPowers.finiteStageMap_isDPMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean#L335). The attribute's comment: “compatible_divided_powers”.
+**`DividedPowers.finiteStageMap_isDPMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean#L335). The attribute's comment: “compatible\_divided\_powers”.
 
 > Transition maps between finite stages preserve the canonical divided powers.
 
@@ -100,7 +100,7 @@ public theorem finiteStageMap_isDPMorphism (A : DividedPowerRing.{u})
       (finiteStageMap A h).toRingHom
 ```
 
-**`DividedPowers.setIndexedDividedPowerPolynomialDividedPowers`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean, line 507](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean#L507). The attribute's comment: “compatible_divided_powers”.
+**`DividedPowers.setIndexedDividedPowerPolynomialDividedPowers`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean, line 507](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean#L507). The attribute's comment: “compatible\_divided\_powers”.
 
 > The divided powers on the distinguished ideal of the divided power polynomial algebra
 > on an arbitrary type of variables, induced from all finite-variable subalgebras.
@@ -111,7 +111,7 @@ public noncomputable def setIndexedDividedPowerPolynomialDividedPowers
     _root_.DividedPowers (dividedPowerPolynomialIdeal A.ideal W)
 ```
 
-**`DividedPowers.finiteStageInclusion_isDPMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean, line 678](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean#L678). The attribute's comment: “compatible_divided_powers”.
+**`DividedPowers.finiteStageInclusion_isDPMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean, line 678](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean#L678). The attribute's comment: “compatible\_divided\_powers”.
 
 > Every finite-stage inclusion preserves divided powers induced on the colimit.
 
@@ -124,7 +124,7 @@ public theorem finiteStageInclusion_isDPMorphism (A : DividedPowerRing.{u})
       (finiteStageInclusion A E).toRingHom
 ```
 
-**`DividedPowers.setIndexedDividedPowerPolynomialDividedPowers_dpow_variable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean, line 692](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean#L692). The attribute's comment: “compatible_divided_powers”.
+**`DividedPowers.setIndexedDividedPowerPolynomialDividedPowers_dpow_variable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean, line 692](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean#L692). The attribute's comment: “compatible\_divided\_powers”.
 
 > The induced divided powers send a variable to its divided power monomial.
 
@@ -136,7 +136,7 @@ public theorem setIndexedDividedPowerPolynomialDividedPowers_dpow_variable
       dividedPowerPolynomialVariableMonomial A i n
 ```
 
-**`DividedPowers.setIndexedDividedPowerPolynomialCoefficient_isDPMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean, line 717](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean#L717). The attribute's comment: “compatible_divided_powers”.
+**`DividedPowers.setIndexedDividedPowerPolynomialCoefficient_isDPMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean, line 717](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean#L717). The attribute's comment: “compatible\_divided\_powers”.
 
 > The coefficient map is a morphism of divided power rings.
 
@@ -148,7 +148,7 @@ public theorem setIndexedDividedPowerPolynomialCoefficient_isDPMorphism
       (algebraMap A (setIndexedDividedPowerPolynomialAlgebra A W))
 ```
 
-**`DividedPowers.setIndexedDividedPowerPolynomialDividedPowers_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean, line 760](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean#L760). The attribute's comment: “compatible_divided_powers”.
+**`DividedPowers.setIndexedDividedPowerPolynomialDividedPowers_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean, line 760](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexed.lean#L760). The attribute's comment: “compatible\_divided\_powers”.
 
 > Compatibility with every finite stage uniquely determines the induced divided powers.
 
@@ -162,7 +162,7 @@ public theorem setIndexedDividedPowerPolynomialDividedPowers_unique
     δ = setIndexedDividedPowerPolynomialDividedPowers A W
 ```
 
-**`DividedPowers.existsUnique_dPMorphism_from_setIndexedDividedPowerPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexedUniversalProperty.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexedUniversalProperty.lean#L100). The attribute's comment: “set_indexed_universal_property”.
+**`DividedPowers.existsUnique_dPMorphism_from_setIndexedDividedPowerPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexedUniversalProperty.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/SetIndexedUniversalProperty.lean#L100). The attribute's comment: “set\_indexed\_universal\_property”.
 
 > The universal property of a divided power polynomial algebra on an arbitrary type
 > of variables: a coefficient morphism and arbitrary images in the target ideal admit
@@ -179,7 +179,7 @@ public theorem existsUnique_dPMorphism_from_setIndexedDividedPowerPolynomial
         ∀ i : W, φ (dividedPowerPolynomialVariable A i) = (k i : C))
 ```
 
-**`DividedPowers.finiteVariableInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean#L78). The attribute's comment: “finite_variable_inclusion”.
+**`DividedPowers.finiteVariableInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean#L78). The attribute's comment: “finite\_variable\_inclusion”.
 
 > The canonical inclusion from the divided power polynomial algebra in `s` variables to
 > the one in `t` variables.
@@ -190,7 +190,7 @@ public noncomputable def finiteVariableInclusion (A : Type u) [CommRing A]
     DividedPowerAlgebra A (Fin s →₀ A) →ₐ[A] DividedPowerAlgebra A (Fin t →₀ A)
 ```
 
-**`DividedPowers.finiteVariableInclusion_variableMonomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean#L85). The attribute's comment: “finite_variable_inclusion”.
+**`DividedPowers.finiteVariableInclusion_variableMonomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean#L85). The attribute's comment: “finite\_variable\_inclusion”.
 
 > The inclusion preserves each divided power monomial in an existing variable.
 
@@ -201,7 +201,7 @@ public theorem finiteVariableInclusion_variableMonomial (A : Type u) [CommRing A
       dividedPowerPolynomialVariableMonomial A (Fin.castLE h i) n
 ```
 
-**`DividedPowers.setIndexedDividedPowerPolynomialAlgebra`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean#L93). The attribute's comment: “set_indexed_divided_power_polynomial_algebra”.
+**`DividedPowers.setIndexedDividedPowerPolynomialAlgebra`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean#L93). The attribute's comment: “set\_indexed\_divided\_power\_polynomial\_algebra”.
 
 > The divided power polynomial algebra with one variable for each element of `W`.
 
@@ -210,7 +210,7 @@ public abbrev setIndexedDividedPowerPolynomialAlgebra
     (A : Type u) [CommRing A] (W : Type w)
 ```
 
-**`DividedPowers.finiteStageMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean#L99). The attribute's comment: “set_indexed_divided_power_polynomial_algebra”.
+**`DividedPowers.finiteStageMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean#L99). The attribute's comment: “set\_indexed\_divided\_power\_polynomial\_algebra”.
 
 > The transition map between the finite-variable divided power polynomial algebras.
 
@@ -220,7 +220,7 @@ public noncomputable def finiteStageMap (A : Type u) [CommRing A] {W : Type w}
     DividedPowerAlgebra A (E →₀ A) →ₐ[A] DividedPowerAlgebra A (F →₀ A)
 ```
 
-**`DividedPowers.finiteStageInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean#L107). The attribute's comment: “set_indexed_divided_power_polynomial_algebra”.
+**`DividedPowers.finiteStageInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean#L107). The attribute's comment: “set\_indexed\_divided\_power\_polynomial\_algebra”.
 
 > The canonical map from a finite-variable algebra into the set-indexed algebra.
 
@@ -231,7 +231,7 @@ public noncomputable def finiteStageInclusion (A : Type u) [CommRing A] {W : Typ
       setIndexedDividedPowerPolynomialAlgebra A W
 ```
 
-**`DividedPowers.finiteStageInclusion_existsUnique_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean#L178). The attribute's comment: “set_indexed_divided_power_polynomial_algebra”.
+**`DividedPowers.finiteStageInclusion_existsUnique_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean#L178). The attribute's comment: “set\_indexed\_divided\_power\_polynomial\_algebra”.
 
 > A compatible family of algebra maps out of all finite stages descends uniquely to the
 > set-indexed divided power polynomial algebra.
@@ -248,7 +248,7 @@ public theorem finiteStageInclusion_existsUnique_lift (A : Type u) [CommRing A]
 
 Declarations registered for the tag:
 
-- [`DividedPowers.dividedPowerPolynomialIdeal`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/Basic.lean#L324), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean#L251) (StacksFrontier): “set_indexed_divided_power_polynomial_algebra”.
+- [`DividedPowers.dividedPowerPolynomialIdeal`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/Basic.lean#L324), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Polynomial/Stages.lean#L251) (StacksFrontier): “set\_indexed\_divided\_power\_polynomial\_algebra”.
 
 ## Tag 07GS, a lemma
 

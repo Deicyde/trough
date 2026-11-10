@@ -156,7 +156,7 @@ theorem nlMap_canonical_isQuasiIso (P : Generators R S ι) (φ : P.Hom (canonica
 
 [Tag 08Q1](https://stacks.math.columbia.edu/tag/08Q1) in the Stacks Project.
 
-**`natExt_cotangent_subsingleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Localization.lean, line 1228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NaiveCotangent/Localization.lean#L1228). The attribute's comment: “Ingredient only, and only for the variables presentation B = MvPolynomial ι A: the degree-1 term vanishes. The homotopy equivalence NL_{B/A} ≃ (0 → Ω_{B/A}) is not stated.”.
+**`natExt_cotangent_subsingleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Localization.lean, line 1228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NaiveCotangent/Localization.lean#L1228). The attribute's comment: “Ingredient only, and only for the variables presentation B = MvPolynomial ι A: the degree-1 term vanishes. The homotopy equivalence NL\_\{B/A} ≃ (0 → Ω\_\{B/A}) is not stated.”.
 
 > The degree one module of `NL_{B/A}` vanishes for the presentation `natExt A ι` of
 > `B = MvPolynomial ι A`.
@@ -166,7 +166,7 @@ theorem natExt_cotangent_subsingleton (A : Type*) [CommRing A] (ι : Type*) :
     Subsingleton ((natExt A ι).Cotangent)
 ```
 
-**`natExt_toKaehler_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Localization.lean, line 1246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NaiveCotangent/Localization.lean#L1246). The attribute's comment: “Ingredient only, and only for the variables presentation B = MvPolynomial ι A: the degree-0 term is Ω via the augmentation. The homotopy equivalence NL_{B/A} ≃ (0 → Ω_{B/A}) is not stated.”.
+**`natExt_toKaehler_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/Localization.lean, line 1246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NaiveCotangent/Localization.lean#L1246). The attribute's comment: “Ingredient only, and only for the variables presentation B = MvPolynomial ι A: the degree-0 term is Ω via the augmentation. The homotopy equivalence NL\_\{B/A} ≃ (0 → Ω\_\{B/A}) is not stated.”.
 
 > The augmentation `P.toKaehler` is a `B`-linear isomorphism of `P.CotangentSpace` onto
 > `Ω[B⁄A]` for the presentation `P = natExt A ι`.

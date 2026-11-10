@@ -14,7 +14,7 @@ Section 59.28 of the Stacks Project, [Tag 03PK](https://stacks.math.columbia.edu
 
 [Tag 03PL](https://stacks.math.columbia.edu/tag/03PL) in the Stacks Project.
 
-**`AlgebraicGeometry.kummerSequence_shortExact_bigEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Etale.lean, line 526](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Etale.lean#L526). The attribute's comment: “big étale site”. References: SGA 1 XI (6.1), “exact sequence (big)”; SGA 4 XVIII (1.6.1), “m = O_X (Y empty)”; SGA 4 IX (3.2), “big étale site”; SGA 4½ Arcata (2.2.5), “more general”; SGA 4½ Sommes trig (4.7), “special case”; SGA 7 IX (14.3), “special case”.
+**`AlgebraicGeometry.kummerSequence_shortExact_bigEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Etale.lean, line 526](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Etale.lean#L526). The attribute's comment: “big étale site”. References: SGA 1 XI (6.1), “exact sequence (big)”; SGA 4 XVIII (1.6.1), “m = O\_X (Y empty)”; SGA 4 IX (3.2), “big étale site”; SGA 4½ Arcata (2.2.5), “more general”; SGA 4½ Sommes trig (4.7), “special case”; SGA 7 IX (14.3), “special case”.
 
 > The Kummer sequence of abelian sheaves on the big étale site is short exact
 > when the exponent is invertible on the base.
@@ -107,7 +107,7 @@ public theorem scalarTranslate_pairIso (S : Scheme.{u}) (n : ℕ)
 
 [Tag 040Q](https://stacks.math.columbia.edu/tag/040Q) in the Stacks Project.
 
-**`AlgebraicGeometry.pairIso_unitPair_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Basic.lean, line 841](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Basic.lean#L841). The attribute's comment: “the pair side of the identification for pairs whose invertible sheaf is the structure sheaf: two such pairs are isomorphic exactly when their trivializing units agree modulo nth powers of global units, so the isomorphism classes of such pairs are the global units modulo nth powers; the cohomological side is AlgebraicGeometry.pairIso_iff_kummerBoundary_eq”.
+**`AlgebraicGeometry.pairIso_unitPair_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Basic.lean, line 841](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Basic.lean#L841). The attribute's comment: “the pair side of the identification for pairs whose invertible sheaf is the structure sheaf: two such pairs are isomorphic exactly when their trivializing units agree modulo nth powers of global units, so the isomorphism classes of such pairs are the global units modulo nth powers; the cohomological side is AlgebraicGeometry.pairIso\_iff\_kummerBoundary\_eq”.
 
 > Two pairs whose invertible sheaf is the structure sheaf are isomorphic exactly when their
 > trivializing units differ by the `n`th power of a global unit; so the isomorphism classes of such
@@ -177,7 +177,7 @@ public theorem basePairCohomologyClassHom_bijective
     Function.Bijective (basePairCohomologyClassHom B S hS τ n hroot)
 ```
 
-**`AlgebraicGeometry.pairClassesAddEquivH1Etale`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Comparison040Q.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Comparison040Q.lean#L158). The attribute's comment: “the etale statement: for n invertible on S, H^1_etale(S, mu_n) is the group of pairs (L, alpha) up to isomorphism, as an isomorphism of abelian groups”.
+**`AlgebraicGeometry.pairClassesAddEquivH1Etale`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Comparison040Q.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Comparison040Q.lean#L158). The attribute's comment: “the etale statement: for n invertible on S, H^1\_etale(S, mu\_n) is the group of pairs (L, alpha) up to isomorphism, as an isomorphism of abelian groups”.
 
 > **Stacks Project, Tag 040Q, the étale statement.**  For `n` invertible on `S`,
 > `H¹_étale(S, μ_n)` is the group of pairs `(ℒ, α)` — an invertible `𝒪_S`-module with a
@@ -191,7 +191,7 @@ public noncomputable def pairClassesAddEquivH1Etale
         (BigFppfOver.toScheme B S hS) (unitsPresheaf_isSheaf_base B S hS .etale) n) 1
 ```
 
-**`AlgebraicGeometry.pairClassesAddEquivH1Fppf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Comparison040Q.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Comparison040Q.lean#L172). The attribute's comment: “the fppf statement: for every positive n, with no invertibility hypothesis, H^1_fppf(S, mu_n) is the group of pairs (L, alpha) up to isomorphism, as an isomorphism of abelian groups”.
+**`AlgebraicGeometry.pairClassesAddEquivH1Fppf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Comparison040Q.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Comparison040Q.lean#L172). The attribute's comment: “the fppf statement: for every positive n, with no invertibility hypothesis, H^1\_fppf(S, mu\_n) is the group of pairs (L, alpha) up to isomorphism, as an isomorphism of abelian groups”.
 
 > **Stacks Project, Tag 040Q, the fppf statement.**  For every positive `n`, with no
 > invertibility hypothesis, `H¹_fppf(S, μ_n)` is the group of pairs `(ℒ, α)` up to
@@ -204,7 +204,7 @@ public noncomputable def pairClassesAddEquivH1Fppf (hn : 0 < n) :
         (BigFppfOver.toScheme B S hS) (unitsPresheaf_isSheaf_base B S hS .fppf) n) 1
 ```
 
-**`AlgebraicGeometry.pairClassesAddEquivH1Syntomic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Comparison040Q.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Comparison040Q.lean#L184). The attribute's comment: “the syntomic statement: for every positive n, with no invertibility hypothesis, H^1_syntomic(S, mu_n) is the group of pairs (L, alpha) up to isomorphism, as an isomorphism of abelian groups”.
+**`AlgebraicGeometry.pairClassesAddEquivH1Syntomic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Comparison040Q.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/Comparison040Q.lean#L184). The attribute's comment: “the syntomic statement: for every positive n, with no invertibility hypothesis, H^1\_syntomic(S, mu\_n) is the group of pairs (L, alpha) up to isomorphism, as an isomorphism of abelian groups”.
 
 > **Stacks Project, Tag 040Q, the syntomic statement.**  The same with fppf replaced by
 > syntomic.
@@ -280,7 +280,7 @@ public theorem exists_unitPairTrivialization_eq_basePairTriv
         basePairTriv B S hS τ n (unitPair S n f)
 ```
 
-**`AlgebraicGeometry.exists_kummerBoundary_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/ExactSequence.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/ExactSequence.lean#L162). The attribute's comment: “the image of the pairs with trivial invertible sheaf in H^1 of the roots of unity is exactly the kernel of the map to H^1 of the multiplicative group; so the injection of pairIso_iff_kummerBoundary_eq misses exactly the classes with nonzero image there”.
+**`AlgebraicGeometry.exists_kummerBoundary_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/ExactSequence.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/ExactSequence.lean#L162). The attribute's comment: “the image of the pairs with trivial invertible sheaf in H^1 of the roots of unity is exactly the kernel of the map to H^1 of the multiplicative group; so the injection of pairIso\_iff\_kummerBoundary\_eq misses exactly the classes with nonzero image there”.
 
 > **Stacks Project, Tag 040Q, the image of the pairs whose invertible sheaf is trivial.** A
 > class in `H¹(S, μ_n)` is the class of such a pair — equivalently, a Kummer boundary — exactly
@@ -294,7 +294,7 @@ theorem exists_kummerBoundary_iff (x : Sheaf.H (kummerSequence J F hF n).X₁ 1)
       Sheaf.H.map (kummerSequence J F hF n).f 1 x = 0
 ```
 
-**`AlgebraicGeometry.exists_kummerFirstCohomologyMap_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/ExactSequence.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/ExactSequence.lean#L184). The attribute's comment: “the image of H^1 of the roots of unity in H^1 of the multiplicative group is exactly the n-torsion; with the kernel computed by exists_kummerBoundary_iff this presents H^1(S, mu_n) as an extension of that n-torsion by the global units modulo nth powers. What remains between this and the full statement of 040Q is the abelian-group structure on AlgebraicGeometry.PairClasses, for which no AddCommGroup instance exists, together with the comparison homomorphism to H^1; Tag 03P8 is NOT the gap, being proved at Picard/MultiplicativeGroupFirstCohomology.lean:206”.
+**`AlgebraicGeometry.exists_kummerFirstCohomologyMap_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/ExactSequence.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/KummerTheory/ExactSequence.lean#L184). The attribute's comment: “the image of H^1 of the roots of unity in H^1 of the multiplicative group is exactly the n-torsion; with the kernel computed by exists\_kummerBoundary\_iff this presents H^1(S, mu\_n) as an extension of that n-torsion by the global units modulo nth powers. What remains between this and the full statement of 040Q is the abelian-group structure on AlgebraicGeometry.PairClasses, for which no AddCommGroup instance exists, together with the comparison homomorphism to H^1; Tag 03P8 is NOT the gap, being proved at Picard/MultiplicativeGroupFirstCohomology.lean:206”.
 
 > **Stacks Project, Tag 040Q, the image of `H¹(S, μ_n)` in `H¹(S, 𝐆_m)`.** It is exactly the
 > `n`-torsion subgroup, since the second map of the Kummer sequence induces multiplication by `n`

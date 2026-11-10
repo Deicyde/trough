@@ -225,7 +225,7 @@ def derivedTensorSheafHomAdjunction
       (derivedSheafHomBifunctor X).obj (op B)
 ```
 
-**`Stacks.Cohomology.DerivedInternalHomPullback.tensorHomEquivDinatural_ringedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackDinaturality.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackDinaturality.lean#L284). The attribute's comment: “dinaturality of the bijection of morphism groups of Tag 08DI in its internal-hom variable, read on a ringed space at the uncurried spelling of the derived tensor product; the companion clause in the source variable is tensorHomEquivNaturalLeft_ringedSpace”.
+**`Stacks.Cohomology.DerivedInternalHomPullback.tensorHomEquivDinatural_ringedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackDinaturality.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/InternalHomPullbackDinaturality.lean#L284). The attribute's comment: “dinaturality of the bijection of morphism groups of Tag 08DI in its internal-hom variable, read on a ringed space at the uncurried spelling of the derived tensor product; the companion clause in the source variable is tensorHomEquivNaturalLeft\_ringedSpace”.
 
 > **The bijection of Tag 08DI on a ringed space is dinatural in its internal-hom variable.**
 > This is `Transpose.TensorHomEquivDinatural` for the bijection of Tag 08DI, the companion of
@@ -595,7 +595,7 @@ theorem derivedCurryIso_natural
 > `RSheafHom(QA ⊗^L_O QB, QI) ≅ Q SheafHom(Tot(A ⊗_O B), I)`,
 >
 > the class of the complex-level currying isomorphism `SheafHom(A, SheafHom(B, I)) ≅
-> SheafHom(Tot(A ⊗_O B), I)`.
+> SheafHom(Tot(A ⊗\_O B), I)`.
 
 ```lean
 theorem derivedCurryIso_comparison
@@ -842,8 +842,8 @@ def derivedTensorHomInterchange
 > `RSheafHom(QC, QA ⊗^L_O QI) ≅ Q SheafHom(C, J)` with `J` the chosen K-injective resolution of
 > `Tot(A ⊗_O I)`,
 >
-> the class of the interchange morphism of complexes `Tot(A ⊗_O SheafHom(C, I)) ⟶
-> SheafHom(C, Tot(A ⊗_O I))` followed by the resolution augmentation.
+> the class of the interchange morphism of complexes `Tot(A ⊗\_O SheafHom(C, I)) ⟶
+> SheafHom(C, Tot(A ⊗\_O I))` followed by the resolution augmentation.
 
 ```lean
 theorem derivedTensorHomInterchange_comparison
@@ -1063,7 +1063,7 @@ def derivedPushforwardSheafHomMap
         (op ((derivedPushforward f).obj L))).obj ((derivedPushforward f).obj M)
 ```
 
-**`Stacks.Cohomology.ProjectionFormulaInternalHomOnRingedTopoi.derivedPushforwardSheafHomMap_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/ProjectionFormulaInternalHom.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/ProjectionFormulaInternalHom.lean#L435). The attribute's comment: “the defining adjunction property, variant: the special case of a morphism of ringed topoi presented by a morphism of sites; the tag for an arbitrary morphism of ringed topoi is Stacks.Cohomology.PushforwardInternalHomOfToposHom.derivedPushforwardSheafHomMap_homEquiv”.
+**`Stacks.Cohomology.ProjectionFormulaInternalHomOnRingedTopoi.derivedPushforwardSheafHomMap_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/ProjectionFormulaInternalHom.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/ProjectionFormulaInternalHom.lean#L435). The attribute's comment: “the defining adjunction property, variant: the special case of a morphism of ringed topoi presented by a morphism of sites; the tag for an arbitrary morphism of ringed topoi is Stacks.Cohomology.PushforwardInternalHomOfToposHom.derivedPushforwardSheafHomMap\_homEquiv”.
 
 > **The defining property of the canonical map of [Stacks, Tag 0B6D]**: its adjunct under the
 > tensor–internal-Hom bijection of [Stacks, Tag 08J8] on `D(O_D)` is the relative cup product of
@@ -1107,7 +1107,7 @@ def derivedPushforwardSheafHomMap
         (op ((derivedPushforward f).obj L))).obj ((derivedPushforward f).obj M)
 ```
 
-**`Stacks.Cohomology.PushforwardInternalHomOfToposHom.derivedPushforwardSheafHomMap_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/PushforwardInternalHomOfToposHom.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/PushforwardInternalHomOfToposHom.lean#L240). The attribute's comment: “the defining property: the 08J8 adjunct of the canonical map is the relative cup product of 0B6C followed by Rf_* of evaluation, for an arbitrary morphism of ringed topoi”.
+**`Stacks.Cohomology.PushforwardInternalHomOfToposHom.derivedPushforwardSheafHomMap_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/PushforwardInternalHomOfToposHom.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/PushforwardInternalHomOfToposHom.lean#L240). The attribute's comment: “the defining property: the 08J8 adjunct of the canonical map is the relative cup product of 0B6C followed by Rf\_* of evaluation, for an arbitrary morphism of ringed topoi”.
 
 > **The defining property of the canonical map of [Stacks, Tag 0B6D]**: its adjunct under the
 > tensor–internal-Hom bijection of [Stacks, Tag 08J8] on `D(O_D)` is the relative cup product of
@@ -1170,7 +1170,7 @@ def derivedPullbackSheafHomMap :
 
 [Tag 08JG](https://stacks.math.columbia.edu/tag/08JG) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedInternalHomBaseChangeOnTopoi.derivedBaseChangeSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHom.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHom.lean#L175). The attribute's comment: “derived_base_change_sheaf_hom_map, variant: the special case of a square of morphisms of ringed topoi presented by morphisms of sites; the tag for an arbitrary commutative square of morphisms of ringed topoi is Stacks.Cohomology.DerivedInternalHomBaseChangeOfToposHom.derivedBaseChangeSheafHomMap”.
+**`Stacks.Cohomology.DerivedInternalHomBaseChangeOnTopoi.derivedBaseChangeSheafHomMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHom.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHom.lean#L175). The attribute's comment: “derived\_base\_change\_sheaf\_hom\_map, variant: the special case of a square of morphisms of ringed topoi presented by morphisms of sites; the tag for an arbitrary commutative square of morphisms of ringed topoi is Stacks.Cohomology.DerivedInternalHomBaseChangeOfToposHom.derivedBaseChangeSheafHomMap”.
 
 > The base change map for the internal hom in the derived category (Stacks 08JG), for a square
 > of morphisms of sites.  For a
@@ -1194,7 +1194,7 @@ def derivedBaseChangeSheafHomMap :
             (op ((derivedPullback h).obj K))).obj ((derivedPullback h).obj L))
 ```
 
-**`Stacks.Cohomology.DerivedInternalHomBaseChangeOnTopoi.derivedBaseChangeSheafHomMap_adjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHom.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHom.lean#L201). The attribute's comment: “derived_base_change_sheaf_hom_map: adjoint characterization, variant: the special case of a square of morphisms of ringed topoi presented by morphisms of sites; the tag for an arbitrary commutative square of morphisms of ringed topoi is Stacks.Cohomology.DerivedInternalHomBaseChangeOfToposHom.derivedBaseChangeSheafHomMap_adjoint”.
+**`Stacks.Cohomology.DerivedInternalHomBaseChangeOnTopoi.derivedBaseChangeSheafHomMap_adjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHom.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedBaseChangeOfInternalHom.lean#L201). The attribute's comment: “derived\_base\_change\_sheaf\_hom\_map: adjoint characterization, variant: the special case of a square of morphisms of ringed topoi presented by morphisms of sites; the tag for an arbitrary commutative square of morphisms of ringed topoi is Stacks.Cohomology.DerivedInternalHomBaseChangeOfToposHom.derivedBaseChangeSheafHomMap\_adjoint”.
 
 > The adjoint characterization of the base change map (Stacks 08JG), for a square of morphisms
 > of sites.  Under the derived adjunction

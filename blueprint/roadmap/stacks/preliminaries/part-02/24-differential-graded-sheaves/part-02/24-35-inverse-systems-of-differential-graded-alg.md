@@ -63,7 +63,7 @@ theorem nonempty_iso_of_proIsoDerived {S : AlgebraSystem R}
 
 [Tag 0GZJ](https://stacks.math.columbia.edu/tag/0GZJ) in the Stacks Project.
 
-**`Koszul.powBaseTensorBalanceDerivedObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/PowBaseTensorBalanceDerived.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/PowBaseTensorBalanceDerived.lean#L136). The attribute's comment: “the identification M_n ⊗^𝐋_R K_t = M_n ⊗^𝐋_{K_n} (K_n ⊗_R K_t), objectwise”.
+**`Koszul.powBaseTensorBalanceDerivedObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/PowBaseTensorBalanceDerived.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/PowBaseTensorBalanceDerived.lean#L136). The attribute's comment: “the identification M\_n ⊗^𝐋\_R K\_t = M\_n ⊗^𝐋\_\{K\_n} (K\_n ⊗\_R K\_t), objectwise”.
 
 > **The first step of the proof of Tag 0GZJ, one index at a time:**
 > `M_m ⊗_{K_m}^𝐋 (K_m ⊗_R K_t) ≅ M_m ⊗_R^𝐋 K_t` in `D(B, d)`, for `m = b + k`.
@@ -78,7 +78,7 @@ def powBaseTensorBalanceDerivedObjIso (k : ℕ) :
       (powBaseDegreeZeroDerivedTensorTower f t hb bimod bimodTrans).obj k
 ```
 
-**`Koszul.nonempty_iso_of_isDerivedLimit_powBaseTensorBalance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/PowBaseTensorBalanceDerived.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/PowBaseTensorBalanceDerived.lean#L179). The attribute's comment: “the identification M_n ⊗^𝐋_R K_t = M_n ⊗^𝐋_{K_n} (K_n ⊗_R K_t), passed to R lim”.
+**`Koszul.nonempty_iso_of_isDerivedLimit_powBaseTensorBalance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/PowBaseTensorBalanceDerived.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/PowBaseTensorBalanceDerived.lean#L179). The attribute's comment: “the identification M\_n ⊗^𝐋\_R K\_t = M\_n ⊗^𝐋\_\{K\_n} (K\_n ⊗\_R K\_t), passed to R lim”.
 
 > **The first step of the proof of Tag 0GZJ, passed to derived limits:**
 > `R lim (M_m ⊗_R^𝐋 K_t) = R lim (M_m ⊗_{K_m}^𝐋 (K_m ⊗_R K_t))` in `D(B, d)`.
@@ -104,7 +104,7 @@ theorem nonempty_iso_of_isDerivedLimit_powBaseTensorBalance
     Nonempty (K ≅ K')
 ```
 
-**`Koszul.nonempty_iso_of_isDerivedLimit_powKoszulTensorBalance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/PowKoszulDerivedLimit.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/PowKoszulDerivedLimit.lean#L155). The attribute's comment: “R lim (M_n ⊗^𝐋_R K_t) = R lim (M_n ⊗^𝐋_{K_n} K_t)”.
+**`Koszul.nonempty_iso_of_isDerivedLimit_powKoszulTensorBalance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/PowKoszulDerivedLimit.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/PowKoszulDerivedLimit.lean#L155). The attribute's comment: “R lim (M\_n ⊗^𝐋\_R K\_t) = R lim (M\_n ⊗^𝐋\_\{K\_n} K\_t)”.
 
 > Let `R` be a ring, let `f₁, …, f_r ∈ R` and let `K_n` be the Koszul complex on `f₁^n, …, f_r^n`
 > viewed as a differential graded `R`-algebra. Let `(M_n)` be an object of `D(ℕ, (K_n))`. Then for
@@ -126,7 +126,7 @@ theorem nonempty_iso_of_isDerivedLimit_powKoszulTensorBalance
     Nonempty (K ≅ K')
 ```
 
-**`Koszul.powProIsoDerived`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/PowSystemsProIso.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/PowSystemsProIso.lean#L247). The attribute's comment: “the pro-isomorphism of ({}_nK_t) with (K_n ⊗_R K_t) in the derived category”.
+**`Koszul.powProIsoDerived`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/PowSystemsProIso.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/PowSystemsProIso.lean#L247). The attribute's comment: “the pro-isomorphism of (\{}\_nK\_t) with (K\_n ⊗\_R K\_t) in the derived category”.
 
 > **The second step of the proof of Tag 0GZJ:** the system `({}_{t+n}K_t)` and the system
 > `(K_{t+n} ⊗_R K_t)` of left differential graded modules over the Koszul algebras are

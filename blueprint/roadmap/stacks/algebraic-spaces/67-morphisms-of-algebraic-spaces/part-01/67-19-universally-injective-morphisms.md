@@ -80,7 +80,7 @@ theorem not_isSeparated_squaringMap (hchar : (2 : k) ≠ 0) :
     ¬ Space.IsSeparated B (Spec (.of k)) hk (squaringMap k B hk)
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.squaringMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMap.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMap.lean#L111). The attribute's comment: “part (1): the morphism X ⟶ 𝐀¹_k squaring the coordinate”.
+**`AlgebraicGeometry.AffineLineInvolution.squaringMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMap.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversallyInjective/SquaringMap.lean#L111). The attribute's comment: “part (1): the morphism X ⟶ 𝐀¹\_k squaring the coordinate”.
 
 > **Stacks 05VS, part (1).** The canonical morphism from the involution quotient to the
 > affine line, descended from squaring the coordinate: the point with coordinate `x` is sent to

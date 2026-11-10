@@ -53,7 +53,7 @@ def IsSubtopos (J : GrothendieckTopology C) (P : ObjectProperty (Sheaf J (Type w
 
 [Tag 08LW](https://stacks.math.columbia.edu/tag/08LW) in the Stacks Project.
 
-**`CategoryTheory.Sites.Subtopos.MorphismOfTopoi.isEmbedding_overLocalization_iff_isSubterminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/Subtopoi.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Subtopos/Subtopoi.lean#L183). The attribute's comment: “The localization j_F : E/F ⟶ E is an embedding of topoi, i.e. E/F is a subtopos of E, if and only if F is a subobject of the final object.”. References: SGA 4 IV (9.2.1), “(9.2.2) is an embedding”; SGA 4 VI (4.1), “open inclusion j”.
+**`CategoryTheory.Sites.Subtopos.MorphismOfTopoi.isEmbedding_overLocalization_iff_isSubterminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Subtopos/Subtopoi.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Subtopos/Subtopoi.lean#L183). The attribute's comment: “The localization j\_F : E/F ⟶ E is an embedding of topoi, i.e. E/F is a subtopos of E, if and only if F is a subobject of the final object.”. References: SGA 4 IV (9.2.1), “(9.2.2) is an embedding”; SGA 4 VI (4.1), “open inclusion j”.
 
 > **Stacks 08LW.** Let `E` be a topos and `F` an object of `E` (in the source, a sheaf on a
 > site `C`), and let `j_F : E/F ⟶ E` be the localization morphism of Stacks 04GZ, given by a right

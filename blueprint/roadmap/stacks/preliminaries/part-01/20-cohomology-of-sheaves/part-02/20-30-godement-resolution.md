@@ -14,7 +14,7 @@ Section 20.30 of the Stacks Project, [Tag 0FKR](https://stacks.math.columbia.edu
 
 [Tag 0FKS](https://stacks.math.columbia.edu/tag/0FKS) in the Stacks Project.
 
-**`AlgebraicGeometry.GodementResolution.isFlasque_iterate_modulePullbackPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/GodementResolution/Basic.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/GodementResolution/Basic.lean#L276). The attribute's comment: “each term f_* f^* ⋯ f_* f^* F is a flasque module”. References: SGA 4 XVII (4.2.3), “(i)”; SGA 4 XVII (4.2), “flasqueness of terms”.
+**`AlgebraicGeometry.GodementResolution.isFlasque_iterate_modulePullbackPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/GodementResolution/Basic.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/GodementResolution/Basic.lean#L276). The attribute's comment: “each term f\_* f^* ⋯ f\_* f^* F is a flasque module”. References: SGA 4 XVII (4.2.3), “(i)”; SGA 4 XVII (4.2), “flasqueness of terms”.
 
 > Every positive iterate `(f_* f^*)^(n+1) F` of a morphism out of a discrete space is a flasque
 > sheaf of modules: a sheaf on a discrete space is flasque, and pushforward preserves flasqueness.
@@ -28,7 +28,7 @@ theorem isFlasque_iterate_modulePullbackPushforward
         RingedSpaceModuleAdjunction.modulePushforward f).iterate (n + 1)).obj F))
 ```
 
-**`AlgebraicGeometry.GodementResolution.exists_functorial_flasque_godementComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/GodementResolution/Basic.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/GodementResolution/Basic.lean#L518). The attribute's comment: “the functorial complex of flasque terms f_* f^* ⋯ f_* f^* F”. References: SGA 4 XVII (4.2.3), “(i)”; SGA 4 XVII (4.2), “functorial flasque terms”.
+**`AlgebraicGeometry.GodementResolution.exists_functorial_flasque_godementComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/GodementResolution/Basic.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/GodementResolution/Basic.lean#L518). The attribute's comment: “the functorial complex of flasque terms f\_* f^* ⋯ f\_* f^* F”. References: SGA 4 XVII (4.2.3), “(i)”; SGA 4 XVII (4.2), “functorial flasque terms”.
 
 > **Stacks 0FKS**, the complex and its flasque terms. For a ringed space `(X, O_X)` there is a
 > functor `G` from sheaves of `O_X`-modules to cochain complexes, with an augmentation `η` from the
@@ -54,7 +54,7 @@ theorem exists_functorial_flasque_godementComplex (X : RingedSpace.{u, u}) :
           ((G.obj F).X n))
 ```
 
-**`AlgebraicGeometry.GodementResolution.homotopyEquivalences_stalk_godementAugmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/GodementResolution/StalkHomotopy.lean, line 520](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/GodementResolution/StalkHomotopy.lean#L520). The attribute's comment: “the stalkwise homotopy equivalence F_x[0] ≃ ((f_* f^* F)_x → ⋯)”. References: SGA 4 XVII (4.2.3), “(ii)”; SGA 4 XVII (4.2), “stalkwise homotopy”; SGA 4 XVII (4.2.9), “special case”.
+**`AlgebraicGeometry.GodementResolution.homotopyEquivalences_stalk_godementAugmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/GodementResolution/StalkHomotopy.lean, line 520](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/GodementResolution/StalkHomotopy.lean#L520). The attribute's comment: “the stalkwise homotopy equivalence F\_x[0] ≃ ((f\_* f^* F)\_x → ⋯)”. References: SGA 4 XVII (4.2.3), “(ii)”; SGA 4 XVII (4.2), “stalkwise homotopy”; SGA 4 XVII (4.2.9), “special case”.
 
 > **Clause (5) of [Stacks, Tag 0FKS]**, at one sheaf and one point. The augmentation
 > `F[0] ⟶ (f_* f^* F → f_* f^* f_* f^* F → ⋯)` of the Godement complex, read on the stalk at `x`,
@@ -73,7 +73,7 @@ theorem homotopyEquivalences_stalk_godementAugmentation (x : X)
         (ComplexShape.up ℕ)).map ((godementAugmentation X).app F))
 ```
 
-**`AlgebraicGeometry.GodementResolution.quasiIso_godementAugmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/GodementResolution/StalkHomotopy.lean, line 558](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/GodementResolution/StalkHomotopy.lean#L558). The attribute's comment: “exactness of the augmented complex 0 → F → f_* f^* F → ⋯”. References: SGA 4 XVII (4.2.3), “(ii)”; SGA 4 XVII (4.2), “augmented exactness”.
+**`AlgebraicGeometry.GodementResolution.quasiIso_godementAugmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/GodementResolution/StalkHomotopy.lean, line 558](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/GodementResolution/StalkHomotopy.lean#L558). The attribute's comment: “exactness of the augmented complex 0 → F → f\_* f^* F → ⋯”. References: SGA 4 XVII (4.2.3), “(ii)”; SGA 4 XVII (4.2), “augmented exactness”.
 
 > **Clause (3) of [Stacks, Tag 0FKS]: the augmented Godement complex is exact.** The
 > augmentation `F[0] ⟶ G(F)` is a quasi-isomorphism, so

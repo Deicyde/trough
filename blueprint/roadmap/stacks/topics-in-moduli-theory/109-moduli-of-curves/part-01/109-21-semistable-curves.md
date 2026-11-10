@@ -50,7 +50,7 @@ abbrev IsSemistableCurveFamily (X : CurveFamily B hZ) : Prop
 
 [Tag 0E70](https://stacks.math.columbia.edu/tag/0E70) in the Stacks Project.
 
-**`AlgebraicGeometry.curvesSemistable_isOpenSubstack_and_factors_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableSubstack.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableSubstack.lean#L97). The attribute's comment: “the whole statement: the open substack Curves^{semistable} and parts (1) and (2)”.
+**`AlgebraicGeometry.curvesSemistable_isOpenSubstack_and_factors_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableSubstack.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableSubstack.lean#L97). The attribute's comment: “the whole statement: the open substack Curves^\{semistable} and parts (1) and (2)”.
 
 > There is an open substack `Curves^{semistable} ⊂ Curves` — the strictly full subcategory of
 > semistable families of curves (Stacks 0E6Z), whose inclusion is representable by algebraic spaces
@@ -115,7 +115,7 @@ theorem curvesSemistable_isOpenSubstack_and_factors_iff :
 
 [Tag 0E71](https://stacks.math.columbia.edu/tag/0E71) in the Stacks Project.
 
-**`AlgebraicGeometry.curvesSemistableOfGenus_isOpenSubstack_and_factors_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableGenusDecomposition.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableGenusDecomposition.lean#L93). The attribute's comment: “the decomposition Curves^{semistable} = ∐_{g ≥ 1} Curves^{semistable}_g into open and closed substacks, and part (1)”.
+**`AlgebraicGeometry.curvesSemistableOfGenus_isOpenSubstack_and_factors_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableGenusDecomposition.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableGenusDecomposition.lean#L93). The attribute's comment: “the decomposition Curves^\{semistable} = ∐\_\{g ≥ 1} Curves^\{semistable}\_g into open and closed substacks, and part (1)”.
 
 > For every `g`, `Curves^{semistable}_g` is an open substack of `Curves` contained in
 > `Curves^{semistable}`: its inclusion is representable by algebraic spaces and an open immersion.
@@ -214,7 +214,7 @@ theorem factors_curvesSemistableOfGenus_over_field_iff_noRationalTail_and_global
 
 [Tag 0E72](https://stacks.math.columbia.edu/tag/0E72) in the Stacks Project.
 
-**`AlgebraicGeometry.isSmoothOverIntegers_curvesSemistable_and_curvesSemistableOfGenus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableSmoothness.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableSmoothness.lean#L64). The attribute's comment: “both morphisms Curves^{semistable} → Spec(ℤ) and Curves^{semistable}_g → Spec(ℤ), for every g”.
+**`AlgebraicGeometry.isSmoothOverIntegers_curvesSemistable_and_curvesSemistableOfGenus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableSmoothness.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesSemistableSmoothness.lean#L64). The attribute's comment: “both morphisms Curves^\{semistable} → Spec(ℤ) and Curves^\{semistable}\_g → Spec(ℤ), for every g”.
 
 > The morphisms `Curves^{semistable} → Spec(ℤ)` and, for every `g`,
 > `Curves^{semistable}_g → Spec(ℤ)` are smooth. Here `Curves^{semistable}` and

@@ -14,7 +14,7 @@ Section 45.6 of the Stacks Project, [Tag 0FGP](https://stacks.math.columbia.edu/
 
 [Tag 0FGQ](https://stacks.math.columbia.edu/tag/0FGQ) in the Stacks Project.
 
-**`Stacks.WeilCohomology.isIso_projectiveBundleFormula`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveBundleMotive.lean, line 731](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveBundleMotive.lean#L731). The attribute's comment: “the projective space bundle formula: the sum of the c_i = c_1(pr_2^*O_P(1))^i ∩ [Gamma_p], from the direct sum of the h(X)(-i), i < r, to h(P), is an isomorphism in M_k”.
+**`Stacks.WeilCohomology.isIso_projectiveBundleFormula`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveBundleMotive.lean, line 731](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveBundleMotive.lean#L731). The attribute's comment: “the projective space bundle formula: the sum of the c\_i = c\_1(pr\_2^*O\_P(1))^i ∩ [Gamma\_p], from the direct sum of the h(X)(-i), i < r, to h(P), is an isomorphism in M\_k”.
 
 > **Stacks Project, Tag 0FGQ (the projective space bundle formula).** Let `k` be a field, `X` a
 > smooth projective scheme over `k`, `ℰ` a finite locally free `𝒪_X`-module of rank `r` and
@@ -50,8 +50,8 @@ theorem isIso_projectiveBundleFormula :
 >
 > with integer coefficients. The identity is stated dimension by dimension, which is the whole of
 > it since `[Δ_P] = ∑_m [Δ_P]_m`: for every `m`, the part of dimension `m + n` of the cycle of the
-> diagonal `Δ_P ⊂ P ×_k P` is the sum over `i ≤ n` of `c_{n-i}(pr₁^*𝒮^∨) ∩ c₁(pr₂^*𝒪_P(1))^i ∩
-> (p × p)^*[Δ_X]_m`, where `[Δ_X]_m` is the part of dimension `m` of the cycle of `Δ_X ⊂ X ×_k X`,
+> diagonal `Δ_P ⊂ P ×_k P` is the sum over `i ≤ n` of `c\_\{n-i}(pr₁^*𝒮^∨) ∩ c₁(pr₂^*𝒪\_P(1))^i ∩
+> (p × p)^*[Δ\_X]\_m`, where `[Δ\_X]\_m` is the part of dimension `m` of the cycle of `Δ\_X ⊂ X ×\_k X`,
 > `(p × p)^*` is flat pullback (of relative dimension `2n`), `c₁(-)^i ∩` is the `i`-th power of the
 > first Chern class cap (Stacks 02SO) and `c_j(-) ∩` the Chern class cap of Stacks 02U6.
 >

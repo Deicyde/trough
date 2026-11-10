@@ -300,7 +300,7 @@ theorem quotientBaseMap_example :
       ¬ ∀ q : Space.ValuativeSquare (quotientBaseMap k K hdegree σ hσ B hS), Nonempty q.Lift
 ```
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.not_nonempty_hom_formalDisk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginValuativeLift.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginValuativeLift.lean#L129). The attribute's comment: “no_unextended_lift”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.not_nonempty_hom_formalDisk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginValuativeLift.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginValuativeLift.lean#L129). The attribute's comment: “no\_unextended\_lift”.
 
 > **Stacks 03KI**, third assertion of the example. For a quadratic Galois extension `K/k`,
 > the formal disc over `k` has no point of the quadratic Galois twisted doubled origin lying
@@ -363,7 +363,7 @@ theorem valuativeCriterion_existence_of_isPullback
 
 [Tag 03IZ](https://stacks.math.columbia.edu/tag/03IZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.valuativeCriterionExistence_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Composition.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Composition.lean#L68). The attribute's comment: “composition_valuative_existence”.
+**`AlgebraicGeometry.Space.valuativeCriterionExistence_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Composition.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Composition.lean#L68). The attribute's comment: “composition\_valuative\_existence”.
 
 > The existence part of the valuative criterion is preserved under composition.
 
@@ -375,7 +375,7 @@ public theorem valuativeCriterionExistence_comp
     ValuativeCriterion.Existence (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.valuativeCriterion_uniqueness_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Composition.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Composition.lean#L130). The attribute's comment: “composition_valuative_uniqueness”.
+**`AlgebraicGeometry.Space.valuativeCriterion_uniqueness_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Composition.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/Composition.lean#L130). The attribute's comment: “composition\_valuative\_uniqueness”.
 
 > Uniqueness of lifts in valuative squares is stable under composition.
 

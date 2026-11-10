@@ -45,7 +45,7 @@ abbrev IsAbsolutelyWeaklyNormalRing (A : Type*) [CommRing A] : Prop
 
 [Tag 0EUM](https://stacks.math.columbia.edu/tag/0EUM) in the Stacks Project.
 
-**`isSeminormalRing_propertyIsLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/Local.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/Local.lean#L130). The attribute's comment: “seminormal_local_property”.
+**`isSeminormalRing_propertyIsLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/Local.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/Local.lean#L130). The attribute's comment: “seminormal\_local\_property”.
 
 > Seminormality is a local property of commutative rings.
 
@@ -55,7 +55,7 @@ theorem isSeminormalRing_propertyIsLocal :
       (fun (R : Type u) [CommRing R] => IsSeminormalRing R)
 ```
 
-**`isAbsolutelyWeaklyNormalRing_propertyIsLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/Local.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/Local.lean#L445). The attribute's comment: “absolutely_weakly_normal_local_property”.
+**`isAbsolutelyWeaklyNormalRing_propertyIsLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/Local.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/Local.lean#L445). The attribute's comment: “absolutely\_weakly\_normal\_local\_property”.
 
 > Being an absolutely weakly normal commutative ring is a local property of rings.
 
@@ -188,7 +188,7 @@ theorem absolutelyWeaklyNormal_isReduced {X : Scheme.{u}}
 
 [Tag 0EUR](https://stacks.math.columbia.edu/tag/0EUR) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_lift_to_absoluteWeakNormalization_iff_isAbsolutelyWeaklyNormalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationCharacterization/Basic.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationCharacterization/Basic.lean#L243). The attribute's comment: “awn_characterization”.
+**`AlgebraicGeometry.isIso_lift_to_absoluteWeakNormalization_iff_isAbsolutelyWeaklyNormalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationCharacterization/Basic.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationCharacterization/Basic.lean#L243). The attribute's comment: “awn\_characterization”.
 
 > A universally homeomorphic `A`-algebra is the absolute weak normalization of `A`
 > precisely when its underlying ring is absolutely weakly normal.
@@ -204,7 +204,7 @@ public theorem isIso_lift_to_absoluteWeakNormalization_iff_isAbsolutelyWeaklyNor
       IsAbsolutelyWeaklyNormalRing B
 ```
 
-**`AlgebraicGeometry.existsUnique_absoluteWeakNormalizationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationFunctorial/Basic.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationFunctorial/Basic.lean#L478). The attribute's comment: “awn_functoriality”.
+**`AlgebraicGeometry.existsUnique_absoluteWeakNormalizationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationFunctorial/Basic.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationFunctorial/Basic.lean#L478). The attribute's comment: “awn\_functoriality”.
 
 > A ring homomorphism induces a unique compatible homomorphism between absolute weak
 > normalizations.
@@ -217,7 +217,7 @@ public theorem existsUnique_absoluteWeakNormalizationMap
         (algebraMap A' (AbsoluteWeakNormalization A')).comp φ
 ```
 
-**`AlgebraicGeometry.absoluteWeakNormalizationCategoryObject_isTerminal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationTerminal/Basic.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationTerminal/Basic.lean#L270). The attribute's comment: “awn_final”.
+**`AlgebraicGeometry.absoluteWeakNormalizationCategoryObject_isTerminal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationTerminal/Basic.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationTerminal/Basic.lean#L270). The attribute's comment: “awn\_final”.
 
 > The absolute weak normalization of `A` is final among `A`-algebras which give universal
 > homeomorphisms on spectra.
@@ -228,7 +228,7 @@ public noncomputable def absoluteWeakNormalizationCategoryObject_isTerminal
     IsTerminal (absoluteWeakNormalizationCategoryObject A)
 ```
 
-**`Algebra.seminormalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RingColimit.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RingColimit.lean#L135). The attribute's comment: “seminormalization_of_a_ring”.
+**`Algebra.seminormalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RingColimit.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RingColimit.lean#L135). The attribute's comment: “seminormalization\_of\_a\_ring”.
 
 > The seminormalization `Aˢⁿ` is the colimit of the finitely presented `A`-algebras
 > which induce a universal homeomorphism on spectra and isomorphisms on residue fields. Its
@@ -238,7 +238,7 @@ public noncomputable def absoluteWeakNormalizationCategoryObject_isTerminal
 def seminormalization (A : Type u) [CommRing A] : CommAlgCat.{u} A
 ```
 
-**`Algebra.AbsoluteWeakNormalizationIndex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RingColimit.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RingColimit.lean#L164). The attribute's comment: “absolute_weak_normalization_of_a_ring”.
+**`Algebra.AbsoluteWeakNormalizationIndex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RingColimit.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RingColimit.lean#L164). The attribute's comment: “absolute\_weak\_normalization\_of\_a\_ring”.
 
 > A small category of representatives of finitely presented `A`-algebras whose maps on
 > spectra are universal homeomorphisms.
@@ -247,7 +247,7 @@ def seminormalization (A : Type u) [CommRing A] : CommAlgCat.{u} A
 abbrev AbsoluteWeakNormalizationIndex (A : Type u) [CommRing A] : Type u
 ```
 
-**`Algebra.AbsoluteWeakNormalization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RingColimit.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RingColimit.lean#L195). The attribute's comment: “absolute_weak_normalization_of_a_ring”.
+**`Algebra.AbsoluteWeakNormalization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RingColimit.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/RingColimit.lean#L195). The attribute's comment: “absolute\_weak\_normalization\_of\_a\_ring”.
 
 > The absolute weak normalization `Aᵃʷⁿ` is the colimit of all finitely presented
 > `A`-algebras whose maps on spectra are universal homeomorphisms. Its inherited `A`-algebra
@@ -257,7 +257,7 @@ abbrev AbsoluteWeakNormalizationIndex (A : Type u) [CommRing A] : Type u
 abbrev AbsoluteWeakNormalization (A : Type u) [CommRing A] : Type u
 ```
 
-**`AlgebraicGeometry.seminormalizationAlgebraObject_isTerminal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SeminormalizationAffineInitial/Basic.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SeminormalizationAffineInitial/Basic.lean#L135). The attribute's comment: “sn_final”.
+**`AlgebraicGeometry.seminormalizationAlgebraObject_isTerminal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SeminormalizationAffineInitial/Basic.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SeminormalizationAffineInitial/Basic.lean#L135). The attribute's comment: “sn\_final”.
 
 > **Stacks 0EUR.** The seminormalization of `A` is terminal among the `A`-algebras whose
 > spectrum morphism is a universal homeomorphism inducing isomorphisms on all residue fields.
@@ -267,7 +267,7 @@ def seminormalizationAlgebraObject_isTerminal :
     IsTerminal (seminormalizationAlgebraObject A)
 ```
 
-**`AlgebraicGeometry.existsUnique_seminormalizationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SeminormalizationRingFunctorial/Basic.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SeminormalizationRingFunctorial/Basic.lean#L359). The attribute's comment: “sn_functoriality”.
+**`AlgebraicGeometry.existsUnique_seminormalizationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SeminormalizationRingFunctorial/Basic.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SeminormalizationRingFunctorial/Basic.lean#L359). The attribute's comment: “sn\_functoriality”.
 
 > **Stacks 0EUR.** A ring homomorphism induces a unique compatible homomorphism between the
 > seminormalizations of its source and target.
@@ -280,7 +280,7 @@ theorem existsUnique_seminormalizationMap
         (algebraMap A' (Algebra.seminormalization A')).comp φ
 ```
 
-**`AlgebraicGeometry.isIso_lift_to_seminormalization_iff_isSeminormalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SnCharacterization/Basic.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SnCharacterization/Basic.lean#L104). The attribute's comment: “sn_characterization”.
+**`AlgebraicGeometry.isIso_lift_to_seminormalization_iff_isSeminormalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SnCharacterization/Basic.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SnCharacterization/Basic.lean#L104). The attribute's comment: “sn\_characterization”.
 
 > **Stacks 0EUR.** A subintegral `A`-algebra is the seminormalization of `A` precisely when
 > its underlying ring is seminormal.
@@ -297,7 +297,7 @@ public theorem isIso_lift_to_seminormalization_iff_isSeminormalRing
       IsSeminormalRing B
 ```
 
-**`Algebra.isIso_toAbsoluteWeakNormalization_iff_isAbsolutelyWeaklyNormalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/RingCharacterization.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/RingCharacterization.lean#L185). The attribute's comment: “awn_characterization”.
+**`Algebra.isIso_toAbsoluteWeakNormalization_iff_isAbsolutelyWeaklyNormalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/RingCharacterization.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/RingCharacterization.lean#L185). The attribute's comment: “awn\_characterization”.
 
 > **Stacks 0EUR.** For an `A`-algebra `B` whose spectrum morphism to `Spec A` is a universal
 > homeomorphism, the canonical map `B ⟶ Aᵃʷⁿ` is an isomorphism exactly when `B` is absolutely
@@ -312,7 +312,7 @@ theorem isIso_toAbsoluteWeakNormalization_iff_isAbsolutelyWeaklyNormalRing
       IsAbsolutelyWeaklyNormalRing B
 ```
 
-**`Algebra.absoluteWeakNormalizationCandidate_isTerminal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/RingUniversalProperty.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/RingUniversalProperty.lean#L246). The attribute's comment: “awn_final”.
+**`Algebra.absoluteWeakNormalizationCandidate_isTerminal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/RingUniversalProperty.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/RingUniversalProperty.lean#L246). The attribute's comment: “awn\_final”.
 
 > **Stacks 0EUR.** The absolute weak normalization of `A` is terminal among the `A`-algebras
 > whose spectrum morphism to `Spec A` is a universal homeomorphism.
@@ -324,14 +324,14 @@ def absoluteWeakNormalizationCandidate_isTerminal :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.seminormalization_universalHomeomorphism`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Seminormalization/Colimit.lean#L88), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/SeminormalizationAffineInitial/Basic.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SeminormalizationAffineInitial/Basic.lean#L216) (StacksFrontier): “sn_final”.
-- [`AlgebraicGeometry.seminormalization_inducesResidueFieldIsomorphisms`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Seminormalization/Colimit.lean#L96), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/SeminormalizationAffineInitial/Basic.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SeminormalizationAffineInitial/Basic.lean#L218) (StacksFrontier): “sn_final”.
+- [`AlgebraicGeometry.seminormalization_universalHomeomorphism`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Seminormalization/Colimit.lean#L88), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/SeminormalizationAffineInitial/Basic.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SeminormalizationAffineInitial/Basic.lean#L216) (StacksFrontier): “sn\_final”.
+- [`AlgebraicGeometry.seminormalization_inducesResidueFieldIsomorphisms`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Seminormalization/Colimit.lean#L96), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/SeminormalizationAffineInitial/Basic.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SeminormalizationAffineInitial/Basic.lean#L218) (StacksFrontier): “sn\_final”.
 
 ## Tag 0EUS, a lemma
 
 [Tag 0EUS](https://stacks.math.columbia.edu/tag/0EUS) in the Stacks Project.
 
-**`AlgebraicGeometry.hasInitialUniversalHomeomorphismOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationInitial/Basic.lean, line 763](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationInitial/Basic.lean#L763). The attribute's comment: “absolute_weak_normalization_initial”.
+**`AlgebraicGeometry.hasInitialUniversalHomeomorphismOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationInitial/Basic.lean, line 763](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationInitial/Basic.lean#L763). The attribute's comment: “absolute\_weak\_normalization\_initial”.
 
 > The category of universal homeomorphisms to a scheme `X` has an initial object, the absolute
 > weak normalization of `X`, which remains initial over every open subscheme.
@@ -341,7 +341,7 @@ public instance hasInitialUniversalHomeomorphismOver (X : Scheme.{u}) :
     HasLocallyInitialUniversalHomeomorphismOver X
 ```
 
-**`AlgebraicGeometry.isIso_initialMap_iff_isAbsolutelyWeaklyNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationIsoIff/Basic.lean, line 531](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationIsoIff/Basic.lean#L531). The attribute's comment: “absolute_weak_normalization_iso_iff”.
+**`AlgebraicGeometry.isIso_initialMap_iff_isAbsolutelyWeaklyNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationIsoIff/Basic.lean, line 531](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AbsoluteWeakNormalizationIsoIff/Basic.lean#L531). The attribute's comment: “absolute\_weak\_normalization\_iso\_iff”.
 
 > **Stacks Project, Tag 0EUS.** The canonical map from the absolute weak
 > normalization of `X` to a universal homeomorphism `Y ⟶ X` is an isomorphism
@@ -355,7 +355,7 @@ public theorem isIso_initialMap_iff_isAbsolutelyWeaklyNormal
       IsAbsolutelyWeaklyNormal Y
 ```
 
-**`AlgebraicGeometry.isIso_initialTo_iff_isAbsolutelyWeaklyNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/AbsoluteWeakNormalCriterion.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/AbsoluteWeakNormalCriterion.lean#L127). The attribute's comment: “absolute_weak_normalization_iso_iff”.
+**`AlgebraicGeometry.isIso_initialTo_iff_isAbsolutelyWeaklyNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/AbsoluteWeakNormalCriterion.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/AbsoluteWeakNormalCriterion.lean#L127). The attribute's comment: “absolute\_weak\_normalization\_iso\_iff”.
 
 > **Stacks Project, Tag 0EUS.** The canonical morphism from the absolute weak normalization of
 > `X` to a universal homeomorphism `Y ⟶ X` is an isomorphism if and only if `Y` is absolutely
@@ -367,7 +367,7 @@ theorem isIso_initialTo_iff_isAbsolutelyWeaklyNormal (X : Scheme.{u})
     IsIso ((initial.to Y).hom.left) ↔ IsAbsolutelyWeaklyNormal Y.obj.left
 ```
 
-**`AlgebraicGeometry.existsUnique_absoluteWeakNormalization_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/Functorial.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/Functorial.lean#L55). The attribute's comment: “absolute_weak_normalization_functorial”.
+**`AlgebraicGeometry.existsUnique_absoluteWeakNormalization_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/Functorial.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/Functorial.lean#L55). The attribute's comment: “absolute\_weak\_normalization\_functorial”.
 
 > Every morphism of schemes has a unique compatible lift to the absolute weak normalizations.
 
@@ -378,7 +378,7 @@ theorem existsUnique_absoluteWeakNormalization_lift {X' X : Scheme.{u}} (h : X' 
         X'.absoluteWeakNormalizationHom ≫ h
 ```
 
-**`AlgebraicGeometry.existsUnique_seminormalization_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/SeminormalizationFunctorial.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/SeminormalizationFunctorial.lean#L45). The attribute's comment: “seminormalization_functorial”.
+**`AlgebraicGeometry.existsUnique_seminormalization_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/SeminormalizationFunctorial.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeakNormalization/SeminormalizationFunctorial.lean#L45). The attribute's comment: “seminormalization\_functorial”.
 
 > **Stacks Project, Tag 0EUS.** A morphism of schemes has a unique compatible
 > lift to their seminormalizations.
@@ -393,7 +393,7 @@ theorem existsUnique_seminormalization_lift {X' X : Scheme.{u}}
         X'.seminormalizationHom ≫ h
 ```
 
-**`AlgebraicGeometry.hasInitial_seminormalizationCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SeminormalizationGluing/Basic.lean, line 691](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SeminormalizationGluing/Basic.lean#L691). The attribute's comment: “seminormalization_initial”.
+**`AlgebraicGeometry.hasInitial_seminormalizationCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SeminormalizationGluing/Basic.lean, line 691](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SeminormalizationGluing/Basic.lean#L691). The attribute's comment: “seminormalization\_initial”.
 
 > **Stacks Project, Tag 0EUS.** The category of universal homeomorphisms to a scheme which
 > induce isomorphisms on all residue fields has an initial object, the seminormalization of that
@@ -404,7 +404,7 @@ noncomputable instance hasInitial_seminormalizationCategory (X : Scheme.{u}) :
     HasInitial (SeminormalizationCategory X)
 ```
 
-**`AlgebraicGeometry.isIso_initialTo_iff_isSeminormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SeminormalizationGluing/Basic.lean, line 716](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SeminormalizationGluing/Basic.lean#L716). The attribute's comment: “seminormalization_iso_iff”.
+**`AlgebraicGeometry.isIso_initialTo_iff_isSeminormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SeminormalizationGluing/Basic.lean, line 716](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SeminormalizationGluing/Basic.lean#L716). The attribute's comment: “seminormalization\_iso\_iff”.
 
 > **Stacks Project, Tag 0EUS.** The canonical morphism from the seminormalization of `X` to a
 > universal homeomorphism `Y ⟶ X` inducing isomorphisms on all residue fields is an isomorphism

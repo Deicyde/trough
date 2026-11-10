@@ -14,7 +14,7 @@ Section 42.49 of the Stacks Project, [Tag 0FAT](https://stacks.math.columbia.edu
 
 [Tag 0F9K](https://stacks.math.columbia.edu/tag/0F9K) in the Stacks Project.
 
-**`Stacks.Chow.GysinAtInfinity.properPushforward_localizedPowerSumClassAtInfinity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedPowerSumAtInfinity.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedPowerSumAtInfinity.lean#L310). The attribute's comment: “the classes P'_p: the class P'_p(Q) = (E ⟶ Z)_* ∘ P'_p(Q|_E) ∘ C in A^p(Z ⟶ X), for Q|_T zero, satisfies (Z ⟶ X)_* ∘ P'_p(Q) = P_p(Q|_{X × {0}})”.
+**`Stacks.Chow.GysinAtInfinity.properPushforward_localizedPowerSumClassAtInfinity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedPowerSumAtInfinity.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedPowerSumAtInfinity.lean#L310). The attribute's comment: “the classes P'\_p: the class P'\_p(Q) = (E ⟶ Z)\_* ∘ P'\_p(Q|\_E) ∘ C in A^p(Z ⟶ X), for Q|\_T zero, satisfies (Z ⟶ X)\_* ∘ P'\_p(Q) = P\_p(Q|\_\{X × \{0}})”.
 
 > **Stacks 0F9K, for the classes `P'_p`.** Let `X` be locally of finite type over the base of
 > chapter 42, let `Z ⊆ X` be a closed subscheme, let `b : W ⟶ 𝐏¹_X` be a proper morphism which is
@@ -38,7 +38,7 @@ theorem properPushforward_localizedPowerSumClassAtInfinity
       powerSumAtZero C f b hA hQ p
 ```
 
-**`Stacks.Chow.modificationPowerSum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Preparation.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Preparation.lean#L124). The attribute's comment: “the class P'_p(Q) in A^p(Z ⟶ X), for Q|_T zero”.
+**`Stacks.Chow.modificationPowerSum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Preparation.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Preparation.lean#L124). The attribute's comment: “the class P'\_p(Q) in A^p(Z ⟶ X), for Q|\_T zero”.
 
 > **The class `P'_p(Q)` of Stacks 0F9K.** Let `b : W ⟶ 𝐏¹_X` be proper and an isomorphism over
 > `𝐀¹_X`, let `Z ⊆ X` be closed, let `Q ∈ D(𝒪_W)` have defined Chern classes, and let `T ⊆ W_∞` be
@@ -55,7 +55,7 @@ def modificationPowerSum
     BivariantClass C (gysinSystemOfInvertible C) (z ≫ f) f z rfl p
 ```
 
-**`Stacks.Chow.modificationChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Preparation.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Preparation.lean#L141). The attribute's comment: “the class c'_p(Q) in A^p(Z ⟶ X), for Q|_T finite locally free of rank < p in degree 0”.
+**`Stacks.Chow.modificationChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Preparation.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Preparation.lean#L141). The attribute's comment: “the class c'\_p(Q) in A^p(Z ⟶ X), for Q|\_T finite locally free of rank < p in degree 0”.
 
 > **The class `c'_p(Q)` of Stacks 0F9K.** Let `b : W ⟶ 𝐏¹_X` be proper and an isomorphism over
 > `𝐀¹_X`, let `Z ⊆ X` be closed, let `Q ∈ D(𝒪_W)` have defined Chern classes, and let `T ⊆ W_∞` be
@@ -74,7 +74,7 @@ def modificationChernClass
     BivariantClass C (gysinSystemOfInvertible C) (z ≫ f) f z rfl p
 ```
 
-**`Stacks.Chow.properPushforwardChowCohomology_modificationPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Preparation.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Preparation.lean#L157). The attribute's comment: “the case of P'_p: (Z ⟶ X)_* ∘ P'_p(Q) = P_p(Q|_{X × {0}})”.
+**`Stacks.Chow.properPushforwardChowCohomology_modificationPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Preparation.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Preparation.lean#L157). The attribute's comment: “the case of P'\_p: (Z ⟶ X)\_* ∘ P'\_p(Q) = P\_p(Q|\_\{X × \{0}})”.
 
 > In the situation of `Stacks.Chow.modificationPowerSum`,
 > `(Z ⟶ X)_* ∘ P'_p(Q) = P_p(Q|_{X × {0}})` in `A^p(X)`, where `(Z ⟶ X)_* ∘ -` is the pushforward
@@ -92,7 +92,7 @@ theorem properPushforwardChowCohomology_modificationPowerSum
         (modificationSectionAtZero f b (isIso_modificationFibreAtZeroProjection f b hA))) p
 ```
 
-**`Stacks.Chow.properPushforwardChowCohomology_modificationChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Preparation.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Preparation.lean#L181). The attribute's comment: “the case of c'_p: (Z ⟶ X)_* ∘ c'_p(Q) = c_p(Q|_{X × {0}})”.
+**`Stacks.Chow.properPushforwardChowCohomology_modificationChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Preparation.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Preparation.lean#L181). The attribute's comment: “the case of c'\_p: (Z ⟶ X)\_* ∘ c'\_p(Q) = c\_p(Q|\_\{X × \{0}})”.
 
 > In the situation of `Stacks.Chow.modificationChernClass`,
 > `(Z ⟶ X)_* ∘ c'_p(Q) = c_p(Q|_{X × {0}})` in `A^p(X)`, where `(Z ⟶ X)_* ∘ -` is the pushforward
@@ -114,13 +114,13 @@ theorem properPushforwardChowCohomology_modificationChernClass
 
 Declarations registered for the tag:
 
-- [`Stacks.Chow.GysinAtInfinity.properPushforward_localizedChernClassAtInfinity`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernGysinCommute.lean#L404), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedPowerSumAtInfinity.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedPowerSumAtInfinity.lean#L421) (StacksFrontier): “the classes c'_p: the class c'_p(Q) = (E ⟶ Z)_* ∘ c'_p(Q|_E) ∘ C in A^p(Z ⟶ X), for Q|_T finite locally free of rank < p in degree 0, satisfies (Z ⟶ X)_* ∘ c'_p(Q) = c_p(Q|_{X × {0}})”.
+- [`Stacks.Chow.GysinAtInfinity.properPushforward_localizedChernClassAtInfinity`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernGysinCommute.lean#L404), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedPowerSumAtInfinity.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedPowerSumAtInfinity.lean#L421) (StacksFrontier): “the classes c'\_p: the class c'\_p(Q) = (E ⟶ Z)\_* ∘ c'\_p(Q|\_E) ∘ C in A^p(Z ⟶ X), for Q|\_T finite locally free of rank < p in degree 0, satisfies (Z ⟶ X)\_* ∘ c'\_p(Q) = c\_p(Q|\_\{X × \{0}})”.
 
 ## Tag 0GUI, a lemma
 
 [Tag 0GUI](https://stacks.math.columbia.edu/tag/0GUI) in the Stacks Project.
 
-**`Stacks.Chow.GysinAtInfinity.localizedChernClassAtInfinity_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedClassAtInfinityBaseChange.lean, line 717](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedClassAtInfinityBaseChange.lean#L717). The attribute's comment: “the classes c'_p: c'_p(Q') built as in Stacks 0F9K from b', Q' and T' is the restriction of c'_p(Q)”.
+**`Stacks.Chow.GysinAtInfinity.localizedChernClassAtInfinity_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedClassAtInfinityBaseChange.lean, line 717](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedClassAtInfinityBaseChange.lean#L717). The attribute's comment: “the classes c'\_p: c'\_p(Q') built as in Stacks 0F9K from b', Q' and T' is the restriction of c'\_p(Q)”.
 
 > **Stacks 0GUI, for the Chern classes.** In the situation of Stacks 0F9K, with `Q|_T` finite
 > locally free of rank `< p` in degree `0`, let `q : X' ⟶ X` be a morphism locally of finite type.
@@ -154,7 +154,7 @@ theorem localizedChernClassAtInfinity_baseChange
           (localizedChernClassAtInfinity C hA jZ hQ hV hres))
 ```
 
-**`Stacks.Chow.GysinAtInfinity.localizedPowerSumClassAtInfinity_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedClassAtInfinityBaseChange.lean, line 766](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedClassAtInfinityBaseChange.lean#L766). The attribute's comment: “the classes P'_p: P'_p(Q') built as in Stacks 0F9K from b', Q' and T' is the restriction of P'_p(Q)”.
+**`Stacks.Chow.GysinAtInfinity.localizedPowerSumClassAtInfinity_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedClassAtInfinityBaseChange.lean, line 766](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedClassAtInfinityBaseChange.lean#L766). The attribute's comment: “the classes P'\_p: P'\_p(Q') built as in Stacks 0F9K from b', Q' and T' is the restriction of P'\_p(Q)”.
 
 > **Stacks 0GUI, for the classes `P_p`.** In the situation of Stacks 0F9K, with `Q|_T` zero,
 > let `q : X' ⟶ X` be a morphism locally of finite type. Let `Z' = Z ×_X X'`,
@@ -186,7 +186,7 @@ theorem localizedPowerSumClassAtInfinity_baseChange
           (localizedPowerSumClassAtInfinity C hA jZ hQ perfect hV hzero (p := p)))
 ```
 
-**`Stacks.Chow.bivariantRestriction_modificationPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/ModificationBaseChange.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/ModificationBaseChange.lean#L457). The attribute's comment: “the case of P'_p: the class P'_p(Q') of Lemma 0F9K for the base change is the restriction of P'_p(Q)”.
+**`Stacks.Chow.bivariantRestriction_modificationPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/ModificationBaseChange.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/ModificationBaseChange.lean#L457). The attribute's comment: “the case of P'\_p: the class P'\_p(Q') of Lemma 0F9K for the base change is the restriction of P'\_p(Q)”.
 
 > In the setting of Stacks 0F9K let `h : X' ⟶ X` be locally of finite type, let
 > `b' : W' = W ×_{𝐏¹_X} 𝐏¹_{X'} ⟶ 𝐏¹_{X'}` and `Z' = Z ×_X X'` be the base changes, and set
@@ -217,7 +217,7 @@ theorem bivariantRestriction_modificationPowerSum
         (hQ.derivedPullback (pullback.fst b (familyBaseChange f h))) p hT' hzero'
 ```
 
-**`Stacks.Chow.bivariantRestriction_modificationChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/ModificationBaseChange.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/ModificationBaseChange.lean#L493). The attribute's comment: “the case of c'_p: the class c'_p(Q') of Lemma 0F9K for the base change is the restriction of c'_p(Q)”.
+**`Stacks.Chow.bivariantRestriction_modificationChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/ModificationBaseChange.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/ModificationBaseChange.lean#L493). The attribute's comment: “the case of c'\_p: the class c'\_p(Q') of Lemma 0F9K for the base change is the restriction of c'\_p(Q)”.
 
 > In the setting of Stacks 0F9K let `h : X' ⟶ X` be locally of finite type, let
 > `b' : W' = W ×_{𝐏¹_X} 𝐏¹_{X'} ⟶ 𝐏¹_{X'}` and `Z' = Z ×_X X'` be the base changes, and set
@@ -256,7 +256,7 @@ theorem bivariantRestriction_modificationChernClass
 
 [Tag 0FAU](https://stacks.math.columbia.edu/tag/0FAU) in the Stacks Project.
 
-**`Stacks.Chow.localizedModificationClass_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Modification.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Modification.lean#L396). The attribute's comment: “first assertion: P'_p(Q), resp. c'_p(Q), is independent of the closed subscheme T, for a general class q in place of P_p(Q), resp. c_p(Q)”.
+**`Stacks.Chow.localizedModificationClass_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Modification.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Modification.lean#L396). The attribute's comment: “first assertion: P'\_p(Q), resp. c'\_p(Q), is independent of the closed subscheme T, for a general class q in place of P\_p(Q), resp. c\_p(Q)”.
 
 > **The localized class does not depend on `T`**, for a general class. Two closed subschemes
 > `T, T' ⊆ W_∞` containing every point of `W_∞` over `X ∖ Z`, over both of which `q` vanishes, give
@@ -273,7 +273,7 @@ theorem localizedModificationClass_eq {T' : Scheme.{u}} (t' : T' ⟶ modificatio
     localizedModificationClass D z t hT hq = localizedModificationClass D z t' hT' hq'
 ```
 
-**`Stacks.Chow.modificationPowerSum_eq_of_modification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/ModificationComparison.lean, line 853](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/ModificationComparison.lean#L853). The attribute's comment: “second assertion, for P'_p: for g : W' ⟶ W proper with b ∘ g an isomorphism over A^1_X (as when g is one), P'_p(g^*Q) = P'_p(Q)”.
+**`Stacks.Chow.modificationPowerSum_eq_of_modification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/ModificationComparison.lean, line 853](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/ModificationComparison.lean#L853). The attribute's comment: “second assertion, for P'\_p: for g : W' ⟶ W proper with b ∘ g an isomorphism over A^1\_X (as when g is one), P'\_p(g^*Q) = P'\_p(Q)”.
 
 > **The second assertion of Stacks 0FAU, for `P'_p`.** Let `b : W ⟶ 𝐏¹_X` be proper and an
 > isomorphism over `𝐀¹_X`, let `g : W' ⟶ W` be proper with `b' = b ∘ g` an isomorphism over `𝐀¹_X`
@@ -295,7 +295,7 @@ theorem modificationPowerSum_eq_of_modification
       modificationPowerSum C f b hA z t hQ p hT hzero
 ```
 
-**`Stacks.Chow.modificationChernClass_eq_of_modification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/ModificationComparison.lean, line 880](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/ModificationComparison.lean#L880). The attribute's comment: “second assertion, for c'_p: for g : W' ⟶ W proper with b ∘ g an isomorphism over A^1_X (as when g is one), c'_p(g^*Q) = c'_p(Q)”.
+**`Stacks.Chow.modificationChernClass_eq_of_modification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/ModificationComparison.lean, line 880](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/ModificationComparison.lean#L880). The attribute's comment: “second assertion, for c'\_p: for g : W' ⟶ W proper with b ∘ g an isomorphism over A^1\_X (as when g is one), c'\_p(g^*Q) = c'\_p(Q)”.
 
 > **The second assertion of Stacks 0FAU, for `c'_p`.** Let `b : W ⟶ 𝐏¹_X` be proper and an
 > isomorphism over `𝐀¹_X`, let `g : W' ⟶ W` be proper with `b' = b ∘ g` an isomorphism over `𝐀¹_X`
@@ -321,7 +321,7 @@ theorem modificationChernClass_eq_of_modification
       modificationChernClass C f b hA z t hQ p hT hrank
 ```
 
-**`Stacks.Chow.GysinAtInfinity.localizedPowerSumAtInfinity_invariance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedClassAtInfinity/Chern.lean, line 707](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedClassAtInfinity/Chern.lean#L707). The attribute's comment: “the P'_p(Q) half: independence of the choice of the closed subscheme T, and P'_p(Q) = P'_p(Q') for a proper g : W' ⟶ W which is an isomorphism over 𝐀¹_X and Q' = g^*Q”.
+**`Stacks.Chow.GysinAtInfinity.localizedPowerSumAtInfinity_invariance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedClassAtInfinity/Chern.lean, line 707](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedClassAtInfinity/Chern.lean#L707). The attribute's comment: “the P'\_p(Q) half: independence of the choice of the closed subscheme T, and P'\_p(Q) = P'\_p(Q') for a proper g : W' ⟶ W which is an isomorphism over 𝐀¹\_X and Q' = g^*Q”.
 
 > **Stacks 0FAU, for `P'_p(Q)`.** In the situation of Stacks 0F9K — `X` locally of finite type
 > over `S`, `Z ⊆ X` closed, `b : W ⟶ 𝐏¹_X` proper and an isomorphism over `𝐀¹_X` (A1), `Q ∈ D(𝒪_W)`
@@ -380,7 +380,7 @@ theorem localizedPowerSumAtInfinity_invariance
           localizedPowerSumClassAtInfinity (p := p) C hA iZ hQ perfect hT hzero)
 ```
 
-**`Stacks.Chow.GysinAtInfinity.localizedChernClassAtInfinity_invariance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedClassAtInfinity/Chern.lean, line 772](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedClassAtInfinity/Chern.lean#L772). The attribute's comment: “the c'_p(Q) half: independence of the choice of the closed subscheme T, and c'_p(Q) = c'_p(Q') for a proper g : W' ⟶ W which is an isomorphism over 𝐀¹_X and Q' = g^*Q”.
+**`Stacks.Chow.GysinAtInfinity.localizedChernClassAtInfinity_invariance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedClassAtInfinity/Chern.lean, line 772](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedClassAtInfinity/Chern.lean#L772). The attribute's comment: “the c'\_p(Q) half: independence of the choice of the closed subscheme T, and c'\_p(Q) = c'\_p(Q') for a proper g : W' ⟶ W which is an isomorphism over 𝐀¹\_X and Q' = g^*Q”.
 
 > **Stacks 0FAU, for `c'_p(Q)`.** In the situation of Stacks 0F9K — `X` locally of finite type
 > over `S`, `Z ⊆ X` closed, `b : W ⟶ 𝐏¹_X` proper and an isomorphism over `𝐀¹_X` (A1), `Q ∈ D(𝒪_W)`
@@ -495,7 +495,7 @@ theorem gysinAtInfinity_comp_localizedChernClassAtInfinity
         (gysinAtInfinityClass C f b hA) (chernClassAtInfinity C f b hQ p)
 ```
 
-**`Stacks.Chow.gysinAtInfinityClass_comp_modificationChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/GysinAtInfinityRestriction.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/GysinAtInfinityRestriction.lean#L547). The attribute's comment: “C ∘ c_p(Q|_{X × {0}}) = C ∘ (Z ⟶ X)_* ∘ c'_p(Q) = c_p(Q|_{W_∞}) ∘ C, for Q|_T finite locally free of rank < p in degree 0, the composites read in A^p(W_∞ ⟶ X)”.
+**`Stacks.Chow.gysinAtInfinityClass_comp_modificationChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/GysinAtInfinityRestriction.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/GysinAtInfinityRestriction.lean#L547). The attribute's comment: “C ∘ c\_p(Q|\_\{X × \{0}}) = C ∘ (Z ⟶ X)\_* ∘ c'\_p(Q) = c\_p(Q|\_\{W\_∞}) ∘ C, for Q|\_T finite locally free of rank < p in degree 0, the composites read in A^p(W\_∞ ⟶ X)”.
 
 > In the situation of Stacks 0F9K, let `Q|_T` be finite locally free of rank `< p` in degree
 > `0`, and let `C ∈ A⁰(W_∞ ⟶ X)` be the class of Stacks 0F9J (`Stacks.Chow.gysinAtInfinityClass`).
@@ -555,7 +555,7 @@ theorem gysinAtInfinityClass_comp_modificationChernClass
 
 [Tag 0FAW](https://stacks.math.columbia.edu/tag/0FAW) in the Stacks Project.
 
-**`Stacks.Chow.nonhomogeneousBivariantTransport_compositeOfInvertible_modificationPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean#L379). The attribute's comment: “for P'_p: P'_p(Q) ∘ c = c ∘ P'_p(Q) in A^*(Y ×_X Z → X), for every c in A^*(Y → X)”.
+**`Stacks.Chow.nonhomogeneousBivariantTransport_compositeOfInvertible_modificationPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean#L379). The attribute's comment: “for P'\_p: P'\_p(Q) ∘ c = c ∘ P'\_p(Q) in A^*(Y ×\_X Z → X), for every c in A^*(Y → X)”.
 
 > In the situation of Stacks 0F9K with `Q|_T` zero, let `g : Y ⟶ X` be locally of finite type and
 > let `c ∈ A^*(Y ⟶ X)`. Then
@@ -595,7 +595,7 @@ theorem nonhomogeneousBivariantTransport_compositeOfInvertible_modificationPower
         (DirectSum.of _ (p : ℤ) (modificationPowerSum C f b hA z t hQ p hT hzero))
 ```
 
-**`Stacks.Chow.nonhomogeneousBivariantTransport_compositeOfInvertible_modificationChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean#L422). The attribute's comment: “for c'_p: c'_p(Q) ∘ c = c ∘ c'_p(Q) in A^*(Y ×_X Z → X), for every c in A^*(Y → X)”.
+**`Stacks.Chow.nonhomogeneousBivariantTransport_compositeOfInvertible_modificationChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean#L422). The attribute's comment: “for c'\_p: c'\_p(Q) ∘ c = c ∘ c'\_p(Q) in A^*(Y ×\_X Z → X), for every c in A^*(Y → X)”.
 
 > In the situation of Stacks 0F9K with `Q|_T` finite locally free of rank `< p` in degree `0`,
 > let `g : Y ⟶ X` be locally of finite type and let `c ∈ A^*(Y ⟶ X)`. Then
@@ -637,7 +637,7 @@ theorem nonhomogeneousBivariantTransport_compositeOfInvertible_modificationChern
         (DirectSum.of _ (p : ℤ) (modificationChernClass C f b hA z t hQ p hT hrank))
 ```
 
-**`Stacks.Chow.GysinAtInfinity.localizedPowerSumAtInfinity_comp_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedClassAtInfinity/Commuting.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedClassAtInfinity/Commuting.lean#L333). The attribute's comment: “the classes P'_p: P'_p(Q) ∘ c = c ∘ P'_p(Q) for every bivariant class c”.
+**`Stacks.Chow.GysinAtInfinity.localizedPowerSumAtInfinity_comp_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedClassAtInfinity/Commuting.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedClassAtInfinity/Commuting.lean#L333). The attribute's comment: “the classes P'\_p: P'\_p(Q) ∘ c = c ∘ P'\_p(Q) for every bivariant class c”.
 
 > **Stacks 0FAW, for the classes `P'_p`.** Let `(S, δ)` be as in Situation 02QL, let `X` be
 > locally of finite type over `S`, let `Z ⊆ X` be a closed subscheme, let `b : W ⟶ 𝐏¹_X` be a
@@ -672,7 +672,7 @@ theorem localizedPowerSumAtInfinity_comp_comm
         (pullbackSymmetry fY iZ) (pullbackSymmetry_hom_comp_snd_comp iZ fY)
 ```
 
-**`Stacks.Chow.GysinAtInfinity.localizedChernClassAtInfinity_comp_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedClassAtInfinity/Commuting.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedClassAtInfinity/Commuting.lean#L366). The attribute's comment: “the classes c'_p: c'_p(Q) ∘ c = c ∘ c'_p(Q) for every bivariant class c”.
+**`Stacks.Chow.GysinAtInfinity.localizedChernClassAtInfinity_comp_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedClassAtInfinity/Commuting.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedClassAtInfinity/Commuting.lean#L366). The attribute's comment: “the classes c'\_p: c'\_p(Q) ∘ c = c ∘ c'\_p(Q) for every bivariant class c”.
 
 > **Stacks 0FAW, for the classes `c'_p`.** Let `(S, δ)` be as in Situation 02QL, let `X` be
 > locally of finite type over `S`, let `Z ⊆ X` be a closed subscheme, let `b : W ⟶ 𝐏¹_X` be a
@@ -710,7 +710,7 @@ theorem localizedChernClassAtInfinity_comp_comm
 
 [Tag 0FAX](https://stacks.math.columbia.edu/tag/0FAX) in the Stacks Project.
 
-**`Stacks.Chow.modificationPowerSum_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/PreparationNewton.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/PreparationNewton.lean#L123). The attribute's comment: “Newton's recursion P'_{p+1} = ∑_{j&lt;p} (-1)^j c'_{j+1} P'_{p-j} + (-1)^p (p+1) c'_{p+1}, for every p ≥ 0, with the multiplication of 0FA0; it determines every displayed identity and the ones after it (and so on)”.
+**`Stacks.Chow.modificationPowerSum_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/PreparationNewton.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/PreparationNewton.lean#L123). The attribute's comment: “Newton's recursion P'\_\{p+1} = ∑\_\{j`<`p} (-1)^j c'\_\{j+1} P'\_\{p-j} + (-1)^p (p+1) c'\_\{p+1}, for every p ≥ 0, with the multiplication of 0FA0; it determines every displayed identity and the ones after it (and so on)”.
 
 > In the situation of Stacks 0F9K, assume that `Q|_T` is zero, so that `c'_p(Q)` is defined
 > for every `p ≥ 1`. Then the classes `P'_p(Q) ∈ A^p(Z ⟶ X)` are Newton's

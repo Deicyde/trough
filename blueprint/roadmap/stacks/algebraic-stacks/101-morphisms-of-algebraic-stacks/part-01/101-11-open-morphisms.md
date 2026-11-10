@@ -83,7 +83,7 @@ theorem universallyOpen_baseChange_of_isTwoFibreProduct
 
 [Tag 06U4](https://stacks.math.columbia.edu/tag/06U4) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isOpen_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveComposition.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveComposition.lean#L70). The attribute's comment: “composition_open”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isOpen_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveComposition.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveComposition.lean#L70). The attribute's comment: “composition\_open”.
 
 > **Stacks 06U4.** The composite of two open 1-morphisms of algebraic stacks over `S` is
 > open.
@@ -94,7 +94,7 @@ theorem isOpen_comp {𝒳 𝒴 𝒵 : Stack.AlgebraicStacks.{u, w} B S hS}
     IsOpen B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyOpen_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveUniversalComposition.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveUniversalComposition.lean#L115). The attribute's comment: “composition_universally_open”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyOpen_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveUniversalComposition.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveUniversalComposition.lean#L115). The attribute's comment: “composition\_universally\_open”.
 
 > **Stacks 06U4.** The composite of two universally open 1-morphisms of algebraic stacks over
 > `S` is universally open.

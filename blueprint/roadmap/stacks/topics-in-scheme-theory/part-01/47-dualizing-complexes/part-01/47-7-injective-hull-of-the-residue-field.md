@@ -60,7 +60,7 @@ public theorem exists_injective_to_pi_injectiveHull
 
 [Tag 08Z4](https://stacks.math.columbia.edu/tag/08Z4) in the Stacks Project.
 
-**`Dualizing.maximalIdealPowTorsion_isInjectiveHull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/ResidueFieldHull/PowerTorsionFiltration.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/ResidueFieldHull/PowerTorsionFiltration.lean#L379). The attribute's comment: “the submodules E_n”.
+**`Dualizing.maximalIdealPowTorsion_isInjectiveHull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/ResidueFieldHull/PowerTorsionFiltration.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/ResidueFieldHull/PowerTorsionFiltration.lean#L379). The attribute's comment: “the submodules E\_n”.
 
 > **Stacks Project, Tag 08Z4.** The submodule of an injective hull of the residue field
 > annihilated by a positive power of the maximal ideal is an injective hull over the corresponding

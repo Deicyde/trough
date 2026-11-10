@@ -14,7 +14,7 @@ Section 33.13 of the Stacks Project, [Tag 045O](https://stacks.math.columbia.edu
 
 [Tag 045P](https://stacks.math.columbia.edu/tag/045P) in the Stacks Project.
 
-**`AlgebraicGeometry.isCohenMacaulayLocalRing_stalk_iff_of_finiteType_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/CohenMacaulayFieldChange/FieldExtension.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/CohenMacaulayFieldChange/FieldExtension.lean#L374). The attribute's comment: “finitely generated field extension”. References: EGA IV (6.7.8), “(ii)”; EGA IV (6.7.1), “F = O_X, CM clause”; EGA IV (6.7.2), “special case”; SGA 3 VIA (1.1.1), “more general”.
+**`AlgebraicGeometry.isCohenMacaulayLocalRing_stalk_iff_of_finiteType_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/CohenMacaulayFieldChange/FieldExtension.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/CohenMacaulayFieldChange/FieldExtension.lean#L374). The attribute's comment: “finitely generated field extension”. References: EGA IV (6.7.8), “(ii)”; EGA IV (6.7.1), “F = O\_X, CM clause”; EGA IV (6.7.2), “special case”; SGA 3 VIA (1.1.1), “more general”.
 
 > **Stacks Project, Tag 045P.** Cohen-Macaulayness of local rings is unchanged after a
 > finitely generated extension of the ground field of a locally Noetherian scheme.
@@ -38,7 +38,7 @@ public theorem isCohenMacaulayLocalRing_stalk_iff_of_finiteType_fieldExtension
         ((pullback f (Spec.map (CommRingCat.ofHom (algebraMap k K)))).presheaf.stalk x')
 ```
 
-**`AlgebraicGeometry.isCohenMacaulayLocalRing_stalk_iff_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/CohenMacaulayFieldChange/FieldExtension.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/CohenMacaulayFieldChange/FieldExtension.lean#L398). The attribute's comment: “arbitrary field extension for a locally finite type scheme”. References: EGA IV (6.7.8), “(ii)”; EGA IV (6.7.1), “F = O_X, CM clause”.
+**`AlgebraicGeometry.isCohenMacaulayLocalRing_stalk_iff_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/CohenMacaulayFieldChange/FieldExtension.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/CohenMacaulayFieldChange/FieldExtension.lean#L398). The attribute's comment: “arbitrary field extension for a locally finite type scheme”. References: EGA IV (6.7.8), “(ii)”; EGA IV (6.7.1), “F = O\_X, CM clause”.
 
 > **Stacks Project, Tag 045P.** Cohen-Macaulayness of local rings is unchanged after an
 > arbitrary extension of the ground field when the scheme is locally of finite type over that

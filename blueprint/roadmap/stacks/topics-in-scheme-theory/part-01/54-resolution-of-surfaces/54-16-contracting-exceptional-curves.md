@@ -14,7 +14,7 @@ Section 54.16 of the Stacks Project, [Tag 0C2I](https://stacks.math.columbia.edu
 
 [Tag 0C2I](https://stacks.math.columbia.edu/tag/0C2I) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.ExistsContraction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ExceptionalCurvesFirstKind.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ExceptionalCurvesFirstKind.lean#L75). The attribute's comment: “there exists a contraction of E: a morphism X ⟶ X' to a Noetherian scheme carrying E to a closed point x with O_{X',x} regular of dimension 2 and exhibiting X as the blowing up of X' at x”. References: SGA 7 X (1.14), “partial”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.ExistsContraction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ExceptionalCurvesFirstKind.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ExceptionalCurvesFirstKind.lean#L75). The attribute's comment: “there exists a contraction of E: a morphism X ⟶ X' to a Noetherian scheme carrying E to a closed point x with O\_\{X',x} regular of dimension 2 and exhibiting X as the blowing up of X' at x”. References: SGA 7 X (1.14), “partial”.
 
 > **There exists a contraction of `E`** (Section 0C2I): for the closed subscheme `E` of `X` cut
 > out by the ideal sheaf `D`, there is a morphism `X ⟶ X'` carrying `E` to a closed point `x` of a
@@ -27,8 +27,8 @@ def Scheme.IdealSheafData.ExistsContraction {X : Scheme.{u}} (D : X.IdealSheafDa
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.IdealSheafData.IsExceptionalCurveOfFirstKind`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurve.lean#L76), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ExceptionalCurvesFirstKind.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ExceptionalCurvesFirstKind.lean#L60) (StacksFrontier): “an exceptional curve of the first kind: an effective Cartier divisor E with an isomorphism 𝐏¹_k ≅ E under which the normal sheaf of E pulls back to 𝒪(-1)”.
-- [`Stacks.Blowup.exists_isExceptionalCurveOfFirstKind_exceptionalIdeal_vanishingIdeal`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceExceptionalCurveGlobal.lean#L219), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ExceptionalCurvesFirstKind.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ExceptionalCurvesFirstKind.lean#L64) (StacksFrontier): “the exceptional fibre E of the blowing up of X' at a closed point x with O_{X',x} regular of dimension 2 is an exceptional curve of the first kind (from Tag 0AGQ)”.
+- [`AlgebraicGeometry.Scheme.IdealSheafData.IsExceptionalCurveOfFirstKind`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurve.lean#L76), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ExceptionalCurvesFirstKind.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ExceptionalCurvesFirstKind.lean#L60) (StacksFrontier): “an exceptional curve of the first kind: an effective Cartier divisor E with an isomorphism 𝐏¹\_k ≅ E under which the normal sheaf of E pulls back to 𝒪(-1)”.
+- [`Stacks.Blowup.exists_isExceptionalCurveOfFirstKind_exceptionalIdeal_vanishingIdeal`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/RegularSurfaceExceptionalCurveGlobal.lean#L219), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ExceptionalCurvesFirstKind.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ExceptionalCurvesFirstKind.lean#L64) (StacksFrontier): “the exceptional fibre E of the blowing up of X' at a closed point x with O\_\{X',x} regular of dimension 2 is an exceptional curve of the first kind (from Tag 0AGQ)”.
 
 ## Tag 0C5J, a lemma
 
@@ -155,7 +155,7 @@ public theorem ringKrullDim_formalNeighborhoodRing_eq_two_of_isExceptionalCurveO
     ringKrullDim (formalNeighborhoodRing D) = 2
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.IsExceptionalCurveOfFirstKind.ker_formalNeighborhoodProjection_eq_maximalIdeal_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurveFormalNeighborhoodUnconditional.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurveFormalNeighborhoodUnconditional.lean#L288). The attribute's comment: “the kernel clause: the kernel of the projection to E_{n+1} is the (n+1)-st power of the maximal ideal”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.IsExceptionalCurveOfFirstKind.ker_formalNeighborhoodProjection_eq_maximalIdeal_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurveFormalNeighborhoodUnconditional.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurveFormalNeighborhoodUnconditional.lean#L288). The attribute's comment: “the kernel clause: the kernel of the projection to E\_\{n+1} is the (n+1)-st power of the maximal ideal”.
 
 > **Stacks 0C2K, the kernel clause.** For an exceptional curve of the first kind on a Noetherian
 > scheme, the kernel of the projection of the ring of compatible functions to `H⁰(Eₙ₊₁, 𝒪)` is the
@@ -257,7 +257,7 @@ public theorem contractionPicardExactness_of_isContraction
     D.ContractionPicardExactness k e b
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.exceptionalRestrictionHom_negativeExceptionalMultiple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean#L158). The attribute's comment: “the splitting map n ↦ O_X(-nE), stated through Pic(P¹_k) rather than Z: the restriction of O_X(-nE) to the exceptional curve is O(n)”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.exceptionalRestrictionHom_negativeExceptionalMultiple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean#L158). The attribute's comment: “the splitting map n ↦ O\_X(-nE), stated through Pic(P¹\_k) rather than Z: the restriction of O\_X(-nE) to the exceptional curve is O(n)”.
 
 > The restriction of `𝒪_X(-nE)` to the exceptional curve is `𝒪(n)`, written as the `(-n)`-th
 > multiple of the class of `𝒪(-1)` in `Pic(𝐏¹_k)`.
@@ -273,7 +273,7 @@ public theorem exceptionalRestrictionHom_negativeExceptionalMultiple
         (isInvertible_twistingSheaf_projectiveLine k (-1))
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.exceptionalDegreeHom_negativeExceptionalMultiple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean#L185). The attribute's comment: “the splitting: the degree of O_X(-nE) on the exceptional curve is n. The identification Z ≃+ Pic(P¹_k) of Tag 0BXJ is an explicit hypothesis, the library having only the injectivity half of that tag”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.exceptionalDegreeHom_negativeExceptionalMultiple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean#L185). The attribute's comment: “the splitting: the degree of O\_X(-nE) on the exceptional curve is n. The identification Z ≃+ Pic(P¹\_k) of Tag 0BXJ is an explicit hypothesis, the library having only the injectivity half of that tag”.
 
 > If `φ : ℤ ≃+ Pic(𝐏¹_k)` carries `-1` to the class of `𝒪(-1)`, then the degree of `𝒪_X(-nE)`
 > on the exceptional curve is `n`.
@@ -290,7 +290,7 @@ public theorem exceptionalDegreeHom_negativeExceptionalMultiple
     exceptionalDegreeHom D k e φ (negativeExceptionalMultipleHom D n) = n
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.exceptionalDegreeHom_picardClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean#L207). The attribute's comment: “the normalization of the degree map: O_X(E) has degree -1 on the exceptional curve. The identification Z ≃+ Pic(P¹_k) of Tag 0BXJ is an explicit hypothesis, the library having only the injectivity half of that tag”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.exceptionalDegreeHom_picardClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean#L207). The attribute's comment: “the normalization of the degree map: O\_X(E) has degree -1 on the exceptional curve. The identification Z ≃+ Pic(P¹\_k) of Tag 0BXJ is an explicit hypothesis, the library having only the injectivity half of that tag”.
 
 > If `φ : ℤ ≃+ Pic(𝐏¹_k)` carries `-1` to the class of `𝒪(-1)`, then the degree of `𝒪_X(E)` on
 > the exceptional curve is `-1`.
@@ -306,7 +306,7 @@ public theorem exceptionalDegreeHom_picardClass
     exceptionalDegreeHom D k e φ (Stacks.Divisors.picardClass D) = -1
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.exceptionalDegreeHom_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean#L225). The attribute's comment: “right exactness: the degree map Pic(X) ⟶ Z on the exceptional curve is surjective, witnessed by the splitting n ↦ O_X(-nE). The identification Z ≃+ Pic(P¹_k) of Tag 0BXJ is an explicit hypothesis, the library having only the injectivity half of that tag”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.exceptionalDegreeHom_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean#L225). The attribute's comment: “right exactness: the degree map Pic(X) ⟶ Z on the exceptional curve is surjective, witnessed by the splitting n ↦ O\_X(-nE). The identification Z ≃+ Pic(P¹\_k) of Tag 0BXJ is an explicit hypothesis, the library having only the injectivity half of that tag”.
 
 > If `φ : ℤ ≃+ Pic(𝐏¹_k)` carries `-1` to the class of `𝒪(-1)`, then the degree map on the
 > exceptional curve is surjective onto `ℤ`.
@@ -322,7 +322,7 @@ public theorem exceptionalDegreeHom_surjective
     Function.Surjective (exceptionalDegreeHom D k e φ)
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.negativeExceptionalMultipleHom_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean#L241). The attribute's comment: “the splitting n ↦ O_X(-nE) is injective, so Z is a direct summand of Pic(X). The identification Z ≃+ Pic(P¹_k) of Tag 0BXJ is an explicit hypothesis, the library having only the injectivity half of that tag”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.negativeExceptionalMultipleHom_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicard.lean#L241). The attribute's comment: “the splitting n ↦ O\_X(-nE) is injective, so Z is a direct summand of Pic(X). The identification Z ≃+ Pic(P¹\_k) of Tag 0BXJ is an explicit hypothesis, the library having only the injectivity half of that tag”.
 
 > If `φ : ℤ ≃+ Pic(𝐏¹_k)` carries `-1` to the class of `𝒪(-1)`, then `n ↦ [𝒪_X(-nE)]` is
 > injective, so `ℤ` is a direct summand of `Pic(X)`.
@@ -338,7 +338,7 @@ public theorem negativeExceptionalMultipleHom_injective
     Function.Injective (negativeExceptionalMultipleHom D)
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.exceptionalDegree_negativeExceptionalMultiple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardContraction.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardContraction.lean#L112). The attribute's comment: “the splitting: the degree of O_X(-nE) on the exceptional curve is n”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.exceptionalDegree_negativeExceptionalMultiple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardContraction.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardContraction.lean#L112). The attribute's comment: “the splitting: the degree of O\_X(-nE) on the exceptional curve is n”.
 
 > **Stacks Project, Tag 0C5L, the splitting.** The degree of `𝒪_X(-nE)` on the exceptional
 > curve is `n`, so the sequence of the tag is split by `n ↦ 𝒪_X(-nE)`.
@@ -349,7 +349,7 @@ public theorem exceptionalDegree_negativeExceptionalMultiple
     D.exceptionalDegree k e (negativeExceptionalMultipleHom D n) = n
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.exceptionalDegree_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardContraction.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardContraction.lean#L122). The attribute's comment: “right exactness: the degree map Pic(X) ⟶ Z on the exceptional curve is surjective, witnessed by the splitting n ↦ O_X(-nE)”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.exceptionalDegree_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardContraction.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardContraction.lean#L122). The attribute's comment: “right exactness: the degree map Pic(X) ⟶ Z on the exceptional curve is surjective, witnessed by the splitting n ↦ O\_X(-nE)”.
 
 > **Stacks Project, Tag 0C5L, right exactness.** The degree map on the exceptional curve is
 > surjective onto `ℤ`, because `𝒪_X(-nE)` has degree `n`.
@@ -359,7 +359,7 @@ public theorem exceptionalDegree_surjective (hE : D.IsExceptionalCurveOfFirstKin
     Function.Surjective (D.exceptionalDegree k e)
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.exceptionalDegree_picardClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardContraction.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardContraction.lean#L130). The attribute's comment: “the normalization of the degree map: O_X(E) has degree -1 on the exceptional curve”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.exceptionalDegree_picardClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardContraction.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardContraction.lean#L130). The attribute's comment: “the normalization of the degree map: O\_X(E) has degree -1 on the exceptional curve”.
 
 > **The degree of `𝒪_X(E)` on the exceptional curve is `-1`**, the source's reading of the
 > definition of an exceptional curve of the first kind.
@@ -369,7 +369,7 @@ public theorem exceptionalDegree_picardClass (hE : D.IsExceptionalCurveOfFirstKi
     D.exceptionalDegree k e (Stacks.Divisors.picardClass D) = -1
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.negativeExceptionalMultipleHom_injective'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardContraction.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardContraction.lean#L138). The attribute's comment: “the splitting n ↦ O_X(-nE) is injective, so Z is a direct summand of Pic(X)”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.negativeExceptionalMultipleHom_injective'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardContraction.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardContraction.lean#L138). The attribute's comment: “the splitting n ↦ O\_X(-nE) is injective, so Z is a direct summand of Pic(X)”.
 
 > **The splitting of the sequence is injective**, so `ℤ` is a direct summand of `Pic(X)`:
 > distinct multiples `𝒪_X(-nE)` have distinct degrees on the exceptional curve.
@@ -422,7 +422,7 @@ public theorem contractionPicardExactness_exceptionalIdealData (A : Type u) [Com
     (Stacks.Blowup.exceptionalIdealData (maximalIdeal A)).ContractionPicardExactness k e b
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.picardShortExactSequence_of_isContraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardShortExactSequence.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardShortExactSequence.lean#L79). The attribute's comment: “the short exact sequence 0 → Pic(X') → Pic(X) → Z → 0 of the contraction of an exceptional curve of the first kind, in one statement with every clause written out: pullback along b is injective, a class has degree zero on the exceptional curve iff it is pulled back along b, the degree is surjective onto Z, the splitting n ↦ O_X(-nE) is a section of the degree, and O_X(E) has degree -1”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.picardShortExactSequence_of_isContraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardShortExactSequence.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardShortExactSequence.lean#L79). The attribute's comment: “the short exact sequence 0 → Pic(X') → Pic(X) → Z → 0 of the contraction of an exceptional curve of the first kind, in one statement with every clause written out: pullback along b is injective, a class has degree zero on the exceptional curve iff it is pulled back along b, the degree is surjective onto Z, the splitting n ↦ O\_X(-nE) is a section of the degree, and O\_X(E) has degree -1”.
 
 > **Stacks Project, Tag 0C5L: the Picard short exact sequence of the contraction of an
 > exceptional curve of the first kind, together with its splitting.** Let `b : X ⟶ X'` contract the
@@ -517,7 +517,7 @@ public theorem picardDecomposition_of_isContraction_eq_iff_exceptionalTwist
       D.exceptionalTwist n L = Stacks.Picard.schemePullbackClassHom b L'
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.picardDecomposition_of_isContraction_apply_fst_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ContractionPicardDescent.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ContractionPicardDescent.lean#L413). The attribute's comment: “the formula L' = b_*L(nE) read off the proof of Tag 0C5L, stated for every pushforward on Picard classes left inverse to b^*, for a general contraction of an exceptional curve of the first kind: with nothing assumed beyond the contraction, exactness at Pic(X) discharged and such a pushforward exhibited”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.picardDecomposition_of_isContraction_apply_fst_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ContractionPicardDescent.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ContractionPicardDescent.lean#L413). The attribute's comment: “the formula L' = b\_*L(nE) read off the proof of Tag 0C5L, stated for every pushforward on Picard classes left inverse to b^*, for a general contraction of an exceptional curve of the first kind: with nothing assumed beyond the contraction, exactness at Pic(X) discharged and such a pushforward exhibited”.
 
 > For the contraction of an exceptional curve of the first kind, the `Pic(X')`-component of the
 > decomposition is `p(ℒ(nE))`, with `n` the degree of `ℒ` on the exceptional curve, for every
@@ -535,7 +535,7 @@ public theorem picardDecomposition_of_isContraction_apply_fst_pushforward
       p (D.exceptionalTwist (D.exceptionalDegree k e L) L)
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.picardDecomposition`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardDecomposition.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardDecomposition.lean#L254). The attribute's comment: “the identification Pic(X) = Pic(X') ⊕ Z, granted the two halves of Tag 0C5L the library does not prove — a pushforward b_* left inverse to b^*, and exactness at Pic(X) — bundled as the hypothesis ContractionPicardSplitting, and granted the identification Z ≃+ Pic(P¹_k) of Tag 0BXJ, of which the library has only the injectivity half”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.picardDecomposition`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardDecomposition.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardDecomposition.lean#L254). The attribute's comment: “the identification Pic(X) = Pic(X') ⊕ Z, granted the two halves of Tag 0C5L the library does not prove — a pushforward b\_* left inverse to b^*, and exactness at Pic(X) — bundled as the hypothesis ContractionPicardSplitting, and granted the identification Z ≃+ Pic(P¹\_k) of Tag 0BXJ, of which the library has only the injectivity half”.
 
 > **Stacks Project, Tag 0C5M: the identification `Pic(X) = Pic(X') ⊕ ℤ`.** For the contraction
 > `b : X ⟶ X'` of an exceptional curve of the first kind, a class `ℒ` on `X` is sent to the pair
@@ -549,7 +549,7 @@ public def picardDecomposition (hb : D.ContractionPicardSplitting k e φ b)
     Stacks.Picard.ofScheme X ≃+ Stacks.Picard.ofScheme X' × ℤ
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.picardDecomposition_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardDecomposition.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardDecomposition.lean#L290). The attribute's comment: “the characterisation: L corresponds to the pair (L', n) if and only if L = (b^*L')(-nE), granted the two halves of Tag 0C5L the library does not prove, bundled as the hypothesis ContractionPicardSplitting, and the identification Z ≃+ Pic(P¹_k) of Tag 0BXJ”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.picardDecomposition_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardDecomposition.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardDecomposition.lean#L290). The attribute's comment: “the characterisation: L corresponds to the pair (L', n) if and only if L = (b^*L')(-nE), granted the two halves of Tag 0C5L the library does not prove, bundled as the hypothesis ContractionPicardSplitting, and the identification Z ≃+ Pic(P¹\_k) of Tag 0BXJ”.
 
 > **Stacks Project, Tag 0C5M: the characterisation of the decomposition.** A class `ℒ`
 > corresponds to the pair `(ℒ', n)` if and only if `ℒ = (b^*ℒ')(-nE)`.
@@ -563,7 +563,7 @@ public theorem picardDecomposition_eq_iff (hb : D.ContractionPicardSplitting k e
       L = Stacks.Picard.schemePullbackClassHom b L' + D.negativeExceptionalMultipleHom n
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.contractedPicardHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardDecomposition.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardDecomposition.lean#L308). The attribute's comment: “the assignment L ↦ L' is a group homomorphism, granted the two halves of Tag 0C5L the library does not prove, bundled as the hypothesis ContractionPicardSplitting, and granted the identification Z ≃+ Pic(P¹_k) of Tag 0BXJ”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.contractedPicardHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardDecomposition.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Surfaces/ExceptionalCurvePicardDecomposition.lean#L308). The attribute's comment: “the assignment L ↦ L' is a group homomorphism, granted the two halves of Tag 0C5L the library does not prove, bundled as the hypothesis ContractionPicardSplitting, and granted the identification Z ≃+ Pic(P¹\_k) of Tag 0BXJ”.
 
 > **Stacks Project, Tag 0C5M: the assignment `ℒ ↦ ℒ'` is a group homomorphism.** It is the
 > `Pic(X')`-component of the decomposition `Pic(X) ≃+ Pic(X') × ℤ`.

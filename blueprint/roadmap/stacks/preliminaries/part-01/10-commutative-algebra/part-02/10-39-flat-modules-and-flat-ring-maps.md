@@ -135,7 +135,7 @@ Declarations registered for the tag:
 
 [Tag 0584](https://stacks.math.columbia.edu/tag/0584) in the Stacks Project.
 
-**`Module.Flat.tensorProduct_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/BaseChangeAlongFlatAlgebra.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/BaseChangeAlongFlatAlgebra.lean#L74). The attribute's comment: “(1)”. References: EGA 0 (6.2.1), “M⊗_A N is B-flat”.
+**`Module.Flat.tensorProduct_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/BaseChangeAlongFlatAlgebra.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/BaseChangeAlongFlatAlgebra.lean#L74). The attribute's comment: “(1)”. References: EGA 0 (6.2.1), “M⊗\_A N is B-flat”.
 
 > **Stacks 0584 (1)**: if `S → S'` is a flat map of `R`-algebras and `M` is an `S`-module that
 > is flat over `R`, then `S' ⊗_S M` is flat over `R`.
@@ -296,7 +296,7 @@ theorem faithfullyFlat_tfae [Module.Flat R M] :
 
 [Tag 00HQ](https://stacks.math.columbia.edu/tag/00HQ) in the Stacks Project.
 
-**`faithfullyFlat_tfae00HQ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FaithfullyFlat/Basic.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/FaithfullyFlat/Basic.lean#L168). References: EGA IV (2.2.2), “a)<=>b'), affine F=O_X”; EGA IV (2.2.3), “M = B with A → B flat”; EGA IV (2.2.5), “special case”; EGA IV (2.2.6), “special case”; SGA 1 IV (2.6), “(i) ⇔ (ii) ⇔ (ii bis)”; SGA 1 IV (2.3), “M = B”; SGA 3 V (4.1.1), “Faithful flatness clause”; SGA 4½ Arcata (1.4.1), “special case”.
+**`faithfullyFlat_tfae00HQ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FaithfullyFlat/Basic.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/FaithfullyFlat/Basic.lean#L168). References: EGA IV (2.2.2), “a)<=>b'), affine F=O\_X”; EGA IV (2.2.3), “M = B with A → B flat”; EGA IV (2.2.5), “special case”; EGA IV (2.2.6), “special case”; SGA 1 IV (2.6), “(i) ⇔ (ii) ⇔ (ii bis)”; SGA 1 IV (2.3), “M = B”; SGA 3 V (4.1.1), “Faithful flatness clause”; SGA 4½ Arcata (1.4.1), “special case”.
 
 > For a flat ring map `f : R →+* S`, faithful flatness is equivalent to surjectivity of
 > `Spec(S) → Spec(R)`, and to every closed point of `Spec(R)` lying in the image of that
@@ -372,7 +372,7 @@ theorem flat_iff_flat_localizedModule_atMaximal
         Module.Flat (Localization.AtPrime m) (LocalizedModule.AtPrime m M)
 ```
 
-**`flat_of_flat_localizedModule_maximal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Localization.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Localization.lean#L190). The attribute's comment: “part7_backward”. References: SGA 1 IV (1.2), “(ii)”.
+**`flat_of_flat_localizedModule_maximal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Localization.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Localization.lean#L190). The attribute's comment: “part7\_backward”. References: SGA 1 IV (1.2), “(ii)”.
 
 > If every `M_𝔪` (for `𝔪 ⊆ A` maximal) is flat over `R_𝔭` (with `𝔭 = R ∩ 𝔪`), then `M` is flat
 > over `R`.
@@ -398,7 +398,7 @@ theorem flat_of_flat_localizedModule_maximal
     Module.Flat R M
 ```
 
-**`flat_of_flat_atPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Localization.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Localization.lean#L217). The attribute's comment: “part6_backward”. References: SGA 1 IV (1.2), “(ii) with all primes”.
+**`flat_of_flat_atPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Localization.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Localization.lean#L217). The attribute's comment: “part6\_backward”. References: SGA 1 IV (1.2), “(ii) with all primes”.
 
 > If every `M_𝔮` (for `𝔮 ⊆ A` prime) is flat over `R_𝔭` (with `𝔭 = 𝔮 ∩ R`), then `M` is flat
 > over `R`.

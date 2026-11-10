@@ -74,7 +74,7 @@ theorem isDualizingComplex_iff_derivedPullback_of_isGorenstein_of_surjective
           f.toLRSHom.toShHom).obj K)
 ```
 
-**`Stacks.Duality.isDualizingComplex_iff_derivedPullback_of_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexSyntomicDescent.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexSyntomicDescent.lean#L501). The attribute's comment: “variant: case (1) with a polynomial presentation p, the invertibility hInv and the tensor formula hTensor at each affine pair as explicit parameters; the tag is Stacks.Duality.isDualizingComplex_iff_derivedPullback_of_syntomic_of_surjective”.
+**`Stacks.Duality.isDualizingComplex_iff_derivedPullback_of_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexSyntomicDescent.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexSyntomicDescent.lean#L501). The attribute's comment: “variant: case (1) with a polynomial presentation p, the invertibility hInv and the tensor formula hTensor at each affine pair as explicit parameters; the tag is Stacks.Duality.isDualizingComplex\_iff\_derivedPullback\_of\_syntomic\_of\_surjective”.
 
 > **Stacks Project, Tag 0E4N, case (1).** Let `f : X ⟶ Y` be a syntomic surjection of locally
 > Noetherian schemes and let `K` be an object of `D_QCoh(𝒪_Y)`. Then `K` is a dualizing complex on
@@ -112,7 +112,7 @@ theorem isDualizingComplex_iff_derivedPullback_of_syntomic [IsLocallyNoetherian 
       IsDualizingComplex ((derivedPullback f.toLRSHom.toShHom).obj K)
 ```
 
-**`Stacks.Duality.isDualizingComplex_iff_derivedPullback_of_flat_lci`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexSyntomicDescent.lean, line 549](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexSyntomicDescent.lean#L549). The attribute's comment: “variant: case (2) with a polynomial presentation p, the invertibility hInv and the tensor formula hTensor at each affine pair as explicit parameters; the tag is Stacks.Duality.isDualizingComplex_iff_derivedPullback_of_flat_lci_of_surjective”.
+**`Stacks.Duality.isDualizingComplex_iff_derivedPullback_of_flat_lci`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexSyntomicDescent.lean, line 549](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexSyntomicDescent.lean#L549). The attribute's comment: “variant: case (2) with a polynomial presentation p, the invertibility hInv and the tensor formula hTensor at each affine pair as explicit parameters; the tag is Stacks.Duality.isDualizingComplex\_iff\_derivedPullback\_of\_flat\_lci\_of\_surjective”.
 
 > **Stacks Project, Tag 0E4N, case (2).** Let `f : X ⟶ Y` be a surjective flat local complete
 > intersection morphism of locally Noetherian schemes and let `K` be an object of `D_QCoh(𝒪_Y)`.
@@ -149,7 +149,7 @@ theorem isDualizingComplex_iff_derivedPullback_of_flat_lci [IsLocallyNoetherian 
       IsDualizingComplex ((derivedPullback f.toLRSHom.toShHom).obj K)
 ```
 
-**`Stacks.Duality.isDualizingComplex_iff_derivedPullback_of_gorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexSyntomicDescent.lean, line 589](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexSyntomicDescent.lean#L589). The attribute's comment: “variant: case (3) with a polynomial presentation p, the fibre-ring Gorenstein property hGorRing and the tensor formula hTensor at each affine pair as explicit parameters; the tag is Stacks.Duality.isDualizingComplex_iff_derivedPullback_of_isGorenstein_of_surjective”.
+**`Stacks.Duality.isDualizingComplex_iff_derivedPullback_of_gorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexSyntomicDescent.lean, line 589](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/DualizingComplexSyntomicDescent.lean#L589). The attribute's comment: “variant: case (3) with a polynomial presentation p, the fibre-ring Gorenstein property hGorRing and the tensor formula hTensor at each affine pair as explicit parameters; the tag is Stacks.Duality.isDualizingComplex\_iff\_derivedPullback\_of\_isGorenstein\_of\_surjective”.
 
 > **Stacks Project, Tag 0E4N, case (3).** Let `f : X ⟶ Y` be a surjective Gorenstein morphism
 > of finite type of locally Noetherian schemes and let `K` be an object of `D_QCoh(𝒪_Y)`. Then `K`

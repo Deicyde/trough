@@ -46,7 +46,7 @@ theorem nonempty_iff_obstructionClass_eq_zero :
     Nonempty S.CompatibleFirstOrderThickening ↔ S.obstructionClass = 0
 ```
 
-**`Deformation.ToposThickening.RingedToposExtensionProblem.CompatibleFirstOrderThickening.autEquivDerivation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SolutionAutomorphisms.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SolutionAutomorphisms.lean#L419). The attribute's comment: “clause (3), the automorphism group of a solution, computed for the concrete group of section-wise derivations of the solution rather than Ext⁰_O(L_f, G); that identification is not proved, as in the library's Stacks 08UG and Stacks 08UK”.
+**`Deformation.ToposThickening.RingedToposExtensionProblem.CompatibleFirstOrderThickening.autEquivDerivation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SolutionAutomorphisms.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SolutionAutomorphisms.lean#L419). The attribute's comment: “clause (3), the automorphism group of a solution, computed for the concrete group of section-wise derivations of the solution rather than Ext⁰\_O(L\_f, G); that identification is not proved, as in the library's Stacks 08UG and Stacks 08UK”.
 
 > **Stacks Project, Tag 08V5, clause (3).** The automorphisms of a solution of the square-zero
 > extension problem of [Stacks Project, Tag 08V4] fitting into that diagram are canonically
@@ -63,7 +63,7 @@ public noncomputable def autEquivDerivation (P : S.CompatibleFirstOrderThickenin
     P.AutomorphismGroup ≃ Derivation P
 ```
 
-**`Deformation.ToposThickening.RingedToposExtensionProblem.CompatibleFirstOrderThickening.autEquivDerivation_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SolutionAutomorphisms.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SolutionAutomorphisms.lean#L445). The attribute's comment: “clause (3), that the canonical bijection of `autEquivDerivation` between the automorphisms of a solution and its section-wise derivations is a group isomorphism; the group is not identified with Ext⁰_O(L_f, G), as in the library's Stacks 08UG and Stacks 08UK”.
+**`Deformation.ToposThickening.RingedToposExtensionProblem.CompatibleFirstOrderThickening.autEquivDerivation_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SolutionAutomorphisms.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SolutionAutomorphisms.lean#L445). The attribute's comment: “clause (3), that the canonical bijection of `autEquivDerivation` between the automorphisms of a solution and its section-wise derivations is a group isomorphism; the group is not identified with Ext⁰\_O(L\_f, G), as in the library's Stacks 08UG and Stacks 08UK”.
 
 > **Stacks Project, Tag 08V5, clause (3).** The canonical bijection between the automorphisms
 > of a solution and the derivations of that solution is an isomorphism of groups: composition of
@@ -75,7 +75,7 @@ public theorem autEquivDerivation_mul (P : S.CompatibleFirstOrderThickening)
     autEquivDerivation P (a * b) = autEquivDerivation P a + autEquivDerivation P b
 ```
 
-**`Deformation.ToposThickening.RingedToposExtensionProblem.CompatibleFirstOrderThickening.autMulEquivExtZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SolutionAutomorphismsExt.lean, line 483](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SolutionAutomorphismsExt.lean#L483). The attribute's comment: “clause (3): given a solution, its automorphisms fitting into the diagram of 08V4 form a group canonically isomorphic to Ext⁰_O(L_f, G)”.
+**`Deformation.ToposThickening.RingedToposExtensionProblem.CompatibleFirstOrderThickening.autMulEquivExtZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SolutionAutomorphismsExt.lean, line 483](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SolutionAutomorphismsExt.lean#L483). The attribute's comment: “clause (3): given a solution, its automorphisms fitting into the diagram of 08V4 form a group canonically isomorphic to Ext⁰\_O(L\_f, G)”.
 
 > Given a solution `P` of a square-zero extension problem of ringed topoi, the group of
 > automorphisms of `P` fitting into the diagram of the problem is canonically isomorphic to
@@ -88,7 +88,7 @@ noncomputable def autMulEquivExtZero :
     P.AutomorphismGroup ≃* Multiplicative (S.f.cotangentExt (targetG S) 0)
 ```
 
-**`Deformation.ToposThickening.RingedToposExtensionProblem.CompatibleFirstOrderThickening.isomorphismClassesAddTorsor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SolutionIsomorphismClassesExt.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SolutionIsomorphismClassesExt.lean#L106). The attribute's comment: “clause (2): if a solution exists, the set of isomorphism classes of solutions is principal homogeneous under Ext¹(L_f, G); the element separating two classes is the image of their obstruction class under Ext¹(NL_f, G) = Ext¹(L_f, G)”.
+**`Deformation.ToposThickening.RingedToposExtensionProblem.CompatibleFirstOrderThickening.isomorphismClassesAddTorsor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SolutionIsomorphismClassesExt.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SolutionIsomorphismClassesExt.lean#L106). The attribute's comment: “clause (2): if a solution exists, the set of isomorphism classes of solutions is principal homogeneous under Ext¹(L\_f, G); the element separating two classes is the image of their obstruction class under Ext¹(NL\_f, G) = Ext¹(L\_f, G)”.
 
 > **Stacks 08V5**, clause (2): if the square-zero extension problem has a solution, the
 > isomorphism classes of solutions are a principal homogeneous space under `Ext¹_O(L_f, G)`.

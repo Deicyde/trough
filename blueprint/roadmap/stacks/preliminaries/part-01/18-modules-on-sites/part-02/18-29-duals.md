@@ -140,7 +140,7 @@ theorem evaluation_eq_dualEval_dualSheafIsoOfLeftDual_inv (U : C)
       dualEval ((dualSheafIsoOfLeftDual 𝒪 h𝒪 F G).inv.val.app (op U) y) x
 ```
 
-**`Stacks.SheafOfModules.exists_cover_retract_finiteFree_of_exactPairing_tensorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorAssociatorSections.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorAssociatorSections.lean#L329). The attribute's comment: “local_finite_free_summand”.
+**`Stacks.SheafOfModules.exists_cover_retract_finiteFree_of_exactPairing_tensorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorAssociatorSections.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorAssociatorSections.lean#L329). The attribute's comment: “local\_finite\_free\_summand”.
 
 > Let `(C, O)` be a ringed site and let `F` be a sheaf of `O`-modules with a left dual `G` for
 > the monoidal structure given by the tensor product sheaf. Then every object `U` of the site has

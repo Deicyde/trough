@@ -45,7 +45,7 @@ theorem IsDualizingModuleOf.exists_isInvertibleModule_iso_sheafTensor [Connected
       Nonempty (ω' ≅ ((Stacks.SheafOfModules.Tensor.sheafTensor X.sheaf).obj ω).obj ℒ)
 ```
 
-**`Stacks.Duality.isDualizingModuleOf_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleMaximalDimension.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleMaximalDimension.lean#L191). The attribute's comment: “the definition the section states: omega_X = H^n(omega_X^bullet) with n the smallest integer such that H^n(omega_X^bullet) is nonzero, for a dualizing complex on a (locally) Noetherian scheme; IsDualizingModuleOf omega K n holds exactly when K is a dualizing complex, n is the least element of the set of degrees with nonzero cohomology, and omega is the cohomology sheaf in degree n”.
+**`Stacks.Duality.isDualizingModuleOf_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleMaximalDimension.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleMaximalDimension.lean#L191). The attribute's comment: “the definition the section states: omega\_X = H^n(omega\_X^bullet) with n the smallest integer such that H^n(omega\_X^bullet) is nonzero, for a dualizing complex on a (locally) Noetherian scheme; IsDualizingModuleOf omega K n holds exactly when K is a dualizing complex, n is the least element of the set of degrees with nonzero cohomology, and omega is the cohomology sheaf in degree n”.
 
 > **Stacks Project, Tag 0AWH, the definition.** Let `X` be a locally Noetherian scheme and `K`
 > a dualizing complex on `X`. Let `n` be the smallest integer such that `H^n(K)` is nonzero; then
@@ -61,7 +61,7 @@ theorem isDualizingModuleOf_iff {X : Scheme.{u}} [IsLocallyNoetherian X]
       ω = (DerivedCategory.homologyFunctor X.Modules n).obj K
 ```
 
-**`Stacks.Duality.isGreatest_neg_of_isDualizingModuleOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleMaximalDimension.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleMaximalDimension.lean#L212). The attribute's comment: “the section's identification of the degree: -n is the maximal value of the dimension function attached to omega_X^bullet (Tag 0AWF), where n is the least degree in which the dualizing complex has nonvanishing cohomology. The dimension function is associatedShiftFunction K, which Tag 0AWF (isUniversallyCatenary_and_isDimensionFunction_associatedShiftFunction) shows is the normalizing shift of the derived stalks and a dimension function. Stated for a locally Noetherian scheme, which contains the source's Noetherian case”.
+**`Stacks.Duality.isGreatest_neg_of_isDualizingModuleOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleMaximalDimension.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleMaximalDimension.lean#L212). The attribute's comment: “the section's identification of the degree: -n is the maximal value of the dimension function attached to omega\_X^bullet (Tag 0AWF), where n is the least degree in which the dualizing complex has nonvanishing cohomology. The dimension function is associatedShiftFunction K, which Tag 0AWF (isUniversallyCatenary\_and\_isDimensionFunction\_associatedShiftFunction) shows is the normalizing shift of the derived stalks and a dimension function. Stated for a locally Noetherian scheme, which contains the source's Noetherian case”.
 
 > **Stacks Project, Tag 0AWH.** Let `X` be a locally Noetherian scheme and let `ω` be a
 > dualizing module of the dualizing complex `K`, realized in degree `n`, the least degree in which
@@ -76,7 +76,7 @@ theorem isGreatest_neg_of_isDualizingModuleOf {X : Scheme.{u}} [IsLocallyNoether
     IsGreatest (Set.range (associatedShiftFunction K)) (-n)
 ```
 
-**`Stacks.Duality.IsDualizingModuleOf.restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleRestriction.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleRestriction.lean#L64). The attribute's comment: “the section's first warning: the integer n may change on passing to an open U, and then the restriction of omega_X to U is not omega_U. The degree can only go up, the two modules agree when it does not change, and when it changes the restriction is zero while omega_U is not”.
+**`Stacks.Duality.IsDualizingModuleOf.restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleRestriction.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleRestriction.lean#L64). The attribute's comment: “the section's first warning: the integer n may change on passing to an open U, and then the restriction of omega\_X to U is not omega\_U. The degree can only go up, the two modules agree when it does not change, and when it changes the restriction is zero while omega\_U is not”.
 
 > **Stacks Project, Tag 0AWH, the first warning.** Let `ω` be a dualizing module of the
 > dualizing complex `K` on `X`, realized in degree `n`, let `U ⊆ X` be open and let `ω_U` be a
@@ -95,7 +95,7 @@ theorem IsDualizingModuleOf.restrict {ω : X.Modules} {K : DerivedCategory X.Mod
         IsEmpty ((Scheme.Modules.restrictFunctor U.ι).obj ω ≅ ωU))
 ```
 
-**`Stacks.Duality.IsDualizingModuleOf.restrict_of_associatedShiftFunction_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleRestriction.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleRestriction.lean#L150). The attribute's comment: “the section's closing remark on the first warning: if the dimension function attached to omega_X^bullet (Tag 0AWF) maps every generic point of X to the same integer, the degree does not change on a nonempty open U and omega_X restricted to U is omega_U”.
+**`Stacks.Duality.IsDualizingModuleOf.restrict_of_associatedShiftFunction_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleRestriction.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleRestriction.lean#L150). The attribute's comment: “the section's closing remark on the first warning: if the dimension function attached to omega\_X^bullet (Tag 0AWF) maps every generic point of X to the same integer, the degree does not change on a nonempty open U and omega\_X restricted to U is omega\_U”.
 
 > **Stacks Project, Tag 0AWH, the closing remark on the first warning.** If the dimension
 > function attached to `K` ([Stacks, Tag 0AWF]) takes the same value at every generic point of `X`,
@@ -171,7 +171,7 @@ def relativeDualizingModule (ωY : quasiCoherentDerivedCategory Y) : X.Modules
 
 [Tag 0AWJ](https://stacks.math.columbia.edu/tag/0AWJ) in the Stacks Project.
 
-**`Stacks.Duality.normalizedDualizingModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleOverField.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleOverField.lean#L117). The attribute's comment: “the definition: omega_X = H^{-dim X}(omega_X^bullet) for the complex normalized relative to k[0]”.
+**`Stacks.Duality.normalizedDualizingModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleOverField.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleOverField.lean#L117). The attribute's comment: “the definition: omega\_X = H^\{-dim X}(omega\_X^bullet) for the complex normalized relative to k[0]”.
 
 > **The dualizing module `ω_X = H^{-dim(X)}(ω_X^•)`** of [Stacks, Tag 0AWJ]: the cohomology
 > sheaf in degree minus the dimension of `X` of a complex normalized relative to a chosen complex
@@ -182,7 +182,7 @@ def relativeDualizingModule (ωY : quasiCoherentDerivedCategory Y) : X.Modules
 def normalizedDualizingModule (𝒩 : Normalized A hp ωS 𝒰) : X.Modules
 ```
 
-**`Stacks.Duality.normalizedUpperShriekOverField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleOverField.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleOverField.lean#L224). The attribute's comment: “the second assertion: for X separated over k the normalized complex is f^! O_{Spec k}. RESTRICTED: the upper-shriek formalism of Stacks 0A9Y/0ATX/0ATY is the parameter UpperShriek, pending its landing”.
+**`Stacks.Duality.normalizedUpperShriekOverField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleOverField.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleOverField.lean#L224). The attribute's comment: “the second assertion: for X separated over k the normalized complex is f^! O\_\{Spec k}. RESTRICTED: the upper-shriek formalism of Stacks 0A9Y/0ATX/0ATY is the parameter UpperShriek, pending its landing”.
 
 > **[Stacks, Tag 0AWJ]** For `X` separated and of finite type over a field `k` with structure
 > morphism `f : X ⟶ Spec(k)`, the complex `f^!𝒪_{Spec(k)}` is normalized relative to `k[0]`: this
@@ -194,7 +194,7 @@ def normalizedUpperShriekOverField {ι : Type w} (𝒰 : SeparatedCovering p ι)
       (DerivedPushforward.derivedStructureSheaf (Spec (.of k))).obj 𝒰
 ```
 
-**`Stacks.Duality.isDualizingComplex_normalizedDualizingComplex_of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/DualizingModuleOverFieldNagata.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/DualizingModuleOverFieldNagata.lean#L62). The attribute's comment: “omega_X^bullet, the dualizing complex normalized relative to k[0]”.
+**`Stacks.Duality.isDualizingComplex_normalizedDualizingComplex_of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/DualizingModuleOverFieldNagata.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/DualizingModuleOverFieldNagata.lean#L62). The attribute's comment: “omega\_X^bullet, the dualizing complex normalized relative to k[0]”.
 
 > **[Stacks, Tag 0AWJ], the complex `ω_X^•`.** For `X` of finite type over a field `k`, the
 > dualizing complex `ω_X^•` normalized relative to `k[0]` (`k[0]` being a dualizing complex on
@@ -222,7 +222,7 @@ theorem isDualizingComplex_normalizedDualizingComplex_of_field :
             (isDualizingComplex_derivedStructureSheafPlus_of_field k)).localIso W hW
 ```
 
-**`Stacks.Duality.dualizingModuleOfCompactifications_nagata_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/DualizingModuleOverFieldNagata.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/DualizingModuleOverFieldNagata.lean#L88). The attribute's comment: “omega_X = H^{-dim X}(omega_X^bullet)”.
+**`Stacks.Duality.dualizingModuleOfCompactifications_nagata_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/DualizingModuleOverFieldNagata.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/DualizingModuleOverFieldNagata.lean#L88). The attribute's comment: “omega\_X = H^\{-dim X}(omega\_X^bullet)”.
 
 > **[Stacks, Tag 0AWJ], the module `ω_X`.** For `X` of finite type over a field `k`, the
 > dualizing module `ω_X` is `H^{-dim(X)}(ω_X^•)`, the cohomology sheaf in degree minus the dimension
@@ -238,7 +238,7 @@ theorem dualizingModuleOfCompactifications_nagata_eq :
           (isDualizingComplex_derivedStructureSheafPlus_of_field k)).complex.obj.obj
 ```
 
-**`Stacks.Duality.existsUnique_iso_upperShriekPlus_of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/DualizingModuleOverFieldNagata.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/DualizingModuleOverFieldNagata.lean#L104). The attribute's comment: “for X separated over k, omega_X^bullet = f^! O_{Spec k}”.
+**`Stacks.Duality.existsUnique_iso_upperShriekPlus_of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/DualizingModuleOverFieldNagata.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/DualizingModuleOverFieldNagata.lean#L104). The attribute's comment: “for X separated over k, omega\_X^bullet = f^! O\_\{Spec k}”.
 
 > **[Stacks, Tag 0AWJ], the separated case.** If `X` is separated and of finite type over a
 > field `k`, then `ω_X^• = f^! 𝒪_{Spec(k)}`, `f : X ⟶ Spec(k)` being the structure morphism and
@@ -272,7 +272,7 @@ theorem existsUnique_iso_upperShriekPlus_of_field [IsSeparated p]
           (isDualizingComplex_derivedStructureSheafPlus_of_field k)).localIso W hW
 ```
 
-**`Stacks.Duality.normalizedDualizingComplexIsoRelativeDualizingComplexOfField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/DualizingModuleOverFieldNagata.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/DualizingModuleOverFieldNagata.lean#L134). The attribute's comment: “for X proper over k, omega_X^bullet = a(O_{Spec k}), the complex of Example 0AWI”.
+**`Stacks.Duality.normalizedDualizingComplexIsoRelativeDualizingComplexOfField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/DualizingModuleOverFieldNagata.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/DualizingModuleOverFieldNagata.lean#L134). The attribute's comment: “for X proper over k, omega\_X^bullet = a(O\_\{Spec k}), the complex of Example 0AWI”.
 
 > **[Stacks, Tag 0AWJ], the proper case: `ω_X^• = a(𝒪_{Spec(k)})`.** If `X` is proper over a
 > field `k`, the dualizing complex normalized relative to `k[0]` is the twisted inverse image
@@ -415,7 +415,7 @@ theorem vanishing_and_support_relativeDualizingComplex
       ⋃₀ {C ∈ irreducibleComponents X | topologicalKrullDim C = topologicalKrullDim X}
 ```
 
-**`Stacks.Duality.supp_relativeDualizingModule_eq_topDimensionalComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/VanishingAndSupport.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/VanishingAndSupport.lean#L291). The attribute's comment: “part (3): Supp(omega_X) is the union of the components of dimension dim(X). RESTRICTED: two explicit hypotheses. hloc is the local description of omega_X^bullet, a Stacks.Duality.HasNormalizedStalks; see part (1) for what it records and why. hcomp is a statement about a catenary Noetherian scheme with no dualizing complex in it -- that a point satisfies dim(closure {x}) + dim(O_{X,x}) = dim(X) exactly when it lies on an irreducible component of dimension dim(X); its analogue over a Noetherian local ring is the catenary step inside Dualizing.support_canonicalModule of Tag 0AWE, but the scheme-level statement is not proved here. The dualizing content is proved and is unconditional given hloc: supp_relativeDualizingModule_eq_setOf identifies Supp(omega_X) with the locus where that equality holds, by the lower degree bound of Tag 0A7U and the nonvanishing of the canonical module of Tag 0A7V on the stalk”.
+**`Stacks.Duality.supp_relativeDualizingModule_eq_topDimensionalComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/VanishingAndSupport.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/VanishingAndSupport.lean#L291). The attribute's comment: “part (3): Supp(omega\_X) is the union of the components of dimension dim(X). RESTRICTED: two explicit hypotheses. hloc is the local description of omega\_X^bullet, a Stacks.Duality.HasNormalizedStalks; see part (1) for what it records and why. hcomp is a statement about a catenary Noetherian scheme with no dualizing complex in it -- that a point satisfies dim(closure \{x}) + dim(O\_\{X,x}) = dim(X) exactly when it lies on an irreducible component of dimension dim(X); its analogue over a Noetherian local ring is the catenary step inside Dualizing.support\_canonicalModule of Tag 0AWE, but the scheme-level statement is not proved here. The dualizing content is proved and is unconditional given hloc: supp\_relativeDualizingModule\_eq\_setOf identifies Supp(omega\_X) with the locus where that equality holds, by the lower degree bound of Tag 0A7U and the nonvanishing of the canonical module of Tag 0A7V on the stalk”.
 
 > **Stacks Project, Tag 0AWN, part (3).** Let `X/A` with `ω_X^•` and `ω_X` be as in
 > [Stacks, Tag 0AWI]. Then `Supp(ω_X)` is the union of the irreducible components of `X` of
@@ -437,7 +437,7 @@ theorem supp_relativeDualizingModule_eq_topDimensionalComponents
 
 [Tag 0AWP](https://stacks.math.columbia.edu/tag/0AWP) in the Stacks Project.
 
-**`Stacks.Duality.dualizingModuleRepresentableBy`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingModuleRepresentabilityLocalBase.lean, line 994](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingModuleRepresentabilityLocalBase.lean#L994). The attribute's comment: “the whole lemma, in the setting of Example 0AWI with omega_X^bullet the twisted inverse image of omega_S^bullet (the relative dualizing complex of the 0AWI definition) and omega_A = H^{-dim A}(omega_A^bullet); the functor is represented on all quasi-coherent modules, which contain the coherent ones, and d may be any upper bound for dim(X_s) with dim(X) = d + dim(A)”.
+**`Stacks.Duality.dualizingModuleRepresentableBy`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingModuleRepresentabilityLocalBase.lean, line 994](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingModuleRepresentabilityLocalBase.lean#L994). The attribute's comment: “the whole lemma, in the setting of Example 0AWI with omega\_X^bullet the twisted inverse image of omega\_S^bullet (the relative dualizing complex of the 0AWI definition) and omega\_A = H^\{-dim A}(omega\_A^bullet); the functor is represented on all quasi-coherent modules, which contain the coherent ones, and d may be any upper bound for dim(X\_s) with dim(X) = d + dim(A)”.
 
 > **[Stacks, Tag 0AWP].** Let `(A, 𝔪, κ)` be a Noetherian local ring and let `ω_S^•` be an
 > object of `D_QCoh(𝒪_{Spec A})` corresponding to a normalized dualizing complex `ω_A^•`. Let

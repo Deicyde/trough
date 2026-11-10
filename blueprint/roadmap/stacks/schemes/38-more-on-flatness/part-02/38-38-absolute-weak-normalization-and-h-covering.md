@@ -47,7 +47,7 @@ theorem isZero_hgroup_structureSheaf (p : ℕ) (hp : 0 < p) :
         (AlgebraicGeometry.Proj (modificationGrading A f₁ f₂)).ringCatSheaf))
 ```
 
-**`Stacks.AlmostBlowUp.modificationToBase_ker_sq_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/TwoGeneratorKernel.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/TwoGeneratorKernel.lean#L221). The attribute's comment: “kernel_square_zero”.
+**`Stacks.AlmostBlowUp.modificationToBase_ker_sq_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/TwoGeneratorKernel.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/TwoGeneratorKernel.lean#L221). The attribute's comment: “kernel\_square\_zero”.
 
 > **Stacks Project, Tag 0EVJ.** The global functions on `Spec A` killed by the modification
 > of the two-generator almost blowup square form an ideal of square zero.
@@ -226,7 +226,7 @@ lemma isAbsolutelyWeaklyNormalRing_iff_perfectRing
 
 [Tag 0EVW](https://stacks.math.columbia.edu/tag/0EVW) in the Stacks Project.
 
-**`Algebra.existsUnique_frobeniusColimit_iso_absoluteWeakNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimit.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimit.lean#L229). The attribute's comment: “frobenius_colimit”.
+**`Algebra.existsUnique_frobeniusColimit_iso_absoluteWeakNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimit.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/WeakNormalization/FrobeniusColimit.lean#L229). The attribute's comment: “frobenius\_colimit”.
 
 > For `p` prime and `A` an algebra over `ZMod p`, the colimit of the Frobenius sequence of `A`
 > is the absolute weak normalization of `A`, by a unique isomorphism compatible with the canonical

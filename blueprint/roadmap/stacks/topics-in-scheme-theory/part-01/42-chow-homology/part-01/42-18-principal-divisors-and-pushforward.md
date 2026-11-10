@@ -38,7 +38,7 @@ theorem properPushforward_principalDivisorCycle (C : ChowSituation.{u}) {X Y : S
 
 [Tag 0F93](https://stacks.math.columbia.edu/tag/0F93) in the Stacks Project.
 
-**`Stacks.Chow.lineZeroDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean#L303). The attribute's comment: “the divisor D₀ ⊆ ℙ¹_S”.
+**`Stacks.Chow.lineZeroDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean#L303). The attribute's comment: “the divisor D₀ ⊆ ℙ¹\_S”.
 
 > The zero divisor `D₀ ⊆ ℙ¹_S`: the closed subscheme cut out by the kernel ideal sheaf of
 > the zero section, equivalently the scheme-theoretic image of that section.
@@ -47,7 +47,7 @@ theorem properPushforward_principalDivisorCycle (C : ChowSituation.{u}) {X Y : S
 def lineZeroDivisor (S : Scheme.{u}) : (relativeProjectiveLine S).IdealSheafData
 ```
 
-**`Stacks.Chow.lineInfinityDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean#L309). The attribute's comment: “the divisor D₀ ⊆ ℙ¹_S”.
+**`Stacks.Chow.lineInfinityDivisor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor.lean#L309). The attribute's comment: “the divisor D₀ ⊆ ℙ¹\_S”.
 
 > The infinity divisor `D_∞ ⊆ ℙ¹_S`: the closed subscheme cut out by the kernel ideal sheaf
 > of the infinity section.
@@ -70,7 +70,7 @@ theorem zeroScheme_lineZeroDivisor (S : Scheme.{u}) :
       lineZeroDivisor S
 ```
 
-**`Stacks.Chow.zeroScheme_lineInfinityDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean#L79). The attribute's comment: “D_∞ is the zero scheme of a global section of an invertible module”.
+**`Stacks.Chow.zeroScheme_lineInfinityDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean#L79). The attribute's comment: “D\_∞ is the zero scheme of a global section of an invertible module”.
 
 > **Stacks 0F93, the infinity divisor as a zero scheme.** `D_∞ ⊆ ℙ¹_S` is the zero scheme of a
 > global section of an invertible module, namely of the canonical section `1_{D_∞}` of
@@ -98,7 +98,7 @@ theorem isTrivial_pullback_divisorSheaf_lineZeroDivisor (S : Scheme.{u}) :
         (Stacks.Divisors.divisorSheaf (lineZeroDivisor S)))
 ```
 
-**`Stacks.Chow.isTrivial_pullback_divisorSheaf_lineInfinityDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean#L238). The attribute's comment: “the normal bundle of D_∞ is trivial”.
+**`Stacks.Chow.isTrivial_pullback_divisorSheaf_lineInfinityDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/UniversalPrincipalDivisor/SectionPresentation.lean#L238). The attribute's comment: “the normal bundle of D\_∞ is trivial”.
 
 > **Stacks 0F93, the trivial normal bundle of `D_∞`.** The invertible module `𝒪(D_∞)`
 > restricts trivially to `D_∞`: the support of `D_∞` lies in the second chart, where `D_∞` is cut

@@ -51,7 +51,7 @@ public theorem translate_existsUnique (p q : Lift D) :
     ∃! δ : Derivation D.toSituation, translate p δ = q
 ```
 
-**`Deformation.ToposThickening.FirstOrderLiftDiagram.derivationEquivDifferentialsHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/LiftingDerivationGroup.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/LiftingDerivationGroup.lean#L510). The attribute's comment: “clause (2): the identification of the acting group of `FirstOrderLiftDiagram.existsUnique_translateHom` with the first group of the source's display, Hom_{O_1}(Omega_{O_1/O_{B_1}}, g_* G_2). Nothing assumed”.
+**`Deformation.ToposThickening.FirstOrderLiftDiagram.derivationEquivDifferentialsHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/LiftingDerivationGroup.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/LiftingDerivationGroup.lean#L510). The attribute's comment: “clause (2): the identification of the acting group of `FirstOrderLiftDiagram.existsUnique_translateHom` with the first group of the source's display, Hom\_\{O\_1}(Omega\_\{O\_1/O\_\{B\_1}}, g\_* G\_2). Nothing assumed”.
 
 > The derivations of the diagram, under which the lifts form a principal homogeneous space by
 > `Deformation.ToposThickening.FirstOrderLiftDiagram.existsUnique_translateHom`, are the
@@ -62,7 +62,7 @@ public noncomputable def derivationEquivDifferentialsHom :
     Derivation D.toSituation ≃+ (frontDifferentials D ⟶ pushedIdeal D)
 ```
 
-**`Deformation.ToposThickening.FirstOrderLiftDiagram.translateHom_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/LiftingDerivationGroup.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/LiftingDerivationGroup.lean#L530). The attribute's comment: “clause (2): triviality of the action of 0 in the principal homogeneous space structure under Hom_{O_1}(Omega_{O_1/O_{B_1}}, g_* G_2)”.
+**`Deformation.ToposThickening.FirstOrderLiftDiagram.translateHom_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/LiftingDerivationGroup.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/LiftingDerivationGroup.lean#L530). The attribute's comment: “clause (2): triviality of the action of 0 in the principal homogeneous space structure under Hom\_\{O\_1}(Omega\_\{O\_1/O\_\{B\_1}}, g\_* G\_2)”.
 
 > The zero homomorphism acts trivially on the lifts of the diagram.
 
@@ -70,7 +70,7 @@ public noncomputable def derivationEquivDifferentialsHom :
 public theorem translateHom_zero (p : D.Lift) : translateHom D p 0 = p
 ```
 
-**`Deformation.ToposThickening.FirstOrderLiftDiagram.translateHom_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/LiftingDerivationGroup.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/LiftingDerivationGroup.lean#L536). The attribute's comment: “clause (2): additivity of the action in the principal homogeneous space structure under Hom_{O_1}(Omega_{O_1/O_{B_1}}, g_* G_2)”.
+**`Deformation.ToposThickening.FirstOrderLiftDiagram.translateHom_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/LiftingDerivationGroup.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/LiftingDerivationGroup.lean#L536). The attribute's comment: “clause (2): additivity of the action in the principal homogeneous space structure under Hom\_\{O\_1}(Omega\_\{O\_1/O\_\{B\_1}}, g\_* G\_2)”.
 
 > Translation of the lifts of the diagram is additive in the translating homomorphism.
 
@@ -79,7 +79,7 @@ public theorem translateHom_add (p : D.Lift) (a b : frontDifferentials D ⟶ pus
     translateHom D (translateHom D p a) b = translateHom D p (a + b)
 ```
 
-**`Deformation.ToposThickening.FirstOrderLiftDiagram.existsUnique_translateHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/LiftingDerivationGroup.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/LiftingDerivationGroup.lean#L547). The attribute's comment: “clause (2) in full, with nothing assumed: the morphisms fitting into the source's diagram compatibly with nu are a principal homogeneous space under the source's own acting group Hom_{O_1}(Omega_{O_1/O_{B_1}}, g_* G_2), the underlying topoi identified as in the source's own reduction”.
+**`Deformation.ToposThickening.FirstOrderLiftDiagram.existsUnique_translateHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/LiftingDerivationGroup.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/LiftingDerivationGroup.lean#L547). The attribute's comment: “clause (2) in full, with nothing assumed: the morphisms fitting into the source's diagram compatibly with nu are a principal homogeneous space under the source's own acting group Hom\_\{O\_1}(Omega\_\{O\_1/O\_\{B\_1}}, g\_* G\_2), the underlying topoi identified as in the source's own reduction”.
 
 > The morphisms `(Sh(𝒞'₂), 𝒪'₂) ⟶ (Sh(𝒞'₁), 𝒪'₁)` fitting into the diagram compatibly with `ν`
 > form a principal homogeneous space under `Hom_{𝒪₁}(Ω_{𝒪₁/𝒪_{ℬ₁}}, g_*𝒢₂)`: any one of them is
@@ -90,7 +90,7 @@ public theorem existsUnique_translateHom (p q : D.Lift) :
     ∃! a : frontDifferentials D ⟶ pushedIdeal D, translateHom D p a = q
 ```
 
-**`Deformation.ToposThickening.RingedToposLiftDiagram.obstructionClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramObstruction.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramObstruction.lean#L114). The attribute's comment: “clause (1) for genuine morphisms of ringed topoi between four arbitrary ringed topoi: the canonical class in Ext^1_{O_2}(Lg^*NL_{O_1/O_{B_1}}, G_2), Lg^* the derived pullback of 06YY, is zero exactly when a morphism (Sh(C'_2), O'_2) -> (Sh(C'_1), O'_1) fitting into (08UH) compatibly with nu exists”.
+**`Deformation.ToposThickening.RingedToposLiftDiagram.obstructionClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramObstruction.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramObstruction.lean#L114). The attribute's comment: “clause (1) for genuine morphisms of ringed topoi between four arbitrary ringed topoi: the canonical class in Ext^1\_\{O\_2}(Lg^*NL\_\{O\_1/O\_\{B\_1}}, G\_2), Lg^* the derived pullback of 06YY, is zero exactly when a morphism (Sh(C'\_2), O'\_2) -> (Sh(C'\_1), O'\_1) fitting into (08UH) compatibly with nu exists”.
 
 > **Stacks Project, Tag 08UG, clause (1).** For the diagram (08UH) of ringed topoi, whose
 > horizontal arrows are first order thickenings, and a `g⁻¹𝒪₁`-linear map `ν : g⁻¹𝒢₁ ⟶ 𝒢₂` making
@@ -104,7 +104,7 @@ theorem obstructionClass_eq_zero_iff :
     obstructionClass D = 0 ↔ Nonempty (CompatibleLift D)
 ```
 
-**`Deformation.ToposThickening.RingedToposLiftDiagram.pullbackDifferentialsHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean#L120). The attribute's comment: “clause (2), the first equality of the display: Hom_{O_1}(Omega_{O_1/O_{B_1}}, g_* G_2) = Hom_{O_2}(g^* Omega_{O_1/O_{B_1}}, G_2), as an additive equivalence, for genuine morphisms of ringed topoi”.
+**`Deformation.ToposThickening.RingedToposLiftDiagram.pullbackDifferentialsHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean#L120). The attribute's comment: “clause (2), the first equality of the display: Hom\_\{O\_1}(Omega\_\{O\_1/O\_\{B\_1}}, g\_* G\_2) = Hom\_\{O\_2}(g^* Omega\_\{O\_1/O\_\{B\_1}}, G\_2), as an additive equivalence, for genuine morphisms of ringed topoi”.
 
 > **The first equality of the display of Stacks 08UG, clause (2)**:
 > `Hom_{𝒪₁}(Ω_{𝒪₁/𝒪_{ℬ₁}}, g_*𝒢₂) = Hom_{𝒪₂}(g^*Ω_{𝒪₁/𝒪_{ℬ₁}}, 𝒢₂)`, the adjunction `g^* ⊣ g_*` of
@@ -117,7 +117,7 @@ def pullbackDifferentialsHomEquiv :
       (differentials₁ D ⟶ pushedIdeal₁ D)
 ```
 
-**`Deformation.ToposThickening.RingedToposLiftDiagram.extZeroEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean#L140). The attribute's comment: “clause (2), the second equality of the display: Ext^0_{O_2}(Lg^* NL_{O_1/O_{B_1}}, G_2) = Hom_{O_1}(Omega_{O_1/O_{B_1}}, g_* G_2), as an additive equivalence, for genuine morphisms of ringed topoi”.
+**`Deformation.ToposThickening.RingedToposLiftDiagram.extZeroEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean#L140). The attribute's comment: “clause (2), the second equality of the display: Ext^0\_\{O\_2}(Lg^* NL\_\{O\_1/O\_\{B\_1}}, G\_2) = Hom\_\{O\_1}(Omega\_\{O\_1/O\_\{B\_1}}, g\_* G\_2), as an additive equivalence, for genuine morphisms of ringed topoi”.
 
 > **The second equality of the display of Stacks 08UG, clause (2)**:
 > `Hom_{𝒪₁}(Ω_{𝒪₁/𝒪_{ℬ₁}}, g_*𝒢₂) = Ext⁰_{𝒪₂}(Lg^*NL_{𝒪₁/𝒪_{ℬ₁}}, 𝒢₂)`, as an additive
@@ -137,7 +137,7 @@ def extZeroEquiv :
       (differentials₁ D ⟶ pushedIdeal₁ D)
 ```
 
-**`Deformation.ToposThickening.RingedToposLiftDiagram.translate_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean#L163). The attribute's comment: “clause (2), for genuine morphisms of ringed topoi: triviality of the action of 0 in the principal homogeneous space structure under Hom_{O_1}(Omega_{O_1/O_{B_1}}, g_* G_2)”.
+**`Deformation.ToposThickening.RingedToposLiftDiagram.translate_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean#L163). The attribute's comment: “clause (2), for genuine morphisms of ringed topoi: triviality of the action of 0 in the principal homogeneous space structure under Hom\_\{O\_1}(Omega\_\{O\_1/O\_\{B\_1}}, g\_* G\_2)”.
 
 > **Stacks Project, Tag 08UG**, clause (2): the zero homomorphism acts trivially.
 
@@ -145,7 +145,7 @@ def extZeroEquiv :
 theorem translate_zero (p : CompatibleLift D) : translate D p 0 = p
 ```
 
-**`Deformation.ToposThickening.RingedToposLiftDiagram.translate_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean#L170). The attribute's comment: “clause (2), for genuine morphisms of ringed topoi: additivity of the action in the principal homogeneous space structure under Hom_{O_1}(Omega_{O_1/O_{B_1}}, g_* G_2)”.
+**`Deformation.ToposThickening.RingedToposLiftDiagram.translate_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean#L170). The attribute's comment: “clause (2), for genuine morphisms of ringed topoi: additivity of the action in the principal homogeneous space structure under Hom\_\{O\_1}(Omega\_\{O\_1/O\_\{B\_1}}, g\_* G\_2)”.
 
 > **Stacks Project, Tag 08UG**, clause (2): the action is additive.
 
@@ -154,7 +154,7 @@ theorem translate_add (p : CompatibleLift D) (a b : differentials₁ D ⟶ pushe
     translate D (translate D p a) b = translate D p (a + b)
 ```
 
-**`Deformation.ToposThickening.RingedToposLiftDiagram.existsUnique_translate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean#L182). The attribute's comment: “clause (2) for genuine morphisms of ringed topoi between four arbitrary ringed topoi: the morphisms fitting into (08UH) compatibly with nu are a principal homogeneous space under Hom_{O_1}(Omega_{O_1/O_{B_1}}, g_* G_2), with the action translate_zero, translate_add”.
+**`Deformation.ToposThickening.RingedToposLiftDiagram.existsUnique_translate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/RingedToposLiftDiagramTorsor.lean#L182). The attribute's comment: “clause (2) for genuine morphisms of ringed topoi between four arbitrary ringed topoi: the morphisms fitting into (08UH) compatibly with nu are a principal homogeneous space under Hom\_\{O\_1}(Omega\_\{O\_1/O\_\{B\_1}}, g\_* G\_2), with the action translate\_zero, translate\_add”.
 
 > **Stacks Project, Tag 08UG**, clause (2). If there is a morphism of ringed topoi
 > `(Sh(𝒞'₂), 𝒪'₂) ⟶ (Sh(𝒞'₁), 𝒪'₁)` fitting into (08UH) compatibly with `ν`, the set of all such
@@ -357,7 +357,7 @@ public theorem liftingObstruction_eq_zero_iff_exists_isIso_lift (D : LiftDiagram
     liftingObstruction P G ξ = 0 ↔ ∃ p : D.Lift, IsIso p.hom
 ```
 
-**`Deformation.ToposThickening.RingedToposExtensionProblem.CompatibleFirstOrderThickening.naiveIsomorphismClassesAddTorsor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SolutionIsomorphismClassesExt.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SolutionIsomorphismClassesExt.lean#L86). The attribute's comment: “the half asserting that, if a solution exists, the set of isomorphism classes of solutions is principal homogeneous under Ext¹(NL_f, G); the element separating two classes is their obstruction class”.
+**`Deformation.ToposThickening.RingedToposExtensionProblem.CompatibleFirstOrderThickening.naiveIsomorphismClassesAddTorsor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SolutionIsomorphismClassesExt.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SolutionIsomorphismClassesExt.lean#L86). The attribute's comment: “the half asserting that, if a solution exists, the set of isomorphism classes of solutions is principal homogeneous under Ext¹(NL\_f, G); the element separating two classes is their obstruction class”.
 
 > **Stacks 08UK**, the torsor half: if the square-zero extension problem has a solution, the
 > isomorphism classes of solutions are a principal homogeneous space under `Ext¹_O(NL_f, G)`.
@@ -371,7 +371,7 @@ noncomputable def naiveIsomorphismClassesAddTorsor [Nonempty S.CompatibleFirstOr
 
 [Tag 0GQ5](https://stacks.math.columbia.edu/tag/0GQ5) in the Stacks Project.
 
-**`Deformation.ToposThickening.RingedToposExtensionProblem.classesEquivExt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SquareZeroExtensionClasses.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SquareZeroExtensionClasses.lean#L152). The attribute's comment: “the bijection between isomorphism classes of square-zero extensions of 𝒪 by 𝒢 as f⁻¹𝒪_ℬ-algebras and Ext¹ of a FIXED presentation α, carrying the four inputs of SolutionObstruction (xi, hxi, rep, pushout) and the lift bijection e of 08UG; identifying Ext¹(NL(α), 𝒢) with Ext¹(NL_{𝒪/𝒪_ℬ}, 𝒢) is 08TY and 08TL, absent on a general site”.
+**`Deformation.ToposThickening.RingedToposExtensionProblem.classesEquivExt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SquareZeroExtensionClasses.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SquareZeroExtensionClasses.lean#L152). The attribute's comment: “the bijection between isomorphism classes of square-zero extensions of 𝒪 by 𝒢 as f⁻¹𝒪\_ℬ-algebras and Ext¹ of a FIXED presentation α, carrying the four inputs of SolutionObstruction (xi, hxi, rep, pushout) and the lift bijection e of 08UG; identifying Ext¹(NL(α), 𝒢) with Ext¹(NL\_\{𝒪/𝒪\_ℬ}, 𝒢) is 08TY and 08TL, absent on a general site”.
 
 > The isomorphism classes of square-zero extensions `0 ⟶ 𝒢 ⟶ 𝒪' ⟶ 𝒪 ⟶ 0` of `f⁻¹𝒪_ℬ`-algebras —
 > equivalently, of first order thickenings over the base with an `𝒪`-module isomorphism
@@ -504,7 +504,7 @@ theorem lift_comp_reduction (base : inverseImageBaseRing S ⟶ P.extension)
     P.lift base ≫ P.reduction = P.presentation
 ```
 
-**`Deformation.ToposThickening.RingedToposExtensionProblem.CompatibleFirstOrderThickening.presentation_isLocallySurjective`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ExtensionPresentation.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ExtensionPresentation.lean#L278). The attribute's comment: “surjectivity of f⁻¹𝒪_ℬ[ℰ] ⟶ 𝒪, which is what makes NL(α) defined”.
+**`Deformation.ToposThickening.RingedToposExtensionProblem.CompatibleFirstOrderThickening.presentation_isLocallySurjective`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ExtensionPresentation.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ExtensionPresentation.lean#L278). The attribute's comment: “surjectivity of f⁻¹𝒪\_ℬ[ℰ] ⟶ 𝒪, which is what makes NL(α) defined”.
 
 > **Stacks Project, Tag 0GQ6**, surjectivity of `f⁻¹𝒪_ℬ[ℰ] ⟶ 𝒪`: the variables of the free
 > algebra are all the local sections of `𝒪'`, and they already cover `𝒪` because the reduction
@@ -515,7 +515,7 @@ instance presentation_isLocallySurjective :
     Presheaf.IsLocallySurjective X.J P.presentation.hom
 ```
 
-**`Deformation.ToposThickening.RingedToposExtensionProblem.CompatibleFirstOrderThickening.exists_generators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ExtensionPresentation.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ExtensionPresentation.lean#L294). The attribute's comment: “the choice of ℰ with α' : ℰ ⟶ 𝒪' and α : ℰ ⟶ 𝒪 making f⁻¹𝒪_ℬ[ℰ] ⟶ 𝒪 surjective”.
+**`Deformation.ToposThickening.RingedToposExtensionProblem.CompatibleFirstOrderThickening.exists_generators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ExtensionPresentation.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ExtensionPresentation.lean#L294). The attribute's comment: “the choice of ℰ with α' : ℰ ⟶ 𝒪' and α : ℰ ⟶ 𝒪 making f⁻¹𝒪\_ℬ[ℰ] ⟶ 𝒪 surjective”.
 
 > **Stacks Project, Tag 0GQ6**, the choice the source makes is possible: there are a sheaf of
 > sets `ℰ` and maps `α' : ℰ ⟶ 𝒪'`, `α : ℰ ⟶ 𝒪` forming a commutative triangle over the reduction
@@ -544,7 +544,7 @@ abbrev conormalToIdeal (base : inverseImageBaseRing S ⟶ P.extension)
       S.G
 ```
 
-**`Deformation.ToposThickening.RingedToposExtensionProblem.CompatibleFirstOrderThickening.extClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ExtensionPresentation.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ExtensionPresentation.lean#L403). The attribute's comment: “the class in Ext¹_𝒪(NL(α), 𝒢) that α' determines through the map 𝒥/𝒥² ⟶ 𝒢”.
+**`Deformation.ToposThickening.RingedToposExtensionProblem.CompatibleFirstOrderThickening.extClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ExtensionPresentation.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ExtensionPresentation.lean#L403). The attribute's comment: “the class in Ext¹\_𝒪(NL(α), 𝒢) that α' determines through the map 𝒥/𝒥² ⟶ 𝒢”.
 
 > **Stacks Project, Tag 0GQ6**, the class in `Ext¹_𝒪(NL(α), 𝒢)` that `α'` determines: the
 > first Ext class of the map `𝒥/𝒥² ⟶ 𝒢`.
@@ -697,7 +697,7 @@ theorem nonempty_lift_iff_eq_restrictExtClass
     Nonempty D.Lift ↔ ξ = D.restrictExtClass ζ
 ```
 
-**`Deformation.ToposThickening.RingedToposExtensionProblem.nonempty_lift_iff_eq_pullbackExtClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SolutionClassesDerivedExtFibre.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SolutionClassesDerivedExtFibre.lean#L288). The attribute's comment: “the criterion for the DERIVED pullback Lf^*NL_{O_B/O_B'} of the source's statement, with the image of ξ the constructed map pullbackExtClass. Carried, exactly as in the degreewise form of this tag: the two-term structure P with hP, the bijection e of Steps 1 to 3 of 08UG, and hcompat, the 0GQ5/08UG compatibility whose statement and proof the source itself omits, deferring to Tag 0GQ8”.
+**`Deformation.ToposThickening.RingedToposExtensionProblem.nonempty_lift_iff_eq_pullbackExtClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SolutionClassesDerivedExtFibre.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SolutionClassesDerivedExtFibre.lean#L288). The attribute's comment: “the criterion for the DERIVED pullback Lf^*NL\_\{O\_B/O\_B'} of the source's statement, with the image of ξ the constructed map pullbackExtClass. Carried, exactly as in the degreewise form of this tag: the two-term structure P with hP, the bijection e of Steps 1 to 3 of 08UG, and hcompat, the 0GQ5/08UG compatibility whose statement and proof the source itself omits, deferring to Tag 0GQ8”.
 
 > **Stacks Project, Tag 0GQ7** for the derived pullback of **Stacks 06YY**.  A lift compatible
 > with `f` and the prescribed map `c` exists if and only if the class of the extension `𝒪'`,
@@ -770,7 +770,7 @@ theorem isCompatibleWithIdealClass_iff_eq_pullbackExtClass
 
 [Tag 0GQ8](https://stacks.math.columbia.edu/tag/0GQ8) in the Stacks Project.
 
-**`Deformation.ToposThickening.InverseImageExtension.Data.pullbackExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/InverseImageExtensionComparison.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/InverseImageExtensionComparison.lean#L324). The attribute's comment: “the pullback extension 𝒪'₂ = 𝒪_{𝒟'} ×_{𝒪_𝒟} g⁻¹𝒪_𝒞 along g^♯, with the second displayed diagram its projections. Carried: that 𝒢 is the square-zero ideal of 𝒪_{𝒟'} with its 𝒪_𝒟-action (Data.ι, Data.inr_mul_inr, Data.smul_inr). NOT carried: that g⁻¹𝒪_{𝒞'} is an extension of g⁻¹𝒪_𝒞 by g⁻¹ℱ -- the ideal is the kernel ideal of g⁻¹(reduction) and local surjectivity is isLocallySurjective_invImage_map”.
+**`Deformation.ToposThickening.InverseImageExtension.Data.pullbackExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/InverseImageExtensionComparison.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/InverseImageExtensionComparison.lean#L324). The attribute's comment: “the pullback extension 𝒪'₂ = 𝒪\_\{𝒟'} ×\_\{𝒪\_𝒟} g⁻¹𝒪\_𝒞 along g^♯, with the second displayed diagram its projections. Carried: that 𝒢 is the square-zero ideal of 𝒪\_\{𝒟'} with its 𝒪\_𝒟-action (Data.ι, Data.inr\_mul\_inr, Data.smul\_inr). NOT carried: that g⁻¹𝒪\_\{𝒞'} is an extension of g⁻¹𝒪\_𝒞 by g⁻¹ℱ -- the ideal is the kernel ideal of g⁻¹(reduction) and local surjectivity is isLocallySurjective\_invImage\_map”.
 
 > **Stacks 0GQ8, the second construction.**  Pulling the extension
 > `0 ⟶ 𝒢 ⟶ 𝒪_{𝒟'} ⟶ 𝒪_𝒟 ⟶ 0` back along `g^♯ : g⁻¹𝒪_𝒞 ⟶ 𝒪_𝒟` gives an extension
@@ -784,7 +784,7 @@ def pullbackExtension :
       d.G.val.presheaf
 ```
 
-**`Deformation.ToposThickening.InverseImageExtension.Data.pushoutExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/InverseImageExtensionComparison.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/InverseImageExtensionComparison.lean#L340). The attribute's comment: “the pushout extension 𝒪'₁ of g⁻¹𝒪_{𝒞'} along c : g⁻¹ℱ ⟶ 𝒢, with the first displayed diagram its comparison with g⁻¹𝒪_{𝒞'}. Carried: that 𝒢 is the square-zero ideal of 𝒪_{𝒟'}. NOT carried: that g⁻¹𝒪_{𝒞'} is an extension of g⁻¹𝒪_𝒞 by g⁻¹ℱ -- the ideal is the kernel ideal of g⁻¹(reduction), whose identification with g⁻¹ℱ is the left exactness of g⁻¹, and local surjectivity is isLocallySurjective_invImage_map”.
+**`Deformation.ToposThickening.InverseImageExtension.Data.pushoutExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/InverseImageExtensionComparison.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/InverseImageExtensionComparison.lean#L340). The attribute's comment: “the pushout extension 𝒪'₁ of g⁻¹𝒪\_\{𝒞'} along c : g⁻¹ℱ ⟶ 𝒢, with the first displayed diagram its comparison with g⁻¹𝒪\_\{𝒞'}. Carried: that 𝒢 is the square-zero ideal of 𝒪\_\{𝒟'}. NOT carried: that g⁻¹𝒪\_\{𝒞'} is an extension of g⁻¹𝒪\_𝒞 by g⁻¹ℱ -- the ideal is the kernel ideal of g⁻¹(reduction), whose identification with g⁻¹ℱ is the left exactness of g⁻¹, and local surjectivity is isLocallySurjective\_invImage\_map”.
 
 > **Stacks 0GQ8, the first construction.**  Pushing the extension
 > `0 ⟶ g⁻¹ℱ ⟶ g⁻¹𝒪_{𝒞'} ⟶ g⁻¹𝒪_𝒞 ⟶ 0` out along `c : g⁻¹ℱ ⟶ 𝒢` gives an extension
@@ -798,7 +798,7 @@ def pushoutExtension [HasWeakSheafify Y.J CommRingCat.{u}]
       d.G.val.presheaf
 ```
 
-**`Deformation.ToposThickening.InverseImageExtension.Data.nonempty_compatibleHom_iff_isomorphic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/InverseImageExtensionComparison.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/InverseImageExtensionComparison.lean#L402). The attribute's comment: “the diagram chase: a morphism g' : (Sh(D), O_{D'}) ⟶ (Sh(C), O_{C'}) of ringed topoi over (Sh(B), O_B) compatible with g and c exists iff 𝒪'₁ ≅ 𝒪'₂ as g⁻¹f⁻¹O_B-algebra extensions of g⁻¹O_C by 𝒢; g' is in comorphism form, a morphism of ringed topoi inducing g by Data.ringedToposHomEquiv and Data.compatibleRingedToposHom. Carried: 𝒢 is the square-zero ideal of O_{D'}. NOT included: the remark's second half, identifying 𝒪'₁ with ξ and 𝒪'₂ with ζ”.
+**`Deformation.ToposThickening.InverseImageExtension.Data.nonempty_compatibleHom_iff_isomorphic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/InverseImageExtensionComparison.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/InverseImageExtensionComparison.lean#L402). The attribute's comment: “the diagram chase: a morphism g' : (Sh(D), O\_\{D'}) ⟶ (Sh(C), O\_\{C'}) of ringed topoi over (Sh(B), O\_B) compatible with g and c exists iff 𝒪'₁ ≅ 𝒪'₂ as g⁻¹f⁻¹O\_B-algebra extensions of g⁻¹O\_C by 𝒢; g' is in comorphism form, a morphism of ringed topoi inducing g by Data.ringedToposHomEquiv and Data.compatibleRingedToposHom. Carried: 𝒢 is the square-zero ideal of O\_\{D'}. NOT included: the remark's second half, identifying 𝒪'₁ with ξ and 𝒪'₂ with ζ”.
 
 > **Stacks Project, Tag 0GQ8, the criterion.**  A morphism
 > `g' : (Sh(𝒟), 𝒪_{𝒟'}) ⟶ (Sh(𝒞), 𝒪_{𝒞'})` of ringed topoi over `(Sh(ℬ), 𝒪_ℬ)` compatible with
@@ -817,7 +817,7 @@ theorem nonempty_compatibleHom_iff_isomorphic [HasWeakSheafify Y.J CommRingCat.{
       AlgebraExtension.Isomorphic d.pushoutExtension d.pullbackExtension
 ```
 
-**`Deformation.ToposThickening.InverseImageExtension.pushoutSolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/InverseImageExtensionSolutions.lean, line 597](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/InverseImageExtensionSolutions.lean#L597). The attribute's comment: “the first construction: the pushout O'_1 of g⁻¹O_{C'} along c : g⁻¹F ⟶ G, an extension of g⁻¹O_C by G as g⁻¹f⁻¹O_B-algebras”.
+**`Deformation.ToposThickening.InverseImageExtension.pushoutSolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/InverseImageExtensionSolutions.lean, line 597](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/InverseImageExtensionSolutions.lean#L597). The attribute's comment: “the first construction: the pushout O'\_1 of g⁻¹O\_\{C'} along c : g⁻¹F ⟶ G, an extension of g⁻¹O\_C by G as g⁻¹f⁻¹O\_B-algebras”.
 
 > **Stacks 0GQ8, the pushout `𝒪'₁`, as a square-zero extension of `g⁻¹𝒪_𝒞` by `𝒢`**: a
 > solution of `inverseImageProblem f g 𝒢`.
@@ -826,7 +826,7 @@ theorem nonempty_compatibleHom_iff_isomorphic [HasWeakSheafify Y.J CommRingCat.{
 noncomputable def pushoutSolution : (inverseImageProblem f g G).CompatibleFirstOrderThickening
 ```
 
-**`Deformation.ToposThickening.InverseImageExtension.pullbackSolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/InverseImageExtensionSolutions.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/InverseImageExtensionSolutions.lean#L606). The attribute's comment: “the second construction: the pullback O'_2 of O_{D'} along g^♯ : g⁻¹O_C ⟶ O_D, an extension of g⁻¹O_C by G as g⁻¹f⁻¹O_B-algebras”. References: EGA 0 (18.2.5), “more general”.
+**`Deformation.ToposThickening.InverseImageExtension.pullbackSolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/InverseImageExtensionSolutions.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/InverseImageExtensionSolutions.lean#L606). The attribute's comment: “the second construction: the pullback O'\_2 of O\_\{D'} along g^♯ : g⁻¹O\_C ⟶ O\_D, an extension of g⁻¹O\_C by G as g⁻¹f⁻¹O\_B-algebras”. References: EGA 0 (18.2.5), “more general”.
 
 > **Stacks 0GQ8, the pullback `𝒪'₂ = 𝒪_{𝒟'} ×_{𝒪_𝒟} g⁻¹𝒪_𝒞`, as a square-zero extension of
 > `g⁻¹𝒪_𝒞` by `𝒢`**: a solution of `inverseImageProblem f g 𝒢`.
@@ -835,7 +835,7 @@ noncomputable def pushoutSolution : (inverseImageProblem f g G).CompatibleFirstO
 noncomputable def pullbackSolution : (inverseImageProblem f g G).CompatibleFirstOrderThickening
 ```
 
-**`Deformation.ToposThickening.InverseImageExtension.nonempty_compatibleMorphism_iff_isomorphic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/InverseImageExtensionSolutions.lean, line 750](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/InverseImageExtensionSolutions.lean#L750). The attribute's comment: “the diagram chase: a morphism g' over (Sh(B), O_B) compatible with g and c exists iff O'_1 and O'_2 are isomorphic as g⁻¹f⁻¹O_B-algebra extensions of g⁻¹O_C by G”.
+**`Deformation.ToposThickening.InverseImageExtension.nonempty_compatibleMorphism_iff_isomorphic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/InverseImageExtensionSolutions.lean, line 750](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/InverseImageExtensionSolutions.lean#L750). The attribute's comment: “the diagram chase: a morphism g' over (Sh(B), O\_B) compatible with g and c exists iff O'\_1 and O'\_2 are isomorphic as g⁻¹f⁻¹O\_B-algebra extensions of g⁻¹O\_C by G”.
 
 > **Stacks Project, Tag 0GQ8, the diagram chase.** A morphism
 > `g' : (Sh(𝒟), 𝒪_{𝒟'}) ⟶ (Sh(𝒞), 𝒪_{𝒞'})` of ringed topoi over `(Sh(ℬ), 𝒪_ℬ)` compatible with `g`
@@ -909,7 +909,7 @@ theorem rhoEquiv_extClass_eq :
 
 [Tag 0GQ9](https://stacks.math.columbia.edu/tag/0GQ9) in the Stacks Project.
 
-**`Deformation.ToposThickening.RingedToposExtensionProblem.solutionEquivSquareZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SolutionClassesFibre.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SolutionClassesFibre.lean#L236). The attribute's comment: “the step the source states as -- of course this is the same thing as saying that O' is a solution of 08UF: a solution of the problem of Tag 08UF is exactly a square-zero extension of f⁻¹O_B'-algebras whose map from the thickened base induces the prescribed c on the base ideal. Fixed-site presentation of 08UF, as in Tag 0GQ5”.
+**`Deformation.ToposThickening.RingedToposExtensionProblem.solutionEquivSquareZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SolutionClassesFibre.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SolutionClassesFibre.lean#L236). The attribute's comment: “the step the source states as -- of course this is the same thing as saying that O' is a solution of 08UF: a solution of the problem of Tag 08UF is exactly a square-zero extension of f⁻¹O\_B'-algebras whose map from the thickened base induces the prescribed c on the base ideal. Fixed-site presentation of 08UF, as in Tag 0GQ5”.
 
 > **The solutions of [Stacks 08UF] are exactly the square-zero extensions of
 > `f⁻¹𝒪_{ℬ'}`-algebras that induce `c`.** The two solution types carry the same thickened
@@ -921,7 +921,7 @@ def solutionEquivSquareZero :
       { Q : S.squareZeroProblem.CompatibleFirstOrderThickening // S.IsCompatibleWithIdeal Q }
 ```
 
-**`Deformation.ToposThickening.RingedToposExtensionProblem.classesEquivFibre`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SolutionClassesFibre.lean, line 522](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SolutionClassesFibre.lean#L522). The attribute's comment: “the canonical bijection between the isomorphism classes of solutions of the problem of 08UF and the fibre over 0 of `compatibilityObstruction` on Ext¹ of a FIXED presentation. Carried: ONLY the five inputs of Tag 0GQ5 at the trivial-ideal problem. The cutting-out condition is PROVED, not assumed: the obstruction is the sectionwise difference between the map a square-zero extension of f⁻¹O_B'-algebras induces on f⁻¹J and the prescribed c, read in G, and it is shown to depend only on the Ext class. It is NOT the source's comparison map, whose target Ext¹(Lf^*NL_{O_B/O_B'}, G) needs the derived pullback Lf^*, absent from the library”.
+**`Deformation.ToposThickening.RingedToposExtensionProblem.classesEquivFibre`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SolutionClassesFibre.lean, line 522](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SolutionClassesFibre.lean#L522). The attribute's comment: “the canonical bijection between the isomorphism classes of solutions of the problem of 08UF and the fibre over 0 of `compatibilityObstruction` on Ext¹ of a FIXED presentation. Carried: ONLY the five inputs of Tag 0GQ5 at the trivial-ideal problem. The cutting-out condition is PROVED, not assumed: the obstruction is the sectionwise difference between the map a square-zero extension of f⁻¹O\_B'-algebras induces on f⁻¹J and the prescribed c, read in G, and it is shown to depend only on the Ext class. It is NOT the source's comparison map, whose target Ext¹(Lf^*NL\_\{O\_B/O\_B'}, G) needs the derived pullback Lf^*, absent from the library”.
 
 > **Stacks Project, Tag 0GQ9.** The isomorphism classes of solutions of the square-zero
 > extension problem of [Stacks 08UF] are canonically bijective to the fibre over `0` of the

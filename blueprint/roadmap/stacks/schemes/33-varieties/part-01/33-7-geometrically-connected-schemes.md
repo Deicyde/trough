@@ -123,7 +123,7 @@ public theorem geometricallyConnected_iff_connectedSpace_baseChange
 
 [Tag 0388](https://stacks.math.columbia.edu/tag/0388) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_fg_subalgebra_descending_isCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/QuasiCompactOpenSubalgebra.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/QuasiCompactOpenSubalgebra.lean#L231). References: EGA IV (8.2.11), “X_A over f.g. subalgs”.
+**`AlgebraicGeometry.exists_fg_subalgebra_descending_isCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/QuasiCompactOpenSubalgebra.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/QuasiCompactOpenSubalgebra.lean#L231). References: EGA IV (8.2.11), “X\_A over f.g. subalgs”.
 
 > **[Stacks, Tag 0388].** Let `X` be a scheme over a commutative ring `k` and let `A` be a
 > `k`-algebra. A quasi-compact open `V` of the base change `X_A` is the inverse image of a
@@ -322,7 +322,7 @@ public theorem geometricallyConnected_of_connectedSpace_of_section
 
 Declarations registered for the tag:
 
-- [`Continuous.preimage_connectedComponent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Continuous.preimage_connectedComponent#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch33.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch33.lean#L46) (StacksFrontier): “for the continuous map X_K → X; stated for any continuous map”.
+- [`Continuous.preimage_connectedComponent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Continuous.preimage_connectedComponent#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch33.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch33.lean#L46) (StacksFrontier): “for the continuous map X\_K → X; stated for any continuous map”.
 
 ## Tag 07VM, a lemma
 
@@ -371,7 +371,7 @@ theorem image_connectedComponent_baseChange
 
 [Tag 038D](https://stacks.math.columbia.edu/tag/038D) in the Stacks Project.
 
-**`AlgebraicGeometry.galoisActionOnGeometricConnectedComponents`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean#L95). The attribute's comment: “galois_action_on_geometric_connected_components”.
+**`AlgebraicGeometry.galoisActionOnGeometricConnectedComponents`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean#L95). The attribute's comment: “galois\_action\_on\_geometric\_connected\_components”.
 
 > The canonical action of the opposite Galois group on the connected components of a scheme
 > after base change. A component is sent to its image under the corresponding automorphism of the
@@ -383,7 +383,7 @@ public noncomputable def galoisActionOnGeometricConnectedComponents
     Action (Type u) (MulOpposite (S ≃ₐ[R] S))
 ```
 
-**`AlgebraicGeometry.galoisActionOnGeometricConnectedComponents_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean#L175). The attribute's comment: “base_extension_compatibility”.
+**`AlgebraicGeometry.galoisActionOnGeometricConnectedComponents_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean#L175). The attribute's comment: “base\_extension\_compatibility”.
 
 > Restriction of Galois automorphisms commutes with the canonical map on the connected
 > components of the two geometric base changes.
@@ -410,7 +410,7 @@ public theorem galoisActionOnGeometricConnectedComponents_baseChange
         (p.continuous.connectedComponentsMap C)
 ```
 
-**`AlgebraicGeometry.baseChangeComparison_connectedComponents_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean#L222). The attribute's comment: “base_extension_compatibility”.
+**`AlgebraicGeometry.baseChangeComparison_connectedComponents_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisAction.lean#L222). The attribute's comment: “base\_extension\_compatibility”.
 
 > The canonical base-extension map is bijective on geometric connected components.
 
@@ -426,7 +426,7 @@ public theorem baseChangeComparison_connectedComponents_bijective
     Function.Bijective p.continuous.connectedComponentsMap
 ```
 
-**`AlgebraicGeometry.galoisActionOnGeometricConnectedComponents_fixed_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisFixed.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisFixed.lean#L318). The attribute's comment: “fixed_components”.
+**`AlgebraicGeometry.galoisActionOnGeometricConnectedComponents_fixed_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisFixed.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ConnectedGaloisFixed.lean#L318). The attribute's comment: “fixed\_components”.
 
 > **Stacks Project, Tag 038D.** A connected component of the base change of `X` to a separable
 > algebraic closure `kbar` of `k` is fixed by the Galois action if and only if it is the inverse

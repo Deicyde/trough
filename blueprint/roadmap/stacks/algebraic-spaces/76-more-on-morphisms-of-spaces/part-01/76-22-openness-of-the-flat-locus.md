@@ -48,7 +48,7 @@ theorem isOpen_setOf_forall_isFlatOverAtGeometricPoint (f : Xs ⟶ Ys)
 
 [Tag 05WW](https://stacks.math.columbia.edu/tag/05WW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.flatLocus_modulePullback_eq_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusBaseChange.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusBaseChange.lean#L161). The attribute's comment: “the set equality, with Stacks 05VW at a point carried as the hypothesis `h05VW`; the finite-presentation hypotheses of the source are not needed for it and enter through Stacks 05WV in flatLocus_modulePullback_eq_preimage_and_isOpen”.
+**`AlgebraicGeometry.Space.flatLocus_modulePullback_eq_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusBaseChange.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusBaseChange.lean#L161). The attribute's comment: “the set equality, with Stacks 05VW at a point carried as the hypothesis `h05VW`; the finite-presentation hypotheses of the source are not needed for it and enter through Stacks 05WV in flatLocus\_modulePullback\_eq\_preimage\_and\_isOpen”.
 
 > **Stacks 05WW, the set equality.** In a cartesian square of algebraic spaces over `S` with
 > `f : X ⟶ Y`, `g : Y' ⟶ Y`, `f' : X' ⟶ Y'` and `g' : X' ⟶ X` whose base morphism `g` is flat,
@@ -101,7 +101,7 @@ theorem flatLocus_modulePullback_eq_preimage_and_isOpen
       IsOpen (flatLocus B S hS X'.2 f'.hom ((modulePullback B S hS g').obj F))
 ```
 
-**`AlgebraicGeometry.Space.flatLocus_modulePullback_eq_preimage_of_isFinitePresentationOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusBaseChangeFinitePresentation.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusBaseChangeFinitePresentation.lean#L73). The attribute's comment: “the set equality; the finite-presentation hypotheses of the source enter through Stacks 05WV in flatLocus_modulePullback_eq_preimage_and_isOpen_of_isFinitePresentationOnSite”.
+**`AlgebraicGeometry.Space.flatLocus_modulePullback_eq_preimage_of_isFinitePresentationOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusBaseChangeFinitePresentation.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleLocusBaseChangeFinitePresentation.lean#L73). The attribute's comment: “the set equality; the finite-presentation hypotheses of the source enter through Stacks 05WV in flatLocus\_modulePullback\_eq\_preimage\_and\_isOpen\_of\_isFinitePresentationOnSite”.
 
 > **Stacks 05WW, the set equality, with no hypothesis beyond the source's own.** In a
 > cartesian square of algebraic spaces over `S` with `f : X ⟶ Y`, `g : Y' ⟶ Y`, `f' : X' ⟶ Y'`

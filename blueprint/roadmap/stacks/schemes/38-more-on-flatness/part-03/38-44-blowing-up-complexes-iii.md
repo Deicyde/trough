@@ -14,7 +14,7 @@ Section 38.44 of the Stacks Project, [Tag 0F8Z](https://stacks.math.columbia.edu
 
 [Tag 0F90](https://stacks.math.columbia.edu/tag/0F90) in the Stacks Project.
 
-**`AlgebraicGeometry.ComplexAndDivisorSituation.nonempty_etaDerivedPullbackRestrict_divisorComplement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/EtaDerivedDivisorComplement.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/EtaDerivedDivisorComplement.lean#L129). The attribute's comment: “clause (2): the restriction of Q to A^1_X is the pullback of E”.
+**`AlgebraicGeometry.ComplexAndDivisorSituation.nonempty_etaDerivedPullbackRestrict_divisorComplement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/EtaDerivedDivisorComplement.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/EtaDerivedDivisorComplement.lean#L129). The attribute's comment: “clause (2): the restriction of Q to A^1\_X is the pullback of E”.
 
 > **Clause (2) of Stacks tag 0F90.**  Let `(X, D, M)` be a triple as in Situation 0F8S, let
 > `b : X' ⟶ X` be a morphism along which `D' = b⁻¹D` is defined, and let `Q = Lη_{ℐ'}Lb^*M` be the
@@ -73,7 +73,7 @@ theorem exists_closedImmersion_graphObjectRestrict :
           @Scheme.Modules.finiteLocallyFreeRank T _ (hH n) τ = r
 ```
 
-**`Stacks.Chow.isIso_pullback_snd_graphBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean#L189). The attribute's comment: “clause (1), over A^1_X, as the base change of b along A^1_X ⟶ P^1_X”.
+**`Stacks.Chow.isIso_pullback_snd_graphBlowupToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowUpSquare/GraphConstructionTriple.lean#L189). The attribute's comment: “clause (1), over A^1\_X, as the base change of b along A^1\_X ⟶ P^1\_X”.
 
 > **Clause (1) of Stacks tag 0F90, over `𝐀¹_X`.** The base change of `b : W ⟶ 𝐏¹_X` along
 > the chart `𝐀¹_X ⟶ 𝐏¹_X` is an isomorphism.

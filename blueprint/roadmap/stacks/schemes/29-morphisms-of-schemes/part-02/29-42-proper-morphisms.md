@@ -219,7 +219,7 @@ lemma surjective_toImage {X Y S : Scheme.{u}} (h : X ⟶ Y) (g : Y ⟶ S)
 
 [Tag 09MQ](https://stacks.math.columbia.edu/tag/09MQ) in the Stacks Project.
 
-**`AlgebraicGeometry.quasiSeparated_of_surjective_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/QuasiSeparated.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/QuasiSeparated.lean#L46). The attribute's comment: “quasi_separated_over_s”.
+**`AlgebraicGeometry.quasiSeparated_of_surjective_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/QuasiSeparated.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/QuasiSeparated.lean#L46). The attribute's comment: “quasi\_separated\_over\_s”.
 
 > **Stacks Project, Tag 09MQ (quasi-separated over the base).**
 > Quasi-separatedness over a base descends along a surjective universally
@@ -231,7 +231,7 @@ theorem quasiSeparated_of_surjective_universallyClosed {S : Scheme.{u}} {X Y : O
     QuasiSeparated Y.hom
 ```
 
-**`AlgebraicGeometry.quasiSeparatedSpace_of_surjective_universallyClosed`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/QuasiSeparated.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/QuasiSeparated.lean#L80). The attribute's comment: “quasi_separated_scheme”.
+**`AlgebraicGeometry.quasiSeparatedSpace_of_surjective_universallyClosed`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/QuasiSeparated.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/QuasiSeparated.lean#L80). The attribute's comment: “quasi\_separated\_scheme”.
 
 > **Stacks Project, Tag 09MQ (scheme part).** The target of a surjective
 > universally closed morphism from a quasi-separated scheme is
@@ -243,7 +243,7 @@ lemma quasiSeparatedSpace_of_surjective_universallyClosed
     [QuasiSeparatedSpace X] : QuasiSeparatedSpace Y
 ```
 
-**`AlgebraicGeometry.isSeparated_of_surjective_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/SeparatedDescent.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/SeparatedDescent.lean#L81). The attribute's comment: “separated_over_s”. References: SGA 3 V (7.4).
+**`AlgebraicGeometry.isSeparated_of_surjective_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/SeparatedDescent.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/SeparatedDescent.lean#L81). The attribute's comment: “separated\_over\_s”. References: SGA 3 V (7.4).
 
 > **Stacks Project, Tag 09MQ (separated over the base).** Separatedness over a base descends
 > along a surjective universally closed morphism of schemes.
@@ -254,7 +254,7 @@ theorem isSeparated_of_surjective_universallyClosed {S : Scheme.{u}} {X Y : Over
     IsSeparated Y.hom
 ```
 
-**`AlgebraicGeometry.Scheme.isSeparated_of_surjective_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/SeparatedDescent.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/SeparatedDescent.lean#L101). The attribute's comment: “separated_scheme”. References: SGA 3 V (7.4), “special case”.
+**`AlgebraicGeometry.Scheme.isSeparated_of_surjective_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Proper/SeparatedDescent.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Proper/SeparatedDescent.lean#L101). The attribute's comment: “separated\_scheme”. References: SGA 3 V (7.4), “special case”.
 
 > **Stacks Project, Tag 09MQ (separated scheme).** A scheme receiving a surjective
 > universally closed morphism from a separated scheme is itself separated.

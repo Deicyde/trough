@@ -14,7 +14,7 @@ Section 29.33 of the Stacks Project, [Tag 01UM](https://stacks.math.columbia.edu
 
 [Tag 01UQ](https://stacks.math.columbia.edu/tag/01UQ) in the Stacks Project.
 
-**`Stacks.Smooth.cotangentDerivation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Smooth/CotangentDerivation.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Smooth/CotangentDerivation.lean#L70). The attribute's comment: “the universal S-derivation d_{X/S} that the sheaf of differentials `Stacks.Smooth.cotangentSheaf` of a morphism of schemes is equipped with”.
+**`Stacks.Smooth.cotangentDerivation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Smooth/CotangentDerivation.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Smooth/CotangentDerivation.lean#L70). The attribute's comment: “the universal S-derivation d\_\{X/S} that the sheaf of differentials `Stacks.Smooth.cotangentSheaf` of a morphism of schemes is equipped with”.
 
 > The universal `S`-derivation `d_{X/S} : 𝒪_X ⟶ Ω_{X/S}` that the sheaf of differentials of a
 > morphism of schemes `f : X ⟶ S` is equipped with: the universal derivation of the underlying
@@ -26,7 +26,7 @@ noncomputable def cotangentDerivation :
     SheafOfModules.SheafDerivation (inverseImageStructureMap f) (cotangentSheaf f)
 ```
 
-**`Stacks.Smooth.cotangentSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Smooth/CotangentSheafScheme.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Smooth/CotangentSheafScheme.lean#L93). The attribute's comment: “the sheaf of differentials of a morphism of schemes, namely the differentials of the underlying morphism of ringed spaces; the universal S-derivation d_{X/S} it is equipped with is `Stacks.Smooth.cotangentDerivation`”. References: SGA 6 0 (2.1).
+**`Stacks.Smooth.cotangentSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Smooth/CotangentSheafScheme.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Smooth/CotangentSheafScheme.lean#L93). The attribute's comment: “the sheaf of differentials of a morphism of schemes, namely the differentials of the underlying morphism of ringed spaces; the universal S-derivation d\_\{X/S} it is equipped with is `Stacks.Smooth.cotangentDerivation`”. References: SGA 6 0 (2.1).
 
 > The sheaf of relative differentials `Ω_{X/S}` of a morphism of schemes `f : X ⟶ S`, as a
 > sheaf of `𝒪_X`-modules: the module of differentials of the morphism of sheaves of rings
@@ -109,7 +109,7 @@ theorem existsUnique_sectionsIso :
         (Scheme.Hom.universalRelativeDerivation (Spec.map φ)).d ((Scheme.ΓSpecIso A).inv a)
 ```
 
-**`Stacks.AlgebraicGeometry.AffineDifferentialsIso.existsUnique_tildeKaehlerIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/SpecComparison.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/SpecComparison.lean#L358). The attribute's comment: “affine case as a sheaf comparison: Ω_{Spec A/Spec R} is the sheaf of Ω[A⁄R]”.
+**`Stacks.AlgebraicGeometry.AffineDifferentialsIso.existsUnique_tildeKaehlerIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/SpecComparison.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineDifferentialsIso/SpecComparison.lean#L358). The attribute's comment: “affine case as a sheaf comparison: Ω\_\{Spec A/Spec R} is the sheaf of Ω[A⁄R]”.
 
 > **Uniqueness of the comparison of sheaves.** There is exactly one isomorphism from the
 > quasi-coherent sheaf associated to `Ω[A⁄R]` to the sheaf of relative differentials of `Spec φ`
@@ -142,7 +142,7 @@ theorem existsUnique_affineDifferentialsIso (hV : IsAffineOpen V) :
         CommRingCat.KaehlerDifferential.d a
 ```
 
-**`Stacks.Smooth.existsUnique_linearEquiv_universalD`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Smooth/CotangentSectionsAffineOpen.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Smooth/CotangentSectionsAffineOpen.lean#L310). The attribute's comment: “unique isomorphism Γ(U, Ω_{X/S}) = Ω_{A/R} compatible with the differentials”.
+**`Stacks.Smooth.existsUnique_linearEquiv_universalD`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Smooth/CotangentSectionsAffineOpen.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Smooth/CotangentSectionsAffineOpen.lean#L310). The attribute's comment: “unique isomorphism Γ(U, Ω\_\{X/S}) = Ω\_\{A/R} compatible with the differentials”.
 
 > Let `f : X ⟶ S` be a morphism of schemes. For any pair of affine opens `Spec A = U ⊆ X` and
 > `Spec R = V ⊆ S` with `f(U) ⊆ V` there is a unique isomorphism
@@ -239,7 +239,7 @@ theorem nonempty_iso_relativeDifferentials_iff (M : X.Modules) :
 
 [Tag 08S2](https://stacks.math.columbia.edu/tag/08S2) in the Stacks Project.
 
-**`Stacks.Tag08S2Assembly.relativeDifferentialsIsoDiagonalConormal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Assembly/Basic.lean, line 543](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Assembly/Basic.lean#L543). References: EGA IV (16.3.1), “Ω¹_{X/S}=Gr₁(Δ_f)”; EGA IV (17.13.5); SGA 7 VI (5.5), “ordinary schemes”.
+**`Stacks.Tag08S2Assembly.relativeDifferentialsIsoDiagonalConormal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Assembly/Basic.lean, line 543](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Assembly/Basic.lean#L543). References: EGA IV (16.3.1), “Ω¹\_\{X/S}=Gr₁(Δ\_f)”; EGA IV (17.13.5); SGA 7 VI (5.5), “ordinary schemes”.
 
 > **[Stacks, Tag 08S2].** The canonical isomorphism from the sheaf of relative differentials
 > of `X` over `S` to the conormal sheaf of its diagonal in `X ×_S X`.
@@ -477,7 +477,7 @@ theorem equationDifferentialsComplexOver_exact (i : Z ⟶ X) [IsImmersion i] (p 
     (equationDifferentialsComplex i p (by simp) f hf).Exact
 ```
 
-**`Stacks.ConormalSequenceRight.conormalShortComplex_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalSequenceRight/SchemeShortExact.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalSequenceRight/SchemeShortExact.lean#L359). The attribute's comment: “exactness at the middle term of the sequence 𝒞_{Z/X} ⟶ i^*Ω_{X/S} ⟶ Ω_{Z/S}, for an arbitrary immersion and with the conormal sheaf itself at the left-hand end”. References: SGA 7 XI (1.3), “partial”.
+**`Stacks.ConormalSequenceRight.conormalShortComplex_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalSequenceRight/SchemeShortExact.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalSequenceRight/SchemeShortExact.lean#L359). The attribute's comment: “exactness at the middle term of the sequence 𝒞\_\{Z/X} ⟶ i^*Ω\_\{X/S} ⟶ Ω\_\{Z/S}, for an arbitrary immersion and with the conormal sheaf itself at the left-hand end”. References: SGA 7 XI (1.3), “partial”.
 
 > **[Stacks, Tag 01UZ], exactness at the middle term of the conormal sequence,
 > unconditionally.** For an immersion of schemes `i : Z ⟶ X` over `p : X ⟶ S` the conormal
@@ -545,7 +545,7 @@ theorem forall_exists_isSplitEpi_restrict_of_localRetraction
         (relativeDifferentialsMap i p (i ≫ p) (𝟙 S) (by simp)))
 ```
 
-**`Stacks.ConormalSequenceSplit.conormalShortComplex_shortExact_of_localRetraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalSequenceSplit/ShortExact.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalSequenceSplit/ShortExact.lean#L499). The attribute's comment: “the local clause: under a local left inverse — every point of Z has a neighbourhood V mapping into an open U of X with the restricted morphism admitting a left inverse over S — the sequence 0 ⟶ 𝒞_{Z/X} ⟶ i^*Ω_{X/S} ⟶ Ω_{Z/S} ⟶ 0 of Tag 01UZ is short exact. This is exactness, globally; the local splitting under the same hypothesis is forall_exists_nonempty_splitting_restrict_of_localRetraction”.
+**`Stacks.ConormalSequenceSplit.conormalShortComplex_shortExact_of_localRetraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalSequenceSplit/ShortExact.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalSequenceSplit/ShortExact.lean#L499). The attribute's comment: “the local clause: under a local left inverse — every point of Z has a neighbourhood V mapping into an open U of X with the restricted morphism admitting a left inverse over S — the sequence 0 ⟶ 𝒞\_\{Z/X} ⟶ i^*Ω\_\{X/S} ⟶ Ω\_\{Z/S} ⟶ 0 of Tag 01UZ is short exact. This is exactness, globally; the local splitting under the same hypothesis is forall\_exists\_nonempty\_splitting\_restrict\_of\_localRetraction”.
 
 > **[Stacks, Tag 0474], short exactness under a *local* left inverse.** Let `i : Z ⟶ X` be an
 > immersion of schemes over `p : X ⟶ S` which *locally has a left inverse*: every point `z` of `Z`
@@ -570,7 +570,7 @@ theorem conormalShortComplex_shortExact_of_localRetraction {Z X S : Scheme.{u}} 
     (conormalShortComplex i p).ShortExact
 ```
 
-**`Stacks.ConormalSequenceSplit.conormalShortComplexSplitting_of_retraction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalSequenceSplit/ShortExact.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalSequenceSplit/ShortExact.lean#L523). The attribute's comment: “a left inverse over S splits the sequence 0 ⟶ 𝒞_{Z/X} ⟶ i^*Ω_{X/S} ⟶ Ω_{Z/S} ⟶ 0 of Tag 01UZ: a splitting is produced, so in particular the sequence is short exact. The hypothesis is a global left inverse g : X ⟶ Z with i ≫ g = 𝟙 Z and g ≫ (i ≫ p) = p; the source's parenthetical local clause is forall_exists_nonempty_splitting_restrict_of_localRetraction”.
+**`Stacks.ConormalSequenceSplit.conormalShortComplexSplitting_of_retraction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalSequenceSplit/ShortExact.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalSequenceSplit/ShortExact.lean#L523). The attribute's comment: “a left inverse over S splits the sequence 0 ⟶ 𝒞\_\{Z/X} ⟶ i^*Ω\_\{X/S} ⟶ Ω\_\{Z/S} ⟶ 0 of Tag 01UZ: a splitting is produced, so in particular the sequence is short exact. The hypothesis is a global left inverse g : X ⟶ Z with i ≫ g = 𝟙 Z and g ≫ (i ≫ p) = p; the source's parenthetical local clause is forall\_exists\_nonempty\_splitting\_restrict\_of\_localRetraction”.
 
 > **[Stacks, Tag 0474], a left inverse splits the sequence.** For an immersion `i : Z ⟶ X` of
 > schemes over `p : X ⟶ S` admitting a left inverse `g : X ⟶ Z` over `S`, the conormal sequence
@@ -589,7 +589,7 @@ noncomputable def conormalShortComplexSplitting_of_retraction {Z X S : Scheme.{u
     (conormalShortComplex i p).Splitting
 ```
 
-**`Stacks.ConormalSequenceSplit.forall_exists_nonempty_splitting_restrict_of_localRetraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalSequenceSplit/ShortExact.lean, line 582](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalSequenceSplit/ShortExact.lean#L582). The attribute's comment: “the parenthetical local clause: under a local left inverse — every point of Z has a neighbourhood V mapping into an open U of X with the restricted morphism j : V ⟶ U admitting a left inverse over S — the sequence 0 ⟶ 𝒞_{Z/X} ⟶ i^*Ω_{X/S} ⟶ Ω_{Z/S} ⟶ 0 of Tag 01UZ is *locally split exact*: every point of Z has an open neighbourhood V over which the restricted sequence carries a ShortComplex.Splitting, so both a retraction of the first arrow and a section of the second are produced over V. This is the full (locally) reading of the source's hypothesis and conclusion; the global reading is conormalShortComplexSplitting_of_retraction”. References: EGA IV (16.4.21), “special case”.
+**`Stacks.ConormalSequenceSplit.forall_exists_nonempty_splitting_restrict_of_localRetraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalSequenceSplit/ShortExact.lean, line 582](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalSequenceSplit/ShortExact.lean#L582). The attribute's comment: “the parenthetical local clause: under a local left inverse — every point of Z has a neighbourhood V mapping into an open U of X with the restricted morphism j : V ⟶ U admitting a left inverse over S — the sequence 0 ⟶ 𝒞\_\{Z/X} ⟶ i^*Ω\_\{X/S} ⟶ Ω\_\{Z/S} ⟶ 0 of Tag 01UZ is *locally split exact*: every point of Z has an open neighbourhood V over which the restricted sequence carries a ShortComplex.Splitting, so both a retraction of the first arrow and a section of the second are produced over V. This is the full (locally) reading of the source's hypothesis and conclusion; the global reading is conormalShortComplexSplitting\_of\_retraction”. References: EGA IV (16.4.21), “special case”.
 
 > **[Stacks, Tag 0474], a local left inverse makes the conormal sequence locally split
 > exact.** Let `i : Z ⟶ X` be an immersion of schemes over `p : X ⟶ S` which *locally has a left
@@ -614,7 +614,7 @@ theorem forall_exists_nonempty_splitting_restrict_of_localRetraction
         (Scheme.Modules.restrictFunctor V.ι)).Splitting)
 ```
 
-**`Stacks.ConormalSequenceSplit.isIso_conormalDifferential_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalSequenceSplit/ShortExact.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalSequenceSplit/ShortExact.lean#L606). The attribute's comment: “the source's final assertion: for a section s of p, the first arrow 𝒞_{S/X} ⟶ s^*Ω_{X/S} of the sequence of Tag 01UZ, which is induced by d_{X/S}, is an isomorphism”. References: SGA 6 VIII (2.2), “(b)”.
+**`Stacks.ConormalSequenceSplit.isIso_conormalDifferential_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalSequenceSplit/ShortExact.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalSequenceSplit/ShortExact.lean#L606). The attribute's comment: “the source's final assertion: for a section s of p, the first arrow 𝒞\_\{S/X} ⟶ s^*Ω\_\{X/S} of the sequence of Tag 01UZ, which is induced by d\_\{X/S}, is an isomorphism”. References: SGA 6 VIII (2.2), “(b)”.
 
 > **[Stacks, Tag 0474], the conormal sheaf of a section.** For a section `s : S ⟶ X` of
 > `p : X ⟶ S` the first arrow `𝒞_{S/X} ⟶ s^*Ω_{X/S}` of the conormal sequence of
@@ -636,7 +636,7 @@ theorem isIso_conormalDifferential_of_section {X S : Scheme.{u}} (p : X ⟶ S) (
 
 [Tag 060N](https://stacks.math.columbia.edu/tag/060N) in the Stacks Project.
 
-**`Stacks.DiagonalSplitSequence.diagonalBiprodIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/DiagonalSplitSequence.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/DiagonalSplitSequence.lean#L353). The attribute's comment: “the middle term: Δ^*Ω_{X ×_S X/S} = Ω_{X/S} ⊕ Ω_{X/S}”.
+**`Stacks.DiagonalSplitSequence.diagonalBiprodIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/DiagonalSplitSequence.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/DiagonalSplitSequence.lean#L353). The attribute's comment: “the middle term: Δ^*Ω\_\{X ×\_S X/S} = Ω\_\{X/S} ⊕ Ω\_\{X/S}”.
 
 > **[Stacks, Tag 060N]: `Δ^* Ω_{X ×_S X/S} = Ω_{X/S} ⊕ Ω_{X/S}`.**  The direct sum
 > decomposition `Ω_{X ×_S X/S} = pr_1^* Ω_{X/S} ⊕ pr_2^* Ω_{X/S}` of [Stacks, Tag 01V1], pulled
@@ -710,7 +710,7 @@ theorem shortComplex_shortExact : (shortComplex f).ShortExact
 
 [Tag 067L](https://stacks.math.columbia.edu/tag/067L) in the Stacks Project.
 
-**`Stacks.ConormalSequenceTwoImmersions.epi_conormalDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/TwoImmersionsConormalExact.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/TwoImmersionsConormalExact.lean#L79). The attribute's comment: “surjectivity of the second arrow 𝒞_{Z/X} ⟶ i^*Ω_{X/Y}, which is the ⟶ 0 at the right-hand end of the sequence”.
+**`Stacks.ConormalSequenceTwoImmersions.epi_conormalDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/TwoImmersionsConormalExact.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/TwoImmersionsConormalExact.lean#L79). The attribute's comment: “surjectivity of the second arrow 𝒞\_\{Z/X} ⟶ i^*Ω\_\{X/Y}, which is the ⟶ 0 at the right-hand end of the sequence”.
 
 > **[Stacks, Tag 067L], surjectivity of the second arrow.** For immersions `i : Z ⟶ X` and
 > `j : Z ⟶ Y` in a commutative triangle `i ≫ p = j`, the second arrow `𝒞_{Z/X} ⟶ i^*Ω_{X/Y}` of
@@ -740,7 +740,7 @@ def conormalTransitivityMap (h : i ≫ p = j) :
     Stacks.Conormal.conormalSheaf j ⟶ Stacks.Conormal.conormalSheaf i
 ```
 
-**`Stacks.ConormalSequenceTwoImmersions.conormalDifferentialModules`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 1166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L1166). The attribute's comment: “the second arrow 𝒞_{Z/X} ⟶ i^*Ω_{X/Y}, in the spelling that composes with the first arrow: the conormal differential of Tag 01UZ for i over p, read through the identification conormalSheafComparisonIso of the two presentations of 𝒞_{Z/X}”.
+**`Stacks.ConormalSequenceTwoImmersions.conormalDifferentialModules`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 1166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L1166). The attribute's comment: “the second arrow 𝒞\_\{Z/X} ⟶ i^*Ω\_\{X/Y}, in the spelling that composes with the first arrow: the conormal differential of Tag 01UZ for i over p, read through the identification conormalSheafComparisonIso of the two presentations of 𝒞\_\{Z/X}”.
 
 > **The second arrow `𝒞_{Z/X} ⟶ i^*Ω_{X/Y}` of [Stacks, Tag 067L]**, with its source in the
 > spelling the first arrow uses. The conormal differential of [Stacks, Tag 01UZ] is built on the
@@ -754,7 +754,7 @@ def conormalDifferentialModules :
       (Scheme.Modules.pullback i).obj (Scheme.Hom.relativeDifferentials p)
 ```
 
-**`Stacks.ConormalSequenceTwoImmersions.conormalTransitivityMapModules_comp_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 1177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L1177). The attribute's comment: “the composite 𝒞_{Z/Y} ⟶ 𝒞_{Z/X} ⟶ i^*Ω_{X/Y} of the two arrows vanishes, so they form a complex; only the commutative triangle i ≫ p = j of immersions is assumed”.
+**`Stacks.ConormalSequenceTwoImmersions.conormalTransitivityMapModules_comp_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 1177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L1177). The attribute's comment: “the composite 𝒞\_\{Z/Y} ⟶ 𝒞\_\{Z/X} ⟶ i^*Ω\_\{X/Y} of the two arrows vanishes, so they form a complex; only the commutative triangle i ≫ p = j of immersions is assumed”.
 
 > **[Stacks, Tag 067L]: the two arrows of the conormal sequence form a complex.** The composite
 > `𝒞_{Z/Y} ⟶ 𝒞_{Z/X} ⟶ i^*Ω_{X/Y}` vanishes, for immersions `i : Z ⟶ X` and `j : Z ⟶ Y` in a
@@ -765,7 +765,7 @@ theorem conormalTransitivityMapModules_comp_eq_zero (h : i ≫ p = j) :
     conormalTransitivityMapModules i j p h ≫ conormalDifferentialModules i p = 0
 ```
 
-**`Stacks.ConormalSequenceTwoImmersions.conormalShortComplexModules_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 1188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L1188). The attribute's comment: “exactness at the middle term 𝒞_{Z/X}: the image of the first arrow 𝒞_{Z/Y} ⟶ 𝒞_{Z/X} is the kernel of the second arrow 𝒞_{Z/X} ⟶ i^*Ω_{X/Y}; only the commutative triangle i ≫ p = j of immersions is assumed”.
+**`Stacks.ConormalSequenceTwoImmersions.conormalShortComplexModules_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 1188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L1188). The attribute's comment: “exactness at the middle term 𝒞\_\{Z/X}: the image of the first arrow 𝒞\_\{Z/Y} ⟶ 𝒞\_\{Z/X} is the kernel of the second arrow 𝒞\_\{Z/X} ⟶ i^*Ω\_\{X/Y}; only the commutative triangle i ≫ p = j of immersions is assumed”.
 
 > **[Stacks, Tag 067L]: the conormal sequence of two immersions is exact at `𝒞_{Z/X}`.** The
 > kernel of the second arrow `𝒞_{Z/X} ⟶ i^*Ω_{X/Y}` is exactly the image of the first arrow

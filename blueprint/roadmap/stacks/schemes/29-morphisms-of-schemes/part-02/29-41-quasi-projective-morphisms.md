@@ -86,7 +86,7 @@ public theorem comp {X Y S : Scheme.{u}} (f : X ⟶ Y) (g : Y ⟶ S) [CompactSpa
 
 [Tag 01VX](https://stacks.math.columbia.edu/tag/01VX) in the Stacks Project.
 
-**`AlgebraicGeometry.IsQuasiProjective.locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/Basic.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjective/Basic.lean#L101). The attribute's comment: “finite_type”.
+**`AlgebraicGeometry.IsQuasiProjective.locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/Basic.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjective/Basic.lean#L101). The attribute's comment: “finite\_type”.
 
 > **Stacks Project, Tag 01VX, quasi-projective case.** A quasi-projective morphism is locally
 > of finite type; here this is part of the definition.
@@ -95,7 +95,7 @@ public theorem comp {X Y S : Scheme.{u}} (f : X ⟶ Y) (g : Y ⟶ S) [CompactSpa
 public theorem locallyOfFiniteType (h : IsQuasiProjective f) : LocallyOfFiniteType f
 ```
 
-**`AlgebraicGeometry.IsQuasiProjective.quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/Basic.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjective/Basic.lean#L106). The attribute's comment: “finite_type”.
+**`AlgebraicGeometry.IsQuasiProjective.quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/Basic.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjective/Basic.lean#L106). The attribute's comment: “finite\_type”.
 
 > **Stacks Project, Tag 01VX, quasi-projective case.** A quasi-projective morphism is
 > quasi-compact; here this is part of the definition.
@@ -104,7 +104,7 @@ public theorem locallyOfFiniteType (h : IsQuasiProjective f) : LocallyOfFiniteTy
 public theorem quasiCompact (h : IsQuasiProjective f) : QuasiCompact f
 ```
 
-**`AlgebraicGeometry.IsHQuasiProjective.locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/SeparatedFiniteType.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjective/SeparatedFiniteType.lean#L72). The attribute's comment: “finite_type”.
+**`AlgebraicGeometry.IsHQuasiProjective.locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/SeparatedFiniteType.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjective/SeparatedFiniteType.lean#L72). The attribute's comment: “finite\_type”.
 
 > An H-quasi-projective morphism of schemes is locally of finite type.
 
@@ -112,7 +112,7 @@ public theorem quasiCompact (h : IsQuasiProjective f) : QuasiCompact f
 theorem locallyOfFiniteType (hf : IsHQuasiProjective f) : LocallyOfFiniteType f
 ```
 
-**`AlgebraicGeometry.IsHQuasiProjective.quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/SeparatedFiniteType.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjective/SeparatedFiniteType.lean#L78). The attribute's comment: “finite_type”.
+**`AlgebraicGeometry.IsHQuasiProjective.quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/SeparatedFiniteType.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjective/SeparatedFiniteType.lean#L78). The attribute's comment: “finite\_type”.
 
 > An H-quasi-projective morphism of schemes is quasi-compact.
 
@@ -136,7 +136,7 @@ theorem isSeparated (hf : IsHQuasiProjective f) : IsSeparated f
 theorem isSeparated (hf : IsQuasiProjective f) : IsSeparated f
 ```
 
-**`AlgebraicGeometry.IsLocallyQuasiProjective.locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/SeparatedFiniteType.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjective/SeparatedFiniteType.lean#L104). The attribute's comment: “finite_type”.
+**`AlgebraicGeometry.IsLocallyQuasiProjective.locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/SeparatedFiniteType.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjective/SeparatedFiniteType.lean#L104). The attribute's comment: “finite\_type”.
 
 > A locally quasi-projective morphism of schemes is locally of finite type.
 
@@ -144,7 +144,7 @@ theorem isSeparated (hf : IsQuasiProjective f) : IsSeparated f
 theorem locallyOfFiniteType (hf : IsLocallyQuasiProjective f) : LocallyOfFiniteType f
 ```
 
-**`AlgebraicGeometry.IsLocallyQuasiProjective.quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/SeparatedFiniteType.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjective/SeparatedFiniteType.lean#L112). The attribute's comment: “finite_type”.
+**`AlgebraicGeometry.IsLocallyQuasiProjective.quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiProjective/SeparatedFiniteType.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiProjective/SeparatedFiniteType.lean#L112). The attribute's comment: “finite\_type”.
 
 > A locally quasi-projective morphism of schemes is quasi-compact.
 

@@ -14,7 +14,7 @@ Section 87.23 of the Stacks Project, [Tag 0AQ2](https://stacks.math.columbia.edu
 
 [Tag 0AQ2](https://stacks.math.columbia.edu/tag/0AQ2) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isAdicOnEveryAffineEtaleDiagram_iff_isTautAdicStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMorphism.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMorphism.lean#L197). The attribute's comment: “the footnote of the section: on WAdm^{adic*} the adic and the taut reading of the chart condition agree”.
+**`AlgebraicGeometry.FormalSpace.isAdicOnEveryAffineEtaleDiagram_iff_isTautAdicStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMorphism.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicMorphism.lean#L197). The attribute's comment: “the footnote of the section: on WAdm^\{adic*} the adic and the taut reading of the chart condition agree”.
 
 > **Section 0AQ2, the footnote.** On `WAdm^{adic*}` the chart condition of the section may be
 > read with "adic" or with "taut": the two readings agree, by Stacks 0GBS.
@@ -112,7 +112,7 @@ public theorem isTaut_of_isAdic
     RingHom.IsTaut φ
 ```
 
-**`RingHom.isAdic_iff_isTaut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L467). The attribute's comment: “on WAdm^{adic*}”.
+**`RingHom.isAdic_iff_isTaut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/AdicRingMap.lean#L467). The attribute's comment: “on WAdm^\{adic*}”.
 
 > Adicness and tautness are equivalent for a continuous homomorphism from a linearly
 > topologized ring with a finitely generated ideal of definition to a complete separated linearly

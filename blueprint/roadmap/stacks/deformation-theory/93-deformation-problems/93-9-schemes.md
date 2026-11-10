@@ -26,7 +26,7 @@ theorem isCofiberedInGroupoids_chart :
       (schemeDeformationCategoryProjection (Λ := Λ) (k := k) (Over.mk (U.ι ≫ X.hom)))
 ```
 
-**`Deformation.Examples.FlatSchemeFamily`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L78). The attribute's comment: “flat_scheme_families”.
+**`Deformation.Examples.FlatSchemeFamily`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L78). The attribute's comment: “flat\_scheme\_families”.
 
 > A scheme flat over the spectrum of an object of `𝒞_Λ`.
 
@@ -34,7 +34,7 @@ theorem isCofiberedInGroupoids_chart :
 structure FlatSchemeFamily (Λ : Type u) (k : Type w) [CommRing Λ] [Field k] [Algebra Λ k]
 ```
 
-**`Deformation.Examples.FlatSchemeFamily.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L92). The attribute's comment: “flat_scheme_families”.
+**`Deformation.Examples.FlatSchemeFamily.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L92). The attribute's comment: “flat\_scheme\_families”.
 
 > A cartesian base-change arrow between flat scheme families.
 
@@ -42,7 +42,7 @@ structure FlatSchemeFamily (Λ : Type u) (k : Type w) [CommRing Λ] [Field k] [A
 structure Hom (P Q : FlatSchemeFamily.{u, v, w} Λ k)
 ```
 
-**`Deformation.Examples.FlatSchemeFamily.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L103). The attribute's comment: “flat_scheme_families”.
+**`Deformation.Examples.FlatSchemeFamily.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L103). The attribute's comment: “flat\_scheme\_families”.
 
 > Flat scheme families over objects of `𝒞_Λ` and their base-change arrows form
 > a category.
@@ -51,7 +51,7 @@ structure Hom (P Q : FlatSchemeFamily.{u, v, w} Λ k)
 instance instCategory : Category (FlatSchemeFamily.{u, v, w} Λ k)
 ```
 
-**`Deformation.Examples.flatSchemeFamilyProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L127). The attribute's comment: “flat_scheme_families”.
+**`Deformation.Examples.flatSchemeFamilyProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L127). The attribute's comment: “flat\_scheme\_families”.
 
 > The canonical functor sending a flat scheme family to its object of `𝒞_Λ`.
 
@@ -60,7 +60,7 @@ def flatSchemeFamilyProjection :
     FlatSchemeFamily.{u, v, w} Λ k ⥤ ArtinianLocalAlgCat.{u, v, w} Λ k
 ```
 
-**`Deformation.Examples.flatSchemeFamilyProjection_cofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L136). The attribute's comment: “cofibred_projection”.
+**`Deformation.Examples.flatSchemeFamilyProjection_cofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L136). The attribute's comment: “cofibred\_projection”.
 
 > Base change makes the projection from flat scheme families cofibered in groupoids.
 
@@ -70,7 +70,7 @@ theorem flatSchemeFamilyProjection_cofiberedInGroupoids
     IsCofiberedInGroupoids (flatSchemeFamilyProjection.{u, v, w} (Λ := Λ) (k := k))
 ```
 
-**`Deformation.Examples.SchemeDeformationCategory`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L209). The attribute's comment: “scheme_deformation_category”. References: SGA 7 VI (1.1(c)).
+**`Deformation.Examples.SchemeDeformationCategory`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L209). The attribute's comment: “scheme\_deformation\_category”. References: SGA 7 VI (1.1(c)).
 
 > A flat family over an object of `𝒞_Λ` together with an identification of its fibre over
 > the closed point with a fixed scheme over `k`. The identification is recorded as a cartesian
@@ -80,7 +80,7 @@ theorem flatSchemeFamilyProjection_cofiberedInGroupoids
 structure SchemeDeformationCategory (X : Over (Spec (.of k)))
 ```
 
-**`Deformation.Examples.SchemeDeformationCategory.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L228). The attribute's comment: “scheme_deformation_category”.
+**`Deformation.Examples.SchemeDeformationCategory.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L228). The attribute's comment: “scheme\_deformation\_category”.
 
 > A cartesian arrow of deformations: contravariant on the schemes, covariant on the objects
 > of `𝒞_Λ`, and compatible with the two identifications of the fibre over the closed point.
@@ -90,7 +90,7 @@ structure Hom {X : Over (Spec (.of k))}
     (P Q : SchemeDeformationCategory (Λ := Λ) (k := k) X)
 ```
 
-**`Deformation.Examples.SchemeDeformationCategory.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L241). The attribute's comment: “scheme_deformation_category”. References: SGA 7 VI (1.1(c)).
+**`Deformation.Examples.SchemeDeformationCategory.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L241). The attribute's comment: “scheme\_deformation\_category”. References: SGA 7 VI (1.1(c)).
 
 > Deformations of a fixed scheme over `k` form a category.
 
@@ -99,7 +99,7 @@ instance instCategory (X : Over (Spec (.of k))) :
     Category (SchemeDeformationCategory (Λ := Λ) (k := k) X)
 ```
 
-**`Deformation.Examples.schemeDeformationCategoryProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L269). The attribute's comment: “scheme_deformation_category”.
+**`Deformation.Examples.schemeDeformationCategoryProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Schemes.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Schemes.lean#L269). The attribute's comment: “scheme\_deformation\_category”.
 
 > The canonical projection from the category of deformations of a scheme to `𝒞_Λ`.
 
@@ -108,7 +108,7 @@ def schemeDeformationCategoryProjection (X : Over (Spec (.of k))) :
     SchemeDeformationCategory (Λ := Λ) (k := k) X ⥤ ArtinianLocalAlgCat.{u, u, u} Λ k
 ```
 
-**`Deformation.Examples.schemeDeformationCategoryProjection_cofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesCofibered.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesCofibered.lean#L143). The attribute's comment: “cofibred_projection, for the deformation category of a scheme”. References: SGA 7 VI (1.1(c)), “more general”.
+**`Deformation.Examples.schemeDeformationCategoryProjection_cofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesCofibered.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesCofibered.lean#L143). The attribute's comment: “cofibred\_projection, for the deformation category of a scheme”. References: SGA 7 VI (1.1(c)), “more general”.
 
 > **The deformation category of a scheme is cofibered in groupoids.** A deformation can be
 > base changed along any morphism of `𝒞_Λ`
@@ -148,7 +148,7 @@ theorem isFirstOrderThickening_specialMap {X : Over (Spec (CommRingCat.of k))}
 
 [Tag 0DY8](https://stacks.math.columbia.edu/tag/0DY8) in the Stacks Project.
 
-**`Deformation.Examples.isDeformationCategory_schemeDeformationCategoryProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesDeformationCategory.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesDeformationCategory.lean#L241). The attribute's comment: “the clause that the deformation category of a fixed scheme over k is a deformation category, unconditionally; condition (RS) for the category of all flat scheme families of Example 0DY7 is Deformation.Examples.satisfiesRS_flatSchemeFamilyProjection”. References: SGA 7 VI (1.1(c)), “more general”.
+**`Deformation.Examples.isDeformationCategory_schemeDeformationCategoryProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesDeformationCategory.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesDeformationCategory.lean#L241). The attribute's comment: “the clause that the deformation category of a fixed scheme over k is a deformation category, unconditionally; condition (RS) for the category of all flat scheme families of Example 0DY7 is Deformation.Examples.satisfiesRS\_flatSchemeFamilyProjection”. References: SGA 7 VI (1.1(c)), “more general”.
 
 > The deformation category of a fixed scheme `X` over the residue field is a deformation
 > category: a predeformation category satisfying (RS).
@@ -160,7 +160,7 @@ theorem isDeformationCategory_schemeDeformationCategoryProjection
       (schemeDeformationCategoryProjection.{u} (Λ := Λ) (k := k) X)
 ```
 
-**`Deformation.Examples.satisfiesRS_flatSchemeFamilyProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesRimSchlessingerSquares.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesRimSchlessingerSquares.lean#L48). The attribute's comment: “condition (RS) for the category of flat scheme families of Example 0DY7, unconditionally. The two gluing clauses it rests on are the last assertion of Tag 07RV and the equivalence assertion of the closing paragraph of Tag 07RX, both proved in this repository: Stacks.Pushout.isPullback_of_isPushout_glued and Stacks.Pushout.isPushout_restrictions_of_flat. The pushout of spectra, the existence of the glued family, its flatness and both halves of the universal property are proved as well. The clause that the deformation category of a fixed scheme over k is a deformation category is Deformation.Examples.isDeformationCategory_schemeDeformationCategoryProjection”.
+**`Deformation.Examples.satisfiesRS_flatSchemeFamilyProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesRimSchlessingerSquares.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesRimSchlessingerSquares.lean#L48). The attribute's comment: “condition (RS) for the category of flat scheme families of Example 0DY7, unconditionally. The two gluing clauses it rests on are the last assertion of Tag 07RV and the equivalence assertion of the closing paragraph of Tag 07RX, both proved in this repository: Stacks.Pushout.isPullback\_of\_isPushout\_glued and Stacks.Pushout.isPushout\_restrictions\_of\_flat. The pushout of spectra, the existence of the glued family, its flatness and both halves of the universal property are proved as well. The clause that the deformation category of a fixed scheme over k is a deformation category is Deformation.Examples.isDeformationCategory\_schemeDeformationCategoryProjection”.
 
 > The category of flat families of schemes over `𝒞_Λ` satisfies the Rim-Schlessinger condition
 > (RS).
@@ -174,7 +174,7 @@ theorem satisfiesRS_flatSchemeFamilyProjection :
 
 [Tag 0DY9](https://stacks.math.columbia.edu/tag/0DY9) in the Stacks Project.
 
-**`Deformation.Examples.infinitesimalAutomorphismGroupTrivialDeformationChain`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesInfinitesimalAutomorphismsTrivial.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesInfinitesimalAutomorphismsTrivial.lean#L168). The attribute's comment: “first display: for a scheme X over the field k, Inf(Def_X) = Ext^0(NL_{X/k}, O_X) = Hom(Omega_{X/k}, O_X) = Der_k(O_X, O_X), as three identifications: Inf(Def_X) is the library's infinitesimal automorphism group of the deformation category of X at the trivial deformation X x_k Spec k[eps], and is isomorphic as a group to Der_k(O_X, O_X); Ext^0 out of the naive cotangent complex is additively Hom(Omega_{X/k}, O_X); and Hom(Omega_{X/k}, O_X) is k-linearly Der_k(O_X, O_X). The second display, T Def_X = Ext^1(NL_{X/k}, O_X), is registered separately”. References: SGA 1 III (6.1), “special case”; SGA 3 VIIA (2.5), “first component”; SGA 3 VIIA (6.4.3), “special case”; SGA 7 VI (4.16), “special case”.
+**`Deformation.Examples.infinitesimalAutomorphismGroupTrivialDeformationChain`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesInfinitesimalAutomorphismsTrivial.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesInfinitesimalAutomorphismsTrivial.lean#L168). The attribute's comment: “first display: for a scheme X over the field k, Inf(Def\_X) = Ext^0(NL\_\{X/k}, O\_X) = Hom(Omega\_\{X/k}, O\_X) = Der\_k(O\_X, O\_X), as three identifications: Inf(Def\_X) is the library's infinitesimal automorphism group of the deformation category of X at the trivial deformation X x\_k Spec k[eps], and is isomorphic as a group to Der\_k(O\_X, O\_X); Ext^0 out of the naive cotangent complex is additively Hom(Omega\_\{X/k}, O\_X); and Hom(Omega\_\{X/k}, O\_X) is k-linearly Der\_k(O\_X, O\_X). The second display, T Def\_X = Ext^1(NL\_\{X/k}, O\_X), is registered separately”. References: SGA 1 III (6.1), “special case”; SGA 3 VIIA (2.5), “first component”; SGA 3 VIIA (6.4.3), “special case”; SGA 7 VI (4.16), “special case”.
 
 > **The first display of [Stacks Project, Tag 0DY9].** For a scheme `X` over the field `k`,
 >
@@ -228,7 +228,7 @@ def infinitesimalAutomorphismGroupTrivialDeformationChain (X : Over (Spec (CommR
             schemeMorphismDerivations (Λ := Λ) (k := k) (𝟙 X.left) X.hom))
 ```
 
-**`Deformation.Examples.schemeTangentSpaceLinearEquivExt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTangentSpaceLinearEquivExt.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesTangentSpaceLinearEquivExt.lean#L251). The attribute's comment: “second display: for a scheme X over the field k, T Def_X = Ext^1(NL_{X/k}, O_X) as k-vector spaces, from the tangent space of the deformation category of X (isomorphism classes of flat deformations of X over k[eps], with the canonical vector space structure of 06IH) onto Ext^1_{O_X}(NL_{X/k}, O_X); a deformation goes to its 08UC difference class with the trivial deformation X x_k Spec k[eps], which goes to 0. The first display, Inf(Def_X) = Ext^0(NL_{X/k}, O_X) = Der_k(O_X, O_X), is registered separately”.
+**`Deformation.Examples.schemeTangentSpaceLinearEquivExt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTangentSpaceLinearEquivExt.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesTangentSpaceLinearEquivExt.lean#L251). The attribute's comment: “second display: for a scheme X over the field k, T Def\_X = Ext^1(NL\_\{X/k}, O\_X) as k-vector spaces, from the tangent space of the deformation category of X (isomorphism classes of flat deformations of X over k[eps], with the canonical vector space structure of 06IH) onto Ext^1\_\{O\_X}(NL\_\{X/k}, O\_X); a deformation goes to its 08UC difference class with the trivial deformation X x\_k Spec k[eps], which goes to 0. The first display, Inf(Def\_X) = Ext^0(NL\_\{X/k}, O\_X) = Der\_k(O\_X, O\_X), is registered separately”.
 
 > **Stacks Project, Tag 0DY9, second display.** For a scheme `X` over the field `k`,
 >
@@ -271,7 +271,7 @@ noncomputable def schemeTangentSpaceLinearEquivExt :
 
 [Tag 0DYA](https://stacks.math.columbia.edu/tag/0DYA) in the Stacks Project.
 
-**`Deformation.Examples.finiteDimensional_schemeTangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesFiniteDimensional.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesFiniteDimensional.lean#L116). The attribute's comment: “the tangent space clause: for X proper over k, T Def_X (isomorphism classes of flat deformations of X over k[eps], with the canonical vector space structure of 06IH) is finite dimensional over k”.
+**`Deformation.Examples.finiteDimensional_schemeTangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesFiniteDimensional.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesFiniteDimensional.lean#L116). The attribute's comment: “the tangent space clause: for X proper over k, T Def\_X (isomorphism classes of flat deformations of X over k[eps], with the canonical vector space structure of 06IH) is finite dimensional over k”.
 
 > **Stacks 0DYA, the tangent space.** For a scheme `X` proper over the field `k`, the tangent
 > space `T𝓓_X` of its deformation category ([Stacks Project, Tag 0DY7]) — the isomorphism classes
@@ -296,7 +296,7 @@ theorem finiteDimensional_schemeTangentSpace [IsProper X.hom] :
     FiniteDimensional k (schemeTangentSpace (Λ := Λ) (k := k) X)
 ```
 
-**`Deformation.Examples.finiteDimensional_localizedAutomorphismFunctorTangent_schemeDeformation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesFiniteDimensional.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesFiniteDimensional.lean#L253). The attribute's comment: “the infinitesimal automorphism clause: for X proper over k, Inf(Def_X) is finite dimensional over k, with the vector space structure of 06JV, at every point of the deformation category and every choice of pushforwards”.
+**`Deformation.Examples.finiteDimensional_localizedAutomorphismFunctorTangent_schemeDeformation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesFiniteDimensional.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesFiniteDimensional.lean#L253). The attribute's comment: “the infinitesimal automorphism clause: for X proper over k, Inf(Def\_X) is finite dimensional over k, with the vector space structure of 06JV, at every point of the deformation category and every choice of pushforwards”.
 
 > **Stacks 0DYA, the infinitesimal automorphisms.** For a scheme `X` proper over the field `k`,
 > the `k`-vector space `Inf(𝓓_X)` of infinitesimal automorphisms of its deformation category
@@ -327,7 +327,7 @@ theorem finiteDimensional_localizedAutomorphismFunctorTangent_schemeDeformation 
 
 [Tag 0ET5](https://stacks.math.columbia.edu/tag/0ET5) in the Stacks Project.
 
-**`Deformation.Examples.exists_hull_isomorphismClasses_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesHull.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesHull.lean#L95). The attribute's comment: “the hull: for X proper over k and Λ a complete local ring with residue field k, the functor A ↦ Ob(Def_X(A))/≅ of isomorphism classes of deformations of X has a hull”.
+**`Deformation.Examples.exists_hull_isomorphismClasses_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesHull.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesHull.lean#L95). The attribute's comment: “the hull: for X proper over k and Λ a complete local ring with residue field k, the functor A ↦ Ob(Def\_X(A))/≅ of isomorphism classes of deformations of X has a hull”.
 
 > **Stacks Project, Tag 0ET5**, the hull. Let `X` be a proper scheme over the field `k` and
 > let `Λ` be a Noetherian complete local ring with residue field `k` (the classical case). Then the
@@ -346,7 +346,7 @@ theorem exists_hull_isomorphismClasses_scheme (hΛ : IsClassical Λ k)
       IsHull (categoryOfElements_projection_isCofibered F) ξ
 ```
 
-**`Deformation.Examples.isProrepresentableULift_isomorphismClasses_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesHull.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesHull.lean#L118). The attribute's comment: “prorepresentability: for X proper over k and Λ a complete local ring with residue field k, if Der_k(O_X, O_X) = 0 then the functor A ↦ Ob(Def_X(A))/≅ is prorepresentable”. References: SGA 7 X (2.27), “more general”.
+**`Deformation.Examples.isProrepresentableULift_isomorphismClasses_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesHull.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesHull.lean#L118). The attribute's comment: “prorepresentability: for X proper over k and Λ a complete local ring with residue field k, if Der\_k(O\_X, O\_X) = 0 then the functor A ↦ Ob(Def\_X(A))/≅ is prorepresentable”. References: SGA 7 X (2.27), “more general”.
 
 > **Stacks Project, Tag 0ET5**, prorepresentability. Let `X` be a proper scheme over the field
 > `k` and let `Λ` be a Noetherian complete local ring with residue field `k`. If
@@ -416,7 +416,7 @@ def sectionsFunctor :
       ringDeformationCategory (Λ := Λ) (k := k) P
 ```
 
-**`Deformation.Examples.SchemeRingDeformation.equivalenceOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeRingDeformation.lean, line 483](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeRingDeformation.lean#L483). The attribute's comment: “the equivalence Def_(Spec P) = Def_P; 06AD is isAffine_of_isThickening”. References: SGA 7 VI (4.1(b)).
+**`Deformation.Examples.SchemeRingDeformation.equivalenceOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeRingDeformation.lean, line 483](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeRingDeformation.lean#L483). The attribute's comment: “the equivalence Def\_(Spec P) = Def\_P; 06AD is isAffine\_of\_isThickening”. References: SGA 7 VI (4.1(b)).
 
 > **Stacks 0DYX.** For a `k`-algebra `P`, global sections are an equivalence from the
 > deformation category of the affine scheme `Spec P` to the deformation category of `P`, over the
@@ -527,7 +527,7 @@ structure GluingSituation (Λ k : Type u) [CommRing Λ] [Field k] [Algebra Λ k]
 
 [Tag 0DYZ](https://stacks.math.columbia.edu/tag/0DYZ) in the Stacks Project.
 
-**`Deformation.Examples.twoOpenComparisonFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCover.lean, line 492](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCover.lean#L492). The attribute's comment: “the comparison functor Def_X ⥤ Def_{U_1} ×_{Def_{U_12}} Def_{U_2} only; it is not shown to be an equivalence (that needs the glueing quasi-inverse of the proof) and the translation into the ring deformation categories Def_{P_i} is not included”.
+**`Deformation.Examples.twoOpenComparisonFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCover.lean, line 492](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCover.lean#L492). The attribute's comment: “the comparison functor Def\_X ⥤ Def\_\{U\_1} ×\_\{Def\_\{U\_12}} Def\_\{U\_2} only; it is not shown to be an equivalence (that needs the glueing quasi-inverse of the proof) and the translation into the ring deformation categories Def\_\{P\_i} is not included”.
 
 > Let `X` be a scheme over `k` with two opens `U₁` and `U₂`. Restricting a deformation of `X`
 > to `U₁` and to `U₂`, together with the identification of the two induced deformations of
@@ -545,7 +545,7 @@ def twoOpenComparisonFunctor (X : Over (Spec (.of k))) (U₁ U₂ : X.left.Opens
         (openRestrictionLEFunctor (Λ := Λ) (k := k) (inf_le_right : U₁ ⊓ U₂ ≤ U₂))
 ```
 
-**`Deformation.Examples.twoOpenComparisonFunctor_comp_structureFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCover.lean, line 542](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCover.lean#L542). The attribute's comment: “the comparison functor Def_X ⥤ Def_{U_1} ×_{Def_{U_12}} Def_{U_2} is a functor over 𝒞_Λ; it is not shown to be an equivalence and the ring deformation categories Def_{P_i} are not involved”.
+**`Deformation.Examples.twoOpenComparisonFunctor_comp_structureFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCover.lean, line 542](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCover.lean#L542). The attribute's comment: “the comparison functor Def\_X ⥤ Def\_\{U\_1} ×\_\{Def\_\{U\_12}} Def\_\{U\_2} is a functor over 𝒞\_Λ; it is not shown to be an equivalence and the ring deformation categories Def\_\{P\_i} are not involved”.
 
 > The comparison functor of a two-open cover is strictly over `𝒞_Λ`.
 
@@ -563,7 +563,7 @@ theorem twoOpenComparisonFunctor_comp_structureFunctor (X : Over (Spec (.of k)))
       schemeDeformationCategoryProjection (Λ := Λ) (k := k) X
 ```
 
-**`Deformation.Examples.GluingSituation.comparisonFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCover.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCover.lean#L559). The attribute's comment: “the comparison functor in Situation 0DYY; it is not shown to be an equivalence and the translation into the ring deformation categories Def_{P_i} is not included”.
+**`Deformation.Examples.GluingSituation.comparisonFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCover.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCover.lean#L559). The attribute's comment: “the comparison functor in Situation 0DYY; it is not shown to be an equivalence and the translation into the ring deformation categories Def\_\{P\_i} is not included”.
 
 > The comparison functor of the two-open cover of a glueing situation.
 
@@ -579,7 +579,7 @@ def GluingSituation.comparisonFunctor (S : GluingSituation Λ k) :
         (openRestrictionLEFunctor (Λ := Λ) (k := k) (inf_le_right : S.U₁ ⊓ S.U₂ ≤ S.U₂))
 ```
 
-**`Deformation.Examples.glueDeformation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCover.lean, line 1014](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCover.lean#L1014). The attribute's comment: “the glueing construction of the proof, on objects only: an object of the 2-fibre product Def_{U_1} ×_{Def_{U_12}} Def_{U_2} is glued to a deformation of X over the same object of 𝒞_Λ, flat over it, with special fibre X, and restricting to U_1 and U_2 gives the two charts back. Not shown functorial in the datum, so not yet a quasi-inverse of twoOpenComparisonFunctor; neither the equivalence nor the Def_{P_i} form is proved”.
+**`Deformation.Examples.glueDeformation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCover.lean, line 1014](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCover.lean#L1014). The attribute's comment: “the glueing construction of the proof, on objects only: an object of the 2-fibre product Def\_\{U\_1} ×\_\{Def\_\{U\_12}} Def\_\{U\_2} is glued to a deformation of X over the same object of 𝒞\_Λ, flat over it, with special fibre X, and restricting to U\_1 and U\_2 gives the two charts back. Not shown functorial in the datum, so not yet a quasi-inverse of twoOpenComparisonFunctor; neither the equivalence nor the Def\_\{P\_i} form is proved”.
 
 > Let `X` be a scheme over `k` covered by two opens `U₁` and `U₂`. An object of the 2-fibre
 > product `Def_{U₁} ×_{Def_{U₁ ⊓ U₂}} Def_{U₂}` consists of a deformation of `U₁`, a deformation
@@ -654,7 +654,7 @@ theorem twoOpenComparisonFunctor_map_glueDeformationHom :
       comparisonGlueHom X U₁ U₂ Q hcover ≫ g
 ```
 
-**`Deformation.Examples.isSmooth_twoOpenComparisonBasedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCoverGlue.lean, line 860](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCoverGlue.lean#L860). The attribute's comment: “smoothness of the comparison morphism Def_X ⟶ Def_{U_1} ×_{Def_{U_12}} Def_{U_2}, which is what Tag 0DZN consumes; that the comparison morphism is an *equivalence* — the full assertion of 0DYZ — is not proved, and neither is the translation into the ring deformation categories Def_{P_i}”.
+**`Deformation.Examples.isSmooth_twoOpenComparisonBasedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCoverGlue.lean, line 860](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCoverGlue.lean#L860). The attribute's comment: “smoothness of the comparison morphism Def\_X ⟶ Def\_\{U\_1} ×\_\{Def\_\{U\_12}} Def\_\{U\_2}, which is what Tag 0DZN consumes; that the comparison morphism is an *equivalence* — the full assertion of 0DYZ — is not proved, and neither is the translation into the ring deformation categories Def\_\{P\_i}”.
 
 > **Stacks 0DYZ in the form Tag 0DZN uses it.** If the two opens cover `X` then the comparison
 > morphism `Def_X ⟶ Def_{U₁} ×_{Def_{U₁ ⊓ U₂}} Def_{U₂}` is smooth: a lifting problem is solved by
@@ -667,7 +667,7 @@ theorem isSmooth_twoOpenComparisonBasedFunctor (hcover : U₁ ⊔ U₂ = ⊤) :
     IsSmooth (twoOpenComparisonBasedFunctor (Λ := Λ) X U₁ U₂)
 ```
 
-**`Deformation.Examples.GluingSituation.deformationCategories_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCoverRings.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCoverRings.lean#L357). The attribute's comment: “Def_X = Def_{P_1} ×_{Def_{P_12}} Def_{P_2} as an equivalence over 𝒞_Λ of deformation categories, with the ring deformation categories of Example 0DY1 and the restriction functors along U_12 ⊆ U_i”.
+**`Deformation.Examples.GluingSituation.deformationCategories_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCoverRings.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemesTwoOpenCoverRings.lean#L357). The attribute's comment: “Def\_X = Def\_\{P\_1} ×\_\{Def\_\{P\_12}} Def\_\{P\_2} as an equivalence over 𝒞\_Λ of deformation categories, with the ring deformation categories of Example 0DY1 and the restriction functors along U\_12 ⊆ U\_i”.
 
 > **Stacks 0DYZ.** In Situation 0DYY, `Def_X` and `Def_{P₁} ×_{Def_{P₁₂}} Def_{P₂}` are
 > deformation categories, and the comparison functor between them is an equivalence of

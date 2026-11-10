@@ -121,7 +121,7 @@ theorem pushforwardModules_preservesLimitsOfSize (f : RingedToposHom X Y) :
     PreservesLimitsOfSize.{t, t'} (pushforwardModules f)
 ```
 
-**`AlgebraicGeometry.RingedToposHom.pushforwardModules_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposPullback.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposPullback.lean#L400). The attribute's comment: “part (1): the direct image is left exact”. References: SGA 4 V (5.0), “left exactness of u_*”; SGA 4 IV (13.6), “u_* left exact”.
+**`AlgebraicGeometry.RingedToposHom.pushforwardModules_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposPullback.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposPullback.lean#L400). The attribute's comment: “part (1): the direct image is left exact”. References: SGA 4 V (5.0), “left exactness of u\_*”; SGA 4 IV (13.6), “u\_* left exact”.
 
 > **Stacks 03DC, part (1).** The direct image of sheaves of modules along a morphism of ringed
 > topoi is left exact. This is the finite case of
@@ -132,7 +132,7 @@ theorem pushforwardModules_preservesFiniteLimits (f : RingedToposHom X Y) :
     PreservesFiniteLimits (pushforwardModules f)
 ```
 
-**`AlgebraicGeometry.RingedToposHom.pullbackModules_preservesColimitsOfSize`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposPullback.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposPullback.lean#L410). The attribute's comment: “part (2): the pullback commutes with all colimits”. References: SGA 4 IV (13.6), “u* commutes w/ colimits”; SGA 4 IV (11.2.2), “j_X^* inductive limits”.
+**`AlgebraicGeometry.RingedToposHom.pullbackModules_preservesColimitsOfSize`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposPullback.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposPullback.lean#L410). The attribute's comment: “part (2): the pullback commutes with all colimits”. References: SGA 4 IV (13.6), “u* commutes w/ colimits”; SGA 4 IV (11.2.2), “j\_X^* inductive limits”.
 
 > **Stacks 03DC, part (2).** The pullback of sheaves of modules along a morphism of ringed
 > topoi commutes with all colimits, of every diagram size: it is a left adjoint, the right adjoint

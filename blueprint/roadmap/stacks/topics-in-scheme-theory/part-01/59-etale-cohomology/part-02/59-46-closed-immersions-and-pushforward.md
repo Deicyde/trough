@@ -86,7 +86,7 @@ theorem exists_etale_openCover_isomorphic_pullback_of_isClosedImmersion
 
 [Tag 04FX](https://stacks.math.columbia.edu/tag/04FX) in the Stacks Project.
 
-**`AlgebraicGeometry.stalkPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkInside.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkInside.lean#L504). The attribute's comment: “stalk_pushforward_inside”.
+**`AlgebraicGeometry.stalkPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkInside.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkInside.lean#L504). The attribute's comment: “stalk\_pushforward\_inside”.
 
 > At a geometric point of the closed subscheme, direct image on the small
 > étale site does not change the stalk. This is natural in the sheaf.
@@ -104,7 +104,7 @@ public noncomputable def stalkPushforwardIso (B : BigEtaleSite.{u})
       etaleStalkPresheafFunctor B T.1 T.property s (Type (u + 1))
 ```
 
-**`AlgebraicGeometry.stalkPushforwardIso_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkInside.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkInside.lean#L563). The attribute's comment: “stalk_pushforward_inside”.
+**`AlgebraicGeometry.stalkPushforwardIso_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkInside.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkInside.lean#L563). The attribute's comment: “stalk\_pushforward\_inside”.
 
 > The canonical comparison takes the germ of a section over an étale
 > neighborhood of the image point to the germ of the same section over its
@@ -138,7 +138,7 @@ public theorem stalkPushforwardIso_germ (B : BigEtaleSite.{u})
         (Opposite.op (Functor.elementsMk _ ((smallEtaleBaseChange B i).obj N.1) q))).hom σ
 ```
 
-**`AlgebraicGeometry.smallEtalePushforward_stalk_unique_of_not_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkOutside.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkOutside.lean#L142). The attribute's comment: “stalk_pushforward_outside”.
+**`AlgebraicGeometry.smallEtalePushforward_stalk_unique_of_not_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkOutside.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ClosedImmersionsPushforward/StalkOutside.lean#L142). The attribute's comment: “stalk\_pushforward\_outside”.
 
 > The stalk of the direct image from a closed subscheme is a singleton
 > outside that subscheme.

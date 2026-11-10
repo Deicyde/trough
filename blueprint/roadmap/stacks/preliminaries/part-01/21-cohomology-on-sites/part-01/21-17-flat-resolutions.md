@@ -14,7 +14,7 @@ Section 21.17 of the Stacks Project, [Tag 06YL](https://stacks.math.columbia.edu
 
 [Tag 06YM](https://stacks.math.columbia.edu/tag/06YM) in the Stacks Project.
 
-**`Stacks.SheafOfModules.Tensor.statement1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/BifunctorReductionMachinery/TensorIsTriangulated.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/BifunctorReductionMachinery/TensorIsTriangulated.lean#L58). The attribute's comment: “the functor F ↦ Tot(G ⊗_O F), the fixed complex on the left”. References: SGA 4 XVII (4.1.6), “comm. O, G fixed, left”; SGA 4½ Etat 0 (1.3.3), “special case”.
+**`Stacks.SheafOfModules.Tensor.statement1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/BifunctorReductionMachinery/TensorIsTriangulated.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/BifunctorReductionMachinery/TensorIsTriangulated.lean#L58). The attribute's comment: “the functor F ↦ Tot(G ⊗\_O F), the fixed complex on the left”. References: SGA 4 XVII (4.1.6), “comm. O, G fixed, left”; SGA 4½ Etat 0 (1.3.3), “special case”.
 
 > **Statement 1.**  Fix a complex `G^•` of `O`-modules.  The functor
 > `F^• ↦ Tot(G^• ⊗_O F^•)` on the homotopy category `K(Mod(O))` is an exact functor
@@ -42,7 +42,7 @@ theorem statement1
           (letI := ξ; Φ.IsTriangulated)
 ```
 
-**`Stacks.SheafOfModules.Tensor.statement2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/BifunctorReductionMachinery/TensorIsTriangulated.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/BifunctorReductionMachinery/TensorIsTriangulated.lean#L84). The attribute's comment: “the functor F ↦ Tot(F ⊗_O G), the fixed complex on the right”. References: SGA 4 XVII (4.1.6), “comm. O, G fixed, right”; SGA 4½ Etat 0 (1.3.3), “special case”.
+**`Stacks.SheafOfModules.Tensor.statement2`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/BifunctorReductionMachinery/TensorIsTriangulated.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedTensor/BifunctorReductionMachinery/TensorIsTriangulated.lean#L84). The attribute's comment: “the functor F ↦ Tot(F ⊗\_O G), the fixed complex on the right”. References: SGA 4 XVII (4.1.6), “comm. O, G fixed, right”; SGA 4½ Etat 0 (1.3.3), “special case”.
 
 > **Statement 2.**  Fix a complex `G^•` of `O`-modules.  The functor
 > `F^• ↦ Tot(F^• ⊗_O G^•)` on the homotopy category `K(Mod(O))` is an exact functor
@@ -418,7 +418,7 @@ theorem kFlat_of_boundedAbove_of_flat
     IsKFlat R K
 ```
 
-**`Stacks.Cohomology.LocallyBoundedKFlat.kFlat_of_isLocallyBounded_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/LocallyBoundedIsKFlat.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/LocallyBoundedIsKFlat.lean#L156). The attribute's comment: “with the boundedness hypothesis localized: a complex of flat O_W-modules which is merely LOCALLY bounded — bounded on each member of some open cover of W, which a complex with no global bound above can be — is K-flat. The source states it for a complex bounded above, which is this statement at the one-member cover W = W”.
+**`Stacks.Cohomology.LocallyBoundedKFlat.kFlat_of_isLocallyBounded_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/LocallyBoundedIsKFlat.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/LocallyBoundedIsKFlat.lean#L156). The attribute's comment: “with the boundedness hypothesis localized: a complex of flat O\_W-modules which is merely LOCALLY bounded — bounded on each member of some open cover of W, which a complex with no global bound above can be — is K-flat. The source states it for a complex bounded above, which is this statement at the one-member cover W = W”.
 
 > **A locally bounded complex of flat `𝒪_W`-modules is K-flat.**  This is [Stacks, Tag 06YQ]
 > with its boundedness hypothesis localized: the complex is only assumed bounded on each member

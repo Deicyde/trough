@@ -72,7 +72,7 @@ public def Scheme.proetaleInverseImageSectionsIso (S : Scheme.{u}) (Y : S.ProEt)
 
 [Tag 099T](https://stacks.math.columbia.edu/tag/099T) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.isIso_unit_of_etaleToProetale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackUnit.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackUnit.lean#L86). The attribute's comment: “the adjunction map ℱ ⟶ ε_*ε⁻¹ℱ is an isomorphism, for an arbitrary left adjoint ε⁻¹ of ε_*”.
+**`AlgebraicGeometry.Scheme.isIso_unit_of_etaleToProetale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackUnit.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackUnit.lean#L86). The attribute's comment: “the adjunction map ℱ ⟶ ε\_*ε⁻¹ℱ is an isomorphism, for an arbitrary left adjoint ε⁻¹ of ε\_*”.
 
 > For every sheaf `ℱ` on the small étale site of a scheme `S`, the adjunction map
 > `ℱ ⟶ ε_*ε⁻¹ℱ` is an isomorphism, where `ε : S_proétale → S_étale` is the morphism of sites given
@@ -88,7 +88,7 @@ public theorem Scheme.isIso_unit_of_etaleToProetale
     IsIso adj.unit
 ```
 
-**`AlgebraicGeometry.Scheme.isIso_proetaleInverseImageAdjunction_unit`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackUnit.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackUnit.lean#L102). The attribute's comment: “the unit of the adjunction ε⁻¹ ⊣ ε_* is an isomorphism”.
+**`AlgebraicGeometry.Scheme.isIso_proetaleInverseImageAdjunction_unit`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackUnit.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackUnit.lean#L102). The attribute's comment: “the unit of the adjunction ε⁻¹ ⊣ ε\_* is an isomorphism”.
 
 > The unit `ℱ ⟶ ε_*ε⁻¹ℱ` of the adjunction between the sheafified left Kan extension along the
 > inclusion of the small étale category and restriction along it is an isomorphism.
@@ -99,7 +99,7 @@ public instance Scheme.isIso_proetaleInverseImageAdjunction_unit :
       (Type (max (u + 1) v)) S.smallEtaleTopology (Scheme.ProEt.topology S)).unit
 ```
 
-**`AlgebraicGeometry.Scheme.proetaleInverseImageEtaleSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackUnit.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackUnit.lean#L110). The attribute's comment: “the sections form: ε⁻¹ℱ(U) = ℱ(U) for U in S_étale”.
+**`AlgebraicGeometry.Scheme.proetaleInverseImageEtaleSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackUnit.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackUnit.lean#L110). The attribute's comment: “the sections form: ε⁻¹ℱ(U) = ℱ(U) for U in S\_étale”.
 
 > At an étale object `U` of `S` the sections of `ε⁻¹ℱ` are the sections of `ℱ`, naturally in
 > `ℱ`.
@@ -128,7 +128,7 @@ public def Scheme.proetaleInverseImageFullyFaithful :
 
 [Tag 099S](https://stacks.math.columbia.edu/tag/099S) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.proetaleInverseImage_exists_map_eq_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackLimit.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackLimit.lean#L113). The attribute's comment: “the injectivity half of ε⁻¹ℱ(Y) = colim ε⁻¹ℱ(Y_i), proved: two sections over a stage that agree over the limit agree over a later stage. The surjectivity half, hence the formula itself, is not proved here. `Y = lim Y_i` is the scheme-theoretic limit, as in the source; the index category is small in the universe of the schemes”.
+**`AlgebraicGeometry.Scheme.proetaleInverseImage_exists_map_eq_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackLimit.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackLimit.lean#L113). The attribute's comment: “the injectivity half of ε⁻¹ℱ(Y) = colim ε⁻¹ℱ(Y\_i), proved: two sections over a stage that agree over the limit agree over a later stage. The surjectivity half, hence the formula itself, is not proved here. `Y = lim Y_i` is the scheme-theoretic limit, as in the source; the index category is small in the universe of the schemes”.
 
 > **Stacks 099S, the injectivity half.** Let `Y = lim Y_i` be the limit of an inverse system of
 > quasi-compact objects of `X_proétale` with affine transition morphisms, and let `ℱ` be a sheaf on
@@ -165,7 +165,7 @@ public theorem Scheme.proetaleInverseImage_exists_map_eq_of_isLimit
           (Scheme.ProEt.topology X)).obj F).obj.map (Y.map f).op t
 ```
 
-**`AlgebraicGeometry.Scheme.injective_desc_proetaleInverseImage_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackLimit.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackLimit.lean#L155). The attribute's comment: “proved: the comparison map colim ε⁻¹ℱ(Y_i) → ε⁻¹ℱ(Y) of the displayed formula is INJECTIVE, for every colimit cocone of the sections at the stages. Its surjectivity is not proved, so the formula itself is not”.
+**`AlgebraicGeometry.Scheme.injective_desc_proetaleInverseImage_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackLimit.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackLimit.lean#L155). The attribute's comment: “proved: the comparison map colim ε⁻¹ℱ(Y\_i) → ε⁻¹ℱ(Y) of the displayed formula is INJECTIVE, for every colimit cocone of the sections at the stages. Its surjectivity is not proved, so the formula itself is not”.
 
 > **Stacks 099S, the injectivity half, for the comparison map out of the colimit.** The
 > canonical map `colim ε⁻¹ℱ(Y_i) → ε⁻¹ℱ(Y)` induced by the limit cone is injective, for any cocone
@@ -190,7 +190,7 @@ public theorem Scheme.injective_desc_proetaleInverseImage_of_isLimit
       (Scheme.ProEt.topology X)).obj F).obj.mapCocone c.op))
 ```
 
-**`AlgebraicGeometry.Scheme.etaleSections_exists_map_eq_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackLimit.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackLimit.lean#L201). The attribute's comment: “the final statement ε⁻¹ℱ(Y) = colim ℱ(Y_i) for étale stages, injectivity half proved: two sections of ℱ over a stage with the same image in ε⁻¹ℱ(Y) agree over a later stage. Surjectivity is not proved, so the formula itself is not”.
+**`AlgebraicGeometry.Scheme.etaleSections_exists_map_eq_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackLimit.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackLimit.lean#L201). The attribute's comment: “the final statement ε⁻¹ℱ(Y) = colim ℱ(Y\_i) for étale stages, injectivity half proved: two sections of ℱ over a stage with the same image in ε⁻¹ℱ(Y) agree over a later stage. Surjectivity is not proved, so the formula itself is not”.
 
 > **Stacks 099S for étale stages, the injectivity half.** If the stages `Y_i` are objects of
 > `X_étale`, two sections of `ℱ` over a stage whose images in `ε⁻¹ℱ(Y)` under the unit
@@ -226,9 +226,9 @@ public theorem Scheme.etaleSections_exists_map_eq_of_isLimit
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.proetaleInverseImageIsColimit`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackColimit.lean#L464), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackRegistrations.lean, line 19](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackRegistrations.lean#L19) (StacksFrontier): “the displayed formula ε⁻¹ℱ(Y) = colim ε⁻¹ℱ(Y_i); `Y = lim Y_i` is the limit of the underlying schemes, as in the source”.
-- [`AlgebraicGeometry.Scheme.proetaleInverseImageIsColimitOfEtale`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackColimit.lean#L499), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackRegistrations.lean, line 23](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackRegistrations.lean#L23) (StacksFrontier): “the final statement ε⁻¹ℱ(Y) = colim ℱ(Y_i) for stages Y_i in X_étale, the maps being the unit ℱ ⟶ ε_*ε⁻¹ℱ followed by restriction”.
-- [`AlgebraicGeometry.Scheme.proetaleInverseImageIsColimitAddCommGrp`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackAbelian.lean#L196), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackRegistrations.lean, line 27](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackRegistrations.lean#L27) (StacksFrontier): “the displayed formula for abelian sheaves, for an arbitrary left adjoint ε⁻¹ of ε_*; `Y = lim Y_i` is the limit of the underlying schemes”.
+- [`AlgebraicGeometry.Scheme.proetaleInverseImageIsColimit`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackColimit.lean#L464), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackRegistrations.lean, line 19](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackRegistrations.lean#L19) (StacksFrontier): “the displayed formula ε⁻¹ℱ(Y) = colim ε⁻¹ℱ(Y\_i); `Y = lim Y_i` is the limit of the underlying schemes, as in the source”.
+- [`AlgebraicGeometry.Scheme.proetaleInverseImageIsColimitOfEtale`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackColimit.lean#L499), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackRegistrations.lean, line 23](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackRegistrations.lean#L23) (StacksFrontier): “the final statement ε⁻¹ℱ(Y) = colim ℱ(Y\_i) for stages Y\_i in X\_étale, the maps being the unit ℱ ⟶ ε\_*ε⁻¹ℱ followed by restriction”.
+- [`AlgebraicGeometry.Scheme.proetaleInverseImageIsColimitAddCommGrp`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackAbelian.lean#L196), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackRegistrations.lean, line 27](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProetaleEtaleSheafPullbackRegistrations.lean#L27) (StacksFrontier): “the displayed formula for abelian sheaves, for an arbitrary left adjoint ε⁻¹ of ε\_*; `Y = lim Y_i` is the limit of the underlying schemes”.
 
 ## Tag 099U, a lemma
 
@@ -297,8 +297,8 @@ Declarations registered for the tag:
 
 > **Stacks 09B2.** Let `X` be a scheme, `Λ` a Noetherian ring, `I ⊆ Λ` an ideal and `K` an
 > object of `D(X_proétale, Λ)`. Set `Kₙ = K ⊗_Λ^L Λ/Iⁿ`, the derived extension of scalars of `K`
-> along `Λ → Λ/Iⁿ`. If `K₁` is in the essential image of `ε⁻¹ : D(X_étale, Λ/I) ⥤
-> D(X_proétale, Λ/I)` and has Tor amplitude in `[a, ∞)`, then, for every `n`, `Kₙ` is in the
+> along `Λ → Λ/Iⁿ`. If `K₁` is in the essential image of `ε⁻¹ : D(X\_étale, Λ/I) ⥤
+> D(X\_proétale, Λ/I)` and has Tor amplitude in `[a, ∞)`, then, for every `n`, `Kₙ` is in the
 > essential image of `ε⁻¹ : D(X_étale, Λ/Iⁿ) ⥤ D(X_proétale, Λ/Iⁿ)` and has Tor amplitude in
 > `[a, ∞)`.
 >

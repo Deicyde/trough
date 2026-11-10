@@ -32,7 +32,7 @@ theorem isCofiltered_category : IsCofiltered D.category
 theorem initial_ι_hasDenseInterior : (HasDenseInterior D.X).ι.Initial
 ```
 
-**`AlgebraicGeometry.preimage_range_immersion_eq`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/Compactifications.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/Compactifications.lean#L140). The attribute's comment: “preimage_of_interior”.
+**`AlgebraicGeometry.preimage_range_immersion_eq`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/Compactifications.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/Compactifications.lean#L140). The attribute's comment: “preimage\_of\_interior”.
 
 > **Stacks Project, Tag 0ATU.** For a morphism between compactifications whose source
 > interior is dense, the inverse image of the target interior is exactly the source
@@ -55,7 +55,7 @@ lemma preimage_range_immersion_eq
 instance isCofiltered : IsCofiltered D.category
 ```
 
-**`AlgebraicGeometry.CategoryOfCompactifications.denseCompactification_initial`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/CompactificationsCofiltered.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/CompactificationsCofiltered.lean#L195). The attribute's comment: “dense_compactifications_initial”.
+**`AlgebraicGeometry.CategoryOfCompactifications.denseCompactification_initial`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/CompactificationsCofiltered.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/CompactificationsCofiltered.lean#L195). The attribute's comment: “dense\_compactifications\_initial”.
 
 > **Stacks Project, Tag 0ATU.** The compactifications in which the image of `X` is dense and
 > scheme-theoretically dense form an initial full subcategory of the category of all

@@ -220,7 +220,7 @@ theorem isIso_moduleLowerShriekForgetComparison :
     IsIso S.moduleLowerShriekForgetComparison
 ```
 
-**`Stacks.Sites.FibredCategory.MorphismSituation.derivedAbelianLowerShriekAdjunctionUnconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/MorphismDerivedAbelianLowerShriek.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/MorphismDerivedAbelianLowerShriek.lean#L50). The attribute's comment: “part (3), abelian sheaves: the adjunction Lg_!^Ab ⊣ g^-1”.
+**`Stacks.Sites.FibredCategory.MorphismSituation.derivedAbelianLowerShriekAdjunctionUnconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/MorphismDerivedAbelianLowerShriek.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/MorphismDerivedAbelianLowerShriek.lean#L50). The attribute's comment: “part (3), abelian sheaves: the adjunction Lg\_!^Ab ⊣ g^-1”.
 
 > **Stacks 08PC part (3) for abelian sheaves, the adjunction.** The unbounded left derived
 > lower-shriek functor `Lg_!^{Ab} : D(Ab(C')) ⥤ D(Ab(C))` is left adjoint to `g^{-1}` on the
@@ -261,7 +261,7 @@ def derivedModuleLowerShriekAdjunctionUnconditional :
 
 Declarations registered for the tag:
 
-- [`Stacks.Sites.FibredCategory.MorphismSituation.hasPointwiseLeftDerivedFunctor_abelianLowerShriekOnHomotopy`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/MorphismLowerShriekAcyclic.lean#L309), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/MorphismDerivedAbelianLowerShriek.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/MorphismDerivedAbelianLowerShriek.lean#L42) (StacksFrontier): “part (3), abelian sheaves: existence of Lg_!^Ab”.
+- [`Stacks.Sites.FibredCategory.MorphismSituation.hasPointwiseLeftDerivedFunctor_abelianLowerShriekOnHomotopy`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/MorphismLowerShriekAcyclic.lean#L309), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/MorphismDerivedAbelianLowerShriek.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/MorphismDerivedAbelianLowerShriek.lean#L42) (StacksFrontier): “part (3), abelian sheaves: existence of Lg\_!^Ab”.
 
 ## Tag 09CY, a remark
 
@@ -369,7 +369,7 @@ instance isIso_moduleLowerShriekForgetComparison :
 
 [Tag 08PD](https://stacks.math.columbia.edu/tag/08PD) in the Stacks Project.
 
-**`Stacks.Sites.FibredCategory.MorphismSituation.derivedAbelianLowerShriekCompIso'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/CanonicalDerivedLowerShriekMap.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/CanonicalDerivedLowerShriekMap.lean#L92). The attribute's comment: “the identification Lπ'_! = Lπ_! ∘ Lg_!”.
+**`Stacks.Sites.FibredCategory.MorphismSituation.derivedAbelianLowerShriekCompIso'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/CanonicalDerivedLowerShriekMap.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/CanonicalDerivedLowerShriekMap.lean#L92). The attribute's comment: “the identification Lπ'\_! = Lπ\_! ∘ Lg\_!”.
 
 > **Stacks 08PD, the identification `Lπ'_! = Lπ_! ∘ Lg_!`**, for every situation of
 > Stacks 08PA. The three derived lower-shriek functors are left adjoint to the three derived
@@ -403,7 +403,7 @@ def canonicalDerivedLowerShriekMap'
         (Sheaf S.totalTopology AddCommGrpCat.{max w u₀ u₁ u₂ v₀ v₁ v₂}) 0).obj F)
 ```
 
-**`Stacks.Sites.FibredCategory.MorphismSituation.derivedAbelianLowerShriekCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekFunctoriality.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekFunctoriality.lean#L476). The attribute's comment: “the identification Lπ'_! = Lπ_! ∘ Lg_!”.
+**`Stacks.Sites.FibredCategory.MorphismSituation.derivedAbelianLowerShriekCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekFunctoriality.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekFunctoriality.lean#L476). The attribute's comment: “the identification Lπ'\_! = Lπ\_! ∘ Lg\_!”.
 
 > **The identification `Lπ'_! = Lπ_! ∘ Lg_!`**, the isomorphism of left adjoints induced by
 > `derivedAbelianInverseImageCompIso`.

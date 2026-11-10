@@ -14,7 +14,7 @@ Section 82.28 of the Stacks Project, [Tag 0ERX](https://stacks.math.columbia.edu
 
 [Tag 0ERY](https://stacks.math.columbia.edu/tag/0ERY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsUnique_chernCap_and_bivariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassBivariant.lean, line 1200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassBivariant.lean#L1200). The attribute's comment: “existence and uniqueness of c_i(E) ∩ - : CH_k(X') → CH_{k-i}(X'), i = 0..r, with c_0 = id and sum_i (-1)^i c_1(O_{P'}(1))^i ∩ π'^*(c_{r-i}(E) ∩ α) = 0 on P' = P ×_X X', for every morphism X' → X of good spaces over B, E finite locally free of rank r on a good X/B; and the maps c_i(E) ∩ - form a bivariant class of degree i (BivariantClassCanonical, over chowGroupCanonical)”.
+**`AlgebraicGeometry.Space.existsUnique_chernCap_and_bivariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassBivariant.lean, line 1200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassBivariant.lean#L1200). The attribute's comment: “existence and uniqueness of c\_i(E) ∩ - : CH\_k(X') → CH\_\{k-i}(X'), i = 0..r, with c\_0 = id and sum\_i (-1)^i c\_1(O\_\{P'}(1))^i ∩ π'^*(c\_\{r-i}(E) ∩ α) = 0 on P' = P ×\_X X', for every morphism X' → X of good spaces over B, E finite locally free of rank r on a good X/B; and the maps c\_i(E) ∩ - form a bivariant class of degree i (BivariantClassCanonical, over chowGroupCanonical)”.
 
 > **Stacks 0ERY.** In Situation 0EDT let `X/B` be good, `ℰ` a finite locally free `𝒪_X`-module
 > of rank `r` and `(π : P → X, 𝒪_P(1))` its projective space bundle. For every morphism
@@ -58,7 +58,7 @@ theorem existsUnique_chernCap_and_bivariant :
 
 [Tag 0ERZ](https://stacks.math.columbia.edu/tag/0ERZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.chernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassBivariant.lean, line 1151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassBivariant.lean#L1151). The attribute's comment: “the i-th Chern class c_i(E) ∈ A^i(X), i = 0, ..., r, the bivariant class of degree i of Lemma 0ERY, for E finite locally free of rank r on a good X/B; A^i(X) = A^i(X → X) over the Chow groups chowGroupCanonical”.
+**`AlgebraicGeometry.Space.chernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassBivariant.lean, line 1151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassBivariant.lean#L1151). The attribute's comment: “the i-th Chern class c\_i(E) ∈ A^i(X), i = 0, ..., r, the bivariant class of degree i of Lemma 0ERY, for E finite locally free of rank r on a good X/B; A^i(X) = A^i(X → X) over the Chow groups chowGroupCanonical”.
 
 > **Stacks 0ERZ: the `j`-th Chern class `c_j(ℰ) ∈ A^j(X)`** of a finite locally free module `ℰ`
 > of rank `r` on a good algebraic space `X/B`, `j = 0, …, r`: the bivariant class of degree `j` of
@@ -73,7 +73,7 @@ def chernClass (j : Fin (r + 1)) :
     chowCohomologyComponentCanonical.{u + 1} D sX hX ((j : ℕ) : ℤ)
 ```
 
-**`AlgebraicGeometry.Space.totalChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassBivariant.lean, line 1174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassBivariant.lean#L1174). The attribute's comment: “the total Chern class c(E) = c_0(E) + c_1(E) + ... + c_r(E), the formal sum of the Chern classes as a nonhomogeneous class in A^*(X) = ⊕_p A^p(X)”.
+**`AlgebraicGeometry.Space.totalChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassBivariant.lean, line 1174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassBivariant.lean#L1174). The attribute's comment: “the total Chern class c(E) = c\_0(E) + c\_1(E) + ... + c\_r(E), the formal sum of the Chern classes as a nonhomogeneous class in A^*(X) = ⊕\_p A^p(X)”.
 
 > **Stacks 0ERZ: the total Chern class** `c(ℰ) = c₀(ℰ) + c₁(ℰ) + … + c_r(ℰ)`, the formal sum of
 > the Chern classes of `ℰ` (`AlgebraicGeometry.Space.chernClass`), a nonhomogeneous class in the
@@ -87,7 +87,7 @@ def totalChernClass : chowCohomologyCanonical.{u + 1} D sX hX
 
 [Tag 0ES0](https://stacks.math.columbia.edu/tag/0ES0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.chernCap_one_eq_firstChernBivariantClass_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernClassBivariantComparison.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernClassBivariantComparison.lean#L83). The attribute's comment: “c_1(L) ∈ A^1(X) of Definition 0ERZ (chernCap 1 on every good Y' → X) equals the bivariant class c_1(f^*L) ∩ - of Lemma 0ERM, for X/B good and L invertible”.
+**`AlgebraicGeometry.Space.chernCap_one_eq_firstChernBivariantClass_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernClassBivariantComparison.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernClassBivariantComparison.lean#L83). The attribute's comment: “c\_1(L) ∈ A^1(X) of Definition 0ERZ (chernCap 1 on every good Y' → X) equals the bivariant class c\_1(f^*L) ∩ - of Lemma 0ERM, for X/B good and L invertible”.
 
 > **Stacks 0ES0.** In Situation 0EDT let `X/B` be good and let `ℒ` be an invertible
 > `𝒪_X`-module. Then the first Chern class `c₁(ℒ)` of Definition 0ERZ equals the bivariant class of
@@ -123,7 +123,7 @@ theorem chernCap_one_eq_firstChernBivariantClass_cap
 
 [Tag 0ES1](https://stacks.math.columbia.edu/tag/0ES1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ChowCohomologyClass.chernCap_commute_capChowHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassCommutation.lean, line 462](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassCommutation.lean#L462). The attribute's comment: “the main assertion: for every good test space g : X' → X, every finite locally free E' of rank r on X' (in particular E' = g^*E) and every j, the cap operation of c ∈ A^p(X) on CH_*(X') commutes with c_j(E') ∩ -; this is c ∘ c_j(E) = c_j(E) ∘ c in A^*(X). The source's c_j(L) is a typo for c_j(E)”.
+**`AlgebraicGeometry.Space.ChowCohomologyClass.chernCap_commute_capChowHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassCommutation.lean, line 462](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassCommutation.lean#L462). The attribute's comment: “the main assertion: for every good test space g : X' → X, every finite locally free E' of rank r on X' (in particular E' = g^*E) and every j, the cap operation of c ∈ A^p(X) on CH\_*(X') commutes with c\_j(E') ∩ -; this is c ∘ c\_j(E) = c\_j(E) ∘ c in A^*(X). The source's c\_j(L) is a typo for c\_j(E)”.
 
 > **Stacks 0ES1.** In Situation 0EDT let `X/B` be good and let `c ∈ A^p(X)` (Stacks 0ERK,
 > `AlgebraicGeometry.Space.ChowCohomologyClass`). Then `c` commutes with the Chern classes of
@@ -145,7 +145,7 @@ theorem chernCap_commute_capChowHomology {Y : D.Ambient} (g : Y ⟶ X) (hY : D.I
     Commute (chernCap.{u, u + 1} E r hE j) (c.capChowHomology g hY)
 ```
 
-**`AlgebraicGeometry.Space.chernCap_chernCap_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassCommutation.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassCommutation.lean#L523). The attribute's comment: “in particular: c_i(E) ∩ c_j(F) ∩ α = c_j(F) ∩ c_i(E) ∩ α for every α ∈ CH_k(X), as an identity in CH_*(X) = ⊕_k CH_k(X) (hence of the components in CH_{k-i-j}(X))”.
+**`AlgebraicGeometry.Space.chernCap_chernCap_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassCommutation.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassCommutation.lean#L523). The attribute's comment: “in particular: c\_i(E) ∩ c\_j(F) ∩ α = c\_j(F) ∩ c\_i(E) ∩ α for every α ∈ CH\_k(X), as an identity in CH\_*(X) = ⊕\_k CH\_k(X) (hence of the components in CH\_\{k-i-j}(X))”.
 
 > **Stacks 0ES1, in particular.** In Situation 0EDT let `X/B` be good and let `ℰ`, `ℱ` be
 > finite locally free `𝒪_X`-modules of ranks `r` and `s`. Then
@@ -174,7 +174,7 @@ theorem chernCap_chernCap_comm (hX : D.IsGood sX)
 
 [Tag 0ES2](https://stacks.math.columbia.edu/tag/0ES2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.chernClassOfFiniteLocallyFree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassNonConstantRank.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassNonConstantRank.lean#L280). The attribute's comment: “the definition: c_i(E) ∈ A^i(X) for E finite locally free of non-constant rank, the bivariant class preserving CH_*(X') = ∏_r CH_*(X'_r) and acting by c_i(E|_{X_r}) ∩ - on the factors”.
+**`AlgebraicGeometry.Space.chernClassOfFiniteLocallyFree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassNonConstantRank.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassNonConstantRank.lean#L280). The attribute's comment: “the definition: c\_i(E) ∈ A^i(X) for E finite locally free of non-constant rank, the bivariant class preserving CH\_*(X') = ∏\_r CH\_*(X'\_r) and acting by c\_i(E|\_\{X\_r}) ∩ - on the factors”.
 
 > **Stacks 0ES2: the `i`-th Chern class `c_i(ℰ) ∈ A^i(X)` of a finite locally free module `ℰ`
 > of possibly non-constant rank** on a good algebraic space `X/B`: the bivariant class of degree `i`
@@ -190,7 +190,7 @@ def chernClassOfFiniteLocallyFree (i : ℕ) :
     chowCohomologyComponentCanonical.{u + 1} D sX hX (i : ℤ)
 ```
 
-**`AlgebraicGeometry.Space.rankDecomposition_chowGroup_chernClassOfFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassNonConstantRank.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassNonConstantRank.lean#L322). The attribute's comment: “the whole remark: X = ∐_r X_r by the rank of E (open and closed), its pullback to every morphism X' → X of good spaces over B, CH_k(X') = ∏_r CH_k(X'_r) on Chow groups, and c_i(E) ∈ A^i(X) as the unique bivariant class preserving these decompositions and acting by c_i(E|_{X_r}) ∩ - on the factors”.
+**`AlgebraicGeometry.Space.rankDecomposition_chowGroup_chernClassOfFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassNonConstantRank.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassNonConstantRank.lean#L322). The attribute's comment: “the whole remark: X = ∐\_r X\_r by the rank of E (open and closed), its pullback to every morphism X' → X of good spaces over B, CH\_k(X') = ∏\_r CH\_k(X'\_r) on Chow groups, and c\_i(E) ∈ A^i(X) as the unique bivariant class preserving these decompositions and acting by c\_i(E|\_\{X\_r}) ∩ - on the factors”.
 
 > **Stacks 0ES2.** In Situation 0EDT let `X/B` be good and let `ℰ` be a finite locally free
 > `𝒪_X`-module, of possibly non-constant rank.
@@ -254,7 +254,7 @@ theorem isClopenSubspaceDecomposition_preimage {sX : X ⟶ D.space} (f : X' ⟶ 
     IsClopenSubspaceDecomposition D sX' fun i => ((V i).preimage f).ι
 ```
 
-**`AlgebraicGeometry.Space.cycleGroupDecompositionEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ClopenDecomposition.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ClopenDecomposition.lean#L398). The attribute's comment: “the clause CH_*(X') = ∏ CH_*(X'_r), at the level of cycles”.
+**`AlgebraicGeometry.Space.cycleGroupDecompositionEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ClopenDecomposition.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ClopenDecomposition.lean#L398). The attribute's comment: “the clause CH\_*(X') = ∏ CH\_*(X'\_r), at the level of cycles”.
 
 > Along a decomposition `X = X_0 ⊔ X_1 ⊔ X_2 ⊔ …` of a good algebraic space over the base into
 > good open and closed subspaces, the groups of `k`-cycles form a direct product

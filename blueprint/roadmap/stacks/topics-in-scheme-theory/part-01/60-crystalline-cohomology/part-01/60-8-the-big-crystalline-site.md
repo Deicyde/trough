@@ -495,7 +495,7 @@ noncomputable def zariskiStructureTriangleRinged :
       (zariskiOverRingedMorphism (sourceToBase S))
 ```
 
-**`Crystalline.GlobalCrystallineSituation.closedFiberStructureTriangleRinged`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/BigSite/RingedStructureMorphism.lean, line 889](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/BigSite/RingedStructureMorphism.lean#L889). The attribute's comment: “the commutativity of the diagram of ringed topoi: the two routes from (X/S)_CRIS to the big Zariski topos of S agree”.
+**`Crystalline.GlobalCrystallineSituation.closedFiberStructureTriangleRinged`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/BigSite/RingedStructureMorphism.lean, line 889](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/BigSite/RingedStructureMorphism.lean#L889). The attribute's comment: “the commutativity of the diagram of ringed topoi: the two routes from (X/S)\_CRIS to the big Zariski topos of S agree”.
 
 > **Stacks Project, Tag 07IE.**  The diagram of *ringed* topoi commutes: the structure
 > morphism of the big crystalline site read along the upper route -- `f_CRIS`, then `U_{S₀/S}`,

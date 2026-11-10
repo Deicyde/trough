@@ -14,7 +14,7 @@ Section 47.2 of the Stacks Project, [Tag 08XI](https://stacks.math.columbia.edu/
 
 [Tag 08XJ](https://stacks.math.columbia.edu/tag/08XJ) in the Stacks Project.
 
-**`Module.IsEssentialEpi`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Essential.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Essential.lean#L71). The attribute's comment: “essential_surjection”.
+**`Module.IsEssentialEpi`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Essential.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Essential.lean#L71). The attribute's comment: “essential\_surjection”.
 
 > A morphism is an essential epimorphism if it is an epimorphism and the direct image of
 > every proper subobject of its source is proper.
@@ -23,7 +23,7 @@ Section 47.2 of the Stacks Project, [Tag 08XI](https://stacks.math.columbia.edu/
 abbrev IsEssentialEpi {C : Type u} [Category.{v} C] [HasImages C] {X Y : C} (f : X ⟶ Y) : Prop
 ```
 
-**`Module.IsEssentialMono`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Essential.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Essential.lean#L77). The attribute's comment: “essential_injection”.
+**`Module.IsEssentialMono`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Essential.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Essential.lean#L77). The attribute's comment: “essential\_injection”.
 
 > A monomorphism is essential if every nonzero subobject of its codomain has nonzero
 > intersection with its image.
@@ -37,7 +37,7 @@ abbrev IsEssentialMono {𝒜 : Type u} [Category.{v} 𝒜] [HasZeroObject 𝒜] 
 
 [Tag 08XK](https://stacks.math.columbia.edu/tag/08XK) in the Stacks Project.
 
-**`Module.isEssentialEpi_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Essential.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Essential.lean#L112). The attribute's comment: “essential_surjection_comp”.
+**`Module.isEssentialEpi_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Essential.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Essential.lean#L112). The attribute's comment: “essential\_surjection\_comp”.
 
 > The composite of two essential epimorphisms is an essential epimorphism.
 
@@ -46,7 +46,7 @@ theorem isEssentialEpi_comp [HasImages 𝒜] {A B C : 𝒜} {f : A ⟶ B} {g : B
     (hf : IsEssentialEpi f) (hg : IsEssentialEpi g) : IsEssentialEpi (f ≫ g)
 ```
 
-**`Module.isEssentialMono_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Essential.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Essential.lean#L137). The attribute's comment: “essential_extension_trans”.
+**`Module.isEssentialMono_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Essential.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Essential.lean#L137). The attribute's comment: “essential\_extension\_trans”.
 
 > The composite of two essential monomorphisms is essential.
 
@@ -55,7 +55,7 @@ theorem isEssentialMono_comp {A B C : 𝒜} (i : A ⟶ B) (j : B ⟶ C) [Mono i]
     (hi : IsEssentialMono i) (hj : IsEssentialMono j) : IsEssentialMono (i ≫ j)
 ```
 
-**`Module.isEssentialMono_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Essential.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Essential.lean#L155). The attribute's comment: “essential_extension_intersection”.
+**`Module.isEssentialMono_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Essential.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Essential.lean#L155). The attribute's comment: “essential\_extension\_intersection”.
 
 > The intersection of an essential subobject with another subobject is essential in that
 > subobject.
@@ -65,7 +65,7 @@ theorem isEssentialMono_pullback {B : 𝒜} (A C : Subobject B) (hA : IsEssentia
     IsEssentialMono ((Subobject.pullback C.arrow).obj A).arrow
 ```
 
-**`Module.essentialEpi_epiDesc_cokernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Essential.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Essential.lean#L258). The attribute's comment: “essential_surjection_quotient”.
+**`Module.essentialEpi_epiDesc_cokernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Essential.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Essential.lean#L258). The attribute's comment: “essential\_surjection\_quotient”.
 
 > The quotient of an essential epimorphism by the image of the kernel of an epimorphism
 > with the same source remains an essential epimorphism.

@@ -34,7 +34,7 @@ abbrev IsDecentSpace : Prop
 abbrev IsReasonableSpace : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsVeryReasonableSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean#L131). The attribute's comment: “very_reasonable”.
+**`AlgebraicGeometry.Space.IsVeryReasonableSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean#L131). The attribute's comment: “very\_reasonable”.
 
 > **Stacks 03I8, very reasonable.** An algebraic space over `S` is *very reasonable* when
 > it satisfies the equivalent conditions of Stacks 03IH, taken here in the form of condition

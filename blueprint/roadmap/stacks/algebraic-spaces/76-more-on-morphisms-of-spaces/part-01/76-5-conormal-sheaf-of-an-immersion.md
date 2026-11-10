@@ -223,7 +223,7 @@ theorem conormalModuleEtaleRestrictionCanonicalIso_comp
           (conormalModuleEtaleRestrictionCanonicalIso B S hS Z Z' g f hsq hcart hg).hom
 ```
 
-**`AlgebraicGeometry.Space.isLocallyClosedSubspace_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionEtaleRestriction.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionEtaleRestriction.lean#L168). The attribute's comment: “Z_U = U ×_X Z is a locally closed subspace of U”.
+**`AlgebraicGeometry.Space.isLocallyClosedSubspace_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionEtaleRestriction.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleImmersionEtaleRestriction.lean#L168). The attribute's comment: “Z\_U = U ×\_X Z is a locally closed subspace of U”.
 
 > **Stacks 04CO, the locally closed clause.**  The inverse image of a locally closed subspace
 > of an algebraic space along a morphism of algebraic spaces over `S` is a locally closed subspace
@@ -925,7 +925,7 @@ theorem epi_conormalMap_closedSubspaces (Y Z : ClosedSubspaces B S hS X.1)
       (conormalEtaleRestrictionSquare B S hS (subspaceInclusion B S hS X Y) Z))
 ```
 
-**`AlgebraicGeometry.Space.conormalMap_comp_conormalMap_closedSubspaces_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleClosedSubspacesComplex.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleClosedSubspacesComplex.lean#L106). The attribute's comment: “the sequence is a complex: the composite of i^*𝒞_{Y/X} ⟶ 𝒞_{Z/X} and 𝒞_{Z/X} ⟶ 𝒞_{Z/Y} is zero”.
+**`AlgebraicGeometry.Space.conormalMap_comp_conormalMap_closedSubspaces_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleClosedSubspacesComplex.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleClosedSubspacesComplex.lean#L106). The attribute's comment: “the sequence is a complex: the composite of i^*𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X} and 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} is zero”.
 
 > **The composite-is-zero clause of [Stacks Project, Tag 06BD].**  Let `Y` and `Z` be closed
 > subspaces of an algebraic space `X` with `Z` contained in `Y` through `f : Z ⟶ Y`.  The composite
@@ -958,7 +958,7 @@ theorem conormalMap_comp_conormalMap_closedSubspaces_eq_zero
         (conormalEtaleRestrictionSquare B S hS (subspaceInclusion B S hS X Y) Z) = 0
 ```
 
-**`AlgebraicGeometry.Space.conormalSequenceImmersion_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceImmersion.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceImmersion.lean#L263). The attribute's comment: “the canonical exact sequence i^*C_{Y/X} → C_{Z/X} → C_{Z/Y} → 0 for immersions Z → Y → X of algebraic spaces, with the maps of Tag 04CP: the composite is zero, the sequence is exact at C_{Z/X}, and C_{Z/X} → C_{Z/Y} is an epimorphism”.
+**`AlgebraicGeometry.Space.conormalSequenceImmersion_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceImmersion.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceImmersion.lean#L263). The attribute's comment: “the canonical exact sequence i^*C\_\{Y/X} → C\_\{Z/X} → C\_\{Z/Y} → 0 for immersions Z → Y → X of algebraic spaces, with the maps of Tag 04CP: the composite is zero, the sequence is exact at C\_\{Z/X}, and C\_\{Z/X} → C\_\{Z/Y} is an epimorphism”.
 
 > **[Stacks Project, Tag 06BD].**  Let `i : Z ⟶ Y` and `j : Y ⟶ X` be immersions of algebraic
 > spaces over `S`.  The canonical sequence of `𝒪_Z`-modules

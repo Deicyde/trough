@@ -54,7 +54,7 @@ theorem existsUnique_lift_toLocalizationSheaf (S : MultiplicativeSubpresheaf X)
 
 [Tag 0EMD](https://stacks.math.columbia.edu/tag/0EMD) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.existsUnique_lift_localizationModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean#L443). The attribute's comment: “localization_universal_property”. References: EGA 0 (1.2.4), “more general”.
+**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.existsUnique_lift_localizationModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean#L443). The attribute's comment: “localization\_universal\_property”. References: EGA 0 (1.2.4), “more general”.
 
 > **The universal property of `(S⁻¹F)^#`.**  A map of sheaves of `O_X`-modules `φ : F ⟶ G`
 > such that each prescribed local section of `S` acts invertibly on `G` factors uniquely through
@@ -69,7 +69,7 @@ theorem existsUnique_lift_localizationModuleSheaf
     ∃! ψ : S.localizationModuleSheaf F ⟶ G, S.toLocalizationModuleSheaf F ≫ ψ = φ
 ```
 
-**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.localizationModuleSheafIsoTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean#L478). The attribute's comment: “localization_tensor_iso”.
+**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.localizationModuleSheafIsoTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean#L478). The attribute's comment: “localization\_tensor\_iso”.
 
 > **`(S⁻¹F)^# = (S⁻¹O_X)^# ⊗_{O_X} F` as sheaves of `(S⁻¹O_X)^#`-modules.**  The
 > sheafification of the sectionwise localization of `F` is the extension of scalars of `F` along
@@ -82,7 +82,7 @@ def localizationModuleSheafIsoTensor
       (SheafOfModules.pullback (S.localizationRingSheafHom σ)).obj F
 ```
 
-**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.unit_comp_localizationModuleSheafIsoTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean#L489). The attribute's comment: “localization_tensor_iso”.
+**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.unit_comp_localizationModuleSheafIsoTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean#L489). The attribute's comment: “localization\_tensor\_iso”.
 
 > The identification `(S⁻¹F)^# = (S⁻¹O_X)^# ⊗_{O_X} F` is compatible with the canonical maps
 > out of `F`: the unit of the pullback--pushforward adjunction corresponds to the sectionwise

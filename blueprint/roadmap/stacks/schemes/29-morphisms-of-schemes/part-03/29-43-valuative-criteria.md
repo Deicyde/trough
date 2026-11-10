@@ -91,7 +91,7 @@ public theorem exists_hasLift_of_denseRange_not_universallyClosed_not_isSeparate
 
 [Tag 0BX6](https://stacks.math.columbia.edu/tag/0BX6) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_morphism_inducing_localHom_of_isReduced`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean#L257). The attribute's comment: “local_extension”. References: EGA I (6.5.1), “(ii), X reduced case”.
+**`AlgebraicGeometry.exists_open_morphism_inducing_localHom_of_isReduced`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean#L257). The attribute's comment: “local\_extension”. References: EGA I (6.5.1), “(ii), X reduced case”.
 
 > A compatible local homomorphism is induced by a morphism on an open neighbourhood when the
 > target is locally of finite type and the source is reduced with finitely many irreducible
@@ -118,7 +118,7 @@ lemma exists_open_morphism_inducing_localHom_of_isReduced
             (eqToHom (congrArg (fun z ↦ Y.presheaf.stalk z) hfy).symm).hom)) = phi
 ```
 
-**`AlgebraicGeometry.exists_open_morphism_inducing_localHom_of_isIntegral`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean#L282). The attribute's comment: “local_extension, Y locally of finite type and X integral”.
+**`AlgebraicGeometry.exists_open_morphism_inducing_localHom_of_isIntegral`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean#L282). The attribute's comment: “local\_extension, Y locally of finite type and X integral”.
 
 > A compatible local homomorphism is induced by a morphism on an open neighbourhood when the
 > target is locally of finite type over the base and the source is integral.
@@ -143,7 +143,7 @@ lemma exists_open_morphism_inducing_localHom_of_isIntegral
             (eqToHom (congrArg (fun z ↦ Y.presheaf.stalk z) hfy).symm).hom)) = phi
 ```
 
-**`AlgebraicGeometry.exists_open_morphism_inducing_localHom_of_isLocallyNoetherian`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean#L305). The attribute's comment: “local_extension, Y locally of finite type and X locally Noetherian”.
+**`AlgebraicGeometry.exists_open_morphism_inducing_localHom_of_isLocallyNoetherian`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtension.lean#L305). The attribute's comment: “local\_extension, Y locally of finite type and X locally Noetherian”.
 
 > A compatible local homomorphism is induced by a morphism on an open neighbourhood when the
 > target is locally of finite type over the base and the source is locally Noetherian.
@@ -168,7 +168,7 @@ lemma exists_open_morphism_inducing_localHom_of_isLocallyNoetherian
             (eqToHom (congrArg (fun z ↦ Y.presheaf.stalk z) hfy).symm).hom)) = phi
 ```
 
-**`AlgebraicGeometry.exists_open_morphism_inducing_localHom_of_locallyOfFinitePresentation`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtensionFinitePresentation.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtensionFinitePresentation.lean#L270). The attribute's comment: “local_extension”. References: EGA I (6.5.1), “(ii)”.
+**`AlgebraicGeometry.exists_open_morphism_inducing_localHom_of_locallyOfFinitePresentation`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtensionFinitePresentation.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalExtensionFinitePresentation.lean#L270). The attribute's comment: “local\_extension”. References: EGA I (6.5.1), “(ii)”.
 
 > **Stacks Project, Tag 0BX6 (local extension), finite-presentation case.** A compatible
 > local homomorphism of local rings is induced by a morphism on an open neighbourhood.
@@ -193,7 +193,7 @@ public lemma exists_open_morphism_inducing_localHom_of_locallyOfFinitePresentati
             (eqToHom (congrArg (fun z ↦ Y.presheaf.stalk z) hfy).symm).hom)) = phi
 ```
 
-**`AlgebraicGeometry.exists_open_eq_of_stalkMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalUniqueness.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalUniqueness.lean#L176). The attribute's comment: “local_uniqueness”. References: EGA I (6.5.1), “(i)”.
+**`AlgebraicGeometry.exists_open_eq_of_stalkMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalUniqueness.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/LocalUniqueness.lean#L176). The attribute's comment: “local\_uniqueness”. References: EGA I (6.5.1), “(i)”.
 
 > Two morphisms over a scheme which agree on the local ring at a point agree on some open
 > neighbourhood of that point, provided the target is locally of finite type over the base, or

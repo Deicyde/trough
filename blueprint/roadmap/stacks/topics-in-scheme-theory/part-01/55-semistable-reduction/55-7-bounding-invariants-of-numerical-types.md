@@ -42,7 +42,7 @@ public lemma multiplicity_mul_weight_le (T : NumericalType)
 
 [Tag 0C9V](https://stacks.math.columbia.edu/tag/0C9V) in the Stacks Project.
 
-**`AlgebraicGeometry.NumericalType.multiplicity_mul_abs_intersection_self_le`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/BoundingInvariants.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/BoundingInvariants.lean#L117). The attribute's comment: “bound_diagonal”.
+**`AlgebraicGeometry.NumericalType.multiplicity_mul_abs_intersection_self_le`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/BoundingInvariants.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/BoundingInvariants.lean#L117). The attribute's comment: “bound\_diagonal”.
 
 > At a non-minus-two index of a minimal numerical type of genus at least two,
 > the multiplicity times the absolute diagonal intersection is at most six times
@@ -56,7 +56,7 @@ public lemma multiplicity_mul_abs_intersection_self_le
     T.multiplicity j * |T.intersection j j| ≤ 6 * g - 6
 ```
 
-**`AlgebraicGeometry.NumericalType.card_non_minus_two_indices_le`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/BoundingInvariants.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/BoundingInvariants.lean#L182). The attribute's comment: “bound_non_minus_two_indices”.
+**`AlgebraicGeometry.NumericalType.card_non_minus_two_indices_le`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/BoundingInvariants.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/BoundingInvariants.lean#L182). The attribute's comment: “bound\_non\_minus\_two\_indices”.
 
 > A minimal numerical type with more than one component has at most twice its
 > genus minus two non-minus-two indices.
@@ -68,7 +68,7 @@ public lemma card_non_minus_two_indices_le
       2 * genus T - 2
 ```
 
-**`AlgebraicGeometry.NumericalType.multiplicity_mul_intersection_le_genus`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/BoundingInvariants.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/BoundingInvariants.lean#L212). The attribute's comment: “bound_off_diagonal”.
+**`AlgebraicGeometry.NumericalType.multiplicity_mul_intersection_le_genus`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/BoundingInvariants.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/BoundingInvariants.lean#L212). The attribute's comment: “bound\_off\_diagonal”.
 
 > The multiplicity-weighted intersection with a non-minus-two component of a
 > minimal numerical type is at most six times its genus minus six.
@@ -81,7 +81,7 @@ public lemma multiplicity_mul_intersection_le_genus
     T.multiplicity i * T.intersection i j ≤ 6 * g - 6
 ```
 
-**`AlgebraicGeometry.NumericalType.componentGenus_lt_genus`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/BoundingInvariants.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/BoundingInvariants.lean#L229). The attribute's comment: “component_genus_lt”.
+**`AlgebraicGeometry.NumericalType.componentGenus_lt_genus`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/BoundingInvariants.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/BoundingInvariants.lean#L229). The attribute's comment: “component\_genus\_lt”.
 
 > A non-minus-two component of a minimal numerical type of genus at least two
 > has genus strictly less than that of the numerical type.

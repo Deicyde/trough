@@ -326,7 +326,7 @@ public theorem bigAffineSyntomic_isSheaf_of_cartesian
     Presheaf.IsSheaf (BigAffineSyntomic.topology B S hS) M.presheaf
 ```
 
-**`AlgebraicGeometry.fullyFaithfulBigAffineAssociatedModuleQcohOf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L351). The attribute's comment: “(8) at every τ ∈ {Zariski, étale, smooth, syntomic, fppf}, uniqueness of 𝒢”.
+**`AlgebraicGeometry.fullyFaithfulBigAffineAssociatedModuleQcohOf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L351). The attribute's comment: “(8) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, uniqueness of 𝒢”.
 
 > **Stacks 0GZV, the uniqueness of `𝒢` in condition (8), at every `τ`.** The functor
 > `𝒢 ↦ 𝒢^a|_{(Aff/S)_τ}` from the quasi-coherent `𝒪_S`-modules to the `𝒪_Aff`-modules on
@@ -339,7 +339,7 @@ public noncomputable def fullyFaithfulBigAffineAssociatedModuleQcohOf (τ : Site
     (bigAffineAssociatedModuleQcohOf B S hS τ).FullyFaithful
 ```
 
-**`AlgebraicGeometry.bigAffine_iso_of_associatedModuleQcohOf_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L360). The attribute's comment: “(8) at every τ ∈ {Zariski, étale, smooth, syntomic, fppf}, uniqueness of 𝒢”.
+**`AlgebraicGeometry.bigAffine_iso_of_associatedModuleQcohOf_restriction_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L360). The attribute's comment: “(8) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, uniqueness of 𝒢”.
 
 > **Stacks 0GZV, the uniqueness of `𝒢` in condition (8) at every `τ`**, read as a uniqueness
 > statement: two quasi-coherent `𝒪_S`-modules whose associated modules have isomorphic
@@ -353,7 +353,7 @@ public theorem bigAffine_iso_of_associatedModuleQcohOf_restriction_iso (τ : Sit
     Nonempty (G₁.obj ≅ G₂.obj)
 ```
 
-**`AlgebraicGeometry.bigAffine_isRestrictionOfQuasicoherentOf_of_isRestrictedAssociatedModuleOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L411). The attribute's comment: “(8) ⇒ (7) at every τ ∈ {Zariski, étale, smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.bigAffine_isRestrictionOfQuasicoherentOf_of_isRestrictedAssociatedModuleOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L411). The attribute's comment: “(8) ⇒ (7) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}”.
 
 > **Stacks 0GZV, (8) ⇒ (7) at every `τ`.** The module on `(Sch/S)_τ` that condition (7) asks
 > for is `𝒢^a` itself, which is quasi-coherent there by Stacks 03DV (1).
@@ -366,7 +366,7 @@ public theorem bigAffine_isRestrictionOfQuasicoherentOf_of_isRestrictedAssociate
     BigAffineFppf.IsRestrictionOfQuasicoherentOf B S hS τ F
 ```
 
-**`AlgebraicGeometry.bigAffine_isRestrictionOfQuasicoherentOf_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L429). The attribute's comment: “(1) ⇒ (7) at every τ ∈ {Zariski, étale, smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.bigAffine_isRestrictionOfQuasicoherentOf_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L429). The attribute's comment: “(1) ⇒ (7) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}”.
 
 > **Stacks 0GZV, (1) ⇒ (7) at every `τ`.** A sheaf of `𝒪_Aff`-modules on `(Aff/S)_τ` all of
 > whose base-change maps `𝓕(U') ⊗_{𝒪(U')} 𝒪(U) ⟶ 𝓕(U)` are isomorphisms corresponds, under the
@@ -385,7 +385,7 @@ public theorem bigAffine_isRestrictionOfQuasicoherentOf_of_canonicalMap_isIso (�
     BigAffineFppf.IsRestrictionOfQuasicoherentOf B S hS τ F
 ```
 
-**`AlgebraicGeometry.bigAffine_isIso_canonicalMapOf_of_isRestrictionOfQuasicoherentOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L445). The attribute's comment: “(7) ⇒ (1) at every τ ∈ {Zariski, étale, smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.bigAffine_isIso_canonicalMapOf_of_isRestrictionOfQuasicoherentOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L445). The attribute's comment: “(7) ⇒ (1) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}”.
 
 > **Stacks 0GZV, (7) ⇒ (1) at every `τ`.** The restriction to `(Aff/S)_τ` of the quasi-coherent
 > module given by condition (7) is quasi-coherent, hence cartesian by Stacks 0H04.
@@ -399,7 +399,7 @@ public theorem bigAffine_isIso_canonicalMapOf_of_isRestrictionOfQuasicoherentOf 
     IsIso (Stacks.SheafOfModules.canonicalMap (bigAffineRingedSiteOf B S hS τ) F f)
 ```
 
-**`AlgebraicGeometry.bigAffine_isRestrictedAssociatedModuleOf_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L466). The attribute's comment: “(1) ⇒ (8) at every τ ∈ {Zariski, étale, smooth, syntomic, fppf}, existence and uniqueness of 𝒢”.
+**`AlgebraicGeometry.bigAffine_isRestrictedAssociatedModuleOf_of_canonicalMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L466). The attribute's comment: “(1) ⇒ (8) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, existence and uniqueness of 𝒢”.
 
 > **Stacks 0GZV, (1) ⇒ (8) at every `τ`**, with the uniqueness of `𝒢` included.
 >
@@ -419,7 +419,7 @@ public theorem bigAffine_isRestrictedAssociatedModuleOf_of_canonicalMap_isIso (�
     BigAffineFppf.IsRestrictedAssociatedModuleOf B S hS τ F
 ```
 
-**`AlgebraicGeometry.bigAffine_isRestrictedAssociatedModuleOf_of_isRestrictionOfQuasicoherentOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L487). The attribute's comment: “(7) ⇒ (8) at every τ ∈ {Zariski, étale, smooth, syntomic, fppf}, existence and uniqueness of 𝒢”.
+**`AlgebraicGeometry.bigAffine_isRestrictedAssociatedModuleOf_of_isRestrictionOfQuasicoherentOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L487). The attribute's comment: “(7) ⇒ (8) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, existence and uniqueness of 𝒢”.
 
 > **Stacks 0GZV, (7) ⇒ (8) at every `τ`**, with the uniqueness of `𝒢` included.  The route is
 > (7) ⇒ (1) ⇒ (8); in particular clause (1) of Descent, Proposition 03DX at `τ` is not used.
@@ -432,7 +432,7 @@ public theorem bigAffine_isRestrictedAssociatedModuleOf_of_isRestrictionOfQuasic
     BigAffineFppf.IsRestrictedAssociatedModuleOf B S hS τ F
 ```
 
-**`AlgebraicGeometry.bigAffine_isRestrictionOfQuasicoherentOf_iff_isRestrictedAssociatedModuleOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L499). The attribute's comment: “(7) ⇔ (8) at every τ ∈ {Zariski, étale, smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.bigAffine_isRestrictionOfQuasicoherentOf_iff_isRestrictedAssociatedModuleOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/BigAffineSiteCoarserAssociatedModule.lean#L499). The attribute's comment: “(7) ⇔ (8) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}”.
 
 > **Stacks 0GZV, conditions (7) and (8) are equivalent, at every
 > `τ ∈ {Zariski, étale, smooth, syntomic, fppf}`**, which is how the source reads them off each

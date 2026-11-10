@@ -174,7 +174,7 @@ public theorem exists_standardCovering_refinement (τ : CoveringTopology)
 
 [Tag 03YY](https://stacks.math.columbia.edu/tag/03YY) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_extension_abelianSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ChangeOfBigSites.lean, line 710](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ChangeOfBigSites.lean#L710). The attribute's comment: “extend_abelian_sheaf”.
+**`AlgebraicGeometry.exists_extension_abelianSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ChangeOfBigSites.lean, line 710](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ChangeOfBigSites.lean#L710). The attribute's comment: “extend\_abelian\_sheaf”.
 
 > **An abelian sheaf on a big site extends to any larger big site of the same topology.** For
 > nested big `τ`-sites over a scheme `S`, every abelian sheaf on the smaller localized site is the
@@ -189,7 +189,7 @@ public theorem exists_extension_abelianSheaf {τ : CoveringTopology}
       Nonempty ((abelianRestrictionOver B B' h S hS).obj F' ≅ F)
 ```
 
-**`AlgebraicGeometry.cohomologyRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/CohomologyAfterRestriction.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/CohomologyAfterRestriction.lean#L73). The attribute's comment: “cohomology_after_restriction”.
+**`AlgebraicGeometry.cohomologyRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/CohomologyAfterRestriction.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/CohomologyAfterRestriction.lean#L73). The attribute's comment: “cohomology\_after\_restriction”.
 
 > **Restricting an abelian sheaf from a larger big site to a smaller one preserves cohomology
 > over every object of the smaller site, naturally in the sheaf.** For nested big `τ`-sites

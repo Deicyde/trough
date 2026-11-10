@@ -14,7 +14,7 @@ Section 20.7 of the Stacks Project, [Tag 01E0](https://stacks.math.columbia.edu/
 
 [Tag 01E1](https://stacks.math.columbia.edu/tag/01E1) in the Stacks Project.
 
-**`AlgebraicGeometry.cohomologyOverNatIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ColimitsHigherDirect/CohomologyOfOpen.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/ColimitsHigherDirect/CohomologyOfOpen.lean#L133). The attribute's comment: “cohomology_of_open”.
+**`AlgebraicGeometry.cohomologyOverNatIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ColimitsHigherDirect/CohomologyOfOpen.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/ColimitsHigherDirect/CohomologyOfOpen.lean#L133). The attribute's comment: “cohomology\_of\_open”.
 
 > The cohomology of a sheaf of modules over an open is naturally isomorphic
 > to the cohomology of its restriction to that open subspace.
@@ -30,7 +30,7 @@ public noncomputable def cohomologyOverNatIsoRestriction (X : SheafedSpace RingC
             AddCommGrpCat.{u}).rightDerived p)
 ```
 
-**`AlgebraicGeometry.cohomologyOverModuleNatIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ColimitsHigherDirect/CohomologyOfOpen.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/ColimitsHigherDirect/CohomologyOfOpen.lean#L172). The attribute's comment: “cohomology_of_open, as modules over the sections on the open”.
+**`AlgebraicGeometry.cohomologyOverModuleNatIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/ColimitsHigherDirect/CohomologyOfOpen.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/ColimitsHigherDirect/CohomologyOfOpen.lean#L172). The attribute's comment: “cohomology\_of\_open, as modules over the sections on the open”.
 
 > The cohomology of a sheaf of modules over an open is naturally isomorphic, as a module over
 > the sections of `𝒪_X` on that open, to the cohomology of its restriction to the open subspace.
@@ -57,7 +57,7 @@ instance restrictFunctor_preservesInjectiveObjects :
     (Scheme.Modules.restrictFunctor U.ι).PreservesInjectiveObjects
 ```
 
-**`Stacks.Cohomology.HigherDirectImage.restMod_preservesInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/RestrictionPreservesInjectives.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/RestrictionPreservesInjectives.lean#L49). The attribute's comment: “restriction_preserves_injectives”.
+**`Stacks.Cohomology.HigherDirectImage.restMod_preservesInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/RestrictionPreservesInjectives.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HigherDirectImage/RestrictionPreservesInjectives.lean#L49). The attribute's comment: “restriction\_preserves\_injectives”.
 
 > The restriction of an injective sheaf of modules to an open subspace is injective.
 
@@ -99,8 +99,8 @@ Declarations registered for the tag:
 > `exists_cover_homologyMap_eq_zero`
 > to `ξ'` (using `n > 0`) to get a cover `U = ⨆ i, cover i`, `hle i : cover i ≤ U`, with
 > `homologyMap (r_{cover i}) n ξ' = 0` for each `i`. Then, for each `i`,
-> `Hrestrict R (hle i) n F ξ = e_{cover i}.inv (homologyMap (r_{cover i}) n (e_U.hom ξ))
->   = e_{cover i}.inv (homologyMap (r_{cover i}) n ξ') = e_{cover i}.inv 0 = 0`,
+> `Hrestrict R (hle i) n F ξ = e\_\{cover i}.inv (homologyMap (r\_\{cover i}) n (e\_U.hom ξ))
+>   = e\_\{cover i}.inv (homologyMap (r\_\{cover i}) n ξ') = e\_\{cover i}.inv 0 = 0`,
 > using that `e_{cover i}.inv` is an additive group hom (sends `0` to `0`). This is the required
 > cover.
 

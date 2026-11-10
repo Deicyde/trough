@@ -70,7 +70,7 @@ theorem etaleDescentFunctor_fullyFaithful_of_submersive_baseChange (f : X ⟶ S)
 
 [Tag 0BTL](https://stacks.math.columbia.edu/tag/0BTL) in the Stacks Project.
 
-**`AlgebraicGeometry.etaleDescentFunctor_fullyFaithful_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean, line 508](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean#L508). The attribute's comment: “universally_closed”. References: SGA 1 IX (6.9), “fully faithful half”.
+**`AlgebraicGeometry.etaleDescentFunctor_fullyFaithful_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean, line 508](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean#L508). The attribute's comment: “universally\_closed”. References: SGA 1 IX (6.9), “fully faithful half”.
 
 > Étale descent along a
 > surjective universally closed morphism is fully faithful.
@@ -80,7 +80,7 @@ theorem etaleDescentFunctor_fullyFaithful_of_universallyClosed (f : X ⟶ S) [Su
     [UniversallyClosed f] : Nonempty (etaleDescentFunctor f).FullyFaithful
 ```
 
-**`AlgebraicGeometry.etaleDescentFunctor_fullyFaithful_of_universallyOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean#L518). The attribute's comment: “universally_open”.
+**`AlgebraicGeometry.etaleDescentFunctor_fullyFaithful_of_universallyOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean#L518). The attribute's comment: “universally\_open”.
 
 > Étale descent along a
 > surjective universally open morphism is fully faithful.
@@ -90,7 +90,7 @@ theorem etaleDescentFunctor_fullyFaithful_of_universallyOpen (f : X ⟶ S) [Surj
     [UniversallyOpen f] : Nonempty (etaleDescentFunctor f).FullyFaithful
 ```
 
-**`AlgebraicGeometry.etaleDescentFunctor_fullyFaithful_of_quasiCompact_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean#L528). The attribute's comment: “quasi_compact_flat”.
+**`AlgebraicGeometry.etaleDescentFunctor_fullyFaithful_of_quasiCompact_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/DescentFullyFaithful.lean#L528). The attribute's comment: “quasi\_compact\_flat”.
 
 > Étale descent along a
 > surjective quasi-compact flat morphism is fully faithful.

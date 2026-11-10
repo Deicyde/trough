@@ -14,7 +14,7 @@ Section 72.18 of the Stacks Project, [Tag 0DN3](https://stacks.math.columbia.edu
 
 [Tag 0DN4](https://stacks.math.columbia.edu/tag/0DN4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isTwistedEulerNumericalPolynomial_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerNumericalPolynomialProper.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerNumericalPolynomialProper.lean#L76). The attribute's comment: “for every closed subspace Z with F = i_*G, G coherent; the scheme-theoretic support is the smallest such Z (Stacks 07U0), and the bound at it is hasTwistedEulerPolynomialOfDegreeLE_coherentSchemeTheoreticSupport”. References: SGA 6 X (2.3.1), “more general”.
+**`AlgebraicGeometry.Space.isTwistedEulerNumericalPolynomial_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerNumericalPolynomialProper.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedEulerNumericalPolynomialProper.lean#L76). The attribute's comment: “for every closed subspace Z with F = i\_*G, G coherent; the scheme-theoretic support is the smallest such Z (Stacks 07U0), and the bound at it is hasTwistedEulerPolynomialOfDegreeLE\_coherentSchemeTheoreticSupport”. References: SGA 6 X (2.3.1), “more general”.
 
 > **Stacks 0DN4.**  Let `k` be a field, `X` a proper algebraic space over `k`, `F` a coherent
 > `𝒪_X`-module and `L₁, …, L_r` invertible `𝒪_X`-modules.  For every closed subspace `i : Z ⟶ X`
@@ -188,7 +188,7 @@ def intersectionNumber (d : ℕ) (f : X.1 ⟶ yoneda.obj (baseObject k B hk))
     ℤ
 ```
 
-**`AlgebraicGeometry.Space.intersectionNumber_eq_coeff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean, line 820](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean#L820). The attribute's comment: “the coefficient of n_1 ⋯ n_d”. References: SGA 6 X (4.4), “defn, algebraic spaces”.
+**`AlgebraicGeometry.Space.intersectionNumber_eq_coeff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean, line 820](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NumericalIntersection.lean#L820). The attribute's comment: “the coefficient of n\_1 ⋯ n\_d”. References: SGA 6 X (4.4), “defn, algebraic spaces”.
 
 > **Stacks 0EDF, the coefficient of `n₁ ⋯ n_d`.**  If a rational polynomial `P` in `d`
 > variables of total degree at most `d` takes the Euler characteristics

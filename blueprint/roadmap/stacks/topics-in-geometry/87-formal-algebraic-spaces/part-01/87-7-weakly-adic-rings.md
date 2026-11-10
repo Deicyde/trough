@@ -38,7 +38,7 @@ public class IsWeaklyAdic (A : Type*) [CommRing A] [TopologicalSpace A] [IsTopol
 
 [Tag 0GXF](https://stacks.math.columbia.edu/tag/0GXF) in the Stacks Project.
 
-**`TopologicalRing.weaklyPreAdic_tfae`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean#L118). The attribute's comment: “weakly_pre_adic_characterizations”.
+**`TopologicalRing.weaklyPreAdic_tfae`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean#L118). The attribute's comment: “weakly\_pre\_adic\_characterizations”.
 
 > The four equivalent characterizations of a weakly pre-adic linearly topologized ring.
 
@@ -56,7 +56,7 @@ public lemma weaklyPreAdic_tfae (A : Type u) [CommRing A] [TopologicalSpace A]
             ∀ n : ℕ, 1 ≤ n → IsOpen ((I ^ n).topologicalClosure : Set A)) ]
 ```
 
-**`TopologicalRing.isLinearTopology_completion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean#L284). The attribute's comment: “completion_weakly_adic”.
+**`TopologicalRing.isLinearTopology_completion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean#L284). The attribute's comment: “completion\_weakly\_adic”.
 
 > Completion preserves the linear topology of a linearly topologized ring.
 
@@ -68,7 +68,7 @@ public instance isLinearTopology_completion (A : Type*) [CommRing A] [Topologica
     IsLinearTopology (UniformSpace.Completion A) (UniformSpace.Completion A)
 ```
 
-**`TopologicalRing.isWeaklyAdic_completion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean#L295). The attribute's comment: “completion_weakly_adic”.
+**`TopologicalRing.isWeaklyAdic_completion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean#L295). The attribute's comment: “completion\_weakly\_adic”.
 
 > The completion of a weakly pre-adic linearly topologized ring is weakly adic.
 
@@ -80,7 +80,7 @@ public instance isWeaklyAdic_completion (A : Type*) [CommRing A] [TopologicalSpa
     TopologicalRing.IsWeaklyAdic (UniformSpace.Completion A)
 ```
 
-**`TopologicalRing.isAdmissible_of_isWeaklyAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean#L354). The attribute's comment: “weakly_adic_admissible”.
+**`TopologicalRing.isAdmissible_of_isWeaklyAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean#L354). The attribute's comment: “weakly\_adic\_admissible”.
 
 > A weakly adic linearly topologized ring is admissible.
 
@@ -90,7 +90,7 @@ public theorem isAdmissible_of_isWeaklyAdic (A : Type*) [CommRing A]
     [TopologicalRing.IsWeaklyAdic A] : TopologicalRing.IsAdmissible A
 ```
 
-**`TopologicalRing.exists_countable_basis_open_ideals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean#L371). The attribute's comment: “weakly_adic_countable_basis”.
+**`TopologicalRing.exists_countable_basis_open_ideals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdic.lean#L371). The attribute's comment: “weakly\_adic\_countable\_basis”.
 
 > A weakly adic linearly topologized ring has a countable fundamental system of open
 > ideals.

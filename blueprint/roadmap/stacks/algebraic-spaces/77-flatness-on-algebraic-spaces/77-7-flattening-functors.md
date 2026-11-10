@@ -14,7 +14,7 @@ Section 77.7 of the Stacks Project, [Tag 083E](https://stacks.math.columbia.edu/
 
 [Tag 083F](https://stacks.math.columbia.edu/tag/083F) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.isoFunctorSmallEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociSmallEtale.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociSmallEtale.lean#L126). The attribute's comment: “the functor F_iso of Equation 77.7.1.1”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.isoFunctorSmallEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociSmallEtale.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociSmallEtale.lean#L126). The attribute's comment: “the functor F\_iso of Equation 77.7.1.1”.
 
 > **Stacks 083F, Equation 77.7.1.1.**  The functor `F_iso` of a map `u : ℱ ⟶ 𝒢` of
 > quasi-coherent `𝒪_X`-modules: it sends a scheme `T` over `Y` to a one-element set if the base
@@ -27,7 +27,7 @@ Section 77.7 of the Stacks Project, [Tag 083E](https://stacks.math.columbia.edu/
 abbrev isoFunctorSmallEtale : (D.SchemesOver)ᵒᵖ ⥤ Type u
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.surjFunctorSmallEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociSmallEtale.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociSmallEtale.lean#L138). The attribute's comment: “the variant F_surj”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.surjFunctorSmallEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociSmallEtale.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociSmallEtale.lean#L138). The attribute's comment: “the variant F\_surj”.
 
 > **Stacks 083F, the variant `F_surj`.**  The functor sending a scheme `T` over `Y` to a
 > one-element set if the base change `u_T` is surjective, and to the empty set otherwise.
@@ -40,7 +40,7 @@ abbrev isoFunctorSmallEtale : (D.SchemesOver)ᵒᵖ ⥤ Type u
 abbrev surjFunctorSmallEtale : (D.SchemesOver)ᵒᵖ ⥤ Type u
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.zeroFunctorSmallEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociSmallEtale.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociSmallEtale.lean#L146). The attribute's comment: “the variant F_zero”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.zeroFunctorSmallEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociSmallEtale.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociSmallEtale.lean#L146). The attribute's comment: “the variant F\_zero”.
 
 > **Stacks 083F, the variant `F_zero`.**  The functor sending a scheme `T` over `Y` to a
 > one-element set if the base change `u_T` is zero, and to the empty set otherwise.
@@ -49,7 +49,7 @@ abbrev surjFunctorSmallEtale : (D.SchemesOver)ᵒᵖ ⥤ Type u
 abbrev zeroFunctorSmallEtale : (D.SchemesOver)ᵒᵖ ⥤ Type u
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.IsInjAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociSmallEtale.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociSmallEtale.lean#L161). The attribute's comment: “the variant F_inj: the condition that u_T is injective”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.IsInjAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociSmallEtale.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociSmallEtale.lean#L161). The attribute's comment: “the variant F\_inj: the condition that u\_T is injective”.
 
 > **Stacks 083F, the variant `F_inj`.**  The condition the source asks of a scheme `T` over
 > `Y` for its variant `F_inj`: that the base change `u_T` of `u` along `X ×_Y T ⟶ X` is injective,
@@ -74,7 +74,7 @@ def IsInjAt (T : D.SchemesOver) : Prop
 structure ModuleMapSituation
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.zeroSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapZeroLocusSubspace.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapZeroLocusSubspace.lean#L198). The attribute's comment: “the variant F_zero, read as a subfunctor of the base”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.zeroSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapZeroLocusSubspace.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapZeroLocusSubspace.lean#L198). The attribute's comment: “the variant F\_zero, read as a subfunctor of the base”.
 
 > **`F_zero` as a subfunctor of the base.**  Its sections over an object `U` of the big fppf
 > category over `S` are the sections `x` of `Y` over `U` such that the base change of `u` along
@@ -88,7 +88,7 @@ def zeroSubfunctor (D : ModuleMapSituation.{u, u} B S hS) : Subfunctor D.Y.1
 
 [Tag 083H](https://stacks.math.columbia.edu/tag/083H) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.isSheaf_surjFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociFpqcSheaf.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociFpqcSheaf.lean#L106). The attribute's comment: “F_surj”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.isSheaf_surjFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociFpqcSheaf.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociFpqcSheaf.lean#L106). The attribute's comment: “F\_surj”.
 
 > **Stacks 083H**, surjectivity clause.  The locus of test schemes over `Y` on which the base
 > change of `u` is surjective is a sheaf for the fpqc topology.
@@ -103,7 +103,7 @@ theorem isSheaf_surjFunctor :
     Presheaf.IsSheaf (fpqcTopology D.Y) (D.surjFunctor (modulePullbackSystem B S hS))
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.isSheaf_zeroFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociFpqcSheaf.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociFpqcSheaf.lean#L124). The attribute's comment: “F_zero”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.isSheaf_zeroFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociFpqcSheaf.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociFpqcSheaf.lean#L124). The attribute's comment: “F\_zero”.
 
 > **Stacks 083H**, vanishing clause.  The locus of test schemes over `Y` on which the base
 > change of `u` vanishes is a sheaf for the fpqc topology.
@@ -117,7 +117,7 @@ theorem isSheaf_zeroFunctor :
     Presheaf.IsSheaf (fpqcTopology D.Y) (D.zeroFunctor (modulePullbackSystem B S hS))
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.isSheaf_isoFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociFpqcSheaf.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociFpqcSheaf.lean#L142). The attribute's comment: “F_iso”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.isSheaf_isoFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociFpqcSheaf.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociFpqcSheaf.lean#L142). The attribute's comment: “F\_iso”.
 
 > **Stacks 083H**, isomorphism clause.  The locus of test schemes over `Y` on which the base
 > change of `u` is an isomorphism is a sheaf for the fpqc topology.
@@ -131,7 +131,7 @@ theorem isSheaf_isoFunctor :
     Presheaf.IsSheaf (fpqcTopology D.Y) (D.isoFunctor (modulePullbackSystem B S hS))
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.isSheaf_injFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociFpqcSheaf.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociFpqcSheaf.lean#L164). The attribute's comment: “F_inj”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.isSheaf_injFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociFpqcSheaf.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociFpqcSheaf.lean#L164). The attribute's comment: “F\_inj”.
 
 > **Stacks 083H**, universal injectivity clause.  The locus of test schemes over `Y` on which
 > the base change of `u` is universally injective is a sheaf for the fpqc topology.
@@ -153,7 +153,7 @@ theorem isSheaf_injFunctor :
 
 [Tag 083I](https://stacks.math.columbia.edu/tag/083I) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.surjFunctor_and_zeroFunctor_inverseImageSituation_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapInverseImageLoci.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapInverseImageLoci.lean#L90). The attribute's comment: “part (1): F_surj = F'_surj and F_zero = F'_zero”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.surjFunctor_and_zeroFunctor_inverseImageSituation_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapInverseImageLoci.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapInverseImageLoci.lean#L90). The attribute's comment: “part (1): F\_surj = F'\_surj and F\_zero = F'\_zero”.
 
 > **Stacks 083I part (1).**  In Situation 083F let `g : X' ⟶ X` be a flat morphism of
 > algebraic spaces and let `u' : ℱ' ⟶ 𝒢'` be the pullback of `u` to `X'`.  If `𝒢` is of finite
@@ -171,7 +171,7 @@ theorem surjFunctor_and_zeroFunctor_inverseImageSituation_eq (hgflat : IsFlat B 
         (D.inverseImageSituation g).zeroFunctor (modulePullbackSystem B S hS)
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.injFunctor_and_zeroFunctor_inverseImageSituation_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapInverseImageLoci.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapInverseImageLoci.lean#L105). The attribute's comment: “part (2): F_inj = F'_inj and F_zero = F'_zero”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.injFunctor_and_zeroFunctor_inverseImageSituation_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapInverseImageLoci.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapInverseImageLoci.lean#L105). The attribute's comment: “part (2): F\_inj = F'\_inj and F\_zero = F'\_zero”.
 
 > **Stacks 083I part (2).**  In Situation 083F let `g : X' ⟶ X` be a flat morphism of
 > algebraic spaces and let `u' : ℱ' ⟶ 𝒢'` be the pullback of `u` to `X'`.  If `ℱ` is of finite
@@ -189,7 +189,7 @@ theorem injFunctor_and_zeroFunctor_inverseImageSituation_eq (hgflat : IsFlat B S
         (D.inverseImageSituation g).zeroFunctor (modulePullbackSystem B S hS)
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.isoFunctor_inverseImageSituation_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapInverseImageLoci.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapInverseImageLoci.lean#L120). The attribute's comment: “part (3): F_iso = F'_iso”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.isoFunctor_inverseImageSituation_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapInverseImageLoci.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapInverseImageLoci.lean#L120). The attribute's comment: “part (3): F\_iso = F'\_iso”.
 
 > **Stacks 083I part (3).**  In Situation 083F let `g : X' ⟶ X` be a flat morphism of
 > algebraic spaces and let `u' : ℱ' ⟶ 𝒢'` be the pullback of `u` to `X'`.  If `ℱ` and `𝒢` are of
@@ -290,7 +290,7 @@ theorem isoFunctor_pullbackSituation_eq (hgflat : IsFlat B S hS g.hom)
 
 [Tag 083J](https://stacks.math.columbia.edu/tag/083J) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.limitPreserving_isoFunctor_of_surj_of_inj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociLimitPreserving.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociLimitPreserving.lean#L317). The attribute's comment: “clause (3), reduced to clause (1) and limit preservation of F_inj; both carried”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.limitPreserving_isoFunctor_of_surj_of_inj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociLimitPreserving.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociLimitPreserving.lean#L317). The attribute's comment: “clause (3), reduced to clause (1) and limit preservation of F\_inj; both carried”.
 
 > **Stacks 083J, clause (3), reduced.**  The isomorphism locus `F_iso` is limit preserving
 > once the surjectivity locus `F_surj` and the universal injectivity locus `F_inj` are.
@@ -346,7 +346,7 @@ theorem limitPreserving_surjFunctor_iff_cokernelSituation :
         ((D.cokernelSituation).zeroFunctor (modulePullbackSystem B S hS))
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.limitPreserving_zeroFunctor_of_isQuasiCompact_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociLimitPreservingUnconditional.lean, line 551](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociLimitPreservingUnconditional.lean#L551). The attribute's comment: “clause (2): F_zero is limit preserving, at the source's hypotheses verbatim -- F of finite type and its scheme-theoretic support (07U1) quasi-compact over B, i.e. Z -> X -> B quasi-compact. Nothing is carried: the support hypothesis gives compactness of the support at the affine stages (hasQuasiCompactSupportOverTarget_of_isQuasiCompact_schemeTheoreticSupport: 03HF on the pasted square Z x_X X_T = Z x_B T, 07U0(4), 03H4), and the rest is limitPreserving_zeroFunctor. The index universe is the universe of the schemes, and must be: the clause is FALSE one universe up, by SmallnessNecessary/Basic.lean”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.limitPreserving_zeroFunctor_of_isQuasiCompact_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociLimitPreservingUnconditional.lean, line 551](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociLimitPreservingUnconditional.lean#L551). The attribute's comment: “clause (2): F\_zero is limit preserving, at the source's hypotheses verbatim -- F of finite type and its scheme-theoretic support (07U1) quasi-compact over B, i.e. Z -> X -> B quasi-compact. Nothing is carried: the support hypothesis gives compactness of the support at the affine stages (hasQuasiCompactSupportOverTarget\_of\_isQuasiCompact\_schemeTheoreticSupport: 03HF on the pasted square Z x\_X X\_T = Z x\_B T, 07U0(4), 03H4), and the rest is limitPreserving\_zeroFunctor. The index universe is the universe of the schemes, and must be: the clause is FALSE one universe up, by SmallnessNecessary/Basic.lean”.
 
 > **Stacks 083J, clause (2), at the source's hypotheses.**  In the situation of Stacks 083F,
 > if `ℱ` is of finite type and the scheme-theoretic support of `ℱ` (Stacks 07U1) is quasi-compact
@@ -367,7 +367,7 @@ theorem limitPreserving_zeroFunctor_of_isQuasiCompact_schemeTheoreticSupport
       (D.zeroFunctor (modulePullbackSystem B S hS))
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.limitPreserving_surjFunctor_of_isQuasiCompact_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociLimitPreservingUnconditional.lean, line 573](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociLimitPreservingUnconditional.lean#L573). The attribute's comment: “clause (1): F_surj is limit preserving, at the source's hypotheses verbatim -- G of finite type and its scheme-theoretic support (07U1) quasi-compact over B, i.e. Z -> X -> B quasi-compact. Nothing is carried: the support hypothesis on G is turned into compactness at the affine stages for the cokernel situation (whose source module is G) by hasQuasiCompactSupportOverTarget_of_isQuasiCompact_schemeTheoreticSupport, and the rest is limitPreserving_surjFunctor. Index universe as in clause (2)”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.limitPreserving_surjFunctor_of_isQuasiCompact_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociLimitPreservingUnconditional.lean, line 573](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociLimitPreservingUnconditional.lean#L573). The attribute's comment: “clause (1): F\_surj is limit preserving, at the source's hypotheses verbatim -- G of finite type and its scheme-theoretic support (07U1) quasi-compact over B, i.e. Z -> X -> B quasi-compact. Nothing is carried: the support hypothesis on G is turned into compactness at the affine stages for the cokernel situation (whose source module is G) by hasQuasiCompactSupportOverTarget\_of\_isQuasiCompact\_schemeTheoreticSupport, and the rest is limitPreserving\_surjFunctor. Index universe as in clause (2)”.
 
 > **Stacks 083J, clause (1), at the source's hypotheses.**  In the situation of Stacks 083F,
 > if `𝒢` is of finite type and the scheme-theoretic support of `𝒢` (Stacks 07U1) is
@@ -386,7 +386,7 @@ theorem limitPreserving_surjFunctor_of_isQuasiCompact_schemeTheoreticSupport
       (D.surjFunctor (modulePullbackSystem B S hS))
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.limitPreserving_isoFunctor_of_isQuasiCompact_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociLimitPreservingUnconditional.lean, line 600](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociLimitPreservingUnconditional.lean#L600). The attribute's comment: “clause (3): F_iso is limit preserving, at the source's hypotheses verbatim -- F of finite type, G of finite presentation, and the scheme-theoretic supports (07U1) of F and G quasi-compact over B. Nothing is carried: the two support hypotheses are turned into compactness at the affine stages by hasQuasiCompactSupportOverTarget_of_isQuasiCompact_schemeTheoreticSupport (for the situation and for its cokernel situation), and the rest is limitPreserving_isoFunctor, the source's own deduction of (3) from (1) and (2) through ker(u_{T_0}) and Stacks 082T. Index universe as in clause (2)”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.limitPreserving_isoFunctor_of_isQuasiCompact_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociLimitPreservingUnconditional.lean, line 600](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapLociLimitPreservingUnconditional.lean#L600). The attribute's comment: “clause (3): F\_iso is limit preserving, at the source's hypotheses verbatim -- F of finite type, G of finite presentation, and the scheme-theoretic supports (07U1) of F and G quasi-compact over B. Nothing is carried: the two support hypotheses are turned into compactness at the affine stages by hasQuasiCompactSupportOverTarget\_of\_isQuasiCompact\_schemeTheoreticSupport (for the situation and for its cokernel situation), and the rest is limitPreserving\_isoFunctor, the source's own deduction of (3) from (1) and (2) through ker(u\_\{T\_0}) and Stacks 082T. Index universe as in clause (2)”.
 
 > **Stacks 083J, clause (3), at the source's hypotheses.**  In the situation of Stacks 083F,
 > if `ℱ` is of finite type, `𝒢` is of finite presentation, and the scheme-theoretic supports of
@@ -586,7 +586,7 @@ theorem isZeroAt_affinePushforward_iff' (T : D.SchemesOver)
       D.IsZeroAt (modulePullbackSystem B S hS) T
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.isoFunctor_affinePushforward_eq'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffine.lean, line 409](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffine.lean#L409). The attribute's comment: “F_iso”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.isoFunctor_affinePushforward_eq'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffine.lean, line 409](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffine.lean#L409). The attribute's comment: “F\_iso”.
 
 > **Stacks 0CW8**, `F_{u,iso} = F_{u',iso}`.
 
@@ -597,7 +597,7 @@ theorem isoFunctor_affinePushforward_eq'
       D.isoFunctor (modulePullbackSystem B S hS)
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.injFunctor_affinePushforward_eq'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffine.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffine.lean#L421). The attribute's comment: “F_inj”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.injFunctor_affinePushforward_eq'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffine.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffine.lean#L421). The attribute's comment: “F\_inj”.
 
 > **Stacks 0CW8**, `F_{u,inj} = F_{u',inj}`.
 
@@ -608,7 +608,7 @@ theorem injFunctor_affinePushforward_eq'
       D.injFunctor (modulePullbackSystem B S hS)
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.surjFunctor_affinePushforward_eq'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffine.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffine.lean#L433). The attribute's comment: “F_surj”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.surjFunctor_affinePushforward_eq'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffine.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffine.lean#L433). The attribute's comment: “F\_surj”.
 
 > **Stacks 0CW8**, `F_{u,surj} = F_{u',surj}`.
 
@@ -619,7 +619,7 @@ theorem surjFunctor_affinePushforward_eq'
       D.surjFunctor (modulePullbackSystem B S hS)
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.zeroFunctor_affinePushforward_eq'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffine.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffine.lean#L445). The attribute's comment: “F_zero”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.zeroFunctor_affinePushforward_eq'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffine.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffine.lean#L445). The attribute's comment: “F\_zero”.
 
 > **Stacks 0CW8**, `F_{u,zero} = F_{u',zero}`.
 
@@ -630,7 +630,7 @@ theorem zeroFunctor_affinePushforward_eq'
       D.zeroFunctor (modulePullbackSystem B S hS)
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.isoFunctor_affinePushforward_eq_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffinePushforward.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffinePushforward.lean#L127). The attribute's comment: “F_iso”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.isoFunctor_affinePushforward_eq_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffinePushforward.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffinePushforward.lean#L127). The attribute's comment: “F\_iso”.
 
 > **Stacks 0CW8**, `F_{u,iso} = F_{u',iso}`: for an affine morphism `g : X ⟶ X'` over `Y`,
 > the isomorphism locus of `u` is that of its direct image `u' = g_*u`.
@@ -642,7 +642,7 @@ theorem isoFunctor_affinePushforward_eq_unconditional :
       D.isoFunctor (modulePullbackSystem B S hS)
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.injFunctor_affinePushforward_eq_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffinePushforward.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffinePushforward.lean#L137). The attribute's comment: “F_inj”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.injFunctor_affinePushforward_eq_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffinePushforward.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffinePushforward.lean#L137). The attribute's comment: “F\_inj”.
 
 > **Stacks 0CW8**, `F_{u,inj} = F_{u',inj}`: for an affine morphism `g : X ⟶ X'` over `Y`,
 > the universal-injectivity locus of `u` is that of its direct image `u' = g_*u`.
@@ -654,7 +654,7 @@ theorem injFunctor_affinePushforward_eq_unconditional :
       D.injFunctor (modulePullbackSystem B S hS)
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.surjFunctor_affinePushforward_eq_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffinePushforward.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffinePushforward.lean#L147). The attribute's comment: “F_surj”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.surjFunctor_affinePushforward_eq_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffinePushforward.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffinePushforward.lean#L147). The attribute's comment: “F\_surj”.
 
 > **Stacks 0CW8**, `F_{u,surj} = F_{u',surj}`: for an affine morphism `g : X ⟶ X'` over `Y`,
 > the surjectivity locus of `u` is that of its direct image `u' = g_*u`.
@@ -666,7 +666,7 @@ theorem surjFunctor_affinePushforward_eq_unconditional :
       D.surjFunctor (modulePullbackSystem B S hS)
 ```
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.zeroFunctor_affinePushforward_eq_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffinePushforward.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffinePushforward.lean#L157). The attribute's comment: “F_zero”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.zeroFunctor_affinePushforward_eq_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffinePushforward.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleMapSituationAffinePushforward.lean#L157). The attribute's comment: “F\_zero”.
 
 > **Stacks 0CW8**, `F_{u,zero} = F_{u',zero}`: for an affine morphism `g : X ⟶ X'` over `Y`,
 > the vanishing locus of `u` is that of its direct image `u' = g_*u`.
@@ -692,7 +692,7 @@ theorem zeroFunctor_affinePushforward_eq_unconditional :
 structure FlatnessSituation
 ```
 
-**`AlgebraicGeometry.Space.FlatnessSituation.baseChangeModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatteningFunctor.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatteningFunctor.lean#L145). The attribute's comment: “the base change F_T of the module to a test scheme over the target”.
+**`AlgebraicGeometry.Space.FlatnessSituation.baseChangeModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatteningFunctor.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatteningFunctor.lean#L145). The attribute's comment: “the base change F\_T of the module to a test scheme over the target”.
 
 > **Stacks 0CWX.** The base change `F_T` of the module to a test scheme `T` over `Y`: the
 > pullback of `F` along the projection `X_T = X ×_Y T ⟶ X`.
@@ -702,7 +702,7 @@ def baseChangeModule (D : FlatnessSituation.{u} B S hS) (T : SchemesOver D.Y) :
     Modules.{u, u} B S hS (baseChangeSpace D.f T).1 (baseChangeSpace D.f T).2
 ```
 
-**`AlgebraicGeometry.Space.FlatnessSituation.flatFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatteningFunctor.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatteningFunctor.lean#L202). The attribute's comment: “the functor F_flat”.
+**`AlgebraicGeometry.Space.FlatnessSituation.flatFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatteningFunctor.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatteningFunctor.lean#L202). The attribute's comment: “the functor F\_flat”.
 
 > **Stacks 0CWX.**  The flattening functor
 >

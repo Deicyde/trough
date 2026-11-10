@@ -14,7 +14,7 @@ Section 29.35 of the Stacks Project, [Tag 01V4](https://stacks.math.columbia.edu
 
 [Tag 01V5](https://stacks.math.columbia.edu/tag/01V5) in the Stacks Project.
 
-**`AlgebraicGeometry.IsStandardSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/Defs.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/Defs.lean#L79). The attribute's comment: “standard_smooth_affine”.
+**`AlgebraicGeometry.IsStandardSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/Defs.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/Defs.lean#L79). The attribute's comment: “standard\_smooth\_affine”.
 
 > A morphism of affine schemes is standard smooth if the corresponding ring homomorphism on
 > global sections is standard smooth.
@@ -26,8 +26,8 @@ public abbrev IsStandardSmooth {X S : AlgebraicGeometry.Scheme.{u}}
 
 Declarations registered for the tag:
 
-- [`InfinitesimalLifting.SmoothAt`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Smooth/InfinitesimalLifting.lean#L148), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/AtPoint.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/AtPoint.lean#L69) (StacksFrontier): “smooth_at_point”.
-- [`AlgebraicGeometry.Smooth`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Smooth#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/Defs.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/Defs.lean#L63) (StacksFrontier): “smooth_morphism”. References: EGA IV (17.3.1); SGA 1 II (1.1); SGA 3 XI (1.1); SGA 3 XI (1.6); SGA 7 XIV (2.1), “partial”.
+- [`InfinitesimalLifting.SmoothAt`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Smooth/InfinitesimalLifting.lean#L148), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/AtPoint.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/AtPoint.lean#L69) (StacksFrontier): “smooth\_at\_point”.
+- [`AlgebraicGeometry.Smooth`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Smooth#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/Defs.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/Defs.lean#L63) (StacksFrontier): “smooth\_morphism”. References: EGA IV (17.3.1); SGA 1 II (1.1); SGA 3 XI (1.1); SGA 3 XI (1.6); SGA 7 XIV (2.1), “partial”.
 
 ## Tag 01V6, a lemma
 
@@ -154,7 +154,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.UniversallyOpen.of_flat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.UniversallyOpen.of_flat#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch29.lean#L320) (StacksFrontier): “flat and locally of finite presentation; smooth morphisms are both (instances)”. References: EGA IV (1.10.4), “b) ⇒ a), special case”; EGA IV (11.3.1), “special case”; EGA IV (14.4.10), “special case”; EGA IV (15.2.1); EGA IV (15.2.4), “(ii), special case”; EGA IV (18.2.7), “partial”; EGA IV (2.4.6); EGA IV (2.4.7), “more general”; EGA IV (4.4.1), “special case”; SGA 1 IV (6.6), “F = O_X”; SGA 1 VIII (4.9), “more general”; SGA 3 V (10.1.1), “more general”; SGA 3 V (4.1.1), “flat and fp implies open”; SGA 3 VIA (2.5.4), “Final implication”; SGA 3 VIB (3.11), “more general”; SGA 3 VIB (4.3); SGA 3 VIB (7.5), “f|_V is an open morphism”; SGA 3 X (5.4), “partial”; SGA 3 XVI (2.1), “more general”; SGA 6 VIII (1.3), “more general”.
+- [`AlgebraicGeometry.UniversallyOpen.of_flat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.UniversallyOpen.of_flat#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch29.lean#L320) (StacksFrontier): “flat and locally of finite presentation; smooth morphisms are both (instances)”. References: EGA IV (1.10.4), “b) ⇒ a), special case”; EGA IV (11.3.1), “special case”; EGA IV (14.4.10), “special case”; EGA IV (15.2.1); EGA IV (15.2.4), “(ii), special case”; EGA IV (18.2.7), “partial”; EGA IV (2.4.6); EGA IV (2.4.7), “more general”; EGA IV (4.4.1), “special case”; SGA 1 IV (6.6), “F = O\_X”; SGA 1 VIII (4.9), “more general”; SGA 3 V (10.1.1), “more general”; SGA 3 V (4.1.1), “flat and fp implies open”; SGA 3 VIA (2.5.4), “Final implication”; SGA 3 VIB (3.11), “more general”; SGA 3 VIB (4.3); SGA 3 VIB (7.5), “f|\_V is an open morphism”; SGA 3 X (5.4), “partial”; SGA 3 XVI (2.1), “more general”; SGA 6 VIII (1.3), “more general”.
 
 ## Tag 01V7, a lemma
 
@@ -180,7 +180,7 @@ public lemma smoothAt_iff_exists_affine_isStandardSmooth
 
 [Tag 02G1](https://stacks.math.columbia.edu/tag/02G1) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.isFiniteLocallyFree_relativeDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/DifferentialsLocallyFree.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/DifferentialsLocallyFree.lean#L86). The attribute's comment: “differentials_finite_locally_free”. References: EGA IV (17.15.15), “necessity: Ω loc free”; EGA IV (17.10.2), “locally free”; EGA IV (17.15.5), “a) => c) (free)”; SGA 1 II (4.3), “(ii) local freeness”; SGA 3 XI (1.9), “finite locally free”.
+**`AlgebraicGeometry.Scheme.Hom.isFiniteLocallyFree_relativeDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/DifferentialsLocallyFree.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/DifferentialsLocallyFree.lean#L86). The attribute's comment: “differentials\_finite\_locally\_free”. References: EGA IV (17.15.15), “necessity: Ω loc free”; EGA IV (17.10.2), “locally free”; EGA IV (17.15.5), “a) => c) (free)”; SGA 1 II (4.3), “(ii) local freeness”; SGA 3 XI (1.9), “finite locally free”.
 
 > The sheaf of relative differentials of a smooth morphism of
 > schemes is finite locally free.
@@ -191,7 +191,7 @@ theorem Scheme.Hom.isFiniteLocallyFree_relativeDifferentials (f : X ⟶ S) [Smoo
       (Scheme.Hom.relativeDifferentials f)
 ```
 
-**`AlgebraicGeometry.finrank_stalk_relativeDifferentials_eq_fiberDimensionAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/DifferentialsRank.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/DifferentialsRank.lean#L76). The attribute's comment: “differentials_rank_eq_fibre_dimension”. References: EGA IV (17.10.2), “rank_x = dim_x f”; EGA IV (17.15.5), “a) => c) rank”; EGA IV (17.15.15), “smooth ⇒ rank=dim_x f”; SGA 3 XI (1.9), “rank = fiber dimension”; SGA 1 II (4.3), “(ii) rank formula”.
+**`AlgebraicGeometry.finrank_stalk_relativeDifferentials_eq_fiberDimensionAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/DifferentialsRank.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Smooth/DifferentialsRank.lean#L76). The attribute's comment: “differentials\_rank\_eq\_fibre\_dimension”. References: EGA IV (17.10.2), “rank\_x = dim\_x f”; EGA IV (17.15.5), “a) => c) rank”; EGA IV (17.15.15), “smooth ⇒ rank=dim\_x f”; SGA 3 XI (1.9), “rank = fiber dimension”; SGA 1 II (4.3), “(ii) rank formula”.
 
 > **Stacks Project, Tag 02G1.** For a smooth morphism of schemes, the rank at a point of the
 > sheaf of relative differentials is the local dimension of the fibre at that point.

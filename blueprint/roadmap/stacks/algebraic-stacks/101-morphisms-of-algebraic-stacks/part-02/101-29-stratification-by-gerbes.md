@@ -42,7 +42,7 @@ theorem exists_openSubstack_dense_isGerbe (𝒳 : AlgebraicStacks.{u, w} B S hS)
 
 [Tag 06RE](https://stacks.math.columbia.edu/tag/06RE) in the Stacks Project.
 
-**`AlgebraicGeometry.PPowerWeighted.action`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExample.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExample.lean#L89). The attribute's comment: “the weighted multiplicative-group action on Spec k[x_0, x_1, x_2, ...]”.
+**`AlgebraicGeometry.PPowerWeighted.action`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExample.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExample.lean#L89). The attribute's comment: “the weighted multiplicative-group action on Spec k[x\_0, x\_1, x\_2, ...]”.
 
 > **Stacks 06RE.** The action of the multiplicative group scheme on
 > `U = Spec(k[x_0, x_1, x_2, …])` attached to the grading giving `x_i` the degree `p^i`, namely
@@ -52,7 +52,7 @@ theorem exists_openSubstack_dense_isGerbe (𝒳 : AlgebraicStacks.{u, w} B S hS)
 noncomputable def action (k : Type u) [CommRing k] (p : ℕ) : GradedGmAction (grading k p)
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.action_μ_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExample.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExample.lean#L95). The attribute's comment: “the coaction on the variables: x_i goes to x_i tensor T^{p^i}”.
+**`AlgebraicGeometry.PPowerWeighted.action_μ_X`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExample.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExample.lean#L95). The attribute's comment: “the coaction on the variables: x\_i goes to x\_i tensor T^\{p^i}”.
 
 > **Stacks 06RE.** The coaction of the action sends the variable `x_i` to `x_i ⊗ T^{p^i}`:
 > the group element `t` scales the coordinate `x_i` by `t^{p^i}`.
@@ -77,7 +77,7 @@ theorem pointEval_action_μ_X (k : Type u) [CommRing k] (p i : ℕ)
       smulPoint p t (fun j => φ (MvPolynomial.X j)) i
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.pointStabilizer_eq_rootsUnitsSubgroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L287). The attribute's comment: “the stabilizer along the stratum X_i is mu_{p^i}”.
+**`AlgebraicGeometry.PPowerWeighted.pointStabilizer_eq_rootsUnitsSubgroup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L287). The attribute's comment: “the stabilizer along the stratum X\_i is mu\_\{p^i}”.
 
 > **Stacks 06RE.** On the `i`-th stratum the stabilizer of the weighted action is `μ_{p^i}`:
 > a unit `t` fixes a point whose first nonvanishing coordinate is the `i`-th exactly when
@@ -91,7 +91,7 @@ theorem pointStabilizer_eq_rootsUnitsSubgroup (p i : ℕ) (a : ℕ → R)
     pointStabilizer p a = rootsUnitsSubgroup (p ^ i)
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.pointStabilizer_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L314). The attribute's comment: “the stabilizer along the stratum X_infinity is G_m”.
+**`AlgebraicGeometry.PPowerWeighted.pointStabilizer_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L314). The attribute's comment: “the stabilizer along the stratum X\_infinity is G\_m”.
 
 > **Stacks 06RE.** On the last stratum, where all the coordinates vanish, the stabilizer of
 > the weighted action is all of `G_m`: the unit group of `R` is the value at `R` of the functor of
@@ -103,7 +103,7 @@ theorem pointStabilizer_eq_top (p : ℕ) (a : ℕ → R) (ha : IsPointInStratumI
     pointStabilizer p a = ⊤
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.isPointInStratum_smulPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L321). The attribute's comment: “the stratum X_i is invariant under the action”.
+**`AlgebraicGeometry.PPowerWeighted.isPointInStratum_smulPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L321). The attribute's comment: “the stratum X\_i is invariant under the action”.
 
 > **Stacks 06RE.** The `i`-th stratum is invariant under the action.
 
@@ -112,7 +112,7 @@ theorem isPointInStratum_smulPoint (p i : ℕ) (t : Rˣ) (a : ℕ → R) :
     IsPointInStratum i (smulPoint p t a) ↔ IsPointInStratum i a
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.isPointInStratumInf_smulPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L330). The attribute's comment: “the stratum X_infinity is invariant under the action”.
+**`AlgebraicGeometry.PPowerWeighted.isPointInStratumInf_smulPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L330). The attribute's comment: “the stratum X\_infinity is invariant under the action”.
 
 > **Stacks 06RE.** The last stratum is invariant under the action.
 
@@ -131,7 +131,7 @@ theorem isPointInStratumInf_or_exists_isPointInStratum {K : Type*} [Field K] (a 
     IsPointInStratumInf a ∨ ∃ i, IsPointInStratum i a
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.isLocallyClosed_stratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L394). The attribute's comment: “the stratum X_i is locally closed”.
+**`AlgebraicGeometry.PPowerWeighted.isLocallyClosed_stratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L394). The attribute's comment: “the stratum X\_i is locally closed”.
 
 > **Stacks 06RE.** The `i`-th stratum is locally closed: it is the intersection of the open
 > where `x_i` is invertible with the closed subscheme where `x_0, …, x_{i-1}` vanish.
@@ -140,7 +140,7 @@ theorem isPointInStratumInf_or_exists_isPointInStratum {K : Type*} [Field K] (a 
 theorem isLocallyClosed_stratum (i : ℕ) : IsLocallyClosed (stratum k i)
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.isClosed_stratumInf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L401). The attribute's comment: “the stratum X_infinity is closed, hence locally closed”.
+**`AlgebraicGeometry.PPowerWeighted.isClosed_stratumInf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L401). The attribute's comment: “the stratum X\_infinity is closed, hence locally closed”.
 
 > **Stacks 06RE.** The last stratum is closed, being the vanishing locus of all the
 > coordinates.
@@ -183,7 +183,7 @@ theorem mem_stratumInf_ker_iff {K : Type*} [Field K] (φ : MvPolynomial ℕ k �
       IsPointInStratumInf (fun j => φ (MvPolynomial.X j))
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.isDomain_stratumRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 516](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L516). The attribute's comment: “the stratum X_i is reduced, being integral”.
+**`AlgebraicGeometry.PPowerWeighted.isDomain_stratumRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 516](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L516). The attribute's comment: “the stratum X\_i is reduced, being integral”.
 
 > **Stacks 06RE.** The `i`-th stratum is integral, in particular reduced.
 
@@ -191,7 +191,7 @@ theorem mem_stratumInf_ker_iff {K : Type*} [Field K] (φ : MvPolynomial ℕ k �
 theorem isDomain_stratumRing [IsDomain k] (i : ℕ) : IsDomain (stratumRing k i)
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.isReduced_stratumRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L525). The attribute's comment: “the stratum X_i is reduced”.
+**`AlgebraicGeometry.PPowerWeighted.isReduced_stratumRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L525). The attribute's comment: “the stratum X\_i is reduced”.
 
 > **Stacks 06RE.** The `i`-th stratum is reduced.
 
@@ -199,7 +199,7 @@ theorem isDomain_stratumRing [IsDomain k] (i : ℕ) : IsDomain (stratumRing k i)
 theorem isReduced_stratumRing [IsDomain k] (i : ℕ) : IsReduced (stratumRing k i)
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.isDomain_quotient_coordinateIdeal_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 532](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L532). The attribute's comment: “the stratum X_infinity is reduced”.
+**`AlgebraicGeometry.PPowerWeighted.isDomain_quotient_coordinateIdeal_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 532](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L532). The attribute's comment: “the stratum X\_infinity is reduced”.
 
 > **Stacks 06RE.** The last stratum is reduced: it is the origin, cut out by the prime ideal
 > generated by all the coordinates.
@@ -209,7 +209,7 @@ theorem isDomain_quotient_coordinateIdeal_univ [IsDomain k] :
     IsDomain (MvPolynomial ℕ k ⧸ coordinateIdeal k Set.univ)
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.rootsUnitsSubgroup_pow_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 578](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L578). The attribute's comment: “distinct strata have distinct groups mu_{p^i}: no coarser stratification”.
+**`AlgebraicGeometry.PPowerWeighted.rootsUnitsSubgroup_pow_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 578](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L578). The attribute's comment: “distinct strata have distinct groups mu\_\{p^i}: no coarser stratification”.
 
 > **Stacks 06RE.** Distinct strata have distinct groups: for `1 < p` and `i < j` the group
 > `μ_{p^i}` of the stratum `X_i` is not the group `μ_{p^j}` of the stratum `X_j`.  So no two strata
@@ -222,7 +222,7 @@ theorem rootsUnitsSubgroup_pow_ne (p i j : ℕ) (hp : 1 < p) (hij : i < j) :
       rootsUnitsSubgroup (p ^ j)
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.rootsUnitsSubgroup_ne_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 587](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L587). The attribute's comment: “the group mu_{p^i} of X_i differs from the group G_m of X_infinity”.
+**`AlgebraicGeometry.PPowerWeighted.rootsUnitsSubgroup_ne_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 587](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L587). The attribute's comment: “the group mu\_\{p^i} of X\_i differs from the group G\_m of X\_infinity”.
 
 > **Stacks 06RE.** The group of a stratum `X_i` is never the group `G_m` of the last stratum
 > `X_∞`: already in the units of the rationals the `n`-th roots of unity are not everything, since
@@ -233,7 +233,7 @@ theorem rootsUnitsSubgroup_ne_top {n : ℕ} (hn : 0 < n) :
     rootsUnitsSubgroup (A := ℚ) n ≠ ⊤
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.pointStabilizer_ne_pointStabilizer_basisPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 621](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L621). The attribute's comment: “the strata X_i and X_j cannot be merged: their stabilizers differ”.
+**`AlgebraicGeometry.PPowerWeighted.pointStabilizer_ne_pointStabilizer_basisPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 621](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L621). The attribute's comment: “the strata X\_i and X\_j cannot be merged: their stabilizers differ”.
 
 > **Stacks 06RE.** The strata `X_i` and `X_j` with `i < j` cannot be merged: already over the
 > coordinate ring of `μ_{p^j}` the stabilizer of a point of `X_i` differs from the stabilizer of a
@@ -249,7 +249,7 @@ theorem pointStabilizer_ne_pointStabilizer_basisPoint (p i j : ℕ) (hp : 1 < p)
       pointStabilizer p (basisPoint (rootsOfUnityCoordinateRing.{u} (p ^ j)) j)
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.pointStabilizer_ne_pointStabilizer_basisPoint_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 632](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L632). The attribute's comment: “the stratum X_i cannot be merged with X_infinity: their stabilizers differ”.
+**`AlgebraicGeometry.PPowerWeighted.pointStabilizer_ne_pointStabilizer_basisPoint_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean, line 632](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationExamplePoints.lean#L632). The attribute's comment: “the stratum X\_i cannot be merged with X\_infinity: their stabilizers differ”.
 
 > **Stacks 06RE.** The stratum `X_i` cannot be merged with the last stratum `X_∞`: already over
 > the rationals the stabilizer of the point of `X_i` with `i`-th coordinate one is `μ_{p^i}`, while
@@ -260,7 +260,7 @@ theorem pointStabilizer_ne_pointStabilizer_basisPoint_zero (p i : ℕ) (hp : 0 <
     pointStabilizer p (basisPoint ℚ i) ≠ pointStabilizer p (0 : ℕ → ℚ)
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.quotientStack`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationQuotientStack.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationQuotientStack.lean#L83). The attribute's comment: “the quotient stack [U/G_m]”.
+**`AlgebraicGeometry.PPowerWeighted.quotientStack`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationQuotientStack.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationQuotientStack.lean#L83). The attribute's comment: “the quotient stack [U/G\_m]”.
 
 > **Stacks 06RE.** The quotient stack `[U/𝐆_m]` of the multiplicative-group action on
 > `U = Spec(k[x_0, x_1, x_2, …])` in which `x_i` has weight `p^i`.  It is the quotient stack of
@@ -273,7 +273,7 @@ noncomputable def quotientStack (hU : 𝒞.Contains (Spec (.of (MvPolynomial ℕ
       (BigFppfOver 𝒞 (Spec (.of (ULift.{u} ℤ))) (Space.contains_specULiftZ 𝒞))
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.isAlgebraicStack_quotientStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationQuotientStack.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationQuotientStack.lean#L99). The attribute's comment: “the quotient stack [U/G_m] is an algebraic stack”.
+**`AlgebraicGeometry.PPowerWeighted.isAlgebraicStack_quotientStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationQuotientStack.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationQuotientStack.lean#L99). The attribute's comment: “the quotient stack [U/G\_m] is an algebraic stack”.
 
 > **Stacks 06RE.** The quotient stack `[U/𝐆_m]` is an algebraic stack over `Spec ℤ`.  This is
 > Stacks 04TK for the action: the structure morphism of the group algebraic space
@@ -287,7 +287,7 @@ theorem isAlgebraicStack_quotientStack
       (Space.contains_specULiftZ 𝒞) (quotientStack 𝒞 k p hU)
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.weightedQuotientStack_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationStatement.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationStatement.lean#L78). The attribute's comment: “X = [U/G_m] is an algebraic stack: the object of the 2-category of algebraic stacks presented by the action groupoid”.
+**`AlgebraicGeometry.PPowerWeighted.weightedQuotientStack_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationStatement.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationStatement.lean#L78). The attribute's comment: “X = [U/G\_m] is an algebraic stack: the object of the 2-category of algebraic stacks presented by the action groupoid”.
 
 > **Stacks 06RE**, assertion (1): `𝒳 = [U/𝐆_m]` is an algebraic stack. The algebraic stack
 > `weightedQuotientStack` is presented, in the sense of Stacks 04TI, by the action groupoid of `𝐆_m`
@@ -300,7 +300,7 @@ theorem weightedQuotientStack_presentation :
       Stack.quotientStack P.groupoid = quotientStack 𝒞 k p hU
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.stratumProperty_chart_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationStatement.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationStatement.lean#L92). The attribute's comment: “the strata X_i (x_0 = ... = x_{i-1} = 0, x_i invertible) and X_infinity (all x_j = 0)”.
+**`AlgebraicGeometry.PPowerWeighted.stratumProperty_chart_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationStatement.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationStatement.lean#L92). The attribute's comment: “the strata X\_i (x\_0 = ... = x\_\{i-1} = 0, x\_i invertible) and X\_infinity (all x\_j = 0)”.
 
 > **Stacks 06RE**, assertion (2), the strata: the stratum of index `i` is the locus where
 > `x_0, …, x_{i-1}` vanish and `x_i` does not, and the stratum of index `∞` the locus where all
@@ -364,7 +364,7 @@ theorem isReduced_isLocallyClosedSubstack_stratum (a : WithTop ℕ) :
           (stratumProperty.{u, w} 𝒞 k p hU a) (isAlgebraicStack_stratum.{u, w} 𝒞 k p hU a))
 ```
 
-**`AlgebraicGeometry.PPowerWeighted.isGerbeOverSchemeWithGroup_algebraicStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationStatement.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationStatement.lean#L155). The attribute's comment: “each stratum is a gerbe over a scheme with group mu_{p^i} for X_i and G_m for X_infinity”.
+**`AlgebraicGeometry.PPowerWeighted.isGerbeOverSchemeWithGroup_algebraicStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationStatement.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeStratificationStatement.lean#L155). The attribute's comment: “each stratum is a gerbe over a scheme with group mu\_\{p^i} for X\_i and G\_m for X\_infinity”.
 
 > **Stacks 06RE**, assertion (3): each stratum is a gerbe over a scheme, with group `μ_{p^i}`
 > for `𝒳_i` and `𝐆_m` for `𝒳_∞`.

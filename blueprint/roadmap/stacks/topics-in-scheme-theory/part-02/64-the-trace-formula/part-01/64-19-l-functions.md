@@ -49,7 +49,7 @@ public def lFunction [Finite k] [LocallyOfFiniteType f] [QuasiCompact f] : Power
 
 [Tag 03UX](https://stacks.math.columbia.edu/tag/03UX) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.EulerSystem.coeff_eulerProduct_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LFunctionEulerProduct.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LFunctionEulerProduct.lean#L280). The attribute's comment: “the convergence of the Euler product: it is stated for an arbitrary coefficient ring, so it specializes to the Q_ell case of this tag”.
+**`Stacks.EtaleCohomology.EulerSystem.coeff_eulerProduct_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LFunctionEulerProduct.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LFunctionEulerProduct.lean#L280). The attribute's comment: “the convergence of the Euler product: it is stated for an arbitrary coefficient ring, so it specializes to the Q\_ell case of this tag”.
 
 > The Euler product converges: the coefficient of `T ^ j` of the Euler product is the
 > coefficient of `T ^ j` of the product over any finite set of indices that contains all the
@@ -60,7 +60,7 @@ public theorem coeff_eulerProduct_eq {j : ℕ} {t : Finset ι} (ht : E.support j
     PowerSeries.coeff j E.eulerProduct = PowerSeries.coeff j (∏ i ∈ t, E.factor i)
 ```
 
-**`Stacks.EtaleCohomology.LAdicSheaf.rationalLFunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LFunctionRationalSheaf.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LFunctionRationalSheaf.lean#L150). The attribute's comment: “the definition of L(X, F) for a Q_ell-sheaf F, as the Euler product over the closed points of the inverse characteristic series of the geometric Frobenius on the rational stalks”. References: SGA 4½ Rapport (1.6), “adic coefficients”.
+**`Stacks.EtaleCohomology.LAdicSheaf.rationalLFunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LFunctionRationalSheaf.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LFunctionRationalSheaf.lean#L150). The attribute's comment: “the definition of L(X, F) for a Q\_ell-sheaf F, as the Euler product over the closed points of the inverse characteristic series of the geometric Frobenius on the rational stalks”. References: SGA 4½ Rapport (1.6), “adic coefficients”.
 
 > The L-function of a `ℚ_ℓ`-sheaf `F` on a scheme `X` of finite type over a finite field `k`:
 >

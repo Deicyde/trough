@@ -14,7 +14,7 @@ Section 50.6 of the Stacks Project, [Tag 0FM6](https://stacks.math.columbia.edu/
 
 [Tag 0FM6](https://stacks.math.columbia.edu/tag/0FM6) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.hodgeToDeRhamFirstPage`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRham.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRham.lean#L95). The attribute's comment: “the first page of the Hodge-to-de Rham spectral sequence, E_1^{p,q} = H^q(X, Ω^p) with d_1 induced by the de Rham differential; the spectral sequence itself and the conjugate spectral sequence are not constructed”. References: SGA 7 XXII (3.3), “First page of (3.3.2)”.
+**`AlgebraicGeometry.SheafOfModules.hodgeToDeRhamFirstPage`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRham.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeFiltration/HodgeToDeRham.lean#L95). The attribute's comment: “the first page of the Hodge-to-de Rham spectral sequence, E\_1^\{p,q} = H^q(X, Ω^p) with d\_1 induced by the de Rham differential; the spectral sequence itself and the conjugate spectral sequence are not constructed”. References: SGA 7 XXII (3.3), “First page of (3.3.2)”.
 
 > **The `q`-th row `E_1^{•, q}` of the first page of the Hodge-to-de Rham spectral sequence of
 > Stacks Section 0FM6.** The term in position `p` is the Hodge cohomology group

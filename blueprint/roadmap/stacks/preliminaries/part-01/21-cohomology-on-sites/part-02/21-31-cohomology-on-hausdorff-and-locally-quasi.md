@@ -14,7 +14,7 @@ Section 21.31 of the Stacks Project, [Tag 09WY](https://stacks.math.columbia.edu
 
 [Tag 09WY](https://stacks.math.columbia.edu/tag/09WY) in the Stacks Project.
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.isContinuous_id_zariski_qc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonNaturality.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonNaturality.lean#L112). The attribute's comment: “ε_X comes from the identity functor of LC/X, which is continuous”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.isContinuous_id_zariski_qc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonNaturality.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonNaturality.lean#L112). The attribute's comment: “ε\_X comes from the identity functor of LC/X, which is continuous”.
 
 > A quasi-compact sheaf on a localized site is a Zariski sheaf.
 
@@ -24,7 +24,7 @@ theorem isContinuous_id_zariski_qc (X : S.category) :
       (S.qcSite.grothendieckTopology.over X)
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonNaturality.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonNaturality.lean#L163). The attribute's comment: “the induced morphism ε_X : LC_qc/X → LC_Zar/X”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonNaturality.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonNaturality.lean#L163). The attribute's comment: “the induced morphism ε\_X : LC\_qc/X → LC\_Zar/X”.
 
 > The change-of-topology morphism of topoi `ε_X : Sh(LC_qc/X) → Sh(LC_Zar/X)`.
 
@@ -35,7 +35,7 @@ def qcComparisonMorphism (X : S.category) :
       (Sheaf (S.zariskiTopology.over X) (Type (max u t)))
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.zariskiComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonNaturality.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonNaturality.lean#L178). The attribute's comment: “the morphism π_X : Sh(LC_Zar/X) → Sh(X)”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.zariskiComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonNaturality.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonNaturality.lean#L178). The attribute's comment: “the morphism π\_X : Sh(LC\_Zar/X) → Sh(X)”.
 
 > The Zariski comparison morphism of topoi `π_X : Sh(LC_Zar/X) → Sh(X)`.
 
@@ -46,7 +46,7 @@ def zariskiComparisonMorphism (X : S.category) :
       (Sheaf (Opens.grothendieckTopology X.obj) (Type (max u t)))
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcTopologicalMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonNaturality.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonNaturality.lean#L190). The attribute's comment: “the morphism of topoi a_X = π_X ∘ ε_X : Sh(LC_qc/X) → Sh(X)”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcTopologicalMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonNaturality.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonNaturality.lean#L190). The attribute's comment: “the morphism of topoi a\_X = π\_X ∘ ε\_X : Sh(LC\_qc/X) → Sh(X)”.
 
 > The comparison morphism of topoi `a_X : Sh(LC_qc/X) → Sh(X)`, defined as the composite
 > `π_X ∘ ε_X`.
@@ -121,7 +121,7 @@ theorem toGrothendieck_comap_precoverage_le_qcTopology :
       qcTopology
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.zariskiTopology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSite.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSite.lean#L213). The attribute's comment: “the topology of the site LC_Zar”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.zariskiTopology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSite.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSite.lean#L213). The attribute's comment: “the topology of the site LC\_Zar”.
 
 > The Zariski Grothendieck topology, on the same category as the quasi-compact site.
 
@@ -131,7 +131,7 @@ def zariskiTopology
     GrothendieckTopology S.category
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.zariskiObjectCohomology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSite.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSite.lean#L283). The attribute's comment: “the cohomology H^n_Zar(U, H) over an object U of LC_Zar/X”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.zariskiObjectCohomology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSite.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSite.lean#L283). The attribute's comment: “the cohomology H^n\_Zar(U, H) over an object U of LC\_Zar/X”.
 
 > Cohomology of an abelian sheaf on the localized Zariski site `LC_Zar/X`, over an object `U`
 > over `X`.
@@ -146,7 +146,7 @@ abbrev zariskiObjectCohomology
       AddCommGrpCat.{max (u + 1) v})] : Type a
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.opensToSlice`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSite.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSite.lean#L297). The attribute's comment: “the functor X_Zar → LC_Zar/X, U ↦ U”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.opensToSlice`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSite.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSite.lean#L297). The attribute's comment: “the functor X\_Zar → LC\_Zar/X, U ↦ U”.
 
 > The open subsets of `X`, as objects over `X`: the functor `Opens X ⥤ LC_Zar/X` sending an
 > open `U` to the open immersion `U → X`. The accompanying property fixes the underlying map of
@@ -161,7 +161,7 @@ noncomputable def opensToSlice
       Set.range ((F.obj U).hom : ((F.obj U).left).obj → X.obj) = U.1}
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.opensToSlice_isContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSite.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSite.lean#L478). The attribute's comment: “the functor X_Zar → LC_Zar/X is continuous”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.opensToSlice_isContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSite.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSite.lean#L478). The attribute's comment: “the functor X\_Zar → LC\_Zar/X is continuous”.
 
 > The open-subset functor is continuous from the small Zariski site of `X` to the localized
 > Zariski site of `LC`, so it induces the comparison morphism of topoi.
@@ -173,7 +173,7 @@ theorem opensToSlice_isContinuous
       (S.zariskiTopology.over X)
 ```
 
-**`Stacks.Topology.opens_hasPullbacks_and_hasTerminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean#L71). The attribute's comment: “X_Zar has fibre products and a final object”.
+**`Stacks.Topology.opens_hasPullbacks_and_hasTerminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean#L71). The attribute's comment: “X\_Zar has fibre products and a final object”.
 
 > **`X_Zar` has fibre products and a final object.** The category of open subsets of a
 > topological space has fibre products (intersections) and a final object (the whole space).
@@ -183,7 +183,7 @@ theorem opens_hasPullbacks_and_hasTerminal (X : TopCat.{u}) :
     HasPullbacks (Opens X) ∧ HasTerminal (Opens X)
 ```
 
-**`Stacks.Topology.sheaf_opens_grothendieckTopology_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean#L78). The attribute's comment: “the equality Sh(X_Zar) = Sh(X)”.
+**`Stacks.Topology.sheaf_opens_grothendieckTopology_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean#L78). The attribute's comment: “the equality Sh(X\_Zar) = Sh(X)”.
 
 > **`Sh(X_Zar) = Sh(X)`.** The sheaves on the small site `X_Zar` of open subsets of `X` are by
 > definition the sheaves on the topological space `X`.
@@ -193,7 +193,7 @@ theorem sheaf_opens_grothendieckTopology_eq (X : TopCat.{u}) (A : Type*) [Catego
     Sheaf (Opens.grothendieckTopology X) A = TopCat.Sheaf A X
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.ofArrows_mem_zariskiPrecoverage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean#L92). The attribute's comment: “the site LC_Zar: the coverings of LC_qc by open immersions”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.ofArrows_mem_zariskiPrecoverage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean#L92). The attribute's comment: “the site LC\_Zar: the coverings of LC\_qc by open immersions”.
 
 > **The coverings of `LC_Zar`.** A family of morphisms of `LC_qc` is a covering of `LC_Zar`
 > exactly when it is a covering of `LC_qc` all of whose members are open immersions. A family of
@@ -208,7 +208,7 @@ theorem ofArrows_mem_zariskiPrecoverage_iff {ι : Type*} {T : S.category}
         ∀ i, IsOpenEmbedding (f i : (Y i).obj → T.obj)
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.isContinuous_id_zariskiTopology_qc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean#L120). The attribute's comment: “the identity functor LC_Zar → LC_qc is continuous”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.isContinuous_id_zariskiTopology_qc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean#L120). The attribute's comment: “the identity functor LC\_Zar → LC\_qc is continuous”.
 
 > **The identity functor `LC_Zar → LC_qc` is continuous**, because every covering of `LC_Zar`
 > is a covering of `LC_qc`.
@@ -218,7 +218,7 @@ theorem isContinuous_id_zariskiTopology_qc :
     (𝟭 S.category).IsContinuous S.zariskiTopology S.qcSite.grothendieckTopology
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcSiteComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean#L185). The attribute's comment: “the morphism of sites ε : LC_qc → LC_Zar”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcSiteComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean#L185). The attribute's comment: “the morphism of sites ε : LC\_qc → LC\_Zar”.
 
 > **The morphism of sites `ε : LC_qc → LC_Zar`.** The identity functor `LC_Zar → LC_qc` is
 > continuous (`isContinuous_id_zariskiTopology_qc`) and its induced functor on sheaves of sets,
@@ -233,7 +233,7 @@ noncomputable def qcSiteComparisonMorphism :
       (Sheaf S.zariskiTopology (Type (max u t)))
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.opensToSlice_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean#L198). The attribute's comment: “the functor X_Zar → LC_Zar/X commutes with fibre products and final object”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.opensToSlice_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiSiteComparison.lean#L198). The attribute's comment: “the functor X\_Zar → LC\_Zar/X commutes with fibre products and final object”.
 
 > **The functor `X_Zar → LC_Zar/X` commutes with fibre products and the final object.** The
 > functor `U ↦ (U → X)` is representably flat, so it preserves all finite limits; in particular it
@@ -291,7 +291,7 @@ theorem isProperMap_iff_isUniversallyClosedMap {X Y : LocallyQuasiCompactHausdor
 
 [Tag 09WZ](https://stacks.math.columbia.edu/tag/09WZ) in the Stacks Project.
 
-**`Stacks.Topology.LocallyQuasiCompactHausdorff.hasPullbacks`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/FiniteLimits.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/FiniteLimits.lean#L96). The attribute's comment: “fibre_products”.
+**`Stacks.Topology.LocallyQuasiCompactHausdorff.hasPullbacks`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/FiniteLimits.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/FiniteLimits.lean#L96). The attribute's comment: “fibre\_products”.
 
 > **Stacks 09WZ, the fibre-product clause.** The category of Hausdorff, locally
 > quasi-compact spaces has fibre products.
@@ -301,7 +301,7 @@ public noncomputable instance hasPullbacks :
     HasPullbacks (LocallyQuasiCompactHausdorff.{u})
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactHausdorff.hasTerminal`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/FiniteLimits.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/FiniteLimits.lean#L119). The attribute's comment: “final_object”.
+**`Stacks.Topology.LocallyQuasiCompactHausdorff.hasTerminal`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/FiniteLimits.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/FiniteLimits.lean#L119). The attribute's comment: “final\_object”.
 
 > **Stacks 09WZ, the final-object clause.** The category of Hausdorff, locally
 > quasi-compact spaces has a final object.
@@ -310,7 +310,7 @@ public noncomputable instance hasPullbacks :
 public instance hasTerminal : HasTerminal LocallyQuasiCompactHausdorff.{u}
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactHausdorff.hasFiniteLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/FiniteLimits.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/FiniteLimits.lean#L125). The attribute's comment: “finite_limits”.
+**`Stacks.Topology.LocallyQuasiCompactHausdorff.hasFiniteLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/FiniteLimits.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/FiniteLimits.lean#L125). The attribute's comment: “finite\_limits”.
 
 > **Stacks 09WZ, the finite-limits clause.** The category of Hausdorff, locally
 > quasi-compact spaces has all finite limits: it has a final object and fibre products.
@@ -320,7 +320,7 @@ public noncomputable instance hasFiniteLimits :
     HasFiniteLimits LocallyQuasiCompactHausdorff.{u}
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactHausdorff.compactSpace_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcFibreProducts.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcFibreProducts.lean#L95). The attribute's comment: “quasi_compact”.
+**`Stacks.Topology.LocallyQuasiCompactHausdorff.compactSpace_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcFibreProducts.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcFibreProducts.lean#L95). The attribute's comment: “quasi\_compact”.
 
 > **Stacks 09WZ, the quasi-compactness clause.** Given morphisms `f : X ⟶ Z` and
 > `g : Y ⟶ Z` of Hausdorff, locally quasi-compact spaces with `X` and `Y` quasi-compact, the
@@ -420,7 +420,7 @@ theorem proper_surjective_isQcCovering {X Y : Type*}
 
 [Tag 09X2](https://stacks.math.columbia.edu/tag/09X2) in the Stacks Project.
 
-**`Stacks.Topology.exists_boundedLCSubcategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/BoundedSubcategory.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/BoundedSubcategory.lean#L268). The attribute's comment: “the bounded subcategory LC_α”.
+**`Stacks.Topology.exists_boundedLCSubcategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/BoundedSubcategory.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/BoundedSubcategory.lean#L268). The attribute's comment: “the bounded subcategory LC\_α”.
 
 > **Stacks 09X2, the bounded-subcategory clause.** Any prescribed small set of Hausdorff,
 > locally quasi-compact spaces is contained in a bounded full subcategory of `LC` which is
@@ -433,7 +433,7 @@ theorem exists_boundedLCSubcategory
     Nonempty (BoundedLCSubcategory S₀)
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactQcSite`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSite.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSite.lean#L201). The attribute's comment: “the site LC_qc”.
+**`Stacks.Topology.LocallyQuasiCompactQcSite`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSite.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSite.lean#L201). The attribute's comment: “the site LC\_qc”.
 
 > **Stacks 09X2, the site clause.** The data defining the big quasi-compact site `LC_qc`.
 >
@@ -469,7 +469,7 @@ theorem exists_locallyQuasiCompactQcSite
       S.boundedSubcategory = B
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactQcSite.mem_smallPretopology_iff_isQcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean#L193). The attribute's comment: “the coverings of a small model of LC_qc are the quasi-compact coverings”.
+**`Stacks.Topology.LocallyQuasiCompactQcSite.mem_smallPretopology_iff_isQcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean#L193). The attribute's comment: “the coverings of a small model of LC\_qc are the quasi-compact coverings”.
 
 > **Stacks 09X2, the smallness clause.** The small model really is the quasi-compact site: a
 > presieve of it is covering exactly when the sieve it generates, read in `LC_qc`, is refined by a
@@ -488,7 +488,7 @@ theorem mem_smallPretopology_iff_isQcCovering {Y : S.smallSite} (R : Presieve Y)
             ((Sieve.generate R).functorPushforward S.smallEquivalence.inverse).arrows
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactQcSite.smallSheafEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean#L238). The attribute's comment: “LC_qc and a small model of it have the same topos”.
+**`Stacks.Topology.LocallyQuasiCompactQcSite.smallSheafEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean#L238). The attribute's comment: “LC\_qc and a small model of it have the same topos”.
 
 > **Stacks 09X2, the topos clause.** Sheaves on `LC_qc` and sheaves on its small model are the
 > same, at any coefficients. The comparison is a dense subsite inclusion for the transported
@@ -503,7 +503,7 @@ def smallSheafEquiv (A : Type t₁) [Category.{t₂} A] :
 
 [Tag 09X3](https://stacks.math.columbia.edu/tag/09X3) in the Stacks Project.
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcDirectImageTopologicalInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonEmbedding.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonEmbedding.lean#L87). The attribute's comment: “the identification eps_{X,*}a_X^{-1} = pi_X^{-1} on sheaves of sets”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcDirectImageTopologicalInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonEmbedding.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonEmbedding.lean#L87). The attribute's comment: “the identification eps\_\{X,*}a\_X^\{-1} = pi\_X^\{-1} on sheaves of sets”.
 
 > **Stacks 09X3, the identification `ε_{X,*} a_X^{-1} = π_X^{-1}`.** Direct image along the
 > change-of-topology morphism undoes quasi-compact sheafification on the Zariski comparison
@@ -515,7 +515,7 @@ def qcDirectImageTopologicalInverseImageIso (X : S.category) :
       comparisonInverseImage.{u, w, t} S X
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcTopologicalInverseImage_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonEmbedding.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonEmbedding.lean#L108). The attribute's comment: “full faithfulness of the composite inverse image a_X^{-1} on sheaves of sets”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcTopologicalInverseImage_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonEmbedding.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonEmbedding.lean#L108). The attribute's comment: “full faithfulness of the composite inverse image a\_X^\{-1} on sheaves of sets”.
 
 > **Stacks 09X3, full faithfulness of `a_X^{-1}`.** The inverse image along the comparison
 > morphism `a_X = π_X ∘ ε_X : Sh(LC_qc/X) → Sh(X)` is full and faithful on sheaves of sets.
@@ -533,7 +533,7 @@ theorem qcTopologicalInverseImage_fullyFaithful (X : S.category) :
       (qcTopologicalInverseImage.{u, w, t} S X).Faithful
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcTopologicalAdjunction_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonEmbedding.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonEmbedding.lean#L129). The attribute's comment: “the unit of a_X^{-1} is invertible on sheaves of sets”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcTopologicalAdjunction_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonEmbedding.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcComparisonEmbedding.lean#L129). The attribute's comment: “the unit of a\_X^\{-1} is invertible on sheaves of sets”.
 
 > **Stacks 09X3, the quasi-inverse clause.** The unit of the adjunction
 > `a_X^{-1} ⊣ a_{X,*}` of the comparison morphism of topoi is an isomorphism: `a_{X,*}` recovers
@@ -585,7 +585,7 @@ theorem isSheaf_germSectionsPresheaf
     Presheaf.IsSheaf (S.zariskiTopology.over X') (germSectionsPresheaf S X' F)
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.germSectionsPresheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiProperBaseChangeClause.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiProperBaseChangeClause.lean#L93). The attribute's comment: “the sections formula on LC_Zar/X”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.germSectionsPresheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiProperBaseChangeClause.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiProperBaseChangeClause.lean#L93). The attribute's comment: “the sections formula on LC\_Zar/X”.
 
 > **The sections formula of Stacks 09X3 for the Zariski site, naturally in the object of the
 > localized site.** For an object `X'` of the locally quasi-compact Zariski site and a sheaf of sets
@@ -610,7 +610,7 @@ def germSectionsPresheafIso (X' : S.category)
 
 [Tag 0DCU](https://stacks.math.columbia.edu/tag/0DCU) in the Stacks Project.
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.properDirectImageComparisonIsoOfProperMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ProperBaseChangeSurjective.lean, line 603](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ProperBaseChangeSurjective.lean#L603). The attribute's comment: “proper_direct_image”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.properDirectImageComparisonIsoOfProperMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ProperBaseChangeSurjective.lean, line 603](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ProperBaseChangeSurjective.lean#L603). The attribute's comment: “proper\_direct\_image”.
 
 > **Stacks 0DCU, clause (7a): the proper direct image clause.** For a proper morphism `f` of
 > the locally quasi-compact Zariski site, ordinary direct image of sheaves of sets along the
@@ -634,7 +634,7 @@ def properDirectImageComparisonIsoOfProperMap
       (zariskiSliceMorphism.{u, w, max (u + 1) v} S f).pushforward
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.properDerivedImageComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ProperDerivedImageIso.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ProperDerivedImageIso.lean#L348). The attribute's comment: “proper_derived_image”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.properDerivedImageComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ProperDerivedImageIso.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ProperDerivedImageIso.lean#L348). The attribute's comment: “proper\_derived\_image”.
 
 > **[Stacks, Tag 0DCU], the derived clause: the derived Zariski base-change map of a proper
 > morphism is an isomorphism.** For `f : X ⟶ Y` a proper morphism of the locally quasi-compact
@@ -651,7 +651,7 @@ theorem properDerivedImageComparison_isIso
     IsIso (properDerivedImageComparison.{u, w, v} S f)
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.properDerivedImageComparison_isIso_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ProperDerivedImageIso.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ProperDerivedImageIso.lean#L372). The attribute's comment: “proper_derived_image, with the four sheafifications and the three enough-injectives inputs discharged rather than assumed”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.properDerivedImageComparison_isIso_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ProperDerivedImageIso.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ProperDerivedImageIso.lean#L372). The attribute's comment: “proper\_derived\_image, with the four sheafifications and the three enough-injectives inputs discharged rather than assumed”.
 
 > **[Stacks, Tag 0DCU], the derived clause, with properness as the only hypothesis.** For
 > `f : X ⟶ Y` a proper morphism of the locally quasi-compact Zariski site, the comparison
@@ -676,7 +676,7 @@ theorem properDerivedImageComparison_isIso_unconditional
     IsIso (properDerivedImageComparison.{u, w, v} S f)
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.zariskiCohomologyComparisonIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiCohomologyComparison.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiCohomologyComparison.lean#L291). The attribute's comment: “cohomology_comparison”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.zariskiCohomologyComparisonIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiCohomologyComparison.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiCohomologyComparison.lean#L291). The attribute's comment: “cohomology\_comparison”.
 
 > **The cohomology comparison for the Zariski comparison morphism.** For an abelian sheaf `F`
 > on the space of an object `X` of the locally quasi-compact Zariski site, the cohomology of the
@@ -694,7 +694,7 @@ def zariskiCohomologyComparisonIso (n : ℕ) :
       Sheaf.functorH (Opens.grothendieckTopology X.obj) n
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.zariskiCohomologyComparisonIso_unconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiCohomologyComparison.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiCohomologyComparison.lean#L327). The attribute's comment: “cohomology_comparison, with the sheafifications, the injective resolutions and the universe of the Ext-groups discharged rather than assumed”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.zariskiCohomologyComparisonIso_unconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiCohomologyComparison.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiCohomologyComparison.lean#L327). The attribute's comment: “cohomology\_comparison, with the sheafifications, the injective resolutions and the universe of the Ext-groups discharged rather than assumed”.
 
 > **The cohomology comparison for the Zariski comparison morphism, with no hypothesis.** For
 > an abelian sheaf `F` on the space of an object `X` of the locally quasi-compact Zariski site,
@@ -723,7 +723,7 @@ def zariskiCohomologyComparisonIso_unconditional (n : ℕ) :
       Sheaf.functorH (Opens.grothendieckTopology X.obj) n
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.abelianComparisonAdjunction_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiComparisonEmbedding.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiComparisonEmbedding.lean#L292). The attribute's comment: “unit_isomorphism”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.abelianComparisonAdjunction_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiComparisonEmbedding.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiComparisonEmbedding.lean#L292). The attribute's comment: “unit\_isomorphism”.
 
 > **Stacks 0DCU, the unit clause.** The unit of the Zariski comparison adjunction on abelian
 > sheaves is an isomorphism: the inverse image `π_X^{-1}` is fully faithful, because
@@ -736,7 +736,7 @@ theorem abelianComparisonAdjunction_unit_isIso
     IsIso (S.abelianComparisonAdjunction.{u, w, max (u + 1) v} X).unit
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.abelianComparisonDirectImage_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiComparisonExactness.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiComparisonExactness.lean#L362). The attribute's comment: “exact_direct_image”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.abelianComparisonDirectImage_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiComparisonExactness.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiComparisonExactness.lean#L362). The attribute's comment: “exact\_direct\_image”.
 
 > **Stacks 0DCU, the exact-direct-image clause.** The direct image from the Zariski slice site
 > of an object to the Zariski site of its underlying space is exact on abelian sheaves.
@@ -752,7 +752,7 @@ theorem abelianComparisonDirectImage_exact
       (S.comparisonDirectImage X AddCommGrpCat.{max (u + 1) v})
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.zariskiComparisonSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiComparisonNaturality.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiComparisonNaturality.lean#L398). The attribute's comment: “commutative_square”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.zariskiComparisonSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiComparisonNaturality.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiComparisonNaturality.lean#L398). The attribute's comment: “commutative\_square”.
 
 > **Stacks 0DCU, clause (5): the commutative square of topoi.** The square whose horizontal
 > arrows are `f_Zar : Sh(LC_Zar/X) → Sh(LC_Zar/Y)` and `f : Sh(X_Zar) → Sh(Y_Zar)` and whose
@@ -776,7 +776,7 @@ def zariskiComparisonSquareIso :
     comparisonInverseImage.{u, w, t} S Y ⋙ (zariskiSliceMorphism.{u, w, t} S f).inverseImage
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.abelianDerivedComparisonAdjunction_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiDerivedUnit.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiDerivedUnit.lean#L164). The attribute's comment: “derived_unit”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.abelianDerivedComparisonAdjunction_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiDerivedUnit.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiDerivedUnit.lean#L164). The attribute's comment: “derived\_unit”.
 
 > **Stacks 0DCU, the derived-unit clause.** The canonical map from a complex of abelian
 > sheaves on the space `X` to the derived direct image of its inverse image on the localized
@@ -791,7 +791,7 @@ theorem abelianDerivedComparisonAdjunction_unit_isIso
     IsIso (abelianDerivedComparisonAdjunction.{u, w, v} S X).unit
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.abelianDerivedComparisonAdjunction_unit_isIso_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiDerivedUnit.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiDerivedUnit.lean#L204). The attribute's comment: “derived_unit, with the two sheafifications discharged rather than assumed”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.abelianDerivedComparisonAdjunction_unit_isIso_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiDerivedUnit.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiDerivedUnit.lean#L204). The attribute's comment: “derived\_unit, with the two sheafifications discharged rather than assumed”.
 
 > **Stacks 0DCU, the derived-unit clause, with no hypothesis.** The canonical map from a
 > complex of abelian sheaves on the space `X` to the derived direct image of its inverse image on
@@ -810,7 +810,7 @@ theorem abelianDerivedComparisonAdjunction_unit_isIso_unconditional
     IsIso (abelianDerivedComparisonAdjunction.{u, w, v} S X).unit
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.relativeZariskiCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiRelativeCohomology.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiRelativeCohomology.lean#L434). The attribute's comment: “relative_cohomology”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.relativeZariskiCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiRelativeCohomology.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiRelativeCohomology.lean#L434). The attribute's comment: “relative\_cohomology”.
 
 > **Stacks 0DCU, clause (6): the relative-cohomology clause.** For a morphism `f : X ⟶ Y` of
 > the locally quasi-compact Zariski site and `L ∈ D⁺(Y)`, the cohomology of `π_Y^{-1}L` over the
@@ -849,7 +849,7 @@ def relativeZariskiCohomologyIso
         DerivedCategory.Plus.homologyFunctor AddCommGrpCat.{max (u + 1) v} n
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.relativeZariskiCohomologyIso_unconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiRelativeCohomology.lean, line 552](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiRelativeCohomology.lean#L552). The attribute's comment: “relative_cohomology, with the four sheafifications and the four enough-injectives inputs discharged rather than assumed”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.relativeZariskiCohomologyIso_unconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiRelativeCohomology.lean, line 552](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiRelativeCohomology.lean#L552). The attribute's comment: “relative\_cohomology, with the four sheafifications and the four enough-injectives inputs discharged rather than assumed”.
 
 > **Stacks 0DCU, clause (6): the relative-cohomology clause, with no hypothesis.** For a
 > morphism `f : X ⟶ Y` of the locally quasi-compact Zariski site and `L ∈ D⁺(Y)`,
@@ -1066,7 +1066,7 @@ theorem zariskiPullbackClass_isSheaf_qc
     Presheaf.IsSheaf (S.qcSite.grothendieckTopology.over X) F.obj
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.zariskiPullbackClass_isWeakSerreClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiPullbackWeakSerre.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiPullbackWeakSerre.lean#L149). The attribute's comment: “the class A'_X of Situation 0EZ3 is a weak Serre class”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.zariskiPullbackClass_isWeakSerreClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiPullbackWeakSerre.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/ZariskiPullbackWeakSerre.lean#L149). The attribute's comment: “the class A'\_X of Situation 0EZ3 is a weak Serre class”.
 
 > **Stacks 0EZI, the weak Serre condition on the class `A'_X`.** Situation 0EZ3 requires the
 > class it is handed over each object of the site to be a weak Serre subcategory of the abelian
@@ -1105,7 +1105,7 @@ theorem exists_zariskiRefinement_properMorphisms
 
 [Tag 0DCY](https://stacks.math.columbia.edu/tag/0DCY) in the Stacks Project.
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcAbelianDirectImageTopologicalInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcAbelianComparison.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcAbelianComparison.lean#L376). The attribute's comment: “clause (1), the identification eps_{X,*}a_X^{-1}F = pi_X^{-1}F. PROVED, from condition (0EZ6) of Situation 0EZ3 for this situation, carried as h0EZI: that condition is one of the clauses of Tag 0EZI absent from this repository (see LocallyQuasiCompact/ ZariskiComparisonSituationData.lean:52). The sheaves-of-sets version of (0EZ6) IS proved, as isSheaf_qc_comparisonInverseImage (LocallyQuasiCompact/QcComparisonNaturality.lean:357, which carries no tag of its own; the tagged 09X3 carriers are isSheaf_qc_germSectionsPresheaf and isIso_toSheafify_comparisonInverseImage, both in LocallyQuasiCompact/QcGermSectionsSheaf.lean), but only at coefficients Type u, which is why the abelian form is carried”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcAbelianDirectImageTopologicalInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcAbelianComparison.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcAbelianComparison.lean#L376). The attribute's comment: “clause (1), the identification eps\_\{X,*}a\_X^\{-1}F = pi\_X^\{-1}F. PROVED, from condition (0EZ6) of Situation 0EZ3 for this situation, carried as h0EZI: that condition is one of the clauses of Tag 0EZI absent from this repository (see LocallyQuasiCompact/ ZariskiComparisonSituationData.lean:52). The sheaves-of-sets version of (0EZ6) IS proved, as isSheaf\_qc\_comparisonInverseImage (LocallyQuasiCompact/QcComparisonNaturality.lean:357, which carries no tag of its own; the tagged 09X3 carriers are isSheaf\_qc\_germSectionsPresheaf and isIso\_toSheafify\_comparisonInverseImage, both in LocallyQuasiCompact/QcGermSectionsSheaf.lean), but only at coefficients Type u, which is why the abelian form is carried”.
 
 > **Stacks 0DCY (1), the identification `ε_{X,*}(a_X^{-1}F) = π_X^{-1}F`.** For an object `X`
 > of the site and an abelian sheaf `F` on the space underlying `X`, the change-of-topology direct
@@ -1127,7 +1127,7 @@ def qcAbelianDirectImageTopologicalInverseImageIso
       (S.abelianComparisonInverseImage.{u, w, max (u + 1) v} X).obj F
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.isZero_rightDerived_qcAbelianDirectImage_qcTopologicalInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcAbelianComparison.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcAbelianComparison.lean#L404). The attribute's comment: “clause (1), the vanishing R^i eps_{X,*}(a_X^{-1}F) = 0 for i > 0. NOT PROVED: it IS the vanishing condition (V_n) of Situation 0EZ3, carried as hV. The leading assertion of Tag 0EZF supplies that condition only granted SingleCoveringDescent -- see ChangeOfTopology/VanishingConditionAllDegrees.lean:117 -- and that descent statement is not proved anywhere. What IS proved here is only that pi_X^{-1}F lies in the class A'_X”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.isZero_rightDerived_qcAbelianDirectImage_qcTopologicalInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcAbelianComparison.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcAbelianComparison.lean#L404). The attribute's comment: “clause (1), the vanishing R^i eps\_\{X,*}(a\_X^\{-1}F) = 0 for i > 0. NOT PROVED: it IS the vanishing condition (V\_n) of Situation 0EZ3, carried as hV. The leading assertion of Tag 0EZF supplies that condition only granted SingleCoveringDescent -- see ChangeOfTopology/VanishingConditionAllDegrees.lean:117 -- and that descent statement is not proved anywhere. What IS proved here is only that pi\_X^\{-1}F lies in the class A'\_X”.
 
 > **Stacks 0DCY (1), the vanishing `R^i ε_{X,*}(a_X^{-1}F) = 0` for `i > 0`.**
 >
@@ -1218,7 +1218,7 @@ theorem isIso_qcTopologicalDerivedBaseChangeMap_app_of_proper
 
 [Tag 0D91](https://stacks.math.columbia.edu/tag/0D91) in the Stacks Project.
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.isIso_qcTopologicalDerivedUnit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcCohomologicalDescent.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcCohomologicalDescent.lean#L302). The attribute's comment: “cohomological descent for LC_qc: for X in LC_qc and K in D^+(X), the canonical map K -> Ra_{X,*}a_X^{-1}K is an isomorphism”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.isIso_qcTopologicalDerivedUnit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcCohomologicalDescent.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcCohomologicalDescent.lean#L302). The attribute's comment: “cohomological descent for LC\_qc: for X in LC\_qc and K in D^+(X), the canonical map K -> Ra\_\{X,*}a\_X^\{-1}K is an isomorphism”.
 
 > **Stacks 0D91**: cohomological descent for the quasi-compact site. For `X` an object of
 > `LC_qc` and `K` in `D⁺(X)` the canonical map `K ⟶ Ra_{X,*}a_X^{-1}K` is an isomorphism.
@@ -1234,7 +1234,7 @@ theorem isIso_qcTopologicalDerivedUnit_app
 
 [Tag 09X4](https://stacks.math.columbia.edu/tag/09X4) in the Stacks Project.
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcCohomologyComparisonIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcCohomologyComparison.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcCohomologyComparison.lean#L303). The attribute's comment: “part (1): H^n(X, F) = H^n_qc(X, a_X^{-1}F) for an abelian sheaf F on X, naturally in F, with cohomology read as the right derived functors of global sections”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcCohomologyComparisonIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcCohomologyComparison.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcCohomologyComparison.lean#L303). The attribute's comment: “part (1): H^n(X, F) = H^n\_qc(X, a\_X^\{-1}F) for an abelian sheaf F on X, naturally in F, with cohomology read as the right derived functors of global sections”.
 
 > **Stacks 09X4 for abelian sheaves.** For an object `X` of `LC_qc` and an abelian sheaf `F`
 > on the space underlying `X`, the cohomology of the localized quasi-compact site with
@@ -1251,7 +1251,7 @@ def qcCohomologyComparisonIso (n : ℕ) :
       (spaceGlobalSections.{u, w, v} S X).rightDerived n
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.constantSheafQcCohomologyComparisonIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcCohomologyComparison.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcCohomologyComparison.lean#L356). The attribute's comment: “the example: H^n(X, A) = H^n_qc(X, A) for an abelian group A, naturally in A”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.constantSheafQcCohomologyComparisonIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcCohomologyComparison.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcCohomologyComparison.lean#L356). The attribute's comment: “the example: H^n(X, A) = H^n\_qc(X, A) for an abelian group A, naturally in A”.
 
 > **Stacks 09X4, the constant-sheaf example.** For an abelian group `A`, the cohomology of the
 > space `X` with coefficients in the constant sheaf on `A` is the cohomology of the localized
@@ -1269,7 +1269,7 @@ def constantSheafQcCohomologyComparisonIso (n : ℕ) :
         (qcGlobalSections.{u, w, v} S X).rightDerived n
 ```
 
-**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcHypercohomologyComparisonIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcCohomologyComparison.lean, line 437](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcCohomologyComparison.lean#L437). The attribute's comment: “part (2): H^n(X, K) = H^n_qc(X, a_X^{-1}K) for K in D^+(X), naturally in K, with hypercohomology read as the cohomology of the right derived functor of global sections on D^+”.
+**`Stacks.Topology.LocallyQuasiCompactZariskiSituation.qcHypercohomologyComparisonIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcCohomologyComparison.lean, line 437](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcCohomologyComparison.lean#L437). The attribute's comment: “part (2): H^n(X, K) = H^n\_qc(X, a\_X^\{-1}K) for K in D^+(X), naturally in K, with hypercohomology read as the cohomology of the right derived functor of global sections on D^+”.
 
 > **Stacks 09X4 for bounded below complexes.** For an object `X` of `LC_qc` and `K` in
 > `D⁺(X)`, the hypercohomology of the space with coefficients in `K` is the hypercohomology of the

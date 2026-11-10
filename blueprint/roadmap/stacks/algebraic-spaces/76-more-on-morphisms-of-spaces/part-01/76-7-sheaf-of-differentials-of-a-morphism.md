@@ -270,7 +270,7 @@ theorem isIso_of_isSheafOfDifferentialsMap_etale (a : U ⟶ X) (ha : IsEtale B S
     (hc : IsSheafOfDifferentialsMap B S hS a f p' c) : IsIso c
 ```
 
-**`AlgebraicGeometry.Space.sheafOfDifferentialsIsoOfSharpIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsEtaleLocalization.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsEtaleLocalization.lean#L239). The attribute's comment: “the étale-base step: Ω_{X/Y} = Ω_{X/Z} when the two structure maps differ by an isomorphism of their sources, which is what 03G8 and the clause `b⁻¹𝒪_Y = 𝒪_V` of 03LV supply for an étale `b : V ⟶ Y` at `p = ψ`, `q = ψ ≫ b`”.
+**`AlgebraicGeometry.Space.sheafOfDifferentialsIsoOfSharpIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsEtaleLocalization.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsEtaleLocalization.lean#L239). The attribute's comment: “the étale-base step: Ω\_\{X/Y} = Ω\_\{X/Z} when the two structure maps differ by an isomorphism of their sources, which is what 03G8 and the clause `b⁻¹𝒪_Y = 𝒪_V` of 03LV supply for an étale `b : V ⟶ Y` at `p = ψ`, `q = ψ ≫ b`”.
 
 > **Stacks 04CU, the étale-base step.**  If the structure maps of `p : X ⟶ Y` and `q : X ⟶ Z`
 > differ by an isomorphism `e` of their sources, then the two sheaves of differentials agree:
@@ -307,7 +307,7 @@ lemma universalDerivation_sheafOfDifferentialsIsoOfSharpIso
       (universalDerivation B S hS q).d x
 ```
 
-**`AlgebraicGeometry.Space.sheafOfDifferentialsEtaleLocalizationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsEtaleLocalization.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsEtaleLocalization.lean#L342). The attribute's comment: “the identification Ω_{X/Y}|_{U_étale} ≅ Ω_{U/V} on a square of étale charts, from the étale-source localization of 03LP, 03LQ and 04BO and the étale-base comparison of 03G8 and 03LV”.
+**`AlgebraicGeometry.Space.sheafOfDifferentialsEtaleLocalizationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsEtaleLocalization.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsEtaleLocalization.lean#L342). The attribute's comment: “the identification Ω\_\{X/Y}|\_\{U\_étale} ≅ Ω\_\{U/V} on a square of étale charts, from the étale-source localization of 03LP, 03LQ and 04BO and the étale-base comparison of 03G8 and 03LV”.
 
 > **Stacks 04CU.**  Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` and let
 > `a ≫ f = ψ ≫ b` be a commutative square with `a : U ⟶ X` and `b : V ⟶ Y` étale.  Then the
@@ -831,7 +831,7 @@ theorem eq_comp_of_isSheafOfDifferentialsMap (f : X' ⟶ X) (g : X'' ⟶ X') (p 
 
 [Tag 05Z8](https://stacks.math.columbia.edu/tag/05Z8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.triangleDifferentials_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDifferentialsTriangle.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDifferentialsTriangle.lean#L302). The attribute's comment: “exactness at the right term: the map to Ω_{X/Y} is an epimorphism”.
+**`AlgebraicGeometry.Space.triangleDifferentials_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDifferentialsTriangle.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDifferentialsTriangle.lean#L302). The attribute's comment: “exactness at the right term: the map to Ω\_\{X/Y} is an epimorphism”.
 
 > **Stacks 05Z8**, exactness at the right term of the transitivity sequence
 > `f^*Ω_{Y/B} ⟶ Ω_{X/B} ⟶ Ω_{X/Y} ⟶ 0`: the canonical map `Ω_{X/B} ⟶ Ω_{X/Y}` is an epimorphism.
@@ -845,7 +845,7 @@ theorem triangleDifferentials_epi (f : X ⟶ Y) (g : Y ⟶ Z) :
     Epi (toRelativeDifferentials B S hS f g)
 ```
 
-**`AlgebraicGeometry.Space.triangleDifferentials_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDifferentialsTriangle.lean, line 506](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDifferentialsTriangle.lean#L506). The attribute's comment: “the composite of the two maps is zero, and exactness at the middle term Ω_{X/B}”.
+**`AlgebraicGeometry.Space.triangleDifferentials_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDifferentialsTriangle.lean, line 506](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDifferentialsTriangle.lean#L506). The attribute's comment: “the composite of the two maps is zero, and exactness at the middle term Ω\_\{X/B}”.
 
 > **Stacks 05Z8**, the two clauses of the transitivity sequence
 > `f^*Ω_{Y/B} ⟶ Ω_{X/B} ⟶ Ω_{X/Y} ⟶ 0` that concern its left half: the composite of the two maps
@@ -872,7 +872,7 @@ theorem triangleDifferentials_exact (f : X ⟶ Y) (g : Y ⟶ Z) :
 
 [Tag 05Z9](https://stacks.math.columbia.edu/tag/05Z9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isZero_sheafOfDifferentials_of_isLocallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsImmersion.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsImmersion.lean#L331). The attribute's comment: “the vanishing Ω_{X/Y} = 0, from local surjectivity of `f♯`; the gap to the source's hypothesis is that an immersion of algebraic spaces has locally surjective structure map, which is the inverse-image form of the surjectivity clause of 03MB”.
+**`AlgebraicGeometry.Space.isZero_sheafOfDifferentials_of_isLocallySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsImmersion.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsImmersion.lean#L331). The attribute's comment: “the vanishing Ω\_\{X/Y} = 0, from local surjectivity of `f♯`; the gap to the source's hypothesis is that an immersion of algebraic spaces has locally surjective structure map, which is the inverse-image form of the surjectivity clause of 03MB”.
 
 > **Stacks 05Z9**, with local surjectivity of the structure map in place of the hypothesis
 > that `f` is an immersion.  If `f♯ : f⁻¹𝒪_Y ⟶ 𝒪_X` is locally surjective then `Ω_{X/Y}` is zero.
@@ -1260,7 +1260,7 @@ theorem nonempty_conormalSequenceOfImmersion_splitting_of_etale (i : Zs ⟶ W) (
       IsSplitEpi ((modulePullback B S hS a).map (pullbackDifferentialsMap B S hS i b))
 ```
 
-**`AlgebraicGeometry.Space.nonempty_map_conormalSequenceOfImmersion_splitting_of_isEtaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceImmersionSplitExactEtaleLocal.lean, line 723](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceImmersionSplitExactEtaleLocal.lean#L723). The attribute's comment: “the étale-local clause in full: if i étale locally has a left inverse (on an étale covering {X_k → X} with Z_k = Z ×_X X_k), the restriction to each Z_k of the whole conormal sequence of i is split exact”.
+**`AlgebraicGeometry.Space.nonempty_map_conormalSequenceOfImmersion_splitting_of_isEtaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceImmersionSplitExactEtaleLocal.lean, line 723](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceImmersionSplitExactEtaleLocal.lean#L723). The attribute's comment: “the étale-local clause in full: if i étale locally has a left inverse (on an étale covering \{X\_k → X} with Z\_k = Z ×\_X X\_k), the restriction to each Z\_k of the whole conormal sequence of i is split exact”.
 
 > **Stacks 05ZB, the étale-local clause in full.**  Let `i : Z ⟶ X` be an immersion of
 > algebraic spaces over `Bb` with structure morphism `b : X ⟶ Bb`, and assume that `i` étale
@@ -1640,7 +1640,7 @@ theorem isIso_biprodDesc_of_isSheafOfDifferentialsMap {W T : AlgebraicSpaces B S
     IsIso (biprod.desc a b)
 ```
 
-**`AlgebraicGeometry.Space.isIso_biprodDesc_sheafOfDifferentialsMap_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsSchemeSquareBijective.lean, line 484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsSchemeSquareBijective.lean#L484). The attribute's comment: “the two maps of 04CX out of p^*Omega_{X/T} and q^*Omega_{Y/T} give an isomorphism onto Omega_{X x_T Y/T}, with the fibre product presented as a cartesian square and each summand by the property characterizing it. The étale localization of 04CU and the scheme case 01V1 are both applied as proved”.
+**`AlgebraicGeometry.Space.isIso_biprodDesc_sheafOfDifferentialsMap_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsSchemeSquareBijective.lean, line 484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsSchemeSquareBijective.lean#L484). The attribute's comment: “the two maps of 04CX out of p^*Omega\_\{X/T} and q^*Omega\_\{Y/T} give an isomorphism onto Omega\_\{X x\_T Y/T}, with the fibre product presented as a cartesian square and each summand by the property characterizing it. The étale localization of 04CU and the scheme case 01V1 are both applied as proved”.
 
 > **Stacks 05ZD.**  Let `f : X ⟶ T` and `g : Y ⟶ T` be morphisms of algebraic spaces over `S`
 > with the same target and let `p : W ⟶ X`, `q : W ⟶ Y` be the projections of the fibre product
@@ -1672,7 +1672,7 @@ theorem isIso_biprodDesc_sheafOfDifferentialsMap_of_isPullback {W T : AlgebraicS
 
 [Tag 05ZE](https://stacks.math.columbia.edu/tag/05ZE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteTypeOnSite_sheafOfDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFiniteType.lean, line 652](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFiniteType.lean#L652). The attribute's comment: “finite type of Ω_{X/Y}, from étale-local finite generation of 𝒪_X over f⁻¹𝒪_Y and unramifiedness of the transition maps of the small étale site; the gap to the source's hypothesis is the bridge from 03XF(1) to the algebra statement, and 00UU for the sections of an arrow of the small étale site”.
+**`AlgebraicGeometry.Space.isFiniteTypeOnSite_sheafOfDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFiniteType.lean, line 652](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFiniteType.lean#L652). The attribute's comment: “finite type of Ω\_\{X/Y}, from étale-local finite generation of 𝒪\_X over f⁻¹𝒪\_Y and unramifiedness of the transition maps of the small étale site; the gap to the source's hypothesis is the bridge from 03XF(1) to the algebra statement, and 00UU for the sections of an arrow of the small étale site”.
 
 > **Stacks 05ZE**, with the two carried hypotheses in place of "`f` is locally of finite
 > type".  If `𝒪_X` is étale-locally generated as an `f⁻¹𝒪_Y`-algebra by finitely many sections and
@@ -1690,7 +1690,7 @@ theorem isFiniteTypeOnSite_sheafOfDifferentials (f : X ⟶ Y)
     (sheafOfDifferentials B S hS f).IsFiniteTypeOnSite
 ```
 
-**`AlgebraicGeometry.Space.isFiniteTypeOnSite_sheafOfDifferentials_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFiniteType.lean, line 676](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFiniteType.lean#L676). The attribute's comment: “the source's statement, carrying the bridge from 03XF(1) to étale-local finite generation of 𝒪_X over f⁻¹𝒪_Y as `hft` and unramifiedness of the transition maps of a small étale site (00UU) as `hunram`, both quantified over all algebraic spaces over `S`”.
+**`AlgebraicGeometry.Space.isFiniteTypeOnSite_sheafOfDifferentials_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFiniteType.lean, line 676](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFiniteType.lean#L676). The attribute's comment: “the source's statement, carrying the bridge from 03XF(1) to étale-local finite generation of 𝒪\_X over f⁻¹𝒪\_Y as `hft` and unramifiedness of the transition maps of a small étale site (00UU) as `hunram`, both quantified over all algebraic spaces over `S`”.
 
 > **Stacks 05ZE.**  If `f : X ⟶ Y` is a morphism of algebraic spaces over `S` which is locally
 > of finite type, then `Ω_{X/Y}` is a finite type `𝒪_X`-module.
@@ -1710,7 +1710,7 @@ theorem isFiniteTypeOnSite_sheafOfDifferentials_of_isLocallyOfFiniteType
     (sheafOfDifferentials B S hS f).IsFiniteTypeOnSite
 ```
 
-**`AlgebraicGeometry.Space.isFiniteTypeOnSite_sheafOfDifferentials_of_affineChartAlgebras`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFiniteType.lean, line 796](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFiniteType.lean#L796). The attribute's comment: “finite type of Ω_{X/Y} from étale-local finite generation of 𝒪_X over f⁻¹𝒪_Y on a covering by affine charts, which is what 03XF(1) delivers; unramifiedness of the transition maps of the small étale site (00UU) is proved, not assumed. The source's own hypothesis is taken in `isFiniteTypeOnSite_sheafOfDifferentials_of_isLocallyOfFiniteType_unconditional`”.
+**`AlgebraicGeometry.Space.isFiniteTypeOnSite_sheafOfDifferentials_of_affineChartAlgebras`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFiniteType.lean, line 796](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFiniteType.lean#L796). The attribute's comment: “finite type of Ω\_\{X/Y} from étale-local finite generation of 𝒪\_X over f⁻¹𝒪\_Y on a covering by affine charts, which is what 03XF(1) delivers; unramifiedness of the transition maps of the small étale site (00UU) is proved, not assumed. The source's own hypothesis is taken in `isFiniteTypeOnSite_sheafOfDifferentials_of_isLocallyOfFiniteType_unconditional`”.
 
 > **Finite type of `Ω_{X/Y}` from the étale-local finite generation of `𝒪_X` over `f⁻¹𝒪_Y`.**
 > If every object of the small étale site of `X` has a covering by affine charts over which `𝒪_X`
@@ -1736,7 +1736,7 @@ theorem isFiniteTypeOnSite_sheafOfDifferentials_of_affineChartAlgebras (f : X �
     (sheafOfDifferentials B S hS f).IsFiniteTypeOnSite
 ```
 
-**`AlgebraicGeometry.Space.isFiniteTypeOnSite_sheafOfDifferentials_of_isLocallyOfFiniteType_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFiniteTypeChartBridge.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFiniteTypeChartBridge.lean#L268). The attribute's comment: “Ω_{X/Y} is a finite type 𝒪_X-module for f locally of finite type, with no further hypothesis”.
+**`AlgebraicGeometry.Space.isFiniteTypeOnSite_sheafOfDifferentials_of_isLocallyOfFiniteType_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFiniteTypeChartBridge.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFiniteTypeChartBridge.lean#L268). The attribute's comment: “Ω\_\{X/Y} is a finite type 𝒪\_X-module for f locally of finite type, with no further hypothesis”.
 
 > **Stacks 05ZE.**  If `f : X ⟶ Y` is a morphism of algebraic spaces over `S` which is locally
 > of finite type, then `Ω_{X/Y}` is a finite type `𝒪_X`-module.
@@ -1775,7 +1775,7 @@ theorem isFiniteTypeOnSite_sheafOfDifferentials_of_isLocallyOfFiniteType_hom
 
 [Tag 05ZF](https://stacks.math.columbia.edu/tag/05ZF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFinitePresentationOnSite_sheafOfDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFinitePresentation.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFinitePresentation.lean#L519). The attribute's comment: “finite presentation of Ω_{X/Y}. ASSUMED, not proved: the relations half of Descent, Proposition 03DX(2), as the last clause of `hfp` — that the relations among the universal differentials of a finite generating family are étale-locally finitely generated. Also assumed: the bridge from 03XP(1) to étale-local finite generation of 𝒪_X over f⁻¹𝒪_Y (first clause of `hfp`), and unramifiedness of the transition maps of the small étale site (`hunram`, 00UU), which `hasUnramifiedChartTransitions_of_forall_isAffine` discharges when every étale chart is affine. PROVED here: the generators half and the assembly into 03DL(7)”.
+**`AlgebraicGeometry.Space.isFinitePresentationOnSite_sheafOfDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFinitePresentation.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFinitePresentation.lean#L519). The attribute's comment: “finite presentation of Ω\_\{X/Y}. ASSUMED, not proved: the relations half of Descent, Proposition 03DX(2), as the last clause of `hfp` — that the relations among the universal differentials of a finite generating family are étale-locally finitely generated. Also assumed: the bridge from 03XP(1) to étale-local finite generation of 𝒪\_X over f⁻¹𝒪\_Y (first clause of `hfp`), and unramifiedness of the transition maps of the small étale site (`hunram`, 00UU), which `hasUnramifiedChartTransitions_of_forall_isAffine` discharges when every étale chart is affine. PROVED here: the generators half and the assembly into 03DL(7)”.
 
 > **Stacks 05ZF**, with the two carried hypotheses in place of "`f` is locally of finite
 > presentation".  If `𝒪_X` is étale-locally generated as an `f⁻¹𝒪_Y`-algebra by finitely many
@@ -1794,7 +1794,7 @@ theorem isFinitePresentationOnSite_sheafOfDifferentials (f : X ⟶ Y)
     (sheafOfDifferentials B S hS f).IsFinitePresentationOnSite
 ```
 
-**`AlgebraicGeometry.Space.isFinitePresentationOnSite_sheafOfDifferentials_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFinitePresentation.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFinitePresentation.lean#L548). The attribute's comment: “the source's statement. ASSUMED, not proved: the relations half of Descent, Proposition 03DX(2), inside `hfp`; the bridge from 03XP(1) to étale-local finite presentation data for 𝒪_X over f⁻¹𝒪_Y, also inside `hfp`; and unramifiedness of the transition maps of a small étale site (`hunram`, 00UU), discharged by `hasUnramifiedChartTransitions_of_forall_isAffine` when every étale chart is affine. Both inputs are quantified over all algebraic spaces over `S`”.
+**`AlgebraicGeometry.Space.isFinitePresentationOnSite_sheafOfDifferentials_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFinitePresentation.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFinitePresentation.lean#L548). The attribute's comment: “the source's statement. ASSUMED, not proved: the relations half of Descent, Proposition 03DX(2), inside `hfp`; the bridge from 03XP(1) to étale-local finite presentation data for 𝒪\_X over f⁻¹𝒪\_Y, also inside `hfp`; and unramifiedness of the transition maps of a small étale site (`hunram`, 00UU), discharged by `hasUnramifiedChartTransitions_of_forall_isAffine` when every étale chart is affine. Both inputs are quantified over all algebraic spaces over `S`”.
 
 > **Stacks 05ZF.**  If `f : X ⟶ Y` is a morphism of algebraic spaces over `S` which is
 > locally of finite presentation, then `Ω_{X/Y}` is an `𝒪_X`-module of finite presentation.
@@ -1815,7 +1815,7 @@ theorem isFinitePresentationOnSite_sheafOfDifferentials_of_isLocallyOfFinitePres
     (sheafOfDifferentials B S hS f).IsFinitePresentationOnSite
 ```
 
-**`AlgebraicGeometry.Space.isFinitePresentationOnSite_sheafOfDifferentials_of_chartData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFinitePresentation.lean, line 736](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFinitePresentation.lean#L736). The attribute's comment: “finite presentation of Ω_{X/Y} from étale-local finite presentation data for 𝒪_X over f⁻¹𝒪_Y; unramifiedness of the transition maps of the small étale site (00UU) is proved, not assumed. The source's own hypothesis is taken in `isFinitePresentationOnSite_sheafOfDifferentials_of_isLocallyOfFinitePresentation_unconditional`”.
+**`AlgebraicGeometry.Space.isFinitePresentationOnSite_sheafOfDifferentials_of_chartData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFinitePresentation.lean, line 736](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFinitePresentation.lean#L736). The attribute's comment: “finite presentation of Ω\_\{X/Y} from étale-local finite presentation data for 𝒪\_X over f⁻¹𝒪\_Y; unramifiedness of the transition maps of the small étale site (00UU) is proved, not assumed. The source's own hypothesis is taken in `isFinitePresentationOnSite_sheafOfDifferentials_of_isLocallyOfFinitePresentation_unconditional`”.
 
 > **Finite presentation of `Ω_{X/Y}` from étale-local presentation data for `𝒪_X` over
 > `f⁻¹𝒪_Y`.**  If `𝒪_X` is étale-locally generated as an `f⁻¹𝒪_Y`-algebra by finitely many sections
@@ -1842,7 +1842,7 @@ theorem isFinitePresentationOnSite_sheafOfDifferentials_of_chartData (f : X ⟶ 
     (sheafOfDifferentials B S hS f).IsFinitePresentationOnSite
 ```
 
-**`AlgebraicGeometry.Space.isFinitePresentationOnSite_sheafOfDifferentials_of_isLocallyOfFinitePresentation_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFinitePresentation.lean, line 768](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFinitePresentation.lean#L768). The attribute's comment: “finite presentation of Ω_{X/Y} for a morphism of algebraic spaces locally of finite presentation”. References: SGA 3 III (0.14), “more general”; SGA 7 VI (5.1), “partial”.
+**`AlgebraicGeometry.Space.isFinitePresentationOnSite_sheafOfDifferentials_of_isLocallyOfFinitePresentation_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFinitePresentation.lean, line 768](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsFinitePresentation.lean#L768). The attribute's comment: “finite presentation of Ω\_\{X/Y} for a morphism of algebraic spaces locally of finite presentation”. References: SGA 3 III (0.14), “more general”; SGA 7 VI (5.1), “partial”.
 
 > **Stacks 05ZF.**  If `f : X ⟶ Y` is a morphism of algebraic spaces over `S` which is locally
 > of finite presentation, then `Ω_{X/Y}` is an `𝒪_X`-module of finite presentation.
@@ -1892,7 +1892,7 @@ theorem isFiniteLocallyFreeOnSite_sheafOfDifferentials_of_isSmooth
     SheafOfModules.IsFiniteLocallyFreeOnSite (sheafOfDifferentials B S hS f)
 ```
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFreeOnSite_sheafOfDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsSmoothFiniteLocallyFree.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsSmoothFiniteLocallyFree.lean#L199). The attribute's comment: “granted as `hsite` the comparison of 04CS transporting finite local freeness of the differentials of a morphism of schemes of the site from its small Zariski site to its small étale site. The identification Ω_{X/Y}|_{U_étale} ≅ Ω_{U/V} of 04CU over a commuting square of étale charts is not granted: it is proved here”.
+**`AlgebraicGeometry.Space.isFiniteLocallyFreeOnSite_sheafOfDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsSmoothFiniteLocallyFree.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafOfDifferentialsSmoothFiniteLocallyFree.lean#L199). The attribute's comment: “granted as `hsite` the comparison of 04CS transporting finite local freeness of the differentials of a morphism of schemes of the site from its small Zariski site to its small étale site. The identification Ω\_\{X/Y}|\_\{U\_étale} ≅ Ω\_\{U/V} of 04CU over a commuting square of étale charts is not granted: it is proved here”.
 
 > **Stacks 0CK5.** The sheaf of differentials `Ω_{X/Y}` of a smooth morphism `f : X ⟶ Y` of
 > algebraic spaces over a scheme `S` is finite locally free on the small étale site of `X`,

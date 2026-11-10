@@ -14,7 +14,7 @@ Section 40.7 of the Stacks Project, [Tag 04LJ](https://stacks.math.columbia.edu/
 
 [Tag 02YF](https://stacks.math.columbia.edu/tag/02YF) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_common_field_fiber_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/CommonField.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/CommonField.lean#L134). The attribute's comment: “common_field”.
+**`AlgebraicGeometry.exists_common_field_fiber_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/CommonField.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/CommonField.lean#L134). The attribute's comment: “common\_field”.
 
 > If two arrows in a groupoid scheme have the same target, then the fibres of the source
 > map over their sources become isomorphic after extending both residue fields to a common
@@ -38,7 +38,7 @@ public theorem exists_common_field_fiber_iso {S : Scheme.{u}}
             (algebraMap (G.objects.left.residueField (G.source.left r')) K)))))
 ```
 
-**`AlgebraicGeometry.exists_common_field_fiber_iso_mapping_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/CommonField.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/CommonField.lean#L162). The attribute's comment: “point_compatible”.
+**`AlgebraicGeometry.exists_common_field_fiber_iso_mapping_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/CommonField.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/CommonField.lean#L162). The attribute's comment: “point\_compatible”.
 
 > The common field and source-fibre isomorphism for two arrows with the same target can be
 > chosen so that the isomorphism carries a point above the first arrow to a point above the

@@ -278,7 +278,7 @@ theorem normalizationIsoMeromorphicSpectrum_hom_toBase (X : Scheme.{u}) [IsReduc
 
 [Tag 01X5](https://stacks.math.columbia.edu/tag/01X5) in the Stacks Project.
 
-**`AlgebraicGeometry.totalQuotientSheafIsoConstant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/ConstantOnIntegral.lean, line 628](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/ConstantOnIntegral.lean#L628). The attribute's comment: “part (1)”. References: EGA I (7.3.6), “F = O_X, integral”.
+**`AlgebraicGeometry.totalQuotientSheafIsoConstant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/ConstantOnIntegral.lean, line 628](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/ConstantOnIntegral.lean#L628). The attribute's comment: “part (1)”. References: EGA I (7.3.6), “F = O\_X, integral”.
 
 > An isomorphism between the sheaf of meromorphic functions on an integral scheme and the
 > constant sheaf on its function field, carrying a regular section to the constant section
@@ -322,7 +322,7 @@ theorem nonempty_meromorphicSectionSheafIsoConstant [F.IsQuasicoherent] :
             (F.presheaf.germ U (genericPoint X) h m) }
 ```
 
-**`Stacks.AlgebraicGeometry.MeromorphicConstant.totalQuotientSheafIsoConstant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicConstant/Basic.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicConstant/Basic.lean#L417). The attribute's comment: “part (1)”. References: EGA I (7.3.6), “F = O_X, integral”.
+**`Stacks.AlgebraicGeometry.MeromorphicConstant.totalQuotientSheafIsoConstant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MeromorphicConstant/Basic.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MeromorphicConstant/Basic.lean#L417). The attribute's comment: “part (1)”. References: EGA I (7.3.6), “F = O\_X, integral”.
 
 > On an integral scheme the sheaf of meromorphic functions is the constant sheaf with value the
 > function field, by an isomorphism carrying the image of a regular function to the constant

@@ -296,7 +296,7 @@ theorem id_cone_homotopic_zero (S : ConeSituation A) (x : A.Obj) :
 
 [Tag 09QL](https://stacks.math.columbia.edu/tag/09QL) in the Stacks Project.
 
-**`DGCategory.exists_rectification_of_isAdmissibleMono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Rectification.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Rectification.lean#L66). The attribute's comment: “adjust_right”.
+**`DGCategory.exists_rectification_of_isAdmissibleMono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Rectification.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Rectification.lean#L66). The attribute's comment: “adjust\_right”.
 
 > Rectify the right arrow of a homotopy-commutative square along an admissible
 > monomorphism.
@@ -310,7 +310,7 @@ theorem exists_rectification_of_isAdmissibleMono {x y z w : A.Obj}
       A.Homotopic b b' ∧ A.compCocycle b' f = A.compCocycle g a
 ```
 
-**`DGCategory.exists_rectification_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Rectification.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Rectification.lean#L87). The attribute's comment: “adjust_left”.
+**`DGCategory.exists_rectification_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/Rectification.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Rectification.lean#L87). The attribute's comment: “adjust\_left”.
 
 > Rectify the left arrow of a homotopy-commutative square along an admissible epimorphism,
 > presented by a degree-zero section of its lower horizontal arrow.

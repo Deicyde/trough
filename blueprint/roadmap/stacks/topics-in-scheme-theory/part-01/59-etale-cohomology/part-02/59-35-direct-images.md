@@ -63,7 +63,7 @@ Declarations registered for the tag:
 
 [Tag 03PY](https://stacks.math.columbia.edu/tag/03PY) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.smallEtaleDirectImage`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDirectImages.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDirectImages.lean#L70). References: SGA 4½ Arcata (2.3), “f_* definition”; SGA 4 VII (1.4).
+**`Stacks.EtaleCohomology.smallEtaleDirectImage`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDirectImages.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDirectImages.lean#L70). References: SGA 4½ Arcata (2.3), “f\_* definition”; SGA 4 VII (1.4).
 
 > **The direct image, or pushforward, `f_*` along `f : X ⟶ Y`** on sheaves of sets of the
 > small étale sites: the sheaf `f_* F` on `Y_étale` sends an étale `Y`-scheme `V` to `F(V ×_Y X)`,
@@ -79,7 +79,7 @@ abbrev smallEtaleDirectImage :
 
 [Tag 04I2](https://stacks.math.columbia.edu/tag/04I2) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.etaleAbelianHigherDirectImage`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDirectImages.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDirectImages.lean#L90). References: SGA 4½ Arcata (2.3), “R^p f_* definition”; SGA 4½ Arcata (2.3.3), “higher direct images”.
+**`Stacks.EtaleCohomology.etaleAbelianHigherDirectImage`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDirectImages.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDirectImages.lean#L90). References: SGA 4½ Arcata (2.3), “R^p f\_* definition”; SGA 4½ Arcata (2.3.3), “higher direct images”.
 
 > **The higher direct images `R^p f_*` along `f : X ⟶ Y`**: the right derived functors of the
 > direct image `f_* : Ab(X_étale) ⥤ Ab(Y_étale)` on abelian sheaves of the small étale sites. The

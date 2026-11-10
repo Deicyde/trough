@@ -135,7 +135,7 @@ theorem isPullback_gluedRelationSource_of_isPullback
     IsPullback r s s' v
 ```
 
-**`AlgebraicGeometry.isPullback_gluedRelationSource`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GluedEtaleRelationTransition.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GluedEtaleRelationTransition.lean#L378). The attribute's comment: “the displayed square for R_i glued from V_i and W_i x_{U_i} W_i is cartesian”.
+**`AlgebraicGeometry.isPullback_gluedRelationSource`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GluedEtaleRelationTransition.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GluedEtaleRelationTransition.lean#L378). The attribute's comment: “the displayed square for R\_i glued from V\_i and W\_i x\_\{U\_i} W\_i is cartesian”.
 
 > **Stacks Project, Tag 07SV.** The displayed square of the proof of absolute Noetherian
 > approximation, written out for the construction the source performs. Let `w' : W' ⟶ U'` be

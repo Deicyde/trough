@@ -248,7 +248,7 @@ theorem exists_local_lift_homotopy (α : E ⟶ F) (f : G ⟶ F) (a : ℤ)
 
 [Tag 08C9](https://stacks.math.columbia.edu/tag/08C9) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.exists_local_homotopy_zero_of_derived_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLocalRep.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLocalRep.lean#L338). The attribute's comment: “local_null_homotopy”. References: SGA 6 I (4.1), “special case”.
+**`AlgebraicGeometry.RingedSpace.exists_local_homotopy_zero_of_derived_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLocalRep.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLocalRep.lean#L338). The attribute's comment: “local\_null\_homotopy”. References: SGA 6 I (4.1), “special case”.
 
 > **Stacks 08C9, part (2).** Let `α : ℰ ⟶ ℱ` be a morphism of complexes of `𝒪_X`-modules with
 > `ℰ` strictly perfect whose image in the derived category of `X` is zero. Then every point of `X`
@@ -270,7 +270,7 @@ public theorem exists_local_homotopy_zero_of_derived_eq_zero
           (ComplexShape.up ℤ)).map α) 0)
 ```
 
-**`AlgebraicGeometry.RingedSpace.exists_local_complex_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLocalRep.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLocalRep.lean#L433). The attribute's comment: “local_representation”.
+**`AlgebraicGeometry.RingedSpace.exists_local_complex_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLocalRep.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLocalRep.lean#L433). The attribute's comment: “local\_representation”.
 
 > **Stacks 08C9, part (1).** Let `ℰ`, `ℱ` be complexes of `𝒪_X`-modules with `ℰ` strictly
 > perfect and let `α : ℰ ⟶ ℱ` be a morphism in the derived category of `X`. Then every point of `X`
@@ -306,7 +306,7 @@ public theorem exists_local_complex_map [HasDerivedCategory.{d} (OXMod.{u, u} X)
               DerivedCategory.Q.map β
 ```
 
-**`Stacks.Cohomology.exists_local_complex_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/LocalRepresentation.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/LocalRepresentation.lean#L216). The attribute's comment: “local_representation”.
+**`Stacks.Cohomology.exists_local_complex_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/LocalRepresentation.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/LocalRepresentation.lean#L216). The attribute's comment: “local\_representation”.
 
 > A derived morphism out of a strictly perfect complex is locally represented by a morphism of
 > complexes.
@@ -338,8 +338,8 @@ theorem exists_local_complex_map (hE : IsStrictlyPerfect E)
 **`Stacks.SheafOfModules.strictlyPerfectHomDegreeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomRepresentation.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomRepresentation.lean#L90). The attribute's comment: “finite direct-sum terms and Hom differential”.
 
 > **Stacks 08DM, the degreewise description.** The degree-`n` term of the internal Hom complex
-> `SheafHom(E, F)` of a bounded complex `E` is the finite direct sum `⊕_q Hom_{O_X}(E^{-q},
-> F^{n-q})`, that is `⊕_{n = p + q} Hom_{O_X}(E^{-q}, F^p)`.
+> `SheafHom(E, F)` of a bounded complex `E` is the finite direct sum `⊕\_q Hom\_\{O\_X}(E^\{-q},
+> F^\{n-q})`, that is `⊕\_\{n = p + q} Hom\_\{O\_X}(E^\{-q}, F^p)`.
 
 ```lean
 def strictlyPerfectHomDegreeIso (hE : {i : ℤ | ¬ IsZero (E.X i)}.Finite) (n : ℤ) :
@@ -371,7 +371,7 @@ theorem strictlyPerfectHomComparison_isIso
 
 [Tag 0GM5](https://stacks.math.columbia.edu/tag/0GM5) in the Stacks Project.
 
-**`Stacks.SheafOfModules.isKFlat_sheafHomComplex_of_isKFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomKFlat.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomKFlat.lean#L260). The attribute's comment: “the whole lemma on a ringed space: for E strictly perfect, written out as in Definition 20.46.1 -- hE is 'E^i is zero for all but finitely many i' and hterm is 'E^i is a direct summand of a finite free O_X-module for all i' -- and F K-flat (hF), the complex sheafHomComplex E F is K-flat”.
+**`Stacks.SheafOfModules.isKFlat_sheafHomComplex_of_isKFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomKFlat.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomKFlat.lean#L260). The attribute's comment: “the whole lemma on a ringed space: for E strictly perfect, written out as in Definition 20.46.1 -- hE is 'E^i is zero for all but finitely many i' and hterm is 'E^i is a direct summand of a finite free O\_X-module for all i' -- and F K-flat (hF), the complex sheafHomComplex E F is K-flat”.
 
 > **Stacks 0GM5.** In the situation of Stacks 08DM — `E` strictly perfect, so that the
 > internal Hom complex `H = SheafHom(E, F)` represents `RSheafHom(E, F)` — the complex `H` is

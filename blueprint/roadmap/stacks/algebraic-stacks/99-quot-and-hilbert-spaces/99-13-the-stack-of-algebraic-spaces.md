@@ -135,7 +135,7 @@ theorem properFlatSpacesStack_hasRepresentableDiagonal :
 
 [Tag 0D1G](https://stacks.math.columbia.edu/tag/0D1G) in the Stacks Project.
 
-**`AlgebraicGeometry.cartesianFiniteTypeProjection_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L110). The attribute's comment: “Spaces'_ft is fibred in groupoids and a stack (Stacks 02ZJ (3))”.
+**`AlgebraicGeometry.cartesianFiniteTypeProjection_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L110). The attribute's comment: “Spaces'\_ft is fibred in groupoids and a stack (Stacks 02ZJ (3))”.
 
 > **Stacks 0D1G**, the finite-type families, in the form of Stacks 02ZJ (3): `Spaces'_ft` is
 > fibred in groupoids and is a stack over the big fppf site of `S` (Stacks 026F).
@@ -146,7 +146,7 @@ theorem cartesianFiniteTypeProjection_isStack :
       (cartesianFiniteTypeProjection B S hS).IsStack (BigFppfOver.topology B S hS)
 ```
 
-**`AlgebraicGeometry.cartesianProperFlatProjection_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L336). The attribute's comment: “Spaces'_{fp, flat, proper} is fibred in groupoids and a stack (Stacks 02ZJ (3))”.
+**`AlgebraicGeometry.cartesianProperFlatProjection_isStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L336). The attribute's comment: “Spaces'\_\{fp, flat, proper} is fibred in groupoids and a stack (Stacks 02ZJ (3))”.
 
 > **Stacks 0D1G**, the finitely presented, flat and proper families, in the form of Stacks 02ZJ
 > (3): `Spaces'_{fp, flat, proper}` is fibred in groupoids and is a stack over the big fppf site of
@@ -173,14 +173,14 @@ theorem stackOfSpaces_isStackInGroupoids.{w} :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.cartesianFiniteTypeProjection_isStackInGroupoids`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesGroupoid.lean#L393), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L94) (StacksFrontier): “Spaces'_ft is a stack in groupoids (Stacks 02ZI)”.
-- [`AlgebraicGeometry.cartesianProperFlatProjection_isStackInGroupoids`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesGroupoid.lean#L415), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L329) (StacksFrontier): “Spaces'_{fp, flat, proper} is a stack in groupoids (Stacks 02ZI)”.
+- [`AlgebraicGeometry.cartesianFiniteTypeProjection_isStackInGroupoids`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesGroupoid.lean#L393), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L94) (StacksFrontier): “Spaces'\_ft is a stack in groupoids (Stacks 02ZI)”.
+- [`AlgebraicGeometry.cartesianProperFlatProjection_isStackInGroupoids`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesGroupoid.lean#L415), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/StackOfSpacesStack.lean#L329) (StacksFrontier): “Spaces'\_\{fp, flat, proper} is a stack in groupoids (Stacks 02ZI)”.
 
 ## Tag 0E93, a lemma
 
 [Tag 0E93](https://stacks.math.columbia.edu/tag/0E93) in the Stacks Project.
 
-**`AlgebraicGeometry.SpacesOverSpace.finiteTypeBaseChange_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean#L109). The attribute's comment: “the first equivalence: finite type morphisms X ⟶ T and functors 𝒮_T ⟶ Spaces'_ft”.
+**`AlgebraicGeometry.SpacesOverSpace.finiteTypeBaseChange_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean#L109). The attribute's comment: “the first equivalence: finite type morphisms X ⟶ T and functors 𝒮\_T ⟶ Spaces'\_ft”.
 
 > **Stacks 0E93**, the first equivalence: finite type morphisms of algebraic spaces `X ⟶ T`,
 > with isomorphisms over `T`, are equivalent through base change to the functors over the site from
@@ -191,7 +191,7 @@ Declarations registered for the tag:
 theorem finiteTypeBaseChange_isEquivalence : (finiteTypeBaseChange B S hS T).IsEquivalence
 ```
 
-**`AlgebraicGeometry.SpacesOverSpace.properFlatBaseChange_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean#L119). The attribute's comment: “the second equivalence: finitely presented, flat and proper morphisms X ⟶ T and functors 𝒮_T ⟶ Spaces'_{fp, flat, proper}”.
+**`AlgebraicGeometry.SpacesOverSpace.properFlatBaseChange_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/SpacesOverSpaceEquivalence.lean#L119). The attribute's comment: “the second equivalence: finitely presented, flat and proper morphisms X ⟶ T and functors 𝒮\_T ⟶ Spaces'\_\{fp, flat, proper}”.
 
 > **Stacks 0E93**, the second equivalence: finitely presented, flat and proper morphisms of
 > algebraic spaces `X ⟶ T`, with isomorphisms over `T`, are equivalent through base change to the
@@ -307,7 +307,7 @@ def properPushoutRS : ProperPushoutRS B S₀ hS₀
 
 [Tag 0D1K](https://stacks.math.columbia.edu/tag/0D1K) in the Stacks Project.
 
-**`AlgebraicGeometry.ProperFlatSpaceDeformation.finiteDimensional_predeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ProperFlatStackFiniteDimensional.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ProperFlatStackFiniteDimensional.lean#L69). The attribute's comment: “(1): for a field k of finite type over Z and an object x of Spaces'_{fp,flat,proper} over Spec k, the predeformation category F_{X,k,x} over C_Z is a deformation category whose tangent space T F_{X,k,x} and infinitesimal automorphisms Inf(F_{X,k,x}) (Section 07WY) are finite dimensional”.
+**`AlgebraicGeometry.ProperFlatSpaceDeformation.finiteDimensional_predeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ProperFlatStackFiniteDimensional.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ProperFlatStackFiniteDimensional.lean#L69). The attribute's comment: “(1): for a field k of finite type over Z and an object x of Spaces'\_\{fp,flat,proper} over Spec k, the predeformation category F\_\{X,k,x} over C\_Z is a deformation category whose tangent space T F\_\{X,k,x} and infinitesimal automorphisms Inf(F\_\{X,k,x}) (Section 07WY) are finite dimensional”.
 
 > Let `k` be a field of finite type over `ℤ` and let `x = (X → Spec k)` be an object of
 > `𝒳 = Spaces'_{fp, flat, proper}` over `Spec k`. Then the predeformation category `𝓕_{𝒳,k,x}` of
@@ -348,7 +348,7 @@ theorem finiteDimensional_predeformationCategory {k : Type u} [Field k]
             hD.satisfiesRS).functor.obj (FGModuleCat.of k (ULift.{u} k)))
 ```
 
-**`AlgebraicGeometry.ProperFlatSpaceDeformation.finiteDimensional_tangentFunctor_infinitesimalAutomorphismFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ProperFlatStackFiniteDimensional.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ProperFlatStackFiniteDimensional.lean#L114). The attribute's comment: “(2): for an object x of Spaces'_{fp,flat,proper} over a field k, the functors T_x and Inf_x of Stacks 07Y9 exist (the stack satisfies RS* by 0D1J) and T_x(k) and Inf_x(k) are finite dimensional; both finiteness statements hold for every k-linear functor carrying the identifications of 07Y9”.
+**`AlgebraicGeometry.ProperFlatSpaceDeformation.finiteDimensional_tangentFunctor_infinitesimalAutomorphismFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ProperFlatStackFiniteDimensional.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ProperFlatStackFiniteDimensional.lean#L114). The attribute's comment: “(2): for an object x of Spaces'\_\{fp,flat,proper} over a field k, the functors T\_x and Inf\_x of Stacks 07Y9 exist (the stack satisfies RS* by 0D1J) and T\_x(k) and Inf\_x(k) are finite dimensional; both finiteness statements hold for every k-linear functor carrying the identifications of 07Y9”.
 
 > Let `k` be a field and let `x = (X → Spec k)` be an object of
 > `𝒳 = Spaces'_{fp, flat, proper}` over `Spec k`. Then the tangent functor `T_x` and the functor of

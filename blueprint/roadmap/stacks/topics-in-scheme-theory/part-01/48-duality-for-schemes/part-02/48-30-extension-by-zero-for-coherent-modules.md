@@ -87,7 +87,7 @@ public theorem exists_restrictIso (j : U ⟶ X) [IsOpenImmersion j] [IsNoetheria
       (Functor.const ℕᵒᵖ).obj ((boundedCoherentDerived U).ι.obj K))
 ```
 
-**`AlgebraicGeometry.DeligneSystem.Value.proHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/DeligneSystemHom.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/DeligneSystemHom.lean#L394). The attribute's comment: “lift_morphisms; the identification of 0G2H supplied as data”.
+**`AlgebraicGeometry.DeligneSystem.Value.proHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/DeligneSystemHom.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/DeligneSystemHom.lean#L394). The attribute's comment: “lift\_morphisms; the identification of 0G2H supplied as data”.
 
 > **Stacks Project, Tag 0G4L(1)**. Let `j : U ⟶ X` be an open immersion of Noetherian
 > schemes, let `(K_n)` and `(L_m)` be Deligne systems and let `K` and `L` be the values of the
@@ -195,7 +195,7 @@ public theorem exists_deligneSystem_distTriang_boundedCoherent (j : U ⟶ X) [Is
 
 [Tag 0G4N](https://stacks.math.columbia.edu/tag/0G4N) in the Stacks Project.
 
-**`CategoryTheory.extensionByZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroFunctor.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroFunctor.lean#L80). The attribute's comment: “the functor Rj_!, for a Deligne-system assignment supplied as data”.
+**`CategoryTheory.extensionByZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroFunctor.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroFunctor.lean#L80). The attribute's comment: “the functor Rj\_!, for a Deligne-system assignment supplied as data”.
 
 > **Stacks Project, Tag 0G4N.** Sending an object `K` of `𝒞` to the pro-object of the inverse
 > sequence assigned to it determines a functor `Rj_! : 𝒞 ⥤ Pro-𝒟`. Its functor of points at `K` is
@@ -205,7 +205,7 @@ public theorem exists_deligneSystem_distTriang_boundedCoherent (j : U ⟶ X) [Is
 public def extensionByZero : 𝒞 ⥤ ProSeq 𝒟
 ```
 
-**`CategoryTheory.extensionByZeroHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroFunctor.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroFunctor.lean#L99). The attribute's comment: “the left adjointness of Rj_! to j^*”.
+**`CategoryTheory.extensionByZeroHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroFunctor.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroFunctor.lean#L99). The attribute's comment: “the left adjointness of Rj\_! to j^*”.
 
 > **Stacks Project, Tag 0G4N**, the left adjointness of `Rj_!` to `j^*`: morphisms of
 > pro-objects from `Rj_! K` to the constant pro-object at `L` are the morphisms `K ⟶ j^* L`.
@@ -215,7 +215,7 @@ public def extensionByZeroHomEquiv (K : 𝒞) (L : 𝒟) :
     ((extensionByZero jstar A).obj K ⟶ ProSeq.const.obj L) ≃ (K ⟶ jstar.obj L)
 ```
 
-**`AlgebraicGeometry.extensionByZeroOpenImmersion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenImmersion.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenImmersion.lean#L275). The attribute's comment: “the functor Rj_!”.
+**`AlgebraicGeometry.extensionByZeroOpenImmersion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenImmersion.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenImmersion.lean#L275). The attribute's comment: “the functor Rj\_!”.
 
 > **The extension by zero `Rj_! : D^b_{Coh}(𝒪_U) ⥤ Pro-D^b_{Coh}(𝒪_X)`** along an open immersion
 > `j` of Noetherian schemes, [Stacks, Tag 0G4N]: it sends `K` to the pro-object of a Deligne system
@@ -230,7 +230,7 @@ public def extensionByZeroOpenImmersion :
     BoundedCoherentDerived U ⥤ ProSeq (BoundedCoherentDerived X)
 ```
 
-**`AlgebraicGeometry.DeligneSystem.Value.extensionByZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenImmersion.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenImmersion.lean#L389). The attribute's comment: “Rj_! K is the pro-object of any Deligne system with value K”.
+**`AlgebraicGeometry.DeligneSystem.Value.extensionByZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenImmersion.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenImmersion.lean#L389). The attribute's comment: “Rj\_! K is the pro-object of any Deligne system with value K”.
 
 > **`Rj_! K` is the pro-object of any Deligne system with value `K`.** Both have the functor of
 > points `L ↦ Hom_U(K, L|_U)`, by [Stacks, Tag 0G2H]; the identification is the restriction map.
@@ -239,7 +239,7 @@ public def extensionByZeroOpenImmersion :
 public def extensionByZeroIso : D.proObject ≅ (extensionByZeroOpenImmersion j).obj V.obj
 ```
 
-**`AlgebraicGeometry.extensionByZeroOpenImmersionHomIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenImmersion.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenImmersion.lean#L425). The attribute's comment: “Rj_! is left adjoint to j^*”.
+**`AlgebraicGeometry.extensionByZeroOpenImmersionHomIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenImmersion.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenImmersion.lean#L425). The attribute's comment: “Rj\_! is left adjoint to j^*”.
 
 > **Stacks Project, Tag 0G4N**, adjointness. `Rj_!` is "left adjoint" to
 > `j^* : D^b_{Coh}(𝒪_X) ⥤ D^b_{Coh}(𝒪_U)`: morphisms of pro-objects from `Rj_! K` to the constant
@@ -258,7 +258,7 @@ public def extensionByZeroOpenImmersionHomIso :
       coyoneda ⋙ (Functor.whiskeringLeft _ _ _).obj (restrictBoundedCoherentLift j)
 ```
 
-**`AlgebraicGeometry.extensionByZeroOpenImmersion_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenImmersion.lean, line 463](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenImmersion.lean#L463). The attribute's comment: “Rj_! is exact”.
+**`AlgebraicGeometry.extensionByZeroOpenImmersion_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenImmersion.lean, line 463](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenImmersion.lean#L463). The attribute's comment: “Rj\_! is exact”.
 
 > **Stacks Project, Tag 0G4N**, exactness. Let `K ⟶ L ⟶ M ⟶ K[1]` be a distinguished triangle
 > `T` of `D^b_{Coh}(𝒪_U)`. Then there is an inverse system of distinguished triangles
@@ -484,7 +484,7 @@ public theorem proIsoDeligneSystem_iff_homology (I : X.IdealSheafData)
             ProSeq.of (Stacks.Duality.idealPowerSystem I F))
 ```
 
-**`CategoryTheory.DeligneSystemValues.proIsoDeligne_of_truncGELE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/DeligneSystemTruncation.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/DeligneSystemTruncation.lean#L201). The attribute's comment: “(2) implies (1) only, and with (2) in the equivalent form that each one-degree truncation system (τ^{≥p}τ^{≤p}K_n) is pro-isomorphic to a Deligne system, for a Deligne-system assignment and a t-structure supplied as data. (1) implies (2) is not proved: it is Stacks 0G4R, whose Artin-Rees content the library does not have.”.
+**`CategoryTheory.DeligneSystemValues.proIsoDeligne_of_truncGELE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/DeligneSystemTruncation.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/DeligneSystemTruncation.lean#L201). The attribute's comment: “(2) implies (1) only, and with (2) in the equivalent form that each one-degree truncation system (τ^\{≥p}τ^\{≤p}K\_n) is pro-isomorphic to a Deligne system, for a Deligne-system assignment and a t-structure supplied as data. (1) implies (2) is not proved: it is Stacks 0G4R, whose Artin-Rees content the library does not have.”.
 
 > **Stacks Project, Tag 0G4S**, the implication (2) ⇒ (1). Let `j^* : 𝒟 ⥤ 𝒞` be a triangulated
 > functor with a Deligne system assignment, `t` a `t`-structure on `𝒟`, and `(K_n)` an inverse

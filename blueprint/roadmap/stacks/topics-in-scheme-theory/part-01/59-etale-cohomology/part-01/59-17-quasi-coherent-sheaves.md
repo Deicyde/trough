@@ -50,7 +50,7 @@ Declarations registered for the tag:
 
 [Tag 03OI](https://stacks.math.columbia.edu/tag/03OI) in the Stacks Project.
 
-**`Stacks.SheafOfModules.isQuasicoherentOnSite_iff_of_isTerminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSheaves/Basic.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSheaves/Basic.lean#L64). The attribute's comment: “quasi_coherent”.
+**`Stacks.SheafOfModules.isQuasicoherentOnSite_iff_of_isTerminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSheaves/Basic.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSheaves/Basic.lean#L64). The attribute's comment: “quasi\_coherent”.
 
 > **Stacks 03OI.** On a site with a final object `S`, the defining condition of Stacks 03OH
 > for quasi-coherence of a sheaf of modules need only be checked at `U = S`: the module is
@@ -79,7 +79,7 @@ public theorem isSheaf_structurePresheaf_of_mem_fpqcPrecoverage :
     Presheaf.IsSheaf K.toGrothendieck (structurePresheaf S toOver)
 ```
 
-**`Stacks.Sites.isSheaf_structurePresheaf_and_exists_iso_siteAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/AssociatedModuleQuasicoherentEssSurj.lean, line 616](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/AssociatedModuleQuasicoherentEssSurj.lean#L616). The attribute's comment: “both assertions: O is a sheaf and every quasi-coherent O-module is F^a for a quasi-coherent F on S. Corrected form: the source's statement is false when the fibre products of the site along coverings are not fibre products of schemes (not_isSheaf_structurePresheaf_counterexample), so that is assumed (PreservesCoveringFibreProducts), as the source's sites of schemes form fibre products in Sch/S. Condition (1) is fullness, faithfulness and essential smallness; the site axioms are Stacks 00VH”.
+**`Stacks.Sites.isSheaf_structurePresheaf_and_exists_iso_siteAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/AssociatedModuleQuasicoherentEssSurj.lean, line 616](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/AssociatedModuleQuasicoherentEssSurj.lean#L616). The attribute's comment: “both assertions: O is a sheaf and every quasi-coherent O-module is F^a for a quasi-coherent F on S. Corrected form: the source's statement is false when the fibre products of the site along coverings are not fibre products of schemes (not\_isSheaf\_structurePresheaf\_counterexample), so that is assumed (PreservesCoveringFibreProducts), as the source's sites of schemes form fibre products in Sch/S. Condition (1) is fullness, faithfulness and essential smallness; the site axioms are Stacks 00VH”.
 
 > Let a site of schemes over `S` be presented by a precoverage `K` on a category
 > `C` and a functor `toOver : C ⥤ Over S`, satisfying the site axioms of Stacks 00VH (isomorphisms,

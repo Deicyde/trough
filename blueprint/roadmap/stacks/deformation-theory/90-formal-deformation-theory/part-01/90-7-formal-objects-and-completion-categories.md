@@ -46,7 +46,7 @@ instance instCategory : Category (FormalObject p)
 
 [Tag 06H4](https://stacks.math.columbia.edu/tag/06H4) in the Stacks Project.
 
-**`Deformation.formalObjectProjection_isCofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L476). References: SGA 7 VI (1.15), “Â is cofibered over Ĉ_{Λ”.
+**`Deformation.formalObjectProjection_isCofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L476). References: SGA 7 VI (1.15), “Â is cofibered over Ĉ\_\{Λ”.
 
 > **Stacks Project, Tag 06H4.** The projection from the category of formal objects of a
 > category cofibered in groupoids to the category of complete local algebras is cofibered in
@@ -128,7 +128,7 @@ public noncomputable def restrictionCompletionEquivalence
 
 [Tag 06H9](https://stacks.math.columbia.edu/tag/06H9) in the Stacks Project.
 
-**`Deformation.completionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 703](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L703). The attribute's comment: “completion_morphism”.
+**`Deformation.completionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 703](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L703). The attribute's comment: “completion\_morphism”.
 
 > **Stacks Project, Tag 06H9.** A functor over the category of Artinian local algebras
 > induces a functor on formal objects by application at every level.
@@ -141,7 +141,7 @@ public def completionMap
       (BasedCategory.ofFunctor (FormalObject.projection (p := q)))
 ```
 
-**`Deformation.completionMap_obj_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 742](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L742). The attribute's comment: “completion_morphism”.
+**`Deformation.completionMap_obj_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 742](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L742). The attribute's comment: “completion\_morphism”.
 
 > The induced functor does not change the complete local algebra underlying a formal object.
 
@@ -152,7 +152,7 @@ public theorem completionMap_obj_base
     ((completionMap φ).obj X).base = X.base
 ```
 
-**`Deformation.completionMap_obj_level`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 749](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L749). The attribute's comment: “completion_morphism”.
+**`Deformation.completionMap_obj_level`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 749](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L749). The attribute's comment: “completion\_morphism”.
 
 > On objects, the induced completion functor applies the original functor at every level.
 
@@ -163,7 +163,7 @@ public theorem completionMap_obj_level
     ((completionMap φ).obj X).level n = φ.obj (X.level n)
 ```
 
-**`Deformation.completionMap_obj_transition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 757](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L757). The attribute's comment: “completion_morphism”.
+**`Deformation.completionMap_obj_transition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 757](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L757). The attribute's comment: “completion\_morphism”.
 
 > On objects, the induced completion functor applies the original functor to every transition
 > map.
@@ -177,7 +177,7 @@ public theorem completionMap_obj_transition
         eqToHom (completionMap_obj_level φ X n).symm
 ```
 
-**`Deformation.completionMap_map_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 769](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L769). The attribute's comment: “completion_morphism”.
+**`Deformation.completionMap_map_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 769](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L769). The attribute's comment: “completion\_morphism”.
 
 > The induced functor does not change the morphism of complete local algebras underlying a
 > morphism of formal objects.
@@ -191,7 +191,7 @@ public theorem completionMap_map_base
         eqToHom (completionMap_obj_base φ Y).symm
 ```
 
-**`Deformation.completionMap_map_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 780](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L780). The attribute's comment: “completion_morphism”.
+**`Deformation.completionMap_map_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 780](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L780). The attribute's comment: “completion\_morphism”.
 
 > On morphisms, the induced completion functor applies the original functor to every level
 > map.
@@ -205,7 +205,7 @@ public theorem completionMap_map_app
         eqToHom (completionMap_obj_level φ Y n).symm
 ```
 
-**`Deformation.completionMap_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 804](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L804). The attribute's comment: “completion_two_functor”.
+**`Deformation.completionMap_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 804](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L804). The attribute's comment: “completion\_two\_functor”.
 
 > **Stacks Project, Tag 06H9.** Completion takes the identity morphism of a category cofibered
 > in groupoids to the identity morphism of its completion. Together with `completionMap_comp`,
@@ -218,7 +218,7 @@ public theorem completionMap_id :
       BasedFunctor.id (BasedCategory.ofFunctor (FormalObject.projection (p := p)))
 ```
 
-**`Deformation.completionMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 814](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L814). The attribute's comment: “completion_two_functor”.
+**`Deformation.completionMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 814](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L814). The attribute's comment: “completion\_two\_functor”.
 
 > **Stacks Project, Tag 06H9.** Completion takes a composite of morphisms of categories
 > cofibered in groupoids to the composite of the completions. Together with `completionMap_id`,
@@ -233,7 +233,7 @@ public theorem completionMap_comp {H : Type uH} [Category.{vH} H]
     completionMap (φ.comp ψ) = (completionMap φ).comp (completionMap ψ)
 ```
 
-**`Deformation.completionNatTrans`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 839](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L839). The attribute's comment: “completion_two_morphism”.
+**`Deformation.completionNatTrans`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 839](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L839). The attribute's comment: “completion\_two\_morphism”.
 
 > **Stacks Project, Tag 06H9.** The natural transformation induced levelwise on formal
 > objects by a two-morphism over the Artinian base.
@@ -245,7 +245,7 @@ public def completionNatTrans
     BasedNatTrans (completionMap φ) (completionMap ψ)
 ```
 
-**`Deformation.completionNatTrans_app_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 963](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L963). The attribute's comment: “completion_two_morphism”.
+**`Deformation.completionNatTrans_app_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 963](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L963). The attribute's comment: “completion\_two\_morphism”.
 
 > The induced component is the identity on the complete local algebra.
 
@@ -258,7 +258,7 @@ public theorem completionNatTrans_app_base
         eqToHom (completionMap_obj_base ψ X).symm
 ```
 
-**`Deformation.completionNatTrans_app_level`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 973](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L973). The attribute's comment: “completion_two_morphism”.
+**`Deformation.completionNatTrans_app_level`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 973](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L973). The attribute's comment: “completion\_two\_morphism”.
 
 > At every Artinian quotient, the induced component is the original two-morphism.
 
@@ -272,7 +272,7 @@ public theorem completionNatTrans_app_level
           eqToHom (completionMap_obj_level ψ X n).symm
 ```
 
-**`Deformation.completionNatTrans_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 986](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L986). The attribute's comment: “completion_two_functor”.
+**`Deformation.completionNatTrans_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 986](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L986). The attribute's comment: “completion\_two\_functor”.
 
 > **Stacks Project, Tag 06H9.** Levelwise completion takes an identity two-morphism to an
 > identity. This is half of the statement that completion is a functor of two-categories on
@@ -284,7 +284,7 @@ public theorem completionNatTrans_id
     completionNatTrans (𝟙 φ) = 𝟙 (completionMap φ)
 ```
 
-**`Deformation.completionNatTrans_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 1003](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L1003). The attribute's comment: “completion_two_functor”.
+**`Deformation.completionNatTrans_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Basic.lean, line 1003](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Basic.lean#L1003). The attribute's comment: “completion\_two\_functor”.
 
 > **Stacks Project, Tag 06H9.** Levelwise completion is compatible with composition of
 > two-morphisms. This is the other half of the statement that completion is a functor of
@@ -302,7 +302,7 @@ public theorem completionNatTrans_comp
 
 [Tag 06HA](https://stacks.math.columbia.edu/tag/06HA) in the Stacks Project.
 
-**`Deformation.completionHomEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/HomEquivalenceMain.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/HomEquivalenceMain.lean#L45). The attribute's comment: “hom_equivalence”.
+**`Deformation.completionHomEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/HomEquivalenceMain.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/HomEquivalenceMain.lean#L45). The attribute's comment: “hom\_equivalence”.
 
 > **Stacks Project, Tag 06HA (hom equivalence).** Completion and restriction
 > induce quasi-inverse equivalences on hom categories, with the forward and
@@ -402,7 +402,7 @@ public theorem cofiberedCompletion_restriction_isIso
 
 [Tag 06HE](https://stacks.math.columbia.edu/tag/06HE) in the Stacks Project.
 
-**`Deformation.coyonedaIsoAdicCompletion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Completion.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Completion.lean#L380). The attribute's comment: “representable_completion”. References: SGA 3 XI (3.3), “representable, affine”.
+**`Deformation.coyonedaIsoAdicCompletion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Completion.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Completion.lean#L380). The attribute's comment: “representable\_completion”. References: SGA 3 XI (3.3), “representable, affine”.
 
 > The covariant functor represented by `R` is canonically the adic completion
 > of its restriction to Artinian local algebras.
@@ -415,7 +415,7 @@ public noncomputable def coyonedaIsoAdicCompletion
         coyoneda.obj (Opposite.op R))
 ```
 
-**`Deformation.coyonedaIsoAdicCompletion_hom_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Completion.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Completion.lean#L399). The attribute's comment: “representable_completion”.
+**`Deformation.coyonedaIsoAdicCompletion_hom_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Completion.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Completion.lean#L399). The attribute's comment: “representable\_completion”.
 
 > At level `n`, the canonical isomorphism sends `f : R ⟶ S` to the composite
 > of `f` with the quotient homomorphism `S → S / m_S ^ (n + 1)`.
@@ -427,7 +427,7 @@ public theorem coyonedaIsoAdicCompletion_hom_apply
       (Ideal.Quotient.mkₐ Λ (AdicTruncation.ideal S n)).comp f.hom
 ```
 
-**`Deformation.adicCompletionRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Completion.lean, line 814](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Completion.lean#L814). The attribute's comment: “continuous_functor_completion”.
+**`Deformation.adicCompletionRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Completion.lean, line 814](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Completion.lean#L814). The attribute's comment: “continuous\_functor\_completion”.
 
 > A limit-preserving functor on complete local algebras is canonically the
 > completion of its restriction to Artinian local algebras.
@@ -439,7 +439,7 @@ public noncomputable def adicCompletionRestrictionIso
     G ≅ adicCompletion (artinianToComplete ⋙ G)
 ```
 
-**`Deformation.adicCompletionRestrictionIso_hom_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Completion.lean, line 843](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Completion.lean#L843). The attribute's comment: “continuous_functor_completion”.
+**`Deformation.adicCompletionRestrictionIso_hom_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Completion.lean, line 843](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Completion.lean#L843). The attribute's comment: “continuous\_functor\_completion”.
 
 > The canonical isomorphism sends a value to its image on each adic quotient.
 > The formula is independent of the chosen morphism representing that quotient.
@@ -458,7 +458,7 @@ public theorem adicCompletionRestrictionIso_hom_apply
 
 [Tag 06HC](https://stacks.math.columbia.edu/tag/06HC) in the Stacks Project.
 
-**`Deformation.associatedMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Associated.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Associated.lean#L358). The attribute's comment: “associated_morphism_of_formal_object”. References: SGA 7 VI (2.2(d)), “construction of ξ^#”.
+**`Deformation.associatedMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/Associated.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/Associated.lean#L358). The attribute's comment: “associated\_morphism\_of\_formal\_object”. References: SGA 7 VI (2.2(d)), “construction of ξ^#”.
 
 > **Stacks Project, Tag 06HC.** After choosing pushforwards, a formal object `ξ` over `R`
 > determines a morphism from the restriction of the cofibered set represented by `R` to `F`.
@@ -471,7 +471,7 @@ public noncomputable def associatedMorphism
     (pushforwards : ChosenPushforwards p) : AssociatedMorphism ξ pushforwards
 ```
 
-**`Deformation.formalObjectsYonedaEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean#L385). The attribute's comment: “formal_objects_yoneda_equivalence”.
+**`Deformation.formalObjectsYonedaEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean#L385). The attribute's comment: “formal\_objects\_yoneda\_equivalence”.
 
 > Morphisms over the Artinian base from the restriction of the functor represented by `R`
 > to a category cofibered in groupoids form a category equivalent to the category of formal
@@ -491,7 +491,7 @@ public noncomputable def formalObjectsYonedaEquivalence
       (FormalObject.projection (p := p)).Fiber R
 ```
 
-**`Deformation.formalObjectsYonedaEquivalence_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean#L401). The attribute's comment: “formal_objects_yoneda_equivalence”.
+**`Deformation.formalObjectsYonedaEquivalence_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean#L401). The attribute's comment: “formal\_objects\_yoneda\_equivalence”.
 
 > The forward direction of the Yoneda equivalence is the equivalence constructed in Tag
 > 06SK. Its `levelIso` and `transition_comm` give the explicit description sending `φ` to the
@@ -507,7 +507,7 @@ public theorem formalObjectsYonedaEquivalence_functor
       (representableMorphismFormalObjectEquivalence p hp R).equivalence.functor
 ```
 
-**`Deformation.formalObjectsYonedaEquivalence_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean#L411). The attribute's comment: “formal_objects_yoneda_equivalence”.
+**`Deformation.formalObjectsYonedaEquivalence_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean#L411). The attribute's comment: “formal\_objects\_yoneda\_equivalence”.
 
 > The quasi-inverse of the Yoneda equivalence is the composite `Ψ ∘ ι` specified in the
 > source.
@@ -520,7 +520,7 @@ public theorem formalObjectsYonedaEquivalence_inverse
     (formalObjectsYonedaEquivalence hp R P).inverse = iotaCompPsi hp R P
 ```
 
-**`Deformation.associatedMorphism_maps_to_canonicalEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean, line 665](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean#L665). The attribute's comment: “formal_objects_yoneda_equivalence”.
+**`Deformation.associatedMorphism_maps_to_canonicalEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean, line 665](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean#L665). The attribute's comment: “formal\_objects\_yoneda\_equivalence”.
 
 > The explicit morphism `ξ̲` associated to a formal object `ξ` maps to `ξ` under the Yoneda
 > equivalence: evaluating the equivalence constructed in Tag 06SK on
@@ -541,7 +541,7 @@ public theorem associatedMorphism_maps_to_canonicalEquivalence
           (Functor.Fiber.mk rfl : (FormalObject.projection (p := p)).Fiber ξ.base))
 ```
 
-**`Deformation.psiIotaIsoAssociatedMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean, line 700](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean#L700). The attribute's comment: “formal_objects_yoneda_equivalence”.
+**`Deformation.psiIotaIsoAssociatedMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean, line 700](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean#L700). The attribute's comment: “formal\_objects\_yoneda\_equivalence”.
 
 > The explicit `Ψ(ι(ξ))` is isomorphic, over the Artinian base, to the morphism `ξ̲`
 > associated to `ξ` using any chosen pushforwards in the original category.
@@ -560,7 +560,7 @@ public noncomputable def psiIotaIsoAssociatedMorphism
       (associatedMorphism hp ξ pushforwards).toBasedFunctor
 ```
 
-**`Deformation.iotaIsoCompletionAssociatedMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean, line 719](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean#L719). The attribute's comment: “formal_objects_yoneda_equivalence”.
+**`Deformation.iotaIsoCompletionAssociatedMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean, line 719](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean#L719). The attribute's comment: “formal\_objects\_yoneda\_equivalence”.
 
 > Under the canonical represented-completion identification, `ι(ξ)` is the completion of the
 > associated morphism `ξ̲`: `Φ` is the unit followed by levelwise completion, as in 06HA.
@@ -585,7 +585,7 @@ public noncomputable def iotaIsoCompletionAssociatedMorphism
 
 Declarations registered for the tag:
 
-- [`representableMorphismFormalObjectEquivalence`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=representableMorphismFormalObjectEquivalence#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean#L419) (StacksFrontier): “formal_objects_yoneda_equivalence”.
+- [`representableMorphismFormalObjectEquivalence`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=representableMorphismFormalObjectEquivalence#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/FormalObject/YonedaEquivalence.lean#L419) (StacksFrontier): “formal\_objects\_yoneda\_equivalence”.
 
 ## Tag 06SK, an equation
 

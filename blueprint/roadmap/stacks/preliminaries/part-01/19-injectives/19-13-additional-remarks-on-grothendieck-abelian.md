@@ -90,7 +90,7 @@ theorem isLimit_productFanInDerivedCategory {I : Type w}
     Nonempty (IsLimit (productFanInDerivedCategory K))
 ```
 
-**`Stacks.Injectives.derivedCategoryQ_preservesCoproducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/DerivedCategory/ProductsAndCoproducts.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/DerivedCategory/ProductsAndCoproducts.lean#L109). The attribute's comment: “direct_sums_termwise”.
+**`Stacks.Injectives.derivedCategoryQ_preservesCoproducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/DerivedCategory/ProductsAndCoproducts.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/DerivedCategory/ProductsAndCoproducts.lean#L109). The attribute's comment: “direct\_sums\_termwise”.
 
 > The localization functor from complexes to the unbounded derived category preserves direct
 > sums; thus the image of the termwise direct sum of any family of complexes is its direct sum in
@@ -101,7 +101,7 @@ instance derivedCategoryQ_preservesCoproducts [IsGrothendieckAbelian.{w} A] (I :
     PreservesColimitsOfShape (Discrete I) (DerivedCategory.Q (C := A))
 ```
 
-**`Stacks.Injectives.hasCoproducts_derivedCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/DerivedCategory/ProductsAndCoproducts.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/DerivedCategory/ProductsAndCoproducts.lean#L137). The attribute's comment: “direct_sums_exist”.
+**`Stacks.Injectives.hasCoproducts_derivedCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/DerivedCategory/ProductsAndCoproducts.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/DerivedCategory/ProductsAndCoproducts.lean#L137). The attribute's comment: “direct\_sums\_exist”.
 
 > The unbounded derived category of a Grothendieck abelian category has direct sums.
 
@@ -111,7 +111,7 @@ instance hasCoproducts_derivedCategory (A : Type u) [Category.{v} A] [Abelian A]
     HasCoproducts.{w} (DerivedCategory A)
 ```
 
-**`Stacks.Injectives.hasProducts_derivedCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/DerivedCategory/ProductsAndCoproducts.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/DerivedCategory/ProductsAndCoproducts.lean#L190). The attribute's comment: “products_exist”.
+**`Stacks.Injectives.hasProducts_derivedCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/DerivedCategory/ProductsAndCoproducts.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/DerivedCategory/ProductsAndCoproducts.lean#L190). The attribute's comment: “products\_exist”.
 
 > The unbounded derived category of a Grothendieck abelian category has arbitrary
 > products.
@@ -215,7 +215,7 @@ theorem exists_filtered_quasiIso_isKInjective [IsGrothendieckAbelian.{w'} A]
 
 [Tag 0G1X](https://stacks.math.columbia.edu/tag/0G1X) in the Stacks Project.
 
-**`Stacks.Injectives.extSpectralSequenceInto_isBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoConvergence.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoConvergence.lean#L407). The attribute's comment: “ext_spectral_sequence_convergence”.
+**`Stacks.Injectives.extSpectralSequenceInto_isBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoConvergence.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoConvergence.lean#L407). The attribute's comment: “ext\_spectral\_sequence\_convergence”.
 
 > **Stacks 0G1X, boundedness.** If in every degree `Ext^n(M, F^pK^•)` vanishes for `p ≫ 0` and
 > maps bijectively onto `Ext^n(M, K^•)` for `p ≪ 0`, then the Ext spectral sequence into `K^•` is
@@ -231,7 +231,7 @@ theorem extSpectralSequenceInto_isBounded
     IsBounded (extSpectralSequenceInto.{w', w} M K).1
 ```
 
-**`Stacks.Injectives.extSpectralSequenceInto_hasPageInfinityAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoConvergence.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoConvergence.lean#L421). The attribute's comment: “ext_spectral_sequence_convergence”.
+**`Stacks.Injectives.extSpectralSequenceInto_hasPageInfinityAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoConvergence.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoConvergence.lean#L421). The attribute's comment: “ext\_spectral\_sequence\_convergence”.
 
 > **Stacks 0G1X, the infinity page exists.** Under the same hypotheses the Ext spectral
 > sequence into `K^•` stabilises at every bidegree.
@@ -247,7 +247,7 @@ theorem extSpectralSequenceInto_hasPageInfinityAt
     (extSpectralSequenceInto.{w', w} M K).1.HasPageInfinityAt pq
 ```
 
-**`Stacks.Injectives.extSpectralSequenceInto_convergesToExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoConvergence.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoConvergence.lean#L490). The attribute's comment: “ext_spectral_sequence_convergence”.
+**`Stacks.Injectives.extSpectralSequenceInto_convergesToExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoConvergence.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoConvergence.lean#L490). The attribute's comment: “ext\_spectral\_sequence\_convergence”.
 
 > **Stacks 0G1X, convergence.** If in every degree `Ext^n(M, F^pK^•)` vanishes for `p ≫ 0` and
 > maps bijectively onto `Ext^n(M, K^•)` for `p ≪ 0`, then the Ext spectral sequence into `K^•`
@@ -275,7 +275,7 @@ theorem extSpectralSequenceInto_convergesToExt
               (hF (p + q) (by omega))) : AddCommGrpCat.{w}) : Type w))
 ```
 
-**`Stacks.Injectives.extSpectralSequenceInto`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoFilteredComplex.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoFilteredComplex.lean#L107). The attribute's comment: “ext_spectral_sequence”. References: EGA 0 (13.7.3), “Ext functor case”.
+**`Stacks.Injectives.extSpectralSequenceInto`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoFilteredComplex.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoFilteredComplex.lean#L107). The attribute's comment: “ext\_spectral\_sequence”. References: EGA 0 (13.7.3), “Ext functor case”.
 
 > **Stacks 0G1X.** For a filtered complex `K^•` of a Grothendieck abelian category and an object
 > `M` of `D(A)`, the cohomological spectral sequence `(E_r, d_r)_{r ≥ 1}` of the filtered Hom
@@ -294,7 +294,7 @@ def extSpectralSequenceInto (M : DerivedCategory A) (K : CochainComplex.Filtered
 
 [Tag 0G1Y](https://stacks.math.columbia.edu/tag/0G1Y) in the Stacks Project.
 
-**`Stacks.Injectives.nonempty_canonicalExtSpectralSequenceInto_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoIndependence.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoIndependence.lean#L365). The attribute's comment: “representative_independence”.
+**`Stacks.Injectives.nonempty_canonicalExtSpectralSequenceInto_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoIndependence.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/SpectralSequenceIntoIndependence.lean#L365). The attribute's comment: “representative\_independence”.
 
 > **Stacks 0G1Y, representative independence.**  Let `A` be a Grothendieck abelian category and
 > let `M` and `K` be objects of `D(A)`.  The Ext spectral sequence of Tag 0G1X attached to the
@@ -319,7 +319,7 @@ theorem nonempty_canonicalExtSpectralSequenceInto_iso (M : DerivedCategory A)
         (CochainComplex.canonicalTruncationFiltration K₂)).1)
 ```
 
-**`Stacks.Injectives.canonicalExtSpectralSequenceInto`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L116). The attribute's comment: “canonical_e1”.
+**`Stacks.Injectives.canonicalExtSpectralSequenceInto`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L116). The attribute's comment: “canonical\_e1”.
 
 > **Stacks 0G1Y.** The Ext spectral sequence into the canonical truncation filtration
 > `F^pK^• = τ_{≤ -p}K^•` of a cochain complex, a cohomological spectral sequence
@@ -330,7 +330,7 @@ def canonicalExtSpectralSequenceInto (M : DerivedCategory A) (K' : CochainComple
     CohomologicalSpectralSequence AddCommGrpCat.{v} 1
 ```
 
-**`Stacks.Injectives.canonicalExtSpectralSequenceIntoE₁`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L141). The attribute's comment: “canonical_e1”. References: EGA 0 (11.4.3), “''E₂, T = Hom(M,-)”.
+**`Stacks.Injectives.canonicalExtSpectralSequenceIntoE₁`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L141). The attribute's comment: “canonical\_e1”. References: EGA 0 (11.4.3), “''E₂, T = Hom(M,-)”.
 
 > **Stacks 0G1Y.** For a representative `K^•` of `K`, the first page of the canonical Ext
 > spectral sequence into `K` is `E_1^{p, q} = Ext^{2p + q}(M, H^{-p}(K))`. The degrees `n = -p`
@@ -344,7 +344,7 @@ def canonicalExtSpectralSequenceIntoE₁ (M K : DerivedCategory A) (K' : Cochain
         ((DerivedCategory.homologyFunctor A n).obj K)) m
 ```
 
-**`Stacks.Injectives.renumberedCanonicalExtSpectralSequenceInto`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L158). The attribute's comment: “renumbered_e2”.
+**`Stacks.Injectives.renumberedCanonicalExtSpectralSequenceInto`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L158). The attribute's comment: “renumbered\_e2”.
 
 > **Stacks 0G1Y.** The canonical Ext spectral sequence into `K`, renumbered by
 > `(i, j) ↦ (-j, i + 2j)` so that its first page becomes the second: a cohomological spectral
@@ -356,7 +356,7 @@ def renumberedCanonicalExtSpectralSequenceInto (M : DerivedCategory A)
     CohomologicalSpectralSequence AddCommGrpCat.{v} 2
 ```
 
-**`Stacks.Injectives.renumberedCanonicalExtSpectralSequenceIntoE₂`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L166). The attribute's comment: “renumbered_e2”.
+**`Stacks.Injectives.renumberedCanonicalExtSpectralSequenceIntoE₂`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L166). The attribute's comment: “renumbered\_e2”.
 
 > **Stacks 0G1Y.** For a representative `K^•` of `K`, the second page of the renumbered
 > canonical Ext spectral sequence into `K` is `(E'_2)^{i, j} = Ext^i(M, H^j(K))`.
@@ -369,7 +369,7 @@ def renumberedCanonicalExtSpectralSequenceIntoE₂ (M K : DerivedCategory A)
         ((DerivedCategory.homologyFunctor A j).obj K)) i
 ```
 
-**`Stacks.Injectives.stupidExtSpectralSequenceInto`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L180). The attribute's comment: “stupid_e1”.
+**`Stacks.Injectives.stupidExtSpectralSequenceInto`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L180). The attribute's comment: “stupid\_e1”.
 
 > **Stacks 0G1Y.** The Ext spectral sequence into the brutal truncation filtration
 > `F^pK^• = σ_{≥ p}K^•` of a cochain complex, a cohomological spectral sequence
@@ -380,7 +380,7 @@ def stupidExtSpectralSequenceInto (M : DerivedCategory A) (K' : CochainComplex A
     CohomologicalSpectralSequence AddCommGrpCat.{v} 1
 ```
 
-**`Stacks.Injectives.stupidExtSpectralSequenceIntoE₁`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L195). The attribute's comment: “stupid_e1”.
+**`Stacks.Injectives.stupidExtSpectralSequenceIntoE₁`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L195). The attribute's comment: “stupid\_e1”.
 
 > **Stacks 0G1Y.** The first page of the Ext spectral sequence of the brutal truncation
 > filtration of `K^•` is `E_1^{p, q} = Ext^q(M, K^p)`.
@@ -392,7 +392,7 @@ def stupidExtSpectralSequenceIntoE₁ (M : DerivedCategory A) (K' : CochainCompl
       DerivedCategory.Ext M ((DerivedCategory.singleFunctor A 0).obj (K'.X p)) q
 ```
 
-**`Stacks.Injectives.stupidExtSpectralSequenceInto_isBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L272). The attribute's comment: “stupid_convergence”.
+**`Stacks.Injectives.stupidExtSpectralSequenceInto_isBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L272). The attribute's comment: “stupid\_convergence”.
 
 > **Stacks 0G1Y.** If `M` is bounded above in the derived category and `K^•` is bounded below,
 > the Ext spectral sequence of the brutal truncation filtration of `K^•` is bounded.
@@ -404,7 +404,7 @@ theorem stupidExtSpectralSequenceInto_isBounded (M : DerivedCategory A)
     IsBounded (stupidExtSpectralSequenceInto.{w', w} M K')
 ```
 
-**`Stacks.Injectives.stupidExtSpectralSequenceInto_hasPageInfinityAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L282). The attribute's comment: “stupid_convergence”.
+**`Stacks.Injectives.stupidExtSpectralSequenceInto_hasPageInfinityAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L282). The attribute's comment: “stupid\_convergence”.
 
 > **Stacks 0G1Y.** Under the same hypotheses the brutal-truncation Ext spectral sequence has an
 > infinity page at every bidegree.
@@ -416,7 +416,7 @@ theorem stupidExtSpectralSequenceInto_hasPageInfinityAt (M : DerivedCategory A)
     (stupidExtSpectralSequenceInto.{w', w} M K').HasPageInfinityAt pq
 ```
 
-**`Stacks.Injectives.stupidExtSpectralSequenceInto_convergesToExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L296). The attribute's comment: “stupid_convergence”.
+**`Stacks.Injectives.stupidExtSpectralSequenceInto_convergesToExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L296). The attribute's comment: “stupid\_convergence”.
 
 > **Stacks 0G1Y, convergence of the brutal-truncation spectral sequence.** Under the same
 > hypotheses it converges to `Ext^{p + q}(M, K^•)`: the decreasing filtration
@@ -438,7 +438,7 @@ theorem stupidExtSpectralSequenceInto_convergesToExt (M : DerivedCategory A)
               (hF (p + q) (by omega))) : AddCommGrpCat.{w}) : Type w))
 ```
 
-**`Stacks.Injectives.canonicalExtSpectralSequenceInto_isBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L442). The attribute's comment: “canonical_convergence”.
+**`Stacks.Injectives.canonicalExtSpectralSequenceInto_isBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L442). The attribute's comment: “canonical\_convergence”.
 
 > **Stacks 0G1Y, boundedness of the canonical spectral sequence.** For `M ∈ D^-(A)` and
 > `K ∈ D^+(A)` the Ext spectral sequence of the canonical truncation filtration of a complex
@@ -454,7 +454,7 @@ theorem canonicalExtSpectralSequenceInto_isBounded (M K : DerivedCategory A)
     IsBounded (canonicalExtSpectralSequenceInto.{w', w} M K')
 ```
 
-**`Stacks.Injectives.canonicalExtSpectralSequenceInto_convergesToExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L482). The attribute's comment: “canonical_convergence”.
+**`Stacks.Injectives.canonicalExtSpectralSequenceInto_convergesToExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L482). The attribute's comment: “canonical\_convergence”.
 
 > **Stacks 0G1Y, convergence of the canonical spectral sequence.** For `M ∈ D^-(A)` and
 > `K ∈ D^+(A)` the Ext spectral sequence of the canonical truncation filtration converges to
@@ -478,7 +478,7 @@ theorem canonicalExtSpectralSequenceInto_convergesToExt (M K : DerivedCategory A
               (hF (p + q) (by omega))) : AddCommGrpCat.{w}) : Type w))
 ```
 
-**`Stacks.Injectives.renumberedCanonicalExtSpectralSequenceInto_isBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L503). The attribute's comment: “canonical_convergence”.
+**`Stacks.Injectives.renumberedCanonicalExtSpectralSequenceInto_isBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L503). The attribute's comment: “canonical\_convergence”.
 
 > **Stacks 0G1Y, boundedness after renumbering.** For `M ∈ D^-(A)` and `K ∈ D^+(A)` the
 > renumbered canonical Ext spectral sequence `(E'_r, d'_r)_{r ≥ 2}` is bounded.
@@ -491,7 +491,7 @@ theorem renumberedCanonicalExtSpectralSequenceInto_isBounded (M K : DerivedCateg
     IsBounded (renumberedCanonicalExtSpectralSequenceInto.{w', w} M K')
 ```
 
-**`Stacks.Injectives.renumberedCanonicalExtSpectralSequenceInto_convergesToExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 516](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L516). The attribute's comment: “canonical_convergence”.
+**`Stacks.Injectives.renumberedCanonicalExtSpectralSequenceInto_convergesToExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean, line 516](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/TruncationFiltrationSpectralSequences.lean#L516). The attribute's comment: “canonical\_convergence”.
 
 > **Stacks 0G1Y, convergence after renumbering.** For `M ∈ D^-(A)` and `K ∈ D^+(A)` the
 > renumbered canonical Ext spectral sequence converges to `Ext^{i + j}(M, K)`: the infinity page at
@@ -564,7 +564,7 @@ public theorem extSpectralSequence_convergesToExt
             (extQuotientFiltration K M (p + q) (-p + 1)) (hF (p + q) (by omega))))
 ```
 
-**`Stacks.Injectives.extSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/SpectralSequenceOfFilteredComplex.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/SpectralSequenceOfFilteredComplex.lean#L234). The attribute's comment: “spectral_sequence”.
+**`Stacks.Injectives.extSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/SpectralSequenceOfFilteredComplex.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/SpectralSequenceOfFilteredComplex.lean#L234). The attribute's comment: “spectral\_sequence”.
 
 > **Stacks 0G1Z.** The Ext spectral sequence associated to a filtered complex `M`, bundled with
 > the identifications `E₁^{p,q} = Ext^{p+q}(gr^{-p} M, K)`.  Its differential on page `r` has
@@ -588,9 +588,9 @@ noncomputable def extSpectralSequence
 
 [Tag 0G20](https://stacks.math.columbia.edu/tag/0G20) in the Stacks Project.
 
-**`Stacks.Injectives.renumberedCanonicalExtSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L80). The attribute's comment: “renumbered_e2”.
+**`Stacks.Injectives.renumberedCanonicalExtSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L80). The attribute's comment: “renumbered\_e2”.
 
-> 0G20 renumbered_e2, declaration 1.
+> 0G20 renumbered\_e2, declaration 1.
 
 ```lean
 public noncomputable def renumberedCanonicalExtSpectralSequence
@@ -602,9 +602,9 @@ public noncomputable def renumberedCanonicalExtSpectralSequence
     CohomologicalSpectralSequence AddCommGrpCat.{w} 2
 ```
 
-**`Stacks.Injectives.renumberedCanonicalExtSpectralSequence_page_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L91). The attribute's comment: “renumbered_e2”.
+**`Stacks.Injectives.renumberedCanonicalExtSpectralSequence_page_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L91). The attribute's comment: “renumbered\_e2”.
 
-> 0G20 renumbered_e2, declaration 2.
+> 0G20 renumbered\_e2, declaration 2.
 
 ```lean
 public theorem renumberedCanonicalExtSpectralSequence_page_two
@@ -620,7 +620,7 @@ public theorem renumberedCanonicalExtSpectralSequence_page_two
             ((DerivedCategory.homologyFunctor A (-j)).obj M)) K i))
 ```
 
-**`Stacks.Injectives.canonicalExtSpectralSequence_isBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L277). The attribute's comment: “canonical_convergence”.
+**`Stacks.Injectives.canonicalExtSpectralSequence_isBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L277). The attribute's comment: “canonical\_convergence”.
 
 > **Stacks 0G20, boundedness before renumbering.** For `M ∈ D⁻(A)` and
 > `K ∈ D⁺(A)`, the canonical Ext spectral sequence is bounded.
@@ -637,7 +637,7 @@ public theorem canonicalExtSpectralSequence_isBounded
     IsBounded S.spectralSequence
 ```
 
-**`Stacks.Injectives.canonicalExtSpectralSequence_convergesToExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L309). The attribute's comment: “canonical_convergence”.
+**`Stacks.Injectives.canonicalExtSpectralSequence_convergesToExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L309). The attribute's comment: “canonical\_convergence”.
 
 > **Stacks 0G20, convergence before renumbering.** For `M ∈ D⁻(A)` and
 > `K ∈ D⁺(A)`, the canonical Ext spectral sequence converges to `Ext^(p+q)(M, K)`, with
@@ -663,7 +663,7 @@ public theorem canonicalExtSpectralSequence_convergesToExt
             (canonicalExtFiltration S (p + q) (-p + 1)) (hF (p + q) (by omega))))
 ```
 
-**`Stacks.Injectives.renumberedCanonicalExtSpectralSequence_isBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L358). The attribute's comment: “canonical_convergence”.
+**`Stacks.Injectives.renumberedCanonicalExtSpectralSequence_isBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L358). The attribute's comment: “canonical\_convergence”.
 
 > **Stacks 0G20, boundedness after renumbering.** For `M ∈ D⁻(A)` and
 > `K ∈ D⁺(A)`, the renumbered canonical Ext spectral sequence is bounded.
@@ -681,7 +681,7 @@ public theorem renumberedCanonicalExtSpectralSequence_isBounded
       (renumberedCanonicalExtSpectralSequence S)
 ```
 
-**`Stacks.Injectives.renumberedCanonicalExtSpectralSequence_convergesToExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L375). The attribute's comment: “canonical_convergence”.
+**`Stacks.Injectives.renumberedCanonicalExtSpectralSequence_convergesToExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L375). The attribute's comment: “canonical\_convergence”.
 
 > **Stacks 0G20, convergence after renumbering.** For `M ∈ D⁻(A)` and
 > `K ∈ D⁺(A)`, the renumbered canonical Ext spectral sequence converges to
@@ -707,7 +707,7 @@ public theorem renumberedCanonicalExtSpectralSequence_convergesToExt
             (canonicalExtFiltration S (i + j) (j + 1)) (hF (i + j) (by omega))))
 ```
 
-**`Stacks.Injectives.isBounded_canonicalExtSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L414). The attribute's comment: “canonical_convergence”.
+**`Stacks.Injectives.isBounded_canonicalExtSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L414). The attribute's comment: “canonical\_convergence”.
 
 > **Stacks 0G20, boundedness of the canonical Ext spectral sequence.** For `M ∈ D⁻(A)` and
 > `K ∈ D⁺(A)`, the Ext spectral sequence of the canonical truncation filtration
@@ -725,7 +725,7 @@ public theorem isBounded_canonicalExtSpectralSequence
     IsBounded (canonicalExtSpectralSequence M K M' e).spectralSequence
 ```
 
-**`Stacks.Injectives.convergesToExt_canonicalExtSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L430). The attribute's comment: “canonical_convergence”.
+**`Stacks.Injectives.convergesToExt_canonicalExtSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L430). The attribute's comment: “canonical\_convergence”.
 
 > **Stacks 0G20, convergence of the canonical Ext spectral sequence.** For `M ∈ D⁻(A)` and
 > `K ∈ D⁺(A)`, the Ext spectral sequence of the canonical truncation filtration
@@ -753,7 +753,7 @@ public theorem convergesToExt_canonicalExtSpectralSequence
             (canonicalExtFiltration S (p + q) (-p + 1)) (hF (p + q) (by omega))))
 ```
 
-**`Stacks.Injectives.stupidExtSpectralSequence_isBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L548). The attribute's comment: “stupid_convergence”.
+**`Stacks.Injectives.stupidExtSpectralSequence_isBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L548). The attribute's comment: “stupid\_convergence”.
 
 > **Stacks 0G20, boundedness of the brutal-truncation Ext spectral sequence.** If
 > `K ∈ D⁺(A)` and the cochain complex `M^•` is bounded above, the Ext spectral sequence of the
@@ -769,7 +769,7 @@ public theorem stupidExtSpectralSequence_isBounded
     IsBounded (stupidExtSpectralSequence K M')
 ```
 
-**`Stacks.Injectives.stupidExtSpectralSequence_convergesToExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L563). The attribute's comment: “stupid_convergence”.
+**`Stacks.Injectives.stupidExtSpectralSequence_convergesToExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/CanonicalExtConvergence.lean#L563). The attribute's comment: “stupid\_convergence”.
 
 > **Stacks 0G20, convergence of the brutal-truncation Ext spectral sequence.** If
 > `K ∈ D⁺(A)` and the cochain complex `M^•` is bounded above, the Ext spectral sequence of the
@@ -800,7 +800,7 @@ public theorem stupidExtSpectralSequence_convergesToExt
             (hF (p + q) (by omega))))
 ```
 
-**`Stacks.Injectives.canonicalExtSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean#L142). The attribute's comment: “canonical_e1”.
+**`Stacks.Injectives.canonicalExtSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean#L142). The attribute's comment: “canonical\_e1”.
 
 > **Stacks 0G20, the canonical truncation filtration.** Let `A` be a Grothendieck abelian
 > category and let `M, K ∈ D(A)`.  Every cochain complex representing `M`, filtered by
@@ -816,7 +816,7 @@ noncomputable def canonicalExtSpectralSequence
     CanonicalExtSpectralSequence M K M' e
 ```
 
-**`Stacks.Injectives.exists_canonicalExtSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean#L169). The attribute's comment: “canonical_e1”.
+**`Stacks.Injectives.exists_canonicalExtSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean#L169). The attribute's comment: “canonical\_e1”.
 
 > **Stacks 0G20, the canonical truncation filtration.** Let `A` be a Grothendieck abelian
 > category and let `M, K ∈ D(A)`.  Every cochain complex representing `M`, filtered by
@@ -833,7 +833,7 @@ theorem exists_canonicalExtSpectralSequence
     Nonempty (CanonicalExtSpectralSequence M K M' e)
 ```
 
-**`Stacks.Injectives.stupidExtSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean#L182). The attribute's comment: “stupid_e1”.
+**`Stacks.Injectives.stupidExtSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean#L182). The attribute's comment: “stupid\_e1”.
 
 > **Stacks 0G20, the brutal truncation filtration.** The Ext spectral sequence of the
 > filtration `F^p M^• = σ_{≥ p} M^•` of a cochain complex `M^•`, a cohomological spectral sequence
@@ -848,7 +848,7 @@ noncomputable def stupidExtSpectralSequence
     CohomologicalSpectralSequence AddCommGrpCat.{w} 1
 ```
 
-**`Stacks.Injectives.stupidExtSpectralSequenceE₁`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean#L195). The attribute's comment: “stupid_e1”.
+**`Stacks.Injectives.stupidExtSpectralSequenceE₁`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean#L195). The attribute's comment: “stupid\_e1”.
 
 > **Stacks 0G20, the brutal truncation filtration.** The first page of the Ext spectral
 > sequence of the filtration `F^p M^• = σ_{≥ p} M^•` is `E₁^{p,q} = Ext^q(M^{-p}, K)`.
@@ -866,7 +866,7 @@ noncomputable def stupidExtSpectralSequenceE₁
         ((DerivedCategory.singleFunctor A 0).obj (M'.X (-p))) K q)
 ```
 
-**`Stacks.Injectives.canonicalExtSpectralSequence_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean#L420). The attribute's comment: “representative_independence”.
+**`Stacks.Injectives.canonicalExtSpectralSequence_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Ext/CanonicalSpectralSequence.lean#L420). The attribute's comment: “representative\_independence”.
 
 > The canonical-truncation Ext spectral sequence is independent of the choice of complex
 > representing `M`, as a spectral sequence from `E₁` onward.

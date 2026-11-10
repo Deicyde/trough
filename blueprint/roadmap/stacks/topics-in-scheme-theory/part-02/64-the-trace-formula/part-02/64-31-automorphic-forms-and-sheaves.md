@@ -112,7 +112,7 @@ public structure CuspFormsFinite (K : Type u) [Field K] : Prop
 
 [Tag 03VX](https://stacks.math.columbia.edu/tag/03VX) in the Stacks Project.
 
-**`Stacks.Adeles.IsEigenform.isAlgebraic_heckeEigenvalue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/Adeles/AlgebraicEigenvalues.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/NumberTheory/Adeles/AlgebraicEigenvalues.lean#L145). The attribute's comment: “conditional on cited 03VW, carried as a hypothesis; assumes T_v has data at v, without which the eigenvalue equation is vacuous”.
+**`Stacks.Adeles.IsEigenform.isAlgebraic_heckeEigenvalue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/Adeles/AlgebraicEigenvalues.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/NumberTheory/Adeles/AlgebraicEigenvalues.lean#L145). The attribute's comment: “conditional on cited 03VW, carried as a hypothesis; assumes T\_v has data at v, without which the eigenvalue equation is vacuous”.
 
 > **Stacks Project, Tag 03VX.** Algebraicity of eigenvalues: if `Λ` is a field then the
 > eigenvalues `t_v` of an eigenform `f ∈ C(Λ)` are algebraic over the prime subfield `F ⊂ Λ`,

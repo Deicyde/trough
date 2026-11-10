@@ -64,7 +64,7 @@ abbrev HomotopyCategory (A : DifferentialGradedAlgebra R) : Type _
 
 [Tag 09JR](https://stacks.math.columbia.edu/tag/09JR) in the Stacks Project.
 
-**`DifferentialGradedModule.preservesCoproducts_toHomotopyCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/HomotopyCategoryCoproducts.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/HomotopyCategoryCoproducts.lean#L295). The attribute's comment: “homotopy_direct_sums_preserved”.
+**`DifferentialGradedModule.preservesCoproducts_toHomotopyCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/HomotopyCategoryCoproducts.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/HomotopyCategoryCoproducts.lean#L295). The attribute's comment: “homotopy\_direct\_sums\_preserved”.
 
 > The quotient functor preserves direct sums indexed by a type in the ambient universe.
 
@@ -74,7 +74,7 @@ instance preservesCoproducts_toHomotopyCategory (A : DifferentialGradedAlgebra R
     PreservesColimitsOfShape (Discrete ι) (toHomotopyCategory A)
 ```
 
-**`DifferentialGradedModule.hasProducts_homotopyCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/HomotopyCategoryLimits.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/HomotopyCategoryLimits.lean#L199). The attribute's comment: “homotopy_products”.
+**`DifferentialGradedModule.hasProducts_homotopyCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/HomotopyCategoryLimits.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/HomotopyCategoryLimits.lean#L199). The attribute's comment: “homotopy\_products”.
 
 > The homotopy category of differential graded modules over a differential graded algebra has
 > all products.
@@ -84,7 +84,7 @@ instance hasProducts_homotopyCategory (A : DifferentialGradedAlgebra.{u, v} R) :
     HasProducts.{w} (HomotopyCategory.{u, v, w} A)
 ```
 
-**`DifferentialGradedModule.hasCoproducts_homotopyCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/HomotopyCategoryLimits.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/HomotopyCategoryLimits.lean#L401). The attribute's comment: “homotopy_direct_sums”.
+**`DifferentialGradedModule.hasCoproducts_homotopyCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/HomotopyCategoryLimits.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/HomotopyCategoryLimits.lean#L401). The attribute's comment: “homotopy\_direct\_sums”.
 
 > The homotopy category of differential graded modules has direct sums.
 

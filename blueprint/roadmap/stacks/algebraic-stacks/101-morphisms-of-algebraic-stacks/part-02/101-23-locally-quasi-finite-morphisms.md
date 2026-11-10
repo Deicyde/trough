@@ -221,7 +221,7 @@ theorem isQuasiDM_tfae_hasQuasiFiniteFlatSpaceCover
       HasQuasiFiniteFlatSpaceCoverOnSomeFlatBaseChange B S hS f].TFAE
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDM_tfae_hasQuasiFiniteFlatSpaceCover_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiDMRelativePresentationUnconditional.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasiDMRelativePresentationUnconditional.lean#L83). The attribute's comment: “unconditional. The implication (1) implies (2) uses the substantial direction of Tag 06MF, the quasi-DM presentation theorem hasQuasiDMPresentation_of_isAbsolutelyQuasiDM, which is proved; the containment of the terminal scheme in the site that the absolute quasi-DM condition of Tag 050D part (6) needs is discharged by AlgebraicGeometry.BigFppfSite.contains_terminal”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDM_tfae_hasQuasiFiniteFlatSpaceCover_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiDMRelativePresentationUnconditional.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasiDMRelativePresentationUnconditional.lean#L83). The attribute's comment: “unconditional. The implication (1) implies (2) uses the substantial direction of Tag 06MF, the quasi-DM presentation theorem hasQuasiDMPresentation\_of\_isAbsolutelyQuasiDM, which is proved; the containment of the terminal scheme in the site that the absolute quasi-DM condition of Tag 050D part (6) needs is discharged by AlgebraicGeometry.BigFppfSite.contains\_terminal”.
 
 > For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` the following are equivalent: `f`
 > is quasi-DM; every base change of `f` along an algebraic space over `𝒴` has a surjective, flat,
@@ -356,8 +356,8 @@ theorem isLocallyOfFiniteType_of_locallyQuasiFiniteCoverOnSomeFlatSpaceBaseChang
 > 2-isomorphic to `e ≫ y`. Over `v` the fibre is discrete, which is
 > `discreteTopology_points_twoFibreProduct_of_hasLocallyQuasiFiniteFlatSpaceCoverOver`; changing the
 > cospan leg by that 2-isomorphism (`CategoryTheory.Bicategory.isTwoFibreProduct_reindexSnd`) and
-> pasting (**Stacks 02XD**) identify the fibre over `v ≫ g` with `(𝒳 ×_𝒴 Spec(k)) ×_{Spec(k)}
-> Spec(k')`, and that maps onto `𝒳 ×_𝒴 Spec(k)` by a base change of `e`.
+> pasting (**Stacks 02XD**) identify the fibre over `v ≫ g` with `(𝒳 ×\_𝒴 Spec(k)) ×\_\{Spec(k)}
+> Spec(k')`, and that maps onto `𝒳 ×\_𝒴 Spec(k)` by a base change of `e`.
 >
 > `e` is surjective by `AlgebraicGeometry.Stack.isSurjective_of_fieldSpectrum`, the spectrum of a
 > field having exactly one point, and it is universally open because its target is the algebraic

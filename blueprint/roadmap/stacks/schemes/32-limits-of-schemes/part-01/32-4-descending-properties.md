@@ -47,7 +47,7 @@ theorem preservesLimit_forgetToTop_of_isCofiltered_of_isAffineHom
 
 [Tag 0CUG](https://stacks.math.columbia.edu/tag/0CUG) in the Stacks Project.
 
-**`AlgebraicGeometry.existsUnique_mem_closure_singleton_of_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/Descending/PointClosure.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/Descending/PointClosure.lean#L59). The attribute's comment: “closures_sets”.
+**`AlgebraicGeometry.existsUnique_mem_closure_singleton_of_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/Descending/PointClosure.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/Descending/PointClosure.lean#L59). The attribute's comment: “closures\_sets”.
 
 > **Stacks Project, Tag 0CUG.** The closure of a point in a cofiltered limit of schemes with
 > affine transition morphisms is the inverse limit, as a set, of the closures of its images.
@@ -64,7 +64,7 @@ theorem existsUnique_mem_closure_singleton_of_compatible
     ∃! y : c.pt, y ∈ closure ({s} : Set c.pt) ∧ ∀ i, c.π.app i y = x i
 ```
 
-**`AlgebraicGeometry.exists_isLimit_reducedClosures`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/Descending/PointClosure.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/Descending/PointClosure.lean#L262). The attribute's comment: “closures_schemes”.
+**`AlgebraicGeometry.exists_isLimit_reducedClosures`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/Descending/PointClosure.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/Descending/PointClosure.lean#L262). The attribute's comment: “closures\_schemes”.
 
 > **Stacks Project, Tag 0CUG.** The reduced closure of a point of a cofiltered limit of
 > schemes is the limit, as a scheme, of the reduced closures of its images.
@@ -88,7 +88,7 @@ theorem exists_isLimit_reducedClosures
       Nonempty (IsLimit c')
 ```
 
-**`AlgebraicGeometry.residueField_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/Descending/ResidueField.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/Descending/ResidueField.lean#L100). The attribute's comment: “residue_fields”.
+**`AlgebraicGeometry.residueField_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/Descending/ResidueField.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/Descending/ResidueField.lean#L100). The attribute's comment: “residue\_fields”.
 
 > **Stacks Project, Tag 0CUG.** The residue field of a point in a cofiltered limit of schemes
 > with affine transition morphisms is the filtered colimit of the residue fields of its images.
@@ -455,7 +455,7 @@ theorem eventually_isImmersion_comp_π_app_of_quasiSeparatedSpace
     ∀ᶠ i in atTop, IsImmersion (f ≫ c.π.app (op i))
 ```
 
-**`AlgebraicGeometry.EventualLimit.eventually_isIso_comp_π_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EventualLimitProperties/Isomorphism.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EventualLimitProperties/Isomorphism.lean#L258). The attribute's comment: “eventually_isomorphism”.
+**`AlgebraicGeometry.EventualLimit.eventually_isIso_comp_π_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EventualLimitProperties/Isomorphism.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EventualLimitProperties/Isomorphism.lean#L258). The attribute's comment: “eventually\_isomorphism”.
 
 > **Stacks 081B (3)**, in the form in which the limit is presented through an isomorphism
 > `f : Y ≅ lim Xᵢ`: the composites `Y ⟶ Xᵢ` are isomorphisms for all sufficiently large `i`.

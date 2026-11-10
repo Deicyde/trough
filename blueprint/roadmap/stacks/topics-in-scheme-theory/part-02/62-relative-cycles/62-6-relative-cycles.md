@@ -504,7 +504,7 @@ theorem nonempty_isColimit_relativeCyclesCocone {I : Type u} [Category.{u} I] [I
 
 [Tag 0H5E](https://stacks.math.columbia.edu/tag/0H5E) in the Stacks Project.
 
-**`Stacks.Chow.relativeCyclesAddEquivOfIsThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean, line 656](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean#L656). The attribute's comment: “the bijection i_* : z(X/S, r) → z(X'/S, r) of relative r-cycles”.
+**`Stacks.Chow.relativeCyclesAddEquivOfIsThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean, line 656](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean#L656). The attribute's comment: “the bijection i\_* : z(X/S, r) → z(X'/S, r) of relative r-cycles”.
 
 > Let `S` be a locally Noetherian scheme and let `i : X ⟶ Y` be a thickening of schemes locally
 > of finite type over `S`. For `r ≥ 0` proper pushforward along `i` is an additive equivalence

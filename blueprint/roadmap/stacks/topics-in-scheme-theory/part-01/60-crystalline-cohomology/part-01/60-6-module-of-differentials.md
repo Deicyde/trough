@@ -58,7 +58,7 @@ public noncomputable def dividedPowerDifferentialsQuotientEquiv
           dividedPowerDifferential (A := A) δ' (Ideal.Quotient.mk K b) }
 ```
 
-**`Crystalline.dividedPowerDifferentialsDividedPowerPolynomialEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DividedPowerPolynomialAlgebra.lean, line 721](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DividedPowerPolynomialAlgebra.lean#L721). The attribute's comment: “divided_power_polynomial”.
+**`Crystalline.dividedPowerDifferentialsDividedPowerPolynomialEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DividedPowerPolynomialAlgebra.lean, line 721](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DividedPowerPolynomialAlgebra.lean#L721). The attribute's comment: “divided\_power\_polynomial”.
 
 > **The divided power polynomial decomposition of divided power differentials.**  For a divided
 > power ring `(B, I, δ)` over `A` and the divided power polynomial algebra `P = B⟨x_w : w ∈ W⟩`
@@ -186,7 +186,7 @@ public noncomputable def dividedPowerEnvelopeDifferentialsEquiv
 
 [Tag 07HZ](https://stacks.math.columbia.edu/tag/07HZ) in the Stacks Project.
 
-**`Crystalline.dividedPowerDifferentials`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean, line 686](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean#L686). The attribute's comment: “divided_power_de_rham_complex”.
+**`Crystalline.dividedPowerDifferentials`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean, line 686](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean#L686). The attribute's comment: “divided\_power\_de\_rham\_complex”.
 
 > The module `Ω¹_{B/A,δ}` of divided power differentials.
 
@@ -194,7 +194,7 @@ public noncomputable def dividedPowerEnvelopeDifferentialsEquiv
 public abbrev dividedPowerDifferentials : Type v
 ```
 
-**`Crystalline.dividedPowerDifferentialForms`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean, line 720](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean#L720). The attribute's comment: “divided_power_de_rham_complex”.
+**`Crystalline.dividedPowerDifferentialForms`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean, line 720](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean#L720). The attribute's comment: “divided\_power\_de\_rham\_complex”.
 
 > The module `Ωⁱ_{B/A,δ}`, the `i`-th exterior power of the module of divided
 > power differentials.
@@ -203,7 +203,7 @@ public abbrev dividedPowerDifferentials : Type v
 public abbrev dividedPowerDifferentialForms (i : ℕ) : Type v
 ```
 
-**`Crystalline.dividedPowerDeRhamComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean, line 899](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean#L899). The attribute's comment: “divided_power_de_rham_complex”.
+**`Crystalline.dividedPowerDeRhamComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean, line 899](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean#L899). The attribute's comment: “divided\_power\_de\_rham\_complex”.
 
 > The canonical divided power de Rham complex.
 
@@ -212,7 +212,7 @@ public noncomputable def dividedPowerDeRhamComplex :
     DividedPowerDeRhamComplex (A := A) hJ
 ```
 
-**`Crystalline.DividedPowerDeRhamComplex.unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean, line 922](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean#L922). The attribute's comment: “divided_power_de_rham_complex”.
+**`Crystalline.DividedPowerDeRhamComplex.unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean, line 922](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean#L922). The attribute's comment: “divided\_power\_de\_rham\_complex”.
 
 > The generator formula uniquely determines the divided power de Rham complex.
 
@@ -266,7 +266,7 @@ public structure Connection
     (M : Type*) [AddCommGroup M] [Module B M]
 ```
 
-**`Crystalline.extendedConnection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/Connection.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/Connection.lean#L606). The attribute's comment: “extended_connection. The extension of a connection to M ⊗ ⋀^p Omega in every degree, with the displayed formula on pure tensors. The de Rham differentials of B over A are constructed, in Stacks.DeRham.DifferentialDescent.sourceDeRham, and SourceDeRham.eq_sourceDeRham proves that term is the only one of SourceDeRham A B, so the binder S names the de Rham complex of 0FKF; its complex property d ∘ d = 0 follows from the defining rule on generators by comp_eq_zero_of_gen. The binders π, hπ, hgen are the quotient of the differentials that the tag itself fixes, by reference to 07HY”.
+**`Crystalline.extendedConnection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/Connection.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/Connection.lean#L606). The attribute's comment: “extended\_connection. The extension of a connection to M ⊗ ⋀^p Omega in every degree, with the displayed formula on pure tensors. The de Rham differentials of B over A are constructed, in Stacks.DeRham.DifferentialDescent.sourceDeRham, and SourceDeRham.eq\_sourceDeRham proves that term is the only one of SourceDeRham A B, so the binder S names the de Rham complex of 0FKF; its complex property d ∘ d = 0 follows from the defining rule on generators by comp\_eq\_zero\_of\_gen. The binders π, hπ, hgen are the quotient of the differentials that the tag itself fixes, by reference to 07HY”.
 
 > A connection extends to the tensor products with all exterior powers of `Omega`. On a pure
 > tensor its value is the wedge of the connection term with the form, plus the coefficient tensored
@@ -287,7 +287,7 @@ public noncomputable def extendedConnection
     (nabla : Connection A B π M) : ExtendedConnection S π nabla
 ```
 
-**`Crystalline.Connection.IsIntegrable`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/Connection.lean, line 653](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/Connection.lean#L653). The attribute's comment: “integrable_connection. Vanishing of the composite M → M ⊗ Ω^1 → M ⊗ Ω^2 of a connection with its own degree-one extension. As for extended_connection, the de Rham differentials are constructed in Stacks.DeRham.DifferentialDescent.sourceDeRham and SourceDeRham.eq_sourceDeRham proves the binder S admits that term alone”.
+**`Crystalline.Connection.IsIntegrable`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/Connection.lean, line 653](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/Connection.lean#L653). The attribute's comment: “integrable\_connection. Vanishing of the composite M → M ⊗ Ω^1 → M ⊗ Ω^2 of a connection with its own degree-one extension. As for extended\_connection, the de Rham differentials are constructed in Stacks.DeRham.DifferentialDescent.sourceDeRham and SourceDeRham.eq\_sourceDeRham proves the binder S admits that term alone”.
 
 > A connection is integrable if its composite with its canonical extension from one-forms to
 > two-forms is zero.
@@ -303,7 +303,7 @@ public noncomputable def IsIntegrable
     (nabla : Connection A B pi M) : Prop
 ```
 
-**`Crystalline.extendedConnection_comp_self_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean, line 601](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean#L601). The attribute's comment: “connection_de_rham_complex. The last clause of the tag: for an integrable connection the extended differentials compose to zero, so M ⊗ Ω^• is a complex. The de Rham differentials of B over A are constructed in Stacks.DeRham.DifferentialDescent.sourceDeRham and SourceDeRham.eq_sourceDeRham proves the binder S admits that term alone”.
+**`Crystalline.extendedConnection_comp_self_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean, line 601](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/DeRham.lean#L601). The attribute's comment: “connection\_de\_rham\_complex. The last clause of the tag: for an integrable connection the extended differentials compose to zero, so M ⊗ Ω^• is a complex. The de Rham differentials of B over A are constructed in Stacks.DeRham.DifferentialDescent.sourceDeRham and SourceDeRham.eq\_sourceDeRham proves the binder S admits that term alone”.
 
 > The consecutive extended differentials of an integrable connection compose to zero, so an
 > integrable connection makes `M ⊗_B Ω^•` a complex.
@@ -326,7 +326,7 @@ public theorem extendedConnection_comp_self_eq_zero
 
 [Tag 07KJ](https://stacks.math.columbia.edu/tag/07KJ) in the Stacks Project.
 
-**`Crystalline.Connection.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChange.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChange.lean#L145). The attribute's comment: “base_change_connection”.
+**`Crystalline.Connection.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChange.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Differentials/BaseChange.lean#L145). The attribute's comment: “base\_change\_connection”.
 
 > Base change of a connection through a compatible commutative square of rings and modules of
 > differentials.
@@ -387,8 +387,8 @@ public theorem existsUnique_baseChangeDeRhamMap
 
 > Let `A → B` be a ring map, let `(J, δ)` be a divided power structure on `B`, let `p` be
 > prime, let `A` be a `ℤ_(p)`-algebra and let `p` be nilpotent in `B / J`.  Then
-> `lim_e Ω_{B_e/A, δ̄} = lim_e Ω_{B/A, δ} / pᵉ Ω_{B/A, δ}
->   = lim_e Ω_{B^∧/A, δ^∧} / pᵉ Ω_{B^∧/A, δ^∧}`.
+> `lim\_e Ω\_\{B\_e/A, δ̄} = lim\_e Ω\_\{B/A, δ} / pᵉ Ω\_\{B/A, δ}
+>   = lim\_e Ω\_\{B^∧/A, δ^∧} / pᵉ Ω\_\{B^∧/A, δ^∧}`.
 >
 > The conclusion is written out here, with no reference to
 > `Crystalline.DifferentialsCompletionComparison`.  Beyond a level `N`, each `pᵉ B` lies in `J` and

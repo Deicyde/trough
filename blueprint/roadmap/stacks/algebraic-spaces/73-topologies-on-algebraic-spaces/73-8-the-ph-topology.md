@@ -144,7 +144,7 @@ theorem isPHCovering_comp
       (fun ij : Σ i, J i ↦ g ij.1 ij.2 ≫ f ij.1)
 ```
 
-**`AlgebraicGeometry.Space.isPHCovering_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/PhCoverings.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/PhCoverings.lean#L112). The attribute's comment: “ph_covering_of_isomorphism”.
+**`AlgebraicGeometry.Space.isPHCovering_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/PhCoverings.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/PhCoverings.lean#L112). The attribute's comment: “ph\_covering\_of\_isomorphism”.
 
 > **Stacks 0DFJ**, the isomorphism clause. An isomorphism of algebraic spaces over `S`,
 > regarded as a family indexed by a point, is a ph covering: the identity of an affine test
@@ -158,7 +158,7 @@ theorem isPHCovering_of_isIso
     IsPHCovering B S hS (fun _ : Unit ↦ X') (fun _ ↦ f)
 ```
 
-**`AlgebraicGeometry.Space.isPHCovering_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/PhCoverings.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/PhCoverings.lean#L144). The attribute's comment: “ph_covering_base_change”.
+**`AlgebraicGeometry.Space.isPHCovering_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/PhCoverings.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/PhCoverings.lean#L144). The attribute's comment: “ph\_covering\_base\_change”.
 
 > **Stacks 0DFJ**, the base-change clause. The first projections of the fibre products of a
 > ph covering of an algebraic space over `S` with a morphism `g` into its target form a ph

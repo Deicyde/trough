@@ -14,7 +14,7 @@ Section 28.26 of the Stacks Project, [Tag 01PL](https://stacks.math.columbia.edu
 
 [Tag 01PM](https://stacks.math.columbia.edu/tag/01PM) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.IdealPowerSections.canonicalMapToSectionsData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/IdealPowerSections/Basic.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/IdealPowerSections/Basic.lean#L370). The attribute's comment: “canonical_map”.
+**`Stacks.AlgebraicGeometry.IdealPowerSections.canonicalMapToSectionsData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/IdealPowerSections/Basic.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/IdealPowerSections/Basic.lean#L370). The attribute's comment: “canonical\_map”.
 
 > **Stacks Project, Tag 01PM (`canonical_map`).** The canonical map
 > `colim_n Hom_A(I ^ n, M) → Γ(Spec(A) \ V(I), M̃)`.
@@ -23,7 +23,7 @@ Section 28.26 of the Stacks Project, [Tag 01PL](https://stacks.math.columbia.edu
 public noncomputable def canonicalMapToSectionsData : CanonicalMapToSectionsData A I M
 ```
 
-**`Stacks.AlgebraicGeometry.IdealPowerSections.canonicalMapToSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/IdealPowerSections/Basic.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/IdealPowerSections/Basic.lean#L389). The attribute's comment: “canonical_map”.
+**`Stacks.AlgebraicGeometry.IdealPowerSections.canonicalMapToSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/IdealPowerSections/Basic.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/IdealPowerSections/Basic.lean#L389). The attribute's comment: “canonical\_map”.
 
 > The canonical map, with its local evaluation rule supplied by the construction.
 
@@ -32,7 +32,7 @@ public noncomputable def canonicalMapToSections :
     colimit (idealPowersHom A I M) ⟶ sectionsOnComplement A I M
 ```
 
-**`Stacks.AlgebraicGeometry.IdealPowerSections.canonicalMapToSections_restrict_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/IdealPowerSections/Basic.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/IdealPowerSections/Basic.lean#L396). The attribute's comment: “canonical_map”.
+**`Stacks.AlgebraicGeometry.IdealPowerSections.canonicalMapToSections_restrict_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/IdealPowerSections/Basic.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/IdealPowerSections/Basic.lean#L396). The attribute's comment: “canonical\_map”.
 
 > On every basic open `D(f)` with `f ∈ I`, a colimit representative `φ` has image
 > `φ(fⁿ)/fⁿ`.
@@ -77,7 +77,7 @@ public theorem canonicalMapToSections_injective (hI : I.FG) :
     Function.Injective (canonicalMapToSections A I M)
 ```
 
-**`Stacks.AlgebraicGeometry.IdealPowerSections.isIso_canonicalMapToSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/IdealPowerSectionsSurjective/Basic.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/IdealPowerSectionsSurjective/Basic.lean#L253). The attribute's comment: “torsionfree_isomorphism”.
+**`Stacks.AlgebraicGeometry.IdealPowerSections.isIso_canonicalMapToSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/IdealPowerSectionsSurjective/Basic.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/IdealPowerSectionsSurjective/Basic.lean#L253). The attribute's comment: “torsionfree\_isomorphism”.
 
 > **Stacks Project, Tag 01PM (`torsionfree_isomorphism`).** Let `I` be a finitely generated
 > ideal of `A`. If no nonzero element of `M` is annihilated by all of `I`, then the canonical map
@@ -94,7 +94,7 @@ public theorem isIso_canonicalMapToSections (hI : I.FG)
     IsIso (canonicalMapToSections A I M)
 ```
 
-**`Stacks.AlgebraicGeometry.IdealPowerSections.canonicalMapModuloAnnihilator_bijective`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/IdealPowerQuotientIso.lean, line 981](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/IdealPowerQuotientIso.lean#L981). The attribute's comment: “general_isomorphism”.
+**`Stacks.AlgebraicGeometry.IdealPowerSections.canonicalMapModuloAnnihilator_bijective`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/IdealPowerQuotientIso.lean, line 981](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/IdealPowerQuotientIso.lean#L981). The attribute's comment: “general\_isomorphism”.
 
 > **Stacks Project, Tag 01PM (`general_isomorphism`).** For a finitely generated ideal `I`
 > the canonical map from the direct limit of `Hom_A(I ^ n, M / Mₙ)` to the sections of `M̃` on
@@ -105,7 +105,7 @@ public lemma canonicalMapModuloAnnihilator_bijective (hI : I.FG) :
     Function.Bijective (canonicalMapModuloAnnihilator A I M)
 ```
 
-**`Stacks.AlgebraicGeometry.IdealPowerSections.idealPowersHomModuloAnnihilatorColimitIsoSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/IdealPowerQuotientIso.lean, line 990](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/IdealPowerQuotientIso.lean#L990). The attribute's comment: “general_isomorphism”.
+**`Stacks.AlgebraicGeometry.IdealPowerSections.idealPowersHomModuloAnnihilatorColimitIsoSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/IdealPowerQuotientIso.lean, line 990](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/IdealPowerQuotientIso.lean#L990). The attribute's comment: “general\_isomorphism”.
 
 > **Stacks Project, Tag 01PM (`general_isomorphism`).** For a finitely generated ideal `I`,
 > the direct limit of `Hom_A(I ^ n, M / Mₙ)` is canonically isomorphic to the sections of `M̃`
@@ -118,13 +118,13 @@ public noncomputable def idealPowersHomModuloAnnihilatorColimitIsoSections (hI :
 
 Declarations registered for the tag:
 
-- [`Submodule.torsionBySet`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Submodule.torsionBySet#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Properties/IdealPowerTorsion.lean, line 30](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/IdealPowerTorsion.lean#L30) (StacksFrontier): “i_power_annihilator_submodules”.
+- [`Submodule.torsionBySet`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Submodule.torsionBySet#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Properties/IdealPowerTorsion.lean, line 30](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/IdealPowerTorsion.lean#L30) (StacksFrontier): “i\_power\_annihilator\_submodules”.
 
 ## Tag 01PN, an example
 
 [Tag 01PN](https://stacks.math.columbia.edu/tag/01PN) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.PrincipalIdealCounterexample.fractionSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PrincipalIdealCounterexample.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PrincipalIdealCounterexample.lean#L282). The attribute's comment: “first example: the section y/x on Spec(A) minus V(x), A = k[x,y,z_n]/(x^n z_n)”.
+**`Stacks.AlgebraicGeometry.PrincipalIdealCounterexample.fractionSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PrincipalIdealCounterexample.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PrincipalIdealCounterexample.lean#L282). The attribute's comment: “first example: the section y/x on Spec(A) minus V(x), A = k[x,y,z\_n]/(x^n z\_n)”.
 
 > The fraction `y/x`, as a section of `𝒪` on the complement of `V(x)`.
 
@@ -144,7 +144,7 @@ lemma fractionSection_restrict :
       basicOpenFraction (counterexampleRing k) (counterexampleRing k) (x k) 1 (y k)
 ```
 
-**`Stacks.AlgebraicGeometry.PrincipalIdealCounterexample.fractionSection_not_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PrincipalIdealCounterexample.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PrincipalIdealCounterexample.lean#L299). The attribute's comment: “first example: y/x is not in the range of the map from colim_n Hom_A((x)^n, A)”.
+**`Stacks.AlgebraicGeometry.PrincipalIdealCounterexample.fractionSection_not_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PrincipalIdealCounterexample.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PrincipalIdealCounterexample.lean#L299). The attribute's comment: “first example: y/x is not in the range of the map from colim\_n Hom\_A((x)^n, A)”.
 
 > The fraction `y/x` is not obtained from a map out of any power of `(x)`.
 
@@ -174,7 +174,7 @@ theorem canonicalMapToSections_not_isIso :
       (principalIdeal k) (counterexampleRing k))
 ```
 
-**`Stacks.AlgebraicGeometry.TwoGeneratorCounterexample.gluedFractionSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean#L548). The attribute's comment: “two_generator_counterexample”.
+**`Stacks.AlgebraicGeometry.TwoGeneratorCounterexample.gluedFractionSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean#L548). The attribute's comment: “two\_generator\_counterexample”.
 
 > The section on `D(f) ∪ D(g)` to which the fractions `x/f` and `y/g` glue.
 
@@ -184,7 +184,7 @@ noncomputable def gluedFractionSection :
       (counterexampleRing k)
 ```
 
-**`Stacks.AlgebraicGeometry.TwoGeneratorCounterexample.gluedFractionSection_f`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean#L554). The attribute's comment: “two_generator_counterexample”.
+**`Stacks.AlgebraicGeometry.TwoGeneratorCounterexample.gluedFractionSection_f`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean#L554). The attribute's comment: “two\_generator\_counterexample”.
 
 > `f` times the glued section is `x`, i.e. the section restricts to `x/f` on `D(f)`.
 
@@ -195,7 +195,7 @@ theorem gluedFractionSection_f :
         (counterexampleRing k) (x k)
 ```
 
-**`Stacks.AlgebraicGeometry.TwoGeneratorCounterexample.gluedFractionSection_g`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean, line 561](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean#L561). The attribute's comment: “two_generator_counterexample”.
+**`Stacks.AlgebraicGeometry.TwoGeneratorCounterexample.gluedFractionSection_g`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean, line 561](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean#L561). The attribute's comment: “two\_generator\_counterexample”.
 
 > `g` times the glued section is `y`, i.e. the section restricts to `y/g` on `D(g)`.
 
@@ -206,7 +206,7 @@ theorem gluedFractionSection_g :
         (counterexampleRing k) (y k)
 ```
 
-**`Stacks.AlgebraicGeometry.TwoGeneratorCounterexample.gluedFractionSection_not_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean, line 672](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean#L672). The attribute's comment: “two_generator_counterexample”.
+**`Stacks.AlgebraicGeometry.TwoGeneratorCounterexample.gluedFractionSection_not_mem_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean, line 672](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean#L672). The attribute's comment: “two\_generator\_counterexample”.
 
 > The glued fraction section is not obtained from a map out of any power of `(f,g)`.
 
@@ -216,7 +216,7 @@ theorem gluedFractionSection_not_mem_range :
       (twoGeneratorIdeal k) (counterexampleRing k))
 ```
 
-**`Stacks.AlgebraicGeometry.TwoGeneratorCounterexample.canonicalMapToSections_not_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean, line 743](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean#L743). The attribute's comment: “two_generator_counterexample”.
+**`Stacks.AlgebraicGeometry.TwoGeneratorCounterexample.canonicalMapToSections_not_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean, line 743](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwoGeneratorCounterexample.lean#L743). The attribute's comment: “two\_generator\_counterexample”.
 
 > The canonical map is not an isomorphism for the ideal `(f,g)`.
 
@@ -230,7 +230,7 @@ theorem canonicalMapToSections_not_isIso :
 
 [Tag 01PQ](https://stacks.math.columbia.edu/tag/01PQ) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.IdealPowerColimit.canonicalMapToSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/Injectivity.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/Injectivity.lean#L449). The attribute's comment: “canonical_map”.
+**`Stacks.AlgebraicGeometry.IdealPowerColimit.canonicalMapToSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/Injectivity.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/Injectivity.lean#L449). The attribute's comment: “canonical\_map”.
 
 > The canonical map `colim_n Hom_{𝒪_X}(Iⁿ, F) ⟶ Γ(X \ V(I), F)`.
 
@@ -239,7 +239,7 @@ noncomputable def canonicalMapToSections (I : X.IdealSheafData) (F : X.Modules) 
     Limits.colimit (idealPowHomSystem I F) ⟶ Γ(F, (I.support.compl : X.Opens))
 ```
 
-**`Stacks.AlgebraicGeometry.IdealPowerColimit.canonicalMapToSections_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/Injectivity.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/Injectivity.lean#L467). The attribute's comment: “injective: the FIRST display colim Hom(Iⁿ, F) → Γ(U, F) is injective; X quasi-compact, I quasi-coherent of finite type, F quasi-coherent. The second display is canonicalMapToSectionsQuotient_bijective”.
+**`Stacks.AlgebraicGeometry.IdealPowerColimit.canonicalMapToSections_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/Injectivity.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/Injectivity.lean#L467). The attribute's comment: “injective: the FIRST display colim Hom(Iⁿ, F) → Γ(U, F) is injective; X quasi-compact, I quasi-coherent of finite type, F quasi-coherent. The second display is canonicalMapToSectionsQuotient\_bijective”.
 
 > For a quasi-compact scheme `X`, a quasi-coherent sheaf of ideals `I` of finite type and a
 > quasi-coherent `𝒪_X`-module `F`, the canonical map `colim_n Hom_{𝒪_X}(Iⁿ, F) → Γ(X \ V(I), F)`
@@ -251,7 +251,7 @@ theorem canonicalMapToSections_injective [CompactSpace X] (I : X.IdealSheafData)
     Function.Injective (canonicalMapToSections I F)
 ```
 
-**`Stacks.AlgebraicGeometry.IdealPowerColimit.canonicalMapToSectionsQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientColimit.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientColimit.lean#L187). The attribute's comment: “canonical map of the second display, colim Hom(Iⁿ, F/F_n) → Γ(U, F)”.
+**`Stacks.AlgebraicGeometry.IdealPowerColimit.canonicalMapToSectionsQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientColimit.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientColimit.lean#L187). The attribute's comment: “canonical map of the second display, colim Hom(Iⁿ, F/F\_n) → Γ(U, F)”.
 
 > The canonical map `colim_n Hom_{𝒪_X}(Iⁿ, F/F_n) ⟶ Γ(X \ V(I), F)`, where `F_n` is the
 > subsheaf of sections annihilated by `Iⁿ`, sending the class of `φ` to the section of `F`
@@ -262,7 +262,7 @@ noncomputable def canonicalMapToSectionsQuotient :
     Limits.colimit (idealPowHomQuotientSystem I F) ⟶ Γ(F, (I.support.compl : X.Opens))
 ```
 
-**`Stacks.AlgebraicGeometry.IdealPowerColimit.canonicalMapToSectionsQuotient_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientColimit.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientColimit.lean#L204). The attribute's comment: “second display colim Hom(Iⁿ, F/F_n) → Γ(U, F) is injective; X quasi-compact, I of finite type; surjectivity is canonicalMapToSectionsQuotient_surjective”.
+**`Stacks.AlgebraicGeometry.IdealPowerColimit.canonicalMapToSectionsQuotient_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientColimit.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientColimit.lean#L204). The attribute's comment: “second display colim Hom(Iⁿ, F/F\_n) → Γ(U, F) is injective; X quasi-compact, I of finite type; surjectivity is canonicalMapToSectionsQuotient\_surjective”.
 
 > For a quasi-compact scheme `X`, a quasi-coherent sheaf of ideals `I` of finite type and a
 > quasi-coherent `𝒪_X`-module `F`, the canonical map
@@ -273,7 +273,7 @@ theorem canonicalMapToSectionsQuotient_injective [CompactSpace X] :
     Function.Injective (canonicalMapToSectionsQuotient I F hFG)
 ```
 
-**`Stacks.AlgebraicGeometry.IdealPowerColimit.canonicalMapToSectionsQuotient_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientSurjectivity.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientSurjectivity.lean#L208). The attribute's comment: “clause (c), surjectivity of the second display colim Hom(Iⁿ, F/F_n) → Γ(U, F); X quasi-compact and quasi-separated, I quasi-coherent of finite type, F quasi-coherent, F_n the subsheaf annihilated by Iⁿ. No torsion hypothesis.”.
+**`Stacks.AlgebraicGeometry.IdealPowerColimit.canonicalMapToSectionsQuotient_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientSurjectivity.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientSurjectivity.lean#L208). The attribute's comment: “clause (c), surjectivity of the second display colim Hom(Iⁿ, F/F\_n) → Γ(U, F); X quasi-compact and quasi-separated, I quasi-coherent of finite type, F quasi-coherent, F\_n the subsheaf annihilated by Iⁿ. No torsion hypothesis.”.
 
 > **Stacks Project, Tag 01PQ, second display, surjectivity.** For a quasi-compact and
 > quasi-separated scheme `X`, a quasi-coherent sheaf of ideals `I` of finite type and a
@@ -291,7 +291,7 @@ theorem canonicalMapToSectionsQuotient_surjective [CompactSpace X] [QuasiSeparat
     Function.Surjective (canonicalMapToSectionsQuotient I F hFG)
 ```
 
-**`Stacks.AlgebraicGeometry.IdealPowerColimit.canonicalMapToSectionsQuotient_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientSurjectivity.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientSurjectivity.lean#L231). The attribute's comment: “clause (c): the second display colim Hom(Iⁿ, F/F_n) → Γ(U, F) is an isomorphism; X quasi-compact and quasi-separated, I quasi-coherent of finite type, F quasi-coherent”.
+**`Stacks.AlgebraicGeometry.IdealPowerColimit.canonicalMapToSectionsQuotient_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientSurjectivity.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientSurjectivity.lean#L231). The attribute's comment: “clause (c): the second display colim Hom(Iⁿ, F/F\_n) → Γ(U, F) is an isomorphism; X quasi-compact and quasi-separated, I quasi-coherent of finite type, F quasi-coherent”.
 
 > **Stacks Project, Tag 01PQ, clause (c).** Let `X` be a quasi-compact and quasi-separated
 > scheme, let `I ⊂ 𝒪_X` be a quasi-coherent sheaf of ideals of finite type, let `Z = V(I)` and
@@ -313,7 +313,7 @@ theorem canonicalMapToSectionsQuotient_bijective [CompactSpace X] [QuasiSeparate
     Function.Bijective (canonicalMapToSectionsQuotient I F hFG)
 ```
 
-**`Stacks.AlgebraicGeometry.IdealPowerColimit.isIso_canonicalMapToSectionsQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientSurjectivity.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientSurjectivity.lean#L247). The attribute's comment: “clause (c): the second display colim Hom(Iⁿ, F/F_n) → Γ(U, F) is an isomorphism in AddCommGrpCat; X quasi-compact and quasi-separated, I quasi-coherent of finite type, F quasi-coherent”.
+**`Stacks.AlgebraicGeometry.IdealPowerColimit.isIso_canonicalMapToSectionsQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientSurjectivity.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/QuotientSurjectivity.lean#L247). The attribute's comment: “clause (c): the second display colim Hom(Iⁿ, F/F\_n) → Γ(U, F) is an isomorphism in AddCommGrpCat; X quasi-compact and quasi-separated, I quasi-coherent of finite type, F quasi-coherent”.
 
 > **Stacks Project, Tag 01PQ, clause (c), categorically.** The canonical map
 > `colim_n Hom_{𝒪_X}(Iⁿ, F/F_n) ⟶ Γ(X ∖ V(I), F)` is an isomorphism of abelian groups, for `X`
@@ -329,7 +329,7 @@ theorem isIso_canonicalMapToSectionsQuotient [CompactSpace X] [QuasiSeparatedSpa
     IsIso (canonicalMapToSectionsQuotient I F hFG)
 ```
 
-**`Stacks.AlgebraicGeometry.IdealPowerColimit.canonicalMapToSections_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/Surjectivity.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/Surjectivity.lean#L519). The attribute's comment: “surjective (F_n = 0)”.
+**`Stacks.AlgebraicGeometry.IdealPowerColimit.canonicalMapToSections_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/Surjectivity.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Coherent/HomColimit/Surjectivity.lean#L519). The attribute's comment: “surjective (F\_n = 0)”.
 
 > **Stacks Project, Tag 01PQ (`surjective`), the case `F_N = 0`.** Let `X` be a quasi-compact
 > scheme, let `I` be a quasi-coherent sheaf of ideals of finite type and let `F` be a
@@ -367,7 +367,7 @@ public theorem canonicalMapToSections_injective {X : Scheme.{u}} [CompactSpace X
     Function.Injective (canonicalMapToSections I F).1
 ```
 
-**`AlgebraicGeometry.idealPowerAnnihilator`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/IdealPowerAnnihilator.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/IdealPowerAnnihilator.lean#L159). The attribute's comment: “ideal_power_annihilator_subsheaf”.
+**`AlgebraicGeometry.idealPowerAnnihilator`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/IdealPowerAnnihilator.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/IdealPowerAnnihilator.lean#L159). The attribute's comment: “ideal\_power\_annihilator\_subsheaf”.
 
 > The subsheaf of `F` whose local sections are annihilated by the `n`-th power of the
 > ideal subsheaf `I`.

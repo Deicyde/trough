@@ -311,7 +311,7 @@ public theorem isIso_globalToFormalSections_of_satisfiesStrictDepthInequalities
 
 [Tag 0EJ7](https://stacks.math.columbia.edu/tag/0EJ7) in the Stacks Project.
 
-**`Stacks.Algebraization.completionFunctor_map_bijective_of_satisfiesStrictDepthInequalities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/StrictDepthFullyFaithful.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/StrictDepthFullyFaithful.lean#L336). The attribute's comment: “Hom_U(G,F) = Hom_{Coh(U,IO_U)}(G^∧,F^∧) for every coherent G, under the strict (1,1+d)-inequalities and depth two off the formal locus; 0EJ6 applied to F itself”.
+**`Stacks.Algebraization.completionFunctor_map_bijective_of_satisfiesStrictDepthInequalities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/StrictDepthFullyFaithful.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/StrictDepthFullyFaithful.lean#L336). The attribute's comment: “Hom\_U(G,F) = Hom\_\{Coh(U,IO\_U)}(G^∧,F^∧) for every coherent G, under the strict (1,1+d)-inequalities and depth two off the formal locus; 0EJ6 applied to F itself”.
 
 > **Stacks Project, Tag 0EJ7.** Let `A` be a Noetherian ring with ideals `I ⊆ 𝔞`, write
 > `X = Spec(A)`, `Y = V(I)`, `Z = V(𝔞)`, `U = X ∖ Z`, and let `ℱ` be a coherent `𝒪_U`-module and

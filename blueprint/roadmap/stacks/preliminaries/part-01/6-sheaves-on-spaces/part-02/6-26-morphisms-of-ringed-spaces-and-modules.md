@@ -14,7 +14,7 @@ Section 6.26 of the Stacks Project, [Tag 0094](https://stacks.math.columbia.edu/
 
 [Tag 0095](https://stacks.math.columbia.edu/tag/0095) in the Stacks Project.
 
-**`RingedSpaceModuleAdjunction.modulePushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/RingedSpace.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/RingedSpace.lean#L123). The attribute's comment: “(1)”. References: EGA 0 (4.2.1), “Ψ_* functor”; EGA 0 (12.2.1); SGA 4 Vbis (1.3.6), “ringed spaces, φ_*”; SGA 3 VIIA (1.1), “more general”; SGA 4 IV (13.2.1), “special case”; SGA 4 V (5.0), “special case”.
+**`RingedSpaceModuleAdjunction.modulePushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/RingedSpace.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/RingedSpace.lean#L123). The attribute's comment: “(1)”. References: EGA 0 (4.2.1), “Ψ\_* functor”; EGA 0 (12.2.1); SGA 4 Vbis (1.3.6), “ringed spaces, φ\_*”; SGA 3 VIIA (1.1), “more general”; SGA 4 IV (13.2.1), “special case”; SGA 4 V (5.0), “special case”.
 
 > Pushforward of sheaves of modules along a morphism of ringed spaces,
 > `f_* : Mod(𝒪_X) ⥤ Mod(𝒪_Y)`, given on sections by `(f_* F)(V) = F(f⁻¹ V)`, with the
@@ -56,7 +56,7 @@ noncomputable def ringedSpacePullbackTensor (G : SheafOfModules.{u} (ringSheaf Y
 
 [Tag 0096](https://stacks.math.columbia.edu/tag/0096) in the Stacks Project.
 
-**`RingedSpaceModuleAdjunction.modulePushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/RingedSpace.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/RingedSpace.lean#L123). References: EGA 0 (4.2.1), “Ψ_* functor”; EGA 0 (12.2.1); SGA 4 Vbis (1.3.6), “ringed spaces, φ_*”; SGA 3 VIIA (1.1), “more general”; SGA 4 IV (13.2.1), “special case”; SGA 4 V (5.0), “special case”.
+**`RingedSpaceModuleAdjunction.modulePushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/RingedSpace.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/RingedSpace.lean#L123). References: EGA 0 (4.2.1), “Ψ\_* functor”; EGA 0 (12.2.1); SGA 4 Vbis (1.3.6), “ringed spaces, φ\_*”; SGA 3 VIIA (1.1), “more general”; SGA 4 IV (13.2.1), “special case”; SGA 4 V (5.0), “special case”.
 
 > Pushforward of sheaves of modules along a morphism of ringed spaces,
 > `f_* : Mod(𝒪_X) ⥤ Mod(𝒪_Y)`, given on sections by `(f_* F)(V) = F(f⁻¹ V)`, with the

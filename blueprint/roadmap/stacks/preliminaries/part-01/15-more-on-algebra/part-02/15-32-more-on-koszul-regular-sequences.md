@@ -59,7 +59,7 @@ public theorem exists_affineBlowup_algEquiv_mvPolynomial_quotient_of_isH1Regular
 > `A → A'` be a ring map and set `B' = B ⊗_A A'`, `f'_i = f_i ⊗ 1`.  Then the
 > canonical comparison map
 >
->   Φ : H_1(K_•(B, f_1, …, f_r)) ⊗_A A' ⟶ H_1(K_•(B', f'_1, …, f'_r))
+>   Φ : H\_1(K\_•(B, f\_1, …, f\_r)) ⊗\_A A' ⟶ H\_1(K\_•(B', f'\_1, …, f'\_r))
 >
 > is surjective.
 >

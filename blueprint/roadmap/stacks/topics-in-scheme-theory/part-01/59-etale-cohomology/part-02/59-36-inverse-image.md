@@ -58,7 +58,7 @@ theorem smallEtaleInverseImage_obj
 
 [Tag 03Q1](https://stacks.math.columbia.edu/tag/03Q1) in the Stacks Project.
 
-**`AlgebraicGeometry.smallEtalePullbackStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/Basic.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/Basic.lean#L161). The attribute's comment: “pullback_stalk”. References: SGA 4½ Arcata (2.3.3), “(f^*F)_x̄ = F_f(x̄)”.
+**`AlgebraicGeometry.smallEtalePullbackStalkIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/Basic.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/Basic.lean#L161). The attribute's comment: “pullback\_stalk”. References: SGA 4½ Arcata (2.3.3), “(f^*F)\_x̄ = F\_f(x̄)”.
 
 > **Stacks 03Q1.** Pullback of an étale sheaf commutes naturally with taking stalks at a
 > geometric point.
@@ -73,7 +73,7 @@ public def smallEtalePullbackStalkIso (B : BigEtaleSite.{u})
     etaleStalkFunctor.{u, u + 1} B S.1 S.property (x.map (B.inclusion.map f))
 ```
 
-**`AlgebraicGeometry.smallEtalePullbackStalkIso_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/Basic.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/Basic.lean#L212). The attribute's comment: “pullback_stalk”.
+**`AlgebraicGeometry.smallEtalePullbackStalkIso_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/Basic.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/Basic.lean#L212). The attribute's comment: “pullback\_stalk”.
 
 > **Stacks 03Q1.** The comparison sends the germ of a section pulled back to a pointed
 > étale neighborhood to the germ of the original section.
@@ -102,7 +102,7 @@ public theorem smallEtalePullbackStalkIso_germ (B : BigEtaleSite.{u})
         (Opposite.op V)) t
 ```
 
-**`AlgebraicGeometry.smallEtalePullbackSheafFiberIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/Coefficients.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/Coefficients.lean#L76). The attribute's comment: “pullback_stalk, arbitrary coefficients”. References: SGA 4½ Arcata (2.3.3), “(f^*F)_x̄ = F_f(x̄)”; SGA 4 VIII (3.4), “(F), special case”.
+**`AlgebraicGeometry.smallEtalePullbackSheafFiberIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/Coefficients.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/Coefficients.lean#L76). The attribute's comment: “pullback\_stalk, arbitrary coefficients”. References: SGA 4½ Arcata (2.3.3), “(f^*F)\_x̄ = F\_f(x̄)”; SGA 4 VIII (3.4), “(F), special case”.
 
 > **Stacks 03Q1** for arbitrary coefficients. Inverse image of a sheaf on the small étale site
 > commutes naturally with the stalk at a geometric point.
@@ -121,7 +121,7 @@ public def smallEtalePullbackSheafFiberIso (B : BigEtaleSite.{u})
     (geometricPointSitePoint B S.obj S.property (x.map (B.inclusion.map f))).sheafFiber
 ```
 
-**`AlgebraicGeometry.smallEtalePullbackSheafFiberIso_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/CoefficientsGerm.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/CoefficientsGerm.lean#L104). The attribute's comment: “pullback_stalk on germs, arbitrary coefficients”.
+**`AlgebraicGeometry.smallEtalePullbackSheafFiberIso_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/CoefficientsGerm.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/CoefficientsGerm.lean#L104). The attribute's comment: “pullback\_stalk on germs, arbitrary coefficients”.
 
 > **Stacks 03Q1** for arbitrary coefficients, on germs: the comparison of the stalk of an
 > inverse image with the stalk at the image point sends the germ of a pulled-back section to the
@@ -146,7 +146,7 @@ public theorem smallEtalePullbackSheafFiberIso_germ
         (x.map (B.inclusion.map f)))).op ⋙ F.obj) (op V)
 ```
 
-**`AlgebraicGeometry.etaleStalkSmallEtalePullObjIso_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/CoefficientsGerm.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/CoefficientsGerm.lean#L179). The attribute's comment: “pullback_stalk on germs, arbitrary coefficients, single sheaf”.
+**`AlgebraicGeometry.etaleStalkSmallEtalePullObjIso_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/CoefficientsGerm.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/PullbackStalk/CoefficientsGerm.lean#L179). The attribute's comment: “pullback\_stalk on germs, arbitrary coefficients, single sheaf”.
 
 > **Stacks 03Q1** for arbitrary coefficients, on germs and on a single sheaf.
 
@@ -186,7 +186,7 @@ public def smallEtalePullbackStalkIsoModule {S T : B.Scheme} (f : T ⟶ S)
     etaleStalkFunctorModule B S.1 S.property Λ (x.map (B.inclusion.map f))
 ```
 
-**`AlgebraicGeometry.smallEtaleSheafPullback_preservesFiniteLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L307). The attribute's comment: “exact_sets”.
+**`AlgebraicGeometry.smallEtaleSheafPullback_preservesFiniteLimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L307). The attribute's comment: “exact\_sets”.
 
 > Inverse image along `f : T ⟶ S` between the small étale topoi preserves finite limits:
 > being a morphism of sites, base change has an exact left adjoint on sheaves, and that left
@@ -200,7 +200,7 @@ public instance smallEtaleSheafPullback_preservesFiniteLimits {S T : B.Scheme} (
         (SmallEtale.topology B T.obj T.property))
 ```
 
-**`Stacks.EtaleCohomology.smallEtaleAbSheafPullback_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleInverseImageAbelian.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleInverseImageAbelian.lean#L86). The attribute's comment: “exact_abelian”.
+**`Stacks.EtaleCohomology.smallEtaleAbSheafPullback_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleInverseImageAbelian.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleInverseImageAbelian.lean#L86). The attribute's comment: “exact\_abelian”.
 
 > **Stacks 03Q1.** For a morphism of schemes `f : X ⟶ Y`, the inverse image functor
 > `f⁻¹ : Ab(Y_étale) ⥤ Ab(X_étale)` between the categories of abelian sheaves on the small
@@ -215,7 +215,7 @@ public theorem smallEtaleAbSheafPullback_exact {X Y : Scheme.{u}} (f : X ⟶ Y) 
         (smallEtaleTopology Y) (smallEtaleTopology X))
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePullbackRepresentableNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleInverseImageRepresentable.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleInverseImageRepresentable.lean#L160). The attribute's comment: “pullback_representable”.
+**`Stacks.EtaleCohomology.smallEtalePullbackRepresentableNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleInverseImageRepresentable.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleInverseImageRepresentable.lean#L160). The attribute's comment: “pullback\_representable”.
 
 > For a morphism of schemes `f : X ⟶ Y`, the inverse image on the small étale sites carries the
 > sheaf represented by an étale `Y`-scheme `V` to the sheaf represented by the base change
@@ -229,7 +229,7 @@ public def smallEtalePullbackRepresentableNatIso :
       smallEtaleBaseChange f ⋙ (smallEtaleTopology X).uliftYoneda.{max (u + 1) v}
 ```
 
-**`Stacks.EtaleCohomology.smallEtalePullbackRepresentableNatIso_app_hom_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleInverseImageRepresentable.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleInverseImageRepresentable.lean#L184). The attribute's comment: “pullback_representable”.
+**`Stacks.EtaleCohomology.smallEtalePullbackRepresentableNatIso_app_hom_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleInverseImageRepresentable.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleInverseImageRepresentable.lean#L184). The attribute's comment: “pullback\_representable”.
 
 > Under the inverse-image/direct-image adjunction and the Yoneda bijections for sheaves,
 > precomposition with the component of `smallEtalePullbackRepresentableNatIso` at `V` is the
@@ -249,7 +249,7 @@ public lemma smallEtalePullbackRepresentableNatIso_app_hom_comp (V : Y.Etale)
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Adjunction.leftAdjoint_preservesColimits`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Adjunction.leftAdjoint_preservesColimits#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L317) (StacksFrontier): “exact_sets”. References: SGA 4 I (5.4), “more general”; SGA 4 I (8.7.1.7), “more general”; SGA 4 IV (3.1.3), “partial”; SGA 4 IV (4.5.1), “more general”.
+- [`CategoryTheory.Adjunction.leftAdjoint_preservesColimits`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Adjunction.leftAdjoint_preservesColimits#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtaleBaseChange.lean#L317) (StacksFrontier): “exact\_sets”. References: SGA 4 I (5.4), “more general”; SGA 4 I (8.7.1.7), “more general”; SGA 4 IV (3.1.3), “partial”; SGA 4 IV (4.5.1), “more general”.
 
 ## Tag 03Q2, a remark
 

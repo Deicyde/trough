@@ -14,7 +14,7 @@ Section 38.39 of the Stacks Project, [Tag 0EXA](https://stacks.math.columbia.edu
 
 [Tag 0EXA](https://stacks.math.columbia.edu/tag/0EXA) in the Stacks Project.
 
-**`AlgebraicGeometry.frobeniusColimitVectModelEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectExplicit.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectExplicit.lean#L78). The attribute's comment: “colim_F Vect(S) is the category of pairs (E, n) described in the tag”.
+**`AlgebraicGeometry.frobeniusColimitVectModelEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectExplicit.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectExplicit.lean#L78). The attribute's comment: “colim\_F Vect(S) is the category of pairs (E, n) described in the tag”.
 
 > **Stacks Tag 0EXA: the explicit category is the colimit.** The category
 > `frobeniusColimitVectModel`, whose objects are the pairs `(ℰ, n)` and whose Hom-sets are the
@@ -26,7 +26,7 @@ noncomputable def frobeniusColimitVectModelEquivalence :
     frobeniusColimitVectModel X p hX ≌ frobeniusColimitVect X p hX
 ```
 
-**`AlgebraicGeometry.exists_frobeniusColimitVect_obj_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectExplicit.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectExplicit.lean#L101). The attribute's comment: “an object of colim_F Vect(S) is a pair (E, n)”.
+**`AlgebraicGeometry.exists_frobeniusColimitVect_obj_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectExplicit.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectExplicit.lean#L101). The attribute's comment: “an object of colim\_F Vect(S) is a pair (E, n)”.
 
 > **Stacks Tag 0EXA: the objects of `colim_F Vect(S)` are the pairs `(ℰ, n)`.** Every object of
 > the colimit in `Cat` is the image of a finite locally free `𝒪_S`-module `ℰ` under the stage-`n`
@@ -38,7 +38,7 @@ theorem exists_frobeniusColimitVect_obj_eq (Y : frobeniusColimitVect X p hX) :
       (EndoColim.catStage.{u + 1} (frobeniusPullback X p hX) n).obj E = Y
 ```
 
-**`AlgebraicGeometry.frobeniusColimitVectModelHomIsColimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectExplicit.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectExplicit.lean#L133). The attribute's comment: “Hom((E, n), (G, m)) = colim_N Hom_S(F^{N - n, *}E, F^{N - m, *}G)”.
+**`AlgebraicGeometry.frobeniusColimitVectModelHomIsColimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectExplicit.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectExplicit.lean#L133). The attribute's comment: “Hom((E, n), (G, m)) = colim\_N Hom\_S(F^\{N - n, *}E, F^\{N - m, *}G)”.
 
 > **Stacks Tag 0EXA: the Hom-sets of `colim_F Vect(S)`.** In the explicit category,
 > `Hom((ℰ, n), (𝒢, m))` is the colimit `colim_N Hom_S(F^{N - n, *}ℰ, F^{N - m, *}𝒢)` over the
@@ -50,7 +50,7 @@ noncomputable def frobeniusColimitVectModelHomIsColimit (E G : X.Vect) (n m : �
     IsColimit (EndoColim.homCocone (⟨E, n⟩ : frobeniusColimitVectModel X p hX) ⟨G, m⟩)
 ```
 
-**`AlgebraicGeometry.frobeniusColimitVectHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectExplicit.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectExplicit.lean#L142). The attribute's comment: “Hom((E, n), (G, m)) = colim_N Hom_S(F^{N - n, *}E, F^{N - m, *}G), for the colimit in Cat”.
+**`AlgebraicGeometry.frobeniusColimitVectHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectExplicit.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectExplicit.lean#L142). The attribute's comment: “Hom((E, n), (G, m)) = colim\_N Hom\_S(F^\{N - n, *}E, F^\{N - m, *}G), for the colimit in Cat”.
 
 > **Stacks Tag 0EXA: the Hom-sets of `colim_F Vect(S)`, in the colimit in `Cat`.** The
 > morphisms between the images of `ℰ` and `𝒢` under the stage-`n` and stage-`m` coprojections are
@@ -86,7 +86,7 @@ noncomputable def frobeniusColimitVect : Cat.{u + 1, u + 1}
 
 [Tag 0EXB](https://stacks.math.columbia.edu/tag/0EXB) in the Stacks Project.
 
-**`AlgebraicGeometry.frobeniusColimitVectEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectEssSurj.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectEssSurj.lean#L186). The attribute's comment: “the category colim_F Vect(X) of Tag 0EXA is equivalent to the category of finite locally free modules over the sheaf of rings colim_F O_X”.
+**`AlgebraicGeometry.frobeniusColimitVectEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectEssSurj.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectEssSurj.lean#L186). The attribute's comment: “the category colim\_F Vect(X) of Tag 0EXA is equivalent to the category of finite locally free modules over the sheaf of rings colim\_F O\_X”.
 
 > **Stacks Project, Tag 0EXB.** The category `colim_F Vect(X)` of Stacks Tag 0EXA is equivalent
 > to the category of finite locally free modules over the sheaf of rings `colim_F 𝒪_X`, the
@@ -115,8 +115,8 @@ noncomputable def frobeniusColimitVectEquivalence [CompactSpace X] [QuasiSeparat
 >
 > is the almost blowup square of More on Flatness, Example 0EVG. Then the comparison functor
 >
-> `colim_F Vect(Spec A) ⟶ colim_F Vect(Spec (A ⧸ fA)) ×_{colim_F Vect(Spec (A ⧸ (J + fA)))}
->   colim_F Vect(Spec (A ⧸ J))`
+> `colim\_F Vect(Spec A) ⟶ colim\_F Vect(Spec (A ⧸ fA)) ×\_\{colim\_F Vect(Spec (A ⧸ (J + fA)))}
+>   colim\_F Vect(Spec (A ⧸ J))`
 >
 > of Frobenius-colimit categories of vector bundles **is an equivalence.**
 
@@ -130,7 +130,7 @@ theorem colimVectComparison_isEquivalence (A : Type u) [CommRing A] (f : A) (J :
 
 [Tag 0EXD](https://stacks.math.columbia.edu/tag/0EXD) in the Stacks Project.
 
-**`AlgebraicGeometry.isEquivalence_twoGeneratorColimVectComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitTwoGeneratorColimVect.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitTwoGeneratorColimVect.lean#L136). The attribute's comment: “for the categories colim_F Vect of Tag 0EXA”.
+**`AlgebraicGeometry.isEquivalence_twoGeneratorColimVectComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitTwoGeneratorColimVect.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitTwoGeneratorColimVect.lean#L136). The attribute's comment: “for the categories colim\_F Vect of Tag 0EXA”.
 
 > **[Stacks, Tag 0EXD], for the categories `colim_F Vect` of [Stacks, Tag 0EXA].**  Let `p` be
 > a prime, `A` a ring in which `p` vanishes and `f₁, f₂ ∈ A`.  For the almost blowup square
@@ -176,7 +176,7 @@ theorem isEquivalence_twoGeneratorFrobeniusColimitComparison :
 
 [Tag 0EXE](https://stacks.math.columbia.edu/tag/0EXE) in the Stacks Project.
 
-**`AlgebraicGeometry.frobeniusVectorBundleGroupoidFiberEquivCoreColimitVect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectorBundleGroupoidColimitVect.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectorBundleGroupoidColimitVect.lean#L98). The attribute's comment: “moreover: if U is quasi-compact and quasi-separated, then the fibre S_U of the category fibred in groupoids S over (Sch/S)_h is colim_F Vect(U), as its maximal subgroupoid”.
+**`AlgebraicGeometry.frobeniusVectorBundleGroupoidFiberEquivCoreColimitVect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectorBundleGroupoidColimitVect.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FrobeniusColimitVectorBundleGroupoidColimitVect.lean#L98). The attribute's comment: “moreover: if U is quasi-compact and quasi-separated, then the fibre S\_U of the category fibred in groupoids S over (Sch/S)\_h is colim\_F Vect(U), as its maximal subgroupoid”.
 
 > **Stacks Tag 0EXE, the "moreover" clause.** Let `S` be a scheme in characteristic `p` and let
 > `U` be an object of `(Sch/S)_h` whose underlying scheme is quasi-compact and quasi-separated.
@@ -279,7 +279,7 @@ theorem exists_thickening_exponent_free_of_free_generic_and_thickening
 
 [Tag 0EXG](https://stacks.math.columbia.edu/tag/0EXG) in the Stacks Project.
 
-**`AlgebraicGeometry.VectorBundleCodimensionOne.exists_isFiniteLocallyFree_pullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/VectorBundleCodimensionOne/FreeOverLocalBase.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/VectorBundleCodimensionOne/FreeOverLocalBase.lean#L61). The attribute's comment: “corrected: freeness is also required at generic points of S with no codimension-1 specialization; as stated the lemma fails for X = ℙ¹_k over Spec k with ℰ = 𝒪(1)”.
+**`AlgebraicGeometry.VectorBundleCodimensionOne.exists_isFiniteLocallyFree_pullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/VectorBundleCodimensionOne/FreeOverLocalBase.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/VectorBundleCodimensionOne/FreeOverLocalBase.lean#L61). The attribute's comment: “corrected: freeness is also required at generic points of S with no codimension-1 specialization; as stated the lemma fails for X = ℙ¹\_k over Spec k with ℰ = 𝒪(1)”.
 
 > Let `f : X ⟶ S` be flat and proper with `𝒪_S = f_*𝒪_X`, let `S` be a normal Noetherian
 > scheme, and let `ℰ` be a finite locally free `𝒪_X`-module whose pullback to `X ×_S Spec 𝒪_{S,s}`

@@ -34,7 +34,7 @@ structure DeformationSolution {X S S' : RingedSpace.{u, u}} (t : S ⟶ S')
 
 [Tag 08UZ](https://stacks.math.columbia.edu/tag/08UZ) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.solutionClassesCotangentAddTorsor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/CotangentDeformationClassesTorsor.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/CotangentDeformationClassesTorsor.lean#L75). The attribute's comment: “clause (2): if a solution of 08UY exists, the set of isomorphism classes of solutions is principal homogeneous under Ext¹(L_{X/S}, 𝒢)”. References: SGA 7 VI (4.16), “more general”.
+**`AlgebraicGeometry.RingedSpaceThickening.solutionClassesCotangentAddTorsor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/CotangentDeformationClassesTorsor.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/CotangentDeformationClassesTorsor.lean#L75). The attribute's comment: “clause (2): if a solution of 08UY exists, the set of isomorphism classes of solutions is principal homogeneous under Ext¹(L\_\{X/S}, 𝒢)”. References: SGA 7 VI (4.16), “more general”.
 
 > **Stacks Project, Tag 08UZ, clause (2).** If there exists a solution of the deformation
 > problem of **Stacks 08UY**, then the set of isomorphism classes of solutions is principal
@@ -52,7 +52,7 @@ noncomputable def solutionClassesCotangentAddTorsor
     AddTorsor (cotangentExt f G 1) (SolutionClasses t ht f G c)
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.cotangentObstruction_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/CotangentObstruction.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/CotangentObstruction.lean#L339). The attribute's comment: “clause (1): there is a canonical element ξ ∈ Ext²(L_{X/S}, 𝒢) whose vanishing is a sufficient and necessary condition for the existence of a solution to (08UY)”.
+**`AlgebraicGeometry.RingedSpaceThickening.cotangentObstruction_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/CotangentObstruction.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/CotangentObstruction.lean#L339). The attribute's comment: “clause (1): there is a canonical element ξ ∈ Ext²(L\_\{X/S}, 𝒢) whose vanishing is a sufficient and necessary condition for the existence of a solution to (08UY)”.
 
 > **Stacks Project, Tag 08UZ, clause (1).** Let `t : S ⟶ S'` be a first order thickening of
 > ringed spaces with ideal `𝒥`, `f : X ⟶ S` a morphism of ringed spaces, `𝒢` an `𝒪_X`-module and
@@ -73,7 +73,7 @@ theorem cotangentObstruction_eq_zero_iff :
     cotangentObstruction f G ht c = 0 ↔ Nonempty (DeformationSolution t ht f G c)
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.DeformationSolution.solutionAutMulEquivCotangentExt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/SolutionAutomorphismGroup.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/SolutionAutomorphismGroup.lean#L233). The attribute's comment: “clause (3): the group of automorphisms of a solution X' fitting into (08UY), under composition, is isomorphic to the additive group Ext^0(L_{X/S}, G)”.
+**`AlgebraicGeometry.RingedSpaceThickening.DeformationSolution.solutionAutMulEquivCotangentExt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/SolutionAutomorphismGroup.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/SolutionAutomorphismGroup.lean#L233). The attribute's comment: “clause (3): the group of automorphisms of a solution X' fitting into (08UY), under composition, is isomorphic to the additive group Ext^0(L\_\{X/S}, G)”.
 
 > **Stacks Project, Tag 08UZ, clause (3).** Given a solution `X'` of the deformation problem
 > of (08UY), the group of automorphisms of `X'` fitting into that diagram is canonically

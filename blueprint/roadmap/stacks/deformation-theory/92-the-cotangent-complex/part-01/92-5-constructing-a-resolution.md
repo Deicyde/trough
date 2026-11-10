@@ -58,7 +58,7 @@ theorem exists_trivialKanFibration_from_finiteType_polynomial_simplicialAlgebra
 
 [Tag 08PY](https://stacks.math.columbia.edu/tag/08PY) in the Stacks Project.
 
-**`CommAlgCat.smallResolutionLeftDerivedMooreHomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/FiniteHomology.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/FiniteHomology.lean#L289). The attribute's comment: “the half of the statement that says which modules the conclusion is about: the cohomology of Lπ_!(ℱ) for the point morphism of the small model of the footnote-restricted site, read degreewise at abelian coefficients, is the homology of the B-module Moore complex of ℱ(P_•, ε). The finiteness of those modules is `CommAlgCat.finite_homology_smallResolutionMooreComplex`”.
+**`CommAlgCat.smallResolutionLeftDerivedMooreHomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/FiniteHomology.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/FiniteHomology.lean#L289). The attribute's comment: “the half of the statement that says which modules the conclusion is about: the cohomology of Lπ\_!(ℱ) for the point morphism of the small model of the footnote-restricted site, read degreewise at abelian coefficients, is the homology of the B-module Moore complex of ℱ(P\_•, ε). The finiteness of those modules is `CommAlgCat.finite_homology_smallResolutionMooreComplex`”.
 
 > **`Lπ_!(ℱ) = ℱ(P_•, ε)` for a presheaf of `B`-modules, with the module structure forgotten.**
 > The sections at the point of `L_nπ_!(ℱ)` are the degree `n` homology of the `B`-module Moore
@@ -79,7 +79,7 @@ def smallResolutionLeftDerivedMooreHomologyIso (n : ℕ) :
         ((smallResolutionMooreComplex ε κ hPκ ℱ).homology n)
 ```
 
-**`CommAlgCat.finite_homology_smallResolutionMooreComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/FiniteHomology.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/FiniteHomology.lean#L357). The attribute's comment: “the conclusion for a resolution satisfying the cardinality bound of the small model of the footnote-restricted site, and with the cohomology of Lπ_! read as the homology of the B-module Moore complex of ℱ(P_•, ε), which is what identifies it here (`CommAlgCat.smallResolutionLeftDerivedMooreHomologyIso`): the module-level Lπ_! is absent from this library. The finiteness hypothesis is carried for the terms of the resolution, not for every object of the site”.
+**`CommAlgCat.finite_homology_smallResolutionMooreComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/FiniteHomology.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/FiniteHomology.lean#L357). The attribute's comment: “the conclusion for a resolution satisfying the cardinality bound of the small model of the footnote-restricted site, and with the cohomology of Lπ\_! read as the homology of the B-module Moore complex of ℱ(P\_•, ε), which is what identifies it here (`CommAlgCat.smallResolutionLeftDerivedMooreHomologyIso`): the module-level Lπ\_! is absent from this library. The finiteness hypothesis is carried for the terms of the resolution, not for every object of the site”.
 
 > **Tag 08PY for a bounded resolution.** Let `B` be Noetherian, let `ε : P_• ⟶ B` be a
 > resolution of `B` over `A` whose terms are polynomial algebras on at most `κ` variables, and let
@@ -162,7 +162,7 @@ structure IsResolution (A : Type u) [CommRing A] (B : Type v) [CommRing B] [Alge
     (ε : P ⟶ (SimplicialObject.const _).obj (CommAlgCat.of A B)) : Prop
 ```
 
-**`CommAlgCat.isResolution_quasiIso_homotopyEquivalence_tfae`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Resolution.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Resolution.lean#L87). The attribute's comment: “resolution_criteria”.
+**`CommAlgCat.isResolution_quasiIso_homotopyEquivalence_tfae`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Resolution.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Resolution.lean#L87). The attribute's comment: “resolution\_criteria”.
 
 > **Stacks Project, Tag 08QI.**
 >
@@ -203,7 +203,7 @@ theorem exists_isResolution (A : Type u) [CommRing A] (B : Type (max u v)) [Comm
       IsResolution A B P ε
 ```
 
-**`CommAlgCat.cotangentComplexIsoOfResolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionCotangentAny.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionCotangentAny.lean#L156). The attribute's comment: “in D(B): for an arbitrary resolution of B over A, with no bound on the number of variables, Q(L_{B/A}) = Q(Omega[P_bullet/A] ⊗_{P_bullet} B); the cardinal bound of the two instances of Tag 08PU this composes is supplied by the resolution itself”.
+**`CommAlgCat.cotangentComplexIsoOfResolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionCotangentAny.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionCotangentAny.lean#L156). The attribute's comment: “in D(B): for an arbitrary resolution of B over A, with no bound on the number of variables, Q(L\_\{B/A}) = Q(Omega[P\_bullet/A] ⊗\_\{P\_bullet} B); the cardinal bound of the two instances of Tag 08PU this composes is supplied by the resolution itself”.
 
 > **[Stacks, Remark 08QI]: any resolution computes the cotangent complex.** Let `ε : P_• ⟶ B` be
 > a resolution of `B` over `A` — every `P_n` a polynomial algebra over `A`, `ε` a trivial Kan
@@ -226,7 +226,7 @@ def cotangentComplexIsoOfResolution :
       DerivedCategory.Q.obj (resolutionCotangentComplex.{u, u} A B P ε)
 ```
 
-**`CommAlgCat.resolutionModuleLeftDerivedLowerShriekNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionCotangentAny.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionCotangentAny.lean#L182). The attribute's comment: “the cosimplicial object of a resolution and the conclusion Lpi_!(F) = F(P_bullet, ε) in D(B) functorially in F, for an arbitrary resolution with no bound on the number of variables, read at the small model of the footnote-restricted site for the reason recorded in `StacksFrontier/Cotangent/ResolutionPointCriterionSmall.lean`”.
+**`CommAlgCat.resolutionModuleLeftDerivedLowerShriekNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionCotangentAny.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionCotangentAny.lean#L182). The attribute's comment: “the cosimplicial object of a resolution and the conclusion Lpi\_!(F) = F(P\_bullet, ε) in D(B) functorially in F, for an arbitrary resolution with no bound on the number of variables, read at the small model of the footnote-restricted site for the reason recorded in `StacksFrontier/Cotangent/ResolutionPointCriterionSmall.lean`”.
 
 > **`Lπ_!(ℱ) = ℱ(P_•, ε)` in `D(B)` for an arbitrary resolution.** Let `ε : P_• ⟶ B` be a
 > resolution of `B` over `A`, with no bound on the number of variables. For every sheaf of
@@ -256,7 +256,7 @@ def resolutionModuleLeftDerivedLowerShriekNatIso (n : ℕ) :
             (ComplexShape.down ℕ) n
 ```
 
-**`CommAlgCat.quasiIso_alternatingFaceMapComplex_map_of_isResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionIndependence.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionIndependence.lean#L199). The attribute's comment: “the remark's payoff, at the arrow level: for any two resolutions of B over A and any morphism between them, the induced map of the complexes Omega[-/A] ⊗ B is a quasi-isomorphism, so any resolution computes L_{B/A} and the comparison is the induced map”.
+**`CommAlgCat.quasiIso_alternatingFaceMapComplex_map_of_isResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionIndependence.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionIndependence.lean#L199). The attribute's comment: “the remark's payoff, at the arrow level: for any two resolutions of B over A and any morphism between them, the induced map of the complexes Omega[-/A] ⊗ B is a quasi-isomorphism, so any resolution computes L\_\{B/A} and the comparison is the induced map”.
 
 > **Remark 08QI at the arrow level.** Let `ε : P_• ⟶ B` and `ε' : P'_• ⟶ B` be resolutions of
 > `B` over `A` in the sense of [Stacks, Tag 08QI]. Every morphism `ψ` of the attached simplicial
@@ -277,7 +277,7 @@ theorem quasiIso_alternatingFaceMapComplex_map_of_isResolution
       (Functor.whiskerRight ψ (overDifferentialsFunctor (A := A) (B := B))))
 ```
 
-**`CommAlgCat.resolutionCotangentComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionIndependence.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionIndependence.lean#L216). The attribute's comment: “the remark's payoff, at the object level: for any resolution of B over A the complex Omega[P_./A] ⊗_{P_.} B is L_{B/A} in D(B)”.
+**`CommAlgCat.resolutionCotangentComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ResolutionIndependence.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ResolutionIndependence.lean#L216). The attribute's comment: “the remark's payoff, at the object level: for any resolution of B over A the complex Omega[P\_./A] ⊗\_\{P\_.} B is L\_\{B/A} in D(B)”.
 
 > **Remark 08QI at the object level.** The complex `Ω[P_•⁄A] ⊗_{P_•} B` of an arbitrary
 > resolution of `B` over `A`, read in cohomological degrees `≤ 0`, is the cotangent complex
@@ -293,7 +293,7 @@ def resolutionCotangentComplexIso (hres : IsResolution A (B : Type u) P ε) :
       DerivedCategory.Q.obj (cotangentComplex.{u, u} A B)
 ```
 
-**`CommAlgCat.standardResolution_isResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/StandardResolutionIsResolution.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/StandardResolutionIsResolution.lean#L120). The attribute's comment: “standard_qualifies”.
+**`CommAlgCat.standardResolution_isResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/StandardResolutionIsResolution.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/StandardResolutionIsResolution.lean#L120). The attribute's comment: “standard\_qualifies”.
 
 > **Stacks Project, Tag 08QI.** The standard augmented simplicial algebra of a commutative
 > `A`-algebra `B` is a resolution of `B` over `A`.
@@ -351,7 +351,7 @@ public theorem isIso_derivedColimitTensorComparison_smallPolynomialAugmentation
 
 [Tag 08QK](https://stacks.math.columbia.edu/tag/08QK) in the Stacks Project.
 
-**`CommAlgCat.polynomialSiteDerivedLowerShriekDifferentialsBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteDifferentialsBaseChangeLargeSite.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteDifferentialsBaseChangeLargeSite.lean#L316). The attribute's comment: “Lπ_!(Ω_{𝒪/A} ⊗_𝒪 B̲) = Lπ_!(Ω_{𝒪/A}) in D(Ab), as the isomorphism induced by the base-change unit Ω_{𝒪/A} ⟶ Ω_{𝒪/A} ⊗_𝒪 B̲, for the point morphism of the site C_{B/A} of Tag 08PR itself -- not of the footnote-restricted site nor of a small model of it -- with Ω_{𝒪/A} the sheaf of relative differentials of that site and Ω_{𝒪/A} ⊗_𝒪 B̲ its base change along the augmentation 𝒪 ⟶ B̲ of Tag 08PR, under no hypothesis on A → B and no cardinal bound”.
+**`CommAlgCat.polynomialSiteDerivedLowerShriekDifferentialsBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteDifferentialsBaseChangeLargeSite.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteDifferentialsBaseChangeLargeSite.lean#L316). The attribute's comment: “Lπ\_!(Ω\_\{𝒪/A} ⊗\_𝒪 B̲) = Lπ\_!(Ω\_\{𝒪/A}) in D(Ab), as the isomorphism induced by the base-change unit Ω\_\{𝒪/A} ⟶ Ω\_\{𝒪/A} ⊗\_𝒪 B̲, for the point morphism of the site C\_\{B/A} of Tag 08PR itself -- not of the footnote-restricted site nor of a small model of it -- with Ω\_\{𝒪/A} the sheaf of relative differentials of that site and Ω\_\{𝒪/A} ⊗\_𝒪 B̲ its base change along the augmentation 𝒪 ⟶ B̲ of Tag 08PR, under no hypothesis on A → B and no cardinal bound”.
 
 > **`Lπ_!(Ω_{𝒪/A}) = Lπ_!(Ω_{𝒪/A} ⊗_𝒪 B̲)` in `D(Ab)` at the site `C_{B/A}` itself**, the last
 > identification of [Stacks, Tag 08QK], as the isomorphism **induced by the base-change unit**
@@ -378,7 +378,7 @@ def polynomialSiteDerivedLowerShriekDifferentialsBaseChangeIso :
         (polynomialSiteAbelianDifferentialsBaseChange A B)
 ```
 
-**`CommAlgCat.polynomialSiteDerivedLowerShriekConstantIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSitePointValuesLargeSite.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSitePointValuesLargeSite.lean#L259). The attribute's comment: “Lπ_!(B̲) = B in D(Ab), for the point morphism of the site C_{B/A} of Tag 08PR itself -- not of the footnote-restricted site nor of a small model of it -- with Lπ_! the total left derived functor of the colimit over the index category, which is the π_! of Tag 08PF, and with B read as the abelian group ULift.{u+1} B exactly as the site's own ringed point CommAlgCat.polynomialRingedPoint reads it”.
+**`CommAlgCat.polynomialSiteDerivedLowerShriekConstantIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSitePointValuesLargeSite.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSitePointValuesLargeSite.lean#L259). The attribute's comment: “Lπ\_!(B̲) = B in D(Ab), for the point morphism of the site C\_\{B/A} of Tag 08PR itself -- not of the footnote-restricted site nor of a small model of it -- with Lπ\_! the total left derived functor of the colimit over the index category, which is the π\_! of Tag 08PF, and with B read as the abelian group ULift.\{u+1} B exactly as the site's own ringed point CommAlgCat.polynomialRingedPoint reads it”.
 
 > **`Lπ_!(B̲) = B` in `D(Ab)` at the site `C_{B/A}` itself**, the second identification of
 > [Stacks, Tag 08QK]. Here `B̲` is the constant sheaf of rings with value `B` of
@@ -397,7 +397,7 @@ def polynomialSiteDerivedLowerShriekConstantIso :
       polynomialSiteBaseInDerived A B
 ```
 
-**`CommAlgCat.polynomialSiteDerivedLowerShriekStructureConstantIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSitePointValuesLargeSite.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSitePointValuesLargeSite.lean#L430). The attribute's comment: “Lπ_!(𝒪) = Lπ_!(B̲) in D(Ab), as the isomorphism induced by the augmentation 𝒪 ⟶ B̲ of Tag 08PR, for the point morphism of the site C_{B/A} of Tag 08PR itself -- not of the footnote-restricted site nor of a small model of it”.
+**`CommAlgCat.polynomialSiteDerivedLowerShriekStructureConstantIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSitePointValuesLargeSite.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSitePointValuesLargeSite.lean#L430). The attribute's comment: “Lπ\_!(𝒪) = Lπ\_!(B̲) in D(Ab), as the isomorphism induced by the augmentation 𝒪 ⟶ B̲ of Tag 08PR, for the point morphism of the site C\_\{B/A} of Tag 08PR itself -- not of the footnote-restricted site nor of a small model of it”.
 
 > **`Lπ_!(𝒪) = Lπ_!(B̲)` in `D(Ab)` at the site `C_{B/A}` itself**, the first identification of
 > [Stacks, Tag 08QK], as the isomorphism **induced by the augmentation `𝒪 ⟶ B̲`** of
@@ -415,7 +415,7 @@ def polynomialSiteDerivedLowerShriekStructureConstantIso :
       polynomialSiteDerivedLowerShriekSingle A B (polynomialSiteAbelianConstantPresheaf A B)
 ```
 
-**`CommAlgCat.polynomialSiteDerivedLowerShriekStructureIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSitePointValuesLargeSite.lean, line 448](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSitePointValuesLargeSite.lean#L448). The attribute's comment: “Lπ_!(𝒪) = B in D(Ab), for the point morphism of the site C_{B/A} of Tag 08PR itself -- not of the footnote-restricted site nor of a small model of it”.
+**`CommAlgCat.polynomialSiteDerivedLowerShriekStructureIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSitePointValuesLargeSite.lean, line 448](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSitePointValuesLargeSite.lean#L448). The attribute's comment: “Lπ\_!(𝒪) = B in D(Ab), for the point morphism of the site C\_\{B/A} of Tag 08PR itself -- not of the footnote-restricted site nor of a small model of it”.
 
 > **`Lπ_!(𝒪) = B` in `D(Ab)` at the site `C_{B/A}` itself**, the composite of the two
 > identifications `Lπ_!(𝒪) = Lπ_!(B̲)` and `Lπ_!(B̲) = B` of [Stacks, Tag 08QK].
@@ -426,7 +426,7 @@ def polynomialSiteDerivedLowerShriekStructureIso :
       polynomialSiteBaseInDerived A B
 ```
 
-**`CommAlgCat.polynomialSiteDerivedLowerShriekCotangentIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSitePointValuesLargeSite.lean, line 520](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSitePointValuesLargeSite.lean#L520). The attribute's comment: “L_{B/A} = Lπ_!(Ω_{𝒪/A} ⊗_𝒪 B̲) in D(Ab), for the point morphism of the site C_{B/A} of Tag 08PR itself -- not of the footnote-restricted site nor of a small model of it: the cotangent complex of Tag 08PN, read in D(Ab) at the coefficient universe of the site, is Lπ_! of the sheaf i^*Ω_{𝒪/A}”.
+**`CommAlgCat.polynomialSiteDerivedLowerShriekCotangentIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSitePointValuesLargeSite.lean, line 520](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSitePointValuesLargeSite.lean#L520). The attribute's comment: “L\_\{B/A} = Lπ\_!(Ω\_\{𝒪/A} ⊗\_𝒪 B̲) in D(Ab), for the point morphism of the site C\_\{B/A} of Tag 08PR itself -- not of the footnote-restricted site nor of a small model of it: the cotangent complex of Tag 08PN, read in D(Ab) at the coefficient universe of the site, is Lπ\_! of the sheaf i^*Ω\_\{𝒪/A}”.
 
 > **`L_{B/A} = Lπ_!(Ω_{𝒪/A} ⊗_𝒪 B̲)` in `D(Ab)` at the site `C_{B/A}` itself**, the third
 > identification of [Stacks, Tag 08QK]. The left-hand side is the cotangent complex of
@@ -590,7 +590,7 @@ theorem degeneracyOne_lifts :
 noncomputable def explicitResolution : ExplicitResolution p
 ```
 
-**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeOne.degreeOneCoskeleton`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeOne.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeOne.lean#L377). The attribute's comment: “degree_one”.
+**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeOne.degreeOneCoskeleton`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeOne.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeOne.lean#L377). The attribute's comment: “degree\_one”.
 
 > The coskeleton of the explicit one-truncated polynomial simplicial algebra.
 
@@ -598,7 +598,7 @@ noncomputable def explicitResolution : ExplicitResolution p
 noncomputable def degreeOneCoskeleton : DegreeOneCoskeleton p
 ```
 
-**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeOne.range_faceZero_sub_faceOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeOne.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeOne.lean#L563). The attribute's comment: “degree_one”.
+**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeOne.range_faceZero_sub_faceOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeOne.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeOne.lean#L563). The attribute's comment: “degree\_one”.
 
 > Exactness at `P₀` of `P₁ → P₀ → B`.
 
@@ -608,7 +608,7 @@ theorem range_faceZero_sub_faceOne :
       {z : p.P0 | augmentationZero p z = 0}
 ```
 
-**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeOne.facePair_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeOne.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeOne.lean#L606). The attribute's comment: “degree_one”.
+**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeOne.facePair_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeOne.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeOne.lean#L606). The attribute's comment: “degree\_one”.
 
 > Every compatible pair of degree-zero simplices lifts to degree one.
 
@@ -619,7 +619,7 @@ theorem facePair_surjective :
         ∃ z : P1 p, faceZero p z = a ∧ faceOne p z = b
 ```
 
-**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeOne.coskeleton_trivialKanFibration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeOne.lean, line 700](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeOne.lean#L700). The attribute's comment: “degree_one”.
+**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeOne.coskeleton_trivialKanFibration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeOne.lean, line 700](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeOne.lean#L700). The attribute's comment: “degree\_one”.
 
 > The augmentation of this degree-one coskeleton is a trivial Kan fibration.
 
@@ -630,7 +630,7 @@ theorem coskeleton_trivialKanFibration :
         (forget (AlgCat.{max u v w x} p.A)))
 ```
 
-**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeTwo.faces_matching`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean#L191). The attribute's comment: “degree_two”.
+**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeTwo.faces_matching`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean#L191). The attribute's comment: “degree\_two”.
 
 > The three displayed face maps define a map to the degree-two matching object.
 
@@ -639,7 +639,7 @@ theorem faces_matching (q : P2 p) :
     MatchingTriple p (faceZero p q) (faceOne p q) (faceTwo p q)
 ```
 
-**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeTwo.matchingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean, line 878](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean#L878). The attribute's comment: “degree_two”.
+**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeTwo.matchingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean, line 878](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean#L878). The attribute's comment: “degree\_two”.
 
 > The actual second degree of the one-coskeleton is canonically the algebra
 > of compatible triples of degree-one elements.
@@ -652,7 +652,7 @@ noncomputable def matchingEquiv :
         MatchingTriple p g.1 g.2.1 g.2.2}
 ```
 
-**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeTwo.matchingEquiv_faces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean, line 905](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean#L905). The attribute's comment: “degree_two”.
+**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeTwo.matchingEquiv_faces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean, line 905](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean#L905). The attribute's comment: “degree\_two”.
 
 > The canonical matching equivalence records exactly the three actual faces
 > of a degree-two simplex.
@@ -664,7 +664,7 @@ theorem matchingEquiv_faces
       (coskeletonFace p 0 a, coskeletonFace p 1 a, coskeletonFace p 2 a)
 ```
 
-**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeTwo.degreeTwoToCoskeleton`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean, line 1053](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean#L1053). The attribute's comment: “degree_two”.
+**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeTwo.degreeTwoToCoskeleton`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean, line 1053](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean#L1053). The attribute's comment: “degree\_two”.
 
 > The algebra map from the displayed polynomial degree two to the actual
 > degree-two object of the one-coskeleton.
@@ -674,7 +674,7 @@ noncomputable def degreeTwoToCoskeleton :
     algP2 p ⟶ (DegreeOne.degreeOneCoskeleton p).simplicial _⦋2⦌
 ```
 
-**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeTwo.matchingEquiv_degreeTwoToCoskeleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean, line 1136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean#L1136). The attribute's comment: “degree_two”.
+**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeTwo.matchingEquiv_degreeTwoToCoskeleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean, line 1136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean#L1136). The attribute's comment: “degree\_two”.
 
 > Under the canonical matching equivalence, the algebra map has the three
 > displayed face maps as its components.
@@ -685,7 +685,7 @@ theorem matchingEquiv_degreeTwoToCoskeleton (q : P2 p) :
       ⟨(faceZero p q, faceOne p q, faceTwo p q), faces_matching p q⟩
 ```
 
-**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeTwo.degreeTwoToCoskeleton_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean, line 1518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean#L1518). The attribute's comment: “degree_two”.
+**`Algebra.PolynomialPresentationWithKernelGenerators.DegreeTwo.degreeTwoToCoskeleton_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean, line 1518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/Degeneracies/DegreeTwo.lean#L1518). The attribute's comment: “degree\_two”.
 
 > The displayed algebra map onto the actual second coskeleton degree is
 > surjective.

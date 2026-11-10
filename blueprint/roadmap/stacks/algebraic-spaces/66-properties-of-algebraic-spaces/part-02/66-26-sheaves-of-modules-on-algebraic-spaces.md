@@ -321,7 +321,7 @@ theorem modulePullback_exact :
       (modulePullback B S hS f)
 ```
 
-**`AlgebraicGeometry.Space.modulePullbackIsoEtaleModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean#L370). The attribute's comment: “the identification f^*G = G|_{X_étale}”.
+**`AlgebraicGeometry.Space.modulePullbackIsoEtaleModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackRestriction.lean#L370). The attribute's comment: “the identification f^*G = G|\_\{X\_étale}”.
 
 > **Stacks Equation 03LW, that is clause (2) of Stacks 03LV.**  Along an étale morphism
 > `f : X ⟶ Y` of algebraic spaces the pullback of `𝒪_Y`-modules of Stacks 03LU is naturally
@@ -337,7 +337,7 @@ noncomputable def modulePullbackIsoEtaleModulePullback :
     modulePullback B S hS f ≅ etaleModulePullback.{u, u} B S hS f hf
 ```
 
-**`AlgebraicGeometry.Space.isIso_fSharpInverseImage_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleStructureSheafInverseImage.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleStructureSheafInverseImage.lean#L377). The attribute's comment: “the inverse image of the structure sheaf, h⁻¹𝒪_V = 𝒪_U”.
+**`AlgebraicGeometry.Space.isIso_fSharpInverseImage_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleStructureSheafInverseImage.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleStructureSheafInverseImage.lean#L377). The attribute's comment: “the inverse image of the structure sheaf, h⁻¹𝒪\_V = 𝒪\_U”.
 
 > **Stacks 03LV.** For an étale morphism of algebraic spaces the inverse-image form
 > `f⁻¹𝒪_Y ⟶ 𝒪_X` of the structure map of the morphism of small étale ringed topoi of Stacks 03G8
@@ -382,7 +382,7 @@ theorem etaleStructureSheafIso_hom :
 
 [Tag 03LW](https://stacks.math.columbia.edu/tag/03LW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.modulePullbackIsoEtaleModuleInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean#L166). The attribute's comment: “the identification f^*G = f_small^{-1}G along an étale morphism”.
+**`AlgebraicGeometry.Space.modulePullbackIsoEtaleModuleInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleModulePullbackComparison.lean#L166). The attribute's comment: “the identification f^*G = f\_small^\{-1}G along an étale morphism”.
 
 > **Stacks 03LV.** Along an étale morphism of algebraic spaces, the pullback of `𝒪_Y`-modules
 > of Stacks 03LU is naturally isomorphic to the inverse image of modules with its scalars

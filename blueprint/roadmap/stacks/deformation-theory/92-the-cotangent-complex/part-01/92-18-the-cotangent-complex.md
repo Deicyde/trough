@@ -99,7 +99,7 @@ noncomputable def inverseImageCotangentComplexIso :
 
 [Tag 08SW](https://stacks.math.columbia.edu/tag/08SW) in the Stacks Project.
 
-**`CategoryTheory.Sheaf.sectionwiseCotangentCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/SectionwiseCotangentComplex.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/SectionwiseCotangentComplex.lean#L274). The attribute's comment: “the presheaf U ↦ H^i(L_{B(U)/A(U)}); not its sheafification”.
+**`CategoryTheory.Sheaf.sectionwiseCotangentCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/SectionwiseCotangentComplex.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/SectionwiseCotangentComplex.lean#L274). The attribute's comment: “the presheaf U ↦ H^i(L\_\{B(U)/A(U)}); not its sheafification”.
 
 > **The sectionwise cotangent cohomology presheaf** `U ↦ H^i(L_{B(U)/A(U)})`: the cotangent
 > cohomology groups of the ring maps on sections, with the maps induced by the restriction
@@ -109,7 +109,7 @@ noncomputable def inverseImageCotangentComplexIso :
 noncomputable def sectionwiseCotangentCohomology (i : ℤ) : Cᵒᵖ ⥤ AddCommGrpCat.{max u v w}
 ```
 
-**`CategoryTheory.Sheaf.cohomologySheafification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/SectionwiseCotangentComplexIso.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/SectionwiseCotangentComplexIso.lean#L380). The attribute's comment: “the whole lemma: the sheaf associated to the presheaf U ↦ H^i(L_{B(U)/A(U)}) is H^i(L_{B/A}), by the canonical identification — `sectionwiseComplexIso`, which `sectionwiseComplexIso_hom_unit` shows is induced by the comparison maps L_{B(U)/A(U)} ⟶ L_{B/A}(U) of Remark 08SX. CARRIES NOTHING beyond the ambient variables: arbitrary site, arbitrary Grothendieck topology, arbitrary homomorphism of sheaves of commutative rings, every i, with the section universe a free parameter. The module-level form, before the structure over B is forgotten, is `cohomologySheafIso`”.
+**`CategoryTheory.Sheaf.cohomologySheafification`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/SectionwiseCotangentComplexIso.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/SectionwiseCotangentComplexIso.lean#L380). The attribute's comment: “the whole lemma: the sheaf associated to the presheaf U ↦ H^i(L\_\{B(U)/A(U)}) is H^i(L\_\{B/A}), by the canonical identification — `sectionwiseComplexIso`, which `sectionwiseComplexIso_hom_unit` shows is induced by the comparison maps L\_\{B(U)/A(U)} ⟶ L\_\{B/A}(U) of Remark 08SX. CARRIES NOTHING beyond the ambient variables: arbitrary site, arbitrary Grothendieck topology, arbitrary homomorphism of sheaves of commutative rings, every i, with the section universe a free parameter. The module-level form, before the structure over B is forgotten, is `cohomologySheafIso`”.
 
 > For a homomorphism `A ⟶ B` of sheaves of commutative rings on a site, the cohomology sheaf
 > `H^i(L_{B/A})` of the cotangent complex is the sheaf associated to the presheaf
@@ -135,7 +135,7 @@ noncomputable def cohomologySheafification (i : ℤ) :
 
 [Tag 08SX](https://stacks.math.columbia.edu/tag/08SX) in the Stacks Project.
 
-**`CategoryTheory.Sheaf.sectionsCotangentComplexComparison_restriction_degree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/SectionsComparisonNaturality.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/SectionsComparisonNaturality.lean#L405). The attribute's comment: “CLAUSE (2), the compatibility with the restriction maps of the site, in every cohomological degree. Remark 08SX makes three assertions: that for every U there is a canonical map L_{B(U)/A(U)} ⟶ L_{B/A}(U), that these maps are compatible with the restriction maps, and that L_{B/A} is the sheafification of U ↦ L_{B(U)/A(U)}. The first is `sectionsCotangentComplexComparison`, whose attribute records that only that clause is claimed and that this one needs naturality in U of `sectionsComonadLax`, hence of `resolutionSectionsComparison` — which is what is proved here, as `resolutionSectionsComparison_restriction_square`, and propagated to the complex. CARRIES NOTHING beyond the ambient variables of the comparison itself: arbitrary site, arbitrary Grothendieck topology, arbitrary morphism of sheaves of commutative rings, arbitrary g. No sheaf-condition, smallness or site hypothesis is added, because the proof is a variables-to-variables induction over the standard resolution tower. The SHEAFIFICATION clause (3) is not claimed here; it is `sectionwiseComplexIso` of `StacksFrontier/Cotangent/SheavesOfRings/SectionwiseCotangentComplexIso.lean`”.
+**`CategoryTheory.Sheaf.sectionsCotangentComplexComparison_restriction_degree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/SectionsComparisonNaturality.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/SectionsComparisonNaturality.lean#L405). The attribute's comment: “CLAUSE (2), the compatibility with the restriction maps of the site, in every cohomological degree. Remark 08SX makes three assertions: that for every U there is a canonical map L\_\{B(U)/A(U)} ⟶ L\_\{B/A}(U), that these maps are compatible with the restriction maps, and that L\_\{B/A} is the sheafification of U ↦ L\_\{B(U)/A(U)}. The first is `sectionsCotangentComplexComparison`, whose attribute records that only that clause is claimed and that this one needs naturality in U of `sectionsComonadLax`, hence of `resolutionSectionsComparison` — which is what is proved here, as `resolutionSectionsComparison_restriction_square`, and propagated to the complex. CARRIES NOTHING beyond the ambient variables of the comparison itself: arbitrary site, arbitrary Grothendieck topology, arbitrary morphism of sheaves of commutative rings, arbitrary g. No sheaf-condition, smallness or site hypothesis is added, because the proof is a variables-to-variables induction over the standard resolution tower. The SHEAFIFICATION clause (3) is not claimed here; it is `sectionwiseComplexIso` of `StacksFrontier/Cotangent/SheavesOfRings/SectionwiseCotangentComplexIso.lean`”.
 
 > In each cohomological degree `j`, the canonical maps `L_{B(U)/A(U)} ⟶ L_{B/A}(U)` commute
 > with the restriction maps along `g : U ⟶ V`.
@@ -150,7 +150,7 @@ theorem sectionsCotangentComplexComparison_restriction_degree {U V : Cᵒᵖ} (g
           ((sectionsCotangentComplexComparison J f V).f j)
 ```
 
-**`CategoryTheory.Sheaf.sectionsCotangentComplexComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/SectionsCotangentComparison.lean, line 899](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/SectionsCotangentComparison.lean#L899). The attribute's comment: “the canonical map L_{B(U)/A(U)} ⟶ L_{B/A}(U); not the sheafification clause”.
+**`CategoryTheory.Sheaf.sectionsCotangentComplexComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/SectionsCotangentComparison.lean, line 899](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/SectionsCotangentComparison.lean#L899). The attribute's comment: “the canonical map L\_\{B(U)/A(U)} ⟶ L\_\{B/A}(U); not the sheafification clause”.
 
 > The canonical map `L_{B(U)/A(U)} ⟶ L_{B/A}(U)` of complexes of `B(U)`-modules: the comparison
 > of standard resolutions, base-changed on differentials, pushed through the alternating-face-map
@@ -165,7 +165,7 @@ noncomputable def sectionsCotangentComplexComparison (U : Cᵒᵖ) :
         (cotangentComplex J f)
 ```
 
-**`CategoryTheory.Sheaf.isIso_sheafify_sectionwiseCotangentTermComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/SectionwiseSheafification.lean, line 858](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/SectionwiseSheafification.lean#L858). The attribute's comment: “the third assertion, in each degree and in sheaves of B-modules: the degree-j term of L_{B/A} is the sheafification of the presheaf of B-modules U ↦ L^j_{B(U)/A(U)} along the canonical maps of the first assertion”.
+**`CategoryTheory.Sheaf.isIso_sheafify_sectionwiseCotangentTermComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/SectionwiseSheafification.lean, line 858](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/SectionwiseSheafification.lean#L858). The attribute's comment: “the third assertion, in each degree and in sheaves of B-modules: the degree-j term of L\_\{B/A} is the sheafification of the presheaf of B-modules U ↦ L^j\_\{B(U)/A(U)} along the canonical maps of the first assertion”.
 
 > In every degree `j`, the term of the cotangent complex `L_{B/A}` of a homomorphism of sheaves
 > of rings is the sheafification of the presheaf of `B`-modules `U ↦ L^j_{B(U)/A(U)}` of the terms of
@@ -180,7 +180,7 @@ theorem isIso_sheafify_sectionwiseCotangentTermComparison (j : ℤ) :
         (sectionwiseCotangentTermComparison J f j))
 ```
 
-**`CategoryTheory.Sheaf.sheafifiedSectionwiseCotangentComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/SectionwiseSheafification.lean, line 1005](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/SectionwiseSheafification.lean#L1005). The attribute's comment: “the third assertion: L_{B/A} is the sheafification of U ↦ L_{B(U)/A(U)}, the sheafification of the presheaf of complexes of abelian groups U ↦ L_{B(U)/A(U)} being isomorphic to L_{B/A} along the canonical maps of the first assertion; degreewise, in sheaves of B-modules, this is isIso_sheafify_sectionwiseCotangentTermComparison”.
+**`CategoryTheory.Sheaf.sheafifiedSectionwiseCotangentComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/SectionwiseSheafification.lean, line 1005](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/SectionwiseSheafification.lean#L1005). The attribute's comment: “the third assertion: L\_\{B/A} is the sheafification of U ↦ L\_\{B(U)/A(U)}, the sheafification of the presheaf of complexes of abelian groups U ↦ L\_\{B(U)/A(U)} being isomorphic to L\_\{B/A} along the canonical maps of the first assertion; degreewise, in sheaves of B-modules, this is isIso\_sheafify\_sectionwiseCotangentTermComparison”.
 
 > The cotangent complex `L_{B/A}` of a homomorphism of sheaves of rings is the sheafification of
 > the rule `U ↦ L_{B(U)/A(U)}`: the sheafification of the presheaf of complexes of abelian groups
@@ -237,7 +237,7 @@ noncomputable abbrev prodCotangentComparisonDerived
       DerivedCategory.Q.obj (prodCotangentSum J f f')
 ```
 
-**`CategoryTheory.Sheaf.isIso_prodCotangentComparisonDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/ProductRingsSectionwise.lean, line 555](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/ProductRingsSectionwise.lean#L555). The attribute's comment: “the lemma: the canonical map L_{B×B'/A} → L_{B/A} ⊕ L_{B'/A}, the pairing of the maps induced by the two projections, is an isomorphism in D(B×B'), for an arbitrary site and arbitrary homomorphisms A → B, A → B' of sheaves of rings”.
+**`CategoryTheory.Sheaf.isIso_prodCotangentComparisonDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/ProductRingsSectionwise.lean, line 555](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/ProductRingsSectionwise.lean#L555). The attribute's comment: “the lemma: the canonical map L\_\{B×B'/A} → L\_\{B/A} ⊕ L\_\{B'/A}, the pairing of the maps induced by the two projections, is an isomorphism in D(B×B'), for an arbitrary site and arbitrary homomorphisms A → B, A → B' of sheaves of rings”.
 
 > Let `C` be a site and let `A ⟶ B`, `A ⟶ B'` be homomorphisms of sheaves of commutative rings
 > on `C`. Then the canonical map `L_{B ⨯ B'/A} ⟶ L_{B/A} ⊕ L_{B'/A}`
@@ -269,7 +269,7 @@ def baseChangedCotangentComplexDerivedIso :
       DerivedCategory.Q.obj (baseChangedCotangentComplex.{u, v, w} J g h)
 ```
 
-**`CategoryTheory.Sheaf.towerCotangentBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/FundamentalTriangle.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/FundamentalTriangle.lean#L284). The attribute's comment: “the first displayed arrow L_{B/A} ⊗_B C ⟶ L_{C/A}, with the DEGREEWISE tensor product in place of the derived one — the two agree only once the terms of L_{B/A} are known to be locally free, which is not proved here and for which no derived extension of scalars for sheaves of modules on a site exists in this library. Distinguishedness of the triangle is not claimed by this declaration”.
+**`CategoryTheory.Sheaf.towerCotangentBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/FundamentalTriangle.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/FundamentalTriangle.lean#L284). The attribute's comment: “the first displayed arrow L\_\{B/A} ⊗\_B C ⟶ L\_\{C/A}, with the DEGREEWISE tensor product in place of the derived one — the two agree only once the terms of L\_\{B/A} are known to be locally free, which is not proved here and for which no derived extension of scalars for sheaves of modules on a site exists in this library. Distinguishedness of the triangle is not claimed by this declaration”.
 
 > **Stacks Project, Tag 08SZ, the first displayed arrow.** The canonical map
 > `L_{B/A} ⊗_B D ⟶ L_{D/A}` of complexes of sheaves of `D`-modules: the transpose, along the
@@ -284,7 +284,7 @@ noncomputable def towerCotangentBaseChange :
     baseChangedCotangentComplex.{u, v, w} J g h ⟶ cotangentComplex.{u, v, w} J (g ≫ h)
 ```
 
-**`CategoryTheory.Sheaf.towerCotangentChangeOfBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/FundamentalTriangle.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/FundamentalTriangle.lean#L310). The attribute's comment: “the second displayed arrow L_{C/A} ⟶ L_{C/B}, unconditionally and with no identification intervening. Distinguishedness of the triangle is not claimed by this declaration”.
+**`CategoryTheory.Sheaf.towerCotangentChangeOfBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/FundamentalTriangle.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/FundamentalTriangle.lean#L310). The attribute's comment: “the second displayed arrow L\_\{C/A} ⟶ L\_\{C/B}, unconditionally and with no identification intervening. Distinguishedness of the triangle is not claimed by this declaration”.
 
 > **Stacks Project, Tag 08SZ, the second displayed arrow.** The canonical
 > change-of-base-ring map `L_{D/A} ⟶ L_{D/B}` of complexes of sheaves of `D`-modules: the map of
@@ -428,7 +428,7 @@ theorem naiveComparisonNegOne_faceSum :
       naiveComparisonNegOne J f = 0
 ```
 
-**`CategoryTheory.Sheaf.naiveCotangentComplexIsoCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/NaiveComparisonCanonical.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/NaiveComparisonCanonical.lean#L283). The attribute's comment: “the naive cotangent complex of the presentation P₀ = A[B] is the naive cotangent complex NL_{B/A} of Tag 08TW”.
+**`CategoryTheory.Sheaf.naiveCotangentComplexIsoCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/NaiveComparisonCanonical.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/NaiveComparisonCanonical.lean#L283). The attribute's comment: “the naive cotangent complex of the presentation P₀ = A[B] is the naive cotangent complex NL\_\{B/A} of Tag 08TW”.
 
 > The naive cotangent complex of the presentation `P₀ ⟶ B` is the naive cotangent complex
 > `NL_{B/A}` of Tag 08TW, through the isomorphism `P₀ ≅ A[B]` of `A`-algebras over `B`.

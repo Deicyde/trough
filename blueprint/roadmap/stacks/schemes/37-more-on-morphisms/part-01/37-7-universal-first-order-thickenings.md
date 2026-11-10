@@ -307,7 +307,7 @@ theorem formallyUnramified_of_isPullback (sq : IsPullback h f g h')
     [FormallyUnramified h'] : FormallyUnramified h
 ```
 
-**`Stacks.Thickenings.isUniversal_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/FlatBaseChange.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/FlatBaseChange.lean#L180). The attribute's comment: “part (2): X ×_Y W' is the universal first-order thickening of Z over X”.
+**`Stacks.Thickenings.isUniversal_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/FlatBaseChange.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/FlatBaseChange.lean#L180). The attribute's comment: “part (2): X ×\_Y W' is the universal first-order thickening of Z over X”.
 
 > **The fibre product `X ×_Y W'` is a universal first-order thickening of `Z = X ×_Y W` over
 > `X`.**
@@ -318,7 +318,7 @@ theorem isUniversal_baseChange (sq : IsPullback h f g h')
     IsUniversalFirstOrderThickening h (baseChangeInclusion sq t) (baseChangeToBase g t)
 ```
 
-**`Stacks.Thickenings.epi_immersionConormalSheafMap_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/FlatBaseChange.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/FlatBaseChange.lean#L308). The attribute's comment: “part (3): the canonical map f^* 𝒞_{W/Y} ⟶ 𝒞_{Z/X} is surjective”. References: EGA IV (17.13.1), “more general”.
+**`Stacks.Thickenings.epi_immersionConormalSheafMap_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/FlatBaseChange.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/FlatBaseChange.lean#L308). The attribute's comment: “part (3): the canonical map f^* 𝒞\_\{W/Y} ⟶ 𝒞\_\{Z/X} is surjective”. References: EGA IV (17.13.1), “more general”.
 
 > For a cartesian square of schemes, with no flatness hypothesis on `g`, the canonical map of
 > conormal sheaves `f^* 𝒞_{W/Y} ⟶ 𝒞_{Z/X}` of [Stacks Project, Tag 01R4] between the inclusions of
@@ -369,7 +369,7 @@ theorem flat_universalFirstOrderThickeningMap (sq : IsPullback h f g h')
     Flat (universalFirstOrderThickeningMap tZ t f g sq.w)
 ```
 
-**`Stacks.Thickenings.isIso_immersionConormalSheafMap_of_isPullback_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/FlatBaseChange.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/FlatBaseChange.lean#L336). The attribute's comment: “the induced map f^* 𝒞_{W/Y} ⟶ 𝒞_{Z/X} of conormal sheaves is an isomorphism”.
+**`Stacks.Thickenings.isIso_immersionConormalSheafMap_of_isPullback_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/FlatBaseChange.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/FlatBaseChange.lean#L336). The attribute's comment: “the induced map f^* 𝒞\_\{W/Y} ⟶ 𝒞\_\{Z/X} of conormal sheaves is an isomorphism”.
 
 > For a cartesian square of schemes with `g` flat, the canonical map of conormal sheaves
 > `f^* 𝒞_{W/Y} ⟶ 𝒞_{Z/X}` of [Stacks Project, Tag 01R4] between the inclusions of the two
@@ -571,7 +571,7 @@ def universalConormalTransitivityMap (h : i ≫ p = j) :
     universalConormalSheaf j ⟶ universalConormalSheaf i
 ```
 
-**`Stacks.ConormalSequenceUnramifiedPair.conormalSequenceSecondArrow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 448](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L448). The attribute's comment: “the second arrow 𝒞_{Z/X} ⟶ i^*Ω_{X/Y}, built as the conormal differential of Tag 01UZ for Z ⟶ Z' over Z'' and moved along the identification thirdTermIso of the third term”.
+**`Stacks.ConormalSequenceUnramifiedPair.conormalSequenceSecondArrow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 448](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L448). The attribute's comment: “the second arrow 𝒞\_\{Z/X} ⟶ i^*Ω\_\{X/Y}, built as the conormal differential of Tag 01UZ for Z ⟶ Z' over Z'' and moved along the identification thirdTermIso of the third term”.
 
 > **The second arrow `𝒞_{Z/X} ⟶ i^*Ω_{X/Y}` of [Stacks, Tag 067V].** It is the conormal
 > differential of [Stacks, Tag 01UZ] for the closed immersion `Z ⟶ Z'` of `Z` into the ambient
@@ -587,7 +587,7 @@ def conormalSequenceSecondArrow (h : i ≫ p = j) :
       (Scheme.Modules.pullback i).obj (Scheme.Hom.relativeDifferentials p)
 ```
 
-**`Stacks.ConormalSequenceUnramifiedPair.conormalSequenceComp_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 1081](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L1081). The attribute's comment: “the composite of the two arrows 𝒞_{Z/Y} ⟶ 𝒞_{Z/X} ⟶ i^*Ω_{X/Y} vanishes, so the two arrows form a complex”.
+**`Stacks.ConormalSequenceUnramifiedPair.conormalSequenceComp_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 1081](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L1081). The attribute's comment: “the composite of the two arrows 𝒞\_\{Z/Y} ⟶ 𝒞\_\{Z/X} ⟶ i^*Ω\_\{X/Y} vanishes, so the two arrows form a complex”.
 
 > **[Stacks, Tag 067V]: the two arrows form a complex.** The composite
 > `𝒞_{Z/Y} ⟶ 𝒞_{Z/X} ⟶ i^*Ω_{X/Y}` vanishes.
@@ -597,7 +597,7 @@ theorem conormalSequenceComp_eq_zero (h : i ≫ p = j) :
     conormalSequenceFirstArrow i j p h ≫ conormalSequenceSecondArrow i j p h = 0
 ```
 
-**`Stacks.ConormalSequenceUnramifiedPair.epi_conormalSequenceSecondArrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 1093](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L1093). The attribute's comment: “surjectivity of the second arrow 𝒞_{Z/X} ⟶ i^*Ω_{X/Y}, which is the ⟶ 0 at the right-hand end of the sequence”.
+**`Stacks.ConormalSequenceUnramifiedPair.epi_conormalSequenceSecondArrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 1093](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L1093). The attribute's comment: “surjectivity of the second arrow 𝒞\_\{Z/X} ⟶ i^*Ω\_\{X/Y}, which is the ⟶ 0 at the right-hand end of the sequence”.
 
 > **[Stacks, Tag 067V]: the second arrow is an epimorphism.** This is the `⟶ 0` at the
 > right-hand end of the sequence.
@@ -607,7 +607,7 @@ theorem epi_conormalSequenceSecondArrow (h : i ≫ p = j) :
     Epi (conormalSequenceSecondArrow i j p h)
 ```
 
-**`Stacks.ConormalSequenceUnramifiedPair.conormalSequenceShortComplex_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 1110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L1110). The attribute's comment: “exactness at the middle term 𝒞_{Z/X}: the kernel of the second arrow is the image of the first”.
+**`Stacks.ConormalSequenceUnramifiedPair.conormalSequenceShortComplex_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean, line 1110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UnramifiedPairSplitConormalSequence.lean#L1110). The attribute's comment: “exactness at the middle term 𝒞\_\{Z/X}: the kernel of the second arrow is the image of the first”.
 
 > **[Stacks, Tag 067V]: the sequence is exact at `𝒞_{Z/X}`.** The kernel of the second arrow is
 > the image of the first.
@@ -633,7 +633,7 @@ noncomputable def transitivityMap (tZ : UniversalFirstOrderThickening (i ≫ p))
     (tY : UniversalFirstOrderThickening p) : tZ.ambient ⟶ tY.ambient
 ```
 
-**`Stacks.Thickenings.isUniversal_relative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Transitivity.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/Transitivity.lean#L149). The attribute's comment: “part (1): Y ×_{Y'} Z' is the universal first-order thickening of Z over Y”.
+**`Stacks.Thickenings.isUniversal_relative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Transitivity.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/Transitivity.lean#L149). The attribute's comment: “part (1): Y ×\_\{Y'} Z' is the universal first-order thickening of Z over Y”.
 
 > **Part (1) of [Stacks Project, Tag 06AE].** Let `Z --i--→ Y --p--→ X` be morphisms of
 > schemes, let `Z ⊂ Z'` be a universal first-order thickening of `Z` over `X` and `Y ⊂ Y'` one of
@@ -646,7 +646,7 @@ theorem isUniversal_relative :
       (relativeToBase i p tZ tY)
 ```
 
-**`Stacks.Thickenings.transitivityConormalLeftMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/TransitivityConormal.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/TransitivityConormal.lean#L94). The attribute's comment: “part (2): the first arrow i^* 𝒞_{Y/X} ⟶ 𝒞_{Z/X}”.
+**`Stacks.Thickenings.transitivityConormalLeftMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/TransitivityConormal.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/TransitivityConormal.lean#L94). The attribute's comment: “part (2): the first arrow i^* 𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X}”.
 
 > **The first arrow `i^* 𝒞_{Y/X} ⟶ 𝒞_{Z/X}` of the conormal sequence of part (2) of
 > [Stacks Project, Tag 06AE].** It is the canonical map of [Stacks Project, Tag 01R4] for the
@@ -660,7 +660,7 @@ def transitivityConormalLeftMap :
       conormalSheaf tZ.inclusion.liftCoborder.toLRSHom.toShHom
 ```
 
-**`Stacks.Thickenings.transitivityConormalRightMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/TransitivityConormal.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/TransitivityConormal.lean#L116). The attribute's comment: “part (2): the second arrow 𝒞_{Z/X} ⟶ 𝒞_{Z/Y}”.
+**`Stacks.Thickenings.transitivityConormalRightMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/TransitivityConormal.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/TransitivityConormal.lean#L116). The attribute's comment: “part (2): the second arrow 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y}”.
 
 > **The second arrow `𝒞_{Z/X} ⟶ 𝒞_{Z/Y}` of the conormal sequence of part (2) of
 > [Stacks Project, Tag 06AE].** It is the canonical map of [Stacks Project, Tag 01R4] for the

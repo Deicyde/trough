@@ -27,7 +27,7 @@ noncomputable def GradedLocalHom.actRight {N : GradedBimodule.{t, a, z} A B}
     GradedLocalHom N.toGradedModule L (n + m) U
 ```
 
-**`SheafOfModules.IsGradedInternalHom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHom.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHom.lean#L503). The attribute's comment: “SheafHom^gr_B(N, L) as a right graded A-module”.
+**`SheafOfModules.IsGradedInternalHom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHom.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedInternalHom.lean#L503). The attribute's comment: “SheafHom^gr\_B(N, L) as a right graded A-module”.
 
 > A right graded `A`-module `H` is the graded internal hom `SheafHom^gr_B(N, L)` of a graded
 > `(A, B)`-bimodule `N` and a right graded `B`-module `L` when its underlying graded sheaf of
@@ -76,7 +76,7 @@ structure Hom (M N : GradedBimodule.{t, a, m} A B)
 
 [Tag 0FR6](https://stacks.math.columbia.edu/tag/0FR6) in the Stacks Project.
 
-**`SheafOfModules.tensorHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedTensorHomAdjunction.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedTensorHomAdjunction.lean#L390). The attribute's comment: “Hom_{Mod^gr(B)}(M ⊗_A N, L) = Hom_{Mod^gr(A)}(M, SheafHom^gr_B(N, L))”.
+**`SheafOfModules.tensorHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedTensorHomAdjunction.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedTensorHomAdjunction.lean#L390). The attribute's comment: “Hom\_\{Mod^gr(B)}(M ⊗\_A N, L) = Hom\_\{Mod^gr(A)}(M, SheafHom^gr\_B(N, L))”.
 
 > **Tensor-hom adjunction for sheaves of graded modules**, first identity: the degree-`n`
 > homomorphisms `M ⊗_A N → L` of right graded `B`-modules are the degree-`n` homomorphisms
@@ -88,7 +88,7 @@ noncomputable def tensorHomEquiv (hT : IsGradedTensorProduct M N T)
     GradedHomOfDegree T L n ≃ GradedHomOfDegree M H n
 ```
 
-**`SheafOfModules.isGradedSheafHom_tensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedTensorHomAdjunction.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedTensorHomAdjunction.lean#L423). The attribute's comment: “SheafHom^gr_B(M ⊗_A N, L) = SheafHom^gr_A(M, SheafHom^gr_B(N, L))”.
+**`SheafOfModules.isGradedSheafHom_tensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedTensorHomAdjunction.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedTensorHomAdjunction.lean#L423). The attribute's comment: “SheafHom^gr\_B(M ⊗\_A N, L) = SheafHom^gr\_A(M, SheafHom^gr\_B(N, L))”.
 
 > **Tensor-hom adjunction for sheaves of graded modules**, second identity: a graded sheaf of
 > `R`-modules which is the internal hom `SheafHom^gr_B(M ⊗_A N, L)` is also the internal hom

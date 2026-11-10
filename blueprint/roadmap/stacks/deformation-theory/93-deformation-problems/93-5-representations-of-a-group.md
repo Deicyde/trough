@@ -14,7 +14,7 @@ Section 93.5 of the Stacks Project, [Tag 0DVR](https://stacks.math.columbia.edu/
 
 [Tag 0D3J](https://stacks.math.columbia.edu/tag/0D3J) in the Stacks Project.
 
-**`Deformation.Examples.FiniteProjectiveRepresentation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/Representations.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/Representations.lean#L58). The attribute's comment: “representation_category: objects”.
+**`Deformation.Examples.FiniteProjectiveRepresentation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/Representations.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/Representations.lean#L58). The attribute's comment: “representation\_category: objects”.
 
 > A finite projective representation of `Γ` over an Artinian local `Λ`-algebra with residue
 > field `k`.
@@ -25,7 +25,7 @@ public structure FiniteProjectiveRepresentation
     [Group Γ]
 ```
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/Representations.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/Representations.lean#L78). The attribute's comment: “representation_category: morphisms”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/Representations.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/Representations.lean#L78). The attribute's comment: “representation\_category: morphisms”.
 
 > A morphism of finite projective representations with varying coefficient ring.
 
@@ -35,7 +35,7 @@ public structure Hom
     [Group Γ] (X Y : FiniteProjectiveRepresentation.{u, v, w, m} Λ k Γ)
 ```
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/Representations.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/Representations.lean#L101). The attribute's comment: “representation_category”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/Representations.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/Representations.lean#L101). The attribute's comment: “representation\_category”.
 
 > The category structure on finite projective representations with varying coefficient
 > algebra.
@@ -46,7 +46,7 @@ public instance instCategory
     [Group Γ] : Category (FiniteProjectiveRepresentation.{u, v, w, m} Λ k Γ)
 ```
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.specialFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/Representations.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/Representations.lean#L159). The attribute's comment: “representation_deformation_category”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.specialFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/Representations.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/Representations.lean#L159). The attribute's comment: “representation\_deformation\_category”.
 
 > The representation `(V, ρ₀)` over `k`, viewed as the special-fibre object.
 
@@ -57,7 +57,7 @@ public noncomputable def specialFiber
     (ρ₀ : Representation k Γ V) : FiniteProjectiveRepresentation.{u, w, w, m} Λ k Γ
 ```
 
-**`Deformation.Examples.FiniteProjectiveRepresentation.deformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/Representations.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/Representations.lean#L169). The attribute's comment: “representation_deformation_category”.
+**`Deformation.Examples.FiniteProjectiveRepresentation.deformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Linear/Representations.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Linear/Representations.lean#L169). The attribute's comment: “representation\_deformation\_category”.
 
 > The category of deformations of a finite-dimensional representation of `Γ`.
 
@@ -92,7 +92,7 @@ public theorem projection_isCofiberedInGroupoids :
           ArtinianLocalAlgCat.{u, v, w} Λ k)
 ```
 
-**`Deformation.RepresentationCategory`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Basic.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Basic.lean#L58). The attribute's comment: “second presentation: representation_category, objects”.
+**`Deformation.RepresentationCategory`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Basic.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Basic.lean#L58). The attribute's comment: “second presentation: representation\_category, objects”.
 
 > A finite projective representation of `Γ` over an Artinian local `Λ`-algebra with
 > residue field `k`.
@@ -103,7 +103,7 @@ structure RepresentationCategory.{u', v', w', m', x'}
     [Group Γ]
 ```
 
-**`Deformation.RepresentationCategory.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Basic.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Basic.lean#L78). The attribute's comment: “second presentation: representation_category, morphisms”.
+**`Deformation.RepresentationCategory.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Basic.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Basic.lean#L78). The attribute's comment: “second presentation: representation\_category, morphisms”.
 
 > A morphism of finite projective representations with varying coefficient ring.
 
@@ -112,7 +112,7 @@ structure Hom {Λ : Type u} {k : Type w} {Γ : Type x} [CommRing Λ] [Field k] [
     [Group Γ] (X Y : RepresentationCategory.{u, v, w, m, x} Λ k Γ)
 ```
 
-**`Deformation.RepresentationCategory.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Basic.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Basic.lean#L127). The attribute's comment: “second presentation: representation_category”.
+**`Deformation.RepresentationCategory.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Basic.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Basic.lean#L127). The attribute's comment: “second presentation: representation\_category”.
 
 > The category structure on finite projective representations with varying coefficient
 > algebra.
@@ -122,7 +122,7 @@ instance instCategory {Λ : Type u} {k : Type w} {Γ : Type x} [CommRing Λ] [Fi
     [Algebra Λ k] [Group Γ] : Category (RepresentationCategory.{u, v, w, m, x} Λ k Γ)
 ```
 
-**`Deformation.representationProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Basic.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Basic.lean#L187). The attribute's comment: “second presentation: representation_category”.
+**`Deformation.representationProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Basic.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Basic.lean#L187). The attribute's comment: “second presentation: representation\_category”.
 
 > The coefficient algebra underlying a finite projective representation, as a
 > functor.
@@ -133,7 +133,7 @@ def representationProjection {Λ : Type u} {k : Type w} {Γ : Type x} [CommRing 
     RepresentationCategory.{u, v, w, m, x} Λ k Γ ⥤ ArtinianLocalAlgCat.{u, v, w} Λ k
 ```
 
-**`Deformation.RepresentationCategory.specialFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Basic.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Basic.lean#L214). The attribute's comment: “second presentation: representation_deformation_category”.
+**`Deformation.RepresentationCategory.specialFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Basic.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Basic.lean#L214). The attribute's comment: “second presentation: representation\_deformation\_category”.
 
 > The representation `(V, ρ₀)` over the residue field `k`, viewed as the special-fibre
 > object of the category `ℱ`.
@@ -145,7 +145,7 @@ noncomputable def specialFiber {Λ : Type u} {k : Type w} {Γ : Type x} [CommRin
     RepresentationCategory.{u, w, w, m, x} Λ k Γ
 ```
 
-**`Deformation.RepresentationCategory.deformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Basic.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Basic.lean#L224). The attribute's comment: “second presentation: representation_deformation_category”.
+**`Deformation.RepresentationCategory.deformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Basic.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Basic.lean#L224). The attribute's comment: “second presentation: representation\_deformation\_category”.
 
 > The category of deformations of a finite-dimensional representation of `Γ`.
 
@@ -155,7 +155,7 @@ abbrev deformationCategory {Λ : Type u} {k : Type w} {Γ : Type x} [CommRing Λ
     [Module.Finite k V] (ρ₀ : Representation k Γ V)
 ```
 
-**`Deformation.deformationCategoryProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Basic.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Basic.lean#L234). The attribute's comment: “second presentation: representation_deformation_category”.
+**`Deformation.deformationCategoryProjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Basic.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Basic.lean#L234). The attribute's comment: “second presentation: representation\_deformation\_category”.
 
 > The coefficient algebra of a deformation of `ρ₀`, as a functor from the deformation
 > category of `ρ₀` to `𝒞_Λ`.
@@ -168,7 +168,7 @@ noncomputable def deformationCategoryProjection {Λ : Type u} {k : Type w} {Γ :
       ArtinianLocalAlgCat.{u, w, w} Λ k
 ```
 
-**`Deformation.RepresentationCategory.representationProjection_isCofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Cofibered.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Cofibered.lean#L260). The attribute's comment: “second presentation: representation_category”.
+**`Deformation.RepresentationCategory.representationProjection_isCofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Cofibered.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Cofibered.lean#L260). The attribute's comment: “second presentation: representation\_category”.
 
 > The category of finite projective representations is cofibered in groupoids over the
 > category of Artinian local coefficient algebras.
@@ -384,7 +384,7 @@ public noncomputable def tangentSpaceEquivSelfExt
 
 [Tag 0ET1](https://stacks.math.columbia.edu/tag/0ET1) in the Stacks Project.
 
-**`Deformation.exists_hull_isomorphismClasses_representation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Hull.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Hull.lean#L121). The attribute's comment: “representation_hull”.
+**`Deformation.exists_hull_isomorphismClasses_representation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Representation/Hull.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Representation/Hull.lean#L121). The attribute's comment: “representation\_hull”.
 
 > The functor of isomorphism classes of deformations of a finite-dimensional representation of
 > a finitely generated group over a classical base has a hull: a versal formal object with

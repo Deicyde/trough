@@ -14,7 +14,7 @@ Section 29.18 of the Stacks Project, [Tag 0359](https://stacks.math.columbia.edu
 
 [Tag 035A](https://stacks.math.columbia.edu/tag/035A) in the Stacks Project.
 
-**`AlgebraicGeometry.isUniversallyJapaneseScheme_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/UniversallyJapanese.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/UniversallyJapanese.lean#L42). The attribute's comment: “universally_japanese”. References: EGA IV (7.7.2), “finite type stability”.
+**`AlgebraicGeometry.isUniversallyJapaneseScheme_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/UniversallyJapanese.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteType/UniversallyJapanese.lean#L42). The attribute's comment: “universally\_japanese”. References: EGA IV (7.7.2), “finite type stability”.
 
 > **Stacks Project, Tag 035A (universally Japanese case).** The source of a locally finite type
 > morphism to a universally Japanese scheme is universally Japanese.

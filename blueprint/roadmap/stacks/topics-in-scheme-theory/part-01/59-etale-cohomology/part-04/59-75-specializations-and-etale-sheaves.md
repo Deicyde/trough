@@ -28,7 +28,7 @@ theorem etaleStalkToSectionsAb_eq_smallEtaleSpecializationStalkAb :
         geometricStalkToPullbackSectionsAb (t.hom ≫ strictHenselizationToBase B S hS s)
 ```
 
-**`AlgebraicGeometry.smallEtaleSpecializationStalkAb_eq_sectionsRestrictionAb`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SpecializationStalkIdentifications.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SpecializationStalkIdentifications.lean#L354). The attribute's comment: “the specialization map is pullback of sections along `t`, read through the two identifications F_s = Γ(Spec 𝒪^sh_{S,s}, p⁻¹F) (03Q9 at the identity) and F_{t ≫ p} = Γ(t, t⁻¹p⁻¹F) (03Q1), both isomorphisms”.
+**`AlgebraicGeometry.smallEtaleSpecializationStalkAb_eq_sectionsRestrictionAb`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SpecializationStalkIdentifications.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SpecializationStalkIdentifications.lean#L354). The attribute's comment: “the specialization map is pullback of sections along `t`, read through the two identifications F\_s = Γ(Spec 𝒪^sh\_\{S,s}, p⁻¹F) (03Q9 at the identity) and F\_\{t ≫ p} = Γ(t, t⁻¹p⁻¹F) (03Q1), both isomorphisms”.
 
 > Let `S` be a scheme, `s` a geometric point of `S`, `p : Spec(𝒪^{sh}_{S,s}) ⟶ S` the
 > structure morphism of the strict henselization at `s`, and `t` a geometric point of
@@ -211,7 +211,7 @@ public theorem existsUnique_specializationMorphism_and_specialization_eq_pullbac
                   (t.map (strictHenselizationToBase B S hS s))))
 ```
 
-**`AlgebraicGeometry.existsUnique_specializationMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationMorphism.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationMorphism.lean#L195). The attribute's comment: “specialization_morphism_of_strict_henselizations”.
+**`AlgebraicGeometry.existsUnique_specializationMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationMorphism.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationMorphism.lean#L195). The attribute's comment: “specialization\_morphism\_of\_strict\_henselizations”.
 
 > The specialization morphism of strict henselizations exists and is unique: a geometric point
 > `t` of the strict henselization at `s` determines exactly one morphism from the strict
@@ -229,7 +229,7 @@ public theorem existsUnique_specializationMorphism (s : GeometricPoint S)
       (geometricPointToStrictHenselization B S hS tS ≫ c = t.hom)
 ```
 
-**`AlgebraicGeometry.specializationMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationMorphism.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationMorphism.lean#L398). The attribute's comment: “specialization_morphism_of_strict_henselizations”.
+**`AlgebraicGeometry.specializationMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationMorphism.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationMorphism.lean#L398). The attribute's comment: “specialization\_morphism\_of\_strict\_henselizations”.
 
 > The specialization morphism of strict henselizations attached to a geometric point of the
 > strict henselization at `s`: the unique morphism over `S` from the strict henselization at the
@@ -243,7 +243,7 @@ public def specializationMorphism (s : GeometricPoint S)
       strictHenselization B S hS s
 ```
 
-**`AlgebraicGeometry.specializationMapOnSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationOnSections.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationOnSections.lean#L161). The attribute's comment: “specialization_map_on_sections”.
+**`AlgebraicGeometry.specializationMapOnSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationOnSections.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationOnSections.lean#L161). The attribute's comment: “specialization\_map\_on\_sections”.
 
 > Specialization of a section along the canonical morphism of strict henselizations
 > determined by a geometric point `t` of the strict henselization at `s`: the pullback of global
@@ -274,7 +274,7 @@ public def specializationMapOnSections
           (SmallEtale.topology B _ hU)).obj G)
 ```
 
-**`AlgebraicGeometry.abelianSpecializationMapOnSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationOnSections.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationOnSections.lean#L199). The attribute's comment: “specialization_map_on_sections”.
+**`AlgebraicGeometry.abelianSpecializationMapOnSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationOnSections.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationOnSections.lean#L199). The attribute's comment: “specialization\_map\_on\_sections”.
 
 > Specialization along the canonical morphism of strict henselizations, as a natural
 > transformation of functors on abelian sheaves.
@@ -303,7 +303,7 @@ public def abelianSpecializationMapOnSections
         Sheaf.Γ (SmallEtale.topology B _ hU) Ab.{u + 1}))
 ```
 
-**`AlgebraicGeometry.specializationMapOnSections_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationOnSections.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationOnSections.lean#L236). The attribute's comment: “specialization_map_on_sections”.
+**`AlgebraicGeometry.specializationMapOnSections_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationOnSections.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SpecializationOnSections.lean#L236). The attribute's comment: “specialization\_map\_on\_sections”.
 
 > The geometric germ of a specialized global section is the pullback of its germ on the first
 > strict henselization.

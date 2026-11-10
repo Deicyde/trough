@@ -14,7 +14,7 @@ Section 98.3 of the Stacks Project, [Tag 07T2](https://stacks.math.columbia.edu/
 
 [Tag 07T2](https://stacks.math.columbia.edu/tag/07T2) in the Stacks Project.
 
-**`Deformation.Artin.factorizationEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation/Factorization.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Predeformation/Factorization.lean#L395). The attribute's comment: “the category 𝒞_Λ is equivalent to the opposite of the category of factorizations Spec k ⟶ Spec A ⟶ S of the point, with A Artinian local and its residue field identified with k”.
+**`Deformation.Artin.factorizationEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation/Factorization.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Predeformation/Factorization.lean#L395). The attribute's comment: “the category 𝒞\_Λ is equivalent to the opposite of the category of factorizations Spec k ⟶ Spec A ⟶ S of the point, with A Artinian local and its residue field identified with k”.
 
 > **The category `𝒞_Λ` is equivalent to the opposite of the category of factorizations
 > `Spec k ⟶ Spec A ⟶ S` of the given point by the spectrum of an Artinian local ring with
@@ -25,7 +25,7 @@ public def factorizationEquivalence :
     ArtinianLocalAlgCat.{u, u, u} Λ k ≌ (ArtinianLocalFactorization S k x)ᵒᵖ
 ```
 
-**`Deformation.Artin.artinianLocalAlgCatEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation/Factorization.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Predeformation/Factorization.lean#L419). The attribute's comment: “the category 𝒞_Λ is independent, up to canonical equivalence, of the choice of the affine open Spec Λ ⊂ S the point factors through”.
+**`Deformation.Artin.artinianLocalAlgCatEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation/Factorization.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Predeformation/Factorization.lean#L419). The attribute's comment: “the category 𝒞\_Λ is independent, up to canonical equivalence, of the choice of the affine open Spec Λ ⊂ S the point factors through”.
 
 > **The category `𝒞_Λ` does not depend, up to canonical equivalence, on the choice of the
 > affine open `Spec Λ ⊂ S` through which the point factors.** Both are equivalent to the
@@ -38,7 +38,7 @@ public def artinianLocalAlgCatEquiv :
 
 Declarations registered for the tag:
 
-- [`Deformation.Artin.predeformationCategory`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Predeformation.lean#L225), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/Predeformation.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Predeformation.lean#L271) (StacksFrontier): “the construction of the category 𝓕_{𝓧,k,x₀} of deformations of x₀, its objects and its reversed morphisms, together with its projection to 𝒞_Λ”.
+- [`Deformation.Artin.predeformationCategory`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Predeformation.lean#L225), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/Predeformation.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Predeformation.lean#L271) (StacksFrontier): “the construction of the category 𝓕\_\{𝓧,k,x₀} of deformations of x₀, its objects and its reversed morphisms, together with its projection to 𝒞\_Λ”.
 
 ## Tag 07T3, an equation
 

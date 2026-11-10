@@ -91,7 +91,7 @@ public theorem isPerfect_iff_forall_isPerfect_derivedPullback {X : Scheme.{u}} {
 
 [Tag 09VA](https://stacks.math.columbia.edu/tag/09VA) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_derivedPushforwardOXMod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/DerivedPushforwardPseudoCoherent.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/DerivedPushforwardPseudoCoherent.lean#L116). The attribute's comment: “E m-pseudo-coherent implies Ri_*E m-pseudo-coherent”. References: SGA 6 III (1.1.1), “necessity: E ⇒ Ri_*E”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_derivedPushforwardOXMod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/DerivedPushforwardPseudoCoherent.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/DerivedPushforwardPseudoCoherent.lean#L116). The attribute's comment: “E m-pseudo-coherent implies Ri\_*E m-pseudo-coherent”. References: SGA 6 III (1.1.1), “necessity: E ⇒ Ri\_*E”.
 
 > **The forward half of Stacks 09VA.** Let `i : Z ⟶ X` be a morphism of ringed spaces whose
 > underlying continuous map is a closed immersion and such that `i_*𝒪_Z` is pseudo-coherent as an
@@ -114,7 +114,7 @@ public theorem isPseudoCoherentFrom_derivedPushforwardOXMod
     IsPseudoCoherentFrom ((derivedPushforwardOXMod i hi).obj E) m
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_of_derivedPushforwardOXMod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/PushforwardReflectPseudoCoherent.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/PushforwardReflectPseudoCoherent.lean#L372). The attribute's comment: “Ri_*E m-pseudo-coherent implies E m-pseudo-coherent”. References: SGA 6 III (1.1.1), “sufficiency: Ri_*E ⇒ E”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_of_derivedPushforwardOXMod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/PushforwardReflectPseudoCoherent.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/PushforwardReflectPseudoCoherent.lean#L372). The attribute's comment: “Ri\_*E m-pseudo-coherent implies E m-pseudo-coherent”. References: SGA 6 III (1.1.1), “sufficiency: Ri\_*E ⇒ E”.
 
 > **The converse half of Stacks 09VA.** Let `i : Z ⟶ X` be a morphism of ringed spaces whose
 > underlying continuous map is a closed embedding and such that `i_*𝒪_Z` is pseudo-coherent as an

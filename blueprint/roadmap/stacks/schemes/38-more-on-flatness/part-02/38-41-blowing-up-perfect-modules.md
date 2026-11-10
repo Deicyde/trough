@@ -187,7 +187,7 @@ theorem isEffectiveCartierDivisor_fittingIdeal_pullback_fittingIdealProdAll
         (k : ℤ))
 ```
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_isEffectiveCartierDivisor_fittingIdeal_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProductAll.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProductAll.lean#L336). The attribute's comment: “the U-admissible blowup making every Fitting ideal effective Cartier, for ℱ|_U = 0”.
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_isEffectiveCartierDivisor_fittingIdeal_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProductAll.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Transform/FittingProductAll.lean#L336). The attribute's comment: “the U-admissible blowup making every Fitting ideal effective Cartier, for ℱ|\_U = 0”.
 
 > For a finitely presented `𝒪_X`-module `ℱ` with `ℱ|_U = 0` there is a `U`-admissible blowup
 > `b : X' → X` on which every Fitting ideal of `b^*ℱ` is an effective Cartier divisor.
@@ -285,7 +285,7 @@ theorem exists_isAdmissibleBlowup_canonicalFiltrations [F.IsFinitePresentation] 
               (∏ j ∈ Finset.Icc (i + 1) N, e j) • s = 0)
 ```
 
-**`Stacks.Divisors.isEffectiveCartierDivisor_locallyFiniteSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DivisorSum/LocallyFinite.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DivisorSum/LocallyFinite.lean#L176). The attribute's comment: “the locally finite sum E_k = D_{k+1} + 2D_{k+2} + ⋯ is effective Cartier”. References: EGA IV (21.2.7), “partial”.
+**`Stacks.Divisors.isEffectiveCartierDivisor_locallyFiniteSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DivisorSum/LocallyFinite.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DivisorSum/LocallyFinite.lean#L176). The attribute's comment: “the locally finite sum E\_k = D\_\{k+1} + 2D\_\{k+2} + ⋯ is effective Cartier”. References: EGA IV (21.2.7), “partial”.
 
 > **The sum of a locally finite family of effective Cartier divisors is an effective Cartier
 > divisor.**
@@ -320,7 +320,7 @@ theorem fittingIdeal_cokernel_smul (k : ℕ) :
       Ideal.span {f} ^ (n - k) * fittingIdeal (M := Cokernel B) (k : ℤ)
 ```
 
-**`Stacks.ScaledPresentation.shortExact_ofFree_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L425). The attribute's comment: “the canonical sequence 0 → 𝒪_{D_n}^{⊕n} → ℱ → ℱ' → 0 of a local presentation”.
+**`Stacks.ScaledPresentation.shortExact_ofFree_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L425). The attribute's comment: “the canonical sequence 0 → 𝒪\_\{D\_n}^\{⊕n} → ℱ → ℱ' → 0 of a local presentation”.
 
 > **Stacks Project, Tag 0ESU**, the first canonical short exact sequence of a local
 > presentation. For `A = f • B` with `B` injective, writing `𝓕 = Rⁿ / A Rⁿ` and `𝓕' = Rⁿ / B Rⁿ`,
@@ -341,7 +341,7 @@ theorem shortExact_ofFree_toBase (hf : f ∈ nonZeroDivisors R)
       LinearMap.range (ofFree B f) = LinearMap.ker (LinearMap.lsmul R (Cokernel (f • B)) f)
 ```
 
-**`Stacks.ScaledPresentation.shortExact_ofBase_toFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L443). The attribute's comment: “the canonical sequence 0 → ℱ' → ℱ → 𝒪_{D_n}^{⊕n} → 0 of a local presentation”.
+**`Stacks.ScaledPresentation.shortExact_ofBase_toFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L443). The attribute's comment: “the canonical sequence 0 → ℱ' → ℱ → 𝒪\_\{D\_n}^\{⊕n} → 0 of a local presentation”.
 
 > **Stacks Project, Tag 0ESU**, the second canonical short exact sequence of a local
 > presentation. For `A = f • B` with `f` a nonzerodivisor, writing `𝓕 = Rⁿ / A Rⁿ` and
@@ -360,7 +360,7 @@ theorem shortExact_ofBase_toFree (hf : f ∈ nonZeroDivisors R) :
       LinearMap.range (ofBase B f) = LinearMap.range (LinearMap.lsmul R (Cokernel (f • B)) f)
 ```
 
-**`Stacks.ScaledPresentation.exists_eq_smul_and_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L496). The attribute's comment: “the local step: a principal Fit_{n-1} gives A = f A' and the two sequences”.
+**`Stacks.ScaledPresentation.exists_eq_smul_and_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Fitting/ScaledPresentation.lean#L496). The attribute's comment: “the local step: a principal Fit\_\{n-1} gives A = f A' and the two sequences”.
 
 > **Stacks Project, Tag 0ESU**, the local step of the induction. Let `𝓕 = R^{n} / A R^{n}` be
 > presented by a square matrix `A` with `n = m + 1` rows, with `A` injective, and suppose

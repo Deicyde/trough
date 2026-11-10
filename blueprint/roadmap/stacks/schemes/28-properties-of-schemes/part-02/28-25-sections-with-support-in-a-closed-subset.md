@@ -246,7 +246,7 @@ theorem pushforward_annihilatorSubsheaf_range_eq
 
 [Tag 07ZP](https://stacks.math.columbia.edu/tag/07ZP) in the Stacks Project.
 
-**`AlgebraicGeometry.supportedSectionsSubmodule_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/SupportedSections/Basic.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/SupportedSections/Basic.lean#L82). The attribute's comment: “supported_sections_is_quasicoherent”.
+**`AlgebraicGeometry.supportedSectionsSubmodule_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/SupportedSections/Basic.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/SupportedSections/Basic.lean#L82). The attribute's comment: “supported\_sections\_is\_quasicoherent”.
 
 > The subsheaf of sections supported on a closed subset with retrocompact complement is
 > quasicoherent.
@@ -279,7 +279,7 @@ theorem mem_supportedSectionsSubmodule_iff_exists_pow_le_annihilator {X : Scheme
       ∃ n : ℕ, ∀ a ∈ I ^ n, a • s = 0
 ```
 
-**`AlgebraicGeometry.exists_fg_ideal_zeroLocus_eq_inter`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ClosedSubsetIdeal.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/ClosedSubsetIdeal.lean#L35). The attribute's comment: “finite_ideal_for_closed_subset_on_affine”.
+**`AlgebraicGeometry.exists_fg_ideal_zeroLocus_eq_inter`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ClosedSubsetIdeal.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/ClosedSubsetIdeal.lean#L35). The attribute's comment: “finite\_ideal\_for\_closed\_subset\_on\_affine”.
 
 > On an affine open of a scheme, a closed subset with retrocompact complement is the
 > zero locus of a finitely generated ideal of the ring of sections.

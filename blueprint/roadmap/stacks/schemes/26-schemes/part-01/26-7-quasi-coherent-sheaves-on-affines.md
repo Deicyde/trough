@@ -40,7 +40,7 @@ Declarations registered for the tag:
 
 [Tag 01I8](https://stacks.math.columbia.edu/tag/01I8) in the Stacks Project.
 
-**`Stacks.AffineExteriorPower.tildeExteriorPowerIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineExteriorPowerCompare/Basic.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineExteriorPowerCompare/Basic.lean#L51). The attribute's comment: “exterior_power”.
+**`Stacks.AffineExteriorPower.tildeExteriorPowerIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineExteriorPowerCompare/Basic.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineExteriorPowerCompare/Basic.lean#L51). The attribute's comment: “exterior\_power”.
 
 > **The affine exterior-power comparison.** The associated sheaf of the `n`-th exterior power
 > of `M` is the `n`-th exterior power of `M̃`.
@@ -51,7 +51,7 @@ def tildeExteriorPowerIso (n : ℕ) :
       A.exteriorPower n
 ```
 
-**`Stacks.AffineExteriorPower.tildeExteriorPowerIso_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineExteriorPowerCompare/Natural.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineExteriorPowerCompare/Natural.lean#L156). The attribute's comment: “exterior_power”.
+**`Stacks.AffineExteriorPower.tildeExteriorPowerIso_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineExteriorPowerCompare/Natural.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineExteriorPowerCompare/Natural.lean#L156). The attribute's comment: “exterior\_power”.
 
 > **The affine exterior-power comparison is natural.** It respects every unital homomorphism of
 > exterior algebra sheaves extending the map `M̃ ⟶ Ñ` of generating module sheaves on the
@@ -72,7 +72,7 @@ theorem tildeExteriorPowerIso_natural (n : ℕ)
       (tildeExteriorPowerIso M A n).hom ≫ g.app (n : ℤ)
 ```
 
-**`Stacks.AffineExteriorPower.tildeExteriorPowerIso_hom_ιMulti`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineExteriorPowerCompare/Wedge.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineExteriorPowerCompare/Wedge.lean#L163). The attribute's comment: “exterior_power”.
+**`Stacks.AffineExteriorPower.tildeExteriorPowerIso_hom_ιMulti`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineExteriorPowerCompare/Wedge.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineExteriorPowerCompare/Wedge.lean#L163). The attribute's comment: “exterior\_power”.
 
 > **The affine exterior-power comparison on a wedge of global sections.** The global section of
 > `(⋀ⁿ_R M)~` attached to `m₁ ∧ ⋯ ∧ mₙ` is carried to the ordered product, in `⋀(M̃)`, of the
@@ -90,7 +90,7 @@ theorem tildeExteriorPowerIso_hom_ιMulti
           ((tilde.toOpen M ⊤).hom (s i)))
 ```
 
-**`Stacks.SymGraded.tildeSymmetricPowerIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Basic.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Basic.lean#L72). The attribute's comment: “symmetric_power”.
+**`Stacks.SymGraded.tildeSymmetricPowerIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Basic.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Basic.lean#L72). The attribute's comment: “symmetric\_power”.
 
 > **The affine symmetric-power comparison.** The associated sheaf of the `n`-th symmetric
 > power of `M` is the `n`-th symmetric power of `M̃`.
@@ -101,7 +101,7 @@ def tildeSymmetricPowerIso (n : ℕ) :
         SheafOfModules.{u} (Spec R).ringCatSheaf) ≅ A.symmetricPower n
 ```
 
-**`Stacks.SymGraded.tildeSymmetricPowerIso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Basic.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Basic.lean#L124). The attribute's comment: “symmetric_power”.
+**`Stacks.SymGraded.tildeSymmetricPowerIso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Basic.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Basic.lean#L124). The attribute's comment: “symmetric\_power”.
 
 > **In degree zero the comparison takes the algebraic unit to the unit of the symmetric
 > algebra sheaf.**
@@ -116,7 +116,7 @@ theorem tildeSymmetricPowerIso_unit :
         A.symmetric.one.eval (.op (⊤ : Opens (Spec R).carrier))
 ```
 
-**`Stacks.SymGraded.tildeSymmetricPowerIso_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Basic.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Basic.lean#L144). The attribute's comment: “symmetric_power”.
+**`Stacks.SymGraded.tildeSymmetricPowerIso_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Basic.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Basic.lean#L144). The attribute's comment: “symmetric\_power”.
 
 > **In degree one the comparison takes an algebraic generator to the corresponding generator
 > of the symmetric algebra sheaf.**
@@ -133,7 +133,7 @@ theorem tildeSymmetricPowerIso_generator (m : M) :
           ((tilde.toOpen M ⊤).hom m)
 ```
 
-**`Stacks.SymGraded.tildeSymmetricPowerIso_mul_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Mul.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Mul.lean#L99). The attribute's comment: “symmetric_power”.
+**`Stacks.SymGraded.tildeSymmetricPowerIso_mul_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Mul.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Mul.lean#L99). The attribute's comment: “symmetric\_power”.
 
 > **The comparison in degree `n + 1` takes multiplication by an algebraic degree-one generator
 > to multiplication by the corresponding sheaf generator.** Together with the degree-one
@@ -155,7 +155,7 @@ theorem tildeSymmetricPowerIso_mul_generator (n : ℕ) (m : M)
           ((tilde.toOpen (ModuleCat.of R (SymPow.symmetricPower n R M)) ⊤).hom x)))
 ```
 
-**`Stacks.SymGraded.tildeSymmetricPowerIso_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Natural.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Natural.lean#L58). The attribute's comment: “symmetric_power”.
+**`Stacks.SymGraded.tildeSymmetricPowerIso_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Natural.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Natural.lean#L58). The attribute's comment: “symmetric\_power”.
 
 > **The affine symmetric-power comparison is natural.** It respects every unital homomorphism
 > of symmetric algebra sheaves extending the map of generating module sheaves; the universal
@@ -176,7 +176,7 @@ theorem tildeSymmetricPowerIso_natural (n : ℕ)
       (tildeSymmetricPowerIso M A n).hom ≫ g.app (n : ℤ)
 ```
 
-**`Stacks.SymGraded.tildeSymmetricPowerIso_natural_symMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Natural.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Natural.lean#L129). The attribute's comment: “symmetric_power”.
+**`Stacks.SymGraded.tildeSymmetricPowerIso_natural_symMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Natural.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineSymmetricPowerCompare/Natural.lean#L129). The attribute's comment: “symmetric\_power”.
 
 > **The affine symmetric-power comparison is natural, for the canonical induced map.** This is
 > `Stacks.SymGraded.tildeSymmetricPowerIso_natural` instantiated at `symmetricAlgebraHom`, the
@@ -197,7 +197,7 @@ theorem tildeSymmetricPowerIso_natural_symMap (n : ℕ)
       (tildeSymmetricPowerIso M A n).hom ≫ (symmetricAlgebraHom f A B).app (n : ℤ)
 ```
 
-**`AlgebraicGeometry.InternalHomTildeIso`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHom.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHom.lean#L104). The attribute's comment: “internal_hom”.
+**`AlgebraicGeometry.InternalHomTildeIso`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHom.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHom.lean#L104). The attribute's comment: “internal\_hom”.
 
 > An isomorphism from an affine internal Hom to the associated sheaf of the module of linear
 > maps, together with the characterization that makes the isomorphism canonical.
@@ -211,7 +211,7 @@ structure InternalHomTildeIso (R : CommRingCat.{u}) (M N : ModuleCat.{u} R)
     (H : SheafHom (Spec R).sheaf (tilde M) (tilde N))
 ```
 
-**`AlgebraicGeometry.internalHomTildeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHom.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHom.lean#L121). The attribute's comment: “internal_hom”. References: EGA I (1.3.12), “(ii)”.
+**`AlgebraicGeometry.internalHomTildeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHom.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHom.lean#L121). The attribute's comment: “internal\_hom”. References: EGA I (1.3.12), “(ii)”.
 
 > **Stacks Project, Tag 01I8 (`internal_hom`).**
 >
@@ -227,7 +227,7 @@ noncomputable def internalHomTildeIso (R : CommRingCat.{u})
     InternalHomTildeIso R M N H
 ```
 
-**`AlgebraicGeometry.internalHomTildeIsoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHom.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHom.lean#L156). The attribute's comment: “internal_hom”.
+**`AlgebraicGeometry.internalHomTildeIsoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHom.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHom.lean#L156). The attribute's comment: “internal\_hom”.
 
 > **Stacks Project, Tag 01I8 (`internal_hom`).**
 >
@@ -244,7 +244,7 @@ noncomputable def internalHomTildeIsoIso (R : CommRingCat.{u}) (M N : ModuleCat.
     H.obj ≅ tilde (ModuleCat.of R (M ⟶ N))
 ```
 
-**`AlgebraicGeometry.internalHomTildeIsoIso_inv_app_toOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHom.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHom.lean#L166). The attribute's comment: “internal_hom”.
+**`AlgebraicGeometry.internalHomTildeIsoIso_inv_app_toOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHom.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHom.lean#L166). The attribute's comment: “internal\_hom”.
 
 > **Stacks Project, Tag 01I8 (`internal_hom`).** The affine internal-Hom isomorphism is
 > canonical: its inverse sends the global section associated to `f : M ⟶ N` to the section of the
@@ -260,7 +260,7 @@ theorem internalHomTildeIsoIso_inv_app_toOpen (R : CommRingCat.{u}) (M N : Modul
       (tilde.map f).over ⊤
 ```
 
-**`AlgebraicGeometry.internalHomTildeIso_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHomNatural.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHomNatural.lean#L115). The attribute's comment: “internal_hom”.
+**`AlgebraicGeometry.internalHomTildeIso_natural_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHomNatural.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHomNatural.lean#L115). The attribute's comment: “internal\_hom”.
 
 > The affine internal-Hom comparison is natural in the target module: a morphism of internal
 > Homs exhibited as post-composition with `tilde.map u` is carried to the associated sheaf of
@@ -277,7 +277,7 @@ theorem internalHomTildeIso_natural_right (R : CommRingCat.{u}) (M N N' : Module
       (internalHomTildeIso R M N H).iso.hom ≫ tilde.map (ModuleCat.homPostcomp M u)
 ```
 
-**`AlgebraicGeometry.internalHomTildeIso_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHomNatural.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHomNatural.lean#L150). The attribute's comment: “internal_hom”.
+**`AlgebraicGeometry.internalHomTildeIso_natural_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHomNatural.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/AffineInternalHomNatural.lean#L150). The attribute's comment: “internal\_hom”.
 
 > The affine internal-Hom comparison is contravariantly natural in the source module: a
 > morphism of internal Homs exhibited as pre-composition with `tilde.map β` is carried to the
@@ -294,7 +294,7 @@ theorem internalHomTildeIso_natural_left (R : CommRingCat.{u}) (M M' N : ModuleC
       (internalHomTildeIso R M N H).iso.hom ≫ tilde.map (ModuleCat.homPrecomp N β)
 ```
 
-**`AlgebraicGeometry.tildeTensorPowerIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/TildeTensorPower.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/TildeTensorPower.lean#L168). The attribute's comment: “tensor_power”.
+**`AlgebraicGeometry.tildeTensorPowerIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/TildeTensorPower.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/TildeTensorPower.lean#L168). The attribute's comment: “tensor\_power”.
 
 > **Stacks Project, Tag 01I8 (tensor-power part).** The associated sheaf of a tensor power is
 > canonically the tensor power of the associated sheaf.
@@ -304,7 +304,7 @@ noncomputable def tildeTensorPowerIso (R : CommRingCat.{u}) (M : ModuleCat.{u} R
     (n : ℕ) → (tilde (ModuleCat.of R (TensorPower R n M)) ≅ specTildeTensorPower R M n)
 ```
 
-**`AlgebraicGeometry.tildeTensorPowerIso_hom_tprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/TildeTensorPower.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/TildeTensorPower.lean#L344). The attribute's comment: “tensor_power”.
+**`AlgebraicGeometry.tildeTensorPowerIso_hom_tprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/TildeTensorPower.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/TildeTensorPower.lean#L344). The attribute's comment: “tensor\_power”.
 
 > **Stacks Project, Tag 01I8 (tensor-power part).** The canonical affine tensor-power
 > comparison carries a pure tensor to the tensor product of its associated global sections.
@@ -318,7 +318,7 @@ theorem tildeTensorPowerIso_hom_tprod (R : CommRingCat.{u}) (M : ModuleCat.{u} R
       tildeTensorPowerSection R M n a
 ```
 
-**`AlgebraicGeometry.tildeTensorPowerIso_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/TildeTensorPower.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/TildeTensorPower.lean#L554). The attribute's comment: “tensor_power”.
+**`AlgebraicGeometry.tildeTensorPowerIso_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/TildeTensorPower.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/TildeTensorPower.lean#L554). The attribute's comment: “tensor\_power”.
 
 > **Stacks Project, Tag 01I8 (tensor-power part).** Naturality of the affine tensor-power
 > comparison. The right-hand map is the degree-`n` component of a unital graded-algebra map
@@ -335,7 +335,7 @@ theorem tildeTensorPowerIso_natural
         g.app (n : ℤ) ≫ ((specTildeAlgebras R N).tensorPieceIso n).hom
 ```
 
-**`AlgebraicGeometry.tildeTensorPowerIso_natural_piTensorProductMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/TildeTensorPower.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/TildeTensorPower.lean#L592). The attribute's comment: “tensor_power”.
+**`AlgebraicGeometry.tildeTensorPowerIso_natural_piTensorProductMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/TildeTensorPower.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/TildeTensorPower.lean#L592). The attribute's comment: “tensor\_power”.
 
 > **Stacks Project, Tag 01I8 (tensor-power part).** Naturality of the affine tensor-power
 > comparison against the canonical induced map, rather than against a hypothesised one: this is
@@ -352,7 +352,7 @@ theorem tildeTensorPowerIso_natural_piTensorProductMap (n : ℕ) :
           ((specTildeAlgebras R N).tensorPieceIso n).hom
 ```
 
-**`AlgebraicGeometry.tildeTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/AffineTensor.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/AffineTensor.lean#L407). The attribute's comment: “tensor_product”. References: EGA I (1.3.12), “(i)”.
+**`AlgebraicGeometry.tildeTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/AffineTensor.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/AffineTensor.lean#L407). The attribute's comment: “tensor\_product”. References: EGA I (1.3.12), “(i)”.
 
 > For modules `M` and `N` over `R`, there is a canonical isomorphism
 > `(M ⊗[R] N)~ ≅ M~ ⊗_{𝒪_(Spec R)} N~`.
@@ -364,7 +364,7 @@ noncomputable def tildeTensorIso (R : CommRingCat.{u})
       specTensorSheaf R (tilde M) (tilde N)
 ```
 
-**`AlgebraicGeometry.tildeTensorIso_hom_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/AffineTensor.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/AffineTensor.lean#L417). The attribute's comment: “tensor_product”.
+**`AlgebraicGeometry.tildeTensorIso_hom_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/AffineTensor.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/AffineTensor.lean#L417). The attribute's comment: “tensor\_product”.
 
 > The canonical isomorphism sends a pure tensor, under the
 > tilde--global-sections adjunction, to the section obtained by tensoring the two
@@ -383,7 +383,7 @@ theorem tildeTensorIso_hom_tmul (R : CommRingCat.{u})
           ((tilde.toOpen M ⊤).hom m) ((tilde.toOpen N ⊤).hom n))
 ```
 
-**`AlgebraicGeometry.tildeTensorIso_eq_of_hom_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/AffineTensor.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/AffineTensor.lean#L433). The attribute's comment: “tensor_product”.
+**`AlgebraicGeometry.tildeTensorIso_eq_of_hom_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/AffineTensor.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/AffineTensor.lean#L433). The attribute's comment: “tensor\_product”.
 
 > The comparison is canonical: it is the *only* isomorphism `(M ⊗ N)~ ≅ M~ ⊗ N~` satisfying
 > the pure-tensor equation `tildeTensorIso_hom_tmul`, so `tildeTensorIso` does not depend on the
@@ -405,7 +405,7 @@ theorem tildeTensorIso_eq_of_hom_tmul (R : CommRingCat.{u})
     e = tildeTensorIso R M N
 ```
 
-**`AlgebraicGeometry.tildeTensorIso_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/AffineTensor.lean, line 455](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/AffineTensor.lean#L455). The attribute's comment: “tensor_product”.
+**`AlgebraicGeometry.tildeTensorIso_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/AffineTensor.lean, line 455](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/AffineTensor.lean#L455). The attribute's comment: “tensor\_product”.
 
 > The canonical tensor comparison is natural in both modules.
 
@@ -437,7 +437,7 @@ def associatedSheafTensorIso (M N : ModuleCat.{u} R) :
 
 [Tag 01I9](https://stacks.math.columbia.edu/tag/01I9) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.AffineBaseChange.tilde_map_comp_pushforwardTildeIso_inv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineBaseChange/StructureSheaf.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineBaseChange/StructureSheaf.lean#L327). The attribute's comment: “affine_pushforward_tilde at the ring itself: the comparison carries the structure map of φ to the structure morphism of Spec φ”.
+**`Stacks.AlgebraicGeometry.AffineBaseChange.tilde_map_comp_pushforwardTildeIso_inv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineBaseChange/StructureSheaf.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineBaseChange/StructureSheaf.lean#L327). The attribute's comment: “affine\_pushforward\_tilde at the ring itself: the comparison carries the structure map of φ to the structure morphism of Spec φ”.
 
 > The associated sheaf of a map of `R`-modules `R ⟶ S` sending `1` to `1`, followed by the
 > inverse of the comparison identifying the direct image along `Spec φ` of the associated sheaf of
@@ -452,7 +452,7 @@ theorem tilde_map_comp_pushforwardTildeIso_inv
       structureUnitHom (Spec.map φ)
 ```
 
-**`AlgebraicGeometry.pullbackTildeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/AffineTilde.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/AffineTilde.lean#L87). The attribute's comment: “affine_pullback_tilde”.
+**`AlgebraicGeometry.pullbackTildeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/AffineTilde.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/AffineTilde.lean#L87). The attribute's comment: “affine\_pullback\_tilde”.
 
 > Pullback along the map of affine schemes induced by `f : R ⟶ S` carries the associated sheaf
 > of an `R`-module to the associated sheaf of its extension of scalars to `S`, naturally in the
@@ -464,7 +464,7 @@ public noncomputable def pullbackTildeIso (R S : CommRingCat.{u}) (f : R ⟶ S) 
       ModuleCat.extendScalars f.hom ⋙ tilde.functor S
 ```
 
-**`AlgebraicGeometry.pullbackTildeIso_hom_app_unit_toOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/AffineTilde.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/AffineTilde.lean#L99). The attribute's comment: “affine_pullback_tilde”.
+**`AlgebraicGeometry.pullbackTildeIso_hom_app_unit_toOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/AffineTilde.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/AffineTilde.lean#L99). The attribute's comment: “affine\_pullback\_tilde”.
 
 > The canonical affine pullback comparison sends the pullback of the global
 > section represented by `m` to the global section represented by `1 ⊗ m`.
@@ -480,7 +480,7 @@ public theorem pullbackTildeIso_hom_app_unit_toOpen
       ((1 : S) ⊗ₜ[R, f.hom] m)
 ```
 
-**`AlgebraicGeometry.pushforwardTildeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/AffineTilde.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/AffineTilde.lean#L155). The attribute's comment: “affine_pushforward_tilde”.
+**`AlgebraicGeometry.pushforwardTildeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/AffineTilde.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/AffineTilde.lean#L155). The attribute's comment: “affine\_pushforward\_tilde”.
 
 > Pushforward along the map of affine schemes induced by `φ : R ⟶ S` carries the associated
 > sheaf of an `S`-module to the associated sheaf of its restriction of scalars along `φ`, naturally
@@ -492,7 +492,7 @@ public noncomputable def pushforwardTildeIso (R S : CommRingCat.{u}) (φ : R ⟶
       ModuleCat.restrictScalars φ.hom ⋙ tilde.functor R
 ```
 
-**`AlgebraicGeometry.pushforwardTildeIso_hom_app_toOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/AffineTilde.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/AffineTilde.lean#L193). The attribute's comment: “affine_pushforward_tilde”.
+**`AlgebraicGeometry.pushforwardTildeIso_hom_app_toOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/AffineTilde.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/AffineTilde.lean#L193). The attribute's comment: “affine\_pushforward\_tilde”.
 
 > The canonical affine pushforward comparison is normalized by the canonical identifications of
 > a module with the global sections of its associated sheaf: its component at `N` sends the global

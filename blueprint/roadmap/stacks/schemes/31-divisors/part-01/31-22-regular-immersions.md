@@ -421,7 +421,7 @@ theorem isQuasiRegularImmersion_iff (i : Z ⟶ X) [IsImmersion i] :
           ∀ n : ℤ, IsIso ((conormalSymmetricHom i).app n)
 ```
 
-**`Stacks.AlgebraicGeometry.RegularIdealSheaf.locallyOfFinitePresentation_of_isQuasiRegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularImmersion/FinitePresentation.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RegularImmersion/FinitePresentation.lean#L103). The attribute's comment: “condition (1) of the statement, in the direction out of quasi-regularity: a quasi-regular immersion is locally of finite presentation. The whole iff is proved at Stacks.Conormal.isQuasiRegularImmersion_iff”. References: EGA IV (16.9.8), “(i), one direction”; EGA IV (16.9.9), “l.f.p. is necessary”; SGA 3 III (4.6.2), “more general”.
+**`Stacks.AlgebraicGeometry.RegularIdealSheaf.locallyOfFinitePresentation_of_isQuasiRegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularImmersion/FinitePresentation.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RegularImmersion/FinitePresentation.lean#L103). The attribute's comment: “condition (1) of the statement, in the direction out of quasi-regularity: a quasi-regular immersion is locally of finite presentation. The whole iff is proved at Stacks.Conormal.isQuasiRegularImmersion\_iff”. References: EGA IV (16.9.8), “(i), one direction”; EGA IV (16.9.9), “l.f.p. is necessary”; SGA 3 III (4.6.2), “more general”.
 
 > **[Stacks, Tag 063M], condition (1) in the direction out of quasi-regularity.**  A
 > quasi-regular immersion of schemes is locally of finite presentation.
@@ -485,7 +485,7 @@ theorem conormalSequence_locallySplit (i : Z ⟶ Y) (j : Y ⟶ X) [IsImmersion i
 
 [Tag 067Q](https://stacks.math.columbia.edu/tag/067Q) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.isRegularImmersion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/Composition.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/Composition.lean#L155). The attribute's comment: “composition_regular”. References: EGA IV (19.1.5); SGA 6 VIII (1.1), “special case”.
+**`Stacks.AlgebraicGeometry.isRegularImmersion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/Composition.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RegularImmersion/Composition.lean#L155). The attribute's comment: “composition\_regular”. References: EGA IV (19.1.5); SGA 6 VIII (1.1), “special case”.
 
 > The composite of two regular immersions of schemes is a regular immersion.
 
@@ -495,7 +495,7 @@ theorem isRegularImmersion_comp {Z Y X : Scheme.{u}} (i : Z ⟶ Y) (j : Y ⟶ X)
     IsRegularImmersion (i ≫ j)
 ```
 
-**`Stacks.AlgebraicGeometry.isKoszulRegularImmersion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularImmersionComposition.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularImmersionComposition.lean#L263). The attribute's comment: “composition_koszul_regular”. References: SGA 6 VII (1.7); SGA 6 VIII (1.1); SGA 6 VIII (1.3).
+**`Stacks.AlgebraicGeometry.isKoszulRegularImmersion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularImmersionComposition.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularImmersionComposition.lean#L263). The attribute's comment: “composition\_koszul\_regular”. References: SGA 6 VII (1.7); SGA 6 VIII (1.1); SGA 6 VIII (1.3).
 
 > **Stacks tag 067Q, the Koszul-regular case.**  The composite of two Koszul-regular immersions
 > of schemes is a Koszul-regular immersion.
@@ -507,7 +507,7 @@ theorem isKoszulRegularImmersion_comp {Z Y X : Scheme.{u}} (i : Z ⟶ Y) (j : Y 
     IsKoszulRegularImmersion (i ≫ j)
 ```
 
-**`Stacks.AlgebraicGeometry.isH1RegularImmersion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularImmersionComposition.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularImmersionComposition.lean#L282). The attribute's comment: “composition_h1_regular”.
+**`Stacks.AlgebraicGeometry.isH1RegularImmersion_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularImmersionComposition.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularImmersionComposition.lean#L282). The attribute's comment: “composition\_h1\_regular”.
 
 > **Stacks tag 067Q, the `H₁`-regular case.**  The composite of two `H₁`-regular immersions of
 > schemes is an `H₁`-regular immersion.
@@ -518,7 +518,7 @@ theorem isH1RegularImmersion_comp {Z Y X : Scheme.{u}} (i : Z ⟶ Y) (j : Y ⟶ 
     IsH1RegularImmersion (i ≫ j)
 ```
 
-**`Stacks.AlgebraicGeometry.isQuasiRegularImmersion_comp_of_isH1RegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularImmersionComposition.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularImmersionComposition.lean#L300). The attribute's comment: “composition_h1_quasi_regular”.
+**`Stacks.AlgebraicGeometry.isQuasiRegularImmersion_comp_of_isH1RegularImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularImmersionComposition.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularImmersionComposition.lean#L300). The attribute's comment: “composition\_h1\_quasi\_regular”.
 
 > **Stacks tag 067Q, the mixed case.**  The composite of an `H₁`-regular immersion of schemes
 > and a quasi-regular immersion of schemes is a quasi-regular immersion.

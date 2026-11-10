@@ -14,7 +14,7 @@ Section 30.25 of the Stacks Project, [Tag 0886](https://stacks.math.columbia.edu
 
 [Tag 0888](https://stacks.math.columbia.edu/tag/0888) in the Stacks Project.
 
-**`Ideal.existsUnique_canonicalMap_of_smul_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/Annihilator.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/Annihilator.lean#L114). The attribute's comment: “canonical_fg_map”.
+**`Ideal.existsUnique_canonicalMap_of_smul_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/Annihilator.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/Annihilator.lean#L114). The attribute's comment: “canonical\_fg\_map”.
 
 > **Stacks Project, Tag 0888.** In an exact sequence whose two end modules are annihilated by
 > an ideal `I`, elements `f, g ∈ I` determine a unique linear map `N → M`. Its value at `y` is
@@ -34,7 +34,7 @@ theorem existsUnique_canonicalMap_of_smul_eq_bot
         b.comp a = LinearMap.lsmul A M (f * g)
 ```
 
-**`Ideal.pow_le_annihilator_ker_mapQ_of_exact`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/Annihilator.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/Annihilator.lean#L154). The attribute's comment: “annihilation_mod_ideal”.
+**`Ideal.pow_le_annihilator_ker_mapQ_of_exact`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/Annihilator.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/Annihilator.lean#L154). The attribute's comment: “annihilation\_mod\_ideal”.
 
 > **Stacks Project, Tag 0888.** In an exact five-term sequence whose end modules are
 > annihilated by `K ^ t`, the power `K ^ (2 * t)` annihilates the kernel of the map induced after
@@ -54,7 +54,7 @@ lemma pow_le_annihilator_ker_mapQ_of_exact
         (Submodule.smul_top_le_comap_smul_top J a)))
 ```
 
-**`Ideal.pow_le_annihilator_coker_mapQ_of_exact`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/Annihilator.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/Annihilator.lean#L196). The attribute's comment: “annihilation_mod_ideal”.
+**`Ideal.pow_le_annihilator_coker_mapQ_of_exact`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/Annihilator.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/Annihilator.lean#L196). The attribute's comment: “annihilation\_mod\_ideal”.
 
 > **Stacks Project, Tag 0888.** In an exact five-term sequence whose end modules are
 > annihilated by `K ^ t`, the power `K ^ (2 * t)` annihilates the cokernel of the map induced
@@ -74,7 +74,7 @@ lemma pow_le_annihilator_coker_mapQ_of_exact
           (Submodule.smul_top_le_comap_smul_top J a)))
 ```
 
-**`Stacks.Algebraization.idealPowerMultiple_kernel_cokernel_idealPowerQuotientMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AnnihilatorSheaf.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AnnihilatorSheaf.lean#L255). The attribute's comment: “annihilation_mod_ideal, over sheaves of modules”.
+**`Stacks.Algebraization.idealPowerMultiple_kernel_cokernel_idealPowerQuotientMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AnnihilatorSheaf.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/AnnihilatorSheaf.lean#L255). The attribute's comment: “annihilation\_mod\_ideal, over sheaves of modules”.
 
 > Let `a : M ⟶ N` be a morphism of quasi-coherent `𝒪_X`-modules whose kernel and cokernel are
 > annihilated by `𝒦 ᵗ`, and let `ℐ` be any quasi-coherent ideal sheaf. Then `𝒦 ²ᵗ` annihilates both
@@ -269,7 +269,7 @@ public theorem exists_coherent_annihilated_completion_iso_idealPowerQuotientSyst
         idealPowerQuotientSystem K (e + 1) Fsys.obj)
 ```
 
-**`Stacks.Coherent.exists_coherentAdicSystem_completion_iso_idealPowerQuotientSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/GrothendieckExistenceII.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/GrothendieckExistenceII.lean#L374). The attribute's comment: “proof step 4: the algebraizations G_e assemble into an object of Coh(X, 𝒦)”.
+**`Stacks.Coherent.exists_coherentAdicSystem_completion_iso_idealPowerQuotientSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/GrothendieckExistenceII.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/GrothendieckExistenceII.lean#L374). The attribute's comment: “proof step 4: the algebraizations G\_e assemble into an object of Coh(X, 𝒦)”.
 
 > **Tag 088A, the fourth step of the proof: the algebraizations assemble.** Let `X` be a
 > Noetherian scheme, let `ℐ, 𝒦` be quasi-coherent ideal sheaves and let `(F_n)` be an object of
@@ -310,7 +310,7 @@ public theorem exists_coherentAdicSystem_completion_iso_idealPowerQuotientSystem
             idealPowerQuotientSystem K (e + 1) Fsys.obj)
 ```
 
-**`Stacks.Coherent.exists_lifted_quotient_tower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/GrothendieckExistenceII.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/GrothendieckExistenceII.lean#L423). The attribute's comment: “proof step 4, natural form: the algebraizations G_e form a tower whose ℐ-completion is the tower of 𝒦-power reductions of (F_n)”.
+**`Stacks.Coherent.exists_lifted_quotient_tower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/GrothendieckExistenceII.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/GrothendieckExistenceII.lean#L423). The attribute's comment: “proof step 4, natural form: the algebraizations G\_e form a tower whose ℐ-completion is the tower of 𝒦-power reductions of (F\_n)”.
 
 > **Tag 088A, the fourth step in the form the rest of the proof needs it.** Under hypothesis
 > (1) of Tag 088A at every level, the algebraizations `G_e` of the reductions
@@ -344,7 +344,7 @@ public theorem exists_lifted_quotient_tower [IsNoetherian X] (I K : X.IdealSheaf
         idealPowerQuotientAdicTower I K ⋙ (evaluation _ _).obj Fsys)
 ```
 
-**`Stacks.Coherent.exists_lifted_quotient_tower_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/GrothendieckExistenceII.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/GrothendieckExistenceII.lean#L490). The attribute's comment: “proof step 5: the comparison (G_e) ⟶ H^∧_𝒦 along 𝒦, with its levelwise kernels and cokernels annihilated by a power of 𝒦”.
+**`Stacks.Coherent.exists_lifted_quotient_tower_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/GrothendieckExistenceII.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/GrothendieckExistenceII.lean#L490). The attribute's comment: “proof step 5: the comparison (G\_e) ⟶ H^∧\_𝒦 along 𝒦, with its levelwise kernels and cokernels annihilated by a power of 𝒦”.
 
 > **Tag 088A, the fifth step: the comparison along `𝒦` exists and satisfies the hypothesis of
 > Tag 0889.** Let `X` be Noetherian, let `ℐ, 𝒦` be quasi-coherent ideal sheaves satisfying

@@ -151,7 +151,7 @@ public theorem liftClassesTangentSpace_naturality
 
 [Tag 06JH](https://stacks.math.columbia.edu/tag/06JH) in the Stacks Project.
 
-**`Deformation.liftClassesProdEquivPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 698](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Lift.lean#L698). The attribute's comment: “product_bijection”.
+**`Deformation.liftClassesProdEquivPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 698](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Lift.lean#L698). The attribute's comment: “product\_bijection”.
 
 > Isomorphism classes of lifts to a fibre product are in bijection with pairs of
 > isomorphism classes of lifts to the two factors when one structural map is surjective.
@@ -170,7 +170,7 @@ public theorem liftClassesProdEquivPullback
     Nonempty (LiftProductEquiv p c x)
 ```
 
-**`Deformation.liftClassesEquivOfFixedLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 950](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Lift.lean#L950). The attribute's comment: “fixed_lift_bijection”.
+**`Deformation.liftClassesEquivOfFixedLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 950](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Lift.lean#L950). The attribute's comment: “fixed\_lift\_bijection”.
 
 > After fixing a lift over the first factor, pushing along the second projection gives
 > a bijection from lifts of the fixed object to lifts over the second factor.
@@ -189,7 +189,7 @@ public theorem liftClassesEquivOfFixedLift
     Nonempty (FixedLiftEquiv p c x a₁)
 ```
 
-**`Deformation.liftClassesEquivProdOfCompositePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 1047](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Lift.lean#L1047). The attribute's comment: “composite_square_bijection”.
+**`Deformation.liftClassesEquivProdOfCompositePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 1047](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Lift.lean#L1047). The attribute's comment: “composite\_square\_bijection”.
 
 > Let `left` be a fibre square of a surjection `g : A₁' ⟶ A₁` and the first projection of
 > `right`. Isomorphism classes of lifts of the source of `a₁` along `left.fst ≫ g` are in
@@ -213,7 +213,7 @@ public theorem liftClassesEquivProdOfCompositePullback
         LiftClasses p right.fst (liftSourceFiber a₁))
 ```
 
-**`Deformation.liftClassesEquivOuterProdOfCompositePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 1071](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Lift.lean#L1071). The attribute's comment: “composite_square_bijection”.
+**`Deformation.liftClassesEquivOuterProdOfCompositePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Lift.lean, line 1071](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Lift.lean#L1071). The attribute's comment: “composite\_square\_bijection”.
 
 > Let `right` be a fibre square of `f₁` and `f₂` with `f₁` surjective, and `left` a fibre
 > square of a surjection `g : A₁' ⟶ A₁` and the first projection of `right`. Isomorphism classes

@@ -127,7 +127,7 @@ public theorem exists_invariant_thickening_finiteLocallyFree_restriction {S : Sc
 
 [Tag 0ABB](https://stacks.math.columbia.edu/tag/0ABB) in the Stacks Project.
 
-**`AlgebraicGeometry.finitePresentation_layerThickeningInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/Properties/FinitePresentationThickening.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/Properties/FinitePresentationThickening.lean#L58). The attribute's comment: “finite_presentation”.
+**`AlgebraicGeometry.finitePresentation_layerThickeningInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/Properties/FinitePresentationThickening.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/Properties/FinitePresentationThickening.lean#L58). The attribute's comment: “finite\_presentation”.
 
 > **Stacks Project, Tag 0ABB (1).** For a groupoid scheme with finite source and target whose
 > source map is of finite presentation, the inclusion of the invariant closed thickening into the
@@ -141,7 +141,7 @@ theorem finitePresentation_layerThickeningInclusion {S : Scheme.{u}} (G : Groupo
     FinitePresentation (layerThickeningInclusion G)
 ```
 
-**`AlgebraicGeometry.mem_layerUnionOpen_of_orbit_subset_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/Properties/FinitePresentationThickening.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/Properties/FinitePresentationThickening.lean#L119). The attribute's comment: “generic_orbit_mem”.
+**`AlgebraicGeometry.mem_layerUnionOpen_of_orbit_subset_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/More/Properties/FinitePresentationThickening.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/More/Properties/FinitePresentationThickening.lean#L119). The attribute's comment: “generic\_orbit\_mem”.
 
 > **Stacks Project, Tag 0ABB (2).** For a groupoid scheme with finite source and target whose
 > source map is of finite presentation, a point whose orbit consists of generic points of

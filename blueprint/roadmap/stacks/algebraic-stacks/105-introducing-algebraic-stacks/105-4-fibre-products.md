@@ -36,7 +36,7 @@ def IsBaseChange {S S' T : Scheme.{u}} {E : PointedFamily S} {E' : PointedFamily
     (x : Comparison E E' T) {U : Scheme.{u}} (h : U ⟶ T) (y : Comparison E E' U) : Prop
 ```
 
-**`AlgebraicGeometry.ModuliEllipticCurves.RepresentsComparisons`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ModuliEllipticCurves.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ModuliEllipticCurves.lean#L237). The attribute's comment: “the scheme S ×_{M_{1,1}} S'”.
+**`AlgebraicGeometry.ModuliEllipticCurves.RepresentsComparisons`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ModuliEllipticCurves.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ModuliEllipticCurves.lean#L237). The attribute's comment: “the scheme S ×\_\{M\_\{1,1}} S'”.
 
 > A scheme `P` is a fibre product `S ×_{𝓜₁,₁} S'` when its `T`-points are the triples
 > `(a, a', α)`, naturally in `T`.

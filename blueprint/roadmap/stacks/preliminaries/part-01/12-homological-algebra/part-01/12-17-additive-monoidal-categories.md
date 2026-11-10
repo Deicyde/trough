@@ -102,7 +102,7 @@ noncomputable def koszulSymmetricCategoryModuleCat :
     SymmetricCategory (GradedObject ℤ (ModuleCat F))
 ```
 
-**`CategoryTheory.GradedObject.koszulSymmetricCategoryModuleCat_braiding_hom_apply_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/GradedObject/KoszulBraidingModuleCat.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/GradedObject/KoszulBraidingModuleCat.lean#L89). The attribute's comment: “the signed commutativity constraint is v ⊗ w ↦ (-1)^{pq} w ⊗ v on V^p ⊗ W^q”.
+**`CategoryTheory.GradedObject.koszulSymmetricCategoryModuleCat_braiding_hom_apply_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/GradedObject/KoszulBraidingModuleCat.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/GradedObject/KoszulBraidingModuleCat.lean#L89). The attribute's comment: “the signed commutativity constraint is v ⊗ w ↦ (-1)^\{pq} w ⊗ v on V^p ⊗ W^q”.
 
 > **Stacks Project, Tag 0FFX.** The commutativity constraint `ψ : V ⊗ W → W ⊗ V` of the
 > Koszul-signed symmetric monoidal category of graded `F`-vector spaces sends

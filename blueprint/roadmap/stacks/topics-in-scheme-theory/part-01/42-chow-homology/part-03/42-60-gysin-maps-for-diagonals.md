@@ -32,7 +32,7 @@ theorem gysinMapExists_diagonal_of_smooth [Smooth f] :
     GysinMapExists (pullback.diagonal f)
 ```
 
-**`Stacks.Chow.diagonalGysinClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinClass.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinClass.lean#L158). The attribute's comment: “the Gysin class Δ^! ∈ A^d(X → X ×_Y X) of the diagonal of a smooth morphism of constant relative dimension d”.
+**`Stacks.Chow.diagonalGysinClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinClass.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinClass.lean#L158). The attribute's comment: “the Gysin class Δ^! ∈ A^d(X → X ×\_Y X) of the diagonal of a smooth morphism of constant relative dimension d”.
 
 > **Stacks 0FBR, the Gysin class `Δ^! ∈ A^d(Y ⟶ Y ×_Z Y)`** of the diagonal of a smooth
 > morphism `g : Y ⟶ Z` of constant relative dimension `d`: the class `c(Y ⟶ Y ×_Z Y, 𝒩)` of Stacks
@@ -64,7 +64,7 @@ theorem isFiniteLocallyFreeOfRank_diagonalVirtualNormalBundle [Smooth f] {d : �
 
 [Tag 0FBS](https://stacks.math.columbia.edu/tag/0FBS) in the Stacks Project.
 
-**`Stacks.Chow.diagonalGysinClass_compFlatPullbackEqOne_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinClassUnit.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinClassUnit.lean#L375). The attribute's comment: “Δ^! ∘ pr_1^* = 1 in A^0(X), on cap operations, for the first projection”.
+**`Stacks.Chow.diagonalGysinClass_compFlatPullbackEqOne_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinClassUnit.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinClassUnit.lean#L375). The attribute's comment: “Δ^! ∘ pr\_1^* = 1 in A^0(X), on cap operations, for the first projection”.
 
 > **Stacks 0FBS for the first projection: `Δ^! ∘ pr_1^* = 1` in `A^0(Y)`.** For `g : Y ⟶ Z`
 > smooth of relative dimension `d`, capping the flat pullback along `pr_1 : Y ×_Z Y ⟶ Y` with the
@@ -77,7 +77,7 @@ theorem diagonalGysinClass_compFlatPullbackEqOne_fst :
       (pullback.diagonal_fst g) (relativeDimension_pullback_fst_self g hd)
 ```
 
-**`Stacks.Chow.diagonalGysinClass_compFlatPullbackEqOne_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinClassUnit.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinClassUnit.lean#L388). The attribute's comment: “Δ^! ∘ pr_2^* = 1 in A^0(X), on cap operations, for the second projection”.
+**`Stacks.Chow.diagonalGysinClass_compFlatPullbackEqOne_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinClassUnit.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinClassUnit.lean#L388). The attribute's comment: “Δ^! ∘ pr\_2^* = 1 in A^0(X), on cap operations, for the second projection”.
 
 > **Stacks 0FBS for the second projection: `Δ^! ∘ pr_2^* = 1` in `A^0(Y)`.** For `g : Y ⟶ Z`
 > smooth of relative dimension `d`, with `Z` over the base compatibly with `Y`, capping the flat
@@ -92,7 +92,7 @@ theorem diagonalGysinClass_compFlatPullbackEqOne_snd (sZ : Z ⟶ C.S) [LocallyOf
       (relativeDimension_pullback_snd g g d hd)
 ```
 
-**`Stacks.Chow.bivariantIdentityClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean#L284). The attribute's comment: “the right-hand side: the unit 1 ∈ A^0(X) of Stacks 0B76, built with the proper and flat axioms discharged and the Gysin axiom of Stacks 0B76 for its cap operation carried as a hypothesis; the Gysin classes Δ^! and pr_i^! of the left-hand side cannot be written down here, their three inputs — Stacks 0FBK, 0B78 and a construction of the composition of Stacks 0B75 — all being absent from this repository”.
+**`Stacks.Chow.bivariantIdentityClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean#L284). The attribute's comment: “the right-hand side: the unit 1 ∈ A^0(X) of Stacks 0B76, built with the proper and flat axioms discharged and the Gysin axiom of Stacks 0B76 for its cap operation carried as a hypothesis; the Gysin classes Δ^! and pr\_i^! of the left-hand side cannot be written down here, their three inputs — Stacks 0FBK, 0B78 and a construction of the composition of Stacks 0B75 — all being absent from this repository”.
 
 > **Stacks 0FBS, the right-hand side.** The *identity bivariant class* `1 ∈ A^0(X)`: the
 > bivariant class of degree `0` for `𝟙 X` whose operation on every test scheme `g : T ⟶ X` is the
@@ -110,7 +110,7 @@ def bivariantIdentityClass (G : GysinSystem C)
     BivariantClass C G sX sX (𝟙 X) (Category.id_comp sX) 0
 ```
 
-**`Stacks.Chow.eq_bivariantIdentityClass_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean#L334). The attribute's comment: “the conclusion, reduced to an identification: a degree-0 class for 𝟙 X equals the unit 1 ∈ A^0(X) exactly when it acts as the identity on every test scheme; the composite Δ^! ∘ pr_i^! itself is not constructed, the Gysin classes needing Stacks 0FBK, 0B78 and a construction of the composition of Stacks 0B75”.
+**`Stacks.Chow.eq_bivariantIdentityClass_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean#L334). The attribute's comment: “the conclusion, reduced to an identification: a degree-0 class for 𝟙 X equals the unit 1 ∈ A^0(X) exactly when it acts as the identity on every test scheme; the composite Δ^! ∘ pr\_i^! itself is not constructed, the Gysin classes needing Stacks 0FBK, 0B78 and a construction of the composition of Stacks 0B75”.
 
 > **Stacks 0FBS, the identification with `1`.** A bivariant class of degree `0` for `𝟙 X` is
 > the identity class exactly when the operation it induces on every test scheme is the identity.
@@ -134,7 +134,7 @@ theorem eq_bivariantIdentityClass_iff (G : GysinSystem C)
           identityCapRule C sX g k α
 ```
 
-**`Stacks.Chow.gysinMapExists_fst_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean#L389). The attribute's comment: “a geometric input: the Gysin map of the first projection X ×_Y X ⟶ X is available, the projection being smooth by base change; the class pr_1^! itself is not constructed, needing Stacks 0FBK, 0B78 and a construction of the composition of Stacks 0B75”.
+**`Stacks.Chow.gysinMapExists_fst_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean#L389). The attribute's comment: “a geometric input: the Gysin map of the first projection X ×\_Y X ⟶ X is available, the projection being smooth by base change; the class pr\_1^! itself is not constructed, needing Stacks 0FBK, 0B78 and a construction of the composition of Stacks 0B75”.
 
 > **Stacks 0FBS, the geometric input for the first projection.** The Gysin map of Stacks 0FF3
 > is available for `pr_1 : X ×_Y X ⟶ X`, which is smooth because `f` is and smoothness is stable
@@ -147,7 +147,7 @@ theorem gysinMapExists_fst_of_smooth {X Y : Scheme.{u}} (f : X ⟶ Y) [Smooth f]
     GysinMapExists (pullback.fst f f)
 ```
 
-**`Stacks.Chow.gysinMapExists_snd_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean#L399). The attribute's comment: “a geometric input: the Gysin map of the second projection X ×_Y X ⟶ X is available, the projection being smooth by base change; the class pr_2^! itself is not constructed, needing Stacks 0FBK, 0B78 and a construction of the composition of Stacks 0B75”.
+**`Stacks.Chow.gysinMapExists_snd_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean#L399). The attribute's comment: “a geometric input: the Gysin map of the second projection X ×\_Y X ⟶ X is available, the projection being smooth by base change; the class pr\_2^! itself is not constructed, needing Stacks 0FBK, 0B78 and a construction of the composition of Stacks 0B75”.
 
 > **Stacks 0FBS, the geometric input for the second projection.** The Gysin map of Stacks 0FF3
 > is available for `pr_2 : X ×_Y X ⟶ X`, which is smooth by base change; and
@@ -158,7 +158,7 @@ theorem gysinMapExists_snd_of_smooth {X Y : Scheme.{u}} (f : X ⟶ Y) [Smooth f]
     GysinMapExists (pullback.snd f f)
 ```
 
-**`Stacks.Chow.copy_cap_heq_bivariantCompositeCap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean#L429). The attribute's comment: “the left-hand side, read in A^0(X): the transport along Δ ≫ pr_i = 𝟙 X of a bivariant class witnessing the composition of one for Δ with one for pr_i in total degree 0 caps by the composite operation; the Gysin classes Δ^! and pr_i^! are carried as arbitrary bivariant classes, since Stacks 0FBK, 0B78 and a construction of the composition of Stacks 0B75 are all absent from this repository”.
+**`Stacks.Chow.copy_cap_heq_bivariantCompositeCap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/DiagonalGysinIdentity.lean#L429). The attribute's comment: “the left-hand side, read in A^0(X): the transport along Δ ≫ pr\_i = 𝟙 X of a bivariant class witnessing the composition of one for Δ with one for pr\_i in total degree 0 caps by the composite operation; the Gysin classes Δ^! and pr\_i^! are carried as arbitrary bivariant classes, since Stacks 0FBK, 0B78 and a construction of the composition of Stacks 0B75 are all absent from this repository”.
 
 > **Stacks 0FBS, the left-hand side.** Let `pr : X ×_Y X ⟶ X` be a projection, so that
 > `Δ ≫ pr = 𝟙 X`, let `a ∈ A^p(X ⟶ X ×_Y X)` be a bivariant class for the diagonal — the slot

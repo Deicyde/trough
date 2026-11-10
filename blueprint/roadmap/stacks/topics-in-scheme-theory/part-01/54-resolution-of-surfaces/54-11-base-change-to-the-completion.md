@@ -51,7 +51,7 @@ theorem stalkMap_adicCompletion_isomorphism
 
 [Tag 0BG6](https://stacks.math.columbia.edu/tag/0BG6) in the Stacks Project.
 
-**`AlgebraicGeometry.isRegularLocalRing_stalk_of_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/RegularBaseChange.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/RegularBaseChange.lean#L66). The attribute's comment: “pointwise_descent”. References: EGA 0 (17.1.5), “Â regular ⇒ A regular”.
+**`AlgebraicGeometry.isRegularLocalRing_stalk_of_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/RegularBaseChange.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/RegularBaseChange.lean#L66). The attribute's comment: “pointwise\_descent”. References: EGA 0 (17.1.5), “Â regular ⇒ A regular”.
 
 > Regularity of a local ring of a scheme descends pointwise from its base change to the
 > completion of a Noetherian local base ring.
@@ -75,7 +75,7 @@ theorem isRegularLocalRing_stalk_of_completion
     IsRegularLocalRing (X.presheaf.stalk x)
 ```
 
-**`AlgebraicGeometry.isRegularLocalRing_stalk_pullback_completion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/RegularBaseChange.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/RegularBaseChange.lean#L110). The attribute's comment: “closed_fibre_equivalence”. References: EGA 0 (17.1.5).
+**`AlgebraicGeometry.isRegularLocalRing_stalk_pullback_completion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/RegularBaseChange.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/RegularBaseChange.lean#L110). The attribute's comment: “closed\_fibre\_equivalence”. References: EGA 0 (17.1.5).
 
 > At a point of the closed fibre, regularity of the local ring is invariant under base change
 > from a Noetherian local ring to its completion.
@@ -100,7 +100,7 @@ theorem isRegularLocalRing_stalk_pullback_completion_iff
       IsRegularLocalRing (X.presheaf.stalk x)
 ```
 
-**`AlgebraicGeometry.isRegular_pullback_completion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/RegularBaseChange.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/RegularBaseChange.lean#L168). The attribute's comment: “proper_equivalence”.
+**`AlgebraicGeometry.isRegular_pullback_completion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/RegularBaseChange.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/RegularBaseChange.lean#L168). The attribute's comment: “proper\_equivalence”.
 
 > A proper scheme locally of finite type over a Noetherian local ring is regular if and only
 > if its base change to the completion of the base ring is regular.

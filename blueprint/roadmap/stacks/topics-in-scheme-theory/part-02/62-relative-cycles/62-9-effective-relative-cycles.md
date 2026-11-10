@@ -216,7 +216,7 @@ theorem isEquidimensional_of_isEffectiveFamily (f : X ⟶ S) [LocallyOfFiniteTyp
 
 [Tag 0H5Y](https://stacks.math.columbia.edu/tag/0H5Y) in the Stacks Project.
 
-**`Stacks.Chow.effectiveRelativeCyclesFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveFunctor.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveFunctor.lean#L163). The attribute's comment: “the functor S' ↦ z^eff(X'/S', r), X' = S' ×_S X, on schemes locally of finite type over S”.
+**`Stacks.Chow.effectiveRelativeCyclesFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveFunctor.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveFunctor.lean#L163). The attribute's comment: “the functor S' ↦ z^eff(X'/S', r), X' = S' ×\_S X, on schemes locally of finite type over S”.
 
 > The contravariant functor `S' ↦ z^eff(X'/S', r)`, `X' = S' ×_S X`, on the category of
 > schemes locally of finite type over `S`, the map attached to a morphism `S'' ⟶ S'` over `S` being
@@ -226,7 +226,7 @@ theorem isEquidimensional_of_isEffectiveFamily (f : X ⟶ S) [LocallyOfFiniteTyp
 def effectiveRelativeCyclesFunctor : (LocallyOfFiniteTypeOver S)ᵒᵖ ⥤ Type u
 ```
 
-**`Stacks.Chow.not_isRepresentable_effectiveRelativeCyclesFunctor_specFieldExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonRepresentable.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonRepresentable.lean#L217). The attribute's comment: “the functor S' ↦ z^eff(X'/S', r) is not representable, the counter example the remark leaves to the reader, built from z(X'/S', r) = z(X'_red/S'_red, r)”.
+**`Stacks.Chow.not_isRepresentable_effectiveRelativeCyclesFunctor_specFieldExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonRepresentable.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonRepresentable.lean#L217). The attribute's comment: “the functor S' ↦ z^eff(X'/S', r) is not representable, the counter example the remark leaves to the reader, built from z(X'/S', r) = z(X'\_red/S'\_red, r)”.
 
 > **Stacks Project, Remark 0H5Y.** Let `k` be a field and let `K/k` be a finite purely
 > inseparable extension of degree `> 1`, so that `S = Spec k` is Noetherian and
@@ -261,7 +261,7 @@ theorem exists_not_isRepresentable_effectiveRelativeCyclesFunctor :
       (r : ℕ), ¬ (effectiveRelativeCyclesFunctor f r).IsRepresentable
 ```
 
-**`Stacks.Chow.relativeCyclesAddEquivReductionReduction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ReducedInvariance.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ReducedInvariance.lean#L233). The attribute's comment: “the invariance z(X/S, r) = z(X_red/S_red, r)”.
+**`Stacks.Chow.relativeCyclesAddEquivReductionReduction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ReducedInvariance.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ReducedInvariance.lean#L233). The attribute's comment: “the invariance z(X/S, r) = z(X\_red/S\_red, r)”.
 
 > **Stacks Project, Remark 0H5Y.** `z(X/S, r) = z(X_red/S_red, r)`: the group of relative
 > `r`-cycles does not change when both the source and the base are replaced by their reductions.

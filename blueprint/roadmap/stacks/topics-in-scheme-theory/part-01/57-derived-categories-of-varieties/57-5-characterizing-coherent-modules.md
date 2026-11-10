@@ -211,7 +211,7 @@ theorem hasFiniteTotalExt_of_derivedCategoryBBounded
     BeilinsonCoherentCharacterization.HasFiniteTotalExt k X E K
 ```
 
-**`Stacks.AlgebraicGeometry.DerivedVarieties.CoherentCharacterizationConverse.derivedCategoryBBounded_of_hasFiniteTotalExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/CoherentCharacterizationConverse.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/CoherentCharacterizationConverse.lean#L69). The attribute's comment: “the implication (2) ⇒ (1), for X proper over a field and K in D_QCoh(O_X), with condition (2) as HasFiniteTotalExt; at the standard model, in the form 0FYH's h0FYD consumes”.
+**`Stacks.AlgebraicGeometry.DerivedVarieties.CoherentCharacterizationConverse.derivedCategoryBBounded_of_hasFiniteTotalExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/CoherentCharacterizationConverse.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/CoherentCharacterizationConverse.lean#L69). The attribute's comment: “the implication (2) ⇒ (1), for X proper over a field and K in D\_QCoh(O\_X), with condition (2) as HasFiniteTotalExt; at the standard model, in the form 0FYH's h0FYD consumes”.
 
 > **Stacks Project, Tag 0FYD, the implication (2) ⇒ (1).** Let `X` be a scheme proper over a
 > field `k` and let `K ∈ D_QCoh(𝒪_X)` satisfy `∑_{i ∈ ℤ} dim_k Ext^i_X(E, K) < ∞` for every
@@ -235,7 +235,7 @@ theorem derivedCategoryBBounded_of_hasFiniteTotalExt :
         (HasDerivedCategory.standard X.left.Modules) (fun M : X.left.Modules => M.IsCoherent) K
 ```
 
-**`Stacks.AlgebraicGeometry.DerivedVarieties.CoherentCharacterizationConverse.derivedCategoryBBounded_iff_hasFiniteTotalExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/CoherentCharacterizationConverse.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/CoherentCharacterizationConverse.lean#L90). The attribute's comment: “both implications, for X proper over a field and K in D_QCoh(O_X), with condition (2) as HasFiniteTotalExt (each Ext^i finite-dimensional, finitely many nonzero)”.
+**`Stacks.AlgebraicGeometry.DerivedVarieties.CoherentCharacterizationConverse.derivedCategoryBBounded_iff_hasFiniteTotalExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/CoherentCharacterizationConverse.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/CoherentCharacterizationConverse.lean#L90). The attribute's comment: “both implications, for X proper over a field and K in D\_QCoh(O\_X), with condition (2) as HasFiniteTotalExt (each Ext^i finite-dimensional, finitely many nonzero)”.
 
 > **Stacks Project, Tag 0FYD.** Let `X` be a scheme proper over a field `k` and let `K` be an
 > object of `D_QCoh(𝒪_X)`. Then `K ∈ D^b_Coh(𝒪_X)` if and only if
@@ -253,7 +253,7 @@ theorem derivedCategoryBBounded_iff_hasFiniteTotalExt (K : DerivedCategory X.lef
           BeilinsonCoherentCharacterization.HasFiniteTotalExt k X E K
 ```
 
-**`Stacks.AlgebraicGeometry.DerivedVarieties.CoherentCharacterizationConverse.derivedCategoryBBounded_iff_cardinalSum_rank_ext_lt_aleph0`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/CoherentCharacterizationConverse.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/CoherentCharacterizationConverse.lean#L108). The attribute's comment: “both implications, for X proper over a field and K in D_QCoh(O_X), with condition (2) as the source's sum of dimensions, a cardinal sum below aleph0”.
+**`Stacks.AlgebraicGeometry.DerivedVarieties.CoherentCharacterizationConverse.derivedCategoryBBounded_iff_cardinalSum_rank_ext_lt_aleph0`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/CoherentCharacterizationConverse.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/CoherentCharacterizationConverse.lean#L108). The attribute's comment: “both implications, for X proper over a field and K in D\_QCoh(O\_X), with condition (2) as the source's sum of dimensions, a cardinal sum below aleph0”.
 
 > **Stacks Project, Tag 0FYD, in the source's form.** Let `X` be a scheme proper over a field `k`
 > and let `K` be an object of `D_QCoh(𝒪_X)`. Then `K ∈ D^b_Coh(𝒪_X)` if and only if

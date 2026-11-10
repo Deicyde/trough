@@ -32,7 +32,7 @@ theorem ClosedRingedImmersion.pushforwardModules_exact
       (_root_.SheafOfModules.{w} S.targetRingSheaf) S.hom.pushforwardModules
 ```
 
-**`Stacks.Sheaves.PushforwardEssentialImage.essImage_pushforwardModules_iff_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardEssentialSurjectivity.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardEssentialSurjectivity.lean#L408). The attribute's comment: “essential_image”.
+**`Stacks.Sheaves.PushforwardEssentialImage.essImage_pushforwardModules_iff_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardEssentialSurjectivity.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardEssentialSurjectivity.lean#L408). The attribute's comment: “essential\_image”.
 
 > **Stacks 08M3, the essential-image statement.** Let `i : (Sh(C), O) → (Sh(D), O')` be a
 > morphism of ringed topoi whose underlying morphism of topoi is a closed immersion and whose
@@ -55,7 +55,7 @@ theorem essImage_pushforwardModules_iff_of_isClosedImmersion
         ∀ m : G.val.obj X, a • m = 0
 ```
 
-**`AlgebraicGeometry.ClosedRingedImmersion.pushforwardModules_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardFullyFaithful/Basic.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardFullyFaithful/Basic.lean#L152). The attribute's comment: “full_faithfulness”.
+**`AlgebraicGeometry.ClosedRingedImmersion.pushforwardModules_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardFullyFaithful/Basic.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PushforwardFullyFaithful/Basic.lean#L152). The attribute's comment: “full\_faithfulness”.
 
 > **Stacks 08M3.** The direct image of sheaves of modules along a closed immersion of ringed
 > topoi with locally surjective structure map is fully faithful.
@@ -70,7 +70,7 @@ theorem pushforwardModules_fullyFaithful :
     Nonempty S.hom.pushforwardModules.FullyFaithful
 ```
 
-**`Stacks.ToposBridge.essImage_schemeModulesPushforward_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/TopoiBridge/EssentialImage.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedImmersion/TopoiBridge/EssentialImage.lean#L106). The attribute's comment: “essential_image, for a closed immersion of schemes”.
+**`Stacks.ToposBridge.essImage_schemeModulesPushforward_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/TopoiBridge/EssentialImage.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedImmersion/TopoiBridge/EssentialImage.lean#L106). The attribute's comment: “essential\_image, for a closed immersion of schemes”.
 
 > **The essential-image half of Stacks 08M3 for a closed immersion of schemes.** A sheaf of
 > `𝒪_X`-modules lies in the essential image of pushforward along a closed immersion `i : Z ⟶ X`

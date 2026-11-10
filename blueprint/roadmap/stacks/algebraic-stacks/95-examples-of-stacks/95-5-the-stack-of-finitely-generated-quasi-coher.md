@@ -50,7 +50,7 @@ theorem finiteTypeProjection_isStack (B : AlgebraicGeometry.BigFppfSite.{u}) (S 
 
 [Tag 04U5](https://stacks.math.columbia.edu/tag/04U5) in the Stacks Project.
 
-**`Stacks.SheafOfModules.essentiallySmall_isFiniteType_and_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/QuasiCoherentFiniteType.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/QuasiCoherentFiniteType.lean#L49). The attribute's comment: “finite_type_quasi_coherent_modules”.
+**`Stacks.SheafOfModules.essentiallySmall_isFiniteType_and_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/QuasiCoherentFiniteType.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/QuasiCoherentFiniteType.lean#L49). The attribute's comment: “finite\_type\_quasi\_coherent\_modules”.
 
 > The finite type quasi-coherent sheaves of modules on a ringed space have only a set
 > of isomorphism classes.
@@ -66,7 +66,7 @@ theorem essentiallySmall_isFiniteType_and_isQuasicoherent (X : RingedSpace.{u, u
 
 Declarations registered for the tag:
 
-- [`Stacks.SheafOfModules.essentiallySmall_isFiniteType`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FiniteTypeEssentiallySmall.lean#L53), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/QuasiCoherentFiniteType.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/QuasiCoherentFiniteType.lean#L35) (StacksFrontier): “finite_type_modules”.
+- [`Stacks.SheafOfModules.essentiallySmall_isFiniteType`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FiniteTypeEssentiallySmall.lean#L53), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/QuasiCoherentFiniteType.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Algebraic/QuasiCoherentFiniteType.lean#L35) (StacksFrontier): “finite\_type\_modules”.
 
 ## Tag 04U6, a lemma
 

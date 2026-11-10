@@ -49,7 +49,7 @@ theorem preservesFiniteColimits_closedInclusionPushforward (hi : IsClosedEmbeddi
     PreservesFiniteColimits (closedInclusionPushforward Z X i)
 ```
 
-**`Stacks.ClosedImmersion.essImage_closedInclusionPushforward_iff_forall_stalk_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L210). The attribute's comment: “essential image”. References: EGA 0 (4.2.5), “Ψ_*M is zero outside X”.
+**`Stacks.ClosedImmersion.essImage_closedInclusionPushforward_iff_forall_stalk_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L210). The attribute's comment: “essential image”. References: EGA 0 (4.2.5), “Ψ\_*M is zero outside X”.
 
 > **Stacks 01AX, essential image.** A sheaf `G` of abelian groups on `X` is in the essential
 > image of pushforward along the closed embedding `i : Z ⟶ X` if and only if the stalk of `G`
@@ -70,7 +70,7 @@ theorem essImage_closedInclusionPushforward_iff_forall_stalk_isZero
       ∀ x : X, x ∉ Set.range i.hom → IsZero (G.presheaf.stalk x)
 ```
 
-**`Stacks.ClosedImmersion.essImage_closedInclusionPushforward_iff_support_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L248). The attribute's comment: “essential image, in terms of the support”. References: EGA 0 (4.2.5), “Ψ_*M is zero outside X”.
+**`Stacks.ClosedImmersion.essImage_closedInclusionPushforward_iff_support_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/AbelianExact.lean#L248). The attribute's comment: “essential image, in terms of the support”. References: EGA 0 (4.2.5), “Ψ\_*M is zero outside X”.
 
 > **Stacks 01AX, essential image.** The essential image of pushforward along a closed
 > embedding `i : Z ⟶ X` consists exactly of the sheaves of abelian groups whose support is
@@ -159,7 +159,7 @@ theorem supportedSectionsOnClosedFunctor_leftExact {X : TopCat.{u}}
       (supportedSectionsOnClosedFunctor Z hZ)
 ```
 
-**`AlgebraicGeometry.SheafOfModules.supportedSectionsSubsheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Support.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/Support.lean#L196). The attribute's comment: “supported_sections_subsheaf”. References: SGA 2 XIV (1.0), “sheaf Γ_Y(F)”.
+**`AlgebraicGeometry.SheafOfModules.supportedSectionsSubsheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Support.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/Support.lean#L196). The attribute's comment: “supported\_sections\_subsheaf”. References: SGA 2 XIV (1.0), “sheaf Γ\_Y(F)”.
 
 > The abelian subsheaf of `F` consisting of the local sections supported on
 > `Z`. It is bundled together with its canonical inclusion into `F`.

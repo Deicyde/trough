@@ -124,7 +124,7 @@ theorem exists_model_of_finitePresentation {I : Type v} [Category.{w} I] [IsCofi
 
 [Tag 01ZR](https://stacks.math.columbia.edu/tag/01ZR) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ModuleLimits.exists_pullback_map_eq_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/EventualMapEq.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ModuleLimits/EventualMapEq.lean#L178). The attribute's comment: “eventual_equality”.
+**`Stacks.AlgebraicGeometry.ModuleLimits.exists_pullback_map_eq_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/EventualMapEq.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ModuleLimits/EventualMapEq.lean#L178). The attribute's comment: “eventual\_equality”.
 
 > Let `c` be a limit cone on a cofiltered diagram `D` of
 > schemes with affine transition morphisms and let `ψ₁, ψ₂ : F ⟶ G` be morphisms of sheaves of
@@ -142,7 +142,7 @@ theorem exists_pullback_map_eq_of_isLimit (hc : IsLimit c) (i : I) [CompactSpace
         (Scheme.Modules.pullback (D.map e)).map ψ₂
 ```
 
-**`Stacks.AlgebraicGeometry.ModuleLimits.exists_map_of_pullback_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/MorphismDescentGlue.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ModuleLimits/MorphismDescentGlue.lean#L503). The attribute's comment: “descend_morphisms”.
+**`Stacks.AlgebraicGeometry.ModuleLimits.exists_map_of_pullback_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/MorphismDescentGlue.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ModuleLimits/MorphismDescentGlue.lean#L503). The attribute's comment: “descend\_morphisms”.
 
 > **[Stacks Project, Tag 01ZR] (2), with the canonical identifications written out.**  This is
 > the statement of the clause of the tag verbatim, obtained from
@@ -164,7 +164,7 @@ theorem exists_map_of_pullback_of_isLimit (hc : IsLimit c) (i : I)
           (Scheme.Modules.pullbackCongr (c.w e)).hom.app F ≫ φ
 ```
 
-**`Stacks.AlgebraicGeometry.ModuleLimits.exists_isFinitePresentation_pullback_iso_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/MorphismDescentGlue.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ModuleLimits/MorphismDescentGlue.lean#L528). The attribute's comment: “descend_modules”.
+**`Stacks.AlgebraicGeometry.ModuleLimits.exists_isFinitePresentation_pullback_iso_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/MorphismDescentGlue.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ModuleLimits/MorphismDescentGlue.lean#L528). The attribute's comment: “descend\_modules”.
 
 > **[Stacks Project, Tag 01ZR] (1) for a cofiltered limit of quasi-compact quasi-separated
 > schemes with affine transition morphisms.**  A sheaf of modules of finite presentation on the
@@ -206,7 +206,7 @@ theorem exists_isFiniteLocallyFree_pullback_iso (hc : IsLimit c)
         Nonempty (E ≅ (Scheme.Modules.pullback (c.π.app i)).obj Eᵢ)
 ```
 
-**`Stacks.AlgebraicGeometry.ModuleLimits.exists_ideal_pullback_epi_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/FiniteTypeIdealDescent.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ModuleLimits/FiniteTypeIdealDescent.lean#L332). The attribute's comment: “finite_type_ideal_descent”.
+**`Stacks.AlgebraicGeometry.ModuleLimits.exists_ideal_pullback_epi_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleLimits/FiniteTypeIdealDescent.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ModuleLimits/FiniteTypeIdealDescent.lean#L332). The attribute's comment: “finite\_type\_ideal\_descent”.
 
 > **Stacks Project, Tag 0B8W.**  A finite type quasi-coherent ideal of the structure sheaf of
 > the limit of a cofiltered system of quasi-compact and quasi-separated schemes with affine

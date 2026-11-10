@@ -35,7 +35,7 @@ public theorem fullyFaithful_quotientStackMap_iff_isPullback
 
 [Tag 046T](https://stacks.math.columbia.edu/tag/046T) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallySurjective_source_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/RestrictionCoverings.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/RestrictionCoverings.lean#L132). The attribute's comment: “surjective_object_map”.
+**`AlgebraicGeometry.Space.isLocallySurjective_source_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/RestrictionCoverings.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/RestrictionCoverings.lean#L132). The attribute's comment: “surjective\_object\_map”.
 
 > **Stacks 046T.** A map on objects which is surjective as a map of fppf sheaves stays
 > surjective after passing to the arrows of the target groupoid whose target lifts through it and
@@ -52,7 +52,7 @@ theorem isLocallySurjective_source_pullback_snd
       (pullback.snd f.toGroupoidHom.mapObjects H.target.hom ≫ H.source.hom)
 ```
 
-**`AlgebraicGeometry.Space.isLocallySurjective_source_pullback_of_isFppfCovering_mapObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/RestrictionCoverings.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/RestrictionCoverings.lean#L162). The attribute's comment: “fppf_object_map”.
+**`AlgebraicGeometry.Space.isLocallySurjective_source_pullback_of_isFppfCovering_mapObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/RestrictionCoverings.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/RestrictionCoverings.lean#L162). The attribute's comment: “fppf\_object\_map”.
 
 > **Stacks 046T.** If the map on objects of a morphism of groupoids in algebraic spaces is an
 > fppf covering, then every object of the target groupoid is fppf-locally the source of an arrow
@@ -70,7 +70,7 @@ theorem isLocallySurjective_source_pullback_of_isFppfCovering_mapObjects
       (pullback.snd f.toGroupoidHom.mapObjects H.target.hom ≫ H.source.hom)
 ```
 
-**`AlgebraicGeometry.Space.isLocallySurjective_source_pullback_of_isFppfCovering_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/RestrictionCoverings.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/RestrictionCoverings.lean#L178). The attribute's comment: “fppf_saturation”.
+**`AlgebraicGeometry.Space.isLocallySurjective_source_pullback_of_isFppfCovering_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/RestrictionCoverings.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/RestrictionCoverings.lean#L178). The attribute's comment: “fppf\_saturation”.
 
 > **Stacks 046T.** If the arrows of the target groupoid whose target lifts to the source
 > groupoid form an fppf covering of the object space of the target through their sources, then that
@@ -88,7 +88,7 @@ theorem isLocallySurjective_source_pullback_of_isFppfCovering_self
       (pullback.snd f.toGroupoidHom.mapObjects H.target.hom ≫ H.source.hom)
 ```
 
-**`AlgebraicGeometry.Stack.quotientStackMap_isEquivalenceOver_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/RestrictionCoverings.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/RestrictionCoverings.lean#L496). The attribute's comment: “equivalence_criterion”.
+**`AlgebraicGeometry.Stack.quotientStackMap_isEquivalenceOver_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/RestrictionCoverings.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackSquares/RestrictionCoverings.lean#L496). The attribute's comment: “equivalence\_criterion”.
 
 > **Stacks 046T.** The induced morphism of quotient stacks `[f] : [U/R] ⟶ [U'/R']` is an
 > equivalence over the big fppf site if and only if (1) `(U, R, s, t, c)` is the restriction of

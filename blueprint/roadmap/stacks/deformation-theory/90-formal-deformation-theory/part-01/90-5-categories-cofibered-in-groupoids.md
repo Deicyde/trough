@@ -28,7 +28,7 @@ public abbrev IsCofiberedInGroupoids {F : Type u₁} [Category.{v₁} F]
 
 [Tag 06GK](https://stacks.math.columbia.edu/tag/06GK) in the Stacks Project.
 
-**`Deformation.isCofiberedInGroupoids_twoFibreProductBasedCategory`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductBaseChangeSmooth.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Applications/TwoFibreProductBaseChangeSmooth.lean#L93). The attribute's comment: “(13) the 2-fibre product of categories cofibered in groupoids over 𝒞_Λ is given by the construction of their 2-fibre product as categories over 𝒞_Λ”.
+**`Deformation.isCofiberedInGroupoids_twoFibreProductBasedCategory`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Applications/TwoFibreProductBaseChangeSmooth.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Applications/TwoFibreProductBaseChangeSmooth.lean#L93). The attribute's comment: “(13) the 2-fibre product of categories cofibered in groupoids over 𝒞\_Λ is given by the construction of their 2-fibre product as categories over 𝒞\_Λ”.
 
 > A `2`-fibre product of categories cofibered in groupoids over `𝒞_Λ` is cofibered in
 > groupoids: the construction of the `2`-fibre product as categories over `𝒞_Λ` serves as the
@@ -82,7 +82,7 @@ noncomputable abbrev isomorphismClasses : C ⥤ Type u₁
 
 [Tag 0DZJ](https://stacks.math.columbia.edu/tag/0DZJ) in the Stacks Project.
 
-**`Deformation.cofiberedProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Cofibered/Product.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Cofibered/Product.lean#L81). The attribute's comment: “the product of two categories cofibered in groupoids over 𝒞_Λ is their 2-fibre product over 𝒞_Λ”.
+**`Deformation.cofiberedProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Cofibered/Product.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Cofibered/Product.lean#L81). The attribute's comment: “the product of two categories cofibered in groupoids over 𝒞\_Λ is their 2-fibre product over 𝒞\_Λ”.
 
 > The *product* of two categories cofibered in groupoids `𝓕` and `𝓖` over `𝒞_Λ` is their
 > `2`-fibre product `𝓕 ×_{𝒞_Λ} 𝓖`, taken over `𝒞_Λ` itself: the `2`-fibre product of the two
@@ -106,7 +106,7 @@ public theorem isCofiberedInGroupoids_cofiberedProduct
     IsCofiberedInGroupoids (cofiberedProduct 𝓕 𝓖).p
 ```
 
-**`Deformation.twoFibreProductBasedCategory_comp_baseProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Cofibered/Product.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Cofibered/Product.lean#L233). The attribute's comment: “the 2-fibre product over 𝒞_Λ along the structure morphisms is the product”.
+**`Deformation.twoFibreProductBasedCategory_comp_baseProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Cofibered/Product.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Cofibered/Product.lean#L233). The attribute's comment: “the 2-fibre product over 𝒞\_Λ along the structure morphisms is the product”.
 
 > Given morphisms `p₁ : 𝓗 → 𝓕` and `p₂ : 𝓖 → 𝓕` of categories cofibered in groupoids over `𝒞_Λ`,
 > the `2`-fibre product of `𝓗` and `𝓖` formed over `𝒞_Λ` — that is, over the two composites of `p₁`

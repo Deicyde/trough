@@ -87,7 +87,7 @@ noncomputable def negativeTwistIso [IsEffectiveCartierDivisor D] :
 noncomputable abbrev differenceTwist' : SheafOfModules.{u} (structureSheafRing X.toRingedSpace)
 ```
 
-**`Stacks.Divisors.negativeTwist`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean#L123). The attribute's comment: “(3): O_S(-D) = I_D”.
+**`Stacks.Divisors.negativeTwist`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean#L123). The attribute's comment: “(3): O\_S(-D) = I\_D”.
 
 > **Stacks Project, Tag 01WX (3).** The sheaf `𝒪_S(-D)` *is* the ideal sheaf `ℐ_D` of the
 > closed subscheme `D ⊆ S`.
@@ -96,7 +96,7 @@ noncomputable abbrev differenceTwist' : SheafOfModules.{u} (structureSheafRing X
 noncomputable abbrev negativeTwist : SheafOfModules.{u} (structureSheafRing X.toRingedSpace)
 ```
 
-**`Stacks.Divisors.invertibleSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean#L136). The attribute's comment: “(1): O_S(D) = SheafHom(I_D, O_S)”.
+**`Stacks.Divisors.invertibleSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean#L136). The attribute's comment: “(1): O\_S(D) = SheafHom(I\_D, O\_S)”.
 
 > **Stacks Project, Tag 01WX (1).** The sheaf `𝒪_S(D) = SheafHom_{𝒪_S}(ℐ_D, 𝒪_S)` associated
 > to a closed subscheme `D ⊆ S`: the dual of its ideal sheaf.
@@ -105,7 +105,7 @@ noncomputable abbrev negativeTwist : SheafOfModules.{u} (structureSheafRing X.to
 noncomputable abbrev invertibleSheaf : SheafOfModules.{u} (structureSheafRing X.toRingedSpace)
 ```
 
-**`Stacks.Divisors.differenceTwist`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean#L144). The attribute's comment: “(4): O_S(D - D') = O_S(D) tensor O_S(-D')”.
+**`Stacks.Divisors.differenceTwist`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean#L144). The attribute's comment: “(4): O\_S(D - D') = O\_S(D) tensor O\_S(-D')”.
 
 > **Stacks Project, Tag 01WX (4).** The difference twist
 > `𝒪_S(D - D') = 𝒪_S(D) ⊗_{𝒪_S} 𝒪_S(-D')`. The expression `D - D'` has no geometric meaning on
@@ -115,7 +115,7 @@ noncomputable abbrev invertibleSheaf : SheafOfModules.{u} (structureSheafRing X.
 noncomputable abbrev differenceTwist : SheafOfModules.{u} (structureSheafRing X.toRingedSpace)
 ```
 
-**`Stacks.Divisors.isInvertible_invertibleSheaf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean#L197). The attribute's comment: “(1): O_S(D) is invertible”.
+**`Stacks.Divisors.isInvertible_invertibleSheaf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean#L197). The attribute's comment: “(1): O\_S(D) is invertible”.
 
 > **Stacks Project, Tag 01WX (1).** The sheaf `𝒪_S(D)` of an effective Cartier divisor is
 > invertible, which is what the tag's wording "the invertible sheaf `𝒪_S(D)`" asserts.
@@ -129,7 +129,7 @@ instance isInvertible_invertibleSheaf :
       (structureSheafRing X.toRingedSpace).property (invertibleSheaf D)
 ```
 
-**`Stacks.Divisors.invertibleSheafIsoNegativeTensorPower`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean#L216). The attribute's comment: “(1): O_S(D) = I_D^{tensor -1}”.
+**`Stacks.Divisors.invertibleSheafIsoNegativeTensorPower`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean#L216). The attribute's comment: “(1): O\_S(D) = I\_D^\{tensor -1}”.
 
 > **Stacks Project, Tag 01WX (1):** `𝒪_S(D) = ℐ_D^{⊗ -1}`. The dual of the ideal sheaf is its
 > negative first tensor power, by uniqueness of tensor inverses; the identification is the one
@@ -146,7 +146,7 @@ noncomputable def invertibleSheafIsoNegativeTensorPower :
       (structureSheafRing X.toRingedSpace).property (negativeTwist D) (-1)
 ```
 
-**`Stacks.Divisors.negativeTwistIsoNegativeTensorPower`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean#L228). The attribute's comment: “(3): O_S(-D) = O_S(D)^{tensor -1}”.
+**`Stacks.Divisors.negativeTwistIsoNegativeTensorPower`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSheaf.lean#L228). The attribute's comment: “(3): O\_S(-D) = O\_S(D)^\{tensor -1}”.
 
 > **Stacks Project, Tag 01WX (3):** `𝒪_S(-D) = 𝒪_S(D)^{⊗ -1}`. Together with the definition
 > of `negativeTwist` this is the tag's full chain `𝒪_S(-D) = 𝒪_S(D)^{⊗ -1} = ℐ_D`. The
@@ -621,7 +621,7 @@ theorem zeroScheme_isGreatest_vanishingClosedSubscheme (X : Scheme.{u}) (L : X.M
       (OrderDual.toDual (zeroScheme X L s))
 ```
 
-**`AlgebraicGeometry.isLocallyPrincipal_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeProperties.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeProperties.lean#L81). The attribute's comment: “locally_principal”.
+**`AlgebraicGeometry.isLocallyPrincipal_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeProperties.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeProperties.lean#L81). The attribute's comment: “locally\_principal”.
 
 > **Stacks Tag 02OR (3).** The zero scheme of a global section of an invertible module is a
 > locally principal closed subscheme: on the trivializing opens its ideal is generated by the one
@@ -633,7 +633,7 @@ theorem isLocallyPrincipal_zeroScheme (X : Scheme.{u}) (L : X.Modules)
     (s : Γ(L, ⊤)) : Stacks.Divisors.IsLocallyPrincipal (zeroScheme X L s)
 ```
 
-**`AlgebraicGeometry.isEffectiveCartierDivisor_zeroScheme_iff_isRegularSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeRegular.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeRegular.lean#L221). The attribute's comment: “cartier_iff_regular”.
+**`AlgebraicGeometry.isEffectiveCartierDivisor_zeroScheme_iff_isRegularSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeRegular.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeRegular.lean#L221). The attribute's comment: “cartier\_iff\_regular”.
 
 > **Stacks Project, Tag 02OR (4).** The zero scheme of a global section `s` of an invertible
 > module is an effective Cartier divisor if and only if `s` is a nonzerodivisor.
@@ -648,7 +648,7 @@ theorem isEffectiveCartierDivisor_zeroScheme_iff_isRegularSection (s : L.section
 
 [Tag 01X0](https://stacks.math.columbia.edu/tag/01X0) in the Stacks Project.
 
-**`Stacks.Divisors.canonicalSection_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CanonicalSectionRegular.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CanonicalSectionRegular.lean#L180). The attribute's comment: “canonical_section_regular”.
+**`Stacks.Divisors.canonicalSection_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/CanonicalSectionRegular.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/CanonicalSectionRegular.lean#L180). The attribute's comment: “canonical\_section\_regular”.
 
 > **The first clause of [Stacks, Tag 01X0].** For `D ⊆ X` an effective Cartier divisor on a
 > scheme, the canonical section `1_D` of `𝒪_X(D)` is a regular section.
@@ -665,7 +665,7 @@ theorem canonicalSection_isRegular [IsEffectiveCartierDivisor D] :
       (structureSheafRing X.toRingedSpace).property (canonicalSection' D)
 ```
 
-**`AlgebraicGeometry.existsUnique_invertibleSheafIso_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean#L250). The attribute's comment: “regular_section_divisor”.
+**`AlgebraicGeometry.existsUnique_invertibleSheafIso_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean#L250). The attribute's comment: “regular\_section\_divisor”.
 
 > **There is a unique isomorphism from the invertible sheaf of the zero scheme of a regular
 > section to the original invertible sheaf that sends its canonical section to that section.**
@@ -688,7 +688,7 @@ theorem existsUnique_invertibleSheafIso_zeroScheme (X : Scheme.{u}) (L : X.Modul
             (zeroScheme X L (s.eval (op ⊤)))).eval (op ⊤)) = s.eval (op ⊤)
 ```
 
-**`AlgebraicGeometry.effectiveCartierDivisor_equiv_regularSectionClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean#L398). The attribute's comment: “divisor_regular_section_equiv”. References: EGA IV (21.3.3), “(ii)”.
+**`AlgebraicGeometry.effectiveCartierDivisor_equiv_regularSectionClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean#L398). The attribute's comment: “divisor\_regular\_section\_equiv”. References: EGA IV (21.3.3), “(ii)”.
 
 > **The canonical bijection between the effective Cartier divisors on a scheme and the
 > isomorphism classes of invertible modules with a regular global section**
@@ -706,7 +706,7 @@ def effectiveCartierDivisor_equiv_regularSectionClass (X : Scheme.{u}) :
     EffectiveCartierDivisor X ≃ RegularSectionClass X
 ```
 
-**`AlgebraicGeometry.effectiveCartierDivisor_equiv_regularSectionClass_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean#L413). The attribute's comment: “divisor_regular_section_equiv”.
+**`AlgebraicGeometry.effectiveCartierDivisor_equiv_regularSectionClass_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean#L413). The attribute's comment: “divisor\_regular\_section\_equiv”.
 
 > **The forward map of the bijection of [Stacks, Tag 01X0] sends an effective Cartier divisor
 > to the isomorphism class of its invertible sheaf with its canonical section**, which is a regular
@@ -723,7 +723,7 @@ theorem effectiveCartierDivisor_equiv_regularSectionClass_apply (D : EffectiveCa
             Stacks.Divisors.canonicalSection' D.1, h⟩
 ```
 
-**`AlgebraicGeometry.effectiveCartierDivisor_equiv_regularSectionClass_symm_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean#L427). The attribute's comment: “divisor_regular_section_equiv”.
+**`AlgebraicGeometry.effectiveCartierDivisor_equiv_regularSectionClass_symm_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean#L427). The attribute's comment: “divisor\_regular\_section\_equiv”.
 
 > **The inverse map of the bijection of [Stacks, Tag 01X0] sends the class of a regular-section
 > pair to the effective Cartier divisor cut out by its zero scheme.** The equation holds for every
@@ -735,7 +735,7 @@ theorem effectiveCartierDivisor_equiv_regularSectionClass_symm_apply (P : Regula
       (effectiveCartierDivisor_equiv_regularSectionClass X).symm P.classOf = ⟨P.zeroScheme, h⟩
 ```
 
-**`Stacks.Divisors.zeroScheme_canonicalSection'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeCanonicalSection.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeCanonicalSection.lean#L196). The attribute's comment: “zeroScheme_canonicalSection”.
+**`Stacks.Divisors.zeroScheme_canonicalSection'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeCanonicalSection.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeCanonicalSection.lean#L196). The attribute's comment: “zeroScheme\_canonicalSection”.
 
 > **`Z(1_D) = D`.** The zero scheme of the canonical section of `𝒪_X(D)` is `D` itself: the
 > composite `D ↦ (𝒪_X(D), 1_D) ↦ Z(1_D)` is the identity.
@@ -745,7 +745,7 @@ theorem zeroScheme_canonicalSection' :
     zeroScheme X (modulesInvertibleSheaf D) (canonicalSection D) = D
 ```
 
-**`Stacks.Divisors.isRegularSection_canonicalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeCanonicalSection.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeCanonicalSection.lean#L210). The attribute's comment: “canonical_section_regular”.
+**`Stacks.Divisors.isRegularSection_canonicalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeCanonicalSection.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeCanonicalSection.lean#L210). The attribute's comment: “canonical\_section\_regular”.
 
 > The canonical section `1_D` of `𝒪_X(D)` is a regular section, i.e. a nonzerodivisor
 > ([Stacks, Tag 01WY]).
@@ -757,13 +757,13 @@ theorem isRegularSection_canonicalSections :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.isEffectiveCartierDivisor_zeroScheme_iff_isRegularSection`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeRegular.lean#L221), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean#L236) (StacksFrontier): “regular_section_divisor”.
+- [`AlgebraicGeometry.isEffectiveCartierDivisor_zeroScheme_iff_isRegularSection`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeRegular.lean#L221), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionCorrespondence.lean#L236) (StacksFrontier): “regular\_section\_divisor”.
 
 ## Tag 0C6K, a remark
 
 [Tag 0C6K](https://stacks.math.columbia.edu/tag/0C6K) in the Stacks Project.
 
-**`Stacks.Divisors.shortExact_divisor_normal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/DivisorNormalSequence.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/DivisorNormalSequence.lean#L92). The attribute's comment: “divisor_normal_sequence”.
+**`Stacks.Divisors.shortExact_divisor_normal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/DivisorNormalSequence.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/DivisorNormalSequence.lean#L92). The attribute's comment: “divisor\_normal\_sequence”.
 
 > **Stacks Tag 0C6K, the label `divisor_normal_sequence`.** For an effective Cartier divisor
 > `D ⊆ X` with inclusion `i`, the normal sheaf `𝒩_{D/X}` is the restriction `i^* 𝒪_X(D)`, and
@@ -787,7 +787,7 @@ theorem shortExact_divisor_normal :
       ∃ h : f ≫ g = 0, (ShortComplex.mk f g h).ShortExact
 ```
 
-**`AlgebraicGeometry.shortExact_zeroScheme_ideal_of_isRegularSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionIdealSequence.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionIdealSequence.lean#L204). The attribute's comment: “regular_section_ideal_sequence”.
+**`AlgebraicGeometry.shortExact_zeroScheme_ideal_of_isRegularSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionIdealSequence.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularSectionIdealSequence.lean#L204). The attribute's comment: “regular\_section\_ideal\_sequence”.
 
 > **Stacks Tag 0C6K, the label `regular_section_ideal_sequence`.** For an invertible module
 > `L` on a scheme `X` and a regular global section `s` of `L` ([Stacks, Tag 01WY]), the sequence
@@ -864,7 +864,7 @@ theorem isEffectiveCartierDivisor_zeroScheme_and_shortExact_sequences (X : Schem
           (Stacks.IdealSheafSequence.divisorQuotientMap D) hz).ShortExact)
 ```
 
-**`AlgebraicGeometry.exists_cokernelIso_unit_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeExactSequence.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeExactSequence.lean#L234). The attribute's comment: “regular_section_sequence”.
+**`AlgebraicGeometry.exists_cokernelIso_unit_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeExactSequence.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeExactSequence.lean#L234). The attribute's comment: “regular\_section\_sequence”.
 
 > For an invertible module `L` on a scheme `X` and a global section `s`, the unit of the
 > pullback–pushforward adjunction along the inclusion `i` of the zero scheme `Z(s)` realizes
@@ -881,7 +881,7 @@ theorem exists_cokernelIso_unit_zeroScheme (s : L.sections) :
         (Scheme.Modules.pullbackPushforwardAdjunction i).unit.app L
 ```
 
-**`AlgebraicGeometry.shortExact_zeroScheme_of_isRegularSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeExactSequence.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeExactSequence.lean#L269). The attribute's comment: “regular_section_sequence”.
+**`AlgebraicGeometry.shortExact_zeroScheme_of_isRegularSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeExactSequence.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/ZeroSchemeExactSequence.lean#L269). The attribute's comment: “regular\_section\_sequence”.
 
 > For an invertible module `L` on a scheme `X` and a regular global section `s`
 > ([Stacks, Tag 01WY]), the sequence `0 ⟶ 𝒪_X ⟶ L ⟶ i_* i^* L ⟶ 0` is short exact, where `i` is the
@@ -898,7 +898,7 @@ theorem shortExact_zeroScheme_of_isRegularSection (s : L.sections)
     ∃ h : f ≫ g = 0, (ShortComplex.mk f g h).ShortExact
 ```
 
-**`Stacks.IdealSheafSequence.divisorIdeal_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/IdealSheafSequence/Basic.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/IdealSheafSequence/Basic.lean#L116). The attribute's comment: “divisor_ideal_sequence”. References: SGA 6 X (5.2.2), “more general”.
+**`Stacks.IdealSheafSequence.divisorIdeal_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/IdealSheafSequence/Basic.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/IdealSheafSequence/Basic.lean#L116). The attribute's comment: “divisor\_ideal\_sequence”. References: SGA 6 X (5.2.2), “more general”.
 
 > **Stacks Tag 0C6K, the label `divisor_ideal_sequence`.** For a closed subscheme `D` of a
 > scheme `X` with inclusion `i`, the canonical sequence `0 ⟶ ℐ_D ⟶ 𝒪_X ⟶ i_* 𝒪_D ⟶ 0` of sheaves
@@ -913,7 +913,7 @@ theorem divisorIdeal_shortExact :
       (ShortComplex.mk (divisorIdealMap D) (divisorQuotientMap D) hz).ShortExact
 ```
 
-**`Stacks.Tag0C6KSectionIdeal.exists_cokernelIso_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionIdeal/Basic.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionIdeal/Basic.lean#L204). The attribute's comment: “regular_section_sequence”.
+**`Stacks.Tag0C6KSectionIdeal.exists_cokernelIso_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionIdeal/Basic.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionIdeal/Basic.lean#L204). The attribute's comment: “regular\_section\_sequence”.
 
 > **The first assertion of Stacks Tag 0C6K's label `regular_section_sequence`.** For `L` an
 > invertible `𝒪_X`-module and `s` a global section of `L`, the restriction map
@@ -933,7 +933,7 @@ theorem exists_cokernelIso_zeroScheme (L : SheafOfModules.{u} X.ringCatSheaf)
           (Stacks.RegularSectionSequence.zeroScheme X L (s.eval (op ⊤))) L
 ```
 
-**`Stacks.Tag0C6KSectionIdeal.shortExact_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionIdeal/Basic.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionIdeal/Basic.lean#L222). The attribute's comment: “regular_section_sequence”.
+**`Stacks.Tag0C6KSectionIdeal.shortExact_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionIdeal/Basic.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionIdeal/Basic.lean#L222). The attribute's comment: “regular\_section\_sequence”.
 
 > **The second assertion of Stacks Tag 0C6K's label `regular_section_sequence`.** For `s` a
 > *regular* global section of an invertible module — regularity being monicity of multiplication by

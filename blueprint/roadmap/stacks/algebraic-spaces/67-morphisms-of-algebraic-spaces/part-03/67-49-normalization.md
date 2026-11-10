@@ -443,7 +443,7 @@ theorem nonempty_normalizationData {F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 0BB2](https://stacks.math.columbia.edu/tag/0BB2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.normalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSiteChart.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSiteChart.lean#L188). The attribute's comment: “the normalization ν_F : F^ν ⟶ F of an algebraic space satisfying the conditions of Tag 0BB1, defined as the construction of Tag 07U4 (the quotient of the normalized étale presentation); unique up to unique isomorphism over F by existsUnique_iso_normalization”.
+**`AlgebraicGeometry.Space.normalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSiteChart.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSiteChart.lean#L188). The attribute's comment: “the normalization ν\_F : F^ν ⟶ F of an algebraic space satisfying the conditions of Tag 0BB1, defined as the construction of Tag 07U4 (the quotient of the normalized étale presentation); unique up to unique isomorphism over F by existsUnique\_iso\_normalization”.
 
 > **Stacks 0BB2, the normalization of an algebraic space.** Let `F` be an algebraic space over
 > `S` satisfying the equivalent conditions of Tag 0BB1. The *normalization* of `F` is the morphism
@@ -559,7 +559,7 @@ noncomputable def onReduction (D : NormalizationData B S hS F)
     NormalizationData B S hS R.toFunctor
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_comp_ι_reduction_eq_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationReduction.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationReduction.lean#L101). The attribute's comment: “the normalization morphism ν_X of Tag 0BB2 factors uniquely through the reduction X_red ⟶ X”.
+**`AlgebraicGeometry.Space.existsUnique_comp_ι_reduction_eq_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationReduction.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationReduction.lean#L101). The attribute's comment: “the normalization morphism ν\_X of Tag 0BB2 factors uniquely through the reduction X\_red ⟶ X”.
 
 > **Stacks 0BB3, the factorization.** Let `X` be an algebraic space over `S` satisfying the
 > equivalent conditions of Tag 0BB1. The normalization morphism `ν_X : X^ν ⟶ X` of Tag 0BB2
@@ -576,7 +576,7 @@ theorem existsUnique_comp_ι_reduction_eq_normalization
       g ≫ (reduction B S hS X hX).ι = normalization B S hS hX hfin
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_iso_normalization_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationReduction.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationReduction.lean#L147). The attribute's comment: “the factorization X^ν ⟶ X_red is the normalization ν_{X_red} of Tag 0BB2: they are isomorphic over X_red by a unique isomorphism”.
+**`AlgebraicGeometry.Space.existsUnique_iso_normalization_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationReduction.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationReduction.lean#L147). The attribute's comment: “the factorization X^ν ⟶ X\_red is the normalization ν\_\{X\_red} of Tag 0BB2: they are isomorphic over X\_red by a unique isomorphism”.
 
 > **Stacks 0BB3, the factorization is the normalization of the reduction.** Let `X` be an
 > algebraic space over `S` satisfying the equivalent conditions of Tag 0BB1, so that its reduction

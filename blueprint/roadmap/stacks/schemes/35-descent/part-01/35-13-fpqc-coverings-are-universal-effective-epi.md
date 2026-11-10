@@ -46,7 +46,7 @@ theorem quasicoherentSectionsEqualizer_iff_isUniversalEffectiveEpiFamily
 
 [Tag 0EUB](https://stacks.math.columbia.edu/tag/0EUB) in the Stacks Project.
 
-**`AlgebraicGeometry.jointlySurjective_of_isUniversalEffectiveEpiFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Surjective.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Surjective.lean#L56). The attribute's comment: “schemes_surjective”. References: SGA 3 IV (6.7.2), “univ. eff. epi ⇒ surj”; SGA 3 IV (1.3), “special case”.
+**`AlgebraicGeometry.jointlySurjective_of_isUniversalEffectiveEpiFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Surjective.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Surjective.lean#L56). The attribute's comment: “schemes\_surjective”. References: SGA 3 IV (6.7.2), “univ. eff. epi ⇒ surj”; SGA 3 IV (1.3), “special case”.
 
 > A universal effective epimorphic family of schemes is jointly surjective
 > on the underlying spaces.
@@ -59,7 +59,7 @@ theorem jointlySurjective_of_isUniversalEffectiveEpiFamily
     ∀ x : X, ∃ i, x ∈ Set.range (f i)
 ```
 
-**`AlgebraicGeometry.exists_preimage_of_isUniversalEffectiveEpiFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Surjective.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Surjective.lean#L74). The attribute's comment: “affine_schemes_surjective”. References: SGA 3 IV (6.7.2), “affine case”.
+**`AlgebraicGeometry.exists_preimage_of_isUniversalEffectiveEpiFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Surjective.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Surjective.lean#L74). The attribute's comment: “affine\_schemes\_surjective”. References: SGA 3 IV (6.7.2), “affine case”.
 
 > A universal effective epimorphic family of affine schemes is jointly surjective.
 

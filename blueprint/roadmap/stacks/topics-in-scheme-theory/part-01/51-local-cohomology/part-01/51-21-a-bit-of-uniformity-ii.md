@@ -572,7 +572,7 @@ theorem not_nonempty_iso_proObj_derived_monomial {r : ℕ}
         proObj (Koszul.powDerivedSystem fun i : Fin r => (X i : MvPolynomial (Fin r) ℤ)))
 ```
 
-**`CategoryTheory.StrictProCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictProCategory.lean, line 32](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictProCategory.lean#L32). The attribute's comment: “strict_pro_category”.
+**`CategoryTheory.StrictProCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictProCategory.lean, line 32](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityII/StrictProCategory.lean#L32). The attribute's comment: “strict\_pro\_category”.
 
 > The strict pro-category of `C`. Its objects are inverse sequences in `C`; its morphisms are
 > uniformly shifted compatible maps modulo eventual agreement after passing to a common shift.

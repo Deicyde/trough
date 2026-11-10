@@ -173,7 +173,7 @@ theorem schlessingerConditionS2_comparison_squareZero
 
 [Tag 06I0](https://stacks.math.columbia.edu/tag/06I0) in the Stacks Project.
 
-**`Deformation.schlessingerConditionS2_of_isIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/AssociatedFunctor.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Schlessinger/AssociatedFunctor.lean#L450). The attribute's comment: “s2_associated_functor”.
+**`Deformation.schlessingerConditionS2_of_isIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/AssociatedFunctor.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Schlessinger/AssociatedFunctor.lean#L450). The attribute's comment: “s2\_associated\_functor”.
 
 > The associated functor of isomorphism classes of a category cofibered in
 > groupoids inherits (S2) if the special fibre is a setoid or automorphisms
@@ -198,7 +198,7 @@ public theorem schlessingerConditionS2_of_isIsomorphismClasses
       (CategoryOfElements.π (isomorphismClasses 𝓕 h𝓕))
 ```
 
-**`Deformation.schlessingerConditionS1_of_isIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Basic.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Schlessinger/Basic.lean#L354). The attribute's comment: “s1_associated_functor”. References: SGA 7 VI (1.13), “partial”.
+**`Deformation.schlessingerConditionS1_of_isIsomorphismClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Schlessinger/Basic.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Schlessinger/Basic.lean#L354). The attribute's comment: “s1\_associated\_functor”. References: SGA 7 VI (1.13), “partial”.
 
 > The associated functor of isomorphism classes of a category cofibered in
 > groupoids inherits Schlessinger's condition (S1).

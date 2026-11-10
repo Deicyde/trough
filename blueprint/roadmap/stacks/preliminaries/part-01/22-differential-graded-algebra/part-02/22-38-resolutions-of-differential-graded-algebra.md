@@ -111,7 +111,7 @@ theorem exists_derivedTensorFunctorCompIso {A B C : DifferentialGradedAlgebra.{u
         derivedTensorFunctor N'')
 ```
 
-**`DifferentialGraded.Bimodule.isIso_derivedTensorBaseChangeComparison_of_dgaResolutionRepresents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionKFlatBase.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionKFlatBase.lean#L135). The attribute's comment: “the second half of the proof: for B K-flat as a complex of R-modules, representability of A ⊗^L_R C by A ⊗_R C makes the map (0BZ4) an isomorphism”.
+**`DifferentialGraded.Bimodule.isIso_derivedTensorBaseChangeComparison_of_dgaResolutionRepresents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionKFlatBase.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionKFlatBase.lean#L135). The attribute's comment: “the second half of the proof: for B K-flat as a complex of R-modules, representability of A ⊗^L\_R C by A ⊗\_R C makes the map (0BZ4) an isomorphism”.
 
 > **The second half of the proof of Stacks Tag 0BZ8.** If the differential graded algebra
 > `(B, d)` is K-flat as a complex of `R`-modules and `A ⊗_R C` represents `A ⊗^𝐋_R C` in `D(R)`,
@@ -135,7 +135,7 @@ theorem isIso_derivedTensorBaseChangeComparison_of_dgaResolutionRepresents
     IsIso (derivedTensorBaseChangeComparison A B C)
 ```
 
-**`DifferentialGraded.Bimodule.dgaResolutionDerivedTensorFunctorCompIsoOfKFlatBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionKFlatBase.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionKFlatBase.lean#L215). The attribute's comment: “for B K-flat as a complex of R-modules, with representability of A ⊗^L_R C by A ⊗_R C as its only other hypothesis”.
+**`DifferentialGraded.Bimodule.dgaResolutionDerivedTensorFunctorCompIsoOfKFlatBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionKFlatBase.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionKFlatBase.lean#L215). The attribute's comment: “for B K-flat as a complex of R-modules, with representability of A ⊗^L\_R C by A ⊗\_R C as its only other hypothesis”.
 
 > **Stacks Tag 0BZ8 for a K-flat middle algebra.** Let `R` be a ring, let `(A, d)`, `(B, d)`
 > and `(C, d)` be differential graded `R`-algebras with `A ⊗_R C` representing `A ⊗^𝐋_R C` in
@@ -163,7 +163,7 @@ def dgaResolutionDerivedTensorFunctorCompIsoOfKFlatBase
       derivedTensorFunctor (compTensorResolution N N')
 ```
 
-**`DifferentialGraded.Bimodule.dgaResolutionDerivedTensorFunctorCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionTensorRepresents.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionTensorRepresents.lean#L113). The attribute's comment: “with the passage from the representability hypothesis to the Stacks 0BZ4 hypothesis of Stacks 0BZ5 as hbridge, which is proved for B K-flat as a complex of R-modules by dgaResolutionRepresentsInvertsBaseChange_of_kFlat and for a general B needs the transport along the Stacks 09S6 equivalence that the source's K-flat replacement of B by Stacks 0BZ7 sets up”.
+**`DifferentialGraded.Bimodule.dgaResolutionDerivedTensorFunctorCompIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionTensorRepresents.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DgaResolutionTensorRepresents.lean#L113). The attribute's comment: “with the passage from the representability hypothesis to the Stacks 0BZ4 hypothesis of Stacks 0BZ5 as hbridge, which is proved for B K-flat as a complex of R-modules by dgaResolutionRepresentsInvertsBaseChange\_of\_kFlat and for a general B needs the transport along the Stacks 09S6 equivalence that the source's K-flat replacement of B by Stacks 0BZ7 sets up”.
 
 > Let `(A, d)`, `(B, d)` and `(C, d)` be differential graded `R`-algebras with `A ⊗_R C`
 > representing `A ⊗^𝐋_R C` in `D(R)` (`hrep`), and assume that representability makes

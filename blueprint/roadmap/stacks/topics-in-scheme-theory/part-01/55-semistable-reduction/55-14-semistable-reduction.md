@@ -164,7 +164,7 @@ public theorem exists_isOpenImmersion_nodalModel_sub_two (hπ : π ≠ 0) (hn : 
         Set.range j.base = Set.range (nodalModelBlowupChart R π n 0).base
 ```
 
-**`Stacks.isRegular_nodalModelBlowup_of_le_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean, line 516](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean#L516). The attribute's comment: “using induction on n: for 2 ≤ n ≤ 3 the sequence of blowing ups in closed points X_{⌊n/2⌋} → … → X₁ → X₀ = X is the single blowup b : X' → X, and X_{⌊n/2⌋} = X' is regular”.
+**`Stacks.isRegular_nodalModelBlowup_of_le_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean, line 516](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelBlowup.lean#L516). The attribute's comment: “using induction on n: for 2 ≤ n ≤ 3 the sequence of blowing ups in closed points X\_\{⌊n/2⌋} → … → X₁ → X₀ = X is the single blowup b : X' → X, and X\_\{⌊n/2⌋} = X' is regular”.
 
 > **For `2 ≤ n ≤ 3` the single blowup already resolves the singularity: `X'` is regular.** The
 > exponent drop `n ↦ n - 2` of the central chart lands on `0` or `1`, where the standard nodal
@@ -178,7 +178,7 @@ public theorem isRegular_nodalModelBlowup_of_le_three {π : R} (hπ : Irreducibl
     (h2 : 2 ≤ n) (h3 : n ≤ 3) : IsRegular (nodalModelBlowup R π n)
 ```
 
-**`Stacks.exists_pointBlowupChainOfLength_nodalModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelResolution.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelResolution.lean#L330). The attribute's comment: “using induction on n we conclude that there is a sequence of blowing ups in closed points X_{⌊n/2⌋} → … → X₁ → X₀ = X such that X_{⌊n/2⌋} → S is at-worst-nodal of relative dimension 1 and X_{⌊n/2⌋} is regular”.
+**`Stacks.exists_pointBlowupChainOfLength_nodalModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelResolution.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/StandardNodalModelResolution.lean#L330). The attribute's comment: “using induction on n we conclude that there is a sequence of blowing ups in closed points X\_\{⌊n/2⌋} → … → X₁ → X₀ = X such that X\_\{⌊n/2⌋} → S is at-worst-nodal of relative dimension 1 and X\_\{⌊n/2⌋} is regular”.
 
 > **Stacks Project, Tag 0CDC.** Using induction on `n` there is a sequence of blowups at closed
 > points

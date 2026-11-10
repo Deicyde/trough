@@ -14,7 +14,7 @@ Section 82.2 of the Stacks Project, [Tag 0EDS](https://stacks.math.columbia.edu/
 
 [Tag 0EDT](https://stacks.math.columbia.edu/tag/0EDT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.IsGood`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/Setup.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/Setup.lean#L59). The attribute's comment: “good_space”.
+**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.IsGood`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/Setup.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/Setup.lean#L59). The attribute's comment: “good\_space”.
 
 > **Stacks 0EDT.** An algebraic space over the fixed base is *good* when its structure
 > morphism is quasi-separated and locally of finite type.
@@ -27,8 +27,8 @@ abbrev BaseSpaceDimensionSituation.IsGood (D : BaseSpaceDimensionSituation.{u})
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.inducedDimensionValue`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionFunctionFiniteType.lean#L71), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/Setup.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/Setup.lean#L68) (StacksFrontier): “induced_delta”.
-- [`AlgebraicGeometry.Space.inducedDimensionValue_eq`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionFunctionFiniteType.lean#L102), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/Setup.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/Setup.lean#L69) (StacksFrontier): “induced_delta”.
+- [`AlgebraicGeometry.Space.inducedDimensionValue`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionFunctionFiniteType.lean#L71), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/Setup.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/Setup.lean#L68) (StacksFrontier): “induced\_delta”.
+- [`AlgebraicGeometry.Space.inducedDimensionValue_eq`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionFunctionFiniteType.lean#L102), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/Setup.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/Setup.lean#L69) (StacksFrontier): “induced\_delta”.
 
 ## Tag 0EDU, a remark
 

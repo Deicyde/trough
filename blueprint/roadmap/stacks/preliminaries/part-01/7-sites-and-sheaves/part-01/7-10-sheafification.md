@@ -179,7 +179,7 @@ theorem isSheaf_plusObj_plusObj : Presheaf.IsSheaf J (J.plusObj (J.plusObj P))
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.GrothendieckTopology.sheafify`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.sheafify#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch07.lean, line 33](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch07.lean#L33) (StacksFrontier): “the sheaf F^# := F^{++}”. References: SGA 3 IV (4.3.14); SGA 3 IV (4.3.15); SGA 3 VIB (8.1); SGA 4 II (3.5), “the sheaf F^# = LLF”.
+- [`CategoryTheory.GrothendieckTopology.sheafify`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.sheafify#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch07.lean, line 33](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch07.lean#L33) (StacksFrontier): “the sheaf F^# := F^\{++}”. References: SGA 3 IV (4.3.14); SGA 3 IV (4.3.15); SGA 3 VIB (8.1); SGA 4 II (3.5), “the sheaf F^# = LLF”.
 - [`CategoryTheory.GrothendieckTopology.toSheafify`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.toSheafify#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch07.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch07.lean#L34) (StacksFrontier): “the canonical map F → F^#”. References: SGA 4 II (3.5), “canonical map F → aF”.
 
 ## Tag 00WH, a proposition

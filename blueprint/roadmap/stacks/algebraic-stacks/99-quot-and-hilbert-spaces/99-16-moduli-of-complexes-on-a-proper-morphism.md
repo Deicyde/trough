@@ -140,7 +140,7 @@ def complexesProjection :
     ComplexesObject D ⥤ SchemesOver D.Y
 ```
 
-**`AlgebraicGeometry.Space.ComplexesSituation.complexesFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 734](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L734). The attribute's comment: “the functor p : Complexes_{X/B} ⥤ (Sch/S)_fppf, (T, g, E) ↦ T”.
+**`AlgebraicGeometry.Space.ComplexesSituation.complexesFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 734](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L734). The attribute's comment: “the functor p : Complexes\_\{X/B} ⥤ (Sch/S)\_fppf, (T, g, E) ↦ T”.
 
 > **The functor `p : Complexes_{X/Y} ⥤ (Sch/S)_fppf` of Stacks 0DLE**, `(T, g, E) ↦ T`: the
 > projection to the test schemes over `Y` followed by forgetting the morphism to `Y`.
@@ -161,7 +161,7 @@ theorem isGroupoid_fiber_complexesFunctor (T : BigFppfOver B S hS) :
     IsGroupoid ((complexesFunctor D).Fiber T)
 ```
 
-**`AlgebraicGeometry.Space.ComplexesSituation.complexesCategory_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 838](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L838). The attribute's comment: “the whole statement: the category Complexes_{X/B} of the triples (T, g, E) and the pairs (h, φ), with the designated identity and composition, the functor p : (T, g, E) ↦ T to (Sch/S)_fppf, and its fibre categories being groupoids”.
+**`AlgebraicGeometry.Space.ComplexesSituation.complexesCategory_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean, line 838](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStack.lean#L838). The attribute's comment: “the whole statement: the category Complexes\_\{X/B} of the triples (T, g, E) and the pairs (h, φ), with the designated identity and composition, the functor p : (T, g, E) ↦ T to (Sch/S)\_fppf, and its fibre categories being groupoids”.
 
 > **Stacks 0DLE in full.**  `Complexes_{X/Y}` is a category whose objects are the triples
 > `(T, g, E)` of `AlgebraicGeometry.Space.ComplexesObject` — a scheme `T` over `S`, a morphism
@@ -194,7 +194,7 @@ theorem complexesCategory_spec :
 
 [Tag 0DLF](https://stacks.math.columbia.edu/tag/0DLF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ComplexesSituation.complexesFunctor_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChange.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChange.lean#L264). The attribute's comment: “the functor p : Complexes_{X/B} ⥤ (Sch/S)_fppf, (T, g, E) ↦ T, is fibred in groupoids”.
+**`AlgebraicGeometry.Space.ComplexesSituation.complexesFunctor_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChange.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChange.lean#L264). The attribute's comment: “the functor p : Complexes\_\{X/B} ⥤ (Sch/S)\_fppf, (T, g, E) ↦ T, is fibred in groupoids”.
 
 > **Stacks 0DLF.**  In Situation 0DLE the functor `p : Complexes_{X/B} ⥤ (Sch/S)_fppf`,
 > `(T, g, E) ↦ T`, is fibred in groupoids: every morphism `h : T ⟶ T'` of schemes over `S` lifts
@@ -249,7 +249,7 @@ theorem complexesFunctor_isStackInGroupoids_proved {S : Scheme.{u}} {hS : B.Cont
 
 [Tag 0DLI](https://stacks.math.columbia.edu/tag/0DLI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ComplexesSituation.complexesToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChangeSquare.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChangeSquare.lean#L176). The attribute's comment: “the 1-morphism Complexes_{X/B} → 𝒮_B, (T, g, E) ↦ (T, g)”.
+**`AlgebraicGeometry.Space.ComplexesSituation.complexesToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChangeSquare.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChangeSquare.lean#L176). The attribute's comment: “the 1-morphism Complexes\_\{X/B} → 𝒮\_B, (T, g, E) ↦ (T, g)”.
 
 > **The projection to the base.**  The rule `(T, g, E) ↦ (T, g)` which forgets the complex is
 > a 1-morphism `Complexes_{X/B} ⟶ 𝒮_B` of categories over the big fppf site of `S`.
@@ -259,7 +259,7 @@ def complexesToBase (D : ComplexesSituation B S hS) :
     complexesBasedCategory D ⥤ᵇ baseBasedCategory D.Y
 ```
 
-**`AlgebraicGeometry.Space.ComplexesSituation.baseChangeSquare_isTwoFibreProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChangeSquare.lean, line 630](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChangeSquare.lean#L630). The attribute's comment: “the square Complexes_{X'/B'} → Complexes_{X/B} over 𝒮_{B'} → 𝒮_B is a 2-fibre product”.
+**`AlgebraicGeometry.Space.ComplexesSituation.baseChangeSquare_isTwoFibreProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChangeSquare.lean, line 630](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ComplexesStackBaseChangeSquare.lean#L630). The attribute's comment: “the square Complexes\_\{X'/B'} → Complexes\_\{X/B} over 𝒮\_\{B'} → 𝒮\_B is a 2-fibre product”.
 
 > **The square
 >

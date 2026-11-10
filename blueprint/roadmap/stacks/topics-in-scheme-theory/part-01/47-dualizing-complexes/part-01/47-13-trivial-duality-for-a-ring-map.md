@@ -49,7 +49,7 @@ theorem derivedHomCompIso (f : A →+* B) (g : B →+* C) :
 
 [Tag 0A71](https://stacks.math.columbia.edu/tag/0A71) in the Stacks Project.
 
-**`Dualizing.restrictDerivedHomIsoDerivedHomAlong`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CoextendRestrictComparison/Constructed.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CoextendRestrictComparison/Constructed.lean#L107). The attribute's comment: “derived Hom after restriction, with both derived functors constructed: RHom(B, -) is AnyModel.derivedHom, the total right derived functor of coextension of scalars, and RHom_A(B, -) is derivedHomAlong, that of Hom_A(B, -). Both rings in one universe, modules in max v u, arbitrary models of the two derived categories”.
+**`Dualizing.restrictDerivedHomIsoDerivedHomAlong`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CoextendRestrictComparison/Constructed.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CoextendRestrictComparison/Constructed.lean#L107). The attribute's comment: “derived Hom after restriction, with both derived functors constructed: RHom(B, -) is AnyModel.derivedHom, the total right derived functor of coextension of scalars, and RHom\_A(B, -) is derivedHomAlong, that of Hom\_A(B, -). Both rings in one universe, modules in max v u, arbitrary models of the two derived categories”.
 
 > **Stacks 0A71**, the displayed formula, with both derived functors constructed:
 > `φ_* RHom(B, K) = RHom_A(B, K)`, where `φ_* : D(B) ⥤ D(A)` is restriction of scalars.
@@ -89,7 +89,7 @@ def derivedHomHomologyLinearEquivExt (f : A →+* B) :
       (AnyModel.derivedHomUnit.{u, v, wA, wB} f)
 ```
 
-**`Dualizing.derivedCoextendScalarsCompDerivedRestrictScalarsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityRing/Basic.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TrivialDualityRing/Basic.lean#L247). The attribute's comment: “derived Hom after restriction, for arbitrary right derived functors RF of coextension of scalars and RH of Hom_A(B, -); the data RF, alpha, RH, beta is discharged by AnyModel.derivedHom with AnyModel.derivedHomUnit and derivedHomAlong with derivedHomAlongUnit, giving the unconditional restrictDerivedHomIsoDerivedHomAlong”.
+**`Dualizing.derivedCoextendScalarsCompDerivedRestrictScalarsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityRing/Basic.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TrivialDualityRing/Basic.lean#L247). The attribute's comment: “derived Hom after restriction, for arbitrary right derived functors RF of coextension of scalars and RH of Hom\_A(B, -); the data RF, alpha, RH, beta is discharged by AnyModel.derivedHom with AnyModel.derivedHomUnit and derivedHomAlong with derivedHomAlongUnit, giving the unconditional restrictDerivedHomIsoDerivedHomAlong”.
 
 > Restricting derived coextension gives `RHom_A(B, -)`, with the comparison uniquely
 > specified by its compatibility with the derived units.
@@ -192,7 +192,7 @@ noncomputable def restrictionTriangle :
       (ModuleCat.restrictScalars.{u} (algebraMap R A)).mapDerivedCategory
 ```
 
-**`Dualizing.DGAResolution.derivedExtension_comp_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean#L269). The attribute's comment: “extension triangle, for an arbitrary left adjoint F of the forgetful functor; its data F, adjF is discharged by derivedExtensionToDGA and derivedExtensionToDGA_adj, giving the unconditional DGAResolution.derivedExtensionToDGA_comp_iso”.
+**`Dualizing.DGAResolution.derivedExtension_comp_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean#L269). The attribute's comment: “extension triangle, for an arbitrary left adjoint F of the forgetful functor; its data F, adjF is discharged by derivedExtensionToDGA and derivedExtensionToDGA\_adj, giving the unconditional DGAResolution.derivedExtensionToDGA\_comp\_iso”.
 
 > **The second diagram of Situation 0BZB commutes.** Derived extension of scalars from `D(R)`
 > to `D(E, d)` followed by the equivalence `- ⊗_E^𝐋 A` is derived extension of scalars

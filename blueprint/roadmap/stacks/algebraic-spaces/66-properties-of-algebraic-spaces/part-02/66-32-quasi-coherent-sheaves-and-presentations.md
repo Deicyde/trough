@@ -50,7 +50,7 @@ def quasicoherentModuleOfSpaceBase (φ : G.objects ⟶ X)
     (hM : M.IsQuasicoherentOnSite) : QuasicoherentModule B S hS G
 ```
 
-**`AlgebraicGeometry.Space.isEquivalence_quasicoherentFromSpaceBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentFromSpaceBaseEquivalence.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentFromSpaceBaseEquivalence.lean#L252). The attribute's comment: “the functor QCoh(𝒪_X) ⥤ QCoh(U, R, s, t, c) is an equivalence of categories, for a target which is an algebraic space: full faithfulness and essential surjectivity at the hypotheses of the source”.
+**`AlgebraicGeometry.Space.isEquivalence_quasicoherentFromSpaceBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentFromSpaceBaseEquivalence.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentFromSpaceBaseEquivalence.lean#L252). The attribute's comment: “the functor QCoh(𝒪\_X) ⥤ QCoh(U, R, s, t, c) is an equivalence of categories, for a target which is an algebraic space: full faithfulness and essential surjectivity at the hypotheses of the source”.
 
 > The functor `ℱ ↦ (φ^*ℱ, α)` from the quasi-coherent `𝒪_X`-modules to the quasi-coherent
 > modules on `(U, R, s, t, c)` is an equivalence of categories, for `φ : U ⟶ X` étale with
@@ -65,7 +65,7 @@ theorem isEquivalence_quasicoherentFromSpaceBase
     (quasicoherentFromSpaceBase B S hS G φ hφ).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Space.equivalenceQuasicoherentFromSpaceBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentFromSpaceBaseEquivalence.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentFromSpaceBaseEquivalence.lean#L269). The attribute's comment: “the equivalence QCoh(𝒪_X) ≌ QCoh(U, R, s, t, c) itself, for a target which is an algebraic space, at the hypotheses of the source”.
+**`AlgebraicGeometry.Space.equivalenceQuasicoherentFromSpaceBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentFromSpaceBaseEquivalence.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentFromSpaceBaseEquivalence.lean#L269). The attribute's comment: “the equivalence QCoh(𝒪\_X) ≌ QCoh(U, R, s, t, c) itself, for a target which is an algebraic space, at the hypotheses of the source”.
 
 > The equivalence `QCoh(𝒪_X) ≌ QCoh(U, R, s, t, c)` whose functor is
 > `AlgebraicGeometry.Space.quasicoherentFromSpaceBase`, under the hypotheses of
@@ -79,7 +79,7 @@ def equivalenceQuasicoherentFromSpaceBase
     QuasicoherentSheaves.{u, u} B S hS X.obj X.property ≌ QuasicoherentModule B S hS G
 ```
 
-**`AlgebraicGeometry.Space.quasicoherentFromSpaceBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentFromSpaceBaseFunctor.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentFromSpaceBaseFunctor.lean#L169). The attribute's comment: “the functor QCoh(𝒪_X) ⥤ QCoh(U, R, s, t, c) of the equivalence, for a target which is an algebraic space; this declaration is the functor itself, that it is an equivalence being proved in QuasicoherentFromSpaceBaseEquivalence.lean”.
+**`AlgebraicGeometry.Space.quasicoherentFromSpaceBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentFromSpaceBaseFunctor.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuasicoherentFromSpaceBaseFunctor.lean#L169). The attribute's comment: “the functor QCoh(𝒪\_X) ⥤ QCoh(U, R, s, t, c) of the equivalence, for a target which is an algebraic space; this declaration is the functor itself, that it is an equivalence being proved in QuasicoherentFromSpaceBaseEquivalence.lean”.
 
 > **The functor `QCoh(𝒪_X) ⥤ QCoh(U, R, s, t, c)` attached to an étale `φ : U ⟶ X` with
 > `t ≫ φ = s ≫ φ`**: it sends a quasi-coherent `𝒪_X`-module `ℱ` to `φ^*ℱ` with its canonical
@@ -94,7 +94,7 @@ def quasicoherentFromSpaceBase :
 
 [Tag 077V](https://stacks.math.columbia.edu/tag/077V) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.quasicoherentSheaves_isGrothendieckAbelian_enoughInjectives_hasLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSeparator.lean, line 1010](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSeparator.lean#L1010). The attribute's comment: “(1) QCoh(𝒪_X) is a Grothendieck abelian category; consequently it has enough injectives and all limits”. References: SGA 4 I (7.13), “special case”; SGA 4 V (0.2.1), “special case”.
+**`AlgebraicGeometry.Space.quasicoherentSheaves_isGrothendieckAbelian_enoughInjectives_hasLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSeparator.lean, line 1010](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSeparator.lean#L1010). The attribute's comment: “(1) QCoh(𝒪\_X) is a Grothendieck abelian category; consequently it has enough injectives and all limits”. References: SGA 4 I (7.13), “special case”; SGA 4 V (0.2.1), “special case”.
 
 > **Stacks 077V, part (1).**  Let `F` be an algebraic space over a scheme `S`.  The category
 > `QCoh(𝒪_F)` of quasi-coherent `𝒪_F`-modules is a Grothendieck abelian category; consequently it
@@ -117,7 +117,7 @@ theorem quasicoherentSheaves_isGrothendieckAbelian_enoughInjectives_hasLimits :
       HasLimitsOfSize.{u, u} (QuasicoherentSheaves.{u, u} B S hS F hF)
 ```
 
-**`AlgebraicGeometry.Space.exists_coherator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSeparator.lean, line 1032](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSeparator.lean#L1032). The attribute's comment: “(2) the inclusion QCoh(𝒪_X) ⥤ Mod(𝒪_X) has a right adjoint Q whose adjunction morphism Q(F) ⟶ F is an isomorphism for every quasi-coherent F”.
+**`AlgebraicGeometry.Space.exists_coherator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSeparator.lean, line 1032](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentSeparator.lean#L1032). The attribute's comment: “(2) the inclusion QCoh(𝒪\_X) ⥤ Mod(𝒪\_X) has a right adjoint Q whose adjunction morphism Q(F) ⟶ F is an isomorphism for every quasi-coherent F”.
 
 > **Stacks 077V, part (2).**  Let `F` be an algebraic space over a scheme `S`.  The inclusion
 > functor `QCoh(𝒪_F) ⥤ Mod(𝒪_F)` has a right adjoint `Q`, the *coherator*, such that for every

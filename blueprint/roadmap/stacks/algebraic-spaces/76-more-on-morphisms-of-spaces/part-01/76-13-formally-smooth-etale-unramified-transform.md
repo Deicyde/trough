@@ -60,7 +60,7 @@ public theorem formallyEtale_iff_formallySmooth_and_formallyUnramified (a : F �
 
 [Tag 049T](https://stacks.math.columbia.edu/tag/049T) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FormallySmooth.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean#L48). The attribute's comment: “formally_smooth_comp”. References: EGA IV (17.1.3), “(ii) smooth”; EGA IV (17.1.5), “sufficiency, smooth”.
+**`AlgebraicGeometry.Space.FormallySmooth.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean#L48). The attribute's comment: “formally\_smooth\_comp”. References: EGA IV (17.1.3), “(ii) smooth”; EGA IV (17.1.5), “sufficiency, smooth”.
 
 > **Stacks 049T, formal smoothness under composition.**
 
@@ -70,7 +70,7 @@ public theorem FormallySmooth.comp (a : F ⟶ G) (b : G ⟶ H)
     FormallySmooth (a ≫ b)
 ```
 
-**`AlgebraicGeometry.Space.formallyEtale_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean#L60). The attribute's comment: “formally_etale_comp”. References: EGA IV (17.1.3), “(ii) étale”; EGA IV (17.1.5), “sufficiency, étale”.
+**`AlgebraicGeometry.Space.formallyEtale_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean#L60). The attribute's comment: “formally\_etale\_comp”. References: EGA IV (17.1.3), “(ii) étale”; EGA IV (17.1.5), “sufficiency, étale”.
 
 > The composite of two formally étale transformations is formally étale.
 
@@ -80,7 +80,7 @@ public theorem formallyEtale_comp {a : F ⟶ G} {b : G ⟶ H}
     FormallyEtale (a ≫ b)
 ```
 
-**`AlgebraicGeometry.Space.formallyUnramified_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean#L74). The attribute's comment: “formally_unramified_comp”. References: EGA IV (17.1.3), “(ii) unramified”; EGA IV (17.1.5), “sufficiency, unramified”.
+**`AlgebraicGeometry.Space.formallyUnramified_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Comp.lean#L74). The attribute's comment: “formally\_unramified\_comp”. References: EGA IV (17.1.3), “(ii) unramified”; EGA IV (17.1.5), “sufficiency, unramified”.
 
 > **Stacks 049T, composition part.** A composite of formally unramified
 > transformations is formally unramified.
@@ -95,7 +95,7 @@ public theorem formallyUnramified_comp (a : F ⟶ G) (b : G ⟶ H)
 
 [Tag 049U](https://stacks.math.columbia.edu/tag/049U) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FormallySmooth.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/BaseChange.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/BaseChange.lean#L227). The attribute's comment: “formally_smooth_base_change”. References: EGA IV (17.1.3), “(iii) smooth”.
+**`AlgebraicGeometry.Space.FormallySmooth.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/BaseChange.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/BaseChange.lean#L227). The attribute's comment: “formally\_smooth\_base\_change”. References: EGA IV (17.1.3), “(iii) smooth”.
 
 > **Stacks 049U, formal smoothness under base change.**
 
@@ -106,7 +106,7 @@ public theorem FormallySmooth.baseChange
     FormallySmooth D.toH
 ```
 
-**`AlgebraicGeometry.Space.formallyEtale_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/BaseChange.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/BaseChange.lean#L240). The attribute's comment: “formally_etale_base_change”. References: EGA IV (17.1.3), “(iii) étale”.
+**`AlgebraicGeometry.Space.formallyEtale_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/BaseChange.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/BaseChange.lean#L240). The attribute's comment: “formally\_etale\_base\_change”. References: EGA IV (17.1.3), “(iii) étale”.
 
 > A base change of a formally étale transformation is formally étale.
 
@@ -117,7 +117,7 @@ public theorem formallyEtale_baseChange
     FormallyEtale D.toH
 ```
 
-**`AlgebraicGeometry.Space.formallyUnramified_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/BaseChange.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/BaseChange.lean#L252). The attribute's comment: “formally_unramified_base_change”. References: EGA IV (17.1.3), “(iii) unramified”.
+**`AlgebraicGeometry.Space.formallyUnramified_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/BaseChange.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/BaseChange.lean#L252). The attribute's comment: “formally\_unramified\_base\_change”. References: EGA IV (17.1.3), “(iii) unramified”.
 
 > The base change of a formally unramified transformation is formally
 > unramified.
@@ -133,7 +133,7 @@ public theorem formallyUnramified_baseChange
 
 [Tag 04AL](https://stacks.math.columbia.edu/tag/04AL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.formallyEtale_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Etale.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Etale.lean#L46). The attribute's comment: “etale_implies_formally_etale”. References: EGA IV (17.1.3), “(i) open immersion”.
+**`AlgebraicGeometry.Space.formallyEtale_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Etale.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Etale.lean#L46). The attribute's comment: “etale\_implies\_formally\_etale”. References: EGA IV (17.1.3), “(i) open immersion”.
 
 > An étale representable transformation on the big fppf site is formally étale.
 
@@ -148,7 +148,7 @@ public theorem formallyEtale_of_etale
     FormallyEtale a
 ```
 
-**`AlgebraicGeometry.Space.formallySmooth_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Etale.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Etale.lean#L121). The attribute's comment: “etale_implies_formally_smooth”. References: EGA IV (17.1.3), “(i) open immersion”.
+**`AlgebraicGeometry.Space.formallySmooth_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Etale.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Etale.lean#L121). The attribute's comment: “etale\_implies\_formally\_smooth”. References: EGA IV (17.1.3), “(i) open immersion”.
 
 > An étale representable transformation on the big fppf site is formally smooth.
 
@@ -207,7 +207,7 @@ public theorem formallySmooth_formallyEtale_formallyUnramified_of_representable
         (BigFppfOver.toScheme B S hS)).presheaf a → FormallyUnramified a)
 ```
 
-**`AlgebraicGeometry.Space.formallyUnramified_of_unramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Unramified.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Unramified.lean#L189). The attribute's comment: “unramified_implies_formally_unramified”.
+**`AlgebraicGeometry.Space.formallyUnramified_of_unramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Unramified.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Unramified.lean#L189). The attribute's comment: “unramified\_implies\_formally\_unramified”.
 
 > **Stacks Project, Tag 04AL.** An unramified representable transformation is
 > formally unramified.
@@ -226,7 +226,7 @@ public theorem formallyUnramified_of_unramified
 
 [Tag 04CY](https://stacks.math.columbia.edu/tag/04CY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.formallyEtale_comp_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Etale.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Etale.lean#L108). The attribute's comment: “compose_formally_etale”.
+**`AlgebraicGeometry.Space.formallyEtale_comp_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Etale.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Etale.lean#L108). The attribute's comment: “compose\_formally\_etale”.
 
 > An étale transformation followed by a formally étale transformation is formally étale.
 
@@ -242,7 +242,7 @@ public theorem formallyEtale_comp_of_etale
     FormallyEtale (a ≫ b)
 ```
 
-**`AlgebraicGeometry.Space.formallySmooth_comp_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Etale.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Etale.lean#L133). The attribute's comment: “compose_formally_smooth”.
+**`AlgebraicGeometry.Space.formallySmooth_comp_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Etale.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Etale.lean#L133). The attribute's comment: “compose\_formally\_smooth”.
 
 > An étale transformation followed by a formally smooth transformation is formally smooth.
 
@@ -258,7 +258,7 @@ public theorem formallySmooth_comp_of_etale
     FormallySmooth (a ≫ b)
 ```
 
-**`AlgebraicGeometry.Space.exists_etale_affine_local_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleLocalLift.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleLocalLift.lean#L210). The attribute's comment: “local_formal_smooth_lift”.
+**`AlgebraicGeometry.Space.exists_etale_affine_local_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleLocalLift.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleLocalLift.lean#L210). The attribute's comment: “local\_formal\_smooth\_lift”.
 
 > **Stacks 04CY, the local form of the descent half.** In a representable, surjective, étale
 > situation `F ⟶ G ⟶ H` over an affine square-zero thickening `i : T ⟶ T'`, a formally smooth
@@ -287,7 +287,7 @@ public theorem exists_etale_affine_local_lift
         f ≫ i = g ≫ j → D.G.map f.op x = D.G.map g.op z
 ```
 
-**`AlgebraicGeometry.Space.formallyUnramified_comp_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Unramified.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Unramified.lean#L219). The attribute's comment: “compose_formally_unramified”.
+**`AlgebraicGeometry.Space.formallyUnramified_comp_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Unramified.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Unramified.lean#L219). The attribute's comment: “compose\_formally\_unramified”.
 
 > A formally unramified transformation remains formally unramified after
 > precomposition with an étale transformation.
@@ -303,7 +303,7 @@ public theorem formallyUnramified_comp_of_etale
     FormallyUnramified (a ≫ b)
 ```
 
-**`AlgebraicGeometry.Space.formallyUnramified_of_comp_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedEtaleDescent.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedEtaleDescent.lean#L181). The attribute's comment: “part (5), corrected form: G separated for the étale topology; false as written, see DoubledSection.Rational.not_forall_descend”.
+**`AlgebraicGeometry.Space.formallyUnramified_of_comp_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedEtaleDescent.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedEtaleDescent.lean#L181). The attribute's comment: “part (5), corrected form: G separated for the étale topology; false as written, see DoubledSection.Rational.not\_forall\_descend”.
 
 > **Stacks 04CY**, the corrected part (5) of the tag. In a
 > representable, surjective, étale situation, a formally unramified composite forces the second
@@ -333,7 +333,7 @@ public theorem formallyUnramified_of_comp_of_isSeparated
     FormallyUnramified s.b
 ```
 
-**`AlgebraicGeometry.Space.formallyUnramified_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedEtaleDescent.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedEtaleDescent.lean#L277). The attribute's comment: “descend_formally_unramified”.
+**`AlgebraicGeometry.Space.formallyUnramified_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedEtaleDescent.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedEtaleDescent.lean#L277). The attribute's comment: “descend\_formally\_unramified”.
 
 > In a representable, surjective, étale situation, a formally unramified composite forces the
 > second transformation to be formally unramified as soon as the intermediate presheaf is a sheaf
@@ -353,7 +353,7 @@ public theorem formallyUnramified_of_comp
     FormallyUnramified s.b
 ```
 
-**`AlgebraicGeometry.Space.formallyEtale_of_comp_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedEtaleDescent.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedEtaleDescent.lean#L303). The attribute's comment: “part (6), corrected form: G a sheaf and H separated for the étale topology; false as written, see DoubledSection.Rational.not_forall_descend”.
+**`AlgebraicGeometry.Space.formallyEtale_of_comp_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedEtaleDescent.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedEtaleDescent.lean#L303). The attribute's comment: “part (6), corrected form: G a sheaf and H separated for the étale topology; false as written, see DoubledSection.Rational.not\_forall\_descend”.
 
 > **Stacks 04CY**, the corrected part (6) of the tag. In
 > a representable, surjective, étale situation, a formally étale composite forces the second
@@ -381,7 +381,7 @@ public theorem formallyEtale_of_comp_of_isSeparated
     FormallyEtale s.b
 ```
 
-**`AlgebraicGeometry.Space.formallyEtale_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedEtaleDescent.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedEtaleDescent.lean#L450). The attribute's comment: “descend_formally_etale”.
+**`AlgebraicGeometry.Space.formallyEtale_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedEtaleDescent.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedEtaleDescent.lean#L450). The attribute's comment: “descend\_formally\_etale”.
 
 > In a representable, surjective, étale situation, a formally étale composite forces the
 > second transformation to be formally étale as soon as the intermediate and target presheaves

@@ -267,7 +267,7 @@ Declarations registered for the tag:
 
 [Tag 01JD](https://stacks.math.columbia.edu/tag/01JD) in the Stacks Project.
 
-**`AlgebraicGeometry.affineSpaceWithDoubledZero`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean#L105). The attribute's comment: “doubled_zero_construction”. References: EGA I (5.5.11), “doubled origin constr.”.
+**`AlgebraicGeometry.affineSpaceWithDoubledZero`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean#L105). The attribute's comment: “doubled\_zero\_construction”. References: EGA I (5.5.11), “doubled origin constr.”.
 
 > Affine `n`-space over `k` with its origin doubled, obtained by gluing two copies along the
 > complements of their origins via the coordinate identification.
@@ -277,7 +277,7 @@ noncomputable abbrev affineSpaceWithDoubledZero (k : Type u) [Field k] (n : ℕ)
     Scheme.{u}
 ```
 
-**`AlgebraicGeometry.coordinateMorphismData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean#L125). The attribute's comment: “coordinate_morphism”. References: EGA I (5.5.11), “morphism to Spec k[t]”; SGA 6 II (2.2.7.2), “more general”.
+**`AlgebraicGeometry.coordinateMorphismData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean#L125). The attribute's comment: “coordinate\_morphism”. References: EGA I (5.5.11), “morphism to Spec k[t]”; SGA 6 II (2.2.7.2), “more general”.
 
 > The coordinate maps on the two charts of affine space with doubled origin glue to a scheme
 > morphism to affine space, restricting to the identity on each chart.
@@ -290,7 +290,7 @@ noncomputable def coordinateMorphismData (k : Type u) [Field k] (n : ℕ) :
         chartInclusion k n i ≫ f = 𝟙 _ }
 ```
 
-**`AlgebraicGeometry.coordinateMorphism_map_origin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean#L161). The attribute's comment: “origins_map_to_origin”. References: EGA I (5.5.11), “two origins over 0”.
+**`AlgebraicGeometry.coordinateMorphism_map_origin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean#L161). The attribute's comment: “origins\_map\_to\_origin”. References: EGA I (5.5.11), “two origins over 0”.
 
 > The coordinate morphism maps the origin of each affine chart to the origin of affine
 > space.
@@ -303,7 +303,7 @@ theorem coordinateMorphism_map_origin (k : Type u) [Field k] (n : ℕ)
           (affineOrigin k n)) = affineOrigin k n
 ```
 
-**`AlgebraicGeometry.intersection_iso_puncturedAffinePlane`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean#L153). The attribute's comment: “non_affine_intersection”.
+**`AlgebraicGeometry.intersection_iso_puncturedAffinePlane`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean#L153). The attribute's comment: “non\_affine\_intersection”.
 
 > In dimension two, the overlap of the two affine charts of the doubled-origin scheme is the
 > punctured affine plane.
@@ -314,7 +314,7 @@ theorem intersection_iso_puncturedAffinePlane (S : PuncturedAffinePlane.{u}) :
       (chartInclusion S.k 2 1).opensRange).toScheme ≅ S.puncturedScheme)
 ```
 
-**`AlgebraicGeometry.not_isAffineOpen_chartIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean#L162). The attribute's comment: “non_affine_intersection”.
+**`AlgebraicGeometry.not_isAffineOpen_chartIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean#L162). The attribute's comment: “non\_affine\_intersection”.
 
 > For dimension greater than one, the two affine charts of affine space with doubled origin have
 > a non-affine intersection.
@@ -326,7 +326,7 @@ theorem not_isAffineOpen_chartIntersection (k : Type u) [Field k] (n : ℕ)
       (chartInclusion k n 1).opensRange)
 ```
 
-**`AlgebraicGeometry.exists_affineOpens_nonaffine_inf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean#L174). The attribute's comment: “non_affine_intersection”.
+**`AlgebraicGeometry.exists_affineOpens_nonaffine_inf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean#L174). The attribute's comment: “non\_affine\_intersection”.
 
 > The intersection of two affine opens in a scheme need not be affine.
 
@@ -336,7 +336,7 @@ theorem exists_affineOpens_nonaffine_inf :
       IsAffineOpen U ∧ IsAffineOpen V ∧ ¬ IsAffineOpen (U ⊓ V)
 ```
 
-**`AlgebraicGeometry.infinite_irreducibleClosed_closures`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginPoints.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginPoints.lean#L132). The attribute's comment: “many_irreducible_closed”.
+**`AlgebraicGeometry.infinite_irreducibleClosed_closures`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginPoints.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginPoints.lean#L132). The attribute's comment: “many\_irreducible\_closed”.
 
 > In dimension greater than one, infinitely many irreducible closed subsets of affine space with
 > doubled origin are closures of nonclosed points in its first affine chart.
@@ -352,7 +352,7 @@ theorem infinite_irreducibleClosed_closures (k : Type u) [Field k] (n : ℕ) (hn
                 Set (affineSpaceWithDoubledZero k n)) }
 ```
 
-**`AlgebraicGeometry.mem_origin_iff_mem_origin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginPoints.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginPoints.lean#L264). The attribute's comment: “origins_in_closed_subset”.
+**`AlgebraicGeometry.mem_origin_iff_mem_origin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginPoints.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginPoints.lean#L264). The attribute's comment: “origins\_in\_closed\_subset”.
 
 > Apart from the two singleton origins, an irreducible closed subset of affine space with
 > the origin doubled contains either both origins or neither.
@@ -367,7 +367,7 @@ theorem mem_origin_iff_mem_origin (k : Type u) [Field k] (n : ℕ)
       chartInclusion k n 1 (affineOrigin k n) ∈ T)
 ```
 
-**`AlgebraicGeometry.isIso_coordinateMorphism_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginSections.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginSections.lean#L146). The attribute's comment: “global_sections”. References: EGA I (5.5.11), “more general”; SGA 6 II (2.2.7.2), “more general”.
+**`AlgebraicGeometry.isIso_coordinateMorphism_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginSections.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginSections.lean#L146). The attribute's comment: “global\_sections”. References: EGA I (5.5.11), “more general”; SGA 6 II (2.2.7.2), “more general”.
 
 > In positive dimension, every global function on affine space with doubled origin is induced
 > uniquely by a polynomial via the coordinate morphism.
@@ -379,7 +379,7 @@ theorem isIso_coordinateMorphism_globalSections (k : Type u) [Field k]
       (coordinateMorphism k n).appTop)
 ```
 
-**`AlgebraicGeometry.not_isAffine_affineSpaceWithDoubledZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginSections.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginSections.lean#L176). The attribute's comment: “not_affine”.
+**`AlgebraicGeometry.not_isAffine_affineSpaceWithDoubledZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginSections.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginSections.lean#L176). The attribute's comment: “not\_affine”.
 
 > Affine space of positive dimension with its origin doubled is not affine.
 
@@ -391,13 +391,13 @@ theorem not_isAffine_affineSpaceWithDoubledZero (k : Type u) [Field k]
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.isAffineOpen_opensRange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isAffineOpen_opensRange#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean#L58) (StacksFrontier): “affine_open_charts”.
+- [`AlgebraicGeometry.isAffineOpen_opensRange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isAffineOpen_opensRange#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean#L58) (StacksFrontier): “affine\_open\_charts”.
 
 ## Tag 01JE, an example
 
 [Tag 01JE](https://stacks.math.columbia.edu/tag/01JE) in the Stacks Project.
 
-**`AlgebraicGeometry.projectiveLineInversionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L83). The attribute's comment: “projective_line_gluing”. References: EGA I (2.3.2), “partial”.
+**`AlgebraicGeometry.projectiveLineInversionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L83). The attribute's comment: “projective\_line\_gluing”. References: EGA I (2.3.2), “partial”.
 
 > The isomorphism `φ₁₂` of the gluing datum: the automorphism of the punctured affine line
 > induced by `T ↦ T⁻¹`, which is the identification `y = 1/x` of the two coordinates on the
@@ -408,7 +408,7 @@ noncomputable def projectiveLineInversionIso :
     Spec (.of (LaurentPolynomial k)) ≅ Spec (.of (LaurentPolynomial k))
 ```
 
-**`AlgebraicGeometry.projectiveLineGluingData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L126). The attribute's comment: “projective_line_gluing”.
+**`AlgebraicGeometry.projectiveLineGluingData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L126). The attribute's comment: “projective\_line\_gluing”.
 
 > The gluing datum for the projective line: two copies of `Spec k[X]`, glued along
 > `D(X) = Spec k[T,T⁻¹]` by inversion.
@@ -417,7 +417,7 @@ noncomputable def projectiveLineInversionIso :
 noncomputable def projectiveLineGluingData : Scheme.GlueData.{u}
 ```
 
-**`AlgebraicGeometry.projectiveLine`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L136). The attribute's comment: “projective_line_gluing”. References: EGA I (2.3.2), “gluing construction”.
+**`AlgebraicGeometry.projectiveLine`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L136). The attribute's comment: “projective\_line\_gluing”. References: EGA I (2.3.2), “gluing construction”.
 
 > The projective line over `k`, constructed by gluing its two standard affine charts.
 
@@ -425,7 +425,7 @@ noncomputable def projectiveLineGluingData : Scheme.GlueData.{u}
 noncomputable abbrev projectiveLine : Scheme.{u}
 ```
 
-**`AlgebraicGeometry.projectiveLineZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L216). The attribute's comment: “projective_line_gluing”.
+**`AlgebraicGeometry.projectiveLineZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L216). The attribute's comment: “projective\_line\_gluing”.
 
 > The point `0` of the projective line, namely the point `(X)` in the `x`-chart.
 
@@ -433,7 +433,7 @@ noncomputable abbrev projectiveLine : Scheme.{u}
 def projectiveLineZero [IsDomain k] : projectiveLine k
 ```
 
-**`AlgebraicGeometry.projectiveLineInfinity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L221). The attribute's comment: “projective_line_gluing”. References: EGA II (7.4.14).
+**`AlgebraicGeometry.projectiveLineInfinity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L221). The attribute's comment: “projective\_line\_gluing”. References: EGA II (7.4.14).
 
 > The point `∞` of the projective line, namely the point `(X)` in the `y`-chart.
 
@@ -441,7 +441,7 @@ def projectiveLineZero [IsDomain k] : projectiveLine k
 def projectiveLineInfinity [IsDomain k] : projectiveLine k
 ```
 
-**`AlgebraicGeometry.affineLineOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L162). The attribute's comment: “projective_line_one”.
+**`AlgebraicGeometry.affineLineOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L162). The attribute's comment: “projective\_line\_one”.
 
 > The point `1` of an affine-line chart, represented by the prime ideal `(X - 1)`.
 
@@ -449,7 +449,7 @@ def projectiveLineInfinity [IsDomain k] : projectiveLine k
 def affineLineOne : Spec (.of (Polynomial k))
 ```
 
-**`AlgebraicGeometry.projectiveLineOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L185). The attribute's comment: “projective_line_one”.
+**`AlgebraicGeometry.projectiveLineOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L185). The attribute's comment: “projective\_line\_one”.
 
 > The point `1` of the projective line, namely the point `(x - 1)` in the `x`-chart.
 
@@ -457,7 +457,7 @@ def affineLineOne : Spec (.of (Polynomial k))
 def projectiveLineOne : projectiveLine k
 ```
 
-**`AlgebraicGeometry.projectiveLineYChart_affineLineOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L190). The attribute's comment: “projective_line_one”.
+**`AlgebraicGeometry.projectiveLineYChart_affineLineOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L190). The attribute's comment: “projective\_line\_one”.
 
 > The point `1` is *also* the point `(y - 1)` of the second chart.
 
@@ -466,7 +466,7 @@ theorem projectiveLineYChart_affineLineOne :
     projectiveLineYChart k (affineLineOne k) = projectiveLineOne k
 ```
 
-**`AlgebraicGeometry.projectiveLineSChart`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1075](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1075). The attribute's comment: “projective_line_affine_open_through_zero_and_infinity”.
+**`AlgebraicGeometry.projectiveLineSChart`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1075](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1075). The attribute's comment: “projective\_line\_affine\_open\_through\_zero\_and\_infinity”.
 
 > The third chart of the projective line: the affine line with coordinate
 > `s = 1/(x-1) = y/(1-y)`, mapping onto the complement of the point `1`.
@@ -475,7 +475,7 @@ theorem projectiveLineYChart_affineLineOne :
 def projectiveLineSChart : Spec (.of (Polynomial k)) ⟶ projectiveLine k
 ```
 
-**`AlgebraicGeometry.projectiveLineSXPiece_comp_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1082](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1082). The attribute's comment: “projective_line_affine_open_coordinate_ring”.
+**`AlgebraicGeometry.projectiveLineSXPiece_comp_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1082](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1082). The attribute's comment: “projective\_line\_affine\_open\_coordinate\_ring”.
 
 > On `D(x-1) ⊂ X₁` the third chart is the inclusion of that open into the first chart;
 > equivalently, `s` restricts to `1/(x-1)` there.
@@ -487,7 +487,7 @@ theorem projectiveLineSXPiece_comp_projectiveLineSChart :
         projectiveLineXChart k
 ```
 
-**`AlgebraicGeometry.projectiveLineSYPiece_comp_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1091](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1091). The attribute's comment: “projective_line_affine_open_coordinate_ring”.
+**`AlgebraicGeometry.projectiveLineSYPiece_comp_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1091](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1091). The attribute's comment: “projective\_line\_affine\_open\_coordinate\_ring”.
 
 > On `D(y-1) ⊂ X₂` the third chart is the inclusion of that open into the second chart;
 > equivalently, `s` restricts to `y/(1-y)` there.
@@ -499,7 +499,7 @@ theorem projectiveLineSYPiece_comp_projectiveLineSChart :
         projectiveLineYChart k
 ```
 
-**`AlgebraicGeometry.range_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1345). The attribute's comment: “projective_line_affine_open_through_zero_and_infinity”.
+**`AlgebraicGeometry.range_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1345). The attribute's comment: “projective\_line\_affine\_open\_through\_zero\_and\_infinity”.
 
 > The image of the third chart is exactly the complement of the point `1`: `U = ℙ¹ \ {1}`.
 
@@ -508,7 +508,7 @@ theorem range_projectiveLineSChart :
     Set.range (projectiveLineSChart k).base = {projectiveLineOne k}ᶜ
 ```
 
-**`AlgebraicGeometry.isAffineOpen_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1376). The attribute's comment: “projective_line_affine_open_through_zero_and_infinity”.
+**`AlgebraicGeometry.isAffineOpen_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1376). The attribute's comment: “projective\_line\_affine\_open\_through\_zero\_and\_infinity”.
 
 > `U = ℙ¹ \ {1}` is an affine open.
 
@@ -517,7 +517,7 @@ theorem isAffineOpen_projectiveLineSChart :
     IsAffineOpen (projectiveLineSChart k).opensRange
 ```
 
-**`AlgebraicGeometry.projectiveLineZero_mem_opensRange_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1382). The attribute's comment: “projective_line_affine_open_through_zero_and_infinity”.
+**`AlgebraicGeometry.projectiveLineZero_mem_opensRange_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1382). The attribute's comment: “projective\_line\_affine\_open\_through\_zero\_and\_infinity”.
 
 > The point `0` lies in `U = ℙ¹ \ {1}`.
 
@@ -526,7 +526,7 @@ theorem projectiveLineZero_mem_opensRange_projectiveLineSChart :
     projectiveLineZero k ∈ (projectiveLineSChart k).opensRange
 ```
 
-**`AlgebraicGeometry.projectiveLineInfinity_mem_opensRange_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1393). The attribute's comment: “projective_line_affine_open_through_zero_and_infinity”.
+**`AlgebraicGeometry.projectiveLineInfinity_mem_opensRange_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1393). The attribute's comment: “projective\_line\_affine\_open\_through\_zero\_and\_infinity”.
 
 > The point `∞` lies in `U = ℙ¹ \ {1}`.
 
@@ -535,7 +535,7 @@ theorem projectiveLineInfinity_mem_opensRange_projectiveLineSChart :
     projectiveLineInfinity k ∈ (projectiveLineSChart k).opensRange
 ```
 
-**`AlgebraicGeometry.projectiveLineSChartIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1408). The attribute's comment: “projective_line_affine_open_coordinate_ring”.
+**`AlgebraicGeometry.projectiveLineSChartIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1408). The attribute's comment: “projective\_line\_affine\_open\_coordinate\_ring”.
 
 > `U = ℙ¹ \ {1}` is isomorphic to `Spec k[s]`, and so `Γ(U, O_U) = k[s]`.
 
@@ -544,7 +544,7 @@ def projectiveLineSChartIso :
     Spec (.of (Polynomial k)) ≅ ((projectiveLineSChart k).opensRange).toScheme
 ```
 
-**`AlgebraicGeometry.projectiveLineSChartSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1422). The attribute's comment: “projective_line_affine_open_coordinate_ring”.
+**`AlgebraicGeometry.projectiveLineSChartSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1422). The attribute's comment: “projective\_line\_affine\_open\_coordinate\_ring”.
 
 > `Γ(U, O_U)` is the polynomial ring `k[s]`, for the coordinate `s = 1/(x-1) = y/(1-y)` of
 > `AlgebraicGeometry.affineLineSOnXChart` and `AlgebraicGeometry.affineLineSOnYChart`.
@@ -554,7 +554,7 @@ def projectiveLineSChartSectionsIso :
     CommRingCat.of (Polynomial k) ≅ Γ(((projectiveLineSChart k).opensRange).toScheme, ⊤)
 ```
 
-**`AlgebraicGeometry.mem_range_projectiveLinePuncturedChart_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L66). The attribute's comment: “projective_line_overlap”.
+**`AlgebraicGeometry.mem_range_projectiveLinePuncturedChart_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L66). The attribute's comment: “projective\_line\_overlap”.
 
 > The overlap `U₁₂` of the two charts of the projective line, seen in the first chart, is
 > `D(x)`, the locus where the coordinate is invertible.
@@ -565,7 +565,7 @@ theorem mem_range_projectiveLinePuncturedChart_iff (y : Spec (.of (Polynomial k)
       (Polynomial.X : Polynomial k) ∉ y.asIdeal
 ```
 
-**`AlgebraicGeometry.mem_range_projectiveLineOverlapYInclusion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L80). The attribute's comment: “projective_line_overlap”.
+**`AlgebraicGeometry.mem_range_projectiveLineOverlapYInclusion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L80). The attribute's comment: “projective\_line\_overlap”.
 
 > The overlap `U₂₁` of the two charts of the projective line, seen in the second chart, is
 > `D(y)`, the locus where the coordinate of that chart is invertible.
@@ -576,7 +576,7 @@ theorem mem_range_projectiveLineOverlapYInclusion_iff (y : Spec (.of (Polynomial
       (Polynomial.X : Polynomial k) ∉ y.asIdeal
 ```
 
-**`AlgebraicGeometry.eq_affineLineOrigin_of_X_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L106). The attribute's comment: “projective_line_overlap”.
+**`AlgebraicGeometry.eq_affineLineOrigin_of_X_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L106). The attribute's comment: “projective\_line\_overlap”.
 
 > The complement of the overlap in a chart is the single point `0` of that chart: the only
 > point of the affine line over a field at which the coordinate vanishes is the origin.
@@ -586,7 +586,7 @@ theorem eq_affineLineOrigin_of_X_mem (y : Spec (.of (Polynomial k)))
     (hy : (Polynomial.X : Polynomial k) ∈ y.asIdeal) : y = affineLineOrigin k
 ```
 
-**`AlgebraicGeometry.projectiveLineZero_ne_projectiveLineInfinity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L213). The attribute's comment: “projective_line_gluing”.
+**`AlgebraicGeometry.projectiveLineZero_ne_projectiveLineInfinity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L213). The attribute's comment: “projective\_line\_gluing”.
 
 > The points `0` and `∞` of the projective line are distinct.
 
@@ -595,7 +595,7 @@ theorem projectiveLineZero_ne_projectiveLineInfinity (k : Type u) [Field k] :
     projectiveLineZero k ≠ projectiveLineInfinity k
 ```
 
-**`AlgebraicGeometry.infinite_projectiveLine`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L262). The attribute's comment: “projective_line_infinite”.
+**`AlgebraicGeometry.infinite_projectiveLine`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L262). The attribute's comment: “projective\_line\_infinite”.
 
 > The projective line over a field is infinite.
 
@@ -603,7 +603,7 @@ theorem projectiveLineZero_ne_projectiveLineInfinity (k : Type u) [Field k] :
 instance infinite_projectiveLine (k : Type u) [Field k] : Infinite (projectiveLine k)
 ```
 
-**`AlgebraicGeometry.isIso_constantsToGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineSections.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineSections.lean#L155). The attribute's comment: “projective_line_global_sections”. References: EGA I (2.3.2), “Γ(X,O_X) ≅ K”.
+**`AlgebraicGeometry.isIso_constantsToGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineSections.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineSections.lean#L155). The attribute's comment: “projective\_line\_global\_sections”. References: EGA I (2.3.2), “Γ(X,O\_X) ≅ K”.
 
 > The canonical map from `k` to the global sections of the structure sheaf
 > on the projective line over `k` is an isomorphism.
@@ -614,7 +614,7 @@ theorem isIso_constantsToGlobalSections (k : Type u) [CommRing k] :
       (projectiveLine k ↘ Spec (.of k)).appTop)
 ```
 
-**`AlgebraicGeometry.not_isAffine_projectiveLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineSections.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineSections.lean#L212). The attribute's comment: “projective_line_not_affine”. References: EGA I (2.3.2), “X not affine”.
+**`AlgebraicGeometry.not_isAffine_projectiveLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineSections.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineSections.lean#L212). The attribute's comment: “projective\_line\_not\_affine”. References: EGA I (2.3.2), “X not affine”.
 
 > The projective line over a field is not affine.
 

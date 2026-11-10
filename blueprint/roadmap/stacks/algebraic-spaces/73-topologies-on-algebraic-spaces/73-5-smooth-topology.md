@@ -88,7 +88,7 @@ theorem isSmoothCovering_comp
       (fun ij : Σ i, J i ↦ g ij.1 ij.2 ≫ f ij.1)
 ```
 
-**`AlgebraicGeometry.Space.isSmoothCovering_fiberProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmoothCoverings.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmoothCoverings.lean#L113). The attribute's comment: “base_change”.
+**`AlgebraicGeometry.Space.isSmoothCovering_fiberProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmoothCoverings.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmoothCoverings.lean#L113). The attribute's comment: “base\_change”.
 
 > **Stacks 041D**, the base-change clause. The first projections of the fibre products of a
 > smooth covering of an algebraic space over `S` with a morphism `g` into its target form a

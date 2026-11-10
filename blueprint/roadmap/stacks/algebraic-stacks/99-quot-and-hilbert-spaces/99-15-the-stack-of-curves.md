@@ -187,7 +187,7 @@ def curvePushoutEquivalenceOfIsPushout {T T' S S' : B.Schemes}
 
 [Tag 0D57](https://stacks.math.columbia.edu/tag/0D57) in the Stacks Project.
 
-**`AlgebraicGeometry.CurveDeformation.finiteDimensional_predeformation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveDeformationsFiniteDimensional.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveDeformationsFiniteDimensional.lean#L68). The attribute's comment: “(1): for a family of curves x over any field k and any Λ with Spec k → Spec Λ, the predeformation category F_{X,k,x} is a deformation category whose tangent space T F and infinitesimal automorphisms Inf(F) are finite dimensional; k need not be of finite type over Z”.
+**`AlgebraicGeometry.CurveDeformation.finiteDimensional_predeformation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveDeformationsFiniteDimensional.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveDeformationsFiniteDimensional.lean#L68). The attribute's comment: “(1): for a family of curves x over any field k and any Λ with Spec k → Spec Λ, the predeformation category F\_\{X,k,x} is a deformation category whose tangent space T F and infinitesimal automorphisms Inf(F) are finite dimensional; k need not be of finite type over Z”.
 
 > **Stacks Project, Tag 0D57, part (1).** Let `k` be a field and let `x = (X → Spec k)` be a
 > family of curves over `Spec k`, lying over `Spec k → Spec Λ → Spec ℤ`. Then the predeformation
@@ -220,7 +220,7 @@ theorem finiteDimensional_predeformation :
             hD.satisfiesRS).functor.obj (FGModuleCat.of k (ULift.{u} k)))
 ```
 
-**`AlgebraicGeometry.finiteDimensional_curves_tangentFunctor_infinitesimalAutomorphismFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveTangentFunctor.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveTangentFunctor.lean#L68). The attribute's comment: “(2): for a family of curves x over a field k, the tangent functor T_x and the functor Inf_x of Stacks 07Y9 exist, and T_x(k) and Inf_x(k) are finite dimensional; both are stated for every k-linear functor carrying the identifications of 07Y9”.
+**`AlgebraicGeometry.finiteDimensional_curves_tangentFunctor_infinitesimalAutomorphismFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveTangentFunctor.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveTangentFunctor.lean#L68). The attribute's comment: “(2): for a family of curves x over a field k, the tangent functor T\_x and the functor Inf\_x of Stacks 07Y9 exist, and T\_x(k) and Inf\_x(k) are finite dimensional; both are stated for every k-linear functor carrying the identifications of 07Y9”.
 
 > Let `k` be a field and let `x = (X → Spec k)` be a family of curves over `Spec k`. Then the
 > tangent functor `T_x` and the functor of infinitesimal automorphisms `Inf_x` of Stacks 07Y9 exist,

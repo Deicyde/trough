@@ -64,7 +64,7 @@ theorem isPullback_stabilizerUnit (G : GroupoidInAlgebraicSpaces C S hS B) :
 
 [Tag 0455](https://stacks.math.columbia.edu/tag/0455) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isSeparated_stabilizer_iff_unit_closedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean#L125). The attribute's comment: “separated_equivalences”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isSeparated_stabilizer_iff_unit_closedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean#L125). The attribute's comment: “separated\_equivalences”.
 
 > **Stacks 0455.** The structure morphism of the stabilizer of a groupoid in algebraic spaces
 > is separated exactly when the unit section of the stabilizer is a closed immersion.
@@ -76,7 +76,7 @@ theorem isSeparated_stabilizer_iff_unit_closedImmersion
       Space.IsClosedImmersion C S hS (η[stabilizer G]).left
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isSeparated_sourceTarget_iff_stabilizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean#L135). The attribute's comment: “separated_equivalences”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isSeparated_sourceTarget_iff_stabilizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean#L135). The attribute's comment: “separated\_equivalences”.
 
 > **Stacks 0455.** The source-target morphism of a groupoid in algebraic spaces is separated
 > exactly when the structure morphism of its stabilizer is separated.
@@ -87,7 +87,7 @@ theorem isSeparated_sourceTarget_iff_stabilizer (G : GroupoidInAlgebraicSpaces C
       Space.IsSeparated C S hS (stabilizer G).hom
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isLocallySeparated_stabilizer_iff_unit_immersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean#L147). The attribute's comment: “locally_separated_equivalences”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isLocallySeparated_stabilizer_iff_unit_immersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean#L147). The attribute's comment: “locally\_separated\_equivalences”.
 
 > **Stacks 0455.** The structure morphism of the stabilizer of a groupoid in algebraic spaces
 > is locally separated exactly when the unit section of the stabilizer is an immersion.
@@ -99,7 +99,7 @@ theorem isLocallySeparated_stabilizer_iff_unit_immersion
       Space.IsImmersion C S hS (η[stabilizer G]).left
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isLocallySeparated_sourceTarget_iff_stabilizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean#L157). The attribute's comment: “locally_separated_equivalences”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isLocallySeparated_sourceTarget_iff_stabilizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean#L157). The attribute's comment: “locally\_separated\_equivalences”.
 
 > **Stacks 0455.** The source-target morphism of a groupoid in algebraic spaces is locally
 > separated exactly when the structure morphism of its stabilizer is locally separated.
@@ -111,7 +111,7 @@ theorem isLocallySeparated_sourceTarget_iff_stabilizer
       Space.IsLocallySeparated C S hS (stabilizer G).hom
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isQuasiSeparated_stabilizer_iff_unit_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean#L171). The attribute's comment: “quasi_separated_equivalences”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isQuasiSeparated_stabilizer_iff_unit_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean#L171). The attribute's comment: “quasi\_separated\_equivalences”.
 
 > **Stacks 0455.** The structure morphism of the stabilizer of a groupoid in algebraic spaces
 > is quasi-separated exactly when the unit section of the stabilizer is quasi-compact.
@@ -123,7 +123,7 @@ theorem isQuasiSeparated_stabilizer_iff_unit_quasiCompact
       Space.IsQuasiCompact C S hS (η[stabilizer G]).left
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isQuasiSeparated_sourceTarget_iff_stabilizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean#L181). The attribute's comment: “quasi_separated_equivalences”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.isQuasiSeparated_sourceTarget_iff_stabilizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Stabilizer/SeparationConditions.lean#L181). The attribute's comment: “quasi\_separated\_equivalences”.
 
 > **Stacks 0455.** The source-target morphism of a groupoid in algebraic spaces is
 > quasi-separated exactly when the structure morphism of its stabilizer is quasi-separated.

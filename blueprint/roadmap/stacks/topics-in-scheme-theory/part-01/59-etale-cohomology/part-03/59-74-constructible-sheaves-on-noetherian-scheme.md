@@ -222,7 +222,7 @@ public theorem isConstructibleSetSheaf_of_epi (B : BigEtaleSite.{u})
     IsConstructibleSetSheaf B X Q
 ```
 
-**`Stacks.EtaleCohomology.FiniteLevelSheaf.isConstructible_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/LevelConstructibility.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/LevelConstructibility.lean#L63). The attribute's comment: “part (3), subsheaf, at the coefficients Z/l^{n+1}Z of a finite level of an l-adic sheaf”.
+**`Stacks.EtaleCohomology.FiniteLevelSheaf.isConstructible_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/LevelConstructibility.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/LevelConstructibility.lean#L63). The attribute's comment: “part (3), subsheaf, at the coefficients Z/l^\{n+1}Z of a finite level of an l-adic sheaf”.
 
 > A subsheaf of a constructible finite-level sheaf is constructible.
 
@@ -233,7 +233,7 @@ public theorem isConstructible_of_mono (n : ℕ)
     IsConstructibleModuleSheaf B X (ZMod (ℓ ^ (n + 1))) G
 ```
 
-**`Stacks.EtaleCohomology.FiniteLevelSheaf.isConstructible_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/LevelConstructibility.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/LevelConstructibility.lean#L74). The attribute's comment: “part (3), quotient sheaf, at the coefficients Z/l^{n+1}Z of a finite level of an l-adic sheaf”.
+**`Stacks.EtaleCohomology.FiniteLevelSheaf.isConstructible_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/LevelConstructibility.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/LevelConstructibility.lean#L74). The attribute's comment: “part (3), quotient sheaf, at the coefficients Z/l^\{n+1}Z of a finite level of an l-adic sheaf”.
 
 > A quotient of a constructible finite-level sheaf is constructible.
 
@@ -396,7 +396,7 @@ public theorem isNoetherianObject_of_isConstructibleModuleSheaf' [IsNoetherian X
     IsNoetherianObject F
 ```
 
-**`Stacks.EtaleCohomology.FiniteLevelSheaf.isNoetherianObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/LevelConstructibility.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/LevelConstructibility.lean#L95). The attribute's comment: “sheaves of modules, at the coefficients Z/l^{n+1}Z of a finite level of an l-adic sheaf”.
+**`Stacks.EtaleCohomology.FiniteLevelSheaf.isNoetherianObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/LevelConstructibility.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/LevelConstructibility.lean#L95). The attribute's comment: “sheaves of modules, at the coefficients Z/l^\{n+1}Z of a finite level of an l-adic sheaf”.
 
 > A constructible finite-level sheaf is a Noetherian object: every ascending chain of subsheaves
 > of it stabilises.

@@ -212,7 +212,7 @@ theorem mapIsomorphismClasses_isLinearMap_artinianDualNumbers
 
 [Tag 06IK](https://stacks.math.columbia.edu/tag/06IK) in the Stacks Project.
 
-**`Deformation.tangentSpaceAtPoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Predeformation.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Predeformation.lean#L118). The attribute's comment: “tangent_space_at_a_point”.
+**`Deformation.tangentSpaceAtPoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Predeformation.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Predeformation.lean#L118). The attribute's comment: “tangent\_space\_at\_a\_point”.
 
 > The tangent space of a category cofibered over `𝒞_Λ` at a point over `k`:
 > the tangent space of its slice predeformation category.
@@ -226,7 +226,7 @@ noncomputable abbrev tangentSpaceAtPoint
     (x : p.Fiber (residueFieldObject.{u, v, w} Λ k)) : Type (max u₁ v₁)
 ```
 
-**`Deformation.sliceBasedFunctorAtPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Predeformation.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Predeformation.lean#L154). The attribute's comment: “differential_at_point”.
+**`Deformation.sliceBasedFunctorAtPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Predeformation.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Predeformation.lean#L154). The attribute's comment: “differential\_at\_point”.
 
 > The morphism of slice predeformation categories induced by a based functor:
 > it sends an arrow `y ⟶ x` to its image arrow `φ(y) ⟶ φ(x)`.
@@ -242,7 +242,7 @@ def sliceBasedFunctorAtPoint
         (objectsOverFunctor q (imagePoint φ x).1))
 ```
 
-**`Deformation.differentialAtPoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Predeformation.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Predeformation.lean#L175). The attribute's comment: “differential_at_point”.
+**`Deformation.differentialAtPoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Predeformation.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Predeformation.lean#L175). The attribute's comment: “differential\_at\_point”.
 
 > The differential of a morphism of cofibered categories at a point over `k`:
 > the differential of its induced morphism between slice predeformation categories.
@@ -257,7 +257,7 @@ noncomputable abbrev differentialAtPoint
       tangentSpaceAtPoint q hq (imagePoint φ x)
 ```
 
-**`Deformation.tangentSpaceAtPointAddCommGroup`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/PredeformationLinear.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/PredeformationLinear.lean#L90). The attribute's comment: “vector_space_structure”.
+**`Deformation.tangentSpaceAtPointAddCommGroup`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/PredeformationLinear.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/PredeformationLinear.lean#L90). The attribute's comment: “vector\_space\_structure”.
 
 > **Stacks Project, Tag 06IK.** The additive group underlying the natural `k`-vector space
 > structure on the tangent space of a category cofibered in groupoids at a point over the
@@ -272,7 +272,7 @@ noncomputable instance tangentSpaceAtPointAddCommGroup
     AddCommGroup (tangentSpaceAtPoint.{u, v, w} p hp x)
 ```
 
-**`Deformation.tangentSpaceAtPointModule`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/PredeformationLinear.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/PredeformationLinear.lean#L105). The attribute's comment: “vector_space_structure”.
+**`Deformation.tangentSpaceAtPointModule`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/PredeformationLinear.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/PredeformationLinear.lean#L105). The attribute's comment: “vector\_space\_structure”.
 
 > **Stacks Project, Tag 06IK.** The natural action of the residue field on the tangent space
 > of a category cofibered in groupoids at a point over the residue field, available when the
@@ -287,7 +287,7 @@ noncomputable instance tangentSpaceAtPointModule
     Module k (tangentSpaceAtPoint.{u, v, w} p hp x)
 ```
 
-**`Deformation.differentialAtPoint_isLinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/PredeformationLinear.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/PredeformationLinear.lean#L231). The attribute's comment: “differential_at_point_linear”.
+**`Deformation.differentialAtPoint_isLinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/PredeformationLinear.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/PredeformationLinear.lean#L231). The attribute's comment: “differential\_at\_point\_linear”.
 
 > **Stacks Project, Tag 06IK.** If both categories cofibered in groupoids satisfy
 > Schlessinger's condition (S2), then the differential of a morphism between them at a point over
@@ -311,7 +311,7 @@ theorem differentialAtPoint_isLinearMap
 
 [Tag 06SU](https://stacks.math.columbia.edu/tag/06SU) in the Stacks Project.
 
-**`Deformation.action_eq_add_gamma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/PredeformationTangent/DerivationActionTranslation.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/PredeformationTangent/DerivationActionTranslation.lean#L78). The attribute's comment: “action_translation”.
+**`Deformation.action_eq_add_gamma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/PredeformationTangent/DerivationActionTranslation.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/PredeformationTangent/DerivationActionTranslation.lean#L78). The attribute's comment: “action\_translation”.
 
 > **Stacks Project, Tag 06SU.** The derivation action on deformations over `k[V]` is
 > translation by the image of the derivation under the canonical derivation map.
@@ -350,7 +350,7 @@ theorem action_eq_add_gamma
     e (a.action D x) = e x + e (a.gamma D)
 ```
 
-**`Deformation.derivationMap_linear`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/PredeformationTangent/DerivationMapLinear.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/PredeformationTangent/DerivationMapLinear.lean#L157). The attribute's comment: “gamma_linear”.
+**`Deformation.derivationMap_linear`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/PredeformationTangent/DerivationMapLinear.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/PredeformationTangent/DerivationMapLinear.lean#L157). The attribute's comment: “gamma\_linear”.
 
 > **Stacks Project, Tag 06SU.** The map `γ_V` defined by pushforward along derivations is
 > linear for the canonical vector-space structure on the associated functor.

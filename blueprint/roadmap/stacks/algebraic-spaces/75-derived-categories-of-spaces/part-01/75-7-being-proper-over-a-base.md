@@ -170,7 +170,7 @@ Declarations registered for the tag:
 
 [Tag 0CZG](https://stacks.math.columbia.edu/tag/0CZG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isClosed_image_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean#L187). The attribute's comment: “image_universally_closed”.
+**`AlgebraicGeometry.Space.isClosed_image_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean#L187). The attribute's comment: “image\_universally\_closed”.
 
 > **Stacks 0CZG, closedness of the image under a universally closed morphism.** A universally
 > closed morphism of algebraic spaces over `S` carries closed subsets of its space of points to
@@ -183,7 +183,7 @@ theorem isClosed_image_of_universallyClosed (_hX : IsAlgebraicSpace B S hS X)
     IsClosed (pointsMap B S hS X f '' T)
 ```
 
-**`AlgebraicGeometry.Space.isProperOver_image_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean#L200). The attribute's comment: “image_universally_closed”.
+**`AlgebraicGeometry.Space.isProperOver_image_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean#L200). The attribute's comment: “image\_universally\_closed”.
 
 > **Stacks 0CZG, properness of the image under a universally closed morphism.** The image of a
 > closed subset proper over the base under a universally closed morphism is proper over the base.
@@ -204,7 +204,7 @@ theorem isProperOver_image_of_universallyClosed (hX : IsAlgebraicSpace B S hS X)
       (isClosed_image_of_universallyClosed B S hS hX hY f hf T hT)
 ```
 
-**`AlgebraicGeometry.Space.isClosed_image_of_isProperOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean#L236). The attribute's comment: “image_separated”.
+**`AlgebraicGeometry.Space.isClosed_image_of_isProperOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean#L236). The attribute's comment: “image\_separated”.
 
 > **Stacks 0CZG, closedness of the image in a separated target.** If the structure morphism of
 > `Y` is separated and the closed subset `T` of the points of `X` is proper over the base, then the
@@ -224,7 +224,7 @@ theorem isClosed_image_of_isProperOver (hX : IsAlgebraicSpace B S hS X)
     IsClosed (pointsMap B S hS X f '' T)
 ```
 
-**`AlgebraicGeometry.Space.isProperOver_image_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean#L256). The attribute's comment: “image_separated”.
+**`AlgebraicGeometry.Space.isProperOver_image_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean#L256). The attribute's comment: “image\_separated”.
 
 > **Stacks 0CZG, properness of the image in a separated target.** The image in `Y` of a closed
 > subset of `X` proper over the base is proper over the base when the structure morphism of `Y` is
@@ -247,7 +247,7 @@ theorem isProperOver_image_of_isSeparated (hX : IsAlgebraicSpace B S hS X)
     IsProperOver B S hS hY hA pY hpY (pointsMap B S hS X f '' T) hImage
 ```
 
-**`AlgebraicGeometry.Space.isProperOver_preimage_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean#L280). The attribute's comment: “inverse_image_proper”.
+**`AlgebraicGeometry.Space.isProperOver_preimage_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperClosedSubsetImage.lean#L280). The attribute's comment: “inverse\_image\_proper”.
 
 > **Stacks 0CZG, properness of the inverse image.** The inverse image of a closed subset
 > proper over the base under a proper morphism is proper over the base.
@@ -477,7 +477,7 @@ theorem hasProperSupport_abelianImage (hX : IsAlgebraicSpace B S hS X)
       (Abelian.image (C := Modules.{u, u} B S hS X hX) u))
 ```
 
-**`AlgebraicGeometry.Space.isSerreClass_isCoherentProperOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperSupportSerre.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperSupportSerre.lean#L259). The attribute's comment: “part (2), the Serre subcategory; the locally Noetherian hypothesis on Y is absent because the abelian structure on Coh(O_X) is Stacks 07UC in the hypothesis-free form `AlgebraicGeometry.Space.coherentModules_abelian_of_closure`”.
+**`AlgebraicGeometry.Space.isSerreClass_isCoherentProperOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperSupportSerre.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Properness/ProperSupportSerre.lean#L259). The attribute's comment: “part (2), the Serre subcategory; the locally Noetherian hypothesis on Y is absent because the abelian structure on Coh(O\_X) is Stacks 07UC in the hypothesis-free form `AlgebraicGeometry.Space.coherentModules_abelian_of_closure`”.
 
 > **Stacks 0CZK, part (2).**  The coherent `𝒪_X`-modules whose support is proper over `Y`
 > form a Serre subcategory of the abelian category `Coh(𝒪_X)` of coherent `𝒪_X`-modules.
@@ -509,7 +509,7 @@ theorem isSerreClass_isCoherentProperOver (hX : IsAlgebraicSpace B S hS X)
 
 [Tag 08GC](https://stacks.math.columbia.edu/tag/08GC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isCoherent_rightDerived_modulePushforward_of_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ProperSupportCoherentPushforward.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ProperSupportCoherentPushforward.lean#L206). The attribute's comment: “granted three named hypotheses, none of them this conclusion. (1) h08AR, Stacks 08AR itself — coherence of the higher direct images of a coherent module along a proper morphism to Y — which has no presence in this library, nor has its scheme-level counterpart Stacks 02O5, the dévissage for coherent modules, Chow's lemma and the vanishing for relatively ample invertible sheaves that would prove it all being absent; it is carried in its own shape, with the module coherent and the conclusion coherent. (2) h0734, the degeneration of the relative Leray spectral sequence of Stacks 0734 that the source's last step is, namely R^p f_*(i_* G) = R^p (f ∘ i)_* G when the higher direct images along i vanish; the formalized Stacks 0734 is stated for ringed topoi with all three universes equal and the small étale ringed topos of an algebraic space is RingedTopos u (u+1) u, so it does not apply, and the vanishing that h0734 asks for is discharged here from Stacks 07UH. (3) h03DW, the étale-affine case of Stacks 03DW, which is the hypothesis of the vanishing half of the formalized Stacks 07UH and is quoted in the form that lemma takes it. Stacks 0CZI, Stacks 07UH, Stacks 081Y, Stacks 04ZK and the coherence step of Stacks 07UG are applied and not assumed, so the source's hypotheses are all consumed: proper support is the input of Stacks 0CZI, and f locally of finite type together with Y locally Noetherian give local Noetherianity of X by Stacks 04ZK, which is what makes the module of Stacks 0CZI coherent”.
+**`AlgebraicGeometry.Space.isCoherent_rightDerived_modulePushforward_of_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ProperSupportCoherentPushforward.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ProperSupportCoherentPushforward.lean#L206). The attribute's comment: “granted three named hypotheses, none of them this conclusion. (1) h08AR, Stacks 08AR itself — coherence of the higher direct images of a coherent module along a proper morphism to Y — which has no presence in this library, nor has its scheme-level counterpart Stacks 02O5, the dévissage for coherent modules, Chow's lemma and the vanishing for relatively ample invertible sheaves that would prove it all being absent; it is carried in its own shape, with the module coherent and the conclusion coherent. (2) h0734, the degeneration of the relative Leray spectral sequence of Stacks 0734 that the source's last step is, namely R^p f\_*(i\_* G) = R^p (f ∘ i)\_* G when the higher direct images along i vanish; the formalized Stacks 0734 is stated for ringed topoi with all three universes equal and the small étale ringed topos of an algebraic space is RingedTopos u (u+1) u, so it does not apply, and the vanishing that h0734 asks for is discharged here from Stacks 07UH. (3) h03DW, the étale-affine case of Stacks 03DW, which is the hypothesis of the vanishing half of the formalized Stacks 07UH and is quoted in the form that lemma takes it. Stacks 0CZI, Stacks 07UH, Stacks 081Y, Stacks 04ZK and the coherence step of Stacks 07UG are applied and not assumed, so the source's hypotheses are all consumed: proper support is the input of Stacks 0CZI, and f locally of finite type together with Y locally Noetherian give local Noetherianity of X by Stacks 04ZK, which is what makes the module of Stacks 0CZI coherent”.
 
 > **Stacks 08GC.**  Let `S` be a scheme, let `f : X ⟶ Y` be a morphism of algebraic spaces
 > over `S` which is locally of finite type with `Y` locally Noetherian, and let `𝓕` be a coherent

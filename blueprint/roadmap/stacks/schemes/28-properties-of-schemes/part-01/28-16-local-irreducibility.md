@@ -114,7 +114,7 @@ public noncomputable abbrev numberOfGeometricBranches
 
 [Tag 0E20](https://stacks.math.columbia.edu/tag/0E20) in the Stacks Project.
 
-**`AlgebraicGeometry.numberOfGeometricBranches_eq_iSup_sum_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/PrincipalOpens/GeometricBranches.lean, line 1042](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/PrincipalOpens/GeometricBranches.lean#L1042). The attribute's comment: “geometric_branches_sum”.
+**`AlgebraicGeometry.numberOfGeometricBranches_eq_iSup_sum_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/PrincipalOpens/GeometricBranches.lean, line 1042](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/PrincipalOpens/GeometricBranches.lean#L1042). The attribute's comment: “geometric\_branches\_sum”.
 
 > The geometric branches at a point are the geometric branches of its reduced irreducible
 > components through that point, counted with multiplicity one per component.
@@ -135,7 +135,7 @@ public theorem numberOfGeometricBranches_eq_iSup_sum_components
             exact h.symm ▸ (show x ∈ (C : Set X) from Z.property.2)⟩ : I.subscheme)
 ```
 
-**`AlgebraicGeometry.numberOfBranches_eq_iSup_sum_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/PrincipalOpens/GeometricBranches.lean, line 1093](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/PrincipalOpens/GeometricBranches.lean#L1093). The attribute's comment: “branches_sum”.
+**`AlgebraicGeometry.numberOfBranches_eq_iSup_sum_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/PrincipalOpens/GeometricBranches.lean, line 1093](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/PrincipalOpens/GeometricBranches.lean#L1093). The attribute's comment: “branches\_sum”.
 
 > The branches at a point are the branches of its reduced irreducible components through that
 > point, counted with multiplicity one per component.

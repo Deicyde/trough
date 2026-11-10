@@ -884,7 +884,7 @@ theorem preservesColimitsOfShape_rightDerived_abelianDirectImage_etale_of_qcqs
 
 [Tag 0GQX](https://stacks.math.columbia.edu/tag/0GQX) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.preservesCoproducts_and_filteredColimits_quasicoherentDirectImages_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageFilteredColimits.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageFilteredColimits.lean#L165). The attribute's comment: “the whole lemma, for f quasi-compact and quasi-separated and the functors f_{QCoh,*} and R^i f_{QCoh,*} (i ≥ 0) of Stacks 077A: each commutes with direct sums (indexed by ι : Type u) and with filtered colimits (indexed by filtered J : Type u)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.preservesCoproducts_and_filteredColimits_quasicoherentDirectImages_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageFilteredColimits.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentDirectImageFilteredColimits.lean#L165). The attribute's comment: “the whole lemma, for f quasi-compact and quasi-separated and the functors f\_\{QCoh,*} and R^i f\_\{QCoh,*} (i ≥ 0) of Stacks 077A: each commutes with direct sums (indexed by ι : Type u) and with filtered colimits (indexed by filtered J : Type u)”.
 
 > **Stacks 0GQX.** Let `f : 𝒳 ⟶ 𝒴` be a quasi-compact and quasi-separated 1-morphism of
 > algebraic stacks. The functor `f_{QCoh,*}` and the functors `Rⁱf_{QCoh,*}` (`i ≥ 0`) of
@@ -916,7 +916,7 @@ theorem preservesCoproducts_and_filteredColimits_quasicoherentDirectImages_of_qc
 
 [Tag 0GQY](https://stacks.math.columbia.edu/tag/0GQY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isZero_quasicoherentHigherDirectImage_and_exact_preservesColimits_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/AffineQuasicoherentDirectImageExact.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/AffineQuasicoherentDirectImageExact.lean#L179). The attribute's comment: “the whole lemma, for an affine 1-morphism f of algebraic stacks and the functors R^i f_{QCoh,*} and f_{QCoh,*} of Stacks 077A: R^i f_{QCoh,*} = 0 for i > 0; f_{QCoh,*} is exact (preserves finite limits and finite colimits); it commutes with direct sums; it commutes with all colimits (indexed in the universe u of the site)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isZero_quasicoherentHigherDirectImage_and_exact_preservesColimits_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/AffineQuasicoherentDirectImageExact.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/AffineQuasicoherentDirectImageExact.lean#L179). The attribute's comment: “the whole lemma, for an affine 1-morphism f of algebraic stacks and the functors R^i f\_\{QCoh,*} and f\_\{QCoh,*} of Stacks 077A: R^i f\_\{QCoh,*} = 0 for i > 0; f\_\{QCoh,*} is exact (preserves finite limits and finite colimits); it commutes with direct sums; it commutes with all colimits (indexed in the universe u of the site)”.
 
 > **Stacks 0GQY.** Let `f : 𝒳 ⟶ 𝒴` be an affine 1-morphism of algebraic stacks. Then
 >
@@ -1014,7 +1014,7 @@ theorem isIso_colimit_post_hom_quasicoherent_of_isFinitePresentation
     IsIso (colimit.post D (coyoneda.obj (Opposite.op G)))
 ```
 
-**`AlgebraicGeometry.Stack.isIso_colimit_post_hom_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean#L452). The attribute's comment: “the displayed colimit equality, for all 𝒪_𝒳-modules”.
+**`AlgebraicGeometry.Stack.isIso_colimit_post_hom_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean#L452). The attribute's comment: “the displayed colimit equality, for all 𝒪\_𝒳-modules”.
 
 > **Stacks 0GQZ, the displayed equality.** Let `𝒳` be a quasi-compact and quasi-separated
 > algebraic stack over a scheme `S` contained in a big fppf site, with the fppf topology of
@@ -1052,7 +1052,7 @@ theorem isIso_colimit_post_hom_of_isQuasiCompactStack
     IsIso (colimit.post D (coyoneda.obj (Opposite.op G)))
 ```
 
-**`AlgebraicGeometry.Stack.isIso_colimit_post_hom_quasicoherent_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean#L482). The attribute's comment: “the 'in particular' clause: filtered colimits in QCoh(𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.isIso_colimit_post_hom_quasicoherent_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean#L482). The attribute's comment: “the 'in particular' clause: filtered colimits in QCoh(𝒪\_𝒳)”.
 
 > **Stacks 0GQZ, the "in particular" clause.** For a quasi-compact and quasi-separated algebraic
 > stack and an `𝒪_𝒳`-module `𝒢` of finite presentation, `Hom_𝒳(𝒢, -)` commutes with filtered
@@ -1084,7 +1084,7 @@ theorem isIso_colimit_post_hom_quasicoherent_of_isQuasiCompactStack
         .fppf)).ι ⋙ coyoneda.obj (Opposite.op G)))
 ```
 
-**`AlgebraicGeometry.Stack.isIso_colimit_post_hom_and_quasicoherent_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean#L519). The attribute's comment: “the whole statement: the displayed colimit equality together with the 'in particular' clause for QCoh(𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.isIso_colimit_post_hom_and_quasicoherent_of_isQuasiCompactStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ColimitsOfHomQuasiCompactStack.lean#L519). The attribute's comment: “the whole statement: the displayed colimit equality together with the 'in particular' clause for QCoh(𝒪\_𝒳)”.
 
 > **Stacks 0GQZ in full.** For a quasi-compact and quasi-separated algebraic stack `𝒳`
 > (Stacks 04YB, Stacks 050D part (8)) and every small filtered index category `K`: for every

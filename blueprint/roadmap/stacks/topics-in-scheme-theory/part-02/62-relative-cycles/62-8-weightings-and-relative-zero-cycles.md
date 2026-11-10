@@ -14,7 +14,7 @@ Section 62.8 of the Stacks Project. 1 tag here is carried by 4 declarations of t
 
 [Tag 0H5P](https://stacks.math.columbia.edu/tag/0H5P) in the Stacks Project.
 
-**`Stacks.Chow.relativeCycleWeight`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Weighting.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Weighting.lean#L59). The attribute's comment: “the construction of w_α preceding the lemma; none of the lemma's three claims”.
+**`Stacks.Chow.relativeCycleWeight`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Weighting.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Weighting.lean#L59). The attribute's comment: “the construction of w\_α preceding the lemma; none of the lemma's three claims”.
 
 > The function `w_α : X → ℤ` attached to a family `α` of `0`-cycles on the fibres of
 > `f : X ⟶ S`: the coefficient of `α` at a point `x`, taken on the scheme-theoretic fibre through

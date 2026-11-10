@@ -33,7 +33,7 @@ public theorem quotient_satisfiesRS
 
 [Tag 06KU](https://stacks.math.columbia.edu/tag/06KU) in the Stacks Project.
 
-**`Deformation.quotient_isDeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/GroupoidQuotient/DeformationCategory.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/GroupoidQuotient/DeformationCategory.lean#L123). The attribute's comment: “quotient_deformation_category”.
+**`Deformation.quotient_isDeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/GroupoidQuotient/DeformationCategory.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/GroupoidQuotient/DeformationCategory.lean#L123). The attribute's comment: “quotient\_deformation\_category”.
 
 > The quotient of a smooth groupoid of deformation functors is a deformation category.
 
@@ -86,7 +86,7 @@ public theorem quotientInfinitesimalBoundary_exact
             (elementsBasedFunctor G.target) M))
 ```
 
-**`Deformation.quotientTangentEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/GroupoidQuotient/TangentSpace.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/GroupoidQuotient/TangentSpace.lean#L144). The attribute's comment: “quotient_tangent_space”.
+**`Deformation.quotientTangentEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/GroupoidQuotient/TangentSpace.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/GroupoidQuotient/TangentSpace.lean#L144). The attribute's comment: “quotient\_tangent\_space”.
 
 > The canonical tangent space of a smooth quotient is the cokernel of
 > the source-minus-target differential.

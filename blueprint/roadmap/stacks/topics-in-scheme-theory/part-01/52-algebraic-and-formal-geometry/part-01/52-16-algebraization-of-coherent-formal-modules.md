@@ -211,7 +211,7 @@ public def idealPowerQuotientIsoPushforwardPullbackOnOpen (n : ℕ)
         ((Scheme.Modules.pullback f).obj ((Scheme.Modules.pullback V.ι).obj M))
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.not_isCompletionOfCoherent_levelCoherentAdicSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableAlgebraizing.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableAlgebraizing.lean#L376). The attribute's comment: “the family (L_n) is not the completion of a coherent O_U-module”.
+**`Stacks.Algebraization.NonAlgebraizableExample.not_isCompletionOfCoherent_levelCoherentAdicSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableAlgebraizing.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableAlgebraizing.lean#L376). The attribute's comment: “the family (L\_n) is not the completion of a coherent O\_U-module”.
 
 > **Stacks Project, Tag 0EHE (the family is not algebraizable).** The object `(𝓛ₙ)` of
 > `Coh(U, I𝒪_U)` is not the completion of any coherent `𝒪_U`-module, for every choice of the
@@ -233,7 +233,7 @@ public theorem not_isCompletionOfCoherent_levelCoherentAdicSystem (a : ℕ → P
     ¬ IsCompletionOfCoherent (idealOnOpen (situation k)) (levelCoherentAdicSystem k a φ)
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.isLocalization_away_levelToChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableChartLocalization.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableChartLocalization.lean#L74). The attribute's comment: “A_r/t^n A_r is the localization of A/t^n A away from the image of r”.
+**`Stacks.Algebraization.NonAlgebraizableExample.isLocalization_away_levelToChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableChartLocalization.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableChartLocalization.lean#L74). The attribute's comment: “A\_r/t^n A\_r is the localization of A/t^n A away from the image of r”.
 
 > **Stacks Project, Tag 0EHE (the chart rings).** The chart ring `A_r/t^nA_r` is the
 > localization of the level ring `A/t^nA` away from the image of `r`, so it is the ring of sections
@@ -245,7 +245,7 @@ public theorem isLocalization_away_levelToChart (r : AmbientRing k) (n : ℕ) :
     IsLocalization.Away (Ideal.Quotient.mk ((idealT k) ^ n) r) (chartRing k r n)
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.map_chartOpenEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableChartSections.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableChartSections.lean#L75). The attribute's comment: “restriction from D(r) to D(q) is A_r/t^n A_r -> A_q/t^n A_q”.
+**`Stacks.Algebraization.NonAlgebraizableExample.map_chartOpenEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableChartSections.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableChartSections.lean#L75). The attribute's comment: “restriction from D(r) to D(q) is A\_r/t^n A\_r -> A\_q/t^n A\_q”.
 
 > **Restriction of chart functions along a divisibility.** On the sections of `𝒪` over the
 > basic opens of `Spec(A/tⁿA)`, restriction from `D(r̄)` to the smaller `D(q̄)` is the map
@@ -258,7 +258,7 @@ public theorem map_chartOpenEquiv (r q : AmbientRing k) (hdvd : r ∣ q) (n : �
       chartOpenEquiv k q n (chartRestrict k r q hdvd n v)
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.levelChartRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableChartSections.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableChartSections.lean#L110). The attribute's comment: “A_r/t^n A_r is the ring of sections of O on the chart D(r)”.
+**`Stacks.Algebraization.NonAlgebraizableExample.levelChartRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableChartSections.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableChartSections.lean#L110). The attribute's comment: “A\_r/t^n A\_r is the ring of sections of O on the chart D(r)”.
 
 > **Stacks Project, Tag 0EHE (a chart ring is the ring of sections on the chart).** The chart
 > ring `A_r/tⁿA_r` is the ring of sections of `𝒪` on the chart `D(r̄)` of the punctured spectrum of
@@ -270,7 +270,7 @@ public def levelChartRingEquiv (r : AmbientRing k) (n : ℕ)
     chartRing k r n ≃+* Γ((levelOpen k n).toScheme, levelChart k r n)
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.map_levelChartRingEquiv_overlap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableChartSections.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableChartSections.lean#L131). The attribute's comment: “restriction from a chart to the overlap is A_r/t^n A_r -> A_xy/t^n A_xy”.
+**`Stacks.Algebraization.NonAlgebraizableExample.map_levelChartRingEquiv_overlap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableChartSections.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableChartSections.lean#L131). The attribute's comment: “restriction from a chart to the overlap is A\_r/t^n A\_r -> A\_xy/t^n A\_xy”.
 
 > **Stacks Project, Tag 0EHE (restriction from a chart to the overlap).** Restriction of
 > sections of `𝒪` from a chart of the punctured spectrum of `A/tⁿA` to the overlap of the two
@@ -330,7 +330,7 @@ public theorem compl_zeroLocus_map_idealXYT (n : ℕ) :
         (PrimeSpectrum.basicOpen (Ideal.Quotient.mk ((idealT k) ^ n) (yVar k))).carrier
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.isUnit_transitionElement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableExample.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableExample.lean#L273). The attribute's comment: “the transition element is a unit of A_xy/t^n A_xy”.
+**`Stacks.Algebraization.NonAlgebraizableExample.isUnit_transitionElement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableExample.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableExample.lean#L273). The attribute's comment: “the transition element is a unit of A\_xy/t^n A\_xy”.
 
 > **Stacks Project, Tag 0EHE (invertibility of the transition element).** The transition
 > element is a unit of `A_{xy}/t^nA_{xy}`: it is `1` plus a nilpotent element, every term beyond
@@ -352,7 +352,7 @@ public theorem chartReduction_transitionElement (a : ℕ → PlaneRing k) (φ : 
       transitionElement k a φ n
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.exists_ne_zero_compatible_mem_gluedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableExample.lean, line 556](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableExample.lean#L556). The attribute's comment: “for a_m = 0 the functions x and x + t/y glue to a nonzero compatible system”.
+**`Stacks.Algebraization.NonAlgebraizableExample.exists_ne_zero_compatible_mem_gluedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableExample.lean, line 556](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableExample.lean#L556). The attribute's comment: “for a\_m = 0 the functions x and x + t/y glue to a nonzero compatible system”.
 
 > **Stacks Project, Tag 0EHE (nonzero limit of global sections for `a_m = 0`).** When the
 > higher coefficients `a_m` vanish, the function `x` on `D(x)` and the function `x + t/y` on
@@ -396,7 +396,7 @@ public theorem hasSeparatedExponents_of_eq_two_pow_or_sq {φ : ℕ → ℕ}
     HasSeparatedExponents φ
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.sectionsLimit_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableExample.lean, line 1295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableExample.lean#L1295). The attribute's comment: “lim H^0(U, L_n) = 0 for a_m = 1 and φ(m) = 2^m or m^2”.
+**`Stacks.Algebraization.NonAlgebraizableExample.sectionsLimit_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableExample.lean, line 1295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableExample.lean#L1295). The attribute's comment: “lim H^0(U, L\_n) = 0 for a\_m = 1 and φ(m) = 2^m or m^2”.
 
 > **Stacks Project, Tag 0EHE (vanishing limit of global sections).** When every higher
 > coefficient `a_m` is `1` and the exponents are `φ(m) = 2^m` or `φ(m) = m²`, the limit
@@ -409,7 +409,7 @@ public theorem sectionsLimit_eq_bot (a : ℕ → PlaneRing k) (φ : ℕ → ℕ)
     sectionsLimit k a φ = ⊥
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.hasNonAlgebraizableInvertibleObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableInvertibleObject.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableInvertibleObject.lean#L181). The attribute's comment: “Coh(U, I O_U) contains an invertible object which is not the completion of a coherent O_U-module”.
+**`Stacks.Algebraization.NonAlgebraizableExample.hasNonAlgebraizableInvertibleObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableInvertibleObject.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableInvertibleObject.lean#L181). The attribute's comment: “Coh(U, I O\_U) contains an invertible object which is not the completion of a coherent O\_U-module”.
 
 > **Stacks Project, Tag 0EHE.** The category `Coh(U, I𝒪_U)` of the situation
 > `A = k[x,y][[t]]`, `I = (t)`, `𝔞 = (x,y,t)` contains an invertible object which is not the
@@ -426,7 +426,7 @@ public theorem sectionsLimit_eq_bot (a : ℕ → PlaneRing k) (φ : ℕ → ℕ)
 public theorem hasNonAlgebraizableInvertibleObject : HasNonAlgebraizableInvertibleObject k
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.chartOpenEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean#L94). The attribute's comment: “A_r/t^n A_r is the ring of sections of O on D(r) in Spec(A/t^n A)”.
+**`Stacks.Algebraization.NonAlgebraizableExample.chartOpenEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean#L94). The attribute's comment: “A\_r/t^n A\_r is the ring of sections of O on D(r) in Spec(A/t^n A)”.
 
 > The chart ring `A_r/tⁿA_r` is the ring of sections of `𝒪` on the basic open `D(r̄)` of
 > `Spec(A/tⁿA)`, as `A/tⁿA`-algebras.
@@ -449,7 +449,7 @@ public theorem coe_levelOpen (n : ℕ) :
           Set (levelRing k n)))ᶜ
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.levelModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean#L173). The attribute's comment: “the module L_n, glued from A_x/t^n A_x and A_y/t^n A_y along u”.
+**`Stacks.Algebraization.NonAlgebraizableExample.levelModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean#L173). The attribute's comment: “the module L\_n, glued from A\_x/t^n A\_x and A\_y/t^n A\_y along u”.
 
 > The module `L_n`: the sheaf of modules on the punctured spectrum of `A/tⁿA` glued from the two
 > charts `D(x̄)` and `D(ȳ)` along the transition element
@@ -460,7 +460,7 @@ public def levelModule (a : ℕ → PlaneRing k) (φ : ℕ → ℕ) (n : ℕ) :
     (levelOpen k n).toScheme.Modules
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.isInvertibleModule_levelModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean#L181). The attribute's comment: “L_n is an invertible module on the punctured spectrum of A/t^n A”.
+**`Stacks.Algebraization.NonAlgebraizableExample.isInvertibleModule_levelModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean#L181). The attribute's comment: “L\_n is an invertible module on the punctured spectrum of A/t^n A”.
 
 > The module `L_n` is an invertible module on the punctured spectrum of `A/tⁿA`.
 
@@ -469,7 +469,7 @@ public theorem isInvertibleModule_levelModule (a : ℕ → PlaneRing k) (φ : �
     Stacks.Ample.IsInvertibleModule (levelOpen k n).toScheme (levelModule k a φ n)
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.ker_chartReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean#L187). The attribute's comment: “ker(A_r/t^(n+1) A_r -> A_r/t^n A_r) = t^n A_r/t^(n+1) A_r”.
+**`Stacks.Algebraization.NonAlgebraizableExample.ker_chartReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean#L187). The attribute's comment: “ker(A\_r/t^(n+1) A\_r -> A\_r/t^n A\_r) = t^n A\_r/t^(n+1) A\_r”.
 
 > The kernel of the reduction `A_r/t^{n+1}A_r → A_r/tⁿA_r` is `tⁿ·A_r/t^{n+1}A_r`.
 
@@ -490,7 +490,7 @@ public theorem preimage_U_levelToAmbient (n : ℕ) :
     levelToAmbient k n ⁻¹ᵁ (situation k).U = levelOpen k n
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.levelModuleOnOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean#L247). The attribute's comment: “L_n pushed forward to U along Spec(A/t^n A) ∩ U → U”.
+**`Stacks.Algebraization.NonAlgebraizableExample.levelModuleOnOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelChart.lean#L247). The attribute's comment: “L\_n pushed forward to U along Spec(A/t^n A) ∩ U → U”.
 
 > The module `L_n` as a module on the punctured spectrum `U` of `A`: its direct image along the
 > structure map `levelStructureMap`.
@@ -500,7 +500,7 @@ public def levelModuleOnOpen (a : ℕ → PlaneRing k) (φ : ℕ → ℕ) (n : �
     (situation k).U.toScheme.Modules
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.surjective_app_levelTransition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean#L121). The attribute's comment: “L_(n+1) -> L_n is surjective on sections over an affine open of a chart”.
+**`Stacks.Algebraization.NonAlgebraizableExample.surjective_app_levelTransition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean#L121). The attribute's comment: “L\_(n+1) -> L\_n is surjective on sections over an affine open of a chart”.
 
 > The transition map `𝓛ₙ₊₁ ⟶ (𝓛ₙ)` is surjective on the sections over every affine open
 > contained in one of the two charts.
@@ -514,7 +514,7 @@ public theorem surjective_app_levelTransition (a : ℕ → PlaneRing k) (φ : �
     Function.Surjective ((levelTransition k a φ n).val.app (op V))
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.epi_levelTransition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean#L146). The attribute's comment: “the transition map L_(n+1) -> L_n is an epimorphism”.
+**`Stacks.Algebraization.NonAlgebraizableExample.epi_levelTransition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean#L146). The attribute's comment: “the transition map L\_(n+1) -> L\_n is an epimorphism”.
 
 > The transition map `𝓛ₙ₊₁ ⟶ (𝓛ₙ)` of the system is an epimorphism of modules on the
 > punctured spectrum of `A/t^{n+1}A`.
@@ -534,7 +534,7 @@ public theorem levelOpenMap_comp_levelStructureMap (n : ℕ) :
     levelOpenMap k n ≫ levelStructureMap k (n + 1) = levelStructureMap k n
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.levelTransitionOnOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean#L195). The attribute's comment: “the transition map L_(n+1) -> L_n of the system, as modules on U”.
+**`Stacks.Algebraization.NonAlgebraizableExample.levelTransitionOnOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean#L195). The attribute's comment: “the transition map L\_(n+1) -> L\_n of the system, as modules on U”.
 
 > The transition map `𝓛ₙ₊₁ ⟶ 𝓛ₙ` of the system as a morphism of modules on the punctured
 > spectrum `U` of `A`: the direct image along the structure map of level `n + 1` of
@@ -577,7 +577,7 @@ public theorem epi_levelTransitionOnOpen (a : ℕ → PlaneRing k) (φ : ℕ →
     Epi (levelTransitionOnOpen k a φ n)
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.levelSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean#L370). The attribute's comment: “the system (L_n) as a diagram over the opposite of the naturals”.
+**`Stacks.Algebraization.NonAlgebraizableExample.levelSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean#L370). The attribute's comment: “the system (L\_n) as a diagram over the opposite of the naturals”.
 
 > The family `(𝓛ₙ)` as an inverse system of modules on the punctured spectrum `U` of `A`,
 > assembled from the transition maps
@@ -590,7 +590,7 @@ public def levelSystem (a : ℕ → PlaneRing k) (φ : ℕ → ℕ) :
     ℕᵒᵖ ⥤ (situation k).U.toScheme.Modules
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.epi_levelSystem_map_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean#L387). The attribute's comment: “the maps of the system (L_n) from level n+1 to level n are epimorphisms”.
+**`Stacks.Algebraization.NonAlgebraizableExample.epi_levelSystem_map_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelEpi.lean#L387). The attribute's comment: “the maps of the system (L\_n) from level n+1 to level n are epimorphisms”.
 
 > The maps of the system from its `(n + 1)`-st term to its `n`-th one are epimorphisms.
 
@@ -622,7 +622,7 @@ public theorem appLE_levelStructureMap_chartOpenEquiv (q : AmbientRing k) (m : �
         (chartOpenEquiv k q m (levelToChart k q m (levelElt k z m)))
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.app_levelOpenMap_appLE_ι_chartOpenEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean#L308). The attribute's comment: “on an open over D(r) the closed immersion induces A_r/t^(m+1) -> A_r/t^m”.
+**`Stacks.Algebraization.NonAlgebraizableExample.app_levelOpenMap_appLE_ι_chartOpenEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean#L308). The attribute's comment: “on an open over D(r) the closed immersion induces A\_r/t^(m+1) -> A\_r/t^m”.
 
 > **The closed immersion of punctured spectra on a chart's sections.** Over an open `P` of the
 > punctured spectrum of `A/t^{m+1}A` whose image is the basic open `D(r̄)`, the closed immersion of
@@ -645,7 +645,7 @@ public theorem app_levelOpenMap_appLE_ι_chartOpenEquiv (q : AmbientRing k) (m :
         (chartOpenEquiv k q m (chartReduction k q m v))
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.exists_smul_of_app_levelTransitionOnOpen_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean#L378). The attribute's comment: “a section of L_(m+1) killed by the transition map is t^m times a section”.
+**`Stacks.Algebraization.NonAlgebraizableExample.exists_smul_of_app_levelTransitionOnOpen_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean#L378). The attribute's comment: “a section of L\_(m+1) killed by the transition map is t^m times a section”.
 
 > **The hard half of the kernel computation.** A section of `𝓛ₘ₊₁`
 > over an open `V` of `U` whose preimage is a chart `D(r̄)` of the punctured spectrum of
@@ -674,7 +674,7 @@ public theorem exists_smul_of_app_levelTransitionOnOpen_eq_zero (a : ℕ → Pla
         ((Scheme.ΓSpecIso (CommRingCat.of (AmbientRing k))).inv.hom (tVar k)) ^ m • y
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.ker_app_levelTransitionOnOpen_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean, line 488](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean#L488). The attribute's comment: “over a basic open inside a chart ker(L_(m+1) -> L_m) = I(V)^m L_(m+1)(V)”.
+**`Stacks.Algebraization.NonAlgebraizableExample.ker_app_levelTransitionOnOpen_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean, line 488](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean#L488). The attribute's comment: “over a basic open inside a chart ker(L\_(m+1) -> L\_m) = I(V)^m L\_(m+1)(V)”.
 
 > **The kernel over a basic open inside a chart.** Over an affine
 > open `V` of `U` whose preimage upstairs is a chart of the punctured spectrum of `A/t^{m+1}A`, the
@@ -735,7 +735,7 @@ public theorem ker_app_levelSystem_map_succ (a : ℕ → PlaneRing k) (φ : ℕ 
             (V : (situation k).U.toScheme.Opens)))
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.isCoherentAdicSystem_levelSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean, line 567](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean#L567). The attribute's comment: “the system (L_n) is a coherent I O_U-adic system”.
+**`Stacks.Algebraization.NonAlgebraizableExample.isCoherentAdicSystem_levelSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean, line 567](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean#L567). The attribute's comment: “the system (L\_n) is a coherent I O\_U-adic system”.
 
 > **The system lies in `Coh(U, I𝒪_U)`.** The family `(𝓛ₙ)`, as a diagram over `ℕᵒᵖ` of modules
 > on the punctured spectrum `U` of `A`, is a coherent `I𝒪_U`-adic system: its terms are coherent and
@@ -747,7 +747,7 @@ public theorem isCoherentAdicSystem_levelSystem (a : ℕ → PlaneRing k) (φ : 
     Stacks.Coherent.IsCoherentAdicSystem (idealOnOpen (situation k)) (levelSystem k a φ)
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.levelCoherentAdicSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean, line 578](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean#L578). The attribute's comment: “the family (L_n) as an object of Coh(U, I O_U)”.
+**`Stacks.Algebraization.NonAlgebraizableExample.levelCoherentAdicSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean, line 578](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean#L578). The attribute's comment: “the family (L\_n) as an object of Coh(U, I O\_U)”.
 
 > **The object of `Coh(U, I𝒪_U)`.** The family `(𝓛ₙ)` as an object
 > of the category `Coh(U, I𝒪_U)` of coherent `I𝒪_U`-adic systems on the punctured spectrum `U` of
@@ -758,7 +758,7 @@ public def levelCoherentAdicSystem (a : ℕ → PlaneRing k) (φ : ℕ → ℕ) 
     Stacks.Coherent.CoherentAdicSystems (idealOnOpen (situation k))
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.isInvertibleAdic_levelCoherentAdicSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean, line 591](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean#L591). The attribute's comment: “the object (L_n) of Coh(U, I O_U) is invertible”.
+**`Stacks.Algebraization.NonAlgebraizableExample.isInvertibleAdic_levelCoherentAdicSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean, line 591](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelKernel.lean#L591). The attribute's comment: “the object (L\_n) of Coh(U, I O\_U) is invertible”.
 
 > **The object is invertible.** The object `(𝓛ₙ)` of
 > `Coh(U, I𝒪_U)` is invertible: its `n`-th term is the direct image of an invertible module on the
@@ -775,7 +775,7 @@ public theorem isInvertibleAdic_levelCoherentAdicSystem (a : ℕ → PlaneRing k
       (levelCoherentAdicSystem k a φ)
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.exists_isUnit_mem_gluedSections_of_iso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelNontrivial.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelNontrivial.lean#L89). The attribute's comment: “a trivialization of L_n is a matched pair of invertible chart functions”.
+**`Stacks.Algebraization.NonAlgebraizableExample.exists_isUnit_mem_gluedSections_of_iso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelNontrivial.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelNontrivial.lean#L89). The attribute's comment: “a trivialization of L\_n is a matched pair of invertible chart functions”.
 
 > **Stacks Project, Tag 0EHE (a trivialization of `𝓛ₙ` is a pair of invertible chart
 > functions).** If the glued module `𝓛ₙ` is isomorphic to the structure sheaf of the punctured
@@ -789,7 +789,7 @@ public theorem exists_isUnit_mem_gluedSections_of_iso_unit (a : ℕ → PlaneRin
       s ∈ gluedSections k n (transitionElement k a φ n) ∧ IsUnit s.1 ∧ IsUnit s.2
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.not_isTrivial_levelModule_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelNontrivial.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelNontrivial.lean#L139). The attribute's comment: “L_2 is not isomorphic to the structure sheaf”.
+**`Stacks.Algebraization.NonAlgebraizableExample.not_isTrivial_levelModule_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelNontrivial.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelNontrivial.lean#L139). The attribute's comment: “L\_2 is not isomorphic to the structure sheaf”.
 
 > **Stacks Project, Tag 0EHE (`𝓛₂ ≇ 𝒪`).** The glued module at order two is not trivial, for
 > every choice of the coefficients `aₘ` and the exponents `φ(m)`: a trivialization would match a
@@ -802,7 +802,7 @@ public theorem not_isTrivial_levelModule_two (a : ℕ → PlaneRing k) (φ : ℕ
     ¬ Nonempty (levelModule k a φ 2 ≅ Stacks.Ample.unitModule (levelOpen k 2).toScheme)
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.not_nonempty_pullback_iso_levelModule_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelNontrivial.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelNontrivial.lean#L151). The attribute's comment: “no invertible module on an open of Spec(A) pulls back to L_2”.
+**`Stacks.Algebraization.NonAlgebraizableExample.not_nonempty_pullback_iso_levelModule_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelNontrivial.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelNontrivial.lean#L151). The attribute's comment: “no invertible module on an open of Spec(A) pulls back to L\_2”.
 
 > **Stacks Project, Tag 0EHE (no line bundle on an open of `Spec(A)` pulls back to `𝓛₂`).**
 > Let `V` be an open subscheme of `Spec(A)`, `A = k[x,y][[t]]`, let `L` be an invertible
@@ -818,7 +818,7 @@ public theorem not_nonempty_pullback_iso_levelModule_two (a : ℕ → PlaneRing 
     ¬ Nonempty ((Scheme.Modules.pullback f).obj L ≅ levelModule k a φ 2)
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.not_nonempty_pullback_levelStructureMap_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelNontrivial.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelNontrivial.lean#L167). The attribute's comment: “no invertible module on U restricts to L_2”.
+**`Stacks.Algebraization.NonAlgebraizableExample.not_nonempty_pullback_levelStructureMap_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelNontrivial.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelNontrivial.lean#L167). The attribute's comment: “no invertible module on U restricts to L\_2”.
 
 > **Stacks Project, Tag 0EHE (the class of `𝓛₂` is not in the image of `Pic(U)`).** The
 > specialization of `not_nonempty_pullback_iso_levelModule_two` to the structure map of the
@@ -844,7 +844,7 @@ public theorem ker_levelToAmbient (n : ℕ) :
         (CommRingCat.Hom.hom (Scheme.ΓSpecIso (CommRingCat.of (AmbientRing k))).inv)) ^ n
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.idealOnOpen_pow_eq_comap_ker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSubscheme.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSubscheme.lean#L79). The attribute's comment: “(I O_U)^n is the restriction to U of the ideal sheaf of Spec(A/t^n A)”.
+**`Stacks.Algebraization.NonAlgebraizableExample.idealOnOpen_pow_eq_comap_ker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSubscheme.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSubscheme.lean#L79). The attribute's comment: “(I O\_U)^n is the restriction to U of the ideal sheaf of Spec(A/t^n A)”.
 
 > The `n`-th power of the ideal sheaf `I𝒪_U` on the punctured spectrum of `A` is the
 > restriction to `U` of the ideal sheaf cutting out `Spec(A/tⁿA)` in `Spec(A)`.
@@ -854,7 +854,7 @@ public theorem idealOnOpen_pow_eq_comap_ker (n : ℕ) :
     idealOnOpen (situation k) ^ n = (levelToAmbient k n).ker.comap (situation k).U.ι
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.exists_subschemeIso_levelOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSubscheme.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSubscheme.lean#L90). The attribute's comment: “V((I O_U)^n) is the punctured spectrum of A/t^n A”.
+**`Stacks.Algebraization.NonAlgebraizableExample.exists_subschemeIso_levelOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSubscheme.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSubscheme.lean#L90). The attribute's comment: “V((I O\_U)^n) is the punctured spectrum of A/t^n A”.
 
 > The closed subscheme of the punctured spectrum `U` of `A` cut out by the `n`-th power of
 > `I𝒪_U` is the punctured spectrum of `A/tⁿA`, compatibly with the two morphisms to `U`: the closed
@@ -867,7 +867,7 @@ public theorem exists_subschemeIso_levelOpen (n : ℕ) :
       e.hom ≫ levelStructureMap k n = (idealOnOpen (situation k) ^ n).subschemeι
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.ker_levelStructureMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean#L135). The attribute's comment: “the kernel ideal sheaf of Spec(A/t^n A) ∩ U → U is (I O_U)^n”.
+**`Stacks.Algebraization.NonAlgebraizableExample.ker_levelStructureMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean#L135). The attribute's comment: “the kernel ideal sheaf of Spec(A/t^n A) ∩ U → U is (I O\_U)^n”.
 
 > **Stacks Project, Tag 0EHE (the level scheme over `U` is cut out by `(I𝒪_U)ⁿ`).** The kernel
 > ideal sheaf of the structure map `Spec(A/tⁿA) ∩ U ⟶ U` is the `n`-th power of `I𝒪_U`.
@@ -881,7 +881,7 @@ public theorem ker_levelStructureMap (m : ℕ) :
     (levelStructureMap k m).ker = idealOnOpen (situation k) ^ m
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.isCoherent_levelModuleOnOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean#L148). The attribute's comment: “L_n, pushed forward to U, is a coherent module”.
+**`Stacks.Algebraization.NonAlgebraizableExample.isCoherent_levelModuleOnOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean#L148). The attribute's comment: “L\_n, pushed forward to U, is a coherent module”.
 
 > **Stacks Project, Tag 0EHE (`𝓛ₙ` is coherent on `U`).** The module `𝓛ₙ`, read on the
 > punctured spectrum `U` of `A`, is coherent: it is invertible upstairs, hence coherent there by
@@ -893,7 +893,7 @@ public theorem isCoherent_levelModuleOnOpen (a : ℕ → PlaneRing k) (φ : ℕ 
     _root_.SheafOfModules.IsCoherent.{u} (levelModuleOnOpen k a φ m)
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.isCoherent_levelSystem_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean#L160). The attribute's comment: “the terms of the system (L_n) are coherent”.
+**`Stacks.Algebraization.NonAlgebraizableExample.isCoherent_levelSystem_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean#L160). The attribute's comment: “the terms of the system (L\_n) are coherent”.
 
 > **Stacks Project, Tag 0EHE (the system has coherent terms).** Every term of the system
 > `(𝓛ₙ)` is a coherent module on `U`. This is the hypothesis `hcoh` of
@@ -904,7 +904,7 @@ public theorem isCoherent_levelSystem_obj (a : ℕ → PlaneRing k) (φ : ℕ �
     _root_.SheafOfModules.IsCoherent.{u} ((levelSystem k a φ).obj (op n))
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.idealPowerMultiple_levelModuleOnOpen_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean#L183). The attribute's comment: “L_n, pushed forward to U, is annihilated by (I O_U)^n”.
+**`Stacks.Algebraization.NonAlgebraizableExample.idealPowerMultiple_levelModuleOnOpen_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean#L183). The attribute's comment: “L\_n, pushed forward to U, is annihilated by (I O\_U)^n”.
 
 > **Stacks Project, Tag 0EHE (`𝓛ₙ` is annihilated by `(I𝒪_U)ⁿ`).** The module `𝓛ₙ`, read on
 > `U`, is annihilated by the `n`-th power of `I𝒪_U`: that power is the kernel ideal sheaf of the
@@ -918,7 +918,7 @@ public theorem idealPowerMultiple_levelModuleOnOpen_eq_bot (a : ℕ → PlaneRin
     idealPowerMultiple (idealOnOpen (situation k)) m (levelModuleOnOpen k a φ m) = ⊥
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.idealPowerMultiple_levelSystem_obj_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean#L198). The attribute's comment: “the n-th term of the system (L_n) is annihilated by (I O_U)^(n+1)”.
+**`Stacks.Algebraization.NonAlgebraizableExample.idealPowerMultiple_levelSystem_obj_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelSystem.lean#L198). The attribute's comment: “the n-th term of the system (L\_n) is annihilated by (I O\_U)^(n+1)”.
 
 > **Stacks Project, Tag 0EHE (the system is annihilated by the successive ideal powers).** The
 > `n`-th term of the system `(𝓛ₙ)` is annihilated by the `(n + 1)`-st power of `I𝒪_U`. This is the
@@ -970,7 +970,7 @@ public theorem preimage_levelChart (r : AmbientRing k) (n : ℕ)
     levelOpenMap k n ⁻¹ᵁ levelChart k r (n + 1) = levelChart k r n
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.app_levelSchemeMap_chartOpenEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelTransition.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelTransition.lean#L151). The attribute's comment: “on D(r) the closed immersion of level schemes induces A_r/t^(n+1) -> A_r/t^n”.
+**`Stacks.Algebraization.NonAlgebraizableExample.app_levelSchemeMap_chartOpenEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelTransition.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelTransition.lean#L151). The attribute's comment: “on D(r) the closed immersion of level schemes induces A\_r/t^(n+1) -> A\_r/t^n”.
 
 > **Stacks Project, Tag 0EHE (the closed immersion induces the reduction on chart rings).** On
 > the ring of sections over the basic open `D(r̄)`, the closed immersion
@@ -999,7 +999,7 @@ public theorem app_levelOverlapUnit (a : ℕ → PlaneRing k) (φ : ℕ → ℕ)
         (levelOpenMap k n ⁻¹ᵁ levelOverlap k (n + 1)) (preimage_levelOverlap k n).le
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.levelTransition`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelTransition.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelTransition.lean#L278). The attribute's comment: “the transition map L_(n+1) -> L_n of the system”.
+**`Stacks.Algebraization.NonAlgebraizableExample.levelTransition`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelTransition.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelTransition.lean#L278). The attribute's comment: “the transition map L\_(n+1) -> L\_n of the system”.
 
 > **Stacks Project, Tag 0EHE (the transition maps of the system).** The transition map
 > `𝓛ₙ₊₁ ⟶ 𝓛ₙ` of the system of [Stacks, Tag 0EHE], as a morphism from the module of level `n + 1`
@@ -1012,7 +1012,7 @@ public def levelTransition (a : ℕ → PlaneRing k) (φ : ℕ → ℕ) (n : ℕ
       (Scheme.Modules.pushforward (levelOpenMap k n)).obj (levelModule k a φ n)
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.chartLinearEquiv_levelTransition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelTransition.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelTransition.lean#L291). The attribute's comment: “in the chart trivializations L_(n+1) -> L_n is the reduction of functions”.
+**`Stacks.Algebraization.NonAlgebraizableExample.chartLinearEquiv_levelTransition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelTransition.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableLevelTransition.lean#L291). The attribute's comment: “in the chart trivializations L\_(n+1) -> L\_n is the reduction of functions”.
 
 > **Stacks Project, Tag 0EHE (the transition map in the chart trivializations).** Over an open
 > inside one of the two charts, where both modules are trivialized by reading the coordinate of that
@@ -1034,7 +1034,7 @@ public theorem chartLinearEquiv_levelTransition (a : ℕ → PlaneRing k) (φ : 
           (levelOverlapUnit k a φ (n + 1))).chartLinearEquiv i hV s)
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.isVanishingSectionsParameter_two_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableParameter.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableParameter.lean#L84). The attribute's comment: “a_m = 1 and φ(m) = 2^m satisfy the parameter condition”.
+**`Stacks.Algebraization.NonAlgebraizableExample.isVanishingSectionsParameter_two_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableParameter.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableParameter.lean#L84). The attribute's comment: “a\_m = 1 and φ(m) = 2^m satisfy the parameter condition”.
 
 > **Stacks Project, Tag 0EHE (the first prescribed choice).** The coefficients `aₘ = 1` and
 > the exponents `φ(m) = 2ᵐ` satisfy the parameter condition.
@@ -1045,7 +1045,7 @@ public theorem isVanishingSectionsParameter_two_pow {a : ℕ → PlaneRing k} {�
     IsVanishingSectionsParameter k a φ
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.isVanishingSectionsParameter_sq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableParameter.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableParameter.lean#L92). The attribute's comment: “a_m = 1 and φ(m) = m^2 satisfy the parameter condition”.
+**`Stacks.Algebraization.NonAlgebraizableExample.isVanishingSectionsParameter_sq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableParameter.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableParameter.lean#L92). The attribute's comment: “a\_m = 1 and φ(m) = m^2 satisfy the parameter condition”.
 
 > **Stacks Project, Tag 0EHE (the second prescribed choice).** The coefficients `aₘ = 1` and
 > the exponents `φ(m) = m²` satisfy the parameter condition.
@@ -1056,7 +1056,7 @@ public theorem isVanishingSectionsParameter_sq {a : ℕ → PlaneRing k} {φ : �
     IsVanishingSectionsParameter k a φ
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.sectionsLimit_eq_bot_of_isVanishingSectionsParameter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableParameter.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableParameter.lean#L108). The attribute's comment: “lim H^0(U, L_n) = 0 under the parameter condition”.
+**`Stacks.Algebraization.NonAlgebraizableExample.sectionsLimit_eq_bot_of_isVanishingSectionsParameter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableParameter.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableParameter.lean#L108). The attribute's comment: “lim H^0(U, L\_n) = 0 under the parameter condition”.
 
 > **Stacks Project, Tag 0EHE (the vanishing of the limit of global sections).** Under the
 > parameter condition the limit `lim H⁰(U, 𝓛ₙ)` is zero.
@@ -1066,7 +1066,7 @@ public theorem sectionsLimit_eq_bot_of_isVanishingSectionsParameter (a : ℕ →
     (φ : ℕ → ℕ) (h : IsVanishingSectionsParameter k a φ) : sectionsLimit k a φ = ⊥
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.not_exists_compatible_isUnit_mem_gluedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableParameter.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableParameter.lean#L120). The attribute's comment: “under the parameter condition (L_n) has no compatible trivializing sections”.
+**`Stacks.Algebraization.NonAlgebraizableExample.not_exists_compatible_isUnit_mem_gluedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableParameter.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableParameter.lean#L120). The attribute's comment: “under the parameter condition (L\_n) has no compatible trivializing sections”.
 
 > **Stacks Project, Tag 0EHE (no compatible trivializing sections under the parameter
 > condition).** A trivialization of the glued module `𝓛ₙ` is a pair of invertible chart functions
@@ -1122,7 +1122,7 @@ public theorem isTrivial_of_isInvertible_ambientOpen
     Stacks.SheafOfModules.IsTrivial V.toScheme.presheaf V.toScheme.ringCatIsSheaf L
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.sectionsLimitLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableSectionsLimit.lean, line 637](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableSectionsLimit.lean#L637). The attribute's comment: “lim H^0(U, L_n) is the module of compatible systems of glued chart pairs”.
+**`Stacks.Algebraization.NonAlgebraizableExample.sectionsLimitLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableSectionsLimit.lean, line 637](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableSectionsLimit.lean#L637). The attribute's comment: “lim H^0(U, L\_n) is the module of compatible systems of glued chart pairs”.
 
 > **Stacks Project, Tag 0EHE (`lim H⁰(U, 𝓛ₙ)` is the module of compatible glued pairs).** The
 > `A`-module `lim H⁰(U, 𝓛ₙ)` of the object `(𝓛ₙ)` of `Coh(U, I𝒪_U)` is the module `sectionsLimit` of
@@ -1136,7 +1136,7 @@ public def sectionsLimitLinearEquiv :
       limitGlobalSections (situation k) (levelCoherentAdicSystem k a φ)
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.nontrivial_limitGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableSectionsLimit.lean, line 645](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableSectionsLimit.lean#L645). The attribute's comment: “lim H^0(U, L_n) is nonzero when a_m = 0 for m ≥ 2”.
+**`Stacks.Algebraization.NonAlgebraizableExample.nontrivial_limitGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableSectionsLimit.lean, line 645](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableSectionsLimit.lean#L645). The attribute's comment: “lim H^0(U, L\_n) is nonzero when a\_m = 0 for m ≥ 2”.
 
 > **Stacks Project, Tag 0EHE (`lim H⁰(U, 𝓛ₙ) ≠ 0` for the degenerate choice).** When the higher
 > coefficients `aₘ` vanish, the module `lim H⁰(U, 𝓛ₙ)` of the system `(𝓛ₙ)` is nonzero.
@@ -1146,7 +1146,7 @@ public theorem nontrivial_limitGlobalSections (ha : ∀ m : ℕ, 2 ≤ m → a m
     Nontrivial (limitGlobalSections (situation k) (levelCoherentAdicSystem k a φ))
 ```
 
-**`Stacks.Algebraization.NonAlgebraizableExample.subsingleton_limitGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableSectionsLimit.lean, line 655](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableSectionsLimit.lean#L655). The attribute's comment: “lim H^0(U, L_n) = 0 for a_m = 1 and φ(m) = 2^m or m^2”.
+**`Stacks.Algebraization.NonAlgebraizableExample.subsingleton_limitGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableSectionsLimit.lean, line 655](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/NonAlgebraizableSectionsLimit.lean#L655). The attribute's comment: “lim H^0(U, L\_n) = 0 for a\_m = 1 and φ(m) = 2^m or m^2”.
 
 > **Stacks Project, Tag 0EHE (`lim H⁰(U, 𝓛ₙ) = 0`).** When every higher coefficient `aₘ` is
 > `1` and the exponents are `φ(m) = 2ᵐ` or `φ(m) = m²`, the module `lim H⁰(U, 𝓛ₙ)` of the system
@@ -1261,7 +1261,7 @@ public theorem isAdicComplete_and_finite_adicCompletion_of_canonicallyExtends
         (AdicCompletion S.I (limitGlobalSections S F : Type u))
 ```
 
-**`Stacks.Algebraization.canonicalExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CanonicalExtensionUniqueness.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/CanonicalExtensionUniqueness.lean#L77). The attribute's comment: “unique_extension”.
+**`Stacks.Algebraization.canonicalExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CanonicalExtensionUniqueness.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/CanonicalExtensionUniqueness.lean#L77). The attribute's comment: “unique\_extension”.
 
 > **Stacks Project, Tag 0EIR.** A coherent adic system on `X` extending `F`, together with
 > a chosen pro-isomorphism from the sheaves associated to the global sections of `F`.
@@ -1276,7 +1276,7 @@ public noncomputable def canonicalExtension
         (Stacks.Coherent.coherentAdicToPro S.X (idealOnX S)).obj G
 ```
 
-**`Stacks.Algebraization.existsUnique_compatibleIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CanonicalExtensionUniqueness.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/CanonicalExtensionUniqueness.lean#L89). The attribute's comment: “unique_extension”.
+**`Stacks.Algebraization.existsUnique_compatibleIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/CanonicalExtensionUniqueness.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/CanonicalExtensionUniqueness.lean#L89). The attribute's comment: “unique\_extension”.
 
 > **Stacks Project, Tag 0EIR.** Two coherent adic extensions of the same pro-object are
 > isomorphic by exactly one isomorphism compatible with their chosen pro-isomorphisms.
@@ -1341,7 +1341,7 @@ public theorem canonicallyExtends_base_change (h : CanonicallyExtends S F) :
 
 [Tag 0EHH](https://stacks.math.columbia.edu/tag/0EHH) in the Stacks Project.
 
-**`Stacks.Algebraization.essImage_completionFunctor_of_finite_limit_images`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/MittagLefflerAlgebraization.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/MittagLefflerAlgebraization.lean#L84). The attribute's comment: “the in-particular clause, that over an I-adically complete A the system is the completion of a coherent 𝒪_U-module, i.e. lies in the essential image of the completion functor of U, which is condition (2) of 0EIL; deduced from the canonical extension of the main clause by part (2) of 0EIR and the chain of 0EIL”.
+**`Stacks.Algebraization.essImage_completionFunctor_of_finite_limit_images`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/MittagLefflerAlgebraization.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/MittagLefflerAlgebraization.lean#L84). The attribute's comment: “the in-particular clause, that over an I-adically complete A the system is the completion of a coherent 𝒪\_U-module, i.e. lies in the essential image of the completion functor of U, which is condition (2) of 0EIL; deduced from the canonical extension of the main clause by part (2) of 0EIR and the chain of 0EIL”.
 
 > **The in-particular clause of Stacks Project, Tag 0EHH.** In an algebraization situation with
 > `A` moreover `I`-adically complete, a coherent `I`-adic system `(ℱₙ)` on the open complement `U`
@@ -1464,7 +1464,7 @@ theorem canonicallyExtends_of_principal_shortExactSequences (f : S.A)
     CanonicallyExtends S F
 ```
 
-**`Stacks.Algebraization.canonicallyExtends_and_isCompletion_of_principal_nonzerodivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/PrincipalNonzerodivisorWhole.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/PrincipalNonzerodivisorWhole.lean#L200). The attribute's comment: “both clauses under the source's own conditions (1), (2) and (3): for I = (f) generated by a nonzerodivisor, with every term finite locally free over the infinitesimal neighbourhood it is annihilated by, and with H¹_𝔞(A/fA) and H²_𝔞(A/fA) finite, the system extends canonically to X, and over an I-adically complete A it is the completion of a coherent O_U-module”.
+**`Stacks.Algebraization.canonicallyExtends_and_isCompletion_of_principal_nonzerodivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/PrincipalNonzerodivisorWhole.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionCriteria/PrincipalNonzerodivisorWhole.lean#L200). The attribute's comment: “both clauses under the source's own conditions (1), (2) and (3): for I = (f) generated by a nonzerodivisor, with every term finite locally free over the infinitesimal neighbourhood it is annihilated by, and with H¹\_𝔞(A/fA) and H²\_𝔞(A/fA) finite, the system extends canonically to X, and over an I-adically complete A it is the completion of a coherent O\_U-module”.
 
 > **Stacks Project, Tag 0DXW.** Let `S` be an algebraization situation and let `(F_n)` be a
 > coherent `I`-adic system on the open complement `U`. Assume

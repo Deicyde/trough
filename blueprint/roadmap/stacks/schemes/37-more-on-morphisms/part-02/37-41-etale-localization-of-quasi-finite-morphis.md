@@ -16,7 +16,7 @@ Section 37.41 of the Stacks Project, [Tag 04HF](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.IsPullback.of_hasPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.IsPullback.of_hasPullback#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch37.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch37.lean#L69) (StacksFrontier): “the cartesian square X_U = U ×_S X of the basic diagram”.
+- [`CategoryTheory.IsPullback.of_hasPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.IsPullback.of_hasPullback#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch37.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch37.lean#L69) (StacksFrontier): “the cartesian square X\_U = U ×\_S X of the basic diagram”.
 
 ## Tag 02LK, a lemma
 

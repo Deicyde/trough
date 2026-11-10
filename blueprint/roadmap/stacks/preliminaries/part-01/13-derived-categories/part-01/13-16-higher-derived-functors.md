@@ -85,7 +85,7 @@ public noncomputable def rightDerivedPlus (i : ℤ) : C ⥤ D
 
 [Tag 05TD](https://stacks.math.columbia.edu/tag/05TD) in the Stacks Project.
 
-**`CategoryTheory.Functor.isZero_and_preservesFiniteLimits_and_isIso_iff_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/Exactness.lean, line 826](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/Exactness.lean#L826). The attribute's comment: “T_05TD”. References: SGA 2 IV (1.1).
+**`CategoryTheory.Functor.isZero_and_preservesFiniteLimits_and_isIso_iff_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/Exactness.lean, line 826](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/RightDerivedFunctorInjective/Exactness.lean#L826). The attribute's comment: “T\_05TD”. References: SGA 2 IV (1.1).
 
 > **Right deriving is for left exact functors**, [StacksProject 05TD].
 > Let `F : 𝒜 ⥤ ℬ` be an additive functor between abelian categories, where `𝒜` has enough

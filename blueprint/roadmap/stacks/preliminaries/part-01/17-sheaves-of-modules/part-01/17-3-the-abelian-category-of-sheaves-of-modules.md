@@ -33,7 +33,7 @@ Declarations registered for the tag:
 
 [Tag 01AH](https://stacks.math.columbia.edu/tag/01AH) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.isColimit_colimitSheafificationCocone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Colimits.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/Colimits.lean#L112). The attribute's comment: “colimits_sheafification”.
+**`AlgebraicGeometry.SheafOfModules.isColimit_colimitSheafificationCocone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Colimits.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/Colimits.lean#L112). The attribute's comment: “colimits\_sheafification”.
 
 > Sheafification of a colimit of the underlying presheaves of modules is a
 > colimit of the original diagram of sheaves of modules.
@@ -45,7 +45,7 @@ theorem isColimit_colimitSheafificationCocone
     Nonempty (IsColimit (colimitSheafificationCocone R D c))
 ```
 
-**`AlgebraicGeometry.SheafOfModules.stalkFunctor_preservesColimits`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Colimits.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/Colimits.lean#L260). The attribute's comment: “colimits_stalks”. References: EGA 0 (4.3.2), “special case”.
+**`AlgebraicGeometry.SheafOfModules.stalkFunctor_preservesColimits`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/Colimits.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/Colimits.lean#L260). The attribute's comment: “colimits\_stalks”. References: EGA 0 (4.3.2), “special case”.
 
 > The canonical map from the colimit of the stalks of a diagram of sheaves
 > of modules to the stalk of its colimit is an isomorphism. It is the inverse of
@@ -77,7 +77,7 @@ theorem forget_preservesFiniteBiproducts :
 
 Declarations registered for the tag:
 
-- [`SheafOfModules.instHasColimitsOfSizeOfPresheafOfModulesObjFunctorOppositeRingCatIsSheaf`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SheafOfModules.instHasColimitsOfSizeOfPresheafOfModulesObjFunctorOppositeRingCatIsSheaf#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/Colimits.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/Colimits.lean#L79) (StacksFrontier): “colimits_exist”.
+- [`SheafOfModules.instHasColimitsOfSizeOfPresheafOfModulesObjFunctorOppositeRingCatIsSheaf`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SheafOfModules.instHasColimitsOfSizeOfPresheafOfModulesObjFunctorOppositeRingCatIsSheaf#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/Colimits.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/Colimits.lean#L79) (StacksFrontier): “colimits\_exist”.
 - [`SheafOfModules.hasLimitsOfSize`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SheafOfModules.hasLimitsOfSize#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/LimitsAndDirectSums.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/LimitsAndDirectSums.lean#L50) (StacksFrontier): “part (1): all limits exist”.
 - [`SheafOfModules.forgetPreservesLimitsOfSize`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SheafOfModules.forgetPreservesLimitsOfSize#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/LimitsAndDirectSums.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/LimitsAndDirectSums.lean#L51) (StacksFrontier): “part (1): limits are the limits of the underlying presheaves of modules”.
 - [`SheafOfModules.evaluationPreservesLimitsOfSize`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SheafOfModules.evaluationPreservesLimitsOfSize#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/LimitsAndDirectSums.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/LimitsAndDirectSums.lean#L53) (StacksFrontier): “part (1): limits commute with taking sections over opens”.
@@ -86,7 +86,7 @@ Declarations registered for the tag:
 
 [Tag 01AJ](https://stacks.math.columbia.edu/tag/01AJ) in the Stacks Project.
 
-**`RingedSpaceModuleAdjunction.preservesLimits_modulePushforward`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactnessOfPushforwardAndPullback.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/ExactnessOfPushforwardAndPullback.lean#L41). The attribute's comment: “(1)”. References: SGA 4 IV (13.6), “ringed spaces, u_*”.
+**`RingedSpaceModuleAdjunction.preservesLimits_modulePushforward`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/ExactnessOfPushforwardAndPullback.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/ExactnessOfPushforwardAndPullback.lean#L41). The attribute's comment: “(1)”. References: SGA 4 IV (13.6), “ringed spaces, u\_*”.
 
 > Pushforward of sheaves of modules along a morphism of ringed spaces commutes with all
 > limits.

@@ -14,7 +14,7 @@ Section 46.8 of the Stacks Project, [Tag 06ZX](https://stacks.math.columbia.edu/
 
 [Tag 06ZY](https://stacks.math.columbia.edu/tag/06ZY) in the Stacks Project.
 
-**`Module.PureInjective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Defs.lean, line 29](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Defs.lean#L29). The attribute's comment: “pure_injective”.
+**`Module.PureInjective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Defs.lean, line 29](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Defs.lean#L29). The attribute's comment: “pure\_injective”.
 
 > An `A`-module `I` is *pure injective* if applying `Hom_A(-, I)` to every
 > universally exact short exact sequence of `A`-modules gives a short exact
@@ -25,7 +25,7 @@ public abbrev PureInjective (A : Type u) [CommRing A] (I : Type v)
     [AddCommGroup I] [Module A I] : Prop
 ```
 
-**`Module.PureProjective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Defs.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Defs.lean#L51). The attribute's comment: “pure_projective”.
+**`Module.PureProjective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Defs.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Defs.lean#L51). The attribute's comment: “pure\_projective”.
 
 > An `A`-module `P` is *pure projective* if applying `Hom_A(P, -)` to every
 > universally exact short exact sequence of `A`-modules gives a short exact
@@ -40,7 +40,7 @@ public abbrev PureProjective (A : Type u) [CommRing A] (P : Type v)
 
 [Tag 06ZZ](https://stacks.math.columbia.edu/tag/06ZZ) in the Stacks Project.
 
-**`Module.pureProjective_iff_directSum_finitelyPresented_retract`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Projective.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Projective.lean#L246). The attribute's comment: “pure_projective_characterization”.
+**`Module.pureProjective_iff_directSum_finitelyPresented_retract`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Projective.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Projective.lean#L246). The attribute's comment: “pure\_projective\_characterization”.
 
 > An `A`-module is pure projective if and only if it is a retract of a direct
 > sum of finitely presented `A`-modules.
@@ -57,7 +57,7 @@ public theorem pureProjective_iff_directSum_finitelyPresented_retract
             r.comp s = LinearMap.id
 ```
 
-**`Module.exists_pureProjective_universallyExact_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Projective.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Projective.lean#L296). The attribute's comment: “pure_projective_presentation”.
+**`Module.exists_pureProjective_universallyExact_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Projective.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Projective.lean#L296). The attribute's comment: “pure\_projective\_presentation”.
 
 > Every module is the quotient of a pure projective module in a universally exact short
 > exact sequence.
@@ -80,7 +80,7 @@ public theorem exists_pureProjective_universallyExact_presentation
 
 [Tag 0700](https://stacks.math.columbia.edu/tag/0700) in the Stacks Project.
 
-**`Module.characterModule_pureInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Injective.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Injective.lean#L76). The attribute's comment: “character_module_pure_injective”.
+**`Module.characterModule_pureInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Injective.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Injective.lean#L76). The attribute's comment: “character\_module\_pure\_injective”.
 
 > The character module `Hom_ℤ(M, ℚ/ℤ)` of any module `M` over a commutative ring is pure
 > injective.
@@ -91,7 +91,7 @@ public theorem characterModule_pureInjective (A : Type u) [CommRing A]
     Module.PureInjective A (CharacterModule M)
 ```
 
-**`Module.pureInjective_iff_evalₗ_splits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Injective.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Injective.lean#L131). The attribute's comment: “pure_injective_iff_double_dual_splits”.
+**`Module.pureInjective_iff_evalₗ_splits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Injective.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Injective.lean#L131). The attribute's comment: “pure\_injective\_iff\_double\_dual\_splits”.
 
 > A module is pure injective if and only if evaluation into its double character
 > module has a linear retraction.
@@ -104,7 +104,7 @@ public theorem pureInjective_iff_evalₗ_splits (A : Type u) [CommRing A]
         r.comp (CharacterModule.evalₗ A I) = LinearMap.id
 ```
 
-**`Module.exists_pureInjective_universallyExact_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Injective.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Injective.lean#L154). The attribute's comment: “exists_pure_injective_universally_exact_extension”.
+**`Module.exists_pureInjective_universallyExact_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Injective.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Injective.lean#L154). The attribute's comment: “exists\_pure\_injective\_universally\_exact\_extension”.
 
 > Every module embeds universally injectively into a pure injective module, with a
 > surjective cokernel map making the resulting sequence exact.
@@ -158,7 +158,7 @@ theorem kernel_universallyExact
 
 [Tag 0702](https://stacks.math.columbia.edu/tag/0702) in the Stacks Project.
 
-**`Module.PureInjectiveResolution.IsPureInjectiveResolution`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/InjectiveResolution.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/InjectiveResolution.lean#L37). The attribute's comment: “pure_injective_resolution”.
+**`Module.PureInjectiveResolution.IsPureInjectiveResolution`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/InjectiveResolution.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/InjectiveResolution.lean#L37). The attribute's comment: “pure\_injective\_resolution”.
 
 > An augmentation `M ⟶ I⁰` of a cochain complex is a *pure injective resolution* if
 > `0 ⟶ M ⟶ I⁰ ⟶ I¹ ⟶ ⋯` is universally exact and every `Iⁱ` is pure injective.
@@ -169,7 +169,7 @@ public structure IsPureInjectiveResolution
     (I : CochainComplex (ModuleCat.{v} A) ℕ) (augmentation : M →ₗ[A] I.X 0) : Prop
 ```
 
-**`Module.PureProjectiveResolution.IsPureProjectiveResolution`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/ProjectiveResolution.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/ProjectiveResolution.lean#L38). The attribute's comment: “pure_projective_resolution”.
+**`Module.PureProjectiveResolution.IsPureProjectiveResolution`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/ProjectiveResolution.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/ProjectiveResolution.lean#L38). The attribute's comment: “pure\_projective\_resolution”.
 
 > An augmentation `P₀ ⟶ M` of a chain complex is a *pure projective resolution* if
 > `⋯ ⟶ P₁ ⟶ P₀ ⟶ M ⟶ 0` is universally exact and every `Pᵢ` is pure projective.
@@ -184,7 +184,7 @@ public structure IsPureProjectiveResolution
 
 [Tag 0703](https://stacks.math.columbia.edu/tag/0703) in the Stacks Project.
 
-**`Module.PureProjectiveResolution.exists_comparison_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/ProjectiveResolution.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/ProjectiveResolution.lean#L265). The attribute's comment: “comparison_map”.
+**`Module.PureProjectiveResolution.exists_comparison_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/ProjectiveResolution.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/ProjectiveResolution.lean#L265). The attribute's comment: “comparison\_map”.
 
 > A module map extends from a pure projective resolution to any universally
 > exact resolution.
@@ -200,7 +200,7 @@ public theorem exists_comparison_map
     ∃ F : P ⟶ C, aC.comp (F.f 0).hom = f.comp aP
 ```
 
-**`Module.PureProjectiveResolution.homotopy_of_same_augmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/ProjectiveResolution.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/ProjectiveResolution.lean#L333). The attribute's comment: “homotopy_uniqueness”.
+**`Module.PureProjectiveResolution.homotopy_of_same_augmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/ProjectiveResolution.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/ProjectiveResolution.lean#L333). The attribute's comment: “homotopy\_uniqueness”.
 
 > Two maps of resolutions inducing the same map of resolved modules are homotopic.
 
@@ -231,7 +231,7 @@ public theorem exists_isPureProjectiveResolution :
 
 [Tag 0704](https://stacks.math.columbia.edu/tag/0704) in the Stacks Project.
 
-**`Module.PureInjectiveResolution.exists_comparison_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/InjectiveResolution.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/InjectiveResolution.lean#L225). The attribute's comment: “comparison_map”.
+**`Module.PureInjectiveResolution.exists_comparison_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/InjectiveResolution.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/InjectiveResolution.lean#L225). The attribute's comment: “comparison\_map”.
 
 > A map `M → N` extends to a map from any universally exact resolution of `M`
 > to any pure injective resolution of `N`.
@@ -247,7 +247,7 @@ public theorem exists_comparison_map
     ∃ F : C ⟶ I, (F.f 0).hom.comp aC = aI.comp f
 ```
 
-**`Module.PureInjectiveResolution.homotopy_of_same_augmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/InjectiveResolution.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/InjectiveResolution.lean#L332). The attribute's comment: “comparison_homotopy”.
+**`Module.PureInjectiveResolution.homotopy_of_same_augmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/InjectiveResolution.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/InjectiveResolution.lean#L332). The attribute's comment: “comparison\_homotopy”.
 
 > Comparison maps extending the same map between resolved modules are homotopic.
 
@@ -292,7 +292,7 @@ public noncomputable def pureExt (M N : Type v) [AddCommGroup M] [Module A M]
 
 [Tag 0706](https://stacks.math.columbia.edu/tag/0706) in the Stacks Project.
 
-**`Module.pureExt_isZero_of_pureInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Ext.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Ext.lean#L381). The attribute's comment: “pure_injective_vanishing”.
+**`Module.pureExt_isZero_of_pureInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Ext.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Ext.lean#L381). The attribute's comment: “pure\_injective\_vanishing”.
 
 > Positive-degree pure extensions into a pure injective module vanish.
 
@@ -305,7 +305,7 @@ public theorem pureExt_isZero_of_pureInjective
     CategoryTheory.Limits.IsZero (Module.pureExt (A := A) M N i)
 ```
 
-**`Module.pureExt_isZero_of_pureProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Ext.lean, line 463](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Ext.lean#L463). The attribute's comment: “pure_projective_vanishing”.
+**`Module.pureExt_isZero_of_pureProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Ext.lean, line 463](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Ext.lean#L463). The attribute's comment: “pure\_projective\_vanishing”.
 
 > Positive-degree pure extensions out of a pure projective module vanish.
 
@@ -318,7 +318,7 @@ public theorem pureExt_isZero_of_pureProjective
     CategoryTheory.Limits.IsZero (Module.pureExt (A := A) M N i)
 ```
 
-**`Module.pureExt_isZero_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Ext.lean, line 477](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Ext.lean#L477). The attribute's comment: “finite_presentation_vanishing”.
+**`Module.pureExt_isZero_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/Ext.lean, line 477](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/Ext.lean#L477). The attribute's comment: “finite\_presentation\_vanishing”.
 
 > Positive-degree pure extensions out of a module of finite presentation vanish.
 
@@ -330,7 +330,7 @@ public theorem pureExt_isZero_of_finitePresentation
     CategoryTheory.Limits.IsZero (Module.pureExt (A := A) M N i)
 ```
 
-**`Module.pureExtIsoHomologyOfPureProjectiveResolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/ExtResolution.lean, line 664](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/ExtResolution.lean#L664). The attribute's comment: “pure_projective_resolution”.
+**`Module.pureExtIsoHomologyOfPureProjectiveResolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Pure/ExtResolution.lean, line 664](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Pure/ExtResolution.lean#L664). The attribute's comment: “pure\_projective\_resolution”.
 
 > **Pure extensions are computed by a pure projective resolution of the first variable**:
 > `Pext^i_A(M, N)` is the `i`th cohomology module of `Hom_A(Pᐧ, N)` for every pure projective

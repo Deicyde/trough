@@ -33,7 +33,7 @@ noncomputable def power (V : SimplicialObject C) (U : CosimplicialObject (Type w
 
 [Tag 017M](https://stacks.math.columbia.edu/tag/017M) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.bijective_comp_proj_id_of_prod_coyoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Power.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Power.lean#L304). The attribute's comment: “the source's U is characterised rather than constructed: its terms being the self products indexed by C[k]_n of Tag 0B13, and its structure maps the reindexing, are the hypotheses, which is part (3); the two conjuncts are parts (1) and (2), the latter for an arbitrary truncation level j ≥ k”.
+**`CategoryTheory.SimplicialObject.bijective_comp_proj_id_of_prod_coyoneda`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Power.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Power.lean#L304). The attribute's comment: “the source's U is characterised rather than constructed: its terms being the self products indexed by C[k]\_n of Tag 0B13, and its structure maps the reindexing, are the hypotheses, which is part (3); the two conjuncts are parts (1) and (2), the latter for an arbitrary truncation level j ≥ k”.
 
 > **`Hom(C[k], X)` represents evaluation in degree `k`.** Let `X` be an object of a category
 > `C`, let `k : ℕ`, and let `U` be a simplicial object of `C` with coordinates

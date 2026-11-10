@@ -65,7 +65,7 @@ def obstructionMap {L : FlatLift f K₀} (T : IdealKernel S L) :
     DerivedCategory.Q.obj K₀ ⟶ (D.functor.obj (DerivedCategory.Q.obj K₀))⟦(2 : ℤ)⟧
 ```
 
-**`Deformation.ComplexLift.obstructionMap_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/CurvatureClass.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/CurvatureClass.lean#L478). The attribute's comment: “variant: naturality of ω along a morphism of flat lifts at a supplied derived ideal tensor datum D; the tag is Deformation.ComplexLift.tensorOmegaMinus_natural”.
+**`Deformation.ComplexLift.obstructionMap_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/CurvatureClass.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/CurvatureClass.lean#L478). The attribute's comment: “variant: naturality of ω along a morphism of flat lifts at a supplied derived ideal tensor datum D; the tag is Deformation.ComplexLift.tensorOmegaMinus\_natural”.
 
 > **Stacks 0DIU.** Naturality of `ω`: for a map `φ : K₀ ⟶ L₀` of bounded above complexes
 > covered by a morphism of flat lifts, the square formed by `ω(K₀)`, `ω(L₀)` and the maps induced
@@ -249,7 +249,7 @@ theorem exists_flatLift (hf : Sheaf.IsLocallySurjective f)
     Nonempty (FlatLift f K₀)
 ```
 
-**`Deformation.ComplexLift.exists_flatLiftHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/CurvatureLiftExistence.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/CurvatureLiftExistence.lean#L225). The attribute's comment: “variant: lifting a map of complexes to the flat lifts, a step of the proof; the tag is Deformation.ComplexLift.tensorOmegaMinus_natural”.
+**`Deformation.ComplexLift.exists_flatLiftHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/CurvatureLiftExistence.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/CurvatureLiftExistence.lean#L225). The attribute's comment: “variant: lifting a map of complexes to the flat lifts, a step of the proof; the tag is Deformation.ComplexLift.tensorOmegaMinus\_natural”.
 
 > **Stacks 0DIU, lifting a map of complexes.** A map `φ : K₀ ⟶ L₀` of complexes of
 > `O₀`-modules, with the cohomology of `L₀` vanishing in sufficiently high degrees, is covered by
@@ -404,7 +404,7 @@ theorem omega_eq (hf : Sheaf.IsLocallySurjective f) (S : SquareZeroIdeal f I)
     omega hf S D K₀ hK = obstructionMap D T
 ```
 
-**`Deformation.ComplexLift.omega_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/IdealKernelExistence.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/IdealKernelExistence.lean#L497). The attribute's comment: “variant: naturality of ω along a map of complexes at a supplied derived ideal tensor datum D; the tag is Deformation.ComplexLift.tensorOmegaMinus_natural”.
+**`Deformation.ComplexLift.omega_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/IdealKernelExistence.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/IdealKernelExistence.lean#L497). The attribute's comment: “variant: naturality of ω along a map of complexes at a supplied derived ideal tensor datum D; the tag is Deformation.ComplexLift.tensorOmegaMinus\_natural”.
 
 > **Stacks 0DIU, naturality of `ω`.** For a map `φ : K₀ ⟶ L₀` of bounded above complexes of
 > `O₀`-modules the square formed by `ω(K₀)`, `ω(L₀)` and the maps induced by `φ` commutes. No
@@ -423,7 +423,7 @@ theorem omega_natural (hf : Sheaf.IsLocallySurjective f) (S : SquareZeroIdeal f 
           (D.functor.map (DerivedCategory.Q.map φ))
 ```
 
-**`Deformation.ComplexLift.omega_natural_derived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/IdealKernelExistence.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/IdealKernelExistence.lean#L521). The attribute's comment: “variant: naturality of ω along a derived map at a supplied derived ideal tensor datum D; the tag is Deformation.ComplexLift.tensorOmegaMinus_natural”.
+**`Deformation.ComplexLift.omega_natural_derived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/IdealKernelExistence.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/IdealKernelExistence.lean#L521). The attribute's comment: “variant: naturality of ω along a derived map at a supplied derived ideal tensor datum D; the tag is Deformation.ComplexLift.tensorOmegaMinus\_natural”.
 
 > **Stacks 0DIU, naturality of `ω` for an arbitrary morphism of the derived category.** For
 > any `ψ : K₀ ⟶ L₀` in `D(O₀)` between bounded above complexes -- not merely one coming from a map
@@ -659,7 +659,7 @@ theorem extLiftObstruction_eq_zero_iff
     R.extLiftObstruction K₁ K₂ α₀ = 0 ↔ ∃ a : K₁ ⟶ K₂, T.baseChange.map a = α₀
 ```
 
-**`Deformation.ComplexLift.squareZeroObstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SquareZeroDerivedObstruction.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SquareZeroDerivedObstruction.lean#L278). The attribute's comment: “the obstruction class o(α₀) in Ext¹_{O₀}(K₀, L₀ ⊗^L_{O₀} I)”.
+**`Deformation.ComplexLift.squareZeroObstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SquareZeroDerivedObstruction.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SquareZeroDerivedObstruction.lean#L278). The attribute's comment: “the obstruction class o(α₀) in Ext¹\_\{O₀}(K₀, L₀ ⊗^L\_\{O₀} I)”.
 
 > **Stacks 0DIY, the obstruction class.** Let `f : O ⟶ O₀` be a surjection of sheaves of
 > commutative rings whose kernel `I` has square zero, let `K, L ∈ D⁻(O)`, and write
@@ -679,7 +679,7 @@ def squareZeroObstruction
         ((derivedExtensionOfScalars.{d, d₀} f).obj L.obj))⟦(1 : ℤ)⟧
 ```
 
-**`Deformation.ComplexLift.squareZeroObstruction_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SquareZeroDerivedObstruction.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SquareZeroDerivedObstruction.lean#L290). The attribute's comment: “o(α₀) = 0 iff α₀ = α ⊗^L_O id for some α : K → L in D(O)”.
+**`Deformation.ComplexLift.squareZeroObstruction_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SquareZeroDerivedObstruction.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SquareZeroDerivedObstruction.lean#L290). The attribute's comment: “o(α₀) = 0 iff α₀ = α ⊗^L\_O id for some α : K → L in D(O)”.
 
 > **Stacks 0DIY.** The obstruction class `o(α₀)` vanishes if and only if `α₀` is the derived
 > base change `α ⊗^L_O id` of a morphism `α : K ⟶ L` in `D(O)`.
@@ -693,7 +693,7 @@ theorem squareZeroObstruction_eq_zero_iff
       ∃ α : K.obj ⟶ L.obj, (derivedExtensionOfScalars.{d, d₀} f).map α = α₀
 ```
 
-**`Deformation.ComplexLift.squareZeroObstructionMinus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SquareZeroDerivedObstruction.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SquareZeroDerivedObstruction.lean#L305). The attribute's comment: “the obstruction class o(α₀) in Ext¹_{O₀}(K₀, L₀ ⊗^L_{O₀} I), with K₀ and L₀ in D⁻(O₀)”.
+**`Deformation.ComplexLift.squareZeroObstructionMinus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SquareZeroDerivedObstruction.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SquareZeroDerivedObstruction.lean#L305). The attribute's comment: “the obstruction class o(α₀) in Ext¹\_\{O₀}(K₀, L₀ ⊗^L\_\{O₀} I), with K₀ and L₀ in D⁻(O₀)”.
 
 > **Stacks 0DIY, the obstruction class, with `K₀` and `L₀` in `D⁻(O₀)`.** For `K, L ∈ D⁻(O)`
 > the derived base changes `K₀ = K ⊗^L_O O₀` and `L₀ = L ⊗^L_O O₀` are bounded above
@@ -711,7 +711,7 @@ def squareZeroObstructionMinus
         ((derivedExtensionOfScalarsData.{d, d₀} f).baseChangeMinus.obj L).obj)⟦(1 : ℤ)⟧
 ```
 
-**`Deformation.ComplexLift.squareZeroObstructionMinus_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SquareZeroDerivedObstruction.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SquareZeroDerivedObstruction.lean#L319). The attribute's comment: “o(α₀) = 0 iff α₀ = α ⊗^L_O id for some α : K → L, with K₀, L₀ in D⁻(O₀)”.
+**`Deformation.ComplexLift.squareZeroObstructionMinus_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/SquareZeroDerivedObstruction.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/SquareZeroDerivedObstruction.lean#L319). The attribute's comment: “o(α₀) = 0 iff α₀ = α ⊗^L\_O id for some α : K → L, with K₀, L₀ in D⁻(O₀)”.
 
 > **Stacks 0DIY, with `K₀` and `L₀` in `D⁻(O₀)`.** The obstruction class of a morphism
 > `α₀ : K₀ ⟶ L₀` of `D⁻(O₀)` vanishes if and only if `α₀ = α ⊗^L_O id` for a morphism

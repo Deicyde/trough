@@ -69,7 +69,7 @@ public theorem locus_comap (P : GradedPowerMapPoints B S hS X) (g : X' ⟶ X)
 
 [Tag 0D2Z](https://stacks.math.columbia.edu/tag/0D2Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.tag0D2Z`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleBaseChange.lean, line 692](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleBaseChange.lean#L692). The attribute's comment: “variant: X a scheme; the whole lemma, in Situation 0849 with Proj_Y(A) the relative Proj of Stacks 084B and X a scheme over the algebraic space Y: the morphism r_{L,psi} : U(psi) -> Proj_Y(A) over Y; theta : r^*((+)_d O(d)) -> (+)_d L^d|_{U(psi)} a unital multiplicative map; clause (1) for every scheme V -> Y (in particular every etale one) and every scheme over V x_Y X; clauses (2)(a) and (2)(b) for every scheme W -> X and every degree d >= 1; the characterization of r_{L,psi} by (2)(b); and clause (3) for every square with X', Y' schemes and Y' -> Y arbitrary: U(psi') = (g')^{-1}(U(psi)), r_{L',psi'} is the base change of r_{L,psi} through Proj_{Y'}(A') = Y' x_Y Proj_Y(A), and theta' is the pullback of theta”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.tag0D2Z`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleBaseChange.lean, line 692](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleBaseChange.lean#L692). The attribute's comment: “variant: X a scheme; the whole lemma, in Situation 0849 with Proj\_Y(A) the relative Proj of Stacks 084B and X a scheme over the algebraic space Y: the morphism r\_\{L,psi} : U(psi) -> Proj\_Y(A) over Y; theta : r^*((+)\_d O(d)) -> (+)\_d L^d|\_\{U(psi)} a unital multiplicative map; clause (1) for every scheme V -> Y (in particular every etale one) and every scheme over V x\_Y X; clauses (2)(a) and (2)(b) for every scheme W -> X and every degree d >= 1; the characterization of r\_\{L,psi} by (2)(b); and clause (3) for every square with X', Y' schemes and Y' -> Y arbitrary: U(psi') = (g')^\{-1}(U(psi)), r\_\{L',psi'} is the base change of r\_\{L,psi} through Proj\_\{Y'}(A') = Y' x\_Y Proj\_Y(A), and theta' is the pullback of theta”.
 
 > **[Stacks, Tag 0D2Z].**  In Situation 0849 let `Y` be the algebraic space `s.space`, `𝒜` the
 > quasi-coherent graded `𝒪_Y`-algebra `s.algebra` and `π : Proj_Y(𝒜) ⟶ Y` its relative homogeneous
@@ -215,7 +215,7 @@ theorem tag0D2Z :
           (clauseThreeTargetIso ψ g f' g' hsq).hom)
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjPoints.invertibleMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean#L187). The attribute's comment: “variant: the morphism r_{L,psi} : U(psi) -> Proj_Y(A) for a presentation of Proj_Y(A) by its base changes to the scheme points of Y; the tag is AlgebraicGeometry.Space.RelativeProjSituation.tag0D2Z”.
+**`AlgebraicGeometry.Space.RelativeProjPoints.invertibleMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean#L187). The attribute's comment: “variant: the morphism r\_\{L,psi} : U(psi) -> Proj\_Y(A) for a presentation of Proj\_Y(A) by its base changes to the scheme points of Y; the tag is AlgebraicGeometry.Space.RelativeProjSituation.tag0D2Z”.
 
 > **`r_{ℒ,ψ} : U(ψ) ⟶ Proj_Y(𝒜)`, the morphism of [Stacks, Tag 0D2Z]**, as the transformation of
 > functors the source's proof builds: on a test scheme `ρ : T ⟶ X` of `U(ψ)` it is
@@ -227,7 +227,7 @@ def invertibleMorphism :
     (subspaceOfOpens B S hS X (toGradedPowerMap ψ).coveringOpen).toFunctor ⟶ Proj
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjPoints.invertibleMorphism_comp_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean#L199). The attribute's comment: “variant: r_{L,psi} lies over Y, for a presentation of Proj_Y(A) by its base changes to the scheme points of Y; the tag is AlgebraicGeometry.Space.RelativeProjSituation.tag0D2Z”.
+**`AlgebraicGeometry.Space.RelativeProjPoints.invertibleMorphism_comp_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean#L199). The attribute's comment: “variant: r\_\{L,psi} lies over Y, for a presentation of Proj\_Y(A) by its base changes to the scheme points of Y; the tag is AlgebraicGeometry.Space.RelativeProjSituation.tag0D2Z”.
 
 > **`r_{ℒ,ψ}` is a morphism over `Y`**, as [Stacks, Tag 0D2Z] asserts: `π ∘ r_{ℒ,ψ}` is the
 > restriction of `f` to `U(ψ)`.
@@ -238,7 +238,7 @@ theorem invertibleMorphism_comp_π :
       = (subspaceOfOpens B S hS X (toGradedPowerMap ψ).coveringOpen).ι ≫ f
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjPoints.mem_subspaceOfOpens_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean#L240). The attribute's comment: “variant: clause (2)(a), for a presentation of Proj_Y(A) by its base changes to the scheme points of Y; the tag is AlgebraicGeometry.Space.RelativeProjSituation.tag0D2Z”.
+**`AlgebraicGeometry.Space.RelativeProjPoints.mem_subspaceOfOpens_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean#L240). The attribute's comment: “variant: clause (2)(a), for a presentation of Proj\_Y(A) by its base changes to the scheme points of Y; the tag is AlgebraicGeometry.Space.RelativeProjSituation.tag0D2Z”.
 
 > **Clause (2)(a) of [Stacks, Tag 0D2Z].**  For `k ≥ 1` and a scheme `w : W ⟶ X` such that
 > `ψ|_W : (f ∘ w)^*𝒜_k ⟶ (w^*ℒ)^{⊗ k}` is surjective, `w` factors through `U(ψ)`.
@@ -249,7 +249,7 @@ theorem mem_subspaceOfOpens_of_epi {W : BigFppfOver B S hS} (w : W ⟶ X) {k : �
     w ∈ (subspaceOfOpens B S hS X (toGradedPowerMap ψ).coveringOpen).obj (op W)
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjPoints.locusFactor_invertibleMorphism_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean#L276). The attribute's comment: “variant: clause (2)(b), for a presentation of Proj_Y(A) by its base changes to the scheme points of Y; the tag is AlgebraicGeometry.Space.RelativeProjSituation.tag0D2Z”.
+**`AlgebraicGeometry.Space.RelativeProjPoints.locusFactor_invertibleMorphism_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean#L276). The attribute's comment: “variant: clause (2)(b), for a presentation of Proj\_Y(A) by its base changes to the scheme points of Y; the tag is AlgebraicGeometry.Space.RelativeProjSituation.tag0D2Z”.
 
 > **Clause (2)(b) of [Stacks, Tag 0D2Z].**  For `k ≥ 1` and a scheme `w : W ⟶ X` such that
 > `ψ|_W` is surjective in degree `k`, the composite of the factorisation `W ⟶ U(ψ)` with
@@ -263,7 +263,7 @@ theorem locusFactor_invertibleMorphism_of_epi {W : BigFppfOver B S hS} (w : W �
       = d.quadruplePoint ψ w hk
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjPoints.eq_invertibleMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean#L292). The attribute's comment: “variant: the characterization of r_{L,psi} by clause (2)(b), for a presentation of Proj_Y(A) by its base changes to the scheme points of Y; the tag is AlgebraicGeometry.Space.RelativeProjSituation.tag0D2Z”.
+**`AlgebraicGeometry.Space.RelativeProjPoints.eq_invertibleMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismPoints.lean#L292). The attribute's comment: “variant: the characterization of r\_\{L,psi} by clause (2)(b), for a presentation of Proj\_Y(A) by its base changes to the scheme points of Y; the tag is AlgebraicGeometry.Space.RelativeProjSituation.tag0D2Z”.
 
 > **`r_{ℒ,ψ}` is characterized by clause (2)**: a morphism `U(ψ) ⟶ Proj_Y(𝒜)` over `Y` which, on
 > every test scheme `W ⟶ X` over which `ψ` is surjective in some positive degree, is the morphism
@@ -391,7 +391,7 @@ theorem quadrupleSpaceEquiv_invertibleMorphism_val
             ((congrArg (_ ≫ ·) (Category.comp_id _)).trans (Functor.map_comp _ _ _).symm))⟩
 ```
 
-**`AlgebraicGeometry.Space.InvertibleQuotientLocus.morphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismSpaces.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismSpaces.lean#L220). The attribute's comment: “variant: the morphism r_{L,psi} built from a family of degree-one restrictions of psi to the test schemes of U(psi); the tag is AlgebraicGeometry.Space.RelativeProjSituation.tag0D2Z”.
+**`AlgebraicGeometry.Space.InvertibleQuotientLocus.morphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismSpaces.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleMorphismSpaces.lean#L220). The attribute's comment: “variant: the morphism r\_\{L,psi} built from a family of degree-one restrictions of psi to the test schemes of U(psi); the tag is AlgebraicGeometry.Space.RelativeProjSituation.tag0D2Z”.
 
 > **`r_{ℒ,ψ} : U(ψ) ⟶ Proj_Y(𝒜)`, the morphism of [Stacks, Tag 0D2Z].**
 >
@@ -440,7 +440,7 @@ public theorem eq_morphism (Φ : L.locus.toFunctor ⟶ Proj)
     Φ = L.morphism hgen rep
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.isOpenSubspace_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean#L311). The attribute's comment: “the source U(psi) of r_{L,psi}, for an algebraic space X, is an open subspace of X”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.isOpenSubspace_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean#L311). The attribute's comment: “the source U(psi) of r\_\{L,psi}, for an algebraic space X, is an open subspace of X”.
 
 > **`U(ψ)` is an open subspace of the algebraic space `X`.**  Its points are those near which
 > some `f^*𝒜_d ⟶ ℒ^{⊗ d}`, `d ≥ 1`, is surjective (`…mem_locusOpen_iff_exists_epi`), and its
@@ -451,7 +451,7 @@ theorem isOpenSubspace_locus (hX : IsAlgebraicSpace s.site s.base s.containsBase
     IsOpenSubspace s.site s.base s.containsBase R.locus
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.invertibleMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean#L503). The attribute's comment: “the canonical morphism r_{L,psi} : U(psi) -> Proj_Y(A) for a morphism of algebraic spaces f : X -> Y, an invertible O_X-module L and a homomorphism of graded algebras psi : f^*A -> (+)_d L^d, given on X by their restrictions to the scheme points of X; U(psi) is the open subspace of the algebraic space X of Tag 0D2Y and Proj_Y(A) the relative Proj of Tag 084A/084B”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.invertibleMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean#L503). The attribute's comment: “the canonical morphism r\_\{L,psi} : U(psi) -> Proj\_Y(A) for a morphism of algebraic spaces f : X -> Y, an invertible O\_X-module L and a homomorphism of graded algebras psi : f^*A -> (+)\_d L^d, given on X by their restrictions to the scheme points of X; U(psi) is the open subspace of the algebraic space X of Tag 0D2Y and Proj\_Y(A) the relative Proj of Tag 084A/084B”.
 
 > **`r_{ℒ,ψ} : U(ψ) ⟶ Proj_Y(𝒜)`, the morphism of [Stacks, Tag 0D2Z], for a morphism of
 > algebraic spaces `f : X ⟶ Y`**, as the transformation of functors on the big fppf site that the
@@ -463,7 +463,7 @@ theorem isOpenSubspace_locus (hX : IsAlgebraicSpace s.site s.base s.containsBase
 def invertibleMorphism : R.locus.toFunctor ⟶ s.relativeProjFunctor
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.invertibleMorphism_comp_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean#L515). The attribute's comment: “r_{L,psi} is a morphism of algebraic spaces over Y, for a morphism of algebraic spaces f : X -> Y”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.invertibleMorphism_comp_π`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean#L515). The attribute's comment: “r\_\{L,psi} is a morphism of algebraic spaces over Y, for a morphism of algebraic spaces f : X -> Y”.
 
 > **`r_{ℒ,ψ}` is a morphism over `Y`**: `π ∘ r_{ℒ,ψ}` is the restriction of `f` to `U(ψ)`.
 
@@ -483,7 +483,7 @@ theorem mem_locus_of_epi {W : BigFppfOver s.site s.base s.containsBase} (w : yon
     yonedaEquiv w ∈ R.locus.obj (op W)
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.factor_invertibleMorphism_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean, line 573](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean#L573). The attribute's comment: “clause (2)(b), for a morphism of algebraic spaces f : X -> Y: for a scheme W -> X over which psi is surjective in degree k >= 1, W -> U(psi) -> Proj_Y(A) is the morphism the construction of the relative Proj attaches to the quadruple (k, W -> Y, L^k|_W, psi|_W)”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.factor_invertibleMorphism_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean, line 573](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean#L573). The attribute's comment: “clause (2)(b), for a morphism of algebraic spaces f : X -> Y: for a scheme W -> X over which psi is surjective in degree k >= 1, W -> U(psi) -> Proj\_Y(A) is the morphism the construction of the relative Proj attaches to the quadruple (k, W -> Y, L^k|\_W, psi|\_W)”.
 
 > **Clause (2)(b) of [Stacks, Tag 0D2Z].**  For `k ≥ 1` and a scheme `w : W ⟶ X` such that
 > `ψ|_W` is surjective in degree `k`, the composite of the factorisation `W ⟶ U(ψ)` with
@@ -496,7 +496,7 @@ theorem factor_invertibleMorphism_of_epi {W : BigFppfOver s.site s.base s.contai
     R.factor w (R.mem_locus_of_epi w hk) ≫ R.invertibleMorphism = R.quadruplePoint w hk
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.eq_invertibleMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean, line 610](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean#L610). The attribute's comment: “r_{L,psi} is characterized by property (2), for a morphism of algebraic spaces f : X -> Y: it is the only morphism U(psi) -> Proj_Y(A) over Y with clause (2)(b)”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.eq_invertibleMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean, line 610](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean#L610). The attribute's comment: “r\_\{L,psi} is characterized by property (2), for a morphism of algebraic spaces f : X -> Y: it is the only morphism U(psi) -> Proj\_Y(A) over Y with clause (2)(b)”.
 
 > **`r_{ℒ,ψ}` is characterized by clause (2)**: a morphism `U(ψ) ⟶ Proj_Y(𝒜)` over `Y` which,
 > on every scheme `W ⟶ X` over which `ψ` is surjective in some positive degree, is the morphism
@@ -511,7 +511,7 @@ theorem eq_invertibleMorphism (Φ : R.locus.toFunctor ⟶ s.relativeProjFunctor)
     Φ = R.invertibleMorphism
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.invertibleMorphism_baseChange_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean, line 752](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean#L752). The attribute's comment: “clause (3), the open and the morphism, for a morphism of algebraic spaces f : X -> Y and an ARBITRARY commutative square g o f' = f o g' with X', Y' schemes: with psi' the pullback of psi, U(psi') = (g')^{-1}(U(psi)) as open subspaces, and r_{psi',L'} : U(psi') -> Proj_{Y'}(g^*A) of Tag 01O9 is the base change of r_{L,psi} through the identification Proj_{Y'}(g^*A) = Y' x_Y Proj_Y(A) of Tag 084B, tested on every scheme T -> U(psi')”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.invertibleMorphism_baseChange_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean, line 752](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpace.lean#L752). The attribute's comment: “clause (3), the open and the morphism, for a morphism of algebraic spaces f : X -> Y and an ARBITRARY commutative square g o f' = f o g' with X', Y' schemes: with psi' the pullback of psi, U(psi') = (g')^\{-1}(U(psi)) as open subspaces, and r\_\{psi',L'} : U(psi') -> Proj\_\{Y'}(g^*A) of Tag 01O9 is the base change of r\_\{L,psi} through the identification Proj\_\{Y'}(g^*A) = Y' x\_Y Proj\_Y(A) of Tag 084B, tested on every scheme T -> U(psi')”.
 
 > **Clause (3) of [Stacks, Tag 0D2Z], for a morphism of algebraic spaces `f : X ⟶ Y`.**
 > Consider a commutative square `g ∘ f' = f ∘ g'` with `g' : X' ⟶ X`, `f' : X' ⟶ Y'`,
@@ -543,7 +543,7 @@ theorem invertibleMorphism_baseChange_square {X' Y' : BigFppfOver s.site s.base 
             (relativeProj (s.relativeProjPoints.algebra Y' g))
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.isOpenSubspace_locus_ofUnitalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean, line 543](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean#L543). The attribute's comment: “the source U(psi) of r_{L,psi}, for an algebraic space X with an invertible O_X-module L on its small etale site and a homomorphism of graded algebras psi : f^*A -> (+)_n L^n on X: an open subspace of X”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.isOpenSubspace_locus_ofUnitalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean, line 543](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean#L543). The attribute's comment: “the source U(psi) of r\_\{L,psi}, for an algebraic space X with an invertible O\_X-module L on its small etale site and a homomorphism of graded algebras psi : f^*A -> (+)\_n L^n on X: an open subspace of X”.
 
 > **`U(ψ)` is an open subspace of the algebraic space `X`**, for a pair `(ℒ, ψ)` on `X`.
 
@@ -552,7 +552,7 @@ theorem isOpenSubspace_locus_ofUnitalHom :
     IsOpenSubspace s.site s.base s.containsBase (ofUnitalHom s f L ψ).locus
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.invertibleMorphism_comp_π_ofUnitalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean, line 552](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean#L552). The attribute's comment: “the canonical morphism r_{L,psi} : U(psi) -> Proj_Y(A) over Y, for an algebraic space X with an invertible O_X-module L on its small etale site and a homomorphism of graded algebras psi : f^*A -> (+)_n L^n on X”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.invertibleMorphism_comp_π_ofUnitalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean, line 552](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean#L552). The attribute's comment: “the canonical morphism r\_\{L,psi} : U(psi) -> Proj\_Y(A) over Y, for an algebraic space X with an invertible O\_X-module L on its small etale site and a homomorphism of graded algebras psi : f^*A -> (+)\_n L^n on X”.
 
 > **`r_{ℒ,ψ} : U(ψ) ⟶ Proj_Y(𝒜)` is a morphism over `Y`**, for a pair `(ℒ, ψ)` on the algebraic
 > space `X`.
@@ -563,7 +563,7 @@ theorem invertibleMorphism_comp_π_ofUnitalHom :
       (ofUnitalHom s f L ψ).locus.ι ≫ f.hom
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.mem_locus_ofUnitalHom_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean#L563). The attribute's comment: “clause (2)(a), for a pair (L, psi) on an algebraic space X: a scheme W -> X over which psi|_W is surjective in some degree k >= 1 factors through U(psi)”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.mem_locus_ofUnitalHom_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean#L563). The attribute's comment: “clause (2)(a), for a pair (L, psi) on an algebraic space X: a scheme W -> X over which psi|\_W is surjective in some degree k >= 1 factors through U(psi)”.
 
 > **Clause (2)(a) of [Stacks, Tag 0D2Z]** for a pair `(ℒ, ψ)` on the algebraic space `X`: a
 > scheme `w : W ⟶ X` over which `ψ|_W : (f ∘ w)^*𝒜_k ⟶ (w^*ℒ)^{⊗ k}` is surjective for some
@@ -577,7 +577,7 @@ theorem mem_locus_ofUnitalHom_of_epi {W : BigFppfOver s.site s.base s.containsBa
     yonedaEquiv w ∈ (ofUnitalHom s f L ψ).locus.obj (op W)
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.factor_invertibleMorphism_ofUnitalHom_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean, line 576](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean#L576). The attribute's comment: “clause (2)(b), for a pair (L, psi) on an algebraic space X: for a scheme W -> X over which psi|_W is surjective in degree k >= 1, W -> U(psi) -> Proj_Y(A) is the morphism attached to the quadruple (k, W -> Y, L^k|_W, psi|_W)”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.factor_invertibleMorphism_ofUnitalHom_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean, line 576](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean#L576). The attribute's comment: “clause (2)(b), for a pair (L, psi) on an algebraic space X: for a scheme W -> X over which psi|\_W is surjective in degree k >= 1, W -> U(psi) -> Proj\_Y(A) is the morphism attached to the quadruple (k, W -> Y, L^k|\_W, psi|\_W)”.
 
 > **Clause (2)(b) of [Stacks, Tag 0D2Z]** for a pair `(ℒ, ψ)` on the algebraic space `X`: for a
 > scheme `w : W ⟶ X` over which `ψ|_W` is surjective in degree `k ≥ 1`, the composite
@@ -593,7 +593,7 @@ theorem factor_invertibleMorphism_ofUnitalHom_of_epi {W : BigFppfOver s.site s.b
       (ofUnitalHom s f L ψ).quadruplePoint w hk
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.eq_invertibleMorphism_ofUnitalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean, line 590](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean#L590). The attribute's comment: “r_{L,psi} is characterized by property (2), for a pair (L, psi) on an algebraic space X: it is the only morphism U(psi) -> Proj_Y(A) over Y with clause (2)(b)”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.eq_invertibleMorphism_ofUnitalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean, line 590](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean#L590). The attribute's comment: “r\_\{L,psi} is characterized by property (2), for a pair (L, psi) on an algebraic space X: it is the only morphism U(psi) -> Proj\_Y(A) over Y with clause (2)(b)”.
 
 > **`r_{ℒ,ψ}` is characterized by clause (2)**, for a pair `(ℒ, ψ)` on the algebraic space `X`:
 > a morphism `U(ψ) ⟶ Proj_Y(𝒜)` over `Y` which, on every scheme `W ⟶ X` over which `ψ|_W` is
@@ -611,7 +611,7 @@ theorem eq_invertibleMorphism_ofUnitalHom
     Φ = (ofUnitalHom s f L ψ).invertibleMorphism
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.invertibleMorphism_baseChange_square_ofUnitalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean, line 614](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean#L614). The attribute's comment: “clause (3), the open and the morphism, for a pair (L, psi) on an algebraic space X and an arbitrary commutative square g o f' = f o g' with X', Y' schemes: U(psi') = (g')^{-1}(U(psi)) and r_{psi',L'} is the base change of r_{L,psi}”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.invertibleMorphism_baseChange_square_ofUnitalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean, line 614](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceModule.lean#L614). The attribute's comment: “clause (3), the open and the morphism, for a pair (L, psi) on an algebraic space X and an arbitrary commutative square g o f' = f o g' with X', Y' schemes: U(psi') = (g')^\{-1}(U(psi)) and r\_\{psi',L'} is the base change of r\_\{L,psi}”.
 
 > **Clause (3) of [Stacks, Tag 0D2Z]** for a pair `(ℒ, ψ)` on the algebraic space `X`: for a
 > commutative square `g ∘ f' = f ∘ g'` with `X'`, `Y'` schemes and `ψ'` the pullback of `ψ`,
@@ -636,12 +636,12 @@ theorem invertibleMorphism_baseChange_square_ofUnitalHom
             (relativeProj (s.relativeProjPoints.algebra Y' g))
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.tag0D2Z_space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceTheta0D2Z.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceTheta0D2Z.lean#L238). The attribute's comment: “the whole lemma, in Situation 0849 with Proj_Y(A) the relative Proj of Stacks 084B and X an algebraic space over the algebraic space Y: U(psi) an open subspace of X; the morphism r_{L,psi} : U(psi) -> Proj_Y(A) over Y with clauses (2)(a), (2)(b) and characterized by (2)(b); clause (3) for the open and the morphism; theta : r^*((+)_d O(d)) -> (+)_d L^d|_{U(psi)} a unital multiplicative map with clause (1), restricting at every scheme point of U(psi) to theta of Tag 01O9 and along every square with X', Y' schemes to the theta of the pulled-back psi (clause (3)), and the only map with these restrictions”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.tag0D2Z_space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceTheta0D2Z.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceTheta0D2Z.lean#L238). The attribute's comment: “the whole lemma, in Situation 0849 with Proj\_Y(A) the relative Proj of Stacks 084B and X an algebraic space over the algebraic space Y: U(psi) an open subspace of X; the morphism r\_\{L,psi} : U(psi) -> Proj\_Y(A) over Y with clauses (2)(a), (2)(b) and characterized by (2)(b); clause (3) for the open and the morphism; theta : r^*((+)\_d O(d)) -> (+)\_d L^d|\_\{U(psi)} a unital multiplicative map with clause (1), restricting at every scheme point of U(psi) to theta of Tag 01O9 and along every square with X', Y' schemes to the theta of the pulled-back psi (clause (3)), and the only map with these restrictions”.
 
 > **[Stacks, Tag 0D2Z] for `X` an algebraic space.**  In Situation 0849 let `f : X ⟶ Y` be a
 > morphism of algebraic spaces, `ℒ` an invertible `𝒪_X`-module and `ψ : f^*𝒜 ⟶ ⨁_d ℒ^{⊗ d}` a
-> homomorphism of graded algebras.  Then `U(ψ)` is an open subspace of `X`, `r_{ℒ,ψ} : U(ψ) ⟶
-> Proj_Y(𝒜)` is a morphism over `Y` with clauses (2)(a), (2)(b), characterized by (2)(b), and
+> homomorphism of graded algebras.  Then `U(ψ)` is an open subspace of `X`, `r\_\{ℒ,ψ} : U(ψ) ⟶
+> Proj\_Y(𝒜)` is a morphism over `Y` with clauses (2)(a), (2)(b), characterized by (2)(b), and
 > satisfying clause (3); and there is a map `θ : r^*(⨁_d 𝒪(d)) ⟶ ⨁_d ℒ^{⊗ d}|_{U(ψ)}` of graded
 > algebras with clause (1), whose restriction to every scheme point `w : W ⟶ U(ψ)` is `θ` of
 > [Stacks, Tag 01O9] for `w^*ψ`, which for every square `g ∘ f' = f ∘ g'` with `X'`, `Y'` schemes
@@ -735,7 +735,7 @@ theorem tag0D2Z_space :
         θ' = θ)
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.theta_map_eq_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceTheta.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceTheta.lean#L168). The attribute's comment: “theta for X an algebraic space, on the scheme points of U(psi): for scheme points x : T -> X and x o tau, tau : T' -> T, the map theta_{x o tau} of Tag 01O9 for (x o tau)^*psi is the pullback along tau of theta_x, through the canonical isomorphisms of the sources r'^*((+)_d O(d)) and of the targets (+)_d ((x o tau)^*L)^d. This is the last assertion of clause (3) for the square with Y' = X' = T' and f' = id, that is, the compatibility of the restrictions of theta between scheme points”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.theta_map_eq_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceTheta.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceTheta.lean#L168). The attribute's comment: “theta for X an algebraic space, on the scheme points of U(psi): for scheme points x : T -> X and x o tau, tau : T' -> T, the map theta\_\{x o tau} of Tag 01O9 for (x o tau)^*psi is the pullback along tau of theta\_x, through the canonical isomorphisms of the sources r'^*((+)\_d O(d)) and of the targets (+)\_d ((x o tau)^*L)^d. This is the last assertion of clause (3) for the square with Y' = X' = T' and f' = id, that is, the compatibility of the restrictions of theta between scheme points”.
 
 > **The restriction of `θ` to the scheme point `x ∘ τ` is the pullback along `τ` of its
 > restriction to `x`** (Stacks 0D2Z for an algebraic space `X`, on the scheme points of `U(ψ)`):
@@ -787,7 +787,7 @@ theorem theta_map_eq_pullback :
           (R.lineIso τ x) (R.coveringOpen_twisting_map_le τ x)).hom
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.theta_map_eq_pullback_ofUnitalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceTheta.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceTheta.lean#L248). The attribute's comment: “theta for an algebraic space X with an invertible O_X-module L on its small etale site and a homomorphism of graded algebras psi : f^*A -> (+)_n L^n, on the scheme points of U(psi): theta_{x o tau} is the pullback along tau of theta_x, through the canonical isomorphisms of the sources and of the targets”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.InvertibleTwistingRestriction.theta_map_eq_pullback_ofUnitalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceTheta.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSpaceTheta.lean#L248). The attribute's comment: “theta for an algebraic space X with an invertible O\_X-module L on its small etale site and a homomorphism of graded algebras psi : f^*A -> (+)\_n L^n, on the scheme points of U(psi): theta\_\{x o tau} is the pullback along tau of theta\_x, through the canonical isomorphisms of the sources and of the targets”.
 
 > **The restriction of `θ` to the scheme point `x ∘ τ` is the pullback along `τ` of its
 > restriction to `x`**, for a pair `(ℒ, ψ)` on the small étale site of the algebraic space `X`:
@@ -838,7 +838,7 @@ theorem theta_map_eq_pullback_ofUnitalHom :
           ((ofUnitalHom s f L ψ).coveringOpen_twisting_map_le τ x)).hom
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.invertibleMorphism_baseChange_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSquare.lean, line 730](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSquare.lean#L730). The attribute's comment: “clause (3), the open and the morphism, at a scheme point f : X -> Y of the base (X a scheme), for an ARBITRARY commutative square g o f' = f o g' with X', Y' schemes, on the relative Proj constructed as the functor of quadruples of Tag 084A: with psi' the pullback of psi to (f')^*(g^*A) (through the comparisons (f')^*(g^*A) = (g o f')^*A = (f o g')^*A = (g')^*(f^*A)), U(psi') = (g')^{-1}(U(psi)), and r_{psi',L'} : U(psi') -> Proj_{Y'}(g^*A) of Tag 01O9 is the base change of r_{psi,L} through the identification Proj_{Y'}(g^*A) = Y' x_Y Proj_Y(A) of Tag 084B, tested on every scheme T -> U(psi')”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.invertibleMorphism_baseChange_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSquare.lean, line 730](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSquare.lean#L730). The attribute's comment: “clause (3), the open and the morphism, at a scheme point f : X -> Y of the base (X a scheme), for an ARBITRARY commutative square g o f' = f o g' with X', Y' schemes, on the relative Proj constructed as the functor of quadruples of Tag 084A: with psi' the pullback of psi to (f')^*(g^*A) (through the comparisons (f')^*(g^*A) = (g o f')^*A = (f o g')^*A = (g')^*(f^*A)), U(psi') = (g')^\{-1}(U(psi)), and r\_\{psi',L'} : U(psi') -> Proj\_\{Y'}(g^*A) of Tag 01O9 is the base change of r\_\{psi,L} through the identification Proj\_\{Y'}(g^*A) = Y' x\_Y Proj\_Y(A) of Tag 084B, tested on every scheme T -> U(psi')”.
 
 > **Clause (3) of Stacks 0D2Z, for the open and the morphism, for an arbitrary commutative
 > square, on the constructed relative Proj.**
@@ -885,7 +885,7 @@ theorem invertibleMorphism_baseChange_square :
               hsq)).globalMorphism (relativeProj (s.relativeProjPoints.algebra Y' g))
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.invertibleTheta_baseChange_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSquare.lean, line 783](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSquare.lean#L783). The attribute's comment: “clause (3), theta: at a scheme point f : X -> Y of the base (X a scheme), for an ARBITRARY commutative square g o f' = f o g' with X', Y' schemes, on the relative Proj constructed as the functor of quadruples of Tag 084A, the map theta' : r'^*((+)_d O(d)) -> (+)_d (L')^d|_{U(psi')} of Tag 01O9 for the pullback psi' of psi is the pullback j^*theta of theta along the restriction j : U(psi') -> U(psi) of g', through the canonical isomorphisms of graded algebras j^*r^*((+)_d O(d)) = r'^*((+)_d O(d)) and j^*((+)_d L^d|_{U(psi)}) = (+)_d (L')^d|_{U(psi')}”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.invertibleTheta_baseChange_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSquare.lean, line 783](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSquare.lean#L783). The attribute's comment: “clause (3), theta: at a scheme point f : X -> Y of the base (X a scheme), for an ARBITRARY commutative square g o f' = f o g' with X', Y' schemes, on the relative Proj constructed as the functor of quadruples of Tag 084A, the map theta' : r'^*((+)\_d O(d)) -> (+)\_d (L')^d|\_\{U(psi')} of Tag 01O9 for the pullback psi' of psi is the pullback j^*theta of theta along the restriction j : U(psi') -> U(psi) of g', through the canonical isomorphisms of graded algebras j^*r^*((+)\_d O(d)) = r'^*((+)\_d O(d)) and j^*((+)\_d L^d|\_\{U(psi)}) = (+)\_d (L')^d|\_\{U(psi')}”.
 
 > **The last assertion of clause (3) of Stacks 0D2Z, `θ'` is the pullback of `θ`, for an
 > arbitrary commutative square, on the constructed relative Proj.**
@@ -925,7 +925,7 @@ theorem invertibleTheta_baseChange_square :
           s.shrink.space.property.isSheaf ψ g f' g' hsq).hom
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjPoints.invertibleTheta_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSquare.lean, line 827](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSquare.lean#L827). The attribute's comment: “theta is characterized by clause (1), at the scheme point f : X -> Y: a homomorphism of graded algebras theta' : r^*((+)_d O(d)) -> (+)_d L^d|_{U(psi)} which for every open V of X, d >= 0 and a in (f^*A)_d(V) carries the pullback of psi_P(a) to the restriction of psi(a) is theta”.
+**`AlgebraicGeometry.Space.RelativeProjPoints.invertibleTheta_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSquare.lean, line 827](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjInvertibleSquare.lean#L827). The attribute's comment: “theta is characterized by clause (1), at the scheme point f : X -> Y: a homomorphism of graded algebras theta' : r^*((+)\_d O(d)) -> (+)\_d L^d|\_\{U(psi)} which for every open V of X, d >= 0 and a in (f^*A)\_d(V) carries the pullback of psi\_P(a) to the restriction of psi(a) is theta”.
 
 > **`θ` is characterized by clause (1) of [Stacks, Tag 0D2Z], after base change to the scheme
 > point `f : X ⟶ Y`.**  With the twists of `Proj_Y(𝒜)` at `f` those of `Proj_X(f^*𝒜)`, as in

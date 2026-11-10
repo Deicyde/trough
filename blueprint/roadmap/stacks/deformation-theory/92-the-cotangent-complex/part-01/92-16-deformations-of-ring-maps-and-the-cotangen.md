@@ -61,7 +61,7 @@ noncomputable def automorphismsExtEquiv (X : S.CompatibleExtension.{w}) :
           RingHom.ker X.toB.toRingHom) : X.B') = f.toAlgEquiv b' - b'}
 ```
 
-**`Stacks.Deformation.SquareZeroExtensionProblem.cotangentObstructionClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/CotangentObstruction.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/CotangentObstruction.lean#L111). The attribute's comment: “(1): there is a class in Ext²_B(L_{B/A}, N) whose vanishing is necessary and sufficient for the existence of a solution”.
+**`Stacks.Deformation.SquareZeroExtensionProblem.cotangentObstructionClass_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/CotangentObstruction.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/CotangentObstruction.lean#L111). The attribute's comment: “(1): there is a class in Ext²\_B(L\_\{B/A}, N) whose vanishing is necessary and sufficient for the existence of a solution”.
 
 > **Stacks 08SP**, part (1). The class `ξ ∈ Ext²_B(L_{B/A}, N)` vanishes if and only if the
 > square-zero extension problem has a solution.
@@ -71,7 +71,7 @@ theorem cotangentObstructionClass_eq_zero_iff :
     S.cotangentObstructionClass = 0 ↔ Nonempty (S.CompatibleExtension.{u})
 ```
 
-**`Stacks.Deformation.SquareZeroExtensionProblem.isomorphismClassesCotangentTorsor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/CotangentTorsor.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/CotangentTorsor.lean#L50). The attribute's comment: “(2): if a solution exists, the isomorphism classes of solutions form a principal homogeneous space under Ext¹_B(L_{B/A}, N)”.
+**`Stacks.Deformation.SquareZeroExtensionProblem.isomorphismClassesCotangentTorsor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/CotangentTorsor.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/CotangentTorsor.lean#L50). The attribute's comment: “(2): if a solution exists, the isomorphism classes of solutions form a principal homogeneous space under Ext¹\_B(L\_\{B/A}, N)”.
 
 > **Stacks 08SP**, part (2). If the square-zero extension problem has a solution, its set of
 > isomorphism classes of solutions is a principal homogeneous space under `Ext¹_B(L_{B/A}, N)`.

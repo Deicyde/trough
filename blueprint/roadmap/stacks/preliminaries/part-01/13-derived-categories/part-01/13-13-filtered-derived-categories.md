@@ -28,7 +28,7 @@ public abbrev FiniteFilteredObject (C : Type u) [Category.{v} C]
 
 [Tag 05RZ](https://stacks.math.columbia.edu/tag/05RZ) in the Stacks Project.
 
-**`CochainComplex.filteredQuasiIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L330). The attribute's comment: “part (1)”. References: SGA 4 Vbis (2.5.1), “Σ: Gr_n quasi-iso”; SGA 4½ Rapport (4.4), “filtered quasi-iso”.
+**`CochainComplex.filteredQuasiIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/Filtered/Defs.lean#L330). The attribute's comment: “part (1)”. References: SGA 4 Vbis (2.5.1), “Σ: Gr\_n quasi-iso”; SGA 4½ Rapport (4.4), “filtered quasi-iso”.
 
 > A morphism `α : K^• ⟶ L^•` of filtered cochain complexes of an abelian category `A` is a
 > **filtered quasi-isomorphism** if `gr^p(α) : gr^p K^• ⟶ gr^p L^•` is a quasi-isomorphism for

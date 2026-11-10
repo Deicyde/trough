@@ -44,7 +44,7 @@ theorem algEquiv_prod_or_dualNumber_of_no_intermediateSubalgebra
 
 [Tag 0C1J](https://stacks.math.columbia.edu/tag/0C1J) in the Stacks Project.
 
-**`AlgebraicGeometry.IsGlueingTwoPoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingTwoPoints.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingTwoPoints.lean#L142). The attribute's comment: “glueing_two_points”.
+**`AlgebraicGeometry.IsGlueingTwoPoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingTwoPoints.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/GlueingTwoPoints.lean#L142). The attribute's comment: “glueing\_two\_points”.
 
 > A morphism of algebraic `k`-schemes glues the distinct rational points `a` and `b` if
 > they have the same image, the morphism is finite and is an isomorphism off that image, and
@@ -132,7 +132,7 @@ theorem shortExact_units_of_isSquishingTangentVector {k : Type u} [Field k] [IsA
       (unitsPushforwardMap_comp_epsilonLogDerivSheafHom f θ h)).ShortExact
 ```
 
-**`AlgebraicGeometry.IsSquishingTangentVector`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingTangentVector.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingTangentVector.lean#L77). The attribute's comment: “squishing_tangent_vector”.
+**`AlgebraicGeometry.IsSquishingTangentVector`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingTangentVector.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GlueingSquishing/SquishingTangentVector.lean#L77). The attribute's comment: “squishing\_tangent\_vector”.
 
 > A morphism of algebraic `k`-schemes squishes a tangent vector if that vector is a closed
 > immersion which is contracted to a rational point, the morphism is finite and an isomorphism

@@ -14,7 +14,7 @@ Section 7.23 of the Stacks Project, [Tag 08NG](https://stacks.math.columbia.edu/
 
 [Tag 08NH](https://stacks.math.columbia.edu/tag/08NH) in the Stacks Project.
 
-**`CategoryTheory.Adjunction.nonempty_adjunction_preservesFiniteLimits_isRightAdjoint_and_iso_sheafPushforwardCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LeftAdjoint.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LeftAdjoint.lean#L198). The attribute's comment: “Lower shriek of a continuous functor which has a left adjoint.”. References: SGA 4 III (2.5), “v_*≃u_s and v^*≃u^s”; SGA 4 III (1.3), “special case”; SGA 4 III (2.4), “special case”.
+**`CategoryTheory.Adjunction.nonempty_adjunction_preservesFiniteLimits_isRightAdjoint_and_iso_sheafPushforwardCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LeftAdjoint.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LeftAdjoint.lean#L198). The attribute's comment: “Lower shriek of a continuous functor which has a left adjoint.”. References: SGA 4 III (2.5), “v\_*≃u\_s and v^*≃u^s”; SGA 4 III (1.3), “special case”; SGA 4 III (2.4), “special case”.
 
 > **Stacks 08NH.** Let `(C, J)` and `(D, K)` be sites, let `G : C ⥤ D` be a continuous functor,
 > and let `W : D ⥤ C` be a left adjoint of `G`. Write

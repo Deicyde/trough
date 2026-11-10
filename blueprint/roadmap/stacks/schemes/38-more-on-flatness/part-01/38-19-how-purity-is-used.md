@@ -169,7 +169,7 @@ theorem exists_affineOpen_projective_sections_of_chart
 
 [Tag 05MF](https://stacks.math.columbia.edu/tag/05MF) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_free_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSections05MF.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSections05MF.lean#L153). The attribute's comment: “RESTRICTED: carries hproj, this same existential with Module.Projective in place of Module.Free and the clause on the image of x' in Spec 𝒪_{S', s'} dropped, which is the 05ME half of the source's proof (Lemma 05ME composed with Proposition 05I5)”.
+**`AlgebraicGeometry.exists_elementaryEtaleNeighborhood_free_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSections05MF.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/ElementaryNeighborhood/FreeSections05MF.lean#L153). The attribute's comment: “RESTRICTED: carries hproj, this same existential with Module.Projective in place of Module.Free and the clause on the image of x' in Spec 𝒪\_\{S', s'} dropped, which is the 05ME half of the source's proof (Lemma 05ME composed with Proposition 05I5)”.
 
 > **Stacks Project, Tag 05MF.** A finite-type quasi-coherent module which is flat over the base
 > at a point has free sections on an affine neighbourhood of the lifted point after base change to

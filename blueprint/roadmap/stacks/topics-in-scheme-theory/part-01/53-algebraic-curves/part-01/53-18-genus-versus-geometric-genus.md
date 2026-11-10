@@ -14,7 +14,7 @@ Section 53.18 of the Stacks Project, [Tag 0CE0](https://stacks.math.columbia.edu
 
 [Tag 0CE0](https://stacks.math.columbia.edu/tag/0CE0) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricGenus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusCurve/Geometric.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GenusCurve/Geometric.lean#L83). The attribute's comment: “definition of the geometric genus g_geom(X/k)”.
+**`AlgebraicGeometry.geometricGenus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusCurve/Geometric.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GenusCurve/Geometric.lean#L83). The attribute's comment: “definition of the geometric genus g\_geom(X/k)”.
 
 > The geometric genus `g_geom(X/k)` of a proper scheme `X` over a field `k`: the sum, over the
 > irreducible components of dimension one of the base change of `X` to an algebraic closure of
@@ -84,7 +84,7 @@ public theorem geometricGenus_reduction_birational_normalization {k : Type u} [F
 
 [Tag 0CE3](https://stacks.math.columbia.edu/tag/0CE3) in the Stacks Project.
 
-**`AlgebraicGeometry.genus_le_of_isAffineHom_of_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusCurve/GenusGoesDown.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GenusCurve/GenusGoesDown.lean#L282). The attribute's comment: “with the two cohomology vanishings and the finiteness of H¹(X,𝒪_X) as hypotheses”.
+**`AlgebraicGeometry.genus_le_of_isAffineHom_of_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/GenusCurve/GenusGoesDown.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/GenusCurve/GenusGoesDown.lean#L282). The attribute's comment: “with the two cohomology vanishings and the finiteness of H¹(X,𝒪\_X) as hypotheses”.
 
 > **[Stacks, Tag 0CE3] with its three cohomological inputs as hypotheses.** Let `f : Y ⟶ X` be
 > an affine morphism of schemes over a field `k`, and let `φ : 𝒪_X ⟶ f_*𝒪_Y` be the canonical

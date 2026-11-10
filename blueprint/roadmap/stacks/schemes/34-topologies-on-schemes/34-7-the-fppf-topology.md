@@ -137,7 +137,7 @@ Declarations registered for the tag:
 
 [Tag 03WX](https://stacks.math.columbia.edu/tag/03WX) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isCovering_tautologicallyEquivalent_standardFppfCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/StandardCoverings.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/StandardCoverings.lean#L148). The attribute's comment: “standard_equivalence”.
+**`AlgebraicGeometry.exists_isCovering_tautologicallyEquivalent_standardFppfCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/StandardCoverings.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/StandardCoverings.lean#L148). The attribute's comment: “standard\_equivalence”.
 
 > A standard fppf covering of an object of a big fppf site is tautologically equivalent to a
 > covering belonging to that site.
@@ -153,7 +153,7 @@ public theorem exists_isCovering_tautologicallyEquivalent_standardFppfCovering
         PreZeroHypercover.TautologicallyEquivalent U (V.map B.inclusion)
 ```
 
-**`AlgebraicGeometry.exists_isCovering_tautologicallyEquivalent_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/StandardCoverings.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/StandardCoverings.lean#L167). The attribute's comment: “zariski_equivalence”.
+**`AlgebraicGeometry.exists_isCovering_tautologicallyEquivalent_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/StandardCoverings.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/StandardCoverings.lean#L167). The attribute's comment: “zariski\_equivalence”.
 
 > A Zariski covering of an object of a big fppf site is tautologically equivalent to a
 > covering belonging to that site.
@@ -168,7 +168,7 @@ public theorem exists_isCovering_tautologicallyEquivalent_openCover
           (V.map B.inclusion)
 ```
 
-**`AlgebraicGeometry.exists_isCovering_refining_fppfCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/StandardCoverings.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/StandardCoverings.lean#L194). The attribute's comment: “site_refinement”.
+**`AlgebraicGeometry.exists_isCovering_refining_fppfCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/StandardCoverings.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/StandardCoverings.lean#L194). The attribute's comment: “site\_refinement”.
 
 > An arbitrary fppf covering of an object of a big fppf site is refined by a covering
 > belonging to that site.

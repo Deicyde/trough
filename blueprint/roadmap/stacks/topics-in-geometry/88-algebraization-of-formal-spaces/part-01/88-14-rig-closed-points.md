@@ -457,7 +457,7 @@ public lemma map_comap_eq_map_of_rigPoint_of_etale_quotient
 
 [Tag 0GGJ](https://stacks.math.columbia.edu/tag/0GGJ) in the Stacks Project.
 
-**`Rig.restrictedPowerSeriesBaseChangeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L400). The attribute's comment: “regular_map”.
+**`Rig.restrictedPowerSeriesBaseChangeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L400). The attribute's comment: “regular\_map”.
 
 > Base change of a restricted power series ring by a rig-closed quotient is
 > canonically the restricted power series ring over that quotient.
@@ -478,7 +478,7 @@ public noncomputable def restrictedPowerSeriesBaseChangeEquiv
       RestrictedPowerSeries (I.map (Ideal.Quotient.mk p)) (Fin n)
 ```
 
-**`Rig.restrictedPowerSeriesBaseChangeEquiv_coefficientProjection`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L428). The attribute's comment: “regular_map”.
+**`Rig.restrictedPowerSeriesBaseChangeEquiv_coefficientProjection`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L428). The attribute's comment: “regular\_map”.
 
 > At every finite level, the base-change identification reduces a series
 > coefficientwise modulo `p`. The polynomial `g` is any lift of that level's
@@ -511,7 +511,7 @@ public lemma restrictedPowerSeriesBaseChangeEquiv_coefficientProjection
         (MvPolynomial.map (Ideal.Quotient.mk p) g)
 ```
 
-**`Rig.isRegularRingHom_baseChange_of_rigPoint`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L510). The attribute's comment: “regular_map”.
+**`Rig.isRegularRingHom_baseChange_of_rigPoint`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L510). The attribute's comment: “regular\_map”.
 
 > The canonical map from the rig-closed quotient to the base-changed
 > restricted power series ring is regular.
@@ -532,7 +532,7 @@ public lemma isRegularRingHom_baseChange_of_rigPoint
       (RestrictedPowerSeries I (Fin n) ⊗[A] (A ⧸ p)))
 ```
 
-**`Rig.isGeometricallyRegular_fibre`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 593](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L593). The attribute's comment: “geometrically_regular_fibre”.
+**`Rig.isGeometricallyRegular_fibre`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean, line 593](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ClosedPoint/Regular.lean#L593). The attribute's comment: “geometrically\_regular\_fibre”.
 
 > The fibre of a restricted power series algebra at a rig-closed prime is
 > geometrically regular over the residue field.

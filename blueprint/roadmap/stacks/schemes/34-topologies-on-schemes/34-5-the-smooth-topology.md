@@ -272,7 +272,7 @@ public instance bigSmoothOverMap_isContinuous
       (BigSmoothOver.topology B S.obj S.property)
 ```
 
-**`AlgebraicGeometry.bigSmoothOverMapPullbackAdj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L128). The attribute's comment: “continuous_right_adjoint”.
+**`AlgebraicGeometry.bigSmoothOverMapPullbackAdj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L128). The attribute's comment: “continuous\_right\_adjoint”.
 
 > Base change along `f`, the functor `(U → S) ↦ (U ×_S T → T)` between the big smooth sites
 > over `S` and over `T`, is right adjoint to composition with `f`.
@@ -284,7 +284,7 @@ public noncomputable def bigSmoothOverMapPullbackAdj
       Over.pullback f
 ```
 
-**`AlgebraicGeometry.bigSmoothOverPullback_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L136). The attribute's comment: “continuous_right_adjoint”.
+**`AlgebraicGeometry.bigSmoothOverPullback_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L136). The attribute's comment: “continuous\_right\_adjoint”.
 
 > Base change along `f` is continuous for the two localized big smooth topologies.
 
@@ -296,7 +296,7 @@ public instance bigSmoothOverPullback_isContinuous
       (BigSmoothOver.topology B T.obj T.property)
 ```
 
-**`AlgebraicGeometry.bigSmoothMorphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L146). The attribute's comment: “big_smooth_morphism_of_topoi”.
+**`AlgebraicGeometry.bigSmoothMorphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L146). The attribute's comment: “big\_smooth\_morphism\_of\_topoi”.
 
 > The big smooth morphism of topoi associated to a morphism `f : T ⟶ S` in a big smooth site,
 > induced by the cocontinuous functor sending `V ⟶ T` to the composite `V ⟶ T ⟶ S`.
@@ -351,7 +351,7 @@ public noncomputable def bigSmoothMorphismOfTopoiInverseImageIso
         (BigSmoothOver.topology B T.obj T.property)).leftAdjoint
 ```
 
-**`AlgebraicGeometry.bigSmoothInverseImageObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L212). The attribute's comment: “inverse_image”.
+**`AlgebraicGeometry.bigSmoothInverseImageObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L212). The attribute's comment: “inverse\_image”.
 
 > The sections of an inverse image on `U / T` are the sections of the sheaf on `U / S`:
 > `f⁻¹(G)(U / T) = G(U / S)`.
@@ -364,7 +364,7 @@ public noncomputable def bigSmoothInverseImageObjIso
       G.obj.obj (Opposite.op (Over.mk (U.hom ≫ f)))
 ```
 
-**`AlgebraicGeometry.bigSmoothPushforwardObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L224). The attribute's comment: “direct_image”.
+**`AlgebraicGeometry.bigSmoothPushforwardObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L224). The attribute's comment: “direct\_image”.
 
 > The sections of a direct image on `U / S` are the sections of the sheaf on the base change
 > `U ×_S T / T`: `f_*(F)(U / S) = F(U ×_S T / T)`.
@@ -377,7 +377,7 @@ public noncomputable def bigSmoothPushforwardObjIso
       F.obj.obj (Opposite.op (Over.mk (pullback.snd U.hom f)))
 ```
 
-**`AlgebraicGeometry.bigSmoothInverseImage_isRightAdjoint`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L236). The attribute's comment: “left_adjoint”.
+**`AlgebraicGeometry.bigSmoothInverseImage_isRightAdjoint`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L236). The attribute's comment: “left\_adjoint”.
 
 > The inverse image of a big smooth morphism of topoi has a left adjoint.
 
@@ -387,7 +387,7 @@ public noncomputable instance bigSmoothInverseImage_isRightAdjoint
     (bigSmoothMorphismOfTopoi B f).inverseImage.IsRightAdjoint
 ```
 
-**`AlgebraicGeometry.bigSmoothLowerShriek_preservesPullbacks`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L268). The attribute's comment: “shriek_limits”.
+**`AlgebraicGeometry.bigSmoothLowerShriek_preservesPullbacks`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L268). The attribute's comment: “shriek\_limits”.
 
 > The lower shriek of a big smooth morphism of topoi preserves fibre products.
 
@@ -398,7 +398,7 @@ public noncomputable instance bigSmoothLowerShriek_preservesPullbacks
       (bigSmoothMorphismOfTopoi B f).inverseImage.leftAdjoint
 ```
 
-**`AlgebraicGeometry.bigSmoothLowerShriek_preservesEqualizers`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L276). The attribute's comment: “shriek_limits”.
+**`AlgebraicGeometry.bigSmoothLowerShriek_preservesEqualizers`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L276). The attribute's comment: “shriek\_limits”.
 
 > The lower shriek of a big smooth morphism of topoi preserves equalizers.
 
@@ -411,11 +411,11 @@ public noncomputable instance bigSmoothLowerShriek_preservesEqualizers
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Over.mapPullbackAdj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over.mapPullbackAdj#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean#L64) (StacksFrontier): “continuous_right_adjoint”.
-- [`CategoryTheory.GrothendieckTopology.instIsContinuousOverPullbackOver`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.instIsContinuousOverPullbackOver#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean#L65) (StacksFrontier): “continuous_right_adjoint”.
+- [`CategoryTheory.Over.mapPullbackAdj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over.mapPullbackAdj#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean#L64) (StacksFrontier): “continuous\_right\_adjoint”.
+- [`CategoryTheory.GrothendieckTopology.instIsContinuousOverPullbackOver`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.instIsContinuousOverPullbackOver#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean#L65) (StacksFrontier): “continuous\_right\_adjoint”.
 - [`CategoryTheory.GrothendieckTopology.instIsCocontinuousOverMapOver`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.instIsCocontinuousOverMapOver#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean#L68) (StacksFrontier): “cocontinuity”.
-- [`CategoryTheory.Functor.sheafPushforwardCocontinuousIsoRestriction`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L229), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L82) (StacksFrontier): “direct_image”.
-- [`CategoryTheory.Functor.sheafPullbackCocontinuousIsoSheafPushforwardContinuous`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L139), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L85) (StacksFrontier): “inverse_image”.
+- [`CategoryTheory.Functor.sheafPushforwardCocontinuousIsoRestriction`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L229), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L82) (StacksFrontier): “direct\_image”.
+- [`CategoryTheory.Functor.sheafPullbackCocontinuousIsoSheafPushforwardContinuous`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L139), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L85) (StacksFrontier): “inverse\_image”.
 
 ## Depends on
 

@@ -14,7 +14,7 @@ Section 98.18 of the Stacks Project, [Tag 0CXN](https://stacks.math.columbia.edu
 
 [Tag 0CXN](https://stacks.math.columbia.edu/tag/0CXN) in the Stacks Project.
 
-**`Deformation.Artin.locallyOfFiniteType_and_quasiCompact_of_isPullback_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/FiniteTypeCorner.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/RimSchlessinger/FiniteTypeCorner.lean#L67). The attribute's comment: “observation (3): if S is locally Noetherian, A, B, B' are of finite type over S and B is finite over A, then A' = A ×_B B' is of finite type over S”.
+**`Deformation.Artin.locallyOfFiniteType_and_quasiCompact_of_isPullback_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/FiniteTypeCorner.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/RimSchlessinger/FiniteTypeCorner.lean#L67). The attribute's comment: “observation (3): if S is locally Noetherian, A, B, B' are of finite type over S and B is finite over A, then A' = A ×\_B B' is of finite type over S”.
 
 > **Observation (3) of the section on condition (RS\*).** Let `S` be locally Noetherian, and
 > let `U = Spec B`, `V = Spec A`, `W = Spec B'`, `Z = Spec A'` be affine schemes with morphisms
@@ -34,7 +34,7 @@ public theorem locallyOfFiniteType_and_quasiCompact_of_isPullback_appTop
     LocallyOfFiniteType t ∧ QuasiCompact t
 ```
 
-**`Deformation.Artin.isPushout_of_isPullback_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/FromThickeningPushouts.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/RimSchlessinger/FromThickeningPushouts.lean#L125). The attribute's comment: “observation (1): Spec(A') = Spec(A) ⨿_{Spec(B)} Spec(B') in the category of schemes, for A' = A ×_B B' with B' → B surjective (the square-zero kernel is not needed)”.
+**`Deformation.Artin.isPushout_of_isPullback_appTop`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/RimSchlessinger/FromThickeningPushouts.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/RimSchlessinger/FromThickeningPushouts.lean#L125). The attribute's comment: “observation (1): Spec(A') = Spec(A) ⨿\_\{Spec(B)} Spec(B') in the category of schemes, for A' = A ×\_B B' with B' → B surjective (the square-zero kernel is not needed)”.
 
 > A cartesian square of global sections of four affine schemes, one of whose maps is surjective
 > on global sections, is a cocartesian square of schemes. This is [Stacks Project, Tag 0ET0]

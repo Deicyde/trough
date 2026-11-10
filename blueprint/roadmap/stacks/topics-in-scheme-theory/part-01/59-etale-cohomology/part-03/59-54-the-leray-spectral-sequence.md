@@ -14,7 +14,7 @@ Section 59.54 of the Stacks Project, [Tag 03QA](https://stacks.math.columbia.edu
 
 [Tag 03QB](https://stacks.math.columbia.edu/tag/03QB) in the Stacks Project.
 
-**`AlgebraicGeometry.pushforward_injective_cechCohomology_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/PushforwardAcyclic/CechVanishing.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/PushforwardAcyclic/CechVanishing.lean#L43). The attribute's comment: “cech_vanishing”.
+**`AlgebraicGeometry.pushforward_injective_cechCohomology_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/PushforwardAcyclic/CechVanishing.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/PushforwardAcyclic/CechVanishing.lean#L43). The attribute's comment: “cech\_vanishing”.
 
 > **Stacks 03QB.** The direct image of an injective abelian sheaf on the small étale site of
 > `X` has vanishing positive-degree Čech cohomology for every family of morphisms in the small
@@ -34,7 +34,7 @@ public theorem pushforward_injective_cechCohomology_isZero
         (SmallEtale.topology B X.obj X.property)).obj I).obj p)
 ```
 
-**`AlgebraicGeometry.pushforward_injective_rightAcyclic_pushforward_of_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/PushforwardAcyclic/Pushforward.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/PushforwardAcyclic/Pushforward.lean#L120). The attribute's comment: “pushforward_acyclic”.
+**`AlgebraicGeometry.pushforward_injective_rightAcyclic_pushforward_of_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/PushforwardAcyclic/Pushforward.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/PushforwardAcyclic/Pushforward.lean#L120). The attribute's comment: “pushforward\_acyclic”.
 
 > **Stacks 03QB, with no homological-algebra side condition.** The direct image of an injective
 > abelian étale sheaf is acyclic for a further direct image.
@@ -60,7 +60,7 @@ public theorem pushforward_injective_rightAcyclic_pushforward_of_smallEtale
         (SmallEtale.topology B X.obj X.property)).obj I)
 ```
 
-**`AlgebraicGeometry.pushforward_injective_rightAcyclic_sections_of_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/PushforwardAcyclic/Sections.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/PushforwardAcyclic/Sections.lean#L105). The attribute's comment: “sections_acyclic”.
+**`AlgebraicGeometry.pushforward_injective_rightAcyclic_sections_of_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/PushforwardAcyclic/Sections.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/PushforwardAcyclic/Sections.lean#L105). The attribute's comment: “sections\_acyclic”.
 
 > **Stacks 03QB, with no homological-algebra side condition.** The direct image of an injective
 > abelian étale sheaf is acyclic for sections over any object of the small étale site of the
@@ -90,7 +90,7 @@ public theorem pushforward_injective_rightAcyclic_sections_of_smallEtale
 
 [Tag 03QC](https://stacks.math.columbia.edu/tag/03QC) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_abutsTo_leraySpectralSequence_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LeraySpectralSequence.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LeraySpectralSequence.lean#L226). References: SGA 4½ Arcata (2.3.4), “first spectral sequence”; SGA 4 V (5.3), “small étale sites”; SGA 4 V (5.4), “étale sites, Z = point”; SGA 4 VII (1.5), “H^p(Y,R^qf_*F) SS”; SGA 4 IX (4.2), “more general”; SGA 4½ Th finitude (1.3), “partial”.
+**`AlgebraicGeometry.exists_abutsTo_leraySpectralSequence_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LeraySpectralSequence.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LeraySpectralSequence.lean#L226). References: SGA 4½ Arcata (2.3.4), “first spectral sequence”; SGA 4 V (5.3), “small étale sites”; SGA 4 V (5.4), “étale sites, Z = point”; SGA 4 VII (1.5), “H^p(Y,R^qf\_*F) SS”; SGA 4 IX (4.2), “more general”; SGA 4½ Th finitude (1.3), “partial”.
 
 > **The Leray spectral sequence for the small étale site** (Stacks 03QC). Let `f : X ⟶ Y` be
 > a morphism in a big étale site and let `F` be an abelian sheaf on the small étale site of `X`.

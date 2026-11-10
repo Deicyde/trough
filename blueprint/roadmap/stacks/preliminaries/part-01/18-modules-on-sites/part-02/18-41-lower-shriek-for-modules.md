@@ -14,7 +14,7 @@ Section 18.41 of the Stacks Project, [Tag 0796](https://stacks.math.columbia.edu
 
 [Tag 0797](https://stacks.math.columbia.edu/tag/0797) in the Stacks Project.
 
-**`Stacks.SheafOfModules.lowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriek.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriek.lean#L85). References: SGA 4 IV (14.2), “j_!”.
+**`Stacks.SheafOfModules.lowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriek.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriek.lean#L85). References: SGA 4 IV (14.2), “j\_!”.
 
 > **Stacks 0797.** Lower shriek `g_! : Mod(O_C) ⥤ Mod(O_D)` for the morphism of topoi
 > associated with a continuous and cocontinuous functor of sites, where `O_C = g^{-1} O_D`: a
@@ -25,7 +25,7 @@ def lowerShriek [u.IsCocontinuous J K] :
     _root_.SheafOfModules.{v} (inverseImageRing J K u O) ⥤ _root_.SheafOfModules.{v} O
 ```
 
-**`Stacks.SheafOfModules.lowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriek.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriek.lean#L95). References: SGA 4 IV (14.2), “j_! ⊣ j^*”.
+**`Stacks.SheafOfModules.lowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriek.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriek.lean#L95). References: SGA 4 IV (14.2), “j\_! ⊣ j^*”.
 
 > **Stacks 0797.** Lower shriek is left adjoint to the inverse image `g^* = g^{-1}` of sheaves
 > of modules, for the morphism of topoi associated with a continuous and cocontinuous functor of
@@ -50,7 +50,7 @@ public def smallEtaleModuleProjectionAdjunction :
 
 [Tag 0798](https://stacks.math.columbia.edu/tag/0798) in the Stacks Project.
 
-**`Stacks.SheafOfModules.lowerShriekForgetComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L81). The attribute's comment: “comparison_transformation”.
+**`Stacks.SheafOfModules.lowerShriekForgetComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L81). The attribute's comment: “comparison\_transformation”.
 
 > The canonical natural transformation from lower shriek applied to the underlying abelian
 > sheaf to the underlying abelian sheaf of lower shriek on modules.
@@ -62,7 +62,7 @@ noncomputable def lowerShriekForgetComparison :
       _root_.SheafOfModules.pullback.{w} phi ⋙ _root_.SheafOfModules.toSheaf.{w} R
 ```
 
-**`Stacks.SheafOfModules.lowerShriekForgetComparison_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L133). The attribute's comment: “comparison_transformation”.
+**`Stacks.SheafOfModules.lowerShriekForgetComparison_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L133). The attribute's comment: “comparison\_transformation”.
 
 > The comparison map is adjoint to the forgotten unit of the module lower-shriek
 > adjunction.
@@ -104,7 +104,7 @@ theorem lowerShriekForget_not_isomorphic :
               SheafOfModules.toSheaf.{0} R).obj M))
 ```
 
-**`Stacks.SheafOfModules.isIso_lowerShriekForgetComparison_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 653](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L653). The attribute's comment: “the criterion: agreement iff the comparison is invertible at every j_{U!} O_U”.
+**`Stacks.SheafOfModules.isIso_lowerShriekForgetComparison_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean, line 653](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LowerShriekForget.lean#L653). The attribute's comment: “the criterion: agreement iff the comparison is invertible at every j\_\{U!} O\_U”.
 
 > The canonical comparison between lower shriek on sheaves of modules and lower shriek on the
 > underlying abelian sheaves is an isomorphism if and only if it is an isomorphism at the extension

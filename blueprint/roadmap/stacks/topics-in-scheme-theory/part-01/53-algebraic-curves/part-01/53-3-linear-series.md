@@ -169,7 +169,7 @@ theorem linearSeries_dimension_le_degree_and_genus_eq_zero {k : Type u} [Field k
 
 [Tag 0CCT](https://stacks.math.columbia.edu/tag/0CCT) in the Stacks Project.
 
-**`Stacks.Divisors.LinearlyEquivalent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ClassicalLinearSystem.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ClassicalLinearSystem.lean#L77). The attribute's comment: “the classical definition of linear equivalence: 𝒪_X(D) ≅ 𝒪_X(D')”.
+**`Stacks.Divisors.LinearlyEquivalent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ClassicalLinearSystem.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ClassicalLinearSystem.lean#L77). The attribute's comment: “the classical definition of linear equivalence: 𝒪\_X(D) ≅ 𝒪\_X(D')”.
 
 > **Stacks Project, Tag 0CCT.** Two effective Cartier divisors `D, D' ⊆ X` are *linearly
 > equivalent* when `𝒪_X(D) ≅ 𝒪_X(D')` as `𝒪_X`-modules.
@@ -188,7 +188,7 @@ def LinearlyEquivalent (D D' : X.IdealSheafData) : Prop
 def completeLinearSystem (D : X.IdealSheafData) : Set X.IdealSheafData
 ```
 
-**`Stacks.LinearSystemScheme.completeLinearSystem_eq_closedPoints_abelMapFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/AbelMapFibre.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/AbelMapFibre.lean#L287). The attribute's comment: “|D| is the set of closed points of the fibre of gamma_d : Hilb^d -> Pic over the point of O_X(D); this gives |D| a natural scheme structure”.
+**`Stacks.LinearSystemScheme.completeLinearSystem_eq_closedPoints_abelMapFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/AbelMapFibre.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/AbelMapFibre.lean#L287). The attribute's comment: “|D| is the set of closed points of the fibre of gamma\_d : Hilb^d -> Pic over the point of O\_X(D); this gives |D| a natural scheme structure”.
 
 > **Stacks Project, Tag 0CCT.** Let `X` be a smooth projective curve over an algebraically
 > closed field `k` and `D ⊆ X` an effective Cartier divisor of degree `d`. The fibre
@@ -272,7 +272,7 @@ theorem isLinearSystem_iff_exists_eq_iSup_zeroScheme
 structure IsLinearSystem (L : (linearSystemScheme k f D).IdealSheafData) : Prop
 ```
 
-**`Stacks.LinearSystemScheme.IsLinearSystem.exists_eq_projectiveSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean#L278). The attribute's comment: “if L has dimension r, then L = P(V^dual) where V is a linear subspace of H^0(X, O_X(D)) of dimension r + 1”.
+**`Stacks.LinearSystemScheme.IsLinearSystem.exists_eq_projectiveSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean#L278). The attribute's comment: “if L has dimension r, then L = P(V^dual) where V is a linear subspace of H^0(X, O\_X(D)) of dimension r + 1”.
 
 > If a linear system `L ⊆ |D|` has dimension `r`, then `L = 𝐏(V^∨)` for a linear subspace
 > `V ⊆ H⁰(X, 𝒪_X(D))` of dimension `r + 1`: `L` is the image of the closed immersion
@@ -292,7 +292,7 @@ theorem IsLinearSystem.exists_eq_projectiveSpace {L : (linearSystemScheme k f D)
           φ.inv ≫ L.subschemeι = subspaceImmersion k f D V
 ```
 
-**`Stacks.LinearSystemScheme.IsLinearSystem.linearSeries`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean#L319). The attribute's comment: “the classical linear series L in |D| corresponds to the linear series (O_X(D), V)”.
+**`Stacks.LinearSystemScheme.IsLinearSystem.linearSeries`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/LinearSubsystem.lean#L319). The attribute's comment: “the classical linear series L in |D| corresponds to the linear series (O\_X(D), V)”.
 
 > The linear series `(𝒪_X(D), V)` of [Stacks, Tag 0CCN] corresponding to a linear system
 > `L ⊆ |D|` of dimension `r`, with `L = 𝐏(V^∨)` as in
@@ -306,7 +306,7 @@ def IsLinearSystem.linearSeries {L : (linearSystemScheme k f D).IdealSheafData}
     LinearSeries k f (topologicalKrullDim_le_one k f) d r
 ```
 
-**`Stacks.LinearSystemScheme.completeLinearSystem_iso_projectiveSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/Statement.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/Statement.lean#L217). The attribute's comment: “|D| is isomorphic to P^m_k with m + 1 = h^0(O_X(D)); canonically |D| = P(H^0(X, O_X(D))^dual)”.
+**`Stacks.LinearSystemScheme.completeLinearSystem_iso_projectiveSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/Statement.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LinearSystemScheme/Statement.lean#L217). The attribute's comment: “|D| is isomorphic to P^m\_k with m + 1 = h^0(O\_X(D)); canonically |D| = P(H^0(X, O\_X(D))^dual)”.
 
 > Let `X` be a smooth projective curve over an algebraically closed field `k`, `D ⊆ X` an
 > effective Cartier divisor of degree `d`, and `m` the integer with `m + 1 = h⁰(𝒪_X(D))`. The scheme

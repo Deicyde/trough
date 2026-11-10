@@ -56,7 +56,7 @@ public theorem distanceFunction_le_two_of_zigzag (Y : Scheme.{u}) [IsNoetherian 
 
 [Tag 0EIY](https://stacks.math.columbia.edu/tag/0EIY) in the Stacks Project.
 
-**`Stacks.Algebraization.exists_max_dimensionFunction_on_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceDimensionFunction.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceDimensionFunction.lean#L58). The attribute's comment: “dimension_function_lower_bound”.
+**`Stacks.Algebraization.exists_max_dimensionFunction_on_closed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceDimensionFunction.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceDimensionFunction.lean#L58). The attribute's comment: “dimension\_function\_lower\_bound”.
 
 > **Stacks Project, Tag 0EIY.** A dimension function has a maximum on a nonempty closed
 > subset of a Noetherian scheme.
@@ -68,7 +68,7 @@ public theorem exists_max_dimensionFunction_on_closed
     ∃ m : ℤ, IsGreatest (δ '' (Z : Set Y)) m
 ```
 
-**`Stacks.Algebraization.distanceFunction_ge_dimensionFunction_sub_max`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceDimensionFunction.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceDimensionFunction.lean#L190). The attribute's comment: “dimension_function_lower_bound”.
+**`Stacks.Algebraization.distanceFunction_ge_dimensionFunction_sub_max`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceDimensionFunction.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceDimensionFunction.lean#L190). The attribute's comment: “dimension\_function\_lower\_bound”.
 
 > **Stacks Project, Tag 0EIY.** The distance from `Z` is at least the value of a dimension
 > function minus its maximum value on `Z`.
@@ -81,7 +81,7 @@ public theorem distanceFunction_ge_dimensionFunction_sub_max
     ((δ y - m).toNat : ℕ∞) ≤ distanceFunction Y Z y
 ```
 
-**`Stacks.Algebraization.distanceFunction_le_closureLocalDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceLocalDimension.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceLocalDimension.lean#L75). The attribute's comment: “le_local_dimension”.
+**`Stacks.Algebraization.distanceFunction_le_closureLocalDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceLocalDimension.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceLocalDimension.lean#L75). The attribute's comment: “le\_local\_dimension”.
 
 > **Stacks Project, Tag 0EIY.** The distance to `Z` is at most the local dimension of the
 > closure of `y` at any specialization `z` lying in `Z`.
@@ -94,7 +94,7 @@ public theorem distanceFunction_le_closureLocalDimension
       Order.coheight (⟨z, hzy⟩ : (closure {y} : Set Y))
 ```
 
-**`Stacks.Algebraization.distanceFunction_closedPoint_eq_coheight`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceLocalRing.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceLocalRing.lean#L97). The attribute's comment: “local_catenary_eq_dimension”.
+**`Stacks.Algebraization.distanceFunction_closedPoint_eq_coheight`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceLocalRing.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceLocalRing.lean#L97). The attribute's comment: “local\_catenary\_eq\_dimension”.
 
 > **Stacks Project, Tag 0EIY.** The distance from the closed point of a catenary Noetherian
 > local spectrum is the dimension of the closure of the given prime.
@@ -108,7 +108,7 @@ public theorem distanceFunction_closedPoint_eq_coheight
         Order.coheight y
 ```
 
-**`Stacks.Algebraization.distanceFunction_le_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceOpenRestriction.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceOpenRestriction.lean#L121). The attribute's comment: “open_restriction_ge”.
+**`Stacks.Algebraization.distanceFunction_le_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceOpenRestriction.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceOpenRestriction.lean#L121). The attribute's comment: “open\_restriction\_ge”.
 
 > **Stacks Project, Tag 0EIY.** Restriction to an open subscheme does not
 > decrease the distance from a closed subset.
@@ -123,7 +123,7 @@ public theorem distanceFunction_le_of_isOpenImmersion
     distanceFunction Y Z (j x) ≤ distanceFunction U (Z.preimage j.continuous) x
 ```
 
-**`Stacks.Algebraization.distanceFunction_le_add_one_of_isImmediateSpecialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSpecialization.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSpecialization.lean#L196). The attribute's comment: “immediate_specialization_bound”.
+**`Stacks.Algebraization.distanceFunction_le_add_one_of_isImmediateSpecialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSpecialization.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSpecialization.lean#L196). The attribute's comment: “immediate\_specialization\_bound”.
 
 > **Stacks Project, Tag 0EIY.** An immediate specialization raises the distance from a
 > closed subset by at most one when passing from the special point to the generic point.
@@ -136,7 +136,7 @@ public theorem distanceFunction_le_add_one_of_isImmediateSpecialization
     distanceFunction Y Z y' ≤ distanceFunction Y Z y + 1
 ```
 
-**`Stacks.Algebraization.distanceFunction_le_of_zigzag_specializations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSpecialization.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSpecialization.lean#L225). The attribute's comment: “zigzag_bound”.
+**`Stacks.Algebraization.distanceFunction_le_of_zigzag_specializations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSpecialization.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSpecialization.lean#L225). The attribute's comment: “zigzag\_bound”.
 
 > **Stacks Project, Tag 0EIY.** In a zigzag starting in `Z`, each immediate leftward
 > specialization increases the possible distance by at most one.
@@ -152,7 +152,7 @@ public theorem distanceFunction_le_of_zigzag_specializations
     distanceFunction Y Z (y (Fin.last k)) ≤ (k : ℕ∞)
 ```
 
-**`Stacks.Algebraization.distanceFunction_sublevel_stableUnderSpecialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSublevel.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSublevel.lean#L267). The attribute's comment: “sublevel_specialization_stable”.
+**`Stacks.Algebraization.distanceFunction_sublevel_stableUnderSpecialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSublevel.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSublevel.lean#L267). The attribute's comment: “sublevel\_specialization\_stable”.
 
 > **Stacks Project, Tag 0EIY.** Sublevel sets of the distance from a closed subset of a
 > Noetherian scheme are stable under specialization.
@@ -163,7 +163,7 @@ public theorem distanceFunction_sublevel_stableUnderSpecialization
     StableUnderSpecialization {y : Y | distanceFunction Y Z y ≤ k}
 ```
 
-**`Stacks.Algebraization.distanceFunction_eq_zero_iff_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceVanishing.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceVanishing.lean#L78). The attribute's comment: “zero_iff_mem”.
+**`Stacks.Algebraization.distanceFunction_eq_zero_iff_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceVanishing.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceVanishing.lean#L78). The attribute's comment: “zero\_iff\_mem”.
 
 > **Stacks Project, Tag 0EIY.** A point has distance zero from a closed subset precisely
 > when it lies in that subset.
@@ -205,7 +205,7 @@ public theorem distanceFunction_add_trdeg_le
 
 [Tag 0EJ1](https://stacks.math.columbia.edu/tag/0EJ1) in the Stacks Project.
 
-**`Stacks.Algebraization.distanceFunction_eq_topologicalKrullDim_add_curveChainDistance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceCurveChain.lean, line 594](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceCurveChain.lean#L594). The attribute's comment: “A generalization of case (1) is if Y is of finite type over a field and Z = {z} is a closed point. Then δ_Z(y) = δ(y) + t where t is the minimum length of a chain of curves connecting z to a closed point of the closure of {y}.”.
+**`Stacks.Algebraization.distanceFunction_eq_topologicalKrullDim_add_curveChainDistance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceCurveChain.lean, line 594](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceCurveChain.lean#L594). The attribute's comment: “A generalization of case (1) is if Y is of finite type over a field and Z = \{z} is a closed point. Then δ\_Z(y) = δ(y) + t where t is the minimum length of a chain of curves connecting z to a closed point of the closure of \{y}.”.
 
 > **Stacks Project, Tag 0EJ1, closing sentence.** Let `Y` be of finite type over a field and
 > `Z = {z}` a closed point. Then `δ_Z(y) = δ(y) + t`, where `δ(y) = dim closure {y}` is the usual
@@ -228,7 +228,7 @@ public theorem distanceFunction_eq_topologicalKrullDim_add_curveChainDistance
         ((curveChainDistance Y z (closure {y}) : ℕ∞) : WithBot ℕ∞)
 ```
 
-**`Stacks.Algebraization.distanceFunction_eq_sub_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean#L106). The attribute's comment: “subvariety_specializes”.
+**`Stacks.Algebraization.distanceFunction_eq_sub_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean#L106). The attribute's comment: “subvariety\_specializes”.
 
 > **Stacks Project, Tag 0EJ1, case (2b).** If `y ⤳ ζ`, i.e. the subvariety `closure {ζ}` is
 > contained in `closure {y}`, the distance from `closure {ζ}` to `y` is `δ(y) - δ(ζ)`.
@@ -240,7 +240,7 @@ public theorem distanceFunction_eq_sub_of_specializes
       ((δ y - δ ζ).toNat : ℕ∞)
 ```
 
-**`Stacks.Algebraization.distanceFunction_eq_of_isClosed_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean#L149). The attribute's comment: “closed_point_specializes”.
+**`Stacks.Algebraization.distanceFunction_eq_of_isClosed_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean#L149). The attribute's comment: “closed\_point\_specializes”.
 
 > **Stacks Project, Tag 0EJ1, case (1a).** If `z` is a closed point and `y ⤳ z`, the distance
 > from `{z}` to `y` is `δ(y)`.
@@ -252,7 +252,7 @@ public theorem distanceFunction_eq_of_isClosed_of_specializes
     distanceFunction Y (⟨{z}, hz⟩ : Closeds Y) y = ((δ y).toNat : ℕ∞)
 ```
 
-**`Stacks.Algebraization.distanceFunction_eq_one_of_not_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean#L240). The attribute's comment: “subvariety_codim_small”.
+**`Stacks.Algebraization.distanceFunction_eq_one_of_not_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean#L240). The attribute's comment: “subvariety\_codim\_small”.
 
 > **Stacks Project, Tag 0EJ1, case (2c).** If `ζ` does not specialize to `y` and
 > `δ(y) ≤ δ(ζ)`, the distance from `closure {ζ}` to `y` is `1`.
@@ -264,7 +264,7 @@ public theorem distanceFunction_eq_one_of_not_specializes
     distanceFunction Y (⟨closure {ζ}, isClosed_closure⟩ : Closeds Y) y = 1
 ```
 
-**`Stacks.Algebraization.distanceFunction_eq_sub_add_one_of_not_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean#L378). The attribute's comment: “subvariety_codim_large”.
+**`Stacks.Algebraization.distanceFunction_eq_sub_add_one_of_not_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean#L378). The attribute's comment: “subvariety\_codim\_large”.
 
 > **Stacks Project, Tag 0EJ1, case (2d).** If `y` does not specialize to `ζ` and
 > `δ(ζ) < δ(y)`, the distance from `closure {ζ}` to `y` is `δ(y) - δ(ζ) + 1`.
@@ -277,7 +277,7 @@ public theorem distanceFunction_eq_sub_add_one_of_not_specializes
       ((δ y - δ ζ).toNat : ℕ∞) + 1
 ```
 
-**`Stacks.Algebraization.distanceFunction_eq_add_one_of_not_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean#L394). The attribute's comment: “closed_point_not_specializes”.
+**`Stacks.Algebraization.distanceFunction_eq_add_one_of_not_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceSubvariety.lean#L394). The attribute's comment: “closed\_point\_not\_specializes”.
 
 > **Stacks Project, Tag 0EJ1, case (1b).** If `z` is a closed point and `y` does not
 > specialize to `z`, the distance from `{z}` to `y` is `δ(y) + 1`.
@@ -289,7 +289,7 @@ public theorem distanceFunction_eq_add_one_of_not_specializes
     distanceFunction Y (⟨{z}, hz⟩ : Closeds Y) y = ((δ y).toNat : ℕ∞) + 1
 ```
 
-**`Stacks.Algebraization.distanceFunction_eq_zero_of_closure_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceVanishing.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceVanishing.lean#L110). The attribute's comment: “subvariety_contains_w”.
+**`Stacks.Algebraization.distanceFunction_eq_zero_of_closure_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Algebraization/DistanceVanishing.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Algebraization/DistanceVanishing.lean#L110). The attribute's comment: “subvariety\_contains\_w”.
 
 > **Stacks Project, Tag 0EJ1.** The distance to a closed subset containing the closure of a
 > point is zero.

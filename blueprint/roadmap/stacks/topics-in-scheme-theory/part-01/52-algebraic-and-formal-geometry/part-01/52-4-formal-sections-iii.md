@@ -214,7 +214,7 @@ public theorem limitIntCohomologyTopology_eq_adicModuleTopology [IsNoetherianRin
 
 [Tag 0EH8](https://stacks.math.columbia.edu/tag/0EH8) in the Stacks Project.
 
-**`Stacks.Examples.NonAdicLimit.truncationEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitChart.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitChart.lean#L158). The attribute's comment: “A/I^n is the polynomial chart k[x,y][s,t]/((xs - yt) + (s,t)^n): the truncation that makes the chart isomorphism true, where its untruncated form A[1/x] = k[x^{±1},y][[t]] is false”.
+**`Stacks.Examples.NonAdicLimit.truncationEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitChart.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitChart.lean#L158). The attribute's comment: “A/I^n is the polynomial chart k[x,y][s,t]/((xs - yt) + (s,t)^n): the truncation that makes the chart isomorphism true, where its untruncated form A[1/x] = k[x^\{±1},y][[t]] is false”.
 
 > **The truncation of `A`, Stacks 0EH8.** `A ⧸ Iⁿ` is the *polynomial* chart
 > `k[x,y][s,t] ⧸ ((xs − yt) + (s,t)ⁿ)`: modulo `Iⁿ = (s,t)ⁿ` only the coefficients in total degree
@@ -233,7 +233,7 @@ def truncationEquiv (n : ℕ) :
       (exampleRing k ⧸ adicIdeal k ^ n)
 ```
 
-**`Stacks.Examples.NonAdicLimit.chartTruncationEquivX`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitChart.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitChart.lean#L300). The attribute's comment: “the truncated chart isomorphism A[1/x]/I^n = k[x^{±1},y][t]/(t^n), sending s to (y/x)t; the chart the omitted computation of H^0(X, F_n) needs, and whose untruncated form is false”.
+**`Stacks.Examples.NonAdicLimit.chartTruncationEquivX`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitChart.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitChart.lean#L300). The attribute's comment: “the truncated chart isomorphism A[1/x]/I^n = k[x^\{±1},y][t]/(t^n), sending s to (y/x)t; the chart the omitted computation of H^0(X, F\_n) needs, and whose untruncated form is false”.
 
 > **The truncated chart isomorphism of Stacks 0EH8, on `D(x)`.**
 >
@@ -259,7 +259,7 @@ def chartTruncationEquivX (n : ℕ) :
       truncPoly (coeffAwayX k) n
 ```
 
-**`Stacks.Examples.NonAdicLimit.chartTruncationEquivY`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitChart.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitChart.lean#L351). The attribute's comment: “the truncated chart isomorphism A[1/y]/I^n = k[x,y^{±1}][s]/(s^n), sending t to (x/y)s; the D(y) twin of the chart the omitted computation of H^0(X, F_n) needs, and whose untruncated form is likewise false”.
+**`Stacks.Examples.NonAdicLimit.chartTruncationEquivY`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitChart.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitChart.lean#L351). The attribute's comment: “the truncated chart isomorphism A[1/y]/I^n = k[x,y^\{±1}][s]/(s^n), sending t to (x/y)s; the D(y) twin of the chart the omitted computation of H^0(X, F\_n) needs, and whose untruncated form is likewise false”.
 
 > **The truncated chart isomorphism of Stacks 0EH8, on `D(y)`.**
 >
@@ -310,7 +310,7 @@ def chartTruncationEquivY (n : ℕ) :
 theorem notMemAdicIdealSmulFormalLimit (e : ℕ) : NotMemAdicIdealSmulFormalLimit k e
 ```
 
-**`Stacks.Examples.NonAdicLimit.notMem_or_notMem_of_adicIdeal_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L237). The attribute's comment: “the open neighbourhood V of V(I·O_X) in X on which t/x = s/y is regular is D(x) ∪ D(y)”.
+**`Stacks.Examples.NonAdicLimit.notMem_or_notMem_of_adicIdeal_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Completion/NonAdicLimitTopology.lean#L237). The attribute's comment: “the open neighbourhood V of V(I·O\_X) in X on which t/x = s/y is regular is D(x) ∪ D(y)”.
 
 > **The neighbourhood `V` of Stacks 0EH8.** At every point of `X = Spec(A) ∖ V(𝔞)` at which
 > `I` vanishes, one of `x`, `y` is invertible: `V(I𝒪_X) ⊆ D(x) ∪ D(y)`. So `D(x) ∪ D(y)` is the

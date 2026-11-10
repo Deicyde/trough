@@ -14,7 +14,7 @@ Section 53.4 of the Stacks Project, [Tag 0E31](https://stacks.math.columbia.edu/
 
 [Tag 0BS2](https://stacks.math.columbia.edu/tag/0BS2) in the Stacks Project.
 
-**`Stacks.Duality.isDualizingComplex_dualizingComplexOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexOverFieldClauses.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexOverFieldClauses.lean#L106). The attribute's comment: “the existence assertion: ω_X^• = f^× O_{Spec k} is a dualizing complex”.
+**`Stacks.Duality.isDualizingComplex_dualizingComplexOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexOverFieldClauses.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexOverFieldClauses.lean#L106). The attribute's comment: “the existence assertion: ω\_X^• = f^× O\_\{Spec k} is a dualizing complex”.
 
 > **`ω_X^• = f^×(𝒪_{Spec k})` is a dualizing complex** on a proper scheme over a field
 > ([Stacks, Tag 0FVV]).
@@ -25,7 +25,7 @@ theorem isDualizingComplex_dualizingComplexOverField :
     IsDualizingComplex (dualizingComplexOverField f).obj
 ```
 
-**`Stacks.Duality.isZero_homology_dualizingComplexOverField_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexOverFieldClauses.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexOverFieldClauses.lean#L122). The attribute's comment: “clause (1), at the constructed ω_X^• = f^× O_{Spec k}”.
+**`Stacks.Duality.isZero_homology_dualizingComplexOverField_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexOverFieldClauses.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexOverFieldClauses.lean#L122). The attribute's comment: “clause (1), at the constructed ω\_X^• = f^× O\_\{Spec k}”.
 
 > **[Stacks, Tag 0BS2], clause (1).** On a proper scheme of dimension at most one over a field,
 > `H^i(ω_X^•)` is nonzero only for `i = -1, 0`.
@@ -37,7 +37,7 @@ theorem isZero_homology_dualizingComplexOverField_of_ne (hdim : topologicalKrull
       (dualizingComplexOverField f).obj)
 ```
 
-**`Stacks.Duality.dualizingSheafOverField_clauseTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexOverFieldClauses.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexOverFieldClauses.lean#L205). The attribute's comment: “clause (2), at the constructed ω_X = H^{-1}(f^× O_{Spec k})”.
+**`Stacks.Duality.dualizingSheafOverField_clauseTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexOverFieldClauses.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexOverFieldClauses.lean#L205). The attribute's comment: “clause (2), at the constructed ω\_X = H^\{-1}(f^× O\_\{Spec k})”.
 
 > **[Stacks, Tag 0BS2], clause (2).** On a proper scheme of dimension at most one over a field,
 > `ω_X = H^{-1}(ω_X^•)` is a coherent Cohen--Macaulay module whose support is the union of the
@@ -51,7 +51,7 @@ theorem dualizingSheafOverField_clauseTwo (hdim : topologicalKrullDim X ≤ 1) :
         ⋃₀ {C ∈ irreducibleComponents X | topologicalKrullDim C = 1}
 ```
 
-**`Stacks.Duality.nontrivial_stalk_homology_zero_dualizingComplexOverField_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexOverFieldClauses.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexOverFieldClauses.lean#L217). The attribute's comment: “clause (3), at the constructed ω_X^• = f^× O_{Spec k}”.
+**`Stacks.Duality.nontrivial_stalk_homology_zero_dualizingComplexOverField_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexOverFieldClauses.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexOverFieldClauses.lean#L217). The attribute's comment: “clause (3), at the constructed ω\_X^• = f^× O\_\{Spec k}”.
 
 > **[Stacks, Tag 0BS2], clause (3).** On a proper scheme of dimension at most one over a
 > field, for `x ∈ X` closed the module `H^0(ω_{X,x}^•)` is nonzero if and only if either
@@ -208,7 +208,7 @@ theorem homDualizingSheafAddEquiv_naturality (hdim : topologicalKrullDim X ≤ (
       cohomologyOverFieldMap k f g 1 ≫ homDualizingSheafAddEquiv f hdim F hF α
 ```
 
-**`Stacks.Duality.exists_natural_linearEquiv_hom_dualizingSheafOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafSmoothCurve.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafSmoothCurve.lean#L161). The attribute's comment: “clause (5): functorial isomorphisms of k-vector spaces Hom(F, ω_X) = Hom_k(H^1(X, F), k) for F quasi-coherent, at the constructed ω_X = H^{-1}(f^× O_{Spec k})”.
+**`Stacks.Duality.exists_natural_linearEquiv_hom_dualizingSheafOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafSmoothCurve.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafSmoothCurve.lean#L161). The attribute's comment: “clause (5): functorial isomorphisms of k-vector spaces Hom(F, ω\_X) = Hom\_k(H^1(X, F), k) for F quasi-coherent, at the constructed ω\_X = H^\{-1}(f^× O\_\{Spec k})”.
 
 > **Clause (5) of [Stacks, Tag 0BS2]** for the constructed dualizing sheaf
 > `ω_X = H^{-1}(f^×(𝒪_{Spec k}))`: for `X` proper of dimension at most one over `k` there are
@@ -229,7 +229,7 @@ theorem exists_natural_linearEquiv_hom_dualizingSheafOverField [IsProper f]
         e F hF (u ≫ φ) = (e G hG φ).comp (cohomologyOverFieldMap k f u 1).hom
 ```
 
-**`Stacks.Duality.nonempty_dualizingSheafOverField_iso_relativeDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafSmoothCurve.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafSmoothCurve.lean#L209). The attribute's comment: “clause (6): ω_X ≅ Ω_{X/k} when X → Spec k is smooth of relative dimension 1, at the constructed ω_X = H^{-1}(f^× O_{Spec k})”.
+**`Stacks.Duality.nonempty_dualizingSheafOverField_iso_relativeDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafSmoothCurve.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafSmoothCurve.lean#L209). The attribute's comment: “clause (6): ω\_X ≅ Ω\_\{X/k} when X → Spec k is smooth of relative dimension 1, at the constructed ω\_X = H^\{-1}(f^× O\_\{Spec k})”.
 
 > **Clause (6) of [Stacks, Tag 0BS2]**: if `f : X ⟶ Spec k` is proper and smooth of relative
 > dimension one, the dualizing sheaf `ω_X = H^{-1}(f^×(𝒪_{Spec k}))` is isomorphic to the sheaf of
@@ -439,7 +439,7 @@ theorem exists_extSuccDuality
 
 [Tag 0BS4](https://stacks.math.columbia.edu/tag/0BS4) in the Stacks Project.
 
-**`AlgebraicGeometry.finrank_cohomologyOverField_one_eq_zero_tensorPowerModuleNegOneTensorDualizing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/DualizingInvertibleDimensionDuality.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/DualizingInvertibleDimensionDuality.lean#L98). The attribute's comment: “the fourth display, dim_k H^1(X, L) = dim_k H^0(X, L^(tensor -1) tensor omega_X), at an invertible L and the dualizing sheaf of Tag 0BS2, for every proper X of dimension at most one over k; the Remark's Cohen-Macaulay and equidimensionality conditions are not needed”.
+**`AlgebraicGeometry.finrank_cohomologyOverField_one_eq_zero_tensorPowerModuleNegOneTensorDualizing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/DualizingInvertibleDimensionDuality.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/DualizingInvertibleDimensionDuality.lean#L98). The attribute's comment: “the fourth display, dim\_k H^1(X, L) = dim\_k H^0(X, L^(tensor -1) tensor omega\_X), at an invertible L and the dualizing sheaf of Tag 0BS2, for every proper X of dimension at most one over k; the Remark's Cohen-Macaulay and equidimensionality conditions are not needed”.
 
 > **`dim_k H¹(X, ℒ) = dim_k H⁰(X, ℒ^{⊗ -1} ⊗ ω_X)`** for an invertible `𝒪_X`-module `ℒ` on a
 > proper scheme `X` of dimension at most one over a field `k`, with
@@ -466,7 +466,7 @@ public theorem finrank_cohomologyOverField_one_eq_zero_tensorPowerModuleNegOneTe
             (tensorPowerModule L (-1))).obj (Stacks.Duality.dualizingSheafOverField f))) 0)
 ```
 
-**`AlgebraicGeometry.finrank_cohomologyOverField_zero_eq_one_tensorPowerModuleNegOneTensorDualizing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/DualizingInvertibleDimensionDuality.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/DualizingInvertibleDimensionDuality.lean#L128). The attribute's comment: “the third display, dim_k H^0(X, L) = dim_k H^1(X, L^(tensor -1) tensor omega_X), for X proper over k, Cohen-Macaulay and equidimensional of dimension one, at the dualizing sheaf of Tag 0BS2”.
+**`AlgebraicGeometry.finrank_cohomologyOverField_zero_eq_one_tensorPowerModuleNegOneTensorDualizing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/DualizingInvertibleDimensionDuality.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/DualizingInvertibleDimensionDuality.lean#L128). The attribute's comment: “the third display, dim\_k H^0(X, L) = dim\_k H^1(X, L^(tensor -1) tensor omega\_X), for X proper over k, Cohen-Macaulay and equidimensional of dimension one, at the dualizing sheaf of Tag 0BS2”.
 
 > **`dim_k H⁰(X, ℒ) = dim_k H¹(X, ℒ^{⊗ -1} ⊗ ω_X)`** for an invertible `𝒪_X`-module `ℒ` on a
 > proper scheme `X` over a field `k` which is Cohen--Macaulay and equidimensional of dimension one,
@@ -492,7 +492,7 @@ public theorem finrank_cohomologyOverField_zero_eq_one_tensorPowerModuleNegOneTe
             (tensorPowerModule L (-1))).obj (Stacks.Duality.dualizingSheafOverField f))) 1)
 ```
 
-**`Stacks.Duality.LocallyFreeTwist.dualityDerivedTensorLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LocallyFreeDualizingDuality.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LocallyFreeDualizingDuality.lean#L246). The attribute's comment: “the first display, Hom_k(H^{-i}(X, E), k) = H^i(X, E^dual tensor^L omega^bullet), as an isomorphism of k-vector spaces, for E finite locally free; for every quasi-compact quasi-separated X over k, of which a proper X of dimension at most one is a case”.
+**`Stacks.Duality.LocallyFreeTwist.dualityDerivedTensorLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LocallyFreeDualizingDuality.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LocallyFreeDualizingDuality.lean#L246). The attribute's comment: “the first display, Hom\_k(H^\{-i}(X, E), k) = H^i(X, E^dual tensor^L omega^bullet), as an isomorphism of k-vector spaces, for E finite locally free; for every quasi-compact quasi-separated X over k, of which a proper X of dimension at most one is a case”.
 
 > **[Stacks, Tag 0BS4], first display**: for a finite locally free `E` with dual `E^∨`,
 >
@@ -512,7 +512,7 @@ def dualityDerivedTensorLinearEquiv (i : ℤ) :
           (dualizingComplexOverField f).obj) i
 ```
 
-**`Stacks.Duality.LocallyFreeTwist.dualityTensorDualizingSheafLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LocallyFreeDualizingDuality.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LocallyFreeDualizingDuality.lean#L316). The attribute's comment: “the second display, Hom_k(H^{-i}(X, E), k) = H^{1+i}(X, E^dual tensor omega_X), as an isomorphism of k-vector spaces, for X proper over k, Cohen-Macaulay and equidimensional of dimension one, and E finite locally free”.
+**`Stacks.Duality.LocallyFreeTwist.dualityTensorDualizingSheafLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LocallyFreeDualizingDuality.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LocallyFreeDualizingDuality.lean#L316). The attribute's comment: “the second display, Hom\_k(H^\{-i}(X, E), k) = H^\{1+i}(X, E^dual tensor omega\_X), as an isomorphism of k-vector spaces, for X proper over k, Cohen-Macaulay and equidimensional of dimension one, and E finite locally free”.
 
 > **[Stacks, Tag 0BS4], second display**: if `X` is proper over `k`, Cohen--Macaulay and
 > equidimensional of dimension one, then for a finite locally free `E` with dual `E^∨`,
@@ -533,7 +533,7 @@ def dualityTensorDualizingSheafLinearEquiv [IsProper f]
           (dualizingSheafOverField f))) (1 + i)
 ```
 
-**`Stacks.Duality.LocallyFreeTwist.dualityTensorDualizingSheafLinearEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LocallyFreeDualizingDuality.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LocallyFreeDualizingDuality.lean#L548). The attribute's comment: “the second display: the canonical isomorphism is natural in the finite locally free E, for the dual map E_2^dual -> E_1^dual of E_1 -> E_2”.
+**`Stacks.Duality.LocallyFreeTwist.dualityTensorDualizingSheafLinearEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LocallyFreeDualizingDuality.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LocallyFreeDualizingDuality.lean#L548). The attribute's comment: “the second display: the canonical isomorphism is natural in the finite locally free E, for the dual map E\_2^dual -> E\_1^dual of E\_1 -> E\_2”.
 
 > **The second display of [Stacks, Tag 0BS4] is natural in `E`**: for `g : E₁ ⟶ E₂` between
 > finite locally free modules, precomposition with `H^{-i}(X, g)` corresponds to
@@ -576,7 +576,7 @@ theorem nonempty_dualizingComplexOverField_baseChange_iso :
         dualizingSheafOverField f')
 ```
 
-**`Stacks.Duality.dualizingComplexOverFieldFactorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexFactorization.lean, line 509](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexFactorization.lean#L509). The attribute's comment: “part (1), in the form the proof states it: omega_X^bullet over k is omega_X^bullet over k', along which the properties of Tag 0BS2 over k' transfer; omega_X is dualizingSheafOverFieldFactorIso and clause (4) over k' is extDualityAddEquivOfFactor”.
+**`Stacks.Duality.dualizingComplexOverFieldFactorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexFactorization.lean, line 509](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingComplexFactorization.lean#L509). The attribute's comment: “part (1), in the form the proof states it: omega\_X^bullet over k is omega\_X^bullet over k', along which the properties of Tag 0BS2 over k' transfer; omega\_X is dualizingSheafOverFieldFactorIso and clause (4) over k' is extDualityAddEquivOfFactor”.
 
 > **[Stacks, Tag 0E32], part (1).** Let `X` be proper over a field `k` and suppose
 > `X ⟶ Spec k` factors as `X ⟶ Spec k' ⟶ Spec k` for a field `k'`. Then the dualizing complex
@@ -622,7 +622,7 @@ theorem dualizingComplexOverField_closedImmersion
 
 [Tag 0E34](https://stacks.math.columbia.edu/tag/0E34) in the Stacks Project.
 
-**`Stacks.Curves.dualizingSheafOverField_closedSubcurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ComplementaryCurve/DualizingSheaf.lean, line 963](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ComplementaryCurve/DualizingSheaf.lean#L963). The attribute's comment: “in (2) and (4) the source swaps the roles of i and j: the forms stated are I = j_* I', J = i_* J', omega_Z = I'(j^* omega_X) and j_* omega_Z = I omega_X”.
+**`Stacks.Curves.dualizingSheafOverField_closedSubcurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ComplementaryCurve/DualizingSheaf.lean, line 963](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ComplementaryCurve/DualizingSheaf.lean#L963). The attribute's comment: “in (2) and (4) the source swaps the roles of i and j: the forms stated are I = j\_* I', J = i\_* J', omega\_Z = I'(j^* omega\_X) and j\_* omega\_Z = I omega\_X”.
 
 > **Stacks Project, Tag 0E34.** Let `X` be a proper scheme over a field which is Gorenstein,
 > reduced, and equidimensional of dimension one. Let `C` cut out a reduced closed subscheme

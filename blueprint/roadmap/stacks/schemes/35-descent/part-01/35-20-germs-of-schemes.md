@@ -14,7 +14,7 @@ Section 35.20 of the Stacks Project, [Tag 04QQ](https://stacks.math.columbia.edu
 
 [Tag 04QR](https://stacks.math.columbia.edu/tag/04QR) in the Stacks Project.
 
-**`AlgebraicGeometry.GermOfScheme`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/Basic.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germ/Basic.lean#L58). The attribute's comment: “germ_of_scheme”.
+**`AlgebraicGeometry.GermOfScheme`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/Basic.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germ/Basic.lean#L58). The attribute's comment: “germ\_of\_scheme”.
 
 > A germ of a scheme is a scheme together with a distinguished point.
 
@@ -22,7 +22,7 @@ Section 35.20 of the Stacks Project, [Tag 04QQ](https://stacks.math.columbia.edu
 structure GermOfScheme
 ```
 
-**`AlgebraicGeometry.MorphismOfGerms`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/Basic.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germ/Basic.lean#L111). The attribute's comment: “morphism_of_germs”.
+**`AlgebraicGeometry.MorphismOfGerms`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/Basic.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germ/Basic.lean#L111). The attribute's comment: “morphism\_of\_germs”.
 
 > A morphism of germs of schemes is a representative defined on an open neighbourhood of the
 > distinguished source point, modulo agreement on a possibly smaller such neighbourhood.
@@ -31,7 +31,7 @@ structure GermOfScheme
 noncomputable def MorphismOfGerms (X S : GermOfScheme.{u}) : Type u
 ```
 
-**`AlgebraicGeometry.MorphismOfGerms.comp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/Basic.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germ/Basic.lean#L294). The attribute's comment: “composition_of_germs”.
+**`AlgebraicGeometry.MorphismOfGerms.comp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/Basic.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germ/Basic.lean#L294). The attribute's comment: “composition\_of\_germs”.
 
 > Composition of morphisms of germs, obtained by composing representatives after restricting
 > the first one to the inverse image of the domain of the second.

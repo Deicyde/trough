@@ -113,7 +113,7 @@ def nodeRing (k : Type*) [Field k] : Subring (Polynomial k)
 
 [Tag 00JH](https://stacks.math.columbia.edu/tag/00JH) in the Stacks Project.
 
-**`K0_product`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Product/K0.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/KTheory/Grothendieck/Product/K0.lean#L405). The attribute's comment: “K_0”.
+**`K0_product`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Product/K0.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/KTheory/Grothendieck/Product/K0.lean#L405). The attribute's comment: “K\_0”.
 
 > For a product ring `R = R₁ × R₂`, the natural
 > homomorphism `K₀(R) → K₀(R₁) × K₀(R₂)`, given on generators by
@@ -134,7 +134,7 @@ theorem K0_product (R1 R2 : Type u) [CommRing R1] [CommRing R2] :
             K0.mk (M.baseChangeHom (RingHom.snd R1 R2)) )
 ```
 
-**`K0prime_product`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Product/K0Prime.lean, line 513](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/KTheory/Grothendieck/Product/K0Prime.lean#L513). The attribute's comment: “K'_0”.
+**`K0prime_product`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Product/K0Prime.lean, line 513](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/KTheory/Grothendieck/Product/K0Prime.lean#L513). The attribute's comment: “K'\_0”.
 
 > Assume in addition that `R₁` and `R₂` are Noetherian
 > (equivalently that `R = R₁ × R₂` is Noetherian).  Then the natural
@@ -158,7 +158,7 @@ theorem K0prime_product (R1 R2 : Type u) [CommRing R1] [CommRing R2]
 
 [Tag 00JI](https://stacks.math.columbia.edu/tag/00JI) in the Stacks Project.
 
-**`exists_finite_module_length_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Artinian.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/KTheory/Grothendieck/Artinian.lean#L92). The attribute's comment: “Surjectivity ingredient only: every n : ℕ is the length of a finite module. K'_0(R) and the isomorphism length_R : K'_0(R) ≃ ℤ are not formalized.”.
+**`exists_finite_module_length_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Artinian.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/KTheory/Grothendieck/Artinian.lean#L92). The attribute's comment: “Surjectivity ingredient only: every n : ℕ is the length of a finite module. K'\_0(R) and the isomorphism length\_R : K'\_0(R) ≃ ℤ are not formalized.”.
 
 > **Stacks 00JI (length-surjectivity form).**
 >
@@ -200,7 +200,7 @@ theorem K0.rank_isIso
 
 [Tag 00JK](https://stacks.math.columbia.edu/tag/00JK) in the Stacks Project.
 
-**`length_eq_finrank_mul_length_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Artinian.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/KTheory/Grothendieck/Artinian.lean#L143). The attribute's comment: “Numerical identity length P = rank P * length R only; the commutative diagram K_0(R) → K'_0(R) → ℤ is not formalized.”.
+**`length_eq_finrank_mul_length_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/KTheory/Grothendieck/Artinian.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/KTheory/Grothendieck/Artinian.lean#L143). The attribute's comment: “Numerical identity length P = rank P * length R only; the commutative diagram K\_0(R) → K'\_0(R) → ℤ is not formalized.”.
 
 > Over a local Artinian ring `R`, the length of any finite projective
 > `R`-module `P` equals the rank of `P` times the length of `R`. This is the

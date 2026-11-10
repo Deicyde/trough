@@ -27,7 +27,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.Pullback.isAffine_of_isAffine_isAffine_isAffine`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Pullback.isAffine_of_isAffine_isAffine_isAffine#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L340) (StacksFrontier). References: EGA I (3.2.2), “partial”; EGA I (3.3.13), “Affineness of X ×_S S′”; EGA II (1.4.6), “special case”; EGA II (1.5.4), “special case”; EGA II (1.5.5), “special case”; EGA II (1.6.2), “(iii), special case”; EGA III (6.5.2), “Affineness clause”.
+- [`AlgebraicGeometry.Scheme.Pullback.isAffine_of_isAffine_isAffine_isAffine`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Pullback.isAffine_of_isAffine_isAffine_isAffine#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L340) (StacksFrontier). References: EGA I (3.2.2), “partial”; EGA I (3.3.13), “Affineness of X ×\_S S′”; EGA II (1.4.6), “special case”; EGA II (1.5.4), “special case”; EGA II (1.5.5), “special case”; EGA II (1.6.2), “(iii), special case”; EGA III (6.5.2), “Affineness clause”.
 
 ## Tag 01JR, a lemma
 

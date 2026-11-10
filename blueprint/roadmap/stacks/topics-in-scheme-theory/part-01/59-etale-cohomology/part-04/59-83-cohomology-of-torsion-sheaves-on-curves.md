@@ -279,7 +279,7 @@ theorem curveStatements_constantSheaf_of_smooth {k : Type u} [Field k] [IsAlgClo
 
 [Tag 0A47](https://stacks.math.columbia.edu/tag/0A47) in the Stacks Project.
 
-**`Stacks.ArtinSchreier.exact_affineLineBoundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L113). The attribute's comment: “the exact sequence k[x] → k[x] → H¹(A¹_k, Z/p) → 0, first arrow f ↦ f^p - f”.
+**`Stacks.ArtinSchreier.exact_affineLineBoundary`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L113). The attribute's comment: “the exact sequence k[x] → k[x] → H¹(A¹\_k, Z/p) → 0, first arrow f ↦ f^p - f”.
 
 > **The exact sequence `k[x] ⟶ k[x] ⟶ H¹(𝐀¹_k, 𝐙/p𝐙) ⟶ 0`.** Let `k` be a field of
 > characteristic `p > 0`. The boundary of the Artin–Schreier sequence on the affine line is onto
@@ -293,7 +293,7 @@ theorem exact_affineLineBoundary :
       Function.Surjective (affineLineBoundary.{w} k p)
 ```
 
-**`Stacks.ArtinSchreier.existsUnique_affineLineBoundary_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L137). The attribute's comment: “every class of H¹(A¹_k, Z/p) is the image of exactly one sum over p ∤ n of λ_n x^n”.
+**`Stacks.ArtinSchreier.existsUnique_affineLineBoundary_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L137). The attribute's comment: “every class of H¹(A¹\_k, Z/p) is the image of exactly one sum over p ∤ n of λ\_n x^n”.
 
 > **The representatives, read in cohomology.** Let `k` be an algebraically closed field of
 > characteristic `p > 0`. Every class in `H¹(𝐀¹_k, 𝐙/p𝐙)` is the boundary of exactly one polynomial
@@ -305,7 +305,7 @@ theorem existsUnique_affineLineBoundary_eq [IsAlgClosed k]
     ∃! f : k[X], (∀ n, p ∣ n → f.coeff n = 0) ∧ affineLineBoundary.{w} k p f = c
 ```
 
-**`Stacks.ArtinSchreier.not_surjective_etaleCohomologyRestrictionMap_affineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L238). The attribute's comment: “H¹(A¹_k, Z/p) → H¹(A¹_{k'}, Z/p) is not surjective when k ⊊ k'”.
+**`Stacks.ArtinSchreier.not_surjective_etaleCohomologyRestrictionMap_affineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L238). The attribute's comment: “H¹(A¹\_k, Z/p) → H¹(A¹\_\{k'}, Z/p) is not surjective when k ⊊ k'”.
 
 > **`H¹(𝐀¹_k, 𝐙/p𝐙) → H¹(𝐀¹_{k'}, 𝐙/p𝐙)` is not surjective.** Let `k` be an algebraically closed
 > field of characteristic `p > 0` and `k'/k` an extension with `k' ≠ k`. Then the restriction map
@@ -325,7 +325,7 @@ theorem not_surjective_etaleCohomologyRestrictionMap_affineLine [IsAlgClosed k]
       (etaleConstantZMod (affineLine k) p) 1)
 ```
 
-**`Stacks.ArtinSchreier.exists_not_bijective_etaleCohomologyRestrictionMap_affineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L291). The attribute's comment: “so H¹(A¹_k, Z/p) → H¹(A¹_{k'}, Z/p) is not an isomorphism in general”.
+**`Stacks.ArtinSchreier.exists_not_bijective_etaleCohomologyRestrictionMap_affineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ArtinSchreierSequence/AffineLine.lean#L291). The attribute's comment: “so H¹(A¹\_k, Z/p) → H¹(A¹\_\{k'}, Z/p) is not an isomorphism in general”.
 
 > **The restriction map is not an isomorphism in general.** For every algebraically closed field
 > `k` of characteristic `p > 0` there is an algebraically closed extension `k'/k` — an algebraic
@@ -361,7 +361,7 @@ theorem bijective_etaleCohomologyRestrictionMap_affineLine_of_isUnit {n : ℕ} (
         (AddCommGrpCat.of (ULift.{max (u + 1) v} (ZMod n)))) q)
 ```
 
-**`Stacks.ArtinSchreier.not_bijective_etaleFundamentalGroupMap_affineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/AffineLineScalarExtension.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/AffineLineScalarExtension.lean#L223). The attribute's comment: “π₁(A¹_{k'}) → π₁(A¹_k) is not an isomorphism for algebraically closed k ⊊ k'”. References: SGA 1 IX (6.3), “more general”; SGA 1 X (1.10), “partial”; SGA 1 XIII (2.13), “partial”.
+**`Stacks.ArtinSchreier.not_bijective_etaleFundamentalGroupMap_affineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/AffineLineScalarExtension.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/AffineLineScalarExtension.lean#L223). The attribute's comment: “π₁(A¹\_\{k'}) → π₁(A¹\_k) is not an isomorphism for algebraically closed k ⊊ k'”. References: SGA 1 IX (6.3), “more general”; SGA 1 X (1.10), “partial”; SGA 1 XIII (2.13), “partial”.
 
 > **[Stacks, Tag 0A47]: `π₁(𝐀¹_{k'}) → π₁(𝐀¹_k)` is not an isomorphism.** Let `k'/k` be an
 > extension of algebraically closed fields of characteristic `p > 0` with `k' ≠ k`. Then for every
@@ -397,7 +397,7 @@ theorem exists_not_bijective_etaleFundamentalGroupMap_affineLine {p : ℕ} [Fact
           (etaleFundamentalGroupMap (scalarExtensionFst k k' (affineLineStructure k)) x)
 ```
 
-**`Polynomial.existsUnique_sub_mem_range_ringArtinSchreier`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Polynomial/ArtinSchreierCokernel.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Polynomial/ArtinSchreierCokernel.lean#L171). The attribute's comment: “the polynomials sum over p ∤ n of λ_n x^n represent the cokernel of f ↦ f^p - f”.
+**`Polynomial.existsUnique_sub_mem_range_ringArtinSchreier`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Polynomial/ArtinSchreierCokernel.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Polynomial/ArtinSchreierCokernel.lean#L171). The attribute's comment: “the polynomials sum over p ∤ n of λ\_n x^n represent the cokernel of f ↦ f^p - f”.
 
 > **[Stacks, Tag 0A47], the representatives of the cokernel.** Let `k` be an algebraically
 > closed field of characteristic `p > 0`. Every polynomial `g ∈ k[x]` is congruent modulo the image
@@ -440,7 +440,7 @@ theorem exists_sub_mem_range_ringArtinSchreier_of_perfectRing [PerfectRing k p] 
 
 [Tag 0A5C](https://stacks.math.columbia.edu/tag/0A5C) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.CurveStatements.of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveStatementsShortExactConstructible.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveStatementsShortExactConstructible.lean#L101). The attribute's comment: “all eight statements of 0A52 at once, at the coefficients AddCommGrpCat.{u+1}”.
+**`Stacks.EtaleCohomology.CurveStatements.of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveStatementsShortExactConstructible.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveStatementsShortExactConstructible.lean#L101). The attribute's comment: “all eight statements of 0A52 at once, at the coefficients AddCommGrpCat.\{u+1}”.
 
 > Let `0 → F₁ → F → F₂ → 0` be a short exact sequence of abelian sheaves on the small étale
 > site of a Noetherian scheme `X` over a field. If statements (1) -- (8) of Situation 0A52 hold for
@@ -643,7 +643,7 @@ theorem surjective_etaleCohomologyRestrictionMap_X₂_of_shortExact_of_vanishing
 
 [Tag 0A5D](https://stacks.math.columbia.edu/tag/0A5D) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.CurveStatements.directImage_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveStatementsFiniteDirectImageGeneral.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveStatementsFiniteDirectImageGeneral.lean#L104). The attribute's comment: “all eight statements of 0A52 at once, at the coefficients AddCommGrpCat.{u+1}; only f finite and X Noetherian are used”.
+**`Stacks.EtaleCohomology.CurveStatements.directImage_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveStatementsFiniteDirectImageGeneral.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/CurveStatementsFiniteDirectImageGeneral.lean#L104). The attribute's comment: “all eight statements of 0A52 at once, at the coefficients AddCommGrpCat.\{u+1}; only f finite and X Noetherian are used”.
 
 > **Stacks Project, Lemma 0A5D.** Let `f : X ⟶ Y` be a finite morphism of schemes over a field
 > `k`, with `X` Noetherian, and let `F` be an abelian sheaf on `X_étale`. If statements (1) -- (8)
@@ -694,7 +694,7 @@ theorem curveCohomologyStatements_smallEtaleDirectImageAb {k : Type u} [Field k]
       ((smallEtaleDirectImageAb f).obj F)
 ```
 
-**`Stacks.EtaleCohomology.curveCohomologyAssertions_smallEtaleDirectImageAb`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/FiniteDirectImageCurveAssertions.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/FiniteDirectImageCurveAssertions.lean#L498). The attribute's comment: “statements (1)-(8) of Situation 0A52 pass to f_* for finite f”.
+**`Stacks.EtaleCohomology.curveCohomologyAssertions_smallEtaleDirectImageAb`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/FiniteDirectImageCurveAssertions.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionSheavesCurves/FiniteDirectImageCurveAssertions.lean#L498). The attribute's comment: “statements (1)-(8) of Situation 0A52 pass to f\_* for finite f”.
 
 > Let `k` be a field, let `f : X ⟶ Y` be a finite morphism of schemes of finite type over `k`,
 > and let `F` be an abelian sheaf on the small étale site of `X`. If statements (1) – (8) of

@@ -43,7 +43,7 @@ theorem resolutionPrincipalPartsShortComplex_shortExact (n : SimplexCategoryᵒ�
 
 [Tag 09DH](https://stacks.math.columbia.edu/tag/09DH) in the Stacks Project.
 
-**`CategoryTheory.Sheaf.atiyahTriangle_distinguished_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/AtiyahClass.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/AtiyahClass.lean#L194). The attribute's comment: “the distinguished triangle; `M`, `G`, `hS`, `e₁` and `e₃` carry the inputs the library does not yet have — the category of simplicial `P_•`-modules known to be abelian, the functor Lπ_! of Tag 09D3, the simplicial short exact sequence of Tag 09DG, and the identifications of Tags 08PU and 08QE. See the implementation notes”.
+**`CategoryTheory.Sheaf.atiyahTriangle_distinguished_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/AtiyahClass.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/AtiyahClass.lean#L194). The attribute's comment: “the distinguished triangle; `M`, `G`, `hS`, `e₁` and `e₃` carry the inputs the library does not yet have — the category of simplicial `P_•`-modules known to be abelian, the functor Lπ\_! of Tag 09D3, the simplicial short exact sequence of Tag 09DG, and the identifications of Tags 08PU and 08QE. See the implementation notes”.
 
 > **Stacks 09DH.** The Atiyah triangle of a sheaf of `B`-modules, written with its first and
 > third terms replaced by objects identified with them: for `L` identified with

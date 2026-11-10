@@ -74,7 +74,7 @@ public theorem exists_sequence_firstOrderThickenings_without_localRetraction
 
 [Tag 0CXT](https://stacks.math.columbia.edu/tag/0CXT) in the Stacks Project.
 
-**`Deformation.Artin.IsEffectiveSystem`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/Effectiveness.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject/Effectiveness.lean#L63). The attribute's comment: “effectivity_of_a_system_of_objects”.
+**`Deformation.Artin.IsEffectiveSystem`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/Effectiveness.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject/Effectiveness.lean#L63). The attribute's comment: “effectivity\_of\_a\_system\_of\_objects”.
 
 > A diagram in a category over a base is effective over a specified base cocone when
 > that cocone comes from a cocone of the objects. In a category fibred in groupoids, the
@@ -86,7 +86,7 @@ public abbrev IsEffectiveSystem {J : Type u₁} [Category.{v₁} J] {X : Type u�
     (c : Cocone (ξ ⋙ p)) : Prop
 ```
 
-**`Deformation.Artin.IsStronglyFormallyEffective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/Effectiveness.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject/Effectiveness.lean#L81). The attribute's comment: “strong_formal_effectiveness”.
+**`Deformation.Artin.IsStronglyFormallyEffective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/FormalObject/Effectiveness.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/FormalObject/Effectiveness.lean#L81). The attribute's comment: “strong\_formal\_effectiveness”.
 
 > Strong formal effectiveness for a category fibred in groupoids over the big
 > fppf site of a locally Noetherian scheme.

@@ -65,7 +65,7 @@ theorem cechComplexFunctor_exact
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.yonedaEquiv`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.yonedaEquiv#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch59.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch59.lean#L315) (StacksFrontier): “the bijection”. References: EGA 0 (8.1.3); EGA 0 (8.1.4); EGA 0 (8.1.6), “more general”; EGA 0 (8.1.8), “partial, special case”; SGA 3 I (1.1); SGA 3 I (1.1.1), “more general”; SGA 3 I (1.6.1), “Hom(h_S, F) ≃ F(S)”; SGA 3 I (1.7.0), “partial”; SGA 3 IV (4.3.1), “partial”; SGA 4 I (1.4), “bijection Hom(h(X)”; SGA 4 I (8.3.2), “partial”.
+- [`CategoryTheory.yonedaEquiv`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.yonedaEquiv#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch59.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch59.lean#L315) (StacksFrontier): “the bijection”. References: EGA 0 (8.1.3); EGA 0 (8.1.4); EGA 0 (8.1.6), “more general”; EGA 0 (8.1.8), “partial, special case”; SGA 3 I (1.1); SGA 3 I (1.1.1), “more general”; SGA 3 I (1.6.1), “Hom(h\_S, F) ≃ F(S)”; SGA 3 I (1.7.0), “partial”; SGA 3 IV (4.3.1), “partial”; SGA 4 I (1.4), “bijection Hom(h(X)”; SGA 4 I (8.3.2), “partial”.
 - [`CategoryTheory.yonedaLemma`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.yonedaLemma#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch59.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch59.lean#L316) (StacksFrontier): “functoriality”. References: EGA 0 (8.1.4); SGA 3 I (1.1); SGA 3 VIIB (0.4.2), “more general”; SGA 4 I (1.4).
 
 ## Tag 03OO, a definition
@@ -74,7 +74,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`PresheafOfModules.freeObj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PresheafOfModules.freeObj#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch59.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch59.lean#L155) (StacksFrontier): “Z_G(U) = Z[G(U)]: the free presheaf of modules on G, over the constant presheaf of rings Z (Z_U is the case G = h_U)”.
+- [`PresheafOfModules.freeObj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PresheafOfModules.freeObj#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch59.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch59.lean#L155) (StacksFrontier): “Z\_G(U) = Z[G(U)]: the free presheaf of modules on G, over the constant presheaf of rings Z (Z\_U is the case G = h\_U)”.
 
 ## Tag 03OP, a lemma
 

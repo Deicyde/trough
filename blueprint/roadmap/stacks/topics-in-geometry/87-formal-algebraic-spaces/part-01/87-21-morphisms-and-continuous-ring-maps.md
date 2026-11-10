@@ -14,7 +14,7 @@ Section 87.21 of the Stacks Project, [Tag 0ANA](https://stacks.math.columbia.edu
 
 [Tag 0ANB](https://stacks.math.columbia.edu/tag/0ANB) in the Stacks Project.
 
-**`TopologicalRing.completionOver_isCountablyGenerated_nhds_zero`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 545](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L545). The attribute's comment: “completion_in_sub_countable”.
+**`TopologicalRing.completionOver_isCountablyGenerated_nhds_zero`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 545](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L545). The attribute's comment: “completion\_in\_sub\_countable”.
 
 > Completion over a weakly admissible ring with a countable fundamental system of open
 > ideals again has a countable fundamental system of open ideals.
@@ -28,7 +28,7 @@ public lemma completionOver_isCountablyGenerated_nhds_zero
     (nhds (0 : CompletionOver f)).IsCountablyGenerated
 ```
 
-**`TopologicalRing.completionOver_isCountablyAdmissible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 569](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L569). The attribute's comment: “completion_in_sub_cic”.
+**`TopologicalRing.completionOver_isCountablyAdmissible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 569](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L569). The attribute's comment: “completion\_in\_sub\_cic”.
 
 > Completion over a countably admissible ring is again countably admissible.
 
@@ -40,7 +40,7 @@ public theorem completionOver_isCountablyAdmissible
     IsCountablyAdmissible (CompletionOver f)
 ```
 
-**`TopologicalRing.completionOver_isWeaklyAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 589](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L589). The attribute's comment: “completion_in_sub_weakly_adic”.
+**`TopologicalRing.completionOver_isWeaklyAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 589](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L589). The attribute's comment: “completion\_in\_sub\_weakly\_adic”.
 
 > Completion relative to a weakly admissible, weakly adic ring is weakly adic.
 
@@ -52,7 +52,7 @@ public theorem completionOver_isWeaklyAdic
     TopologicalRing.IsWeaklyAdic (CompletionOver f)
 ```
 
-**`TopologicalRing.completionOver_exists_fg_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 609](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L609). The attribute's comment: “completion_in_sub_adic_star”.
+**`TopologicalRing.completionOver_exists_fg_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean, line 609](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOver.lean#L609). The attribute's comment: “completion\_in\_sub\_adic\_star”.
 
 > Completion relative to a weakly admissible adic-star ring is again adic-star: its
 > topology is defined by a finitely generated ideal.
@@ -66,7 +66,7 @@ public theorem completionOver_exists_fg_isAdic
     ∃ J : Ideal (CompletionOver f), J.FG ∧ _root_.IsAdic J
 ```
 
-**`TopologicalRing.completionOver_isNoetherianAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOverNoetherian.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOverNoetherian.lean#L69). The attribute's comment: “completion_in_sub_noetherian”.
+**`TopologicalRing.completionOver_isNoetherianAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/CompletionOverNoetherian.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletionOverNoetherian.lean#L69). The attribute's comment: “completion\_in\_sub\_noetherian”.
 
 > **Stacks 0ANB (5).** Let `B` be an adic Noetherian topological ring and let `f : B →+* A` be
 > a ring map, `A` carrying no topology.  If `A` is Noetherian then the completion of `A` over `B`,
@@ -319,7 +319,7 @@ theorem hasPropertyAfterSourceCover_of_afterTargetCover {X Y : FppfSheaf B S hS}
 
 [Tag 0ANH](https://stacks.math.columbia.edu/tag/0ANH) in the Stacks Project.
 
-**`TopologicalRing.propertyIsLocalAdicStar_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarChartCriteria.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarChartCriteria.lean#L142). The attribute's comment: “the first half, the definition of a local property of morphisms of WAdm^{adic*}, with the three axioms of Situation 0CBA quantified over the diagrams and finite families of WAdm^{adic*} exactly as in the source”.
+**`TopologicalRing.propertyIsLocalAdicStar_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarChartCriteria.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarChartCriteria.lean#L142). The attribute's comment: “the first half, the definition of a local property of morphisms of WAdm^\{adic*}, with the three axioms of Situation 0CBA quantified over the diagrams and finite families of WAdm^\{adic*} exactly as in the source”.
 
 > **The first half of Stacks 0ANH, in the source's words.** A property `P` of morphisms of
 > `WAdm^{adic*}` is a local property, `TopologicalRing.PropertyIsLocalAdicStar P`, exactly when the
@@ -360,7 +360,7 @@ theorem propertyIsLocalAdicStar_iff
         (∀ i, IsAdicStar (A i)) → (∀ i, P (f i)) → P (RingHom.pi f))
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasProperty_tfae_isAdicStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarChartCriteria.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarChartCriteria.lean#L297). The attribute's comment: “the second half: the variant of Stacks 0ANG for morphisms between locally adic* formal algebraic spaces over S, at a local property of morphisms of WAdm^{adic*} invariant under isomorphism of source and target (the standing hypothesis of Situation 0CBA)”.
+**`AlgebraicGeometry.FormalSpace.hasProperty_tfae_isAdicStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarChartCriteria.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarChartCriteria.lean#L297). The attribute's comment: “the second half: the variant of Stacks 0ANG for morphisms between locally adic* formal algebraic spaces over S, at a local property of morphisms of WAdm^\{adic*} invariant under isomorphism of source and target (the standing hypothesis of Situation 0CBA)”.
 
 > **The second half of Stacks 0ANH: the variant of Stacks 0ANG for morphisms between locally
 > adic\* formal algebraic spaces.** Let `f : X ⟶ Y` be a morphism of locally adic\* formal
@@ -396,7 +396,7 @@ theorem hasProperty_tfae_isAdicStar
         HasPropertyAfterSourceCover B S hS TopologicalRing.IsAdicStar P f ]
 ```
 
-**`TopologicalRing.propertyIsLocalAdicStarUpToIso_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarChartCriteriaUpToIso.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarChartCriteriaUpToIso.lean#L83). The attribute's comment: “the first half, the definition of a local property of morphisms of WAdm^{adic*}, in the source's words: axioms (1), (2), (3) of Situation 0CBA quantified over the diagrams and finite families of WAdm^{adic*}, the completed corners being any limits”.
+**`TopologicalRing.propertyIsLocalAdicStarUpToIso_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarChartCriteriaUpToIso.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarChartCriteriaUpToIso.lean#L83). The attribute's comment: “the first half, the definition of a local property of morphisms of WAdm^\{adic*}, in the source's words: axioms (1), (2), (3) of Situation 0CBA quantified over the diagrams and finite families of WAdm^\{adic*}, the completed corners being any limits”.
 
 > **The first half of Stacks 0ANH, in the source's words.** A property `P` of morphisms of
 > `WAdm^{adic*}` is a local property, `TopologicalRing.PropertyIsLocalAdicStarUpToIso P`, exactly
@@ -453,7 +453,7 @@ theorem propertyIsLocalAdicStarUpToIso_iff
         (∀ i, IsAdicStar (A i)) → (∀ i, P (f i)) → P (RingHom.pi f))
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasProperty_tfae_of_propertyIsLocalAdicStarUpToIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarChartCriteriaUpToIso.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarChartCriteriaUpToIso.lean#L170). The attribute's comment: “the second half: the variant of Stacks 0ANG for morphisms between locally adic* formal algebraic spaces over S, at any local property of morphisms of WAdm^{adic*}”.
+**`AlgebraicGeometry.FormalSpace.hasProperty_tfae_of_propertyIsLocalAdicStarUpToIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarChartCriteriaUpToIso.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarChartCriteriaUpToIso.lean#L170). The attribute's comment: “the second half: the variant of Stacks 0ANG for morphisms between locally adic* formal algebraic spaces over S, at any local property of morphisms of WAdm^\{adic*}”.
 
 > **The second half of Stacks 0ANH: the variant of Stacks 0ANG for morphisms between locally
 > adic\* formal algebraic spaces.** Let `f : X ⟶ Y` be a morphism of locally adic\* formal
@@ -488,7 +488,7 @@ theorem hasProperty_tfae_of_propertyIsLocalAdicStarUpToIso
         HasPropertyAfterSourceCover B S hS TopologicalRing.IsAdicStar P f ]
 ```
 
-**`AlgebraicGeometry.FormalSpace.propertyIsInvariantUnderSourceIso_of_propertyIsLocalAdicStarUpToIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/LocalPropertyUpToIsoInvariance.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/LocalPropertyUpToIsoInvariance.lean#L184). The attribute's comment: “a local property of morphisms of WAdm^{adic*} is invariant under isomorphism of sources, by axiom (1), an isomorphism being etale; used by the variant of 0ANG”.
+**`AlgebraicGeometry.FormalSpace.propertyIsInvariantUnderSourceIso_of_propertyIsLocalAdicStarUpToIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/LocalPropertyUpToIsoInvariance.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/LocalPropertyUpToIsoInvariance.lean#L184). The attribute's comment: “a local property of morphisms of WAdm^\{adic*} is invariant under isomorphism of sources, by axiom (1), an isomorphism being etale; used by the variant of 0ANG”.
 
 > A local property of morphisms of `WAdm^{adic*}` is invariant under isomorphism of sources.
 > The variant of Stacks 0ANG in Stacks 0ANH uses this, and it follows from axiom (1) of
@@ -500,7 +500,7 @@ theorem propertyIsInvariantUnderSourceIso_of_propertyIsLocalAdicStarUpToIso
     PropertyIsInvariantUnderSourceIso.{u} TopologicalRing.IsAdicStar P
 ```
 
-**`AlgebraicGeometry.FormalSpace.propertyIsInvariantUnderTargetIsoOn_of_propertyIsLocalAdicStarUpToIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/LocalPropertyUpToIsoInvariance.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/LocalPropertyUpToIsoInvariance.lean#L195). The attribute's comment: “a local property of morphisms of WAdm^{adic*} is invariant under isomorphism of targets, by axiom (1), an isomorphism being etale; used by the variant of 0ANG”.
+**`AlgebraicGeometry.FormalSpace.propertyIsInvariantUnderTargetIsoOn_of_propertyIsLocalAdicStarUpToIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/LocalPropertyUpToIsoInvariance.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/LocalPropertyUpToIsoInvariance.lean#L195). The attribute's comment: “a local property of morphisms of WAdm^\{adic*} is invariant under isomorphism of targets, by axiom (1), an isomorphism being etale; used by the variant of 0ANG”.
 
 > A local property of morphisms of `WAdm^{adic*}` is invariant under isomorphism of targets.
 > The variant of Stacks 0ANG in Stacks 0ANH uses this, and it follows from axiom (1) of
@@ -512,7 +512,7 @@ theorem propertyIsInvariantUnderTargetIsoOn_of_propertyIsLocalAdicStarUpToIso
     PropertyIsInvariantUnderTargetIsoOn.{u} TopologicalRing.IsAdicStar P
 ```
 
-**`TopologicalRing.AdicStarPropertyIsLocal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L178). The attribute's comment: “adic_star_local_property”.
+**`TopologicalRing.AdicStarPropertyIsLocal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L178). The attribute's comment: “adic\_star\_local\_property”.
 
 > A property of morphisms of weakly admissible adic-star rings is local when it satisfies
 > the three locality axioms of `TopologicalRing.PropertyIsLocal` within that subcategory: the
@@ -544,7 +544,7 @@ public abbrev PropertyIsLocalAdicStar (P : ∀ {B A : Type u} [CommRing B]
     [IsTopologicalRing A], (B →+* A) → Prop) : Prop
 ```
 
-**`TopologicalRing.PropertyIsLocalAdicStarUpToIso`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalPropertiesUpToIso.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalPropertiesUpToIso.lean#L155). The attribute's comment: “the first half, the definition of a local property of morphisms of WAdm^{adic*}: axioms (1), (2), (3) of Situation 0CBA for morphisms of WAdm^{adic*}, the completed corners of the diagram being any limits lim A'/IA', lim B'/JB'”.
+**`TopologicalRing.PropertyIsLocalAdicStarUpToIso`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalPropertiesUpToIso.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalPropertiesUpToIso.lean#L155). The attribute's comment: “the first half, the definition of a local property of morphisms of WAdm^\{adic*}: axioms (1), (2), (3) of Situation 0CBA for morphisms of WAdm^\{adic*}, the completed corners of the diagram being any limits lim A'/IA', lim B'/JB'”.
 
 > A property `P` of morphisms of `WAdm^{adic*}`, the adic topological rings possessing a
 > finitely generated ideal of definition, is local when axioms (1), (2) and (3) of Situation 0CBA
@@ -639,7 +639,7 @@ theorem hasPropertyOnEveryAffineEtaleDiagram_of_afterSourceCover_of_isLocallyNoe
     HasPropertyOnEveryAffineEtaleDiagram B S hS TopologicalRing.IsNoetherianAdic P f
 ```
 
-**`TopologicalRing.PropertyIsLocalNoetherian`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L219). The attribute's comment: “local_property_noetherian”.
+**`TopologicalRing.PropertyIsLocalNoetherian`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L219). The attribute's comment: “local\_property\_noetherian”.
 
 > A morphism property of Noetherian adic topological rings is local if it ascends along
 > completed étale localization diagrams, descends along faithfully flat ones, and is preserved
@@ -795,7 +795,7 @@ theorem hasProperty_tfae_pullback_snd_of_isLocalUpToIso_of_isLocallyCountablyInd
 
 [Tag 0GBE](https://stacks.math.columbia.edu/tag/0GBE) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.pullback_snd_hasProperty_of_isLocallyAdicStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarBaseChangeVariant.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarBaseChangeVariant.lean#L134). The attribute's comment: “the second half, the variant of Lemma 0GBD for morphisms between locally adic* formal algebraic spaces: for a local property P of morphisms of WAdm^{adic*} (Remark 0ANH, with the invariance under isomorphism of source and target that Situation 0CBA stipulates) which is stable under base change in the sense of the first half, TopologicalRing.PropertyIsStableUnderBaseChangeAdicStar, and morphisms f : X -> Y, g : Z -> Y of locally adic* formal algebraic spaces, if f satisfies condition (1) of the equivalent conditions of Stacks 0ANG then X x_Y Z is locally adic* and pr2 : X x_Y Z -> Z satisfies all three”.
+**`AlgebraicGeometry.FormalSpace.pullback_snd_hasProperty_of_isLocallyAdicStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarBaseChangeVariant.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarBaseChangeVariant.lean#L134). The attribute's comment: “the second half, the variant of Lemma 0GBD for morphisms between locally adic* formal algebraic spaces: for a local property P of morphisms of WAdm^\{adic*} (Remark 0ANH, with the invariance under isomorphism of source and target that Situation 0CBA stipulates) which is stable under base change in the sense of the first half, TopologicalRing.PropertyIsStableUnderBaseChangeAdicStar, and morphisms f : X -> Y, g : Z -> Y of locally adic* formal algebraic spaces, if f satisfies condition (1) of the equivalent conditions of Stacks 0ANG then X x\_Y Z is locally adic* and pr2 : X x\_Y Z -> Z satisfies all three”.
 
 > **Stacks 0GBE, second half: the variant of Lemma 0GBD for locally adic\* formal algebraic
 > spaces.** Let `P` be a local property of morphisms of `WAdm^{adic*}` (Remark 0ANH), invariant
@@ -825,7 +825,7 @@ theorem pullback_snd_hasProperty_of_isLocallyAdicStar
       HasPropertyAfterSourceCover B S hS TopologicalRing.IsAdicStar P (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasProperty_pullback_snd_of_isLocalUpToIso_of_isLocallyAdicStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarPullbackLocalPropertyUpToIso.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarPullbackLocalPropertyUpToIso.lean#L81). The attribute's comment: “the second half, the variant of Lemma 0GBD for morphisms between locally adic* formal algebraic spaces: for a local property P of morphisms of WAdm^{adic*} in the sense of Remark 0ANH (hloc, TopologicalRing.PropertyIsLocalAdicStarUpToIso) which is stable under base change in the sense of the first half (hP, TopologicalRing.PropertyIsStableUnderBaseChangeAdicStar), and morphisms f : X -> Y, g : Z -> Y of locally adic* formal algebraic spaces, if f satisfies the equivalent conditions of the variant of Stacks 0ANG then X x_Y Z is locally adic* and pr2 : X x_Y Z -> Z satisfies all three”.
+**`AlgebraicGeometry.FormalSpace.hasProperty_pullback_snd_of_isLocalUpToIso_of_isLocallyAdicStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarPullbackLocalPropertyUpToIso.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarPullbackLocalPropertyUpToIso.lean#L81). The attribute's comment: “the second half, the variant of Lemma 0GBD for morphisms between locally adic* formal algebraic spaces: for a local property P of morphisms of WAdm^\{adic*} in the sense of Remark 0ANH (hloc, TopologicalRing.PropertyIsLocalAdicStarUpToIso) which is stable under base change in the sense of the first half (hP, TopologicalRing.PropertyIsStableUnderBaseChangeAdicStar), and morphisms f : X -> Y, g : Z -> Y of locally adic* formal algebraic spaces, if f satisfies the equivalent conditions of the variant of Stacks 0ANG then X x\_Y Z is locally adic* and pr2 : X x\_Y Z -> Z satisfies all three”.
 
 > **Stacks 0GBE, second half: the variant of Lemma 0GBD for locally adic\* formal algebraic
 > spaces.** Let `P` be a local property of morphisms of `WAdm^{adic*}` (Remark 0ANH) which is
@@ -857,7 +857,7 @@ theorem hasProperty_pullback_snd_of_isLocalUpToIso_of_isLocallyAdicStar
       HasPropertyAfterSourceCover B S hS TopologicalRing.IsAdicStar P (pullback.snd f g)
 ```
 
-**`TopologicalRing.AdicStarPropertyIsStableUnderBaseChange`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L264). The attribute's comment: “adic_star_base_change_stability”.
+**`TopologicalRing.AdicStarPropertyIsStableUnderBaseChange`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L264). The attribute's comment: “adic\_star\_base\_change\_stability”.
 
 > A local property of morphisms of weakly admissible adic-star rings that is
 > preserved by completed tensor-product base change.
@@ -868,7 +868,7 @@ public structure AdicStarPropertyIsStableUnderBaseChange
       [CommRing A] [TopologicalSpace A] [IsTopologicalRing A], (B →+* A) → Prop) : Prop
 ```
 
-**`TopologicalRing.PropertyIsStableUnderBaseChangeAdicStar`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L317). The attribute's comment: “the first half, the definition of stability under base change, at the source's class of rings: the morphisms range over WAdm^{adic*}, the adic topological rings -- hence complete and separated -- possessing a finitely generated ideal of definition, and the locality of P is read in the same subcategory by TopologicalRing.PropertyIsLocalAdicStar. The well definedness the remark cites, that the completed tensor product is again an object of WAdm^{adic*} by Lemma 87.4.12, is TopologicalRing.isAdicStar_completedTensorProduct”.
+**`TopologicalRing.PropertyIsStableUnderBaseChangeAdicStar`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L317). The attribute's comment: “the first half, the definition of stability under base change, at the source's class of rings: the morphisms range over WAdm^\{adic*}, the adic topological rings -- hence complete and separated -- possessing a finitely generated ideal of definition, and the locality of P is read in the same subcategory by TopologicalRing.PropertyIsLocalAdicStar. The well definedness the remark cites, that the completed tensor product is again an object of WAdm^\{adic*} by Lemma 87.4.12, is TopologicalRing.isAdicStar\_completedTensorProduct”.
 
 > A local property `P` of morphisms of `WAdm^{adic*}` is *stable under base change* when,
 > for every pair of morphisms `B → A` and `B → C` of `WAdm^{adic*}`, `P (B → A)` implies
@@ -890,12 +890,12 @@ public structure PropertyIsStableUnderBaseChangeAdicStar
 
 Declarations registered for the tag:
 
-- [`TopologicalRing.completedTensorProduct_isWeaklyAdmissible`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L951), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L287) (StacksFrontier): “completed_tensor_adic_star”.
-- [`TopologicalRing.completedTensorProduct_isAdic`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L364), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L289) (StacksFrontier): “completed_tensor_adic_star”.
-- [`TopologicalRing.exists_fg_ideal_of_definition`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L383), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L290) (StacksFrontier): “completed_tensor_adic_star”.
-- [`TopologicalRing.completedTensorProduct_isWeaklyAdmissible`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L951), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/LocalPropertiesRefined.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalPropertiesRefined.lean#L277) (StacksFrontier): “completed_tensor_adic_star”.
-- [`TopologicalRing.completedTensorProduct_isAdic`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L364), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/LocalPropertiesRefined.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalPropertiesRefined.lean#L279) (StacksFrontier): “completed_tensor_adic_star”.
-- [`TopologicalRing.exists_fg_ideal_of_definition`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L383), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/LocalPropertiesRefined.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalPropertiesRefined.lean#L280) (StacksFrontier): “completed_tensor_adic_star”.
+- [`TopologicalRing.completedTensorProduct_isWeaklyAdmissible`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L951), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L287) (StacksFrontier): “completed\_tensor\_adic\_star”.
+- [`TopologicalRing.completedTensorProduct_isAdic`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L364), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L289) (StacksFrontier): “completed\_tensor\_adic\_star”.
+- [`TopologicalRing.exists_fg_ideal_of_definition`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L383), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L290) (StacksFrontier): “completed\_tensor\_adic\_star”.
+- [`TopologicalRing.completedTensorProduct_isWeaklyAdmissible`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L951), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/LocalPropertiesRefined.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalPropertiesRefined.lean#L277) (StacksFrontier): “completed\_tensor\_adic\_star”.
+- [`TopologicalRing.completedTensorProduct_isAdic`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L364), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/LocalPropertiesRefined.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalPropertiesRefined.lean#L279) (StacksFrontier): “completed\_tensor\_adic\_star”.
+- [`TopologicalRing.exists_fg_ideal_of_definition`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/CompletedTensorProduct/Adic.lean#L383), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/LocalPropertiesRefined.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalPropertiesRefined.lean#L280) (StacksFrontier): “completed\_tensor\_adic\_star”.
 
 ## Tag 0GBF, a remark
 
@@ -1078,7 +1078,7 @@ theorem transfersBaseChangeOnAffineEtaleDiagrams
               (fun R ↦ TopologicalRing.IsAdic R ∧ IsNoetherianRing R) P (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.FormalSpace.conditions_pullback_snd_of_isStableUnderBaseChangeBy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/LocalPropertyBaseChangeNoetherian.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/LocalPropertyBaseChangeNoetherian.lean#L162). The attribute's comment: “the statement drawn there: the equivalent conditions of Stacks 0ANG pass from f and P and from g and Q to the second projection of X ×_Y Z and P, for locally Noetherian formal algebraic spaces; the notion of stability under base change by Q is TopologicalRing.IsStableUnderBaseChangeBy”.
+**`AlgebraicGeometry.FormalSpace.conditions_pullback_snd_of_isStableUnderBaseChangeBy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/LocalPropertyBaseChangeNoetherian.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/LocalPropertyBaseChangeNoetherian.lean#L162). The attribute's comment: “the statement drawn there: the equivalent conditions of Stacks 0ANG pass from f and P and from g and Q to the second projection of X ×\_Y Z and P, for locally Noetherian formal algebraic spaces; the notion of stability under base change by Q is TopologicalRing.IsStableUnderBaseChangeBy”.
 
 > Let `P` and `Q` be local properties of morphisms of `WAdm^{Noeth}` (Remark 0ANI), with `P`
 > stable under base change by `Q`: given `B → A` and `B → C` in `WAdm^{Noeth}` with `P (B → A)` and
@@ -1118,7 +1118,7 @@ theorem conditions_pullback_snd_of_isStableUnderBaseChangeBy
       HasPropertyAfterSourceCover B S hS TopologicalRing.IsNoetherianAdic P (pullback.snd f g)
 ```
 
-**`TopologicalRing.IsStableUnderBaseChangeBy`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L379). The attribute's comment: “stable_under_base_change_by_noetherian”.
+**`TopologicalRing.IsStableUnderBaseChangeBy`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L379). The attribute's comment: “stable\_under\_base\_change\_by\_noetherian”.
 
 > A local morphism property of Noetherian adic rings is stable under completed
 > tensor-product base change along morphisms satisfying another local property.
@@ -1222,7 +1222,7 @@ theorem hasPropertyOnEveryAffineEtaleDiagram_comp_of_isLocallyCountablyIndexed
 
 [Tag 0GBJ](https://stacks.math.columbia.edu/tag/0GBJ) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.hasPropertyOnEveryAffineEtaleDiagram_comp_of_isLocallyAdicStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarCompositionVariant.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarCompositionVariant.lean#L234). The attribute's comment: “the second half, the variant of Lemma 0GBI for morphisms between locally adic* formal algebraic spaces: for a local property P of morphisms of WAdm^{adic*} (Remark 0ANH) which is stable under composition in the sense of the first half, TopologicalRing.PropertyIsStableUnderCompositionAdicStar, and morphisms f : X -> Y, g : Y -> Z of locally adic* formal algebraic spaces satisfying the equivalent conditions of Stacks 0ANG (condition (1)), the composite g o f satisfies all three; the invariance of P under isomorphism of Situation 0CBA is not used”.
+**`AlgebraicGeometry.FormalSpace.hasPropertyOnEveryAffineEtaleDiagram_comp_of_isLocallyAdicStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarCompositionVariant.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarCompositionVariant.lean#L234). The attribute's comment: “the second half, the variant of Lemma 0GBI for morphisms between locally adic* formal algebraic spaces: for a local property P of morphisms of WAdm^\{adic*} (Remark 0ANH) which is stable under composition in the sense of the first half, TopologicalRing.PropertyIsStableUnderCompositionAdicStar, and morphisms f : X -> Y, g : Y -> Z of locally adic* formal algebraic spaces satisfying the equivalent conditions of Stacks 0ANG (condition (1)), the composite g o f satisfies all three; the invariance of P under isomorphism of Situation 0CBA is not used”.
 
 > **Stacks 0GBJ, second half: the variant of Lemma 0GBI for locally adic\* formal algebraic
 > spaces.** Let `P` be a local property of morphisms of `WAdm^{adic*}` (Remark 0ANH) which is
@@ -1254,7 +1254,7 @@ theorem hasPropertyOnEveryAffineEtaleDiagram_comp_of_isLocallyAdicStar
       HasPropertyAfterSourceCover B S hS TopologicalRing.IsAdicStar P (f ≫ g)
 ```
 
-**`TopologicalRing.AdicStarPropertyIsStableUnderComposition`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L461). The attribute's comment: “stable_under_composition_for_adic_ring_map_properties”.
+**`TopologicalRing.AdicStarPropertyIsStableUnderComposition`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L461). The attribute's comment: “stable\_under\_composition\_for\_adic\_ring\_map\_properties”.
 
 > A local property of morphisms of weakly admissible adic-star rings is stable
 > under composition if it is preserved by composition of continuous maps between
@@ -1266,7 +1266,7 @@ public structure AdicStarPropertyIsStableUnderComposition
       [TopologicalSpace A] [IsTopologicalRing A], (B →+* A) → Prop) : Prop
 ```
 
-**`TopologicalRing.PropertyIsStableUnderCompositionAdicStar`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L497). The attribute's comment: “the definition of stability under composition, at the source's class of rings: the morphisms range over WAdm^{adic*}, the adic topological rings -- hence complete and separated -- possessing a finitely generated ideal of definition, and the locality of P is read in the same subcategory by TopologicalRing.PropertyIsLocalAdicStar”.
+**`TopologicalRing.PropertyIsStableUnderCompositionAdicStar`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L497). The attribute's comment: “the definition of stability under composition, at the source's class of rings: the morphisms range over WAdm^\{adic*}, the adic topological rings -- hence complete and separated -- possessing a finitely generated ideal of definition, and the locality of P is read in the same subcategory by TopologicalRing.PropertyIsLocalAdicStar”.
 
 > A local property `P` of morphisms of `WAdm^{adic*}` is *stable under composition* when,
 > for morphisms `B → A` and `C → B` of `WAdm^{adic*}`, `P (B → A)` and `P (C → B)` imply
@@ -1334,7 +1334,7 @@ theorem hasPropertyOnEveryAffineEtaleDiagram_comp_of_isLocallyNoetherian
       HasPropertyAfterSourceCover B S hS TopologicalRing.IsNoetherianAdic P (f ≫ g)
 ```
 
-**`TopologicalRing.PropertyIsStableUnderCompositionNoetherian`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L525). The attribute's comment: “stable_under_composition_noetherian”.
+**`TopologicalRing.PropertyIsStableUnderCompositionNoetherian`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L525). The attribute's comment: “stable\_under\_composition\_noetherian”.
 
 > A local property of morphisms of Noetherian adic rings is stable under composition
 > when it holds for the composite of two continuous morphisms having the property.
@@ -1430,7 +1430,7 @@ theorem hasPropertyOnEveryAffineEtaleDiagram_of_comp
 
 [Tag 0GBN](https://stacks.math.columbia.edu/tag/0GBN) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.hasPropertyOnEveryAffineEtaleDiagram_of_comp_of_isLocallyAdicStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarCancellationVariant.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarCancellationVariant.lean#L102). The attribute's comment: “the second half: the variant of Lemma 0GBM (the remark's Lemma 0GBI is a slip for 0GBM, an erratum to the Stacks Project) for morphisms f : X -> Y, g : Y -> Z between locally adic* formal algebraic spaces over S, for a local property P of WAdm^{adic*} (Remark 0ANH: invariant under isomorphism of source and target and satisfying the three axioms of Situation 0CBA) having the cancellation property TopologicalRing.HasAdicStarCancellationProperty: if g o f and g satisfy the equivalent conditions of Stacks 0ANG then so does f”.
+**`AlgebraicGeometry.FormalSpace.hasPropertyOnEveryAffineEtaleDiagram_of_comp_of_isLocallyAdicStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarCancellationVariant.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AdicStarCancellationVariant.lean#L102). The attribute's comment: “the second half: the variant of Lemma 0GBM (the remark's Lemma 0GBI is a slip for 0GBM, an erratum to the Stacks Project) for morphisms f : X -> Y, g : Y -> Z between locally adic* formal algebraic spaces over S, for a local property P of WAdm^\{adic*} (Remark 0ANH: invariant under isomorphism of source and target and satisfying the three axioms of Situation 0CBA) having the cancellation property TopologicalRing.HasAdicStarCancellationProperty: if g o f and g satisfy the equivalent conditions of Stacks 0ANG then so does f”.
 
 > **Stacks 0GBN, second half: the cancellation variant for locally adic\* formal algebraic
 > spaces.** Let `P` be a local property of morphisms of `WAdm^{adic*}` in the sense of Remark
@@ -1519,7 +1519,7 @@ theorem hasPropertyOnEveryAffineEtaleDiagram_of_comp_of_isLocallyNoetherian
       HasPropertyAfterSourceCover B S hS TopologicalRing.IsNoetherianAdic P f
 ```
 
-**`TopologicalRing.HasNoetherianCancellationProperty`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 565](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L565). The attribute's comment: “noetherian_cancellation_property”.
+**`TopologicalRing.HasNoetherianCancellationProperty`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean, line 565](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/LocalProperties.lean#L565). The attribute's comment: “noetherian\_cancellation\_property”.
 
 > Cancellation for a morphism property on Noetherian adic topological rings.
 

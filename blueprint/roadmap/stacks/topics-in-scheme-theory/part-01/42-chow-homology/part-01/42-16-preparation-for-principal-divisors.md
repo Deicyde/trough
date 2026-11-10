@@ -14,7 +14,7 @@ Section 42.16 of the Stacks Project, [Tag 02RI](https://stacks.math.columbia.edu
 
 [Tag 02RK](https://stacks.math.columbia.edu/tag/02RK) in the Stacks Project.
 
-**`Stacks.Chow.exists_primeDivisor_iff_codimension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean#L67). The attribute's comment: “prime_divisor_iff_delta_dimension”.
+**`Stacks.Chow.exists_primeDivisor_iff_codimension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean#L67). The attribute's comment: “prime\_divisor\_iff\_delta\_dimension”.
 
 > **Stacks 02RK.** An integral closed subscheme of `X` is a prime divisor exactly when the
 > closure of its generic point has codimension one in `X`. This is the definition of a prime
@@ -27,7 +27,7 @@ theorem exists_primeDivisor_iff_codimension_one {X : Scheme.{u}} (I : X.IdealShe
       codimension (IrreducibleCloseds.closureSingleton (genericPointOf I hI)) = 1
 ```
 
-**`Stacks.Chow.codimension_one_iff_schemeDeltaDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean#L98). The attribute's comment: “prime_divisor_iff_delta_dimension”.
+**`Stacks.Chow.codimension_one_iff_schemeDeltaDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean#L98). The attribute's comment: “prime\_divisor\_iff\_delta\_dimension”.
 
 > **Stacks 02RK.** An integral closed subscheme of an integral scheme `X` locally of finite
 > type over the base has codimension one exactly when its delta-dimension is one less than that
@@ -41,7 +41,7 @@ theorem codimension_one_iff_schemeDeltaDimension (C : ChowSituation.{u}) {X : Sc
       schemeDeltaDimension C (I.subschemeι ≫ f) = schemeDeltaDimension C f + (-1 : ℤ)
 ```
 
-**`Stacks.Chow.deltaDimension_irreducibleComponent_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean#L141). The attribute's comment: “cartier_component_delta_dimension”.
+**`Stacks.Chow.deltaDimension_irreducibleComponent_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean#L141). The attribute's comment: “cartier\_component\_delta\_dimension”.
 
 > **Stacks 02RK.** Every irreducible component of an effective Cartier divisor on an integral
 > scheme locally of finite type over the base has delta-dimension one less than the ambient

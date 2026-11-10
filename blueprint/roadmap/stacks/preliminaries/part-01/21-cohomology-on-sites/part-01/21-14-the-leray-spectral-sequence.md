@@ -185,7 +185,7 @@ theorem rightAcyclic_pushforwardModules_of_isTotallyAcyclic_largeSite
     (pushforwardModules f).rightAcyclic N
 ```
 
-**`Stacks.Cohomology.isZero_rightDerivedΓ_of_isTotallyAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/GlobalSectionsAcyclicityOfColimitOfFiniteSites.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/GlobalSectionsAcyclicityOfColimitOfFiniteSites.lean#L166). The attribute's comment: “part (3) for an abelian sheaf, in the derived-functor spelling: a totally acyclic abelian sheaf has vanishing (Sheaf.Gamma J Ab).rightDerived p for p > 0. The tag's part (3) for a sheaf of MODULES, stated as right acyclicity of SiteModules.globalSectionsFunctor, is isTotallyAcyclic_rightAcyclic_globalSections; this is not that statement specialised, the abelian sheaf not being a module over the constant sheaf of rings. Parts (1), (2) and (4) are not here.”.
+**`Stacks.Cohomology.isZero_rightDerivedΓ_of_isTotallyAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/GlobalSectionsAcyclicityOfColimitOfFiniteSites.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/GlobalSectionsAcyclicityOfColimitOfFiniteSites.lean#L166). The attribute's comment: “part (3) for an abelian sheaf, in the derived-functor spelling: a totally acyclic abelian sheaf has vanishing (Sheaf.Gamma J Ab).rightDerived p for p > 0. The tag's part (3) for a sheaf of MODULES, stated as right acyclicity of SiteModules.globalSectionsFunctor, is isTotallyAcyclic\_rightAcyclic\_globalSections; this is not that statement specialised, the abelian sheaf not being a module over the constant sheaf of rings. Parts (1), (2) and (4) are not here.”.
 
 > **Part (3) of [Stacks, Tag 0731] for an abelian sheaf.** A totally acyclic abelian sheaf on a
 > small site — one whose cohomology over every sheaf of sets vanishes in positive degrees,
@@ -214,7 +214,7 @@ theorem isZero_rightDerivedΓ_of_isTotallyAcyclic {C : Type u} [SmallCategory C]
 
 [Tag 08J6](https://stacks.math.columbia.edu/tag/08J6) in the Stacks Project.
 
-**`Stacks.Cohomology.Leray.derivedGlobalSectionsPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LeraySpectralSequence.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LeraySpectralSequence.lean#L242). The attribute's comment: “the identification RΓ(D, Rf_*F) = RΓ(C, F), read in abelian groups”.
+**`Stacks.Cohomology.Leray.derivedGlobalSectionsPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LeraySpectralSequence.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LeraySpectralSequence.lean#L242). The attribute's comment: “the identification RΓ(D, Rf\_*F) = RΓ(C, F), read in abelian groups”.
 
 > **Stacks 08J6**, read in abelian groups: `RΓ(C, F) = RΓ(D, Rf_*F)`.
 >
@@ -294,7 +294,7 @@ def cohomologyPushforwardIsoOfIsFlatOfIsAffineHom (f : X ⟶ Y) (haff : IsAffine
         ((modulePushforward B S hS f).obj F))
 ```
 
-**`Stacks.Cohomology.Leray.nonempty_cohomologyIso_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LerayCollapse.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LerayCollapse.lean#L249). The attribute's comment: “part (1)”. References: SGA 4½ Arcata (2.3.5), “H^p(X,F)=H^p(Y,f_*F)”.
+**`Stacks.Cohomology.Leray.nonempty_cohomologyIso_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LerayCollapse.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/LerayCollapse.lean#L249). The attribute's comment: “part (1)”. References: SGA 4½ Arcata (2.3.5), “H^p(X,F)=H^p(Y,f\_*F)”.
 
 > **Stacks 0733, part (1).** Let `f : (Sh(C), O_C) → (Sh(D), O_D)` be a morphism of ringed
 > topoi and `F` an `O_C`-module. If `R^q f_* F = 0` for `q > 0`, then
@@ -341,7 +341,7 @@ theorem nonempty_cohomologyIso_globalSections_higherDirectImage
 
 [Tag 0734](https://stacks.math.columbia.edu/tag/0734) in the Stacks Project.
 
-**`Stacks.Cohomology.Leray.relativeLeraySpectralSequenceComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceFunctorial.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceFunctorial.lean#L313). The attribute's comment: “the spectral sequence for a module, functorial in the module, with its second page R^p g_*(R^q f_* F) and its functorial filtered abutment on R^{p+q}(g ∘ f)_* F”. References: SGA 4 V (5.3), “more general”; SGA 4½ Arcata (2.3.3), “more general”; SGA 4½ Th finitude (1.3), “more general”.
+**`Stacks.Cohomology.Leray.relativeLeraySpectralSequenceComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceFunctorial.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceFunctorial.lean#L313). The attribute's comment: “the spectral sequence for a module, functorial in the module, with its second page R^p g\_*(R^q f\_* F) and its functorial filtered abutment on R^\{p+q}(g ∘ f)\_* F”. References: SGA 4 V (5.3), “more general”; SGA 4½ Arcata (2.3.3), “more general”; SGA 4½ Th finitude (1.3), “more general”.
 
 > **[Stacks, Tag 0734] for a module.** Let `f : (Sh(C), O_C) ⟶ (Sh(D), O_D)` and
 > `g : (Sh(D), O_D) ⟶ (Sh(E), O_E)` be morphisms of ringed topoi and let `F` be an
@@ -363,7 +363,7 @@ def relativeLeraySpectralSequenceComp :
       (g.comp f).toRingedToposModulesHom
 ```
 
-**`Stacks.Cohomology.Leray.relativeLeraySpectralSequencePlusComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceFunctorial.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceFunctorial.lean#L331). The attribute's comment: “the version for bounded below complexes of modules, functorial in the complex, with its second page R^p g_*(H^q(Rf_* K)) and its functorial filtered abutment on H^{p+q}(R(g ∘ f)_* K)”. References: EGA 0 (12.2.4); SGA 4 V (5.4).
+**`Stacks.Cohomology.Leray.relativeLeraySpectralSequencePlusComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceFunctorial.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Modules/RelativeLeraySpectralSequenceFunctorial.lean#L331). The attribute's comment: “the version for bounded below complexes of modules, functorial in the complex, with its second page R^p g\_*(H^q(Rf\_* K)) and its functorial filtered abutment on H^\{p+q}(R(g ∘ f)\_* K)”. References: EGA 0 (12.2.4); SGA 4 V (5.4).
 
 > **[Stacks, Tag 0734] for a bounded below complex**, the "version for bounded below
 > complexes of `O_C`-modules" the source asserts alongside the module case. For `f` and `g` as

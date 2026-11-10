@@ -174,7 +174,7 @@ def supportOfSheaf (F : Sheaf (SmallEtale.topology B S hS X) AddCommGrpCat.{v}) 
 
 [Tag 04KB](https://stacks.math.columbia.edu/tag/04KB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isClosed_supportOfSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L436). The attribute's comment: “closed_section_support”.
+**`AlgebraicGeometry.Space.isClosed_supportOfSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L436). The attribute's comment: “closed\_section\_support”.
 
 > The support of a section is closed.
 
@@ -185,7 +185,7 @@ theorem isClosed_supportOfSection
     IsClosed (supportOfSection B S hS X F U σ)
 ```
 
-**`AlgebraicGeometry.Space.supportOfSection_add_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L494). The attribute's comment: “support_sum”.
+**`AlgebraicGeometry.Space.supportOfSection_add_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L494). The attribute's comment: “support\_sum”.
 
 > The support of a sum is contained in the union of the supports.
 
@@ -197,7 +197,7 @@ theorem supportOfSection_add_subset
       supportOfSection B S hS X F U σ ∪ supportOfSection B S hS X F U τ
 ```
 
-**`AlgebraicGeometry.Space.supportOfSection_map_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L521). The attribute's comment: “support_image_section”.
+**`AlgebraicGeometry.Space.supportOfSection_map_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L521). The attribute's comment: “support\_image\_section”.
 
 > A morphism of abelian sheaves cannot enlarge the support of a section: the support of the
 > image of `σ` under `φ` is contained in the support of `σ`.
@@ -210,7 +210,7 @@ theorem supportOfSection_map_subset
       supportOfSection B S hS X F U σ
 ```
 
-**`AlgebraicGeometry.Space.supportOfSheaf_subset_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 644](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L644). The attribute's comment: “support_injection”.
+**`AlgebraicGeometry.Space.supportOfSheaf_subset_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean, line 644](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupport.lean#L644). The attribute's comment: “support\_injection”.
 
 > The support of an abelian subsheaf is contained in the support of the ambient sheaf: a
 > monomorphism `f : F ⟶ G` of abelian sheaves on the small étale site cannot enlarge the support
@@ -244,7 +244,7 @@ theorem supportOfSheaf_subset_of_injective (hX : IsAlgebraicSpace B S hS X)
     supportOfSheaf B S hS X F ⊆ supportOfSheaf B S hS X G
 ```
 
-**`AlgebraicGeometry.Space.supportOfSheaf_eq_iUnion_image_supportOfSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportSections.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportSections.lean#L257). The attribute's comment: “sheaf_support_sections”.
+**`AlgebraicGeometry.Space.supportOfSheaf_eq_iUnion_image_supportOfSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportSections.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafSupportSections.lean#L257). The attribute's comment: “sheaf\_support\_sections”.
 
 > **Stacks 04KB, part (4).** The support of an abelian sheaf on the small étale site of an
 > algebraic space is the union, over all étale charts and all sections on them, of the images of

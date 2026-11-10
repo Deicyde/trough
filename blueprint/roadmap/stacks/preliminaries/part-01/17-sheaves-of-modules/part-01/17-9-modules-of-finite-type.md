@@ -37,7 +37,7 @@ noncomputable instance pullback_isFiniteType {X Y : RingedSpace.{u}} (f : X ⟶ 
 
 [Tag 01B7](https://stacks.math.columbia.edu/tag/01B7) in the Stacks Project.
 
-**`Stacks.SheafOfModules.isFiniteType_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FiniteTypeExtension.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FiniteTypeExtension.lean#L350). The attribute's comment: “finite_type_image”.
+**`Stacks.SheafOfModules.isFiniteType_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FiniteTypeExtension.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FiniteTypeExtension.lean#L350). The attribute's comment: “finite\_type\_image”.
 
 > The image of a morphism out of a sheaf of modules of finite type is of finite type.
 
@@ -45,7 +45,7 @@ noncomputable instance pullback_isFiniteType {X Y : RingedSpace.{u}} (f : X ⟶ 
 theorem isFiniteType_image (φ : M ⟶ N) (hM : M.IsFiniteType) : (image φ).IsFiniteType
 ```
 
-**`Stacks.SheafOfModules.isFiniteType_middle_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FiniteTypeExtension.lean, line 468](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FiniteTypeExtension.lean#L468). The attribute's comment: “finite_type_extension”. References: SGA 6 I (3.3), “c) finite type”.
+**`Stacks.SheafOfModules.isFiniteType_middle_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FiniteTypeExtension.lean, line 468](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/FiniteTypeExtension.lean#L468). The attribute's comment: “finite\_type\_extension”. References: SGA 6 I (3.3), “c) finite type”.
 
 > Let `R` be a sheaf of rings on a topological space. In a short exact sequence of sheaves of
 > `R`-modules, if the first and third terms are of finite type then so is the middle term.

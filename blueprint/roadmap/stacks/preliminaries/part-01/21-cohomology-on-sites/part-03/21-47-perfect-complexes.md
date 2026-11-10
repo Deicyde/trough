@@ -42,7 +42,7 @@ noncomputable def IsPerfect
 
 [Tag 08G6](https://stacks.math.columbia.edu/tag/08G6) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.isPerfect_of_coveringFamily_strictlyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/LocalModels.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/LocalModels.lean#L250). The attribute's comment: “local_strictly_perfect_implies_perfect”.
+**`AlgebraicGeometry.RingedSite.isPerfect_of_coveringFamily_strictlyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/LocalModels.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/LocalModels.lean#L250). The attribute's comment: “local\_strictly\_perfect\_implies\_perfect”.
 
 > **Stacks 08G6, part (1).** Let `(C, O)` be a ringed site whose underlying category has a
 > final object `T` and let `E` be an object of `D(O)`. If there are a covering `{V → T}`, strictly
@@ -64,7 +64,7 @@ theorem isPerfect_of_coveringFamily_strictlyPerfect
     X.IsPerfect E
 ```
 
-**`AlgebraicGeometry.RingedSite.isPerfect_of_coveringFamily_strictlyPerfect_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/LocalModelsGeneral.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/LocalModelsGeneral.lean#L152). The attribute's comment: “local_strictly_perfect_implies_perfect”.
+**`AlgebraicGeometry.RingedSite.isPerfect_of_coveringFamily_strictlyPerfect_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/LocalModelsGeneral.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/LocalModelsGeneral.lean#L152). The attribute's comment: “local\_strictly\_perfect\_implies\_perfect”.
 
 > Let `(C, O)` be a ringed site whose underlying category has a final object `T` and let `E` be
 > an object of `D(O)`. If there are a covering `{V → T}`, strictly perfect complexes `P_V` of
@@ -86,7 +86,7 @@ theorem isPerfect_of_coveringFamily_strictlyPerfect_general
     X.IsPerfect E
 ```
 
-**`AlgebraicGeometry.RingedSite.isPerfectComplex_of_isPerfect_representation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/Representatives.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/Representatives.lean#L100). The attribute's comment: “perfect_independent_of_representative”.
+**`AlgebraicGeometry.RingedSite.isPerfectComplex_of_isPerfect_representation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/Representatives.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/Representatives.lean#L100). The attribute's comment: “perfect\_independent\_of\_representative”.
 
 > **Stacks 08G6, part (2).** Let `(C, O)` be a ringed site and let `K` be a perfect object of
 > `D(O)`. Then every complex of `O`-modules representing `K` is a perfect complex.
@@ -259,7 +259,7 @@ theorem isPerfect_derivedTensorProduct
     X.IsPerfect ((T.tensor.obj K).obj L)
 ```
 
-**`AlgebraicGeometry.RingedSite.isPerfect_tensor_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/TensorOfPerfectObjects.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/TensorOfPerfectObjects.lean#L240). The attribute's comment: “if K, L are perfect objects of D(O), then so is K ⊗^L_O L, on any ringed site RingedSite.{u,u,u}”.
+**`AlgebraicGeometry.RingedSite.isPerfect_tensor_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/TensorOfPerfectObjects.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Perfect/TensorOfPerfectObjects.lean#L240). The attribute's comment: “if K, L are perfect objects of D(O), then so is K ⊗^L\_O L, on any ringed site RingedSite.\{u,u,u}”.
 
 > **Stacks 09JB.** Let `(C, O)` be a ringed site whose objects, morphisms and sections lie in
 > one universe.  If `K` and `L` are perfect objects of `D(O)`, then so is `K ⊗^{𝐋}_O L`.

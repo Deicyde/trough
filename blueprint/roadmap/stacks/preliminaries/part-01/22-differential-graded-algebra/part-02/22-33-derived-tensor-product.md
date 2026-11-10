@@ -14,7 +14,7 @@ Section 22.33 of the Stacks Project, [Tag 09LP](https://stacks.math.columbia.edu
 
 [Tag 09LQ](https://stacks.math.columbia.edu/tag/09LQ) in the Stacks Project.
 
-**`DifferentialGraded.Bimodule.tensorCompFunctor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensor.lean, line 1270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensor.lean#L1270). The attribute's comment: “the functor Mod_(A,d) -> Mod_(B,d), M |-> M (x)_A N”.
+**`DifferentialGraded.Bimodule.tensorCompFunctor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensor.lean, line 1270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensor.lean#L1270). The attribute's comment: “the functor Mod\_(A,d) -> Mod\_(B,d), M |-> M (x)\_A N”.
 
 > **Stacks 09LM.** The induced functor on the categories of differential graded modules.
 
@@ -482,7 +482,7 @@ theorem derivedHom_comparison_eq_evaluationAtOne (φ : A.Hom B)
           ((toHomotopyCategory A).map ((evaluationAtOne φ).evaluation N))
 ```
 
-**`DifferentialGraded.Bimodule.derivedTensorFunctor_adj_derivedRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorHomAdjunction.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorHomAdjunction.lean#L279). The attribute's comment: “the adjunction Hom_{D(A,d)}(M, N_A) = Hom_{D(B,d)}(M ⊗_A^𝐋 B, N), bifunctorially”. References: SGA 5 IIIB (5.2), “5.2.3 for F = B”.
+**`DifferentialGraded.Bimodule.derivedTensorFunctor_adj_derivedRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorHomAdjunction.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorHomAdjunction.lean#L279). The attribute's comment: “the adjunction Hom\_\{D(A,d)}(M, N\_A) = Hom\_\{D(B,d)}(M ⊗\_A^𝐋 B, N), bifunctorially”. References: SGA 5 IIIB (5.2), “5.2.3 for F = B”.
 
 > **Stacks 0BYX, Example 22.33.2.** For a homomorphism `φ : (A, d) → (B, d)` of differential
 > graded algebras, derived extension of scalars `- ⊗_A^𝐋 B : D(A, d) ⥤ D(B, d)` — tensoring with
@@ -509,7 +509,7 @@ def derivedTensorFunctor_adj_derivedRestriction (φ : A.Hom B) :
     derivedTensorFunctor (Bimodule.regular φ) ⊣ derivedRestriction φ
 ```
 
-**`DifferentialGraded.Bimodule.derivedTensorFunctor_adj_derivedRestriction_homEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorHomAdjunction.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorHomAdjunction.lean#L293). The attribute's comment: “the displayed formula Hom_{D(A,d)}(M, N_A) = Hom_{D(B,d)}(M ⊗_A^𝐋 B, N)”.
+**`DifferentialGraded.Bimodule.derivedTensorFunctor_adj_derivedRestriction_homEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorHomAdjunction.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorHomAdjunction.lean#L293). The attribute's comment: “the displayed formula Hom\_\{D(A,d)}(M, N\_A) = Hom\_\{D(B,d)}(M ⊗\_A^𝐋 B, N)”.
 
 > **Stacks 0BYX, Example 22.33.2**, the displayed formula itself:
 > `Hom_{D(A,d)}(M, N_A) = Hom_{D(B,d)}(M ⊗_A^𝐋 B, N)`.
@@ -526,7 +526,7 @@ def derivedTensorFunctor_adj_derivedRestriction_homEquiv (φ : A.Hom B)
       ((derivedTensorFunctor (Bimodule.regular φ)).obj M ⟶ N)
 ```
 
-**`DifferentialGradedModule.evaluationAtOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/EvaluationAtOne.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/EvaluationAtOne.lean#L95). The attribute's comment: “evaluation_at_one”.
+**`DifferentialGradedModule.evaluationAtOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/EvaluationAtOne.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/EvaluationAtOne.lean#L95). The attribute's comment: “evaluation\_at\_one”.
 
 > Evaluation at the unit identifies the graded Hom from `B` with restriction to `A`,
 > naturally in the differential graded `B`-module.
@@ -536,7 +536,7 @@ public noncomputable def evaluationAtOne (φ : A.Hom B) :
     EvaluationAtOneData φ
 ```
 
-**`DifferentialGradedModule.restrictScalars`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/Restriction.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/Restriction.lean#L60). The attribute's comment: “restriction_notation”. References: EGA II (2.8.6), “more general”.
+**`DifferentialGradedModule.restrictScalars`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/Restriction.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/Restriction.lean#L60). The attribute's comment: “restriction\_notation”. References: EGA II (2.8.6), “more general”.
 
 > Restrict a right differential graded `B`-module to `A` along a homomorphism of differential
 > graded algebras.
@@ -619,7 +619,7 @@ def derivedTensorFunctor_fullyFaithful (N : Bimodule A B)
 
 [Tag 0BYZ](https://stacks.math.columbia.edu/tag/0BYZ) in the Stacks Project.
 
-**`DifferentialGraded.Bimodule.derivedBaseChangeFunctor_isLeftDerivedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BaseChange.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BaseChange.lean#L224). The attribute's comment: “part (1) only, with the functor being derived presented as M |-> M (x)_A A': the identification c_M with the source's M |-> M (x)_R R' is baseChangeTensorIso over R' and baseChangeTensorAlgebraIso over A'. Corrected: the source says "right derived functor", but base change is a tensor product and so is LEFT derived, as Tag 09LS has it. Parts (2) and (3) are elsewhere, per the docstrings; nothing of Tag 0BYZ remains uncovered”.
+**`DifferentialGraded.Bimodule.derivedBaseChangeFunctor_isLeftDerivedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BaseChange.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BaseChange.lean#L224). The attribute's comment: “part (1) only, with the functor being derived presented as M |-> M (x)\_A A': the identification c\_M with the source's M |-> M (x)\_R R' is baseChangeTensorIso over R' and baseChangeTensorAlgebraIso over A'. Corrected: the source says "right derived functor", but base change is a tensor product and so is LEFT derived, as Tag 09LS has it. Parts (2) and (3) are elsewhere, per the docstrings; nothing of Tag 0BYZ remains uncovered”.
 
 > **Stacks 0BYZ, part (1).** The derived tensor product `- ⊗_A^𝐋 A'` with the base change
 > `A' = A ⊗_R R'` is the total left derived functor of base change
@@ -641,7 +641,7 @@ theorem derivedBaseChangeFunctor_isLeftDerivedFunctor :
       (derivedBaseChangeCounit A R') (quasiIsomorphisms' A)
 ```
 
-**`DifferentialGraded.Bimodule.baseChangeTensorAlgebraIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeAbsoluteTensor.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeAbsoluteTensor.lean#L559). The attribute's comment: “the A'-linearity of the canonical map c_M of the PROOF, NOT any of parts (1), (2), (3): M (x)_A A' is M (x)_R R' as differential graded A'-modules, the right action on M (x)_R R' being (m (x) t)(a (x) s) = (m a) (x) (t s). With this nothing of Tag 0BYZ is left unformalized; the module docstring says where the three parts and the R'-only form baseChangeTensorIso are, and how this A'-module restricts to that R'-module”.
+**`DifferentialGraded.Bimodule.baseChangeTensorAlgebraIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeAbsoluteTensor.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeAbsoluteTensor.lean#L559). The attribute's comment: “the A'-linearity of the canonical map c\_M of the PROOF, NOT any of parts (1), (2), (3): M (x)\_A A' is M (x)\_R R' as differential graded A'-modules, the right action on M (x)\_R R' being (m (x) t)(a (x) s) = (m a) (x) (t s). With this nothing of Tag 0BYZ is left unformalized; the module docstring says where the three parts and the R'-only form baseChangeTensorIso are, and how this A'-module restricts to that R'-module”.
 
 > **The `A'`-linearity of the canonical map `c_M` in the proof of Stacks 0BYZ.** Let `R → R'`
 > be a map of commutative rings, let `(A, d)` be a differential graded `R`-algebra and let
@@ -660,7 +660,7 @@ def baseChangeTensorAlgebraIso :
     baseChangeRelativeTensor A R' M ≅ baseChangeAbsoluteTensor M R'
 ```
 
-**`DifferentialGraded.Bimodule.isIso_derivedBaseChangeCounit_app_of_kFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeRepresents.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeRepresents.lean#L138). The attribute's comment: “part (3): M K-flat as a complex of R-modules implies that the ordinary base change represents M (x)_A^L A'. The representing object is spelled M (x)_A A'; it is the source's differential graded A'-module M (x)_R R' by baseChangeTensorIso over R' and by baseChangeTensorAlgebraIso of BaseChangeAbsoluteTensor.lean over A'. Part (2) is derivedBaseChangeRestrictionSquare of BaseChangeRestrictionSquare.lean”.
+**`DifferentialGraded.Bimodule.isIso_derivedBaseChangeCounit_app_of_kFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeRepresents.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeRepresents.lean#L138). The attribute's comment: “part (3): M K-flat as a complex of R-modules implies that the ordinary base change represents M (x)\_A^L A'. The representing object is spelled M (x)\_A A'; it is the source's differential graded A'-module M (x)\_R R' by baseChangeTensorIso over R' and by baseChangeTensorAlgebraIso of BaseChangeAbsoluteTensor.lean over A'. Part (2) is derivedBaseChangeRestrictionSquare of BaseChangeRestrictionSquare.lean”.
 
 > Let `R → R'` be a ring map, `(A, d)` a differential graded `R`-algebra which is K-flat as a
 > complex of `R`-modules, and `A' = A ⊗_R R'`. For a differential graded `A`-module `M` which is
@@ -676,7 +676,7 @@ theorem isIso_derivedBaseChangeCounit_app_of_kFlat
     IsIso ((derivedBaseChangeCounit A R').app ((toHomotopyCategory A).obj M))
 ```
 
-**`DifferentialGraded.Bimodule.derivedBaseChangeRestrictionSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeRestrictionSquare.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeRestrictionSquare.lean#L395). The attribute's comment: “part (2): the square of restriction and derived base change commutes. The left column is restriction along the structure homomorphism R -> A, the right column restriction along r' |-> 1 (x) r', and the bottom edge derived base change of R in degree zero read in D(R', d) through the unitor R (x)_R R' = R' of degreeZeroBaseChangeUnitor. Parts (1) and (3) are derivedBaseChangeFunctor_isLeftDerivedFunctor and isIso_derivedBaseChangeCounit_app_of_kFlat”.
+**`DifferentialGraded.Bimodule.derivedBaseChangeRestrictionSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeRestrictionSquare.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeRestrictionSquare.lean#L395). The attribute's comment: “part (2): the square of restriction and derived base change commutes. The left column is restriction along the structure homomorphism R -> A, the right column restriction along r' |-> 1 (x) r', and the bottom edge derived base change of R in degree zero read in D(R', d) through the unitor R (x)\_R R' = R' of degreeZeroBaseChangeUnitor. Parts (1) and (3) are derivedBaseChangeFunctor\_isLeftDerivedFunctor and isIso\_derivedBaseChangeCounit\_app\_of\_kFlat”.
 
 > **Stacks 0BYZ, part (2).** *"Let `R → R'` be a ring map, let `(A, d)` be a differential
 > graded `R`-algebra, let `(A', d)` be the base change `A ⊗_R R'`. If `A` is K-flat as a complex of
@@ -715,7 +715,7 @@ def derivedBaseChangeRestrictionSquare
           derivedRestriction (tensorIncludeRightHom (degreeZero R R) (degreeZero R R'))
 ```
 
-**`DifferentialGraded.Bimodule.baseChangeTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorRestrictRight.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorRestrictRight.lean#L232). The attribute's comment: “the canonical map c_M of the PROOF, over R' — NOT any of parts (1), (2), (3). It is what identifies the functor derived in part (1), derivedBaseChangeFunctor_isLeftDerivedFunctor of BaseChange.lean, with the source's M |-> M (x)_R R'. Part (2) is derivedBaseChangeRestrictionSquare, part (3) isIso_derivedBaseChangeCounit_app_of_kFlat. The A'-linear form of this map, which is what the source states, is baseChangeTensorAlgebraIso”.
+**`DifferentialGraded.Bimodule.baseChangeTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorRestrictRight.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorRestrictRight.lean#L232). The attribute's comment: “the canonical map c\_M of the PROOF, over R' — NOT any of parts (1), (2), (3). It is what identifies the functor derived in part (1), derivedBaseChangeFunctor\_isLeftDerivedFunctor of BaseChange.lean, with the source's M |-> M (x)\_R R'. Part (2) is derivedBaseChangeRestrictionSquare, part (3) isIso\_derivedBaseChangeCounit\_app\_of\_kFlat. The A'-linear form of this map, which is what the source states, is baseChangeTensorAlgebraIso”.
 
 > **The canonical map `c_M` in the proof of Stacks 0BYZ, over `R'`.** Let `R → R'` be a ring
 > map, let `(A, d)` be a differential graded `R`-algebra and let `A' = A ⊗_R R'` be its base change.
@@ -739,7 +739,7 @@ def baseChangeTensorIso (M : DifferentialGradedModule.{u, u, u} A) :
       M.absoluteTensor (degreeZero R R')
 ```
 
-**`DifferentialGradedModule.kFlat_toCochainComplex_of_propertyPFiltration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/PropertyPKFlat.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/PropertyPKFlat.lean#L95). The attribute's comment: “the K-flatness half of the claim in the PROOF — a differential graded A-module with property (P) is K-flat as a complex of R-modules. Not any of parts (1), (2), (3); part (1) is DifferentialGraded.Bimodule.derivedBaseChangeFunctor_isLeftDerivedFunctor”.
+**`DifferentialGradedModule.kFlat_toCochainComplex_of_propertyPFiltration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/PropertyPKFlat.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/PropertyPKFlat.lean#L95). The attribute's comment: “the K-flatness half of the claim in the PROOF — a differential graded A-module with property (P) is K-flat as a complex of R-modules. Not any of parts (1), (2), (3); part (1) is DifferentialGraded.Bimodule.derivedBaseChangeFunctor\_isLeftDerivedFunctor”.
 
 > **A differential graded module with property (P) over a differential graded algebra which is
 > K-flat as a complex of `R`-modules is itself K-flat as a complex of `R`-modules.** This is the
@@ -773,7 +773,7 @@ theorem kFlat_toCochainComplex_of_propertyPFiltration
 def homDualBimodule (T : Bimodule A B) : Bimodule B A
 ```
 
-**`DifferentialGraded.Bimodule.derivedTensorHomDualFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/InternalHomTensorIso.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/InternalHomTensorIso.lean#L402). The attribute's comment: “the second assertion: the functorial isomorphism N ⊗_B^L S ≅ RHom(T, N)”.
+**`DifferentialGraded.Bimodule.derivedTensorHomDualFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/InternalHomTensorIso.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/InternalHomTensorIso.lean#L402). The attribute's comment: “the second assertion: the functorial isomorphism N ⊗\_B^L S ≅ RHom(T, N)”.
 
 > **Stacks 0BZ0, second assertion.** Let `R` be a ring, let `(A, d)` and `(B, d)` be
 > differential graded `R`-algebras and let `T` be a differential graded `(A, B)`-bimodule. Assume

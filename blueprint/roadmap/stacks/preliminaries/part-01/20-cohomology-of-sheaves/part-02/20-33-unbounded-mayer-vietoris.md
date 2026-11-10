@@ -214,8 +214,8 @@ theorem exists_distinguished_triangle_of_cover_rightDerived
 > objects of `D(𝒪_X)`. There are restriction, difference and connecting homomorphisms making the
 > Mayer--Vietoris sequence
 >
-> `⋯ ⟶ Ext^{n-1}(E|_{U∩V}, F|_{U∩V}) ⟶ Ext^n(E, F) ⟶
->   Ext^n(E|_U, F|_U) × Ext^n(E|_V, F|_V) ⟶ Ext^n(E|_{U∩V}, F|_{U∩V}) ⟶ ⋯`
+> `⋯ ⟶ Ext^\{n-1}(E|\_\{U∩V}, F|\_\{U∩V}) ⟶ Ext^n(E, F) ⟶
+>   Ext^n(E|\_U, F|\_U) × Ext^n(E|\_V, F|\_V) ⟶ Ext^n(E|\_\{U∩V}, F|\_\{U∩V}) ⟶ ⋯`
 >
 > exact at each of its three kinds of spot and in every integer degree, the Ext groups of the
 > restrictions being taken in the derived categories of the open subspaces.
@@ -248,8 +248,8 @@ public theorem exists_mayerVietoris_ext_longExactSequence {X : TopCat.{u}}
 > compatible with the canonical derived adjunction counits and carrying the Mayer--Vietoris sign,
 > and connecting homomorphisms, such that the Mayer--Vietoris sequence
 >
-> `⋯ ⟶ Ext^{n-1}(j_{U∩V,!}E|_{U∩V}, F) ⟶ Ext^n(E, F) ⟶
->   Ext^n(j_{U!}E|_U, F) × Ext^n(j_{V!}E|_V, F) ⟶ Ext^n(j_{U∩V,!}E|_{U∩V}, F) ⟶ ⋯`
+> `⋯ ⟶ Ext^\{n-1}(j\_\{U∩V,!}E|\_\{U∩V}, F) ⟶ Ext^n(E, F) ⟶
+>   Ext^n(j\_\{U!}E|\_U, F) × Ext^n(j\_\{V!}E|\_V, F) ⟶ Ext^n(j\_\{U∩V,!}E|\_\{U∩V}, F) ⟶ ⋯`
 >
 > is exact at each of its three kinds of spot and in every integer degree.
 
@@ -297,8 +297,8 @@ public theorem exists_mayerVietoris_hom_longExactSequence {X : TopCat.{u}}
 > **Stacks 08BW, with every map of the sequence named.** For a ringed space covered by two
 > open subspaces `U` and `V` and objects `E`, `F` of `D(𝒪_X)`, the Mayer--Vietoris sequence
 >
-> `⋯ ⟶ Ext^{n-1}(E|_{U∩V}, F|_{U∩V}) ⟶ Ext^n(E, F) ⟶
->   Ext^n(E|_U, F|_U) × Ext^n(E|_V, F|_V) ⟶ Ext^n(E|_{U∩V}, F|_{U∩V}) ⟶ ⋯`
+> `⋯ ⟶ Ext^\{n-1}(E|\_\{U∩V}, F|\_\{U∩V}) ⟶ Ext^n(E, F) ⟶
+>   Ext^n(E|\_U, F|\_U) × Ext^n(E|\_V, F|\_V) ⟶ Ext^n(E|\_\{U∩V}, F|\_\{U∩V}) ⟶ ⋯`
 >
 > is exact at each of its three kinds of spot and in every integer degree, its first map is
 > the pair of the two restrictions and its second map is the difference of two further
@@ -357,7 +357,7 @@ theorem exists_mayerVietoris_ext_longExactSequence_restrictions (hUV : U ⊔ V =
 
 [Tag 08BX](https://stacks.math.columbia.edu/tag/08BX) in the Stacks Project.
 
-**`Stacks.Cohomology.LinearMayerVietoris.linearUnboundedMayerVietoris`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearUnboundedTriangle.lean, line 849](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearUnboundedTriangle.lean#L849). The attribute's comment: “the triangle in D(A), A = Γ(X, 𝒪_X)”.
+**`Stacks.Cohomology.LinearMayerVietoris.linearUnboundedMayerVietoris`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearUnboundedTriangle.lean, line 849](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LinearUnboundedTriangle.lean#L849). The attribute's comment: “the triangle in D(A), A = Γ(X, 𝒪\_X)”.
 
 > Let `X` be a ringed space covered by two open subsets `U` and `V`, and let `A = Γ(X, 𝒪_X)`.
 > The restriction maps of the `A`-linear derived sections functors, with the usual sign on the

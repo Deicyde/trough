@@ -14,7 +14,7 @@ Section 65.16 of the Stacks Project, [Tag 03I3](https://stacks.math.columbia.edu
 
 [Tag 03I4](https://stacks.math.columbia.edu/tag/03I4) in the Stacks Project.
 
-**`AlgebraicGeometry.isAlgebraicSpace_extend`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Extension.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Extension.lean#L559). The attribute's comment: “extension_algebraic_space”.
+**`AlgebraicGeometry.isAlgebraicSpace_extend`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Extension.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Extension.lean#L559). The attribute's comment: “extension\_algebraic\_space”.
 
 > **Stacks 03I4 (3).** Extension along a morphism `g : S ⟶ S'` of a big fppf site carries
 > algebraic spaces over `S` to algebraic spaces over `S'`.
@@ -32,7 +32,7 @@ theorem isAlgebraicSpace_extend
       (L.obj (⟨F, hF.isSheaf⟩ : Sheaf (B.topology.over S) (Type u))).obj
 ```
 
-**`AlgebraicGeometry.isIso_relocalizeOfRestricted`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ExtensionEvaluation.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ExtensionEvaluation.lean#L109). The attribute's comment: “extension_evaluation”.
+**`AlgebraicGeometry.isIso_relocalizeOfRestricted`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ExtensionEvaluation.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ExtensionEvaluation.lean#L109). The attribute's comment: “extension\_evaluation”.
 
 > **Stacks 03I4 (1).** For a morphism `g : S ⟶ S'` of a big fppf site and a sheaf `F` on the big
 > fppf site of `S`, the canonical map from the presheaf of pairs of a factorization `T' → S → S'` and
@@ -49,7 +49,7 @@ theorem isIso_relocalizeOfRestricted
     IsIso (OverShriek.relocalizeOfRestricted g (adj.unit.app F).hom)
 ```
 
-**`AlgebraicGeometry.Space.extend_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean#L118). The attribute's comment: “extension_representable”.
+**`AlgebraicGeometry.Space.extend_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean#L118). The attribute's comment: “extension\_representable”.
 
 > **Stacks 03I4.** Extension along `g : S ⟶ S'` carries a sheaf represented by `X / S` to
 > one represented by `X / S'`.
@@ -65,7 +65,7 @@ theorem extend_representable
     Nonempty (((L.obj F).obj) ≅ yoneda.obj ((Over.map g).obj X))
 ```
 
-**`AlgebraicGeometry.Space.restrict_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean#L173). The attribute's comment: “restriction_representable”.
+**`AlgebraicGeometry.Space.restrict_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean#L173). The attribute's comment: “restriction\_representable”.
 
 > **Stacks 03I4.** Restricting a sheaf represented by `X' / S'` along `g : S ⟶ S'` gives a
 > sheaf represented by the fibre product `S ×_{S'} X' / S`.
@@ -88,7 +88,7 @@ theorem restrict_representable
                 yoneda.obj Xbase)
 ```
 
-**`AlgebraicGeometry.Space.restrict_eval`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean#L210). The attribute's comment: “restriction_evaluation”.
+**`AlgebraicGeometry.Space.restrict_eval`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean#L210). The attribute's comment: “restriction\_evaluation”.
 
 > **Stacks 03I4, part (4): evaluation of a restricted sheaf.** Let `g : S ⟶ S'` be a morphism of
 > a big fppf site, let `j = Over.map g` be the associated localization functor and let `F'` be a
@@ -113,7 +113,7 @@ theorem restrict_eval
           (Opposite.op T) = F'.obj.obj (Opposite.op (Over.mk (T.hom ≫ g)))
 ```
 
-**`AlgebraicGeometry.Space.exists_extended_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean, line 517](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean#L517). The attribute's comment: “extension_algebraic_space”.
+**`AlgebraicGeometry.Space.exists_extended_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean, line 517](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean#L517). The attribute's comment: “extension\_algebraic\_space”.
 
 > **Stacks 03I4, part (3): the extension of a presentation.** A chosen étale presentation `U / R`
 > of an algebraic space `F` over `S` extends along `g : S ⟶ S'` to a presentation of `L F` by the
@@ -190,8 +190,8 @@ noncomputable def baseChangePresentation
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.sheafPushforwardContinuous_obj_obj_obj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPushforwardContinuous_obj_obj_obj#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean, line 682](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean#L682) (StacksFrontier): “restriction_evaluation”.
-- [`isAlgebraicSpace_relocalizeRestrict`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isAlgebraicSpace_relocalizeRestrict#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/RestrictSmallerBase.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RestrictSmallerBase.lean#L457) (StacksFrontier): “restriction_algebraic_space, algebraicity”.
+- [`CategoryTheory.Functor.sheafPushforwardContinuous_obj_obj_obj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.sheafPushforwardContinuous_obj_obj_obj#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean, line 682](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/ChangeOfBaseScheme.lean#L682) (StacksFrontier): “restriction\_evaluation”.
+- [`isAlgebraicSpace_relocalizeRestrict`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isAlgebraicSpace_relocalizeRestrict#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/RestrictSmallerBase.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RestrictSmallerBase.lean#L457) (StacksFrontier): “restriction\_algebraic\_space, algebraicity”.
 
 ## Tag 03I5, a definition
 

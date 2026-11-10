@@ -210,7 +210,7 @@ theorem cechCupProduct_ι (D : ComplexPairing R K L M) (r s : ℕ) (a b : ℤ) :
           eqToHom (congrArg (((totalCechComplexFunctor W R).obj M).X) (by push_cast; ring)))
 ```
 
-**`Stacks.Cech.ModuleCupProduct.cechCupProductA`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/ModuleCupProduct.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/ModuleCupProduct.lean#L140). The attribute's comment: “at 𝒪_X-module coefficients over the ring of sections”.
+**`Stacks.Cech.ModuleCupProduct.cechCupProductA`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/ModuleCupProduct.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/ModuleCupProduct.lean#L140). The attribute's comment: “at 𝒪\_X-module coefficients over the ring of sections”.
 
 > **The Čech cup product at `𝒪_X`-module coefficients.** The signed Alexander--Whitney
 > cup-product map

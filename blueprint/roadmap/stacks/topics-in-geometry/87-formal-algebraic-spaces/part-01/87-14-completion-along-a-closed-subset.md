@@ -275,7 +275,7 @@ theorem isIso_completionComparison_adicQuotientSystem (hA : B.Contains (Spec (.o
       (quotientSystemCompatible_adicQuotientSystem B S hS hA f I hI))
 ```
 
-**`AlgebraicGeometry.FormalSpace.isIso_completionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFormalSpectrum.lean, line 936](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFormalSpectrum.lean#L936). The attribute's comment: “formal spectrum”. References: EGA I (10.8.5), “affine case Spf(Â)”; EGA I (10.10.1), “Spf(A) = X_{/X}”; EGA III (5.1.1), “Spf(A) ≅ Ŷ”.
+**`AlgebraicGeometry.FormalSpace.isIso_completionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFormalSpectrum.lean, line 936](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionFormalSpectrum.lean#L936). The attribute's comment: “formal spectrum”. References: EGA I (10.8.5), “affine case Spf(Â)”; EGA I (10.10.1), “Spf(A) = X\_\{/X}”; EGA III (5.1.1), “Spf(A) ≅ Ŷ”.
 
 > **Stacks 0GBA (2).** Let `X = Spec A` be an affine scheme over `S` in the big fppf site
 > and let `T = V(I)` be the zero locus of a finitely generated ideal `I ⊆ A`. Then the

@@ -125,7 +125,7 @@ public theorem exists_koszulTateProIso (f : Fin r → R) :
 
 [Tag 0GZ6](https://stacks.math.columbia.edu/tag/0GZ6) in the Stacks Project.
 
-**`DividedPowers.TateResolution.exact_degreeZeroHomology_oddVariableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/DegreeZeroHomology.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/DegreeZeroHomology.lean#L205). The attribute's comment: “degree_one”.
+**`DividedPowers.TateResolution.exact_degreeZeroHomology_oddVariableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/DegreeZeroHomology.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/DegreeZeroHomology.lean#L205). The attribute's comment: “degree\_one”.
 
 > Multiplication by the cycle followed by the inclusion into the degree-one
 > extension is right exact on degree-zero homology.
@@ -146,7 +146,7 @@ public theorem exact_degreeZeroHomology_oddVariableExtension
       LinearMap.ker (toExtensionOnDegreeZeroHomology 𝒜 dA dExt hdExt)
 ```
 
-**`DividedPowers.TateResolution.surjective_degreeZeroHomology_oddVariableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/DegreeZeroHomology.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/DegreeZeroHomology.lean#L266). The attribute's comment: “degree_one”.
+**`DividedPowers.TateResolution.surjective_degreeZeroHomology_oddVariableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/DegreeZeroHomology.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/DegreeZeroHomology.lean#L266). The attribute's comment: “degree\_one”.
 
 > The inclusion onto degree-zero homology of the extension is surjective.
 
@@ -162,7 +162,7 @@ public theorem surjective_degreeZeroHomology_oddVariableExtension
       (toExtensionOnDegreeZeroHomology 𝒜 dA dExt hdExt)
 ```
 
-**`DividedPowers.TateResolution.evenVariableSpectralSequence_degree_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableSpectralSequence.lean, line 883](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableSpectralSequence.lean#L883). The attribute's comment: “degree_two”.
+**`DividedPowers.TateResolution.evenVariableSpectralSequence_degree_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableSpectralSequence.lean, line 883](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableSpectralSequence.lean#L883). The attribute's comment: “degree\_two”.
 
 > **The spectral sequence of a degree-two divided-power variable, Tag 0GZ6 part (2).**
 >
@@ -214,7 +214,7 @@ public theorem evenVariableSpectralSequence_degree_two (hf_grade : f ∈ 𝒜 1)
           ModuleCat.of P (evenVariableHomology 𝒜 dA f h0 k)))
 ```
 
-**`DividedPowers.TateResolution.range_mulOnGradeHomology_eq_ker_toExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean, line 570](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean#L570). The attribute's comment: “degree_one”.
+**`DividedPowers.TateResolution.range_mulOnGradeHomology_eq_ker_toExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean, line 570](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean#L570). The attribute's comment: “degree\_one”.
 
 > Exactness at the second copy of `Hₙ(A)`: the image of multiplication by `f` is the kernel of
 > the map induced by the inclusion into the odd degree-one extension.
@@ -234,7 +234,7 @@ public theorem range_mulOnGradeHomology_eq_ker_toExtension {R : Type u} {A : Typ
       LinearMap.ker (toExtensionOnGradeHomology 𝒜 dA dExt hdExt n)
 ```
 
-**`DividedPowers.TateResolution.range_toExtensionOnGradeHomology_eq_ker_connecting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean, line 640](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean#L640). The attribute's comment: “degree_one”.
+**`DividedPowers.TateResolution.range_toExtensionOnGradeHomology_eq_ker_connecting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean, line 640](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean#L640). The attribute's comment: “degree\_one”.
 
 > Exactness at `Hₙ₊₁(A⟨T⟩)`: the image of the map induced by the inclusion in degree `n + 1` is
 > the kernel of the connecting map out of degree `n + 1`.
@@ -252,7 +252,7 @@ public theorem range_toExtensionOnGradeHomology_eq_ker_connecting {R : Type u} {
       LinearMap.ker (connectingOnGradeHomology 𝒜 dA dExt hdExt n)
 ```
 
-**`DividedPowers.TateResolution.range_connectingOnGradeHomology_eq_ker_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean, line 730](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean#L730). The attribute's comment: “degree_one”.
+**`DividedPowers.TateResolution.range_connectingOnGradeHomology_eq_ker_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean, line 730](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean#L730). The attribute's comment: “degree\_one”.
 
 > Exactness at the first copy of `Hₙ(A)`: the image of the connecting map out of degree `n + 1`
 > is the kernel of multiplication by `f`.
@@ -272,7 +272,7 @@ public theorem range_connectingOnGradeHomology_eq_ker_mul {R : Type u} {A : Type
       LinearMap.ker (mulOnGradeHomology 𝒜 dA f hf n)
 ```
 
-**`DividedPowers.TateResolution.surjective_toExtensionOnGradeHomology_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean, line 841](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean#L841). The attribute's comment: “degree_one”.
+**`DividedPowers.TateResolution.surjective_toExtensionOnGradeHomology_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean, line 841](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean#L841). The attribute's comment: “degree\_one”.
 
 > The right end of the long exact sequence: the map to the degree-zero homology of the odd
 > degree-one extension is surjective. This is
@@ -292,7 +292,7 @@ public theorem surjective_toExtensionOnGradeHomology_zero {R : Type u} {A : Type
     Function.Surjective (toExtensionOnGradeHomology 𝒜 dA dExt hdExt 0)
 ```
 
-**`DividedPowers.TateResolution.range_mulOnGradeHomology_eq_ker_toExtension_oddExtensionDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean, line 874](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean#L874). The attribute's comment: “degree_one”.
+**`DividedPowers.TateResolution.range_mulOnGradeHomology_eq_ker_toExtension_oddExtensionDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean, line 874](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean#L874). The attribute's comment: “degree\_one”.
 
 > Exactness at the second copy of `Hₙ(A)` for the differential of Tag 09PM: no differential on
 > the extension is assumed, the one of Tag 09PM being used.
@@ -309,7 +309,7 @@ public theorem range_mulOnGradeHomology_eq_ker_toExtension_oddExtensionDifferent
         (oddExtensionDifferential_inclusion 𝒜 dA 1 f) n)
 ```
 
-**`DividedPowers.TateResolution.range_toExtensionOnGradeHomology_eq_ker_connecting_oddExtensionDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean, line 891](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean#L891). The attribute's comment: “degree_one”.
+**`DividedPowers.TateResolution.range_toExtensionOnGradeHomology_eq_ker_connecting_oddExtensionDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean, line 891](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean#L891). The attribute's comment: “degree\_one”.
 
 > Exactness at `Hₙ₊₁(A⟨T⟩)` for the differential of Tag 09PM: no differential on the extension
 > is assumed, the one of Tag 09PM being used.
@@ -327,7 +327,7 @@ public theorem range_toExtensionOnGradeHomology_eq_ker_connecting_oddExtensionDi
         (oddExtensionDifferential_inclusion 𝒜 dA 1 f) n)
 ```
 
-**`DividedPowers.TateResolution.range_connectingOnGradeHomology_eq_ker_mul_oddExtensionDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean, line 908](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean#L908). The attribute's comment: “degree_one”.
+**`DividedPowers.TateResolution.range_connectingOnGradeHomology_eq_ker_mul_oddExtensionDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean, line 908](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean#L908). The attribute's comment: “degree\_one”.
 
 > Exactness at the first copy of `Hₙ(A)` for the differential of Tag 09PM: no differential on
 > the extension is assumed, the one of Tag 09PM being used.
@@ -344,7 +344,7 @@ public theorem range_connectingOnGradeHomology_eq_ker_mul_oddExtensionDifferenti
       LinearMap.ker (mulOnGradeHomology 𝒜 dA f hf n)
 ```
 
-**`DividedPowers.TateResolution.surjective_toExtensionOnGradeHomology_zero_oddExtensionDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean, line 925](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean#L925). The attribute's comment: “degree_one”.
+**`DividedPowers.TateResolution.surjective_toExtensionOnGradeHomology_zero_oddExtensionDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean, line 925](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariableHomologySequence.lean#L925). The attribute's comment: “degree\_one”.
 
 > The right end of the long exact sequence for the differential of Tag 09PM: no differential on
 > the extension is assumed, the one of Tag 09PM being used.

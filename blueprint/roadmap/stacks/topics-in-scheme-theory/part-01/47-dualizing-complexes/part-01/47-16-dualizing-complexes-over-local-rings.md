@@ -108,7 +108,7 @@ public theorem derivedHomFiniteLengthIsoMatlisDual
 
 [Tag 0A7U](https://stacks.math.columbia.edu/tag/0A7U) in the Stacks Project.
 
-**`Dualizing.depth_eq_least_nonzero_negative_ext`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DepthFromExt.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DepthFromExt.lean#L287). The attribute's comment: “depth_from_ext”.
+**`Dualizing.depth_eq_least_nonzero_negative_ext`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DepthFromExt.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DepthFromExt.lean#L287). The attribute's comment: “depth\_from\_ext”.
 
 > **Stacks Project, Tag 0A7U, part (3).** For a nonzero finite module over a
 > Noetherian local ring, depth is the least nonnegative integer `δ` for which
@@ -134,7 +134,7 @@ public theorem depth_eq_least_nonzero_negative_ext
         Module.depth A (IsLocalRing.maximalIdeal A) M = (delta : ℕ∞)
 ```
 
-**`Dualizing.ext_degree_mem_Icc_of_nontrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/ExtDegreeBounds.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/ExtDegreeBounds.lean#L430). The attribute's comment: “ext_degree_bounds”. References: SGA 2 V (3.1), “(i)”.
+**`Dualizing.ext_degree_mem_Icc_of_nontrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/ExtDegreeBounds.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/ExtDegreeBounds.lean#L430). The attribute's comment: “ext\_degree\_bounds”. References: SGA 2 V (3.1), “(i)”.
 
 > **Stacks Project, Tag 0A7U.** For a nonzero finite module `M` of support dimension `d`,
 > Ext from `M` into a normalized dualizing complex can be nonzero only in the integer degrees
@@ -155,7 +155,7 @@ theorem ext_degree_mem_Icc_of_nontrivial
     i ∈ Set.Icc (-(d : ℤ)) 0
 ```
 
-**`Dualizing.supportDim_ext_le_neg_degree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/ExtSupportBound.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/ExtSupportBound.lean#L357). The attribute's comment: “ext_support_bound”. References: SGA 2 V (3.1), “(ii)”.
+**`Dualizing.supportDim_ext_le_neg_degree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/ExtSupportBound.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/ExtSupportBound.lean#L357). The attribute's comment: “ext\_support\_bound”. References: SGA 2 V (3.1), “(ii)”.
 
 > **Stacks Project, Tag 0A7U, support bound.** If `K` is a normalized dualizing
 > complex over a Noetherian local ring `A` and `M` is a nonzero finite `A`-module, then
@@ -178,7 +178,7 @@ public theorem supportDim_ext_le_neg_degree
 
 [Tag 0B5A](https://stacks.math.columbia.edu/tag/0B5A) in the Stacks Project.
 
-**`Dualizing.isCohenMacaulay_iff_ext_concentrated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CohenMacaulayCriterion.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CohenMacaulayCriterion.lean#L287). The attribute's comment: “cm_criterion”.
+**`Dualizing.isCohenMacaulay_iff_ext_concentrated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CohenMacaulayCriterion.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CohenMacaulayCriterion.lean#L287). The attribute's comment: “cm\_criterion”.
 
 > **Stacks Project, Tag 0B5A.** For a nonzero finite module over a Noetherian local ring with
 > normalized dualizing complex, Cohen--Macaulayness is equivalent to `Ext` into the dualizing
@@ -207,7 +207,7 @@ public theorem isCohenMacaulay_iff_ext_concentrated
               (ModuleCat.of A M)) K (-i))]
 ```
 
-**`Dualizing.cohenMacaulayExtDuality`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CohenMacaulayDuality.lean, line 1041](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CohenMacaulayDuality.lean#L1041). The attribute's comment: “cm_duality, that CM_d is anti-autoequivalent to itself”.
+**`Dualizing.cohenMacaulayExtDuality`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CohenMacaulayDuality.lean, line 1041](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CohenMacaulayDuality.lean#L1041). The attribute's comment: “cm\_duality, that CM\_d is anti-autoequivalent to itself”.
 
 > **Cohen--Macaulay duality (Stacks Project, Tag 0B5A).** For a normalized dualizing complex,
 > `Ext` in degree minus the depth induces an anti-autoequivalence of the category of finite
@@ -222,7 +222,7 @@ public noncomputable def cohenMacaulayExtDuality
       CohenMacaulayModulesOfDepth.{u, max (u + 1) (v + 1)} A d
 ```
 
-**`Dualizing.cohenMacaulayExtDuality_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CohenMacaulayDuality.lean, line 1052](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CohenMacaulayDuality.lean#L1052). The attribute's comment: “cm_duality, that the anti-autoequivalence is M ↦ Ext^{-d}(M, ω)”.
+**`Dualizing.cohenMacaulayExtDuality_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CohenMacaulayDuality.lean, line 1052](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CohenMacaulayDuality.lean#L1052). The attribute's comment: “cm\_duality, that the anti-autoequivalence is M ↦ Ext^\{-d}(M, ω)”.
 
 > The duality functor, after forgetting the Cohen--Macaulay condition, is naturally the
 > canonical contravariant `Ext^{-d}` functor.

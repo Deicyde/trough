@@ -715,7 +715,7 @@ public theorem isConstructibleModuleSheaf_iff_affineShriekPresentation_of_gen
 
 [Tag 09YT](https://stacks.math.columbia.edu/tag/09YT) in the Stacks Project.
 
-**`AlgebraicGeometry.isConstructibleAbelianSheaf_iff_hasFiniteZModShriekPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekPresentation.lean, line 673](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekPresentation.lean#L673). The attribute's comment: “a constructible abelian sheaf on a quasi-compact quasi-separated scheme is exactly a cokernel of a map between finite direct sums of the sheaves j_{U!}(Z/nZ) at quasi-compact quasi-separated etale objects and positive integers n”.
+**`AlgebraicGeometry.isConstructibleAbelianSheaf_iff_hasFiniteZModShriekPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekPresentation.lean, line 673](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/AbelianShriekPresentation.lean#L673). The attribute's comment: “a constructible abelian sheaf on a quasi-compact quasi-separated scheme is exactly a cokernel of a map between finite direct sums of the sheaves j\_\{U!}(Z/nZ) at quasi-compact quasi-separated etale objects and positive integers n”.
 
 > **Stacks 09YT.** Let `X` be a quasi-compact and quasi-separated scheme. An abelian sheaf on the
 > small étale site of `X` is constructible exactly when it is of the form

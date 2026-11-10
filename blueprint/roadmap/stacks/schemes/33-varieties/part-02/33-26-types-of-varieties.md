@@ -14,7 +14,7 @@ Section 33.26 of the Stacks Project, [Tag 04L0](https://stacks.math.columbia.edu
 
 [Tag 04L1](https://stacks.math.columbia.edu/tag/04L1) in the Stacks Project.
 
-**`AlgebraicGeometry.IsProperVariety`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Basic.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Basic.lean#L59). The attribute's comment: “proper_variety”.
+**`AlgebraicGeometry.IsProperVariety`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Basic.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Basic.lean#L59). The attribute's comment: “proper\_variety”.
 
 > A variety over a field is proper when its structure morphism to the spectrum of the field
 > is proper.
@@ -25,7 +25,7 @@ class IsProperVariety (k : Type u) [Field k] {X : Scheme.{u}}
     extends IsVariety k f, IsProper f
 ```
 
-**`AlgebraicGeometry.IsSmoothVariety`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Basic.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Basic.lean#L81). The attribute's comment: “smooth_variety”.
+**`AlgebraicGeometry.IsSmoothVariety`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Basic.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Basic.lean#L81). The attribute's comment: “smooth\_variety”.
 
 > A variety over a field is smooth when its structure morphism to the spectrum of the field
 > is smooth.
@@ -35,7 +35,7 @@ class IsSmoothVariety (k : Type u) [Field k] {X : Scheme.{u}}
     (f : X ⟶ Spec (.of k)) : Prop extends IsVariety k f, Smooth f
 ```
 
-**`AlgebraicGeometry.IsProjectiveVariety`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean#L83). The attribute's comment: “projective_variety”.
+**`AlgebraicGeometry.IsProjectiveVariety`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean#L83). The attribute's comment: “projective\_variety”.
 
 > **Stacks Project, Tag 04L1.** A variety over a field is projective when its structure
 > morphism to the spectrum of the field is H-projective, equivalently projective.
@@ -45,7 +45,7 @@ class IsProjectiveVariety (k : Type u) [Field k] {X : Scheme.{u}}
     (f : X ⟶ Spec (.of k)) : Prop extends IsVariety k f
 ```
 
-**`AlgebraicGeometry.isProjectiveVariety_iff_isProjectiveMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean#L99). The attribute's comment: “projective_variety_closed_subscheme”.
+**`AlgebraicGeometry.isProjectiveVariety_iff_isProjectiveMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean#L99). The attribute's comment: “projective\_variety\_closed\_subscheme”.
 
 > **Stacks Project, Tag 04L1, clause (2), the form cited to [Stacks, Tag 01WB].** For a
 > variety, being a projective variety is equivalent to H-projectivity of its structure morphism,
@@ -57,7 +57,7 @@ theorem isProjectiveVariety_iff_isProjectiveMorphism (k : Type u) [Field k] {X :
     IsProjectiveVariety k f ↔ IsProjectiveMorphism f
 ```
 
-**`AlgebraicGeometry.isProjectiveVariety_iff_isProjective'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean#L112). The attribute's comment: “projective_variety_2”.
+**`AlgebraicGeometry.isProjectiveVariety_iff_isProjective'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean#L112). The attribute's comment: “projective\_variety\_2”.
 
 > **Stacks Project, Tag 04L1, clause (2).** A projective variety is exactly a variety whose
 > structure morphism to the spectrum of the field is projective.
@@ -73,7 +73,7 @@ theorem isProjectiveVariety_iff_isProjective' (k : Type u) [Field k] {X : Scheme
     IsProjectiveVariety k f ↔ IsVariety k f ∧ IsProjective f
 ```
 
-**`AlgebraicGeometry.IsQuasiProjectiveVariety`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean#L134). The attribute's comment: “quasi_projective_variety”.
+**`AlgebraicGeometry.IsQuasiProjectiveVariety`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean#L134). The attribute's comment: “quasi\_projective\_variety”.
 
 > **Stacks Project, Tag 04L1.** A variety over a field is quasi-projective when its structure
 > morphism to the spectrum of the field is quasi-projective.
@@ -83,7 +83,7 @@ class IsQuasiProjectiveVariety (k : Type u) [Field k] {X : Scheme.{u}}
     (f : X ⟶ Spec (.of k)) : Prop extends IsVariety k f
 ```
 
-**`AlgebraicGeometry.isQuasiProjectiveVariety_iff_isHQuasiProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean#L162). The attribute's comment: “quasi_projective_variety_locally_closed_subscheme”.
+**`AlgebraicGeometry.isQuasiProjectiveVariety_iff_isHQuasiProjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Projective.lean#L162). The attribute's comment: “quasi\_projective\_variety\_locally\_closed\_subscheme”.
 
 > **Stacks Project, Tag 04L1, clause (3).** A quasi-projective variety is exactly a variety
 > whose structure morphism is H-quasi-projective, that is, admits a quasi-compact immersion into
@@ -100,7 +100,7 @@ theorem isQuasiProjectiveVariety_iff_isHQuasiProjective (k : Type u) [Field k] {
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.IsAffine`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsAffine#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Basic.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Basic.lean#L53) (StacksFrontier): “affine_variety_2”. References: EGA I (1.7.1).
+- [`AlgebraicGeometry.IsAffine`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsAffine#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Basic.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Basic.lean#L53) (StacksFrontier): “affine\_variety\_2”. References: EGA I (1.7.1).
 
 ## Tag 04L2, a lemma
 

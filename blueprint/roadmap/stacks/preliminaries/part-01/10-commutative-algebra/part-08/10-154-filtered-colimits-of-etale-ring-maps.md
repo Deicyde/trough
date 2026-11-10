@@ -248,8 +248,8 @@ theorem HenselianLocalRing.existsUnique_algEquiv_of_ind_etale
 >    with `φ_k b₀ = a₀`.
 >
 > 2. **The hypotheses descend.** Evaluation commutes with `map`:
->    `φ_k (p.eval b₀) = g.eval a₀` and `φ_k (p.derivative.eval b₀) =
->    g.derivative.eval a₀` (`Polynomial.eval_map`, `Polynomial.derivative_map`).
+>    `φ_k (p.eval b₀) = g.eval a₀` and `φ\_k (p.derivative.eval b₀) =
+>    g.derivative.eval a₀` (`Polynomial.eval\_map`, `Polynomial.derivative\_map`).
 >    * `g.derivative.eval a₀` is a unit, so `φ_k (p.derivative.eval b₀)` is a unit;
 >      by `colimit_isUnit_descend` it becomes a unit `p'.eval ... ` at some `l ≥ k`;
 >      push `p, b₀` forward to `l` (so WLOG `k = l`) to get

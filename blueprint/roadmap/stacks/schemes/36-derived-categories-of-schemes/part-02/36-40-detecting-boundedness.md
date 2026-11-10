@@ -77,7 +77,7 @@ theorem hom_koszul_eq_zero_of_truncGE_restriction
 
 [Tag 0GEK](https://stacks.math.columbia.edu/tag/0GEK) in the Stacks Project.
 
-**`Stacks.Koszul.Truncation.truncLE_restriction_of_hom_koszul_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/KoszulTruncatedOrthogonality.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/KoszulTruncatedOrthogonality.lean#L277). The attribute's comment: “(2) at a+1 implies (1) at a, for E in D_QCoh. This is the corrected reverse implication; the published '(2) at a implies (1) at a' is false: for A = k[x], f = (x), E = 𝒪_X and a = 0 condition (2) holds and (1) fails, see the module documentation”.
+**`Stacks.Koszul.Truncation.truncLE_restriction_of_hom_koszul_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/KoszulTruncatedOrthogonality.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/KoszulTruncatedOrthogonality.lean#L277). The attribute's comment: “(2) at a+1 implies (1) at a, for E in D\_QCoh. This is the corrected reverse implication; the published '(2) at a implies (1) at a' is false: for A = k[x], f = (x), E = 𝒪\_X and a = 0 condition (2) holds and (1) fails, see the module documentation”.
 
 > Let `f₁, …, f_r ∈ A`, let `U = ⋃ᵢ D(f_i) ⊆ X = Spec A`, let `j : U ⟶ X` be the inclusion and
 > let `K` be the sheafified Koszul complex of the sequence. Let `E` be an object of `D_QCoh(𝒪_X)`,
@@ -96,7 +96,7 @@ theorem truncLE_restriction_of_hom_koszul_eq_zero
       ((derivedRestrictPushforwardAdjunction (openComplement f).ι).unit.app E))
 ```
 
-**`Stacks.Koszul.Truncation.hom_koszul_eq_zero_of_truncLE_restriction_sub_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/KoszulTruncatedOrthogonality.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/KoszulTruncatedOrthogonality.lean#L307). The attribute's comment: “(1) implies (2) with a replaced by a-1, at the source's own index, for E in D_QCoh”.
+**`Stacks.Koszul.Truncation.hom_koszul_eq_zero_of_truncLE_restriction_sub_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/KoszulTruncatedOrthogonality.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/KoszulTruncatedOrthogonality.lean#L307). The attribute's comment: “(1) implies (2) with a replaced by a-1, at the source's own index, for E in D\_QCoh”.
 
 > Let `f₁, …, f_r ∈ A`, let `U = ⋃ᵢ D(f_i) ⊆ X = Spec A`, let `j : U ⟶ X` be the inclusion and
 > let `K` be the sheafified Koszul complex of the sequence. Let `E` be an object of `D_QCoh(𝒪_X)`,

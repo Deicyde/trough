@@ -14,7 +14,7 @@ Section 88.12 of the Stacks Project, [Tag 0GC1](https://stacks.math.columbia.edu
 
 [Tag 0GC2](https://stacks.math.columbia.edu/tag/0GC2) in the Stacks Project.
 
-**`Rig.IsFiniteTypeOnReductions`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Reduction.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Reduction.lean#L62). The attribute's comment: “finite_type_on_reductions”.
+**`Rig.IsFiniteTypeOnReductions`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Reduction.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Reduction.lean#L62). The attribute's comment: “finite\_type\_on\_reductions”.
 
 > A continuous homomorphism of linearly topologized commutative rings is *of finite type on
 > reductions* if the induced homomorphism between the quotients by their topological
@@ -26,7 +26,7 @@ public abbrev IsFiniteTypeOnReductions {A B : Type*} [CommRing A] [TopologicalSp
     (φ : A →+* B) (hφ : Continuous φ) : Prop
 ```
 
-**`Rig.finiteTypeOnReductionsProperty_localizationPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ReductionLocality.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ReductionLocality.lean#L194). The attribute's comment: “localization_preserves”.
+**`Rig.finiteTypeOnReductionsProperty_localizationPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ReductionLocality.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ReductionLocality.lean#L194). The attribute's comment: “localization\_preserves”.
 
 > Finite type on reductions ascends along a completed étale localization diagram of countably
 > indexed weakly admissible rings: the first locality axiom of Situation 0CBA.
@@ -37,7 +37,7 @@ public theorem finiteTypeOnReductionsProperty_localizationPreserves :
       TopologicalRing.FiniteTypeOnReductionsProperty
 ```
 
-**`Rig.finiteTypeOnReductionsProperty_finiteProductPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ReductionLocality.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ReductionLocality.lean#L287). The attribute's comment: “finite_product”.
+**`Rig.finiteTypeOnReductionsProperty_finiteProductPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ReductionLocality.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ReductionLocality.lean#L287). The attribute's comment: “finite\_product”.
 
 > Finite type on reductions is preserved by a finite product of targets: the third locality
 > axiom of Situation 0CBA.  Topological nilpotence in a product is a coordinatewise condition, so
@@ -49,7 +49,7 @@ public theorem finiteTypeOnReductionsProperty_finiteProductPreserves :
       TopologicalRing.FiniteTypeOnReductionsProperty
 ```
 
-**`Rig.finiteTypeOnReductionsProperty_faithfullyFlatDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ReductionLocality.lean, line 426](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ReductionLocality.lean#L426). The attribute's comment: “faithfully_flat_descent”.
+**`Rig.finiteTypeOnReductionsProperty_faithfullyFlatDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/ReductionLocality.lean, line 426](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/ReductionLocality.lean#L426). The attribute's comment: “faithfully\_flat\_descent”.
 
 > Finite type on reductions descends along a completed étale localization diagram of countably
 > indexed weakly admissible rings whose horizontal map is faithfully flat: the second locality

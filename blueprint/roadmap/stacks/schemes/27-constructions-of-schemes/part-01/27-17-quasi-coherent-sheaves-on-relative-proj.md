@@ -50,7 +50,7 @@ public noncomputable def tensorModuleSheafMap :
         ((moduleSheaf 𝒩))) ⟶ s.tensorModuleSheaf ℳ 𝒩
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjQuadrupleTilde.tag01O7_property1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQuadrupleTilde/TildeComparison.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQuadrupleTilde/TildeComparison.lean#L62). The attribute's comment: “property (1): the canonical isomorphism M~_T ≅ h^*M~”.
+**`Stacks.AlgebraicGeometry.RelativeProjQuadrupleTilde.tag01O7_property1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQuadrupleTilde/TildeComparison.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQuadrupleTilde/TildeComparison.lean#L62). The attribute's comment: “property (1): the canonical isomorphism M~\_T ≅ h^*M~”.
 
 > For a quadruple `P = (f : T → S, d, L, ψ)` and the morphism `h : T ⟶ Proj_S(𝒜)` it
 > classifies, the isomorphism `Quadruple.tildeComparison ℳ hd P : ℳ̃_T ≅ h^*ℳ̃` satisfies:
@@ -129,7 +129,7 @@ public noncomputable def moduleSheafPullbackIso :
       moduleSheaf (s := s.pullback g) (Stacks.Conormal.leftGradedPullback g ℳ)
 ```
 
-**`Stacks.RelativeProj.Situation.moduleSheafFibreProductIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleBaseChangeIso.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleBaseChangeIso.lean#L216). The attribute's comment: “property (8) on the fibre product: the canonical isomorphism between the pullback of ℳ̃ along S' ×_S Proj_S(𝒜) ⟶ Proj_S(𝒜) and (g^* ℳ)~ carried to S' ×_S Proj_S(𝒜)”.
+**`Stacks.RelativeProj.Situation.moduleSheafFibreProductIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleBaseChangeIso.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleBaseChangeIso.lean#L216). The attribute's comment: “property (8) on the fibre product: the canonical isomorphism between the pullback of ℳ̃ along S' ×\_S Proj\_S(𝒜) ⟶ Proj\_S(𝒜) and (g^* ℳ)~ carried to S' ×\_S Proj\_S(𝒜)”.
 
 > **Stacks Project, Tag 01O7, property (8), on the fibre product.** For a morphism of schemes
 > `g : S' ⟶ S`, the pullback of `ℳ̃` along the projection `S' ×_S Proj_S(𝒜) ⟶ Proj_S(𝒜)` is

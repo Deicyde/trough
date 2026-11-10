@@ -14,7 +14,7 @@ Section 92.8 of the Stacks Project, [Tag 08QY](https://stacks.math.columbia.edu/
 
 [Tag 08QZ](https://stacks.math.columbia.edu/tag/08QZ) in the Stacks Project.
 
-**`CommAlgCat.quasiIso_midCotangentComplexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChangeDerived.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChangeDerived.lean#L221). The attribute's comment: “on the cotangent complexes: under the tag's own hypothesis B = B ⊗_A^𝐋 A' -- Tor independence of A' and B over A, and bijectivity of A' ⊗_A B → B -- the canonical map L_{B/A} ⟶ L_{B/A'} of Tag 08PN is a quasi-isomorphism”.
+**`CommAlgCat.quasiIso_midCotangentComplexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChangeDerived.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChangeDerived.lean#L221). The attribute's comment: “on the cotangent complexes: under the tag's own hypothesis B = B ⊗\_A^𝐋 A' -- Tor independence of A' and B over A, and bijectivity of A' ⊗\_A B → B -- the canonical map L\_\{B/A} ⟶ L\_\{B/A'} of Tag 08PN is a quasi-isomorphism”.
 
 > **Stacks 08QZ.** Let `A → A' → B` be ring maps such that `B = B ⊗_A^𝐋 A'`, which is to say
 > that `Tor_i^A(A', B)` vanishes for `i > 0` and the canonical map `A' ⊗_A B → B`,
@@ -37,7 +37,7 @@ theorem quasiIso_midCotangentComplexMap
     QuasiIso (midCotangentComplexMap A' B)
 ```
 
-**`CommAlgCat.isIso_Q_map_midCotangentComplexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChangeDerived.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChangeDerived.lean#L241). The attribute's comment: “the lemma as the invertibility in D(B) of the canonical map of Tag 08PN: under the tag's own hypothesis B = B ⊗_A^𝐋 A', the image of L_{B/A} ⟶ L_{B/A'} under the localization D(B) is invertible”.
+**`CommAlgCat.isIso_Q_map_midCotangentComplexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChangeDerived.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChangeDerived.lean#L241). The attribute's comment: “the lemma as the invertibility in D(B) of the canonical map of Tag 08PN: under the tag's own hypothesis B = B ⊗\_A^𝐋 A', the image of L\_\{B/A} ⟶ L\_\{B/A'} under the localization D(B) is invertible”.
 
 > **Stacks 08QZ in the derived category.** Under the tag's hypothesis `B = B ⊗_A^𝐋 A'` the
 > canonical map `L_{B/A} ⟶ L_{B/A'}` of Tag 08PN becomes an isomorphism in `D(B)`.
@@ -74,7 +74,7 @@ def midCotangentComplexDerivedIso
       DerivedCategory.Q.obj (cotangentComplex.{u, u} A' (midAlgebra A' B))
 ```
 
-**`CommAlgCat.midBaseChangeOverDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChangeDifferentials.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChangeDifferentials.lean#L309). The attribute's comment: “the step the proof turns on: the sheaf (P → B) ↦ Ω_{P/A} ⊗_P B on C_{B/A} is the pullback along u : (P → B) ↦ (A' ⊗_A P → B) of the sheaf (Q → B) ↦ Ω_{Q/A'} ⊗_Q B on C_{B/A'}, stated on all augmented algebras rather than only the polynomial ones. The passage from here to L_{B/A} = L_{B/A'} is `CommAlgCat.midCotangentComplexHomologyIso`”.
+**`CommAlgCat.midBaseChangeOverDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChangeDifferentials.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChangeDifferentials.lean#L309). The attribute's comment: “the step the proof turns on: the sheaf (P → B) ↦ Ω\_\{P/A} ⊗\_P B on C\_\{B/A} is the pullback along u : (P → B) ↦ (A' ⊗\_A P → B) of the sheaf (Q → B) ↦ Ω\_\{Q/A'} ⊗\_Q B on C\_\{B/A'}, stated on all augmented algebras rather than only the polynomial ones. The passage from here to L\_\{B/A} = L\_\{B/A'} is `CommAlgCat.midCotangentComplexHomologyIso`”.
 
 > **`i^*Ω_{𝒪/A} = u^{-1}(i^*Ω_{𝒪/A'})`, the step of Stacks 08QZ that the proof turns on.**
 > For a tower of ring maps `A → A' → B`, the functor sending an `A`-algebra `P` augmented to `B` to
@@ -98,7 +98,7 @@ def midBaseChangeOverDifferentialsIso :
       midBaseChangeOver A' B ⋙ overDifferentialsFunctor (A := A') (B := midAlgebra A' B)
 ```
 
-**`CommAlgCat.midCotangentComplexHomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChangeDifferentials.lean, line 534](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChangeDifferentials.lean#L534). The attribute's comment: “the cohomology of L_{B/A} and of L_{B/A'} agrees in every degree, as B-modules, under the tag's own hypothesis B = B ⊗_A^𝐋 A' — Tor independence of A' and B over A, and bijectivity of A' ⊗_A B → B. Degreewise rather than in D(B), because the module half of Tag 08PS, which is what compares the two resolutions of B over A', is itself a statement about (Lπ_!)_n and H_n. The tag's own conclusion, an isomorphism in D(B) along the canonical map of Tag 08PN, is `CommAlgCat.midCotangentComplexDerivedIso`”.
+**`CommAlgCat.midCotangentComplexHomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChangeDifferentials.lean, line 534](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PolynomialAlgebraSiteBaseChangeDifferentials.lean#L534). The attribute's comment: “the cohomology of L\_\{B/A} and of L\_\{B/A'} agrees in every degree, as B-modules, under the tag's own hypothesis B = B ⊗\_A^𝐋 A' — Tor independence of A' and B over A, and bijectivity of A' ⊗\_A B → B. Degreewise rather than in D(B), because the module half of Tag 08PS, which is what compares the two resolutions of B over A', is itself a statement about (Lπ\_!)\_n and H\_n. The tag's own conclusion, an isomorphism in D(B) along the canonical map of Tag 08PN, is `CommAlgCat.midCotangentComplexDerivedIso`”.
 
 > **Stacks 08QZ: `L_{B/A} = L_{B/A'}`.** Let `A → A' → B` be ring maps such that
 > `B = B ⊗_A^𝐋 A'`, which is to say that `Tor_i^A(A', B)` vanishes for `i > 0` and the canonical

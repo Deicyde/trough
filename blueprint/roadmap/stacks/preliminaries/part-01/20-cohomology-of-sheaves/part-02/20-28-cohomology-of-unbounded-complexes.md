@@ -83,7 +83,7 @@ theorem isIso_derivedPushforwardComparison_unconditional
 
 [Tag 08HY](https://stacks.math.columbia.edu/tag/08HY) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedBaseChange.derivedBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangeMap.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangeMap.lean#L286). The attribute's comment: “derived_base_change_map”. References: SGA 4 XVII (4.1.5), “ringed spaces”; SGA 4 XVII (4.1.4), “ringed spaces case”.
+**`Stacks.Cohomology.DerivedBaseChange.derivedBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangeMap.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/BaseChangeMap.lean#L286). The attribute's comment: “derived\_base\_change\_map”. References: SGA 4 XVII (4.1.5), “ringed spaces”; SGA 4 XVII (4.1.4), “ringed spaces case”.
 
 > **The derived base change map** `Lg^* (Rf_* K) ⟶ Rf'_* (Lg'^* K)` of a commutative square
 > of ringed spaces, at an object of the unbounded derived category.  It is adjoint to the derived

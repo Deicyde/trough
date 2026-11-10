@@ -61,7 +61,7 @@ def gModuleHomEquiv (X Y : Stacks.Injectives.ContinuousModule.{0, v, w} ℤ G) :
 
 Declarations registered for the tag:
 
-- [`Stacks.Injectives.ContinuousModule`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Module/ContinuousGroupModules.lean#L643), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/DiscreteModules.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/DiscreteModules.lean#L214) (StacksFrontier): “the categories Mod_G and Mod_{R,G}”.
+- [`Stacks.Injectives.ContinuousModule`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Injectives/Module/ContinuousGroupModules.lean#L643), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/DiscreteModules.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/DiscreteModules.lean#L214) (StacksFrontier): “the categories Mod\_G and Mod\_\{R,G}”.
 
 ## Tag 04JR, a definition
 
@@ -111,7 +111,7 @@ def continuousModuleCohomologyForgetIso [IsTopologicalGroup G]
 
 [Tag 0DVE](https://stacks.math.columbia.edu/tag/0DVE) in the Stacks Project.
 
-**`Stacks.ContinuousCohomology.extIsoCohomologyDualTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ContinuousCohomology/ExtComparison.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ContinuousCohomology/ExtComparison.lean#L425). The attribute's comment: “R-linear, in every degree; the `Ext`-universe smallness (hasExt_continuousModule) and themodel of the derived category are free instance arguments”.
+**`Stacks.ContinuousCohomology.extIsoCohomologyDualTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ContinuousCohomology/ExtComparison.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ContinuousCohomology/ExtComparison.lean#L425). The attribute's comment: “R-linear, in every degree; the `Ext`-universe smallness (hasExt\_continuousModule) and themodel of the derived category are free instance arguments”.
 
 > Let `G` be a topological group, `R` a commutative ring and `M`, `N` continuous discrete
 > `R`-`G`-modules. If `M` is finite projective as an `R`-module, then `Extⁱ(M, N)`, computed in the

@@ -275,7 +275,7 @@ theorem openSubspacesOrderIso_and_isZariskiCover_iff
           (⋃ i, Set.range (pointsMap B S hS (X i).toFunctor (X i).ι)) = Set.univ)
 ```
 
-**`AlgebraicGeometry.Space.isZariskiCover_iff_iUnion_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringPoints.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringPoints.lean#L443). The attribute's comment: “zariski_coverings”.
+**`AlgebraicGeometry.Space.isZariskiCover_iff_iUnion_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringPoints.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringPoints.lean#L443). The attribute's comment: “zariski\_coverings”.
 
 > Open subspaces cover an algebraic space in the Zariski topology if and only
 > if their images on the space of points cover all points.
@@ -290,7 +290,7 @@ theorem isZariskiCover_iff_iUnion_points
         Set.univ
 ```
 
-**`AlgebraicGeometry.Space.isCovering_iff_iSup_openSubspacesOrderIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringPoints.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringPoints.lean#L457). The attribute's comment: “zariski_coverings”.
+**`AlgebraicGeometry.Space.isCovering_iff_iSup_openSubspacesOrderIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringPoints.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZariskiCoveringPoints.lean#L457). The attribute's comment: “zariski\_coverings”.
 
 > Via the canonical identification with open subsets of the point space,
 > covering families of the small Zariski site are precisely open covers.

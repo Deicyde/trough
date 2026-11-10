@@ -24,7 +24,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.fromSpecStalk`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.fromSpecStalk#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/CanonicalMorphismFromLocalRing.lean, line 20](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/CanonicalMorphismFromLocalRing.lean#L20) (StacksFrontier): “the canonical morphism `Spec 𝒪_{X, x} ⟶ X`”. References: EGA I (2.4.2); EGA I (2.4.7), “zero ideal a_y = 0”; EGA IV (5.9.6).
+- [`AlgebraicGeometry.Scheme.fromSpecStalk`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.fromSpecStalk#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/CanonicalMorphismFromLocalRing.lean, line 20](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/CanonicalMorphismFromLocalRing.lean#L20) (StacksFrontier): “the canonical morphism `Spec 𝒪_{X, x} ⟶ X`”. References: EGA I (2.4.2); EGA I (2.4.7), “zero ideal a\_y = 0”; EGA IV (5.9.6).
 
 ## Tag 01J9, a lemma
 

@@ -45,7 +45,7 @@ theorem isIntegralHom_left_iff_right {X X' S S' : Scheme.{u}} {i : X ⟶ X'} {j 
     IsIntegralHom φ.left ↔ IsIntegralHom φ.right
 ```
 
-**`Stacks.Thickenings.isQuasiAffineHom_left_iff_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/QuasiAffineLimit.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/QuasiAffineLimit.lean#L330). The attribute's comment: “quasi_affine”.
+**`Stacks.Thickenings.isQuasiAffineHom_left_iff_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/QuasiAffineLimit.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/QuasiAffineLimit.lean#L330). The attribute's comment: “quasi\_affine”.
 
 > **Part (9) of [Stacks Project, Tag 09ZV].** For a morphism of thickenings — a commutative
 > square whose horizontal arrows are thickenings — the morphism of closed subschemes is
@@ -73,7 +73,7 @@ theorem isSeparated_left_iff_right
     IsSeparated φ.left ↔ IsSeparated φ.right
 ```
 
-**`Stacks.Thickenings.quasiSeparated_left_iff_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Separated.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Separated.lean#L76). The attribute's comment: “quasi_separated”.
+**`Stacks.Thickenings.quasiSeparated_left_iff_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Separated.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Separated.lean#L76). The attribute's comment: “quasi\_separated”.
 
 > Quasi-separatedness of a morphism of schemes is unchanged by passing between the closed
 > subschemes and the ambient schemes of a morphism of thickenings.
@@ -85,7 +85,7 @@ theorem quasiSeparated_left_iff_right {X S : Arrow (Scheme.{u})}
     QuasiSeparated φ.left ↔ QuasiSeparated φ.right
 ```
 
-**`Stacks.Thickenings.quasiCompact_left_iff_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L73). The attribute's comment: “quasi_compact”.
+**`Stacks.Thickenings.quasiCompact_left_iff_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L73). The attribute's comment: “quasi\_compact”.
 
 > Quasi-compactness is preserved and reflected by a morphism of thickenings.
 
@@ -109,7 +109,7 @@ theorem surjective_left_iff_right
     Surjective f.left ↔ Surjective f.right
 ```
 
-**`Stacks.Thickenings.universallyClosed_left_iff_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L126). The attribute's comment: “universally_closed”.
+**`Stacks.Thickenings.universallyClosed_left_iff_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L126). The attribute's comment: “universally\_closed”.
 
 > Universal closedness is invariant under a morphism of thickenings.
 
@@ -119,7 +119,7 @@ theorem universallyClosed_left_iff_right {i j : Arrow Scheme.{u}} (φ : i ⟶ j)
     UniversallyClosed φ.left ↔ UniversallyClosed φ.right
 ```
 
-**`Stacks.Thickenings.universallyInjective_left_iff_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L157). The attribute's comment: “universally_injective”.
+**`Stacks.Thickenings.universallyInjective_left_iff_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L157). The attribute's comment: “universally\_injective”.
 
 > Universal injectivity is unchanged when a morphism of thickenings is passed from the
 > closed subschemes to the ambient schemes.
@@ -131,7 +131,7 @@ theorem universallyInjective_left_iff_right {X X' S S' : Scheme.{u}}
     UniversallyInjective f.left ↔ UniversallyInjective f.right
 ```
 
-**`Stacks.Thickenings.universallyOpen_left_iff_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L245). The attribute's comment: “universally_open”.
+**`Stacks.Thickenings.universallyOpen_left_iff_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Topological.lean#L245). The attribute's comment: “universally\_open”.
 
 > Universal openness is unchanged when a morphism of schemes is replaced by the
 > corresponding morphism of thickenings.
@@ -228,7 +228,7 @@ theorem isRelativelyAmple_iff (href : AmpleReflectedByThickening.{u}) (hi : IsTh
 
 [Tag 09ZW](https://stacks.math.columbia.edu/tag/09ZW) in the Stacks Project.
 
-**`Stacks.Thickenings.locallyOfFiniteType_iff_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Cartesian.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Cartesian.lean#L170). The attribute's comment: “locally_finite_type”.
+**`Stacks.Thickenings.locallyOfFiniteType_iff_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Cartesian.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Cartesian.lean#L170). The attribute's comment: “locally\_finite\_type”.
 
 > Local finite type ascends and descends across a cartesian morphism of thickenings when
 > the thickening of the base has finite order.
@@ -242,7 +242,7 @@ theorem locallyOfFiniteType_iff_of_isFiniteOrderThickening
     LocallyOfFiniteType f ↔ LocallyOfFiniteType f'
 ```
 
-**`Stacks.Thickenings.locallyQuasiFinite_iff_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Cartesian.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Cartesian.lean#L235). The attribute's comment: “locally_quasi_finite”.
+**`Stacks.Thickenings.locallyQuasiFinite_iff_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Cartesian.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Cartesian.lean#L235). The attribute's comment: “locally\_quasi\_finite”.
 
 > Local quasi-finiteness is invariant under a cartesian morphism of thickenings when the
 > thickening of the base has finite order.
@@ -273,7 +273,7 @@ theorem isProper_iff_of_isFiniteOrderThickening
     IsProper f ↔ IsProper f'
 ```
 
-**`Stacks.Thickenings.formallyUnramified_iff_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/CartesianDifferentials.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/CartesianDifferentials.lean#L180). The attribute's comment: “vanishing_differentials”.
+**`Stacks.Thickenings.formallyUnramified_iff_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/CartesianDifferentials.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/CartesianDifferentials.lean#L180). The attribute's comment: “vanishing\_differentials”.
 
 > **Stacks 09ZW, part (5).** The relative differentials of `f` vanish exactly when the
 > relative differentials of `f'` vanish, for a cartesian morphism of thickenings whose base
@@ -288,7 +288,7 @@ theorem formallyUnramified_iff_of_isFiniteOrderThickening
     FormallyUnramified f ↔ FormallyUnramified f'
 ```
 
-**`Stacks.Thickenings.isClosedImmersion_iff_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/CartesianImmersions.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/CartesianImmersions.lean#L135). The attribute's comment: “closed_immersion”.
+**`Stacks.Thickenings.isClosedImmersion_iff_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/CartesianImmersions.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/CartesianImmersions.lean#L135). The attribute's comment: “closed\_immersion”.
 
 > **Stacks 09ZW, part (1).** Being a closed immersion ascends and descends across a cartesian
 > morphism of thickenings when the thickening of the base has finite order.
@@ -332,7 +332,7 @@ theorem mono_iff_of_isFiniteOrderThickening (i : X ⟶ X') (j : S ⟶ S')
     (hcart : IsPullback i f f' j) : Mono f ↔ Mono f'
 ```
 
-**`Stacks.Thickenings.locallyOfFiniteType_and_relativeDimension_iff_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/CartesianRelativeDimension.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/CartesianRelativeDimension.lean#L143). The attribute's comment: “relative_dimension”.
+**`Stacks.Thickenings.locallyOfFiniteType_and_relativeDimension_iff_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/CartesianRelativeDimension.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/CartesianRelativeDimension.lean#L143). The attribute's comment: “relative\_dimension”.
 
 > **Stacks 09ZW, part (4).** Being locally of finite type of relative dimension `d` ascends
 > and descends across a cartesian morphism of thickenings when the thickening of the base has
@@ -370,7 +370,7 @@ theorem unramified_iff_of_isFiniteOrderThickening
 
 [Tag 0BPG](https://stacks.math.columbia.edu/tag/0BPG) in the Stacks Project.
 
-**`Stacks.Thickenings.CartesianFiniteTypeMorphism.locallyQuasiFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean#L89). The attribute's comment: “locally_quasi_finite”.
+**`Stacks.Thickenings.CartesianFiniteTypeMorphism.locallyQuasiFinite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean#L89). The attribute's comment: “locally\_quasi\_finite”.
 
 > **Stacks 0BPG, part (1).** Being locally quasi-finite is invariant under a cartesian,
 > locally finite type morphism of thickenings of schemes.
@@ -382,7 +382,7 @@ theorem CartesianFiniteTypeMorphism.locallyQuasiFinite_iff
       (LocallyOfFiniteType S.f' ∧ LocallyQuasiFinite S.f')
 ```
 
-**`Stacks.Thickenings.CartesianFiniteTypeMorphism.isClosedImmersion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Extension.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Extension.lean#L122). The attribute's comment: “closed_immersion”.
+**`Stacks.Thickenings.CartesianFiniteTypeMorphism.isClosedImmersion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Extension.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Extension.lean#L122). The attribute's comment: “closed\_immersion”.
 
 > Being a closed immersion is invariant under a cartesian, locally finite type morphism of
 > thickenings.
@@ -423,7 +423,7 @@ theorem isFinite_iff (S : CartesianFiniteTypeMorphism.{u}) :
     IsFinite S.f ↔ IsFinite S.f'
 ```
 
-**`Stacks.Thickenings.CartesianFiniteTypeMorphism.isZero_relativeDifferentials_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Monomorphism.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Monomorphism.lean#L68). The attribute's comment: “vanishing_differentials”.
+**`Stacks.Thickenings.CartesianFiniteTypeMorphism.isZero_relativeDifferentials_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Monomorphism.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/Monomorphism.lean#L68). The attribute's comment: “vanishing\_differentials”.
 
 > **Stacks 0BPG, part (4).** In a cartesian morphism of thickenings whose two component
 > morphisms are locally of finite type, the sheaf of relative differentials `Ω_{X/Y}` is zero if

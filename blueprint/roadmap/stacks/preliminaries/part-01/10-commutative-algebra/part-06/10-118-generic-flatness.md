@@ -106,7 +106,7 @@ public def IsFinitePresentationFreeAway (R S M : Type*) [CommRing R] [CommRing S
 **`Algebra.iUnion_basicOpen_isFinitePresentationFreeAway_inter_subset_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Locus.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/Ring/Epi/GenericFlatness/Locus.lean#L244). The attribute's comment: “The locus `U(R → S, M)` of Equation 051V, which has no separate definition here, is written out as the union of the standard opens `D(f)` over the `f` satisfying Equation 051U, i.e. over `Algebra.IsFinitePresentationFreeAway R S M f`. See the module docstring.”.
 
 > **Stacks 051W**. Let `R → S` be a ring map and let `0 → M₁ → M₂ → M₃ → 0` be a short exact
-> sequence of `S`-modules. Writing `U(R → S, M) = ⋃ {D(f) | Algebra.IsFinitePresentationFreeAway R S
+> sequence of `S`-modules. Writing `U(R → S, M) = ⋃ \{D(f) | Algebra.IsFinitePresentationFreeAway R S
 > M f}` for the locus of Equation 051V, one has
 > `U(R → S, M₁) ∩ U(R → S, M₃) ⊆ U(R → S, M₂)`: an extension of free modules is free and an
 > extension of finitely presented modules is finitely presented, so if `f₁` and `f₃` satisfy

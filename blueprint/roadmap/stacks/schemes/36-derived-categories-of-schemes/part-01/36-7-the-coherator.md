@@ -365,7 +365,7 @@ def derivedCoherator_isoInv_of_affineDiagonal (X : Scheme.{u})
 
 [Tag 0CRX](https://stacks.math.columbia.edu/tag/0CRX) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_derivedPushforwardComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DirectImageCoherator.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DirectImageCoherator.lean#L335). The attribute's comment: “the canonical map Φ(K) ⟶ Rf_*(K) is an isomorphism for every K”.
+**`AlgebraicGeometry.isIso_derivedPushforwardComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DirectImageCoherator.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DirectImageCoherator.lean#L335). The attribute's comment: “the canonical map Φ(K) ⟶ Rf\_*(K) is an isomorphism for every K”.
 
 > **The canonical map `Φ(K) ⟶ Rf_*(K)` is an isomorphism for every `K`.** This is the content
 > of [Stacks, Tag 0CRX]. Both functors are triangulated — `Φ` and `Rf_*` because they are right
@@ -380,7 +380,7 @@ def derivedCoherator_isoInv_of_affineDiagonal (X : Scheme.{u})
 theorem isIso_derivedPushforwardComparison : IsIso (derivedPushforwardComparison f Φ ηΦ)
 ```
 
-**`AlgebraicGeometry.derivedQuasicoherentComparisonSquareOfAffineDiagonal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DirectImageCoherator.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DirectImageCoherator.lean#L378). The attribute's comment: “the commuting square, for any right derived functor (Φ, ηΦ) of f_*”.
+**`AlgebraicGeometry.derivedQuasicoherentComparisonSquareOfAffineDiagonal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DirectImageCoherator.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DirectImageCoherator.lean#L378). The attribute's comment: “the commuting square, for any right derived functor (Φ, ηΦ) of f\_*”.
 
 > **The square for quasi-compact schemes with affine diagonal.** Let `f : X ⟶ Y` be a morphism
 > of schemes, with `X` and `Y` quasi-compact with affine diagonal, and let `Φ`, with derivation unit
@@ -411,7 +411,7 @@ def derivedQuasicoherentComparisonSquareOfAffineDiagonal :
 
 [Tag 0CRY](https://stacks.math.columbia.edu/tag/0CRY) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_injective_quasicoherentSections_rightDerived_ne_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DirectImageCoheratorWarning.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DirectImageCoheratorWarning.lean#L57). The attribute's comment: “R^1_QCoh Γ(U, ℱ) = 0 while H^1(U, ℱ) ≠ 0, for ℱ injective in QCoh(𝒪_{Spec A})”.
+**`AlgebraicGeometry.exists_injective_quasicoherentSections_rightDerived_ne_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DirectImageCoheratorWarning.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/DirectImageCoheratorWarning.lean#L57). The attribute's comment: “R^1\_QCoh Γ(U, ℱ) = 0 while H^1(U, ℱ) ≠ 0, for ℱ injective in QCoh(𝒪\_\{Spec A})”.
 
 > On an affine scheme the comparison from derived sections computed inside `QCoh(𝒪_X)` to sheaf
 > cohomology is not an isomorphism. There are a ring `A`, an injective object `ℱ` of

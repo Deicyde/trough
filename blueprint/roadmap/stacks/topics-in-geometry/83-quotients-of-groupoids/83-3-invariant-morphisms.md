@@ -57,7 +57,7 @@ theorem invariant_iff_factors_through_quotientSheaf (j : PreRelation R U)
 
 [Tag 048G](https://stacks.math.columbia.edu/tag/048G) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.overInvariantTarget`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupoidBaseChange.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupoidBaseChange.lean#L76). The attribute's comment: “groupoid_over_x”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.overInvariantTarget`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupoidBaseChange.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupoidBaseChange.lean#L76). The attribute's comment: “groupoid\_over\_x”.
 
 > **Stacks 048G.** A morphism out of the object space of a groupoid in algebraic spaces
 > which is invariant under the pre-relation of the groupoid makes the groupoid a groupoid over
@@ -74,7 +74,7 @@ noncomputable def overInvariantTarget (G : GroupoidInAlgebraicSpaces C S hS B)
       ∃ hobj : H.objects = G.objects, eqToHom hobj.symm ≫ H.objectsToBase = φ }
 ```
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.baseChangedPreRelation_isBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupoidBaseChange.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupoidBaseChange.lean#L214). The attribute's comment: “base_changed_groupoid_relation”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.baseChangedPreRelation_isBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupoidBaseChange.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GroupoidBaseChange.lean#L214). The attribute's comment: “base\_changed\_groupoid\_relation”.
 
 > **Stacks 048G.** The base change of the pre-relation of a groupoid in algebraic spaces
 > along a morphism to an invariant target is the pre-relation of the base change of the
@@ -107,7 +107,7 @@ theorem baseChangedPreRelation_isBaseChange (G : GroupoidInAlgebraicSpaces C S h
       (j'.target.left ≫ α.hom = β.hom ≫ bc.groupoid.target.hom)
 ```
 
-**`AlgebraicGeometry.Space.exists_inducedAction_of_baseChangedPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InducedGroupAction.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InducedGroupAction.lean#L75). The attribute's comment: “induced_group_action”.
+**`AlgebraicGeometry.Space.exists_inducedAction_of_baseChangedPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InducedGroupAction.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InducedGroupAction.lean#L75). The attribute's comment: “induced\_group\_action”.
 
 > An invariant base change of an action pre-relation is again an action
 > pre-relation. The comparison of arrow spaces respects the original arrows and
@@ -134,7 +134,7 @@ theorem exists_inducedAction_of_baseChangedPreRelation
         (e.hom ≫ j'.target = γ[G, U'])
 ```
 
-**`AlgebraicGeometry.Space.baseChangedPreRelation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L134). The attribute's comment: “base_changed_pre_relation”.
+**`AlgebraicGeometry.Space.baseChangedPreRelation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L134). The attribute's comment: “base\_changed\_pre\_relation”.
 
 > **Stacks 048G** and **Stacks 048H.** The canonical pre-relation on the base changes of the
 > object and of the arrow space of an invariant pre-relation. Its target and source maps are
@@ -155,7 +155,7 @@ noncomputable def baseChangedPreRelation (j : PreRelation R U) (φ : U.left ⟶ 
           pullback.snd f (j.target.left ≫ φ) ≫ j.source.left)) }
 ```
 
-**`AlgebraicGeometry.Space.isPreEquivalenceRelation_baseChangedPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L319). The attribute's comment: “pre_equivalence_preserved”.
+**`AlgebraicGeometry.Space.isPreEquivalenceRelation_baseChangedPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L319). The attribute's comment: “pre\_equivalence\_preserved”.
 
 > **Stacks 048G.** Base change along an invariant morphism preserves the pointwise
 > equivalence property of a pre-relation.
@@ -167,7 +167,7 @@ theorem isPreEquivalenceRelation_baseChangedPreRelation (j : PreRelation R U)
     IsPreEquivalenceRelation (baseChangedPreRelation j φ f hφ).val
 ```
 
-**`AlgebraicGeometry.Space.mono_baseChangedPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L332). The attribute's comment: “relation_preserved”.
+**`AlgebraicGeometry.Space.mono_baseChangedPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L332). The attribute's comment: “relation\_preserved”.
 
 > **Stacks 048G.** Base change along an invariant morphism preserves relations, that is
 > monomorphy of the map to the product.
@@ -178,7 +178,7 @@ theorem mono_baseChangedPreRelation (j : PreRelation R U) (φ : U.left ⟶ X) (f
     Mono (baseChangedPreRelation j φ f hφ).val
 ```
 
-**`AlgebraicGeometry.Space.isEquivalenceRelation_baseChangedPreRelation`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L344). The attribute's comment: “equivalence_preserved”.
+**`AlgebraicGeometry.Space.isEquivalenceRelation_baseChangedPreRelation`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/InvariantBaseChange.lean#L344). The attribute's comment: “equivalence\_preserved”.
 
 > **Stacks 048G.** Base change along an invariant morphism preserves equivalence relations:
 > the base-changed pre-relation of an invariant equivalence relation is again an internal

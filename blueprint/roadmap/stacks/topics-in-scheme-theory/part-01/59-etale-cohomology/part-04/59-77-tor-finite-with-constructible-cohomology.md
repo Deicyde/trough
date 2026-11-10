@@ -14,7 +14,7 @@ Section 59.77 of the Stacks Project, [Tag 0F4M](https://stacks.math.columbia.edu
 
 [Tag 03TQ](https://stacks.math.columbia.edu/tag/03TQ) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.CanonicalConstructibleFiniteTorDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/CanonicalFiniteTorDimension.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/CanonicalFiniteTorDimension.lean#L135). The attribute's comment: “the derived tensor products on the slices of the constant-coefficient étale ringed site are constructed here, by Stacks 06YU at free universes, so no derived tensor product is assumed”. References: SGA 5 III (1.1), “D_ctf(X) definition”; SGA 4½ Rapport (4.6), “ii)”; SGA 5 IIIB (6.1), “D_ctf(-)”; SGA 4½ Th finitude (1.7).
+**`Stacks.EtaleCohomology.CanonicalConstructibleFiniteTorDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/CanonicalFiniteTorDimension.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/CanonicalFiniteTorDimension.lean#L135). The attribute's comment: “the derived tensor products on the slices of the constant-coefficient étale ringed site are constructed here, by Stacks 06YU at free universes, so no derived tensor product is assumed”. References: SGA 5 III (1.1), “D\_ctf(X) definition”; SGA 4½ Rapport (4.6), “ii)”; SGA 5 IIIB (6.1), “D\_ctf(-)”; SGA 4½ Th finitude (1.7).
 
 > **Stacks 03TQ.** The category `D_{ctf}(X_étale, Λ)`: the full subcategory of the
 > constructible derived category of Stacks 095W consisting of the objects whose image in the
@@ -29,7 +29,7 @@ Section 59.77 of the Stacks Project, [Tag 0F4M](https://stacks.math.columbia.edu
 abbrev CanonicalConstructibleFiniteTorDerivedCategory
 ```
 
-**`Stacks.EtaleCohomology.ConstructibleFiniteTorDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/FiniteTorDimension.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/FiniteTorDimension.lean#L106). References: SGA 5 III (1.1), “D_ctf(X) definition”; SGA 4½ Rapport (4.6), “ii)”; SGA 5 IIIB (6.1), “D_ctf(-)”.
+**`Stacks.EtaleCohomology.ConstructibleFiniteTorDerivedCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/FiniteTorDimension.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/FiniteTorDimension.lean#L106). References: SGA 5 III (1.1), “D\_ctf(X) definition”; SGA 4½ Rapport (4.6), “ii)”; SGA 5 IIIB (6.1), “D\_ctf(-)”.
 
 > **Stacks 03TQ.** The category `D_{ctf}(X_étale, Λ)`: the full subcategory of the
 > constructible derived category of Stacks 095W consisting of the objects whose image in the
@@ -315,7 +315,7 @@ theorem stalk_isPerfect
 
 [Tag 0962](https://stacks.math.columbia.edu/tag/0962) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isConstructibleFiniteTor_derivedRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/RestrictionExtensionByZeroMembership.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/RestrictionExtensionByZeroMembership.lean#L231). The attribute's comment: “part (1): for K in D_ctf(X_et, Λ), the restriction K|_U — the image of K under the derived restriction functor of Tag 03S3 — satisfies membership of D_ctf(U_et, Λ)”.
+**`Stacks.EtaleCohomology.isConstructibleFiniteTor_derivedRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/RestrictionExtensionByZeroMembership.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/RestrictionExtensionByZeroMembership.lean#L231). The attribute's comment: “part (1): for K in D\_ctf(X\_et, Λ), the restriction K|\_U — the image of K under the derived restriction functor of Tag 03S3 — satisfies membership of D\_ctf(U\_et, Λ)”.
 
 > **Stacks 0962, part (1).** Let `Λ` be a Noetherian ring and let `j : U ⟶ X` be an étale
 > morphism of schemes, the object `U` of the small étale site of `X`. If `K` lies in
@@ -343,7 +343,7 @@ public theorem isConstructibleFiniteTor_derivedRestriction
         K)
 ```
 
-**`Stacks.EtaleCohomology.isConstructibleFiniteTor_derivedExtensionByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/RestrictionExtensionByZeroMembership.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/RestrictionExtensionByZeroMembership.lean#L260). The attribute's comment: “part (2): for j quasi-compact and quasi-separated and M in D_ctf(U_et, Λ), the extension by zero j_! M — the image of M under the derived extension-by-zero functor of Tag 03S3 — satisfies membership of D_ctf(X_et, Λ)”.
+**`Stacks.EtaleCohomology.isConstructibleFiniteTor_derivedExtensionByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/RestrictionExtensionByZeroMembership.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/RestrictionExtensionByZeroMembership.lean#L260). The attribute's comment: “part (2): for j quasi-compact and quasi-separated and M in D\_ctf(U\_et, Λ), the extension by zero j\_! M — the image of M under the derived extension-by-zero functor of Tag 03S3 — satisfies membership of D\_ctf(X\_et, Λ)”.
 
 > **Stacks 0962, part (2).** Let `Λ` be a Noetherian ring and let `j : U ⟶ X` be an étale
 > morphism of schemes, the object `U` of the small étale site of `X`, which is quasi-compact and

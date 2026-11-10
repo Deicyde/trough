@@ -22,7 +22,7 @@ Declarations registered for the tag:
 
 [Tag 0AG2](https://stacks.math.columbia.edu/tag/0AG2) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjShiftedSections.degreeNToGlobalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjShiftedSectionModule.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjShiftedSectionModule.lean#L309). The attribute's comment: “map_degree_n_global_sections”. References: EGA II (3.3.2), “partial, special case”.
+**`Stacks.AlgebraicGeometry.ProjShiftedSections.degreeNToGlobalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjShiftedSectionModule.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjShiftedSectionModule.lean#L309). The attribute's comment: “map\_degree\_n\_global\_sections”. References: EGA II (3.3.2), “partial, special case”.
 
 > The canonical map from the degree-`n` homogeneous elements of `M` to the global sections of
 > `M(n)~`, as an additive homomorphism: it is the degree-zero global-sections map of the shift.
@@ -35,7 +35,7 @@ public noncomputable def degreeNToGlobalSections (n : ℤ) :
     𝒨 n →+ shiftedSectionsComponent 𝒮 𝒨 n
 ```
 
-**`Stacks.GradedModule.shiftedGrading_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistGlobalSections.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistGlobalSections.lean#L78). The attribute's comment: “twist_degree_zero”.
+**`Stacks.GradedModule.shiftedGrading_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistGlobalSections.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistGlobalSections.lean#L78). The attribute's comment: “twist\_degree\_zero”.
 
 > The degree-zero piece of the twist `M(n)` is the degree-`n` piece of `M`: `M(n)₀ = Mₙ`.
 > The two indices are `0 + n` and `n`, which are equal by `zero_add` and not by reduction.
@@ -64,7 +64,7 @@ def associatedModuleSheafTensorMap :
       ProjectiveSpectrum.Proj.associatedModuleSheaf 𝒮 (tensorGrading (S := S) 𝒨 𝒩)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjSheafFunctoriality.associatedModuleSheafTensorMap_standardOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Tensor.lean, line 731](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Tensor.lean#L731). The attribute's comment: “formula on standard opens”. References: EGA II (2.5.11), “λ_f on D_+(f)”.
+**`Stacks.AlgebraicGeometry.ProjSheafFunctoriality.associatedModuleSheafTensorMap_standardOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Tensor.lean, line 731](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Tensor.lean#L731). The attribute's comment: “formula on standard opens”. References: EGA II (2.5.11), “λ\_f on D\_+(f)”.
 
 > On a positive-degree standard open, the canonical morphism sends the tensor of two
 > homogeneous fractions to the fraction of their tensor over the product of the denominators.
@@ -170,7 +170,7 @@ theorem associatedModuleSheafTensorMap_globalSections (m : 𝒨 0) (n : 𝒩 0) 
 
 [Tag 01ML](https://stacks.math.columbia.edu/tag/01ML) in the Stacks Project.
 
-**`Stacks.ProjTensorComparison.tensorComparison_not_isomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTensorComparisonStatement.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTensorComparisonStatement.lean#L146). The attribute's comment: “Remark 27.10.3 as one theorem: the canonical comparison morphism M-tilde ⊗ N-tilde ⟶ (M ⊗_S N)-tilde of sheaves of modules on Proj(S) is not an isomorphism, and for k[x, y, z] with weights 1, 2, 3, M = S(1) and N = S(2) the remark's computation — S_z is S with 1/z adjoined, M ⊗_S N = S(3) degreewise, S₍z₎ ≅ k[u, v, w]/(uw - v³) by the map sending the variables to u, v, w, M₍z₎ = S₍z₎x + S₍z₎y²/z, N₍z₎ = S₍z₎y + S₍z₎x², S(3)₍z₎ = S₍z₎z, the ideal (u, v, w) is maximal with residue field k, the fibres of M₍z₎ and N₍z₎ there have dimension 2 and that of S(3)₍z₎ dimension 1, and the multiplication map M₍z₎ ⊗ N₍z₎ → S(3)₍z₎ is not bijective. The first conjunct is witnessed by k[X] with deg X = 2 and M = N = S(1)”.
+**`Stacks.ProjTensorComparison.tensorComparison_not_isomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTensorComparisonStatement.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTensorComparisonStatement.lean#L146). The attribute's comment: “Remark 27.10.3 as one theorem: the canonical comparison morphism M-tilde ⊗ N-tilde ⟶ (M ⊗\_S N)-tilde of sheaves of modules on Proj(S) is not an isomorphism, and for k[x, y, z] with weights 1, 2, 3, M = S(1) and N = S(2) the remark's computation — S\_z is S with 1/z adjoined, M ⊗\_S N = S(3) degreewise, S₍z₎ ≅ k[u, v, w]/(uw - v³) by the map sending the variables to u, v, w, M₍z₎ = S₍z₎x + S₍z₎y²/z, N₍z₎ = S₍z₎y + S₍z₎x², S(3)₍z₎ = S₍z₎z, the ideal (u, v, w) is maximal with residue field k, the fibres of M₍z₎ and N₍z₎ there have dimension 2 and that of S(3)₍z₎ dimension 1, and the multiplication map M₍z₎ ⊗ N₍z₎ → S(3)₍z₎ is not bijective. The first conjunct is witnessed by k[X] with deg X = 2 and M = N = S(1)”.
 
 > **Stacks Project, Tag 01ML.** The canonical comparison morphism
 > `M̃ ⊗_𝒪 Ñ ⟶ (M ⊗_S N)~` of sheaves of modules on `Proj(S)` is not an isomorphism, and the

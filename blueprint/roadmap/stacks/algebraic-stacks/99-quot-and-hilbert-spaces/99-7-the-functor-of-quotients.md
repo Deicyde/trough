@@ -24,7 +24,7 @@ Section 99.7 of the Stacks Project, [Tag 082L](https://stacks.math.columbia.edu/
 structure QuotientSituation (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
 ```
 
-**`AlgebraicGeometry.Space.QuotientSituation.mk_kernel_quotientProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctor.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctor.lean#L158). The attribute's comment: “the identification of two quotients of F_T that have the same kernel: the submodules of F_T list the quotients of F_T once each”.
+**`AlgebraicGeometry.Space.QuotientSituation.mk_kernel_quotientProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctor.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctor.lean#L158). The attribute's comment: “the identification of two quotients of F\_T that have the same kernel: the submodules of F\_T list the quotients of F\_T once each”.
 
 > The kernel of the projection `F_T ⟶ F_T / K` is `K` again.  Together with surjectivity of
 > the projection this says that the submodules of `F_T` list the quotients of `F_T` once each,
@@ -59,7 +59,7 @@ def finitePresentationQuotients (T : SchemesOver D.Y) :
     Set (Subobject (D.baseChangeModule T))
 ```
 
-**`AlgebraicGeometry.Space.QuotientSituation.quotientPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean#L171). The attribute's comment: “the pullback Q' = (X_{T'} ⟶ X_T)^*Q of a quotient of F_T along a morphism T' ⟶ T of test schemes over Y”.
+**`AlgebraicGeometry.Space.QuotientSituation.quotientPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean#L171). The attribute's comment: “the pullback Q' = (X\_\{T'} ⟶ X\_T)^*Q of a quotient of F\_T along a morphism T' ⟶ T of test schemes over Y”.
 
 > The pullback of a quotient of `F_T` along a morphism `h : T' ⟶ T` of test schemes,
 > `Q ↦ (X_{T'} ⟶ X_T)^*Q`, recorded by its kernel.
@@ -69,7 +69,7 @@ def quotientPullback {T' T : SchemesOver D.Y} (h : T' ⟶ T)
     (K : Subobject (D.baseChangeModule T)) : Subobject (D.baseChangeModule T')
 ```
 
-**`AlgebraicGeometry.Space.QuotientSituation.quotientPullback_mem_quotients'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean#L247). The attribute's comment: “the pullback clause: if F_T ⟶ Q is an element of Q_{F/X/Y}(T) and T' ⟶ T is a morphism of schemes over Y, then Q' = (X_{T'} ⟶ X_T)^*Q is a quasi-coherent 𝒪_{X_{T'}}-module flat over T', so it is an element of Q_{F/X/Y}(T')”.
+**`AlgebraicGeometry.Space.QuotientSituation.quotientPullback_mem_quotients'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean#L247). The attribute's comment: “the pullback clause: if F\_T ⟶ Q is an element of Q\_\{F/X/Y}(T) and T' ⟶ T is a morphism of schemes over Y, then Q' = (X\_\{T'} ⟶ X\_T)^*Q is a quasi-coherent 𝒪\_\{X\_\{T'}}-module flat over T', so it is an element of Q\_\{F/X/Y}(T')”.
 
 > The pullback of a quotient of `F_T` which is quasi-coherent and flat over `T` is
 > quasi-coherent and flat over `T'`.
@@ -80,7 +80,7 @@ theorem quotientPullback_mem_quotients' {T' T : SchemesOver D.Y} (h : T' ⟶ T)
     D.quotientPullback h K ∈ D.quotients T'
 ```
 
-**`AlgebraicGeometry.Space.QuotientSituation.quotientPullback_mem_finitePresentationQuotients`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean#L259). The attribute's comment: “Q^{fp}_{F/X/Y} is a subfunctor of Q_{F/X/Y}: finite presentation of a quotient is preserved by the pullback along a morphism of test schemes, so the finitely presented quotients are stable under the transition maps”.
+**`AlgebraicGeometry.Space.QuotientSituation.quotientPullback_mem_finitePresentationQuotients`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean#L259). The attribute's comment: “Q^\{fp}\_\{F/X/Y} is a subfunctor of Q\_\{F/X/Y}: finite presentation of a quotient is preserved by the pullback along a morphism of test schemes, so the finitely presented quotients are stable under the transition maps”.
 
 > The pullback of a finitely presented quotient is a finitely presented quotient.
 
@@ -90,7 +90,7 @@ theorem quotientPullback_mem_finitePresentationQuotients {T' T : SchemesOver D.Y
     D.quotientPullback h K ∈ D.finitePresentationQuotients T'
 ```
 
-**`AlgebraicGeometry.Space.QuotientSituation.quotientsFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean#L319). The attribute's comment: “the functor Q_{F/X/Y} : (Sch/Y)ᵒᵖ ⥤ Sets obtained from the pullback clause, through its value at a test scheme T over Y, which is the set Q_{F/X/Y}(T)”.
+**`AlgebraicGeometry.Space.QuotientSituation.quotientsFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean#L319). The attribute's comment: “the functor Q\_\{F/X/Y} : (Sch/Y)ᵒᵖ ⥤ Sets obtained from the pullback clause, through its value at a test scheme T over Y, which is the set Q\_\{F/X/Y}(T)”.
 
 > The value of the functor of quotients at a test scheme `T` over `Y` is the set
 > `Q_{F/X/Y}(T)`.
@@ -100,7 +100,7 @@ theorem quotientsFunctor_obj (T : SchemesOver D.Y) :
     D.quotientsFunctor.obj (Opposite.op T) = D.quotients T
 ```
 
-**`AlgebraicGeometry.Space.QuotientSituation.quotientsFunctor_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean#L327). The attribute's comment: “the functor Q_{F/X/Y} : (Sch/Y)ᵒᵖ ⥤ Sets obtained from the pullback clause, through its transition maps, which are the pullback Q ↦ (X_{T'} ⟶ X_T)^*Q of quotients”.
+**`AlgebraicGeometry.Space.QuotientSituation.quotientsFunctor_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean#L327). The attribute's comment: “the functor Q\_\{F/X/Y} : (Sch/Y)ᵒᵖ ⥤ Sets obtained from the pullback clause, through its transition maps, which are the pullback Q ↦ (X\_\{T'} ⟶ X\_T)^*Q of quotients”.
 
 > The action of the functor of quotients on a morphism of test schemes is
 > pullback of quotients.
@@ -112,7 +112,7 @@ theorem quotientsFunctor_map {T' T : SchemesOver D.Y} (h : T' ⟶ T)
       ⟨K, hK⟩ : D.quotients T').1 = D.quotientPullback h K
 ```
 
-**`AlgebraicGeometry.Space.QuotientSituation.finitePresentationQuotientsFunctorToQuotientsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean#L356). The attribute's comment: “Q^{fp}_{F/X/Y} : (Sch/Y)ᵒᵖ ⥤ Sets is a subfunctor of Q_{F/X/Y}: the inclusion of the finitely presented quotients into all of them is a morphism of functors”.
+**`AlgebraicGeometry.Space.QuotientSituation.finitePresentationQuotientsFunctorToQuotientsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean#L356). The attribute's comment: “Q^\{fp}\_\{F/X/Y} : (Sch/Y)ᵒᵖ ⥤ Sets is a subfunctor of Q\_\{F/X/Y}: the inclusion of the finitely presented quotients into all of them is a morphism of functors”.
 
 > The finite-presentation subfunctor is a subfunctor of the functor of
 > quotients: at every test scheme its value is a subset of the value of
@@ -153,7 +153,7 @@ def sourceRestricted {W : AlgebraicSpaces B S hS} (a : W ⟶ D.X) :
 
 [Tag 082N](https://stacks.math.columbia.edu/tag/082N) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuotientSituation.quotientsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean#L305). The attribute's comment: “the functor of quotients Q_{F/X/Y} of F/X/Y, with its two functor laws and the stability of the quotients of the source under pullback along a morphism of test schemes”. References: SGA 3 XV (3.8), “more general”.
+**`AlgebraicGeometry.Space.QuotientSituation.quotientsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean#L305). The attribute's comment: “the functor of quotients Q\_\{F/X/Y} of F/X/Y, with its two functor laws and the stability of the quotients of the source under pullback along a morphism of test schemes”. References: SGA 3 XV (3.8), “more general”.
 
 > The functor of quotients of `F/X/Y`,
 > `Q_{F/X/Y} : (Sch/Y)ᵒᵖ ⥤ Sets`: its value at a test scheme `T` over `Y` is the set
@@ -168,7 +168,7 @@ def quotientsFunctor : (SchemesOver D.Y)ᵒᵖ ⥤ Type (u + 1)
 
 [Tag 0CZL](https://stacks.math.columbia.edu/tag/0CZL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuotientSituation.finitePresentationQuotientsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean#L338). The attribute's comment: “the finite-presentation subfunctor Q^{fp}_{F/X/Y} of the functor of quotients”.
+**`AlgebraicGeometry.Space.QuotientSituation.finitePresentationQuotientsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPullback.lean#L338). The attribute's comment: “the finite-presentation subfunctor Q^\{fp}\_\{F/X/Y} of the functor of quotients”.
 
 > The finite-presentation subfunctor `Q^{fp}_{F/X/Y} : (Sch/Y)ᵒᵖ ⥤ Sets` of the functor of
 > quotients: its value at a test scheme `T` is the subset of `Q_{F/X/Y}(T)` of those quotients that
@@ -193,7 +193,7 @@ def finitePresentationQuotientsFunctor : (SchemesOver D.Y)ᵒᵖ ⥤ Type (u + 1
 abbrev canonicalBaseChangedSituation : QuotientSituation B S hS
 ```
 
-**`AlgebraicGeometry.Space.QuotientSituation.canonicalBaseChangeQuotientModuleIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorBaseChange.lean, line 505](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorBaseChange.lean#L505). The attribute's comment: “the identification of the quotients themselves, F'_T/K' = F_T/K under X'_T ≅ X_T”.
+**`AlgebraicGeometry.Space.QuotientSituation.canonicalBaseChangeQuotientModuleIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorBaseChange.lean, line 505](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorBaseChange.lean#L505). The attribute's comment: “the identification of the quotients themselves, F'\_T/K' = F\_T/K under X'\_T ≅ X\_T”.
 
 > **The quotients themselves correspond**, at the canonical pseudofunctoriality datum: the
 > quotient `F'_T/K'` named by the subobject corresponding to `K` is the inverse image along
@@ -327,7 +327,7 @@ theorem bijOn_quotientRestrict_of_isFpqcCovering {I : Type v} {X : AlgebraicSpac
             (pair_comp_condition f i j (g i j k)) F (Q j)}
 ```
 
-**`AlgebraicGeometry.Space.eq_of_quotientRestrict_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorDescent.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorDescent.lean#L306). The attribute's comment: “injectivity of the displayed bijection — a quasi-coherent quotient with quasi-coherent kernel is determined by its restrictions along the fpqc covering. Once conditional on the faithfulness clause of Stacks 04W8, it is discharged by AlgebraicGeometry.Space.modulePullback_reflectsZero_of_isFpqcCovering. Surjectivity needs the fullness and effectivity clauses of Stacks 04W8, which this development does not prove”.
+**`AlgebraicGeometry.Space.eq_of_quotientRestrict_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorDescent.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorDescent.lean#L306). The attribute's comment: “injectivity of the displayed bijection — a quasi-coherent quotient with quasi-coherent kernel is determined by its restrictions along the fpqc covering. Once conditional on the faithfulness clause of Stacks 04W8, it is discharged by AlgebraicGeometry.Space.modulePullback\_reflectsZero\_of\_isFpqcCovering. Surjectivity needs the fullness and effectivity clauses of Stacks 04W8, which this development does not prove”.
 
 > **Stacks 08IU, injectivity of the displayed bijection.**  Let `X` be an algebraic space over
 > a scheme `S` of a big fppf site, let `F` be an `𝒪_X`-module and let `{p i : Z i ⟶ X}` be an fpqc
@@ -353,7 +353,7 @@ theorem eq_of_quotientRestrict_eq
     (h : ∀ i, quotientRestrict (p i) K = quotientRestrict (p i) K') : K = K'
 ```
 
-**`AlgebraicGeometry.Space.injOn_quotientRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorDescent.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorDescent.lean#L325). The attribute's comment: “injectivity of the displayed bijection, read as the injectivity of the restriction map on the set of quotients of the source whose quotient module and whose kernel are quasi-coherent. Once conditional on the faithfulness clause of Stacks 04W8, it is discharged by AlgebraicGeometry.Space.modulePullback_reflectsZero_of_isFpqcCovering”.
+**`AlgebraicGeometry.Space.injOn_quotientRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorDescent.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorDescent.lean#L325). The attribute's comment: “injectivity of the displayed bijection, read as the injectivity of the restriction map on the set of quotients of the source whose quotient module and whose kernel are quasi-coherent. Once conditional on the faithfulness clause of Stacks 04W8, it is discharged by AlgebraicGeometry.Space.modulePullback\_reflectsZero\_of\_isFpqcCovering”.
 
 > **Stacks 08IU, injectivity of the displayed bijection**, read as the injectivity of the map
 > the source writes down: restriction along an fpqc covering `{p i : Z i ⟶ X}` is injective on the
@@ -373,7 +373,7 @@ theorem injOn_quotientRestrict
 
 [Tag 082P](https://stacks.math.columbia.edu/tag/082P) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuotientSituation.quotientsFunctor_isSheaf_fpqcTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorFpqcSheaf.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorFpqcSheaf.lean#L174). The attribute's comment: “the functor of quotients Q_{F/X/Y}”.
+**`AlgebraicGeometry.Space.QuotientSituation.quotientsFunctor_isSheaf_fpqcTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorFpqcSheaf.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorFpqcSheaf.lean#L174). The attribute's comment: “the functor of quotients Q\_\{F/X/Y}”.
 
 > **Stacks 082P for `Q_{F/X/Y}`.**  The functor of quotients `Q_{F/X/Y} : (Sch/Y)ᵒᵖ ⥤ Sets`
 > of Stacks 082N satisfies the sheaf property for the fpqc topology.
@@ -383,7 +383,7 @@ theorem quotientsFunctor_isSheaf_fpqcTopology :
     Presheaf.IsSheaf (fpqcTopology D.Y) D.quotientsFunctor
 ```
 
-**`AlgebraicGeometry.Space.QuotientSituation.finitePresentationQuotientsFunctor_isSheaf_fpqcTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorFpqcSheaf.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorFpqcSheaf.lean#L183). The attribute's comment: “the finite-presentation subfunctor Q^{fp}_{F/X/Y}”.
+**`AlgebraicGeometry.Space.QuotientSituation.finitePresentationQuotientsFunctor_isSheaf_fpqcTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorFpqcSheaf.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotFunctorFpqcSheaf.lean#L183). The attribute's comment: “the finite-presentation subfunctor Q^\{fp}\_\{F/X/Y}”.
 
 > **Stacks 082P for `Q^{fp}_{F/X/Y}`.**  The finite-presentation subfunctor of the functor of
 > quotients satisfies the sheaf property for the fpqc topology.
@@ -423,7 +423,7 @@ theorem isSheafFor_finitePresentationQuotientsFunctor_of_isFpqcCovering
 
 [Tag 0D3U](https://stacks.math.columbia.edu/tag/0D3U) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuotientSituation.morEquivSpaceQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPoints.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPoints.lean#L363). The attribute's comment: “the displayed identification for Q_{F/X/Y}, in the case where the algebraic space is a scheme of the big fppf site: the morphisms of sheaves into the functor of quotients of Stacks 082P are the pairs of a morphism to Y and a quotient, quasi-coherent and flat over the base, of the pullback of F to the base change along it. Conditional on the one hypothesis of Stacks 082N still carried, the pseudofunctoriality of the inverse images of Stacks 03LU. The case of a general algebraic space is not covered: it needs the descent of the quotient along a surjective étale chart, which is the fullness and effectivity clauses of Stacks 04W8 together with Stacks 0262, 05VY and 060V, none of which this development carries”.
+**`AlgebraicGeometry.Space.QuotientSituation.morEquivSpaceQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPoints.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorPoints.lean#L363). The attribute's comment: “the displayed identification for Q\_\{F/X/Y}, in the case where the algebraic space is a scheme of the big fppf site: the morphisms of sheaves into the functor of quotients of Stacks 082P are the pairs of a morphism to Y and a quotient, quasi-coherent and flat over the base, of the pullback of F to the base change along it. Conditional on the one hypothesis of Stacks 082N still carried, the pseudofunctoriality of the inverse images of Stacks 03LU. The case of a general algebraic space is not covered: it needs the descent of the quotient along a surjective étale chart, which is the fullness and effectivity clauses of Stacks 04W8 together with Stacks 0262, 05VY and 060V, none of which this development carries”.
 
 > **Stacks 0D3U for a representable algebraic space.**  The morphisms of sheaves on the big
 > fppf site of `S` from a scheme `U` of the site into `Q_{F/X/Y}` are the pairs `(h, Q)`
@@ -444,7 +444,7 @@ def morEquivSpaceQuotient (hc : ModulePushforwardCoherence B S hS)
       D.SpaceQuotients ((schemeSpaceFunctor B S hS).obj U)
 ```
 
-**`AlgebraicGeometry.Space.QuotientSituation.morEquivSpaceQuotientOfAlgebraicSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorSpaceDescent.lean, line 685](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorSpaceDescent.lean#L685). The attribute's comment: “the first displayed identification, for Q_{F/X/Y} and an arbitrary algebraic space T”.
+**`AlgebraicGeometry.Space.QuotientSituation.morEquivSpaceQuotientOfAlgebraicSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorSpaceDescent.lean, line 685](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorSpaceDescent.lean#L685). The attribute's comment: “the first displayed identification, for Q\_\{F/X/Y} and an arbitrary algebraic space T”.
 
 > For an algebraic space `T` over `S`, the morphisms of sheaves on the big fppf site of `S`
 > from `T` into the functor of quotients `Q_{F/X/Y}` of Stacks 082P are in bijection with the pairs
@@ -462,7 +462,7 @@ def morEquivSpaceQuotientOfAlgebraicSpace (T : AlgebraicSpaces B S hS) :
       D.SpaceQuotients T
 ```
 
-**`AlgebraicGeometry.Space.QuotientSituation.morEquivSpaceFinitePresentationQuotientOfAlgebraicSpaceUnconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorSpaceDescent.lean, line 761](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorSpaceDescent.lean#L761). The attribute's comment: “the second displayed identification, for Q^{fp}_{F/X/Y} and an arbitrary algebraic space T”.
+**`AlgebraicGeometry.Space.QuotientSituation.morEquivSpaceFinitePresentationQuotientOfAlgebraicSpaceUnconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorSpaceDescent.lean, line 761](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorSpaceDescent.lean#L761). The attribute's comment: “the second displayed identification, for Q^\{fp}\_\{F/X/Y} and an arbitrary algebraic space T”.
 
 > For an algebraic space `T` over `S`, the morphisms of sheaves on the big fppf site of `S`
 > from `T` into the finite-presentation subfunctor `Q^{fp}_{F/X/Y}` of Stacks 0CZL are in bijection
@@ -526,7 +526,7 @@ theorem bijOn_restrictQuotientToMember
           D.restrictQuotientBetweenMembers (q i j k ≫ c₁ i j) (he₁ i j k) T (Q j)}
 ```
 
-**`AlgebraicGeometry.Space.QuotientSituation.bijOn_restrictQuotientToMember_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorSourceSheaf.lean, line 659](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorSourceSheaf.lean#L659). The attribute's comment: “the same equalizer property for the finite-presentation subfunctor Q^{fp}, again with nothing assumed and no weakening: the inputs of bijOn_restrictQuotientToMember together with Section 05VR for the restriction maps and 060V on the site for surjectivity”.
+**`AlgebraicGeometry.Space.QuotientSituation.bijOn_restrictQuotientToMember_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorSourceSheaf.lean, line 659](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorSourceSheaf.lean#L659). The attribute's comment: “the same equalizer property for the finite-presentation subfunctor Q^\{fp}, again with nothing assumed and no weakening: the inputs of bijOn\_restrictQuotientToMember together with Section 05VR for the restriction maps and 060V on the site for surjectivity”.
 
 > **Stacks 08IV for the finite-presentation subfunctor.**  The diagram of Stacks 08IV presents
 > the first arrow as the equalizer of the other two for `Q^{fp}_{F/X/Y}` as well: restriction is a
@@ -599,7 +599,7 @@ alias bijOn_restrictQuotientToMember_finitePresentation_of_isFpqcCovering
 
 [Tag 082Q](https://stacks.math.columbia.edu/tag/082Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuotientSituation.finitePresentationQuotientsFunctor_limitPreserving_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorLimitPreservingUnconditional.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorLimitPreservingUnconditional.lean#L85). The attribute's comment: “corrected per the 082Q erratum: f also locally of finite presentation; as written the statement is false, see not_forall_finitePresentationQuotientsFunctor_limitPreserving”.
+**`AlgebraicGeometry.Space.QuotientSituation.finitePresentationQuotientsFunctor_limitPreserving_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorLimitPreservingUnconditional.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/QuotientFunctorLimitPreservingUnconditional.lean#L85). The attribute's comment: “corrected per the 082Q erratum: f also locally of finite presentation; as written the statement is false, see not\_forall\_finitePresentationQuotientsFunctor\_limitPreserving”.
 
 > **Stacks 082Q, corrected.**  In Situation 082M assume that (a) `f : X ⟶ Y` is quasi-compact
 > and quasi-separated, and also locally of finite presentation, and (b) `F` is of finite

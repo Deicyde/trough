@@ -61,11 +61,11 @@ public theorem exists_iso_pages_totalFiltration₂
     ∀ p q : ℤ, Nonempty ((E.page 2 zero_le_two).X (p, q) ≅ (K.homology q).homology p)
 ```
 
-**`HomologicalComplex₂.isLeast_totalFiltration₁`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Filtration.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Filtration.lean#L288). The attribute's comment: “the first filtration is ⨁_{i ≥ p} K^{i,j}”.
+**`HomologicalComplex₂.isLeast_totalFiltration₁`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Filtration.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Filtration.lean#L288). The attribute's comment: “the first filtration is ⨁\_\{i ≥ p} K^\{i,j}”.
 
 > **Stacks 0130, the first filtration is the one intended.** The degreewise steps `F p n` of the
-> filtration of `Tot(K^{•,•})` by the first coordinate are `F_I^p Tot^n = ⨁_{i + j = n, i ≥ p}
-> K^{i,j}`, characterized without arbitrary suprema of subobjects: `F p n` contains the image of
+> filtration of `Tot(K^{•,•})` by the first coordinate are `F\_I^p Tot^n = ⨁\_\{i + j = n, i ≥ p}
+> K^\{i,j}`, characterized without arbitrary suprema of subobjects: `F p n` contains the image of
 > every summand inclusion `K^{i,j} ⟶ Tot^n` with `i ≥ p`, and it is the least subobject of `Tot^n`
 > that does. Consequently the filtration is decreasing in `p`. Together with
 > `exists_iso_pages_totalFiltration₁`, which is stated for the same `F` under the same hypothesis
@@ -84,11 +84,11 @@ public theorem isLeast_totalFiltration₁
     (∀ p p' n : ℤ, p ≤ p' → F p' n ≤ F p n)
 ```
 
-**`HomologicalComplex₂.isLeast_totalFiltration₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Filtration.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Filtration.lean#L308). The attribute's comment: “the second filtration is ⨁_{j ≥ p} K^{i,j}”.
+**`HomologicalComplex₂.isLeast_totalFiltration₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Filtration.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/SpectralSequence/DoubleComplex/Filtration.lean#L308). The attribute's comment: “the second filtration is ⨁\_\{j ≥ p} K^\{i,j}”.
 
 > **Stacks 0130, the second filtration is the one intended.** The degreewise steps `F p n` of the
-> filtration of `Tot(K^{•,•})` by the second coordinate are `F_{II}^p Tot^n =
-> ⨁_{i + j = n, j ≥ p} K^{i,j}`, characterized without arbitrary suprema of subobjects: `F p n`
+> filtration of `Tot(K^{•,•})` by the second coordinate are `F\_\{II}^p Tot^n =
+> ⨁\_\{i + j = n, j ≥ p} K^\{i,j}`, characterized without arbitrary suprema of subobjects: `F p n`
 > contains the image of every summand inclusion `K^{i,j} ⟶ Tot^n` with `j ≥ p`, and it is the least
 > subobject of `Tot^n` that does. Consequently the filtration is decreasing in `p`. Together with
 > `exists_iso_pages_totalFiltration₂`, which is stated for the same `F` under the same hypothesis

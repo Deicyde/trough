@@ -32,7 +32,7 @@ theorem isSeparated_of_sup_eq_top_of_isClosedImmersion_mapDesc
 
 [Tag 0F3V](https://stacks.math.columbia.edu/tag/0F3V) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_disjoint_strictTransforms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Separation.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Separation.lean#L331). The attribute's comment: “separate_strict_transforms”.
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_disjoint_strictTransforms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Separation.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Separation.lean#L331). The attribute's comment: “separate\_strict\_transforms”.
 
 > **Stacks Project, Tag 0F3V, part (1).** Let `X` be a quasi-compact and quasi-separated scheme
 > and `U ⊆ X` an open. Let `Z₁ = V(ℐ₁)` and `Z₂ = V(ℐ₂)` be closed subschemes of finite
@@ -53,7 +53,7 @@ theorem exists_isAdmissibleBlowup_disjoint_strictTransforms [CompactSpace X]
           (Set.range (strictTransformToBlowUp I₂.subschemeι I).base)
 ```
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_disjoint_closures`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Separation.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Separation.lean#L474). The attribute's comment: “separate_constructible_closures”.
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_disjoint_closures`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Separation.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Separation.lean#L474). The attribute's comment: “separate\_constructible\_closures”.
 
 > **Stacks Project, Tag 0F3V, part (2).** Let `X` be a quasi-compact and quasi-separated scheme,
 > let `U ⊆ X` be a quasi-compact open and let `T₁, T₂ ⊆ U` be disjoint constructible closed subsets.

@@ -1286,7 +1286,7 @@ theorem isDiscreteFieldFibrePoints_of_isQuasiFiniteAboveFieldValuedPoint
     IsDiscreteFieldFibrePoints B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_of_isZeroDimensionalFieldFibrePoints_of_t0Space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L227). The attribute's comment: “(6) implies (5), corrected: the source omits that |X_k| must be Kolmogorov”.
+**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_of_isZeroDimensionalFieldFibrePoints_of_t0Space`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L227). The attribute's comment: “(6) implies (5), corrected: the source omits that |X\_k| must be Kolmogorov”.
 
 > **Stacks 0ACK, condition (6) implies condition (5), for a Kolmogorov `|X_k|`.** If the
 > point space of the field fibre `X_k` is `T₀` and has Krull dimension zero, then it is discrete.
@@ -1332,7 +1332,7 @@ theorem isDiscreteFieldFibrePoints_of_isZeroDimensionalFieldFibrePoints
     IsDiscreteFieldFibrePoints B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.isZeroDimensionalFieldFibre_of_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L271). The attribute's comment: “(6) implies (7), corrected: the source omits that |X_k| must be Kolmogorov”.
+**`AlgebraicGeometry.Space.isZeroDimensionalFieldFibre_of_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L271). The attribute's comment: “(6) implies (7), corrected: the source omits that |X\_k| must be Kolmogorov”.
 
 > **Stacks 0ACK, condition (6) implies condition (7), for a Kolmogorov `|X_k|`.** If the
 > point space of the field fibre `X_k` is `T₀` and has Krull dimension zero, then `X_k` has
@@ -1356,7 +1356,7 @@ theorem isZeroDimensionalFieldFibre_of_isZeroDimensionalFieldFibrePoints
     IsZeroDimensionalFieldFibre B S hS f p hXk
 ```
 
-**`AlgebraicGeometry.Space.isQuasiFiniteAboveFieldValuedPoint_of_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L294). The attribute's comment: “(6) implies (8), corrected: the source omits that |X_k| must be Kolmogorov”.
+**`AlgebraicGeometry.Space.isQuasiFiniteAboveFieldValuedPoint_of_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L294). The attribute's comment: “(6) implies (8), corrected: the source omits that |X\_k| must be Kolmogorov”.
 
 > **Stacks 0ACK, condition (6) implies condition (8), for a Kolmogorov `|X_k|`.** If the
 > point space of the field fibre `X_k` is `T₀` and has Krull dimension zero, then `f` is
@@ -1378,7 +1378,7 @@ theorem isQuasiFiniteAboveFieldValuedPoint_of_isZeroDimensionalFieldFibrePoints
     IsQuasiFiniteAboveFieldValuedPoint B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_iff_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L316). The attribute's comment: “conditions (5) and (6), corrected: |X_k| must be Kolmogorov”.
+**`AlgebraicGeometry.Space.isDiscreteFieldFibrePoints_iff_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L316). The attribute's comment: “conditions (5) and (6), corrected: |X\_k| must be Kolmogorov”.
 
 > **Stacks 0ACK, conditions (5) and (6).** For a morphism locally of finite type and a
 > field-valued point of its target with nonempty field fibre whose point space is `T₀`, the point
@@ -1399,7 +1399,7 @@ theorem isDiscreteFieldFibrePoints_iff_isZeroDimensionalFieldFibrePoints
     IsDiscreteFieldFibrePoints B S hS f p ↔ IsZeroDimensionalFieldFibrePoints B S hS f p
 ```
 
-**`AlgebraicGeometry.Space.isZeroDimensionalFieldFibre_iff_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L338). The attribute's comment: “conditions (6) and (7), corrected: |X_k| must be Kolmogorov”.
+**`AlgebraicGeometry.Space.isZeroDimensionalFieldFibre_iff_isZeroDimensionalFieldFibrePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FieldFibreZeroDimensionalDecent.lean#L338). The attribute's comment: “conditions (6) and (7), corrected: |X\_k| must be Kolmogorov”.
 
 > **Stacks 0ACK, conditions (6) and (7) for a decent morphism.** For a decent morphism
 > locally of finite type and a field-valued point of its target, the point space `|X_k|` of the

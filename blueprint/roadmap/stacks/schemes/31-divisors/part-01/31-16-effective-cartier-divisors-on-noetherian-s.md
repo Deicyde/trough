@@ -164,7 +164,7 @@ theorem isEffectiveCartierDivisor_hasPropertySk
 
 [Tag 0B3S](https://stacks.math.columbia.edu/tag/0B3S) in the Stacks Project.
 
-**`AlgebraicGeometry.isNormal_effectiveCartierDivisor_hasPropertySk_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/SerreCondition.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/SerreCondition.lean#L283). References: EGA IV (21.7.3), “normal ⇒ (S_1)”.
+**`AlgebraicGeometry.isNormal_effectiveCartierDivisor_hasPropertySk_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/SerreCondition.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/SerreCondition.lean#L283). References: EGA IV (21.7.3), “normal ⇒ (S\_1)”.
 
 > **Stacks Project, Tag 0B3S.**  An effective Cartier divisor on a locally Noetherian normal
 > scheme satisfies Serre's condition `(S₁)`: the scheme satisfies `(S₂)` by Serre's criterion, and
@@ -203,7 +203,7 @@ theorem isEffectiveCartierDivisor_of_codimension_one_of_uniqueFactorizationMonoi
 
 [Tag 0AGB](https://stacks.math.columbia.edu/tag/0AGB) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_effectiveCartierDivisor_agree_off_codimension_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/CartierPart.lean, line 1086](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/CartierPart.lean#L1086). The attribute's comment: “cartier_part”.
+**`AlgebraicGeometry.exists_effectiveCartierDivisor_agree_off_codimension_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/CartierPart.lean, line 1086](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/CartierPart.lean#L1086). The attribute's comment: “cartier\_part”.
 
 > The Cartier part of a closed subscheme supported, up to codimension two,
 > on integral effective Cartier divisors.
@@ -228,7 +228,7 @@ theorem exists_effectiveCartierDivisor_agree_off_codimension_two
             (2 : ℕ∞) ≤ codimension (IrreducibleCloseds.closureSingleton x)
 ```
 
-**`AlgebraicGeometry.exists_integral_effectiveCartierDivisors_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/DivisorCover.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/DivisorCover.lean#L87). The attribute's comment: “supply_divisors”.
+**`AlgebraicGeometry.exists_integral_effectiveCartierDivisors_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/DivisorCover.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/DivisorCover.lean#L87). The attribute's comment: “supply\_divisors”.
 
 > A nowhere dense closed subscheme of a Noetherian scheme with factorial local rings
 > along it, or of a regular scheme, is covered by integral effective Cartier divisors

@@ -79,7 +79,7 @@ public theorem oddVariableDividedPowerStructure_dpow
         inclusion Aᵢ d (gamma.dpow (n - 1) x * y) * generator Aᵢ d
 ```
 
-**`DividedPowers.TateResolution.OddVariableExtension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Extension.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Extension.lean#L197). The attribute's comment: “odd_variable_extension”.
+**`DividedPowers.TateResolution.OddVariableExtension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Extension.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Extension.lean#L197). The attribute's comment: “odd\_variable\_extension”.
 
 > The odd-variable extension `A⟨T⟩`.  Its elements are pairs `(a, b)`, written
 > mathematically as `a + bT`.
@@ -88,7 +88,7 @@ public theorem oddVariableDividedPowerStructure_dpow
 public abbrev OddVariableExtension (Aᵢ : ℕ → Submodule R A) [GradedAlgebra Aᵢ] (d : ℕ)
 ```
 
-**`DividedPowers.TateResolution.OddVariableExtension.grade`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Extension.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Extension.lean#L256). The attribute's comment: “odd_variable_extension”.
+**`DividedPowers.TateResolution.OddVariableExtension.grade`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Extension.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/OddVariable/Extension.lean#L256). The attribute's comment: “odd\_variable\_extension”.
 
 > The degree-`m` piece `A_m ⊕ A_{m-d}T` of the odd-variable extension.
 
@@ -133,7 +133,7 @@ public theorem oddVariableExtension_ringHom_dpow
 
 [Tag 09PI](https://stacks.math.columbia.edu/tag/09PI) in the Stacks Project.
 
-**`DividedPowers.TateResolution.EvenVariableAlgebra`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L62). The attribute's comment: “even_variable_algebra”.
+**`DividedPowers.TateResolution.EvenVariableAlgebra`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L62). The attribute's comment: “even\_variable\_algebra”.
 
 > The algebra of finite divided-power polynomials in one even variable over `A`.
 >
@@ -143,7 +143,7 @@ public theorem oddVariableExtension_ringHom_dpow
 public structure EvenVariableAlgebra (A : Type v) [Ring A]
 ```
 
-**`DividedPowers.TateResolution.EvenVariableAlgebra.mul`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L131). The attribute's comment: “even_variable_algebra”.
+**`DividedPowers.TateResolution.EvenVariableAlgebra.mul`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L131). The attribute's comment: “even\_variable\_algebra”.
 
 > The binomially weighted convolution product.
 
@@ -151,7 +151,7 @@ public structure EvenVariableAlgebra (A : Type v) [Ring A]
 public def mul (x y : EvenVariableAlgebra A) : EvenVariableAlgebra A
 ```
 
-**`DividedPowers.TateResolution.EvenVariableAlgebra.grade`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L351). The attribute's comment: “even_variable_algebra”.
+**`DividedPowers.TateResolution.EvenVariableAlgebra.grade`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L351). The attribute's comment: “even\_variable\_algebra”.
 
 > The degree-`m` piece after adjoining an even variable of degree `d`.
 >
@@ -163,7 +163,7 @@ public def grade (𝒜 : ℕ → Submodule R A) (d m : ℕ) :
     Submodule R (EvenVariableAlgebra A)
 ```
 
-**`DividedPowers.TateResolution.EvenVariableAlgebra.gradedAlgebra`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L559). The attribute's comment: “even_variable_algebra”.
+**`DividedPowers.TateResolution.EvenVariableAlgebra.gradedAlgebra`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L559). The attribute's comment: “even\_variable\_algebra”.
 
 > The shifted homogeneous pieces give an internal grading of the coefficient algebra.
 
@@ -172,7 +172,7 @@ public instance gradedAlgebra (𝒜 : ℕ → Submodule R A) [GradedAlgebra 𝒜
     (d : ℕ) : GradedAlgebra (grade 𝒜 d)
 ```
 
-**`DividedPowers.TateResolution.EvenVariableAlgebra.strictlyGradedComm`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 614](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L614). The attribute's comment: “even_variable_algebra”.
+**`DividedPowers.TateResolution.EvenVariableAlgebra.strictlyGradedComm`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean, line 614](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariable.lean#L614). The attribute's comment: “even\_variable\_algebra”.
 
 > An even variable preserves strict graded commutativity, including vanishing odd squares.
 
@@ -181,7 +181,7 @@ public instance strictlyGradedComm (𝒜 : ℕ → Submodule R A) [IsStrictlyGra
     (d : ℕ) [Fact (Even d)] : IsStrictlyGradedComm (grade 𝒜 d)
 ```
 
-**`DividedPowers.TateResolution.evenVariableDividedPowerStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L280). The attribute's comment: “even_variable_divided_powers”.
+**`DividedPowers.TateResolution.evenVariableDividedPowerStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L280). The attribute's comment: “even\_variable\_divided\_powers”.
 
 > The divided-power structure on the algebra obtained by adjoining an even
 > variable of positive degree.
@@ -193,7 +193,7 @@ public noncomputable def evenVariableDividedPowerStructure
     DividedPowerStructure (EvenVariableAlgebra.grade 𝒜 d)
 ```
 
-**`DividedPowers.TateResolution.dpow_coeffEmbedding`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L393). The attribute's comment: “even_variable_divided_powers”.
+**`DividedPowers.TateResolution.dpow_coeffEmbedding`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L393). The attribute's comment: “even\_variable\_divided\_powers”.
 
 > The new divided powers restrict to the original structure on `A`.
 
@@ -206,7 +206,7 @@ public theorem dpow_coeffEmbedding
       coeffEmbedding (γ.dpow n x)
 ```
 
-**`DividedPowers.TateResolution.dpow_monomial_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L404). The attribute's comment: “even_variable_divided_powers”.
+**`DividedPowers.TateResolution.dpow_monomial_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L404). The attribute's comment: “even\_variable\_divided\_powers”.
 
 > The divided powers of the formal monomial `T⁽ⁱ⁾`.
 
@@ -218,7 +218,7 @@ public theorem dpow_monomial_one
       monomial (n * i) (dividedPowerMonomialCoefficient n i • (1 : A))
 ```
 
-**`DividedPowers.TateResolution.dpow_positivePolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L432). The attribute's comment: “even_variable_divided_powers”.
+**`DividedPowers.TateResolution.dpow_positivePolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L432). The attribute's comment: “even\_variable\_divided\_powers”.
 
 > The multinomial expansion for a finite sum of positive-exponent terms
 > whose coefficients are even.
@@ -235,7 +235,7 @@ public theorem dpow_positivePolynomial
       positivePolynomialDividedPower n x
 ```
 
-**`DividedPowers.TateResolution.dpow_coeff_add_positive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 579](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L579). The attribute's comment: “even_variable_divided_powers”.
+**`DividedPowers.TateResolution.dpow_coeff_add_positive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 579](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L579). The attribute's comment: “even\_variable\_divided\_powers”.
 
 > Adding a positive-even constant coefficient obeys the divided-power
 > binomial formula.
@@ -255,7 +255,7 @@ public theorem dpow_coeff_add_positive
       (evenVariableDividedPowerStructure d hd γ).dpow ij.2 x
 ```
 
-**`DividedPowers.TateResolution.evenVariableDividedPowerStructure_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 607](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L607). The attribute's comment: “even_variable_divided_powers”.
+**`DividedPowers.TateResolution.evenVariableDividedPowerStructure_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean, line 607](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/TateResolution/EvenVariableDividedPowers/Structure.lean#L607). The attribute's comment: “even\_variable\_divided\_powers”.
 
 > Compatibility and the formal-monomial rule determine the divided-power
 > structure uniquely.

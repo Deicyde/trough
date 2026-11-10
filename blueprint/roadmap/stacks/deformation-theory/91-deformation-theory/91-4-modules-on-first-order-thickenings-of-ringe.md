@@ -294,7 +294,7 @@ noncomputable def extensionExistenceObstruction
 noncomputable def structureSheafSplitEpi : SplitEpi i.hom.c
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.trivializedThickeningEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivializedThickeningEquivalence.lean, line 946](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivializedThickeningEquivalence.lean#L946). The attribute's comment: “the category of trivialized first order thickenings of (X, 𝒪_X) is equivalent to the category of 𝒪_X-modules; morphisms of thickenings run in the geometric direction (X'₁ ⟶ X'₂ of ringed spaces, Stacks 08LD), so the module side carries ᵒᵖ”.
+**`AlgebraicGeometry.RingedSpaceThickening.trivializedThickeningEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/TrivializedThickeningEquivalence.lean, line 946](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/TrivializedThickeningEquivalence.lean#L946). The attribute's comment: “the category of trivialized first order thickenings of (X, 𝒪\_X) is equivalent to the category of 𝒪\_X-modules; morphisms of thickenings run in the geometric direction (X'₁ ⟶ X'₂ of ringed spaces, Stacks 08LD), so the module side carries ᵒᵖ”.
 
 > The category of trivialized first order thickenings of a ringed space `(X, 𝒪_X)` is
 > equivalent to the opposite of the category of `𝒪_X`-modules.
@@ -316,7 +316,7 @@ noncomputable def trivializedThickeningEquivalence (X : RingedSpace.{u, u}) :
     (SheafOfModules.{u} (structureSheafRing X))ᵒᵖ ≌ TrivializedThickening X
 ```
 
-**`Deformation.RingThickening.splittingFromTrivialization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L126). The attribute's comment: “splitting_from_trivialization”. References: EGA 0 (18.2.3), “special case”.
+**`Deformation.RingThickening.splittingFromTrivialization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L126). The attribute's comment: “splitting\_from\_trivialization”. References: EGA 0 (18.2.3), “special case”.
 
 > A trivialization identifies a first order thickening with the trivial square-zero extension
 > by its kernel ideal.
@@ -328,7 +328,7 @@ noncomputable def splittingFromTrivialization
   PresheafTrivialSquareZeroEquiv A' A π.retraction split
 ```
 
-**`Deformation.RingThickening.retractionFromSplitting`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L174). The attribute's comment: “trivialization_from_splitting”.
+**`Deformation.RingThickening.retractionFromSplitting`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L174). The attribute's comment: “trivialization\_from\_splitting”.
 
 > The section of the structure-sheaf map, transported along the inverse homeomorphism of the
 > base map, defines a morphism of ringed spaces in the opposite direction.
@@ -339,7 +339,7 @@ noncomputable abbrev retractionFromSplitting {X X' : RingedSpace.{u, v}}
     (splitting : SplitEpi i.hom.c) : X' ⟶ X
 ```
 
-**`Deformation.RingThickening.retractionFromSplitting_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L183). The attribute's comment: “trivialization_from_splitting”.
+**`Deformation.RingThickening.retractionFromSplitting_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L183). The attribute's comment: “trivialization\_from\_splitting”.
 
 > The morphism induced by a splitting of the structure-sheaf map retracts the original
 > morphism.
@@ -353,8 +353,8 @@ theorem retractionFromSplitting_comp {X X' : RingedSpace.{u, v}}
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.SplitMono`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SplitMono#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L58) (StacksFrontier): “trivial_thickening_and_trivialization”.
-- [`CategoryTheory.IsSplitMono`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.IsSplitMono#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L59) (StacksFrontier): “trivial_thickening_and_trivialization”. References: SGA 4 I (10.6).
+- [`CategoryTheory.SplitMono`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SplitMono#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L58) (StacksFrontier): “trivial\_thickening\_and\_trivialization”.
+- [`CategoryTheory.IsSplitMono`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.IsSplitMono#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/RingThickening/TrivialThickening.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/TrivialThickening.lean#L59) (StacksFrontier): “trivial\_thickening\_and\_trivialization”. References: SGA 4 I (10.6).
 
 ## Tag 08LA, an equation
 

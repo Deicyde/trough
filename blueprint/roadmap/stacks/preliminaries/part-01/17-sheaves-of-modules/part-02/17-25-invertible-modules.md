@@ -86,7 +86,7 @@ theorem isInvertible_iff_exists_tensor_iso_unit
         SheafOfModules.unit (Stacks.SheafOfModules.TensorSheafification.structureSheaf O hO))
 ```
 
-**`Stacks.SheafOfModules.Invertible.isInvertible_iff_exists_tensor_iso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Ample/DescentStep.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Ample/DescentStep.lean#L200). The attribute's comment: “tensor_inverse_characterization”.
+**`Stacks.SheafOfModules.Invertible.isInvertible_iff_exists_tensor_iso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Ample/DescentStep.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Ample/DescentStep.lean#L200). The attribute's comment: “tensor\_inverse\_characterization”.
 
 > **Stacks Project, Tag 0B8K.** A sheaf of modules is invertible if and only if it has a
 > tensor inverse, that is, if and only if some `N` satisfies `L ⊗ N ≅ 𝒪`.
@@ -104,7 +104,7 @@ theorem isInvertible_iff_exists_tensor_iso_unit
             hO))
 ```
 
-**`Stacks.SheafOfModules.LocallyFiniteFree.isLocallyFiniteFreeSummand_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Ample/LocallyFiniteFreeSummand.lean, line 1191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Ample/LocallyFiniteFreeSummand.lean#L1191). The attribute's comment: “locally_finite_free_summand”.
+**`Stacks.SheafOfModules.LocallyFiniteFree.isLocallyFiniteFreeSummand_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Ample/LocallyFiniteFreeSummand.lean, line 1191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Ample/LocallyFiniteFreeSummand.lean#L1191). The attribute's comment: “locally\_finite\_free\_summand”.
 
 > **Stacks Project, Tag 0B8K.** An invertible sheaf of modules is locally a direct
 > summand of a finite free sheaf.
@@ -394,7 +394,7 @@ theorem isIso_tensorSheafBraiding_hom_comp_evaluation [IsInvertible 𝒪 h𝒪 L
     IsIso ((tensorSheafBraiding 𝒪 h𝒪 L (dualSheaf 𝒪 h𝒪 L)).hom ≫ evaluation 𝒪 h𝒪 L)
 ```
 
-**`Stacks.SheafOfModules.Invertible.isInvertible_dualSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean#L287). The attribute's comment: “dual_invertible”.
+**`Stacks.SheafOfModules.Invertible.isInvertible_dualSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/InvertibleDualEvaluation.lean#L287). The attribute's comment: “dual\_invertible”.
 
 > **Stacks Project, Tag 040A (2) and Tag 01CT (2), the invertibility clause.** The dual
 > `L^∨ = SheafHom(L, 𝒪)` of an invertible sheaf of `𝒪`-modules is again invertible: the evaluation
@@ -405,7 +405,7 @@ theorem isInvertible_dualSheaf [IsInvertible 𝒪 h𝒪 L] :
     IsInvertible 𝒪 h𝒪 (dualSheaf 𝒪 h𝒪 L)
 ```
 
-**`Stacks.SheafOfModules.tensorProduct_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorInvertible.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorInvertible.lean#L474). The attribute's comment: “tensor_invertible”.
+**`Stacks.SheafOfModules.tensorProduct_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorInvertible.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/TensorInvertible.lean#L474). The attribute's comment: “tensor\_invertible”.
 
 > **Stacks Project, Tag 01CT (1), Tag 040A (1).** The tensor product of two invertible sheaves
 > of modules is invertible.
@@ -418,7 +418,7 @@ theorem tensorProduct_isInvertible
       ⟨O, Presheaf.isSheaf_of_isSheaf_comp _ O (forget₂ CommRingCat RingCat) hO⟩).obj L)).obj N)
 ```
 
-**`Stacks.SheafOfModules.Invertible.tensorProduct_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Ample/AmpleCriteria.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Ample/AmpleCriteria.lean#L70). The attribute's comment: “tensor_invertible”.
+**`Stacks.SheafOfModules.Invertible.tensorProduct_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Ample/AmpleCriteria.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Ample/AmpleCriteria.lean#L70). The attribute's comment: “tensor\_invertible”.
 
 > **Stacks Project, Tag 01CT**, part (1). The tensor product of two invertible sheaves of
 > modules is invertible: tensoring by it is the composite of the two tensor functors.
@@ -672,7 +672,7 @@ theorem sectionModuleStructure_exists
     Nonempty (SectionModuleStructure O hO L F)
 ```
 
-**`Stacks.SheafOfModules.Invertible.sectionRing`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSections/TwistedSections.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSections/TwistedSections.lean#L168). The attribute's comment: “underlying graded ring”. References: EGA II (4.5.1), “S = ⊕Γ(X,L^⊗n)”; EGA III (2.1.1), “(2.1.1.1)”; EGA II (2.6.1), “Γ_•(O_X) definition”; EGA 0 (5.4.6), “Γ•(L) carrier”.
+**`Stacks.SheafOfModules.Invertible.sectionRing`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSections/TwistedSections.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/InvertibleSections/TwistedSections.lean#L168). The attribute's comment: “underlying graded ring”. References: EGA II (4.5.1), “S = ⊕Γ(X,L^⊗n)”; EGA III (2.1.1), “(2.1.1.1)”; EGA II (2.6.1), “Γ\_•(O\_X) definition”; EGA 0 (5.4.6), “Γ•(L) carrier”.
 
 > **Stacks Project, Tag 01CV.** The *associated graded ring* `Γ_*(X, L)` of an invertible
 > sheaf of modules: the direct sum of the global sections of its non-negative tensor powers. Its
@@ -718,7 +718,7 @@ noncomputable def twistedSectionsGmodule
           ⟶ twist O hO L F n)
 ```
 
-**`Stacks.SheafOfModules.Invertible.homGradedCommRingOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GradedSectionRing/Commutativity.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GradedSectionRing/Commutativity.lean#L313). The attribute's comment: “associated graded ring”. References: EGA II (4.5.1), “S = ⊕Γ(X,L^⊗n)”; EGA III (2.1.1), “(2.1.1.1)”; EGA II (2.6.1), “graded ring Γ_•(O_X)”; EGA 0 (5.4.6), “graded ring Γ•(L)”.
+**`Stacks.SheafOfModules.Invertible.homGradedCommRingOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GradedSectionRing/Commutativity.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GradedSectionRing/Commutativity.lean#L313). The attribute's comment: “associated graded ring”. References: EGA II (4.5.1), “S = ⊕Γ(X,L^⊗n)”; EGA III (2.1.1), “(2.1.1.1)”; EGA II (2.6.1), “graded ring Γ\_•(O\_X)”; EGA 0 (5.4.6), “graded ring Γ•(L)”.
 
 > **Stacks Project, Tag 01CV: the associated graded ring
 > `Γ_*(X, L) = ⨁_{n ≥ 0} Γ(X, L^{⊗ n})` of an invertible sheaf of modules.** This is the

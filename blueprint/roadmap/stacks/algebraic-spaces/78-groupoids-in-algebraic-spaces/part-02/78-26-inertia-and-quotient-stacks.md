@@ -27,7 +27,7 @@ noncomputable def inertiaGroupoid
     GroupoidInAlgebraicSpaces C S hS B
 ```
 
-**`AlgebraicGeometry.Stack.inertiaComparison_comp_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean, line 1373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean#L1373). The attribute's comment: “second assertion: the comparison [G/R'] ⟶ I_{[U/R]} is over the site”.
+**`AlgebraicGeometry.Stack.inertiaComparison_comp_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean, line 1373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean#L1373). The attribute's comment: “second assertion: the comparison [G/R'] ⟶ I\_\{[U/R]} is over the site”.
 
 > The comparison `[G/R'] ⟶ ℐ_{[U/R]}` composed with the structure functor of the inertia of
 > `[U/R]` is the structure functor of `[G/R']`: it is a 1-morphism of categories over the big fppf
@@ -52,7 +52,7 @@ noncomputable def inertiaComparisonForgetfulIso
       (quotientStackMap (inertiaForgetful G)).toFunctor
 ```
 
-**`AlgebraicGeometry.Stack.isEquivalence_inertiaComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean, line 1401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean#L1401). The attribute's comment: “second assertion: I_{[U/R]} = [G/R'], the comparison is an equivalence”.
+**`AlgebraicGeometry.Stack.isEquivalence_inertiaComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean, line 1401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean#L1401). The attribute's comment: “second assertion: I\_\{[U/R]} = [G/R'], the comparison is an equivalence”.
 
 > The underlying functor of the comparison `[G/R'] ⟶ ℐ_{[U/R]}` is an equivalence of categories:
 > the quotient stack of the inertia groupoid `(G, R', s', t', c')` is the inertia stack of `[U/R]`.
@@ -119,7 +119,7 @@ noncomputable def isTwoFibreProduct_inertiaQuotientStackSquare
     Bicategory.IsTwoFibreProduct (inertiaQuotientStackSquare G)
 ```
 
-**`AlgebraicGeometry.Stack.isTwoFibreProduct_quotientStackInertiaSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackSquareFibred.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackSquareFibred.lean#L249). The attribute's comment: “the canonical square with corners S_G, S_U, I_[U/R], [U/R] is 2-cartesian”.
+**`AlgebraicGeometry.Stack.isTwoFibreProduct_quotientStackInertiaSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackSquareFibred.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackSquareFibred.lean#L249). The attribute's comment: “the canonical square with corners S\_G, S\_U, I\_[U/R], [U/R] is 2-cartesian”.
 
 > Assume `B → S` and `(U, R, s, t, c)` as in Stacks 044Q (1). Let `G/U` be the stabilizer group
 > algebraic space of the groupoid `(U, R, s, t, c, e, i)` (Stacks 0448). Then the canonical diagram

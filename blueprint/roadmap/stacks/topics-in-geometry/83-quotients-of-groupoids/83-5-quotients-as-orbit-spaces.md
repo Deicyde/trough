@@ -266,7 +266,7 @@ theorem isIso_quotientSheafToAllPaths (P : PathConstruction j) :
 
 [Tag 048U](https://stacks.math.columbia.edu/tag/048U) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.equivalent_iff_weaklyEquivalent_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricQuotient.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricQuotient.lean#L84). The attribute's comment: “finite_type_equivalence”.
+**`AlgebraicGeometry.Space.equivalent_iff_weaklyEquivalent_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricQuotient.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricQuotient.lean#L84). The attribute's comment: “finite\_type\_equivalence”.
 
 > **Stacks 048U.** For a pre-relation whose source and target are locally of finite type,
 > two points of `U` over a geometric point of `B` are equivalent exactly when they are already
@@ -284,7 +284,7 @@ theorem equivalent_iff_weaklyEquivalent_of_locallyOfFiniteType (j : PreRelation 
       (presheafPreRelation j).WeaklyEquivalent p.val x y
 ```
 
-**`AlgebraicGeometry.Space.orbit_eq_weakOrbit_of_large_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/LargeFields.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/LargeFields.lean#L198). The attribute's comment: “large_field_orbits”.
+**`AlgebraicGeometry.Space.orbit_eq_weakOrbit_of_large_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/LargeFields.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/LargeFields.lean#L198). The attribute's comment: “large\_field\_orbits”.
 
 > **Stacks 048U, part (2).** Over a sufficiently large algebraically closed field the orbit
 > of a point of `U` under a pre-relation is its weak orbit over the same field: no extension of
@@ -300,7 +300,7 @@ theorem orbit_eq_weakOrbit_of_large_field {j : PreRelation R U} (P : PathConstru
     (presheafPreRelation j).orbit p x = (presheafPreRelation j).weakOrbit p x
 ```
 
-**`AlgebraicGeometry.Space.equivalent_iff_weaklyEquivalent_of_large_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/LargeFields.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/LargeFields.lean#L213). The attribute's comment: “large_field_equivalence”.
+**`AlgebraicGeometry.Space.equivalent_iff_weaklyEquivalent_of_large_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/LargeFields.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/LargeFields.lean#L213). The attribute's comment: “large\_field\_equivalence”.
 
 > **Stacks 048U, part (2).** Over a sufficiently large algebraically closed field,
 > equivalence of two points of `U` under a pre-relation is their weak equivalence over the same

@@ -32,7 +32,7 @@ noncomputable def presheaf_pullback_iso_restriction (G : X.Presheaf (Type u)) :
     (Presheaf.pullback (Type u) j).obj G ≅ restrictPresheaf j hj G
 ```
 
-**`OpenImmersionSheaves.sheaf_pullback_iso_restriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/Basic.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/Basic.lean#L107). The attribute's comment: “(2)”. References: EGA 0 (3.7.1), “special case”; SGA 4 III (2.7), “Φ^* ≅ (i^{-1})^s”; SGA 4 III (5.3), “Clause 2, special case”.
+**`OpenImmersionSheaves.sheaf_pullback_iso_restriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/Basic.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/Basic.lean#L107). The attribute's comment: “(2)”. References: EGA 0 (3.7.1), “special case”; SGA 4 III (2.7), “Φ^* ≅ (i^\{-1})^s”; SGA 4 III (5.3), “Clause 2, special case”.
 
 > **Stacks 00A0 (2).** For a sheaf of sets `G` on `X`, the sheaf pullback
 > `j⁻¹ G` (sheafification of `j_p G`) is canonically isomorphic, as a *sheaf on
@@ -115,7 +115,7 @@ theorem sheaf_pullback_pushforward_counit_isIso
 
 [Tag 00A1](https://stacks.math.columbia.edu/tag/00A1) in the Stacks Project.
 
-**`restrictPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/Restriction.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/Restriction.lean#L66). The attribute's comment: “(1)”. References: EGA 0 (3.1.5); SGA 3 I (2.1.1), “restriction G ↦ G_S”; SGA 3 IV (4.3.17), “special case”.
+**`restrictPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/Restriction.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/Restriction.lean#L66). The attribute's comment: “(1)”. References: EGA 0 (3.1.5); SGA 3 I (2.1.1), “restriction G ↦ G\_S”; SGA 3 IV (4.3.17), “special case”.
 
 > Restriction of a presheaf to an open subset: precomposition with the
 > opposite of the open-embedding functor on opens.
@@ -148,7 +148,7 @@ noncomputable def openSubspace
     SheafedSpace CommRingCat
 ```
 
-**`restrictPresheafOfModules`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/Restriction.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/Restriction.lean#L128). The attribute's comment: “(4)”. References: SGA 3 I (3.1.4), “F ↦ F_U for C = Opens(X)”; SGA 4 IV (11.2.2), “special case”; SGA 4 Vbis (1.3.7), “special case”.
+**`restrictPresheafOfModules`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/Restriction.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/Restriction.lean#L128). The attribute's comment: “(4)”. References: SGA 3 I (3.1.4), “F ↦ F\_U for C = Opens(X)”; SGA 4 IV (11.2.2), “special case”; SGA 4 Vbis (1.3.7), “special case”.
 
 > Restriction of a presheaf of `𝒪`-modules to an open subset, via
 > `PresheafOfModules.pushforward` along the open-embedding functor.
@@ -213,7 +213,7 @@ noncomputable def extendByInitialSheaf : TopCat.Sheaf C (sp U) ⥤ TopCat.Sheaf 
 
 [Tag 00A3](https://stacks.math.columbia.edu/tag/00A3) in the Stacks Project.
 
-**`TopCat.Presheaf.extendByInitialAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean#L374). The attribute's comment: “(1) j_{p!} is a left adjoint to the restriction functor j_p”. References: SGA 4 IV (11.3.1), “presheaf, constant ring”.
+**`TopCat.Presheaf.extendByInitialAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean#L374). The attribute's comment: “(1) j\_\{p!} is a left adjoint to the restriction functor j\_p”. References: SGA 4 IV (11.3.1), “presheaf, constant ring”.
 
 > **The extension-by-zero/restriction adjunction, presheaf level.** For `j : U → X` the
 > inclusion of an open subset, `j_{p!}` is a left adjoint of the restriction functor `j_p`.
@@ -223,7 +223,7 @@ noncomputable def extendByInitialAdjunction :
     extendByInitialFunctor (C := C) U ⊣ restrictToOpen U
 ```
 
-**`TopCat.Presheaf.restrictExtendByInitialIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean#L398). The attribute's comment: “(4) on presheaves on U we have j_p j_{p!} = id”.
+**`TopCat.Presheaf.restrictExtendByInitialIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean#L398). The attribute's comment: “(4) on presheaves on U we have j\_p j\_\{p!} = id”.
 
 > **`j_p j_{p!} = id`.** The extension by an initial object of a presheaf on `U` restricts
 > back to that presheaf, naturally in the presheaf.
@@ -233,7 +233,7 @@ noncomputable def restrictExtendByInitialIso :
     extendByInitialFunctor (C := C) U ⋙ restrictToOpen U ≅ 𝟭 (Presheaf C (sp U))
 ```
 
-**`TopCat.Presheaf.extendByInitialSheafAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean#L500). The attribute's comment: “(2) j_! is a left adjoint to restriction on sheaves”. References: SGA 4 III (5.3), “j_! ⊣ j^*, opens site”; SGA 4 IV (11.3.1), “sheaves on a space”; SGA 4 XVII (5.1.1), “topological spaces”.
+**`TopCat.Presheaf.extendByInitialSheafAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean#L500). The attribute's comment: “(2) j\_! is a left adjoint to restriction on sheaves”. References: SGA 4 III (5.3), “j\_! ⊣ j^*, opens site”; SGA 4 IV (11.3.1), “sheaves on a space”; SGA 4 XVII (5.1.1), “topological spaces”.
 
 > **The extension-by-zero/restriction adjunction, sheaf level.** `j_!` is a left adjoint of
 > the restriction functor `j^{-1} : Sh(X) ⥤ Sh(U)`, i.e.
@@ -247,7 +247,7 @@ noncomputable def extendByInitialSheafAdjunction :
     extendByInitialSheaf U ⊣ Opens.sheafRestrict (C := C) U
 ```
 
-**`TopCat.Presheaf.restrictExtendByInitialSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean, line 529](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean#L529). The attribute's comment: “(5) on sheaves on U we have j^{-1} j_! = id”.
+**`TopCat.Presheaf.restrictExtendByInitialSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean, line 529](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean#L529). The attribute's comment: “(5) on sheaves on U we have j^\{-1} j\_! = id”.
 
 > **`j^{-1} j_! = id`.** The extension by an initial object of a sheaf on `U` restricts back
 > to that sheaf, naturally in the sheaf. This is the unit of `j_! ⊣ j^{-1}`, inverted.
@@ -257,7 +257,7 @@ noncomputable def restrictExtendByInitialSheafIso :
     extendByInitialSheaf U ⋙ Opens.sheafRestrict (C := C) U ≅ 𝟭 _
 ```
 
-**`TopCat.Presheaf.isInitialStalkExtendByInitialSheafify`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean, line 612](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean#L612). The attribute's comment: “(3) the stalk of j_!F at x ∉ U is initial (∅ for sheaves of sets)”.
+**`TopCat.Presheaf.isInitialStalkExtendByInitialSheafify`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean, line 612](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean#L612). The attribute's comment: “(3) the stalk of j\_!F at x ∉ U is initial (∅ for sheaves of sets)”.
 
 > The stalk of `j_!F` at a point `x ∉ U` is an initial object.
 > For sheaves of sets the initial object is `∅`, so this is `(j_!F)_x = ∅`; for abelian sheaves
@@ -269,7 +269,7 @@ noncomputable def isInitialStalkExtendByInitialSheafify (F : Presheaf C (sp U)) 
     IsInitial (((extendByInitialSheafify U).obj F).presheaf.stalk x)
 ```
 
-**`TopCat.Presheaf.stalkExtendByInitialSheafifyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean, line 629](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean#L629). The attribute's comment: “(3) the stalk of j_!F at a point of U is the stalk of F”.
+**`TopCat.Presheaf.stalkExtendByInitialSheafifyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean, line 629](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean#L629). The attribute's comment: “(3) the stalk of j\_!F at a point of U is the stalk of F”.
 
 > The stalk of `j_!F` at a point `j(x)` with `x ∈ U` is the stalk of `F` at `x`.
 
@@ -278,7 +278,7 @@ noncomputable def stalkExtendByInitialSheafifyIso (F : Presheaf C (sp U)) (x : s
     ((extendByInitialSheafify U).obj F).presheaf.stalk (U.inclusion' x) ≅ F.stalk x
 ```
 
-**`TopCat.Presheaf.isEmpty_stalk_extendByInitialSheafify`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean, line 643](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean#L643). The attribute's comment: “(3) for sheaves of sets: (j_!F)_x = ∅ for x ∉ U”. References: SGA 4 III (1.9.2), “more general”.
+**`TopCat.Presheaf.isEmpty_stalk_extendByInitialSheafify`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean, line 643](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean#L643). The attribute's comment: “(3) for sheaves of sets: (j\_!F)\_x = ∅ for x ∉ U”. References: SGA 4 III (1.9.2), “more general”.
 
 > For a presheaf of sets `F` on `U`, the stalk of `j_!F` at a point outside `U` is empty:
 > `(j_!F)_x = ∅`.
@@ -363,7 +363,7 @@ noncomputable def restrictExtendByInitialIso :
     extendByInitialFunctor (C := C) U ⋙ restrictToOpen U ≅ 𝟭 (Presheaf C (sp U))
 ```
 
-**`TopCat.Presheaf.extendByInitialSheafAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean#L500). The attribute's comment: “(2)”. References: SGA 4 III (5.3), “j_! ⊣ j^*, opens site”; SGA 4 IV (11.3.1), “sheaves on a space”; SGA 4 XVII (5.1.1), “topological spaces”.
+**`TopCat.Presheaf.extendByInitialSheafAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/ExtensionByInitial.lean#L500). The attribute's comment: “(2)”. References: SGA 4 III (5.3), “j\_! ⊣ j^*, opens site”; SGA 4 IV (11.3.1), “sheaves on a space”; SGA 4 XVII (5.1.1), “topological spaces”.
 
 > **The extension-by-zero/restriction adjunction, sheaf level.** `j_!` is a left adjoint of
 > the restriction functor `j^{-1} : Sh(X) ⥤ Sh(U)`, i.e.
@@ -432,7 +432,7 @@ theorem statement_2_jShriek_adjoint :
       Nonempty ((((jShriek00A6 S X U) 𝓕).1 ⟶ 𝓖.1) ≃ (𝓕.1 ⟶ ((jInverseSheaf S X U) 𝓖).1))
 ```
 
-**`statement_3_stalk_in_U`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/SheafOfAlgStruct.lean, line 491](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/SheafOfAlgStruct.lean#L491). The attribute's comment: “(3)”. References: SGA 4 III (1.9.2), “stalk at y∈Y ≅ H_y”.
+**`statement_3_stalk_in_U`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/AlgebraicStructure/SheafOfAlgStruct.lean, line 491](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/AlgebraicStructure/SheafOfAlgStruct.lean#L491). The attribute's comment: “(3)”. References: SGA 4 III (1.9.2), “stalk at y∈Y ≅ H\_y”.
 
 > For `x ∈ U`, the stalk `(j_!𝓕)_x` is isomorphic to the stalk `𝓕_x`.
 
@@ -612,7 +612,7 @@ theorem full_and_faithful_and_essImage_jShriek :
 
 [Tag 00AC](https://stacks.math.columbia.edu/tag/00AC) in the Stacks Project.
 
-**`TopCat.Presheaf.isEmpty_isTerminal_extendByInitialSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/NotLeftExact.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/NotLeftExact.lean#L68). The attribute's comment: “j_! does not transform a final object of Sh(U) into a final object of Sh(X)”.
+**`TopCat.Presheaf.isEmpty_isTerminal_extendByInitialSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/NotLeftExact.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/NotLeftExact.lean#L68). The attribute's comment: “j\_! does not transform a final object of Sh(U) into a final object of Sh(X)”.
 
 > **Stacks 00AC, first half.** For `U ≠ X` the sheaf `j_!F` is not a final object of
 > `Sh(X, Type)`, whatever the sheaf `F` on `U` is. In particular `j_!` does not transform a final
@@ -628,7 +628,7 @@ theorem isEmpty_isTerminal_extendByInitialSheaf (hU : U ≠ ⊤)
     IsEmpty (IsTerminal ((extendByInitialSheaf U).obj F))
 ```
 
-**`TopCat.Presheaf.not_preservesFiniteLimits_extendByInitialSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/NotLeftExact.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/NotLeftExact.lean#L86). The attribute's comment: “j_! is not left exact as a functor between the categories of sheaves of sets”.
+**`TopCat.Presheaf.not_preservesFiniteLimits_extendByInitialSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/OpenImmersion/NotLeftExact.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/OpenImmersion/NotLeftExact.lean#L86). The attribute's comment: “j\_! is not left exact as a functor between the categories of sheaves of sets”.
 
 > **Stacks 00AC.** For `U ≠ X` the functor `j_! : Sh(U, Type) ⥤ Sh(X, Type)` does not preserve
 > finite limits, i.e. it is not left exact.

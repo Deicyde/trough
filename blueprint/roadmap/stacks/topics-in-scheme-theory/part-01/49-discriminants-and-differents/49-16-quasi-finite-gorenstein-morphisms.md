@@ -228,7 +228,7 @@ theorem isIso_different_baseChange_of_isGorenstein {R R' : Scheme.{u}}
 
 [Tag 0C18](https://stacks.math.columbia.edu/tag/0C18) in the Stacks Project.
 
-**`Stacks.Duality.existsUnique_invertibleSheafIso_upperShriekDualSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean#L88). The attribute's comment: “if f is finite: O_X(R) = omega_{X/Y} comes from tau_{X/Y}, dual to Trace_f”.
+**`Stacks.Duality.existsUnique_invertibleSheafIso_upperShriekDualSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean#L88). The attribute's comment: “if f is finite: O\_X(R) = omega\_\{X/Y} comes from tau\_\{X/Y}, dual to Trace\_f”.
 
 > **Stacks Project, Tag 0C18, the finite case.** Let `f : X ⟶ Y` be a finite Gorenstein
 > morphism of schemes separated and of finite type over a Noetherian base, with `X` Cohen–Macaulay
@@ -257,7 +257,7 @@ theorem existsUnique_invertibleSheafIso_upperShriekDualSection [IsFinite f.left]
         upperShriekDualSection f (pushforwardTrace f.left) j
 ```
 
-**`Stacks.Duality.nonempty_homology_upperShriek_iso_pullback_tensor_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean#L212). The attribute's comment: “omega_X = f^* omega_Y (x) omega_{X/Y} = f^* omega_Y (x) O_X(R)”.
+**`Stacks.Duality.nonempty_homology_upperShriek_iso_pullback_tensor_of_isGorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean#L212). The attribute's comment: “omega\_X = f^* omega\_Y (x) omega\_\{X/Y} = f^* omega\_Y (x) O\_X(R)”.
 
 > **Stacks Project, Tag 0C18.** Let `S` be Noetherian, `f : X ⟶ Y` a quasi-finite Gorenstein
 > morphism of `FTS S` étale at the generic points of `X`, with `X` Cohen–Macaulay, and let
@@ -296,7 +296,7 @@ theorem nonempty_homology_upperShriek_iso_pullback_tensor_of_isGorenstein
           (Stacks.Divisors.invertibleSheaf' (differentIdealSheaf ω τ)))
 ```
 
-**`Stacks.Duality.upperShriek_quasiFinite_isGorenstein_dualizing_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean#L276). The attribute's comment: “the whole remark: omega_X = f^* omega_Y (x) omega_{X/Y} = f^* omega_Y (x) O_X(R), and for f finite O_X(R) = omega_{X/Y} comes from tau_{X/Y}, dual to Trace_f”.
+**`Stacks.Duality.upperShriek_quasiFinite_isGorenstein_dualizing_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekQuasiFiniteGorenstein.lean#L276). The attribute's comment: “the whole remark: omega\_X = f^* omega\_Y (x) omega\_\{X/Y} = f^* omega\_Y (x) O\_X(R), and for f finite O\_X(R) = omega\_\{X/Y} comes from tau\_\{X/Y}, dual to Trace\_f”.
 
 > **Stacks Project, Tag 0C18**, the whole remark. Let `S` be Noetherian and `f : X ⟶ Y` a
 > quasi-finite Gorenstein morphism of schemes separated and of finite type over `S`, with `X`

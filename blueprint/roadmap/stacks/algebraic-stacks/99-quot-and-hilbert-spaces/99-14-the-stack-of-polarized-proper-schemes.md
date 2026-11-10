@@ -154,7 +154,7 @@ theorem polarized_isStackInGroupoids :
 
 [Tag 0E94](https://stacks.math.columbia.edu/tag/0E94) in the Stacks Project.
 
-**`AlgebraicGeometry.PolarizedOverSpace.polarizedBaseChange_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedOverSpaceEquivalence.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedOverSpaceEquivalence.lean#L68). The attribute's comment: “base change is an equivalence of the polarized proper flat finitely presented spaces over T with Mor_{Cat/Sch_fppf}(S_T, Polarized)”.
+**`AlgebraicGeometry.PolarizedOverSpace.polarizedBaseChange_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedOverSpaceEquivalence.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedOverSpaceEquivalence.lean#L68). The attribute's comment: “base change is an equivalence of the polarized proper flat finitely presented spaces over T with Mor\_\{Cat/Sch\_fppf}(S\_T, Polarized)”.
 
 > Let `T` be an algebraic space over `Spec(ℤ)` and `𝒮_T` its algebraic stack. Base change is an
 > equivalence from the category of pairs `(X ⟶ T, L)`, where `X ⟶ T` is a proper, flat and finitely
@@ -313,7 +313,7 @@ theorem isEquivalence_polarizedPushoutRestriction {T T' S S' : B.Schemes} (i : T
 
 [Tag 0D4S](https://stacks.math.columbia.edu/tag/0D4S) in the Stacks Project.
 
-**`AlgebraicGeometry.PolarizedDeformation.finiteDimensional_tangentFunctor_infinitesimalAutomorphismFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedDeformationFiniteDimensional.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedDeformationFiniteDimensional.lean#L64). The attribute's comment: “(2): for a polarized proper scheme x over any field k, the functors T_x and Inf_x of Stacks 07Y9 exist (𝒫olarized satisfies RS* by 0D44) and T_x(k) and Inf_x(k) are finite dimensional; both finiteness statements hold for every k-linear functor carrying the identifications of 07Y9”.
+**`AlgebraicGeometry.PolarizedDeformation.finiteDimensional_tangentFunctor_infinitesimalAutomorphismFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedDeformationFiniteDimensional.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedDeformationFiniteDimensional.lean#L64). The attribute's comment: “(2): for a polarized proper scheme x over any field k, the functors T\_x and Inf\_x of Stacks 07Y9 exist (𝒫olarized satisfies RS* by 0D44) and T\_x(k) and Inf\_x(k) are finite dimensional; both finiteness statements hold for every k-linear functor carrying the identifications of 07Y9”.
 
 > **Stacks Project, Tag 0D4S, part (2).** Let `k` be a field and let `x = (X → Spec k, ℒ)` be an
 > object of `𝒫olarized` over `Spec k`. Then the tangent functor `T_x` and the functor of
@@ -343,7 +343,7 @@ theorem finiteDimensional_tangentFunctor_infinitesimalAutomorphismFunctor {k : T
         FiniteDimensional k (I.functor.obj ((fgSiteModule B hk).obj (FGModuleCat.of k k))))
 ```
 
-**`AlgebraicGeometry.PolarizedDeformation.isFiniteDimensionalDeformationCategory_predeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedDeformationFiniteDimensional.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedDeformationFiniteDimensional.lean#L98). The attribute's comment: “(1): for a field k of finite type over the base and a polarized proper scheme x over k, the deformation category F_{X,k,x} has finite dimensional tangent space T F_{X,k,x} and finite dimensional Inf(F_{X,k,x}); the base is any terminal scheme of the site, e.g. Spec Z”.
+**`AlgebraicGeometry.PolarizedDeformation.isFiniteDimensionalDeformationCategory_predeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PolarizedDeformationFiniteDimensional.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PolarizedDeformationFiniteDimensional.lean#L98). The attribute's comment: “(1): for a field k of finite type over the base and a polarized proper scheme x over k, the deformation category F\_\{X,k,x} has finite dimensional tangent space T F\_\{X,k,x} and finite dimensional Inf(F\_\{X,k,x}); the base is any terminal scheme of the site, e.g. Spec Z”.
 
 > **Stacks Project, Tag 0D4S, part (1).** Let `k` be a field of finite type over the base (for
 > the base `Spec ℤ`: of finite type over `ℤ`), presented through `Spec k ⟶ Spec Λ ⟶ S`, and let

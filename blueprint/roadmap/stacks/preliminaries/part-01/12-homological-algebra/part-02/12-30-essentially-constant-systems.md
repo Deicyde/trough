@@ -86,7 +86,7 @@ noncomputable def colimitBiprodIso
     colimit (F ⊞ G) ≅ colimit F ⊞ colimit G
 ```
 
-**`colimitBiprodIso_of_hasColimit_biprod`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean#L226). The attribute's comment: “iso_from_biprod”.
+**`colimitBiprodIso_of_hasColimit_biprod`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/EssentiallyConstant/Biproducts.lean#L226). The attribute's comment: “iso\_from\_biprod”.
 
 > In a Karoubian additive category, if `F ⊞ G` has a colimit, then it is canonically isomorphic
 > to the biproduct of the colimits of `F` and `G`.

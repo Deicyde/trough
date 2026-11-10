@@ -50,7 +50,7 @@ public noncomputable def cohomologyOnOpenIsoRestriction {X : TopCat.{u}}
 
 [Tag 0BKJ](https://stacks.math.columbia.edu/tag/0BKJ) in the Stacks Project.
 
-**`Stacks.Cohomology.CohomologyPresheaf.cohomologyPresheafEvaluationIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyPresheafOnOpenSubspace.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyPresheafOnOpenSubspace.lean#L41). The attribute's comment: “values on opens: the value of the presheaf on U is H^q(U, K|_U)”.
+**`Stacks.Cohomology.CohomologyPresheaf.cohomologyPresheafEvaluationIsoRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyPresheafOnOpenSubspace.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/CohomologyPresheafOnOpenSubspace.lean#L41). The attribute's comment: “values on opens: the value of the presheaf on U is H^q(U, K|\_U)”.
 
 > **Stacks Project, Tag 0BKJ, the value on an open as cohomology of the open subspace.** The
 > value on `U` of the presheaf `U ↦ H^q(U, K)` is `H^q(U, K|_U)`, the degree-`q` cohomology of the

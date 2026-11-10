@@ -561,7 +561,7 @@ theorem bijective_cotangentBaseChange [Module.Flat R S] :
 
 [Tag 062S](https://stacks.math.columbia.edu/tag/062S) in the Stacks Project.
 
-**`Stacks.Immersion.conormalSequenceRightMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequence.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequence.lean#L92). The attribute's comment: “the second arrow 𝒞_{Z/X} ⟶ 𝒞_{Z/Y}”.
+**`Stacks.Immersion.conormalSequenceRightMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequence.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequence.lean#L92). The attribute's comment: “the second arrow 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y}”.
 
 > **The right-hand map `𝒞_{Z/X} ⟶ 𝒞_{Z/Y}` of the conormal sequence of
 > [Stacks Project, Tag 062S].** It is the canonical map of [Stacks Project, Tag 01R4] attached to
@@ -574,7 +574,7 @@ def conormalSequenceRightMap (i : Z ⟶ Y) (j : Y ⟶ X) [IsImmersion i] [IsImme
       conormalSheaf i.liftCoborder.toLRSHom.toShHom
 ```
 
-**`Stacks.Immersion.epi_conormalSequenceRightMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequence.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequence.lean#L109). The attribute's comment: “exactness at the right term: the canonical map 𝒞_{Z/X} ⟶ 𝒞_{Z/Y} is epi”. References: EGA IV (16.2.7), “surjectivity at right”.
+**`Stacks.Immersion.epi_conormalSequenceRightMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequence.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequence.lean#L109). The attribute's comment: “exactness at the right term: the canonical map 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} is epi”. References: EGA IV (16.2.7), “surjectivity at right”.
 
 > **[Stacks Project, Tag 062S]: the conormal sequence is exact at `𝒞_{Z/Y}`.** For immersions
 > `Z ⟶ Y ⟶ X` the canonical map `𝒞_{Z/X} ⟶ 𝒞_{Z/Y}` is an epimorphism, which is the `⟶ 0` at the
@@ -589,7 +589,7 @@ theorem epi_conormalSequenceRightMap (i : Z ⟶ Y) (j : Y ⟶ X) [IsImmersion i]
     Epi (conormalSequenceRightMap i j)
 ```
 
-**`Stacks.Immersion.conormalSequence_comp_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean#L198). The attribute's comment: “the two canonical maps form a complex: the composite i^* 𝒞_{Y/X} ⟶ 𝒞_{Z/X} ⟶ 𝒞_{Z/Y} is zero, for any immersions i : Z ⟶ Y and j : Y ⟶ X; the left-hand map is Stacks.Immersion.conormalLeftMap, equal to Stacks.AlgebraicGeometry.conormalSequenceLeftMap by Stacks.AlgebraicGeometry.conormalSequenceLeftMap_eq”.
+**`Stacks.Immersion.conormalSequence_comp_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean#L198). The attribute's comment: “the two canonical maps form a complex: the composite i^* 𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} is zero, for any immersions i : Z ⟶ Y and j : Y ⟶ X; the left-hand map is Stacks.Immersion.conormalLeftMap, equal to Stacks.AlgebraicGeometry.conormalSequenceLeftMap by Stacks.AlgebraicGeometry.conormalSequenceLeftMap\_eq”.
 
 > **[Stacks Project, Tag 062S]: the two canonical maps of the conormal sequence compose to
 > zero.** For immersions `Z ⟶ Y ⟶ X` the composite
@@ -616,7 +616,7 @@ def conormalSequenceShortComplex (i : Z ⟶ Y) (j : Y ⟶ X) [IsImmersion i] [Is
     ShortComplex (SheafOfModules.{u} (structureSheafRing Z.toLocallyRingedSpace.toRingedSpace))
 ```
 
-**`Stacks.Immersion.conormalSequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean#L298). The attribute's comment: “exactness in the middle: for any immersions i : Z ⟶ Y and j : Y ⟶ X the image of i^* 𝒞_{Y/X} ⟶ 𝒞_{Z/X} is the kernel of 𝒞_{Z/X} ⟶ 𝒞_{Z/Y} (equality, as ShortComplex.Exact of the complex built from the two canonical maps of Tag 01R4); no hypothesis beyond the two immersions”.
+**`Stacks.Immersion.conormalSequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean#L298). The attribute's comment: “exactness in the middle: for any immersions i : Z ⟶ Y and j : Y ⟶ X the image of i^* 𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X} is the kernel of 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} (equality, as ShortComplex.Exact of the complex built from the two canonical maps of Tag 01R4); no hypothesis beyond the two immersions”.
 
 > **[Stacks Project, Tag 062S]: the conormal sequence is exact at `𝒞_{Z/X}`.** For immersions
 > `Z ⟶ Y ⟶ X` the kernel of the canonical map `𝒞_{Z/X} ⟶ 𝒞_{Z/Y}` is the image of the canonical
@@ -633,7 +633,7 @@ theorem conormalSequence_exact (i : Z ⟶ Y) (j : Y ⟶ X) [IsImmersion i] [IsIm
     (conormalSequenceShortComplex i j).Exact
 ```
 
-**`Stacks.AlgebraicGeometry.conormalSequenceLeftMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/SplitSequence.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/SplitSequence.lean#L43). The attribute's comment: “the first arrow i^* 𝒞_{Y/X} ⟶ 𝒞_{Z/X}”.
+**`Stacks.AlgebraicGeometry.conormalSequenceLeftMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/SplitSequence.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/SplitSequence.lean#L43). The attribute's comment: “the first arrow i^* 𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X}”.
 
 > **The left-hand map `i^* 𝒞_{Y/X} ⟶ 𝒞_{Z/X}` of the conormal sequence of
 > [Stacks Project, Tag 062S].** It is the canonical map of [Stacks Project, Tag 01R4] attached to

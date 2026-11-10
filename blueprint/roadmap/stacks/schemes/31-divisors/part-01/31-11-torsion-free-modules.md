@@ -85,7 +85,7 @@ theorem isTorsionFree_iff_forall_isAffineOpen
 
 [Tag 0AXT](https://stacks.math.columbia.edu/tag/0AXT) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.TorsionQuasicoherent.torsionSubmodule_isQuasicoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TorsionQuasicoherent/Basic.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TorsionQuasicoherent/Basic.lean#L316). The attribute's comment: “torsion_subsheaf_quasi_coherent”. References: EGA I (7.4.1), “quasi-coherence of T”.
+**`Stacks.AlgebraicGeometry.TorsionQuasicoherent.torsionSubmodule_isQuasicoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TorsionQuasicoherent/Basic.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TorsionQuasicoherent/Basic.lean#L316). The attribute's comment: “torsion\_subsheaf\_quasi\_coherent”. References: EGA I (7.4.1), “quasi-coherence of T”.
 
 > **The first assertion of [Stacks, Tag 0AXT].** The torsion submodule sheaf of a
 > quasi-coherent module on an integral scheme is quasi-coherent.
@@ -95,7 +95,7 @@ instance torsionSubmodule_isQuasicoherent :
     (torsionSubmodule F).toSheafOfModules.IsQuasicoherent
 ```
 
-**`Stacks.AlgebraicGeometry.TorsionQuasicoherent.isTorsionFree_torsionQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TorsionQuasicoherent/Quotient.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TorsionQuasicoherent/Quotient.lean#L165). The attribute's comment: “the quotient F/F_tors is torsion free”. References: EGA I (7.4.1), “special case”.
+**`Stacks.AlgebraicGeometry.TorsionQuasicoherent.isTorsionFree_torsionQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TorsionQuasicoherent/Quotient.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TorsionQuasicoherent/Quotient.lean#L165). The attribute's comment: “the quotient F/F\_tors is torsion free”. References: EGA I (7.4.1), “special case”.
 
 > **The second assertion of [Stacks, Tag 0AXT].** The quotient of a quasi-coherent module on
 > an integral scheme by its torsion subsheaf is torsion free.

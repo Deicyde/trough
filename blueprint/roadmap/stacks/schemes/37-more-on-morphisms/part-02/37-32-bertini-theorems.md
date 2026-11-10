@@ -716,7 +716,7 @@ theorem isDominant_universalFamily : IsDominant D.universalFamily
 
 [Tag 0G4G](https://stacks.math.columbia.edu/tag/0G4G) in the Stacks Project.
 
-**`Stacks.Bertini.FamilyDivisors.exists_smooth_irreducibleSpace_specializedDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniSmoothIrreducibleMember.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniSmoothIrreducibleMember.lean#L425). The attribute's comment: “for an arbitrary finite dimensional linear system with phi_(L, psi) a closed immersion: the hyperplane section is H_v over k itself”.
+**`Stacks.Bertini.FamilyDivisors.exists_smooth_irreducibleSpace_specializedDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniSmoothIrreducibleMember.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Fibres/BertiniSmoothIrreducibleMember.lean#L425). The attribute's comment: “for an arbitrary finite dimensional linear system with phi\_(L, psi) a closed immersion: the hyperplane section is H\_v over k itself”.
 
 > **[Stacks, Tag 0G4G] for an arbitrary linear system.** Let `k` be an algebraically closed
 > field and let `X ⊂ 𝐏^n_k` be smooth and irreducible of dimension `≥ 2`. Then there is a

@@ -238,7 +238,7 @@ theorem isProper_tfae_of_isQuasiSeparated_of_codimensionZero
 
 [Tag 0H1Y](https://stacks.math.columbia.edu/tag/0H1Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyClosed_tfae_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianUniversallyClosed.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianUniversallyClosed.lean#L417). The attribute's comment: “for f decent (e.g. quasi-separated); without decency the statement is false, see not_forall_universallyClosed_tfae_of_isLocallyNoetherian”.
+**`AlgebraicGeometry.Space.universallyClosed_tfae_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NoetherianUniversallyClosed.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NoetherianUniversallyClosed.lean#L417). The attribute's comment: “for f decent (e.g. quasi-separated); without decency the statement is false, see not\_forall\_universallyClosed\_tfae\_of\_isLocallyNoetherian”.
 
 > **Stacks 0H1Y.** Let `f : X ⟶ Y` be a decent morphism of finite type of algebraic spaces
 > over `S`, with `Y` locally Noetherian; for instance `f` quasi-separated. The following are

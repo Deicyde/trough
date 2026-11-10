@@ -133,7 +133,7 @@ theorem differential_uniformizer_basis
 
 [Tag 0C1F](https://stacks.math.columbia.edu/tag/0C1F) in the Stacks Project.
 
-**`AlgebraicGeometry.two_mul_genus_sub_two_eq_degreeOver_mul_add_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/RiemannHurwitzFormula.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/RiemannHurwitzFormula.lean#L401). The attribute's comment: “the formula 2g_X - 2 = (2g_Y - 2) deg(f) + Σ d_x [κ(x) : k] over the closed points x; the different is the Kähler different, which is the different of Tag 0BW4 by Tag 0BWG”.
+**`AlgebraicGeometry.two_mul_genus_sub_two_eq_degreeOver_mul_add_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/RiemannHurwitzFormula.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/RiemannHurwitzFormula.lean#L401). The attribute's comment: “the formula 2g\_X - 2 = (2g\_Y - 2) deg(f) + Σ d\_x [κ(x) : k] over the closed points x; the different is the Kähler different, which is the different of Tag 0BW4 by Tag 0BWG”.
 
 > **Stacks Project, Tag 0C1F, the formula.** Under the assumptions of [Stacks, Tag 0C1D],
 > `2g_X - 2 = (2g_Y - 2) deg(f) + ∑_x d_x [κ(x) : k]`, the sum over the closed points `x` of `X`,

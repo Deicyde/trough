@@ -110,7 +110,7 @@ def localCohomologyIsoDerivedSectionsWithSupport :
 
 [Tag 0DWR](https://stacks.math.columbia.edu/tag/0DWR) in the Stacks Project.
 
-**`Stacks.LocalCohomology.nonempty_complementSheafCohomology_iso_localCohomologyModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/Generalities/ComplementCohomologyModule.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/Generalities/ComplementCohomologyModule.lean#L99). The attribute's comment: “higher_cohomology_comparison”.
+**`Stacks.LocalCohomology.nonempty_complementSheafCohomology_iso_localCohomologyModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/Generalities/ComplementCohomologyModule.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/Generalities/ComplementCohomologyModule.lean#L99). The attribute's comment: “higher\_cohomology\_comparison”.
 
 > **[Stacks, Tag 0DWR] (2), the isomorphisms above degree zero.** Let `R` be a ring and let
 > `I ⊆ R` be a finitely generated ideal. Set `X = Spec R`, `Z = V(I)` and `U = X ∖ Z`. Let `F` be
@@ -147,7 +147,7 @@ theorem exists_module_iso_restrict_tilde
           (complementZeroLocus R I).ι)
 ```
 
-**`Stacks.LocalCohomology.exact_lowDegreeSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/CechSectionsComparison.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/LowDegree/CechSectionsComparison.lean#L373). The attribute's comment: “low_degree_sequence”. References: EGA III (1.4.3), “(1.4.3.2), special case”; SGA 2 II (Corollary4), “(4.2)”; SGA 4 V (6.5), “(6.5.3), special case”.
+**`Stacks.LocalCohomology.exact_lowDegreeSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/CechSectionsComparison.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/LowDegree/CechSectionsComparison.lean#L373). The attribute's comment: “low\_degree\_sequence”. References: EGA III (1.4.3), “(1.4.3.2), special case”; SGA 2 II (Corollary4), “(4.2)”; SGA 4 V (6.5), “(6.5.3), special case”.
 
 > **Stacks 0BK0, the low-degree sequence.** Let `I` be a finitely generated ideal of a
 > commutative ring `A`, let `U = Spec A \ V(I)`, let `M` be an `A`-module and let `F` be a sheaf of
@@ -179,7 +179,7 @@ theorem exact_lowDegreeSequence (M : ModuleCat.{max u v} A)
       Function.Surjective (localizationBoundary (localizationTriangleData.{v} A I hI) M F e)
 ```
 
-**`Stacks.LocalCohomology.iso_restrict_tilde_globalSectionsModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean#L150). The attribute's comment: “global_sections_choice”.
+**`Stacks.LocalCohomology.iso_restrict_tilde_globalSectionsModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean#L150). The attribute's comment: “global\_sections\_choice”.
 
 > A quasi-coherent module on the complement of `V(I)` is the restriction of the associated sheaf
 > of its global-sections `R`-module.
@@ -193,7 +193,7 @@ theorem iso_restrict_tilde_globalSectionsModule
         (complementZeroLocus R I).ι)
 ```
 
-**`Stacks.LocalCohomology.isZero_localCohomology_zero_globalSectionsModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean#L161). The attribute's comment: “global_sections_choice”.
+**`Stacks.LocalCohomology.isZero_localCohomology_zero_globalSectionsModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean#L161). The attribute's comment: “global\_sections\_choice”.
 
 > The degree-zero local cohomology of the global-sections module vanishes.
 
@@ -203,7 +203,7 @@ theorem isZero_localCohomology_zero_globalSectionsModule
     IsZero (localCohomologyModule R I hI (complementGlobalSections R I F) 0)
 ```
 
-**`Stacks.LocalCohomology.isZero_localCohomology_one_globalSectionsModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean#L181). The attribute's comment: “global_sections_choice”.
+**`Stacks.LocalCohomology.isZero_localCohomology_one_globalSectionsModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean#L181). The attribute's comment: “global\_sections\_choice”.
 
 > The degree-one local cohomology of the global-sections module vanishes.
 

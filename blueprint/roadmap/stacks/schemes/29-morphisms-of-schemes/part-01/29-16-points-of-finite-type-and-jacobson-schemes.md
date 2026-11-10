@@ -62,7 +62,7 @@ theorem finiteType_iff_residueField_comp_finiteType
 
 [Tag 02J1](https://stacks.math.columbia.edu/tag/02J1) in the Stacks Project.
 
-**`AlgebraicGeometry.IsFiniteTypePoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteTypePoint.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteTypePoint.lean#L108). The attribute's comment: “finite_type_point”.
+**`AlgebraicGeometry.IsFiniteTypePoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FiniteTypePoint.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FiniteTypePoint.lean#L108). The attribute's comment: “finite\_type\_point”.
 
 > A point `s` of a scheme `S` is a finite type point if the canonical morphism
 > `Spec(κ(s)) ⟶ S` is of finite type.
@@ -71,7 +71,7 @@ theorem finiteType_iff_residueField_comp_finiteType
 public abbrev IsFiniteTypePoint {S : AlgebraicGeometry.Scheme.{u}} (s : S) : Prop
 ```
 
-**`AlgebraicGeometry.Scheme.finiteTypePoints`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/JacobsonPoints/Basic.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/JacobsonPoints/Basic.lean#L71). The attribute's comment: “finite_type_points_set”.
+**`AlgebraicGeometry.Scheme.finiteTypePoints`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/JacobsonPoints/Basic.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/JacobsonPoints/Basic.lean#L71). The attribute's comment: “finite\_type\_points\_set”.
 
 > The set of finite type points of a scheme.
 
@@ -196,7 +196,7 @@ Declarations registered for the tag:
 
 [Tag 02J6](https://stacks.math.columbia.edu/tag/02J6) in the Stacks Project.
 
-**`AlgebraicGeometry.jacobsonSpace_of_locallyOfFiniteType_over_integers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/JacobsonPoints/Jacobson.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/JacobsonPoints/Jacobson.lean#L67). The attribute's comment: “over_integers”. References: EGA IV (10.4.7), “base = Spec Z”; EGA IV (10.4.6), “over Z”; EGA IV (10.4.9), “over Z”; EGA IV (10.7.1), “1° over Z”.
+**`AlgebraicGeometry.jacobsonSpace_of_locallyOfFiniteType_over_integers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/JacobsonPoints/Jacobson.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/JacobsonPoints/Jacobson.lean#L67). The attribute's comment: “over\_integers”. References: EGA IV (10.4.7), “base = Spec Z”; EGA IV (10.4.6), “over Z”; EGA IV (10.4.9), “over Z”; EGA IV (10.7.1), “1° over Z”.
 
 > A scheme locally of finite type over the integers is Jacobson.
 
@@ -205,7 +205,7 @@ theorem jacobsonSpace_of_locallyOfFiniteType_over_integers {X : Scheme.{u}}
     (f : X ⟶ ⊤_ Scheme.{u}) [LocallyOfFiniteType f] : JacobsonSpace X
 ```
 
-**`AlgebraicGeometry.jacobsonSpace_of_locallyOfFiniteType_over_oneDimensionalNoetherianDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/JacobsonPoints/Jacobson.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/JacobsonPoints/Jacobson.lean#L81). The attribute's comment: “over_dimension_one_domain”. References: EGA IV (10.4.7), “1-dim Noeth domain base”; EGA IV (10.7.1), “special case”.
+**`AlgebraicGeometry.jacobsonSpace_of_locallyOfFiniteType_over_oneDimensionalNoetherianDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/JacobsonPoints/Jacobson.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/JacobsonPoints/Jacobson.lean#L81). The attribute's comment: “over\_dimension\_one\_domain”. References: EGA IV (10.4.7), “1-dim Noeth domain base”; EGA IV (10.7.1), “special case”.
 
 > A scheme locally of finite type over a one-dimensional Noetherian domain with infinitely
 > many prime ideals is Jacobson.
@@ -243,7 +243,7 @@ theorem jacobsonSpace_of_locallyOfFiniteType_over_puncturedSpectrum
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.LocallyOfFiniteType.jacobsonSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.LocallyOfFiniteType.jacobsonSpace#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/JacobsonPoints/Jacobson.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/JacobsonPoints/Jacobson.lean#L53) (StacksFrontier): “over_field”. References: EGA IV (10.4.7); EGA IV (10.4.9), “more general”; EGA IV (10.6.1), “(i), condition 1° for X”; EGA IV (10.7.1), “1°, partial”; SGA 3 VIB (1.3.0), “Jacobson property of G”; SGA 4 VIII (3.13), “more general”.
+- [`AlgebraicGeometry.LocallyOfFiniteType.jacobsonSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.LocallyOfFiniteType.jacobsonSpace#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/JacobsonPoints/Jacobson.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/JacobsonPoints/Jacobson.lean#L53) (StacksFrontier): “over\_field”. References: EGA IV (10.4.7); EGA IV (10.4.9), “more general”; EGA IV (10.6.1), “(i), condition 1° for X”; EGA IV (10.7.1), “1°, partial”; SGA 3 VIB (1.3.0), “Jacobson property of G”; SGA 4 VIII (3.13), “more general”.
 
 ## Depends on
 

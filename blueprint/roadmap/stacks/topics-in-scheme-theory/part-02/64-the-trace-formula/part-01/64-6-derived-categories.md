@@ -26,7 +26,7 @@ Declarations registered for the tag:
 
 [Tag 03T6](https://stacks.math.columbia.edu/tag/03T6) in the Stacks Project.
 
-**`CategoryTheory.HomotopyCategory.PlusInjective.isEquivalence_toDerivedPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/BoundedBelowInjectiveEquivalence.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/BoundedBelowInjectiveEquivalence.lean#L120). The attribute's comment: “injective_equivalence”. References: SGA 4½ Etat 0 (3.2.3), “(3)”; SGA 4½ Etat 0 (3.1.4).
+**`CategoryTheory.HomotopyCategory.PlusInjective.isEquivalence_toDerivedPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/BoundedBelowInjectiveEquivalence.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/BoundedBelowInjectiveEquivalence.lean#L120). The attribute's comment: “injective\_equivalence”. References: SGA 4½ Etat 0 (3.2.3), “(3)”; SGA 4½ Etat 0 (3.1.4).
 
 > **Stacks 03T6, part (3).** If `A` has enough injectives and `I ⊆ A` is the additive
 > subcategory of injectives, then `D⁺(A) ≅ K⁺(I)`: the canonical functor from the bounded below
@@ -38,7 +38,7 @@ theorem isEquivalence_toDerivedPlus [EnoughInjectives A] :
     (toDerivedPlus A).IsEquivalence
 ```
 
-**`CochainComplex.Qh_map_bijective_of_projective_of_minus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/MorphismsFromBoundedAboveProjectives.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/MorphismsFromBoundedAboveProjectives.lean#L49). The attribute's comment: “projective_hom”. References: SGA 4½ Etat 0 (3.2.3), “(4) proj. analogue”.
+**`CochainComplex.Qh_map_bijective_of_projective_of_minus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/MorphismsFromBoundedAboveProjectives.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/MorphismsFromBoundedAboveProjectives.lean#L49). The attribute's comment: “projective\_hom”. References: SGA 4½ Etat 0 (3.2.3), “(4) proj. analogue”.
 
 > **Stacks 03T6, part (2).** A bounded above complex of projective objects computes
 > morphisms from it in the derived category already in the homotopy category.
@@ -51,7 +51,7 @@ theorem Qh_map_bijective_of_projective_of_minus [HasDerivedCategory.{w} A]
       ((HomotopyCategory.quotient A (ComplexShape.up ℤ)).obj P ⟶ K) → _)
 ```
 
-**`CochainComplex.Qh_map_bijective_of_injective_of_plus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/MorphismsIntoBoundedBelowInjectives.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/MorphismsIntoBoundedBelowInjectives.lean#L49). The attribute's comment: “injective_hom”.
+**`CochainComplex.Qh_map_bijective_of_injective_of_plus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/MorphismsIntoBoundedBelowInjectives.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/MorphismsIntoBoundedBelowInjectives.lean#L49). The attribute's comment: “injective\_hom”.
 
 > **Stacks 03T6, part (1).** A bounded below complex of injective objects computes
 > morphisms into it in the derived category already in the homotopy category.
@@ -64,7 +64,7 @@ theorem Qh_map_bijective_of_injective_of_plus [HasDerivedCategory.{w} A]
       (K ⟶ (HomotopyCategory.quotient A (ComplexShape.up ℤ)).obj I) → _)
 ```
 
-**`CategoryTheory.HomotopyCategory.MinusProjective.isEquivalence_toDerivedMinus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/TotalDerivedFunctors.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/TotalDerivedFunctors.lean#L155). The attribute's comment: “projective_equivalence”. References: SGA 4½ Etat 0 (3.2.3), “(4) proj. analogue”.
+**`CategoryTheory.HomotopyCategory.MinusProjective.isEquivalence_toDerivedMinus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/TotalDerivedFunctors.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/TotalDerivedFunctors.lean#L155). The attribute's comment: “projective\_equivalence”. References: SGA 4½ Etat 0 (3.2.3), “(4) proj. analogue”.
 
 > **Stacks 03T6, part (4).** If `A` has enough projectives and `P ⊆ A` is the additive
 > subcategory of projectives, then `D⁻(A) ≅ K⁻(P)`: the canonical functor from the bounded above

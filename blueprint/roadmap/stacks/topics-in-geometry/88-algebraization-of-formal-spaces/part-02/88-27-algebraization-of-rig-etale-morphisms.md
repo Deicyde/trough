@@ -14,7 +14,7 @@ Section 88.27 of the Stacks Project, [Tag 0AR1](https://stacks.math.columbia.edu
 
 [Tag 0AR5](https://stacks.math.columbia.edu/tag/0AR5) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.completionModificationFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationFunctor.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationFunctor.lean#L102). The attribute's comment: “the completion functor with the source's hypotheses only: X a locally Noetherian algebraic space and T closed; the three conditions placing f_{/T} in the right-hand category are proved by 0AIZ, 0AQ1 (2) and 0AR2”.
+**`AlgebraicGeometry.FormalSpace.completionModificationFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationFunctor.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CompletionModificationFunctor.lean#L102). The attribute's comment: “the completion functor with the source's hypotheses only: X a locally Noetherian algebraic space and T closed; the three conditions placing f\_\{/T} in the right-hand category are proved by 0AIZ, 0AQ1 (2) and 0AR2”.
 
 > **Stacks 0AR5.** Let `X` be a locally Noetherian algebraic space over `S`, let `T ⊆ |X|` be
 > closed and let `U ⊂ X` be the open subspace with `|U| = |X| ∖ T`. Completion along `T` is a

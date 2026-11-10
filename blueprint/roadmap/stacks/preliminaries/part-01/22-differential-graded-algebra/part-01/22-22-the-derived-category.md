@@ -315,7 +315,7 @@ Declarations registered for the tag:
 
 [Tag 09KY](https://stacks.math.columbia.edu/tag/09KY) in the Stacks Project.
 
-**`DifferentialGradedModule.exists_homEquiv_of_propertyPResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryHom.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryHom.lean#L136). The attribute's comment: “morphisms_from_p_resolution”.
+**`DifferentialGradedModule.exists_homEquiv_of_propertyPResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryHom.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryHom.lean#L136). The attribute's comment: “morphisms\_from\_p\_resolution”.
 
 > **Stacks 09KY(1).** *"Let `P → M` be a P-resolution as in Lemma 09KP. Then
 > `Hom_{D(A,d)}(M, N) = Hom_{K(Mod_{(A,d)})}(P, N)`."*
@@ -335,7 +335,7 @@ theorem exists_homEquiv_of_propertyPResolution {P M : DifferentialGradedModule A
         (quasiIsomorphisms' A).Q.map ((toHomotopyCategory A).map f) ≫ g
 ```
 
-**`DifferentialGradedModule.exists_homEquiv_of_propertyIResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryHom.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryHom.lean#L156). The attribute's comment: “morphisms_into_i_resolution”.
+**`DifferentialGradedModule.exists_homEquiv_of_propertyIResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryHom.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryHom.lean#L156). The attribute's comment: “morphisms\_into\_i\_resolution”.
 
 > **Stacks 09KY(2).** *"Let `N → I` be an I-resolution as in Lemma 09KU. Then
 > `Hom_{D(A,d)}(M, N) = Hom_{K(Mod_{(A,d)})}(M, I)`."*
@@ -359,7 +359,7 @@ theorem exists_homEquiv_of_propertyIResolution {N I : DifferentialGradedModule A
 
 [Tag 09QI](https://stacks.math.columbia.edu/tag/09QI) in the Stacks Project.
 
-**`DifferentialGradedModule.derivedCategoryQ_preservesCoproducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryCoproducts.lean, line 697](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryCoproducts.lean#L697). The attribute's comment: “direct_sums”.
+**`DifferentialGradedModule.derivedCategoryQ_preservesCoproducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryCoproducts.lean, line 697](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedCategoryCoproducts.lean#L697). The attribute's comment: “direct\_sums”.
 
 > **Stacks Tag 09QI**, the direct-sum half: *"direct sums in `D(A, d)` are obtained by taking
 > direct sums of differential graded modules"*, in the form that the canonical functor

@@ -85,7 +85,7 @@ theorem isFilteredColimit_isFinitePresentation_of_isAffineHom
         (∀ k, (D.obj k).IsFinitePresentation) ∧ Nonempty (IsColimit (Cocone.mk F φ))
 ```
 
-**`AlgebraicGeometry.Space.exists_isFiltered_isColimit_isFinitePresentation_of_isAffineHom_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationColimitAffineOverNoetherianUnconditional.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationColimitAffineOverNoetherianUnconditional.lean#L209). The attribute's comment: “every quasi-coherent 𝒪_X-module is a filtered colimit of finitely presented 𝒪_X-modules, for f : X ⟶ Y affine with Y Noetherian”.
+**`AlgebraicGeometry.Space.exists_isFiltered_isColimit_isFinitePresentation_of_isAffineHom_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationColimitAffineOverNoetherianUnconditional.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationColimitAffineOverNoetherianUnconditional.lean#L209). The attribute's comment: “every quasi-coherent 𝒪\_X-module is a filtered colimit of finitely presented 𝒪\_X-modules, for f : X ⟶ Y affine with Y Noetherian”.
 
 > **Stacks 07UW.**  Let `f : X ⟶ Y` be an affine morphism of algebraic spaces over a scheme
 > `S` with `Y` Noetherian.  Then every quasi-coherent `𝒪_X`-module is a filtered colimit of

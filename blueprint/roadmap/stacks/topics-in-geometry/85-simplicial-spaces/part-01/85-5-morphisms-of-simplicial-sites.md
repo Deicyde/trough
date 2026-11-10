@@ -14,7 +14,7 @@ Section 85.5 of the Stacks Project, [Tag 0D94](https://stacks.math.columbia.edu/
 
 [Tag 0D95](https://stacks.math.columbia.edu/tag/0D95) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteMorphism`**, an inductive in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/Morphism.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/Morphism.lean#L91). The attribute's comment: “morphism_between_simplicial_sites”.
+**`CategoryTheory.SimplicialSiteMorphism`**, an inductive in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/Morphism.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/Morphism.lean#L91). The attribute's comment: “morphism\_between\_simplicial\_sites”.
 
 > **Stacks 0D95.** A morphism between simplicial sites: degreewise morphisms of sites commuting
 > with the transitions in case (A), or degreewise cocontinuous functors commuting with the
@@ -62,7 +62,7 @@ theorem totalFunctor_isContinuous (h : SimplicialSite.Morphism C C') :
     h.totalFunctor.IsContinuous C'.totalTopology C.totalTopology
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.totalMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/TotalMorphism.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/TotalMorphism.lean#L136). The attribute's comment: “case (B), the morphism of total topoi”. References: SGA 4 VI (7.4.9), “simplicial case, m_*”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.totalMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/TotalMorphism.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/TotalMorphism.lean#L136). The attribute's comment: “case (B), the morphism of total topoi”. References: SGA 4 VI (7.4.9), “simplicial case, m\_*”.
 
 > The morphism between the total topoi induced by a morphism between simplicial sites in the
 > cocontinuous case.
@@ -91,7 +91,7 @@ noncomputable def totalComponentPushforwardIso
         h.totalMorphism.pushforward
 ```
 
-**`CategoryTheory.CocontinuousSimplicialSite.Morphism.totalInverseImageRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/TotalMorphism.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/TotalMorphism.lean#L198). The attribute's comment: “case (B), restriction of the inverse image”. References: SGA 4 VI (7.4.9), “simplicial, f^{-1}”.
+**`CategoryTheory.CocontinuousSimplicialSite.Morphism.totalInverseImageRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/TotalMorphism.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/TotalMorphism.lean#L198). The attribute's comment: “case (B), restriction of the inverse image”. References: SGA 4 VI (7.4.9), “simplicial, f^\{-1}”.
 
 > **Stacks 0D96**, case (B). Inverse image to the component of simplicial degree `n`, applied
 > to the inverse image along the total morphism, is the inverse image in degree `n` applied to the
@@ -129,7 +129,7 @@ noncomputable def totalPushforwardRestrictIso
         ((SimplicialSiteMorphism.ofCocontinuous h).componentMorphism n).pushforward
 ```
 
-**`CategoryTheory.SimplicialSite.Morphism.totalInverseImageRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/TotalMorphismCaseA.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/TotalMorphismCaseA.lean#L380). The attribute's comment: “case (A), restriction of the inverse image”. References: SGA 4 VI (7.4.9), “simplicial, f^{-1}”.
+**`CategoryTheory.SimplicialSite.Morphism.totalInverseImageRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/TotalMorphismCaseA.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/TotalMorphismCaseA.lean#L380). The attribute's comment: “case (A), restriction of the inverse image”. References: SGA 4 VI (7.4.9), “simplicial, f^\{-1}”.
 
 > **Stacks 0D96**, case (A). Restriction to the component of simplicial degree `n`, applied to
 > the inverse image along the total morphism, is the inverse image in degree `n` applied to
@@ -208,7 +208,7 @@ def derivedTotalPushforwardRestrictIso' (h : CocontinuousSimplicialSite.Morphism
 
 [Tag 0D98](https://stacks.math.columbia.edu/tag/0D98) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteMorphism.CompatibleWithAugmentations`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentedMorphism.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentedMorphism.lean#L68). The attribute's comment: “compatibility_with_augmentations”.
+**`CategoryTheory.SimplicialSiteMorphism.CompatibleWithAugmentations`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentedMorphism.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentedMorphism.lean#L68). The attribute's comment: “compatibility\_with\_augmentations”.
 
 > Compatibility of a morphism of topoi between augmentation sites with a morphism of simplicial
 > sites and the two augmentations.

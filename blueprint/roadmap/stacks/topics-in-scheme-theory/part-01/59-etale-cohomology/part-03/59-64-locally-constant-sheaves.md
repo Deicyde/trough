@@ -212,7 +212,7 @@ public theorem isFiniteLocallyConstant_iff_finiteEtaleRepresentable
             (Sheaf.sheafifiedYoneda (SmallEtale.topology B X.1 X.2)).obj U)
 ```
 
-**`AlgebraicGeometry.finiteLocallyConstantFiniteEtaleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Sets.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Sets.lean#L67). The attribute's comment: “the equivalence of categories; the object-level statement is Stacks.EtaleCohomology.isFiniteLocallyConstant_iff_finiteEtaleRepresentable”.
+**`AlgebraicGeometry.finiteLocallyConstantFiniteEtaleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Sets.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FundamentalGroupLocallyConstant/Sets.lean#L67). The attribute's comment: “the equivalence of categories; the object-level statement is Stacks.EtaleCohomology.isFiniteLocallyConstant\_iff\_finiteEtaleRepresentable”.
 
 > The equivalence between the finite locally constant sheaves of sets on the small étale site
 > of `X` and the finite étale covers of `X`.

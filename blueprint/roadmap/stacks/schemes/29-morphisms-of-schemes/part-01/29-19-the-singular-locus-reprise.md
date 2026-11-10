@@ -70,7 +70,7 @@ public theorem isJ2_of_locallyOfFiniteType' {X Y : Scheme.{u}} [IsLocallyNoether
 
 [Tag 07R5](https://stacks.math.columbia.edu/tag/07R5) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.isJ2_of_locallyOfFiniteType_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean#L61). The attribute's comment: “field_case”. References: EGA IV (6.12.6), “(ii), field base”; SGA 5 I (3.1.1), “field base”.
+**`AlgebraicGeometry.Scheme.isJ2_of_locallyOfFiniteType_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean#L61). The attribute's comment: “field\_case”. References: EGA IV (6.12.6), “(ii), field base”; SGA 5 I (3.1.1), “field base”.
 
 > **Stacks Project, Tag 07R5.** A scheme locally of finite type over a field is J-2.
 
@@ -79,7 +79,7 @@ public theorem isJ2_of_locallyOfFiniteType_over_field (k : Type u) [Field k] {X 
     [IsLocallyNoetherian X] (f : X ⟶ Spec (.of k)) [LocallyOfFiniteType f] : IsJ2 X
 ```
 
-**`AlgebraicGeometry.Scheme.isJ2_of_locallyOfFiniteType_over_completeLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean#L68). The attribute's comment: “complete_local_case”. References: EGA IV (6.12.8); SGA 5 I (3.1.1), “complete local base”.
+**`AlgebraicGeometry.Scheme.isJ2_of_locallyOfFiniteType_over_completeLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean#L68). The attribute's comment: “complete\_local\_case”. References: EGA IV (6.12.8); SGA 5 I (3.1.1), “complete local base”.
 
 > **Stacks Project, Tag 07R5.** A scheme locally of finite type over a Noetherian complete
 > local ring is J-2.
@@ -91,7 +91,7 @@ public theorem isJ2_of_locallyOfFiniteType_over_completeLocalRing (R : Type u) [
     IsJ2 X
 ```
 
-**`AlgebraicGeometry.Scheme.isJ2_of_locallyOfFiniteType_over_int`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean#L76). The attribute's comment: “integers_case”.
+**`AlgebraicGeometry.Scheme.isJ2_of_locallyOfFiniteType_over_int`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean#L76). The attribute's comment: “integers\_case”.
 
 > **Stacks Project, Tag 07R5.** A scheme locally of finite type over the integers is J-2.
 
@@ -100,7 +100,7 @@ public theorem isJ2_of_locallyOfFiniteType_over_int {X : Scheme.{0}} [IsLocallyN
     (f : X ⟶ Spec (.of ℤ)) [LocallyOfFiniteType f] : IsJ2 X
 ```
 
-**`AlgebraicGeometry.Scheme.isJ2_of_locallyOfFiniteType_over_localRing_of_dim_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean#L83). The attribute's comment: “local_dimension_one_case”.
+**`AlgebraicGeometry.Scheme.isJ2_of_locallyOfFiniteType_over_localRing_of_dim_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean#L83). The attribute's comment: “local\_dimension\_one\_case”.
 
 > **Stacks Project, Tag 07R5.** A scheme locally of finite type over a Noetherian local ring
 > of dimension one is J-2.
@@ -111,7 +111,7 @@ public theorem isJ2_of_locallyOfFiniteType_over_localRing_of_dim_one (R : Type u
     [IsLocallyNoetherian X] (f : X ⟶ Spec (.of R)) [LocallyOfFiniteType f] : IsJ2 X
 ```
 
-**`AlgebraicGeometry.Scheme.isJ2_of_locallyOfFiniteType_over_nagataRing_of_dim_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean#L92). The attribute's comment: “nagata_dimension_one_case”.
+**`AlgebraicGeometry.Scheme.isJ2_of_locallyOfFiniteType_over_nagataRing_of_dim_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean#L92). The attribute's comment: “nagata\_dimension\_one\_case”.
 
 > **Stacks Project, Tag 07R5.** A scheme locally of finite type over a Nagata ring of
 > dimension one is J-2.
@@ -122,7 +122,7 @@ public theorem isJ2_of_locallyOfFiniteType_over_nagataRing_of_dim_one (R : Type 
     (f : X ⟶ Spec (.of R)) [LocallyOfFiniteType f] : IsJ2 X
 ```
 
-**`AlgebraicGeometry.Scheme.isJ2_of_locallyOfFiniteType_over_dedekindDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean#L103). The attribute's comment: “dedekind_characteristic_zero_case”. References: EGA IV (6.12.6), “(i)”; SGA 5 I (3.1.1), “Dedekind char 0 base”.
+**`AlgebraicGeometry.Scheme.isJ2_of_locallyOfFiniteType_over_dedekindDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/SingularLocus/JTwoStandardClasses.lean#L103). The attribute's comment: “dedekind\_characteristic\_zero\_case”. References: EGA IV (6.12.6), “(i)”; SGA 5 I (3.1.1), “Dedekind char 0 base”.
 
 > **Stacks Project, Tag 07R5.** A scheme locally of finite type over a Dedekind domain of
 > characteristic zero is J-2.

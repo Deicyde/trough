@@ -41,7 +41,7 @@ def chowGroupZeroDegree (sX : X ⟶ D.space) (hX : D.IsGood sX) (sY : Y ⟶ D.sp
 
 [Tag 0ESH](https://stacks.math.columbia.edu/tag/0ESH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.cycleDegree_eq_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ZeroCycleDegree.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ZeroCycleDegree.lean#L195). The attribute's comment: “deg(Z) read as the degree [R(Z) : k] of the extension of function fields, which is the weight of Stacks 0EP0, rather than as dim_k Γ(Z, 𝒪_Z): the two are identified on a scheme by Stacks.Chow.isIso_Γevaluation_of_isIntegral_of_subsingleton, and for an algebraic space there is no evaluation of a global function in a residue field. Spec(k) is modelled as a good algebraic space over the base with one point and vanishing dimension function. The degree is the cycle-level degree, not the one on CH_0 of Stacks 0ESG, which needs Stacks 0EQC”.
+**`AlgebraicGeometry.Space.cycleDegree_eq_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ZeroCycleDegree.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ZeroCycleDegree.lean#L195). The attribute's comment: “deg(Z) read as the degree [R(Z) : k] of the extension of function fields, which is the weight of Stacks 0EP0, rather than as dim\_k Γ(Z, 𝒪\_Z): the two are identified on a scheme by Stacks.Chow.isIso\_Γevaluation\_of\_isIntegral\_of\_subsingleton, and for an algebraic space there is no evaluation of a global function in a residue field. Spec(k) is modelled as a good algebraic space over the base with one point and vanishing dimension function. The degree is the cycle-level degree, not the one on CH\_0 of Stacks 0ESG, which needs Stacks 0EQC”.
 
 > **Stacks 0ESH, in the shape in which this library presents a cycle.** Let `p : X ⟶ Y` be a
 > proper morphism of good algebraic spaces over the base with `|Y|` a single point and with the
@@ -75,7 +75,7 @@ theorem cycleDegree_eq_finsum (sX : X ⟶ D.space) (hX : D.IsGood sX) (sY : Y �
           (Z.ambientGenericPoint D.site D.base D.base_mem) : ℤ)
 ```
 
-**`AlgebraicGeometry.Space.cycleDegree_eq_sum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ZeroCycleDegree.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ZeroCycleDegree.lean#L234). The attribute's comment: “the same restriction on deg(Z_i) as on AlgebraicGeometry.Space.cycleDegree_eq_finsum; this is its restatement for a cycle given as a finite sum over pairwise distinct integral closed subspaces”.
+**`AlgebraicGeometry.Space.cycleDegree_eq_sum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ZeroCycleDegree.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ZeroCycleDegree.lean#L234). The attribute's comment: “the same restriction on deg(Z\_i) as on AlgebraicGeometry.Space.cycleDegree\_eq\_finsum; this is its restatement for a cycle given as a finite sum over pairwise distinct integral closed subspaces”.
 
 > **Stacks 0ESH, in the source's shape.** In the situation of
 > `AlgebraicGeometry.Space.cycleDegree_eq_finsum`, let the zero cycle `α` be presented as a finite
@@ -107,7 +107,7 @@ theorem cycleDegree_eq_sum (sX : X ⟶ D.space) (hX : D.IsGood sX) (sY : Y ⟶ D
         ((Z i).ambientGenericPoint D.site D.base D.base_mem) : ℤ)
 ```
 
-**`AlgebraicGeometry.Space.cycleDegree_eq_finsum_finrank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ZeroCycleDegreeGlobalFunctions.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ZeroCycleDegreeGlobalFunctions.lean#L192). The attribute's comment: “deg(Z) is dim_k Γ(Z, 𝒪_Z), as in the source. Spec(k) is modelled as a reduced good algebraic space over the base with one point and vanishing dimension function (which by Stacks 047Z is the spectrum of the field k = Γ(Y, 𝒪_Y)); the cycle is the coefficient family on the integral closed subspaces, so the sum runs over all of them”.
+**`AlgebraicGeometry.Space.cycleDegree_eq_finsum_finrank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ZeroCycleDegreeGlobalFunctions.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ZeroCycleDegreeGlobalFunctions.lean#L192). The attribute's comment: “deg(Z) is dim\_k Γ(Z, 𝒪\_Z), as in the source. Spec(k) is modelled as a reduced good algebraic space over the base with one point and vanishing dimension function (which by Stacks 047Z is the spectrum of the field k = Γ(Y, 𝒪\_Y)); the cycle is the coefficient family on the integral closed subspaces, so the sum runs over all of them”.
 
 > **Stacks 0ESH, in the shape in which this library presents a cycle.** Let `p : X ⟶ Y` be a
 > proper morphism of good algebraic spaces over the base, with `Y` reduced, with a single point
@@ -139,7 +139,7 @@ theorem cycleDegree_eq_finsum_finrank (sX : X ⟶ D.space) (hX : D.IsGood sX) (s
           (globalFunctions' D.site D.base D.base_mem Z.subspace.toFunctor) : ℤ))
 ```
 
-**`AlgebraicGeometry.Space.cycleDegree_eq_sum_finrank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ZeroCycleDegreeGlobalFunctions.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ZeroCycleDegreeGlobalFunctions.lean#L225). The attribute's comment: “the same modelling of Spec(k) as in AlgebraicGeometry.Space.cycleDegree_eq_finsum_finrank; this is its restatement for a cycle given as a finite sum over pairwise distinct integral closed subspaces”.
+**`AlgebraicGeometry.Space.cycleDegree_eq_sum_finrank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ZeroCycleDegreeGlobalFunctions.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ZeroCycleDegreeGlobalFunctions.lean#L225). The attribute's comment: “the same modelling of Spec(k) as in AlgebraicGeometry.Space.cycleDegree\_eq\_finsum\_finrank; this is its restatement for a cycle given as a finite sum over pairwise distinct integral closed subspaces”.
 
 > **Stacks 0ESH, in the source's shape.** In the situation of
 > `AlgebraicGeometry.Space.cycleDegree_eq_finsum_finrank`, let the zero cycle `α` be presented as

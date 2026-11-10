@@ -49,7 +49,7 @@ theorem span_tmul_eq_top :
     Submodule.span R (Set.range fun p : M × N => tmul R A M N p.1 p.2) = ⊤
 ```
 
-**`StacksDraft.BalancedTensorProduct.liftEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/BalancedTensorProduct.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/BalancedTensorProduct.lean#L259). The attribute's comment: “Bilinear_A(M × N, Q) = Hom_R(M ⊗_A N, Q)”. References: EGA III (7.2.1).
+**`StacksDraft.BalancedTensorProduct.liftEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/BalancedTensorProduct.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/BalancedTensorProduct.lean#L259). The attribute's comment: “Bilinear\_A(M × N, Q) = Hom\_R(M ⊗\_A N, Q)”. References: EGA III (7.2.1).
 
 > The identification `Bilinear_A(M × N, Q) = Hom_R(M ⊗_A N, Q)`: composing with the universal
 > map `(x, y) ↦ x ⊗ y` is an `R`-linear bijection from the `R`-linear maps out of `M ⊗_A N` onto the

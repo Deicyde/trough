@@ -56,7 +56,7 @@ theorem exists_isAffine_etale_chart_square_at_point
           pointsMap B S hS X f x
 ```
 
-**`AlgebraicGeometry.Space.exists_isAffine_etale_charts_projective_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSections.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSections.lean#L367). The attribute's comment: “the full conclusion — the pointed affine étale diagram and the projectivity of the sections — with the case of schemes, Tag 05ID, supplied by exists_isAffine_etale_hom_projective_sections, and with the tag's conditions (2) and (3) on the module in their étale-chartwise form”.
+**`AlgebraicGeometry.Space.exists_isAffine_etale_charts_projective_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSections.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatFinitePresentationProjectiveSections.lean#L367). The attribute's comment: “the full conclusion — the pointed affine étale diagram and the projectivity of the sections — with the case of schemes, Tag 05ID, supplied by exists\_isAffine\_etale\_hom\_projective\_sections, and with the tag's conditions (2) and (3) on the module in their étale-chartwise form”.
 
 > **Stacks Project, Tag 0CVY.** Let `f : X ⟶ Y` be a morphism of
 > algebraic spaces over `S`, let `F` be an `𝒪_X`-module and let `x` be a point of `|X|`. Assume

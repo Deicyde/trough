@@ -137,7 +137,7 @@ public theorem exists_finiteEtale_internalHom (X : Scheme.{u}) (U V : Over X)
 
 [Tag 0BNB](https://stacks.math.columbia.edu/tag/0BNB) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.isGaloisCategory_finiteEtaleFiberFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleGaloisCategory.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleGaloisCategory.lean#L107). References: SGA 1 V (3.7), “more general”; SGA 1 XIII (2.1.3), “(C_t, special case”; SGA 3 X (7.0.3), “special case”; SGA 5 VI (1.2.3.1).
+**`Stacks.FundamentalGroup.isGaloisCategory_finiteEtaleFiberFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleGaloisCategory.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleGaloisCategory.lean#L107). References: SGA 1 V (3.7), “more general”; SGA 1 XIII (2.1.3), “(C\_t, special case”; SGA 3 X (7.0.3), “special case”; SGA 5 VI (1.2.3.1).
 
 > **Stacks Project, Tag 0BNB.** For a connected scheme `X` and a geometric point `x` of `X`,
 > the category `FÉt_X` of finite étale covers of `X` together with the geometric fibre functor
@@ -158,7 +158,7 @@ instance isGaloisCategory_finiteEtaleFiberFunctor {X : Scheme.{u}} [ConnectedSpa
     (x : GeometricPoint X) : IsGaloisCategory (finiteEtaleFiberFunctor x)
 ```
 
-**`AlgebraicGeometry.finiteEtaleFiberFunctor_isGaloisCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctorComplete.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctorComplete.lean#L52). References: SGA 1 XIII (2.1.3), “(C_t, special case”.
+**`AlgebraicGeometry.finiteEtaleFiberFunctor_isGaloisCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctorComplete.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctorComplete.lean#L52). References: SGA 1 XIII (2.1.3), “(C\_t, special case”.
 
 > The fibre functor at a geometric point makes finite étale covers of a connected scheme into
 > a Galois category.

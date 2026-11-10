@@ -268,7 +268,7 @@ public theorem augmentation_natural {F G : X.Modules} (φ : F ⟶ G) :
     augmentation f F ≫ (DerivedCategory.singleFunctor X.Modules 0).map φ
 ```
 
-**`Stacks.Perfect.SupportedFraction.cohomologySupportedOn_cech`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Subfamily.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Subfamily.lean#L319). The attribute's comment: “the first assertion of the remark: the cohomology sheaves of 𝓕^• are supported on the common zero locus, hence 𝓕^• is an object of D_Z(𝒪_X). Deduced from Stacks 0G7K, stated at the derived-category spelling the remark's diagram uses, for an arbitrary 𝒪_X-module ℱ”.
+**`Stacks.Perfect.SupportedFraction.cohomologySupportedOn_cech`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Subfamily.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Subfamily.lean#L319). The attribute's comment: “the first assertion of the remark: the cohomology sheaves of 𝓕^• are supported on the common zero locus, hence 𝓕^• is an object of D\_Z(𝒪\_X). Deduced from Stacks 0G7K, stated at the derived-category spelling the remark's diagram uses, for an arbitrary 𝒪\_X-module ℱ”.
 
 > **The extended alternating Čech complex is supported on the common zero locus.** Every
 > cohomology sheaf of `𝓕^•` has vanishing stalks outside the common zero locus of the equations,
@@ -290,7 +290,7 @@ public theorem cohomologySupportedOn_cech :
       (DerivedCategory.Q.obj ((cplx e F).extend ComplexShape.embeddingUpNat))
 ```
 
-**`Stacks.Perfect.SupportedFraction.cechToDerivedSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Subfamily.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Subfamily.lean#L400). The attribute's comment: “the canonical comparison 𝓕^• ⟶ i_*RℋT(ℱ), built from the counit of Stacks 0G72 and the augmentation, for an arbitrary 𝒪_X-module ℱ”.
+**`Stacks.Perfect.SupportedFraction.cechToDerivedSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Subfamily.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Subfamily.lean#L400). The attribute's comment: “the canonical comparison 𝓕^• ⟶ i\_*RℋT(ℱ), built from the counit of Stacks 0G72 and the augmentation, for an arbitrary 𝒪\_X-module ℱ”.
 
 > **The canonical comparison of Stacks 0G7L**, `𝓕^• ⟶ i_* R𝓗_T(ℱ)`.
 >
@@ -310,7 +310,7 @@ public def cechToDerivedSupport (hTe : equationsClosedSet e ⊆ T) :
       (supportPush hT).obj ((DerivedCategory.singleFunctor X.Modules 0).obj F)
 ```
 
-**`Stacks.Perfect.SupportedFraction.cechToDerivedSupport_comp_derivedSupportedSectionsToId`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Subfamily.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Subfamily.lean#L433). The attribute's comment: “the commuting triangle 𝓕^• ⟶ ℱ, 𝓕^• ⟶ i_*RℋT(ℱ), i_*RℋT(ℱ) ⟶ ℱ of the remark's diagram, for an arbitrary 𝒪_X-module ℱ”.
+**`Stacks.Perfect.SupportedFraction.cechToDerivedSupport_comp_derivedSupportedSectionsToId`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Subfamily.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Subfamily.lean#L433). The attribute's comment: “the commuting triangle 𝓕^• ⟶ ℱ, 𝓕^• ⟶ i\_*RℋT(ℱ), i\_*RℋT(ℱ) ⟶ ℱ of the remark's diagram, for an arbitrary 𝒪\_X-module ℱ”.
 
 > **The commuting triangle of Stacks 0G7L**, in the shape the remark displays:
 >
@@ -341,7 +341,7 @@ theorem augmentation_eq :
         Stacks.Perfect.ExtendedAlternatingCech.Augmentation.augmentation f F
 ```
 
-**`Stacks.Perfect.SupportedFraction.derivedSupportedSectionsToId_single_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/SupportedFractionNaturality.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/SupportedFractionNaturality.lean#L154). The attribute's comment: “functoriality in the 𝒪_X-module ℱ, the edge i_*RℋT(ℱ) ⟶ ℱ of the diagram”.
+**`Stacks.Perfect.SupportedFraction.derivedSupportedSectionsToId_single_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/SupportedFractionNaturality.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/SupportedFractionNaturality.lean#L154). The attribute's comment: “functoriality in the 𝒪\_X-module ℱ, the edge i\_*RℋT(ℱ) ⟶ ℱ of the diagram”.
 
 > **The edge `i_* R𝓗_T(ℱ) ⟶ ℱ` of the diagram of Stacks 0G7L is natural in the coefficient
 > module.**  It is the counit of Stacks 0G72 evaluated at `ℱ[0]`, hence a component of a natural
@@ -358,7 +358,7 @@ public theorem derivedSupportedSectionsToId_single_naturality {T : Set X} (hT : 
         (DerivedCategory.singleFunctor X.Modules 0).map φ
 ```
 
-**`Stacks.Perfect.SupportedFraction.Q_map_extendMap_cplxMap_comp_cechToDerivedSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/SupportedFractionNaturality.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/SupportedFractionNaturality.lean#L175). The attribute's comment: “functoriality in the 𝒪_X-module ℱ, the edge 𝓕^• ⟶ i_*RℋT(ℱ) of the diagram”.
+**`Stacks.Perfect.SupportedFraction.Q_map_extendMap_cplxMap_comp_cechToDerivedSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/SupportedFractionNaturality.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/SupportedFractionNaturality.lean#L175). The attribute's comment: “functoriality in the 𝒪\_X-module ℱ, the edge 𝓕^• ⟶ i\_*RℋT(ℱ) of the diagram”.
 
 > **The canonical comparison `𝓕^• ⟶ i_* R𝓗_T(ℱ)` of Stacks 0G7L is natural in the coefficient
 > module.**  Both sides become, after the invertible counit of Stacks 0G72, the functor
@@ -473,7 +473,7 @@ public theorem isIso_map_augmentation_of_isQuasicoherent (F : X.Modules) [F.IsQu
     IsIso (RH.map (Stacks.Perfect.ExtendedAlternatingCech.Augmentation.augmentation f F))
 ```
 
-**`Stacks.Perfect.CechDerivedSupport.nonempty_cechIso_derivedSupportedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DerivedSupportInvertsAugmentation.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DerivedSupportInvertsAugmentation.lean#L407). The attribute's comment: “the extended alternating Čech complex represents i_*RℋZ(F)”.
+**`Stacks.Perfect.CechDerivedSupport.nonempty_cechIso_derivedSupportedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DerivedSupportInvertsAugmentation.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DerivedSupportInvertsAugmentation.lean#L407). The attribute's comment: “the extended alternating Čech complex represents i\_*RℋZ(F)”.
 
 > **Stacks Project, Tag 0G7M.**  With `X`, `f₁, …, f_c ∈ Γ(X, 𝒪_X)` and `F` as in Stacks 0G7I
 > and `F` quasi-coherent, the extended alternating Čech complex `𝓕^•` **represents
@@ -503,7 +503,7 @@ public theorem nonempty_cechIso_derivedSupportedSections (F : X.Modules) [F.IsQu
             ((DerivedCategory.singleFunctor X.Modules 0).obj F)))
 ```
 
-**`Stacks.Perfect.SupportedFraction.isIso_derivedSupportedSectionsToId_cech`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Subfamily.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Subfamily.lean#L381). The attribute's comment: “the canonical counit i_*RℋT(𝓕^•) ⟶ 𝓕^• of Stacks 0G72 is invertible at the extended alternating Čech complex, for every closed T containing the common zero locus of the equations. The theorem nonempty_pushforwardDerivedSupportCechIso asserts the same isomorphism without naming it, because it is produced on a chosen K-injective resolution; here only invertibility of the canonical map is asserted, and invertibility is a proposition, so nothing is chosen”.
+**`Stacks.Perfect.SupportedFraction.isIso_derivedSupportedSectionsToId_cech`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Subfamily.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Subfamily.lean#L381). The attribute's comment: “the canonical counit i\_*RℋT(𝓕^•) ⟶ 𝓕^• of Stacks 0G72 is invertible at the extended alternating Čech complex, for every closed T containing the common zero locus of the equations. The theorem nonempty\_pushforwardDerivedSupportCechIso asserts the same isomorphism without naming it, because it is produced on a chosen K-injective resolution; here only invertibility of the canonical map is asserted, and invertibility is a proposition, so nothing is chosen”.
 
 > **Stacks 0G7M, the acyclicity half, with the comparison as a canonical term.** The counit
 > `i_* R𝓗_T(𝓕^•) ⟶ 𝓕^•` of Stacks 0G72 is invertible at the extended alternating Čech complex of
@@ -543,7 +543,7 @@ theorem isIso_derivedSupportedSectionsOnClosed_map_augmentation [F.IsQuasicohere
 
 [Tag 0G7N](https://stacks.math.columbia.edu/tag/0G7N) in the Stacks Project.
 
-**`Stacks.Perfect.LocalCohomologyDegrees.isZero_homology_derivedSupportedSections_of_locallyCutOut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/LocalCohomologyVanishingDegrees.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/LocalCohomologyVanishingDegrees.lean#L119). The attribute's comment: “stated for the closed subset T; the source writes ℋ^i_Z for it, a slip”.
+**`Stacks.Perfect.LocalCohomologyDegrees.isZero_homology_derivedSupportedSections_of_locallyCutOut`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/LocalCohomologyVanishingDegrees.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/LocalCohomologyVanishingDegrees.lean#L119). The attribute's comment: “stated for the closed subset T; the source writes ℋ^i\_Z for it, a slip”.
 
 > **Stacks Project, Tag 0G7N.**  Let `X` be a scheme and let `T ⊆ X` be a closed subset which
 > can locally be cut out by `c` elements of the structure sheaf.  Then the local cohomology sheaves
@@ -609,7 +609,7 @@ public theorem isZero_homology_derivedSupportedSections_of_locallyKoszulRegular_
 
 [Tag 0G7Q](https://stacks.math.columbia.edu/tag/0G7Q) in the Stacks Project.
 
-**`Stacks.Perfect.GysinLocalCohomology.fractionClassOnClosed`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Gysin/GysinDifferentialCompatibility.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Gysin/GysinDifferentialCompatibility.lean#L194). The attribute's comment: “the remark's conclusion: the canonical O_X|_Z-linear map c_{f₁,…,f_c} : i^*ℱ ⟶ ℋ^c_Z(ℱ) on Z, together with its functoriality in the 𝒪_X-module ℱ, as a natural transformation of the two functors of ℱ into 𝒪_X|_Z-modules; obtained from the transformation on X by the remark's last step, the transposition along i^* ⊣ i_* that full faithfulness of i_* provides”.
+**`Stacks.Perfect.GysinLocalCohomology.fractionClassOnClosed`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/Gysin/GysinDifferentialCompatibility.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/Gysin/GysinDifferentialCompatibility.lean#L194). The attribute's comment: “the remark's conclusion: the canonical O\_X|\_Z-linear map c\_\{f₁,…,f\_c} : i^*ℱ ⟶ ℋ^c\_Z(ℱ) on Z, together with its functoriality in the 𝒪\_X-module ℱ, as a natural transformation of the two functors of ℱ into 𝒪\_X|\_Z-modules; obtained from the transformation on X by the remark's last step, the transposition along i^* ⊣ i\_* that full faithfulness of i\_* provides”.
 
 > With `X` a scheme, `f₁, …, f_c ∈ Γ(X, 𝒪_X)` and `Z ⊆ X` the closed subscheme they cut out,
 > the canonical map `c_{f₁, …, f_c} : i^*ℱ ⟶ ℋ^c_Z(ℱ)` of `𝒪_X|_Z`-modules on `Z`, as a natural
@@ -628,7 +628,7 @@ public def fractionClassOnClosed {d : ℕ} (f : Fin (d + 1) → Γ(X, ⊤)) :
           DerivedCategory.homologyFunctor _ ((d + 1 : ℕ) : ℤ)
 ```
 
-**`AlgebraicGeometry.ExtendedAlternatingCech.eq_of_eq_mod_equations_empty`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClass.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClass.lean#L312). The attribute's comment: “fraction_class_well_defined”.
+**`AlgebraicGeometry.ExtendedAlternatingCech.eq_of_eq_mod_equations_empty`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClass.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClass.lean#L312). The attribute's comment: “fraction\_class\_well\_defined”.
 
 > For no equations, the fraction is just the numerator itself, and the
 > quotient by the zero ideal changes nothing.
@@ -646,7 +646,7 @@ public lemma eq_of_eq_mod_equations_empty
     x = y
 ```
 
-**`AlgebraicGeometry.ExtendedAlternatingCech.cokernel_π_app_eq_of_eq_mod_equations`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClass.lean, line 526](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClass.lean#L526). The attribute's comment: “fraction_class_well_defined”.
+**`AlgebraicGeometry.ExtendedAlternatingCech.cokernel_π_app_eq_of_eq_mod_equations`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClass.lean, line 526](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClass.lean#L526). The attribute's comment: “fraction\_class\_well\_defined”.
 
 > Fractions with congruent numerators have the same class in the final
 > Čech cokernel.
@@ -684,7 +684,7 @@ public lemma cokernel_π_app_eq_of_eq_mod_equations
       (cokernel.π ((data f F).complex.d c (c + 1))).app V y
 ```
 
-**`Stacks.Perfect.FractionClass.classMapToPushforward_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean#L197). The attribute's comment: “functoriality in the 𝒪_X-module ℱ, with the direct image taken outside the cohomology sheaf, for an arbitrary 𝒪_X-module and any number of equations”.
+**`Stacks.Perfect.FractionClass.classMapToPushforward_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean#L197). The attribute's comment: “functoriality in the 𝒪\_X-module ℱ, with the direct image taken outside the cohomology sheaf, for an arbitrary 𝒪\_X-module and any number of equations”.
 
 > **Stacks Project, Tag 0G7Q, functoriality in `ℱ`**, in the spelling of `i_*ℋ ᶜ_T(ℱ)` with the
 > direct image outside: `classMapToSupport_natural`, with its carried numerator hypothesis
@@ -698,7 +698,7 @@ public theorem classMapToPushforward_natural {c : ℕ} (f : Fin c → Γ(X, ⊤)
       classMapToPushforward f F hT hTf ≫ (localCohomologyPushforwardFunctor hT (c : ℤ)).map φ
 ```
 
-**`Stacks.Perfect.FractionClass.quotientClassMapToPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean#L274). The attribute's comment: “i_* of the remark's map c_{f₁,…,f_c}, between its two presentations, for an arbitrary 𝒪_X-module ℱ and any number of equations”.
+**`Stacks.Perfect.FractionClass.quotientClassMapToPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean#L274). The attribute's comment: “i\_* of the remark's map c\_\{f₁,…,f\_c}, between its two presentations, for an arbitrary 𝒪\_X-module ℱ and any number of equations”.
 
 > **Stacks Project, Tag 0G7Q, for an arbitrary `𝒪_X`-module.**  The `𝒪_X`-module map
 >
@@ -718,7 +718,7 @@ public def quotientClassMapToPushforward {c : ℕ} (f : Fin c → Γ(X, ⊤)) (F
     equationsQuotient f F ⟶ (localCohomologyPushforwardFunctor hT (c : ℤ)).obj F
 ```
 
-**`Stacks.Perfect.FractionClass.cokernelπ_comp_quotientClassMapToPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean#L284). The attribute's comment: “the value on the class of a local section is the class of its fraction, for an arbitrary 𝒪_X-module ℱ”.
+**`Stacks.Perfect.FractionClass.cokernelπ_comp_quotientClassMapToPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean#L284). The attribute's comment: “the value on the class of a local section is the class of its fraction, for an arbitrary 𝒪\_X-module ℱ”.
 
 > **Stacks Project, Tag 0G7Q.**  The map out of the quotient sends the class of a local section
 > `s` of `ℱ` to the class of the fraction `s / (f₁ ⋯ f_c)`.
@@ -730,7 +730,7 @@ public theorem cokernelπ_comp_quotientClassMapToPushforward {c : ℕ} (f : Fin 
       classMapToPushforward f F hT hTf
 ```
 
-**`Stacks.Perfect.FractionClass.quotientClassMapToPushforward_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean#L298). The attribute's comment: “functoriality in the 𝒪_X-module ℱ of i_* of the remark's map, for an arbitrary 𝒪_X-module ℱ and any number of equations”.
+**`Stacks.Perfect.FractionClass.quotientClassMapToPushforward_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean#L298). The attribute's comment: “functoriality in the 𝒪\_X-module ℱ of i\_* of the remark's map, for an arbitrary 𝒪\_X-module ℱ and any number of equations”.
 
 > **Stacks Project, Tag 0G7Q, functoriality in `ℱ` of the map out of the quotient.**  The
 > square commutes for every morphism `φ : ℱ ⟶ 𝒢` of `𝒪_X`-modules, the left vertical arrow being
@@ -748,7 +748,7 @@ public theorem quotientClassMapToPushforward_natural {c : ℕ} (f : Fin c → Γ
         (localCohomologyPushforwardFunctor hT (c : ℤ)).map φ
 ```
 
-**`Stacks.Perfect.FractionClass.fractionClassAnyModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean#L332). The attribute's comment: “the canonical map c_{f_1, …, f_c}, for an arbitrary 𝒪_X-module ℱ and any number of equations”.
+**`Stacks.Perfect.FractionClass.fractionClassAnyModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean#L332). The attribute's comment: “the canonical map c\_\{f\_1, …, f\_c}, for an arbitrary 𝒪\_X-module ℱ and any number of equations”.
 
 > **Stacks Project, Tag 0G7Q, for every `𝒪_X`-module.**  The canonical `𝒪_X|_T`-linear map
 >
@@ -773,7 +773,7 @@ public def fractionClassAnyModule {c : ℕ} (f : Fin c → Γ(X, ⊤)) (F : X.Mo
         ((DerivedCategory.singleFunctor X.Modules 0).obj F)
 ```
 
-**`Stacks.Perfect.FractionClass.homEquiv_fractionClassAnyModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean#L344). The attribute's comment: “c_{f_1, …, f_c} is the transpose of the map out of the quotient, for an arbitrary 𝒪_X-module ℱ”.
+**`Stacks.Perfect.FractionClass.homEquiv_fractionClassAnyModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean#L344). The attribute's comment: “c\_\{f\_1, …, f\_c} is the transpose of the map out of the quotient, for an arbitrary 𝒪\_X-module ℱ”.
 
 > **Stacks Project, Tag 0G7Q.**  The map `c_{f₁, …, f_c}` is the transpose of the map
 > `i_*i^*ℱ ⟶ i_*ℋ ᶜ_T(ℱ)` out of the quotient by the equations.
@@ -786,7 +786,7 @@ public theorem homEquiv_fractionClassAnyModule {c : ℕ} (f : Fin c → Γ(X, �
       quotientClassMapToPushforward f F hT hTf
 ```
 
-**`Stacks.Perfect.FractionClass.fractionClassAnyModule_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean#L364). The attribute's comment: “functoriality in the 𝒪_X-module ℱ of c_{f_1, …, f_c} itself, for an arbitrary 𝒪_X-module ℱ and any number of equations”.
+**`Stacks.Perfect.FractionClass.fractionClassAnyModule_natural`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean#L364). The attribute's comment: “functoriality in the 𝒪\_X-module ℱ of c\_\{f\_1, …, f\_c} itself, for an arbitrary 𝒪\_X-module ℱ and any number of equations”.
 
 > **Stacks Project, Tag 0G7Q, functoriality in `ℱ` of `c_{f₁, …, f_c}` itself.**  For every
 > morphism `φ : ℱ ⟶ 𝒢` of `𝒪_X`-modules the square
@@ -809,7 +809,7 @@ public theorem fractionClassAnyModule_natural {c : ℕ} (f : Fin c → Γ(X, ⊤
         (localCohomologySheafOfComplexFunctor X.toRingedSpace T hT (c : ℤ)).map φ
 ```
 
-**`Stacks.Perfect.FractionClass.fractionClassAnyModule_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean#L419). The attribute's comment: “the quasi-coherent construction of c_{f_1, …, f_c} is the arbitrary-module one specialised”.
+**`Stacks.Perfect.FractionClass.fractionClassAnyModule_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassAnyModule.lean#L419). The attribute's comment: “the quasi-coherent construction of c\_\{f\_1, …, f\_c} is the arbitrary-module one specialised”.
 
 > **Stacks Project, Tag 0G7Q: the quasi-coherent construction is this one specialised.**  On a
 > quasi-coherent `𝒪_X`-module the map `c_{f₁, …, f_c}` built here through [Stacks, Tag 0G7L] alone
@@ -844,7 +844,7 @@ public theorem cokernelπ_comp_quotientClassMap :
     cokernel.π (equationsMap f F) ≫ quotientClassMap f F = classMap f F
 ```
 
-**`Stacks.Perfect.FractionClass.fractionClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassMap.lean, line 663](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassMap.lean#L663). The attribute's comment: “the canonical map c_{f_1, …, f_c}”.
+**`Stacks.Perfect.FractionClass.fractionClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassMap.lean, line 663](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassMap.lean#L663). The attribute's comment: “the canonical map c\_\{f\_1, …, f\_c}”.
 
 > **Stacks Project, Tag 0G7Q.** The canonical map
 > `c_{f₁, …, f_c} : i^{-1}(ℱ/(f₁, …, f_c)ℱ) ⟶ 𝓗ᶜ_Z(ℱ)`
@@ -878,7 +878,7 @@ public theorem pushforwardFractionClass_eq [F.IsQuasicoherent] :
         (Stacks.Perfect.CechLocalCohomology.pushforwardLocalCohomologyIso f F c).inv
 ```
 
-**`Stacks.Perfect.FractionClass.homEquiv_fractionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassMap.lean, line 695](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassMap.lean#L695). The attribute's comment: “c_{f_1, …, f_c} is the transpose of the fraction class”.
+**`Stacks.Perfect.FractionClass.homEquiv_fractionClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassMap.lean, line 695](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/FractionClassMap.lean#L695). The attribute's comment: “c\_\{f\_1, …, f\_c} is the transpose of the fraction class”.
 
 > **Stacks Project, Tag 0G7Q.** The map `c_{f₁, …, f_c}` is the transpose of the map from the
 > quotient `ℱ/(f₁, …, f_c)ℱ` to the direct image of the degree-`c` local cohomology sheaf.
@@ -890,7 +890,7 @@ public theorem homEquiv_fractionClass [F.IsQuasicoherent] :
       pushforwardFractionClass f F
 ```
 
-**`Stacks.Perfect.SupportedFraction.supportedFractionClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/SupportedFractionMap.lean, line 738](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/SupportedFractionMap.lean#L738). The attribute's comment: “i_* of the remark's map c_{f₁,…,f_c}, between its two presentations; no descent”.
+**`Stacks.Perfect.SupportedFraction.supportedFractionClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/SupportedFractionMap.lean, line 738](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/SupportedFractionMap.lean#L738). The attribute's comment: “i\_* of the remark's map c\_\{f₁,…,f\_c}, between its two presentations; no descent”.
 
 > **Stacks Project, Tag 0G7Q**, the class of the fraction `s / (f₁ ⋯ f_c)`.  With `X`,
 > `f₁, …, f_c ∈ Γ(X, 𝒪_X)` and `ℱ` as in Tag 0G7I, this is the map
@@ -923,7 +923,7 @@ public theorem supportedFractionClass_mk {d : ℕ} (f : Fin (d + 1) → Γ(X, �
       (cokernel.π (lastDif f F)).app V ((fractionHom f F d).app V s)
 ```
 
-**`Stacks.Perfect.SupportedFraction.fractionClassTrans`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/SupportedFractionNaturality.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/SupportedFractionNaturality.lean#L489). The attribute's comment: “the canonical map c_{f₁,…,f_c} : i^*ℱ ⟶ ℋ^c_Z(ℱ) together with its functoriality in the 𝒪_X-module ℱ, as a natural transformation between the two functors of ℱ: from ℱ ↦ i_*i^*ℱ, the cokernel of (f₁,…,f_c) as the remark presents it, to ℱ ↦ i_*ℋ^c_Z(ℱ); read on X along the fully faithful i_*, as the remark's last step and as Stacks 0G7T does for the twisted map”.
+**`Stacks.Perfect.SupportedFraction.fractionClassTrans`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/SupportedFractionNaturality.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/SupportedFractionNaturality.lean#L489). The attribute's comment: “the canonical map c\_\{f₁,…,f\_c} : i^*ℱ ⟶ ℋ^c\_Z(ℱ) together with its functoriality in the 𝒪\_X-module ℱ, as a natural transformation between the two functors of ℱ: from ℱ ↦ i\_*i^*ℱ, the cokernel of (f₁,…,f\_c) as the remark presents it, to ℱ ↦ i\_*ℋ^c\_Z(ℱ); read on X along the fully faithful i\_*, as the remark's last step and as Stacks 0G7T does for the twisted map”.
 
 > **Stacks Project, Tag 0G7Q.**  With `X` a scheme, `f₁, …, f_c ∈ Γ(X, 𝒪_X)` global functions
 > and `Z ⊆ X` the closed subscheme they cut out, there is a canonical map
@@ -965,7 +965,7 @@ public def fractionClassTrans {d : ℕ} (f : Fin (d + 1) → Γ(X, ⊤)) :
 
 [Tag 0G7R](https://stacks.math.columbia.edu/tag/0G7R) in the Stacks Project.
 
-**`Stacks.Perfect.AffineFractionClass.supportedFraction_eq_conj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/AffineFractionClassBijective.lean, line 673](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/AffineFractionClassBijective.lean#L673). The attribute's comment: “the description itself: Γ(Spec A, -) of Tag 0G7Q's map c_{f₁,…,f_c} for ℱ = M~, conjugated by the two canonical isomorphisms affineSourceEquiv and targetEquiv, IS the map Cech.supportedFraction of Tag 0G7R”.
+**`Stacks.Perfect.AffineFractionClass.supportedFraction_eq_conj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/AffineFractionClassBijective.lean, line 673](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/AffineFractionClassBijective.lean#L673). The attribute's comment: “the description itself: Γ(Spec A, -) of Tag 0G7Q's map c\_\{f₁,…,f\_c} for ℱ = M~, conjugated by the two canonical isomorphisms affineSourceEquiv and targetEquiv, IS the map Cech.supportedFraction of Tag 0G7R”.
 
 > **Clause 3 of Tag 0G7R.**  Let `A` be a commutative ring, let `f₁, …, f_c ∈ A` be a finite
 > nonempty family and let `M` be an `A`-module.  The map `c_{f₁,…,f_c}` of Tag 0G7Q for
@@ -988,7 +988,7 @@ public theorem supportedFraction_eq_conj (f : Fin (d + 1) → R) (M : ModuleCat.
           (affineSourceEquiv f M).toLinearMap)
 ```
 
-**`Stacks.Perfect.AffineFractionClass.targetEquiv_symm_Γ_supportedFractionClass_affineSourceEquiv_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/AffineFractionClassBijective.lean, line 715](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/AffineFractionClassBijective.lean#L715). The attribute's comment: “the example in one statement: for X = Spec A and ℱ = M~, Tag 0G7Q's map c_{f₁,…,f_c} on global sections, conjugated by the canonical isomorphisms affineSourceEquiv and targetEquiv, sends the class of s ∈ M to the class of the fraction s/(f₁⋯f_c) in Coker(⨁ᵢ M_{f₁⋯f̂ᵢ⋯f_c} ⟶ M_{f₁⋯f_c})”.
+**`Stacks.Perfect.AffineFractionClass.targetEquiv_symm_Γ_supportedFractionClass_affineSourceEquiv_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/AffineFractionClassBijective.lean, line 715](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/AffineFractionClassBijective.lean#L715). The attribute's comment: “the example in one statement: for X = Spec A and ℱ = M~, Tag 0G7Q's map c\_\{f₁,…,f\_c} on global sections, conjugated by the canonical isomorphisms affineSourceEquiv and targetEquiv, sends the class of s ∈ M to the class of the fraction s/(f₁⋯f\_c) in Coker(⨁ᵢ M\_\{f₁⋯f̂ᵢ⋯f\_c} ⟶ M\_\{f₁⋯f\_c})”.
 
 > **Tag 0G7R.**  Let `A` be a commutative ring, let `f₁, …, f_c ∈ A` and let `M` be an
 > `A`-module.  Take `X = Spec A` and `ℱ = M~`.  Then the map `c_{f₁,…,f_c}` of Tag 0G7Q, read on
@@ -1024,7 +1024,7 @@ public theorem targetEquiv_symm_Γ_supportedFractionClass_affineSourceEquiv_mk
           (LocalizedModule.mk s ⟨∏ i, f i, Submonoid.mem_powers _⟩))
 ```
 
-**`Stacks.Perfect.AffineFractionClassEmpty.targetIsoEmpty_inv_Γ_quotientClassMap_sourceIsoEmpty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/AffineFractionClassEmpty.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/AffineFractionClassEmpty.lean#L145). The attribute's comment: “the case c = 0: for X = Spec A, ℱ = M~ and the empty family, Tag 0G7Q's map on global sections, conjugated by the canonical isomorphisms sourceIsoEmpty and targetIsoEmpty, sends the class of s ∈ M to s/(f₁⋯f_c) = s/1”.
+**`Stacks.Perfect.AffineFractionClassEmpty.targetIsoEmpty_inv_Γ_quotientClassMap_sourceIsoEmpty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/AffineFractionClassEmpty.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/AffineFractionClassEmpty.lean#L145). The attribute's comment: “the case c = 0: for X = Spec A, ℱ = M~ and the empty family, Tag 0G7Q's map on global sections, conjugated by the canonical isomorphisms sourceIsoEmpty and targetIsoEmpty, sends the class of s ∈ M to s/(f₁⋯f\_c) = s/1”.
 
 > For the empty family (`c = 0`), let `A` be a commutative ring, let `M` be an `A`-module and
 > take `X = Spec A`, `ℱ = M~` and the empty family of equations. Then the map `c_{f₁, …, f_c}` of
@@ -1046,7 +1046,7 @@ theorem targetIsoEmpty_inv_Γ_quotientClassMap_sourceIsoEmpty (s : M) :
 
 [Tag 0G7S](https://stacks.math.columbia.edu/tag/0G7S) in the Stacks Project.
 
-**`Stacks.Perfect.SupportedFraction.supportedFractionClass_eq_det_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/ClassTarget.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/ClassTarget.lean#L391). The attribute's comment: “the determinant identity c_{f₁,…,f_c} = det(a_{ji})·c_{g₁,…,g_c} as ONE equation of maps into the common target i_*ℋ^c_Z(ℱ), together with the invertibility of the two identifications it is read through. The 0G7Q class maps of the f- and the g-complex are composed with cokernelLastDifToSupport -- cokernel of the last differential ≅ H^c of the complex ≅ i_*ℋ^c_Z(ℱ), the last step by the canonical comparison of Stacks 0G7L and its invertibility, which is Stacks 0G7M -- and are read on the common source ℱ through the two canonical epimorphisms ℱ ↠ i_*i^*ℱ; those are epimorphisms, so this is equivalent to the equality of the class maps and needs no chosen isomorphism between the two presentations of i_*i^*ℱ. The hypothesis used in place of the source's 'g₁,…,g_c cut out Z scheme theoretically' is the weaker set-level equality of the two common zero loci, so this is a GENERALIZATION and not a weakening: it suffices because RℋT depends only on the closed set T, so no scheme structure on Z enters the identification of the two targets”.
+**`Stacks.Perfect.SupportedFraction.supportedFractionClass_eq_det_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/ClassTarget.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/ClassTarget.lean#L391). The attribute's comment: “the determinant identity c\_\{f₁,…,f\_c} = det(a\_\{ji})·c\_\{g₁,…,g\_c} as ONE equation of maps into the common target i\_*ℋ^c\_Z(ℱ), together with the invertibility of the two identifications it is read through. The 0G7Q class maps of the f- and the g-complex are composed with cokernelLastDifToSupport -- cokernel of the last differential ≅ H^c of the complex ≅ i\_*ℋ^c\_Z(ℱ), the last step by the canonical comparison of Stacks 0G7L and its invertibility, which is Stacks 0G7M -- and are read on the common source ℱ through the two canonical epimorphisms ℱ ↠ i\_*i^*ℱ; those are epimorphisms, so this is equivalent to the equality of the class maps and needs no chosen isomorphism between the two presentations of i\_*i^*ℱ. The hypothesis used in place of the source's 'g₁,…,g\_c cut out Z scheme theoretically' is the weaker set-level equality of the two common zero loci, so this is a GENERALIZATION and not a weakening: it suffices because RℋT depends only on the closed set T, so no scheme structure on Z enters the identification of the two targets”.
 
 > **Stacks Project, Tag 0G7S**, the determinant identity as a single equation in a common
 > target.
@@ -1097,7 +1097,7 @@ public theorem supportedFractionClass_eq_det_smul {d : ℕ} (f g : Fin (d + 1) �
             cokernelLastDifToSupport g F (isClosed_equationsClosedSet f) hZ.le
 ```
 
-**`Stacks.Perfect.SupportedFraction.mixedFractionHom_projections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Cocycle.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Cocycle.lean#L361). The attribute's comment: “the source's own construction: the explicit degree-c cocycle on the mixed extended alternating Čech complex of f₁,…,f_c,g₁,…,g_c is a cocycle, and projects to s/(f₁⋯f_c) and to det(a)·s/(g₁⋯g_c). Stated at the level of the complexes, i.e. before the identification of the degree-c cohomology of the three complexes with i_*ℋ^c_Z(ℱ); that identification is Stacks 0G7M, and composing it with this statement to obtain the single equation c_{f₁,…,f_c} = det(a_{ji})·c_{g₁,…,g_c} is carried out in this module, in supportedFractionClass_eq_det_smul”.
+**`Stacks.Perfect.SupportedFraction.mixedFractionHom_projections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Cocycle.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Cocycle.lean#L361). The attribute's comment: “the source's own construction: the explicit degree-c cocycle on the mixed extended alternating Čech complex of f₁,…,f\_c,g₁,…,g\_c is a cocycle, and projects to s/(f₁⋯f\_c) and to det(a)·s/(g₁⋯g\_c). Stated at the level of the complexes, i.e. before the identification of the degree-c cohomology of the three complexes with i\_*ℋ^c\_Z(ℱ); that identification is Stacks 0G7M, and composing it with this statement to obtain the single equation c\_\{f₁,…,f\_c} = det(a\_\{ji})·c\_\{g₁,…,g\_c} is carried out in this module, in supportedFractionClass\_eq\_det\_smul”.
 
 > **Stacks Project, Tag 0G7S**, the determinant identity on the mixed extended alternating
 > Čech complex.
@@ -1146,7 +1146,7 @@ public theorem mixedFractionHom_projections (hg : ∀ j, g j = ∑ i, a j i * f 
         globalSmul a.det F ≫ fractionHom g F d
 ```
 
-**`Stacks.Perfect.SupportedFraction.mixedFractionHom_comp_cokernelπ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Cocycle.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Cocycle.lean#L396). The attribute's comment: “the same identity read on the two class maps c_{f₁,…,f_c} and c_{g₁,…,g_c} of Stacks 0G7Q, with the two sides in the cokernels of the last differentials of the two complexes rather than in a common i_*ℋ^c_Z(ℱ); the identification of those cokernels with i_*ℋ^c_Z(ℱ) is Stacks 0G7M, and composing it with this statement to obtain the single equation is supportedFractionClass_eq_det_smul in this module”.
+**`Stacks.Perfect.SupportedFraction.mixedFractionHom_comp_cokernelπ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Cocycle.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/DeterminantChangeOfEquations/Cocycle.lean#L396). The attribute's comment: “the same identity read on the two class maps c\_\{f₁,…,f\_c} and c\_\{g₁,…,g\_c} of Stacks 0G7Q, with the two sides in the cokernels of the last differentials of the two complexes rather than in a common i\_*ℋ^c\_Z(ℱ); the identification of those cokernels with i\_*ℋ^c\_Z(ℱ) is Stacks 0G7M, and composing it with this statement to obtain the single equation is supportedFractionClass\_eq\_det\_smul in this module”.
 
 > **Stacks Project, Tag 0G7S**, read on the classes of Stacks 0G7Q.
 >
@@ -1181,7 +1181,7 @@ public theorem mixedFractionHom_comp_cokernelπ (hg : ∀ j, g j = ∑ i, a j i 
 
 [Tag 0G7T](https://stacks.math.columbia.edu/tag/0G7T) in the Stacks Project.
 
-**`Stacks.Perfect.ConormalClass.conormalTwistClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/ConormalClass/Main.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/ConormalClass/Main.lean#L103). The attribute's comment: “the canonical map, as a natural transformation of functors of the module F; its value on a chart is conormalTwistClass_app_tmul”.
+**`Stacks.Perfect.ConormalClass.conormalTwistClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/ConormalClass/Main.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/ConormalClass/Main.lean#L103). The attribute's comment: “the canonical map, as a natural transformation of functors of the module F; its value on a chart is conormalTwistClass\_app\_tmul”.
 
 > The canonical map `⋀^c(𝒞_{Z/X})^∨ ⊗_{𝒪_Z} i^*ℱ ⟶ ℋ^c_Z(ℱ)`, functorial in `ℱ`, for a closed
 > immersion `i : Z ⟶ X` of finite presentation whose conormal sheaf `𝒞_{Z/X}` is finite locally
@@ -1196,7 +1196,7 @@ def conormalTwistClass :
     twistFunctor i c ⟶ supportCohomologySheafFunctor (isClosed_zeroLocus i) (c : ℤ)
 ```
 
-**`Stacks.Perfect.ConormalClass.conormalTwistClass_app_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/ConormalClass/Main.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/ConormalClass/Main.lean#L117). The attribute's comment: “canonicity: on every chart the map is the twisted fraction class of Stacks 0G7Q, λ ⊗ s ↦ c_{f₁, …, f_c}(λ(f₁ ∧ ⋯ ∧ f_c) s)”.
+**`Stacks.Perfect.ConormalClass.conormalTwistClass_app_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/ConormalClass/Main.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/ConormalClass/Main.lean#L117). The attribute's comment: “canonicity: on every chart the map is the twisted fraction class of Stacks 0G7Q, λ ⊗ s ↦ c\_\{f₁, …, f\_c}(λ(f₁ ∧ ⋯ ∧ f\_c) s)”.
 
 > The value of `conormalTwistClass` on a chart.  Let `W ⊆ X` be an open on which
 > `f₁, …, f_c` generate the ideal sheaf of `Z`, let `U ⊆ W` be open, `λ` a local section of
@@ -1260,7 +1260,7 @@ theorem not_isIso_cplxBaseChange_f_one :
     ¬ IsIso ((cplxBaseChange (diag k) (eqns k) (coeff k)).f 1)
 ```
 
-**`Stacks.Perfect.CechDegreeCBaseChange.supportedFractionSource_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/CechDegreeCBaseChange.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/CechDegreeCBaseChange.lean#L302). The attribute's comment: “the first diagram of the remark: the class map c_{f_1,...,f_c} of Tag 0G7Q commutes with base change, for quasi-coherent F, read on X in i_*H^c_Z(F) -- the spelling supportedFractionSource, which is the one Tag 0G7Q is itself registered at in SupportedFractionMap. Its top horizontal arrow IS the map of Cohomology Remark 0G78 on cohomology sheaves in degree c, which the remark's own sentence asserts: that identification is degreeCBaseChange_eq_homology_zeroG78 below, prefixed by the comparison the remark suppresses”.
+**`Stacks.Perfect.CechDegreeCBaseChange.supportedFractionSource_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/CechDegreeCBaseChange.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/CechDegreeCBaseChange.lean#L302). The attribute's comment: “the first diagram of the remark: the class map c\_\{f\_1,...,f\_c} of Tag 0G7Q commutes with base change, for quasi-coherent F, read on X in i\_*H^c\_Z(F) -- the spelling supportedFractionSource, which is the one Tag 0G7Q is itself registered at in SupportedFractionMap. Its top horizontal arrow IS the map of Cohomology Remark 0G78 on cohomology sheaves in degree c, which the remark's own sentence asserts: that identification is degreeCBaseChange\_eq\_homology\_zeroG78 below, prefixed by the comparison the remark suppresses”.
 
 > **The first diagram of [Stacks, Tag 0G7U]**: the class map `c_{f₁,…,f_c}` of
 > [Stacks, Tag 0G7Q], read on the coefficient module and in `i_*ℋ^c_Z(ℱ)`, commutes with base
@@ -1324,7 +1324,7 @@ public theorem degreeCBaseChange_eq_homology_zeroG78 [F.IsQuasicoherent] :
         (supportCohomologySheafPullbackIso g f F).hom
 ```
 
-**`Stacks.Perfect.CechDegreeCBaseChange.fractionClassTrans_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/CechDegreeCBaseChange.lean, line 922](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/CechDegreeCBaseChange.lean#L922). The attribute's comment: “the first diagram of the remark with all four arrows, for quasi-coherent F: the components of the Tag 0G7Q transformation c_{f_1,...,f_c} at F and at F' = g^*F on the quotients i_*i^*F = F/(f_1,...,f_c)F, the comparison of the two quotients as bottom arrow, and the degree-c comparison (the Tag 0G78 map in degree c) as top arrow; read on X' along the fully faithful i'_*”.
+**`Stacks.Perfect.CechDegreeCBaseChange.fractionClassTrans_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/CechDegreeCBaseChange.lean, line 922](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/CechDegreeCBaseChange.lean#L922). The attribute's comment: “the first diagram of the remark with all four arrows, for quasi-coherent F: the components of the Tag 0G7Q transformation c\_\{f\_1,...,f\_c} at F and at F' = g^*F on the quotients i\_*i^*F = F/(f\_1,...,f\_c)F, the comparison of the two quotients as bottom arrow, and the degree-c comparison (the Tag 0G78 map in degree c) as top arrow; read on X' along the fully faithful i'\_*”.
 
 > **The first diagram of [Stacks, Tag 0G7U], with all four of its arrows**, read on `X'` along
 > the fully faithful direct image `i'_*` along the inclusion of `Z'`: for a quasi-coherent
@@ -1366,7 +1366,7 @@ public theorem fractionClassTrans_baseChange [F.IsQuasicoherent] :
           ((Scheme.Modules.pullback g).obj F)
 ```
 
-**`Stacks.Perfect.CechDegreeCBaseChangeOnClosed.fractionClassOnClosed_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/CechDegreeCBaseChangeOnClosed.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/CechDegreeCBaseChangeOnClosed.lean#L344). The attribute's comment: “the first diagram of the remark on the closed subscheme Z', for quasi-coherent F: h^*c_{f_1,...,f_c} followed by the top arrow h^*H^c_Z(F) -> H^c_{Z'}(F') equals the canonical h^*i^*F -> (i')^*F' followed by c_{f'_1,...,f'_c}, with c the Tag 0G7Q map on the closed subset”.
+**`Stacks.Perfect.CechDegreeCBaseChangeOnClosed.fractionClassOnClosed_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/CechDegreeCBaseChangeOnClosed.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/CechDegreeCBaseChangeOnClosed.lean#L344). The attribute's comment: “the first diagram of the remark on the closed subscheme Z', for quasi-coherent F: h^*c\_\{f\_1,...,f\_c} followed by the top arrow h^*H^c\_Z(F) -> H^c\_\{Z'}(F') equals the canonical h^*i^*F -> (i')^*F' followed by c\_\{f'\_1,...,f'\_c}, with c the Tag 0G7Q map on the closed subset”.
 
 > **[Stacks, Tag 0G7U], the first diagram, on the closed subscheme `Z'`.**  Let `g : X' ⟶ X` be
 > a morphism of schemes, `f₁, …, f_c ∈ Γ(X, 𝒪_X)`, `f'ⱼ = g^♯(fⱼ)`, `Z ⊆ X` and `Z' ⊆ X'` the
@@ -1406,7 +1406,7 @@ theorem fractionClassOnClosed_baseChange [F.IsQuasicoherent] :
           ((Scheme.Modules.pullback g).obj F)
 ```
 
-**`Stacks.Perfect.CechDerivedBaseChange.derivedBaseChangeSquare_cech`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/CechDerivedBaseChange.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/CechDerivedBaseChange.lean#L375). The attribute's comment: “the derived diagram of the remark, with the remark's own lower horizontal arrow Lg^*F^bullet -> g^*F^bullet -> (F')^bullet and its own down arrow induced by Lg^*F -> g^*F = F', for an arbitrary O_X-module F”.
+**`Stacks.Perfect.CechDerivedBaseChange.derivedBaseChangeSquare_cech`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/CechDerivedBaseChange.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/CechDerivedBaseChange.lean#L375). The attribute's comment: “the derived diagram of the remark, with the remark's own lower horizontal arrow Lg^*F^bullet -> g^*F^bullet -> (F')^bullet and its own down arrow induced by Lg^*F -> g^*F = F', for an arbitrary O\_X-module F”.
 
 > **The derived diagram of [Stacks, Tag 0G7U] commutes**, for the lower horizontal arrow and
 > the down arrow the remark itself writes down.  This is
@@ -1429,7 +1429,7 @@ public theorem derivedBaseChangeSquare_cech :
           (isClosed_equationsClosedSet_pullback g f) (equationsClosedSet_pullback_subset g f)
 ```
 
-**`AlgebraicGeometry.ExtendedAlternatingCech.isPullback_equationsClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/EquationsBaseChange.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/EquationsBaseChange.lean#L276). The attribute's comment: “Z' = Z ×_X X' of the setting, as a pullback square of schemes”.
+**`AlgebraicGeometry.ExtendedAlternatingCech.isPullback_equationsClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/EquationsBaseChange.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/EquationsBaseChange.lean#L276). The attribute's comment: “Z' = Z ×\_X X' of the setting, as a pullback square of schemes”.
 
 > **Stacks Project, Tag 0G7U**, the assertion `Z' = Z ×_X X'` of the setting: the closed
 > subscheme cut out by the pulled-back equations `f'ᵢ = g^♯(fᵢ)` is the base change along `g` of
@@ -1446,7 +1446,7 @@ public theorem isPullback_equationsClosedSubscheme :
       (equationsClosedSubschemeBaseChange g f) g (equationsClosedSubschemeι f)
 ```
 
-**`AlgebraicGeometry.ExtendedAlternatingCech.equationsClosedSubschemePullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/EquationsBaseChange.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/EquationsBaseChange.lean#L291). The attribute's comment: “the identification Z' ≅ Z ×_X X' of the setting”.
+**`AlgebraicGeometry.ExtendedAlternatingCech.equationsClosedSubschemePullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/EquationsBaseChange.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportClosedSubset/EquationsBaseChange.lean#L291). The attribute's comment: “the identification Z' ≅ Z ×\_X X' of the setting”.
 
 > **Stacks Project, Tag 0G7U**, the identification `Z' = Z ×_X X'` of the setting, as an
 > isomorphism of schemes.

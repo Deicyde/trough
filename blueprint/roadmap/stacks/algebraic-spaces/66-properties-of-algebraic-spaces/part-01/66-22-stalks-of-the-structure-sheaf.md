@@ -179,7 +179,7 @@ theorem strictHenselizationEquivEtaleLocalRing_germ
       etaleLocalRingGerm B S hS F x (Opposite.op V) a
 ```
 
-**`AlgebraicGeometry.Space.etaleLocalRingChartIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleLocalRingEtaleInvariance.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleLocalRingEtaleInvariance.lean#L305). The attribute's comment: “O_{X, xbar} = O_{U, ubar}”.
+**`AlgebraicGeometry.Space.etaleLocalRingChartIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleLocalRingEtaleInvariance.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleLocalRingEtaleInvariance.lean#L305). The attribute's comment: “O\_\{X, xbar} = O\_\{U, ubar}”.
 
 > **Stacks 04KF, first equality.** Let `X` be an algebraic space over `S`, let `x̄` be a
 > geometric point of `X` and let `(U, ū)` be an étale neighbourhood of `x̄` with `U` a scheme.
@@ -259,7 +259,7 @@ theorem localRingDimension_eq_tfae (hF : IsAlgebraicSpace B S hS F)
 
 [Tag 0A4H](https://stacks.math.columbia.edu/tag/0A4H) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.dimensionAtPoint_eq_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionEtaleInvariance.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionEtaleInvariance.lean#L54). The attribute's comment: “dimension_at_point”.
+**`AlgebraicGeometry.Space.dimensionAtPoint_eq_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionEtaleInvariance.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionEtaleInvariance.lean#L54). The attribute's comment: “dimension\_at\_point”.
 
 > **Stacks 0A4H.** An étale morphism of algebraic spaces preserves the dimension at a
 > point.
@@ -272,7 +272,7 @@ theorem dimensionAtPoint_eq_of_isEtale (hX : IsAlgebraicSpace B S hS X)
       dimensionAtPoint B S hS Y hY (pointsMap B S hS X f x)
 ```
 
-**`AlgebraicGeometry.Space.localRingDimension_pointsMap_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionEtaleInvariance.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionEtaleInvariance.lean#L68). The attribute's comment: “dimension_local_ring”.
+**`AlgebraicGeometry.Space.localRingDimension_pointsMap_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionEtaleInvariance.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionEtaleInvariance.lean#L68). The attribute's comment: “dimension\_local\_ring”.
 
 > **Stacks 0A4H.** An étale morphism of algebraic spaces preserves the dimension of the
 > local ring at a point.
@@ -284,7 +284,7 @@ theorem localRingDimension_pointsMap_of_etale (hX : IsAlgebraicSpace B S hS X)
     localRingDimension B S hS (pointsMap B S hS X f x) = localRingDimension B S hS x
 ```
 
-**`AlgebraicGeometry.Space.dimension_eq_of_isEtale_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionEtaleInvariance.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionEtaleInvariance.lean#L81). The attribute's comment: “dimension_surjective”.
+**`AlgebraicGeometry.Space.dimension_eq_of_isEtale_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DimensionEtaleInvariance.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DimensionEtaleInvariance.lean#L81). The attribute's comment: “dimension\_surjective”.
 
 > **Stacks 0A4H.** A surjective étale morphism of algebraic spaces preserves the
 > dimension.

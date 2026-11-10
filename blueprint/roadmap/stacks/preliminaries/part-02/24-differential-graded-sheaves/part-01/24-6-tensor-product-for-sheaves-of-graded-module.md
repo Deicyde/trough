@@ -42,7 +42,7 @@ noncomputable def gradedTensorFunctor :
     GradedModule.{t, m, m} A ⥤ GradedObject ℤ (SheafOfModules.{m} (toRingCat J Osharp))
 ```
 
-**`SheafOfModules.RelativeTensor.unitorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedRelativeTensorUnitor.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedRelativeTensorUnitor.lean#L298). The attribute's comment: “the unit isomorphism A ⊗_A N ≅ N of the relative tensor product, in degree n”.
+**`SheafOfModules.RelativeTensor.unitorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedRelativeTensorUnitor.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedRelativeTensorUnitor.lean#L298). The attribute's comment: “the unit isomorphism A ⊗\_A N ≅ N of the relative tensor product, in degree n”.
 
 > **The unit isomorphism of the relative tensor product**: `A ⊗_A N ≅ N` in degree `n`, for `A`
 > a sheaf of graded algebras acting on itself on the right and `N` a left graded `A`-module.

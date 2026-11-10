@@ -31,7 +31,7 @@ theorem exists_isStandardOpenCoverOfSpectrum_refinement {U : X.Opens} (hU : IsAf
         ∀ j, X.basicOpen (g j) ≤ W (a j)
 ```
 
-**`PrimeSpectrum.ringRestrictionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean#L55). The attribute's comment: “ring_restriction_map”.
+**`PrimeSpectrum.ringRestrictionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean#L55). The attribute's comment: “ring\_restriction\_map”.
 
 > The canonical `R`-algebra map `R_f → R_g` attached to an inclusion `D(g) ⊆ D(f)`.
 
@@ -41,7 +41,7 @@ noncomputable def ringRestrictionMap {R : Type u} [CommRing R] (f g : R)
     Localization.Away f →ₐ[R] Localization.Away g
 ```
 
-**`PrimeSpectrum.ringRestrictionMap_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean#L66). The attribute's comment: “ring_restriction_map”.
+**`PrimeSpectrum.ringRestrictionMap_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean#L66). The attribute's comment: “ring\_restriction\_map”.
 
 > The restriction map is canonical: it is the unique `R`-algebra
 > homomorphism from `R_f` to `R_g`.
@@ -53,7 +53,7 @@ theorem ringRestrictionMap_unique {R : Type u} [CommRing R] (f g : R)
     φ = ringRestrictionMap f g hfg
 ```
 
-**`PrimeSpectrum.moduleRestrictionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean#L76). The attribute's comment: “module_restriction_map”.
+**`PrimeSpectrum.moduleRestrictionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean#L76). The attribute's comment: “module\_restriction\_map”.
 
 > The canonical `R_f`-linear restriction map `M_f → M_g` associated to an inclusion
 > `D(g) ⊆ D(f)`.
@@ -69,7 +69,7 @@ noncomputable def moduleRestrictionMap {R : Type u} [CommRing R]
       LocalizedModule.Away (R := R) g M
 ```
 
-**`PrimeSpectrum.moduleRestrictionMap_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean#L118). The attribute's comment: “module_restriction_map”.
+**`PrimeSpectrum.moduleRestrictionMap_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean#L118). The attribute's comment: “module\_restriction\_map”.
 
 > The module restriction map agrees with the canonical localization maps on
 > elements of `M`.
@@ -83,7 +83,7 @@ theorem moduleRestrictionMap_mk {R : Type u} [CommRing R]
       LocalizedModule.mkLinearMap (Submonoid.powers g) M m
 ```
 
-**`PrimeSpectrum.moduleRestrictionMap_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean#L130). The attribute's comment: “module_restriction_map”.
+**`PrimeSpectrum.moduleRestrictionMap_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/RestrictionMaps.lean#L130). The attribute's comment: “module\_restriction\_map”.
 
 > An `R_f`-linear map `M_f → M_g` which agrees with the localization maps
 > from `M` is the canonical module restriction map.
@@ -104,7 +104,7 @@ theorem moduleRestrictionMap_unique {R : Type u} [CommRing R]
     F = moduleRestrictionMap f g hfg
 ```
 
-**`PrimeSpectrum.basicOpen_le_iSup_iff_span_algebraMap_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/StandardOpenCover.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/StandardOpenCover.lean#L66). The attribute's comment: “cover_iff_unit_ideal”.
+**`PrimeSpectrum.basicOpen_le_iSup_iff_span_algebraMap_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/StandardOpenCover.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/StandardOpenCover.lean#L66). The attribute's comment: “cover\_iff\_unit\_ideal”.
 
 > A standard open `D(f)` is contained in the union of the standard opens `D(g i)` if and only
 > if the images of the `g i` generate the unit ideal after localizing away from `f`.
@@ -117,7 +117,7 @@ theorem basicOpen_le_iSup_iff_span_algebraMap_eq_top
       Ideal.span (Set.range fun i ↦ algebraMap R S (g i)) = ⊤
 ```
 
-**`PrimeSpectrum.exists_finite_basicOpen_refinement`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/StandardOpenCover.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/StandardOpenCover.lean#L88). The attribute's comment: “finite_standard_refinement”.
+**`PrimeSpectrum.exists_finite_basicOpen_refinement`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/StandardOpenCover.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/StandardOpenCover.lean#L88). The attribute's comment: “finite\_standard\_refinement”.
 
 > Every open cover of a standard open in the prime spectrum has a finite
 > refinement by standard opens.
@@ -131,7 +131,7 @@ lemma exists_finite_basicOpen_refinement {R : Type u} [CommSemiring R]
         ∀ j, PrimeSpectrum.basicOpen (g j) ≤ U (a j)
 ```
 
-**`PrimeSpectrum.exists_pow_eq_mul_of_basicOpen_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/StandardOpenCover.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/StandardOpenCover.lean#L128). The attribute's comment: “power_divisible”. References: EGA I (1.1.9), “partial”.
+**`PrimeSpectrum.exists_pow_eq_mul_of_basicOpen_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/StandardOpenCover.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/StandardOpenCover.lean#L128). The attribute's comment: “power\_divisible”. References: EGA I (1.1.9), “partial”.
 
 > If `D(g) ⊆ D(f)`, a positive power of `g` is a multiple of `f`.
 
@@ -143,7 +143,7 @@ theorem exists_pow_eq_mul_of_basicOpen_le {R : Type*} [CommRing R] {f g : R}
 
 Declarations registered for the tag:
 
-- [`PrimeSpectrum.basicOpen_le_basicOpen_iff_algebraMap_isUnit`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PrimeSpectrum.basicOpen_le_basicOpen_iff_algebraMap_isUnit#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/StandardOpenCover.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/StandardOpenCover.lean#L44) (StacksFrontier): “invertible_on_smaller_open”. References: EGA I (1.3.2), “(a) ⇔ (f)”.
+- [`PrimeSpectrum.basicOpen_le_basicOpen_iff_algebraMap_isUnit`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PrimeSpectrum.basicOpen_le_basicOpen_iff_algebraMap_isUnit#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Zariski/StandardOpenCover.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Zariski/StandardOpenCover.lean#L44) (StacksFrontier): “invertible\_on\_smaller\_open”. References: EGA I (1.3.2), “(a) ⇔ (f)”.
 
 ## Tag 01HT, a definition
 
@@ -173,7 +173,7 @@ abbrev IsStandardOpenCoverOfSpectrum {R : Type u} [CommRing R] {n : ℕ} (g : Fi
 Declarations registered for the tag:
 
 - [`Spec.structureSheaf`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Spec.structureSheaf#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L82) (StacksFrontier): “(1) the structure sheaf”.
-- [`StructureSheaf.IsLocalization.to_basicOpen`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=StructureSheaf.IsLocalization.to_basicOpen#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L83) (StacksFrontier): “(1) its sections over a standard open D(f) are the localization R_f”.
+- [`StructureSheaf.IsLocalization.to_basicOpen`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=StructureSheaf.IsLocalization.to_basicOpen#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L83) (StacksFrontier): “(1) its sections over a standard open D(f) are the localization R\_f”.
 - [`Spec.locallyRingedSpaceObj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Spec.locallyRingedSpaceObj#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L85) (StacksFrontier): “(2) the spectrum as a locally ringed space”.
 - [`tilde`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=tilde#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L86) (StacksFrontier): “(3) the sheaf of modules associated to a module”.
 
@@ -181,7 +181,7 @@ Declarations registered for the tag:
 
 [Tag 01HV](https://stacks.math.columbia.edu/tag/01HV) in the Stacks Project.
 
-**`AlgebraicGeometry.tilde.basicOpen_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean#L146). The attribute's comment: “functorial_identifications”.
+**`AlgebraicGeometry.tilde.basicOpen_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean#L146). The attribute's comment: “functorial\_identifications”.
 
 > Under the canonical localization identifications, the map on sections
 > over a standard open induced by a module map is its localization.
@@ -200,7 +200,7 @@ theorem basicOpen_map {R : CommRingCat.{u}} {M N : ModuleCat.{u} R}
           (LocalizedModule.mkLinearMap (Submonoid.powers a) N) f.hom m)
 ```
 
-**`AlgebraicGeometry.tilde.toStalk_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean#L179). The attribute's comment: “functorial_identifications”.
+**`AlgebraicGeometry.tilde.toStalk_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean#L179). The attribute's comment: “functorial\_identifications”.
 
 > The canonical identification of the stalk of an associated sheaf with
 > localization at a prime is natural in the module.
@@ -215,7 +215,7 @@ theorem toStalk_map {R : CommRingCat.{u}} {M N : ModuleCat.{u} R}
         (tilde.toStalk M x).hom (tilde.toStalk N x).hom f.hom m
 ```
 
-**`AlgebraicGeometry.StructureSheaf.map_basicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean#L74). The attribute's comment: “restriction_maps”.
+**`AlgebraicGeometry.StructureSheaf.map_basicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean#L74). The attribute's comment: “restriction\_maps”.
 
 > Under the canonical identifications of sections on standard opens with localizations,
 > restriction in the structure sheaf is the canonical map `R_f → R_g`.
@@ -233,7 +233,7 @@ theorem map_basicOpen {R : CommRingCat.{u}} (f g : R)
         (PrimeSpectrum.ringRestrictionMap f g hfg).toRingHom
 ```
 
-**`AlgebraicGeometry.tilde.map_basicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean#L111). The attribute's comment: “restriction_maps”.
+**`AlgebraicGeometry.tilde.map_basicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean#L111). The attribute's comment: “restriction\_maps”.
 
 > Sections of the associated sheaf on `D(f)` and `D(g)` are canonically isomorphic to `M_f`
 > and `M_g`. The isomorphisms identify sheaf restriction with the canonical map `M_f → M_g`.
@@ -252,18 +252,18 @@ theorem map_basicOpen {R : CommRingCat.{u}} (M : ModuleCat.{u} R) (f g : R)
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.tilde.functor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.tilde.functor#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean, line 32](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean#L32) (StacksFrontier): “functorial_identifications”. References: EGA I (1.3.5); EGA II (1.4.4), “partial”.
-- [`AlgebraicGeometry.tilde.toOpen_map_app`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.tilde.toOpen_map_app#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean#L35) (StacksFrontier): “functorial_identifications”.
-- [`AlgebraicGeometry.tilde.toTildeΓNatIso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.tilde.toTildeΓNatIso#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean#L36) (StacksFrontier): “functorial_identifications”. References: EGA I (1.3.7); EGA I (10.10.2), “(i), special case”.
-- [`AlgebraicGeometry.instIsLeftAdjointModuleCatCarrierModulesSpecFunctor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.instIsLeftAdjointModuleCatCarrierModulesSpecFunctor#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean#L39) (StacksFrontier): “tilde_exact”.
-- [`AlgebraicGeometry.StructureSheaf.globalSectionsIso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.StructureSheaf.globalSectionsIso#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean#L48) (StacksFrontier): “global_structure_sections”. References: EGA I (1.3.7), “Case M = A”; EGA I (10.1.3), “special case”.
-- [`AlgebraicGeometry.tilde.isoTop`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.tilde.isoTop#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean#L51) (StacksFrontier): “global_module_sections”. References: EGA I (1.3.7); EGA I (10.10.2), “(i), special case”.
-- [`AlgebraicGeometry.StructureSheaf.IsLocalization.to_basicOpen`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.StructureSheaf.IsLocalization.to_basicOpen#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean#L54) (StacksFrontier): “basic_open_structure_sections”. References: EGA I (9.3.2), “special case”; EGA I (9.3.3), “special case”; EGA III (1.2.2), “special case”.
-- [`AlgebraicGeometry.tilde.instAwayCarrierCarrierObjOppositeOpensCarrierCarrierCommRingCatSpecModuleCatPresheafModulesSheafModulesSpecToSheafOpBasicOpenHomToOpen`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.tilde.instAwayCarrierCarrierObjOppositeOpensCarrierCarrierCommRingCatSpecModuleCatPresheafModulesSheafModulesSpecToSheafOpBasicOpenHomToOpen#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean#L59) (StacksFrontier): “basic_open_module_sections”. References: EGA I (1.3.7).
-- [`AlgebraicGeometry.StructureSheaf.IsLocalization.to_stalk`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.StructureSheaf.IsLocalization.to_stalk#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean#L63) (StacksFrontier): “structure_stalk”.
-- [`AlgebraicGeometry.tilde.instIsLocalizedModuleCarrierCarrierOfCarrierStalkAbPresheafPrimeComplAsIdealHomToStalk`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.tilde.instIsLocalizedModuleCarrierCarrierOfCarrierStalkAbPresheafPrimeComplAsIdealHomToStalk#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean#L64) (StacksFrontier): “module_stalk”.
-- [`AlgebraicGeometry.tilde.preservesFiniteLimits`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/TildeExactness.lean#L54), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Homology/PseudoCoherentRelative/TildeExact.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherentRelative/TildeExact.lean#L276) (StacksFrontier): “tilde_exact: left exactness”.
-- [`Stacks.AffineTilde.tildeFunctor_preservesHomology`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherentRelative/TildeExact.lean#L265), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Homology/PseudoCoherentRelative/TildeExact.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherentRelative/TildeExact.lean#L278) (StacksFrontier): “tilde_exact: exactness as preservation of homology”.
+- [`AlgebraicGeometry.tilde.functor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.tilde.functor#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean, line 32](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean#L32) (StacksFrontier): “functorial\_identifications”. References: EGA I (1.3.5); EGA II (1.4.4), “partial”.
+- [`AlgebraicGeometry.tilde.toOpen_map_app`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.tilde.toOpen_map_app#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean#L35) (StacksFrontier): “functorial\_identifications”.
+- [`AlgebraicGeometry.tilde.toTildeΓNatIso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.tilde.toTildeΓNatIso#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean#L36) (StacksFrontier): “functorial\_identifications”. References: EGA I (1.3.7); EGA I (10.10.2), “(i), special case”.
+- [`AlgebraicGeometry.instIsLeftAdjointModuleCatCarrierModulesSpecFunctor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.instIsLeftAdjointModuleCatCarrierModulesSpecFunctor#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Functoriality.lean#L39) (StacksFrontier): “tilde\_exact”.
+- [`AlgebraicGeometry.StructureSheaf.globalSectionsIso`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.StructureSheaf.globalSectionsIso#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean#L48) (StacksFrontier): “global\_structure\_sections”. References: EGA I (1.3.7), “Case M = A”; EGA I (10.1.3), “special case”.
+- [`AlgebraicGeometry.tilde.isoTop`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.tilde.isoTop#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean#L51) (StacksFrontier): “global\_module\_sections”. References: EGA I (1.3.7); EGA I (10.10.2), “(i), special case”.
+- [`AlgebraicGeometry.StructureSheaf.IsLocalization.to_basicOpen`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.StructureSheaf.IsLocalization.to_basicOpen#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean#L54) (StacksFrontier): “basic\_open\_structure\_sections”. References: EGA I (9.3.2), “special case”; EGA I (9.3.3), “special case”; EGA III (1.2.2), “special case”.
+- [`AlgebraicGeometry.tilde.instAwayCarrierCarrierObjOppositeOpensCarrierCarrierCommRingCatSpecModuleCatPresheafModulesSheafModulesSpecToSheafOpBasicOpenHomToOpen`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.tilde.instAwayCarrierCarrierObjOppositeOpensCarrierCarrierCommRingCatSpecModuleCatPresheafModulesSheafModulesSpecToSheafOpBasicOpenHomToOpen#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean#L59) (StacksFrontier): “basic\_open\_module\_sections”. References: EGA I (1.3.7).
+- [`AlgebraicGeometry.StructureSheaf.IsLocalization.to_stalk`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.StructureSheaf.IsLocalization.to_stalk#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean#L63) (StacksFrontier): “structure\_stalk”.
+- [`AlgebraicGeometry.tilde.instIsLocalizedModuleCarrierCarrierOfCarrierStalkAbPresheafPrimeComplAsIdealHomToStalk`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.tilde.instIsLocalizedModuleCarrierCarrierOfCarrierStalkAbPresheafPrimeComplAsIdealHomToStalk#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/Sections.lean#L64) (StacksFrontier): “module\_stalk”.
+- [`AlgebraicGeometry.tilde.preservesFiniteLimits`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/TildeExactness.lean#L54), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Homology/PseudoCoherentRelative/TildeExact.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherentRelative/TildeExact.lean#L276) (StacksFrontier): “tilde\_exact: left exactness”.
+- [`Stacks.AffineTilde.tildeFunctor_preservesHomology`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherentRelative/TildeExact.lean#L265), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Homology/PseudoCoherentRelative/TildeExact.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherentRelative/TildeExact.lean#L278) (StacksFrontier): “tilde\_exact: exactness as preservation of homology”.
 
 ## Tag 01HW, a definition
 

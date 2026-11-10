@@ -103,7 +103,7 @@ def IsAdicConstructibleModuleSheaf
     (F : Sheaf (Scheme.ProEt.topology X) (ModuleCat.{max (u + 1) v w} Λ)) : Prop
 ```
 
-**`AlgebraicGeometry.ProEtale.IsAdicLisse`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AdicSheaves.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AdicSheaves.lean#L77). The attribute's comment: “adic_lisse_sheaf”.
+**`AlgebraicGeometry.ProEtale.IsAdicLisse`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AdicSheaves.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/AdicSheaves.lean#L77). The attribute's comment: “adic\_lisse\_sheaf”.
 
 > A sheaf which is pro-étale locally the completed constant sheaf of a fixed
 > `I`-adically complete module with finite quotient modulo `I`.

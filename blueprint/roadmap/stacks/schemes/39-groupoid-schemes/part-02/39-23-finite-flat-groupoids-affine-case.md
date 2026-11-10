@@ -119,7 +119,7 @@ theorem isIntegral_over_invariantRing {S : Scheme.{u}} (G : GroupoidScheme S)
 
 [Tag 03BK](https://stacks.math.columbia.edu/tag/03BK) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.canonicalMapToInvariantFunctions_bijective_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/FlatInvariants.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/FlatInvariants.lean#L133). The attribute's comment: “flat_invariants”.
+**`AlgebraicGeometry.GroupoidScheme.canonicalMapToInvariantFunctions_bijective_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/FlatInvariants.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/FlatInvariants.lean#L133). The attribute's comment: “flat\_invariants”.
 
 > For a flat extension of the invariant ring of an affine groupoid scheme, the canonical map
 > from the new base ring to the invariant functions of the base-changed groupoid is bijective.
@@ -131,7 +131,7 @@ theorem canonicalMapToInvariantFunctions_bijective_of_flat {S : Scheme.{u}}
     Function.Bijective G'.canonicalMapToInvariantFunctions
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.exists_affineInvariantBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantBaseChange.lean, line 571](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantBaseChange.lean#L571). The attribute's comment: “base_changed_groupoid”.
+**`AlgebraicGeometry.GroupoidScheme.exists_affineInvariantBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantBaseChange.lean, line 571](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantBaseChange.lean#L571). The attribute's comment: “base\_changed\_groupoid”.
 
 > **Stacks Project, Tag 03BK.** Extending the coordinate rings of an affine groupoid scheme
 > from its invariant ring produces the indicated groupoid scheme, with finite locally free source
@@ -145,7 +145,7 @@ theorem exists_affineInvariantBaseChange {S : Scheme.{u}} (G : GroupoidScheme S)
     Nonempty (AffineInvariantBaseChange G C')
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.isNilpotent_of_mem_ker_canonicalMapToInvariantFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/NilpotentKernel.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/NilpotentKernel.lean#L48). The attribute's comment: “nilpotent_kernel”.
+**`AlgebraicGeometry.GroupoidScheme.isNilpotent_of_mem_ker_canonicalMapToInvariantFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/NilpotentKernel.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/NilpotentKernel.lean#L48). The attribute's comment: “nilpotent\_kernel”.
 
 > Each element killed by the canonical map from the base ring to the invariant functions of the
 > base-changed groupoid is nilpotent.
@@ -158,7 +158,7 @@ theorem isNilpotent_of_mem_ker_canonicalMapToInvariantFunctions {S : Scheme.{u}}
     (hf : f ∈ RingHom.ker G'.canonicalMapToInvariantFunctions) : IsNilpotent f
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.exists_polynomial_map_eq_pow_X_sub_C`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/PolynomialDescent.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/PolynomialDescent.lean#L479). The attribute's comment: “polynomial_descent”.
+**`AlgebraicGeometry.GroupoidScheme.exists_polynomial_map_eq_pow_X_sub_C`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/PolynomialDescent.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/PolynomialDescent.lean#L479). The attribute's comment: “polynomial\_descent”.
 
 > A positive power of the linear polynomial of an invariant function after base change comes
 > from the new base ring.
@@ -253,7 +253,7 @@ theorem base_objectsToInvariantSpectrum_eq_iff {S : Scheme.{u}} (G : GroupoidSch
 
 [Tag 0DT9](https://stacks.math.columbia.edu/tag/0DT9) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.etale_invariantRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleInvariantRingMapAssembly.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleInvariantRingMapAssembly.lean#L384). The attribute's comment: “the FIRST conclusion: the map C -> C' from the R-invariant functions on U to the R'-invariant functions on U' is etale. Together with isPullback_mapObjects, which is the second conclusion, this is the whole statement of the tag”.
+**`AlgebraicGeometry.GroupoidScheme.etale_invariantRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleInvariantRingMapAssembly.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleInvariantRingMapAssembly.lean#L384). The attribute's comment: “the FIRST conclusion: the map C -> C' from the R-invariant functions on U to the R'-invariant functions on U' is etale. Together with isPullback\_mapObjects, which is the second conclusion, this is the whole statement of the tag”.
 
 > **The first conclusion of [Stacks Project, Tag 0DT9]: the map `C ⟶ C'` from the `R`-invariant
 > functions on `U` to the `R'`-invariant functions on `U'` is étale.**
@@ -278,7 +278,7 @@ theorem etale_invariantRingMap
     (invariantRingMap F).Etale
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.isPullback_mapObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleInvariantRingMapAssembly.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleInvariantRingMapAssembly.lean#L404). The attribute's comment: “the SECOND conclusion: U' is the fibre product of Spec C' and U over Spec C. Unconditional: the premise that C -> C' is etale is supplied by etale_invariantRingMap, the tag's first conclusion”.
+**`AlgebraicGeometry.GroupoidScheme.isPullback_mapObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleInvariantRingMapAssembly.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleInvariantRingMapAssembly.lean#L404). The attribute's comment: “the SECOND conclusion: U' is the fibre product of Spec C' and U over Spec C. Unconditional: the premise that C -> C' is etale is supplied by etale\_invariantRingMap, the tag's first conclusion”.
 
 > **The second conclusion of [Stacks Project, Tag 0DT9]: `U' = Spec C' ×_{Spec C} U`.**
 >

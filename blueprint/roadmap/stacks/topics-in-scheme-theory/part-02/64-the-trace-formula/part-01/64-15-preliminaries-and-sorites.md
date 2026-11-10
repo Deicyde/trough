@@ -28,7 +28,7 @@ theorem epsilon_comp_mk (R : Type u) (G : Type v) [Ring R] [Group G] :
 
 [Tag 03U6](https://stacks.math.columbia.edu/tag/03U6) in the Stacks Project.
 
-**`Stacks.Trace.groupTrace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Trace/Preliminaries/GroupTrace.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Trace/Preliminaries/GroupTrace.lean#L143). References: SGA 4½ Rapport (5.5), “tr_Λ^H definition”.
+**`Stacks.Trace.groupTrace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Trace/Preliminaries/GroupTrace.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Trace/Preliminaries/GroupTrace.lean#L143). References: SGA 4½ Rapport (5.5), “tr\_Λ^H definition”.
 
 > The group trace of an endomorphism of a finite projective group-ring module.
 
@@ -198,7 +198,7 @@ theorem MonoidExtensionByNat.diagonalTensorCentralizerTrace_eq
 
 [Tag 03UD](https://stacks.math.columbia.edu/tag/03UD) in the Stacks Project.
 
-**`Stacks.Trace.coinvariantRepresentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Trace/Sorites/Coinvariants.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Trace/Sorites/Coinvariants.lean#L157). The attribute's comment: “the action on coinvariants”. References: SGA 4½ Rapport (5.10), “action of G^+ on P_H”.
+**`Stacks.Trace.coinvariantRepresentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Trace/Sorites/Coinvariants.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Trace/Sorites/Coinvariants.lean#L157). The attribute's comment: “the action on coinvariants”. References: SGA 4½ Rapport (5.10), “action of G^+ on P\_H”.
 
 > The canonical action of the quotient monoid `ℕ` on the coinvariants.  Its
 > specification records compatibility with every lift in `Γ`.
@@ -226,7 +226,7 @@ lemma coinvariants_module_finite
     Module.Finite Λ (coinvariants σ)
 ```
 
-**`Stacks.Trace.coinvariants_module_projective`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Trace/Sorites/Coinvariants.lean, line 535](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Trace/Sorites/Coinvariants.lean#L535). The attribute's comment: “projectivity of the coinvariants”. References: SGA 4½ Rapport (5.10), “P_H projective over Λ”.
+**`Stacks.Trace.coinvariants_module_projective`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Trace/Sorites/Coinvariants.lean, line 535](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Trace/Sorites/Coinvariants.lean#L535). The attribute's comment: “projectivity of the coinvariants”. References: SGA 4½ Rapport (5.10), “P\_H projective over Λ”.
 
 > The coinvariants of a finite `Λ[G]`-projective representation are
 > projective over `Λ`.

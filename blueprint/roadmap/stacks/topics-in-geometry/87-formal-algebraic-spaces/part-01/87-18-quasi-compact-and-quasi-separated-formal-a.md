@@ -107,7 +107,7 @@ theorem exists_isFundamentalSystemOfIdealsOfDefinitionOn_of_isFormalScheme
 
 [Tag 0DE8](https://stacks.math.columbia.edu/tag/0DE8) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_iff_isAffine_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineOfAffineReduction.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineOfAffineReduction.lean#L396). The attribute's comment: “affineness of the reduction rendered as its being the sheaf of an object of the site with affine underlying scheme, the shape Stacks 0AIN delivers in the affine case; stated for an arbitrary reduction i : X_red -> X, which generalizes the source's canonical one”.
+**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_iff_isAffine_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineOfAffineReduction.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineOfAffineReduction.lean#L396). The attribute's comment: “affineness of the reduction rendered as its being the sheaf of an object of the site with affine underlying scheme, the shape Stacks 0AIN delivers in the affine case; stated for an arbitrary reduction i : X\_red -> X, which generalizes the source's canonical one”.
 
 > **Stacks 0DE8.** Let `S` be a scheme contained in a big fppf site `B` and let `X` be a formal
 > algebraic space over `S` with reduction `i : X_red ⟶ X` as in Stacks 0AIN. Then `X` is an affine

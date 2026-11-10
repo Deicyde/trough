@@ -32,7 +32,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Yoneda.fullyFaithful`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Yoneda.fullyFaithful#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch59.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch59.lean#L145) (StacksFrontier). References: EGA 0 (8.1.7); SGA 3 I (1.1); SGA 3 I (1.1.1), “Hom_D(X”; SGA 4 I (1.4).
+- [`CategoryTheory.Yoneda.fullyFaithful`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Yoneda.fullyFaithful#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch59.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch59.lean#L145) (StacksFrontier). References: EGA 0 (8.1.7); SGA 3 I (1.1); SGA 3 I (1.1.1), “Hom\_D(X”; SGA 4 I (1.4).
 
 ## Depends on
 

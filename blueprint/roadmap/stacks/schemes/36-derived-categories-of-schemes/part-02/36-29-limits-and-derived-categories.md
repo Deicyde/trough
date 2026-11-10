@@ -28,7 +28,7 @@ structure AlgebraicGeometry.DescentSituation (I : Type v) [Preorder I]
 
 [Tag 09RE](https://stacks.math.columbia.edu/tag/09RE) in the Stacks Project.
 
-**`AlgebraicGeometry.DescentSituation.homProjection_homTransition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean#L206). The attribute's comment: “the maps to Hom(E, K) are compatible with the transition maps of the directed system, for all E_0 and K_0”.
+**`AlgebraicGeometry.DescentSituation.homProjection_homTransition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean#L206). The attribute's comment: “the maps to Hom(E, K) are compatible with the transition maps of the directed system, for all E\_0 and K\_0”.
 
 > **The cocone clause of the conclusion of Stacks 09RE.** Pushing a homomorphism from the
 > stage `i` to the stage `j` and then to the limit gives the same homomorphism `E ⟶ K` as pushing
@@ -44,7 +44,7 @@ theorem homProjection_homTransition (i j : D.Stages) (h : i ≤ j)
     homProjection E₀ K₀ j (homTransition E₀ K₀ i j h g) = homProjection E₀ K₀ i g
 ```
 
-**`AlgebraicGeometry.DescentSituation.homTransition_homTransition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean#L225). The attribute's comment: “the directed system whose colimit the tag takes: its transition maps compose, for all E_0 and K_0”.
+**`AlgebraicGeometry.DescentSituation.homTransition_homTransition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/LimitHomDescent.lean#L225). The attribute's comment: “the directed system whose colimit the tag takes: its transition maps compose, for all E\_0 and K\_0”.
 
 > **The maps of the directed system of Stacks 09RE compose.** For `i ≤ j ≤ k` among the
 > stages, pushing a homomorphism from the stage `i` to the stage `j` and then to the stage `k`
@@ -186,7 +186,7 @@ theorem perfectTransitionComp_coherence {i j k l : I} (h : i ≤ j) (h' : j ≤ 
         ((D.perfectTransitionComp (h.trans h') h'').app E).hom
 ```
 
-**`AlgebraicGeometry.AffinePerfectLimit.exists_isPerfect_stage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjectsSupplement.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjectsSupplement.lean#L53). The attribute's comment: “essential surjectivity of the comparison out of the colimit, in the affine base case of the source's induction: for a filtered system of rings with colimit R, every perfect object of D(𝒪_{Spec R}) is derived pullback of a perfect object at a stage. The induction over the quasi-compact opens of S_0 that globalises it is not included, and neither is full faithfulness”.
+**`AlgebraicGeometry.AffinePerfectLimit.exists_isPerfect_stage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjectsSupplement.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/LimitPerfectObjectsSupplement.lean#L53). The attribute's comment: “essential surjectivity of the comparison out of the colimit, in the affine base case of the source's induction: for a filtered system of rings with colimit R, every perfect object of D(𝒪\_\{Spec R}) is derived pullback of a perfect object at a stage. The induction over the quasi-compact opens of S\_0 that globalises it is not included, and neither is full faithfulness”.
 
 > **Stacks 09RF**, the affine base case of essential surjectivity. Let `i ↦ R_i` be a filtered
 > diagram of commutative rings whose colimit is computed on underlying sets, with colimit cocone `c`,

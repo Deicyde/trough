@@ -114,7 +114,7 @@ theorem coherentDimensionLayerImageChowHom_coherentDimensionKZeroMk (C : ChowSit
       QuotientAddGroup.mk' (rationalEquivalences C f k) (layerCycleOfLE C f k F F.property)
 ```
 
-**`Stacks.Chow.coherentDimensionLayerImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerKGroup.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerKGroup.lean#L232). The attribute's comment: “b_k_x”.
+**`Stacks.Chow.coherentDimensionLayerImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerKGroup.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Degrees/DimensionLayerKGroup.lean#L232). The attribute's comment: “b\_k\_x”.
 
 > **Stacks 02SC, `Bₖ(X)`.** The image of the homomorphism of Grothendieck groups induced by the
 > inclusion of the dimension layer `(k - 1, k]` into the layer `(k - 1, k + 1]`.

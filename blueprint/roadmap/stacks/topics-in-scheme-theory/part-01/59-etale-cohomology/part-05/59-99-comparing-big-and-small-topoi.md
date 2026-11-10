@@ -14,7 +14,7 @@ Section 59.99 of the Stacks Project, [Tag 0757](https://stacks.math.columbia.edu
 
 [Tag 0758](https://stacks.math.columbia.edu/tag/0758) in the Stacks Project.
 
-**`AlgebraicGeometry.injective_smallEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Restriction.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Restriction.lean#L200). The attribute's comment: “injective_restrict_s”.
+**`AlgebraicGeometry.injective_smallEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Restriction.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Restriction.lean#L200). The attribute's comment: “injective\_restrict\_s”.
 
 > **Stacks Project, Tag 0758.** Restriction of an injective abelian sheaf
 > from the big étale site over `S` to the small étale site of `S` is injective.
@@ -29,7 +29,7 @@ public theorem injective_smallEtaleRestriction
       (BigEtaleOver.topology B S hS)).obj I)
 ```
 
-**`AlgebraicGeometry.injective_smallEtaleRestrictionAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Restriction.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Restriction.lean#L212). The attribute's comment: “injective_restrict_t”.
+**`AlgebraicGeometry.injective_smallEtaleRestrictionAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Restriction.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Restriction.lean#L212). The attribute's comment: “injective\_restrict\_t”.
 
 > **Stacks Project, Tag 0758.** Restriction to the small étale site of an
 > object of the big étale site preserves injectivity of abelian sheaves.
@@ -45,7 +45,7 @@ public theorem injective_smallEtaleRestrictionAlong
         (BigEtaleOver.topology B S.obj S.property)).obj I)
 ```
 
-**`AlgebraicGeometry.isKInjective_smallEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Restriction.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Restriction.lean#L225). The attribute's comment: “kinjective_restrict_s”.
+**`AlgebraicGeometry.isKInjective_smallEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Restriction.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Restriction.lean#L225). The attribute's comment: “kinjective\_restrict\_s”.
 
 > **Stacks Project, Tag 0758.** Restriction of a K-injective complex of
 > abelian sheaves from the big étale site to the small étale site is K-injective.
@@ -62,7 +62,7 @@ public theorem isKInjective_smallEtaleRestriction
           (ComplexShape.up ℤ)).obj I)
 ```
 
-**`AlgebraicGeometry.isKInjective_smallEtaleRestrictionAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Restriction.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Restriction.lean#L239). The attribute's comment: “kinjective_restrict_t”.
+**`AlgebraicGeometry.isKInjective_smallEtaleRestrictionAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Restriction.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Restriction.lean#L239). The attribute's comment: “kinjective\_restrict\_t”.
 
 > **Stacks Project, Tag 0758.** Restriction to the small étale site of an
 > object of the big étale site preserves K-injectivity of abelian sheaf complexes.
@@ -83,7 +83,7 @@ public theorem isKInjective_smallEtaleRestrictionAlong
 
 [Tag 0759](https://stacks.math.columbia.edu/tag/0759) in the Stacks Project.
 
-**`AlgebraicGeometry.smallEtaleRestrictionPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/DirectImage.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/DirectImage.lean#L65). The attribute's comment: “arbitrary_coefficients”.
+**`AlgebraicGeometry.smallEtaleRestrictionPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/DirectImage.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/DirectImage.lean#L65). The attribute's comment: “arbitrary\_coefficients”.
 
 > For a sheaf `ℱ` on the big étale site over `T` with values in any category, the restriction
 > `(f_{big, *}ℱ)|_{S_étale}` of its direct image along `f` agrees naturally with the direct image
@@ -105,7 +105,7 @@ public noncomputable def smallEtaleRestrictionPushforwardIso (A : Type w) [Categ
         (SmallEtale.topology B T.obj T.property)
 ```
 
-**`AlgebraicGeometry.bigEtaleRestrictionPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/DirectImage.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/DirectImage.lean#L112). The attribute's comment: “direct_images_of_topoi”.
+**`AlgebraicGeometry.bigEtaleRestrictionPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/DirectImage.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/DirectImage.lean#L112). The attribute's comment: “direct\_images\_of\_topoi”.
 
 > The direct image along the morphism of topoi `f_big` followed by restriction along the
 > projection `π_S` agrees naturally with restriction along `π_T` followed by the direct image along
@@ -199,7 +199,7 @@ public def bigEtalePullbackProjectionPullbackIso :
 
 [Tag 075A](https://stacks.math.columbia.edu/tag/075A) in the Stacks Project.
 
-**`AlgebraicGeometry.bigEtaleDerivedPushforwardBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/BaseChange.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/BaseChange.lean#L125). The attribute's comment: “big_site_base_change_abelian”.
+**`AlgebraicGeometry.bigEtaleDerivedPushforwardBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/BaseChange.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/BaseChange.lean#L125). The attribute's comment: “big\_site\_base\_change\_abelian”.
 
 > Base change for the derived direct image of abelian sheaves on big étale sites.
 
@@ -357,7 +357,7 @@ def smallEtaleDerivedModulePushforwardRestrictionAlongIso :
 
 [Tag 0DDH](https://stacks.math.columbia.edu/tag/0DDH) in the Stacks Project.
 
-**`AlgebraicGeometry.bigSmallEtaleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Cohomology.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Cohomology.lean#L183). The attribute's comment: “big_small_abelian”.
+**`AlgebraicGeometry.bigSmallEtaleCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Cohomology.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/Cohomology.lean#L183). The attribute's comment: “big\_small\_abelian”.
 
 > The canonical comparison of big-site cohomology over `T` with small-site
 > cohomology of the restricted complex, natural in the unbounded derived object.

@@ -73,7 +73,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.instIsPreimmersionFromSpecStalk`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.instIsPreimmersionFromSpecStalk#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L243) (StacksFrontier): “the general statement: Spec(O_{S,s}) → S is a preimmersion, hence a monomorphism”. References: EGA I (2.4.2), “partial”.
+- [`AlgebraicGeometry.instIsPreimmersionFromSpecStalk`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.instIsPreimmersionFromSpecStalk#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L243) (StacksFrontier): “the general statement: Spec(O\_\{S,s}) → S is a preimmersion, hence a monomorphism”. References: EGA I (2.4.2), “partial”.
 - [`AlgebraicGeometry.IsPreimmersion.of_isLocalization`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsPreimmersion.of_isLocalization#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L245) (StacksFrontier): “Spec(Q) → Spec(Z), and Spec of any localization: a preimmersion, hence a monomorphism”.
 
 ## Tag 03DP, a lemma

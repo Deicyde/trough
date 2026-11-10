@@ -383,7 +383,7 @@ Declarations registered for the tag:
 
 [Tag 03EX](https://stacks.math.columbia.edu/tag/03EX) in the Stacks Project.
 
-**`Stacks.sheafTensorRight_shortExact_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafFlatCover.lean, line 792](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafFlatCover.lean#L792). The attribute's comment: “sheaf_tensor_exactness”. References: SGA 1 IV (1.1), “(i)”; SGA 4 XVII (4.1.1), “(ii), f = id”.
+**`Stacks.sheafTensorRight_shortExact_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafFlatCover.lean, line 792](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SheafFlatCover.lean#L792). The attribute's comment: “sheaf\_tensor\_exactness”. References: SGA 1 IV (1.1), “(i)”; SGA 4 XVII (4.1.1), “(ii), f = id”.
 
 > **Stacks Project, Tag 03EX, sheaf case.** If the final term of a short exact sequence of
 > sheaves of modules is flat, then tensoring the sequence with any sheaf of modules gives a

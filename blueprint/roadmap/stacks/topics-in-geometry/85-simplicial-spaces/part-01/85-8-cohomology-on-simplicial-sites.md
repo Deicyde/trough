@@ -107,7 +107,7 @@ theorem cechSectionsComplex_shortComplexZero_exact (F : Sheaf S.totalTopology Ab
 
 [Tag 09WJ](https://stacks.math.columbia.edu/tag/09WJ) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.derivedSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean#L202). The attribute's comment: “the spectral sequence for K in D^+(C_total), as a functor of K”.
+**`CategoryTheory.SimplicialSiteSituation.derivedSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean#L202). The attribute's comment: “the spectral sequence for K in D^+(C\_total), as a functor of K”.
 
 > **Stacks 09WJ, the spectral sequence.** For an object `K` of `D^+(C_total)` there is a
 > cohomological spectral sequence, functorial in `K`: the right derived functor, along the
@@ -125,7 +125,7 @@ def derivedSpectralSequence :
       CohomologicalSpectralSequence Ab.{u} 1
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.derivedSpectralSequence_pageOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean#L395). The attribute's comment: “the first page E_1^{p,q} = H^q(C_p, K_p) for K in D^+(C_total), naturally in K”.
+**`CategoryTheory.SimplicialSiteSituation.derivedSpectralSequence_pageOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean#L395). The attribute's comment: “the first page E\_1^\{p,q} = H^q(C\_p, K\_p) for K in D^+(C\_total), naturally in K”.
 
 > **Stacks 09WJ, the first page.** `E_1^{p,q} = H^q(C_p, K_p)`: the first page of the spectral
 > sequence of Stacks 09WJ at `(p, q)` is the sheaf cohomology on the component site `C_p` of the
@@ -141,7 +141,7 @@ def derivedSpectralSequence_pageOneIso :
       S.componentDerivedCohomologyFunctor n q
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.isZero_derivedPageOne_d_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean#L411). The attribute's comment: “the first differential d_1^{p,q} : E_1^{p,q} → E_1^{p+1,q} for K in D^+(C_total)”.
+**`CategoryTheory.SimplicialSiteSituation.isZero_derivedPageOne_d_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean#L411). The attribute's comment: “the first differential d\_1^\{p,q} : E\_1^\{p,q} → E\_1^\{p+1,q} for K in D^+(C\_total)”.
 
 > **Stacks 09WJ, the first differential.** `d_1^{p,q} : E_1^{p,q} → E_1^{p+1,q}`: the
 > differential of the first page out of the bidegree `(p, q)` lands in the bidegree `(p + 1, q)`,
@@ -156,7 +156,7 @@ theorem isZero_derivedPageOne_d_of_ne (K : DerivedCategory.Plus (Sheaf S.totalTo
     ((S.derivedSpectralSequence.obj K).page 1 le_rfl).d (p, q) (p', q') = 0
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.derivedSpectralSequence_abutsTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean, line 488](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean#L488). The attribute's comment: “the abutment H^{p+q}(C_total, K) for K in D^+(C_total)”.
+**`CategoryTheory.SimplicialSiteSituation.derivedSpectralSequence_abutsTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean, line 488](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagDerived.lean#L488). The attribute's comment: “the abutment H^\{p+q}(C\_total, K) for K in D^+(C\_total)”.
 
 > **Stacks 09WJ, the convergence.** The spectral sequence of Stacks 09WJ abuts to
 > `H^{p+q}(C_total, K)`: its infinity page at `(p, q)` is the `p`-th graded piece of a finite
@@ -191,7 +191,7 @@ def cohomologySpectralSequence :
     Sheaf S.totalTopology Ab.{u} ⥤ CohomologicalSpectralSequence Ab.{u} 1
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.cohomologySpectralSequence_pageOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean#L298). The attribute's comment: “the first page E_1^{p,q} = H^q(C_p, F_p) for an abelian sheaf, naturally in it”.
+**`CategoryTheory.SimplicialSiteSituation.cohomologySpectralSequence_pageOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean#L298). The attribute's comment: “the first page E\_1^\{p,q} = H^q(C\_p, F\_p) for an abelian sheaf, naturally in it”.
 
 > **Stacks 09WJ, the first page.** `E_1^{p,q} = H^q(C_p, F_p)`: the first page of the spectral
 > sequence of the simplicial-site situation at `(p, q)` is the sheaf cohomology of the restriction
@@ -207,7 +207,7 @@ def cohomologySpectralSequence_pageOneIso :
     S.pageOneFunctor n q ≅ S.componentCohomologyFunctor ⦋n⦌ q
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.isZero_pageOne_d_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean#L323). The attribute's comment: “the first differential d_1^{p,q} : E_1^{p,q} → E_1^{p+1,q}”.
+**`CategoryTheory.SimplicialSiteSituation.isZero_pageOne_d_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean#L323). The attribute's comment: “the first differential d\_1^\{p,q} : E\_1^\{p,q} → E\_1^\{p+1,q}”.
 
 > **Stacks 09WJ, the first differential.** `d_1^{p,q} : E_1^{p,q} → E_1^{p+1,q}`: the
 > differential of the first page out of the bidegree `(p, q)` lands in the bidegree `(p + 1, q)`,
@@ -226,7 +226,7 @@ theorem isZero_pageOne_d_of_ne (F : Sheaf S.totalTopology Ab.{u}) (p q p' q' : �
     (((S.cohomologySpectralSequence).obj F).page 1 le_rfl).d (p, q) (p', q') = 0
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.cohomologySpectralSequence_abutsTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean#L364). The attribute's comment: “the abutment H^{p+q}(C_total, F) for an abelian sheaf”.
+**`CategoryTheory.SimplicialSiteSituation.cohomologySpectralSequence_abutsTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/CohomologySpectralSequenceTagSheaf.lean#L364). The attribute's comment: “the abutment H^\{p+q}(C\_total, F) for an abelian sheaf”.
 
 > **Stacks 09WJ, the convergence.** The spectral sequence of the simplicial-site situation
 > abuts to `H^{p+q}(C_total, F)`: its infinity page at `(p, q)` is the `p`-th graded piece of a

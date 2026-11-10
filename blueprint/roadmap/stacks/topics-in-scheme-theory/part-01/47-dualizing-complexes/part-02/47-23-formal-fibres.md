@@ -14,7 +14,7 @@ Section 47.23 of the Stacks Project, [Tag 0BJM](https://stacks.math.columbia.edu
 
 [Tag 0BJN](https://stacks.math.columbia.edu/tag/0BJN) in the Stacks Project.
 
-**`Dualizing.isGorensteinRing_tensorProduct_of_essFiniteType_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinFieldExtension.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/GorensteinFieldExtension.lean#L80). The attribute's comment: “gorenstein_field_extension”.
+**`Dualizing.isGorensteinRing_tensorProduct_of_essFiniteType_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/GorensteinFieldExtension.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/GorensteinFieldExtension.lean#L80). The attribute's comment: “gorenstein\_field\_extension”.
 
 > **Stacks Project, Tag 0BJN, clause (A).** Let `k` be a field, `R` a Noetherian `k`-algebra and
 > `K/k` an extension of fields which is finitely generated as a field extension. If `R` is
@@ -149,7 +149,7 @@ public theorem gorensteinTarget_satisfies_formalFiberAxioms :
 
 Declarations registered for the tag:
 
-- [`Dualizing.IsGorensteinRing`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Gorenstein.lean#L69), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/FormalFibre.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/FormalFibre.lean#L62) (StacksFrontier): “gorenstein_local and gorenstein_ground_field: this predicate is defined by the condition at every prime localization and takes no ground field as input”.
+- [`Dualizing.IsGorensteinRing`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Gorenstein.lean#L69), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/FormalFibre.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/FormalFibre.lean#L62) (StacksFrontier): “gorenstein\_local and gorenstein\_ground\_field: this predicate is defined by the condition at every prime localization and takes no ground field as input”.
 
 ## Tag 0AWY, a lemma
 
@@ -324,7 +324,7 @@ public theorem localCompleteIntersectionProperty_satisfies_formalFiberAxioms
 Declarations registered for the tag:
 
 - [`LocalCompleteIntersection.isLocalCompleteIntersectionRing_iff`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCompleteIntersection/Basic.lean#L140), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/FormalFibre.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/FormalFibre.lean#L51) (StacksFrontier): “localization”.
-- [`LocalCompleteIntersection.IsLocalCompleteIntersectionRing`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCompleteIntersection/Basic.lean#L135), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/FormalFibre.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/FormalFibre.lean#L53) (StacksFrontier): “ground_field_change”.
+- [`LocalCompleteIntersection.IsLocalCompleteIntersectionRing`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCompleteIntersection/Basic.lean#L135), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/FormalFibre.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/FormalFibre.lean#L53) (StacksFrontier): “ground\_field\_change”.
 
 ## Depends on
 

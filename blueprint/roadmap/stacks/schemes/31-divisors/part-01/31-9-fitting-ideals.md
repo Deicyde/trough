@@ -45,7 +45,7 @@ lemma fittingIdeal_isFiniteType {X : Scheme.{u}} (F : X.Modules)
 
 [Tag 0CYX](https://stacks.math.columbia.edu/tag/0CYX) in the Stacks Project.
 
-**`AlgebraicGeometry.fittingIdeal_zero_le_annihilatorIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingSupport.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingSupport.lean#L70). The attribute's comment: “scheme_theoretic_inclusion”.
+**`AlgebraicGeometry.fittingIdeal_zero_le_annihilatorIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingSupport.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingSupport.lean#L70). The attribute's comment: “scheme\_theoretic\_inclusion”.
 
 > **Stacks Project, Tag 0CYX, part (1).** The scheme-theoretic support of a finite type
 > quasi-coherent module is a closed subscheme of the one cut out by its zeroth Fitting ideal:
@@ -55,7 +55,7 @@ lemma fittingIdeal_isFiniteType {X : Scheme.{u}} (F : X.Modules)
 theorem fittingIdeal_zero_le_annihilatorIdeal : fittingIdeal F 0 ≤ annihilatorIdeal' F
 ```
 
-**`AlgebraicGeometry.fittingIdeal_zero_support_eq_supp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingSupport.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingSupport.lean#L105). The attribute's comment: “underlying_support”. References: SGA 7 VI (5.1), “more general”.
+**`AlgebraicGeometry.fittingIdeal_zero_support_eq_supp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingSupport.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingSupport.lean#L105). The attribute's comment: “underlying\_support”. References: SGA 7 VI (5.1), “more general”.
 
 > **Stacks Project, Tag 0CYX, part (2).** The closed subscheme cut out by the zeroth Fitting
 > ideal of a finite type quasi-coherent module has the support of the module as its underlying
@@ -66,7 +66,7 @@ theorem fittingIdeal_zero_support_eq_supp :
     (fittingIdeal F 0).support = SheafOfModules.supp F
 ```
 
-**`AlgebraicGeometry.exists_module_on_fittingSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingSupport.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingSupport.lean#L150). The attribute's comment: “module_on_fitting_subscheme”.
+**`AlgebraicGeometry.exists_module_on_fittingSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingSupport.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingSupport.lean#L150). The attribute's comment: “module\_on\_fitting\_subscheme”.
 
 > **Stacks Project, Tag 0CYX, part (3).** A finite type quasi-coherent module is the direct
 > image of a finite type quasi-coherent module on the closed subscheme cut out by its zeroth
@@ -81,7 +81,7 @@ theorem exists_module_on_fittingSubscheme :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.supp_eq_annihilatorIdeal_support`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/AnnihilatorSupport.lean#L136), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingSupport.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingSupport.lean#L99) (StacksFrontier): “underlying_support”.
+- [`AlgebraicGeometry.supp_eq_annihilatorIdeal_support`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/AnnihilatorSupport.lean#L136), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingSupport.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingSupport.lean#L99) (StacksFrontier): “underlying\_support”.
 
 ## Tag 0C3F, a lemma
 
@@ -151,7 +151,7 @@ theorem fittingClosedSubscheme_iInter_range_eq_empty {S : Scheme.{u}} (F : S.Mod
     (⋂ i : ℕ, Set.range (fittingClosedSubscheme F (i : ℤ)).hom.base) = ∅
 ```
 
-**`AlgebraicGeometry.fittingClosedSubscheme_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FittingStratification/FinitePresentation.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FittingStratification/FinitePresentation.lean#L85). The attribute's comment: “finite presentation of the morphism Z_r to S”.
+**`AlgebraicGeometry.fittingClosedSubscheme_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FittingStratification/FinitePresentation.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FittingStratification/FinitePresentation.lean#L85). The attribute's comment: “finite presentation of the morphism Z\_r to S”.
 
 > **Stacks Project, Tag 05P8.** The closed subscheme of `S` cut out by the `r`-th Fitting ideal
 > of a finitely presented sheaf of modules `F` is of finite presentation over `S`.
@@ -164,7 +164,7 @@ public theorem fittingClosedSubscheme_finitePresentation {S : Scheme.{u}} (F : S
         (SheafOfModules.instIsQuasicoherentOfIsFinitePresentation F) (r : ℤ)).hom
 ```
 
-**`AlgebraicGeometry.fittingGeneratorOpen_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FittingStratification/FinitePresentation.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FittingStratification/FinitePresentation.lean#L100). The attribute's comment: “finite presentation of the morphism S minus Z_r to S”.
+**`AlgebraicGeometry.fittingGeneratorOpen_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FittingStratification/FinitePresentation.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FittingStratification/FinitePresentation.lean#L100). The attribute's comment: “finite presentation of the morphism S minus Z\_r to S”.
 
 > **Stacks Project, Tag 05P8.** The open complement in `S` of the closed subscheme cut out by
 > the `r`-th Fitting ideal of a finitely presented sheaf of modules `F` — the locus where `F` is
@@ -216,7 +216,7 @@ public theorem rankRFunctor_representableBy_fittingRankStratum {S : Scheme.{u}}
     Nonempty ((rankRFunctor S F r).RepresentableBy (fittingRankStratum F r))
 ```
 
-**`AlgebraicGeometry.finitePresentation_fittingRankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FittingStratification/RankStratumFinitePresentation.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FittingStratification/RankStratumFinitePresentation.lean#L102). The attribute's comment: “finite presentation of the morphism Z_(r-1) minus Z_r to S”.
+**`AlgebraicGeometry.finitePresentation_fittingRankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FittingStratification/RankStratumFinitePresentation.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FittingStratification/RankStratumFinitePresentation.lean#L102). The attribute's comment: “finite presentation of the morphism Z\_(r-1) minus Z\_r to S”.
 
 > **Stacks Project, Tag 05P8.** The structural morphism of the rank `r` Fitting stratum of a
 > finitely presented sheaf of modules `F` on `S` — the locally closed subscheme of `S` over which

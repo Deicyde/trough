@@ -14,7 +14,7 @@ Section 110.30 of the Stacks Project, [Tag 078C](https://stacks.math.columbia.ed
 
 [Tag 078D](https://stacks.math.columbia.edu/tag/078D) in the Stacks Project.
 
-**`Stacks.Examples.QcohPushforward.exists_quasiCompact_not_quasiSeparated_pushforward_not_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/QuasiCoherentPushforward/NotQuasiSeparated.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/QuasiCoherentPushforward/NotQuasiSeparated.lean#L521). The attribute's comment: “non_quasi_separated”.
+**`Stacks.Examples.QcohPushforward.exists_quasiCompact_not_quasiSeparated_pushforward_not_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/QuasiCoherentPushforward/NotQuasiSeparated.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/QuasiCoherentPushforward/NotQuasiSeparated.lean#L521). The attribute's comment: “non\_quasi\_separated”.
 
 > **Stacks Project, Tag 078D (non-quasi-separated case).** A quasi-compact morphism need not
 > be quasi-separated, and may send its quasi-coherent structure sheaf to a module which is not
@@ -30,7 +30,7 @@ theorem exists_quasiCompact_not_quasiSeparated_pushforward_not_isQuasicoherent :
         (SheafOfModules.unit X.ringCatSheaf)).IsQuasicoherent
 ```
 
-**`Stacks.Examples.QcohPushforward.exists_isSeparated_not_quasiCompact_pushforward_not_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/QuasiCoherentPushforward/SeparatedNotQuasiCompact.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/QuasiCoherentPushforward/SeparatedNotQuasiCompact.lean#L263). The attribute's comment: “non_quasi_compact”.
+**`Stacks.Examples.QcohPushforward.exists_isSeparated_not_quasiCompact_pushforward_not_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/QuasiCoherentPushforward/SeparatedNotQuasiCompact.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/QuasiCoherentPushforward/SeparatedNotQuasiCompact.lean#L263). The attribute's comment: “non\_quasi\_compact”.
 
 > **Stacks Project, Tag 078D (non-quasi-compact case).** Over `Spec ℤ`, a separated,
 > non-quasi-compact morphism can push a quasi-coherent structure sheaf to a sheaf which is not

@@ -131,7 +131,7 @@ theorem isIso_twistedInverseImageBaseChangeMap_app_of_isProper_of_flat {X' X Y' 
 
 [Tag 0B6S](https://stacks.math.columbia.edu/tag/0B6S) in the Stacks Project.
 
-**`Stacks.Duality.relativeDualizingComplexStructureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/RelativeDualizingComplexStructureSheaf.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/RelativeDualizingComplexStructureSheaf.lean#L104). The attribute's comment: “the relative dualizing complex omega^bullet_{X/Y} = a(O_Y) that the Remark names, the right adjoint of Tag 0A9E applied to the structure sheaf; defined for every quasi-compact quasi-separated morphism to a quasi-compact scheme, so in particular under the Remark's hypotheses”.
+**`Stacks.Duality.relativeDualizingComplexStructureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/RelativeDualizingComplexStructureSheaf.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/RelativeDualizingComplexStructureSheaf.lean#L104). The attribute's comment: “the relative dualizing complex omega^bullet\_\{X/Y} = a(O\_Y) that the Remark names, the right adjoint of Tag 0A9E applied to the structure sheaf; defined for every quasi-compact quasi-separated morphism to a quasi-compact scheme, so in particular under the Remark's hypotheses”.
 
 > **The relative dualizing complex `ω_{X/Y}^• = a(𝒪_Y)`** of [Stacks, Tag 0B6S], for `a = f^×`
 > the right adjoint of [Stacks, Tag 0A9E]: the twisted inverse image of the structure sheaf of the
@@ -144,7 +144,7 @@ theorem isIso_twistedInverseImageBaseChangeMap_app_of_isProper_of_flat {X' X Y' 
 def relativeDualizingComplexStructureSheaf : quasiCoherentDerivedCategory X
 ```
 
-**`Stacks.Duality.relativeDualizingTraceStructureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/RelativeDualizingComplexStructureSheaf.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/RelativeDualizingComplexStructureSheaf.lean#L116). The attribute's comment: “the trace map Tr_{f,O_Y} : Rf_* omega^bullet_{X/Y} to O_Y that the Remark displays, the counit of the adjunction of Tag 0A9E at the structure sheaf of the base”.
+**`Stacks.Duality.relativeDualizingTraceStructureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/RelativeDualizingComplexStructureSheaf.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedPushforward/RelativeDualizingComplexStructureSheaf.lean#L116). The attribute's comment: “the trace map Tr\_\{f,O\_Y} : Rf\_* omega^bullet\_\{X/Y} to O\_Y that the Remark displays, the counit of the adjunction of Tag 0A9E at the structure sheaf of the base”.
 
 > **The trace map `Tr_{f, 𝒪_Y} : Rf_* ω_{X/Y}^• ⟶ 𝒪_Y`** of [Stacks, Tag 0AWG], displayed in
 > [Stacks, Tag 0B6S]: the counit of `Rf_* ⊣ f^×` at the structure sheaf of the base.
@@ -160,7 +160,7 @@ def relativeDualizingTraceStructureSheaf :
     Stacks.Duality.DerivedPushforward.derivedStructureSheaf Y
 ```
 
-**`Stacks.Duality.relativeDualizingTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexTensorDescription.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexTensorDescription.lean#L142). The attribute's comment: “the functorial isomorphism a(K) = Lf^*K ⊗^L omega^bullet_{X/Y} for K in D_QCoh(O_Y), omega^bullet_{X/Y} = a(O_Y), for Y quasi-compact quasi-separated and f proper flat of finite presentation: an isomorphism of functors whose components are the map of Equation 48.8.0.1, invertible by Tag 0E4K”.
+**`Stacks.Duality.relativeDualizingTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexTensorDescription.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexTensorDescription.lean#L142). The attribute's comment: “the functorial isomorphism a(K) = Lf^*K ⊗^L omega^bullet\_\{X/Y} for K in D\_QCoh(O\_Y), omega^bullet\_\{X/Y} = a(O\_Y), for Y quasi-compact quasi-separated and f proper flat of finite presentation: an isomorphism of functors whose components are the map of Equation 48.8.0.1, invertible by Tag 0E4K”.
 
 > **The functorial isomorphism `a(K) = Lf^*K ⊗ᴸ ω^•_{X/Y}` of [Stacks, Tag 0B6S]**, for
 > `Y` quasi-compact and quasi-separated and `f : X ⟶ Y` proper, flat and of finite presentation:
@@ -177,7 +177,7 @@ def relativeDualizingTensorIso :
       twistedInverseImage f (isQuasicoherent_homology_derivedPushforward_of_qcqs f)
 ```
 
-**`Stacks.Duality.map_relativeDualizingTensorIso_hom_app_comp_trace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexTensorDescription.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexTensorDescription.lean#L175). The attribute's comment: “the trace compatibility: Tr_{f,K} composed with Rf_* of the isomorphism a(K) = Lf^*K ⊗^L omega^bullet_{X/Y} is the projection formula of Tag 08EU followed by id_K ⊗ Tr_{f,O_Y} and K ⊗^L O_Y = K, the Remark's commuting square, for Y quasi-compact quasi-separated and f proper flat of finite presentation”.
+**`Stacks.Duality.map_relativeDualizingTensorIso_hom_app_comp_trace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexTensorDescription.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexTensorDescription.lean#L175). The attribute's comment: “the trace compatibility: Tr\_\{f,K} composed with Rf\_* of the isomorphism a(K) = Lf^*K ⊗^L omega^bullet\_\{X/Y} is the projection formula of Tag 08EU followed by id\_K ⊗ Tr\_\{f,O\_Y} and K ⊗^L O\_Y = K, the Remark's commuting square, for Y quasi-compact quasi-separated and f proper flat of finite presentation”.
 
 > **The trace map `Tr_{f, 𝒪_Y}` induces the trace map `Tr_{f, K}` for every `K`**, the
 > commuting square of [Stacks, Tag 0B6S]: `Rf_*` of the isomorphism
@@ -198,7 +198,7 @@ theorem map_relativeDualizingTensorIso_hom_app_comp_trace (K : quasiCoherentDeri
       quasiCoherentRightUnitor.hom.app K
 ```
 
-**`Stacks.Duality.relativeDualizingBaseChangeIso_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexTensorDescription.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexTensorDescription.lean#L257). The attribute's comment: “the base change of the relative dualizing complex in the Remark's last sentence: for g : Y' to Y a morphism of quasi-compact quasi-separated schemes and X' = Y' x_Y X, the base change map L(g')^* a(O_Y) to a'(Lg^* O_Y) of Tag 0AA6 is an isomorphism (Tag 0AAB), so omega^bullet_{X'/Y'} = L(g')^* omega^bullet_{X/Y} through it and a'(Lg^* O_Y = O_{Y'})”.
+**`Stacks.Duality.relativeDualizingBaseChangeIso_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexTensorDescription.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexTensorDescription.lean#L257). The attribute's comment: “the base change of the relative dualizing complex in the Remark's last sentence: for g : Y' to Y a morphism of quasi-compact quasi-separated schemes and X' = Y' x\_Y X, the base change map L(g')^* a(O\_Y) to a'(Lg^* O\_Y) of Tag 0AA6 is an isomorphism (Tag 0AAB), so omega^bullet\_\{X'/Y'} = L(g')^* omega^bullet\_\{X/Y} through it and a'(Lg^* O\_Y = O\_\{Y'})”.
 
 > **`ω^•_{X'/Y'} = L(g')^* ω^•_{X/Y}`**, the first assertion of the last sentence of
 > [Stacks, Tag 0B6S]: the base change map of [Stacks, Tag 0AA6] at `𝒪_Y` is an isomorphism
@@ -233,7 +233,7 @@ theorem relativeDualizingBaseChangeIso_hom :
         (isQuasicoherent_homology_derivedPullback' g)).hom
 ```
 
-**`Stacks.Duality.map_trace_comp_eq_baseChange_comp_trace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexTensorDescription.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexTensorDescription.lean#L294). The attribute's comment: “the base change of the trace in the Remark's last sentence: Tr_{f',O_{Y'}} is the base change of Tr_{f,O_Y} via the base change isomorphism, i.e. Lg^* Tr_{f,O_Y} followed by Lg^* O_Y = O_{Y'} equals the base change map of Rf_* at omega^bullet_{X/Y} followed by Rf'_* of L(g')^* omega^bullet_{X/Y} = omega^bullet_{X'/Y'} and Tr_{f',O_{Y'}} (Tag 0B6J)”.
+**`Stacks.Duality.map_trace_comp_eq_baseChange_comp_trace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexTensorDescription.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexTensorDescription.lean#L294). The attribute's comment: “the base change of the trace in the Remark's last sentence: Tr\_\{f',O\_\{Y'}} is the base change of Tr\_\{f,O\_Y} via the base change isomorphism, i.e. Lg^* Tr\_\{f,O\_Y} followed by Lg^* O\_Y = O\_\{Y'} equals the base change map of Rf\_* at omega^bullet\_\{X/Y} followed by Rf'\_* of L(g')^* omega^bullet\_\{X/Y} = omega^bullet\_\{X'/Y'} and Tr\_\{f',O\_\{Y'}} (Tag 0B6J)”.
 
 > **The trace map of `f'` is the base change of the trace map of `f`**, the second assertion of
 > the last sentence of [Stacks, Tag 0B6S], by [Stacks, Tag 0B6J]: `Lg^*` of
@@ -359,7 +359,7 @@ theorem isZero_homology_derivedPushforward_relativeDualizingComplex (i : ℤ) (h
       ((derivedPushforward f).obj (relativeDualizingComplex f).obj))
 ```
 
-**`Stacks.Duality.StandardModel.isRelativelyPerfect_relativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperFlatDualizing/RelativelyPerfect.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperFlatDualizing/RelativelyPerfect.lean#L119). The attribute's comment: “(1)”. References: SGA 6 III (4.9.1), “Case S = Y and F = O_Y”; SGA 6 IV (3.3.2), “3.3.2.4”.
+**`Stacks.Duality.StandardModel.isRelativelyPerfect_relativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ProperFlatDualizing/RelativelyPerfect.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ProperFlatDualizing/RelativelyPerfect.lean#L119). The attribute's comment: “(1)”. References: SGA 6 III (4.9.1), “Case S = Y and F = O\_Y”; SGA 6 IV (3.3.2), “3.3.2.4”.
 
 > **[Stacks, Tag 0E4L] (1).** Let `Y` be a quasi-compact and quasi-separated scheme and
 > `f : X ⟶ Y` a proper, flat morphism of finite presentation, with relative dualizing complex
@@ -431,7 +431,7 @@ def relativeDualizingComplexRigidity {X Y : Scheme.{u}} [CompactSpace Y] [QuasiS
 
 [Tag 0E2Q](https://stacks.math.columbia.edu/tag/0E2Q) in the Stacks Project.
 
-**`Stacks.Duality.structureSheafIsoDiagonalTwistedInverseImagePullbackFst`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexRigidity.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexRigidity.lean#L200). The attribute's comment: “first projection: 𝒪_X ≅ c(L pr₁^* ω_{X/Y}^•)”.
+**`Stacks.Duality.structureSheafIsoDiagonalTwistedInverseImagePullbackFst`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexRigidity.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexRigidity.lean#L200). The attribute's comment: “first projection: 𝒪\_X ≅ c(L pr₁^* ω\_\{X/Y}^•)”.
 
 > **[Stacks, Tag 0E2Q], first projection**: `𝒪_X ≅ c(L pr₁^* ω_{X/Y}^•)`; this is the first
 > isomorphism of [Stacks, Tag 0E2P], where
@@ -455,7 +455,7 @@ def structureSheafIsoDiagonalTwistedInverseImagePullbackFst :
             (derivedStructureSheaf Y)))
 ```
 
-**`Stacks.Duality.structureSheafIsoDiagonalTwistedInverseImagePullbackSnd`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexRigidity.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexRigidity.lean#L229). The attribute's comment: “second projection: 𝒪_X ≅ c(L pr₂^* ω_{X/Y}^•)”.
+**`Stacks.Duality.structureSheafIsoDiagonalTwistedInverseImagePullbackSnd`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexRigidity.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexRigidity.lean#L229). The attribute's comment: “second projection: 𝒪\_X ≅ c(L pr₂^* ω\_\{X/Y}^•)”.
 
 > **[Stacks, Tag 0E2Q], second projection**: `𝒪_X ≅ c(L pr₂^* ω_{X/Y}^•)`; this is the second
 > isomorphism of [Stacks, Tag 0E2P]. With `b` the twisted
@@ -548,7 +548,7 @@ def relativeDualizingComplexRigidityIso :
 
 Declarations registered for the tag:
 
-- [`Stacks.Duality.relativeDualizingComplexRigidityIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexRigidity.lean#L261), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexRigidity.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexRigidity.lean#L313) (StacksFrontier): “the rigidity isomorphism ω_{X/Y}^• ≅ c(L pr₁^* ω_{X/Y}^• ⊗ᴸ L pr₂^* ω_{X/Y}^•) of Equation 0E2R”.
+- [`Stacks.Duality.relativeDualizingComplexRigidityIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexRigidity.lean#L261), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexRigidity.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexRigidity.lean#L313) (StacksFrontier): “the rigidity isomorphism ω\_\{X/Y}^• ≅ c(L pr₁^* ω\_\{X/Y}^• ⊗ᴸ L pr₂^* ω\_\{X/Y}^•) of Equation 0E2R”.
 
 ## Depends on
 

@@ -443,7 +443,7 @@ theorem isPseudoCoherent_right_of_biprod
 
 [Tag 08FX](https://stacks.math.columbia.edu/tag/08FX) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.isFiniteType_homology_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherentSites/TopCohomologyFinitenessGeneral.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherentSites/TopCohomologyFinitenessGeneral.lean#L55). The attribute's comment: “finite_type_top_cohomology, at independent universes”.
+**`AlgebraicGeometry.RingedSite.isFiniteType_homology_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherentSites/TopCohomologyFinitenessGeneral.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherentSites/TopCohomologyFinitenessGeneral.lean#L55). The attribute's comment: “finite\_type\_top\_cohomology, at independent universes”.
 
 > The degree-`m` cohomology of an `m`-pseudo-coherent object of the derived category of modules
 > over a ringed site `RingedSite.{u, v, w}`, whose cohomology vanishes above `m`, is of finite
@@ -467,7 +467,7 @@ theorem isFiniteType_homology_general (X : RingedSite.{u, v, w})
       (SheafOfModules.{w} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) m).obj K).IsFiniteType
 ```
 
-**`AlgebraicGeometry.RingedSite.isFiniteType_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/TopCohomologyFiniteness.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/TopCohomologyFiniteness.lean#L76). The attribute's comment: “finite_type_top_cohomology”.
+**`AlgebraicGeometry.RingedSite.isFiniteType_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/TopCohomologyFiniteness.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/TopCohomologyFiniteness.lean#L76). The attribute's comment: “finite\_type\_top\_cohomology”.
 
 > **Stacks 08FX**, finite type of the top cohomology. The degree-`m` cohomology of an
 > `m`-pseudo-coherent object of the derived category whose higher cohomology vanishes is of
@@ -491,7 +491,7 @@ theorem isFiniteType_homology (X : RingedSite.{u, u, 0})
       (SheafOfModules.{0} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) m).obj K).IsFiniteType
 ```
 
-**`AlgebraicGeometry.RingedSite.isFinitePresentation_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/TopCohomologyFiniteness.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/TopCohomologyFiniteness.lean#L214). The attribute's comment: “finite_presentation_top_cohomology”.
+**`AlgebraicGeometry.RingedSite.isFinitePresentation_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/TopCohomologyFiniteness.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/TopCohomologyFiniteness.lean#L214). The attribute's comment: “finite\_presentation\_top\_cohomology”.
 
 > **Stacks 08FX**, finite presentation of the top cohomology. The degree-`m + 1` cohomology
 > of an `m`-pseudo-coherent object of the derived category whose cohomology vanishes above

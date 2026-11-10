@@ -53,7 +53,7 @@ theorem isQuasicoherentOnSite_affineHomologySheaf
 
 [Tag 0H0J](https://stacks.math.columbia.edu/tag/0H0J) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLocallyKFlatAcyclic_affineEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasiCoherentDerivedComparison.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasiCoherentDerivedComparison.lean#L151). The attribute's comment: “ε : 𝒳_{affine,étale} ⟶ 𝒳_{affine} satisfies the assumptions of Stacks 0GZS: hypothesis (2), the target being the chaotic site by construction”.
+**`AlgebraicGeometry.Stack.isLocallyKFlatAcyclic_affineEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasiCoherentDerivedComparison.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasiCoherentDerivedComparison.lean#L151). The attribute's comment: “ε : 𝒳\_\{affine,étale} ⟶ 𝒳\_\{affine} satisfies the assumptions of Stacks 0GZS: hypothesis (2), the target being the chaotic site by construction”.
 
 > **Stacks 0H0J, hypothesis (2) of Stacks 0GZS.** Let `p : 𝒳 ⥤ (Sch/S)_{fppf}` be a category
 > fibred in groupoids and `ε : (𝒳_{affine, étale}, O) ⟶ (𝒳_{affine}, O)` the comparison morphism to
@@ -71,7 +71,7 @@ theorem isLocallyKFlatAcyclic_affineEtale :
       (affineStructurePresheaf_comm B S hS p)
 ```
 
-**`AlgebraicGeometry.Stack.affineEtaleQuasiCoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasiCoherentDerivedComparison.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasiCoherentDerivedComparison.lean#L167). The attribute's comment: “ε : 𝒳_{affine,étale} ⟶ 𝒳_{affine} satisfies the conclusions of Stacks 0GZS: ε^* and Rε_* are mutually quasi-inverse equivalences between QC(𝒳) and the objects K of D(𝒳_{affine,étale}, O) with Rε_*K in QC(𝒳)”.
+**`AlgebraicGeometry.Stack.affineEtaleQuasiCoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasiCoherentDerivedComparison.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasiCoherentDerivedComparison.lean#L167). The attribute's comment: “ε : 𝒳\_\{affine,étale} ⟶ 𝒳\_\{affine} satisfies the conclusions of Stacks 0GZS: ε^* and Rε\_* are mutually quasi-inverse equivalences between QC(𝒳) and the objects K of D(𝒳\_\{affine,étale}, O) with Rε\_*K in QC(𝒳)”.
 
 > **Stacks 0H0J, the conclusion of Stacks 0GZS.** For a category fibred in groupoids
 > `p : 𝒳 ⥤ (Sch/S)_{fppf}` and the comparison `ε : (𝒳_{affine, étale}, O) ⟶ (𝒳_{affine}, O)`,
@@ -93,7 +93,7 @@ def affineEtaleQuasiCoherentEquivalence :
 
 [Tag 0H0K](https://stacks.math.columbia.edu/tag/0H0K) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.representableQuasiCoherentDerivedEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableQC/Equivalence.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableQC/Equivalence.lean#L112). The attribute's comment: “QC(𝒳) is canonically equivalent to D_QCoh(O_X) for 𝒳 represented by an algebraic space X”.
+**`AlgebraicGeometry.Stack.representableQuasiCoherentDerivedEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableQC/Equivalence.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableQC/Equivalence.lean#L112). The attribute's comment: “QC(𝒳) is canonically equivalent to D\_QCoh(O\_X) for 𝒳 represented by an algebraic space X”.
 
 > **Stacks 0H0K.** Let `p : 𝒳 ⥤ (Sch/S)_{fppf}` be a category fibred in groupoids, represented
 > by the algebraic space `F` through the equivalence `e` over the site between `𝒳` and the
@@ -118,7 +118,7 @@ def representableQuasiCoherentDerivedEquivalence :
 
 [Tag 0H0L](https://stacks.math.columbia.edu/tag/0H0L) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.quasiCoherentDerivedEquivalenceDerivedComplete`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FormalSpectrumQuasiCoherentDerived.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FormalSpectrumQuasiCoherentDerived.lean#L237). The attribute's comment: “QC(𝒳) ≌ D_comp(A, I) for 𝒳 the category fibred in sets of Spf(A), A an adic Noetherian topological S-algebra with ideal of definition I”.
+**`AlgebraicGeometry.FormalSpace.quasiCoherentDerivedEquivalenceDerivedComplete`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FormalSpectrumQuasiCoherentDerived.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FormalSpectrumQuasiCoherentDerived.lean#L237). The attribute's comment: “QC(𝒳) ≌ D\_comp(A, I) for 𝒳 the category fibred in sets of Spf(A), A an adic Noetherian topological S-algebra with ideal of definition I”.
 
 > **Stacks 0H0L.** Let `S` be a scheme and `X = Spf(A)`, where `A` is an adic Noetherian
 > topological `S`-algebra with ideal of definition `I` (More on Algebra, Definition 07E8; Formal
@@ -143,7 +143,7 @@ def quasiCoherentDerivedEquivalenceDerivedComplete :
 
 [Tag 0H0X](https://stacks.math.columbia.edu/tag/0H0X) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLocallyKFlatAcyclic_affineFppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasiCoherentDerivedComparison.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasiCoherentDerivedComparison.lean#L186). The attribute's comment: “ε : 𝒳_{affine,fppf} ⟶ 𝒳_{affine} satisfies the assumptions of Stacks 0GZS: hypothesis (2), the target being the chaotic site by construction”.
+**`AlgebraicGeometry.Stack.isLocallyKFlatAcyclic_affineFppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasiCoherentDerivedComparison.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasiCoherentDerivedComparison.lean#L186). The attribute's comment: “ε : 𝒳\_\{affine,fppf} ⟶ 𝒳\_\{affine} satisfies the assumptions of Stacks 0GZS: hypothesis (2), the target being the chaotic site by construction”.
 
 > **Stacks 0H0X, hypothesis (2) of Stacks 0GZS.** Let `p : 𝒳 ⥤ (Sch/S)_{fppf}` be a category
 > fibred in groupoids and `ε : (𝒳_{affine, fppf}, O) ⟶ (𝒳_{affine}, O)` the comparison morphism to
@@ -161,7 +161,7 @@ theorem isLocallyKFlatAcyclic_affineFppf :
       (affineStructurePresheaf_comm B S hS p)
 ```
 
-**`AlgebraicGeometry.Stack.affineFppfQuasiCoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasiCoherentDerivedComparison.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasiCoherentDerivedComparison.lean#L202). The attribute's comment: “ε : 𝒳_{affine,fppf} ⟶ 𝒳_{affine} satisfies the conclusions of Stacks 0GZS: ε^* and Rε_* are mutually quasi-inverse equivalences between QC(𝒳) and the objects K of D(𝒳_{affine,fppf}, O) with Rε_*K in QC(𝒳)”.
+**`AlgebraicGeometry.Stack.affineFppfQuasiCoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasiCoherentDerivedComparison.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/QuasiCoherentDerivedComparison.lean#L202). The attribute's comment: “ε : 𝒳\_\{affine,fppf} ⟶ 𝒳\_\{affine} satisfies the conclusions of Stacks 0GZS: ε^* and Rε\_* are mutually quasi-inverse equivalences between QC(𝒳) and the objects K of D(𝒳\_\{affine,fppf}, O) with Rε\_*K in QC(𝒳)”.
 
 > **Stacks 0H0X, the conclusion of Stacks 0GZS.** For a category fibred in groupoids
 > `p : 𝒳 ⥤ (Sch/S)_{fppf}` and the comparison `ε : (𝒳_{affine, fppf}, O) ⟶ (𝒳_{affine}, O)`,

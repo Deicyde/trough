@@ -16,9 +16,9 @@ Section 90.11 of the Stacks Project, [Tag 06I2](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.Additive`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.Additive#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 17](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L17) (StacksFrontier): “additivity on Hom_R(M, N)”. References: EGA III (7.2.6); SGA 4 XVII (1.1.11); SGA 4 XVII (2.2.13.1); SGA 4½ Etat 0 (1.3.3), “partial”; SGA 5 V (2.3.4); SGA 6 I (1.1.3), “partial”.
+- [`CategoryTheory.Functor.Additive`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.Additive#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 17](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L17) (StacksFrontier): “additivity on Hom\_R(M, N)”. References: EGA III (7.2.6); SGA 4 XVII (1.1.11); SGA 4 XVII (2.2.13.1); SGA 4½ Etat 0 (1.3.3), “partial”; SGA 5 V (2.3.4); SGA 6 I (1.1.3), “partial”.
 - [`CategoryTheory.Functor.Linear`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.Linear#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 18](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L18) (StacksFrontier): “R-homogeneity: L(r • f) = r • L(f)”. References: EGA III (7.1.2).
-- [`CategoryTheory.Functor.mapLinearMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.mapLinearMap#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 19](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L19) (StacksFrontier): “L on Hom_R(M, N) as a map of R-modules”.
+- [`CategoryTheory.Functor.mapLinearMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.mapLinearMap#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 19](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L19) (StacksFrontier): “L on Hom\_R(M, N) as a map of R-modules”.
 
 ## Tag 06I5, a remark
 
@@ -201,7 +201,7 @@ theorem artinianTangentSpace_eq
 
 [Tag 06IC](https://stacks.math.columbia.edu/tag/06IC) in the Stacks Project.
 
-**`Deformation.isProrepresentable_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Predeformation/ProrepresentableLimits.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Predeformation/ProrepresentableLimits.lean#L198). The attribute's comment: “prorepresentable_preserves_limits”.
+**`Deformation.isProrepresentable_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Predeformation/ProrepresentableLimits.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Predeformation/ProrepresentableLimits.lean#L198). The attribute's comment: “prorepresentable\_preserves\_limits”.
 
 > **Stacks Project, Tag 06IC.** A prorepresentable functor on Artinian local
 > `Λ`-algebras preserves finite limits.
@@ -212,7 +212,7 @@ theorem isProrepresentable_preservesFiniteLimits
     PreservesFiniteLimits F
 ```
 
-**`Deformation.tangentSpaceDerivationsLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L97). The attribute's comment: “tangent_space_derivations”.
+**`Deformation.tangentSpaceDerivationsLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L97). The attribute's comment: “tangent\_space\_derivations”.
 
 > **Stacks Project, Tag 06IC.** The tangent space of the functor represented by `S`
 > is canonically linearly equivalent to the `Λ`-derivations from `S` to its residue field.
@@ -224,7 +224,7 @@ noncomputable def tangentSpaceDerivationsLinearEquiv
     tangentSpaceArtinian Λ k (restrictedCoyoneda S) ≃ₗ[k] Derivation Λ S k
 ```
 
-**`Deformation.tangentSpaceDerivationsLinearEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L119). The attribute's comment: “tangent_space_derivations”.
+**`Deformation.tangentSpaceDerivationsLinearEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L119). The attribute's comment: “tangent\_space\_derivations”.
 
 > A tangent vector corresponds to the downlifted square-zero component.
 
@@ -236,7 +236,7 @@ theorem tangentSpaceDerivationsLinearEquiv_apply
     tangentSpaceDerivationsLinearEquiv S f s = (f.hom s).snd.down
 ```
 
-**`Deformation.tangentSpaceDerivationsLinearEquiv_precomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L152). The attribute's comment: “tangent_space_derivations”.
+**`Deformation.tangentSpaceDerivationsLinearEquiv_precomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L152). The attribute's comment: “tangent\_space\_derivations”.
 
 > The identification commutes with precomposition by morphisms of representing
 > algebras.
@@ -249,7 +249,7 @@ theorem tangentSpaceDerivationsLinearEquiv_precomp
       tangentSpaceDerivationsLinearEquiv S f (g.hom t)
 ```
 
-**`Deformation.tangentSpace_finiteDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L164). The attribute's comment: “finite_tangent_space”. References: SGA 7 VI (1.11), “(ii), special case”.
+**`Deformation.tangentSpace_finiteDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L164). The attribute's comment: “finite\_tangent\_space”. References: SGA 7 VI (1.11), “(ii), special case”.
 
 > **Stacks Project, Tag 06IC.** The tangent space of a prorepresentable functor is
 > finite-dimensional, under the chapter's standing assumption that `Λ → k` is finite.
@@ -260,7 +260,7 @@ theorem tangentSpace_finiteDimensional [Module.Finite Λ k]
     FiniteDimensional k (tangentSpaceArtinian Λ k (restrictedCoyoneda S))
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L218). The attribute's comment: “square_zero_points_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L218). The attribute's comment: “square\_zero\_points\_derivations”.
 
 ```lean
 noncomputable def squareZeroPointsDerivationsEquiv
@@ -269,7 +269,7 @@ noncomputable def squareZeroPointsDerivationsEquiv
     SquareZeroPoint S V ≃ Derivations S V
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L226). The attribute's comment: “square_zero_points_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L226). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > In the forward identification, the derivation associated to `f` is the square-zero
 > component of `f`, i.e. `s ↦ f(s) - q(s)`.
@@ -282,7 +282,7 @@ theorem squareZeroPointsDerivationsEquiv_apply
     squareZeroPointsDerivationsEquiv S V f s = (f.1 s).snd
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquiv_symm_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L235). The attribute's comment: “square_zero_points_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquiv_symm_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L235). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > In the inverse identification, a derivation `D` is sent to the map
 > `s ↦ q(s) + D(s)` into `k[V]`.
@@ -296,7 +296,7 @@ theorem squareZeroPointsDerivationsEquiv_symm_apply
       (residueHom S s, D s)
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L244). The attribute's comment: “square_zero_points_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L244). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > The canonical identification is functorial in the finite-dimensional vector space.
 
@@ -310,7 +310,7 @@ theorem squareZeroPointsDerivationsEquiv_naturality
       l (squareZeroPointsDerivationsEquiv S V f s)
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquiv_precomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L257). The attribute's comment: “square_zero_points_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquiv_precomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L257). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > The canonical identification is natural under precomposition in the representing
 > complete local algebra.
@@ -326,7 +326,7 @@ theorem squareZeroPointsDerivationsEquiv_precomp
       squareZeroPointsDerivationsEquiv S V f (g t)
 ```
 
-**`Deformation.squareZeroExtensionObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L359). The attribute's comment: “square_zero_points_derivations”.
+**`Deformation.squareZeroExtensionObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L359). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > A finite-dimensional trivial square-zero extension, as an object of the category
 > of complete local `Λ`-algebras, with its algebra coordinates and residue augmentation.
@@ -340,7 +340,7 @@ noncomputable def squareZeroExtensionObject
         (∀ a : A, (e a).fst = residueHom A a) }
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquivHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L430). The attribute's comment: “square_zero_points_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquivHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L430). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > The identification for the actual morphism type of the category of complete local
 > `Λ`-algebras. The equivalence `e` identifies the chosen object `A` with `k[V]`, and
@@ -356,7 +356,7 @@ noncomputable def squareZeroPointsDerivationsEquivHom
     (S ⟶ A) ≃ Derivations S V
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquivHom_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L443). The attribute's comment: “square_zero_points_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquivHom_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L443). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > A categorical morphism `f : S ⟶ k[V]` determines the derivation given by its
 > square-zero component.
@@ -373,7 +373,7 @@ theorem squareZeroPointsDerivationsEquivHom_apply
       (e (f.hom s)).snd
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquivHom_symm_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L457). The attribute's comment: “square_zero_points_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquivHom_symm_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L457). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > Conversely, the categorical morphism determined by `D` is `s ↦ q(s) + D(s)`
 > in square-zero coordinates.
@@ -390,7 +390,7 @@ theorem squareZeroPointsDerivationsEquivHom_symm_apply
       (residueHom S s, D s)
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquivHom_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L474). The attribute's comment: “square_zero_points_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquivHom_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L474). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > The categorical identification commutes with maps between square-zero extensions.
 
@@ -412,7 +412,7 @@ theorem squareZeroPointsDerivationsEquivHom_naturality
       l (squareZeroPointsDerivationsEquivHom S A V eA hΛA heA f s)
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquivHom_precomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L495). The attribute's comment: “square_zero_points_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquivHom_precomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L495). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > The categorical identification is natural in the representing algebra.
 

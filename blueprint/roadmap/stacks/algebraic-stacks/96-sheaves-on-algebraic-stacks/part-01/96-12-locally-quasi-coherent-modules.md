@@ -117,7 +117,7 @@ theorem isLocallyQuasicoherent_modulePullback
 
 [Tag 06WM](https://stacks.math.columbia.edu/tag/06WM) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.locallyQuasicoherentModules_colimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentClosure.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentClosure.lean#L89). The attribute's comment: “(1): LQCoh(𝒪_𝒳) has colimits and they agree with colimits in Mod(𝒳_ét, 𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.locallyQuasicoherentModules_colimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentClosure.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentClosure.lean#L89). The attribute's comment: “(1): LQCoh(𝒪\_𝒳) has colimits and they agree with colimits in Mod(𝒳\_ét, 𝒪\_𝒳)”.
 
 > **Stacks 06WM (1).** The category `LQCoh(𝒪_𝒳)` of locally quasi-coherent modules has
 > colimits, and they agree with colimits in `Mod(𝒳_ét, 𝒪_𝒳)`: local quasi-coherence is closed under
@@ -132,7 +132,7 @@ theorem locallyQuasicoherentModules_colimits :
       PreservesColimitsOfSize.{u, u} (isLocallyQuasicoherent.{u, v, w, u} B E h S hS p hp).ι
 ```
 
-**`AlgebraicGeometry.Stack.locallyQuasicoherentModules_abelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentClosure.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentClosure.lean#L104). The attribute's comment: “(2): LQCoh(𝒪_𝒳) is abelian with kernels and cokernels computed in Mod(𝒳_ét, 𝒪_𝒳), i.e. the inclusion is exact”.
+**`AlgebraicGeometry.Stack.locallyQuasicoherentModules_abelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentClosure.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentClosure.lean#L104). The attribute's comment: “(2): LQCoh(𝒪\_𝒳) is abelian with kernels and cokernels computed in Mod(𝒳\_ét, 𝒪\_𝒳), i.e. the inclusion is exact”.
 
 > **Stacks 06WM (2).** The category `LQCoh(𝒪_𝒳)` is abelian, with kernels and cokernels
 > computed in `Mod(𝒳_ét, 𝒪_𝒳)`: local quasi-coherence is closed under kernels and cokernels, so
@@ -147,7 +147,7 @@ theorem locallyQuasicoherentModules_abelian :
       PreservesFiniteColimits (isLocallyQuasicoherent.{u, v, w, u} B E h S hS p hp).ι
 ```
 
-**`AlgebraicGeometry.Stack.isLocallyQuasicoherent_twoOutOfThree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentClosure.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentClosure.lean#L137). The attribute's comment: “(3): in a short exact sequence of Mod(𝒳_ét, 𝒪_𝒳), if two out of three terms are locally quasi-coherent so is the third”.
+**`AlgebraicGeometry.Stack.isLocallyQuasicoherent_twoOutOfThree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentClosure.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentClosure.lean#L137). The attribute's comment: “(3): in a short exact sequence of Mod(𝒳\_ét, 𝒪\_𝒳), if two out of three terms are locally quasi-coherent so is the third”.
 
 > **Stacks 06WM (3).** In a short exact sequence `0 → 𝓕₁ → 𝓕₂ → 𝓕₃ → 0` of
 > `Mod(𝒳_ét, 𝒪_𝒳)`, if two of the three terms are locally quasi-coherent then so is the third.
@@ -173,7 +173,7 @@ theorem isLocallyQuasicoherent_twoOutOfThree
           IsLocallyQuasicoherent B E h S hS p hp T.X₂.val)
 ```
 
-**`AlgebraicGeometry.Stack.isLocallyQuasicoherent_etaleInternalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentInternalHom.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentInternalHom.lean#L294). The attribute's comment: “(5): for F, G in LQCoh(𝒪_𝒳) with F of finite presentation on 𝒳_ét, the internal Hom 𝓗om_{𝒪_𝒳}(F, G) of Mod(𝒳_ét, 𝒪_𝒳) is locally quasi-coherent”.
+**`AlgebraicGeometry.Stack.isLocallyQuasicoherent_etaleInternalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentInternalHom.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentInternalHom.lean#L294). The attribute's comment: “(5): for F, G in LQCoh(𝒪\_𝒳) with F of finite presentation on 𝒳\_ét, the internal Hom 𝓗om\_\{𝒪\_𝒳}(F, G) of Mod(𝒳\_ét, 𝒪\_𝒳) is locally quasi-coherent”.
 
 > **Stacks 06WM, clause (5).** Let `p : 𝒳 ⥤ (Sch/S)_{fppf}` be a category fibred in groupoids
 > and let `F`, `G` be locally quasi-coherent sheaves of `𝒪_𝒳`-modules on `𝒳_étale`, with `F` of
@@ -200,7 +200,7 @@ theorem isLocallyQuasicoherent_etaleInternalHom
     IsLocallyQuasicoherent B E h S hS p hp (etaleInternalHom B S hS p hp F G).val
 ```
 
-**`AlgebraicGeometry.Stack.isLocallyQuasicoherent_tensorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentTensor.lean, line 689](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentTensor.lean#L689). The attribute's comment: “(4): the tensor product in Mod(𝒳_ét, 𝒪_𝒳) of two locally quasi-coherent modules is locally quasi-coherent”.
+**`AlgebraicGeometry.Stack.isLocallyQuasicoherent_tensorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentTensor.lean, line 689](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LocallyQuasicoherentTensor.lean#L689). The attribute's comment: “(4): the tensor product in Mod(𝒳\_ét, 𝒪\_𝒳) of two locally quasi-coherent modules is locally quasi-coherent”.
 
 > **Stacks 06WM**, clause (4). The tensor product in `Mod(𝒳_ét, 𝒪_𝒳)` of two locally
 > quasi-coherent sheaves of modules on a category fibred in groupoids is locally quasi-coherent.
@@ -233,7 +233,7 @@ theorem isLocallyQuasicoherent_tensorSheaf
 
 [Tag 06WN](https://stacks.math.columbia.edu/tag/06WN) in the Stacks Project.
 
-**`Stacks.SheafOfModules.TensorProduct.isQuasicoherentOnSite_tensorSheaf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentTensor.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentTensor.lean#L354). The attribute's comment: “tensor_product, not 06WG's site”. References: EGA I (9.1.1), “more general”.
+**`Stacks.SheafOfModules.TensorProduct.isQuasicoherentOnSite_tensorSheaf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentTensor.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentTensor.lean#L354). The attribute's comment: “tensor\_product, not 06WG's site”. References: EGA I (9.1.1), “more general”.
 
 > **The tensor clause of Stacks 06WV (5) and of Stacks 06WN (2), for the quasi-coherence of
 > Stacks 03DL (6), on a site satisfying the hypotheses of this section**: the tensor product of
@@ -277,7 +277,7 @@ public instance isQuasicoherentOnSite_tensorSheaf
         ((isSheaf_structureRingPresheaf O))⟩).obj (F)).obj (G))).IsQuasicoherentOnSite
 ```
 
-**`Stacks.SheafOfModules.TensorProduct.isQuasicoherentOnSite_tensorObj`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentTensor.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentTensor.lean#L376). The attribute's comment: “tensor_product, not 06WG's site”.
+**`Stacks.SheafOfModules.TensorProduct.isQuasicoherentOnSite_tensorObj`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentTensor.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentTensor.lean#L376). The attribute's comment: “tensor\_product, not 06WG's site”.
 
 > **The tensor clause of Stacks 06WV (5) and of Stacks 06WN (2), for the quasi-coherence of
 > Stacks 03DL (6)**, for the tensor product of the monoidal category `Mod(𝒪)` itself.  Together
@@ -298,7 +298,7 @@ public instance isQuasicoherentOnSite_tensorObj
     (MonoidalCategory.tensorObj F G).IsQuasicoherentOnSite
 ```
 
-**`Stacks.SheafOfModules.TensorProduct.quasicoherentOnSiteTensorBifunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentTensor.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentTensor.lean#L398). The attribute's comment: “tensor_product, not 06WG's site”.
+**`Stacks.SheafOfModules.TensorProduct.quasicoherentOnSiteTensorBifunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentTensor.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentTensor.lean#L398). The attribute's comment: “tensor\_product, not 06WG's site”.
 
 > **The tensor product as a bifunctor on the quasi-coherent modules of Stacks 03DL (6)**: the
 > restriction of the tensor product of `Mod(𝒪)` to the full subcategory cut out by that
@@ -322,7 +322,7 @@ public noncomputable def quasicoherentOnSiteTensorBifunctor :
         (isSheaf_structureRingPresheaf O))).FullSubcategory
 ```
 
-**`AlgebraicGeometry.FibredSite.existsUnique_hom_tensorSheafMixed_quasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FibredMixedTensorProduct.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FibredMixedTensorProduct.lean#L369). The attribute's comment: “tensor_products”.
+**`AlgebraicGeometry.FibredSite.existsUnique_hom_tensorSheafMixed_quasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FibredMixedTensorProduct.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FibredMixedTensorProduct.lean#L369). The attribute's comment: “tensor\_products”.
 
 > **Stacks 06WN(2).**  Restricted to a pair of quasi-coherent modules with sections in
 > independent universes, the tensor product formed on an associated site of the fibred category is
@@ -347,7 +347,7 @@ public theorem existsUnique_hom_tensorSheafMixed_quasicoherent (τ : SiteKind)
           ((toSiteModules B S hS p hp τ).obj G)).app U x y) = b.app U x y
 ```
 
-**`AlgebraicGeometry.FibredSite.internalHomSheaf_val_eq_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/InternalHom.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/InternalHom.lean#L190). The attribute's comment: “internal_homs”.
+**`AlgebraicGeometry.FibredSite.internalHomSheaf_val_eq_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/InternalHom.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/InternalHom.lean#L190). The attribute's comment: “internal\_homs”.
 
 > The internal Hom of two quasi-coherent modules on a category fibred in groupoids has the
 > same underlying presheaf of modules on each of the five associated sites as on the fppf one; in
@@ -362,7 +362,7 @@ public theorem internalHomSheaf_val_eq_fppf (hp : p.IsFiberedInGroupoids) (τ : 
       ((ringedSite B S hS p hp .fppf).internalHomSheaf F.obj G.obj).val
 ```
 
-**`AlgebraicGeometry.FibredSite.internalHomSheaf_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/InternalHom.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/InternalHom.lean#L201). The attribute's comment: “internal_homs”.
+**`AlgebraicGeometry.FibredSite.internalHomSheaf_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/InternalHom.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/InternalHom.lean#L201). The attribute's comment: “internal\_homs”.
 
 > The internal Hom of a finite locally free quasi-coherent module into a quasi-coherent module
 > on a category fibred in groupoids is quasi-coherent on the fppf associated site.
@@ -374,7 +374,7 @@ public theorem internalHomSheaf_isQuasicoherent (hp : p.IsFiberedInGroupoids)
     ((ringedSite B S hS p hp .fppf).internalHomSheaf F.obj G.obj).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.FibredSite.isQuasicoherentOnSite_tensorSheafMixed_quasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/MixedTensorQuasicoherent.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/MixedTensorQuasicoherent.lean#L239). The attribute's comment: “tensor_products”.
+**`AlgebraicGeometry.FibredSite.isQuasicoherentOnSite_tensorSheafMixed_quasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/MixedTensorQuasicoherent.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/MixedTensorQuasicoherent.lean#L239). The attribute's comment: “tensor\_products”.
 
 > **The tensor product of a pair of quasi-coherent modules with sections in independent
 > universes, formed on the fppf site of a category fibred in groupoids, is quasi-coherent.**  This
@@ -390,7 +390,7 @@ theorem isQuasicoherentOnSite_tensorSheafMixed_quasicoherent
       ((toSiteModules B S hS p hp .fppf).obj G)).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.FibredSite.quasicoherentModules_colimits_siteAgreement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSiteAgreement.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSiteAgreement.lean#L290). The attribute's comment: “(1): QCoh(O_X) has colimits and they agree with colimits in Mod(X_Zar, O_X), Mod(X_et, O_X), Mod(O_X) and LQCoh(O_X)”.
+**`AlgebraicGeometry.FibredSite.quasicoherentModules_colimits_siteAgreement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSiteAgreement.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSiteAgreement.lean#L290). The attribute's comment: “(1): QCoh(O\_X) has colimits and they agree with colimits in Mod(X\_Zar, O\_X), Mod(X\_et, O\_X), Mod(O\_X) and LQCoh(O\_X)”.
 
 > **Stacks 06WN (1).**  For a category fibred in groupoids `p : 𝒳 ⥤ (Sch/S)_fppf`, the
 > category `QCoh(𝒪_𝒳)` has colimits, and they agree with the colimits in `Mod(𝒪_𝒳)`, in
@@ -410,7 +410,7 @@ theorem quasicoherentModules_colimits_siteAgreement (E : BigEtaleSite.{u})
       PreservesColimitsOfSize.{u, u} (toLocallyQuasicoherentModules B S hS p hp E h)
 ```
 
-**`AlgebraicGeometry.FibredSite.internalHomSheaf_quasicoherent_siteAgreement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSiteAgreement.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSiteAgreement.lean#L386). The attribute's comment: “(3): for F, G in QCoh(O_X) the internal homs computed in Mod(X_Zar, O_X), Mod(X_et, O_X) and Mod(O_X) agree, F being finite locally free does not depend on the topology, and for F finite locally free the common value is quasi-coherent”.
+**`AlgebraicGeometry.FibredSite.internalHomSheaf_quasicoherent_siteAgreement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSiteAgreement.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSiteAgreement.lean#L386). The attribute's comment: “(3): for F, G in QCoh(O\_X) the internal homs computed in Mod(X\_Zar, O\_X), Mod(X\_et, O\_X) and Mod(O\_X) agree, F being finite locally free does not depend on the topology, and for F finite locally free the common value is quasi-coherent”.
 
 > **Stacks 06WN (3).**  Let `𝓕` and `𝓖` be quasi-coherent modules on a category fibred in
 > groupoids over `(Sch/S)_fppf`.  Then `𝓕` is finite locally free for the fppf topology if and only
@@ -436,7 +436,7 @@ theorem internalHomSheaf_quasicoherent_siteAgreement
         ((ringedSite B S hS p hp .fppf).internalHomSheaf F.obj G.obj).IsQuasicoherentOnSite)
 ```
 
-**`AlgebraicGeometry.FibredSite.sheafTensor_quasicoherent_siteAgreement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSiteAgreement.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSiteAgreement.lean#L479). The attribute's comment: “(2): for F, G in QCoh(O_X) the tensor products computed in Mod(X_Zar, O_X), Mod(X_et, O_X) and Mod(O_X) agree and the common value is quasi-coherent”.
+**`AlgebraicGeometry.FibredSite.sheafTensor_quasicoherent_siteAgreement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSiteAgreement.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSiteAgreement.lean#L479). The attribute's comment: “(2): for F, G in QCoh(O\_X) the tensor products computed in Mod(X\_Zar, O\_X), Mod(X\_et, O\_X) and Mod(O\_X) agree and the common value is quasi-coherent”.
 
 > **Stacks 06WN (2).**  For quasi-coherent modules `𝓕` and `𝓖` on a category fibred in
 > groupoids over `(Sch/S)_fppf`, the tensor products `𝓕 ⊗ 𝓖` computed in `Mod(𝒳_Zar, 𝒪_𝒳)`,

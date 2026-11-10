@@ -14,7 +14,7 @@ Section 24.22 of the Stacks Project, [Tag 0FS3](https://stacks.math.columbia.edu
 
 [Tag 0FS4](https://stacks.math.columbia.edu/tag/0FS4) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.hasZeroObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomA.lean, line 740](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomA.lean#L740). The attribute's comment: “axiom_a”.
+**`SheafOfModules.DifferentialGradedModule.hasZeroObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomA.lean, line 740](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomA.lean#L740). The attribute's comment: “axiom\_a”.
 
 > The zero differential graded module has unique homogeneous maps to and from every object in
 > every degree.
@@ -30,7 +30,7 @@ theorem hasZeroObject :
           Subsingleton ((dgCategoryData A).category.Hom M Z n))
 ```
 
-**`SheafOfModules.DifferentialGradedModule.hasBinaryBiproducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomA.lean, line 856](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomA.lean#L856). The attribute's comment: “axiom_a”.
+**`SheafOfModules.DifferentialGradedModule.hasBinaryBiproducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomA.lean, line 856](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomA.lean#L856). The attribute's comment: “axiom\_a”.
 
 > Any two right differential graded modules admit a differential graded direct sum with closed
 > degree-zero structure maps.
@@ -41,7 +41,7 @@ theorem hasBinaryBiproducts
     Nonempty (DGCategory.BinaryBiproductData (dgCategoryData A).category M N)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.shiftAxiomB`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomB.lean, line 1421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomB.lean#L1421). The attribute's comment: “axiom_b”.
+**`SheafOfModules.DifferentialGradedModule.shiftAxiomB`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomB.lean, line 1421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedAxiomB.lean#L1421). The attribute's comment: “axiom\_b”.
 
 > The canonical DG shifts and Hom-complex shift isomorphisms for sheaf DG modules.
 

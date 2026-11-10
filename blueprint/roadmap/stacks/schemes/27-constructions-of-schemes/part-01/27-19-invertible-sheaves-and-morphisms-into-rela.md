@@ -27,7 +27,7 @@ public theorem value_mul (n m : ℕ) (V : S.Opens) (a : Γ(A.piece (n : ℤ), V)
           (P.value n V a) (P.value m V b)
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjInvertibleMorphism.GradedPowerMap.coveringOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Locus.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Locus.lean#L175). The attribute's comment: “the open U(psi) = union over triples (U, V, a) -- V affine open of the base, U = f^{-1}(V), a a homogeneous section of positive degree of A over V -- of the open U_{psi(a)} on which the section psi(a) of L^{tensor deg(a)} over U does not vanish”.
+**`Stacks.AlgebraicGeometry.RelativeProjInvertibleMorphism.GradedPowerMap.coveringOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Locus.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Locus.lean#L175). The attribute's comment: “the open U(psi) = union over triples (U, V, a) -- V affine open of the base, U = f^\{-1}(V), a a homogeneous section of positive degree of A over V -- of the open U\_\{psi(a)} on which the section psi(a) of L^\{tensor deg(a)} over U does not vanish”.
 
 > The open `U(ψ) = ⋃_{(U, V, a)} U_{ψ(a)}`: the union of the opens on which the values of `ψ`
 > at the homogeneous sections of positive degree over the affine opens of the base do not
@@ -41,7 +41,7 @@ public def coveringOpen : T.Opens
 
 [Tag 01O9](https://stacks.math.columbia.edu/tag/01O9) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjInvertibleMorphism.tag01O9`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Statement.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Statement.lean#L87). The attribute's comment: “the open U(psi), the morphism r_{L,psi} : U(psi) -> Proj_S(A) over S and the unital map of graded algebras theta : r^*(sum_d O(d)) -> sum_d L^d|_{U(psi)}; properties (1), (2) and (3) for them; and every triple (U', r', theta') with properties (1), (2) and (3) is (U(psi), r_{L,psi}, theta)”.
+**`Stacks.AlgebraicGeometry.RelativeProjInvertibleMorphism.tag01O9`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Statement.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjInvertibleMorphism/Statement.lean#L87). The attribute's comment: “the open U(psi), the morphism r\_\{L,psi} : U(psi) -> Proj\_S(A) over S and the unital map of graded algebras theta : r^*(sum\_d O(d)) -> sum\_d L^d|\_\{U(psi)}; properties (1), (2) and (3) for them; and every triple (U', r', theta') with properties (1), (2) and (3) is (U(psi), r\_\{L,psi}, theta)”.
 
 > **[Stacks, Tag 01O9].** For `ψ : f^*𝒜 ⟶ ⨁_{d} ℒ^{⊗ d}` with `ℒ` invertible, put
 > `P = toGradedPowerMap ψ`, `U(ψ) = P.coveringOpen`, `r = P.globalMorphism (relativeProj A)` and

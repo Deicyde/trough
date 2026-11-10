@@ -97,7 +97,7 @@ Declarations registered for the tag:
 
 [Tag 02V9](https://stacks.math.columbia.edu/tag/02V9) in the Stacks Project.
 
-**`AlgebraicGeometry.PreRelation.restrict`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/Relations/PreRelations.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/Relations/PreRelations.lean#L292). The attribute's comment: “the restriction R|_{U'} of a pre-relation along U' -> U”.
+**`AlgebraicGeometry.PreRelation.restrict`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/Relations/PreRelations.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/Relations/PreRelations.lean#L292). The attribute's comment: “the restriction R|\_\{U'} of a pre-relation along U' -> U”.
 
 > The restriction of a pre-relation along `g`.
 

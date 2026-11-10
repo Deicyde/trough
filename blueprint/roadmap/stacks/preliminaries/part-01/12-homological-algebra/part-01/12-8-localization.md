@@ -106,7 +106,7 @@ theorem hasKernels [HasKernels C] : HasKernels D
 def abelian : Abelian D
 ```
 
-**`CategoryTheory.Localization.preservesFiniteLimits`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Localization/CalculusOfFraction/Abelian.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/CategoryTheory/Localization/CalculusOfFraction/Abelian.lean#L283). The attribute's comment: “part (3)”. References: SGA 5 V (2.3.5), “left exactness of P_S”.
+**`CategoryTheory.Localization.preservesFiniteLimits`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Localization/CalculusOfFraction/Abelian.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/CategoryTheory/Localization/CalculusOfFraction/Abelian.lean#L283). The attribute's comment: “part (3)”. References: SGA 5 V (2.3.5), “left exactness of P\_S”.
 
 > A localization functor between abelian categories for a morphism property with right
 > calculus of fractions preserves finite limits. The abelian structure on the localized
@@ -116,7 +116,7 @@ def abelian : Abelian D
 theorem preservesFiniteLimits : PreservesFiniteLimits L
 ```
 
-**`CategoryTheory.Localization.preservesFiniteColimits`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Localization/CalculusOfFraction/Abelian.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/CategoryTheory/Localization/CalculusOfFraction/Abelian.lean#L297). The attribute's comment: “part (3)”. References: SGA 5 V (2.3.4), “special case”; SGA 5 V (2.3.5), “right exactness of P_S”.
+**`CategoryTheory.Localization.preservesFiniteColimits`**, a lemma in StacksCore (human-reviewed), declared in [StacksCore/CategoryTheory/Localization/CalculusOfFraction/Abelian.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/CategoryTheory/Localization/CalculusOfFraction/Abelian.lean#L297). The attribute's comment: “part (3)”. References: SGA 5 V (2.3.4), “special case”; SGA 5 V (2.3.5), “right exactness of P\_S”.
 
 > A localization functor between abelian categories for a morphism property with left
 > calculus of fractions preserves finite colimits. The abelian structure on the localized

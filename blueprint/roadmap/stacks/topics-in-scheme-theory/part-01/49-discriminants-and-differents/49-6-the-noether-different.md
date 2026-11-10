@@ -165,7 +165,7 @@ theorem noetherPairing_naturality
 
 [Tag 0BVR](https://stacks.math.columbia.edu/tag/0BVR) in the Stacks Project.
 
-**`Stacks.Discriminant.noetherPairing_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingFlatBaseChange.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingFlatBaseChange.lean#L110). The attribute's comment: “flat_base_change”.
+**`Stacks.Discriminant.noetherPairing_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingFlatBaseChange.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingFlatBaseChange.lean#L110). The attribute's comment: “flat\_base\_change”.
 
 > **Stacks Project, Tag 0BVR (flat base change).** The canonical pairing
 > between the relative dualizing module and the diagonal annihilator commutes
@@ -187,7 +187,7 @@ theorem noetherPairing_baseChange
       algebraMap B (A₁ ⊗[A] B) (noetherPairing F ω j)
 ```
 
-**`Stacks.Discriminant.noetherPairing_prod_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingProductProjection.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingProductProjection.lean#L335). The attribute's comment: “product_projection”.
+**`Stacks.Discriminant.noetherPairing_prod_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingProductProjection.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingProductProjection.lean#L335). The attribute's comment: “product\_projection”.
 
 > **Stacks Project, Tag 0BVR (product projection).** The canonical pairing between the relative
 > dualizing module and the diagonal annihilator commutes with the projection to the first factor of
@@ -209,7 +209,7 @@ theorem noetherPairing_prod_fst
       (noetherPairing F ω j).1
 ```
 
-**`Stacks.Discriminant.noetherPairing_prod_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingProductProjection.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingProductProjection.lean#L367). The attribute's comment: “product_projection”.
+**`Stacks.Discriminant.noetherPairing_prod_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingProductProjection.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingProductProjection.lean#L367). The attribute's comment: “product\_projection”.
 
 > **Stacks Project, Tag 0BVR (product projection).** The canonical pairing between the relative
 > dualizing module and the diagonal annihilator commutes with the projection to the second factor

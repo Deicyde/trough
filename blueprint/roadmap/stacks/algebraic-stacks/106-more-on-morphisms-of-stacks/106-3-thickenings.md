@@ -822,7 +822,7 @@ theorem isQuasiSeparatedAbs_iff_isThickening (i : 𝒳 ⟶ 𝒳') (hi : IsThicke
     IsQuasiSeparatedAbs.{u, w, w'} B S hS 𝒳 ↔ IsQuasiSeparatedAbs.{u, w, w'} B S hS 𝒳'
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 470](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L470). The attribute's comment: “clause (1): algebraic space -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_iff_isThickening”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 470](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L470). The attribute's comment: “clause (1): algebraic space -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace\_iff\_isThickening”.
 
 > **Stacks 0BPW, clause (1), from the ambient stack to the closed substack.** If `𝒳 ⊂ 𝒳'` is a
 > thickening of algebraic stacks over `S` and `𝒳'` is an algebraic space, then so is `𝒳`.
@@ -839,7 +839,7 @@ theorem isRepresentableByAlgebraicSpace_of_isThickening (i : 𝒳 ⟶ 𝒳') (hi
     IsRepresentableByAlgebraicSpace B S hS 𝒳.val
 ```
 
-**`AlgebraicGeometry.Stack.isDMOver_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L494). The attribute's comment: “clause (3): DM over the base -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isDMOver_iff_isThickening”.
+**`AlgebraicGeometry.Stack.isDMOver_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L494). The attribute's comment: “clause (3): DM over the base -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isDMOver\_iff\_isThickening”.
 
 > **One half of Stacks 0BPW, clause (3).** If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks
 > over `S` and `𝒳'` is DM over `S`, then so is `𝒳`.
@@ -860,7 +860,7 @@ theorem isDMOver_of_isThickening (i : 𝒳 ⟶ 𝒳') (hi : IsThickening i)
     (h : IsDMOver B S hS 𝒳') : IsDMOver B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiDMOver_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 509](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L509). The attribute's comment: “clause (4): quasi-DM over the base -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isQuasiDMOver_iff_isThickening”.
+**`AlgebraicGeometry.Stack.isQuasiDMOver_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 509](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L509). The attribute's comment: “clause (4): quasi-DM over the base -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isQuasiDMOver\_iff\_isThickening”.
 
 > **One half of Stacks 0BPW, clause (4).** If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks
 > over `S` and `𝒳'` is quasi-DM over `S`, then so is `𝒳`. The companion of
@@ -876,7 +876,7 @@ theorem isQuasiDMOver_of_isThickening (i : 𝒳 ⟶ 𝒳') (hi : IsThickening i)
     (h : IsQuasiDMOver B S hS 𝒳') : IsQuasiDMOver B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isSeparatedOver_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 524](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L524). The attribute's comment: “clause (5): separated over the base -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isSeparatedOver_iff_isThickening”.
+**`AlgebraicGeometry.Stack.isSeparatedOver_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 524](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L524). The attribute's comment: “clause (5): separated over the base -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isSeparatedOver\_iff\_isThickening”.
 
 > **One half of Stacks 0BPW, clause (5).** If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks over
 > `S` and `𝒳'` is separated over `S`, then so is `𝒳`. The companion of
@@ -892,7 +892,7 @@ theorem isSeparatedOver_of_isThickening (i : 𝒳 ⟶ 𝒳') (hi : IsThickening 
     (h : IsSeparatedOver B S hS 𝒳') : IsSeparatedOver B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiSeparatedOver_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 539](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L539). The attribute's comment: “clause (6): quasi-separated over the base -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isQuasiSeparatedOver_iff_isThickening”.
+**`AlgebraicGeometry.Stack.isQuasiSeparatedOver_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean, line 539](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ThickeningSeparationAxioms.lean#L539). The attribute's comment: “clause (6): quasi-separated over the base -- only part of the clause, namely the implication from the ambient stack to the closed substack; the whole equivalence is AlgebraicGeometry.Stack.isQuasiSeparatedOver\_iff\_isThickening”.
 
 > **One half of Stacks 0BPW, clause (6).** If `𝒳 ⊂ 𝒳'` is a thickening of algebraic stacks over
 > `S` and `𝒳'` is quasi-separated over `S`, then so is `𝒳`. The companion of

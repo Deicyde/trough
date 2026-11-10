@@ -154,7 +154,7 @@ theorem isPullback_subscheme_sup (X : Scheme.{u}) (I J : X.IdealSheafData) :
 
 [Tag 0C4J](https://stacks.math.columbia.edu/tag/0C4J) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.isClosedImmersion_inclusion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/ClosedImmersionIdealSheaves.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/ClosedImmersionIdealSheaves.lean#L65). The attribute's comment: “union_closed_immersions”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.isClosedImmersion_inclusion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/ClosedImmersionIdealSheaves.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/ImmersionsAndAffine/ClosedImmersionIdealSheaves.lean#L65). The attribute's comment: “union\_closed\_immersions”.
 
 > **Stacks Project, Tag 0C4I** and **Tag 0C4J.** An inclusion `I ≤ J` of quasi-coherent
 > sheaves of ideals induces a closed immersion of the associated closed subschemes.
@@ -168,7 +168,7 @@ instance isClosedImmersion_inclusion {X : Scheme.{u}} {I J : X.IdealSheafData} (
     IsClosedImmersion (inclusion h)
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.unionIntersection_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/ClosedUnionExactSequence.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/ClosedUnionExactSequence.lean#L436). The attribute's comment: “union_exact_sequence”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.unionIntersection_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/ClosedUnionExactSequence.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/ClosedUnionExactSequence.lean#L436). The attribute's comment: “union\_exact\_sequence”.
 
 > **Stacks Project, Tag 0C4J.** The canonical sequence of structure sheaves of the
 > scheme-theoretic union, the two closed subschemes and their scheme-theoretic intersection,
@@ -180,7 +180,7 @@ theorem unionIntersection_shortExact {S : Scheme.{u}} (I J : S.IdealSheafData) :
       (ShortComplex.mk (unionToBiprod I J) (biprodToIntersection I J) zero).ShortExact
 ```
 
-**`AlgebraicGeometry.Scheme.IdealSheafData.isPushout_subscheme_inf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/ClosedUnionPushout.lean, line 911](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/ClosedUnionPushout.lean#L911). The attribute's comment: “union_pushout”.
+**`AlgebraicGeometry.Scheme.IdealSheafData.isPushout_subscheme_inf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/ClosedUnionPushout.lean, line 911](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/QuasiCoherent/ClosedUnionPushout.lean#L911). The attribute's comment: “union\_pushout”.
 
 > The canonical square from the scheme-theoretic intersection of two closed subschemes
 > to the two subschemes and then to their scheme-theoretic union is a pushout square.

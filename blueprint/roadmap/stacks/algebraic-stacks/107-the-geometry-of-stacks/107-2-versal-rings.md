@@ -114,7 +114,7 @@ theorem isFiniteDimensionalDeformationCategory_of_versalSituation
 
 [Tag 0DQX](https://stacks.math.columbia.edu/tag/0DQX) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.versalRing_powerSeries_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRing/ComparisonAndExistence.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRing/ComparisonAndExistence.lean#L419). The attribute's comment: “the comparison of any two versal rings at x₀: A ≅ A'[[t₁,…,t_r]] or A' ≅ A[[t₁,…,t_r]]”.
+**`AlgebraicGeometry.Stack.versalRing_powerSeries_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRing/ComparisonAndExistence.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRing/ComparisonAndExistence.lean#L419). The attribute's comment: “the comparison of any two versal rings at x₀: A ≅ A'[[t₁,…,t\_r]] or A' ≅ A[[t₁,…,t\_r]]”.
 
 > Two versal rings at a field-valued point of an algebraic stack are isomorphic over the base
 > after adjoining finitely many formal variables to one of them.
@@ -219,7 +219,7 @@ theorem exists_isVersalRingAt_fieldExtension
 
 [Tag 0DQZ](https://stacks.math.columbia.edu/tag/0DQZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isVersalAt_iff_exists_isRelativelySmooth_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalChartSmoothBaseChange.lean, line 885](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalChartSmoothBaseChange.lean#L885). The attribute's comment: “the equivalence of (1) and (4): x is versal at u₀ exactly when there is an open neighbourhood U' ⊆ U of u₀ such that x|_{U'} : U' → 𝒳 is smooth”.
+**`AlgebraicGeometry.Stack.isVersalAt_iff_exists_isRelativelySmooth_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalChartSmoothBaseChange.lean, line 885](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalChartSmoothBaseChange.lean#L885). The attribute's comment: “the equivalence of (1) and (4): x is versal at u₀ exactly when there is an open neighbourhood U' ⊆ U of u₀ such that x|\_\{U'} : U' → 𝒳 is smooth”.
 
 > **Stacks 0DQZ, the equivalence of (1) and (4).** In the versal situation, let `x` be an object
 > of `𝒳` over a scheme `U` locally of finite type over `S`, and let `u₀ ∈ U` be a finite type point.
@@ -254,7 +254,7 @@ theorem isVersalAt_iff_exists_isRelativelySmooth_restrict (D : VersalSituation.{
             objectMorphism D.B D.S D.hS D.𝒳.val (Functor.Fiber.mk (a := x) rfl))
 ```
 
-**`AlgebraicGeometry.Stack.isVersalAt_iff_isVersal_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingChartPoint.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingChartPoint.lean#L171). The attribute's comment: “the equivalence of (1) and (3): x is versal at u₀ exactly when the formal object associated to the restriction of x to Spec 𝒪^∧_{U,u₀} is versal”.
+**`AlgebraicGeometry.Stack.isVersalAt_iff_isVersal_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingChartPoint.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingChartPoint.lean#L171). The attribute's comment: “the equivalence of (1) and (3): x is versal at u₀ exactly when the formal object associated to the restriction of x to Spec 𝒪^∧\_\{U,u₀} is versal”.
 
 > **Stacks 0DQZ, the equivalence of (1) and (3).** In the versal situation, let `x` be an
 > object of `𝒳` over a scheme `U` locally of finite type over `S`, let `u₀` be a point of `U`
@@ -276,7 +276,7 @@ theorem isVersalAt_iff_isVersal_completion
         ξ Λ iΛ hΛ
 ```
 
-**`AlgebraicGeometry.Stack.isVersalRingAt_completeLocalBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingChartPoint.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingChartPoint.lean#L237). The attribute's comment: “the final statement: the completion 𝒪^∧_{U,u₀} is a versal ring to 𝒳 at the point x₀ induced by u₀”.
+**`AlgebraicGeometry.Stack.isVersalRingAt_completeLocalBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingChartPoint.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingChartPoint.lean#L237). The attribute's comment: “the final statement: the completion 𝒪^∧\_\{U,u₀} is a versal ring to 𝒳 at the point x₀ induced by u₀”.
 
 > **Stacks 0DQZ, the final statement.** In the versal situation, if `x` is versal at the
 > finite type point `u₀`, then the completion `𝒪^∧_{U, u₀}` — presented by the complete local base
@@ -309,7 +309,7 @@ theorem isVersalRingAt_completeLocalBase
         (ξ.completeLocalBase Λ)
 ```
 
-**`AlgebraicGeometry.Stack.isVersalAt_iff_isSmooth_hatX`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingChartPoint.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingChartPoint.lean#L303). The attribute's comment: “the equivalence of (1) and (2): x is versal at u₀ exactly when x̂ : 𝓕_{U,k,u₀} ⟶ 𝓕_{𝒳,k,x₀} is smooth”.
+**`AlgebraicGeometry.Stack.isVersalAt_iff_isSmooth_hatX`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingChartPoint.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingChartPoint.lean#L303). The attribute's comment: “the equivalence of (1) and (2): x is versal at u₀ exactly when x̂ : 𝓕\_\{U,k,u₀} ⟶ 𝓕\_\{𝒳,k,x₀} is smooth”.
 
 > **Stacks 0DQZ, the equivalence of (1) and (2).** In the versal situation, let `x` be an
 > object of `𝒳` over a scheme `U`, let `u₀ ∈ U` with residue field `k = κ(u₀)`, and let
@@ -342,7 +342,7 @@ theorem isVersalAt_iff_isSmooth_hatX (t : Spec (.of Λ))
 
 [Tag 0DZS](https://stacks.math.columbia.edu/tag/0DZS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsSmoothLocus.property_iff_isFormallySmoothAtClosedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingSmoothLocus.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingSmoothLocus.lean#L352). The attribute's comment: “the equivalence of (1) and (2): x₀ is in the smooth locus of 𝒳 → S iff 𝒪_{S,s} → A is formally smooth in the 𝔪_A-adic topology”.
+**`AlgebraicGeometry.Stack.IsSmoothLocus.property_iff_isFormallySmoothAtClosedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingSmoothLocus.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingSmoothLocus.lean#L352). The attribute's comment: “the equivalence of (1) and (2): x₀ is in the smooth locus of 𝒳 → S iff 𝒪\_\{S,s} → A is formally smooth in the 𝔪\_A-adic topology”.
 
 > **Stacks 0DZS, the equivalence of (1) and (2).** In Situation 0DQU — `𝒳` an algebraic stack
 > locally of finite type over a locally Noetherian scheme `S` — let `x₀ : Spec k ⟶ 𝒳` be a point with
@@ -373,7 +373,7 @@ theorem IsSmoothLocus.property_iff_isFormallySmoothAtClosedPoint
       IsFormallySmoothAtClosedPoint (Spec.map (CommRingCat.ofHom (algebraMap Λ A)) ≫ iΛ)
 ```
 
-**`AlgebraicGeometry.Stack.isFormallySmoothAtClosedPoint_iff_isSmooth_baseProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingSmoothLocus.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingSmoothLocus.lean#L423). The attribute's comment: “the equivalence of (2) and (3): 𝒪_{S,s} → A is formally smooth in the 𝔪_A-adic topology iff the predeformation category of x₀ is unobstructed”. References: SGA 7 VI (1.14), “special case”.
+**`AlgebraicGeometry.Stack.isFormallySmoothAtClosedPoint_iff_isSmooth_baseProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingSmoothLocus.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingSmoothLocus.lean#L423). The attribute's comment: “the equivalence of (2) and (3): 𝒪\_\{S,s} → A is formally smooth in the 𝔪\_A-adic topology iff the predeformation category of x₀ is unobstructed”. References: SGA 7 VI (1.14), “special case”.
 
 > **Stacks 0DZS, the equivalence of (2) and (3).** In Situation 0DQU let `x₀ : Spec k ⟶ 𝒳` be a
 > point with `Spec k ⟶ S` of finite type, presented over an affine open `Spec Λ ⊆ S` with `Λ → k`
@@ -482,7 +482,7 @@ theorem exists_smoothObject_completedLocalRing_equiv_versalRing (D : VersalSitua
 
 [Tag 0DR1](https://stacks.math.columbia.edu/tag/0DR1) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_smoothObject_completedLocalRing_realization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingArtinApproximation.lean, line 717](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingArtinApproximation.lean#L717). The attribute's comment: “part (4): in Lemma 0DR0 the isomorphism 𝒪^∧_{U,u₀} ≅ A may be chosen so that Spec(A) → 𝒳 corresponds to the canonical map Spec(𝒪^∧_{U,u₀}) → U → 𝒳 of part (3)”.
+**`AlgebraicGeometry.Stack.exists_smoothObject_completedLocalRing_realization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingArtinApproximation.lean, line 717](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingArtinApproximation.lean#L717). The attribute's comment: “part (4): in Lemma 0DR0 the isomorphism 𝒪^∧\_\{U,u₀} ≅ A may be chosen so that Spec(A) → 𝒳 corresponds to the canonical map Spec(𝒪^∧\_\{U,u₀}) → U → 𝒳 of part (3)”.
 
 > **Stacks 0DR1, part (4): Artin approximation compatible with the morphism `Spec A ⟶ 𝒳`.**
 > In the versal situation, let `x₀` be a point of `𝒳` over `Spec k ⟶ Spec Λ ⟶ S`, for an affine open
@@ -662,7 +662,7 @@ theorem exists_isVersalRingAt_fieldExtension_realization
           Spec.map (CommRingCat.ofHom f.toRingHom)
 ```
 
-**`AlgebraicGeometry.Stack.isEffective_and_objectMorphism_completion_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingFlatMorphism.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingFlatMorphism.lean#L197). The attribute's comment: “the morphism Spec(A) ⟶ 𝒳 of the remark at the versal ring A = 𝒪^∧_{U,u₀} of Stacks 0DQZ, and clause (3): that morphism is the composition of the canonical map Spec(𝒪^∧_{U,u₀}) ⟶ U with the given map U ⟶ 𝒳”.
+**`AlgebraicGeometry.Stack.isEffective_and_objectMorphism_completion_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingFlatMorphism.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingFlatMorphism.lean#L197). The attribute's comment: “the morphism Spec(A) ⟶ 𝒳 of the remark at the versal ring A = 𝒪^∧\_\{U,u₀} of Stacks 0DQZ, and clause (3): that morphism is the composition of the canonical map Spec(𝒪^∧\_\{U,u₀}) ⟶ U with the given map U ⟶ 𝒳”.
 
 > **Stacks 0DR1 at the versal ring of Stacks 0DQZ, and its clause (3).** In the versal
 > situation, let `x` be an object of `𝒳` over a scheme `U` locally of finite type over `S`, let
@@ -699,7 +699,7 @@ theorem isEffective_and_objectMorphism_completion_factors
           objectMorphism D.B D.S D.hS D.𝒳.val (Functor.Fiber.mk (a := x) rfl))
 ```
 
-**`AlgebraicGeometry.Stack.exists_powerSeries_comparison_realization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingMorphism.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingMorphism.lean#L419). The attribute's comment: “part (1): in Lemma 0DQX the isomorphism A ≅ A'[[t₁,…,t_r]] or A' ≅ A[[t₁,…,t_r]] may be chosen compatible with the morphisms Spec A → 𝒳, Spec A' → 𝒳”.
+**`AlgebraicGeometry.Stack.exists_powerSeries_comparison_realization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingMorphism.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingMorphism.lean#L419). The attribute's comment: “part (1): in Lemma 0DQX the isomorphism A ≅ A'[[t₁,…,t\_r]] or A' ≅ A[[t₁,…,t\_r]] may be chosen compatible with the morphisms Spec A → 𝒳, Spec A' → 𝒳”.
 
 > **Stacks 0DR1, part (1).** In the versal situation, let `x₀` be a point of `𝒳` over `Spec k`
 > for a field `k` of finite type over `S`, and let `A`, `A'` be versal rings to `𝒳` at `x₀`
@@ -864,7 +864,7 @@ theorem flatObject_of_realization_of_isVersal
 
 [Tag 0DR3](https://stacks.math.columbia.edu/tag/0DR3) in the Stacks Project.
 
-**`Deformation.RepresentablePresentation.comultiplication`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingCogroupoid.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingCogroupoid.lean#L142). The attribute's comment: “the comultiplication c : B ⟶ B ⊗̂_{s,A,t} B of the cogroupoid (A,B,s,t,c)”.
+**`Deformation.RepresentablePresentation.comultiplication`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingCogroupoid.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingCogroupoid.lean#L142). The attribute's comment: “the comultiplication c : B ⟶ B ⊗̂\_\{s,A,t} B of the cogroupoid (A,B,s,t,c)”.
 
 > **Stacks 0DR3.** The comultiplication `c : B ⟶ B ⊗̂_{s, A, t} B` of a representable
 > presentation `(A, B, s, t)`: the composite of the two pushout inclusions under the presentation's
@@ -885,7 +885,7 @@ theorem isCogroupoid_comultiplication (P : RepresentablePresentation.{u, v, w} C
     IsCogroupoid.{u, v, w} P.source P.target P.comultiplication
 ```
 
-**`Deformation.exists_cogroupoid_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingCogroupoid.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingCogroupoid.lean#L298). The attribute's comment: “the equivalence [A/B] → 𝓕 of groupoids cofibred over 𝒞_Λ”.
+**`Deformation.exists_cogroupoid_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingCogroupoid.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingCogroupoid.lean#L298). The attribute's comment: “the equivalence [A/B] → 𝓕 of groupoids cofibred over 𝒞\_Λ”.
 
 > **Stacks 0DR3.** Unwinding a presentation of a category cofibered in groupoids over `𝒞_Λ` by
 > a prorepresentable groupoid in functors: there are a cogroupoid `(A, B, s, t, c)` of Noetherian
@@ -931,7 +931,7 @@ theorem isVersalRingAt_base
         IsVersalRingAt D iΛ hiΛ x₀ hx₀ hfinite ξ.base
 ```
 
-**`AlgebraicGeometry.Stack.hasSmoothPresentation_predeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingPresentation.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingPresentation.lean#L227). The attribute's comment: “F_{X,k,x₀} has a presentation by a smooth prorepresentable groupoid in functors”.
+**`AlgebraicGeometry.Stack.hasSmoothPresentation_predeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingPresentation.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingPresentation.lean#L227). The attribute's comment: “F\_\{X,k,x₀} has a presentation by a smooth prorepresentable groupoid in functors”.
 
 > **Stacks 0DR3**, first sentence. In Situation 0DQU, let `x₀` be an object of `𝒳` over
 > `Spec k` for a field `k` of finite type over `S`, and let `Spec Λ ⊆ S` be an affine open through
@@ -954,7 +954,7 @@ theorem hasSmoothPresentation_predeformationCategory
         (D.𝒳.val.val.p ⋙ Over.post D.B.inclusion) x₀ hx₀).projection
 ```
 
-**`AlgebraicGeometry.Stack.exists_versalCogroupoid_predeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingPresentation.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingPresentation.lean#L264). The attribute's comment: “the unwinding: A with a versal formal object ξ, B with B|_{𝒞_Λ} ≅ A|_{𝒞_Λ} ×_{ξ,F,ξ} A|_{𝒞_Λ}, the projections formally smooth maps s, t : A → B, (A,B,s,t,c) a cogroupoid, the equivalence [A|_{𝒞_Λ}/B|_{𝒞_Λ}] → F induced by ξ, the equivalence [A/B] → F^ over the completed category, and A a versal ring to 𝒳 at x₀”.
+**`AlgebraicGeometry.Stack.exists_versalCogroupoid_predeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/VersalRingPresentation.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/VersalRingPresentation.lean#L264). The attribute's comment: “the unwinding: A with a versal formal object ξ, B with B|\_\{𝒞\_Λ} ≅ A|\_\{𝒞\_Λ} ×\_\{ξ,F,ξ} A|\_\{𝒞\_Λ}, the projections formally smooth maps s, t : A → B, (A,B,s,t,c) a cogroupoid, the equivalence [A|\_\{𝒞\_Λ}/B|\_\{𝒞\_Λ}] → F induced by ξ, the equivalence [A/B] → F^ over the completed category, and A a versal ring to 𝒳 at x₀”.
 
 > **Stacks 0DR3**, the unwinding for `𝓕_{𝒳,k,x₀}`. In Situation 0DQU, let `x₀` be an object of
 > `𝒳` over `Spec k` for a field `k` of finite type over `S`, and let `Spec Λ ⊆ S` be an affine open

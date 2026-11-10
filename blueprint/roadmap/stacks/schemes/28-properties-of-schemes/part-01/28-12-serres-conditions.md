@@ -14,7 +14,7 @@ Section 28.12 of the Stacks Project, [Tag 033P](https://stacks.math.columbia.edu
 
 [Tag 033Q](https://stacks.math.columbia.edu/tag/033Q) in the Stacks Project.
 
-**`AlgebraicGeometry.IsRegularInCodimension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Serre.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Serre.lean#L76). The attribute's comment: “property_rk”. References: EGA IV (5.8.2).
+**`AlgebraicGeometry.IsRegularInCodimension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Serre.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Serre.lean#L76). The attribute's comment: “property\_rk”. References: EGA IV (5.8.2).
 
 > A scheme is regular in codimension `k` (has property `(R_k)`) if each of its local rings of
 > Krull dimension at most `k` is regular.
@@ -23,7 +23,7 @@ Section 28.12 of the Stacks Project, [Tag 033P](https://stacks.math.columbia.edu
 public abbrev IsRegularInCodimension (X : Scheme) (k : ℕ) : Prop
 ```
 
-**`AlgebraicGeometry.HasPropertySk`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Serre.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Serre.lean#L83). The attribute's comment: “property_sk”.
+**`AlgebraicGeometry.HasPropertySk`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Serre.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Serre.lean#L83). The attribute's comment: “property\_sk”.
 
 > Serre's property `(Sₖ)` for a locally Noetherian scheme: at every point, the depth of the
 > local ring is at least the minimum of `k` and the dimension of that local ring.

@@ -26,7 +26,7 @@ theorem equidimensional_of_groupScheme (k : Type u) [Field k] (G : Scheme.{u})
     Equidimensional G
 ```
 
-**`AlgebraicGeometry.topologicalKrullDim_eq_topologicalKrullDimAt_of_groupScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/Dimension.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/Dimension.lean#L92). The attribute's comment: “dimension at every point”. References: EGA IV (15.6.10), “dim(G_y^0) = dim(G_y)”; SGA 3 VIB (1.2), “partial”; SGA 3 VIB (1.5).
+**`AlgebraicGeometry.topologicalKrullDim_eq_topologicalKrullDimAt_of_groupScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/Dimension.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/GroupSchemeProperties/Dimension.lean#L92). The attribute's comment: “dimension at every point”. References: EGA IV (15.6.10), “dim(G\_y^0) = dim(G\_y)”; SGA 3 VIB (1.2), “partial”; SGA 3 VIB (1.5).
 
 > **Stacks Project, Tag 045X.** The dimension of a group scheme locally of finite type over a
 > field is its dimension at every point.

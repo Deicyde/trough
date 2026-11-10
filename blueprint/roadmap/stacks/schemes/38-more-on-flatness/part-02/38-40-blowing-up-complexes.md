@@ -14,7 +14,7 @@ Section 38.40 of the Stacks Project, [Tag 0ESM](https://stacks.math.columbia.edu
 
 [Tag 0ESP](https://stacks.math.columbia.edu/tag/0ESP) in the Stacks Project.
 
-**`AlgebraicGeometry.fittingIdealSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FittingIdeal.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FittingIdeal.lean#L429). The attribute's comment: “the quasi-coherent ideal sheaf Fit_{p,k}(E)”.
+**`AlgebraicGeometry.fittingIdealSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FittingIdeal.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FittingIdeal.lean#L429). The attribute's comment: “the quasi-coherent ideal sheaf Fit\_\{p,k}(E)”.
 
 > The `(p, k)`-th Fitting ideal sheaf of a pseudo-coherent object of `D(𝒪_X)`, the largest
 > quasi-coherent sheaf of ideals which on every affine open is contained in the ideal of minors of
@@ -41,7 +41,7 @@ theorem ideal_fittingIdealSheaf_le {X : Scheme.{u}} [HasDerivedCategory.{w} X.Mo
       minorIdeal (M.matrix p) (M.toFreeData.minorSize p k).toNat
 ```
 
-**`AlgebraicGeometry.fittingIdealSheafOfDerivedModels_isFiniteType_and_ideal_eq_minorIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FittingIdealLocalEquality.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FittingIdealLocalEquality.lean#L158). The attribute's comment: “the finite type ideal sheaf Fit_{p,k}(E) and the minors of d_p generating it”.
+**`AlgebraicGeometry.fittingIdealSheafOfDerivedModels_isFiniteType_and_ideal_eq_minorIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FittingIdealLocalEquality.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FittingIdealLocalEquality.lean#L158). The attribute's comment: “the finite type ideal sheaf Fit\_\{p,k}(E) and the minors of d\_p generating it”.
 
 > **Stacks Project, Tag 0ESP.** Let `X` be a scheme and let `E` be a pseudo-coherent object of
 > `D(𝒪_X)`. For all integers `p`, `k` the Fitting ideal sheaf `Fit_{p,k}(E) ⊆ 𝒪_X` is a finite type

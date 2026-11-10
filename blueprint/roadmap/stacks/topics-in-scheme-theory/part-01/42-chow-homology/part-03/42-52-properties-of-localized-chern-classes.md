@@ -14,7 +14,7 @@ Section 42.52 of the Stacks Project, [Tag 0FB9](https://stacks.math.columbia.edu
 
 [Tag 0FBA](https://stacks.math.columbia.edu/tag/0FBA) in the Stacks Project.
 
-**`Stacks.Chow.LocalizedSituation.localizedPowerSum_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedNewton.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedNewton.lean#L125). The attribute's comment: “In Situation 0GUJ with E|_{X ∖ Z} zero: Newton's recursion P_{q+1} = ∑_{j&lt;q} (-1)^j c_{j+1} P_{q-j} + (-1)^q (q+1) c_{q+1} for every q ≥ 0, products in the algebra A^{(1)}(Z → X) of 0FA0; it gives P_1 = c_1, P_2 = c_1² - 2c_2, P_3 = c_1³ - 3c_1c_2 + 3c_3 and so on, the whole lemma”.
+**`Stacks.Chow.LocalizedSituation.localizedPowerSum_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedNewton.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedNewton.lean#L125). The attribute's comment: “In Situation 0GUJ with E|\_\{X ∖ Z} zero: Newton's recursion P\_\{q+1} = ∑\_\{j`<`q} (-1)^j c\_\{j+1} P\_\{q-j} + (-1)^q (q+1) c\_\{q+1} for every q ≥ 0, products in the algebra A^\{(1)}(Z → X) of 0FA0; it gives P\_1 = c\_1, P\_2 = c\_1² - 2c\_2, P\_3 = c\_1³ - 3c\_1c\_2 + 3c\_3 and so on, the whole lemma”.
 
 > In Situation 0GUJ assume `E|_{X ∖ Z}` is zero. Then the
 > localized classes `P_p(Z ⟶ X, E) ∈ A^p(Z ⟶ X)` of Stacks 0FB2 are Newton's polynomials in the
@@ -51,7 +51,7 @@ theorem localizedPowerSum_succ (q : ℕ) :
 
 [Tag 0FBB](https://stacks.math.columbia.edu/tag/0FBB) in the Stacks Project.
 
-**`Stacks.Chow.LocalizedSituation.nonhomogeneousBivariantTransport_compositeOfInvertible_localizedPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean, line 570](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean#L570). The attribute's comment: “for P_p(Z → X, E), when E|_(X ∖ Z) is zero: P_p(Z → X, E) ∘ c = c ∘ P_p(Z → X, E) in A^*(Y ×_X Z → X), for every c in A^*(Y → X)”.
+**`Stacks.Chow.LocalizedSituation.nonhomogeneousBivariantTransport_compositeOfInvertible_localizedPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean, line 570](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean#L570). The attribute's comment: “for P\_p(Z → X, E), when E|\_(X ∖ Z) is zero: P\_p(Z → X, E) ∘ c = c ∘ P\_p(Z → X, E) in A^*(Y ×\_X Z → X), for every c in A^*(Y → X)”.
 
 > In Situation 0GUJ with `E|_{X ∖ Z}` zero, let `g : Y ⟶ X` be locally of finite type and let
 > `c ∈ A^*(Y ⟶ X)`. Then
@@ -93,7 +93,7 @@ theorem nonhomogeneousBivariantTransport_compositeOfInvertible_localizedPowerSum
         (DirectSum.of _ (p : ℤ) (S.localizedPowerSum h p))
 ```
 
-**`Stacks.Chow.LocalizedSituation.nonhomogeneousBivariantTransport_compositeOfInvertible_localizedChern`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean, line 621](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean#L621). The attribute's comment: “for c_p(Z → X, E), when E|_(X ∖ Z) is finite locally free of rank < p in degree 0: c_p(Z → X, E) ∘ c = c ∘ c_p(Z → X, E) in A^*(Y ×_X Z → X), for every c in A^*(Y → X)”.
+**`Stacks.Chow.LocalizedSituation.nonhomogeneousBivariantTransport_compositeOfInvertible_localizedChern`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean, line 621](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/Commutation.lean#L621). The attribute's comment: “for c\_p(Z → X, E), when E|\_(X ∖ Z) is finite locally free of rank < p in degree 0: c\_p(Z → X, E) ∘ c = c ∘ c\_p(Z → X, E) in A^*(Y ×\_X Z → X), for every c in A^*(Y → X)”.
 
 > In Situation 0GUJ with `E|_{X ∖ Z}` finite locally free of rank `< p` in degree `0`, let
 > `g : Y ⟶ X` be locally of finite type and let `c ∈ A^*(Y ⟶ X)`. Then
@@ -354,7 +354,7 @@ theorem localizedPowerSum_localizedChernChar_triangle
 
 [Tag 0FBF](https://stacks.math.columbia.edu/tag/0FBF) in the Stacks Project.
 
-**`Stacks.Chow.LocalizedSituation.localizedPowerSum_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedDerivedTensor.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedDerivedTensor.lean#L157). The attribute's comment: “the formula for P_p(Z_1 cap Z_2 -> X, F_1 tensor^L F_2), with Z_1 cap Z_2 = Z_1 x_X Z_2 and the products those of 0FE5 (supportedIntersectionMul). The source leaves implicit in which sense F_1 tensor^L F_2 satisfies (3) of 0GUJ in the mixed cases ((c) for one factor and (d) for the other, or (d) for both with different X'); the classes of F_1 tensor^L F_2 are those of Remark 0GUK, defined for every perfect object with defined Chern classes, which covers them.”.
+**`Stacks.Chow.LocalizedSituation.localizedPowerSum_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedDerivedTensor.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedDerivedTensor.lean#L157). The attribute's comment: “the formula for P\_p(Z\_1 cap Z\_2 -> X, F\_1 tensor^L F\_2), with Z\_1 cap Z\_2 = Z\_1 x\_X Z\_2 and the products those of 0FE5 (supportedIntersectionMul). The source leaves implicit in which sense F\_1 tensor^L F\_2 satisfies (3) of 0GUJ in the mixed cases ((c) for one factor and (d) for the other, or (d) for both with different X'); the classes of F\_1 tensor^L F\_2 are those of Remark 0GUK, defined for every perfect object with defined Chern classes, which covers them.”.
 
 > **The localized power sums of a derived tensor product.** In Situation 02QL let `X` be locally
 > of finite type over `S`, let `Z₁, Z₂ ⊆ X` be closed subschemes and let `F₁, F₂ ∈ D(𝒪_X)` be perfect
@@ -380,7 +380,7 @@ theorem localizedPowerSum_derivedTensor (p : ℕ) :
             ((ofIsZero C a i₂ F₂ hF₂ h₂ hfin₂ 0).localizedPowerSum h₂ q.1.2))
 ```
 
-**`Stacks.Chow.LocalizedSituation.localizedChern_one_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedDerivedTensor.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedDerivedTensor.lean#L187). The attribute's comment: “the formula for c_1(Z_1 cap Z_2 -> X, F_1 tensor^L F_2), r_i = P_0(Z_i -> X, F_i); the product r_2 c_1(Z_1 -> X, F_1) is taken for Z_1 cap Z_2 presented as Z_2 x_X Z_1 through the flipped square. The source leaves implicit in which sense F_1 tensor^L F_2 satisfies (3) of 0GUJ in the mixed cases ((c) for one factor and (d) for the other, or (d) for both with different X'); the classes of F_1 tensor^L F_2 are those of Remark 0GUK, defined for every perfect object with defined Chern classes, which covers them.”.
+**`Stacks.Chow.LocalizedSituation.localizedChern_one_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedDerivedTensor.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedDerivedTensor.lean#L187). The attribute's comment: “the formula for c\_1(Z\_1 cap Z\_2 -> X, F\_1 tensor^L F\_2), r\_i = P\_0(Z\_i -> X, F\_i); the product r\_2 c\_1(Z\_1 -> X, F\_1) is taken for Z\_1 cap Z\_2 presented as Z\_2 x\_X Z\_1 through the flipped square. The source leaves implicit in which sense F\_1 tensor^L F\_2 satisfies (3) of 0GUJ in the mixed cases ((c) for one factor and (d) for the other, or (d) for both with different X'); the classes of F\_1 tensor^L F\_2 are those of Remark 0GUK, defined for every perfect object with defined Chern classes, which covers them.”.
 
 > **The first localized Chern class of a derived tensor product.** In the situation of
 > `Stacks.Chow.LocalizedSituation.localizedPowerSum_derivedTensor`, with
@@ -413,15 +413,15 @@ theorem localizedChern_one_derivedTensor :
                 one_pos)))
 ```
 
-**`Stacks.Chow.LocalizedSituation.localizedChern_two_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedDerivedTensor.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedDerivedTensor.lean#L237). The attribute's comment: “the formula for c_2(Z_1 cap Z_2 -> X, F_1 tensor^L F_2); the squares are the products res(c) o c of 0FA0 (supportedMul), C(r_i, 2) is the class of x |-> C(chi_{F_i}(x), 2) (LocalizedChernData.rankChoose), and (r_1 r_2 - 1) c c' is read as (r_1 r_2)(c c') - c c'. The source's 'and so on for higher Chern classes' is not formalized. The source leaves implicit in which sense F_1 tensor^L F_2 satisfies (3) of 0GUJ in the mixed cases ((c) for one factor and (d) for the other, or (d) for both with different X'); the classes of F_1 tensor^L F_2 are those of Remark 0GUK, defined for every perfect object with defined Chern classes, which covers them.”.
+**`Stacks.Chow.LocalizedSituation.localizedChern_two_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedDerivedTensor.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedDerivedTensor.lean#L237). The attribute's comment: “the formula for c\_2(Z\_1 cap Z\_2 -> X, F\_1 tensor^L F\_2); the squares are the products res(c) o c of 0FA0 (supportedMul), C(r\_i, 2) is the class of x |-> C(chi\_\{F\_i}(x), 2) (LocalizedChernData.rankChoose), and (r\_1 r\_2 - 1) c c' is read as (r\_1 r\_2)(c c') - c c'. The source's 'and so on for higher Chern classes' is not formalized. The source leaves implicit in which sense F\_1 tensor^L F\_2 satisfies (3) of 0GUJ in the mixed cases ((c) for one factor and (d) for the other, or (d) for both with different X'); the classes of F\_1 tensor^L F\_2 are those of Remark 0GUK, defined for every perfect object with defined Chern classes, which covers them.”.
 
 > **The second localized Chern class of a derived tensor product.** In the situation of
 > `Stacks.Chow.LocalizedSituation.localizedPowerSum_derivedTensor`, with
 > `r_i = P_0(Z_i ⟶ X, F_i)`, `γ_{i,p} = c_p(Z_i ⟶ X, F_i)` and `C(r_i, 2)` the class
 > `Stacks.Chow.LocalizedChernData.rankChoose`,
 >
->   `c_2(Z₁ ∩ Z₂ ⟶ X, F₁ ⊗^L F₂) = r₁ γ_{2,2} + r₂ γ_{1,2} + C(r₁, 2) γ_{2,1}² +
->     ((r₁ r₂) (γ_{2,1} γ_{1,1}) - γ_{2,1} γ_{1,1}) + C(r₂, 2) γ_{1,1}²`
+>   `c\_2(Z₁ ∩ Z₂ ⟶ X, F₁ ⊗^L F₂) = r₁ γ\_\{2,2} + r₂ γ\_\{1,2} + C(r₁, 2) γ\_\{2,1}² +
+>     ((r₁ r₂) (γ\_\{2,1} γ\_\{1,1}) - γ\_\{2,1} γ\_\{1,1}) + C(r₂, 2) γ\_\{1,1}²`
 >
 > in `A^2(Z₁ ∩ Z₂ ⟶ X)`, the class of `F₁ ⊗^L F₂` being that of Remark 0GUK. The products of a
 > class supported on `Z₂` with one supported on `Z₁` are taken for `Z₁ ∩ Z₂` presented as
@@ -492,7 +492,7 @@ theorem localizedChern_two_derivedTensor :
                 one_pos))))
 ```
 
-**`Stacks.Chow.LocalizedSituation.localizedChernChar_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedDerivedTensor.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedDerivedTensor.lean#L328). The attribute's comment: “the formula ch(Z_1 cap Z_2 -> X, F_1 tensor^L F_2) = ch(Z_1 -> X, F_1) ch(Z_2 -> X, F_2), read degree by degree in prod_p A^p(Z_1 cap Z_2 -> X) tensor Q. The source leaves implicit in which sense F_1 tensor^L F_2 satisfies (3) of 0GUJ in the mixed cases ((c) for one factor and (d) for the other, or (d) for both with different X'); the classes of F_1 tensor^L F_2 are those of Remark 0GUK, defined for every perfect object with defined Chern classes, which covers them.”.
+**`Stacks.Chow.LocalizedSituation.localizedChernChar_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedDerivedTensor.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedDerivedTensor.lean#L328). The attribute's comment: “the formula ch(Z\_1 cap Z\_2 -> X, F\_1 tensor^L F\_2) = ch(Z\_1 -> X, F\_1) ch(Z\_2 -> X, F\_2), read degree by degree in prod\_p A^p(Z\_1 cap Z\_2 -> X) tensor Q. The source leaves implicit in which sense F\_1 tensor^L F\_2 satisfies (3) of 0GUJ in the mixed cases ((c) for one factor and (d) for the other, or (d) for both with different X'); the classes of F\_1 tensor^L F\_2 are those of Remark 0GUK, defined for every perfect object with defined Chern classes, which covers them.”.
 
 > **The localized Chern character of a derived tensor product.** In the situation of
 > `Stacks.Chow.LocalizedSituation.localizedPowerSum_derivedTensor`,

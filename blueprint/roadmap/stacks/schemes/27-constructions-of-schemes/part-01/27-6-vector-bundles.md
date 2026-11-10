@@ -14,7 +14,7 @@ Section 27.6 of the Stacks Project, [Tag 01M1](https://stacks.math.columbia.edu/
 
 [Tag 01M2](https://stacks.math.columbia.edu/tag/01M2) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.vectorBundle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/VectorBundleOfModule.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/VectorBundleOfModule.lean#L72). The attribute's comment: “the vector bundle V(E) = Spec_S(Sym(E)) associated to a quasi-coherent module”. References: EGA II (1.7.8); EGA IV (16.4.7); EGA IV (16.5.12), “more general”; EGA IV (18.5.2); SGA 3 I (4.6.3.1), “partial”; SGA 3 VIB (11.5); SGA 4½ Sommes trig (4.6), “partial”; SGA 6 VIII (5.2).
+**`AlgebraicGeometry.Scheme.Modules.vectorBundle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/VectorBundleOfModule.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/VectorBundleOfModule.lean#L72). The attribute's comment: “the vector bundle V(E) = Spec\_S(Sym(E)) associated to a quasi-coherent module”. References: EGA II (1.7.8); EGA IV (16.4.7); EGA IV (16.5.12), “more general”; EGA IV (18.5.2); SGA 3 I (4.6.3.1), “partial”; SGA 3 VIB (11.5); SGA 4½ Sommes trig (4.6), “partial”; SGA 6 VIII (5.2).
 
 > **The vector bundle `𝐕(ℰ) = Spec_S(Sym(ℰ))` associated to a quasi-coherent `𝒪_S`-module
 > `ℰ`**: the relative spectrum of the symmetric algebra of `ℰ`.
@@ -51,7 +51,7 @@ instance category : Category (VectorBundle S)
 
 [Tag 062N](https://stacks.math.columbia.edu/tag/062N) in the Stacks Project.
 
-**`AlgebraicGeometry.VectorBundle.degreeOneEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/VectorBundleEssSurj.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/VectorBundleEssSurj.lean#L422). The attribute's comment: “the anti-equivalence between vector bundles over S and quasi-coherent O_S-modules”.
+**`AlgebraicGeometry.VectorBundle.degreeOneEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/VectorBundleEssSurj.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/VectorBundleEssSurj.lean#L422). The attribute's comment: “the anti-equivalence between vector bundles over S and quasi-coherent O\_S-modules”.
 
 > The category of vector bundles over a scheme `S` is anti-equivalent to the category of
 > quasi-coherent `𝒪_S`-modules.

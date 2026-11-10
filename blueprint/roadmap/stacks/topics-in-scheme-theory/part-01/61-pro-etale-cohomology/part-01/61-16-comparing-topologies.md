@@ -90,7 +90,7 @@ theorem bigProetaleInverseImage_sections_and_isSheafFor_fpqc (S : B.Scheme) :
           ((bigProetaleToSmallProetaleMorphism B S.obj S.property).inverseImage.obj F).obj R
 ```
 
-**`AlgebraicGeometry.ProEtale.bigProetaleInverseImageSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Sections.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Sections.lean#L112). The attribute's comment: “pullback_value”.
+**`AlgebraicGeometry.ProEtale.bigProetaleInverseImageSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Sections.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Sections.lean#L112). The attribute's comment: “pullback\_value”.
 
 > The value of `π_S⁻¹ F` at `f : T ⟶ S` is the space of global sections of
 > `f_small⁻¹ F` on the small pro-étale site of `T`, naturally in `F`.

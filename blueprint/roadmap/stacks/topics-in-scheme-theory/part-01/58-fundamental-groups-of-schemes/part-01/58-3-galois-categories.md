@@ -163,7 +163,7 @@ public class IsGaloisCategory {C : Type u} [Category.{v, u} C] (F : C ⥤ Type w
 
 [Tag 0BN0](https://stacks.math.columbia.edu/tag/0BN0) in the Stacks Project.
 
-**`CategoryTheory.isInitial_iff_isEmpty_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean#L56). The attribute's comment: “initial_iff_empty”.
+**`CategoryTheory.isInitial_iff_isEmpty_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean#L56). The attribute's comment: “initial\_iff\_empty”.
 
 > An object of a Galois category is initial if and only if its fibre is empty.
 
@@ -173,7 +173,7 @@ public theorem isInitial_iff_isEmpty_fiber {C : Type u} [Category.{v, u} C]
     Nonempty (IsInitial A) ↔ IsEmpty (F.obj A)
 ```
 
-**`CategoryTheory.isTerminal_iff_unique_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean#L64). The attribute's comment: “terminal_iff_singleton”.
+**`CategoryTheory.isTerminal_iff_unique_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean#L64). The attribute's comment: “terminal\_iff\_singleton”.
 
 > An object of a Galois category is terminal if and only if its fibre is a singleton.
 
@@ -183,7 +183,7 @@ public theorem isTerminal_iff_unique_fiber {C : Type u} [Category.{v, u} C]
     Nonempty (IsTerminal Z) ↔ Nonempty (Unique (F.obj Z))
 ```
 
-**`CategoryTheory.IsGaloisCategory.mono_iff_injective`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean#L74). The attribute's comment: “mono_iff_injective”.
+**`CategoryTheory.IsGaloisCategory.mono_iff_injective`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean#L74). The attribute's comment: “mono\_iff\_injective”.
 
 > A morphism in a Galois category is mono if and only if its map on fibres is injective.
 
@@ -193,7 +193,7 @@ public lemma mono_iff_injective {C : Type u} [Category.{v, u} C] (F : C ⥤ Type
     Mono f ↔ Function.Injective (F.map f)
 ```
 
-**`CategoryTheory.epi_iff_surjective_on_fiber`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean#L84). The attribute's comment: “epi_iff_surjective”.
+**`CategoryTheory.epi_iff_surjective_on_fiber`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean#L84). The attribute's comment: “epi\_iff\_surjective”.
 
 > A morphism in a Galois category is an epimorphism if and only if its map on fibres is
 > surjective.
@@ -213,7 +213,7 @@ public instance fiberFunctor_faithful {C : Type u} [Category.{v, u} C]
     (F : C ⥤ Type w) [IsGaloisCategory F] : F.Faithful
 ```
 
-**`CategoryTheory.hom_ext_of_isConnected`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean#L119). The attribute's comment: “one_element”.
+**`CategoryTheory.hom_ext_of_isConnected`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean#L119). The attribute's comment: “one\_element”.
 
 > Two morphisms from a connected object agree if their maps on fibres agree at one point.
 
@@ -224,7 +224,7 @@ public lemma hom_ext_of_isConnected {C : Type u} [Category.{v, u} C]
     (h : F.map a x = F.map b x) : a = b
 ```
 
-**`CategoryTheory.epi_of_connected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean#L130). The attribute's comment: “connected_epi”.
+**`CategoryTheory.epi_of_connected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean#L130). The attribute's comment: “connected\_epi”.
 
 > Every morphism between connected objects in a Galois category is an epimorphism.
 
@@ -235,7 +235,7 @@ public theorem epi_of_connected {C : Type u} [Category.{v, u} C]
     (f : X ⟶ Y) : Epi f
 ```
 
-**`CategoryTheory.exists_component_maps`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean#L144). The attribute's comment: “component_maps”.
+**`CategoryTheory.exists_component_maps`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctor.lean#L144). The attribute's comment: “component\_maps”.
 
 > A map from a coproduct of connected objects to a finite coproduct factors componentwise
 > through a map of indexing types.

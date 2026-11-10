@@ -24,7 +24,7 @@ def IsEquidimensional {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFiniteType f]
     [IsLocallyNoetherian S] (r : ℕ) (α : FamilyOfCycles f r) : Prop
 ```
 
-**`Stacks.Chow.equidimensionalRelativeCycles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean#L461). The attribute's comment: “the group z_equi(X/S, r) of equidimensional relative r-cycles”.
+**`Stacks.Chow.equidimensionalRelativeCycles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean#L461). The attribute's comment: “the group z\_equi(X/S, r) of equidimensional relative r-cycles”.
 
 > The group `z_equi(X/S, r)` of equidimensional relative `r`-cycles on `X/S`: the subgroup of
 > the group of families of `r`-cycles on the fibres of `X/S` whose members are the relative

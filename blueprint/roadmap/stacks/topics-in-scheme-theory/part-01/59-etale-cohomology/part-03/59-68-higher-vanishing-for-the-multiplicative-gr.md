@@ -14,7 +14,7 @@ Section 59.68 of the Stacks Project, [Tag 03RH](https://stacks.math.columbia.edu
 
 [Tag 03RI](https://stacks.math.columbia.edu/tag/03RI) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.epi_divisorSequenceSecondMapOfCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorEpi.lean, line 472](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorEpi.lean#L472). The attribute's comment: “the right-hand exactness of the sequence for a smooth curve over a field: the second map, as constructed here, is an epimorphism of étale sheaves; the exactness in the middle is proved separately, as Stacks.EtaleCohomology.exact_divisorSequenceOfCurve”.
+**`Stacks.EtaleCohomology.epi_divisorSequenceSecondMapOfCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorEpi.lean, line 472](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorEpi.lean#L472). The attribute's comment: “the right-hand exactness of the sequence for a smooth curve over a field: the second map, as constructed here, is an epimorphism of étale sheaves; the exactness in the middle is proved separately, as Stacks.EtaleCohomology.exact\_divisorSequenceOfCurve”.
 
 > **The second map of the fundamental exact sequence of Stacks 03RI is an epimorphism**, for a
 > smooth curve over a field:
@@ -42,7 +42,7 @@ theorem epi_divisorSequenceSecondMapOfCurve {k : Type u} [Field k] {X : Scheme.{
     Epi (divisorSequenceSecondMapOfCurve.{u, v} g)
 ```
 
-**`Stacks.EtaleCohomology.exact_divisorSequenceOfCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorMiddleExactness.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorMiddleExactness.lean#L280). The attribute's comment: “the exactness in the middle of the sequence for a smooth curve over a field: a section of j_* G_m killed by the divisor map is étale locally an invertible global function”.
+**`Stacks.EtaleCohomology.exact_divisorSequenceOfCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorMiddleExactness.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorMiddleExactness.lean#L280). The attribute's comment: “the exactness in the middle of the sequence for a smooth curve over a field: a section of j\_* G\_m killed by the divisor map is étale locally an invertible global function”.
 
 > For a smooth curve `X` over a field, the fundamental exact sequence
 > `0 → 𝐆_{m,X} → j_* 𝐆_{m,η} → ⨁_{x ∈ X_0} (i_x)_* 𝐙 → 0` is exact in the middle: the kernel of
@@ -105,7 +105,7 @@ theorem closedPointDivisorSections_restrict_eq_zero (a : (Γ(U.left, ⊤))ˣ) :
       (pullback.fst U.hom (genericPointInclusion X)).appTop.hom.toMonoidHom a)) = 0
 ```
 
-**`Stacks.EtaleCohomology.integerSkyscraperDivisorOfPoint_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorSheafMap.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorSheafMap.lean#L117). The attribute's comment: “the x-component of the second map is compatible with restriction along a morphism of étale X-schemes, read in the sections of i_{x,*} Z, for X integral and normal”.
+**`Stacks.EtaleCohomology.integerSkyscraperDivisorOfPoint_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorSheafMap.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorSheafMap.lean#L117). The attribute's comment: “the x-component of the second map is compatible with restriction along a morphism of étale X-schemes, read in the sections of i\_\{x,*} Z, for X integral and normal”.
 
 > **The `x`-component of the second map of the fundamental exact sequence is compatible with
 > restriction along a morphism of the small étale site**, read in the sections of `(i_x)_* 𝐙` over an
@@ -152,7 +152,7 @@ theorem closedPointDivisorPresheafSection_restrict_eq_zero (U : X.Etale)
       (pullback.fst U.hom (genericPointInclusion X)).appTop.hom.toMonoidHom a)) = 0
 ```
 
-**`Stacks.EtaleCohomology.closedPointDivisorSheafSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorSheafSecondMap.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorSheafSecondMap.lean#L250). The attribute's comment: “the second map on sections over an étale X-scheme with Noetherian space, valued in the sheaf ⨁_x i_{x,*} Z, for X integral and normal; no irreducibility is assumed”.
+**`Stacks.EtaleCohomology.closedPointDivisorSheafSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorSheafSecondMap.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorSheafSecondMap.lean#L250). The attribute's comment: “the second map on sections over an étale X-scheme with Noetherian space, valued in the sheaf ⨁\_x i\_\{x,*} Z, for X integral and normal; no irreducibility is assumed”.
 
 > **The second map of the fundamental exact sequence of Stacks 03RI over an arbitrary étale
 > `X`-scheme with Noetherian space, valued in the sheaf `⨁_x (i_x)_* 𝐙` itself.** This is
@@ -168,7 +168,7 @@ def closedPointDivisorSheafSection (U : X.Etale) [IsLocallyNoetherian U.left]
       (closedPointDivisorSheaf.{u, v} X).obj.obj (op U)
 ```
 
-**`Stacks.EtaleCohomology.closedPointDivisorSheafSection_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorSheafSecondMap.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorSheafSecondMap.lean#L283). The attribute's comment: “the second map of the sequence is compatible with restriction along a morphism of étale X-schemes with Noetherian spaces, read in the sheaf ⨁_x i_{x,*} Z, for X integral and normal; no irreducibility is assumed”.
+**`Stacks.EtaleCohomology.closedPointDivisorSheafSection_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorSheafSecondMap.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorSheafSecondMap.lean#L283). The attribute's comment: “the second map of the sequence is compatible with restriction along a morphism of étale X-schemes with Noetherian spaces, read in the sheaf ⨁\_x i\_\{x,*} Z, for X integral and normal; no irreducibility is assumed”.
 
 > **The commuting square that makes the second map of Stacks 03RI a map of presheaves**, read in
 > the sheaf `⨁_x (i_x)_* 𝐙`: restricting the section attached to a unit on the generic fibre of `V`
@@ -191,7 +191,7 @@ theorem closedPointDivisorSheafSection_map {U V : X.Etale} [IsLocallyNoetherian 
           φ).left.appTop.hom.toMonoidHom a))
 ```
 
-**`Stacks.EtaleCohomology.closedPointDivisorSheafSection_restrict_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorSheafSecondMap.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorSheafSecondMap.lean#L301). The attribute's comment: “the sequence is a complex on sections over an étale X-scheme with Noetherian space, read in the sheaf ⨁_x i_{x,*} Z, for X integral and normal; no irreducibility is assumed”.
+**`Stacks.EtaleCohomology.closedPointDivisorSheafSection_restrict_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorSheafSecondMap.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/ClosedPointDivisorSheafSecondMap.lean#L301). The attribute's comment: “the sequence is a complex on sections over an étale X-scheme with Noetherian space, read in the sheaf ⨁\_x i\_\{x,*} Z, for X integral and normal; no irreducibility is assumed”.
 
 > **An invertible global function on `U` has trivial image under the second map of Stacks 03RI
 > read in the sheaf `⨁_x (i_x)_* 𝐙`**: the sequence of the source is a complex over an arbitrary
@@ -325,7 +325,7 @@ theorem fundamentalSequence_shortExact :
       (comparison_comp_closedPointDivisorMap.{u, v} fX)).ShortExact
 ```
 
-**`Stacks.EtaleCohomology.injective_restrict_genericFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/FundamentalExactSequenceSections.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/FundamentalExactSequenceSections.lean#L323). The attribute's comment: “exactness at Γ(U, 𝒪_U^*) of the sequence on sections over an étale X-scheme”.
+**`Stacks.EtaleCohomology.injective_restrict_genericFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/FundamentalExactSequenceSections.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/FundamentalExactSequenceSections.lean#L323). The attribute's comment: “exactness at Γ(U, 𝒪\_U^*) of the sequence on sections over an étale X-scheme”.
 
 > **Exactness of the fundamental exact sequence of Stacks 03RI at `Γ(U, 𝒪_U^*)`, read on
 > sections over an étale `X`-scheme `U`.** On an integral scheme the generic fibre `η ×_X U` is
@@ -446,7 +446,7 @@ theorem isZero_rightDerived_genericPointDirectImage_multiplicativeSheaf_smoothCu
 
 [Tag 03RK](https://stacks.math.columbia.edu/tag/03RK) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.subsingleton_sheafH_genericPointDirectImage_multiplicativeSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/MultiplicativeGroupHigherVanishing.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/MultiplicativeGroupHigherVanishing.lean#L245). The attribute's comment: “vanishing of the positive-degree étale cohomology of the direct image of 𝐆_m along the generic point of a curve over an algebraically closed field”.
+**`Stacks.EtaleCohomology.subsingleton_sheafH_genericPointDirectImage_multiplicativeSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/MultiplicativeGroupHigherVanishing.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/MultiplicativeGroupHigherVanishing.lean#L245). The attribute's comment: “vanishing of the positive-degree étale cohomology of the direct image of 𝐆\_m along the generic point of a curve over an algebraically closed field”.
 
 > **Stacks Project, Tag 03RK.** Let `X` be a curve over an algebraically closed field `k`,
 > with structure morphism `g`, let `η = Spec k(X)` be its generic point and `j : η ⟶ X` the
@@ -521,7 +521,7 @@ public theorem subsingleton_sheafH_sigma_closedPointPushforward_smallEtale {k : 
 
 [Tag 03RM](https://stacks.math.columbia.edu/tag/03RM) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.subsingleton_sheafH_multiplicativeSheaf_smoothCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/MultiplicativeGroupHigherVanishing.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/MultiplicativeGroupHigherVanishing.lean#L281). The attribute's comment: “vanishing of the degree ≥ 2 étale cohomology of 𝐆_m on a smooth curve over an algebraically closed field, over Tag 03RI, Tag 03RJ and Tag 03RG as hypotheses”.
+**`Stacks.EtaleCohomology.subsingleton_sheafH_multiplicativeSheaf_smoothCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/MultiplicativeGroupHigherVanishing.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Curves/MultiplicativeGroupHigherVanishing.lean#L281). The attribute's comment: “vanishing of the degree ≥ 2 étale cohomology of 𝐆\_m on a smooth curve over an algebraically closed field, over Tag 03RI, Tag 03RJ and Tag 03RG as hypotheses”.
 
 > **Stacks Project, Tag 03RM.** Let `X` be a smooth curve over an algebraically closed field
 > `k`, let `η = Spec k(X)` be its generic point and `j : η ⟶ X` the inclusion of the generic

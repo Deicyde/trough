@@ -14,7 +14,7 @@ Section 31.30 of the Stacks Project, [Tag 0EBK](https://stacks.math.columbia.edu
 
 [Tag 0EBL](https://stacks.math.columbia.edu/tag/0EBL) in the Stacks Project.
 
-**`AlgebraicGeometry.CoherentReflexive.isIso_dualTensorHullToSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/DualTensorInternalHom.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/DualTensorInternalHom.lean#L438). The attribute's comment: “the comparison (ℋom(ℱ, 𝒪_X) ⊗ 𝒢)^∨∨ → ℋom(ℱ, 𝒢) is an isomorphism”.
+**`AlgebraicGeometry.CoherentReflexive.isIso_dualTensorHullToSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/DualTensorInternalHom.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/DualTensorInternalHom.lean#L438). The attribute's comment: “the comparison (ℋom(ℱ, 𝒪\_X) ⊗ 𝒢)^∨∨ → ℋom(ℱ, 𝒢) is an isomorphism”.
 
 > Let `X` be an integral locally Noetherian normal scheme and let `ℱ` and `𝒢` be coherent
 > reflexive `𝒪_X`-modules. Then the canonical map
@@ -144,7 +144,7 @@ theorem isOpen_sectionIsomorphismLocus_and_nonempty_isColimit (F : RankOneReflex
       Nonempty (IsColimit (sectionIsomorphismOpenCocone F.obj s))
 ```
 
-**`Stacks.AlgebraicGeometry.ReflexivePowers.reflexivePower`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexivePowers.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexivePowers.lean#L81). The attribute's comment: “the reflexive powers ℱ^[1] = ℱ, ℱ^[n+1] = (ℱ ⊗ ℱ^[n])^{**}”.
+**`Stacks.AlgebraicGeometry.ReflexivePowers.reflexivePower`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexivePowers.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexivePowers.lean#L81). The attribute's comment: “the reflexive powers ℱ^[1] = ℱ, ℱ^[n+1] = (ℱ ⊗ ℱ^[n])^\{**}”.
 
 > The reflexive powers of `ℱ`: `ℱ^{[1]} = ℱ` and `ℱ^{[n + 1]} = (ℱ ⊗_{𝒪_X} ℱ^{[n]})^{**}`; the
 > value at `0` is `𝒪_X`, the first term of the system `𝒪_X → ℱ → ℱ^{[2]} → ⋯`.
@@ -215,7 +215,7 @@ theorem objective_0EBQ (hrank : Module.rank R M = 1) {s : M} (hs : s ≠ 0) :
       Nonempty (IsColimit (moduleColimitCocone R M hrank hs))
 ```
 
-**`Stacks.AlgebraicGeometry.ReflexiveHeightOnePrimes.sectionIsomorphismPrimes_eq_compl_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveHeightOnePrimes.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveHeightOnePrimes.lean#L176). The attribute's comment: “the open U of Lemma 31.30.3, on Spec(A), identified with the complement of the support of M/As; the identification of that support with V(p_1) ∪ … ∪ V(p_r) is Lemma 31.30.4 (Tag 0EBP)”.
+**`Stacks.AlgebraicGeometry.ReflexiveHeightOnePrimes.sectionIsomorphismPrimes_eq_compl_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveHeightOnePrimes.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveHeightOnePrimes.lean#L176). The attribute's comment: “the open U of Lemma 31.30.3, on Spec(A), identified with the complement of the support of M/As; the identification of that support with V(p\_1) ∪ … ∪ V(p\_r) is Lemma 31.30.4 (Tag 0EBP)”.
 
 > For `A` a Noetherian normal domain, `M` a finite reflexive `A`-module and `s ∈ M` nonzero, the
 > set of primes at which `s : A_𝔭 → M_𝔭` is an isomorphism is the complement of the support of
@@ -227,7 +227,7 @@ theorem sectionIsomorphismPrimes_eq_compl_support [IsDomain A] [IsNoetherianRing
     sectionIsomorphismPrimes A s = (Module.support A (M ⧸ (A ∙ s)))ᶜ
 ```
 
-**`Stacks.AlgebraicGeometry.ReflexiveHeightOnePrimes.sectionIsomorphismPrimes_eq_compl_heightOneSupportZeroLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveHeightOnePrimes.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveHeightOnePrimes.lean#L231). The attribute's comment: “the first display, U = Spec(A) \ (V(p_1) ∪ … ∪ V(p_r)), unconditionally; the colimit Γ(U, O_U) = colim M^[n] is AlgebraicGeometry.objective_0EBQ of Divisors/Reflexive/ReflexiveColimitSections.lean”.
+**`Stacks.AlgebraicGeometry.ReflexiveHeightOnePrimes.sectionIsomorphismPrimes_eq_compl_heightOneSupportZeroLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveHeightOnePrimes.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ReflexiveHeightOnePrimes.lean#L231). The attribute's comment: “the first display, U = Spec(A) \ (V(p\_1) ∪ … ∪ V(p\_r)), unconditionally; the colimit Γ(U, O\_U) = colim M^[n] is AlgebraicGeometry.objective\_0EBQ of Divisors/Reflexive/ReflexiveColimitSections.lean”.
 
 > For `A` a Noetherian normal domain, `M` a finite reflexive `A`-module of rank one and `s ∈ M`
 > nonzero, `U = Spec(A) \ (V(𝔭₁) ∪ ⋯ ∪ V(𝔭_r))`, where `U` is the set of primes at which

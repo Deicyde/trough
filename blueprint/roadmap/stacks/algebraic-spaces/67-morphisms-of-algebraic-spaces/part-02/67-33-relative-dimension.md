@@ -14,7 +14,7 @@ Section 67.33 of the Stacks Project, [Tag 04NH](https://stacks.math.columbia.edu
 
 [Tag 04NM](https://stacks.math.columbia.edu/tag/04NM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HasFiberLocalRingDimension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean#L81). The attribute's comment: “local_ring_fibre_dimension”.
+**`AlgebraicGeometry.Space.HasFiberLocalRingDimension`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean#L81). The attribute's comment: “local\_ring\_fibre\_dimension”.
 
 > **Stacks 04NM, dimension of the local ring of a fibre.** The local ring of the fibre of
 > `f` has dimension `d` at `x`, tested on every étale chart at `x`.
@@ -26,7 +26,7 @@ abbrev HasFiberLocalRingDimension (d : ℕ∞) (B : BigFppfSite.{u}) (S : Scheme
     (f : F ⟶ G) (x : points B S hS F) : Prop
 ```
 
-**`AlgebraicGeometry.Space.HasRelativeDimensionAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean#L92). The attribute's comment: “relative_dimension_at_point”.
+**`AlgebraicGeometry.Space.HasRelativeDimensionAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean#L92). The attribute's comment: “relative\_dimension\_at\_point”.
 
 > **Stacks 04NM, relative dimension at a point.** A morphism of algebraic spaces has
 > relative dimension `d` at `x` if its fibre has dimension `d` at the corresponding point in
@@ -38,7 +38,7 @@ abbrev HasRelativeDimensionAt (d : ℕ∞) (B : BigFppfSite.{u}) (S : Scheme.{u}
     (f : F ⟶ G) (x : points B S hS F) : Prop
 ```
 
-**`AlgebraicGeometry.Space.HasTranscendenceDegreeAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean#L101). The attribute's comment: “transcendence_degree”.
+**`AlgebraicGeometry.Space.HasTranscendenceDegreeAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDimensionAtPoint.lean#L101). The attribute's comment: “transcendence\_degree”.
 
 > **Stacks 04NM, transcendence degree at a point.** The transcendence degree of `x` over
 > its image under `f` is `r`. For algebraic spaces this is equivalently tested on one or every

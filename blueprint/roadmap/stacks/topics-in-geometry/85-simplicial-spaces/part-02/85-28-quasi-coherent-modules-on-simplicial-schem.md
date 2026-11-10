@@ -102,7 +102,7 @@ public noncomputable def quasicoherentModulePullbackAdjPushforward' (f : V ⟶ U
 
 [Tag 07TL](https://stacks.math.columbia.edu/tag/07TL) in the Stacks Project.
 
-**`AlgebraicGeometry.pullbackToSimplicialSchemeComponentIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/QuasiCoherentModulesSimplicialSection.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/QuasiCoherentModulesSimplicialSection.lean#L147). The attribute's comment: “the functor is pullback: its component in degree n is the pullback along the structure morphism (X/S)_n ⟶ S”.
+**`AlgebraicGeometry.pullbackToSimplicialSchemeComponentIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/QuasiCoherentModulesSimplicialSection.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/QuasiCoherentModulesSimplicialSection.lean#L147). The attribute's comment: “the functor is pullback: its component in degree n is the pullback along the structure morphism (X/S)\_n ⟶ S”.
 
 > **The pullback is computed degreewise**: the component in degree `n` of the pullback of a
 > quasi-coherent `O_S`-module `M` to the total Zariski site of `(X/S)_•` is the pullback of `M`
@@ -142,7 +142,7 @@ theorem isEquivalence_pullbackToSimplicialScheme_of_fpqcLocalSection {I : Type*}
     (pullbackToSimplicialScheme f).IsEquivalence
 ```
 
-**`AlgebraicGeometry.quasicoherentDescentEquivalenceOfSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/QuasiCoherentModulesWithSection.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/QuasiCoherentModulesWithSection.lean#L185). The attribute's comment: “the equivalence, with its target in descent-data form: the quasi-coherent descent data for {f}, not yet identified with QCoh(((X/S)_bullet)_Zar); that identification is the cited 07TJ together with 07TH, and 07TJ is absent here”.
+**`AlgebraicGeometry.quasicoherentDescentEquivalenceOfSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/QuasiCoherentModulesWithSection.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/QuasiCoherentModulesWithSection.lean#L185). The attribute's comment: “the equivalence, with its target in descent-data form: the quasi-coherent descent data for \{f}, not yet identified with QCoh(((X/S)\_bullet)\_Zar); that identification is the cited 07TJ together with 07TH, and 07TJ is absent here”.
 
 > **Stacks 07TL, in its descent-data form.** For a morphism of schemes `f : X ⟶ S` with a
 > section, pullback is an equivalence between the category of quasi-coherent `O_S`-modules and the
@@ -156,7 +156,7 @@ def quasicoherentDescentEquivalenceOfSection
       QuasicoherentDescentData (PreZeroHypercover.singleton.{0} f).f
 ```
 
-**`AlgebraicGeometry.quasicoherentDescentEquivalenceOfFpqcLocalSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/QuasiCoherentModulesWithSection.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/QuasiCoherentModulesWithSection.lean#L222). The attribute's comment: “the footnote's stronger form, f having a section only fpqc locally on S; target in descent-data form as above, its identification with QCoh(((X/S)_bullet)_Zar) being the cited 07TJ together with 07TH, and 07TJ is absent here”.
+**`AlgebraicGeometry.quasicoherentDescentEquivalenceOfFpqcLocalSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/QuasiCoherentModulesWithSection.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/QuasiCoherentModulesWithSection.lean#L222). The attribute's comment: “the footnote's stronger form, f having a section only fpqc locally on S; target in descent-data form as above, its identification with QCoh(((X/S)\_bullet)\_Zar) being the cited 07TJ together with 07TH, and 07TJ is absent here”.
 
 > **Stacks 07TL in the stronger form of its footnote, in the descent-data form.** If `f` admits
 > a section after an fpqc covering of `S`, pullback is an equivalence between the quasi-coherent

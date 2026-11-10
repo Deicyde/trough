@@ -92,7 +92,7 @@ theorem exists_representableBy_cohomologyLocus (k : Type u) [Field k] {X : Schem
 
 [Tag 0B9Y](https://stacks.math.columbia.edu/tag/0B9Y) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_invertible_baseChangeTwist_finrank_eq_one_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/BaseChangeTwistLowCohomology.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/BaseChangeTwistLowCohomology.lean#L438). The attribute's comment: “for X_K given as any pullback square of X ⟶ Spec k along Spec K ⟶ Spec k, with L ⊗ L₀|_{X_K} the twist baseChangeTwist p L L₀ = L ⊗ p^*L₀”.
+**`AlgebraicGeometry.exists_invertible_baseChangeTwist_finrank_eq_one_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/BaseChangeTwistLowCohomology.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/BaseChangeTwistLowCohomology.lean#L438). The attribute's comment: “for X\_K given as any pullback square of X ⟶ Spec k along Spec K ⟶ Spec k, with L ⊗ L₀|\_\{X\_K} the twist baseChangeTwist p L L₀ = L ⊗ p^*L₀”.
 
 > **Stacks Project, Tag 0B9Y.** Let `k` be a separably closed field, `X` a smooth projective
 > curve over `k`, `K/k` a field extension and `X' = X_K` the base change, given as any pullback
@@ -120,7 +120,7 @@ theorem exists_invertible_baseChangeTwist_finrank_eq_one_of_isSepClosed
       Module.finrank K (cohomologyOverField K f' (baseChangeTwist p L L₀) 1) = 0
 ```
 
-**`AlgebraicGeometry.exists_finrank_cohomologyOverField_add_schemePullbackClass_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PrescribedLowCohomologyFieldExtension.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/PrescribedLowCohomologyFieldExtension.lean#L501). The attribute's comment: “on Picard classes: the class c of the invertible sheaf L on X_K and the class c₀ of L₀ on X, with c + p^*c₀ the class of L ⊗ L₀|_{X_K}; H¹ = 0 is stated as vanishing, which gives dim_K H¹ = 0. Properness of X is used in place of projectivity”.
+**`AlgebraicGeometry.exists_finrank_cohomologyOverField_add_schemePullbackClass_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PrescribedLowCohomologyFieldExtension.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/PrescribedLowCohomologyFieldExtension.lean#L501). The attribute's comment: “on Picard classes: the class c of the invertible sheaf L on X\_K and the class c₀ of L₀ on X, with c + p^*c₀ the class of L ⊗ L₀|\_\{X\_K}; H¹ = 0 is stated as vanishing, which gives dim\_K H¹ = 0. Properness of X is used in place of projectivity”.
 
 > Let `k` be a separably closed field, `X` a smooth proper curve over `k`, `K/k` a field
 > extension and `p : X_K ⟶ X` the projection of the base change. For every Picard class `c` on
@@ -141,7 +141,7 @@ theorem exists_finrank_cohomologyOverField_add_schemePullbackClass_eq_one
           (c + Stacks.Picard.schemePullbackClass 𝔭 c₀)).obj 1)
 ```
 
-**`AlgebraicGeometry.exists_invertible_baseChangeTwist_finrank_cohomologyOverField_eq_one_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PrescribedLowCohomologyFieldExtension.lean, line 522](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/PrescribedLowCohomologyFieldExtension.lean#L522). The attribute's comment: “the source's statement on sheaves, with L ⊗ L₀|_{X_K} the twist baseChangeTwist p L L₀ = L ⊗ p^*L₀; properness of X is used in place of projectivity”.
+**`AlgebraicGeometry.exists_invertible_baseChangeTwist_finrank_cohomologyOverField_eq_one_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PrescribedLowCohomologyFieldExtension.lean, line 522](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/PrescribedLowCohomologyFieldExtension.lean#L522). The attribute's comment: “the source's statement on sheaves, with L ⊗ L₀|\_\{X\_K} the twist baseChangeTwist p L L₀ = L ⊗ p^*L₀; properness of X is used in place of projectivity”.
 
 > Let `k` be a separably closed field, `X` a smooth proper curve over `k`, `K/k` a field
 > extension and `p : X_K ⟶ X` the projection of the base change. For every invertible
@@ -187,7 +187,7 @@ theorem isRepresentable_picardFunctor_of_isSepClosed (k : Type u) [Field k] [IsS
     (Stacks.PicardFunctor.picardFunctor B hX hk f).IsRepresentable
 ```
 
-**`Stacks.RigidifiedPicard.exists_grp_iso_functor_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/Jacobian/PicardOfCurve.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardScheme/Jacobian/PicardOfCurve.lean#L301). The attribute's comment: “as the rigidified functor Pic_{X/k,σ} at a rational point σ, which the source's proof identifies with Pic_{X/k}”.
+**`Stacks.RigidifiedPicard.exists_grp_iso_functor_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardScheme/Jacobian/PicardOfCurve.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardScheme/Jacobian/PicardOfCurve.lean#L301). The attribute's comment: “as the rigidified functor Pic\_\{X/k,σ} at a rational point σ, which the source's proof identifies with Pic\_\{X/k}”.
 
 > **[Stacks, Tag 0B9Z].** The Picard functor of a smooth projective curve `X` over a separably
 > closed field `k` is representable: for a rational point `σ`, the rigidified Picard functor

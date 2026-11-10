@@ -147,7 +147,7 @@ theorem curvesStable_isOpenSubstack_and_factors_iff :
 
 [Tag 0E77](https://stacks.math.columbia.edu/tag/0E77) in the Stacks Project.
 
-**`AlgebraicGeometry.moduliStableCurves`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliCurves.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliCurves.lean#L91). The attribute's comment: “the moduli stack of stable curves, 𝓜̄ = Curves^{stable}”.
+**`AlgebraicGeometry.moduliStableCurves`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliCurves.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliCurves.lean#L91). The attribute's comment: “the moduli stack of stable curves, 𝓜̄ = Curves^\{stable}”.
 
 > **The moduli stack `𝓜̄ = Curves^{stable}` of stable curves**: the substack of the stack of
 > curves of the families of curves which are stable (Stacks 0E75), as a category fibred in groupoids
@@ -158,7 +158,7 @@ def moduliStableCurves :
     CatFiberedInGroupoids.{u, u + 1, u + 1, u + 1} (BigFppfOver B integerBase hZ)
 ```
 
-**`AlgebraicGeometry.moduliStableCurvesOfGenus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliStableCurvesOfGenus.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliStableCurvesOfGenus.lean#L143). The attribute's comment: “the moduli stack of stable curves of genus g, 𝓜̄_g”.
+**`AlgebraicGeometry.moduliStableCurvesOfGenus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliStableCurvesOfGenus.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliStableCurvesOfGenus.lean#L143). The attribute's comment: “the moduli stack of stable curves of genus g, 𝓜̄\_g”.
 
 > **Stacks 0E77, `𝓜̄_g`.** The moduli stack `𝓜̄_g` of stable curves of genus `g`: the substack of
 > the stack of curves of the families `f : X → S` which are stable (Stacks 0E75) and whose fibre
@@ -253,7 +253,7 @@ theorem moduliStableCurves_decomposition_moduliStableCurvesOfGenus :
 
 [Tag 0E79](https://stacks.math.columbia.edu/tag/0E79) in the Stacks Project.
 
-**`AlgebraicGeometry.isSmoothOverIntegers_moduliStableCurves_and_moduliStableCurvesOfGenus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StableCurvesSmoothOverSpecZ.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/StableCurvesSmoothOverSpecZ.lean#L118). The attribute's comment: “both morphisms: 𝓜̄ → Spec(ℤ) (first conjunct) and 𝓜̄_g → Spec(ℤ) for every g (second conjunct, for 𝓜̄_g cut out by R¹f_*𝒪_X locally free of rank g as in 0E78 (1), and by all fibres of genus g as in 0E77) are smooth”.
+**`AlgebraicGeometry.isSmoothOverIntegers_moduliStableCurves_and_moduliStableCurvesOfGenus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/StableCurvesSmoothOverSpecZ.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/StableCurvesSmoothOverSpecZ.lean#L118). The attribute's comment: “both morphisms: 𝓜̄ → Spec(ℤ) (first conjunct) and 𝓜̄\_g → Spec(ℤ) for every g (second conjunct, for 𝓜̄\_g cut out by R¹f\_*𝒪\_X locally free of rank g as in 0E78 (1), and by all fibres of genus g as in 0E77) are smooth”.
 
 > **Stacks 0E79.** The morphisms `𝓜̄ → Spec(ℤ)` and, for every `g`, `𝓜̄_g → Spec(ℤ)` are smooth.
 > Here `𝓜̄` is the open substack of the algebraic stack of curves (Stacks 0D5A) of the stable

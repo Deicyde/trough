@@ -61,7 +61,7 @@ Declarations registered for the tag:
 
 [Tag 01J4](https://stacks.math.columbia.edu/tag/01J4) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.reduction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Reduction.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Reduction.lean#L57). The attribute's comment: “the reduction X_red of X”. References: EGA I (5.1.3).
+**`AlgebraicGeometry.Scheme.reduction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Reduction.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Reduction.lean#L57). The attribute's comment: “the reduction X\_red of X”. References: EGA I (5.1.3).
 
 > The **reduction** `X_red` of a scheme `X`: the closed subscheme cut out by the nilradical
 > ideal sheaf, that is the reduced induced closed subscheme structure on all of `X`.
@@ -87,7 +87,7 @@ Declarations registered for the tag:
 
 [Tag 0F2L](https://stacks.math.columbia.edu/tag/0F2L) in the Stacks Project.
 
-**`Stacks.ZariskiAndSeparation.ReducedInducedLocallyClosed.reducedInducedIdealSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/ReducedInducedLocallyClosed.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/ReducedInducedLocallyClosed.lean#L35). The attribute's comment: “reduced_induced_scheme_structure_on_a_locally_closed_subset”.
+**`Stacks.ZariskiAndSeparation.ReducedInducedLocallyClosed.reducedInducedIdealSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/ReducedInducedLocallyClosed.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Schemes/ZariskiAndSeparation/ReducedInducedLocallyClosed.lean#L35). The attribute's comment: “reduced\_induced\_scheme\_structure\_on\_a\_locally\_closed\_subset”.
 
 > The defining ideal sheaf of the reduced induced scheme structure on a locally
 > closed subset.

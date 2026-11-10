@@ -444,7 +444,7 @@ theorem exists_curveDegree_eq_finsum_of_isProper (k : Type u) [Field k]
 
 [Tag 0AYX](https://stacks.math.columbia.edu/tag/0AYX) in the Stacks Project.
 
-**`AlgebraicGeometry.curveDegree_tensorSheaf_eq_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveDegreeTensor/Cohomological.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CurveDegreeTensor/Cohomological.lean#L185). The attribute's comment: “on a proper curve; the whole tag, on a proper scheme of dimension at most one, is AlgebraicGeometry.curveDegree_tensorSheaf_eq_add_of_topologicalKrullDim_le_one”.
+**`AlgebraicGeometry.curveDegree_tensorSheaf_eq_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveDegreeTensor/Cohomological.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CurveDegreeTensor/Cohomological.lean#L185). The attribute's comment: “on a proper curve; the whole tag, on a proper scheme of dimension at most one, is AlgebraicGeometry.curveDegree\_tensorSheaf\_eq\_add\_of\_topologicalKrullDim\_le\_one”.
 
 > **[Stacks, Tag 0AYX] on a proper curve.** For `ℰ` and `𝒱` finite locally free of constant
 > ranks `n` and `m` on a proper curve over a field,
@@ -729,7 +729,7 @@ theorem invertibleCurveDegree_pos_of_eval_top_ne_zero [IsProper f] [IsIntegral X
     0 < @invertibleCurveDegree k _ X f _ hdim L hL
 ```
 
-**`AlgebraicGeometry.isIso_unitHomEquiv_symm_of_invertibleCurveDegree_nonpos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L432). The attribute's comment: “part (4), in the stronger form the source's proof supports and the text does not state: the multiplication map O_X -> L of the given section is itself an isomorphism, not merely L isomorphic to O_X abstractly. The weaker reading is the corollary isTrivial_of_invertibleCurveDegree_nonpos beside it”.
+**`AlgebraicGeometry.isIso_unitHomEquiv_symm_of_invertibleCurveDegree_nonpos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L432). The attribute's comment: “part (4), in the stronger form the source's proof supports and the text does not state: the multiplication map O\_X -> L of the given section is itself an isomorphism, not merely L isomorphic to O\_X abstractly. The weaker reading is the corollary isTrivial\_of\_invertibleCurveDegree\_nonpos beside it”.
 
 > **A nonzero section of a module of nonpositive degree trivializes it.** On a proper integral
 > scheme of dimension at most one over a field, let `ℒ` be an invertible module with `deg(ℒ) ≤ 0`
@@ -743,7 +743,7 @@ theorem isIso_unitHomEquiv_symm_of_invertibleCurveDegree_nonpos [IsProper f] [Is
     IsIso (L.unitHomEquiv.symm s)
 ```
 
-**`AlgebraicGeometry.isTrivial_of_invertibleCurveDegree_nonpos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 447](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L447). The attribute's comment: “part (4) as stated -- L is isomorphic to O_X”.
+**`AlgebraicGeometry.isTrivial_of_invertibleCurveDegree_nonpos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 447](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L447). The attribute's comment: “part (4) as stated -- L is isomorphic to O\_X”.
 
 > **An invertible module of nonpositive degree with a nonzero global section is trivial**, on
 > a proper integral scheme of dimension at most one over a field.

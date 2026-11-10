@@ -33,8 +33,8 @@ public structure RelativeModuleFibreProductSituation
 
 > **Stacks Project, Tag 08KL.** After base change along a `B'`-algebra `D'`, extension
 > of scalars gives the functor
-> `Mod D' \longrightarrow Mod (D' \otimes_{B'} B) \times_{Mod (D' \otimes_{B'} A)}
-> Mod (D' \otimes_{B'} A')`.
+> `Mod D' \longrightarrow Mod (D' \otimes\_\{B'} B) \times\_\{Mod (D' \otimes\_\{B'} A)}
+> Mod (D' \otimes\_\{B'} A')`.
 >
 > It sends a module `L'` to its scalar extensions to `D' \otimes_{B'} B` and
 > `D' \otimes_{B'} A'`, equipped with the canonical identification after extending both

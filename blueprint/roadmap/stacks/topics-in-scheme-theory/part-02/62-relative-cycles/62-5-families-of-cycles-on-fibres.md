@@ -200,7 +200,7 @@ theorem familyAssociatedToModule_apply (f : X ⟶ S) [LocallyOfFiniteType f] (F 
 
 [Tag 0H4R](https://stacks.math.columbia.edu/tag/0H4R) in the Stacks Project.
 
-**`Stacks.Chow.supportDimension_le_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleBaseChange.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleBaseChange.lean#L126). The attribute's comment: “module_base_change, residue-field-isomorphism case: dimension bound”.
+**`Stacks.Chow.supportDimension_le_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleBaseChange.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleBaseChange.lean#L126). The attribute's comment: “module\_base\_change, residue-field-isomorphism case: dimension bound”.
 
 > **Stacks Project, Tag 0H4R.** The dimension bound on the fibrewise supports of a
 > quasi-coherent module of finite type survives base change along a morphism that induces an
@@ -217,7 +217,7 @@ theorem supportDimension_le_of_baseChange (f : X ⟶ S) [LocallyOfFiniteType f] 
         ((Scheme.Modules.pullback (pullback.fst f g)).obj F))) ≤ (r : WithBot ℕ∞)
 ```
 
-**`Stacks.Chow.familyAssociatedToModule_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleBaseChange.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleBaseChange.lean#L148). The attribute's comment: “module_base_change, residue-field-isomorphism case”.
+**`Stacks.Chow.familyAssociatedToModule_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleBaseChange.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleBaseChange.lean#L148). The attribute's comment: “module\_base\_change, residue-field-isomorphism case”.
 
 > **Stacks Project, Tag 0H4R.** Base change along a morphism `g` that induces an isomorphism on
 > every residue field carries the family of cycles associated to a quasi-coherent module of finite
@@ -238,7 +238,7 @@ theorem familyAssociatedToModule_baseChange (f : X ⟶ S) [LocallyOfFiniteType f
         (supportDimension_le_of_baseChange f g hres F r hdim)
 ```
 
-**`Stacks.Chow.supportDimension_le_of_flatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFlatPullback.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFlatPullback.lean#L93). The attribute's comment: “module_flat_pullback: dimension bound”.
+**`Stacks.Chow.supportDimension_le_of_flatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFlatPullback.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFlatPullback.lean#L93). The attribute's comment: “module\_flat\_pullback: dimension bound”.
 
 > **Stacks Project, Tag 0H4R.** The fibrewise support dimension bound on a quasi-coherent
 > module of finite type passes to its pullback along a flat morphism `j : U ⟶ X` of schemes over
@@ -259,7 +259,7 @@ theorem supportDimension_le_of_flatPullback (f : X ⟶ S) [LocallyOfFiniteType f
         ((Scheme.Modules.pullback j).obj F))) ≤ ((r + e : ℕ) : WithBot ℕ∞)
 ```
 
-**`Stacks.Chow.familyAssociatedToModule_flatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFlatPullback.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFlatPullback.lean#L137). The attribute's comment: “module_flat_pullback”.
+**`Stacks.Chow.familyAssociatedToModule_flatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFlatPullback.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleFlatPullback.lean#L137). The attribute's comment: “module\_flat\_pullback”.
 
 > **Stacks Project, Tag 0H4R.** The flat pullback of the family `[F/X/S]_r` of cycles
 > associated to a quasi-coherent module of finite type, along a flat morphism `j : U ⟶ X` of
@@ -285,7 +285,7 @@ theorem familyAssociatedToModule_flatPullback (f : X ⟶ S) [LocallyOfFiniteType
         (supportDimension_le_of_flatPullback f fU j h e he F r hdim)
 ```
 
-**`Stacks.Chow.supportDimension_le_of_baseChange_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleGeneralBaseChange.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleGeneralBaseChange.lean#L102). The attribute's comment: “module_base_change, arbitrary morphism of bases: dimension bound”.
+**`Stacks.Chow.supportDimension_le_of_baseChange_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleGeneralBaseChange.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleGeneralBaseChange.lean#L102). The attribute's comment: “module\_base\_change, arbitrary morphism of bases: dimension bound”.
 
 > **Stacks Project, Tag 0H4R.** The fibrewise support dimension bound on a quasi-coherent
 > module of finite type survives base change along an arbitrary morphism of bases: the fibre of
@@ -305,7 +305,7 @@ theorem supportDimension_le_of_baseChange_general (f : X ⟶ S) [LocallyOfFinite
         ((Scheme.Modules.pullback (pullback.fst f g)).obj F))) ≤ (r : WithBot ℕ∞)
 ```
 
-**`Stacks.Chow.familyAssociatedToModule_baseChange_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleGeneralBaseChange.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleGeneralBaseChange.lean#L138). The attribute's comment: “module_base_change, arbitrary morphism of bases”.
+**`Stacks.Chow.familyAssociatedToModule_baseChange_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleGeneralBaseChange.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleGeneralBaseChange.lean#L138). The attribute's comment: “module\_base\_change, arbitrary morphism of bases”.
 
 > **Stacks Project, Tag 0H4R.** Base change of the family `[F/X/S]_r` of cycles associated to a
 > quasi-coherent module of finite type along an *arbitrary* morphism `g : S' ⟶ S` of bases is the
@@ -330,7 +330,7 @@ theorem familyAssociatedToModule_baseChange_general (f : X ⟶ S) [LocallyOfFini
         (supportDimension_le_of_baseChange_general f g F r hdim)
 ```
 
-**`Stacks.Chow.supportDimension_le_of_openRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleRestriction.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleRestriction.lean#L187). The attribute's comment: “module_restriction: dimension bound”.
+**`Stacks.Chow.supportDimension_le_of_openRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleRestriction.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleRestriction.lean#L187). The attribute's comment: “module\_restriction: dimension bound”.
 
 > **Stacks Project, Tag 0H4R.** The dimension bound on the fibrewise supports of a
 > quasi-coherent module of finite type survives restriction of both the source and the base to
@@ -349,7 +349,7 @@ theorem supportDimension_le_of_openRestriction {X S U V : Scheme.{u}} (f : X ⟶
         ((Scheme.Modules.pullback j).obj F))) ≤ (r : WithBot ℕ∞)
 ```
 
-**`Stacks.Chow.familyAssociatedToModule_openRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleRestriction.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleRestriction.lean#L207). The attribute's comment: “module_restriction”.
+**`Stacks.Chow.familyAssociatedToModule_openRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleRestriction.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ModuleRestriction.lean#L207). The attribute's comment: “module\_restriction”.
 
 > **Stacks Project, Tag 0H4R.** The restriction to `U/V` of the family of cycles associated to
 > a quasi-coherent module of finite type is the family associated to the module restricted to `U`.
@@ -473,7 +473,7 @@ theorem familyAssociatedToClosedSubscheme_openRestriction (f : X ⟶ S) [Locally
 
 [Tag 0H4U](https://stacks.math.columbia.edu/tag/0H4U) in the Stacks Project.
 
-**`Stacks.Chow.supportOfFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Basic.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Basic.lean#L89). The attribute's comment: “support_of_a_family_of_cycles”.
+**`Stacks.Chow.supportOfFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Basic.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Basic.lean#L89). The attribute's comment: “support\_of\_a\_family\_of\_cycles”.
 
 > The support of a family of cycles on the fibres of `f`: the union in `X` of the images of the
 > supports of its members.
@@ -527,7 +527,7 @@ theorem supportOfFamily_flatPullbackFamily {X S U : Scheme.{u}} (f : X ⟶ S)
     supportOfFamily fU (flatPullbackFamily f fU j hj e he r α) = j ⁻¹' supportOfFamily f α
 ```
 
-**`Stacks.Chow.image_supportOfFamily_restrictedFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RestrictionSupport.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RestrictionSupport.lean#L47). The attribute's comment: “support_restriction”.
+**`Stacks.Chow.image_supportOfFamily_restrictedFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RestrictionSupport.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RestrictionSupport.lean#L47). The attribute's comment: “support\_restriction”.
 
 > The support of a restricted family of cycles, mapped back into the original total space, is
 > the intersection of the original support with the open subscheme.

@@ -131,7 +131,7 @@ abbrev IsEffective (D : QuasicoherentDescentData f) : Prop
 
 [Tag 023E](https://stacks.math.columbia.edu/tag/023E) in the Stacks Project.
 
-**`Stacks.Descent.isEffective_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherent/ZariskiEssSurj.lean, line 1215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherent/ZariskiEssSurj.lean#L1215). The attribute's comment: “zariski_effectivity”.
+**`Stacks.Descent.isEffective_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherent/ZariskiEssSurj.lean, line 1215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherent/ZariskiEssSurj.lean#L1215). The attribute's comment: “zariski\_effectivity”.
 
 > **The effectivity half of Stacks 023E.**  Every quasi-coherent descent datum for a family
 > of open immersions whose images cover the target is effective.  This is
@@ -145,7 +145,7 @@ theorem isEffective_zariski {S : Scheme.{u}} {I : Type v} {Y : I → Scheme.{u}}
     (D : QuasicoherentDescentData f) : D.IsEffective
 ```
 
-**`Stacks.Descent.nonempty_fullyFaithful_canonicalDescentFunctor_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherent/ZariskiGluing.lean, line 522](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherent/ZariskiGluing.lean#L522). The attribute's comment: “zariski_full_faithfulness”.
+**`Stacks.Descent.nonempty_fullyFaithful_canonicalDescentFunctor_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherent/ZariskiGluing.lean, line 522](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherent/ZariskiGluing.lean#L522). The attribute's comment: “zariski\_full\_faithfulness”.
 
 > **The full faithfulness half of Stacks 023E.**  For a family of open immersions whose images
 > cover the target, the canonical descent functor of Stacks 023D on quasi-coherent modules is fully

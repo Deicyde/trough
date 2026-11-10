@@ -14,7 +14,7 @@ Section 88.7 of the Stacks Project, [Tag 0GAU](https://stacks.math.columbia.edu/
 
 [Tag 0GAV](https://stacks.math.columbia.edu/tag/0GAV) in the Stacks Project.
 
-**`Rig.jacobianDet_smul_naiveCotangentComplex_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Algebraization.lean#L183). The attribute's comment: “square_null_action”.
+**`Rig.jacobianDet_smul_naiveCotangentComplex_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Algebraization.lean#L183). The attribute's comment: “square\_null\_action”.
 
 > For a square presentation `B = A[x₁, …, xₙ]/(f₁, …, fₙ)`, the image of the
 > Jacobian determinant annihilates `NL_{B/A}` in the derived category of `B`-modules.
@@ -29,7 +29,7 @@ public theorem jacobianDet_smul_naiveCotangentComplex_eq_zero
           (MvPolynomial (Fin n) A ⧸ Ideal.span (Set.range f))) = 0
 ```
 
-**`Rig.jacobianDet_smul_ext_one_naiveCotangentComplex_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Algebraization.lean#L525). The attribute's comment: “ext_annihilation”.
+**`Rig.jacobianDet_smul_ext_one_naiveCotangentComplex_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Algebraization.lean#L525). The attribute's comment: “ext\_annihilation”.
 
 > Let `B = A[x₁, …, xₙ]/(f₁, …, fₘ)`, where `m ≤ n`.  The image in `B` of the
 > Jacobian determinant formed with the first `m` variables annihilates
@@ -100,7 +100,7 @@ public theorem exists_finiteType_adicCompletion_algEquiv_of_jacobianChart
         Nonempty (B.carrier ≃ₐ[A] AdicCompletion (I.map (algebraMap A C)) C)
 ```
 
-**`Rig.exists_finiteType_algEquiv_adicCompletion_of_jacobianChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization/JacobianCriterion.lean, line 535](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Algebraization/JacobianCriterion.lean#L535). The attribute's comment: “carrying, beyond the source's hypotheses: `S`, a family of Stacks 0GA6 DualSituations for B, one per thickness and per Ext-exponent, as the library's Stacks 0GAQ carries one per thickness; `d`, `q₀`, `k`, `hd`, `hq₀`, `hk`, the Stacks 0GA6 invariants of B, independent of thickness and exponent, with k+1 = D = max(d,1); `hdual`, the open duality input of Stacks 0GAC that Stacks 0GAQ carries, here for every level and exponent because n is chosen in the proof; and `hconormal`, that a power of I kills Ker(φ)/Ker(φ)² for every surjection φ from the completion of a finite type A-algebra onto B with both sides rig-smooth (both rig-smoothness inputs are discharged here), which is the source's last step by the Stacks 0ALM six-term sequence and the localized comparison H⁰(NL^∧_{C^∧/A}) ⊗ B[1/b] = H⁰(NL^∧_{B/A}) ⊗ B[1/b], absent from the library. Inherited, not assumed: the Stacks 0GAQ used lifts to precision I^{n-(2+D)c} under n > 2(2+D)c for the source's I^{n-(1+d)c}; and B is taken in A's own universe, the only case that Stacks 0GAQ's target admits”.
+**`Rig.exists_finiteType_algEquiv_adicCompletion_of_jacobianChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization/JacobianCriterion.lean, line 535](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Algebraization/JacobianCriterion.lean#L535). The attribute's comment: “carrying, beyond the source's hypotheses: `S`, a family of Stacks 0GA6 DualSituations for B, one per thickness and per Ext-exponent, as the library's Stacks 0GAQ carries one per thickness; `d`, `q₀`, `k`, `hd`, `hq₀`, `hk`, the Stacks 0GA6 invariants of B, independent of thickness and exponent, with k+1 = D = max(d,1); `hdual`, the open duality input of Stacks 0GAC that Stacks 0GAQ carries, here for every level and exponent because n is chosen in the proof; and `hconormal`, that a power of I kills Ker(φ)/Ker(φ)² for every surjection φ from the completion of a finite type A-algebra onto B with both sides rig-smooth (both rig-smoothness inputs are discharged here), which is the source's last step by the Stacks 0ALM six-term sequence and the localized comparison H⁰(NL^∧\_\{C^∧/A}) ⊗ B[1/b] = H⁰(NL^∧\_\{B/A}) ⊗ B[1/b], absent from the library. Inherited, not assumed: the Stacks 0GAQ used lifts to precision I^\{n-(2+D)c} under n > 2(2+D)c for the source's I^\{n-(1+d)c}; and B is taken in A's own universe, the only case that Stacks 0GAQ's target admits”.
 
 > **Stacks 0GAW, carrying the hypotheses that the library's Stacks 0GAQ carries.**
 >

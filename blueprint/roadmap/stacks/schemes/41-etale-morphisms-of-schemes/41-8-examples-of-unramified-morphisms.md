@@ -69,7 +69,7 @@ public theorem etale_iff_unramified_over_field
 
 [Tag 024Y](https://stacks.math.columbia.edu/tag/024Y) in the Stacks Project.
 
-**`AlgebraicGeometry.FullRankJacobianSituation.unramifiedAt_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/SquareJacobian.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/SquareJacobian.lean#L268). The attribute's comment: “unramified_point”.
+**`AlgebraicGeometry.FullRankJacobianSituation.unramifiedAt_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/SquareJacobian.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/SquareJacobian.lean#L268). The attribute's comment: “unramified\_point”.
 
 > A polynomial quotient whose Jacobian has full rank at a prime is unramified over the base at
 > the corresponding point of its zero scheme.
@@ -79,7 +79,7 @@ public theorem unramifiedAt_over (S : FullRankJacobianSituation R n m) :
     UnramifiedAt S.over S.point
 ```
 
-**`AlgebraicGeometry.FullRankJacobianSituation.numVariables_le_numEquations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/SquareJacobian.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/SquareJacobian.lean#L318). The attribute's comment: “enough_equations”.
+**`AlgebraicGeometry.FullRankJacobianSituation.numVariables_le_numEquations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/SquareJacobian.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/SquareJacobian.lean#L318). The attribute's comment: “enough\_equations”.
 
 > A full-rank Jacobian needs at least as many equations as variables.
 
@@ -87,7 +87,7 @@ public theorem unramifiedAt_over (S : FullRankJacobianSituation R n m) :
 public theorem numVariables_le_numEquations (S : FullRankJacobianSituation R n m) : n ≤ m
 ```
 
-**`AlgebraicGeometry.FullRankJacobianSituation.etaleAt_over_of_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/SquareJacobian.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/SquareJacobian.lean#L325). The attribute's comment: “square_etale”.
+**`AlgebraicGeometry.FullRankJacobianSituation.etaleAt_over_of_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/SquareJacobian.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/SquareJacobian.lean#L325). The attribute's comment: “square\_etale”.
 
 > A polynomial quotient with a square, full-rank Jacobian at a prime is étale over the base at
 > the corresponding point.
@@ -97,7 +97,7 @@ public theorem etaleAt_over_of_square (S : FullRankJacobianSituation R n m) (h :
     EtaleAt S.over S.point
 ```
 
-**`AlgebraicGeometry.FullRankJacobianSituation.isFlatAt_over_of_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/SquareJacobian.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/SquareJacobian.lean#L361). The attribute's comment: “square_flat”.
+**`AlgebraicGeometry.FullRankJacobianSituation.isFlatAt_over_of_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/SquareJacobian.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/SquareJacobian.lean#L361). The attribute's comment: “square\_flat”.
 
 > A square system of equations whose Jacobian has full rank at a prime defines a morphism flat
 > at the corresponding point of its zero scheme.
@@ -107,7 +107,7 @@ public theorem isFlatAt_over_of_square (S : FullRankJacobianSituation R n n) :
     IsFlatAt S.over.toLRSHom.toShHom S.point
 ```
 
-**`AlgebraicGeometry.FullRankJacobianSystem.numVariables_le_numEquations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Examples/JacobianCriterion.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Examples/JacobianCriterion.lean#L62). The attribute's comment: “enough_equations”.
+**`AlgebraicGeometry.FullRankJacobianSystem.numVariables_le_numEquations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Examples/JacobianCriterion.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Examples/JacobianCriterion.lean#L62). The attribute's comment: “enough\_equations”.
 
 > A full-rank Jacobian needs at least as many equations as variables.
 
@@ -115,7 +115,7 @@ public theorem isFlatAt_over_of_square (S : FullRankJacobianSituation R n n) :
 public theorem numVariables_le_numEquations (S : FullRankJacobianSystem R n m) : n ≤ m
 ```
 
-**`AlgebraicGeometry.FullRankJacobianSystem.unramifiedAt_of_jacobian_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Examples/JacobianCriterion.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Examples/JacobianCriterion.lean#L138). The attribute's comment: “unramified_point”.
+**`AlgebraicGeometry.FullRankJacobianSystem.unramifiedAt_of_jacobian_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Examples/JacobianCriterion.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Examples/JacobianCriterion.lean#L138). The attribute's comment: “unramified\_point”.
 
 > **Stacks Project, Tag 024Y.** Full column rank of the Jacobian at a prime makes the
 > corresponding point of the zero scheme unramified over the base.
@@ -125,7 +125,7 @@ public theorem unramifiedAt_of_jacobian_rank (S : FullRankJacobianSystem R n m) 
     UnramifiedAt S.over S.point
 ```
 
-**`AlgebraicGeometry.FullRankJacobianSystem.etaleAt_of_square_jacobian_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Examples/JacobianCriterion.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Examples/JacobianCriterion.lean#L161). The attribute's comment: “square_etale”.
+**`AlgebraicGeometry.FullRankJacobianSystem.etaleAt_of_square_jacobian_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Examples/JacobianCriterion.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Examples/JacobianCriterion.lean#L161). The attribute's comment: “square\_etale”.
 
 > **Stacks Project, Tag 024Y.** A polynomial quotient with a square Jacobian of full rank at a
 > prime is étale over the base at the corresponding point.
@@ -135,7 +135,7 @@ public theorem etaleAt_of_square_jacobian_rank (S : FullRankJacobianSystem R n m
     EtaleAt S.over S.point
 ```
 
-**`AlgebraicGeometry.FullRankJacobianSystem.flatAt_of_square_jacobian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Examples/JacobianCriterion.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Examples/JacobianCriterion.lean#L181). The attribute's comment: “square_flat”.
+**`AlgebraicGeometry.FullRankJacobianSystem.flatAt_of_square_jacobian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Examples/JacobianCriterion.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/Examples/JacobianCriterion.lean#L181). The attribute's comment: “square\_flat”.
 
 > **Stacks Project, Tag 024Y.** A polynomial quotient with a square Jacobian of full rank at a
 > prime is flat over the base at the corresponding point.
@@ -149,7 +149,7 @@ public theorem flatAt_of_square_jacobian (S : FullRankJacobianSystem R n n) :
 
 [Tag 024Z](https://stacks.math.columbia.edu/tag/024Z) in the Stacks Project.
 
-**`AlgebraicGeometry.unramifiedAt_iff_ramificationIdx_eq_one_and_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFields.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFields.lean#L112). The attribute's comment: “agreement_of_unramifiedness”.
+**`AlgebraicGeometry.unramifiedAt_iff_ramificationIdx_eq_one_and_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFields.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFields.lean#L112). The attribute's comment: “agreement\_of\_unramifiedness”.
 
 > **Stacks Project, Tag 024Z.** At a nonzero prime of the larger ring of integers,
 > scheme-theoretic unramifiedness is equivalent to ramification index one together with
@@ -172,7 +172,7 @@ theorem unramifiedAt_iff_ramificationIdx_eq_one_and_isSeparable
           q.asIdeal.ResidueField)
 ```
 
-**`AlgebraicGeometry.unramifiedAt_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFields.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFields.lean#L141). The attribute's comment: “agreement_of_unramifiedness”.
+**`AlgebraicGeometry.unramifiedAt_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFields.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFields.lean#L141). The attribute's comment: “agreement\_of\_unramifiedness”.
 
 > **Stacks Project, Tag 024Z.** The morphism on spectra of rings of integers is unramified at
 > the generic point.
@@ -189,7 +189,7 @@ theorem unramifiedAt_genericPoint
       (⟨⊥, inferInstance⟩ : PrimeSpectrum (RingOfIntegers L))
 ```
 
-**`AlgebraicGeometry.flat_ringOfIntegersSpecMap`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean#L95). The attribute's comment: “the morphism Spec(O_L) -> Spec(O_K) is flat (on all of Spec(O_L), so in particular on X)”.
+**`AlgebraicGeometry.flat_ringOfIntegersSpecMap`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean#L95). The attribute's comment: “the morphism Spec(O\_L) -> Spec(O\_K) is flat (on all of Spec(O\_L), so in particular on X)”.
 
 > The morphism on spectra of rings of integers is flat.
 
@@ -197,7 +197,7 @@ theorem unramifiedAt_genericPoint
 instance flat_ringOfIntegersSpecMap : Flat (ringOfIntegersSpecMap K L)
 ```
 
-**`AlgebraicGeometry.stalkwiseUnramifiedAt_ringOfIntegersSpecMap_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean#L104). The attribute's comment: “the points where f is unramified in our sense are the points where f is unramified in the conventional sense, at every point of Spec(O_L)”.
+**`AlgebraicGeometry.stalkwiseUnramifiedAt_ringOfIntegersSpecMap_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean#L104). The attribute's comment: “the points where f is unramified in our sense are the points where f is unramified in the conventional sense, at every point of Spec(O\_L)”.
 
 > The points of `Spec(𝒪_L)` where `f : Spec(𝒪_L) → Spec(𝒪_K)` is unramified in the sense of
 > schemes are the points where it is unramified in the conventional sense: the generic point, and the
@@ -212,7 +212,7 @@ theorem stalkwiseUnramifiedAt_ringOfIntegersSpecMap_iff (q : PrimeSpectrum (𝓞
           Algebra.IsSeparable (q.asIdeal.under (𝓞 K)).ResidueField q.asIdeal.ResidueField))
 ```
 
-**`AlgebraicGeometry.zeroLocus_differentIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean#L176). The attribute's comment: “in the conventional sense, the locus of ramification in Spec(O_L) is the vanishing set of the different”.
+**`AlgebraicGeometry.zeroLocus_differentIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean#L176). The attribute's comment: “in the conventional sense, the locus of ramification in Spec(O\_L) is the vanishing set of the different”.
 
 > In the conventional sense, the locus of ramification in `Spec(𝒪_L)` is the vanishing set of the
 > different: a point of `Spec(𝒪_L)` lies in the vanishing set of the different exactly when it is a
@@ -229,7 +229,7 @@ theorem zeroLocus_differentIdeal :
               q.asIdeal.ResidueField)}
 ```
 
-**`AlgebraicGeometry.algebraDiscriminantIdeal_ringOfIntegers_eq_relNorm_differentIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean#L202). The attribute's comment: “the discriminant is an ideal in O_K, namely it is the norm of the different”.
+**`AlgebraicGeometry.algebraDiscriminantIdeal_ringOfIntegers_eq_relNorm_differentIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean#L202). The attribute's comment: “the discriminant is an ideal in O\_K, namely it is the norm of the different”.
 
 > The discriminant of `L/K`, an ideal of `𝒪_K` — the discriminant ideal of the finite locally
 > free algebra `𝒪_L` over `𝒪_K`, the zeroth Fitting ideal of the cokernel of its trace pairing — is
@@ -241,7 +241,7 @@ theorem algebraDiscriminantIdeal_ringOfIntegers_eq_relNorm_differentIdeal :
       Ideal.relNorm (𝓞 K) (differentIdeal (𝓞 K) (𝓞 L))
 ```
 
-**`AlgebraicGeometry.zeroLocus_algebraDiscriminantIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean#L293). The attribute's comment: “the vanishing set of the discriminant is precisely the set of points of Spec(O_K) which ramify in L”.
+**`AlgebraicGeometry.zeroLocus_algebraDiscriminantIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean#L293). The attribute's comment: “the vanishing set of the discriminant is precisely the set of points of Spec(O\_K) which ramify in L”.
 
 > The vanishing set of the discriminant is precisely the set of points of `Spec(𝒪_K)` which
 > ramify in `L`: the primes of `𝒪_K` lying under a nonzero prime of `𝒪_L` whose ramification index is
@@ -258,7 +258,7 @@ theorem zeroLocus_algebraDiscriminantIdeal :
               q.asIdeal.ResidueField)}
 ```
 
-**`AlgebraicGeometry.stalkwiseUnramified_flat_and_etale_differentOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean#L318). The attribute's comment: “the morphism X -> Spec(O_K) is unramified, flat, and hence etale”.
+**`AlgebraicGeometry.stalkwiseUnramified_flat_and_etale_differentOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFieldsDifferent.lean#L318). The attribute's comment: “the morphism X -> Spec(O\_K) is unramified, flat, and hence etale”.
 
 > Denote by `X` the complement of the closed subset defined by the different in `Spec(𝒪_L)`. The
 > morphism `X → Spec(𝒪_K)` is unramified; it is furthermore flat, and hence it is actually étale.
@@ -311,7 +311,7 @@ theorem RingHom.Flat.of_injective_of_isDiscreteValuationRing {R S : Type*} [Comm
 
 Declarations registered for the tag:
 
-- [`Algebra.isUnramifiedAt_bot`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.isUnramifiedAt_bot#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFields.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFields.lean#L152) (StacksFrontier): “agreement_of_unramifiedness”.
+- [`Algebra.isUnramifiedAt_bot`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.isUnramifiedAt_bot#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFields.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/Morphisms/NumberFields.lean#L152) (StacksFrontier): “agreement\_of\_unramifiedness”.
 
 ## Depends on
 

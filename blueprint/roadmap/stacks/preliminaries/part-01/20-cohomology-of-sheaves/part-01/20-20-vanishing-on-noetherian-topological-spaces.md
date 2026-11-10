@@ -123,7 +123,7 @@ theorem subsingleton_sheafH_of_subsingleton_sheafH_integerExtensionByZero (d : �
 
 [Tag 0BX0](https://stacks.math.columbia.edu/tag/0BX0) in the Stacks Project.
 
-**`Stacks.CohomologyVanishing.ChainOfOpens.eq_bot_or_eq_top_or_eq_basicOpen`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L227). The attribute's comment: “the lattice of opens of the space: ∅, X and the U_n”.
+**`Stacks.CohomologyVanishing.ChainOfOpens.eq_bot_or_eq_top_or_eq_basicOpen`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L227). The attribute's comment: “the lattice of opens of the space: ∅, X and the U\_n”.
 
 > **The opens of `Chain` are exactly `∅`, the whole space, and the sets `{i | i ≤ n}`.**
 
@@ -132,7 +132,7 @@ lemma eq_bot_or_eq_top_or_eq_basicOpen (W : Opens Chain.{u}) :
     W = ⊥ ∨ W = ⊤ ∨ ∃ n, W = basicOpen.{u} n
 ```
 
-**`Stacks.CohomologyVanishing.ChainOfOpens.bijective_towerComparison_app`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L518). The attribute's comment: “an abelian sheaf on the space is the inverse system of its sections over the U_n; the clause `Γ(X, ℱ) = lim A_n` is globalSectionsAddEquiv”.
+**`Stacks.CohomologyVanishing.ChainOfOpens.bijective_towerComparison_app`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L518). The attribute's comment: “an abelian sheaf on the space is the inverse system of its sections over the U\_n; the clause `Γ(X, ℱ) = lim A_n` is globalSectionsAddEquiv”.
 
 > **An abelian sheaf on `Chain` is the same thing as an inverse system of abelian groups.**
 > The comparison map is bijective on sections over every open: the index sets of the basic opens
@@ -172,7 +172,7 @@ lemma hasBasisOfCompactOpens_chain : PrespectralSpace Chain.{u}
 lemma interCompactOpenIsCompact_chain : QuasiSeparatedSpace Chain.{u}
 ```
 
-**`Stacks.CohomologyVanishing.ChainOfOpens.exists_not_subsingleton_sheafH_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 814](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L814). The attribute's comment: “the existence of an abelian sheaf with nonzero H¹; the lattice of opens, the identification of abelian sheaves with inverse systems and conditions (2) and (3) of Tag 02UX are given by eq_bot_or_eq_top_or_eq_basicOpen, bijective_towerComparison_app, globalSectionsAddEquiv, hasBasisOfCompactOpens_chain and interCompactOpenIsCompact_chain; condition (4), the vanishing H^p(X, j_!ℤ_U) = 0 for p ≥ 1, which the source leaves to the reader, is subsingleton_sheafH_integerExtensionByZero, proved through the identification j_!ℤ_{U n} = 𝒦ₙ of integerExtensionByZeroIsoKernel”.
+**`Stacks.CohomologyVanishing.ChainOfOpens.exists_not_subsingleton_sheafH_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 814](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L814). The attribute's comment: “the existence of an abelian sheaf with nonzero H¹; the lattice of opens, the identification of abelian sheaves with inverse systems and conditions (2) and (3) of Tag 02UX are given by eq\_bot\_or\_eq\_top\_or\_eq\_basicOpen, bijective\_towerComparison\_app, globalSectionsAddEquiv, hasBasisOfCompactOpens\_chain and interCompactOpenIsCompact\_chain; condition (4), the vanishing H^p(X, j\_!ℤ\_U) = 0 for p ≥ 1, which the source leaves to the reader, is subsingleton\_sheafH\_integerExtensionByZero, proved through the identification j\_!ℤ\_\{U n} = 𝒦ₙ of integerExtensionByZeroIsoKernel”.
 
 > **[Stacks, Tag 0BX0].** Let `X` be the natural numbers with the topology whose opens are
 > `∅`, `X` and `U_n = {i | i ≤ n}`. An abelian sheaf on `X` is an inverse system of abelian groups
@@ -186,7 +186,7 @@ theorem exists_not_subsingleton_sheafH_one :
       ¬ Subsingleton (Sheaf.H.{u, u, u, u} F 1)
 ```
 
-**`Stacks.CohomologyVanishing.ChainOfOpens.subsingleton_sheafH_integerExtensionByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 1660](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L1660). The attribute's comment: “condition (4) of Tag 02UX for this space, which the source leaves to the reader: H^p(X, j_!ℤ_U) = 0 for every p > 0 and every quasi-compact open U”.
+**`Stacks.CohomologyVanishing.ChainOfOpens.subsingleton_sheafH_integerExtensionByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean, line 1660](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/NonVanishingOnAChainOfOpens.lean#L1660). The attribute's comment: “condition (4) of Tag 02UX for this space, which the source leaves to the reader: H^p(X, j\_!ℤ\_U) = 0 for every p > 0 and every quasi-compact open U”.
 
 > **Condition (4) of [Stacks, Tag 02UX] over `Chain`**: the vanishing `Hᵖ(X, j_!ℤ_U) = 0` for
 > every `p > 0` and every quasi-compact open `U` of `Chain`.  The quasi-compact opens are `∅` and

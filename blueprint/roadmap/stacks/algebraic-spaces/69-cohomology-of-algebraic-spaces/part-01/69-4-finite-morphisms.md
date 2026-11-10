@@ -14,7 +14,7 @@ Section 69.4 of the Stacks Project, [Tag 0DK2](https://stacks.math.columbia.edu/
 
 [Tag 0A4K](https://stacks.math.columbia.edu/tag/0A4K) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.smallEtaleAbelianPushforward_exact_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardExact.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardExact.lean#L136). The attribute's comment: “exactness of f_*, the finite case”.
+**`AlgebraicGeometry.Space.smallEtaleAbelianPushforward_exact_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardExact.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardExact.lean#L136). The attribute's comment: “exactness of f\_*, the finite case”.
 
 > **Stacks 0A4K, exactness, for a finite morphism.** For a finite morphism `f : X ⟶ Y` of
 > algebraic spaces over `S` the direct image on the abelian sheaves of the small étale sites is
@@ -36,7 +36,7 @@ theorem smallEtaleAbelianPushforward_exact_of_isFinite {X Y : AlgebraicSpaces B 
         (smallToposMorphism B S hS f))
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleAbelianPushforward_rightDerivedPlus_isZero_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardExact.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardExact.lean#L154). The attribute's comment: “vanishing of R^p f_* for p > 0, the finite case”. References: SGA 4 Vbis (4.3.4), “Remarque 4.3.4”; SGA 4½ Arcata (2.3.6), “more general”.
+**`AlgebraicGeometry.Space.smallEtaleAbelianPushforward_rightDerivedPlus_isZero_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardExact.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardExact.lean#L154). The attribute's comment: “vanishing of R^p f\_* for p > 0, the finite case”. References: SGA 4 Vbis (4.3.4), “Remarque 4.3.4”; SGA 4½ Arcata (2.3.6), “more general”.
 
 > **Stacks 0A4K, vanishing of the positive-degree higher direct images, for a finite
 > morphism.** For a finite morphism `f : X ⟶ Y` of algebraic spaces over `S` the right derived
@@ -55,7 +55,7 @@ theorem smallEtaleAbelianPushforward_rightDerivedPlus_isZero_of_isFinite
       (smallToposMorphism B S hS f)).rightDerivedPlus p).obj F)
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleAbelianPushforward_exact_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean#L112). The attribute's comment: “exactness of f_* for an integral morphism of algebraic spaces”.
+**`AlgebraicGeometry.Space.smallEtaleAbelianPushforward_exact_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean#L112). The attribute's comment: “exactness of f\_* for an integral morphism of algebraic spaces”.
 
 > **Stacks 0A4K, exactness.** For an integral morphism `f : X ⟶ Y` of algebraic spaces over
 > `S` the direct image on the abelian sheaves of the small étale sites is exact.
@@ -74,7 +74,7 @@ theorem smallEtaleAbelianPushforward_exact_of_isIntegralHom {X Y : AlgebraicSpac
         (smallToposMorphism B S hS f))
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleAbelianPushforward_rightDerivedPlus_isZero_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean#L131). The attribute's comment: “vanishing of R^p f_* for p > 0 for an integral morphism of algebraic spaces”. References: SGA 4 VIII (5.6), “more general”; SGA 4 Vbis (4.3.4), “more general”; SGA 4½ Arcata (2.3.6), “more general”.
+**`AlgebraicGeometry.Space.smallEtaleAbelianPushforward_rightDerivedPlus_isZero_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean#L131). The attribute's comment: “vanishing of R^p f\_* for p > 0 for an integral morphism of algebraic spaces”. References: SGA 4 VIII (5.6), “more general”; SGA 4 Vbis (4.3.4), “more general”; SGA 4½ Arcata (2.3.6), “more general”.
 
 > **Stacks 0A4K, vanishing of the positive-degree higher direct images.** For an integral
 > morphism `f : X ⟶ Y` of algebraic spaces over `S` the right derived functors of the small étale
@@ -294,8 +294,8 @@ theorem isIso_tensorPushforwardMap_of_isFinite (π : X ⟶ Y) (hπ : IsFinite B 
 >
 > Writing the canonical map through the unit, `projectionFormulaMap_eq_unit_comp`, it becomes
 >
-> `Rf_*M ⊗^L K --η--> Rf_*Lf^*(Rf_*M ⊗^L K) --Rf_*(t)--> Rf_*(Lf^*Rf_*M ⊗^L Lf^*K)
->    --Rf_*(ε ⊗ 1)--> Rf_*(M ⊗^L Lf^*K)`,
+> `Rf\_*M ⊗^L K --η--> Rf\_*Lf^*(Rf\_*M ⊗^L K) --Rf\_*(t)--> Rf\_*(Lf^*Rf\_*M ⊗^L Lf^*K)
+>    --Rf\_*(ε ⊗ 1)--> Rf\_*(M ⊗^L Lf^*K)`,
 >
 > whose middle factor is the comparison of Stacks 07A4 and so invertible with no hypothesis, and
 > whose two outer factors are `hη` and `hε`.

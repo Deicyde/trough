@@ -23,7 +23,7 @@ Declarations registered for the tag:
 
 [Tag 04TX](https://stacks.math.columbia.edu/tag/04TX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPseudoTorsor_iff_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/PseudoTorsors.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/PseudoTorsors.lean#L136). The attribute's comment: “pointwise_characterization”. References: SGA 3 IV (6.7), “(i) <=> (ii)”; SGA 3 IV (5.1.0), “pointwise criterion”; SGA 3 III (0.1), “fppf site presheaves”.
+**`AlgebraicGeometry.Space.isPseudoTorsor_iff_points`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/PseudoTorsors.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/PseudoTorsors.lean#L136). The attribute's comment: “pointwise\_characterization”. References: SGA 3 IV (6.7), “(i) <=> (ii)”; SGA 3 IV (5.1.0), “pointwise criterion”; SGA 3 III (0.1), “fppf site presheaves”.
 
 > A pseudo-torsor is characterized by simple transitivity on the points of every test scheme
 > over its base presheaf.
@@ -54,7 +54,7 @@ theorem isTrivialPseudoTorsor_iff_exists_section
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.isTrivial_iff_exists_globalSection`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Torsor.lean#L87), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/PseudoTorsors.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/PseudoTorsors.lean#L78) (StacksFrontier): “trivial_iff_section”.
+- [`AlgebraicGeometry.isTrivial_iff_exists_globalSection`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Torsor.lean#L87), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/PseudoTorsors.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/PseudoTorsors.lean#L78) (StacksFrontier): “trivial\_iff\_section”.
 
 ## Tag 04TY, a definition
 

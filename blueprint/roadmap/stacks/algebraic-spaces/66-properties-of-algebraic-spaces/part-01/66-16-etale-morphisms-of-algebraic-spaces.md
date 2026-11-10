@@ -32,7 +32,7 @@ theorem etale_comp_of_scheme {U U' : BigFppfOver B S hS}
       (BigFppfOver.toScheme B S hS)).presheaf (yoneda.map f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.etale_of_etale_charts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean#L186). The attribute's comment: “morphism_between_charts”.
+**`AlgebraicGeometry.Space.etale_of_etale_charts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean#L186). The attribute's comment: “morphism\_between\_charts”.
 
 > **Stacks 03EC.** A morphism of the big fppf site of `S` between two étale charts of a
 > presheaf is an étale morphism of schemes.
@@ -58,7 +58,7 @@ theorem etale_of_etale_charts {F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
     AlgebraicGeometry.Etale ((BigFppfOver.toScheme B S hS).map χ)
 ```
 
-**`AlgebraicGeometry.Space.etale_of_comp_surjective_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean#L220). The attribute's comment: “descent_from_chart”.
+**`AlgebraicGeometry.Space.etale_of_comp_surjective_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean#L220). The attribute's comment: “descent\_from\_chart”.
 
 > **Stacks 03EC.** Étaleness of a chart of an algebraic space descends along a surjective
 > étale morphism of the big fppf site of `S`: if `χ : U ⟶ U'` is surjective étale and

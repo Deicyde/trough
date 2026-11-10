@@ -51,7 +51,7 @@ def Topology.precoverage (τ : Topology)
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.MorphismProperty.IsLocalAtTarget`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.IsLocalAtTarget#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L418) (StacksFrontier): “locality on the base”. References: SGA 3 IV (4.6.3), “(e_T)”; SGA 3 VIB (2.0), “b)”.
+- [`CategoryTheory.MorphismProperty.IsLocalAtTarget`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.IsLocalAtTarget#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Coverings.lean#L418) (StacksFrontier): “locality on the base”. References: SGA 3 IV (4.6.3), “(e\_T)”; SGA 3 VIB (2.0), “b)”.
 
 ## Tag 06EM, a lemma
 

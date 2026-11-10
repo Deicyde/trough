@@ -14,7 +14,7 @@ Section 76.45 of the Stacks Project, [Tag 0CSV](https://stacks.math.columbia.edu
 
 [Tag 0CSW](https://stacks.math.columbia.edu/tag/0CSW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.locallyOfFiniteType_of_represents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Representable.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Representable.lean#L52). The attribute's comment: “representing_locally_finite_type”.
+**`AlgebraicGeometry.Space.locallyOfFiniteType_of_represents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Representable.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Representable.lean#L52). The attribute's comment: “representing\_locally\_finite\_type”.
 
 > **Stacks 0CSW.** If a morphism `f` of algebraic spaces over `S` is locally of finite
 > type and a morphism `f₀` of objects of the site represents it, through isomorphisms
@@ -30,7 +30,7 @@ theorem locallyOfFiniteType_of_represents (B : BigFppfSite.{u}) (S : Scheme.{u})
     LocallyOfFiniteType ((BigFppfOver.toScheme B S hS).map f₀)
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_representableDerivedPullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RepresentableDescent.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RepresentableDescent.lean#L150). The attribute's comment: “every E in D_QCoh(O_X) is the pullback of a unique E_0 in D_QCoh(O_{X_0}), by Tag 071Q”.
+**`AlgebraicGeometry.Space.existsUnique_representableDerivedPullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RepresentableDescent.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RepresentableDescent.lean#L150). The attribute's comment: “every E in D\_QCoh(O\_X) is the pullback of a unique E\_0 in D\_QCoh(O\_\{X\_0}), by Tag 071Q”.
 
 > Let `X` be an algebraic space represented by the scheme `X₀` underlying `U`, through
 > `eX : h_U ≅ X`. Every object `E` of `D_QCoh(𝒪_X)` is the pullback of an object `E₀` of
@@ -49,7 +49,7 @@ theorem existsUnique_representableDerivedPullback_iso
                 Nonempty (E₀' ≅ E₀)
 ```
 
-**`AlgebraicGeometry.Space.IsRepresentablyRelativelyPseudoCoherentFrom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RepresentableDescent.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RepresentableDescent.lean#L213). The attribute's comment: “the convention: E is m-pseudo-coherent relative to Y when E_0 is m-pseudo-coherent relative to Y_0 (Tag 09UI)”.
+**`AlgebraicGeometry.Space.IsRepresentablyRelativelyPseudoCoherentFrom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RepresentableDescent.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RepresentableDescent.lean#L213). The attribute's comment: “the convention: E is m-pseudo-coherent relative to Y when E\_0 is m-pseudo-coherent relative to Y\_0 (Tag 09UI)”.
 
 > Let `f : X → Y` be a morphism of representable algebraic spaces over `S` which is locally of
 > finite type, represented by the morphism of schemes `f₀ : X₀ → Y₀` underlying `f₀ : U ⟶ V`
@@ -69,7 +69,7 @@ def IsRepresentablyRelativelyPseudoCoherentFrom
 
 [Tag 0CSX](https://stacks.math.columbia.edu/tag/0CSX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.relativePseudoCoherence_chart_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Relative.lean, line 565](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Relative.lean#L565). The attribute's comment: “proved relative to the carried inputs `h`. Its `comparison` field is the second sentence of Remark 0CSW — that an object of D_QCoh of a representable algebraic space is the pullback of a unique object of D_QCoh of a representing scheme, which is what gives E|_U its meaning — and is absent from the library, whose 0CSW is the first sentence only; `chartComplexPullback` is its compatibility with passing to a finer chart. The descent half of 0CSN is carried as `fppfDescent` because only the forward half is proved. 09US is not carried: it is recovered from its own 0E23 input, carried through as `torIndependentBaseChange`.”.
+**`AlgebraicGeometry.Space.relativePseudoCoherence_chart_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Relative.lean, line 565](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Relative.lean#L565). The attribute's comment: “proved relative to the carried inputs `h`. Its `comparison` field is the second sentence of Remark 0CSW — that an object of D\_QCoh of a representable algebraic space is the pullback of a unique object of D\_QCoh of a representing scheme, which is what gives E|\_U its meaning — and is absent from the library, whose 0CSW is the first sentence only; `chartComplexPullback` is its compatibility with passing to a finer chart. The descent half of 0CSN is carried as `fppfDescent` because only the forward half is proved. 09US is not carried: it is recovered from its own 0E23 input, carried through as `torIndependentBaseChange`.”.
 
 > **Stacks 0CSX.**  Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` locally of
 > finite type, let `m` be an integer and let `E` be an object of `D_QCoh(𝒪_X)`.  With the complex
@@ -116,7 +116,7 @@ theorem relativePseudoCoherence_chart_tfae (B : BigFppfSite.{u}) (S : Scheme.{u}
             (by simp)]
 ```
 
-**`AlgebraicGeometry.Space.relativePseudoCoherence_etaleSquare_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeChartTests.lean, line 480](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeChartTests.lean#L480). The attribute's comment: “all three conditions and their equivalence, at the source's hypotheses: f a morphism of algebraic spaces over S locally of finite type, E in D_QCoh(O_X), any m; the phrase 'E|_U is m-pseudo-coherent relative to V' is the convention of Remark 0CSW”.
+**`AlgebraicGeometry.Space.relativePseudoCoherence_etaleSquare_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeChartTests.lean, line 480](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeChartTests.lean#L480). The attribute's comment: “all three conditions and their equivalence, at the source's hypotheses: f a morphism of algebraic spaces over S locally of finite type, E in D\_QCoh(O\_X), any m; the phrase 'E|\_U is m-pseudo-coherent relative to V' is the convention of Remark 0CSW”.
 
 > **Stacks 0CSX.**  Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is locally
 > of finite type, let `m` be an integer and let `E` be an object of `D_QCoh(𝒪_X)`.  With the
@@ -163,7 +163,7 @@ theorem relativePseudoCoherence_etaleSquare_tfae :
 
 [Tag 0CSY](https://stacks.math.columbia.edu/tag/0CSY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsRelativelyPseudoCoherentFrom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeDefinition.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeDefinition.lean#L200). The attribute's comment: “part (1): m-pseudo-coherence relative to Y of an object of D_QCoh, through condition (3) of Tag 0CSX”.
+**`AlgebraicGeometry.Space.IsRelativelyPseudoCoherentFrom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeDefinition.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeDefinition.lean#L200). The attribute's comment: “part (1): m-pseudo-coherence relative to Y of an object of D\_QCoh, through condition (3) of Tag 0CSX”.
 
 > **Stacks 0CSY, part (1).** An object `E` of `D_QCoh(𝒪_X)` is *`m`-pseudo-coherent relative
 > to `Y`* when, for every commuting square of étale scheme charts `U` of `X` and `V` of `Y` over
@@ -179,7 +179,7 @@ def IsRelativelyPseudoCoherentFrom {Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (
     (E : QuasicoherentDerivedCategory.{u, u} B S hS X hX) (m : ℤ) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsRelativelyPseudoCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeDefinition.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeDefinition.lean#L225). The attribute's comment: “part (2): pseudo-coherence relative to Y of an object of D_QCoh”.
+**`AlgebraicGeometry.Space.IsRelativelyPseudoCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeDefinition.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeDefinition.lean#L225). The attribute's comment: “part (2): pseudo-coherence relative to Y of an object of D\_QCoh”.
 
 > **Stacks 0CSY, part (2).** An object of `D_QCoh(𝒪_X)` is *pseudo-coherent relative to `Y`*
 > when it is `m`-pseudo-coherent relative to `Y` for every integer `m`.
@@ -230,7 +230,7 @@ public theorem isPseudoCoherent_iff_of_flat_of_locallyOfFinitePresentation {X Y 
     f.IsPseudoCoherent E ↔ RingedSpace.IsPseudoCoherent (X := X.toRingedSpace) E
 ```
 
-**`AlgebraicGeometry.Space.isRelativelyPseudoCoherentFrom_iff_forall_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeAbsolute.lean, line 1022](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeAbsolute.lean#L1022). The attribute's comment: “the fixed-degree etale-chart localization: relative m-pseudo-coherence over Y is m-pseudo-coherence of RGamma(U, E) over O_X(U) on every square of affine etale charts”.
+**`AlgebraicGeometry.Space.isRelativelyPseudoCoherentFrom_iff_forall_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeAbsolute.lean, line 1022](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeAbsolute.lean#L1022). The attribute's comment: “the fixed-degree etale-chart localization: relative m-pseudo-coherence over Y is m-pseudo-coherence of RGamma(U, E) over O\_X(U) on every square of affine etale charts”.
 
 > **Stacks 0DII in a fixed degree, by étale localization.** Let `f : X ⟶ Y` be a flat morphism
 > of algebraic spaces over `S` which is locally of finite presentation, let `E` be an object of
@@ -256,7 +256,7 @@ theorem isRelativelyPseudoCoherentFrom_iff_forall_chart
           (chartDerivedSections B S hS X hX U E) m
 ```
 
-**`AlgebraicGeometry.Space.isRelativelyPseudoCoherent_iff_forall_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeAbsolute.lean, line 1049](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeAbsolute.lean#L1049). The attribute's comment: “the etale-chart localization: pseudo-coherence relative to Y is pseudo-coherence of RGamma(U, E) over O_X(U) on every square of affine etale charts”.
+**`AlgebraicGeometry.Space.isRelativelyPseudoCoherent_iff_forall_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeAbsolute.lean, line 1049](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativeAbsolute.lean#L1049). The attribute's comment: “the etale-chart localization: pseudo-coherence relative to Y is pseudo-coherence of RGamma(U, E) over O\_X(U) on every square of affine etale charts”.
 
 > **Stacks 0DII by étale localization.** Let `f : X ⟶ Y` be a flat morphism of algebraic
 > spaces over `S` which is locally of finite presentation and let `E` be an object of

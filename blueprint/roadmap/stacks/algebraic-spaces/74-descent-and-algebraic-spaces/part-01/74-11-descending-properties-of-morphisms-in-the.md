@@ -666,7 +666,7 @@ public instance isUnramified_isLocalAtTarget_fpqc
       (Topology.fpqc.precoverage.{u, v} B S hS)
 ```
 
-**`AlgebraicGeometry.Space.isUnramified_iff_forall_pullbackSnd_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedFpqcLocalAtTarget.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedFpqcLocalAtTarget.lean#L285). The attribute's comment: “Definition 03YH unfolded: f unramified iff every Yᵢ ×_Y X → Yᵢ is”.
+**`AlgebraicGeometry.Space.isUnramified_iff_forall_pullbackSnd_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedFpqcLocalAtTarget.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedFpqcLocalAtTarget.lean#L285). The attribute's comment: “Definition 03YH unfolded: f unramified iff every Yᵢ ×\_Y X → Yᵢ is”.
 
 > Let `{gᵢ : Yᵢ ⟶ Y}` be an fpqc covering of algebraic spaces over `S`, indexed by a type `I`
 > in any universe, and `f : X ⟶ Y` a morphism of algebraic spaces over `S`. Then `f` is unramified

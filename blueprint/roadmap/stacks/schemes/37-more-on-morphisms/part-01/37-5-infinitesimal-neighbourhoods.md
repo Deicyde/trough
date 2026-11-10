@@ -25,7 +25,7 @@ Section 37.5 of the Stacks Project, [Tag 05YW](https://stacks.math.columbia.edu/
 def nthOrderInfinitesimalNeighbourhood (n : ℕ) : Scheme.{u}
 ```
 
-**`Stacks.Thickenings.firstOrderInfinitesimalNeighbourhood`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L88). The attribute's comment: “part (1): first-order infinitesimal neighbourhood”. References: EGA IV (16.1.2), “Y^{(1)}, immersions”.
+**`Stacks.Thickenings.firstOrderInfinitesimalNeighbourhood`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L88). The attribute's comment: “part (1): first-order infinitesimal neighbourhood”. References: EGA IV (16.1.2), “Y^\{(1)}, immersions”.
 
 > **Stacks Project, Tag 04EY, part (1).** The first-order infinitesimal neighbourhood of `Z`
 > in `X`, cut out by the square of the defining ideal sheaf of the immersion.
@@ -34,7 +34,7 @@ def nthOrderInfinitesimalNeighbourhood (n : ℕ) : Scheme.{u}
 abbrev firstOrderInfinitesimalNeighbourhood : Scheme.{u}
 ```
 
-**`Stacks.Thickenings.nthOrderInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L111). The attribute's comment: “part (2): inclusion into the nth-order neighbourhood”. References: EGA IV (16.1.2), “Y^{(n)} inclusion”.
+**`Stacks.Thickenings.nthOrderInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/Infinitesimal.lean#L111). The attribute's comment: “part (2): inclusion into the nth-order neighbourhood”. References: EGA IV (16.1.2), “Y^\{(n)} inclusion”.
 
 > The inclusion of `Z` into its `n`th-order infinitesimal neighbourhood.
 

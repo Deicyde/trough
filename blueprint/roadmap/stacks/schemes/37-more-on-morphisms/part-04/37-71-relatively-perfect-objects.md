@@ -14,7 +14,7 @@ Section 37.71 of the Stacks Project, [Tag 0DJW](https://stacks.math.columbia.edu
 
 [Tag 0DJX](https://stacks.math.columbia.edu/tag/0DJX) in the Stacks Project.
 
-**`Stacks.Thickenings.isPseudoCoherent_of_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/Thickening.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/Thickening.lean#L154). The attribute's comment: “the whole statement, unconditionally: pseudo-coherence of K' in D(𝒪_{X'}) from pseudo-coherence of Li^*K', for a finite-order thickening i : X ⟶ X' of schemes, at the standard derived category”. References: SGA 6 I (2.16.2), “(i), special case”.
+**`Stacks.Thickenings.isPseudoCoherent_of_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/Thickening.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/Thickening.lean#L154). The attribute's comment: “the whole statement, unconditionally: pseudo-coherence of K' in D(𝒪\_\{X'}) from pseudo-coherence of Li^*K', for a finite-order thickening i : X ⟶ X' of schemes, at the standard derived category”. References: SGA 6 I (2.16.2), “(i), special case”.
 
 > **Pseudo-coherence descends along a finite-order thickening of schemes.** Let `i : X ⟶ X'` be
 > a closed immersion whose kernel ideal sheaf is nilpotent and let `K'` be an object of `D(𝒪_{X'})`

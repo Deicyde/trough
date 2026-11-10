@@ -209,7 +209,7 @@ theorem existenceObstructionClass_first_tensorIdeal :
 > **Stacks 08VX.** A short exact sequence of first order thickenings of a ringed topos
 > `(Sh(C), O)` mapping to a short exact sequence of first order thickenings of a ringed topos
 > `(Sh(B), O_B)`, by three strict flat deformations of one morphism `f : (Sh(C), O) ⟶
-> (Sh(B), O_B)`, together with an `O'₂`-module flat over `O_{B'₂}` and the canonical splitting
+> (Sh(B), O\_B)`, together with an `O'₂`-module flat over `O\_\{B'₂}` and the canonical splitting
 > of the upper row.
 
 ```lean

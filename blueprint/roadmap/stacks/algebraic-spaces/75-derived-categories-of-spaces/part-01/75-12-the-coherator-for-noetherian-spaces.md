@@ -220,7 +220,7 @@ theorem quasicoherentDerivedComparison_isEquivalence_of_isNoetherian :
     (quasicoherentDerivedComparison B S hS X.1 X.2).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Space.exists_equivalence_functor_eq_and_inverse_eq_derivedCoherator_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/NoetherianDerivedCoheratorEquivalence.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/NoetherianDerivedCoheratorEquivalence.lean#L202). The attribute's comment: “equivalence with quasi-inverse RQ_X”.
+**`AlgebraicGeometry.Space.exists_equivalence_functor_eq_and_inverse_eq_derivedCoherator_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/NoetherianDerivedCoheratorEquivalence.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/NoetherianDerivedCoheratorEquivalence.lean#L202). The attribute's comment: “equivalence with quasi-inverse RQ\_X”.
 
 > **[Stacks, Tag 09TN].**  Let `X` be a Noetherian algebraic space over `S`, `C_X` a coherator
 > of `X` and `RQ_X` a total right derived functor of it.  Then the comparison functor

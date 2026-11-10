@@ -172,7 +172,7 @@ lemma isVCovering_of_isIso {T' T : Scheme.{u}} (f : T' ⟶ T) [IsIso f] :
     AlgebraicGeometry.IsVCovering (fun _ : Unit ↦ T') (fun _ ↦ f)
 ```
 
-**`AlgebraicGeometry.isVCovering_pullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Permanence.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Permanence.lean#L89). The attribute's comment: “base_change”.
+**`AlgebraicGeometry.isVCovering_pullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Permanence.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Permanence.lean#L89). The attribute's comment: “base\_change”.
 
 > The pullback of a V covering along any morphism of schemes is a V covering.
 
@@ -205,7 +205,7 @@ theorem IsVCovering.comp {T : Scheme.{u}} {I : Type v}
 
 [Tag 0ETK](https://stacks.math.columbia.edu/tag/0ETK) in the Stacks Project.
 
-**`AlgebraicGeometry.isVCovering_of_mem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L66). The attribute's comment: “fpqc_v”.
+**`AlgebraicGeometry.isVCovering_of_mem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L66). The attribute's comment: “fpqc\_v”.
 
 > **Stacks 0ETK.** Every fpqc covering is a V covering.
 >
@@ -220,7 +220,7 @@ public theorem isVCovering_of_mem_fpqcPrecoverage {T : Scheme.{u}} {I : Type v}
     IsVCovering X f
 ```
 
-**`AlgebraicGeometry.isVCovering_of_mem_fppfPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L89). The attribute's comment: “fppf_v”.
+**`AlgebraicGeometry.isVCovering_of_mem_fppfPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L89). The attribute's comment: “fppf\_v”.
 
 > **Stacks 0ETK.** Every fppf covering is a V covering, being an fpqc covering by
 > Stacks 022C.
@@ -232,7 +232,7 @@ public theorem isVCovering_of_mem_fppfPrecoverage {T : Scheme.{u}} {I : Type v}
     IsVCovering X f
 ```
 
-**`AlgebraicGeometry.isVCovering_of_mem_syntomicPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L98). The attribute's comment: “syntomic_v”.
+**`AlgebraicGeometry.isVCovering_of_mem_syntomicPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L98). The attribute's comment: “syntomic\_v”.
 
 > **Stacks 0ETK.** Every syntomic covering is a V covering, being an fpqc covering by
 > Stacks 022C.
@@ -245,7 +245,7 @@ public theorem isVCovering_of_mem_syntomicPrecoverage {T : Scheme.{u}} {I : Type
     IsVCovering X f
 ```
 
-**`AlgebraicGeometry.isVCovering_of_mem_smoothPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L108). The attribute's comment: “smooth_v”.
+**`AlgebraicGeometry.isVCovering_of_mem_smoothPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L108). The attribute's comment: “smooth\_v”.
 
 > **Stacks 0ETK.** Every smooth covering is a V covering, being an fpqc covering by
 > Stacks 022C.
@@ -258,7 +258,7 @@ public theorem isVCovering_of_mem_smoothPrecoverage {T : Scheme.{u}} {I : Type v
     IsVCovering X f
 ```
 
-**`AlgebraicGeometry.isVCovering_of_mem_etalePrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L118). The attribute's comment: “etale_v”.
+**`AlgebraicGeometry.isVCovering_of_mem_etalePrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L118). The attribute's comment: “etale\_v”.
 
 > **Stacks 0ETK.** Every étale covering is a V covering, being an fpqc covering by
 > Stacks 022C.
@@ -270,7 +270,7 @@ public theorem isVCovering_of_mem_etalePrecoverage {T : Scheme.{u}} {I : Type v}
     IsVCovering X f
 ```
 
-**`AlgebraicGeometry.isVCovering_of_mem_zariskiPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L127). The attribute's comment: “zariski_v”.
+**`AlgebraicGeometry.isVCovering_of_mem_zariskiPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L127). The attribute's comment: “zariski\_v”.
 
 > **Stacks 0ETK.** Every Zariski covering is a V covering, being an fpqc covering by
 > Stacks 022C.
@@ -282,7 +282,7 @@ public theorem isVCovering_of_mem_zariskiPrecoverage {T : Scheme.{u}} {I : Type 
     IsVCovering X f
 ```
 
-**`AlgebraicGeometry.isVCovering_of_isPHCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/PhComparison.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/PhComparison.lean#L162). The attribute's comment: “ph_v”.
+**`AlgebraicGeometry.isVCovering_of_isPHCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/PhComparison.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/PhComparison.lean#L162). The attribute's comment: “ph\_v”.
 
 > **Stacks 0ETK.** Every ph covering is a V covering. It needs no finiteness hypothesis on the
 > members of the family.

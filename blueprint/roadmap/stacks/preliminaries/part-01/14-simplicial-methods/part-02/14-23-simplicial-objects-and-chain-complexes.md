@@ -69,7 +69,7 @@ public theorem homology_alternatingFaceMapComplex_Γ₀_single (A : C) (k : ℕ)
 Declarations registered for the tag:
 
 - [`AlgebraicTopology.inclusionOfMooreComplexMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicTopology.inclusionOfMooreComplexMap#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L76) (StacksFrontier): “the morphism of complexes N(U) -> s(U)”.
-- [`AlgebraicTopology.inclusionOfMooreComplexMap_f`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicTopology.inclusionOfMooreComplexMap_f#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L78) (StacksFrontier): “its components are the inclusions N(U_n) -> U_n”.
+- [`AlgebraicTopology.inclusionOfMooreComplexMap_f`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicTopology.inclusionOfMooreComplexMap_f#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L78) (StacksFrontier): “its components are the inclusions N(U\_n) -> U\_n”.
 
 ## Tag 0199, a lemma
 

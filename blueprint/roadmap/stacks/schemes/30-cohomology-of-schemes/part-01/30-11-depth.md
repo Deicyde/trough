@@ -92,7 +92,7 @@ public theorem two_le_depth_stalk_internalHom [IsLocallyNoetherian X] (F G : X.M
 
 [Tag 0AXQ](https://stacks.math.columbia.edu/tag/0AXQ) in the Stacks Project.
 
-**`AlgebraicGeometry.sheafHasPropertySk_one_internalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/InternalHomDepth.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/InternalHomDepth.lean#L204). The attribute's comment: “hom_into_s1”.
+**`AlgebraicGeometry.sheafHasPropertySk_one_internalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/InternalHomDepth.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/InternalHomDepth.lean#L204). The attribute's comment: “hom\_into\_s1”.
 
 > **[Stacks, Tag 0AXQ], part (1).** On a locally Noetherian scheme the internal hom of
 > coherent modules into a module satisfying Serre's condition `(S₁)` satisfies `(S₁)`.
@@ -104,7 +104,7 @@ public theorem sheafHasPropertySk_one_internalHom [IsLocallyNoetherian X] (F G :
     SheafHasPropertySk X (internalHomOf H) 1
 ```
 
-**`AlgebraicGeometry.sheafHasPropertySk_two_internalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/InternalHomDepth.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/InternalHomDepth.lean#L216). The attribute's comment: “hom_into_s2”.
+**`AlgebraicGeometry.sheafHasPropertySk_two_internalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/InternalHomDepth.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/Coherent/InternalHomDepth.lean#L216). The attribute's comment: “hom\_into\_s2”.
 
 > **[Stacks, Tag 0AXQ], part (2).** On a locally Noetherian scheme the internal hom of
 > coherent modules into a module satisfying Serre's condition `(S₂)` satisfies `(S₂)`.

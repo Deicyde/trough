@@ -198,7 +198,7 @@ public theorem stalkModuleOfDifferentialsKaehlerLinearEquiv_germ_d (x : X)
 
 [Tag 08RS](https://stacks.math.columbia.edu/tag/08RS) in the Stacks Project.
 
-**`Stacks.Sheaves.DifferentialsFunctorial.compDeriv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialsFunctorial.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialsFunctorial.lean#L117). The attribute's comment: “the composite of O_2 -> O_2' with d is an O_1-derivation”.
+**`Stacks.Sheaves.DifferentialsFunctorial.compDeriv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialsFunctorial.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialsFunctorial.lean#L117). The attribute's comment: “the composite of O\_2 -> O\_2' with d is an O\_1-derivation”.
 
 > Given a commutative square of sheaves of commutative rings
 > ```
@@ -217,7 +217,7 @@ noncomputable def compDeriv {F : SheafOfModules.{u} (Differentials.underlyingRin
     Differentials.SheafDerivation O₁ O₂ ι (restrictAlong φ F)
 ```
 
-**`Stacks.Sheaves.DifferentialsFunctorial.differentialMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialsFunctorial.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialsFunctorial.lean#L182). The attribute's comment: “the canonical map of O_2-modules Omega_{O_2/O_1} -> Omega_{O_2'/O_1'}”. References: EGA 0 (20.5.2), “(20.5.2.3) map u''”.
+**`Stacks.Sheaves.DifferentialsFunctorial.differentialMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialsFunctorial.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialsFunctorial.lean#L182). The attribute's comment: “the canonical map of O\_2-modules Omega\_\{O\_2/O\_1} -> Omega\_\{O\_2'/O\_1'}”. References: EGA 0 (20.5.2), “(20.5.2.3) map u''”.
 
 > The canonical morphism of sheaves of modules between the sheaves of relative
 > differentials attached to a commutative square
@@ -381,7 +381,7 @@ theorem differentialSequence_f_unique
 
 [Tag 08RT](https://stacks.math.columbia.edu/tag/08RT) in the Stacks Project.
 
-**`Stacks.Sheaves.RingedSpaceDifferentials.SDerivation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedSpaceDifferentials.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedSpaceDifferentials.lean#L182). The attribute's comment: “S-derivations into an O_X-module: the set Der_S(O_X, F)”. References: EGA IV (16.5.1); SGA 3 VIIA (1.2.0), “more general”.
+**`Stacks.Sheaves.RingedSpaceDifferentials.SDerivation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedSpaceDifferentials.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedSpaceDifferentials.lean#L182). The attribute's comment: “S-derivations into an O\_X-module: the set Der\_S(O\_X, F)”. References: EGA IV (16.5.1); SGA 3 VIIA (1.2.0), “more general”.
 
 > `Der_S(𝒪_X, F)`, the type of *`S`-derivations* of a morphism of ringed spaces
 > `h : X ⟶ S` with values in a sheaf of `𝒪_X`-modules `F`: a derivation of `𝒪_X` relative to
@@ -392,7 +392,7 @@ noncomputable abbrev SDerivation (h : X ⟶ S)
     (F : SheafOfModules.{u} (structureSheafRing X))
 ```
 
-**`Stacks.Sheaves.RingedSpaceDifferentials.moduleOfDifferentials`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedSpaceDifferentials.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedSpaceDifferentials.lean#L190). The attribute's comment: “the sheaf of differentials Omega_{X/S} of X over S”.
+**`Stacks.Sheaves.RingedSpaceDifferentials.moduleOfDifferentials`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedSpaceDifferentials.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedSpaceDifferentials.lean#L190). The attribute's comment: “the sheaf of differentials Omega\_\{X/S} of X over S”.
 
 > The sheaf of relative differentials `Ω_{X/S}` of a morphism of ringed spaces `h : X ⟶ S`:
 > the sheaf of differentials of `𝒪_X` relative to `h⁻¹ 𝒪_S`.
@@ -402,7 +402,7 @@ noncomputable def moduleOfDifferentials (h : X ⟶ S) :
     SheafOfModules.{u} (structureSheafRing X)
 ```
 
-**`Stacks.Sheaves.RingedSpaceDifferentials.universalDerivation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedSpaceDifferentials.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedSpaceDifferentials.lean#L196). The attribute's comment: “the universal S-derivation d_{X/S} with which Omega_{X/S} is endowed”.
+**`Stacks.Sheaves.RingedSpaceDifferentials.universalDerivation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedSpaceDifferentials.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedSpaceDifferentials.lean#L196). The attribute's comment: “the universal S-derivation d\_\{X/S} with which Omega\_\{X/S} is endowed”.
 
 > The universal relative derivation `d_{X/S} : 𝒪_X ⟶ Ω_{X/S}`.
 

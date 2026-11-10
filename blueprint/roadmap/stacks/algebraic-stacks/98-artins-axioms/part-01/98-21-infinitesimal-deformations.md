@@ -169,7 +169,7 @@ public noncomputable def liftFunctorOfHom_comp {Z : Type*} [Category Z]
 
 [Tag 07Y9](https://stacks.math.columbia.edu/tag/07Y9) in the Stacks Project.
 
-**`Deformation.Artin.exists_infComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/ActionOnLifts/InfComparison.lean, line 760](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/ActionOnLifts/InfComparison.lean#L760). The attribute's comment: “part (1), the comparison of Inf_x(I) with Inf(x'/x)”.
+**`Deformation.Artin.exists_infComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/ActionOnLifts/InfComparison.lean, line 760](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/ActionOnLifts/InfComparison.lean#L760). The attribute's comment: “part (1), the comparison of Inf\_x(I) with Inf(x'/x)”.
 
 > **Stacks 07Y9 part (1).** For `𝒳` satisfying (RS*), a deformation situation `A' → A`
 > with square-zero kernel `I` whose source lies in the chosen site, and a lift `x'` of `x`
@@ -188,7 +188,7 @@ public noncomputable def exists_infComparison (hRS : SatisfiesRSStar B S hS p hp
     InfComparisonData A B S hS toS hA p x hx hp Inf A' hA' toS' q hq hsq g x'
 ```
 
-**`Deformation.Artin.exists_actionOnLifts`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/ActionOnLifts/LiftAction.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/ActionOnLifts/LiftAction.lean#L547). The attribute's comment: “part (2)(b), the action of T_x(I) on the lifts over A'”.
+**`Deformation.Artin.exists_actionOnLifts`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/ActionOnLifts/LiftAction.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/ActionOnLifts/LiftAction.lean#L547). The attribute's comment: “part (2)(b), the action of T\_x(I) on the lifts over A'”.
 
 > **Stacks 07Y9 part (2)(b).** The difference-transport action of the tangent module
 > `T_x(I)` on the isomorphism classes of lifts of `x` over a square-zero deformation `A' → A`
@@ -213,7 +213,7 @@ public noncomputable def exists_actionOnLifts
       A' hA' toS' q hq hsq g
 ```
 
-**`Deformation.Artin.exists_infinitesimalAutomorphismFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/AutomorphismFunctor.lean, line 902](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/AutomorphismFunctor.lean#L902). The attribute's comment: “part (1), the A-linear functor Inf_x on trivial square-zero extensions”.
+**`Deformation.Artin.exists_infinitesimalAutomorphismFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/AutomorphismFunctor.lean, line 902](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/AutomorphismFunctor.lean#L902). The attribute's comment: “part (1), the A-linear functor Inf\_x on trivial square-zero extensions”.
 
 > For `𝒳` satisfying (RS*), the infinitesimal automorphisms of the trivial deformations of
 > `x` over the trivial square-zero extensions `A[M]` are the underlying sets of an `A`-linear
@@ -224,7 +224,7 @@ public theorem exists_infinitesimalAutomorphismFunctor (hRS : SatisfiesRSStar B 
     Nonempty (InfinitesimalAutomorphismFunctorData A B S hS toS hA p x hx hp)
 ```
 
-**`Deformation.Artin.exists_tangentFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/TangentFunctor.lean, line 1356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/TangentFunctor.lean#L1356). The attribute's comment: “part (2)(a), the A-linear tangent functor T_x”.
+**`Deformation.Artin.exists_tangentFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/TangentFunctor.lean, line 1356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/TangentFunctor.lean#L1356). The attribute's comment: “part (2)(a), the A-linear tangent functor T\_x”.
 
 > **Stacks 07Y9 part (2)(a), the tangent functor.** For `𝒳` satisfying (RS*), the
 > isomorphism classes of lifts of `x` over the trivial square-zero extensions `A[M]` are the
@@ -240,7 +240,7 @@ public theorem exists_tangentFunctor (hp : p.IsFiberedInGroupoids)
 
 [Tag 07YA](https://stacks.math.columbia.edu/tag/07YA) in the Stacks Project.
 
-**`Deformation.Artin.isLinearMap_tangentBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/BaseChangeLinear.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/BaseChangeLinear.lean#L473). The attribute's comment: “the A-linear map T_x(M) → T_y(N)”.
+**`Deformation.Artin.isLinearMap_tangentBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/BaseChangeLinear.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/BaseChangeLinear.lean#L473). The attribute's comment: “the A-linear map T\_x(M) → T\_y(N)”.
 
 > **Remark 07YA for the tangent functor.** For a ring map `f : A ⟶ C`, the restriction
 > `y = x|_{Spec C}` and an `f`-semilinear map `M ⟶ N` of coefficients, the induced map
@@ -255,7 +255,7 @@ public theorem isLinearMap_tangentBaseChangeMap {M : SiteModule A B} {N : SiteMo
       (tangentBaseChangeMap f B S hS toS hA toSC hC hf p x y hx hy φ₀ hφ₀ hp Tx Ty ψ)
 ```
 
-**`Deformation.Artin.isLinearMap_infBaseChangeMap_tangentBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/DeformationSituationMorphism.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/DeformationSituationMorphism.lean#L389). The attribute's comment: “the A-linear maps Inf_x(M) → Inf_y(N) and T_x(M) → T_y(N) induced by pullback”.
+**`Deformation.Artin.isLinearMap_infBaseChangeMap_tangentBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/DeformationSituationMorphism.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/DeformationSituationMorphism.lean#L389). The attribute's comment: “the A-linear maps Inf\_x(M) → Inf\_y(N) and T\_x(M) → T\_y(N) induced by pullback”.
 
 > **Stacks 07YA, the maps.** Let `𝒳` satisfy (RS*), let `f : A ⟶ C` be a map of
 > `S`-algebras, `y = x|_{Spec C}` (the arrow `φ₀ : y ⟶ x` over `Spec C ⟶ Spec A`), `M` an
@@ -349,7 +349,7 @@ public theorem infComparison_restrict_and_action_restrict (hRS : SatisfiesRSStar
               hC' toSC' qC gC hgC f' hff hf') z))
 ```
 
-**`Deformation.Artin.existsUnique_infAutBaseChangeHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/InfAutBaseChangeMap.lean, line 672](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/InfAutBaseChangeMap.lean#L672). The attribute's comment: “the companion A-linear map Inf_x(M) -> Inf_y(N) along a ring map A -> C, and its uniqueness. The relation Deformation.Artin.IsInfinitesimalAutomorphismBaseChange, its single-valuedness and its bijectivity at a bijective map of coefficients are in the library, but without a map realizing it all of them would be conditional: the relation asks for a cartesian arrow between the two TRIVIAL lifts, and the pullback of the trivial lift of x along Spec C[N] -> Spec A[M] is only isomorphic to the trivial lift of y, not equal to it. What is added is that arrow -- Deformation.Artin.trivialLiftComparison, built from the presentation of each trivial lift as a pullback along the retraction Spec A[M] -> Spec A -- the conjugation by it, and the A-linearity of the resulting map, which is the remark's assertion. CARRIED, as an extra hypothesis the source does not make: x and y are Deformation.Artin.ChartedObjects, so Spec A -> S and Spec C -> S factor through a fixed affine open Spec L of S -- inherited from Deformation.Artin.IsInfinitesimalAutomorphismBaseChange, the relation this realizes; the geometric half is chart-free, as Deformation.Artin.underFiberConjugate. (RS*) is needed only for uniqueness, through the commutativity of the infinitesimal automorphisms; the two functors Inf_x, Inf_y are arbitrary members of Deformation.Artin.InfinitesimalAutomorphismFunctorData. NOT COVERED: the two commuting squares of the source, for which see the note on Deformation.Artin.existsUnique_tangentBaseChange”.
+**`Deformation.Artin.existsUnique_infAutBaseChangeHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/InfAutBaseChangeMap.lean, line 672](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/InfAutBaseChangeMap.lean#L672). The attribute's comment: “the companion A-linear map Inf\_x(M) -> Inf\_y(N) along a ring map A -> C, and its uniqueness. The relation Deformation.Artin.IsInfinitesimalAutomorphismBaseChange, its single-valuedness and its bijectivity at a bijective map of coefficients are in the library, but without a map realizing it all of them would be conditional: the relation asks for a cartesian arrow between the two TRIVIAL lifts, and the pullback of the trivial lift of x along Spec C[N] -> Spec A[M] is only isomorphic to the trivial lift of y, not equal to it. What is added is that arrow -- Deformation.Artin.trivialLiftComparison, built from the presentation of each trivial lift as a pullback along the retraction Spec A[M] -> Spec A -- the conjugation by it, and the A-linearity of the resulting map, which is the remark's assertion. CARRIED, as an extra hypothesis the source does not make: x and y are Deformation.Artin.ChartedObjects, so Spec A -> S and Spec C -> S factor through a fixed affine open Spec L of S -- inherited from Deformation.Artin.IsInfinitesimalAutomorphismBaseChange, the relation this realizes; the geometric half is chart-free, as Deformation.Artin.underFiberConjugate. (RS*) is needed only for uniqueness, through the commutativity of the infinitesimal automorphisms; the two functors Inf\_x, Inf\_y are arbitrary members of Deformation.Artin.InfinitesimalAutomorphismFunctorData. NOT COVERED: the two commuting squares of the source, for which see the note on Deformation.Artin.existsUnique\_tangentBaseChange”.
 
 > **Stacks 07YA on infinitesimal automorphisms.** Let `x` be an object of a category fibred
 > in groupoids over the big fppf site of `S` lying over `Spec A`, let `A ⟶ C` be a ring map and
@@ -384,7 +384,7 @@ public theorem existsUnique_infAutBaseChangeHom (hRS : SatisfiesRSStar B S hS p 
         (G.autEquiv N (σ θ))
 ```
 
-**`Deformation.Artin.existsUnique_tangentBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/TangentPullback.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/TangentPullback.lean#L291). The attribute's comment: “tangent_base_change”.
+**`Deformation.Artin.existsUnique_tangentBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/TangentPullback.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/TangentPullback.lean#L291). The attribute's comment: “tangent\_base\_change”.
 
 > **Stacks 07YA on tangent modules.** Let `x` be an object over `Spec A` of a category fibred
 > in groupoids over the big fppf site of `S`, let `f : A ⟶ C` be a homomorphism of `S`-algebras
@@ -405,14 +405,14 @@ public theorem existsUnique_tangentBaseChange {M : SiteModule A B} {N : SiteModu
 
 Declarations registered for the tag:
 
-- [`Deformation.Artin.liftFunctorOfPullback`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L348), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 607](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L607) (StacksFrontier): “pullback_of_lifts”.
-- [`Deformation.Artin.liftFunctor_unique`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L418), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 608](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L608) (StacksFrontier): “pullback_of_lifts”.
+- [`Deformation.Artin.liftFunctorOfPullback`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L348), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 607](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L607) (StacksFrontier): “pullback\_of\_lifts”.
+- [`Deformation.Artin.liftFunctor_unique`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L418), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 608](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L608) (StacksFrontier): “pullback\_of\_lifts”.
 
 ## Tag 07YB, a remark
 
 [Tag 07YB](https://stacks.math.columbia.edu/tag/07YB) in the Stacks Project.
 
-**`Deformation.Artin.compositionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 801](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L801). The attribute's comment: “composition_map”.
+**`Deformation.Artin.compositionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 801](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L801). The attribute's comment: “composition\_map”.
 
 > Composition with relative infinitesimal automorphisms on both sides of a
 > morphism of lifts.
@@ -425,7 +425,7 @@ public noncomputable def compositionMap
       infinitesimalAutomorphisms hp t₂) → (t₁ ⟶ t₂)
 ```
 
-**`Deformation.Artin.leftCompositionAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 859](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L859). The attribute's comment: “groupoid_actions”.
+**`Deformation.Artin.leftCompositionAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 859](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L859). The attribute's comment: “groupoid\_actions”.
 
 > The left action of relative infinitesimal automorphisms of the source lift
 > on morphisms of lifts, by inverse precomposition.
@@ -437,7 +437,7 @@ public noncomputable def leftCompositionAction
     (a : infinitesimalAutomorphisms hp t₁) (f : t₁ ⟶ t₂) : t₁ ⟶ t₂
 ```
 
-**`Deformation.Artin.rightCompositionAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 868](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L868). The attribute's comment: “groupoid_actions”.
+**`Deformation.Artin.rightCompositionAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 868](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L868). The attribute's comment: “groupoid\_actions”.
 
 > The right action of relative infinitesimal automorphisms of the target lift
 > on morphisms of lifts, by inverse postcomposition.
@@ -449,7 +449,7 @@ public noncomputable def rightCompositionAction
     (f : t₁ ⟶ t₂) (b : infinitesimalAutomorphisms hp t₂) : t₁ ⟶ t₂
 ```
 
-**`Deformation.Artin.leftComposition_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 992](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L992). The attribute's comment: “groupoid_actions”.
+**`Deformation.Artin.leftComposition_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 992](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L992). The attribute's comment: “groupoid\_actions”.
 
 > The identity automorphism acts trivially on the left.
 
@@ -459,7 +459,7 @@ public theorem leftComposition_one (hp : Deformation.IsCofiberedInGroupoids p)
     leftCompositionAction hp t₁ t₂ 1 f = f
 ```
 
-**`Deformation.Artin.leftComposition_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 1000](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L1000). The attribute's comment: “groupoid_actions”.
+**`Deformation.Artin.leftComposition_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 1000](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L1000). The attribute's comment: “groupoid\_actions”.
 
 > The left action is compatible with multiplication of automorphisms.
 
@@ -471,7 +471,7 @@ public theorem leftComposition_mul (hp : Deformation.IsCofiberedInGroupoids p)
       leftCompositionAction hp t₁ t₂ a (leftCompositionAction hp t₁ t₂ b f)
 ```
 
-**`Deformation.Artin.rightComposition_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 1012](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L1012). The attribute's comment: “groupoid_actions”.
+**`Deformation.Artin.rightComposition_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 1012](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L1012). The attribute's comment: “groupoid\_actions”.
 
 > The identity automorphism acts trivially on the right.
 
@@ -481,7 +481,7 @@ public theorem rightComposition_one (hp : Deformation.IsCofiberedInGroupoids p)
     rightCompositionAction hp t₁ t₂ f 1 = f
 ```
 
-**`Deformation.Artin.rightComposition_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 1020](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L1020). The attribute's comment: “groupoid_actions”.
+**`Deformation.Artin.rightComposition_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 1020](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L1020). The attribute's comment: “groupoid\_actions”.
 
 > The right action is compatible with multiplication of automorphisms.
 
@@ -493,7 +493,7 @@ public theorem rightComposition_mul (hp : Deformation.IsCofiberedInGroupoids p)
       rightCompositionAction hp t₁ t₂ f (a * b)
 ```
 
-**`Deformation.Artin.leftComposition_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 1042](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L1042). The attribute's comment: “groupoid_actions”.
+**`Deformation.Artin.leftComposition_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 1042](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L1042). The attribute's comment: “groupoid\_actions”.
 
 > At each morphism of lifts, the orbit map for the left action is a bijection.
 
@@ -506,7 +506,7 @@ public theorem leftComposition_bijective
       leftCompositionAction hp t₁ t₂ a f)
 ```
 
-**`Deformation.Artin.rightComposition_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 1062](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L1062). The attribute's comment: “groupoid_actions”.
+**`Deformation.Artin.rightComposition_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 1062](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L1062). The attribute's comment: “groupoid\_actions”.
 
 > At each morphism of lifts, the orbit map for the right action is a bijection.
 
@@ -519,7 +519,7 @@ public theorem rightComposition_bijective
       rightCompositionAction hp t₁ t₂ f b)
 ```
 
-**`Deformation.Artin.InfComparisonData.actions_agree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/ActionOnLiftsRestriction.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/ActionOnLiftsRestriction.lean#L440). The attribute's comment: “actions on Mor(x', x'') agree via Inf(x'/x) = Inf_x(I) = Inf(x''/x)”.
+**`Deformation.Artin.InfComparisonData.actions_agree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/ActionOnLiftsRestriction.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/ActionOnLiftsRestriction.lean#L440). The attribute's comment: “actions on Mor(x', x'') agree via Inf(x'/x) = Inf\_x(I) = Inf(x''/x)”.
 
 > **Stacks 07YB.** Let `𝒳` satisfy (RS*), let `(x, A' → A)` be a deformation situation with
 > kernel `I`, and let `x'`, `x''` be lifts of `x` to `Spec A'`. Composition gives a map
@@ -561,7 +561,7 @@ public theorem InfComparisonData.actions_agree (hRS : SatisfiesRSStar B S hS p h
           C'.equiv a ≫ f))
 ```
 
-**`Deformation.Artin.infinitesimalAutTransport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/LiftCompositionActions.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/LiftCompositionActions.lean#L143). The attribute's comment: “actions_agree”.
+**`Deformation.Artin.infinitesimalAutTransport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/LiftCompositionActions.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/LiftCompositionActions.lean#L143). The attribute's comment: “actions\_agree”.
 
 > **The identification of the two groups of relative infinitesimal automorphisms.** A
 > morphism of lifts identifies the relative infinitesimal automorphisms of its source with
@@ -574,7 +574,7 @@ public noncomputable def infinitesimalAutTransport
     infinitesimalAutomorphisms hp t₁ ≃* infinitesimalAutomorphisms hp t₂
 ```
 
-**`Deformation.Artin.leftCompositionAction_eq_rightCompositionAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/LiftCompositionActions.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/LiftCompositionActions.lean#L199). The attribute's comment: “actions_agree”.
+**`Deformation.Artin.leftCompositionAction_eq_rightCompositionAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/LiftCompositionActions.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/LiftCompositionActions.lean#L199). The attribute's comment: “actions\_agree”.
 
 > **The two actions agree.** The left action of a relative infinitesimal automorphism of the
 > source lift on a morphism of lifts is the right action, on the same morphism, of the
@@ -593,7 +593,7 @@ public theorem leftCompositionAction_eq_rightCompositionAction
 
 [Tag 07YE](https://stacks.math.columbia.edu/tag/07YE) in the Stacks Project.
 
-**`Deformation.Artin.IsShortExactSequence`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 626](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L626). The attribute's comment: “short_exact_sequence_of_deformation_situations”.
+**`Deformation.Artin.IsShortExactSequence`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 626](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L626). The attribute's comment: “short\_exact\_sequence\_of\_deformation\_situations”.
 
 > A composable triple of deformation situations is short exact if its kernel sequence
 > `0 → I₃ → I₂ → I₁ → 0` is exact. The maps of situations run in the opposite direction
@@ -606,7 +606,7 @@ public abbrev IsShortExactSequence {A₁ : Type u₁} {A₂ : Type u₂} {A₃ :
     (f₂₁ : A₂ →+* A₁) (f₃₂ : A₃ →+* A₂) : Prop
 ```
 
-**`Deformation.Artin.exists_factorization_through_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 639](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L639). The attribute's comment: “factorization_through_a”.
+**`Deformation.Artin.exists_factorization_through_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 639](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L639). The attribute's comment: “factorization\_through\_a”.
 
 > The composite `A₃' → A₂' → A₁'` in a short exact sequence of deformation
 > situations factors through their common quotient `A`.
@@ -621,7 +621,7 @@ public theorem exists_factorization_through_base
     ∃ g : A →+* A₁, g.comp q₃ = f₂₁.comp f₃₂
 ```
 
-**`Deformation.Artin.splitExtensionRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 689](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L689). The attribute's comment: “canonical_isomorphism”.
+**`Deformation.Artin.splitExtensionRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal.lean, line 689](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal.lean#L689). The attribute's comment: “canonical\_isomorphism”.
 
 > **The canonical isomorphism `A₁ = A[I₁]`.** In a short exact sequence of deformation
 > situations, the splitting of `q₁` produced by `exists_factorization_through_base` exhibits
@@ -645,7 +645,7 @@ noncomputable def splitExtensionRingEquiv
 
 [Tag 0DNN](https://stacks.math.columbia.edu/tag/0DNN) in the Stacks Project.
 
-**`Deformation.Artin.injective_twoFibreInfProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/Functoriality/InfTransportSixTerm.lean, line 578](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/Functoriality/InfTransportSixTerm.lean#L578). The attribute's comment: “exactness of the six-term sequence at Inf_w(M), i.e. injectivity of Inf_w(M) → Inf_x(M) ⊕ Inf_z(M), which is what exactness of 0 → Inf_w(M) → ⋯ says (see exact_zero_iff_injective). Also constructed in this module, and used to state that map, are the four functoriality maps of Remark 07YA out of the 2-fibre product and out of 𝒳 (infLinearMapOfOneMorphism, tangentLinearMapOfOneMorphism) and the zeros of Inf_x(M) and T_x(M) (autEquiv_zero, liftEquiv_zero). The sequence with all five of its maps and the exactness at all five of its places is Deformation.Artin.twoFibre_sixTermExact in StacksFrontier.Deformation.Artin.Infinitesimal.TwoFibreInfExact.”.
+**`Deformation.Artin.injective_twoFibreInfProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/Functoriality/InfTransportSixTerm.lean, line 578](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/Functoriality/InfTransportSixTerm.lean#L578). The attribute's comment: “exactness of the six-term sequence at Inf\_w(M), i.e. injectivity of Inf\_w(M) → Inf\_x(M) ⊕ Inf\_z(M), which is what exactness of 0 → Inf\_w(M) → ⋯ says (see exact\_zero\_iff\_injective). Also constructed in this module, and used to state that map, are the four functoriality maps of Remark 07YA out of the 2-fibre product and out of 𝒳 (infLinearMapOfOneMorphism, tangentLinearMapOfOneMorphism) and the zeros of Inf\_x(M) and T\_x(M) (autEquiv\_zero, liftEquiv\_zero). The sequence with all five of its maps and the exactness at all five of its places is Deformation.Artin.twoFibre\_sixTermExact in StacksFrontier.Deformation.Artin.Infinitesimal.TwoFibreInfExact.”.
 
 > **Exactness of the six-term sequence of Stacks 0DNN at `Inf_w(M)`**: an infinitesimal
 > automorphism of the trivial deformation of `w` is determined by its two components.  Each
@@ -686,7 +686,7 @@ public theorem injective_twoFibreInfProj (A : Type u) [CommRing A] (B : BigFppfS
             InfW InfZ M))
 ```
 
-**`Deformation.Artin.twoFibreInfSideMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/TwoFibreBoundary.lean, line 581](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/TwoFibreBoundary.lean#L581). The attribute's comment: “the map `Inf_z(M) → Inf_y(M)` of the six-term sequence -- the map of Remark 07YA induced by q, followed by the transport along the comparison isomorphism of w. The sequence and its exactness are Deformation.Artin.twoFibre_sixTermExact.”.
+**`Deformation.Artin.twoFibreInfSideMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/TwoFibreBoundary.lean, line 581](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/TwoFibreBoundary.lean#L581). The attribute's comment: “the map `Inf_z(M) → Inf_y(M)` of the six-term sequence -- the map of Remark 07YA induced by q, followed by the transport along the comparison isomorphism of w. The sequence and its exactness are Deformation.Artin.twoFibre\_sixTermExact.”.
 
 > **The `𝒵`-side map `Inf_z(M) ⟶ Inf_y(M)` of the six-term sequence of Stacks 0DNN**: the
 > map induced by `q` on infinitesimal automorphisms, followed by the identification of the
@@ -701,7 +701,7 @@ public def twoFibreInfSideMap
     (M : SiteModule A B) : InfZ.functor.obj M →ₗ[A] InfY'.functor.obj M
 ```
 
-**`Deformation.Artin.twoFibreTangentSideMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/TwoFibreBoundary.lean, line 612](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/TwoFibreBoundary.lean#L612). The attribute's comment: “the map `T_z(M) → T_y(M)` of the six-term sequence -- the map of Remark 07YA induced by q, followed by the transport along the comparison isomorphism of w. The sequence and its exactness are Deformation.Artin.twoFibre_sixTermExact.”.
+**`Deformation.Artin.twoFibreTangentSideMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/TwoFibreBoundary.lean, line 612](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/TwoFibreBoundary.lean#L612). The attribute's comment: “the map `T_z(M) → T_y(M)` of the six-term sequence -- the map of Remark 07YA induced by q, followed by the transport along the comparison isomorphism of w. The sequence and its exactness are Deformation.Artin.twoFibre\_sixTermExact.”.
 
 > **The `𝒵`-side map `T_z(M) ⟶ T_y(M)` of the six-term sequence of Stacks 0DNN**: the map
 > induced by `q` on tangent spaces, followed by the identification of the invariants of `q z`
@@ -715,7 +715,7 @@ public def twoFibreTangentSideMap
     (M : SiteModule A B) : TZ.functor.obj M →ₗ[A] TY.functor.obj M
 ```
 
-**`Deformation.Artin.boundaryLinearMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/TwoFibreBoundary.lean, line 675](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/TwoFibreBoundary.lean#L675). The attribute's comment: “the boundary map `δ : Inf_y(M) → T_w(M)` of the six-term sequence, as an A-linear map: an automorphism α of the trivial deformation y' of y = p x over A[M] is sent to the deformation (x', z', p x' → y' --α--> y' → q z') of w, exactly as in the source. The sequence and its exactness at all five places are Deformation.Artin.twoFibre_sixTermExact.”.
+**`Deformation.Artin.boundaryLinearMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/TwoFibreBoundary.lean, line 675](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/TwoFibreBoundary.lean#L675). The attribute's comment: “the boundary map `δ : Inf_y(M) → T_w(M)` of the six-term sequence, as an A-linear map: an automorphism α of the trivial deformation y' of y = p x over A[M] is sent to the deformation (x', z', p x' → y' --α--> y' → q z') of w, exactly as in the source. The sequence and its exactness at all five places are Deformation.Artin.twoFibre\_sixTermExact.”.
 
 > **The boundary map `δ : Inf_y(M) ⟶ T_w(M)` of Stacks 0DNN, as an `A`-linear map.**
 
@@ -724,7 +724,7 @@ public def boundaryLinearMap (M : SiteModule A B) :
     InfY.functor.obj M →ₗ[A] TW.functor.obj M
 ```
 
-**`Deformation.Artin.tangentProj_twoFibreBoundaryMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/TwoFibreBoundary.lean, line 733](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/TwoFibreBoundary.lean#L733). The attribute's comment: “one inclusion of exactness at T_w(M): the composite Inf_y(M) → T_w(M) → T_x(M) ⊕ T_z(M) of the six-term sequence is zero, the two components of δ(α) being by construction the trivial deformations of x and of z. The exactness assertion itself is Deformation.Artin.exact_boundary_tangentProj, and the whole sequence is Deformation.Artin.twoFibre_sixTermExact.”.
+**`Deformation.Artin.tangentProj_twoFibreBoundaryMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/TwoFibreBoundary.lean, line 733](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/TwoFibreBoundary.lean#L733). The attribute's comment: “one inclusion of exactness at T\_w(M): the composite Inf\_y(M) → T\_w(M) → T\_x(M) ⊕ T\_z(M) of the six-term sequence is zero, the two components of δ(α) being by construction the trivial deformations of x and of z. The exactness assertion itself is Deformation.Artin.exact\_boundary\_tangentProj, and the whole sequence is Deformation.Artin.twoFibre\_sixTermExact.”.
 
 > **The six-term sequence of Stacks 0DNN is a complex at `T_w(M)`**: the boundary map
 > followed by the pair of projections to the tangent spaces of `x` and of `z` is zero, because
@@ -1014,7 +1014,7 @@ public theorem localizedAutomorphismTangent_deformationCategory_linearEquiv
 
 [Tag 07YC](https://stacks.math.columbia.edu/tag/07YC) in the Stacks Project.
 
-**`Deformation.Artin.canonicalDeformationElement`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/CanonicalElement.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/CanonicalElement.lean#L151). The attribute's comment: “canonical_deformation_element”.
+**`Deformation.Artin.canonicalDeformationElement`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Infinitesimal/CanonicalElement.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Infinitesimal/CanonicalElement.lean#L151). The attribute's comment: “canonical\_deformation\_element”.
 
 > **Stacks 07YC.** The canonical element of `T_x(Ω_{A/Λ})` attached to the universal
 > derivation `d : A → Ω_{A/Λ}`.

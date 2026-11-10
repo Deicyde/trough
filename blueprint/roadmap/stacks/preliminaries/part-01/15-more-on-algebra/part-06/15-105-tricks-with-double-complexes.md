@@ -39,8 +39,8 @@ Section 15.105 of the Stacks Project, [Tag 0EYW](https://stacks.math.columbia.ed
 >   `d_2(w') = (-1)^{p+1} r_{p+1}` (scale the witness by `(-1)^{p+1}`, valid since
 >   `(-1)^{p+1}` is a unit; or equivalently apply `hH` to `(-1)^{p+1} r_{p+1}`,
 >   which is also a cocycle).  Take `(Y (p+1)).fst := w'`.  Then `StageInvariant x (p+1) w'`
->   follows because `f_{p+1}(d_2 w') = (-1)^{p+1} f_{p+1}(r_{p+1}) =
->   (-1)^{p+1}(f_{p+1}(x_{p+1}) - f_{p+1}(f_p yp)) = (-1)^{p+1} f_{p+1}(x_{p+1})`
+>   follows because `f\_\{p+1}(d\_2 w') = (-1)^\{p+1} f\_\{p+1}(r\_\{p+1}) =
+>   (-1)^\{p+1}(f\_\{p+1}(x\_\{p+1}) - f\_\{p+1}(f\_p yp)) = (-1)^\{p+1} f\_\{p+1}(x\_\{p+1})`
 >   using `c.f_f p` (`f_{p+1}∘f_p = 0`).
 > Finally `c.totalD (-1) y = x` by `funext p`, `cases p`, reading off the recorded
 > construction equations (the `p=0` and `p+1` cases of `totalD_apply_zero` /

@@ -14,7 +14,7 @@ Section 109.3 of the Stacks Project, [Tag 0DMJ](https://stacks.math.columbia.edu
 
 [Tag 0DMK](https://stacks.math.columbia.edu/tag/0DMK) in the Stacks Project.
 
-**`AlgebraicGeometry.relativeCurvesMorphismsEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesMorphismsFromSpace.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesMorphismsFromSpace.lean#L324). The attribute's comment: “the identification of Mor_B(T, B-Curves) with Mor(T, Curves)”.
+**`AlgebraicGeometry.relativeCurvesMorphismsEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesMorphismsFromSpace.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesMorphismsFromSpace.lean#L324). The attribute's comment: “the identification of Mor\_B(T, B-Curves) with Mor(T, Curves)”.
 
 > **Stacks 0DMK, the identification `Mor_B(T, B-Curves) = Mor(T, Curves)`.** For a morphism
 > `f : T → A` of algebraic spaces, the category of morphisms over `(Sch/A)` from `T` to the stack
@@ -43,7 +43,7 @@ noncomputable def curvesMorphismsEquivalence (T : AlgebraicSpaces B integerBase 
       CurveFamilyOnSpace B integerBase hZ T
 ```
 
-**`AlgebraicGeometry.relativeCurvesMorphismsCurveFamilyEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesMorphismsFromSpace.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesMorphismsFromSpace.lean#L442). The attribute's comment: “Mor_B(T, B-Curves) = Mor(T, Curves) is the category of families of curves over T”.
+**`AlgebraicGeometry.relativeCurvesMorphismsCurveFamilyEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesMorphismsFromSpace.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesMorphismsFromSpace.lean#L442). The attribute's comment: “Mor\_B(T, B-Curves) = Mor(T, Curves) is the category of families of curves over T”.
 
 > **Stacks 0DMK.** For a morphism `f : T ⟶ A` of algebraic spaces, the category
 > `Mor_A(T, A-Curves)` of morphisms over `(Sch/A)` from `T` to the stack `A-Curves` is equivalent to

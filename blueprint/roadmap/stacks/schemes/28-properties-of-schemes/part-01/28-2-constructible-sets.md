@@ -30,7 +30,7 @@ public theorem isLocallyConstructible_iff_forall_affineOpens
 
 [Tag 0AAW](https://stacks.math.columbia.edu/tag/0AAW) in the Stacks Project.
 
-**`AlgebraicGeometry.compl_mem_nhds_of_isLocallyConstructible_of_mem_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Constructible.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Constructible.lean#L91). The attribute's comment: “neighborhood_disjoint”.
+**`AlgebraicGeometry.compl_mem_nhds_of_isLocallyConstructible_of_mem_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Constructible.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Constructible.lean#L91). The attribute's comment: “neighborhood\_disjoint”.
 
 > A generic point of an irreducible component which is not in a
 > locally constructible subset has an open neighbourhood disjoint from that subset.
@@ -42,7 +42,7 @@ public theorem compl_mem_nhds_of_isLocallyConstructible_of_mem_genericPoints
     Eᶜ ∈ 𝓝 ξ
 ```
 
-**`AlgebraicGeometry.mem_nhds_of_isLocallyConstructible_of_mem_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Constructible.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Constructible.lean#L123). The attribute's comment: “neighborhood_contained”.
+**`AlgebraicGeometry.mem_nhds_of_isLocallyConstructible_of_mem_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Constructible.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Constructible.lean#L123). The attribute's comment: “neighborhood\_contained”.
 
 > A locally constructible set containing the generic point of an irreducible component
 > contains an open neighbourhood of that point.

@@ -134,7 +134,7 @@ public def derivedAdequateEquivalence
 
 [Tag 070W](https://stacks.math.columbia.edu/tag/070W) in the Stacks Project.
 
-**`Stacks.Adequate.BigSite.derivedRestrictAdequate`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedRestriction.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedRestriction.lean#L293). The attribute's comment: “the assertion that Rf_* carries D_Adeq(𝒪) into D_QCoh(S), in the source's own form Rf_* = f_* for the Zariski restriction of the morphism of Tag 070U, with right exactness of that restriction an instance argument. Lf^*, adjointness and Rf_* Lf^* ≅ id are covered elsewhere”.
+**`Stacks.Adequate.BigSite.derivedRestrictAdequate`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedRestriction.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedRestriction.lean#L293). The attribute's comment: “the assertion that Rf\_* carries D\_Adeq(𝒪) into D\_QCoh(S), in the source's own form Rf\_* = f\_* for the Zariski restriction of the morphism of Tag 070U, with right exactness of that restriction an instance argument. Lf^*, adjointness and Rf\_* Lf^* ≅ id are covered elsewhere”.
 
 > **[Stacks, Tag 070W], the pushforward landing in the source's own form `Rf_* = f_*`.**
 > Restriction to the small Zariski site of `S` along the morphism of [Stacks, Tag 070U], assumed
@@ -148,7 +148,7 @@ public def BigSite.derivedRestrictAdequate :
         (SheafOfModules.isQuasicoherent S.ringCatSheaf)).FullSubcategory
 ```
 
-**`Stacks.Adequate.BigSite.derivedAdequateAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedRestriction.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedRestriction.lean#L366). The attribute's comment: “the adjointness assertion only, for the subcategories D_Adeq(O) and D_QCoh(S); the ambient adjunction and the two landing assertions are inputs, listed in the docstring”.
+**`Stacks.Adequate.BigSite.derivedAdequateAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedRestriction.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedRestriction.lean#L366). The attribute's comment: “the adjointness assertion only, for the subcategories D\_Adeq(O) and D\_QCoh(S); the ambient adjunction and the two landing assertions are inputs, listed in the docstring”.
 
 > **[Stacks, Tag 070W], the adjointness assertion.** Given the ambient derived adjunction
 > `Lf^* ⊣ Rf_*` on all `𝒪`-modules and the two landing assertions, the restricted functors
@@ -167,7 +167,7 @@ public def BigSite.derivedAdequateAdjunction (adj : L ⊣ R) :
       BigSite.derivedAdequatePushforward B R hR
 ```
 
-**`Stacks.Adequate.BigSite.derivedQuasicoherentAdequateAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedZariskiQuasicoherent.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedZariskiQuasicoherent.lean#L97). The attribute's comment: “the adjunction Lf^* ⊣ Rf_* between D_QCoh(S) and D_Adeq(O), for the derived functors of the morphism of Tag 070U on a chosen big site, with no hypothesis”.
+**`Stacks.Adequate.BigSite.derivedQuasicoherentAdequateAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedZariskiQuasicoherent.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedZariskiQuasicoherent.lean#L97). The attribute's comment: “the adjunction Lf^* ⊣ Rf\_* between D\_QCoh(S) and D\_Adeq(O), for the derived functors of the morphism of Tag 070U on a chosen big site, with no hypothesis”.
 
 > **[Stacks, Tag 070W], the adjunction.** The morphism `f` of [Stacks, Tag 070U] induces
 > adjoint functors `Lf^* : D_QCoh(S) ⥤ D_Adeq(𝒪)` and `Rf_* : D_Adeq(𝒪) ⥤ D_QCoh(S)`: the total
@@ -179,7 +179,7 @@ def BigSite.derivedQuasicoherentAdequateAdjunction :
     B.derivedQuasicoherentPullback ⊣ B.derivedAdequateDirectImage
 ```
 
-**`Stacks.Adequate.BigSite.derivedAdequateDirectImagePullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedZariskiQuasicoherent.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedZariskiQuasicoherent.lean#L106). The attribute's comment: “Rf_* Lf^* ≅ id on D_QCoh(S), for the derived functors of the morphism of Tag 070U on a chosen big site”.
+**`Stacks.Adequate.BigSite.derivedAdequateDirectImagePullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedZariskiQuasicoherent.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedZariskiQuasicoherent.lean#L106). The attribute's comment: “Rf\_* Lf^* ≅ id on D\_QCoh(S), for the derived functors of the morphism of Tag 070U on a chosen big site”.
 
 > **[Stacks, Tag 070W], `Rf_* Lf^* ≅ id_{D_QCoh(S)}`.** The unit of the derived adjunction
 > is invertible at every complex with quasi-coherent cohomology.
@@ -244,7 +244,7 @@ public def BigSite.derivedParasiticQuotientEquivalence :
         (SheafOfModules.isQuasicoherent S.ringCatSheaf)).FullSubcategory
 ```
 
-**`Stacks.Adequate.BigSite.isLocalization_trW_derivedParasitic_derivedAdequateDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedQuotientUnconditional.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedQuotientUnconditional.lean#L218). The attribute's comment: “the equivalence D_Adeq(O)/D_C(O) -> D_QCoh(S) induced by Rf_*, with the quotient the Verdier quotient by the complexes with parasitic adequate cohomology, for the derived functors of the morphism of Tag 070U on a chosen big site and each of the five topologies”.
+**`Stacks.Adequate.BigSite.isLocalization_trW_derivedParasitic_derivedAdequateDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedQuotientUnconditional.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedQuotientUnconditional.lean#L218). The attribute's comment: “the equivalence D\_Adeq(O)/D\_C(O) -> D\_QCoh(S) induced by Rf\_*, with the quotient the Verdier quotient by the complexes with parasitic adequate cohomology, for the derived functors of the morphism of Tag 070U on a chosen big site and each of the five topologies”.
 
 > **[Stacks, Tag 070X].** Let `S` be a scheme and `f : ((Sch/S)_τ, 𝒪) ⟶ (S_Zar, 𝒪_S)` the
 > morphism of [Stacks, Tag 070U], for a chosen big site and any of the five topologies. The derived
@@ -261,7 +261,7 @@ public theorem BigSite.isLocalization_trW_derivedParasitic_derivedAdequateDirect
           (Stacks.SheafOfModules.Tensor.ringSheaf B.ringedSite.toRingedTopos.O)))).ι).trW
 ```
 
-**`Stacks.Adequate.BigSite.derivedAdequateParasiticQuotientEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedQuotientUnconditional.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedQuotientUnconditional.lean#L237). The attribute's comment: “the equivalence of categories D_Adeq(O)/D_C(O) ≌ D_QCoh(S) itself, for the derived functors of the morphism of Tag 070U on a chosen big site and each of the five topologies”.
+**`Stacks.Adequate.BigSite.derivedAdequateParasiticQuotientEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedQuotientUnconditional.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedQuotientUnconditional.lean#L237). The attribute's comment: “the equivalence of categories D\_Adeq(O)/D\_C(O) ≌ D\_QCoh(S) itself, for the derived functors of the morphism of Tag 070U on a chosen big site and each of the five topologies”.
 
 > **[Stacks, Tag 070X], the equivalence `D_Adeq(𝒪)/D_𝒞(𝒪) ≌ D_QCoh(S)`.** The Verdier
 > quotient of `D_Adeq(𝒪)` by the complexes with parasitic adequate cohomology is equivalent to

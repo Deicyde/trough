@@ -61,7 +61,7 @@ theorem exists_idealSheafData_isFlatOverAtPoint_iff_factors [HenselianLocalRing 
               (BigFppfOver.toScheme B (Spec (.of A)) hA).map g)
 ```
 
-**`AlgebraicGeometry.Space.exists_finitePresentation_idealSheafData_isFlatOverAtPoint_iff_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/LocalFlattening.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/LocalFlattening.lean#L460). The attribute's comment: “the finite-presentation assertion, for E closed and quasi-compact in |X_s|: nothing is assumed beyond the source's hypotheses”.
+**`AlgebraicGeometry.Space.exists_finitePresentation_idealSheafData_isFlatOverAtPoint_iff_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/LocalFlattening.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/LocalFlattening.lean#L460). The attribute's comment: “the finite-presentation assertion, for E closed and quasi-compact in |X\_s|: nothing is assumed beyond the source's hypotheses”.
 
 > **Stacks Project, Tag 0CWP, the final assertion.** In the situation of
 > `AlgebraicGeometry.Space.exists_idealSheafData_isFlatOverAtPoint_iff_factors`, if moreover

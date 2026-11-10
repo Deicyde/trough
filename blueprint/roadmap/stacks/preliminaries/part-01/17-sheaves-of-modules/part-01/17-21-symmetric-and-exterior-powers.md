@@ -34,7 +34,7 @@ noncomputable def ringedSpaceAlgebras (F : SheafOfModules.{w} (structureSheafRin
 
 [Tag 01CG](https://stacks.math.columbia.edu/tag/01CG) in the Stacks Project.
 
-**`SheafOfModules.exteriorPower_isSheafification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerComparison.lean, line 568](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerComparison.lean#L568). The attribute's comment: “exterior_power_sheafification: the exterior assertion, that `⋀ⁿ M` is the sheafification of `X ↦ ⋀ⁿ(M(X))`, with the comparison pinned on wedges of degree-one local sections. The symmetric assertion is `SheafOfModules.symmetricPower_isSheafification`; the tag states those two and nothing else, so that pair is its covering set.”.
+**`SheafOfModules.exteriorPower_isSheafification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerComparison.lean, line 568](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorPowerComparison.lean#L568). The attribute's comment: “exterior\_power\_sheafification: the exterior assertion, that `⋀ⁿ M` is the sheafification of `X ↦ ⋀ⁿ(M(X))`, with the comparison pinned on wedges of degree-one local sections. The symmetric assertion is `SheafOfModules.symmetricPower_isSheafification`; the tag states those two and nothing else, so that pair is its covering set.”.
 
 > For a sheaf of modules `M` on a site with a sheaf of
 > commutative rings `O♯`, and an exterior algebra `A` of `M` in the sense of Section 17.21, the
@@ -71,7 +71,7 @@ theorem exteriorPower_isSheafification (n : ℕ) :
           IsIso ((sheafificationHomEquiv (𝟙 (toRingCat J Osharp).obj)).symm cmp)
 ```
 
-**`SheafOfModules.symmetricPower_isSheafification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerComparison.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerComparison.lean#L411). The attribute's comment: “symmetric_power_sheafification”.
+**`SheafOfModules.symmetricPower_isSheafification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerComparison.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/SymmetricPowerComparison.lean#L411). The attribute's comment: “symmetric\_power\_sheafification”.
 
 > **Tag 01CG.** For a sheaf of modules `M` on a site with a sheaf of commutative rings `O♯`, and
 > a symmetric algebra `A` of `M` in the sense of Section 17.21, the degree-`n` symmetric power
@@ -119,7 +119,7 @@ theorem symmetricPower_isSheafification (n : ℕ) :
 
 [Tag 01CH](https://stacks.math.columbia.edu/tag/01CH) in the Stacks Project.
 
-**`SheafOfModules.symmetricAlgebra_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AlgebraStalkUngraded.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AlgebraStalkUngraded.lean#L536). The attribute's comment: “the ungraded symmetric assertion `Sym(M)ₓ ≅ Sym(Mₓ)`, with the isomorphism pinned down by its values on germs of products of local sections in every degree. The tensor assertions are `SheafOfModules.tensorPower_stalk` and `SheafOfModules.tensorAlgebra_stalk`; the ungraded exterior assertion `⋀(M)ₓ ≅ ⋀(Mₓ)` for a sheaf is `SheafOfModules.exteriorAlgebra_stalk` in `StacksFrontier.Algebra.Category.ModuleCat.Sheaf.ExteriorStalkUngraded`, and the degreewise exterior assertion is `PresheafOfModules.extPowStalkEquivOfStalkIso`. With those the three ungraded isomorphisms the source asserts are all proved”. References: EGA II (1.7.4), “(S(E))_s = S(E_s)”.
+**`SheafOfModules.symmetricAlgebra_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AlgebraStalkUngraded.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/AlgebraStalkUngraded.lean#L536). The attribute's comment: “the ungraded symmetric assertion `Sym(M)ₓ ≅ Sym(Mₓ)`, with the isomorphism pinned down by its values on germs of products of local sections in every degree. The tensor assertions are `SheafOfModules.tensorPower_stalk` and `SheafOfModules.tensorAlgebra_stalk`; the ungraded exterior assertion `⋀(M)ₓ ≅ ⋀(Mₓ)` for a sheaf is `SheafOfModules.exteriorAlgebra_stalk` in `StacksFrontier.Algebra.Category.ModuleCat.Sheaf.ExteriorStalkUngraded`, and the degreewise exterior assertion is `PresheafOfModules.extPowStalkEquivOfStalkIso`. With those the three ungraded isomorphisms the source asserts are all proved”. References: EGA II (1.7.4), “(S(E))\_s = S(E\_s)”.
 
 > **Tag 01CH, ungraded symmetric assertion.** For a sheaf of modules `M` on a topological space
 > with a sheaf of commutative rings `O♯`, a symmetric algebra `A` of `M` in the sense of Section
@@ -346,7 +346,7 @@ theorem tensorAlgebra_stalk (x : ↥X) :
 
 [Tag 01CI](https://stacks.math.columbia.edu/tag/01CI) in the Stacks Project.
 
-**`Stacks.PullbackExteriorAlgebra.exteriorAlgebraPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAlgebraPullbackIso.lean, line 877](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAlgebraPullbackIso.lean#L877). The attribute's comment: “pullback_exterior_algebra: the EXTERIOR algebra clause only; symmetric NOT proved”.
+**`Stacks.PullbackExteriorAlgebra.exteriorAlgebraPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAlgebraPullbackIso.lean, line 877](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAlgebraPullbackIso.lean#L877). The attribute's comment: “pullback\_exterior\_algebra: the EXTERIOR algebra clause only; symmetric NOT proved”.
 
 > **Stacks 01CI for the exterior algebra of a sheaf of modules.** For a morphism of ringed
 > spaces `f : X ⟶ Y` and a sheaf of `𝒪_Y`-modules `M`, the pullback of the exterior algebra of `M`
@@ -364,7 +364,7 @@ noncomputable def exteriorAlgebraPullbackIso (hA : IsExteriorAlgebra A ι)
     (hB : IsExteriorAlgebra B κ) : ExteriorAlgebraPullbackIso f A ι B κ
 ```
 
-**`Stacks.PullbackExteriorAlgebra.exteriorAlgebraPullbackIso_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAlgebraPullbackIso.lean, line 892](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAlgebraPullbackIso.lean#L892). The attribute's comment: “pullback_exterior_algebra: canonicality of the EXTERIOR algebra comparison only”.
+**`Stacks.PullbackExteriorAlgebra.exteriorAlgebraPullbackIso_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAlgebraPullbackIso.lean, line 892](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ExteriorAlgebraPullbackIso.lean#L892). The attribute's comment: “pullback\_exterior\_algebra: canonicality of the EXTERIOR algebra comparison only”.
 
 > **The comparison of Stacks 01CI is unique.** Compatibility with multiplication, with the
 > unit and with the degree-one generators on the pullback-unit sections determines the comparison

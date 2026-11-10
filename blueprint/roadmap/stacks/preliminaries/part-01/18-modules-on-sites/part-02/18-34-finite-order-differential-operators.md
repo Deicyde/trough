@@ -73,7 +73,7 @@ noncomputable instance differentialOperatorsFunctor_isCorepresentable (phi : O�
 
 [Tag 09CU](https://stacks.math.columbia.edu/tag/09CU) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.moduleOfPrincipalParts`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean#L164). The attribute's comment: “the module of principal parts of order k”. References: SGA 6 II (AppII.1.2.2), “P^n_{X/S}(E)”.
+**`AlgebraicGeometry.SheafOfModules.moduleOfPrincipalParts`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/PrincipalPartsUniversal.lean#L164). The attribute's comment: “the module of principal parts of order k”. References: SGA 6 II (AppII.1.2.2), “P^n\_\{X/S}(E)”.
 
 > The sheaf of principal parts `Pᵏ_{O₂/O₁}(F)`: the sheaf of modules corepresenting the
 > functor of differential operators of order at most `k` out of `F`.

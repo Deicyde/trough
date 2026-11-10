@@ -199,8 +199,8 @@ theorem normPushforwardOfFiniteIntegralClosure_apply_eq_symbolValue (hA : ¬ IsF
 > of Stacks 0EAH — `Stacks.Chow.tameSymbolOfFiniteIntegralClosure` — is given on a pair of
 > nonzerodivisors of `A` by the product of the source:
 >
-> `∂_A(a₁, a₂) = ∏_j Norm_{κ(𝔪_j)/κ(𝔪)}((-1)^{e_{1,j} e_{2,j}} u_{1,j}^{e_{2,j}} u_{2,j}^{-e_{1,j}}
->   mod 𝔪_j)^{m_j}`,
+> `∂\_A(a₁, a₂) = ∏\_j Norm\_\{κ(𝔪\_j)/κ(𝔪)}((-1)^\{e\_\{1,j} e\_\{2,j}} u\_\{1,j}^\{e\_\{2,j}} u\_\{2,j}^\{-e\_\{1,j}}
+>   mod 𝔪\_j)^\{m\_j}`,
 >
 > computed from any tame-symbol preparation of the pair over the integral closure. The extension of
 > a symbol on nonzerodivisors to `Q(A)^*` restricts back to it
@@ -222,8 +222,8 @@ theorem tameSymbolOfFiniteIntegralClosure_apply_eq_symbolValue (hA : ¬ IsField 
 > Noetherian local domain `A` that is not a field whose integral closure in its fraction field is
 > module finite, and for any finite family `a` of nonzerodivisors of `A`,
 >
-> `∂_A(a i, a j) = ∏_j Norm_{κ(𝔪_j)/κ(𝔪)}((-1)^{e_{1,j} e_{2,j}} u_{1,j}^{e_{2,j}}
->   u_{2,j}^{-e_{1,j}} mod 𝔪_j)^{m_j}`,
+> `∂\_A(a i, a j) = ∏\_j Norm\_\{κ(𝔪\_j)/κ(𝔪)}((-1)^\{e\_\{1,j} e\_\{2,j}} u\_\{1,j}^\{e\_\{2,j}}
+>   u\_\{2,j}^\{-e\_\{1,j}} mod 𝔪\_j)^\{m\_j}`,
 >
 > the preparation being the canonical one on the integral closure
 > (`Stacks.Chow.integralClosurePreparation`) and the symbol being
@@ -260,8 +260,8 @@ theorem tameSymbolOfFiniteIntegralClosure_eq_symbolValue (hA : ¬ IsField A)
 > and every choice of factorizations `a_i = u_{i, j} π_j ^ {e_{i, j}}` in `B_j` with `u_{i, j}`
 > units and `e_{i, j} ≥ 0` — the data of Stacks 0EAG, bundled as `P` — the tame symbol is
 >
-> `∂_A(a₁, a₂) = ∏_j Norm_{κ(𝔪_j)/κ(𝔪)}((-1)^{e_{1,j} e_{2,j}} u_{1,j}^{e_{2,j}} u_{2,j}^{-e_{1,j}}
->   mod 𝔪_j) ^ {m_j}`,  `m_j = length_{B_j}(B_j / π_j B_j)`,
+> `∂\_A(a₁, a₂) = ∏\_j Norm\_\{κ(𝔪\_j)/κ(𝔪)}((-1)^\{e\_\{1,j} e\_\{2,j}} u\_\{1,j}^\{e\_\{2,j}} u\_\{2,j}^\{-e\_\{1,j}}
+>   mod 𝔪\_j) ^ \{m\_j}`,  `m\_j = length\_\{B\_j}(B\_j / π\_j B\_j)`,
 >
 > the product over the maximal ideals of `B`. The definition `Stacks.Chow.tameSymbolFormula` uses
 > one such choice; that every other choice gives the same element is Stacks 0EAR,
@@ -289,7 +289,7 @@ theorem tameSymbolFormula_eq (hdim : ringKrullDim A = 1) {a₁ a₂ : A}
 
 [Tag 0EAR](https://stacks.math.columbia.edu/tag/0EAR) in the Stacks Project.
 
-**`AlgebraicGeometry.TameSymbolPreparation.symbolValue_eq_of_preparations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Independence.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Independence.lean#L384). The attribute's comment: “both clauses for the whole symbol: the value of the formula of Stacks 0EAQ depends neither on the choice of the local factorizations nor on the choice of B. Two arbitrary extensions B and B' of A, in unrelated universes, each carrying its own preparation of the family, give the same value; the common refinement that compares them is CONSTRUCTED here, by Stacks.Chow.nonempty_commonRefinement, not supposed. The hypotheses are the source's own: A Noetherian local of Krull dimension at most one, and the family not all units, which is the standing context of Stacks 0EAG in which the formula is written. The factorization clause alone, at a single maximal ideal, is Stacks.Chow.factorizationValue_eq_of_factorizations”.
+**`AlgebraicGeometry.TameSymbolPreparation.symbolValue_eq_of_preparations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Independence.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Independence.lean#L384). The attribute's comment: “both clauses for the whole symbol: the value of the formula of Stacks 0EAQ depends neither on the choice of the local factorizations nor on the choice of B. Two arbitrary extensions B and B' of A, in unrelated universes, each carrying its own preparation of the family, give the same value; the common refinement that compares them is CONSTRUCTED here, by Stacks.Chow.nonempty\_commonRefinement, not supposed. The hypotheses are the source's own: A Noetherian local of Krull dimension at most one, and the family not all units, which is the standing context of Stacks 0EAG in which the formula is written. The factorization clause alone, at a single maximal ideal, is Stacks.Chow.factorizationValue\_eq\_of\_factorizations”.
 
 > **Stacks 0EAR.** Let `(A, 𝔪)` be a one-dimensional Noetherian local ring and let `a` be a
 > family of elements of `A`, not all units, admitting a simultaneous power factorization after a
@@ -381,7 +381,7 @@ theorem symbolValue_eq_of_sameExtension
     P.symbolValue i j = P'.symbolValue i j
 ```
 
-**`Stacks.Chow.factorizationValue_eq_of_factorizations_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefinedRefinement.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefinedRefinement.lean#L104). The attribute's comment: “the first clause, at a single maximal ideal and in an ARBITRARY local ring: the value of the formula of Stacks 0EAQ does not depend on the choice of the local factorizations. This is strictly more general than the form the source states -- R is neither Noetherian nor one-dimensional here -- and Stacks.Chow.factorizationValue_eq_of_factorizations, the form at the rings of the source, is this statement specialised to them”.
+**`Stacks.Chow.factorizationValue_eq_of_factorizations_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefinedRefinement.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefinedRefinement.lean#L104). The attribute's comment: “the first clause, at a single maximal ideal and in an ARBITRARY local ring: the value of the formula of Stacks 0EAQ does not depend on the choice of the local factorizations. This is strictly more general than the form the source states -- R is neither Noetherian nor one-dimensional here -- and Stacks.Chow.factorizationValue\_eq\_of\_factorizations, the form at the rings of the source, is this statement specialised to them”.
 
 > **The factorization half of Stacks 0EAR at a single maximal ideal, in an arbitrary local
 > ring.** The same identity as `Stacks.Chow.factorizationValue_eq_of_factorizations`, with `R`
@@ -539,7 +539,7 @@ Declarations registered for the tag:
 
 [Tag 0EAT](https://stacks.math.columbia.edu/tag/0EAT) in the Stacks Project.
 
-**`Stacks.Chow.tameSymbolFormula_eq_finprod_norm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/FormulaTower.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/FormulaTower.lean#L282). The attribute's comment: “the displayed equation for the tame symbol of Stacks 0EAQ on A and on each local ring B_j”.
+**`Stacks.Chow.tameSymbolFormula_eq_finprod_norm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/FormulaTower.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/FormulaTower.lean#L282). The attribute's comment: “the displayed equation for the tame symbol of Stacks 0EAQ on A and on each local ring B\_j”.
 
 > **Stacks 0EAT.** Let `(A, 𝔪)` be a Noetherian local ring of dimension one, let `A ⊆ B` be a
 > finite ring extension with `B / A` annihilated by a power of `𝔪` and `𝔪` not an associated prime
@@ -572,7 +572,7 @@ theorem tameSymbolFormula_eq_finprod_norm (hdim : ringKrullDim A = 1)
             (isRegular_algebraMap_localizationAtPrime hdim hass q hb))
 ```
 
-**`Stacks.Chow.normProd_eq_prod_norm_normProd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Tower.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Tower.lean#L296). The attribute's comment: “the displayed equation, for both symbols read as the recipe of Stacks 0EAQ relative to the common refinement C the statement quantifies over; the non-associated-prime hypothesis of the source is imposed at each stage of the tower, and the correspondence between the maximal ideals of C and those of B is derived here from the semilocalizations rather than assumed. The spelling in which no refinement appears on the right-hand side is Stacks.Chow.normProd_eq_prod_norm_tameSymbol”.
+**`Stacks.Chow.normProd_eq_prod_norm_normProd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Tower.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Tower.lean#L296). The attribute's comment: “the displayed equation, for both symbols read as the recipe of Stacks 0EAQ relative to the common refinement C the statement quantifies over; the non-associated-prime hypothesis of the source is imposed at each stage of the tower, and the correspondence between the maximal ideals of C and those of B is derived here from the semilocalizations rather than assumed. The spelling in which no refinement appears on the right-hand side is Stacks.Chow.normProd\_eq\_prod\_norm\_tameSymbol”.
 
 > **Stacks 0EAT.** Let `(A, 𝔪)` be a one-dimensional Noetherian local ring, let `A ⊆ B` be a
 > finite ring extension with `𝔪` not an associated prime of `B`, and let `B ⊆ C` be a further finite
@@ -920,8 +920,8 @@ theorem map_tameSymbolFormula_pow_eq (hdim : ringKrullDim A = 1) (hdim' : ringKr
 > `B` be a local `A`-algebra along a local homomorphism with `κ(B) / κ(A)` finite, and let
 > `π`, `u ∈ B` with `B / πB` of finite length. Then, writing `T = S ⊗_A B`,
 >
-> `(Norm_{κ(B)/κ(A)}(ū) ^ length_B(B / πB)) ^ m
->   = ∏_𝔮 Norm_{κ(T_𝔮)/κ(S)}(ū) ^ length_{T_𝔮}(T_𝔮 / πT_𝔮)`,
+> `(Norm\_\{κ(B)/κ(A)}(ū) ^ length\_B(B / πB)) ^ m
+>   = ∏\_𝔮 Norm\_\{κ(T\_𝔮)/κ(S)}(ū) ^ length\_\{T\_𝔮}(T\_𝔮 / πT\_𝔮)`,
 >
 > the product running over the maximal ideals of `T` and the left-hand side being read in `κ(S)`
 > through `κ(A) → κ(S)`.

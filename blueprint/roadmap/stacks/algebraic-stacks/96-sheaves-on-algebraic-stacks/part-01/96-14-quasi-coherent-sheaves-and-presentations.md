@@ -87,7 +87,7 @@ def quotientStackQuasicoherentEquivalence :
         (isFiberedInGroupoids_quotientStack G) ≌ Space.QuasicoherentModule C S hS G
 ```
 
-**`AlgebraicGeometry.Stack.quasicoherentEquivalenceGroupoid`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackQuasicoherentEquivalence.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackQuasicoherentEquivalence.lean#L83). The attribute's comment: “the equivalence QCoh(𝒪_{[U/R]}) ≌ QCoh(U, R, s, t, c), with functor ℱ ↦ (x^*ℱ|_{U_étale}, α)”.
+**`AlgebraicGeometry.Stack.quasicoherentEquivalenceGroupoid`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackQuasicoherentEquivalence.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackQuasicoherentEquivalence.lean#L83). The attribute's comment: “the equivalence QCoh(𝒪\_\{[U/R]}) ≌ QCoh(U, R, s, t, c), with functor ℱ ↦ (x^*ℱ|\_\{U\_étale}, α)”.
 
 > For a groupoid `(U, R, s, t, c)` in algebraic spaces, the category of quasi-coherent modules
 > on the quotient stack `[U/R]` is equivalent to the category of quasi-coherent modules on

@@ -94,7 +94,7 @@ abbrev IsCountablyIndexed (X : FppfSheaf B S hS) : Prop
 
 [Tag 0AIK](https://stacks.math.columbia.edu/tag/0AIK) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isAdicStar_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean#L79). The attribute's comment: “noetherian_adic_star”.
+**`AlgebraicGeometry.FormalSpace.isAdicStar_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean#L79). The attribute's comment: “noetherian\_adic\_star”.
 
 > **Stacks 0AIK, item (1).** A Noetherian affine formal algebraic space is adic\*: its
 > presenting ring is adic, and an ideal of definition of a Noetherian ring is finitely
@@ -105,7 +105,7 @@ theorem isAdicStar_of_isNoetherian {X : FppfSheaf B S hS} (hX : IsNoetherian B S
     IsAdicStar B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isAdic_of_isAdicStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean#L91). The attribute's comment: “adic_star_adic”.
+**`AlgebraicGeometry.FormalSpace.isAdic_of_isAdicStar`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean#L91). The attribute's comment: “adic\_star\_adic”.
 
 > **Stacks 0AIK, item (2).** An adic\* affine formal algebraic space is adic: adic\* is
 > adicness of the presenting ring together with the extra demand that some ideal of definition
@@ -116,7 +116,7 @@ theorem isAdic_of_isAdicStar {X : FppfSheaf B S hS} (hX : IsAdicStar B S hS X) :
     IsAdic B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isWeaklyAdic_of_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean#L99). The attribute's comment: “adic_weakly_adic”.
+**`AlgebraicGeometry.FormalSpace.isWeaklyAdic_of_isAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean#L99). The attribute's comment: “adic\_weakly\_adic”.
 
 > **Stacks 0AIK, item (3).** An adic affine formal algebraic space is weakly adic, because
 > an adic linearly topologized ring is weakly adic.
@@ -126,7 +126,7 @@ theorem isWeaklyAdic_of_isAdic {X : FppfSheaf B S hS} (hX : IsAdic B S hS X) :
     IsWeaklyAdic B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isClassical_of_isWeaklyAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean#L107). The attribute's comment: “weakly_adic_classical”.
+**`AlgebraicGeometry.FormalSpace.isClassical_of_isWeaklyAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean#L107). The attribute's comment: “weakly\_adic\_classical”.
 
 > **Stacks 0AIK, item (4).** A weakly adic affine formal algebraic space is classical,
 > because a weakly adic linearly topologized ring is admissible (Stacks 0GXF).
@@ -136,7 +136,7 @@ theorem isClassical_of_isWeaklyAdic {X : FppfSheaf B S hS} (hX : IsWeaklyAdic B 
     IsClassical B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isCountablyIndexed_of_isWeaklyAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean#L125). The attribute's comment: “weakly_adic_countable”.
+**`AlgebraicGeometry.FormalSpace.isCountablyIndexed_of_isWeaklyAdic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/TypeImplications.lean#L125). The attribute's comment: “weakly\_adic\_countable”.
 
 > **Stacks 0AIK, item (5).** A weakly adic affine formal algebraic space is countably
 > indexed.
@@ -154,7 +154,7 @@ theorem isCountablyIndexed_of_isWeaklyAdic {X : FppfSheaf B S hS}
     (hX : IsWeaklyAdic B S hS X) : IsCountablyIndexed B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasSomeSurjectivePresentation_of_isCountablyIndexed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountablyIndexedMcQuillan.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CountablyIndexedMcQuillan.lean#L125). The attribute's comment: “countable_mcquillan”.
+**`AlgebraicGeometry.FormalSpace.hasSomeSurjectivePresentation_of_isCountablyIndexed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountablyIndexedMcQuillan.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CountablyIndexedMcQuillan.lean#L125). The attribute's comment: “countable\_mcquillan”.
 
 > **Stacks Project, Tag 0AIK**, item (6). A countably indexed affine formal algebraic space
 > is McQuillan: it has a presentation by affine thickenings all of whose section-ring projections

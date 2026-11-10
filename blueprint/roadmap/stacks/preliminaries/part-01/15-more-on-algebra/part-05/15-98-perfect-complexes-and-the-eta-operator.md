@@ -163,7 +163,7 @@ public theorem eta_baseChange_of_idealI_isPrincipal
           ((C.baseChange (algebraMap A B)).d i).mulVecLin i
 ```
 
-**`Stacks.Eta.LocallyFreeTerms.etaTermBaseChangeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/LocallyFree.lean, line 1045](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Perfect/LocallyFree.lean#L1045). The attribute's comment: “the canonical isomorphism, degreewise: the comparison map etaTermBaseChangeMap, induced by the ambient comparison, is bijective in every degree. That these degreewise isomorphisms are compatible with the two differentials is ambientBaseChangeMap_comp_fLoc; they are not assembled into one isomorphism of cochain complexes here.”.
+**`Stacks.Eta.LocallyFreeTerms.etaTermBaseChangeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Eta/Perfect/LocallyFree.lean, line 1045](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Eta/Perfect/LocallyFree.lean#L1045). The attribute's comment: “the canonical isomorphism, degreewise: the comparison map etaTermBaseChangeMap, induced by the ambient comparison, is bijective in every degree. That these degreewise isomorphisms are compatible with the two differentials is ambientBaseChangeMap\_comp\_fLoc; they are not assembled into one isomorphism of cochain complexes here.”.
 
 > **[Stacks, Tag 0F7X] in degree `i`, as an isomorphism.** For a ring map `A → B` under which
 > the nonzerodivisor `f` stays a nonzerodivisor, and a bounded complex `M^•` of finite free

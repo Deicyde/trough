@@ -50,7 +50,7 @@ noncomputable def sourceDeRham (A B : Type u) [CommRing A] [CommRing B] [Algebra
     SourceDeRham A B
 ```
 
-**`KaehlerDifferential.deRhamComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/Complex.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DeRham/Complex.lean#L77). The attribute's comment: “the de Rham complex Ω^0_{B/A} → Ω^1_{B/A} → ⋯ of a ring map A → B, as a CochainComplex of A-modules indexed by ℕ; the construction has no hypothesis”.
+**`KaehlerDifferential.deRhamComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/Complex.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DeRham/Complex.lean#L77). The attribute's comment: “the de Rham complex Ω^0\_\{B/A} → Ω^1\_\{B/A} → ⋯ of a ring map A → B, as a CochainComplex of A-modules indexed by ℕ; the construction has no hypothesis”.
 
 > The de Rham complex `Ω^0_{B/A} → Ω^1_{B/A} → Ω^2_{B/A} → ⋯` of `B` over `A`: the exterior
 > powers of `Ω[B⁄A]`, as `A`-modules, with the de Rham differentials as its arrows.  The

@@ -60,7 +60,7 @@ lemma isIso_pullback_snd_fromSpecStalk_of_isBirational
 
 [Tag 01RQ](https://stacks.math.columbia.edu/tag/01RQ) in the Stacks Project.
 
-**`AlgebraicGeometry.localization_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/Localization.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/Localization.lean#L57). The attribute's comment: “localization_birational”.
+**`AlgebraicGeometry.localization_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/Localization.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/Localization.lean#L57). The attribute's comment: “localization\_birational”.
 
 > The localization morphism of spectra is birational: both spectra are irreducible with generic
 > point the zero ideal, and the local rings there agree.
@@ -72,7 +72,7 @@ theorem localization_isBirational (A : Type u) [CommRing A] [IsDomain A]
       (Scheme.Spec.map (CommRingCat.ofHom (algebraMap A (Localization S))).op)
 ```
 
-**`AlgebraicGeometry.exists_nonzero_away_isUnit_of_isIso_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/Localization.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/Localization.lean#L80). The attribute's comment: “localization_open_criterion”.
+**`AlgebraicGeometry.exists_nonzero_away_isUnit_of_isIso_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/Localization.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/Localization.lean#L80). The attribute's comment: “localization\_open\_criterion”.
 
 > If the localization morphism is an isomorphism over a nonempty open, then every denominator
 > already becomes a unit on some nonempty principal open.
@@ -88,7 +88,7 @@ theorem exists_nonzero_away_isUnit_of_isIso_restrict
     ∃ a : A, a ≠ 0 ∧ ∀ s : S, IsUnit (algebraMap A (Localization.Away a) s.1)
 ```
 
-**`AlgebraicGeometry.oddIntegers`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/Localization.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/Localization.lean#L132). The attribute's comment: “integer_counterexample”.
+**`AlgebraicGeometry.oddIntegers`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/Localization.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/Localization.lean#L132). The attribute's comment: “integer\_counterexample”.
 
 > The multiplicative submonoid of odd integers.
 
@@ -96,7 +96,7 @@ theorem exists_nonzero_away_isUnit_of_isIso_restrict
 def oddIntegers : Submonoid ℤ
 ```
 
-**`AlgebraicGeometry.localization_not_isIso_restrict_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/Localization.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/Localization.lean#L140). The attribute's comment: “integer_counterexample”.
+**`AlgebraicGeometry.localization_not_isIso_restrict_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/Localization.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/Localization.lean#L140). The attribute's comment: “integer\_counterexample”.
 
 > The localization of `ℤ` at all odd integers is not an isomorphism over any
 > nonempty open of its target.
@@ -109,7 +109,7 @@ theorem localization_not_isIso_restrict_nonempty
         (CommRingCat.ofHom (algebraMap ℤ (Localization oddIntegers))).op) ∣_ U)
 ```
 
-**`AlgebraicGeometry.PolynomialRetract.retractionMap_comp_inclusionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetract.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetract.lean#L97). The attribute's comment: “ring_maps”.
+**`AlgebraicGeometry.PolynomialRetract.retractionMap_comp_inclusionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetract.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetract.lean#L97). The attribute's comment: “ring\_maps”.
 
 > Setting every `y_a` to zero is a retraction of the canonical inclusion of `k[x]`.
 
@@ -118,7 +118,7 @@ theorem retractionMap_comp_inclusionMap :
     (retractionMap k).comp (inclusionMap k) = RingHom.id (baseRing k)
 ```
 
-**`AlgebraicGeometry.PolynomialRetract.inclusionMap_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetract.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetract.lean#L109). The attribute's comment: “ring_maps”.
+**`AlgebraicGeometry.PolynomialRetract.inclusionMap_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetract.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetract.lean#L109). The attribute's comment: “ring\_maps”.
 
 > The canonical map from `k[x]` to the quotient ring is injective, being a section of the
 > retraction.
@@ -127,7 +127,7 @@ theorem retractionMap_comp_inclusionMap :
 theorem inclusionMap_injective : Function.Injective (inclusionMap k)
 ```
 
-**`AlgebraicGeometry.PolynomialRetract.inclusionMap_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetractBirational.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetractBirational.lean#L185). The attribute's comment: “projection_birational”.
+**`AlgebraicGeometry.PolynomialRetract.inclusionMap_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetractBirational.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetractBirational.lean#L185). The attribute's comment: “projection\_birational”.
 
 > The canonical inclusion `k[x] → B` induces a birational morphism on spectra.
 
@@ -137,7 +137,7 @@ theorem inclusionMap_isBirational (k : Type u) [Field k] :
       (Scheme.Spec.map (CommRingCat.ofHom (inclusionMap k)).op)
 ```
 
-**`AlgebraicGeometry.PolynomialRetract.retraction_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetractBirational.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetractBirational.lean#L209). The attribute's comment: “section_birational”.
+**`AlgebraicGeometry.PolynomialRetract.retraction_isBirational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetractBirational.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetractBirational.lean#L209). The attribute's comment: “section\_birational”.
 
 > The retraction `B → k[x]`, setting every `y_a` to zero, induces a birational morphism on
 > spectra: the section `Spec k[x] ⟶ Spec B` is birational.
@@ -148,7 +148,7 @@ theorem retraction_isBirational (k : Type u) [Field k] :
       (Scheme.Spec.map (CommRingCat.ofHom (retractionMap k)).op)
 ```
 
-**`AlgebraicGeometry.PolynomialRetract.not_isIso_restrict_specMap_inclusionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetractNotIso.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetractNotIso.lean#L59). The attribute's comment: “projection_not_iso”.
+**`AlgebraicGeometry.PolynomialRetract.not_isIso_restrict_specMap_inclusionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetractNotIso.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetractNotIso.lean#L59). The attribute's comment: “projection\_not\_iso”.
 
 > The spectrum of the polynomial retract is not isomorphic to the base over
 > any nonempty open.
@@ -160,7 +160,7 @@ theorem not_isIso_restrict_specMap_inclusionMap
     ¬ IsIso ((Spec.map (CommRingCat.ofHom (inclusionMap k))) ∣_ U)
 ```
 
-**`AlgebraicGeometry.PolynomialRetract.not_isIso_restrict_specMap_retractionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetractNotIso.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetractNotIso.lean#L119). The attribute's comment: “section_not_iso”.
+**`AlgebraicGeometry.PolynomialRetract.not_isIso_restrict_specMap_retractionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetractNotIso.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Examples/PolynomialRetractNotIso.lean#L119). The attribute's comment: “section\_not\_iso”.
 
 > The section induced by the polynomial-ring retraction is not an isomorphism
 > over any nonempty open of the target.

@@ -14,7 +14,7 @@ Section 61.26 of the Stacks Project, [Tag 09AD](https://stacks.math.columbia.edu
 
 [Tag 09AE](https://stacks.math.columbia.edu/tag/09AE) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.Abelian.exists_extensionByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Abelian.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Abelian.lean#L75). The attribute's comment: “extension_by_zero_abelian”. References: SGA 4 IV (11.3.1), “pro-étale site, Ab”.
+**`AlgebraicGeometry.ProEtale.Abelian.exists_extensionByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Abelian.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Abelian.lean#L75). The attribute's comment: “extension\_by\_zero\_abelian”. References: SGA 4 IV (11.3.1), “pro-étale site, Ab”.
 
 > Restriction of abelian pro-étale sheaves has a left adjoint.
 
@@ -25,7 +25,7 @@ theorem exists_extensionByZero {U X : Scheme.{u}} (j : U ⟶ X) [WeaklyEtale j] 
         F ⊣ proetaleRestriction j)
 ```
 
-**`AlgebraicGeometry.ProEtale.Abelian.sheafifiedExtensionByZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Abelian.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Abelian.lean#L109). The attribute's comment: “(2), the functor j_! : Ab(U_proetale) -> Ab(X_proetale) called extension by zero, as explicit data: the sheafification of the left Kan extension along the opposite of postcomposition by j”.
+**`AlgebraicGeometry.ProEtale.Abelian.sheafifiedExtensionByZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Abelian.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Abelian.lean#L109). The attribute's comment: “(2), the functor j\_! : Ab(U\_proetale) -> Ab(X\_proetale) called extension by zero, as explicit data: the sheafification of the left Kan extension along the opposite of postcomposition by j”.
 
 > Extension by zero of abelian sheaves on the small pro-étale site, as an explicit functor:
 > the composite of the inclusion of sheaves into presheaves, left Kan extension along the
@@ -37,7 +37,7 @@ def sheafifiedExtensionByZero {U X : Scheme.{u}} (j : U ⟶ X) [WeaklyEtale j] :
       Sheaf (Scheme.ProEt.topology X) AddCommGrpCat.{max (u + 1) v}
 ```
 
-**`AlgebraicGeometry.ProEtale.Abelian.sheafifiedExtensionByZeroAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Abelian.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Abelian.lean#L121). The attribute's comment: “(2), the adjunction j_! ⊣ j^{-1} on abelian sheaves, witnessing that restriction along a weakly étale morphism has extension by zero as a left adjoint”.
+**`AlgebraicGeometry.ProEtale.Abelian.sheafifiedExtensionByZeroAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Abelian.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Abelian.lean#L121). The attribute's comment: “(2), the adjunction j\_! ⊣ j^\{-1} on abelian sheaves, witnessing that restriction along a weakly étale morphism has extension by zero as a left adjoint”.
 
 > The explicit extension-by-zero functor is left adjoint to restriction.
 
@@ -46,7 +46,7 @@ def sheafifiedExtensionByZeroAdjunction {U X : Scheme.{u}} (j : U ⟶ X) [Weakly
     sheafifiedExtensionByZero.{u, v} j ⊣ proetaleRestriction.{u, v} j
 ```
 
-**`AlgebraicGeometry.ProEtale.Modules.exists_extensionByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Modules.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Modules.lean#L154). The attribute's comment: “extension_by_zero_modules”. References: SGA 4 IV (11.3.1), “pro-étale, Λ-modules”.
+**`AlgebraicGeometry.ProEtale.Modules.exists_extensionByZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Modules.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Modules.lean#L154). The attribute's comment: “extension\_by\_zero\_modules”. References: SGA 4 IV (11.3.1), “pro-étale, Λ-modules”.
 
 > Restriction of pro-étale module sheaves has a left adjoint.
 
@@ -58,7 +58,7 @@ theorem exists_extensionByZero {U X : Scheme.{u}} (j : U ⟶ X) [WeaklyEtale j]
         F ⊣ proetaleRestriction j Λ)
 ```
 
-**`AlgebraicGeometry.ProEtale.Modules.sheafifiedExtensionByZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Modules.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Modules.lean#L195). The attribute's comment: “(3), the functor j_! : Mod(U_proetale, Λ) -> Mod(X_proetale, Λ) called extension by zero, as explicit data: the sheafification of the left Kan extension along the opposite of postcomposition by j”.
+**`AlgebraicGeometry.ProEtale.Modules.sheafifiedExtensionByZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Modules.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Modules.lean#L195). The attribute's comment: “(3), the functor j\_! : Mod(U\_proetale, Λ) -> Mod(X\_proetale, Λ) called extension by zero, as explicit data: the sheafification of the left Kan extension along the opposite of postcomposition by j”.
 
 > Extension by zero of pro-étale sheaves of `Λ`-modules, as an explicit functor: the
 > composite of the inclusion of sheaves into presheaves, left Kan extension along the opposite
@@ -71,7 +71,7 @@ def sheafifiedExtensionByZero {U X : Scheme.{u}} (j : U ⟶ X) [WeaklyEtale j]
       Sheaf (Scheme.ProEt.topology X) (ModuleCat.{max (u + 1) w} Λ)
 ```
 
-**`AlgebraicGeometry.ProEtale.Modules.sheafifiedExtensionByZeroAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Modules.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Modules.lean#L208). The attribute's comment: “(3), the adjunction j_! ⊣ j^{-1} on sheaves of Λ-modules, witnessing that restriction along a weakly étale morphism has extension by zero as a left adjoint”.
+**`AlgebraicGeometry.ProEtale.Modules.sheafifiedExtensionByZeroAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Modules.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Modules.lean#L208). The attribute's comment: “(3), the adjunction j\_! ⊣ j^\{-1} on sheaves of Λ-modules, witnessing that restriction along a weakly étale morphism has extension by zero as a left adjoint”.
 
 > The explicit extension-by-zero functor is left adjoint to restriction.
 
@@ -81,7 +81,7 @@ def sheafifiedExtensionByZeroAdjunction {U X : Scheme.{u}} (j : U ⟶ X) [Weakly
     sheafifiedExtensionByZero.{u, v, w} j Λ ⊣ proetaleRestriction.{u, v, w} j Λ
 ```
 
-**`AlgebraicGeometry.ProEtale.Sets.extensionByZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Sets.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Sets.lean#L56). The attribute's comment: “extension_by_zero_sets”.
+**`AlgebraicGeometry.ProEtale.Sets.extensionByZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Sets.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Sets.lean#L56). The attribute's comment: “extension\_by\_zero\_sets”.
 
 > Extension by zero of sheaves of sets along a weakly étale morphism.
 
@@ -91,7 +91,7 @@ def extensionByZero {U X : Scheme.{u}} (j : U ⟶ X) [WeaklyEtale j] :
       Sheaf (Scheme.ProEt.topology X) (Type (max (u + 1) v))
 ```
 
-**`AlgebraicGeometry.ProEtale.Sets.extensionByZeroAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Sets.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Sets.lean#L66). The attribute's comment: “extension_by_zero_sets”.
+**`AlgebraicGeometry.ProEtale.Sets.extensionByZeroAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Sets.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/Sets.lean#L66). The attribute's comment: “extension\_by\_zero\_sets”.
 
 > Extension by zero is left adjoint to restriction.
 
@@ -104,7 +104,7 @@ def extensionByZeroAdjunction {U X : Scheme.{u}} (j : U ⟶ X) [WeaklyEtale j] :
 
 [Tag 09AF](https://stacks.math.columbia.edu/tag/09AF) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.epsilonInverseImageExtensionByZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/EtaleComparison.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/EtaleComparison.lean#L133). The attribute's comment: “the natural isomorphism eps^{-1} j_! = j_! eps^{-1}”.
+**`AlgebraicGeometry.ProEtale.epsilonInverseImageExtensionByZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/EtaleComparison.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/EtaleComparison.lean#L133). The attribute's comment: “the natural isomorphism eps^\{-1} j\_! = j\_! eps^\{-1}”.
 
 > **Stacks Tag 09AF.** For an étale morphism `j : U ⟶ X`, pulling back along the comparison
 > morphism `ε` of the small pro-étale and small étale sites commutes with extension by zero:
@@ -117,7 +117,7 @@ def epsilonInverseImageExtensionByZeroIso :
       epsilonInverseImage.{u, v} U ⋙ Abelian.extensionByZero.{u, v} j
 ```
 
-**`AlgebraicGeometry.ProEtale.epsilonInverseImageExtensionByZeroObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/EtaleComparison.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/EtaleComparison.lean#L145). The attribute's comment: “at an abelian sheaf G on U_etale: eps^{-1} j_! G = j_! eps^{-1} G”.
+**`AlgebraicGeometry.ProEtale.epsilonInverseImageExtensionByZeroObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/EtaleComparison.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/EtaleComparison.lean#L145). The attribute's comment: “at an abelian sheaf G on U\_etale: eps^\{-1} j\_! G = j\_! eps^\{-1} G”.
 
 > **Stacks Tag 09AF**, evaluated at an abelian sheaf `G` on `U_étale`:
 > `ε^{-1} j_! G = j_! ε^{-1} G` as abelian sheaves on `X_proétale`.  This is the form in which the
@@ -177,7 +177,7 @@ theorem extensionByZero_fullyFaithful_sets {U X : Scheme.{u}}
     Nonempty (Sets.extensionByZero.{u, v} j).FullyFaithful
 ```
 
-**`AlgebraicGeometry.ProEtale.directImage_counit_isIso_sets`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenImmersion.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenImmersion.lean#L316). The attribute's comment: “sets: direct-image counit”. References: SGA 4 I (5.7), “u_* half, sheaves of”.
+**`AlgebraicGeometry.ProEtale.directImage_counit_isIso_sets`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenImmersion.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenImmersion.lean#L316). The attribute's comment: “sets: direct-image counit”. References: SGA 4 I (5.7), “u\_* half, sheaves of”.
 
 > The direct-image counit for sheaves of sets along an open immersion
 > is a natural isomorphism.
@@ -233,7 +233,7 @@ theorem exists_directImage_abelian {U X : Scheme.{u}}
       Abelian.proetaleRestriction j ⊣ R)
 ```
 
-**`AlgebraicGeometry.ProEtale.directImage_counit_isIso_abelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenImmersion.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenImmersion.lean#L401). The attribute's comment: “abelian: direct-image counit”. References: SGA 4 I (5.7), “u_* half, pro-étale”.
+**`AlgebraicGeometry.ProEtale.directImage_counit_isIso_abelian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenImmersion.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenImmersion.lean#L401). The attribute's comment: “abelian: direct-image counit”. References: SGA 4 I (5.7), “u\_* half, pro-étale”.
 
 > The counit of restriction and any of its right adjoints is invertible.
 
@@ -292,7 +292,7 @@ theorem exists_directImage_modules {U X : Scheme.{u}}
       Modules.proetaleRestriction j Λ ⊣ R)
 ```
 
-**`AlgebraicGeometry.ProEtale.directImage_counit_isIso_modules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenImmersion.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenImmersion.lean#L453). The attribute's comment: “modules: direct-image counit”. References: SGA 4 I (5.7), “u_* half, Λ-modules”.
+**`AlgebraicGeometry.ProEtale.directImage_counit_isIso_modules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenImmersion.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenImmersion.lean#L453). The attribute's comment: “modules: direct-image counit”. References: SGA 4 I (5.7), “u\_* half, Λ-modules”.
 
 > The counit of restriction and any of its right adjoints is invertible.
 
@@ -322,7 +322,7 @@ theorem directImage_fullyFaithful_modules {U X : Scheme.{u}}
 
 [Tag 09AH](https://stacks.math.columbia.edu/tag/09AH) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.hasEnoughObjects_openPart_or_closedFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean, line 761](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean#L761). The attribute's comment: “the geometric reduction of the source's proof: quasi-compactness of j splits every affine weakly contractible object of X_proetale into a part lying over U and the ind-Zariski localization along its closed fibre”.
+**`AlgebraicGeometry.ProEtale.hasEnoughObjects_openPart_or_closedFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean, line 761](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean#L761). The attribute's comment: “the geometric reduction of the source's proof: quasi-compactness of j splits every affine weakly contractible object of X\_proetale into a part lying over U and the ind-Zariski localization along its closed fibre”.
 
 > **Stacks 09AH, the geometric reduction.** For a closed immersion `i` and its complementary
 > quasi-compact open immersion `j`, every object of `X_proétale` is covered by objects which are
@@ -343,7 +343,7 @@ theorem hasEnoughObjects_openPart_or_closedFibre {Z U X : Scheme.{u}} (i : Z ⟶
           Specializes x ((pullback.fst V.hom i).base z)))
 ```
 
-**`AlgebraicGeometry.ProEtale.openClosedShortComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean, line 884](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean#L884). The attribute's comment: “the two canonical maps j_! j^{-1} F -> F -> i_* i^{-1} F and the fact that they compose to zero, i.e. the short complex of the tag; its short exactness is NOT proved here, see shortExact_openClosedShortComplex_of_isIso_unit_app”.
+**`AlgebraicGeometry.ProEtale.openClosedShortComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean, line 884](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean#L884). The attribute's comment: “the two canonical maps j\_! j^\{-1} F -> F -> i\_* i^\{-1} F and the fact that they compose to zero, i.e. the short complex of the tag; its short exactness is NOT proved here, see shortExact\_openClosedShortComplex\_of\_isIso\_unit\_app”.
 
 > **Stacks 09AH.** The canonical short complex `j_! j^{-1} F ⟶ F ⟶ i_* i^{-1} F` on the small
 > pro-étale site of `X`, for a closed subscheme `i : Z ⟶ X` and the inclusion `j : U ⟶ X` of its
@@ -359,7 +359,7 @@ def openClosedShortComplex
     ShortComplex (Sheaf (Scheme.ProEt.topology X) AddCommGrpCat.{max (u + 1) v})
 ```
 
-**`AlgebraicGeometry.ProEtale.shortExact_map_proetaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean, line 915](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean#L915). The attribute's comment: “exactness over the open part only: the restriction to U of the canonical short complex is short exact, unconditionally. Short exactness of the sequence on X_proetale itself is NOT proved in this file: shortExact_openClosedShortComplex_of_isIso_unit_app proves it at the source's hypotheses but assumes Tag 09AC for the site of AlgebraicGeometry.Scheme.ProEt, namely that the unit F -> i_* i^{-1} F is invertible on sections over every affine weakly contractible object all of whose points specialize into its closed fibre”.
+**`AlgebraicGeometry.ProEtale.shortExact_map_proetaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean, line 915](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean#L915). The attribute's comment: “exactness over the open part only: the restriction to U of the canonical short complex is short exact, unconditionally. Short exactness of the sequence on X\_proetale itself is NOT proved in this file: shortExact\_openClosedShortComplex\_of\_isIso\_unit\_app proves it at the source's hypotheses but assumes Tag 09AC for the site of AlgebraicGeometry.Scheme.ProEt, namely that the unit F -> i\_* i^\{-1} F is invertible on sections over every affine weakly contractible object all of whose points specialize into its closed fibre”.
 
 > **Stacks 09AH, over the open part.** Restricted to `U`, the short complex of the tag is
 > short exact, and indeed split: its third term vanishes over `U` and its first map becomes

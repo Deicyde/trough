@@ -110,7 +110,7 @@ abbrev chowGroup (C : ChowSituation.{u}) {X : Scheme.{u}} (p : X ⟶ C.S)
 
 [Tag 0GU3](https://stacks.math.columbia.edu/tag/0GU3) in the Stacks Project.
 
-**`Stacks.Chow.pointwiseDivisorDifferential`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean#L465). The attribute's comment: “pointwise_divisor_differential”.
+**`Stacks.Chow.pointwiseDivisorDifferential`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean#L465). The attribute's comment: “pointwise\_divisor\_differential”.
 
 > **Stacks 0GU3.** The divisor differential from pointwise Milnor K₁-chains at the points of
 > relative dimension `k + 1` to pointwise Milnor K₀-chains at the points of relative dimension `k`:
@@ -123,7 +123,7 @@ def pointwiseDivisorDifferential (k : ℤ) :
     PointwiseKOneGroup C p k →+ PointwiseCycleGroup C p k
 ```
 
-**`Stacks.Chow.pointwiseDivisorDifferential_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean#L474). The attribute's comment: “pointwise_divisor_differential”.
+**`Stacks.Chow.pointwiseDivisorDifferential_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean#L474). The attribute's comment: “pointwise\_divisor\_differential”.
 
 > **Stacks 0GU3.** The divisor differential satisfies the coordinatewise divisor formula.
 
@@ -132,7 +132,7 @@ theorem pointwiseDivisorDifferential_spec (k : ℤ) :
     IsPointwiseDivisorDifferential C p k (pointwiseDivisorDifferential C p k)
 ```
 
-**`Stacks.Chow.exists_pointwiseDivisorDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean#L487). The attribute's comment: “pointwise_divisor_differential”.
+**`Stacks.Chow.exists_pointwiseDivisorDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/PointwiseDivisor.lean#L487). The attribute's comment: “pointwise\_divisor\_differential”.
 
 > **Stacks 0GU3.** There is a homomorphism from pointwise Milnor K₁-chains to pointwise Milnor
 > K₀-chains satisfying the coordinatewise divisor formula.

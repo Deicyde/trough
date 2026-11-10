@@ -44,7 +44,7 @@ Declarations registered for the tag:
 
 [Tag 03QR](https://stacks.math.columbia.edu/tag/03QR) in the Stacks Project.
 
-**`AlgebraicGeometry.etaleEquivalenceContinuousGSet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/SchemesEtalePoint/Basic.lean, line 1378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/SchemesEtalePoint/Basic.lean#L1378). References: SGA 3 VIIB (2.5), “k a field”; SGA 4 VIII (2.1), “X_ét ≌ B_π”.
+**`AlgebraicGeometry.etaleEquivalenceContinuousGSet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/SchemesEtalePoint/Basic.lean, line 1378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/SchemesEtalePoint/Basic.lean#L1378). References: SGA 3 VIIB (2.5), “k a field”; SGA 4 VIII (2.1), “X\_ét ≌ B\_π”.
 
 > If `L` is a separable closure of `K`, schemes étale over `K` are
 > equivalent to discrete continuous `Gal(L/K)`-sets. The underlying set of the

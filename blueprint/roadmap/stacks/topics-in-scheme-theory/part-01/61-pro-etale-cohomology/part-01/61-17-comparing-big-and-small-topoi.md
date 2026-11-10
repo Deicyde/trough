@@ -14,7 +14,7 @@ Section 61.17 of the Stacks Project, [Tag 0F66](https://stacks.math.columbia.edu
 
 [Tag 0F67](https://stacks.math.columbia.edu/tag/0F67) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.injective_smallProetaleInverseImage`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Injectives.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Injectives.lean#L81). The attribute's comment: “injective_pullback_t”.
+**`AlgebraicGeometry.ProEtale.injective_smallProetaleInverseImage`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Injectives.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Injectives.lean#L81). The attribute's comment: “injective\_pullback\_t”.
 
 > Inverse image to the small pro-étale site of `T` preserves injective
 > abelian sheaves on the big pro-étale site over `S`.
@@ -29,7 +29,7 @@ public lemma injective_smallProetaleInverseImage
       (BigProetaleOver.topology B S.obj S.property)).obj I)
 ```
 
-**`AlgebraicGeometry.ProEtale.injective_smallProetaleRestriction`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Injectives.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Injectives.lean#L108). The attribute's comment: “injective_restriction_s”.
+**`AlgebraicGeometry.ProEtale.injective_smallProetaleRestriction`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Injectives.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Injectives.lean#L108). The attribute's comment: “injective\_restriction\_s”.
 
 > Restricting an injective abelian sheaf from the big pro-étale site over `S`
 > to the small pro-étale site of `S` preserves injectivity.
@@ -44,7 +44,7 @@ public lemma injective_smallProetaleRestriction
       (BigProetaleOver.topology B S hS)).obj I)
 ```
 
-**`AlgebraicGeometry.ProEtale.isKInjective_smallProetaleInverseImage`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Injectives.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Injectives.lean#L133). The attribute's comment: “kinjective_pullback_t”.
+**`AlgebraicGeometry.ProEtale.isKInjective_smallProetaleInverseImage`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Injectives.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Injectives.lean#L133). The attribute's comment: “kinjective\_pullback\_t”.
 
 > The inverse image of a K-injective complex of abelian sheaves from the big
 > pro-étale site over `S` to the small pro-étale site of `T` is K-injective.
@@ -62,7 +62,7 @@ public lemma isKInjective_smallProetaleInverseImage
           (ComplexShape.up ℤ)).obj I)
 ```
 
-**`AlgebraicGeometry.ProEtale.isKInjective_smallProetaleRestriction`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Injectives.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Injectives.lean#L155). The attribute's comment: “kinjective_restriction_s”.
+**`AlgebraicGeometry.ProEtale.isKInjective_smallProetaleRestriction`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Injectives.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Injectives.lean#L155). The attribute's comment: “kinjective\_restriction\_s”.
 
 > Restricting a K-injective complex from the big pro-étale site over `S`
 > to the small pro-étale site of `S` preserves K-injectivity.
@@ -84,7 +84,7 @@ public lemma isKInjective_smallProetaleRestriction
 
 [Tag 0F68](https://stacks.math.columbia.edu/tag/0F68) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.bigSmallDerivedPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedPushforward.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedPushforward.lean#L270). The attribute's comment: “big_small_direct_image”.
+**`AlgebraicGeometry.ProEtale.bigSmallDerivedPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedPushforward.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedPushforward.lean#L270). The attribute's comment: “big\_small\_direct\_image”.
 
 > Restricting the derived direct image along `f` on the big pro-étale sites to the small
 > pro-étale site of `S` is naturally isomorphic to taking the derived direct image along `f` on the
@@ -108,7 +108,7 @@ public noncomputable def bigSmallDerivedPushforwardIso
       (restrict B T).mapDerivedCategory ⋙ Rsmall
 ```
 
-**`AlgebraicGeometry.ProEtale.derivedBigPushforwardSmallBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedPushforwardBaseChange.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedPushforwardBaseChange.lean#L244). The attribute's comment: “base_changed_small_direct_image”.
+**`AlgebraicGeometry.ProEtale.derivedBigPushforwardSmallBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedPushforwardBaseChange.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedPushforwardBaseChange.lean#L244). The attribute's comment: “base\_changed\_small\_direct\_image”.
 
 > The derived big direct image restricted to the small site of `S'` agrees
 > naturally with small direct image after restriction to `T'`.
@@ -132,7 +132,7 @@ public noncomputable def derivedBigPushforwardSmallBaseChangeIso
       (restriction g').mapDerivedCategory ⋙ RFsmall
 ```
 
-**`AlgebraicGeometry.ProEtale.derivedBigPushforwardBigBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedPushforwardBaseChange.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedPushforwardBaseChange.lean#L341). The attribute's comment: “base_changed_big_direct_image”.
+**`AlgebraicGeometry.ProEtale.derivedBigPushforwardBigBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedPushforwardBaseChange.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedPushforwardBaseChange.lean#L341). The attribute's comment: “base\_changed\_big\_direct\_image”.
 
 > The derived big direct image along `f`, pulled back to the big pro-étale site over `S'`,
 > agrees naturally with the derived big direct image along `f'` of the pullback to the big

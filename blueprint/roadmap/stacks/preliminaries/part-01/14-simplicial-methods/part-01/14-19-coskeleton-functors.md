@@ -73,7 +73,7 @@ theorem map_eq_coskConeIsLimit_lift {m : ℕ} (U : SimplicialObject.Truncated C 
 
 [Tag 0181](https://stacks.math.columbia.edu/tag/0181) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.coskAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean#L93). The attribute's comment: “the displayed bijection, for `cosk_m` itself”. References: SGA 4 V (7.1.0), “adjunction i_n* ⊣ i_{n*}”; SGA 4 Vbis (3.0.1).
+**`CategoryTheory.SimplicialObject.Truncated.coskAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/LimitFormula.lean#L93). The attribute's comment: “the displayed bijection, for `cosk_m` itself”. References: SGA 4 V (7.1.0), “adjunction i\_n* ⊣ i\_\{n*}”; SGA 4 Vbis (3.0.1).
 
 > **The bijection `Mor(U, cosk_m V) = Mor(sk_m U, V)`** of [Stacks, Equation 0181], over a
 > category with finite limits: the coskeleton functor is right adjoint to the skeleton functor, an
@@ -348,7 +348,7 @@ public theorem nonempty_truncCoskAdj_and_isIso_coskAdj_unit_app {n m : ℕ} (h :
 
 [Tag 09VS](https://stacks.math.columbia.edu/tag/09VS) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.hasPointwiseRightKanExtension_of_hasBinaryProducts_or_hasFiniteConnectedLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean, line 769](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean#L769). The attribute's comment: “the two items of the remark, as the two conjuncts; "cosk_k exists" is spelled as the existence of the pointwise right Kan extensions along `(Δ_{≤k} ⊆ Δ)ᵒᵖ` that define `Truncated.cosk k`, and each hypothesis is an antecedent of its own item so that item (1) stays a claim about categories with products of pairs alone”. References: SGA 4 Vbis (3.0.1), “more general”.
+**`CategoryTheory.SimplicialObject.Truncated.hasPointwiseRightKanExtension_of_hasBinaryProducts_or_hasFiniteConnectedLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean, line 769](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal/Existence.lean#L769). The attribute's comment: “the two items of the remark, as the two conjuncts; "cosk\_k exists" is spelled as the existence of the pointwise right Kan extensions along `(Δ_{≤k} ⊆ Δ)ᵒᵖ` that define `Truncated.cosk k`, and each hypothesis is an antecedent of its own item so that item (1) stays a claim about categories with products of pairs alone”. References: SGA 4 Vbis (3.0.1), “more general”.
 
 > Let `C` be a category.
 >
@@ -414,7 +414,7 @@ public instance cosk.preservesLimitsOfSize (n : ℕ)
 
 [Tag 08NJ](https://stacks.math.columbia.edu/tag/08NJ) in the Stacks Project.
 
-**`CategoryTheory.Over.preservesPointwiseRightKanExtensions_forget_inclusion_succ_op`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 767](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L767). The attribute's comment: “stated as preservation of the pointwise right Kan extensions along `(Δ_{≤m} ⊆ Δ)ᵒᵖ`, which is what "cosk_m computed in C/X is computed in C" says with the comparison map pinned; the source's finite limits in `C` are not needed”.
+**`CategoryTheory.Over.preservesPointwiseRightKanExtensions_forget_inclusion_succ_op`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean, line 767](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Coskeletal.lean#L767). The attribute's comment: “stated as preservation of the pointwise right Kan extensions along `(Δ_{≤m} ⊆ Δ)ᵒᵖ`, which is what "cosk\_m computed in C/X is computed in C" says with the comparison map pinned; the source's finite limits in `C` are not needed”.
 
 > **Stacks 08NJ**.
 > For a category `C` and an object `X : C`, the forgetful functor `Over.forget X : C/X ⥤ C` commutes

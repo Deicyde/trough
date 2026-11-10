@@ -185,7 +185,7 @@ public theorem normalization_baseChange_henselization (X : Scheme.{u}) [IsLocall
           (finite_irreducibleComponents_of_isCompact (Spec (.of Ah)))))
 ```
 
-**`AlgebraicGeometry.normalization_baseChange_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Henselization.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Henselization.lean#L313). The attribute's comment: “strict_henselization”.
+**`AlgebraicGeometry.normalization_baseChange_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Henselization.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/Henselization.lean#L313). The attribute's comment: “strict\_henselization”.
 
 > The base change of the normalization morphism of a locally Noetherian scheme `X` to the
 > spectrum of a strict henselization of the local ring of `X` at a point is the normalization

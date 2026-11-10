@@ -14,7 +14,7 @@ Section 59.49 of the Stacks Project, [Tag 04CB](https://stacks.math.columbia.edu
 
 [Tag 04CC](https://stacks.math.columbia.edu/tag/04CC) in the Stacks Project.
 
-**`AlgebraicGeometry.bigZariskiLowerShriek_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L99). The attribute's comment: “abelian_lower_shriek_exact”.
+**`AlgebraicGeometry.bigZariskiLowerShriek_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L99). The attribute's comment: “abelian\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(1), Zariski case.** Lower shriek on big Zariski abelian sheaves preserves
 > finite limits.
@@ -27,7 +27,7 @@ public theorem bigZariskiLowerShriek_preservesFiniteLimits
       (BigZariskiOver.topology B S.1 S.property))
 ```
 
-**`AlgebraicGeometry.bigZariskiLowerShriek_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L109). The attribute's comment: “abelian_lower_shriek_exact”.
+**`AlgebraicGeometry.bigZariskiLowerShriek_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L109). The attribute's comment: “abelian\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(1), Zariski case.** Lower shriek on big Zariski abelian sheaves preserves
 > finite colimits.
@@ -40,7 +40,7 @@ public theorem bigZariskiLowerShriek_preservesFiniteColimits
       (BigZariskiOver.topology B S.1 S.property))
 ```
 
-**`AlgebraicGeometry.bigEtaleLowerShriek_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L119). The attribute's comment: “abelian_lower_shriek_exact”.
+**`AlgebraicGeometry.bigEtaleLowerShriek_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L119). The attribute's comment: “abelian\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(1), étale case.** Lower shriek on big étale abelian sheaves preserves
 > finite limits.
@@ -53,7 +53,7 @@ public theorem bigEtaleLowerShriek_preservesFiniteLimits
       (BigEtaleOver.topology B S.obj S.property))
 ```
 
-**`AlgebraicGeometry.bigEtaleLowerShriek_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L129). The attribute's comment: “abelian_lower_shriek_exact”.
+**`AlgebraicGeometry.bigEtaleLowerShriek_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L129). The attribute's comment: “abelian\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(1), étale case.** Lower shriek on big étale abelian sheaves preserves
 > finite colimits.
@@ -66,7 +66,7 @@ public theorem bigEtaleLowerShriek_preservesFiniteColimits
       (BigEtaleOver.topology B S.obj S.property))
 ```
 
-**`AlgebraicGeometry.bigFppfLowerShriek_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L139). The attribute's comment: “abelian_lower_shriek_exact”.
+**`AlgebraicGeometry.bigFppfLowerShriek_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L139). The attribute's comment: “abelian\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(1), fppf case.** Lower shriek on big fppf abelian sheaves preserves
 > finite limits.
@@ -78,7 +78,7 @@ public theorem bigFppfLowerShriek_preservesFiniteLimits
       (B.topology.over T) (B.topology.over S))
 ```
 
-**`AlgebraicGeometry.bigFppfLowerShriek_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L148). The attribute's comment: “abelian_lower_shriek_exact”.
+**`AlgebraicGeometry.bigFppfLowerShriek_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L148). The attribute's comment: “abelian\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(1), fppf case.** Lower shriek on big fppf abelian sheaves preserves
 > finite colimits.
@@ -90,7 +90,7 @@ public theorem bigFppfLowerShriek_preservesFiniteColimits
       (B.topology.over T) (B.topology.over S))
 ```
 
-**`AlgebraicGeometry.bigSmoothLowerShriek_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L157). The attribute's comment: “abelian_lower_shriek_exact”.
+**`AlgebraicGeometry.bigSmoothLowerShriek_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L157). The attribute's comment: “abelian\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(1), smooth case.** Lower shriek on big smooth abelian sheaves preserves
 > finite limits.
@@ -103,7 +103,7 @@ public theorem bigSmoothLowerShriek_preservesFiniteLimits
       (BigSmoothOver.topology B S.1 S.2))
 ```
 
-**`AlgebraicGeometry.bigSmoothLowerShriek_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L167). The attribute's comment: “abelian_lower_shriek_exact”.
+**`AlgebraicGeometry.bigSmoothLowerShriek_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L167). The attribute's comment: “abelian\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(1), smooth case.** Lower shriek on big smooth abelian sheaves preserves
 > finite colimits.
@@ -116,7 +116,7 @@ public theorem bigSmoothLowerShriek_preservesFiniteColimits
       (BigSmoothOver.topology B S.1 S.2))
 ```
 
-**`AlgebraicGeometry.bigSyntomicLowerShriek_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L177). The attribute's comment: “abelian_lower_shriek_exact”.
+**`AlgebraicGeometry.bigSyntomicLowerShriek_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L177). The attribute's comment: “abelian\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(1), syntomic case.** Lower shriek on big syntomic abelian sheaves preserves
 > finite limits.
@@ -129,7 +129,7 @@ public theorem bigSyntomicLowerShriek_preservesFiniteLimits
       (BigSyntomicOver.topology B S.1 S.2))
 ```
 
-**`AlgebraicGeometry.bigSyntomicLowerShriek_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L187). The attribute's comment: “abelian_lower_shriek_exact”.
+**`AlgebraicGeometry.bigSyntomicLowerShriek_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L187). The attribute's comment: “abelian\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(1), syntomic case.** Lower shriek on big syntomic abelian sheaves preserves
 > finite colimits.
@@ -142,7 +142,7 @@ public theorem bigSyntomicLowerShriek_preservesFiniteColimits
       (BigSyntomicOver.topology B S.1 S.2))
 ```
 
-**`AlgebraicGeometry.bigZariskiInverseImageRing_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L103). The attribute's comment: “module_lower_shriek_inverse_image_structure_sheaf”.
+**`AlgebraicGeometry.bigZariskiInverseImageRing_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L103). The attribute's comment: “module\_lower\_shriek\_inverse\_image\_structure\_sheaf”.
 
 > **Stacks 04CC(2), Zariski case.** The inverse image of the structure sheaf of the big
 > Zariski site over `S` is the structure sheaf of the big Zariski site over `T`.
@@ -156,7 +156,7 @@ public theorem bigZariskiInverseImageRing_eq :
       BigZariskiOver.structureSheaf B T.1 T.property
 ```
 
-**`AlgebraicGeometry.bigZariskiLowerShriekModulesAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L134). The attribute's comment: “module_lower_shriek_adjunction”.
+**`AlgebraicGeometry.bigZariskiLowerShriekModulesAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L134). The attribute's comment: “module\_lower\_shriek\_adjunction”.
 
 > **Stacks 04CC(2), Zariski case.** `f_big^*` on sheaves of modules of the big Zariski sites
 > has `f_big!` as a left adjoint.
@@ -166,7 +166,7 @@ public def bigZariskiLowerShriekModulesAdjunction :
     bigZariskiLowerShriekModules B T S f ⊣ bigZariskiInverseImageModules B T S f
 ```
 
-**`AlgebraicGeometry.bigZariskiLowerShriekModulesToSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L145). The attribute's comment: “module_lower_shriek_agrees_on_abelian_sheaves”.
+**`AlgebraicGeometry.bigZariskiLowerShriekModulesToSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L145). The attribute's comment: “module\_lower\_shriek\_agrees\_on\_abelian\_sheaves”.
 
 > **Stacks 04CC(2), Zariski case.** The two `f_big!` agree on underlying sheaves of abelian
 > groups: the underlying abelian sheaf of `f_big! M` is `f_big!` of the underlying abelian sheaf
@@ -182,7 +182,7 @@ public def bigZariskiLowerShriekModulesToSheafIso :
         SheafOfModules.toSheaf.{u + 1} (BigZariskiOver.structureSheaf B S.1 S.property)
 ```
 
-**`AlgebraicGeometry.bigZariskiLowerShriekModules_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L161). The attribute's comment: “module_lower_shriek_exact”.
+**`AlgebraicGeometry.bigZariskiLowerShriekModules_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L161). The attribute's comment: “module\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(2), Zariski case.** `f_big!` on sheaves of modules of the big Zariski sites
 > preserves finite limits.  Lower shriek on abelian sheaves does, and forgetting the module
@@ -193,7 +193,7 @@ public theorem bigZariskiLowerShriekModules_preservesFiniteLimits :
     PreservesFiniteLimits (bigZariskiLowerShriekModules B T S f)
 ```
 
-**`AlgebraicGeometry.bigZariskiLowerShriekModules_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L171). The attribute's comment: “module_lower_shriek_exact”.
+**`AlgebraicGeometry.bigZariskiLowerShriekModules_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L171). The attribute's comment: “module\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(2), Zariski case.** `f_big!` on sheaves of modules of the big Zariski sites
 > preserves finite colimits: it is a left adjoint.
@@ -203,7 +203,7 @@ public theorem bigZariskiLowerShriekModules_preservesFiniteColimits :
     PreservesFiniteColimits (bigZariskiLowerShriekModules B T S f)
 ```
 
-**`AlgebraicGeometry.bigEtaleInverseImageRing_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L189). The attribute's comment: “module_lower_shriek_inverse_image_structure_sheaf”.
+**`AlgebraicGeometry.bigEtaleInverseImageRing_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L189). The attribute's comment: “module\_lower\_shriek\_inverse\_image\_structure\_sheaf”.
 
 > **Stacks 04CC(2), étale case.** The inverse image of the structure sheaf of the big étale
 > site over `S` is the structure sheaf of the big étale site over `T`.
@@ -217,7 +217,7 @@ public theorem bigEtaleInverseImageRing_eq :
       BigEtaleOver.structureSheaf B T.obj T.property
 ```
 
-**`AlgebraicGeometry.bigEtaleLowerShriekModulesAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L219). The attribute's comment: “module_lower_shriek_adjunction”.
+**`AlgebraicGeometry.bigEtaleLowerShriekModulesAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L219). The attribute's comment: “module\_lower\_shriek\_adjunction”.
 
 > **Stacks 04CC(2), étale case.** `f_big^*` on sheaves of modules of the big étale sites has
 > `f_big!` as a left adjoint.
@@ -227,7 +227,7 @@ public def bigEtaleLowerShriekModulesAdjunction :
     bigEtaleLowerShriekModules B T S f ⊣ bigEtaleInverseImageModules B T S f
 ```
 
-**`AlgebraicGeometry.bigEtaleLowerShriekModulesToSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L229). The attribute's comment: “module_lower_shriek_agrees_on_abelian_sheaves”.
+**`AlgebraicGeometry.bigEtaleLowerShriekModulesToSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L229). The attribute's comment: “module\_lower\_shriek\_agrees\_on\_abelian\_sheaves”.
 
 > **Stacks 04CC(2), étale case.** The two `f_big!` agree on underlying sheaves of abelian
 > groups.
@@ -242,7 +242,7 @@ public def bigEtaleLowerShriekModulesToSheafIso :
         SheafOfModules.toSheaf.{u + 1} (BigEtaleOver.structureSheaf B S.obj S.property)
 ```
 
-**`AlgebraicGeometry.bigEtaleLowerShriekModules_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L245). The attribute's comment: “module_lower_shriek_exact”.
+**`AlgebraicGeometry.bigEtaleLowerShriekModules_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L245). The attribute's comment: “module\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(2), étale case.** `f_big!` on sheaves of modules of the big étale sites
 > preserves finite limits.  Lower shriek on abelian sheaves does, and forgetting the module
@@ -253,7 +253,7 @@ public theorem bigEtaleLowerShriekModules_preservesFiniteLimits :
     PreservesFiniteLimits (bigEtaleLowerShriekModules B T S f)
 ```
 
-**`AlgebraicGeometry.bigEtaleLowerShriekModules_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L255). The attribute's comment: “module_lower_shriek_exact”.
+**`AlgebraicGeometry.bigEtaleLowerShriekModules_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L255). The attribute's comment: “module\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(2), étale case.** `f_big!` on sheaves of modules of the big étale sites
 > preserves finite colimits: it is a left adjoint.
@@ -263,7 +263,7 @@ public theorem bigEtaleLowerShriekModules_preservesFiniteColimits :
     PreservesFiniteColimits (bigEtaleLowerShriekModules B T S f)
 ```
 
-**`AlgebraicGeometry.bigFppfInverseImageRing_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L273). The attribute's comment: “module_lower_shriek_inverse_image_structure_sheaf”.
+**`AlgebraicGeometry.bigFppfInverseImageRing_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L273). The attribute's comment: “module\_lower\_shriek\_inverse\_image\_structure\_sheaf”.
 
 > **Stacks 04CC(2), fppf case.** The inverse image of the structure sheaf of the big fppf
 > site over `S` is the structure sheaf of the big fppf site over `T`.
@@ -277,7 +277,7 @@ public theorem bigFppfInverseImageRing_eq :
       BigFppfOver.structureSheaf B T.1 T.property
 ```
 
-**`AlgebraicGeometry.bigFppfLowerShriekModulesAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L303). The attribute's comment: “module_lower_shriek_adjunction”.
+**`AlgebraicGeometry.bigFppfLowerShriekModulesAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L303). The attribute's comment: “module\_lower\_shriek\_adjunction”.
 
 > **Stacks 04CC(2), fppf case.** `f_big^*` on sheaves of modules of the big fppf sites has
 > `f_big!` as a left adjoint.
@@ -287,7 +287,7 @@ public def bigFppfLowerShriekModulesAdjunction :
     bigFppfLowerShriekModules B T S f ⊣ bigFppfInverseImageModules B T S f
 ```
 
-**`AlgebraicGeometry.bigFppfLowerShriekModulesToSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L313). The attribute's comment: “module_lower_shriek_agrees_on_abelian_sheaves”.
+**`AlgebraicGeometry.bigFppfLowerShriekModulesToSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L313). The attribute's comment: “module\_lower\_shriek\_agrees\_on\_abelian\_sheaves”.
 
 > **Stacks 04CC(2), fppf case.** The two `f_big!` agree on underlying sheaves of abelian
 > groups.
@@ -302,7 +302,7 @@ public def bigFppfLowerShriekModulesToSheafIso :
         SheafOfModules.toSheaf.{u + 1} (BigFppfOver.structureSheaf B S.1 S.property)
 ```
 
-**`AlgebraicGeometry.bigFppfLowerShriekModules_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L329). The attribute's comment: “module_lower_shriek_exact”.
+**`AlgebraicGeometry.bigFppfLowerShriekModules_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L329). The attribute's comment: “module\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(2), fppf case.** `f_big!` on sheaves of modules of the big fppf sites
 > preserves finite limits.  Lower shriek on abelian sheaves does, and forgetting the module
@@ -313,7 +313,7 @@ public theorem bigFppfLowerShriekModules_preservesFiniteLimits :
     PreservesFiniteLimits (bigFppfLowerShriekModules B T S f)
 ```
 
-**`AlgebraicGeometry.bigFppfLowerShriekModules_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L339). The attribute's comment: “module_lower_shriek_exact”.
+**`AlgebraicGeometry.bigFppfLowerShriekModules_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L339). The attribute's comment: “module\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(2), fppf case.** `f_big!` on sheaves of modules of the big fppf sites
 > preserves finite colimits: it is a left adjoint.
@@ -323,7 +323,7 @@ public theorem bigFppfLowerShriekModules_preservesFiniteColimits :
     PreservesFiniteColimits (bigFppfLowerShriekModules B T S f)
 ```
 
-**`AlgebraicGeometry.bigSmoothInverseImageRing_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L357). The attribute's comment: “module_lower_shriek_inverse_image_structure_sheaf”.
+**`AlgebraicGeometry.bigSmoothInverseImageRing_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L357). The attribute's comment: “module\_lower\_shriek\_inverse\_image\_structure\_sheaf”.
 
 > **Stacks 04CC(2), smooth case.** The inverse image of the structure sheaf of the big smooth
 > site over `S` is the structure sheaf of the big smooth site over `T`.
@@ -337,7 +337,7 @@ public theorem bigSmoothInverseImageRing_eq :
       BigSmoothOver.structureSheaf B T.1 T.2
 ```
 
-**`AlgebraicGeometry.bigSmoothLowerShriekModulesAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L387). The attribute's comment: “module_lower_shriek_adjunction”.
+**`AlgebraicGeometry.bigSmoothLowerShriekModulesAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L387). The attribute's comment: “module\_lower\_shriek\_adjunction”.
 
 > **Stacks 04CC(2), smooth case.** `f_big^*` on sheaves of modules of the big smooth sites
 > has `f_big!` as a left adjoint.
@@ -347,7 +347,7 @@ public def bigSmoothLowerShriekModulesAdjunction :
     bigSmoothLowerShriekModules B T S f ⊣ bigSmoothInverseImageModules B T S f
 ```
 
-**`AlgebraicGeometry.bigSmoothLowerShriekModulesToSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L397). The attribute's comment: “module_lower_shriek_agrees_on_abelian_sheaves”.
+**`AlgebraicGeometry.bigSmoothLowerShriekModulesToSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L397). The attribute's comment: “module\_lower\_shriek\_agrees\_on\_abelian\_sheaves”.
 
 > **Stacks 04CC(2), smooth case.** The two `f_big!` agree on underlying sheaves of abelian
 > groups.
@@ -362,7 +362,7 @@ public def bigSmoothLowerShriekModulesToSheafIso :
         SheafOfModules.toSheaf.{u + 1} (BigSmoothOver.structureSheaf B S.1 S.2)
 ```
 
-**`AlgebraicGeometry.bigSmoothLowerShriekModules_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L413). The attribute's comment: “module_lower_shriek_exact”.
+**`AlgebraicGeometry.bigSmoothLowerShriekModules_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L413). The attribute's comment: “module\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(2), smooth case.** `f_big!` on sheaves of modules of the big smooth sites
 > preserves finite limits.  Lower shriek on abelian sheaves does, and forgetting the module
@@ -373,7 +373,7 @@ public theorem bigSmoothLowerShriekModules_preservesFiniteLimits :
     PreservesFiniteLimits (bigSmoothLowerShriekModules B T S f)
 ```
 
-**`AlgebraicGeometry.bigSmoothLowerShriekModules_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L423). The attribute's comment: “module_lower_shriek_exact”.
+**`AlgebraicGeometry.bigSmoothLowerShriekModules_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L423). The attribute's comment: “module\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(2), smooth case.** `f_big!` on sheaves of modules of the big smooth sites
 > preserves finite colimits: it is a left adjoint.
@@ -383,7 +383,7 @@ public theorem bigSmoothLowerShriekModules_preservesFiniteColimits :
     PreservesFiniteColimits (bigSmoothLowerShriekModules B T S f)
 ```
 
-**`AlgebraicGeometry.bigSyntomicInverseImageRing_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 441](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L441). The attribute's comment: “module_lower_shriek_inverse_image_structure_sheaf”.
+**`AlgebraicGeometry.bigSyntomicInverseImageRing_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 441](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L441). The attribute's comment: “module\_lower\_shriek\_inverse\_image\_structure\_sheaf”.
 
 > **Stacks 04CC(2), syntomic case.** The inverse image of the structure sheaf of the big
 > syntomic site over `S` is the structure sheaf of the big syntomic site over `T`.
@@ -397,7 +397,7 @@ public theorem bigSyntomicInverseImageRing_eq :
       BigSyntomicOver.structureSheaf B T.1 T.2
 ```
 
-**`AlgebraicGeometry.bigSyntomicLowerShriekModulesAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 472](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L472). The attribute's comment: “module_lower_shriek_adjunction”.
+**`AlgebraicGeometry.bigSyntomicLowerShriekModulesAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 472](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L472). The attribute's comment: “module\_lower\_shriek\_adjunction”.
 
 > **Stacks 04CC(2), syntomic case.** `f_big^*` on sheaves of modules of the big syntomic
 > sites has `f_big!` as a left adjoint.
@@ -407,7 +407,7 @@ public def bigSyntomicLowerShriekModulesAdjunction :
     bigSyntomicLowerShriekModules B T S f ⊣ bigSyntomicInverseImageModules B T S f
 ```
 
-**`AlgebraicGeometry.bigSyntomicLowerShriekModulesToSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L482). The attribute's comment: “module_lower_shriek_agrees_on_abelian_sheaves”.
+**`AlgebraicGeometry.bigSyntomicLowerShriekModulesToSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L482). The attribute's comment: “module\_lower\_shriek\_agrees\_on\_abelian\_sheaves”.
 
 > **Stacks 04CC(2), syntomic case.** The two `f_big!` agree on underlying sheaves of abelian
 > groups.
@@ -422,7 +422,7 @@ public def bigSyntomicLowerShriekModulesToSheafIso :
         SheafOfModules.toSheaf.{u + 1} (BigSyntomicOver.structureSheaf B S.1 S.2)
 ```
 
-**`AlgebraicGeometry.bigSyntomicLowerShriekModules_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L498). The attribute's comment: “module_lower_shriek_exact”.
+**`AlgebraicGeometry.bigSyntomicLowerShriekModules_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L498). The attribute's comment: “module\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(2), syntomic case.** `f_big!` on sheaves of modules of the big syntomic sites
 > preserves finite limits.  Lower shriek on abelian sheaves does, and forgetting the module
@@ -433,7 +433,7 @@ public theorem bigSyntomicLowerShriekModules_preservesFiniteLimits :
     PreservesFiniteLimits (bigSyntomicLowerShriekModules B T S f)
 ```
 
-**`AlgebraicGeometry.bigSyntomicLowerShriekModules_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 508](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L508). The attribute's comment: “module_lower_shriek_exact”.
+**`AlgebraicGeometry.bigSyntomicLowerShriekModules_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean, line 508](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/ModuleLowerShriek.lean#L508). The attribute's comment: “module\_lower\_shriek\_exact”.
 
 > **Stacks 04CC(2), syntomic case.** `f_big!` on sheaves of modules of the big syntomic sites
 > preserves finite colimits: it is a left adjoint.
@@ -445,7 +445,7 @@ public theorem bigSyntomicLowerShriekModules_preservesFiniteColimits :
 
 Declarations registered for the tag:
 
-- [`Functor.sheafPullbackConstruction.sheafAdjunctionContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Functor.sheafPullbackConstruction.sheafAdjunctionContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L93) (StacksFrontier): “abelian_lower_shriek_exact”.
+- [`Functor.sheafPullbackConstruction.sheafAdjunctionContinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Functor.sheafPullbackConstruction.sheafAdjunctionContinuous#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesLowerShriek/AbelianExact.lean#L93) (StacksFrontier): “abelian\_lower\_shriek\_exact”.
 
 ## Tag 07AJ, a lemma
 

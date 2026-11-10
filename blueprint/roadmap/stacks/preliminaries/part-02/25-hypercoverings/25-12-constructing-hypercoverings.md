@@ -145,7 +145,7 @@ lemma exists_hypercovering_of_map
 
 [Tag 0DAZ](https://stacks.math.columbia.edu/tag/0DAZ) in the Stacks Project.
 
-**`Stacks.Topology.LocallyQuasiCompactQcSite.isHypercovering_map_smallSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean#L265). The attribute's comment: “a hypercovering of LC_qc transported to a small model of it”.
+**`Stacks.Topology.LocallyQuasiCompactQcSite.isHypercovering_map_smallSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LocallyQuasiCompact/QcSmallModel.lean#L265). The attribute's comment: “a hypercovering of LC\_qc transported to a small model of it”.
 
 > **Stacks 0DAZ at the comparison with the small model.** A hypercovering of an object of
 > `LC_qc`, carried degreewise to the small model, is a hypercovering of the image object there.
@@ -214,8 +214,8 @@ theorem exists_finite_hypercovering
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.Sigma.map'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.Sigma.map'#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch25.lean, line 22](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch25.lean#L22) (StacksFrontier): “the induced map ∐ U_i ⟶ ∐ V_j from α : I → J and f_i : U_i ⟶ V_{α i}”.
-- [`CategoryTheory.Limits.Sigma.ι_comp_map'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.Sigma.ι_comp_map'#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch25.lean, line 24](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch25.lean#L24) (StacksFrontier): “it sends the summand U_i into V_{α i} via f_i”.
+- [`CategoryTheory.Limits.Sigma.map'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.Sigma.map'#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch25.lean, line 22](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch25.lean#L22) (StacksFrontier): “the induced map ∐ U\_i ⟶ ∐ V\_j from α : I → J and f\_i : U\_i ⟶ V\_\{α i}”.
+- [`CategoryTheory.Limits.Sigma.ι_comp_map'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.Sigma.ι_comp_map'#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch25.lean, line 24](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch25.lean#L24) (StacksFrontier): “it sends the summand U\_i into V\_\{α i} via f\_i”.
 
 ## Tag 0DB1, a remark
 

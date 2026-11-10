@@ -252,8 +252,8 @@ theorem exists_iso_gradedHomology (p n : ℤ) :
 > **Stacks 012Q.** Let `𝒜` be an abelian category and let `(K^•, F)` be a filtered complex of
 > `𝒜`, with degreewise filtration subobjects `F^p K^n`. Fix `p, n : ℤ` and write `q = n - p`.
 > Assume the stable cycles `Z_∞^{p, q}` and the stable boundaries `B_∞^{p, q}` exist, i.e. that
-> `Z` is the greatest lower bound of the subobjects `F^p K^n ∩ (d^n)⁻¹(F^{p + r}K^{n + 1})
-> + F^{p + 1}K^n` and `B` the least upper bound of the subobjects
+> `Z` is the greatest lower bound of the subobjects `F^p K^n ∩ (d^n)⁻¹(F^\{p + r}K^\{n + 1})
+> + F^\{p + 1}K^n` and `B` the least upper bound of the subobjects
 > `F^p K^n ∩ d^{n - 1}(F^{p - r}K^{n - 1}) + F^{p + 1}K^n` of `K^n`. Then
 > `B_∞^{p, q} ≤ Z_∞^{p, q}`, so the limit `E_∞^{p, q} = Z_∞^{p, q}/B_∞^{p, q}` exists, and the
 > graded piece `gr^p H^n(K^•)` of the induced filtration on cohomology is a subquotient of it: the

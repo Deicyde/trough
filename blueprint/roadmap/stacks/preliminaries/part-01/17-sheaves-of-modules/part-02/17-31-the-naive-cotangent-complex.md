@@ -33,12 +33,12 @@ Declarations registered for the tag:
 - [`Stacks.Sheaves.PolynomialAlgebra.polynomialAlgebraSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Sheaf/PolynomialAlgebra.lean#L105), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean#L65) (StacksFrontier): “the polynomial algebra sheaf 𝒜[ℰ] of the section's notation”.
 - [`Stacks.Sheaves.PolynomialAlgebra.canonicalPolynomialPresentation`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Sheaf/PolynomialAlgebra.lean#L122), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean#L68) (StacksFrontier): “the canonical surjection 𝒜[ℬ] ⟶ ℬ, [b] ↦ b”.
 - [`Stacks.Sheaves.PolynomialAlgebra.canonicalPolynomialPresentation_surjective`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Sheaf/PolynomialAlgebra.lean#L144), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean#L71) (StacksFrontier): “surjectivity of 𝒜[ℬ] ⟶ ℬ”.
-- [`Stacks.SheafOfModules.naiveCotangentComplex`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/NaiveCotangent.lean#L107), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean#L74) (StacksFrontier): “the naive cotangent complex 𝖭𝖫_{ℬ/𝒜} of the section's definition, with ℐ/ℐ² in degree -1 and Ω_{𝒜[ℬ]/𝒜} ⊗ ℬ in degree 0”.
+- [`Stacks.SheafOfModules.naiveCotangentComplex`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/NaiveCotangent.lean#L107), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean#L74) (StacksFrontier): “the naive cotangent complex 𝖭𝖫\_\{ℬ/𝒜} of the section's definition, with ℐ/ℐ² in degree -1 and Ω\_\{𝒜[ℬ]/𝒜} ⊗ ℬ in degree 0”.
 - [`Stacks.SheafOfModules.presentationNaiveCotangentComplex`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InternalHomAndFlatness/NaiveCotangent.lean#L224), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean#L78) (StacksFrontier): “the complex 𝖭𝖫(α) attached to a presentation α : ℰ ⟶ ℬ”.
-- [`Stacks.SheafOfModules.spaceNaiveCotangentComplexMapOfSquare`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentSquare.lean#L72), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean#L81) (StacksFrontier): “the canonical ℬ-linear map of complexes 𝖭𝖫_{ℬ/𝒜} ⟶ 𝖭𝖫_{ℬ'/𝒜'} attached to a commutative square of sheaves of rings”.
+- [`Stacks.SheafOfModules.spaceNaiveCotangentComplexMapOfSquare`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentSquare.lean#L72), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean#L81) (StacksFrontier): “the canonical ℬ-linear map of complexes 𝖭𝖫\_\{ℬ/𝒜} ⟶ 𝖭𝖫\_\{ℬ'/𝒜'} attached to a commutative square of sheaves of rings”.
 - [`Stacks.SheafOfModules.spaceNaiveCotangentComplexMapOfSquare_comp`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentSquare.lean#L129), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean#L85) (StacksFrontier): “compatibility of that canonical map of complexes with compositions”.
-- [`Stacks.SheafOfModules.quasiIso_naiveCotangentComplexComparison`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationQuasiIso.lean#L858), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean#L88) (StacksFrontier): “the canonical comparison 𝖭𝖫(α) ⟶ 𝖭𝖫_{ℬ/𝒜} and its quasi-isomorphy”.
-- [`Stacks.SheafOfModules.naiveCotangentComplexInverseImageIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentInverseImage.lean#L1916), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean#L91) (StacksFrontier): “compatibility with inverse images, f⁻¹𝖭𝖫_{ℬ/𝒜} ≅ 𝖭𝖫_{f⁻¹ℬ/f⁻¹𝒜}”.
+- [`Stacks.SheafOfModules.quasiIso_naiveCotangentComplexComparison`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationQuasiIso.lean#L858), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean#L88) (StacksFrontier): “the canonical comparison 𝖭𝖫(α) ⟶ 𝖭𝖫\_\{ℬ/𝒜} and its quasi-isomorphy”.
+- [`Stacks.SheafOfModules.naiveCotangentComplexInverseImageIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentInverseImage.lean#L1916), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentPresentationInvariance.lean#L91) (StacksFrontier): “compatibility with inverse images, f⁻¹𝖭𝖫\_\{ℬ/𝒜} ≅ 𝖭𝖫\_\{f⁻¹ℬ/f⁻¹𝒜}”.
 
 ## Tag 08TH, an equation
 
@@ -119,7 +119,7 @@ Declarations registered for the tag:
 
 [Tag 08TK](https://stacks.math.columbia.edu/tag/08TK) in the Stacks Project.
 
-**`Stacks.SheafOfModules.spaceNaiveCotangentComplexMapOfSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentSquare.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentSquare.lean#L72). The attribute's comment: “the canonical B-linear map of complexes NL_{B/A} ⟶ NL_{B'/A'}”.
+**`Stacks.SheafOfModules.spaceNaiveCotangentComplexMapOfSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentSquare.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentSquare.lean#L72). The attribute's comment: “the canonical B-linear map of complexes NL\_\{B/A} ⟶ NL\_\{B'/A'}”.
 
 > **Stacks 08TK.** The canonical `B`-linear chain map `NL_{B/A} ⟶ NL_{B'/A'}` attached to a
 > commutative square of sheaves of commutative rings on a topological space.
@@ -200,7 +200,7 @@ theorem quasiIso_naiveCotangentComplexComparison :
       (Opens.grothendieckTopology X) A B a E α)
 ```
 
-**`Stacks.SheafOfModules.quasiIso_trivialNaiveCotangentComplexComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentTrivialPresentation.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentTrivialPresentation.lean#L439). The attribute's comment: “NL(α) ⟶ NL_{B/A} for the trivial presentation α = a : A ⟶ B of B over A”.
+**`Stacks.SheafOfModules.quasiIso_trivialNaiveCotangentComplexComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentTrivialPresentation.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentTrivialPresentation.lean#L439). The attribute's comment: “NL(α) ⟶ NL\_\{B/A} for the trivial presentation α = a : A ⟶ B of B over A”.
 
 > **Stacks 08TL for the trivial presentation.**  For a locally surjective morphism
 > `a : A ⟶ B` of sheaves of commutative rings on a topological space, the comparison map
@@ -300,7 +300,7 @@ theorem naiveCotangentStalk_eq_naiveCotangentComplexStalk :
 
 [Tag 0E1Y](https://stacks.math.columbia.edu/tag/0E1Y) in the Stacks Project.
 
-**`Stacks.SheafOfModules.exact_spaceJacobiZariskiHomologySequence_negOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean#L269). The attribute's comment: “exactness of the six-term sequence of cohomology sheaves at the node H^{-1}(NL_{C/A}), for the maps induced by the two canonical maps c_1 and g”.
+**`Stacks.SheafOfModules.exact_spaceJacobiZariskiHomologySequence_negOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean#L269). The attribute's comment: “exactness of the six-term sequence of cohomology sheaves at the node H^\{-1}(NL\_\{C/A}), for the maps induced by the two canonical maps c\_1 and g”.
 
 > **Stacks 0E1Y, exactness at `H^{-1}(NL_{C/A})`.**  For morphisms `A ⟶ B ⟶ C` of sheaves of
 > commutative rings on a topological space the sequence
@@ -314,7 +314,7 @@ theorem exact_spaceJacobiZariskiHomologySequence_negOne :
     (spaceJacobiZariskiHomologySequence A B C a b (-1)).Exact
 ```
 
-**`Stacks.SheafOfModules.exact_spaceJacobiZariskiHomologySequence_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean#L297). The attribute's comment: “exactness of the six-term sequence of cohomology sheaves at the node H^0(NL_{C/A}), for the maps induced by the two canonical maps c_1 and g”.
+**`Stacks.SheafOfModules.exact_spaceJacobiZariskiHomologySequence_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean#L297). The attribute's comment: “exactness of the six-term sequence of cohomology sheaves at the node H^0(NL\_\{C/A}), for the maps induced by the two canonical maps c\_1 and g”.
 
 > **Stacks 0E1Y, exactness at `H⁰(NL_{C/A})`.**  For morphisms `A ⟶ B ⟶ C` of sheaves of
 > commutative rings on a topological space the sequence
@@ -328,7 +328,7 @@ theorem exact_spaceJacobiZariskiHomologySequence_zero :
     (spaceJacobiZariskiHomologySequence A B C a b 0).Exact
 ```
 
-**`Stacks.SheafOfModules.epi_homologyMap_spaceRelativeNaiveCotangentComplexMap_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean#L369). The attribute's comment: “the final `-> 0` of the six-term sequence of cohomology sheaves, that is, its exactness at H^0(NL_{C/B}): the map induced by the canonical map g is surjective”.
+**`Stacks.SheafOfModules.epi_homologyMap_spaceRelativeNaiveCotangentComplexMap_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean#L369). The attribute's comment: “the final `-> 0` of the six-term sequence of cohomology sheaves, that is, its exactness at H^0(NL\_\{C/B}): the map induced by the canonical map g is surjective”.
 
 > **Stacks 0E1Y, the final `⟶ 0` of the six-term sequence**: the canonical map
 > `g : NL_{C/A} ⟶ NL_{C/B}` is surjective on `H⁰`, that is, the sequence of cohomology sheaves is
@@ -342,7 +342,7 @@ theorem epi_homologyMap_spaceRelativeNaiveCotangentComplexMap_zero :
     Epi (HomologicalComplex.homologyMap (spaceRelativeNaiveCotangentComplexMap A B C a b) 0)
 ```
 
-**`Stacks.SheafOfModules.spaceJacobiZariskiConnecting`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean#L103). The attribute's comment: “the connecting morphism H^{-1}(NL_{C/B}) -> H^0(NL_{B/A} ⊗_B C)”.
+**`Stacks.SheafOfModules.spaceJacobiZariskiConnecting`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean#L103). The attribute's comment: “the connecting morphism H^\{-1}(NL\_\{C/B}) -> H^0(NL\_\{B/A} ⊗\_B C)”.
 
 > **Stacks 0E1Y, the connecting morphism of the six-term sequence**
 > `∂ : H^{-1}(NL_{C/B}) ⟶ H⁰(NL_{B/A} ⊗_B C)`, for morphisms `A ⟶ B ⟶ C` of sheaves of
@@ -357,7 +357,7 @@ theorem epi_homologyMap_spaceRelativeNaiveCotangentComplexMap_zero :
 noncomputable def spaceJacobiZariskiConnecting
 ```
 
-**`Stacks.SheafOfModules.exact_spaceJacobiZariskiSixTerm_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean#L191). The attribute's comment: “exactness of the six-term sequence at H^0(NL_{B/A} ⊗_B C)”.
+**`Stacks.SheafOfModules.exact_spaceJacobiZariskiSixTerm_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean#L191). The attribute's comment: “exactness of the six-term sequence at H^0(NL\_\{B/A} ⊗\_B C)”.
 
 > **Stacks 0E1Y, exactness at `H⁰(NL_{B/A} ⊗_B C)`.**  For morphisms `A ⟶ B ⟶ C` of sheaves of
 > commutative rings on a topological space the sequence
@@ -378,7 +378,7 @@ theorem exact_spaceJacobiZariskiSixTerm_zero :
       (spaceJacobiZariskiConnecting_comp_homologyMap A B C a b)).Exact
 ```
 
-**`Stacks.SheafOfModules.exact_spaceJacobiZariskiSixTerm_negOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean#L209). The attribute's comment: “exactness of the six-term sequence at H^{-1}(NL_{C/B})”.
+**`Stacks.SheafOfModules.exact_spaceJacobiZariskiSixTerm_negOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean#L209). The attribute's comment: “exactness of the six-term sequence at H^\{-1}(NL\_\{C/B})”.
 
 > **Stacks 0E1Y, exactness at `H^{-1}(NL_{C/B})`.**  For morphisms `A ⟶ B ⟶ C` of sheaves of
 > commutative rings on a topological space the sequence
@@ -399,7 +399,7 @@ theorem exact_spaceJacobiZariskiSixTerm_negOne :
       (homologyMap_comp_spaceJacobiZariskiConnecting A B C a b)).Exact
 ```
 
-**`Stacks.SheafOfModules.spaceNaiveCotangentConeMap`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentExactSequence.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentExactSequence.lean#L390). The attribute's comment: “the canonical map NL_{B/A} ⊗ C -> C(g)[-1] to the shifted cone”.
+**`Stacks.SheafOfModules.spaceNaiveCotangentConeMap`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentExactSequence.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentExactSequence.lean#L390). The attribute's comment: “the canonical map NL\_\{B/A} ⊗ C -> C(g)[-1] to the shifted cone”.
 
 > **Stacks 0E1Y, the canonical map.**  For morphisms `A ⟶ B ⟶ C` of sheaves of commutative
 > rings on a topological space, the canonical map
@@ -422,7 +422,7 @@ theorem exact_spaceJacobiZariskiSixTerm_negOne :
 noncomputable abbrev spaceNaiveCotangentConeMap
 ```
 
-**`Stacks.SheafOfModules.spaceNaiveCotangentConeMap_comp_pShift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentExactSequence.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentExactSequence.lean#L401). The attribute's comment: “the defining property of the canonical map: composed with the cone projection it is c_1”.
+**`Stacks.SheafOfModules.spaceNaiveCotangentConeMap_comp_pShift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentExactSequence.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentExactSequence.lean#L401). The attribute's comment: “the defining property of the canonical map: composed with the cone projection it is c\_1”.
 
 > **Stacks 0E1Y, the defining property of the canonical map.**  The canonical map `c`
 > composed with the projection `C(g)[-1] ⟶ NL_{C/A}` of the shifted cone is the canonical map
@@ -480,7 +480,7 @@ noncomputable def naiveCotangentComplex :
 
 [Tag 0E1Z](https://stacks.math.columbia.edu/tag/0E1Z) in the Stacks Project.
 
-**`Stacks.SheafOfModules.exact_ringedSpaceJacobiZariskiHomologySequence_negOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean#L469). The attribute's comment: “exactness of the six-term sequence of cohomology sheaves at the node H^{-1}(NL_{X/Z}), for the maps induced by the canonical maps f^*NL_{Y/Z} -> NL_{X/Z} and NL_{X/Z} -> NL_{X/Y}”.
+**`Stacks.SheafOfModules.exact_ringedSpaceJacobiZariskiHomologySequence_negOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean#L469). The attribute's comment: “exactness of the six-term sequence of cohomology sheaves at the node H^\{-1}(NL\_\{X/Z}), for the maps induced by the canonical maps f^*NL\_\{Y/Z} -> NL\_\{X/Z} and NL\_\{X/Z} -> NL\_\{X/Y}”.
 
 > **Stacks 0E1Z, exactness at `H^{-1}(NL_{X/Z})`.**  For composable morphisms of ringed spaces
 > `f : X ⟶ Y` and `g : Y ⟶ Z` the sequence
@@ -494,7 +494,7 @@ theorem exact_ringedSpaceJacobiZariskiHomologySequence_negOne :
     (ringedSpaceJacobiZariskiHomologySequence f g (-1)).Exact
 ```
 
-**`Stacks.SheafOfModules.exact_ringedSpaceJacobiZariskiHomologySequence_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean#L485). The attribute's comment: “exactness of the six-term sequence of cohomology sheaves at the node H^0(NL_{X/Z}), for the maps induced by the canonical maps f^*NL_{Y/Z} -> NL_{X/Z} and NL_{X/Z} -> NL_{X/Y}”.
+**`Stacks.SheafOfModules.exact_ringedSpaceJacobiZariskiHomologySequence_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean#L485). The attribute's comment: “exactness of the six-term sequence of cohomology sheaves at the node H^0(NL\_\{X/Z}), for the maps induced by the canonical maps f^*NL\_\{Y/Z} -> NL\_\{X/Z} and NL\_\{X/Z} -> NL\_\{X/Y}”.
 
 > **Stacks 0E1Z, exactness at `H⁰(NL_{X/Z})`.**  For composable morphisms of ringed spaces
 > `f : X ⟶ Y` and `g : Y ⟶ Z` the sequence
@@ -508,7 +508,7 @@ theorem exact_ringedSpaceJacobiZariskiHomologySequence_zero :
     (ringedSpaceJacobiZariskiHomologySequence f g 0).Exact
 ```
 
-**`Stacks.SheafOfModules.epi_homologyMap_ringedSpaceRelativeNaiveCotangentComplexMap_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean, line 516](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean#L516). The attribute's comment: “the final `-> 0` of the six-term sequence of cohomology sheaves, that is, its exactness at H^0(NL_{X/Y}): the map induced by the canonical map NL_{X/Z} -> NL_{X/Y} is surjective”.
+**`Stacks.SheafOfModules.epi_homologyMap_ringedSpaceRelativeNaiveCotangentComplexMap_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean, line 516](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSheaves.lean#L516). The attribute's comment: “the final `-> 0` of the six-term sequence of cohomology sheaves, that is, its exactness at H^0(NL\_\{X/Y}): the map induced by the canonical map NL\_\{X/Z} -> NL\_\{X/Y} is surjective”.
 
 > **Stacks 0E1Z, the final `⟶ 0` of the six-term sequence**: the canonical map
 > `NL_{X/Z} ⟶ NL_{X/Y}` is surjective on `H⁰`, that is, the sequence of cohomology sheaves is exact
@@ -522,7 +522,7 @@ theorem epi_homologyMap_ringedSpaceRelativeNaiveCotangentComplexMap_zero :
       (inverseImageFirstRingMap f g) (ringedSpaceStructureMap f)) 0)
 ```
 
-**`Stacks.SheafOfModules.ringedSpaceJacobiZariskiConnecting`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean#L245). The attribute's comment: “the connecting morphism H^{-1}(NL_{X/Y}) -> H^0(f^*NL_{Y/Z})”.
+**`Stacks.SheafOfModules.ringedSpaceJacobiZariskiConnecting`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean#L245). The attribute's comment: “the connecting morphism H^\{-1}(NL\_\{X/Y}) -> H^0(f^*NL\_\{Y/Z})”.
 
 > **Stacks 0E1Z, the connecting morphism of the six-term sequence**
 > `∂ : H^{-1}(NL_{X/Y}) ⟶ H⁰(f^*NL_{Y/Z})`, for composable morphisms of ringed spaces.
@@ -531,7 +531,7 @@ theorem epi_homologyMap_ringedSpaceRelativeNaiveCotangentComplexMap_zero :
 noncomputable def ringedSpaceJacobiZariskiConnecting
 ```
 
-**`Stacks.SheafOfModules.exact_ringedSpaceJacobiZariskiSixTerm_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean#L354). The attribute's comment: “exactness of the six-term sequence at H^0(f^*NL_{Y/Z})”.
+**`Stacks.SheafOfModules.exact_ringedSpaceJacobiZariskiSixTerm_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean#L354). The attribute's comment: “exactness of the six-term sequence at H^0(f^*NL\_\{Y/Z})”.
 
 > **Stacks 0E1Z, exactness at `H⁰(f^*NL_{Y/Z})`.**  For composable morphisms of ringed spaces
 > `f : X ⟶ Y` and `g : Y ⟶ Z` the sequence
@@ -550,7 +550,7 @@ theorem exact_ringedSpaceJacobiZariskiSixTerm_zero :
       (ringedSpaceJacobiZariskiConnecting_comp_homologyMap f g)).Exact
 ```
 
-**`Stacks.SheafOfModules.exact_ringedSpaceJacobiZariskiSixTerm_negOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean#L371). The attribute's comment: “exactness of the six-term sequence at H^{-1}(NL_{X/Y})”.
+**`Stacks.SheafOfModules.exact_ringedSpaceJacobiZariskiSixTerm_negOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentJacobiZariskiSixTerm.lean#L371). The attribute's comment: “exactness of the six-term sequence at H^\{-1}(NL\_\{X/Y})”.
 
 > **Stacks 0E1Z, exactness at `H^{-1}(NL_{X/Y})`.**  For composable morphisms of ringed spaces
 > `f : X ⟶ Y` and `g : Y ⟶ Z` the sequence
@@ -569,7 +569,7 @@ theorem exact_ringedSpaceJacobiZariskiSixTerm_negOne :
       (homologyMap_comp_ringedSpaceJacobiZariskiConnecting f g)).Exact
 ```
 
-**`Stacks.SheafOfModules.ringedSpaceNaiveCotangentConeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentExactSequence.lean, line 598](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentExactSequence.lean#L598). The attribute's comment: “the canonical map f^*NL_{Y/Z} -> C(NL_{X/Z} -> NL_{X/Y})[-1] to the shifted cone”.
+**`Stacks.SheafOfModules.ringedSpaceNaiveCotangentConeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentExactSequence.lean, line 598](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentExactSequence.lean#L598). The attribute's comment: “the canonical map f^*NL\_\{Y/Z} -> C(NL\_\{X/Z} -> NL\_\{X/Y})[-1] to the shifted cone”.
 
 > **Stacks 0E1Z, the canonical map.**  For composable morphisms of ringed spaces
 > `f : X ⟶ Y` and `g : Y ⟶ Z`, the canonical map
@@ -601,7 +601,7 @@ noncomputable def ringedSpaceNaiveCotangentConeMap :
           (inverseImageFirstRingMap f g) (ringedSpaceStructureMap f)))
 ```
 
-**`Stacks.SheafOfModules.ringedSpaceNaiveCotangentConeMap_comp_pShift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentExactSequence.lean, line 619](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentExactSequence.lean#L619). The attribute's comment: “the defining property of the canonical map: composed with the cone projection it is the map f^*NL_{Y/Z} -> NL_{X/Z}”.
+**`Stacks.SheafOfModules.ringedSpaceNaiveCotangentConeMap_comp_pShift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentExactSequence.lean, line 619](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/NaiveCotangentExactSequence.lean#L619). The attribute's comment: “the defining property of the canonical map: composed with the cone projection it is the map f^*NL\_\{Y/Z} -> NL\_\{X/Z}”.
 
 > **Stacks 0E1Z, the canonical map.**  The canonical map
 > `f^*NL_{Y/Z} ⟶ C(NL_{X/Z} ⟶ NL_{X/Y})[-1]`, composed with the projection of the shifted cone

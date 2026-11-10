@@ -42,7 +42,7 @@ theorem hasPropertyOnAffineChartMap_adicStar_iff {U V : FppfSheaf B S hS} (t : U
         TopologicalRing.IsTautTopologicallyOfFiniteTypeHom t
 ```
 
-**`Rig.adicFiniteType_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FiniteType.lean, line 719](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/FiniteType.lean#L719). The attribute's comment: “equivalent_conditions”. References: EGA I (10.13.4); EGA I (10.13.1), “affine case”; EGA 0 (7.5.5), “(a) <=> (c)”.
+**`Rig.adicFiniteType_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FiniteType.lean, line 719](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/FiniteType.lean#L719). The attribute's comment: “equivalent\_conditions”. References: EGA I (10.13.4); EGA I (10.13.1), “affine case”; EGA 0 (7.5.5), “(a) <=> (c)”.
 
 > The eight characterizations of an adic morphism of topologically finite type.
 
@@ -62,7 +62,7 @@ public theorem adicFiniteType_tfae (φ : A →+* B) (hφ : Continuous φ)
       HasCompletedPolynomialPresentation φ]
 ```
 
-**`TopologicalRing.adicTopologicallyFiniteType_isLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicFiniteTypeIsLocal.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/AdicFiniteTypeIsLocal.lean#L111). The attribute's comment: “local_property”.
+**`TopologicalRing.adicTopologicallyFiniteType_isLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicFiniteTypeIsLocal.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/AdicFiniteTypeIsLocal.lean#L111). The attribute's comment: “local\_property”.
 
 > **Stacks 0GBW.** Being adic and topologically of finite type is a local property of
 > morphisms of weakly admissible adic-star rings: it ascends along completed étale localization
@@ -77,7 +77,7 @@ public theorem adicTopologicallyFiniteType_isLocal :
         RingHom.IsAdic φ ∧ IsTopologicallyOfFiniteType φ)
 ```
 
-**`TopologicalRing.adicTopologicallyFiniteType_isomorphismInvariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicFiniteTypeIsLocalRefined.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/AdicFiniteTypeIsLocalRefined.lean#L58). The attribute's comment: “local_property”.
+**`TopologicalRing.adicTopologicallyFiniteType_isomorphismInvariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicFiniteTypeIsLocalRefined.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/AdicFiniteTypeIsLocalRefined.lean#L58). The attribute's comment: “local\_property”.
 
 > Being adic and topologically of finite type is independent of the presentations of the source
 > and the target.
@@ -91,7 +91,7 @@ public theorem adicTopologicallyFiniteType_isomorphismInvariant :
       (fun R ↦ ∃ I : Ideal R, I.FG ∧ _root_.IsAdic I)
 ```
 
-**`TopologicalRing.adicTopologicallyFiniteType_isLocal'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicFiniteTypeIsLocalRefined.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/AdicFiniteTypeIsLocalRefined.lean#L74). The attribute's comment: “local_property”.
+**`TopologicalRing.adicTopologicallyFiniteType_isLocal'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/AdicFiniteTypeIsLocalRefined.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/AdicFiniteTypeIsLocalRefined.lean#L74). The attribute's comment: “local\_property”.
 
 > Being adic and topologically of finite type is a local property of morphisms of weakly
 > admissible adic-star rings: it is independent of the presentations of the source and the target,

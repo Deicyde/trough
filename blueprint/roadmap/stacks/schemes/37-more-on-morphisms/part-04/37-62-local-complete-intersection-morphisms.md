@@ -317,7 +317,7 @@ theorem isRegularImmersion_of_perfect_of_conormalSheaf (i : X ⟶ Y) [IsImmersio
 
 [Tag 0FV6](https://stacks.math.columbia.edu/tag/0FV6) in the Stacks Project.
 
-**`AlgebraicGeometry.isPerfect_and_hasTorAmplitude_naiveCotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L454). The attribute's comment: “both halves: NL_{X/Y} of a local complete intersection morphism is perfect and has tor-amplitude in [-1,0]”. References: SGA 6 VIII (2.4), “more general”; SGA 6 XIV (2.1).
+**`AlgebraicGeometry.isPerfect_and_hasTorAmplitude_naiveCotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L454). The attribute's comment: “both halves: NL\_\{X/Y} of a local complete intersection morphism is perfect and has tor-amplitude in [-1,0]”. References: SGA 6 VIII (2.4), “more general”; SGA 6 XIV (2.1).
 
 > **Stacks 0FV6.** The naive cotangent complex of a local complete intersection morphism is a
 > perfect object of `D(𝒪_X)` of Tor amplitude in `[-1, 0]`.
@@ -341,7 +341,7 @@ theorem isPerfect_and_hasTorAmplitude_naiveCotangentComplex {X Y : Scheme.{u}} (
 
 [Tag 0FK2](https://stacks.math.columbia.edu/tag/0FK2) in the Stacks Project.
 
-**`AlgebraicGeometry.hasTorAmplitude_naiveCotangentComplex_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L500). The attribute's comment: “(1) ⇒ (2): for a perfect morphism of locally Noetherian schemes which is a local complete intersection morphism, NL_{X/Y} has tor-amplitude in [-1,0]”.
+**`AlgebraicGeometry.hasTorAmplitude_naiveCotangentComplex_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L500). The attribute's comment: “(1) ⇒ (2): for a perfect morphism of locally Noetherian schemes which is a local complete intersection morphism, NL\_\{X/Y} has tor-amplitude in [-1,0]”.
 
 > **Stacks 0FK2, the implication (1) ⇒ (2).** If a perfect morphism of locally Noetherian
 > schemes is a local complete intersection morphism, then `NL_{X/Y}` has Tor amplitude in
@@ -358,7 +358,7 @@ theorem hasTorAmplitude_naiveCotangentComplex_of_perfect {X Y : Scheme.{u}} (f :
       (DerivedCategory.Q.obj (Scheme.naiveCotangentComplex f)) (-1) 0
 ```
 
-**`AlgebraicGeometry.isPerfect_and_hasTorAmplitude_naiveCotangentComplex_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 517](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L517). The attribute's comment: “(1) ⇒ (3): for a perfect morphism of locally Noetherian schemes which is a local complete intersection morphism, NL_{X/Y} is perfect with tor-amplitude in [-1,0]”. References: SGA 6 VIII (2.4), “partial”; SGA 6 XIV (2.1), “special case”.
+**`AlgebraicGeometry.isPerfect_and_hasTorAmplitude_naiveCotangentComplex_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 517](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L517). The attribute's comment: “(1) ⇒ (3): for a perfect morphism of locally Noetherian schemes which is a local complete intersection morphism, NL\_\{X/Y} is perfect with tor-amplitude in [-1,0]”. References: SGA 6 VIII (2.4), “partial”; SGA 6 XIV (2.1), “special case”.
 
 > **Stacks 0FK2, the implication (1) ⇒ (3).** If a perfect morphism of locally Noetherian
 > schemes is a local complete intersection morphism, then `NL_{X/Y}` is perfect with Tor amplitude
@@ -427,7 +427,7 @@ theorem isLocalCompleteIntersectionMorphism_iff_syntomic {X Y : Scheme.{u}} (f :
     IsLocalCompleteIntersectionMorphism f ↔ Syntomic f
 ```
 
-**`AlgebraicGeometry.hasTorAmplitude_naiveCotangentComplex_of_isPerfect_of_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L149). The attribute's comment: “(4) ⇒ (3), which is a projection: NL_{X/Y} perfect with tor-amplitude in [-1,0] has tor-amplitude in [-1,0]. Fixes which library predicates conditions (3) and (4) are read at”.
+**`AlgebraicGeometry.hasTorAmplitude_naiveCotangentComplex_of_isPerfect_of_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L149). The attribute's comment: “(4) ⇒ (3), which is a projection: NL\_\{X/Y} perfect with tor-amplitude in [-1,0] has tor-amplitude in [-1,0]. Fixes which library predicates conditions (3) and (4) are read at”.
 
 > **Stacks 0FK3, the implication (4) ⇒ (3).** If `NL_{X/Y}` is perfect with Tor amplitude in
 > `[-1, 0]`, then it has Tor amplitude in `[-1, 0]`.
@@ -450,7 +450,7 @@ theorem hasTorAmplitude_naiveCotangentComplex_of_isPerfect_of_hasTorAmplitude
       (DerivedCategory.Q.obj (Scheme.naiveCotangentComplex f)) (-1) 0
 ```
 
-**`AlgebraicGeometry.hasTorAmplitude_naiveCotangentComplex_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 470](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L470). The attribute's comment: “(1) ⇒ (3): for a flat morphism of finite presentation which is a local complete intersection morphism, NL_{X/Y} has tor-amplitude in [-1,0]”.
+**`AlgebraicGeometry.hasTorAmplitude_naiveCotangentComplex_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 470](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L470). The attribute's comment: “(1) ⇒ (3): for a flat morphism of finite presentation which is a local complete intersection morphism, NL\_\{X/Y} has tor-amplitude in [-1,0]”.
 
 > **Stacks 0FK3, the implication (1) ⇒ (3).** If a flat morphism of finite presentation is a
 > local complete intersection morphism, then `NL_{X/Y}` has Tor amplitude in `[-1, 0]`.
@@ -465,7 +465,7 @@ theorem hasTorAmplitude_naiveCotangentComplex_of_flat {X Y : Scheme.{u}} (f : X 
       (DerivedCategory.Q.obj (Scheme.naiveCotangentComplex f)) (-1) 0
 ```
 
-**`AlgebraicGeometry.isPerfect_and_hasTorAmplitude_naiveCotangentComplex_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 483](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L483). The attribute's comment: “(1) ⇒ (4): for a flat morphism of finite presentation which is a local complete intersection morphism, NL_{X/Y} is perfect with tor-amplitude in [-1,0]”.
+**`AlgebraicGeometry.isPerfect_and_hasTorAmplitude_naiveCotangentComplex_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean, line 483](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/LocalCompleteIntersection/NaiveCotangent.lean#L483). The attribute's comment: “(1) ⇒ (4): for a flat morphism of finite presentation which is a local complete intersection morphism, NL\_\{X/Y} is perfect with tor-amplitude in [-1,0]”.
 
 > **Stacks 0FK3, the implication (1) ⇒ (4).** If a flat morphism of finite presentation is a
 > local complete intersection morphism, then `NL_{X/Y}` is perfect with Tor amplitude in `[-1, 0]`.

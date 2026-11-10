@@ -266,7 +266,7 @@ theorem exists_isPerfectComplex_restrict_iso_biprod_shift_of_isAffine (X : Schem
 
 [Tag 08EJ](https://stacks.math.columbia.edu/tag/08EJ) in the Stacks Project.
 
-**`Stacks.PowerTorsion.exists_pow_smul_eq_zero_of_isPerfect_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffinePowerTorsion.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffinePowerTorsion.lean#L152). The attribute's comment: “on an affine scheme, in D(𝒪_X); the base case of the induction over the quasi-compact opens that gives the quasi-compact quasi-separated case”.
+**`Stacks.PowerTorsion.exists_pow_smul_eq_zero_of_isPerfect_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffinePowerTorsion.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AffinePowerTorsion.lean#L152). The attribute's comment: “on an affine scheme, in D(𝒪\_X); the base case of the induction over the quasi-compact opens that gives the quasi-compact quasi-separated case”.
 
 > **[Stacks, Tag 08EJ] on an affine scheme.** Let `R` be a commutative ring, let `f : R` and
 > let `X = Spec R`. Let `α : E ⟶ E'` be a morphism of `D_QCoh(𝒪_X)` such that `E` is perfect and

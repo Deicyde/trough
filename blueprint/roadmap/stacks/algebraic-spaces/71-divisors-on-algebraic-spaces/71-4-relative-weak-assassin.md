@@ -224,7 +224,7 @@ noncomputable def IsRelativeWeaklyAssociatedPoint {X Y : AlgebraicSpaces B S hS}
     (F : Modules.{u, u} B S hS X.1 X.2) (x : points B S hS X.1) : Prop
 ```
 
-**`AlgebraicGeometry.Space.relativeWeaklyAssociatedPoints`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityCriterion.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityCriterion.lean#L138). The attribute's comment: “the set WeakAss_{X/Y}(F), which under locally Noetherian fibres is Ass_{X/Y}(F)”.
+**`AlgebraicGeometry.Space.relativeWeaklyAssociatedPoints`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityCriterion.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityCriterion.lean#L138). The attribute's comment: “the set WeakAss\_\{X/Y}(F), which under locally Noetherian fibres is Ass\_\{X/Y}(F)”.
 
 > The relative weak assassin `WeakAss_{X/Y}(F) ⊆ |X|` of an `𝒪_X`-module along a morphism of
 > algebraic spaces. When the fibres of `f` are locally Noetherian this is the set written

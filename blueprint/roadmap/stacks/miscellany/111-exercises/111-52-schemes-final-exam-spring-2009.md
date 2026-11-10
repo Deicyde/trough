@@ -16,7 +16,7 @@ Section 111.52 of the Stacks Project, [Tag 02AV](https://stacks.math.columbia.ed
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.ProjectiveSpectrum.Proj.twistSheafOfModules`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwist.lean#L178), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/ProjectiveSpaceTwist.lean, line 22](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Exercises/ProjectiveSpaceTwist.lean#L22) (StacksFrontier): “sheaf_twist”.
+- [`AlgebraicGeometry.ProjectiveSpectrum.Proj.twistSheafOfModules`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwist.lean#L178), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Exercises/ProjectiveSpaceTwist.lean, line 22](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Exercises/ProjectiveSpaceTwist.lean#L22) (StacksFrontier): “sheaf\_twist”.
 
 ## Depends on
 

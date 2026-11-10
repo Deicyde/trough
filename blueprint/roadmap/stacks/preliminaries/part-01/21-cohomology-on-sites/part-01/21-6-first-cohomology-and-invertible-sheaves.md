@@ -14,7 +14,7 @@ Section 21.6 of the Stacks Project, [Tag 040D](https://stacks.math.columbia.edu/
 
 [Tag 040E](https://stacks.math.columbia.edu/tag/040E) in the Stacks Project.
 
-**`Stacks.Picard.SmallEtaleSite.etaleH1UnitsAddEquivPicardGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/SmallEtaleSiteFirstCohomology.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/SmallEtaleSiteFirstCohomology.lean#L83). The attribute's comment: “the identification H¹_étale(S, 𝐆_m) = Pic(𝒪_étale), on the small étale site”.
+**`Stacks.Picard.SmallEtaleSite.etaleH1UnitsAddEquivPicardGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/SmallEtaleSiteFirstCohomology.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/SmallEtaleSiteFirstCohomology.lean#L83). The attribute's comment: “the identification H¹\_étale(S, 𝐆\_m) = Pic(𝒪\_étale), on the small étale site”.
 
 > **Stacks Project, Tag 040E, at `τ = étale` on the small site.** For a scheme `S` in a big
 > étale site containing it there is a canonical isomorphism of abelian groups

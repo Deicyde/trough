@@ -14,7 +14,7 @@ Section 14.21 of the Stacks Project, [Tag 018K](https://stacks.math.columbia.edu
 
 [Tag 018L](https://stacks.math.columbia.edu/tag/018L) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.Truncated.hasPointwiseLeftKanExtension`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L146). References: SGA 4 V (7.1.0), “existence of i_{n!}”.
+**`CategoryTheory.SimplicialObject.Truncated.hasPointwiseLeftKanExtension`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Skeleton.lean#L146). References: SGA 4 V (7.1.0), “existence of i\_\{n!}”.
 
 > **Stacks 018L**.
 > An `m`-truncated simplicial object `U` of a category `C` with finite colimits has a pointwise

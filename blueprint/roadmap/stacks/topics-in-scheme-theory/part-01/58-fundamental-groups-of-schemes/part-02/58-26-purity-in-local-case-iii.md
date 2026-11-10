@@ -194,7 +194,7 @@ public theorem isEquivalence_finiteEtaleBaseChange_of_formallySmoothNAdic (A B :
     (finiteEtaleBaseChange V.ι).IsEquivalence
 ```
 
-**`Stacks.FundamentalGroup.isEquivalence_finiteEtaleBaseChange_of_formallySmoothNAdic_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FormallySmoothPurity.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FormallySmoothPurity.lean#L190). The attribute's comment: “the equivalence FÉt_Y → FÉt_V, under the tag's hypotheses; nothing is assumed”. References: SGA 1 XIII (4.7), “special case”.
+**`Stacks.FundamentalGroup.isEquivalence_finiteEtaleBaseChange_of_formallySmoothNAdic_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FormallySmoothPurity.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/FormallySmoothPurity.lean#L190). The attribute's comment: “the equivalence FÉt\_Y → FÉt\_V, under the tag's hypotheses; nothing is assumed”. References: SGA 1 XIII (4.7), “special case”.
 
 > **[Stacks, Tag 0EYC]** (Ramanujam--Samuel for finite étale covers). Let `A → B` be a local
 > homomorphism of Noetherian local rings. Assume `A` has depth at least two, `A → B` is formally

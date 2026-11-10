@@ -80,7 +80,7 @@ public def quotientFunctor (S : AffineCrystallineSituation.{u, v}) :
 
 [Tag 07HN](https://stacks.math.columbia.edu/tag/07HN) in the Stacks Project.
 
-**`Crystalline.DividedPowerThickening.hasFiniteProducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean#L473). The attribute's comment: “finite_products”.
+**`Crystalline.DividedPowerThickening.hasFiniteProducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean#L473). The attribute's comment: “finite\_products”.
 
 > **Stacks Project, Tag 07HN, finite-products part.** The category `CRIS(C/A)` of divided
 > power thickenings in an affine crystalline situation has finite products.
@@ -90,7 +90,7 @@ public instance hasFiniteProducts (S : AffineCrystallineSituation.{u, v}) :
     HasFiniteProducts (DividedPowerThickening.{u, v, w} S)
 ```
 
-**`Crystalline.DividedPowerThickening.hasProducts_of_charP`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean#L503). The attribute's comment: “infinite_products_caveat”.
+**`Crystalline.DividedPowerThickening.hasProducts_of_charP`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite.lean#L503). The attribute's comment: “infinite\_products\_caveat”.
 
 > **Stacks Project, Tag 07HN, infinite-products caveat.** If the base ring has
 > characteristic `p`, the category `CRIS(C/A)` has arbitrary products.
@@ -100,7 +100,7 @@ public instance hasProducts_of_charP (S : AffineCrystallineSituation.{u, v}) [Ch
     HasProducts.{w} (DividedPowerThickening.{u, v, w} S)
 ```
 
-**`Crystalline.hasNonemptyFiniteColimits_dividedPowerThickening`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean#L41). The attribute's comment: “cris_colimits”.
+**`Crystalline.hasNonemptyFiniteColimits_dividedPowerThickening`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean#L41). The attribute's comment: “cris\_colimits”.
 
 > **Stacks Project, Tag 07HN.** In an affine crystalline situation, the
 > category `CRIS(C/A)` has all nonempty finite colimits.
@@ -112,7 +112,7 @@ public instance hasNonemptyFiniteColimits_dividedPowerThickening
       (DividedPowerThickening.{u, v, w} S)
 ```
 
-**`Crystalline.preservesColimitsOfShape_quotientFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean#L250). The attribute's comment: “quotient_preserves_colimits”.
+**`Crystalline.preservesColimitsOfShape_quotientFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean#L250). The attribute's comment: “quotient\_preserves\_colimits”.
 
 > **Stacks Project, Tag 07HN.** The quotient functor from `CRIS(C/A)` to
 > commutative `C`-algebras preserves all nonempty finite colimits.
@@ -124,7 +124,7 @@ public instance preservesColimitsOfShape_quotientFunctor
     PreservesColimitsOfShape J (quotientFunctor.{u, v, w} S)
 ```
 
-**`Crystalline.DividedPowerThickening.instHasNonemptyFiniteColimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean#L334). The attribute's comment: “little_cris_colimits”.
+**`Crystalline.DividedPowerThickening.instHasNonemptyFiniteColimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean#L334). The attribute's comment: “little\_cris\_colimits”.
 
 > **Stacks Project, Tag 07HN.** In an affine crystalline situation, the little
 > crystalline category `Cris(C/A)` has all finite nonempty colimits.
@@ -136,7 +136,7 @@ public instance instHasNonemptyFiniteColimits
       (CrystallineThickening.{u, v, w} S)
 ```
 
-**`Crystalline.preservesColimitsOfShape_crystallineThickeningInclusion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean#L352). The attribute's comment: “little_cris_inclusion”.
+**`Crystalline.preservesColimitsOfShape_crystallineThickeningInclusion`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/Colimit/NonemptyFiniteColimits.lean#L352). The attribute's comment: “little\_cris\_inclusion”.
 
 > **Stacks Project, Tag 07HN.** The inclusion `Cris(C/A) ⥤ CRIS(C/A)`
 > preserves finite nonempty colimits.
@@ -154,7 +154,7 @@ public instance preservesColimitsOfShape_crystallineThickeningInclusion
 
 [Tag 07KH](https://stacks.math.columbia.edu/tag/07KH) in the Stacks Project.
 
-**`Crystalline.CompletedCrystallineThickening`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L95). The attribute's comment: “completed_affine_crystalline_site”.
+**`Crystalline.CompletedCrystallineThickening`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L95). The attribute's comment: “completed\_affine\_crystalline\_site”.
 
 > An object of the completed affine crystalline category `Cris^∧(C/A)`: a divided
 > power thickening whose underlying ring is complete for the `p`-adic topology.
@@ -164,7 +164,7 @@ public structure CompletedCrystallineThickening
     (S : AffineCrystallineSituation.{u, v})
 ```
 
-**`Crystalline.CompletedCrystallineThickening.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L119). The attribute's comment: “completed_affine_crystalline_site”.
+**`Crystalline.CompletedCrystallineThickening.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L119). The attribute's comment: “completed\_affine\_crystalline\_site”.
 
 > A morphism in `Cris^∧(C/A)` is a divided power map over `A` whose induced quotient
 > map is compatible with the structural maps from `C`.
@@ -174,7 +174,7 @@ public structure Hom
     (X Y : CompletedCrystallineThickening.{u, v, w} S)
 ```
 
-**An instance with no name** in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L129). The attribute's comment: “completed_affine_crystalline_site”.
+**An instance with no name** in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L129). The attribute's comment: “completed\_affine\_crystalline\_site”.
 
 > The category structure on the completed affine crystalline category `Cris^∧(C/A)`.
 
@@ -183,7 +183,7 @@ public instance :
     Category (CompletedCrystallineThickening.{u, v, w} S)
 ```
 
-**`Crystalline.crystallineEquivalenceNilpotentCompleted`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L230). The attribute's comment: “nilpotent_objects”.
+**`Crystalline.crystallineEquivalenceNilpotentCompleted`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L230). The attribute's comment: “nilpotent\_objects”.
 
 > The ordinary crystalline category is canonically the full subcategory of the
 > completed crystalline category consisting of the `p`-nilpotent objects.
@@ -198,7 +198,7 @@ public noncomputable def crystallineEquivalenceNilpotentCompleted
       (∀ X Y (f : X ⟶ Y), HEq (E.functor.map f).hom.hom f.hom.hom) }
 ```
 
-**`Crystalline.exists_finiteLevelSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L383). The attribute's comment: “finite_level_approximation”.
+**`Crystalline.exists_finiteLevelSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FiniteLevel.lean#L383). The attribute's comment: “finite\_level\_approximation”.
 
 > A completed crystalline thickening is the inverse limit of its finite-level
 > crystalline quotients by powers of `p`.
@@ -209,7 +209,7 @@ public theorem exists_finiteLevelSystem
     Nonempty (FiniteLevelSystem X)
 ```
 
-**`Crystalline.completedCrystallineToPro`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FullyFaithful.lean, line 569](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FullyFaithful.lean#L569). The attribute's comment: “pro_objects”.
+**`Crystalline.completedCrystallineToPro`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FullyFaithful.lean, line 569](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FullyFaithful.lean#L569). The attribute's comment: “pro\_objects”.
 
 > The canonical pro-object construction sends each completed thickening to its
 > system of sufficiently deep crystalline quotients. On a morphism, its component
@@ -240,7 +240,7 @@ public noncomputable def completedCrystallineToPro
                   (op (op i))) }
 ```
 
-**`Crystalline.completedCrystallineToPro_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FullyFaithful.lean, line 634](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FullyFaithful.lean#L634). The attribute's comment: “pro_objects”.
+**`Crystalline.completedCrystallineToPro_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FullyFaithful.lean, line 634](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineSite/ProObject/FullyFaithful.lean#L634). The attribute's comment: “pro\_objects”.
 
 > Completed crystalline thickenings form a full subcategory of crystalline
 > pro-objects under the finite-level quotient construction.

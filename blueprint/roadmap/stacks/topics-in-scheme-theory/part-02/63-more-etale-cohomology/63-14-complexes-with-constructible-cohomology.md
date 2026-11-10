@@ -14,7 +14,7 @@ Section 63.14 of the Stacks Project, [Tag 0GK2](https://stacks.math.columbia.edu
 
 [Tag 0GK3](https://stacks.math.columbia.edu/tag/0GK3) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isConstructible_moduleFShriekDerivedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/QuasiFiniteShriek.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/QuasiFiniteShriek.lean#L179). The attribute's comment: “the source's reduction of the tag to its sheaf-level case, which is carried as hShriekSheaf: granted that a Λ-linear lift of f_! takes constructible sheaves of Λ-modules to constructible sheaves for every locally quasi-finite morphism of finite presentation, the functor f_! of Stacks 0F5N on unbounded derived categories sends D_c into D_c. The step from sheaves to complexes, exactness of f_! and hence Hⁱ(f_! K) ≅ f_!(Hⁱ K), is proved”.
+**`Stacks.EtaleCohomology.isConstructible_moduleFShriekDerivedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/QuasiFiniteShriek.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ConstructibleComplexes/QuasiFiniteShriek.lean#L179). The attribute's comment: “the source's reduction of the tag to its sheaf-level case, which is carried as hShriekSheaf: granted that a Λ-linear lift of f\_! takes constructible sheaves of Λ-modules to constructible sheaves for every locally quasi-finite morphism of finite presentation, the functor f\_! of Stacks 0F5N on unbounded derived categories sends D\_c into D\_c. The step from sheaves to complexes, exactness of f\_! and hence Hⁱ(f\_! K) ≅ f\_!(Hⁱ K), is proved”.
 
 > **Stacks 0GK3**, granted the sheaf-level case. Let `Λ` be a Noetherian ring and let
 > `f : X ⟶ Y` be a morphism of schemes which is locally quasi-finite and of finite presentation.
@@ -56,7 +56,7 @@ public theorem isConstructible_moduleFShriekDerivedFunctor_general
 
 [Tag 0GKX](https://stacks.math.columbia.edu/tag/0GKX) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isConstructibleEtaleModule_homology_derivedLowerShriek_constantSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityRegistration.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityRegistration.lean#L66). The attribute's comment: “S Noetherian (affine and finite-dimensional not needed); Rf_! through any compactification j of f; Λ torsion as m = 0 in Λ for some m > 0”.
+**`Stacks.EtaleCohomology.isConstructibleEtaleModule_homology_derivedLowerShriek_constantSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityRegistration.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityRegistration.lean#L66). The attribute's comment: “S Noetherian (affine and finite-dimensional not needed); Rf\_! through any compactification j of f; Λ torsion as m = 0 in Λ for some m > 0”.
 
 > **Stacks 0GKX.** Let `S` be a Noetherian scheme of `B`, `f : X ⟶ S` a separated, affine,
 > smooth morphism of relative dimension `1`, `j` a compactification of `f` (through which
@@ -80,7 +80,7 @@ theorem isConstructibleEtaleModule_homology_derivedLowerShriek_constantSheaf
 
 [Tag 0GKY](https://stacks.math.columbia.edu/tag/0GKY) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isConstructibleEtaleModule_homology_derivedLowerShriek_openAffineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityUnconditional.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityUnconditional.lean#L145). The attribute's comment: “Y Noetherian affine (finite dimension not needed); U given with an open immersion ι : U ⟶ A¹_Y; Λ torsion as m = 0 in Λ for some m > 0; Rf_! through any compactification j of f”.
+**`Stacks.EtaleCohomology.isConstructibleEtaleModule_homology_derivedLowerShriek_openAffineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityUnconditional.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityUnconditional.lean#L145). The attribute's comment: “Y Noetherian affine (finite dimension not needed); U given with an open immersion ι : U ⟶ A¹\_Y; Λ torsion as m = 0 in Λ for some m > 0; Rf\_! through any compactification j of f”.
 
 > **Stacks 0GKY.** Let `Y` be a Noetherian affine scheme of `B`, `Λ` a Noetherian ring which is
 > torsion (`m = 0` in `Λ` for some `m > 0`), `ι : U ⟶ 𝔸¹_Y` an open immersion,
@@ -104,7 +104,7 @@ theorem isConstructibleEtaleModule_homology_derivedLowerShriek_openAffineLine
 
 [Tag 0GKZ](https://stacks.math.columbia.edu/tag/0GKZ) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isConstructibleEtaleModule_homology_derivedLowerShriek_affineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityUnconditional.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityUnconditional.lean#L127). The attribute's comment: “A¹_Y given as X with an isomorphism ι : X ≅ A¹_Y; Rf_! through any compactification j of f”.
+**`Stacks.EtaleCohomology.isConstructibleEtaleModule_homology_derivedLowerShriek_affineLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityUnconditional.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityUnconditional.lean#L127). The attribute's comment: “A¹\_Y given as X with an isomorphism ι : X ≅ A¹\_Y; Rf\_! through any compactification j of f”.
 
 > **Stacks 0GKZ.** Let `Y` be an affine scheme of `B`, `Λ` a Noetherian ring, `ι : X ≅ 𝔸¹_Y`,
 > `f = ι ≫ (𝔸¹_Y ⟶ Y)` the structure morphism, `j` a compactification of `f`, and `F` a
@@ -126,7 +126,7 @@ theorem isConstructibleEtaleModule_homology_derivedLowerShriek_affineLine
 
 [Tag 0GL0](https://stacks.math.columbia.edu/tag/0GL0) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isConstructibleTorsion_homology_derivedLowerShriek_of_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityTorsion.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityTorsion.lean#L49). The attribute's comment: “both cases: K in D+_{tors,c}(X, Λ), and K in D_c(X, Λ) when Λ is torsion (m = 0 in Λ for some m > 0; Rf_! on D(X, Λ) is derivedLowerShriekUnbounded); Rf_! through any compactification j of f”.
+**`Stacks.EtaleCohomology.isConstructibleTorsion_homology_derivedLowerShriek_of_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityTorsion.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityTorsion.lean#L49). The attribute's comment: “both cases: K in D+\_\{tors,c}(X, Λ), and K in D\_c(X, Λ) when Λ is torsion (m = 0 in Λ for some m > 0; Rf\_! on D(X, Λ) is derivedLowerShriekUnbounded); Rf\_! through any compactification j of f”.
 
 > **Stacks 0GL0.** Let `f : X ⟶ Y` be a separated morphism of finite presentation of schemes of
 > `B`, with `Y` quasi-compact and quasi-separated (hence so is `X`), `j` a compactification of `f`
@@ -159,7 +159,7 @@ theorem isConstructibleTorsion_homology_derivedLowerShriek_of_isConstructible
           ((derivedLowerShriekUnbounded.{u, 0} f j Λ).obj K)))
 ```
 
-**`Stacks.EtaleCohomology.isConstructibleEtaleModule_homology_derivedLowerShriek_of_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityUnconditional.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityUnconditional.lean#L99). The attribute's comment: “both cases: K in D+_{tors,c}(X, Λ), and K in D_c(X, Λ) when Λ is torsion (m = 0 in Λ for some m > 0; Rf_! on D(X, Λ) is derivedLowerShriekUnbounded); Rf_! through any compactification j of f”.
+**`Stacks.EtaleCohomology.isConstructibleEtaleModule_homology_derivedLowerShriek_of_isConstructible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityUnconditional.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedLowerShriek/ConstructibilityUnconditional.lean#L99). The attribute's comment: “both cases: K in D+\_\{tors,c}(X, Λ), and K in D\_c(X, Λ) when Λ is torsion (m = 0 in Λ for some m > 0; Rf\_! on D(X, Λ) is derivedLowerShriekUnbounded); Rf\_! through any compactification j of f”.
 
 > **Stacks 0GL0.** Let `f : X ⟶ Y` be a separated morphism of finite presentation of schemes of
 > `B`, with `Y` quasi-compact and quasi-separated (hence so is `X`), `j` a compactification of `f`

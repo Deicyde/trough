@@ -290,7 +290,7 @@ theorem isEquivalence_affineEtalePullback (f : X ⟶ Y) (hf : IsIntegralHom B S 
 
 [Tag 05ZI](https://stacks.math.columbia.edu/tag/05ZI) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_of_isFinite_of_etale_of_connectedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/AffineLineFiniteEtaleCovering.lean, line 29](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/AffineLineFiniteEtaleCovering.lean#L29). The attribute's comment: “the input: A^1_k has no nontrivial connected finite étale covering when k is algebraically closed of characteristic 0 (details omitted in the source)”.
+**`AlgebraicGeometry.isIso_of_isFinite_of_etale_of_connectedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/AffineLineFiniteEtaleCovering.lean, line 29](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/AffineLineFiniteEtaleCovering.lean#L29). The attribute's comment: “the input: A^1\_k has no nontrivial connected finite étale covering when k is algebraically closed of characteristic 0 (details omitted in the source)”.
 
 > Over an algebraically closed field `k` of characteristic zero, a finite étale morphism
 > `Y ⟶ 𝐀¹_k = Spec k[X]` with `Y` connected is an isomorphism.
@@ -301,7 +301,7 @@ theorem isIso_of_isFinite_of_etale_of_connectedSpace {k : Type u} [Field k] [IsA
     [ConnectedSpace Y] : IsIso f
 ```
 
-**`AlgebraicGeometry.Space.universalHomeomorphism_squaringMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversalHomeomorphism.lean, line 772](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversalHomeomorphism.lean#L772). The attribute's comment: “the remark's own last sentence: there exists a universal homeomorphism X ⟶ 𝐀¹_k, exhibited directly by t ↦ t² on affine spaces. NOT asserted: that this X is the same as the quotient Y/G of the remark's alternative construction, that Y ⟶ X is a nontrivial connected finite étale covering, and that 𝐀¹_k has no nontrivial connected finite étale coverings”.
+**`AlgebraicGeometry.Space.universalHomeomorphism_squaringMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversalHomeomorphism.lean, line 772](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversalHomeomorphism.lean#L772). The attribute's comment: “the remark's own last sentence: there exists a universal homeomorphism X ⟶ 𝐀¹\_k, exhibited directly by t ↦ t² on affine spaces. NOT asserted: that this X is the same as the quotient Y/G of the remark's alternative construction, that Y ⟶ X is a nontrivial connected finite étale covering, and that 𝐀¹\_k has no nontrivial connected finite étale coverings”.
 
 > **Stacks 05ZI, the last sentence: there is a universal homeomorphism `X ⟶ 𝐀¹_k`, exhibited
 > directly by `t ↦ t ^ 2` on affine space.**
@@ -394,7 +394,7 @@ theorem chartSwapNegation_comp_self (k : Type u) [Field k] (n : ℕ) :
     chartSwapNegation k n ≫ chartSwapNegation k n = 𝟙 _
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.isPullback_chartPairToDoubledLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DoubledLineEtaleCovering/CartesianSquare.lean, line 622](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/DoubledLineEtaleCovering/CartesianSquare.lean#L622). The attribute's comment: “the remark's cartesian square: Y ← Y₁ ⨿ Y₂ over X ← 𝐀¹_k is cartesian”.
+**`AlgebraicGeometry.AffineLineInvolution.isPullback_chartPairToDoubledLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DoubledLineEtaleCovering/CartesianSquare.lean, line 622](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/DoubledLineEtaleCovering/CartesianSquare.lean#L622). The attribute's comment: “the remark's cartesian square: Y ← Y₁ ⨿ Y₂ over X ← 𝐀¹\_k is cartesian”.
 
 > **Stacks 05ZI: the square of the remark is cartesian.** Away from characteristic two a
 > morphism into `Y` together with a morphism into the chart `𝐀¹_k` of Stacks 05Z6 having the same
@@ -437,7 +437,7 @@ theorem nontrivial_connected_finiteEtale_degreeTwo_coveringMorphism (hchar : (2 
         s ≫ coveringMorphism k B hk = 𝟙 (involutionQuotient k B hk).obj
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.doubledLine_freeAction_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DoubledLineInvolutionQuotient.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/DoubledLineInvolutionQuotient.lean#L519). The attribute's comment: “the remark's alternative construction: G = {±1} acts freely on Y, -1 swapping the two charts and negating the coordinate, and X = Y/G in the sense of Spaces, Definition 02Z3”.
+**`AlgebraicGeometry.AffineLineInvolution.doubledLine_freeAction_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/DoubledLineInvolutionQuotient.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/DoubledLineInvolutionQuotient.lean#L519). The attribute's comment: “the remark's alternative construction: G = \{±1} acts freely on Y, -1 swapping the two charts and negating the coordinate, and X = Y/G in the sense of Spaces, Definition 02Z3”.
 
 > **Stacks 05ZI, the remark's alternative construction.** Away from characteristic two, the
 > affine line with its origin doubled carries an action of the group `G = \{+1, -1\} = ℤˣ` in
@@ -466,7 +466,7 @@ theorem doubledLine_freeAction_quotient (hchar : (2 : k) ≠ 0)
               (doubledLineAction k B hk))
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.squaringMap_universalHomeomorphism_not_representable_not_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/SquaringMapEtaleSiteFailure.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/SquaringMapEtaleSiteFailure.lean#L383). The attribute's comment: “the remark's two assertions: X ⟶ 𝐀¹_k is a universal homeomorphism which is not representable, and base change along it is not an equivalence of spaces-étale sites (it is not essentially surjective), so Theorem 05ZH fails for universal homeomorphisms”.
+**`AlgebraicGeometry.AffineLineInvolution.squaringMap_universalHomeomorphism_not_representable_not_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/SquaringMapEtaleSiteFailure.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/SquaringMapEtaleSiteFailure.lean#L383). The attribute's comment: “the remark's two assertions: X ⟶ 𝐀¹\_k is a universal homeomorphism which is not representable, and base change along it is not an equivalence of spaces-étale sites (it is not essentially surjective), so Theorem 05ZH fails for universal homeomorphisms”.
 
 > **Stacks 05ZI.** Let `k` be an algebraically closed field of characteristic zero and let
 > `𝐀¹_k ⟶ X ⟶ 𝐀¹_k` be as in Stacks 05Z6, with `X ⟶ 𝐀¹_k` the morphism descended from squaring

@@ -53,7 +53,7 @@ noncomputable def equivariantPullback (f : Y ⟶ X) [IsModHom G f] :
 
 [Tag 0EKJ](https://stacks.math.columbia.edu/tag/0EKJ) in the Stacks Project.
 
-**`AlgebraicGeometry.gradedGmAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GradedAction.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GradedAction.lean#L189). The attribute's comment: “graded_ring_gm_action”. References: EGA II (8.3.9), “partial”.
+**`AlgebraicGeometry.gradedGmAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GradedAction.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GradedAction.lean#L189). The attribute's comment: “graded\_ring\_gm\_action”. References: EGA II (8.3.9), “partial”.
 
 > **Stacks Project, Tag 0EKJ.** An integer grading defines the multiplicative-group action
 > on the spectrum whose coordinate map sends a homogeneous element of degree `n` to `a ⊗ Tⁿ`.
@@ -78,7 +78,7 @@ theorem gradedDescentMorphism_homogeneous {n : ℤ} (m : ℳ n) :
         (tilde (moduleOf A M)) (tilde.toOpen (moduleOf A M) ⊤ (m : M))
 ```
 
-**`AlgebraicGeometry.GmEquivariant.gradedModuleEquivariantSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GradedModuleEquivariantSheaf.lean, line 619](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GradedModuleEquivariantSheaf.lean#L619). The attribute's comment: “graded_module_equivariant_sheaf”.
+**`AlgebraicGeometry.GmEquivariant.gradedModuleEquivariantSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GradedModuleEquivariantSheaf.lean, line 619](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GradedModuleEquivariantSheaf.lean#L619). The attribute's comment: “graded\_module\_equivariant\_sheaf”.
 
 > Let `A` be a `ℤ`-graded ring and let `X = Spec A` carry the `𝐆ₘ`-action attached to the
 > grading. A graded `A`-module `M` makes the associated quasi-coherent module `M~` a

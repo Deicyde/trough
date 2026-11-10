@@ -236,7 +236,7 @@ theorem exists_finiteSeparableExtension_smoothAt_genericPoints_fiber_normalizati
 > characteristic zero is separable, and the conclusion of Tag 0BRS contains that of Tag 0BRQ.
 > Quasi-compactness of `X` repairs the statement (only the finitely many affine opens covering the
 > image of `X` matter), and it is implied by that of `S`
-> (`AlgebraicGeometry.exists_finiteSeparableExtension_smoothAt_genericPoints_normalization_of_\
+> (`AlgebraicGeometry.exists\_finiteSeparableExtension\_smoothAt\_genericPoints\_normalization\_of\_\
 > compactSpace`).
 
 ```lean

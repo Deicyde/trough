@@ -39,7 +39,7 @@ public theorem isFlatMapULift_inverseImageStructureMap :
 
 [Tag 06VE](https://stacks.math.columbia.edu/tag/06VE) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.baseAssociatedModuleTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseAssociatedModuleTensor.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseAssociatedModuleTensor.lean#L177). The attribute's comment: “part (7), big site (Sch/S)_τ at every τ, for arbitrary 𝒪_S-modules”.
+**`AlgebraicGeometry.BigFppfOver.baseAssociatedModuleTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseAssociatedModuleTensor.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseAssociatedModuleTensor.lean#L177). The attribute's comment: “part (7), big site (Sch/S)\_τ at every τ, for arbitrary 𝒪\_S-modules”.
 
 > **Descent, Lemma 06VE (7) for the big `τ`-site, at every
 > `τ ∈ {Zariski, étale, smooth, syntomic, fppf}`.**  The comparison `𝓕 ↦ 𝓕^a` of Descent,
@@ -70,7 +70,7 @@ public def baseAssociatedModuleTensorIso (τ : SiteKind) (H I : S.Modules) :
         ((baseAssociatedModule B S hS τ).obj I)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.essImage_X₂_of_shortExact_big`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseExtensionEssImage.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseExtensionEssImage.lean#L118). The attribute's comment: “part (10), big site (Sch/S)_τ at every τ ∈ {Zariski, étale, smooth, syntomic, fppf}, for the PULLBACK-defined functor 𝓕 ↦ 𝓕ᵃ of Remark 03FH. The same clause for the sections-defined 𝓕ᵃ of Definition 03DU (3) is exists_isoSections_X₂_of_shortExact_big; the two sheaves are identified by baseAssociatedModuleIsoSections, Stacks 070S (1). The clause read as "the middle term is quasi-coherent", which names no functor, is clause (4) of Stacks 0GNC and sits on isQuasicoherentOnSite_shortExact_X₂_all”.
+**`AlgebraicGeometry.BigFppfOver.essImage_X₂_of_shortExact_big`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseExtensionEssImage.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseExtensionEssImage.lean#L118). The attribute's comment: “part (10), big site (Sch/S)\_τ at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, for the PULLBACK-defined functor 𝓕 ↦ 𝓕ᵃ of Remark 03FH. The same clause for the sections-defined 𝓕ᵃ of Definition 03DU (3) is exists\_isoSections\_X₂\_of\_shortExact\_big; the two sheaves are identified by baseAssociatedModuleIsoSections, Stacks 070S (1). The clause read as "the middle term is quasi-coherent", which names no functor, is clause (4) of Stacks 0GNC and sits on isQuasicoherentOnSite\_shortExact\_X₂\_all”.
 
 > **Stacks 06VE (10) on the big site `(Sch/S)_τ`, at every
 > `τ ∈ {Zariski, étale, smooth, syntomic, fppf}` and with no hypothesis.**  Given a short exact
@@ -97,7 +97,7 @@ public theorem essImage_X₂_of_shortExact_big (τ : SiteKind)
     (baseAssociatedModuleQcoh B S hS τ).essImage C.X₂
 ```
 
-**`AlgebraicGeometry.BigFppfOver.exists_isoSections_X₂_of_shortExact_big`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseExtensionEssImage.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseExtensionEssImage.lean#L176). The attribute's comment: “part (10), big site (Sch/S)_τ at every τ ∈ {Zariski, étale, smooth, syntomic, fppf}, for the SECTIONS-defined 𝓕ᵃ of Definition 03DU (3) — the τ-sheafification of (f : T → S) ↦ Γ(T, f^*𝓕). The same clause for the pullback-defined functor of Remark 03FH is essImage_X₂_of_shortExact_big; the two sheaves are identified by baseAssociatedModuleIsoSections, Stacks 070S (1)”.
+**`AlgebraicGeometry.BigFppfOver.exists_isoSections_X₂_of_shortExact_big`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseExtensionEssImage.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseExtensionEssImage.lean#L176). The attribute's comment: “part (10), big site (Sch/S)\_τ at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, for the SECTIONS-defined 𝓕ᵃ of Definition 03DU (3) — the τ-sheafification of (f : T → S) ↦ Γ(T, f^*𝓕). The same clause for the pullback-defined functor of Remark 03FH is essImage\_X₂\_of\_shortExact\_big; the two sheaves are identified by baseAssociatedModuleIsoSections, Stacks 070S (1)”.
 
 > **Stacks 06VE (10) on the big site `(Sch/S)_τ` at every `τ`, for the sheaf the source
 > constructs.**  Given a short exact sequence `0 → 𝓕₁ᵃ → 𝓔 → 𝓕₂ᵃ → 0` of `𝒪`-modules on
@@ -170,7 +170,7 @@ public noncomputable def fullyFaithfulBaseAssociatedModuleQcoh (τ : SiteKind) :
     (baseAssociatedModuleQcoh B S hS τ).FullyFaithful
 ```
 
-**`AlgebraicGeometry.AssociatedModuleNotExact.not_mono_map_two_nsmul_qcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BigSiteNotExact.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BigSiteNotExact.lean#L322). The attribute's comment: “part (6), the witness: at S = Spec(ℤ), on every big site and at every τ, the monomorphism 2 : 𝒪_S → 𝒪_S of QCoh(𝒪_S) has non-monomorphic image”.
+**`AlgebraicGeometry.AssociatedModuleNotExact.not_mono_map_two_nsmul_qcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BigSiteNotExact.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BigSiteNotExact.lean#L322). The attribute's comment: “part (6), the witness: at S = Spec(ℤ), on every big site and at every τ, the monomorphism 2 : 𝒪\_S → 𝒪\_S of QCoh(𝒪\_S) has non-monomorphic image”.
 
 > **Stacks 06VE (6), the witness.**  For `S = Spec(ℤ)`, every big fppf site containing it and
 > every `τ ∈ {Zariski, étale, smooth, syntomic, fppf}`, the monomorphism `2 : 𝒪_S → 𝒪_S` of
@@ -196,7 +196,7 @@ public theorem not_preservesMonomorphisms_baseAssociatedModuleQcoh :
     ¬ (associatedModuleQcoh B τ).PreservesMonomorphisms
 ```
 
-**`AlgebraicGeometry.AssociatedModuleNotExact.not_preservesFiniteLimits_baseAssociatedModuleQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BigSiteNotExact.lean, line 349](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BigSiteNotExact.lean#L349). The attribute's comment: “part (6): the functor QCoh(𝒪_S) → Mod((Sch/S)_τ, 𝒪) is not left exact, at S = Spec(ℤ), on every big site and at every τ; with part (4) this is the failure of exactness”.
+**`AlgebraicGeometry.AssociatedModuleNotExact.not_preservesFiniteLimits_baseAssociatedModuleQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BigSiteNotExact.lean, line 349](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BigSiteNotExact.lean#L349). The attribute's comment: “part (6): the functor QCoh(𝒪\_S) → Mod((Sch/S)\_τ, 𝒪) is not left exact, at S = Spec(ℤ), on every big site and at every τ; with part (4) this is the failure of exactness”.
 
 > **Stacks 06VE (6).**  The functor `QCoh(𝒪_S) → Mod((Sch/S)_τ, 𝒪)`, `𝓕 ↦ 𝓕^a`, is **not**
 > exact in general: at `S = Spec(ℤ)` it does not preserve finite limits, on every big fppf site
@@ -257,7 +257,7 @@ public theorem exists_isQuasicoherent_not_iso_sheafHom :
             ((associatedModule B τ).obj F) ((associatedModule B τ).obj G))
 ```
 
-**`AlgebraicGeometry.SmallEtale.associatedModuleTensorBifunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleAssociatedModuleTensorBifunctor.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleAssociatedModuleTensorBifunctor.lean#L99). The attribute's comment: “part (7), small site at τ = étale, for all 𝒪_S-modules; bifunctor form, whose components are the objectwise form in which the source states the clause”.
+**`AlgebraicGeometry.SmallEtale.associatedModuleTensorBifunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleAssociatedModuleTensorBifunctor.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleAssociatedModuleTensorBifunctor.lean#L99). The attribute's comment: “part (7), small site at τ = étale, for all 𝒪\_S-modules; bifunctor form, whose components are the objectwise form in which the source states the clause”.
 
 > **Stacks 06VE (7) at `τ = étale`.**  The functor `𝓕 ↦ 𝓕^a` into the `𝒪`-modules of the small
 > étale site of `S` carries the tensor product of two `𝒪_S`-modules to the tensor product of their
@@ -316,7 +316,7 @@ public theorem essImage_X₂_of_shortExact (hC : C.ShortExact)
     (associatedModuleQcoh B S hS).essImage C.X₂
 ```
 
-**`AlgebraicGeometry.SmallEtale.associatedModuleInternalHomSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteSheafHomComparison.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteSheafHomComparison.lean#L182). The attribute's comment: “part (8), small site at τ = étale, for the pullback-defined functor 𝓕 ↦ 𝓕ᵃ of Remark 03FH and Tag 03EM's internal Hom on S_étale”.
+**`AlgebraicGeometry.SmallEtale.associatedModuleInternalHomSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteSheafHomComparison.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteSheafHomComparison.lean#L182). The attribute's comment: “part (8), small site at τ = étale, for the pullback-defined functor 𝓕 ↦ 𝓕ᵃ of Remark 03FH and Tag 03EM's internal Hom on S\_étale”.
 
 > **Stacks 06VE (8) at `τ = étale`.**  For `𝒪_S`-modules `𝓕`, `𝓖` on a scheme `S` with `𝓖`
 > quasi-coherent and `𝓕` of finite presentation — Stacks 03DL (7) on the site of opens of `S` —
@@ -348,7 +348,7 @@ def associatedModuleInternalHomSheafIso (𝓕 𝓖 : S.Modules)
         ((associatedModule B S hS).obj 𝓖)
 ```
 
-**`AlgebraicGeometry.SmallZariski.associatedModuleInternalHomSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteSheafHomComparisonZariski.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteSheafHomComparisonZariski.lean#L155). The attribute's comment: “part (8), small site at τ = Zariski, for the pullback-defined functor 𝓕 ↦ 𝓕ᵃ of Remark 03FH and Tag 03EM's internal Hom on S_Zar, for all 𝒪_S-modules”.
+**`AlgebraicGeometry.SmallZariski.associatedModuleInternalHomSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteSheafHomComparisonZariski.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteSheafHomComparisonZariski.lean#L155). The attribute's comment: “part (8), small site at τ = Zariski, for the pullback-defined functor 𝓕 ↦ 𝓕ᵃ of Remark 03FH and Tag 03EM's internal Hom on S\_Zar, for all 𝒪\_S-modules”.
 
 > **Stacks 06VE (8) at `τ = Zariski`.**  For `𝒪_S`-modules `𝓕` and `𝓖` on a scheme `S`,
 >
@@ -499,7 +499,7 @@ public noncomputable def fullyFaithfulAssociatedModuleQcoh :
     (associatedModuleQcoh B S hS).FullyFaithful
 ```
 
-**`AlgebraicGeometry.SmallZariski.preservesColimitsOfShape_discrete_associatedSheafFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean#L236). The attribute's comment: “part (2), small site at τ = Zariski, for the SECTIONS-defined functor 𝓕 ↦ 𝓕ᵃ of Definition 03DU (4) — SmallZariski.associatedSheafFunctor. The same clause for the pullback-defined functor of Remark 03FH is preservesColimitsOfShape_discrete_associatedModuleQcohOfComparison; the two functors are identified by associatedModuleQcohIsoAssociatedSheafFunctor”.
+**`AlgebraicGeometry.SmallZariski.preservesColimitsOfShape_discrete_associatedSheafFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean#L236). The attribute's comment: “part (2), small site at τ = Zariski, for the SECTIONS-defined functor 𝓕 ↦ 𝓕ᵃ of Definition 03DU (4) — SmallZariski.associatedSheafFunctor. The same clause for the pullback-defined functor of Remark 03FH is preservesColimitsOfShape\_discrete\_associatedModuleQcohOfComparison; the two functors are identified by associatedModuleQcohIsoAssociatedSheafFunctor”.
 
 > **[Stacks, Tag 06VE] (2) for the small site at `τ = Zariski`, for the functor the source
 > defines.**  The sections-defined `𝓕 ↦ 𝓕ᵃ` of [Stacks, Tag 03DU] (4), as a functor
@@ -515,7 +515,7 @@ public theorem preservesColimitsOfShape_discrete_associatedSheafFunctor (I : Typ
     PreservesColimitsOfShape (Discrete I) (associatedSheafFunctor B S hS)
 ```
 
-**`AlgebraicGeometry.SmallZariski.preservesColimitsOfSize_associatedSheafFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean#L251). The attribute's comment: “part (3), small site at τ = Zariski, for the SECTIONS-defined functor 𝓕 ↦ 𝓕ᵃ of Definition 03DU (4) — SmallZariski.associatedSheafFunctor. The same clause for the pullback-defined functor of Remark 03FH is preservesColimitsOfSize_associatedModuleQcohOfComparison; the two functors are identified by associatedModuleQcohIsoAssociatedSheafFunctor”.
+**`AlgebraicGeometry.SmallZariski.preservesColimitsOfSize_associatedSheafFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean#L251). The attribute's comment: “part (3), small site at τ = Zariski, for the SECTIONS-defined functor 𝓕 ↦ 𝓕ᵃ of Definition 03DU (4) — SmallZariski.associatedSheafFunctor. The same clause for the pullback-defined functor of Remark 03FH is preservesColimitsOfSize\_associatedModuleQcohOfComparison; the two functors are identified by associatedModuleQcohIsoAssociatedSheafFunctor”.
 
 > **[Stacks, Tag 06VE] (3) for the small site at `τ = Zariski`, for the functor the source
 > defines.**  The sections-defined `𝓕 ↦ 𝓕ᵃ` commutes with all colimits indexed at the size of the
@@ -529,7 +529,7 @@ public theorem preservesColimitsOfSize_associatedSheafFunctor :
     PreservesColimitsOfSize.{u, u} (associatedSheafFunctor B S hS)
 ```
 
-**`AlgebraicGeometry.SmallZariski.preservesFiniteColimits_associatedSheafFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean#L270). The attribute's comment: “part (4), small site at τ = Zariski, for the SECTIONS-defined functor 𝓕 ↦ 𝓕ᵃ of Definition 03DU (4) — SmallZariski.associatedSheafFunctor. The same clause for the pullback-defined functor of Remark 03FH is preservesFiniteColimits_associatedModuleQcohOfComparison; the two functors are identified by associatedModuleQcohIsoAssociatedSheafFunctor”.
+**`AlgebraicGeometry.SmallZariski.preservesFiniteColimits_associatedSheafFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean#L270). The attribute's comment: “part (4), small site at τ = Zariski, for the SECTIONS-defined functor 𝓕 ↦ 𝓕ᵃ of Definition 03DU (4) — SmallZariski.associatedSheafFunctor. The same clause for the pullback-defined functor of Remark 03FH is preservesFiniteColimits\_associatedModuleQcohOfComparison; the two functors are identified by associatedModuleQcohIsoAssociatedSheafFunctor”.
 
 > **[Stacks, Tag 06VE] (4) for the small site at `τ = Zariski`, for the functor the source
 > defines.**  The sections-defined `𝓕 ↦ 𝓕ᵃ` is right exact, i.e. commutes with finite colimits.
@@ -543,7 +543,7 @@ public theorem preservesFiniteColimits_associatedSheafFunctor :
     PreservesFiniteColimits (associatedSheafFunctor B S hS)
 ```
 
-**`AlgebraicGeometry.SmallZariski.essImage_X₂_of_shortExact_associatedSheafFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean#L310). The attribute's comment: “part (10), small site at τ = Zariski, for the SECTIONS-defined functor 𝓕 ↦ 𝓕ᵃ of Definition 03DU (4) — SmallZariski.associatedSheafFunctor. The same clause for the pullback-defined functor of Remark 03FH is essImage_X₂_of_shortExactOfComparison; the two functors have the same essential image by essImage_associatedSheafFunctor_iff”.
+**`AlgebraicGeometry.SmallZariski.essImage_X₂_of_shortExact_associatedSheafFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean#L310). The attribute's comment: “part (10), small site at τ = Zariski, for the SECTIONS-defined functor 𝓕 ↦ 𝓕ᵃ of Definition 03DU (4) — SmallZariski.associatedSheafFunctor. The same clause for the pullback-defined functor of Remark 03FH is essImage\_X₂\_of\_shortExactOfComparison; the two functors have the same essential image by essImage\_associatedSheafFunctor\_iff”.
 
 > **[Stacks, Tag 06VE] (10) for the small site at `τ = Zariski`, for the functor the source
 > defines.**  Given a short exact sequence `0 → 𝓕₁ᵃ → 𝓔 → 𝓕₂ᵃ → 0` of `𝒪`-modules on the small
@@ -568,7 +568,7 @@ public theorem essImage_X₂_of_shortExact_associatedSheafFunctor
     (associatedSheafFunctor B S hS).essImage C.X₂
 ```
 
-**`AlgebraicGeometry.SmallZariski.fullyFaithfulAssociatedSheafFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsIso.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsIso.lean#L572). The attribute's comment: “part (1), small site at τ = Zariski, for the SECTIONS-defined functor 𝓕 ↦ 𝓕ᵃ of Definition 03DU (4) — SmallZariski.associatedSheafFunctor, whose target Mod(S_Zar, 𝒪) is the target 06VE spells for its second functor. The same clause for the pullback-defined functor of Remark 03FH is fullyFaithfulAssociatedModuleQcoh”.
+**`AlgebraicGeometry.SmallZariski.fullyFaithfulAssociatedSheafFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsIso.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsIso.lean#L572). The attribute's comment: “part (1), small site at τ = Zariski, for the SECTIONS-defined functor 𝓕 ↦ 𝓕ᵃ of Definition 03DU (4) — SmallZariski.associatedSheafFunctor, whose target Mod(S\_Zar, 𝒪) is the target 06VE spells for its second functor. The same clause for the pullback-defined functor of Remark 03FH is fullyFaithfulAssociatedModuleQcoh”.
 
 > **[Stacks, Tag 0GN7] for the small site at `τ = Zariski`, for the functor the source
 > defines**: the assignment `𝓕 ↦ 𝓕ᵃ` of [Stacks, Tag 03DU] (4) — the sheaf of `𝒪`-modules on
@@ -600,7 +600,7 @@ public noncomputable def fullyFaithfulAssociatedSheafFunctor :
     (associatedSheafFunctor B S hS).FullyFaithful
 ```
 
-**`AlgebraicGeometry.BigFppfOver.preservesColimitsOfShape_discrete_associatedModuleQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/AssociatedModuleColimits.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/AssociatedModuleColimits.lean#L252). The attribute's comment: “direct_sums, big site at τ = fppf only”.
+**`AlgebraicGeometry.BigFppfOver.preservesColimitsOfShape_discrete_associatedModuleQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/AssociatedModuleColimits.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/AssociatedModuleColimits.lean#L252). The attribute's comment: “direct\_sums, big site at τ = fppf only”.
 
 > **Stacks 06VE (2).**  The functor `𝓕 ↦ 𝓕^a` commutes with direct sums: a direct sum is a
 > colimit over a discrete index category, so this is the discrete case of clause (3).
@@ -648,7 +648,7 @@ public theorem preservesColimitsOfSize_associatedModuleQcoh :
     PreservesColimitsOfSize.{u, u} (associatedModuleQcoh B S hS)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.preservesColimitsOfShape_discrete_baseAssociatedModuleQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/BaseAssociatedModuleColimits.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/BaseAssociatedModuleColimits.lean#L125). The attribute's comment: “part (2), big site (Sch/S)_τ, every τ”.
+**`AlgebraicGeometry.BigFppfOver.preservesColimitsOfShape_discrete_baseAssociatedModuleQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/BaseAssociatedModuleColimits.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/BaseAssociatedModuleColimits.lean#L125). The attribute's comment: “part (2), big site (Sch/S)\_τ, every τ”.
 
 > **Stacks 06VE (2), for every `τ ∈ {Zariski, étale, smooth, syntomic, fppf}`.**  The functor
 > `QCoh(𝒪_S) ⥤ Mod((Sch/S)_τ, 𝒪)`, `𝓕 ↦ 𝓕^a`, commutes with direct sums: a direct sum is a
@@ -666,7 +666,7 @@ public theorem preservesColimitsOfShape_discrete_baseAssociatedModuleQcoh (I : T
     PreservesColimitsOfShape (Discrete I) (baseAssociatedModuleQcoh B S hS τ)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.preservesColimitsOfSize_baseAssociatedModuleQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/BaseAssociatedModuleColimits.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/BaseAssociatedModuleColimits.lean#L136). The attribute's comment: “part (3), big site (Sch/S)_τ, every τ”.
+**`AlgebraicGeometry.BigFppfOver.preservesColimitsOfSize_baseAssociatedModuleQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/BaseAssociatedModuleColimits.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/BaseAssociatedModuleColimits.lean#L136). The attribute's comment: “part (3), big site (Sch/S)\_τ, every τ”.
 
 > **Stacks 06VE (3), for every `τ ∈ {Zariski, étale, smooth, syntomic, fppf}`.**  The functor
 > `QCoh(𝒪_S) ⥤ Mod((Sch/S)_τ, 𝒪)`, `𝓕 ↦ 𝓕^a`, commutes with all colimits indexed at the size of
@@ -680,7 +680,7 @@ public theorem preservesColimitsOfSize_baseAssociatedModuleQcoh :
     PreservesColimitsOfSize.{u, u} (baseAssociatedModuleQcoh B S hS τ)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.preservesFiniteColimits_baseAssociatedModuleQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/BaseAssociatedModuleColimits.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/BaseAssociatedModuleColimits.lean#L150). The attribute's comment: “part (4), big site (Sch/S)_τ, every τ”.
+**`AlgebraicGeometry.BigFppfOver.preservesFiniteColimits_baseAssociatedModuleQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/BaseAssociatedModuleColimits.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/BaseAssociatedModuleColimits.lean#L150). The attribute's comment: “part (4), big site (Sch/S)\_τ, every τ”.
 
 > **Stacks 06VE (4), for every `τ ∈ {Zariski, étale, smooth, syntomic, fppf}`.**  The functor
 > `QCoh(𝒪_S) ⥤ Mod((Sch/S)_τ, 𝒪)`, `𝓕 ↦ 𝓕^a`, is right exact, i.e. commutes with finite colimits.
@@ -695,7 +695,7 @@ public theorem preservesFiniteColimits_baseAssociatedModuleQcoh :
     PreservesFiniteColimits (baseAssociatedModuleQcoh B S hS τ)
 ```
 
-**`AlgebraicGeometry.SmallEtale.preservesColimitsOfShape_discrete_associatedModuleQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/SmallEtaleAssociatedModuleColimits.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/SmallEtaleAssociatedModuleColimits.lean#L186). The attribute's comment: “direct_sums, small site at τ = étale”.
+**`AlgebraicGeometry.SmallEtale.preservesColimitsOfShape_discrete_associatedModuleQcoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/SmallEtaleAssociatedModuleColimits.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/SmallEtaleAssociatedModuleColimits.lean#L186). The attribute's comment: “direct\_sums, small site at τ = étale”.
 
 > **Stacks 06VE (2) for the small site at `τ = étale`.**  The functor
 > `QCoh(𝒪_S) ⥤ Mod(S_étale, 𝒪)`, `𝓕 ↦ 𝓕^a`, commutes with direct sums: a direct sum is a colimit
@@ -768,7 +768,7 @@ public theorem shortExact_map_associatedModuleQcoh
     (hT : T.ShortExact) : (T.map (associatedModuleQcoh B S hS)).ShortExact
 ```
 
-**`AlgebraicGeometry.SmallZariski.associatedModuleTensorIsoOfComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/SmallZariskiAssociatedModuleTensor.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/SmallZariskiAssociatedModuleTensor.lean#L148). The attribute's comment: “part (7), small site at τ = Zariski, for the PULLBACK-defined functor 𝓕 ↦ 𝓕ᵃ of Remark 03FH, for all 𝒪_S-modules; bifunctor form”.
+**`AlgebraicGeometry.SmallZariski.associatedModuleTensorIsoOfComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/SmallZariskiAssociatedModuleTensor.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/SmallZariskiAssociatedModuleTensor.lean#L148). The attribute's comment: “part (7), small site at τ = Zariski, for the PULLBACK-defined functor 𝓕 ↦ 𝓕ᵃ of Remark 03FH, for all 𝒪\_S-modules; bifunctor form”.
 
 > **Stacks 06VE (7) at `τ = Zariski`.**  The functor `𝓕 ↦ 𝓕^a` into the `𝒪`-modules of the
 > small Zariski site of `S` carries the tensor product of two `𝒪_S`-modules to the tensor product
@@ -798,7 +798,7 @@ public def associatedModuleTensorIsoOfComparison :
           (smallZariskiRingedSite B S hS).O)
 ```
 
-**`AlgebraicGeometry.SmallZariski.associatedModuleTensorObjIsoOfComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/SmallZariskiAssociatedModuleTensor.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/SmallZariskiAssociatedModuleTensor.lean#L164). The attribute's comment: “part (7), small site at τ = Zariski, for the PULLBACK-defined functor 𝓕 ↦ 𝓕ᵃ of Remark 03FH, for all 𝒪_S-modules; objectwise form”.
+**`AlgebraicGeometry.SmallZariski.associatedModuleTensorObjIsoOfComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/SmallZariskiAssociatedModuleTensor.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/SmallZariskiAssociatedModuleTensor.lean#L164). The attribute's comment: “part (7), small site at τ = Zariski, for the PULLBACK-defined functor 𝓕 ↦ 𝓕ᵃ of Remark 03FH, for all 𝒪\_S-modules; objectwise form”.
 
 > **Stacks 06VE (7) at `τ = Zariski`, objectwise** — the form in which the source states it:
 > `(𝓕 ⊗_{𝒪_S} 𝓖)^a = 𝓕^a ⊗_𝒪 𝓖^a`, for the pullback description of `𝓕 ↦ 𝓕^a`.
@@ -813,7 +813,7 @@ public def associatedModuleTensorObjIsoOfComparison (F G : S.Modules) :
         ((associatedModule B S hS).obj F, (associatedModule B S hS).obj G)
 ```
 
-**`AlgebraicGeometry.SmallZariski.associatedModuleOfSectionsTensorObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/SmallZariskiAssociatedModuleTensor.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/SmallZariskiAssociatedModuleTensor.lean#L186). The attribute's comment: “part (7), small site at τ = Zariski, for the SECTIONS-defined functor 𝓕 ↦ 𝓕ᵃ of Definition 03DU (4), for quasi-coherent 𝒪_S-modules”.
+**`AlgebraicGeometry.SmallZariski.associatedModuleOfSectionsTensorObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/SmallZariskiAssociatedModuleTensor.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/SmallZariskiAssociatedModuleTensor.lean#L186). The attribute's comment: “part (7), small site at τ = Zariski, for the SECTIONS-defined functor 𝓕 ↦ 𝓕ᵃ of Definition 03DU (4), for quasi-coherent 𝒪\_S-modules”.
 
 > **Stacks 06VE (7) at `τ = Zariski`, for the sections-defined `𝓕^a` of Stacks 03DU (4).**
 > For quasi-coherent `𝒪_S`-modules `𝓕`, `𝓖`,
@@ -952,7 +952,7 @@ theorem isQuasicoherentOnSite_internalHomSheaf (hF : F.IsFinitePresentationOnSit
     (internalHomSheaf B S hS F G).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.SmallEtale.tensorSheaf_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SmallEtaleQuasicoherentTensor.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/SmallEtaleQuasicoherentTensor.lean#L72). The attribute's comment: “tensor_products”.
+**`AlgebraicGeometry.SmallEtale.tensorSheaf_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SmallEtaleQuasicoherentTensor.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/SmallEtaleQuasicoherentTensor.lean#L72). The attribute's comment: “tensor\_products”.
 
 > **The tensor product clause of Stacks 0GNB.**  The tensor product of two quasi-coherent
 > `𝒪`-modules on the small étale site of a scheme is quasi-coherent.
@@ -968,13 +968,13 @@ public theorem tensorSheaf_isQuasicoherentOnSite
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.tensorSheaf_isQuasicoherent`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/TensorProduct/Basic.lean#L604), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/SmallEtaleTensorProduct.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/SmallEtaleTensorProduct.lean#L66) (StacksFrontier): “tensor_products”.
+- [`AlgebraicGeometry.tensorSheaf_isQuasicoherent`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/TensorProduct/Basic.lean#L604), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/SmallEtaleTensorProduct.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/SmallEtaleTensorProduct.lean#L66) (StacksFrontier): “tensor\_products”.
 
 ## Tag 0GNC, a lemma
 
 [Tag 0GNC](https://stacks.math.columbia.edu/tag/0GNC) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.isQuasicoherentOnSite_shortExact_X₂_all`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseRestrictionRightExactAll.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseRestrictionRightExactAll.lean#L355). The attribute's comment: “part (4), big site at every τ ∈ {Zariski, étale, smooth, syntomic, fppf}, unconditionally”.
+**`AlgebraicGeometry.BigFppfOver.isQuasicoherentOnSite_shortExact_X₂_all`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseRestrictionRightExactAll.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseRestrictionRightExactAll.lean#L355). The attribute's comment: “part (4), big site at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, unconditionally”.
 
 > **Clause (4) of Stacks 0GNC on the big `τ`-site of a scheme, at every
 > `τ ∈ {Zariski, étale, smooth, syntomic, fppf}`.**  Given a short exact sequence
@@ -1049,7 +1049,7 @@ theorem isQuasicoherentOnSite_internalHomSheaf (τ : SiteKind)
     (RingedSite.internalHomSheaf (baseRingedSite B S hS τ) F G).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.RingedSite.internalHomSheaf_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/InternalHom.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/InternalHom.lean#L432). The attribute's comment: “internal_hom”.
+**`AlgebraicGeometry.RingedSite.internalHomSheaf_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/InternalHom.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/InternalHom.lean#L432). The attribute's comment: “internal\_hom”.
 
 > Internal Hom from a finite locally free quasi-coherent sheaf is quasi-coherent.
 
@@ -1064,7 +1064,7 @@ theorem internalHomSheaf_isQuasicoherent
     (internalHomSheaf X F G).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isClosedUnderColimitsOfShape_baseIsQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentColimitsBigSites.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentColimitsBigSites.lean#L121). The attribute's comment: “part (2), big site at every τ ∈ {Zariski, étale, smooth, syntomic, fppf}, unconditionally, for an index category K at an arbitrary universe”.
+**`AlgebraicGeometry.BigFppfOver.isClosedUnderColimitsOfShape_baseIsQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentColimitsBigSites.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentColimitsBigSites.lean#L121). The attribute's comment: “part (2), big site at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, unconditionally, for an index category K at an arbitrary universe”.
 
 > **Stacks 0GNC (2) on the big `τ`-site of `S`, at every `τ` and with no hypothesis**:
 > quasi-coherence of `𝒪`-modules on `(Sch/S)_τ` is closed under colimits of shape `K`, for `K` at
@@ -1087,7 +1087,7 @@ public theorem isClosedUnderColimitsOfShape_baseIsQuasicoherentOnSite (τ : Site
       (FibredSite.baseRingStructureSheaf B S hS τ)).IsClosedUnderColimitsOfShape K
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isClosedUnderColimitsOfShape_discrete_baseIsQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentColimitsBigSites.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentColimitsBigSites.lean#L142). The attribute's comment: “part (1), big site at every τ ∈ {Zariski, étale, smooth, syntomic, fppf}, unconditionally”.
+**`AlgebraicGeometry.BigFppfOver.isClosedUnderColimitsOfShape_discrete_baseIsQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentColimitsBigSites.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentColimitsBigSites.lean#L142). The attribute's comment: “part (1), big site at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, unconditionally”.
 
 > **Stacks 0GNC (1) on the big `τ`-site of `S`, at every `τ` and with no hypothesis**: a
 > direct sum of quasi-coherent `𝒪`-modules on `(Sch/S)_τ` is quasi-coherent.  A direct sum is a
@@ -1101,7 +1101,7 @@ public theorem isClosedUnderColimitsOfShape_discrete_baseIsQuasicoherentOnSite (
       (Discrete I)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isClosedUnderColimitsOfShape_walkingParallelPair_baseIsQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentColimitsBigSites.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentColimitsBigSites.lean#L155). The attribute's comment: “part (3), big site at every τ ∈ {Zariski, étale, smooth, syntomic, fppf}, unconditionally”.
+**`AlgebraicGeometry.BigFppfOver.isClosedUnderColimitsOfShape_walkingParallelPair_baseIsQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentColimitsBigSites.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Descent/QuasicoherentColimitsBigSites.lean#L155). The attribute's comment: “part (3), big site at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, unconditionally”.
 
 > **Stacks 0GNC (3) on the big `τ`-site of `S`, at every `τ` and with no hypothesis**: the
 > cokernel of a morphism of quasi-coherent `𝒪`-modules on `(Sch/S)_τ` is quasi-coherent.  A
@@ -1163,7 +1163,7 @@ public theorem
       (structureSheaf B S hS)).IsClosedUnderColimitsOfShape WalkingParallelPair
 ```
 
-**`AlgebraicGeometry.RingedSite.internalHomSheaf_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/QuasicoherentInternalHom.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/QuasicoherentInternalHom.lean#L321). The attribute's comment: “internal_hom”. References: EGA I (9.1.1), “special case”; SGA 3 III (0.6), “special case”.
+**`AlgebraicGeometry.RingedSite.internalHomSheaf_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/QuasicoherentInternalHom.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/QuasicoherentInternalHom.lean#L321). The attribute's comment: “internal\_hom”. References: EGA I (9.1.1), “special case”; SGA 3 III (0.6), “special case”.
 
 > On a ringed site whose slices admit sheafification of abelian sheaves, the internal Hom of
 > Stacks 03EM from a finite locally free quasi-coherent module to a quasi-coherent module is
@@ -1182,7 +1182,7 @@ public theorem internalHomSheaf_isQuasicoherent
 
 [Tag 0GNE](https://stacks.math.columbia.edu/tag/0GNE) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.hasColimitsOfSize_quasicoherentOnSite_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteColimitAgreement.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteColimitAgreement.lean#L125). The attribute's comment: “part (1), existence: QCoh((Sch/S)_fppf, O) has colimits indexed at the size of the site”.
+**`AlgebraicGeometry.BigFppfOver.hasColimitsOfSize_quasicoherentOnSite_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteColimitAgreement.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteColimitAgreement.lean#L125). The attribute's comment: “part (1), existence: QCoh((Sch/S)\_fppf, O) has colimits indexed at the size of the site”.
 
 > **Stacks 0GNE (1), the existence half**, with no hypothesis: the category of quasi-coherent
 > `𝒪`-modules on the big fppf site of `S` has all colimits indexed at the size of the site.
@@ -1198,7 +1198,7 @@ public theorem hasColimitsOfSize_quasicoherentOnSite_fppf :
         (structureSheaf B S hS)).FullSubcategory
 ```
 
-**`AlgebraicGeometry.BigFppfOver.preservesColimitsOfSize_quasicoherentOnSite_ι_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteColimitAgreement.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteColimitAgreement.lean#L140). The attribute's comment: “part (1), agreement: the colimits of QCoh((Sch/S)_fppf, O) are the colimits taken in Mod((Sch/S)_fppf, O)”.
+**`AlgebraicGeometry.BigFppfOver.preservesColimitsOfSize_quasicoherentOnSite_ι_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteColimitAgreement.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteColimitAgreement.lean#L140). The attribute's comment: “part (1), agreement: the colimits of QCoh((Sch/S)\_fppf, O) are the colimits taken in Mod((Sch/S)\_fppf, O)”.
 
 > **Stacks 0GNE (1), the agreement with `Mod((Sch/S)_fppf, 𝒪)`**, with no hypothesis: a colimit
 > of quasi-coherent `𝒪`-modules on `(Sch/S)_fppf` is the colimit of the same diagram taken in all
@@ -1214,7 +1214,7 @@ public theorem preservesColimitsOfSize_quasicoherentOnSite_ι_fppf :
         (structureSheaf B S hS)).ι
 ```
 
-**`AlgebraicGeometry.BigFppfOver.preservesColimitsOfSize_quasicoherentOnSite_ι_comp_restrictTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteColimitAgreement.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteColimitAgreement.lean#L194). The attribute's comment: “part (1), agreement: the colimits of QCoh((Sch/S)_fppf, O) are the colimits taken in Mod((Sch/S)_tau, O), for every one of the five topologies and for an arbitrary diagram”.
+**`AlgebraicGeometry.BigFppfOver.preservesColimitsOfSize_quasicoherentOnSite_ι_comp_restrictTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteColimitAgreement.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteColimitAgreement.lean#L194). The attribute's comment: “part (1), agreement: the colimits of QCoh((Sch/S)\_fppf, O) are the colimits taken in Mod((Sch/S)\_tau, O), for every one of the five topologies and for an arbitrary diagram”.
 
 > **Stacks 0GNE (1), the agreement with `Mod((Sch/S)_τ, 𝒪)`**, over every shape indexed at the
 > size of the site: the colimits of `QCoh((Sch/S)_fppf, 𝒪)` are the colimits taken in
@@ -1260,7 +1260,7 @@ public theorem isFiniteLocallyFreeOnSite_restrictTopology_iff (τ : SiteKind)
       SheafOfModules.IsFiniteLocallyFreeOnSite ((restrictTopology B S hS τ).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.restrictTopology_internalHomSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteInternalHomQuasicoherence.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteInternalHomQuasicoherence.lean#L94). The attribute's comment: “part (3), the internal homs computed on (Sch/S)_fppf and on (Sch/S)_tau agree, for arbitrary O-modules, at every one of the five topologies”.
+**`AlgebraicGeometry.BigFppfOver.restrictTopology_internalHomSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteInternalHomQuasicoherence.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteInternalHomQuasicoherence.lean#L94). The attribute's comment: “part (3), the internal homs computed on (Sch/S)\_fppf and on (Sch/S)\_tau agree, for arbitrary O-modules, at every one of the five topologies”.
 
 > **Stacks 0GNE (3), the agreement, at the big sites of a scheme.**  For arbitrary `𝒪`-modules
 > `𝓕`, `𝓖` on `(Sch/S)_fppf`, the internal hom `𝓗om_𝒪(𝓕, 𝓖)` computed in `Mod((Sch/S)_fppf, 𝒪)`
@@ -1317,7 +1317,7 @@ public theorem isQuasicoherentOnSite_internalHomSheaf_of_isFiniteLocallyFreeOnSi
     (RingedSite.internalHomSheaf (baseRingedSite B S hS τ) F G).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.BigFppfOver.tensorAgreementQuasicoherentOnSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteTensorAgreement.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteTensorAgreement.lean#L288). The attribute's comment: “part (2), the tensor products computed on (Sch/S)_fppf and on (Sch/S)_tau agree, for an arbitrary pair of quasi-coherent O-modules on (Sch/S)_fppf, at every one of the five topologies”.
+**`AlgebraicGeometry.BigFppfOver.tensorAgreementQuasicoherentOnSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteTensorAgreement.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteTensorAgreement.lean#L288). The attribute's comment: “part (2), the tensor products computed on (Sch/S)\_fppf and on (Sch/S)\_tau agree, for an arbitrary pair of quasi-coherent O-modules on (Sch/S)\_fppf, at every one of the five topologies”.
 
 > **Stacks 0GNE (2), the agreement, at the source's own scope.**  For an **arbitrary** pair
 > `𝓕`, `𝓖` of quasi-coherent `𝒪`-modules on `(Sch/S)_fppf`, the tensor product `𝓕 ⊗_𝒪 𝓖` computed
@@ -1343,7 +1343,7 @@ def tensorAgreementQuasicoherentOnSite
         ((restrictTopology B S hS τ).obj F, (restrictTopology B S hS τ).obj G)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isQuasicoherentOnSite_tensorRestrictTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteTensorAgreement.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteTensorAgreement.lean#L311). The attribute's comment: “part (2), quasi-coherence of the common value, for an arbitrary pair of quasi-coherent O-modules on (Sch/S)_fppf, at every one of the five topologies”.
+**`AlgebraicGeometry.BigFppfOver.isQuasicoherentOnSite_tensorRestrictTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteTensorAgreement.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteTensorAgreement.lean#L311). The attribute's comment: “part (2), quasi-coherence of the common value, for an arbitrary pair of quasi-coherent O-modules on (Sch/S)\_fppf, at every one of the five topologies”.
 
 > **Stacks 0GNE (2), the quasi-coherence of the common value, at the source's own scope.**  For
 > an arbitrary pair of quasi-coherent `𝒪`-modules on `(Sch/S)_fppf`, the common value of the
@@ -1454,7 +1454,7 @@ noncomputable def restrictTopologyAssociatedModuleIso (τ : SiteKind) (F : S.Mod
       (baseAssociatedModule B S hS τ).obj F
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isColimitMapCoconeBaseAssociatedModuleQcoh`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/TopologyIndependence.lean, line 762](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/TopologyIndependence.lean#L762). The attribute's comment: “part (1), the colimit of a diagram of associated modules computed in Mod((Sch/S)_τ, O), for every one of the five topologies”.
+**`AlgebraicGeometry.BigFppfOver.isColimitMapCoconeBaseAssociatedModuleQcoh`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/TopologyIndependence.lean, line 762](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/TopologyIndependence.lean#L762). The attribute's comment: “part (1), the colimit of a diagram of associated modules computed in Mod((Sch/S)\_τ, O), for every one of the five topologies”.
 
 > **Stacks 0GNE (1), the comparison with the modules of `(Sch/S)_τ`, every `τ`.**  A colimit
 > of a diagram of quasi-coherent modules on `S` is carried by `𝓕 ↦ 𝓕^a` to a colimit in

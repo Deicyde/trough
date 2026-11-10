@@ -39,7 +39,7 @@ theorem mul_pushforward_one (f : X ⟶ Z) (hd : S.dimension X = S.dimension Z) (
             (S.pullback f n a)))
 ```
 
-**`Stacks.WeilCohomology.PoincareDualityPushforwardSetup.pushforward_mul_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Formula.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Formula.lean#L79). The attribute's comment: “projection_formula”.
+**`Stacks.WeilCohomology.PoincareDualityPushforwardSetup.pushforward_mul_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Formula.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Formula.lean#L79). The attribute's comment: “projection\_formula”.
 
 > The projection formula `f_*(f^*b ∪ a) = b ∪ f_*a` for the pushforward determined by Poincaré
 > duality.
@@ -55,7 +55,7 @@ theorem PoincareDualityPushforwardSetup.pushforward_mul_pullback
         ((S.H Y).mul j (2 * (S.dimension Y : ℤ) - (i + j)) b (S.pushforward f (i + j) a))
 ```
 
-**`Stacks.WeilCohomology.PoincareDualityPushforwardSetup.pushforward_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Formula.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Formula.lean#L126). The attribute's comment: “pushforward_functoriality”.
+**`Stacks.WeilCohomology.PoincareDualityPushforwardSetup.pushforward_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Formula.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Formula.lean#L126). The attribute's comment: “pushforward\_functoriality”.
 
 > The pushforward determined by Poincaré duality is covariantly functorial:
 > `g_* ∘ f_* = (g ∘ f)_*`.
@@ -105,7 +105,7 @@ theorem cycleClass_mul_iff_cycleClass_externalProduct'
             (S.pullback (prod.snd : Z ⨯ W ⟶ W) (2 * s) (cycleClass W s β))
 ```
 
-**`Stacks.WeilCohomology.diagonalPullback_kunneth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Kunneth.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Kunneth.lean#L46). The attribute's comment: “diagonal_pullback_cup”.
+**`Stacks.WeilCohomology.diagonalPullback_kunneth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Kunneth.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Kunneth.lean#L46). The attribute's comment: “diagonal\_pullback\_cup”.
 
 > Pulling the Künneth exterior product `pr₁^*a ∪ pr₂^*b` back along the diagonal
 > `Δ : X ⟶ X × X` gives the cup product `a ∪ b`.
@@ -341,7 +341,7 @@ theorem integration_mul_diagonalKunnethCoordinate {X P : (SmoothProjective k).Fu
 
 [Tag 0FH0](https://stacks.math.columbia.edu/tag/0FH0) in the Stacks Project.
 
-**`Stacks.WeilCohomology.degree_diagonal_mul_eq_degree_chernCap_tangentSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalDiagonalSelfIntersection.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalDiagonalSelfIntersection.lean#L250). The attribute's comment: “the equality on the right: deg([Δ] · [Δ]) = deg(c_d(T_X) ∩ [X]), for X × X any fibre product P of X with itself over k and Δ the diagonal section”. References: SGA 6 XIII (5.3), “partial”.
+**`Stacks.WeilCohomology.degree_diagonal_mul_eq_degree_chernCap_tangentSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalDiagonalSelfIntersection.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalDiagonalSelfIntersection.lean#L250). The attribute's comment: “the equality on the right: deg([Δ] · [Δ]) = deg(c\_d(T\_X) ∩ [X]), for X × X any fibre product P of X with itself over k and Δ the diagonal section”. References: SGA 6 XIII (5.3), “partial”.
 
 > **Stacks Project, Tag 0FH0**, the equality on the right: for a smooth projective variety `X`
 > of dimension `d` over `k`, `deg([Δ] · [Δ]) = deg(c_d(𝒯_X) ∩ [X])`.
@@ -461,7 +461,7 @@ theorem eulerCharacteristic_eq_degree_diagonal_mul_eq_degree_chernCap :
 
 [Tag 0FH1](https://stacks.math.columbia.edu/tag/0FH1) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilRealization.toPreClassical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RealizationPreClassical.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RealizationPreClassical.lean#L70). The attribute's comment: “a Q-linear functor G : M_k → graded F-vector spaces of symmetric monoidal categories with G(1(1)) nonzero only in degree -2 gives data (D1), (D2), (D3) satisfying (A), (B), (C) except possibly (A)(c) and (A)(d)”.
+**`Stacks.WeilCohomology.WeilRealization.toPreClassical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RealizationPreClassical.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RealizationPreClassical.lean#L70). The attribute's comment: “a Q-linear functor G : M\_k → graded F-vector spaces of symmetric monoidal categories with G(1(1)) nonzero only in degree -2 gives data (D1), (D2), (D3) satisfying (A), (B), (C) except possibly (A)(c) and (A)(d)”.
 
 > **Stacks Project, Lemma 0FH1.** Let `k` be algebraically closed and `F` of characteristic
 > `0`. A `ℚ`-linear functor `G : M_k ⥤ graded F-vector spaces` of symmetric monoidal categories
@@ -478,7 +478,7 @@ def toPreClassical : PreClassicalWeilCohomologyTheory.{u, w, w, u} k F (chowCycl
 
 [Tag 0FH2](https://stacks.math.columbia.edu/tag/0FH2) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ClassicalWeilCohomologyTheory.exists_motiveFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalExtension/Realization.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalExtension/Realization.lean#L66). The attribute's comment: “a classical Weil cohomology theory gives a Q-linear symmetric monoidal functor G : M_k -> graded F-vector spaces with H^*(X) = G(h(X))”.
+**`Stacks.WeilCohomology.ClassicalWeilCohomologyTheory.exists_motiveFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalExtension/Realization.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalExtension/Realization.lean#L66). The attribute's comment: “a classical Weil cohomology theory gives a Q-linear symmetric monoidal functor G : M\_k -> graded F-vector spaces with H^*(X) = G(h(X))”.
 
 > **Stacks Project, Tag 0FH2.** Let `k` be an algebraically closed field, `F` a field of
 > characteristic zero and `H^*` a classical Weil cohomology theory. Then there is a `ℚ`-linear
@@ -499,7 +499,7 @@ theorem exists_motiveFunctor :
 
 [Tag 0FH3](https://stacks.math.columbia.edu/tag/0FH3) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ClassicalWeilCohomologyTheory.exists_classicalMotiveRealization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalWeilRealization.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalWeilRealization.lean#L53). The attribute's comment: “a classical Weil cohomology theory comes from a Q-linear symmetric monoidal G : M_k → graded F-vector spaces with F[2] ≅ G(1(1)), G(h(X)) in nonnegative degrees and dim G⁰(h(X)) = 1, with H^*(X) = G(h(X)) naturally in X”.
+**`Stacks.WeilCohomology.ClassicalWeilCohomologyTheory.exists_classicalMotiveRealization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalWeilRealization.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalWeilRealization.lean#L53). The attribute's comment: “a classical Weil cohomology theory comes from a Q-linear symmetric monoidal G : M\_k → graded F-vector spaces with F[2] ≅ G(1(1)), G(h(X)) in nonnegative degrees and dim G⁰(h(X)) = 1, with H^*(X) = G(h(X)) naturally in X”.
 
 > **Stacks Project, Tag 0FH3, from cohomology to a realization.** A classical Weil cohomology
 > theory `H^*` (Stacks 0FGV, over the Chow groups of Chapter 42) comes from a realization of Chow
@@ -517,7 +517,7 @@ theorem ClassicalWeilCohomologyTheory.exists_classicalMotiveRealization
       Nonempty (T.toPre.toPoincarePairingSetup.MotiveComparison R.G)
 ```
 
-**`Stacks.WeilCohomology.ClassicalMotiveRealization.exists_classicalWeilCohomologyTheory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalWeilRealization.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalWeilRealization.lean#L109). The attribute's comment: “a Q-linear symmetric monoidal G : M_k → graded F-vector spaces with F[2] ≅ G(1(1)), G(h(X)) in nonnegative degrees and dim G⁰(h(X)) = 1 comes from a classical Weil cohomology theory, with H^*(X) = G(h(X)) naturally in X”.
+**`Stacks.WeilCohomology.ClassicalMotiveRealization.exists_classicalWeilCohomologyTheory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalWeilRealization.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ClassicalWeilRealization.lean#L109). The attribute's comment: “a Q-linear symmetric monoidal G : M\_k → graded F-vector spaces with F[2] ≅ G(1(1)), G(h(X)) in nonnegative degrees and dim G⁰(h(X)) = 1 comes from a classical Weil cohomology theory, with H^*(X) = G(h(X)) naturally in X”.
 
 > **Stacks Project, Tag 0FH3, from a realization to cohomology.** Conversely, a `ℚ`-linear
 > functor `G : M_k ⥤ graded F-vector spaces` of symmetric monoidal categories with an isomorphism

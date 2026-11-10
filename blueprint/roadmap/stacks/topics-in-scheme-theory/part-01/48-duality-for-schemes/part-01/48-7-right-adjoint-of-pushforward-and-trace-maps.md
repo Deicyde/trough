@@ -14,7 +14,7 @@ Section 48.7 of the Stacks Project, [Tag 0AWG](https://stacks.math.columbia.edu/
 
 [Tag 0AWG](https://stacks.math.columbia.edu/tag/0AWG) in the Stacks Project.
 
-**`Stacks.Duality.qcqsTrace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/QcqsTrace.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/QcqsTrace.lean#L71). The attribute's comment: “the trace map Tr_f : Rf_* ∘ a ⟶ id of a morphism of quasi-compact and quasi-separated schemes, the counit of the adjunction Rf_* ⊣ a of Tag 0A9E”.
+**`Stacks.Duality.qcqsTrace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/QcqsTrace.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/QcqsTrace.lean#L71). The attribute's comment: “the trace map Tr\_f : Rf\_* ∘ a ⟶ id of a morphism of quasi-compact and quasi-separated schemes, the counit of the adjunction Rf\_* ⊣ a of Tag 0A9E”.
 
 > **The trace map `Tr_f : Rf_* ∘ a ⟶ id`** of a morphism `f : X ⟶ Y` of quasi-compact and
 > quasi-separated schemes, where `a` is the right adjoint of `Rf_* : D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_Y)`
@@ -27,7 +27,7 @@ def qcqsTrace :
       𝟭 _
 ```
 
-**`Stacks.Duality.twistedInverseImageAdjunction_homEquiv_symm_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/QcqsTrace.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/QcqsTrace.lean#L91). The attribute's comment: “the bijection Hom_X(L, a(K)) ⟶ Hom_Y(Rf_*L, K) characterizing the right adjoint is φ ↦ Tr_{f,K} ∘ Rf_*φ”.
+**`Stacks.Duality.twistedInverseImageAdjunction_homEquiv_symm_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/QcqsTrace.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/QcqsTrace.lean#L91). The attribute's comment: “the bijection Hom\_X(L, a(K)) ⟶ Hom\_Y(Rf\_*L, K) characterizing the right adjoint is φ ↦ Tr\_\{f,K} ∘ Rf\_*φ”.
 
 > **The trace map characterizes the right adjoint.** For a morphism `f : X ⟶ Y` of
 > quasi-compact and quasi-separated schemes, the bijection

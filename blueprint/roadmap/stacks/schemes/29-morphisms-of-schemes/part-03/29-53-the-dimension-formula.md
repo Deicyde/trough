@@ -14,7 +14,7 @@ Section 29.53 of the Stacks Project, [Tag 02JT](https://stacks.math.columbia.edu
 
 [Tag 02JU](https://stacks.math.columbia.edu/tag/02JU) in the Stacks Project.
 
-**`AlgebraicGeometry.ringKrullDim_stalk_add_trdeg_residueField_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DimensionFormula/Formula.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/DimensionFormula/Formula.lean#L100). The attribute's comment: “inequality”. References: EGA IV (13.3.4), “Inequality dim O_{X_j”; EGA IV (5.5.6), “partial”; EGA IV (5.5.8), “more general”; EGA IV (5.6.5), “(5.6.5.1), special case”.
+**`AlgebraicGeometry.ringKrullDim_stalk_add_trdeg_residueField_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DimensionFormula/Formula.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/DimensionFormula/Formula.lean#L100). The attribute's comment: “inequality”. References: EGA IV (13.3.4), “Inequality dim O\_\{X\_j”; EGA IV (5.5.6), “partial”; EGA IV (5.5.8), “more general”; EGA IV (5.6.5), “(5.6.5.1), special case”.
 
 > The dimension formula for a dominant morphism `f : X ⟶ S` locally of finite type between
 > integral schemes over a locally Noetherian base:

@@ -133,7 +133,7 @@ def localCohomologyOfRingLiftedBaseChangeIso (A : Type uA) (B : Type uB) [CommRi
       localCohomologyOfRingLifted.{uB, max uA uB} B (I.map f) (hI.map f)
 ```
 
-**`Dualizing.derivedPowerTorsionOfRingBaseChangeIsoLocalCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean#L142). The attribute's comment: “first equality: RΓ_I(A) ⊗ᴸ B = RΓ_Z(A) ⊗ᴸ B”.
+**`Dualizing.derivedPowerTorsionOfRingBaseChangeIsoLocalCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean#L142). The attribute's comment: “first equality: RΓ\_I(A) ⊗ᴸ B = RΓ\_Z(A) ⊗ᴸ B”.
 
 > **Stacks 0957, the first equality.** `RΓ_I(A) ⊗ᴸ_A B ≅ RΓ_Z(A) ⊗ᴸ_A B`: derived extension of
 > scalars applied to the identification of the two torsion models over the Noetherian ring `A`.
@@ -147,7 +147,7 @@ def derivedPowerTorsionOfRingBaseChangeIsoLocalCohomology (A B : Type uA) [CommR
         (localCohomologyOfRing A I hI)
 ```
 
-**`Dualizing.localCohomologyOfRingIsoDerivedPowerTorsionOfRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean#L155). The attribute's comment: “last equality: RΓ_Y(B) = RΓ_{IB}(B)”.
+**`Dualizing.localCohomologyOfRingIsoDerivedPowerTorsionOfRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/ChangeOfRingsTorsion.lean#L155). The attribute's comment: “last equality: RΓ\_Y(B) = RΓ\_\{IB}(B)”.
 
 > **Stacks 0957, the last equality.** `RΓ_Y(B) ≅ RΓ_{IB}(B)` for `Y = V(IB)`: the
 > identification of the two torsion models over the Noetherian ring `B`, read backwards at the

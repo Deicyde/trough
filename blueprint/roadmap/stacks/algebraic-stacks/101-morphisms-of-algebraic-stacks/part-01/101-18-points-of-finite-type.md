@@ -115,7 +115,7 @@ theorem exists_isClosed_smoothChart_size_le_of_isFiniteTypePoint
 
 [Tag 06FY](https://stacks.math.columbia.edu/tag/06FY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsFiniteTypePoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypePointAlgebraicStack.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypePointAlgebraicStack.lean#L78). The attribute's comment: “finite_type_point”.
+**`AlgebraicGeometry.Stack.IsFiniteTypePoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypePointAlgebraicStack.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypePointAlgebraicStack.lean#L78). The attribute's comment: “finite\_type\_point”.
 
 > **Stacks 06FY.** A point of an algebraic stack `𝒳` over `S` is a *finite type point* when
 > some field-valued point representing it has a locally-of-finite-type 1-morphism `Spec k → 𝒳`.
@@ -127,7 +127,7 @@ abbrev IsFiniteTypePoint (𝒳 : AlgebraicStacks.{u, w} B S hS)
     (x : points B S hS 𝒳.val.val 𝒳.val.property) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.finiteTypePoints`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypePointAlgebraicStack.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypePointAlgebraicStack.lean#L88). The attribute's comment: “finite_type_points_set”.
+**`AlgebraicGeometry.Stack.finiteTypePoints`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypePointAlgebraicStack.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypePointAlgebraicStack.lean#L88). The attribute's comment: “finite\_type\_points\_set”.
 
 > **Stacks 06FY.** The set `𝒳_{ft-pts}` of finite type points of an algebraic stack `𝒳`
 > over `S`.
@@ -187,7 +187,7 @@ theorem finiteTypePoints_subset_smoothChartClosedPoints
     finiteTypePoints B S hS 𝒳 ⊆ smoothChartClosedPoints.{u, w} B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.finiteTypePoints_eq_smoothChartClosedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypePointsSmoothUnion.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypePointsSmoothUnion.lean#L249). The attribute's comment: “the set equality 𝒳_{ft-pts} = ⋃_{φ : U ⟶ 𝒳 smooth} |φ|(U₀) over all schemes smooth over the stack”.
+**`AlgebraicGeometry.Stack.finiteTypePoints_eq_smoothChartClosedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypePointsSmoothUnion.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypePointsSmoothUnion.lean#L249). The attribute's comment: “the set equality 𝒳\_\{ft-pts} = ⋃\_\{φ : U ⟶ 𝒳 smooth} |φ|(U₀) over all schemes smooth over the stack”.
 
 > **Stacks 06FZ**, the set equality. The set `𝒳_{ft-pts}` of finite type points of an algebraic
 > stack `𝒳` over `S` is the union `⋃_{φ : U ⟶ 𝒳 smooth} |φ|(U₀)` of the images of the sets of
@@ -210,7 +210,7 @@ theorem affineSmoothChartClosedPoints_subset_finiteTypePoints
     affineSmoothChartClosedPoints.{u, w} B S hS 𝒳 ⊆ finiteTypePoints B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.finiteTypePoints_eq_affineSmoothChartClosedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypePointsSmoothUnion.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypePointsSmoothUnion.lean#L270). The attribute's comment: “the set equality 𝒳_{ft-pts} = ⋃_{φ : U ⟶ 𝒳 smooth} |φ|(U₀) over the affine schemes smooth over the stack”.
+**`AlgebraicGeometry.Stack.finiteTypePoints_eq_affineSmoothChartClosedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypePointsSmoothUnion.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteTypePointsSmoothUnion.lean#L270). The attribute's comment: “the set equality 𝒳\_\{ft-pts} = ⋃\_\{φ : U ⟶ 𝒳 smooth} |φ|(U₀) over the affine schemes smooth over the stack”.
 
 > **Stacks 06FZ**, the set equality for the affine range. The set `𝒳_{ft-pts}` of finite type
 > points of an algebraic stack `𝒳` over `S` is the union `⋃_{φ : U ⟶ 𝒳 smooth} |φ|(U₀)` of the

@@ -59,7 +59,7 @@ public def scheme (k n : ℕ) : Scheme.{u}
 public abbrev schemeOver (k n : ℕ) (S : Scheme.{u}) : Scheme.{u}
 ```
 
-**`AlgebraicGeometry.Grassmannian.schemeOverRing`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Recovery27/GrassmannianScheme.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Recovery27/GrassmannianScheme.lean#L97). The attribute's comment: “the Grassmannian over a ring”. References: SGA 6 VI (4.9), “G_S^(n, special case”; SGA 7 XIX (1.4), “partial”.
+**`AlgebraicGeometry.Grassmannian.schemeOverRing`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Recovery27/GrassmannianScheme.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Recovery27/GrassmannianScheme.lean#L97). The attribute's comment: “the Grassmannian over a ring”. References: SGA 6 VI (4.9), “G\_S^(n, special case”; SGA 7 XIX (1.4), “partial”.
 
 > The Grassmannian `G(k, n)_R` over a commutative ring `R`: the base change of the integral
 > Grassmannian to `Spec R`.

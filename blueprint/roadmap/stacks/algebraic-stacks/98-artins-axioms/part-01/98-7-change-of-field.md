@@ -24,7 +24,7 @@ def changeOfFieldFunctor :
     Deformation.ChangeOfFieldsCategory T D.projection ⥤ E.carrier
 ```
 
-**`Deformation.Artin.changeOfFieldFunctor_projection_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/ChangeOfField.lean, line 841](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/ChangeOfField.lean#L841). The attribute's comment: “the canonical functor lies over 𝒞_{Λ,l}; the ambient base category is the category of all S-schemes rather than the big fppf site”.
+**`Deformation.Artin.changeOfFieldFunctor_projection_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/ChangeOfField.lean, line 841](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/ChangeOfField.lean#L841). The attribute's comment: “the canonical functor lies over 𝒞\_\{Λ,l}; the ambient base category is the category of all S-schemes rather than the big fppf site”.
 
 > **Stacks Project, Tag 07WX.** The canonical functor is a functor of categories over
 > `𝒞_{Λ,l}`.

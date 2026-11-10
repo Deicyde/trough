@@ -424,7 +424,7 @@ theorem isPseudoCoherentFrom_of_isCoherent_homology_of_isNoetherian
     (smallEtaleRingedSite B S hS X.1 X.2).IsPseudoCoherentFrom E m
 ```
 
-**`AlgebraicGeometry.Space.isPseudoCoherent_of_isCoherent_homology_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyConverse.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyConverse.lean#L176). The attribute's comment: “in particular: an object of D⁻_Coh is pseudo-coherent”.
+**`AlgebraicGeometry.Space.isPseudoCoherent_of_isCoherent_homology_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyConverse.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyConverse.lean#L176). The attribute's comment: “in particular: an object of D⁻\_Coh is pseudo-coherent”.
 
 > On a Noetherian algebraic space an object of `D(𝒪_X)` with coherent cohomology sheaves
 > vanishing in large degrees is pseudo-coherent.
@@ -491,7 +491,7 @@ theorem isCoherentOnSite_homology_and_isBoundedAbove_of_isPseudoCoherentFrom_of_
       DerivedCategoryB.IsBoundedAbove E
 ```
 
-**`AlgebraicGeometry.Space.isCoherentOnSite_homology_and_isBoundedAbove_of_isPseudoCoherent_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyVanishing.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyVanishing.lean#L123). The attribute's comment: “pseudo-coherent gives D⁻_Coh”.
+**`AlgebraicGeometry.Space.isCoherentOnSite_homology_and_isBoundedAbove_of_isPseudoCoherent_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyVanishing.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyVanishing.lean#L123). The attribute's comment: “pseudo-coherent gives D⁻\_Coh”.
 
 > Let `S` be a scheme, let `F` be a Noetherian algebraic space over `S` and let `E` be a
 > pseudo-coherent object of `D(𝒪_F)`.  Then `E` is an object of `D⁻_Coh(𝒪_F)`: its cohomology
@@ -525,7 +525,7 @@ theorem isCoherent_homology_iff_isPseudoCoherentFrom (hZ : B.Contains (⊤_ Sche
       (smallEtaleRingedSite B S hS X.1 X.2).IsPseudoCoherentFrom E.obj m
 ```
 
-**`AlgebraicGeometry.Space.isPseudoCoherent_iff_isCoherent_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/PseudoCoherentIffCoherentHomology.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/PseudoCoherentIffCoherentHomology.lean#L284). The attribute's comment: “pseudo-coherent objects of D_QCoh are those of D⁻_Coh”.
+**`AlgebraicGeometry.Space.isPseudoCoherent_iff_isCoherent_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/PseudoCoherentIffCoherentHomology.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/PseudoCoherentIffCoherentHomology.lean#L284). The attribute's comment: “pseudo-coherent objects of D\_QCoh are those of D⁻\_Coh”.
 
 > **Stacks 08IK, the final statement.** Let `X` be a Noetherian algebraic space over `S`. An
 > object `E` of `D_QCoh(𝒪_X)` is pseudo-coherent if and only if it lies in `D⁻_Coh(𝒪_X)`: its
@@ -620,7 +620,7 @@ theorem hasTorAmplitude_iff_hasTorAmplitudeOnQuasicoherent
 
 [Tag 08JP](https://stacks.math.columbia.edu/tag/08JP) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.isIso_derivedAssociatedModuleDerivedSheafHomComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDerivedSheafHomComparisonIso.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDerivedSheafHomComparisonIso.lean#L227). The attribute's comment: “case (2), E in the thick closure of 𝒪_S, over the data T₂, e₂, m”.
+**`AlgebraicGeometry.SmallEtale.isIso_derivedAssociatedModuleDerivedSheafHomComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDerivedSheafHomComparisonIso.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDerivedSheafHomComparisonIso.lean#L227). The attribute's comment: “case (2), E in the thick closure of 𝒪\_S, over the data T₂, e₂, m”.
 
 > **Stacks 08JP, case (2), over the mixed-universe data `T₂`, `e₂`, `m`.**
 >

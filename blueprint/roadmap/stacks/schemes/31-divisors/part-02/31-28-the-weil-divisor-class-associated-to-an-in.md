@@ -14,7 +14,7 @@ Section 31.28 of the Stacks Project, [Tag 02SE](https://stacks.math.columbia.edu
 
 [Tag 02SF](https://stacks.math.columbia.edu/tag/02SF) in the Stacks Project.
 
-**`Stacks.Divisors.orderOfVanishingMeromorphic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/MeromorphicCascade/OrderOfVanishing.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/MeromorphicCascade/OrderOfVanishing.lean#L75). References: EGA IV (21.6.7), “o_x(f) = mult_x(div f)”.
+**`Stacks.Divisors.orderOfVanishingMeromorphic`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/MeromorphicCascade/OrderOfVanishing.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/MeromorphicCascade/OrderOfVanishing.lean#L75). References: EGA IV (21.6.7), “o\_x(f) = mult\_x(div f)”.
 
 > **The order of vanishing of a regular meromorphic section along a prime divisor, Stacks
 > 02SF.** The meromorphic section is a global section `s` of the sheaf `𝒦_X(L)` of meromorphic
@@ -94,7 +94,7 @@ def orderOfVanishingMeromorphic
 
 [Tag 02SG](https://stacks.math.columbia.edu/tag/02SG) in the Stacks Project.
 
-**`AlgebraicGeometry.locallyFinite_primeDivisors_not_representedAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean#L164). The attribute's comment: “nonintegral_stalk_locus”.
+**`AlgebraicGeometry.locallyFinite_primeDivisors_not_representedAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean#L164). The attribute's comment: “nonintegral\_stalk\_locus”.
 
 > The prime divisors at whose generic point a meromorphic section of a quasi-coherent module
 > on a locally Noetherian integral scheme is not an ordinary section form a locally finite
@@ -108,7 +108,7 @@ theorem locallyFinite_primeDivisors_not_representedAt [IsLocallyNoetherian X] [I
       (fun Z : { Z : PrimeDivisor X // ¬ IsRepresentedAt L s Z.genericPoint } => Z.1.support)
 ```
 
-**`AlgebraicGeometry.locallyFinite_primeDivisors_orderOfVanishingMeromorphic_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean#L198). The attribute's comment: “nonzero_order_locus”.
+**`AlgebraicGeometry.locallyFinite_primeDivisors_orderOfVanishingMeromorphic_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/PoleLocus.lean#L198). The attribute's comment: “nonzero\_order\_locus”.
 
 > The prime divisors along which a regular meromorphic section of an invertible module on a
 > locally Noetherian integral scheme has nonzero order of vanishing form a locally finite
@@ -341,7 +341,7 @@ theorem isNormal_of_forall_uniqueFactorizationMonoid_stalk
     (h : ∀ x : X, UniqueFactorizationMonoid (X.presheaf.stalk x)) : IsNormal X
 ```
 
-**`AlgebraicGeometry.picardToWeilDivisorClassGroup_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean#L75). The attribute's comment: “final clause under (2): on a normal scheme a surjective c_1 is bijective”.
+**`AlgebraicGeometry.picardToWeilDivisorClassGroup_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/WeilDivisorClass/FirstChernClassBijective.lean#L75). The attribute's comment: “final clause under (2): on a normal scheme a surjective c\_1 is bijective”.
 
 > On a normal locally Noetherian integral scheme a surjective first Chern class
 > `Pic(X) → Cl(X)` is bijective, since it is injective by Tag 0BE8.

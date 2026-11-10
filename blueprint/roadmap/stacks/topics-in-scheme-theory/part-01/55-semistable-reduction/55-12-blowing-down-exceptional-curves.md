@@ -28,7 +28,7 @@ public abbrev contractedSituation
     RegularProperModelSituation.{u}
 ```
 
-**`Stacks.Models.RegularProperModelSituation.exists_isContractionOfExceptionalCurve_specialFiberComponentIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentExists.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentExists.lean#L40). The attribute's comment: “the contraction f : X -> X' of the exceptional component C_n exists”.
+**`Stacks.Models.RegularProperModelSituation.exists_isContractionOfExceptionalCurve_specialFiberComponentIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentExists.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentExists.lean#L40). The attribute's comment: “the contraction f : X -> X' of the exceptional component C\_n exists”.
 
 > **Stacks Project, Tag 0C6C, the contraction.** In Situation 0C61, an irreducible component
 > `C_n` of the special fibre which is an exceptional curve of the first kind can be contracted:
@@ -43,7 +43,7 @@ theorem exists_isContractionOfExceptionalCurve_specialFiberComponentIdeal
       IsContractionOfExceptionalCurve (S.specialFiberComponentIdeal N) f
 ```
 
-**`Stacks.Models.RegularProperModelSituation.exists_contractedComponentEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentFibre.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentFibre.lean#L419). The attribute's comment: “the components C'_i = f(C_i), i < n, of X'_k and their multiplicities m'_i = m_i”.
+**`Stacks.Models.RegularProperModelSituation.exists_contractedComponentEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentFibre.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentFibre.lean#L419). The attribute's comment: “the components C'\_i = f(C\_i), i < n, of X'\_k and their multiplicities m'\_i = m\_i”.
 
 > **The components and multiplicities of the contracted model.** Let
 > `f : X ⟶ X'` contract the component `C_n` of the special fibre of a regular proper model `X`,
@@ -72,7 +72,7 @@ public theorem exists_contractedComponentEquiv
             S.specialFiberMultiplicity Z.1
 ```
 
-**`Stacks.Models.RegularProperModelSituation.exists_contractedComponentMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentFibre.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentFibre.lean#L501). The attribute's comment: “part (2): maps κ_i ← κ'_i → κ_n when C_i meets C_n”.
+**`Stacks.Models.RegularProperModelSituation.exists_contractedComponentMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentFibre.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentFibre.lean#L501). The attribute's comment: “part (2): maps κ\_i ← κ'\_i → κ\_n when C\_i meets C\_n”.
 
 > **The maps `κ_i ← κ'_i → κ_n`.** If `C_i` meets `C_n`, there are morphisms `C_i ⟶ C'_i` and
 > `C_n ⟶ C'_i` compatible with the contraction and with the closed immersions into `X` and `X'`,
@@ -105,7 +105,7 @@ public theorem exists_contractedComponentMap
         g.appTop = φ ∧ h.appTop = ψ
 ```
 
-**`Stacks.Models.RegularProperModelSituation.contractedSpecialFiberIntersectionMatrix`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentIntersection.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentIntersection.lean#L453). The attribute's comment: “part (1): (C'_i · C'_j) = (C_i · C_j) - (C_i · C_n)(C_j · C_n)/(C_n · C_n)”.
+**`Stacks.Models.RegularProperModelSituation.contractedSpecialFiberIntersectionMatrix`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentIntersection.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentIntersection.lean#L453). The attribute's comment: “part (1): (C'\_i · C'\_j) = (C\_i · C\_j) - (C\_i · C\_n)(C\_j · C\_n)/(C\_n · C\_n)”.
 
 > **Stacks Project, Tag 0C6C, part (1).** Let `f : X ⟶ X'` contract the component `C_n` of the
 > special fibre of a regular proper model, and let `C'_i = f(C_i)`, `i < n`, be the components of
@@ -130,7 +130,7 @@ public theorem contractedSpecialFiberIntersectionMatrix
 
 [Tag 0CA8](https://stacks.math.columbia.edu/tag/0CA8) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.cast_specialFiberComponentGenus_contractedComponentEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentGenus.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentGenus.lean#L446). The attribute's comment: “g'_i = (w_i/w'_i)(g_i - 1) + 1 + ((C_i · C_n)^2 - w_n(C_i · C_n))/(2 w'_i w_n)”.
+**`Stacks.Models.RegularProperModelSituation.cast_specialFiberComponentGenus_contractedComponentEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentGenus.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentGenus.lean#L446). The attribute's comment: “g'\_i = (w\_i/w'\_i)(g\_i - 1) + 1 + ((C\_i · C\_n)^2 - w\_n(C\_i · C\_n))/(2 w'\_i w\_n)”.
 
 > **The genus of a component after contracting an exceptional curve** ([Stacks, Remark 0CA8]).
 > In the situation of [Stacks, Tag 0C6C] — `X` a regular proper model of `C` over a discrete
@@ -168,7 +168,7 @@ theorem cast_specialFiberComponentGenus_contractedComponentEquiv
 
 [Tag 0CA9](https://stacks.math.columbia.edu/tag/0CA9) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.isContractionUpToWeight_associatedNumericalType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentWeight.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentWeight.lean#L146). The attribute's comment: “corrected: the numerical type of X' is the 0C77 contraction of that of X except for w'_i, a positive integer dividing w_i; w'_i | w_n is stated only when C_i meets C_n, where 0C6C (2) gives the maps; when C_i misses C_n, w'_i = w_i”.
+**`Stacks.Models.RegularProperModelSituation.isContractionUpToWeight_associatedNumericalType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentWeight.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ContractExceptionalComponentWeight.lean#L146). The attribute's comment: “corrected: the numerical type of X' is the 0C77 contraction of that of X except for w'\_i, a positive integer dividing w\_i; w'\_i | w\_n is stated only when C\_i meets C\_n, where 0C6C (2) gives the maps; when C\_i misses C\_n, w'\_i = w\_i”.
 
 > **Stacks Project, Tag 0CA9.** Let `f : X ⟶ X'` contract a component `C_n` of the special
 > fibre of a regular proper model which is an exceptional curve of the first kind. Enumerate the
@@ -213,7 +213,7 @@ public theorem isContractionUpToWeight_associatedNumericalType
               (remainingIndex (S.associatedNumericalType n e) i)
 ```
 
-**`AlgebraicGeometry.NumericalType.isGreatest_contractLast_weight`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/Contraction.lean, line 811](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/Contraction.lean#L811). The attribute's comment: “in the numerical case w'_i is the largest integer dividing w_i such that g'_i, as given by the formula, is an integer”.
+**`AlgebraicGeometry.NumericalType.isGreatest_contractLast_weight`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/Contraction.lean, line 811](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/NumericalType/Contraction.lean#L811). The attribute's comment: “in the numerical case w'\_i is the largest integer dividing w\_i such that g'\_i, as given by the formula, is an integer”.
 
 > **The weight of the contraction of a numerical type is the largest admissible one.** For a
 > minus-one index `n`, the weight `w'ᵢ` chosen in Tag 0C77 is the largest positive integer dividing
@@ -232,7 +232,7 @@ public theorem isGreatest_contractLast_weight (T : NumericalType)
         (Fin.cast (contractLast T h).property.componentCount_eq.symm i))
 ```
 
-**`AlgebraicGeometry.NumericalType.IsContractionUpToWeight.picardMap_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/PicardGroup/Contraction.lean, line 769](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/PicardGroup/Contraction.lean#L769). The attribute's comment: “the injectivity of Pic(T) → Pic(T') of Tag 0C7J works as well for smaller w'_i”.
+**`AlgebraicGeometry.NumericalType.IsContractionUpToWeight.picardMap_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SemistableReduction/PicardGroup/Contraction.lean, line 769](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SemistableReduction/PicardGroup/Contraction.lean#L769). The attribute's comment: “the injectivity of Pic(T) → Pic(T') of Tag 0C7J works as well for smaller w'\_i”.
 
 > **The injectivity of Tag 0C7J holds for smaller weights.** If `T'` is the contraction of a
 > minus-one index of `T` in every datum except that its weights `w'ᵢ` are only divisors of `wᵢ`,

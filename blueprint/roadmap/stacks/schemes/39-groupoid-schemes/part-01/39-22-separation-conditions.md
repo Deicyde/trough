@@ -57,7 +57,7 @@ lemma rightSquare_isPullback {S : Scheme.{u}} (G : GroupoidScheme S) :
 
 [Tag 02YI](https://stacks.math.columbia.edu/tag/02YI) in the Stacks Project.
 
-**`AlgebraicGeometry.sourceTarget_quasiSeparated_iff_stabilizer_quasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/Separation.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/Separation.lean#L132). The attribute's comment: “quasi_separated_equivalences”.
+**`AlgebraicGeometry.sourceTarget_quasiSeparated_iff_stabilizer_quasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/Separation.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/Separation.lean#L132). The attribute's comment: “quasi\_separated\_equivalences”.
 
 > The source-target morphism is quasi-separated exactly when the stabilizer is
 > quasi-separated over the object scheme.
@@ -68,7 +68,7 @@ theorem sourceTarget_quasiSeparated_iff_stabilizer_quasiSeparated
     QuasiSeparated (sourceTarget G).left ↔ QuasiSeparated (stabilizer G).hom
 ```
 
-**`AlgebraicGeometry.stabilizer_quasiSeparated_iff_identity_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/Separation.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/Separation.lean#L142). The attribute's comment: “quasi_separated_equivalences”.
+**`AlgebraicGeometry.stabilizer_quasiSeparated_iff_identity_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/Separation.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/Separation.lean#L142). The attribute's comment: “quasi\_separated\_equivalences”.
 
 > The stabilizer is quasi-separated exactly when its identity section is quasi-compact.
 
@@ -78,7 +78,7 @@ theorem stabilizer_quasiSeparated_iff_identity_quasiCompact
     QuasiSeparated (stabilizer G).hom ↔ QuasiCompact (identityStabilizer G).left
 ```
 
-**`AlgebraicGeometry.sourceTarget_isSeparated_iff_stabilizer_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/Separation.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/Separation.lean#L203). The attribute's comment: “separated_equivalences”.
+**`AlgebraicGeometry.sourceTarget_isSeparated_iff_stabilizer_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/Separation.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/Separation.lean#L203). The attribute's comment: “separated\_equivalences”.
 
 > The source-target morphism is separated exactly when the stabilizer is separated over
 > the object scheme.
@@ -89,7 +89,7 @@ theorem sourceTarget_isSeparated_iff_stabilizer_isSeparated
     IsSeparated (sourceTarget G).left ↔ IsSeparated (stabilizer G).hom
 ```
 
-**`AlgebraicGeometry.stabilizer_isSeparated_iff_identity_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/Separation.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/Separation.lean#L212). The attribute's comment: “separated_equivalences”. References: SGA 3 II (4.11.4), “more general”.
+**`AlgebraicGeometry.stabilizer_isSeparated_iff_identity_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/Separation.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/Separation.lean#L212). The attribute's comment: “separated\_equivalences”. References: SGA 3 II (4.11.4), “more general”.
 
 > The stabilizer is separated exactly when its identity section is a closed immersion.
 

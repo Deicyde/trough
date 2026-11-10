@@ -14,7 +14,7 @@ Section 85.6 of the Stacks Project, [Tag 0D71](https://stacks.math.columbia.edu/
 
 [Tag 0D72](https://stacks.math.columbia.edu/tag/0D72) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.componentRingedTopos_restrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean#L134). The attribute's comment: “component_ringed_topos”.
+**`CategoryTheory.SimplicialSiteSituation.componentRingedTopos_restrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean#L134). The attribute's comment: “component\_ringed\_topos”.
 
 > The inverse image of sheaves of commutative rings along the component morphism of topoi is
 > canonically and naturally isomorphic to restriction along the component inclusion.
@@ -28,7 +28,7 @@ noncomputable def componentRingedTopos_restrictionIso (S : SimplicialSiteSituati
         (S.componentTopology n) S.totalTopology
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentRingedTopos_restrictionIso_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean#L148). The attribute's comment: “component_ringed_topos”.
+**`CategoryTheory.SimplicialSiteSituation.componentRingedTopos_restrictionIso_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean#L148). The attribute's comment: “component\_ringed\_topos”.
 
 > The restriction isomorphism is the canonical comparison of Stacks 09WG after forgetting the
 > ring operations. In particular its scalar map is not an arbitrary natural automorphism of
@@ -46,7 +46,7 @@ theorem componentRingedTopos_restrictionIso_forget (S : SimplicialSiteSituation.
           ((sheafCompose S.totalTopology (forget CommRingCat.{u})).obj O)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean#L166). The attribute's comment: “component_ringed_topos”.
+**`CategoryTheory.SimplicialSiteSituation.componentRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean#L166). The attribute's comment: “component\_ringed\_topos”.
 
 > The canonical morphism of ringed topoi from a simplicial component to the total site. Its
 > structure map is the adjoint of the comparison `gₙ⁻¹O ⟶ Oₙ` of structure sheaves.
@@ -57,7 +57,7 @@ noncomputable def componentRingedToposHom (S : SimplicialSiteSituation.{u})
     RingedToposHom (componentRingedTopos S O n) (totalRingedTopos S O)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentRingedToposHom_toToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean#L176). The attribute's comment: “component_ringed_topos”.
+**`CategoryTheory.SimplicialSiteSituation.componentRingedToposHom_toToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/Basic.lean#L176). The attribute's comment: “component\_ringed\_topos”.
 
 > The underlying geometric morphism is the component morphism of Stacks 09WG.
 
@@ -67,7 +67,7 @@ theorem componentRingedToposHom_toToposHom (S : SimplicialSiteSituation.{u})
     (componentRingedToposHom S O n).toToposHom = componentMorphism S n
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.moduleSumFormulaLegEq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/CartesianDerivedModuleOfModuleSystem.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/CartesianDerivedModuleOfModuleSystem.lean#L72). The attribute's comment: “the summand inclusions of the direct-sum formula on sheaves of modules are the canonical maps f_φ^*G ⟶ g_m^*g_{n!}G, in Situation 09WE (both cases)”.
+**`CategoryTheory.SimplicialSiteSituation.moduleSumFormulaLegEq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/CartesianDerivedModuleOfModuleSystem.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/CartesianDerivedModuleOfModuleSystem.lean#L72). The attribute's comment: “the summand inclusions of the direct-sum formula on sheaves of modules are the canonical maps f\_φ^*G ⟶ g\_m^*g\_\{n!}G, in Situation 09WE (both cases)”.
 
 > **The leg equation of Stacks 0D72 (6) in every simplicial-site situation.** For every simplex
 > map `φ : [n] ⟶ [m]` the `φ`th summand inclusion of the componentwise direct-sum formula for
@@ -96,7 +96,7 @@ theorem componentRingedToposHom_fSharpInverseImageRing_ringSheafMap :
         ((sheafCompose S.totalTopology (forget CommRingCat.{u})).obj O)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentPullbackModulesRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentPullbackRestriction.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentPullbackRestriction.lean#L171). The attribute's comment: “the pullback of modules along g_n is restriction to the component”.
+**`CategoryTheory.SimplicialSiteSituation.componentPullbackModulesRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentPullbackRestriction.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentPullbackRestriction.lean#L171). The attribute's comment: “the pullback of modules along g\_n is restriction to the component”.
 
 > **Stacks 0D72: the pullback of sheaves of modules to a simplicial component is the literal
 > restriction.** The two presentations of restriction to the degree-`n` component that this
@@ -129,7 +129,7 @@ theorem componentPullbackModulesRestrictionIso_underlying
         (Sheaf.moduleSheaf.{u, u, u} (S.totalRingSheaf O) M)
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentPullbackComplexRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean#L84). The attribute's comment: “degreewise pullback of complexes along g_n is degreewise restriction”.
+**`CategoryTheory.SimplicialSiteSituation.componentPullbackComplexRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ComponentTensorComplex.lean#L84). The attribute's comment: “degreewise pullback of complexes along g\_n is degreewise restriction”.
 
 > **Stacks 0D72 on cochain complexes.** Degreewise pullback of complexes of modules along the
 > component morphism of ringed topoi is degreewise restriction to the component.
@@ -142,7 +142,7 @@ def componentPullbackComplexRestrictionIso :
       S.componentModulesRestrictionComplex O n
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.componentModuleLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleLowerShriek.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleLowerShriek.lean#L128). The attribute's comment: “existence of the left adjoint g_{n!} of g_n^* on modules”.
+**`CategoryTheory.SimplicialSiteSituation.componentModuleLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleLowerShriek.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/ComponentRingedTopos/ModuleLowerShriek.lean#L128). The attribute's comment: “existence of the left adjoint g\_\{n!} of g\_n^* on modules”.
 
 > **Stacks 0D72.** The defining adjunction `g_{n!} ⊣ g_n^*` of lower shriek of modules on a
 > simplicial component, exhibiting the left adjoint `g_{n!}` of `g_n^*` whose existence the tag

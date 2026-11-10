@@ -217,7 +217,7 @@ public theorem bigFppfAbelianLowerShriek_unit_isIso
 
 [Tag 04E3](https://stacks.math.columbia.edu/tag/04E3) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etale_zariskiCover_baseChange_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/ClosedImmersionCoverings.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/ClosedImmersionCoverings.lean#L109). The attribute's comment: “etale_cover”. References: EGA IV (18.1.1), “étale case”.
+**`AlgebraicGeometry.exists_etale_zariskiCover_baseChange_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/ClosedImmersionCoverings.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/ClosedImmersionCoverings.lean#L109). The attribute's comment: “etale\_cover”. References: EGA IV (18.1.1), “étale case”.
 
 > An étale scheme over a closed subscheme has a Zariski covering by base changes of étale
 > schemes over the ambient scheme.
@@ -233,7 +233,7 @@ public theorem exists_etale_zariskiCover_baseChange_of_isClosedImmersion
           Presieve.ofArrows (fun j ↦ pullback (q j) i) g ∈ Scheme.zariskiPrecoverage U
 ```
 
-**`AlgebraicGeometry.exists_smooth_zariskiCover_baseChange_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/ClosedImmersionCoverings.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/ClosedImmersionCoverings.lean#L178). The attribute's comment: “smooth_cover”. References: EGA IV (18.1.1), “smooth case”.
+**`AlgebraicGeometry.exists_smooth_zariskiCover_baseChange_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/ClosedImmersionCoverings.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/ClosedImmersionCoverings.lean#L178). The attribute's comment: “smooth\_cover”. References: EGA IV (18.1.1), “smooth case”.
 
 > If `X ⟶ Y` is a closed immersion and `U ⟶ X` is smooth, then `U` has a Zariski covering
 > by schemes obtained by base change from smooth schemes over `Y`.
@@ -249,7 +249,7 @@ public theorem exists_smooth_zariskiCover_baseChange_of_isClosedImmersion
           Presieve.ofArrows (fun j ↦ pullback (q j) i) g ∈ Scheme.zariskiPrecoverage U
 ```
 
-**`AlgebraicGeometry.exists_syntomic_zariskiCover_baseChange_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/ClosedImmersionCoverings.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/ClosedImmersionCoverings.lean#L193). The attribute's comment: “syntomic_cover”.
+**`AlgebraicGeometry.exists_syntomic_zariskiCover_baseChange_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/ClosedImmersionCoverings.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/ClosedImmersionCoverings.lean#L193). The attribute's comment: “syntomic\_cover”.
 
 > If `X ⟶ Y` is a closed immersion and `U ⟶ X` is syntomic, then `U` has a Zariski
 > covering by schemes obtained by base change from syntomic schemes over `Y`.
@@ -367,7 +367,7 @@ public theorem bigEtalePullback_isAlmostCocontinuous
 
 [Tag 04C4](https://stacks.math.columbia.edu/tag/04C4) in the Stacks Project.
 
-**`AlgebraicGeometry.bigSyntomicPushforward_preservesConnectedColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L171). The attribute's comment: “pushforward_coequalizers_pushouts”.
+**`AlgebraicGeometry.bigSyntomicPushforward_preservesConnectedColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L171). The attribute's comment: “pushforward\_coequalizers\_pushouts”.
 
 > **Stacks Project, Tag 04C4, part (1).** Direct image of sheaves of sets by a closed immersion
 > of big syntomic sites preserves colimits of every connected shape whose colimits of sets exist.
@@ -387,7 +387,7 @@ public theorem bigSyntomicPushforward_preservesConnectedColimits
         (AlgebraicGeometry.BigSyntomicOver.topology B X.1 X.2))
 ```
 
-**`AlgebraicGeometry.bigSyntomicPushforward_preservesPushouts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L191). The attribute's comment: “pushforward_coequalizers_pushouts”.
+**`AlgebraicGeometry.bigSyntomicPushforward_preservesPushouts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L191). The attribute's comment: “pushforward\_coequalizers\_pushouts”.
 
 > **Stacks Project, Tag 04C4, part (1): pushouts.** Direct image of sheaves of sets by a closed
 > immersion of big syntomic sites commutes with pushouts, `WalkingSpan` being a connected shape.
@@ -402,7 +402,7 @@ public theorem bigSyntomicPushforward_preservesPushouts
         (AlgebraicGeometry.BigSyntomicOver.topology B X.1 X.2))
 ```
 
-**`AlgebraicGeometry.bigSyntomicPushforward_preservesCoequalizers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L204). The attribute's comment: “pushforward_coequalizers_pushouts”.
+**`AlgebraicGeometry.bigSyntomicPushforward_preservesCoequalizers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L204). The attribute's comment: “pushforward\_coequalizers\_pushouts”.
 
 > **Stacks Project, Tag 04C4, part (1): coequalizers.** Direct image of sheaves of sets by a
 > closed immersion of big syntomic sites commutes with coequalizers, `WalkingParallelPair` being a
@@ -418,7 +418,7 @@ public theorem bigSyntomicPushforward_preservesCoequalizers
         (AlgebraicGeometry.BigSyntomicOver.topology B X.1 X.2))
 ```
 
-**`AlgebraicGeometry.bigSmoothPushforward_preservesConnectedColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L216). The attribute's comment: “pushforward_coequalizers_pushouts”.
+**`AlgebraicGeometry.bigSmoothPushforward_preservesConnectedColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L216). The attribute's comment: “pushforward\_coequalizers\_pushouts”.
 
 > **Stacks Project, Tag 04C4, part (1).** Direct image of sheaves of sets by a closed immersion
 > of big smooth sites preserves colimits of every connected shape whose colimits of sets exist.
@@ -434,7 +434,7 @@ public theorem bigSmoothPushforward_preservesConnectedColimits
         (AlgebraicGeometry.BigSmoothOver.topology B X.1 X.2))
 ```
 
-**`AlgebraicGeometry.bigSmoothPushforward_preservesPushouts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L236). The attribute's comment: “pushforward_coequalizers_pushouts”.
+**`AlgebraicGeometry.bigSmoothPushforward_preservesPushouts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L236). The attribute's comment: “pushforward\_coequalizers\_pushouts”.
 
 > **Stacks Project, Tag 04C4, part (1): pushouts.** Direct image of sheaves of sets by a closed
 > immersion of big smooth sites commutes with pushouts.
@@ -449,7 +449,7 @@ public theorem bigSmoothPushforward_preservesPushouts
         (AlgebraicGeometry.BigSmoothOver.topology B X.1 X.2))
 ```
 
-**`AlgebraicGeometry.bigSmoothPushforward_preservesCoequalizers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L248). The attribute's comment: “pushforward_coequalizers_pushouts”.
+**`AlgebraicGeometry.bigSmoothPushforward_preservesCoequalizers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L248). The attribute's comment: “pushforward\_coequalizers\_pushouts”.
 
 > **Stacks Project, Tag 04C4, part (1): coequalizers.** Direct image of sheaves of sets by a
 > closed immersion of big smooth sites commutes with coequalizers.
@@ -464,7 +464,7 @@ public theorem bigSmoothPushforward_preservesCoequalizers
         (AlgebraicGeometry.BigSmoothOver.topology B X.1 X.2))
 ```
 
-**`AlgebraicGeometry.bigEtalePushforward_preservesConnectedColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L260). The attribute's comment: “pushforward_coequalizers_pushouts”.
+**`AlgebraicGeometry.bigEtalePushforward_preservesConnectedColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L260). The attribute's comment: “pushforward\_coequalizers\_pushouts”.
 
 > **Stacks Project, Tag 04C4, part (1).** Direct image of sheaves of sets by a closed immersion
 > of big étale sites preserves colimits of every connected shape whose colimits of sets exist.
@@ -480,7 +480,7 @@ public theorem bigEtalePushforward_preservesConnectedColimits
         (AlgebraicGeometry.BigEtaleOver.topology B X.1 X.2))
 ```
 
-**`AlgebraicGeometry.bigEtalePushforward_preservesPushouts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L280). The attribute's comment: “pushforward_coequalizers_pushouts”.
+**`AlgebraicGeometry.bigEtalePushforward_preservesPushouts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L280). The attribute's comment: “pushforward\_coequalizers\_pushouts”.
 
 > **Stacks Project, Tag 04C4, part (1): pushouts.** Direct image of sheaves of sets by a closed
 > immersion of big étale sites commutes with pushouts.
@@ -495,7 +495,7 @@ public theorem bigEtalePushforward_preservesPushouts
         (AlgebraicGeometry.BigEtaleOver.topology B X.1 X.2))
 ```
 
-**`AlgebraicGeometry.bigEtalePushforward_preservesCoequalizers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L292). The attribute's comment: “pushforward_coequalizers_pushouts”.
+**`AlgebraicGeometry.bigEtalePushforward_preservesCoequalizers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L292). The attribute's comment: “pushforward\_coequalizers\_pushouts”.
 
 > **Stacks Project, Tag 04C4, part (1): coequalizers.** Direct image of sheaves of sets by a
 > closed immersion of big étale sites commutes with coequalizers.
@@ -510,7 +510,7 @@ public theorem bigEtalePushforward_preservesCoequalizers
         (AlgebraicGeometry.BigEtaleOver.topology B X.1 X.2))
 ```
 
-**`AlgebraicGeometry.bigSyntomicPushforward_isExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L305). The attribute's comment: “abelian_pushforward_exact”.
+**`AlgebraicGeometry.bigSyntomicPushforward_isExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L305). The attribute's comment: “abelian\_pushforward\_exact”.
 
 > Direct image of abelian sheaves by a closed immersion of big syntomic sites is exact.
 
@@ -524,7 +524,7 @@ public theorem bigSyntomicPushforward_isExact
         (AlgebraicGeometry.BigSyntomicOver.topology B X.1 X.2))
 ```
 
-**`AlgebraicGeometry.bigSmoothPushforward_isExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L317). The attribute's comment: “abelian_pushforward_exact”.
+**`AlgebraicGeometry.bigSmoothPushforward_isExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L317). The attribute's comment: “abelian\_pushforward\_exact”.
 
 > Direct image of abelian sheaves by a closed immersion of big smooth sites is exact.
 
@@ -538,7 +538,7 @@ public theorem bigSmoothPushforward_isExact
         (AlgebraicGeometry.BigSmoothOver.topology B X.1 X.2))
 ```
 
-**`AlgebraicGeometry.bigEtalePushforward_isExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L329). The attribute's comment: “abelian_pushforward_exact”.
+**`AlgebraicGeometry.bigEtalePushforward_isExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BigSitesPushforward/PushforwardExact.lean#L329). The attribute's comment: “abelian\_pushforward\_exact”.
 
 > Direct image of abelian sheaves by a closed immersion of big étale sites is exact.
 

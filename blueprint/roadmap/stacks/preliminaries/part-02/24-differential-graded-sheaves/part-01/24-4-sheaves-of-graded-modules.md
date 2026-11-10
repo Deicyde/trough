@@ -75,7 +75,7 @@ instance instCategory : Category (LeftGradedModule.{t, a, m} A)
 
 [Tag 0FR0](https://stacks.math.columbia.edu/tag/0FR0) in the Stacks Project.
 
-**`SheafOfModules.GradedModule.hasCoproducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleAbelian.lean, line 1522](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleAbelian.lean#L1522). The attribute's comment: “direct_sums”.
+**`SheafOfModules.GradedModule.hasCoproducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleAbelian.lean, line 1522](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleAbelian.lean#L1522). The attribute's comment: “direct\_sums”.
 
 > **Graded modules over a sheaf of graded algebras have arbitrary direct sums**, formed
 > degreewise.
@@ -84,7 +84,7 @@ instance instCategory : Category (LeftGradedModule.{t, a, m} A)
 instance hasCoproducts : HasColimitsOfShape (Discrete ι) (GradedModule.{t, a, m} A)
 ```
 
-**`SheafOfModules.GradedModule.pieceFunctor_preservesCoproducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleAbelian.lean, line 1530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleAbelian.lean#L1530). The attribute's comment: “direct_sums”.
+**`SheafOfModules.GradedModule.pieceFunctor_preservesCoproducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleAbelian.lean, line 1530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleAbelian.lean#L1530). The attribute's comment: “direct\_sums”.
 
 > **Taking a fixed homogeneous component commutes with set-indexed direct sums.**
 
@@ -104,7 +104,7 @@ instance pieceFunctor_preservesCoproducts (n : ℤ) :
 noncomputable instance abelian : Abelian (GradedModule.{t, a, m} A)
 ```
 
-**`SheafOfModules.GradedModule.pieceFunctor_preservesColimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleAbelian.lean, line 1610](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleAbelian.lean#L1610). The attribute's comment: “degree_preserves_colimits”.
+**`SheafOfModules.GradedModule.pieceFunctor_preservesColimits`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleAbelian.lean, line 1610](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleAbelian.lean#L1610). The attribute's comment: “degree\_preserves\_colimits”.
 
 > **Taking a fixed homogeneous component of a graded module commutes with all colimits.**
 >
@@ -117,7 +117,7 @@ instance pieceFunctor_preservesColimits (n : ℤ) :
     PreservesColimits (pieceFunctor.{t, a, max u m'} A n)
 ```
 
-**`SheafOfModules.GradedModule.pieceFunctor_preservesLimitsOfSize`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleDegreeLimits.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleDegreeLimits.lean#L62). The attribute's comment: “degree_preserves_limits”. References: SGA 6 VI (2.7), “partial”.
+**`SheafOfModules.GradedModule.pieceFunctor_preservesLimitsOfSize`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleDegreeLimits.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleDegreeLimits.lean#L62). The attribute's comment: “degree\_preserves\_limits”. References: SGA 6 VI (2.7), “partial”.
 
 > **Taking a fixed homogeneous component of a graded module commutes with all limits.**
 >
@@ -130,7 +130,7 @@ instance pieceFunctor_preservesLimitsOfSize (n : ℤ) :
     PreservesLimitsOfSize.{m, m} (pieceFunctor.{t, a, m} A n)
 ```
 
-**`SheafOfModules.GradedModule.filteredColimits_exact`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleFilteredColimits.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleFilteredColimits.lean#L133). The attribute's comment: “filtered_colimits_exact”.
+**`SheafOfModules.GradedModule.filteredColimits_exact`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleFilteredColimits.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleFilteredColimits.lean#L133). The attribute's comment: “filtered\_colimits\_exact”.
 
 > **Filtered colimits of right graded modules over a sheaf of graded algebras are exact**, at
 > every size at which those colimits exist.
@@ -141,7 +141,7 @@ instance filteredColimits_exact (A : GradedAlgebra.{t, a} R)
     AB5OfSize.{s, s'} (GradedModule.{t, a, max u m'} A)
 ```
 
-**`SheafOfModules.GradedModule.ab5OfSize`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleFilteredColimits.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleFilteredColimits.lean#L146). The attribute's comment: “filtered_colimits_exact”.
+**`SheafOfModules.GradedModule.ab5OfSize`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleFilteredColimits.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModuleFilteredColimits.lean#L146). The attribute's comment: “filtered\_colimits\_exact”.
 
 > **Filtered colimits of right graded modules are exact**, unconditionally, at the module
 > universe `max u m'` of a site `C : Type u`.

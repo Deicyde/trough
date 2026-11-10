@@ -127,7 +127,7 @@ theorem fImage_mem_nonZeroDivisors (ha : a ∈ I) (f : R)
     fImage I a f ∈ nonZeroDivisors (Rprime I a)
 ```
 
-**`AffineBlowup.blowup_localization_f_iso_a`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Blowup/Basic.lean, line 996](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Blowup/Basic.lean#L996). The attribute's comment: “R'_f = R'_a”.
+**`AffineBlowup.blowup_localization_f_iso_a`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Blowup/Basic.lean, line 996](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Blowup/Basic.lean#L996). The attribute's comment: “R'\_f = R'\_a”.
 
 > Assume `a ∈ I` and `V(f) = V(I)`. Let `R'f` be a localization of `R' = R[I/a]` away from
 > the image of `f`, and `R'a` a localization of `R'` away from the image of `a`. Then `R'f` is also
@@ -146,7 +146,7 @@ theorem blowup_localization_f_iso_a (ha : a ∈ I) (f : R)
       Nonempty (R'f ≃ₐ[R] R'a)
 ```
 
-**`AffineBlowup.ringLocalization_a_iso_blowup_localization_a`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Blowup/Basic.lean, line 1029](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Blowup/Basic.lean#L1029). The attribute's comment: “R'_a = R_a”.
+**`AffineBlowup.ringLocalization_a_iso_blowup_localization_a`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Blowup/Basic.lean, line 1029](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Blowup/Basic.lean#L1029). The attribute's comment: “R'\_a = R\_a”.
 
 > Let `R'a` be a localization of `R' = R[I/a]` away from the image of `a`, and `Ra'` a
 > localization of `R` away from `a`. Then the canonical map `R_a → R'_a` induced by `R → R'` is

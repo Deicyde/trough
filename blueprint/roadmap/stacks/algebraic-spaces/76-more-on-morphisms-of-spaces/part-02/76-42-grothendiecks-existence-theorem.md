@@ -559,7 +559,7 @@ def IsKernelCokernelAnnihilatedByPower
     {E E' : ℕᵒᵖ ⥤ Modules.{u, u} B S hS F hF} (α : E ⟶ E') : Prop
 ```
 
-**`AlgebraicGeometry.Space.isKernelCokernelAnnihilatedByPower_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicKernelCokernelAnnihilated.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicKernelCokernelAnnihilated.lean#L371). The attribute's comment: “the equivalence of (1) with (2) for any, and for some, surjective etale affine chart U = Spec(A), with alpha_U the map of 087W”.
+**`AlgebraicGeometry.Space.isKernelCokernelAnnihilatedByPower_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicKernelCokernelAnnihilated.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicKernelCokernelAnnihilated.lean#L371). The attribute's comment: “the equivalence of (1) with (2) for any, and for some, surjective etale affine chart U = Spec(A), with alpha\_U the map of 087W”.
 
 > **Stacks Project, Tag 08BA.** Let `X` be a Noetherian algebraic space over a scheme `S`, let
 > `𝓘, 𝓚 ⊆ 𝒪_X` be quasi-coherent sheaves of ideals and let `α : (F_n) ⟶ (G_n)` be a morphism of
@@ -788,7 +788,7 @@ Declarations registered for the tag:
 
 [Tag 08BD](https://stacks.math.columbia.edu/tag/08BD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_completionMap_kernel_cokernel_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicCompletionMap.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicCompletionMap.lean#L221). The attribute's comment: “the full statement: for a representable proper morphism of Noetherian algebraic spaces which is an isomorphism over Y minus V(K), a map alpha from (G_n) to the completion of f_*F in Coh(Y, J) whose levelwise kernels and cokernels are all annihilated by one positive power of K”.
+**`AlgebraicGeometry.Space.exists_completionMap_kernel_cokernel_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicCompletionMap.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicCompletionMap.lean#L221). The attribute's comment: “the full statement: for a representable proper morphism of Noetherian algebraic spaces which is an isomorphism over Y minus V(K), a map alpha from (G\_n) to the completion of f\_*F in Coh(Y, J) whose levelwise kernels and cokernels are all annihilated by one positive power of K”.
 
 > **Stacks 08BD.** Let `f : X ⟶ Y` be a representable proper morphism of Noetherian algebraic
 > spaces over `S`, let `𝓙, 𝓚 ⊆ 𝒪_Y` be quasi-coherent sheaves of ideals, and assume `f` is an
@@ -827,7 +827,7 @@ theorem exists_completionMap_kernel_cokernel_annihilated (hZ : B.Contains (⊤_ 
         IsKernelCokernelAnnihilatedByPower B S hS Y.1 Y.2 K α.hom
 ```
 
-**`AlgebraicGeometry.Space.directImageComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicDirectImageComparison.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicDirectImageComparison.lean#L163). The attribute's comment: “the maps gamma_n of the proof: the adjunction map followed by f_*beta_n. The map alpha into (f_*F)^ is a different declaration and is not constructed in this library”.
+**`AlgebraicGeometry.Space.directImageComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicDirectImageComparison.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicDirectImageComparison.lean#L163). The attribute's comment: “the maps gamma\_n of the proof: the adjunction map followed by f\_*beta\_n. The map alpha into (f\_*F)^ is a different declaration and is not constructed in this library”.
 
 > **The maps `γ_n : 𝓖_n ⟶ f_*f^*𝓖_n ⟶ f_*(𝓕/𝓘 ⁿ⁺¹𝓕)` of the proof of Stacks 08BD**, as a
 > morphism of inverse systems of `𝒪_Y`-modules on an algebraic space: the adjunction map followed
@@ -838,7 +838,7 @@ def directImageComparison :
     G.obj ⟶ ((completionFunctor B S hS X.1 X.2 𝓘 hI).obj F).obj ⋙ modulePushforward B S hS f
 ```
 
-**`AlgebraicGeometry.Space.exists_pos_idealPowerMultiple_kernel_cokernel_directImageComparison_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicDirectImageComparison.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicDirectImageComparison.lean#L210). The attribute's comment: “the reduction of the lemma's kernel-cokernel condition from gamma to the adjunction maps. The map alpha into (f_*F)^ is not constructed in this library, which proves neither 08AR for a representable proper morphism nor the uniform Artin-Rees bounds 02OB behind the scheme case 088B”.
+**`AlgebraicGeometry.Space.exists_pos_idealPowerMultiple_kernel_cokernel_directImageComparison_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicDirectImageComparison.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentAdicDirectImageComparison.lean#L210). The attribute's comment: “the reduction of the lemma's kernel-cokernel condition from gamma to the adjunction maps. The map alpha into (f\_*F)^ is not constructed in this library, which proves neither 08AR for a representable proper morphism nor the uniform Artin-Rees bounds 02OB behind the scheme case 088B”.
 
 > **The reduction of the kernel–cokernel condition of Stacks 08BD to the adjunction maps.**
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over a scheme `S`, let `𝓙, 𝓚 ⊆ 𝒪_Y` and

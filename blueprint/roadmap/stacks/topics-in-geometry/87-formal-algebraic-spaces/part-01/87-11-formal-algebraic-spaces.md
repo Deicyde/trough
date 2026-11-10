@@ -274,7 +274,7 @@ theorem isRepresentableByAlgebraicSpacesULift_of_isAlgebraicSpaceULift_of_isAffi
 instance full_formalSchemePointsFunctor : formalSchemePointsFunctor.{u}.Full
 ```
 
-**`AlgebraicGeometry.fullyFaithfulFormalSchemePointsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFullSupplement.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFullSupplement.lean#L111). The attribute's comment: “the assignment 𝔛 ↦ h_𝔛 is a fully faithful embedding of formal schemes into presheaves on schemes”.
+**`AlgebraicGeometry.fullyFaithfulFormalSchemePointsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFullSupplement.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFullSupplement.lean#L111). The attribute's comment: “the assignment 𝔛 ↦ h\_𝔛 is a fully faithful embedding of formal schemes into presheaves on schemes”.
 
 > Taking the functor of points on the category of all schemes is a fully faithful embedding of
 > the category of formal schemes into presheaves of sets on schemes.
@@ -292,7 +292,7 @@ noncomputable def fullyFaithfulFormalSchemePointsFunctor :
 instance faithful_formalSchemePointsFunctor : formalSchemePointsFunctor.{u}.Faithful
 ```
 
-**`AlgebraicGeometry.FormalSpace.relative_isOpenImmersion_openFormalSubschemePresheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean#L504). The attribute's comment: “the morphisms h_{𝔛ᵢ} ⟶ h_𝔛 of an open covering are representable and open immersions”.
+**`AlgebraicGeometry.FormalSpace.relative_isOpenImmersion_openFormalSubschemePresheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean#L504). The attribute's comment: “the morphisms h\_\{𝔛ᵢ} ⟶ h\_𝔛 of an open covering are representable and open immersions”.
 
 > **Stacks 0AIR, clause (4).** The morphism `h_{𝔛|_𝔘} ⟶ h_𝔛` of fppf sheaves on the big fppf
 > site of `S` is representable and an open immersion: it is representable by morphisms of the
@@ -311,7 +311,7 @@ theorem relative_isOpenImmersion_openFormalSubschemePresheafHom :
       (uliftYoneda.{u + 1}) (openFormalSubschemePresheafHom B S hS X V hV)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_openFormalSubschemePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean, line 612](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean#L612). The attribute's comment: “the charts h_{𝔛ᵢ} of an affine open covering are affine formal algebraic spaces”.
+**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_openFormalSubschemePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean, line 612](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean#L612). The attribute's comment: “the charts h\_\{𝔛ᵢ} of an affine open covering are affine formal algebraic spaces”.
 
 > **Stacks 0AIR, clause (3).** For a member `𝔛|_𝔘` of an affine open covering of `𝔛` — an open
 > of `𝔛` whose restriction is isomorphic to the formal spectrum of an admissible topological ring
@@ -332,7 +332,7 @@ theorem isAffineFormalAlgebraicSpace_openFormalSubschemePoints (hterm : IsTermin
       (formalSchemePointsFppfSheaf B S hS (openFormalSubscheme X V hV))
 ```
 
-**`AlgebraicGeometry.FormalSpace.fullyFaithfulFormalSchemePointsFppfSheafFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean, line 735](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean#L735). The attribute's comment: “the assignment 𝔛 ↦ h_𝔛 is a fully faithful embedding of formal schemes into the fppf sheaves on the big fppf site of the base”.
+**`AlgebraicGeometry.FormalSpace.fullyFaithfulFormalSchemePointsFppfSheafFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean, line 735](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeComparisonAtlas.lean#L735). The attribute's comment: “the assignment 𝔛 ↦ h\_𝔛 is a fully faithful embedding of formal schemes into the fppf sheaves on the big fppf site of the base”.
 
 > **Stacks 0AIR, clause (2).** The assignment `𝔛 ↦ h_𝔛` is a fully faithful embedding of the
 > category of formal schemes into the category `AlgebraicGeometry.FormalSpace.FppfSheaf B S hS`
@@ -447,7 +447,7 @@ theorem isFppfSheafFormalSchemePoints_formalScheme (X : FormalScheme.{u}) :
 abbrev SatisfiesSetTheoreticCondition (X : FppfSheaf B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_bounded_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/BoundedColimit.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/BoundedColimit.lean#L123). The attribute's comment: “bounded_colimit”.
+**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_bounded_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/BoundedColimit.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/BoundedColimit.lean#L123). The attribute's comment: “bounded\_colimit”.
 
 > **Stacks 0AIS, bounded colimit.** A directed colimit of affine fppf sheaves along
 > thickenings satisfies the set-theoretic condition as soon as one cardinal `μ` below the size
@@ -549,7 +549,7 @@ theorem satisfiesSetTheoreticCondition_of_countable_atlas_of_hasQuasiCompactDiag
     SatisfiesSetTheoreticCondition B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_countable_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountableColimit.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CountableColimit.lean#L264). The attribute's comment: “countable_colimit”.
+**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_countable_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/CountableColimit.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/CountableColimit.lean#L264). The attribute's comment: “countable\_colimit”.
 
 > **Stacks 0AIS, countable colimit.** A countable directed colimit of affine fppf sheaves
 > along thickenings satisfies the set-theoretic condition.
@@ -638,7 +638,7 @@ public theorem isAlgebraicSpace_of_affineSchemeAtlas
     AlgebraicGeometry.Space.IsAlgebraicSpaceULift.{u + 1} B S hS X.obj
 ```
 
-**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SetTheoreticColimit.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/SetTheoreticColimit.lean#L213). The attribute's comment: “colimit_condition”.
+**`AlgebraicGeometry.FormalSpace.satisfiesSetTheoreticCondition_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SetTheoreticColimit.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/SetTheoreticColimit.lean#L213). The attribute's comment: “colimit\_condition”.
 
 > A directed colimit of affine fppf sheaves along thickenings satisfies the set-theoretic
 > condition if the coproduct of its stages is representable in the big site.

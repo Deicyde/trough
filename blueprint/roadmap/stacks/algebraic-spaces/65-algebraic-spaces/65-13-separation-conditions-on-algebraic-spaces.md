@@ -138,7 +138,7 @@ theorem presheaf_locallyQuasiFinite_diag (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Typ
 abbrev IsSeparatedOver (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsLocallySeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L63). The attribute's comment: “locally_separated”.
+**`AlgebraicGeometry.Space.IsLocallySeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L63). The attribute's comment: “locally\_separated”.
 
 > An algebraic space over `S` is *locally separated over `S`* when its diagonal is an
 > immersion of algebraic spaces.
@@ -147,7 +147,7 @@ abbrev IsSeparatedOver (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Prop
 abbrev IsLocallySeparatedOver (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsQuasiSeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L69). The attribute's comment: “quasi_separated”.
+**`AlgebraicGeometry.Space.IsQuasiSeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L69). The attribute's comment: “quasi\_separated”.
 
 > An algebraic space over `S` is *quasi-separated over `S`* when its diagonal is
 > quasi-compact after every representable base change.
@@ -156,7 +156,7 @@ abbrev IsLocallySeparatedOver (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Prop
 abbrev IsQuasiSeparatedOver (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsZariskiLocallyQuasiSeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L77). The attribute's comment: “zariski_locally_quasi_separated”.
+**`AlgebraicGeometry.Space.IsZariskiLocallyQuasiSeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L77). The attribute's comment: “zariski\_locally\_quasi\_separated”.
 
 > An algebraic space over `S` is *Zariski locally quasi-separated over `S`* when it admits a
 > Zariski covering by open subspaces which are quasi-separated over `S`.

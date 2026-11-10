@@ -42,7 +42,7 @@ noncomputable def inverseImageCompToOverIso :
     f.inverseImage ⋙ toOver (f.inverseImage.obj G) ≅ toOver G ⋙ (f.over G).inverseImage
 ```
 
-**`MorphismOfTopoi.toOverCompPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SliceTopos/OverPushforward.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SliceTopos/OverPushforward.lean#L91). The attribute's comment: “f'_* j_F^{-1} = j_G^{-1} f_*”.
+**`MorphismOfTopoi.toOverCompPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SliceTopos/OverPushforward.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SliceTopos/OverPushforward.lean#L91). The attribute's comment: “f'\_* j\_F^\{-1} = j\_G^\{-1} f\_*”.
 
 > **Stacks 04H1**: `f'_* ∘ j_F⁻¹ = j_G⁻¹ ∘ f_*`.
 >

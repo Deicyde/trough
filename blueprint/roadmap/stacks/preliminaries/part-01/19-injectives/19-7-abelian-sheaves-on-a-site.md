@@ -56,7 +56,7 @@ theorem exists_ordinal_towerFactorsThrough {I : Type u} (G : I → AbSheaf J) :
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Sheaf.freeYonedaHomEquiv`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Sheaf.freeYonedaHomEquiv#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Sites/Adjunction.lean, line 33](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/CategoryTheory/Sites/Adjunction.lean#L33) (StacksCore): “Mor_{Ab(C)}(Z_X^#, G) = G(X)”.
+- [`CategoryTheory.Sheaf.freeYonedaHomEquiv`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Sheaf.freeYonedaHomEquiv#doc) registered with `add_to_stacks` in [StacksCore/CategoryTheory/Sites/Adjunction.lean, line 33](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/CategoryTheory/Sites/Adjunction.lean#L33) (StacksCore): “Mor\_\{Ab(C)}(Z\_X^#, G) = G(X)”.
 
 ## Tag 01DO, a lemma
 

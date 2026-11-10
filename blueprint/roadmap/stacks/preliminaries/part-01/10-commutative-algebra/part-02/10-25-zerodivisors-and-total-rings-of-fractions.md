@@ -35,7 +35,7 @@ lemma isField_localizationAtPrime_of_minimal (R : Type*) [CommRing R] [IsReduced
     IsField (Localization.AtPrime p)
 ```
 
-**`localizationProdMap_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MinimalPrimes/Reduced.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MinimalPrimes/Reduced.lean#L154). The attribute's comment: “2, injectivity; the factors are fields by isField_localizationAtPrime_of_minimal”.
+**`localizationProdMap_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MinimalPrimes/Reduced.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MinimalPrimes/Reduced.lean#L154). The attribute's comment: “2, injectivity; the factors are fields by isField\_localizationAtPrime\_of\_minimal”.
 
 > The map `R → ∏_{p minimal} R_p` from a reduced commutative ring to the product of localizations
 > at minimal primes is injective.

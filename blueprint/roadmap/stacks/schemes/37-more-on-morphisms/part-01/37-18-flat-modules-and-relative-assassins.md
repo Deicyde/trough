@@ -109,7 +109,7 @@ theorem exists_valuation_base_change_generic_component
 
 [Tag 0GSI](https://stacks.math.columbia.edu/tag/0GSI) in the Stacks Project.
 
-**`Stacks.RelativeAssassin.topologicalKrullDimAt_fiber_eq_fiber_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreDimension.lean, line 894](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreDimension.lean#L894). The attribute's comment: “the fibre dimension equality”. References: EGA IV (12.1.1.4), “fibre dimension equality”; EGA IV (12.1.1.5), “dim(Z'_y)=dim(Z'_{y'})”.
+**`Stacks.RelativeAssassin.topologicalKrullDimAt_fiber_eq_fiber_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreDimension.lean, line 894](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreDimension.lean#L894). The attribute's comment: “the fibre dimension equality”. References: EGA IV (12.1.1.4), “fibre dimension equality”; EGA IV (12.1.1.5), “dim(Z'\_y)=dim(Z'\_\{y'})”.
 
 > **Fibre dimension at a generic point of the fibre of a closure.** Let `f : X ⟶ S` be locally
 > of finite type, `F` a quasi-coherent finite type `𝒪_X`-module and `y` a point of `Ass_{X/S}(F)`.
@@ -131,7 +131,7 @@ theorem topologicalKrullDimAt_fiber_eq_fiber_of_flat
       topologicalKrullDimAt (g.fiber s) x = topologicalKrullDim (g.fiber (f y))
 ```
 
-**`Stacks.RelativeAssassin.mem_relativeAssassin_of_isGenericPoint_fibre_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSpecialization.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSpecialization.lean#L228). The attribute's comment: “the relative assassin conclusion”. References: EGA IV (12.1.1.4), “z ∈ Ass(F_y)”; EGA IV (12.1.1.5), “z ∈ Ass(F_y)”.
+**`Stacks.RelativeAssassin.mem_relativeAssassin_of_isGenericPoint_fibre_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSpecialization.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeAssassin/FlatFibreSpecialization.lean#L228). The attribute's comment: “the relative assassin conclusion”. References: EGA IV (12.1.1.4), “z ∈ Ass(F\_y)”; EGA IV (12.1.1.5), “z ∈ Ass(F\_y)”.
 
 > **Relative associated points at generic points of the fibres of a closure.** Let
 > `f : X ⟶ S` be locally of finite type, `F` a quasi-coherent finite type `𝒪_X`-module and `y` a

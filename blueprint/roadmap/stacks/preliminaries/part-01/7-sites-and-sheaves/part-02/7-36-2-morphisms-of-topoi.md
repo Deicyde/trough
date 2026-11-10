@@ -28,7 +28,7 @@ def hcomp (s : TwoMorphismOfTopoi f' g') (t : TwoMorphismOfTopoi f g) :
 
 [Tag 04IA](https://stacks.math.columbia.edu/tag/04IA) in the Stacks Project.
 
-**`TwoMorphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/TwoMorphismOfTopoi.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Topos/TwoMorphismOfTopoi.lean#L57). The attribute's comment: “a 2-morphism f ⇒ g of morphisms of topoi is a transformation f_* ⟶ g_*”. References: SGA 4 IV (3.2); SGA 4 IV (3.3.2), “2-arrows”.
+**`TwoMorphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topos/TwoMorphismOfTopoi.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Topos/TwoMorphismOfTopoi.lean#L57). The attribute's comment: “a 2-morphism f ⇒ g of morphisms of topoi is a transformation f\_* ⟶ g\_*”. References: SGA 4 IV (3.2); SGA 4 IV (3.3.2), “2-arrows”.
 
 > A *2-morphism* from a morphism of topoi `f : E → F` to a morphism of topoi `g : E → F` is a
 > transformation of functors `t : f_* ⟶ g_*`.

@@ -14,7 +14,7 @@ Section 21.28 of the Stacks Project, [Tag 0D7N](https://stacks.math.columbia.edu
 
 [Tag 0D7Q](https://stacks.math.columbia.edu/tag/0D7Q) in the Stacks Project.
 
-**`CategoryTheory.Adjunction.unitIsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L89). The attribute's comment: “variant: the subcategory of objects at which the unit is invertible, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.unitIsIso_saturated_triangulated_fullyFaithful”.
+**`CategoryTheory.Adjunction.unitIsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L89). The attribute's comment: “variant: the subcategory of objects at which the unit is invertible, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf\_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.unitIsIso\_saturated\_triangulated\_fullyFaithful”.
 
 > The objects `K` of the source of the left adjoint of an adjunction `F ⊣ G` at which the
 > unit `K ⟶ G (F K)` is invertible.
@@ -23,7 +23,7 @@ Section 21.28 of the Stacks Project, [Tag 0D7N](https://stacks.math.columbia.edu
 def unitIsIso : ObjectProperty C
 ```
 
-**`CategoryTheory.Adjunction.isClosedUnderIsomorphisms_unitIsIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L133). The attribute's comment: “variant: the unit subcategory is strictly full, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.unitIsIso_saturated_triangulated_fullyFaithful”.
+**`CategoryTheory.Adjunction.isClosedUnderIsomorphisms_unitIsIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L133). The attribute's comment: “variant: the unit subcategory is strictly full, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf\_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.unitIsIso\_saturated\_triangulated\_fullyFaithful”.
 
 > **The unit subcategory is strictly full**: it is closed under isomorphisms, by naturality
 > of the unit.
@@ -32,7 +32,7 @@ def unitIsIso : ObjectProperty C
 lemma isClosedUnderIsomorphisms_unitIsIso : adj.unitIsIso.IsClosedUnderIsomorphisms
 ```
 
-**`CategoryTheory.Adjunction.unitIsIso_isSaturated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L149). The attribute's comment: “variant: the unit subcategory is saturated, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.unitIsIso_saturated_triangulated_fullyFaithful”.
+**`CategoryTheory.Adjunction.unitIsIso_isSaturated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L149). The attribute's comment: “variant: the unit subcategory is saturated, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf\_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.unitIsIso\_saturated\_triangulated\_fullyFaithful”.
 
 > **The unit subcategory is saturated**: a direct summand of an object at which the unit is
 > invertible is again such an object.
@@ -41,7 +41,7 @@ lemma isClosedUnderIsomorphisms_unitIsIso : adj.unitIsIso.IsClosedUnderIsomorphi
 instance unitIsIso_isSaturated [HasZeroMorphisms C] : adj.unitIsIso.IsSaturated
 ```
 
-**`CategoryTheory.Adjunction.fullyFaithfulιCompLeftAdjoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L166). The attribute's comment: “variant: the left adjoint is fully faithful on the unit subcategory, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.unitIsIso_saturated_triangulated_fullyFaithful”.
+**`CategoryTheory.Adjunction.fullyFaithfulιCompLeftAdjoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L166). The attribute's comment: “variant: the left adjoint is fully faithful on the unit subcategory, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf\_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.unitIsIso\_saturated\_triangulated\_fullyFaithful”.
 
 > **The left adjoint is fully faithful on the unit subcategory.** The preimage of
 > `g : F K ⟶ F L` is the morphism `K ⟶ G (F L)` adjoint to `g`, followed by the inverse of the
@@ -51,7 +51,7 @@ instance unitIsIso_isSaturated [HasZeroMorphisms C] : adj.unitIsIso.IsSaturated
 noncomputable def fullyFaithfulιCompLeftAdjoint : (adj.unitIsIso.ι ⋙ F).FullyFaithful
 ```
 
-**`CategoryTheory.Adjunction.unitIsIso_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L256). The attribute's comment: “variant: the unit subcategory is triangulated, for a triangulated adjunction, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.unitIsIso_saturated_triangulated_fullyFaithful”.
+**`CategoryTheory.Adjunction.unitIsIso_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L256). The attribute's comment: “variant: the unit subcategory is triangulated, for a triangulated adjunction, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf\_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.unitIsIso\_saturated\_triangulated\_fullyFaithful”.
 
 > **The unit subcategory is triangulated**: it contains the zero object, is stable under the
 > shift because the unit commutes with it, and passes from two vertices of a distinguished
@@ -82,7 +82,7 @@ theorem unitIsIso_saturated_triangulated_fullyFaithful :
 
 [Tag 0D7R](https://stacks.math.columbia.edu/tag/0D7R) in the Stacks Project.
 
-**`CategoryTheory.Adjunction.counitIsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L96). The attribute's comment: “variant: the subcategory of objects at which the counit is invertible, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.counitIsIso_saturated_triangulated_fullyFaithful”.
+**`CategoryTheory.Adjunction.counitIsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L96). The attribute's comment: “variant: the subcategory of objects at which the counit is invertible, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf\_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.counitIsIso\_saturated\_triangulated\_fullyFaithful”.
 
 > The objects `K` of the source of the right adjoint of an adjunction `F ⊣ G` at which the
 > counit `F (G K) ⟶ K` is invertible.
@@ -91,7 +91,7 @@ theorem unitIsIso_saturated_triangulated_fullyFaithful :
 def counitIsIso : ObjectProperty D
 ```
 
-**`CategoryTheory.Adjunction.isClosedUnderIsomorphisms_counitIsIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L141). The attribute's comment: “variant: the counit subcategory is strictly full, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.counitIsIso_saturated_triangulated_fullyFaithful”.
+**`CategoryTheory.Adjunction.isClosedUnderIsomorphisms_counitIsIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L141). The attribute's comment: “variant: the counit subcategory is strictly full, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf\_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.counitIsIso\_saturated\_triangulated\_fullyFaithful”.
 
 > **The counit subcategory is strictly full**: it is closed under isomorphisms, by naturality
 > of the counit.
@@ -100,7 +100,7 @@ def counitIsIso : ObjectProperty D
 lemma isClosedUnderIsomorphisms_counitIsIso : adj.counitIsIso.IsClosedUnderIsomorphisms
 ```
 
-**`CategoryTheory.Adjunction.counitIsIso_isSaturated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L157). The attribute's comment: “variant: the counit subcategory is saturated, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.counitIsIso_saturated_triangulated_fullyFaithful”.
+**`CategoryTheory.Adjunction.counitIsIso_isSaturated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L157). The attribute's comment: “variant: the counit subcategory is saturated, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf\_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.counitIsIso\_saturated\_triangulated\_fullyFaithful”.
 
 > **The counit subcategory is saturated**: a direct summand of an object at which the counit
 > is invertible is again such an object.
@@ -109,7 +109,7 @@ lemma isClosedUnderIsomorphisms_counitIsIso : adj.counitIsIso.IsClosedUnderIsomo
 instance counitIsIso_isSaturated [HasZeroMorphisms D] : adj.counitIsIso.IsSaturated
 ```
 
-**`CategoryTheory.Adjunction.fullyFaithfulιCompRightAdjoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L191). The attribute's comment: “variant: the right adjoint is fully faithful on the counit subcategory, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.counitIsIso_saturated_triangulated_fullyFaithful”. References: SGA 4 I (6.4), “more general”.
+**`CategoryTheory.Adjunction.fullyFaithfulιCompRightAdjoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L191). The attribute's comment: “variant: the right adjoint is fully faithful on the counit subcategory, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf\_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.counitIsIso\_saturated\_triangulated\_fullyFaithful”. References: SGA 4 I (6.4), “more general”.
 
 > **The right adjoint is fully faithful on the counit subcategory.** The preimage of
 > `g : G A ⟶ G B` is the inverse of the counit at `A`, followed by the morphism `F (G A) ⟶ B`
@@ -119,7 +119,7 @@ instance counitIsIso_isSaturated [HasZeroMorphisms D] : adj.counitIsIso.IsSatura
 noncomputable def fullyFaithfulιCompRightAdjoint : (adj.counitIsIso.ι ⋙ G).FullyFaithful
 ```
 
-**`CategoryTheory.Adjunction.counitIsIso_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L263). The attribute's comment: “variant: the counit subcategory is triangulated, for a triangulated adjunction, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.counitIsIso_saturated_triangulated_fullyFaithful”.
+**`CategoryTheory.Adjunction.counitIsIso_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CohomologicalDescent/UnitAndCounitIsomorphisms.lean#L263). The attribute's comment: “variant: the counit subcategory is triangulated, for a triangulated adjunction, for an arbitrary adjunction F ⊣ G; the tag, for the derived adjunction Lf^* ⊣ Rf\_* of a morphism of ringed topoi, is Stacks.Cohomology.CohomologicalDescent.counitIsIso\_saturated\_triangulated\_fullyFaithful”.
 
 > **The counit subcategory is triangulated.**
 

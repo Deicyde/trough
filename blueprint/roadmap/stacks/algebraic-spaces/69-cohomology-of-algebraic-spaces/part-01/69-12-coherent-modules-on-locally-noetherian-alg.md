@@ -678,7 +678,7 @@ theorem isCoherent_modulePushforward_of_isFinite' (f : X ⟶ Y) (hf : IsFinite B
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_of_isFinite_of_isQuasicoherent`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageVanishing.lean#L44), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardTwist.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardTwist.lean#L127) (StacksFrontier): “vanishing of the higher direct images R^p f_* F, p > 0”.
+- [`AlgebraicGeometry.Space.isZero_rightDerived_modulePushforward_of_isFinite_of_isQuasicoherent`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteDirectImageVanishing.lean#L44), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardTwist.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePushforwardTwist.lean#L127) (StacksFrontier): “vanishing of the higher direct images R^p f\_* F, p > 0”.
 
 ## Depends on
 

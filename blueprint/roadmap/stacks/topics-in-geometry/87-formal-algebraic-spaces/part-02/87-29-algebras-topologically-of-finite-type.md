@@ -517,7 +517,7 @@ theorem isClosed_ker_and_quotientKerEquiv_of_isClosedImmersion'
           IsHomeomorph e
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasSurjectiveOnPullbackCharts_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveClosedImmersionCharts.lean, line 675](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveClosedImmersionCharts.lean#L675). The attribute's comment: “the surjectivity clause alone, on the pullback charts of a closed immersion, carrying nothing: the chart map is a closed immersion by Stacks 0GHX, conjugation by the presenting isomorphisms of the two charts preserves that, the implication (1) implies (3) of Stacks 0AN5 makes the chart homomorphism taut -- its two HasLargeSite conditions being free on chart rings, which are adic and carry quotient systems, by mk_lt_cutoff_of_quotientSystem_of_isAdic and hasLargeSite_of_mk_lt_cutoff -- and the quotient part of Stacks 0AQI, isClosed_ker_and_quotientKerEquiv_of_isClosedImmersion, turns the tautness into the presentation of the chart ring as a quotient. The adic and topologically finite type clauses of Stacks 0AQI are not asserted”.
+**`AlgebraicGeometry.FormalSpace.hasSurjectiveOnPullbackCharts_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveClosedImmersionCharts.lean, line 675](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigSurjectiveClosedImmersionCharts.lean#L675). The attribute's comment: “the surjectivity clause alone, on the pullback charts of a closed immersion, carrying nothing: the chart map is a closed immersion by Stacks 0GHX, conjugation by the presenting isomorphisms of the two charts preserves that, the implication (1) implies (3) of Stacks 0AN5 makes the chart homomorphism taut -- its two HasLargeSite conditions being free on chart rings, which are adic and carry quotient systems, by mk\_lt\_cutoff\_of\_quotientSystem\_of\_isAdic and hasLargeSite\_of\_mk\_lt\_cutoff -- and the quotient part of Stacks 0AQI, isClosed\_ker\_and\_quotientKerEquiv\_of\_isClosedImmersion, turns the tautness into the presentation of the chart ring as a quotient. The adic and topologically finite type clauses of Stacks 0AQI are not asserted”.
 
 > **The chart homomorphisms of a closed immersion are surjective**, carrying nothing beyond
 > the closed immersion itself. This is the surjectivity clause of **Stacks 0AQI** on the pullback
@@ -557,7 +557,7 @@ theorem hasSurjectiveOnPullbackCharts_of_isClosedImmersion {X Y : FppfSheaf B S 
 
 [Tag 0ANU](https://stacks.math.columbia.edu/tag/0ANU) in the Stacks Project.
 
-**`TopologicalRing.finiteType_tfae'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FiniteType/Equivalences.lean, line 684](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/FiniteType/Equivalences.lean#L684). The attribute's comment: “equivalent_conditions”.
+**`TopologicalRing.finiteType_tfae'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FiniteType/Equivalences.lean, line 684](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/FiniteType/Equivalences.lean#L684). The attribute's comment: “equivalent\_conditions”.
 
 > The four finite-type conditions for a morphism of countably indexed weakly admissible rings
 > are equivalent.
@@ -584,7 +584,7 @@ public theorem finiteType_tfae' (φ : B →+* A) (hφ : Continuous φ)
       HasRestrictedPowerSeriesPresentation φ]
 ```
 
-**`TopologicalRing.topologicallyFiniteType_localizationPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocal.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocal.lean#L329). The attribute's comment: “local_property”.
+**`TopologicalRing.topologicallyFiniteType_localizationPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocal.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocal.lean#L329). The attribute's comment: “local\_property”.
 
 > Tautness together with topological finite type ascends along a completed étale localization
 > diagram of countably indexed weakly admissible rings.
@@ -597,7 +597,7 @@ public theorem topologicallyFiniteType_localizationPreserves :
         (f : B →+* A) ↦ RingHom.IsTaut f ∧ IsTopologicallyOfFiniteType f)
 ```
 
-**`TopologicalRing.topologicallyFiniteType_faithfullyFlatDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocal.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocal.lean#L345). The attribute's comment: “local_property”.
+**`TopologicalRing.topologicallyFiniteType_faithfullyFlatDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocal.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocal.lean#L345). The attribute's comment: “local\_property”.
 
 > Tautness together with topological finite type descends along a completed étale localization
 > diagram whose upper horizontal ring map is faithfully flat.
@@ -610,7 +610,7 @@ public theorem topologicallyFiniteType_faithfullyFlatDescent :
         (f : B →+* A) ↦ RingHom.IsTaut f ∧ IsTopologicallyOfFiniteType f)
 ```
 
-**`TopologicalRing.topologicallyFiniteType_finiteProductPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocal.lean, line 426](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocal.lean#L426). The attribute's comment: “local_property”.
+**`TopologicalRing.topologicallyFiniteType_finiteProductPreserves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocal.lean, line 426](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocal.lean#L426). The attribute's comment: “local\_property”.
 
 > Tautness together with topological finite type is preserved by finite products of
 > targets.
@@ -623,7 +623,7 @@ public theorem topologicallyFiniteType_finiteProductPreserves :
         (f : B →+* A) ↦ RingHom.IsTaut f ∧ IsTopologicallyOfFiniteType f)
 ```
 
-**`TopologicalRing.topologicallyFiniteType_propertyIsLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocal.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocal.lean#L439). The attribute's comment: “local_property”.
+**`TopologicalRing.topologicallyFiniteType_propertyIsLocal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocal.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocal.lean#L439). The attribute's comment: “local\_property”.
 
 > Tautness together with topological finite type is a local property of morphisms of
 > countably indexed weakly admissible topological rings.
@@ -636,7 +636,7 @@ public theorem topologicallyFiniteType_propertyIsLocal :
         (f : B →+* A) ↦ RingHom.IsTaut f ∧ IsTopologicallyOfFiniteType f)
 ```
 
-**`TopologicalRing.topologicallyFiniteType_isomorphismInvariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocalRefined.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocalRefined.lean#L146). The attribute's comment: “local_property”.
+**`TopologicalRing.topologicallyFiniteType_isomorphismInvariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocalRefined.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocalRefined.lean#L146). The attribute's comment: “local\_property”.
 
 > Tautness together with topological finite type is independent of the presentations of the
 > source and the target.
@@ -650,7 +650,7 @@ public theorem topologicallyFiniteType_isomorphismInvariant :
       IsCountablyWeaklyAdmissible
 ```
 
-**`TopologicalRing.topologicallyFiniteType_propertyIsLocal'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocalRefined.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocalRefined.lean#L166). The attribute's comment: “local_property”.
+**`TopologicalRing.topologicallyFiniteType_propertyIsLocal'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocalRefined.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/FiniteTypeIsLocalRefined.lean#L166). The attribute's comment: “local\_property”.
 
 > Tautness together with topological finite type is a local property of morphisms of countably
 > indexed weakly admissible topological rings.

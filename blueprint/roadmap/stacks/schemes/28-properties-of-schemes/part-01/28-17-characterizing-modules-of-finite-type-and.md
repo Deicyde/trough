@@ -14,7 +14,7 @@ Section 28.17 of the Stacks Project, [Tag 01PA](https://stacks.math.columbia.edu
 
 [Tag 01PB](https://stacks.math.columbia.edu/tag/01PB) in the Stacks Project.
 
-**`AlgebraicGeometry.tilde_isFiniteType_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/TildeFiniteness.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/TildeFiniteness.lean#L142). References: EGA II (1.4.5), “affine base, B = O_Y”.
+**`AlgebraicGeometry.tilde_isFiniteType_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Modules/TildeFiniteness.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Modules/TildeFiniteness.lean#L142). References: EGA II (1.4.5), “affine base, B = O\_Y”.
 
 > An associated sheaf on `Spec R` is of finite type precisely when its module of global
 > sections is finite over `R`.

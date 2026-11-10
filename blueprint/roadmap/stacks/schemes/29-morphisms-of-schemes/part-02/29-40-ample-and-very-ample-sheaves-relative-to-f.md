@@ -234,7 +234,7 @@ theorem isRelativelyAmple_of_eventuallyVeryAmplePower (f : X ⟶ S) (L : X.Modul
     Stacks.RelativeAmple.IsRelativelyAmple f L
 ```
 
-**`Stacks.VeryAmplePowersQuasiCompactBase.eventuallyVeryAmplePower_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean#L124). The attribute's comment: “(1) implies (3)”. References: EGA II (4.5.10), “(ii): ample implies e)”; EGA II (4.5.11), “The case L' = O_X”; EGA II (4.6.11), “partial”.
+**`Stacks.VeryAmplePowersQuasiCompactBase.eventuallyVeryAmplePower_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/VeryAmplePowersQuasiCompactBase/Basic.lean#L124). The attribute's comment: “(1) implies (3)”. References: EGA II (4.5.10), “(ii): ample implies e)”; EGA II (4.5.11), “The case L' = O\_X”; EGA II (4.6.11), “partial”.
 
 > Let `f : X ⟶ S` be locally of finite type with `S` quasi-compact and let `L` be ample
 > relative to `f`. Then `L^{⊗ d}` is very ample relative to `f` for every sufficiently large `d`.

@@ -89,7 +89,7 @@ theorem exists_isInvertible_modulePullback_iso_of_isRetrocompact
       Nonempty ((modulePullback U.ι.toLRSHom.toShHom).obj L ≅ N)
 ```
 
-**`AlgebraicGeometry.exists_isInvertible_nonvanishingOpen_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NoetherianDimensionOne/NonvanishingLocus.lean, line 865](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NoetherianDimensionOne/NonvanishingLocus.lean#L865). The attribute's comment: “nonvanishing_locus”.
+**`AlgebraicGeometry.exists_isInvertible_nonvanishingOpen_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NoetherianDimensionOne/NonvanishingLocus.lean, line 865](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NoetherianDimensionOne/NonvanishingLocus.lean#L865). The attribute's comment: “nonvanishing\_locus”.
 
 > **Stacks Project, Tag 09NA.** A retrocompact open with discrete complement along which the
 > local rings are Noetherian of Krull dimension at most one is the nonvanishing open of a global

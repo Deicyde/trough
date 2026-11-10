@@ -199,7 +199,7 @@ theorem quotientStackTwoArrow_app
 
 [Tag 04M7](https://stacks.math.columbia.edu/tag/04M7) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.quotientStackTwoArrow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/ProjectionTwoArrow.lean, line 665](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/ProjectionTwoArrow.lean#L665). The attribute's comment: “remark restating the 2-commutative square in the X-for-S_X notation”.
+**`AlgebraicGeometry.Stack.quotientStackTwoArrow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/ProjectionTwoArrow.lean, line 665](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/Quotient/ProjectionTwoArrow.lean#L665). The attribute's comment: “remark restating the 2-commutative square in the X-for-S\_X notation”.
 
 > **Stacks 044S.** The canonical 2-morphism between the source and target maps to a quotient
 > stack, making the square of Stacks 044R 2-commutative. Its components are the images of the

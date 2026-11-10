@@ -14,7 +14,7 @@ Section 96.10 of the Stacks Project, [Tag 076P](https://stacks.math.columbia.edu
 
 [Tag 073M](https://stacks.math.columbia.edu/tag/073M) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.projectionRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionProjection.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionProjection.lean#L275). The attribute's comment: “the morphism of ringed topoi pi_F”.
+**`AlgebraicGeometry.Space.projectionRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionProjection.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionProjection.lean#L275). The attribute's comment: “the morphism of ringed topoi pi\_F”.
 
 > **Stacks 073M.** The morphism of ringed topoi
 > `π_F : (Sh(𝒳_étale), 𝒪_𝒳) ⟶ (Sh(F_étale), 𝒪_F)`: its direct image is restriction along the
@@ -31,7 +31,7 @@ noncomputable def projectionRingedToposHom (hp : p.IsFiberedInGroupoids)
       (smallEtaleRingedTopos B S hS ⟨F, hF⟩)
 ```
 
-**`AlgebraicGeometry.Space.projectionRingedToposHom_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionProjection.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionProjection.lean#L314). The attribute's comment: “the direct image of pi_F is restriction along the functor”.
+**`AlgebraicGeometry.Space.projectionRingedToposHom_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionProjection.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionProjection.lean#L314). The attribute's comment: “the direct image of pi\_F is restriction along the functor”.
 
 > **Stacks 073M, equation 075K.** The direct image of `π_F` is restriction along the functor
 > `F_étale ⥤ 𝒳`, that is, `π_{F,*}ℱ(U) = ℱ(u(U))`.
@@ -84,7 +84,7 @@ theorem restrictionFunctor_isCocontinuous (hp : p.IsFiberedInGroupoids)
       (BigFppfOver.associatedTopology B S hS p .etale)
 ```
 
-**`AlgebraicGeometry.Space.restrictionToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean#L474). The attribute's comment: “the morphism of topoi i_F”.
+**`AlgebraicGeometry.Space.restrictionToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean#L474). The attribute's comment: “the morphism of topoi i\_F”.
 
 > **Stacks 073M.** The morphism of topoi `i_F : Sh(F_étale) ⟶ Sh(𝒳_étale)` induced by the
 > continuous and cocontinuous functor `F_étale ⥤ 𝒳`: its inverse image is restriction along that
@@ -98,7 +98,7 @@ noncomputable def restrictionToposHom (hp : p.IsFiberedInGroupoids)
       (Sheaf (BigFppfOver.associatedTopology B S hS p .etale) (Type u))
 ```
 
-**`AlgebraicGeometry.Space.restrictionToposHom_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean#L496). The attribute's comment: “the inverse image of i_F is restriction along the functor”.
+**`AlgebraicGeometry.Space.restrictionToposHom_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean#L496). The attribute's comment: “the inverse image of i\_F is restriction along the functor”.
 
 > **Stacks 073M, equation 075K.** The inverse image of `i_F` is restriction along the functor
 > `F_étale ⥤ 𝒳`. This is the source's `π_{F,*} = i_F^{-1}`: both send a sheaf `ℱ` to
@@ -139,7 +139,7 @@ theorem inverseImage_structureSheaf_eq (hp : p.IsFiberedInGroupoids)
         (FibredSite.structureSheaf B S hS p hp .etale) = structureSheaf B S hS F hF
 ```
 
-**`AlgebraicGeometry.Space.restrictionRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean, line 556](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean#L556). The attribute's comment: “the morphism of ringed topoi i_F”.
+**`AlgebraicGeometry.Space.restrictionRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean, line 556](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean#L556). The attribute's comment: “the morphism of ringed topoi i\_F”.
 
 > **Stacks 073M.** The morphism of ringed topoi
 > `i_F : (Sh(F_étale), 𝒪_F) ⟶ (Sh(𝒳_étale), 𝒪_𝒳)`: the morphism of topoi `i_F` together with the
@@ -154,7 +154,7 @@ noncomputable def restrictionRingedToposHom (hp : p.IsFiberedInGroupoids)
       (FibredSite.associatedRingedTopos B S hS p hp .etale)
 ```
 
-**`AlgebraicGeometry.Space.lowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean, line 773](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean#L773). The attribute's comment: “the inverse image i_F! of the morphism of sites”.
+**`AlgebraicGeometry.Space.lowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean, line 773](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean#L773). The attribute's comment: “the inverse image i\_F! of the morphism of sites”.
 
 > **Stacks 073M.** The inverse image `π_F^{-1} = i_{F,!}` of the source: lower shriek along the
 > functor `F_étale ⥤ 𝒳`, the sheafification of the left Kan extension of a sheaf of sets on the
@@ -168,7 +168,7 @@ noncomputable def lowerShriek (hp : p.IsFiberedInGroupoids)
       Sheaf (BigFppfOver.associatedTopology B S hS p .etale) (Type u)
 ```
 
-**`AlgebraicGeometry.Space.lowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean, line 792](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean#L792). The attribute's comment: “the direct image of the morphism of sites is the inverse image of i_F”.
+**`AlgebraicGeometry.Space.lowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean, line 792](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean#L792). The attribute's comment: “the direct image of the morphism of sites is the inverse image of i\_F”.
 
 > **Stacks 073M.** `π_{F,*} = i_F^{-1}` is right adjoint to `π_F^{-1} = i_{F,!}`.
 >
@@ -187,7 +187,7 @@ noncomputable def lowerShriekAdjunction (hp : p.IsFiberedInGroupoids)
         (BigFppfOver.associatedTopology B S hS p .etale)
 ```
 
-**`AlgebraicGeometry.Space.lowerShriek_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean, line 814](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean#L814). The attribute's comment: “left exactness of i_F! on sheaves of sets”.
+**`AlgebraicGeometry.Space.lowerShriek_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean, line 814](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean#L814). The attribute's comment: “left exactness of i\_F! on sheaves of sets”.
 
 > **Stacks 073M.** `i_{F,!}` is left exact on sheaves of sets.
 >
@@ -204,7 +204,7 @@ theorem lowerShriek_preservesFiniteLimits (hF : IsAlgebraicSpace B S hS F)
     PreservesFiniteLimits (lowerShriek B S hS F p hp e)
 ```
 
-**`AlgebraicGeometry.Space.lowerShriek_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean, line 832](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean#L832). The attribute's comment: “right exactness of i_F! on sheaves of sets”.
+**`AlgebraicGeometry.Space.lowerShriek_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean, line 832](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean#L832). The attribute's comment: “right exactness of i\_F! on sheaves of sets”.
 
 > **Stacks 073M.** `i_{F,!}` is right exact on sheaves of sets, being a left adjoint.
 
@@ -231,7 +231,7 @@ theorem restrictionFunctor_isMorphismOfSites (hF : IsAlgebraicSpace B S hS F)
       (BigFppfOver.associatedTopology B S hS p .etale)
 ```
 
-**`AlgebraicGeometry.Space.lowerShriekAdjunction_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean, line 863](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean#L863). The attribute's comment: “the unit of i_F! ⊣ i_F^{-1} is an isomorphism, so π_F ∘ i_F = id”.
+**`AlgebraicGeometry.Space.lowerShriekAdjunction_unit_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean, line 863](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionToAlgebraicSpace.lean#L863). The attribute's comment: “the unit of i\_F! ⊣ i\_F^\{-1} is an isomorphism, so π\_F ∘ i\_F = id”.
 
 > **Stacks 073M.** `π_F ∘ i_F = id`.
 >
@@ -252,7 +252,7 @@ theorem lowerShriekAdjunction_unit_isIso (hp : p.IsFiberedInGroupoids)
 
 [Tag 0GQA](https://stacks.math.columbia.edu/tag/0GQA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.etaleLocalizationRingedSquares`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionEtaleLocalization.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionEtaleLocalization.lean#L479). The attribute's comment: “both squares of the diagram formed by i_F, i_G, pi_F, pi_G, f and f_small commute as diagrams of ringed topoi, for an etale induced morphism f : F -> G”.
+**`AlgebraicGeometry.Space.etaleLocalizationRingedSquares`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionEtaleLocalization.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionEtaleLocalization.lean#L479). The attribute's comment: “both squares of the diagram formed by i\_F, i\_G, pi\_F, pi\_G, f and f\_small commute as diagrams of ringed topoi, for an etale induced morphism f : F -> G”.
 
 > **Stacks 0GQA.** Let `f : 𝒳 ⥤ 𝒴` be a morphism of categories fibred in groupoids over
 > `(Sch/S)_{fppf}`, with `𝒳` and `𝒴` representable by algebraic spaces `F` and `G` through the
@@ -390,16 +390,16 @@ theorem restrictionSheafFunctor_obj_obj (hp : p.IsFiberedInGroupoids)
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.projectionPushforward`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionProjection.lean#L327), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean#L52) (StacksFrontier): “the direct image pi_{F,*}”.
-- [`AlgebraicGeometry.Space.restrictionSheafFunctor_eq_projectionPushforward`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionProjection.lean#L338), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean#L54) (StacksFrontier): “the restriction is the direct image along pi_F”.
-- [`AlgebraicGeometry.Space.restrictionSheafFunctor_eq_restrictionToposHom_inverseImage`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionProjection.lean#L352), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean#L57) (StacksFrontier): “the restriction is the inverse image along i_F”.
-- [`AlgebraicGeometry.Space.projectionPushforward_obj_obj`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionProjection.lean#L364), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean#L60) (StacksFrontier): “sections of the direct image along pi_F”.
+- [`AlgebraicGeometry.Space.projectionPushforward`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionProjection.lean#L327), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean#L52) (StacksFrontier): “the direct image pi\_\{F,*}”.
+- [`AlgebraicGeometry.Space.restrictionSheafFunctor_eq_projectionPushforward`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionProjection.lean#L338), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean#L54) (StacksFrontier): “the restriction is the direct image along pi\_F”.
+- [`AlgebraicGeometry.Space.restrictionSheafFunctor_eq_restrictionToposHom_inverseImage`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionProjection.lean#L352), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean#L57) (StacksFrontier): “the restriction is the inverse image along i\_F”.
+- [`AlgebraicGeometry.Space.projectionPushforward_obj_obj`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionProjection.lean#L364), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentRestrictionTags.lean#L60) (StacksFrontier): “sections of the direct image along pi\_F”.
 
 ## Tag 073N, a lemma
 
 [Tag 073N](https://stacks.math.columbia.edu/tag/073N) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.restrictionRingedSquareTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionRingedSquareCommutes.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionRingedSquareCommutes.lean#L104). The attribute's comment: “the square of ringed topoi formed by pi_F, pi_G, the morphism induced by f and f_small commutes: its two composites are 2-isomorphic morphisms of ringed topoi”.
+**`AlgebraicGeometry.Space.restrictionRingedSquareTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionRingedSquareCommutes.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionRingedSquareCommutes.lean#L104). The attribute's comment: “the square of ringed topoi formed by pi\_F, pi\_G, the morphism induced by f and f\_small commutes: its two composites are 2-isomorphic morphisms of ringed topoi”.
 
 > Let `f : 𝒳 ⥤ 𝒴` be a morphism of categories fibred in groupoids over `(Sch/S)_{fppf}`,
 > with `𝒳` and `𝒴` representable by algebraic spaces `F` and `G` through the chosen equivalences
@@ -495,7 +495,7 @@ noncomputable def restrictedDirectImageComparison :
       (restrictionSquareSpaceLeg B S hS F G p hp hF hG eF fSpace).toToposHom.pushforward
 ```
 
-**`AlgebraicGeometry.Space.exists_restrictedDirectImageComparisonTarget_equalizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionDirectImageComparison.lean, line 615](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionDirectImageComparison.lean#L615). The attribute's comment: “the right-hand side f_{small,*}(F|_{F_etale}), as an equalizer of sections of F|_{F_etale} over two etale scheme charts of F, at a chart V of G”.
+**`AlgebraicGeometry.Space.exists_restrictedDirectImageComparisonTarget_equalizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionDirectImageComparison.lean, line 615](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionDirectImageComparison.lean#L615). The attribute's comment: “the right-hand side f\_\{small,*}(F|\_\{F\_etale}), as an equalizer of sections of F|\_\{F\_etale} over two etale scheme charts of F, at a chart V of G”.
 
 > **The right-hand side of equation 075M at a chart, as an equalizer.**  The target of the
 > comparison map is `f_{small,*}(ℱ|_{F_étale})`; its sections over an étale scheme chart `V` of
@@ -559,7 +559,7 @@ theorem isIso_restrictedDirectImageComparison :
     IsIso (restrictedDirectImageComparison B S hS F G p q hp hq hF hG eF eG f hf fSpace ha)
 ```
 
-**`AlgebraicGeometry.Space.exists_restrictedDirectImageComparisonSource_equalizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionDirectImageLeftEqualizer.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionDirectImageLeftEqualizer.lean#L363). The attribute's comment: “the left-hand side (f_*F)|_{G_etale}, as an equalizer of sections of F over two objects of the 2-fibre product (Sch/V)_fppf x_Y X, at a chart V of G. This is the counterpart of exists_restrictedDirectImageComparisonTarget_equalizer, which is the right-hand side at the same chart; with both sides presented the comparison map is a map of equalizer diagrams. The representability of the 2-fibre product by an algebraic space over S -- the identification of (Sch/V)_fppf x_Y X with the split category fibred in groupoids of V x_G F that the source's proof of Tag 073N makes -- is supplied by exists_isAlgebraicSpace_twoFibreProductStructureFunctor from the presentations of X and Y alone”.
+**`AlgebraicGeometry.Space.exists_restrictedDirectImageComparisonSource_equalizer`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RestrictionDirectImageLeftEqualizer.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RestrictionDirectImageLeftEqualizer.lean#L363). The attribute's comment: “the left-hand side (f\_*F)|\_\{G\_etale}, as an equalizer of sections of F over two objects of the 2-fibre product (Sch/V)\_fppf x\_Y X, at a chart V of G. This is the counterpart of exists\_restrictedDirectImageComparisonTarget\_equalizer, which is the right-hand side at the same chart; with both sides presented the comparison map is a map of equalizer diagrams. The representability of the 2-fibre product by an algebraic space over S -- the identification of (Sch/V)\_fppf x\_Y X with the split category fibred in groupoids of V x\_G F that the source's proof of Tag 073N makes -- is supplied by exists\_isAlgebraicSpace\_twoFibreProductStructureFunctor from the presentations of X and Y alone”.
 
 > **Equation 075M, the left-hand side at a chart, as an equalizer.** The sections of
 > `(f_*ℱ)|_{G_étale}` over an étale scheme chart `V` of `G` are the equalizer of the sections of `ℱ`

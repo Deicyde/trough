@@ -47,7 +47,7 @@ theorem isZariskiCovering_yoneda_of_openCover
 
 [Tag 041H](https://stacks.math.columbia.edu/tag/041H) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isZariskiCovering_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean#L92). The attribute's comment: “isomorphism_cover”.
+**`AlgebraicGeometry.Space.isZariskiCovering_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean#L92). The attribute's comment: “isomorphism\_cover”.
 
 > **Stacks 041H.** An isomorphism gives a singleton Zariski covering.
 
@@ -59,7 +59,7 @@ theorem isZariskiCovering_of_isIso
     IsZariskiCovering B S hS PUnit (fun _ => X') (fun _ => f)
 ```
 
-**`AlgebraicGeometry.Space.isZariskiCovering_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean#L107). The attribute's comment: “composition_cover”.
+**`AlgebraicGeometry.Space.isZariskiCovering_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean#L107). The attribute's comment: “composition\_cover”.
 
 > **Stacks 041H.** Composing a Zariski covering with a covering of each member gives a
 > Zariski covering.
@@ -79,7 +79,7 @@ theorem isZariskiCovering_comp
       (fun p => Xᵢⱼ p.1 p.2) (fun p => g p.1 p.2 ≫ f p.1)
 ```
 
-**`AlgebraicGeometry.Space.isZariskiCovering_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean#L137). The attribute's comment: “base_change_cover”.
+**`AlgebraicGeometry.Space.isZariskiCovering_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/Zariski.lean#L137). The attribute's comment: “base\_change\_cover”.
 
 > **Stacks 041H.** Zariski coverings are stable under base change: the first projections of
 > the fibre products of a Zariski covering `{Xᵢ ⟶ X}` with a morphism `g : X' ⟶ X` form a

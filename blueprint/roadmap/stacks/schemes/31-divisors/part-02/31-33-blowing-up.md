@@ -42,7 +42,7 @@ public noncomputable abbrev exceptionalIdeal {X : Scheme.{u}} (I : X.IdealSheafD
     (blowUp I).IdealSheafData
 ```
 
-**`AlgebraicGeometry.exceptionalDivisor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean#L84). The attribute's comment: “exceptional divisor scheme”. References: EGA IV (19.4.1), “Y'=f^{-1}(Y)”; SGA 7 XVIII (2.1).
+**`AlgebraicGeometry.exceptionalDivisor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ReesAlgebra/BlowUp.lean#L84). The attribute's comment: “exceptional divisor scheme”. References: EGA IV (19.4.1), “Y'=f^\{-1}(Y)”; SGA 7 XVIII (2.1).
 
 > **Stacks Project, Tag 01OG.** The exceptional divisor is the inverse image of the
 > closed subscheme cut out by `I`.
@@ -260,7 +260,7 @@ theorem exists_isPullback_blowUpToBase_comap {X₁ X₂ : Scheme.{u}} (g : X₁ 
 
 [Tag 02OS](https://stacks.math.columbia.edu/tag/02OS) in the Stacks Project.
 
-**`Stacks.Blowup.isEffectiveCartierDivisor_exceptionalIdeal`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalCartier.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalCartier.lean#L572). The attribute's comment: “exceptional_effective_cartier”. References: EGA IV (19.4.1).
+**`Stacks.Blowup.isEffectiveCartierDivisor_exceptionalIdeal`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalCartier.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/ExceptionalCartier.lean#L572). The attribute's comment: “exceptional\_effective\_cartier”. References: EGA IV (19.4.1).
 
 > **Stacks Project, Tag 02OS part (2).** For a scheme `X` and a quasi-coherent ideal sheaf
 > `I`, the exceptional divisor of the blowup of `X` in `I` — the inverse image of the closed
@@ -342,7 +342,7 @@ theorem isLocallyPrincipal_exceptionalIdeal :
     Stacks.Divisors.IsLocallyPrincipal (exceptionalIdeal ℐ)
 ```
 
-**`AlgebraicGeometry.isIso_blowUp_restrict_compl_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/IsomorphismOffCenter/Basic.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/IsomorphismOffCenter/Basic.lean#L234). The attribute's comment: “isomorphism_off_center”. References: SGA 7 XVIII (2.1), “more general”.
+**`AlgebraicGeometry.isIso_blowUp_restrict_compl_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/IsomorphismOffCenter/Basic.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/IsomorphismOffCenter/Basic.lean#L234). The attribute's comment: “isomorphism\_off\_center”. References: SGA 7 XVIII (2.1), “more general”.
 
 > **Stacks Project, Tag 02OS.** The blowup of a scheme in a quasi-coherent ideal sheaf is an
 > isomorphism over the open complement of the closed subscheme the ideal cuts out.

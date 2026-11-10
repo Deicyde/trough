@@ -14,7 +14,7 @@ Section 103.10 of the Stacks Project, [Tag 0777](https://stacks.math.columbia.ed
 
 [Tag 0778](https://stacks.math.columbia.edu/tag/0778) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.flatBaseChangeQuasicoherator`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Coherator.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Coherator.lean#L257). The attribute's comment: “the right adjoint Q : LQCoh^fbc(𝒪_𝒳) ⥤ QCoh(𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.flatBaseChangeQuasicoherator`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Coherator.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/Coherator.lean#L257). The attribute's comment: “the right adjoint Q : LQCoh^fbc(𝒪\_𝒳) ⥤ QCoh(𝒪\_𝒳)”.
 
 > **The coherator on `LQCoh^fbc(𝒪_𝒳)`.** The right adjoint of the inclusion
 > `i : QCoh(𝒪_𝒳) → LQCoh^fbc(𝒪_𝒳)`: it sends a locally quasi-coherent module with the flat base
@@ -82,7 +82,7 @@ def flatBaseChangeQuasicoheratorCompInclusionIsoId
       𝟭 (FibredSite.quasicoherentModules.{u, u + 1, u, u} B S hS p hp)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.lqcohFbcCoherator`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeCoherator.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeCoherator.lean#L68). The attribute's comment: “the right adjoint Q : LQCoh^fbc(𝒪_𝒳) ⥤ QCoh(𝒪_𝒳) of the inclusion”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.lqcohFbcCoherator`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeCoherator.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeCoherator.lean#L68). The attribute's comment: “the right adjoint Q : LQCoh^fbc(𝒪\_𝒳) ⥤ QCoh(𝒪\_𝒳) of the inclusion”.
 
 > **Stacks 0778: the right adjoint `Q : LQCoh^fbc(𝒪_𝒳) ⥤ QCoh(𝒪_𝒳)`.**
 
@@ -92,7 +92,7 @@ abbrev lqcohFbcCoherator :
       quasicoherentModules B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.lqcohFbcCoheratorAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeCoherator.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeCoherator.lean#L75). The attribute's comment: “the inclusion QCoh(𝒪_𝒳) → LQCoh^fbc(𝒪_𝒳) is left adjoint to Q”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.lqcohFbcCoheratorAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeCoherator.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatBaseChangeCoherator.lean#L75). The attribute's comment: “the inclusion QCoh(𝒪\_𝒳) → LQCoh^fbc(𝒪\_𝒳) is left adjoint to Q”.
 
 > **Stacks 0778: `Q` is right adjoint to the inclusion `i`.**
 
@@ -128,7 +128,7 @@ def lqcohFbcCoheratorAdjunctionAndCompIso :
 
 [Tag 0779](https://stacks.math.columbia.edu/tag/0779) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isZero_coherator_obj_iff_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L94). The attribute's comment: “part (1): the kernel of Q on LQCoh^fbc(𝒪_𝒳) is exactly its parasitic objects”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isZero_coherator_obj_iff_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L94). The attribute's comment: “part (1): the kernel of Q on LQCoh^fbc(𝒪\_𝒳) is exactly its parasitic objects”.
 
 > **Stacks 0779** (1). An object of `LQCoh^fbc(𝒪_𝒳)` is killed by the coherator
 > `Q : Mod(𝒪_𝒳) → QCoh(𝒪_𝒳)` of **Stacks 0778** exactly when it is parasitic: the kernel of `Q` on
@@ -140,7 +140,7 @@ theorem isZero_coherator_obj_iff_isParasitic (F : Stack.fppfModules B S hS 𝒳)
     IsZero ((coherator B S hS 𝒳).obj F) ↔ IsParasitic B S hS 𝒳 .fppf F.val
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isParasitic_kernel_and_cokernel_coheratorAdjunction_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L103). The attribute's comment: “part (2): the kernel and the cokernel of the adjunction map Q(F) → F are parasitic, for F in LQCoh^fbc(𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isParasitic_kernel_and_cokernel_coheratorAdjunction_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L103). The attribute's comment: “part (2): the kernel and the cokernel of the adjunction map Q(F) → F are parasitic, for F in LQCoh^fbc(𝒪\_𝒳)”.
 
 > **Stacks 0779** (2). For `𝓕` in `LQCoh^fbc(𝒪_𝒳)` both the kernel and the cokernel of the
 > adjunction map `Q(𝓕) ⟶ 𝓕` are parasitic.
@@ -153,7 +153,7 @@ theorem isParasitic_kernel_and_cokernel_coheratorAdjunction_counit
         (cokernel ((coheratorAdjunction B S hS 𝒳).counit.app F)).val
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.preservesLimitsOfSize_lqcohSheafFbc_ι_comp_coherator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L148). The attribute's comment: “part (3): Q on LQCoh^fbc(𝒪_𝒳) commutes with all limits”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.preservesLimitsOfSize_lqcohSheafFbc_ι_comp_coherator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L148). The attribute's comment: “part (3): Q on LQCoh^fbc(𝒪\_𝒳) commutes with all limits”.
 
 > **Stacks 0779** (3), limits: the coherator `Q : LQCoh^fbc(𝒪_𝒳) → QCoh(𝒪_𝒳)` commutes with all
 > limits, being right adjoint to the inclusion `QCoh(𝒪_𝒳) → LQCoh^fbc(𝒪_𝒳)`.
@@ -164,7 +164,7 @@ theorem preservesLimitsOfSize_lqcohSheafFbc_ι_comp_coherator :
       ((lqcohSheafFbcFppfModules.{u, w, u} B E h S hS 𝒳).ι ⋙ coherator B S hS 𝒳)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.preservesColimitsOfShape_lqcohSheafFbc_ι_comp_coherator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L156). The attribute's comment: “part (3): Q on LQCoh^fbc(𝒪_𝒳) commutes with all colimits”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.preservesColimitsOfShape_lqcohSheafFbc_ι_comp_coherator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L156). The attribute's comment: “part (3): Q on LQCoh^fbc(𝒪\_𝒳) commutes with all colimits”.
 
 > **Stacks 0779** (3), colimits: the coherator `Q : LQCoh^fbc(𝒪_𝒳) → QCoh(𝒪_𝒳)` commutes with
 > all colimits of `u`-small shapes, which are computed in `Mod(𝒪_𝒳)`.
@@ -175,7 +175,7 @@ theorem preservesColimitsOfShape_lqcohSheafFbc_ι_comp_coherator (J : Type u) [C
       ((lqcohSheafFbcFppfModules.{u, w, u} B E h S hS 𝒳).ι ⋙ coherator B S hS 𝒳)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.preservesFiniteLimits_and_preservesFiniteColimits_lqcohSheafFbc_ι_comp_coherator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L164). The attribute's comment: “part (3): Q is exact on LQCoh^fbc(𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.preservesFiniteLimits_and_preservesFiniteColimits_lqcohSheafFbc_ι_comp_coherator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L164). The attribute's comment: “part (3): Q is exact on LQCoh^fbc(𝒪\_𝒳)”.
 
 > **Stacks 0779** (3), exactness: the coherator `Q : LQCoh^fbc(𝒪_𝒳) → QCoh(𝒪_𝒳)` is exact, it
 > preserves finite limits and finite colimits.
@@ -305,7 +305,7 @@ theorem isParasitic_of_isColimit_cokernelCofork_flatBaseChangeQuasicoherator
 
 [Tag 0GQJ](https://stacks.math.columbia.edu/tag/0GQJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isIso_lqcohFbcCoheratorPullbackComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorFlatPullback.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorFlatPullback.lean#L142). The attribute's comment: “the canonical comparison f^* ∘ Q_𝒴 ⟶ Q_𝒳 ∘ f^*, the mate of i ∘ f^* = f^* ∘ i under the adjunctions of Stacks 0778, is an isomorphism”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isIso_lqcohFbcCoheratorPullbackComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorFlatPullback.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorFlatPullback.lean#L142). The attribute's comment: “the canonical comparison f^* ∘ Q\_𝒴 ⟶ Q\_𝒳 ∘ f^*, the mate of i ∘ f^* = f^* ∘ i under the adjunctions of Stacks 0778, is an isomorphism”.
 
 > **Stacks 0GQJ.** Let `f : 𝒳 ⟶ 𝒴` be a flat morphism of algebraic stacks.  Then
 > `Q_𝒳 ∘ f^* = f^* ∘ Q_𝒴`, with `Q_𝒳` and `Q_𝒴` the coherators of **Stacks 0778**: the canonical
@@ -320,7 +320,7 @@ theorem isIso_lqcohFbcCoheratorPullbackComparison (hf : AlgebraicStacks.IsFlat B
 
 [Tag 0GQK](https://stacks.math.columbia.edu/tag/0GQK) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isIso_restrict_coheratorAdjunction_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorFlatObjectIso.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorFlatObjectIso.lean#L52). The attribute's comment: “Q(F)|_{U_ét} = F|_{U_ét} for x : U → 𝒳 flat and F in LQCoh^fbc(𝒪_𝒳): the restriction of the adjunction map Q(F) → F to U_ét is an isomorphism”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isIso_restrict_coheratorAdjunction_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorFlatObjectIso.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorFlatObjectIso.lean#L52). The attribute's comment: “Q(F)|\_\{U\_ét} = F|\_\{U\_ét} for x : U → 𝒳 flat and F in LQCoh^fbc(𝒪\_𝒳): the restriction of the adjunction map Q(F) → F to U\_ét is an isomorphism”.
 
 > **Stacks 0GQK.** Let `x` be an object of an algebraic stack `𝒳` lying over a scheme `U` such
 > that `x : U → 𝒳` is flat, and let `𝓕` be in `LQCoh^fbc(𝒪_𝒳)`.  Then `Q(𝓕)|_{U_ét} = 𝓕|_{U_ét}`:
@@ -340,7 +340,7 @@ theorem isIso_restrict_coheratorAdjunction_counit (F : Stack.fppfModules B S hS 
 
 [Tag 0GQL](https://stacks.math.columbia.edu/tag/0GQL) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLimitKernelForkCoherator`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L81). The attribute's comment: “part (3), the second half: Q(Ker φ), with its map to 𝓕, is the kernel of φ in QCoh(𝒪_𝒳), for the coherator Q of Stacks 0778”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLimitKernelForkCoherator`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L81). The attribute's comment: “part (3), the second half: Q(Ker φ), with its map to 𝓕, is the kernel of φ in QCoh(𝒪\_𝒳), for the coherator Q of Stacks 0778”.
 
 > **Stacks 0GQL, part (3), the kernel in `QCoh(𝒪_𝒳)`.** For a map `φ : 𝓕 ⟶ 𝓖` of
 > quasi-coherent modules on an algebraic stack, `Q(Ker(i φ))`, the coherator of the kernel computed
@@ -352,7 +352,7 @@ def isLimitKernelForkCoherator {F G : quasicoherentModules B S hS 𝒳} (φ : F 
       (Abelian.coreflectorKernelι_comp (coheratorAdjunction B S hS 𝒳) φ))
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.lqcohSheafFbc_kernel_quasicoherentInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L350). The attribute's comment: “part (3), the first half: the kernel computed in Mod(𝒪_𝒳) of a map of quasi-coherent modules lies in LQCoh^fbc(𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.lqcohSheafFbc_kernel_quasicoherentInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L350). The attribute's comment: “part (3), the first half: the kernel computed in Mod(𝒪\_𝒳) of a map of quasi-coherent modules lies in LQCoh^fbc(𝒪\_𝒳)”.
 
 > **Stacks 0GQL, part (3), the kernel in `Mod(𝒪_𝒳)`.** For a map `φ : 𝓕 ⟶ 𝓖` of quasi-coherent
 > modules on an algebraic stack, the kernel of `φ` computed in `Mod(𝒪_𝒳)` lies in
@@ -367,7 +367,7 @@ theorem lqcohSheafFbc_kernel_quasicoherentInclusion {F G : quasicoherentModules 
       (kernel ((quasicoherentInclusion B S hS 𝒳).map φ))
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.lqcohSheafFbc_image_quasicoherentInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L363). The attribute's comment: “part (2), corrected, the first half: the image computed in Mod(𝒪_𝒳) of a map of quasi-coherent modules lies in LQCoh^fbc(𝒪_𝒳); it need not be quasi-coherent”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.lqcohSheafFbc_image_quasicoherentInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L363). The attribute's comment: “part (2), corrected, the first half: the image computed in Mod(𝒪\_𝒳) of a map of quasi-coherent modules lies in LQCoh^fbc(𝒪\_𝒳); it need not be quasi-coherent”.
 
 > **Stacks 0GQL, part (2), corrected, the image in `Mod(𝒪_𝒳)`.** For a map `φ : 𝓕 ⟶ 𝓖` of
 > quasi-coherent modules on an algebraic stack, the image of `φ` computed in `Mod(𝒪_𝒳)` lies in
@@ -382,7 +382,7 @@ theorem lqcohSheafFbc_image_quasicoherentInclusion {F G : quasicoherentModules B
       (Abelian.image ((quasicoherentInclusion B S hS 𝒳).map φ))
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.coheratorImageIsImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L377). The attribute's comment: “part (2), corrected, the second half: Q(Im φ) is the image of φ in QCoh(𝒪_𝒳), for the coherator Q of Stacks 0778”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.coheratorImageIsImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L377). The attribute's comment: “part (2), corrected, the second half: Q(Im φ) is the image of φ in QCoh(𝒪\_𝒳), for the coherator Q of Stacks 0778”.
 
 > **Stacks 0GQL, part (2), corrected, the image in `QCoh(𝒪_𝒳)`.** For a map `φ : 𝓕 ⟶ 𝓖` of
 > quasi-coherent modules on an algebraic stack, `Q(Im φ)`, the coherator of the image computed in
@@ -396,7 +396,7 @@ def coheratorImageIsImage {F G : quasicoherentModules B S hS 𝒳} (φ : F ⟶ G
     IsImage (Abelian.coreflectorImageMonoFactorisation (coheratorAdjunction B S hS 𝒳) φ)
 ```
 
-**`AlgebraicGeometry.Stack.ImageCounterexample.not_forall_isQuasicoherentOnSite_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentImageCounterexample.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentImageCounterexample.lean#L330). The attribute's comment: “part (2) as printed is false, and the inclusion QCoh(𝒪_𝒳) → Mod(𝒪_𝒳) is not exact in general: for multiplication by 2 on 𝒪 over Spec ℤ the image computed in Mod(𝒪_𝒳) is not quasi-coherent (it vanishes on Spec 𝔽₂ while its would-be module 2ℤ ⊗ 𝔽₂ does not); the corrected part (2) is lqcohSheafFbc_image_quasicoherentInclusion and coheratorImageIsImage”.
+**`AlgebraicGeometry.Stack.ImageCounterexample.not_forall_isQuasicoherentOnSite_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentImageCounterexample.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentImageCounterexample.lean#L330). The attribute's comment: “part (2) as printed is false, and the inclusion QCoh(𝒪\_𝒳) → Mod(𝒪\_𝒳) is not exact in general: for multiplication by 2 on 𝒪 over Spec ℤ the image computed in Mod(𝒪\_𝒳) is not quasi-coherent (it vanishes on Spec 𝔽₂ while its would-be module 2ℤ ⊗ 𝔽₂ does not); the corrected part (2) is lqcohSheafFbc\_image\_quasicoherentInclusion and coheratorImageIsImage”.
 
 > **Stacks 0GQL, part (2), fails as written.** It is not true that for every map `φ` of
 > quasi-coherent modules on an algebraic stack the image of `φ` computed in `Mod(𝒪_𝒳)` is
@@ -415,7 +415,7 @@ theorem not_forall_isQuasicoherentOnSite_image :
         ((AlgebraicStacks.quasicoherentInclusion B S hS 𝒳).map φ)).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.FibredSite.isColimitCokernelCoforkMapQuasicoherentInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelCokernel.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelCokernel.lean#L114). The attribute's comment: “part (1): the cokernel of a map of quasi-coherent modules computed in Mod(𝒪_𝒳) is the inclusion of the cokernel computed in QCoh(𝒪_𝒳), over the closure of quasi-coherence under colimits”.
+**`AlgebraicGeometry.FibredSite.isColimitCokernelCoforkMapQuasicoherentInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelCokernel.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelCokernel.lean#L114). The attribute's comment: “part (1): the cokernel of a map of quasi-coherent modules computed in Mod(𝒪\_𝒳) is the inclusion of the cokernel computed in QCoh(𝒪\_𝒳), over the closure of quasi-coherence under colimits”.
 
 > **Stacks 0GQL, part (1).**  Let `φ : 𝓕 → 𝓖` be a map of quasi-coherent `𝒪_𝒳`-modules.  The
 > cokernel of `φ` in `QCoh(𝒪_𝒳)`, included into `Mod(𝒪_𝒳)` together with its projection, is a
@@ -438,7 +438,7 @@ def isColimitCokernelCoforkMapQuasicoherentInclusion
         (ringStructureSheafCore B S hS p hp .fppf)).ι.map φ) 0)
 ```
 
-**`AlgebraicGeometry.FibredSite.isQuasicoherent_cokernel_quasicoherentInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelCokernel.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelCokernel.lean#L130). The attribute's comment: “part (1), the quasi-coherence half: the cokernel computed in Mod(𝒪_𝒳) of a map of quasi-coherent modules is quasi-coherent, over the closure of quasi-coherence under colimits”.
+**`AlgebraicGeometry.FibredSite.isQuasicoherent_cokernel_quasicoherentInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelCokernel.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelCokernel.lean#L130). The attribute's comment: “part (1), the quasi-coherence half: the cokernel computed in Mod(𝒪\_𝒳) of a map of quasi-coherent modules is quasi-coherent, over the closure of quasi-coherence under colimits”.
 
 > **Stacks 0GQL, part (1), the quasi-coherence half.**  The cokernel of a map of quasi-coherent
 > `𝒪_𝒳`-modules computed in `Mod(𝒪_𝒳)` is quasi-coherent, because it is isomorphic to the
@@ -453,7 +453,7 @@ theorem isQuasicoherent_cokernel_quasicoherentInclusion
         (ringStructureSheafCore B S hS p hp .fppf)).ι.map φ))
 ```
 
-**`AlgebraicGeometry.Stack.isLimitKernelForkFlatBaseChangeQuasicoherator`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelCokernel.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelCokernel.lean#L240). The attribute's comment: “part (3), second half: Q(Ker φ) is the kernel of φ in QCoh(𝒪_𝒳), over the existence of Ker φ inside LQCoh^fbc(𝒪_𝒳) — the first half of the clause, which is Stacks 0771 part (2) and is not available”.
+**`AlgebraicGeometry.Stack.isLimitKernelForkFlatBaseChangeQuasicoherator`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelCokernel.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelCokernel.lean#L240). The attribute's comment: “part (3), second half: Q(Ker φ) is the kernel of φ in QCoh(𝒪\_𝒳), over the existence of Ker φ inside LQCoh^fbc(𝒪\_𝒳) — the first half of the clause, which is Stacks 0771 part (2) and is not available”.
 
 > **Stacks 0GQL, part (3), second half.**  Let `φ : 𝓕 → 𝓖` be a map of quasi-coherent
 > `𝒪_𝒳`-modules and let `Ker(i φ)` be its kernel inside `LQCoh^fbc(𝒪_𝒳)`.  Then `Q(Ker(i φ))`,
@@ -477,7 +477,7 @@ def isLimitKernelForkFlatBaseChangeQuasicoherator
       (quasicoheratorKernelι_comp B E h S hS p hp hinc hclosed hpres hls hlsD hwp hsep φ))
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.preservesFiniteColimits_quasicoherentInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelImageCokernel.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelImageCokernel.lean#L78). The attribute's comment: “the inclusion QCoh(𝒪_𝒳) → Mod(𝒪_𝒳) is right exact”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.preservesFiniteColimits_quasicoherentInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelImageCokernel.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelImageCokernel.lean#L78). The attribute's comment: “the inclusion QCoh(𝒪\_𝒳) → Mod(𝒪\_𝒳) is right exact”.
 
 > **Stacks 0GQL, the right exactness of the inclusion.** The inclusion
 > `QCoh(𝒪_𝒳) → Mod(𝒪_𝒳)` of the quasi-coherent modules on an algebraic stack is right exact.
@@ -488,7 +488,7 @@ theorem preservesFiniteColimits_quasicoherentInclusion :
       (FibredSite.ringStructureSheafCore B S hS 𝒳.val.val.p 𝒳.val.isFiberedInGroupoids .fppf)).ι
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isColimitCokernelCoforkQuasicoherentInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelImageCokernel.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelImageCokernel.lean#L111). The attribute's comment: “part (1): the cokernel computed in Mod(𝒪_𝒳) of a map of quasi-coherent modules is the cokernel computed in QCoh(𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isColimitCokernelCoforkQuasicoherentInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelImageCokernel.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelImageCokernel.lean#L111). The attribute's comment: “part (1): the cokernel computed in Mod(𝒪\_𝒳) of a map of quasi-coherent modules is the cokernel computed in QCoh(𝒪\_𝒳)”.
 
 > **Stacks 0GQL, part (1).** Let `φ : 𝓕 → 𝓖` be a map of quasi-coherent modules on an algebraic
 > stack `𝒳`. The cokernel of `φ` in `QCoh(𝒪_𝒳)`, included into `Mod(𝒪_𝒳)` with its projection, is a
@@ -509,7 +509,7 @@ def isColimitCokernelCoforkQuasicoherentInclusion
           .fppf)).ι.map φ) 0)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasicoherent_cokernel_quasicoherentInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelImageCokernel.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelImageCokernel.lean#L128). The attribute's comment: “part (1), the quasi-coherence half: the cokernel computed in Mod(𝒪_𝒳) of a map of quasi-coherent modules is quasi-coherent”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasicoherent_cokernel_quasicoherentInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelImageCokernel.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelImageCokernel.lean#L128). The attribute's comment: “part (1), the quasi-coherence half: the cokernel computed in Mod(𝒪\_𝒳) of a map of quasi-coherent modules is quasi-coherent”.
 
 > **Stacks 0GQL, part (1), the quasi-coherence half.** The cokernel computed in `Mod(𝒪_𝒳)` of a
 > map of quasi-coherent modules on an algebraic stack is quasi-coherent.
@@ -525,7 +525,7 @@ theorem isQuasicoherent_cokernel_quasicoherentInclusion
           .fppf)).ι.map φ))
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.instAbelianQuasicoherentModules`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentModulesAbelian.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentModulesAbelian.lean#L70). The attribute's comment: “the category QCoh(𝒪_𝒳) is abelian, for every algebraic stack 𝒳”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.instAbelianQuasicoherentModules`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentModulesAbelian.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentModulesAbelian.lean#L70). The attribute's comment: “the category QCoh(𝒪\_𝒳) is abelian, for every algebraic stack 𝒳”.
 
 > **Stacks 0GQL**: `QCoh(𝒪_𝒳)` is abelian, for every algebraic stack `𝒳` (also **Stacks 06WV**
 > part (2)). It is coreflective in the weak Serre subcategory `LQCoh^fbc(𝒪_𝒳)` of `Mod(𝒪_𝒳)`, with
@@ -537,13 +537,13 @@ instance instAbelianQuasicoherentModules : Abelian (quasicoherentModules B S hS 
 
 Declarations registered for the tag:
 
-- [`preservesFiniteColimits_quasicoherentInclusion`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=preservesFiniteColimits_quasicoherentInclusion#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelCokernel.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelCokernel.lean#L90) (StacksFrontier): “the inclusion QCoh(𝒪_𝒳) → Mod(𝒪_𝒳) is right exact, over the closure of quasi-coherence under colimits”.
+- [`preservesFiniteColimits_quasicoherentInclusion`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=preservesFiniteColimits_quasicoherentInclusion#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelCokernel.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentKernelCokernel.lean#L90) (StacksFrontier): “the inclusion QCoh(𝒪\_𝒳) → Mod(𝒪\_𝒳) is right exact, over the closure of quasi-coherence under colimits”.
 
 ## Tag 0GQM, a remark
 
 [Tag 0GQM](https://stacks.math.columbia.edu/tag/0GQM) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isMonoidal_lqcohSheafFbc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L207). The attribute's comment: “(ii): LQCoh^fbc(𝒪_𝒳) is closed under the tensor product, a monoidal subcategory of Mod(𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isMonoidal_lqcohSheafFbc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L207). The attribute's comment: “(ii): LQCoh^fbc(𝒪\_𝒳) is closed under the tensor product, a monoidal subcategory of Mod(𝒪\_𝒳)”.
 
 > **Stacks 0GQM, (ii).** `LQCoh^fbc(𝒪_𝒳)` is closed under the tensor product of `𝒪_𝒳`-modules
 > (**Stacks 0771** (6)) and contains `𝒪_𝒳`: it is a monoidal subcategory of `Mod(𝒪_𝒳)`.
@@ -553,7 +553,7 @@ theorem isMonoidal_lqcohSheafFbc :
     (lqcohSheafFbcFppfModules.{u, w, u} B E h S hS 𝒳).IsMonoidal
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.lqcohSheafFbcInclusionBraided`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L222). The attribute's comment: “(iii): the inclusion LQCoh^fbc(𝒪_𝒳) → Mod(𝒪_𝒳) is a functor of symmetric monoidal categories”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.lqcohSheafFbcInclusionBraided`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L222). The attribute's comment: “(iii): the inclusion LQCoh^fbc(𝒪\_𝒳) → Mod(𝒪\_𝒳) is a functor of symmetric monoidal categories”.
 
 > **Stacks 0GQM, (iii), the inclusion `LQCoh^fbc(𝒪_𝒳) → Mod(𝒪_𝒳)`**: a functor of symmetric
 > monoidal categories, for the tensor product of `𝒪_𝒳`-modules and the structure it induces on
@@ -565,7 +565,7 @@ def lqcohSheafFbcInclusionBraided :
     (lqcohSheafFbcFppfModules.{u, w, u} B E h S hS 𝒳).ι.Braided
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentToLqcohSheafFbcBraided`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L232). The attribute's comment: “(iii): the inclusion QCoh(𝒪_𝒳) → LQCoh^fbc(𝒪_𝒳) is a functor of symmetric monoidal categories”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentToLqcohSheafFbcBraided`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L232). The attribute's comment: “(iii): the inclusion QCoh(𝒪\_𝒳) → LQCoh^fbc(𝒪\_𝒳) is a functor of symmetric monoidal categories”.
 
 > **Stacks 0GQM, (iii), the inclusion `QCoh(𝒪_𝒳) → LQCoh^fbc(𝒪_𝒳)`**: a functor of symmetric
 > monoidal categories, for the structures both inherit from `Mod(𝒪_𝒳)`.
@@ -576,7 +576,7 @@ def quasicoherentToLqcohSheafFbcBraided :
     (ObjectProperty.ιOfLE (isQuasicoherentOnSite_le_lqcohSheafFbc B S hS 𝒳 E h)).Braided
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.coheratorBraided`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L288). The attribute's comment: “(iv): the coherator Q : LQCoh^fbc(𝒪_𝒳) → QCoh(𝒪_𝒳) is a functor of symmetric monoidal categories”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.coheratorBraided`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorCanonical.lean#L288). The attribute's comment: “(iv): the coherator Q : LQCoh^fbc(𝒪\_𝒳) → QCoh(𝒪\_𝒳) is a functor of symmetric monoidal categories”.
 
 > **Stacks 0GQM, (iv).** The coherator `Q : LQCoh^fbc(𝒪_𝒳) → QCoh(𝒪_𝒳)` is a functor of
 > symmetric monoidal categories. Its comparison `Q(𝓕) ⊗ Q(𝓖) → Q(𝓕 ⊗ 𝓖)` is the adjoint transpose
@@ -635,7 +635,7 @@ theorem isQuasicoherentOnSite_sheafTensor (F G : Stack.fppfModules B S hS 𝒳)
       𝒳.val.isFiberedInGroupoids .fppf)).obj F).obj G).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentInclusionBraided`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorMonoidal.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorMonoidal.lean#L147). The attribute's comment: “(iii): the inclusion QCoh(𝒪_𝒳) → Mod(𝒪_𝒳) is a functor of symmetric monoidal categories”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.quasicoherentInclusionBraided`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorMonoidal.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorMonoidal.lean#L147). The attribute's comment: “(iii): the inclusion QCoh(𝒪\_𝒳) → Mod(𝒪\_𝒳) is a functor of symmetric monoidal categories”.
 
 > **Stacks 0GQM, (iii), the first inclusion into `Mod(𝒪_𝒳)`.** `QCoh(𝒪_𝒳)` is a symmetric
 > monoidal category for the tensor product of `𝒪_𝒳`-modules, and the inclusion
@@ -671,7 +671,7 @@ theorem isQuasicoherent_tensorSheaf'
 
 [Tag 07B2](https://stacks.math.columbia.edu/tag/07B2) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLocalization_flatBaseChangeQuasicoherator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorSerreQuotient.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorSerreQuotient.lean#L316). The attribute's comment: “the displayed identification QCoh(𝒪_𝒳) = LQCoh^fbc(𝒪_𝒳) / Parasitic(𝒪_𝒳) ∩ LQCoh^fbc(𝒪_𝒳): the coherator Q of 0778 is a localization functor for the Serre class of parasitic objects; over the hypotheses of 0778 and 0779 and the abelian structures of 06WV (2) and 0771 (2)”.
+**`AlgebraicGeometry.Stack.isLocalization_flatBaseChangeQuasicoherator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorSerreQuotient.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorSerreQuotient.lean#L316). The attribute's comment: “the displayed identification QCoh(𝒪\_𝒳) = LQCoh^fbc(𝒪\_𝒳) / Parasitic(𝒪\_𝒳) ∩ LQCoh^fbc(𝒪\_𝒳): the coherator Q of 0778 is a localization functor for the Serre class of parasitic objects; over the hypotheses of 0778 and 0779 and the abelian structures of 06WV (2) and 0771 (2)”.
 
 > **Stacks 07B2**, the displayed identification
 >
@@ -695,7 +695,7 @@ theorem isLocalization_flatBaseChangeQuasicoherator :
         hrcounit hreq hrfincolim)
 ```
 
-**`AlgebraicGeometry.Stack.serreQuotientEquivalenceQuasicoherentModules`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorSerreQuotient.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorSerreQuotient.lean#L339). The attribute's comment: “the displayed identification read as an equivalence of categories between the Serre quotient of LQCoh^fbc(𝒪_𝒳) by Parasitic(𝒪_𝒳) ∩ LQCoh^fbc(𝒪_𝒳) and QCoh(𝒪_𝒳); over the hypotheses of 0778 and 0779 and the abelian structures of 06WV (2) and 0771 (2)”.
+**`AlgebraicGeometry.Stack.serreQuotientEquivalenceQuasicoherentModules`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorSerreQuotient.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorSerreQuotient.lean#L339). The attribute's comment: “the displayed identification read as an equivalence of categories between the Serre quotient of LQCoh^fbc(𝒪\_𝒳) by Parasitic(𝒪\_𝒳) ∩ LQCoh^fbc(𝒪\_𝒳) and QCoh(𝒪\_𝒳); over the hypotheses of 0778 and 0779 and the abelian structures of 06WV (2) and 0771 (2)”.
 
 > **Stacks 07B2**, the displayed identification as an equivalence of categories.  The Serre
 > quotient `LQCoh^fbc(𝒪_𝒳) / Parasitic(𝒪_𝒳) ∩ LQCoh^fbc(𝒪_𝒳)`, built as the localization of
@@ -711,7 +711,7 @@ def serreQuotientEquivalenceQuasicoherentModules :
         𝒳.val.isFiberedInGroupoids
 ```
 
-**`AlgebraicGeometry.Stack.serreQuotientAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorSerreQuotient.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorSerreQuotient.lean#L364). The attribute's comment: “the key feature: the inclusion i : QCoh(𝒪_𝒳) ⥤ LQCoh^fbc(𝒪_𝒳) is left adjoint to the quotient functor LQCoh^fbc(𝒪_𝒳) ⥤ LQCoh^fbc(𝒪_𝒳) / Parasitic(𝒪_𝒳) ∩ LQCoh^fbc(𝒪_𝒳); over the hypotheses of 0778 and 0779 and the abelian structures of 06WV (2) and 0771 (2)”.
+**`AlgebraicGeometry.Stack.serreQuotientAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorSerreQuotient.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/CoheratorSerreQuotient.lean#L364). The attribute's comment: “the key feature: the inclusion i : QCoh(𝒪\_𝒳) ⥤ LQCoh^fbc(𝒪\_𝒳) is left adjoint to the quotient functor LQCoh^fbc(𝒪\_𝒳) ⥤ LQCoh^fbc(𝒪\_𝒳) / Parasitic(𝒪\_𝒳) ∩ LQCoh^fbc(𝒪\_𝒳); over the hypotheses of 0778 and 0779 and the abelian structures of 06WV (2) and 0771 (2)”.
 
 > **Stacks 07B2**, the key feature: the inclusion
 > `i : QCoh(𝒪_𝒳) ⥤ LQCoh^fbc(𝒪_𝒳)` is left adjoint to the quotient functor.
@@ -732,7 +732,7 @@ def serreQuotientAdjunction :
         hreq hrfincolim).Q
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocalization_lqcohFbcCoherator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSerreQuotient.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSerreQuotient.lean#L142). The attribute's comment: “the displayed identification QCoh(𝒪_𝒳) = LQCoh^fbc(𝒪_𝒳) / Parasitic(𝒪_𝒳) ∩ LQCoh^fbc(𝒪_𝒳): the coherator Q of 0778 is a localization functor for the Serre class of parasitic objects”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocalization_lqcohFbcCoherator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSerreQuotient.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSerreQuotient.lean#L142). The attribute's comment: “the displayed identification QCoh(𝒪\_𝒳) = LQCoh^fbc(𝒪\_𝒳) / Parasitic(𝒪\_𝒳) ∩ LQCoh^fbc(𝒪\_𝒳): the coherator Q of 0778 is a localization functor for the Serre class of parasitic objects”.
 
 > **Stacks 07B2**, the displayed identification
 > `QCoh(𝒪_𝒳) = LQCoh^fbc(𝒪_𝒳) / Parasitic(𝒪_𝒳) ∩ LQCoh^fbc(𝒪_𝒳)`: for an algebraic stack `𝒳`, the
@@ -746,7 +746,7 @@ theorem isLocalization_lqcohFbcCoherator :
       (parasiticLqcohFbc B E h S hS 𝒳).isoModSerre
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.lqcohFbcSerreQuotientEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSerreQuotient.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSerreQuotient.lean#L154). The attribute's comment: “the displayed identification read as an equivalence of categories between the Serre quotient of LQCoh^fbc(𝒪_𝒳) by Parasitic(𝒪_𝒳) ∩ LQCoh^fbc(𝒪_𝒳) and QCoh(𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.lqcohFbcSerreQuotientEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSerreQuotient.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSerreQuotient.lean#L154). The attribute's comment: “the displayed identification read as an equivalence of categories between the Serre quotient of LQCoh^fbc(𝒪\_𝒳) by Parasitic(𝒪\_𝒳) ∩ LQCoh^fbc(𝒪\_𝒳) and QCoh(𝒪\_𝒳)”.
 
 > **Stacks 07B2**, the displayed identification as an equivalence of categories between the
 > Serre quotient `LQCoh^fbc(𝒪_𝒳) / Parasitic(𝒪_𝒳) ∩ LQCoh^fbc(𝒪_𝒳)` (the localization at the
@@ -758,7 +758,7 @@ def lqcohFbcSerreQuotientEquivalence :
     (parasiticLqcohFbc B E h S hS 𝒳).isoModSerre.Localization ≌ quasicoherentModules B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.lqcohFbcSerreQuotientAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSerreQuotient.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSerreQuotient.lean#L165). The attribute's comment: “the key feature: the inclusion i : QCoh(𝒪_𝒳) ⥤ LQCoh^fbc(𝒪_𝒳) is left adjoint to the quotient functor LQCoh^fbc(𝒪_𝒳) ⥤ LQCoh^fbc(𝒪_𝒳) / Parasitic(𝒪_𝒳) ∩ LQCoh^fbc(𝒪_𝒳)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.lqcohFbcSerreQuotientAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSerreQuotient.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentSerreQuotient.lean#L165). The attribute's comment: “the key feature: the inclusion i : QCoh(𝒪\_𝒳) ⥤ LQCoh^fbc(𝒪\_𝒳) is left adjoint to the quotient functor LQCoh^fbc(𝒪\_𝒳) ⥤ LQCoh^fbc(𝒪\_𝒳) / Parasitic(𝒪\_𝒳) ∩ LQCoh^fbc(𝒪\_𝒳)”.
 
 > **Stacks 07B2**, the key feature: the inclusion `i : QCoh(𝒪_𝒳) ⥤ LQCoh^fbc(𝒪_𝒳)`, read on the
 > Serre quotient through `lqcohFbcSerreQuotientEquivalence`, is left adjoint to the quotient
@@ -814,7 +814,7 @@ public theorem isSheaf_internalHomSheaf_restrictSiteModules (τ : SiteKind)
         (restrictSiteModules.{u, v, w, m} B S hS p hp τ G)).val.presheaf
 ```
 
-**`AlgebraicGeometry.FibredSite.internalHomSheaf_restrictSiteModules_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/InternalHomSiteAgreement.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/InternalHomSiteAgreement.lean#L139). The attribute's comment: “the two internal Homs agree as objects of Mod(𝒪_𝒳)”.
+**`AlgebraicGeometry.FibredSite.internalHomSheaf_restrictSiteModules_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/InternalHomSiteAgreement.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/InternalHomSiteAgreement.lean#L139). The attribute's comment: “the two internal Homs agree as objects of Mod(𝒪\_𝒳)”.
 
 > **Stacks 0GQN**, the first assertion.  The internal Hom of two sheaves of modules on the
 > associated fppf site of a category fibred in groupoids, computed on one of the five associated
@@ -835,7 +835,7 @@ public theorem internalHomSheaf_restrictSiteModules_eq (τ : SiteKind)
       (ringedSite B S hS p hp .fppf).internalHomSheaf F G
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.fppfInternalHom_presheaf_eq_etaleInternalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentInternalHom.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentInternalHom.lean#L107). The attribute's comment: “the agreement of the internal Homs of Mod(𝒳_étale, 𝒪_𝒳) and Mod(𝒪_𝒳), for arbitrary F and G”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.fppfInternalHom_presheaf_eq_etaleInternalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentInternalHom.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/QuasicoherentInternalHom.lean#L107). The attribute's comment: “the agreement of the internal Homs of Mod(𝒳\_étale, 𝒪\_𝒳) and Mod(𝒪\_𝒳), for arbitrary F and G”.
 
 > **Stacks 0GQN**, the agreement of the two internal Homs at module universe `u`.  The internal
 > Hom `SheafHom_{𝒪_𝒳}(F, G)` computed in `Mod(𝒳_étale, 𝒪_𝒳)` and the one computed in `Mod(𝒪_𝒳)`
@@ -868,7 +868,7 @@ def quasicoherentHomEquiv (F G : Stack.fppfModules B S hS 𝒳)
       (fppfTensor B S hS 𝒳 ((quasicoherentInclusion B S hS 𝒳).obj H) F ⟶ G)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.lqcohSheafFbcFppfModules_fppfInternalHom_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeInternalHom.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeInternalHom.lean#L100). The attribute's comment: “the common value SheafHom(F, G) is an object of LQCoh^fbc(𝒪_𝒳), for F of finite presentation and G quasi-coherent”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.lqcohSheafFbcFppfModules_fppfInternalHom_of_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeInternalHom.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/SheafFlatBaseChangeInternalHom.lean#L100). The attribute's comment: “the common value SheafHom(F, G) is an object of LQCoh^fbc(𝒪\_𝒳), for F of finite presentation and G quasi-coherent”.
 
 > **Stacks 0GQN**, the membership clause: for `F` an `𝒪_𝒳`-module of finite presentation and `G`
 > a quasi-coherent `𝒪_𝒳`-module on an algebraic stack, the internal Hom `SheafHom_{𝒪_𝒳}(F, G)`,

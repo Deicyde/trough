@@ -50,7 +50,7 @@ lemma isPseudoTorsor_iff_forall_existsUnique_smul
     IsPseudoTorsor G X ↔ ∀ (T : C) (x y : T ⟶ X), ∃! g : T ⟶ G, g • x = y
 ```
 
-**`AlgebraicGeometry.isTrivial_iff_exists_globalSection`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Torsor.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Torsor.lean#L87). The attribute's comment: “trivial_iff_section”. References: SGA 3 IV (5.1.4); SGA 3 IV (5.1.5), “(ii) trivial ⟺ section”.
+**`AlgebraicGeometry.isTrivial_iff_exists_globalSection`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Torsor.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Torsor.lean#L87). The attribute's comment: “trivial\_iff\_section”. References: SGA 3 IV (5.1.4); SGA 3 IV (5.1.5), “(ii) trivial ⟺ section”.
 
 > A pseudo-torsor is trivial if and only if it admits a global section.
 
@@ -63,7 +63,7 @@ lemma isTrivial_iff_exists_globalSection
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.ModObj.isIso_leftSMul_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.ModObj.isIso_leftSMul_iff#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Torsor.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Torsor.lean#L72) (StacksFrontier): “pointwise_characterization”.
+- [`CategoryTheory.ModObj.isIso_leftSMul_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.ModObj.isIso_leftSMul_iff#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Torsor.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/Torsor.lean#L72) (StacksFrontier): “pointwise\_characterization”.
 
 ## Tag 049A, a definition
 

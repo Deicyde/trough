@@ -68,7 +68,7 @@ theorem factors_curvesPrestable_over_field_iff
         topologicalKrullDim X.left = 1 ∧ IsIso ((Scheme.ΓSpecIso (.of k)).inv ≫ X.hom.appTop))
 ```
 
-**`AlgebraicGeometry.curvesPrestable_isOpenSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPrestableSubstack.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesPrestableSubstack.lean#L143). The attribute's comment: “the open substack Curves^{prestable} of Curves”.
+**`AlgebraicGeometry.curvesPrestable_isOpenSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPrestableSubstack.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesPrestableSubstack.lean#L143). The attribute's comment: “the open substack Curves^\{prestable} of Curves”.
 
 > `Curves^{prestable}`, the strictly full subcategory of prestable families of curves
 > (Stacks 0E6T), is an open substack of `Curves`: prestability is invariant under isomorphism, and
@@ -86,7 +86,7 @@ theorem curvesPrestable_isOpenSubstack :
           CurveFamily.isPrestableCurveFamily_of_hom)
 ```
 
-**`AlgebraicGeometry.curvesPrestable_isOpenSubstack_and_factors_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPrestableSubstack.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesPrestableSubstack.lean#L163). The attribute's comment: “the whole statement: the open substack Curves^{prestable} and parts (1) and (2)”.
+**`AlgebraicGeometry.curvesPrestable_isOpenSubstack_and_factors_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPrestableSubstack.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesPrestableSubstack.lean#L163). The attribute's comment: “the whole statement: the open substack Curves^\{prestable} and parts (1) and (2)”.
 
 > There is an open substack `Curves^{prestable} ⊂ Curves` — the strictly full subcategory of
 > prestable families of curves, whose inclusion is representable by algebraic spaces and an open
@@ -209,7 +209,7 @@ theorem curvesPrestableGenus_isOpenSubstack_and_factors_iff_and_decomposition_an
 
 [Tag 0E6W](https://stacks.math.columbia.edu/tag/0E6W) in the Stacks Project.
 
-**`AlgebraicGeometry.isSmoothOverIntegers_curvesPrestable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPrestableSmooth.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesPrestableSmooth.lean#L76). The attribute's comment: “the morphism Curves^{prestable} → Spec(ℤ) is smooth”.
+**`AlgebraicGeometry.isSmoothOverIntegers_curvesPrestable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPrestableSmooth.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesPrestableSmooth.lean#L76). The attribute's comment: “the morphism Curves^\{prestable} → Spec(ℤ) is smooth”.
 
 > The morphism `Curves^{prestable} → Spec(ℤ)` is smooth. Here `Curves^{prestable}` is the open
 > substack of the algebraic stack of curves (Stacks 0D5A) of the prestable families of curves
@@ -221,7 +221,7 @@ theorem isSmoothOverIntegers_curvesPrestable :
       (isOpenCurvesLocus_isPrestableCurveFamily B hZ)
 ```
 
-**`AlgebraicGeometry.isSmoothOverIntegers_curvesPrestableOfGenus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPrestableSmooth.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesPrestableSmooth.lean#L86). The attribute's comment: “the morphism Curves^{prestable}_g → Spec(ℤ) is smooth, for every g”.
+**`AlgebraicGeometry.isSmoothOverIntegers_curvesPrestableOfGenus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPrestableSmooth.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesPrestableSmooth.lean#L86). The attribute's comment: “the morphism Curves^\{prestable}\_g → Spec(ℤ) is smooth, for every g”.
 
 > For every `g`, the morphism `Curves^{prestable}_g → Spec(ℤ)` is smooth. Here
 > `Curves^{prestable}_g` is the open substack of the algebraic stack of curves (Stacks 0D5A) of the

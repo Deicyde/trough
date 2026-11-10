@@ -54,7 +54,7 @@ theorem Equivalence.exists_of_faithful_of_essSurj
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Abelian.DoldKan.equivalence`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Abelian.DoldKan.equivalence#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L80) (StacksFrontier): “the equivalence Simp(A) ≌ Ch_{≥0}(A)”.
+- [`CategoryTheory.Abelian.DoldKan.equivalence`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Abelian.DoldKan.equivalence#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L80) (StacksFrontier): “the equivalence Simp(A) ≌ Ch\_\{≥0}(A)”.
 - [`CategoryTheory.Abelian.DoldKan.equivalence_functor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Abelian.DoldKan.equivalence_functor#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L82) (StacksFrontier): “the functor of the equivalence is N”.
 
 ## Depends on

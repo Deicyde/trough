@@ -41,7 +41,7 @@ theorem mem_relativeMapSubfunctor_iff (T : BigFppfOver B S hS) (f : yoneda.obj T
       dQ.sectionOfPoint T f r u hu ⁻¹ᵁ (hψ.hom T f).relativeMapDomain = ⊤
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjHomPoints.relativeMapSpaceHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean, line 611](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean#L611). The attribute's comment: “the morphism r_ψ : U(ψ) ⟶ P”.
+**`AlgebraicGeometry.Space.RelativeProjHomPoints.relativeMapSpaceHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean, line 611](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean#L611). The attribute's comment: “the morphism r\_ψ : U(ψ) ⟶ P”.
 
 > **Tag 085F, the morphism `r_ψ : U(ψ) ⟶ P` of algebraic spaces.** On a `T`-point of `U(ψ)`
 > it is the point of `P = Proj_X(𝒜)` whose section of the scheme-level relative Proj of `𝒜|_T` is
@@ -51,7 +51,7 @@ theorem mem_relativeMapSubfunctor_iff (T : BigFppfOver B S hS) (f : yoneda.obj T
 def relativeMapSpaceHom : hψ.relativeMapSubfunctor.toFunctor ⟶ P
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjHomPoints.relativeMapSpaceHom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean, line 623](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean#L623). The attribute's comment: “the morphism r_ψ is a morphism over X”.
+**`AlgebraicGeometry.Space.RelativeProjHomPoints.relativeMapSpaceHom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean, line 623](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean#L623). The attribute's comment: “the morphism r\_ψ is a morphism over X”.
 
 > **Tag 085F: the morphism `r_ψ` is a morphism over `X`.**
 
@@ -60,7 +60,7 @@ theorem relativeMapSpaceHom_comp :
     hψ.relativeMapSpaceHom ≫ πP = hψ.relativeMapSubfunctor.ι ≫ πQ
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjHomPoints.app_relativeMapSpaceHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean, line 642](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean#L642). The attribute's comment: “the étale-local description of the morphism r_ψ”.
+**`AlgebraicGeometry.Space.RelativeProjHomPoints.app_relativeMapSpaceHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean, line 642](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean#L642). The attribute's comment: “the étale-local description of the morphism r\_ψ”.
 
 > **Tag 085F's étale-local description of the morphism `r_ψ`.** On a point of `U(ψ)` lying
 > over a point `f` of the base at `T`, along any `r : T' ⟶ T`, the morphism `r_ψ` produces the
@@ -92,7 +92,7 @@ theorem relativeMapSubfunctor_unique (G : Subfunctor Q)
     G = hψ.relativeMapSubfunctor
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjHomPoints.relativeMapSpaceHom_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean, line 669](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean#L669). The attribute's comment: “the étale-local description determines r_ψ”.
+**`AlgebraicGeometry.Space.RelativeProjHomPoints.relativeMapSpaceHom_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean, line 669](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean#L669). The attribute's comment: “the étale-local description determines r\_ψ”.
 
 > **Tag 085F's description determines the morphism.** A morphism out of `U(ψ)` whose value at
 > every point is the point of `P` the scheme-level morphism `r_{ψ|_T}` of Tag 07ZG produces is
@@ -193,7 +193,7 @@ theorem relativeTwistSpaceMap_unique (hψ : RelativeProjHomPoints dP dQ)
     θ = hψ.relativeTwistSpaceMap T f n
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.relativeMapTriple_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityTriple.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityTriple.lean#L66). The attribute's comment: “the triple (U(ψ), r_ψ, θ) with θ a map of graded algebras, its description by the triple of Tag 07ZG over the scheme points of X, and its uniqueness”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.relativeMapTriple_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityTriple.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityTriple.lean#L66). The attribute's comment: “the triple (U(ψ), r\_ψ, θ) with θ a map of graded algebras, its description by the triple of Tag 07ZG over the scheme points of X, and its uniqueness”.
 
 > **Stacks 085F.** Let `ψ : 𝒜 ⟶ ℬ` be a map of quasi-coherent graded `𝒪_X`-algebras on an
 > algebraic space `X`, `P = Proj_X(𝒜)`, `Q = Proj_X(ℬ)`, and `X = U/R` a presentation. Then:
@@ -257,7 +257,7 @@ theorem comp_relativeMapSubfunctor_le :
     (hφ.comp hψ).relativeMapSubfunctor ≤ hψ.relativeMapSubfunctor
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjHomPoints.mem_comp_relativeMapSubfunctor_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean, line 1170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean#L1170). The attribute's comment: “U(ψ ∘ φ) is the inverse image of U(φ) under r_ψ”.
+**`AlgebraicGeometry.Space.RelativeProjHomPoints.mem_comp_relativeMapSubfunctor_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean, line 1170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean#L1170). The attribute's comment: “U(ψ ∘ φ) is the inverse image of U(φ) under r\_ψ”.
 
 > **Tag 085G, the first assertion: `U(ψ ∘ φ) = r_ψ^{-1}(U(φ))`.** A point of
 > `R = Proj_X(𝒞)` lying in `U(ψ)` lies in `U(ψ ∘ φ)` exactly when its image under
@@ -277,7 +277,7 @@ theorem mem_comp_relativeMapSubfunctor_iff (Y : (BigFppfOver B S hS)ᵒᵖ) (y :
       hψ.relativeMapSpaceHom.app Y ⟨y, hy⟩ ∈ hφ.relativeMapSubfunctor.obj Y
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjHomPoints.app_comp_relativeMapSpaceHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean, line 1181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean#L1181). The attribute's comment: “the morphism r_{ψ ∘ φ} is r_φ after r_ψ”.
+**`AlgebraicGeometry.Space.RelativeProjHomPoints.app_comp_relativeMapSpaceHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean, line 1181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctoriality.lean#L1181). The attribute's comment: “the morphism r\_\{ψ ∘ φ} is r\_φ after r\_ψ”.
 
 > **Tag 085G, the second assertion: `r_{ψ ∘ φ} = r_φ ∘ r_ψ|_{U(ψ ∘ φ)}`.**
 
@@ -290,7 +290,7 @@ theorem app_comp_relativeMapSpaceHom (Y : (BigFppfOver B S hS)ᵒᵖ) (y : R.obj
       hφ.relativeMapSpaceHom.app Y ⟨hψ.relativeMapSpaceHom.app Y ⟨y, hy⟩, hc2⟩
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.homPoints_comp_relativeMap_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/HomPointsComp.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/HomPointsComp.lean#L133). The attribute's comment: “the tag's three assertions for the relative Projs of Situation 0849 and the data of Tag 085F attached to the algebra maps: U(ψ ∘ φ) = r_ψ^{-1}(U(φ)) as subfunctors of R (the source prints r_φ^{-1}(U(ψ)), which is type-incorrect, the names φ and ψ being interchanged), r_{ψ ∘ φ} = r_φ ∘ r_ψ|_{U(ψ ∘ φ)}, and θ_ψ ∘ r_ψ^*θ_φ = θ_{ψ ∘ φ} at every scheme point of the base, where Tag 085F's θ is given”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.homPoints_comp_relativeMap_twist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/HomPointsComp.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/HomPointsComp.lean#L133). The attribute's comment: “the tag's three assertions for the relative Projs of Situation 0849 and the data of Tag 085F attached to the algebra maps: U(ψ ∘ φ) = r\_ψ^\{-1}(U(φ)) as subfunctors of R (the source prints r\_φ^\{-1}(U(ψ)), which is type-incorrect, the names φ and ψ being interchanged), r\_\{ψ ∘ φ} = r\_φ ∘ r\_ψ|\_\{U(ψ ∘ φ)}, and θ\_ψ ∘ r\_ψ^*θ\_φ = θ\_\{ψ ∘ φ} at every scheme point of the base, where Tag 085F's θ is given”.
 
 > **[Stacks, Tag 085G].** Let `S` be a scheme, `X` an algebraic space over `S`, and `𝒜₁`, `𝒜₂`,
 > `𝒜₃` quasi-coherent graded `𝒪_X`-algebras (Situation 0849), with relative Projs
@@ -440,7 +440,7 @@ theorem relativeMapSubfunctor_homPoints_eq_top
     (homPoints h₁c h₁n h₁q h₁k h₂c h₂n h₂q h₂k ψ).relativeMapSubfunctor = ⊤
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.isClosedImmersion_relativeMapSpaceHom_homPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityClosedImmersion.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityClosedImmersion.lean#L201). The attribute's comment: “(2): r_ψ : Q ⟶ P is a closed immersion”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.isClosedImmersion_relativeMapSpaceHom_homPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityClosedImmersion.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityClosedImmersion.lean#L201). The attribute's comment: “(2): r\_ψ : Q ⟶ P is a closed immersion”.
 
 > **Stacks 085H (2) for the canonical relative Projs: `r_ψ` is a closed immersion.** If
 > `ψ_d : 𝒜₁,d ⟶ 𝒜₂,d` is surjective for `d ≫ 0`, the morphism `r_ψ : U(ψ) ⟶ Proj_X(𝒜₁)` of
@@ -455,7 +455,7 @@ theorem isClosedImmersion_relativeMapSpaceHom_homPoints
     IsClosedImmersion B S hS (homPoints h₁c h₁n h₁q h₁k h₂c h₂n h₂q h₂k ψ).relativeMapSpaceHom
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.epi_twistMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityTwistGluedSurjective.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityTwistGluedSurjective.lean#L85). The attribute's comment: “(3), first half: the maps θ : r_ψ^*O_P(n) → O_Q(n) are surjective (θ the glued map of 085F, twistMap), for ψ_d surjective for d ≫ 0”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.epi_twistMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityTwistGluedSurjective.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityTwistGluedSurjective.lean#L85). The attribute's comment: “(3), first half: the maps θ : r\_ψ^*O\_P(n) → O\_Q(n) are surjective (θ the glued map of 085F, twistMap), for ψ\_d surjective for d ≫ 0”.
 
 > **Stacks 085H (3), surjectivity: the maps `θ : r_ψ^*𝒪_P(n) ⟶ 𝒪_Q(n)` are surjective** when
 > `ψ_d` is surjective for `d ≫ 0`.
@@ -498,7 +498,7 @@ theorem relativeMapSubfunctor_eq_top_of_eventually_isIso
     hψ.relativeMapSubfunctor = ⊤
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjHomPoints.isIso_relativeMapSpaceHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctorialityEventual.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctorialityEventual.lean#L354). The attribute's comment: “part (2): the morphism r_ψ is an isomorphism”.
+**`AlgebraicGeometry.Space.RelativeProjHomPoints.isIso_relativeMapSpaceHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctorialityEventual.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctorialityEventual.lean#L354). The attribute's comment: “part (2): the morphism r\_ψ is an isomorphism”.
 
 > If every restriction of `ψ` is an isomorphism in all sufficiently large degrees then
 > `r_ψ : U(ψ) ⟶ P` is an isomorphism of algebraic spaces.
@@ -510,7 +510,7 @@ theorem isIso_relativeMapSpaceHom
     IsIso hψ.relativeMapSpaceHom
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjHomPoints.isIso_relativeTwistSpaceMap_of_eventually_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctorialityEventual.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctorialityEventual.lean#L367). The attribute's comment: “part (3): the maps θ_n : r_ψ^*𝒪_P(n) ⟶ 𝒪_Q(n) on the twists of the two relative Projs are isomorphisms, over every scheme point of the base — which is the assertion for θ itself, θ being characterized by Tag 085F as having exactly those restrictions”.
+**`AlgebraicGeometry.Space.RelativeProjHomPoints.isIso_relativeTwistSpaceMap_of_eventually_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctorialityEventual.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjFunctorialityEventual.lean#L367). The attribute's comment: “part (3): the maps θ\_n : r\_ψ^*𝒪\_P(n) ⟶ 𝒪\_Q(n) on the twists of the two relative Projs are isomorphisms, over every scheme point of the base — which is the assertion for θ itself, θ being characterized by Tag 085F as having exactly those restrictions”.
 
 > If every restriction of `ψ` is an isomorphism in all sufficiently large degrees then the maps
 > `θ : r_ψ^*𝒪_P(n) ⟶ 𝒪_Q(n)` of Stacks 085F are isomorphisms, over every scheme point `(T, f)` of the
@@ -600,7 +600,7 @@ theorem relativeMapSubfunctor_homPoints_eq_top
     (homPoints h₁c h₁n h₁q h₁k h₂c h₂n h₂q h₂k ψ).relativeMapSubfunctor = ⊤
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.isClosedImmersion_relativeMapSpaceHom_homPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityClosedImmersion.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityClosedImmersion.lean#L201). The attribute's comment: “(2): r_ψ : Q ⟶ P is a closed immersion”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.isClosedImmersion_relativeMapSpaceHom_homPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityClosedImmersion.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityClosedImmersion.lean#L201). The attribute's comment: “(2): r\_ψ : Q ⟶ P is a closed immersion”.
 
 > **Stacks 085H (2) for the canonical relative Projs: `r_ψ` is a closed immersion.** If
 > `ψ_d : 𝒜₁,d ⟶ 𝒜₂,d` is surjective for `d ≫ 0`, the morphism `r_ψ : U(ψ) ⟶ Proj_X(𝒜₁)` of
@@ -615,7 +615,7 @@ theorem isClosedImmersion_relativeMapSpaceHom_homPoints
     IsClosedImmersion B S hS (homPoints h₁c h₁n h₁q h₁k h₂c h₂n h₂q h₂k ψ).relativeMapSpaceHom
 ```
 
-**`AlgebraicGeometry.Space.RelativeProjSituation.isIso_twistMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityTwistGluedSurjective.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityTwistGluedSurjective.lean#L97). The attribute's comment: “(3): the maps θ : r_ψ^*O_P(n) → O_Q(n) are isomorphisms (θ the glued map of 085F, twistMap), for ψ_d surjective for d ≫ 0 and A generated by A_1 over A_0”.
+**`AlgebraicGeometry.Space.RelativeProjSituation.isIso_twistMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityTwistGluedSurjective.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeProjPoint/FunctorialityTwistGluedSurjective.lean#L97). The attribute's comment: “(3): the maps θ : r\_ψ^*O\_P(n) → O\_Q(n) are isomorphisms (θ the glued map of 085F, twistMap), for ψ\_d surjective for d ≫ 0 and A generated by A\_1 over A\_0”.
 
 > **Stacks 085J (3): the maps `θ : r_ψ^*𝒪_P(n) ⟶ 𝒪_Q(n)` are isomorphisms** when `ψ_d` is
 > surjective for `d ≫ 0` and `𝒜₁` is generated by its degree-one part over its degree-zero part.

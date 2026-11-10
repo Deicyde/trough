@@ -191,7 +191,7 @@ public theorem geometricallyReduced_iff_baseChange_fieldExtension
 
 [Tag 035Z](https://stacks.math.columbia.edu/tag/035Z) in the Stacks Project.
 
-**`AlgebraicGeometry.isReduced_stalk_pullback_of_isGeometricallyReducedAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedProduct.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedProduct.lean#L52). The attribute's comment: “reduced_at_points_over_x”. References: EGA IV (4.6.1), “more general”; EGA IV (4.6.12), “partial”.
+**`AlgebraicGeometry.isReduced_stalk_pullback_of_isGeometricallyReducedAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedProduct.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedProduct.lean#L52). The attribute's comment: “reduced\_at\_points\_over\_x”. References: EGA IV (4.6.1), “more general”; EGA IV (4.6.12), “partial”.
 
 > A product with a reduced scheme is reduced at every point above a geometrically reduced
 > point of the other factor.
@@ -205,7 +205,7 @@ public theorem isReduced_stalk_pullback_of_isGeometricallyReducedAt
     _root_.IsReduced ((pullback f g).presheaf.stalk z)
 ```
 
-**`AlgebraicGeometry.isReduced_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedProduct.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedProduct.lean#L120). The attribute's comment: “reduced_product”. References: EGA IV (4.6.1), “(b) ⇒ (a)”.
+**`AlgebraicGeometry.isReduced_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedProduct.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedProduct.lean#L120). The attribute's comment: “reduced\_product”. References: EGA IV (4.6.1), “(b) ⇒ (a)”.
 
 > The fibre product of a geometrically reduced scheme and a reduced scheme over a field is
 > reduced.
@@ -218,7 +218,7 @@ public theorem isReduced_pullback
     IsReduced (pullback f g)
 ```
 
-**`AlgebraicGeometry.geometricallyReduced_pullback_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedProduct.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedProduct.lean#L142). The attribute's comment: “geometrically_reduced_product”. References: EGA IV (4.6.5).
+**`AlgebraicGeometry.geometricallyReduced_pullback_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedProduct.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedProduct.lean#L142). The attribute's comment: “geometrically\_reduced\_product”. References: EGA IV (4.6.5).
 
 > The fibre product over a field of two geometrically reduced schemes is geometrically
 > reduced.
@@ -231,7 +231,7 @@ public theorem geometricallyReduced_pullback_over_field
     GeometricallyReduced (pullback.fst f g ≫ f)
 ```
 
-**`AlgebraicGeometry.isReduced_pullback_over_perfectField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedProduct.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedProduct.lean#L163). The attribute's comment: “perfect_field_reduced_product”. References: EGA IV (4.6.1), “special case”; SGA 3 VIA (0.2), “partial”.
+**`AlgebraicGeometry.isReduced_pullback_over_perfectField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedProduct.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedProduct.lean#L163). The attribute's comment: “perfect\_field\_reduced\_product”. References: EGA IV (4.6.1), “special case”; SGA 3 VIA (0.2), “partial”.
 
 > The fibre product of two reduced schemes over a perfect field is reduced.
 
@@ -247,7 +247,7 @@ public theorem isReduced_pullback_over_perfectField
 
 [Tag 04KS](https://stacks.math.columbia.edu/tag/04KS) in the Stacks Project.
 
-**`AlgebraicGeometry.isGeometricallyReducedAt_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedGenericPoints.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedGenericPoints.lean#L87). The attribute's comment: “geometric_reducedness_at_generalization”.
+**`AlgebraicGeometry.isGeometricallyReducedAt_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedGenericPoints.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedGenericPoints.lean#L87). The attribute's comment: “geometric\_reducedness\_at\_generalization”.
 
 > **Stacks Project, Tag 04KS.** Geometric reducedness at a point of a scheme over a field is
 > preserved on passing to a generalization of that point.
@@ -259,7 +259,7 @@ public theorem isGeometricallyReducedAt_of_specializes
     IsGeometricallyReducedAt f x'
 ```
 
-**`AlgebraicGeometry.isGeometricallyReducedAt_of_isReduced_stalk_of_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedGenericPoints.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedGenericPoints.lean#L272). The attribute's comment: “geometric_reducedness_at_point_of_generic_points”.
+**`AlgebraicGeometry.isGeometricallyReducedAt_of_isReduced_stalk_of_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedGenericPoints.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedGenericPoints.lean#L272). The attribute's comment: “geometric\_reducedness\_at\_point\_of\_generic\_points”.
 
 > **Stacks Project, Tag 04KS.** A scheme over a field is geometrically reduced at a point
 > whose local ring is reduced if it is geometrically reduced at every generic point of an
@@ -274,7 +274,7 @@ public theorem isGeometricallyReducedAt_of_isReduced_stalk_of_genericPoints
     IsGeometricallyReducedAt f x
 ```
 
-**`AlgebraicGeometry.geometricallyReduced_of_isGeometricallyReducedAt_genericPoints`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedGenericPoints.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedGenericPoints.lean#L317). The attribute's comment: “geometric_reducedness_of_generic_points”.
+**`AlgebraicGeometry.geometricallyReduced_of_isGeometricallyReducedAt_genericPoints`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedGenericPoints.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedGenericPoints.lean#L317). The attribute's comment: “geometric\_reducedness\_of\_generic\_points”.
 
 > A reduced scheme over a field which is geometrically reduced at the generic points of all
 > its irreducible components is geometrically reduced.
@@ -286,7 +286,7 @@ public lemma geometricallyReduced_of_isGeometricallyReducedAt_genericPoints
     GeometricallyReduced f
 ```
 
-**`AlgebraicGeometry.geometricallyReduced_iff_isSeparableExtension_functionField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedGenericPoints.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedGenericPoints.lean#L339). The attribute's comment: “geometric_reducedness_iff_separable_function_field”. References: EGA IV (4.2.4), “(ii), special case”; EGA IV (4.6.1), “(b) ⇔ (e), special case”; EGA IV (4.6.3); EGA IV (6.7.5), “partial”; SGA 1 X (1.1), “special case”.
+**`AlgebraicGeometry.geometricallyReduced_iff_isSeparableExtension_functionField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedGenericPoints.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/ReducedGenericPoints.lean#L339). The attribute's comment: “geometric\_reducedness\_iff\_separable\_function\_field”. References: EGA IV (4.2.4), “(ii), special case”; EGA IV (4.6.1), “(b) ⇔ (e), special case”; EGA IV (4.6.3); EGA IV (6.7.5), “partial”; SGA 1 X (1.1), “special case”.
 
 > **Stacks Project, Tag 04KS.** An integral scheme over a field is geometrically reduced if and
 > only if its function field is a separable extension of the base field.

@@ -88,7 +88,7 @@ theorem derivedAbelianLowerShriek_constantSheaf :
 
 [Tag 0H10](https://stacks.math.columbia.edu/tag/0H10) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.FlatFppf.derivedGlobalSectionsRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DerivedGlobalSectionsOnSmoothAndFlatSites.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DerivedGlobalSectionsOnSmoothAndFlatSites.lean#L87). The attribute's comment: “part (2)(a) for complexes, at the flat-fppf site, with NO hypothesis: RΓ(𝒳_{flat,fppf}, g⁻¹K) = RΓ(𝒳_{fppf}, K), from Lg_! ℤ = ℤ (Tag 0H0Z, proved)”.
+**`AlgebraicGeometry.Stack.FlatFppf.derivedGlobalSectionsRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DerivedGlobalSectionsOnSmoothAndFlatSites.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DerivedGlobalSectionsOnSmoothAndFlatSites.lean#L87). The attribute's comment: “part (2)(a) for complexes, at the flat-fppf site, with NO hypothesis: RΓ(𝒳\_\{flat,fppf}, g⁻¹K) = RΓ(𝒳\_\{fppf}, K), from Lg\_! ℤ = ℤ (Tag 0H0Z, proved)”.
 
 > **Stacks 0H10, part (2)(a), for complexes, with no hypothesis.** Let `𝒳` be an algebraic
 > stack and let `g : Sh(𝒳_{flat,fppf}) ⟶ Sh(𝒳_{fppf})` be the comparison morphism of topoi of
@@ -112,7 +112,7 @@ def derivedGlobalSectionsRestrictionIso :
       AlgebraicGeometry.Stack.derivedGlobalSections.{u, u + 1} B S hS 𝒳.val
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.derivedGlobalSectionsRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DerivedGlobalSectionsOnSmoothAndFlatSites.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DerivedGlobalSectionsOnSmoothAndFlatSites.lean#L147). The attribute's comment: “part (1)(a) for complexes, at the lisse-étale site, with NO hypothesis: RΓ(𝒳_{lisse,étale}, g⁻¹K) = RΓ(𝒳_{étale}, K), from Lg_! ℤ = ℤ (Tag 0H0Z, proved)”.
+**`AlgebraicGeometry.Stack.LisseEtale.derivedGlobalSectionsRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DerivedGlobalSectionsOnSmoothAndFlatSites.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DerivedGlobalSectionsOnSmoothAndFlatSites.lean#L147). The attribute's comment: “part (1)(a) for complexes, at the lisse-étale site, with NO hypothesis: RΓ(𝒳\_\{lisse,étale}, g⁻¹K) = RΓ(𝒳\_\{étale}, K), from Lg\_! ℤ = ℤ (Tag 0H0Z, proved)”.
 
 > **Stacks 0H10, part (1)(a), for complexes, with no hypothesis.** Let `𝒳` be an algebraic
 > stack and let `g : Sh(𝒳_{lisse,étale}) ⟶ Sh(𝒳_{étale})` be the comparison morphism of topoi of
@@ -276,7 +276,7 @@ def derivedSectionsRestrictionIso (x : LisseEtale.{u, w} B S hS 𝒳) :
       derivedSectionsEtale B S hS 𝒳 ((smoothObject.{u, w} B S hS 𝒳).ι.obj x)
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.derivedSectionsRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfDerivedSections.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfDerivedSections.lean#L147). The attribute's comment: “part (2)(b) for complexes, at the flat-fppf site, with cohomology over an object taken as the derived functor of sections over it; conditional only on the half of Stacks 0794 that computes Lg_! on a generator”.
+**`AlgebraicGeometry.Stack.FlatFppf.derivedSectionsRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfDerivedSections.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FlatFppfDerivedSections.lean#L147). The attribute's comment: “part (2)(b) for complexes, at the flat-fppf site, with cohomology over an object taken as the derived functor of sections over it; conditional only on the half of Stacks 0794 that computes Lg\_! on a generator”.
 
 > **Stacks 0H10, part (2)(b), for complexes.** Let `𝒳` be an algebraic stack and let
 > `g : Sh(𝒳_{flat,fppf}) ⟶ Sh(𝒳_{fppf})` be the comparison morphism of topoi of Stacks 08MZ, whose

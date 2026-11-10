@@ -100,7 +100,7 @@ lemma associatedPoints_subset_support {X : Scheme.{u}} (F : X.Modules) :
 
 [Tag 05AE](https://stacks.math.columbia.edu/tag/05AE) in the Stacks Project.
 
-**`AlgebraicGeometry.associatedPoints_subset_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/Basic.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/Basic.lean#L82). The attribute's comment: “associated_points_subsheaf_subset”.
+**`AlgebraicGeometry.associatedPoints_subset_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/Basic.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/Basic.lean#L82). The attribute's comment: “associated\_points\_subsheaf\_subset”.
 
 > **Stacks Project, Tag 05AE.** The associated points of a subsheaf are associated points of
 > the ambient sheaf.
@@ -111,7 +111,7 @@ theorem associatedPoints_subset_of_mono {X : Scheme.{u}} {F₁ F₂ : X.Modules}
     Stacks.Divisors.associatedPoints F₁ ⊆ Stacks.Divisors.associatedPoints F₂
 ```
 
-**`AlgebraicGeometry.associatedPoints_subset_union_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/Basic.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/Basic.lean#L135). The attribute's comment: “associated_points_middle_subset_union”.
+**`AlgebraicGeometry.associatedPoints_subset_union_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/Basic.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AssociatedPoints/Basic.lean#L135). The attribute's comment: “associated\_points\_middle\_subset\_union”.
 
 > **Stacks Project, Tag 05AE.** The associated points of the middle term of a short exact
 > sequence lie in the union of those of its outer terms.

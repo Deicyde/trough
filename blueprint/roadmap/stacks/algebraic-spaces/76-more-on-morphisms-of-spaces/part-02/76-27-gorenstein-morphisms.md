@@ -54,7 +54,7 @@ abbrev IsGorenstein (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
 
 [Tag 0E15](https://stacks.math.columbia.edu/tag/0E15) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGorenstein_tfae_etaleCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/EtaleCharts.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/EtaleCharts.lean#L216). The attribute's comment: “global_gorenstein_equivalence”.
+**`AlgebraicGeometry.Space.isGorenstein_tfae_etaleCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/EtaleCharts.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/EtaleCharts.lean#L216). The attribute's comment: “global\_gorenstein\_equivalence”.
 
 > **Stacks 0E15.** For a morphism of algebraic spaces over `S` with locally Noetherian fibres,
 > Gorensteinness is equivalent to flatness together with Gorensteinness of the fibres after some,
@@ -77,7 +77,7 @@ theorem isGorenstein_tfae_etaleCharts (hX : IsAlgebraicSpace B S hS X)
           IsEtale B S hS g → HasGorensteinFibersOnChart B S hS f V g]
 ```
 
-**`AlgebraicGeometry.Space.isGorensteinAt_iff_etaleLocalRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/EtaleLocalRings.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/EtaleLocalRings.lean#L238). The attribute's comment: “etale_local_ring_criterion”.
+**`AlgebraicGeometry.Space.isGorensteinAt_iff_etaleLocalRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/EtaleLocalRings.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/EtaleLocalRings.lean#L238). The attribute's comment: “etale\_local\_ring\_criterion”.
 
 > **Stacks 0E15.** A morphism of algebraic spaces over `S` is Gorenstein at the image of a
 > geometric point `x` of its source exactly when the canonical homomorphism of étale local rings

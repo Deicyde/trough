@@ -61,7 +61,7 @@ public abbrev artinAxiomsCategory (k : Type u) [Field k]
     (hS : B.Contains (Spec (.of (MvPolynomial (Fin 2) k))))
 ```
 
-**`Deformation.Artin.nonempty_artinAxiomsFunctor_iff_exists_isCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean#L229). The attribute's comment: “geometric_criterion”.
+**`Deformation.Artin.nonempty_artinAxiomsFunctor_iff_exists_isCompact_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/Openness/Basic.lean#L229). The attribute's comment: “geometric\_criterion”.
 
 > The functor of Tag 07XR has its unique value on `A` if and only if
 > `V(s,t) ⊆ Spec(A)` has a quasi-compact open neighbourhood on which `s`
@@ -82,7 +82,7 @@ public theorem nonempty_artinAxiomsFunctor_iff_exists_isCompact_open
                 (algebraMap (MvPolynomial (Fin 2) k) A (MvPolynomial.X 0)) = 0
 ```
 
-**`Deformation.Artin.isVersalAt_sliceObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexample.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexample.lean#L498). The attribute's comment: “the object x over U = Spec(k[s,t]/(s)) is versal at u_0 = (s,t)”.
+**`Deformation.Artin.isVersalAt_sliceObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/OpennessCounterexample.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/OpennessCounterexample.lean#L498). The attribute's comment: “the object x over U = Spec(k[s,t]/(s)) is versal at u\_0 = (s,t)”.
 
 > **The slice is versal at the origin.**
 
@@ -384,7 +384,7 @@ public theorem isSmoothOnPredeformationCategories_of_isFormallySmoothOnObjects
 
 [Tag 07XX](https://stacks.math.columbia.edu/tag/07XX) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRelativelySmooth_of_isSmoothOnPredeformationCategories`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/TwoFibreProductSliceAtlas.lean, line 1089](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/TwoFibreProductSliceAtlas.lean#L1089). The attribute's comment: “the general 1-morphism, at the source's own hypotheses: (1) hfrep, (2) hf, (3) hlimX, (4) hlimY, and S locally Noetherian. The case of a 1-morphism induced by a morphism of schemes is smooth_of_isSmoothOnPredeformationCategories”.
+**`AlgebraicGeometry.Stack.isRelativelySmooth_of_isSmoothOnPredeformationCategories`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/TwoFibreProductSliceAtlas.lean, line 1089](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/TwoFibreProductSliceAtlas.lean#L1089). The attribute's comment: “the general 1-morphism, at the source's own hypotheses: (1) hfrep, (2) hf, (3) hlimX, (4) hlimY, and S locally Noetherian. The case of a 1-morphism induced by a morphism of schemes is smooth\_of\_isSmoothOnPredeformationCategories”.
 
 > **Stacks 07XX.** Let `S` be a locally Noetherian scheme and `f : 𝒳 ⟶ 𝒴` a 1-morphism of
 > categories fibred in groupoids over the big fppf site of `S`. If (1) `f` is representable by

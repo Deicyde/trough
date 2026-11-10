@@ -102,7 +102,7 @@ def effectiveCartierIntersectionOfInvertible
 
 [Tag 0B70](https://stacks.math.columbia.edu/tag/0B70) in the Stacks Project.
 
-**`Stacks.Chow.VirtualNormalTriple`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L86). The attribute's comment: “the triple (D, N, σ): D locally principal, N an invertible O_D-module, σ a surjection from the inverse of N onto the pullback of the ideal sheaf of D”.
+**`Stacks.Chow.VirtualNormalTriple`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L86). The attribute's comment: “the triple (D, N, σ): D locally principal, N an invertible O\_D-module, σ a surjection from the inverse of N onto the pullback of the ideal sheaf of D”.
 
 > **Remark 0B70.** A triple `(D, 𝒩, σ)` on a scheme `X`: a locally principal closed subscheme
 > `i : D ⟶ X`, an invertible `𝒪_D`-module `𝒩` (the virtual normal bundle of `D` in `X`) and a
@@ -112,7 +112,7 @@ def effectiveCartierIntersectionOfInvertible
 structure VirtualNormalTriple (X : Scheme.{u})
 ```
 
-**`Stacks.Chow.VirtualNormalTriple.normalIsoOfIsEffectiveCartier`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L175). The attribute's comment: “footnote: if D is an effective Cartier divisor, then N is isomorphic to the restriction of O_X(D) to D”.
+**`Stacks.Chow.VirtualNormalTriple.normalIsoOfIsEffectiveCartier`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L175). The attribute's comment: “footnote: if D is an effective Cartier divisor, then N is isomorphic to the restriction of O\_X(D) to D”.
 
 > **The footnote of Remark 0B70.** If `D` is an effective Cartier divisor, then
 > `𝒩 ≅ 𝒪_X(D)|_D`.
@@ -140,7 +140,7 @@ theorem virtualNormalGysinOfIdeal_zeroScheme (L : X.Modules)
       gysinHomomorphismOfInvertible C p k L s
 ```
 
-**`Stacks.Chow.VirtualNormalTriple.gysin`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L476). The attribute's comment: “the Gysin homomorphism i^* from (k+1)-cycles on X to CH_k(D) of a triple”.
+**`Stacks.Chow.VirtualNormalTriple.gysin`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L476). The attribute's comment: “the Gysin homomorphism i^* from (k+1)-cycles on X to CH\_k(D) of a triple”.
 
 > **Remark 0B70.** The Gysin homomorphism `i^* : Z_{k+1}(X) ⟶ A_k(D)` of a triple
 > `(D, 𝒩, σ)`.
@@ -163,7 +163,7 @@ theorem gysin_of_not_le (W : X.IdealSheafData) (hW : IsIntegral W.subscheme)
           ((W.comap T.D.subschemeι).subschemeι) k)
 ```
 
-**`Stacks.Chow.VirtualNormalTriple.gysin_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L494). The attribute's comment: “rule (1)(b) of Definition 02T8 for a triple: W contained in D, with c_1(N|_W)”.
+**`Stacks.Chow.VirtualNormalTriple.gysin_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L494). The attribute's comment: “rule (1)(b) of Definition 02T8 for a triple: W contained in D, with c\_1(N|\_W)”.
 
 > **Remark 0B70, rule (1)(b) of Definition 02T8 for a triple.** For an integral closed
 > subscheme `W ⊆ D` of delta-dimension `k + 1`, `i^*[W] = i'_*(c₁(𝒩|_W) ∩ [W])`, where
@@ -201,7 +201,7 @@ theorem gysin_finsum {J : Type u} (W : J → X.IdealSheafData)
           (W j) (hW j) (hDim j)).1 x
 ```
 
-**`Stacks.Chow.VirtualNormalTriple.nonempty_normalIso_of_isEffectiveCartier`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 526](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L526). The attribute's comment: “footnote: if D is an effective Cartier divisor, then N is isomorphic to the restriction of O_X(D) to D”.
+**`Stacks.Chow.VirtualNormalTriple.nonempty_normalIso_of_isEffectiveCartier`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean, line 526](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/VirtualNormalTripleGysin.lean#L526). The attribute's comment: “footnote: if D is an effective Cartier divisor, then N is isomorphic to the restriction of O\_X(D) to D”.
 
 > **The footnote of Remark 0B70.** If `D` is an effective Cartier divisor, then
 > `𝒩 ≅ 𝒪_X(D)|_D`.
@@ -672,7 +672,7 @@ theorem gysinSystemOfInvertible_isNaturalUnderProperPushforward (C : ChowSituati
     (gysinSystemOfInvertible C).IsNaturalUnderProperPushforward
 ```
 
-**`Stacks.Chow.gysinHomomorphismOfInvertible_properPushforward_of_gysinCompatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ProperPushforwardInvertible.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ProperPushforwardInvertible.lean#L274). The attribute's comment: “the identity i^* f_* α' = g_* (i')^* α' in A_k(Z(s)) over the square of Remark 0B6Y, for the Gysin map of an invertible module and a global section, with no hypothesis beyond properness of f and the commutativity of f over the base”.
+**`Stacks.Chow.gysinHomomorphismOfInvertible_properPushforward_of_gysinCompatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ProperPushforwardInvertible.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/ProperPushforwardInvertible.lean#L274). The attribute's comment: “the identity i^* f\_* α' = g\_* (i')^* α' in A\_k(Z(s)) over the square of Remark 0B6Y, for the Gysin map of an invertible module and a global section, with no hypothesis beyond properness of f and the commutativity of f over the base”.
 
 > **Stacks 02TA.** Gysin pullback through the zero scheme of a global section of an invertible
 > module commutes with proper pushforward across the square of Remark 0B6Y:
@@ -761,7 +761,7 @@ theorem gysinHomomorphismOfInvertible_flatPullback_cycleAssociatedToClosedSubsch
           (cycleAssociatedToClosedSubscheme C p Z.subschemeι (k + 1)))
 ```
 
-**`Stacks.Chow.gysinHomomorphismOfInvertible_flatPullback_of_invertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/FlatPullbackRationallyCompatible.lean, line 1260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/FlatPullbackRationallyCompatible.lean#L1260). The attribute's comment: “the Gysin map commutes with flat pullback, (i')^* f^* = g^* i^* on A_{k+r}(D'), with no hypothesis: the component identity is replaced by its rational-equivalence form, proved here, and the vanishing of 02S1 along g by the general theorem”.
+**`Stacks.Chow.gysinHomomorphismOfInvertible_flatPullback_of_invertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Gysin42/FlatPullbackRationallyCompatible.lean, line 1260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Gysin42/FlatPullbackRationallyCompatible.lean#L1260). The attribute's comment: “the Gysin map commutes with flat pullback, (i')^* f^* = g^* i^* on A\_\{k+r}(D'), with no hypothesis: the component identity is replaced by its rational-equivalence form, proved here, and the vanishing of 02S1 along g by the general theorem”.
 
 > **Stacks 0B71 for an arbitrary cycle at the Gysin map of an invertible module, with no
 > hypothesis.** Gysin pullback through the zero scheme of a section of an invertible module

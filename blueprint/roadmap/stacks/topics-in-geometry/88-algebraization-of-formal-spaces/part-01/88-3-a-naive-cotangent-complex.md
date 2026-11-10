@@ -85,7 +85,7 @@ public theorem differential_conormalComparison (x : G.toExtension.Cotangent) :
         (presentationDifferential G x i)
 ```
 
-**`Rig.completionComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L544). The attribute's comment: “the comparison of complexes NL(α) ⊗_B B^ → NL^∧_{B^/A}”.
+**`Rig.completionComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L544). The attribute's comment: “the comparison of complexes NL(α) ⊗\_B B^ → NL^∧\_\{B^/A}”.
 
 > The canonical comparison of complexes `NL(α) ⊗_B B^ → NL^∧_{B^/A}`: in degree `-1` it is the
 > `B^`-linear extension of the map `J / J² → J^ / (J^)²` and in degree `0` it is `dxᵢ ↦ dxᵢ`.
@@ -116,7 +116,7 @@ public theorem bijective_completionComparison_f₁ :
     Function.Bijective (completionComparison I G).f₁
 ```
 
-**`Rig.bijective_completionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 637](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L637). The attribute's comment: “NL^∧_{B^/A} = NL(α) ⊗_B B^ as complexes”.
+**`Rig.bijective_completionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean, line 637](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/Completion.lean#L637). The attribute's comment: “NL^∧\_\{B^/A} = NL(α) ⊗\_B B^ as complexes”.
 
 > `NL^∧_{B^/A} = NL(α) ⊗_B B^` as complexes: the comparison of two-term complexes is bijective
 > in both degrees and commutes with the two differentials.
@@ -131,7 +131,7 @@ public theorem bijective_completionComparison :
             (presentationDifferential G)).d
 ```
 
-**`Rig.completedNaiveCotangentDerivedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionDerived.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionDerived.lean#L236). The attribute's comment: “NL^∧_{B^/A} = NL_{B/A} ⊗^L_B B^ in D(B^)”.
+**`Rig.completedNaiveCotangentDerivedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionDerived.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionDerived.lean#L236). The attribute's comment: “NL^∧\_\{B^/A} = NL\_\{B/A} ⊗^L\_B B^ in D(B^)”.
 
 > **Stacks 0GAF, second clause.** `NL^∧_{B^/A} = NL_{B/A} ⊗^L_B B^` in `D(B^)`, for the
 > canonical derived tensor product along `B → B^` with the unit complex `B^` in degree `0`.
@@ -148,7 +148,7 @@ public def completedNaiveCotangentDerivedTensorIso :
       DerivedCategory.Q.obj (completedComplex I G).cochainComplex
 ```
 
-**`Rig.bijective_limitComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionLimit.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionLimit.lean#L185). The attribute's comment: “lim NL(α) = NL(α) ⊗_B B^ as complexes”.
+**`Rig.bijective_limitComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionLimit.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionLimit.lean#L185). The attribute's comment: “lim NL(α) = NL(α) ⊗\_B B^ as complexes”.
 
 > **Stacks 0GAF, the `lim` form of the first clause.** `lim NL(α) = NL(α) ⊗_B B^` as
 > complexes: the comparison is bijective in both degrees and commutes with the differentials.
@@ -163,7 +163,7 @@ public theorem bijective_limitComparison :
             (presentationDifferential G)).d
 ```
 
-**`Rig.bijective_limitCompletionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionLimit.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionLimit.lean#L209). The attribute's comment: “NL^∧_{B^/A} = lim NL(α) ⊗_B B^ as complexes”.
+**`Rig.bijective_limitCompletionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionLimit.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/NaiveCotangent/CompletionLimit.lean#L209). The attribute's comment: “NL^∧\_\{B^/A} = lim NL(α) ⊗\_B B^ as complexes”.
 
 > **Stacks 0GAF, first clause in its `lim` form.** `NL^∧_{B^/A} = lim NL(α) ⊗_B B^` as
 > complexes: the comparison from the degreewise `I`-adic completion of `NL(α)` to the completed

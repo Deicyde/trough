@@ -14,7 +14,7 @@ Section 47.11 of the Stacks Project, [Tag 0AVY](https://stacks.math.columbia.edu
 
 [Tag 0AVZ](https://stacks.math.columbia.edu/tag/0AVZ) in the Stacks Project.
 
-**`ModuleCat.subsingleton_ext_of_lt_ideal_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DepthLemmas/Ext.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DepthLemmas/Ext.lean#L131). The attribute's comment: “Ext vanishing below depth for modules annihilated by an ideal power”. References: EGA 0 (16.4.4), “Ext^i(k”; SGA 2 III (2.2), “Clause (a), special case”; SGA 2 III (2.4), “(4)⇒(2)”; SGA 2 III (2.8), “Ext^i(k”; SGA 2 IV (5.3), “Ext^i_A(k, special case”.
+**`ModuleCat.subsingleton_ext_of_lt_ideal_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DepthLemmas/Ext.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DepthLemmas/Ext.lean#L131). The attribute's comment: “Ext vanishing below depth for modules annihilated by an ideal power”. References: EGA 0 (16.4.4), “Ext^i(k”; SGA 2 III (2.2), “Clause (a), special case”; SGA 2 III (2.4), “(4)⇒(2)”; SGA 2 III (2.8), “Ext^i(k”; SGA 2 IV (5.3), “Ext^i\_A(k, special case”.
 
 > `Ext^i_R(N, M)` vanishes below the `I`-depth of `M` for **every** finite module `N`
 > annihilated by a power of `I`, not just for `N = R ⧸ I`: a power of `I` annihilating `N` forces
@@ -29,7 +29,7 @@ theorem ModuleCat.subsingleton_ext_of_lt_ideal_depth [IsNoetherianRing R] [Small
     Subsingleton (Ext N M i)
 ```
 
-**`Module.subsingleton_ext_of_lt_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean#L79). The attribute's comment: “Ext vanishing below depth for modules annihilated by an ideal power”. References: SGA 2 III (2.2), “(a), Noetherian f.g.”; SGA 2 IV (5.3), “Ext^i(M,A)=0 for i&lt;n”; SGA 2 III (3.3), “affine (iv)⇒(v)”.
+**`Module.subsingleton_ext_of_lt_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean#L79). The attribute's comment: “Ext vanishing below depth for modules annihilated by an ideal power”. References: SGA 2 III (2.2), “(a), Noetherian f.g.”; SGA 2 IV (5.3), “Ext^i(M,A)=0 for i`<`n”; SGA 2 III (3.3), “affine (iv)⇒(v)”.
 
 > Ext from a finite module annihilated by a power of `I` vanishes below the `I`-depth.
 
@@ -62,7 +62,7 @@ theorem depth_eq_sInf_nontrivial_localCohomologyWithSupportIn
               (i : ℤ))}
 ```
 
-**`Stacks.LocalCohomology.depth_eq_sInf_nontrivial_ext_and_localCohomology_and_subsingleton_ext`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean, line 576](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean#L576). The attribute's comment: “the three-way equality and the moreover clause conjoined, with the local cohomology of the third quantity in the RΓ_{V(I)} model”. References: SGA 2 III (2.3), “special case”; SGA 2 III (2.4), “(2)⇔(4)”; SGA 2 IV (5.3), “Ext^i_A(k, special case”; SGA 2 VII (1.2), “(i) ⇔ (iii)”.
+**`Stacks.LocalCohomology.depth_eq_sInf_nontrivial_ext_and_localCohomology_and_subsingleton_ext`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean, line 576](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean#L576). The attribute's comment: “the three-way equality and the moreover clause conjoined, with the local cohomology of the third quantity in the RΓ\_\{V(I)} model”. References: SGA 2 III (2.3), “special case”; SGA 2 III (2.4), “(2)⇔(4)”; SGA 2 IV (5.3), “Ext^i\_A(k, special case”; SGA 2 VII (1.2), “(i) ⇔ (iii)”.
 
 > Let `R` be a Noetherian ring, `I ⊆ R` an ideal and `M` a finite
 > `R`-module with `IM ≠ M`. Then the three integers of the source are equal — `depth_I(M)`, the
@@ -101,7 +101,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Module.min_depth_le_depth_of_exact`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/ShortExact.lean#L279), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/Depth.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Depth.lean#L313) (StacksFrontier): “middle_depth_bound, quotient_depth_bound and submodule_depth_bound: the three conjuncts of this inequality”.
+- [`Module.min_depth_le_depth_of_exact`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/ShortExact.lean#L279), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/Depth.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Depth.lean#L313) (StacksFrontier): “middle\_depth\_bound, quotient\_depth\_bound and submodule\_depth\_bound: the three conjuncts of this inequality”.
 
 ## Tag 0BUW, a lemma
 
@@ -115,7 +115,7 @@ Declarations registered for the tag:
 
 [Tag 0BUX](https://stacks.math.columbia.edu/tag/0BUX) in the Stacks Project.
 
-**`Dualizing.supportDim_quotient_add_depth_eq_supportDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Depth.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Depth.lean#L187). References: EGA 0 (16.5.9), “r = depth_p(M)”.
+**`Dualizing.supportDim_quotient_add_depth_eq_supportDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Depth.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Depth.lean#L187). References: EGA 0 (16.5.9), “r = depth\_p(M)”.
 
 > **Stacks Project, Tag 0BUX.** The depth of a finite Cohen--Macaulay module
 > along a proper ideal is the drop in the dimension of its support on passing to
@@ -186,7 +186,7 @@ theorem supportLocalCohomology_quotient_zero
       (ModuleCat.of A (M ⧸ Ideal.primaryComponent M I)))
 ```
 
-**`Stacks.Duality.idealLocalCohomology_zero_iso_torsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L298). The attribute's comment: “H^0_I is the torsion submodule”.
+**`Stacks.Duality.idealLocalCohomology_zero_iso_torsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L298). The attribute's comment: “H^0\_I is the torsion submodule”.
 
 > **Stacks 0AW0.** The zeroth local cohomology `H^0_I(M)` of `M` for the `I`-power torsion
 > theory is the `I`-power-torsion submodule `M[I^∞]` of `M`, by an isomorphism compatible with
@@ -266,7 +266,7 @@ theorem supportLocalCohomology_quotient_map_higher
       (ModuleCat.ofHom (Ideal.primaryComponent M I).mkQ))
 ```
 
-**`Stacks.Duality.idealLocalCohomology_zero_iso_supportLocalCohomology_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L439). The attribute's comment: “H^0_I = H^0_Z”.
+**`Stacks.Duality.idealLocalCohomology_zero_iso_supportLocalCohomology_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L439). The attribute's comment: “H^0\_I = H^0\_Z”.
 
 > **Stacks 0AW0.** For a finitely generated ideal `I` and `Z = V(I)` the two zeroth local
 > cohomology modules agree, `H^0_I(M) = H^0_Z(M)`, compatibly with their canonical maps down

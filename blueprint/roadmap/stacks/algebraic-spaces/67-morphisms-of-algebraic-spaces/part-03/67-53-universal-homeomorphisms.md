@@ -100,7 +100,7 @@ theorem nonSeparatedUniversalHomeomorphism_squaringMap (hchar : (2 : k) ≠ 0) :
       ¬ Space.IsSeparated B (Spec (.of k)) hk (squaringMap k B hk)
 ```
 
-**`AlgebraicGeometry.Space.universallyClosed_toQuotientSheaf_comp_squaringMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversalHomeomorphism.lean, line 671](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversalHomeomorphism.lean#L671). The attribute's comment: “closed_squaring”.
+**`AlgebraicGeometry.Space.universallyClosed_toQuotientSheaf_comp_squaringMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversalHomeomorphism.lean, line 671](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversalHomeomorphism.lean#L671). The attribute's comment: “closed\_squaring”.
 
 > **Stacks 05Z6.** The composite of the projection onto the quotient of the affine line by
 > the punctured involution relation with the descended squaring map of Stacks 05VS is
@@ -123,7 +123,7 @@ theorem universallyClosed_toQuotientSheaf_comp_squaringMap (hk : B.Contains (Spe
         squaringMap k B hk)
 ```
 
-**`AlgebraicGeometry.Space.universalHomeomorphism_squaringMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversalHomeomorphism.lean, line 772](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversalHomeomorphism.lean#L772). The attribute's comment: “universal_homeomorphism: the map X ⟶ 𝐀¹_k is a universal homeomorphism”.
+**`AlgebraicGeometry.Space.universalHomeomorphism_squaringMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversalHomeomorphism.lean, line 772](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UniversalHomeomorphism.lean#L772). The attribute's comment: “universal\_homeomorphism: the map X ⟶ 𝐀¹\_k is a universal homeomorphism”.
 
 > **Stacks 05ZI, the last sentence: there is a universal homeomorphism `X ⟶ 𝐀¹_k`, exhibited
 > directly by `t ↦ t ^ 2` on affine space.**
@@ -225,7 +225,7 @@ theorem universalHomeomorphism_ι_reducedClosedSubspace_univ (hX : IsAlgebraicSp
 
 [Tag 0AEH](https://stacks.math.columbia.edu/tag/0AEH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.supportOfSheaf_subset_of_essImage_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardSupport.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardSupport.lean#L172). The attribute's comment: “part (2), the inclusion only: a sheaf in the essential image of f_{small,*} is supported on f(|Y|), for an integral morphism and with no universal injectivity needed. The converse inclusion, and with it the full iff of part (2), is AlgebraicGeometry.Space.smallEtalePushforwardAb_essImage_iff_of_integral_universallyInjective; part (1) is ...smallEtalePushforward_essImage_iff_of_integral_universallyInjective. Both are proved at the source's own hypotheses”.
+**`AlgebraicGeometry.Space.supportOfSheaf_subset_of_essImage_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardSupport.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardSupport.lean#L172). The attribute's comment: “part (2), the inclusion only: a sheaf in the essential image of f\_\{small,*} is supported on f(|Y|), for an integral morphism and with no universal injectivity needed. The converse inclusion, and with it the full iff of part (2), is AlgebraicGeometry.Space.smallEtalePushforwardAb\_essImage\_iff\_of\_integral\_universallyInjective; part (1) is ...smallEtalePushforward\_essImage\_iff\_of\_integral\_universallyInjective. Both are proved at the source's own hypotheses”.
 
 > **Stacks 0AEH, part (2), one inclusion of the essential image.** An abelian sheaf on the
 > small étale site of `X` isomorphic to a small étale direct image along an integral morphism
@@ -352,7 +352,7 @@ theorem smallEtaleAdjunctionCounitIsIsoOfIntegralUniversallyInjective (f : Y ⟶
         (SmallEtale.topology B S hS Y.1)).counit.app G)
 ```
 
-**`AlgebraicGeometry.Space.smallEtalePullbackPushforwardCounitIsoOfIntegralUniversallyInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralUniversallyInjectiveSmallEtale.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralUniversallyInjectiveSmallEtale.lean#L185). The attribute's comment: “trailing clause for sheaves of sets, as a natural isomorphism f_* f^{-1} ≅ 1”.
+**`AlgebraicGeometry.Space.smallEtalePullbackPushforwardCounitIsoOfIntegralUniversallyInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralUniversallyInjectiveSmallEtale.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralUniversallyInjectiveSmallEtale.lean#L185). The attribute's comment: “trailing clause for sheaves of sets, as a natural isomorphism f\_* f^\{-1} ≅ 1”.
 
 > **Stacks 0AEH, the trailing clause, for sheaves of sets, as a natural isomorphism.** For an
 > integral and universally injective morphism `f : Y ⟶ X` of algebraic spaces over a scheme `S`
@@ -433,7 +433,7 @@ theorem smallEtaleAdjunctionCounitIsIsoAbelianOfIntegralUniversallyInjective (f 
         (SmallEtale.topology B S hS Y.1)).counit.app G)
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleAbelianPullbackPushforwardCounitIsoOfIntegralUniversallyInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralUniversallyInjectiveSmallEtale.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralUniversallyInjectiveSmallEtale.lean#L265). The attribute's comment: “trailing clause for abelian sheaves, as a natural isomorphism f_* f^{-1} ≅ 1”.
+**`AlgebraicGeometry.Space.smallEtaleAbelianPullbackPushforwardCounitIsoOfIntegralUniversallyInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralUniversallyInjectiveSmallEtale.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralUniversallyInjectiveSmallEtale.lean#L265). The attribute's comment: “trailing clause for abelian sheaves, as a natural isomorphism f\_* f^\{-1} ≅ 1”.
 
 > **Stacks 0AEH, the trailing clause, for abelian sheaves, as a natural isomorphism.** For an
 > integral and universally injective morphism `f : Y ⟶ X` of algebraic spaces over a scheme `S`

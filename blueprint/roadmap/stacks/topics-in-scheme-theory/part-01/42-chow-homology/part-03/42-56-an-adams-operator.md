@@ -84,7 +84,7 @@ theorem exists_secondAdamsOperator_pullbackRingHom :
 theorem swapSquare_comp_swapSquare (L : C) : swapSquare L ≫ swapSquare L = 𝟙 (L ⊗ L)
 ```
 
-**`Stacks.SecondAdamsPerfect.swapSquareAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfect.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfect.lean#L157). The attribute's comment: “the action of the group of units {±1} on the tensor square by switching the two factors”.
+**`Stacks.SecondAdamsPerfect.swapSquareAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfect.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfect.lean#L157). The attribute's comment: “the action of the group of units \{±1} on the tensor square by switching the two factors”.
 
 > **The action of the group `{±1}` on `L ⊗ L` by switching the factors**: the unit `1` acts by
 > the identity and the unit `-1` by the switch, which is an involution.
@@ -135,7 +135,7 @@ theorem derivedSwapSquare_comp_self (L : DerivedCategory (StructureSheafModules 
     derivedSwapSquare Rc L ≫ derivedSwapSquare Rc L = 𝟙 (((derivedTensor Rc).obj L).obj L)
 ```
 
-**`Stacks.SecondAdamsPerfect.derivedSwapSquareAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfect.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfect.lean#L412). The attribute's comment: “the action of the group {±1} on the derived tensor square of an object of D(O_X) by switching the two factors”.
+**`Stacks.SecondAdamsPerfect.derivedSwapSquareAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfect.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfect.lean#L412). The attribute's comment: “the action of the group \{±1} on the derived tensor square of an object of D(O\_X) by switching the two factors”.
 
 > **The action of the group `{±1}` on `L ⊗^L_{O_X} L` by switching the factors**, in the
 > derived category of a ringed space.
@@ -145,7 +145,7 @@ def derivedSwapSquareAction (L : DerivedCategory (StructureSheafModules Rc)) :
     ℤˣ →* End (((derivedTensor Rc).obj L).obj L)
 ```
 
-**`AlgebraicGeometry.secondAdamsPerfect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfectKZero.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfectKZero.lean#L148). The attribute's comment: “the second Adams operator ψ² on K₀(D_perf(𝒪_X)), for any model of D(𝒪_X), as an additive endomorphism; its value on classes is `secondAdamsPerfect_cls`, and its well-definedness (additivity along distinguished triangles) is `secondAdamsPerfect_distinguished`”.
+**`AlgebraicGeometry.secondAdamsPerfect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfectKZero.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfectKZero.lean#L148). The attribute's comment: “the second Adams operator ψ² on K₀(D\_perf(𝒪\_X)), for any model of D(𝒪\_X), as an additive endomorphism; its value on classes is `secondAdamsPerfect_cls`, and its well-definedness (additivity along distinguished triangles) is `secondAdamsPerfect_distinguished`”.
 
 > The second Adams operator `ψ²` on `K₀(D_perf(𝒪_X))`, for a scheme `X` on which `2` is
 > invertible: the additive endomorphism sending the class of a perfect object `L` to
@@ -201,7 +201,7 @@ theorem secondAdamsPerfect_cls (h2 : IsUnit (2 : Γ(X, ⊤))) (L : 𝒟ₚ) :
         K0.cls (⟨sm.obj, hm⟩ : 𝒟ₚ)
 ```
 
-**`AlgebraicGeometry.secondAdamsPerfect_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfectKZero.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfectKZero.lean#L210). The attribute's comment: “well-definedness on K₀: [(L ⊗^L L)^+] - [(L ⊗^L L)^-] is additive along distinguished triangles of D_perf(𝒪_X), for every choice of invariants and anti-invariants”.
+**`AlgebraicGeometry.secondAdamsPerfect_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfectKZero.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfectKZero.lean#L210). The attribute's comment: “well-definedness on K₀: [(L ⊗^L L)^+] - [(L ⊗^L L)^-] is additive along distinguished triangles of D\_perf(𝒪\_X), for every choice of invariants and anti-invariants”.
 
 > For a distinguished triangle `L₁ ⟶ L₂ ⟶ L₃ ⟶ L₁[1]` of `D_perf(𝒪_X)`, `2` being invertible on
 > `X`, and for any choices `sᵢ^±` of the invariants and the anti-invariants of the switch on
@@ -243,7 +243,7 @@ theorem secondAdamsPerfect_distinguished (h2 : IsUnit (2 : Γ(X, ⊤)))
           K0.cls (⟨sm₃.obj, hm₃⟩ : 𝒟ₚ))
 ```
 
-**`AlgebraicGeometry.perfectKZeroSecondAdams`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfectKZero.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfectKZero.lean#L250). The attribute's comment: “ψ² on K₀(X) = PerfectKZero X of Tag 0FDG: `secondAdamsPerfect` at the standard model of D(𝒪_X) that PerfectKZero is defined with”.
+**`AlgebraicGeometry.perfectKZeroSecondAdams`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfectKZero.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/SecondAdamsOperatorPerfectKZero.lean#L250). The attribute's comment: “ψ² on K₀(X) = PerfectKZero X of Tag 0FDG: `secondAdamsPerfect` at the standard model of D(𝒪\_X) that PerfectKZero is defined with”.
 
 > The second Adams operator on the group `AlgebraicGeometry.PerfectKZero X = K₀(D_perf(𝒪_X))`
 > of [Stacks, Tag 0FDG]: `secondAdamsPerfect` at the standard model of the derived category.
@@ -327,7 +327,7 @@ theorem totalChernKGroupMap_spec :
 abbrev chowCohomologySeries : Type (u + 1)
 ```
 
-**`Stacks.Chow.chernClassKGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassKGroup.lean, line 665](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassKGroup.lean#L665). The attribute's comment: “the map c : K_0(Vect(X)) -> prod_{i >= 0} A^i(X) itself, with K_0(Vect(X)) the Grothendieck group AlgebraicGeometry.VectorBundleKZero of Stacks 0FDK and A^i(X) the Chow cohomology Stacks.Chow.chowCohomologyComponent of Stacks 0B7E. CARRIED, as the two fields of the parameters R and D: (1) the ring structure of A^*(X)^∧, Stacks 0FE0 -- composition of bivariant classes, whose composite StacksDraft.AlgebraicGeometry.Chow.BivariantComposition .Class constructs as Stacks.Chow.bivariantComposite, though nothing here assembles the ring out of it -- namely a degreewise product A^i x A^j -> A^{i+j}, additive in each variable, a unit series, and associativity, commutativity and the unit law for the Cauchy product it defines; (2) the total Chern class series c(E) of each module; Stacks 0B7H is constructed here, as Stacks.Chow.chernClass, but relative to the Chern cap products of Stacks 0B7G that the characterization is read against (the parameter Stacks.Chow.HigherChernCapRule), which rest on Stacks 02U5 and 02U7 and are not formalized here; and (3) the Whitney sum formula c(E_2) = c(E_1) c(E_3) of Stacks 02UI in the source's product form, which is the well-definedness. The repository's Stacks 02UI, Stacks.Chow.chernCapOnChow_eq_sum_of_shortExact, is the relation read componentwise on Chow groups between cap products and does not give the product form: that deduction needs the bivariant Chern classes of Stacks 0B7H, the composition product of Stacks 0FE0 and the compatibility of the cap operation of a composite with the two cap operations; the first two are available, the degreewise product built from the composite and the last are not. NOT carried, and constructed here: the product prod_{i >= 0} A^i(X), the Cauchy product on it, the formal inverse of a series with constant term 1 and the proof that it inverts, the group of such series, and the map c with the three properties below”.
+**`Stacks.Chow.chernClassKGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassKGroup.lean, line 665](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassKGroup.lean#L665). The attribute's comment: “the map c : K\_0(Vect(X)) -> prod\_\{i >= 0} A^i(X) itself, with K\_0(Vect(X)) the Grothendieck group AlgebraicGeometry.VectorBundleKZero of Stacks 0FDK and A^i(X) the Chow cohomology Stacks.Chow.chowCohomologyComponent of Stacks 0B7E. CARRIED, as the two fields of the parameters R and D: (1) the ring structure of A^*(X)^∧, Stacks 0FE0 -- composition of bivariant classes, whose composite StacksDraft.AlgebraicGeometry.Chow.BivariantComposition .Class constructs as Stacks.Chow.bivariantComposite, though nothing here assembles the ring out of it -- namely a degreewise product A^i x A^j -> A^\{i+j}, additive in each variable, a unit series, and associativity, commutativity and the unit law for the Cauchy product it defines; (2) the total Chern class series c(E) of each module; Stacks 0B7H is constructed here, as Stacks.Chow.chernClass, but relative to the Chern cap products of Stacks 0B7G that the characterization is read against (the parameter Stacks.Chow.HigherChernCapRule), which rest on Stacks 02U5 and 02U7 and are not formalized here; and (3) the Whitney sum formula c(E\_2) = c(E\_1) c(E\_3) of Stacks 02UI in the source's product form, which is the well-definedness. The repository's Stacks 02UI, Stacks.Chow.chernCapOnChow\_eq\_sum\_of\_shortExact, is the relation read componentwise on Chow groups between cap products and does not give the product form: that deduction needs the bivariant Chern classes of Stacks 0B7H, the composition product of Stacks 0FE0 and the compatibility of the cap operation of a composite with the two cap operations; the first two are available, the degreewise product built from the composite and the last are not. NOT carried, and constructed here: the product prod\_\{i >= 0} A^i(X), the Cauchy product on it, the formal inverse of a series with constant term 1 and the proof that it inverts, the group of such series, and the map c with the three properties below”.
 
 > **Stacks 0FEL.** The Chern class map
 >
@@ -342,7 +342,7 @@ def chernClassKGroup (D : TotalChernClassSeries C G sX R) :
     AlgebraicGeometry.VectorBundleKZero X → chowCohomologySeries C G sX
 ```
 
-**`Stacks.Chow.chernClassKGroup_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassKGroup.lean, line 682](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassKGroup.lean#L682). The attribute's comment: “the multiplicativity -- extending multiplicatively -- of the map, which is its well-definedness on K_0(Vect(X)); the Whitney sum formula of Stacks 02UI is carried, see the attribute on Stacks.Chow.chernClassKGroup”.
+**`Stacks.Chow.chernClassKGroup_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassKGroup.lean, line 682](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassKGroup.lean#L682). The attribute's comment: “the multiplicativity -- extending multiplicatively -- of the map, which is its well-definedness on K\_0(Vect(X)); the Whitney sum formula of Stacks 02UI is carried, see the attribute on Stacks.Chow.chernClassKGroup”.
 
 > **The Chern class map is multiplicative**, which is what "extending multiplicatively" means:
 > the sum in `K_0(Vect(X))` goes to the Cauchy product of series. This is the content Stacks 02UI
@@ -355,7 +355,7 @@ theorem chernClassKGroup_add (D : TotalChernClassSeries C G sX R)
       chowSeriesMul R.gradedMul (chernClassKGroup D α) (chernClassKGroup D β)
 ```
 
-**`Stacks.Chow.chernClassKGroup_neg_classOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassKGroup.lean, line 710](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassKGroup.lean#L710). The attribute's comment: “the clause that -[E] is sent to the formal inverse c(E)^{-1}, which is why the target is an infinite product; the formal inverse is constructed here by the recursion Stacks.Chow.ChowCohomologySeriesRing.formalInverse_succ and is not carried”.
+**`Stacks.Chow.chernClassKGroup_neg_classOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassKGroup.lean, line 710](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassKGroup.lean#L710). The attribute's comment: “the clause that -[E] is sent to the formal inverse c(E)^\{-1}, which is why the target is an infinite product; the formal inverse is constructed here by the recursion Stacks.Chow.ChowCohomologySeriesRing.formalInverse\_succ and is not carried”.
 
 > **Stacks 0FEL, the last clause of the remark.** `−[ℰ]` is sent to the formal inverse
 > `c(ℰ)^{-1}`: its coefficients are given by the recursion of
@@ -430,7 +430,7 @@ theorem chernCharacterRingHom_spec :
       φ = chernCharacterRingHom C sX)
 ```
 
-**`Stacks.Chow.existsUnique_ringHom_chernCharacter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalIntersection/ChernCharacterMultiplicative.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalIntersection/ChernCharacterMultiplicative.lean#L288). The attribute's comment: “the remark as stated: the unique ring map K_0(Vect(X)) -> prod over i >= 0 of A^i(X) tensor Q sending [E] to ch(E), for every X locally of finite type over S, with no further hypothesis; the target is the ring Stacks.Chow.RationalTotalChowClass C sX (Cauchy product of the products A^i(X) x A^j(X) -> A^{i+j}(X) of Stacks 0B75, tensored with Q), ch(E) is Stacks.Chow.rationalTotalChernCharacter (components P_p(E)/p!, E of arbitrary rank), and the map is Stacks.Chow.rationalTotalChernCharacterRingHom; additivity is Stacks 0F9C and multiplicativity Stacks 0F9D, both proved”.
+**`Stacks.Chow.existsUnique_ringHom_chernCharacter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalIntersection/ChernCharacterMultiplicative.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalIntersection/ChernCharacterMultiplicative.lean#L288). The attribute's comment: “the remark as stated: the unique ring map K\_0(Vect(X)) -> prod over i >= 0 of A^i(X) tensor Q sending [E] to ch(E), for every X locally of finite type over S, with no further hypothesis; the target is the ring Stacks.Chow.RationalTotalChowClass C sX (Cauchy product of the products A^i(X) x A^j(X) -> A^\{i+j}(X) of Stacks 0B75, tensored with Q), ch(E) is Stacks.Chow.rationalTotalChernCharacter (components P\_p(E)/p!, E of arbitrary rank), and the map is Stacks.Chow.rationalTotalChernCharacterRingHom; additivity is Stacks 0F9C and multiplicativity Stacks 0F9D, both proved”.
 
 > **Stacks 0FEM.** The Chern character defines a canonical ring map
 >
@@ -451,7 +451,7 @@ theorem existsUnique_ringHom_chernCharacter :
 
 [Tag 0FEN](https://stacks.math.columbia.edu/tag/0FEN) in the Stacks Project.
 
-**`Stacks.Chow.chernClassKGroup_secondAdams`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperatorChernScaling.lean, line 620](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperatorChernScaling.lean#L620). The attribute's comment: “the first equation, c_i(psi^2(alpha)) = 2^i c_i(alpha), for every alpha in K_0(Vect(X)); psi^2 is AlgebraicGeometry.VectorBundleKZero.secondAdamsRingHom of Stacks 0FEJ and c is Stacks.Chow.chernClassKGroup of Stacks 0FEL, so the parameters R, D and hX are the data those two already carry. CARRIED in addition: (1) the splitting principle of Stacks 02UL, not formalized in this repository, as Stacks.Chow.HasSecondAdamsSplitting -- a family of morphisms p_r : P_r -> X, jointly injective on each A^i(X), along each of which [E] becomes a sum of classes of invertible modules, together with the restriction map of Stacks 0B7F and its multiplicativity and Chern class compatibility (which Stacks 0B7F does not formalize, needing the composition product of Stacks 0FE0) and the functoriality of K_0(Vect(-)) (which this repository does not construct, as the notes of StacksFrontier.AlgebraicGeometry.Chow.SecondAdamsOperator record); the family rather than a single morphism is what keeps modules of non-constant rank in scope, since the source reduces to constant rank over the rank loci (Stacks 0ESW) before applying Stacks 02UL; and (2) Stacks 02U0 and Stacks 02SZ, the vanishing of c_j of an invertible module above degree 1 and the additivity c_1(L tensor L) = 2 c_1(L), with Stacks 01CT (1), as Stacks.Chow.InvertibleChernClassData -- properties of the bivariant Chern classes of Stacks 0B7H, which this repository characterizes but does not construct. NOT carried, and proved here: that the 2^i-scaling of A^i(X) is a ring endomorphism of the product (the source's first step, which is what reduces the lemma to additive generators), the base case c(L tensor L) = 1 + 2 c_1(L), the value psi^2([L]) = [L tensor L] (proved in Stacks 0FEJ), the computation of c(psi^2(alpha)) on a sum of classes of invertible modules, and the descent along the pullback”.
+**`Stacks.Chow.chernClassKGroup_secondAdams`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperatorChernScaling.lean, line 620](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperatorChernScaling.lean#L620). The attribute's comment: “the first equation, c\_i(psi^2(alpha)) = 2^i c\_i(alpha), for every alpha in K\_0(Vect(X)); psi^2 is AlgebraicGeometry.VectorBundleKZero.secondAdamsRingHom of Stacks 0FEJ and c is Stacks.Chow.chernClassKGroup of Stacks 0FEL, so the parameters R, D and hX are the data those two already carry. CARRIED in addition: (1) the splitting principle of Stacks 02UL, not formalized in this repository, as Stacks.Chow.HasSecondAdamsSplitting -- a family of morphisms p\_r : P\_r -> X, jointly injective on each A^i(X), along each of which [E] becomes a sum of classes of invertible modules, together with the restriction map of Stacks 0B7F and its multiplicativity and Chern class compatibility (which Stacks 0B7F does not formalize, needing the composition product of Stacks 0FE0) and the functoriality of K\_0(Vect(-)) (which this repository does not construct, as the notes of StacksFrontier.AlgebraicGeometry.Chow.SecondAdamsOperator record); the family rather than a single morphism is what keeps modules of non-constant rank in scope, since the source reduces to constant rank over the rank loci (Stacks 0ESW) before applying Stacks 02UL; and (2) Stacks 02U0 and Stacks 02SZ, the vanishing of c\_j of an invertible module above degree 1 and the additivity c\_1(L tensor L) = 2 c\_1(L), with Stacks 01CT (1), as Stacks.Chow.InvertibleChernClassData -- properties of the bivariant Chern classes of Stacks 0B7H, which this repository characterizes but does not construct. NOT carried, and proved here: that the 2^i-scaling of A^i(X) is a ring endomorphism of the product (the source's first step, which is what reduces the lemma to additive generators), the base case c(L tensor L) = 1 + 2 c\_1(L), the value psi^2([L]) = [L tensor L] (proved in Stacks 0FEJ), the computation of c(psi^2(alpha)) on a sum of classes of invertible modules, and the descent along the pullback”.
 
 > **Stacks Project, Tag 0FEN, the first equation.** Let `(S, δ)` be as in Stacks 02QL, let `X`
 > be locally of finite type over `S`, let `ψ²` be the second Adams operation of Stacks 0FEJ and let
@@ -476,7 +476,7 @@ theorem chernClassKGroup_secondAdams {D : TotalChernClassSeries C G sX R}
       ((2 : ℕ) ^ i) • chernClassKGroup D α i
 ```
 
-**`Stacks.Chow.chernCharacterKGroup_secondAdams`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperatorChernScaling.lean, line 704](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperatorChernScaling.lean#L704). The attribute's comment: “the second equation, ch_i(psi^2(alpha)) = 2^i ch_i(alpha), for every alpha in K_0(Vect(X)); ch is Stacks.Chow.chernCharacterKGroup, the Chern character of Stacks 0FEM written out as ch_p(alpha) = P_p(c_1(alpha), ..., c_p(alpha))/p! in the product over p >= 0 of A^p(X) tensor Q, which is the library's Stacks.Chow.fullRationalChowCohomology. It is deduced from the first equation rather than proved by a second splitting argument. CARRIED in addition to what the first equation carries: the power sums P_p themselves, as Stacks.Chow.NewtonPowerSums, with their additivity for the Cauchy product (Stacks 0F9C) and their weighted homogeneity of degree p -- Stacks.Chow.powerSumClassArbitraryRank of Stacks 0ESX assembles the power sums over the rank loci from a quantified family rather than from a polynomial expression, so neither property can be read off here. The weighted homogeneity is a combinatorial property of P_p alone, with no geometry in it”.
+**`Stacks.Chow.chernCharacterKGroup_secondAdams`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperatorChernScaling.lean, line 704](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperatorChernScaling.lean#L704). The attribute's comment: “the second equation, ch\_i(psi^2(alpha)) = 2^i ch\_i(alpha), for every alpha in K\_0(Vect(X)); ch is Stacks.Chow.chernCharacterKGroup, the Chern character of Stacks 0FEM written out as ch\_p(alpha) = P\_p(c\_1(alpha), ..., c\_p(alpha))/p! in the product over p >= 0 of A^p(X) tensor Q, which is the library's Stacks.Chow.fullRationalChowCohomology. It is deduced from the first equation rather than proved by a second splitting argument. CARRIED in addition to what the first equation carries: the power sums P\_p themselves, as Stacks.Chow.NewtonPowerSums, with their additivity for the Cauchy product (Stacks 0F9C) and their weighted homogeneity of degree p -- Stacks.Chow.powerSumClassArbitraryRank of Stacks 0ESX assembles the power sums over the rank loci from a quantified family rather than from a polynomial expression, so neither property can be read off here. The weighted homogeneity is a combinatorial property of P\_p alone, with no geometry in it”.
 
 > **Stacks Project, Tag 0FEN, the second equation.** In the situation of
 > `Stacks.Chow.chernClassKGroup_secondAdams`, with `ch` the Chern character of Stacks 0FEM,
@@ -524,7 +524,7 @@ theorem chernClass_chernCharacter_secondAdams (α : VectorBundleKZero X) (i : �
       (2 ^ i : ℤ) • chernCharacterRingHom C sX α i
 ```
 
-**`Stacks.Chow.chernCharacterVectorBundle_secondAdams`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalIntersection/SecondAdamsChernCharacter.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalIntersection/SecondAdamsChernCharacter.lean#L245). The attribute's comment: “the ch_i equation: ch_p(ψ²(α)) = 2^p ch_p(α), for every α ∈ K_0(Vect(X)) and every X locally of finite type over S, with no further hypothesis: ψ² is AlgebraicGeometry.VectorBundleKZero.secondAdamsRingHom (Stacks 0FEJ) and ch is Stacks.Chow.chernCharacterVectorBundle (Stacks 0FEM), with values in A^p(X) ⊗ Q”.
+**`Stacks.Chow.chernCharacterVectorBundle_secondAdams`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalIntersection/SecondAdamsChernCharacter.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalIntersection/SecondAdamsChernCharacter.lean#L245). The attribute's comment: “the ch\_i equation: ch\_p(ψ²(α)) = 2^p ch\_p(α), for every α ∈ K\_0(Vect(X)) and every X locally of finite type over S, with no further hypothesis: ψ² is AlgebraicGeometry.VectorBundleKZero.secondAdamsRingHom (Stacks 0FEJ) and ch is Stacks.Chow.chernCharacterVectorBundle (Stacks 0FEM), with values in A^p(X) ⊗ Q”.
 
 > **Stacks Project, Tag 0FEN, the second equation.** Let `(S, δ)` be as in Situation 42.7.1 and
 > let `X` be locally of finite type over `S`. For every `α ∈ K_0(Vect(X))` and every `p ≥ 0`,
@@ -540,7 +540,7 @@ theorem chernCharacterVectorBundle_secondAdams (a : VectorBundleKZero X) (p : �
       (2 ^ p : ℚ) • chernCharacterVectorBundle C sX a p
 ```
 
-**`Stacks.Chow.totalChernKClass_secondAdams`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalIntersection/SecondAdamsTotalChern.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalIntersection/SecondAdamsTotalChern.lean#L475). The attribute's comment: “the c_i equation: c_i(ψ²(α)) = 2^i c_i(α) in A^i(X), for every α ∈ K_0(Vect(X)) and every X locally of finite type over S, with no further hypothesis: ψ² is AlgebraicGeometry.VectorBundleKZero.secondAdamsRingHom (Stacks 0FEJ) and c is the total Chern class map of Remark 0FEL, Stacks.Chow.totalChernKClass, constructed here for modules of arbitrary rank”.
+**`Stacks.Chow.totalChernKClass_secondAdams`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalIntersection/SecondAdamsTotalChern.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalIntersection/SecondAdamsTotalChern.lean#L475). The attribute's comment: “the c\_i equation: c\_i(ψ²(α)) = 2^i c\_i(α) in A^i(X), for every α ∈ K\_0(Vect(X)) and every X locally of finite type over S, with no further hypothesis: ψ² is AlgebraicGeometry.VectorBundleKZero.secondAdamsRingHom (Stacks 0FEJ) and c is the total Chern class map of Remark 0FEL, Stacks.Chow.totalChernKClass, constructed here for modules of arbitrary rank”.
 
 > **Stacks Project, Tag 0FEN, the first equation.** Let `(S, δ)` be as in Situation 42.7.1 and
 > let `X` be locally of finite type over `S`. For every `α ∈ K_0(Vect(X))` and every `i ≥ 0`,
@@ -560,7 +560,7 @@ theorem totalChernKClass_secondAdams (a : VectorBundleKZero X) (i : ℕ) :
 
 [Tag 0FEP](https://stacks.math.columbia.edu/tag/0FEP) in the Stacks Project.
 
-**`AlgebraicGeometry.supportedPerfectEulerHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/PerfectToSupportedCoherent.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/PerfectToSupportedCoherent.lean#L166). The attribute's comment: “the homomorphism K_0(D_{Z, perf}(O_X)) → K_0(Coh_Z(X)). Two departures from the source, both recorded in the module docstring: the value on a class is the alternating sum ∑_n (-1)^n [H^n(E)] rather than [⊕_n H^{2n}(E)] - [⊕_n H^{2n+1}(E)] (the same element of K_0, but the identification of the two expressions is NOT proved here), and X is assumed Noetherian regular, the hypotheses of Stacks 0FER, rather than merely locally Noetherian, because the global coherence and boundedness of the cohomology sheaves used here come from the converse half of Stacks 0FDC. The identification K_0(Coh_Z(X)) = K'_0(Z) is Stacks 0FDT and is NOT covered”.
+**`AlgebraicGeometry.supportedPerfectEulerHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/PerfectToSupportedCoherent.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/PerfectToSupportedCoherent.lean#L166). The attribute's comment: “the homomorphism K\_0(D\_\{Z, perf}(O\_X)) → K\_0(Coh\_Z(X)). Two departures from the source, both recorded in the module docstring: the value on a class is the alternating sum ∑\_n (-1)^n [H^n(E)] rather than [⊕\_n H^\{2n}(E)] - [⊕\_n H^\{2n+1}(E)] (the same element of K\_0, but the identification of the two expressions is NOT proved here), and X is assumed Noetherian regular, the hypotheses of Stacks 0FER, rather than merely locally Noetherian, because the global coherence and boundedness of the cohomology sheaves used here come from the converse half of Stacks 0FDC. The identification K\_0(Coh\_Z(X)) = K'\_0(Z) is Stacks 0FDT and is NOT covered”.
 
 > The homomorphism `K_0(D_{Z, perf}(𝒪_X)) → K_0(Coh_Z(X))`. Let `X` be a Noetherian regular
 > scheme and `Z ⊂ X` a closed subscheme. Taking the alternating sum of the cohomology sheaves of a
@@ -585,7 +585,7 @@ theorem supportedPerfectEulerHom_cls (E : supportedPerfectDerivedCategory i) :
         (supportedPerfectHomology i hX) E
 ```
 
-**`AlgebraicGeometry.SupportedCoherentModules`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherent.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherent.lean#L67). The attribute's comment: “supported_coherent”.
+**`AlgebraicGeometry.SupportedCoherentModules`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherent.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherent.lean#L67). The attribute's comment: “supported\_coherent”.
 
 > The full subcategory of coherent sheaves supported on `Z`.
 
@@ -594,7 +594,7 @@ abbrev SupportedCoherentModules {X Z : Scheme.{u}}
     (i : Z ⟶ X) [IsClosedImmersion i]
 ```
 
-**`AlgebraicGeometry.supportedCoherentIsSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherent.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherent.lean#L98). The attribute's comment: “supported_coherent”.
+**`AlgebraicGeometry.supportedCoherentIsSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherent.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherent.lean#L98). The attribute's comment: “supported\_coherent”.
 
 > Coherent sheaves supported on a closed subscheme form a Serre subcategory.
 
@@ -604,7 +604,7 @@ instance supportedCoherentIsSerreClass {X Z : Scheme.{u}}
     (supportedCoherentProperty i).IsSerreClass
 ```
 
-**`AlgebraicGeometry.supportedPerfectEulerHom'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherentPerfectKGroup.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherentPerfectKGroup.lean#L346). The attribute's comment: “the homomorphism K_0(D_{Z, perf}(O_X)) → K_0(Coh_Z(X)), with Coh_Z(X) spelled as a weak Serre subcategory of all O_X-modules. As for the nested spelling: the value on a class is the alternating sum ∑_n (-1)^n [H^n(E)] rather than the source's [⊕_n H^{2n}(E)] - [⊕_n H^{2n+1}(E)], the same element of K_0 but the identification of the two expressions is NOT proved; and X is Noetherian regular, the hypotheses of Stacks 0FER, rather than locally Noetherian. The identification K_0(Coh_Z(X)) = K'_0(Z) is Stacks 0FDT and is NOT covered”.
+**`AlgebraicGeometry.supportedPerfectEulerHom'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherentPerfectKGroup.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherentPerfectKGroup.lean#L346). The attribute's comment: “the homomorphism K\_0(D\_\{Z, perf}(O\_X)) → K\_0(Coh\_Z(X)), with Coh\_Z(X) spelled as a weak Serre subcategory of all O\_X-modules. As for the nested spelling: the value on a class is the alternating sum ∑\_n (-1)^n [H^n(E)] rather than the source's [⊕\_n H^\{2n}(E)] - [⊕\_n H^\{2n+1}(E)], the same element of K\_0 but the identification of the two expressions is NOT proved; and X is Noetherian regular, the hypotheses of Stacks 0FER, rather than locally Noetherian. The identification K\_0(Coh\_Z(X)) = K'\_0(Z) is Stacks 0FDT and is NOT covered”.
 
 > **The homomorphism `K_0(D_{Z, perf}(𝒪_X)) → K_0(Coh_Z(X))` of [Stacks, Tag 0FEP]**, in the
 > unnested spelling of `Coh_Z(X)`: the alternating sum of the classes of the cohomology sheaves of a
@@ -629,7 +629,7 @@ theorem supportedPerfectEulerHom'_cls (E : supportedPerfectDerivedCategory i) :
         (coherentSupportedProperty i).FullSubcategory (supportedPerfectHomology' i hX) E
 ```
 
-**`AlgebraicGeometry.supportedPerfectCohomologyHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectCohomologyHom.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectCohomologyHom.lean#L427). The attribute's comment: “the homomorphism K_0(D_{Z, perf}(O_X)) → K_0(Coh_Z(X)) for X locally Noetherian and Z ⊂ X a closed subscheme; its defining property is `supportedPerfectCohomologyHom_cls`”.
+**`AlgebraicGeometry.supportedPerfectCohomologyHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectCohomologyHom.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectCohomologyHom.lean#L427). The attribute's comment: “the homomorphism K\_0(D\_\{Z, perf}(O\_X)) → K\_0(Coh\_Z(X)) for X locally Noetherian and Z ⊂ X a closed subscheme; its defining property is `supportedPerfectCohomologyHom_cls`”.
 
 > **The homomorphism `K_0(D_{Z, perf}(𝒪_X)) → K_0(Coh_Z(X))` of [Stacks, Tag 0FEP].**
 > Let `X` be a locally Noetherian scheme and `Z ⊂ X` a closed subscheme. The rule
@@ -643,7 +643,7 @@ def supportedPerfectCohomologyHom :
       KZero (SupportedCoherentModules i)
 ```
 
-**`AlgebraicGeometry.supportedPerfectCohomologyHom_cls`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectCohomologyHom.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectCohomologyHom.lean#L445). The attribute's comment: “the defining property: [E] ↦ [⊕_{i ∈ ℤ} H^{2i}(E)] - [⊕_{i ∈ ℤ} H^{2i+1}(E)], the direct sums taken in Mod(O_X)”.
+**`AlgebraicGeometry.supportedPerfectCohomologyHom_cls`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectCohomologyHom.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectCohomologyHom.lean#L445). The attribute's comment: “the defining property: [E] ↦ [⊕\_\{i ∈ ℤ} H^\{2i}(E)] - [⊕\_\{i ∈ ℤ} H^\{2i+1}(E)], the direct sums taken in Mod(O\_X)”.
 
 > **The defining property of the homomorphism of [Stacks, Tag 0FEP].** The class of a perfect
 > complex `E` with cohomology sheaves supported on `Z` is sent to
@@ -656,7 +656,7 @@ theorem supportedPerfectCohomologyHom_cls (E : supportedPerfectDerivedCategory.{
       KZero.mk _ (evenHomologySupported i E) - KZero.mk _ (oddHomologySupported i E)
 ```
 
-**`AlgebraicGeometry.supportedPerfectCohomologyHomToCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectCohomologyHom.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectCohomologyHom.lean#L454). The attribute's comment: “the same homomorphism with target K'_0(Z) = K_0(Coh(Z)), through the identification K_0(Coh_Z(X)) = K'_0(Z) of Stacks 0FDT”.
+**`AlgebraicGeometry.supportedPerfectCohomologyHomToCoherent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectCohomologyHom.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectCohomologyHom.lean#L454). The attribute's comment: “the same homomorphism with target K'\_0(Z) = K\_0(Coh(Z)), through the identification K\_0(Coh\_Z(X)) = K'\_0(Z) of Stacks 0FDT”.
 
 > **The homomorphism of [Stacks, Tag 0FEP] with target `K'_0(Z) = K_0(Coh(𝒪_Z))`**, through
 > the identification `K_0(Coh(𝒪_Z)) ≅ K_0(Coh_Z(X))` of [Stacks, Tag 0FDT].
@@ -667,7 +667,7 @@ def supportedPerfectCohomologyHomToCoherent :
       KZero (Stacks.SheafOfModules.CoherentModules Z.ringCatSheaf)
 ```
 
-**`AlgebraicGeometry.supportedPerfect_isStrictlyFull_isTriangulated_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectCohomologyHom.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectCohomologyHom.lean#L504). The attribute's comment: “D_{Z, perf}(O_X) is a strictly full, saturated, triangulated subcategory of D(O_X): closed under isomorphisms, triangulated, stable under retracts, hence saturated”. References: SGA 6 I (5.8.4), “5.8.4 a), special case”.
+**`AlgebraicGeometry.supportedPerfect_isStrictlyFull_isTriangulated_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectCohomologyHom.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectCohomologyHom.lean#L504). The attribute's comment: “D\_\{Z, perf}(O\_X) is a strictly full, saturated, triangulated subcategory of D(O\_X): closed under isomorphisms, triangulated, stable under retracts, hence saturated”. References: SGA 6 I (5.8.4), “5.8.4 a), special case”.
 
 > **`D_{Z, perf}(𝒪_X)` is a strictly full, saturated, triangulated subcategory of
 > `D(𝒪_X)`.** The perfect complexes of `𝒪_X`-modules whose cohomology sheaves are set-theoretically
@@ -685,7 +685,7 @@ theorem supportedPerfect_isStrictlyFull_isTriangulated_isSaturated :
       P.IsSaturated
 ```
 
-**`Stacks.AlgebraicGeometry.PerfectCohomology.isCoherent_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentComplex/LocallyFiniteCohomology.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentComplex/LocallyFiniteCohomology.lean#L65). The attribute's comment: “locally_finite_cohomology”.
+**`Stacks.AlgebraicGeometry.PerfectCohomology.isCoherent_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentComplex/LocallyFiniteCohomology.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentComplex/LocallyFiniteCohomology.lean#L65). The attribute's comment: “locally\_finite\_cohomology”.
 
 > Every cohomology module of a perfect object on a locally Noetherian scheme is coherent.
 
@@ -699,7 +699,7 @@ theorem isCoherent_homology (X : Scheme.{u}) [IsLocallyNoetherian X]
         (StrictlyPerfect.OXMod.{u, u} X.toRingedSpace) n).obj K)
 ```
 
-**`Stacks.AlgebraicGeometry.PerfectCohomology.locally_finite_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentComplex/LocallyFiniteCohomology.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentComplex/LocallyFiniteCohomology.lean#L80). The attribute's comment: “locally_finite_cohomology”.
+**`Stacks.AlgebraicGeometry.PerfectCohomology.locally_finite_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentComplex/LocallyFiniteCohomology.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PseudoCoherentComplex/LocallyFiniteCohomology.lean#L80). The attribute's comment: “locally\_finite\_cohomology”.
 
 > Near every point only finitely many cohomology modules of a perfect object have nonempty
 > support.
@@ -717,7 +717,7 @@ theorem locally_finite_homology (X : Scheme.{u})
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.supportedPerfectDerivedCategory`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean#L62), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectComplexes.lean, line 30](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectComplexes.lean#L30) (StacksFrontier): “supported_perfect_complexes”.
+- [`AlgebraicGeometry.supportedPerfectDerivedCategory`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/KGroups/Basic.lean#L62), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectComplexes.lean, line 30](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectComplexes.lean#L30) (StacksFrontier): “supported\_perfect\_complexes”.
 
 ## Tag 0FEQ, a remark
 
@@ -807,7 +807,7 @@ theorem coherentToSupportedPerfectHom_mutuallyInverse :
         AddMonoidHom.id _
 ```
 
-**`AlgebraicGeometry.coherentKZeroEquivSupportedPerfectKZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/CoherentSupportedPerfectKGroupIso.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/CoherentSupportedPerfectKGroupIso.lean#L255). The attribute's comment: “the resulting identification K'_0(Z) = K_0(D_{Z, perf}(O_X))”.
+**`AlgebraicGeometry.coherentKZeroEquivSupportedPerfectKZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/CoherentSupportedPerfectKGroupIso.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/CoherentSupportedPerfectKGroupIso.lean#L255). The attribute's comment: “the resulting identification K'\_0(Z) = K\_0(D\_\{Z, perf}(O\_X))”.
 
 > **Stacks Project, Tag 0FER**, as an isomorphism: `K'_0(Z) ≃+ K_0(D_{Z, perf}(𝒪_X))` for a
 > closed subscheme `Z` of a Noetherian regular scheme `X`, given by the mutually inverse
@@ -819,7 +819,7 @@ def coherentKZeroEquivSupportedPerfectKZero :
       Pretriangulated.K0 (supportedPerfectDerivedCategory i)
 ```
 
-**`AlgebraicGeometry.supportedPerfectEulerHom_comp_coherentToSupportedPerfectHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/PerfectToSupportedCoherent.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/PerfectToSupportedCoherent.lean#L210). The attribute's comment: “the round trip K_0(Coh(Z)) → K_0(D_{Z, perf}(O_X)) → K_0(Coh_Z(X)) is the comparison homomorphism of Stacks 0FDT, which is step (1) of the source's proof ('the composite is the identity'), stated without the 0FDT identification because that identification is not available. What is NOT covered: step (2), surjectivity of K_0(Coh(Z)) → K_0(D_{Z, perf}(O_X)), which the source gets from the truncation triangles together with the finite filtration of a coherent module supported on Z by O_Z-modules; and therefore NOT the conclusion that the two maps are mutually inverse”.
+**`AlgebraicGeometry.supportedPerfectEulerHom_comp_coherentToSupportedPerfectHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/PerfectToSupportedCoherent.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/PerfectToSupportedCoherent.lean#L210). The attribute's comment: “the round trip K\_0(Coh(Z)) → K\_0(D\_\{Z, perf}(O\_X)) → K\_0(Coh\_Z(X)) is the comparison homomorphism of Stacks 0FDT, which is step (1) of the source's proof ('the composite is the identity'), stated without the 0FDT identification because that identification is not available. What is NOT covered: step (2), surjectivity of K\_0(Coh(Z)) → K\_0(D\_\{Z, perf}(O\_X)), which the source gets from the truncation triangles together with the finite filtration of a coherent module supported on Z by O\_Z-modules; and therefore NOT the conclusion that the two maps are mutually inverse”.
 
 > Let `X` be a Noetherian regular scheme and `Z ⊂ X` a closed subscheme. The composite of
 > `coherentToSupportedPerfectHom : K_0(Coh(𝒪_Z)) → K_0(D_{Z, perf}(𝒪_X))` with
@@ -833,7 +833,7 @@ theorem supportedPerfectEulerHom_comp_coherentToSupportedPerfectHom :
       coherentToSupportedCoherentKZeroHom i
 ```
 
-**`AlgebraicGeometry.supportedPerfectEulerHom'_comp_supportedCoherentToPerfectHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherentPerfectKGroup.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherentPerfectKGroup.lean#L383). The attribute's comment: “the identity K_0(Coh_Z(X)) → K_0(D_{Z, perf}(O_X)) → K_0(Coh_Z(X)); the identification K_0(Coh_Z(X)) = K'_0(Z) of Stacks 0FDT, under which this is the source's statement about K_0(Coh(Z)), is NOT covered”.
+**`AlgebraicGeometry.supportedPerfectEulerHom'_comp_supportedCoherentToPerfectHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherentPerfectKGroup.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherentPerfectKGroup.lean#L383). The attribute's comment: “the identity K\_0(Coh\_Z(X)) → K\_0(D\_\{Z, perf}(O\_X)) → K\_0(Coh\_Z(X)); the identification K\_0(Coh\_Z(X)) = K'\_0(Z) of Stacks 0FDT, under which this is the source's statement about K\_0(Coh(Z)), is NOT covered”.
 
 > **The first of the two inverse identities of [Stacks, Tag 0FER].** Taking the alternating sum
 > of the cohomology sheaves of a coherent module supported on `Z`, placed in degree zero, returns the
@@ -845,7 +845,7 @@ theorem supportedPerfectEulerHom'_comp_supportedCoherentToPerfectHom :
       AddMonoidHom.id (KZero (coherentSupportedProperty i).FullSubcategory)
 ```
 
-**`AlgebraicGeometry.supportedCoherentToPerfectHom_comp_supportedPerfectEulerHom'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherentPerfectKGroup.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherentPerfectKGroup.lean#L425). The attribute's comment: “the identity K_0(D_{Z, perf}(O_X)) → K_0(Coh_Z(X)) → K_0(D_{Z, perf}(O_X)); with supportedPerfectEulerHom'_comp_supportedCoherentToPerfectHom this is the source's 'mutually inverse', EXCEPT that the source's left hand side is K'_0(Z) = K_0(Coh(Z)) and here it is K_0(Coh_Z(X)); the identification of the two is Stacks 0FDT and is NOT covered”.
+**`AlgebraicGeometry.supportedCoherentToPerfectHom_comp_supportedPerfectEulerHom'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherentPerfectKGroup.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedCoherentPerfectKGroup.lean#L425). The attribute's comment: “the identity K\_0(D\_\{Z, perf}(O\_X)) → K\_0(Coh\_Z(X)) → K\_0(D\_\{Z, perf}(O\_X)); with supportedPerfectEulerHom'\_comp\_supportedCoherentToPerfectHom this is the source's 'mutually inverse', EXCEPT that the source's left hand side is K'\_0(Z) = K\_0(Coh(Z)) and here it is K\_0(Coh\_Z(X)); the identification of the two is Stacks 0FDT and is NOT covered”.
 
 > **The two homomorphisms of [Stacks, Tag 0FEP] and [Stacks, Tag 0FEQ] are mutually inverse**, so
 > `K_0(Coh_Z(X)) = K_0(D_{Z, perf}(𝒪_X))`: the alternating sum of cohomology sheaves and the
@@ -922,7 +922,7 @@ def localizedChernCharKMap :
         (p : ℤ))
 ```
 
-**`Stacks.Chow.localizedChernCharKMap_cls`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedChernCharacterKMap.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedChernCharacterKMap.lean#L236). The attribute's comment: “localized_chern_character_k_map: the generator [E] is sent to ch(Z → X, E), and the map is the additive extension”.
+**`Stacks.Chow.localizedChernCharKMap_cls`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedChernCharacterKMap.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedChernCharacterKMap.lean#L236). The attribute's comment: “localized\_chern\_character\_k\_map: the generator [E] is sent to ch(Z → X, E), and the map is the additive extension”.
 
 > The localized Chern character map on a class: `[E] ↦ ch(Z ⟶ X, E)`.
 
@@ -931,7 +931,7 @@ theorem localizedChernCharKMap_cls (E : supportedPerfectDerivedCategory i) :
     localizedChernCharKMap C a hX (K0.cls E) = supportedLocalizedChernChar C a hX E
 ```
 
-**`Stacks.Chow.exists_localizedChernCharKMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedChernCharacterKMap.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedChernCharacterKMap.lean#L329). The attribute's comment: “localized_chern_character_k_finite_support: for X quasi-compact the image lies in A^*(Z → X) ⊗ Q, every value having finitely many nonzero components”.
+**`Stacks.Chow.exists_localizedChernCharKMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedChernCharacterKMap.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedChernCharacterKMap.lean#L329). The attribute's comment: “localized\_chern\_character\_k\_finite\_support: for X quasi-compact the image lies in A^*(Z → X) ⊗ Q, every value having finitely many nonzero components”.
 
 > If `X` is quasi-compact, the localized Chern character map takes values in `A^*(Z ⟶ X) ⊗ 𝐐`:
 > every value has only finitely many nonzero components.
@@ -941,7 +941,7 @@ theorem exists_localizedChernCharKMap_eq_zero (x : K0 (supportedPerfectDerivedCa
     ∃ N, ∀ p ≥ N, localizedChernCharKMap C a hX x p = 0
 ```
 
-**`Stacks.Chow.localizedChernCharKMap_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedChernCharacterRing.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedChernCharacterRing.lean#L249). The attribute's comment: “localized_chern_character_k_multiplicative: ch(Z → X, αβ) = ch(Z → X, α) ch(Z → X, β), the product on K_0(D_{Z,perf}(O_X)) being derived tensor product (0FDN) and that on ∏ A^p(Z → X) ⊗ Q the Cauchy product of the products res(c) ∘ c' of 0FA0”.
+**`Stacks.Chow.localizedChernCharKMap_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedChernCharacterRing.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedChernCharacterRing.lean#L249). The attribute's comment: “localized\_chern\_character\_k\_multiplicative: ch(Z → X, αβ) = ch(Z → X, α) ch(Z → X, β), the product on K\_0(D\_\{Z,perf}(O\_X)) being derived tensor product (0FDN) and that on ∏ A^p(Z → X) ⊗ Q the Cauchy product of the products res(c) ∘ c' of 0FA0”.
 
 > **The localized Chern character map is multiplicative.** For `X` with quasi-compact
 > irreducible components and `α, β ∈ K₀(D_{Z,perf}(𝒪_X))`, multiplied by the derived tensor product
@@ -962,7 +962,7 @@ theorem localizedChernCharKMap_mul (x y : K0 (supportedPerfectDerivedCategory i)
 
 [Tag 0FEU](https://stacks.math.columbia.edu/tag/0FEU) in the Stacks Project.
 
-**`AlgebraicGeometry.supportedPerfectDerivedCategory_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectWholeScheme.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectWholeScheme.lean#L100). The attribute's comment: “supported_perfect”.
+**`AlgebraicGeometry.supportedPerfectDerivedCategory_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectWholeScheme.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectWholeScheme.lean#L100). The attribute's comment: “supported\_perfect”.
 
 > **Stacks 0FEU.** Perfect objects of the derived category supported on the whole scheme are
 > exactly the perfect objects: `D_{X, perf}(O_X) = D_perf(O_X)`.
@@ -972,7 +972,7 @@ theorem supportedPerfectDerivedCategory_id (X : Scheme.{u}) :
     supportedPerfectDerivedCategory (𝟙 X) = PerfectDerivedCategory X
 ```
 
-**`AlgebraicGeometry.supportedPerfectKZeroEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectWholeScheme.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectWholeScheme.lean#L111). The attribute's comment: “k_group”.
+**`AlgebraicGeometry.supportedPerfectKZeroEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectWholeScheme.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectWholeScheme.lean#L111). The attribute's comment: “k\_group”.
 
 > **Stacks 0FEU.** The `K`-group of perfect complexes supported on the whole scheme is the
 > Grothendieck group `K_0(X) = K_0(D_perf(O_X))` of the scheme.
@@ -983,7 +983,7 @@ noncomputable def supportedPerfectKZeroEquiv (X : Scheme.{u}) :
       Pretriangulated.K0 (PerfectDerivedCategory X)
 ```
 
-**`AlgebraicGeometry.supportedPerfectKZeroEquiv_cls`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectWholeScheme.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectWholeScheme.lean#L163). The attribute's comment: “k_group”.
+**`AlgebraicGeometry.supportedPerfectKZeroEquiv_cls`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectWholeScheme.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/SupportedPerfectWholeScheme.lean#L163). The attribute's comment: “k\_group”.
 
 > **Stacks 0FEU.** The identification of `K`-groups takes the class of a perfect complex
 > supported on the whole scheme to the class of the same complex in `K_0(D_perf(O_X))`.
@@ -995,7 +995,7 @@ theorem supportedPerfectKZeroEquiv_cls (X : Scheme.{u})
       Pretriangulated.K0.cls (⟨K.obj, K.property.1⟩ : PerfectDerivedCategory X)
 ```
 
-**`Stacks.Chow.perfectKZeroChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/WholeSchemeChernMaps.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/WholeSchemeChernMaps.lean#L417). The attribute's comment: “the map c : K_0(X) -> prod A^i(X), [E] |-> c(E) extended multiplicatively, built directly from Definition 0F9E and Lemma 0F9F as the remark allows; X has quasi-compact irreducible components”.
+**`Stacks.Chow.perfectKZeroChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/WholeSchemeChernMaps.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/WholeSchemeChernMaps.lean#L417). The attribute's comment: “the map c : K\_0(X) -> prod A^i(X), [E] |-> c(E) extended multiplicatively, built directly from Definition 0F9E and Lemma 0F9F as the remark allows; X has quasi-compact irreducible components”.
 
 > **Stacks 0FEU, the Chern class map `c : K_0(X) ⟶ ∏_{i ≥ 0} A^i(X)`**, sending `[E]` to the
 > total Chern class `c(E)` of Stacks 0F9E and sums to products.
@@ -1004,7 +1004,7 @@ theorem supportedPerfectKZeroEquiv_cls (X : Scheme.{u})
 def perfectKZeroChernClass (α : K0 (PerfectDerivedCategory X)) : TotalChowClass C sX
 ```
 
-**`Stacks.Chow.perfectKZeroChernCharacter`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/WholeSchemeChernMaps.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/WholeSchemeChernMaps.lean#L440). The attribute's comment: “the map ch : K_0(X) -> prod A^i(X) tensor Q, [E] |-> ch(E) extended additively, built directly from Definition 0F9E and Lemma 0F9F as the remark allows”.
+**`Stacks.Chow.perfectKZeroChernCharacter`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/WholeSchemeChernMaps.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/WholeSchemeChernMaps.lean#L440). The attribute's comment: “the map ch : K\_0(X) -> prod A^i(X) tensor Q, [E] |-> ch(E) extended additively, built directly from Definition 0F9E and Lemma 0F9F as the remark allows”.
 
 > **Stacks 0FEU, the Chern character `ch : K_0(X) ⟶ ∏_{i ≥ 0} A^i(X) ⊗ 𝐐`**, additive and
 > sending `[E]` to `ch(E)`; well defined by Stacks 0F9F.
@@ -1014,7 +1014,7 @@ def perfectKZeroChernCharacter :
     K0 (PerfectDerivedCategory X) →+ fullRationalChowCohomology C (gysinSystemOfInvertible C) sX
 ```
 
-**`Stacks.Chow.perfectKZero_chernMaps_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/WholeSchemeChernMaps.lean, line 488](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/WholeSchemeChernMaps.lean#L488). The attribute's comment: “the whole remark: D_{X,perf} = D_perf, K_0(D_{X,perf}) = K_0(X), the maps c and ch on K_0(X), and the commutativity of both triangles with K_0(Vect(X)) -> K_0(X)”.
+**`Stacks.Chow.perfectKZero_chernMaps_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/WholeSchemeChernMaps.lean, line 488](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/AdamsOperator/WholeSchemeChernMaps.lean#L488). The attribute's comment: “the whole remark: D\_\{X,perf} = D\_perf, K\_0(D\_\{X,perf}) = K\_0(X), the maps c and ch on K\_0(X), and the commutativity of both triangles with K\_0(Vect(X)) -> K\_0(X)”.
 
 > **Stacks 0FEU.** Let `X` be locally of finite type over the base of chapter 42, with
 > quasi-compact irreducible components (e.g. `X` quasi-compact). Then

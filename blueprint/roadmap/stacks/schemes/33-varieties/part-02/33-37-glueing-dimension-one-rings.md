@@ -88,7 +88,7 @@ public theorem not_surjective_tensorProduct_iff_exists_isDiscreteValuationRing
 
 [Tag 09N1](https://stacks.math.columbia.edu/tag/09N1) in the Stacks Project.
 
-**`Ring.SemilocalDVRGluingSituation.exists_maximalIdeal_localization_le_of_units_mem_inf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean#L284). The attribute's comment: “all_units_in_r”.
+**`Ring.SemilocalDVRGluingSituation.exists_maximalIdeal_localization_le_of_units_mem_inf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean#L284). The attribute's comment: “all\_units\_in\_r”.
 
 > If every unit of `A` belongs to `A ∩ B`, then the DVR `B` dominates the
 > localization of `A` at some maximal ideal.
@@ -101,7 +101,7 @@ theorem exists_maximalIdeal_localization_le_of_units_mem_inf
         ({ toSubring := S.B } : LocalSubring S.K)
 ```
 
-**`Ring.SemilocalDVRGluingSituation.not_surjective_tensorProduct_of_units_mem_inf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean#L312). The attribute's comment: “all_units_in_r”.
+**`Ring.SemilocalDVRGluingSituation.not_surjective_tensorProduct_of_units_mem_inf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean#L312). The attribute's comment: “all\_units\_in\_r”.
 
 > If every unit of `A` belongs to `A ∩ B`, then the canonical
 > multiplication map `A ⊗[ℤ] B → K` is not surjective.
@@ -114,7 +114,7 @@ theorem not_surjective_tensorProduct_of_units_mem_inf
         S.B.subtype.toIntAlgHom (fun _ _ ↦ Commute.all _ _))
 ```
 
-**`Ring.SemilocalDVRGluingSituation.isOpenImmersion_specMap_R_A_of_unit_not_mem_R`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean#L530). The attribute's comment: “unit_outside_r”.
+**`Ring.SemilocalDVRGluingSituation.isOpenImmersion_specMap_R_A_of_unit_not_mem_R`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean#L530). The attribute's comment: “unit\_outside\_r”.
 
 > If a unit of `A` lies outside `R`, the map from `Spec A` to `Spec R` is an open
 > immersion.
@@ -127,7 +127,7 @@ public theorem isOpenImmersion_specMap_R_A_of_unit_not_mem_R
         (CommRingCat.ofHom ((S.A ⊓ S.B : Subring S.K).inclusion inf_le_left)).op)
 ```
 
-**`Ring.SemilocalDVRGluingSituation.isOpenImmersion_specMap_R_B_of_unit_not_mem_R`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean#L544). The attribute's comment: “unit_outside_r”.
+**`Ring.SemilocalDVRGluingSituation.isOpenImmersion_specMap_R_B_of_unit_not_mem_R`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean#L544). The attribute's comment: “unit\_outside\_r”.
 
 > If a unit of `A` lies outside `R`, the map from `Spec B` to `Spec R` is an open
 > immersion.
@@ -140,7 +140,7 @@ public theorem isOpenImmersion_specMap_R_B_of_unit_not_mem_R
         (CommRingCat.ofHom ((S.A ⊓ S.B : Subring S.K).inclusion inf_le_right)).op)
 ```
 
-**`Ring.SemilocalDVRGluingSituation.range_specMap_R_A_union_R_B_of_unit_not_mem_R`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean#L559). The attribute's comment: “unit_outside_r”.
+**`Ring.SemilocalDVRGluingSituation.range_specMap_R_A_union_R_B_of_unit_not_mem_R`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean#L559). The attribute's comment: “unit\_outside\_r”.
 
 > If a unit of `A` lies outside `R`, the images of `Spec A` and `Spec B` cover `Spec R`.
 
@@ -156,7 +156,7 @@ public theorem range_specMap_R_A_union_R_B_of_unit_not_mem_R
       Set.univ
 ```
 
-**`Ring.SemilocalDVRGluingSituation.tensorProductTo_bijective_of_unit_not_mem_R`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean, line 601](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean#L601). The attribute's comment: “unit_outside_r”.
+**`Ring.SemilocalDVRGluingSituation.tensorProductTo_bijective_of_unit_not_mem_R`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean, line 601](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DimensionOne/GlueDVR.lean#L601). The attribute's comment: “unit\_outside\_r”.
 
 > If a unit of `A` lies outside `R`, multiplication identifies `A ⊗[R] B` with the
 > common fraction field.

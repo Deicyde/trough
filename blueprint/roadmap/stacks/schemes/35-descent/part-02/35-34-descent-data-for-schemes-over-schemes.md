@@ -38,7 +38,7 @@ abbrev Hom (D E : DescentDatum f)
 
 [Tag 02VP](https://stacks.math.columbia.edu/tag/02VP) in the Stacks Project.
 
-**`AlgebraicGeometry.DescentData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/DescentData.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Scheme/DescentData.lean#L149). The attribute's comment: “remark reading the gluing isomorphism as pr_0^*V → pr_1^*V over X ×_S X”. References: SGA 3 IV (2.1), “descent datum”.
+**`AlgebraicGeometry.DescentData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/DescentData.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Scheme/DescentData.lean#L149). The attribute's comment: “remark reading the gluing isomorphism as pr\_0^*V → pr\_1^*V over X ×\_S X”. References: SGA 3 IV (2.1), “descent datum”.
 
 > Descent data for schemes relative to a family of morphisms with common target.
 
@@ -167,7 +167,7 @@ public noncomputable def pullbackCompatibility
     (F : MorphismOfSchemeFamilies.{u}) : PullbackCompatibility F
 ```
 
-**`AlgebraicGeometry.MorphismOfSchemeFamilies.pullbackFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/PullbackFunctor.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Scheme/PullbackFunctor.lean#L120). The attribute's comment: “pullback_functor”.
+**`AlgebraicGeometry.MorphismOfSchemeFamilies.pullbackFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/PullbackFunctor.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Scheme/PullbackFunctor.lean#L120). The attribute's comment: “pullback\_functor”.
 
 > The pullback of descent data along a morphism of families is functorial.
 
@@ -176,7 +176,7 @@ public noncomputable def pullbackFunctor (F : MorphismOfSchemeFamilies.{u}) :
     PullbackFunctor F
 ```
 
-**`AlgebraicGeometry.MorphismOfSchemeFamilies.pulledBackDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/PulledBackDatum.lean, line 1061](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Scheme/PulledBackDatum.lean#L1061). The attribute's comment: “pulled_back_datum”.
+**`AlgebraicGeometry.MorphismOfSchemeFamilies.pulledBackDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/PulledBackDatum.lean, line 1061](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Scheme/PulledBackDatum.lean#L1061). The attribute's comment: “pulled\_back\_datum”.
 
 > Pull a descent datum back componentwise along a morphism of families.  If the morphism has
 > index map `α` and component maps `gᵢ`, its objects are `gᵢ * Y_(α i)` and its gluing
@@ -188,7 +188,7 @@ noncomputable def pulledBackDatum (F : MorphismOfSchemeFamilies.{u})
     DescentData F.sourceFamily.f
 ```
 
-**`AlgebraicGeometry.MorphismOfSchemeFamilies.pulledBackDatum_obj`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/PulledBackDatum.lean, line 1089](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Scheme/PulledBackDatum.lean#L1089). The attribute's comment: “pulled_back_datum”.
+**`AlgebraicGeometry.MorphismOfSchemeFamilies.pulledBackDatum_obj`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/PulledBackDatum.lean, line 1089](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Scheme/PulledBackDatum.lean#L1089). The attribute's comment: “pulled\_back\_datum”.
 
 > The component of the pulled-back datum at `i` is the pullback of the component at
 > `F.familyHom.s₀ i`.
@@ -200,7 +200,7 @@ lemma pulledBackDatum_obj (F : MorphismOfSchemeFamilies.{u})
       (Over.pullback (F.familyHom.h₀ i)).obj (D.obj (F.familyHom.s₀ i))
 ```
 
-**`AlgebraicGeometry.MorphismOfSchemeFamilies.pulledBackDatum_gluing`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/PulledBackDatum.lean, line 1151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Scheme/PulledBackDatum.lean#L1151). The attribute's comment: “pulled_back_datum”.
+**`AlgebraicGeometry.MorphismOfSchemeFamilies.pulledBackDatum_gluing`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Scheme/PulledBackDatum.lean, line 1151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Scheme/PulledBackDatum.lean#L1151). The attribute's comment: “pulled\_back\_datum”.
 
 > On each pair of indices, the gluing isomorphism of the pulled-back datum is the
 > pullback of the original gluing isomorphism along the two component morphisms.
@@ -260,7 +260,7 @@ abbrev IsEffective
 
 [Tag 02VU](https://stacks.math.columbia.edu/tag/02VU) in the Stacks Project.
 
-**`AlgebraicGeometry.DescentData.canonicalFamilyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/CanonicalFamilyDatum.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/CanonicalFamilyDatum.lean#L127). The attribute's comment: “(1) canonical descent datum on the family X i ×_S U”.
+**`AlgebraicGeometry.DescentData.canonicalFamilyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/CanonicalFamilyDatum.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/CanonicalFamilyDatum.lean#L127). The attribute's comment: “(1) canonical descent datum on the family X i ×\_S U”.
 
 > **The canonical descent datum relative to a family.** The functor sending a scheme `U` over
 > `S` to the descent datum relative to `{X i ⟶ S}` whose member over `X i` is the base change of

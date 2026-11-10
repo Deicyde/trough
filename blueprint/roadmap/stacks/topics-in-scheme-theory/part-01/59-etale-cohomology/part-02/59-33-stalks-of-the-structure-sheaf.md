@@ -199,7 +199,7 @@ public abbrev henselizationRing (S : Scheme.{u}) (x : S) : Type u
 public abbrev henselization (S : Scheme.{u}) (x : S) : Scheme.{u}
 ```
 
-**`AlgebraicGeometry.strictHenselization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/StrictHenselization.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/StrictHenselization.lean#L166). The attribute's comment: “part (3)”. References: SGA 2 XIV (1.1); SGA 4 VIII (4.3); SGA 4 VIII (7.1), “partial”; SGA 4½ Arcata (2.3.3), “Ỹ = Spec(O_{Y”; SGA 4½ Arcata (5.1.1); SGA 4½ Th finitude (2.11); SGA 7 I (0.0.4); SGA 7 XIII (2.1.3), “The scheme X_(x̄)”; SGA 7 XVI (1.6), “S_(s̄) only”.
+**`AlgebraicGeometry.strictHenselization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/StrictHenselization.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/StrictHenselization.lean#L166). The attribute's comment: “part (3)”. References: SGA 2 XIV (1.1); SGA 4 VIII (4.3); SGA 4 VIII (7.1), “partial”; SGA 4½ Arcata (2.3.3), “Ỹ = Spec(O\_\{Y”; SGA 4½ Arcata (5.1.1); SGA 4½ Th finitude (2.11); SGA 7 I (0.0.4); SGA 7 XIII (2.1.3), “The scheme X\_(x̄)”; SGA 7 XVI (1.6), “S\_(s̄) only”.
 
 > The strict henselization of a scheme at a geometric point: the spectrum of the étale local
 > ring there.

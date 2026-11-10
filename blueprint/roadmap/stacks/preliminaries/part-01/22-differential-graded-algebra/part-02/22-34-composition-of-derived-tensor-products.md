@@ -30,7 +30,7 @@ def derivedTensorFunctorCounit (N : Bimodule A B) :
 
 [Tag 0BZ3](https://stacks.math.columbia.edu/tag/0BZ3) in the Stacks Project.
 
-**`DifferentialGraded.Bimodule.compTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleComposition.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleComposition.lean#L362). The attribute's comment: “the composite bimodule N'' = N (x)_B N' as an (A, C)-bimodule”.
+**`DifferentialGraded.Bimodule.compTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleComposition.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleComposition.lean#L362). The attribute's comment: “the composite bimodule N'' = N (x)\_B N' as an (A, C)-bimodule”.
 
 > **Stacks Tag 0BZ3.** The composite of a differential graded `(A, B)`-bimodule `N` with a
 > differential graded `(B, C)`-bimodule `N'`: the relative tensor product `N ⊗_B N'` of the right

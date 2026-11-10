@@ -199,7 +199,7 @@ theorem isAffineHom_of_isClosedImmersion
 
 [Tag 081V](https://stacks.math.columbia.edu/tag/081V) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.affineOverBaseChangeAlgebraHom_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineOverBaseChangeAlgebraNaturality.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineOverBaseChangeAlgebraNaturality.lean#L482). The attribute's comment: “naturality in Z of the base-change comparison g^*(f_* 𝒪_Z) ⟶ f'_* 𝒪_{Y ×_X Z}”.
+**`AlgebraicGeometry.Space.affineOverBaseChangeAlgebraHom_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineOverBaseChangeAlgebraNaturality.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineOverBaseChangeAlgebraNaturality.lean#L482). The attribute's comment: “naturality in Z of the base-change comparison g^*(f\_* 𝒪\_Z) ⟶ f'\_* 𝒪\_\{Y ×\_X Z}”.
 
 > **The base-change comparison of `𝒪_Y`-algebras is natural in the algebraic space affine over
 > `X`.**  For a morphism `φ : Z₁ ⟶ Z₂` of algebraic spaces affine over `X`, the square
@@ -222,7 +222,7 @@ theorem affineOverBaseChangeAlgebraHom_naturality (g : Y ⟶ X) {Z₁ Z₂ : Aff
         pushforwardAlgebraMap B S hS (affineOverBaseChangeMap B S hS g φ).hom
 ```
 
-**`AlgebraicGeometry.Space.affineOverBaseChangeMap_comp_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineOverBaseChangeFunctor.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineOverBaseChangeFunctor.lean#L149). The attribute's comment: “naturality of the projections of the geometric base change Y ×_X Z ⟶ Z in Z; the anti-equivalence of the tag and its compatibility with base change are not proved”.
+**`AlgebraicGeometry.Space.affineOverBaseChangeMap_comp_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineOverBaseChangeFunctor.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineOverBaseChangeFunctor.lean#L149). The attribute's comment: “naturality of the projections of the geometric base change Y ×\_X Z ⟶ Z in Z; the anti-equivalence of the tag and its compatibility with base change are not proved”.
 
 > **The projections of the geometric base change are natural in the affine algebraic space
 > being base-changed.**
@@ -256,7 +256,7 @@ def affineOverBaseChangeFunctor (g : Y ⟶ X) :
     AffineOver B S hS X ⥤ AffineOver B S hS Y
 ```
 
-**`AlgebraicGeometry.Space.faithful_affinePushforwardAlgebraFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffinePushforwardAlgebraFunctorFullyFaithful.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffinePushforwardAlgebraFunctorFullyFaithful.lean#L56). The attribute's comment: “faithfulness of the direct image functor f ↦ f_* 𝒪_Y from the algebraic spaces affine over X; the corrected anti-equivalence and the base-change compatibility as a whole are affineAlgebraAntiEquivalence_bounded”.
+**`AlgebraicGeometry.Space.faithful_affinePushforwardAlgebraFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffinePushforwardAlgebraFunctorFullyFaithful.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffinePushforwardAlgebraFunctorFullyFaithful.lean#L56). The attribute's comment: “faithfulness of the direct image functor f ↦ f\_* 𝒪\_Y from the algebraic spaces affine over X; the corrected anti-equivalence and the base-change compatibility as a whole are affineAlgebraAntiEquivalence\_bounded”.
 
 > **The direct-image functor `f ↦ f_* 𝒪_Y` of Stacks 081V is faithful.**
 >
@@ -276,7 +276,7 @@ theorem faithful_affinePushforwardAlgebraFunctor (X : AlgebraicSpaces B S hS) :
     (quasicoherentPushforwardAlgebraFunctor B S hS X).Faithful
 ```
 
-**`AlgebraicGeometry.Space.full_affinePushforwardAlgebraFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffinePushforwardAlgebraFunctorFullyFaithful.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffinePushforwardAlgebraFunctorFullyFaithful.lean#L77). The attribute's comment: “fullness of the direct image functor f ↦ f_* 𝒪_Y from the algebraic spaces affine over X; the corrected anti-equivalence and the base-change compatibility as a whole are affineAlgebraAntiEquivalence_bounded”.
+**`AlgebraicGeometry.Space.full_affinePushforwardAlgebraFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffinePushforwardAlgebraFunctorFullyFaithful.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffinePushforwardAlgebraFunctorFullyFaithful.lean#L77). The attribute's comment: “fullness of the direct image functor f ↦ f\_* 𝒪\_Y from the algebraic spaces affine over X; the corrected anti-equivalence and the base-change compatibility as a whole are affineAlgebraAntiEquivalence\_bounded”.
 
 > **The direct-image functor `f ↦ f_* 𝒪_Y` of Stacks 081V is full.**
 >
@@ -297,7 +297,7 @@ theorem full_affinePushforwardAlgebraFunctor (X : AlgebraicSpaces B S hS) :
     (quasicoherentPushforwardAlgebraFunctor B S hS X).Full
 ```
 
-**`AlgebraicGeometry.Space.algebraPullback_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlgebraPullbackQuasicoherent.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlgebraPullbackQuasicoherent.lean#L166). The attribute's comment: “the algebraPullback_isQuasicoherent clause”.
+**`AlgebraicGeometry.Space.algebraPullback_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AlgebraPullbackQuasicoherent.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AlgebraPullbackQuasicoherent.lean#L166). The attribute's comment: “the algebraPullback\_isQuasicoherent clause”.
 
 > **The pullback of a quasi-coherent algebra sheaf along a morphism of algebraic spaces is
 > quasi-coherent.**
@@ -312,7 +312,7 @@ theorem algebraPullback_isQuasicoherent (g : Y ⟶ X)
     ((algebraPullback B S hS g).obj A).IsQuasicoherent
 ```
 
-**`AlgebraicGeometry.Space.boundedPushforwardAlgebraFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BoundedAffineAlgebraAntiEquivalence.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BoundedAffineAlgebraAntiEquivalence.lean#L176). The attribute's comment: “the direct image functor f ↦ f_* 𝒪_Y from the algebraic spaces affine over X, in the corrected form with the target restricted to the quasi-coherent 𝒪_X-algebras whose sections at every étale chart of X number fewer than the big fppf site's cutoff — the bound the direct image of an affine morphism satisfies by construction, and which the tag's unrestricted target fails (not_essSurj_affinePushforwardAlgebraFunctor_of_cutoff_le_mk_sections). This registration is the functor itself; its faithfulness, fullness and essential surjectivity are faithful_affinePushforwardAlgebraFunctor, full_affinePushforwardAlgebraFunctor and essSurj_boundedPushforwardAlgebraFunctor (via boundedRelativeSpec, Stacks 081W), and the base-change compatibility is the subject of the other 081V registrations”. References: SGA 3 III (0.1.7), “more general”.
+**`AlgebraicGeometry.Space.boundedPushforwardAlgebraFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BoundedAffineAlgebraAntiEquivalence.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BoundedAffineAlgebraAntiEquivalence.lean#L176). The attribute's comment: “the direct image functor f ↦ f\_* 𝒪\_Y from the algebraic spaces affine over X, in the corrected form with the target restricted to the quasi-coherent 𝒪\_X-algebras whose sections at every étale chart of X number fewer than the big fppf site's cutoff — the bound the direct image of an affine morphism satisfies by construction, and which the tag's unrestricted target fails (not\_essSurj\_affinePushforwardAlgebraFunctor\_of\_cutoff\_le\_mk\_sections). This registration is the functor itself; its faithfulness, fullness and essential surjectivity are faithful\_affinePushforwardAlgebraFunctor, full\_affinePushforwardAlgebraFunctor and essSurj\_boundedPushforwardAlgebraFunctor (via boundedRelativeSpec, Stacks 081W), and the base-change compatibility is the subject of the other 081V registrations”. References: SGA 3 III (0.1.7), “more general”.
 
 > The contravariant functor `f ↦ f_* 𝒪_Y` from the algebraic spaces affine over `X` to the
 > quasi-coherent sheaves of commutative `𝒪_X`-algebras *whose sections at every étale chart of `X`
@@ -323,7 +323,7 @@ def boundedPushforwardAlgebraFunctor (X : AlgebraicSpaces B S hS) :
     (AffineOver B S hS X)ᵒᵖ ⥤ BoundedQuasicoherentAlgebra B S hS X
 ```
 
-**`AlgebraicGeometry.Space.affineAlgebraAntiEquivalence_bounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BoundedAffineAlgebraAntiEquivalenceProof.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BoundedAffineAlgebraAntiEquivalenceProof.lean#L107). The attribute's comment: “corrected form: f ↦ f_* 𝒪_Y is an anti-equivalence from the algebraic spaces affine over X onto the quasi-coherent 𝒪_X-algebras with fewer than the big fppf site's cutoff many sections over every étale chart (the unrestricted target is refuted by not_nonempty_affineAlgebraAntiEquivalence_of_hasNonzeroAffineChart, and the bounded algebras are exactly the essential image by essImage_boundedPushforwardAlgebraFunctor_iff), and it commutes with arbitrary base change g : Y ⟶ X, naturally in the affine space”.
+**`AlgebraicGeometry.Space.affineAlgebraAntiEquivalence_bounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BoundedAffineAlgebraAntiEquivalenceProof.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BoundedAffineAlgebraAntiEquivalenceProof.lean#L107). The attribute's comment: “corrected form: f ↦ f\_* 𝒪\_Y is an anti-equivalence from the algebraic spaces affine over X onto the quasi-coherent 𝒪\_X-algebras with fewer than the big fppf site's cutoff many sections over every étale chart (the unrestricted target is refuted by not\_nonempty\_affineAlgebraAntiEquivalence\_of\_hasNonzeroAffineChart, and the bounded algebras are exactly the essential image by essImage\_boundedPushforwardAlgebraFunctor\_iff), and it commutes with arbitrary base change g : Y ⟶ X, naturally in the affine space”.
 
 > For every algebraic space `X`, the direct image
 > `f ↦ f_* 𝒪_Y` is an anti-equivalence from the algebraic spaces affine over `X` onto the
@@ -341,7 +341,7 @@ theorem affineAlgebraAntiEquivalence_bounded :
             quasicoherentPushforwardAlgebraFunctor B S hS Y)
 ```
 
-**`AlgebraicGeometry.Space.pushforwardAlgebraMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageAlgebraMorphism.lean, line 626](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageAlgebraMorphism.lean#L626). The attribute's comment: “the direct image f ↦ f_* 𝒪_Y on morphisms, as a map of 𝒪_X-algebras”.
+**`AlgebraicGeometry.Space.pushforwardAlgebraMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageAlgebraMorphism.lean, line 626](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageAlgebraMorphism.lean#L626). The attribute's comment: “the direct image f ↦ f\_* 𝒪\_Y on morphisms, as a map of 𝒪\_X-algebras”.
 
 > **The contravariant action of `f ↦ f_* 𝒪_Y` on morphisms, as a morphism of
 > `𝒪_X`-algebras.**  A morphism `f : Y ⟶ Z` of algebraic spaces over `X` induces
@@ -359,7 +359,7 @@ def pushforwardAlgebraMap (f : Y ⟶ Z) :
     pushforwardAlgebra B S hS Z ⟶ pushforwardAlgebra B S hS Y
 ```
 
-**`AlgebraicGeometry.Space.pushforwardAlgebraFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageAlgebraMorphism.lean, line 780](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageAlgebraMorphism.lean#L780). The attribute's comment: “the direct image functor f ↦ f_* 𝒪_Y”.
+**`AlgebraicGeometry.Space.pushforwardAlgebraFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageAlgebraMorphism.lean, line 780](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageAlgebraMorphism.lean#L780). The attribute's comment: “the direct image functor f ↦ f\_* 𝒪\_Y”.
 
 > **The direct-image functor of Stacks 081V.**  The contravariant functor from the algebraic
 > spaces over `X` to the sheaves of commutative `𝒪_X`-algebras which sends `f : Y ⟶ X` to
@@ -379,13 +379,13 @@ noncomputable def pushforwardAlgebraFunctor :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.affineQuasicoherentPushforwardAlgebraFunctor`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineQuasicoherentPushforwardAlgebra.lean#L83), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/AffinePushforwardQuasicoherentAlgebra.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffinePushforwardQuasicoherentAlgebra.lean#L87) (StacksFrontier): “the direct image functor f ↦ f_* 𝒪_Y on the algebraic spaces affine over X, with values in the quasi-coherent 𝒪_X-algebras”.
+- [`AlgebraicGeometry.Space.affineQuasicoherentPushforwardAlgebraFunctor`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineQuasicoherentPushforwardAlgebra.lean#L83), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/AffinePushforwardQuasicoherentAlgebra.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffinePushforwardQuasicoherentAlgebra.lean#L87) (StacksFrontier): “the direct image functor f ↦ f\_* 𝒪\_Y on the algebraic spaces affine over X, with values in the quasi-coherent 𝒪\_X-algebras”.
 
 ## Tag 081W, a definition
 
 [Tag 081W](https://stacks.math.columbia.edu/tag/081W) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.boundedRelativeSpec`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeSpecBounded.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeSpecBounded.lean#L99). The attribute's comment: “the bounded case only: the relative spectrum of a quasi-coherent O_X-algebra A with fewer than the big fppf site's cutoff many sections at every etale chart, built inside the site of X from its functor of points relativeSpecPoints A, with pushforwardAlgebraBoundedRelativeSpecIso and nonempty_iso_boundedRelativeSpec identifying it as the object corresponding to A under 081V. The tag for an arbitrary quasi-coherent algebra is relativeSpectrum (RelativeSpectrum), which applies this construction over an enlarged site”.
+**`AlgebraicGeometry.Space.boundedRelativeSpec`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeSpecBounded.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeSpecBounded.lean#L99). The attribute's comment: “the bounded case only: the relative spectrum of a quasi-coherent O\_X-algebra A with fewer than the big fppf site's cutoff many sections at every etale chart, built inside the site of X from its functor of points relativeSpecPoints A, with pushforwardAlgebraBoundedRelativeSpecIso and nonempty\_iso\_boundedRelativeSpec identifying it as the object corresponding to A under 081V. The tag for an arbitrary quasi-coherent algebra is relativeSpectrum (RelativeSpectrum), which applies this construction over an enlarged site”.
 
 > **Stacks 081W, the bounded case.** The relative spectrum `\underline{Spec}_X(𝒜)` of a
 > quasi-coherent `𝒪_X`-algebra `𝒜` with fewer than `B.cutoff` sections over every étale chart, as an
@@ -421,7 +421,7 @@ def relativeSpec {X : AlgebraicSpaces B S hS} (A : QuasicoherentAlgebra B S hS X
     AffineOver B S hS X
 ```
 
-**`AlgebraicGeometry.Space.relativeSpectrum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeSpectrum.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeSpectrum.lean#L230). The attribute's comment: “the relative spectrum Spec_X(A) of an arbitrary quasi-coherent O_X-algebra A on an algebraic space X, with no further hypothesis: the algebraic space affine over X corresponding to A under 081V. It lives on an enlargement relativeSpectrumSite A of the big fppf site of X (Stacks 03FO; necessary, since an algebra with at least B.cutoff sections over a chart is the direct image of no space affine over X in the same site: not_essSurj_affinePushforwardAlgebraFunctor_of_cutoff_le_mk_sections), over X read there by 03FP; its direct image is A read there (pushforwardAlgebraRelativeSpectrumIso, relativeSpectrumRestrictIso) and it is unique up to unique isomorphism with that property (existsUnique_iso_relativeSpectrum)”.
+**`AlgebraicGeometry.Space.relativeSpectrum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeSpectrum.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeSpectrum.lean#L230). The attribute's comment: “the relative spectrum Spec\_X(A) of an arbitrary quasi-coherent O\_X-algebra A on an algebraic space X, with no further hypothesis: the algebraic space affine over X corresponding to A under 081V. It lives on an enlargement relativeSpectrumSite A of the big fppf site of X (Stacks 03FO; necessary, since an algebra with at least B.cutoff sections over a chart is the direct image of no space affine over X in the same site: not\_essSurj\_affinePushforwardAlgebraFunctor\_of\_cutoff\_le\_mk\_sections), over X read there by 03FP; its direct image is A read there (pushforwardAlgebraRelativeSpectrumIso, relativeSpectrumRestrictIso) and it is unique up to unique isomorphism with that property (existsUnique\_iso\_relativeSpectrum)”.
 
 > **Stacks 081W.** The relative spectrum `\underline{Spec}_X(𝒜)` of an arbitrary quasi-coherent
 > sheaf of `𝒪_X`-algebras `𝒜` on an algebraic space `X`: the algebraic space affine over `X`
@@ -497,7 +497,7 @@ theorem qcqsDirectImageFactorizationMap_factorization :
         (qcqsRelativeSpecDirectImage B S hS E f hfqc hfqs h03M9).obj.hom = f
 ```
 
-**`AlgebraicGeometry.Space.directImageSpec_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageSpecFactorization.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageSpecFactorization.lean#L101). The attribute's comment: “corrected (bounded) form: quasi-coherence of f_* 𝒪_Y, the factorization Y → Spec_X(f_* 𝒪_Y) → X, and its canonicity”. References: SGA 3 VIB (11.1), “partial”.
+**`AlgebraicGeometry.Space.directImageSpec_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageSpecFactorization.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageSpecFactorization.lean#L101). The attribute's comment: “corrected (bounded) form: quasi-coherence of f\_* 𝒪\_Y, the factorization Y → Spec\_X(f\_* 𝒪\_Y) → X, and its canonicity”. References: SGA 3 VIB (11.1), “partial”.
 
 > **The canonical factorization through the relative spectrum of `f_* 𝒪_Y`.**  Let `f : Y ⟶ X`
 > be a quasi-compact, quasi-separated morphism of algebraic spaces.  Then `f_* 𝒪_Y` is a
@@ -540,7 +540,7 @@ theorem isQuasicoherent_pushforwardAlgebra_unconditional (T : Over X)
     (pushforwardAlgebra B S hS T).IsQuasicoherent
 ```
 
-**`AlgebraicGeometry.Space.qcqsDirectImageFactorizationMap_factorization_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QcqsDirectImageAlgebraFactorization.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QcqsDirectImageAlgebraFactorization.lean#L132). The attribute's comment: “the canonical factorization of a quasi-compact quasi-separated morphism — but presupposing an inhabitant of AffineAlgebraAntiEquivalence, which not_nonempty_affineAlgebraAntiEquivalence_of_hasNonzeroAffineChart shows is uninhabited over any algebraic space with one affine chart carrying a nonzero ring of functions, so the statement is vacuous there; the factorization against the bounded anti-equivalence, which that argument does not refute, is boundedQcqsDirectImageFactorizationMap_factorization”.
+**`AlgebraicGeometry.Space.qcqsDirectImageFactorizationMap_factorization_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QcqsDirectImageAlgebraFactorization.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QcqsDirectImageAlgebraFactorization.lean#L132). The attribute's comment: “the canonical factorization of a quasi-compact quasi-separated morphism — but presupposing an inhabitant of AffineAlgebraAntiEquivalence, which not\_nonempty\_affineAlgebraAntiEquivalence\_of\_hasNonzeroAffineChart shows is uninhabited over any algebraic space with one affine chart carrying a nonzero ring of functions, so the statement is vacuous there; the factorization against the bounded anti-equivalence, which that argument does not refute, is boundedQcqsDirectImageFactorizationMap\_factorization”.
 
 > **Stacks 081X.** A quasi-compact, quasi-separated morphism `f : Y ⟶ X` of algebraic spaces
 > factors canonically as `Y ⟶ \underline{Spec}_X(f_* 𝒪_Y) ⟶ X`, with nothing assumed beyond the
@@ -573,7 +573,7 @@ Declarations registered for the tag:
 
 [Tag 08AI](https://stacks.math.columbia.edu/tag/08AI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEquivalence_affineQuasicoherentDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineDirectImageEquivalence.lean, line 514](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineDirectImageEquivalence.lean#L514). The attribute's comment: “the functor F ↦ f_*F from quasi-coherent 𝒪_Y-modules to quasi-coherent f_*𝒪_Y-modules is an equivalence of categories, for an affine morphism”.
+**`AlgebraicGeometry.Space.isEquivalence_affineQuasicoherentDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineDirectImageEquivalence.lean, line 514](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineDirectImageEquivalence.lean#L514). The attribute's comment: “the functor F ↦ f\_*F from quasi-coherent 𝒪\_Y-modules to quasi-coherent f\_*𝒪\_Y-modules is an equivalence of categories, for an affine morphism”.
 
 > **Stacks 08AI, first assertion.**  Let `f : Y ⟶ X` be an affine morphism of algebraic spaces
 > over `S` and `𝒜 = f_*𝒪_Y`.  The functor `ℱ ↦ f_*ℱ` from quasi-coherent `𝒪_Y`-modules to
@@ -589,7 +589,7 @@ theorem isEquivalence_affineQuasicoherentDirectImage (hf : IsAffineHom B S hS f.
     (affineQuasicoherentDirectImage B S hS f hf).IsEquivalence
 ```
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_restrictScalars_structureSharp_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageAlgebraQuasicoherenceCriterion.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageAlgebraQuasicoherenceCriterion.lean#L87). The attribute's comment: “an 𝒜-module is quasi-coherent as an 𝒪_X-module if and only if it is quasi-coherent as an 𝒜-module”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_restrictScalars_structureSharp_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageAlgebraQuasicoherenceCriterion.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageAlgebraQuasicoherenceCriterion.lean#L87). The attribute's comment: “an 𝒜-module is quasi-coherent as an 𝒪\_X-module if and only if it is quasi-coherent as an 𝒜-module”.
 
 > **Stacks 08AI, second assertion.**  Let `f : Y ⟶ X` be an affine morphism of algebraic spaces
 > over `S` and let `𝒜 = f_*𝒪_Y`.  An `𝒜`-module is quasi-coherent as an `𝒪_X`-module — that is,
@@ -609,7 +609,7 @@ theorem isQuasicoherentOnSite_restrictScalars_structureSharp_iff (f : Y ⟶ X)
         M).IsQuasicoherentOnSite ↔ M.IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.quasicoherentDirectImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDirectImageAffine.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDirectImageAffine.lean#L102). The attribute's comment: “the functor F ↦ f_*F on quasi-coherent modules”.
+**`AlgebraicGeometry.Space.quasicoherentDirectImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDirectImageAffine.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDirectImageAffine.lean#L102). The attribute's comment: “the functor F ↦ f\_*F on quasi-coherent modules”.
 
 > **Stacks 08AI, the functor.** Direct image as a functor `QCoh(𝒪_Y) ⥤ QCoh(A)`, granted
 > that it preserves quasi-coherence. This is the functor `F ↦ f_*F` whose invertibility is the

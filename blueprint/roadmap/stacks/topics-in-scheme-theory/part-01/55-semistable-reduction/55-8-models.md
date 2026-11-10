@@ -46,7 +46,7 @@ def IsRegularModel [IsDomain R] [IsDiscreteValuationRing R] [IsFractionRing R K]
     (e : V ≅ pullback p (genericPointInclusion R K)) : Prop
 ```
 
-**`Stacks.Models.IsModel.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L278). The attribute's comment: “base change X ↦ X ×_{Spec R} Spec R' along an extension of discrete valuation rings sends models of V over R to models of V' = V ×_{Spec K} Spec K' over R'”.
+**`Stacks.Models.IsModel.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L278). The attribute's comment: “base change X ↦ X ×\_\{Spec R} Spec R' along an extension of discrete valuation rings sends models of V over R to models of V' = V ×\_\{Spec K} Spec K' over R'”.
 
 > **Base change of a model** (Section 0C2R). Let `R ⊆ R'` be an extension of discrete
 > valuation rings with induced extension `K'/K` of fraction fields. If `X` is a model of the
@@ -82,7 +82,7 @@ theorem IsModelHom.baseChange {V X X' : Scheme.{u}} {v : V ⟶ Spec (CommRingCat
       (baseChangeMap (R' := R') p p' φ hφ.1)
 ```
 
-**`Stacks.Models.Model.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L336). The attribute's comment: “the functor from models for V over R to models for V' over R' sending X to X ×_{Spec R} Spec R'”.
+**`Stacks.Models.Model.baseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L336). The attribute's comment: “the functor from models for V over R to models for V' over R' sending X to X ×\_\{Spec R} Spec R'”.
 
 > **The base change functor** (Section 0C2R): for an extension of discrete valuation rings
 > `R ⊆ R'` with induced extension `K'/K` of fraction fields, `X ↦ X ×_{Spec R} Spec R'` is a
@@ -95,7 +95,7 @@ def Model.baseChange (V : Scheme.{u}) (v : V ⟶ Spec (CommRingCat.of K)) :
 
 Declarations registered for the tag:
 
-- [`Stacks.Models.IsModel`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/Basic.lean#L61), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L68) (StacksFrontier): “a model for V: a flat finite type morphism X ⟶ Spec R endowed with an isomorphism V ⟶ X_K”.
+- [`Stacks.Models.IsModel`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/Basic.lean#L61), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Models/BaseChange.lean#L68) (StacksFrontier): “a model for V: a flat finite type morphism X ⟶ Spec R endowed with an isomorphism V ⟶ X\_K”.
 
 ## Tag 0C2S, a lemma
 
@@ -207,7 +207,7 @@ theorem exists_isResolution_of_isModel {C X : Scheme.{u}} (c : C ⟶ Spec (.of K
     ∃ (_ : IsIntegral X) (_ : IsNoetherian X) (Y : Scheme.{u}) (f : Y ⟶ X), IsResolution f
 ```
 
-**`AlgebraicGeometry.isModel_comp_of_isResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/Models.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/Models.lean#L272). The attribute's comment: “resolution_is_model”.
+**`AlgebraicGeometry.isModel_comp_of_isResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/Models.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/Models.lean#L272). The attribute's comment: “resolution\_is\_model”.
 
 > **Stacks Project, Tag 0C2U.** A resolution of singularities of a model of a smooth curve is
 > again a model of that curve.

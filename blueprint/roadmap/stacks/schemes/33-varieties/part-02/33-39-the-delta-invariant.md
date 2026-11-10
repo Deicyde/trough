@@ -191,7 +191,7 @@ public lemma deltaInvariant_eq_zero_iff_isDiscreteValuationRing
 
 [Tag 0C3V](https://stacks.math.columbia.edu/tag/0C3V) in the Stacks Project.
 
-**`IsLocalRing.isReduced_adicCompletion_maximalIdeal_of_isNagataRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L55). The attribute's comment: “completion_properties”. References: EGA IV (7.6.1), “more general”.
+**`IsLocalRing.isReduced_adicCompletion_maximalIdeal_of_isNagataRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L55). The attribute's comment: “completion\_properties”. References: EGA IV (7.6.1), “more general”.
 
 > The maximal-ideal-adic completion of a reduced Nagata local ring is reduced.
 
@@ -201,7 +201,7 @@ public theorem isReduced_adicCompletion_maximalIdeal_of_isNagataRing
     (hA : IsNagataRing A) : IsReduced (AdicCompletion (maximalIdeal A) A)
 ```
 
-**`IsLocalRing.isNagataRing_adicCompletion_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L63). The attribute's comment: “completion_properties”.
+**`IsLocalRing.isNagataRing_adicCompletion_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L63). The attribute's comment: “completion\_properties”.
 
 > The maximal-ideal-adic completion of a Noetherian local ring is a Nagata ring.
 
@@ -211,7 +211,7 @@ public theorem isNagataRing_adicCompletion_maximalIdeal
     IsNagataRing (AdicCompletion (maximalIdeal A) A)
 ```
 
-**`IsLocalRing.ringKrullDim_adicCompletion_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L70). The attribute's comment: “completion_properties”. References: EGA IV (7.3.19), “dim(Â) = 1”.
+**`IsLocalRing.ringKrullDim_adicCompletion_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L70). The attribute's comment: “completion\_properties”. References: EGA IV (7.3.19), “dim(Â) = 1”.
 
 > Completion of a Noetherian local ring at its maximal ideal preserves Krull dimension.
 
@@ -221,7 +221,7 @@ public theorem ringKrullDim_adicCompletion_maximalIdeal
     ringKrullDim (AdicCompletion (maximalIdeal A) A) = ringKrullDim A
 ```
 
-**`IsLocalRing.IsHenselization.isReduced`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean#L376). The attribute's comment: “henselization_properties”. References: EGA IV (18.6.9), “(i), special case”.
+**`IsLocalRing.IsHenselization.isReduced`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean#L376). The attribute's comment: “henselization\_properties”. References: EGA IV (18.6.9), “(i), special case”.
 
 > The henselization of a reduced local ring is reduced.
 
@@ -229,7 +229,7 @@ public theorem ringKrullDim_adicCompletion_maximalIdeal
 public lemma isReduced [IsReduced A] : IsReduced Ah
 ```
 
-**`IsLocalRing.IsHenselization.isNagataRing`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean#L383). The attribute's comment: “henselization_properties”. References: EGA IV (18.7.3), “Forward implication”.
+**`IsLocalRing.IsHenselization.isNagataRing`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean#L383). The attribute's comment: “henselization\_properties”. References: EGA IV (18.7.3), “Forward implication”.
 
 > The henselization of a Nagata local ring is Nagata.
 
@@ -237,7 +237,7 @@ public lemma isReduced [IsReduced A] : IsReduced Ah
 public lemma isNagataRing (hNagata : IsNagataRing A) : IsNagataRing Ah
 ```
 
-**`IsLocalRing.IsHenselization.ringKrullDim_eq`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean#L399). The attribute's comment: “henselization_properties”.
+**`IsLocalRing.IsHenselization.ringKrullDim_eq`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean#L399). The attribute's comment: “henselization\_properties”.
 
 > Henselization preserves the Krull dimension of a local ring.
 
@@ -245,7 +245,7 @@ public lemma isNagataRing (hNagata : IsNagataRing A) : IsNagataRing Ah
 public lemma ringKrullDim_eq : ringKrullDim Ah = ringKrullDim A
 ```
 
-**`IsLocalRing.strictHenselization_isReduced`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean#L413). The attribute's comment: “strict_henselization_properties”. References: EGA IV (18.8.12), “(i)”.
+**`IsLocalRing.strictHenselization_isReduced`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean#L413). The attribute's comment: “strict\_henselization\_properties”. References: EGA IV (18.8.12), “(i)”.
 
 > A strict henselization of a reduced local ring is reduced.
 
@@ -256,7 +256,7 @@ public lemma strictHenselization_isReduced
     [IsLocalRing.IsHenselization A ksep Ash] [IsReduced A] : IsReduced Ash
 ```
 
-**`IsLocalRing.strictHenselization_isNagataRing`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean#L433). The attribute's comment: “strict_henselization_properties”.
+**`IsLocalRing.strictHenselization_isNagataRing`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean#L433). The attribute's comment: “strict\_henselization\_properties”.
 
 > A strict henselization of a Nagata local ring is Nagata.
 
@@ -268,7 +268,7 @@ public lemma strictHenselization_isNagataRing
     (hA : IsNagataRing A) : IsNagataRing Ash
 ```
 
-**`IsLocalRing.strictHenselization_ringKrullDim`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean, line 458](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean#L458). The attribute's comment: “strict_henselization_properties”. References: SGA 5 I (3.1.3), “more general”.
+**`IsLocalRing.strictHenselization_ringKrullDim`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean, line 458](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Henselization.lean#L458). The attribute's comment: “strict\_henselization\_properties”. References: SGA 5 I (3.1.3), “more general”.
 
 > A local ring and a strict henselization of it have the same Krull
 > dimension.
@@ -280,7 +280,7 @@ public lemma strictHenselization_ringKrullDim
     [IsLocalRing.IsHenselization A ksep Ash] : ringKrullDim Ash = ringKrullDim A
 ```
 
-**`IsLocalRing.exists_fractionRing_map_and_tensorProduct_range_eq_integralClosure_completion`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/IntegralClosureCompletion.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/IntegralClosureCompletion.lean#L89). The attribute's comment: “completion_integral_closure”.
+**`IsLocalRing.exists_fractionRing_map_and_tensorProduct_range_eq_integralClosure_completion`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/IntegralClosureCompletion.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/IntegralClosureCompletion.lean#L89). The attribute's comment: “completion\_integral\_closure”.
 
 > The base change to the completion of the integral closure of a reduced one-dimensional
 > Nagata local ring in its total ring of fractions is the integral closure of the completion in its
@@ -306,7 +306,7 @@ public lemma exists_fractionRing_map_and_tensorProduct_range_eq_integralClosure_
             IsScalarTower.toAlgHom A B (FractionRing B)
 ```
 
-**`IsLocalRing.tensorProduct_integralClosure_isIntegralClosure_strictHenselization`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/IntegralClosureHenselization.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/IntegralClosureHenselization.lean#L190). The attribute's comment: “strict_henselization_integral_closure”.
+**`IsLocalRing.tensorProduct_integralClosure_isIntegralClosure_strictHenselization`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/IntegralClosureHenselization.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/IntegralClosureHenselization.lean#L190). The attribute's comment: “strict\_henselization\_integral\_closure”.
 
 > **Stacks Project, Tag 0C3V.** After strict henselization, the base change of the integral
 > closure in the total ring of fractions is the integral closure in the new total ring of
@@ -332,7 +332,7 @@ public lemma tensorProduct_integralClosure_isIntegralClosure_strictHenselization
               IsScalarTower.toAlgHom A Ash (FractionRing Ash)
 ```
 
-**`IsLocalRing.exists_integralClosure_henselization_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/IntegralClosureHenselization.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/IntegralClosureHenselization.lean#L266). The attribute's comment: “henselization_integral_closure”.
+**`IsLocalRing.exists_integralClosure_henselization_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/IntegralClosureHenselization.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/IntegralClosureHenselization.lean#L266). The attribute's comment: “henselization\_integral\_closure”.
 
 > **Stacks Project, Tag 0C3V.** The base change to a henselization of the integral closure in
 > the total ring of fractions is the integral closure of the henselization in its total ring of
@@ -356,7 +356,7 @@ public theorem exists_integralClosure_henselization_map
 
 Declarations registered for the tag:
 
-- [`AdicCompletion.isLocalRing_of_fg`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AdicCompletion.isLocalRing_of_fg#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L39) (StacksFrontier): “completion_properties”. References: EGA IV (8.11.4), “Â is a local ring”; SGA 3 VIIB (0.1.1), “special case”; SGA 3 X (4.0), “partial”.
+- [`AdicCompletion.isLocalRing_of_fg`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AdicCompletion.isLocalRing_of_fg#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L39) (StacksFrontier): “completion\_properties”. References: EGA IV (8.11.4), “Â is a local ring”; SGA 3 VIIB (0.1.1), “special case”; SGA 3 X (4.0), “partial”.
 
 ## Tag 0C3W, a lemma
 

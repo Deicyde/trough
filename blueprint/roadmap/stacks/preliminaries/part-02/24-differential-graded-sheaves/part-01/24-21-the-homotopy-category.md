@@ -102,7 +102,7 @@ theorem homotopic_congruence (A : DifferentialGradedAlgebra.{t, a} R) :
 
 [Tag 0FS2](https://stacks.math.columbia.edu/tag/0FS2) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.hasProducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryProducts.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryProducts.lean#L108). The attribute's comment: “homotopy_products”.
+**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.hasProducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryProducts.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryProducts.lean#L108). The attribute's comment: “homotopy\_products”.
 
 > The homotopy category of right differential graded modules admits arbitrary products.
 
@@ -111,7 +111,7 @@ noncomputable instance hasProducts (A : DifferentialGradedAlgebra.{t, a} R) :
     HasProducts.{m} (HomotopyCategory.{t, a, m} A)
 ```
 
-**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.hasCoproducts_ringedSite`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryRingedSite.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryRingedSite.lean#L120). The attribute's comment: “homotopy_direct_sums”.
+**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.hasCoproducts_ringedSite`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryRingedSite.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedHomotopyCategoryRingedSite.lean#L120). The attribute's comment: “homotopy\_direct\_sums”.
 
 > The homotopy category of right differential graded modules over a sheaf of differential
 > graded algebras on a ringed site admits arbitrary direct sums.

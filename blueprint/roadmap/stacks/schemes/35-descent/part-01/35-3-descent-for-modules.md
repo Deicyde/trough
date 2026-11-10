@@ -123,7 +123,7 @@ abbrev DescentData.IsEffective (R : Type u) (A : Type v) [CommRing R] [CommRing 
 noncomputable def augmentedDescentComplex : CochainComplex (ModuleCat.{max u v} R) ℕ
 ```
 
-**`Stacks.Descent.augmentedDescentComplexXIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/AugmentedDescentComplex.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/AugmentedDescentComplex.lean#L387). The attribute's comment: “its degree-(n+1) term is A^{⊗(n+1)} ⊗_R M”.
+**`Stacks.Descent.augmentedDescentComplexXIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/AugmentedDescentComplex.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/AugmentedDescentComplex.lean#L387). The attribute's comment: “its degree-(n+1) term is A^\{⊗(n+1)} ⊗\_R M”.
 
 > **The degree-`(n + 1)` term of the augmented descent complex is `A^{⊗(n + 1)} ⊗[R] M`.**
 
@@ -343,7 +343,7 @@ noncomputable def descentDataEquivCartesianCechModule :
     DescentData.{u, u, max u w} R A ≌ CartesianCechModule.{u, u, max u w} R A
 ```
 
-**`CategoryTheory.Arrow.cechConerve_homotopyEquivalent_const_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/CechConerve.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/CechConerve.lean#L118). The attribute's comment: “split_cech_homotopy”.
+**`CategoryTheory.Arrow.cechConerve_homotopyEquivalent_const_of_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/CechConerve.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/CechConerve.lean#L118). The attribute's comment: “split\_cech\_homotopy”.
 
 > A split Čech conerve is homotopy equivalent to the constant cosimplicial object on the base.
 > For commutative `R`-algebras this is the split Čech algebra `(A/R)•` and the constant algebra
@@ -358,7 +358,7 @@ theorem cechConerve_homotopyEquivalent_const_of_section
       SimplicialObject.homotopyEquivalences Cᵒᵖ a
 ```
 
-**`CategoryTheory.CosimplicialModule.Cartesian`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/Cosimplicial.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/Cosimplicial.lean#L74). The attribute's comment: “cartesian_module”.
+**`CategoryTheory.CosimplicialModule.Cartesian`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/Cosimplicial.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/Cosimplicial.lean#L74). The attribute's comment: “cartesian\_module”.
 
 > A cosimplicial module is cartesian when every cosimplicial transition map
 > induces an isomorphism after extension of scalars.

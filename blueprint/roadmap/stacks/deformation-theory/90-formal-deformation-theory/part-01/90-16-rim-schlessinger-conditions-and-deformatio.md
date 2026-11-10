@@ -238,7 +238,7 @@ Declarations registered for the tag:
 
 [Tag 06JA](https://stacks.math.columbia.edu/tag/06JA) in the Stacks Project.
 
-**`Deformation.IsDeformationFunctor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RimSchlessinger/Basic.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RimSchlessinger/Basic.lean#L150). The attribute's comment: “deformation_functor”.
+**`Deformation.IsDeformationFunctor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RimSchlessinger/Basic.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RimSchlessinger/Basic.lean#L150). The attribute's comment: “deformation\_functor”.
 
 > A set-valued functor is a deformation functor if its value at the residue
 > field is a singleton and its associated cofibered set satisfies (RS).
@@ -249,7 +249,7 @@ public abbrev IsDeformationFunctor
     (F : ArtinianLocalAlgCat.{u, max v w, w} Λ k ⥤ Type t) : Prop
 ```
 
-**`Deformation.isDeformationCategory_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RimSchlessinger/Basic.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RimSchlessinger/Basic.lean#L159). The attribute's comment: “deformation_functor”.
+**`Deformation.isDeformationCategory_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RimSchlessinger/Basic.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RimSchlessinger/Basic.lean#L159). The attribute's comment: “deformation\_functor”.
 
 > A functor is a deformation functor exactly when its associated cofibered set
 > is a deformation category.
@@ -264,7 +264,7 @@ public theorem isDeformationCategory_iff
 
 Declarations registered for the tag:
 
-- [`isPredeformationFunctor_isomorphismClasses`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isPredeformationFunctor_isomorphismClasses#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/RimSchlessinger/Basic.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RimSchlessinger/Basic.lean#L172) (StacksFrontier): “associated_predeformation”.
+- [`isPredeformationFunctor_isomorphismClasses`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isPredeformationFunctor_isomorphismClasses#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/RimSchlessinger/Basic.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RimSchlessinger/Basic.lean#L172) (StacksFrontier): “associated\_predeformation”.
 
 ## Tag 06JB, an example
 

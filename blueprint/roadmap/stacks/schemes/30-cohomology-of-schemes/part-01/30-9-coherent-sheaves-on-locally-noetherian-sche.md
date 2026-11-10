@@ -244,7 +244,7 @@ Declarations registered for the tag:
 
 [Tag 01Y1](https://stacks.math.columbia.edu/tag/01Y1) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.CoherentOfFiniteType.isCoherent_of_mono_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentOfFiniteType.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentOfFiniteType.lean#L195). The attribute's comment: “quasi_coherent_submodule”. References: EGA I (9.6.4), “submodule, B = O_X”.
+**`Stacks.AlgebraicGeometry.CoherentOfFiniteType.isCoherent_of_mono_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentOfFiniteType.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentOfFiniteType.lean#L195). The attribute's comment: “quasi\_coherent\_submodule”. References: EGA I (9.6.4), “submodule, B = O\_X”.
 
 > **Stacks 01Y1, submodules.** A quasi-coherent submodule of a coherent module on a locally
 > Noetherian scheme is coherent.
@@ -260,7 +260,7 @@ theorem isCoherent_of_mono_of_isQuasicoherent {G F : X.Modules} [G.IsQuasicohere
     _root_.SheafOfModules.IsCoherent G
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentOfFiniteType.isCoherent_of_epi_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentOfFiniteType.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentOfFiniteType.lean#L206). The attribute's comment: “quasi_coherent_quotient”. References: EGA I (9.6.4), “quotient, B = O_X”.
+**`Stacks.AlgebraicGeometry.CoherentOfFiniteType.isCoherent_of_epi_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentOfFiniteType.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentOfFiniteType.lean#L206). The attribute's comment: “quasi\_coherent\_quotient”. References: EGA I (9.6.4), “quotient, B = O\_X”.
 
 > **Stacks 01Y1, quotients.** A quasi-coherent quotient of a coherent module on a locally
 > Noetherian scheme is coherent. This is the second of 01Y1's two assertions; see the submodule
@@ -272,7 +272,7 @@ theorem isCoherent_of_epi_of_isQuasicoherent {F Q : X.Modules} [Q.IsQuasicoheren
     _root_.SheafOfModules.IsCoherent Q
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentSubquotients.isCoherent_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Basic.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Basic.lean#L66). The attribute's comment: “quasi_coherent_quotient”. References: EGA I (9.6.4), “quotient, B = O_X”.
+**`Stacks.AlgebraicGeometry.CoherentSubquotients.isCoherent_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Basic.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Basic.lean#L66). The attribute's comment: “quasi\_coherent\_quotient”. References: EGA I (9.6.4), “quotient, B = O\_X”.
 
 > **[Stacks, Tag 01Y1].** A quasi-coherent quotient of a coherent sheaf of modules on a
 > locally Noetherian scheme is coherent.
@@ -283,7 +283,7 @@ theorem isCoherent_of_epi {X : Scheme.{u}} [IsLocallyNoetherian X]
     (f : F ⟶ G) [Epi f] : G.IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentSubquotients.isCoherent_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Basic.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Basic.lean#L191). The attribute's comment: “quasi_coherent_submodule”.
+**`Stacks.AlgebraicGeometry.CoherentSubquotients.isCoherent_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Basic.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentSubquotients/Basic.lean#L191). The attribute's comment: “quasi\_coherent\_submodule”.
 
 > **[Stacks, Tag 01Y1].** A quasi-coherent submodule of a coherent sheaf of modules on a
 > locally Noetherian scheme is coherent.
@@ -294,7 +294,7 @@ theorem isCoherent_of_mono {X : Scheme.{u}} [IsLocallyNoetherian X]
     (f : G ⟶ F) [Mono f] : G.IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentTFAE.isCoherent_of_epi_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/SubQuotient.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/SubQuotient.lean#L56). The attribute's comment: “quasi_coherent_quotient”.
+**`Stacks.AlgebraicGeometry.CoherentTFAE.isCoherent_of_epi_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/SubQuotient.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/SubQuotient.lean#L56). The attribute's comment: “quasi\_coherent\_quotient”.
 
 > **Stacks Project, Tag 01Y1.** A quasi-coherent quotient of a coherent module on a locally
 > Noetherian scheme is coherent.
@@ -305,7 +305,7 @@ theorem isCoherent_of_epi_of_isQuasicoherent [IsLocallyNoetherian X]
     (f : F ⟶ G) [Epi f] : G.IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.CoherentTFAE.isCoherent_of_mono_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/SubQuotient.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/SubQuotient.lean#L75). The attribute's comment: “quasi_coherent_submodule”.
+**`Stacks.AlgebraicGeometry.CoherentTFAE.isCoherent_of_mono_of_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/SubQuotient.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/LocallyNoetherian/SubQuotient.lean#L75). The attribute's comment: “quasi\_coherent\_submodule”.
 
 > **Stacks Project, Tag 01Y1.** A quasi-coherent submodule of a coherent module on a locally
 > Noetherian scheme is coherent.
@@ -626,7 +626,7 @@ theorem isZero_higherDirectImage_of_isFinite {X S : Scheme.{u}} (f : X ⟶ S) [I
 
 [Tag 0B3J](https://stacks.math.columbia.edu/tag/0B3J) in the Stacks Project.
 
-**`AlgebraicGeometry.nonempty_generatingSections_of_support_dim_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/GlobalGeneration/ZeroDimensionalSupport.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/GlobalGeneration/ZeroDimensionalSupport.lean#L270). The attribute's comment: “global_generation”.
+**`AlgebraicGeometry.nonempty_generatingSections_of_support_dim_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/GlobalGeneration/ZeroDimensionalSupport.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/GlobalGeneration/ZeroDimensionalSupport.lean#L270). The attribute's comment: “global\_generation”.
 
 > A coherent sheaf with support of dimension at most zero on a locally Noetherian
 > scheme is generated by global sections.

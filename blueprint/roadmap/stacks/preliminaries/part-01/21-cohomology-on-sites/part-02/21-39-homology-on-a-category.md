@@ -14,7 +14,7 @@ Section 21.39 of the Stacks Project, [Tag 08RW](https://stacks.math.columbia.edu
 
 [Tag 08PF](https://stacks.math.columbia.edu/tag/08PF) in the Stacks Project.
 
-**`Stacks.CategoryHomology.categoryHomology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/HomologyOnACategory.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/HomologyOnACategory.lean#L144). The attribute's comment: “homology_of_a_category”.
+**`Stacks.CategoryHomology.categoryHomology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/HomologyOnACategory.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/HomologyOnACategory.lean#L144). The attribute's comment: “homology\_of\_a\_category”.
 
 > **Stacks 08PF.** The `n`th homology group of an abelian-group-valued presheaf on a small
 > category is the value of the `n`th left derived functor of `colim`.
@@ -24,7 +24,7 @@ noncomputable abbrev categoryHomology {C : Type u} [SmallCategory C]
     (F : Cᵒᵖ ⥤ AddCommGrpCat.{max u v}) (n : ℕ) : AddCommGrpCat.{max u v}
 ```
 
-**`Stacks.ChaoticSite.abelianLowerShriekColimitIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean#L219). The attribute's comment: “lower_shriek_colimit”.
+**`Stacks.ChaoticSite.abelianLowerShriekColimitIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean#L219). The attribute's comment: “lower\_shriek\_colimit”.
 
 > **Stacks 08PF.** The established inverse image along the point, left adjoint to
 > restriction, is canonically the colimit functor.
@@ -37,7 +37,7 @@ def abelianLowerShriekColimitIso :
       abelianColimitLowerShriek.{w} C
 ```
 
-**`Stacks.ChaoticSite.abelianLowerShriekColimitIso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean#L232). The attribute's comment: “lower_shriek_colimit”.
+**`Stacks.ChaoticSite.abelianLowerShriekColimitIso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean#L232). The attribute's comment: “lower\_shriek\_colimit”.
 
 > **Stacks 08PF.** The abelian comparison preserves the canonical unit.
 
@@ -54,7 +54,7 @@ theorem abelianLowerShriekColimitIso_unit
     (abelianLowerShriekColimitAdjunction.{w} C).unit.app F
 ```
 
-**`Stacks.ChaoticSite.abelianLowerShriekColimit_evalIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean#L247). The attribute's comment: “lower_shriek_colimit”.
+**`Stacks.ChaoticSite.abelianLowerShriekColimit_evalIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean#L247). The attribute's comment: “lower\_shriek\_colimit”.
 
 > **Stacks 08PF.** At each object, the colimit presentation evaluated at the point is the
 > colimit of the underlying presheaf.
@@ -66,7 +66,7 @@ def abelianLowerShriekColimit_evalIso
       (op (Discrete.mk PUnit.unit)) ≅ colimit F.obj
 ```
 
-**`Stacks.ChaoticSite.abelianLowerShriekColimit_unit_cocone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean#L262). The attribute's comment: “lower_shriek_colimit”.
+**`Stacks.ChaoticSite.abelianLowerShriekColimit_unit_cocone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean#L262). The attribute's comment: “lower\_shriek\_colimit”.
 
 > **Stacks 08PF.** At each object, the unit of the colimit presentation is the canonical
 > map into the colimit of the underlying presheaf.
@@ -79,7 +79,7 @@ theorem abelianLowerShriekColimit_unit_cocone
       colimit.ι F.obj (op U)
 ```
 
-**`Stacks.ChaoticSite.ModuleValued.moduleLowerShriekColimitIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimitOfModules.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimitOfModules.lean#L111). The attribute's comment: “lower_shriek_colimit”.
+**`Stacks.ChaoticSite.ModuleValued.moduleLowerShriekColimitIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimitOfModules.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimitOfModules.lean#L111). The attribute's comment: “lower\_shriek\_colimit”.
 
 > **Stacks 08PF.** The established lower shriek on module-valued sheaves is naturally the
 > colimit functor, rather than merely another left adjoint to point restriction.
@@ -92,7 +92,7 @@ def moduleLowerShriekColimitIso :
       moduleColimitLowerShriek s
 ```
 
-**`Stacks.ChaoticSite.ModuleValued.moduleLowerShriekColimitIso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimitOfModules.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimitOfModules.lean#L124). The attribute's comment: “lower_shriek_colimit”.
+**`Stacks.ChaoticSite.ModuleValued.moduleLowerShriekColimitIso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimitOfModules.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimitOfModules.lean#L124). The attribute's comment: “lower\_shriek\_colimit”.
 
 > **Stacks 08PF.** The module comparison preserves the canonical unit.
 
@@ -109,7 +109,7 @@ theorem moduleLowerShriekColimitIso_unit
     (moduleLowerShriekColimitAdjunction s).unit.app F
 ```
 
-**`Stacks.ChaoticSite.ModuleValued.moduleLowerShriekColimit_evalIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimitOfModules.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimitOfModules.lean#L139). The attribute's comment: “lower_shriek_colimit”.
+**`Stacks.ChaoticSite.ModuleValued.moduleLowerShriekColimit_evalIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimitOfModules.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimitOfModules.lean#L139). The attribute's comment: “lower\_shriek\_colimit”.
 
 > **Stacks 08PF.** At each object, the colimit presentation evaluated at the point is the
 > colimit of the underlying presheaf of modules.
@@ -121,7 +121,7 @@ def moduleLowerShriekColimit_evalIso
       (op (Discrete.mk PUnit.unit)) ≅ colimit F.obj
 ```
 
-**`Stacks.ChaoticSite.ModuleValued.moduleLowerShriekColimit_unit_cocone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimitOfModules.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimitOfModules.lean#L154). The attribute's comment: “lower_shriek_colimit”.
+**`Stacks.ChaoticSite.ModuleValued.moduleLowerShriekColimit_unit_cocone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimitOfModules.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimitOfModules.lean#L154). The attribute's comment: “lower\_shriek\_colimit”.
 
 > **Stacks 08PF.** At each object, the unit of the colimit presentation is the canonical map
 > into the colimit of the underlying presheaf of modules.
@@ -134,7 +134,7 @@ theorem moduleLowerShriekColimit_unit_cocone
       colimit.ι F.obj (op U)
 ```
 
-**`Stacks.ChaoticSite.pointFunctor_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean#L84). The attribute's comment: “point_morphism”.
+**`Stacks.ChaoticSite.pointFunctor_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean#L84). The attribute's comment: “point\_morphism”.
 
 > **Stacks 08PF, point morphism (continuity).** The unique functor to the one-object
 > category is continuous when both categories carry the chaotic topology.
@@ -146,7 +146,7 @@ instance pointFunctor_isContinuous (C : Type u) [Category.{v} C] :
     (GrothendieckTopology.trivial (Discrete PUnit.{u + 1}))
 ```
 
-**`Stacks.ChaoticSite.pointFunctor_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean#L94). The attribute's comment: “point_morphism”.
+**`Stacks.ChaoticSite.pointFunctor_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean#L94). The attribute's comment: “point\_morphism”.
 
 > **Stacks 08PF, point morphism (cocontinuity).** The unique functor to the one-object
 > category is cocontinuous when both categories carry the chaotic topology.
@@ -158,7 +158,7 @@ instance pointFunctor_isCocontinuous (C : Type u) [Category.{v} C] :
     (GrothendieckTopology.trivial (Discrete PUnit.{u + 1}))
 ```
 
-**`Stacks.ChaoticSite.pointMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean#L104). The attribute's comment: “point_morphism”.
+**`Stacks.ChaoticSite.pointMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean#L104). The attribute's comment: “point\_morphism”.
 
 > **Stacks 08PF, point morphism.** A category with the chaotic topology has a canonical
 > morphism from its sheaf topos to the point topos, induced by the unique functor to the
@@ -172,7 +172,7 @@ noncomputable def pointMorphism (C : Type u) [Category.{v} C] :
         (Type (max w u v)))
 ```
 
-**`Stacks.ChaoticSite.pointMorphism_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean#L117). The attribute's comment: “point_morphism”.
+**`Stacks.ChaoticSite.pointMorphism_inverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean#L117). The attribute's comment: “point\_morphism”.
 
 > The inverse image of the point morphism is restriction along the point functor.
 
@@ -184,7 +184,7 @@ theorem pointMorphism_inverseImage (C : Type u) [Category.{v} C] :
         (GrothendieckTopology.trivial (Discrete PUnit.{u + 1}))
 ```
 
-**`Stacks.ChaoticSite.pointMorphism_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean#L126). The attribute's comment: “point_morphism”.
+**`Stacks.ChaoticSite.pointMorphism_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean#L126). The attribute's comment: “point\_morphism”.
 
 > The direct image of the point morphism is the right Kan extension along the point
 > functor.
@@ -197,7 +197,7 @@ theorem pointMorphism_pushforward (C : Type u) [Category.{v} C] :
         (GrothendieckTopology.trivial (Discrete PUnit.{u + 1}))
 ```
 
-**`Stacks.ChaoticSite.pointMorphism_adjunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean#L135). The attribute's comment: “point_morphism”.
+**`Stacks.ChaoticSite.pointMorphism_adjunction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean#L135). The attribute's comment: “point\_morphism”.
 
 > The adjunction of the point morphism is the canonical adjunction between restriction
 > and the cocontinuous pushforward along the point functor.
@@ -210,7 +210,7 @@ theorem pointMorphism_adjunction (C : Type u) [Category.{v} C] :
         (GrothendieckTopology.trivial (Discrete PUnit.{u + 1}))
 ```
 
-**`Stacks.ChaoticSite.pointFunctor_isFibered`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean#L82). The attribute's comment: “ringed_point”.
+**`Stacks.ChaoticSite.pointFunctor_isFibered`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean#L82). The attribute's comment: “ringed\_point”.
 
 > The projection of any category to the one-object category is a fibred category: every
 > morphism of the base is an identity, and an identity lifts to an identity, which is strongly
@@ -221,7 +221,7 @@ instance pointFunctor_isFibered (C : Type u) [Category.{v} C] :
     (Functor.star C).IsFibered
 ```
 
-**`Stacks.ChaoticSite.RingedPointSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean#L94). The attribute's comment: “ringed_point”.
+**`Stacks.ChaoticSite.RingedPointSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean#L94). The attribute's comment: “ringed\_point”.
 
 > A category with its chaotic topology and a ring on the point.
 
@@ -229,7 +229,7 @@ instance pointFunctor_isFibered (C : Type u) [Category.{v} C] :
 structure RingedPointSituation
 ```
 
-**`Stacks.ChaoticSite.RingedPointSituation.fibredSituation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean#L119). The attribute's comment: “ringed_point”.
+**`Stacks.ChaoticSite.RingedPointSituation.fibredSituation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean#L119). The attribute's comment: “ringed\_point”.
 
 > The fibred-category situation of Stacks 08P8 obtained from the unique functor to the ringed
 > point.
@@ -239,7 +239,7 @@ def fibredSituation :
     Stacks.Sites.FibredCategory.FibredCategorySituation.{u, u, u, v, max w u v}
 ```
 
-**`Stacks.ChaoticSite.RingedPointSituation.topology_eq_trivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean#L143). The attribute's comment: “ringed_point”.
+**`Stacks.ChaoticSite.RingedPointSituation.topology_eq_trivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean#L143). The attribute's comment: “ringed\_point”.
 
 > **Stacks 08PF.** The topology that `C` inherits from the chaotic point is the chaotic
 > topology.
@@ -249,7 +249,7 @@ theorem topology_eq_trivial :
     s.fibredSituation.topology = GrothendieckTopology.trivial s.C
 ```
 
-**`Stacks.ChaoticSite.RingedPointSituation.projection_eq_pointMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean#L200). The attribute's comment: “ringed_point”.
+**`Stacks.ChaoticSite.RingedPointSituation.projection_eq_pointMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean#L200). The attribute's comment: “ringed\_point”.
 
 > **Stacks 08PF.** The morphism of topoi underlying the ringed projection is the point
 > morphism of the chaotic site.
@@ -261,16 +261,16 @@ theorem projection_eq_pointMorphism :
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Adjunction.unit_leftAdjointUniq_hom_app`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Adjunction.unit_leftAdjointUniq_hom_app#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean#L286) (StacksFrontier): “lower_shriek_colimit”. References: SGA 4 IV (3.1.1), “partial”.
-- [`CategoryTheory.sheafBotEquivalence`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.sheafBotEquivalence#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean#L75) (StacksFrontier): “chaotic_site”. References: SGA 3 IV (4.4.2), “final observation”.
-- [`CategoryTheory.Functor.star`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.star#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean#L77) (StacksFrontier): “point_morphism”.
-- [`Stacks.Sites.FibredCategory.FibredCategorySituation.ringedProjection`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/RingedProjection.lean#L91), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean#L221) (StacksFrontier): “ringed_point”.
+- [`CategoryTheory.Adjunction.unit_leftAdjointUniq_hom_app`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Adjunction.unit_leftAdjointUniq_hom_app#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/LowerShriekAsAColimit.lean#L286) (StacksFrontier): “lower\_shriek\_colimit”. References: SGA 4 IV (3.1.1), “partial”.
+- [`CategoryTheory.sheafBotEquivalence`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.sheafBotEquivalence#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean#L75) (StacksFrontier): “chaotic\_site”. References: SGA 3 IV (4.4.2), “final observation”.
+- [`CategoryTheory.Functor.star`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.star#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/PointMorphism.lean#L77) (StacksFrontier): “point\_morphism”.
+- [`Stacks.Sites.FibredCategory.FibredCategorySituation.ringedProjection`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/RingedProjection.lean#L91), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/RingedPoint.lean#L221) (StacksFrontier): “ringed\_point”.
 
 ## Tag 08PG, an example
 
 [Tag 08PG](https://stacks.math.columbia.edu/tag/08PG) in the Stacks Project.
 
-**`Stacks.CategoryHomology.categoryHomologyReplacementIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/DerivedColimits.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/DerivedColimits.lean#L220). The attribute's comment: “derived_colimits”.
+**`Stacks.CategoryHomology.categoryHomologyReplacementIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/DerivedColimits.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/DerivedColimits.lean#L220). The attribute's comment: “derived\_colimits”.
 
 > The homology of the simplicial replacement complex of an abelian-group-valued presheaf
 > computes the left derived functors of the colimit, that is the homology groups `H_n(C, F)`: the
@@ -281,7 +281,7 @@ def categoryHomologyReplacementIso (F : Cᵒᵖ ⥤ AddCommGrpCat.{max u v}) (n 
     categoryHomology.{u, v} F n ≅ (simplicialReplacementComplex F).homology n
 ```
 
-**`Stacks.CategoryHomology.representableReplacementComplex_homology_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableAcyclicity.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableAcyclicity.lean#L71). The attribute's comment: “representable_acyclic”.
+**`Stacks.CategoryHomology.representableReplacementComplex_homology_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableAcyclicity.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableAcyclicity.lean#L71). The attribute's comment: “representable\_acyclic”.
 
 > The simplicial replacement complex of the extension by zero of the
 > constant integer sheaf from the slice site over `U` has vanishing homology in every positive
@@ -295,7 +295,7 @@ theorem representableReplacementComplex_homology_isZero (U : C) (n : ℕ) (hn : 
           (integerExtensionByZero U))).homology n)
 ```
 
-**`Stacks.CategoryHomology.overSimplexEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean#L108). The attribute's comment: “representable_contractible”.
+**`Stacks.CategoryHomology.overSimplexEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean#L108). The attribute's comment: “representable\_contractible”.
 
 > A string in the slice category is a string in `C` together with a map
 > from its right endpoint to `U`.
@@ -306,7 +306,7 @@ def overSimplexEquiv (n : ℕ) :
       ComposableArrows (Over U) n
 ```
 
-**`Stacks.CategoryHomology.overSimplexEquiv_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean#L152). The attribute's comment: “representable_contractible”.
+**`Stacks.CategoryHomology.overSimplexEquiv_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean#L152). The attribute's comment: “representable\_contractible”.
 
 > The simplex comparison preserves the underlying string of arrows.
 
@@ -316,7 +316,7 @@ theorem overSimplexEquiv_forget (n : ℕ)
     overSimplexEquiv U n a ⋙ Over.forget U = a.1
 ```
 
-**`Stacks.CategoryHomology.overSimplexEquiv_last`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean#L163). The attribute's comment: “representable_contractible”.
+**`Stacks.CategoryHomology.overSimplexEquiv_last`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean#L163). The attribute's comment: “representable\_contractible”.
 
 > The last object of the compared simplex has the prescribed arrow to `U`.
 
@@ -326,7 +326,7 @@ theorem overSimplexEquiv_last (n : ℕ)
     HEq ((overSimplexEquiv U n a).obj (Fin.last n)).hom a.2
 ```
 
-**`Stacks.CategoryHomology.integerExtensionByZero_iso_freeYoneda`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean#L182). The attribute's comment: “representable_contractible”.
+**`Stacks.CategoryHomology.integerExtensionByZero_iso_freeYoneda`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean#L182). The attribute's comment: “representable\_contractible”.
 
 > On a chaotic site, extension by zero of the constant integer sheaf is the
 > free abelian presheaf represented by `U`.
@@ -338,7 +338,7 @@ def integerExtensionByZero_iso_freeYoneda :
       ((yoneda.obj U) ⋙ AddCommGrpCat.free)
 ```
 
-**`Stacks.CategoryHomology.representableReplacementComplexIsoFreeNerve`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean#L369). The attribute's comment: “representable_contractible”.
+**`Stacks.CategoryHomology.representableReplacementComplexIsoFreeNerve`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean#L369). The attribute's comment: “representable\_contractible”.
 
 > The simplicial replacement complex of the extension by zero of the constant integer sheaf is
 > isomorphic to the free abelian chain complex on the nerve of the category over `U`.
@@ -353,7 +353,7 @@ def representableReplacementComplexIsoFreeNerve :
           AddCommGrpCat.free).obj (nerve (Over U)))
 ```
 
-**`Stacks.CategoryHomology.representableReplacementComplexIsoFreeNerve_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean#L382). The attribute's comment: “representable_contractible”.
+**`Stacks.CategoryHomology.representableReplacementComplexIsoFreeNerve_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean#L382). The attribute's comment: “representable\_contractible”.
 
 > The chain-complex comparison takes the generator indexed by a string and
 > an arrow to `U` to the corresponding simplex of the slice category.
@@ -371,7 +371,7 @@ theorem representableReplacementComplexIsoFreeNerve_generator
       FreeAbelianGroup.of (overSimplexEquiv U n ⟨x, f⟩)
 ```
 
-**`Stacks.CategoryHomology.nerveOver_homotopyEquivalent_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean#L434). The attribute's comment: “representable_contractible”.
+**`Stacks.CategoryHomology.nerveOver_homotopyEquivalent_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/RepresentableReplacementAsANerve.lean#L434). The attribute's comment: “representable\_contractible”.
 
 > The nerve of the category over `U`, the simplicial set of strings of arrows ending in an arrow
 > to `U`, is homotopy equivalent to a point.
@@ -382,7 +382,7 @@ theorem nerveOver_homotopyEquivalent_point :
       (SimplicialObject.homotopyEquivalences (Type u)) f
 ```
 
-**`Stacks.CategoryHomology.simplicialReplacementComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/SimplicialReplacement.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/SimplicialReplacement.lean#L176). The attribute's comment: “simplicial_replacement_complex”.
+**`Stacks.CategoryHomology.simplicialReplacementComplex`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/SimplicialReplacement.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/SimplicialReplacement.lean#L176). The attribute's comment: “simplicial\_replacement\_complex”.
 
 > **Stacks 08PG, the simplicial replacement complex.** The chain complex whose degree-`n`
 > term is `⊕_(Uₙ → ⋯ → U₀) F(U₀)` and whose differential is the alternating sum of the face
@@ -393,7 +393,7 @@ noncomputable abbrev simplicialReplacementComplex
     (F : Cᵒᵖ ⥤ AddCommGrpCat.{v}) : ChainComplex AddCommGrpCat.{max u v} ℕ
 ```
 
-**`Stacks.CategoryHomology.simplicialReplacementHomologyDeltaFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/SimplicialReplacementDeltaFunctor.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/SimplicialReplacementDeltaFunctor.lean#L309). The attribute's comment: “delta_functor”.
+**`Stacks.CategoryHomology.simplicialReplacementHomologyDeltaFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/SimplicialReplacementDeltaFunctor.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/SimplicialReplacementDeltaFunctor.lean#L309). The attribute's comment: “delta\_functor”.
 
 > **Stacks Project, Tag 08PG (delta-functor).** Homology of the simplicial replacement,
 > with the natural connecting maps of degreewise short exact sequences, is a homological
@@ -432,7 +432,7 @@ theorem replacementChainMap_homologyMap (f : C' ⥤ C)
       categoryHomologyMap f t n ≫ (categoryHomologyReplacementIso.{u, max u' v} F n).hom
 ```
 
-**`Stacks.CategoryHomology.categoryHomologyMapData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean#L386). The attribute's comment: “homology_map”.
+**`Stacks.CategoryHomology.categoryHomologyMapData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean#L386). The attribute's comment: “homology\_map”.
 
 > The canonical maps on the homology of a category induced by an indexing functor and a
 > coefficient morphism, together with their invariance under natural isomorphisms of indexing
@@ -443,7 +443,7 @@ def categoryHomologyMapData (F : Cᵒᵖ ⥤ AddCommGrpCat.{max u u' v})
     (F' : C'ᵒᵖ ⥤ AddCommGrpCat.{max u u' v}) (n : ℕ) : CategoryHomologyMapData F F' n
 ```
 
-**`Stacks.CategoryHomology.categoryHomologyMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean#L397). The attribute's comment: “homology_map”.
+**`Stacks.CategoryHomology.categoryHomologyMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean#L397). The attribute's comment: “homology\_map”.
 
 > The canonical map on homology induced by a functor `f : C' ⥤ C` and a
 > morphism `t : F' ⟶ f.op ⋙ F` to the inverse-image presheaf.
@@ -454,7 +454,7 @@ def categoryHomologyMap (f : C' ⥤ C) {F : Cᵒᵖ ⥤ AddCommGrpCat.{max u u' 
     categoryHomology.{u', max u v} F' n ⟶ categoryHomology.{u, max u' v} F n
 ```
 
-**`Stacks.CategoryHomology.categoryHomologyMap_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean#L405). The attribute's comment: “homology_map”.
+**`Stacks.CategoryHomology.categoryHomologyMap_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean#L405). The attribute's comment: “homology\_map”.
 
 > Naturally isomorphic functors induce the same map on category homology when the coefficient
 > morphisms agree under the induced reindexing isomorphism.
@@ -467,7 +467,7 @@ theorem categoryHomologyMap_iso (f g : C' ⥤ C) (e : f ≅ g)
     categoryHomologyMap f t n = categoryHomologyMap g s n
 ```
 
-**`Stacks.CategoryHomology.categoryHomologyMap_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean#L415). The attribute's comment: “homology_map”.
+**`Stacks.CategoryHomology.categoryHomologyMap_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean#L415). The attribute's comment: “homology\_map”.
 
 > The canonical map associated with the identity functor and the identity
 > coefficient morphism is the identity on homology.
@@ -478,7 +478,7 @@ theorem categoryHomologyMap_id {C : Type u} [SmallCategory C]
     categoryHomologyMap (𝟭 C) (𝟙 F) n = 𝟙 _
 ```
 
-**`Stacks.CategoryHomology.categoryHomologyMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean, line 424](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean#L424). The attribute's comment: “homology_map”.
+**`Stacks.CategoryHomology.categoryHomologyMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean, line 424](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/Functoriality.lean#L424). The attribute's comment: “homology\_map”.
 
 > Canonical homology maps compose under successive functors and coefficient
 > morphisms.
@@ -524,17 +524,17 @@ theorem replacementChainMap_on_summand (f : C' ⥤ C)
 
 Declarations registered for the tag:
 
-- [`Stacks.ChaoticSite.isContinuous_trivial`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L115), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L223) (StacksFrontier): “chaotic_functors_continuous”.
-- [`Stacks.ChaoticSite.isCocontinuous_trivial`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L126), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L225) (StacksFrontier): “chaotic_functors_continuous”.
-- [`Stacks.ChaoticSite.star_isFibredOneMorphism_of_functor`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L140), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L227) (StacksFrontier): “chaotic_functors_continuous”.
-- [`Stacks.ChaoticSite.constantRingSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L157), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L230) (StacksFrontier): “constant_ringed_topos”.
-- [`Stacks.ChaoticSite.constantRingedTopos`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L163), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L232) (StacksFrontier): “constant_ringed_topos”.
-- [`Stacks.ChaoticSite.functorSituation`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L182), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L234) (StacksFrontier): “ringed_triangle”.
-- [`Stacks.ChaoticSite.functorSituation_totalTopology`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L199), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L236) (StacksFrontier): “ringed_triangle”.
-- [`Stacks.ChaoticSite.functorSituation_sourceTopology`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L208), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L238) (StacksFrontier): “ringed_triangle”.
-- [`Stacks.ChaoticSite.constantRingedMorphism`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean#L309), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean#L377) (StacksFrontier): “ringed_morphism”.
-- [`Stacks.ChaoticSite.constantRingedMorphismOnTrivial`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean#L335), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean#L379) (StacksFrontier): “ringed_morphism”.
-- [`Stacks.ChaoticSite.constantRingedMorphismOnTrivial_inverseImage`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean#L347), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean#L381) (StacksFrontier): “ringed_morphism”.
+- [`Stacks.ChaoticSite.isContinuous_trivial`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L115), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L223) (StacksFrontier): “chaotic\_functors\_continuous”.
+- [`Stacks.ChaoticSite.isCocontinuous_trivial`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L126), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L225) (StacksFrontier): “chaotic\_functors\_continuous”.
+- [`Stacks.ChaoticSite.star_isFibredOneMorphism_of_functor`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L140), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L227) (StacksFrontier): “chaotic\_functors\_continuous”.
+- [`Stacks.ChaoticSite.constantRingSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L157), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L230) (StacksFrontier): “constant\_ringed\_topos”.
+- [`Stacks.ChaoticSite.constantRingedTopos`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L163), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L232) (StacksFrontier): “constant\_ringed\_topos”.
+- [`Stacks.ChaoticSite.functorSituation`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L182), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L234) (StacksFrontier): “ringed\_triangle”.
+- [`Stacks.ChaoticSite.functorSituation_totalTopology`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L199), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L236) (StacksFrontier): “ringed\_triangle”.
+- [`Stacks.ChaoticSite.functorSituation_sourceTopology`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L208), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedTopos.lean#L238) (StacksFrontier): “ringed\_triangle”.
+- [`Stacks.ChaoticSite.constantRingedMorphism`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean#L309), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean#L377) (StacksFrontier): “ringed\_morphism”.
+- [`Stacks.ChaoticSite.constantRingedMorphismOnTrivial`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean#L335), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean#L379) (StacksFrontier): “ringed\_morphism”.
+- [`Stacks.ChaoticSite.constantRingedMorphismOnTrivial_inverseImage`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean#L347), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/ConstantRingedToposMorphism.lean#L381) (StacksFrontier): “ringed\_morphism”.
 
 ## Tag 08Q6, a remark
 
@@ -610,7 +610,7 @@ theorem evaluationToTotalDerivedColimit_comp_counit' (U : C) (K : CochainComplex
       ((NatTrans.mapHomologicalComplex (sectionsToColimit' C D U) (ComplexShape.up ℤ)).app K)
 ```
 
-**`Stacks.CategoryHomology.evaluationToDerivedColimitOfAbelianDiagrams`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/EvaluationToDerivedColimit.lean, line 714](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/EvaluationToDerivedColimit.lean#L714). The attribute's comment: “ab_map”.
+**`Stacks.CategoryHomology.evaluationToDerivedColimitOfAbelianDiagrams`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/EvaluationToDerivedColimit.lean, line 714](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/EvaluationToDerivedColimit.lean#L714). The attribute's comment: “ab\_map”.
 
 > **The canonical map for abelian presheaves.** The canonical map `F^•(U) ⟶ Lπ_!(F^•)` in
 > `D(Ab)`, for a complex `F^•` of abelian presheaves — equivalently, of abelian sheaves for the
@@ -623,7 +623,7 @@ def evaluationToDerivedColimitOfAbelianDiagrams (C : Type u) [SmallCategory C] (
       DerivedCategory.Q ⋙ totalDerivedColimit C AddCommGrpCat.{max u v}
 ```
 
-**`Stacks.CategoryHomology.evaluationToDerivedColimitOfModuleDiagrams`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/EvaluationToDerivedColimit.lean, line 723](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/EvaluationToDerivedColimit.lean#L723). The attribute's comment: “module_map”.
+**`Stacks.CategoryHomology.evaluationToDerivedColimitOfModuleDiagrams`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/EvaluationToDerivedColimit.lean, line 723](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CategoryHomology/EvaluationToDerivedColimit.lean#L723). The attribute's comment: “module\_map”.
 
 > **The canonical map for modules.** The canonical map `F^•(U) ⟶ Lπ_!(F^•)`, read in `D(B)`,
 > for a complex of modules over the constant sheaf of rings `B̲` on a small chaotic site.
@@ -936,7 +936,7 @@ def mooreCochainNatIsoDerivedColimit (hU : IsPointResolution U) :
         DerivedCategory.Q ⋙ totalDerivedColimit C (ModuleCat.{u} B)
 ```
 
-**`Stacks.ChaoticSite.simplexCategoryLeftDerivedColimitNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/SimplexCategoryMooreComplex.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/SimplexCategoryMooreComplex.lean#L99). The attribute's comment: “at C = Δ with U_• = 𝟭: L_n of the colimit over Δᵒᵖ is the homology of the alternating-face-map complex of the simplicial abelian group itself, there being no cosimplicial object left in the statement. Abelian coefficients in the universe of Δ, which is 0”.
+**`Stacks.ChaoticSite.simplexCategoryLeftDerivedColimitNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/SimplexCategoryMooreComplex.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/SimplexCategoryMooreComplex.lean#L99). The attribute's comment: “at C = Δ with U\_• = 𝟭: L\_n of the colimit over Δᵒᵖ is the homology of the alternating-face-map complex of the simplicial abelian group itself, there being no cosimplicial object left in the statement. Abelian coefficients in the universe of Δ, which is 0”.
 
 > **Stacks 08Q9 at `C = Δ`.** For a simplicial abelian group `ℱ`, the homology `L_nπ_!` of `Δ`
 > with coefficients `ℱ` is the `n`th homology of the alternating-face-map complex of `ℱ`, naturally
@@ -976,7 +976,7 @@ def simplexCategoryMooreCochainNatIsoDerivedColimit :
         DerivedCategory.Q ⋙ totalDerivedColimit SimplexCategory AddCommGrpCat.{0}
 ```
 
-**`Stacks.ChaoticSite.ModuleValued.simplexCategoryModuleLeftDerivedColimitNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/SimplexCategoryMooreComplex.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/SimplexCategoryMooreComplex.lean#L153). The attribute's comment: “at C = Δ with U_• = 𝟭, module coefficients: L_n of the colimit over Δᵒᵖ is the homology of the alternating-face-map complex of the simplicial B-module itself. The ring and the module sections lie in the universe of Δ, which is 0”.
+**`Stacks.ChaoticSite.ModuleValued.simplexCategoryModuleLeftDerivedColimitNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/SimplexCategoryMooreComplex.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/SimplexCategoryMooreComplex.lean#L153). The attribute's comment: “at C = Δ with U\_• = 𝟭, module coefficients: L\_n of the colimit over Δᵒᵖ is the homology of the alternating-face-map complex of the simplicial B-module itself. The ring and the module sections lie in the universe of Δ, which is 0”.
 
 > **Stacks 08Q9 at `C = Δ`, module coefficients.** For a simplicial `B`-module `ℱ`, the homology
 > `L_nπ_!` of `Δ` with coefficients `ℱ` is the `n`th homology of the alternating-face-map complex of
@@ -1319,7 +1319,7 @@ theorem isIso_totalDerivedColimitTensorComparison
 
 [Tag 08QD](https://stacks.math.columbia.edu/tag/08QD) in the Stacks Project.
 
-**`Stacks.ChaoticSite.quasiIso_alexanderWhitney`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/FlatEilenbergZilber.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/FlatEilenbergZilber.lean#L138). The attribute's comment: “flat_eilenberg_zilber”.
+**`Stacks.ChaoticSite.quasiIso_alexanderWhitney`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/FlatEilenbergZilber.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/FlatEilenbergZilber.lean#L138). The attribute's comment: “flat\_eilenberg\_zilber”.
 
 > **Stacks Project, Tag 08QD.** The Alexander–Whitney map of two simplicial modules is a
 > quasi-isomorphism. This is the Eilenberg–Zilber theorem: the Moore complex
@@ -1365,7 +1365,7 @@ def simplexCategoryMooreNatIsoDerivedLowerShriek :
         DerivedCategory.Q ⋙ totalDerivedColimit SimplexCategory (ModuleCat.{w} B)
 ```
 
-**`Stacks.ChaoticSite.flatEilenbergZilber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/SimplexCategoryModuleCoefficients.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/SimplexCategoryModuleCoefficients.lean#L200). The attribute's comment: “flat_eilenberg_zilber: for flat simplicial `B`-modules `M_•`, `M'_•`, the complex `s(M_• ⊗_B M'_•)` is quasi-isomorphic to the total complex of `s(M_•) ⊗_B s(M'_•)`”.
+**`Stacks.ChaoticSite.flatEilenbergZilber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/SimplexCategoryModuleCoefficients.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/SimplexCategoryModuleCoefficients.lean#L200). The attribute's comment: “flat\_eilenberg\_zilber: for flat simplicial `B`-modules `M_•`, `M'_•`, the complex `s(M_• ⊗_B M'_•)` is quasi-isomorphic to the total complex of `s(M_•) ⊗_B s(M'_•)`”.
 
 > **The Eilenberg–Zilber comparison holds for every commutative ring.** For two degreewise flat
 > simplicial `B`-modules the Moore complex of the degreewise tensor product is quasi-isomorphic to
@@ -1381,7 +1381,7 @@ theorem flatEilenbergZilber.{t, s} (B : Type s) [CommRing B] :
 Declarations registered for the tag:
 
 - [`Stacks.ChaoticSite.isPointResolution_id_simplexCategory`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedLowerShriekFreeModuleBaseChange.lean#L223), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplexCategoryPointResolution.lean, line 32](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/SimplexCategoryPointResolution.lean#L32) (StacksFrontier): “the identity functor of `Δ` is a point resolution, which is the hypothesis of Lemma 08Q9 for `C = Δ`”.
-- [`SSet.stdSimplex.homotopyEquivalences_hom_obj₀`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean#L793), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/StandardSimplexContractible.lean, line 20](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/StandardSimplexContractible.lean#L20) (StacksFrontier): “simplex_contractible”.
+- [`SSet.stdSimplex.homotopyEquivalences_hom_obj₀`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Homotopy/Equivalence.lean#L793), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/StandardSimplexContractible.lean, line 20](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Simplicial/StandardSimplexContractible.lean#L20) (StacksFrontier): “simplex\_contractible”.
 
 ## Tag 08RX, a lemma
 
@@ -1451,7 +1451,7 @@ theorem isIso_derivedColimitTensorComparison_app (hU : IsPointResolution U)
 
 [Tag 09CZ](https://stacks.math.columbia.edu/tag/09CZ) in the Stacks Project.
 
-**`Stacks.ChaoticSite.derivedColimitWithCoefficients`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedLowerShriek.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedLowerShriek.lean#L289). The attribute's comment: “derived_colimit_with_b_coefficients_2”.
+**`Stacks.ChaoticSite.derivedColimitWithCoefficients`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedLowerShriek.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedLowerShriek.lean#L289). The attribute's comment: “derived\_colimit\_with\_b\_coefficients\_2”.
 
 > **Stacks 09CZ.** For a map `φ : O ⟶ B̲` from a sheaf of rings on a chaotic site to the
 > constant sheaf of rings of a ring `B`, derived lower shriek with coefficients in `O` is the
@@ -1463,7 +1463,7 @@ def derivedColimitWithCoefficients :
     DerivedCategory (PresheafOfModules.{u} O) ⥤ DerivedCategory (ModuleCat.{u} B)
 ```
 
-**`Stacks.ChaoticSite.derivedColimitWithCoefficients_commShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedLowerShriek.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedLowerShriek.lean#L305). The attribute's comment: “derived_colimit_with_b_coefficients_exact”.
+**`Stacks.ChaoticSite.derivedColimitWithCoefficients_commShift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedLowerShriek.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedLowerShriek.lean#L305). The attribute's comment: “derived\_colimit\_with\_b\_coefficients\_exact”.
 
 > **Stacks 09CZ**: derived lower shriek with coefficients commutes with the shift, being a
 > left adjoint of a functor that does.
@@ -1473,7 +1473,7 @@ instance derivedColimitWithCoefficients_commShift :
     (derivedColimitWithCoefficients B O φ).CommShift ℤ
 ```
 
-**`Stacks.ChaoticSite.derivedColimitWithCoefficients_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedLowerShriek.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedLowerShriek.lean#L312). The attribute's comment: “derived_colimit_with_b_coefficients_exact”.
+**`Stacks.ChaoticSite.derivedColimitWithCoefficients_isTriangulated`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedLowerShriek.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChaoticSite/DerivedLowerShriek.lean#L312). The attribute's comment: “derived\_colimit\_with\_b\_coefficients\_exact”.
 
 > **Stacks 09CZ**: derived lower shriek with coefficients is an exact functor of triangulated
 > categories `D(O) ⟶ D(B)`.

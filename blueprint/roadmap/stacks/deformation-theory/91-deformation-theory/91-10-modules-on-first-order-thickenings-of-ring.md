@@ -68,7 +68,7 @@ Declarations registered for the tag:
 
 [Tag 08MC](https://stacks.math.columbia.edu/tag/08MC) in the Stacks Project.
 
-**`Deformation.ToposThickening.compatibleMap_add_quotientKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean#L89). The attribute's comment: “compatible_lifts_torsor”.
+**`Deformation.ToposThickening.compatibleMap_add_quotientKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean#L89). The attribute's comment: “compatible\_lifts\_torsor”.
 
 > Adding a map which factors through the first quotient and the second kernel preserves
 > compatibility.
@@ -84,7 +84,7 @@ theorem compatibleMap_add_quotientKernel
           D.secondExtension.f)
 ```
 
-**`Deformation.ToposThickening.compatibleMap_unique_quotientKernel_difference`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean#L111). The attribute's comment: “compatible_lifts_torsor”.
+**`Deformation.ToposThickening.compatibleMap_unique_quotientKernel_difference`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean#L111). The attribute's comment: “compatible\_lifts\_torsor”.
 
 > Any two compatible maps differ by a unique map from the first quotient to the second kernel.
 > Together with closure under those translations, this is the torsor assertion.
@@ -102,7 +102,7 @@ theorem compatibleMap_unique_quotientKernel_difference
 
 Declarations registered for the tag:
 
-- [`idealActionMap_naturality`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=idealActionMap_naturality#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean#L162) (StacksFrontier): “ideal_action_compatible”.
+- [`idealActionMap_naturality`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=idealActionMap_naturality#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/CompatibleLifts.lean#L162) (StacksFrontier): “ideal\_action\_compatible”.
 
 ## Tag 08MD, a lemma
 
@@ -241,7 +241,7 @@ theorem existenceObstructionClass_eq_zero_iff
 
 [Tag 08MG](https://stacks.math.columbia.edu/tag/08MG) in the Stacks Project.
 
-**`Deformation.ToposThickening.Trivialization`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/Basic.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/Basic.lean#L68). The attribute's comment: “trivial_first_order_thickening_and_trivialization”.
+**`Deformation.ToposThickening.Trivialization`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/Basic.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/Basic.lean#L68). The attribute's comment: “trivial\_first\_order\_thickening\_and\_trivialization”.
 
 > A retraction of a morphism of ringed topoi: a morphism in the reverse direction whose
 > composite direct-image functor is identified with the identity, compatibly with the
@@ -251,7 +251,7 @@ theorem existenceObstructionClass_eq_zero_iff
 structure Trivialization (i : RingedToposHom X Y)
 ```
 
-**`Deformation.ToposThickening.IsTrivial`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/Basic.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/Basic.lean#L87). The attribute's comment: “trivial_first_order_thickening_and_trivialization”.
+**`Deformation.ToposThickening.IsTrivial`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/Basic.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/Basic.lean#L87). The attribute's comment: “trivial\_first\_order\_thickening\_and\_trivialization”.
 
 > A morphism of ringed topoi is trivial if it admits a trivialization.
 
@@ -259,7 +259,7 @@ structure Trivialization (i : RingedToposHom X Y)
 abbrev IsTrivial (i : RingedToposHom X Y) : Prop
 ```
 
-**`Deformation.ToposThickening.TrivializedThickening.moduleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/ModuleEquivalence.lean, line 532](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/ModuleEquivalence.lean#L532). The attribute's comment: “trivialized first order thickenings are the O-modules; morphisms of thickenings run in the algebraic direction (A_T ⟶ A_S of sheaves of rings, the opposite of the source's ringed-topos morphisms of Stacks 08MK), so the module side carries no ᵒᵖ; stated at a single universe (site C : Type u with Category.{u} C, sheaves valued in Type u), which is the source's own setting since the Stacks Project fixes one universe throughout”.
+**`Deformation.ToposThickening.TrivializedThickening.moduleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/ModuleEquivalence.lean, line 532](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/ModuleEquivalence.lean#L532). The attribute's comment: “trivialized first order thickenings are the O-modules; morphisms of thickenings run in the algebraic direction (A\_T ⟶ A\_S of sheaves of rings, the opposite of the source's ringed-topos morphisms of Stacks 08MK), so the module side carries no ᵒᵖ; stated at a single universe (site C : Type u with Category.\{u} C, sheaves valued in Type u), which is the source's own setting since the Stacks Project fixes one universe throughout”.
 
 > **Stacks 08MG.** The category of trivialized first order thickenings of a ringed topos
 > `(Sh(C), O)` is equivalent to the category of `O`-modules: a module goes to the square-zero
@@ -279,7 +279,7 @@ noncomputable def moduleEquivalence :
     SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf O) ≌ TrivializedThickening O
 ```
 
-**`Deformation.ToposThickening.trivializationOfSplitting`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/OfSplitting.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/OfSplitting.lean#L59). The attribute's comment: “splitting_determines_trivialization”.
+**`Deformation.ToposThickening.trivializationOfSplitting`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/OfSplitting.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/OfSplitting.lean#L59). The attribute's comment: “splitting\_determines\_trivialization”.
 
 > A splitting of the structure sheaf of a first order thickening determines a trivialization
 > whose structure map is the given section.
@@ -295,7 +295,7 @@ noncomputable def trivializationOfSplitting (i : RingedToposHom X Y)
         π.retraction.fSharp ≫ α.hom.app Y.O = split }
 ```
 
-**`Deformation.ToposThickening.splittingFromTrivialization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/SplittingOf.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/SplittingOf.lean#L55). The attribute's comment: “splitting_from_trivialization”.
+**`Deformation.ToposThickening.splittingFromTrivialization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/SplittingOf.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/SplittingOf.lean#L55). The attribute's comment: “splitting\_from\_trivialization”.
 
 > A trivialization splits the structure map of a first order thickening. The natural
 > equivalence identifies the ring sheaf with the square-zero extension of its quotient by its
@@ -321,7 +321,7 @@ noncomputable def splittingFromTrivialization (i : RingedToposHom X Y)
 structure TrivializedThickening (O : Sheaf J CommRingCat.{u})
 ```
 
-**`Deformation.ToposThickening.TrivializedThickening.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedCategory.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedCategory.lean#L131). The attribute's comment: “the category of trivialized first order thickenings: morphisms, in the algebraic direction A_T ⟶ A_S (the opposite of the source's ringed-topos morphisms of Stacks 08MK)”.
+**`Deformation.ToposThickening.TrivializedThickening.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedCategory.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedCategory.lean#L131). The attribute's comment: “the category of trivialized first order thickenings: morphisms, in the algebraic direction A\_T ⟶ A\_S (the opposite of the source's ringed-topos morphisms of Stacks 08MK)”.
 
 > A morphism of trivialized first order thickenings: a morphism of the structure sheaves
 > compatible with both the surjections and the trivializations.
@@ -336,7 +336,7 @@ structure TrivializedThickening (O : Sheaf J CommRingCat.{u})
 structure Hom (T S : TrivializedThickening O)
 ```
 
-**`Deformation.ToposThickening.trivializedThickeningOfTrivialization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedComparison.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedComparison.lean#L153). The attribute's comment: “a trivialized thickening is an object of the category; the target ringed topos is at a single universe, forced by Deformation.ToposThickening.TrivializedThickening, whose category is declared over a site C : Type u with Category.{u} C and sheaves valued in Type u — the source's own setting, since the Stacks Project fixes one universe throughout”.
+**`Deformation.ToposThickening.trivializedThickeningOfTrivialization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedComparison.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/Trivialization/TrivializedComparison.lean#L153). The attribute's comment: “a trivialized thickening is an object of the category; the target ringed topos is at a single universe, forced by Deformation.ToposThickening.TrivializedThickening, whose category is declared over a site C : Type u with Category.\{u} C and sheaves valued in Type u — the source's own setting, since the Stacks Project fixes one universe throughout”.
 
 > A trivialization of a first order thickening of ringed topoi exhibits the thickening as an
 > object of the category of trivialized first order thickenings of `(Sh(D), i_*O)`, which is the

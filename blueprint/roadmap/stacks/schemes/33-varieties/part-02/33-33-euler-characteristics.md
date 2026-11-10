@@ -142,7 +142,7 @@ theorem eulerCharacteristic_eq_finrank_cohomologyOverField_zero_of_supp_le_zero 
     eulerCharacteristic k f F = (Module.finrank k (cohomologyOverField k f F 0) : ℤ)
 ```
 
-**`AlgebraicGeometry.exists_eulerCharacteristic_tensorSheaf_eq_rank_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorEulerZeroDim/FiniteRank.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TensorEulerZeroDim/FiniteRank.lean#L343). The attribute's comment: “tensor_rank”.
+**`AlgebraicGeometry.exists_eulerCharacteristic_tensorSheaf_eq_rank_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorEulerZeroDim/FiniteRank.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TensorEulerZeroDim/FiniteRank.lean#L343). The attribute's comment: “tensor\_rank”.
 
 > **Clause (5) of [Stacks, Tag 0AYT].** Let `k` be a field, `X` a proper scheme over `k` and
 > `ℱ` a coherent sheaf with `dim Supp ℱ ≤ 0`. Then

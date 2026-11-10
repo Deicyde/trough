@@ -29,7 +29,7 @@ public def EtaleFundamentalGroup (X : Scheme.{u}) [ConnectedSpace X]
 
 [Tag 0BND](https://stacks.math.columbia.edu/tag/0BND) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finiteEtaleEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L85). The attribute's comment: “(1) the equivalence of FÉt_X with the finite continuous π₁(X, x)-sets; (2) and (3) not covered here”.
+**`AlgebraicGeometry.exists_finiteEtaleEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L85). The attribute's comment: “(1) the equivalence of FÉt\_X with the finite continuous π₁(X, x)-sets; (2) and (3) not covered here”.
 
 > **Stacks Project, Tags 0BND (1) and 03VF (3).** Finite étale covers of a connected scheme `X`
 > are equivalent to finite sets with a continuous action of `π₁(X, x)`, by an equivalence whose
@@ -49,7 +49,7 @@ theorem exists_finiteEtaleEquivalence (X : Scheme.{u}) [ConnectedSpace X]
             (σ.asIso.app Y).hom ((α.hom.app Y) y)
 ```
 
-**`AlgebraicGeometry.nonempty_finiteEtaleFiberFunctorIso_of_connectedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L104). The attribute's comment: “(2) existence of an isomorphism t : F_x ≅ F_x' of the geometric fibre functors at two base points; the comparison of fundamental groups it induces, that comparison's independence up to inner conjugation and its compatibility with (1) are separate, and (1) and (3) are not covered here”.
+**`AlgebraicGeometry.nonempty_finiteEtaleFiberFunctorIso_of_connectedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L104). The attribute's comment: “(2) existence of an isomorphism t : F\_x ≅ F\_x' of the geometric fibre functors at two base points; the comparison of fundamental groups it induces, that comparison's independence up to inner conjugation and its compatibility with (1) are separate, and (1) and (3) are not covered here”.
 
 > **Stacks Project, Tag 0BND (2), existence of the isomorphism of fibre functors.** Given a
 > second geometric point `x'` of a connected scheme `X`, there is an isomorphism

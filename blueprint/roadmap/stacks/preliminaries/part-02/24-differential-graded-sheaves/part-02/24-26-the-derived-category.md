@@ -14,7 +14,7 @@ Section 24.26 of the Stacks Project, [Tag 0FT1](https://stacks.math.columbia.edu
 
 [Tag 0FT2](https://stacks.math.columbia.edu/tag/0FT2) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.zerothCohomology_map_eq_of_homotopic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomology.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomology.lean#L61). The attribute's comment: “h0_factors”.
+**`SheafOfModules.DifferentialGradedModule.zerothCohomology_map_eq_of_homotopic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomology.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomology.lean#L61). The attribute's comment: “h0\_factors”.
 
 > Homotopic morphisms of right differential graded modules act identically on zeroth
 > cohomology.
@@ -25,7 +25,7 @@ theorem zerothCohomology_map_eq_of_homotopic (A : DifferentialGradedAlgebra.{t, 
     (zerothCohomologyFunctor A).map f = (zerothCohomologyFunctor A).map g
 ```
 
-**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.zerothCohomologyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomology.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomology.lean#L85). The attribute's comment: “h0_factors”.
+**`SheafOfModules.DifferentialGradedModule.HomotopyCategory.zerothCohomologyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomology.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedZerothCohomology.lean#L85). The attribute's comment: “h0\_factors”.
 
 > Zeroth cohomology on the homotopy category of right differential graded modules.
 

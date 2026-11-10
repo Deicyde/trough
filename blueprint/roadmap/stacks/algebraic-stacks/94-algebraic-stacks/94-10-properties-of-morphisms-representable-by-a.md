@@ -14,7 +14,7 @@ Section 94.10 of the Stacks Project, [Tag 03YJ](https://stacks.math.columbia.edu
 
 [Tag 03YJ](https://stacks.math.columbia.edu/tag/03YJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_schemePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean#L82). The attribute's comment: “in the situation of Lemma 045G, every 1-morphism x : (Sch/U)_fppf -> X is representable by algebraic spaces, so that saying x has P makes sense”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_schemePoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean#L82). The attribute's comment: “in the situation of Lemma 045G, every 1-morphism x : (Sch/U)\_fppf -> X is representable by algebraic spaces, so that saying x has P makes sense”.
 
 > **Stacks, Section 03YJ.** If the diagonal of a category fibred in groupoids `𝒳` over the
 > big fppf site of `S` is representable by algebraic spaces, then every 1-morphism
@@ -29,7 +29,7 @@ theorem isRepresentableByAlgebraicSpaces_schemePoint
     IsRepresentableByAlgebraicSpaces B S hS x.hom
 ```
 
-**`AlgebraicGeometry.Stack.SchemePointHasRelativeProperty`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean#L98). The attribute's comment: “for X as in Lemma 045G and P as in Definition 03YK, the property that a 1-morphism x : (Sch/U)_fppf -> X has P”.
+**`AlgebraicGeometry.Stack.SchemePointHasRelativeProperty`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SchemePointRelativeProperty.lean#L98). The attribute's comment: “for X as in Lemma 045G and P as in Definition 03YK, the property that a 1-morphism x : (Sch/U)\_fppf -> X has P”.
 
 > **Stacks, Section 03YJ.** Let `𝒳` be a category fibred in groupoids over the big fppf site
 > of `S` whose diagonal is representable by algebraic spaces, and let `𝒫` be a property of

@@ -71,7 +71,7 @@ instance jacobsonSpace_isLocal_etale :
     ObjectProperty.IsLocal (fun X : Scheme.{u} => JacobsonSpace X) Scheme.etalePrecoverage
 ```
 
-**`AlgebraicGeometry.isLocallyNoetherian_and_hasPropertySk_isLocal_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L122). The attribute's comment: “item (3): locally Noetherian and (S_k), by Stacks 036A”.
+**`AlgebraicGeometry.isLocallyNoetherian_and_hasPropertySk_isLocal_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L122). The attribute's comment: “item (3): locally Noetherian and (S\_k), by Stacks 036A”.
 
 > **Stacks Project, Tag 03E7, item (3).** Being locally Noetherian and satisfying Serre's
 > condition `(S_k)` is local for étale coverings of schemes.
@@ -115,7 +115,7 @@ instance isGorenstein_isLocal_etale :
     ObjectProperty.IsLocal (fun X : Scheme.{u} => IsGorenstein X) Scheme.etalePrecoverage
 ```
 
-**`AlgebraicGeometry.isLocallyNoetherian_and_isRegularInCodimension_isLocal_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L206). The attribute's comment: “item (8): locally Noetherian and (R_k), by Stacks 036C”. References: EGA IV (17.5.8), “(iii), special case”.
+**`AlgebraicGeometry.isLocallyNoetherian_and_isRegularInCodimension_isLocal_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L206). The attribute's comment: “item (8): locally Noetherian and (R\_k), by Stacks 036C”. References: EGA IV (17.5.8), “(iii), special case”.
 
 > **Stacks Project, Tag 03E7, item (8).** Being locally Noetherian and regular in
 > codimension `k` is local for étale coverings of schemes.
@@ -235,7 +235,7 @@ abbrev HasPropertyAtPoint (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contain
 
 [Tag 0BBL](https://stacks.math.columbia.edu/tag/0BBL) in the Stacks Project.
 
-**`AlgebraicGeometry.GermOfScheme.isEtaleLocal_stalk_property`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/LocalRingProperty.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germ/LocalRingProperty.lean#L50). The attribute's comment: “germ_criterion”.
+**`AlgebraicGeometry.GermOfScheme.isEtaleLocal_stalk_property`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/LocalRingProperty.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germ/LocalRingProperty.lean#L50). The attribute's comment: “germ\_criterion”.
 
 > **Stacks 0BBL, the germ criterion.** A property of local rings which is invariant under
 > isomorphisms and unchanged on passing to a prime above it along an étale ring map induces an
@@ -253,7 +253,7 @@ theorem GermOfScheme.isEtaleLocal_stalk_property (P : (R : Type u) → [CommRing
     GermOfScheme.IsEtaleLocal (fun g => P (g.scheme.presheaf.stalk g.point))
 ```
 
-**`AlgebraicGeometry.Space.HasLocalRingPropertyAtPoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReducedLocalRings.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ReducedLocalRings.lean#L72). The attribute's comment: “local_ring_of_an_algebraic_space_has_p”.
+**`AlgebraicGeometry.Space.HasLocalRingPropertyAtPoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReducedLocalRings.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ReducedLocalRings.lean#L72). The attribute's comment: “local\_ring\_of\_an\_algebraic\_space\_has\_p”.
 
 > **Stacks 0BBL, the local ring of an algebraic space.** A property `P` of local rings which
 > is invariant under étale localization holds for the local ring of an algebraic space `F` at a

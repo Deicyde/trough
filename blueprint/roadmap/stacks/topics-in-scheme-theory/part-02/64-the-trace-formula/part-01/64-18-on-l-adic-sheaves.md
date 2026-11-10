@@ -14,7 +14,7 @@ Section 64.18 of the Stacks Project, [Tag 03UL](https://stacks.math.columbia.edu
 
 [Tag 03UM](https://stacks.math.columbia.edu/tag/03UM) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.LAdicSheaf`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/LAdicSheaves.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/LAdicSheaves.lean#L134). The attribute's comment: “objects”. References: SGA 5 V (3.1), “ℓ-adic étale case”; SGA 4½ Rapport (2.1), “Z_ℓ-sheaf definition”; SGA 5 V (3.1.1), “A=Z_ℓ, J=(ℓ), étale site”; SGA 5 VI (1.1.1); SGA 5 VI (1.2), “Z_ℓ-sheaf definition”.
+**`AlgebraicGeometry.SmallEtale.LAdicSheaf`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Etale/LAdicSheaves.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/LAdicSheaves.lean#L134). The attribute's comment: “objects”. References: SGA 5 V (3.1), “ℓ-adic étale case”; SGA 4½ Rapport (2.1), “Z\_ℓ-sheaf definition”; SGA 5 V (3.1.1), “A=Z\_ℓ, J=(ℓ), étale site”; SGA 5 VI (1.1.1); SGA 5 VI (1.2), “Z\_ℓ-sheaf definition”.
 
 > **Stacks 03UM.** An ℓ-adic sheaf is an inverse system of constructible `ℤ/ℓⁿℤ`-module
 > sheaves whose successive scalar reductions are isomorphisms.
@@ -192,7 +192,7 @@ public instance LAdicSheaf.preadditive : Preadditive (LAdicSheaf.{u, m} B X ℓ)
 
 [Tag 03UQ](https://stacks.math.columbia.edu/tag/03UQ) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.finite_finiteLevelStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/FiniteLevelStalk.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/FiniteLevelStalk.lean#L385). The attribute's comment: “finite_level_stalks”.
+**`Stacks.EtaleCohomology.finite_finiteLevelStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/FiniteLevelStalk.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/FiniteLevelStalk.lean#L385). The attribute's comment: “finite\_level\_stalks”.
 
 > Every finite-level stalk of an ℓ-adic sheaf at a geometric point is finite.
 
@@ -201,7 +201,7 @@ public theorem finite_finiteLevelStalk (F : LAdicSheaf B X ℓ) (s : GeometricPo
     Finite (finiteLevelStalk B X ℓ F s n)
 ```
 
-**`Stacks.EtaleCohomology.finiteLevelStalkTransition_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/FiniteLevelStalk.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/FiniteLevelStalk.lean#L404). The attribute's comment: “finite_level_stalks”.
+**`Stacks.EtaleCohomology.finiteLevelStalkTransition_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/FiniteLevelStalk.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/FiniteLevelStalk.lean#L404). The attribute's comment: “finite\_level\_stalks”.
 
 > Each transition between consecutive finite-level stalks is surjective.
 
@@ -211,7 +211,7 @@ public theorem finiteLevelStalkTransition_surjective (F : LAdicSheaf B X ℓ)
     Function.Surjective (finiteLevelStalkTransition B X ℓ F s n).hom
 ```
 
-**`Stacks.EtaleCohomology.finiteLevelStalkTransition_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/FiniteLevelStalk.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/FiniteLevelStalk.lean#L427). The attribute's comment: “finite_level_stalks”.
+**`Stacks.EtaleCohomology.finiteLevelStalkTransition_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/FiniteLevelStalk.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/FiniteLevelStalk.lean#L427). The attribute's comment: “finite\_level\_stalks”.
 
 > The transition identifies the quotient of the level-`n+1` stalk by `ℓⁿ⁺¹` with the
 > level-`n` stalk.
@@ -228,7 +228,7 @@ public theorem finiteLevelStalkTransition_quotient (F : LAdicSheaf B X ℓ)
       ∀ x, e (Submodule.Quotient.mk x) = (finiteLevelStalkTransition B X ℓ F s n).hom x
 ```
 
-**`Stacks.EtaleCohomology.LAdicSheaf.stalk`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Stalk.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Stalk.lean#L87). The attribute's comment: “stalk_of_a_sheaf”. References: SGA 4½ Rapport (2.2), “fiber definition”.
+**`Stacks.EtaleCohomology.LAdicSheaf.stalk`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Stalk.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Stalk.lean#L87). The attribute's comment: “stalk\_of\_a\_sheaf”. References: SGA 4½ Rapport (2.2), “fiber definition”.
 
 > The stalk of an ℓ-adic sheaf at a geometric point: the inverse limit of its finite-level
 > stalks, as a `ℤ_[ℓ]`-module.
@@ -238,7 +238,7 @@ public abbrev LAdicSheaf.stalk (F : LAdicSheaf B X ℓ) (x : GeometricPoint X.1)
     Type (u + 1)
 ```
 
-**`Stacks.EtaleCohomology.LAdicSheaf.finite_stalk`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/StalkFiniteness.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/StalkFiniteness.lean#L163). The attribute's comment: “finite_limit_stalk”.
+**`Stacks.EtaleCohomology.LAdicSheaf.finite_stalk`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/StalkFiniteness.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/StalkFiniteness.lean#L163). The attribute's comment: “finite\_limit\_stalk”.
 
 > The stalk of an ℓ-adic sheaf is finite over the ℓ-adic integers.
 
@@ -249,7 +249,7 @@ public instance LAdicSheaf.finite_stalk
       (LAdicSheaf.stalk B X ℓ F x)
 ```
 
-**`Stacks.EtaleCohomology.LAdicSheaf.stalk_equiv_free_prod_torsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/StalkFiniteness.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/StalkFiniteness.lean#L189). The attribute's comment: “stalk_structure”.
+**`Stacks.EtaleCohomology.LAdicSheaf.stalk_equiv_free_prod_torsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/StalkFiniteness.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/StalkFiniteness.lean#L189). The attribute's comment: “stalk\_structure”.
 
 > A stalk of an ℓ-adic sheaf is a sum of free and prime-power cyclic modules.
 
@@ -268,7 +268,7 @@ public theorem LAdicSheaf.stalk_equiv_free_prod_torsion
 
 [Tag 03UR](https://stacks.math.columbia.edu/tag/03UR) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.LAdicSheaf.IsTorsion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Basic.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Basic.lean#L78). The attribute's comment: “torsion_sheaf”.
+**`Stacks.EtaleCohomology.LAdicSheaf.IsTorsion`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Basic.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Basic.lean#L78). The attribute's comment: “torsion\_sheaf”.
 
 > A torsion ℓ-adic sheaf is annihilated by a single power of ℓ, uniformly
 > at all finite levels.
@@ -287,7 +287,7 @@ public abbrev LAdicSheaf.IsTorsion [IsNoetherian X.1] [Fact ℓ.Prime]
 public abbrev torsionSheaves : ObjectProperty (LAdicSheaf.{u, u + 1} B X ℓ)
 ```
 
-**`Stacks.EtaleCohomology.RationalSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Rational.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Rational.lean#L107). The attribute's comment: “the category of Q_ℓ-sheaves as the quotient by the torsion sheaves”. References: SGA 4½ Rapport (2.9).
+**`Stacks.EtaleCohomology.RationalSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Rational.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Rational.lean#L107). The attribute's comment: “the category of Q\_ℓ-sheaves as the quotient by the torsion sheaves”. References: SGA 4½ Rapport (2.9).
 
 > **Stacks 03UR.** The abelian category of `ℚ_ℓ`-sheaves on `X`: the quotient of the abelian
 > category of `ℤ_ℓ`-sheaves by the Serre subcategory of torsion sheaves. Its objects are the
@@ -297,7 +297,7 @@ public abbrev torsionSheaves : ObjectProperty (LAdicSheaf.{u, u + 1} B X ℓ)
 public abbrev RationalSheaf
 ```
 
-**`Stacks.EtaleCohomology.rationalization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Rational.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Rational.lean#L111). The attribute's comment: “the quotient functor F ↦ F ⊗ Q_ℓ”.
+**`Stacks.EtaleCohomology.rationalization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Rational.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Rational.lean#L111). The attribute's comment: “the quotient functor F ↦ F ⊗ Q\_ℓ”.
 
 > **Stacks 03UR.** The quotient functor `F ↦ F ⊗ ℚ_ℓ` from `ℤ_ℓ`-sheaves to `ℚ_ℓ`-sheaves.
 
@@ -305,7 +305,7 @@ public abbrev RationalSheaf
 public abbrev rationalization : LAdicSheaf.{u, u + 1} B X ℓ ⥤ RationalSheaf B X ℓ
 ```
 
-**`Stacks.EtaleCohomology.RationalSheaf.abelian`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Rational.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Rational.lean#L116). The attribute's comment: “Q_ℓ-sheaves form an abelian category”.
+**`Stacks.EtaleCohomology.RationalSheaf.abelian`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Rational.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Rational.lean#L116). The attribute's comment: “Q\_ℓ-sheaves form an abelian category”.
 
 > **Stacks 03UR.** The category of `ℚ_ℓ`-sheaves on `X` is abelian.
 
@@ -313,7 +313,7 @@ public abbrev rationalization : LAdicSheaf.{u, u + 1} B X ℓ ⥤ RationalSheaf 
 public instance RationalSheaf.abelian : Abelian (RationalSheaf B X ℓ)
 ```
 
-**`Stacks.EtaleCohomology.LAdicSheaf.rationalStalk`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Rational.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Rational.lean#L123). The attribute's comment: “the stalk of F ⊗ Q_l is the stalk of F tensored with Q_l”.
+**`Stacks.EtaleCohomology.LAdicSheaf.rationalStalk`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Rational.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/Rational.lean#L123). The attribute's comment: “the stalk of F ⊗ Q\_l is the stalk of F tensored with Q\_l”.
 
 > **Stacks 03UR.** The stalk at a geometric point `x` of the `ℚ_ℓ`-sheaf `F ⊗ ℚ_ℓ`, for `F` a
 > `ℤ_ℓ`-sheaf: the `ℤ_ℓ`-module stalk of `F` (Tag 03UQ) tensored up to `ℚ_ℓ`. Every `ℚ_ℓ`-sheaf is
@@ -335,7 +335,7 @@ public instance isTorsionObject_isSerreClass (ℓ : ℕ) :
     (isTorsionObject (C := C) ℓ).IsSerreClass
 ```
 
-**`Stacks.CategoryTheory.isLocalizedModule_mapIntLinearMap`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Abelian/SerreClass/BoundedTorsion.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Abelian/SerreClass/BoundedTorsion.lean#L277). The attribute's comment: “Hom_{Q_l}(F,G) = Hom_{Z_l}(F,G) localized at the powers of l”. References: SGA 4½ Rapport (2.9), “more general”.
+**`Stacks.CategoryTheory.isLocalizedModule_mapIntLinearMap`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Abelian/SerreClass/BoundedTorsion.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Abelian/SerreClass/BoundedTorsion.lean#L277). The attribute's comment: “Hom\_\{Q\_l}(F,G) = Hom\_\{Z\_l}(F,G) localized at the powers of l”. References: SGA 4½ Rapport (2.9), “more general”.
 
 > **The hom-groups of a Serre quotient at the `ℓ`-power torsion objects.** The localization
 > functor exhibits `Hom (L.obj X) (L.obj Y)` as the localization of the abelian group `Hom X Y` at
@@ -363,7 +363,7 @@ public instance isLocalizedModule_mapIntLinearMap (X Y : C) :
 public def LAdicSheaf.cohomology (F : LAdicSheaf B X ℓ) (i : ℕ) : AddCommGrpCat.{u + 1}
 ```
 
-**`Stacks.EtaleCohomology.LAdicSheaf.compactlySupportedCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/CompactlySupportedCohomology.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/CompactlySupportedCohomology.lean#L195). The attribute's comment: “H^i_c(X, F) = lim_n H^i_c(X, F_n)”.
+**`Stacks.EtaleCohomology.LAdicSheaf.compactlySupportedCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/CompactlySupportedCohomology.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/CompactlySupportedCohomology.lean#L195). The attribute's comment: “H^i\_c(X, F) = lim\_n H^i\_c(X, F\_n)”.
 
 > **The compactly supported ℓ-adic cohomology of an ℓ-adic sheaf.** For an ℓ-adic sheaf
 > `F = {Fₙ}` on `X` and a degree `i`, this is `Hⁱ_c(X, F) = limₙ Hⁱ_c(X, Fₙ)`.
@@ -373,7 +373,7 @@ public def LAdicSheaf.compactlySupportedCohomology (F : LAdicSheaf B X ℓ) (i :
     ModuleCat.{u + 1} ℤ_[ℓ]
 ```
 
-**`Stacks.EtaleCohomology.LAdicSheaf.rationalCompactlySupportedCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/CompactlySupportedCohomology.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/CompactlySupportedCohomology.lean#L215). The attribute's comment: “H^i_c(X, F' ⊗ Q_ell) = H^i_c(X, F') ⊗_{Z_ell} Q_ell”. References: SGA 4½ Rapport (2.10); SGA 7 I (0.1), “more general”.
+**`Stacks.EtaleCohomology.LAdicSheaf.rationalCompactlySupportedCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/CompactlySupportedCohomology.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LAdicSheaves/CompactlySupportedCohomology.lean#L215). The attribute's comment: “H^i\_c(X, F' ⊗ Q\_ell) = H^i\_c(X, F') ⊗\_\{Z\_ell} Q\_ell”. References: SGA 4½ Rapport (2.10); SGA 7 I (0.1), “more general”.
 
 > **The compactly supported ℓ-adic cohomology with `ℚ_[ℓ]`-coefficients.** For the rational
 > ℓ-adic sheaf `F ⊗ Q_ℓ` attached to an ℓ-adic sheaf `F`, this is the extension of scalars of
@@ -384,7 +384,7 @@ public def LAdicSheaf.rationalCompactlySupportedCohomology (F : LAdicSheaf B X �
     ModuleCat.{u + 1} ℚ_[ℓ]
 ```
 
-**`Stacks.EtaleCohomology.LAdicSheaf.geometricCompactlySupportedCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricLAdicCompactSupport.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricLAdicCompactSupport.lean#L210). The attribute's comment: “H^i_c(X_kbar, F) = lim_n H^i_c(X_kbar, F_n), on the geometric fibre”.
+**`Stacks.EtaleCohomology.LAdicSheaf.geometricCompactlySupportedCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricLAdicCompactSupport.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricLAdicCompactSupport.lean#L210). The attribute's comment: “H^i\_c(X\_kbar, F) = lim\_n H^i\_c(X\_kbar, F\_n), on the geometric fibre”.
 
 > **The compactly supported ℓ-adic cohomology of the geometric fibre**,
 > `Hⁱ_c(X_k̄, F) = limₙ Hⁱ_c(X_k̄, Fₙ)`, as in [Tag 03UT](https://stacks.math.columbia.edu/tag/03UT)
@@ -395,7 +395,7 @@ public def LAdicSheaf.geometricCompactlySupportedCohomology (F : LAdicSheaf B X 
     ModuleCat.{u + 1} ℤ_[ℓ]
 ```
 
-**`Stacks.EtaleCohomology.LAdicSheaf.rationalGeometricCompactlySupportedCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricLAdicCompactSupport.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricLAdicCompactSupport.lean#L226). The attribute's comment: “H^i_c(X_kbar, F' ⊗ Q_ell) = H^i_c(X_kbar, F') ⊗_{Z_ell} Q_ell, on the geometric fibre”. References: SGA 4½ Rapport (2.10); SGA 7 XXI (2.0), “more general”.
+**`Stacks.EtaleCohomology.LAdicSheaf.rationalGeometricCompactlySupportedCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricLAdicCompactSupport.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricLAdicCompactSupport.lean#L226). The attribute's comment: “H^i\_c(X\_kbar, F' ⊗ Q\_ell) = H^i\_c(X\_kbar, F') ⊗\_\{Z\_ell} Q\_ell, on the geometric fibre”. References: SGA 4½ Rapport (2.10); SGA 7 XXI (2.0), “more general”.
 
 > **`Hⁱ_c(X_k̄, F ⊗ Q_ℓ) = Hⁱ_c(X_k̄, F) ⊗_{ℤ_[ℓ]} ℚ_[ℓ]`**, the cohomology of the rational
 > ℓ-adic sheaf `F ⊗ Q_ℓ` that [Tag 03V2](https://stacks.math.columbia.edu/tag/03V2) is about.

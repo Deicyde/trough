@@ -49,7 +49,7 @@ def intersectionProductCycle (C : Stacks.Chow.ChowSituation.{u}) {X : Scheme.{u}
 
 [Tag 0AZS](https://stacks.math.columbia.edu/tag/0AZS) in the Stacks Project.
 
-**`AlgebraicGeometry.TorFormula.derivedCategoryBMinus_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/TorFormula/CoherentTorSheaves.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/TorFormula/CoherentTorSheaves.lean#L246). The attribute's comment: “part (2): D⁻_Coh is closed under the derived tensor product”. References: SGA 6 I (2.16.1), “b), special case”.
+**`AlgebraicGeometry.TorFormula.derivedCategoryBMinus_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/TorFormula/CoherentTorSheaves.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/TorFormula/CoherentTorSheaves.lean#L246). The attribute's comment: “part (2): D⁻\_Coh is closed under the derived tensor product”. References: SGA 6 I (2.16.1), “b), special case”.
 
 > **[Stacks, Tag 0AZS] part (2).** Let `X` be a locally Noetherian scheme. If `K` and `L` are
 > in `D⁻_Coh(𝒪_X)` then so is `K ⊗ᴸ_{𝒪_X} L`.
@@ -205,7 +205,7 @@ theorem localIntersectionMultiplicity_eq_one_of_length_quotient_sup_eq_one {A : 
 
 [Tag 0B2S](https://stacks.math.columbia.edu/tag/0B2S) in the Stacks Project.
 
-**`Stacks.Intersection.TwoPlanes.length_stalk_quotient_sup_eq_three_and_intersectionMultiplicity_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/TorFormulaMultiplicities/HigherTorsCompletion.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/TorFormulaMultiplicities/HigherTorsCompletion.lean#L84). The attribute's comment: “the example as stated: for X, p, V, W with an isomorphism of the completed local ring at p with ℂ[[x, y, z, w]] carrying the ideals of V and W to (xz, xw, yz, yw) and (x - z, y - w), the length of 𝒪_{X,p} / (I_V + I_W) is 3 and the chapter's intersection multiplicity e(X, V · W, p) is 2; stated for any locally Noetherian X, any point and any closed subschemes, which contains the source's nonsingular fourfold, closed point and subvarieties”.
+**`Stacks.Intersection.TwoPlanes.length_stalk_quotient_sup_eq_three_and_intersectionMultiplicity_eq_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/TorFormulaMultiplicities/HigherTorsCompletion.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/TorFormulaMultiplicities/HigherTorsCompletion.lean#L84). The attribute's comment: “the example as stated: for X, p, V, W with an isomorphism of the completed local ring at p with ℂ[[x, y, z, w]] carrying the ideals of V and W to (xz, xw, yz, yw) and (x - z, y - w), the length of 𝒪\_\{X,p} / (I\_V + I\_W) is 3 and the chapter's intersection multiplicity e(X, V · W, p) is 2; stated for any locally Noetherian X, any point and any closed subschemes, which contains the source's nonsingular fourfold, closed point and subvarieties”.
 
 > **Tag 0B2S, the two numbers of the example.** Let `X` be a locally Noetherian scheme (for
 > instance a nonsingular variety of dimension `4` over `ℂ`), let `p ∈ X` and let `V`, `W` be closed
@@ -215,7 +215,7 @@ theorem localIntersectionMultiplicity_eq_one_of_length_quotient_sup_eq_one {A : 
 > `length_{𝒪_{X, p}} 𝒪_{X, p} ⧸ (I_V + I_W) = 3`, while the intersection multiplicity given by the
 > Tor formula over `𝒪_{X, p}` is `e(X, V · W, p) = 2`.
 >
-> The proof transfers the computation in `ℂ[[x, y, z, w]]` along `𝒪_{X, p} → 𝒪_{X, p}^∧ ≅
+> The proof transfers the computation in `ℂ[[x, y, z, w]]` along `𝒪\_\{X, p} → 𝒪\_\{X, p}^∧ ≅
 > ℂ[[x, y, z, w]]`, which is flat, local, and carries the maximal ideal onto the maximal ideal, so
 > that it preserves lengths and commutes with Tor.
 
@@ -235,7 +235,7 @@ theorem length_stalk_quotient_sup_eq_three_and_intersectionMultiplicity_eq_two
       Stacks.Intersection.intersectionMultiplicity V W p = 2
 ```
 
-**`Stacks.Intersection.TwoPlanes.exists_isSmoothVariety_closedPoint_subvarieties_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/TorFormulaMultiplicities/HigherTorsExistence.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/TorFormulaMultiplicities/HigherTorsExistence.lean#L189). The attribute's comment: “the existence clause "To make an actual example ...": there exist a smooth variety X of dimension 4 over ℂ, a closed point p and integral closed subschemes V, W with an isomorphism of the completed local ring at p with ℂ[[x, y, z, w]] carrying I_V to (xz, xw, yz, yw) and I_W to (x - z, y - w), and for them the length is 3 and e(X, V · W, p) = 2; proved with one explicit instance in A^4 (V the image of (s, t) ↦ (s² - 1, t, s(s² - 1), st), W the plane c = d = 0) in place of the source's general morphism P^2 → P^4”.
+**`Stacks.Intersection.TwoPlanes.exists_isSmoothVariety_closedPoint_subvarieties_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/TorFormulaMultiplicities/HigherTorsExistence.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/TorFormulaMultiplicities/HigherTorsExistence.lean#L189). The attribute's comment: “the existence clause "To make an actual example ...": there exist a smooth variety X of dimension 4 over ℂ, a closed point p and integral closed subschemes V, W with an isomorphism of the completed local ring at p with ℂ[[x, y, z, w]] carrying I\_V to (xz, xw, yz, yw) and I\_W to (x - z, y - w), and for them the length is 3 and e(X, V · W, p) = 2; proved with one explicit instance in A^4 (V the image of (s, t) ↦ (s² - 1, t, s(s² - 1), st), W the plane c = d = 0) in place of the source's general morphism P^2 → P^4”.
 
 > **Tag 0B2S, "To make an actual example": the situation of the example exists.** There are a
 > smooth (that is, nonsingular) variety `X` of dimension `4` over `ℂ`, a closed point `p ∈ X`, and
@@ -305,7 +305,7 @@ theorem length_quotient_sup_eq_three :
       (MvPowerSeries (Fin 4) ℂ ⧸ (unionOfPlanes ⊔ diagonalPlane)) = 3
 ```
 
-**`Stacks.Intersection.TwoPlanes.not_isZero_tor_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/TorFormulaMultiplicities/HigherTorsNecessary.lean, line 666](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/TorFormulaMultiplicities/HigherTorsNecessary.lean#L666). The attribute's comment: “higher Tors are necessary: Tor_1 of the two quotients is nonzero, so the alternating sum is not its degree-zero term; the value e = 2 itself is not computed here”.
+**`Stacks.Intersection.TwoPlanes.not_isZero_tor_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/TorFormulaMultiplicities/HigherTorsNecessary.lean, line 666](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/TorFormulaMultiplicities/HigherTorsNecessary.lean#L666). The attribute's comment: “higher Tors are necessary: Tor\_1 of the two quotients is nonzero, so the alternating sum is not its degree-zero term; the value e = 2 itself is not computed here”.
 
 > **The higher Tor modules are necessary in the Tor formula for intersection multiplicities.**
 > For `V` the union of the two planes `x = y = 0` and `z = w = 0` in `X` a nonsingular fourfold and

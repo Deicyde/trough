@@ -102,7 +102,7 @@ theorem CategoryTheory.Functor.isSaturated_and_isCompatibleWithTriangulation
 
 [Tag 05R6](https://stacks.math.columbia.edu/tag/05R6) in the Stacks Project.
 
-**`CategoryTheory.Triangulated.Localization.existsUnique_pretriangulated_and_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L490). References: SGA 4½ Etat 0 (Problem2), “A_S exists, Q exact”; SGA 4½ Etat 0 (2.3.2), “partial”.
+**`CategoryTheory.Triangulated.Localization.existsUnique_pretriangulated_and_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Localization/Pretriangulated.lean#L490). References: SGA 4½ Etat 0 (Problem2), “A\_S exists, Q exact”; SGA 4½ Etat 0 (2.3.2), “partial”.
 
 > Let `C` be a pre-triangulated category, let `W` be a multiplicative system of morphisms of `C`
 > compatible with the triangulated structure, and let `L : C ⥤ D` be a localization functor for `W`,

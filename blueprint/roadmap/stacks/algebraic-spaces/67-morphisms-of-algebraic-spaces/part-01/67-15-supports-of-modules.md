@@ -125,7 +125,7 @@ theorem supportOfSheaf_modulePullback_eq (g : X' ⟶ X) (F : Modules.{u, u} B S 
         supportOfSheaf B S hS X.1 ((SheafOfModules.toSheaf _).obj F)
 ```
 
-**`AlgebraicGeometry.Space.isClosed_supportOfSheaf_of_isFiniteTypeOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportClosedFiniteType.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SupportClosedFiniteType.lean#L335). The attribute's comment: “support_closed”.
+**`AlgebraicGeometry.Space.isClosed_supportOfSheaf_of_isFiniteTypeOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportClosedFiniteType.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SupportClosedFiniteType.lean#L335). The attribute's comment: “support\_closed”.
 
 > **Stacks 07TZ, part (1).** The support of an `𝒪_X`-module of finite type on an algebraic
 > space `X` is closed in the point set of `X`.

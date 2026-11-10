@@ -44,7 +44,7 @@ theorem derivedUpperShriek_homology_affineEtale {X Y : Scheme.{u}} (f : X ⟶ Y)
               ((derivedLowerShriekUnbounded.{u, 0} f j Λ).rightAdjoint.obj K)))
 ```
 
-**`Stacks.EtaleCohomology.affineEtaleSheafifiedHomIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean#L308). The attribute's comment: “the comparison of the two sheafifications, which is the half of the tag not depending on Stacks 0BKV; Rf^! is an explicit right adjoint of Rf_!, its existence being Stacks 0G2C”.
+**`Stacks.EtaleCohomology.affineEtaleSheafifiedHomIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean#L308). The attribute's comment: “the comparison of the two sheafifications, which is the half of the tag not depending on Stacks 0BKV; Rf^! is an explicit right adjoint of Rf\_!, its existence being Stacks 0G2C”.
 
 > **The content of Stacks Tag 0GLK that does not depend on Stacks Tag 0BKV.** The
 > sheafification of the source's presheaf `U ↦ Hom_Y(R(U ⟶ Y)_! Λ, K[n])` on the small affine
@@ -63,7 +63,7 @@ def affineEtaleSheafifiedHomIso {X Y : Scheme.{u}} {f : X ⟶ Y}
         (affineEtaleUpperShriekHomPresheaf.{u, r} Λ X (Uf.obj K) n)
 ```
 
-**`Stacks.EtaleCohomology.affineEtaleSheafifiedHomIsoOfToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean#L331). The attribute's comment: “the comparison of the two sheafifications, assuming only a right adjoint of the proper pushforward R(fbar)_*; the right adjoint of Rj_! along the open immersion is constructed, not assumed”.
+**`Stacks.EtaleCohomology.affineEtaleSheafifiedHomIsoOfToBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean#L331). The attribute's comment: “the comparison of the two sheafifications, assuming only a right adjoint of the proper pushforward R(fbar)\_*; the right adjoint of Rj\_! along the open immersion is constructed, not assumed”.
 
 > **The same comparison, with only the right adjoint of the proper pushforward assumed.**
 >
@@ -87,7 +87,7 @@ def affineEtaleSheafifiedHomIsoOfToBase {X Y : Scheme.{u}} {f : X ⟶ Y}
           ((Ubar ⋙ etaleModuleDerivedRestriction.{u, r} Λ j.immersion).obj K) n)
 ```
 
-**`Stacks.EtaleCohomology.derivedUpperShriekHomologyAffineEtale`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean#L364). The attribute's comment: “with Rf^! taken as an explicit right adjoint of Rf_!, its existence being Stacks 0G2C, which is not proved in this library and is therefore an interface here; and with Stacks 0BKV supplied at the single object Rf^!K, the clauses of 0BKV in this library being stated for a RingedSite's SheafOfModules in the derived-sections presentation, which does not instantiate to Sheaf(X_etale, ModuleCat Λ) in the Hom((j_U)_!Λ, -) presentation”.
+**`Stacks.EtaleCohomology.derivedUpperShriekHomologyAffineEtale`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriekAffineEtale.lean#L364). The attribute's comment: “with Rf^! taken as an explicit right adjoint of Rf\_!, its existence being Stacks 0G2C, which is not proved in this library and is therefore an interface here; and with Stacks 0BKV supplied at the single object Rf^!K, the clauses of 0BKV in this library being stated for a RingedSite's SheafOfModules in the derived-sections presentation, which does not instantiate to Sheaf(X\_etale, ModuleCat Λ) in the Hom((j\_U)\_!Λ, -) presentation”.
 
 > **Stacks Project, Tag 0GLK.** Let `f : X ⟶ Y` be a separated finite type morphism of
 > quasi-compact and quasi-separated schemes, let `Λ` be a ring, let `K` be an object of

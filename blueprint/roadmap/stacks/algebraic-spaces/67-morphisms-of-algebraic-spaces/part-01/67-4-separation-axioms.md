@@ -210,7 +210,7 @@ theorem isQuasiSeparated_of_isSeparated
 
 [Tag 03KL](https://stacks.math.columbia.edu/tag/03KL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiSeparated_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationBaseChange.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationBaseChange.lean#L63). The attribute's comment: “quasi_separated_base_change”. References: SGA 4 VI (1.9.1), “(ii), special case”.
+**`AlgebraicGeometry.Space.isQuasiSeparated_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationBaseChange.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentationBaseChange.lean#L63). The attribute's comment: “quasi\_separated\_base\_change”. References: SGA 4 VI (1.9.1), “(ii), special case”.
 
 > A base change of a quasi-separated morphism of algebraic spaces over `S` is quasi-separated.
 
@@ -220,7 +220,7 @@ theorem isQuasiSeparated_pullback {X Y Y' : (BigFppfOver B S hS)ᵒᵖ ⥤ Type 
     IsQuasiSeparated B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_pullbackSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean, line 666](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean#L666). The attribute's comment: “separated_base_change”.
+**`AlgebraicGeometry.Space.isSeparated_pullbackSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean, line 666](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedTfae.lean#L666). The attribute's comment: “separated\_base\_change”.
 
 > A separated morphism stays separated after any base change.
 
@@ -229,7 +229,7 @@ theorem isSeparated_pullbackSnd {Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} {f :
     (h : IsSeparated B S hS f) : IsSeparated B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean#L82). The attribute's comment: “separated_base_change”.
+**`AlgebraicGeometry.Space.isSeparated_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean#L82). The attribute's comment: “separated\_base\_change”.
 
 > A base change of a separated morphism of algebraic spaces over `S` is separated.
 
@@ -239,7 +239,7 @@ theorem isSeparated_pullback {X Y Y' : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
     IsSeparated B S hS (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.Space.isLocallySeparated_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean#L92). The attribute's comment: “locally_separated_base_change”.
+**`AlgebraicGeometry.Space.isLocallySeparated_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparationMorphismProperties.lean#L92). The attribute's comment: “locally\_separated\_base\_change”.
 
 > A base change of a locally separated morphism of algebraic spaces over `S` is locally
 > separated.

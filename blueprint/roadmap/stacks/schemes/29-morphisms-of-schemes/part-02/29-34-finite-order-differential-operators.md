@@ -241,7 +241,7 @@ noncomputable def boxSectionsEquiv :
         Γ((Scheme.Modules.pullback c.fromSpecRight).obj G, ⊤))
 ```
 
-**`AlgebraicGeometry.externalTensorProduct`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/ExternalTensorProduct.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/ExternalTensorProduct.lean#L43). The attribute's comment: “external_tensor_product_of_modules”.
+**`AlgebraicGeometry.externalTensorProduct`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/ExternalTensorProduct.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/ExternalTensorProduct.lean#L43). The attribute's comment: “external\_tensor\_product\_of\_modules”.
 
 > The external tensor product of an `O_X`-module and an `O_Y`-module on the fibre
 > product of two schemes `X` and `Y` over `S`.
@@ -251,7 +251,7 @@ noncomputable abbrev externalTensorProduct {X Y S : Scheme.{u}} (f : X ⟶ S) (g
     (F : X.Modules) (G : Y.Modules) : (pullback f g).Modules
 ```
 
-**`AlgebraicGeometry.FiniteOrderDifferentialOperatorCategory`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FiniteOrderCategory.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FiniteOrderCategory.lean#L69). The attribute's comment: “category_of_finite_order_differential_operators”.
+**`AlgebraicGeometry.FiniteOrderDifferentialOperatorCategory`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FiniteOrderCategory.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FiniteOrderCategory.lean#L69). The attribute's comment: “category\_of\_finite\_order\_differential\_operators”.
 
 > A quasi-coherent module, regarded as an object of the category of finite-order
 > differential operators on `X/S`.
@@ -260,7 +260,7 @@ noncomputable abbrev externalTensorProduct {X Y S : Scheme.{u}} (f : X ⟶ S) (g
 structure FiniteOrderDifferentialOperatorCategory (a : X ⟶ S)
 ```
 
-**`AlgebraicGeometry.FiniteOrderDifferentialOperatorCategory.Hom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FiniteOrderCategory.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FiniteOrderCategory.lean#L131). The attribute's comment: “category_of_finite_order_differential_operators”.
+**`AlgebraicGeometry.FiniteOrderDifferentialOperatorCategory.Hom`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FiniteOrderCategory.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FiniteOrderCategory.lean#L131). The attribute's comment: “category\_of\_finite\_order\_differential\_operators”.
 
 > Morphisms in the category of finite-order differential operators.
 
@@ -268,7 +268,7 @@ structure FiniteOrderDifferentialOperatorCategory (a : X ⟶ S)
 noncomputable abbrev Hom (F G : FiniteOrderDifferentialOperatorCategory a)
 ```
 
-**`AlgebraicGeometry.FiniteOrderDifferentialOperatorCategory.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FiniteOrderCategory.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FiniteOrderCategory.lean#L159). The attribute's comment: “category_of_finite_order_differential_operators”.
+**`AlgebraicGeometry.FiniteOrderDifferentialOperatorCategory.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FiniteOrderCategory.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FiniteOrderCategory.lean#L159). The attribute's comment: “category\_of\_finite\_order\_differential\_operators”.
 
 > Composition of finite-order differential operators makes quasi-coherent modules
 > into a category.
@@ -278,7 +278,7 @@ noncomputable instance instCategory :
     Category (FiniteOrderDifferentialOperatorCategory a)
 ```
 
-**`AlgebraicGeometry.FiniteOrderDifferentialOperatorCategory.instPreadditive`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FiniteOrderCategory.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FiniteOrderCategory.lean#L186). The attribute's comment: “category_of_finite_order_differential_operators”.
+**`AlgebraicGeometry.FiniteOrderDifferentialOperatorCategory.instPreadditive`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FiniteOrderCategory.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Differentials/FiniteOrderCategory.lean#L186). The attribute's comment: “category\_of\_finite\_order\_differential\_operators”.
 
 > The pointwise addition of finite-order differential operators is compatible with
 > composition.

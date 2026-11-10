@@ -117,9 +117,9 @@ public theorem higherTrace_eq_of_presentations (hp : p.Prime) [CharP Λ p]
 
 [Tag 0FLF](https://stacks.math.columbia.edu/tag/0FLF) in the Stacks Project.
 
-**`KaehlerDifferential.relativeTraceComplex_trace_eq_higherTraceComplexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/TraceMapPositive/TraceIdentification.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/TraceMapPositive/TraceIdentification.lean#L99). The attribute's comment: “Tr = Θ_{S/R}, for Θ_{S/R} the map of relative de Rham complexes induced (0FLC (3)) by the trace maps on absolute forms of the framed algebra S/R”.
+**`KaehlerDifferential.relativeTraceComplex_trace_eq_higherTraceComplexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/TraceMapPositive/TraceIdentification.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/TraceMapPositive/TraceIdentification.lean#L99). The attribute's comment: “Tr = Θ\_\{S/R}, for Θ\_\{S/R} the map of relative de Rham complexes induced (0FLC (3)) by the trace maps on absolute forms of the framed algebra S/R”.
 
-> **Tr = Θ_{S/R}.**  Let `𝐅_p ⊂ Λ ⊂ R ⊂ S` with `S ≅ R[x]/(x ^ p - a)`, and let `f` be any
+> **Tr = Θ\_\{S/R}.**  Let `𝐅_p ⊂ Λ ⊂ R ⊂ S` with `S ≅ R[x]/(x ^ p - a)`, and let `f` be any
 > frame of `S/R` (for instance the monogenic one, `KaehlerDifferential.rootExtFrame`; the trace maps
 > do not depend on it).  The map of relative de Rham complexes `Θ_{S/R} : Ω^•_{S/Λ} ⟶ Ω^•_{R/Λ}`
 > induced by the trace maps on absolute forms of Proposition 0FLC is the map built from the trace

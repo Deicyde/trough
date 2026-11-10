@@ -68,7 +68,7 @@ theorem isAffineHom_iff_exists_relativeSpecIso (f : X ⟶ S) :
         Nonempty (Over.mk f ≅ Over.mk (@relativeSpecToBase S A hA))
 ```
 
-**`Stacks.AffineAlgebraEquivalence.overRelativeSpecIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpecBaseChange/AntiEquivalence.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpecBaseChange/AntiEquivalence.lean#L257). The attribute's comment: “the final statement: X = Spec_S(f_* O_X) for an affine morphism f : X → S”.
+**`Stacks.AffineAlgebraEquivalence.overRelativeSpecIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpecBaseChange/AntiEquivalence.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpecBaseChange/AntiEquivalence.lean#L257). The attribute's comment: “the final statement: X = Spec\_S(f\_* O\_X) for an affine morphism f : X → S”.
 
 > **Stacks Project, Tag 01S8, the final statement.** For an affine morphism `f : X ⟶ S` there
 > is an isomorphism `X ≅ \underline{Spec}_S(f_* 𝒪_X)` of schemes over `S`.
@@ -223,7 +223,7 @@ Declarations registered for the tag:
 
 [Tag 01SF](https://stacks.math.columbia.edu/tag/01SF) in the Stacks Project.
 
-**`Stacks.NonvanishingAffineIntersection.isAffineOpen_inf_nonvanishingOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NonvanishingAffineIntersection/Basic.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NonvanishingAffineIntersection/Basic.lean#L122). The attribute's comment: “affineness of the inclusion j : X_s -> X, i.e. preimages of affine opens under j”. References: EGA II (5.5.8); SGA 6 II (2.2.3.1).
+**`Stacks.NonvanishingAffineIntersection.isAffineOpen_inf_nonvanishingOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NonvanishingAffineIntersection/Basic.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NonvanishingAffineIntersection/Basic.lean#L122). The attribute's comment: “affineness of the inclusion j : X\_s -> X, i.e. preimages of affine opens under j”. References: EGA II (5.5.8); SGA 6 II (2.2.3.1).
 
 > Let `X` be a scheme, `M` an invertible `𝒪_X`-module and `s` a global section of `M`. For every
 > affine open `U` of `X`, the intersection `U ∩ X_s` of `U` with the nonvanishing locus of `s` is

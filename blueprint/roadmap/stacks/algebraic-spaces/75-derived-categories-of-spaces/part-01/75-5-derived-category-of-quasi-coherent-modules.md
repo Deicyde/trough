@@ -117,7 +117,7 @@ theorem hasCoproducts_quasicoherentDerivedCategory_ringUniverse :
 
 [Tag 0D3E](https://stacks.math.columbia.edu/tag/0D3E) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isDerivedLimit_single_limit_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimits.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimits.lean#L260). The attribute's comment: “clause (2): R lim H^q(K_n) = lim H^q(K_n); the source's two citations are carried as the named hypotheses hcover (the affine étale charts cover the small étale site) and h03DWab, h03DWepi (Stacks 03DW on an affine étale chart: vanishing of higher cohomology, and surjectivity on sections, for quasi-coherent modules)”.
+**`AlgebraicGeometry.Space.isDerivedLimit_single_limit_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimits.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimits.lean#L260). The attribute's comment: “clause (2): R lim H^q(K\_n) = lim H^q(K\_n); the source's two citations are carried as the named hypotheses hcover (the affine étale charts cover the small étale site) and h03DWab, h03DWepi (Stacks 03DW on an affine étale chart: vanishing of higher cohomology, and surjectivity on sections, for quasi-coherent modules)”.
 
 > **Stacks Project, Tag 0D3E, clause (2).** Let `(K_n)` be an inverse system of
 > `D_QCoh(𝒪_X)` on an algebraic space `X` whose transition maps `H^q(K_{n+1}) ⟶ H^q(K_n)` on
@@ -159,7 +159,7 @@ theorem isDerivedLimit_single_limit_homology
             (Modules.{u, m} B S hS F hF) q)))
 ```
 
-**`AlgebraicGeometry.Space.isZero_cohomology_limit_homology_of_isAffineChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimits.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimits.lean#L307). The attribute's comment: “clause (3): H^p(U, lim H^q(K_n)) = 0 for p > 0 and U an affine étale chart; the source's two citations are carried as the named hypotheses hcover (the affine étale charts cover the small étale site) and h03DWab, h03DWepi (Stacks 03DW on an affine étale chart: vanishing of higher cohomology, and surjectivity on sections, for quasi-coherent modules)”.
+**`AlgebraicGeometry.Space.isZero_cohomology_limit_homology_of_isAffineChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimits.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimits.lean#L307). The attribute's comment: “clause (3): H^p(U, lim H^q(K\_n)) = 0 for p > 0 and U an affine étale chart; the source's two citations are carried as the named hypotheses hcover (the affine étale charts cover the small étale site) and h03DWab, h03DWepi (Stacks 03DW on an affine étale chart: vanishing of higher cohomology, and surjectivity on sections, for quasi-coherent modules)”.
 
 > **Stacks Project, Tag 0D3E, clause (3).** Under the same hypotheses, for every affine étale
 > chart `U` of `X` and every `p > 0` we have `H^p(U, lim H^q(K_n)) = 0`.
@@ -196,7 +196,7 @@ theorem isZero_cohomology_limit_homology_of_isAffineChart
         (Modules.{u, m} B S hS F hF) q)))
 ```
 
-**`AlgebraicGeometry.Space.isLimit_cohomology_of_isDerivedLimit_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimitsCohomology.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimitsCohomology.lean#L198). The attribute's comment: “clause (1): H^q(R lim K_n) = lim H^q(K_n), as the canonical limiting cone; the source's citation 0A09 is applied with its hypotheses on the affine étale charts of the space discharged (they cover the small étale site; a quasi-coherent module is acyclic on one; a surjection of quasi-coherent modules is surjective on its sections there). The module universe is the universe of the structure rings”.
+**`AlgebraicGeometry.Space.isLimit_cohomology_of_isDerivedLimit_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimitsCohomology.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimitsCohomology.lean#L198). The attribute's comment: “clause (1): H^q(R lim K\_n) = lim H^q(K\_n), as the canonical limiting cone; the source's citation 0A09 is applied with its hypotheses on the affine étale charts of the space discharged (they cover the small étale site; a quasi-coherent module is acyclic on one; a surjection of quasi-coherent modules is surjective on its sections there). The module universe is the universe of the structure rings”.
 
 > **Stacks Project, Tag 0D3E, clause (1).** Let `S` be a scheme, let `X` be an algebraic space
 > over `S` and let `(K_n)` be an inverse system in `D_QCoh(𝒪_X)` whose transition maps
@@ -237,7 +237,7 @@ theorem isLimit_cohomology_of_isDerivedLimit_of_epi
         Nonempty (IsLimit (Cone.mk _ τ))
 ```
 
-**`AlgebraicGeometry.Space.isDerivedLimit_single_limit_homology_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimitsCohomology.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimitsCohomology.lean#L244). The attribute's comment: “clause (2): R lim H^q(K_n) = lim H^q(K_n); the source's citations are applied with their hypotheses on the affine étale charts of the space discharged (they cover the small étale site; a quasi-coherent module is acyclic on one; a surjection of quasi-coherent modules is surjective on its sections there). The module universe is the universe of the structure rings”.
+**`AlgebraicGeometry.Space.isDerivedLimit_single_limit_homology_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimitsCohomology.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimitsCohomology.lean#L244). The attribute's comment: “clause (2): R lim H^q(K\_n) = lim H^q(K\_n); the source's citations are applied with their hypotheses on the affine étale charts of the space discharged (they cover the small étale site; a quasi-coherent module is acyclic on one; a surjection of quasi-coherent modules is surjective on its sections there). The module universe is the universe of the structure rings”.
 
 > **Stacks Project, Tag 0D3E, clause (2).** Under the same hypotheses,
 > `R lim H^q(K_n) = lim H^q(K_n)`: the ordinary inverse limit of the degree-`q` cohomology
@@ -268,7 +268,7 @@ theorem isDerivedLimit_single_limit_homology_unconditional
             (Modules.{u, u} B S hS F hF) q)))
 ```
 
-**`AlgebraicGeometry.Space.isZero_cohomology_limit_homology_of_isAffineChart_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimitsCohomology.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimitsCohomology.lean#L280). The attribute's comment: “clause (3): H^p(U, lim H^q(K_n)) = 0 for p > 0 and U an affine étale chart; the source's citations are applied with their hypotheses on the affine étale charts of the space discharged (they cover the small étale site; a quasi-coherent module is acyclic on one; a surjection of quasi-coherent modules is surjective on its sections there). The module universe is the universe of the structure rings”.
+**`AlgebraicGeometry.Space.isZero_cohomology_limit_homology_of_isAffineChart_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimitsCohomology.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedLimitsCohomology.lean#L280). The attribute's comment: “clause (3): H^p(U, lim H^q(K\_n)) = 0 for p > 0 and U an affine étale chart; the source's citations are applied with their hypotheses on the affine étale charts of the space discharged (they cover the small étale site; a quasi-coherent module is acyclic on one; a surjection of quasi-coherent modules is surjective on its sections there). The module universe is the universe of the structure rings”.
 
 > **Stacks Project, Tag 0D3E, clause (3).** Under the same hypotheses, for every affine étale
 > chart `U` of `X` and every `p > 0` we have `H^p(U, lim H^q(K_n)) = 0`.
@@ -319,7 +319,7 @@ theorem derivedQuasicoherent_etaleModulePullback (f : Y ⟶ X) (hf : IsEtale B S
       ((etaleModulePullback B S hS f hf).mapDerivedCategory.obj E)
 ```
 
-**`AlgebraicGeometry.Space.quasicoherentDerivedEtalePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedEtalePullback.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedEtalePullback.lean#L103). The attribute's comment: “for étale morphisms of algebraic spaces, the restriction D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_Y)”.
+**`AlgebraicGeometry.Space.quasicoherentDerivedEtalePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedEtalePullback.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedEtalePullback.lean#L103). The attribute's comment: “for étale morphisms of algebraic spaces, the restriction D\_QCoh(𝒪\_X) ⥤ D\_QCoh(𝒪\_Y)”.
 
 > **Stacks 08F4 for an étale morphism of algebraic spaces, as a functor.**  The derived
 > pullback along an étale morphism `f : Y ⟶ X` restricts to a functor
@@ -352,7 +352,7 @@ theorem derivedQuasicoherent_smallEtaleDerivedModulePullback (f : Y ⟶ X)
       ((smallEtaleDerivedModulePullback B S hS f).obj E)
 ```
 
-**`AlgebraicGeometry.Space.quasicoherentDerivedPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPullback.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPullback.lean#L227). The attribute's comment: “the restriction D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_Y) of Lf^*, for an arbitrary morphism”.
+**`AlgebraicGeometry.Space.quasicoherentDerivedPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPullback.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedPullback.lean#L227). The attribute's comment: “the restriction D\_QCoh(𝒪\_X) ⥤ D\_QCoh(𝒪\_Y) of Lf^*, for an arbitrary morphism”.
 
 > The derived pullback `Lf^*` along an arbitrary morphism `f : Y ⟶ X` of algebraic spaces
 > restricts to a functor `D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_Y)` between the full subcategories of complexes
@@ -621,7 +621,7 @@ theorem isIso_homologyFunctor_map_rightDerived_truncLE
       (RF.map ((DerivedCategory.TStructure.t.truncLEι a).app E)))
 ```
 
-**`AlgebraicGeometry.Space.isZero_homology_rightDerived_of_isZero_gt_unbounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedFunctorAmplitudeUnbounded.lean, line 447](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedFunctorAmplitudeUnbounded.lean#L447). The attribute's comment: “assertion (3), the upper bound b + N - 1, and the sole registration of that half: H^i(RF E) = 0 for i > b + N - 1 once H^j(E) = 0 for j > b, for every E of D_QCoh with no boundedness hypothesis, so for a = -infinity too. Hypothesis (2) on F is the binder PreservesLimitsOfShape (Discrete N) F, hypothesis (3) is hRF, hypothesis (1) is unused”.
+**`AlgebraicGeometry.Space.isZero_homology_rightDerived_of_isZero_gt_unbounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedFunctorAmplitudeUnbounded.lean, line 447](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedFunctorAmplitudeUnbounded.lean#L447). The attribute's comment: “assertion (3), the upper bound b + N - 1, and the sole registration of that half: H^i(RF E) = 0 for i > b + N - 1 once H^j(E) = 0 for j > b, for every E of D\_QCoh with no boundedness hypothesis, so for a = -infinity too. Hypothesis (2) on F is the binder PreservesLimitsOfShape (Discrete N) F, hypothesis (3) is hRF, hypothesis (1) is unused”.
 
 > **Stacks 08F7, assertion (3), the upper bound, for every `E` of `D_QCoh(𝒪_X)`.** Let `S` be a
 > scheme, let `X` be an algebraic space over `S`, let `F : Mod(𝒪_X) ⥤ Ab` be an additive functor
@@ -656,7 +656,7 @@ theorem isZero_homology_rightDerived_of_isZero_gt_unbounded (N : ℕ)
     IsZero ((DerivedCategory.homologyFunctor AddCommGrpCat.{u} i).obj (RF.obj E))
 ```
 
-**`AlgebraicGeometry.Space.isIso_homologyFunctor_map_rightDerived_truncGE_unbounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedFunctorAmplitudeUnbounded.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedFunctorAmplitudeUnbounded.lean#L485). The attribute's comment: “assertion (2), and the sole registration of it: H^i(RF E) -> H^i(RF(tau_{>= b - N + 1} E)) is an isomorphism for i >= b, for every E of D_QCoh with no boundedness hypothesis. Hypothesis (2) on F is the binder PreservesLimitsOfShape (Discrete N) F, hypothesis (3) is hRF, hypothesis (1) is unused”.
+**`AlgebraicGeometry.Space.isIso_homologyFunctor_map_rightDerived_truncGE_unbounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedFunctorAmplitudeUnbounded.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasicoherentDerivedFunctorAmplitudeUnbounded.lean#L485). The attribute's comment: “assertion (2), and the sole registration of it: H^i(RF E) -> H^i(RF(tau\_\{>= b - N + 1} E)) is an isomorphism for i >= b, for every E of D\_QCoh with no boundedness hypothesis. Hypothesis (2) on F is the binder PreservesLimitsOfShape (Discrete N) F, hypothesis (3) is hRF, hypothesis (1) is unused”.
 
 > **Stacks 08F7, assertion (2), for every `E` of `D_QCoh(𝒪_X)`.** Let `S` be a scheme, let `X`
 > be an algebraic space over `S`, let `F : Mod(𝒪_X) ⥤ Ab` be an additive functor commuting with

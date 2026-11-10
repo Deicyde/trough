@@ -217,7 +217,7 @@ theorem exists_stabilization_and_existsUnique_iso
 
 [Tag 0E8B](https://stacks.math.columbia.edu/tag/0E8B) in the Stacks Project.
 
-**`AlgebraicGeometry.stabilizationMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliStabilization.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliStabilization.lean#L103). The attribute's comment: “the stabilization morphism Curves^{prestable}_g → Mbar_g”.
+**`AlgebraicGeometry.stabilizationMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliStabilization.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliStabilization.lean#L103). The attribute's comment: “the stabilization morphism Curves^\{prestable}\_g → Mbar\_g”.
 
 > For `g ≥ 2`, the stabilization morphism `Curves^{prestable}_g ⟶ 𝓜̄_g` of stacks over `ℤ`, a
 > 1-morphism of categories fibred in groupoids over the big fppf site of `Spec(ℤ)`. It sends a

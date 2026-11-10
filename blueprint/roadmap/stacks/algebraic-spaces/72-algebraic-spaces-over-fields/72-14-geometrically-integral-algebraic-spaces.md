@@ -206,7 +206,7 @@ theorem exists_componentwiseArtinianFactorization_isField_finite_of_isProper
               (fac.factorAlgebra c))
 ```
 
-**`AlgebraicGeometry.Space.isSeparable_componentFunctions_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean#L91). The attribute's comment: “part (4): if X is geometrically reduced, each factor k_i is finite separable over k”.
+**`AlgebraicGeometry.Space.isSeparable_componentFunctions_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperGlobalFunctionsGeometric.lean#L91). The attribute's comment: “part (4): if X is geometrically reduced, each factor k\_i is finite separable over k”.
 
 > **Stacks 0DMY, part (4).**  For a proper *geometrically* reduced algebraic space `X` over a
 > field `k`, each factor `k_i` of the global regular functions `A = ∏ k_i` is a finite separable
@@ -291,7 +291,7 @@ Declarations registered for the tag:
 
 [Tag 0DMZ](https://stacks.math.columbia.edu/tag/0DMZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isTrivial_of_nontrivial_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleTriviality.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleTriviality.lean#L423). The attribute's comment: “granted that H⁰(F, 𝒪_F) is a field, which Tag 0DMY draws from properness”.
+**`AlgebraicGeometry.Space.isTrivial_of_nontrivial_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleTriviality.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/InvertibleModuleTriviality.lean#L423). The attribute's comment: “granted that H⁰(F, 𝒪\_F) is a field, which Tag 0DMY draws from properness”.
 
 > **Stacks 0DMZ.**  Let `F` be an integral algebraic space whose ring `H⁰(F, 𝒪_F)` of global
 > regular functions is a field, and let `L` be an invertible `𝒪_F`-module.  If `H⁰(F, L)` and

@@ -72,7 +72,7 @@ theorem homEquiv_relativeDifferentialFormsMap (hcomm : f ≫ p = p' ≫ g) (n : 
       (deRhamFormsPushforwardHom f p p' g hcomm).app n
 ```
 
-**`Stacks.DeRhamPullback.deRhamPullbackChain_f`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/PullbackComplexDegreewise.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/PullbackComplexDegreewise.lean#L206). The attribute's comment: “the degree-n component of the canonical map f⁻¹Ω^•_{Y/S} ⟶ Ω^•_{X/S}”.
+**`Stacks.DeRhamPullback.deRhamPullbackChain_f`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/PullbackComplexDegreewise.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/PullbackComplexDegreewise.lean#L206). The attribute's comment: “the degree-n component of the canonical map f⁻¹Ω^•\_\{Y/S} ⟶ Ω^•\_\{X/S}”.
 
 > **The degreewise factorization of the de Rham pullback map.** The degree-`n` component of
 > `ρ : f^{-1}Ω^•_{Y/S} ⟶ Ω^•_{X/S}` is the comparison `f^{-1}Ω^n_{Y/S} ⟶ f^*Ω^n_{Y/S}` followed
@@ -146,7 +146,7 @@ theorem relativeDifferentialFormsComparison_generator (hcomm : f ≫ p = p' ≫ 
         Scheme.Modules.exteriorGenerator (relativeDifferentials p')
 ```
 
-**`Stacks.DeRhamPullback.deRhamPullbackChain_f_exteriorPowerPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/PullbackComplexDegreewise.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/PullbackComplexDegreewise.lean#L225). The attribute's comment: “the degree-n component of f⁻¹Ω^•_{Y/S} ⟶ Ω^•_{X/S} factors through ⋀ⁿ(f^*Ω_{Y/S})”.
+**`Stacks.DeRhamPullback.deRhamPullbackChain_f_exteriorPowerPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/PullbackComplexDegreewise.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/PullbackComplexDegreewise.lean#L225). The attribute's comment: “the degree-n component of f⁻¹Ω^•\_\{Y/S} ⟶ Ω^•\_\{X/S} factors through ⋀ⁿ(f^*Ω\_\{Y/S})”.
 
 > **The degreewise factorization of `ρ` through `⋀^n(f^*Ω_{Y/S})`**: the comparison
 > `f^{-1}Ω^n_{Y/S} ⟶ f^*Ω^n_{Y/S}`, the comparison `f^*(⋀^nΩ_{Y/S}) ≅ ⋀^n(f^*Ω_{Y/S})` of Tag

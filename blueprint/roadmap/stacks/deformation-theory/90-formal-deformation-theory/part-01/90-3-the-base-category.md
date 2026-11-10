@@ -241,7 +241,7 @@ abbrev relativeCotangentSpace
 
 [Tag 06GH](https://stacks.math.columbia.edu/tag/06GH) in the Stacks Project.
 
-**`Deformation.ArtinianLocalAlgCat.hasPullback_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/FibreProduct.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/FibreProduct.lean#L431). The attribute's comment: “surjective_fiber_product_in_clambda”.
+**`Deformation.ArtinianLocalAlgCat.hasPullback_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/FibreProduct.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/FibreProduct.lean#L431). The attribute's comment: “surjective\_fiber\_product\_in\_clambda”.
 
 > If either morphism is surjective, the ring of compatible pairs is a pullback in `𝒞_Λ`; in
 > particular the pullback exists.
@@ -252,7 +252,7 @@ theorem hasPullback_of_surjective (f₁ : A₁ ⟶ A) (f₂ : A₂ ⟶ A)
     IsConcretePullback f₁ f₂ ∧ HasPullback f₁ f₂
 ```
 
-**`Deformation.ArtinianLocalAlgCat.isConcretePullback_of_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/FibreProductSeparable.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/FibreProductSeparable.lean#L173). The attribute's comment: “separable_fiber_product_in_clambda”.
+**`Deformation.ArtinianLocalAlgCat.isConcretePullback_of_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/FibreProductSeparable.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/FibreProductSeparable.lean#L173). The attribute's comment: “separable\_fiber\_product\_in\_clambda”.
 
 > The algebraic fibre product has its canonical object structure in `𝒞_Λ`
 > when `k` is separable over the image field of `Λ`.
@@ -264,7 +264,7 @@ theorem isConcretePullback_of_isSeparable
     IsConcretePullback f₁ f₂
 ```
 
-**`Deformation.ArtinianLocalAlgCat.isSmallExtension_pullback_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/SmallExtensionPullback.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/SmallExtensionPullback.lean#L167). The attribute's comment: “pullback_small_extension”.
+**`Deformation.ArtinianLocalAlgCat.isSmallExtension_pullback_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/BaseCategory/SmallExtensionPullback.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/BaseCategory/SmallExtensionPullback.lean#L167). The attribute's comment: “pullback\_small\_extension”.
 
 > The first projection from the pullback of a small extension in `𝒞_Λ` is a small
 > extension.
@@ -338,10 +338,10 @@ theorem essentialSurjection_iff_mod_relative_maximalIdeal_sq
 
 Declarations registered for the tag:
 
-- [`KaehlerDifferential.kerCotangentToTensor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=KaehlerDifferential.kerCotangentToTensor#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 21](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L21) (StacksFrontier): “the map m_A/m_A² → k ⊗_A Ω_{A/Λ}”. References: EGA 0 (20.5.11); EGA 0 (20.5.12); EGA 0 (22.2.9); EGA 0 (22.6.4), “partial”; EGA IV (17.15.9); SGA 1 II (5.9).
-- [`KaehlerDifferential.mapBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=KaehlerDifferential.mapBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 22](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L22) (StacksFrontier): “the map k ⊗_A Ω_{A/Λ} → Ω_{k/Λ}”. References: EGA 0 (20.5.2); EGA 0 (20.5.4), “special case”; EGA 0 (20.5.7); EGA 0 (20.6.5), “differential K₁ → K₀”.
-- [`KaehlerDifferential.exact_kerCotangentToTensor_mapBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=KaehlerDifferential.exact_kerCotangentToTensor_mapBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 23](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L23) (StacksFrontier): “exactness at k ⊗_A Ω_{A/Λ}”. References: EGA 0 (20.5.12), “partial”; EGA 0 (20.6.23), “partial”; EGA 0 (22.4.8), “partial”; EGA IV (16.4.21), “special case”; EGA IV (17.2.5), “affine middle exactness”.
-- [`KaehlerDifferential.mapBaseChange_surjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=KaehlerDifferential.mapBaseChange_surjective#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 25](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L25) (StacksFrontier): “exactness at Ω_{k/Λ} (→ 0)”. References: EGA IV (17.13.1), “special case”.
+- [`KaehlerDifferential.kerCotangentToTensor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=KaehlerDifferential.kerCotangentToTensor#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 21](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L21) (StacksFrontier): “the map m\_A/m\_A² → k ⊗\_A Ω\_\{A/Λ}”. References: EGA 0 (20.5.11); EGA 0 (20.5.12); EGA 0 (22.2.9); EGA 0 (22.6.4), “partial”; EGA IV (17.15.9); SGA 1 II (5.9).
+- [`KaehlerDifferential.mapBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=KaehlerDifferential.mapBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 22](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L22) (StacksFrontier): “the map k ⊗\_A Ω\_\{A/Λ} → Ω\_\{k/Λ}”. References: EGA 0 (20.5.2); EGA 0 (20.5.4), “special case”; EGA 0 (20.5.7); EGA 0 (20.6.5), “differential K₁ → K₀”.
+- [`KaehlerDifferential.exact_kerCotangentToTensor_mapBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=KaehlerDifferential.exact_kerCotangentToTensor_mapBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 23](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L23) (StacksFrontier): “exactness at k ⊗\_A Ω\_\{A/Λ}”. References: EGA 0 (20.5.12), “partial”; EGA 0 (20.6.23), “partial”; EGA 0 (22.4.8), “partial”; EGA IV (16.4.21), “special case”; EGA IV (17.2.5), “affine middle exactness”.
+- [`KaehlerDifferential.mapBaseChange_surjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=KaehlerDifferential.mapBaseChange_surjective#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 25](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L25) (StacksFrontier): “exactness at Ω\_\{k/Λ} (→ 0)”. References: EGA IV (17.13.1), “special case”.
 
 ## Tag 06S7, an equation
 
@@ -599,7 +599,7 @@ theorem isEssentialSurjection_iff_relativeCotangentSpaceMap_bijective
     IsEssentialSurjection f ↔ Function.Bijective (relativeCotangentSpaceMap f)
 ```
 
-**`Deformation.not_isEssentialSurjection_iff_exists_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 639](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L639). The attribute's comment: “small_extension_section”.
+**`Deformation.not_isEssentialSurjection_iff_exists_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Basic.lean, line 639](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Basic.lean#L639). The attribute's comment: “small\_extension\_section”.
 
 > A small extension in `𝒞_Λ` is nonessential if and only if it has a section in
 > `𝒞_Λ`.

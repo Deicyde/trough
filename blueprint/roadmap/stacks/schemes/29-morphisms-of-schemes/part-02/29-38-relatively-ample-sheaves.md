@@ -77,7 +77,7 @@ theorem IsRelativelyAmple.quasiSeparated {X S : Scheme.{u}} {f : X ⟶ S} {L : X
     [IsInvertibleModule X L] (hL : IsRelativelyAmple f L) : QuasiSeparated f
 ```
 
-**`Stacks.RelativeAmple.isQuasicoherent_gradedDirectImage_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean#L185). The attribute's comment: “(5), the homogeneous pieces of the graded algebra A = f_*(⨁_{d ≥ 0} L^{⊗ d}) of the clause: their quasi-coherence in nonnegative degree (the step the source attributes to Schemes 26.24.1) and their vanishing in negative degree. The graded algebra A itself, with its multiplication, is Stacks.RelativeAmple.directImageAlgebra; see the module docstring”.
+**`Stacks.RelativeAmple.isQuasicoherent_gradedDirectImage_of_isRelativelyAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean#L185). The attribute's comment: “(5), the homogeneous pieces of the graded algebra A = f\_*(⨁\_\{d ≥ 0} L^\{⊗ d}) of the clause: their quasi-coherence in nonnegative degree (the step the source attributes to Schemes 26.24.1) and their vanishing in negative degree. The graded algebra A itself, with its multiplication, is Stacks.RelativeAmple.directImageAlgebra; see the module docstring”.
 
 > **The pieces of `𝒜` in nonnegative degree are quasi-coherent**, for a relatively ample `L`:
 > both hypotheses of [Stacks, Tag 01LC] are then available, quasi-compactness from
@@ -90,7 +90,7 @@ theorem isQuasicoherent_gradedDirectImage_of_isRelativelyAmple
     (gradedDirectImage f L (d : ℤ)).IsQuasicoherent
 ```
 
-**`Stacks.RelativeAmple.iSup_nonvanishingOpenOn_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean#L219). The attribute's comment: “(5), the assertion U(psi) = X: for L ample relative to f, the nonvanishing opens of the positive-degree sections of A = f_*(⨁_{d ≥ 0} L^{⊗ d}) cover X”.
+**`Stacks.RelativeAmple.iSup_nonvanishingOpenOn_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/GradedDirectImage.lean#L219). The attribute's comment: “(5), the assertion U(psi) = X: for L ample relative to f, the nonvanishing opens of the positive-degree sections of A = f\_*(⨁\_\{d ≥ 0} L^\{⊗ d}) cover X”.
 
 > **Stacks Tag 01VJ, clause (5), the assertion `U(ψ) = X`.** For `L` ample relative to `f`,
 > the nonvanishing opens of the sections of positive degree of `𝒜 = f_*(⨁_{d ≥ 0} L^{⊗ d})` cover
@@ -144,7 +144,7 @@ theorem exists_affine_isAmple_cover_of_isRelativelyAmple {X S : Scheme.{u}} (f :
       IsAmple (f ⁻¹ᵁ V).toScheme (Stacks.AmpleLocallyClosed.pullbackModule (f ⁻¹ᵁ V).ι L)
 ```
 
-**`Stacks.RelativeAmple.IsRelativelyAmple.isOpenImmersion_globalMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean#L271). The attribute's comment: “(1) implies (5), the assertion that r_{L,psi} is an open immersion”.
+**`Stacks.RelativeAmple.IsRelativelyAmple.isOpenImmersion_globalMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeAmple/ProjCharacterization.lean#L271). The attribute's comment: “(1) implies (5), the assertion that r\_\{L,psi} is an open immersion”.
 
 > **[Stacks, Tag 01VJ], (1) implies the open-immersion assertion of (5).** For `L` ample relative
 > to `f`, with `𝒜 = f_*(⨁_{d ≥ 0} L^{⊗ d})` and `ψ` the adjunction map, the morphism

@@ -14,7 +14,7 @@ Section 85.36 of the Stacks Project, [Tag 0DHI](https://stacks.math.columbia.edu
 
 [Tag 0DHJ](https://stacks.math.columbia.edu/tag/0DHJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.phComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonFunctor.lean, line 604](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonFunctor.lean#L604). The attribute's comment: “the upper horizontal arrow h : Sh((Spaces/U)_{ph, total}) → Sh(U_étale)”.
+**`AlgebraicGeometry.Space.phComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonFunctor.lean, line 604](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonFunctor.lean#L604). The attribute's comment: “the upper horizontal arrow h : Sh((Spaces/U)\_\{ph, total}) → Sh(U\_étale)”.
 
 > **The upper horizontal arrow of Tag 0DHJ**, `h : Sh((Spaces/U)_total) → Sh(U_étale)`, the
 > morphism of topoi of the morphism of sites given by `V/U_n ↦ V/U_n`.
@@ -25,7 +25,7 @@ def phComparisonMorphism :
       (Sheaf (etaleSimplicialSite A).totalTopology (Type (u + 1)))
 ```
 
-**`AlgebraicGeometry.Space.spacesEtaleComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonFunctor.lean, line 627](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonFunctor.lean#L627). The attribute's comment: “the lower horizontal arrow h_{-1} : Sh((Spaces/X)_ph) → Sh(X_étale)”.
+**`AlgebraicGeometry.Space.spacesEtaleComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonFunctor.lean, line 627](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SimplicialSpaces/PhComparisonFunctor.lean#L627). The attribute's comment: “the lower horizontal arrow h\_\{-1} : Sh((Spaces/X)\_ph) → Sh(X\_étale)”.
 
 > **The lower horizontal arrow of Tag 0DHJ**, `h_{-1} : Sh(Spaces/X) → Sh(X_étale)`, the
 > morphism of topoi of the inclusion `X_{spaces, étale} → Spaces/X`, `W ↦ W/X`.

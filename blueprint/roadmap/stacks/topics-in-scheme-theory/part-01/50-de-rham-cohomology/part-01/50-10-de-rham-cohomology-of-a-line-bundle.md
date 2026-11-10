@@ -14,7 +14,7 @@ Section 50.10 of the Stacks Project, [Tag 0FU8](https://stacks.math.columbia.edu
 
 [Tag 0FU9](https://stacks.math.columbia.edu/tag/0FU9) in the Stacks Project.
 
-**`KaehlerDifferential.deRhamDifferential_maps_gradedDifferentialFormComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/DifferentialDegree.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/DifferentialDegree.lean#L44). The attribute's comment: “differential_preserves_degree”.
+**`KaehlerDifferential.deRhamDifferential_maps_gradedDifferentialFormComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/DifferentialDegree.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/DifferentialDegree.lean#L44). The attribute's comment: “differential\_preserves\_degree”.
 
 > The de Rham differential preserves the total degree of homogeneous
 > differential forms.
@@ -35,7 +35,7 @@ theorem deRhamDifferential_maps_gradedDifferentialFormComponent
       gradedDifferentialFormComponent gr (p + 1) g
 ```
 
-**`KaehlerDifferential.isInternal_gradedDifferentialComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/DifferentialsDirectSum.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/DifferentialsDirectSum.lean#L42). The attribute's comment: “differentials_direct_sum”.
+**`KaehlerDifferential.isInternal_gradedDifferentialComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/DifferentialsDirectSum.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/DifferentialsDirectSum.lean#L42). The attribute's comment: “differentials\_direct\_sum”.
 
 > **Stacks Project, Tag 0FU9.** The Kähler differentials of a graded
 > commutative algebra are the internal direct sum of their homogeneous
@@ -50,7 +50,7 @@ theorem isInternal_gradedDifferentialComponent
     DirectSum.IsInternal (gradedDifferentialComponent gr)
 ```
 
-**`KaehlerDifferential.isInternal_gradedDifferentialFormComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/FormsDirectSum/Decomposition.lean, line 642](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/FormsDirectSum/Decomposition.lean#L642). The attribute's comment: “forms_direct_sum”.
+**`KaehlerDifferential.isInternal_gradedDifferentialFormComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/FormsDirectSum/Decomposition.lean, line 642](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/FormsDirectSum/Decomposition.lean#L642). The attribute's comment: “forms\_direct\_sum”.
 
 > Differential forms decompose as the internal direct sum of their
 > homogeneous total-degree components.
@@ -66,7 +66,7 @@ theorem isInternal_gradedDifferentialFormComponent
       (gradedDifferentialFormComponent gr p)
 ```
 
-**`KaehlerDifferential.gradedDifferentialFormComponent_wedgeMul_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/FormsDirectSum/GradedExteriorAlgebra.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/FormsDirectSum/GradedExteriorAlgebra.lean#L253). The attribute's comment: “wedge_compatible_with_gradings”.
+**`KaehlerDifferential.gradedDifferentialFormComponent_wedgeMul_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/FormsDirectSum/GradedExteriorAlgebra.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/FormsDirectSum/GradedExteriorAlgebra.lean#L253). The attribute's comment: “wedge\_compatible\_with\_gradings”.
 
 > **Stacks Project, Tag 0FU9.** The wedge product is compatible with the gradings: the wedge
 > of a form of exterior degree `p` and total degree `g` with a form of exterior degree `q` and
@@ -86,7 +86,7 @@ theorem gradedDifferentialFormComponent_wedgeMul_mem
       gradedDifferentialFormComponent gr (p + q) (g + h)
 ```
 
-**`KaehlerDifferential.gradedDifferentialFormComponent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/GradedComponents.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/GradedComponents.lean#L58). The attribute's comment: “graded_differential_form_components”.
+**`KaehlerDifferential.gradedDifferentialFormComponent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/GradedComponents.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/GradedComponents.lean#L58). The attribute's comment: “graded\_differential\_form\_components”.
 
 > The degree-`g` component of the `p`-forms of `A` over `R`, generated over
 > `R` by `a₀ ⋅ da₁ ∧ ⋯ ∧ daₚ` for homogeneous elements whose degrees sum
@@ -100,7 +100,7 @@ noncomputable def gradedDifferentialFormComponent
     Submodule R (⋀[A]^p (KaehlerDifferential R A))
 ```
 
-**`KaehlerDifferential.gradedDifferentialComponent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/GradedComponents.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/GradedComponents.lean#L75). The attribute's comment: “graded_differential_form_components”.
+**`KaehlerDifferential.gradedDifferentialComponent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/GradedComponents.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/DeRhamCohomology/GradedComponents.lean#L75). The attribute's comment: “graded\_differential\_form\_components”.
 
 > The degree-`g` component of the Kähler differentials of `A` over `R`.
 >
@@ -342,7 +342,7 @@ def Situation.gradedTwistIso (p : ℕ) (n : ℤ) :
       D.gradedAt p n
 ```
 
-**`Stacks.LineBundle.Situation.isQuasicoherent_gradedAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/HomogeneousTwistCompatible.lean, line 655](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/HomogeneousTwistCompatible.lean#L655). The attribute's comment: “clause (1): the degree-n part is a quasi-coherent O_X-module”.
+**`Stacks.LineBundle.Situation.isQuasicoherent_gradedAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/HomogeneousTwistCompatible.lean, line 655](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/HomogeneousTwistCompatible.lean#L655). The attribute's comment: “clause (1): the degree-n part is a quasi-coherent O\_X-module”.
 
 > **The degree-`n` part `Ω^p_{L^⋆/S, n}` is quasi-coherent**, read at the indexing the tensor
 > product of Tag 05NA and the comparison map of clause (1) are defined over. This is
@@ -354,7 +354,7 @@ theorem Situation.isQuasicoherent_gradedAt (p : ℕ) (n : ℤ) :
     (D.gradedAt p n).IsQuasicoherent
 ```
 
-**`Stacks.LineBundle.Situation.isQuasicoherent_gradedTwistSource`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/HomogeneousTwistCompatible.lean, line 664](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/HomogeneousTwistCompatible.lean#L664). The attribute's comment: “clause (1): the twisted degree-zero part is a quasi-coherent O_X-module”.
+**`Stacks.LineBundle.Situation.isQuasicoherent_gradedTwistSource`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/HomogeneousTwistCompatible.lean, line 664](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/LineBundle/HomogeneousTwistCompatible.lean#L664). The attribute's comment: “clause (1): the twisted degree-zero part is a quasi-coherent O\_X-module”.
 
 > **The source `Ω^p_{L^⋆/S, 0} ⊗_{𝒪_X} L^{⊗ n}` of the comparison map of clause (1) is
 > quasi-coherent**: both factors are, the degree-zero part by
@@ -485,7 +485,7 @@ instance quasiIso_incl : QuasiIso (incl R A)
 
 [Tag 0FUJ](https://stacks.math.columbia.edu/tag/0FUJ) in the Stacks Project.
 
-**`PolynomialDeRham.polynomialEquiv_oneEquiv_deRhamDifferential_zero_X_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/PolynomialCharP.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DeRham/PolynomialCharP.lean#L102). The attribute's comment: “the displayed decomposition of the de Rham complex of the affine line: d Xⁿ = n X^{n-1} dX”.
+**`PolynomialDeRham.polynomialEquiv_oneEquiv_deRhamDifferential_zero_X_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DeRham/PolynomialCharP.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DeRham/PolynomialCharP.lean#L102). The attribute's comment: “the displayed decomposition of the de Rham complex of the affine line: d Xⁿ = n X^\{n-1} dX”.
 
 > **The decomposition of the de Rham complex of the affine line**: on the monomial basis the only
 > differential of `Ω^•_{A[X]/A}` sends `Xⁿ` to `n X^{n-1} dX`.  Together with

@@ -40,7 +40,7 @@ theorem colimit_sections_equiv_sections_iInter
 
 [Tag 0API](https://stacks.math.columbia.edu/tag/0API) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_iInter_iso_iInter_in_specΓ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/IntersectionEmbedding.lean, line 1166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/IntersectionEmbedding.lean#L1166). The attribute's comment: “intersection_embedding”.
+**`AlgebraicGeometry.exists_iInter_iso_iInter_in_specΓ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/IntersectionEmbedding.lean, line 1166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/IntersectionEmbedding.lean#L1166). The attribute's comment: “intersection\_embedding”.
 
 > **Stacks Project, Tag 0API.** The canonical map from a nonempty intersection
 > of quasi-compact opens in an ind-quasi-affine scheme to the spectrum of its ring
@@ -73,7 +73,7 @@ theorem exists_iInter_iso_iInter_in_specΓ
             (identityToΓSpec.app Z).toHom
 ```
 
-**`AlgebraicGeometry.isOpen_image_toΓSpec_of_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/IntersectionEmbedding.lean, line 1249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/IntersectionEmbedding.lean#L1249). The attribute's comment: “open_image”.
+**`AlgebraicGeometry.isOpen_image_toΓSpec_of_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/IntersectionEmbedding.lean, line 1249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Slicing/IntersectionEmbedding.lean#L1249). The attribute's comment: “open\_image”.
 
 > **Stacks Project, Tag 0API (open image).** The canonical map from an intersection of a
 > nonempty family of quasi-compact opens in an ind-quasi-affine scheme to the spectrum of its

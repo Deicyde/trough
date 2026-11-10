@@ -14,7 +14,7 @@ Section 52.2 of the Stacks Project, [Tag 0EH3](https://stacks.math.columbia.edu/
 
 [Tag 0EI8](https://stacks.math.columbia.edu/tag/0EI8) in the Stacks Project.
 
-**`Stacks.Algebraization.AdicInverseSystem.isZero_cohomology_limitModule_of_affineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/AffineVanishing.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/AffineVanishing.lean#L107). The attribute's comment: “affine_vanishing”.
+**`Stacks.Algebraization.AdicInverseSystem.isZero_cohomology_limitModule_of_affineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/AffineVanishing.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/AffineVanishing.lean#L107). The attribute's comment: “affine\_vanishing”.
 
 > The positive-degree cohomology of the inverse limit of an adic inverse system vanishes on
 > every affine open.
@@ -111,7 +111,7 @@ public theorem exists_shortExact_cohomology_limitModule {A : Type u} [CommRing A
               (ShortComplex.mk i q w).ShortExact
 ```
 
-**`Stacks.Algebraization.AdicInverseSystem.idealPowerMultiple_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/IdealPowers.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/IdealPowers.lean#L160). The attribute's comment: “ideal_powers”.
+**`Stacks.Algebraization.AdicInverseSystem.idealPowerMultiple_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/IdealPowers.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/IdealPowers.lean#L160). The attribute's comment: “ideal\_powers”.
 
 > A morphism into the inverse limit factors through `I ^ n` of the limit if and only if all
 > its projections to the terms `F_m`, for `m ≥ n`, factor through `I ^ n F_m`. This is the

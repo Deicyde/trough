@@ -89,7 +89,7 @@ Declarations registered for the tag:
 
 [Tag 07WA](https://stacks.math.columbia.edu/tag/07WA) in the Stacks Project.
 
-**`Deformation.changeOfFieldsIsoClassMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 720](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ResidueField/Basic.lean#L720). The attribute's comment: “isomorphism_classes”.
+**`Deformation.changeOfFieldsIsoClassMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 720](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ResidueField/Basic.lean#L720). The attribute's comment: “isomorphism\_classes”.
 
 > The canonical fiber inclusion induces a bijection on isomorphism classes,
 > without restricting the universe of the total category.
@@ -104,7 +104,7 @@ public theorem changeOfFieldsIsoClassMap_bijective
     Function.Bijective (changeOfFieldsIsoClassMap S p B)
 ```
 
-**`Deformation.changeOfFieldsIsoClassMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 757](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ResidueField/Basic.lean#L757). The attribute's comment: “isomorphism_classes”.
+**`Deformation.changeOfFieldsIsoClassMap_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ResidueField/Basic.lean, line 757](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ResidueField/Basic.lean#L757). The attribute's comment: “isomorphism\_classes”.
 
 > Naturality of the canonical identification on representative classes: a
 > coCartesian pushforward and the change-of-fields fiber inclusion commute on

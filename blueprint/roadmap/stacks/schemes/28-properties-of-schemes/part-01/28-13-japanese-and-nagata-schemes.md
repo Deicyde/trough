@@ -14,7 +14,7 @@ Section 28.13 of the Stacks Project, [Tag 033R](https://stacks.math.columbia.edu
 
 [Tag 033S](https://stacks.math.columbia.edu/tag/033S) in the Stacks Project.
 
-**`IsUniversallyJapaneseScheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Nagata.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Nagata.lean#L60). The attribute's comment: “universally_japanese_scheme”. References: EGA IV (5.11.4); SGA 4 IX (2.14.2).
+**`IsUniversallyJapaneseScheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Nagata.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Nagata.lean#L60). The attribute's comment: “universally\_japanese\_scheme”. References: EGA IV (5.11.4); SGA 4 IX (2.14.2).
 
 > A scheme is **universally Japanese** if every point has an affine open neighbourhood whose
 > ring of sections is universally Japanese.
@@ -26,8 +26,8 @@ public def IsUniversallyJapaneseScheme
 
 Declarations registered for the tag:
 
-- [`IsJapaneseScheme`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Nagata.lean#L28), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Properties/Nagata.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Nagata.lean#L186) (StacksFrontier): “japanese_scheme”.
-- [`IsNagataScheme`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Nagata.lean#L36), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Properties/Nagata.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Nagata.lean#L187) (StacksFrontier): “nagata_scheme”.
+- [`IsJapaneseScheme`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Nagata.lean#L28), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Properties/Nagata.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Nagata.lean#L186) (StacksFrontier): “japanese\_scheme”.
+- [`IsNagataScheme`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Nagata.lean#L36), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Properties/Nagata.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Nagata.lean#L187) (StacksFrontier): “nagata\_scheme”.
 
 ## Tag 033U, a lemma
 

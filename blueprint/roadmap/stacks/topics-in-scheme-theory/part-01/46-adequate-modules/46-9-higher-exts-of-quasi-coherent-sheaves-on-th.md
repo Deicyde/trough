@@ -71,7 +71,7 @@ public theorem pureExtToExt_bijective_and_natural :
         (pureExtToExt B M N n x).comp (Ext.mk₀ ((associatedTilde B).map g)) (add_zero n))
 ```
 
-**`Stacks.Adequate.bijective_pureExtToExt_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/PureExtCanonicalArrow.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/PureExtCanonicalArrow.lean#L264). The attribute's comment: “degree 1: the canonical arrow pureExtToExt, natural in M and N by pureExtToExt_naturality_left/_right, is bijective in degree 1; every degree is pureExtToExt_bijective_and_natural in HigherExtsAdequate/AdequateExtComparisonAll”.
+**`Stacks.Adequate.bijective_pureExtToExt_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/PureExtCanonicalArrow.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/PureExtCanonicalArrow.lean#L264). The attribute's comment: “degree 1: the canonical arrow pureExtToExt, natural in M and N by pureExtToExt\_naturality\_left/\_right, is bijective in degree 1; every degree is pureExtToExt\_bijective\_and\_natural in HigherExtsAdequate/AdequateExtComparisonAll”.
 
 > **[Stacks, Tag 0709] in degree `1`.** For `U = Spec A` affine and `A`-modules `M`, `N`, the
 > canonical arrow `Pext¹_A(M, N) ⟶ Ext¹_{Mod((Sch/U)_τ, 𝒪)}(M^a, N^a)` is bijective, with no
@@ -90,7 +90,7 @@ public theorem bijective_pureExtToExt_one (M N : ModuleCat.{u} A) :
     Function.Bijective (pureExtToExt B M N 1)
 ```
 
-**`Stacks.Adequate.pureExtZeroAddEquivExtZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/PureExtComparison.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/PureExtComparison.lean#L179). The attribute's comment: “degree 0, where the canonical arrow is the action of M ↦ M^a on Hom composed with the computation of Pext in degree 0, and neither Tag 06ZW nor Tag 06ZG is needed; functorial in M and N by homAddEquivExtZero_naturality_left/_right together with Module.homComplexZeroHom_naturality_left/_right. Every degree is pureExtToExt_bijective_and_natural in HigherExtsAdequate/AdequateExtComparisonAll”.
+**`Stacks.Adequate.pureExtZeroAddEquivExtZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/PureExtComparison.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsBase/PureExtComparison.lean#L179). The attribute's comment: “degree 0, where the canonical arrow is the action of M ↦ M^a on Hom composed with the computation of Pext in degree 0, and neither Tag 06ZW nor Tag 06ZG is needed; functorial in M and N by homAddEquivExtZero\_naturality\_left/\_right together with Module.homComplexZeroHom\_naturality\_left/\_right. Every degree is pureExtToExt\_bijective\_and\_natural in HigherExtsAdequate/AdequateExtComparisonAll”.
 
 > **[Stacks, Tag 0709] in degree `0`.** For `U = Spec A` affine and `A`-modules `M`, `N`, the
 > canonical arrow

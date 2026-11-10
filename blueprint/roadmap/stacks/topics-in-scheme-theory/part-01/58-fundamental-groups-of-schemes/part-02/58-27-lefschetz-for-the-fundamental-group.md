@@ -14,7 +14,7 @@ Section 58.27 of the Stacks Project, [Tag 0ELB](https://stacks.math.columbia.edu
 
 [Tag 0ELC](https://stacks.math.columbia.edu/tag/0ELC) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_zeroScheme_of_depthAddDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean#L253). The attribute's comment: “first statement: restriction FÉt_X → FÉt_Y to the zero scheme of a section of an ample invertible module is fully faithful. Nothing is carried: Stacks 0EL1 is isIso_zeroSchemeComparison_of_isProper, and the passage from it to full faithfulness is the formalized Stacks 0EKP chain followed by Stacks 0EL8”. References: SGA 1 X (2.13), “partial”.
+**`Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_zeroScheme_of_depthAddDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean#L253). The attribute's comment: “first statement: restriction FÉt\_X → FÉt\_Y to the zero scheme of a section of an ample invertible module is fully faithful. Nothing is carried: Stacks 0EL1 is isIso\_zeroSchemeComparison\_of\_isProper, and the passage from it to full faithfulness is the formalized Stacks 0EKP chain followed by Stacks 0EL8”. References: SGA 1 X (2.13), “partial”.
 
 > **[Stacks, Tag 0ELC], first statement.** Let `k` be a field, `X` a proper scheme over `k`,
 > `L` an ample invertible `𝒪_X`-module, `s ∈ Γ(X, L)` and `Y = Z(s)` the zero scheme of `s`. If
@@ -40,7 +40,7 @@ public theorem fullyFaithful_finiteEtaleBaseChange_zeroScheme_of_depthAddDim
     Nonempty (finiteEtaleBaseChange (zeroScheme X L s).subschemeι).FullyFaithful
 ```
 
-**`Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_zeroScheme_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeRestrictionFromDepth.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeRestrictionFromDepth.lean#L78). The attribute's comment: “first statement: restriction FÉt_X → FÉt_Y to the zero scheme of a section of an ample invertible module on a proper scheme over a field is fully faithful when depth + dim > 1 off the zero scheme”. References: SGA 1 X (2.13), “partial”.
+**`Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_zeroScheme_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeRestrictionFromDepth.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeRestrictionFromDepth.lean#L78). The attribute's comment: “first statement: restriction FÉt\_X → FÉt\_Y to the zero scheme of a section of an ample invertible module on a proper scheme over a field is fully faithful when depth + dim > 1 off the zero scheme”. References: SGA 1 X (2.13), “partial”.
 
 > **[Stacks, Tag 0ELC], first statement.** Let `k` be a field, `X` a proper scheme over `k`,
 > `L` an ample invertible `𝒪_X`-module, `s ∈ Γ(X, L)` and `Y = Z(s)` the zero scheme of `s`. If
@@ -59,7 +59,7 @@ public theorem fullyFaithful_finiteEtaleBaseChange_zeroScheme_of_isProper
     Nonempty (finiteEtaleBaseChange (zeroScheme X L s).subschemeι).FullyFaithful
 ```
 
-**`Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_neighborhood_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeRestrictionFromDepth.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeRestrictionFromDepth.lean#L99). The attribute's comment: “second statement: restriction FÉt_V → FÉt_Y is fully faithful for every open V of X containing the zero scheme”. References: SGA 1 X (2.13), “partial”; SGA 2 XII (3.5), “more general”.
+**`Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_neighborhood_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeRestrictionFromDepth.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeRestrictionFromDepth.lean#L99). The attribute's comment: “second statement: restriction FÉt\_V → FÉt\_Y is fully faithful for every open V of X containing the zero scheme”. References: SGA 1 X (2.13), “partial”; SGA 2 XII (3.5), “more general”.
 
 > **[Stacks, Tag 0ELC], second statement.** In the situation of
 > `Stacks.FundamentalGroup.fullyFaithful_finiteEtaleBaseChange_zeroScheme_of_isProper`, the
@@ -84,7 +84,7 @@ public theorem fullyFaithful_finiteEtaleBaseChange_neighborhood_of_isProper
 
 [Tag 0ELD](https://stacks.math.columbia.edu/tag/0ELD) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.finiteEtaleColimitEquivalence_zeroScheme_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeFiniteEtaleEquivalence.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeFiniteEtaleEquivalence.lean#L100). The attribute's comment: “the restriction functor colim_V FÉt_V → FÉt_Y is an equivalence, stated as its fully faithful half and its essentially surjective half, at exactly the source's hypotheses”.
+**`Stacks.FundamentalGroup.finiteEtaleColimitEquivalence_zeroScheme_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeFiniteEtaleEquivalence.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemeFiniteEtaleEquivalence.lean#L100). The attribute's comment: “the restriction functor colim\_V FÉt\_V → FÉt\_Y is an equivalence, stated as its fully faithful half and its essentially surjective half, at exactly the source's hypotheses”.
 
 > **Stacks Project, Tag 0ELD.** Let `k` be a field, `X` a proper scheme over `k`, `L` an ample
 > invertible `𝒪_X`-module, `s ∈ Γ(X, L)`, `Y = Z(s)` the zero scheme of `s`, and `𝒱` the open
@@ -116,7 +116,7 @@ public theorem finiteEtaleColimitEquivalence_zeroScheme_of_depth
 
 [Tag 0ELE](https://stacks.math.columbia.edu/tag/0ELE) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.isEquivalence_finiteEtaleBaseChange_zeroScheme_of_hasPurity_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean#L452). The attribute's comment: “first conclusion: restriction FÉt_X → FÉt_Y to the zero scheme of a section of an ample invertible module is an equivalence”. References: SGA 1 X (2.13), “more general”; SGA 2 XII (3.5), “special case”.
+**`Stacks.FundamentalGroup.isEquivalence_finiteEtaleBaseChange_zeroScheme_of_hasPurity_of_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/LefschetzZeroSchemePurity.lean#L452). The attribute's comment: “first conclusion: restriction FÉt\_X → FÉt\_Y to the zero scheme of a section of an ample invertible module is an equivalence”. References: SGA 1 X (2.13), “more general”; SGA 2 XII (3.5), “special case”.
 
 > **[Stacks, Tag 0ELE], the first conclusion.** Let `k` be a field, `X` a proper scheme over
 > `k`, `L` an ample invertible `𝒪_X`-module, `s ∈ Γ(X, L)` and `Y = Z(s)` the zero scheme of `s`.

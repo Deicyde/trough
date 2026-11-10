@@ -97,7 +97,7 @@ def LocallyHasFiniteTorDimension
 
 [Tag 08G0](https://stacks.math.columbia.edu/tag/08G0) in the Stacks Project.
 
-**`Stacks.SheafOfModules.DerivedTensorProduct.isFlat_cokernel_of_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/TorAmplitude/FlatCokernel.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/TorAmplitude/FlatCokernel.lean#L123). The attribute's comment: “variant: Tor amplitude measured against a derived tensor product datum `T` on D(O); the tag is Stacks.SheafOfModules.DerivedTensorProduct.isFlat_cokernel_of_hasTorAmplitude_canonical”.
+**`Stacks.SheafOfModules.DerivedTensorProduct.isFlat_cokernel_of_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/TorAmplitude/FlatCokernel.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/TorAmplitude/FlatCokernel.lean#L123). The attribute's comment: “variant: Tor amplitude measured against a derived tensor product datum `T` on D(O); the tag is Stacks.SheafOfModules.DerivedTensorProduct.isFlat\_cokernel\_of\_hasTorAmplitude\_canonical”.
 
 > **Stacks 08G0.** The cokernel of the differential into the lowest degree of the
 > Tor-amplitude interval of a bounded above complex of flat `O`-modules is a flat `O`-module.

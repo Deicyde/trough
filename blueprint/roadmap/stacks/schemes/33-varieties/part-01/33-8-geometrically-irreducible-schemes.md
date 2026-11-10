@@ -334,7 +334,7 @@ theorem geometricallyIrreducible_of_irreducibleSpace_of_dense_rationalPoints
 
 [Tag 038J](https://stacks.math.columbia.edu/tag/038J) in the Stacks Project.
 
-**`AlgebraicGeometry.fixed_geometricComponent_iff_exists_geometricallyIrreducible_component`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GaloisFixedComponentDescent.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GaloisFixedComponentDescent.lean#L117). The attribute's comment: “fixed_component_descent”.
+**`AlgebraicGeometry.fixed_geometricComponent_iff_exists_geometricallyIrreducible_component`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GaloisFixedComponentDescent.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GaloisFixedComponentDescent.lean#L117). The attribute's comment: “fixed\_component\_descent”.
 
 > A geometric irreducible component is fixed by the Galois action exactly when it descends
 > to a geometrically irreducible component of the original scheme.
@@ -357,7 +357,7 @@ theorem fixed_geometricComponent_iff_exists_geometricallyIrreducible_component
           (T : Set X) = Tbar.1
 ```
 
-**`AlgebraicGeometry.galoisActionOnGeometricIrreducibleComponents`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisAction.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisAction.lean#L162). The attribute's comment: “galois_action_on_geometric_irreducible_components”.
+**`AlgebraicGeometry.galoisActionOnGeometricIrreducibleComponents`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisAction.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisAction.lean#L162). The attribute's comment: “galois\_action\_on\_geometric\_irreducible\_components”.
 
 > The canonical action of the opposite Galois group on the irreducible components of a scheme
 > after base change. A component is sent to its image under the corresponding automorphism of the
@@ -449,7 +449,7 @@ public theorem fiber_irreducibleComponentsBaseChangeMap_eq_orbit
 
 [Tag 04KZ](https://stacks.math.columbia.edu/tag/04KZ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finite_subextension_defining_component`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/FiniteExtension.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/FiniteExtension.lean#L408). The attribute's comment: “component_defined_over_finite_extension”.
+**`AlgebraicGeometry.exists_finite_subextension_defining_component`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/FiniteExtension.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/FiniteExtension.lean#L408). The attribute's comment: “component\_defined\_over\_finite\_extension”.
 
 > **Stacks Project, Tag 04KZ.** Every irreducible component after extension to a separable
 > closure is defined over a finite intermediate extension.
@@ -473,7 +473,7 @@ public theorem exists_finite_subextension_defining_component
         p.base ⁻¹' (T : Set _) = (Z : Set _)
 ```
 
-**`AlgebraicGeometry.continuous_galoisActionOnGeometricIrreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/OrbitDecomposition.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/OrbitDecomposition.lean#L85). The attribute's comment: “continuous_action”.
+**`AlgebraicGeometry.continuous_galoisActionOnGeometricIrreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/OrbitDecomposition.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/OrbitDecomposition.lean#L85). The attribute's comment: “continuous\_action”.
 
 > **Stacks Project, Tag 04KZ.** The Galois action on the geometric irreducible components
 > of a locally finite-type scheme is continuous when the component set is discrete.
@@ -489,7 +489,7 @@ public theorem continuous_galoisActionOnGeometricIrreducibleComponents
         ((galoisActionOnGeometricIrreducibleComponents k K X).ρ p.1).asHom p.2)
 ```
 
-**`AlgebraicGeometry.exists_finite_single_orbit_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/OrbitDecomposition.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/OrbitDecomposition.lean#L205). The attribute's comment: “finite_single_orbit_decomposition”.
+**`AlgebraicGeometry.exists_finite_single_orbit_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/OrbitDecomposition.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/OrbitDecomposition.lean#L205). The attribute's comment: “finite\_single\_orbit\_decomposition”.
 
 > **Stacks Project, Tag 04KZ.** Over a separable closure, the inverse image of an irreducible
 > component is a finite union of irreducible components forming a single Galois orbit.

@@ -78,7 +78,7 @@ theorem isMittagLefflerCategorical_puncturedSpectrumCohomologySystem [IsNoetheri
     IsMittagLefflerCategorical (puncturedSpectrumCohomologySystem A S (p : ℤ))
 ```
 
-**`Stacks.LocalCohomology.isMittagLeffler_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/MittagLefflerSystems.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/MittagLefflerSystems.lean#L76). The attribute's comment: “local_cohomology_system”.
+**`Stacks.LocalCohomology.isMittagLeffler_localCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/MittagLefflerSystems.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/MittagLefflerSystems.lean#L76). The attribute's comment: “local\_cohomology\_system”.
 
 > **Stacks Project, Tag 0DX1.** Over a Noetherian local ring, the local cohomology modules of
 > an inverse system of finite modules satisfy the Mittag-Leffler condition in every degree.

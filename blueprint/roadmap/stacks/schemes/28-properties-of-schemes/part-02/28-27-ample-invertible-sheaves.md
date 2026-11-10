@@ -58,7 +58,7 @@ theorem isAmple_iff_tensorPower_isAmple (X : Scheme.{u}) (L : X.Modules)
 
 [Tag 01PU](https://stacks.math.columbia.edu/tag/01PU) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.isAmple_pullback_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePullback/Affine.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmplePullback/Affine.lean#L108). References: EGA II (4.5.14), “necessity”; EGA II (4.5.13), “necessity”; EGA III (2.6.2.3), “special case”; EGA III (5.2.5), “Ampleness of L'_0 = L/JL”.
+**`AlgebraicGeometry.Scheme.Modules.isAmple_pullback_of_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmplePullback/Affine.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmplePullback/Affine.lean#L108). References: EGA II (4.5.14), “necessity”; EGA II (4.5.13), “necessity”; EGA III (2.6.2.3), “special case”; EGA III (5.2.5), “Ampleness of L'\_0 = L/JL”.
 
 > **Stacks Project, Tag 01PU.** The restriction of an ample invertible sheaf of modules to a
 > closed subscheme is ample. The closed immersion is affine, and its source is quasi-compact
@@ -289,7 +289,7 @@ public theorem image_projHom_preimage_projBasicOpen {d : ℕ} (a : powSections L
       = nvOpen L a
 ```
 
-**`Stacks.SectionRingProjMorphism.Theta.homOfLE_projHom_eq_glued`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L104). The attribute's comment: “the canonical morphism is the morphism r_{L,psi} of Tag 01NK at psi the identity map of the section ring, with no hypothesis on L; this is what the clauses below are clauses about”.
+**`Stacks.SectionRingProjMorphism.Theta.homOfLE_projHom_eq_glued`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L104). The attribute's comment: “the canonical morphism is the morphism r\_\{L,psi} of Tag 01NK at psi the identity map of the section ring, with no hypothesis on L; this is what the clauses below are clauses about”.
 
 > **The canonical morphism `Stacks.SectionRingProjMorphism.projHom` is the morphism `r_{L, ψ}` of
 > [Stacks, Tag 01NK] at `ψ` the identity map of `Γ_*(X, L)`**, with no hypothesis on `L`: the two
@@ -303,7 +303,7 @@ theorem homOfLE_projHom_eq_glued :
       = (canonicalSections L).glued
 ```
 
-**`Stacks.SectionRingProjMorphism.Theta.glued_preimage_projBasicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L120). The attribute's comment: “clause (1): f^{-1}(D_+(s)) = X_s for every homogeneous s in S_+, for the morphism f = r_{L,psi} that clauses (2), (3) and (4) are stated at, as opens of its source U(psi)”.
+**`Stacks.SectionRingProjMorphism.Theta.glued_preimage_projBasicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L120). The attribute's comment: “clause (1): f^\{-1}(D\_+(s)) = X\_s for every homogeneous s in S\_+, for the morphism f = r\_\{L,psi} that clauses (2), (3) and (4) are stated at, as opens of its source U(psi)”.
 
 > `f^{-1}(D₊(s)) = X_s` for every homogeneous `s ∈ S_+`, where `f` is `r_{L, ψ}` at `ψ` the
 > identity map of `S = Γ_*(X, L)`. Both sides are opens of the source `U(ψ) = ⋃_a X_a` of `f`, the
@@ -316,7 +316,7 @@ theorem glued_preimage_projBasicOpen {d : ℕ} (a : powSections L d) (hd : 0 < d
       = (canonicalSections L).coveringOpen.ι ⁻¹ᵁ nvOpen L a
 ```
 
-**`Stacks.SectionRingProjMorphism.Theta.projTheta`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L140). The attribute's comment: “clause (2): the O_X-module maps f^*O_Y(n) -> L^{tensor n} for all n in Z, as a homomorphism of sheaves of Z-graded algebras, whose map_mul is their compatibility with the multiplication maps of Constructions Equation 01MO”.
+**`Stacks.SectionRingProjMorphism.Theta.projTheta`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L140). The attribute's comment: “clause (2): the O\_X-module maps f^*O\_Y(n) -> L^\{tensor n} for all n in Z, as a homomorphism of sheaves of Z-graded algebras, whose map\_mul is their compatibility with the multiplication maps of Constructions Equation 01MO”.
 
 > **The `𝒪_X`-module maps `f^*𝒪_Y(n) ⟶ L^{⊗ n}`, compatible with the multiplication maps of
 > Constructions, Equation 01MO.** All degrees at once, as a homomorphism of sheaves of `ℤ`-graded
@@ -333,7 +333,7 @@ def projTheta : SheafOfModules.GradedAlgebra.Hom
     (laurentRestrict (grading L) (canonicalSections L))
 ```
 
-**`Stacks.SectionRingProjMorphism.Theta.projTheta_app_top_degreeSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L163). The attribute's comment: “clause (3): the composite S_d -> Gamma(Y, O_Y(d)) -> Gamma(X, L^{tensor d}) is the identity map, read on the open where the canonical morphism is defined”.
+**`Stacks.SectionRingProjMorphism.Theta.projTheta_app_top_degreeSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/Theta.lean#L163). The attribute's comment: “clause (3): the composite S\_d -> Gamma(Y, O\_Y(d)) -> Gamma(X, L^\{tensor d}) is the identity map, read on the open where the canonical morphism is defined”.
 
 > **The composite `S_d ⟶ Γ(Y, 𝒪_Y(d)) ⟶ Γ(X, L^{⊗ d})` is the identity map.** For a homogeneous
 > element `z` of `S = Γ_*(X, L)` of degree `d`, the first map sends `z` to the global section of
@@ -356,7 +356,7 @@ theorem projTheta_app_top_degreeSection (d : ℕ) {z : sectionRing L} (hz : z �
           ((canonicalSections L).coveringOpen.ι ''ᵁ ⊤)
 ```
 
-**`Stacks.SectionRingProjMorphism.Theta.exists_isIso_pullback_projTheta_app_intMul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/ThetaIso.lean, line 484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/ThetaIso.lean#L484). The attribute's comment: “clause (4): every point of the open where the canonical morphism is defined has an integer d >= 1 and an open neighbourhood U of it on which f^*O_Y(dn) -> L^{tensor dn} is an isomorphism for all n in Z, positive, zero and negative; d is the degree of a homogeneous element of the section ring not vanishing at the point and U is the nonvanishing open of that element”.
+**`Stacks.SectionRingProjMorphism.Theta.exists_isIso_pullback_projTheta_app_intMul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/ThetaIso.lean, line 484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjMorphism/ThetaIso.lean#L484). The attribute's comment: “clause (4): every point of the open where the canonical morphism is defined has an integer d >= 1 and an open neighbourhood U of it on which f^*O\_Y(dn) -> L^\{tensor dn} is an isomorphism for all n in Z, positive, zero and negative; d is the degree of a homogeneous element of the section ring not vanishing at the point and U is the nonvanishing open of that element”.
 
 > Every point of `⋃_a X_a` has an integer `d ≥ 1` and an open neighbourhood `U` on which
 > `f^*𝒪_Y(d n)|_U ⟶ L^{⊗ d n}|_U` is an isomorphism **for all `n ∈ ℤ`**.
@@ -374,7 +374,7 @@ theorem exists_isIso_pullback_projTheta_app_intMul {x : X}
 
 [Tag 01Q0](https://stacks.math.columbia.edu/tag/01Q0) in the Stacks Project.
 
-**`Stacks.SectionRingProjQuasiCompact.quasiCompact_projHomOfCovers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjQuasiCompact/Basic.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjQuasiCompact/Basic.lean#L220). The attribute's comment: “the canonical morphism of 01PZ is quasi-compact, under (a) the X_s cover X and (b) X quasi-compact”.
+**`Stacks.SectionRingProjQuasiCompact.quasiCompact_projHomOfCovers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjQuasiCompact/Basic.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjQuasiCompact/Basic.lean#L220). The attribute's comment: “the canonical morphism of 01PZ is quasi-compact, under (a) the X\_s cover X and (b) X quasi-compact”.
 
 > **Stacks Tag 01Q0, the quasi-compactness.** Under clause (a) of Stacks Tag 01PZ — the `X_s`
 > cover `X` — and `X` quasi-compact, the canonical morphism `f : X ⟶ Proj Γ_*(X, L)` of Stacks Tag
@@ -390,7 +390,7 @@ theorem quasiCompact_projHomOfCovers [CompactSpace X]
     QuasiCompact (Stacks.SectionRingProjMorphism.projHomOfCovers L hcov)
 ```
 
-**`Stacks.SectionRingProjQuasiCompact.denseRange_projHomOfCovers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjQuasiCompact/Basic.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjQuasiCompact/Basic.lean#L233). The attribute's comment: “the canonical morphism of 01PZ has dense image, under (a) the X_s cover X and (b) X quasi-compact”.
+**`Stacks.SectionRingProjQuasiCompact.denseRange_projHomOfCovers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionRingProjQuasiCompact/Basic.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionRingProjQuasiCompact/Basic.lean#L233). The attribute's comment: “the canonical morphism of 01PZ has dense image, under (a) the X\_s cover X and (b) X quasi-compact”.
 
 > **Stacks Tag 01Q0, the dense image.** Under clause (a) of Stacks Tag 01PZ — the `X_s` cover
 > `X` — and `X` quasi-compact, the canonical morphism `f : X ⟶ Proj Γ_*(X, L)` of Stacks Tag 01PZ

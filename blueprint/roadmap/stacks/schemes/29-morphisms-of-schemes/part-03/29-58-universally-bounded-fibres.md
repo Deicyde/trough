@@ -35,7 +35,7 @@ public abbrev HasUniversallyBoundedFibers {X Y : Scheme.{u}} (f : X ⟶ Y) : Pro
 
 [Tag 03J5](https://stacks.math.columbia.edu/tag/03J5) in the Stacks Project.
 
-**`AlgebraicGeometry.cardinalMk_pullback_le_of_degree_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteLocallyFree/FibreCardinality.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FiniteLocallyFree/FibreCardinality.lean#L77). The attribute's comment: “card_fibre_le_bound”.
+**`AlgebraicGeometry.cardinalMk_pullback_le_of_degree_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteLocallyFree/FibreCardinality.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FiniteLocallyFree/FibreCardinality.lean#L77). The attribute's comment: “card\_fibre\_le\_bound”.
 
 > **Stacks Project, Tag 03J5.** If all field-valued base changes of a morphism are finite of
 > degree at most `n`, then each of them has at most `n` points.
@@ -49,7 +49,7 @@ theorem cardinalMk_pullback_le_of_degree_le
       Cardinal.mk (pullback g f : Scheme.{u}) ≤ n
 ```
 
-**`AlgebraicGeometry.sum_finrank_residueField_le_of_degree_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/ResidueDegreeBound.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/ResidueDegreeBound.lean#L121). The attribute's comment: “sum_residue_degrees_le_bound”.
+**`AlgebraicGeometry.sum_finrank_residueField_le_of_degree_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/ResidueDegreeBound.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/ResidueDegreeBound.lean#L121). The attribute's comment: “sum\_residue\_degrees\_le\_bound”.
 
 > **Stacks Project, Tag 03J5.** In a field-valued base change whose degree is uniformly bounded
 > by `n`, the sum of the residue degrees at any finite family of distinct points is at most `n`.
@@ -67,7 +67,7 @@ public theorem sum_finrank_residueField_le_of_degree_le
         Module.finrank k ((pullback g f).residueField (x i))) ≤ n
 ```
 
-**`AlgebraicGeometry.hasUniversallyBoundedFibers_of_boundsFiberDegrees`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/UniversallyBounded.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/UniversallyBounded.lean#L62). The attribute's comment: “universally_bounded”.
+**`AlgebraicGeometry.hasUniversallyBoundedFibers_of_boundsFiberDegrees`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/UniversallyBounded.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/UniversallyBounded.lean#L62). The attribute's comment: “universally\_bounded”.
 
 > A common integer bound on the degrees of the fibres makes those fibres universally
 > bounded.
@@ -77,7 +77,7 @@ public lemma hasUniversallyBoundedFibers_of_boundsFiberDegrees {X Y : Scheme.{u}
     (n : ℤ) (h : BoundsFiberDegrees f n) : HasUniversallyBoundedFibers f
 ```
 
-**`AlgebraicGeometry.boundsFiberDegrees_iff_field_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/UniversallyBoundedBaseChange.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/UniversallyBoundedBaseChange.lean#L100). The attribute's comment: “bounded_degree_iff_field_base_changes”.
+**`AlgebraicGeometry.boundsFiberDegrees_iff_field_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/UniversallyBoundedBaseChange.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/UniversallyBoundedBaseChange.lean#L100). The attribute's comment: “bounded\_degree\_iff\_field\_base\_changes”.
 
 > An integer bounds the degrees of the fibres of a morphism of schemes exactly when each of its
 > base changes to the spectrum of a field is finite locally free of a rank bounded by that
@@ -91,7 +91,7 @@ theorem boundsFiberDegrees_iff_field_baseChange {X Y : Scheme.{u}} (f : X ⟶ Y)
           Stacks.Morphisms.IsFiniteLocallyFreeOfRank (pullback.fst g f) r
 ```
 
-**`AlgebraicGeometry.boundsFiberDegrees_iff_field_baseChange_of_nonneg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Varieties/BoundedDegree/FieldBaseChange.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Varieties/BoundedDegree/FieldBaseChange.lean#L75). The attribute's comment: “bounded_degree_iff_field_base_changes”.
+**`AlgebraicGeometry.boundsFiberDegrees_iff_field_baseChange_of_nonneg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Varieties/BoundedDegree/FieldBaseChange.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Varieties/BoundedDegree/FieldBaseChange.lean#L75). The attribute's comment: “bounded\_degree\_iff\_field\_base\_changes”.
 
 > **Stacks Project, Tag 03J5.** A nonnegative integer bounds the degrees of the fibres of a
 > scheme morphism exactly when every field-valued base change is finite locally free of rank at

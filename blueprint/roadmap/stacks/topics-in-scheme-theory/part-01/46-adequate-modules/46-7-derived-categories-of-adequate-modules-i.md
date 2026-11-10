@@ -319,7 +319,7 @@ public theorem isEquivalence_boundedBelowComparison_adequate
 
 [Tag 06ZW](https://stacks.math.columbia.edu/tag/06ZW) in the Stacks Project.
 
-**`Stacks.Adequate.bijective_mapExtAddHom_ι_adequate_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequateExtComparison.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequateExtComparison.lean#L124). The attribute's comment: “degree 0, where the comparison is the map on Hom and the inclusion of the strictly full subcategory of adequate modules is fully faithful; every degree is bijective_mapExtAddHom_ι_adequate in HigherExtsAdequate/AdequateExtComparisonAll”.
+**`Stacks.Adequate.bijective_mapExtAddHom_ι_adequate_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequateExtComparison.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequateExtComparison.lean#L124). The attribute's comment: “degree 0, where the comparison is the map on Hom and the inclusion of the strictly full subcategory of adequate modules is fully faithful; every degree is bijective\_mapExtAddHom\_ι\_adequate in HigherExtsAdequate/AdequateExtComparisonAll”.
 
 > For `U = Spec A` affine and adequate `𝒪`-modules `𝓕`, `𝓖`, the natural map
 > `Ext^0_{Adeq(𝒪)}(𝓕, 𝓖) ⟶ Ext^0_{Mod((Sch/U)_τ, 𝒪)}(𝓕, 𝓖)` is bijective.
@@ -344,7 +344,7 @@ public theorem bijective_mapExtAddHom_ι_adequate_zero :
       Function.Bijective ((adequate.{u, u} B).ι.mapExtAddHom.{u + 1, u + 1} F G 0)
 ```
 
-**`Stacks.Adequate.bijective_mapExtAddHom_ι_adequate_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequateExtComparison.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequateExtComparison.lean#L157). The attribute's comment: “degree 1, where the comparison is bijective because the adequate modules are closed under extensions, Tag 06VQ (3), and Ext^1 is the group of Yoneda extensions; every degree is bijective_mapExtAddHom_ι_adequate in HigherExtsAdequate/AdequateExtComparisonAll”.
+**`Stacks.Adequate.bijective_mapExtAddHom_ι_adequate_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequateExtComparison.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequateExtComparison.lean#L157). The attribute's comment: “degree 1, where the comparison is bijective because the adequate modules are closed under extensions, Tag 06VQ (3), and Ext^1 is the group of Yoneda extensions; every degree is bijective\_mapExtAddHom\_ι\_adequate in HigherExtsAdequate/AdequateExtComparisonAll”.
 
 > For `U = Spec A` affine and adequate `𝒪`-modules `𝓕`, `𝓖`, the natural map
 > `Ext^1_{Adeq(𝒪)}(𝓕, 𝓖) ⟶ Ext^1_{Mod((Sch/U)_τ, 𝒪)}(𝓕, 𝓖)` is bijective.

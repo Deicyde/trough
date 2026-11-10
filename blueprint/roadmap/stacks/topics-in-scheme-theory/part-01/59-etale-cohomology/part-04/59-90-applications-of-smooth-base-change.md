@@ -40,7 +40,7 @@ theorem isIso_smallEtaleDerivedBaseChangeAb_of_stalks
 
 [Tag 0F0B](https://stacks.math.columbia.edu/tag/0F0B) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.bijective_etaleCohomology_pullback_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/SeparablyClosedFieldInvariance.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/SeparablyClosedFieldInvariance.lean#L71). The attribute's comment: “(1): H^q(X, E) ⟶ H^q(X_K, E|_{X_K}) is an isomorphism for K/k separably closed”. References: SGA 4 XII (5.4), “special case”; SGA 4 XVI (1.6), “Abelian L-torsion clause”; SGA 4½ Arcata (5.3.3), “special case”; SGA 4½ Th finitude (3.9), “more general”.
+**`Stacks.EtaleCohomology.bijective_etaleCohomology_pullback_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/SeparablyClosedFieldInvariance.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/SeparablyClosedFieldInvariance.lean#L71). The attribute's comment: “(1): H^q(X, E) ⟶ H^q(X\_K, E|\_\{X\_K}) is an isomorphism for K/k separably closed”. References: SGA 4 XII (5.4), “special case”; SGA 4 XVI (1.6), “Abelian L-torsion clause”; SGA 4½ Arcata (5.3.3), “special case”; SGA 4½ Th finitude (3.9), “more general”.
 
 > **[Stacks, Tag 0F0B] (1).** Let `K/k` be an extension of separably closed fields, `X` a
 > quasi-compact and quasi-separated scheme over `k`, `p : X_K ⟶ X` its base change to `K` and `E` in
@@ -66,7 +66,7 @@ theorem bijective_etaleCohomology_pullback_of_isSepClosed
           (smallEtalePullbackAb p).rightDerivedFunctorPlus.map φ)
 ```
 
-**`Stacks.EtaleCohomology.isIso_derivedUnit_baseChange_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/SeparablyClosedFieldInvariance.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/SeparablyClosedFieldInvariance.lean#L93). The attribute's comment: “(2): E ⟶ R(X_K → X)_* E|_{X_K} is an isomorphism for K/k separably closed”. References: SGA 4 XVI (1.6), “partial”.
+**`Stacks.EtaleCohomology.isIso_derivedUnit_baseChange_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/SeparablyClosedFieldInvariance.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmoothBaseChange/SeparablyClosedFieldInvariance.lean#L93). The attribute's comment: “(2): E ⟶ R(X\_K → X)\_* E|\_\{X\_K} is an isomorphism for K/k separably closed”. References: SGA 4 XVI (1.6), “partial”.
 
 > **[Stacks, Tag 0F0B] (2).** Let `K/k` be an extension of separably closed fields, `X` a scheme
 > over `k`, `p : X_K ⟶ X` its base change to `K` and `E` in `D⁺(X_étale)` whose cohomology sheaves

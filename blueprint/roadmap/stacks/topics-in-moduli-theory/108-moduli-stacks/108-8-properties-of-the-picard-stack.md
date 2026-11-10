@@ -102,7 +102,7 @@ theorem liftedValuativeCriterionExistence_picardToBase (s : PicardSituation B S 
 
 [Tag 0DNH](https://stacks.math.columbia.edu/tag/0DNH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.picardInertiaEquivalenceOverMultiplicativeGroupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertia.lean, line 828](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertia.lean#L828). The attribute's comment: “the inertia stack of the Picard stack is 𝐆_{m,S} ×_S Picardstack_{X/B}, as categories over the big fppf site, when 𝒪_T ⟶ f_{T,*}𝒪_{X_T} is an isomorphism for every scheme T over the base”.
+**`AlgebraicGeometry.Space.picardInertiaEquivalenceOverMultiplicativeGroupProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertia.lean, line 828](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackInertia.lean#L828). The attribute's comment: “the inertia stack of the Picard stack is 𝐆\_\{m,S} ×\_S Picardstack\_\{X/B}, as categories over the big fppf site, when 𝒪\_T ⟶ f\_\{T,*}𝒪\_\{X\_T} is an isomorphism for every scheme T over the base”.
 
 > Let `f : X ⟶ B` be a morphism of algebraic spaces over `S`, and assume that
 > for every scheme `T` over `B` the structure map `𝒪_T ⟶ f_{T, *}𝒪_{X_T}` of the base change
@@ -142,7 +142,7 @@ def picardInertiaEquivalenceOverMultiplicativeGroupProduct (s : PicardSituation 
 
 [Tag 0DPJ](https://stacks.math.columbia.edu/tag/0DPJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSmooth_picardStructureMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackSmoothRegistered.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackSmoothRegistered.lean#L46). The attribute's comment: “the full statement: f flat (hflat), proper (hproper), of finite presentation (the field of D) and of relative dimension ≤ 1 (hd); Picardstack_{X/B} → B is smooth; the algebraicity of Picardstack_{X/B} is Stacks 0D04, proved, not assumed”.
+**`AlgebraicGeometry.Space.isSmooth_picardStructureMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackSmoothRegistered.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackSmoothRegistered.lean#L46). The attribute's comment: “the full statement: f flat (hflat), proper (hproper), of finite presentation (the field of D) and of relative dimension ≤ 1 (hd); Picardstack\_\{X/B} → B is smooth; the algebraicity of Picardstack\_\{X/B} is Stacks 0D04, proved, not assumed”.
 
 > **Stacks 0DPJ: the Picard stack is smooth in relative dimension `≤ 1`.** Let `f : X ⟶ Y` be a
 > morphism of algebraic spaces over `S` which is flat, proper, of finite presentation (a field of the

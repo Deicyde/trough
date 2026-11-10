@@ -31,7 +31,7 @@ public instance instSubsingletonDividedPowers {A : Type*} [CommRing A]
     [Module.IsTorsionFree ℤ A] (I : Ideal A) : Subsingleton (_root_.DividedPowers I)
 ```
 
-**`DividedPowers.exists_dividedPowers_iff_factorial_mul_eq_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L94). The attribute's comment: “factorial_criterion”.
+**`DividedPowers.exists_dividedPowers_iff_factorial_mul_eq_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L94). The attribute's comment: “factorial\_criterion”.
 
 > Over a torsion-free commutative ring, maps on an ideal are divided power operations if and
 > only if their products with the corresponding factorials are the corresponding powers.
@@ -46,7 +46,7 @@ public theorem exists_dividedPowers_iff_factorial_mul_eq_pow
         (n.factorial : A) * (γ n x : A) = (x : A) ^ n
 ```
 
-**`DividedPowers.nonempty_dividedPowers_iff_exists_generators_pow_mem_factorial_mul`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L194). The attribute's comment: “generator_criterion”.
+**`DividedPowers.nonempty_dividedPowers_iff_exists_generators_pow_mem_factorial_mul`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L194). The attribute's comment: “generator\_criterion”.
 
 > Let `I` be an ideal in a torsion-free commutative ring. Then `I` admits a divided power
 > structure if and only if it has a set of ideal generators `s` such that, for every `x ∈ s` and
@@ -63,7 +63,7 @@ public lemma nonempty_dividedPowers_iff_exists_generators_pow_mem_factorial_mul
 
 Declarations registered for the tag:
 
-- [`DividedPowers.factorial_mul_dpow_eq_pow`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DividedPowers.factorial_mul_dpow_eq_pow#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L71) (StacksFrontier): “factorial_identity”.
+- [`DividedPowers.factorial_mul_dpow_eq_pow`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DividedPowers.factorial_mul_dpow_eq_pow#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/DividedPowers/Criteria.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DividedPowers/Criteria.lean#L71) (StacksFrontier): “factorial\_identity”.
 
 ## Tag 07GN, an example
 

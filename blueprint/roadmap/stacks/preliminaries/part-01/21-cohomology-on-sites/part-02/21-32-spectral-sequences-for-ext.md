@@ -14,7 +14,7 @@ Section 21.32 of the Stacks Project, [Tag 07A9](https://stacks.math.columbia.edu
 
 [Tag 07AA](https://stacks.math.columbia.edu/tag/07AA) in the Stacks Project.
 
-**`CochainComplex.exists_cohomologyExtSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomBicomplexSpectralSequences.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/HomBicomplexSpectralSequences.lean#L104). The attribute's comment: “cohomology_ext”.
+**`CochainComplex.exists_cohomologyExtSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomBicomplexSpectralSequences.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/HomBicomplexSpectralSequences.lean#L104). The attribute's comment: “cohomology\_ext”.
 
 > **Stacks Project, Tag 07AA, the hyper-`Ext` spectral sequence.** Let `C` be an abelian
 > category with enough injectives, let `K^•` be a bounded above complex of `C` and let `F` be an
@@ -37,7 +37,7 @@ public theorem exists_cohomologyExtSpectralSequence (K : CochainComplex C ℤ)
             ((DerivedCategory.singleFunctor C 0).obj F) n))
 ```
 
-**`CochainComplex.exists_termwiseExtSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomBicomplexSpectralSequences.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/HomBicomplexSpectralSequences.lean#L143). The attribute's comment: “termwise_ext”.
+**`CochainComplex.exists_termwiseExtSpectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/HomBicomplexSpectralSequences.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/HomBicomplexSpectralSequences.lean#L143). The attribute's comment: “termwise\_ext”.
 
 > **Stacks Project, Tag 07AA, the termwise `Ext` spectral sequence.** Let `C` be an abelian
 > category with enough injectives, let `K^•` be a bounded above complex of `C` and let `F` be an

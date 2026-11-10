@@ -446,7 +446,7 @@ public theorem isIso_rightDerivedFunctorPlusUnit_app_forget_of_injective_gradedP
 
 [Tag 015W](https://stacks.math.columbia.edu/tag/015W) in the Stacks Project.
 
-**`CochainComplex.exists_spectralSequence_rightDerivedFunctorPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean#L265). The attribute's comment: “the spectral sequence, its `E_1` page, boundedness, convergence and finiteness of the induced filtration”. References: EGA 0 (13.6.4), “E_1, abutment, biregular”.
+**`CochainComplex.exists_spectralSequence_rightDerivedFunctorPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean#L265). The attribute's comment: “the spectral sequence, its `E_1` page, boundedness, convergence and finiteness of the induced filtration”. References: EGA 0 (13.6.4), “E\_1, abutment, biregular”.
 
 > **Stacks 015W.** Let `T : 𝒜 ⥤ ℬ` be an additive functor of abelian categories, `𝒜` having
 > enough injectives, and let `(K^•, F)` be an object of `Comp⁺(Fil^f(𝒜))`: a filtered complex with
@@ -528,7 +528,7 @@ theorem exists_spectralSequence_rightDerivedFunctorPlus
             ((HomotopyCategory.Plus.quotient A).obj ⟨K.X, ⟨a, inferInstance⟩⟩)))))
 ```
 
-**`CochainComplex.exists_spectralSequenceMap_rightDerivedFunctorPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean, line 517](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean#L517). The attribute's comment: “functoriality in `K^•`: the induced morphism of spectral sequences, independent of choices on `E_r` for `r ≥ 1`”. References: EGA 0 (13.6.3), “existence of v”; EGA 0 (13.6.4), “E_r indep. of choices”.
+**`CochainComplex.exists_spectralSequenceMap_rightDerivedFunctorPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean, line 517](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/FilteredDerivedCategory/InjectiveResolutions.lean#L517). The attribute's comment: “functoriality in `K^•`: the induced morphism of spectral sequences, independent of choices on `E_r` for `r ≥ 1`”. References: EGA 0 (13.6.3), “existence of v”; EGA 0 (13.6.4), “E\_r indep. of choices”.
 
 > **Stacks 015W, functoriality.** Let `f : K^• ⟶ L^•` be a morphism of
 > `Comp⁺(Fil^f(𝒜))` and let `α : K^• ⟶ I^•`, `β : L^• ⟶ J^•` be filtered injective resolutions.

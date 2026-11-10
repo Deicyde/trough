@@ -57,7 +57,7 @@ public theorem extendsToX_of_cd_one_of_satisfiesDepthInequalities
     ExtendsToX S (toKerSystem S F)
 ```
 
-**`Stacks.Algebraization.isCompletion_of_cd_one_of_satisfiesDepthInequalities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationCdOneTheorem.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationCdOneTheorem.lean#L100). The attribute's comment: “in particular, for I-adically complete A, (ℱₙ) is the completion of a coherent 𝒪_U-module”.
+**`Stacks.Algebraization.isCompletion_of_cd_one_of_satisfiesDepthInequalities`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationCdOneTheorem.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationCdOneTheorem.lean#L100). The attribute's comment: “in particular, for I-adically complete A, (ℱₙ) is the completion of a coherent 𝒪\_U-module”.
 
 > **Stacks Project, Tag 0EJJ, the final clause.** In the situation of Tag 0EJJ, if moreover `A`
 > is `I`-adically complete, then `(ℱₙ)` is the completion of a coherent `𝒪_U`-module.
@@ -76,7 +76,7 @@ public theorem isCompletion_of_cd_one_of_satisfiesDepthInequalities [IsAdicCompl
 
 [Tag 0EJK](https://stacks.math.columbia.edu/tag/0EJK) in the Stacks Project.
 
-**`Stacks.Algebraization.extendsToX_of_blowUp_fiber_dim_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationBlowupFibres.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationBlowupFibres.lean#L410). The attribute's comment: “the whole statement: under (1) a dualizing complex, (2) fibres of the blowup of I of dimension ≤ d - 1, (3) the (d + 1, d + 2)-inequalities or the bound depth + dim + δ > d + 2, the object (ℱₙ) of Coh(U, I𝒪_U) extends to X”.
+**`Stacks.Algebraization.extendsToX_of_blowUp_fiber_dim_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationBlowupFibres.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationBlowupFibres.lean#L410). The attribute's comment: “the whole statement: under (1) a dualizing complex, (2) fibres of the blowup of I of dimension ≤ d - 1, (3) the (d + 1, d + 2)-inequalities or the bound depth + dim + δ > d + 2, the object (ℱₙ) of Coh(U, I𝒪\_U) extends to X”.
 
 > **Stacks Project, Tag 0EJK.** In Situation [Stacks, Tag 0EHC] let `(ℱₙ)` be an object of
 > `Coh(U, I𝒪_U)`. Assume
@@ -115,7 +115,7 @@ theorem extendsToX_of_blowUp_fiber_dim_lt (F : Stacks.Coherent.CoherentAdicSyste
 
 [Tag 0EJN](https://stacks.math.columbia.edu/tag/0EJN) in the Stacks Project.
 
-**`Stacks.Algebraization.algebraization_of_zeroLocus_eq_range_of_depthBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationFewGenerators.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationFewGenerators.lean#L131). The attribute's comment: “the whole statement: (F_n) extends to X, and over an I-adically complete A it is the completion of a coherent O_U-module”.
+**`Stacks.Algebraization.algebraization_of_zeroLocus_eq_range_of_depthBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationFewGenerators.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationFewGenerators.lean#L131). The attribute's comment: “the whole statement: (F\_n) extends to X, and over an I-adically complete A it is the completion of a coherent O\_U-module”.
 
 > **Stacks Project, Tag 0EJN (Algebraization for ideals with few generators).** In Situation
 > 0EHC let `(ℱₙ)` be an object of `Coh(U, I𝒪_U)`. Assume (1) `A` has a dualizing complex, (2)
@@ -145,7 +145,7 @@ public theorem algebraization_of_zeroLocus_eq_range_of_depthBound
 
 [Tag 0EJP](https://stacks.math.columbia.edu/tag/0EJP) in the Stacks Project.
 
-**`Stacks.Algebraization.extendsToX_and_essImage_of_isCohenMacaulay_of_span_eq_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationFewGeneratorsCohenMacaulay.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationFewGeneratorsCohenMacaulay.lean#L92). The attribute's comment: “the whole statement: under hypotheses (1)-(6) the system extends to X, and over an I-adically complete A it is the completion of a coherent O_U-module; the example in (6) is free_localizedModule_completedStalk_of_isFiniteLocallyFreeAdic”.
+**`Stacks.Algebraization.extendsToX_and_essImage_of_isCohenMacaulay_of_span_eq_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationFewGeneratorsCohenMacaulay.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AlgebraizationCoherentFormal/AlgebraizationFewGeneratorsCohenMacaulay.lean#L92). The attribute's comment: “the whole statement: under hypotheses (1)-(6) the system extends to X, and over an I-adically complete A it is the completion of a coherent O\_U-module; the example in (6) is free\_localizedModule\_completedStalk\_of\_isFiniteLocallyFreeAdic”.
 
 > **Stacks Project, Tag 0EJP.** In Situation 0EHC let `(ℱₙ)` be an object of `Coh(U, I𝒪_U)`.
 > Assume

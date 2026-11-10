@@ -14,7 +14,7 @@ Section 92.7 of the Stacks Project, [Tag 08QR](https://stacks.math.columbia.edu/
 
 [Tag 08QS](https://stacks.math.columbia.edu/tag/08QS) in the Stacks Project.
 
-**`CommAlgCat.fundamentalMor₁`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DisplayMorphisms.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DisplayMorphisms.lean#L143). The attribute's comment: “the first displayed morphism `L_{B/A} ⊗^𝐋_B C ⟶ L_{C/A}`, canonical and with no hypothesis on the two ring maps: the functoriality map of Tag 08PN for the square (1_A, B → C) after extension of scalars. It is the first morphism of the distinguished triangle of Proposition 08QX, `CommAlgCat.productFundamentalTriangle_distinguished`, whose third morphism is `CommAlgCat.productFundamentalMor₃`”.
+**`CommAlgCat.fundamentalMor₁`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DisplayMorphisms.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DisplayMorphisms.lean#L143). The attribute's comment: “the first displayed morphism `L_{B/A} ⊗^𝐋_B C ⟶ L_{C/A}`, canonical and with no hypothesis on the two ring maps: the functoriality map of Tag 08PN for the square (1\_A, B → C) after extension of scalars. It is the first morphism of the distinguished triangle of Proposition 08QX, `CommAlgCat.productFundamentalTriangle_distinguished`, whose third morphism is `CommAlgCat.productFundamentalMor₃`”.
 
 > **Stacks Project, Tag 08QS.**
 >
@@ -28,7 +28,7 @@ def fundamentalMor₁ :
     fundamentalVertex₁.{u, u, u + 1, u + 1} A B C ⟶ fundamentalVertex₂.{u, u, u + 1} A C
 ```
 
-**`CommAlgCat.fundamentalMor₂`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DisplayMorphisms.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DisplayMorphisms.lean#L167). The attribute's comment: “the second displayed morphism `L_{C/A} ⟶ L_{C/B}`, canonical and with no hypothesis on the two ring maps: the functoriality map of Tag 08PN for the square (A → B, 1_C). It is the second morphism of the distinguished triangle of Proposition 08QX, `CommAlgCat.productFundamentalTriangle_distinguished`, whose third morphism is `CommAlgCat.productFundamentalMor₃`”.
+**`CommAlgCat.fundamentalMor₂`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DisplayMorphisms.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DisplayMorphisms.lean#L167). The attribute's comment: “the second displayed morphism `L_{C/A} ⟶ L_{C/B}`, canonical and with no hypothesis on the two ring maps: the functoriality map of Tag 08PN for the square (A → B, 1\_C). It is the second morphism of the distinguished triangle of Proposition 08QX, `CommAlgCat.productFundamentalTriangle_distinguished`, whose third morphism is `CommAlgCat.productFundamentalMor₃`”.
 
 > **Stacks Project, Tag 08QS.**
 >
@@ -116,7 +116,7 @@ theorem productFundamentalTriangle_distinguished :
 
 [Tag 08QT](https://stacks.math.columbia.edu/tag/08QT) in the Stacks Project.
 
-**`CommAlgCat.polynomialTowerSite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldPolynomialSite.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldPolynomialSite.lean#L247). The attribute's comment: “the site C_{C/B/A}”.
+**`CommAlgCat.polynomialTowerSite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldPolynomialSite.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldPolynomialSite.lean#L247). The attribute's comment: “the site C\_\{C/B/A}”.
 
 > The site `C_{C/B/A}`: the opposite of the category of polynomial towers `(P → B, Q → C)`,
 > so that an object corresponds to the commutative diagram of spectra in which
@@ -126,7 +126,7 @@ theorem productFundamentalTriangle_distinguished :
 abbrev polynomialTowerSite
 ```
 
-**`CommAlgCat.polynomialTowerTopology_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldPolynomialSite.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldPolynomialSite.lean#L262). The attribute's comment: “the chaotic topology on C_{C/B/A}”.
+**`CommAlgCat.polynomialTowerTopology_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldPolynomialSite.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldPolynomialSite.lean#L262). The attribute's comment: “the chaotic topology on C\_\{C/B/A}”.
 
 > The topology of `C_{C/B/A}` is the chaotic topology: its only coverings are the maximal
 > sieves, so every presheaf on `C_{C/B/A}` is a sheaf.
@@ -143,7 +143,7 @@ theorem polynomialTowerTopology_eq_bot : polynomialTowerTopology A B C = ⊥
 def polynomialTowerFirst : polynomialTowerSite A B C ⥤ polynomialSite A (towerBaseAlgebra A B)
 ```
 
-**`CommAlgCat.isPolynomialAlgebra_towerRightAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldPolynomialSite.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldPolynomialSite.lean#L284). The attribute's comment: “u₂ lands in C_{C/A}”.
+**`CommAlgCat.isPolynomialAlgebra_towerRightAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldPolynomialSite.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldPolynomialSite.lean#L284). The attribute's comment: “u₂ lands in C\_\{C/A}”.
 
 > The `A`-algebra `Q` of a polynomial tower is a polynomial algebra over `A`: it is a
 > polynomial algebra over the polynomial `A`-algebra `P`, and
@@ -163,7 +163,7 @@ def polynomialTowerSecond :
     polynomialTowerSite A B C ⥤ polynomialSite A (towerTotalAlgebra A C)
 ```
 
-**`CommAlgCat.isPolynomialAlgebra_towerBaseChangeAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldPolynomialSite.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldPolynomialSite.lean#L442). The attribute's comment: “u₃ lands in C_{C/B}”.
+**`CommAlgCat.isPolynomialAlgebra_towerBaseChangeAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldPolynomialSite.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldPolynomialSite.lean#L442). The attribute's comment: “u₃ lands in C\_\{C/B}”.
 
 > `Q ⊗_P B` is a polynomial algebra over `B`: if `Q = P[κ]` then `Q ⊗_P B = B[κ]`. This is
 > what makes `u₃` land in `C_{C/B}`.
@@ -320,7 +320,7 @@ def polynomialTowerThirdProjection_comp_pushforwardIso :
       (polynomialTowerProjection A B C).pushforward
 ```
 
-**`CommAlgCat.boundedPolynomialTowerSite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldPolynomialSiteSmall.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldPolynomialSiteSmall.lean#L169). The attribute's comment: “the site C_{C/B/A} with the section's footnote in force, restricting the two layers of variables to cardinality at most κ, resp. μ. The unrestricted version is `CommAlgCat.polynomialTowerSite`; only this one is essentially small”.
+**`CommAlgCat.boundedPolynomialTowerSite`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldPolynomialSiteSmall.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldPolynomialSiteSmall.lean#L169). The attribute's comment: “the site C\_\{C/B/A} with the section's footnote in force, restricting the two layers of variables to cardinality at most κ, resp. μ. The unrestricted version is `CommAlgCat.polynomialTowerSite`; only this one is essentially small”.
 
 > **Stacks 08QT** with the footnote's restriction. The site `C_{C/B/A}` cut down to the towers
 > whose two polynomial layers have at most `κ`, resp. `μ`, variables: the opposite of
@@ -331,7 +331,7 @@ def polynomialTowerThirdProjection_comp_pushforwardIso :
 abbrev boundedPolynomialTowerSite
 ```
 
-**`CommAlgCat.isPolynomialAlgebraBelow_towerRightAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldPolynomialSiteSmall.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldPolynomialSiteSmall.lean#L374). The attribute's comment: “u₂ lands in C_{C/A}, for the small model of the footnote-restricted tower site: the bound on the two layers gives the bound μ + κ on the variables of Q over A”.
+**`CommAlgCat.isPolynomialAlgebraBelow_towerRightAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldPolynomialSiteSmall.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldPolynomialSiteSmall.lean#L374). The attribute's comment: “u₂ lands in C\_\{C/A}, for the small model of the footnote-restricted tower site: the bound on the two layers gives the bound μ + κ on the variables of Q over A”.
 
 > The `A`-algebra `Q` of a restricted polynomial tower is a polynomial algebra over `A` on at
 > most `μ + κ` variables: it is `A[ι][τ] = A[τ ⊕ ι]` with `#ι ≤ κ` and `#τ ≤ μ`. This is what
@@ -342,7 +342,7 @@ theorem isPolynomialAlgebraBelow_towerRightAlgebra (Y : BoundedPolynomialTower A
     IsPolynomialAlgebraBelow A (μ + κ) (towerRightAlgebra Y.obj)
 ```
 
-**`CommAlgCat.isPolynomialAlgebraBelow_towerBaseChangeAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldPolynomialSiteSmall.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldPolynomialSiteSmall.lean#L395). The attribute's comment: “u₃ lands in C_{C/B}, for the small model of the footnote-restricted tower site: the base change Q ⊗_P B has the same set of variables as Q over P, so the bound μ is kept”.
+**`CommAlgCat.isPolynomialAlgebraBelow_towerBaseChangeAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldPolynomialSiteSmall.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldPolynomialSiteSmall.lean#L395). The attribute's comment: “u₃ lands in C\_\{C/B}, for the small model of the footnote-restricted tower site: the base change Q ⊗\_P B has the same set of variables as Q over P, so the bound μ is kept”.
 
 > `Q ⊗_P B` is a polynomial algebra over `B` on at most `μ` variables: if `Q = P[τ]` then
 > `Q ⊗_P B = B[τ]`, with the same set of variables. This is what makes `u₃` land in the restricted
@@ -485,7 +485,7 @@ def smallBoundedPolynomialTowerThirdCompι :
         polynomialTowerThird A B C
 ```
 
-**`CommAlgCat.smallBoundedPolynomialTowerTopology_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldPolynomialSiteSmall.lean, line 577](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldPolynomialSiteSmall.lean#L577). The attribute's comment: “the chaotic topology on C_{C/B/A}, for the small model of the footnote-restricted tower site”.
+**`CommAlgCat.smallBoundedPolynomialTowerTopology_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldPolynomialSiteSmall.lean, line 577](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldPolynomialSiteSmall.lean#L577). The attribute's comment: “the chaotic topology on C\_\{C/B/A}, for the small model of the footnote-restricted tower site”.
 
 > The topology of the small model of the restricted site `C_{C/B/A}` is the chaotic topology:
 > its only coverings are the maximal sieves, so every presheaf on it is a sheaf.
@@ -609,7 +609,7 @@ theorem isSheaf_polynomialTowerTopology {D : Type*} [Category D]
     Presheaf.IsSheaf (polynomialTowerTopology A B C) F
 ```
 
-**`CommAlgCat.towerFirstOmega`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean#L318). The attribute's comment: “the sheaf Ω₁ = Ω_{𝒪/A} ⊗_𝒪 B̲ on C_{B/A}”.
+**`CommAlgCat.towerFirstOmega`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean#L318). The attribute's comment: “the sheaf Ω₁ = Ω\_\{𝒪/A} ⊗\_𝒪 B̲ on C\_\{B/A}”.
 
 > `Ω₁ = Ω_{𝒪/A} ⊗_𝒪 B̲`, the sheaf of `B̲`-modules on `C_{B/A}`.
 
@@ -618,7 +618,7 @@ abbrev towerFirstOmega : SheafOfModules.{u + 1} (polynomialConstantRingSheaf A
     (towerBaseAlgebra A B))
 ```
 
-**`CommAlgCat.towerSecondOmega`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean#L324). The attribute's comment: “the sheaf Ω₂ = Ω_{𝒪/A} ⊗_𝒪 C̲ on C_{C/A}”.
+**`CommAlgCat.towerSecondOmega`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean#L324). The attribute's comment: “the sheaf Ω₂ = Ω\_\{𝒪/A} ⊗\_𝒪 C̲ on C\_\{C/A}”.
 
 > `Ω₂ = Ω_{𝒪/A} ⊗_𝒪 C̲`, the sheaf of `C̲`-modules on `C_{C/A}`.
 
@@ -627,7 +627,7 @@ abbrev towerSecondOmega : SheafOfModules.{u + 1} (polynomialConstantRingSheaf A
     (towerTotalAlgebra A C))
 ```
 
-**`CommAlgCat.towerThirdOmega`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean#L330). The attribute's comment: “the sheaf Ω₃ = Ω_{𝒪/B} ⊗_𝒪 C̲ on C_{C/B}”.
+**`CommAlgCat.towerThirdOmega`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean#L330). The attribute's comment: “the sheaf Ω₃ = Ω\_\{𝒪/B} ⊗\_𝒪 C̲ on C\_\{C/B}”.
 
 > `Ω₃ = Ω_{𝒪/B} ⊗_𝒪 C̲`, the sheaf of `C̲`-modules on `C_{C/B}`.
 
@@ -653,7 +653,7 @@ def towerSecondTerm : PresheafOfModules.{u + 1} (towerConstantRingSheaf A B C).o
 def towerThirdTerm : PresheafOfModules.{u + 1} (towerConstantRingSheaf A B C).obj
 ```
 
-**`CommAlgCat.towerFirstTerm`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean#L382). The attribute's comment: “the first term g₁⁻¹Ω₁ ⊗_{B̲} C̲ of the sequence”.
+**`CommAlgCat.towerFirstTerm`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean#L382). The attribute's comment: “the first term g₁⁻¹Ω₁ ⊗\_\{B̲} C̲ of the sequence”.
 
 > `g₁⁻¹Ω₁ ⊗_{B̲} C̲`, a presheaf of `C̲`-modules on `C_{C/B/A}`.
 
@@ -694,7 +694,7 @@ theorem towerSections_isPushout (W : (polynomialTowerSite A B C)ᵒᵖ) :
       (ULift.{u + 1} ↑(towerBaseChangeAlgebra W.unop.unop.obj))
 ```
 
-**`CommAlgCat.towerFirstSequenceMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean, line 852](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean#L852). The attribute's comment: “the first map g₁⁻¹Ω₁ ⊗_{B̲} C̲ ⟶ g₂⁻¹Ω₂ of the sequence”.
+**`CommAlgCat.towerFirstSequenceMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean, line 852](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean#L852). The attribute's comment: “the first map g₁⁻¹Ω₁ ⊗\_\{B̲} C̲ ⟶ g₂⁻¹Ω₂ of the sequence”.
 
 > **The first map `g₁⁻¹Ω₁ ⊗_{B̲} C̲ ⟶ g₂⁻¹Ω₂` of the sequence of Tag 08QU.** Both source and
 > target are base changes of presheaves of relative differentials, so by the change-of-rings
@@ -728,7 +728,7 @@ theorem towerSequenceMap_comp :
     towerFirstSequenceMap A B C ≫ towerSecondSequenceMap A B C = 0
 ```
 
-**`CommAlgCat.towerShortComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean, line 929](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean#L929). The attribute's comment: “the sequence 0 ⟶ g₁⁻¹Ω₁ ⊗_{B̲} C̲ ⟶ g₂⁻¹Ω₂ ⟶ g₃⁻¹Ω₃ ⟶ 0 of sheaves of C̲-modules on C_{C/B/A}; its short exactness is not asserted here”.
+**`CommAlgCat.towerShortComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean, line 929](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean#L929). The attribute's comment: “the sequence 0 ⟶ g₁⁻¹Ω₁ ⊗\_\{B̲} C̲ ⟶ g₂⁻¹Ω₂ ⟶ g₃⁻¹Ω₃ ⟶ 0 of sheaves of C̲-modules on C\_\{C/B/A}; its short exactness is not asserted here”.
 
 > **The sequence of Tag 08QU as a short complex of sheaves of `C̲`-modules on `C_{C/B/A}`**,
 > the image of `CommAlgCat.towerShortComplexPresheaf` under the equivalence
@@ -759,7 +759,7 @@ theorem towerShortComplexPresheaf_shortExact_obj (W : (polynomialTowerSite A B C
       (PresheafOfModules.evaluation (towerConstantRingSheaf A B C).obj W)).ShortExact
 ```
 
-**`CommAlgCat.towerShortComplex_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean, line 1345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean#L1345). The attribute's comment: “the sequence of sheaves of C-modules on C_{C/B/A} is short exact”.
+**`CommAlgCat.towerShortComplex_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean, line 1345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ThreefoldDifferentialSequence.lean#L1345). The attribute's comment: “the sequence of sheaves of C-modules on C\_\{C/B/A} is short exact”.
 
 > **Tag 08QU: the sequence of sheaves of `C̲`-modules on `C_{C/B/A}`
 > `0 → g₁⁻¹Ω₁ ⊗_{B̲} C̲ → g₂⁻¹Ω₂ → g₃⁻¹Ω₃ → 0` is short exact.** By
@@ -1049,7 +1049,7 @@ theorem derivedLowerShriek_comp_inverseImage_polynomialTower :
 
 [Tag 08QX](https://stacks.math.columbia.edu/tag/08QX) in the Stacks Project.
 
-**`CommAlgCat.exists_distTriang_fundamentalVertex_of_isResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/Fundamental.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/Fundamental.lean#L159). The attribute's comment: “the triangle on the three vertices of the display of Tag 08QS, under TWO carried hypotheses the source lacks: `B → C` injective, as in Tag 08SD, whose removal needs the product decomposition of Tag 08SC; and the key fact of Tag 08SD, that the base-changed resolution Q_bullet ⊗_{P_bullet} B is a resolution of C over B, which rests on Tag 08RX. Neither tag is proved in this library”.
+**`CommAlgCat.exists_distTriang_fundamentalVertex_of_isResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/Fundamental.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/Fundamental.lean#L159). The attribute's comment: “the triangle on the three vertices of the display of Tag 08QS, under TWO carried hypotheses the source lacks: `B → C` injective, as in Tag 08SD, whose removal needs the product decomposition of Tag 08SC; and the key fact of Tag 08SD, that the base-changed resolution Q\_bullet ⊗\_\{P\_bullet} B is a resolution of C over B, which rests on Tag 08RX. Neither tag is proved in this library”.
 
 > **The fundamental triangle of the cotangent complex.** Let `A → B → C` be ring maps. Then there
 > is a distinguished triangle
@@ -1112,7 +1112,7 @@ theorem productFundamentalTriangle_distinguished :
 
 [Tag 08SD](https://stacks.math.columbia.edu/tag/08SD) in the Stacks Project.
 
-**`CommAlgCat.baseChangedStandardResolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChange.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChange.lean#L56). The attribute's comment: “base_changed_standard_resolution”.
+**`CommAlgCat.baseChangedStandardResolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChange.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChange.lean#L56). The attribute's comment: “base\_changed\_standard\_resolution”.
 
 > The standard resolution of `C` over `A`, base changed along the standard
 > resolution of `B` to give an augmented simplicial `B`-algebra.
@@ -1198,7 +1198,7 @@ theorem fundamentalTriangle_of_productDescent :
         (productFundamentalMor₃ A B C) ∈ distTriang (DerivedCategory (ModuleCat.{u} C))
 ```
 
-**`CommAlgCat.exists_distinguished_derivedBaseChange_cotangentTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DerivedFirstVertex.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DerivedFirstVertex.lean#L167). The attribute's comment: “differential_sequence triangle, derived first vertex”.
+**`CommAlgCat.exists_distinguished_derivedBaseChange_cotangentTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DerivedFirstVertex.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DerivedFirstVertex.lean#L167). The attribute's comment: “differential\_sequence triangle, derived first vertex”.
 
 > **Stacks Project, Tag 08SD, with the derived base change as first vertex.**
 >
@@ -1234,7 +1234,7 @@ theorem exists_distinguished_derivedBaseChange_cotangentTriangle (A : Type u) [C
       Triangle.mk α β δ ∈ distTriang (DerivedCategory (ModuleCat.{max u v} C))
 ```
 
-**`CommAlgCat.standardResolutionDifferentialSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean, line 880](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean#L880). The attribute's comment: “differential_sequence construction”.
+**`CommAlgCat.standardResolutionDifferentialSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean, line 880](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean#L880). The attribute's comment: “differential\_sequence construction”.
 
 > The specific canonical differential short complex for `A → B → C`.
 
@@ -1244,7 +1244,7 @@ noncomputable def standardResolutionDifferentialSequence
     DifferentialSequenceData A f
 ```
 
-**`CommAlgCat.standardResolution_differentials_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean, line 926](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean#L926). The attribute's comment: “differential_sequence”.
+**`CommAlgCat.standardResolution_differentials_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean, line 926](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean#L926). The attribute's comment: “differential\_sequence”.
 
 > The canonical differential complex is short exact.
 
@@ -1255,7 +1255,7 @@ theorem standardResolution_differentials_shortExact
     (standardResolutionDifferentialSequence A f).complex.ShortExact
 ```
 
-**`CommAlgCat.standardResolution_differentials_firstMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean, line 1004](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean#L1004). The attribute's comment: “differential_sequence first map”.
+**`CommAlgCat.standardResolution_differentials_firstMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean, line 1004](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean#L1004). The attribute's comment: “differential\_sequence first map”.
 
 > The first map sends a differential to the differential of its image.
 
@@ -1270,7 +1270,7 @@ theorem standardResolution_differentials_firstMap
         (((standardResolutionFunctor A).map f).left.app n p)
 ```
 
-**`CommAlgCat.standardResolution_differentials_secondMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean, line 1016](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean#L1016). The attribute's comment: “differential_sequence second map”.
+**`CommAlgCat.standardResolution_differentials_secondMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean, line 1016](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean#L1016). The attribute's comment: “differential\_sequence second map”.
 
 > The second map is the canonical map to base-changed relative differentials.
 
@@ -1287,7 +1287,7 @@ theorem standardResolution_differentials_secondMap
       ((1 : C) ⊗ₜ[T] KaehlerDifferential.D B T (D.toBaseChange n q))
 ```
 
-**`CommAlgCat.standardResolution_differentials_third_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean, line 1030](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean#L1030). The attribute's comment: “differential_sequence naturality”.
+**`CommAlgCat.standardResolution_differentials_third_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean, line 1030](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean#L1030). The attribute's comment: “differential\_sequence naturality”.
 
 > The identification of the third term respects every simplicial map.
 
@@ -1308,7 +1308,7 @@ theorem standardResolution_differentials_third_naturality
       ((1 : C) ⊗ₜ[Tj] KaehlerDifferential.D B Tj (R.left.map h t))
 ```
 
-**`CommAlgCat.standardResolution_differentials_pushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean, line 1048](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean#L1048). The attribute's comment: “differential_sequence base change”.
+**`CommAlgCat.standardResolution_differentials_pushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean, line 1048](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean#L1048). The attribute's comment: “differential\_sequence base change”.
 
 > The map to the base-changed resolution is its canonical pushout leg.
 
@@ -1326,7 +1326,7 @@ theorem standardResolution_differentials_pushout
       (CommRingCat.ofHom (algebraMap B (R.left.obj n)))
 ```
 
-**`CommAlgCat.standardResolution_differentials_toBaseChange_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean, line 1063](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean#L1063). The attribute's comment: “differential_sequence base change naturality”.
+**`CommAlgCat.standardResolution_differentials_toBaseChange_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean, line 1063](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean#L1063). The attribute's comment: “differential\_sequence base change naturality”.
 
 > The pushout leg is simplicially natural.
 
@@ -1341,7 +1341,7 @@ theorem standardResolution_differentials_toBaseChange_naturality
       D.toBaseChange j ((standardResolution A C).left.map h q)
 ```
 
-**`CommAlgCat.standardResolution_differentials_toBaseChange_augmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean, line 1075](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean#L1075). The attribute's comment: “differential_sequence augmentation”.
+**`CommAlgCat.standardResolution_differentials_toBaseChange_augmentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean, line 1075](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/DifferentialSequence.lean#L1075). The attribute's comment: “differential\_sequence augmentation”.
 
 > The pushout leg is compatible with augmentation to `C`.
 
@@ -1355,7 +1355,7 @@ theorem standardResolution_differentials_toBaseChange_augmentation
       standardResolutionAugmentationHom A C n
 ```
 
-**`CommAlgCat.cotangentDifferentialComplexes_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/Distinguished.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/Distinguished.lean#L142). The attribute's comment: “differential_sequence complexes”.
+**`CommAlgCat.cotangentDifferentialComplexes_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/Distinguished.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/Distinguished.lean#L142). The attribute's comment: “differential\_sequence complexes”.
 
 > For an injective map `f : B ⟶ C` of `A`-algebras, the differential short complex of cochain
 > complexes of `C`-modules is short exact.
@@ -1366,7 +1366,7 @@ theorem cotangentDifferentialComplexes_shortExact (A : Type u) [CommRing A]
     (cotangentDifferentialComplexes A f).ShortExact
 ```
 
-**`CommAlgCat.cotangentTriangle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/Distinguished.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/Distinguished.lean#L151). The attribute's comment: “differential_sequence triangle”.
+**`CommAlgCat.cotangentTriangle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/Distinguished.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/Distinguished.lean#L151). The attribute's comment: “differential\_sequence triangle”.
 
 > The triangle in `D(ModuleCat C)` attached to the differential short exact sequence of the
 > standard resolutions of `A → B → C`, for `f : B ⟶ C` injective.
@@ -1378,7 +1378,7 @@ noncomputable def cotangentTriangle (A : Type u) [CommRing A]
     Triangle (DerivedCategory (ModuleCat.{max u v} C))
 ```
 
-**`CommAlgCat.cotangentTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/Distinguished.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/Distinguished.lean#L159). The attribute's comment: “differential_sequence triangle distinguished”.
+**`CommAlgCat.cotangentTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/Distinguished.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/Distinguished.lean#L159). The attribute's comment: “differential\_sequence triangle distinguished”.
 
 > The triangle attached to the differential sequence is distinguished.
 
@@ -1393,7 +1393,7 @@ theorem cotangentTriangle_distinguished (A : Type u) [CommRing A]
 
 [Tag 08SE](https://stacks.math.columbia.edu/tag/08SE) in the Stacks Project.
 
-**`CommAlgCat.relativeBaseChangeLeg`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L209). The attribute's comment: “the first arrow of the comparison, R_bullet ⟶ R_bullet ⊗_{S_bullet} B”.
+**`CommAlgCat.relativeBaseChangeLeg`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L209). The attribute's comment: “the first arrow of the comparison, R\_bullet ⟶ R\_bullet ⊗\_\{S\_bullet} B”.
 
 > **The canonical map `R_• ⟶ R̄_•`** of Remark 08SE: degreewise the pushout leg out of the
 > standard resolution of `C` over `B`.
@@ -1403,7 +1403,7 @@ noncomputable def relativeBaseChangeLeg (f : B ⟶ C) :
     (standardResolution ↥B (algebraOver f)).left ⟶ (relativeBaseChange f).left
 ```
 
-**`CommAlgCat.standardResolutionSquareMap_baseRingSquare_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L315). The attribute's comment: “the commutative diagram of standard resolutions from which the canonical map Q_bullet ⊗_{P_bullet} B ⟶ R_bullet ⊗_{S_bullet} B is obtained”.
+**`CommAlgCat.standardResolutionSquareMap_baseRingSquare_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L315). The attribute's comment: “the commutative diagram of standard resolutions from which the canonical map Q\_bullet ⊗\_\{P\_bullet} B ⟶ R\_bullet ⊗\_\{S\_bullet} B is obtained”.
 
 > **The commutative diagram of Remark 08SE.** The square
 >
@@ -1424,7 +1424,7 @@ theorem standardResolutionSquareMap_baseRingSquare_comm (f : B ⟶ C) (n : Simpl
         (standardResolutionSquareMap.{u, u, u} (baseRingSquareBot B) n)
 ```
 
-**`CommAlgCat.baseChangedComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L415). The attribute's comment: “the canonical map Q_bullet ⊗_{P_bullet} B ⟶ R_bullet ⊗_{S_bullet} B obtained from the commutative diagram”.
+**`CommAlgCat.baseChangedComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L415). The attribute's comment: “the canonical map Q\_bullet ⊗\_\{P\_bullet} B ⟶ R\_bullet ⊗\_\{S\_bullet} B obtained from the commutative diagram”.
 
 > **The canonical map `Q̄_• ⟶ R̄_•`** of Remark 08SE, obtained from the commutative diagram of
 > standard resolutions by the pushout property of `Q̄_•`.
@@ -1434,7 +1434,7 @@ noncomputable def baseChangedComparison (f : B ⟶ C) :
     (baseChangedStandardResolution A f).left ⟶ (relativeBaseChange f).left
 ```
 
-**`CommAlgCat.baseChangedStandardResolution_isPolynomialAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 588](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L588). The attribute's comment: “the degreewise polynomiality of a base-changed standard resolution, applied in the remark both to Q_bullet ⊗_{P_bullet} B and to R_bullet ⊗_{S_bullet} B; this is where the injectivity of B → C is used”.
+**`CommAlgCat.baseChangedStandardResolution_isPolynomialAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 588](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L588). The attribute's comment: “the degreewise polynomiality of a base-changed standard resolution, applied in the remark both to Q\_bullet ⊗\_\{P\_bullet} B and to R\_bullet ⊗\_\{S\_bullet} B; this is where the injectivity of B → C is used”.
 
 > **Every term of the base-changed standard resolution `Q̄_• = Q_• ⊗_{P_•} B` is a polynomial
 > algebra over `B`, when `B → C` is injective.**
@@ -1450,7 +1450,7 @@ theorem baseChangedStandardResolution_isPolynomialAlgebra (f : B ⟶ C)
     IsPolynomialAlgebra ↥B ((baseChangedStandardResolution A f).left.obj n)
 ```
 
-**`CommAlgCat.relativeBaseChange_isPolynomialAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 603](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L603). The attribute's comment: “R_bullet ⊗_{S_bullet} B is a simplicial polynomial algebra over B, because B → C is injective”.
+**`CommAlgCat.relativeBaseChange_isPolynomialAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 603](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L603). The attribute's comment: “R\_bullet ⊗\_\{S\_bullet} B is a simplicial polynomial algebra over B, because B → C is injective”.
 
 > **Every term of `R̄_• = R_• ⊗_{S_•} B` is a polynomial algebra over `B`**, when `B → C` is
 > injective: the functoriality map `S_• → R_•` presents `R_n` as a polynomial algebra over `S_n`, so
@@ -1462,7 +1462,7 @@ theorem relativeBaseChange_isPolynomialAlgebra (f : B ⟶ C) (hf : Function.Inje
     IsPolynomialAlgebra ↥B ((relativeBaseChange f).left.obj n)
 ```
 
-**`CommAlgCat.relativeBaseChangeCotangentLeg`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 649](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L649). The attribute's comment: “the induced map L_{C/B} = Omega[R_bullet/B] ⊗ C ⟶ Omega[R_bullet ⊗_{S_bullet} B / B] ⊗ C”.
+**`CommAlgCat.relativeBaseChangeCotangentLeg`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 649](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L649). The attribute's comment: “the induced map L\_\{C/B} = Omega[R\_bullet/B] ⊗ C ⟶ Omega[R\_bullet ⊗\_\{S\_bullet} B / B] ⊗ C”.
 
 > **The first arrow of the comparison of Remark 08SE**, the map
 > `L_{C/B} = Ω[R_•⁄B] ⊗_{R_•} C ⟶ Ω[R̄_•⁄B] ⊗_{R̄_•} C` induced by `R_• ⟶ R̄_•`.
@@ -1473,7 +1473,7 @@ noncomputable def relativeBaseChangeCotangentLeg (f : B ⟶ C) :
       augmentedCotangentCochainComplex (relativeBaseChange f).hom
 ```
 
-**`CommAlgCat.baseChangedCotangentComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 660](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L660). The attribute's comment: “the induced map Omega[Q_bullet ⊗_{P_bullet} B / B] ⊗ C ⟶ Omega[R_bullet ⊗_{S_bullet} B / B] ⊗ C”.
+**`CommAlgCat.baseChangedCotangentComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 660](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L660). The attribute's comment: “the induced map Omega[Q\_bullet ⊗\_\{P\_bullet} B / B] ⊗ C ⟶ Omega[R\_bullet ⊗\_\{S\_bullet} B / B] ⊗ C”.
 
 > **The second arrow of the comparison of Remark 08SE**, the map
 > `Ω[Q̄_•⁄B] ⊗_{Q̄_•} C ⟶ Ω[R̄_•⁄B] ⊗_{R̄_•} C` induced by `Q̄_• ⟶ R̄_•`.
@@ -1484,7 +1484,7 @@ noncomputable def baseChangedCotangentComparison (f : B ⟶ C) :
       augmentedCotangentCochainComplex (relativeBaseChange f).hom
 ```
 
-**`CommAlgCat.isIso_q_relativeBaseChangeCotangentLeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 698](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L698). The attribute's comment: “the first of the two maps is a quasi-isomorphism. CARRIED as the hypothesis `hεR`: that the augmentation of R_bullet ⊗_{S_bullet} B to C is a trivial Kan fibration, the half of the source's appeal to Cohomology on Sites, Lemma 21.39.12 (Tag 08RX) that this library lacks. Degreewise polynomiality is NOT carried: it is proved from B → C injective”.
+**`CommAlgCat.isIso_q_relativeBaseChangeCotangentLeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 698](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L698). The attribute's comment: “the first of the two maps is a quasi-isomorphism. CARRIED as the hypothesis `hεR`: that the augmentation of R\_bullet ⊗\_\{S\_bullet} B to C is a trivial Kan fibration, the half of the source's appeal to Cohomology on Sites, Lemma 21.39.12 (Tag 08RX) that this library lacks. Degreewise polynomiality is NOT carried: it is proved from B → C injective”.
 
 > **The first arrow of the comparison is a quasi-isomorphism.**
 >
@@ -1503,7 +1503,7 @@ theorem isIso_q_relativeBaseChangeCotangentLeg (f : B ⟶ C) (hf : Function.Inje
     IsIso (DerivedCategory.Q.map (relativeBaseChangeCotangentLeg f))
 ```
 
-**`CommAlgCat.isIso_q_baseChangedCotangentComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 727](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L727). The attribute's comment: “the second of the two maps is a quasi-isomorphism. CARRIED as the hypotheses `hεQ` and `hεR`: that the augmentations of Q_bullet ⊗_{P_bullet} B and R_bullet ⊗_{S_bullet} B to C are trivial Kan fibrations, the half of Tag 08RX this library lacks. Degreewise polynomiality of both is NOT carried: it is proved from B → C injective”.
+**`CommAlgCat.isIso_q_baseChangedCotangentComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 727](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L727). The attribute's comment: “the second of the two maps is a quasi-isomorphism. CARRIED as the hypotheses `hεQ` and `hεR`: that the augmentations of Q\_bullet ⊗\_\{P\_bullet} B and R\_bullet ⊗\_\{S\_bullet} B to C are trivial Kan fibrations, the half of Tag 08RX this library lacks. Degreewise polynomiality of both is NOT carried: it is proved from B → C injective”.
 
 > **The second arrow of the comparison is a quasi-isomorphism**, by Tag 08PU at the two
 > resolutions `Q̄_•` and `R̄_•` of `C` over `B` and its functoriality in the resolution.
@@ -1517,7 +1517,7 @@ theorem isIso_q_baseChangedCotangentComparison (f : B ⟶ C) (hf : Function.Inje
     IsIso (DerivedCategory.Q.map (baseChangedCotangentComparison f))
 ```
 
-**`CommAlgCat.baseChangedCotangentComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 757](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L757). The attribute's comment: “the canonical identification of Omega[Q_bullet ⊗_{P_bullet} B / B] ⊗ C with L_{C/B}: the second arrow of the comparison followed by the inverse of the first. CARRIED as the hypotheses `hεQ` and `hεR`, the trivial-Kan-fibration halves of Tag 08RX, which this library lacks. The remark's hypothesis that B → C be injective is NOT carried but consumed”.
+**`CommAlgCat.baseChangedCotangentComplexIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean, line 757](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparison.lean#L757). The attribute's comment: “the canonical identification of Omega[Q\_bullet ⊗\_\{P\_bullet} B / B] ⊗ C with L\_\{C/B}: the second arrow of the comparison followed by the inverse of the first. CARRIED as the hypotheses `hεQ` and `hεR`, the trivial-Kan-fibration halves of Tag 08RX, which this library lacks. The remark's hypothesis that B → C be injective is NOT carried but consumed”.
 
 > **Remark 08SE.** The canonical identification of `Ω[Q̄_•⁄B] ⊗_{Q̄_•} C` with
 > `L_{C/B} = Ω[R_•⁄B] ⊗_{R_•} C` in `D(C)`: the second arrow of the comparison composed with the
@@ -1572,7 +1572,7 @@ theorem eq_baseChangedCotangentComplexIso (f : B ⟶ C) (hf : Function.Injective
     e = baseChangedCotangentComplexIso f hf hεQ hεR
 ```
 
-**`CommAlgCat.isResolution_relativeBaseChange_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparisonOfInjective.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparisonOfInjective.lean#L71). The attribute's comment: “R_bullet ⊗_{S_bullet} B is a simplicial polynomial algebra over B and R_bullet ⊗_{S_bullet} B → C is a resolution, for B → C injective”.
+**`CommAlgCat.isResolution_relativeBaseChange_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparisonOfInjective.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparisonOfInjective.lean#L71). The attribute's comment: “R\_bullet ⊗\_\{S\_bullet} B is a simplicial polynomial algebra over B and R\_bullet ⊗\_\{S\_bullet} B → C is a resolution, for B → C injective”.
 
 > **`R̄_• = R_• ⊗_{S_•} B` is a resolution of `C` over `B`** when `B → C` is injective: each
 > `R̄_n` is a polynomial algebra over `B` and the augmentation `R̄_• → C` is a trivial Kan
@@ -1588,7 +1588,7 @@ theorem isResolution_relativeBaseChange_of_injective (f : B ⟶ C)
       (relativeBaseChange f).left (relativeBaseChange f).hom
 ```
 
-**`CommAlgCat.isIso_q_relativeBaseChangeCotangentLeg_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparisonOfInjective.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparisonOfInjective.lean#L83). The attribute's comment: “the map L_{C/B} = Omega[R_bullet/B] ⊗ C ⟶ Omega[R_bullet ⊗_{S_bullet} B / B] ⊗ C is a quasi-isomorphism, for B → C injective”.
+**`CommAlgCat.isIso_q_relativeBaseChangeCotangentLeg_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparisonOfInjective.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparisonOfInjective.lean#L83). The attribute's comment: “the map L\_\{C/B} = Omega[R\_bullet/B] ⊗ C ⟶ Omega[R\_bullet ⊗\_\{S\_bullet} B / B] ⊗ C is a quasi-isomorphism, for B → C injective”.
 
 > **The first map of Remark 08SE is a quasi-isomorphism**:
 > `L_{C/B} = Ω[R_•⁄B] ⊗_{R_•} C ⟶ Ω[R̄_•⁄B] ⊗_{R̄_•} C` becomes an isomorphism in `D(C)` for
@@ -1600,7 +1600,7 @@ theorem isIso_q_relativeBaseChangeCotangentLeg_of_injective (f : B ⟶ C)
     IsIso (DerivedCategory.Q.map (relativeBaseChangeCotangentLeg f))
 ```
 
-**`CommAlgCat.isIso_q_baseChangedCotangentComparison_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparisonOfInjective.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparisonOfInjective.lean#L94). The attribute's comment: “the map Omega[Q_bullet ⊗_{P_bullet} B / B] ⊗ C ⟶ Omega[R_bullet ⊗_{S_bullet} B / B] ⊗ C is a quasi-isomorphism, for B → C injective”.
+**`CommAlgCat.isIso_q_baseChangedCotangentComparison_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/Triangle/BaseChangeComparisonOfInjective.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparisonOfInjective.lean#L94). The attribute's comment: “the map Omega[Q\_bullet ⊗\_\{P\_bullet} B / B] ⊗ C ⟶ Omega[R\_bullet ⊗\_\{S\_bullet} B / B] ⊗ C is a quasi-isomorphism, for B → C injective”.
 
 > **The second map of Remark 08SE is a quasi-isomorphism**:
 > `Ω[Q̄_•⁄B] ⊗_{Q̄_•} C ⟶ Ω[R̄_•⁄B] ⊗_{R̄_•} C` becomes an isomorphism in `D(C)` for `B → C`
@@ -1644,7 +1644,7 @@ theorem eq_baseChangedCotangentComplexIsoOfInjective (f : B ⟶ C)
 
 Declarations registered for the tag:
 
-- [`CommAlgCat.baseChangedCotangentComplexIsoOfInjective`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeLegTensor.lean#L418), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Cotangent/Triangle/BaseChangeComparisonOfInjective.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparisonOfInjective.lean#L101) (StacksFrontier): “the canonical identification of Omega[Q_bullet ⊗_{P_bullet} B / B] ⊗ C with L_{C/B} = Omega[R_bullet/B] ⊗ C in D(C), for B → C injective: the second map of the comparison followed by the inverse of the first”.
+- [`CommAlgCat.baseChangedCotangentComplexIsoOfInjective`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeLegTensor.lean#L418), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Cotangent/Triangle/BaseChangeComparisonOfInjective.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/Triangle/BaseChangeComparisonOfInjective.lean#L101) (StacksFrontier): “the canonical identification of Omega[Q\_bullet ⊗\_\{P\_bullet} B / B] ⊗ C with L\_\{C/B} = Omega[R\_bullet/B] ⊗ C in D(C), for B → C injective: the second map of the comparison followed by the inverse of the first”.
 
 ## Depends on
 

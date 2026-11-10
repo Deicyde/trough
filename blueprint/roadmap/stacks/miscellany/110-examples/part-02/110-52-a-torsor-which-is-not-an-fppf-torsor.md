@@ -14,7 +14,7 @@ Section 110.52 of the Stacks Project, [Tag 04AF](https://stacks.math.columbia.ed
 
 [Tag 077B](https://stacks.math.columbia.edu/tag/077B) in the Stacks Project.
 
-**`Stacks.Examples.RadicalTower.fpqcTorsor_not_isomorphic_fppfTorsor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/GroupSchemes/PrincipalNotFppf/Torsor.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/GroupSchemes/PrincipalNotFppf/Torsor.lean#L222). The attribute's comment: “counterexample: for S = Spec ℚ and G = ∏ᵢ μ_{i+2} a principal homogeneous G-space is exhibited that is isomorphic to no fppf G-torsor, which is the failure of essential surjectivity the source's proof invokes; the two stacks G-Principal and G-Torsors are not themselves constructed here”.
+**`Stacks.Examples.RadicalTower.fpqcTorsor_not_isomorphic_fppfTorsor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/GroupSchemes/PrincipalNotFppf/Torsor.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/GroupSchemes/PrincipalNotFppf/Torsor.lean#L222). The attribute's comment: “counterexample: for S = Spec ℚ and G = ∏ᵢ μ\_\{i+2} a principal homogeneous G-space is exhibited that is isomorphic to no fppf G-torsor, which is the failure of essential surjectivity the source's proof invokes; the two stacks G-Principal and G-Torsors are not themselves constructed here”.
 
 > **Stacks Project, Tag 077B.**  Over `S = Spec ℚ` the group scheme `G = ∏ᵢ μ_{i+2}` has a
 > principal homogeneous space, namely `P = Spec ℚ[x₀, x₁, …]/(xᵢ ^ (i + 2) - 2)`, which is

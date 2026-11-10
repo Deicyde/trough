@@ -482,7 +482,7 @@ public theorem firstOrderThickeningSiteι_comp_P₁ :
     firstOrderThickeningSiteι S A ≫ firstOrderThickeningSiteP₁ S A = 𝟙 A
 ```
 
-**`Crystalline.GlobalCrystallineSituation.firstOrderThickeningSiteι_isFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/UniversalThickeningScheme.lean, line 741](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/UniversalThickeningScheme.lean#L741). The attribute's comment: “i is a first-order thickening with ideal sheaf Ω_{T/S,δ}”.
+**`Crystalline.GlobalCrystallineSituation.firstOrderThickeningSiteι_isFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/UniversalThickeningScheme.lean, line 741](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/UniversalThickeningScheme.lean#L741). The attribute's comment: “i is a first-order thickening with ideal sheaf Ω\_\{T/S,δ}”.
 
 > **`i : (U, T, δ) ⟶ (U, T', δ')` is a first-order thickening whose ideal sheaf is
 > `Ω_{T/S,δ}`**, which is the restriction `(Ω_{X/S})_T` of the crystalline differentials by
@@ -494,7 +494,7 @@ public theorem firstOrderThickeningSiteι_isFirstOrderThickening :
       (firstOrderThickeningSiteι S A).targetHom.hom
 ```
 
-**`Crystalline.GlobalCrystallineSituation.firstOrderThickeningSiteKernelEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/UniversalThickeningScheme.lean, line 752](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/UniversalThickeningScheme.lean#L752). The attribute's comment: “the ideal sheaf of i is the restriction of Ω_{X/S} to T”.
+**`Crystalline.GlobalCrystallineSituation.firstOrderThickeningSiteKernelEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/UniversalThickeningScheme.lean, line 752](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/UniversalThickeningScheme.lean#L752). The attribute's comment: “the ideal sheaf of i is the restriction of Ω\_\{X/S} to T”.
 
 > **The ideal sheaf of `i : T ⟶ T'` is `(Ω_{X/S})_T`**, the restriction of the crystalline
 > differentials to the ambient scheme of the object — which is the spelling in which
@@ -653,8 +653,8 @@ public def secondOrderThickeningDividedPowers (W : (Opens ↑T.scheme)ᵒᵖ) :
 **`Crystalline.secondOrderThickeningDividedPowers_dpow_add_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SecondOrderThickening.lean, line 1284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SecondOrderThickening.lean#L1284). The attribute's comment: “the divided power formula on J''”.
 
 > **The displayed formula for `δ''`**:
-> `δ''_{k+2}(f, ω₁, ω₂, η) = (δ_{k+2} f, δ_{k+1} f · ω₁, δ_{k+1} f · ω₂,
-> δ_{k+1} f · η + δ_k f · ω₁ ∧ ω₂)`.
+> `δ''\_\{k+2}(f, ω₁, ω₂, η) = (δ\_\{k+2} f, δ\_\{k+1} f · ω₁, δ\_\{k+1} f · ω₂,
+> δ\_\{k+1} f · η + δ\_k f · ω₁ ∧ ω₂)`.
 
 ```lean
 public theorem secondOrderThickeningDividedPowers_dpow_add_two (W : (Opens ↑T.scheme)ᵒᵖ) (k : ℕ)
@@ -1440,7 +1440,7 @@ public theorem secondOrderThickeningCrysQ₀₂_comp_P₁ :
       secondOrderThickeningCrysQ₂ S B
 ```
 
-**`Crystalline.GlobalCrystallineSituation.crysSheafRingMap_q₀₁_add_q₁₂_diffSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SecondOrderThickeningSections.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SecondOrderThickeningSections.lean#L367). The attribute's comment: “the first formula of the remark on the sections over an object: on a section of the square-zero summand of 𝒪_{T'}, q₀₁ + q₁₂ = q₀₂ + d, the two-form d ω being read through the top summand Ω² of 𝒪_{T''}”.
+**`Crystalline.GlobalCrystallineSituation.crysSheafRingMap_q₀₁_add_q₁₂_diffSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SecondOrderThickeningSections.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SecondOrderThickeningSections.lean#L367). The attribute's comment: “the first formula of the remark on the sections over an object: on a section of the square-zero summand of 𝒪\_\{T'}, q₀₁ + q₁₂ = q₀₂ + d, the two-form d ω being read through the top summand Ω² of 𝒪\_\{T''}”.
 
 > **The first formula of [Stacks, Remark 60.14.5, Tag 07J3] on sections over an object.**  On a
 > section `ω` of the square-zero summand `Ω_{T/S,δ}` of `𝒪_{T'}` the three maps out of `𝒪_{T'}` of
@@ -1465,7 +1465,7 @@ theorem crysSheafRingMap_q₀₁_add_q₁₂_diffSection (A : Thickening S)
         secondOrderTopSection A (crysDeRham A ω)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.crysSheafRingMap_q₁₂_mul_q₀₁_diffSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SecondOrderThickeningSections.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SecondOrderThickeningSections.lean#L388). The attribute's comment: “the second formula of the remark on the sections over an object: the product in 𝒪_{T''} of a differential read through q₁₂ with one read through q₀₁ is their exterior product in the other order, read through the top summand Ω²”.
+**`Crystalline.GlobalCrystallineSituation.crysSheafRingMap_q₁₂_mul_q₀₁_diffSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SecondOrderThickeningSections.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SecondOrderThickeningSections.lean#L388). The attribute's comment: “the second formula of the remark on the sections over an object: the product in 𝒪\_\{T''} of a differential read through q₁₂ with one read through q₀₁ is their exterior product in the other order, read through the top summand Ω²”.
 
 > **The second formula of [Stacks, Remark 60.14.5, Tag 07J3] on sections over an object.**  The
 > product in `𝒪_{T''}` of a section of the square-zero summand of `𝒪_{T'}` read through `q₁₂` with

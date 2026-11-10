@@ -14,7 +14,7 @@ Section 85.16 of the Stacks Project, [Tag 0D8A](https://stacks.math.columbia.edu
 
 [Tag 0D8B](https://stacks.math.columbia.edu/tag/0D8B) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSemiRepresentable.augmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean, line 588](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean#L588). The attribute's comment: “j_0 defines an augmentation a_0 : Sh(C/K_0) to Sh(C), case (B) of 0D6Z”.
+**`CategoryTheory.SimplicialSemiRepresentable.augmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean, line 588](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean#L588). The attribute's comment: “j\_0 defines an augmentation a\_0 : Sh(C/K\_0) to Sh(C), case (B) of 0D6Z”.
 
 > **Stacks 0D8B.** The localization functor `j_0 : C/K_0 ⥤ C` defines an augmentation of the
 > simplicial site `n ↦ C/K_n` towards `(C, J)`, as in case (B) of Stacks 0D6Z: it is cocontinuous,
@@ -25,7 +25,7 @@ Section 85.16 of the Stacks Project, [Tag 0D8A](https://stacks.math.columbia.edu
 def augmentation : (simplicialSite J K).Augmentation (Cat.of C) J
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.augmentation_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean, line 603](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean#L603). The attribute's comment: “the functor underlying that augmentation is j_0”.
+**`CategoryTheory.SimplicialSemiRepresentable.augmentation_functor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean, line 603](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean#L603). The attribute's comment: “the functor underlying that augmentation is j\_0”.
 
 > **Stacks 0D8B.** The functor underlying that augmentation is the degree-zero localization
 > functor `j_0`. Together with `CategoryTheory.SimplicialSemiRepresentable.augmentation` this is
@@ -36,7 +36,7 @@ theorem augmentation_functor :
     (augmentation J K).functor = sliceForget K (op (SimplexCategory.mk 0))
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.componentPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean, line 702](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean#L702). The attribute's comment: “a_n is the morphism of topoi of j_n: direct images”.
+**`CategoryTheory.SimplicialSemiRepresentable.componentPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean, line 702](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean#L702). The attribute's comment: “a\_n is the morphism of topoi of j\_n: direct images”.
 
 > **Stacks 0D8B.** The morphism of topoi `a_n : Sh(C/K_n) ⟶ Sh(C)` which Stacks 0D70 attaches
 > to the augmentation `j_0` is the morphism of topoi of the localization functor `j_n`: their
@@ -55,7 +55,7 @@ noncomputable def componentPushforwardIso (n : SimplexCategory) :
       (localizationMorphism J K n).pushforward
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.componentInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean, line 733](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean#L733). The attribute's comment: “a_n is the morphism of topoi of j_n: inverse images”.
+**`CategoryTheory.SimplicialSemiRepresentable.componentInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean, line 733](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean#L733). The attribute's comment: “a\_n is the morphism of topoi of j\_n: inverse images”.
 
 > **Stacks 0D8B.** The same identification in inverse images, obtained from uniqueness of left
 > adjoints.
@@ -67,7 +67,7 @@ noncomputable def componentInverseImageIso (n : SimplexCategory) :
       (localizationMorphism J K n).inverseImage
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.totalPushforward_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean, line 757](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean#L757). The attribute's comment: “a is the morphism of topoi of j_total: the direct images are equal”.
+**`CategoryTheory.SimplicialSemiRepresentable.totalPushforward_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean, line 757](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean#L757). The attribute's comment: “a is the morphism of topoi of j\_total: the direct images are equal”.
 
 > **Stacks 0D8B.** The morphism of topoi `a : Sh((C/K)_total) ⟶ Sh(C)` which Stacks 0D70
 > attaches to the augmentation `j_0` is the morphism of topoi of the localization functor
@@ -80,7 +80,7 @@ theorem totalPushforward_eq :
         (augmentation J K)).pushforward = (totalLocalizationMorphism J K).pushforward
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.totalInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean, line 782](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean#L782). The attribute's comment: “a is the morphism of topoi of j_total: inverse images”.
+**`CategoryTheory.SimplicialSemiRepresentable.totalInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean, line 782](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/SimplicialSemiRepresentableSite.lean#L782). The attribute's comment: “a is the morphism of topoi of j\_total: inverse images”.
 
 > **Stacks 0D8B.** The same identification in inverse images, obtained from uniqueness of left
 > adjoints.
@@ -218,7 +218,7 @@ def cohomologyObj_iso_summand
 
 [Tag 0D9W](https://stacks.math.columbia.edu/tag/0D9W) in the Stacks Project.
 
-**`CategoryTheory.SemiRepresentable.Simplicial.totalRingedSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean#L183). The attribute's comment: “total_ringed_site”.
+**`CategoryTheory.SemiRepresentable.Simplicial.totalRingedSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean#L183). The attribute's comment: “total\_ringed\_site”.
 
 > **Stacks 0D9W, total ringed site.** The total localization of a simplicial
 > semi-representable object `K` of the underlying site of a ringed site `X`, equipped with the
@@ -229,7 +229,7 @@ def totalRingedSite (X : AlgebraicGeometry.RingedSite.{u, v, w})
     (K : SimplicialObject (FormalCoproduct.{x} X.C)) : AlgebraicGeometry.RingedSite
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.degreewiseRingedAugmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean#L272). The attribute's comment: “degreewise_ringed_augmentations”.
+**`CategoryTheory.SemiRepresentable.Simplicial.degreewiseRingedAugmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean#L272). The attribute's comment: “degreewise\_ringed\_augmentations”.
 
 > **Stacks 0D9W, degreewise ringed augmentations.** For a simplicial semi-representable
 > object `K` of the underlying site of a ringed site `X`, each simplicial degree carries a
@@ -244,7 +244,7 @@ def degreewiseRingedAugmentation (X : AlgebraicGeometry.RingedSite.{u, v, max x 
       (AlgebraicGeometry.RingedSite.ringedTopos.{u, v, max x w} X)
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.totalRingedAugmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean#L372). The attribute's comment: “ringed_augmentation”.
+**`CategoryTheory.SemiRepresentable.Simplicial.totalRingedAugmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean#L372). The attribute's comment: “ringed\_augmentation”.
 
 > **Stacks 0D9W, ringed augmentation.** For a simplicial semi-representable object `K` of the
 > underlying site of a ringed site `X`, the total ringed site is augmented over `X` by a morphism
@@ -260,7 +260,7 @@ def totalRingedAugmentation (X : AlgebraicGeometry.RingedSite.{u, v, w})
         (AlgebraicGeometry.RingedSite.liftedRingedSite.{x, u, v, w} X))
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.ringedTransitionMorphism_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean#L434). The attribute's comment: “flat_transition_morphisms”.
+**`CategoryTheory.SemiRepresentable.Simplicial.ringedTransitionMorphism_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean#L434). The attribute's comment: “flat\_transition\_morphisms”.
 
 > **Stacks 0D9W, flat transition morphisms.** For a simplicial semi-representable object `K`
 > of the underlying site of a ringed site `X`, the morphism of ringed topoi attached to a simplex
@@ -276,7 +276,7 @@ theorem ringedTransitionMorphism_isFlat
       (ringedTransitionMorphism.{x, u, v, w} X K φ).val
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.degreewiseRingedAugmentation_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean#L497). The attribute's comment: “flat_degreewise_augmentations”.
+**`CategoryTheory.SemiRepresentable.Simplicial.degreewiseRingedAugmentation_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean#L497). The attribute's comment: “flat\_degreewise\_augmentations”.
 
 > **Stacks 0D9W, flat degreewise augmentations.** For a simplicial semi-representable object
 > `K` of the underlying site of a ringed site `X`, the morphism of ringed topoi
@@ -291,7 +291,7 @@ theorem degreewiseRingedAugmentation_isFlat
       (degreewiseRingedAugmentation.{x, u, v, w} X K n)
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.totalRingedAugmentation_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean#L530). The attribute's comment: “flat_augmentation”.
+**`CategoryTheory.SemiRepresentable.Simplicial.totalRingedAugmentation_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean#L530). The attribute's comment: “flat\_augmentation”.
 
 > **Stacks 0D9W, flat augmentation.** For a simplicial semi-representable object `K` of the
 > underlying site of a ringed site `X`, the augmentation
@@ -305,7 +305,7 @@ theorem totalRingedAugmentation_isFlat (X : AlgebraicGeometry.RingedSite.{u, v, 
       (totalRingedAugmentation.{x, u, v, w} X K)
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.totalLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L232). The attribute's comment: “lower_shriek”.
+**`CategoryTheory.SemiRepresentable.Simplicial.totalLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L232). The attribute's comment: “lower\_shriek”.
 
 > **Stacks 0D9W, item (4).** For a simplicial semi-representable object `K` of the underlying
 > site of a ringed site `X`, the inverse image `a^*` of sheaves of modules along the augmentation of
@@ -316,7 +316,7 @@ def totalLowerShriekAdjunction :
     totalLowerShriek.{x, u, v, w} X K ⊣ totalInverseImageModules.{x, u, v, w} X K
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.degreewiseLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L270). The attribute's comment: “degreewise_lower_shriek_adjunction”.
+**`CategoryTheory.SemiRepresentable.Simplicial.degreewiseLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L270). The attribute's comment: “degreewise\_lower\_shriek\_adjunction”.
 
 > **Stacks 0D9W, the degreewise lower shriek.** The inverse image `a_n^*` of sheaves of modules
 > along the degreewise augmentation `a_n : (Sh(C/K_n), O_n) ⟶ (Sh(C), O_C)` has a left adjoint
@@ -331,7 +331,7 @@ def degreewiseLowerShriekAdjunction :
       degreewiseInverseImageModules.{x, u, v, w} X K n
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.exactFunctor_degreewiseLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L331). The attribute's comment: “degreewise_lower_shriek_exact”.
+**`CategoryTheory.SemiRepresentable.Simplicial.exactFunctor_degreewiseLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L331). The attribute's comment: “degreewise\_lower\_shriek\_exact”.
 
 > **Stacks 0D9W, exactness of the degreewise lower shriek.** The functor
 > `a_{n!} : Mod(O_n) ⥤ Mod(O_C)` left adjoint to the inverse image `a_n^*` of the degreewise
@@ -353,7 +353,7 @@ theorem exactFunctor_degreewiseLowerShriek :
       (degreewiseLowerShriek.{x, u, v, w} X K n)
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.transitionLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L388). The attribute's comment: “transition_lower_shriek_adjunction”.
+**`CategoryTheory.SemiRepresentable.Simplicial.transitionLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L388). The attribute's comment: “transition\_lower\_shriek\_adjunction”.
 
 > **Stacks 0D9W, the lower shriek of a transition morphism.** For a simplex map
 > `φ : [m] ⟶ [n]`, the inverse image `f_φ^*` of sheaves of modules along the transition morphism of
@@ -368,7 +368,7 @@ def transitionLowerShriekAdjunction (φ : m ⟶ n) :
     transitionLowerShriek.{x, u, v, w} X K φ ⊣ transitionInverseImageModules.{x, u, v, w} X K φ
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.exactFunctor_transitionLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L525). The attribute's comment: “transition_lower_shriek_exact”.
+**`CategoryTheory.SemiRepresentable.Simplicial.exactFunctor_transitionLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L525). The attribute's comment: “transition\_lower\_shriek\_exact”.
 
 > **Stacks 0D9W, exactness of the lower shriek of a transition morphism.** For a simplex map
 > `φ : [m] ⟶ [n]`, the functor `f_{φ!} : Mod(O_n) ⥤ Mod(O_m)` left adjoint to the inverse image
@@ -393,7 +393,7 @@ theorem exactFunctor_transitionLowerShriek (φ : m ⟶ n) :
       (transitionLowerShriek.{x, u, v, w} X K φ)
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.componentRingedMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 826](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L826). The attribute's comment: “component_morphism”.
+**`CategoryTheory.SemiRepresentable.Simplicial.componentRingedMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 826](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L826). The attribute's comment: “component\_morphism”.
 
 > **Stacks 0D9W, the morphism of a simplicial degree into the total ringed site.** For a
 > simplicial semi-representable object `K` of the underlying site of a ringed site `X`, the
@@ -407,7 +407,7 @@ def componentRingedMorphism :
         (totalRingedSite.{x, u, v, max x u v w} X K))
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.componentRingedMorphism_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 845](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L845). The attribute's comment: “flat_component_morphism”.
+**`CategoryTheory.SemiRepresentable.Simplicial.componentRingedMorphism_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 845](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L845). The attribute's comment: “flat\_component\_morphism”.
 
 > **Stacks 0D9W, flat component morphism.** The morphism of ringed topoi
 > `g_n : (Sh(C/K_n), O_n) ⟶ (Sh((C/K)_total), O)` is flat: its structure map in inverse-image form
@@ -421,7 +421,7 @@ theorem componentRingedMorphism_isFlat :
       (componentRingedMorphism.{x, u, v, w} X K n)
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.componentLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 881](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L881). The attribute's comment: “component_lower_shriek_adjunction”.
+**`CategoryTheory.SemiRepresentable.Simplicial.componentLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 881](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L881). The attribute's comment: “component\_lower\_shriek\_adjunction”.
 
 > **Stacks 0D9W, the lower shriek of a component morphism.** The inverse image `g_n^*` of
 > sheaves of modules along `g_n` has a left adjoint `g_{n!} : Mod(O_n) ⥤ Mod(O)`.
@@ -434,7 +434,7 @@ def componentLowerShriekAdjunction :
     componentLowerShriek.{x, u, v, w} X K n ⊣ componentInverseImageModules.{x, u, v, w} X K n
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.exactFunctor_componentLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 959](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L959). The attribute's comment: “component_lower_shriek_exact”.
+**`CategoryTheory.SemiRepresentable.Simplicial.exactFunctor_componentLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean, line 959](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedLowerShriek.lean#L959). The attribute's comment: “component\_lower\_shriek\_exact”.
 
 > **Stacks 0D9W, exactness of the lower shriek of a component morphism.** The functor
 > `g_{n!} : Mod(O_n) ⥤ Mod(O)` left adjoint to the inverse image `g_n^*` is exact.
@@ -457,7 +457,7 @@ theorem exactFunctor_componentLowerShriek :
       (componentLowerShriek.{x, u, v, w} X K n)
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.pulledBackStructureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableStructureSheaf.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableStructureSheaf.lean#L258). The attribute's comment: “pulled_back_structure_sheaf”.
+**`CategoryTheory.SemiRepresentable.Simplicial.pulledBackStructureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableStructureSheaf.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableStructureSheaf.lean#L258). The attribute's comment: “pulled\_back\_structure\_sheaf”.
 
 > **Stacks 0D9W, pulled-back structure sheaf.** For the canonical localization
 > augmentation attached to `K`, set `O = a⁻¹ O_C`. This is restriction along `j_total`,
@@ -473,7 +473,7 @@ def pulledBackStructureSheaf (X : AlgebraicGeometry.RingedSite.{u, v, w})
 
 [Tag 0D9X](https://stacks.math.columbia.edu/tag/0D9X) in the Stacks Project.
 
-**`CategoryTheory.SemiRepresentable.Simplicial.totalRingedSiteOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L142). The attribute's comment: “item (1): the ringed site ((C/K)_total, O)”.
+**`CategoryTheory.SemiRepresentable.Simplicial.totalRingedSiteOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L142). The attribute's comment: “item (1): the ringed site ((C/K)\_total, O)”.
 
 > For a ringed site `(C, O_C)`, an object `U` of `C` and a simplicial object `K` of
 > `SR(C, U) = SR(C/U)`, the total localization site `(C/K)_total` of `K` over the slice site `C/U`,
@@ -497,7 +497,7 @@ def totalRingedAugmentationOver :
         (AlgebraicGeometry.RingedSite.liftedRingedSite.{x} (X.over U)))
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.degreewiseRingedAugmentationOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L175). The attribute's comment: “item (3): the morphisms of ringed topoi a_n”.
+**`CategoryTheory.SemiRepresentable.Simplicial.degreewiseRingedAugmentationOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L175). The attribute's comment: “item (3): the morphisms of ringed topoi a\_n”.
 
 > The degreewise augmentations `a_n : (Sh(C/K_n), O_n) ⟶ (Sh(C/U), O_U)` of a simplicial
 > object `K` of `SR(C, U)`, as morphisms of ringed topoi.
@@ -511,7 +511,7 @@ def degreewiseRingedAugmentationOver (n : SimplexCategory) :
         (AlgebraicGeometry.RingedSite.liftedRingedSite.{x} (X.over U)))
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.totalLowerShriekOverAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L198). The attribute's comment: “item (4): a_! is left adjoint to a^*”.
+**`CategoryTheory.SemiRepresentable.Simplicial.totalLowerShriekOverAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L198). The attribute's comment: “item (4): a\_! is left adjoint to a^*”.
 
 > For a simplicial object `K` of `SR(C, U)`, the functor `a_! : Mod(O) ⥤ Mod(O_U)` is left
 > adjoint to the pullback `a^*` of sheaves of modules along the augmentation
@@ -535,7 +535,7 @@ theorem totalRingedAugmentationOver_isFlat :
       (totalRingedAugmentationOver.{x, u, v, w} X U K)
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.degreewiseRingedAugmentationOver_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L217). The attribute's comment: “the results of 0D9W: a_n is flat”.
+**`CategoryTheory.SemiRepresentable.Simplicial.degreewiseRingedAugmentationOver_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L217). The attribute's comment: “the results of 0D9W: a\_n is flat”.
 
 > Every degreewise augmentation `a_n : (Sh(C/K_n), O_n) ⟶ (Sh(C/U), O_U)` of a simplicial
 > object `K` of `SR(C, U)` is flat.
@@ -547,7 +547,7 @@ theorem degreewiseRingedAugmentationOver_isFlat (n : SimplexCategory) :
       (degreewiseRingedAugmentationOver.{x, u, v, w} X U K n)
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.degreewiseLowerShriekOverAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L228). The attribute's comment: “the results of 0D9W: a_{n!} is left adjoint to a_n^*”.
+**`CategoryTheory.SemiRepresentable.Simplicial.degreewiseLowerShriekOverAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L228). The attribute's comment: “the results of 0D9W: a\_\{n!} is left adjoint to a\_n^*”.
 
 > For a simplicial object `K` of `SR(C, U)`, the inverse image `a_n^*` of sheaves of modules
 > along the degreewise augmentation `a_n : (Sh(C/K_n), O_n) ⟶ (Sh(C/U), O_U)` has the left adjoint
@@ -561,7 +561,7 @@ def degreewiseLowerShriekOverAdjunction (n : SimplexCategory) :
         (AlgebraicGeometry.RingedSite.liftedRingedSite.{x} (X.over U)) K n
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.exactFunctor_degreewiseLowerShriekOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L239). The attribute's comment: “the results of 0D9W: a_{n!} is exact”.
+**`CategoryTheory.SemiRepresentable.Simplicial.exactFunctor_degreewiseLowerShriekOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L239). The attribute's comment: “the results of 0D9W: a\_\{n!} is exact”.
 
 > For a simplicial object `K` of `SR(C, U)`, the functor `a_{n!} : Mod(O_n) ⥤ Mod(O_U)` is
 > exact.
@@ -572,7 +572,7 @@ theorem exactFunctor_degreewiseLowerShriekOver (n : SimplexCategory) :
       (AlgebraicGeometry.RingedSite.liftedRingedSite.{x} (X.over U)) K n)
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.ringedTransitionMorphismOver_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L248). The attribute's comment: “the results of 0D9W: f_φ is flat”.
+**`CategoryTheory.SemiRepresentable.Simplicial.ringedTransitionMorphismOver_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L248). The attribute's comment: “the results of 0D9W: f\_φ is flat”.
 
 > For a simplicial object `K` of `SR(C, U)` and a simplex map `φ : [m] ⟶ [n]`, the morphism of
 > ringed topoi `f_φ : (Sh(C/K_n), O_n) ⟶ (Sh(C/K_m), O_m)` is flat.
@@ -585,7 +585,7 @@ theorem ringedTransitionMorphismOver_isFlat {m n : SimplexCategory} (φ : m ⟶ 
         (AlgebraicGeometry.RingedSite.liftedRingedSite.{x} (X.over U)) K φ).val
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.transitionLowerShriekOverAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L259). The attribute's comment: “the results of 0D9W: f_{φ!} is left adjoint to f_φ^*”.
+**`CategoryTheory.SemiRepresentable.Simplicial.transitionLowerShriekOverAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L259). The attribute's comment: “the results of 0D9W: f\_\{φ!} is left adjoint to f\_φ^*”.
 
 > For a simplicial object `K` of `SR(C, U)` and a simplex map `φ : [m] ⟶ [n]`, the inverse image
 > `f_φ^*` of sheaves of modules has the left adjoint `f_{φ!} : Mod(O_n) ⥤ Mod(O_m)`.
@@ -598,7 +598,7 @@ def transitionLowerShriekOverAdjunction {m n : SimplexCategory} (φ : m ⟶ n) :
         (AlgebraicGeometry.RingedSite.liftedRingedSite.{x} (X.over U)) K φ
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.exactFunctor_transitionLowerShriekOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L270). The attribute's comment: “the results of 0D9W: f_{φ!} is exact”.
+**`CategoryTheory.SemiRepresentable.Simplicial.exactFunctor_transitionLowerShriekOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L270). The attribute's comment: “the results of 0D9W: f\_\{φ!} is exact”.
 
 > For a simplicial object `K` of `SR(C, U)` and a simplex map `φ : [m] ⟶ [n]`, the functor
 > `f_{φ!} : Mod(O_n) ⥤ Mod(O_m)` is exact.
@@ -609,7 +609,7 @@ theorem exactFunctor_transitionLowerShriekOver {m n : SimplexCategory} (φ : m �
       (AlgebraicGeometry.RingedSite.liftedRingedSite.{x} (X.over U)) K φ)
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.componentRingedMorphismOver_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L279). The attribute's comment: “the results of 0D9W: g_n is flat”.
+**`CategoryTheory.SemiRepresentable.Simplicial.componentRingedMorphismOver_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L279). The attribute's comment: “the results of 0D9W: g\_n is flat”.
 
 > For a simplicial object `K` of `SR(C, U)`, the morphism of ringed topoi
 > `g_n : (Sh(C/K_n), O_n) ⟶ (Sh((C/K)_total), O)` is flat.
@@ -622,7 +622,7 @@ theorem componentRingedMorphismOver_isFlat (n : SimplexCategory) :
         (AlgebraicGeometry.RingedSite.liftedRingedSite.{x} (X.over U)) K n)
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.componentLowerShriekOverAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L290). The attribute's comment: “the results of 0D9W: g_{n!} is left adjoint to g_n^*”.
+**`CategoryTheory.SemiRepresentable.Simplicial.componentLowerShriekOverAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L290). The attribute's comment: “the results of 0D9W: g\_\{n!} is left adjoint to g\_n^*”.
 
 > For a simplicial object `K` of `SR(C, U)`, the inverse image `g_n^*` of sheaves of modules
 > along `g_n` has the left adjoint `g_{n!} : Mod(O_n) ⥤ Mod(O)`.
@@ -635,7 +635,7 @@ def componentLowerShriekOverAdjunction (n : SimplexCategory) :
         (AlgebraicGeometry.RingedSite.liftedRingedSite.{x} (X.over U)) K n
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.exactFunctor_componentLowerShriekOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L301). The attribute's comment: “the results of 0D9W: g_{n!} is exact”.
+**`CategoryTheory.SemiRepresentable.Simplicial.exactFunctor_componentLowerShriekOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/RingedOverObject.lean#L301). The attribute's comment: “the results of 0D9W: g\_\{n!} is exact”.
 
 > For a simplicial object `K` of `SR(C, U)`, the functor `g_{n!} : Mod(O_n) ⥤ Mod(O)` is
 > exact.
@@ -646,7 +646,7 @@ theorem exactFunctor_componentLowerShriekOver (n : SimplexCategory) :
       (AlgebraicGeometry.RingedSite.liftedRingedSite.{x} (X.over U)) K n)
 ```
 
-**`AlgebraicGeometry.SemiRepresentable.Simplicial.totalRingedSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/TotalRingedSite.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/TotalRingedSite.lean#L89). The attribute's comment: “ringed_total_site”.
+**`AlgebraicGeometry.SemiRepresentable.Simplicial.totalRingedSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/TotalRingedSite.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/TotalRingedSite.lean#L89). The attribute's comment: “ringed\_total\_site”.
 
 > The total localization of a simplicial semi-representable object over a ringed site, together
 > with its pulled-back structure sheaf, is a ringed site.
@@ -656,7 +656,7 @@ def totalRingedSite (X : AlgebraicGeometry.RingedSite.{u, v, w})
     (K : SimplicialObject (FormalCoproduct.{x} X.C)) : AlgebraicGeometry.RingedSite
 ```
 
-**`AlgebraicGeometry.SemiRepresentable.Simplicial.ringedAugmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/TotalRingedSite.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/TotalRingedSite.lean#L140). The attribute's comment: “ringed_augmentation”.
+**`AlgebraicGeometry.SemiRepresentable.Simplicial.ringedAugmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/TotalRingedSite.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentable/TotalRingedSite.lean#L140). The attribute's comment: “ringed\_augmentation”.
 
 > The total localization of a simplicial semi-representable object over a ringed site has a
 > canonical augmentation to the base as a morphism of ringed topoi.
@@ -671,7 +671,7 @@ def ringedAugmentation (X : AlgebraicGeometry.RingedSite.{u, v, w})
         (liftedRingedSite.{x, v, u, w} X))
 ```
 
-**`CategoryTheory.SemiRepresentable.Simplicial.totalRingedSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean#L183). The attribute's comment: “ringed_total_site”.
+**`CategoryTheory.SemiRepresentable.Simplicial.totalRingedSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/SemiRepresentableRingedAugmentation.lean#L183). The attribute's comment: “ringed\_total\_site”.
 
 > **Stacks 0D9W, total ringed site.** The total localization of a simplicial
 > semi-representable object `K` of the underlying site of a ringed site `X`, equipped with the

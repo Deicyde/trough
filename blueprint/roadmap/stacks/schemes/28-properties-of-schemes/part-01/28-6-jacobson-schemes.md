@@ -61,7 +61,7 @@ theorem jacobsonSpace_open {X : Scheme.{u}} (hX : JacobsonSpace X) (U : X.Opens)
 
 Declarations registered for the tag:
 
-- [`JacobsonSpace.of_isOpenEmbedding`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=JacobsonSpace.of_isOpenEmbedding#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Properties/Jacobson.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Jacobson.lean#L137) (StacksFrontier): “jacobson_open_subscheme”. References: EGA IV (10.3.2), “special case”; EGA IV (10.3.3), “necessity”; EGA IV (10.4.3), “Open subpreschemes”; EGA IV (10.4.7), “open immersions”.
+- [`JacobsonSpace.of_isOpenEmbedding`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=JacobsonSpace.of_isOpenEmbedding#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Properties/Jacobson.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Jacobson.lean#L137) (StacksFrontier): “jacobson\_open\_subscheme”. References: EGA IV (10.3.2), “special case”; EGA IV (10.3.3), “necessity”; EGA IV (10.4.3), “Open subpreschemes”; EGA IV (10.4.7), “open immersions”.
 
 ## Tag 02IM, a lemma
 

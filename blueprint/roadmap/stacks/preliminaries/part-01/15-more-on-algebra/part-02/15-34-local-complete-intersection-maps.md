@@ -107,8 +107,8 @@ public theorem syntomic_iff_flat_and_isLocalCompleteIntersection
 > the canonical map `C ⊗_B (I / I²) → K / K²` is injective. Together with the canonical exact
 > conormal/differential diagram and the Jacobi--Zariski exactness lemmas, this gives the exact
 > sequence
-> `0 → H₁(NL_{B/A} ⊗_B C) → H₁(L_{C/A}) → H₁(L_{C/B}) →
-> C ⊗_B Ω[B⁄A] → Ω[C⁄A] → Ω[C⁄B] → 0`.
+> `0 → H₁(NL\_\{B/A} ⊗\_B C) → H₁(L\_\{C/A}) → H₁(L\_\{C/B}) →
+> C ⊗\_B Ω[B⁄A] → Ω[C⁄A] → Ω[C⁄B] → 0`.
 
 ```lean
 public theorem cotangentMap_toComp_injective_of_isLocalCompleteIntersection

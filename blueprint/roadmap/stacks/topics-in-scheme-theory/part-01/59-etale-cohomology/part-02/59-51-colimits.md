@@ -730,8 +730,8 @@ theorem isSystemColimit (p : ℕ) (F : EtaleSheafSystem D Ab.{u + 1})
 
 **`Stacks.EtaleCohomology.LimitHigherDirectImage.transitionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImage.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImage.lean#L143). The attribute's comment: “the transition maps `ψ_{i'i} : h_{i'i}^{-1} R^p g_{i, *} ℱ_i ⟶ R^p g_{i', *} ℱ_{i'}` of the first paragraph of the proof, constructed from the base change map on higher direct images of Stacks 0F02 and the transition map of the system of sheaves. The cocycle condition `ψ_{i''i} = ψ_{i''i'} ∘ h_{i''i'}^{-1}ψ_{i'i}`, which the source gets from Stacks 0E47, is NOT proved: pasting of base change maps is carried for ringed topoi on sheaves of modules and for the unbounded derived étale base change map, but not for the bounded below `Stacks.EtaleCohomology.smallEtaleDerivedBaseChangeAb` that `Stacks.EtaleCohomology.higherBaseChangeMapAb` descends from. The colimit assertion `R^p g_* ℱ = colim_i h_i^{-1} R^p g_{i, *} ℱ_i` is NOT proved either; it additionally needs the comparison of Stacks 04HR at the level of cohomology, the carried Stacks 09YQ being stated for the right-derived `sheafSections` of the small AFFINE étale sites.”.
 
-> **The transition maps of Stacks 0EYM**, `ψ_{i'i} : h_{i'i}^{-1} R^p g_{i, *} ℱ_i ⟶
-> R^p g_{i', *} ℱ_{i'}`: the base change map of the transition square
+> **The transition maps of Stacks 0EYM**, `ψ\_\{i'i} : h\_\{i'i}^\{-1} R^p g\_\{i, *} ℱ\_i ⟶
+> R^p g\_\{i', *} ℱ\_\{i'}`: the base change map of the transition square
 > `g_{i'} ≫ h_{i'i} = f_{i'i} ≫ g_i` on higher direct images, followed by `R^p g_{i', *}` of the
 > transition map `φ_{i'i} : f_{i'i}^{-1}ℱ_i ⟶ ℱ_{i'}` of the system of sheaves.
 

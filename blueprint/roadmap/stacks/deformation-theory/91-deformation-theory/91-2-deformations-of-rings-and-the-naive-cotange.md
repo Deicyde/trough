@@ -178,7 +178,7 @@ public theorem squareZeroAlgebraExtensionClassesEquivExtOne_split_eq_zero
 
 [Tag 0GPU](https://stacks.math.columbia.edu/tag/0GPU) in the Stacks Project.
 
-**`Algebra.Generators.exists_lift_and_cotangentMap_to_squareZeroKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/CotangentLift.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/CotangentLift.lean#L102). The attribute's comment: “lift_and_factor”.
+**`Algebra.Generators.exists_lift_and_cotangentMap_to_squareZeroKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingThickening/CotangentLift.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingThickening/CotangentLift.lean#L102). The attribute's comment: “lift\_and\_factor”.
 
 > A polynomial presentation of an algebra lifts through every square-zero extension, and the
 > restriction of the lift to the relation ideal factors `B`-linearly through `J / J²`.
@@ -193,7 +193,7 @@ theorem exists_lift_and_cotangentMap_to_squareZeroKernel
         (l (Algebra.Extension.Cotangent.mk x) : E.Ring) = f.toRingHom x
 ```
 
-**`Stacks.Deformation.extensionClass_eq_conormalCokernelClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SquareZero/PresentationExtensionClass.lean, line 673](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SquareZero/PresentationExtensionClass.lean#L673). The attribute's comment: “extension_class”.
+**`Stacks.Deformation.extensionClass_eq_conormalCokernelClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SquareZero/PresentationExtensionClass.lean, line 673](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SquareZero/PresentationExtensionClass.lean#L673). The attribute's comment: “extension\_class”.
 
 > **Stacks 0GPU, the extension class.**  Let `α : P → B` be a presentation of the
 > `A`-algebra `B` with relation ideal `J`, let `0 → N → B' → B → 0` be a square-zero extension
@@ -219,7 +219,7 @@ public theorem extensionClass_eq_conormalCokernelClass
       Submodule.Quotient.mk δ
 ```
 
-**`NaiveCotangent.extOne_naiveCotangentComplex_addEquiv_cokernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/ExtCokernel.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NaiveCotangent/ExtCokernel.lean#L120). The attribute's comment: “ext_cokernel”.
+**`NaiveCotangent.extOne_naiveCotangentComplex_addEquiv_cokernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NaiveCotangent/ExtCokernel.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NaiveCotangent/ExtCokernel.lean#L120). The attribute's comment: “ext\_cokernel”.
 
 > The comparison which computes the first Ext group of the naive cotangent complex of a
 > polynomial presentation. On the right, the cokernel is represented as the quotient by the
@@ -255,7 +255,7 @@ public noncomputable def extOne_naiveCotangentComplex_addEquiv_cokernel
 
 Declarations registered for the tag:
 
-- [`Algebra.Extension.cotangentComplex`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.Extension.cotangentComplex#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/NaiveCotangent/ExtCokernel.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NaiveCotangent/ExtCokernel.lean#L54) (StacksFrontier): “presentation_complex”. References: EGA IV (17.15.9); SGA 1 II (5.9), “more general”; SGA 6 0 (4.4), “special case”; SGA 6 VIII (2.1), “affine case”.
+- [`Algebra.Extension.cotangentComplex`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.Extension.cotangentComplex#doc) registered with `add_to_stacks` in [StacksFrontier/RingTheory/NaiveCotangent/ExtCokernel.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NaiveCotangent/ExtCokernel.lean#L54) (StacksFrontier): “presentation\_complex”. References: EGA IV (17.15.9); SGA 1 II (5.9), “more general”; SGA 6 0 (4.4), “special case”; SGA 6 VIII (2.1), “affine case”.
 
 ## Tag 0GPV, a lemma
 
@@ -288,7 +288,7 @@ public theorem exists_compatible_algebraMap_iff :
 
 [Tag 0GPW](https://stacks.math.columbia.edu/tag/0GPW) in the Stacks Project.
 
-**`Stacks.Deformation.pullbackExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SquareZero/ExtensionPushoutPullback.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SquareZero/ExtensionPushoutPullback.lean#L305). The attribute's comment: “the pullback extension B'₂ = C' ×_C B; all five rings and modules in one universe”.
+**`Stacks.Deformation.pullbackExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SquareZero/ExtensionPushoutPullback.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SquareZero/ExtensionPushoutPullback.lean#L305). The attribute's comment: “the pullback extension B'₂ = C' ×\_C B; all five rings and modules in one universe”.
 
 > **The pullback extension `B'₂ = C' ×_C B`.**  Pulling the square-zero extension
 > `0 → N → C' → C → 0` of `A`-algebras back along `B → C` gives a square-zero extension
@@ -326,7 +326,7 @@ public def pushoutExtension : (algebraExtensionProblem A B N).CompatibleExtensio
 public def pushoutMap : X.B' →ₐ[A] (pushoutExtension c X).B'
 ```
 
-**`Stacks.Deformation.extClass_pushoutExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SquareZero/ExtensionPushoutPullback.lean, line 739](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SquareZero/ExtensionPushoutPullback.lean#L739). The attribute's comment: “B'₁ corresponds to the image of ξ under Ext¹_B(NL_{B/A}, M) → Ext¹_B(NL_{B/A}, N)”.
+**`Stacks.Deformation.extClass_pushoutExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SquareZero/ExtensionPushoutPullback.lean, line 739](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SquareZero/ExtensionPushoutPullback.lean#L739). The attribute's comment: “B'₁ corresponds to the image of ξ under Ext¹\_B(NL\_\{B/A}, M) → Ext¹\_B(NL\_\{B/A}, N)”.
 
 > **Stacks 0GPW.**  The pushout extension `B'₁` corresponds, under the classification of
 > **Stacks 0GPT**, to the image of the class of `B'` by the map
@@ -342,7 +342,7 @@ public theorem extClass_pushoutExtension (c : M →ₗ[B] N)
     extClass (pushoutExtension c X) = naiveCotangentExtOneMap A B c (extClass X)
 ```
 
-**`Stacks.Deformation.extClass_pullbackExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SquareZero/ExtensionPushoutPullback.lean, line 755](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SquareZero/ExtensionPushoutPullback.lean#L755). The attribute's comment: “B'₂ corresponds to the image of ζ under Ext¹_C(NL_{C/A}, N) → Ext¹_B(NL_{B/A}, N)”.
+**`Stacks.Deformation.extClass_pullbackExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SquareZero/ExtensionPushoutPullback.lean, line 755](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SquareZero/ExtensionPushoutPullback.lean#L755). The attribute's comment: “B'₂ corresponds to the image of ζ under Ext¹\_C(NL\_\{C/A}, N) → Ext¹\_B(NL\_\{B/A}, N)”.
 
 > **Stacks 0GPW.**  The pullback extension `B'₂` corresponds, under the classification of
 > **Stacks 0GPT**, to the image of the class of `C'` by the map
@@ -436,7 +436,7 @@ public lemma solutionsEquivFibre_apply (P : S.CompatibleExtension.{max u₃ u₄
 
 [Tag 0GPY](https://stacks.math.columbia.edu/tag/0GPY) in the Stacks Project.
 
-**`Stacks.Deformation.naiveCotangentExtOneDerivedBaseChangeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SquareZero/ExtBaseChange.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SquareZero/ExtBaseChange.lean#L156). The attribute's comment: “Ext¹_A(NL_{A/A'}, N) = Ext¹_B(NL_{A/A'} ⊗^L_A B, N), via Tag 0GMT”.
+**`Stacks.Deformation.naiveCotangentExtOneDerivedBaseChangeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SquareZero/ExtBaseChange.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SquareZero/ExtBaseChange.lean#L156). The attribute's comment: “Ext¹\_A(NL\_\{A/A'}, N) = Ext¹\_B(NL\_\{A/A'} ⊗^L\_A B, N), via Tag 0GMT”.
 
 > **Stacks 0GPY**, first identification.  For `A' → A → B` and a `B`-module `M`, extension
 > classes of the naive cotangent complex of `A` over `A'` with coefficients in `M` regarded as an
@@ -457,7 +457,7 @@ public noncomputable def naiveCotangentExtOneDerivedBaseChangeEquiv
         ((DerivedCategory.singleFunctor (ModuleCat.{max u₁ u₂ u₃ v} B) 0).obj M) 1
 ```
 
-**`Stacks.Deformation.naiveCotangentDerivedBaseChangeExtOneEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SquareZero/ExtBaseChange.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SquareZero/ExtBaseChange.lean#L175). The attribute's comment: “Ext¹_B(NL_{A/A'} ⊗^L_A B, N) = Ext¹_B(NL_{A/A'} ⊗_A B, N), via Tag 0FUY”.
+**`Stacks.Deformation.naiveCotangentDerivedBaseChangeExtOneEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/SquareZero/ExtBaseChange.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/SquareZero/ExtBaseChange.lean#L175). The attribute's comment: “Ext¹\_B(NL\_\{A/A'} ⊗^L\_A B, N) = Ext¹\_B(NL\_\{A/A'} ⊗\_A B, N), via Tag 0FUY”.
 
 > **Stacks 0GPY**, second identification.  Extension classes over `B` out of the derived base
 > change of the naive cotangent complex are the same as extension classes out of its termwise base

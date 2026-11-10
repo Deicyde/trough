@@ -359,7 +359,7 @@ Declarations registered for the tag:
 
 [Tag 0CPJ](https://stacks.math.columbia.edu/tag/0CPJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isomSpaceMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSequence.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSequence.lean#L177). The attribute's comment: “the map Isom_𝒳(x, x) → Isom_𝒴(y, y)”.
+**`AlgebraicGeometry.Stack.isomSpaceMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSequence.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSequence.lean#L177). The attribute's comment: “the map Isom\_𝒳(x, x) → Isom\_𝒴(y, y)”.
 
 > The map `Isom_𝒳(x, y) ⟶ Isom_𝒴(f(x), f(y))` of sheaves on the big fppf site of `U` induced
 > by a 1-morphism `f : 𝒳 ⟶ 𝒴`: it applies `f` to a local isomorphism and compares the chosen
@@ -372,7 +372,7 @@ def isomSpaceMap (x y : 𝒳.val.p.Fiber U) :
         (imageFiberObj B S hS 𝒳 𝒴 F U y)
 ```
 
-**`AlgebraicGeometry.Stack.relativeIsomSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSequence.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSequence.lean#L201). The attribute's comment: “the sheaf Isom_{𝒳/𝒴}(x, x)”.
+**`AlgebraicGeometry.Stack.relativeIsomSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSequence.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSequence.lean#L201). The attribute's comment: “the sheaf Isom\_\{𝒳/𝒴}(x, x)”.
 
 > The relative automorphism sheaf `Isom_{𝒳/𝒴}(x, x)`, as a subsheaf of `Isom_𝒳(x, x)`: its
 > sections over `V` are the local automorphisms `α` of `x` with `f(α) = id`.
@@ -382,7 +382,7 @@ def relativeIsomSubfunctor (x : 𝒳.val.p.Fiber U) :
     Subfunctor (isomSpace B S hS 𝒳 U x x)
 ```
 
-**`AlgebraicGeometry.Stack.relativeIsomSpaceGrpObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSequence.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSequence.lean#L222). The attribute's comment: “the group structure on Isom_{𝒳/𝒴}(x, x)”.
+**`AlgebraicGeometry.Stack.relativeIsomSpaceGrpObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSequence.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSequence.lean#L222). The attribute's comment: “the group structure on Isom\_\{𝒳/𝒴}(x, x)”.
 
 > The group structure on `Isom_{𝒳/𝒴}(x, x)`, restricted from that of `Isom_𝒳(x, x)`.
 
@@ -431,7 +431,7 @@ theorem relativeIsomSpaceι_app_injective (x : 𝒳.val.p.Fiber U)
       (relativeIsomSubfunctor B S hS 𝒳 𝒴 F U x).ι.app V b) : a = b
 ```
 
-**`AlgebraicGeometry.Stack.relativeIsom_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSequence.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSequence.lean#L334). The attribute's comment: “exactness at Isom_𝒳(x, x)”.
+**`AlgebraicGeometry.Stack.relativeIsom_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSequence.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSequence.lean#L334). The attribute's comment: “exactness at Isom\_𝒳(x, x)”.
 
 > The sequence `0 → Isom_{𝒳/𝒴}(x, x) → Isom_𝒳(x, x) → Isom_𝒴(y, y)` is exact at the middle
 > term: a local automorphism of `x` has identity image in `Isom_𝒴(y, y)` exactly when it comes from
@@ -450,7 +450,7 @@ theorem relativeIsom_exact (x : 𝒳.val.p.Fiber U)
 
 [Tag 06PP](https://stacks.math.columbia.edu/tag/06PP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.relativeAutomorphismSpaceOverSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L181). The attribute's comment: “part (1): the relative sheaf of automorphisms, Z ×_{x, X} I_{X/Y}”.
+**`AlgebraicGeometry.Stack.relativeAutomorphismSpaceOverSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L181). The attribute's comment: “part (1): the relative sheaf of automorphisms, Z ×\_\{x, X} I\_\{X/Y}”.
 
 > **Stacks 06PP, part (1): the relative sheaf of automorphisms of `x`.** For a 1-morphism
 > `f : 𝒳 ⟶ 𝒴` of algebraic stacks and an algebraic-space-valued point `x : Z ⟶ 𝒳`, the 2-fibre
@@ -473,7 +473,7 @@ noncomputable def relativeAutomorphismSpaceOverSpace (f : 𝒳 ⟶ 𝒴)
     CatFiberedInGroupoids (BigFppfOver B S hS)
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_relativeAutomorphismSpaceOverSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L208). The attribute's comment: “part (1): Isom_{X/Y}(x, x) is an algebraic space”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_relativeAutomorphismSpaceOverSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L208). The attribute's comment: “part (1): Isom\_\{X/Y}(x, x) is an algebraic space”.
 
 > **Stacks 06PP, part (1): `Isom_{𝒳/𝒴}(x, x)` is an algebraic space.** The relative sheaf of
 > automorphisms of an algebraic-space-valued point `x : Z ⟶ 𝒳` of an algebraic stack is
@@ -491,7 +491,7 @@ theorem isRepresentableByAlgebraicSpace_relativeAutomorphismSpaceOverSpace (f : 
       (relativeAutomorphismSpaceOverSpace B S hS Z hZ f x)
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_relativeAutomorphismSpaceOverSpaceProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L228). The attribute's comment: “part (1): Isom_{X/Y}(x, x) is an algebraic space over Z”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_relativeAutomorphismSpaceOverSpaceProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L228). The attribute's comment: “part (1): Isom\_\{X/Y}(x, x) is an algebraic space over Z”.
 
 > **Stacks 06PP, part (1): `Isom_{𝒳/𝒴}(x, x)` is an algebraic space over `Z`.** The projection
 > of the relative sheaf of automorphisms of `x` to the stack of `Z` is representable by algebraic
@@ -509,7 +509,7 @@ theorem isRepresentableByAlgebraicSpaces_relativeAutomorphismSpaceOverSpaceProj 
       (relativeAutomorphismSpaceOverSpaceProj B S hS Z hZ f x)
 ```
 
-**`AlgebraicGeometry.Stack.automorphismSpaceOverSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L251). The attribute's comment: “the sheaf of automorphisms of x, Z ×_{x, X} I_X”.
+**`AlgebraicGeometry.Stack.automorphismSpaceOverSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L251). The attribute's comment: “the sheaf of automorphisms of x, Z ×\_\{x, X} I\_X”.
 
 > **Stacks 06PP: the sheaf of automorphisms of `x`.** For an algebraic-space-valued point
 > `x : Z ⟶ 𝒳` of an algebraic stack, the 2-fibre product
@@ -528,7 +528,7 @@ noncomputable def automorphismSpaceOverSpace
     CatFiberedInGroupoids (BigFppfOver B S hS)
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_automorphismSpaceOverSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L276). The attribute's comment: “Isom_X(x, x) is an algebraic space”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_automorphismSpaceOverSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L276). The attribute's comment: “Isom\_X(x, x) is an algebraic space”.
 
 > **Stacks 06PP: `Isom_𝒳(x, x)` is an algebraic space.** The sheaf of automorphisms of an
 > algebraic-space-valued point of an algebraic stack is represented by an algebraic space over
@@ -540,7 +540,7 @@ theorem isRepresentableByAlgebraicSpace_automorphismSpaceOverSpace
     IsRepresentableByAlgebraicSpace B S hS (automorphismSpaceOverSpace B S hS Z hZ x)
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_automorphismSpaceOverSpaceProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L289). The attribute's comment: “Isom_X(x, x) is an algebraic space over Z”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_automorphismSpaceOverSpaceProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L289). The attribute's comment: “Isom\_X(x, x) is an algebraic space over Z”.
 
 > **Stacks 06PP: `Isom_𝒳(x, x)` is an algebraic space over `Z`.** The projection of the sheaf
 > of automorphisms of `x` to the stack of `Z` is representable by algebraic spaces — Stacks 0302 for
@@ -582,7 +582,7 @@ noncomputable def isomorphismSpaceOverSpace
     CatFiberedInGroupoids (BigFppfOver B S hS)
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_isomorphismSpaceOverSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L356). The attribute's comment: “Isom_X(x₁, x₂) is an algebraic space”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_isomorphismSpaceOverSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L356). The attribute's comment: “Isom\_X(x₁, x₂) is an algebraic space”.
 
 > **Stacks 06PP: `Isom_𝒳(x₁, x₂)` is an algebraic space.** The sheaf of isomorphisms from one
 > algebraic-space-valued point of an algebraic stack to another is represented by an algebraic
@@ -598,7 +598,7 @@ theorem isRepresentableByAlgebraicSpace_isomorphismSpaceOverSpace
     IsRepresentableByAlgebraicSpace B S hS (isomorphismSpaceOverSpace B S hS Z hZ x₁ x₂)
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_isomorphismSpaceOverSpaceProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L367). The attribute's comment: “Isom_X(x₁, x₂) is an algebraic space over Z”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_isomorphismSpaceOverSpaceProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L367). The attribute's comment: “Isom\_X(x₁, x₂) is an algebraic space over Z”.
 
 > **Stacks 06PP: `Isom_𝒳(x₁, x₂)` is an algebraic space over `Z`.** Its projection to the stack
 > of `Z` is representable by algebraic spaces — Stacks 0302 for the base change of the diagonal of
@@ -639,7 +639,7 @@ noncomputable def relativeIsomorphismSpaceOverSpace (f : 𝒳 ⟶ 𝒴)
     CatFiberedInGroupoids (BigFppfOver B S hS)
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_relativeIsomorphismSpaceOverSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L459). The attribute's comment: “part (2): Isom^α_{X/Y}(x₁, x₂) is an algebraic space”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_relativeIsomorphismSpaceOverSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L459). The attribute's comment: “part (2): Isom^α\_\{X/Y}(x₁, x₂) is an algebraic space”.
 
 > **Stacks 06PP, part (2): `Isom^α_{𝒳/𝒴}(x₁, x₂)` is an algebraic space.** The relative sheaf
 > of isomorphisms from `x₁` to `x₂` lifting `α` is represented by an algebraic space over `S`.
@@ -657,7 +657,7 @@ theorem isRepresentableByAlgebraicSpace_relativeIsomorphismSpaceOverSpace (f : �
       (relativeIsomorphismSpaceOverSpace B S hS Z hZ f x₁ x₂ α)
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_relativeIsomorphismSpaceOverSpaceProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L471). The attribute's comment: “part (2): Isom^α_{X/Y}(x₁, x₂) is an algebraic space over Z”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_relativeIsomorphismSpaceOverSpaceProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AutomorphismSpaceOverAlgebraicSpace.lean#L471). The attribute's comment: “part (2): Isom^α\_\{X/Y}(x₁, x₂) is an algebraic space over Z”.
 
 > **Stacks 06PP, part (2): `Isom^α_{𝒳/𝒴}(x₁, x₂)` is an algebraic space over `Z`.** Its
 > projection to the stack of `Z` is representable by algebraic spaces — Stacks 0302 for the base
@@ -784,7 +784,7 @@ theorem nonempty_equivalenceOver_relativeIsomorphismSpaceOverSpaceProj (f : 𝒳
           (relativeIsomorphismTwistedPoint B S hS Z hZ f x₁ x₂ α).w f.hom.hom.w)))
 ```
 
-**`AlgebraicGeometry.Stack.isAlgebraicSpace_isomorphismTotalPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomTotalPresheafAlgebraic.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/IsomTotalPresheafAlgebraic.lean#L101). The attribute's comment: “Isom_X(x₁, x₂) as a presheaf over Z on the big fppf site is an algebraic space”.
+**`AlgebraicGeometry.Stack.isAlgebraicSpace_isomorphismTotalPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomTotalPresheafAlgebraic.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/IsomTotalPresheafAlgebraic.lean#L101). The attribute's comment: “Isom\_X(x₁, x₂) as a presheaf over Z on the big fppf site is an algebraic space”.
 
 > **Stacks 06PP: the sheaf `Isom_𝒳(x₁, x₂)` on the big fppf site is an algebraic space over
 > `Z`.** The presheaf whose sections over `W` are the pairs of a point `z` of `Z` over `W` and an
@@ -798,7 +798,7 @@ theorem isAlgebraicSpace_isomorphismTotalPresheaf
     IsAlgebraicSpace B S hS (isomorphismTotalPresheaf B S hS Z hZ x₁ x₂)
 ```
 
-**`AlgebraicGeometry.Stack.isAlgebraicSpace_relativeIsomorphismTotalPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomTotalPresheafAlgebraic.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/IsomTotalPresheafAlgebraic.lean#L137). The attribute's comment: “part (2): Isom^α_{X/Y}(x₁, x₂) as a presheaf over Z on the big fppf site is an algebraic space”.
+**`AlgebraicGeometry.Stack.isAlgebraicSpace_relativeIsomorphismTotalPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/IsomTotalPresheafAlgebraic.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/IsomTotalPresheafAlgebraic.lean#L137). The attribute's comment: “part (2): Isom^α\_\{X/Y}(x₁, x₂) as a presheaf over Z on the big fppf site is an algebraic space”.
 
 > **Stacks 06PP, part (2): the sheaf `Isom^α_{𝒳/𝒴}(x₁, x₂)` on the big fppf site is an
 > algebraic space over `Z`.** The presheaf whose sections over `W` are the pairs of a point `z` of
@@ -812,7 +812,7 @@ theorem isAlgebraicSpace_relativeIsomorphismTotalPresheaf (f : 𝒳 ⟶ 𝒴)
     IsAlgebraicSpace B S hS (relativeIsomorphismTotalPresheaf B S hS Z hZ f x₁ x₂ α)
 ```
 
-**`AlgebraicGeometry.Stack.relativeAutomorphismGroupAlgebraicSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismGroupAlgebraicSpace.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismGroupAlgebraicSpace.lean#L85). The attribute's comment: “part (1): Isom_{X/Y}(x, x) is a group algebraic space over Z, group law and algebraicity”.
+**`AlgebraicGeometry.Stack.relativeAutomorphismGroupAlgebraicSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismGroupAlgebraicSpace.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismGroupAlgebraicSpace.lean#L85). The attribute's comment: “part (1): Isom\_\{X/Y}(x, x) is a group algebraic space over Z, group law and algebraicity”.
 
 > `Isom_{𝒳/𝒴}(x, x)` as a group algebraic space over `Z`: the presheaf on the big fppf site
 > whose sections over `W` are the pairs of a point `z` of `Z` over `W` and an automorphism of `x(z)`
@@ -825,7 +825,7 @@ noncomputable def relativeAutomorphismGroupAlgebraicSpace (f : 𝒳 ⟶ 𝒴)
     Space.GroupAlgebraicSpace B S hS Z hZ
 ```
 
-**`AlgebraicGeometry.Stack.relativeAutomorphismGroupPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismGroupOverSpace.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismGroupOverSpace.lean#L247). The attribute's comment: “part (1): the group law on Isom_{X/Y}(x, x), as a presheaf of groups over Z”.
+**`AlgebraicGeometry.Stack.relativeAutomorphismGroupPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismGroupOverSpace.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismGroupOverSpace.lean#L247). The attribute's comment: “part (1): the group law on Isom\_\{X/Y}(x, x), as a presheaf of groups over Z”.
 
 > The presheaf of groups on the category of elements of `Z` whose sections at a point `a` of
 > `Z` are the vertical automorphisms of `x(a)` killed by `f`, with composition as the group law and
@@ -836,7 +836,7 @@ noncomputable def relativeAutomorphismGroupPresheaf :
     ((algebraicSpaceStack.{u, w} B S hS Z hZ).val.val.obj)ᵒᵖ ⥤ GrpCat.{u}
 ```
 
-**`AlgebraicGeometry.Stack.relativeAutomorphismPresheafGrpObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismGroupOverSpace.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismGroupOverSpace.lean#L294). The attribute's comment: “part (1): the group-object structure on Isom_{X/Y}(x, x) over Z”.
+**`AlgebraicGeometry.Stack.relativeAutomorphismPresheafGrpObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismGroupOverSpace.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismGroupOverSpace.lean#L294). The attribute's comment: “part (1): the group-object structure on Isom\_\{X/Y}(x, x) over Z”.
 
 > The presheaf of relative automorphisms of `x`, read over the category of elements of `Z`, is a
 > *group object* of the cartesian monoidal category of presheaves of sets on that category: its
@@ -892,7 +892,7 @@ theorem relativeAutomorphismPresheafGrpObj_inv
       (self := relativeAutomorphismPresheafGrpObj B S hS Z hZ f x)).app a φ = φ⁻¹
 ```
 
-**`AlgebraicGeometry.Stack.RelativeAutomorphismSpace.nonempty_isEquivalenceOver_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSpaceGroupLaw.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSpaceGroupLaw.lean#L380). The attribute's comment: “part (1): the group structure on Isom_{X/Y}(x, x) over Z”.
+**`AlgebraicGeometry.Stack.RelativeAutomorphismSpace.nonempty_isEquivalenceOver_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSpaceGroupLaw.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSpaceGroupLaw.lean#L380). The attribute's comment: “part (1): the group structure on Isom\_\{X/Y}(x, x) over Z”.
 
 > **The group structure on `Isom_{𝒳/𝒴}(x, x)` over `Z`.** The comparison 1-morphism is an
 > equivalence over `Z` from the category of elements of the presheaf of groups of relative
@@ -907,7 +907,7 @@ theorem nonempty_isEquivalenceOver_comparison :
       (comparison B S hS Z hZ f x))
 ```
 
-**`AlgebraicGeometry.Stack.RelativeAutomorphismSpace.nonempty_equivalenceOver_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSpaceGroupLaw.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSpaceGroupLaw.lean#L395). The attribute's comment: “part (1): Isom_{X/Y}(x, x) is the presheaf of groups of relative automorphisms”.
+**`AlgebraicGeometry.Stack.RelativeAutomorphismSpace.nonempty_equivalenceOver_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSpaceGroupLaw.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismSpaceGroupLaw.lean#L395). The attribute's comment: “part (1): Isom\_\{X/Y}(x, x) is the presheaf of groups of relative automorphisms”.
 
 > **`Isom_{𝒳/𝒴}(x, x)` is the presheaf of relative automorphisms, as a category over `Z`**:
 > there is a `StacksRepresentableCFG.EquivalenceOver` from the projection of the category of
@@ -965,7 +965,7 @@ theorem inertiaObj_inv {a : (algebraicSpaceStack.{u, w} B S hS Z hZ).val.val.obj
         (inertiaObj B S hS Z hZ f x φ)
 ```
 
-**`AlgebraicGeometry.Stack.isAlgebraicSpace_relativeAutomorphismTotalPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismTotalPresheaf.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismTotalPresheaf.lean#L112). The attribute's comment: “part (1): Isom_{X/Y}(x, x) as a presheaf over Z on the big fppf site is an algebraic space”.
+**`AlgebraicGeometry.Stack.isAlgebraicSpace_relativeAutomorphismTotalPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismTotalPresheaf.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeAutomorphismTotalPresheaf.lean#L112). The attribute's comment: “part (1): Isom\_\{X/Y}(x, x) as a presheaf over Z on the big fppf site is an algebraic space”.
 
 > The presheaf `AlgebraicGeometry.Stack.relativeAutomorphismTotalPresheaf`, whose sections over
 > `W` are the pairs of a point `z` of `Z` over `W` and an automorphism of `x(z)` killed by `f`, is
@@ -1010,7 +1010,7 @@ theorem exists_relativeIsomorphismDiagram
           (α.hom.hom.toNatTrans.app A))
 ```
 
-**`AlgebraicGeometry.Stack.relativeIsomorphismIteratedSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeIsomSpaceIteratedForm.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeIsomSpaceIteratedForm.lean#L162). The attribute's comment: “part (2): Isom^α_{X/Y}(x₁, x₂) as the iterated fibre product of the source”.
+**`AlgebraicGeometry.Stack.relativeIsomorphismIteratedSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeIsomSpaceIteratedForm.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeIsomSpaceIteratedForm.lean#L162). The attribute's comment: “part (2): Isom^α\_\{X/Y}(x₁, x₂) as the iterated fibre product of the source”.
 
 > **Stacks 06PP, part (2): the relative sheaf of isomorphisms from `x₁` to `x₂` lifting `α`,
 > in the iterated form the source writes it in.** The 2-fibre product
@@ -1029,7 +1029,7 @@ noncomputable def relativeIsomorphismIteratedSpace (f : 𝒳 ⟶ 𝒴)
     CatFiberedInGroupoids (BigFppfOver B S hS)
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_relativeIsomorphismIteratedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeIsomSpaceIteratedForm.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeIsomSpaceIteratedForm.lean#L195). The attribute's comment: “part (2): the iterated form of Isom^α_{X/Y}(x₁, x₂) is an algebraic space”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpace_relativeIsomorphismIteratedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeIsomSpaceIteratedForm.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeIsomSpaceIteratedForm.lean#L195). The attribute's comment: “part (2): the iterated form of Isom^α\_\{X/Y}(x₁, x₂) is an algebraic space”.
 
 > **Stacks 06PP, part (2): the iterated form of `Isom^α_{𝒳/𝒴}(x₁, x₂)` is an algebraic
 > space.** It is the base change of the twisted diagonal `Δ^α` along `H`; `Δ^α` is representable by
@@ -1043,7 +1043,7 @@ theorem isRepresentableByAlgebraicSpace_relativeIsomorphismIteratedSpace (f : �
       (relativeIsomorphismIteratedSpace B S hS Z hZ f x₁ x₂ α)
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_relativeIsomorphismIteratedSpaceProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeIsomSpaceIteratedForm.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeIsomSpaceIteratedForm.lean#L215). The attribute's comment: “part (2): the iterated form of Isom^α_{X/Y}(x₁, x₂) is an algebraic space over Z”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_relativeIsomorphismIteratedSpaceProj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeIsomSpaceIteratedForm.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeIsomSpaceIteratedForm.lean#L215). The attribute's comment: “part (2): the iterated form of Isom^α\_\{X/Y}(x₁, x₂) is an algebraic space over Z”.
 
 > **Stacks 06PP, part (2): the iterated form of `Isom^α_{𝒳/𝒴}(x₁, x₂)` is an algebraic space
 > over `Z`.** Its structure 1-morphism to the stack of `Z` has an algebraic space as source and the
@@ -1227,7 +1227,7 @@ theorem relativeAutSpaceSliceι_injective (Q : Over Z)
       h ≫ relativeAutSpaceSliceι B S hS Z hZ x f) : g = h
 ```
 
-**`AlgebraicGeometry.Stack.relativeAutSpaceSlice_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeIsomGroupOverAlgebraicSpace.lean, line 973](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeIsomGroupOverAlgebraicSpace.lean#L973). The attribute's comment: “part (2): exactness at Isom_𝒳(x, x)”.
+**`AlgebraicGeometry.Stack.relativeAutSpaceSlice_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeIsomGroupOverAlgebraicSpace.lean, line 973](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeIsomGroupOverAlgebraicSpace.lean#L973). The attribute's comment: “part (2): exactness at Isom\_𝒳(x, x)”.
 
 > The sequence `0 ⟶ Isom_{𝒳/𝒴}(x, x) ⟶ Isom_𝒳(x, x) ⟶ Isom_𝒴(f x, f x)` of groups over `Z` is
 > exact at the middle term: a point of `Isom_𝒳(x, x)` is killed by the second map exactly when it

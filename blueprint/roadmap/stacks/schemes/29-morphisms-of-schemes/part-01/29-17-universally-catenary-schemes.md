@@ -40,7 +40,7 @@ theorem isUniversallyCatenary_of_locallyOfFiniteType
       (AlgebraicGeometry.LocallyOfFiniteType.isLocallyNoetherian f)
 ```
 
-**`AlgebraicGeometry.Scheme.isUniversallyCatenary_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RecoveryCatenary/LocalCriteria.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RecoveryCatenary/LocalCriteria.lean#L44). The attribute's comment: “local_criteria”.
+**`AlgebraicGeometry.Scheme.isUniversallyCatenary_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RecoveryCatenary/LocalCriteria.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RecoveryCatenary/LocalCriteria.lean#L44). The attribute's comment: “local\_criteria”.
 
 > For a locally Noetherian scheme, universal catenarity is equivalent to holding on an open
 > covering, to universal catenarity of the ring of sections over every affine open, and to that

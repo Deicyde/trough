@@ -77,7 +77,7 @@ public theorem existsUnique_functor_of_resolutionFunctor (j : ResolutionFunctor 
 
 [Tag 013X](https://stacks.math.columbia.edu/tag/013X) in the Stacks Project.
 
-**`HomotopyCategory.Plus.nonempty_resolutionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/ResolutionFunctor.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/ResolutionFunctor.lean#L306). The attribute's comment: “T_013X, existence: a resolution functor exists when `C` has enough injectives”. References: SGA 4½ Etat 0 (3.2.3), “(4) existence”.
+**`HomotopyCategory.Plus.nonempty_resolutionFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/ResolutionFunctor.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/ResolutionFunctor.lean#L306). The attribute's comment: “T\_013X, existence: a resolution functor exists when `C` has enough injectives”. References: SGA 4½ Etat 0 (3.2.3), “(4) existence”.
 
 > Let `C` be an abelian category with enough injectives. Then a resolution functor for `C`
 > exists ([Stacks, Tag 013W]): every object `K` of `K⁺(C)` admits a bounded below complex of
@@ -89,7 +89,7 @@ public theorem nonempty_resolutionFunctor (C : Type*) [Category C] [Abelian C]
     Nonempty (HomotopyCategory.Plus.ResolutionFunctor C)
 ```
 
-**`HomotopyCategory.Plus.nonempty_isTerminal_rightResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/ResolutionFunctor.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/ResolutionFunctor.lean#L334). The attribute's comment: “T_013X, uniqueness up to unique isomorphism; no hypothesis on `C`”. References: SGA 4½ Etat 0 (3.2.3), “(4) uniqueness”.
+**`HomotopyCategory.Plus.nonempty_isTerminal_rightResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/DerivedCategory/ResolutionFunctor.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/DerivedCategory/ResolutionFunctor.lean#L334). The attribute's comment: “T\_013X, uniqueness up to unique isomorphism; no hypothesis on `C`”. References: SGA 4½ Etat 0 (3.2.3), “(4) uniqueness”.
 
 > Let `C` be an abelian category. A right resolution of an object `K` of `K⁺(C)` is unique up
 > to unique isomorphism: every right resolution `R` of `K` is a terminal object of the category

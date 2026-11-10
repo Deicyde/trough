@@ -421,7 +421,7 @@ def stratificationLimit : StratificationLimit A
 
 [Tag 0975](https://stacks.math.columbia.edu/tag/0975) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.stratificationColimit_isIndZariski_and_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationColimitIndZariski.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationColimitIndZariski.lean#L496). The attribute's comment: “ind_zariski_faithfully_flat”.
+**`AlgebraicGeometry.ProEtale.stratificationColimit_isIndZariski_and_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationColimitIndZariski.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationColimitIndZariski.lean#L496). The attribute's comment: “ind\_zariski\_faithfully\_flat”.
 
 > **Stacks 0975**, part (1): the canonical map `A → A_w` from a commutative ring to its
 > stratification colimit is ind-Zariski and faithfully flat.
@@ -432,7 +432,7 @@ theorem stratificationColimit_isIndZariski_and_faithfullyFlat :
       (stratificationColimitAlgebraMap (A := A)).FaithfullyFlat
 ```
 
-**`AlgebraicGeometry.ProEtale.stratificationLimit_closedScheme_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitBijection.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitBijection.lean#L38). The attribute's comment: “bijection_on_z”.
+**`AlgebraicGeometry.ProEtale.stratificationLimit_closedScheme_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitBijection.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitBijection.lean#L38). The attribute's comment: “bijection\_on\_z”.
 
 > The limiting closed subscheme `Z` of `X_w` maps bijectively onto `Spec A`.
 
@@ -442,7 +442,7 @@ theorem stratificationLimit_closedScheme_bijective (L : StratificationLimit A) :
       Spec.map (CommRingCat.ofHom (stratificationColimitAlgebraMap (A := A)))).base
 ```
 
-**`AlgebraicGeometry.ProEtale.bijective_stratificationLimitClosedScheme_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitBijection.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitBijection.lean#L132). The attribute's comment: “bijection_on_z”.
+**`AlgebraicGeometry.ProEtale.bijective_stratificationLimitClosedScheme_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitBijection.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitBijection.lean#L132). The attribute's comment: “bijection\_on\_z”.
 
 > The morphism `X_w → X` induces a bijection from the limiting closed subscheme `Z` onto
 > `X = Spec A`.
@@ -453,7 +453,7 @@ theorem bijective_stratificationLimitClosedScheme_toBase :
       Spec.map (CommRingCat.ofHom (stratificationColimitAlgebraMap (A := A)))).base
 ```
 
-**`AlgebraicGeometry.ProEtale.range_inclusion_eq_closedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean#L57). The attribute's comment: “closed_points”.
+**`AlgebraicGeometry.ProEtale.range_inclusion_eq_closedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean#L57). The attribute's comment: “closed\_points”.
 
 > The limiting closed subscheme `Z` of `X_w` has as its underlying set exactly the closed
 > points of `X_w`.
@@ -463,7 +463,7 @@ theorem range_inclusion_eq_closedPoints (L : StratificationLimit A) :
     Set.range L.inclusion.base = closedPoints (stratificationLimitScheme (A := A))
 ```
 
-**`AlgebraicGeometry.ProEtale.existsUnique_specializes_closedScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean#L75). The attribute's comment: “unique_closed_specialization”.
+**`AlgebraicGeometry.ProEtale.existsUnique_specializes_closedScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean#L75). The attribute's comment: “unique\_closed\_specialization”.
 
 > Every point of `X_w` specializes to exactly one point of its limiting closed subscheme
 > `Z`.
@@ -474,7 +474,7 @@ theorem existsUnique_specializes_closedScheme (L : StratificationLimit A)
     ∃! z : L.closedScheme, x ⤳ L.inclusion.base z
 ```
 
-**`AlgebraicGeometry.ProEtale.stratificationLimitScheme_wLocal`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean#L84). The attribute's comment: “w_locality”.
+**`AlgebraicGeometry.ProEtale.stratificationLimitScheme_wLocal`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean#L84). The attribute's comment: “w\_locality”.
 
 > The limiting scheme `X_w` of the finite vanishing stratifications of `Spec A` is w-local.
 
@@ -483,7 +483,7 @@ instance stratificationLimitScheme_wLocal :
     WLocalSpace (stratificationLimitScheme (A := A))
 ```
 
-**`AlgebraicGeometry.ProEtale.range_stratificationLimitInclusion_eq_closedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean#L102). The attribute's comment: “closed_points”.
+**`AlgebraicGeometry.ProEtale.range_stratificationLimitInclusion_eq_closedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean#L102). The attribute's comment: “closed\_points”.
 
 > **Stacks 0975**, part (3): the limiting closed subscheme `Z` of `X_w` is exactly the set of
 > closed points of `X_w`.
@@ -494,7 +494,7 @@ theorem range_stratificationLimitInclusion_eq_closedPoints :
       closedPoints (stratificationLimitScheme (A := A))
 ```
 
-**`AlgebraicGeometry.ProEtale.existsUnique_specializes_stratificationLimitClosedScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean#L110). The attribute's comment: “unique_closed_specialization”.
+**`AlgebraicGeometry.ProEtale.existsUnique_specializes_stratificationLimitClosedScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitClosedPoints.lean#L110). The attribute's comment: “unique\_closed\_specialization”.
 
 > **Stacks 0975**, part (5): every point of `X_w` specializes to exactly one point of the
 > limiting closed subscheme `Z`.
@@ -506,7 +506,7 @@ theorem existsUnique_specializes_stratificationLimitClosedScheme
       x ⤳ (stratificationLimitInclusion (A := A)).base z
 ```
 
-**`AlgebraicGeometry.ProEtale.stratificationLimit_closedScheme_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitReduced.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitReduced.lean#L343). The attribute's comment: “reduced_z”.
+**`AlgebraicGeometry.ProEtale.stratificationLimit_closedScheme_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitReduced.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitReduced.lean#L343). The attribute's comment: “reduced\_z”.
 
 > **Stacks 0975**, part (4): the limiting closed subscheme `Z` of `X_w` is a reduced scheme.
 
@@ -515,7 +515,7 @@ theorem stratificationLimit_closedScheme_isReduced (L : StratificationLimit A) :
     IsReduced L.closedScheme
 ```
 
-**`AlgebraicGeometry.ProEtale.stratificationLimitClosedScheme_isReduced`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitReduced.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitReduced.lean#L358). The attribute's comment: “reduced_z”.
+**`AlgebraicGeometry.ProEtale.stratificationLimitClosedScheme_isReduced`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitReduced.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/StratificationLimitReduced.lean#L358). The attribute's comment: “reduced\_z”.
 
 > **Stacks 0975**, part (4): the limiting closed subscheme `Z` of `X_w` is a reduced
 > scheme.
@@ -584,7 +584,7 @@ theorem existsUnique_wLocal_lift
 
 [Tag 0978](https://stacks.math.columbia.edu/tag/0978) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.isProfiniteStacks_primeSpectrum_of_fiberwise_incomparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreEtale/FiberwiseIncomparable/ProfiniteSpectra.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreEtale/FiberwiseIncomparable/ProfiniteSpectra.lean#L67). The attribute's comment: “fiberwise_incomparable”.
+**`AlgebraicGeometry.ProEtale.isProfiniteStacks_primeSpectrum_of_fiberwise_incomparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreEtale/FiberwiseIncomparable/ProfiniteSpectra.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreEtale/FiberwiseIncomparable/ProfiniteSpectra.lean#L67). The attribute's comment: “fiberwise\_incomparable”.
 
 > If the spectrum of `A` is profinite and distinct prime ideals of `B` lying over the same
 > prime ideal of `A` are incomparable, then the spectrum of `B` is profinite.
@@ -598,7 +598,7 @@ theorem isProfiniteStacks_primeSpectrum_of_fiberwise_incomparable
     IsProfiniteStacks (PrimeSpectrum B)
 ```
 
-**`AlgebraicGeometry.ProEtale.isProfiniteStacks_primeSpectrum_of_quasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreEtale/FiberwiseIncomparable/ProfiniteSpectra.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreEtale/FiberwiseIncomparable/ProfiniteSpectra.lean#L85). The attribute's comment: “quasi_finite”.
+**`AlgebraicGeometry.ProEtale.isProfiniteStacks_primeSpectrum_of_quasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreEtale/FiberwiseIncomparable/ProfiniteSpectra.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreEtale/FiberwiseIncomparable/ProfiniteSpectra.lean#L85). The attribute's comment: “quasi\_finite”.
 
 > A quasi-finite algebra over a ring with profinite prime spectrum has profinite prime
 > spectrum.
@@ -633,7 +633,7 @@ theorem isProfiniteStacks_primeSpectrum_of_etale
     IsProfiniteStacks (PrimeSpectrum B)
 ```
 
-**`AlgebraicGeometry.ProEtale.isProfiniteStacks_primeSpectrum_of_identifiesLocalRings'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WContractible/LocalRings.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WContractible/LocalRings.lean#L47). The attribute's comment: “identifies_local_rings”.
+**`AlgebraicGeometry.ProEtale.isProfiniteStacks_primeSpectrum_of_identifiesLocalRings'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WContractible/LocalRings.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WContractible/LocalRings.lean#L47). The attribute's comment: “identifies\_local\_rings”.
 
 > A ring map identifying local rings preserves profiniteness of prime spectra.
 >
@@ -650,7 +650,7 @@ theorem isProfiniteStacks_primeSpectrum_of_identifiesLocalRings'
     IsProfiniteStacks (PrimeSpectrum B)
 ```
 
-**`AlgebraicGeometry.ProEtale.primeSpectrum_isProfinite_of_isAlgebraic_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean#L85). The attribute's comment: “algebraic_residue_fields”.
+**`AlgebraicGeometry.ProEtale.primeSpectrum_isProfinite_of_isAlgebraic_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean#L85). The attribute's comment: “algebraic\_residue\_fields”.
 
 > A ring map inducing algebraic extensions on residue fields preserves profiniteness of
 > prime spectra.
@@ -667,7 +667,7 @@ theorem primeSpectrum_isProfinite_of_isAlgebraic_residueField
       TotallyDisconnectedSpace (PrimeSpectrum B)
 ```
 
-**`AlgebraicGeometry.ProEtale.primeSpectrum_isProfinite_of_weaklyEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean#L107). The attribute's comment: “weakly_etale”.
+**`AlgebraicGeometry.ProEtale.primeSpectrum_isProfinite_of_weaklyEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean#L107). The attribute's comment: “weakly\_etale”.
 
 > A weakly étale algebra over a ring with profinite prime spectrum has profinite prime
 > spectrum.
@@ -682,7 +682,7 @@ theorem primeSpectrum_isProfinite_of_weaklyEtale
     TotallyDisconnectedSpace (PrimeSpectrum B)
 ```
 
-**`AlgebraicGeometry.ProEtale.primeSpectrum_isProfinite_of_identifiesLocalRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean#L176). The attribute's comment: “identifies_local_rings”.
+**`AlgebraicGeometry.ProEtale.primeSpectrum_isProfinite_of_identifiesLocalRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean#L176). The attribute's comment: “identifies\_local\_rings”.
 
 > An algebra identifying local rings over a ring with profinite prime spectrum has profinite
 > prime spectrum.
@@ -697,7 +697,7 @@ theorem primeSpectrum_isProfinite_of_identifiesLocalRings
       TotallyDisconnectedSpace (PrimeSpectrum B)
 ```
 
-**`AlgebraicGeometry.ProEtale.primeSpectrum_isProfinite_of_isLocalIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean#L189). The attribute's comment: “local_isomorphism”.
+**`AlgebraicGeometry.ProEtale.primeSpectrum_isProfinite_of_isLocalIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean#L189). The attribute's comment: “local\_isomorphism”.
 
 > A local isomorphism over a ring with profinite prime spectrum has target with profinite
 > prime spectrum.
@@ -711,7 +711,7 @@ theorem primeSpectrum_isProfinite_of_isLocalIso
       TotallyDisconnectedSpace (PrimeSpectrum B)
 ```
 
-**`AlgebraicGeometry.ProEtale.primeSpectrum_isProfinite_of_directLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean#L220). The attribute's comment: “filtered_colimit”.
+**`AlgebraicGeometry.ProEtale.primeSpectrum_isProfinite_of_directLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/ProfiniteSpectrum.lean#L220). The attribute's comment: “filtered\_colimit”.
 
 > A filtered colimit of rings with profinite prime spectra has profinite prime spectrum: here
 > the colimit is the direct limit of a directed system over a nonempty directed preorder, and the

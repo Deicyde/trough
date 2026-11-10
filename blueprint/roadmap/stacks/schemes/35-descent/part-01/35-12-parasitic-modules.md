@@ -39,7 +39,7 @@ public abbrev IsParasiticFor (S : Scheme.{u}) {C : Type (u + 1)} [Category.{u} C
 
 [Tag 0755](https://stacks.math.columbia.edu/tag/0755) in the Stacks Project.
 
-**`AlgebraicGeometry.bigZariskiCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L318). The attribute's comment: “flat_parasitic_vanishing”.
+**`AlgebraicGeometry.bigZariskiCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L318). The attribute's comment: “flat\_parasitic\_vanishing”.
 
 > A parasitic module on the big Zariski site has no cohomology at a flat object.
 
@@ -57,7 +57,7 @@ public theorem bigZariskiCohomology_isZero_of_isParasitic
     IsZero (((SheafOfModules.toSheaf _).obj F).H' p U)
 ```
 
-**`AlgebraicGeometry.bigEtaleCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L380). The attribute's comment: “flat_parasitic_vanishing”.
+**`AlgebraicGeometry.bigEtaleCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L380). The attribute's comment: “flat\_parasitic\_vanishing”.
 
 > A parasitic module on the big étale site has no cohomology at a flat object.
 
@@ -75,7 +75,7 @@ public theorem bigEtaleCohomology_isZero_of_isParasitic
     IsZero (((SheafOfModules.toSheaf _).obj F).H' p U)
 ```
 
-**`AlgebraicGeometry.bigSmoothCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L440). The attribute's comment: “flat_parasitic_vanishing”.
+**`AlgebraicGeometry.bigSmoothCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L440). The attribute's comment: “flat\_parasitic\_vanishing”.
 
 > A parasitic module on the big smooth site has no cohomology at a flat object.
 
@@ -94,7 +94,7 @@ public theorem bigSmoothCohomology_isZero_of_isParasitic
     IsZero (((SheafOfModules.toSheaf _).obj F).H' p U)
 ```
 
-**`AlgebraicGeometry.bigSyntomicCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 512](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L512). The attribute's comment: “flat_parasitic_vanishing”.
+**`AlgebraicGeometry.bigSyntomicCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 512](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L512). The attribute's comment: “flat\_parasitic\_vanishing”.
 
 > A parasitic module on the big syntomic site has no cohomology at a flat object.
 
@@ -112,7 +112,7 @@ public theorem bigSyntomicCohomology_isZero_of_isParasitic
     IsZero (((SheafOfModules.toSheaf _).obj F).H' p U)
 ```
 
-**`AlgebraicGeometry.bigFppfCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 596](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L596). The attribute's comment: “flat_parasitic_vanishing”.
+**`AlgebraicGeometry.bigFppfCohomology_isZero_of_isParasitic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean, line 596](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/FlatVanishing.lean#L596). The attribute's comment: “flat\_parasitic\_vanishing”.
 
 > A parasitic module on the big fppf site has no cohomology at a flat object.
 
@@ -130,7 +130,7 @@ public theorem bigFppfCohomology_isZero_of_isParasitic
     IsZero (((SheafOfModules.toSheaf _).obj F).H' p U)
 ```
 
-**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L469). The attribute's comment: “topology_parasitic_vanishing”.
+**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L469). The attribute's comment: “topology\_parasitic\_vanishing”.
 
 > Vanishing on objects open over the base in the big Zariski site.
 
@@ -151,7 +151,7 @@ public theorem cohomology_isZero_of_isParasiticFor_zariski
     IsZero (((SheafOfModules.toSheaf _).obj G).H' p U)
 ```
 
-**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L504). The attribute's comment: “topology_parasitic_vanishing”.
+**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L504). The attribute's comment: “topology\_parasitic\_vanishing”.
 
 > Vanishing on objects étale over the base in the big étale site.
 
@@ -172,7 +172,7 @@ public theorem cohomology_isZero_of_isParasiticFor_etale
     IsZero (((SheafOfModules.toSheaf _).obj G).H' p U)
 ```
 
-**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 538](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L538). The attribute's comment: “topology_parasitic_vanishing”.
+**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 538](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L538). The attribute's comment: “topology\_parasitic\_vanishing”.
 
 > Vanishing on objects smooth over the base in the big smooth site.
 
@@ -193,7 +193,7 @@ public theorem cohomology_isZero_of_isParasiticFor_smooth
     IsZero (((SheafOfModules.toSheaf _).obj G).H' p U)
 ```
 
-**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L572). The attribute's comment: “topology_parasitic_vanishing”.
+**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L572). The attribute's comment: “topology\_parasitic\_vanishing”.
 
 > Vanishing on objects syntomic over the base in the big syntomic site.
 
@@ -214,7 +214,7 @@ public theorem cohomology_isZero_of_isParasiticFor_syntomic
     IsZero (((SheafOfModules.toSheaf _).obj G).H' p U)
 ```
 
-**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 602](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L602). The attribute's comment: “topology_parasitic_vanishing”.
+**`AlgebraicGeometry.cohomology_isZero_of_isParasiticFor_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean, line 602](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Parasitic/TopologyVanishing.lean#L602). The attribute's comment: “topology\_parasitic\_vanishing”.
 
 > Vanishing on objects flat and locally of finite presentation over the
 > base in the big fppf site.

@@ -28,7 +28,7 @@ public abbrev IsOpenSubgroup {X : Scheme.{u}} [ConnectedSpace X]
 
 [Tag 03VF](https://stacks.math.columbia.edu/tag/03VF) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finiteEtaleEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L85). The attribute's comment: “(3) the functor sending a finite étale Y/X to F_x(Y) with its natural action is an equivalence onto the finite discrete continuous π₁(X, x)-sets; (1) and (2) are not covered here”.
+**`AlgebraicGeometry.exists_finiteEtaleEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L85). The attribute's comment: “(3) the functor sending a finite étale Y/X to F\_x(Y) with its natural action is an equivalence onto the finite discrete continuous π₁(X, x)-sets; (1) and (2) are not covered here”.
 
 > **Stacks Project, Tags 0BND (1) and 03VF (3).** Finite étale covers of a connected scheme `X`
 > are equivalent to finite sets with a continuous action of `π₁(X, x)`, by an equivalence whose
@@ -205,7 +205,7 @@ public theorem finiteEtaleNormalization_of_le_maximalEtaleExtension
 
 [Tag 03VH](https://stacks.math.columbia.edu/tag/03VH) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.IsMixedOfWeightLE.of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FrobeniusWeights.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FrobeniusWeights.lean#L225). The attribute's comment: “the weight bound: the eigenvalues on H^i_c are algebraic numbers of absolute value q ^ (w / 2) with w an integer at most i. The weight datum is the cited theorem of [WeilII]; it is carried here for the two outer terms of the excision sequence of an open-closed decomposition of X and propagated to H^i_c(X)”.
+**`Stacks.EtaleCohomology.IsMixedOfWeightLE.of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FrobeniusWeights.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/FrobeniusWeights.lean#L225). The attribute's comment: “the weight bound: the eigenvalues on H^i\_c are algebraic numbers of absolute value q ^ (w / 2) with w an integer at most i. The weight datum is the cited theorem of [WeilII]; it is carried here for the two outer terms of the excision sequence of an open-closed decomposition of X and propagated to H^i\_c(X)”.
 
 > Mixedness of weight at most `i` propagates along an exact sequence: in the excision
 > sequence `H^i_c(U) → H^i_c(X) → H^i_c(Z)` of an open-closed decomposition `X = U ⊔ Z`, if the
@@ -237,7 +237,7 @@ public theorem isPureOfWeight_of_duality {d : ℤ} {g : Module.End K W}
     IsPureOfWeight q ι i f
 ```
 
-**`Stacks.EtaleCohomology.LAdicSheaf.weightBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilIIWeightBound.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilIIWeightBound.lean#L63). The attribute's comment: “the whole tag: the eigenvalues of pi_X^* on H^i_c(X_kbar, F_rho) are algebraic numbers of absolute value q^(w/2) with w <= i an integer, and w = i for X smooth and proper (the source says projective), for rho satisfying the conclusions of Deligne's conjecture along every embedding of Q_ell in C”.
+**`Stacks.EtaleCohomology.LAdicSheaf.weightBound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilIIWeightBound.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilIIWeightBound.lean#L63). The attribute's comment: “the whole tag: the eigenvalues of pi\_X^* on H^i\_c(X\_kbar, F\_rho) are algebraic numbers of absolute value q^(w/2) with w <= i an integer, and w = i for X smooth and proper (the source says projective), for rho satisfying the conclusions of Deligne's conjecture along every embedding of Q\_ell in C”.
 
 > **Weil II** ([Tag 03VH](https://stacks.math.columbia.edu/tag/03VH); Deligne, *La conjecture
 > de Weil II*). Let `k` be a finite field with `p ^ q` elements, `k̄` an algebraic closure, `ℓ ≠ p` a

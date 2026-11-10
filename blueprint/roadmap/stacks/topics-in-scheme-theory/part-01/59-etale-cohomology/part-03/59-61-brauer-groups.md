@@ -52,7 +52,7 @@ Declarations registered for the tag:
 
 [Tag 03R6](https://stacks.math.columbia.edu/tag/03R6) in the Stacks Project.
 
-**`centralSimpleAlgebraClassEquivPGLH1`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroups/NonabelianGaloisCohomology/Classification.lean, line 647](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroups/NonabelianGaloisCohomology/Classification.lean#L647). References: SGA 4½ Arcata (3.1.2), “θ_n bijection”.
+**`centralSimpleAlgebraClassEquivPGLH1`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroups/NonabelianGaloisCohomology/Classification.lean, line 647](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BrauerGroups/NonabelianGaloisCohomology/Classification.lean#L647). References: SGA 4½ Arcata (3.1.2), “θ\_n bijection”.
 
 > Central simple algebras of degree `d` are classified by nonabelian
 > `PGL_d`-valued Galois cohomology.

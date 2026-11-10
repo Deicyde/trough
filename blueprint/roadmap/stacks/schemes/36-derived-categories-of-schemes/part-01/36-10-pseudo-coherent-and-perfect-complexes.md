@@ -238,7 +238,7 @@ public theorem isPseudoCoherentFrom_iff_coherent_homology (X : Scheme.{u}) [IsNo
         DerivedCategoryB.IsBoundedAbove E.1)
 ```
 
-**`AlgebraicGeometry.isPseudoCoherent_iff_boundedAbove_coherent_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/Noetherian/CoherentHomology.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/Noetherian/CoherentHomology.lean#L158). The attribute's comment: “identification with D⁻_Coh”. References: SGA 6 I (3.5), “b) last claim, Noeth X”.
+**`AlgebraicGeometry.isPseudoCoherent_iff_boundedAbove_coherent_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/Noetherian/CoherentHomology.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/Noetherian/CoherentHomology.lean#L158). The attribute's comment: “identification with D⁻\_Coh”. References: SGA 6 I (3.5), “b) last claim, Noeth X”.
 
 > **Stacks Project, Tag 08E8, the final statement.** On a Noetherian scheme an object of
 > `D_QCoh(𝒪_X)` is pseudo-coherent if and only if it is bounded above and all of its cohomology
@@ -493,7 +493,7 @@ public theorem affinePerfectDerivedSheafHomIso_natural_left (R : CommRingCat.{u}
           ((StacksDraft.DerivedHom.derivedHomAdjunction (R := R)).hom.map (f.op, 𝟙 L))
 ```
 
-**`AlgebraicGeometry.AffineExt.cohomologySheaf_isSheafification_extPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineExtCohomologySheaf.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineExtCohomologySheaf.lean#L71). The attribute's comment: “(4) the n-th cohomology sheaf of RHom(K~, L~) on Spec A is the sheaf of modules associated to the presheaf D(f) ↦ Ext^n_{A_f}(K ⊗ A_f, L ⊗ A_f), through the canonical A_f-linear comparison maps”.
+**`AlgebraicGeometry.AffineExt.cohomologySheaf_isSheafification_extPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineExtCohomologySheaf.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/AffineExtCohomologySheaf.lean#L71). The attribute's comment: “(4) the n-th cohomology sheaf of RHom(K~, L~) on Spec A is the sheaf of modules associated to the presheaf D(f) ↦ Ext^n\_\{A\_f}(K ⊗ A\_f, L ⊗ A\_f), through the canonical A\_f-linear comparison maps”.
 
 > Let `A` be a commutative ring, let `K`, `L` be objects of `D(A)` and let `n` be an integer.
 > The `n`-th cohomology sheaf of `R𝓗om(K̃, L̃)` on `Spec A` is the sheaf of `𝒪_{Spec A}`-modules
@@ -619,7 +619,7 @@ theorem isIso_affineDerivedTildeHomComparison_of_isPseudoCoherent (R : CommRingC
     IsIso (affineDerivedTildeHomComparison R K L)
 ```
 
-**`AlgebraicGeometry.derivedCategoryB_derivedSheafHom_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPerfectHomQuasicoherent.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPerfectHomQuasicoherent.lean#L125). The attribute's comment: “part (2) on an arbitrary scheme: the derived internal Hom out of a perfect object into an object of D_QCoh has quasi-coherent cohomology sheaves”.
+**`AlgebraicGeometry.derivedCategoryB_derivedSheafHom_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPerfectHomQuasicoherent.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPerfectHomQuasicoherent.lean#L125). The attribute's comment: “part (2) on an arbitrary scheme: the derived internal Hom out of a perfect object into an object of D\_QCoh has quasi-coherent cohomology sheaves”.
 
 > **Stacks Project, Tag 0A6H, part (2).** Let `Y` be a scheme, let `E` be a perfect object of
 > `D(𝒪_Y)` and let `F` be an object of `D_QCoh(𝒪_Y)`. Then the derived internal Hom
@@ -642,7 +642,7 @@ theorem derivedCategoryB_derivedSheafHom_of_isPerfect (Y : Scheme.{u})
       (((Stacks.SheafOfModules.derivedSheafHom Y.sheaf).obj (op E)).obj F)
 ```
 
-**`AlgebraicGeometry.isLocallyBoundedBelow_derivedSheafHom_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPseudoCoherentHomLocallyBounded.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPseudoCoherentHomLocallyBounded.lean#L95). The attribute's comment: “part (1) on an arbitrary scheme: the derived internal Hom out of a pseudo-coherent object into an object of D⁺_QCoh is locally bounded below”.
+**`AlgebraicGeometry.isLocallyBoundedBelow_derivedSheafHom_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPseudoCoherentHomLocallyBounded.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPseudoCoherentHomLocallyBounded.lean#L95). The attribute's comment: “part (1) on an arbitrary scheme: the derived internal Hom out of a pseudo-coherent object into an object of D⁺\_QCoh is locally bounded below”.
 
 > Let `Y` be a scheme, let `E` be a pseudo-coherent object of `D(𝒪_Y)` and let `F` be an
 > object of `D⁺_QCoh(𝒪_Y)`. Then `R𝓗om_{𝒪_Y}(E, F)` is locally bounded below: every point of `Y`
@@ -659,7 +659,7 @@ theorem isLocallyBoundedBelow_derivedSheafHom_of_isPseudoCoherent (Y : Scheme.{u
       (((Stacks.SheafOfModules.derivedSheafHom Y.sheaf).obj (op E)).obj F)
 ```
 
-**`AlgebraicGeometry.derivedCategoryB_derivedSheafHom_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPseudoCoherentHomQuasicoherent.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPseudoCoherentHomQuasicoherent.lean#L168). The attribute's comment: “part (1) on an arbitrary scheme: the derived internal Hom out of a pseudo-coherent object into an object of D⁺_QCoh has quasi-coherent cohomology sheaves”.
+**`AlgebraicGeometry.derivedCategoryB_derivedSheafHom_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPseudoCoherentHomQuasicoherent.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DerivedTilde/SchemeSheafPseudoCoherentHomQuasicoherent.lean#L168). The attribute's comment: “part (1) on an arbitrary scheme: the derived internal Hom out of a pseudo-coherent object into an object of D⁺\_QCoh has quasi-coherent cohomology sheaves”.
 
 > **Stacks Project, Tag 0A6H, part (1).** Let `Y` be a scheme, let `E` be a pseudo-coherent
 > object of `D(𝒪_Y)` and let `F` be an object of `D⁺_QCoh(𝒪_Y)`. Then the derived internal Hom

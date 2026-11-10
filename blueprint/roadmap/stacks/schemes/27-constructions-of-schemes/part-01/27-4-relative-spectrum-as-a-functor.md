@@ -269,7 +269,7 @@ noncomputable def relativeSpecRepresentableBy :
 
 [Tag 01LX](https://stacks.math.columbia.edu/tag/01LX) in the Stacks Project.
 
-**`Stacks.AffineAlgebraEquivalence.isAffineOpen_preimage_relativeSpecToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineAlgebraEquivalence2/RelativeSpec.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineAlgebraEquivalence2/RelativeSpec.lean#L137). The attribute's comment: “affine_inverse_image”. References: SGA 3 I (4.2), “Spec(A) affine over S”.
+**`Stacks.AffineAlgebraEquivalence.isAffineOpen_preimage_relativeSpecToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineAlgebraEquivalence2/RelativeSpec.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineAlgebraEquivalence2/RelativeSpec.lean#L137). The attribute's comment: “affine\_inverse\_image”. References: SGA 3 I (4.2), “Spec(A) affine over S”.
 
 > **Stacks Project, Tag 01LX(1).** The preimage of an affine open of the base in the relative
 > spectrum is affine.
@@ -279,7 +279,7 @@ public theorem isAffineOpen_preimage_relativeSpecToBase (U : S.affineOpens) :
     IsAffineOpen (relativeSpecToBase A ⁻¹ᵁ (U : S.Opens))
 ```
 
-**`Stacks.AffineAlgebraEquivalence.pushforwardAlgebraIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpecEssSurj/Basic.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpecEssSurj/Basic.lean#L296). The attribute's comment: “universal_map_iso”. References: SGA 3 I (4.2), “A ≅ π_*O_Spec(A)”.
+**`Stacks.AffineAlgebraEquivalence.pushforwardAlgebraIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpecEssSurj/Basic.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpecEssSurj/Basic.lean#L296). The attribute's comment: “universal\_map\_iso”. References: SGA 3 I (4.2), “A ≅ π\_*O\_Spec(A)”.
 
 > **Stacks Project, Tag 01LX(3).** The isomorphism of sheaves of `𝒪_S`-algebras
 > `(relativeSpecToBase A)_* 𝒪 ≅ A`. Its inverse is the universal map
@@ -290,7 +290,7 @@ public theorem isAffineOpen_preimage_relativeSpecToBase (U : S.affineOpens) :
 public noncomputable def pushforwardAlgebraIso : pushforwardAlgebra (relativeSpecToBase A) ≅ A
 ```
 
-**`Stacks.AffineAlgebraEquivalence.relativeSpecBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpecOpenRestriction/RelativeSpecBaseChange.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpecOpenRestriction/RelativeSpecBaseChange.lean#L113). The attribute's comment: “part (2): Spec_S(A) ×_S T = Spec_T(g^*A) for an arbitrary morphism g : T → S”. References: EGA II (1.5.6); SGA 3 III (0.1.7); SGA 3 VIA (2.1.2), “more general”.
+**`Stacks.AffineAlgebraEquivalence.relativeSpecBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeSpecOpenRestriction/RelativeSpecBaseChange.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeSpecOpenRestriction/RelativeSpecBaseChange.lean#L113). The attribute's comment: “part (2): Spec\_S(A) ×\_S T = Spec\_T(g^*A) for an arbitrary morphism g : T → S”. References: EGA II (1.5.6); SGA 3 III (0.1.7); SGA 3 VIA (2.1.2), “more general”.
 
 > **Stacks Project, Tag 01LX part (2).** For a quasi-coherent sheaf of `𝒪_S`-algebras `A` and
 > an arbitrary morphism of schemes `g : T ⟶ S`, the fibre product

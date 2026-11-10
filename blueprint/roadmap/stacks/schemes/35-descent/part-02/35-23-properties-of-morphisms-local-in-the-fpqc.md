@@ -532,7 +532,7 @@ instance unramified_isLocalAtTarget_fpqc :
       Scheme.fpqcPrecoverage
 ```
 
-**`AlgebraicGeometry.gUnramified_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/Unramified.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/Unramified.lean#L78). The attribute's comment: “g_unramified”. References: EGA IV (17.7.3), “special case”; SGA 3 VIB (2.1.2), “Remark 2.1.2”; SGA 4 IV (8.5.5), “partial”.
+**`AlgebraicGeometry.gUnramified_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/Unramified.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/Unramified.lean#L78). The attribute's comment: “g\_unramified”. References: EGA IV (17.7.3), “special case”; SGA 3 VIB (2.1.2), “Remark 2.1.2”; SGA 4 IV (8.5.5), “partial”.
 
 > **Stacks Project, Tag 02VM.** G-unramifiedness of morphisms of schemes is fpqc local on the
 > base.
@@ -637,7 +637,7 @@ instance isLocalAtTarget_monomorphisms_fpqc :
 
 [Tag 0694](https://stacks.math.columbia.edu/tag/0694) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocalAtTarget_koszulRegularImmersion_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/RegularImmersion.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/RegularImmersion.lean#L311). The attribute's comment: “koszul_regular, étale topology”.
+**`AlgebraicGeometry.isLocalAtTarget_koszulRegularImmersion_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/RegularImmersion.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/RegularImmersion.lean#L311). The attribute's comment: “koszul\_regular, étale topology”.
 
 > **Stacks Project, Tag 0694, the Koszul-regular clause, for the étale topology.** Being a
 > Koszul-regular immersion of schemes is local on the target for the étale topology.
@@ -649,7 +649,7 @@ theorem isLocalAtTarget_koszulRegularImmersion_etale :
       Scheme.etalePrecoverage.{u}
 ```
 
-**`AlgebraicGeometry.isLocalAtTarget_h1RegularImmersion_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/RegularImmersion.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/RegularImmersion.lean#L329). The attribute's comment: “h1_regular, étale topology”.
+**`AlgebraicGeometry.isLocalAtTarget_h1RegularImmersion_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/RegularImmersion.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/RegularImmersion.lean#L329). The attribute's comment: “h1\_regular, étale topology”.
 
 > **Stacks Project, Tag 0694, the `H₁`-regular clause, for the étale topology.** Being an
 > `H₁`-regular immersion of schemes is local on the target for the étale topology.
@@ -661,7 +661,7 @@ theorem isLocalAtTarget_h1RegularImmersion_etale :
       Scheme.etalePrecoverage.{u}
 ```
 
-**`AlgebraicGeometry.isLocalAtTarget_quasiRegularImmersion_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/RegularImmersion.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/RegularImmersion.lean#L347). The attribute's comment: “quasi_regular, étale topology”.
+**`AlgebraicGeometry.isLocalAtTarget_quasiRegularImmersion_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/RegularImmersion.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/RegularImmersion.lean#L347). The attribute's comment: “quasi\_regular, étale topology”.
 
 > **Stacks Project, Tag 0694, the quasi-regular clause, for the étale topology.** Being a
 > quasi-regular immersion of schemes is local on the target for the étale topology.
@@ -674,7 +674,7 @@ theorem isLocalAtTarget_quasiRegularImmersion_etale :
       Scheme.etalePrecoverage.{u}
 ```
 
-**`AlgebraicGeometry.isLocalAtTarget_koszulRegularImmersion_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFppf.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFppf.lean#L214). The attribute's comment: “koszul_regular, erratum: fppf in place of fpqc; counterexample Stacks.Descent.counterexampleHom”. References: SGA 6 VII (1.5), “special case”.
+**`AlgebraicGeometry.isLocalAtTarget_koszulRegularImmersion_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFppf.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFppf.lean#L214). The attribute's comment: “koszul\_regular, erratum: fppf in place of fpqc; counterexample Stacks.Descent.counterexampleHom”. References: SGA 6 VII (1.5), “special case”.
 
 > **Stacks Project, Tag 0694, the Koszul-regular clause, for the fppf topology.** Being a
 > Koszul-regular immersion of schemes is local on the target for the fppf topology, with no
@@ -689,7 +689,7 @@ theorem isLocalAtTarget_koszulRegularImmersion_fppf :
       Scheme.fppfPrecoverage.{u}
 ```
 
-**`AlgebraicGeometry.isLocalAtTarget_h1RegularImmersion_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFppf.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFppf.lean#L233). The attribute's comment: “h1_regular, erratum: fppf in place of fpqc; counterexample Stacks.Descent.counterexampleHom”.
+**`AlgebraicGeometry.isLocalAtTarget_h1RegularImmersion_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFppf.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFppf.lean#L233). The attribute's comment: “h1\_regular, erratum: fppf in place of fpqc; counterexample Stacks.Descent.counterexampleHom”.
 
 > **Stacks Project, Tag 0694, the `H₁`-regular clause, for the fppf topology.** Being an
 > `H₁`-regular immersion of schemes is local on the target for the fppf topology, with no
@@ -704,7 +704,7 @@ theorem isLocalAtTarget_h1RegularImmersion_fppf :
       Scheme.fppfPrecoverage.{u}
 ```
 
-**`AlgebraicGeometry.isLocalAtTarget_quasiRegularImmersion_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFppf.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFppf.lean#L253). The attribute's comment: “quasi_regular, erratum: fppf in place of fpqc; counterexample Stacks.Descent.counterexampleHom”. References: EGA IV (19.1.5), “(ii), special case”.
+**`AlgebraicGeometry.isLocalAtTarget_quasiRegularImmersion_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFppf.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFppf.lean#L253). The attribute's comment: “quasi\_regular, erratum: fppf in place of fpqc; counterexample Stacks.Descent.counterexampleHom”. References: EGA IV (19.1.5), “(ii), special case”.
 
 > **Stacks Project, Tag 0694, the quasi-regular clause, for the fppf topology.** Being a
 > quasi-regular immersion of schemes is local on the target for the fppf topology, with no
@@ -720,7 +720,7 @@ theorem isLocalAtTarget_quasiRegularImmersion_fppf :
       Scheme.fppfPrecoverage.{u}
 ```
 
-**`AlgebraicGeometry.isLocalAtTarget_koszulRegularImmersion_inf_quasiCompact_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqc.lean, line 716](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqc.lean#L716). The attribute's comment: “koszul_regular”. References: SGA 6 VII (1.5), “special case”.
+**`AlgebraicGeometry.isLocalAtTarget_koszulRegularImmersion_inf_quasiCompact_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqc.lean, line 716](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqc.lean#L716). The attribute's comment: “koszul\_regular”. References: SGA 6 VII (1.5), “special case”.
 
 > **Stacks Project, Tag 0694, the Koszul-regular clause.** Being a quasi-compact Koszul-regular
 > immersion of schemes is local on the target for the fpqc topology.
@@ -732,7 +732,7 @@ theorem isLocalAtTarget_koszulRegularImmersion_inf_quasiCompact_fpqc :
         (@QuasiCompact : MorphismProperty Scheme.{u})) Scheme.fpqcPrecoverage
 ```
 
-**`AlgebraicGeometry.isLocalAtTarget_h1RegularImmersion_inf_quasiCompact_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqc.lean, line 734](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqc.lean#L734). The attribute's comment: “h1_regular”.
+**`AlgebraicGeometry.isLocalAtTarget_h1RegularImmersion_inf_quasiCompact_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqc.lean, line 734](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqc.lean#L734). The attribute's comment: “h1\_regular”.
 
 > **Stacks Project, Tag 0694, the `H₁`-regular clause.** Being a quasi-compact `H₁`-regular
 > immersion of schemes is local on the target for the fpqc topology.
@@ -744,7 +744,7 @@ theorem isLocalAtTarget_h1RegularImmersion_inf_quasiCompact_fpqc :
         (@QuasiCompact : MorphismProperty Scheme.{u})) Scheme.fpqcPrecoverage
 ```
 
-**`AlgebraicGeometry.isLocalAtTarget_quasiRegularImmersion_inf_quasiCompact_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqc.lean, line 752](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqc.lean#L752). The attribute's comment: “quasi_regular”. References: EGA IV (19.1.5), “(ii), special case”.
+**`AlgebraicGeometry.isLocalAtTarget_quasiRegularImmersion_inf_quasiCompact_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqc.lean, line 752](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqc.lean#L752). The attribute's comment: “quasi\_regular”. References: EGA IV (19.1.5), “(ii), special case”.
 
 > **Stacks Project, Tag 0694, the quasi-regular clause.** Being a quasi-compact quasi-regular
 > immersion of schemes is local on the target for the fpqc topology.
@@ -757,7 +757,7 @@ theorem isLocalAtTarget_quasiRegularImmersion_inf_quasiCompact_fpqc :
         (@QuasiCompact : MorphismProperty Scheme.{u})) Scheme.fpqcPrecoverage
 ```
 
-**`AlgebraicGeometry.isKoszulRegularImmersion_iff_of_fpqcZeroHypercover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqcOfImmersion.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqcOfImmersion.lean#L177). The attribute's comment: “koszul_regular, erratum: morphisms that are immersions; fpqc, no quasi-compactness”. References: SGA 6 VII (1.5).
+**`AlgebraicGeometry.isKoszulRegularImmersion_iff_of_fpqcZeroHypercover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqcOfImmersion.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqcOfImmersion.lean#L177). The attribute's comment: “koszul\_regular, erratum: morphisms that are immersions; fpqc, no quasi-compactness”. References: SGA 6 VII (1.5).
 
 > **Stacks Project, Tag 0694, the Koszul-regular clause, for an immersion.** An immersion of
 > schemes is Koszul-regular if and only if its base changes along the members of an fpqc covering
@@ -770,7 +770,7 @@ theorem isKoszulRegularImmersion_iff_of_fpqcZeroHypercover
     IsKoszulRegularImmersion i ↔ ∀ k, IsKoszulRegularImmersion (pullback.snd i (𝒰.f k))
 ```
 
-**`AlgebraicGeometry.isH1RegularImmersion_iff_of_fpqcZeroHypercover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqcOfImmersion.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqcOfImmersion.lean#L197). The attribute's comment: “h1_regular, erratum: morphisms that are immersions; fpqc, no quasi-compactness”.
+**`AlgebraicGeometry.isH1RegularImmersion_iff_of_fpqcZeroHypercover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqcOfImmersion.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqcOfImmersion.lean#L197). The attribute's comment: “h1\_regular, erratum: morphisms that are immersions; fpqc, no quasi-compactness”.
 
 > **Stacks Project, Tag 0694, the `H₁`-regular clause, for an immersion.** An immersion of
 > schemes is `H₁`-regular if and only if its base changes along the members of an fpqc covering of
@@ -783,7 +783,7 @@ theorem isH1RegularImmersion_iff_of_fpqcZeroHypercover
     IsH1RegularImmersion i ↔ ∀ k, IsH1RegularImmersion (pullback.snd i (𝒰.f k))
 ```
 
-**`AlgebraicGeometry.isQuasiRegularImmersion_iff_of_fpqcZeroHypercover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqcOfImmersion.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqcOfImmersion.lean#L218). The attribute's comment: “quasi_regular, erratum: morphisms that are immersions; fpqc, no quasi-compactness”. References: EGA IV (19.1.5), “more general”.
+**`AlgebraicGeometry.isQuasiRegularImmersion_iff_of_fpqcZeroHypercover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqcOfImmersion.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionFpqcOfImmersion.lean#L218). The attribute's comment: “quasi\_regular, erratum: morphisms that are immersions; fpqc, no quasi-compactness”. References: EGA IV (19.1.5), “more general”.
 
 > **Stacks Project, Tag 0694, the quasi-regular clause, for an immersion.** An immersion of
 > schemes is quasi-regular if and only if its base changes along the members of an fpqc covering of
@@ -797,7 +797,7 @@ theorem isQuasiRegularImmersion_iff_of_fpqcZeroHypercover
       ∀ k, RegularIdealSheaf.IsQuasiRegularImmersion (pullback.snd i (𝒰.f k))
 ```
 
-**`Stacks.Descent.not_isLocalAtTarget_koszulRegularImmersion_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionNotFpqcLocal.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionNotFpqcLocal.lean#L224). The attribute's comment: “koszul_regular, counterexample: false for fpqc coverings without quasi-compactness”.
+**`Stacks.Descent.not_isLocalAtTarget_koszulRegularImmersion_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionNotFpqcLocal.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionNotFpqcLocal.lean#L224). The attribute's comment: “koszul\_regular, counterexample: false for fpqc coverings without quasi-compactness”.
 
 > **Stacks Project, Tag 0694, the Koszul-regular clause, is false for the fpqc topology.**
 > Being a Koszul-regular immersion is not local on the target for the fpqc precoverage.
@@ -809,7 +809,7 @@ theorem not_isLocalAtTarget_koszulRegularImmersion_fpqc :
       Scheme.fpqcPrecoverage.{0}
 ```
 
-**`Stacks.Descent.not_isLocalAtTarget_h1RegularImmersion_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionNotFpqcLocal.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionNotFpqcLocal.lean#L241). The attribute's comment: “h1_regular, counterexample: false for fpqc coverings without quasi-compactness”.
+**`Stacks.Descent.not_isLocalAtTarget_h1RegularImmersion_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionNotFpqcLocal.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionNotFpqcLocal.lean#L241). The attribute's comment: “h1\_regular, counterexample: false for fpqc coverings without quasi-compactness”.
 
 > **Stacks Project, Tag 0694, the `H₁`-regular clause, is false for the fpqc topology.**
 > Being an `H₁`-regular immersion is not local on the target for the fpqc precoverage.
@@ -821,7 +821,7 @@ theorem not_isLocalAtTarget_h1RegularImmersion_fpqc :
       Scheme.fpqcPrecoverage.{0}
 ```
 
-**`Stacks.Descent.not_isLocalAtTarget_quasiRegularImmersion_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionNotFpqcLocal.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionNotFpqcLocal.lean#L258). The attribute's comment: “quasi_regular, counterexample: false for fpqc coverings without quasi-compactness”.
+**`Stacks.Descent.not_isLocalAtTarget_quasiRegularImmersion_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionNotFpqcLocal.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnTarget/RegularImmersionNotFpqcLocal.lean#L258). The attribute's comment: “quasi\_regular, counterexample: false for fpqc coverings without quasi-compactness”.
 
 > **Stacks Project, Tag 0694, the quasi-regular clause, is false for the fpqc topology.**
 > Being a quasi-regular immersion is not local on the target for the fpqc precoverage.

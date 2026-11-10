@@ -14,7 +14,7 @@ Section 42.63 of the Stacks Project, [Tag 0FC3](https://stacks.math.columbia.edu
 
 [Tag 0FC4](https://stacks.math.columbia.edu/tag/0FC4) in the Stacks Project.
 
-**`Stacks.Chow.exteriorProductDedekindTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/ChowGroups.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/ChowGroups.lean#L147). The attribute's comment: “the map CH_n(X) ⊗_ℤ CH_m(Y) → CH_{n+m-1}(X ×_S Y) is well defined, given that the cycle-level exterior product carries rational equivalences to rational equivalences in each variable (the step the source proves with the bivariant classes of Stacks 0B78, 0B79 and 0B75, none of which is in this repository)”.
+**`Stacks.Chow.exteriorProductDedekindTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/ChowGroups.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/ChowGroups.lean#L147). The attribute's comment: “the map CH\_n(X) ⊗\_ℤ CH\_m(Y) → CH\_\{n+m-1}(X ×\_S Y) is well defined, given that the cycle-level exterior product carries rational equivalences to rational equivalences in each variable (the step the source proves with the bivariant classes of Stacks 0B78, 0B79 and 0B75, none of which is in this repository)”.
 
 > The exterior product over a Dedekind base as a map out of the tensor product,
 >
@@ -62,7 +62,7 @@ theorem IsDedekindChowBase.exteriorProductFactorsThroughRationalEquivalence
     (hS : IsDedekindChowBase C) : ExteriorProductFactorsThroughRationalEquivalence C f g n m
 ```
 
-**`Stacks.Chow.IsDedekindChowBase.exteriorProductChow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/RespectsRationalEquivalence.lean, line 1242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/RespectsRationalEquivalence.lean#L1242). The attribute's comment: “the map CH_n(X) ⊗_ℤ CH_m(Y) → CH_{n+m-1}(X ×_S Y) is well defined, unconditionally”.
+**`Stacks.Chow.IsDedekindChowBase.exteriorProductChow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/RespectsRationalEquivalence.lean, line 1242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/RespectsRationalEquivalence.lean#L1242). The attribute's comment: “the map CH\_n(X) ⊗\_ℤ CH\_m(Y) → CH\_\{n+m-1}(X ×\_S Y) is well defined, unconditionally”.
 
 > **Stacks 0FC4.** The exterior product on Chow groups over a Dedekind base,
 >
@@ -85,7 +85,7 @@ def IsDedekindChowBase.exteriorProductChow (hS : IsDedekindChowBase C) :
 
 [Tag 0FC5](https://stacks.math.columbia.edu/tag/0FC5) in the Stacks Project.
 
-**`Stacks.Chow.bivariantChowClassCapBaseFundamentalClass_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/ChowCohomology.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/ChowCohomology.lean#L120). The attribute's comment: “the canonical map A^p(X → S) → CH_{1-p}(X), c ↦ c ∩ [S]₁, is bijective; the components of S are curves, as in Example 02QN (for S the spectrum of a field the statement fails)”.
+**`Stacks.Chow.bivariantChowClassCapBaseFundamentalClass_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/ChowCohomology.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/ChowCohomology.lean#L120). The attribute's comment: “the canonical map A^p(X → S) → CH\_\{1-p}(X), c ↦ c ∩ [S]₁, is bijective; the components of S are curves, as in Example 02QN (for S the spectrum of a field the statement fails)”.
 
 > **Bivariant classes towards a Dedekind base are Chow classes.** Let `(S, δ)` be as in Stacks
 > section 42.63 — locally the spectrum of a Dedekind domain, with `δ = 0` at the closed points and
@@ -100,7 +100,7 @@ theorem bivariantChowClassCapBaseFundamentalClass_bijective :
     Function.Bijective (bivariantChowClassCapBaseFundamentalClass sX p)
 ```
 
-**`Stacks.Chow.chowCohomologyDedekindEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/ChowCohomology.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/ChowCohomology.lean#L134). The attribute's comment: “the canonical identification A^p(X → S) = CH_{1-p}(X) as an isomorphism of groups, c ↦ c ∩ [S]₁, with inverse α ↦ c_α; the components of S are curves, as in Example 02QN”.
+**`Stacks.Chow.chowCohomologyDedekindEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/ChowCohomology.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/ChowCohomology.lean#L134). The attribute's comment: “the canonical identification A^p(X → S) = CH\_\{1-p}(X) as an isomorphism of groups, c ↦ c ∩ [S]₁, with inverse α ↦ c\_α; the components of S are curves, as in Example 02QN”.
 
 > The canonical identification `A^p(X ⟶ S) = CH_{1-p}(X)` over a Dedekind base whose
 > irreducible components are curves, as an isomorphism of groups: `c ↦ c ∩ [S]₁`. Its inverse
@@ -112,7 +112,7 @@ def chowCohomologyDedekindEquiv (p : ℤ) (hC : IsDedekindChowBase C)
     BivariantChowClass C sX (𝟙 C.S) sX (Category.comp_id sX) p ≃+ chowGroup C sX (1 - p)
 ```
 
-**`Stacks.Chow.bivariantCapBaseFundamentalClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekindBivariant.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekindBivariant.lean#L69). The attribute's comment: “the canonical map A^p(X → S) → CH_{1-p}(X), c ↦ c ∩ [S]₁; the source's assertion that it is bijective is not proved here”.
+**`Stacks.Chow.bivariantCapBaseFundamentalClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekindBivariant.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekindBivariant.lean#L69). The attribute's comment: “the canonical map A^p(X → S) → CH\_\{1-p}(X), c ↦ c ∩ [S]₁; the source's assertion that it is bijective is not proved here”.
 
 > The canonical map `A^p(X → S) → CH_{1-p}(X)`, sending a bivariant class `c` of degree `p`
 > for the structure morphism `X ⟶ S` to `c ∩ [S]₁`, read on `X` through the isomorphism
@@ -140,7 +140,7 @@ theorem bivariantCapBaseFundamentalClass_bijective (hS : IsDedekindChowBase C)
       (bivariantCapBaseFundamentalClass C (gysinSystemOfInvertible C) sX p)
 ```
 
-**`Stacks.Chow.bivariantCapBaseFundamentalClassEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekindBivariantIdentification.lean, line 1142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekindBivariantIdentification.lean#L1142). The attribute's comment: “corrected form: the base is assumed to have no zero-dimensional component (`Stacks.Chow.HasNoZeroDimensionalComponent`); the identification A^p(X → S) = CH_{1-p}(X) as an isomorphism of groups, at the Gysin system of invertible modules”.
+**`Stacks.Chow.bivariantCapBaseFundamentalClassEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekindBivariantIdentification.lean, line 1142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekindBivariantIdentification.lean#L1142). The attribute's comment: “corrected form: the base is assumed to have no zero-dimensional component (`Stacks.Chow.HasNoZeroDimensionalComponent`); the identification A^p(X → S) = CH\_\{1-p}(X) as an isomorphism of groups, at the Gysin system of invertible modules”.
 
 > **Stacks 0FC5**, corrected form, as an isomorphism of groups: over a base as in section 42.63
 > with no zero-dimensional component, `A^p(X → S) ≃+ CH_{1-p}(X)`, `c ↦ c ∩ [S]₁`.
@@ -152,7 +152,7 @@ def bivariantCapBaseFundamentalClassEquiv (hS : IsDedekindChowBase C)
       chowGroup C sX (1 - p)
 ```
 
-**`Stacks.Chow.exists_isExteriorProductOverBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekindRepresentation/InverseMap.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekindRepresentation/InverseMap.lean#L116). The attribute's comment: “corrected form: the inverse α ↦ c_α acts by exterior product, c_α ∩ α' = α × α'”.
+**`Stacks.Chow.exists_isExteriorProductOverBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekindRepresentation/InverseMap.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekindRepresentation/InverseMap.lean#L116). The attribute's comment: “corrected form: the inverse α ↦ c\_α acts by exterior product, c\_α ∩ α' = α × α'”.
 
 > **Stacks 0FC5, the inverse map**, corrected form. Over a base as in section 42.63 with no
 > zero-dimensional component, every `α ∈ CH_{1-p}(X)` is `c_α ∩ [S]₁` for a bivariant class
@@ -226,7 +226,7 @@ theorem bivariantCommuteOverBase_of_isChowOperationProperGenerated
     BivariantCommuteOverBase C G sX sZ w p q c c'
 ```
 
-**`Stacks.Chow.BivariantChowClass.comp_comm_of_isDedekindChowBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/CommuteCompositeGeneral.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/CommuteCompositeGeneral.lean#L304). The attribute's comment: “c ∘ c' = c' ∘ c in A^{p+q}(X ×_S Y → Z) for c ∈ A^p(X → S) and c' ∈ A^q(Y → Z), the composites read as in Stacks 0FA2”.
+**`Stacks.Chow.BivariantChowClass.comp_comm_of_isDedekindChowBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/CommuteCompositeGeneral.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductDedekind/CommuteCompositeGeneral.lean#L304). The attribute's comment: “c ∘ c' = c' ∘ c in A^\{p+q}(X ×\_S Y → Z) for c ∈ A^p(X → S) and c' ∈ A^q(Y → Z), the composites read as in Stacks 0FA2”.
 
 > **Stacks 0FC6.** Let `(S, δ)` be as in Stacks section 42.63 — locally the spectrum of a
 > Dedekind domain, with `δ = 0` at the closed points and `δ = 1` elsewhere. Let `X` be a scheme

@@ -14,7 +14,7 @@ Section 93.8 of the Stacks Project, [Tag 0DY0](https://stacks.math.columbia.edu/
 
 [Tag 0DY1](https://stacks.math.columbia.edu/tag/0DY1) in the Stacks Project.
 
-**`Deformation.Examples.ringDeformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L182). The attribute's comment: “ring_deformation_category”.
+**`Deformation.Examples.ringDeformationCategory`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L182). The attribute's comment: “ring\_deformation\_category”.
 
 > The category of deformations of the `k`-algebra `P`: flat algebras over Artinian local
 > bases equipped with a base-change map to `(k, P)`.
@@ -23,7 +23,7 @@ Section 93.8 of the Stacks Project, [Tag 0DY0](https://stacks.math.columbia.edu/
 abbrev ringDeformationCategory (P : Type w) [CommRing P] [Algebra k P]
 ```
 
-**`Deformation.Examples.flatAlgebraCategory_projection_isCofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L189). The attribute's comment: “flat_algebra_category_cofibered”.
+**`Deformation.Examples.flatAlgebraCategory_projection_isCofiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L189). The attribute's comment: “flat\_algebra\_category\_cofibered”.
 
 > Base change makes the projection from flat algebras to their Artinian bases cofibered in
 > groupoids.
@@ -36,11 +36,11 @@ theorem flatAlgebraCategory_projection_isCofiberedInGroupoids
 
 Declarations registered for the tag:
 
-- [`FlatAlgebraCategory`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FlatAlgebraCategory#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L271) (StacksFrontier): “flat_algebra_category”.
-- [`FlatAlgebraCategory.Hom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FlatAlgebraCategory.Hom#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L272) (StacksFrontier): “flat_algebra_category”.
-- [`FlatAlgebraCategory.instCategory`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FlatAlgebraCategory.instCategory#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L273) (StacksFrontier): “flat_algebra_category”.
-- [`FlatAlgebraCategory.projection`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FlatAlgebraCategory.projection#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L274) (StacksFrontier): “flat_algebra_category”.
-- [`residueFieldAlgebra`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/SemiLocal.lean#L47), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L275) (StacksFrontier): “flat_algebra_category”.
+- [`FlatAlgebraCategory`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FlatAlgebraCategory#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L271) (StacksFrontier): “flat\_algebra\_category”.
+- [`FlatAlgebraCategory.Hom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FlatAlgebraCategory.Hom#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L272) (StacksFrontier): “flat\_algebra\_category”.
+- [`FlatAlgebraCategory.instCategory`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FlatAlgebraCategory.instCategory#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L273) (StacksFrontier): “flat\_algebra\_category”.
+- [`FlatAlgebraCategory.projection`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FlatAlgebraCategory.projection#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L274) (StacksFrontier): “flat\_algebra\_category”.
+- [`residueFieldAlgebra`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/SemiLocal.lean#L47), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Examples/Geometric/Rings.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Rings.lean#L275) (StacksFrontier): “flat\_algebra\_category”.
 
 ## Tag 0DY2, a lemma
 

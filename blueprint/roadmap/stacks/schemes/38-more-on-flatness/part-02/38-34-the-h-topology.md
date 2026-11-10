@@ -773,7 +773,7 @@ public theorem preservesLimitsOfShape_walkingParallelPair_bigHLowerShriek :
 
 Declarations registered for the tag:
 
-- [`StacksRelocalization.sheafPushforwardOverMapIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/OverPullbackMorphism.lean#L51), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/BigHTopos.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/BigHTopos.lean#L34) (StacksFrontier): “same_topos”.
+- [`StacksRelocalization.sheafPushforwardOverMapIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/OverPullbackMorphism.lean#L51), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/BigHTopos.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/BigHTopos.lean#L34) (StacksFrontier): “same\_topos”.
 
 ## Tag 0EU7, a lemma
 

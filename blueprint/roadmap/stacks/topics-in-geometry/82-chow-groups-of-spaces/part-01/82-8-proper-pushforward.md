@@ -54,7 +54,7 @@ noncomputable def properPushforwardWeightInDimension (sX : X ⟶ D.space) (sY : 
     (Z : IntegralClosedSubspace D.site D.base D.base_mem X) : ℤ
 ```
 
-**`AlgebraicGeometry.Space.properPushforwardInDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardCyclesInDimension.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardCyclesInDimension.lean#L347). The attribute's comment: “part (2): the pushforward of a k-cycle, as a map Z_k(X) → Z_k(Y)”.
+**`AlgebraicGeometry.Space.properPushforwardInDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardCyclesInDimension.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardCyclesInDimension.lean#L347). The attribute's comment: “part (2): the pushforward of a k-cycle, as a map Z\_k(X) → Z\_k(Y)”.
 
 > Proper pushforward of cycles of δ-dimension `k` along a proper morphism
 > `f : X ⟶ Y` of good algebraic spaces over the base: the cycle whose coefficient at `Z'` is the
@@ -68,7 +68,7 @@ noncomputable def properPushforwardInDimension (sX : X ⟶ D.space) (sY : Y ⟶ 
     CycleGroup D sX k → CycleGroup D sY k
 ```
 
-**`AlgebraicGeometry.Space.properPushforwardInDimension_cycleOfIntegralClosedSubspace_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardCyclesInDimension.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardCyclesInDimension.lean#L404). The attribute's comment: “part (1): f_*[Z] = 0 when dim_δ(Z') < k”.
+**`AlgebraicGeometry.Space.properPushforwardInDimension_cycleOfIntegralClosedSubspace_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardCyclesInDimension.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardCyclesInDimension.lean#L404). The attribute's comment: “part (1): f\_*[Z] = 0 when dim\_δ(Z') < k”.
 
 > The pushforward of the cycle `[Z]` of
 > an integral closed subspace of δ-dimension `k` is zero when its integral closed image has
@@ -84,7 +84,7 @@ theorem properPushforwardInDimension_cycleOfIntegralClosedSubspace_eq_zero (sX :
         (cycleOfIntegralClosedSubspace D sX k Z hZ) = 0
 ```
 
-**`AlgebraicGeometry.Space.properPushforwardInDimension_cycleOfIntegralClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardCyclesInDimension.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardCyclesInDimension.lean#L421). The attribute's comment: “part (1): f_*[Z] = deg(Z/Z')·[Z'] when dim_δ(Z') = k”.
+**`AlgebraicGeometry.Space.properPushforwardInDimension_cycleOfIntegralClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardCyclesInDimension.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardCyclesInDimension.lean#L421). The attribute's comment: “part (1): f\_*[Z] = deg(Z/Z')·[Z'] when dim\_δ(Z') = k”.
 
 > The pushforward of the cycle `[Z]` of
 > an integral closed subspace of δ-dimension `k` whose integral closed image `Z'` again has
@@ -103,7 +103,7 @@ theorem properPushforwardInDimension_cycleOfIntegralClosedSubspace (sX : X ⟶ D
           (cycleImageSubspace D sY hY f Z) hdim
 ```
 
-**`AlgebraicGeometry.Space.properPushforward_integralCycle_integralClosedSubspaceUniv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardOfDivisor.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardOfDivisor.lean#L366). The attribute's comment: “f_*[X] = [R(X):R(Y)] [Y]: the pushforward of the fundamental cycle of an integral good X along a dominant quasi-compact morphism to an integral good Y of the same δ-dimension”.
+**`AlgebraicGeometry.Space.properPushforward_integralCycle_integralClosedSubspaceUniv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardOfDivisor.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforwardOfDivisor.lean#L366). The attribute's comment: “f\_*[X] = [R(X):R(Y)] [Y]: the pushforward of the fundamental cycle of an integral good X along a dominant quasi-compact morphism to an integral good Y of the same δ-dimension”.
 
 > **Stacks 0EP1 at the fundamental cycle.** For a dominant quasi-compact morphism `f : X ⟶ Y`
 > over `B` of integral good algebraic spaces with `dim_δ(X) = dim_δ(Y) = n`,

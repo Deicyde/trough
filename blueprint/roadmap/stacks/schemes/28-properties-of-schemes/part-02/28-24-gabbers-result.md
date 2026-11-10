@@ -92,7 +92,7 @@ instance cardinalGeneratedQuasicoherentSubobject_isFiltered (X : Scheme.{u}) (F 
 
 [Tag 077P](https://stacks.math.columbia.edu/tag/077P) in the Stacks Project.
 
-**`AlgebraicGeometry.quasicoherentModules_abelian`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/GabberResult/Abelian.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/GabberResult/Abelian.lean#L63). The attribute's comment: “grothendieck_qcoh”.
+**`AlgebraicGeometry.quasicoherentModules_abelian`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/GabberResult/Abelian.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/GabberResult/Abelian.lean#L63). The attribute's comment: “grothendieck\_qcoh”.
 
 > The category of quasi-coherent modules on a scheme is abelian.
 
@@ -101,7 +101,7 @@ noncomputable instance quasicoherentModules_abelian (X : Scheme.{u}) :
     Abelian (SheafOfModules.isQuasicoherent X.ringCatSheaf).FullSubcategory
 ```
 
-**`AlgebraicGeometry.quasicoherentInclusion_isLeftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Basic.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Basic.lean#L45). The attribute's comment: “coherator_adjoint”. References: SGA 6 II (3.2).
+**`AlgebraicGeometry.quasicoherentInclusion_isLeftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Basic.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Basic.lean#L45). The attribute's comment: “coherator\_adjoint”. References: SGA 6 II (3.2).
 
 > **The inclusion of quasi-coherent `𝒪_X`-modules into all `𝒪_X`-modules has a right
 > adjoint**, the coherator.
@@ -111,7 +111,7 @@ theorem quasicoherentInclusion_isLeftAdjoint (X : Scheme.{u}) :
     (SheafOfModules.isQuasicoherent X.ringCatSheaf).ι.IsLeftAdjoint
 ```
 
-**`AlgebraicGeometry.quasicoherentModules_hasLimitsOfSize`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Basic.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Basic.lean#L55). The attribute's comment: “all_limits”.
+**`AlgebraicGeometry.quasicoherentModules_hasLimitsOfSize`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Basic.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Basic.lean#L55). The attribute's comment: “all\_limits”.
 
 > **The category of quasi-coherent modules on a scheme has all limits.**
 
@@ -121,7 +121,7 @@ instance quasicoherentModules_hasLimitsOfSize (X : Scheme.{u}) :
       (SheafOfModules.isQuasicoherent X.ringCatSheaf).FullSubcategory
 ```
 
-**`AlgebraicGeometry.isIso_coheratorCounit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Basic.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Basic.lean#L62). The attribute's comment: “coherator_counit”.
+**`AlgebraicGeometry.isIso_coheratorCounit_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Basic.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Basic.lean#L62). The attribute's comment: “coherator\_counit”.
 
 > **The counit of the coherator adjunction is an isomorphism at a quasi-coherent module.**
 
@@ -132,7 +132,7 @@ theorem isIso_coheratorCounit_app (X : Scheme.{u}) (M : X.Modules) [M.IsQuasicoh
       (SheafOfModules.isQuasicoherent X.ringCatSheaf).ι).counit.app M)
 ```
 
-**`AlgebraicGeometry.quasicoherentModules_enoughInjectives`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Basic.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Basic.lean#L72). The attribute's comment: “enough_injectives”. References: SGA 6 II (3.1), “more general”.
+**`AlgebraicGeometry.quasicoherentModules_enoughInjectives`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Basic.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Basic.lean#L72). The attribute's comment: “enough\_injectives”. References: SGA 6 II (3.1), “more general”.
 
 > **The category of quasi-coherent modules on a scheme has enough injectives.**
 
@@ -141,7 +141,7 @@ instance quasicoherentModules_enoughInjectives (X : Scheme.{u}) :
     EnoughInjectives (SheafOfModules.isQuasicoherent X.ringCatSheaf).FullSubcategory
 ```
 
-**`AlgebraicGeometry.quasicoherentModules_isGrothendieckAbelian`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Grothendieck.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Grothendieck.lean#L136). The attribute's comment: “grothendieck_qcoh”.
+**`AlgebraicGeometry.quasicoherentModules_isGrothendieckAbelian`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Grothendieck.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/QuasiCoherent/Coherator/Grothendieck.lean#L136). The attribute's comment: “grothendieck\_qcoh”.
 
 > **The category of quasi-coherent modules on a scheme is Grothendieck abelian.**  This is
 > the second assertion of [Stacks, Tag 077P]: the separator above together with the reduction

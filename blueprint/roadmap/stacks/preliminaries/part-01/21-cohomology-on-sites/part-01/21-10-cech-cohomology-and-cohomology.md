@@ -94,7 +94,7 @@ theorem nonempty_cechResolutionComparison (F : Sheaf K Ab.{max a u v w})
 
 [Tag 0A6G](https://stacks.math.columbia.edu/tag/0A6G) in the Stacks Project.
 
-**`Stacks.CechSite.injective_cechCohomologyToCohomology_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/DegreeOneInjectivity.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/DegreeOneInjectivity.lean#L334). The attribute's comment: “variant: injectivity of the derived-category comparison; the tag is Stacks.CechSite.cechH1ToSliceH_injective_and_range_eq”.
+**`Stacks.CechSite.injective_cechCohomologyToCohomology_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/DegreeOneInjectivity.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Cech/DegreeOneInjectivity.lean#L334). The attribute's comment: “variant: injectivity of the derived-category comparison; the tag is Stacks.CechSite.cechH1ToSliceH\_injective\_and\_range\_eq”.
 
 > **Stacks Project, Tag 0A6G.** For a covering family `𝒰 = {U_i → U}` of an object of a site
 > and an abelian sheaf `G`, the map `Ȟ¹(𝒰, G) → H¹(U, G)` of Stacks 03AX is injective.
@@ -105,7 +105,7 @@ theorem injective_cechCohomologyToCohomology_one (hE : Sieve.generate E.presieve
     Function.Injective ((cechCohomologyToCohomology.{a} K E hE 1).app G)
 ```
 
-**`Stacks.Cohomology.Torsors.locallyTrivialClassEquivCechH1`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassBijection.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassBijection.lean#L204). The attribute's comment: “variant: the Čech class bijection onto Ȟ¹(𝒰,G); the tag is Stacks.CechSite.cechH1ToSliceH_injective_and_range_eq”. References: EGA IV (16.5.15), “partial”.
+**`Stacks.Cohomology.Torsors.locallyTrivialClassEquivCechH1`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassBijection.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassBijection.lean#L204). The attribute's comment: “variant: the Čech class bijection onto Ȟ¹(𝒰,G); the tag is Stacks.CechSite.cechH1ToSliceH\_injective\_and\_range\_eq”. References: EGA IV (16.5.15), “partial”.
 
 > **Stacks Project, Tag 0A6G.** First Čech cohomology of a covering family, as the set of
 > isomorphism classes of `G|_U`-torsors which restrict to trivial torsors over each member of
@@ -117,7 +117,7 @@ def locallyTrivialClassEquivCechH1 (hE : E.sieve₀ ∈ J U)
     LocallyTrivialClass E G ≃ cechH1 E G.obj
 ```
 
-**`Stacks.CechSite.injective_cechH1ToCohomology_and_bijective_cechClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassCohomologyComparison.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassCohomologyComparison.lean#L149). The attribute's comment: “variant: injectivity and the Čech class bijection at the explicit Ȟ¹(𝒰,G); the tag is Stacks.CechSite.cechH1ToSliceH_injective_and_range_eq”.
+**`Stacks.CechSite.injective_cechH1ToCohomology_and_bijective_cechClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassCohomologyComparison.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassCohomologyComparison.lean#L149). The attribute's comment: “variant: injectivity and the Čech class bijection at the explicit Ȟ¹(𝒰,G); the tag is Stacks.CechSite.cechH1ToSliceH\_injective\_and\_range\_eq”.
 
 > For a covering family `𝒰 = {U_i → U}` of an object of a site and an abelian sheaf `G`, the
 > map `Ȟ¹(𝒰, G) → H¹(U, G)` is injective, and `Ȟ¹(𝒰, G)` is in bijection — under the Čech class
@@ -132,7 +132,7 @@ theorem injective_cechH1ToCohomology_and_bijective_cechClass (hE : E.sieve₀ �
       Function.Bijective (Stacks.Cohomology.Torsors.cechClass E G)
 ```
 
-**`Stacks.CechSite.injective_torsorCohomologyClass_and_range_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassCohomologyComparison.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassCohomologyComparison.lean#L256). The attribute's comment: “variant: the Čech class of a torsor read in the derived H¹(U,G); the tag is Stacks.CechSite.cechH1ToSliceH_injective_and_range_eq”. References: EGA IV (16.5.15), “Abelian”.
+**`Stacks.CechSite.injective_torsorCohomologyClass_and_range_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassCohomologyComparison.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassCohomologyComparison.lean#L256). The attribute's comment: “variant: the Čech class of a torsor read in the derived H¹(U,G); the tag is Stacks.CechSite.cechH1ToSliceH\_injective\_and\_range\_eq”. References: EGA IV (16.5.15), “Abelian”.
 
 > For a covering family `𝒰 = {U_i → U}` of an object of a site and an abelian sheaf `G`, the
 > map which sends an isomorphism class of `G|_U`-torsors trivial over each `U_i` to the image in
@@ -197,7 +197,7 @@ theorem cechH1ToSliceH_injective_and_range_eq (hE : E.sieve₀ ∈ K U)
             Quotient.mk (torsorSetoid (G.over U)) F = c ∧ IsTrivialOnMembers E G F}
 ```
 
-**`Stacks.Cohomology.Torsors.isTrivial_iff_cechClass_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassInjectivity.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassInjectivity.lean#L175). The attribute's comment: “variant: the Čech class vanishes exactly on the trivial torsor; the tag is Stacks.CechSite.cechH1ToSliceH_injective_and_range_eq”. References: EGA IV (16.5.15), “special case”.
+**`Stacks.Cohomology.Torsors.isTrivial_iff_cechClass_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassInjectivity.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassInjectivity.lean#L175). The attribute's comment: “variant: the Čech class vanishes exactly on the trivial torsor; the tag is Stacks.CechSite.cechH1ToSliceH\_injective\_and\_range\_eq”. References: EGA IV (16.5.15), “special case”.
 
 > **A torsor with vanishing Čech class is trivial.** For a covering family, the Čech class of
 > a torsor with a section over every member vanishes exactly when the torsor is trivial: the class
@@ -211,7 +211,7 @@ theorem isTrivial_iff_cechClass_eq_zero (hE : E.sieve₀ ∈ J U) (F : AbelianTo
       cechClass E G ⟨Quotient.mk (torsorSetoid (G.over U)) F, ⟨F, rfl, hs⟩⟩ = 0
 ```
 
-**`Stacks.Cohomology.Torsors.cechClass_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassInjectivity.lean, line 458](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassInjectivity.lean#L458). The attribute's comment: “variant: injectivity of the Čech class map; the tag is Stacks.CechSite.cechH1ToSliceH_injective_and_range_eq”. References: EGA IV (16.5.15), “partial”.
+**`Stacks.Cohomology.Torsors.cechClass_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassInjectivity.lean, line 458](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/CechClassInjectivity.lean#L458). The attribute's comment: “variant: injectivity of the Čech class map; the tag is Stacks.CechSite.cechH1ToSliceH\_injective\_and\_range\_eq”. References: EGA IV (16.5.15), “partial”.
 
 > **The Čech class is injective on the locally trivial isomorphism classes.** Under the
 > bijection of Stacks 03AJ between isomorphism classes of torsors and first cohomology, this is
@@ -223,7 +223,7 @@ theorem cechClass_injective (hE : E.sieve₀ ∈ J U) :
     Function.Injective (cechClass E G)
 ```
 
-**`Stacks.Cohomology.Torsors.cls_transitionCocycle_congr`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean#L371). The attribute's comment: “variant: independence of the chosen local sections; the tag is Stacks.CechSite.cechH1ToSliceH_injective_and_range_eq”. References: EGA IV (16.5.15), “special case”.
+**`Stacks.Cohomology.Torsors.cls_transitionCocycle_congr`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean#L371). The attribute's comment: “variant: independence of the chosen local sections; the tag is Stacks.CechSite.cechH1ToSliceH\_injective\_and\_range\_eq”. References: EGA IV (16.5.15), “special case”.
 
 > **The Čech class of the transition cocycle does not depend on the chosen local sections.**
 
@@ -233,7 +233,7 @@ lemma cls_transitionCocycle_congr (F : AbelianTorsor (G.over U))
     cls E G.obj (transitionCocycle E G F s) = cls E G.obj (transitionCocycle E G F s')
 ```
 
-**`Stacks.Cohomology.Torsors.cls_transitionCocycle_eq_of_isIsomorphic`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean#L393). The attribute's comment: “variant: independence of the torsor inside its isomorphism class; the tag is Stacks.CechSite.cechH1ToSliceH_injective_and_range_eq”. References: EGA IV (16.5.15), “partial”.
+**`Stacks.Cohomology.Torsors.cls_transitionCocycle_eq_of_isIsomorphic`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean#L393). The attribute's comment: “variant: independence of the torsor inside its isomorphism class; the tag is Stacks.CechSite.cechH1ToSliceH\_injective\_and\_range\_eq”. References: EGA IV (16.5.15), “partial”.
 
 > **The Čech class of the transition cocycle depends only on the isomorphism class of the
 > torsor.**
@@ -246,7 +246,7 @@ lemma cls_transitionCocycle_eq_of_isIsomorphic {F F' : AbelianTorsor (G.over U)}
     cls E G.obj (transitionCocycle E G F s) = cls E G.obj (transitionCocycle E G F' s')
 ```
 
-**`Stacks.Cohomology.Torsors.isTrivialOnMembers_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean#L429). The attribute's comment: “variant: torsors trivial over each member have sections there; the tag is Stacks.CechSite.cechH1ToSliceH_injective_and_range_eq”. References: SGA 3 IV (5.1.5), “(ii)”.
+**`Stacks.Cohomology.Torsors.isTrivialOnMembers_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean#L429). The attribute's comment: “variant: torsors trivial over each member have sections there; the tag is Stacks.CechSite.cechH1ToSliceH\_injective\_and\_range\_eq”. References: SGA 3 IV (5.1.5), “(ii)”.
 
 > **The torsors which restrict to trivial torsors over each member of the covering.** A torsor
 > under `G|_U` restricts to a trivial torsor over every member of the family exactly when it has a
@@ -258,7 +258,7 @@ theorem isTrivialOnMembers_iff (F : AbelianTorsor (G.over U)) :
       ∀ i, Nonempty (F.1.presheaf.obj (op (Over.mk (E.f i))))
 ```
 
-**`Stacks.Cohomology.Torsors.cechClass_eq_zero_of_isTrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean#L497). The attribute's comment: “variant: the trivial torsor has vanishing Čech class; the tag is Stacks.CechSite.cechH1ToSliceH_injective_and_range_eq”. References: EGA IV (16.5.15), “partial”.
+**`Stacks.Cohomology.Torsors.cechClass_eq_zero_of_isTrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean#L497). The attribute's comment: “variant: the trivial torsor has vanishing Čech class; the tag is Stacks.CechSite.cechH1ToSliceH\_injective\_and\_range\_eq”. References: EGA IV (16.5.15), “partial”.
 
 > **A trivial torsor has vanishing Čech class.** A global section restricts to a family of
 > local sections all of whose differences vanish.
@@ -270,7 +270,7 @@ theorem cechClass_eq_zero_of_isTrivial (F : AbelianTorsor (G.over U))
     cechClass E G ⟨Quotient.mk (torsorSetoid (G.over U)) F, ⟨F, rfl, hs⟩⟩ = 0
 ```
 
-**`Stacks.Cohomology.Torsors.isTrivial_of_transitionCochain_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean, line 577](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean#L577). The attribute's comment: “variant: a torsor whose transition cocycle vanishes is trivial; the tag is Stacks.CechSite.cechH1ToSliceH_injective_and_range_eq”.
+**`Stacks.Cohomology.Torsors.isTrivial_of_transitionCochain_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean, line 577](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean#L577). The attribute's comment: “variant: a torsor whose transition cocycle vanishes is trivial; the tag is Stacks.CechSite.cechH1ToSliceH\_injective\_and\_range\_eq”.
 
 > **A vanishing transition cochain makes the torsor trivial.** The local sections then agree
 > on every common refinement of two members of the covering, so the sheaf condition for the
@@ -284,7 +284,7 @@ theorem isTrivial_of_transitionCochain_eq_zero (hE : E.sieve₀ ∈ J U)
     (hs : transitionCochain E G F s = 0) : F.1.IsTrivial
 ```
 
-**`Stacks.Cohomology.Torsors.isTrivial_iff_exists_transitionCochain_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean, line 608](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean#L608). The attribute's comment: “variant: triviality in terms of the transition cocycle; the tag is Stacks.CechSite.cechH1ToSliceH_injective_and_range_eq”.
+**`Stacks.Cohomology.Torsors.isTrivial_iff_exists_transitionCochain_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean, line 608](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Torsors/LocalTriviality.lean#L608). The attribute's comment: “variant: triviality in terms of the transition cocycle; the tag is Stacks.CechSite.cechH1ToSliceH\_injective\_and\_range\_eq”.
 
 > **Triviality in terms of the transition cocycle.** For a covering family, a torsor under
 > `G|_U` with a section over every member of the family is trivial exactly when some family of

@@ -14,7 +14,7 @@ Section 38.27 of the Stacks Project, [Tag 05PS](https://stacks.math.columbia.edu
 
 [Tag 05UC](https://stacks.math.columbia.edu/tag/05UC) in the Stacks Project.
 
-**`AlgebraicGeometry.FreeAtGenericPointsSituation.isImmersion_representableBy_fittingRankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsImmersion.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsImmersion.lean#L95). The attribute's comment: “representability of H_p by a locally closed immersion”.
+**`AlgebraicGeometry.FreeAtGenericPointsSituation.isImmersion_representableBy_fittingRankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsImmersion.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsImmersion.lean#L95). The attribute's comment: “representability of H\_p by a locally closed immersion”.
 
 > **Stacks Project, Tag 05UC.** In Situation 05MP, for each `p ≥ 0` the functor `H_p` of
 > 05MR is representable by a locally closed immersion `S_p ⟶ S`.
@@ -25,7 +25,7 @@ theorem isImmersion_representableBy_fittingRankStratum :
       Nonempty ((D.freeAtGenericPointsFunctor p).RepresentableBy W)
 ```
 
-**`AlgebraicGeometry.FreeAtGenericPointsSituation.finitePresentation_hom_of_representableBy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsImmersion.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsImmersion.lean#L113). The attribute's comment: “finite presentation of S_p ⟶ S when the module is of finite presentation”.
+**`AlgebraicGeometry.FreeAtGenericPointsSituation.finitePresentation_hom_of_representableBy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsImmersion.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsImmersion.lean#L113). The attribute's comment: “finite presentation of S\_p ⟶ S when the module is of finite presentation”.
 
 > **Stacks Project, Tag 05UC.** In Situation 05MP, if `ℱ` is of finite presentation then
 > `S_p ⟶ S` is of finite presentation.
@@ -95,7 +95,7 @@ theorem flatDimensionFunctor_iso_coproduct_freeAtGenericPointsFunctor [IsAffine 
             (D.freeAtGenericPointsFunctor p.val ⋙ uliftFunctor.{u + 1}))
 ```
 
-**`AlgebraicGeometry.isFlatOverInDimensionsGE_iff_forall_exists_freeAtPointOfRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/GenericRankDecomposition.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/GenericRankDecomposition.lean#L248). The attribute's comment: “F_d is the union of the H_p”.
+**`AlgebraicGeometry.isFlatOverInDimensionsGE_iff_forall_exists_freeAtPointOfRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/GenericRankDecomposition.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/GenericRankDecomposition.lean#L248). The attribute's comment: “F\_d is the union of the H\_p”.
 
 > **Stacks Project, Tag 05UE.** Let `f : X ⟶ S` be a smooth morphism of affine schemes with
 > geometrically irreducible fibres of dimension `d` and let `F` be a quasi-coherent `𝒪_X`-module

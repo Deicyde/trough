@@ -14,7 +14,7 @@ Section 58.31 of the Stacks Project, [Tag 0BSE](https://stacks.math.columbia.edu
 
 [Tag 0EYD](https://stacks.math.columbia.edu/tag/0EYD) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.pulledBackCover_isFinite`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/CodimensionOnePullback.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/CodimensionOnePullback.lean#L207). The attribute's comment: “finite_etale_pullback”.
+**`Stacks.FundamentalGroup.pulledBackCover_isFinite`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/CodimensionOnePullback.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/CodimensionOnePullback.lean#L207). The attribute's comment: “finite\_etale\_pullback”.
 
 > The canonical pullback of the cover is finite.
 
@@ -24,7 +24,7 @@ public instance pulledBackCover_isFinite
     IsFinite D.pulledBackCover
 ```
 
-**`Stacks.FundamentalGroup.pulledBackCover_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/CodimensionOnePullback.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/CodimensionOnePullback.lean#L216). The attribute's comment: “finite_etale_pullback”.
+**`Stacks.FundamentalGroup.pulledBackCover_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/CodimensionOnePullback.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/CodimensionOnePullback.lean#L216). The attribute's comment: “finite\_etale\_pullback”.
 
 > The canonical pullback of the cover is étale.
 
@@ -34,7 +34,7 @@ public instance pulledBackCover_etale
     Etale D.pulledBackCover
 ```
 
-**`Stacks.FundamentalGroup.pulledBackCover_isUnramifiedInCodimensionOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/CodimensionOnePullbackRamification.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/CodimensionOnePullbackRamification.lean#L511). The attribute's comment: “unramified_in_codimension_one”.
+**`Stacks.FundamentalGroup.pulledBackCover_isUnramifiedInCodimensionOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/CodimensionOnePullbackRamification.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/CodimensionOnePullbackRamification.lean#L511). The attribute's comment: “unramified\_in\_codimension\_one”.
 
 > **Stacks 0EYD**, unramified half. If the cover `Y → U` is unramified over `X` in
 > codimension one, then the pulled-back cover is unramified over `X'` in codimension one.
@@ -46,7 +46,7 @@ public theorem pulledBackCover_isUnramifiedInCodimensionOne
     IsUnramifiedInCodimensionOne (pullback.fst D.g D.U.ι) D.pulledBackCover
 ```
 
-**`Stacks.FundamentalGroup.pulledBackCover_isTamelyRamifiedInCodimensionOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/CodimensionOnePullbackRamification.lean, line 533](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/CodimensionOnePullbackRamification.lean#L533). The attribute's comment: “tamely_ramified_in_codimension_one”. References: SGA 1 XIII (2.0.2), “partial”; SGA 1 XIII (2.0.3), “more general”.
+**`Stacks.FundamentalGroup.pulledBackCover_isTamelyRamifiedInCodimensionOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/CodimensionOnePullbackRamification.lean, line 533](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/CodimensionOnePullbackRamification.lean#L533). The attribute's comment: “tamely\_ramified\_in\_codimension\_one”. References: SGA 1 XIII (2.0.2), “partial”; SGA 1 XIII (2.0.3), “more general”.
 
 > **Stacks 0EYD**, tamely ramified half. If the cover `Y → U` is tamely ramified over `X` in
 > codimension one, then the pulled-back cover is tamely ramified over `X'` in codimension one.
@@ -130,7 +130,7 @@ public theorem exists_finiteEtale_extension_of_isEffectiveCartierDivisor
 
 [Tag 0EYF](https://stacks.math.columbia.edu/tag/0EYF) in the Stacks Project.
 
-**`AlgebraicGeometry.standardTamelyRamifiedAlgebra`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean#L64). The attribute's comment: “standard_tamely_ramified_morphism”.
+**`AlgebraicGeometry.standardTamelyRamifiedAlgebra`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean#L64). The attribute's comment: “standard\_tamely\_ramified\_morphism”.
 
 > The standard tamely ramified algebra `A[X] / (X ^ e - f)`.
 
@@ -138,7 +138,7 @@ public theorem exists_finiteEtale_extension_of_isEffectiveCartierDivisor
 public abbrev standardTamelyRamifiedAlgebra (A : Type u) [CommRing A] (f : A) (e : ℕ)
 ```
 
-**`AlgebraicGeometry.standardTamelyRamifiedMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean#L69). The attribute's comment: “standard_tamely_ramified_morphism”.
+**`AlgebraicGeometry.standardTamelyRamifiedMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean#L69). The attribute's comment: “standard\_tamely\_ramified\_morphism”.
 
 > The canonical morphism `Spec(A[X] / (X ^ e - f)) ⟶ Spec(A)`.
 
@@ -149,7 +149,7 @@ public noncomputable abbrev standardTamelyRamifiedMorphism
       Scheme.Spec.obj (Opposite.op (CommRingCat.of A))
 ```
 
-**`AlgebraicGeometry.standardTamelyRamifiedCover`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean#L79). The attribute's comment: “standard_tamely_ramified_morphism”.
+**`AlgebraicGeometry.standardTamelyRamifiedCover`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean#L79). The attribute's comment: “standard\_tamely\_ramified\_morphism”.
 
 > The associated cover, obtained by restricting the standard morphism over
 > `Spec(A_f)`.
@@ -162,7 +162,7 @@ public noncomputable abbrev standardTamelyRamifiedCover
       Scheme.Spec.obj (Opposite.op (CommRingCat.of (Localization.Away f)))
 ```
 
-**`AlgebraicGeometry.standardTamelyRamifiedCover_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean#L91). The attribute's comment: “standard_cover_etale_away”. References: SGA 1 XIII (5.1), “r = 1, étale part”.
+**`AlgebraicGeometry.standardTamelyRamifiedCover_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean#L91). The attribute's comment: “standard\_cover\_etale\_away”. References: SGA 1 XIII (5.1), “r = 1, étale part”.
 
 > Away from `f`, the standard cover defined by `X ^ e = f` is étale when
 > `e` is a unit in the base ring.
@@ -174,7 +174,7 @@ public theorem standardTamelyRamifiedCover_etale
     Etale (standardTamelyRamifiedCover A f e)
 ```
 
-**`AlgebraicGeometry.standardTamelyRamifiedMorphism_finiteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean#L181). The attribute's comment: “standard_morphism_finite_locally_free”. References: SGA 1 XIII (5.1), “r = 1, finite part”.
+**`AlgebraicGeometry.standardTamelyRamifiedMorphism_finiteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean#L181). The attribute's comment: “standard\_morphism\_finite\_locally\_free”. References: SGA 1 XIII (5.1), “r = 1, finite part”.
 
 > The standard morphism `Spec(A[X] / (X ^ e - f)) ⟶ Spec(A)` is finite locally free: it is
 > finite, flat and locally of finite presentation. In fact `A[X] / (X ^ e - f)` is free of rank
@@ -189,7 +189,7 @@ public theorem standardTamelyRamifiedMorphism_finiteLocallyFree
       LocallyOfFinitePresentation (standardTamelyRamifiedMorphism A f e)
 ```
 
-**`AlgebraicGeometry.standardTamelyRamifiedCover_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean#L210). The attribute's comment: “the restriction of the standard morphism over Spec(A_f), that is the standard cover, is finite”.
+**`AlgebraicGeometry.standardTamelyRamifiedCover_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/Basic.lean#L210). The attribute's comment: “the restriction of the standard morphism over Spec(A\_f), that is the standard cover, is finite”.
 
 > **Stacks 0EYF, finiteness of the standard cover.** The restriction
 > `Spec(C_f) ⟶ Spec(A_f)` of the standard morphism over `Spec(A_f)` is finite. The ring `C_f` is
@@ -207,7 +207,7 @@ public theorem standardTamelyRamifiedCover_isFinite
     IsFinite (standardTamelyRamifiedCover A f e)
 ```
 
-**`AlgebraicGeometry.isDiscreteValuationRing_of_mem_minimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExample.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExample.lean#L177). The attribute's comment: “the hypotheses on the base imply that A_p is a DVR with uniformizer f, for every minimal prime p over f”.
+**`AlgebraicGeometry.isDiscreteValuationRing_of_mem_minimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExample.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExample.lean#L177). The attribute's comment: “the hypotheses on the base imply that A\_p is a DVR with uniformizer f, for every minimal prime p over f”.
 
 > **Tag 0EYF, the base of the standard tamely ramified morphism.** Let `A` be a Noetherian
 > ring, let `f : A` be a nonzerodivisor such that `A / fA` is reduced, and let `p` be a minimal
@@ -223,7 +223,7 @@ public theorem isDiscreteValuationRing_of_mem_minimalPrimes [IsNoetherianRing A]
     ∃ _ : IsDomain S, IsDiscreteValuationRing S ∧ Irreducible (algebraMap A S f)
 ```
 
-**`AlgebraicGeometry.standardTamelyRamifiedGenericFibreEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExample.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExample.lean#L254). The attribute's comment: “standard_cover_generic_fibre”.
+**`AlgebraicGeometry.standardTamelyRamifiedGenericFibreEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExample.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExample.lean#L254). The attribute's comment: “standard\_cover\_generic\_fibre”.
 
 > **The generic fibre of the standard morphism is the Kummer extension.** Base changing
 > `C = A[X] / (X ^ e - f)` along `A → K` gives `K[X] / (X ^ e - f)`, i.e. the Kummer algebra
@@ -253,7 +253,7 @@ public theorem standardTamelyRamifiedGenericFibre_isTamelyRamified
     IsDiscreteValuationRing.IsTamelyRamifiedWithRespectTo A K (K1 K f e)
 ```
 
-**`AlgebraicGeometry.isTamelyRamified_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExample.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExample.lean#L307). The attribute's comment: “trivial_extension_tame”.
+**`AlgebraicGeometry.isTamelyRamified_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExample.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExample.lean#L307). The attribute's comment: “trivial\_extension\_tame”.
 
 > **The trivial extension is tamely ramified.** `K / K` is tamely ramified with respect to
 > the discrete valuation ring `A`.
@@ -263,7 +263,7 @@ public theorem isTamelyRamified_self :
     IsDiscreteValuationRing.IsTamelyRamifiedWithRespectTo A K K
 ```
 
-**`AlgebraicGeometry.standardTamelyRamifiedGenericFibreEquivOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExample.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExample.lean#L322). The attribute's comment: “standard_cover_generic_fibre_one”.
+**`AlgebraicGeometry.standardTamelyRamifiedGenericFibreEquivOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExample.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExample.lean#L322). The attribute's comment: “standard\_cover\_generic\_fibre\_one”.
 
 > **Tag 0EYF, the exponent `e = 1`.** The generic fibre of the standard morphism for `e = 1`
 > is `K` itself; combined with `isTamelyRamified_self` this is tameness in codimension one for
@@ -294,7 +294,7 @@ public theorem standardTamelyRamifiedGenericFibreFactor_isTamelyRamified
       IsDiscreteValuationRing.IsTamelyRamifiedWithRespectTo A K L
 ```
 
-**`AlgebraicGeometry.standardTamelyRamifiedCover_isTamelyRamifiedInCodimensionOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExampleCodimensionOne.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExampleCodimensionOne.lean#L387). The attribute's comment: “standard_cover_tame_codimension_one”. References: SGA 1 XIII (5.1), “r = 1, codim 1 tame”.
+**`AlgebraicGeometry.standardTamelyRamifiedCover_isTamelyRamifiedInCodimensionOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExampleCodimensionOne.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/TameRamification/StandardExampleCodimensionOne.lean#L387). The attribute's comment: “standard\_cover\_tame\_codimension\_one”. References: SGA 1 XIII (5.1), “r = 1, codim 1 tame”.
 
 > **Stacks 0EYF, tameness in codimension one.** Let `A` be a Noetherian ring, let `f : A` be a
 > nonzerodivisor such that `A / fA` is reduced, and let `e ≥ 1` be invertible in `A`.  The finite
@@ -493,7 +493,7 @@ theorem exists_extension_of_genericFiber_of_isNoetherian
 
 [Tag 0EZJ](https://stacks.math.columbia.edu/tag/0EZJ) in the Stacks Project.
 
-**`AlgebraicGeometry.FiniteEtaleGaloisCover.exists_extending_genericFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCoverLimits/ExtensionTheorem.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCoverLimits/ExtensionTheorem.lean#L57). The attribute's comment: “the full statement under the tag's hypotheses: S qcqs integral normal; f qcqs smooth with geometrically connected fibres and a section σ; Z a finite étale Galois cover of X_η with group G of order invertible on S and a κ(η)-point over σ(η); the extension Y is G-equivariantly a Galois cover restricting to Z”.
+**`AlgebraicGeometry.FiniteEtaleGaloisCover.exists_extending_genericFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCoverLimits/ExtensionTheorem.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCoverLimits/ExtensionTheorem.lean#L57). The attribute's comment: “the full statement under the tag's hypotheses: S qcqs integral normal; f qcqs smooth with geometrically connected fibres and a section σ; Z a finite étale Galois cover of X\_η with group G of order invertible on S and a κ(η)-point over σ(η); the extension Y is G-equivariantly a Galois cover restricting to Z”.
 
 > **Stacks Project, Tag 0EZJ.** Let `S` be a quasi-compact and quasi-separated integral normal
 > scheme with generic point `η`, let `f : X ⟶ S` be a quasi-compact and quasi-separated smooth

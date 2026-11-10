@@ -414,7 +414,7 @@ def universalPolynomial (n d : ℕ) (i : Fin n) :
 abbrev universalQuotientRing (n d : ℕ)
 ```
 
-**`AlgebraicGeometry.universalBaseScheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamily.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamily.lean#L107). The attribute's comment: “the coefficient scheme X_{n,d}”.
+**`AlgebraicGeometry.universalBaseScheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamily.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamily.lean#L107). The attribute's comment: “the coefficient scheme X\_\{n,d}”.
 
 > The coefficient scheme `X_{n,d} = Spec(A)`.
 
@@ -460,7 +460,7 @@ theorem mem_universalQuasiFiniteOpen_iff
       quasiFiniteAt (universalAmbientMorphism n d) x
 ```
 
-**`AlgebraicGeometry.universalQuasiFiniteScheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamily.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamily.lean#L157). The attribute's comment: “the open subscheme Y_{n,d}”.
+**`AlgebraicGeometry.universalQuasiFiniteScheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamily.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamily.lean#L157). The attribute's comment: “the open subscheme Y\_\{n,d}”.
 
 > The universal open subscheme `Y_{n,d}`.
 
@@ -468,7 +468,7 @@ theorem mem_universalQuasiFiniteOpen_iff
 def universalQuasiFiniteScheme (n d : ℕ) [NeZero n] [NeZero d] : Scheme
 ```
 
-**`AlgebraicGeometry.universalQuasiFiniteMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamily.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamily.lean#L162). The attribute's comment: “the morphism Y_{n,d} ⟶ X_{n,d}”.
+**`AlgebraicGeometry.universalQuasiFiniteMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamily.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamily.lean#L162). The attribute's comment: “the morphism Y\_\{n,d} ⟶ X\_\{n,d}”.
 
 > The restriction `Y_{n,d} ⟶ X_{n,d}` of the universal affine family.
 
@@ -523,7 +523,7 @@ theorem universalQuasiFiniteOpen_greatest
 
 [Tag 0FK9](https://stacks.math.columbia.edu/tag/0FK9) in the Stacks Project.
 
-**`AlgebraicGeometry.universalBaseScheme_irreducibleSpace`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean#L77). The attribute's comment: “x_irreducible”.
+**`AlgebraicGeometry.universalBaseScheme_irreducibleSpace`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean#L77). The attribute's comment: “x\_irreducible”.
 
 > The universal coefficient scheme `X_{n,d}` is irreducible.
 
@@ -532,7 +532,7 @@ instance universalBaseScheme_irreducibleSpace (n d : ℕ) [NeZero n] [NeZero d] 
     IrreducibleSpace (universalBaseScheme n d)
 ```
 
-**`AlgebraicGeometry.universalBaseScheme_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean#L84). The attribute's comment: “x_regular”.
+**`AlgebraicGeometry.universalBaseScheme_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean#L84). The attribute's comment: “x\_regular”.
 
 > The universal coefficient scheme `X_{n,d}` is regular.
 
@@ -541,7 +541,7 @@ theorem universalBaseScheme_isRegular (n d : ℕ) [NeZero n] [NeZero d] :
     IsRegular (universalBaseScheme n d)
 ```
 
-**`AlgebraicGeometry.universalQuasiFiniteScheme_irreducibleSpace`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean#L95). The attribute's comment: “y_irreducible”.
+**`AlgebraicGeometry.universalQuasiFiniteScheme_irreducibleSpace`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean#L95). The attribute's comment: “y\_irreducible”.
 
 > The universal quasi-finite open subscheme `Y_{n,d}` is irreducible.
 
@@ -551,7 +551,7 @@ instance universalQuasiFiniteScheme_irreducibleSpace
     IrreducibleSpace (universalQuasiFiniteScheme n d)
 ```
 
-**`AlgebraicGeometry.universalQuasiFiniteScheme_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean#L420). The attribute's comment: “y_regular”.
+**`AlgebraicGeometry.universalQuasiFiniteScheme_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean#L420). The attribute's comment: “y\_regular”.
 
 > The universal quasi-finite open subscheme `Y_{n,d}` is regular.
 
@@ -569,7 +569,7 @@ theorem universalQuasiFiniteMorphism_syntomic (n d : ℕ) [NeZero n] [NeZero d] 
     Syntomic (universalQuasiFiniteMorphism n d)
 ```
 
-**`AlgebraicGeometry.exists_dense_opens_etale_universalQuasiFiniteMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean#L433). The attribute's comment: “dense_etale_open”.
+**`AlgebraicGeometry.exists_dense_opens_etale_universalQuasiFiniteMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean#L433). The attribute's comment: “dense\_etale\_open”.
 
 > There is a dense open subscheme `V ⊆ Y_{n,d}` on which the universal quasi-finite family
 > restricts to an étale morphism `V ⟶ X_{n,d}`.
@@ -584,7 +584,7 @@ theorem exists_dense_opens_etale_universalQuasiFiniteMorphism
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.universalQuasiFiniteMorphism_locallyQuasiFinite`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamily.lean#L193), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean#L72) (StacksFrontier): “locally_quasi_finite”.
+- [`AlgebraicGeometry.universalQuasiFiniteMorphism_locallyQuasiFinite`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamily.lean#L193), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/QuasiFiniteSyntomic/UniversalFamilyProperties.lean#L72) (StacksFrontier): “locally\_quasi\_finite”.
 
 ## Tag 0FKA, a lemma
 

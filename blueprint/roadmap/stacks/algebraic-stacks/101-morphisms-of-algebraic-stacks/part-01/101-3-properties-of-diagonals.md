@@ -180,7 +180,7 @@ def automorphismGroupSpace (B : BigFppfSite.{u})
 
 [Tag 04XS](https://stacks.math.columbia.edu/tag/04XS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_relativeDiagonal_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalFiniteType.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalFiniteType.lean#L266). The attribute's comment: “diagonal_locally_finite_type”.
+**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_relativeDiagonal_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalFiniteType.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalFiniteType.lean#L266). The attribute's comment: “diagonal\_locally\_finite\_type”.
 
 > **Stacks 04XS, part (2).** The relative diagonal of a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic
 > stacks over the big fppf site of `S` is locally of finite type: it is representable by algebraic
@@ -212,7 +212,7 @@ theorem isLocallyOfFiniteType_relativeDiagonal_of_isAlgebraicStack
           ((spacesOverSmallerBaseFunctor B U.left.1 S U.left.2 hS U.hom).obj ⟨F, hF⟩)).hom
 ```
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_relativeDiagonal_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalRepresentable.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalRepresentable.lean#L103). The attribute's comment: “diagonal_representable”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_relativeDiagonal_of_isAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalRepresentable.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalRepresentable.lean#L103). The attribute's comment: “diagonal\_representable”.
 
 > **Stacks 04XS, part (1).** The relative diagonal `Δ_f : 𝒳 ⟶ 𝒳 ×_{f, 𝒴, f} 𝒳` of a
 > 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over the big fppf site of `S` is representable by

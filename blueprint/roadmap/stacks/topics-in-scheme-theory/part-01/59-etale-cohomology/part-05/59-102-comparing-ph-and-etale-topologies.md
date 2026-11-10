@@ -55,7 +55,7 @@ public theorem smallEtaleInverseImage_isSheaf_ph_and_isIso_unit :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.etaleInverseImageSectionsIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtalePullbackSections.lean#L327), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/SmallEtalePullbackSheaf.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/SmallEtalePullbackSheaf.lean#L75) (StacksFrontier): “the rule is the inverse image π_S⁻¹F on the big étale site”.
+- [`AlgebraicGeometry.etaleInverseImageSectionsIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmallEtalePullbackSections.lean#L327), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/SmallEtalePullbackSheaf.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/SmallEtalePullbackSheaf.lean#L75) (StacksFrontier): “the rule is the inverse image π\_S⁻¹F on the big étale site”.
 
 ## Tag 0DDX, a lemma
 
@@ -341,7 +341,7 @@ public def phEtaleTorsionDerivedCohomologyIso
               ((phAssociatedBigEtaleSite B).topology.over X)).mapDerivedCategoryPlus.obj K)))
 ```
 
-**`AlgebraicGeometry.phEtaleTorsionConstantCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/PhTorsionCohomology.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/PhTorsionCohomology.lean#L139). The attribute's comment: “the example: H^q_et(X, A) = H^q_ph(X, A) for a torsion abelian group A”.
+**`AlgebraicGeometry.phEtaleTorsionConstantCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/PhTorsionCohomology.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ComparingBigSmall/PhTorsionCohomology.lean#L139). The attribute's comment: “the example: H^q\_et(X, A) = H^q\_ph(X, A) for a torsion abelian group A”.
 
 > **Stacks 0DE6, the example.** For an object `X` of the big ph site, a torsion abelian group `A`
 > and every `q`, `H^q_étale(X, A) = H^q_ph(X, A)`, the cohomology of the constant sheaves with value

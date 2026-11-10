@@ -151,7 +151,7 @@ theorem FCrystal.exists_isFiniteLocallyFreeOfRankLE_of_compactSpace [CompactSpac
 
 [Tag 07N5](https://stacks.math.columbia.edu/tag/07N5) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.statement07N5`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Frobenius07N5Theorem.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Frobenius07N5Theorem.lean#L271). The attribute's comment: “the theorem: for a nondegenerate F-crystal over a p-adically complete Noetherian A with X -> S_0 proper smooth, the canonical map F_E o (F_X)_cris^* on RGamma(Cris(X/S), E) becomes an isomorphism after inverting p”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.statement07N5`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Frobenius07N5Theorem.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Frobenius07N5Theorem.lean#L271). The attribute's comment: “the theorem: for a nondegenerate F-crystal over a p-adically complete Noetherian A with X -> S\_0 proper smooth, the canonical map F\_E o (F\_X)\_cris^* on RGamma(Cris(X/S), E) becomes an isomorphism after inverting p”.
 
 > **[Stacks, Tag 07N5].**  In Situation [Stacks, Tag 07N2] let `(E, F_E)` be a nondegenerate
 > `F`-crystal.  Assume `A` is a `p`-adically complete Noetherian ring and that `X → S₀` is proper

@@ -280,7 +280,7 @@ theorem isDerivedLimit_map_derivedPushforward
 
 [Tag 0BKQ](https://stacks.math.columbia.edu/tag/0BKQ) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedLimits.sheafificationCohomologyPresheafSystemIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitComparisonDiagram.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitComparisonDiagram.lean#L168). The attribute's comment: “the cohomology sheaf H^m(K_n) of each member of the inverse system is the sheafification of the cohomology presheaf U ↦ H^m(U, K_n), naturally in n”.
+**`Stacks.Cohomology.DerivedLimits.sheafificationCohomologyPresheafSystemIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitComparisonDiagram.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitComparisonDiagram.lean#L168). The attribute's comment: “the cohomology sheaf H^m(K\_n) of each member of the inverse system is the sheafification of the cohomology presheaf U ↦ H^m(U, K\_n), naturally in n”.
 
 > **Stacks 0BKQ, first assertion.** For an inverse system `(Kₙ)` in `D(O)` and a degree `m`,
 > the cohomology sheaf `𝓗ᵐ_n = Hᵐ(Kₙ)` is the sheafification of the cohomology presheaf
@@ -307,7 +307,7 @@ def sheafificationCohomologyPresheafSystemIso {X : TopCat.{u}}
       K ⋙ DerivedCategory.homologyFunctor (SheafOfModules.{u} O) m
 ```
 
-**`Stacks.Cohomology.DerivedLimits.cohomologyDerivedLimitDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitComparisonDiagram.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitComparisonDiagram.lean#L198). The attribute's comment: “the cohomology sheaves of the system and of the derived limit are the sheafifications of the cohomology presheaves U ↦ H^m(U, K_n) and U ↦ H^m(U, R lim K_n), and the comparison square of the remark's diagram commutes”.
+**`Stacks.Cohomology.DerivedLimits.cohomologyDerivedLimitDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitComparisonDiagram.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitComparisonDiagram.lean#L198). The attribute's comment: “the cohomology sheaves of the system and of the derived limit are the sheafifications of the cohomology presheaves U ↦ H^m(U, K\_n) and U ↦ H^m(U, R lim K\_n), and the comparison square of the remark's diagram commutes”.
 
 > **Stacks 0BKQ, first assertion and diagram.** Let `O` be a sheaf of rings on a space, let
 > `(Kₙ)` be an inverse system in `D(O)` and let `L` be a derived limit of it, given by its
@@ -362,7 +362,7 @@ theorem cohomologyDerivedLimitDiagram {X : TopCat.{u}}
       (S.map a ≫ c = e.hom.app L ≫ b)
 ```
 
-**`Stacks.Cohomology.DerivedLimits.exists_shortExact_limOne_cohomology_derivedLimit_family`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimits.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimits.lean#L389). The attribute's comment: “the short exact sequences of Equation 0BKR over each open U: 0 → R¹ lim H^(m-1)(U, K_n) → H^m(U, R lim K_n) → lim H^m(U, K_n) → 0”.
+**`Stacks.Cohomology.DerivedLimits.exists_shortExact_limOne_cohomology_derivedLimit_family`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimits.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimits.lean#L389). The attribute's comment: “the short exact sequences of Equation 0BKR over each open U: 0 → R¹ lim H^(m-1)(U, K\_n) → H^m(U, R lim K\_n) → lim H^m(U, K\_n) → 0”.
 
 > **Stacks 0BKQ.** For a family of derived-sections functors indexed by the opens of a
 > ringed space, the cohomology of a derived inverse limit lies in the Milnor short exact

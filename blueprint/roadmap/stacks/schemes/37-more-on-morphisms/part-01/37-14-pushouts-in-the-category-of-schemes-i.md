@@ -77,7 +77,7 @@ theorem hasPushout_of_isFiniteOrderThickening_of_isAffineHom (i : X ⟶ X') (f :
     (hi : IsFiniteOrderThickening i) [IsAffineHom f] : HasPushout i f
 ```
 
-**`Stacks.Pushout.isPullback_pushout_of_isFiniteOrderThickening_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean#L178). The attribute's comment: “that the square is cartesian, X = Y ×_{Y'} X'; for a thickening of finite order”.
+**`Stacks.Pushout.isPullback_pushout_of_isFiniteOrderThickening_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean#L178). The attribute's comment: “that the square is cartesian, X = Y ×\_\{Y'} X'; for a thickening of finite order”.
 
 > **Stacks Project, Tag 07RT, third assertion, for a finite-order thickening.**  The pushout
 > square of a finite-order thickening and an affine morphism is also cartesian, that is,
@@ -101,7 +101,7 @@ theorem pushout_inr_isThickening_of_isFiniteOrderThickening (i : X ⟶ X') (f : 
     IsThickening (pushout.inr i f)
 ```
 
-**`Stacks.Pushout.pushout_structureSheaf_isPullback_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean#L207). The attribute's comment: “the description of 𝒪_{Y'} as 𝒪_Y ×_{f_*𝒪_X} f'_*𝒪_{X'}; for a thickening of finite order”.
+**`Stacks.Pushout.pushout_structureSheaf_isPullback_of_isFiniteOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutFiniteOrder.lean#L207). The attribute's comment: “the description of 𝒪\_\{Y'} as 𝒪\_Y ×\_\{f\_*𝒪\_X} f'\_*𝒪\_\{X'}; for a thickening of finite order”.
 
 > **Stacks Project, Tag 07RT, fourth assertion, for a finite-order thickening.**  On every open
 > `U` of the pushout of a finite-order thickening `i : X ⟶ X'` and an affine morphism `f : X ⟶ Y`
@@ -119,7 +119,7 @@ theorem pushout_structureSheaf_isPullback_of_isFiniteOrderThickening (i : X ⟶ 
           (pushout.condition (f := i) (g := f)))))
 ```
 
-**`Stacks.Pushout.exists_isPushout_isPullback_isThickening_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean#L77). The attribute's comment: “the existence of the pushout, that Y ⊂ Y' is a thickening and that the square is cartesian, X = Y ×_{Y'} X'”.
+**`Stacks.Pushout.exists_isPushout_isPullback_isThickening_of_isThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean#L77). The attribute's comment: “the existence of the pushout, that Y ⊂ Y' is a thickening and that the square is cartesian, X = Y ×\_\{Y'} X'”.
 
 > **Stacks Project, Tag 07RT for an arbitrary thickening, on an explicitly constructed apex.**
 > For a thickening `i : X ⟶ X'` and an affine morphism `f : X ⟶ Y` there is a scheme `Q` with maps
@@ -154,7 +154,7 @@ theorem pushout_inr_isThickening' (i : X ⟶ X') (f : X ⟶ Y) (hi : IsThickenin
     [HasPushout i f] : IsThickening (pushout.inr i f)
 ```
 
-**`Stacks.Pushout.isPullback_pushout_of_isThickening_of_isAffineHom'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean#L107). The attribute's comment: “that the square is cartesian, X = Y ×_{Y'} X'”.
+**`Stacks.Pushout.isPullback_pushout_of_isThickening_of_isAffineHom'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean#L107). The attribute's comment: “that the square is cartesian, X = Y ×\_\{Y'} X'”.
 
 > **Stacks Project, Tag 07RT, third assertion.**  The pushout square of a thickening and an
 > affine morphism is also cartesian, that is, `X = Y ×_{Y'} X'`; stated for Mathlib's canonical
@@ -166,7 +166,7 @@ theorem isPullback_pushout_of_isThickening_of_isAffineHom' (i : X ⟶ X') (f : X
     IsPullback i f (pushout.inl i f) (pushout.inr i f)
 ```
 
-**`Stacks.Pushout.pushout_structureSheaf_isPullback'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean#L117). The attribute's comment: “the description of 𝒪_{Y'} as 𝒪_Y ×_{f_*𝒪_X} f'_*𝒪_{X'}”.
+**`Stacks.Pushout.pushout_structureSheaf_isPullback'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutUnconditional.lean#L117). The attribute's comment: “the description of 𝒪\_\{Y'} as 𝒪\_Y ×\_\{f\_*𝒪\_X} f'\_*𝒪\_\{X'}”.
 
 > **Stacks Project, Tag 07RT, fourth assertion.**  On every open `U` of the pushout of a
 > thickening `i : X ⟶ X'` and an affine morphism `f : X ⟶ Y` the ring of sections is the fibre
@@ -212,7 +212,7 @@ noncomputable def gluingFunctor {X X' Y : Scheme.{u}}
     gluingData i f ⥤ Over (pushout i f)
 ```
 
-**`Stacks.Pushout.gluingFunctor_obj_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean, line 562](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean#L562). The attribute's comment: “the left adjoint sends a triple to the pushout V ⨿_{V ×_Y X} U'”.
+**`Stacks.Pushout.gluingFunctor_obj_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean, line 562](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningPushoutGluing.lean#L562). The attribute's comment: “the left adjoint sends a triple to the pushout V ⨿\_\{V ×\_Y X} U'”.
 
 > The glued scheme is the pushout of its two components along their
 > identified restrictions to `X`, with the induced map to the ambient pushout.

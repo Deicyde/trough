@@ -243,7 +243,7 @@ noncomputable def sheafPushforwardContinuousStarOverPostIso [HasBinaryProducts C
 
 [Tag 04IN](https://stacks.math.columbia.edu/tag/04IN) in the Stacks Project.
 
-**`MorphismOfTopoi.relocalize`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/RelocalizationMorphism.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/RelocalizationMorphism.lean#L163). The attribute's comment: “the morphism of topoi f_c and the factorization f_c = f' ∘ j_{U/u(V)}”.
+**`MorphismOfTopoi.relocalize`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/RelocalizationMorphism.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/RelocalizationMorphism.lean#L163). The attribute's comment: “the morphism of topoi f\_c and the factorization f\_c = f' ∘ j\_\{U/u(V)}”.
 
 > **Stacks 04IN.** Let `f : E ⟶ D` be a morphism of topoi, `V` an object of `D`, `U` an object
 > of `E` and `c : U ⟶ f⁻¹V`.  The morphism of topoi `f_c : E/U ⟶ D/V` is the composition
@@ -264,7 +264,7 @@ noncomputable def relocalize {V : D} {U : E} (c : U ⟶ f.inverseImage.obj V)
     MorphismOfTopoi (Over U) (Over V)
 ```
 
-**`MorphismOfTopoi.relocalize_inverseImage_obj`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/RelocalizationMorphism.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/RelocalizationMorphism.lean#L175). The attribute's comment: “the description of (f_c)^{-1} as a fibre product”.
+**`MorphismOfTopoi.relocalize_inverseImage_obj`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/RelocalizationMorphism.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/RelocalizationMorphism.lean#L175). The attribute's comment: “the description of (f\_c)^\{-1} as a fibre product”.
 
 > **Stacks 04IN**, the description of `(f_c)⁻¹`: an object `φ : H ⟶ V` of `D/V` is sent to the
 > fibre product

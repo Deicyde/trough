@@ -52,7 +52,7 @@ abbrev derivedPushforward' : DerivedCategory.Plus (Modules.{u, u} B S hS D.Y'.1 
 
 [Tag 07U8](https://stacks.math.columbia.edu/tag/07U8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_rightDerivedFunctorPlusUnit_app_modulePushforward_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineDirectImageDerivedComparison.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineDirectImageDerivedComparison.lean#L122). The attribute's comment: “f_*F ≅ Rf_*F: the canonical map from the direct image to the derived direct image is an isomorphism”.
+**`AlgebraicGeometry.Space.isIso_rightDerivedFunctorPlusUnit_app_modulePushforward_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineDirectImageDerivedComparison.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineDirectImageDerivedComparison.lean#L122). The attribute's comment: “f\_*F ≅ Rf\_*F: the canonical map from the direct image to the derived direct image is an isomorphism”.
 
 > **Stacks 07U8, `f_*F ≅ Rf_*F`.** Let `f : X ⟶ Y` be an affine morphism of algebraic spaces
 > over `S` and let `F` be a quasi-coherent `𝒪_X`-module. Then the canonical map from the direct
@@ -112,7 +112,7 @@ theorem isQuasicoherentOnSite_modulePushforward_isAffineHom {X Y : AlgebraicSpac
     ((modulePushforward B S hS f).obj F).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.isIso_moduleBaseChangeMap_app_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleAffineBaseChange.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleAffineBaseChange.lean#L229). The attribute's comment: “base change: g^*f_*F = f'_*(g')^*F for f affine and F quasi-coherent”.
+**`AlgebraicGeometry.Space.isIso_moduleBaseChangeMap_app_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModuleAffineBaseChange.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModuleAffineBaseChange.lean#L229). The attribute's comment: “base change: g^*f\_*F = f'\_*(g')^*F for f affine and F quasi-coherent”.
 
 > **Affine base change for the direct image of a quasi-coherent module** (the base change
 > clause of Stacks 07U8; Stacks 02KG for schemes).  For a cartesian square of algebraic spaces
@@ -180,7 +180,7 @@ def baseChangeMap (hg : IsFlat B S hS D.g.hom) :
           (smallEtaleRingedToposHom B S hS D.f').toRingedToposModulesHom).rightDerivedFunctorPlus
 ```
 
-**`AlgebraicGeometry.Space.BaseChangeDiagram.baseChangeMap_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyFlatBaseChange.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyFlatBaseChange.lean#L222). The attribute's comment: “canonical characterization of the base change map of Tag 0736 for the cartesian square: it is determined by its agreement, after the derived-functor unit of Rf_*, with the degreewise comparison. Neither part (1) nor part (2) of the tag is proved here”.
+**`AlgebraicGeometry.Space.BaseChangeDiagram.baseChangeMap_fac`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CohomologyFlatBaseChange.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CohomologyFlatBaseChange.lean#L222). The attribute's comment: “canonical characterization of the base change map of Tag 0736 for the cartesian square: it is determined by its agreement, after the derived-functor unit of Rf\_*, with the degreewise comparison. Neither part (1) nor part (2) of the tag is proved here”.
 
 > **The base change map of the square is the canonical one.**  Composed with the
 > derived-functor unit of `Rf_*`, it is the degreewise comparison on the bounded below homotopy
@@ -203,7 +203,7 @@ theorem baseChangeMap_fac (hg : IsFlat B S hS D.g.hom) :
           (D.isFlat_smallEtaleRingedToposHom_source hg)
 ```
 
-**`AlgebraicGeometry.Space.BaseChangeDiagram.affineCohomologyBaseChangeIsoBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatAffineCohomologyBaseChangeBLinear.lean, line 744](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatAffineCohomologyBaseChangeBLinear.lean#L744). The attribute's comment: “part (2), the affine case: H^i(X,F) ⊗_A B = H^i(X',F') as B-modules”.
+**`AlgebraicGeometry.Space.BaseChangeDiagram.affineCohomologyBaseChangeIsoBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatAffineCohomologyBaseChangeBLinear.lean, line 744](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatAffineCohomologyBaseChangeBLinear.lean#L744). The attribute's comment: “part (2), the affine case: H^i(X,F) ⊗\_A B = H^i(X',F') as B-modules”.
 
 > **Flat base change of cohomology over affine bases: `H^i(X, 𝓕) ⊗_A B = H^i(X', 𝓕')` as
 > `B`-modules.** For the cartesian square of **Stacks 073J** with `𝓕` quasi-coherent, `g` flat, `f`
@@ -230,7 +230,7 @@ def affineCohomologyBaseChangeIsoBase (hZ : B.Contains (⊤_ Scheme.{u}))
         (D.affineCohomologyTarget i)
 ```
 
-**`AlgebraicGeometry.Space.isIso_higherDirectImageBaseChangeMap_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/HigherDirectImageFlatBaseChange.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/HigherDirectImageFlatBaseChange.lean#L246). The attribute's comment: “part (1): for a cartesian square of algebraic spaces with g flat and f quasi-compact and quasi-separated, the base change map g^*R^if_*F ⟶ R^if'_*F' of Tag 0736 is an isomorphism for every quasi-coherent F and every i ≥ 0”.
+**`AlgebraicGeometry.Space.isIso_higherDirectImageBaseChangeMap_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/HigherDirectImageFlatBaseChange.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/HigherDirectImageFlatBaseChange.lean#L246). The attribute's comment: “part (1): for a cartesian square of algebraic spaces with g flat and f quasi-compact and quasi-separated, the base change map g^*R^if\_*F ⟶ R^if'\_*F' of Tag 0736 is an isomorphism for every quasi-coherent F and every i ≥ 0”.
 
 > **Stacks 073K, part (1): flat base change for higher direct images.**  Let
 >

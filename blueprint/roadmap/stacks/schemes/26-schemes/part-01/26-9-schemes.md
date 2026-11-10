@@ -33,7 +33,7 @@ Declarations registered for the tag:
 
 [Tag 01IL](https://stacks.math.columbia.edu/tag/01IL) in the Stacks Project.
 
-**`AlgebraicGeometry.PuncturedAffinePlane.xOpen_sup_yOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean#L229). The attribute's comment: “affine_open_cover”.
+**`AlgebraicGeometry.PuncturedAffinePlane.xOpen_sup_yOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean#L229). The attribute's comment: “affine\_open\_cover”.
 
 > The two coordinate standard opens cover the punctured affine plane.
 
@@ -41,7 +41,7 @@ Declarations registered for the tag:
 theorem xOpen_sup_yOpen : xOpen S ⊔ yOpen S = ⊤
 ```
 
-**`AlgebraicGeometry.PuncturedAffinePlane.isAffineOpen_xOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean#L251). The attribute's comment: “affine_open_cover”.
+**`AlgebraicGeometry.PuncturedAffinePlane.isAffineOpen_xOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean#L251). The attribute's comment: “affine\_open\_cover”.
 
 > The first-coordinate member of the standard cover is affine.
 
@@ -49,7 +49,7 @@ theorem xOpen_sup_yOpen : xOpen S ⊔ yOpen S = ⊤
 theorem isAffineOpen_xOpen : IsAffineOpen (xOpen S)
 ```
 
-**`AlgebraicGeometry.PuncturedAffinePlane.isAffineOpen_yOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean#L256). The attribute's comment: “affine_open_cover”.
+**`AlgebraicGeometry.PuncturedAffinePlane.isAffineOpen_yOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean#L256). The attribute's comment: “affine\_open\_cover”.
 
 > The second-coordinate member of the standard cover is affine.
 
@@ -57,7 +57,7 @@ theorem isAffineOpen_xOpen : IsAffineOpen (xOpen S)
 theorem isAffineOpen_yOpen : IsAffineOpen (yOpen S)
 ```
 
-**`AlgebraicGeometry.PuncturedAffinePlane.xOpen_inf_yOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean#L261). The attribute's comment: “affine_open_cover”.
+**`AlgebraicGeometry.PuncturedAffinePlane.xOpen_inf_yOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean#L261). The attribute's comment: “affine\_open\_cover”.
 
 > The intersection of the two members of the cover is the product standard open.
 
@@ -65,7 +65,7 @@ theorem isAffineOpen_yOpen : IsAffineOpen (yOpen S)
 theorem xOpen_inf_yOpen : xOpen S ⊓ yOpen S = xyOpen S
 ```
 
-**`AlgebraicGeometry.PuncturedAffinePlane.toScheme_iso_specAway_x`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean#L267). The attribute's comment: “affine_open_cover”.
+**`AlgebraicGeometry.PuncturedAffinePlane.toScheme_iso_specAway_x`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean#L267). The attribute's comment: “affine\_open\_cover”.
 
 > The first-coordinate standard open has coordinate ring `k[x,y,1/x]`.
 
@@ -75,7 +75,7 @@ theorem toScheme_iso_specAway_x :
       Spec (.of (Localization.Away (MvPolynomial.X (0 : Fin 2) : S.R))))
 ```
 
-**`AlgebraicGeometry.PuncturedAffinePlane.toScheme_iso_specAway_y`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean#L274). The attribute's comment: “affine_open_cover”.
+**`AlgebraicGeometry.PuncturedAffinePlane.toScheme_iso_specAway_y`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean#L274). The attribute's comment: “affine\_open\_cover”.
 
 > The second-coordinate standard open has coordinate ring `k[x,y,1/y]`.
 
@@ -85,7 +85,7 @@ theorem toScheme_iso_specAway_y :
       Spec (.of (Localization.Away (MvPolynomial.X (1 : Fin 2) : S.R))))
 ```
 
-**`AlgebraicGeometry.PuncturedAffinePlane.toScheme_iso_specAway_xy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean#L281). The attribute's comment: “affine_open_cover”.
+**`AlgebraicGeometry.PuncturedAffinePlane.toScheme_iso_specAway_xy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlane.lean#L281). The attribute's comment: “affine\_open\_cover”.
 
 > The intersection standard open has coordinate ring `k[x,y,1/(xy)]`.
 
@@ -95,7 +95,7 @@ theorem toScheme_iso_specAway_xy :
       (MvPolynomial.X (0 : Fin 2) * MvPolynomial.X (1 : Fin 2) : S.R))))
 ```
 
-**`AlgebraicGeometry.not_isAffine_puncturedScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlaneNotAffine.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlaneNotAffine.lean#L40). The attribute's comment: “punctured_plane_not_affine”.
+**`AlgebraicGeometry.not_isAffine_puncturedScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlaneNotAffine.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlaneNotAffine.lean#L40). The attribute's comment: “punctured\_plane\_not\_affine”.
 
 > The affine plane with its origin removed is not affine.
 
@@ -104,7 +104,7 @@ theorem not_isAffine_puncturedScheme (S : PuncturedAffinePlane.{u}) :
     ¬ IsAffine S.puncturedScheme
 ```
 
-**`AlgebraicGeometry.restrictionPair_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlaneSections.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlaneSections.lean#L344). The attribute's comment: “sections_exact_sequence”.
+**`AlgebraicGeometry.restrictionPair_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlaneSections.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlaneSections.lean#L344). The attribute's comment: “sections\_exact\_sequence”.
 
 > **Stacks Project, Tag 01IL, sections exact sequence.** Restriction of global
 > sections to the two standard affine opens is injective.
@@ -114,7 +114,7 @@ theorem restrictionPair_injective (S : PuncturedAffinePlane.{u}) :
     Function.Injective (restrictionPair S)
 ```
 
-**`AlgebraicGeometry.restrictionPair_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlaneSections.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlaneSections.lean#L431). The attribute's comment: “sections_exact_sequence”.
+**`AlgebraicGeometry.restrictionPair_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlaneSections.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlaneSections.lean#L431). The attribute's comment: “sections\_exact\_sequence”.
 
 > **Stacks Project, Tag 01IL, sections exact sequence.** The image of global
 > sections in the product of the two localizations is the kernel of the
@@ -125,7 +125,7 @@ theorem restrictionPair_exact (S : PuncturedAffinePlane.{u}) :
     Function.Exact (restrictionPair S) (localizationDifference S)
 ```
 
-**`AlgebraicGeometry.isIso_coordinateRingToGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlaneSections.lean, line 564](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlaneSections.lean#L564). The attribute's comment: “punctured_plane_global_sections”.
+**`AlgebraicGeometry.isIso_coordinateRingToGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlaneSections.lean, line 564](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Affine/PuncturedPlaneSections.lean#L564). The attribute's comment: “punctured\_plane\_global\_sections”.
 
 > The canonical homomorphism from the coordinate ring of the affine plane to the global
 > sections of the punctured affine plane is an isomorphism.

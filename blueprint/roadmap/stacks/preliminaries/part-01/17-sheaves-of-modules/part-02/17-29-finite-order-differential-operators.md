@@ -120,7 +120,7 @@ theorem nonempty_principalPartsSequence_opens {X : TopCat.{u}}
 
 Declarations registered for the tag:
 
-- [`DiffOp.IsGlobalDiffOpOfOrder`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperatorsOrder.lean#L185), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean#L73) (StacksFrontier): “differential operators on X/S, for the map f♯ : f⁻¹𝒪_S ⟶ 𝒪_X”.
+- [`DiffOp.IsGlobalDiffOpOfOrder`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperatorsOrder.lean#L185), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/DifferentialOperators.lean#L73) (StacksFrontier): “differential operators on X/S, for the map f♯ : f⁻¹𝒪\_S ⟶ 𝒪\_X”.
 
 ## Depends on
 

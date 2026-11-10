@@ -14,7 +14,7 @@ Section 50.20 of the Stacks Project, [Tag 0FW3](https://stacks.math.columbia.edu
 
 [Tag 0FW4](https://stacks.math.columbia.edu/tag/0FW4) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.hodgeDuality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeCohomology/HodgeDuality.lean, line 922](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeCohomology/HodgeDuality.lean#L922). The attribute's comment: “for X nonempty smooth proper over a field k, equidimensional of dimension d: there is t : H^d(X, Omega^d) -> k, unique up to precomposition with multiplication by a unit of H^0(X, O_X), such that every pairing H^q(X, Omega^p) x H^{d-q}(X, Omega^{d-p}) -> k, (xi, xi') |-> t(xi cup xi') is perfect”.
+**`AlgebraicGeometry.Scheme.Hom.hodgeDuality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/HodgeCohomology/HodgeDuality.lean, line 922](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/HodgeCohomology/HodgeDuality.lean#L922). The attribute's comment: “for X nonempty smooth proper over a field k, equidimensional of dimension d: there is t : H^d(X, Omega^d) -> k, unique up to precomposition with multiplication by a unit of H^0(X, O\_X), such that every pairing H^q(X, Omega^p) x H^\{d-q}(X, Omega^\{d-p}) -> k, (xi, xi') |-> t(xi cup xi') is perfect”.
 
 > **[Stacks, Tag 0FW4].** Let `k` be a field and `X` a nonempty smooth proper scheme over `k`,
 > equidimensional of dimension `d`. There is a `k`-linear map `t : Hᵈ(X, Ω^d_{X/k}) ⟶ k` such
@@ -57,7 +57,7 @@ theorem deRhamComplex_d_zero_app_top_eq_zero (k : Type u) [Field k] {X : Scheme.
 
 [Tag 0FW6](https://stacks.math.columbia.edu/tag/0FW6) in the Stacks Project.
 
-**`AlgebraicGeometry.TopDegreeDifferential.rightDerived_map_deRham_d_eq_zero_of_isProper_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/PoincareDuality/TopDifferentialSpreadOut.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/PoincareDuality/TopDifferentialSpreadOut.lean#L298). The attribute's comment: “for X smooth proper over a field k, equidimensional of dimension d, the map d : H^d(X, Omega^{d-1}_{X/k}) -> H^d(X, Omega^d_{X/k}) is zero”.
+**`AlgebraicGeometry.TopDegreeDifferential.rightDerived_map_deRham_d_eq_zero_of_isProper_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/PoincareDuality/TopDifferentialSpreadOut.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/PoincareDuality/TopDifferentialSpreadOut.lean#L298). The attribute's comment: “for X smooth proper over a field k, equidimensional of dimension d, the map d : H^d(X, Omega^\{d-1}\_\{X/k}) -> H^d(X, Omega^d\_\{X/k}) is zero”.
 
 > **[Stacks, Tag 0FW6].** Let `k` be a field and `X` a smooth proper scheme over `k`,
 > equidimensional of dimension `d`. Then the map `d : Hᵈ(X, Ω^{d-1}_{X/k}) ⟶ Hᵈ(X, Ω^d_{X/k})`
@@ -77,7 +77,7 @@ theorem rightDerived_map_deRham_d_eq_zero_of_isProper_of_smooth {k : Type u} [Fi
 
 [Tag 0FW7](https://stacks.math.columbia.edu/tag/0FW7) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.deRhamPoincareDuality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/PoincareDuality/DeRhamPoincareDuality.lean, line 697](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/PoincareDuality/DeRhamPoincareDuality.lean#L697). The attribute's comment: “for X nonempty smooth proper over a field k, equidimensional of dimension d: there is t : H^{2d}_dR(X/k) -> k, unique up to precomposition with multiplication by a unit of H^0(X, O_X), such that for all i the pairing H^i_dR(X/k) x H^{2d-i}_dR(X/k) -> k, (xi, xi') |-> t(xi cup xi') is perfect”.
+**`AlgebraicGeometry.Scheme.Hom.deRhamPoincareDuality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DeRham/PoincareDuality/DeRhamPoincareDuality.lean, line 697](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DeRham/PoincareDuality/DeRhamPoincareDuality.lean#L697). The attribute's comment: “for X nonempty smooth proper over a field k, equidimensional of dimension d: there is t : H^\{2d}\_dR(X/k) -> k, unique up to precomposition with multiplication by a unit of H^0(X, O\_X), such that for all i the pairing H^i\_dR(X/k) x H^\{2d-i}\_dR(X/k) -> k, (xi, xi') |-> t(xi cup xi') is perfect”.
 
 > **Poincaré duality for de Rham cohomology ([Stacks, Tag 0FW7]).** Let `k` be a field and
 > `X` a nonempty smooth proper scheme over `k`, equidimensional of dimension `d`. There is a

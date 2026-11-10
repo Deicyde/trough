@@ -140,7 +140,7 @@ def derivedLowerShriekHomologyIsoFiberHomology (n : ℕ) :
 
 [Tag 08PK](https://stacks.math.columbia.edu/tag/08PK) in the Stacks Project.
 
-**`Stacks.Sites.FibredCategory.MorphismSituation.derivedAbelianLowerShriekHomologyObjIsoFiberHomologySheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekMorphismFibreHomology.lean, line 574](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekMorphismFibreHomology.lean#L574). The attribute's comment: “L_n g_!(F') is the sheaf of H_n(I_U, F'_U); assumes 07AC and cover acyclicity”.
+**`Stacks.Sites.FibredCategory.MorphismSituation.derivedAbelianLowerShriekHomologyObjIsoFiberHomologySheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekMorphismFibreHomology.lean, line 574](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekMorphismFibreHomology.lean#L574). The attribute's comment: “L\_n g\_!(F') is the sheaf of H\_n(I\_U, F'\_U); assumes 07AC and cover acyclicity”.
 
 > For an abelian sheaf `F'` on the source, `L_n g_!(F')` is the sheaf on the total category
 > associated to the presheaf `U ↦ H_n(I_U, F'_U)`. This takes as hypotheses the acyclicity
@@ -158,7 +158,7 @@ def derivedAbelianLowerShriekHomologyObjIsoFiberHomologySheaf
         ((amelioratedLowerShriek S).obj F').obj n
 ```
 
-**`Stacks.Sites.FibredCategory.MorphismSituation.derivedAbelianLowerShriekHomologyObjIsoFiberHomologySheaf_unconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekMorphismFibreHomologyUnconditional.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekMorphismFibreHomologyUnconditional.lean#L121). The attribute's comment: “L_n g_!(F') is the sheaf of H_n(I_U, F'_U)”.
+**`Stacks.Sites.FibredCategory.MorphismSituation.derivedAbelianLowerShriekHomologyObjIsoFiberHomologySheaf_unconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekMorphismFibreHomologyUnconditional.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/FibredCategory/DerivedLowerShriekMorphismFibreHomologyUnconditional.lean#L121). The attribute's comment: “L\_n g\_!(F') is the sheaf of H\_n(I\_U, F'\_U)”.
 
 > For an abelian sheaf `F'` on the source, `L_n g_!(F')` is the sheaf on the total category
 > associated to the presheaf `U ↦ H_n(I_U, F'_U)`, where `I_U` is the fibre over `U` of the

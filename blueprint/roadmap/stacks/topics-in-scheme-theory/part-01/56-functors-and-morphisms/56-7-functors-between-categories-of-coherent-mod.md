@@ -14,7 +14,7 @@ Section 56.7 of the Stacks Project, [Tag 0FZK](https://stacks.math.columbia.edu/
 
 [Tag 0FZL](https://stacks.math.columbia.edu/tag/0FZL) in the Stacks Project.
 
-**`AlgebraicGeometry.CoherentModuleFunctors.FilteredColimitExtension.preservesCoproducts`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/CoherentModuleFunctors/DirectSums.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/CoherentModuleFunctors/DirectSums.lean#L269). The attribute's comment: “direct_sums”.
+**`AlgebraicGeometry.CoherentModuleFunctors.FilteredColimitExtension.preservesCoproducts`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/CoherentModuleFunctors/DirectSums.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/CoherentModuleFunctors/DirectSums.lean#L269). The attribute's comment: “direct\_sums”.
 
 > **Stacks Project, Tag 0FZL.** An extension of an additive functor on coherent modules
 > commutes with arbitrary direct sums of quasi-coherent modules.
@@ -24,7 +24,7 @@ lemma FilteredColimitExtension.preservesCoproducts (E : FilteredColimitExtension
     (J : Type u) : PreservesColimitsOfShape (Discrete J) E.functor
 ```
 
-**`AlgebraicGeometry.CoherentModuleFunctors.FilteredColimitExtension.preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/CoherentModuleFunctors/Exactness.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/CoherentModuleFunctors/Exactness.lean#L554). The attribute's comment: “left_exactness”.
+**`AlgebraicGeometry.CoherentModuleFunctors.FilteredColimitExtension.preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/CoherentModuleFunctors/Exactness.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/CoherentModuleFunctors/Exactness.lean#L554). The attribute's comment: “left\_exactness”.
 
 > **Stacks Project, Tag 0FZL.** The extension of a left exact functor on the coherent modules
 > of a Noetherian scheme is left exact.
@@ -37,7 +37,7 @@ theorem FilteredColimitExtension.preservesFiniteLimits {X Y : Scheme.{u}}
     PreservesFiniteLimits E.functor
 ```
 
-**`AlgebraicGeometry.CoherentModuleFunctors.FilteredColimitExtension.preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/CoherentModuleFunctors/Exactness.lean, line 567](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/CoherentModuleFunctors/Exactness.lean#L567). The attribute's comment: “right_exactness”.
+**`AlgebraicGeometry.CoherentModuleFunctors.FilteredColimitExtension.preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/CoherentModuleFunctors/Exactness.lean, line 567](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/CoherentModuleFunctors/Exactness.lean#L567). The attribute's comment: “right\_exactness”.
 
 > **Stacks Project, Tag 0FZL.** The extension of a right exact functor on the coherent modules
 > of a Noetherian scheme is right exact.
@@ -182,7 +182,7 @@ public theorem isFinite_of_isCoherent_pushforward_of_isZero_higherDirectImages
 
 [Tag 0FZN](https://stacks.math.columbia.edu/tag/0FZN) in the Stacks Project.
 
-**`AlgebraicGeometry.CoherentKernels.isEquivalence_coherentIntegralTransformFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/CoherentKernels/Equivalence.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/CoherentKernels/Equivalence.lean#L216). The attribute's comment: “sending a coherent kernel flat over X with support finite over Y to the restriction to Coh of its integral transform is an equivalence onto the k-linear exact functors Coh(O_X) to Coh(O_Y)”.
+**`AlgebraicGeometry.CoherentKernels.isEquivalence_coherentIntegralTransformFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/CoherentKernels/Equivalence.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/CoherentKernels/Equivalence.lean#L216). The attribute's comment: “sending a coherent kernel flat over X with support finite over Y to the restriction to Coh of its integral transform is an equivalence onto the k-linear exact functors Coh(O\_X) to Coh(O\_Y)”.
 
 > **Stacks Project, Tag 0FZN.** Let `k` be a field and let `X` and `Y` be schemes of finite
 > type over `k` with `X` separated. Sending a coherent `𝒪_{X ×_k Y}`-module `𝒦`, flat over `X` and

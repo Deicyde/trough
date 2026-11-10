@@ -196,7 +196,7 @@ structure FinitelyPresentedLocalizedModuleSituation
 
 [Tag 0AT7](https://stacks.math.columbia.edu/tag/0AT7) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isContentIdeal_of_pureSpreadout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ContentIdeals.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ContentIdeals.lean#L125). The attribute's comment: “content_ideals”.
+**`AlgebraicGeometry.exists_isContentIdeal_of_pureSpreadout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ContentIdeals.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ContentIdeals.lean#L125). The attribute's comment: “content\_ideals”.
 
 > **Stacks Project, Tag 0AT7.** If a pure spreadout exists, every element of the localized
 > module has a content ideal over the base ring.
@@ -208,7 +208,7 @@ theorem exists_isContentIdeal_of_pureSpreadout
     ∃ I : Ideal X.A, IsContentIdeal x I
 ```
 
-**`AlgebraicGeometry.universallyInjective_of_injective_mod_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalInjectivity.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalInjectivity.lean#L312). The attribute's comment: “universal_injectivity”.
+**`AlgebraicGeometry.universallyInjective_of_injective_mod_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalInjectivity.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalInjectivity.lean#L312). The attribute's comment: “universal\_injectivity”.
 
 > **Stacks Project, Tag 0AT7 (universal injectivity).** A map into a flat
 > module which is injective modulo each maximal ideal is universally injective,

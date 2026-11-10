@@ -26,7 +26,7 @@ theorem isWeakSerreClass_imageOfLE_of_vanishing [A.IsWeakSerreClass] :
     (imageOfLE.{u, v, r, m} h R A).IsWeakSerreClass
 ```
 
-**`Stacks.Cohomology.CompareTopologies.derivedPullbackEquivalenceImageOfLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean#L369). The attribute's comment: “the equivalence of derived categories given by ε^* and Rε_*”.
+**`Stacks.Cohomology.CompareTopologies.derivedPullbackEquivalenceImageOfLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean#L369). The attribute's comment: “the equivalence of derived categories given by ε^* and Rε\_*”.
 
 > **[Stacks, Tag 07A8], second conclusion.** Let `J' ≤ S.J` be two topologies on the category
 > of a ringed site `S`, so that the identity functor of that category is the comparison morphism

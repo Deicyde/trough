@@ -44,7 +44,7 @@ theorem upperShriekFunctor_isBoundedBelow (p : PolynomialPresentation f)
     DerivedCategoryB.IsBoundedBelow (p.upperShriekFunctor.{u, v}.obj K)
 ```
 
-**`Dualizing.PolynomialPresentation.upperShriekFunctor_derivedCategoryBPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean#L142). The attribute's comment: “(1), the statement that φ^! maps D⁺_Coh(R) into D⁺_Coh(A)”.
+**`Dualizing.PolynomialPresentation.upperShriekFunctor_derivedCategoryBPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean#L142). The attribute's comment: “(1), the statement that φ^! maps D⁺\_Coh(R) into D⁺\_Coh(A)”.
 
 > Algebraic upper shriek along a finite type homomorphism of Noetherian rings carries
 > bounded-below complexes with coherent cohomology to bounded-below complexes with coherent
@@ -88,7 +88,7 @@ theorem upperShriekFunctor_isBoundedAbove_of_isPerfectRingMap
     DerivedCategoryB.IsBoundedAbove (p.upperShriekFunctor.{u, v}.obj K)
 ```
 
-**`Dualizing.upperShriekFunctor_derivedCategoryBMinus_of_isPerfectRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean#L321). The attribute's comment: “(2), the statement that φ^! maps D⁻_Coh(R) into D⁻_Coh(A)”.
+**`Dualizing.upperShriekFunctor_derivedCategoryBMinus_of_isPerfectRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean#L321). The attribute's comment: “(2), the statement that φ^! maps D⁻\_Coh(R) into D⁻\_Coh(A)”.
 
 > Algebraic upper shriek along a perfect homomorphism of Noetherian rings carries bounded-above
 > complexes with coherent cohomology to bounded-above complexes with coherent cohomology.
@@ -120,7 +120,7 @@ theorem upperShriekFunctor_derivedCategoryBMinus_of_isPerfectRingMap
       (p.upperShriekFunctor.{u, v}.obj K)
 ```
 
-**`Dualizing.upperShriekFunctor_derivedCategoryBBounded_of_isPerfectRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean#L351). The attribute's comment: “(2), the statement that φ^! maps Dᵇ_Coh(R) into Dᵇ_Coh(A)”.
+**`Dualizing.upperShriekFunctor_derivedCategoryBBounded_of_isPerfectRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UpperShriek/Bounded.lean#L351). The attribute's comment: “(2), the statement that φ^! maps Dᵇ\_Coh(R) into Dᵇ\_Coh(A)”.
 
 > Algebraic upper shriek along a perfect homomorphism of Noetherian rings carries bounded
 > complexes with coherent cohomology to bounded complexes with coherent cohomology.
@@ -495,7 +495,7 @@ public def tensorFormulaOfPerfect
     TensorFormula.{u, v} p
 ```
 
-**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_iso_derivedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean#L134). The attribute's comment: “at an arbitrary polynomial presentation, at module universe equal to the ring universe; the same statement at an arbitrary module universe is Dualizing.PolynomialPresentation.upperShriekFunctor_iso_derivedTensorProduct”.
+**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_iso_derivedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean#L134). The attribute's comment: “at an arbitrary polynomial presentation, at module universe equal to the ring universe; the same statement at an arbitrary module universe is Dualizing.PolynomialPresentation.upperShriekFunctor\_iso\_derivedTensorProduct”.
 
 > **Stacks 0BZU, with no carried hypothesis.** Let `φ : R → A` be a ring homomorphism and `p` a
 > polynomial presentation of it whose polynomial algebra makes `A` a perfect
@@ -521,7 +521,7 @@ theorem nonempty_upperShriekFunctor_iso_derivedTensorProduct
       derivedTensorProductOver.{u, u} f (p.upperShriekFunctor.{u, u}.obj R₀))
 ```
 
-**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_iso_derivedTensorProduct_of_isPerfectRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean#L165). The attribute's comment: “for a perfect homomorphism of Noetherian rings, at an arbitrary polynomial presentation, at module universe equal to the ring universe; the same statement at an arbitrary module universe is Dualizing.PolynomialPresentation.upperShriekFunctor_iso_derivedTensorProduct_of_isPerfectRingMap”.
+**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_iso_derivedTensorProduct_of_isPerfectRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UpperShriek/DerivedTensorUnconditional.lean#L165). The attribute's comment: “for a perfect homomorphism of Noetherian rings, at an arbitrary polynomial presentation, at module universe equal to the ring universe; the same statement at an arbitrary module universe is Dualizing.PolynomialPresentation.upperShriekFunctor\_iso\_derivedTensorProduct\_of\_isPerfectRingMap”.
 
 > **Stacks 0BZU for a perfect homomorphism, with no carried hypothesis.** Let `φ : R → A` be a
 > perfect ring homomorphism and `p` a polynomial presentation of it. Then the
@@ -590,7 +590,7 @@ def tensorFormula (p : PolynomialPresentation f)
 
 [Tag 0E9L](https://stacks.math.columbia.edu/tag/0E9L) in the Stacks Project.
 
-**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_natIso_dualizingDerivedHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/FiniteTypeDualityFormula.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UpperShriek/FiniteTypeDualityFormula.lean#L193). The attribute's comment: “in general: an arbitrary finite-type φ of Noetherian rings at an arbitrary polynomial presentation, as an isomorphism of functors on D_Coh(A), with no surjectivity and no projection-formula keystone”.
+**`Dualizing.PolynomialPresentation.nonempty_upperShriekFunctor_natIso_dualizingDerivedHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/FiniteTypeDualityFormula.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UpperShriek/FiniteTypeDualityFormula.lean#L193). The attribute's comment: “in general: an arbitrary finite-type φ of Noetherian rings at an arbitrary polynomial presentation, as an isomorphism of functors on D\_Coh(A), with no surjectivity and no projection-formula keystone”.
 
 > **[Stacks, Tag 0E9L] for an arbitrary finite-type `φ`, as an isomorphism of functors on
 > `D_Coh(A)`.**  Let `φ : A →+* B` be a homomorphism of finite type with `A` Noetherian, let `p` be

@@ -161,7 +161,7 @@ noncomputable def evalNeighborhoodRingEquiv (hX : IsAlgebraicSpace B S hS X)
     rationalFunctions B S hS hX ≃+* E.scheme.left.1.residueField E.point
 ```
 
-**`AlgebraicGeometry.Space.isField_henselianLocalRing_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean, line 1291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean#L1291). The attribute's comment: “the henselian local ring O^h_{X,η} at the generic point is a field”.
+**`AlgebraicGeometry.Space.isField_henselianLocalRing_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean, line 1291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean#L1291). The attribute's comment: “the henselian local ring O^h\_\{X,η} at the generic point is a field”.
 
 > **Stacks 0END.** The henselian local ring of Stacks 0BGW at the generic point of an integral
 > algebraic space is a field: it is a henselisation of the local ring of the elementary étale
@@ -175,7 +175,7 @@ theorem isField_henselianLocalRing_genericPoint (hX : IsAlgebraicSpace B S hS X)
       Type (u + 1))
 ```
 
-**`AlgebraicGeometry.Space.bijective_stalkToHenselianLocalRing_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean, line 1307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean#L1307). The attribute's comment: “bijectivity at the generic point of the canonical map O_{U,u} → O^h_{X,η} of Tag 0EMY”.
+**`AlgebraicGeometry.Space.bijective_stalkToHenselianLocalRing_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean, line 1307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean#L1307). The attribute's comment: “bijectivity at the generic point of the canonical map O\_\{U,u} → O^h\_\{X,η} of Tag 0EMY”.
 
 > The canonical map of Stacks 0EMY from the local ring of an elementary étale neighbourhood of
 > the generic point into the henselian local ring is bijective: it is the structure map of a
@@ -189,7 +189,7 @@ theorem bijective_stalkToHenselianLocalRing_genericPoint (hX : IsAlgebraicSpace 
       (genericPoint B S hS hX hInt) hInt.2.1 E)
 ```
 
-**`AlgebraicGeometry.Space.rationalFunctionsHenselianRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean, line 1381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean#L1381). The attribute's comment: “the identification R(X) = O^h_{X,η} of the rational functions with the henselian local ring at the generic point”.
+**`AlgebraicGeometry.Space.rationalFunctionsHenselianRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean, line 1381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean#L1381). The attribute's comment: “the identification R(X) = O^h\_\{X,η} of the rational functions with the henselian local ring at the generic point”.
 
 > **Stacks 0END.** The ring of rational functions of an integral algebraic space over `S` is
 > the henselian local ring of Stacks 0BGW at its generic point: the comparison is built from the
@@ -220,7 +220,7 @@ theorem rationalFunctionsHenselianRingEquivOfNeighborhood_eq (hX : IsAlgebraicSp
       stalkToHenselianLocalRing B S hS X hX (genericPoint B S hS hX hInt) hInt.2.1 E r
 ```
 
-**`AlgebraicGeometry.Space.residueFieldHenselianRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean, line 1462](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean#L1462). The attribute's comment: “the identification O^h_{X,η} = κ(η) of the henselian local ring at the generic point with the residue field there”.
+**`AlgebraicGeometry.Space.residueFieldHenselianRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean, line 1462](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean#L1462). The attribute's comment: “the identification O^h\_\{X,η} = κ(η) of the henselian local ring at the generic point with the residue field there”.
 
 > **Stacks 0END.** The residue field at the generic point of an integral algebraic space over
 > `S` is the henselian local ring of Stacks 0BGW there: both are the ring of rational
@@ -233,7 +233,7 @@ noncomputable def residueFieldHenselianRingEquiv (hX : IsAlgebraicSpace B S hS X
       (henselianLocalRing B S hS X hX (genericPoint B S hS hX hInt) hInt.2.1 : Type (u + 1))
 ```
 
-**`AlgebraicGeometry.Space.rationalFunctionsHenselianRingEquiv_eq_trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean, line 1474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean#L1474). The attribute's comment: “the chain R(X) = O^h_{X,η} = κ(η): the three identifications commute”.
+**`AlgebraicGeometry.Space.rationalFunctionsHenselianRingEquiv_eq_trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean, line 1474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GenericRationalFunctions.lean#L1474). The attribute's comment: “the chain R(X) = O^h\_\{X,η} = κ(η): the three identifications commute”.
 
 > **Stacks 0END.** The tag asserts one chain of identifications `R(X) = O^h_{X,η} = κ(η)`, and
 > the three identifications are indeed the three edges of one commuting triangle: going from the

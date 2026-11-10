@@ -50,7 +50,7 @@ theorem existsUnique_isoOver (hB : Opens.IsBasis B) (D : BasisGluingData S B)
 
 [Tag 01LI](https://stacks.math.columbia.edu/tag/01LI) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeSheafGluing.RelativeSheafGluingData.exists_glued_and_existsUnique_pairIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingPairUniqueness.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingPairUniqueness.lean#L471). The attribute's comment: “both assertions of the tag as one statement: existence of the glued package — the morphism f, the charts i_U, the quasi-coherent module F, the identifications θ_U and their two compatibilities — and uniqueness of the pair (X, F) up to unique isomorphism over S”.
+**`Stacks.AlgebraicGeometry.RelativeSheafGluing.RelativeSheafGluingData.exists_glued_and_existsUnique_pairIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingPairUniqueness.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingPairUniqueness.lean#L471). The attribute's comment: “both assertions of the tag as one statement: existence of the glued package — the morphism f, the charts i\_U, the quasi-coherent module F, the identifications θ\_U and their two compatibilities — and uniqueness of the pair (X, F) up to unique isomorphism over S”.
 
 > **Stacks Project, Tag 01LI, both of its assertions as one statement.**  Let `𝒰` be a locally
 > directed open cover of a scheme `S`, let `d` be a relative gluing datum over it, and let `D` be a
@@ -89,7 +89,7 @@ theorem exists_glued_and_existsUnique_pairIso :
 
 [Tag 01LK](https://stacks.math.columbia.edu/tag/01LK) in the Stacks Project.
 
-**`AlgebraicGeometry.CompatibleRelativeGluingData.colimMap_localHom_toBase`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingMorphism.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingMorphism.lean#L114). The attribute's comment: “scheme_morphism”.
+**`AlgebraicGeometry.CompatibleRelativeGluingData.colimMap_localHom_toBase`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingMorphism.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingMorphism.lean#L114). The attribute's comment: “scheme\_morphism”.
 
 > The morphism induced on the glued schemes is a morphism over the common base.
 
@@ -98,7 +98,7 @@ public lemma colimMap_localHom_toBase :
     colimMap D.localHom ≫ D.target.toBase = D.source.toBase
 ```
 
-**`AlgebraicGeometry.Scheme.BasisGluingData.existsUnique_hom_of_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingMorphism.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingMorphism.lean#L141). The attribute's comment: “scheme_morphism, for the gluing data over a basis of Tag 01LH”.
+**`AlgebraicGeometry.Scheme.BasisGluingData.existsUnique_hom_of_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingMorphism.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingMorphism.lean#L141). The attribute's comment: “scheme\_morphism, for the gluing data over a basis of Tag 01LH”.
 
 > **Stacks Project, Tag 01LK: functoriality for the data of Lemma 01LH.** Let `S` be a scheme
 > and `B` a basis for its topology, and let `D` and `D'` be gluing data over `B` as in Tag 01LH,
@@ -122,7 +122,7 @@ public theorem existsUnique_hom_of_compatible (hB : Opens.IsBasis B) (D D' : Bas
     ∃! k : X ⟶ Y, (∀ U : B, i U ≫ k = h U ≫ j U) ∧ k ≫ g = f
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeSheafGluing.exists_pullbackHom_of_transitionCompatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeSheafGluingMorphism.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/RelativeSheafGluingMorphism.lean#L347). The attribute's comment: “sheaf_morphism”.
+**`Stacks.AlgebraicGeometry.RelativeSheafGluing.exists_pullbackHom_of_transitionCompatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeSheafGluingMorphism.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/RelativeSheafGluingMorphism.lean#L347). The attribute's comment: “sheaf\_morphism”.
 
 > **Stacks Project, Tag 01LK.** *Functoriality of relative gluing for quasi-coherent sheaves.*
 > Let `𝒰` be a locally directed open cover of a scheme `S` and let `dX`, `dY` be relative gluing
@@ -149,8 +149,8 @@ theorem exists_pullbackHom_of_transitionCompatible (hom : dX.functor ⟶ dY.func
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.colimMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.colimMap#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingMorphism.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingMorphism.lean#L98) (StacksFrontier): “scheme_morphism”.
-- [`CategoryTheory.Limits.ι_colimMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.ι_colimMap#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingMorphism.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingMorphism.lean#L99) (StacksFrontier): “scheme_morphism”.
+- [`CategoryTheory.Limits.colimMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.colimMap#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingMorphism.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingMorphism.lean#L98) (StacksFrontier): “scheme\_morphism”.
+- [`CategoryTheory.Limits.ι_colimMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.ι_colimMap#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingMorphism.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/RelativeGluingMorphism.lean#L99) (StacksFrontier): “scheme\_morphism”.
 
 ## Depends on
 

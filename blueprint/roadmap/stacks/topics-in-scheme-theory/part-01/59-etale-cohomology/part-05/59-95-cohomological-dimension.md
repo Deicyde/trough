@@ -73,7 +73,7 @@ public theorem etaleCohomologicalDimension_le_iSup_of_isLimit
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_iSup_of_isLimit_of_isDirected`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/DirectedLimit.lean#L110), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimensionDirectedLimits.lean, line 29](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimensionDirectedLimits.lean#L29) (StacksFrontier): “cd(lim X_i) ≤ max cd(X_i) for a directed limit of qcqs schemes with affine transition morphisms”.
+- [`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_iSup_of_isLimit_of_isDirected`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/DirectedLimit.lean#L110), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimensionDirectedLimits.lean, line 29](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimensionDirectedLimits.lean#L29) (StacksFrontier): “cd(lim X\_i) ≤ max cd(X\_i) for a directed limit of qcqs schemes with affine transition morphisms”.
 
 ## Tag 0F0S, a lemma
 
@@ -174,7 +174,7 @@ theorem exists_strictHenselization_map_of_finiteType
 
 [Tag 0F0V](https://stacks.math.columbia.edu/tag/0F0V) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_add_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineFiniteType.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineFiniteType.lean#L142). The attribute's comment: “for every natural number n ≥ dim X, which also covers the empty scheme; the literal inequality cd(X) ≤ dim(X) + cd(K) for nonempty X is etaleCohomologicalDimension_le_topologicalKrullDim_add”. References: SGA 4 X (5.2), “special case”; SGA 4 XIV (3.2), “more general”.
+**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_add_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineFiniteType.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineFiniteType.lean#L142). The attribute's comment: “for every natural number n ≥ dim X, which also covers the empty scheme; the literal inequality cd(X) ≤ dim(X) + cd(K) for nonempty X is etaleCohomologicalDimension\_le\_topologicalKrullDim\_add”. References: SGA 4 X (5.2), “special case”; SGA 4 XIV (3.2), “more general”.
 
 > **Stacks Project, Tag 0F0V**, for every bound `n` on the dimension. Let `K` be a field and
 > let `X` be an affine scheme of finite type over `K` with `dim(X) ≤ n`. Then `cd(X) ≤ n + cd(K)`.
@@ -191,7 +191,7 @@ theorem etaleCohomologicalDimension_le_add_of_topologicalKrullDim_le
     etaleCohomologicalDimension X ≤ n + etaleCohomologicalDimension (Spec (.of K))
 ```
 
-**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_topologicalKrullDim_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineFiniteType.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineFiniteType.lean#L197). The attribute's comment: “verbatim, cd(X) ≤ dim(X) + cd(K) in WithBot ℕ∞, for nonempty X: for X = ∅ the source's inequality reads 0 ≤ −∞ and fails; etaleCohomologicalDimension_le_add_of_topologicalKrullDim_le covers every X”. References: SGA 4 X (5.2), “special case”; SGA 5 VII (7.1.1), “a), special case”.
+**`AlgebraicGeometry.Scheme.etaleCohomologicalDimension_le_topologicalKrullDim_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineFiniteType.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/CohomologicalDimension/AffineFiniteType.lean#L197). The attribute's comment: “verbatim, cd(X) ≤ dim(X) + cd(K) in WithBot ℕ∞, for nonempty X: for X = ∅ the source's inequality reads 0 ≤ −∞ and fails; etaleCohomologicalDimension\_le\_add\_of\_topologicalKrullDim\_le covers every X”. References: SGA 4 X (5.2), “special case”; SGA 5 VII (7.1.1), “a), special case”.
 
 > **Stacks Project, Tag 0F0V.** Let `K` be a field and let `X` be a nonempty affine scheme of
 > finite type over `K`. Then `cd(X) ≤ dim(X) + cd(K)`.

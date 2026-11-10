@@ -14,7 +14,7 @@ Section 77.9 of the Stacks Project, [Tag 0CVN](https://stacks.math.columbia.edu/
 
 [Tag 0CWD](https://stacks.math.columbia.edu/tag/0CWD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.isoLocusRepresentation_of_isPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IsoLocusClosedOfPure.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IsoLocusClosedOfPure.lean#L117). The attribute's comment: “F_iso is represented by a closed subspace Z of the base, and Z → B is of finite presentation when 𝒢 is of finite presentation (the source's 'Z → S' is a misprint for Z → B, see the module notes)”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.isoLocusRepresentation_of_isPureRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IsoLocusClosedOfPure.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IsoLocusClosedOfPure.lean#L117). The attribute's comment: “F\_iso is represented by a closed subspace Z of the base, and Z → B is of finite presentation when 𝒢 is of finite presentation (the source's 'Z → S' is a misprint for Z → B, see the module notes)”.
 
 > **Stacks 0CWD.**  In Situation 083F, assume (1) `f` is of finite presentation, (2) `ℱ` is of
 > finite presentation, flat over `B` and pure relative to `B`, and (3) `u` is surjective.  Then
@@ -41,7 +41,7 @@ theorem isoLocusRepresentation_of_isPureRelative
 
 [Tag 083N](https://stacks.math.columbia.edu/tag/083N) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ModuleMapSituation.isoLocusRepresentation_of_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IsoLocusClosedProperSupport.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IsoLocusClosedProperSupport.lean#L74). The attribute's comment: “the full statement at the source's hypotheses alone: f locally of finite presentation, F locally of finite presentation and flat over B with support proper over B, u surjective; F_iso is represented by a closed subspace of B, of finite presentation over B when G is of finite presentation”.
+**`AlgebraicGeometry.Space.ModuleMapSituation.isoLocusRepresentation_of_hasProperSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IsoLocusClosedProperSupport.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IsoLocusClosedProperSupport.lean#L74). The attribute's comment: “the full statement at the source's hypotheses alone: f locally of finite presentation, F locally of finite presentation and flat over B with support proper over B, u surjective; F\_iso is represented by a closed subspace of B, of finite presentation over B when G is of finite presentation”.
 
 > **Stacks 083N.**  In Situation 083F, assume that
 > 1. `f` is locally of finite presentation,

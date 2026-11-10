@@ -14,7 +14,7 @@ Section 42.46 of the Stacks Project, [Tag 0ESY](https://stacks.math.columbia.edu
 
 [Tag 0ESZ](https://stacks.math.columbia.edu/tag/0ESZ) in the Stacks Project.
 
-**`Stacks.Chow.totalChernClassComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean#L554). The attribute's comment: “the total Chern class c(E^bullet) of a complex of finite locally free modules bounded in a range of degrees, with no constant-rank hypothesis; the total Chern class of a module, Tag 0B7H, and the multiplication of A^*(X), Tag 0FE0, are carried as the parameters R and D, whose field ch_shortExact is the Whitney sum formula of Tag 02UI, exactly as in Stacks.Chow.chernClassKGroup; the locally bounded case is not delivered”.
+**`Stacks.Chow.totalChernClassComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean#L554). The attribute's comment: “the total Chern class c(E^bullet) of a complex of finite locally free modules bounded in a range of degrees, with no constant-rank hypothesis; the total Chern class of a module, Tag 0B7H, and the multiplication of A^*(X), Tag 0FE0, are carried as the parameters R and D, whose field ch\_shortExact is the Whitney sum formula of Tag 02UI, exactly as in Stacks.Chow.chernClassKGroup; the locally bounded case is not delivered”.
 
 > **Stacks 0ESZ.** The total Chern class `c(ℰ^•) = ∏_n c(ℰ^n)^{(-1)^n}` of a complex of finite
 > locally free modules bounded in the degrees `a, …, a + k`, as an element of the group of series
@@ -26,7 +26,7 @@ def totalChernClassComplex (D : TotalChernClassSeries C Gy sX R)
     (P : CochainComplex X.Modules ℤ) (a : ℤ) (k : ℕ) : UnitalSeries R
 ```
 
-**`Stacks.Chow.totalChernClassComplex_eq_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean#L563). The attribute's comment: “the defining formula c(E^bullet) = prod_n c(E^n)^{(-1)^n} of the section, the inverses being the formal inverses of Tag 0FEL”.
+**`Stacks.Chow.totalChernClassComplex_eq_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean#L563). The attribute's comment: “the defining formula c(E^bullet) = prod\_n c(E^n)^\{(-1)^n} of the section, the inverses being the formal inverses of Tag 0FEL”.
 
 > **Stacks 0ESZ.** The total Chern class of a complex is the alternating product
 > `∏_n c(ℰ^n)^{(-1)^n}` of the total Chern classes of its terms, which is the formula of the
@@ -41,7 +41,7 @@ theorem totalChernClassComplex_eq_prod (D : TotalChernClassSeries C Gy sX R)
           ((a + (i : ℤ)).negOnePow : ℤ)
 ```
 
-**`Stacks.Chow.totalChernClassComplex_eq_of_cohomologyComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean, line 582](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean#L582). The attribute's comment: “the independence of the representative for the total Chern class. CARRIED: the degreewise data the source's proof extracts from an isomorphism in D(O_X) -- finite local freeness of the kernels and images (Tag 0F8J), the identification of the cohomology modules, and Schanuel's lemma (Tag 00O3) -- together with the reductions of Tags 02UC and 0ESR”.
+**`Stacks.Chow.totalChernClassComplex_eq_of_cohomologyComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean, line 582](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean#L582). The attribute's comment: “the independence of the representative for the total Chern class. CARRIED: the degreewise data the source's proof extracts from an isomorphism in D(O\_X) -- finite local freeness of the kernels and images (Tag 0F8J), the identification of the cohomology modules, and Schanuel's lemma (Tag 00O3) -- together with the reductions of Tags 02UC and 0ESR”.
 
 > **Stacks 0ESZ.** The total Chern class of a complex of finite locally free modules depends
 > only on the cohomology modules of the complex. Two complexes representing the same object of
@@ -56,7 +56,7 @@ theorem totalChernClassComplex_eq_of_cohomologyComparison (D : TotalChernClassSe
     totalChernClassComplex C Gy sX D P a k = totalChernClassComplex C Gy sX D Q a k
 ```
 
-**`Stacks.Chow.powerSumClassComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean, line 645](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean#L645). The attribute's comment: “the class P_p(E^bullet) of a complex of finite locally free modules bounded in a range of degrees, with no constant-rank hypothesis; the constant-rank power sums P_p(E) of Tag 0F9B and their additivity, Tag 0F9C, are carried as the parameter W, as in Stacks.Chow.powerSumClassArbitraryRank; the locally bounded case is not delivered”.
+**`Stacks.Chow.powerSumClassComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean, line 645](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean#L645). The attribute's comment: “the class P\_p(E^bullet) of a complex of finite locally free modules bounded in a range of degrees, with no constant-rank hypothesis; the constant-rank power sums P\_p(E) of Tag 0F9B and their additivity, Tag 0F9C, are carried as the parameter W, as in Stacks.Chow.powerSumClassArbitraryRank; the locally bounded case is not delivered”.
 
 > **Stacks 0ESZ.** The class `P_p(ℰ^•) = ∑_n (-1)^n P_p(ℰ^n) ∈ A^p(X)` of a complex of finite
 > locally free modules bounded in the degrees `a, …, a + k`. No rank is assumed constant.
@@ -66,7 +66,7 @@ def powerSumClassComplex (W : PowerSumClassRule C Gy sX) (P : CochainComplex X.M
     (a : ℤ) (k : ℕ) (p : ℕ) : chowCohomologyComponent C Gy sX (p : ℤ)
 ```
 
-**`Stacks.Chow.powerSumClassComplex_eq_sum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean, line 652](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean#L652). The attribute's comment: “the defining formula P_p(E^bullet) = sum_n (-1)^n P_p(E^n) of the section”.
+**`Stacks.Chow.powerSumClassComplex_eq_sum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean, line 652](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean#L652). The attribute's comment: “the defining formula P\_p(E^bullet) = sum\_n (-1)^n P\_p(E^n) of the section”.
 
 > **Stacks 0ESZ.** The class `P_p` of a complex is the alternating sum of the classes `P_p` of
 > its terms, which is the formula of the source.
@@ -79,7 +79,7 @@ theorem powerSumClassComplex_eq_sum (W : PowerSumClassRule C Gy sX)
         ((a + (i : ℤ)).negOnePow : ℤ) • W.cls (P.X (a + (i : ℤ))) p
 ```
 
-**`Stacks.Chow.powerSumClassComplex_eq_of_cohomologyComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean, line 669](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean#L669). The attribute's comment: “the independence of the representative for P_p. CARRIED: the degreewise data the source's proof extracts from an isomorphism in D(O_X) -- finite local freeness of the kernels and images (Tag 0F8J), the identification of the cohomology modules, and Schanuel's lemma (Tag 00O3) -- together with the reductions of Tags 02UC and 0ESR”.
+**`Stacks.Chow.powerSumClassComplex_eq_of_cohomologyComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean, line 669](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean#L669). The attribute's comment: “the independence of the representative for P\_p. CARRIED: the degreewise data the source's proof extracts from an isomorphism in D(O\_X) -- finite local freeness of the kernels and images (Tag 0F8J), the identification of the cohomology modules, and Schanuel's lemma (Tag 00O3) -- together with the reductions of Tags 02UC and 0ESR”.
 
 > **Stacks 0ESZ.** The class `P_p` of a complex of finite locally free modules depends only on
 > the cohomology modules of the complex. Two complexes representing the same object of `D(𝒪_X)`
@@ -94,7 +94,7 @@ theorem powerSumClassComplex_eq_of_cohomologyComparison (W : PowerSumClassRule C
     powerSumClassComplex C Gy sX W P a k p = powerSumClassComplex C Gy sX W Q a k p
 ```
 
-**`Stacks.Chow.chernCharacterComplexComponent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean, line 683](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean#L683). The attribute's comment: “the Chern character component ch_p(E^bullet) = P_p(E^bullet)/p! of a complex of finite locally free modules bounded in a range of degrees, with no constant-rank hypothesis; the constant-rank power sums and their additivity, Tag 0F9C, are carried as the parameter W; the locally bounded case is not delivered”.
+**`Stacks.Chow.chernCharacterComplexComponent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean, line 683](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean#L683). The attribute's comment: “the Chern character component ch\_p(E^bullet) = P\_p(E^bullet)/p! of a complex of finite locally free modules bounded in a range of degrees, with no constant-rank hypothesis; the constant-rank power sums and their additivity, Tag 0F9C, are carried as the parameter W; the locally bounded case is not delivered”.
 
 > **Stacks 0ESZ.** The degree-`p` component `ch_p(ℰ^•) = P_p(ℰ^•)/p! ∈ A^p(X) ⊗ 𝐐` of the Chern
 > character of a complex of finite locally free modules bounded in the degrees `a, …, a + k`.
@@ -105,7 +105,7 @@ def chernCharacterComplexComponent (W : PowerSumClassRule C Gy sX)
     rationalChowCohomologyComponent C Gy sX (p : ℤ)
 ```
 
-**`Stacks.Chow.chernCharacterComplexComponent_eq_of_cohomologyComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean, line 696](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean#L696). The attribute's comment: “the independence of the representative for the Chern character. CARRIED: the degreewise data the source's proof extracts from an isomorphism in D(O_X) -- finite local freeness of the kernels and images (Tag 0F8J), the identification of the cohomology modules, and Schanuel's lemma (Tag 00O3) -- together with the reductions of Tags 02UC and 0ESR”.
+**`Stacks.Chow.chernCharacterComplexComponent_eq_of_cohomologyComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean, line 696](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplex.lean#L696). The attribute's comment: “the independence of the representative for the Chern character. CARRIED: the degreewise data the source's proof extracts from an isomorphism in D(O\_X) -- finite local freeness of the kernels and images (Tag 0F8J), the identification of the cohomology modules, and Schanuel's lemma (Tag 00O3) -- together with the reductions of Tags 02UC and 0ESR”.
 
 > **Stacks 0ESZ.** The Chern character of a complex of finite locally free modules depends only
 > on the cohomology modules of the complex. Two complexes representing the same object of `D(𝒪_X)`
@@ -134,7 +134,7 @@ def totalChernClassComplexLocallyBounded (D : TotalChernClassSeries C Gy sX R)
     UnitalSeries R
 ```
 
-**`Stacks.Chow.powerSumClassComplexLocallyBounded`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplexLocallyBounded.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplexLocallyBounded.lean#L174). The attribute's comment: “the locally bounded case, on a quasi-compact scheme: the class P_p of a locally bounded complex of finite locally free modules, which the bounded-window construction of this tag in Stacks.Chow.ChernClassComplex does not deliver; the constant-rank power sums P_p(E) of Tag 0F9B and their additivity, Tag 0F9C, are carried as the parameter W exactly as there”.
+**`Stacks.Chow.powerSumClassComplexLocallyBounded`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplexLocallyBounded.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComplexLocallyBounded.lean#L174). The attribute's comment: “the locally bounded case, on a quasi-compact scheme: the class P\_p of a locally bounded complex of finite locally free modules, which the bounded-window construction of this tag in Stacks.Chow.ChernClassComplex does not deliver; the constant-rank power sums P\_p(E) of Tag 0F9B and their additivity, Tag 0F9C, are carried as the parameter W exactly as there”.
 
 > **Stacks 0ESZ.** The class `P_p(ℰ^•) = ∑_n (-1)^n P_p(ℰ^n) ∈ A^p(X)` of a *locally bounded*
 > complex of finite locally free modules on a quasi-compact scheme. Such a complex vanishes outside
@@ -147,7 +147,7 @@ def powerSumClassComplexLocallyBounded (W : PowerSumClassRule C Gy sX)
     chowCohomologyComponent C Gy sX (p : ℤ)
 ```
 
-**`Stacks.Chow.complexChern`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/ComplexChernClass.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/ComplexChernClass.lean#L186). The attribute's comment: “the class c(E^bullet) in prod_{p >= 0} A^p(Y) of a locally bounded complex of finite locally free modules -- the generalization the lemma refers to: no rank is assumed constant, the complex is only locally bounded, and Y is not assumed quasi-compact”.
+**`Stacks.Chow.complexChern`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/ComplexChernClass.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/ComplexChernClass.lean#L186). The attribute's comment: “the class c(E^bullet) in prod\_\{p >= 0} A^p(Y) of a locally bounded complex of finite locally free modules -- the generalization the lemma refers to: no rank is assumed constant, the complex is only locally bounded, and Y is not assumed quasi-compact”.
 
 > **The total Chern class of a locally bounded complex of finite locally free modules.** On the
 > rank locus `Y_ρ` the complex is bounded with constant ranks `ρ`, and there the class is
@@ -158,7 +158,7 @@ def powerSumClassComplexLocallyBounded (W : PowerSumClassRule C Gy sX)
 def complexChern : TotalChowClass C sY
 ```
 
-**`Stacks.Chow.complexPowerSumComponent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean#L425). The attribute's comment: “the class P_p(E^bullet) in A^p(Y) of a locally bounded complex of finite locally free modules, as the universal power sum of Tag 0F9B applied to c(E^bullet) -- the degree-zero member being the alternating rank class”.
+**`Stacks.Chow.complexPowerSumComponent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean#L425). The attribute's comment: “the class P\_p(E^bullet) in A^p(Y) of a locally bounded complex of finite locally free modules, as the universal power sum of Tag 0F9B applied to c(E^bullet) -- the degree-zero member being the alternating rank class”.
 
 > **The class `P_p(ℰ^•) ∈ A^p(Y)`**, the degree-`p` component of
 > `Stacks.Chow.complexPowerSum`.
@@ -168,7 +168,7 @@ def complexPowerSumComponent (p : ℕ) :
     chowCohomologyComponent C (gysinSystemOfInvertible C) sY (p : ℤ)
 ```
 
-**`Stacks.Chow.complexChernCharacter`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean#L446). The attribute's comment: “the class ch(E^bullet) in prod_{p >= 0} (A^p(Y) tensor Q) of a locally bounded complex of finite locally free modules, componentwise as ch_p = P_p/p! as the source reads it”.
+**`Stacks.Chow.complexChernCharacter`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean#L446). The attribute's comment: “the class ch(E^bullet) in prod\_\{p >= 0} (A^p(Y) tensor Q) of a locally bounded complex of finite locally free modules, componentwise as ch\_p = P\_p/p! as the source reads it”.
 
 > **The Chern character `ch(ℰ^•) ∈ ∏_{p ≥ 0} (A^p(Y) ⊗ 𝐐)` of a locally bounded complex of
 > finite locally free modules**, the family of its components.
@@ -177,7 +177,7 @@ def complexPowerSumComponent (p : ℕ) :
 def complexChernCharacter : fullRationalChowCohomology C (gysinSystemOfInvertible C) sY
 ```
 
-**`Stacks.Chow.complexPowerSumComponent_eq_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean#L478). The attribute's comment: “the independence of the choice of the complex for P_p(E^bullet) in A^p(Y)”.
+**`Stacks.Chow.complexPowerSumComponent_eq_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean#L478). The attribute's comment: “the independence of the choice of the complex for P\_p(E^bullet) in A^p(Y)”.
 
 > **Stacks 0ESZ for `P_p ∈ A^p(Y)`.**
 
@@ -198,7 +198,7 @@ theorem complexChernCharacter_eq_of_iso
     complexChernCharacter C sY hP = complexChernCharacter C sY hP'
 ```
 
-**`Stacks.Chow.complexChern_eq_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/Independence.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/Independence.lean#L282). The attribute's comment: “the independence of the choice of the complex for c(E^bullet), at the hypotheses of the source: two locally bounded complexes of finite locally free modules representing one object of D(O_Y), no rank assumed constant and Y not assumed quasi-compact”.
+**`Stacks.Chow.complexChern_eq_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/Independence.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/Independence.lean#L282). The attribute's comment: “the independence of the choice of the complex for c(E^bullet), at the hypotheses of the source: two locally bounded complexes of finite locally free modules representing one object of D(O\_Y), no rank assumed constant and Y not assumed quasi-compact”.
 
 > **Stacks 0ESZ for the total Chern class.** Let `Y` be locally of finite type over the base of
 > chapter 42 and let `P`, `P'` be locally bounded complexes of finite locally free `𝒪_Y`-modules
@@ -218,7 +218,7 @@ theorem complexChern_eq_of_iso (e : DerivedCategory.Q.obj P ≅ DerivedCategory.
     complexChern C sY hP = complexChern C sY hP'
 ```
 
-**`Stacks.Chow.powerSumComplex_eq_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PowerSumIndependence.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PowerSumIndependence.lean#L208). The attribute's comment: “the classes P_p(E^bullet) of a locally bounded complex of finite locally free modules, ranks varying, depend only on its object of D(O_Y)”.
+**`Stacks.Chow.powerSumComplex_eq_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PowerSumIndependence.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PowerSumIndependence.lean#L208). The attribute's comment: “the classes P\_p(E^bullet) of a locally bounded complex of finite locally free modules, ranks varying, depend only on its object of D(O\_Y)”.
 
 > Let `P`, `P'` be locally bounded complexes of finite locally free `𝒪_Y`-modules representing
 > the same object of `D(𝒪_Y)`. Then `P_p(P) = P_p(P') ∈ A^p(Y)` for every `p`.
@@ -228,7 +228,7 @@ theorem powerSumComplex_eq_of_iso (e : DerivedCategory.Q.obj P ≅ DerivedCatego
     (p : ℕ) : powerSumComplex C sY hP p = powerSumComplex C sY hP' p
 ```
 
-**`Stacks.Chow.chernCharacterComplex_eq_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PowerSumIndependence.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PowerSumIndependence.lean#L219). The attribute's comment: “the Chern character ch(E^bullet) = sum_p P_p(E^bullet)/p! of a locally bounded complex of finite locally free modules, ranks varying, depends only on its object of D(O_Y)”.
+**`Stacks.Chow.chernCharacterComplex_eq_of_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PowerSumIndependence.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PowerSumIndependence.lean#L219). The attribute's comment: “the Chern character ch(E^bullet) = sum\_p P\_p(E^bullet)/p! of a locally bounded complex of finite locally free modules, ranks varying, depends only on its object of D(O\_Y)”.
 
 > `ch_p(P) = ch_p(P') ∈ A^p(Y) ⊗ 𝐐` for locally bounded complexes `P`, `P'` of finite locally
 > free modules representing the same object of `D(𝒪_Y)`.
@@ -265,7 +265,7 @@ theorem eq_of_restriction_eq_totalChernClassComplexLocallyBounded
     c = d
 ```
 
-**`Stacks.Chow.eq_of_restriction_eq_powerSumClassComplexLocallyBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/EnvelopeUniqueness.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/EnvelopeUniqueness.lean#L240). The attribute's comment: “the uniqueness half for the power sums P_p(E), the classes of Tag 0ESZ; the existence of the classes is not constructed here, and the hypothesis is taken at one envelope presentation rather than at all of them, which is stronger”.
+**`Stacks.Chow.eq_of_restriction_eq_powerSumClassComplexLocallyBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/EnvelopeUniqueness.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/EnvelopeUniqueness.lean#L240). The attribute's comment: “the uniqueness half for the power sums P\_p(E), the classes of Tag 0ESZ; the existence of the classes is not constructed here, and the hypothesis is taken at one envelope presentation rather than at all of them, which is stronger”.
 
 > **Stacks 0GUD, uniqueness for the power sums.** Let `E` be an object of `D(𝒪_X)` and let `H`
 > be an envelope presentation of it, Stacks 0F9E (1), whose source is quasi-compact. Two families
@@ -288,7 +288,7 @@ theorem eq_of_restriction_eq_powerSumClassComplexLocallyBounded
     c = d
 ```
 
-**`Stacks.Chow.eq_of_restriction_eq_chernCharacterComplexLocallyBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/EnvelopeUniqueness.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/EnvelopeUniqueness.lean#L266). The attribute's comment: “the uniqueness half for the Chern character ch(E), read componentwise as ch_p = P_p/p! with the classes P_p of Tag 0ESZ; the existence of the classes is not constructed here, and the hypothesis is taken at one envelope presentation rather than at all of them, which is stronger”.
+**`Stacks.Chow.eq_of_restriction_eq_chernCharacterComplexLocallyBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/EnvelopeUniqueness.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/EnvelopeUniqueness.lean#L266). The attribute's comment: “the uniqueness half for the Chern character ch(E), read componentwise as ch\_p = P\_p/p! with the classes P\_p of Tag 0ESZ; the existence of the classes is not constructed here, and the hypothesis is taken at one envelope presentation rather than at all of them, which is stronger”.
 
 > **Stacks 0GUD, uniqueness for the Chern character.** Let `E` be an object of `D(𝒪_X)` and let
 > `H` be an envelope presentation of it, Stacks 0F9E (1), whose source is quasi-compact. Two
@@ -314,7 +314,7 @@ theorem eq_of_restriction_eq_chernCharacterComplexLocallyBounded
     c = d
 ```
 
-**`Stacks.Chow.existsUnique_perfectPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectPowerSum.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectPowerSum.lean#L274). The attribute's comment: “P_p(E): the unique class of A^p(X) restricting along the envelope of every presentation (f, E^bullet) of E to P_p(E^bullet), independent of f and E^bullet”.
+**`Stacks.Chow.existsUnique_perfectPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectPowerSum.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectPowerSum.lean#L274). The attribute's comment: “P\_p(E): the unique class of A^p(X) restricting along the envelope of every presentation (f, E^bullet) of E to P\_p(E^bullet), independent of f and E^bullet”.
 
 > **Uniqueness of the power sums.** Let `E` be a perfect object of `D(𝒪_X)` whose Chern
 > classes are defined. For every `p` there is a unique class `P_p(E) ∈ A^p(X)` whose restriction
@@ -332,7 +332,7 @@ theorem existsUnique_perfectPowerSum (p : ℕ) :
           complexPowerSumComponent C (H.f ≫ sX) H.locallyBounded p
 ```
 
-**`Stacks.Chow.existsUnique_perfectChernCharacter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectPowerSum.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectPowerSum.lean#L341). The attribute's comment: “ch(E): for every p the unique class of A^p(X) ⊗ Q restricting along the envelope of every presentation (f, E^bullet) of E to ch_p(E^bullet) = P_p(E^bullet)/p!, independent of f and E^bullet”.
+**`Stacks.Chow.existsUnique_perfectChernCharacter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectPowerSum.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectPowerSum.lean#L341). The attribute's comment: “ch(E): for every p the unique class of A^p(X) ⊗ Q restricting along the envelope of every presentation (f, E^bullet) of E to ch\_p(E^bullet) = P\_p(E^bullet)/p!, independent of f and E^bullet”.
 
 > **Uniqueness of the Chern character.** Let `E` be a perfect object of `D(𝒪_X)` whose Chern
 > classes are defined. For every `p` there is a unique class `ch_p(E) ∈ A^p(X) ⊗ 𝐐` whose rational
@@ -368,7 +368,7 @@ Declarations registered for the tag:
 def HasDefinedChernClasses {X : Scheme.{u}} (E : DerivedCategory X.Modules) : Prop
 ```
 
-**`Stacks.Chow.perfectPowerSumComponent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean, line 600](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean#L600). The attribute's comment: “clause (2), the class P_p(E) in A^p(X): the universal power sum of Tag 0F9B applied to c(E), with the alternating rank class r(E) as its degree-zero member. It restricts to P_p(E^bullet) along the envelope of every presentation, which is the property Tag 0GUD defines it by (Stacks.Chow.res_perfectPowerSumComponent)”.
+**`Stacks.Chow.perfectPowerSumComponent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean, line 600](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean#L600). The attribute's comment: “clause (2), the class P\_p(E) in A^p(X): the universal power sum of Tag 0F9B applied to c(E), with the alternating rank class r(E) as its degree-zero member. It restricts to P\_p(E^bullet) along the envelope of every presentation, which is the property Tag 0GUD defines it by (Stacks.Chow.res\_perfectPowerSumComponent)”.
 
 > **The class `P_p(E) ∈ A^p(X)`** of Stacks 0F9E (2), the degree-`p` component of
 > `Stacks.Chow.perfectPowerSum`.
@@ -378,7 +378,7 @@ def perfectPowerSumComponent (hE : HasDefinedChernClasses E) (p : ℕ) :
     chowCohomologyComponent C (gysinSystemOfInvertible C) sX (p : ℤ)
 ```
 
-**`Stacks.Chow.perfectChernCharacter`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean, line 619](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean#L619). The attribute's comment: “clause (2), the class ch(E) in prod_{p >= 0} (A^p(X) tensor Q), componentwise as ch_p(E) = P_p(E)/p! as the source reads it”.
+**`Stacks.Chow.perfectChernCharacter`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean, line 619](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedChernClasses.lean#L619). The attribute's comment: “clause (2), the class ch(E) in prod\_\{p >= 0} (A^p(X) tensor Q), componentwise as ch\_p(E) = P\_p(E)/p! as the source reads it”.
 
 > **The Chern character `ch(E) ∈ ∏_{p ≥ 0} (A^p(X) ⊗ 𝐐)` of a perfect object whose Chern
 > classes are defined**, Stacks 0F9E (2), the family of its components.
@@ -388,7 +388,7 @@ def perfectChernCharacter (hE : HasDefinedChernClasses E) :
     fullRationalChowCohomology C (gysinSystemOfInvertible C) sX
 ```
 
-**`Stacks.Chow.perfectChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/EnvelopeChern.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/EnvelopeChern.lean#L210). The attribute's comment: “clause (2) for c(E): the class c(E) in prod_{p >= 0} A^p(X), carrying c_p(E) in degree p, for an object of D(O_X) whose Chern classes are defined in the sense of clause (1). Stacks.Chow.res_perfectChernClass pins it down at every envelope presentation, which is how Lemma 0GUD characterizes it. The two further classes clause (2) names are ch(E) (Stacks.Chow.perfectChernCharacter) and P_p(E) (Stacks.Chow.perfectPowerSumComponent)”.
+**`Stacks.Chow.perfectChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/EnvelopeChern.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/EnvelopeChern.lean#L210). The attribute's comment: “clause (2) for c(E): the class c(E) in prod\_\{p >= 0} A^p(X), carrying c\_p(E) in degree p, for an object of D(O\_X) whose Chern classes are defined in the sense of clause (1). Stacks.Chow.res\_perfectChernClass pins it down at every envelope presentation, which is how Lemma 0GUD characterizes it. The two further classes clause (2) names are ch(E) (Stacks.Chow.perfectChernCharacter) and P\_p(E) (Stacks.Chow.perfectPowerSumComponent)”.
 
 > **The total Chern class `c(E)` of an object whose Chern classes are defined**, Stacks 0F9E
 > (2): the class of Stacks 0GUD, the unique total class of `X` whose restriction along the envelope
@@ -453,7 +453,7 @@ theorem hasDefinedChernClasses_of_derivedPullback {X X' : Scheme.{u}} (g : X ⟶
     HasDefinedChernClasses E
 ```
 
-**`Stacks.Chow.hasDefinedChernClasses_of_isCompact_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/CriteriaComponents.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/CriteriaComponents.lean#L231). The attribute's comment: “clause (3): the irreducible components of X are quasi-compact. The conclusion is the full one: the Chern classes of E are defined, i.e. there is an envelope f : Y -> X with Lf^*E isomorphic in D(O_Y) to a locally bounded complex of finite locally free O_Y-modules, which is Tag 0F9E (1). The hypotheses are exactly the source's: the base situation of Tag 02QL, X locally of finite type over its base, E perfect, and the irreducible components of X quasi-compact”.
+**`Stacks.Chow.hasDefinedChernClasses_of_isCompact_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/CriteriaComponents.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/CriteriaComponents.lean#L231). The attribute's comment: “clause (3): the irreducible components of X are quasi-compact. The conclusion is the full one: the Chern classes of E are defined, i.e. there is an envelope f : Y -> X with Lf^*E isomorphic in D(O\_Y) to a locally bounded complex of finite locally free O\_Y-modules, which is Tag 0F9E (1). The hypotheses are exactly the source's: the base situation of Tag 02QL, X locally of finite type over its base, E perfect, and the irreducible components of X quasi-compact”.
 
 > **[Stacks, Tag 0GUE] clause (3).** Let `(S, δ)` be the base situation of chapter 42, let `X`
 > be locally of finite type over `S` with quasi-compact irreducible components, and let `E` be a
@@ -481,7 +481,7 @@ theorem hasDefinedChernClasses_of_isCompact_irreducibleComponents
     HasDefinedChernClasses E
 ```
 
-**`Stacks.Chow.hasDefinedChernClasses_of_compactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/CriteriaQuasiCompact.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/CriteriaQuasiCompact.lean#L126). The attribute's comment: “clause (4): X is quasi-compact. The conclusion is the full one: the Chern classes of E are defined, i.e. there is an envelope f : Y ⟶ X with Lf^*E isomorphic in D(O_Y) to a locally bounded complex of finite locally free O_Y-modules, which is Tag 0F9E (1). The hypotheses are exactly the source's: the base situation of Tag 02QL, X locally of finite type over its base, E perfect, and X quasi-compact”.
+**`Stacks.Chow.hasDefinedChernClasses_of_compactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/CriteriaQuasiCompact.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/CriteriaQuasiCompact.lean#L126). The attribute's comment: “clause (4): X is quasi-compact. The conclusion is the full one: the Chern classes of E are defined, i.e. there is an envelope f : Y ⟶ X with Lf^*E isomorphic in D(O\_Y) to a locally bounded complex of finite locally free O\_Y-modules, which is Tag 0F9E (1). The hypotheses are exactly the source's: the base situation of Tag 02QL, X locally of finite type over its base, E perfect, and X quasi-compact”.
 
 > **[Stacks, Tag 0GUE] clause (4).** Let `(S, δ)` be the base situation of chapter 42, let `X`
 > be locally of finite type over `S` and quasi-compact, and let `E` be a perfect object of
@@ -513,7 +513,7 @@ theorem hasDefinedChernClasses_of_compactSpace
 
 [Tag 0GUF](https://stacks.math.columbia.edu/tag/0GUF) in the Stacks Project.
 
-**`Stacks.Chow.powerSumClass_eq_of_envelopePresentation_modification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComputedOnModification.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComputedOnModification.lean#L146). The attribute's comment: “the characteristic class clause res(c_p(E)) = c_p(E^bullet), in the power sum reading P_p of Tag 0ESZ, for the lift a : W' -> Y of the modification to the envelope, so that res is along the g' = a . f of the tag. CARRIED: the family P_p(E) itself, which this repository does not construct -- it is taken as a family restricting along the envelope to P_p of the presenting complex, the hypothesis of the Tag 0GUD uniqueness theorems and the only expression here for 'c is the family of Chern classes of E'; the base change compatibility of the power sum data, which Stacks.Chow.PowerSumClassRule does not record; and the identification of a^*E_Y^. with a representative of L(g')^*E. NOT DELIVERED: the total Chern class reading, which needs the multiplicativity of the restriction map, Tag 0FE0 hence Tag 0B6Y, not formalized here; and the refinement that on an integral W' the pulled back complex has terms of constant rank. The geometric half of the tag is Stacks 0GUF on AlgebraicGeometry.IsEnvelope.exists_properBirational_modification”.
+**`Stacks.Chow.powerSumClass_eq_of_envelopePresentation_modification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComputedOnModification.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComputedOnModification.lean#L146). The attribute's comment: “the characteristic class clause res(c\_p(E)) = c\_p(E^bullet), in the power sum reading P\_p of Tag 0ESZ, for the lift a : W' -> Y of the modification to the envelope, so that res is along the g' = a . f of the tag. CARRIED: the family P\_p(E) itself, which this repository does not construct -- it is taken as a family restricting along the envelope to P\_p of the presenting complex, the hypothesis of the Tag 0GUD uniqueness theorems and the only expression here for 'c is the family of Chern classes of E'; the base change compatibility of the power sum data, which Stacks.Chow.PowerSumClassRule does not record; and the identification of a^*E\_Y^. with a representative of L(g')^*E. NOT DELIVERED: the total Chern class reading, which needs the multiplicativity of the restriction map, Tag 0FE0 hence Tag 0B6Y, not formalized here; and the refinement that on an integral W' the pulled back complex has terms of constant rank. The geometric half of the tag is Stacks 0GUF on AlgebraicGeometry.IsEnvelope.exists\_properBirational\_modification”.
 
 > **Stacks 0GUF, the characteristic class clause, for the power sums.** Let `E` be an object of
 > `D(𝒪_X)` and let `H` be an envelope presentation of it, Stacks 0F9E (1), with presenting complex
@@ -554,7 +554,7 @@ theorem powerSumClass_eq_of_envelopePresentation_modification (H : EnvelopePrese
         w k p
 ```
 
-**`Stacks.Chow.chernCharacter_eq_of_envelopePresentation_modification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComputedOnModification.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComputedOnModification.lean#L230). The attribute's comment: “the characteristic class clause res(c_p(E)) = c_p(E^bullet), in the Chern character reading ch_p = P_p/p! of Tag 0ESZ, for the lift a : W' -> Y of the modification to the envelope, so that res is along the g' = a . f of the tag. CARRIED: the family ch_p(E) itself, which this repository does not construct -- it is taken as a family restricting along the envelope to ch_p of the presenting complex, the hypothesis of the Tag 0GUD uniqueness theorem; the base change compatibility of the power sum data; and the identification of a^*E_Y^. with a representative of L(g')^*E. NOT DELIVERED: the total Chern class reading, which needs the multiplicativity of the restriction map, Tag 0FE0 hence Tag 0B6Y”.
+**`Stacks.Chow.chernCharacter_eq_of_envelopePresentation_modification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassComputedOnModification.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassComputedOnModification.lean#L230). The attribute's comment: “the characteristic class clause res(c\_p(E)) = c\_p(E^bullet), in the Chern character reading ch\_p = P\_p/p! of Tag 0ESZ, for the lift a : W' -> Y of the modification to the envelope, so that res is along the g' = a . f of the tag. CARRIED: the family ch\_p(E) itself, which this repository does not construct -- it is taken as a family restricting along the envelope to ch\_p of the presenting complex, the hypothesis of the Tag 0GUD uniqueness theorem; the base change compatibility of the power sum data; and the identification of a^*E\_Y^. with a representative of L(g')^*E. NOT DELIVERED: the total Chern class reading, which needs the multiplicativity of the restriction map, Tag 0FE0 hence Tag 0B6Y”.
 
 > **Stacks 0GUF, the characteristic class clause, for the Chern character.** The Chern
 > character reading of `res(c_p(E)) = c_p(ℰ^•)`: for a family `c` of rational Chow cohomology
@@ -584,7 +584,7 @@ theorem chernCharacter_eq_of_envelopePresentation_modification (H : EnvelopePres
         w k p
 ```
 
-**`Stacks.Chow.exists_properBirational_res_perfectChernClass_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectChernOnModification.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectChernOnModification.lean#L120). The attribute's comment: “the full lemma: an integral W' with b : W' -> W proper birational, a bounded complex E^bullet of finite locally free O_{W'}-modules of constant ranks representing L(g')^*E for g' = b . g, and res_{g'}(c_p(E)) = c_p(E^bullet) in A^p(W') for the Chern classes c_p(E) of Tag 0F9E (2), Stacks.Chow.perfectChernClass. The perfectness of E is not needed”.
+**`Stacks.Chow.exists_properBirational_res_perfectChernClass_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectChernOnModification.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectChernOnModification.lean#L120). The attribute's comment: “the full lemma: an integral W' with b : W' -> W proper birational, a bounded complex E^bullet of finite locally free O\_\{W'}-modules of constant ranks representing L(g')^*E for g' = b . g, and res\_\{g'}(c\_p(E)) = c\_p(E^bullet) in A^p(W') for the Chern classes c\_p(E) of Tag 0F9E (2), Stacks.Chow.perfectChernClass. The perfectness of E is not needed”.
 
 > **Stacks 0GUF.** Let `X` be locally of finite type over the base and let `E` be an object of
 > `D(𝒪_X)` whose Chern classes are defined. For `g : W ⟶ X` locally of finite type with `W`
@@ -634,7 +634,7 @@ theorem IsEnvelope.exists_properBirational_modification {X Y W : Scheme.{u}}
 
 [Tag 0FAC](https://stacks.math.columbia.edu/tag/0FAC) in the Stacks Project.
 
-**`Stacks.Chow.nonhomogeneousBivariantGroupCongr_compositeOfInvertible_perfectChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/BivariantCommute.lean, line 713](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/BivariantCommute.lean#L713). The attribute's comment: “(2): c ∘ c_p(E) = c_p(Lg^*E) ∘ c in A^*(X' → X), for every c in A^*(X' → X), the Chern classes of Stacks 0F9E (2) and the composition of Stacks 0B75 at the Gysin system of the first Chern class of an invertible module, extended additively to the graded groups”.
+**`Stacks.Chow.nonhomogeneousBivariantGroupCongr_compositeOfInvertible_perfectChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/BivariantCommute.lean, line 713](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/BivariantCommute.lean#L713). The attribute's comment: “(2): c ∘ c\_p(E) = c\_p(Lg^*E) ∘ c in A^*(X' → X), for every c in A^*(X' → X), the Chern classes of Stacks 0F9E (2) and the composition of Stacks 0B75 at the Gysin system of the first Chern class of an invertible module, extended additively to the graded groups”.
 
 > **Stacks 0FAC (2).** Let `X` be locally of finite type over the base, let `E ∈ D(𝒪_X)` be
 > perfect with Chern classes defined, let `g : X' ⟶ X` be locally of finite type and let
@@ -659,7 +659,7 @@ theorem nonhomogeneousBivariantGroupCongr_compositeOfInvertible_perfectChernClas
           (DirectSum.of _ (p : ℤ) (perfectChernClass C sX' (hE.derivedPullback g) p)) c)
 ```
 
-**`Stacks.Chow.nonhomogeneousBivariantGroupCongr_compositeOfInvertible_perfectChernClass_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/BivariantCommute.lean, line 747](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/BivariantCommute.lean#L747). The attribute's comment: “(1): c_p(E) is in the center of A^*(X), c · c_p(E) = c_p(E) · c for every c in A^*(X), the product being the composition of Stacks 0B75 at the Gysin system of the first Chern class of an invertible module, extended additively to the graded groups, and the Chern classes of Stacks 0F9E (2)”.
+**`Stacks.Chow.nonhomogeneousBivariantGroupCongr_compositeOfInvertible_perfectChernClass_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/BivariantCommute.lean, line 747](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/BivariantCommute.lean#L747). The attribute's comment: “(1): c\_p(E) is in the center of A^*(X), c · c\_p(E) = c\_p(E) · c for every c in A^*(X), the product being the composition of Stacks 0B75 at the Gysin system of the first Chern class of an invertible module, extended additively to the graded groups, and the Chern classes of Stacks 0F9E (2)”.
 
 > **Stacks 0FAC (1).** Let `E ∈ D(𝒪_X)` be perfect with Chern classes defined. Then `c_p(E)` is
 > in the center of `A^*(X)`: for every `c ∈ A^*(X)`,
@@ -688,7 +688,7 @@ theorem nonhomogeneousBivariantGroupCongr_compositeOfInvertible_perfectChernClas
           (Category.id_comp sX) (DirectSum.of _ (p : ℤ) (perfectChernClass C sX hE p)) c)
 ```
 
-**`Stacks.Chow.comp_perfectChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectChernCentral.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectChernCentral.lean#L412). The attribute's comment: “(2): c ∘ c_p(E) = c_p(Lg^*E) ∘ c in A^*(X' → X) for every g : X' → X locally of finite type and every bivariant class c in A^q(X' → X) of Stacks 0B76”.
+**`Stacks.Chow.comp_perfectChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectChernCentral.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectChernCentral.lean#L412). The attribute's comment: “(2): c ∘ c\_p(E) = c\_p(Lg^*E) ∘ c in A^*(X' → X) for every g : X' → X locally of finite type and every bivariant class c in A^q(X' → X) of Stacks 0B76”.
 
 > Let `E ∈ D(𝒪_X)` be perfect with defined Chern classes, let `g : X' ⟶ X` be locally of finite
 > type and let `c ∈ A^q(X' ⟶ X)` be a bivariant class. Then
@@ -711,7 +711,7 @@ theorem comp_perfectChernClass
         (comp_comp_structureMorphism_eq hg (Category.id_comp sX)) (Iso.refl X') (by simp)
 ```
 
-**`Stacks.Chow.perfectChernClass_mem_center`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectChernCentral.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectChernCentral.lean#L429). The attribute's comment: “(1): c_p(E) is in the center of the Chow cohomology ring A^*(X) of Stacks 0B7E”.
+**`Stacks.Chow.perfectChernClass_mem_center`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectChernCentral.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectChernCentral.lean#L429). The attribute's comment: “(1): c\_p(E) is in the center of the Chow cohomology ring A^*(X) of Stacks 0B7E”.
 
 > Let `E ∈ D(𝒪_X)` be perfect with defined Chern classes. Then `c_p(E) ∈ A^p(X)` lies in the
 > center of the Chow cohomology ring `A^*(X)`.
@@ -766,7 +766,7 @@ theorem perfectChernCharacter_triangle (d₁ : HasDefinedChernClasses T.obj₁)
       perfectChernCharacterComponent C sX d₁ p + perfectChernCharacterComponent C sX d₃ p
 ```
 
-**`Stacks.Chow.perfectPowerSum_triangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/Triangle.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/Triangle.lean#L272). The attribute's comment: “P_p(E₂) = P_p(E₁) + P_p(E₃)”.
+**`Stacks.Chow.perfectPowerSum_triangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/Triangle.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/Triangle.lean#L272). The attribute's comment: “P\_p(E₂) = P\_p(E₁) + P\_p(E₃)”.
 
 > **Stacks 0F9F, the power sums.** Under the hypotheses of Stacks 0F9F,
 > `P_p(E₂) = P_p(E₁) + P_p(E₃)` for every `p`.
@@ -777,7 +777,7 @@ theorem perfectPowerSum_triangle (d₁ : HasDefinedChernClasses T.obj₁)
     perfectPowerSum C sX d₂ p = perfectPowerSum C sX d₁ p + perfectPowerSum C sX d₃ p
 ```
 
-**`Stacks.Chow.hasDefinedChernClasses_and_additive_of_envelope`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TriangleAdditivity.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TriangleAdditivity.lean#L118). The attribute's comment: “condition (1): there is an envelope f : Y -> X such that Lf^*E_1 -> Lf^*E_2 is represented by a map of locally bounded complexes of finite locally free O_Y-modules. The conclusion is the whole one: the Chern classes of E_1, E_2 and E_3 are defined, c(E_2) = c(E_1)c(E_3), ch(E_2) = ch(E_1) + ch(E_3) and P_p(E_2) = P_p(E_1) + P_p(E_3), the last two read componentwise in A^p(X) tensor Q and in A^p(X) as the source reads them. Perfectness of the three objects is a standing hypothesis of the source that no step of this proof uses, so it is omitted, exactly as for the criteria of Tag 0GUE”.
+**`Stacks.Chow.hasDefinedChernClasses_and_additive_of_envelope`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TriangleAdditivity.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TriangleAdditivity.lean#L118). The attribute's comment: “condition (1): there is an envelope f : Y -> X such that Lf^*E\_1 -> Lf^*E\_2 is represented by a map of locally bounded complexes of finite locally free O\_Y-modules. The conclusion is the whole one: the Chern classes of E\_1, E\_2 and E\_3 are defined, c(E\_2) = c(E\_1)c(E\_3), ch(E\_2) = ch(E\_1) + ch(E\_3) and P\_p(E\_2) = P\_p(E\_1) + P\_p(E\_3), the last two read componentwise in A^p(X) tensor Q and in A^p(X) as the source reads them. Perfectness of the three objects is a standing hypothesis of the source that no step of this proof uses, so it is omitted, exactly as for the criteria of Tag 0GUE”.
 
 > **Stacks 0F9F under condition (1) of the source.** Let `T` be a distinguished triangle of
 > `D(𝒪_X)`. If there is an envelope `f : Y ⟶ X` such that `Lf^*T.mor₁ : Lf^*E₁ ⟶ Lf^*E₂` is
@@ -807,7 +807,7 @@ theorem hasDefinedChernClasses_and_additive_of_envelope
     TriangleChernAdditive C sX T
 ```
 
-**`Stacks.Chow.hasDefinedChernClasses_and_additive_of_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TriangleAdditivity.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TriangleAdditivity.lean#L185). The attribute's comment: “condition (2): E_1 -> E_2 is represented by a map of locally bounded complexes of finite locally free O_X-modules. The conclusion is the whole one: the Chern classes of E_1, E_2 and E_3 are defined, c(E_2) = c(E_1)c(E_3), ch(E_2) = ch(E_1) + ch(E_3) and P_p(E_2) = P_p(E_1) + P_p(E_3), the last two read componentwise in A^p(X) tensor Q and in A^p(X) as the source reads them. Perfectness of the three objects is a standing hypothesis of the source that no step of this proof uses, so it is omitted, exactly as for the criteria of Tag 0GUE”.
+**`Stacks.Chow.hasDefinedChernClasses_and_additive_of_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TriangleAdditivity.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TriangleAdditivity.lean#L185). The attribute's comment: “condition (2): E\_1 -> E\_2 is represented by a map of locally bounded complexes of finite locally free O\_X-modules. The conclusion is the whole one: the Chern classes of E\_1, E\_2 and E\_3 are defined, c(E\_2) = c(E\_1)c(E\_3), ch(E\_2) = ch(E\_1) + ch(E\_3) and P\_p(E\_2) = P\_p(E\_1) + P\_p(E\_3), the last two read componentwise in A^p(X) tensor Q and in A^p(X) as the source reads them. Perfectness of the three objects is a standing hypothesis of the source that no step of this proof uses, so it is omitted, exactly as for the criteria of Tag 0GUE”.
 
 > **Stacks 0F9F under condition (2) of the source.** If the first map `T.mor₁ : E₁ ⟶ E₂` of a
 > distinguished triangle of `D(𝒪_X)` is itself represented by a map `α : 𝓔₁^• ⟶ 𝓔₂^•` of locally
@@ -830,7 +830,7 @@ theorem hasDefinedChernClasses_and_additive_of_map
     TriangleChernAdditive C sX T
 ```
 
-**`Stacks.Chow.triangleChernAdditive_of_isCompact_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TriangleAdditivityComponents.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TriangleAdditivityComponents.lean#L351). The attribute's comment: “condition (3): the irreducible components of X are quasi-compact. The conclusion is the whole one: the Chern classes of E_1, E_2 and E_3 are defined, c(E_2) = c(E_1)c(E_3), ch(E_2) = ch(E_1) + ch(E_3) and P_p(E_2) = P_p(E_1) + P_p(E_3), the last two read componentwise in A^p(X) tensor Q and in A^p(X) as the source reads them. The hypotheses are exactly the source's: the base situation of Tag 02QL, X locally of finite type over its base, the distinguished triangle, perfectness of E_1 and E_2, and the irreducible components of X quasi-compact. Perfectness of E_3 is a standing hypothesis of the source that no step of this proof uses, so it is omitted, exactly as for conditions (1), (2) and (4)”.
+**`Stacks.Chow.triangleChernAdditive_of_isCompact_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TriangleAdditivityComponents.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TriangleAdditivityComponents.lean#L351). The attribute's comment: “condition (3): the irreducible components of X are quasi-compact. The conclusion is the whole one: the Chern classes of E\_1, E\_2 and E\_3 are defined, c(E\_2) = c(E\_1)c(E\_3), ch(E\_2) = ch(E\_1) + ch(E\_3) and P\_p(E\_2) = P\_p(E\_1) + P\_p(E\_3), the last two read componentwise in A^p(X) tensor Q and in A^p(X) as the source reads them. The hypotheses are exactly the source's: the base situation of Tag 02QL, X locally of finite type over its base, the distinguished triangle, perfectness of E\_1 and E\_2, and the irreducible components of X quasi-compact. Perfectness of E\_3 is a standing hypothesis of the source that no step of this proof uses, so it is omitted, exactly as for conditions (1), (2) and (4)”.
 
 > **[Stacks, Tag 0F9F] under condition (3) of the source.** Let `T` be a distinguished triangle
 > of `D(𝒪_X)` whose first two objects are perfect and let the irreducible components of `X`, which
@@ -867,7 +867,7 @@ theorem triangleChernAdditive_of_isCompact_irreducibleComponents
     TriangleChernAdditive C sX T
 ```
 
-**`Stacks.Chow.triangleChernAdditive_of_compactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TriangleAdditivityQuasiCompact.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TriangleAdditivityQuasiCompact.lean#L147). The attribute's comment: “condition (4): X is quasi-compact. The conclusion is the whole one: the Chern classes of E_1, E_2 and E_3 are defined, c(E_2) = c(E_1)c(E_3), ch(E_2) = ch(E_1) + ch(E_3) and P_p(E_2) = P_p(E_1) + P_p(E_3), the last two read componentwise in A^p(X) tensor Q and in A^p(X) as the source reads them. Perfectness of E_3 is a standing hypothesis of the source that no step of this proof uses, so it is omitted, exactly as for conditions (1) and (2)”.
+**`Stacks.Chow.triangleChernAdditive_of_compactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TriangleAdditivityQuasiCompact.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/TriangleAdditivityQuasiCompact.lean#L147). The attribute's comment: “condition (4): X is quasi-compact. The conclusion is the whole one: the Chern classes of E\_1, E\_2 and E\_3 are defined, c(E\_2) = c(E\_1)c(E\_3), ch(E\_2) = ch(E\_1) + ch(E\_3) and P\_p(E\_2) = P\_p(E\_1) + P\_p(E\_3), the last two read componentwise in A^p(X) tensor Q and in A^p(X) as the source reads them. Perfectness of E\_3 is a standing hypothesis of the source that no step of this proof uses, so it is omitted, exactly as for conditions (1) and (2)”.
 
 > **[Stacks, Tag 0F9F] under condition (4) of the source.** Let `T` be a
 > distinguished triangle of `D(𝒪_X)` whose first two objects are perfect and let `X`, which is
@@ -903,7 +903,7 @@ theorem triangleChernAdditive_of_compactSpace
 
 [Tag 0FAD](https://stacks.math.columbia.edu/tag/0FAD) in the Stacks Project.
 
-**`Stacks.Chow.perfectPowerSum_eq_aeval`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean#L191). The attribute's comment: “P_p(E) is the exact same expression in the Chern classes of E as in the case of vector bundles: the power-sum polynomial P_p of 0F9B evaluated at c_1(E), ..., c_p(E), p >= 1”.
+**`Stacks.Chow.perfectPowerSum_eq_aeval`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean#L191). The attribute's comment: “P\_p(E) is the exact same expression in the Chern classes of E as in the case of vector bundles: the power-sum polynomial P\_p of 0F9B evaluated at c\_1(E), ..., c\_p(E), p >= 1”.
 
 > **Newton's identities for a perfect object**, Remark 0FAD. For `p ≥ 1` the class `P_p(E)` is
 > the universal power-sum polynomial `P_p` of Stacks 0F9B evaluated at the Chern classes of `E` — the
@@ -917,7 +917,7 @@ theorem perfectPowerSum_eq_aeval (p : ℕ) (hp : 0 < p) :
         (powerSumPolynomial p : MvPolynomial ℕ+ ℤ) : TotalChowClass C sX)
 ```
 
-**`Stacks.Chow.perfectPowerSum_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean#L206). The attribute's comment: “the first displayed formula P_1(E) = c_1(E)”.
+**`Stacks.Chow.perfectPowerSum_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean#L206). The attribute's comment: “the first displayed formula P\_1(E) = c\_1(E)”.
 
 > `P_1(E) = c_1(E)`, Remark 0FAD.
 
@@ -926,7 +926,7 @@ theorem perfectPowerSum_one :
     perfectPowerSum C sX hE 1 = perfectChernComponent C sX hE 1
 ```
 
-**`Stacks.Chow.perfectPowerSum_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean#L213). The attribute's comment: “the second displayed formula P_2(E) = c_1(E)^2 - 2c_2(E)”.
+**`Stacks.Chow.perfectPowerSum_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean#L213). The attribute's comment: “the second displayed formula P\_2(E) = c\_1(E)^2 - 2c\_2(E)”.
 
 > `P_2(E) = c_1(E)^2 - 2 c_2(E)`, Remark 0FAD.
 
@@ -936,7 +936,7 @@ theorem perfectPowerSum_two :
       perfectChernComponent C sX hE 1 ^ 2 - 2 * perfectChernComponent C sX hE 2
 ```
 
-**`Stacks.Chow.perfectPowerSum_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean#L222). The attribute's comment: “the third displayed formula P_3(E) = c_1(E)^3 - 3c_1(E)c_2(E) + 3c_3(E)”.
+**`Stacks.Chow.perfectPowerSum_three`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean#L222). The attribute's comment: “the third displayed formula P\_3(E) = c\_1(E)^3 - 3c\_1(E)c\_2(E) + 3c\_3(E)”.
 
 > `P_3(E) = c_1(E)^3 - 3 c_1(E) c_2(E) + 3 c_3(E)`, Remark 0FAD.
 
@@ -948,7 +948,7 @@ theorem perfectPowerSum_three :
         3 * perfectChernComponent C sX hE 3
 ```
 
-**`Stacks.Chow.perfectPowerSum_four`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean#L235). The attribute's comment: “the fourth displayed formula P_4(E) = c_1(E)^4 - 4c_1(E)^2c_2(E) + 4c_1(E)c_3(E) + 2c_2(E)^2 - 4c_4(E)”.
+**`Stacks.Chow.perfectPowerSum_four`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean#L235). The attribute's comment: “the fourth displayed formula P\_4(E) = c\_1(E)^4 - 4c\_1(E)^2c\_2(E) + 4c\_1(E)c\_3(E) + 2c\_2(E)^2 - 4c\_4(E)”.
 
 > `P_4(E) = c_1(E)^4 - 4 c_1(E)^2 c_2(E) + 4 c_1(E) c_3(E) + 2 c_2(E)^2 - 4 c_4(E)`,
 > Remark 0FAD.
@@ -962,7 +962,7 @@ theorem perfectPowerSum_four :
         2 * perfectChernComponent C sX hE 2 ^ 2 - 4 * perfectChernComponent C sX hE 4
 ```
 
-**`Stacks.Chow.perfectPowerSum_zero_and_perfectChernCharacterComponent_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean#L248). The attribute's comment: “the bivariant class P_0(E) = r(E) = ch_0(E)”.
+**`Stacks.Chow.perfectPowerSum_zero_and_perfectChernCharacterComponent_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean#L248). The attribute's comment: “the bivariant class P\_0(E) = r(E) = ch\_0(E)”.
 
 > **`P_0(E) = r(E) = ch_0(E)`**, Remark 0FAD: the degree-zero power sum and the degree-zero
 > component of the Chern character are the rank of `E`.
@@ -973,7 +973,7 @@ theorem perfectPowerSum_zero_and_perfectChernCharacterComponent_zero :
       perfectChernCharacterComponent C sX hE 0 = (1 : ℚ) ⊗ₜ[ℤ] perfectRankClass C sX hE 0
 ```
 
-**`Stacks.Chow.log_perfectChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean#L340). The attribute's comment: “formally taking the logarithm: log(c(E)) = sum_p (-1)^{p-1} P_p(E)/p, read in A^p(X) tensor Q degree by degree, the degree-p part of log c(E) being sum_{k=1}^p (-1)^{k-1} (c(E) - 1)^k / k”.
+**`Stacks.Chow.log_perfectChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean#L340). The attribute's comment: “formally taking the logarithm: log(c(E)) = sum\_p (-1)^\{p-1} P\_p(E)/p, read in A^p(X) tensor Q degree by degree, the degree-p part of log c(E) being sum\_\{k=1}^p (-1)^\{k-1} (c(E) - 1)^k / k”.
 
 > **The logarithmic identity for a perfect object.** In `A^p(X) ⊗ 𝐐`,
 >
@@ -990,7 +990,7 @@ theorem log_perfectChernClass (p : ℕ) :
       ((-1 : ℚ) ^ (p - 1) / p) ⊗ₜ[ℤ] perfectPowerSumComponent C sX hE p
 ```
 
-**`Stacks.Chow.exists_perfectChernClass_eq_perfectPowerSum_zero_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean, line 540](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean#L540). The attribute's comment: “the bivariant class P_0(E) = r(E) cannot be recovered from the Chern class c(E): on every nonempty X, c(O_X[0]) = c(0) = 1 while r(O_X[0]) = 1 differs from r(0) = 0”.
+**`Stacks.Chow.exists_perfectChernClass_eq_perfectPowerSum_zero_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean, line 540](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectNewtonIdentities.lean#L540). The attribute's comment: “the bivariant class P\_0(E) = r(E) cannot be recovered from the Chern class c(E): on every nonempty X, c(O\_X[0]) = c(0) = 1 while r(O\_X[0]) = 1 differs from r(0) = 0”.
 
 > **The rank of a perfect object is not determined by its total Chern class**, Remark 0FAD: on
 > every nonempty `X` there are perfect objects `E` and `F` whose Chern classes are defined, with
@@ -1044,7 +1044,7 @@ theorem eq_of_forall_chowCohomologyRestriction_eq_of_hasDefinedChernClasses
     c = d
 ```
 
-**`Stacks.Chow.exists_splitCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/SplittingPrinciplePerfect.lean, line 739](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/SplittingPrinciplePerfect.lean#L739). The attribute's comment: “the splitting principle: for every envelope f : Y -> X and complex E^bullet representing Lf^*E there are split charts (the connected component of each point of Y, where E^bullet is bounded of fixed ranks, followed by the splitting morphism of 02UL filtering each term by invertible modules L_{n,j}), restriction to all of them is injective on A^*(X), and on them c(E) = prod_{n even} (1 + x_{n,j}) prod_{n odd} (1 + x_{n,j})^{-1} and P_p(E) = sum_{n even} x_{n,j}^p - sum_{n odd} x_{n,j}^p with x_{n,j} = c_1(L_{n,j})”.
+**`Stacks.Chow.exists_splitCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/SplittingPrinciplePerfect.lean, line 739](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/SplittingPrinciplePerfect.lean#L739). The attribute's comment: “the splitting principle: for every envelope f : Y -> X and complex E^bullet representing Lf^*E there are split charts (the connected component of each point of Y, where E^bullet is bounded of fixed ranks, followed by the splitting morphism of 02UL filtering each term by invertible modules L\_\{n,j}), restriction to all of them is injective on A^*(X), and on them c(E) = prod\_\{n even} (1 + x\_\{n,j}) prod\_\{n odd} (1 + x\_\{n,j})^\{-1} and P\_p(E) = sum\_\{n even} x\_\{n,j}^p - sum\_\{n odd} x\_\{n,j}^p with x\_\{n,j} = c\_1(L\_\{n,j})”.
 
 > Let `(S, δ)`, `X` and `E` be as in Definition 0F9E, the Chern classes of `E` being defined,
 > and choose an envelope `f : Y ⟶ X` and a locally bounded complex `ℰ^•` of finite locally free
@@ -1101,7 +1101,7 @@ theorem hasDefinedChernClasses_derivedDual
     HasDefinedChernClasses (Stacks.Chow.derivedDual E)
 ```
 
-**`Stacks.Chow.perfectChernClass_apply_derivedDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DualChernClasses.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DualChernClasses.lean#L399). The attribute's comment: “the Chern classes: c_p(E-dual) = (-1)^p c_p(E) in A^p(X)”.
+**`Stacks.Chow.perfectChernClass_apply_derivedDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DualChernClasses.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DualChernClasses.lean#L399). The attribute's comment: “the Chern classes: c\_p(E-dual) = (-1)^p c\_p(E) in A^p(X)”.
 
 > **`c_p(E^∨) = (-1)^p c_p(E)` in `A^p(X)`**, the first conclusion of [Stacks, Tag 0FAE].
 
@@ -1113,7 +1113,7 @@ theorem perfectChernClass_apply_derivedDual
       ((-1 : ℤ) ^ p) • perfectChernClass C sX h p
 ```
 
-**`Stacks.Chow.perfectPowerSumComponent_derivedDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DualChernClasses.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DualChernClasses.lean#L428). The attribute's comment: “the power-sum classes: P_p(E-dual) = (-1)^p P_p(E) in A^p(X)”.
+**`Stacks.Chow.perfectPowerSumComponent_derivedDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DualChernClasses.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DualChernClasses.lean#L428). The attribute's comment: “the power-sum classes: P\_p(E-dual) = (-1)^p P\_p(E) in A^p(X)”.
 
 > **`P_p(E^∨) = (-1)^p P_p(E)` in `A^p(X)`**, the second conclusion of [Stacks, Tag 0FAE].
 
@@ -1125,7 +1125,7 @@ theorem perfectPowerSumComponent_derivedDual
       ((-1 : ℤ) ^ p) • perfectPowerSumComponent C sX h p
 ```
 
-**`Stacks.Chow.perfectChernCharacterComponent_derivedDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DualChernClasses.lean, line 441](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DualChernClasses.lean#L441). The attribute's comment: “the Chern character: ch_p(E-dual) = (-1)^p ch_p(E) in A^p(X) tensor Q”.
+**`Stacks.Chow.perfectChernCharacterComponent_derivedDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DualChernClasses.lean, line 441](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DualChernClasses.lean#L441). The attribute's comment: “the Chern character: ch\_p(E-dual) = (-1)^p ch\_p(E) in A^p(X) tensor Q”.
 
 > **`ch_p(E^∨) = (-1)^p ch_p(E)` in `A^p(X) ⊗ 𝐐`**, the third conclusion of
 > [Stacks, Tag 0FAE]. The Chern character component is `P_p/p!`, so the sign passes through the
@@ -1169,7 +1169,7 @@ theorem perfectChernClass_derivedTwist_apply (perfect : RingedSpace.IsPerfect.{u
 
 [Tag 0FAG](https://stacks.math.columbia.edu/tag/0FAG) in the Stacks Project.
 
-**`Stacks.Chow.perfectChernClass_derivedTensor_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedTensor.lean, line 349](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedTensor.lean#L349). The attribute's comment: “the formula for c_1(E tensor^L F), for objects E, F of D(O_X) whose Chern classes are defined; perfectness is not needed. The rank r(E) is the class P_0(E) = perfectPowerSum C sX hE 0 in A^0(X), not assumed constant, and r(E) c_1(F) is the product in the ring TotalChowClass C sX of total Chow cohomology classes. E tensor^L F is the derived tensor product derivedTensorProductFunctor of Stacks 06YU”.
+**`Stacks.Chow.perfectChernClass_derivedTensor_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedTensor.lean, line 349](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedTensor.lean#L349). The attribute's comment: “the formula for c\_1(E tensor^L F), for objects E, F of D(O\_X) whose Chern classes are defined; perfectness is not needed. The rank r(E) is the class P\_0(E) = perfectPowerSum C sX hE 0 in A^0(X), not assumed constant, and r(E) c\_1(F) is the product in the ring TotalChowClass C sX of total Chow cohomology classes. E tensor^L F is the derived tensor product derivedTensorProductFunctor of Stacks 06YU”.
 
 > **The first Chern class of a derived tensor product.** For objects `E`, `F` of `D(𝒪_X)` whose
 > Chern classes are defined,
@@ -1186,7 +1186,7 @@ theorem perfectChernClass_derivedTensor_one :
         perfectPowerSum C sX hF 0 * TotalChowClass.homComponent 1 (perfectChernClass C sX hE)
 ```
 
-**`Stacks.Chow.perfectPowerSum_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedTensor.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedTensor.lean#L395). The attribute's comment: “the precise form P_p(E tensor^L F) = sum over p_1 + p_2 = p of C(p, p_1) P_{p_1}(E) P_{p_2}(F) in A^p(X), for every p >= 0, for objects E, F of D(O_X) whose Chern classes are defined (perfectness is not needed); P_p is perfectPowerSum of Stacks 0GUD, P_0 being the rank, and the products are those of TotalChowClass C sX. The statement ch(E tensor F) = ch(E) ch(F) in A^*(X) tensor Q is the consequence of this identity obtained by dividing by p!, which is not stated separately”.
+**`Stacks.Chow.perfectPowerSum_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedTensor.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedTensor.lean#L395). The attribute's comment: “the precise form P\_p(E tensor^L F) = sum over p\_1 + p\_2 = p of C(p, p\_1) P\_\{p\_1}(E) P\_\{p\_2}(F) in A^p(X), for every p >= 0, for objects E, F of D(O\_X) whose Chern classes are defined (perfectness is not needed); P\_p is perfectPowerSum of Stacks 0GUD, P\_0 being the rank, and the products are those of TotalChowClass C sX. The statement ch(E tensor F) = ch(E) ch(F) in A^*(X) tensor Q is the consequence of this identity obtained by dividing by p!, which is not stated separately”.
 
 > **The power sums of a derived tensor product.** For objects `E`, `F` of `D(𝒪_X)` whose Chern
 > classes are defined and every `p ≥ 0`,
@@ -1203,7 +1203,7 @@ theorem perfectPowerSum_derivedTensor (p : ℕ) :
         (perfectPowerSum C sX hE q.1 * perfectPowerSum C sX hF q.2)
 ```
 
-**`Stacks.Chow.perfectChernClass_derivedTensor_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedTensor.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedTensor.lean#L440). The attribute's comment: “the formula for c_2(E tensor^L F), for perfect objects E, F of D(O_X) whose Chern classes are defined, the ranks being arbitrary locally constant functions. r(E) is the class P_0(E) = perfectPowerSum C sX hE 0 in A^0(X); the binomial coefficient C(r(E), 2) is read as the class ofLocallyConstant of the locally constant function x |-> Ring.choose (chi_E(x)) 2, chi_E the derived-fibre Euler characteristic, whose own class is r(E) by perfectPowerSum_zero_eq_ofLocallyConstant; on the open and closed subscheme where E has rank r these are the integers r and C(r, 2), as in Remark 0FA7. The products are those of TotalChowClass C sX, written in the order of the source. The source's 'and so on for higher Chern classes' is not a precise assertion and is not formalized”.
+**`Stacks.Chow.perfectChernClass_derivedTensor_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedTensor.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/DerivedTensor.lean#L440). The attribute's comment: “the formula for c\_2(E tensor^L F), for perfect objects E, F of D(O\_X) whose Chern classes are defined, the ranks being arbitrary locally constant functions. r(E) is the class P\_0(E) = perfectPowerSum C sX hE 0 in A^0(X); the binomial coefficient C(r(E), 2) is read as the class ofLocallyConstant of the locally constant function x |-> Ring.choose (chi\_E(x)) 2, chi\_E the derived-fibre Euler characteristic, whose own class is r(E) by perfectPowerSum\_zero\_eq\_ofLocallyConstant; on the open and closed subscheme where E has rank r these are the integers r and C(r, 2), as in Remark 0FA7. The products are those of TotalChowClass C sX, written in the order of the source. The source's 'and so on for higher Chern classes' is not a precise assertion and is not formalized”.
 
 > **The second Chern class of a derived tensor product.** For perfect objects `E`, `F` of
 > `D(𝒪_X)` whose Chern classes are defined,
@@ -1230,7 +1230,7 @@ theorem perfectChernClass_derivedTensor_two (perfectE : RingedSpace.IsPerfect.{u
           TotalChowClass.homComponent 1 (perfectChernClass C sX hE) ^ 2
 ```
 
-**`Stacks.Chow.exists_tensorSplitCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean#L228). The attribute's comment: “and so on for higher Chern classes: the splitting-principle statement the proof reduces the lemma to. On tensor split charts of any two envelope presentations of E and F -- the connected component of a point of the common envelope followed by one splitting morphism of 02UL for the terms of both presenting complexes -- restriction is injective on A^*(X), c(E) and c(F) are the products of (1 + x)^{(-1)^n} and (1 + y)^{(-1)^m} over their Chern roots, and c(E tensor^L F) is the product of (1 + x + y)^{(-1)^n (-1)^m} over all pairs of roots, as lists of signed roots via Stacks.Chow.TotalChowClass.rootProd and Stacks.Chow.rootTensor”.
+**`Stacks.Chow.exists_tensorSplitCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean#L228). The attribute's comment: “and so on for higher Chern classes: the splitting-principle statement the proof reduces the lemma to. On tensor split charts of any two envelope presentations of E and F -- the connected component of a point of the common envelope followed by one splitting morphism of 02UL for the terms of both presenting complexes -- restriction is injective on A^*(X), c(E) and c(F) are the products of (1 + x)^\{(-1)^n} and (1 + y)^\{(-1)^m} over their Chern roots, and c(E tensor^L F) is the product of (1 + x + y)^\{(-1)^n (-1)^m} over all pairs of roots, as lists of signed roots via Stacks.Chow.TotalChowClass.rootProd and Stacks.Chow.rootTensor”.
 
 > The Chern roots of `E ⊗^𝐋 F` are the sums of the Chern roots of `E` and `F`. For
 > presentations of `E` and `F` on envelopes there are tensor split charts at every point of their
@@ -1259,7 +1259,7 @@ theorem exists_tensorSplitCharts (hE : HasDefinedChernClasses E) (hF : HasDefine
           (TotalChowClass C (χ y).T.sP)ˣ) : TotalChowClass C (χ y).T.sP)
 ```
 
-**`Stacks.Chow.homComponent_one_perfectChernClass_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean#L254). The attribute's comment: “the first displayed formula c_1(E tensor^L F) = r(E) c_1(F) + r(F) c_1(E), as classes homogeneous of degree one in the bivariant ring A^*(X) = Stacks.Chow.TotalChowClass, with r = Stacks.Chow.perfectRankClass and c_1 the degree-one homogeneous component of Stacks.Chow.perfectChernClass; the Chern classes of E tensor^L F are defined by Stacks.Chow.hasDefinedChernClasses_derivedTensor. Perfectness of E and F is not used”.
+**`Stacks.Chow.homComponent_one_perfectChernClass_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean#L254). The attribute's comment: “the first displayed formula c\_1(E tensor^L F) = r(E) c\_1(F) + r(F) c\_1(E), as classes homogeneous of degree one in the bivariant ring A^*(X) = Stacks.Chow.TotalChowClass, with r = Stacks.Chow.perfectRankClass and c\_1 the degree-one homogeneous component of Stacks.Chow.perfectChernClass; the Chern classes of E tensor^L F are defined by Stacks.Chow.hasDefinedChernClasses\_derivedTensor. Perfectness of E and F is not used”.
 
 > `c₁(E ⊗^𝐋 F) = r(E) c₁(F) + r(F) c₁(E)` in `A^*(X)`.
 
@@ -1272,7 +1272,7 @@ theorem homComponent_one_perfectChernClass_derivedTensor (hE : HasDefinedChernCl
         perfectRankClass C sX hF * TotalChowClass.homComponent 1 (perfectChernClass C sX hE)
 ```
 
-**`Stacks.Chow.homComponent_two_perfectChernClass_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean#L278). The attribute's comment: “the second displayed formula c_2(E tensor^L F) = r(E) c_2(F) + r(F) c_2(E) + binom(r(E), 2) c_1(F)^2 + (r(E) r(F) - 1) c_1(F) c_1(E) + binom(r(F), 2) c_1(E)^2, as classes homogeneous of degree two in the bivariant ring A^*(X) = Stacks.Chow.TotalChowClass, the products being compositions of bivariant classes, in the order of the source. r is Stacks.Chow.perfectRankClass and binom(r, 2) is Stacks.Chow.perfectRankChooseClass ... 2, the class which is binom(n, 2) on the open and closed locus where the rank of the perfect object is n; E and F perfect as in the source”.
+**`Stacks.Chow.homComponent_two_perfectChernClass_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean#L278). The attribute's comment: “the second displayed formula c\_2(E tensor^L F) = r(E) c\_2(F) + r(F) c\_2(E) + binom(r(E), 2) c\_1(F)^2 + (r(E) r(F) - 1) c\_1(F) c\_1(E) + binom(r(F), 2) c\_1(E)^2, as classes homogeneous of degree two in the bivariant ring A^*(X) = Stacks.Chow.TotalChowClass, the products being compositions of bivariant classes, in the order of the source. r is Stacks.Chow.perfectRankClass and binom(r, 2) is Stacks.Chow.perfectRankChooseClass ... 2, the class which is binom(n, 2) on the open and closed locus where the rank of the perfect object is n; E and F perfect as in the source”.
 
 > `c₂(E ⊗^𝐋 F) = r(E) c₂(F) + r(F) c₂(E) + C(r(E), 2) c₁(F)² + (r(E) r(F) - 1) c₁(F) c₁(E)
 > + C(r(F), 2) c₁(E)²` in `A^*(X)`.
@@ -1295,7 +1295,7 @@ theorem homComponent_two_perfectChernClass_derivedTensor
           TotalChowClass.homComponent 1 (perfectChernClass C sX hE) ^ 2
 ```
 
-**`Stacks.Chow.perfectChernClass_derivedTensor_apply_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean#L317). The attribute's comment: “the first displayed formula read in the single group A^1(X): c_1(E tensor^L F) in A^1(X), the degree-one component of Stacks.Chow.perfectChernClass, is the degree-one component of r(E) c_1(F) + r(F) c_1(E)”.
+**`Stacks.Chow.perfectChernClass_derivedTensor_apply_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean#L317). The attribute's comment: “the first displayed formula read in the single group A^1(X): c\_1(E tensor^L F) in A^1(X), the degree-one component of Stacks.Chow.perfectChernClass, is the degree-one component of r(E) c\_1(F) + r(F) c\_1(E)”.
 
 > The class `c₁(E ⊗^𝐋 F) ∈ A¹(X)` is the degree-one component of
 > `r(E) c₁(F) + r(F) c₁(E)`.
@@ -1309,7 +1309,7 @@ theorem perfectChernClass_derivedTensor_apply_one (hE : HasDefinedChernClasses E
         1
 ```
 
-**`Stacks.Chow.perfectChernClass_derivedTensor_apply_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean#L333). The attribute's comment: “the second displayed formula read in the single group A^2(X): c_2(E tensor^L F) in A^2(X), the degree-two component of Stacks.Chow.perfectChernClass, is the degree-two component of r(E) c_2(F) + r(F) c_2(E) + binom(r(E), 2) c_1(F)^2 + (r(E) r(F) - 1) c_1(F) c_1(E) + binom(r(F), 2) c_1(E)^2; E and F perfect as in the source”.
+**`Stacks.Chow.perfectChernClass_derivedTensor_apply_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean#L333). The attribute's comment: “the second displayed formula read in the single group A^2(X): c\_2(E tensor^L F) in A^2(X), the degree-two component of Stacks.Chow.perfectChernClass, is the degree-two component of r(E) c\_2(F) + r(F) c\_2(E) + binom(r(E), 2) c\_1(F)^2 + (r(E) r(F) - 1) c\_1(F) c\_1(E) + binom(r(F), 2) c\_1(E)^2; E and F perfect as in the source”.
 
 > The class `c₂(E ⊗^𝐋 F) ∈ A²(X)` is the degree-two component of
 > `r(E) c₂(F) + r(F) c₂(E) + C(r(E), 2) c₁(F)² + (r(E) r(F) - 1) c₁(F) c₁(E) + C(r(F), 2) c₁(E)²`.
@@ -1332,7 +1332,7 @@ theorem perfectChernClass_derivedTensor_apply_two
         2
 ```
 
-**`Stacks.Chow.perfectPowerSumComponent_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean#L356). The attribute's comment: “the more precise statement read in the single group A^p(X), which is where the source states it: P_p(E tensor^L F) in A^p(X) (Stacks.Chow.perfectPowerSumComponent) is the degree-p component of the sum over p_1 + p_2 = p of binom(p, p_1) P_{p_1}(E) P_{p_2}(F)”.
+**`Stacks.Chow.perfectPowerSumComponent_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean#L356). The attribute's comment: “the more precise statement read in the single group A^p(X), which is where the source states it: P\_p(E tensor^L F) in A^p(X) (Stacks.Chow.perfectPowerSumComponent) is the degree-p component of the sum over p\_1 + p\_2 = p of binom(p, p\_1) P\_\{p\_1}(E) P\_\{p\_2}(F)”.
 
 > `P_p(E ⊗^𝐋 F) ∈ A^p(X)` is the degree-`p` component of
 > `∑_{p₁ + p₂ = p} C(p, p₁) P_{p₁}(E) P_{p₂}(F)`.
@@ -1345,7 +1345,7 @@ theorem perfectPowerSumComponent_derivedTensor (hE : HasDefinedChernClasses E)
         (perfectPowerSum C sX hE q.1 * perfectPowerSum C sX hF q.2)) p
 ```
 
-**`Stacks.Chow.perfectTotalChernCharacter_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean#L446). The attribute's comment: “similarly, ch(E tensor^L F) = ch(E) ch(F) in A^*(X) tensor Q: Stacks.Chow.rationalTotalChowClass is the bivariant ring A^*(X) tensored over Z with Q, and ch is the power series over it whose coefficient of degree p is P_p/p!, which read in A^p(X) tensor Q is ch_p of Tag 0F9E (Stacks.Chow.map_coeff_perfectTotalChernCharacter); the identity is the more precise one for P_p divided by p!. Perfectness of E and F is not used”.
+**`Stacks.Chow.perfectTotalChernCharacter_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean#L446). The attribute's comment: “similarly, ch(E tensor^L F) = ch(E) ch(F) in A^*(X) tensor Q: Stacks.Chow.rationalTotalChowClass is the bivariant ring A^*(X) tensored over Z with Q, and ch is the power series over it whose coefficient of degree p is P\_p/p!, which read in A^p(X) tensor Q is ch\_p of Tag 0F9E (Stacks.Chow.map\_coeff\_perfectTotalChernCharacter); the identity is the more precise one for P\_p divided by p!. Perfectness of E and F is not used”.
 
 > The Chern character is multiplicative: `ch(E ⊗^𝐋 F) = ch(E) ch(F)` in `A^*(X) ⊗ 𝐐`.
 
@@ -1356,7 +1356,7 @@ theorem perfectTotalChernCharacter_derivedTensor (hE : HasDefinedChernClasses E)
       perfectTotalChernCharacter C sX hE * perfectTotalChernCharacter C sX hF
 ```
 
-**`Stacks.Chow.perfectChernClasses_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean#L481). The attribute's comment: “the whole statement, as one conjunction of the parts registered separately in this module: the Chern classes of E tensor^L F are defined; the formulas for c_1 and c_2 in A^*(X); the splitting-principle form of 'and so on for higher Chern classes' (Chern roots x + y with product signs on injective tensor split charts of any presentations); ch(E tensor^L F) = ch(E) ch(F) in A^*(X) tensor Q; and P_p(E tensor^L F) = sum of binom(p, p_1) P_{p_1}(E) P_{p_2}(F) in A^p(X) for every p, under exactly the source's hypotheses”.
+**`Stacks.Chow.perfectChernClasses_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDerived/PerfectTensorChernClasses.lean#L481). The attribute's comment: “the whole statement, as one conjunction of the parts registered separately in this module: the Chern classes of E tensor^L F are defined; the formulas for c\_1 and c\_2 in A^*(X); the splitting-principle form of 'and so on for higher Chern classes' (Chern roots x + y with product signs on injective tensor split charts of any presentations); ch(E tensor^L F) = ch(E) ch(F) in A^*(X) tensor Q; and P\_p(E tensor^L F) = sum of binom(p, p\_1) P\_\{p\_1}(E) P\_\{p\_2}(F) in A^p(X) for every p, under exactly the source's hypotheses”.
 
 > In Situation 02QL let `X` be locally of finite type over `S` and let `E`,
 > `F` be perfect objects of `D(𝒪_X)` whose Chern classes are defined. Then the Chern classes of

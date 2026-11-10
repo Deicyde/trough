@@ -94,7 +94,7 @@ public lemma integralClosure_globalSections_isField
 
 [Tag 04L7](https://stacks.math.columbia.edu/tag/04L7) in the Stacks Project.
 
-**`AlgebraicGeometry.fg_units_quotient_of_integrallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedBaseChange.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedBaseChange.lean#L234). The attribute's comment: “integral_closure_of_ground_field_is_ground_field”.
+**`AlgebraicGeometry.fg_units_quotient_of_integrallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedBaseChange.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedBaseChange.lean#L234). The attribute's comment: “integral\_closure\_of\_ground\_field\_is\_ground\_field”.
 
 > **Stacks Project, Tag 04L7 under its condition (1).** Let `k` be a field and let `X` be a
 > connected reduced scheme, locally of finite type over `k`, with finitely many irreducible
@@ -122,7 +122,7 @@ theorem fg_units_quotient_of_integrallyClosed (k : Type u) [Field k] (X : Scheme
       (((Scheme.ΓSpecIso (.of k)).inv ≫ f.appTop).hom).toMonoidHom).range)
 ```
 
-**`AlgebraicGeometry.fg_units_quotient_of_rationalPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedBaseChange.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedBaseChange.lean#L438). The attribute's comment: “rational_point”.
+**`AlgebraicGeometry.fg_units_quotient_of_rationalPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedBaseChange.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedBaseChange.lean#L438). The attribute's comment: “rational\_point”.
 
 > **Stacks Project, Tag 04L7 under its condition (2).** Let `k` be a field and let `X` be a
 > connected reduced scheme, locally of finite type over `k`, with finitely many irreducible
@@ -141,7 +141,7 @@ theorem fg_units_quotient_of_rationalPoint (k : Type u) [Field k] (X : Scheme.{u
       (((Scheme.ΓSpecIso (.of k)).inv ≫ f.appTop).hom).toMonoidHom).range)
 ```
 
-**`AlgebraicGeometry.fg_units_quotient_of_geometricallyIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedGeometricallyIntegral.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedGeometricallyIntegral.lean#L92). The attribute's comment: “geometrically_integral”.
+**`AlgebraicGeometry.fg_units_quotient_of_geometricallyIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedGeometricallyIntegral.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InvertibleFunctions/ConnectedReducedGeometricallyIntegral.lean#L92). The attribute's comment: “geometrically\_integral”.
 
 > **Stacks Project, Tag 04L7 under its condition (3).** Let `k` be a field and let `X` be a
 > connected reduced scheme, locally of finite type over `k`, with finitely many irreducible

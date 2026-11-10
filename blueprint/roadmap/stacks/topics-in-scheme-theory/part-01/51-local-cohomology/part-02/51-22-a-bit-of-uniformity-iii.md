@@ -14,7 +14,7 @@ Section 51.22 of the Stacks Project, [Tag 0GA6](https://stacks.math.columbia.edu
 
 [Tag 0GA6](https://stacks.math.columbia.edu/tag/0GA6) in the Stacks Project.
 
-**`AssociatedGraded.dInvariant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/AssociatedGradedInvariants.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/AssociatedGradedInvariants.lean#L126). The attribute's comment: “the invariant d(S) of the associated graded ring S = Gr_I(A), as the maximum of the dimensions of the fibres of Proj(S) → Spec(S₀), which is clause (2) of the paragraph defining d; the equality with the maximum of the fibre dimensions of the blowup p : X → Spec(A), the paragraph's primary phrasing, is not proved here”.
+**`AssociatedGraded.dInvariant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/AssociatedGradedInvariants.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/AssociatedGradedInvariants.lean#L126). The attribute's comment: “the invariant d(S) of the associated graded ring S = Gr\_I(A), as the maximum of the dimensions of the fibres of Proj(S) → Spec(S₀), which is clause (2) of the paragraph defining d; the equality with the maximum of the fibre dimensions of the blowup p : X → Spec(A), the paragraph's primary phrasing, is not proved here”.
 
 > **The invariant `d(S) = d(Gr_I(A))`**: the maximum of the dimensions of the fibres of
 > `Proj(S) → Spec(S₀)`, a fibre with empty underlying space contributing `0`.
@@ -27,7 +27,7 @@ Section 51.22 of the Stacks Project, [Tag 0GA6](https://stacks.math.columbia.edu
 def dInvariant : ℕ∞
 ```
 
-**`AssociatedGraded.qInvariant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/AssociatedGradedInvariants.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/AssociatedGradedInvariants.lean#L166). The attribute's comment: “the invariant q(S) of the associated graded ring S = Gr_I(A), as the smallest q(S) ≥ 0 such that for all q ≥ q(S) one has Hⁱ(Y, 𝒪_Y(q)) = 0 for 1 ≤ i ≤ d(S) and H⁰(Y, 𝒪_Y(q)) = I^q/I^{q+1} for Y = Proj(S); the appeal to Cohomology of Schemes Lemmas 0AG6 and 0AG7 that makes the set of such bounds nonempty is not proved here, and is carried as a hypothesis by isRegularDegree_of_qInvariant_le”.
+**`AssociatedGraded.qInvariant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/AssociatedGradedInvariants.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/AssociatedGradedInvariants.lean#L166). The attribute's comment: “the invariant q(S) of the associated graded ring S = Gr\_I(A), as the smallest q(S) ≥ 0 such that for all q ≥ q(S) one has Hⁱ(Y, 𝒪\_Y(q)) = 0 for 1 ≤ i ≤ d(S) and H⁰(Y, 𝒪\_Y(q)) = I^q/I^\{q+1} for Y = Proj(S); the appeal to Cohomology of Schemes Lemmas 0AG6 and 0AG7 that makes the set of such bounds nonempty is not proved here, and is carried as a hypothesis by isRegularDegree\_of\_qInvariant\_le”.
 
 > **The invariant `q(S) = q(Gr_I(A))`**: the smallest `q₀ ≥ 0` such that
 > `AssociatedGraded.IsRegularDegree` holds at every `q ≥ q₀`.
@@ -136,7 +136,7 @@ theorem subsingleton_H_top (M : ANCModule I n c) {q : ℤ}
     (hd : 1 ≤ S.d) (hq : (S.q₀ : ℤ) ≤ q) : Subsingleton (S.H M S.d q)
 ```
 
-**`Stacks.LocalCohomology.UniformityIII.ModuleSituation.subsingleton_H_next`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean, line 616](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean#L616). The attribute's comment: “clause (2), H^{d-1}(X, p^*M(q)) = 0 for i = d - 1 ≥ 1 and q ≥ q₀”.
+**`Stacks.LocalCohomology.UniformityIII.ModuleSituation.subsingleton_H_next`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean, line 616](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean#L616). The attribute's comment: “clause (2), H^\{d-1}(X, p^*M(q)) = 0 for i = d - 1 ≥ 1 and q ≥ q₀”.
 
 > **Stacks Project, Tag 0GAA, clause (2).** For an `(A, n, c)`-module `M`, in the case
 > `i = d - 1 ≥ 1` and `q ≥ q₀` we have `H^{d-1}(X, p^*M(q)) = 0`.
@@ -168,7 +168,7 @@ theorem Htr_eq_zero (M : ANCModule I n c) {i k : ℕ} {q r : ℤ} (h : r ≤ q)
     (hq : (S.q₀ : ℤ) + k * c ≤ q) : S.Htr M i q r h = 0
 ```
 
-**`Stacks.LocalCohomology.UniformityIII.TwistedModuleSituation.surjective_secM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean, line 899](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean#L899). The attribute's comment: “clause (4), surjectivity onto H⁰(X, p^*M(q)) for i = 0, d ≤ 1, q ≥ q₀; corrected: the source is I^q ⊗_A M, not the submodule I^qM, for which this is false”.
+**`Stacks.LocalCohomology.UniformityIII.TwistedModuleSituation.surjective_secM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean, line 899](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean#L899). The attribute's comment: “clause (4), surjectivity onto H⁰(X, p^*M(q)) for i = 0, d ≤ 1, q ≥ q₀; corrected: the source is I^q ⊗\_A M, not the submodule I^qM, for which this is false”.
 
 > **Stacks Project, Tag 0GAA, clause (4).** For an `(A, n, c)`-module `M`, in the case
 > `i = 0`, `d ∈ {0, 1}` and `q ≥ q₀` the canonical map `I^q ⊗_A M → H⁰(X, p^*M(q))` is
@@ -193,7 +193,7 @@ theorem surjective_secM (M : ANCModule I n c) {q : ℕ} (hd : S.d ≤ 1) (hq : S
     Function.Surjective (S.secM M q)
 ```
 
-**`Stacks.LocalCohomology.UniformityIII.TwistedModuleSituation.range_Htr_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean, line 930](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean#L930). The attribute's comment: “clause (5), H⁰(p^*M(q)) → H⁰(p^*M(q-(d-1)c)) lands in the image of the canonical map out of I^{q-(d-1)c} ⊗_A M; corrected as in clause (4)”.
+**`Stacks.LocalCohomology.UniformityIII.TwistedModuleSituation.range_Htr_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean, line 930](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/PullbackCohomology.lean#L930). The attribute's comment: “clause (5), H⁰(p^*M(q)) → H⁰(p^*M(q-(d-1)c)) lands in the image of the canonical map out of I^\{q-(d-1)c} ⊗\_A M; corrected as in clause (4)”.
 
 > **Stacks Project, Tag 0GAA, clause (5).** For an `(A, n, c)`-module `M`, in the case
 > `i = 0`, `d > 1` and `q ≥ q₀ + (d - 1)c` the image of
@@ -231,7 +231,7 @@ noncomputable def dualModuleSheaf (Z : RingedSite.{u, u, u})
     _root_.SheafOfModules.{u} (Tensor.ringSheaf Z.O)
 ```
 
-**`Stacks.LocalCohomology.UniformityIII.moduleDual`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullback.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullback.lean#L130). The attribute's comment: “the dual M^∨ = Hom_{A/Iⁿ}(M, A/Iⁿ) of a module over A/Iⁿ, and its functoriality”. References: SGA 3 VIIA (3.1.1), “affine dual object”; SGA 3 VIIA (4.3.3), “special case”; SGA 3 VIIB (1.3.5.C), “more general”; SGA 3 VIII (6.8).
+**`Stacks.LocalCohomology.UniformityIII.moduleDual`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullback.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/BitUniformityIII/DualPullback.lean#L130). The attribute's comment: “the dual M^∨ = Hom\_\{A/Iⁿ}(M, A/Iⁿ) of a module over A/Iⁿ, and its functoriality”. References: SGA 3 VIIA (3.1.1), “affine dual object”; SGA 3 VIIA (4.3.3), “special case”; SGA 3 VIIB (1.3.5.C), “more general”; SGA 3 VIII (6.8).
 
 > The dual `M^∨ = Hom_R(M, R)` of an `R`-module, as a functor contravariant in `M`: on
 > morphisms it is `LinearMap.dualMap`, that is, precomposition. For `R = A/Iⁿ` this is the `M^∨`

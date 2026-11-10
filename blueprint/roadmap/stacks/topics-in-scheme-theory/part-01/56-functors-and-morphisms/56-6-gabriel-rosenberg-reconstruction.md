@@ -236,8 +236,8 @@ theorem exists_natIso_pullbackTensorFunctor_of_quasicoherentEquivalence {X Y : S
 > quasi-separated schemes and let `e : QCoh(𝒪_X) ≌ QCoh(𝒪_Y)` be an equivalence.  Let `U i` be an
 > affine open cover of `X` and let `G i` be a finitely presented quasi-coherent `𝒪_X`-module whose
 > support is the complement of `U i`.  Then there are opens `V i ⊆ Y` which **cover `Y`** and are
-> each affine and quasi-compact, and for each `i` an equivalence `F_i : QCoh(𝒪_{U i}) ≌
-> QCoh(𝒪_{V i})` compatible with `e` and the two restrictions, an isomorphism of schemes
+> each affine and quasi-compact, and for each `i` an equivalence `F\_i : QCoh(𝒪\_\{U i}) ≌
+> QCoh(𝒪\_\{V i})` compatible with `e` and the two restrictions, an isomorphism of schemes
 > `f_i : V i ≅ U i` and an invertible sheaf `L_i` of `𝒪_{V i}`-modules such that `F_i` is inverse
 > image along `f_i` followed by `- ⊗_{𝒪_{V i}} L_i`.
 >

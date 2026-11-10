@@ -80,7 +80,7 @@ theorem exists_finiteFlatQuotient_isAffine_of_mono_groupoidPreRelation (G H : Gr
           ∀ T : Over S, Nonempty (F.evaluation T).FullyFaithful
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.exists_division`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/SubgroupoidDivisionDescent.lean, line 1075](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/SubgroupoidDivisionDescent.lean#L1075). The attribute's comment: “all four conclusions: the affine quotient Ū = U/P as the fppf-sheaf coequalizer, its finite locally free surjective quotient map, the kernel-pair square P = U ×_Ū U, and the descent of the ambient groupoid R to a groupoid on Ū of which it is the restriction”.
+**`AlgebraicGeometry.GroupoidScheme.exists_division`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/SubgroupoidDivisionDescent.lean, line 1075](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/SubgroupoidDivisionDescent.lean#L1075). The attribute's comment: “all four conclusions: the affine quotient Ū = U/P as the fppf-sheaf coequalizer, its finite locally free surjective quotient map, the kernel-pair square P = U ×\_Ū U, and the descent of the ambient groupoid R to a groupoid on Ū of which it is the restriction”.
 
 > A finite locally free subgroupoid equivalence relation on an affine scheme can be
 > divided out, and a separated locally quasi-finite ambient groupoid descends to the quotient.

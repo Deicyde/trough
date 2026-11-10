@@ -14,7 +14,7 @@ Section 42.51 of the Stacks Project, [Tag 0FE6](https://stacks.math.columbia.edu
 
 [Tag 0FE7](https://stacks.math.columbia.edu/tag/0FE7) in the Stacks Project.
 
-**`Stacks.Chow.supportedComposite_modificationChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedComposite.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedComposite.lean#L503). The attribute's comment: “the statement for c': c'_{p_n}(Q_n) ∘ ⋯ ∘ c'_{p_1}(Q_1) = (W_{n,∞} ∩ ⋯ ∩ W_{1,∞} → Z_n ∩ ⋯ ∩ Z_1)_* ∘ c'_{p_n}(Q_n|_{W_{n,∞}}) ∘ ⋯ ∘ c'_{p_1}(Q_1|_{W_{1,∞}}) ∘ C, for every sequence of indices i_1, …, i_n”.
+**`Stacks.Chow.supportedComposite_modificationChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedComposite.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedComposite.lean#L503). The attribute's comment: “the statement for c': c'\_\{p\_n}(Q\_n) ∘ ⋯ ∘ c'\_\{p\_1}(Q\_1) = (W\_\{n,∞} ∩ ⋯ ∩ W\_\{1,∞} → Z\_n ∩ ⋯ ∩ Z\_1)\_* ∘ c'\_\{p\_n}(Q\_n|\_\{W\_\{n,∞}}) ∘ ⋯ ∘ c'\_\{p\_1}(Q\_1|\_\{W\_\{1,∞}}) ∘ C, for every sequence of indices i\_1, …, i\_n”.
 
 > **Composites of the classes `c'`.** Let `b : W ⟶ 𝐏¹_X` be proper and an isomorphism over
 > `𝐀¹_X`, and for every index `i` let `Z_i ⊆ X` and `T_i ⊆ W_∞` be closed, `Q_i ∈ D(𝒪_W)` perfect
@@ -25,9 +25,9 @@ Section 42.51 of the Stacks Project, [Tag 0FE6](https://stacks.math.columbia.edu
 > of Situation 0GUJ. Then for every sequence of indices `i_1, …, i_n` (`n ≥ 1`; the list
 > `L = [i_n, …, i_2]` and the first index `i_1`)
 >
->   `c'_{p_{i_n}}(Q_{i_n}) ∘ ⋯ ∘ c'_{p_{i_1}}(Q_{i_1}) =
->     (W_{i_n,∞} ∩ ⋯ ∩ W_{i_1,∞} ⟶ Z_{i_n} ∩ ⋯ ∩ Z_{i_1})_* ∘
->       c'_{p_{i_n}}(Q_{i_n}|_{W_{i_n,∞}}) ∘ ⋯ ∘ c'_{p_{i_1}}(Q_{i_1}|_{W_{i_1,∞}}) ∘ C`
+>   `c'\_\{p\_\{i\_n}}(Q\_\{i\_n}) ∘ ⋯ ∘ c'\_\{p\_\{i\_1}}(Q\_\{i\_1}) =
+>     (W\_\{i\_n,∞} ∩ ⋯ ∩ W\_\{i\_1,∞} ⟶ Z\_\{i\_n} ∩ ⋯ ∩ Z\_\{i\_1})\_* ∘
+>       c'\_\{p\_\{i\_n}}(Q\_\{i\_n}|\_\{W\_\{i\_n,∞}}) ∘ ⋯ ∘ c'\_\{p\_\{i\_1}}(Q\_\{i\_1}|\_\{W\_\{i\_1,∞}}) ∘ C`
 >
 > in `A^{p_{i_n} + ⋯ + p_{i_1}}(Z_{i_n} ∩ ⋯ ∩ Z_{i_1} ⟶ X)`. Here `c'_p(Q)` is the class of
 > Stacks 0F9K (`Stacks.Chow.modificationChernClass`), `c'_p(Q|_{W_{i,∞}})` that of Stacks 0F9H
@@ -59,16 +59,16 @@ theorem supportedComposite_modificationChernClass
           i₁ L)
 ```
 
-**`Stacks.Chow.supportedComposite_modificationPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedComposite.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedComposite.lean#L544). The attribute's comment: “the statement for P': P'_{p_n}(Q_n) ∘ ⋯ ∘ P'_{p_1}(Q_1) = (W_{n,∞} ∩ ⋯ ∩ W_{1,∞} → Z_n ∩ ⋯ ∩ Z_1)_* ∘ P'_{p_n}(Q_n|_{W_{n,∞}}) ∘ ⋯ ∘ P'_{p_1}(Q_1|_{W_{1,∞}}) ∘ C, for every sequence of indices i_1, …, i_n”.
+**`Stacks.Chow.supportedComposite_modificationPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedComposite.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedComposite.lean#L544). The attribute's comment: “the statement for P': P'\_\{p\_n}(Q\_n) ∘ ⋯ ∘ P'\_\{p\_1}(Q\_1) = (W\_\{n,∞} ∩ ⋯ ∩ W\_\{1,∞} → Z\_n ∩ ⋯ ∩ Z\_1)\_* ∘ P'\_\{p\_n}(Q\_n|\_\{W\_\{n,∞}}) ∘ ⋯ ∘ P'\_\{p\_1}(Q\_1|\_\{W\_\{1,∞}}) ∘ C, for every sequence of indices i\_1, …, i\_n”.
 
 > **Composites of the classes `P'`.** In the situation of
 > `Stacks.Chow.supportedComposite_modificationChernClass`, with `Q_i|_{T_i}` and `Q_i|_{W ∖ W_i}`
 > zero instead of finite locally free of rank `< p_i`, for every sequence of indices
 > `i_1, …, i_n` (`n ≥ 1`)
 >
->   `P'_{p_{i_n}}(Q_{i_n}) ∘ ⋯ ∘ P'_{p_{i_1}}(Q_{i_1}) =
->     (W_{i_n,∞} ∩ ⋯ ∩ W_{i_1,∞} ⟶ Z_{i_n} ∩ ⋯ ∩ Z_{i_1})_* ∘
->       P'_{p_{i_n}}(Q_{i_n}|_{W_{i_n,∞}}) ∘ ⋯ ∘ P'_{p_{i_1}}(Q_{i_1}|_{W_{i_1,∞}}) ∘ C`
+>   `P'\_\{p\_\{i\_n}}(Q\_\{i\_n}) ∘ ⋯ ∘ P'\_\{p\_\{i\_1}}(Q\_\{i\_1}) =
+>     (W\_\{i\_n,∞} ∩ ⋯ ∩ W\_\{i\_1,∞} ⟶ Z\_\{i\_n} ∩ ⋯ ∩ Z\_\{i\_1})\_* ∘
+>       P'\_\{p\_\{i\_n}}(Q\_\{i\_n}|\_\{W\_\{i\_n,∞}}) ∘ ⋯ ∘ P'\_\{p\_\{i\_1}}(Q\_\{i\_1}|\_\{W\_\{i\_1,∞}}) ∘ C`
 >
 > in `A^{p_{i_n} + ⋯ + p_{i_1}}(Z_{i_n} ∩ ⋯ ∩ Z_{i_1} ⟶ X)`, with `P'_p(Q)` the class of
 > Stacks 0F9K (`Stacks.Chow.modificationPowerSum`) and `P'_p(Q|_{W_{i,∞}})` that of Stacks 0F9H
@@ -96,7 +96,7 @@ theorem supportedComposite_modificationPowerSum
 
 [Tag 0FE8](https://stacks.math.columbia.edu/tag/0FE8) in the Stacks Project.
 
-**`Stacks.Chow.LocalizedSituation.modificationChernClass_eq_localizedChern`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedModificationComparison.lean, line 745](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedModificationComparison.lean#L745). The attribute's comment: “for c_p: c'_p(Q) = c_p(Z → X, F) when Q|_{b^{-1}(A^1_X)} is the pullback of F and F|_{X ∖ Z} is finite locally free of rank < p in degree 0”.
+**`Stacks.Chow.LocalizedSituation.modificationChernClass_eq_localizedChern`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedModificationComparison.lean, line 745](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedModificationComparison.lean#L745). The attribute's comment: “for c\_p: c'\_p(Q) = c\_p(Z → X, F) when Q|\_\{b^\{-1}(A^1\_X)} is the pullback of F and F|\_\{X ∖ Z} is finite locally free of rank < p in degree 0”.
 
 > In Situation 0GUJ, let `b : W ⟶ 𝐏¹_X` be proper and an
 > isomorphism over `𝐀¹_X`, let `Q ∈ D(𝒪_W)` be perfect, and let
@@ -120,7 +120,7 @@ theorem modificationChernClass_eq_localizedChern
       S.localizedChern h
 ```
 
-**`Stacks.Chow.LocalizedSituation.modificationPowerSum_eq_localizedPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedModificationComparison.lean, line 842](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedModificationComparison.lean#L842). The attribute's comment: “for P_p: P'_p(Q) = P_p(Z → X, F) when Q|_{b^{-1}(A^1_X)} is the pullback of F and F|_{X ∖ Z} is zero”.
+**`Stacks.Chow.LocalizedSituation.modificationPowerSum_eq_localizedPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedModificationComparison.lean, line 842](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/LocalizedModificationComparison.lean#L842). The attribute's comment: “for P\_p: P'\_p(Q) = P\_p(Z → X, F) when Q|\_\{b^\{-1}(A^1\_X)} is the pullback of F and F|\_\{X ∖ Z} is zero”.
 
 > In Situation 0GUJ, let `b : W ⟶ 𝐏¹_X` be proper and an
 > isomorphism over `𝐀¹_X`, let `Q ∈ D(𝒪_W)` be perfect, and let

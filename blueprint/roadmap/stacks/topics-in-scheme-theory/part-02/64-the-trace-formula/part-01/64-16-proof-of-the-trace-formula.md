@@ -39,7 +39,7 @@ theorem exists_compactification_and_traceFormulaUpToDim_one (B : BigEtaleSite.{u
     TraceFormulaUpToDim B Λ kbar p q hcard 1
 ```
 
-**`Stacks.EtaleCohomology.compactSupportLefschetzNumber_eq_localLefschetzNumber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/TraceFormulaDimensionOne.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/TraceFormulaDimensionOne.lean#L313). The attribute's comment: “RESTRICTED: 03UH with both sides built from the scheme; the extra hypotheses are 03TV as hperf and hstalkPerfect (K is a bounded below complex of étale sheaves of modules rather than an object of the D_ctf of 03TQ: the two small étale sites are identified by SmallEtale.sheafEquiv, but the transport of finite Tor dimension across it and the direction (1) => (2) of 03TT are missing), finiteness of X(k), the Step 1 dévissage with the identification of its pieces (devissage, hglobal, hstalk), and the Steps 7 to 9 Galois decomposition feeding 03TZ (hdecomposition, hdivisible, hannihilate, hlevel); Steps 3 to 6 are not formalized”.
+**`Stacks.EtaleCohomology.compactSupportLefschetzNumber_eq_localLefschetzNumber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/TraceFormulaDimensionOne.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/TraceFormulaDimensionOne.lean#L313). The attribute's comment: “RESTRICTED: 03UH with both sides built from the scheme; the extra hypotheses are 03TV as hperf and hstalkPerfect (K is a bounded below complex of étale sheaves of modules rather than an object of the D\_ctf of 03TQ: the two small étale sites are identified by SmallEtale.sheafEquiv, but the transport of finite Tor dimension across it and the direction (1) => (2) of 03TT are missing), finiteness of X(k), the Step 1 dévissage with the identification of its pieces (devissage, hglobal, hstalk), and the Steps 7 to 9 Galois decomposition feeding 03TZ (hdecomposition, hdivisible, hannihilate, hlevel); Steps 3 to 6 are not formalized”.
 
 > **The trace formula in dimension at most one (Stacks 03UG).**  Let `k` be a finite field
 > with `p ^ q` elements, let `k̄` be an algebraically closed extension of `k`, let `X` be a
@@ -109,7 +109,7 @@ public theorem compactSupportLefschetzNumber_eq_localLefschetzNumber
 
 [Tag 03UI](https://stacks.math.columbia.edu/tag/03UI) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.compactificationFieldBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean#L133). The attribute's comment: “item (2): the base change X̄_k̄ of a compactification X̄ of X over k is a compactification of X_k̄ over k̄, which is where RΓ_c(X_k̄, -) is formed”.
+**`Stacks.EtaleCohomology.compactificationFieldBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean#L133). The attribute's comment: “item (2): the base change X̄\_k̄ of a compactification X̄ of X over k is a compactification of X\_k̄ over k̄, which is where RΓ\_c(X\_k̄, -) is formed”.
 
 > **The base change `X̄_k̄` of a compactification of `X` over `k`**, as a compactification of
 > `X_k̄` over `k̄`: the fibre product `X̄ ×_{Spec k} Spec k̄` is proper over `Spec k̄` because `X̄`
@@ -121,7 +121,7 @@ public def compactificationFieldBaseChange :
     CompactificationOf (Over.mk (pullback.snd f (Stacks.Frobenius.specAlgebraMap k kbar)))
 ```
 
-**`Stacks.EtaleCohomology.geometricCompactSupportCohomology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean#L159). The attribute's comment: “item (2): RΓ_c(X_k̄, K) := RΓ(X̄_k̄, j_! K) for a chosen compactification j of X over k, taken through its base change”.
+**`Stacks.EtaleCohomology.geometricCompactSupportCohomology`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean#L159). The attribute's comment: “item (2): RΓ\_c(X\_k̄, K) := RΓ(X̄\_k̄, j\_! K) for a chosen compactification j of X over k, taken through its base change”.
 
 > **The complex `RΓ_c(X_k̄, K) = RΓ(X̄_k̄, j_! K)`** of the source: cohomology with compact
 > support of a bounded below complex of sheaves of `Λ`-modules on the small étale site of the
@@ -135,7 +135,7 @@ public abbrev geometricCompactSupportCohomology :
       DerivedCategory.Plus (ModuleCat.{max (u + 1) r} Λ)
 ```
 
-**`Stacks.EtaleCohomology.geometricCompactSupportCohomologyGroup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean#L169). The attribute's comment: “item (2): H^i_c(X_k̄, K) is the i-th cohomology of RΓ_c(X_k̄, K)”.
+**`Stacks.EtaleCohomology.geometricCompactSupportCohomologyGroup`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean#L169). The attribute's comment: “item (2): H^i\_c(X\_k̄, K) is the i-th cohomology of RΓ\_c(X\_k̄, K)”.
 
 > **The module `H^i_c(X_k̄, K)`**: the `i`-th cohomology of `RΓ_c(X_k̄, K)`.
 
@@ -146,7 +146,7 @@ public abbrev geometricCompactSupportCohomologyGroup (i : ℤ) :
       ModuleCat.{max (u + 1) r} Λ
 ```
 
-**`Stacks.EtaleCohomology.geometricCompactSupportComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean#L201). The attribute's comment: “item (2): RΓ_c(X_k̄, -) is independent of the compactification, reduced to the independence of Rf_! of 0F7I, which is a hypothesis here”.
+**`Stacks.EtaleCohomology.geometricCompactSupportComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean#L201). The attribute's comment: “item (2): RΓ\_c(X\_k̄, -) is independent of the compactification, reduced to the independence of Rf\_! of 0F7I, which is a hypothesis here”.
 
 > **Independence of the compactification.**  An isomorphism of the derived lower shriek
 > functors attached to two compactifications of `X` over `k`, which is [Stacks, Tag 0F7I],
@@ -160,7 +160,7 @@ public def geometricCompactSupportComparison
       geometricCompactSupportCohomology.{u, r} f j₂ kbar Λ
 ```
 
-**`Stacks.EtaleCohomology.geometricCompactSupportGroupComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean#L233). The attribute's comment: “item (2): H^i_c(X_k̄, -) is independent of the compactification, induced by the comparison of the complexes”.
+**`Stacks.EtaleCohomology.geometricCompactSupportGroupComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/CompactSupportCompactification.lean#L233). The attribute's comment: “item (2): H^i\_c(X\_k̄, -) is independent of the compactification, induced by the comparison of the complexes”.
 
 > **Independence of the compactification for `H^i_c`.**  The comparison of the complexes
 > induces an isomorphism of the modules `H^i_c(X_k̄, -)` in every degree, natural in the
@@ -174,7 +174,7 @@ public def geometricCompactSupportGroupComparison
       geometricCompactSupportCohomologyGroup.{u, r} f j₂ kbar Λ i
 ```
 
-**`Stacks.EtaleCohomology.geometricCompactSupportCanonicalComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricCompactSupportCanonicalComparison.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricCompactSupportCanonicalComparison.lean#L217). The attribute's comment: “(2): independence of the compactification -- RΓ_c(X_k̄, -) = RΓ(X̄_k̄, j_! -) does not depend on the compactification X̄ of X over k of dimension at most one (proper, which a projective X̄ is): canonical isomorphism through the closure of X in X̄₁ ×_k X̄₂”.
+**`Stacks.EtaleCohomology.geometricCompactSupportCanonicalComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricCompactSupportCanonicalComparison.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricCompactSupportCanonicalComparison.lean#L217). The attribute's comment: “(2): independence of the compactification -- RΓ\_c(X\_k̄, -) = RΓ(X̄\_k̄, j\_! -) does not depend on the compactification X̄ of X over k of dimension at most one (proper, which a projective X̄ is): canonical isomorphism through the closure of X in X̄₁ ×\_k X̄₂”.
 
 > **Remark 03UI (2): `RΓ_c(X_k̄, -)` is independent of the compactification.**  Let `k` be a
 > field, `X` a separated scheme of finite type over `k`, `k̄` an extension field of `k` and `Λ` a
@@ -196,7 +196,7 @@ def geometricCompactSupportCanonicalComparison :
       geometricCompactSupportCohomology.{u, 0} f c₂ kbar Λ
 ```
 
-**`Stacks.EtaleCohomology.geometricCompactSupportGroupCanonicalComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricCompactSupportCanonicalComparison.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricCompactSupportCanonicalComparison.lean#L229). The attribute's comment: “(2): independence of the compactification -- H^i_c(X_k̄, -) does not depend on the compactification X̄ of X over k of dimension at most one, in every degree”.
+**`Stacks.EtaleCohomology.geometricCompactSupportGroupCanonicalComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricCompactSupportCanonicalComparison.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricCompactSupportCanonicalComparison.lean#L229). The attribute's comment: “(2): independence of the compactification -- H^i\_c(X\_k̄, -) does not depend on the compactification X̄ of X over k of dimension at most one, in every degree”.
 
 > **Remark 03UI (2): `H^i_c(X_k̄, -)` is independent of the compactification**, in every degree,
 > naturally in the coefficient complex: the isomorphism induced on cohomology by
@@ -302,7 +302,7 @@ public theorem localLefschetzNumber_constantStalkDatum (Λ : Type u) [Ring Λ] [
       (Fintype.card points : ℤ) • perfectDerivedTrace Λ S g
 ```
 
-**`Stacks.EtaleCohomology.compactSupportLefschetzNumber_eq_weil_of_constantCoefficients`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantCoefficientTraceFormula.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantCoefficientTraceFormula.lean#L126). The attribute's comment: “RESTRICTED: 03UG specialised to constant coefficients computes #X(k), and 03U1 evaluates that count as 1 - Tr_J + deg; the hypotheses of the library's 03UG are carried unchanged, and the constancy of the stalks and the fixed point count are hypotheses”.
+**`Stacks.EtaleCohomology.compactSupportLefschetzNumber_eq_weil_of_constantCoefficients`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantCoefficientTraceFormula.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantCoefficientTraceFormula.lean#L126). The attribute's comment: “RESTRICTED: 03UG specialised to constant coefficients computes #X(k), and 03U1 evaluates that count as 1 - Tr\_J + deg; the hypotheses of the library's 03UG are carried unchanged, and the constancy of the stalks and the fixed point count are hypotheses”.
 
 > **The trace formula with constant coefficients is Weil's formula (Stacks 03UJ).**  In the
 > situation of `Stacks.EtaleCohomology.compactSupportLefschetzNumber_eq_localLefschetzNumber`,

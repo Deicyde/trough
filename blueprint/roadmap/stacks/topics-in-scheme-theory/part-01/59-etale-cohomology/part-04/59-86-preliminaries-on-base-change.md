@@ -80,7 +80,7 @@ theorem etaleLocalBaseChange
           IsIso ((higherBaseChangeMapAb D.f D.g D.h D.e D.cartesian.w q).app 𝓖)
 ```
 
-**`Stacks.EtaleCohomology.smallEtaleSetsBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BaseChangeHigher/OrdinaryLocality.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BaseChangeHigher/OrdinaryLocality.lean#L283). The attribute's comment: “the set-valued base change map and the locality calculus only: the map g^{-1} f_* to f'_* (g')^{-1} for sheaves of SETS, which the library previously had only for abelian coefficients, together with the hypothesis bundle and the option-free mate calculus the locality argument runs on. NONE of the tag's three clauses is proved here. Clause (1) is blocked at rightSquare_app by a kernel defeq the elaborator cannot reduce because getLimitCone is not exposed by the module system; clause (3) sits on top of it; clause (2) has no proof content anywhere in the repository.”.
+**`Stacks.EtaleCohomology.smallEtaleSetsBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BaseChangeHigher/OrdinaryLocality.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BaseChangeHigher/OrdinaryLocality.lean#L283). The attribute's comment: “the set-valued base change map and the locality calculus only: the map g^\{-1} f\_* to f'\_* (g')^\{-1} for sheaves of SETS, which the library previously had only for abelian coefficients, together with the hypothesis bundle and the option-free mate calculus the locality argument runs on. NONE of the tag's three clauses is proved here. Clause (1) is blocked at rightSquare\_app by a kernel defeq the elaborator cannot reduce because getLimitCone is not exposed by the module system; clause (3) sits on top of it; clause (2) has no proof content anywhere in the repository.”.
 
 > **The base change map `g^{-1} f_* ⟶ f'_* (g')^{-1}` for sheaves of sets** on the small étale
 > sites of a commutative square `g' ≫ f = f' ≫ g` of schemes: the mate, under the two
@@ -128,7 +128,7 @@ public theorem isIso_smallEtaleSetsBaseChange_of_isIso_local
 
 [Tag 0EZS](https://stacks.math.columbia.edu/tag/0EZS) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_higherBaseChangeMapAb_app_of_paste`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BaseChangeHigher/SmallEtaleHigherBaseChangePasting.lean, line 524](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BaseChangeHigher/SmallEtaleHigherBaseChangePasting.lean#L524). The attribute's comment: “the abelian half: for an abelian sheaf F on T_étale and a degree q, if f⁻¹R^qg_*F → R^qh_*e⁻¹F and i⁻¹R^qh_*e⁻¹F → R^qj_*k⁻¹e⁻¹F are isomorphisms then (f∘i)⁻¹R^qg_*F → R^qj_*(e∘k)⁻¹F is an isomorphism; the derived statement of the same tag is `etaleAbelianDerivedBaseChange_isIso_of_comp`”.
+**`Stacks.EtaleCohomology.isIso_higherBaseChangeMapAb_app_of_paste`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BaseChangeHigher/SmallEtaleHigherBaseChangePasting.lean, line 524](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BaseChangeHigher/SmallEtaleHigherBaseChangePasting.lean#L524). The attribute's comment: “the abelian half: for an abelian sheaf F on T\_étale and a degree q, if f⁻¹R^qg\_*F → R^qh\_*e⁻¹F and i⁻¹R^qh\_*e⁻¹F → R^qj\_*k⁻¹e⁻¹F are isomorphisms then (f∘i)⁻¹R^qg\_*F → R^qj\_*(e∘k)⁻¹F is an isomorphism; the derived statement of the same tag is `etaleAbelianDerivedBaseChange_isIso_of_comp`”.
 
 > **Base change maps of a rectangle of squares.** Consider a tower of two commutative squares
 > of schemes
@@ -160,7 +160,7 @@ public theorem isIso_higherBaseChangeMapAb_app_of_paste (g₀ : X₀ ⟶ S₀) (
       (smallEtaleRectangle_comm g₀ g₁ g₂ u₁ u₂ v₁ v₂ w₁ w₂) q).app F)
 ```
 
-**`Stacks.EtaleCohomology.etaleAbelianDerivedBaseChange_isIso_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/BaseChangeMate.lean, line 902](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/BaseChangeMate.lean#L902). The attribute's comment: “the derived half: for K in D(T_étale), if f⁻¹Rg_*K → Rh_*e⁻¹K and i⁻¹Rh_*e⁻¹K → Rj_*k⁻¹e⁻¹K are isomorphisms then (f∘i)⁻¹Rg_*K → Rj_*(e∘k)⁻¹K is an isomorphism; the R^q statement of the same tag is not covered here”.
+**`Stacks.EtaleCohomology.etaleAbelianDerivedBaseChange_isIso_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/BaseChangeMate.lean, line 902](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/BaseChangeMate.lean#L902). The attribute's comment: “the derived half: for K in D(T\_étale), if f⁻¹Rg\_*K → Rh\_*e⁻¹K and i⁻¹Rh\_*e⁻¹K → Rj\_*k⁻¹e⁻¹K are isomorphisms then (f∘i)⁻¹Rg\_*K → Rj\_*(e∘k)⁻¹K is an isomorphism; the R^q statement of the same tag is not covered here”.
 
 > Consider a tower of two commutative squares of schemes
 > ```
@@ -440,8 +440,8 @@ theorem isIso_smallEtaleSetBaseChange_limit (w : ∀ i, h i ≫ f i = e i ≫ g 
 > **Stacks 0GJL.** Let `(X_i, Y_i, S_i, T_i, f_i, h_i, e_i, g_i)` be an inverse system of
 > squares as in the setup of Stacks 0EZT, with limit square `(X, Y, S, T, f, h, e, g)`. Let
 > `0 ∈ I`, let `K_0` be an object of `D^+(T_{0, étale})`, let `K_i` be the pullback of `K_0` to
-> `T_i` for `i ≥ 0` and `K` the pullback of `K_0` to `T`. If `f_i^{-1}Rg_{i, *}K_i =
-> Rh_{i, *}e_i^{-1}K_i` for all `i ≥ 0`, then `f^{-1}Rg_*K = Rh_*e^{-1}K`.
+> `T_i` for `i ≥ 0` and `K` the pullback of `K_0` to `T`. If `f\_i^\{-1}Rg\_\{i, *}K\_i =
+> Rh\_\{i, *}e\_i^\{-1}K\_i` for all `i ≥ 0`, then `f^\{-1}Rg\_*K = Rh\_*e^\{-1}K`.
 
 ```lean
 theorem isIso_smallEtaleDerivedBaseChangeAb_limit

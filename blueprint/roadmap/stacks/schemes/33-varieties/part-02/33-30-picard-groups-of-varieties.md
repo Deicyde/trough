@@ -287,7 +287,7 @@ theorem nontrivial_picardGroup_basicOpen {d : ℕ} {f : MvPolynomial (Fin 2) k}
 
 [Tag 0BEH](https://stacks.math.columbia.edu/tag/0BEH) in the Stacks Project.
 
-**`Stacks.PicardGroup.nonempty_iso_pullback_sectionOfPoint_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardGroup/RationalEquivalenceNormalVariety.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardGroup/RationalEquivalenceNormalVariety.lean#L260). The attribute's comment: “k a field, X a normal variety over k, U an open of affine n-space over k with two k-rational points: an invertible module on X ×_{Spec k} U has isomorphic restrictions to X × p and X × q”.
+**`Stacks.PicardGroup.nonempty_iso_pullback_sectionOfPoint_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardGroup/RationalEquivalenceNormalVariety.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardGroup/RationalEquivalenceNormalVariety.lean#L260). The attribute's comment: “k a field, X a normal variety over k, U an open of affine n-space over k with two k-rational points: an invertible module on X ×\_\{Spec k} U has isomorphic restrictions to X × p and X × q”.
 
 > **Stacks Project, Tag 0BEH.** Let `k` be a field, `X` a normal variety over `k`, and
 > `U ⊆ 𝔸^n_k` an open subscheme with `k`-rational points `p, q ∈ U(k)`. For every invertible module

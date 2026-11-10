@@ -82,7 +82,7 @@ theorem restrictGroupoid_isRestriction :
 
 [Tag 02VC](https://stacks.math.columbia.edu/tag/02VC) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.restrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoid.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoid.lean#L69). The attribute's comment: “the restriction R|_{U'} of a groupoid scheme to U', with its morphism to the”.
+**`AlgebraicGeometry.GroupoidScheme.restrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoid.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/RestrictionGroupoid.lean#L69). The attribute's comment: “the restriction R|\_\{U'} of a groupoid scheme to U', with its morphism to the”.
 
 > Restriction of a groupoid scheme along a morphism to its scheme of objects.
 

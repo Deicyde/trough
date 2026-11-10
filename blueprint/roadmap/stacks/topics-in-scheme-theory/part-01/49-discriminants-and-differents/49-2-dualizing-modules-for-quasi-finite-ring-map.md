@@ -811,7 +811,7 @@ public theorem existsUnique_relativeDualizingComparison
 
 [Tag 0C0I](https://stacks.math.columbia.edu/tag/0C0I) in the Stacks Project.
 
-**`Dualizing.nonempty_dualizingModule_linearEquiv_homologyZero_relativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/QuasiFiniteDualizingModule.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UpperShriek/QuasiFiniteDualizingModule.lean#L227). The attribute's comment: “ω_{B/A} = H⁰(ω•_{B/A}), the source's isomorphism being nonunique”.
+**`Dualizing.nonempty_dualizingModule_linearEquiv_homologyZero_relativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/QuasiFiniteDualizingModule.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UpperShriek/QuasiFiniteDualizingModule.lean#L227). The attribute's comment: “ω\_\{B/A} = H⁰(ω•\_\{B/A}), the source's isomorphism being nonunique”.
 
 > **Stacks Project, Tag 0C0I.**  Let `A → B` be a quasi-finite homomorphism of Noetherian rings
 > and let `ω•_{B/A}` be its algebraic relative dualizing complex.  Then the relative dualizing

@@ -53,7 +53,7 @@ structure GradedBimodule {R : Type u} [CommRing R] {A : Type u} [Ring A] [Algebr
     (ℬ : ℤ → Submodule R B) [GradedAlgebra ℬ] extends AlgebraBimodule R A B
 ```
 
-**`DifferentialGraded.Bimodule.toGradedBimodule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/GradedBimodule.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/GradedBimodule.lean#L176). The attribute's comment: “the graded (A, B)-bimodule underlying a differential graded one, which is what makes part (3) a refinement of part (2); the three parts themselves are tagged with stacks_fixed, which plain @[stacks] cannot carry on a structure”.
+**`DifferentialGraded.Bimodule.toGradedBimodule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/GradedBimodule.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/GradedBimodule.lean#L176). The attribute's comment: “the graded (A, B)-bimodule underlying a differential graded one, which is what makes part (3) a refinement of part (2); the three parts themselves are tagged with stacks\_fixed, which plain @[stacks] cannot carry on a structure”.
 
 > The graded `(A, B)`-bimodule underlying a differential graded `(A, B)`-bimodule: the right
 > differential graded `B`-module with its grading, the left `A`-action totalized from the left

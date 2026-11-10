@@ -128,7 +128,7 @@ instance hasFiniteLimits_formalCoproductOver {X : C} :
     HasFiniteLimits (FormalCoproduct.{w} (Over X))
 ```
 
-**`CategoryTheory.Limits.FormalCoproduct.yonedaOverObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean#L207). The attribute's comment: “the value of F: F({U_i → X}) is ∐ h_{U_i} augmented to h_X”.
+**`CategoryTheory.Limits.FormalCoproduct.yonedaOverObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean#L207). The attribute's comment: “the value of F: F(\{U\_i → X}) is ∐ h\_\{U\_i} augmented to h\_X”.
 
 > **The value of `F` on a family, Stacks Project, Tag 01G2.** `F({U_i → X})` is the coproduct
 > `∐ h_{U_i}` of the representable presheaves of the `U_i`, equipped with the map to `h_X` whose
@@ -170,7 +170,7 @@ theorem preservesColimitsOfShape_yonedaOver (J : Type v) :
     PreservesColimitsOfShape (Discrete J) (yonedaOver X)
 ```
 
-**`CategoryTheory.Limits.FormalCoproduct.preservesLimitsOfSize_yonedaOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean#L235). The attribute's comment: “F : SR(C, X) → PSh(C)/h_X commutes with finite limits”.
+**`CategoryTheory.Limits.FormalCoproduct.preservesLimitsOfSize_yonedaOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/SemiRepresentableOver.lean#L235). The attribute's comment: “F : SR(C, X) → PSh(C)/h\_X commutes with finite limits”.
 
 > **Stacks Project, Tag 01G2**, finite limits clause for `SR(C, X)`, second half. The functor
 > `F : SR(C, X) ⥤ PSh(C)/h_X` commutes with limits of every shape, with no hypothesis on `C`; this

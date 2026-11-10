@@ -89,7 +89,7 @@ public theorem surjective_map (S : DoubledOriginSource.{u}) :
     Surjective S.map
 ```
 
-**`AlgebraicGeometry.DoubledOriginSource.map_image_ne_range_secondChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/FpqcCounterexample/NotFpqc.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/FpqcCounterexample/NotFpqc.lean#L250). The attribute's comment: “no_quasicompact_open”.
+**`AlgebraicGeometry.DoubledOriginSource.map_image_ne_range_secondChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/FpqcCounterexample/NotFpqc.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/FpqcCounterexample/NotFpqc.lean#L250). The attribute's comment: “no\_quasicompact\_open”.
 
 > No quasi-compact open of the source maps onto the second affine chart of the
 > infinite-dimensional doubled-origin scheme.
@@ -100,7 +100,7 @@ public theorem map_image_ne_range_secondChart (S : DoubledOriginSource)
     S.map.base '' (W : Set S.source) ≠ Set.range S.secondChart.base
 ```
 
-**`AlgebraicGeometry.DoubledOriginSource.exists_isCompact_opens_image_mem_nhds`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/FpqcCounterexample/NotFpqc.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/FpqcCounterexample/NotFpqc.lean#L307). The attribute's comment: “pointwise_condition”.
+**`AlgebraicGeometry.DoubledOriginSource.exists_isCompact_opens_image_mem_nhds`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/FpqcCounterexample/NotFpqc.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/FpqcCounterexample/NotFpqc.lean#L307). The attribute's comment: “pointwise\_condition”.
 
 > Every point of the doubled-origin scheme has a neighbourhood that is the image of a
 > quasi-compact open of the source of the canonical map.
@@ -112,7 +112,7 @@ public theorem exists_isCompact_opens_image_mem_nhds
       IsCompact (V : Set S.source) ∧ S.map '' (V : Set S.source) ∈ nhds x
 ```
 
-**`AlgebraicGeometry.DoubledOriginSource.singleton_map_notMem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/FpqcCounterexample/NotFpqc.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/FpqcCounterexample/NotFpqc.lean#L319). The attribute's comment: “not_fpqc”.
+**`AlgebraicGeometry.DoubledOriginSource.singleton_map_notMem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/FpqcCounterexample/NotFpqc.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/FpqcCounterexample/NotFpqc.lean#L319). The attribute's comment: “not\_fpqc”.
 
 > The map from the affine chart and the local scheme at the origin to the infinite-dimensional
 > doubled-origin scheme does not form an fpqc covering.
@@ -306,7 +306,7 @@ public lemma presieve₀_mem_fpqcPrecoverage_of_affine_refinements
 Declarations registered for the tag:
 
 - [`CategoryTheory.Presieve.IsSheafFor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Presieve.IsSheafFor#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch34.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch34.lean#L42) (StacksFrontier): “(1) the sheaf property for a family: more general, for any presieve, here Presieve.ofArrows of the family”. References: EGA 0 (3.1.2), “(F)”; SGA 3 IV (4.3.1), “partial”; SGA 3 IV (4.3.18), “partial”; SGA 4 II (2.1), “partial”; SGA 4½ Arcata (1.2.3); SGA 4½ Arcata (1.6.3), “partial”.
-- [`CategoryTheory.Presieve.isSheafFor_arrows_iff_pullbacks`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Presieve.isSheafFor_arrows_iff_pullbacks#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch34.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch34.lean#L45) (StacksFrontier): “(1) the same, in the form of the tex: elements agreeing on the U_i ×_T U_j glue uniquely”.
+- [`CategoryTheory.Presieve.isSheafFor_arrows_iff_pullbacks`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Presieve.isSheafFor_arrows_iff_pullbacks#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch34.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch34.lean#L45) (StacksFrontier): “(1) the same, in the form of the tex: elements agreeing on the U\_i ×\_T U\_j glue uniquely”.
 - [`AlgebraicGeometry.Scheme.fpqcTopology`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.fpqcTopology#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch34.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch34.lean#L48) (StacksFrontier): “(2) the fpqc topology on schemes”. References: SGA 3 IV (4.7); SGA 3 IV (6.3); SGA 4 VII (4.2); SGA 4 XVII (0.10), “fpqc topology on Sch”.
 - [`CategoryTheory.Presieve.IsSheaf`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Presieve.IsSheaf#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch34.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch34.lean#L50) (StacksFrontier): “(2) the sheaf property for a topology: more general, here the fpqc topology”. References: EGA 0 (3.1.2), “Set-valued coefficients”; SGA 3 IV (4.3.1); SGA 3 IV (4.3.18); SGA 4 II (2.1); SGA 4 II (2.7); SGA 4 II (6.1), “special case”; SGA 4½ Arcata (1.2.3); SGA 4½ Arcata (1.6.3).
 - [`CategoryTheory.Precoverage.isSheaf_toGrothendieck_iff_of_isStableUnderBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Precoverage.isSheaf_toGrothendieck_iff_of_isStableUnderBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch34.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch34.lean#L52) (StacksFrontier): “(2) the same as the sheaf property for every fpqc covering: more general, for any precoverage stable under base change, here the fpqc precoverage”.
@@ -315,7 +315,7 @@ Declarations registered for the tag:
 
 [Tag 022H](https://stacks.math.columbia.edu/tag/022H) in the Stacks Project.
 
-**`AlgebraicGeometry.isSheaf_fpqcTopology_iff_zariski_and_standardCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Fpqc/StandardSheafCondition.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fpqc/StandardSheafCondition.lean#L112). The attribute's comment: “condition (2): the sheaf property for an arbitrary standard fpqc covering, the clause Mathlib's isSheaf_type_propQCTopology_iff does not state; conditions (1) and (2') are Mathlib's, tagged there”. References: SGA 3 XI (3.4), “special case”.
+**`AlgebraicGeometry.isSheaf_fpqcTopology_iff_zariski_and_standardCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Fpqc/StandardSheafCondition.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fpqc/StandardSheafCondition.lean#L112). The attribute's comment: “condition (2): the sheaf property for an arbitrary standard fpqc covering, the clause Mathlib's isSheaf\_type\_propQCTopology\_iff does not state; conditions (1) and (2') are Mathlib's, tagged there”. References: SGA 3 XI (3.4), “special case”.
 
 > **Stacks 022H, condition (2).** A presheaf of sets on the category of schemes is a sheaf for
 > the fpqc topology if and only if it is a sheaf for the Zariski topology and satisfies the sheaf

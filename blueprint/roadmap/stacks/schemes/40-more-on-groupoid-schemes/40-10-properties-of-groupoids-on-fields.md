@@ -270,7 +270,7 @@ public theorem geometricallyIrreducible_irreducibleComponent_of_identity_target
 
 [Tag 04LU](https://stacks.math.columbia.edu/tag/04LU) in the Stacks Project.
 
-**`AlgebraicGeometry.trdeg_residueField_eq_of_target_isSpec_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/Dimension.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/Dimension.lean#L159). The attribute's comment: “transcendence_degrees”.
+**`AlgebraicGeometry.trdeg_residueField_eq_of_target_isSpec_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/Dimension.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/Dimension.lean#L159). The attribute's comment: “transcendence\_degrees”.
 
 > **Stacks Project, Tag 04LU.** The transcendence degree of the residue field at a point of a
 > scheme over the residue field of its image does not depend on which morphism locally of finite
@@ -288,7 +288,7 @@ theorem trdeg_residueField_eq_of_target_isSpec_field {X Y : Scheme.{u}} {k : Typ
       Algebra.trdeg (Y.residueField (g x)) (X.residueField x)
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.topologicalKrullDim_arrows_eq_topologicalKrullDimAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/Dimension.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/Dimension.lean#L230). The attribute's comment: “dimension_at_every_point”.
+**`AlgebraicGeometry.GroupoidScheme.topologicalKrullDim_arrows_eq_topologicalKrullDimAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/Dimension.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/Dimension.lean#L230). The attribute's comment: “dimension\_at\_every\_point”.
 
 > **Stacks Project, Tag 04LU.** The dimension of the arrow scheme of a groupoid scheme whose
 > object scheme is the spectrum of a field is its local dimension at every point, provided both
@@ -302,7 +302,7 @@ theorem topologicalKrullDim_arrows_eq_topologicalKrullDimAt {S : Scheme.{u}}
     topologicalKrullDim G.arrows.left = topologicalKrullDimAt G.arrows.left r
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.topologicalKrullDim_arrows_eq_ringKrullDim_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/Dimension.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/Dimension.lean#L244). The attribute's comment: “dimension_at_closed_point”.
+**`AlgebraicGeometry.GroupoidScheme.topologicalKrullDim_arrows_eq_ringKrullDim_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/Dimension.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/OverField/Morphisms/Dimension.lean#L244). The attribute's comment: “dimension\_at\_closed\_point”.
 
 > **Stacks Project, Tag 04LU.** At a closed point of the arrow scheme of a groupoid scheme
 > whose object scheme is the spectrum of a field, the dimension of the arrow scheme is the Krull

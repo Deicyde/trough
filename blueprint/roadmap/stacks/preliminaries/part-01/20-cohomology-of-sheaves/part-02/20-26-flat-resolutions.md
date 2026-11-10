@@ -261,7 +261,7 @@ Declarations registered for the tag:
 
 [Tag 08BP](https://stacks.math.columbia.edu/tag/08BP) in the Stacks Project.
 
-**`Stacks.Cohomology.tor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/Tor.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/Tor.lean#L83). References: SGA 4½ Etat 0 (6.2), “Tor_i, ringed space”; SGA 4 XVII (4.1.8), “modules, not complexes”.
+**`Stacks.Cohomology.tor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/Tor.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/Tor.lean#L83). References: SGA 4½ Etat 0 (6.2), “Tor\_i, ringed space”; SGA 4 XVII (4.1.8), “modules, not complexes”.
 
 > **Tag 08BP.** The `O_X`-module `Tor_p^{O_X}(F, G) = H^{-p}(F ⊗_{O_X}^{L} G)`.
 
@@ -273,7 +273,7 @@ def tor (p : ℤ) (F G : OXMod.{u} X) : OXMod.{u} X
 
 [Tag 08BQ](https://stacks.math.columbia.edu/tag/08BQ) in the Stacks Project.
 
-**`Stacks.Cohomology.flat_iff_forall_isZero_tor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/TorFlatness.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/TorFlatness.lean#L373). The attribute's comment: “(1) ⟺ (2) for a ringed space, with clause (2) stated in the source's own terms: the vanishing of the sheaf Tor_1^{O_X}(F, G) = H^{-1}(F ⊗^L_{O_X} G) of Tag 08BP, for every O_X-module G, and clause (1) sheaf-level flatness of Tag 05ND.”.
+**`Stacks.Cohomology.flat_iff_forall_isZero_tor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/TorFlatness.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/TorFlatness.lean#L373). The attribute's comment: “(1) ⟺ (2) for a ringed space, with clause (2) stated in the source's own terms: the vanishing of the sheaf Tor\_1^\{O\_X}(F, G) = H^\{-1}(F ⊗^L\_\{O\_X} G) of Tag 08BP, for every O\_X-module G, and clause (1) sheaf-level flatness of Tag 05ND.”.
 
 > **Tag 08BQ: Tor measures the deviation of flatness.** Let `(X, 𝒪_X)` be a ringed space and
 > `ℱ` an `𝒪_X`-module. The following are equivalent:
@@ -309,7 +309,7 @@ theorem flat_iff_forall_isZero_tor (F : OXMod.{u, u} X) :
     OXModule.Flat F ↔ ∀ G : OXMod.{u, u} X, IsZero (tor X 1 F G)
 ```
 
-**`OXModule.flat_iff_tor1_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/FlatModuleSheavesAndStalks/FlatIffTorOne.lean, line 506](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/FlatModuleSheavesAndStalks/FlatIffTorOne.lean#L506). The attribute's comment: “(1) ⟺ (2) with clause (2) read stalkwise: Tor_1 here is the module-theoretic Tor_1^{O_{X,x}}(F_x, G_x) at every point, not the sheaf Tor_1 of Tag 08BP. The tag's clause (2) in the source's own terms — the vanishing of Stacks.Cohomology.tor X 1 F G — is Stacks.Cohomology.flat_iff_forall_isZero_tor in StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/TorFlatness.lean, and the two readings are identified there by isZero_derivedTensorHomology_iff_forall_isZero_tor.”. References: SGA 6 I (5.1.1), “special case”.
+**`OXModule.flat_iff_tor1_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/KFlat/FlatModuleSheavesAndStalks/FlatIffTorOne.lean, line 506](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/KFlat/FlatModuleSheavesAndStalks/FlatIffTorOne.lean#L506). The attribute's comment: “(1) ⟺ (2) with clause (2) read stalkwise: Tor\_1 here is the module-theoretic Tor\_1^\{O\_\{X,x}}(F\_x, G\_x) at every point, not the sheaf Tor\_1 of Tag 08BP. The tag's clause (2) in the source's own terms — the vanishing of Stacks.Cohomology.tor X 1 F G — is Stacks.Cohomology.flat\_iff\_forall\_isZero\_tor in StacksFrontier/Topology/Sheaves/Cohomology/DerivedTensor/TorFlatness.lean, and the two readings are identified there by isZero\_derivedTensorHomology\_iff\_forall\_isZero\_tor.”. References: SGA 6 I (5.1.1), “special case”.
 
 > **Theorem (Stacks Tag 08BQ — "Tor measures the deviation of flatness").**
 > Let `(X, O_X)` be a ringed space and `F` an `O_X`-module.  Then `F` is flat

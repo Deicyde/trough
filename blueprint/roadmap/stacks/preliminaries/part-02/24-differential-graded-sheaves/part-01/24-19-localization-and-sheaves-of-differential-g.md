@@ -14,7 +14,7 @@ Section 24.19 of the Stacks Project, [Tag 0FRV](https://stacks.math.columbia.edu
 
 [Tag 0FRW](https://stacks.math.columbia.edu/tag/0FRW) in the Stacks Project.
 
-**`SheafOfModules.dgExtendHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZero.lean, line 689](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZero.lean#L689). The attribute's comment: “Hom(j_! M, N) = Hom(M, j^* N) in degree zero”.
+**`SheafOfModules.dgExtendHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZero.lean, line 689](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZero.lean#L689). The attribute's comment: “Hom(j\_! M, N) = Hom(M, j^* N) in degree zero”.
 
 > **Tag 0FRW in degree zero.** The homomorphisms `j_!M ⟶ N` of right differential graded
 > `A`-modules are the homomorphisms `M ⟶ j^*N` of right differential graded `A_U`-modules. The
@@ -39,7 +39,7 @@ noncomputable def dgExtensionByZeroAdjunction :
     dgExtensionByZeroFunctor.{m} O U A ⊣ DifferentialGradedModule.overFunctor A U
 ```
 
-**`SheafOfModules.dgHomOfDegreeExtendEquiv_isHomComplexDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZero.lean, line 756](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZero.lean#L756). The attribute's comment: “Hom(j_! M, N) = Hom(M, j^* N) as complexes: compatibility with the differentials”.
+**`SheafOfModules.dgHomOfDegreeExtendEquiv_isHomComplexDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZero.lean, line 756](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZero.lean#L756). The attribute's comment: “Hom(j\_! M, N) = Hom(M, j^* N) as complexes: compatibility with the differentials”.
 
 > **Tag 0FRW.** The identification of Tag 0FRA of the homogeneous homomorphisms of degree `d`
 > out of `j_!M` with those into `j^*N` matches the differentials of the two hom-complexes. Read in
@@ -67,7 +67,7 @@ theorem dgHomOfDegreeExtendEquiv_isHomComplexDifferential
 
 [Tag 0FRX](https://stacks.math.columbia.edu/tag/0FRX) in the Stacks Project.
 
-**`SheafOfModules.dgExtendTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZeroTensor.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZeroTensor.lean#L332). The attribute's comment: “j_! M ⊗_A N = j_!(M ⊗_{A_U} N|_U) as complexes of O-modules”.
+**`SheafOfModules.dgExtendTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZeroTensor.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZeroTensor.lean#L332). The attribute's comment: “j\_! M ⊗\_A N = j\_!(M ⊗\_\{A\_U} N|\_U) as complexes of O-modules”.
 
 > **Tag 0FRX.** The relative tensor product of the extension by zero of a right differential
 > graded `A_U`-module `M` with a left differential graded `A`-module `N` is the extension by zero
@@ -81,7 +81,7 @@ noncomputable def dgExtendTensorIso :
     dgExtendTensor.{m} O U A M N ≅ dgExtendSliceTensor.{m} O U A M N
 ```
 
-**`SheafOfModules.dgExtendTensorIso_naturality_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZeroTensor.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZeroTensor.lean#L362). The attribute's comment: “functoriality of j_! M ⊗_A N = j_!(M ⊗_{A_U} N|_U) in M, in each degree”.
+**`SheafOfModules.dgExtendTensorIso_naturality_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZeroTensor.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZeroTensor.lean#L362). The attribute's comment: “functoriality of j\_! M ⊗\_A N = j\_!(M ⊗\_\{A\_U} N|\_U) in M, in each degree”.
 
 > **Tag 0FRX, functoriality in the right differential graded module.** In every degree the
 > identification `j_!M ⊗_A N = j_!(M ⊗_{A_U} N|_U)` commutes with a homomorphism `M ⟶ M'` of right
@@ -101,7 +101,7 @@ theorem dgExtendTensorIso_naturality_left
           ((LeftGradedModule.ofDifferentialGraded N).over U) n)
 ```
 
-**`SheafOfModules.dgExtendTensorIso_naturality_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZeroTensor.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZeroTensor.lean#L380). The attribute's comment: “functoriality of j_! M ⊗_A N = j_!(M ⊗_{A_U} N|_U) in N, in each degree”.
+**`SheafOfModules.dgExtendTensorIso_naturality_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZeroTensor.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedExtensionByZeroTensor.lean#L380). The attribute's comment: “functoriality of j\_! M ⊗\_A N = j\_!(M ⊗\_\{A\_U} N|\_U) in N, in each degree”.
 
 > **Tag 0FRX, functoriality in the left differential graded module.** In every degree the
 > identification `j_!M ⊗_A N = j_!(M ⊗_{A_U} N|_U)` commutes with a homomorphism `N ⟶ N'` of left

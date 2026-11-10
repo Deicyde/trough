@@ -317,7 +317,7 @@ theorem exists_normOfDegree_reduction (X : Scheme.{u}) [IsNoetherian X]
 
 [Tag 0BD4](https://stacks.math.columbia.edu/tag/0BD4) in the Stacks Project.
 
-**`Stacks.Divisors.exists_isAmple_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean#L482). The attribute's comment: “finite_locally_free_case”. References: EGA II (6.6.1), “absolute, loc free case”; EGA II (6.6.2), “locally free case”.
+**`Stacks.Divisors.exists_isAmple_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean#L482). The attribute's comment: “finite\_locally\_free\_case”. References: EGA II (6.6.1), “absolute, loc free case”; EGA II (6.6.2), “locally free case”.
 
 > **Stacks Project, Tag 0BD4, case (1).** A finite locally free, finite surjective morphism
 > descends the existence of an ample invertible module. The canonical determinant norm of
@@ -331,7 +331,7 @@ theorem exists_isAmple_of_isFiniteLocallyFree (f : X ⟶ Y) [IsFinite f] [Surjec
     ∃ (M : Y.Modules) (hM : IsInvertibleModule Y M), @Stacks.Ample.IsAmple Y M hM
 ```
 
-**`Stacks.Divisors.exists_isAmple_of_isAmple_reduction_char_p`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean#L494). The attribute's comment: “reduction_characteristic_p_case”.
+**`Stacks.Divisors.exists_isAmple_of_isAmple_reduction_char_p`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean, line 494](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean#L494). The attribute's comment: “reduction\_characteristic\_p\_case”.
 
 > **Stacks Project, Tag 0BD4, case (3).** On a Noetherian scheme of prime characteristic `p`,
 > an ample invertible module on the reduction descends to an ample invertible module on the scheme:
@@ -348,7 +348,7 @@ theorem exists_isAmple_of_isAmple_reduction_char_p (Y : Scheme.{u}) [IsNoetheria
     ∃ (M : Y.Modules) (hM : IsInvertibleModule Y M), @Stacks.Ample.IsAmple Y M hM
 ```
 
-**`Stacks.Divisors.exists_isAmple_of_isIntegral_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean#L511). The attribute's comment: “integral_normal_case”. References: EGA II (6.6.1), “absolute, Y normal”; EGA II (6.6.2), “Y integral normal”.
+**`Stacks.Divisors.exists_isAmple_of_isIntegral_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormInvertible/Ample.lean#L511). The attribute's comment: “integral\_normal\_case”. References: EGA II (6.6.1), “absolute, Y normal”; EGA II (6.6.2), “Y integral normal”.
 
 > **Stacks Project, Tag 0BD4, case (2).** A finite surjective morphism onto an integral normal
 > scheme descends the existence of an ample invertible module. The source is replaced by an

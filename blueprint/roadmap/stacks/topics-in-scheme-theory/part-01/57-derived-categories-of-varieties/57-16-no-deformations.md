@@ -14,7 +14,7 @@ Section 57.16 of the Stacks Project, [Tag 0G0M](https://stacks.math.columbia.edu
 
 [Tag 0G0N](https://stacks.math.columbia.edu/tag/0G0N) in the Stacks Project.
 
-**`AlgebraicGeometry.derivedIso_koszulOfLift`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/LiftedKoszul.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/LiftedKoszul.lean#L420). The attribute's comment: “lifted_koszul”.
+**`AlgebraicGeometry.derivedIso_koszulOfLift`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/LiftedKoszul.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/LiftedKoszul.lean#L420). The attribute's comment: “lifted\_koszul”.
 
 > The chosen finite-free lift of the closed-fibre Koszul complex represents the Koszul
 > complex of its lifted first differential.
@@ -68,7 +68,7 @@ public theorem exists_koszulDescription_and_flat_quotient_of_fibrewise_koszul
 
 Declarations registered for the tag:
 
-- [`Module.Flat.isRegular_and_flat_quotient_ofList_smul_of_isRegular_maximalIdeal`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/RegularSequenceOverBase.lean#L172), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/FlatQuotient.lean, line 31](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/FlatQuotient.lean#L31) (StacksFrontier): “flat_quotient”.
+- [`Module.Flat.isRegular_and_flat_quotient_ofList_smul_of_isRegular_maximalIdeal`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/RegularSequenceOverBase.lean#L172), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/FlatQuotient.lean, line 31](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedVarieties/NoDeformations/FlatQuotient.lean#L31) (StacksFrontier): “flat\_quotient”.
 
 ## Tag 0G0P, a lemma
 

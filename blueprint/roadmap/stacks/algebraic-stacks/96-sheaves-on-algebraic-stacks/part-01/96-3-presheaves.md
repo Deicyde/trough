@@ -22,7 +22,7 @@ Declarations registered for the tag:
 
 [Tag 06TK](https://stacks.math.columbia.edu/tag/06TK) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.presheafAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean#L77). The attribute's comment: “presheaf pullback f^p, pushforward {}_pf, and the adjunction f^p ⊣ {}_pf”.
+**`AlgebraicGeometry.BigFppfOver.presheafAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean#L77). The attribute's comment: “presheaf pullback f^p, pushforward \{}\_pf, and the adjunction f^p ⊣ \{}\_pf”.
 
 > **Stacks 06TK**, the pullback and pushforward of presheaves and their adjointness. For a
 > 1-morphism `G : 𝒳 ⟶ 𝒴` of categories fibred in groupoids over the big fppf category of `S`, the
@@ -36,7 +36,7 @@ noncomputable def presheafAdjunction :
       (CatFiberedInGroupoids.homFunctor G).op.ran
 ```
 
-**`AlgebraicGeometry.BigFppfOver.presheafPushforwardObjObjIsoLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean#L87). The attribute's comment: “the formula ({}_pf F)(y) = lim_{f(x) -> y} F(x) for the pushforward”.
+**`AlgebraicGeometry.BigFppfOver.presheafPushforwardObjObjIsoLimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AssociatedMorphismOfTopoi.lean#L87). The attribute's comment: “the formula (\{}\_pf F)(y) = lim\_\{f(x) -> y} F(x) for the pushforward”.
 
 > **Stacks 06TK**, the formula `({}_pG ℱ)(y) = lim_{G(x) → y} ℱ(x)` for the pushforward of a
 > presheaf of sets `ℱ` on `𝒳` along a 1-morphism `G : 𝒳 ⟶ 𝒴` of categories fibred in groupoids over

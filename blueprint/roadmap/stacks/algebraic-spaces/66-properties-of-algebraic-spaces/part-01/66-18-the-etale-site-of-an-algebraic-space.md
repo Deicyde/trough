@@ -211,7 +211,7 @@ theorem exists_scheme_chart_cover (U : SpacesEtale B S hS X) :
       Sieve.generate (Presieve.singleton f) ∈ SpacesEtale.topology B S hS X U
 ```
 
-**`AlgebraicGeometry.Space.exists_smallEtaleDirectImageChartEqualizerEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleDirectImageChartEqualizer.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleDirectImageChartEqualizer.lean#L341). The attribute's comment: “the equalizer diagram, for the direct image on the small etale sites: the sections of f_{small,*}P over an etale scheme chart V of Y are the equalizer of the sections of P over an etale scheme chart W covering X x_Y V and over a chart W' presenting the self-fibre product of W over X x_Y V”.
+**`AlgebraicGeometry.Space.exists_smallEtaleDirectImageChartEqualizerEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleDirectImageChartEqualizer.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleDirectImageChartEqualizer.lean#L341). The attribute's comment: “the equalizer diagram, for the direct image on the small etale sites: the sections of f\_\{small,*}P over an etale scheme chart V of Y are the equalizer of the sections of P over an etale scheme chart W covering X x\_Y V and over a chart W' presenting the self-fibre product of W over X x\_Y V”.
 
 > **Tag 03H7 for the direct image on the small étale sites.**  Let `f : X ⟶ Y` be a morphism
 > of algebraic spaces, let `P` be a sheaf of sets on the small étale site of `X`, and let `V` be
@@ -938,7 +938,7 @@ def smallToposMorphism_inverseImageObjObjIso (f : X ⟶ Y) (hf : IsEtale B S hS 
       G.obj.obj (Opposite.op ((smallEtalePostcomp B S hS f hf).obj U))
 ```
 
-**`AlgebraicGeometry.Space.smallToposMorphism_inverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean#L215). The attribute's comment: “the morphism of topoi attached to j is f_small”.
+**`AlgebraicGeometry.Space.smallToposMorphism_inverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRestrictionInverseImage.lean#L215). The attribute's comment: “the morphism of topoi attached to j is f\_small”.
 
 > **Stacks 03LQ**, and the remaining assertion of **Stacks 03LP**: for an étale morphism
 > `h : U ⟶ V` of algebraic spaces, the inverse image of the morphism of *small* étale topoi
@@ -979,7 +979,7 @@ noncomputable def smallToposMorphism_inverseImage_obj_obj (h : U ⟶ V)
 
 [Tag 03LQ](https://stacks.math.columbia.edu/tag/03LQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.smallToposMorphism_abelianInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianRestrictionInverseImage.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianRestrictionInverseImage.lean#L126). The attribute's comment: “at abelian coefficients: h_small^{-1} of an abelian sheaf is restriction along j”.
+**`AlgebraicGeometry.Space.smallToposMorphism_abelianInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianRestrictionInverseImage.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianRestrictionInverseImage.lean#L126). The attribute's comment: “at abelian coefficients: h\_small^\{-1} of an abelian sheaf is restriction along j”.
 
 > **Stacks 03LQ at abelian coefficients.** For an étale morphism `h : U ⟶ V` of algebraic
 > spaces, the inverse image of *abelian* sheaves along the morphism of small étale topoi
@@ -1099,8 +1099,8 @@ noncomputable def smallEtalePushforwardBaseChangeIso (sq : IsPullback i f' f g)
 > It is the datum of which the inverse of `smallEtalePushforwardBaseChangeIso` is expected to be
 > the adjunction mate; that identification is not proved here.
 >
-> This is the parenthetical assertion of Stacks 03LR — "Also `(f')^{-1}_{small}(G|_{Y'}) =
-> (f_{small}^{-1}G)|_{X'}` because of commutativity of the diagram and (03LQ)" — which is why the
+> This is the parenthetical assertion of Stacks 03LR — "Also `(f')^\{-1}\_\{small}(G|\_\{Y'}) =
+> (f\_\{small}^\{-1}G)|\_\{X'}` because of commutativity of the diagram and (03LQ)" — which is why the
 > hypothesis is only `sq` and not the étaleness of `g`: the identity is pure functoriality.
 
 ```lean
@@ -1111,7 +1111,7 @@ noncomputable def smallEtaleInverseImageSquareIso (sq : IsPullback i f' f g) :
         (smallToposMorphism B S hS i).inverseImage
 ```
 
-**`AlgebraicGeometry.Space.isIso_smallEtaleAbelianHigherBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleAbelianBaseChangeMate.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleAbelianBaseChangeMate.lean#L348). The attribute's comment: “part (2): for every abelian sheaf and every degree n, the canonical comparison (R^n f_{small,*} F)|_{Y'} ⟶ R^n f'_{small,*}(F|_{X'}) of higher direct images is an isomorphism”.
+**`AlgebraicGeometry.Space.isIso_smallEtaleAbelianHigherBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleAbelianBaseChangeMate.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleAbelianBaseChangeMate.lean#L348). The attribute's comment: “part (2): for every abelian sheaf and every degree n, the canonical comparison (R^n f\_\{small,*} F)|\_\{Y'} ⟶ R^n f'\_\{small,*}(F|\_\{X'}) of higher direct images is an isomorphism”.
 
 > **Étale base change for higher direct images.**  For a cartesian square of algebraic spaces
 > over `S`
@@ -1132,7 +1132,7 @@ theorem isIso_smallEtaleAbelianHigherBaseChangeMap (sq : IsPullback i f' f g)
     IsIso (smallEtaleAbelianHigherBaseChangeMap B S hS i f' f g sq hg n)
 ```
 
-**`AlgebraicGeometry.Space.smallEtalePushforwardEtaleBaseChange_allParts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleAbelianBaseChangeMate.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleAbelianBaseChangeMate.lean#L382). The attribute's comment: “the whole statement as one conjunction, in the source's order: part (1), that the canonical base-change 2-cell of sheaves of sets is an isomorphism, i.e. f'_* (F|_X') = (f_* F)|_Y'; its inverse-image footnote, (f')^{-1}(G|_Y') = (f^{-1} G)|_X'; and part (2), that for every degree n the canonical comparison (R^n f_* F)|_Y' -> R^n f'_* (F|_X') of higher direct images of abelian sheaves is an isomorphism”.
+**`AlgebraicGeometry.Space.smallEtalePushforwardEtaleBaseChange_allParts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleAbelianBaseChangeMate.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SmallEtaleAbelianBaseChangeMate.lean#L382). The attribute's comment: “the whole statement as one conjunction, in the source's order: part (1), that the canonical base-change 2-cell of sheaves of sets is an isomorphism, i.e. f'\_* (F|\_X') = (f\_* F)|\_Y'; its inverse-image footnote, (f')^\{-1}(G|\_Y') = (f^\{-1} G)|\_X'; and part (2), that for every degree n the canonical comparison (R^n f\_* F)|\_Y' -> R^n f'\_* (F|\_X') of higher direct images of abelian sheaves is an isomorphism”.
 
 > **Étale base change on the small étale sites.**  For a cartesian square of algebraic spaces
 > over `S`

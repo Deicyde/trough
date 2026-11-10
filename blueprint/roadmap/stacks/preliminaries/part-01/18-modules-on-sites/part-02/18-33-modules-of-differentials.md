@@ -561,7 +561,7 @@ abbrev Derivation (F : Sheaf.targetModules.{u, v, w} X.J X.O)
 noncomputable abbrev differentials : Sheaf.targetModules.{u, v, w} X.J X.O
 ```
 
-**`AlgebraicGeometry.RingedToposHom.universalDerivation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean#L89). The attribute's comment: “the universal Y-derivation d_{X/Y}”.
+**`AlgebraicGeometry.RingedToposHom.universalDerivation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean#L89). The attribute's comment: “the universal Y-derivation d\_\{X/Y}”.
 
 > **Stacks 04BQ.** The universal `Y`-derivation `d_{X/Y} : 𝒪_C ⟶ Ω_{X/Y}` that the sheaf of
 > differentials comes equipped with: the universal derivation of the inverse-image form of the
@@ -571,7 +571,7 @@ noncomputable abbrev differentials : Sheaf.targetModules.{u, v, w} X.J X.O
 noncomputable def universalDerivation : f.Derivation f.differentials
 ```
 
-**`AlgebraicGeometry.RingedToposHom.existsUnique_descDerivation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean#L97). The attribute's comment: “universality of d_{X/Y}”.
+**`AlgebraicGeometry.RingedToposHom.existsUnique_descDerivation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedToposHomologyZero.lean#L97). The attribute's comment: “universality of d\_\{X/Y}”.
 
 > **Stacks 04BQ.** `d_{X/Y}` is universal among `Y`-derivations: every `Y`-derivation with
 > values in a sheaf of `𝒪_C`-modules factors through it by a unique morphism of sheaves of

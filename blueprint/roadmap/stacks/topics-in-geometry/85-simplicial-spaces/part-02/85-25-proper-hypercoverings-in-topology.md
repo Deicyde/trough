@@ -40,7 +40,7 @@ def comparisonSquarePushforwardIso :
       (qcAugmentation.{x} S U a).pushforward ⋙ (qcTopologicalMorphism.{u, w, 0} S X).pushforward
 ```
 
-**`Stacks.Topology.Simplicial.qcSmallBottomMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean#L203). The attribute's comment: “the lower horizontal arrow h_{-1} : Sh(LC_qc/X) → Sh(X) of the diagram”.
+**`Stacks.Topology.Simplicial.qcSmallBottomMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean#L203). The attribute's comment: “the lower horizontal arrow h\_\{-1} : Sh(LC\_qc/X) → Sh(X) of the diagram”.
 
 > **The bottom horizontal arrow of the diagram of Tag 0DAF**, the comparison morphism of topoi
 > `h₋₁ = a_X : Sh(LC_qc/X) → Sh(X)` of Section 09WY, with `Sh(LC_qc/X)` read as the sheaves on the
@@ -82,7 +82,7 @@ def qcComparisonSquareInverseImageIso :
       qcSmallTopologicalInverseImage S X ⋙ (qcAugmentationMorphism S X U a).inverseImage
 ```
 
-**`Stacks.Topology.Simplicial.exists_qcComparisonSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean, line 763](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean#L763). The attribute's comment: “for an arbitrary simplicial object U of LC and augmentation a : U → X: a site LC_qc containing X and the U_n exists, and for it the diagram of topoi commutes”.
+**`Stacks.Topology.Simplicial.exists_qcComparisonSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean, line 763](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/QcComparisonSquare.lean#L763). The attribute's comment: “for an arbitrary simplicial object U of LC and augmentation a : U → X: a site LC\_qc containing X and the U\_n exists, and for it the diagram of topoi commutes”.
 
 > **Tag 0DAF for an arbitrary simplicial object of `LC`.** Let `U` be a simplicial object of
 > `LC` and let `a : U → X` be an augmentation. Then a site `LC_qc` of Tag 09X2 can be chosen
@@ -115,7 +115,7 @@ theorem exists_qcComparisonSquare (Y : SimplicialObject LocallyQuasiCompactHausd
             (qcLiftAugmentation S b hY hT)).inverseImage)
 ```
 
-**`Stacks.Topology.Simplicial.qcSmallComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/QcSmallTotalSiteComparison.lean, line 477](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/QcSmallTotalSiteComparison.lean#L477). The attribute's comment: “the upper horizontal arrow h : Sh((LC_qc/U)_total) → Sh(U_Zar) of the diagram”.
+**`Stacks.Topology.Simplicial.qcSmallComparisonMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/QcSmallTotalSiteComparison.lean, line 477](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/QcSmallTotalSiteComparison.lean#L477). The attribute's comment: “the upper horizontal arrow h : Sh((LC\_qc/U)\_total) → Sh(U\_Zar) of the diagram”.
 
 > **The upper horizontal arrow of the diagram of Tag 0DAF**, the morphism of topoi
 > `h : Sh((LC_qc/U)_total) ⟶ Sh(U_Zar)` of the comparison functor, with `(LC_qc/U)_total` formed

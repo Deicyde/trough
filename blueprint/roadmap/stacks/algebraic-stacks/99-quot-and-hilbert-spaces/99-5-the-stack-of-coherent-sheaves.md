@@ -43,7 +43,7 @@ structure CoherentObject (D : CoherentSituation B S hS)
 structure CoherentHom {D : CoherentSituation B S hS} (A A' : CoherentObject D)
 ```
 
-**`AlgebraicGeometry.Space.CoherentSituation.categoryData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackCategory.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackCategory.lean#L227). The attribute's comment: “the category structure on Coh_{X/Y}: the identity and associativity laws, which Stacks 08KB asserts by designation and this library had left unverified”.
+**`AlgebraicGeometry.Space.CoherentSituation.categoryData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CoherentStackCategory.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CoherentStackCategory.lean#L227). The attribute's comment: “the category structure on Coh\_\{X/Y}: the identity and associativity laws, which Stacks 08KB asserts by designation and this library had left unverified”.
 
 > **`Coh_{X/Y}` is a category**, for the canonical pseudofunctoriality datum
 > `AlgebraicGeometry.Space.modulePushforwardCoherence` of the direct images of Stacks 03LU.

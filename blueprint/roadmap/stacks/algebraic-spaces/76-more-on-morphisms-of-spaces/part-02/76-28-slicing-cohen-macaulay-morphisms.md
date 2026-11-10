@@ -53,7 +53,7 @@ theorem exists_isOpenSubspace_isFlat_vanishingSubfunctor_of_isRegular_geometricF
         IsFlat B S hS (((vanishingSubfunctor B S hS X fs).preimage W.ι).ι ≫ W.ι ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_vanishingSubfunctor_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/CohenMacaulaySlice.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/CohenMacaulaySlice.lean#L229). The attribute's comment: “locally of finite presentation, given it for V(f₁,…,f_r) ⟶ X”.
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_vanishingSubfunctor_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/CohenMacaulaySlice.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/CohenMacaulaySlice.lean#L229). The attribute's comment: “locally of finite presentation, given it for V(f₁,…,f\_r) ⟶ X”.
 
 > If `X ⟶ Y` is locally of finite presentation and the closed immersion of the subspace
 > `V(f₁, …, f_r) ⊆ X` cut out by global regular functions `f₁, …, f_r` is locally of finite

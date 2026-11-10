@@ -305,7 +305,7 @@ theorem isSmooth_selfIntersectionPresentation_target
 
 [Tag 04WY](https://stacks.math.columbia.edu/tag/04WY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.SelfIntersection.nonempty_isEquivalenceOver_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatPresentation.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatPresentation.lean#L187). The attribute's comment: “flat_presentation_equivalence”.
+**`AlgebraicGeometry.Stack.SelfIntersection.nonempty_isEquivalenceOver_canonicalMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatPresentation.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SelfIntersectionFlatPresentation.lean#L187). The attribute's comment: “flat\_presentation\_equivalence”.
 
 > Let `𝒳` be an algebraic stack over `S`, let `f : 𝒰 ⟶ 𝒳` be a 1-morphism whose
 > source is represented by an algebraic space `U` and whose self-intersection is represented by an

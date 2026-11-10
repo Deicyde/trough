@@ -30,7 +30,7 @@ abbrev sheafHomComplex (K I : CochainComplex (StructureSheafModules Rc) ℤ) :
 
 [Tag 0A8L](https://stacks.math.columbia.edu/tag/0A8L) in the Stacks Project.
 
-**`Stacks.SheafOfModules.sheafHomComplexHomologyEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/InternalHomComplexCohomology.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/InternalHomComplexCohomology.lean#L99). The attribute's comment: “H^n(Γ(U, SheafHom^•(L, M))) = Hom_{K(O_U)}(L|_U, M|_U[n]) for every open U of X and every n ∈ ℤ, with SheafHom^•(L, M) the internal Hom complex constructed in Tag 0A8K.”.
+**`Stacks.SheafOfModules.sheafHomComplexHomologyEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/InternalHomComplexCohomology.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/InternalHomComplexCohomology.lean#L99). The attribute's comment: “H^n(Γ(U, SheafHom^•(L, M))) = Hom\_\{K(O\_U)}(L|\_U, M|\_U[n]) for every open U of X and every n ∈ ℤ, with SheafHom^•(L, M) the internal Hom complex constructed in Tag 0A8K.”.
 
 > **Stacks 0A8L.** The `n`-th cohomology of the sections over `U` of the internal Hom complex
 > `SheafHom^•(L, M)` of [Stacks, Tag 0A8K] is canonically the group of morphisms from `L|_U` to

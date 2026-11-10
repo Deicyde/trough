@@ -174,7 +174,7 @@ public theorem depth_add_ringKrullDim_quotient_localization_adicCompletion
 
 [Tag 0BJT](https://stacks.math.columbia.edu/tag/0BJT) in the Stacks Project.
 
-**`Stacks.LocalCohomology.localCohomologyCutoff_adicCompletion_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Cutoff/Completion.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Cutoff/Completion.lean#L123). The attribute's comment: “cutoff_completion_le”.
+**`Stacks.LocalCohomology.localCohomologyCutoff_adicCompletion_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/Cutoff/Completion.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/Cutoff/Completion.lean#L123). The attribute's comment: “cutoff\_completion\_le”.
 
 > **Stacks 0BJT.** Completion at the maximal ideal cannot increase the local cohomology
 > finiteness cutoff of a finite module over a universally catenary Noetherian local ring.
@@ -190,7 +190,7 @@ public theorem localCohomologyCutoff_adicCompletion_le
       localCohomologyCutoff A I M
 ```
 
-**`Stacks.LocalCohomology.min_succ_le_localCohomologyCutoff_adicCompletion`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CutoffCompletionSerre.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CutoffCompletionSerre.lean#L312). The attribute's comment: “cutoff_completion_lower_bound_of_serre”.
+**`Stacks.LocalCohomology.min_succ_le_localCohomologyCutoff_adicCompletion`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CutoffCompletionSerre.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CutoffCompletionSerre.lean#L312). The attribute's comment: “cutoff\_completion\_lower\_bound\_of\_serre”.
 
 > If the formal fibres of a universally catenary Noetherian local ring
 > satisfy `(Sₙ)`, the cutoff after completion is at least the minimum of the
@@ -322,7 +322,7 @@ public theorem finite_lt_and_not_finite_localCohomologyCutoff_of_formalFibers
 
 [Tag 0BJW](https://stacks.math.columbia.edu/tag/0BJW) in the Stacks Project.
 
-**`Stacks.LocalCohomology.finite_localCohomologyWithSupportIn_of_lt_localCohomologyCutoff_of_serreFormalFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean#L135). The attribute's comment: “finiteness through degree n when the formal fibres are (S_n)”.
+**`Stacks.LocalCohomology.finite_localCohomologyWithSupportIn_of_lt_localCohomologyCutoff_of_serreFormalFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean#L135). The attribute's comment: “finiteness through degree n when the formal fibres are (S\_n)”.
 
 > **Stacks Project, Tag 0BJW, finiteness through a degree below the cutoff.** Let `A` be a
 > universally catenary Noetherian ring, let `I ⊆ A` be an ideal, let `Z = V(I)` and let `M` be a
@@ -348,7 +348,7 @@ public theorem
         ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj (ModuleCat.of A M)) i)
 ```
 
-**`Stacks.LocalCohomology.not_finite_localCohomologyWithSupportIn_localCohomologyCutoff_of_serreFormalFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean#L163). The attribute's comment: “non-finiteness in the cutoff degree when the formal fibres are (S_{s-1})”.
+**`Stacks.LocalCohomology.not_finite_localCohomologyWithSupportIn_localCohomologyCutoff_of_serreFormalFibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/SerreFormalFibresFiniteness.lean#L163). The attribute's comment: “non-finiteness in the cutoff degree when the formal fibres are (S\_\{s-1})”.
 
 > **Stacks Project, Tag 0BJW, non-finiteness at the cutoff.** In the situation of
 > `finite_localCohomologyWithSupportIn_of_lt_localCohomologyCutoff_of_serreFormalFibers`, if the

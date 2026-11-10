@@ -53,12 +53,12 @@ structure DGFunctor {R : Type*} [CommRing R] (A B : DGCategory R)
 
 Declarations registered for the tag:
 
-- [`DGCategory.Cocycle`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DGCategory.lean#L218), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean#L39) (StacksFrontier): “category_of_complexes”.
-- [`DGCategory.Comp`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DGCategory.lean#L252), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean#L40) (StacksFrontier): “category_of_complexes”.
-- [`DGCategory.instCategoryComp`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DGCategory.lean#L257), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean#L41) (StacksFrontier): “category_of_complexes”.
-- [`DGCategory.K`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DGCategory.lean#L345), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean#L43) (StacksFrontier): “homotopy_category”.
-- [`DGCategory.HomotopyClass`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DGCategory.lean#L349), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean#L44) (StacksFrontier): “homotopy_category”.
-- [`DGCategory.instCategoryK`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DGCategory.lean#L364), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean#L45) (StacksFrontier): “homotopy_category”.
+- [`DGCategory.Cocycle`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DGCategory.lean#L218), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean#L39) (StacksFrontier): “category\_of\_complexes”.
+- [`DGCategory.Comp`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DGCategory.lean#L252), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean#L40) (StacksFrontier): “category\_of\_complexes”.
+- [`DGCategory.instCategoryComp`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DGCategory.lean#L257), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean#L41) (StacksFrontier): “category\_of\_complexes”.
+- [`DGCategory.K`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DGCategory.lean#L345), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean#L43) (StacksFrontier): “homotopy\_category”.
+- [`DGCategory.HomotopyClass`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DGCategory.lean#L349), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean#L44) (StacksFrontier): “homotopy\_category”.
+- [`DGCategory.instCategoryK`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/DGCategory.lean#L364), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean#L45) (StacksFrontier): “homotopy\_category”.
 
 ## Tag 09P4, a definition
 
@@ -111,7 +111,7 @@ theorem dgFunctor_induces_functors (F : DGFunctor A B) :
 
 [Tag 09L9](https://stacks.math.columbia.edu/tag/09L9) in the Stacks Project.
 
-**`CochainComplex.homotopicToZero_iff_eq_d`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean#L60). The attribute's comment: “boundaries_homotopies”.
+**`CochainComplex.homotopicToZero_iff_eq_d`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean#L60). The attribute's comment: “boundaries\_homotopies”.
 
 > A closed homogeneous morphism is a boundary if and only if the associated morphism to the
 > shifted target is homotopic to zero.
@@ -124,7 +124,7 @@ public theorem homotopicToZero_iff_eq_d {A C : CochainComplex B ℤ} {n : ℤ}
         hm ▸ (dgCategory B).d g = f.1
 ```
 
-**`CochainComplex.complexesCategoryEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean#L115). The attribute's comment: “complexes_category”.
+**`CochainComplex.complexesCategoryEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean#L115). The attribute's comment: “complexes\_category”.
 
 > The canonical equivalence from the category of complexes of `CochainComplex.dgCategory B`
 > to the ordinary category of cochain complexes in `B`. It fixes objects and acts on morphisms by
@@ -138,7 +138,7 @@ public noncomputable def complexesCategoryEquivalence :
         HEq ((E.functor.map f).f i) (f.1.v i i (add_zero i))) }
 ```
 
-**`CochainComplex.homotopyCategoryHomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean#L135). The attribute's comment: “homotopy_category”. References: SGA 2 V (1.1), “more general”; SGA 4½ Etat 0 (1.3.3), “H⁰(Hom•(A”.
+**`CochainComplex.homotopyCategoryHomologyAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean#L135). The attribute's comment: “homotopy\_category”. References: SGA 2 V (1.1), “more general”; SGA 4½ Etat 0 (1.3.3), “H⁰(Hom•(A”.
 
 > The canonical identification of homotopy classes of maps of complexes with
 > degree-zero cohomology of the differential graded Hom.
@@ -151,7 +151,7 @@ public noncomputable def homotopyCategoryHomologyAddEquiv
       (CochainComplex.HomComplex A C).homology 0
 ```
 
-**`CochainComplex.homotopyCategoryHomologyAddEquiv_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean#L150). The attribute's comment: “homotopy_category”.
+**`CochainComplex.homotopyCategoryHomologyAddEquiv_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean#L150). The attribute's comment: “homotopy\_category”.
 
 > The canonical comparison carries a chain map to the cohomology class of its
 > degree-zero cochain.
@@ -164,7 +164,7 @@ public theorem homotopyCategoryHomologyAddEquiv_map
       (homologyAddEquiv A C 0).symm (CohomologyClass.mk (Cocycle.ofHom f))
 ```
 
-**`CochainComplex.homotopyCategoryEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean#L184). The attribute's comment: “homotopy_category”.
+**`CochainComplex.homotopyCategoryEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean#L184). The attribute's comment: “homotopy\_category”.
 
 > The homotopy category of the differential graded category of complexes is
 > equivalent to the usual homotopy category of complexes.
@@ -174,7 +174,7 @@ public noncomputable def homotopyCategoryEquivalence :
     HomotopyCategory B (.up ℤ) ≌ (dgCategory B).K
 ```
 
-**`CochainComplex.homotopyCategoryEquivalence_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean#L249). The attribute's comment: “homotopy_category”.
+**`CochainComplex.homotopyCategoryEquivalence_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean#L249). The attribute's comment: “homotopy\_category”.
 
 > The comparison equivalence is the identity on complexes.
 
@@ -184,7 +184,7 @@ public theorem homotopyCategoryEquivalence_obj (A : CochainComplex B ℤ) :
       ((HomotopyCategory.quotient B (.up ℤ)).obj A) = A
 ```
 
-**`CochainComplex.homotopyCategoryEquivalence_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean#L258). The attribute's comment: “homotopy_category”.
+**`CochainComplex.homotopyCategoryEquivalence_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexComparison.lean#L258). The attribute's comment: “homotopy\_category”.
 
 > On morphisms, the comparison sends the homotopy class of a chain map to
 > the corresponding degree-zero cocycle modulo boundaries.
@@ -214,7 +214,7 @@ instance homotopyCategoryEquivalence_isTriangulated :
     (homotopyCategoryEquivalence B).IsTriangulated
 ```
 
-**`CochainComplex.dgCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean#L58). The attribute's comment: “differential_graded_category_of_complexes”. References: SGA 2 V (1.1), “Hom^•(F,G) complex”; SGA 4 XVII (1.1.10), “(ii)”.
+**`CochainComplex.dgCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean#L58). The attribute's comment: “differential\_graded\_category\_of\_complexes”. References: SGA 2 V (1.1), “Hom^•(F,G) complex”; SGA 4 XVII (1.1.10), “(ii)”.
 
 > The differential graded category of cochain complexes in a preadditive category `B`. Its
 > degree-`n` morphisms `A ⟶ C` are the families `A.X i ⟶ C.X (i + n)`, the differential is
@@ -227,12 +227,12 @@ public def dgCategory : DGCategory ℤ
 
 Declarations registered for the tag:
 
-- [`DGCategory.d_d`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DGCategory.d_d#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean#L47) (StacksFrontier): “hom_differential”.
-- [`CochainComplex.HomComplex.Cocycle.equivHomShift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.HomComplex.Cocycle.equivHomShift#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean#L238) (StacksFrontier): “closed_shift”.
-- [`CochainComplex.HomComplex.Cocycle.equivHomShift_symm_apply`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.HomComplex.Cocycle.equivHomShift_symm_apply#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean#L239) (StacksFrontier): “closed_shift”.
-- [`CochainComplex.HomComplex.Cocycle.cochain_ofHom_homOf_eq_coe`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.HomComplex.Cocycle.cochain_ofHom_homOf_eq_coe#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean#L240) (StacksFrontier): “closed_shift”.
-- [`CochainComplex.HomComplex.Cocycle.rightShift_coe`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.HomComplex.Cocycle.rightShift_coe#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean#L241) (StacksFrontier): “closed_shift”.
-- [`DGCategory.leibniz`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DGCategory.leibniz#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexLeibniz.lean, line 30](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexLeibniz.lean#L30) (StacksFrontier): “composition_leibniz”.
+- [`DGCategory.d_d`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DGCategory.d_d#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/Basic.lean#L47) (StacksFrontier): “hom\_differential”.
+- [`CochainComplex.HomComplex.Cocycle.equivHomShift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.HomComplex.Cocycle.equivHomShift#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean#L238) (StacksFrontier): “closed\_shift”.
+- [`CochainComplex.HomComplex.Cocycle.equivHomShift_symm_apply`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.HomComplex.Cocycle.equivHomShift_symm_apply#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean#L239) (StacksFrontier): “closed\_shift”.
+- [`CochainComplex.HomComplex.Cocycle.cochain_ofHom_homOf_eq_coe`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.HomComplex.Cocycle.cochain_ofHom_homOf_eq_coe#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean#L240) (StacksFrontier): “closed\_shift”.
+- [`CochainComplex.HomComplex.Cocycle.rightShift_coe`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CochainComplex.HomComplex.Cocycle.rightShift_coe#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexDGCategory.lean#L241) (StacksFrontier): “closed\_shift”.
+- [`DGCategory.leibniz`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DGCategory.leibniz#doc) registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexLeibniz.lean, line 30](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/DifferentialGraded/CochainComplexLeibniz.lean#L30) (StacksFrontier): “composition\_leibniz”.
 
 ## Tag 09LB, a lemma
 
@@ -312,7 +312,7 @@ def homologyCoyonedaNatIso (n : ℤ) :
         coyoneda.obj (Opposite.op ((HomotopyCategory.quotient B (ComplexShape.up ℤ)).obj K))
 ```
 
-**`DifferentialGradedModule.homogeneousMapSubmodule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategory.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategory.lean#L67). The attribute's comment: “differential_graded_category_of_differential_graded_modules”.
+**`DifferentialGradedModule.homogeneousMapSubmodule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategory.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategory.lean#L67). The attribute's comment: “differential\_graded\_category\_of\_differential\_graded\_modules”.
 
 > A homogeneous right `A`-linear map of degree `n` between differential graded modules.
 
@@ -321,7 +321,7 @@ public def homogeneousMapSubmodule (L M : DifferentialGradedModule.{u, v, w} A)
     (n : ℤ) : Submodule R (L.M →ₗ[R] M.M)
 ```
 
-**`DifferentialGradedModule.dgCategoryData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategory.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategory.lean#L262). The attribute's comment: “differential_graded_category_of_differential_graded_modules”.
+**`DifferentialGradedModule.dgCategoryData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategory.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategory.lean#L262). The attribute's comment: “differential\_graded\_category\_of\_differential\_graded\_modules”.
 
 > The differential graded category of right differential graded modules over `A`.
 
@@ -330,7 +330,7 @@ public noncomputable def dgCategoryData :
     DGCategoryData A
 ```
 
-**`DifferentialGradedModule.homogeneousMapDifferential_eq_zero_iff_exists_hom_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryClosedMaps.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryClosedMaps.lean#L81). The attribute's comment: “closed_maps”.
+**`DifferentialGradedModule.homogeneousMapDifferential_eq_zero_iff_exists_hom_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryClosedMaps.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryClosedMaps.lean#L81). The attribute's comment: “closed\_maps”.
 
 > A homogeneous map is closed for the Hom differential if and only if it is a homomorphism
 > into the shifted target, with the same underlying linear map.
@@ -342,7 +342,7 @@ theorem homogeneousMapDifferential_eq_zero_iff_exists_hom_shift
       ∃ g : Hom L (shift M n), g.toFun = f.1
 ```
 
-**`DifferentialGradedModule.homotopic_zero_iff_exists_homogeneousMapDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryClosedMaps.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryClosedMaps.lean#L111). The attribute's comment: “boundaries_homotopies”.
+**`DifferentialGradedModule.homotopic_zero_iff_exists_homogeneousMapDifferential`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryClosedMaps.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryClosedMaps.lean#L111). The attribute's comment: “boundaries\_homotopies”.
 
 > A closed homogeneous map is a boundary exactly when the corresponding homomorphism into the
 > shifted target is homotopic to zero.
@@ -355,7 +355,7 @@ theorem homotopic_zero_iff_exists_homogeneousMapDifferential
       ∃ g : HomogeneousMap A L M (n - 1), (homogeneousMapDifferential A g).1 = f.1
 ```
 
-**`DifferentialGradedModule.dgCategoryCompEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryComp.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryComp.lean#L122). The attribute's comment: “category_of_complexes”.
+**`DifferentialGradedModule.dgCategoryCompEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryComp.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryComp.lean#L122). The attribute's comment: “category\_of\_complexes”.
 
 > The category of complexes of the differential graded category of differential graded modules
 > is canonically equivalent to the category of differential graded modules: the equivalence is the
@@ -369,7 +369,7 @@ noncomputable def dgCategoryCompEquivalence :
         HEq (E.functor.map f).toFun f.1.1) }
 ```
 
-**`DifferentialGradedModule.homotopyCategoryHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean#L109). The attribute's comment: “homotopy_category”.
+**`DifferentialGradedModule.homotopyCategoryHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean#L109). The attribute's comment: “homotopy\_category”.
 
 > Homotopy classes of homomorphisms of differential graded modules are canonically the
 > degree-zero cohomology classes of their differential graded Hom module.
@@ -380,7 +380,7 @@ noncomputable def homotopyCategoryHomEquiv (L M : DifferentialGradedModule A) :
       (dgCategory A).HomotopyClass L M)
 ```
 
-**`DifferentialGradedModule.homotopyCategoryHomEquiv_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean#L126). The attribute's comment: “homotopy_category”.
+**`DifferentialGradedModule.homotopyCategoryHomEquiv_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean#L126). The attribute's comment: “homotopy\_category”.
 
 > The canonical bijection sends a homomorphism to the cohomology class of the closed
 > homogeneous map with the same underlying linear map.
@@ -391,7 +391,7 @@ theorem homotopyCategoryHomEquiv_map (L M : DifferentialGradedModule A) (f : Hom
       homotopyCategoryHomEquiv A L M ((toHomotopyCategory A).map f) = Quotient.mk _ c
 ```
 
-**`DifferentialGradedModule.homotopyCategoryEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean#L134). The attribute's comment: “homotopy_category”.
+**`DifferentialGradedModule.homotopyCategoryEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean#L134). The attribute's comment: “homotopy\_category”.
 
 > The homotopy category of the differential graded category of differential graded modules is
 > canonically equivalent to the homotopy category of differential graded modules.
@@ -401,7 +401,7 @@ noncomputable def homotopyCategoryEquivalence :
     HomotopyCategory A ≌ (dgCategory A).K
 ```
 
-**`DifferentialGradedModule.homotopyCategoryEquivalence_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean#L159). The attribute's comment: “homotopy_category”.
+**`DifferentialGradedModule.homotopyCategoryEquivalence_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean#L159). The attribute's comment: “homotopy\_category”.
 
 > The canonical equivalence of homotopy categories is the identity on differential graded
 > modules.
@@ -411,7 +411,7 @@ theorem homotopyCategoryEquivalence_obj (L : DifferentialGradedModule A) :
     (homotopyCategoryEquivalence A).functor.obj ((toHomotopyCategory A).obj L) = L
 ```
 
-**`DifferentialGradedModule.homotopyCategoryEquivalence_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean#L166). The attribute's comment: “homotopy_category”.
+**`DifferentialGradedModule.homotopyCategoryEquivalence_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryHomotopyCategory.lean#L166). The attribute's comment: “homotopy\_category”.
 
 > The functor of the canonical equivalence acts on every morphism by the canonical
 > identification with degree-zero Hom cohomology.
@@ -509,10 +509,10 @@ Declarations registered for the tag:
 - [`DGCategory.id_comp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DGCategory.id_comp#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryComposition.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryComposition.lean#L46) (StacksFrontier): “composition”.
 - [`DGCategory.comp_id`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DGCategory.comp_id#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryComposition.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryComposition.lean#L47) (StacksFrontier): “composition”.
 - [`DGCategory.d_id`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DGCategory.d_id#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryComposition.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryComposition.lean#L48) (StacksFrontier): “composition”.
-- [`DifferentialGradedModule.homogeneousMapDifferential`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategory.lean#L113), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryDifferential.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryDifferential.lean#L36) (StacksFrontier): “hom_differential”.
-- [`DGCategory.d_add`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DGCategory.d_add#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryDifferential.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryDifferential.lean#L37) (StacksFrontier): “hom_differential”.
-- [`DGCategory.d_smul`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DGCategory.d_smul#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryDifferential.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryDifferential.lean#L38) (StacksFrontier): “hom_differential”.
-- [`DGCategory.d_d`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DGCategory.d_d#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryDifferential.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryDifferential.lean#L39) (StacksFrontier): “hom_differential”.
+- [`DifferentialGradedModule.homogeneousMapDifferential`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategory.lean#L113), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryDifferential.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryDifferential.lean#L36) (StacksFrontier): “hom\_differential”.
+- [`DGCategory.d_add`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DGCategory.d_add#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryDifferential.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryDifferential.lean#L37) (StacksFrontier): “hom\_differential”.
+- [`DGCategory.d_smul`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DGCategory.d_smul#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryDifferential.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryDifferential.lean#L38) (StacksFrontier): “hom\_differential”.
+- [`DGCategory.d_d`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DGCategory.d_d#doc) registered with `add_to_stacks` in [StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryDifferential.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DGCategoryDifferential.lean#L39) (StacksFrontier): “hom\_differential”.
 
 ## Tag 09LD, a lemma
 

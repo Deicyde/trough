@@ -52,7 +52,7 @@ def finiteFactorRestriction
             (Algebra.lmul F₁.middle C ((e b).1 * c))) }
 ```
 
-**`Stacks.Discriminant.IsTraceElement`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/TraceCondition.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/TraceCondition.lean#L197). The attribute's comment: “trace_element_property”.
+**`Stacks.Discriminant.IsTraceElement`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/TraceCondition.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/TraceCondition.lean#L197). The attribute's comment: “trace\_element\_property”.
 
 > **Stacks Project, Tag 0BT6.** A trace element is an element of the relative dualizing
 > module whose image in every finite direct factor, after an arbitrary Noetherian base change,
@@ -68,7 +68,7 @@ def IsTraceElement
     (τ : dualizingModule F) : Prop
 ```
 
-**`Stacks.Discriminant.isTraceElement_congr`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/TraceElement/Independence.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/TraceElement/Independence.lean#L224). The attribute's comment: “trace_element_property; independence of factorization”.
+**`Stacks.Discriminant.isTraceElement_congr`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/TraceElement/Independence.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/TraceElement/Independence.lean#L224). The attribute's comment: “trace\_element\_property; independence of factorization”.
 
 > **Stacks Project, Tag 0BT6.** The trace-element condition does not depend on the
 > finite-open factorization chosen to represent the relative dualizing module. The three test
@@ -127,7 +127,7 @@ theorem isTraceElement_finiteFlatTraceElement (A : Type u) (B : Type v)
 
 [Tag 0BT9](https://stacks.math.columbia.edu/tag/0BT9) in the Stacks Project.
 
-**`Stacks.Discriminant.isTraceElement_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/TraceElement/BaseChange.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/TraceElement/BaseChange.lean#L45). The attribute's comment: “trace_base_change”.
+**`Stacks.Discriminant.isTraceElement_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/TraceElement/BaseChange.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/TraceElement/BaseChange.lean#L45). The attribute's comment: “trace\_base\_change”.
 
 > **Stacks Project, Tag 0BT9.** The image of a trace element under the base-change map of
 > the relative dualizing module is a trace element over the new base.
@@ -145,7 +145,7 @@ theorem isTraceElement_baseChange
       (FiniteOpenFactorization.baseChange F A₁) (dualizingModule.baseChange F A₁ τ)
 ```
 
-**`Stacks.Discriminant.isTraceElement_of_isLocalization_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/TraceElement/BaseLocalization.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/TraceElement/BaseLocalization.lean#L175). The attribute's comment: “trace_base_localization”.
+**`Stacks.Discriminant.isTraceElement_of_isLocalization_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/TraceElement/BaseLocalization.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/TraceElement/BaseLocalization.lean#L175). The attribute's comment: “trace\_base\_localization”.
 
 > **Stacks Project, Tag 0BT9.** A trace element of the relative dualizing module over a
 > localization of the base remains a trace element over the original base, under the
@@ -177,7 +177,7 @@ theorem isTraceElement_of_isLocalization_away
       ((dualizingModule_equiv_of_isLocalization_away f FR FA).symm τ)
 ```
 
-**`Stacks.Discriminant.isTraceElement_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/TraceElement/ProductFactors.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/TraceElement/ProductFactors.lean#L96). The attribute's comment: “trace_product_factors”.
+**`Stacks.Discriminant.isTraceElement_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/TraceElement/ProductFactors.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/TraceElement/ProductFactors.lean#L96). The attribute's comment: “trace\_product\_factors”.
 
 > **Stacks Project, Tag 0BT9.** A trace element of the relative dualizing module of a
 > product restricts to a trace element on the first factor.
@@ -192,7 +192,7 @@ theorem isTraceElement_fst [Module.Flat A B]
     IsTraceElement.{u, v, y, s, t, r} FB ((dualizingModuleProdEquiv F FB FC τ).1)
 ```
 
-**`Stacks.Discriminant.isTraceElement_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/TraceElement/ProductFactors.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/TraceElement/ProductFactors.lean#L230). The attribute's comment: “trace_product_factors”.
+**`Stacks.Discriminant.isTraceElement_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/TraceElement/ProductFactors.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/TraceElement/ProductFactors.lean#L230). The attribute's comment: “trace\_product\_factors”.
 
 > **Stacks Project, Tag 0BT9.** A trace element of the relative dualizing module of a
 > product restricts to a trace element on the second factor.
@@ -207,7 +207,7 @@ theorem isTraceElement_snd [Module.Flat A C]
     IsTraceElement.{u, w, z, s, t, r} FC ((dualizingModuleProdEquiv F FB FC τ).2)
 ```
 
-**`Stacks.Discriminant.isTraceElement_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/TraceElement/TargetLocalization.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/TraceElement/TargetLocalization.lean#L260). The attribute's comment: “trace_algebra_localization”.
+**`Stacks.Discriminant.isTraceElement_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/TraceElement/TargetLocalization.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/TraceElement/TargetLocalization.lean#L260). The attribute's comment: “trace\_algebra\_localization”.
 
 > **Stacks Project, Tag 0BT9.** A trace element of the relative dualizing module of a flat
 > quasi-finite map of Noetherian rings remains a trace element after an away localization of the

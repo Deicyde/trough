@@ -145,7 +145,7 @@ public theorem finiteType_residueField_of_isClosed_singleton {A : Type u} [CommR
     Algebra.FiniteType A u₀.asIdeal.ResidueField
 ```
 
-**`Deformation.Artin.surjective_derivedFibre_neg_one_iff_injective_extOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean#L212). The attribute's comment: “condition (2) in degree -1 as injectivity of Ext¹(NL_{A/Λ}, k) → Ext¹(E, k)”.
+**`Deformation.Artin.surjective_derivedFibre_neg_one_iff_injective_extOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean#L212). The attribute's comment: “condition (2) in degree -1 as injectivity of Ext¹(NL\_\{A/Λ}, k) → Ext¹(E, k)”.
 
 > **Stacks 07YM, condition (2) in degree `-1`.** For a morphism `ξ : E ⟶ NL_{A/Λ}` of
 > `D⁻(A)` and a ring map `A ⟶ k` to a field, the map
@@ -172,7 +172,7 @@ public theorem surjective_derivedFibre_neg_one_iff_injective_extOne
           ξ ≫ α)
 ```
 
-**`Deformation.Artin.injective_derivedFibre_zero_iff_surjective_extZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean#L236). The attribute's comment: “condition (2) in degree 0 as surjectivity of Ext⁰(NL_{A/Λ}, k) → Ext⁰(E, k)”.
+**`Deformation.Artin.injective_derivedFibre_zero_iff_surjective_extZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersality.lean#L236). The attribute's comment: “condition (2) in degree 0 as surjectivity of Ext⁰(NL\_\{A/Λ}, k) → Ext⁰(E, k)”.
 
 > **Stacks 07YM, condition (2) in degree `0`.** For a morphism `ξ : E ⟶ NL_{A/Λ}` of
 > `D⁻(A)` and a ring map `A ⟶ k` to a field, the map `H^0(E ⊗ᴸ_A k) ⟶ H^0(NL_{A/Λ} ⊗ᴸ_A k)` is
@@ -334,7 +334,7 @@ public theorem injective_derivedTensorFibre_zero_of_isVersalAt [Mono baseMap]
             (ModuleCat.of A u₀.asIdeal.ResidueField))).map ξ))
 ```
 
-**`Deformation.Artin.bijective_comp_naiveCotangentToDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZeroConverse.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZeroConverse.lean#L343). The attribute's comment: “Ext^0_A(NL_{A/Lambda}, M) = Der_Lambda(A, M)”.
+**`Deformation.Artin.bijective_comp_naiveCotangentToDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZeroConverse.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityDegreeZeroConverse.lean#L343). The attribute's comment: “Ext^0\_A(NL\_\{A/Lambda}, M) = Der\_Lambda(A, M)”.
 
 > **`Ext⁰_A(NL_{A/Λ}, M) = Der_Λ(A, M)`.** Composing the augmentation
 > `NL_{A/Λ} ⟶ Ω_{A/Λ}[0]` with a module map `Ω_{A/Λ} ⟶ M` is a bijection onto the morphisms
@@ -760,7 +760,7 @@ public theorem exists_algHom_section_of_surjective_derivedTensorFibre_neg_one
     ∃ σ : A →ₐ[Λ] A', (algebraMap A' A).comp (σ : A →+* A') = RingHom.id A
 ```
 
-**`Deformation.ArtinianLocalAlgCat.isEssentialSurjection_powQuotientMap_of_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityPowQuotientEssential.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityPowQuotientEssential.lean#L68). The attribute's comment: “A'/(𝔭') ^ n ⟶ A/𝔭 ^ n is an essential surjection of 𝒞_Λ”.
+**`Deformation.ArtinianLocalAlgCat.isEssentialSurjection_powQuotientMap_of_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityPowQuotientEssential.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Obstruction/NaiveVersalityPowQuotientEssential.lean#L68). The attribute's comment: “A'/(𝔭') ^ n ⟶ A/𝔭 ^ n is an essential surjection of 𝒞\_Λ”.
 
 > **The essential surjection of [Stacks, Tag 07YM].** Let `Λ → A' → A → k` be a tower with `k`
 > a field and both maps onto `k` surjective, let `𝔭` and `𝔭'` be the two augmentation ideals and
@@ -1240,7 +1240,7 @@ public theorem IsLocalRing.maximalIdeal_quotient_pow_pow_eq_bot (p : Ideal R) [p
     (n : ℕ) [NeZero n] : IsLocalRing.maximalIdeal (R ⧸ p ^ n) ^ n = ⊥
 ```
 
-**`IsLocalRing.exists_isLocalHom_comp_mk_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean#L205). The attribute's comment: “σ : A → B' with 𝔪_{B'} ^ n = 0 factors through A/𝔭 ^ n”.
+**`IsLocalRing.exists_isLocalHom_comp_mk_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/RadicalMaximalQuotient.lean#L205). The attribute's comment: “σ : A → B' with 𝔪\_\{B'} ^ n = 0 factors through A/𝔭 ^ n”.
 
 > **The local factorization of [Stacks, Tag 07YM].** A ring map `σ : R → S` into a local
 > ring whose maximal ideal satisfies `𝔪_S ^ n = 0` factors through `R ⧸ p ^ n` for every ideal

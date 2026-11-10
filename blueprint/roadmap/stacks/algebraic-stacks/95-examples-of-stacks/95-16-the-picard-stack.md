@@ -83,7 +83,7 @@ theorem comp_assoc (hc : ModulePushforwardCoherence B S hS) {A C D E : PicardObj
     PicardHom.comp (PicardHom.comp m n) p = PicardHom.comp m (PicardHom.comp n p)
 ```
 
-**`AlgebraicGeometry.Space.picardCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean#L286). The attribute's comment: “the category Picardstack_{X/B}, conditional on the pseudofunctoriality of the direct images of Stacks 03LU that its identity already needs”.
+**`AlgebraicGeometry.Space.picardCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean#L286). The attribute's comment: “the category Picardstack\_\{X/B}, conditional on the pseudofunctoriality of the direct images of Stacks 03LU that its identity already needs”.
 
 > **Section 0372, the category `Picardstack_{X/B}`.**  The objects are the triples `(U, b, L)`,
 > the morphisms are the pairs `(f, g)` of a morphism of test schemes over the base and an
@@ -105,7 +105,7 @@ def picardProjection (hc : ModulePushforwardCoherence B S hS) (s : PicardSituati
     PicardObject s ⥤ s.SchemesOver
 ```
 
-**`AlgebraicGeometry.Space.picardCategoryData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean#L312). The attribute's comment: “a value of the specification of the category Picardstack_{X/B} with its projection, conditional on the pseudofunctoriality of the direct images of Stacks 03LU”.
+**`AlgebraicGeometry.Space.picardCategoryData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackCategory.lean#L312). The attribute's comment: “a value of the specification of the category Picardstack\_\{X/B} with its projection, conditional on the pseudofunctoriality of the direct images of Stacks 03LU”.
 
 > **Section 0372.**  The category `Picardstack_{X/B}` together with its projection satisfies
 > the specification `AlgebraicGeometry.Space.PicardCategoryData`: its hom-sets, identities,
@@ -120,7 +120,7 @@ def picardCategoryData (hc : ModulePushforwardCoherence B S hS)
 
 [Tag 04WN](https://stacks.math.columbia.edu/tag/04WN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.picardProjection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackFibered.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackFibered.lean#L385). The attribute's comment: “condition (1) of Stacks 02ZI only — the functor Picardstack_{X/B} ⟶ (Sch/S)_fppf is fibred in groupoids — and conditional on the category of Section 0372; conditions (2) and (3) need Stacks 04W8, which this development does not carry”.
+**`AlgebraicGeometry.Space.picardProjection_isFiberedInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackFibered.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackFibered.lean#L385). The attribute's comment: “condition (1) of Stacks 02ZI only — the functor Picardstack\_\{X/B} ⟶ (Sch/S)\_fppf is fibred in groupoids — and conditional on the category of Section 0372; conditions (2) and (3) need Stacks 04W8, which this development does not carry”.
 
 > **Condition (1) of Stacks 02ZI for the functor of Stacks 04WN.**  In Situation 0D25 the
 > projection `p : Picardstack_{X/B} ⟶ (Sch/S)_fppf` of Section 0372, which sends an object
@@ -152,7 +152,7 @@ theorem picardProjection_isFiberedInGroupoids (hc : ModulePushforwardCoherence B
       (cd.projection ⋙ CostructuredArrow.proj (schemeSpaceFunctor B S hS) s.base)
 ```
 
-**`AlgebraicGeometry.Space.picardBasedCategory_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackIsStack.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackIsStack.lean#L71). The attribute's comment: “the functor Picardstack_{X/B} ⟶ (Sch/S)_fppf is a stack in groupoids: all three conditions of Stacks 02ZI”.
+**`AlgebraicGeometry.Space.picardBasedCategory_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PicardStackIsStack.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PicardStackIsStack.lean#L71). The attribute's comment: “the functor Picardstack\_\{X/B} ⟶ (Sch/S)\_fppf is a stack in groupoids: all three conditions of Stacks 02ZI”.
 
 > **Stacks 04WN.**  In Situation 0D25, the functor `p : Picardstack_{X/B} ⟶ (Sch/S)_fppf` of
 > Section 0372, sending `(U, b, L)` to `U`, is a stack in groupoids over the big fppf site of `S`:

@@ -77,7 +77,7 @@ theorem chernCap_moduleDual (E : Modules.{u, u} D.site D.base D.base_mem X hX.1)
 
 [Tag 0ESE](https://stacks.math.columbia.edu/tag/0ESE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PrivateChern.chernCap_tensorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassTensorUnconditional.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassTensorUnconditional.lean#L64). The attribute's comment: “c₂ corrected to the degree-two part of ∏ (1 + x_i + y_j); the printed c₂ is false”.
+**`AlgebraicGeometry.Space.PrivateChern.chernCap_tensorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassTensorUnconditional.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassTensorUnconditional.lean#L64). The attribute's comment: “c₂ corrected to the degree-two part of ∏ (1 + x\_i + y\_j); the printed c₂ is false”.
 
 > **Stacks 0ESE.** For finite locally free `ℰ`, `ℱ` of ranks `r`, `s` on a good algebraic space
 > `X/B`:

@@ -47,7 +47,7 @@ public instance localizedModuleFunctor_isLocalization {R : Type u} [CommRing R]
 
 [Tag 0B0K](https://stacks.math.columbia.edu/tag/0B0K) in the Stacks Project.
 
-**`Stacks.Examples.localizedModuleFunctor_isLocalization`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/ModulesModuloTorsion.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/ModulesModuloTorsion.lean#L226). The attribute's comment: “the case S = nonzerodivisors: Mod_A modulo torsion is equivalent to Mod_{Q(A)}”.
+**`Stacks.Examples.localizedModuleFunctor_isLocalization`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/ModulesModuloTorsion.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/ModulesModuloTorsion.lean#L226). The attribute's comment: “the case S = nonzerodivisors: Mod\_A modulo torsion is equivalent to Mod\_\{Q(A)}”.
 
 > Localizing modules at `S` presents the category of modules over `Localization S` as the Serre
 > quotient by the modules whose elements are annihilated by members of `S`.

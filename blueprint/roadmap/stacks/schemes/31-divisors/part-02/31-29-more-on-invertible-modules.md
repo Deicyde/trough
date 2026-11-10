@@ -129,7 +129,7 @@ theorem subsingleton_picardGroup_open_affineSpace (R : Type u) [CommRing R] [IsD
 
 [Tag 0BXJ](https://stacks.math.columbia.edu/tag/0BXJ) in the Stacks Project.
 
-**`Stacks.PicardUFD.twistPicardHom_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpace.lean, line 1037](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpace.lean#L1037). The attribute's comment: “injectivity of m ↦ 𝒪(m), for 0 < n; the source states no restriction, but at n = 0 the map is the zero map into the trivial Picard group of ℙ⁰_R ≅ Spec R and is not injective”.
+**`Stacks.PicardUFD.twistPicardHom_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpace.lean, line 1037](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpace.lean#L1037). The attribute's comment: “injectivity of m ↦ 𝒪(m), for 0 < n; the source states no restriction, but at n = 0 the map is the zero map into the trivial Picard group of ℙ⁰\_R ≅ Spec R and is not injective”.
 
 > **The homomorphism `ℤ ⟶ Pic(ℙⁿ_R)`, `m ↦ 𝒪(m)`, is injective** for `R` a domain and
 > `0 < n`. A trivialization of `𝒪(m)` makes the transition unit `(T₀ / T₁) ^ m` a ratio of
@@ -161,7 +161,7 @@ theorem twistPicardHom_surjective_general :
     Function.Surjective (twistPicardHom R n)
 ```
 
-**`Stacks.PicardUFD.twistPicardAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean, line 693](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean#L693). The attribute's comment: “the isomorphism ℤ ≃+ Pic(ℙⁿ_R) carrying m to the class of 𝒪(m), for 0 < n”.
+**`Stacks.PicardUFD.twistPicardAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean, line 693](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean#L693). The attribute's comment: “the isomorphism ℤ ≃+ Pic(ℙⁿ\_R) carrying m to the class of 𝒪(m), for 0 < n”.
 
 > **Stacks Project, Tag 0BXJ.** The Picard group of `ℙⁿ_R` is `ℤ` for `R` a unique
 > factorization domain and `0 < n`, the isomorphism sending `m` to the class of `𝒪(m)`.
@@ -172,7 +172,7 @@ def twistPicardAddEquiv (hn : 0 < n) :
       (MvPolynomial.homogeneousSubmodule (Fin (n + 1)) R)).picardGroup
 ```
 
-**`Stacks.PicardUFD.not_injective_twistPicardHom_dim_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean, line 726](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean#L726). The attribute's comment: “the n = 0 boundary case: m ↦ 𝒪(m) is the zero map into the trivial group Pic(ℙ⁰_R) and is not injective, so the unrestricted source statement fails there”.
+**`Stacks.PicardUFD.not_injective_twistPicardHom_dim_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean, line 726](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardUFD/ProjectiveSpaceCocycle.lean#L726). The attribute's comment: “the n = 0 boundary case: m ↦ 𝒪(m) is the zero map into the trivial group Pic(ℙ⁰\_R) and is not injective, so the unrestricted source statement fails there”.
 
 > **The boundary case of Tag 0BXJ.** The source states no restriction on `n`, but at `n = 0`
 > the Picard group of `ℙ⁰_R` is trivial, so `m ↦ 𝒪(m)` is the zero map and is not injective.

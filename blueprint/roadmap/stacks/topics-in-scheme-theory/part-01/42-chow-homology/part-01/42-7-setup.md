@@ -44,7 +44,7 @@ structure ChowSituation
 abbrev fieldChowSituation (k : Type u) [Field k] : ChowSituation.{u}
 ```
 
-**`AlgebraicGeometry.fieldBaseDimensionFunction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Setup/Field.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Setup/Field.lean#L35). The attribute's comment: “field_base_dimension_function”.
+**`AlgebraicGeometry.fieldBaseDimensionFunction`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Setup/Field.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Setup/Field.lean#L35). The attribute's comment: “field\_base\_dimension\_function”.
 
 > The base dimension function on the spectrum of a field, taking every point to zero.
 

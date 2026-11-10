@@ -103,7 +103,7 @@ def toNormalizationIn (f : Y ⟶ X)
     Over.mk f ⟶ (normalizationIn B S hS E f hqc').obj
 ```
 
-**`AlgebraicGeometry.Space.normalizationInQcqsHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQcqs.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQcqs.lean#L150). The attribute's comment: “the normalization ν : X' = Spec_X(𝒪') ⟶ X of X in Y, for f qcqs”.
+**`AlgebraicGeometry.Space.normalizationInQcqsHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQcqs.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQcqs.lean#L150). The attribute's comment: “the normalization ν : X' = Spec\_X(𝒪') ⟶ X of X in Y, for f qcqs”.
 
 > **The normalization morphism `ν : X' ⟶ X` of `X` in `Y`** (Definition 0822), for a
 > quasi-compact quasi-separated `f : Y ⟶ X`.  It is affine
@@ -124,7 +124,7 @@ theorem isAffineHom_normalizationInQcqsHom :
     IsAffineHom B S hS (normalizationInQcqsHom B S hS f hfqc hfqs).hom
 ```
 
-**`AlgebraicGeometry.Space.normalizationInQcqsPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQcqs.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQcqs.lean#L163). The attribute's comment: “ν_* 𝒪_{X'} = 𝒪', i.e. X' = Spec_X(𝒪')”.
+**`AlgebraicGeometry.Space.normalizationInQcqsPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQcqs.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQcqs.lean#L163). The attribute's comment: “ν\_* 𝒪\_\{X'} = 𝒪', i.e. X' = Spec\_X(𝒪')”.
 
 > **`ν_* 𝒪_{X'} ≅ 𝒪'`**: the direct image of the structure sheaf of the normalization is the
 > integral closure of `𝒪_X` in `f_* 𝒪_Y`, as sheaves of `𝒪_X`-algebras.  With affineness of `ν`
@@ -242,7 +242,7 @@ theorem isRepresentable_normalizationIn {Y : AlgebraicSpaces B S hS} (f : Y ⟶ 
     (normalizationIn B S hS E f hqc').obj.left.1.IsRepresentable
 ```
 
-**`AlgebraicGeometry.Space.isRelativeNormalization_normalizationInQcqs_etaleBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQcqsComparison.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQcqsComparison.lean#L100). The attribute's comment: “part (1): for W ⟶ X étale, W ×_X X' is the normalization of W in W ×_X Y”.
+**`AlgebraicGeometry.Space.isRelativeNormalization_normalizationInQcqs_etaleBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQcqsComparison.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInQcqsComparison.lean#L100). The attribute's comment: “part (1): for W ⟶ X étale, W ×\_X X' is the normalization of W in W ×\_X Y”.
 
 > **Stacks 0ABP, part (1).**  Let `f : Y ⟶ X` be a quasi-compact and quasi-separated morphism
 > of algebraic spaces over `S`, with normalization `Y ⟶ X' ⟶ X` (Definition 0822), and let
@@ -486,7 +486,7 @@ theorem isRelativeNormalization_coproduct {I : Type v} [Finite I]
 
 [Tag 0A0Q](https://stacks.math.columbia.edu/tag/0A0Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIntegral_pushforwardAlgebra_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageSectionsGlobalFunctions.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageSectionsGlobalFunctions.lean#L344). The attribute's comment: “first sentence: f_*O_X is integral over O_Y; only universal closedness of f is used”. References: EGA II (7.3.11), “Integrality of Γ(X”.
+**`AlgebraicGeometry.Space.isIntegral_pushforwardAlgebra_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageSectionsGlobalFunctions.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageSectionsGlobalFunctions.lean#L344). The attribute's comment: “first sentence: f\_*O\_X is integral over O\_Y; only universal closedness of f is used”. References: EGA II (7.3.11), “Integrality of Γ(X”.
 
 > **Stacks 0A0Q, first assertion.**  For a universally closed morphism `f : X ⟶ Y` of
 > algebraic spaces over `S`, the direct image `f_*𝒪_X` is integral over `𝒪_Y`.
@@ -504,7 +504,7 @@ theorem isIntegral_pushforwardAlgebra_of_universallyClosed (f : X ⟶ Y)
     (pushforwardAlgebra B S hS (Over.mk f)).IsIntegral
 ```
 
-**`AlgebraicGeometry.Space.isIso_pushforwardAlgebraMap_toNormalizationInQcqsOver_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInUniversallyClosed.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInUniversallyClosed.lean#L118). The attribute's comment: “second sentence: the normalization X ⟶ Y' ⟶ Y of Y in X induces ν_*O_{Y'} ≅ f_*O_X, i.e. Y' = Spec_Y(f_*O_X) with the factorization of 081X”.
+**`AlgebraicGeometry.Space.isIso_pushforwardAlgebraMap_toNormalizationInQcqsOver_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInUniversallyClosed.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInUniversallyClosed.lean#L118). The attribute's comment: “second sentence: the normalization X ⟶ Y' ⟶ Y of Y in X induces ν\_*O\_\{Y'} ≅ f\_*O\_X, i.e. Y' = Spec\_Y(f\_*O\_X) with the factorization of 081X”.
 
 > **Stacks 0A0Q, second sentence: the normalization of `Y` in `X` is
 > `\underline{Spec}_Y(f_*𝒪_X)`.**  Let `f : X ⟶ Y` be a quasi-compact, quasi-separated and
@@ -523,7 +523,7 @@ theorem isIso_pushforwardAlgebraMap_toNormalizationInQcqsOver_of_universallyClos
     IsIso (pushforwardAlgebraMap B S hS (toNormalizationInQcqsOver f hfqc hfqs))
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_iso_normalizationInQcqs_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInUniversallyClosed.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInUniversallyClosed.lean#L133). The attribute's comment: “second sentence: the normalization of Y in X is, uniquely, the factorization X ⟶ Spec_Y(f_*O_X) ⟶ Y of 081X”.
+**`AlgebraicGeometry.Space.existsUnique_iso_normalizationInQcqs_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInUniversallyClosed.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationInUniversallyClosed.lean#L133). The attribute's comment: “second sentence: the normalization of Y in X is, uniquely, the factorization X ⟶ Spec\_Y(f\_*O\_X) ⟶ Y of 081X”.
 
 > **Stacks 0A0Q, second sentence, as an identification of factorizations.**  For a
 > quasi-compact, quasi-separated and universally closed `f : X ⟶ Y`, every factorization
@@ -540,7 +540,7 @@ theorem existsUnique_iso_normalizationInQcqs_of_universallyClosed
       toNormalizationInQcqsOver f hfqc hfqs ≫ k.hom = g
 ```
 
-**`AlgebraicGeometry.Space.isIso_integralClosureInclusion_pushforwardAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PushforwardStructureSheafIntegral.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PushforwardStructureSheafIntegral.lean#L266). The attribute's comment: “second assertion: the normalization of Y in X is the factorization through Spec_Y(f_*O_X), with the integrality of f_*O_X assumed rather than proved”.
+**`AlgebraicGeometry.Space.isIso_integralClosureInclusion_pushforwardAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PushforwardStructureSheafIntegral.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PushforwardStructureSheafIntegral.lean#L266). The attribute's comment: “second assertion: the normalization of Y in X is the factorization through Spec\_Y(f\_*O\_X), with the integrality of f\_*O\_X assumed rather than proved”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces whose direct image `f_*𝒪_X` is integral over
 > `𝒪_Y`, the inclusion of the integral closure `𝒪'` of `𝒪_Y` in `f_*𝒪_X` is an isomorphism of algebra

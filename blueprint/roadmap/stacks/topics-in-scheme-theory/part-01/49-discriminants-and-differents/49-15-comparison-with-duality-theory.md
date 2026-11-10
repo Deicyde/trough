@@ -14,7 +14,7 @@ Section 49.15 of the Stacks Project, [Tag 0DWM](https://stacks.math.columbia.edu
 
 [Tag 0BUL](https://stacks.math.columbia.edu/tag/0BUL) in the Stacks Project.
 
-**`Stacks.Duality.relativeDualizingModule_upperShriek_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/RelativeDualizingModuleShriek.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/RelativeDualizingModuleShriek.lean#L62). The attribute's comment: “the whole lemma: H^0(V, f^! O) = omega_{B/A} compatibly with restriction, the canonical isomorphism H^0(f^! O) = omega_{Y/X}, and H^0(f_new^! O) = omega_{Y/X}”.
+**`Stacks.Duality.relativeDualizingModule_upperShriek_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/RelativeDualizingModuleShriek.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/RelativeDualizingModuleShriek.lean#L62). The attribute's comment: “the whole lemma: H^0(V, f^! O) = omega\_\{B/A} compatibly with restriction, the canonical isomorphism H^0(f^! O) = omega\_\{Y/X}, and H^0(f\_new^! O) = omega\_\{Y/X}”.
 
 > **Stacks Project, Tag 0BUL.** (1) Let `S` be Noetherian, `f : X ⟶ Y` a locally quasi-finite
 > morphism of schemes separated and of finite type over `S` and `j` any compactification computing
@@ -60,7 +60,7 @@ theorem relativeDualizingModule_upperShriek_structureSheaf :
           D.sheaf = NormalizedOnOpens.newShriekStructureSheafZeroth c f 𝒦X 𝒦Y)
 ```
 
-**`Stacks.Duality.upperShriekRelativeDualizingModuleData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekRelativeDualizingModule.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekRelativeDualizingModule.lean#L268). The attribute's comment: “first assertion: H^0(V, f^! O) = omega_{B/A}, compatible with restriction”.
+**`Stacks.Duality.upperShriekRelativeDualizingModuleData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekRelativeDualizingModule.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekRelativeDualizingModule.lean#L268). The attribute's comment: “first assertion: H^0(V, f^! O) = omega\_\{B/A}, compatible with restriction”.
 
 > **Stacks Project, Tag 0BUL, first assertion.** Let `f : X ⟶ Y` be a quasi-finite morphism
 > of schemes separated and of finite type over a Noetherian scheme `S`, and `f^!` the upper shriek
@@ -74,7 +74,7 @@ def upperShriekRelativeDualizingModuleData (j : CompactificationOf (Over.mk f.le
     RelativeDualizingModuleData f.left
 ```
 
-**`Stacks.Duality.existsUnique_upperShriekRelativeDualizingComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekRelativeDualizingModule.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekRelativeDualizingModule.lean#L292). The attribute's comment: “first assertion: the canonical isomorphism H^0(f^! O) = omega_{Y/X}”.
+**`Stacks.Duality.existsUnique_upperShriekRelativeDualizingComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekRelativeDualizingModule.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekRelativeDualizingModule.lean#L292). The attribute's comment: “first assertion: the canonical isomorphism H^0(f^! O) = omega\_\{Y/X}”.
 
 > **Stacks Project, Tag 0BUL, first assertion (the canonical isomorphism).** The affine
 > identifications of `upperShriekRelativeDualizingModuleData` define a canonical isomorphism

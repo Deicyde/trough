@@ -14,7 +14,7 @@ Section 35.32 of the Stacks Project, [Tag 04QW](https://stacks.math.columbia.edu
 
 [Tag 04QX](https://stacks.math.columbia.edu/tag/04QX) in the Stacks Project.
 
-**`AlgebraicGeometry.targetIsLocallyNoetherian`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean#L91). The attribute's comment: “target_noetherian_property”.
+**`AlgebraicGeometry.targetIsLocallyNoetherian`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean#L91). The attribute's comment: “target\_noetherian\_property”.
 
 > **Stacks Project, Tag 04QX.** The property of a morphism of schemes that its target is
 > locally Noetherian.
@@ -23,7 +23,7 @@ Section 35.32 of the Stacks Project, [Tag 04QW](https://stacks.math.columbia.edu
 abbrev targetIsLocallyNoetherian : CategoryTheory.MorphismProperty Scheme.{u}
 ```
 
-**`AlgebraicGeometry.targetIsLocallyNoetherian_not_respectsRight_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean#L217). The attribute's comment: “target_noetherian_not_stable_under_etale_postcomposition”.
+**`AlgebraicGeometry.targetIsLocallyNoetherian_not_respectsRight_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean#L217). The attribute's comment: “target\_noetherian\_not\_stable\_under\_etale\_postcomposition”.
 
 > The property that the target is locally Noetherian is not stable under postcomposition
 > with an étale morphism.
@@ -38,7 +38,7 @@ theorem targetIsLocallyNoetherian_not_respectsRight_etale :
 
 [Tag 04QY](https://stacks.math.columbia.edu/tag/04QY) in the Stacks Project.
 
-**`AlgebraicGeometry.IsNoetherianOnSpecializations`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean#L97). The attribute's comment: “specialization_noetherian_property”.
+**`AlgebraicGeometry.IsNoetherianOnSpecializations`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean#L97). The attribute's comment: “specialization\_noetherian\_property”.
 
 > **Stacks Project, Tag 04QY.** Every specialization of a point in the image of a scheme
 > morphism has a Noetherian local ring on the target.
@@ -47,7 +47,7 @@ theorem targetIsLocallyNoetherian_not_respectsRight_etale :
 abbrev IsNoetherianOnSpecializations {X Y : Scheme.{u}} (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.isNoetherianOnSpecializations_isLocalAtTarget`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean#L156). The attribute's comment: “etale_local_target”.
+**`AlgebraicGeometry.isNoetherianOnSpecializations_isLocalAtTarget`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean#L156). The attribute's comment: “etale\_local\_target”.
 
 > The specialization-Noetherian property is local on the target for étale coverings.
 
@@ -58,7 +58,7 @@ instance isNoetherianOnSpecializations_isLocalAtTarget :
       Scheme.etalePrecoverage
 ```
 
-**`AlgebraicGeometry.isNoetherianOnSpecializations_isLocalAtSource`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean#L187). The attribute's comment: “etale_local_source”.
+**`AlgebraicGeometry.isNoetherianOnSpecializations_isLocalAtSource`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Noetherian.lean#L187). The attribute's comment: “etale\_local\_source”.
 
 > The specialization-Noetherian property is local on the source for étale coverings.
 
@@ -101,7 +101,7 @@ structure IsEtaleLocalOnSourceAndTarget (P : MorphismProperty Scheme.{u}) : Prop
 
 [Tag 04R0](https://stacks.math.columbia.edu/tag/04R0) in the Stacks Project.
 
-**`AlgebraicGeometry.IsEtaleLocalOnSourceAndTarget.of_comp_etale`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Basic.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Basic.lean#L76). The attribute's comment: “cancel_etale”.
+**`AlgebraicGeometry.IsEtaleLocalOnSourceAndTarget.of_comp_etale`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Basic.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Basic.lean#L76). The attribute's comment: “cancel\_etale”.
 
 > An étale morphism can be cancelled on the right of a composite for a property which is
 > étale local on the source and target.
@@ -113,7 +113,7 @@ lemma of_comp_etale {P : MorphismProperty Scheme.{u}}
     (hg : Etale g) (hfg : P (f ≫ g)) : P f
 ```
 
-**`AlgebraicGeometry.IsEtaleLocalOnSourceAndTarget.postcomp_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Basic.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Basic.lean#L91). The attribute's comment: “postcompose_etale”.
+**`AlgebraicGeometry.IsEtaleLocalOnSourceAndTarget.postcomp_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Basic.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Basic.lean#L91). The attribute's comment: “postcompose\_etale”.
 
 > A property that is étale local on the source and target is preserved by postcomposition
 > with an étale morphism.
@@ -124,7 +124,7 @@ theorem postcomp_of_etale (P : MorphismProperty Scheme.{u})
     (g : Y ⟶ Z) (hg : Etale g) : P (f ≫ g)
 ```
 
-**`AlgebraicGeometry.IsEtaleLocalOnSourceAndTarget.isLocalAtSource_etalePrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Basic.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Basic.lean#L109). The attribute's comment: “local_source”.
+**`AlgebraicGeometry.IsEtaleLocalOnSourceAndTarget.isLocalAtSource_etalePrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Basic.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Basic.lean#L109). The attribute's comment: “local\_source”.
 
 > A morphism property étale local on the source and target is étale local on the source.
 
@@ -134,7 +134,7 @@ theorem isLocalAtSource_etalePrecoverage (P : MorphismProperty Scheme.{u})
     P.IsLocalAtSource Scheme.etalePrecoverage
 ```
 
-**`AlgebraicGeometry.IsEtaleLocalOnSourceAndTarget.isLocalAtTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Basic.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Basic.lean#L142). The attribute's comment: “local_target”.
+**`AlgebraicGeometry.IsEtaleLocalOnSourceAndTarget.isLocalAtTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Basic.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Basic.lean#L142). The attribute's comment: “local\_target”.
 
 > A property of scheme morphisms that is étale local on the source and target is étale local
 > on the target.
@@ -251,7 +251,7 @@ theorem etale_isEtaleLocalOnSourceAndTarget :
     IsEtaleLocalOnSourceAndTarget (@Etale.{u} : MorphismProperty Scheme.{u})
 ```
 
-**`AlgebraicGeometry.LocallyOfFinitePresentation.isEtaleLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/FinitePresentationLocalAtSource.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/FinitePresentationLocalAtSource.lean#L82). The attribute's comment: “locally_finite_presentation”.
+**`AlgebraicGeometry.LocallyOfFinitePresentation.isEtaleLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/FinitePresentationLocalAtSource.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/FinitePresentationLocalAtSource.lean#L82). The attribute's comment: “locally\_finite\_presentation”.
 
 > Being a morphism of schemes locally of finite presentation is étale local on the source and
 > target.
@@ -283,7 +283,7 @@ theorem Flat.isEtaleLocalOnSourceAndTarget :
     IsEtaleLocalOnSourceAndTarget (@Flat : MorphismProperty Scheme.{u})
 ```
 
-**`AlgebraicGeometry.isEtaleLocalOnSourceAndTarget_gUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Properties.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Properties.lean#L523). The attribute's comment: “g_unramified”. References: EGA IV (17.3.2), “Remark 17.3.2(iii)”.
+**`AlgebraicGeometry.isEtaleLocalOnSourceAndTarget_gUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Properties.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/Properties.lean#L523). The attribute's comment: “g\_unramified”. References: EGA IV (17.3.2), “Remark 17.3.2(iii)”.
 
 > **Stacks Project, Tag 04R3, item (10).** Being a G-unramified morphism of schemes is étale
 > local on the source and target.

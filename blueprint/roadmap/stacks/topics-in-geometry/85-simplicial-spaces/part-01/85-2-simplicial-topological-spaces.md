@@ -300,7 +300,7 @@ noncomputable def pullbackComponentIso
 
 [Tag 09W0](https://stacks.math.columbia.edu/tag/09W0) in the Stacks Project.
 
-**`Stacks.Topology.Simplicial.levelFunctor_isContinuous_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ComponentSite.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/ComponentSite.lean#L53). The attribute's comment: “component_site_inclusion”.
+**`Stacks.Topology.Simplicial.levelFunctor_isContinuous_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ComponentSite.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/ComponentSite.lean#L53). The attribute's comment: “component\_site\_inclusion”.
 
 > **Stacks 09W0.** The inclusion of the open-set site of one component into the site of
 > simplicial opens is continuous.
@@ -312,7 +312,7 @@ theorem levelFunctor_isContinuous_mk (X : SimplicialObject TopCat.{u}) (n : ℕ)
       (SimplicialOpen.grothendieckTopology X)
 ```
 
-**`Stacks.Topology.Simplicial.levelFunctor_isCocontinuous_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ComponentSite.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/ComponentSite.lean#L62). The attribute's comment: “component_site_inclusion”.
+**`Stacks.Topology.Simplicial.levelFunctor_isCocontinuous_mk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ComponentSite.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/ComponentSite.lean#L62). The attribute's comment: “component\_site\_inclusion”.
 
 > **Stacks 09W0.** The inclusion of the open-set site of one component into the site of
 > simplicial opens is cocontinuous.
@@ -324,7 +324,7 @@ theorem levelFunctor_isCocontinuous_mk (X : SimplicialObject TopCat.{u}) (n : �
       (SimplicialOpen.grothendieckTopology X)
 ```
 
-**`Stacks.Topology.Simplicial.inverseImageIsoComponent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ComponentSite.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/ComponentSite.lean#L71). The attribute's comment: “inverse_image_is_restriction”.
+**`Stacks.Topology.Simplicial.inverseImageIsoComponent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/ComponentSite.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/ComponentSite.lean#L71). The attribute's comment: “inverse\_image\_is\_restriction”.
 
 > **Stacks 09W0.** Pulling a sheaf back to a simplicial component is, naturally in that
 > sheaf, its component in the sheaf-system description.
@@ -340,7 +340,7 @@ noncomputable def inverseImageIsoComponent
           (op (SimplexCategory.mk n))
 ```
 
-**`Stacks.Topology.Simplicial.componentLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/LowerShriek.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/LowerShriek.lean#L82). The attribute's comment: “sheaf_left_adjoint”.
+**`Stacks.Topology.Simplicial.componentLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/LowerShriek.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/LowerShriek.lean#L82). The attribute's comment: “sheaf\_left\_adjoint”.
 
 > The lower-shriek functor from sheaves of sets on one component to sheaves of sets on the
 > simplicial site.
@@ -352,7 +352,7 @@ noncomputable def componentLowerShriek
       Sheaf (SimplicialOpen.grothendieckTopology X) (Type u)
 ```
 
-**`Stacks.Topology.Simplicial.componentLowerShriek_adjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/LowerShriek.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/LowerShriek.lean#L94). The attribute's comment: “sheaf_left_adjoint”.
+**`Stacks.Topology.Simplicial.componentLowerShriek_adjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/LowerShriek.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/LowerShriek.lean#L94). The attribute's comment: “sheaf\_left\_adjoint”.
 
 > **Stacks 09W0.** Lower shriek is left adjoint to inverse image from the total
 > simplicial site to a component.
@@ -366,7 +366,7 @@ noncomputable def componentLowerShriek_adjunction
         (SimplicialOpen.grothendieckTopology X)
 ```
 
-**`Stacks.Topology.Simplicial.componentLowerShriek_preservesFiniteConnectedLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/LowerShriek.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/LowerShriek.lean#L106). The attribute's comment: “sheaf_left_adjoint_connected_limits”.
+**`Stacks.Topology.Simplicial.componentLowerShriek_preservesFiniteConnectedLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/LowerShriek.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/LowerShriek.lean#L106). The attribute's comment: “sheaf\_left\_adjoint\_connected\_limits”.
 
 > **Stacks 09W0.** Lower shriek from a simplicial component preserves finite
 > connected limits.
@@ -378,7 +378,7 @@ theorem componentLowerShriek_preservesFiniteConnectedLimits
     PreservesLimitsOfShape J (componentLowerShriek X n)
 ```
 
-**`Stacks.Topology.Simplicial.componentLowerShriekAb`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/LowerShriek.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/LowerShriek.lean#L120). The attribute's comment: “abelian_left_adjoint”.
+**`Stacks.Topology.Simplicial.componentLowerShriekAb`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/LowerShriek.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/LowerShriek.lean#L120). The attribute's comment: “abelian\_left\_adjoint”.
 
 > Lower shriek from sheaves of abelian groups on a component to sheaves of abelian groups on
 > the total simplicial site.
@@ -390,7 +390,7 @@ noncomputable def componentLowerShriekAb
       Sheaf (SimplicialOpen.grothendieckTopology X) Ab.{u}
 ```
 
-**`Stacks.Topology.Simplicial.componentLowerShriekAb_adjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/LowerShriek.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/LowerShriek.lean#L134). The attribute's comment: “abelian_left_adjoint”.
+**`Stacks.Topology.Simplicial.componentLowerShriekAb_adjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/LowerShriek.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/LowerShriek.lean#L134). The attribute's comment: “abelian\_left\_adjoint”.
 
 > **Stacks 09W0.** Abelian lower shriek is left adjoint to restriction from
 > the total simplicial site to a component.
@@ -405,7 +405,7 @@ noncomputable def componentLowerShriekAb_adjunction
         (SimplicialOpen.grothendieckTopology X)
 ```
 
-**`Stacks.Topology.Simplicial.componentLowerShriekAb_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/LowerShriek.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/LowerShriek.lean#L232). The attribute's comment: “abelian_left_adjoint_exact”.
+**`Stacks.Topology.Simplicial.componentLowerShriekAb_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/LowerShriek.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/LowerShriek.lean#L232). The attribute's comment: “abelian\_left\_adjoint\_exact”.
 
 > **Stacks 09W0.** Abelian lower shriek from a component of a simplicial space is exact.
 
@@ -424,7 +424,7 @@ theorem componentLowerShriekAb_exact
         (SimplicialOpen.grothendieckTopology X))
 ```
 
-**`Stacks.Topology.Simplicial.exactFunctor_componentLowerShriekAb`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/LowerShriek.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/LowerShriek.lean#L267). The attribute's comment: “abelian_left_adjoint_exact”.
+**`Stacks.Topology.Simplicial.exactFunctor_componentLowerShriekAb`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/LowerShriek.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/LowerShriek.lean#L267). The attribute's comment: “abelian\_left\_adjoint\_exact”.
 
 > **Stacks 09W0**, part (5): `g_{n!}` is exact.  This is `componentLowerShriekAb_exact` for
 > the registered functor `componentLowerShriekAb` and with no hypotheses: on the small site of
@@ -618,7 +618,7 @@ noncomputable def cohomologySpectralSequence :
       CohomologicalSpectralSequenceNat Ab.{w} 1
 ```
 
-**`Stacks.Topology.Simplicial.cohomologySpectralSequence_pageOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/CohomologySpectralSequence.lean, line 614](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/CohomologySpectralSequence.lean#L614). The attribute's comment: “the first page is H^q(X_p, F_p)”.
+**`Stacks.Topology.Simplicial.cohomologySpectralSequence_pageOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/CohomologySpectralSequence.lean, line 614](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/CohomologySpectralSequence.lean#L614). The attribute's comment: “the first page is H^q(X\_p, F\_p)”.
 
 > **Stacks 09W6.**  The first page of the spectral sequence of a simplicial topological space
 > is `E_1^{p,q} = H^q(X_p, F_p)`, the sheaf cohomology of the restriction of `F` to the space in
@@ -629,7 +629,7 @@ noncomputable def cohomologySpectralSequence_pageOneIso (q : ℕ) :
     pageOneFunctor.{u, w} X n q ≅ componentCohomologyFunctor.{u, w} X n q
 ```
 
-**`Stacks.Topology.Simplicial.cohomologySpectralSequence_abutment`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/CohomologySpectralSequenceAbutment.lean, line 1270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/CohomologySpectralSequenceAbutment.lean#L1270). The attribute's comment: “convergence to H^{p+q}(X_Zar, F), functorially in the abelian sheaf”.
+**`Stacks.Topology.Simplicial.cohomologySpectralSequence_abutment`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Simplicial/CohomologySpectralSequenceAbutment.lean, line 1270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Simplicial/CohomologySpectralSequenceAbutment.lean#L1270). The attribute's comment: “convergence to H^\{p+q}(X\_Zar, F), functorially in the abelian sheaf”.
 
 > **Stacks 09W6, the convergence.**  The spectral sequence of a simplicial topological space,
 > with first page `E_1^{p,q} = H^q(X_p, F_p)`, converges to `H^{p+q}(X_Zar, F)`, functorially in the

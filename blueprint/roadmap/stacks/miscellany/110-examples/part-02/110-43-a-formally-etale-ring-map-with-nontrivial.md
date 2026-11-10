@@ -14,7 +14,7 @@ Section 110.43 of the Stacks Project, [Tag 06E5](https://stacks.math.columbia.ed
 
 [Tag 06E6](https://stacks.math.columbia.edu/tag/06E6) in the Stacks Project.
 
-**`Stacks.Examples.exists_formallyEtale_surjective_mulKernel_ne_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/FormallyEtaleNontrivialCotangent.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/FormallyEtaleNontrivialCotangent.lean#L245). The attribute's comment: “the example: a formally étale surjection with Ker(J ⊗_A J → J²) ≠ 0”.
+**`Stacks.Examples.exists_formallyEtale_surjective_mulKernel_ne_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Algebra/FormallyEtaleNontrivialCotangent.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Algebra/FormallyEtaleNontrivialCotangent.lean#L245). The attribute's comment: “the example: a formally étale surjection with Ker(J ⊗\_A J → J²) ≠ 0”.
 
 > **Stacks 06E6**, the example. There is a formally étale surjective map of commutative rings
 > `A → B` whose kernel `J` has `Ker(J ⊗_A J → J²) ≠ 0`; equivalently, `J` is idempotent but not

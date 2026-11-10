@@ -14,7 +14,7 @@ Section 96.19 of the Stacks Project, [Tag 06X7](https://stacks.math.columbia.edu
 
 [Tag 06X8](https://stacks.math.columbia.edu/tag/06X8) in the Stacks Project.
 
-**`Stacks.RelativeCech.complex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/RelativeCechComplex.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/RelativeCechComplex.lean#L221). The attribute's comment: “presheaf_relative_cech_complex”.
+**`Stacks.RelativeCech.complex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/RelativeCechComplex.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/RelativeCechComplex.lean#L221). The attribute's comment: “presheaf\_relative\_cech\_complex”.
 
 > **Stacks 06X8.** The relative Čech complex of an abelian presheaf for a functor over a
 > base category: the alternating-coface complex of the relative Čech cosimplicial presheaf.
@@ -627,7 +627,7 @@ theorem exists_etaleCovering_fibre_lift_of_representable
           𝒴.val.p.IsHomLift k α
 ```
 
-**`AlgebraicGeometry.Stack.exists_fppfLocalLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FppfLocalLifts.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FppfLocalLifts.lean#L130). The attribute's comment: “fppf_local_lifts”.
+**`AlgebraicGeometry.Stack.exists_fppfLocalLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FppfLocalLifts.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/FppfLocalLifts.lean#L130). The attribute's comment: “fppf\_local\_lifts”.
 
 > Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of categories fibred in groupoids over the big fppf site of
 > `S` which is representable by algebraic spaces, and suppose that every algebraic space

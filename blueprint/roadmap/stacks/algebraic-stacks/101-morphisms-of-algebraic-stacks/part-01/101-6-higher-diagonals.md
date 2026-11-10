@@ -14,7 +14,7 @@ Section 101.6 of the Stacks Project, [Tag 04YX](https://stacks.math.columbia.edu
 
 [Tag 0CL0](https://stacks.math.columbia.edu/tag/0CL0) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRelativelyUnramified_relativeInertiaProjection_iff_isDM_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordRelativeInertiaConverse.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordRelativeInertiaConverse.lean#L356). The attribute's comment: “part (4): the relative inertia projection is unramified iff f is DM, both directions and with no hypothesis. The direction (b) implies (a) is Stacks 0457 and 045C at the packaged unramified property; the converse needs no pseudo-torsor, being an instance of isUnramified_of_isUnramified_pullbackSnd, because the shear identifies the self-fibre-product of a fibre of the relative diagonal with the base change of the relative automorphism presheaf the inertia projection is tested on”.
+**`AlgebraicGeometry.Stack.isRelativelyUnramified_relativeInertiaProjection_iff_isDM_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordRelativeInertiaConverse.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordRelativeInertiaConverse.lean#L356). The attribute's comment: “part (4): the relative inertia projection is unramified iff f is DM, both directions and with no hypothesis. The direction (b) implies (a) is Stacks 0457 and 045C at the packaged unramified property; the converse needs no pseudo-torsor, being an instance of isUnramified\_of\_isUnramified\_pullbackSnd, because the shear identifies the self-fibre-product of a fibre of the relative diagonal with the base change of the relative automorphism presheaf the inertia projection is tested on”.
 
 > **Stacks 0CL0, part (4).** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S`, the
 > relative inertia projection `π : I_{𝒳/𝒴} ⟶ 𝒳` is unramified, in the relative sense of
@@ -31,7 +31,7 @@ theorem isRelativelyUnramified_relativeInertiaProjection_iff_isDM_unconditional
     IsRelativelyUnramified B S hS (relativeInertiaProjection B S hS f).hom ↔ IsDM B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.isLocallyQuasiFinite_relativeInertiaProjection_iff_isQuasiDM_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordRelativeInertiaConverse.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordRelativeInertiaConverse.lean#L376). The attribute's comment: “part (5): the relative inertia projection is locally quasi-finite iff f is quasi-DM, both directions and with no hypothesis. The direction (b) implies (a) is Stacks 0457 and 045C at the packaged locally-quasi-finite property; the converse is an instance of isLocallyQuasiFinite_of_isLocallyQuasiFinite_pullbackSnd, the generic half of Stacks 0DSK, fed by the shear identification rather than by a pseudo-torsor”.
+**`AlgebraicGeometry.Stack.isLocallyQuasiFinite_relativeInertiaProjection_iff_isQuasiDM_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordRelativeInertiaConverse.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordRelativeInertiaConverse.lean#L376). The attribute's comment: “part (5): the relative inertia projection is locally quasi-finite iff f is quasi-DM, both directions and with no hypothesis. The direction (b) implies (a) is Stacks 0457 and 045C at the packaged locally-quasi-finite property; the converse is an instance of isLocallyQuasiFinite\_of\_isLocallyQuasiFinite\_pullbackSnd, the generic half of Stacks 0DSK, fed by the shear identification rather than by a pseudo-torsor”.
 
 > **Stacks 0CL0, part (5).** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S`, the
 > relative inertia projection `π : I_{𝒳/𝒴} ⟶ 𝒳` is locally quasi-finite, in the relative sense of
@@ -433,7 +433,7 @@ theorem isDM_iff_isUnramifiedRelative_diagonals (f : 𝒳 ⟶ 𝒴) :
           (relativeDiagonalAlgebraicStacks B S hS f)).hom)
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiDM_iff_isLocallyQuasiFinite_diagonals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiDMSecondDiagonal.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasiDMSecondDiagonal.lean#L54). The attribute's comment: “quasi_dm”.
+**`AlgebraicGeometry.Stack.isQuasiDM_iff_isLocallyQuasiFinite_diagonals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiDMSecondDiagonal.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasiDMSecondDiagonal.lean#L54). The attribute's comment: “quasi\_dm”.
 
 > A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` — with no representability
 > hypothesis — is quasi-DM, in the sense of Definition 04YW, if and only if its first relative
@@ -449,7 +449,7 @@ theorem isQuasiDM_iff_isLocallyQuasiFinite_diagonals (f : 𝒳 ⟶ 𝒴) :
           (relativeDiagonalAlgebraicStacks B S hS f)).hom)
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiSeparated_iff_isQuasiCompactMorphism_diagonals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedSecondDiagonal.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedSecondDiagonal.lean#L323). The attribute's comment: “quasi_separated”.
+**`AlgebraicGeometry.Stack.isQuasiSeparated_iff_isQuasiCompactMorphism_diagonals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedSecondDiagonal.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedSecondDiagonal.lean#L323). The attribute's comment: “quasi\_separated”.
 
 > **Stacks 04Z0, part (2).** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` — with no
 > representability hypothesis — is quasi-separated, in the sense of Definition 04YW, if and only if

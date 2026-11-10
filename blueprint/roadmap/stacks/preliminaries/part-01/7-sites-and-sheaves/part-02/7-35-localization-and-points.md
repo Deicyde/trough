@@ -14,7 +14,7 @@ Section 7.35 of the Stacks Project, [Tag 04EK](https://stacks.math.columbia.edu/
 
 [Tag 04H2](https://stacks.math.columbia.edu/tag/04H2) in the Stacks Project.
 
-**`CategoryTheory.GrothendieckTopology.Point.sheafFiberOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/LocalizedPoint.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/LocalizedPoint.lean#L107). References: SGA 4 IV (6.7), “point over (p,ξ), j_X”; SGA 4 IV (11.3.5), “partial”.
+**`CategoryTheory.GrothendieckTopology.Point.sheafFiberOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/LocalizedPoint.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/LocalizedPoint.lean#L107). References: SGA 4 IV (6.7), “point over (p,ξ), j\_X”; SGA 4 IV (11.3.5), “partial”.
 
 > **Stacks 04H2.** The point `q = Φ.over x` of the localized site `C/U` lies above the point
 > `Φ` of `C`: for every sheaf `F` on `C` the stalk of `F` at `Φ` agrees with the stalk of its
@@ -30,7 +30,7 @@ noncomputable def sheafFiberOverIso :
 
 [Tag 04H3](https://stacks.math.columbia.edu/tag/04H3) in the Stacks Project.
 
-**`CategoryTheory.FunctorToTypes.fromOverSubfunctor_injective`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/OverBijection.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/OverBijection.lean#L115). The attribute's comment: “injectivity of x ↦ q_x”.
+**`CategoryTheory.FunctorToTypes.fromOverSubfunctor_injective`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/OverBijection.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/OverBijection.lean#L115). The attribute's comment: “injectivity of x ↦ q\_x”.
 
 > **Stacks 04H3**, injectivity: distinct elements `x` of `u(U)` give distinct points `q_x` of
 > `C/U`, because `x` is recovered from `v_x` as the unique section over the final object `U/U`.
@@ -40,7 +40,7 @@ lemma fromOverSubfunctor_injective :
     Function.Injective (fun x : F.obj X => fromOverSubfunctor F x)
 ```
 
-**`CategoryTheory.FunctorToTypes.exists_eq_fromOverSubfunctor`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/OverBijection.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/OverBijection.lean#L127). The attribute's comment: “surjectivity of x ↦ q_x, from the cartesian squares v(V/U) = u(V) ×_{u(U)} v(U/U)”.
+**`CategoryTheory.FunctorToTypes.exists_eq_fromOverSubfunctor`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/OverBijection.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/OverBijection.lean#L127). The attribute's comment: “surjectivity of x ↦ q\_x, from the cartesian squares v(V/U) = u(V) ×\_\{u(U)} v(U/U)”.
 
 > **Stacks 04H3**, surjectivity: a subfunctor of `Over.forget U ⋙ u` whose sections over the
 > final object `U/U` form a singleton `{x}` and whose cartesian squares hold is `v_x`.  This is

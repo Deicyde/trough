@@ -473,7 +473,7 @@ theorem isFiniteType_rightDerived_of_isProper_of_isLocallyNoetherian {X Y : Sche
     (((Scheme.Modules.pushforward f).rightDerived d).obj F).IsFiniteType
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeFiniteType.isQuasicoherent_isFiniteType_rightDerived_of_isProper_of_forall_topologicalKrullDim_fiber_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/Unconditional.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/Unconditional.lean#L238). The attribute's comment: “both clauses at an ARBITRARY base, every d; the conclusion read as the 𝒪_Y-module R ᵈ f_* F, the source's 𝒪_X being a typo”.
+**`Stacks.AlgebraicGeometry.TopDegreeFiniteType.isQuasicoherent_isFiniteType_rightDerived_of_isProper_of_forall_topologicalKrullDim_fiber_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/Unconditional.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/Unconditional.lean#L238). The attribute's comment: “both clauses at an ARBITRARY base, every d; the conclusion read as the 𝒪\_Y-module R ᵈ f\_* F, the source's 𝒪\_X being a typo”.
 
 > **[Stacks, Tag 0EX4].** For `f : X ⟶ Y` proper all of whose fibres have dimension at most
 > `d`, and `F` a quasi-coherent `𝒪_X`-module of finite type, the `𝒪_Y`-module `R ᵈ f_* F` is
@@ -500,7 +500,7 @@ theorem isQuasicoherent_isFiniteType_rightDerived_of_isProper_of_forall_topologi
 
 [Tag 0EX5](https://stacks.math.columbia.edu/tag/0EX5) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.TopDegreeFiniteType.isFinitePresentation_rightDerived_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/FinitePresentationModelDischarge.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/FinitePresentationModelDischarge.lean#L220). The attribute's comment: “conclusion read as the 𝒪_Y-module R ᵈ f_* F, the source's 𝒪_X being a typo”. References: EGA III (2.4.1), “Clause (i), special case”.
+**`Stacks.AlgebraicGeometry.TopDegreeFiniteType.isFinitePresentation_rightDerived_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/FinitePresentationModelDischarge.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/FinitePresentationModelDischarge.lean#L220). The attribute's comment: “conclusion read as the 𝒪\_Y-module R ᵈ f\_* F, the source's 𝒪\_X being a typo”. References: EGA III (2.4.1), “Clause (i), special case”.
 
 > **[Stacks, Tag 0EX5].** Let `f : X ⟶ Y` be proper and of finite presentation with every
 > fibre of dimension at most `d`, and let `F` be an `𝒪_X`-module of finite presentation. Then the

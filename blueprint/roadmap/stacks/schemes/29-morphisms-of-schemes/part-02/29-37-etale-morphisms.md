@@ -14,7 +14,7 @@ Section 29.37 of the Stacks Project, [Tag 02GH](https://stacks.math.columbia.edu
 
 [Tag 02GI](https://stacks.math.columbia.edu/tag/02GI) in the Stacks Project.
 
-**`AlgebraicGeometry.EtaleAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/Defs.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/Defs.lean#L59). The attribute's comment: “etale_at_point”. References: SGA 1 IX (1.1).
+**`AlgebraicGeometry.EtaleAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/Defs.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/Defs.lean#L59). The attribute's comment: “etale\_at\_point”. References: SGA 1 IX (1.1).
 
 > A morphism of schemes is étale at `x` if it induces an étale map on the
 > coordinate rings of some affine open neighbourhood of `x` and some affine
@@ -24,7 +24,7 @@ Section 29.37 of the Stacks Project, [Tag 02GH](https://stacks.math.columbia.edu
 public abbrev EtaleAt (f : X ⟶ S) (x : X) : Prop
 ```
 
-**`AlgebraicGeometry.IsStandardEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/StandardEtale.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/StandardEtale.lean#L59). The attribute's comment: “standard_etale_morphism”.
+**`AlgebraicGeometry.IsStandardEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/StandardEtale.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/StandardEtale.lean#L59). The attribute's comment: “standard\_etale\_morphism”.
 
 > A morphism of affine schemes is *standard étale* if its map on global sections is a
 > standard étale ring map.
@@ -36,7 +36,7 @@ public abbrev IsStandardEtale {X S : Scheme.{u}} [IsAffine X] [IsAffine S]
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Etale`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Etale#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/Defs.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/Defs.lean#L53) (StacksFrontier): “etale_morphism”. References: EGA IV (17.3.1); SGA 1 I (4.1); SGA 3 XI (1.1); SGA 3 XI (1.6); SGA 4 VII (1.1).
+- [`AlgebraicGeometry.Etale`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Etale#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/Defs.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/Defs.lean#L53) (StacksFrontier): “etale\_morphism”. References: EGA IV (17.3.1); SGA 1 I (4.1); SGA 3 XI (1.1); SGA 3 XI (1.6); SGA 4 VII (1.1).
 
 ## Tag 02GJ, a lemma
 
@@ -249,7 +249,7 @@ lemma flat_of_etale {X S : Scheme.{u}} (f : X ⟶ S) [Etale f] : Flat f
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.UniversallyOpen.of_flat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.UniversallyOpen.of_flat#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/Open.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/Open.lean#L36) (StacksFrontier): “a flat morphism locally of finite presentation is universally open”. References: EGA IV (1.10.4), “b) ⇒ a), special case”; EGA IV (11.3.1), “special case”; EGA IV (14.4.10), “special case”; EGA IV (15.2.1); EGA IV (15.2.4), “(ii), special case”; EGA IV (18.2.7), “partial”; EGA IV (2.4.6); EGA IV (2.4.7), “more general”; EGA IV (4.4.1), “special case”; SGA 1 IV (6.6), “F = O_X”; SGA 1 VIII (4.9), “more general”; SGA 3 V (10.1.1), “more general”; SGA 3 V (4.1.1), “flat and fp implies open”; SGA 3 VIA (2.5.4), “Final implication”; SGA 3 VIB (3.11), “more general”; SGA 3 VIB (4.3); SGA 3 VIB (7.5), “f|_V is an open morphism”; SGA 3 X (5.4), “partial”; SGA 3 XVI (2.1), “more general”; SGA 6 VIII (1.3), “more general”.
+- [`AlgebraicGeometry.UniversallyOpen.of_flat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.UniversallyOpen.of_flat#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/Open.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/Open.lean#L36) (StacksFrontier): “a flat morphism locally of finite presentation is universally open”. References: EGA IV (1.10.4), “b) ⇒ a), special case”; EGA IV (11.3.1), “special case”; EGA IV (14.4.10), “special case”; EGA IV (15.2.1); EGA IV (15.2.4), “(ii), special case”; EGA IV (18.2.7), “partial”; EGA IV (2.4.6); EGA IV (2.4.7), “more general”; EGA IV (4.4.1), “special case”; SGA 1 IV (6.6), “F = O\_X”; SGA 1 VIII (4.9), “more general”; SGA 3 V (10.1.1), “more general”; SGA 3 V (4.1.1), “flat and fp implies open”; SGA 3 VIA (2.5.4), “Final implication”; SGA 3 VIB (3.11), “more general”; SGA 3 VIB (4.3); SGA 3 VIB (7.5), “f|\_V is an open morphism”; SGA 3 X (5.4), “partial”; SGA 3 XVI (2.1), “more general”; SGA 6 VIII (1.3), “more general”.
 - [`AlgebraicGeometry.Scheme.Hom.isOpenMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.isOpenMap#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/Open.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/Open.lean#L58) (StacksFrontier): “a universally open morphism is open on the underlying spaces”.
 
 ## Tag 02GT, a lemma

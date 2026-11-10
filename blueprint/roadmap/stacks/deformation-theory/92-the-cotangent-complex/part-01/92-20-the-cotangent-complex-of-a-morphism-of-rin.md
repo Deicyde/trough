@@ -14,7 +14,7 @@ Section 92.20 of the Stacks Project, [Tag 08UT](https://stacks.math.columbia.edu
 
 [Tag 08UU](https://stacks.math.columbia.edu/tag/08UU) in the Stacks Project.
 
-**`Stacks.Sheaves.RingedSpaceCotangent.cotangentComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedSpace.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedSpace.lean#L90). The attribute's comment: “the complex L_f”.
+**`Stacks.Sheaves.RingedSpaceCotangent.cotangentComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedSpace.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedSpace.lean#L90). The attribute's comment: “the complex L\_f”.
 
 > The cotangent complex `L_{X/S}` of a morphism of ringed spaces `f : X ⟶ S`: the cotangent
 > complex of the morphism of sheaves of commutative rings `f⁻¹𝒪_S ⟶ 𝒪_X` on the site of open
@@ -25,7 +25,7 @@ noncomputable def cotangentComplex (f : X ⟶ S) :
     CochainComplex (SheafOfModules.{u} (structureSheafRing X)) ℤ
 ```
 
-**`Stacks.Sheaves.RingedSpaceCotangent.cotangentComplexDerived`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedSpace.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedSpace.lean#L103). The attribute's comment: “the object L_f of the derived category of O_X-modules”.
+**`Stacks.Sheaves.RingedSpaceCotangent.cotangentComplexDerived`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedSpace.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedSpace.lean#L103). The attribute's comment: “the object L\_f of the derived category of O\_X-modules”.
 
 > `L_{X/S}` regarded as an object of the derived category of sheaves of `𝒪_X`-modules.
 
@@ -66,7 +66,7 @@ theorem baseStructureMap_comp (f : X ⟶ Y) (g : Y ⟶ Z) :
     baseStructureMap f g ≫ inverseImageStructureMap f = inverseImageStructureMap (f ≫ g)
 ```
 
-**`Stacks.Sheaves.RingedSpaceCotangent.cotangentChangeOfBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceFundamentalTriangle.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceFundamentalTriangle.lean#L221). The attribute's comment: “the second displayed arrow L_{X/Z} ⟶ L_{X/Y}, unconditionally. Distinguishedness of the triangle is not claimed by this declaration”.
+**`Stacks.Sheaves.RingedSpaceCotangent.cotangentChangeOfBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceFundamentalTriangle.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceFundamentalTriangle.lean#L221). The attribute's comment: “the second displayed arrow L\_\{X/Z} ⟶ L\_\{X/Y}, unconditionally. Distinguishedness of the triangle is not claimed by this declaration”.
 
 > **Stacks Project, Tag 08T4**, the second displayed arrow `L_{X/Z} ⟶ L_{X/Y}`: the
 > change-of-base-ring map of Tag 08SZ for the tower `(g ∘ f)⁻¹𝒪_Z ⟶ f⁻¹𝒪_Y ⟶ 𝒪_X`.
@@ -77,7 +77,7 @@ def cotangentChangeOfBase (f : X ⟶ Y) (g : Y ⟶ Z) :
       cotangentComplex f
 ```
 
-**`Stacks.Sheaves.RingedSpaceCotangent.exists_distTriang_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceFundamentalTriangle.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceFundamentalTriangle.lean#L285). The attribute's comment: “the triangle with FIRST VERTEX THE DEGREEWISE base change L_{f⁻¹O_Y/(g∘f)⁻¹O_Z} ⊗_{f⁻¹O_Y} O_X, not Lf^* L_{Y/Z}, and under the ONE carried hypothesis of Tag 08SZ: the short exact sequence `S`/`hS`, the sheaf-level analogue of Tag 08SD, absent from this library. See the docstring above”.
+**`Stacks.Sheaves.RingedSpaceCotangent.exists_distTriang_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceFundamentalTriangle.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceFundamentalTriangle.lean#L285). The attribute's comment: “the triangle with FIRST VERTEX THE DEGREEWISE base change L\_\{f⁻¹O\_Y/(g∘f)⁻¹O\_Z} ⊗\_\{f⁻¹O\_Y} O\_X, not Lf^* L\_\{Y/Z}, and under the ONE carried hypothesis of Tag 08SZ: the short exact sequence `S`/`hS`, the sheaf-level analogue of Tag 08SD, absent from this library. See the docstring above”.
 
 > **Stacks Project, Tag 08T4, under one carried hypothesis.** For morphisms of ringed spaces
 > `f : X ⟶ Y` and `g : Y ⟶ Z` the triangle
@@ -107,7 +107,7 @@ theorem exists_distTriang_of_shortExact (f : X ⟶ Y) (g : Y ⟶ Z)
         distTriang (DerivedCategory (structureModules X))
 ```
 
-**`Stacks.Sheaves.RingedSpaceCotangent.exists_distTriang_degreewisePullback_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceFundamentalTriangle.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceFundamentalTriangle.lean#L325). The attribute's comment: “the triangle with first vertex the DEGREEWISE pullback f^* L_{Y/Z}, not Lf^* L_{Y/Z}; the two agree in D(O_X) exactly when L_{Y/Z} is K-flat, which is NOT proved here. TWO carried hypotheses: `e` is Tag 08SV for this tower, `S`/`hS` is what Tag 08SZ carries. See the docstring above and the module documentation”.
+**`Stacks.Sheaves.RingedSpaceCotangent.exists_distTriang_degreewisePullback_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceFundamentalTriangle.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceFundamentalTriangle.lean#L325). The attribute's comment: “the triangle with first vertex the DEGREEWISE pullback f^* L\_\{Y/Z}, not Lf^* L\_\{Y/Z}; the two agree in D(O\_X) exactly when L\_\{Y/Z} is K-flat, which is NOT proved here. TWO carried hypotheses: `e` is Tag 08SV for this tower, `S`/`hS` is what Tag 08SZ carries. See the docstring above and the module documentation”.
 
 > **Stacks Project, Tag 08T4, under two carried hypotheses.** For morphisms of ringed spaces
 > `f : X ⟶ Y` and `g : Y ⟶ Z` the triangle
@@ -141,7 +141,7 @@ theorem exists_distTriang_degreewisePullback_of_shortExact (f : X ⟶ Y) (g : Y 
         distTriang (DerivedCategory (structureModules X))
 ```
 
-**`Stacks.Sheaves.RingedSpaceCotangent.sheafPullbackCompIso_hom_app_comp_inverseImageStructureMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceTransitivityTriangle.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceTransitivityTriangle.lean#L133). The attribute's comment: “the tower (g ∘ f)⁻¹O_Z = f⁻¹g⁻¹O_Z ⟶ f⁻¹O_Y ⟶ O_X of the proof: the structure map of g ∘ f is the composite of the tower”.
+**`Stacks.Sheaves.RingedSpaceCotangent.sheafPullbackCompIso_hom_app_comp_inverseImageStructureMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceTransitivityTriangle.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceTransitivityTriangle.lean#L133). The attribute's comment: “the tower (g ∘ f)⁻¹O\_Z = f⁻¹g⁻¹O\_Z ⟶ f⁻¹O\_Y ⟶ O\_X of the proof: the structure map of g ∘ f is the composite of the tower”.
 
 > The structure map of `g ∘ f` is the structure map of `g` pulled back along `f` followed by
 > the structure map of `f`, across `(g ∘ f)⁻¹𝒪_Z ≅ f⁻¹g⁻¹𝒪_Z` (Tag 008I).
@@ -154,7 +154,7 @@ theorem sheafPullbackCompIso_hom_app_comp_inverseImageStructureMap (f : X ⟶ Y)
       inverseImageStructureMap (f ≫ g)
 ```
 
-**`Stacks.Sheaves.RingedSpaceCotangent.transitivityUnit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceTransitivityTriangle.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceTransitivityTriangle.lean#L330). The attribute's comment: “the canonical first arrow Lf^* L_{Y/Z} ⟶ L_{X/Z} of the triangle”.
+**`Stacks.Sheaves.RingedSpaceCotangent.transitivityUnit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceTransitivityTriangle.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceTransitivityTriangle.lean#L330). The attribute's comment: “the canonical first arrow Lf^* L\_\{Y/Z} ⟶ L\_\{X/Z} of the triangle”.
 
 > The first arrow `Lf^* L_{Y/Z} ⟶ L_{X/Z}` of the transitivity triangle: the first arrow of
 > the triangle of Tag 08V1 for the presented morphisms of ringed topoi, read through
@@ -166,7 +166,7 @@ def transitivityUnit (f : X ⟶ Y) (g : Y ⟶ Z) :
         (cotangentComplexDerived g) ⟶ cotangentComplexDerived (f ≫ g)
 ```
 
-**`Stacks.Sheaves.RingedSpaceCotangent.transitivityCounit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceTransitivityTriangle.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceTransitivityTriangle.lean#L342). The attribute's comment: “the canonical second arrow L_{X/Z} ⟶ L_{X/Y} of the triangle”.
+**`Stacks.Sheaves.RingedSpaceCotangent.transitivityCounit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceTransitivityTriangle.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SheavesOfRings/RingedSpaceTransitivityTriangle.lean#L342). The attribute's comment: “the canonical second arrow L\_\{X/Z} ⟶ L\_\{X/Y} of the triangle”.
 
 > The second arrow `L_{X/Z} ⟶ L_{X/Y}` of the transitivity triangle: the second arrow of the
 > triangle of Tag 08V1 for the presented morphisms of ringed topoi, read through

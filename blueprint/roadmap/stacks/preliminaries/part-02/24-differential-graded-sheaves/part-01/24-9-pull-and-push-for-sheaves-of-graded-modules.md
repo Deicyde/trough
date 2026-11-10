@@ -14,7 +14,7 @@ Section 24.9 of the Stacks Project, [Tag 0FR7](https://stacks.math.columbia.edu/
 
 [Tag 0FR7](https://stacks.math.columbia.edu/tag/0FR7) in the Stacks Project.
 
-**`SheafOfModules.GradedModule.semilinearHomOfDegreeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModulePullback.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModulePullback.lean#L442). The attribute's comment: “f_*M corepresents the φ-semilinear homomorphisms into M homogeneous of degree n, the morphisms of the graded category Mod^gr”.
+**`SheafOfModules.GradedModule.semilinearHomOfDegreeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModulePullback.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModulePullback.lean#L442). The attribute's comment: “f\_*M corepresents the φ-semilinear homomorphisms into M homogeneous of degree n, the morphisms of the graded category Mod^gr”.
 
 > **`f_*M` corepresents the `φ`-semilinear homomorphisms into `M` homogeneous of degree `n`**:
 > such a homomorphism out of `N` is exactly a homomorphism `N ⟶ f_*M` of right graded `B`-modules
@@ -26,7 +26,7 @@ noncomputable def semilinearHomOfDegreeEquiv (N : GradedModule.{t, a', m} B)
     SemilinearHomOfDegree φ N M n ≃ GradedHomOfDegree N (pushforwardObj φ M) n
 ```
 
-**`SheafOfModules.GradedModule.pushforwardObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedPushforward.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedPushforward.lean#L187). The attribute's comment: “the direct image f_*M of a graded module, with multiplication f_*μ ∘ (id, φ)”.
+**`SheafOfModules.GradedModule.pushforwardObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedPushforward.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedPushforward.lean#L187). The attribute's comment: “the direct image f\_*M of a graded module, with multiplication f\_*μ ∘ (id, φ)”.
 
 > The direct image `f_*M` of a right graded `A`-module along a morphism of ringed sites and a
 > homomorphism `φ : B ⟶ f_*A` of sheaves of graded algebras: its degree-`n` piece is the direct
@@ -49,7 +49,7 @@ noncomputable def pushforwardMap (φ : GradedAlgebra.SemilinearHom u σ B A)
     pushforwardObj φ M ⟶ pushforwardObj φ N
 ```
 
-**`SheafOfModules.GradedModule.pushforwardFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedPushforward.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedPushforward.lean#L244). The attribute's comment: “the functor f_* : Mod(A) ⥤ Mod(B)”.
+**`SheafOfModules.GradedModule.pushforwardFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedPushforward.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedPushforward.lean#L244). The attribute's comment: “the functor f\_* : Mod(A) ⥤ Mod(B)”.
 
 > The direct image functor `f_* : Mod(A) ⥤ Mod(B)` on sheaves of graded modules.
 
@@ -58,7 +58,7 @@ noncomputable def pushforwardFunctor (φ : GradedAlgebra.SemilinearHom u σ B A)
     GradedModule.{t, a, m} A ⥤ GradedModule.{t, a', m} B
 ```
 
-**`SheafOfModules.GradedModule.pushforwardHomOfDegree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedPushforward.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedPushforward.lean#L273). The attribute's comment: “f_* as a functor of graded categories, on homogeneous morphisms of degree n”.
+**`SheafOfModules.GradedModule.pushforwardHomOfDegree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedPushforward.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedPushforward.lean#L273). The attribute's comment: “f\_* as a functor of graded categories, on homogeneous morphisms of degree n”.
 
 > The direct image of a homomorphism of right graded `A`-modules homogeneous of degree `n`:
 > the degreewise direct image again, which is homogeneous of degree `n`. This is the action on
@@ -71,7 +71,7 @@ noncomputable def pushforwardHomOfDegree (φ : GradedAlgebra.SemilinearHom u σ 
     GradedHomOfDegree (pushforwardObj φ M) (pushforwardObj φ L) n
 ```
 
-**`SheafOfModules.GradedModule.semilinearHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedPushforward.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedPushforward.lean#L350). The attribute's comment: “f_*M corepresents the φ-semilinear homomorphisms into M”.
+**`SheafOfModules.GradedModule.semilinearHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedPushforward.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedPushforward.lean#L350). The attribute's comment: “f\_*M corepresents the φ-semilinear homomorphisms into M”.
 
 > **A `φ`-semilinear homomorphism `P ⟶ M` is exactly a homomorphism `P ⟶ f_*M` of right graded
 > `B`-modules.**
@@ -86,7 +86,7 @@ noncomputable def semilinearHomEquiv (φ : GradedAlgebra.SemilinearHom u σ B A)
 
 [Tag 0FR8](https://stacks.math.columbia.edu/tag/0FR8) in the Stacks Project.
 
-**`SheafOfModules.GradedModule.pullbackHomOfDegreeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModulePullbackConstruction.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModulePullbackConstruction.lean#L217). The attribute's comment: “Hom_{Mod^gr(B)}(N, f_*M) = Hom_{Mod^gr(A)}(f^*N, M), in every homogeneous degree, for the pullback f^* of sheaves of graded modules obtained as the left adjoint of the direct image”.
+**`SheafOfModules.GradedModule.pullbackHomOfDegreeEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModulePullbackConstruction.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedModulePullbackConstruction.lean#L217). The attribute's comment: “Hom\_\{Mod^gr(B)}(N, f\_*M) = Hom\_\{Mod^gr(A)}(f^*N, M), in every homogeneous degree, for the pullback f^* of sheaves of graded modules obtained as the left adjoint of the direct image”.
 
 > **Tag 0FR8**: for a morphism of ringed sites `f`, a sheaf of graded `R`-algebras `A` on the
 > source, a sheaf of graded `R'`-algebras `B` on the target and a homomorphism `φ : B ⟶ f_*A` of

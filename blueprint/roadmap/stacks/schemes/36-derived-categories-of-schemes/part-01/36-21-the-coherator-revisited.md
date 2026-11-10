@@ -250,7 +250,7 @@ theorem isZero_cohomology_of_isDerivedLimit_single_of_isAffineOpen (X : Scheme.{
       ((derivedSectionsOverObject (schemeOpensRingedSite X) U).obj L))
 ```
 
-**`Stacks.Duality.Coherator.exists_isGE_isLE_coherator_obj_of_isDerivedLimit_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitBounded.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitBounded.lean#L185). The attribute's comment: “the conclusion that the R lim in D_QCoh(𝒪_X), i.e. DQ_X(R lim 𝓕ₙ), lies in D^b_QCoh(𝒪_X), for every coherator DQ of X”.
+**`Stacks.Duality.Coherator.exists_isGE_isLE_coherator_obj_of_isDerivedLimit_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitBounded.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitBounded.lean#L185). The attribute's comment: “the conclusion that the R lim in D\_QCoh(𝒪\_X), i.e. DQ\_X(R lim 𝓕ₙ), lies in D^b\_QCoh(𝒪\_X), for every coherator DQ of X”.
 
 > **[Stacks, Tag 0CSB].** Let `X` be a quasi-compact and quasi-separated scheme, let `DQ` be a
 > coherator of `X` and let `L` be a derived limit in `D(𝒪_X)` of an inverse system `(𝓕ₙ)` of
@@ -276,7 +276,7 @@ theorem exists_isGE_isLE_coherator_obj_of_isDerivedLimit_single (X : Scheme.{u})
       ((quasiCoherentι X).obj (DQ.obj L)).IsLE (1 + N)
 ```
 
-**`Stacks.Duality.Coherator.isDerivedLimit_coherator_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitQuasiCoherent.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitQuasiCoherent.lean#L147). The attribute's comment: “the identification DQ_X(R lim 𝓕ₙ) = (R lim in D_QCoh(𝒪_X))(𝓕ₙ), for every coherator DQ of X, i.e. every exact right adjoint of the inclusion; one exists on any quasi-compact quasi-separated scheme by Stacks 0CR0, `Stacks.Duality.Coherator.exists_isTriangulated_rightAdjoint_quasiCoherentι`”.
+**`Stacks.Duality.Coherator.isDerivedLimit_coherator_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitQuasiCoherent.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/Coherator/InverseLimitQuasiCoherent.lean#L147). The attribute's comment: “the identification DQ\_X(R lim 𝓕ₙ) = (R lim in D\_QCoh(𝒪\_X))(𝓕ₙ), for every coherator DQ of X, i.e. every exact right adjoint of the inclusion; one exists on any quasi-compact quasi-separated scheme by Stacks 0CR0, `Stacks.Duality.Coherator.exists_isTriangulated_rightAdjoint_quasiCoherentι`”.
 
 > **[Stacks, Tag 0CSB].** Let `X` be a scheme and let `DQ` be a right adjoint of the inclusion
 > `D_QCoh(𝒪_X) ⥤ D(𝒪_X)` which makes the adjunction triangulated. If `L` is a derived limit in

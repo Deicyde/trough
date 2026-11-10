@@ -94,7 +94,7 @@ theorem pullback_isLocallyFree {X Y : AlgebraicGeometry.RingedSpace.{u, u}} (f :
 
 [Tag 01C9](https://stacks.math.columbia.edu/tag/01C9) in the Stacks Project.
 
-**`LocallyFreeRank.exists_locallyConstant_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreeRank.lean, line 1240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreeRank.lean#L1240). References: EGA 0 (5.4.1), “n(x) locally constant”; EGA II (6.4.8), “partial”; EGA IV (19.7.4), “partial”; SGA 6 I (6.0), “existence of rg_U(L)”; SGA 5 VII (3.2), “more general”; SGA 6 I (6.10), “special case”; SGA 6 III (5.4.1), “special case”.
+**`LocallyFreeRank.exists_locallyConstant_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreeRank.lean, line 1240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyFreeRank.lean#L1240). References: EGA 0 (5.4.1), “n(x) locally constant”; EGA II (6.4.8), “partial”; EGA IV (19.7.4), “partial”; SGA 6 I (6.0), “existence of rg\_U(L)”; SGA 5 VII (3.2), “more general”; SGA 6 I (6.10), “special case”; SGA 6 III (5.4.1), “special case”.
 
 > **Stacks Tag 01C9.**  Let `X` be a ringed space whose structure sheaf `O_X` is a sheaf
 > of commutative rings all of whose stalks `O_{X,x}` are nonzero, and let `F` be a locally

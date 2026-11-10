@@ -220,7 +220,7 @@ def pullbackTwistModuleIso (d : ℤ) :
         ((Scheme.Modules.pullback i).obj F) d
 ```
 
-**`Stacks.AlgebraicGeometry.HyperplaneTwistSequence.pushforwardTwistModuleIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneTwistSequence.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneTwistSequence.lean#L379). The attribute's comment: “the projection formula clause: i_*(G(d)) = i_*G ⊗ O(d), by [Stacks, Tag 01E8] at a closed immersion”.
+**`Stacks.AlgebraicGeometry.HyperplaneTwistSequence.pushforwardTwistModuleIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneTwistSequence.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneTwistSequence.lean#L379). The attribute's comment: “the projection formula clause: i\_*(G(d)) = i\_*G ⊗ O(d), by [Stacks, Tag 01E8] at a closed immersion”.
 
 > **[Stacks, Tag 0EGK], the projection formula clause.**
 > `i_*𝒢 ⊗_{𝒪_X} L^{⊗ d} ≅ i_*(𝒢(d))`, which is what makes the third term of the twisted sequence
@@ -269,7 +269,7 @@ theorem exists_iso_pullbackTwistOver_zeroScheme (k : Type u) [Field k] (m : ℕ)
           ≅ twistOver m (Spec (CommRingCat.of k)) d)
 ```
 
-**`AlgebraicGeometry.exists_hyperplane_twistedSequence_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneTwistUnconditional.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneTwistUnconditional.lean#L434). The attribute's comment: “the whole remark in the situation of Tags 089Z and 08A0: the hyperplane is P^m_k with O_H(d) = i^*O(d) in every degree, the twisted sequence 0 → F(d-1) → F(d) → i_*(G(d)) → 0 is short exact for every d, and its long exact cohomology sequence has H^j(H, G(d)) as its third term”.
+**`AlgebraicGeometry.exists_hyperplane_twistedSequence_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneTwistUnconditional.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneTwistUnconditional.lean#L434). The attribute's comment: “the whole remark in the situation of Tags 089Z and 08A0: the hyperplane is P^m\_k with O\_H(d) = i^*O(d) in every degree, the twisted sequence 0 → F(d-1) → F(d) → i\_*(G(d)) → 0 is short exact for every d, and its long exact cohomology sequence has H^j(H, G(d)) as its third term”.
 
 > **[Stacks, Tag 0EGK] in full.** Let `k` be an infinite field and let `ℱ` be a coherent sheaf
 > on `ℙ^{m+1}_k`. Then there are a nonzero global section `s` of `𝒪(1)`, an isomorphism
@@ -383,7 +383,7 @@ public theorem isMRegular_iff_fieldExtension (k K : Type u) [Field k] [Field K] 
 
 [Tag 08A5](https://stacks.math.columbia.edu/tag/08A5) in the Stacks Project.
 
-**`AlgebraicGeometry.isMRegular_hyperplaneRestriction_of_nonvanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneRestrictionRegularity.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneRestrictionRegularity.lean#L304). The attribute's comment: “in the situation of Tag 08A0, for every nonzero section s of O(1) avoiding the associated points of F: the sequence of Tag 08A0 is short exact, H(s) ≅ P^{n-1}_k as in Tag 089Z, and along every such identification the restriction of an m-regular F is m-regular”.
+**`AlgebraicGeometry.isMRegular_hyperplaneRestriction_of_nonvanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneRestrictionRegularity.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneRestrictionRegularity.lean#L304). The attribute's comment: “in the situation of Tag 08A0, for every nonzero section s of O(1) avoiding the associated points of F: the sequence of Tag 08A0 is short exact, H(s) ≅ P^\{n-1}\_k as in Tag 089Z, and along every such identification the restriction of an m-regular F is m-regular”.
 
 > **[Stacks, Tag 08A5].** Let `k` be a field, `n ≥ 1`, `ℱ` a coherent sheaf on `ℙⁿ_k`, and let
 > `s` be a **nonzero** global section of `𝒪(1)` vanishing at no associated point of `ℱ` — the
@@ -563,7 +563,7 @@ theorem exists_polynomial_eval_eq_hilbertPolynomial (k : Type u) [Field k] (n : 
     ∃ P : Polynomial ℚ, ∀ d : ℤ, (hilbertPolynomial k n F d : ℚ) = P.eval (d : ℚ)
 ```
 
-**`AlgebraicGeometry.isNumericalPolynomial_hilbertPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomialNumerical.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomialNumerical.lean#L369). The attribute's comment: “the induction on n of the source's proof together with its base case, the triviality of the twists on P^0; its one geometric input is the hypothesis hstep, the hyperplane difference formula of Stacks 0EGK, 08A0, 089Z and 08AA, which is discharged by AlgebraicGeometry.exists_coherent_hilbertPolynomial_sub_eq”.
+**`AlgebraicGeometry.isNumericalPolynomial_hilbertPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomialNumerical.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomialNumerical.lean#L369). The attribute's comment: “the induction on n of the source's proof together with its base case, the triviality of the twists on P^0; its one geometric input is the hypothesis hstep, the hyperplane difference formula of Stacks 0EGK, 08A0, 089Z and 08AA, which is discharged by AlgebraicGeometry.exists\_coherent\_hilbertPolynomial\_sub\_eq”.
 
 > **[Stacks, Tag 08AC], granted the hyperplane difference formula.** For a field `k`, an
 > integer `n ≥ 0` and a coherent sheaf `ℱ` on `ℙⁿ_k`, the function `d ↦ χ(ℙⁿ_k, ℱ(d))` is a
@@ -592,7 +592,7 @@ public theorem isNumericalPolynomial_hilbertPolynomial
     IsNumericalPolynomial (hilbertPolynomial k n F)
 ```
 
-**`AlgebraicGeometry.isNumericalPolynomial_hilbertPolynomial'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomialPolynomial.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomialPolynomial.lean#L243). The attribute's comment: “the conclusion in the eventual reading of Tag 00JX: the Hilbert polynomial agrees with a sum of binomial coefficients for d >> 0; the tag's own every-integer reading is AlgebraicGeometry.exists_polynomial_eval_eq_hilbertPolynomial”.
+**`AlgebraicGeometry.isNumericalPolynomial_hilbertPolynomial'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomialPolynomial.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomialPolynomial.lean#L243). The attribute's comment: “the conclusion in the eventual reading of Tag 00JX: the Hilbert polynomial agrees with a sum of binomial coefficients for d >> 0; the tag's own every-integer reading is AlgebraicGeometry.exists\_polynomial\_eval\_eq\_hilbertPolynomial”.
 
 > **[Stacks, Tag 08AC] in its eventual reading.** For a field `k`, an integer `n ≥ 0` and a
 > coherent sheaf `ℱ` on `ℙⁿ_k`, the function `d ↦ χ(ℙⁿ_k, ℱ(d))` is a numerical polynomial.

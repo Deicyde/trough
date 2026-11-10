@@ -14,7 +14,7 @@ Section 45.9 of the Stacks Project, [Tag 0FHA](https://stacks.math.columbia.edu/
 
 [Tag 0FHB](https://stacks.math.columbia.edu/tag/0FHB) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilData.pushforward_cupTw_pullTw`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectionFormula.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectionFormula.lean#L164). The attribute's comment: “the projection formula f_*(f^*b ∪ a) = b ∪ f_*a, over the actual category of smooth projective schemes over k, in every degree and Tate twist”.
+**`Stacks.WeilCohomology.WeilData.pushforward_cupTw_pullTw`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectionFormula.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectionFormula.lean#L164). The attribute's comment: “the projection formula f\_*(f^*b ∪ a) = b ∪ f\_*a, over the actual category of smooth projective schemes over k, in every degree and Tate twist”.
 
 > **Stacks 0FHB, the projection formula.** For a morphism `f : X ⟶ Y` of nonempty
 > equidimensional smooth projective schemes over `k`, of dimensions `d` and `e`, and classes
@@ -36,7 +36,7 @@ theorem pushforward_cupTw_pullTw (hA : W.PerfectPairing)
       W.cupTw Y m j' _ rfl s t' _ rfl b (W.pushforward hA f hX hY j t j' t' hj ht a)
 ```
 
-**`Stacks.WeilCohomology.WeilData.pushforward_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectionFormula.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectionFormula.lean#L192). The attribute's comment: “functoriality g_* ∘ f_* = (g ∘ f)_* of the pushforward, over the actual category of smooth projective schemes over k, in every degree and Tate twist”.
+**`Stacks.WeilCohomology.WeilData.pushforward_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectionFormula.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectionFormula.lean#L192). The attribute's comment: “functoriality g\_* ∘ f\_* = (g ∘ f)\_* of the pushforward, over the actual category of smooth projective schemes over k, in every degree and Tate twist”.
 
 > **Stacks 0FHB, functoriality of the pushforward.** For morphisms `f : X ⟶ Y` and `g : Y ⟶ Z`
 > of nonempty equidimensional smooth projective schemes over `k`, `g_* ∘ f_* = (g ∘ f)_*`.
@@ -53,7 +53,7 @@ theorem pushforward_comp (hA : W.PerfectPairing)
       W.pushforward hA (f ≫ g) hX hZ j t j'' t'' (by omega) (by omega) a
 ```
 
-**`Stacks.WeilCohomology.poincareDualPushforward_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Pushforward.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Pushforward.lean#L57). The attribute's comment: “pushforward_composition”.
+**`Stacks.WeilCohomology.poincareDualPushforward_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Pushforward.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Pushforward.lean#L57). The attribute's comment: “pushforward\_composition”.
 
 > Poincaré-dual pushforward is covariantly functorial for composable pullbacks.
 
@@ -76,7 +76,7 @@ theorem poincareDualPushforward_comp
       poincareDualPushforward pairX pairZ (pullbackF.comp pullbackG)
 ```
 
-**`Stacks.WeilCohomology.poincareDualPushforward_cup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Pushforward.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Pushforward.lean#L90). The attribute's comment: “projection_formula”.
+**`Stacks.WeilCohomology.poincareDualPushforward_cup`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Pushforward.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/Pushforward.lean#L90). The attribute's comment: “projection\_formula”.
 
 > The projection formula `f₊ (f⁺ b ∪ a) = b ∪ f₊ a` for the pushforward defined by Poincaré
 > duality.  The pairing identities are associativity of cup product under integration, and
@@ -123,7 +123,7 @@ theorem poincareDualPushforward_cup
 
 [Tag 0FHC](https://stacks.math.columbia.edu/tag/0FHC) in the Stacks Project.
 
-**`Stacks.WeilCohomology.PoincareDualityPushforwardSetup.pushforward_snd_externalProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/SecondProjection.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/SecondProjection.lean#L335). The attribute's comment: “pr_{2,*}(a × b) = (∫_X a) b for a of top degree; the cup-product identity pr₂^*v ∪ (a × b) = ± a × (v ∪ b) is derived from (D1) and graded commutativity in `pullbackSnd_mul_externalProduct`, and equidimensionality of the product from (B)(a) in `dimension_prod_eq`, both of them proved here”.
+**`Stacks.WeilCohomology.PoincareDualityPushforwardSetup.pushforward_snd_externalProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/SecondProjection.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/SecondProjection.lean#L335). The attribute's comment: “pr\_\{2,*}(a × b) = (∫\_X a) b for a of top degree; the cup-product identity pr₂^*v ∪ (a × b) = ± a × (v ∪ b) is derived from (D1) and graded commutativity in `pullbackSnd_mul_externalProduct`, and equidimensionality of the product from (B)(a) in `dimension_prod_eq`, both of them proved here”.
 
 > **Stacks Project, Tag 0FHC.** The Poincaré-duality pushforward along the second projection
 > `pr₂ : X × Y ⟶ Y` integrates the first factor out of an exterior product: for `a` of the top
@@ -158,7 +158,7 @@ theorem PoincareDualityPushforwardSetup.pushforward_snd_externalProduct [HasBina
       S.integration X a • b
 ```
 
-**`Stacks.WeilCohomology.PoincareDualityPushforwardSetup.pushforward_snd_externalProduct_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/SecondProjection.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/SecondProjection.lean#L398). The attribute's comment: “the clause of pr_{2,*}(a × b) = (∫_X a) b in the degrees where ∫_X a is read as zero, namely a not of top degree; the cup-product identity is again the derived `pullbackSnd_mul_externalProduct`”.
+**`Stacks.WeilCohomology.PoincareDualityPushforwardSetup.pushforward_snd_externalProduct_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/SecondProjection.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/ProjectionFormula/SecondProjection.lean#L398). The attribute's comment: “the clause of pr\_\{2,*}(a × b) = (∫\_X a) b in the degrees where ∫\_X a is read as zero, namely a not of top degree; the cup-product identity is again the derived `pullbackSnd_mul_externalProduct`”.
 
 > **Stacks Project, Tag 0FHC.** The complementary clause of the formula
 > `pr_{2, *}(a × b) = (∫_X a) b`: when `a` is not of the top degree `2 dim X` the pushforward of the
@@ -374,7 +374,7 @@ theorem cycleClass_fundamentalClass_point (hBa : W.KunnethIsomorphism) (hCc : W.
       W.unitTw (point k) _ _ (by simp)
 ```
 
-**`Stacks.WeilCohomology.WeilData.trace_unitTw_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CohomologyOfPoint.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CohomologyOfPoint.lean#L233). The attribute's comment: “∫_{Spec k} 1 = 1”.
+**`Stacks.WeilCohomology.WeilData.trace_unitTw_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CohomologyOfPoint.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/CohomologyOfPoint.lean#L233). The attribute's comment: “∫\_\{Spec k} 1 = 1”.
 
 > **Stacks Project, Tag 0FHE**, fourth clause: `∫_{Spec k} 1 = 1`.
 
@@ -612,7 +612,7 @@ theorem cycleClass_closedSubscheme_eq_pushforward_one
       pushforward one
 ```
 
-**`Stacks.WeilCohomology.WeilData.cycleClass_closedSubschemeClass_eq_pushforward_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ClosedImmersionClass.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ClosedImmersionClass.lean#L146). The attribute's comment: “γ([X]) = i_*1 for a closed immersion of nonempty equidimensional smooth projective schemes, on the actual category of smooth projective schemes over k with the actual CH^c(Y), the data (D0)-(D3) and axioms (A), (B), (C) as the source states them”.
+**`Stacks.WeilCohomology.WeilData.cycleClass_closedSubschemeClass_eq_pushforward_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ClosedImmersionClass.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ClosedImmersionClass.lean#L146). The attribute's comment: “γ([X]) = i\_*1 for a closed immersion of nonempty equidimensional smooth projective schemes, on the actual category of smooth projective schemes over k with the actual CH^c(Y), the data (D0)-(D3) and axioms (A), (B), (C) as the source states them”.
 
 > **Stacks 0FHG.** Assume given (D0), (D1), (D2), (D3) satisfying (A), (B) and (C). Let
 > `i : X ⟶ Y` be a closed immersion of nonempty smooth projective equidimensional schemes over
@@ -740,7 +740,7 @@ theorem integration_mul_dualBasis (X : (SmoothProjective k).FullSubcategory)
 
 [Tag 0FHI](https://stacks.math.columbia.edu/tag/0FHI) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilData.finrank_grade_projectiveLineObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCohomology.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCohomology.lean#L431). The attribute's comment: “dim_F H^i(P¹_k) = 1 for i = 0, 2 and 0 otherwise, for the actual P¹_k and the data (D0)–(D3) satisfying (A), (B), (C); the diagonal identity and H^0 ≠ 0 are derived”.
+**`Stacks.WeilCohomology.WeilData.finrank_grade_projectiveLineObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCohomology.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCohomology.lean#L431). The attribute's comment: “dim\_F H^i(P¹\_k) = 1 for i = 0, 2 and 0 otherwise, for the actual P¹\_k and the data (D0)–(D3) satisfying (A), (B), (C); the diagonal identity and H^0 ≠ 0 are derived”.
 
 > **Stacks Project, Tag 0FHI**, degree by degree: for a Weil cohomology theory in the sense of
 > Section 0FHA, `dim_F H^i(𝐏¹_k)` is `1` for `i = 0, 2` and `0` otherwise.
@@ -750,7 +750,7 @@ theorem finrank_grade_projectiveLineObj [CharZero F] (i : ℤ) :
     Module.finrank F (W.grade (projectiveLineObj k) i) = if i = 0 ∨ i = 2 then 1 else 0
 ```
 
-**`Stacks.WeilCohomology.WeilData.cohomology_projectiveLineObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCohomology.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCohomology.lean#L460). The attribute's comment: “H^*(P¹_k) is 1-dimensional in degrees 0 and 2 and zero in other degrees, for the actual P¹_k and the data (D0)–(D3) satisfying (A), (B), (C)”.
+**`Stacks.WeilCohomology.WeilData.cohomology_projectiveLineObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCohomology.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ProjectiveLineCohomology.lean#L460). The attribute's comment: “H^*(P¹\_k) is 1-dimensional in degrees 0 and 2 and zero in other degrees, for the actual P¹\_k and the data (D0)–(D3) satisfying (A), (B), (C)”.
 
 > **Stacks Project, Tag 0FHI.** For a Weil cohomology theory in the sense of Section 0FHA — data
 > (D0)–(D3) satisfying (A), (B) and (C), over a field `k`, with coefficients in a field `F` of
@@ -941,7 +941,7 @@ noncomputable def pullbackPairEquiv (i : X ⟶ Z) (j : Y ⟶ Z)
 
 [Tag 0FHK](https://stacks.math.columbia.edu/tag/0FHK) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilRealization.toWeilDataAxioms`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RealizationWeilData.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RealizationWeilData.lean#L499). The attribute's comment: “a Q-linear functor G : M_k → graded F-vector spaces of symmetric monoidal categories with G(1(1)) nonzero only in degree -2 gives data (D0)-(D3) satisfying (A), (B), (C)”.
+**`Stacks.WeilCohomology.WeilRealization.toWeilDataAxioms`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RealizationWeilData.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RealizationWeilData.lean#L499). The attribute's comment: “a Q-linear functor G : M\_k → graded F-vector spaces of symmetric monoidal categories with G(1(1)) nonzero only in degree -2 gives data (D0)-(D3) satisfying (A), (B), (C)”.
 
 > Let `k` be a field and `F` a field of characteristic `0`. A `ℚ`-linear functor
 > `G : M_k ⥤ graded F-vector spaces` of symmetric monoidal categories such that `G(𝟏(1))` is nonzero
@@ -959,7 +959,7 @@ def toWeilDataAxioms : WeilDataAxioms k F
 
 [Tag 0FHL](https://stacks.math.columbia.edu/tag/0FHL) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilDataAxioms.exists_motiveFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RealizationMotive.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RealizationMotive.lean#L197). The attribute's comment: “data (D0)-(D3) satisfying (A), (B), (C) give a Q-linear symmetric monoidal functor G : M_k -> graded F-vector spaces with H^*(X) = G(h(X))”.
+**`Stacks.WeilCohomology.WeilDataAxioms.exists_motiveFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RealizationMotive.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/RealizationMotive.lean#L197). The attribute's comment: “data (D0)-(D3) satisfying (A), (B), (C) give a Q-linear symmetric monoidal functor G : M\_k -> graded F-vector spaces with H^*(X) = G(h(X))”.
 
 > **Stacks Project, Tag 0FHL.** Data (D0), (D1), (D2), (D3) satisfying (A), (B) and (C) give a
 > `ℚ`-linear functor `G : M_k ⥤ graded F-vector spaces` of symmetric monoidal categories (for the
@@ -978,7 +978,7 @@ theorem exists_motiveFunctor (T : WeilDataAxioms k F) :
 
 [Tag 0FHM](https://stacks.math.columbia.edu/tag/0FHM) in the Stacks Project.
 
-**`Stacks.WeilCohomology.WeilRealization.exists_isoClassEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilRealizationBijection.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilRealizationBijection.lean#L56). The attribute's comment: “for a field k and a field F of characteristic 0, data (D0)-(D3) satisfying (A), (B), (C) correspond 1-to-1 (up to isomorphism) to Q-linear symmetric monoidal functors G : M_k -> graded F-vector spaces with G(1(1)) nonzero only in degree -2”.
+**`Stacks.WeilCohomology.WeilRealization.exists_isoClassEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilRealizationBijection.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/WeilRealizationBijection.lean#L56). The attribute's comment: “for a field k and a field F of characteristic 0, data (D0)-(D3) satisfying (A), (B), (C) correspond 1-to-1 (up to isomorphism) to Q-linear symmetric monoidal functors G : M\_k -> graded F-vector spaces with G(1(1)) nonzero only in degree -2”.
 
 > **Stacks Project, Tag 0FHM.** Let `k` be a field and `F` a field of characteristic `0`.
 > Data (D0), (D1), (D2), (D3) satisfying (A), (B), (C) and `ℚ`-linear symmetric monoidal functors

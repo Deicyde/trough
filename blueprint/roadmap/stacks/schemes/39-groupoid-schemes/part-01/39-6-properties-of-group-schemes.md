@@ -14,7 +14,7 @@ Section 39.6 of the Stacks Project, [Tag 045W](https://stacks.math.columbia.edu/
 
 [Tag 047G](https://stacks.math.columbia.edu/tag/047G) in the Stacks Project.
 
-**`AlgebraicGeometry.isSeparated_iff_isClosedImmersion_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/Subgroups/Separation.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/Subgroups/Separation.lean#L88). The attribute's comment: “separated_iff_identity_closed”. References: SGA 3 VIB (5.1).
+**`AlgebraicGeometry.isSeparated_iff_isClosedImmersion_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/Subgroups/Separation.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/Subgroups/Separation.lean#L88). The attribute's comment: “separated\_iff\_identity\_closed”. References: SGA 3 VIB (5.1).
 
 > A group scheme is separated over its base if and only if its identity section is a closed
 > immersion.
@@ -25,7 +25,7 @@ theorem isSeparated_iff_isClosedImmersion_one {S G : Scheme.{u}} (f : G ⟶ S)
     IsSeparated f ↔ IsClosedImmersion (η[Over.mk f]).left
 ```
 
-**`AlgebraicGeometry.quasiSeparated_iff_quasiCompact_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/Subgroups/Separation.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/Subgroups/Separation.lean#L101). The attribute's comment: “quasi_separated_iff_identity_quasi_compact”.
+**`AlgebraicGeometry.quasiSeparated_iff_quasiCompact_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/Subgroups/Separation.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/Subgroups/Separation.lean#L101). The attribute's comment: “quasi\_separated\_iff\_identity\_quasi\_compact”.
 
 > A group scheme is quasi-separated over its base if and only if its identity section is
 > quasi-compact.
@@ -63,7 +63,7 @@ lemma flat_mul {S : Scheme.{u}} (G : Over S) [GrpObj G] [Flat G.hom] :
 
 [Tag 047I](https://stacks.math.columbia.edu/tag/047I) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupSchemeDifferentials.relativeDifferentialsIsoPullbackIdentity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/Differentials.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/Differentials.lean#L149). The attribute's comment: “the composite Ω_{G/S} ≅ f^*e^*Ω_{G/S} of the chain of isomorphisms”. References: SGA 3 II (4.11.4), “(a)”.
+**`AlgebraicGeometry.GroupSchemeDifferentials.relativeDifferentialsIsoPullbackIdentity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/Differentials.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/Differentials.lean#L149). The attribute's comment: “the composite Ω\_\{G/S} ≅ f^*e^*Ω\_\{G/S} of the chain of isomorphisms”. References: SGA 3 II (4.11.4), “(a)”.
 
 > **The canonical isomorphism `Ω_{G/S} ≅ f^*e^*Ω_{G/S}`.**  The sheaf of relative
 > differentials of a group scheme is the inverse image of its restriction along the identity
@@ -76,7 +76,7 @@ noncomputable def relativeDifferentialsIsoPullbackIdentity :
         ((Scheme.Modules.pullback (identity f)).obj (relativeDifferentials f))
 ```
 
-**`AlgebraicGeometry.GroupSchemeDifferentials.pullbackConormalIsoPullbackIdentity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/Differentials.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/Differentials.lean#L191). The attribute's comment: “the second isomorphism of the chain, f^*𝒞_{S/G} ≅ f^*e^*Ω_{G/S}, where 𝒞_{S/G} is the conormal sheaf of the identity section e: f^* of the first arrow of the conormal sequence of e, an isomorphism by Tag 0474”.
+**`AlgebraicGeometry.GroupSchemeDifferentials.pullbackConormalIsoPullbackIdentity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/Differentials.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/Differentials.lean#L191). The attribute's comment: “the second isomorphism of the chain, f^*𝒞\_\{S/G} ≅ f^*e^*Ω\_\{G/S}, where 𝒞\_\{S/G} is the conormal sheaf of the identity section e: f^* of the first arrow of the conormal sequence of e, an isomorphism by Tag 0474”.
 
 > **The second isomorphism of the chain**, `f^*𝒞_{S/G} ≅ f^*e^*Ω_{G/S}`,
 > where `𝒞_{S/G}` is the conormal sheaf of the identity section `e`: the inverse image along `f`
@@ -91,7 +91,7 @@ noncomputable def pullbackConormalIsoPullbackIdentity :
         ((Scheme.Modules.pullback (identity f)).obj (relativeDifferentials f))
 ```
 
-**`AlgebraicGeometry.GroupSchemeDifferentials.relativeDifferentialsIsoPullbackConormal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/Differentials.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/Differentials.lean#L203). The attribute's comment: “the first isomorphism of the chain, Ω_{G/S} ≅ f^*𝒞_{S/G}, where 𝒞_{S/G} is the conormal sheaf of the identity section e”.
+**`AlgebraicGeometry.GroupSchemeDifferentials.relativeDifferentialsIsoPullbackConormal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/Differentials.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/Differentials.lean#L203). The attribute's comment: “the first isomorphism of the chain, Ω\_\{G/S} ≅ f^*𝒞\_\{S/G}, where 𝒞\_\{S/G} is the conormal sheaf of the identity section e”.
 
 > **The first isomorphism of the chain**, `Ω_{G/S} ≅ f^*𝒞_{S/G}`, where
 > `𝒞_{S/G}` is the conormal sheaf of the identity section `e`: the shearing isomorphism

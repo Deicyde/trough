@@ -403,7 +403,7 @@ lemma exists_cover_restrict_eq_constantSheaf_map
 
 [Tag 093T](https://stacks.math.columbia.edu/tag/093T) in the Stacks Project.
 
-**`Stacks.ConstantSheaf.constantSheafHomIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean, line 533](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean#L533). The attribute's comment: “constant_hom”.
+**`Stacks.ConstantSheaf.constantSheafHomIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean, line 533](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean#L533). The attribute's comment: “constant\_hom”.
 
 > **Stacks Project, Tag 093T (1).** For a finitely presented `Λ`-module `M` and any
 > `Λ`-module `N`, the constant sheaf on `Hom_Λ(M, N)` is the internal hom of the constant sheaves
@@ -420,7 +420,7 @@ noncomputable def constantSheafHomIso
         ((constantSheaf J (ModuleCat.{max u v x} Λ)).obj N)
 ```
 
-**`Stacks.ConstantSheaf.constantSheafHomIso_hom_app_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean#L548). The attribute's comment: “constant_hom”. References: SGA 3 VIII (1.4), “partial”.
+**`Stacks.ConstantSheaf.constantSheafHomIso_hom_app_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean#L548). The attribute's comment: “constant\_hom”. References: SGA 3 VIII (1.4), “partial”.
 
 > **Stacks Project, Tag 093T (1), the comparison is the canonical one.** The section of the
 > internal hom over `X` which the isomorphism assigns to the constant section determined by a
@@ -436,7 +436,7 @@ theorem constantSheafHomIso_hom_app_apply
         ((constantSheaf J (ModuleCat.{max u v x} Λ)).map f)
 ```
 
-**`Stacks.ConstantSheaf.constantSheafHomIso_hom_app_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean#L592). The attribute's comment: “constant_hom”.
+**`Stacks.ConstantSheaf.constantSheafHomIso_hom_app_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean#L592). The attribute's comment: “constant\_hom”.
 
 > **Stacks Project, Tag 093T (1)**, applied to the identity: the comparison sends the constant
 > section given by `𝟙 M` to the identity on every slice.
@@ -451,7 +451,7 @@ theorem constantSheafHomIso_hom_app_id
         ((constantSheaf J (ModuleCat.{max u v x} Λ)).obj M))
 ```
 
-**`Stacks.ConstantSheaf.constantSheafHomIso_hom_app_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean, line 605](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean#L605). The attribute's comment: “constant_hom”.
+**`Stacks.ConstantSheaf.constantSheafHomIso_hom_app_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean, line 605](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean#L605). The attribute's comment: “constant\_hom”.
 
 > **Stacks Project, Tag 093T (1)**, applied to a composition: the comparison respects
 > composition of constant homomorphisms on every slice.
@@ -474,7 +474,7 @@ theorem constantSheafHomIso_hom_app_comp
             (e₁ (ModuleCat.homLinearEquiv (S := Λ) g)))
 ```
 
-**`Stacks.ConstantSheaf.constantSheafHomIsoOfHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean, line 637](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean#L637). The attribute's comment: “constant_hom”.
+**`Stacks.ConstantSheaf.constantSheafHomIsoOfHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean, line 637](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafHom.lean#L637). The attribute's comment: “constant\_hom”.
 
 > **Stacks Project, Tag 093T (1)**, with `Hom_Λ(M, N)` represented by the morphism type of the
 > category of `Λ`-modules rather than by an abstract representative.
@@ -568,7 +568,7 @@ def moduleSheafIsom (F G : Sheaf J (ModuleCat.{max u v x} Λ)) :
 
 [Tag 093U](https://stacks.math.columbia.edu/tag/093U) in the Stacks Project.
 
-**`Stacks.ConstantSheaf.isWeakSerreClass_isFiniteTypeLocallyConstantModuleSheaf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyConstantExtensions.lean, line 793](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyConstantExtensions.lean#L793). The attribute's comment: “finite_type_modules”. References: SGA 4 IX (2.1), “(ii) ker/coker, (iii)”.
+**`Stacks.ConstantSheaf.isWeakSerreClass_isFiniteTypeLocallyConstantModuleSheaf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyConstantExtensions.lean, line 793](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/LocallyConstantExtensions.lean#L793). The attribute's comment: “finite\_type\_modules”. References: SGA 4 IX (2.1), “(ii) ker/coker, (iii)”.
 
 > **Stacks Tag 093U (3).** On a site, the finite type locally constant sheaves of modules over
 > a Noetherian ring form a weak Serre subcategory of the category of sheaves of modules.
@@ -589,7 +589,7 @@ instance isWeakSerreClass_isFiniteTypeLocallyConstantModuleSheaf :
       (IsFiniteTypeLocallyConstantModuleSheaf.{v, u, w} J Λ)
 ```
 
-**`Stacks.ConstantSheaf.isWeakSerreClass_isFiniteLocallyConstantAbelianSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/LocallyConstant/AbelianWeakSerre.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/LocallyConstant/AbelianWeakSerre.lean#L439). The attribute's comment: “finite_abelian”. References: SGA 4 IX (2.1), “(ii) ker/coker, (iii)”.
+**`Stacks.ConstantSheaf.isWeakSerreClass_isFiniteLocallyConstantAbelianSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/LocallyConstant/AbelianWeakSerre.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/LocallyConstant/AbelianWeakSerre.lean#L439). The attribute's comment: “finite\_abelian”. References: SGA 4 IX (2.1), “(ii) ker/coker, (iii)”.
 
 > **Stacks Tag 093U (2).** On a site, the finite locally constant sheaves of abelian groups form
 > a weak Serre subcategory of the category of all abelian sheaves.

@@ -371,7 +371,7 @@ theorem exists_baseChangedPresentationSquare
           BasedFunctor.comp (quotientStackMap pr') P.basedFunctor)
 ```
 
-**`CategoryTheory.CatFiberedInGroupoids.RepresentablePresentation.isTwoFibreProduct_relationBaseChangeSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentablePresentationBaseChange.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentablePresentationBaseChange.lean#L168). The attribute's comment: “R' = R ×_𝒳 𝒳' for the canonical squares; no hypothesis carried”.
+**`CategoryTheory.CatFiberedInGroupoids.RepresentablePresentation.isTwoFibreProduct_relationBaseChangeSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentablePresentationBaseChange.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentablePresentationBaseChange.lean#L168). The attribute's comment: “R' = R ×\_𝒳 𝒳' for the canonical squares; no hypothesis carried”.
 
 > **Stacks 04Y6.** The canonical `R ×_{s, 𝒰} U'` is a base change of the relation `R` along
 > `g`: pasted onto the square of `U' = 𝒰 ×_𝒳 𝒳'`, it is a 2-fibre product of the cospan
@@ -383,7 +383,7 @@ noncomputable def isTwoFibreProduct_relationBaseChangeSquare :
       ((atlasBaseChangeSquare f g).pasteFst (relationBaseChangeSquare f g))
 ```
 
-**`CategoryTheory.CatFiberedInGroupoids.RepresentablePresentation.nonempty_iso_baseChangedRelationSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentablePresentationBaseChange.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentablePresentationBaseChange.lean#L180). The attribute's comment: “R ×_𝒳 𝒳' = U' ×_{𝒳'} U' for the canonical squares; nothing carried”.
+**`CategoryTheory.CatFiberedInGroupoids.RepresentablePresentation.nonempty_iso_baseChangedRelationSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentablePresentationBaseChange.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentablePresentationBaseChange.lean#L180). The attribute's comment: “R ×\_𝒳 𝒳' = U' ×\_\{𝒳'} U' for the canonical squares; nothing carried”.
 
 > **Stacks 04Y6.** The displayed chain of the proof, for the canonical 2-fibre products:
 > `R ×_𝒳 𝒳' = 𝒰 ×_𝒳 𝒰 ×_𝒳 𝒳' = (𝒰 ×_𝒳 𝒳') ×_{𝒳'} (𝒰 ×_𝒳 𝒳')`. The base change of the relation

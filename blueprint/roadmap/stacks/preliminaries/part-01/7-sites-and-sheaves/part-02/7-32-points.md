@@ -214,7 +214,7 @@ def targetSitePoint (f : RingedToposHom X Y) (Φ : X.J.Point.{w}) : Y.J.Point.{w
 **`CategoryTheory.GrothendieckTopology.Point.pointOfTopos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/Topos.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/Topos.lean#L294). The attribute's comment: “(1): a point of the site defines a morphism of topoi `Sh(pt) → Sh(C)`”. References: SGA 4 IV (6.8.7), “(ii)”; SGA 4 IV (7.1), “more general”.
 
 > **Stacks 00YA (1).** Let `p` be a point of the site `C`, given by a fibre functor
-> `u = Φ.fiber`. Then the pair of functors `(p_*, p^{-1}) = (Φ.skyscraperSheafFunctor,
+> `u = Φ.fiber`. Then the pair of functors `(p\_*, p^\{-1}) = (Φ.skyscraperSheafFunctor,
 > Φ.sheafFiber)` is a morphism of topoi `Sh(pt) → Sh(C)`, i.e. a point of the topos `Sh(C)` in
 > the sense of Stacks 00Y4.
 >

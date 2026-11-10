@@ -156,7 +156,7 @@ public theorem structure_isSheaf :
       (Stacks.Sites.structurePresheaf S (Over.post B.inclusion))
 ```
 
-**`AlgebraicGeometry.BigEtaleOver.structureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigEtaleStructureSheaf.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigEtaleStructureSheaf.lean#L60). The attribute's comment: “big étale structure sheaf construction”. References: SGA 4½ Arcata (2.2), “structure sheaf O_S”.
+**`AlgebraicGeometry.BigEtaleOver.structureSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigEtaleStructureSheaf.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigEtaleStructureSheaf.lean#L60). The attribute's comment: “big étale structure sheaf construction”. References: SGA 4½ Arcata (2.2), “structure sheaf O\_S”.
 
 > **Stacks 03DU, big étale structure sheaf construction.**  The structure sheaf of rings of
 > the big étale site over `S`, whose value at `T/S` is `Γ(T, 𝒪_T)`.
@@ -515,8 +515,8 @@ public def smallEtaleRingedSiteHom {X Y : B.Scheme} (a : X ⟶ Y) :
 
 **`AlgebraicGeometry.smallEtaleRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean#L60). The attribute's comment: “part (2), read in the 2-category of ringed topoi”.
 
-> The morphism of small étale *ringed topoi* `(a_small, a_small^♯) : (X_étale, 𝒪_X) ⟶
-> (Y_étale, 𝒪_Y)` of a morphism of schemes `a : X ⟶ Y`.
+> The morphism of small étale *ringed topoi* `(a\_small, a\_small^♯) : (X\_étale, 𝒪\_X) ⟶
+> (Y\_étale, 𝒪\_Y)` of a morphism of schemes `a : X ⟶ Y`.
 
 ```lean
 def smallEtaleRingedToposHom (a : X ⟶ Y) :
@@ -1035,7 +1035,7 @@ public theorem sectionsComparisonSheafifiesToIso :
 > the comparison `AlgebraicGeometry.BigFppfOver.smallEtaleSectionsGamma`, which is locally
 > bijective by `AlgebraicGeometry.BigFppfOver.isIso_baseSheafification_map_smallEtaleSectionsGamma`.
 >
-> The topology `τ` is one refining the étale topology: that is the range `τ ∈ {étale, smooth,
+> The topology `τ` is one refining the étale topology: that is the range `τ ∈ \{étale, smooth,
 > syntomic, fppf}` over which the source states this clause, the Zariski topology being excluded
 > there.  By
 > `AlgebraicGeometry.BigFppfOver.isContinuous_smallEtaleToFppf_of_etaleTopology_le` that single
@@ -1108,7 +1108,7 @@ public noncomputable def baseAssociatedModuleIsoSections (τ : SiteKind) (F : S.
 
 [Tag 03FH](https://stacks.math.columbia.edu/tag/03FH) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.associatedModuleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleMorphismBaseChange.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleMorphismBaseChange.lean#L388). The attribute's comment: “part (2), for the morphism f_small : X_étale → Y_étale of Stacks 070R (2)”.
+**`AlgebraicGeometry.SmallEtale.associatedModuleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleMorphismBaseChange.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleMorphismBaseChange.lean#L388). The attribute's comment: “part (2), for the morphism f\_small : X\_étale → Y\_étale of Stacks 070R (2)”.
 
 > **The associated module of a pullback is the pullback of the associated module.**  For
 > `a : X ⟶ Y` a morphism of schemes of the big étale site, with `r` the underlying morphism of
@@ -1151,7 +1151,7 @@ public def associatedModuleBaseChangeIso :
         SheafOfModules.pullback.{u} (smallEtaleStructureMapRing B a)
 ```
 
-**`AlgebraicGeometry.SmallEtale.associatedModuleIsoOfSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleSectionsIso.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleSectionsIso.lean#L151). The attribute's comment: “part (1), for the morphism id_{small, étale, Zar} : (S_étale, 𝒪) → (S_Zar, 𝒪)”.
+**`AlgebraicGeometry.SmallEtale.associatedModuleIsoOfSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleSectionsIso.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleSectionsIso.lean#L151). The attribute's comment: “part (1), for the morphism id\_\{small, étale, Zar} : (S\_étale, 𝒪) → (S\_Zar, 𝒪)”.
 
 > **The two constructions of `𝓕^a` on the small étale site agree**: the pullback of `𝓕` along
 > the morphism of ringed sites `id_{small, étale, Zar} : (S_étale, 𝒪) → (S_Zar, 𝒪_S)`,
@@ -1187,7 +1187,7 @@ public noncomputable def associatedModuleIsoOfSections :
     (associatedModule B S hS).obj F ≅ associatedModuleOfSections B S hS F
 ```
 
-**`AlgebraicGeometry.SmallZariski.lcAssociatedModulePullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean#L464). The attribute's comment: “part (2), for the morphism f_small : (T_Zar, 𝒪_T) → (S_Zar, 𝒪_S) of Stacks 070R (2), for the associated-module functor of Definition 03DU (4)”.
+**`AlgebraicGeometry.SmallZariski.lcAssociatedModulePullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean#L464). The attribute's comment: “part (2), for the morphism f\_small : (T\_Zar, 𝒪\_T) → (S\_Zar, 𝒪\_S) of Stacks 070R (2), for the associated-module functor of Definition 03DU (4)”.
 
 > **Stacks 03LC part (1) at `τ = Zariski`, for the small Zariski sites.**  The equivalence of
 > Stacks 03DX (2) at `τ = Zariski` is compatible with pullback: for `f : T ⟶ S` a morphism of
@@ -1233,7 +1233,7 @@ public noncomputable def lcAssociatedModulePullbackIso :
         SheafOfModules.pullback.{u} (lcStructureMapRing B f)
 ```
 
-**`AlgebraicGeometry.SmallZariski.lcAssociatedModuleObjPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean#L479). The attribute's comment: “part (2) at one module, for the morphism f_small of the small Zariski sites and the associated-module functor of Definition 03DU (4)”.
+**`AlgebraicGeometry.SmallZariski.lcAssociatedModuleObjPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiPushforwardSquare.lean#L479). The attribute's comment: “part (2) at one module, for the morphism f\_small of the small Zariski sites and the associated-module functor of Definition 03DU (4)”.
 
 > **Stacks 03FH part (2) at one module**, and equally **Stacks 03LC part (1) at `τ = Zariski`
 > at one module**: `(f^*𝓕)^a ≅ f_small^*(𝓕^a)` for the morphism `f_small` of the small Zariski
@@ -1249,7 +1249,7 @@ public noncomputable def lcAssociatedModuleObjPullbackIso (𝓖 : (S.1).Modules)
         ((associatedModule B S.1 S.property).obj 𝓖)
 ```
 
-**`AlgebraicGeometry.SmallZariski.associatedModuleIsoOfSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsIso.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsIso.lean#L481). The attribute's comment: “part (1), for the morphism id_{small, Zariski, Zar} : (S_Zar, 𝒪) → (S_Zar, 𝒪_S)”.
+**`AlgebraicGeometry.SmallZariski.associatedModuleIsoOfSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsIso.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsIso.lean#L481). The attribute's comment: “part (1), for the morphism id\_\{small, Zariski, Zar} : (S\_Zar, 𝒪) → (S\_Zar, 𝒪\_S)”.
 
 > **The two constructions of `𝓕ᵃ` on the small Zariski site agree**: the pullback of `𝓕` along
 > the morphism of ringed sites `(S_Zar, 𝒪) → (S_Zar, 𝒪_S)`,
@@ -1281,7 +1281,7 @@ public noncomputable def associatedModuleIsoOfSections :
     (associatedModule B S hS).obj F ≅ associatedModuleOfSections B S hS F
 ```
 
-**`AlgebraicGeometry.BigFppfOver.associatedModuleBigPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigFppf.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigFppf.lean#L280). The attribute's comment: “part (2), for the morphism of big fppf sites f_big of Stacks 070R”.
+**`AlgebraicGeometry.BigFppfOver.associatedModuleBigPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigFppf.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigFppf.lean#L280). The attribute's comment: “part (2), for the morphism of big fppf sites f\_big of Stacks 070R”.
 
 > **Stacks 03FH, part (2), for the morphism of big fppf sites
 > `f_big : ((Sch/X)_fppf, 𝒪_X) ⟶ ((Sch/Y)_fppf, 𝒪_Y)` of Stacks 070R.**  The associated module of
@@ -1315,7 +1315,7 @@ public noncomputable def associatedModuleBigPullbackIso :
         SheafOfModules.pullback.{u} (structureComparison B hX hY f)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.associatedModuleBigObjPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigFppf.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigFppf.lean#L290). The attribute's comment: “part (2) at one module, for the morphism of big fppf sites f_big”.
+**`AlgebraicGeometry.BigFppfOver.associatedModuleBigObjPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigFppf.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigFppf.lean#L290). The attribute's comment: “part (2) at one module, for the morphism of big fppf sites f\_big”.
 
 > **Stacks 03FH, part (2), at one module**: `(f^*𝓕)^a ≅ f_{big}^*(𝓕^a)`.
 
@@ -1326,7 +1326,7 @@ public noncomputable def associatedModuleBigObjPullbackIso (𝓕 : Y.Modules) :
         ((associatedModule B Y hY).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.associatedModuleBasePullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigSites.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigSites.lean#L220). The attribute's comment: “part (2), for the morphism of big sites f_big : ((Sch/X)_τ, 𝒪_X) → ((Sch/Y)_τ, 𝒪_Y) of Stacks 070R (1), at each of τ = Zariski, étale, smooth, syntomic, fppf”.
+**`AlgebraicGeometry.BigFppfOver.associatedModuleBasePullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigSites.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigSites.lean#L220). The attribute's comment: “part (2), for the morphism of big sites f\_big : ((Sch/X)\_τ, 𝒪\_X) → ((Sch/Y)\_τ, 𝒪\_Y) of Stacks 070R (1), at each of τ = Zariski, étale, smooth, syntomic, fppf”.
 
 > **Stacks 03FH, part (2), for the morphism of big sites
 > `f_big : ((Sch/X)_τ, 𝒪_X) ⟶ ((Sch/Y)_τ, 𝒪_Y)` of Stacks 070R (1), at each of the five
@@ -1358,7 +1358,7 @@ public noncomputable def associatedModuleBasePullbackIso :
         SheafOfModules.pullback.{u} (baseStructureComparison B hX hY f τ)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.associatedModuleBaseObjPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigSites.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigSites.lean#L237). The attribute's comment: “part (2) at one module, for the morphism of big sites f_big at each of τ = Zariski, étale, smooth, syntomic, fppf”.
+**`AlgebraicGeometry.BigFppfOver.associatedModuleBaseObjPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigSites.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackBigSites.lean#L237). The attribute's comment: “part (2) at one module, for the morphism of big sites f\_big at each of τ = Zariski, étale, smooth, syntomic, fppf”.
 
 > **Stacks 03FH, part (2), at one module**: `(f^*𝓕)^a ≅ f_big^*(𝓕^a)` for the morphism of big
 > sites `f_big` at each of the five topologies, read off from
@@ -1371,7 +1371,7 @@ public noncomputable def associatedModuleBaseObjPullbackIso (𝓕 : Y.Modules) :
         ((baseAssociatedModule B Y hY τ).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.BigFppfSite.associatedModuleBigBaseChangeRingedSiteHomPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackChangeOfTopologies.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackChangeOfTopologies.lean#L324). The attribute's comment: “part (2), for the morphism of ringed sites f_big : ((Sch/T)_τ, 𝒪_T) → ((Sch/S)_τ, 𝒪_S) of Stacks 070R (entries (1), (6), (10), (13), (15) of Stacks 03FE), at the registered morphism bigBaseChangeRingedSiteHom, for each of the five topologies: (f^*𝓕)^a ≅ f_big^*(𝓕^a), naturally in 𝓕”.
+**`AlgebraicGeometry.BigFppfSite.associatedModuleBigBaseChangeRingedSiteHomPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackChangeOfTopologies.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackChangeOfTopologies.lean#L324). The attribute's comment: “part (2), for the morphism of ringed sites f\_big : ((Sch/T)\_τ, 𝒪\_T) → ((Sch/S)\_τ, 𝒪\_S) of Stacks 070R (entries (1), (6), (10), (13), (15) of Stacks 03FE), at the registered morphism bigBaseChangeRingedSiteHom, for each of the five topologies: (f^*𝓕)^a ≅ f\_big^*(𝓕^a), naturally in 𝓕”.
 
 > **Stacks 03FH, part (2), for the morphism of ringed sites
 > `f_big : ((Sch/T)_τ, 𝒪_T) ⟶ ((Sch/S)_τ, 𝒪_S)` of Remark 070R** — entries (1), (6), (10), (13),
@@ -1398,7 +1398,7 @@ public def associatedModuleBigBaseChangeRingedSiteHomPullbackIso (τ : CoveringT
         (B.bigBaseChangeRingedSiteHom τ f).pullbackModulesGeneral
 ```
 
-**`AlgebraicGeometry.BigFppfSite.associatedModuleBigRingedSiteHomPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackChangeOfTopologies.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackChangeOfTopologies.lean#L404). The attribute's comment: “part (2), for the morphisms of ringed sites f_sites : ((Sch/T)_τ, 𝒪_T) → ((Sch/S)_τ', 𝒪_S) of Stacks 070R, entries (1)-(15) of the Stacks 03FE list (τ finer than τ'), at the registered morphism bigRingedSiteHom: (f^*𝓕)^a ≅ f_sites^*(𝓕^a), naturally in 𝓕”.
+**`AlgebraicGeometry.BigFppfSite.associatedModuleBigRingedSiteHomPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackChangeOfTopologies.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackChangeOfTopologies.lean#L404). The attribute's comment: “part (2), for the morphisms of ringed sites f\_sites : ((Sch/T)\_τ, 𝒪\_T) → ((Sch/S)\_τ', 𝒪\_S) of Stacks 070R, entries (1)-(15) of the Stacks 03FE list (τ finer than τ'), at the registered morphism bigRingedSiteHom: (f^*𝓕)^a ≅ f\_sites^*(𝓕^a), naturally in 𝓕”.
 
 > **Stacks 03FH, part (2), for the morphisms of ringed sites
 > `f_sites : ((Sch/T)_τ, 𝒪_T) ⟶ ((Sch/S)_{τ'}, 𝒪_S)` of Remark 070R** — entries (1)–(15) of the
@@ -1425,7 +1425,7 @@ public def associatedModuleBigRingedSiteHomPullbackIso {τ τ' : CoveringTopolog
         (B.bigRingedSiteHom h f).pullbackModulesGeneral
 ```
 
-**`AlgebraicGeometry.BigFppfSite.associatedModuleBigToSmallEtaleRingedSiteHomPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackChangeOfTopologies.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackChangeOfTopologies.lean#L435). The attribute's comment: “part (2), for the morphisms of ringed sites f_sites : ((Sch/T)_τ, 𝒪_T) → (S_étale, 𝒪_S) of Stacks 070R, entries (16)-(19) of the Stacks 03FE list, at the registered morphism bigToSmallEtaleRingedSiteHom: (f^*𝓕)^a ≅ f_sites^*(𝓕^a), naturally in 𝓕”.
+**`AlgebraicGeometry.BigFppfSite.associatedModuleBigToSmallEtaleRingedSiteHomPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackChangeOfTopologies.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackChangeOfTopologies.lean#L435). The attribute's comment: “part (2), for the morphisms of ringed sites f\_sites : ((Sch/T)\_τ, 𝒪\_T) → (S\_étale, 𝒪\_S) of Stacks 070R, entries (16)-(19) of the Stacks 03FE list, at the registered morphism bigToSmallEtaleRingedSiteHom: (f^*𝓕)^a ≅ f\_sites^*(𝓕^a), naturally in 𝓕”.
 
 > **Stacks 03FH, part (2), for the morphisms of ringed sites
 > `f_sites : ((Sch/T)_τ, 𝒪_T) ⟶ (S_étale, 𝒪_S)` of Remark 070R** — entries (16)–(19) of the
@@ -1452,7 +1452,7 @@ public def associatedModuleBigToSmallEtaleRingedSiteHomPullbackIso {τ : Coverin
         (B.bigToSmallEtaleRingedSiteHom h f).pullbackModulesGeneral
 ```
 
-**`AlgebraicGeometry.BigFppfSite.associatedModuleBigToSmallZariskiRingedSiteHomPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackChangeOfTopologies.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackChangeOfTopologies.lean#L466). The attribute's comment: “part (2), for the morphisms of ringed sites f_sites : ((Sch/T)_τ, 𝒪_T) → (S_Zar, 𝒪_S) of Stacks 070R, entries (20)-(24) of the Stacks 03FE list, at the registered morphism bigToSmallZariskiRingedSiteHom: (f^*𝓕)^a ≅ f_sites^*(𝓕^a), naturally in 𝓕”.
+**`AlgebraicGeometry.BigFppfSite.associatedModuleBigToSmallZariskiRingedSiteHomPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackChangeOfTopologies.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackChangeOfTopologies.lean#L466). The attribute's comment: “part (2), for the morphisms of ringed sites f\_sites : ((Sch/T)\_τ, 𝒪\_T) → (S\_Zar, 𝒪\_S) of Stacks 070R, entries (20)-(24) of the Stacks 03FE list, at the registered morphism bigToSmallZariskiRingedSiteHom: (f^*𝓕)^a ≅ f\_sites^*(𝓕^a), naturally in 𝓕”.
 
 > **Stacks 03FH, part (2), for the morphisms of ringed sites
 > `f_sites : ((Sch/T)_τ, 𝒪_T) ⟶ (S_Zar, 𝒪_S)` of Remark 070R** — entries (20)–(24) of the
@@ -1479,7 +1479,7 @@ public def associatedModuleBigToSmallZariskiRingedSiteHomPullbackIso {τ : Cover
         (B.bigToSmallZariskiRingedSiteHom h f).pullbackModulesGeneral
 ```
 
-**`AlgebraicGeometry.SmallEtale.associatedModuleSmallEtaleToSmallZariskiPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackToSmallZariski.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackToSmallZariski.lean#L320). The attribute's comment: “part (2), for the morphism of ringed sites f_sites : (X_étale, 𝒪_X) → (Y_Zar, 𝒪_Y) of Stacks 070R — entry (26) of the Stacks 03FE list: (f^*𝓕)^a ≅ f_sites^*𝓕, naturally in 𝓕, the 𝓕^a of the target being 𝓕 because the target is (Y_Zar, 𝒪_Y) itself”.
+**`AlgebraicGeometry.SmallEtale.associatedModuleSmallEtaleToSmallZariskiPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackToSmallZariski.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackToSmallZariski.lean#L320). The attribute's comment: “part (2), for the morphism of ringed sites f\_sites : (X\_étale, 𝒪\_X) → (Y\_Zar, 𝒪\_Y) of Stacks 070R — entry (26) of the Stacks 03FE list: (f^*𝓕)^a ≅ f\_sites^*𝓕, naturally in 𝓕, the 𝓕^a of the target being 𝓕 because the target is (Y\_Zar, 𝒪\_Y) itself”.
 
 > **Stacks 03FH, part (2), for the morphism of ringed sites
 > `f_sites : (X_étale, 𝒪_X) ⟶ (Y_Zar, 𝒪_Y)` of Remark 070R** — entry (26) of the list of
@@ -1515,7 +1515,7 @@ public def associatedModuleSmallEtaleToSmallZariskiPullbackIso :
       (smallEtaleToSmallZariskiRingedSiteHom B a).pullbackModulesGeneral
 ```
 
-**`AlgebraicGeometry.SmallEtale.associatedModuleSmallEtaleToSmallZariskiObjPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackToSmallZariski.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackToSmallZariski.lean#L334). The attribute's comment: “part (2) at one module, for the morphism of ringed sites f_sites : (X_étale, 𝒪_X) → (Y_Zar, 𝒪_Y) of Stacks 070R — entry (26) of the Stacks 03FE list”.
+**`AlgebraicGeometry.SmallEtale.associatedModuleSmallEtaleToSmallZariskiObjPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackToSmallZariski.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModulePullbackToSmallZariski.lean#L334). The attribute's comment: “part (2) at one module, for the morphism of ringed sites f\_sites : (X\_étale, 𝒪\_X) → (Y\_Zar, 𝒪\_Y) of Stacks 070R — entry (26) of the Stacks 03FE list”.
 
 > **Stacks 03FH, part (2), at one module**, for the morphism of ringed sites
 > `f_sites : (X_étale, 𝒪_X) ⟶ (Y_Zar, 𝒪_Y)` of Remark 070R — entry (26) of the Section 03FE list:
@@ -1529,7 +1529,7 @@ public def associatedModuleSmallEtaleToSmallZariskiObjPullbackIso (𝓕 : Y.obj.
       (smallEtaleToSmallZariskiRingedSiteHom B a).pullbackModulesGeneral.obj 𝓕
 ```
 
-**`AlgebraicGeometry.BigFppfOver.baseAssociatedModuleIsoSectionsSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/TopologyIndependence.lean, line 583](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/TopologyIndependence.lean#L583). The attribute's comment: “part (1) for the first of the two morphisms of ringed sites that clause offers, id_{τ, Zar} : ((Sch/S)_τ, 𝒪) → (S_Zar, 𝒪), on the big site (Sch/S)_τ at each of the five τ: the construction 𝓕 ↦ 𝓕^a of Definition 03DU (3), the sheaf of sections (f : T → S) ↦ Γ(T, f^*𝓕), is the pullback under that morphism”.
+**`AlgebraicGeometry.BigFppfOver.baseAssociatedModuleIsoSectionsSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/TopologyIndependence.lean, line 583](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/TopologyIndependence.lean#L583). The attribute's comment: “part (1) for the first of the two morphisms of ringed sites that clause offers, id\_\{τ, Zar} : ((Sch/S)\_τ, 𝒪) → (S\_Zar, 𝒪), on the big site (Sch/S)\_τ at each of the five τ: the construction 𝓕 ↦ 𝓕^a of Definition 03DU (3), the sheaf of sections (f : T → S) ↦ Γ(T, f^*𝓕), is the pullback under that morphism”.
 
 > **Stacks 03FH (1) on the big sites.**  The construction `𝓕 ↦ 𝓕^a` of Definition 03DU (3) —
 > the sheaf on `(Sch/S)_τ` whose value at `f : T → S` is `Γ(T, f^*𝓕)` — **is** the pullback of
@@ -1653,7 +1653,7 @@ public theorem isQuasicoherentOnSite_associatedModule_of_isQuasicoherent (𝓕 :
     ((associatedModule B S hS).obj 𝓕).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.SmallZariski.isQuasicoherentOnSite_associatedModuleOfSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean#L145). The attribute's comment: “part (2) at τ = Zariski, for the SECTIONS-defined 𝓕ᵃ of Definition 03DU (4) — SmallZariski.associatedModuleOfSections, whose sections over f : T → S are Γ(T, f^*𝓕). The same clause for the pullback-defined 𝓕ᵃ of Remark 03FH is isQuasicoherentOnSite_associatedModule_of_isQuasicoherent; the two sheaves are identified by associatedModuleIsoOfSections”.
+**`AlgebraicGeometry.SmallZariski.isQuasicoherentOnSite_associatedModuleOfSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean#L145). The attribute's comment: “part (2) at τ = Zariski, for the SECTIONS-defined 𝓕ᵃ of Definition 03DU (4) — SmallZariski.associatedModuleOfSections, whose sections over f : T → S are Γ(T, f^*𝓕). The same clause for the pullback-defined 𝓕ᵃ of Remark 03FH is isQuasicoherentOnSite\_associatedModule\_of\_isQuasicoherent; the two sheaves are identified by associatedModuleIsoOfSections”.
 
 > **[Stacks, Tag 03DV] (2) at `τ = Zariski`, for the sheaf the source constructs.**  The
 > associated module `𝓕ᵃ` of [Stacks, Tag 03DU] (4) — the sheaf on `S_Zar` whose sections over an
@@ -1675,7 +1675,7 @@ public theorem isQuasicoherentOnSite_associatedModuleOfSections (F : S.Modules)
 
 [Tag 0GN7](https://stacks.math.columbia.edu/tag/0GN7) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.fullyFaithfulBaseAssociatedModuleQcoh`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseFullyFaithful.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseFullyFaithful.lean#L208). The attribute's comment: “big site (Sch/S)_τ, every τ”.
+**`AlgebraicGeometry.BigFppfOver.fullyFaithfulBaseAssociatedModuleQcoh`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseFullyFaithful.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseFullyFaithful.lean#L208). The attribute's comment: “big site (Sch/S)\_τ, every τ”.
 
 > **Stacks 0GN7 for the big site, and clause (1) of Stacks 06VE for it.**  For every
 > `τ ∈ {Zariski, étale, smooth, syntomic, fppf}` the functor `𝓕 ↦ 𝓕^a` of Definition 03DU, from
@@ -1794,7 +1794,7 @@ public noncomputable def fullyFaithfulAssociatedSheafFunctor :
     (associatedSheafFunctor B S hS).FullyFaithful
 ```
 
-**`Stacks.Sites.bijective_associatedModuleMap_of_mem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/AssociatedModuleArbitraryBaseFpqc.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/AssociatedModuleArbitraryBaseFpqc.lean#L85). The attribute's comment: “the lemma over a base that is NOT assumed affine, on a site of schemes over S presented by a precoverage K and a functor toOver : C -> Over S. The two registrations that stood before this one are at particular sites and neither covers this presentation: Stacks.Descent.fullyFaithfulAssociatedModuleQcoh' is the small site at a topology tau (StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleLocalBijectivity.lean:717) and Stacks.Descent.fullyFaithfulBaseAssociatedModuleQcoh is the big site (Sch/S)_tau (StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseFullyFaithful.lean:211); the abstract presentation has neither the objScheme/objRestrict apparatus of the second nor a functor out of S.Opens as the first uses, so neither transfers. WHAT IS REMOVED relative to the affine-base case Stacks.Sites.bijective_associatedModuleMap is exactly IsAffine S, and nothing else: both sheaf conditions of bijective_associatedModuleMap_of_isPrestack are discharged here, the presheaf of morphisms by isPrestackOver_of_mem_fpqcPrecoverage and the associated presheaf by isSheaf_associatedPresheaf_of_mem_fpqcPrecoverage, the latter being the SECOND assertion of Stacks 03OJ. CARRIED: hcover, that the arrows factoring through an object with affine underlying scheme cover every object. That is a real hypothesis and not a restatement of the conclusion, but it is NOT supplied by condition (2) of Stacks 03OJ -- condition (2) yields covering only at the class Stacks.Sites.OverAffineOpen, of objects whose structure morphism has image inside an affine open, and at that class the local half of this lemma is BLOCKED: the required agreement of two Gamma(T,O)-linear maps on all of Gamma(g^+M, top) needs AlgebraicGeometry.Scheme.Modules.span_range_pullbackSection_eq_top at W = top, which needs T affine, and that file's own documentation records that both of its affineness hypotheses are needed and that the statement is false for U affine and V arbitrary. So hcover at the AFFINE class is what this form asks for, and supplying it from Stacks 03OJ's conditions is the open problem that the third assertion of that tag now rests on. The full and faithful forms of this clause are full_ and faithful_associatedModuleFunctor_of_mem_fpqcPrecoverage below”.
+**`Stacks.Sites.bijective_associatedModuleMap_of_mem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/AssociatedModuleArbitraryBaseFpqc.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/AssociatedModuleArbitraryBaseFpqc.lean#L85). The attribute's comment: “the lemma over a base that is NOT assumed affine, on a site of schemes over S presented by a precoverage K and a functor toOver : C -> Over S. The two registrations that stood before this one are at particular sites and neither covers this presentation: Stacks.Descent.fullyFaithfulAssociatedModuleQcoh' is the small site at a topology tau (StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleLocalBijectivity.lean:717) and Stacks.Descent.fullyFaithfulBaseAssociatedModuleQcoh is the big site (Sch/S)\_tau (StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseFullyFaithful.lean:211); the abstract presentation has neither the objScheme/objRestrict apparatus of the second nor a functor out of S.Opens as the first uses, so neither transfers. WHAT IS REMOVED relative to the affine-base case Stacks.Sites.bijective\_associatedModuleMap is exactly IsAffine S, and nothing else: both sheaf conditions of bijective\_associatedModuleMap\_of\_isPrestack are discharged here, the presheaf of morphisms by isPrestackOver\_of\_mem\_fpqcPrecoverage and the associated presheaf by isSheaf\_associatedPresheaf\_of\_mem\_fpqcPrecoverage, the latter being the SECOND assertion of Stacks 03OJ. CARRIED: hcover, that the arrows factoring through an object with affine underlying scheme cover every object. That is a real hypothesis and not a restatement of the conclusion, but it is NOT supplied by condition (2) of Stacks 03OJ -- condition (2) yields covering only at the class Stacks.Sites.OverAffineOpen, of objects whose structure morphism has image inside an affine open, and at that class the local half of this lemma is BLOCKED: the required agreement of two Gamma(T,O)-linear maps on all of Gamma(g^+M, top) needs AlgebraicGeometry.Scheme.Modules.span\_range\_pullbackSection\_eq\_top at W = top, which needs T affine, and that file's own documentation records that both of its affineness hypotheses are needed and that the statement is false for U affine and V arbitrary. So hcover at the AFFINE class is what this form asks for, and supplying it from Stacks 03OJ's conditions is the open problem that the third assertion of that tag now rests on. The full and faithful forms of this clause are full\_ and faithful\_associatedModuleFunctor\_of\_mem\_fpqcPrecoverage below”.
 
 > On a site of schemes over `S` whose coverings are fpqc coverings of schemes, the map
 > `φ ↦ φᵃ` is bijective on morphisms of quasi-coherent modules on `S`, with **no affineness
@@ -1818,7 +1818,7 @@ public theorem bijective_associatedModuleMap_of_mem_fpqcPrecoverage
 
 [Tag 03DX](https://stacks.math.columbia.edu/tag/03DX) in the Stacks Project.
 
-**`AlgebraicGeometry.BigFppfOver.isEquivalence_associatedModuleQcohOnSite_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/EffectiveGlueAgreementRestrFun.lean, line 661](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/EffectiveGlueAgreementRestrFun.lean#L661). The attribute's comment: “clause (1) at τ = fppf: 𝓕 ↦ 𝓕^a is an equivalence QCoh(𝒪_S) ⥤ QCoh((Sch/S)_fppf, 𝒪)”.
+**`AlgebraicGeometry.BigFppfOver.isEquivalence_associatedModuleQcohOnSite_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/EffectiveGlueAgreementRestrFun.lean, line 661](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/EffectiveGlueAgreementRestrFun.lean#L661). The attribute's comment: “clause (1) at τ = fppf: 𝓕 ↦ 𝓕^a is an equivalence QCoh(𝒪\_S) ⥤ QCoh((Sch/S)\_fppf, 𝒪)”.
 
 > **Stacks 03DX (1) for `τ = fppf`: `𝓕 ↦ 𝓕^a` is an equivalence.**  The functor
 > `QCoh(𝒪_S) ⥤ QCoh((Sch/S)_fppf, 𝒪)` is fully faithful unconditionally
@@ -1831,7 +1831,7 @@ public theorem isEquivalence_associatedModuleQcohOnSite_fppf :
     (associatedModuleQcohOnSite' B S hS).IsEquivalence
 ```
 
-**`AlgebraicGeometry.BigFppfOver.associatedModuleEquivalence_fppf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/EffectiveGlueAgreementRestrFun.lean, line 670](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/EffectiveGlueAgreementRestrFun.lean#L670). The attribute's comment: “clause (1) at τ = fppf: the equivalence of categories QCoh(𝒪_S) ≌ QCoh((Sch/S)_fppf, 𝒪)”.
+**`AlgebraicGeometry.BigFppfOver.associatedModuleEquivalence_fppf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/EffectiveGlueAgreementRestrFun.lean, line 670](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/EffectiveGlueAgreementRestrFun.lean#L670). The attribute's comment: “clause (1) at τ = fppf: the equivalence of categories QCoh(𝒪\_S) ≌ QCoh((Sch/S)\_fppf, 𝒪)”.
 
 > **The equivalence of categories of Stacks 03DX (1) for `τ = fppf`**,
 > `QCoh(𝒪_S) ≌ QCoh((Sch/S)_fppf, 𝒪)`, with `𝓕 ↦ 𝓕^a` as its functor.
@@ -1876,7 +1876,7 @@ theorem bijective_restrictionBaseChange_of_isQuasicoherentOnSite
       (restrictionBaseChange (R := commStructurePresheaf B S hS) G.val f.op)
 ```
 
-**`AlgebraicGeometry.SmallZariski.isEquivalence_associatedModuleQcohOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiRealFullyFaithful.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiRealFullyFaithful.lean#L404). The attribute's comment: “clause (2) at τ = Zariski: 𝓕 ↦ 𝓕^a is an equivalence QCoh(𝒪_S) ⥤ QCoh(S_Zar, 𝒪)”.
+**`AlgebraicGeometry.SmallZariski.isEquivalence_associatedModuleQcohOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiRealFullyFaithful.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiRealFullyFaithful.lean#L404). The attribute's comment: “clause (2) at τ = Zariski: 𝓕 ↦ 𝓕^a is an equivalence QCoh(𝒪\_S) ⥤ QCoh(S\_Zar, 𝒪)”.
 
 > **Stacks 03DX clause (2) at `τ = Zariski`**: `𝓕 ↦ 𝓕^a` is an equivalence
 > `QCoh(𝒪_S) ⥤ QCoh(S_Zar, 𝒪)`.
@@ -1894,7 +1894,7 @@ public theorem isEquivalence_associatedModuleQcohOnSite :
     (AlgebraicGeometry.SmallZariski.associatedModuleQcohOnSite B S hS).IsEquivalence
 ```
 
-**`AlgebraicGeometry.SmallZariski.associatedModuleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiRealFullyFaithful.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiRealFullyFaithful.lean#L420). The attribute's comment: “clause (2) at τ = Zariski: the equivalence of categories QCoh(𝒪_S) ≌ QCoh(S_Zar, 𝒪)”.
+**`AlgebraicGeometry.SmallZariski.associatedModuleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiRealFullyFaithful.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiRealFullyFaithful.lean#L420). The attribute's comment: “clause (2) at τ = Zariski: the equivalence of categories QCoh(𝒪\_S) ≌ QCoh(S\_Zar, 𝒪)”.
 
 > **The equivalence of categories of Stacks 03DX (2) at `τ = Zariski`**,
 > `QCoh(𝒪_S) ≌ QCoh(S_Zar, 𝒪)`, with `𝓕 ↦ 𝓕^a` as its functor.
@@ -1910,7 +1910,7 @@ public noncomputable def associatedModuleEquivalence :
         (structureSheaf B S hS)).FullSubcategory
 ```
 
-**`AlgebraicGeometry.SmallZariski.isEquivalence_associatedSheafFunctorOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean#L195). The attribute's comment: “clause (2) at τ = Zariski, for the SECTIONS-defined functor 𝓕 ↦ 𝓕ᵃ of Definition 03DU (4) — SmallZariski.associatedSheafFunctor corestricted to QCoh(S_Zar, 𝒪) — is an equivalence QCoh(𝒪_S) ⥤ QCoh(S_Zar, 𝒪). The same clause for the pullback-defined functor of Remark 03FH is isEquivalence_associatedModuleQcohOnSite; the two functors are identified by associatedModuleQcohIsoAssociatedSheafFunctor”.
+**`AlgebraicGeometry.SmallZariski.isEquivalence_associatedSheafFunctorOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean#L195). The attribute's comment: “clause (2) at τ = Zariski, for the SECTIONS-defined functor 𝓕 ↦ 𝓕ᵃ of Definition 03DU (4) — SmallZariski.associatedSheafFunctor corestricted to QCoh(S\_Zar, 𝒪) — is an equivalence QCoh(𝒪\_S) ⥤ QCoh(S\_Zar, 𝒪). The same clause for the pullback-defined functor of Remark 03FH is isEquivalence\_associatedModuleQcohOnSite; the two functors are identified by associatedModuleQcohIsoAssociatedSheafFunctor”.
 
 > **[Stacks, Tag 03DX] clause (2) at `τ = Zariski`, for the functor the source defines**: the
 > sections-defined `𝓕 ↦ 𝓕ᵃ` of [Stacks, Tag 03DU] (4) is an equivalence
@@ -1928,7 +1928,7 @@ public theorem isEquivalence_associatedSheafFunctorOnSite :
     (associatedSheafFunctorOnSite B S hS).IsEquivalence
 ```
 
-**`AlgebraicGeometry.SmallZariski.associatedSheafFunctorEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean#L214). The attribute's comment: “clause (2) at τ = Zariski, the equivalence of categories QCoh(𝒪_S) ≌ QCoh(S_Zar, 𝒪) whose functor is the SECTIONS-defined 𝓕 ↦ 𝓕ᵃ of Definition 03DU (4), SmallZariski.associatedSheafFunctor corestricted to QCoh(S_Zar, 𝒪). The same clause for the pullback-defined functor of Remark 03FH is associatedModuleEquivalence”.
+**`AlgebraicGeometry.SmallZariski.associatedSheafFunctorEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallZariskiSectionsClosure.lean#L214). The attribute's comment: “clause (2) at τ = Zariski, the equivalence of categories QCoh(𝒪\_S) ≌ QCoh(S\_Zar, 𝒪) whose functor is the SECTIONS-defined 𝓕 ↦ 𝓕ᵃ of Definition 03DU (4), SmallZariski.associatedSheafFunctor corestricted to QCoh(S\_Zar, 𝒪). The same clause for the pullback-defined functor of Remark 03FH is associatedModuleEquivalence”.
 
 > **The equivalence of categories of [Stacks, Tag 03DX] (2) at `τ = Zariski`, for the functor
 > the source defines**: `QCoh(𝒪_S) ≌ QCoh(S_Zar, 𝒪)`, with the sections-defined `𝓕 ↦ 𝓕ᵃ` as its
@@ -1947,7 +1947,7 @@ public noncomputable def associatedSheafFunctorEquivalence :
         (structureSheaf B S hS)).FullSubcategory
 ```
 
-**`AlgebraicGeometry.BigFppfOver.baseAssociatedModuleEquivalenceOnSite'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSmallEtaleBigSite.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSmallEtaleBigSite.lean#L195). The attribute's comment: “clause (1) at every τ ∈ {Zariski, étale, smooth, syntomic, fppf}: 𝓕 ↦ 𝓕ᵃ is an equivalence QCoh(𝒪_S) ≌ QCoh((Sch/S)_τ, 𝒪)”.
+**`AlgebraicGeometry.BigFppfOver.baseAssociatedModuleEquivalenceOnSite'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSmallEtaleBigSite.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSmallEtaleBigSite.lean#L195). The attribute's comment: “clause (1) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}: 𝓕 ↦ 𝓕ᵃ is an equivalence QCoh(𝒪\_S) ≌ QCoh((Sch/S)\_τ, 𝒪)”.
 
 > **Stacks 03DX (1) at every `τ`, as an equivalence of categories**:
 > `QCoh(𝒪_S) ≌ QCoh((Sch/S)_τ, 𝒪)`, with `𝓕 ↦ 𝓕^a` as its functor and with no hypothesis.
@@ -2012,10 +2012,10 @@ theorem isQuasicoherentOnSite_iff_isCartesianOnAffineCharts
 
 Declarations registered for the tag:
 
-- [`baseQuasicoherentIsEssImageAssociatedModule`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=baseQuasicoherentIsEssImageAssociatedModule#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseEssentialSurjectivity.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseEssentialSurjectivity.lean#L132) (StacksFrontier): “clause (1) at every τ ∈ {Zariski, étale, smooth, syntomic, fppf}: essential surjectivity of 𝓕 ↦ 𝓕ᵃ onto the quasi-coherent 𝒪-modules of the big τ site of S”.
+- [`baseQuasicoherentIsEssImageAssociatedModule`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=baseQuasicoherentIsEssImageAssociatedModule#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseEssentialSurjectivity.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BaseEssentialSurjectivity.lean#L132) (StacksFrontier): “clause (1) at every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}: essential surjectivity of 𝓕 ↦ 𝓕ᵃ onto the quasi-coherent 𝒪-modules of the big τ site of S”.
 - [`quasicoherentIsEssImageAssociatedModule'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=quasicoherentIsEssImageAssociatedModule'#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/EffectiveGlueAgreementTransport.lean, line 522](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/EffectiveGlueAgreementTransport.lean#L522) (StacksFrontier): “clause (1) at τ = fppf: essential surjectivity of 𝓕 ↦ 𝓕^a onto the quasi-coherent 𝒪-modules of the big fppf site of S, with no assumption”.
 - [`quasicoherentIsEssImageAssociatedModule`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=quasicoherentIsEssImageAssociatedModule#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleCounit.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleCounit.lean#L339) (StacksFrontier): “clause (2) at τ = étale: essential surjectivity of 𝓕 ↦ 𝓕^a onto the quasi-coherent 𝒪-modules of the small étale site of S, with no hypothesis”.
-- [`isEquivalence_associatedModuleQcohOnSite'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isEquivalence_associatedModuleQcohOnSite'#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleCounit.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleCounit.lean#L344) (StacksFrontier): “clause (2) at τ = étale: 𝓕 ↦ 𝓕^a is an equivalence QCoh(𝒪_S) ⥤ QCoh(S_étale, 𝒪), with no hypothesis”.
+- [`isEquivalence_associatedModuleQcohOnSite'`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isEquivalence_associatedModuleQcohOnSite'#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleCounit.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleCounit.lean#L344) (StacksFrontier): “clause (2) at τ = étale: 𝓕 ↦ 𝓕^a is an equivalence QCoh(𝒪\_S) ⥤ QCoh(S\_étale, 𝒪), with no hypothesis”.
 
 ## Tag 05VG, a lemma
 
@@ -2143,7 +2143,7 @@ theorem isFlat_iff (f : AlgebraicGeometry.RingedToposHom X Y)
         ((f.toModulesHom.pullbackModules).obj F)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isFlat_baseAssociatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BigSiteFlatAgreement.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BigSiteFlatAgreement.lean#L431). The attribute's comment: “flat (03ER (3)), big site (Sch/S)_τ at every τ, at the comparison functor of 03DX itself”.
+**`AlgebraicGeometry.BigFppfOver.isFlat_baseAssociatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BigSiteFlatAgreement.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/BigSiteFlatAgreement.lean#L431). The attribute's comment: “flat (03ER (3)), big site (Sch/S)\_τ at every τ, at the comparison functor of 03DX itself”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03ER (3), at the big site
 > `(Sch/S)_τ`, for every `τ ∈ {Zariski, étale, smooth, syntomic, fppf}`.**  A quasi-coherent
@@ -2162,7 +2162,7 @@ public theorem isFlat_baseAssociatedModule_iff :
         ((baseAssociatedModule B S hS τ).obj 𝓗)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isCoherentOnSite_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Coherent.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Coherent.lean#L97). The attribute's comment: “coherent, small site S_Zar, S locally Noetherian”.
+**`AlgebraicGeometry.Cells05VG.isCoherentOnSite_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Coherent.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Coherent.lean#L97). The attribute's comment: “coherent, small site S\_Zar, S locally Noetherian”.
 
 > **Descent, Lemma 05VG, coherent (03DL (8)), on the small site `S_Zar`.**  For a locally
 > Noetherian scheme `S`, a quasi-coherent `𝒪_S`-module `𝓕` is coherent on `(Opens(S), 𝒪_S)` if
@@ -2175,7 +2175,7 @@ theorem isCoherentOnSite_iff_smallZariskiAssociatedModule [IsLocallyNoetherian S
       SheafOfModules.IsCoherentOnSite ((SmallZariski.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isCoherentOnSite_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Coherent.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Coherent.lean#L114). The attribute's comment: “coherent, small site S_étale, S locally Noetherian”.
+**`AlgebraicGeometry.Cells05VG.isCoherentOnSite_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Coherent.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Coherent.lean#L114). The attribute's comment: “coherent, small site S\_étale, S locally Noetherian”.
 
 > **Descent, Lemma 05VG, coherent (03DL (8)), on the small site `S_étale`.**  For a locally
 > Noetherian scheme `S`, a quasi-coherent `𝒪_S`-module `𝓕` is coherent on `(Opens(S), 𝒪_S)` if
@@ -2188,7 +2188,7 @@ theorem isCoherentOnSite_iff_smallEtaleAssociatedModule [IsLocallyNoetherian S]
       SheafOfModules.IsCoherentOnSite ((SmallEtale.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L75). The attribute's comment: “finite free, big site (Sch/S)_Zar”.
+**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L75). The attribute's comment: “finite free, big site (Sch/S)\_Zar”.
 
 > **Descent, Lemma 05VG, finite freeness, big Zariski site.**  A quasi-coherent `𝒪_S`-module
 > `𝓕` is finite free if and only if `𝓕^a` is finite free on `(Sch/S)_Zar`.
@@ -2199,7 +2199,7 @@ theorem isFiniteFree_iff_baseAssociatedModule_zariski (𝓕 : S.Modules) [h𝓕 
       SheafOfModules.IsFiniteFree _ ((BigFppfOver.baseAssociatedModule B S hS .zariski).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L83). The attribute's comment: “finite free, big site (Sch/S)_étale”.
+**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L83). The attribute's comment: “finite free, big site (Sch/S)\_étale”.
 
 > **Descent, Lemma 05VG, finite freeness, big étale site.**  A quasi-coherent `𝒪_S`-module
 > `𝓕` is finite free if and only if `𝓕^a` is finite free on `(Sch/S)_étale`.
@@ -2210,7 +2210,7 @@ theorem isFiniteFree_iff_baseAssociatedModule_etale (𝓕 : S.Modules) [h𝓕 : 
       SheafOfModules.IsFiniteFree _ ((BigFppfOver.baseAssociatedModule B S hS .etale).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L91). The attribute's comment: “finite free, big site (Sch/S)_smooth”.
+**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L91). The attribute's comment: “finite free, big site (Sch/S)\_smooth”.
 
 > **Descent, Lemma 05VG, finite freeness, big smooth site.**  A quasi-coherent `𝒪_S`-module
 > `𝓕` is finite free if and only if `𝓕^a` is finite free on `(Sch/S)_smooth`.
@@ -2221,7 +2221,7 @@ theorem isFiniteFree_iff_baseAssociatedModule_smooth (𝓕 : S.Modules) [h𝓕 :
       SheafOfModules.IsFiniteFree _ ((BigFppfOver.baseAssociatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L99). The attribute's comment: “finite free, big site (Sch/S)_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L99). The attribute's comment: “finite free, big site (Sch/S)\_syntomic”.
 
 > **Descent, Lemma 05VG, finite freeness, big syntomic site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is finite free if and only if `𝓕^a` is finite free on `(Sch/S)_syntomic`.
@@ -2234,7 +2234,7 @@ theorem isFiniteFree_iff_baseAssociatedModule_syntomic (𝓕 : S.Modules)
         ((BigFppfOver.baseAssociatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L109). The attribute's comment: “finite free, big site (Sch/S)_fppf”.
+**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L109). The attribute's comment: “finite free, big site (Sch/S)\_fppf”.
 
 > **Descent, Lemma 05VG, finite freeness, big fppf site.**  A quasi-coherent `𝒪_S`-module
 > `𝓕` is finite free if and only if `𝓕^a` is finite free on `(Sch/S)_fppf`.
@@ -2245,7 +2245,7 @@ theorem isFiniteFree_iff_baseAssociatedModule_fppf (𝓕 : S.Modules) [h𝓕 : �
       SheafOfModules.IsFiniteFree _ ((BigFppfOver.baseAssociatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L119). The attribute's comment: “finite free, small site S_Zar”.
+**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L119). The attribute's comment: “finite free, small site S\_Zar”.
 
 > **Descent, Lemma 05VG, finite freeness, small Zariski site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is finite free if and only if `𝓕^a` is finite free on `S_Zar`.
@@ -2257,7 +2257,7 @@ theorem isFiniteFree_iff_smallZariskiAssociatedModule (B : BigZariskiSite.{u}) (
       SheafOfModules.IsFiniteFree _ ((SmallZariski.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L128). The attribute's comment: “finite free, small site S_étale”.
+**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L128). The attribute's comment: “finite free, small site S\_étale”.
 
 > **Descent, Lemma 05VG, finite freeness, small étale site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is finite free if and only if `𝓕^a` is finite free on `S_étale`.
@@ -2269,7 +2269,7 @@ theorem isFiniteFree_iff_smallEtaleAssociatedModule (B : BigEtaleSite.{u}) (S : 
       SheafOfModules.IsFiniteFree _ ((SmallEtale.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L141). The attribute's comment: “finite free, small site S_smooth”.
+**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L141). The attribute's comment: “finite free, small site S\_smooth”.
 
 > **Descent, Lemma 05VG, finite freeness, small smooth site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is finite free if and only if `𝓕^a` is finite free on `S_smooth`.
@@ -2281,7 +2281,7 @@ theorem isFiniteFree_iff_smallFlatSiteAssociatedModule_smooth (𝓕 : S.Modules)
       SheafOfModules.IsFiniteFree _ ((SmallFlatSite.associatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L150). The attribute's comment: “finite free, small site S_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L150). The attribute's comment: “finite free, small site S\_syntomic”.
 
 > **Descent, Lemma 05VG, finite freeness, small syntomic site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is finite free if and only if `𝓕^a` is finite free on `S_syntomic`.
@@ -2293,7 +2293,7 @@ theorem isFiniteFree_iff_smallFlatSiteAssociatedModule_syntomic (𝓕 : S.Module
       SheafOfModules.IsFiniteFree _ ((SmallFlatSite.associatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L159). The attribute's comment: “finite free, small site S_fppf”.
+**`AlgebraicGeometry.Cells05VG.isFiniteFree_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteFree.lean#L159). The attribute's comment: “finite free, small site S\_fppf”.
 
 > **Descent, Lemma 05VG, finite freeness, small fppf site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is finite free if and only if `𝓕^a` is finite free on `S_fppf`.
@@ -2305,7 +2305,7 @@ theorem isFiniteFree_iff_smallFlatSiteAssociatedModule_fppf (𝓕 : S.Modules)
       SheafOfModules.IsFiniteFree _ ((SmallFlatSite.associatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L75). The attribute's comment: “finite locally free, big site (Sch/S)_Zar”.
+**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L75). The attribute's comment: “finite locally free, big site (Sch/S)\_Zar”.
 
 > **Descent, Lemma 05VG, finite local freeness, big Zariski site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is finite locally free if and only if `𝓕^a` is finite locally free on
@@ -2319,7 +2319,7 @@ theorem isFiniteLocallyFreeOnSite_iff_baseAssociatedModule_zariski (𝓕 : S.Mod
         ((BigFppfOver.baseAssociatedModule B S hS .zariski).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L86). The attribute's comment: “finite locally free, big site (Sch/S)_étale”.
+**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L86). The attribute's comment: “finite locally free, big site (Sch/S)\_étale”.
 
 > **Descent, Lemma 05VG, finite local freeness, big étale site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is finite locally free if and only if `𝓕^a` is finite locally free on
@@ -2333,7 +2333,7 @@ theorem isFiniteLocallyFreeOnSite_iff_baseAssociatedModule_etale (𝓕 : S.Modul
         ((BigFppfOver.baseAssociatedModule B S hS .etale).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L97). The attribute's comment: “finite locally free, big site (Sch/S)_smooth”.
+**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L97). The attribute's comment: “finite locally free, big site (Sch/S)\_smooth”.
 
 > **Descent, Lemma 05VG, finite local freeness, big smooth site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is finite locally free if and only if `𝓕^a` is finite locally free on
@@ -2347,7 +2347,7 @@ theorem isFiniteLocallyFreeOnSite_iff_baseAssociatedModule_smooth (𝓕 : S.Modu
         ((BigFppfOver.baseAssociatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L108). The attribute's comment: “finite locally free, big site (Sch/S)_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L108). The attribute's comment: “finite locally free, big site (Sch/S)\_syntomic”.
 
 > **Descent, Lemma 05VG, finite local freeness, big syntomic site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is finite locally free if and only if `𝓕^a` is finite locally free on
@@ -2361,7 +2361,7 @@ theorem isFiniteLocallyFreeOnSite_iff_baseAssociatedModule_syntomic (𝓕 : S.Mo
         ((BigFppfOver.baseAssociatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L119). The attribute's comment: “finite locally free, big site (Sch/S)_fppf”.
+**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L119). The attribute's comment: “finite locally free, big site (Sch/S)\_fppf”.
 
 > **Descent, Lemma 05VG, finite local freeness, big fppf site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is finite locally free if and only if `𝓕^a` is finite locally free on
@@ -2375,7 +2375,7 @@ theorem isFiniteLocallyFreeOnSite_iff_baseAssociatedModule_fppf (𝓕 : S.Module
         ((BigFppfOver.baseAssociatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L132). The attribute's comment: “finite locally free, small site S_Zar”.
+**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L132). The attribute's comment: “finite locally free, small site S\_Zar”.
 
 > **Descent, Lemma 05VG, finite local freeness, small Zariski site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is finite locally free if and only if `𝓕^a` is finite locally free on
@@ -2389,7 +2389,7 @@ theorem isFiniteLocallyFreeOnSite_iff_smallZariskiAssociatedModule (B : BigZaris
         ((SmallZariski.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L143). The attribute's comment: “finite locally free, small site S_étale”.
+**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L143). The attribute's comment: “finite locally free, small site S\_étale”.
 
 > **Descent, Lemma 05VG, finite local freeness, small étale site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is finite locally free if and only if `𝓕^a` is finite locally free on
@@ -2403,7 +2403,7 @@ theorem isFiniteLocallyFreeOnSite_iff_smallEtaleAssociatedModule (B : BigEtaleSi
         ((SmallEtale.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L159). The attribute's comment: “finite locally free, small site S_smooth”.
+**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L159). The attribute's comment: “finite locally free, small site S\_smooth”.
 
 > **Descent, Lemma 05VG, finite local freeness, small smooth site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is finite locally free if and only if `𝓕^a` is finite locally free on
@@ -2417,7 +2417,7 @@ theorem isFiniteLocallyFreeOnSite_iff_smallFlatSiteAssociatedModule_smooth (𝓕
         ((SmallFlatSite.associatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L170). The attribute's comment: “finite locally free, small site S_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L170). The attribute's comment: “finite locally free, small site S\_syntomic”.
 
 > **Descent, Lemma 05VG, finite local freeness, small syntomic site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is finite locally free if and only if `𝓕^a` is finite locally free on
@@ -2431,7 +2431,7 @@ theorem isFiniteLocallyFreeOnSite_iff_smallFlatSiteAssociatedModule_syntomic (�
         ((SmallFlatSite.associatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L181). The attribute's comment: “finite locally free, small site S_fppf”.
+**`AlgebraicGeometry.Cells05VG.isFiniteLocallyFreeOnSite_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteLocallyFree.lean#L181). The attribute's comment: “finite locally free, small site S\_fppf”.
 
 > **Descent, Lemma 05VG, finite local freeness, small fppf site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is finite locally free if and only if `𝓕^a` is finite locally free on
@@ -2445,7 +2445,7 @@ theorem isFiniteLocallyFreeOnSite_iff_smallFlatSiteAssociatedModule_fppf (𝓕 :
         ((SmallFlatSite.associatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L81). The attribute's comment: “of finite presentation, big site (Sch/S)_Zar”.
+**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L81). The attribute's comment: “of finite presentation, big site (Sch/S)\_Zar”.
 
 > **Descent, Lemma 05VG, finite presentation, big Zariski site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is of finite presentation if and only if `𝓕^a` is of finite presentation on
@@ -2459,7 +2459,7 @@ theorem isFinitePresentationOnSite_iff_baseAssociatedModule_zariski (𝓕 : S.Mo
         ((BigFppfOver.baseAssociatedModule B S hS .zariski).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L92). The attribute's comment: “of finite presentation, big site (Sch/S)_étale”.
+**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L92). The attribute's comment: “of finite presentation, big site (Sch/S)\_étale”.
 
 > **Descent, Lemma 05VG, finite presentation, big étale site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is of finite presentation if and only if `𝓕^a` is of finite presentation on
@@ -2473,7 +2473,7 @@ theorem isFinitePresentationOnSite_iff_baseAssociatedModule_etale (𝓕 : S.Modu
         ((BigFppfOver.baseAssociatedModule B S hS .etale).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L103). The attribute's comment: “of finite presentation, big site (Sch/S)_smooth”.
+**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L103). The attribute's comment: “of finite presentation, big site (Sch/S)\_smooth”.
 
 > **Descent, Lemma 05VG, finite presentation, big smooth site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is of finite presentation if and only if `𝓕^a` is of finite presentation on
@@ -2487,7 +2487,7 @@ theorem isFinitePresentationOnSite_iff_baseAssociatedModule_smooth (𝓕 : S.Mod
         ((BigFppfOver.baseAssociatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L114). The attribute's comment: “of finite presentation, big site (Sch/S)_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L114). The attribute's comment: “of finite presentation, big site (Sch/S)\_syntomic”.
 
 > **Descent, Lemma 05VG, finite presentation, big syntomic site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is of finite presentation if and only if `𝓕^a` is of finite presentation on
@@ -2501,7 +2501,7 @@ theorem isFinitePresentationOnSite_iff_baseAssociatedModule_syntomic (𝓕 : S.M
         ((BigFppfOver.baseAssociatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L125). The attribute's comment: “of finite presentation, big site (Sch/S)_fppf”.
+**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L125). The attribute's comment: “of finite presentation, big site (Sch/S)\_fppf”.
 
 > **Descent, Lemma 05VG, finite presentation, big fppf site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is of finite presentation if and only if `𝓕^a` is of finite presentation on
@@ -2515,7 +2515,7 @@ theorem isFinitePresentationOnSite_iff_baseAssociatedModule_fppf (𝓕 : S.Modul
         ((BigFppfOver.baseAssociatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L138). The attribute's comment: “of finite presentation, small site S_Zar”.
+**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L138). The attribute's comment: “of finite presentation, small site S\_Zar”.
 
 > **Descent, Lemma 05VG, finite presentation, small Zariski site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is of finite presentation if and only if `𝓕^a` is of finite presentation on
@@ -2529,7 +2529,7 @@ theorem isFinitePresentationOnSite_iff_smallZariskiAssociatedModule (B : BigZari
         ((SmallZariski.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L149). The attribute's comment: “of finite presentation, small site S_étale”.
+**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L149). The attribute's comment: “of finite presentation, small site S\_étale”.
 
 > **Descent, Lemma 05VG, finite presentation, small étale site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is of finite presentation if and only if `𝓕^a` is of finite presentation on
@@ -2543,7 +2543,7 @@ theorem isFinitePresentationOnSite_iff_smallEtaleAssociatedModule (B : BigEtaleS
         ((SmallEtale.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L164). The attribute's comment: “of finite presentation, small site S_smooth”.
+**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L164). The attribute's comment: “of finite presentation, small site S\_smooth”.
 
 > **Descent, Lemma 05VG, finite presentation, small smooth site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is of finite presentation if and only if `𝓕^a` is of finite presentation on
@@ -2557,7 +2557,7 @@ theorem isFinitePresentationOnSite_iff_smallFlatSiteAssociatedModule_smooth (�
         ((SmallFlatSite.associatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L175). The attribute's comment: “of finite presentation, small site S_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L175). The attribute's comment: “of finite presentation, small site S\_syntomic”.
 
 > **Descent, Lemma 05VG, finite presentation, small syntomic site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is of finite presentation if and only if `𝓕^a` is of finite presentation on
@@ -2571,7 +2571,7 @@ theorem isFinitePresentationOnSite_iff_smallFlatSiteAssociatedModule_syntomic (�
         ((SmallFlatSite.associatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L186). The attribute's comment: “of finite presentation, small site S_fppf”.
+**`AlgebraicGeometry.Cells05VG.isFinitePresentationOnSite_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FinitePresentation.lean#L186). The attribute's comment: “of finite presentation, small site S\_fppf”.
 
 > **Descent, Lemma 05VG, finite presentation, small fppf site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is of finite presentation if and only if `𝓕^a` is of finite presentation on
@@ -2585,7 +2585,7 @@ theorem isFinitePresentationOnSite_iff_smallFlatSiteAssociatedModule_fppf (𝓕 
         ((SmallFlatSite.associatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L106). The attribute's comment: “finite type, big site (Sch/S)_Zar”.
+**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L106). The attribute's comment: “finite type, big site (Sch/S)\_Zar”.
 
 > **Descent, Lemma 05VG, finite type (03DL (5)), on the big site `(Sch/S)_Zar`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is of finite type if and only if `𝓕^a` is of finite type as an
@@ -2598,7 +2598,7 @@ theorem isFiniteTypeOnSite_iff_baseAssociatedModule_zariski (𝓕 : S.Modules)
       ((BigFppfOver.baseAssociatedModule B S hS .zariski).obj 𝓕).IsFiniteTypeOnSite
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L118). The attribute's comment: “finite type, big site (Sch/S)_étale”.
+**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L118). The attribute's comment: “finite type, big site (Sch/S)\_étale”.
 
 > **Descent, Lemma 05VG, finite type (03DL (5)), on the big site `(Sch/S)_étale`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is of finite type if and only if `𝓕^a` is of finite type as an
@@ -2611,7 +2611,7 @@ theorem isFiniteTypeOnSite_iff_baseAssociatedModule_etale (𝓕 : S.Modules)
       ((BigFppfOver.baseAssociatedModule B S hS .etale).obj 𝓕).IsFiniteTypeOnSite
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L130). The attribute's comment: “finite type, big site (Sch/S)_smooth”.
+**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L130). The attribute's comment: “finite type, big site (Sch/S)\_smooth”.
 
 > **Descent, Lemma 05VG, finite type (03DL (5)), on the big site `(Sch/S)_smooth`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is of finite type if and only if `𝓕^a` is of finite type as an
@@ -2624,7 +2624,7 @@ theorem isFiniteTypeOnSite_iff_baseAssociatedModule_smooth (𝓕 : S.Modules)
       ((BigFppfOver.baseAssociatedModule B S hS .smooth).obj 𝓕).IsFiniteTypeOnSite
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L142). The attribute's comment: “finite type, big site (Sch/S)_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L142). The attribute's comment: “finite type, big site (Sch/S)\_syntomic”.
 
 > **Descent, Lemma 05VG, finite type (03DL (5)), on the big site `(Sch/S)_syntomic`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is of finite type if and only if `𝓕^a` is of finite type as an
@@ -2637,7 +2637,7 @@ theorem isFiniteTypeOnSite_iff_baseAssociatedModule_syntomic (𝓕 : S.Modules)
       ((BigFppfOver.baseAssociatedModule B S hS .syntomic).obj 𝓕).IsFiniteTypeOnSite
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L154). The attribute's comment: “finite type, big site (Sch/S)_fppf”.
+**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L154). The attribute's comment: “finite type, big site (Sch/S)\_fppf”.
 
 > **Descent, Lemma 05VG, finite type (03DL (5)), on the big site `(Sch/S)_fppf`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is of finite type if and only if `𝓕^a` is of finite type as an
@@ -2650,7 +2650,7 @@ theorem isFiniteTypeOnSite_iff_baseAssociatedModule_fppf (𝓕 : S.Modules)
       ((BigFppfOver.baseAssociatedModule B S hS .fppf).obj 𝓕).IsFiniteTypeOnSite
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L172). The attribute's comment: “finite type, small site S_Zar”.
+**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L172). The attribute's comment: “finite type, small site S\_Zar”.
 
 > **Descent, Lemma 05VG, finite type (03DL (5)), on the small site `S_Zar`.**  An
 > `𝒪_S`-module `𝓕` is of finite type if and only if `𝓕^a` is of finite type as an `𝒪`-module on
@@ -2662,7 +2662,7 @@ theorem isFiniteTypeOnSite_iff_smallZariskiAssociatedModule (𝓕 : S.Modules) :
       ((SmallZariski.associatedModule B S hS).obj 𝓕).IsFiniteTypeOnSite
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L189). The attribute's comment: “finite type, small site S_étale”.
+**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L189). The attribute's comment: “finite type, small site S\_étale”.
 
 > **Descent, Lemma 05VG, finite type (03DL (5)), on the small site `S_étale`.**  An
 > `𝒪_S`-module `𝓕` is of finite type if and only if `𝓕^a` is of finite type as an `𝒪`-module on
@@ -2674,7 +2674,7 @@ theorem isFiniteTypeOnSite_iff_smallEtaleAssociatedModule (𝓕 : S.Modules) :
       ((SmallEtale.associatedModule B S hS).obj 𝓕).IsFiniteTypeOnSite
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L206). The attribute's comment: “finite type, small site S_smooth”.
+**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L206). The attribute's comment: “finite type, small site S\_smooth”.
 
 > **Descent, Lemma 05VG, finite type (03DL (5)), on the small site `S_smooth`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is of finite type if and only if `𝓕^a` is of finite type as an
@@ -2687,7 +2687,7 @@ theorem isFiniteTypeOnSite_iff_smallFlatSiteAssociatedModule_smooth (𝓕 : S.Mo
       ((SmallFlatSite.associatedModule B S hS .smooth).obj 𝓕).IsFiniteTypeOnSite
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L218). The attribute's comment: “finite type, small site S_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L218). The attribute's comment: “finite type, small site S\_syntomic”.
 
 > **Descent, Lemma 05VG, finite type (03DL (5)), on the small site `S_syntomic`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is of finite type if and only if `𝓕^a` is of finite type as an
@@ -2700,7 +2700,7 @@ theorem isFiniteTypeOnSite_iff_smallFlatSiteAssociatedModule_syntomic (𝓕 : S.
       ((SmallFlatSite.associatedModule B S hS .syntomic).obj 𝓕).IsFiniteTypeOnSite
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L230). The attribute's comment: “finite type, small site S_fppf”.
+**`AlgebraicGeometry.Cells05VG.isFiniteTypeOnSite_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/FiniteType.lean#L230). The attribute's comment: “finite type, small site S\_fppf”.
 
 > **Descent, Lemma 05VG, finite type (03DL (5)), on the small site `S_fppf`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is of finite type if and only if `𝓕^a` is of finite type as an
@@ -2713,7 +2713,7 @@ theorem isFiniteTypeOnSite_iff_smallFlatSiteAssociatedModule_fppf (𝓕 : S.Modu
       ((SmallFlatSite.associatedModule B S hS .fppf).obj 𝓕).IsFiniteTypeOnSite
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFlat_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L87). The attribute's comment: “flat, big site (Sch/S)_Zar”.
+**`AlgebraicGeometry.Cells05VG.isFlat_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L87). The attribute's comment: “flat, big site (Sch/S)\_Zar”.
 
 > **Descent, Lemma 05VG, flat, on the big site `(Sch/S)_Zar`.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is flat if and only if `𝓕^a` is flat as an `𝒪`-module on `(Sch/S)_Zar`.
@@ -2727,7 +2727,7 @@ theorem isFlat_iff_baseAssociatedModule_zariski (B : BigFppfSite.{u}) (S : Schem
         ((BigFppfOver.baseAssociatedModule B S hS .zariski).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFlat_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L98). The attribute's comment: “flat, big site (Sch/S)_étale”.
+**`AlgebraicGeometry.Cells05VG.isFlat_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L98). The attribute's comment: “flat, big site (Sch/S)\_étale”.
 
 > **Descent, Lemma 05VG, flat, on the big site `(Sch/S)_étale`.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is flat if and only if `𝓕^a` is flat as an `𝒪`-module on `(Sch/S)_étale`.
@@ -2741,7 +2741,7 @@ theorem isFlat_iff_baseAssociatedModule_etale (B : BigFppfSite.{u}) (S : Scheme.
         ((BigFppfOver.baseAssociatedModule B S hS .etale).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFlat_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L109). The attribute's comment: “flat, big site (Sch/S)_smooth”.
+**`AlgebraicGeometry.Cells05VG.isFlat_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L109). The attribute's comment: “flat, big site (Sch/S)\_smooth”.
 
 > **Descent, Lemma 05VG, flat, on the big site `(Sch/S)_smooth`.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is flat if and only if `𝓕^a` is flat as an `𝒪`-module on `(Sch/S)_smooth`.
@@ -2755,7 +2755,7 @@ theorem isFlat_iff_baseAssociatedModule_smooth (B : BigFppfSite.{u}) (S : Scheme
         ((BigFppfOver.baseAssociatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFlat_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L121). The attribute's comment: “flat, big site (Sch/S)_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isFlat_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L121). The attribute's comment: “flat, big site (Sch/S)\_syntomic”.
 
 > **Descent, Lemma 05VG, flat, on the big site `(Sch/S)_syntomic`.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is flat if and only if `𝓕^a` is flat as an `𝒪`-module on
@@ -2770,7 +2770,7 @@ theorem isFlat_iff_baseAssociatedModule_syntomic (B : BigFppfSite.{u}) (S : Sche
         ((BigFppfOver.baseAssociatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFlat_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L132). The attribute's comment: “flat, big site (Sch/S)_fppf”.
+**`AlgebraicGeometry.Cells05VG.isFlat_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L132). The attribute's comment: “flat, big site (Sch/S)\_fppf”.
 
 > **Descent, Lemma 05VG, flat, on the big site `(Sch/S)_fppf`.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is flat if and only if `𝓕^a` is flat as an `𝒪`-module on `(Sch/S)_fppf`.
@@ -2784,7 +2784,7 @@ theorem isFlat_iff_baseAssociatedModule_fppf (B : BigFppfSite.{u}) (S : Scheme.{
         ((BigFppfOver.baseAssociatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFlat_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L148). The attribute's comment: “flat, small site S_Zar”.
+**`AlgebraicGeometry.Cells05VG.isFlat_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L148). The attribute's comment: “flat, small site S\_Zar”.
 
 > **Descent, Lemma 05VG, flat, on the small site `S_Zar`.**  A quasi-coherent `𝒪_S`-module `𝓕`
 > is flat if and only if `𝓕^a` is flat as an `𝒪`-module on `S_Zar`.
@@ -2801,7 +2801,7 @@ theorem isFlat_iff_smallZariskiAssociatedModule (B : BigZariskiSite.{u}) (S : Sc
         ((SmallZariski.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFlat_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L162). The attribute's comment: “flat, small site S_étale”.
+**`AlgebraicGeometry.Cells05VG.isFlat_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L162). The attribute's comment: “flat, small site S\_étale”.
 
 > **Descent, Lemma 05VG, flat, on the small site `S_étale`.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is flat if and only if `𝓕^a` is flat as an `𝒪`-module on `S_étale`.
@@ -2818,7 +2818,7 @@ theorem isFlat_iff_smallEtaleAssociatedModule (B : BigEtaleSite.{u}) (S : Scheme
         ((SmallEtale.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFlat_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L173). The attribute's comment: “flat, small site S_smooth”.
+**`AlgebraicGeometry.Cells05VG.isFlat_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L173). The attribute's comment: “flat, small site S\_smooth”.
 
 > **Descent, Lemma 05VG, flat, on the small site `S_smooth`.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is flat if and only if `𝓕^a` is flat as an `𝒪`-module on `S_smooth`.
@@ -2832,7 +2832,7 @@ theorem isFlat_iff_smallFlatSiteAssociatedModule_smooth (B : BigFppfSite.{u}) (S
         ((SmallFlatSite.associatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFlat_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L184). The attribute's comment: “flat, small site S_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isFlat_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L184). The attribute's comment: “flat, small site S\_syntomic”.
 
 > **Descent, Lemma 05VG, flat, on the small site `S_syntomic`.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is flat if and only if `𝓕^a` is flat as an `𝒪`-module on `S_syntomic`.
@@ -2846,7 +2846,7 @@ theorem isFlat_iff_smallFlatSiteAssociatedModule_syntomic (B : BigFppfSite.{u})
         ((SmallFlatSite.associatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFlat_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L195). The attribute's comment: “flat, small site S_fppf”.
+**`AlgebraicGeometry.Cells05VG.isFlat_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Flat.lean#L195). The attribute's comment: “flat, small site S\_fppf”.
 
 > **Descent, Lemma 05VG, flat, on the small site `S_fppf`.**  A quasi-coherent `𝒪_S`-module
 > `𝓕` is flat if and only if `𝓕^a` is flat as an `𝒪`-module on `S_fppf`.
@@ -2860,7 +2860,7 @@ theorem isFlat_iff_smallFlatSiteAssociatedModule_fppf (B : BigFppfSite.{u}) (S :
         ((SmallFlatSite.associatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFree_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L74). The attribute's comment: “free, big site (Sch/S)_Zar”.
+**`AlgebraicGeometry.Cells05VG.isFree_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L74). The attribute's comment: “free, big site (Sch/S)\_Zar”.
 
 > **Descent, Lemma 05VG, freeness, big Zariski site.**  A quasi-coherent `𝒪_S`-module `𝓕` is
 > free if and only if `𝓕^a` is free on `(Sch/S)_Zar`.
@@ -2871,7 +2871,7 @@ theorem isFree_iff_baseAssociatedModule_zariski (𝓕 : S.Modules) [h𝓕 : 𝓕
       SheafOfModules.IsFree ((BigFppfOver.baseAssociatedModule B S hS .zariski).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFree_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L82). The attribute's comment: “free, big site (Sch/S)_étale”.
+**`AlgebraicGeometry.Cells05VG.isFree_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L82). The attribute's comment: “free, big site (Sch/S)\_étale”.
 
 > **Descent, Lemma 05VG, freeness, big étale site.**  A quasi-coherent `𝒪_S`-module `𝓕` is
 > free if and only if `𝓕^a` is free on `(Sch/S)_étale`.
@@ -2882,7 +2882,7 @@ theorem isFree_iff_baseAssociatedModule_etale (𝓕 : S.Modules) [h𝓕 : 𝓕.I
       SheafOfModules.IsFree ((BigFppfOver.baseAssociatedModule B S hS .etale).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFree_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L90). The attribute's comment: “free, big site (Sch/S)_smooth”.
+**`AlgebraicGeometry.Cells05VG.isFree_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L90). The attribute's comment: “free, big site (Sch/S)\_smooth”.
 
 > **Descent, Lemma 05VG, freeness, big smooth site.**  A quasi-coherent `𝒪_S`-module `𝓕` is
 > free if and only if `𝓕^a` is free on `(Sch/S)_smooth`.
@@ -2893,7 +2893,7 @@ theorem isFree_iff_baseAssociatedModule_smooth (𝓕 : S.Modules) [h𝓕 : 𝓕.
       SheafOfModules.IsFree ((BigFppfOver.baseAssociatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFree_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L98). The attribute's comment: “free, big site (Sch/S)_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isFree_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L98). The attribute's comment: “free, big site (Sch/S)\_syntomic”.
 
 > **Descent, Lemma 05VG, freeness, big syntomic site.**  A quasi-coherent `𝒪_S`-module `𝓕` is
 > free if and only if `𝓕^a` is free on `(Sch/S)_syntomic`.
@@ -2904,7 +2904,7 @@ theorem isFree_iff_baseAssociatedModule_syntomic (𝓕 : S.Modules) [h𝓕 : �
       SheafOfModules.IsFree ((BigFppfOver.baseAssociatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFree_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L106). The attribute's comment: “free, big site (Sch/S)_fppf”.
+**`AlgebraicGeometry.Cells05VG.isFree_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L106). The attribute's comment: “free, big site (Sch/S)\_fppf”.
 
 > **Descent, Lemma 05VG, freeness, big fppf site.**  A quasi-coherent `𝒪_S`-module `𝓕` is
 > free if and only if `𝓕^a` is free on `(Sch/S)_fppf`.
@@ -2915,7 +2915,7 @@ theorem isFree_iff_baseAssociatedModule_fppf (𝓕 : S.Modules) [h𝓕 : 𝓕.Is
       SheafOfModules.IsFree ((BigFppfOver.baseAssociatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFree_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L116). The attribute's comment: “free, small site S_Zar”.
+**`AlgebraicGeometry.Cells05VG.isFree_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L116). The attribute's comment: “free, small site S\_Zar”.
 
 > **Descent, Lemma 05VG, freeness, small Zariski site.**  A quasi-coherent `𝒪_S`-module `𝓕`
 > is free if and only if `𝓕^a` is free on `S_Zar`.
@@ -2927,7 +2927,7 @@ theorem isFree_iff_smallZariskiAssociatedModule (B : BigZariskiSite.{u}) (S : Sc
       SheafOfModules.IsFree ((SmallZariski.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFree_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L125). The attribute's comment: “free, small site S_étale”.
+**`AlgebraicGeometry.Cells05VG.isFree_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L125). The attribute's comment: “free, small site S\_étale”.
 
 > **Descent, Lemma 05VG, freeness, small étale site.**  A quasi-coherent `𝒪_S`-module `𝓕`
 > is free if and only if `𝓕^a` is free on `S_étale`.
@@ -2939,7 +2939,7 @@ theorem isFree_iff_smallEtaleAssociatedModule (B : BigEtaleSite.{u}) (S : Scheme
       SheafOfModules.IsFree ((SmallEtale.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFree_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L138). The attribute's comment: “free, small site S_smooth”.
+**`AlgebraicGeometry.Cells05VG.isFree_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L138). The attribute's comment: “free, small site S\_smooth”.
 
 > **Descent, Lemma 05VG, freeness, small smooth site.**  A quasi-coherent `𝒪_S`-module `𝓕`
 > is free if and only if `𝓕^a` is free on `S_smooth`.
@@ -2951,7 +2951,7 @@ theorem isFree_iff_smallFlatSiteAssociatedModule_smooth (𝓕 : S.Modules)
       SheafOfModules.IsFree ((SmallFlatSite.associatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFree_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L147). The attribute's comment: “free, small site S_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isFree_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L147). The attribute's comment: “free, small site S\_syntomic”.
 
 > **Descent, Lemma 05VG, freeness, small syntomic site.**  A quasi-coherent `𝒪_S`-module `𝓕`
 > is free if and only if `𝓕^a` is free on `S_syntomic`.
@@ -2963,7 +2963,7 @@ theorem isFree_iff_smallFlatSiteAssociatedModule_syntomic (𝓕 : S.Modules)
       SheafOfModules.IsFree ((SmallFlatSite.associatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isFree_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L156). The attribute's comment: “free, small site S_fppf”.
+**`AlgebraicGeometry.Cells05VG.isFree_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/Free.lean#L156). The attribute's comment: “free, small site S\_fppf”.
 
 > **Descent, Lemma 05VG, freeness, small fppf site.**  A quasi-coherent `𝒪_S`-module `𝓕`
 > is free if and only if `𝓕^a` is free on `S_fppf`.
@@ -2975,7 +2975,7 @@ theorem isFree_iff_smallFlatSiteAssociatedModule_fppf (𝓕 : S.Modules)
       SheafOfModules.IsFree ((SmallFlatSite.associatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L168). The attribute's comment: “generated by finitely many global sections, big site (Sch/S)_Zar”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L168). The attribute's comment: “generated by finitely many global sections, big site (Sch/S)\_Zar”.
 
 > **Descent, Lemma 05VG, generated by finitely many global sections (03DE (5)), on the big site
 > `(Sch/S)_Zar`.**  A quasi-coherent `𝒪_S`-module `𝓕` is generated by finitely many global sections
@@ -2989,7 +2989,7 @@ theorem hasFiniteGlobalGenerators_iff_baseAssociatedModule_zariski (𝓕 : S.Mod
       ((BigFppfOver.baseAssociatedModule B S hS .zariski).obj 𝓕).HasFiniteGlobalGenerators
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L181). The attribute's comment: “generated by finitely many global sections, big site (Sch/S)_étale”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L181). The attribute's comment: “generated by finitely many global sections, big site (Sch/S)\_étale”.
 
 > **Descent, Lemma 05VG, generated by finitely many global sections (03DE (5)), on the big site
 > `(Sch/S)_étale`.**  A quasi-coherent `𝒪_S`-module `𝓕` is generated by finitely many global sections
@@ -3003,7 +3003,7 @@ theorem hasFiniteGlobalGenerators_iff_baseAssociatedModule_etale (𝓕 : S.Modul
       ((BigFppfOver.baseAssociatedModule B S hS .etale).obj 𝓕).HasFiniteGlobalGenerators
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L194). The attribute's comment: “generated by finitely many global sections, big site (Sch/S)_smooth”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L194). The attribute's comment: “generated by finitely many global sections, big site (Sch/S)\_smooth”.
 
 > **Descent, Lemma 05VG, generated by finitely many global sections (03DE (5)), on the big site
 > `(Sch/S)_smooth`.**  A quasi-coherent `𝒪_S`-module `𝓕` is generated by finitely many global
@@ -3017,7 +3017,7 @@ theorem hasFiniteGlobalGenerators_iff_baseAssociatedModule_smooth (𝓕 : S.Modu
       ((BigFppfOver.baseAssociatedModule B S hS .smooth).obj 𝓕).HasFiniteGlobalGenerators
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L207). The attribute's comment: “generated by finitely many global sections, big site (Sch/S)_syntomic”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L207). The attribute's comment: “generated by finitely many global sections, big site (Sch/S)\_syntomic”.
 
 > **Descent, Lemma 05VG, generated by finitely many global sections (03DE (5)), on the big site
 > `(Sch/S)_syntomic`.**  A quasi-coherent `𝒪_S`-module `𝓕` is generated by finitely many global
@@ -3031,7 +3031,7 @@ theorem hasFiniteGlobalGenerators_iff_baseAssociatedModule_syntomic (𝓕 : S.Mo
       ((BigFppfOver.baseAssociatedModule B S hS .syntomic).obj 𝓕).HasFiniteGlobalGenerators
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L220). The attribute's comment: “generated by finitely many global sections, big site (Sch/S)_fppf”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L220). The attribute's comment: “generated by finitely many global sections, big site (Sch/S)\_fppf”.
 
 > **Descent, Lemma 05VG, generated by finitely many global sections (03DE (5)), on the big site
 > `(Sch/S)_fppf`.**  A quasi-coherent `𝒪_S`-module `𝓕` is generated by finitely many global sections
@@ -3045,7 +3045,7 @@ theorem hasFiniteGlobalGenerators_iff_baseAssociatedModule_fppf (𝓕 : S.Module
       ((BigFppfOver.baseAssociatedModule B S hS .fppf).obj 𝓕).HasFiniteGlobalGenerators
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L239). The attribute's comment: “generated by finitely many global sections, small site S_Zar”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L239). The attribute's comment: “generated by finitely many global sections, small site S\_Zar”.
 
 > **Descent, Lemma 05VG, generated by finitely many global sections (03DE (5)), on the small site
 > `S_Zar`.**  A quasi-coherent `𝒪_S`-module `𝓕` is generated by finitely many global sections if and
@@ -3059,7 +3059,7 @@ theorem hasFiniteGlobalGenerators_iff_smallZariskiAssociatedModule (𝓕 : S.Mod
       ((SmallZariski.associatedModule B S hS).obj 𝓕).HasFiniteGlobalGenerators
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L257). The attribute's comment: “generated by finitely many global sections, small site S_étale”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L257). The attribute's comment: “generated by finitely many global sections, small site S\_étale”.
 
 > **Descent, Lemma 05VG, generated by finitely many global sections (03DE (5)), on the small site
 > `S_étale`.**  A quasi-coherent `𝒪_S`-module `𝓕` is generated by finitely many global sections if
@@ -3072,7 +3072,7 @@ theorem hasFiniteGlobalGenerators_iff_smallEtaleAssociatedModule (𝓕 : S.Modul
       ((SmallEtale.associatedModule B S hS).obj 𝓕).HasFiniteGlobalGenerators
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L275). The attribute's comment: “generated by finitely many global sections, small site S_smooth”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L275). The attribute's comment: “generated by finitely many global sections, small site S\_smooth”.
 
 > **Descent, Lemma 05VG, generated by finitely many global sections (03DE (5)), on the small site
 > `S_smooth`.**  A quasi-coherent `𝒪_S`-module `𝓕` is generated by finitely many global sections if
@@ -3085,7 +3085,7 @@ theorem hasFiniteGlobalGenerators_iff_smallFlatSiteAssociatedModule_smooth (𝓕
       ((SmallFlatSite.associatedModule B S hS .smooth).obj 𝓕).HasFiniteGlobalGenerators
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L288). The attribute's comment: “generated by finitely many global sections, small site S_syntomic”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L288). The attribute's comment: “generated by finitely many global sections, small site S\_syntomic”.
 
 > **Descent, Lemma 05VG, generated by finitely many global sections (03DE (5)), on the small site
 > `S_syntomic`.**  A quasi-coherent `𝒪_S`-module `𝓕` is generated by finitely many global sections if
@@ -3099,7 +3099,7 @@ theorem hasFiniteGlobalGenerators_iff_smallFlatSiteAssociatedModule_syntomic (�
       ((SmallFlatSite.associatedModule B S hS .syntomic).obj 𝓕).HasFiniteGlobalGenerators
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L300). The attribute's comment: “generated by finitely many global sections, small site S_fppf”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalGenerators_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByFinitelyManyGlobalSections.lean#L300). The attribute's comment: “generated by finitely many global sections, small site S\_fppf”.
 
 > **Descent, Lemma 05VG, generated by finitely many global sections (03DE (5)), on the small site
 > `S_fppf`.**  A quasi-coherent `𝒪_S`-module `𝓕` is generated by finitely many global sections if and
@@ -3112,7 +3112,7 @@ theorem hasFiniteGlobalGenerators_iff_smallFlatSiteAssociatedModule_fppf (𝓕 :
       ((SmallFlatSite.associatedModule B S hS .fppf).obj 𝓕).HasFiniteGlobalGenerators
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L80). The attribute's comment: “generated by global sections, big site (Sch/S)_Zar”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L80). The attribute's comment: “generated by global sections, big site (Sch/S)\_Zar”.
 
 > **Descent, Lemma 05VG, generation by global sections, big Zariski site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is generated by global sections if and only if `𝓕^a` is generated by global
@@ -3126,7 +3126,7 @@ theorem isGeneratedByGlobalSections_iff_baseAssociatedModule_zariski (𝓕 : S.M
         ((BigFppfOver.baseAssociatedModule B S hS .zariski).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L92). The attribute's comment: “generated by global sections, big site (Sch/S)_étale”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L92). The attribute's comment: “generated by global sections, big site (Sch/S)\_étale”.
 
 > **Descent, Lemma 05VG, generation by global sections, big étale site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is generated by global sections if and only if `𝓕^a` is generated by global
@@ -3140,7 +3140,7 @@ theorem isGeneratedByGlobalSections_iff_baseAssociatedModule_etale (𝓕 : S.Mod
         ((BigFppfOver.baseAssociatedModule B S hS .etale).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L104). The attribute's comment: “generated by global sections, big site (Sch/S)_smooth”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L104). The attribute's comment: “generated by global sections, big site (Sch/S)\_smooth”.
 
 > **Descent, Lemma 05VG, generation by global sections, big smooth site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is generated by global sections if and only if `𝓕^a` is generated by global
@@ -3154,7 +3154,7 @@ theorem isGeneratedByGlobalSections_iff_baseAssociatedModule_smooth (𝓕 : S.Mo
         ((BigFppfOver.baseAssociatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L116). The attribute's comment: “generated by global sections, big site (Sch/S)_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L116). The attribute's comment: “generated by global sections, big site (Sch/S)\_syntomic”.
 
 > **Descent, Lemma 05VG, generation by global sections, big syntomic site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is generated by global sections if and only if `𝓕^a` is generated by global
@@ -3168,7 +3168,7 @@ theorem isGeneratedByGlobalSections_iff_baseAssociatedModule_syntomic (𝓕 : S.
         ((BigFppfOver.baseAssociatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L128). The attribute's comment: “generated by global sections, big site (Sch/S)_fppf”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L128). The attribute's comment: “generated by global sections, big site (Sch/S)\_fppf”.
 
 > **Descent, Lemma 05VG, generation by global sections, big fppf site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is generated by global sections if and only if `𝓕^a` is generated by global
@@ -3182,7 +3182,7 @@ theorem isGeneratedByGlobalSections_iff_baseAssociatedModule_fppf (𝓕 : S.Modu
         ((BigFppfOver.baseAssociatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L142). The attribute's comment: “generated by global sections, small site S_Zar”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L142). The attribute's comment: “generated by global sections, small site S\_Zar”.
 
 > **Descent, Lemma 05VG, generation by global sections, small Zariski site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is generated by global sections if and only if `𝓕^a` is generated by global
@@ -3196,7 +3196,7 @@ theorem isGeneratedByGlobalSections_iff_smallZariskiAssociatedModule (B : BigZar
         ((SmallZariski.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L153). The attribute's comment: “generated by global sections, small site S_étale”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L153). The attribute's comment: “generated by global sections, small site S\_étale”.
 
 > **Descent, Lemma 05VG, generation by global sections, small étale site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is generated by global sections if and only if `𝓕^a` is generated by global
@@ -3210,7 +3210,7 @@ theorem isGeneratedByGlobalSections_iff_smallEtaleAssociatedModule (B : BigEtale
         ((SmallEtale.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L169). The attribute's comment: “generated by global sections, small site S_smooth”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L169). The attribute's comment: “generated by global sections, small site S\_smooth”.
 
 > **Descent, Lemma 05VG, generation by global sections, small smooth site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is generated by global sections if and only if `𝓕^a` is generated by global
@@ -3224,7 +3224,7 @@ theorem isGeneratedByGlobalSections_iff_smallFlatSiteAssociatedModule_smooth (�
         ((SmallFlatSite.associatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L181). The attribute's comment: “generated by global sections, small site S_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L181). The attribute's comment: “generated by global sections, small site S\_syntomic”.
 
 > **Descent, Lemma 05VG, generation by global sections, small syntomic site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is generated by global sections if and only if `𝓕^a` is generated by global
@@ -3238,7 +3238,7 @@ theorem isGeneratedByGlobalSections_iff_smallFlatSiteAssociatedModule_syntomic (
         ((SmallFlatSite.associatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L193). The attribute's comment: “generated by global sections, small site S_fppf”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSections_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByGlobalSections.lean#L193). The attribute's comment: “generated by global sections, small site S\_fppf”.
 
 > **Descent, Lemma 05VG, generation by global sections, small fppf site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is generated by global sections if and only if `𝓕^a` is generated by global
@@ -3252,7 +3252,7 @@ theorem isGeneratedByGlobalSections_iff_smallFlatSiteAssociatedModule_fppf (𝓕
         ((SmallFlatSite.associatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L92). The attribute's comment: “generated by r global sections, big site (Sch/S)_Zar”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L92). The attribute's comment: “generated by r global sections, big site (Sch/S)\_Zar”.
 
 > **Descent, Lemma 05VG, "generated by `r` global sections", on `(Sch/S)_Zar`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is generated by `r` global sections if and only if `𝓕^a` is
@@ -3266,7 +3266,7 @@ theorem isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule_zariski (𝓕
         ((BigFppfOver.baseAssociatedModule B S hS .zariski).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L103). The attribute's comment: “generated by r global sections, big site (Sch/S)_étale”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L103). The attribute's comment: “generated by r global sections, big site (Sch/S)\_étale”.
 
 > **Descent, Lemma 05VG, "generated by `r` global sections", on `(Sch/S)_étale`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is generated by `r` global sections if and only if `𝓕^a` is
@@ -3280,7 +3280,7 @@ theorem isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule_etale (𝓕 :
         ((BigFppfOver.baseAssociatedModule B S hS .etale).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L114). The attribute's comment: “generated by r global sections, big site (Sch/S)_smooth”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L114). The attribute's comment: “generated by r global sections, big site (Sch/S)\_smooth”.
 
 > **Descent, Lemma 05VG, "generated by `r` global sections", on `(Sch/S)_smooth`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is generated by `r` global sections if and only if `𝓕^a` is
@@ -3294,7 +3294,7 @@ theorem isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule_smooth (𝓕 
         ((BigFppfOver.baseAssociatedModule B S hS .smooth).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L125). The attribute's comment: “generated by r global sections, big site (Sch/S)_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L125). The attribute's comment: “generated by r global sections, big site (Sch/S)\_syntomic”.
 
 > **Descent, Lemma 05VG, "generated by `r` global sections", on `(Sch/S)_syntomic`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is generated by `r` global sections if and only if `𝓕^a` is
@@ -3308,7 +3308,7 @@ theorem isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule_syntomic (�
         ((BigFppfOver.baseAssociatedModule B S hS .syntomic).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L136). The attribute's comment: “generated by r global sections, big site (Sch/S)_fppf”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L136). The attribute's comment: “generated by r global sections, big site (Sch/S)\_fppf”.
 
 > **Descent, Lemma 05VG, "generated by `r` global sections", on `(Sch/S)_fppf`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is generated by `r` global sections if and only if `𝓕^a` is
@@ -3322,7 +3322,7 @@ theorem isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule_fppf (𝓕 : 
         ((BigFppfOver.baseAssociatedModule B S hS .fppf).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L154). The attribute's comment: “generated by r global sections, small site S_Zar”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L154). The attribute's comment: “generated by r global sections, small site S\_Zar”.
 
 > **Descent, Lemma 05VG, "generated by `r` global sections", on `S_Zar`.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is generated by `r` global sections if and only if `𝓕^a` is generated by `r`
@@ -3340,7 +3340,7 @@ theorem isGeneratedByGlobalSectionsOfCard_iff_smallZariskiAssociatedModule
         ((SmallZariski.associatedModule B S hS).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L166). The attribute's comment: “generated by r global sections, small site S_étale”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L166). The attribute's comment: “generated by r global sections, small site S\_étale”.
 
 > **Descent, Lemma 05VG, "generated by `r` global sections", on `S_étale`.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is generated by `r` global sections if and only if `𝓕^a` is generated by `r`
@@ -3355,7 +3355,7 @@ theorem isGeneratedByGlobalSectionsOfCard_iff_smallEtaleAssociatedModule
         ((SmallEtale.associatedModule B S hS).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L184). The attribute's comment: “generated by r global sections, small site S_smooth”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L184). The attribute's comment: “generated by r global sections, small site S\_smooth”.
 
 > **Descent, Lemma 05VG, "generated by `r` global sections", on `S_smooth`.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is generated by `r` global sections if and only if `𝓕^a` is generated by `r`
@@ -3369,7 +3369,7 @@ theorem isGeneratedByGlobalSectionsOfCard_iff_smallFlatSiteAssociatedModule_smoo
         ((SmallFlatSite.associatedModule B S hS .smooth).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L195). The attribute's comment: “generated by r global sections, small site S_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L195). The attribute's comment: “generated by r global sections, small site S\_syntomic”.
 
 > **Descent, Lemma 05VG, "generated by `r` global sections", on `S_syntomic`.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is generated by `r` global sections if and only if `𝓕^a` is generated by `r`
@@ -3383,7 +3383,7 @@ theorem isGeneratedByGlobalSectionsOfCard_iff_smallFlatSiteAssociatedModule_synt
         ((SmallFlatSite.associatedModule B S hS .syntomic).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L206). The attribute's comment: “generated by r global sections, small site S_fppf”.
+**`AlgebraicGeometry.Cells05VG.isGeneratedByGlobalSectionsOfCard_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GeneratedByRGlobalSections.lean#L206). The attribute's comment: “generated by r global sections, small site S\_fppf”.
 
 > **Descent, Lemma 05VG, "generated by `r` global sections", on `S_fppf`.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is generated by `r` global sections if and only if `𝓕^a` is generated by `r`
@@ -3397,7 +3397,7 @@ theorem isGeneratedByGlobalSectionsOfCard_iff_smallFlatSiteAssociatedModule_fppf
         ((SmallFlatSite.associatedModule B S hS .fppf).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L151). The attribute's comment: “having a global finite presentation, big site (Sch/S)_Zar”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L151). The attribute's comment: “having a global finite presentation, big site (Sch/S)\_Zar”.
 
 > **Descent, Lemma 05VG, having a global finite presentation, big Zariski site.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` has a global finite presentation if and only if `𝓕^a` has one on
@@ -3411,7 +3411,7 @@ theorem hasFiniteGlobalPresentation_iff_baseAssociatedModule_zariski (𝓕 : S.M
         ((BigFppfOver.baseAssociatedModule B S hS .zariski).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L164). The attribute's comment: “having a global finite presentation, big site (Sch/S)_étale”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L164). The attribute's comment: “having a global finite presentation, big site (Sch/S)\_étale”.
 
 > **Descent, Lemma 05VG, having a global finite presentation, big étale site.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` has a global finite presentation if and only if `𝓕^a` has one on
@@ -3425,7 +3425,7 @@ theorem hasFiniteGlobalPresentation_iff_baseAssociatedModule_etale (𝓕 : S.Mod
         ((BigFppfOver.baseAssociatedModule B S hS .etale).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L177). The attribute's comment: “having a global finite presentation, big site (Sch/S)_smooth”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L177). The attribute's comment: “having a global finite presentation, big site (Sch/S)\_smooth”.
 
 > **Descent, Lemma 05VG, having a global finite presentation, big smooth site.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` has a global finite presentation if and only if `𝓕^a` has one on
@@ -3439,7 +3439,7 @@ theorem hasFiniteGlobalPresentation_iff_baseAssociatedModule_smooth (𝓕 : S.Mo
         ((BigFppfOver.baseAssociatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L190). The attribute's comment: “having a global finite presentation, big site (Sch/S)_syntomic”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L190). The attribute's comment: “having a global finite presentation, big site (Sch/S)\_syntomic”.
 
 > **Descent, Lemma 05VG, having a global finite presentation, big syntomic site.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` has a global finite presentation if and only if `𝓕^a` has one on
@@ -3453,7 +3453,7 @@ theorem hasFiniteGlobalPresentation_iff_baseAssociatedModule_syntomic (𝓕 : S.
         ((BigFppfOver.baseAssociatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L203). The attribute's comment: “having a global finite presentation, big site (Sch/S)_fppf”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L203). The attribute's comment: “having a global finite presentation, big site (Sch/S)\_fppf”.
 
 > **Descent, Lemma 05VG, having a global finite presentation, big fppf site.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` has a global finite presentation if and only if `𝓕^a` has one on
@@ -3467,7 +3467,7 @@ theorem hasFiniteGlobalPresentation_iff_baseAssociatedModule_fppf (𝓕 : S.Modu
         ((BigFppfOver.baseAssociatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L218). The attribute's comment: “having a global finite presentation, small site S_Zar”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L218). The attribute's comment: “having a global finite presentation, small site S\_Zar”.
 
 > **Descent, Lemma 05VG, having a global finite presentation, small Zariski site.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` has a global finite presentation if and only if `𝓕^a` has one on
@@ -3481,7 +3481,7 @@ theorem hasFiniteGlobalPresentation_iff_smallZariskiAssociatedModule (B : BigZar
         ((SmallZariski.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L230). The attribute's comment: “having a global finite presentation, small site S_étale”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L230). The attribute's comment: “having a global finite presentation, small site S\_étale”.
 
 > **Descent, Lemma 05VG, having a global finite presentation, small étale site.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` has a global finite presentation if and only if `𝓕^a` has one on
@@ -3495,7 +3495,7 @@ theorem hasFiniteGlobalPresentation_iff_smallEtaleAssociatedModule (B : BigEtale
         ((SmallEtale.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L246). The attribute's comment: “having a global finite presentation, small site S_smooth”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L246). The attribute's comment: “having a global finite presentation, small site S\_smooth”.
 
 > **Descent, Lemma 05VG, having a global finite presentation, small smooth site.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` has a global finite presentation if and only if `𝓕^a` has one on
@@ -3509,7 +3509,7 @@ theorem hasFiniteGlobalPresentation_iff_smallFlatSiteAssociatedModule_smooth (�
         ((SmallFlatSite.associatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L259). The attribute's comment: “having a global finite presentation, small site S_syntomic”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L259). The attribute's comment: “having a global finite presentation, small site S\_syntomic”.
 
 > **Descent, Lemma 05VG, having a global finite presentation, small syntomic site.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` has a global finite presentation if and only if `𝓕^a` has one on
@@ -3523,7 +3523,7 @@ theorem hasFiniteGlobalPresentation_iff_smallFlatSiteAssociatedModule_syntomic (
         ((SmallFlatSite.associatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L272). The attribute's comment: “having a global finite presentation, small site S_fppf”.
+**`AlgebraicGeometry.Cells05VG.hasFiniteGlobalPresentation_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalFinitePresentation.lean#L272). The attribute's comment: “having a global finite presentation, small site S\_fppf”.
 
 > **Descent, Lemma 05VG, having a global finite presentation, small fppf site.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` has a global finite presentation if and only if `𝓕^a` has one on
@@ -3537,7 +3537,7 @@ theorem hasFiniteGlobalPresentation_iff_smallFlatSiteAssociatedModule_fppf (𝓕
         ((SmallFlatSite.associatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L130). The attribute's comment: “having a global presentation, big site (Sch/S)_Zar”.
+**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L130). The attribute's comment: “having a global presentation, big site (Sch/S)\_Zar”.
 
 > **Descent, Lemma 05VG, having a global presentation, big Zariski site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` has a global presentation if and only if `𝓕^a` has a global presentation on
@@ -3551,7 +3551,7 @@ theorem hasGlobalPresentation_iff_baseAssociatedModule_zariski (𝓕 : S.Modules
         ((BigFppfOver.baseAssociatedModule B S hS .zariski).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L143). The attribute's comment: “having a global presentation, big site (Sch/S)_étale”.
+**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L143). The attribute's comment: “having a global presentation, big site (Sch/S)\_étale”.
 
 > **Descent, Lemma 05VG, having a global presentation, big étale site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` has a global presentation if and only if `𝓕^a` has a global presentation on
@@ -3565,7 +3565,7 @@ theorem hasGlobalPresentation_iff_baseAssociatedModule_etale (𝓕 : S.Modules)
         ((BigFppfOver.baseAssociatedModule B S hS .etale).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L156). The attribute's comment: “having a global presentation, big site (Sch/S)_smooth”.
+**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L156). The attribute's comment: “having a global presentation, big site (Sch/S)\_smooth”.
 
 > **Descent, Lemma 05VG, having a global presentation, big smooth site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` has a global presentation if and only if `𝓕^a` has a global presentation on
@@ -3579,7 +3579,7 @@ theorem hasGlobalPresentation_iff_baseAssociatedModule_smooth (𝓕 : S.Modules)
         ((BigFppfOver.baseAssociatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L169). The attribute's comment: “having a global presentation, big site (Sch/S)_syntomic”.
+**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L169). The attribute's comment: “having a global presentation, big site (Sch/S)\_syntomic”.
 
 > **Descent, Lemma 05VG, having a global presentation, big syntomic site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` has a global presentation if and only if `𝓕^a` has a global presentation on
@@ -3593,7 +3593,7 @@ theorem hasGlobalPresentation_iff_baseAssociatedModule_syntomic (𝓕 : S.Module
         ((BigFppfOver.baseAssociatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L182). The attribute's comment: “having a global presentation, big site (Sch/S)_fppf”.
+**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L182). The attribute's comment: “having a global presentation, big site (Sch/S)\_fppf”.
 
 > **Descent, Lemma 05VG, having a global presentation, big fppf site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` has a global presentation if and only if `𝓕^a` has a global presentation on
@@ -3607,7 +3607,7 @@ theorem hasGlobalPresentation_iff_baseAssociatedModule_fppf (𝓕 : S.Modules)
         ((BigFppfOver.baseAssociatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L197). The attribute's comment: “having a global presentation, small site S_Zar”.
+**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L197). The attribute's comment: “having a global presentation, small site S\_Zar”.
 
 > **Descent, Lemma 05VG, having a global presentation, small Zariski site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` has a global presentation if and only if `𝓕^a` has a global presentation on
@@ -3620,7 +3620,7 @@ theorem hasGlobalPresentation_iff_smallZariskiAssociatedModule (B : BigZariskiSi
       SheafOfModules.HasGlobalPresentation ((SmallZariski.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L209). The attribute's comment: “having a global presentation, small site S_étale”.
+**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L209). The attribute's comment: “having a global presentation, small site S\_étale”.
 
 > **Descent, Lemma 05VG, having a global presentation, small étale site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` has a global presentation if and only if `𝓕^a` has a global presentation on
@@ -3633,7 +3633,7 @@ theorem hasGlobalPresentation_iff_smallEtaleAssociatedModule (B : BigEtaleSite.{
       SheafOfModules.HasGlobalPresentation ((SmallEtale.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L225). The attribute's comment: “having a global presentation, small site S_smooth”.
+**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L225). The attribute's comment: “having a global presentation, small site S\_smooth”.
 
 > **Descent, Lemma 05VG, having a global presentation, small smooth site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` has a global presentation if and only if `𝓕^a` has a global presentation on
@@ -3647,7 +3647,7 @@ theorem hasGlobalPresentation_iff_smallFlatSiteAssociatedModule_smooth (𝓕 : S
         ((SmallFlatSite.associatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L238). The attribute's comment: “having a global presentation, small site S_syntomic”.
+**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L238). The attribute's comment: “having a global presentation, small site S\_syntomic”.
 
 > **Descent, Lemma 05VG, having a global presentation, small syntomic site.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` has a global presentation if and only if `𝓕^a` has a global
@@ -3661,7 +3661,7 @@ theorem hasGlobalPresentation_iff_smallFlatSiteAssociatedModule_syntomic (𝓕 :
         ((SmallFlatSite.associatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L251). The attribute's comment: “having a global presentation, small site S_fppf”.
+**`AlgebraicGeometry.Cells05VG.hasGlobalPresentation_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/GlobalPresentation.lean#L251). The attribute's comment: “having a global presentation, small site S\_fppf”.
 
 > **Descent, Lemma 05VG, having a global presentation, small fppf site.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` has a global presentation if and only if `𝓕^a` has a global presentation on
@@ -3675,7 +3675,7 @@ theorem hasGlobalPresentation_iff_smallFlatSiteAssociatedModule_fppf (𝓕 : S.M
         ((SmallFlatSite.associatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L91). The attribute's comment: “locally generated by r sections, big site (Sch/S)_Zar”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L91). The attribute's comment: “locally generated by r sections, big site (Sch/S)\_Zar”.
 
 > **Descent, Lemma 05VG, "locally generated by `r` sections", on `(Sch/S)_Zar`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is locally generated by `r` sections if and only if `𝓕^a` is
@@ -3689,7 +3689,7 @@ theorem isLocallyGeneratedByOnSite_iff_baseAssociatedModule_zariski (𝓕 : S.Mo
         ((BigFppfOver.baseAssociatedModule B S hS .zariski).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L102). The attribute's comment: “locally generated by r sections, big site (Sch/S)_étale”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L102). The attribute's comment: “locally generated by r sections, big site (Sch/S)\_étale”.
 
 > **Descent, Lemma 05VG, "locally generated by `r` sections", on `(Sch/S)_étale`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is locally generated by `r` sections if and only if `𝓕^a` is
@@ -3703,7 +3703,7 @@ theorem isLocallyGeneratedByOnSite_iff_baseAssociatedModule_etale (𝓕 : S.Modu
         ((BigFppfOver.baseAssociatedModule B S hS .etale).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L113). The attribute's comment: “locally generated by r sections, big site (Sch/S)_smooth”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L113). The attribute's comment: “locally generated by r sections, big site (Sch/S)\_smooth”.
 
 > **Descent, Lemma 05VG, "locally generated by `r` sections", on `(Sch/S)_smooth`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is locally generated by `r` sections if and only if `𝓕^a` is
@@ -3717,7 +3717,7 @@ theorem isLocallyGeneratedByOnSite_iff_baseAssociatedModule_smooth (𝓕 : S.Mod
         ((BigFppfOver.baseAssociatedModule B S hS .smooth).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L124). The attribute's comment: “locally generated by r sections, big site (Sch/S)_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L124). The attribute's comment: “locally generated by r sections, big site (Sch/S)\_syntomic”.
 
 > **Descent, Lemma 05VG, "locally generated by `r` sections", on `(Sch/S)_syntomic`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is locally generated by `r` sections if and only if `𝓕^a` is
@@ -3731,7 +3731,7 @@ theorem isLocallyGeneratedByOnSite_iff_baseAssociatedModule_syntomic (𝓕 : S.M
         ((BigFppfOver.baseAssociatedModule B S hS .syntomic).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L135). The attribute's comment: “locally generated by r sections, big site (Sch/S)_fppf”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L135). The attribute's comment: “locally generated by r sections, big site (Sch/S)\_fppf”.
 
 > **Descent, Lemma 05VG, "locally generated by `r` sections", on `(Sch/S)_fppf`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is locally generated by `r` sections if and only if `𝓕^a` is
@@ -3745,7 +3745,7 @@ theorem isLocallyGeneratedByOnSite_iff_baseAssociatedModule_fppf (𝓕 : S.Modul
         ((BigFppfOver.baseAssociatedModule B S hS .fppf).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L153). The attribute's comment: “locally generated by r sections, small site S_Zar”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L153). The attribute's comment: “locally generated by r sections, small site S\_Zar”.
 
 > **Descent, Lemma 05VG, "locally generated by `r` sections", on `S_Zar`.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is locally generated by `r` sections if and only if `𝓕^a` is locally generated
@@ -3762,7 +3762,7 @@ theorem isLocallyGeneratedByOnSite_iff_smallZariskiAssociatedModule (B : BigZari
         ((SmallZariski.associatedModule B S hS).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L164). The attribute's comment: “locally generated by r sections, small site S_étale”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L164). The attribute's comment: “locally generated by r sections, small site S\_étale”.
 
 > **Descent, Lemma 05VG, "locally generated by `r` sections", on `S_étale`.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is locally generated by `r` sections if and only if `𝓕^a` is locally generated
@@ -3776,7 +3776,7 @@ theorem isLocallyGeneratedByOnSite_iff_smallEtaleAssociatedModule (B : BigEtaleS
         ((SmallEtale.associatedModule B S hS).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L181). The attribute's comment: “locally generated by r sections, small site S_smooth”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L181). The attribute's comment: “locally generated by r sections, small site S\_smooth”.
 
 > **Descent, Lemma 05VG, "locally generated by `r` sections", on `S_smooth`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is locally generated by `r` sections if and only if `𝓕^a` is
@@ -3790,7 +3790,7 @@ theorem isLocallyGeneratedByOnSite_iff_smallFlatSiteAssociatedModule_smooth (�
         ((SmallFlatSite.associatedModule B S hS .smooth).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L192). The attribute's comment: “locally generated by r sections, small site S_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L192). The attribute's comment: “locally generated by r sections, small site S\_syntomic”.
 
 > **Descent, Lemma 05VG, "locally generated by `r` sections", on `S_syntomic`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is locally generated by `r` sections if and only if `𝓕^a` is
@@ -3804,7 +3804,7 @@ theorem isLocallyGeneratedByOnSite_iff_smallFlatSiteAssociatedModule_syntomic (�
         ((SmallFlatSite.associatedModule B S hS .syntomic).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L203). The attribute's comment: “locally generated by r sections, small site S_fppf”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedByOnSite_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedByR.lean#L203). The attribute's comment: “locally generated by r sections, small site S\_fppf”.
 
 > **Descent, Lemma 05VG, "locally generated by `r` sections", on `S_fppf`.**  A quasi-coherent
 > `𝒪_S`-module `𝓕` is locally generated by `r` sections if and only if `𝓕^a` is locally generated
@@ -3818,7 +3818,7 @@ theorem isLocallyGeneratedByOnSite_iff_smallFlatSiteAssociatedModule_fppf (𝓕 
         ((SmallFlatSite.associatedModule B S hS .fppf).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L78). The attribute's comment: “locally generated by sections, big site (Sch/S)_Zar”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_baseAssociatedModule_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L78). The attribute's comment: “locally generated by sections, big site (Sch/S)\_Zar”.
 
 > **Descent, Lemma 05VG, locally generated by sections, big site `(Sch/S)_Zar`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is locally generated by sections if and only if `𝓕^a` is locally
@@ -3832,7 +3832,7 @@ theorem isLocallyGeneratedBySectionsOnSite_iff_baseAssociatedModule_zariski (�
         ((BigFppfOver.baseAssociatedModule B S hS .zariski).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L89). The attribute's comment: “locally generated by sections, big site (Sch/S)_étale”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_baseAssociatedModule_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L89). The attribute's comment: “locally generated by sections, big site (Sch/S)\_étale”.
 
 > **Descent, Lemma 05VG, locally generated by sections, big site `(Sch/S)_étale`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is locally generated by sections if and only if `𝓕^a` is locally
@@ -3846,7 +3846,7 @@ theorem isLocallyGeneratedBySectionsOnSite_iff_baseAssociatedModule_etale (𝓕 
         ((BigFppfOver.baseAssociatedModule B S hS .etale).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L100). The attribute's comment: “locally generated by sections, big site (Sch/S)_smooth”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_baseAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L100). The attribute's comment: “locally generated by sections, big site (Sch/S)\_smooth”.
 
 > **Descent, Lemma 05VG, locally generated by sections, big site `(Sch/S)_smooth`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is locally generated by sections if and only if `𝓕^a` is locally
@@ -3860,7 +3860,7 @@ theorem isLocallyGeneratedBySectionsOnSite_iff_baseAssociatedModule_smooth (𝓕
         ((BigFppfOver.baseAssociatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L111). The attribute's comment: “locally generated by sections, big site (Sch/S)_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_baseAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L111). The attribute's comment: “locally generated by sections, big site (Sch/S)\_syntomic”.
 
 > **Descent, Lemma 05VG, locally generated by sections, big site `(Sch/S)_syntomic`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is locally generated by sections if and only if `𝓕^a` is locally
@@ -3874,7 +3874,7 @@ theorem isLocallyGeneratedBySectionsOnSite_iff_baseAssociatedModule_syntomic (�
         ((BigFppfOver.baseAssociatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L122). The attribute's comment: “locally generated by sections, big site (Sch/S)_fppf”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_baseAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L122). The attribute's comment: “locally generated by sections, big site (Sch/S)\_fppf”.
 
 > **Descent, Lemma 05VG, locally generated by sections, big site `(Sch/S)_fppf`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is locally generated by sections if and only if `𝓕^a` is locally
@@ -3888,7 +3888,7 @@ theorem isLocallyGeneratedBySectionsOnSite_iff_baseAssociatedModule_fppf (𝓕 :
         ((BigFppfOver.baseAssociatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L135). The attribute's comment: “locally generated by sections, small site S_Zar”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_smallZariskiAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L135). The attribute's comment: “locally generated by sections, small site S\_Zar”.
 
 > **Descent, Lemma 05VG, locally generated by sections, small site `S_Zar`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is locally generated by sections if and only if `𝓕^a` is locally
@@ -3903,7 +3903,7 @@ theorem isLocallyGeneratedBySectionsOnSite_iff_smallZariskiAssociatedModule
         ((SmallZariski.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L147). The attribute's comment: “locally generated by sections, small site S_étale”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_smallEtaleAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L147). The attribute's comment: “locally generated by sections, small site S\_étale”.
 
 > **Descent, Lemma 05VG, locally generated by sections, small site `S_étale`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is locally generated by sections if and only if `𝓕^a` is locally
@@ -3918,7 +3918,7 @@ theorem isLocallyGeneratedBySectionsOnSite_iff_smallEtaleAssociatedModule
         ((SmallEtale.associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L163). The attribute's comment: “locally generated by sections, small site S_smooth”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_smallFlatSiteAssociatedModule_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L163). The attribute's comment: “locally generated by sections, small site S\_smooth”.
 
 > **Descent, Lemma 05VG, locally generated by sections, small site `S_smooth`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is locally generated by sections if and only if `𝓕^a` is locally
@@ -3932,7 +3932,7 @@ theorem isLocallyGeneratedBySectionsOnSite_iff_smallFlatSiteAssociatedModule_smo
         ((SmallFlatSite.associatedModule B S hS .smooth).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L174). The attribute's comment: “locally generated by sections, small site S_syntomic”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_smallFlatSiteAssociatedModule_syntomic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L174). The attribute's comment: “locally generated by sections, small site S\_syntomic”.
 
 > **Descent, Lemma 05VG, locally generated by sections, small site `S_syntomic`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is locally generated by sections if and only if `𝓕^a` is locally
@@ -3946,7 +3946,7 @@ theorem isLocallyGeneratedBySectionsOnSite_iff_smallFlatSiteAssociatedModule_syn
         ((SmallFlatSite.associatedModule B S hS .syntomic).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L185). The attribute's comment: “locally generated by sections, small site S_fppf”.
+**`AlgebraicGeometry.Cells05VG.isLocallyGeneratedBySectionsOnSite_iff_smallFlatSiteAssociatedModule_fppf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/Cells05VG/LocallyGeneratedBySections.lean#L185). The attribute's comment: “locally generated by sections, small site S\_fppf”.
 
 > **Descent, Lemma 05VG, locally generated by sections, small site `S_fppf`.**  A
 > quasi-coherent `𝒪_S`-module `𝓕` is locally generated by sections if and only if `𝓕^a` is locally
@@ -3960,7 +3960,7 @@ theorem isLocallyGeneratedBySectionsOnSite_iff_smallFlatSiteAssociatedModule_fpp
         ((SmallFlatSite.associatedModule B S hS .fppf).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isFinitePresentationOnSite_baseAssociatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean#L88). The attribute's comment: “of finite presentation (03DL (7)), on (Sch/S)_τ for every τ ∈ {Zariski, étale, smooth, syntomic, fppf}, at the functor 𝓕 ↦ 𝓕ᵃ of 03DX”.
+**`AlgebraicGeometry.BigFppfOver.isFinitePresentationOnSite_baseAssociatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean#L88). The attribute's comment: “of finite presentation (03DL (7)), on (Sch/S)\_τ for every τ ∈ \{Zariski, étale, smooth, syntomic, fppf}, at the functor 𝓕 ↦ 𝓕ᵃ of 03DX”.
 
 > **Descent, Lemma 05VG for "of finite presentation" (Modules on Sites, Definition 03DL (7)),
 > on the big site `(Sch/S)_τ`, for every `τ ∈ {Zariski, étale, smooth, syntomic, fppf}`.**  A
@@ -3975,7 +3975,7 @@ theorem isFinitePresentationOnSite_baseAssociatedModule_iff (τ : SiteKind) (�
       ((baseAssociatedModule B S hS τ).obj 𝓕).IsFinitePresentationOnSite
 ```
 
-**`AlgebraicGeometry.SmallZariski.isFinitePresentationOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean#L107). The attribute's comment: “of finite presentation (03DL (7)), on S_Zar, at the functor 𝓕 ↦ 𝓕ᵃ of 03DX”.
+**`AlgebraicGeometry.SmallZariski.isFinitePresentationOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean#L107). The attribute's comment: “of finite presentation (03DL (7)), on S\_Zar, at the functor 𝓕 ↦ 𝓕ᵃ of 03DX”.
 
 > **Descent, Lemma 05VG for "of finite presentation" (Modules on Sites, Definition 03DL (7)),
 > on the small Zariski site `S_Zar`.**  An `𝒪_S`-module `𝓕` is of finite presentation if and
@@ -3988,7 +3988,7 @@ theorem isFinitePresentationOnSite_iff_associatedModule (𝓕 : S.Modules) :
       ((associatedModule B S hS).obj 𝓕).IsFinitePresentationOnSite
 ```
 
-**`AlgebraicGeometry.SmallEtale.isFinitePresentationOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean#L125). The attribute's comment: “of finite presentation (03DL (7)), on S_étale, at the functor 𝓕 ↦ 𝓕ᵃ of 03DX”.
+**`AlgebraicGeometry.SmallEtale.isFinitePresentationOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean#L125). The attribute's comment: “of finite presentation (03DL (7)), on S\_étale, at the functor 𝓕 ↦ 𝓕ᵃ of 03DX”.
 
 > **Descent, Lemma 05VG for "of finite presentation" (Modules on Sites, Definition 03DL (7)),
 > on the small étale site `S_étale`.**  A quasi-coherent `𝒪_S`-module `𝓕` is of finite
@@ -4001,7 +4001,7 @@ theorem isFinitePresentationOnSite_iff_associatedModule (𝓕 : S.Modules) [h�
       ((associatedModule B S hS).obj 𝓕).IsFinitePresentationOnSite
 ```
 
-**`AlgebraicGeometry.SmallFlatSite.isFinitePresentationOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean#L144). The attribute's comment: “of finite presentation (03DL (7)), on S_τ for every τ ∈ {smooth, syntomic, fppf}, at the functor 𝓕 ↦ 𝓕ᵃ”.
+**`AlgebraicGeometry.SmallFlatSite.isFinitePresentationOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean#L144). The attribute's comment: “of finite presentation (03DL (7)), on S\_τ for every τ ∈ \{smooth, syntomic, fppf}, at the functor 𝓕 ↦ 𝓕ᵃ”.
 
 > **Descent, Lemma 05VG for "of finite presentation" (Modules on Sites, Definition 03DL (7)),
 > on the small site `S_τ`, for every `τ ∈ {smooth, syntomic, fppf}`.**  A quasi-coherent
@@ -4014,7 +4014,7 @@ theorem isFinitePresentationOnSite_iff_associatedModule (𝓕 : S.Modules) [𝓕
       ((associatedModule B S hS κ).obj 𝓕).IsFinitePresentationOnSite
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isFinitePresentationOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean#L168). The attribute's comment: “of finite presentation (03DL (7)): 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)_τ for every τ, on S_Zar, on S_étale, and on S_τ for τ ∈ {smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.Scheme.Modules.isFinitePresentationOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/FinitePresentationAgreement03DX.lean#L168). The attribute's comment: “of finite presentation (03DL (7)): 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)\_τ for every τ, on S\_Zar, on S\_étale, and on S\_τ for τ ∈ \{smooth, syntomic, fppf}”.
 
 > **Descent, Lemma 05VG, for the property "of finite presentation" (Modules on Sites,
 > Definition 03DL (7)).**  For a quasi-coherent `𝒪_S`-module `𝓕`, `𝓕` is of finite presentation
@@ -4037,7 +4037,7 @@ theorem isFinitePresentationOnSite_iff_associatedModule (𝓕 : S.Modules) [𝓕
         ((SmallFlatSite.associatedModule Bf S hf κ).obj 𝓕).IsFinitePresentationOnSite
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isGeneratedByGlobalSections_iff_baseAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean#L316). The attribute's comment: “generated by global sections, big site (Sch/S)_τ at every τ, at the comparison functor of 03DX itself”.
+**`AlgebraicGeometry.BigFppfOver.isGeneratedByGlobalSections_iff_baseAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean#L316). The attribute's comment: “generated by global sections, big site (Sch/S)\_τ at every τ, at the comparison functor of 03DX itself”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DE (3), on the big site.**  A
 > quasi-coherent `𝒪_S`-module is generated by global sections if and only if `𝓕^a` is generated by
@@ -4050,7 +4050,7 @@ theorem isGeneratedByGlobalSections_iff_baseAssociatedModule (τ : SiteKind)
       ((baseAssociatedModuleQcoh B S hS τ).obj F).IsGeneratedByGlobalSections
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean#L332). The attribute's comment: “generated by r global sections, big site (Sch/S)_τ at every τ, at the comparison functor of 03DX itself”.
+**`AlgebraicGeometry.BigFppfOver.isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean#L332). The attribute's comment: “generated by r global sections, big site (Sch/S)\_τ at every τ, at the comparison functor of 03DX itself”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DE (4), on the big site.**  A
 > quasi-coherent `𝒪_S`-module is generated by `r` global sections if and only if `𝓕^a` is, with
@@ -4063,7 +4063,7 @@ theorem isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule (τ : SiteKin
       ((baseAssociatedModuleQcoh B S hS τ).obj F).IsGeneratedByGlobalSectionsOfCard r
 ```
 
-**`AlgebraicGeometry.BigFppfOver.exists_isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean#L348). The attribute's comment: “generated by finitely many global sections, big site (Sch/S)_τ at every τ, at the comparison functor of 03DX itself”.
+**`AlgebraicGeometry.BigFppfOver.exists_isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean#L348). The attribute's comment: “generated by finitely many global sections, big site (Sch/S)\_τ at every τ, at the comparison functor of 03DX itself”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DE (5), on the big site.**  A
 > quasi-coherent `𝒪_S`-module is generated by finitely many global sections if and only if `𝓕^a`
@@ -4076,7 +4076,7 @@ theorem exists_isGeneratedByGlobalSectionsOfCard_iff_baseAssociatedModule (τ : 
       ∃ r : ℕ, ((baseAssociatedModuleQcoh B S hS τ).obj F).IsGeneratedByGlobalSectionsOfCard r
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isPresentedByGlobalSections_iff_baseAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean#L372). The attribute's comment: “global presentation, big site (Sch/S)_τ at every τ, at the comparison functor of 03DX itself”.
+**`AlgebraicGeometry.BigFppfOver.isPresentedByGlobalSections_iff_baseAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean#L372). The attribute's comment: “global presentation, big site (Sch/S)\_τ at every τ, at the comparison functor of 03DX itself”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DE (6), on the big site.**  A
 > quasi-coherent `𝒪_S`-module has a global presentation if and only if `𝓕^a` has one as an
@@ -4089,7 +4089,7 @@ theorem isPresentedByGlobalSections_iff_baseAssociatedModule (τ : SiteKind)
       ((baseAssociatedModuleQcoh B S hS τ).obj F).IsPresentedByGlobalSections
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isFinitelyPresentedByGlobalSections_iff_baseAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean#L389). The attribute's comment: “finite global presentation, big site (Sch/S)_τ at every τ, at the comparison functor of 03DX itself”.
+**`AlgebraicGeometry.BigFppfOver.isFinitelyPresentedByGlobalSections_iff_baseAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalGenerationComparison.lean#L389). The attribute's comment: “finite global presentation, big site (Sch/S)\_τ at every τ, at the comparison functor of 03DX itself”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DE (7), on the big site.**  A
 > quasi-coherent `𝒪_S`-module has a finite global presentation if and only if `𝓕^a` has one,
@@ -4167,7 +4167,7 @@ theorem isFinitelyPresentedByGlobalSections_iff_associatedModule
       ((associatedModuleQcoh B S hS).obj F).IsFinitelyPresentedByGlobalSections
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isFree_iff_baseAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalTypesComparison.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalTypesComparison.lean#L156). The attribute's comment: “free, big site (Sch/S)_τ at every τ, at the comparison functor of 03DX itself”.
+**`AlgebraicGeometry.BigFppfOver.isFree_iff_baseAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalTypesComparison.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalTypesComparison.lean#L156). The attribute's comment: “free, big site (Sch/S)\_τ at every τ, at the comparison functor of 03DX itself”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DE (1), on the big site.**  A
 > quasi-coherent `𝒪_S`-module is free if and only if `𝓕^a` is free as an `𝒪`-module on
@@ -4179,7 +4179,7 @@ theorem isFree_iff_baseAssociatedModule (τ : SiteKind)
     F.obj.IsFree ↔ ((baseAssociatedModuleQcoh B S hS τ).obj F).IsFree
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isFiniteFree_iff_baseAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalTypesComparison.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalTypesComparison.lean#L169). The attribute's comment: “finite free, big site (Sch/S)_τ at every τ, at the comparison functor of 03DX itself”.
+**`AlgebraicGeometry.BigFppfOver.isFiniteFree_iff_baseAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalTypesComparison.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/GlobalTypesComparison.lean#L169). The attribute's comment: “finite free, big site (Sch/S)\_τ at every τ, at the comparison functor of 03DX itself”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DE (2), on the big site.**  A
 > quasi-coherent `𝒪_S`-module is finite free if and only if `𝓕^a` is finite free as an
@@ -4219,7 +4219,7 @@ theorem isFiniteFree_iff_associatedModule
         ((associatedModuleQcoh B S hS).obj F)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isLocallyGeneratedBySectionsOnSite_baseAssociatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/LocalGenerationBySectionsAgreement.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/LocalGenerationBySectionsAgreement.lean#L144). The attribute's comment: “locally generated by sections (03DL (3)), big site (Sch/S)_τ at every τ, at the comparison functor of 03DX itself”.
+**`AlgebraicGeometry.BigFppfOver.isLocallyGeneratedBySectionsOnSite_baseAssociatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/LocalGenerationBySectionsAgreement.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/LocalGenerationBySectionsAgreement.lean#L144). The attribute's comment: “locally generated by sections (03DL (3)), big site (Sch/S)\_τ at every τ, at the comparison functor of 03DX itself”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DL (3), at the big site
 > `(Sch/S)_τ`, for every `τ ∈ {Zariski, étale, smooth, syntomic, fppf}`.**  A quasi-coherent
@@ -4288,7 +4288,7 @@ public theorem isLocallyGeneratedBySectionsOnSite_associatedModule_iff (𝓕 : S
       SheafOfModules.IsLocallyGeneratedBySectionsOnSite ((associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isFree_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L139). The attribute's comment: “free: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)_τ for every τ, on S_Zar, on S_étale, and on S_τ for τ ∈ {smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.Scheme.Modules.isFree_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L139). The attribute's comment: “free: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)\_τ for every τ, on S\_Zar, on S\_étale, and on S\_τ for τ ∈ \{smooth, syntomic, fppf}”.
 
 > **Descent, Lemma 05VG, for the property "free" (Modules on Sites, Definition 03DE (1)).**
 > For a quasi-coherent `𝒪_S`-module `𝓕`, `𝓕` has the property "free" if and only if `𝓕^a` has it as
@@ -4308,7 +4308,7 @@ theorem isFree_iff_associatedModule (𝓕 : S.Modules) [h𝓕 : 𝓕.IsQuasicohe
         SheafOfModules.IsFree ((SmallFlatSite.associatedModule Bf S hf κ).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isFiniteFree_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L161). The attribute's comment: “finite free: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)_τ for every τ, on S_Zar, on S_étale, and on S_τ for τ ∈ {smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.Scheme.Modules.isFiniteFree_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L161). The attribute's comment: “finite free: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)\_τ for every τ, on S\_Zar, on S\_étale, and on S\_τ for τ ∈ \{smooth, syntomic, fppf}”.
 
 > **Descent, Lemma 05VG, for the property "finite free" (Modules on Sites, Definition 03DE
 > (2)).**
@@ -4329,7 +4329,7 @@ theorem isFiniteFree_iff_associatedModule (𝓕 : S.Modules) [h𝓕 : 𝓕.IsQua
         SheafOfModules.IsFiniteFree _ ((SmallFlatSite.associatedModule Bf S hf κ).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isGeneratedByGlobalSections_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L184). The attribute's comment: “generated by global sections: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)_τ for every τ, on S_Zar, on S_étale, and on S_τ for τ ∈ {smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.Scheme.Modules.isGeneratedByGlobalSections_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L184). The attribute's comment: “generated by global sections: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)\_τ for every τ, on S\_Zar, on S\_étale, and on S\_τ for τ ∈ \{smooth, syntomic, fppf}”.
 
 > **Descent, Lemma 05VG, for the property "generated by global sections" (Modules on Sites,
 > Definition 03DE (3)).**
@@ -4354,7 +4354,7 @@ theorem isGeneratedByGlobalSections_iff_associatedModule (𝓕 : S.Modules) [h�
           ((SmallFlatSite.associatedModule Bf S hf κ).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isGeneratedByGlobalSectionsOfCard_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L210). The attribute's comment: “generated by r global sections: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)_τ for every τ, on S_Zar, on S_étale, and on S_τ for τ ∈ {smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.Scheme.Modules.isGeneratedByGlobalSectionsOfCard_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L210). The attribute's comment: “generated by r global sections: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)\_τ for every τ, on S\_Zar, on S\_étale, and on S\_τ for τ ∈ \{smooth, syntomic, fppf}”.
 
 > **Descent, Lemma 05VG, for the property "generated by r global sections" (Modules on Sites,
 > Definition 03DE (4)).**
@@ -4382,7 +4382,7 @@ theorem isGeneratedByGlobalSectionsOfCard_iff_associatedModule (𝓕 : S.Modules
           ((SmallFlatSite.associatedModule Bf S hf κ).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.exists_isGeneratedByGlobalSectionsOfCard_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L241). The attribute's comment: “generated by finitely many global sections: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)_τ for every τ, on S_Zar, on S_étale, and on S_τ for τ ∈ {smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.Scheme.Modules.exists_isGeneratedByGlobalSectionsOfCard_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L241). The attribute's comment: “generated by finitely many global sections: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)\_τ for every τ, on S\_Zar, on S\_étale, and on S\_τ for τ ∈ \{smooth, syntomic, fppf}”.
 
 > **Descent, Lemma 05VG, for the property "generated by finitely many global sections" (Modules
 > on Sites, Definition 03DE (5)).**
@@ -4411,7 +4411,7 @@ theorem exists_isGeneratedByGlobalSectionsOfCard_iff_associatedModule (𝓕 : S.
           ((SmallFlatSite.associatedModule Bf S hf κ).obj 𝓕) r)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isPresentedByGlobalSections_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L273). The attribute's comment: “having a global presentation: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)_τ for every τ, on S_Zar, on S_étale, and on S_τ for τ ∈ {smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.Scheme.Modules.isPresentedByGlobalSections_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L273). The attribute's comment: “having a global presentation: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)\_τ for every τ, on S\_Zar, on S\_étale, and on S\_τ for τ ∈ \{smooth, syntomic, fppf}”.
 
 > **Descent, Lemma 05VG, for the property "having a global presentation" (Modules on Sites,
 > Definition 03DE (6)).**
@@ -4436,7 +4436,7 @@ theorem isPresentedByGlobalSections_iff_associatedModule (𝓕 : S.Modules) [h�
           ((SmallFlatSite.associatedModule Bf S hf κ).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isFinitelyPresentedByGlobalSections_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L299). The attribute's comment: “having a global finite presentation: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)_τ for every τ, on S_Zar, on S_étale, and on S_τ for τ ∈ {smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.Scheme.Modules.isFinitelyPresentedByGlobalSections_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L299). The attribute's comment: “having a global finite presentation: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)\_τ for every τ, on S\_Zar, on S\_étale, and on S\_τ for τ ∈ \{smooth, syntomic, fppf}”.
 
 > **Descent, Lemma 05VG, for the property "having a global finite presentation" (Modules on
 > Sites, Definition 03DE (7)).**
@@ -4464,7 +4464,7 @@ theorem isFinitelyPresentedByGlobalSections_iff_associatedModule (𝓕 : S.Modul
           ((SmallFlatSite.associatedModule Bf S hf κ).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isFiniteLocallyFreeOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L329). The attribute's comment: “finite locally free: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)_τ for every τ, on S_Zar, on S_étale, and on S_τ for τ ∈ {smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.Scheme.Modules.isFiniteLocallyFreeOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L329). The attribute's comment: “finite locally free: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)\_τ for every τ, on S\_Zar, on S\_étale, and on S\_τ for τ ∈ \{smooth, syntomic, fppf}”.
 
 > **Descent, Lemma 05VG, for the property "finite locally free" (Modules on Sites, Definition
 > 03DL (2)).**
@@ -4487,7 +4487,7 @@ theorem isFiniteLocallyFreeOnSite_iff_associatedModule (𝓕 : S.Modules) [h𝓕
           ((SmallFlatSite.associatedModule Bf S hf κ).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isLocallyGeneratedBySectionsOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L355). The attribute's comment: “locally generated by sections: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)_τ for every τ, on S_Zar, on S_étale, and on S_τ for τ ∈ {smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.Scheme.Modules.isLocallyGeneratedBySectionsOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L355). The attribute's comment: “locally generated by sections: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)\_τ for every τ, on S\_Zar, on S\_étale, and on S\_τ for τ ∈ \{smooth, syntomic, fppf}”.
 
 > **Descent, Lemma 05VG, for the property "locally generated by sections" (Modules on Sites,
 > Definition 03DL (3)).**
@@ -4515,7 +4515,7 @@ theorem isLocallyGeneratedBySectionsOnSite_iff_associatedModule (𝓕 : S.Module
           ((SmallFlatSite.associatedModule Bf S hf κ).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isLocallyGeneratedByOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L384). The attribute's comment: “locally generated by r sections: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)_τ for every τ, on S_Zar, on S_étale, and on S_τ for τ ∈ {smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.Scheme.Modules.isLocallyGeneratedByOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L384). The attribute's comment: “locally generated by r sections: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)\_τ for every τ, on S\_Zar, on S\_étale, and on S\_τ for τ ∈ \{smooth, syntomic, fppf}”.
 
 > **Descent, Lemma 05VG, for the property "locally generated by r sections" (Modules on Sites,
 > Definition 03DL (4)).**
@@ -4541,7 +4541,7 @@ theorem isLocallyGeneratedByOnSite_iff_associatedModule (𝓕 : S.Modules)
           ((SmallFlatSite.associatedModule Bf S hf κ).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isFiniteType_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L410). The attribute's comment: “finite type: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)_τ for every τ, on S_Zar, on S_étale, and on S_τ for τ ∈ {smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.Scheme.Modules.isFiniteType_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L410). The attribute's comment: “finite type: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)\_τ for every τ, on S\_Zar, on S\_étale, and on S\_τ for τ ∈ \{smooth, syntomic, fppf}”.
 
 > **Descent, Lemma 05VG, for the property "finite type" (Modules on Sites, Definition 03DL
 > (5)).**
@@ -4562,7 +4562,7 @@ theorem isFiniteType_iff_associatedModule (𝓕 : S.Modules) [h𝓕 : 𝓕.IsQua
         SheafOfModules.IsFiniteType ((SmallFlatSite.associatedModule Bf S hf κ).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isFinitePresentation_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L432). The attribute's comment: “of finite presentation: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)_τ for every τ, on S_Zar, on S_étale, and on S_τ for τ ∈ {smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.Scheme.Modules.isFinitePresentation_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L432). The attribute's comment: “of finite presentation: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)\_τ for every τ, on S\_Zar, on S\_étale, and on S\_τ for τ ∈ \{smooth, syntomic, fppf}”.
 
 > **Descent, Lemma 05VG, for the property "of finite presentation" (Modules on Sites, Definition
 > 03DL (7)).**
@@ -4583,7 +4583,7 @@ theorem isFinitePresentation_iff_associatedModule (𝓕 : S.Modules) [h𝓕 : �
         SheafOfModules.IsFinitePresentation ((SmallFlatSite.associatedModule Bf S hf κ).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isFlat_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L453). The attribute's comment: “flat: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)_τ for every τ, on S_Zar, on S_étale, and on S_τ for τ ∈ {smooth, syntomic, fppf}”.
+**`AlgebraicGeometry.Scheme.Modules.isFlat_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L453). The attribute's comment: “flat: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on (Sch/S)\_τ for every τ, on S\_Zar, on S\_étale, and on S\_τ for τ ∈ \{smooth, syntomic, fppf}”.
 
 > **Descent, Lemma 05VG, for the property "flat" (Modules on Sites, Definition 03ER (3)).**
 > For a quasi-coherent `𝒪_S`-module `𝓕`, `𝓕` is flat if and only if `𝓕^a` is flat as an `𝒪`-module,
@@ -4611,7 +4611,7 @@ theorem isFlat_iff_associatedModule (𝓕 : S.Modules) [h𝓕 : 𝓕.IsQuasicohe
             ((SmallFlatSite.associatedModule Bf S hf κ).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isCoherent_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L481). The attribute's comment: “coherent, S locally Noetherian: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on S_Zar and on S_étale”.
+**`AlgebraicGeometry.Scheme.Modules.isCoherent_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean, line 481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/PropertiesOfModulesComparison.lean#L481). The attribute's comment: “coherent, S locally Noetherian: 𝓕 has 𝒫 ⇔ 𝓕ᵃ has 𝒫 on S\_Zar and on S\_étale”.
 
 > **Descent, Lemma 05VG, for the property "coherent" (Modules on Sites, Definition 03DL (8)).**
 > For a locally Noetherian scheme `S` and a quasi-coherent `𝒪_S`-module `𝓕`, `𝓕` is coherent if and
@@ -4758,7 +4758,7 @@ theorem isLocallyGeneratedByOnSite_associatedModule_iff (𝓕 : S.Modules)
       SheafOfModules.IsLocallyGeneratedByOnSite ((associatedModule B S hS).obj 𝓕) r
 ```
 
-**`AlgebraicGeometry.SmallFlatSite.isFlat_associatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteFlatAgreement.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteFlatAgreement.lean#L336). The attribute's comment: “flat (03ER (3)): 𝓕 ↔ 𝓕^a, small site S_τ at every τ ∈ {smooth, syntomic, fppf} (the small sites extending the source's)”.
+**`AlgebraicGeometry.SmallFlatSite.isFlat_associatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteFlatAgreement.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteFlatAgreement.lean#L336). The attribute's comment: “flat (03ER (3)): 𝓕 ↔ 𝓕^a, small site S\_τ at every τ ∈ \{smooth, syntomic, fppf} (the small sites extending the source's)”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03ER (3), on the small `τ`-site, for
 > every `τ ∈ {smooth, syntomic, fppf}`.**  A quasi-coherent `𝒪_S`-module `𝓗` is flat if and only if
@@ -4774,7 +4774,7 @@ theorem isFlat_associatedModule_iff :
         ((associatedModule B S hS κ).obj 𝓗)
 ```
 
-**`AlgebraicGeometry.SmallFlatSite.isFree_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L109). The attribute's comment: “free (03DE (1)): 𝓕 ↔ 𝓕^a, small site S_τ at every τ ∈ {smooth, syntomic, fppf} (the small sites extending the source's)”.
+**`AlgebraicGeometry.SmallFlatSite.isFree_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L109). The attribute's comment: “free (03DE (1)): 𝓕 ↔ 𝓕^a, small site S\_τ at every τ ∈ \{smooth, syntomic, fppf} (the small sites extending the source's)”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DE (1), on the small `τ`-site, for
 > every `τ ∈ {smooth, syntomic, fppf}`.**  A quasi-coherent `𝒪_S`-module is free if and only if
@@ -4786,7 +4786,7 @@ theorem isFree_iff_associatedModule
     F.obj.IsFree ↔ ((associatedModuleQcoh B S hS κ).obj F).IsFree
 ```
 
-**`AlgebraicGeometry.SmallFlatSite.isFiniteFree_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L122). The attribute's comment: “finite free (03DE (2)): 𝓕 ↔ 𝓕^a, small site S_τ at every τ ∈ {smooth, syntomic, fppf} (the small sites extending the source's)”.
+**`AlgebraicGeometry.SmallFlatSite.isFiniteFree_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L122). The attribute's comment: “finite free (03DE (2)): 𝓕 ↔ 𝓕^a, small site S\_τ at every τ ∈ \{smooth, syntomic, fppf} (the small sites extending the source's)”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DE (2), on the small `τ`-site, for
 > every `τ ∈ {smooth, syntomic, fppf}`.**  A quasi-coherent `𝒪_S`-module is finite free, with the
@@ -4800,7 +4800,7 @@ theorem isFiniteFree_iff_associatedModule
         ((associatedModuleQcoh B S hS κ).obj F)
 ```
 
-**`AlgebraicGeometry.SmallFlatSite.isGeneratedByGlobalSections_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L137). The attribute's comment: “generated by global sections (03DE (3)): 𝓕 ↔ 𝓕^a, small site S_τ at every τ ∈ {smooth, syntomic, fppf} (the small sites extending the source's)”.
+**`AlgebraicGeometry.SmallFlatSite.isGeneratedByGlobalSections_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L137). The attribute's comment: “generated by global sections (03DE (3)): 𝓕 ↔ 𝓕^a, small site S\_τ at every τ ∈ \{smooth, syntomic, fppf} (the small sites extending the source's)”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DE (3), on the small `τ`-site, for
 > every `τ ∈ {smooth, syntomic, fppf}`.**  A quasi-coherent `𝒪_S`-module is generated by global
@@ -4813,7 +4813,7 @@ theorem isGeneratedByGlobalSections_iff_associatedModule
       ((associatedModuleQcoh B S hS κ).obj F).IsGeneratedByGlobalSections
 ```
 
-**`AlgebraicGeometry.SmallFlatSite.isGeneratedByGlobalSectionsOfCard_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L153). The attribute's comment: “generated by r global sections (03DE (4)): 𝓕 ↔ 𝓕^a, small site S_τ at every τ ∈ {smooth, syntomic, fppf} (the small sites extending the source's)”.
+**`AlgebraicGeometry.SmallFlatSite.isGeneratedByGlobalSectionsOfCard_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L153). The attribute's comment: “generated by r global sections (03DE (4)): 𝓕 ↔ 𝓕^a, small site S\_τ at every τ ∈ \{smooth, syntomic, fppf} (the small sites extending the source's)”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DE (4), on the small `τ`-site, for
 > every `τ ∈ {smooth, syntomic, fppf}`.**  A quasi-coherent `𝒪_S`-module is generated by `r`
@@ -4826,7 +4826,7 @@ theorem isGeneratedByGlobalSectionsOfCard_iff_associatedModule
       ((associatedModuleQcoh B S hS κ).obj F).IsGeneratedByGlobalSectionsOfCard r
 ```
 
-**`AlgebraicGeometry.SmallFlatSite.exists_isGeneratedByGlobalSectionsOfCard_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L169). The attribute's comment: “generated by finitely many global sections (03DE (5)): 𝓕 ↔ 𝓕^a, small site S_τ at every τ ∈ {smooth, syntomic, fppf} (the small sites extending the source's)”.
+**`AlgebraicGeometry.SmallFlatSite.exists_isGeneratedByGlobalSectionsOfCard_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L169). The attribute's comment: “generated by finitely many global sections (03DE (5)): 𝓕 ↔ 𝓕^a, small site S\_τ at every τ ∈ \{smooth, syntomic, fppf} (the small sites extending the source's)”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DE (5), on the small `τ`-site, for
 > every `τ ∈ {smooth, syntomic, fppf}`.**  A quasi-coherent `𝒪_S`-module is generated by finitely
@@ -4839,7 +4839,7 @@ theorem exists_isGeneratedByGlobalSectionsOfCard_iff_associatedModule
       ∃ r : ℕ, ((associatedModuleQcoh B S hS κ).obj F).IsGeneratedByGlobalSectionsOfCard r
 ```
 
-**`AlgebraicGeometry.SmallFlatSite.isPresentedByGlobalSections_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L186). The attribute's comment: “having a global presentation (03DE (6)): 𝓕 ↔ 𝓕^a, small site S_τ at every τ ∈ {smooth, syntomic, fppf} (the small sites extending the source's)”.
+**`AlgebraicGeometry.SmallFlatSite.isPresentedByGlobalSections_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L186). The attribute's comment: “having a global presentation (03DE (6)): 𝓕 ↔ 𝓕^a, small site S\_τ at every τ ∈ \{smooth, syntomic, fppf} (the small sites extending the source's)”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DE (6), on the small `τ`-site, for
 > every `τ ∈ {smooth, syntomic, fppf}`.**  A quasi-coherent `𝒪_S`-module is has a global
@@ -4853,7 +4853,7 @@ theorem isPresentedByGlobalSections_iff_associatedModule
       ((associatedModuleQcoh B S hS κ).obj F).IsPresentedByGlobalSections
 ```
 
-**`AlgebraicGeometry.SmallFlatSite.isFinitelyPresentedByGlobalSections_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L204). The attribute's comment: “having a global finite presentation (03DE (7)): 𝓕 ↔ 𝓕^a, small site S_τ at every τ ∈ {smooth, syntomic, fppf} (the small sites extending the source's)”.
+**`AlgebraicGeometry.SmallFlatSite.isFinitelyPresentedByGlobalSections_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L204). The attribute's comment: “having a global finite presentation (03DE (7)): 𝓕 ↔ 𝓕^a, small site S\_τ at every τ ∈ \{smooth, syntomic, fppf} (the small sites extending the source's)”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DE (7), on the small `τ`-site, for
 > every `τ ∈ {smooth, syntomic, fppf}`.**  A quasi-coherent `𝒪_S`-module is has a finite global
@@ -4867,7 +4867,7 @@ theorem isFinitelyPresentedByGlobalSections_iff_associatedModule
       ((associatedModuleQcoh B S hS κ).obj F).IsFinitelyPresentedByGlobalSections
 ```
 
-**`AlgebraicGeometry.SmallFlatSite.isFiniteLocallyFreeOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L234). The attribute's comment: “finite locally free (03DL (2)): 𝓕 ↔ 𝓕^a, small site S_τ at every τ ∈ {smooth, syntomic, fppf} (the small sites extending the source's)”.
+**`AlgebraicGeometry.SmallFlatSite.isFiniteLocallyFreeOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L234). The attribute's comment: “finite locally free (03DL (2)): 𝓕 ↔ 𝓕^a, small site S\_τ at every τ ∈ \{smooth, syntomic, fppf} (the small sites extending the source's)”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DL (2), on the small `τ`-site, for
 > every `τ ∈ {smooth, syntomic, fppf}`.**  A quasi-coherent `𝒪_S`-module `𝓗` is finite locally free
@@ -4885,7 +4885,7 @@ theorem isFiniteLocallyFreeOnSite_iff_associatedModule (𝓗 : S.Modules)
       SheafOfModules.IsFiniteLocallyFreeOnSite ((associatedModule B S hS κ).obj 𝓗)
 ```
 
-**`AlgebraicGeometry.SmallFlatSite.isLocallyGeneratedBySectionsOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L253). The attribute's comment: “locally generated by sections (03DL (3)): 𝓕 ↔ 𝓕^a, small site S_τ at every τ ∈ {smooth, syntomic, fppf} (the small sites extending the source's)”.
+**`AlgebraicGeometry.SmallFlatSite.isLocallyGeneratedBySectionsOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L253). The attribute's comment: “locally generated by sections (03DL (3)): 𝓕 ↔ 𝓕^a, small site S\_τ at every τ ∈ \{smooth, syntomic, fppf} (the small sites extending the source's)”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DL (3), on the small `τ`-site, for
 > every `τ ∈ {smooth, syntomic, fppf}`.**  A quasi-coherent `𝒪_S`-module `𝓕` is locally generated
@@ -4901,7 +4901,7 @@ theorem isLocallyGeneratedBySectionsOnSite_iff_associatedModule (𝓕 : S.Module
       SheafOfModules.IsLocallyGeneratedBySectionsOnSite ((associatedModule B S hS κ).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.SmallFlatSite.isLocallyGeneratedByOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L272). The attribute's comment: “locally generated by r sections (03DL (4)): 𝓕 ↔ 𝓕^a, small site S_τ at every τ ∈ {smooth, syntomic, fppf} (the small sites extending the source's)”.
+**`AlgebraicGeometry.SmallFlatSite.isLocallyGeneratedByOnSite_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L272). The attribute's comment: “locally generated by r sections (03DL (4)): 𝓕 ↔ 𝓕^a, small site S\_τ at every τ ∈ \{smooth, syntomic, fppf} (the small sites extending the source's)”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DL (4), on the small `τ`-site, for
 > every `τ ∈ {smooth, syntomic, fppf}`.**  A quasi-coherent `𝒪_S`-module `𝓗` is locally generated
@@ -4918,7 +4918,7 @@ theorem isLocallyGeneratedByOnSite_iff_associatedModule (𝓗 : S.Modules)
       SheafOfModules.IsLocallyGeneratedByOnSite ((associatedModule B S hS κ).obj 𝓗) r
 ```
 
-**`AlgebraicGeometry.SmallFlatSite.isFiniteType_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L288). The attribute's comment: “finite type (03DL (5)): 𝓕 ↔ 𝓕^a, small site S_τ at every τ ∈ {smooth, syntomic, fppf} (the small sites extending the source's)”.
+**`AlgebraicGeometry.SmallFlatSite.isFiniteType_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L288). The attribute's comment: “finite type (03DL (5)): 𝓕 ↔ 𝓕^a, small site S\_τ at every τ ∈ \{smooth, syntomic, fppf} (the small sites extending the source's)”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DL (5), on the small `τ`-site, for
 > every `τ ∈ {smooth, syntomic, fppf}`.**  A quasi-coherent `𝒪_S`-module `𝓗` is of finite type if
@@ -4932,7 +4932,7 @@ theorem isFiniteType_iff_associatedModule (𝓗 : S.Modules) [𝓗.IsQuasicohere
       SheafOfModules.IsFiniteType ((associatedModule B S hS κ).obj 𝓗)
 ```
 
-**`AlgebraicGeometry.SmallFlatSite.isFinitePresentation_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L303). The attribute's comment: “finite presentation (03DL (7)): 𝓕 ↔ 𝓕^a, small site S_τ at every τ ∈ {smooth, syntomic, fppf} (the small sites extending the source's)”.
+**`AlgebraicGeometry.SmallFlatSite.isFinitePresentation_iff_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallFlatSiteTypesComparison.lean#L303). The attribute's comment: “finite presentation (03DL (7)): 𝓕 ↔ 𝓕^a, small site S\_τ at every τ ∈ \{smooth, syntomic, fppf} (the small sites extending the source's)”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DL (7), on the small `τ`-site, for
 > every `τ ∈ {smooth, syntomic, fppf}`.**  A quasi-coherent `𝒪_S`-module `𝓗` is of finite
@@ -5001,7 +5001,7 @@ public theorem isCoherentOnSite_associatedModule_iff [IsLocallyNoetherian S] (�
       SheafOfModules.IsCoherentOnSite ((associatedModule B S hS).obj 𝓕)
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isCoherentOnSite_iff_isCoherentOnSite_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteCoherenceOnSiteAgreement.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteCoherenceOnSiteAgreement.lean#L143). The attribute's comment: “coherent (03DL (8)) on both sides, S locally Noetherian: 𝓕 has 𝒫 on (Opens(S), 𝒪_S) ⇔ 𝓕ᵃ has 𝒫 on S_Zar, and ⇔ 𝓕ᵃ has 𝒫 on S_étale, at the comparison functors of 03DX (2)”.
+**`AlgebraicGeometry.Scheme.Modules.isCoherentOnSite_iff_isCoherentOnSite_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteCoherenceOnSiteAgreement.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteCoherenceOnSiteAgreement.lean#L143). The attribute's comment: “coherent (03DL (8)) on both sides, S locally Noetherian: 𝓕 has 𝒫 on (Opens(S), 𝒪\_S) ⇔ 𝓕ᵃ has 𝒫 on S\_Zar, and ⇔ 𝓕ᵃ has 𝒫 on S\_étale, at the comparison functors of 03DX (2)”.
 
 > **Descent, Lemma 05VG, for the property "coherent" (Modules on Sites, Definition 03DL (8)).**
 > Let `S` be a locally Noetherian scheme and `𝓕` a quasi-coherent `𝒪_S`-module.  Then `𝓕` is
@@ -5026,7 +5026,7 @@ theorem isCoherentOnSite_iff_isCoherentOnSite_associatedModule [IsLocallyNoether
         SheafOfModules.IsCoherentOnSite ((SmallEtale.associatedModule Be S he).obj 𝓕))
 ```
 
-**`AlgebraicGeometry.SmallZariski.isFlat_iff_associatedModuleEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteFlatAgreement.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteFlatAgreement.lean#L99). The attribute's comment: “flat (03ER (3)), small site S_Zar, at the equivalence QCoh(𝒪_S) ≌ QCoh(S_Zar, 𝒪) of 03DX (2) itself, with no hypothesis”.
+**`AlgebraicGeometry.SmallZariski.isFlat_iff_associatedModuleEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteFlatAgreement.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteFlatAgreement.lean#L99). The attribute's comment: “flat (03ER (3)), small site S\_Zar, at the equivalence QCoh(𝒪\_S) ≌ QCoh(S\_Zar, 𝒪) of 03DX (2) itself, with no hypothesis”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03ER (3), at the equivalence
 > `QCoh(𝒪_S) ≌ QCoh(S_Zar, 𝒪)` of Descent, Proposition 03DX (2).**  A quasi-coherent
@@ -5046,7 +5046,7 @@ theorem isFlat_iff_associatedModuleEquivalence
         ((associatedModuleEquivalence B S hS).functor.obj 𝓕).obj
 ```
 
-**`AlgebraicGeometry.SmallEtale.isFlat_iff_associatedModuleEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteFlatAgreement.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteFlatAgreement.lean#L123). The attribute's comment: “flat (03ER (3)), small site S_étale, at the equivalence QCoh(𝒪_S) ≌ QCoh(S_étale, 𝒪) of 03DX (2) itself, with no hypothesis”.
+**`AlgebraicGeometry.SmallEtale.isFlat_iff_associatedModuleEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteFlatAgreement.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteFlatAgreement.lean#L123). The attribute's comment: “flat (03ER (3)), small site S\_étale, at the equivalence QCoh(𝒪\_S) ≌ QCoh(S\_étale, 𝒪) of 03DX (2) itself, with no hypothesis”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03ER (3), at the equivalence
 > `QCoh(𝒪_S) ≌ QCoh(S_étale, 𝒪)` of Descent, Proposition 03DX (2).**  A quasi-coherent
@@ -5066,7 +5066,7 @@ theorem isFlat_iff_associatedModuleEquivalence
         ((associatedModuleEquivalence' B S hS).functor.obj 𝓕).obj
 ```
 
-**`AlgebraicGeometry.SmallFlatSite.isFlat_iff_associatedModuleEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteFlatAgreement.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteFlatAgreement.lean#L146). The attribute's comment: “flat (03ER (3)), small site S_τ for every τ ∈ {smooth, syntomic, fppf}, at the equivalence QCoh(𝒪_S) ≌ QCoh(S_τ, 𝒪) of 03DX itself, with no hypothesis”.
+**`AlgebraicGeometry.SmallFlatSite.isFlat_iff_associatedModuleEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteFlatAgreement.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallSiteFlatAgreement.lean#L146). The attribute's comment: “flat (03ER (3)), small site S\_τ for every τ ∈ \{smooth, syntomic, fppf}, at the equivalence QCoh(𝒪\_S) ≌ QCoh(S\_τ, 𝒪) of 03DX itself, with no hypothesis”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03ER (3), at the equivalence
 > `QCoh(𝒪_S) ≌ QCoh(S_τ, 𝒪)` of the small site `S_τ`, for every `τ ∈ {smooth, syntomic, fppf}`.**
@@ -5275,7 +5275,7 @@ theorem isFinitelyPresentedByGlobalSections_iff_associatedModule
       ((associatedModuleOfSheaf B S hS).obj F).IsFinitelyPresentedByGlobalSections
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isFiniteLocallyFreeOnSite_baseAssociatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteFiniteLocallyFreeAgreement.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteFiniteLocallyFreeAgreement.lean#L382). The attribute's comment: “finite locally free (03DL (2)), big site (Sch/S)_τ at every τ, at the comparison functor of 03DX itself”.
+**`AlgebraicGeometry.BigFppfOver.isFiniteLocallyFreeOnSite_baseAssociatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteFiniteLocallyFreeAgreement.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteFiniteLocallyFreeAgreement.lean#L382). The attribute's comment: “finite locally free (03DL (2)), big site (Sch/S)\_τ at every τ, at the comparison functor of 03DX itself”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DL (2), on the big site, as an
 > equivalence.**  A quasi-coherent `𝒪_S`-module `𝓗` is finite locally free on the small Zariski
@@ -5301,7 +5301,7 @@ public theorem isFiniteLocallyFreeOnSite_baseAssociatedModule_iff (τ : SiteKind
       SheafOfModules.IsFiniteLocallyFreeOnSite ((baseAssociatedModule B S hS τ).obj 𝓗)
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isFinitePresentation_baseAssociatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteFinitePresentationAgreement.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteFinitePresentationAgreement.lean#L414). The attribute's comment: “finite presentation (03DL (7)), big site (Sch/S)_τ at every τ, at the comparison functor of 03DX itself”.
+**`AlgebraicGeometry.BigFppfOver.isFinitePresentation_baseAssociatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteFinitePresentationAgreement.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteFinitePresentationAgreement.lean#L414). The attribute's comment: “finite presentation (03DL (7)), big site (Sch/S)\_τ at every τ, at the comparison functor of 03DX itself”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DL (7), on the big site, as an
 > equivalence.**  A quasi-coherent `𝒪_S`-module `𝓗` is of finite presentation on the small Zariski
@@ -5329,7 +5329,7 @@ public theorem isFinitePresentation_baseAssociatedModule_iff (τ : SiteKind) (�
       ((baseAssociatedModule B S hS τ).obj 𝓗).IsFinitePresentation
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isLocallyGeneratedByOnSite_baseAssociatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteLocalGenerationFinitenessAgreement.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteLocalGenerationFinitenessAgreement.lean#L544). The attribute's comment: “locally generated by r sections (03DL (4)), big site (Sch/S)_τ at every τ, at the comparison functor of 03DX itself”.
+**`AlgebraicGeometry.BigFppfOver.isLocallyGeneratedByOnSite_baseAssociatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteLocalGenerationFinitenessAgreement.lean, line 544](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteLocalGenerationFinitenessAgreement.lean#L544). The attribute's comment: “locally generated by r sections (03DL (4)), big site (Sch/S)\_τ at every τ, at the comparison functor of 03DX itself”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DL (4), on the big site, as an
 > equivalence.**  A quasi-coherent `𝒪_S`-module `𝓗` is locally generated by `r` sections on the
@@ -5358,7 +5358,7 @@ public theorem isLocallyGeneratedByOnSite_baseAssociatedModule_iff (τ : SiteKin
       SheafOfModules.IsLocallyGeneratedByOnSite ((baseAssociatedModule B S hS τ).obj 𝓗) r
 ```
 
-**`AlgebraicGeometry.BigFppfOver.isFiniteType_baseAssociatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteLocalGenerationFinitenessAgreement.lean, line 579](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteLocalGenerationFinitenessAgreement.lean#L579). The attribute's comment: “finite type (03DL (5)), big site (Sch/S)_τ at every τ, at the comparison functor of 03DX itself”.
+**`AlgebraicGeometry.BigFppfOver.isFiniteType_baseAssociatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteLocalGenerationFinitenessAgreement.lean, line 579](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/QuasiCoherentTopologiesTwo/BigSiteLocalGenerationFinitenessAgreement.lean#L579). The attribute's comment: “finite type (03DL (5)), big site (Sch/S)\_τ at every τ, at the comparison functor of 03DX itself”.
 
 > **Descent, Lemma 05VG for Modules on Sites, Definition 03DL (5), on the big site, as an
 > equivalence.**  A quasi-coherent `𝒪_S`-module `𝓗` is of finite type if and only if `𝓗^a` is of

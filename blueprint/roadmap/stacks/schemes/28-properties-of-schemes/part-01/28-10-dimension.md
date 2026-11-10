@@ -23,7 +23,7 @@ Declarations registered for the tag:
 
 [Tag 04MU](https://stacks.math.columbia.edu/tag/04MU) in the Stacks Project.
 
-**`AlgebraicGeometry.topologicalKrullDim_eq_iSup_krullDimOfRing_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Dimension.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Dimension.lean#L78). The attribute's comment: “dimension_sup_local_rings”. References: EGA IV (5.1.4).
+**`AlgebraicGeometry.topologicalKrullDim_eq_iSup_krullDimOfRing_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/Dimension.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Dimension.lean#L78). The attribute's comment: “dimension\_sup\_local\_rings”. References: EGA IV (5.1.4).
 
 > The dimension of a scheme is the supremum of the Krull dimensions of its local rings.
 
@@ -34,8 +34,8 @@ theorem topologicalKrullDim_eq_iSup_krullDimOfRing_stalk (X : Scheme.{u}) :
 
 Declarations registered for the tag:
 
-- [`TopologicalSpace.topologicalKrullDim_eq_iSup_localKrullDim`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Dimension/LocalKrullDim.lean#L142), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Properties/Dimension.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Dimension.lean#L235) (StacksFrontier): “dimension_sup_at_points”.
-- [`TopologicalSpace.topologicalKrullDimAt_eq_localKrullDim`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Dimension/LocalKrullDim.lean#L81), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Properties/Dimension.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Dimension.lean#L237) (StacksFrontier): “dimension_sup_at_points”.
+- [`TopologicalSpace.topologicalKrullDim_eq_iSup_localKrullDim`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Dimension/LocalKrullDim.lean#L142), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Properties/Dimension.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Dimension.lean#L235) (StacksFrontier): “dimension\_sup\_at\_points”.
+- [`TopologicalSpace.topologicalKrullDimAt_eq_localKrullDim`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Dimension/LocalKrullDim.lean#L81), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Properties/Dimension.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/Dimension.lean#L237) (StacksFrontier): “dimension\_sup\_at\_points”.
 
 ## Tag 02IZ, a lemma
 
@@ -85,7 +85,7 @@ lemma isIso_sigmaFromSpecStalk_of_topologicalKrullDim_le_zero
 
 [Tag 0CKV](https://stacks.math.columbia.edu/tag/0CKV) in the Stacks Project.
 
-**`AlgebraicGeometry.separation_tfae_of_topologicalKrullDim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/DimensionZero.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/DimensionZero.lean#L195). The attribute's comment: “separation_equivalences”.
+**`AlgebraicGeometry.separation_tfae_of_topologicalKrullDim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/DimensionZero.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/DimensionZero.lean#L195). The attribute's comment: “separation\_equivalences”.
 
 > **Stacks Project, Tag 0CKV.** For a scheme of dimension zero, quasi-separatedness,
 > separatedness, Hausdorffness of the underlying space, and closedness of every affine open are
@@ -101,7 +101,7 @@ theorem separation_tfae_of_topologicalKrullDim_eq_zero (X : Scheme.{u})
       ∀ U : X.Opens, IsAffineOpen U → IsClosed (U : Set X)]
 ```
 
-**`AlgebraicGeometry.connectedComponent_eq_singleton_of_topologicalKrullDim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/DimensionZero.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/DimensionZero.lean#L257). The attribute's comment: “connected_components”.
+**`AlgebraicGeometry.connectedComponent_eq_singleton_of_topologicalKrullDim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/DimensionZero.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/DimensionZero.lean#L257). The attribute's comment: “connected\_components”.
 
 > **Stacks Project, Tag 0CKV.** The connected components of a quasi-separated zero-dimensional
 > scheme are its points.
@@ -112,7 +112,7 @@ theorem connectedComponent_eq_singleton_of_topologicalKrullDim_eq_zero (X : Sche
     connectedComponent x = {x}
 ```
 
-**`AlgebraicGeometry.isAffineOpen_of_isCompact_of_topologicalKrullDim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/DimensionZero.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/DimensionZero.lean#L343). The attribute's comment: “quasicompact_open_affine”.
+**`AlgebraicGeometry.isAffineOpen_of_isCompact_of_topologicalKrullDim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/DimensionZero.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/DimensionZero.lean#L343). The attribute's comment: “quasicompact\_open\_affine”.
 
 > **Stacks Project, Tag 0CKV.** Every quasi-compact open subset of a quasi-separated scheme of
 > dimension zero is affine.
@@ -123,7 +123,7 @@ theorem isAffineOpen_of_isCompact_of_topologicalKrullDim_eq_zero (X : Scheme.{u}
     (hU : IsCompact (U : Set X)) : IsAffineOpen U
 ```
 
-**`AlgebraicGeometry.isAffine_of_topologicalKrullDim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/DimensionZero.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/DimensionZero.lean#L352). The attribute's comment: “quasicompact_affine”.
+**`AlgebraicGeometry.isAffine_of_topologicalKrullDim_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/DimensionZero.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/DimensionZero.lean#L352). The attribute's comment: “quasicompact\_affine”.
 
 > **Stacks Project, Tag 0CKV.** A quasi-compact, quasi-separated scheme of dimension zero is
 > affine.

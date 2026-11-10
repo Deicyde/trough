@@ -14,7 +14,7 @@ Section 56.4 of the Stacks Project, [Tag 0GP3](https://stacks.math.columbia.edu/
 
 [Tag 0GP4](https://stacks.math.columbia.edu/tag/0GP4) in the Stacks Project.
 
-**`ModuleCat.filteredColimitExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsModuleCategories/Extension.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsModuleCategories/Extension.lean#L71). The attribute's comment: “existence, at the target category of all B-modules”. References: SGA 4 I (8.7.3), “existence, C=Mod^fp_A”.
+**`ModuleCat.filteredColimitExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsModuleCategories/Extension.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsModuleCategories/Extension.lean#L71). The attribute's comment: “existence, at the target category of all B-modules”. References: SGA 4 I (8.7.3), “existence, C=Mod^fp\_A”.
 
 > A functor on finitely presented modules has an extension to all modules which preserves
 > filtered colimits.
@@ -26,7 +26,7 @@ public noncomputable def filteredColimitExtension
     FilteredColimitExtension A F
 ```
 
-**`ModuleCat.FilteredColimitExtension.existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsModuleCategories/Extension.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsModuleCategories/Extension.lean#L89). The attribute's comment: “existence, at the target category of all B-modules”. References: SGA 4 I (8.7.3), “uniqueness, C=Mod^fp_A”; SGA 4 I (8.7.2), “special case”.
+**`ModuleCat.FilteredColimitExtension.existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsModuleCategories/Extension.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/FunctorsModuleCategories/Extension.lean#L89). The attribute's comment: “existence, at the target category of all B-modules”. References: SGA 4 I (8.7.3), “uniqueness, C=Mod^fp\_A”; SGA 4 I (8.7.2), “special case”.
 
 > Two filtered-colimit-preserving extensions are related by a unique natural isomorphism
 > compatible with their specified identifications on finitely presented modules.
@@ -118,7 +118,7 @@ instance fgFilteredColimitExtension_additive
     E.functor.Additive
 ```
 
-**`ModuleCat.FGFilteredColimitExtension.preservesCoproducts`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/ExtendingFunctorsCategories/DirectSums.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/ExtendingFunctorsCategories/DirectSums.lean#L44). The attribute's comment: “direct_sums”.
+**`ModuleCat.FGFilteredColimitExtension.preservesCoproducts`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/ExtendingFunctorsCategories/DirectSums.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/ExtendingFunctorsCategories/DirectSums.lean#L44). The attribute's comment: “direct\_sums”.
 
 > **Stacks Project, Tag 0GP9.** An additive functor on finite modules has a
 > direct-sum-preserving filtered-colimit extension to all modules.
@@ -175,7 +175,7 @@ theorem FGFilteredColimitExtension.existsUnique_iso
         (E₁.iso.trans E₂.iso.symm).hom
 ```
 
-**`ModuleCat.fgFilteredColimitExtension_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/ExtendingFunctorsCategories/LeftExactness.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/ExtendingFunctorsCategories/LeftExactness.lean#L262). The attribute's comment: “left_exactness”.
+**`ModuleCat.fgFilteredColimitExtension_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/ExtendingFunctorsCategories/LeftExactness.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/ExtendingFunctorsCategories/LeftExactness.lean#L262). The attribute's comment: “left\_exactness”.
 
 > **Stacks Project, Tag 0GP9.** A left exact functor on finite modules over Noetherian rings
 > has a left exact filtered-colimit-preserving extension to all modules.
@@ -190,7 +190,7 @@ theorem fgFilteredColimitExtension_preservesFiniteLimits
     PreservesFiniteLimits E.functor
 ```
 
-**`ModuleCat.FGFilteredColimitExtension.preservesFiniteColimits`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/ExtendingFunctorsCategories/RightExactness.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/ExtendingFunctorsCategories/RightExactness.lean#L56). The attribute's comment: “right_exactness”.
+**`ModuleCat.FGFilteredColimitExtension.preservesFiniteColimits`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/ExtendingFunctorsCategories/RightExactness.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctorsAndMorphisms/ExtendingFunctorsCategories/RightExactness.lean#L56). The attribute's comment: “right\_exactness”.
 
 > **Stacks Project, Tag 0GP9.** A filtered-colimit extension of a right exact functor on
 > finite modules is right exact. The Noetherian hypothesis on `A` is what supplies the extension

@@ -75,7 +75,7 @@ def IsMittagLefflerCategorical (F : ℕᵒᵖ ⥤ C) : Prop
 
 [Tag 02N1](https://stacks.math.columbia.edu/tag/02N1) in the Stacks Project.
 
-**`Ab.mono_lim_map_and_exact_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean#L379). The attribute's comment: “left_exact”.
+**`Ab.mono_lim_map_and_exact_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean#L379). The attribute's comment: “left\_exact”.
 
 > Part (1): for any short exact sequence of inverse systems, the limit
 > sequence `0 → lim A → lim B → lim C` is exact.
@@ -87,7 +87,7 @@ theorem Ab.mono_lim_map_and_exact_of_shortExact
       (S.map (lim : (ℕᵒᵖ ⥤ Ab.{u}) ⥤ Ab.{u})).Exact
 ```
 
-**`Ab.isMittagLeffler_X₃_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean#L389). The attribute's comment: “ML_quotient”. References: EGA 0 (13.2.1), “(i), systems over ℕ”; SGA 5 V (2.1.2), “(i)”.
+**`Ab.isMittagLeffler_X₃_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean#L389). The attribute's comment: “ML\_quotient”. References: EGA 0 (13.2.1), “(i), systems over ℕ”; SGA 5 V (2.1.2), “(i)”.
 
 > Part (2): a quotient of a Mittag-Leffler inverse system is Mittag-Leffler.
 
@@ -97,7 +97,7 @@ theorem Ab.isMittagLeffler_X₃_of_shortExact
     (hB : (S.X₂ ⋙ forget Ab).IsMittagLeffler) : (S.X₃ ⋙ forget Ab).IsMittagLeffler
 ```
 
-**`Ab.shortExact_lim_of_isMittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean#L399). The attribute's comment: “ML_short_exact”. References: EGA 0 (13.2.2), “systems over ℕ”.
+**`Ab.shortExact_lim_of_isMittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean#L399). The attribute's comment: “ML\_short\_exact”. References: EGA 0 (13.2.2), “systems over ℕ”.
 
 > Part (3): if the kernel system is Mittag-Leffler, then the limit sequence
 > `0 → lim A → lim B → lim C → 0` is short exact.
@@ -109,7 +109,7 @@ theorem Ab.shortExact_lim_of_isMittagLeffler
     (S.map (lim : (ℕᵒᵖ ⥤ Ab.{u}) ⥤ Ab.{u})).ShortExact
 ```
 
-**`ModuleCat.shortExact_lim_of_isMittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean#L490). The attribute's comment: “ML_short_exact, for towers of modules”. References: EGA 0 (13.2.2), “ℕ-indexed systems”; EGA III (4.1.7.21), “more general”.
+**`ModuleCat.shortExact_lim_of_isMittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean#L490). The attribute's comment: “ML\_short\_exact, for towers of modules”. References: EGA 0 (13.2.2), “ℕ-indexed systems”; EGA III (4.1.7.21), “more general”.
 
 > Stacks 02N1 part (3) for towers of modules: if the kernel system is Mittag-Leffler, then the
 > limit sequence `0 → lim A → lim B → lim C → 0` is short exact. This is
@@ -123,7 +123,7 @@ theorem ModuleCat.shortExact_lim_of_isMittagLeffler {R : Type u} [Ring R]
     (S.map (lim : (ℕᵒᵖ ⥤ ModuleCat.{v} R) ⥤ ModuleCat.{v} R)).ShortExact
 ```
 
-**`ModuleCat.isMittagLeffler_X₃_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean#L500). The attribute's comment: “ML_quotient, for towers of modules”.
+**`ModuleCat.isMittagLeffler_X₃_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ShortComplex/InverseLimit.lean#L500). The attribute's comment: “ML\_quotient, for towers of modules”.
 
 > Stacks 02N1 part (2) for towers of modules: a quotient of a Mittag-Leffler inverse system is
 > Mittag-Leffler.

@@ -116,7 +116,7 @@ def derivedPullbackTensorIso : pullbackOfTensor f ≅ tensorOfPullbacks f
 
 [Tag 08DE](https://stacks.math.columbia.edu/tag/08DE) in the Stacks Project.
 
-**`Stacks.Cohomology.MixedDerivedTensorOnARingedSpace.spaceDerivedLinearMixedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/MixedDerivedTensorOnARingedSpace.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/MixedDerivedTensorOnARingedSpace.lean#L374). The attribute's comment: “the canonical bifunctorial isomorphism in D(O_X): the tensor product over the smaller sheaf of rings f⁻¹O_Y is an O_X-module through its first factor”.
+**`Stacks.Cohomology.MixedDerivedTensorOnARingedSpace.spaceDerivedLinearMixedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/MixedDerivedTensorOnARingedSpace.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/MixedDerivedTensorOnARingedSpace.lean#L374). The attribute's comment: “the canonical bifunctorial isomorphism in D(O\_X): the tensor product over the smaller sheaf of rings f⁻¹O\_Y is an O\_X-module through its first factor”.
 
 > **Stacks 08DE, `O_X`-linearly.**  The canonical bifunctorial isomorphism
 >
@@ -135,7 +135,7 @@ def spaceDerivedLinearMixedTensorIso :
     spaceLinearDerivedTensorPullback f ≅ spaceLinearDerivedMixedTensor f
 ```
 
-**`Stacks.Cohomology.MixedDerivedTensorOnARingedSpace.derivedLinearMixedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/MixedDerivedTensorOnARingedSpace.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/MixedDerivedTensorOnARingedSpace.lean#L402). The attribute's comment: “the canonical bifunctorial isomorphism, in D(O_X)”.
+**`Stacks.Cohomology.MixedDerivedTensorOnARingedSpace.derivedLinearMixedTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/MixedDerivedTensorOnARingedSpace.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPullback/MixedDerivedTensorOnARingedSpace.lean#L402). The attribute's comment: “the canonical bifunctorial isomorphism, in D(O\_X)”.
 
 > **Stacks 08DE, through the one-sided K-flat descent of the mixed tensor product.**  The
 > canonical bifunctorial isomorphism

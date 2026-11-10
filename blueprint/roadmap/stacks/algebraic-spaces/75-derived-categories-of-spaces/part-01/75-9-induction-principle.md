@@ -46,7 +46,7 @@ theorem isElementaryDistinguishedSquare_iff (B : BigFppfSite.{u}) (S : Scheme.{u
 
 [Tag 08GN](https://stacks.math.columbia.edu/tag/08GN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isElementaryDistinguishedSquare_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ElementaryDistinguishedSquare.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ElementaryDistinguishedSquare.lean#L165). The attribute's comment: “base_change”.
+**`AlgebraicGeometry.Space.isElementaryDistinguishedSquare_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ElementaryDistinguishedSquare.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ElementaryDistinguishedSquare.lean#L165). The attribute's comment: “base\_change”.
 
 > **Stacks 08GN, part (2).** An elementary distinguished square stays elementary
 > distinguished after base change along any morphism of algebraic spaces: the open subspace is
@@ -61,7 +61,7 @@ theorem isElementaryDistinguishedSquare_preimage (B : BigFppfSite.{u}) (S : Sche
     IsElementaryDistinguishedSquare B S hS hW' (U.preimage p) (Limits.pullback.snd f p)
 ```
 
-**`AlgebraicGeometry.Space.isElementaryDistinguishedSquare_openRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ElementaryDistinguishedSquare.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ElementaryDistinguishedSquare.lean#L267). The attribute's comment: “open_restriction”.
+**`AlgebraicGeometry.Space.isElementaryDistinguishedSquare_openRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ElementaryDistinguishedSquare.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ElementaryDistinguishedSquare.lean#L267). The attribute's comment: “open\_restriction”.
 
 > **Stacks 08GN, restriction to open subspaces.** Let `U ⊆ U'` be open subspaces of `W` and
 > let `V'` be an open subspace of `V`. The union of the point set of `U'` with the image of the
@@ -91,7 +91,7 @@ theorem isElementaryDistinguishedSquare_openRestriction (B : BigFppfSite.{u})
         (Subfunctor.range (Subfunctor.homOfLe hU'W')) f'
 ```
 
-**`AlgebraicGeometry.Space.isElementaryDistinguishedSquare_relocalizeRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ElementaryDistinguishedSquare.lean, line 701](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ElementaryDistinguishedSquare.lean#L701). The attribute's comment: “scheme_change”.
+**`AlgebraicGeometry.Space.isElementaryDistinguishedSquare_relocalizeRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ElementaryDistinguishedSquare.lean, line 701](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ElementaryDistinguishedSquare.lean#L701). The attribute's comment: “scheme\_change”.
 
 > **Stacks 08GN, change of base scheme.** An elementary distinguished square over `S` stays
 > elementary distinguished after restriction along a morphism `g : S' ⟶ S` of the site: the open
@@ -250,7 +250,7 @@ public theorem qcqs_induction_on_collection
 
 [Tag 08GR](https://stacks.math.columbia.edu/tag/08GR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsQuasiCompactSeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L228). The attribute's comment: “separated_objects”.
+**`AlgebraicGeometry.Space.IsQuasiCompactSeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L228). The attribute's comment: “separated\_objects”.
 
 > The quasi-compact separated algebraic spaces in the spaces-étale site.
 
@@ -261,7 +261,7 @@ public abbrev IsQuasiCompactSeparated
     (Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Prop
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompactSeparated_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L237). The attribute's comment: “separated_objects”.
+**`AlgebraicGeometry.Space.isQuasiCompactSeparated_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L237). The attribute's comment: “separated\_objects”.
 
 > The base algebraic space belongs to the collection.
 
@@ -275,7 +275,7 @@ public theorem isQuasiCompactSeparated_base
     IsQuasiCompactSeparated B S hS hZ X.1
 ```
 
-**`AlgebraicGeometry.Space.IsQuasiCompactSeparated.isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L247). The attribute's comment: “separated_objects”.
+**`AlgebraicGeometry.Space.IsQuasiCompactSeparated.isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L247). The attribute's comment: “separated\_objects”.
 
 > Every member of the collection is quasi-separated.
 
@@ -288,7 +288,7 @@ public theorem IsQuasiCompactSeparated.isAbsolutelyQuasiSeparated
     IsAbsolutelyQuasiSeparated B S hS hZ Y
 ```
 
-**`AlgebraicGeometry.Space.IsQuasiCompactSeparated.of_openImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L257). The attribute's comment: “separated_objects”.
+**`AlgebraicGeometry.Space.IsQuasiCompactSeparated.of_openImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L257). The attribute's comment: “separated\_objects”.
 
 > A quasi-compact open subspace of a member is again a member.
 
@@ -307,7 +307,7 @@ public theorem IsQuasiCompactSeparated.of_openImmersion
     IsQuasiCompactSeparated B S hS hZ U
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompactSeparated_of_isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L284). The attribute's comment: “separated_objects”.
+**`AlgebraicGeometry.Space.isQuasiCompactSeparated_of_isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L284). The attribute's comment: “separated\_objects”.
 
 > Every affine object of the spaces-étale site belongs to the collection.
 
@@ -321,7 +321,7 @@ public theorem isQuasiCompactSeparated_of_isAffineSpace
     IsQuasiCompactSeparated B S hS hZ V.1.left.1
 ```
 
-**`AlgebraicGeometry.Space.qcqs_induction_on_quasiCompactSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L296). The attribute's comment: “separated_objects”.
+**`AlgebraicGeometry.Space.qcqs_induction_on_quasiCompactSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L296). The attribute's comment: “separated\_objects”.
 
 > Induction on quasi-compact separated objects of the spaces-étale site.
 
@@ -355,7 +355,7 @@ public theorem qcqs_induction_on_quasiCompactSeparated
         P W.1.left.1 W.1.hom.hom
 ```
 
-**`AlgebraicGeometry.Space.IsQuasiCompactWithAffineDiagonal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L406). The attribute's comment: “affine_diagonal_objects”.
+**`AlgebraicGeometry.Space.IsQuasiCompactWithAffineDiagonal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L406). The attribute's comment: “affine\_diagonal\_objects”.
 
 > A quasi-compact algebraic space with affine absolute diagonal.
 
@@ -366,7 +366,7 @@ public abbrev IsQuasiCompactWithAffineDiagonal
     (Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Prop
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompactWithAffineDiagonal_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L417). The attribute's comment: “affine_diagonal_objects”.
+**`AlgebraicGeometry.Space.isQuasiCompactWithAffineDiagonal_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L417). The attribute's comment: “affine\_diagonal\_objects”.
 
 > The base algebraic space belongs to the collection.
 
@@ -381,7 +381,7 @@ public theorem isQuasiCompactWithAffineDiagonal_base
     IsQuasiCompactWithAffineDiagonal B S hS hZ X.1
 ```
 
-**`AlgebraicGeometry.Space.IsQuasiCompactWithAffineDiagonal.isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L428). The attribute's comment: “affine_diagonal_objects”.
+**`AlgebraicGeometry.Space.IsQuasiCompactWithAffineDiagonal.isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L428). The attribute's comment: “affine\_diagonal\_objects”.
 
 > Every member of the collection is quasi-separated.
 
@@ -395,7 +395,7 @@ public theorem IsQuasiCompactWithAffineDiagonal.isAbsolutelyQuasiSeparated
     IsAbsolutelyQuasiSeparated B S hS hZ W.1.left.1
 ```
 
-**`AlgebraicGeometry.Space.IsQuasiCompactWithAffineDiagonal.of_openImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 448](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L448). The attribute's comment: “affine_diagonal_objects”.
+**`AlgebraicGeometry.Space.IsQuasiCompactWithAffineDiagonal.of_openImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 448](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L448). The attribute's comment: “affine\_diagonal\_objects”.
 
 > A quasi-compact open subspace of a member is again a member.
 
@@ -414,7 +414,7 @@ public theorem IsQuasiCompactWithAffineDiagonal.of_openImmersion
     IsQuasiCompactWithAffineDiagonal B S hS hZ U
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompactWithAffineDiagonal_of_isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L469). The attribute's comment: “affine_diagonal_objects”.
+**`AlgebraicGeometry.Space.isQuasiCompactWithAffineDiagonal_of_isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L469). The attribute's comment: “affine\_diagonal\_objects”.
 
 > Every affine object of the spaces-étale site belongs to the collection.
 
@@ -428,7 +428,7 @@ public theorem isQuasiCompactWithAffineDiagonal_of_isAffineSpace
     IsQuasiCompactWithAffineDiagonal B S hS hZ V.1.left.1
 ```
 
-**`AlgebraicGeometry.Space.IsBasicEtaleObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L511). The attribute's comment: “smallest_collection”.
+**`AlgebraicGeometry.Space.IsBasicEtaleObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L511). The attribute's comment: “smallest\_collection”.
 
 > A quasi-compact open subspace of `X` or of an affine étale object over `X`.
 
@@ -440,7 +440,7 @@ public def IsBasicEtaleObject
     (g : Y ⟶ X.1) : Prop
 ```
 
-**`AlgebraicGeometry.Space.isBasicEtaleObject_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 551](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L551). The attribute's comment: “smallest_collection”.
+**`AlgebraicGeometry.Space.isBasicEtaleObject_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 551](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L551). The attribute's comment: “smallest\_collection”.
 
 > The base belongs to the basic collection.
 
@@ -452,7 +452,7 @@ public theorem isBasicEtaleObject_base
     IsBasicEtaleObject B S hS X X.1 (𝟙 X.1)
 ```
 
-**`AlgebraicGeometry.Space.IsBasicEtaleObject.isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 560](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L560). The attribute's comment: “smallest_collection”.
+**`AlgebraicGeometry.Space.IsBasicEtaleObject.isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 560](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L560). The attribute's comment: “smallest\_collection”.
 
 > A basic étale object is quasi-compact.
 
@@ -465,7 +465,7 @@ public theorem IsBasicEtaleObject.isQuasiCompactSpace
     IsQuasiCompactSpace B S hS W.1.left.1
 ```
 
-**`AlgebraicGeometry.Space.IsBasicEtaleObject.isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 569](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L569). The attribute's comment: “smallest_collection”.
+**`AlgebraicGeometry.Space.IsBasicEtaleObject.isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 569](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L569). The attribute's comment: “smallest\_collection”.
 
 > A basic étale object is quasi-separated when `X` is.
 
@@ -480,7 +480,7 @@ public theorem IsBasicEtaleObject.isAbsolutelyQuasiSeparated
     IsAbsolutelyQuasiSeparated B S hS hZ W.1.left.1
 ```
 
-**`AlgebraicGeometry.Space.IsBasicEtaleObject.of_openImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 586](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L586). The attribute's comment: “smallest_collection”.
+**`AlgebraicGeometry.Space.IsBasicEtaleObject.of_openImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 586](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L586). The attribute's comment: “smallest\_collection”.
 
 > Quasi-compact open subspaces of basic objects are basic.
 
@@ -498,7 +498,7 @@ public theorem IsBasicEtaleObject.of_openImmersion
     IsBasicEtaleObject B S hS X U (i ≫ W.1.hom.hom)
 ```
 
-**`AlgebraicGeometry.Space.isBasicEtaleObject_of_isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L606). The attribute's comment: “smallest_collection”.
+**`AlgebraicGeometry.Space.isBasicEtaleObject_of_isAffineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L606). The attribute's comment: “smallest\_collection”.
 
 > Every affine object of the étale site is basic.
 
@@ -511,7 +511,7 @@ public theorem isBasicEtaleObject_of_isAffineSpace
     IsBasicEtaleObject B S hS X V.1.left.1 V.1.hom.hom
 ```
 
-**`AlgebraicGeometry.Space.IsAdmissibleCollection.mem_of_isBasicEtaleObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 630](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L630). The attribute's comment: “smallest_collection”.
+**`AlgebraicGeometry.Space.IsAdmissibleCollection.mem_of_isBasicEtaleObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean, line 630](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/InductionCollections.lean#L630). The attribute's comment: “smallest\_collection”.
 
 > Every admissible collection contains all basic objects.
 

@@ -236,7 +236,7 @@ theorem isReasonableSpace_of_isZariskiCover
     IsReasonableSpace B S hS X
 ```
 
-**`AlgebraicGeometry.Space.isVeryReasonableSpace_of_isZariskiCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/VeryReasonableConditions.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/VeryReasonableConditions.lean#L64). The attribute's comment: “property_epsilon”.
+**`AlgebraicGeometry.Space.isVeryReasonableSpace_of_isZariskiCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/VeryReasonableConditions.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/VeryReasonableConditions.lean#L64). The attribute's comment: “property\_epsilon”.
 
 > **Stacks 03KE, the case `(ε)`.** Property `(ε)` of Stacks 03JX — very reasonableness — is
 > local for Zariski coverings: a presheaf on the big fppf site of `S` admitting a Zariski
@@ -254,7 +254,7 @@ theorem isVeryReasonableSpace_of_isZariskiCover
 
 [Tag 03KF](https://stacks.math.columbia.edu/tag/03KF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isDecentSpace_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyGammaPermanence.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyGammaPermanence.lean#L76). The attribute's comment: “property_gamma, as condition (4) of Stacks 03JV”.
+**`AlgebraicGeometry.Space.isDecentSpace_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyGammaPermanence.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyGammaPermanence.lean#L76). The attribute's comment: “property\_gamma, as condition (4) of Stacks 03JV”.
 
 > Decency passes from the target of a representable morphism of presheaves on the big fppf
 > site of `S` to its source, when the source is an algebraic space.
@@ -266,7 +266,7 @@ theorem isDecentSpace_of_relativelyRepresentable
     IsDecentSpace B S hS X
 ```
 
-**`AlgebraicGeometry.Space.hasFiniteChartAndRelationFibersAtEveryPoint_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyGammaPermanence.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyGammaPermanence.lean#L109). The attribute's comment: “property_gamma”.
+**`AlgebraicGeometry.Space.hasFiniteChartAndRelationFibersAtEveryPoint_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyGammaPermanence.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyGammaPermanence.lean#L109). The attribute's comment: “property\_gamma”.
 
 > Let `f : X ⟶ Y` be a representable morphism of algebraic spaces over `S`. If every étale
 > chart of `Y` by an affine scheme and the self-intersection of that chart have finite fibres
@@ -281,7 +281,7 @@ theorem hasFiniteChartAndRelationFibersAtEveryPoint_of_relativelyRepresentable
     HasFiniteChartAndRelationFibersAtEveryPoint B S hS X
 ```
 
-**`AlgebraicGeometry.Space.isReasonableSpace_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonablePermanence.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonablePermanence.lean#L72). The attribute's comment: “property_delta”.
+**`AlgebraicGeometry.Space.isReasonableSpace_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonablePermanence.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonablePermanence.lean#L72). The attribute's comment: “property\_delta”.
 
 > **Stacks 03KF, the case `(δ)`, and the reasonable half of Stacks 0ABT.** Property `(δ)`
 > of Stacks 03JX — reasonableness — passes from the target of a representable morphism of
@@ -300,7 +300,7 @@ theorem isReasonableSpace_of_relativelyRepresentable
     IsReasonableSpace B S hS X
 ```
 
-**`AlgebraicGeometry.Space.hasFiniteRelationFibersAtEveryPoint_of_relativelyRepresentable_of_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RepresentablePermanence.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RepresentablePermanence.lean#L179). The attribute's comment: “property_beta”.
+**`AlgebraicGeometry.Space.hasFiniteRelationFibersAtEveryPoint_of_relativelyRepresentable_of_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RepresentablePermanence.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RepresentablePermanence.lean#L179). The attribute's comment: “property\_beta”.
 
 > **Stacks 03KF, the case `(β)`.** Property `(β)` of Stacks 03JX passes from the target of
 > a representable morphism of algebraic spaces over `S` to its source.
@@ -320,7 +320,7 @@ theorem hasFiniteRelationFibersAtEveryPoint_of_relativelyRepresentable_of_target
     HasFiniteRelationFibersAtEveryPoint B S hS X
 ```
 
-**`AlgebraicGeometry.Space.isRepresentable_of_relativelyRepresentable_of_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RepresentablePermanence.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RepresentablePermanence.lean#L198). The attribute's comment: “property_theta”.
+**`AlgebraicGeometry.Space.isRepresentable_of_relativelyRepresentable_of_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RepresentablePermanence.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RepresentablePermanence.lean#L198). The attribute's comment: “property\_theta”.
 
 > **Stacks 03KF, property `(θ)`.** Property `(θ)` of an algebraic space over `S` is
 > representability of its functor of points, so this is the case `𝒫 = (θ)`: for a representable
@@ -335,7 +335,7 @@ theorem isRepresentable_of_relativelyRepresentable_of_target
     X.IsRepresentable
 ```
 
-**`AlgebraicGeometry.Space.isVeryReasonableSpace_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/VeryReasonablePermanence.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/VeryReasonablePermanence.lean#L114). The attribute's comment: “property_epsilon”.
+**`AlgebraicGeometry.Space.isVeryReasonableSpace_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/VeryReasonablePermanence.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/VeryReasonablePermanence.lean#L114). The attribute's comment: “property\_epsilon”.
 
 > Property `(ε)` of Stacks 03JX, very reasonableness, passes from the target of a representable
 > morphism of presheaves on the big fppf site of `S` to its source.

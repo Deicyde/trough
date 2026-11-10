@@ -14,7 +14,7 @@ Section 20.22 of the Stacks Project, [Tag 0A3C](https://stacks.math.columbia.edu
 
 [Tag 0A3D](https://stacks.math.columbia.edu/tag/0A3D) in the Stacks Project.
 
-**`Stacks.Topology.isIso_cohomologyOfGeneralizationsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/GeneralizationsOfCohomology.lean, line 534](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/GeneralizationsOfCohomology.lean#L534). The attribute's comment: “cohomology_of_neighbourhoods”.
+**`Stacks.Topology.isIso_cohomologyOfGeneralizationsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/GeneralizationsOfCohomology.lean, line 534](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/GeneralizationsOfCohomology.lean#L534). The attribute's comment: “cohomology\_of\_neighbourhoods”.
 
 > Let `X` be a spectral space, let `F` be an abelian sheaf on `X`,
 > let `E ⊆ X` be quasi-compact and let `W` be the set of points of `X` which specialize to a point
@@ -30,7 +30,7 @@ theorem isIso_cohomologyOfGeneralizationsMap (hE : IsCompact E)
     IsIso (cohomologyOfGeneralizationsMap E F p)
 ```
 
-**`Stacks.Topology.isIso_cohomologyOfComplementGeneralizationsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/GeneralizationsOfComplementCohomology.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/GeneralizationsOfComplementCohomology.lean#L340). The attribute's comment: “cohomology_of_complements”.
+**`Stacks.Topology.isIso_cohomologyOfComplementGeneralizationsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/GeneralizationsOfComplementCohomology.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CompactSubset/GeneralizationsOfComplementCohomology.lean#L340). The attribute's comment: “cohomology\_of\_complements”.
 
 > **[Stacks, Tag 0A3D] (2).** Let `X` be a spectral space, let `F` be an abelian sheaf on `X`,
 > let `E ⊆ X` be quasi-compact and constructible and let `W` be the set of points of `X` which
@@ -152,7 +152,7 @@ theorem subsingleton_sheafH_of_topologicalKrullDim_le :
         Subsingleton (Sheaf.H.{u, u, u, u} G q)
 ```
 
-**`Stacks.CohomologyVanishing.subsingleton_sheafH_above_topologicalKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean#L242). The attribute's comment: “clause (1): on a spectral space of Krull dimension at most d, sheaf cohomology vanishes in every degree above d. The same statement as the induction carrier subsingleton_sheafH_of_topologicalKrullDim_le, whose explicit HasSheafify and HasExt arguments are instance arguments here”.
+**`Stacks.CohomologyVanishing.subsingleton_sheafH_above_topologicalKrullDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Vanishing/SpectralSpaces.lean#L242). The attribute's comment: “clause (1): on a spectral space of Krull dimension at most d, sheaf cohomology vanishes in every degree above d. The same statement as the induction carrier subsingleton\_sheafH\_of\_topologicalKrullDim\_le, whose explicit HasSheafify and HasExt arguments are instance arguments here”.
 
 > Let `Y` be a spectral space of Krull dimension at most `d` and let `G` be an abelian sheaf on
 > `Y`. Then `H^q(Y, G) = 0` for every `q > d`.

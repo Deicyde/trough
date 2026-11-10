@@ -26,7 +26,7 @@ noncomputable def dualizingDimension {A : Type u} [CommRing A] [IsNoetherianRing
     (K : DerivedCategory (ModuleCat.{max v u} A)) (p : PrimeSpectrum A) : ℤ
 ```
 
-**`Dualizing.dualizingDimension_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DimensionFunction.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DimensionFunction.lean#L151). The attribute's comment: “δ(p) is the unique integer n with K_p⟦-n⟧ normalized over A_p”.
+**`Dualizing.dualizingDimension_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DimensionFunction.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DimensionFunction.lean#L151). The attribute's comment: “δ(p) is the unique integer n with K\_p⟦-n⟧ normalized over A\_p”.
 
 > **The defining property of the dimension function.** A shift of the localization of a
 > dualizing complex at a prime is normalized exactly when the shift is the value of the dimension
@@ -161,7 +161,7 @@ theorem isUniversallyCatenary_of_isDualizingComplex {A : Type u} [CommRing A] [I
 
 [Tag 0AWE](https://stacks.math.columbia.edu/tag/0AWE) in the Stacks Project.
 
-**`Dualizing.support_canonicalModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CanonicalModule.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CanonicalModule.lean#L293). The attribute's comment: “(1): the support of ω_A is the union of the d-dimensional irreducible components”.
+**`Dualizing.support_canonicalModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CanonicalModule.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CanonicalModule.lean#L293). The attribute's comment: “(1): the support of ω\_A is the union of the d-dimensional irreducible components”.
 
 > Let `A` be a Noetherian local ring with a normalized
 > dualizing complex `K`, let `d = dim(A)` and let `ω_A = H^{-d}(K)`. The support of `ω_A` is the
@@ -177,7 +177,7 @@ theorem support_canonicalModule
         topologicalKrullDim C = (d : WithBot ℕ∞)}
 ```
 
-**`Dualizing.propertySkModule_canonicalModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CanonicalModuleDepth.lean, line 603](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CanonicalModuleDepth.lean#L603). The attribute's comment: “(2): the canonical module ω_A satisfies Serre's condition (S₂)”.
+**`Dualizing.propertySkModule_canonicalModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CanonicalModuleDepth.lean, line 603](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CanonicalModuleDepth.lean#L603). The attribute's comment: “(2): the canonical module ω\_A satisfies Serre's condition (S₂)”.
 
 > Let `A` be a Noetherian local ring with a normalized dualizing complex `K`, let `d = dim(A)`
 > and let `ω_A = H^{-d}(K)`. Then `ω_A` satisfies Serre's condition `(S₂)`.

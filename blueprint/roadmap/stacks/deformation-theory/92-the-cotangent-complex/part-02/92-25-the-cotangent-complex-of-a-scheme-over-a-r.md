@@ -114,7 +114,7 @@ theorem standardResolutionChart_computes_derivedLowerShriek :
 
 [Tag 08T9](https://stacks.math.columbia.edu/tag/08T9) in the Stacks Project.
 
-**`AlgebraicGeometry.PolynomialChart.hasLeftDerivedFunctor_horizontalModuleInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ChartSiteHorizontalDerivedPullback.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ChartSiteHorizontalDerivedPullback.lean#L267). The attribute's comment: “the first link of the chain L_{X/Λ} = Lπ_!(Li^*Ω_{𝒪/Λ̲}) = Lπ_!(i^*Ω_{𝒪/Λ̲}) = Lπ_!(Ω_{𝒪/Λ̲} ⊗_𝒪 π⁻¹𝒪_X): the existence of the total left derived functor Li^* of the module pullback along the horizontal arrow of the diagram of Tag 08VA, on the chart site itself”.
+**`AlgebraicGeometry.PolynomialChart.hasLeftDerivedFunctor_horizontalModuleInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/ChartSiteHorizontalDerivedPullback.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/ChartSiteHorizontalDerivedPullback.lean#L267). The attribute's comment: “the first link of the chain L\_\{X/Λ} = Lπ\_!(Li^*Ω\_\{𝒪/Λ̲}) = Lπ\_!(i^*Ω\_\{𝒪/Λ̲}) = Lπ\_!(Ω\_\{𝒪/Λ̲} ⊗\_𝒪 π⁻¹𝒪\_X): the existence of the total left derived functor Li^* of the module pullback along the horizontal arrow of the diagram of Tag 08VA, on the chart site itself”.
 
 > **`Li^*` exists on the site of polynomial charts.** Degreewise `i^*` followed by
 > localization to the derived category has a total left derived functor with respect to the
@@ -134,7 +134,7 @@ theorem hasLeftDerivedFunctor_horizontalModuleInverseImage :
           (affineSheaf.{u, u + 1} Λ X structureMap))) (ComplexShape.up ℤ))
 ```
 
-**`AlgebraicGeometry.PolynomialChart.derivedLowerShriekInverseImageDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SchemeCotangentChartSite.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SchemeCotangentChartSite.lean#L256). The attribute's comment: “second isomorphism Lπ_!(Li^*Ω_{𝒪/Λ̲}) = Lπ_!(i^*Ω_{𝒪/Λ̲}), induced by the canonical map Li^*Ω ⟶ i^*Ω, an isomorphism since Ω_{𝒪/Λ̲} is flat”.
+**`AlgebraicGeometry.PolynomialChart.derivedLowerShriekInverseImageDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SchemeCotangentChartSite.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SchemeCotangentChartSite.lean#L256). The attribute's comment: “second isomorphism Lπ\_!(Li^*Ω\_\{𝒪/Λ̲}) = Lπ\_!(i^*Ω\_\{𝒪/Λ̲}), induced by the canonical map Li^*Ω ⟶ i^*Ω, an isomorphism since Ω\_\{𝒪/Λ̲} is flat”.
 
 > **Stacks Project, Tag 08T9, the second isomorphism** `Lπ_!(Li^*Ω_{𝒪/Λ̲}) ≅ Lπ_!(i^*Ω_{𝒪/Λ̲})`:
 > `Lπ_!` applied to the canonical map `Li^*Ω_{𝒪/Λ̲} ⟶ i^*Ω_{𝒪/Λ̲}`, an isomorphism because
@@ -151,7 +151,7 @@ def derivedLowerShriekInverseImageDifferentialsIso :
           (pulledBackDifferentials.{u, u + 1} Λ X structureMap))
 ```
 
-**`AlgebraicGeometry.PolynomialChart.derivedLowerShriekPulledBackDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SchemeCotangentChartSite.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SchemeCotangentChartSite.lean#L273). The attribute's comment: “third isomorphism Lπ_!(i^*Ω_{𝒪/Λ̲}) = Lπ_!(Ω_{𝒪/Λ̲} ⊗_𝒪 𝒪̲_X), induced by the canonical identification of i^* with extension of scalars along i♯”.
+**`AlgebraicGeometry.PolynomialChart.derivedLowerShriekPulledBackDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SchemeCotangentChartSite.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SchemeCotangentChartSite.lean#L273). The attribute's comment: “third isomorphism Lπ\_!(i^*Ω\_\{𝒪/Λ̲}) = Lπ\_!(Ω\_\{𝒪/Λ̲} ⊗\_𝒪 𝒪̲\_X), induced by the canonical identification of i^* with extension of scalars along i♯”.
 
 > **Stacks Project, Tag 08T9, the third isomorphism**
 > `Lπ_!(i^*Ω_{𝒪/Λ̲}) ≅ Lπ_!(Ω_{𝒪/Λ̲} ⊗_𝒪 𝒪̲_X)`: `Lπ_!` applied to the canonical identification of
@@ -168,7 +168,7 @@ def derivedLowerShriekPulledBackDifferentialsIso :
           (chartDifferentialsBaseChange Λ X structureMap))
 ```
 
-**`AlgebraicGeometry.PolynomialChart.cotangentComplexIsoDerivedLowerShriekInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SchemeCotangentChartSite.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SchemeCotangentChartSite.lean#L301). The attribute's comment: “first isomorphism L_{X/Λ} = Lπ_!(Li^*Ω_{𝒪/Λ̲}) in D(𝒪_X), for the site of polynomial charts of a scheme X over a ring Λ, with L_{X/Λ} the cotangent complex of X ⟶ Spec Λ and D(𝒪_X) taken in the coefficient universe of the chart topos; built from the canonical maps of the proof: flatness of Ω, Tag 08VB, Tag 08SX and the Tag 08V6 comparison”.
+**`AlgebraicGeometry.PolynomialChart.cotangentComplexIsoDerivedLowerShriekInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/SchemeCotangentChartSite.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/SchemeCotangentChartSite.lean#L301). The attribute's comment: “first isomorphism L\_\{X/Λ} = Lπ\_!(Li^*Ω\_\{𝒪/Λ̲}) in D(𝒪\_X), for the site of polynomial charts of a scheme X over a ring Λ, with L\_\{X/Λ} the cotangent complex of X ⟶ Spec Λ and D(𝒪\_X) taken in the coefficient universe of the chart topos; built from the canonical maps of the proof: flatness of Ω, Tag 08VB, Tag 08SX and the Tag 08V6 comparison”.
 
 > **Stacks Project, Tag 08T9, the first isomorphism** `L_{X/Λ} ≅ Lπ_!(Li^*Ω_{𝒪/Λ̲})` in `D(𝒪_X)`,
 > for the site of polynomial charts of Tag 08VA of a scheme `X` over a ring `Λ`. Here

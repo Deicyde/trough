@@ -24,7 +24,7 @@ Declarations registered for the tag:
 
 [Tag 03NY](https://stacks.math.columbia.edu/tag/03NY) in the Stacks Project.
 
-**`AlgebraicGeometry.singleton_specMap_mem_fpqcPrecoverage_iff_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Basic.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Basic.lean#L63). The attribute's comment: “affine_singleton”.
+**`AlgebraicGeometry.singleton_specMap_mem_fpqcPrecoverage_iff_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Basic.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Basic.lean#L63). The attribute's comment: “affine\_singleton”.
 
 > **Stacks Project, Tag 03NY.** The singleton family of affine schemes induced by a
 > ring homomorphism is an fpqc covering if and only if the homomorphism is faithfully flat.
@@ -36,10 +36,10 @@ public theorem singleton_specMap_mem_fpqcPrecoverage_iff_faithfullyFlat
       Scheme.fpqcPrecoverage (Spec (.of A)) ↔ f.FaithfullyFlat
 ```
 
-**`AlgebraicGeometry.presieve₀_affinePlanePowerSeriesCover_mem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Examples.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Examples.lean#L169). The attribute's comment: “power_series_covering”.
+**`AlgebraicGeometry.presieve₀_affinePlanePowerSeriesCover_mem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Examples.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Examples.lean#L169). The attribute's comment: “power\_series\_covering”.
 
-> **Stacks Project, Tag 03NY.** The family `{D(x) ⟶ 𝐀²_k, D(y) ⟶ 𝐀²_k,
-> Spec k[[x, y]] ⟶ 𝐀²_k}` is an fpqc covering of the affine plane.
+> **Stacks Project, Tag 03NY.** The family `\{D(x) ⟶ 𝐀²\_k, D(y) ⟶ 𝐀²\_k,
+> Spec k[[x, y]] ⟶ 𝐀²\_k}` is an fpqc covering of the affine plane.
 
 ```lean
 theorem presieve₀_affinePlanePowerSeriesCover_mem_fpqcPrecoverage :
@@ -49,10 +49,10 @@ theorem presieve₀_affinePlanePowerSeriesCover_mem_fpqcPrecoverage :
       Scheme.fpqcPrecoverage (Spec (CommRingCat.of (MvPolynomial (Fin 2) k)))
 ```
 
-**`AlgebraicGeometry.presieve₀_affinePlaneLocalRingCover_mem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Examples.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Examples.lean#L191). The attribute's comment: “local_ring_covering”.
+**`AlgebraicGeometry.presieve₀_affinePlaneLocalRingCover_mem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Examples.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Examples.lean#L191). The attribute's comment: “local\_ring\_covering”.
 
-> **Stacks Project, Tag 03NY.** The family `{D(x) ⟶ 𝐀²_k, D(y) ⟶ 𝐀²_k,
-> Spec 𝒪_{𝐀²_k, 0} ⟶ 𝐀²_k}` is an fpqc covering of the affine plane.
+> **Stacks Project, Tag 03NY.** The family `\{D(x) ⟶ 𝐀²\_k, D(y) ⟶ 𝐀²\_k,
+> Spec 𝒪\_\{𝐀²\_k, 0} ⟶ 𝐀²\_k}` is an fpqc covering of the affine plane.
 
 ```lean
 theorem presieve₀_affinePlaneLocalRingCover_mem_fpqcPrecoverage :
@@ -64,7 +64,7 @@ theorem presieve₀_affinePlaneLocalRingCover_mem_fpqcPrecoverage :
       Scheme.fpqcPrecoverage (Spec (CommRingCat.of (MvPolynomial (Fin 2) k)))
 ```
 
-**`AlgebraicGeometry.flat_sigmaFromSpecStalk`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean#L63). The attribute's comment: “local_spectra_counterexample”.
+**`AlgebraicGeometry.flat_sigmaFromSpecStalk`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean#L63). The attribute's comment: “local\_spectra\_counterexample”.
 
 > `∐_{x ∈ X} Spec 𝒪_{X, x} ⟶ X` is flat, since each `Spec 𝒪_{X, x} ⟶ X` is.
 
@@ -72,7 +72,7 @@ theorem presieve₀_affinePlaneLocalRingCover_mem_fpqcPrecoverage :
 instance flat_sigmaFromSpecStalk (X : Scheme.{u}) : Flat (sigmaFromSpecStalk X)
 ```
 
-**`AlgebraicGeometry.surjective_sigmaFromSpecStalk`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean#L70). The attribute's comment: “local_spectra_counterexample”.
+**`AlgebraicGeometry.surjective_sigmaFromSpecStalk`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean#L70). The attribute's comment: “local\_spectra\_counterexample”.
 
 > `∐_{x ∈ X} Spec 𝒪_{X, x} ⟶ X` is surjective, since `x` is in the image of the component
 > at `x`.
@@ -81,7 +81,7 @@ instance flat_sigmaFromSpecStalk (X : Scheme.{u}) : Flat (sigmaFromSpecStalk X)
 instance surjective_sigmaFromSpecStalk (X : Scheme.{u}) : Surjective (sigmaFromSpecStalk X)
 ```
 
-**`AlgebraicGeometry.flat_and_surjective_sigmaFromSpecStalk_polynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean#L99). The attribute's comment: “local_spectra_counterexample”.
+**`AlgebraicGeometry.flat_and_surjective_sigmaFromSpecStalk_polynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean#L99). The attribute's comment: “local\_spectra\_counterexample”.
 
 > **Stacks Project, Tag 03NY.** The morphism `φ : ∐_{x ∈ 𝐀¹_k} Spec 𝒪_{𝐀¹_k, x} ⟶ 𝐀¹_k`,
 > where `k` is a field, is flat and surjective. This is the positive half of the example; the
@@ -93,7 +93,7 @@ theorem flat_and_surjective_sigmaFromSpecStalk_polynomial :
       Surjective (sigmaFromSpecStalk (Spec (.of (Polynomial k))))
 ```
 
-**`AlgebraicGeometry.singleton_sigmaFromSpecStalk_notMem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean#L179). The attribute's comment: “local_spectra_counterexample”.
+**`AlgebraicGeometry.singleton_sigmaFromSpecStalk_notMem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean#L179). The attribute's comment: “local\_spectra\_counterexample”.
 
 > **Stacks Project, Tag 03NY.** Over the affine line, the family consisting of the single
 > morphism `∐_{x ∈ 𝐀¹_k} Spec 𝒪_{𝐀¹_k, x} ⟶ 𝐀¹_k` is not an fpqc covering, although that
@@ -105,7 +105,7 @@ theorem singleton_sigmaFromSpecStalk_notMem_fpqcPrecoverage :
       Scheme.fpqcPrecoverage (Spec (.of (Polynomial k)))
 ```
 
-**`AlgebraicGeometry.not_quasiCompact_sigmaFromSpecStalk_polynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean#L211). The attribute's comment: “local_spectra_counterexample”.
+**`AlgebraicGeometry.not_quasiCompact_sigmaFromSpecStalk_polynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/NotFpqc.lean#L211). The attribute's comment: “local\_spectra\_counterexample”.
 
 > **Stacks Project, Tag 03NY.** The morphism `∐_{x ∈ 𝐀¹_k} Spec 𝒪_{𝐀¹_k, x} ⟶ 𝐀¹_k` is not
 > quasi-compact: it is flat and surjective, so a quasi-compact such morphism would give an fpqc
@@ -118,8 +118,8 @@ theorem not_quasiCompact_sigmaFromSpecStalk_polynomial :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.zariskiPrecoverage_le_fpqcPrecoverage`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.zariskiPrecoverage_le_fpqcPrecoverage#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Basic.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Basic.lean#L42) (StacksFrontier): “zariski_coverings”. References: SGA 4 VII (4.2), “partial”.
-- [`AlgebraicGeometry.Scheme.Hom.singleton_mem_fpqcPrecoverage`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.singleton_mem_fpqcPrecoverage#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Basic.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Basic.lean#L46) (StacksFrontier): “qc_flat_surjective”. References: SGA 3 III (3.3), “quasi-compact branch”; SGA 3 IV (6.3.2), “partial”; SGA 3 VIIA (8.1.4), “Converse clause”; SGA 3 XI (6.8), “Fpqc covering step”; SGA 4 VII (4.2), “partial”; SGA 4½ Arcata (1.6.4), “special case”.
+- [`AlgebraicGeometry.Scheme.zariskiPrecoverage_le_fpqcPrecoverage`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.zariskiPrecoverage_le_fpqcPrecoverage#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Basic.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Basic.lean#L42) (StacksFrontier): “zariski\_coverings”. References: SGA 4 VII (4.2), “partial”.
+- [`AlgebraicGeometry.Scheme.Hom.singleton_mem_fpqcPrecoverage`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.singleton_mem_fpqcPrecoverage#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Basic.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Basic.lean#L46) (StacksFrontier): “qc\_flat\_surjective”. References: SGA 3 III (3.3), “quasi-compact branch”; SGA 3 IV (6.3.2), “partial”; SGA 3 VIIA (8.1.4), “Converse clause”; SGA 3 XI (6.8), “Fpqc covering step”; SGA 4 VII (4.2), “partial”; SGA 4½ Arcata (1.6.4), “special case”.
 
 ## Tag 03NZ, a lemma
 
@@ -155,7 +155,7 @@ public theorem isSheaf_fpqc_iff_zariski_and_affine_singleton
 
 [Tag 03O2](https://stacks.math.columbia.edu/tag/03O2) in the Stacks Project.
 
-**`AlgebraicGeometry.relativeDifferentialsPresheaf_not_isSheaf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Differentials.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Differentials.lean#L242). The attribute's comment: “not_fpqc_sheaf”.
+**`AlgebraicGeometry.relativeDifferentialsPresheaf_not_isSheaf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Differentials.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FpqcTopology/Differentials.lean#L242). The attribute's comment: “not\_fpqc\_sheaf”.
 
 > **Stacks Project, Tag 03O2.** The presheaf on schemes over `Spec (ZMod p)` sending a scheme
 > to the global sections of its sheaf of relative differentials is not a sheaf for the fpqc
@@ -167,7 +167,7 @@ theorem relativeDifferentialsPresheaf_not_isSheaf_fpqc (p : ℕ) [Fact p.Prime] 
       (relativeDifferentialsPresheaf (Spec (.of (ZMod p)))).functor
 ```
 
-**`AlgebraicGeometry.relativeDifferentialsPresheaf_isSheaf_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ZariskiDifferentialsSheaf.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ZariskiDifferentialsSheaf.lean#L325). The attribute's comment: “zariski_sheaf”.
+**`AlgebraicGeometry.relativeDifferentialsPresheaf_isSheaf_zariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/ZariskiDifferentialsSheaf.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ZariskiDifferentialsSheaf.lean#L325). The attribute's comment: “zariski\_sheaf”.
 
 > The presheaf on schemes over `S` sending a scheme to the global sections of its sheaf of
 > relative differentials is a sheaf for the Zariski topology.

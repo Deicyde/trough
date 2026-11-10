@@ -357,7 +357,7 @@ public theorem isConstructibleSetSheaf_limit_colimit_and_isWeakSerreClass_abelia
           (ModuleCat.{max (u + 1) w} Λ) => IsConstructibleModuleSheaf B X Λ F)
 ```
 
-**`AlgebraicGeometry.isConstructibleSetSheaf_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLimitsSets.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLimitsSets.lean#L135). The attribute's comment: “constructible_sets_finite_limits_colimits”. References: SGA 4 IX (2.6), “(i bis) finite limits”.
+**`AlgebraicGeometry.isConstructibleSetSheaf_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLimitsSets.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLimitsSets.lean#L135). The attribute's comment: “constructible\_sets\_finite\_limits\_colimits”. References: SGA 4 IX (2.6), “(i bis) finite limits”.
 
 > **Stacks 03RZ for sheaves of sets, finite limits.** A finite limit of constructible sheaves
 > of sets on the small étale site of a scheme is constructible.
@@ -369,7 +369,7 @@ public theorem isConstructibleSetSheaf_limit
     IsConstructibleSetSheaf B X (limit F)
 ```
 
-**`AlgebraicGeometry.isConstructibleSetSheaf_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLimitsSets.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLimitsSets.lean#L148). The attribute's comment: “constructible_sets_finite_limits_colimits”. References: SGA 4 IX (2.6), “(i bis) finite colimits”.
+**`AlgebraicGeometry.isConstructibleSetSheaf_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLimitsSets.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLimitsSets.lean#L148). The attribute's comment: “constructible\_sets\_finite\_limits\_colimits”. References: SGA 4 IX (2.6), “(i bis) finite colimits”.
 
 > **Stacks 03RZ for sheaves of sets, finite colimits.** A finite colimit of constructible
 > sheaves of sets on the small étale site of a scheme is constructible.
@@ -381,7 +381,7 @@ public theorem isConstructibleSetSheaf_colimit
     IsConstructibleSetSheaf B X (colimit F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.isWeakSerreClass_isConstructibleModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLimitsSets.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLimitsSets.lean#L213). The attribute's comment: “constructible_modules_weak_serre”. References: SGA 4 IX (2.6).
+**`AlgebraicGeometry.SmallEtale.isWeakSerreClass_isConstructibleModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLimitsSets.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/FiniteLimitsSets.lean#L213). The attribute's comment: “constructible\_modules\_weak\_serre”. References: SGA 4 IX (2.6).
 
 > **Stacks 03RZ (3).** For `Λ` a Noetherian ring, the constructible sheaves of `Λ`-modules on
 > the small étale site of a scheme form a weak Serre subcategory of all sheaves of `Λ`-modules on
@@ -404,7 +404,7 @@ public theorem SmallEtale.isWeakSerreClass_isConstructibleModuleSheaf :
         (ModuleCat.{max (u + 1) w} Λ) => IsConstructibleModuleSheaf B X Λ F)
 ```
 
-**`AlgebraicGeometry.constructibleAbelianSheaf_isWeakSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/WeakSerreAbelian.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/WeakSerreAbelian.lean#L213). The attribute's comment: “constructible_abelian_weak_serre”. References: SGA 4 IX (2.6), “(ii)+ker/coker abelian”.
+**`AlgebraicGeometry.constructibleAbelianSheaf_isWeakSerreClass`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/WeakSerreAbelian.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Constructible/WeakSerreAbelian.lean#L213). The attribute's comment: “constructible\_abelian\_weak\_serre”. References: SGA 4 IX (2.6), “(ii)+ker/coker abelian”.
 
 > **Stacks 03RZ for abelian sheaves.** The constructible sheaves of abelian groups on the small
 > étale site of a scheme form a weak Serre subcategory of all abelian sheaves on that site.

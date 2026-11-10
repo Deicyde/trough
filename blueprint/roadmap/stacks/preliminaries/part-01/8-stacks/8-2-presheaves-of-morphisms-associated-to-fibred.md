@@ -24,7 +24,7 @@ lemma morRestrict_id (x y : p.Fiber U) (g : Over U)
     morRestrict p x y (𝟙 g) m = m
 ```
 
-**`CategoryTheory.Functor.morRestrict_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Descent/IsStack/MorPresheaf.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Descent/IsStack/MorPresheaf.lean#L139). The attribute's comment: “compatibility with composition: φ|_{V″} = (φ|_{V′})|_{V″}”.
+**`CategoryTheory.Functor.morRestrict_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Descent/IsStack/MorPresheaf.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Descent/IsStack/MorPresheaf.lean#L139). The attribute's comment: “compatibility with composition: φ|\_\{V″} = (φ|\_\{V′})|\_\{V″}”.
 
 > Restricting a section of `Mor(x, y)` along a composite is restricting along the two factors in
 > turn.

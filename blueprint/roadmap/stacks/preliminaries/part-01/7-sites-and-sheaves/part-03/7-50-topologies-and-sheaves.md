@@ -14,7 +14,7 @@ Section 7.50 of the Stacks Project, [Tag 00ZN](https://stacks.math.columbia.edu/
 
 [Tag 00ZO](https://stacks.math.columbia.edu/tag/00ZO) in the Stacks Project.
 
-**`sieve_sheafification_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topology/SieveSheafification.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Topology/SieveSheafification.lean#L42). References: SGA 4 II (5.3), “sieve inclusion S→h_U”; SGA 3 IV (4.3.12), “special case”; SGA 4 II (4.6.1), “more general”; SGA 4 II (5.1), “special case”; SGA 4 II (5.5), “Ψ ∘ Φ = id”.
+**`sieve_sheafification_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Topology/SieveSheafification.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Topology/SieveSheafification.lean#L42). References: SGA 4 II (5.3), “sieve inclusion S→h\_U”; SGA 3 IV (4.3.12), “special case”; SGA 4 II (4.6.1), “more general”; SGA 4 II (5.1), “special case”; SGA 4 II (5.5), “Ψ ∘ Φ = id”.
 
 > **Stacks 00ZO.** A sieve `S` on `U` is a covering sieve for the topology `J` if and only if
 > the sheafification `S^# ⟶ h_U^#` of its inclusion `S ↪ h_U` (i.e. the image under the

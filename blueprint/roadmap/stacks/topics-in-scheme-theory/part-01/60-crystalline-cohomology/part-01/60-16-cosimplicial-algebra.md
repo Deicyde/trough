@@ -25,7 +25,7 @@ public theorem homotopic_tensor_id {φ ψ : K ⟶ M} (h : Homotopic φ ψ)
     Homotopic (φ ⊗ₘ 𝟙 L) (ψ ⊗ₘ 𝟙 L)
 ```
 
-**`Crystalline.homotopic_exteriorPower_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Cosimplicial.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Cosimplicial.lean#L406). The attribute's comment: “exterior_power”.
+**`Crystalline.homotopic_exteriorPower_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/Cosimplicial.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/Cosimplicial.lean#L406). The attribute's comment: “exterior\_power”.
 
 > **Stacks 07KQ, exterior power.** Homotopic homomorphisms of cosimplicial
 > modules induce homotopic homomorphisms on every exterior power.

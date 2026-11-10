@@ -241,7 +241,7 @@ theorem exists_coveringSieve_lift_homotopy (α : E ⟶ F) (f : G ⟶ F) (a : ℤ
 
 [Tag 08FR](https://stacks.math.columbia.edu/tag/08FR) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.exists_coveringSieve_homotopy_zero_of_derived_zero_overMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalComplexMapOfARetraction.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalComplexMapOfARetraction.lean#L117). The attribute's comment: “local_null_homotopy, along an arrow of the site”.
+**`AlgebraicGeometry.RingedSite.exists_coveringSieve_homotopy_zero_of_derived_zero_overMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalComplexMapOfARetraction.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalComplexMapOfARetraction.lean#L117). The attribute's comment: “local\_null\_homotopy, along an arrow of the site”.
 
 > **Stacks 08FR (2), with the restriction to the slice over an arrow `V ⟶ U` of the covering
 > sieve expressed by `SheafOfModules.overMap`** rather than by restriction to an iterated slice.
@@ -263,7 +263,7 @@ theorem exists_coveringSieve_homotopy_zero_of_derived_zero_overMap
           (ComplexShape.up ℤ)).map α) 0)
 ```
 
-**`AlgebraicGeometry.RingedSite.exists_coveringSieve_homotopy_zero_of_derived_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalNullHomotopyOfDerivedZero.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalNullHomotopyOfDerivedZero.lean#L75). The attribute's comment: “local_null_homotopy”. References: SGA 6 I (4.1), “special case”.
+**`AlgebraicGeometry.RingedSite.exists_coveringSieve_homotopy_zero_of_derived_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalNullHomotopyOfDerivedZero.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalNullHomotopyOfDerivedZero.lean#L75). The attribute's comment: “local\_null\_homotopy”. References: SGA 6 I (4.1), “special case”.
 
 > Let `(C, O)` be a ringed site and `U` an object of `C`. Let
 > `α : E ⟶ F` be a map of complexes of `O|_U`-modules with `E` strictly perfect, and suppose the
@@ -283,7 +283,7 @@ theorem exists_coveringSieve_homotopy_zero_of_derived_zero
             (Over.mk f)).mapHomologicalComplex (ComplexShape.up ℤ)).map α) 0)
 ```
 
-**`AlgebraicGeometry.RingedSite.exists_coveringSieve_complexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalRepresentationOfADerivedMap.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalRepresentationOfADerivedMap.lean#L250). The attribute's comment: “local_representation”.
+**`AlgebraicGeometry.RingedSite.exists_coveringSieve_complexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalRepresentationOfADerivedMap.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalRepresentationOfADerivedMap.lean#L250). The attribute's comment: “local\_representation”.
 
 > **Stacks 08FR (1).** Let `(C, O)` be a ringed site and `U` an object of `C`. Let `E`, `F` be
 > complexes of `O|_U`-modules with `E` strictly perfect. Any morphism `α : E ⟶ F` of `D(O|_U)` is,

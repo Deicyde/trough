@@ -97,7 +97,7 @@ theorem isLeftDerived_derivedPullbackTensorRingedTopos :
 def derivedPullbackRingedTopos : derivedCategory.{u, u, u} B ⥤ derivedCategory.{u, u, u} A
 ```
 
-**`SheafOfModules.DifferentialGradedModule.derivedTensorProductTopos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposDerivedTensorProduct.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposDerivedTensorProduct.lean#L337). The attribute's comment: “(1) the derived tensor product - ⊗^L_A N”. References: SGA 4 XVII (4.2.12), “The case g = id”.
+**`SheafOfModules.DifferentialGradedModule.derivedTensorProductTopos`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposDerivedTensorProduct.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedToposDerivedTensorProduct.lean#L337). The attribute's comment: “(1) the derived tensor product - ⊗^L\_A N”. References: SGA 4 XVII (4.2.12), “The case g = id”.
 
 > **The derived tensor product** `- ⊗^𝐋_A N : D(A, d) ⥤ D(A', d)`. Let `(Sh(C), O)` be a ringed
 > topos, let `A` and `A'` be sheaves of differential graded `O`-algebras and let `N` be a
@@ -181,7 +181,7 @@ theorem isIso_derivedTensorProductMap (ν : N ⟶ N') (qis : IsCohomologyIso ν.
 
 [Tag 0FTK](https://stacks.math.columbia.edu/tag/0FTK) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.isIso_derivedTensorProductCounit_of_isGood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedTensorKFlat.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedTensorKFlat.lean#L212). The attribute's comment: “M ⊗^L_A N = M ⊗_A N for N good as a left module”.
+**`SheafOfModules.DifferentialGradedModule.isIso_derivedTensorProductCounit_of_isGood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedTensorKFlat.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedDerivedTensorKFlat.lean#L212). The attribute's comment: “M ⊗^L\_A N = M ⊗\_A N for N good as a left module”.
 
 > Let `(𝒞, 𝒪)` be a ringed site, `𝒜`, `𝒜'` differential graded `𝒪`-algebras and `𝒩` a
 > differential graded `(𝒜, 𝒜')`-bimodule which is good (Tag 0FSA) as a left differential graded

@@ -22,7 +22,7 @@ Declarations registered for the tag:
 
 [Tag 018H](https://stacks.math.columbia.edu/tag/018H) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.existsUnique_hom_const_app_zero_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/CechNerve.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/CechNerve.lean#L106). The attribute's comment: “restriction to degree 0 is a bijection from augmentations of U towards X onto the morphisms ε₀ : U_0 ⟶ X with ε₀ ∘ d^1_0 = ε₀ ∘ d^1_1”.
+**`CategoryTheory.SimplicialObject.existsUnique_hom_const_app_zero_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/CechNerve.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/CechNerve.lean#L106). The attribute's comment: “restriction to degree 0 is a bijection from augmentations of U towards X onto the morphisms ε₀ : U\_0 ⟶ X with ε₀ ∘ d^1\_0 = ε₀ ∘ d^1\_1”.
 
 > Let `U` be a simplicial object of a category `C`, let `X : C` and let `ε₀ : U_0 ⟶ X`. Then `ε₀`
 > extends to a unique augmentation of `U` towards `X`, i.e. to a unique morphism
@@ -83,7 +83,7 @@ theorem cechNerve_isCoskeletal
 
 [Tag 018J](https://stacks.math.columbia.edu/tag/018J) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.existsUnique_hom_cechNerve_app_zero_comp_π_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/CechNerve.lean, line 617](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/CechNerve.lean#L617). The attribute's comment: “the canonical morphism V ⟶ U, pinned as the unique morphism to the Čech nerve of ε₀ which is the identity of V_0 in degree 0”.
+**`CategoryTheory.SimplicialObject.existsUnique_hom_cechNerve_app_zero_comp_π_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/CechNerve.lean, line 617](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/CechNerve.lean#L617). The attribute's comment: “the canonical morphism V ⟶ U, pinned as the unique morphism to the Čech nerve of ε₀ which is the identity of V\_0 in degree 0”.
 
 > Let `C` be a category with fibre products, let `V` be a simplicial object of `C` and let
 > `ε : V ⟶ (const C).obj X` be an augmentation of `V` towards `X : C`, with degree `0` component

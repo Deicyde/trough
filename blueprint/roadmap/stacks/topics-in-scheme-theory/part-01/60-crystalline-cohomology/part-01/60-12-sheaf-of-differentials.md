@@ -14,7 +14,7 @@ Section 60.12 of the Stacks Project, [Tag 07IW](https://stacks.math.columbia.edu
 
 [Tag 07IW](https://stacks.math.columbia.edu/tag/07IW) in the Stacks Project.
 
-**`Crystalline.dpDifferentialsSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SchemeDifferentials.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SchemeDifferentials.lean#L493). The attribute's comment: “the sheaf Ω_{T/Y,δ} of divided power differentials of a divided power scheme over a scheme”.
+**`Crystalline.dpDifferentialsSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SchemeDifferentials.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SchemeDifferentials.lean#L493). The attribute's comment: “the sheaf Ω\_\{T/Y,δ} of divided power differentials of a divided power scheme over a scheme”.
 
 > **The sheaf of divided power differentials** `Ω_{T/Y,δ}` of a divided power scheme `T` over a
 > scheme `Y`: the sheaf of `𝒪_T`-modules associated with the presheaf of divided power
@@ -24,7 +24,7 @@ Section 60.12 of the Stacks Project, [Tag 07IW](https://stacks.math.columbia.edu
 def dpDifferentialsSheaf : T.scheme.Modules
 ```
 
-**`Crystalline.universalDPSchemeDerivation_isUniversal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SchemeDifferentials.lean, line 692](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SchemeDifferentials.lean#L692). The attribute's comment: “the universal divided power derivation d_{T/Y,δ} and its universal property”.
+**`Crystalline.universalDPSchemeDerivation_isUniversal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SchemeDifferentials.lean, line 692](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SchemeDifferentials.lean#L692). The attribute's comment: “the universal divided power derivation d\_\{T/Y,δ} and its universal property”.
 
 > **The universal property of the sheaf of divided power differentials.**  Every divided power
 > derivation of `𝒪_T` over `Y` into a sheaf of `𝒪_T`-modules factors uniquely through the universal
@@ -158,7 +158,7 @@ def restrictedCrysDifferentialsSheafIso (A : Thickening S) :
 
 [Tag 07J0](https://stacks.math.columbia.edu/tag/07J0) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.affineCrysDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineObjectDifferentials.lean, line 458](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineObjectDifferentials.lean#L458). The attribute's comment: “Γ((U, T, δ), Ω_{X/S}) = Ω¹_{Γ(T, 𝒪_T)/Γ(V, 𝒪_V), δ} for an affine object of the crystalline category mapping into an affine open V ⊆ S”.
+**`Crystalline.GlobalCrystallineSituation.affineCrysDifferentialsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineObjectDifferentials.lean, line 458](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineObjectDifferentials.lean#L458). The attribute's comment: “Γ((U, T, δ), Ω\_\{X/S}) = Ω¹\_\{Γ(T, 𝒪\_T)/Γ(V, 𝒪\_V), δ} for an affine object of the crystalline category mapping into an affine open V ⊆ S”.
 
 > For an affine object `(U, T, δ)` of `CRIS(X/S)` whose structure morphism factors through an
 > affine open `V ⊆ S`, the sections of `Ω_{X/S}` over `(U, T, δ)` are the divided power
@@ -169,7 +169,7 @@ def affineCrysDifferentialsIso [IsAffine A.thickening.target.scheme] (hV : IsAff
     crysDifferentialsObj S A ≅ affineCrysDifferentialsObj S A hVA
 ```
 
-**`Crystalline.GlobalCrystallineSituation.existsUnique_affineCrysDifferentialsIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineObjectDifferentials.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineObjectDifferentials.lean#L497). The attribute's comment: “the equality sign of the tag: exactly one isomorphism Γ((U, T, δ), Ω_{X/S}) ≅ Ω¹_{Γ(T, 𝒪_T)/Γ(V, 𝒪_V), δ} carries d_{X/S} to the universal divided power differential”.
+**`Crystalline.GlobalCrystallineSituation.existsUnique_affineCrysDifferentialsIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/AffineObjectDifferentials.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/AffineObjectDifferentials.lean#L497). The attribute's comment: “the equality sign of the tag: exactly one isomorphism Γ((U, T, δ), Ω\_\{X/S}) ≅ Ω¹\_\{Γ(T, 𝒪\_T)/Γ(V, 𝒪\_V), δ} carries d\_\{X/S} to the universal divided power differential”.
 
 > **The identification of [Stacks, Tag 07J0] is the only one compatible with the universal
 > derivations.**  This is what the equality sign of the source asserts: not that the two modules
@@ -191,7 +191,7 @@ theorem existsUnique_affineCrysDifferentialsIso [IsAffine A.thickening.target.sc
 
 [Tag 07J1](https://stacks.math.columbia.edu/tag/07J1) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.smallSelfProductDividedSquare_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormal.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormal.lean#L316). The attribute's comment: “second assertion: K^{[2]} is a sub-ideal of K; sections over each open of T(1)”.
+**`Crystalline.GlobalCrystallineSituation.smallSelfProductDividedSquare_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormal.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormal.lean#L316). The attribute's comment: “second assertion: K^\{[2]} is a sub-ideal of K; sections over each open of T(1)”.
 
 > **Stacks Project, Tag 07J1.**  The divided square of the diagonal ideal is a sub-ideal of the
 > diagonal ideal: the square of an ideal is contained in it, and the diagonal ideal is preserved by
@@ -203,7 +203,7 @@ theorem smallSelfProductDividedSquare_le (h : IsLimit (BinaryFan.mk pr₀ pr₁)
     smallSelfProductDividedSquare h W ≤ smallSelfProductDiagonalIdeal h W
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallSelfProductConormalComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormal.lean, line 826](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormal.lean#L826). The attribute's comment: “second assertion: the comparison map (Ω_{X/S})_T → K/K^{[2]} on each open of T; an isomorphism on an affine open of T lying over an affine open of S”.
+**`Crystalline.GlobalCrystallineSituation.smallSelfProductConormalComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormal.lean, line 826](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormal.lean#L826). The attribute's comment: “second assertion: the comparison map (Ω\_\{X/S})\_T → K/K^\{[2]} on each open of T; an isomorphism on an affine open of T lying over an affine open of S”.
 
 > **Stacks Project, Tag 07J1, the comparison map of the second assertion.**  The universal
 > property of the divided power differentials of `T` over `S` on an open `V` applied to the
@@ -264,7 +264,7 @@ theorem isAffineOpen_smallSelfProductOpen (h : IsLimit (BinaryFan.mk pr₀ pr₁
     IsAffineOpen (smallSelfProductOpen pr₀ pr₁ V)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.exists_isIso_smallSelfProductConormalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormalIso.lean, line 590](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormalIso.lean#L590). The attribute's comment: “second assertion: the comparison Ω_{T/S,δ} → K/K^{[2]} is an isomorphism on a neighbourhood of every point of every open of T, with no hypothesis on the open”.
+**`Crystalline.GlobalCrystallineSituation.exists_isIso_smallSelfProductConormalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormalIso.lean, line 590](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormalIso.lean#L590). The attribute's comment: “second assertion: the comparison Ω\_\{T/S,δ} → K/K^\{[2]} is an isomorphism on a neighbourhood of every point of every open of T, with no hypothesis on the open”.
 
 > **Stacks Project, Tag 07J1, the second assertion, with no hypothesis on the open.**  Every
 > point of every open `W` of `T` has an open neighbourhood `V ≤ W` on which the comparison map
@@ -280,7 +280,7 @@ theorem exists_isIso_smallSelfProductConormalComparison
       IsIso (smallSelfProductConormalComparison h V)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.exists_isIso_restrictedCrysDifferentialsConormalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormalIso.lean, line 608](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormalIso.lean#L608). The attribute's comment: “second assertion: (Ω_{X/S})_T = K/K^{[2]} on a neighbourhood of every point of every open of T, with no hypothesis on the open”.
+**`Crystalline.GlobalCrystallineSituation.exists_isIso_restrictedCrysDifferentialsConormalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormalIso.lean, line 608](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormalIso.lean#L608). The attribute's comment: “second assertion: (Ω\_\{X/S})\_T = K/K^\{[2]} on a neighbourhood of every point of every open of T, with no hypothesis on the open”.
 
 > **Stacks Project, Tag 07J1, the second assertion, with no hypothesis on the open.**  Every
 > point of every open `W` of `T` has an open neighbourhood `V ≤ W` on which the comparison map
@@ -298,7 +298,7 @@ theorem exists_isIso_restrictedCrysDifferentialsConormalComparison
       IsIso (restrictedCrysDifferentialsConormalComparison h V)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.isBasis_isIso_restrictedCrysDifferentialsConormalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormalIso.lean, line 625](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormalIso.lean#L625). The attribute's comment: “second assertion: the opens of T on which (Ω_{X/S})_T = K/K^{[2]} form a basis of the topology of T”.
+**`Crystalline.GlobalCrystallineSituation.isBasis_isIso_restrictedCrysDifferentialsConormalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormalIso.lean, line 625](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormalIso.lean#L625). The attribute's comment: “second assertion: the opens of T on which (Ω\_\{X/S})\_T = K/K^\{[2]} form a basis of the topology of T”.
 
 > **Stacks Project, Tag 07J1, the second assertion, as a basis of the topology of `T`.**  The
 > opens of `T` on which the comparison `(Ω_{X/S})_T → K/K^{[2]}` is an isomorphism form a basis of
@@ -314,7 +314,7 @@ theorem isBasis_isIso_restrictedCrysDifferentialsConormalComparison
         IsIso (restrictedCrysDifferentialsConormalComparison h W)}
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallSelfProductConormalInverse_comp_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormalThickening.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormalThickening.lean#L495). The attribute's comment: “second assertion: the inverse comparison K/K^{[2]} → (Ω_{X/S})_T out of the first-order thickening T', and that it undoes the comparison map”.
+**`Crystalline.GlobalCrystallineSituation.smallSelfProductConormalInverse_comp_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormalThickening.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductConormalThickening.lean#L495). The attribute's comment: “second assertion: the inverse comparison K/K^\{[2]} → (Ω\_\{X/S})\_T out of the first-order thickening T', and that it undoes the comparison map”.
 
 > **Stacks Project, Tag 07J1, the inverse comparison.**  The comparison map
 > `(Ω_{X/S})_T(V) → K/K^{[2]}` followed by the map back out of the first-order thickening is the
@@ -331,7 +331,7 @@ theorem smallSelfProductConormalInverse_comp_comparison (h : IsLimit (BinaryFan.
         x
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallSelfProductDiagonalIdeal_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductDiagonal.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductDiagonal.lean#L306). The attribute's comment: “K ⊆ J_{T(1)}; sections over each open, K the kernel of Δ on sections”.
+**`Crystalline.GlobalCrystallineSituation.smallSelfProductDiagonalIdeal_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductDiagonal.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductDiagonal.lean#L306). The attribute's comment: “K ⊆ J\_\{T(1)}; sections over each open, K the kernel of Δ on sections”.
 
 > For a self-product `(U(1), T(1), δ(1))` of an object `(U, T, δ)` of `Cris(X/S)` with itself,
 > the diagonal ideal `K` of `Δ : T ⟶ T(1)` is contained in the divided power ideal `J_{T(1)}` on
@@ -343,7 +343,7 @@ theorem smallSelfProductDiagonalIdeal_le (h : IsLimit (BinaryFan.mk pr₀ pr₁)
     smallSelfProductDiagonalIdeal h W ≤ D.obj.thickening.target.ideal.obj (op W)
 ```
 
-**`Crystalline.GlobalCrystallineSituation.smallSelfProductDiagonalIdeal_isSubDPIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductDiagonal.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductDiagonal.lean#L316). The attribute's comment: “K is preserved by the divided structure on J_{T(1)}; sections over each open”.
+**`Crystalline.GlobalCrystallineSituation.smallSelfProductDiagonalIdeal_isSubDPIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductDiagonal.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SelfProductDiagonal.lean#L316). The attribute's comment: “K is preserved by the divided structure on J\_\{T(1)}; sections over each open”.
 
 > For a self-product `(U(1), T(1), δ(1))` of an object `(U, T, δ)` of `Cris(X/S)` with itself,
 > the diagonal ideal `K` of `Δ : T ⟶ T(1)` is preserved by the divided structure on `J_{T(1)}` on
@@ -377,7 +377,7 @@ theorem isLocallySurjective_moduleComparison [IsClosedImmersion g.targetHom.hom]
         (moduleComparison (crysDifferentials S) g))
 ```
 
-**`Crystalline.GlobalCrystallineSituation.crysDifferentials_isLocallyQuasiCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DifferentialsLocallyQuasicoherent.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DifferentialsLocallyQuasicoherent.lean#L134). The attribute's comment: “clause (1): Ω_{X/S} is locally quasi-coherent”.
+**`Crystalline.GlobalCrystallineSituation.crysDifferentials_isLocallyQuasiCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/DifferentialsLocallyQuasicoherent.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/DifferentialsLocallyQuasicoherent.lean#L134). The attribute's comment: “clause (1): Ω\_\{X/S} is locally quasi-coherent”.
 
 > `Ω_{X/S}` is locally quasi-coherent: for every object `(U, T, δ)` of `CRIS(X/S)` the
 > restriction `(Ω_{X/S})_T`, taken as the sheaf associated with the restriction of the presheaf

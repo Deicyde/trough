@@ -14,7 +14,7 @@ Section 69.9 of the Stacks Project, [Tag 0A4L](https://stacks.math.columbia.edu/
 
 [Tag 0A4L](https://stacks.math.columbia.edu/tag/0A4L) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.derivedSectionsWithSupportOnClosedSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedSectionsWithSupportEquivalence.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DerivedSectionsWithSupportEquivalence.lean#L131). The attribute's comment: “the derived functor R𝓗_Z on unbounded derived categories”.
+**`AlgebraicGeometry.Space.derivedSectionsWithSupportOnClosedSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedSectionsWithSupportEquivalence.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DerivedSectionsWithSupportEquivalence.lean#L131). The attribute's comment: “the derived functor R𝓗\_Z on unbounded derived categories”.
 
 > **The derived functor `R𝓗_Z : D(X_étale) ⥤ D(Z_étale)`**, on the unbounded derived
 > categories of abelian sheaves on small étale sites: the total right derived functor of the functor
@@ -53,7 +53,7 @@ def sectionsWithSupport (T : Set (points B S hS X)) :
       Sheaf (SmallEtale.topology B S hS X) AddCommGrpCat.{v}
 ```
 
-**`AlgebraicGeometry.Space.sectionsWithSupportInClosedSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionsWithSupport.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SectionsWithSupport.lean#L489). The attribute's comment: “the functor H_Z on abelian sheaves of the small étale site”.
+**`AlgebraicGeometry.Space.sectionsWithSupportInClosedSubspace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionsWithSupport.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SectionsWithSupport.lean#L489). The attribute's comment: “the functor H\_Z on abelian sheaves of the small étale site”.
 
 > **Stacks 0A4L.** The functor `H_Z` of a closed immersion `i : Z ⟶ X` of algebraic spaces:
 > the sections with support in `|Z|`, viewed on the small étale site of `Z` through the inverse
@@ -114,7 +114,7 @@ theorem isZero_rightDerivedPlus_sectionsWithSupportInClosedSubspace (i : Z ⟶ X
 
 [Tag 0A4P](https://stacks.math.columbia.edu/tag/0A4P) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.closedCohomologyWithSupportEtaleExcisionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GlobalSectionsWithSupportEtaleExcision.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GlobalSectionsWithSupportEtaleExcision.lean#L368). The attribute's comment: “conclusion (2), every degree q: H^q_Z(Y, F) = H^q_{f⁻¹Z}(X, f⁻¹F) for f étale and f⁻¹Z ≅ Z”.
+**`AlgebraicGeometry.Space.closedCohomologyWithSupportEtaleExcisionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GlobalSectionsWithSupportEtaleExcision.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GlobalSectionsWithSupportEtaleExcision.lean#L368). The attribute's comment: “conclusion (2), every degree q: H^q\_Z(Y, F) = H^q\_\{f⁻¹Z}(X, f⁻¹F) for f étale and f⁻¹Z ≅ Z”.
 
 > **Stacks 0A4P, conclusion (2): the global cohomology-with-support identity, in every
 > degree.**  Let `f : X ⟶ Y` be an étale morphism of algebraic spaces over `S`, let `iY : Z ⟶ Y`
@@ -141,7 +141,7 @@ def closedCohomologyWithSupportEtaleExcisionIso (f : X ⟶ Y) (hf : IsEtale B S 
         closedCohomologyWithSupport B S hS iX q
 ```
 
-**`AlgebraicGeometry.Space.closedSectionsWithSupportEtaleRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionsWithSupportEtaleLocal.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SectionsWithSupportEtaleLocal.lean#L192). The attribute's comment: “degree zero, on the ambient site: f⁻¹ H_Z(F) = H_{f⁻¹Z}(f⁻¹F)”.
+**`AlgebraicGeometry.Space.closedSectionsWithSupportEtaleRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionsWithSupportEtaleLocal.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SectionsWithSupportEtaleLocal.lean#L192). The attribute's comment: “degree zero, on the ambient site: f⁻¹ H\_Z(F) = H\_\{f⁻¹Z}(f⁻¹F)”.
 
 > Let `f : X ⟶ Y` be an étale morphism of algebraic spaces over `S`, let `Z ⟶ Y` be a
 > subspace and let `f⁻¹Z ⟶ X` be its inverse image, presented by the cartesian square `hk`. Then
@@ -157,7 +157,7 @@ def closedSectionsWithSupportEtaleRestrictionIso {W Z : AlgebraicSpaces B S hS}
       etaleAbelianRestriction.{v} B S hS f hf ⋙ closedSectionsWithSupport.{v} B S hS iX
 ```
 
-**`AlgebraicGeometry.Space.closedHigherSectionsWithSupportEtaleRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionsWithSupportEtaleLocalHigher.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SectionsWithSupportEtaleLocalHigher.lean#L465). The attribute's comment: “every degree q, on the ambient site: f⁻¹ H^q_Z(F) = H^q_{f⁻¹Z}(f⁻¹F)”.
+**`AlgebraicGeometry.Space.closedHigherSectionsWithSupportEtaleRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionsWithSupportEtaleLocalHigher.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SectionsWithSupportEtaleLocalHigher.lean#L465). The attribute's comment: “every degree q, on the ambient site: f⁻¹ H^q\_Z(F) = H^q\_\{f⁻¹Z}(f⁻¹F)”.
 
 > **Stacks 0A4P, the sheaf-level conclusion in every degree, for a subspace.** Let
 > `f : X ⟶ Y` be an étale morphism of algebraic spaces over `S`, let `iY : Z ⟶ Y` be a subspace
@@ -180,7 +180,7 @@ def closedHigherSectionsWithSupportEtaleRestrictionIso {W Z : AlgebraicSpaces B 
         (closedSectionsWithSupport.{u + 1} B S hS iX).rightDerived q
 ```
 
-**`AlgebraicGeometry.Space.closedHigherSectionsWithSupportOnSubspaceIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianInverseImageSquare.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianInverseImageSquare.lean#L355). The attribute's comment: “every degree q, read on the subspaces: k⁻¹(H^q_Z(F)|_Z) = H^q_{f⁻¹Z}(f⁻¹F)|_{f⁻¹Z}”.
+**`AlgebraicGeometry.Space.closedHigherSectionsWithSupportOnSubspaceIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianInverseImageSquare.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleAbelianInverseImageSquare.lean#L355). The attribute's comment: “every degree q, read on the subspaces: k⁻¹(H^q\_Z(F)|\_Z) = H^q\_\{f⁻¹Z}(f⁻¹F)|\_\{f⁻¹Z}”.
 
 > **Stacks 0A4P, in every degree, read on the subspaces.**  Let `f : X ⟶ Y` be an étale
 > morphism of algebraic spaces over `S`, let `iY : Z ⟶ Y` be a subspace and let `iX : W ⟶ X` be
@@ -261,7 +261,7 @@ def closedHigherSectionsWithSupportOnZIso {W Z : AlgebraicSpaces B S hS}
 
 [Tag 0AEI](https://stacks.math.columbia.edu/tag/0AEI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.derivedSmallEtalePushforwardSupportedEquivalence_inverse_derivedSectionsWithSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedSectionsWithSupportEquivalence.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DerivedSectionsWithSupportEquivalence.lean#L224). The attribute's comment: “the identification of the quasi-inverse with the derived sections with support R𝓗_Z, the second description in the displayed formula”.
+**`AlgebraicGeometry.Space.derivedSmallEtalePushforwardSupportedEquivalence_inverse_derivedSectionsWithSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedSectionsWithSupportEquivalence.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DerivedSectionsWithSupportEquivalence.lean#L224). The attribute's comment: “the identification of the quasi-inverse with the derived sections with support R𝓗\_Z, the second description in the displayed formula”.
 
 > **The quasi-inverse is the derived sections with support.** The quasi-inverse of the
 > equivalence `D(Z_étale) ≌ D_{|Z|}(X_étale)` induced by the direct image along a closed immersion
@@ -276,7 +276,7 @@ def derivedSmallEtalePushforwardSupportedEquivalence_inverse_derivedSectionsWith
         derivedSectionsWithSupportOnClosedSubspace B S hS i hi
 ```
 
-**`AlgebraicGeometry.Space.derivedSmallEtaleInverseImage_iso_derivedSectionsWithSupport_of_supported`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedSectionsWithSupportEquivalence.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DerivedSectionsWithSupportEquivalence.lean#L258). The attribute's comment: “the displayed equality i^{-1}|_{D_Z} = R𝓗_Z|_{D_{|Z|}} of the two descriptions of the quasi-inverse”.
+**`AlgebraicGeometry.Space.derivedSmallEtaleInverseImage_iso_derivedSectionsWithSupport_of_supported`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedSectionsWithSupportEquivalence.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DerivedSectionsWithSupportEquivalence.lean#L258). The attribute's comment: “the displayed equality i^\{-1}|\_\{D\_Z} = R𝓗\_Z|\_\{D\_\{|Z|}} of the two descriptions of the quasi-inverse”.
 
 > **The inverse image agrees with the derived sections with support.** On the subcategory
 > `D_{|Z|}(X_étale)` of complexes of abelian sheaves whose cohomology sheaves are supported on the
@@ -301,7 +301,7 @@ def derivedSmallEtaleInverseImage_iso_derivedSectionsWithSupport_of_supported :
         derivedSectionsWithSupportOnClosedSubspace B S hS i hi
 ```
 
-**`AlgebraicGeometry.Space.isRightDerivedFunctor_mapDerivedCategory_smallEtaleAbelianPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedSectionsWithSupportEquivalence.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DerivedSectionsWithSupportEquivalence.lean#L279). The attribute's comment: “Ri_* = i_*, the pushforward along a closed immersion being its own right derived functor”.
+**`AlgebraicGeometry.Space.isRightDerivedFunctor_mapDerivedCategory_smallEtaleAbelianPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedSectionsWithSupportEquivalence.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DerivedSectionsWithSupportEquivalence.lean#L279). The attribute's comment: “Ri\_* = i\_*, the pushforward along a closed immersion being its own right derived functor”.
 
 > **`Ri_* = i_*`.** For a closed immersion `i`, the degreewise action of the direct image
 > `i_*` on unbounded derived categories is the right derived functor `Ri_*`.
@@ -343,7 +343,7 @@ theorem essImage_mapDerivedCategory_of_cohomologySupportedOn
     (smallEtaleAbelianPushforward.{u + 1} B S hS i hi.rep).mapDerivedCategory.essImage K
 ```
 
-**`AlgebraicGeometry.Space.derivedSmallEtalePushforwardSupportedEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexesEquivalence.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexesEquivalence.lean#L208). The attribute's comment: “the equivalence of D(Z_étale) with D_{|Z|}(X_étale)”.
+**`AlgebraicGeometry.Space.derivedSmallEtalePushforwardSupportedEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexesEquivalence.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexesEquivalence.lean#L208). The attribute's comment: “the equivalence of D(Z\_étale) with D\_\{|Z|}(X\_étale)”.
 
 > **Stacks 0AEI: the equivalence.** Direct image along a closed immersion `i : Z ⟶ X` of
 > algebraic spaces over `S` induces an equivalence of `D(Z_étale)` with the full subcategory

@@ -270,7 +270,7 @@ theorem isPerfect_derivedPushforward_of_isPerfect {X S : Scheme.{u}} (f : X ⟶ 
       ((derivedPushforwardModules f).obj E)
 ```
 
-**`Stacks.AlgebraicGeometry.PerfectProperDirectImage.isPseudoCoherent_derivedPushforward_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PerfectMorphism/ProperDirectImage.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PerfectMorphism/ProperDirectImage.lean#L218). The attribute's comment: “the pseudo-coherence half of the conclusion: Rf_*E is a pseudo-coherent object of D(𝒪_S), proved under the source's own hypotheses and no others”. References: SGA 6 0 (3.1), “partial”; SGA 6 XIV (2.2), “special case”.
+**`Stacks.AlgebraicGeometry.PerfectProperDirectImage.isPseudoCoherent_derivedPushforward_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PerfectMorphism/ProperDirectImage.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PerfectMorphism/ProperDirectImage.lean#L218). The attribute's comment: “the pseudo-coherence half of the conclusion: Rf\_*E is a pseudo-coherent object of D(𝒪\_S), proved under the source's own hypotheses and no others”. References: SGA 6 0 (3.1), “partial”; SGA 6 XIV (2.2), “special case”.
 
 > **[Stacks, Tag 0B6G], the pseudo-coherence half of the conclusion, with no hypothesis.** Let
 > `S` be a Noetherian scheme, let `f : X ⟶ S` be a perfect proper morphism of schemes and let `E`

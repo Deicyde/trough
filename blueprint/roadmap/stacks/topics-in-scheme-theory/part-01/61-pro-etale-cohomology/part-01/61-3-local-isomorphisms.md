@@ -29,7 +29,7 @@ abbrev IdentifiesLocalRings (R S : Type*) [CommSemiring R] [CommSemiring S] [Alg
 
 [Tag 096F](https://stacks.math.columbia.edu/tag/096F) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.identifiesLocalRings_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/LocalIso/BaseChange.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/LocalIso/BaseChange.lean#L124). The attribute's comment: “identifies_local_rings_base_change”.
+**`AlgebraicGeometry.ProEtale.identifiesLocalRings_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/LocalIso/BaseChange.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/LocalIso/BaseChange.lean#L124). The attribute's comment: “identifies\_local\_rings\_base\_change”.
 
 > **Stacks Project, Tag 096F.** Base change preserves the property of identifying local
 > rings.
@@ -44,7 +44,7 @@ theorem identifiesLocalRings_tensorProduct
 
 Declarations registered for the tag:
 
-- [`Algebra.IsLocalIso.instTensorProduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.IsLocalIso.instTensorProduct#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ProEtale/LocalIso/BaseChange.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/LocalIso/BaseChange.lean#L133) (StacksFrontier): “local_isomorphism_base_change”. References: EGA I (4.5.5), “(iii), special case”.
+- [`Algebra.IsLocalIso.instTensorProduct`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Algebra.IsLocalIso.instTensorProduct#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ProEtale/LocalIso/BaseChange.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/LocalIso/BaseChange.lean#L133) (StacksFrontier): “local\_isomorphism\_base\_change”. References: EGA I (4.5.5), “(iii), special case”.
 
 ## Tag 096G, a lemma
 
@@ -68,7 +68,7 @@ Declarations registered for the tag:
 
 [Tag 096H](https://stacks.math.columbia.edu/tag/096H) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.isLocalIso_of_left_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/LocalIso/Permanence.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/LocalIso/Permanence.lean#L71). The attribute's comment: “local_isomorphism_permanence”.
+**`AlgebraicGeometry.ProEtale.isLocalIso_of_left_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/LocalIso/Permanence.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/LocalIso/Permanence.lean#L71). The attribute's comment: “local\_isomorphism\_permanence”.
 
 > **Stacks Project, Tag 096H.** If the base-to-middle and base-to-top maps of an algebra
 > tower are local isomorphisms, then so is the middle-to-top map.
@@ -81,7 +81,7 @@ theorem isLocalIso_of_left_of_comp
     Algebra.IsLocalIso B C
 ```
 
-**`AlgebraicGeometry.ProEtale.identifiesLocalRings_of_left_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/LocalIso/Permanence.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/LocalIso/Permanence.lean#L197). The attribute's comment: “identifies_local_rings_permanence”.
+**`AlgebraicGeometry.ProEtale.identifiesLocalRings_of_left_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/LocalIso/Permanence.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/LocalIso/Permanence.lean#L197). The attribute's comment: “identifies\_local\_rings\_permanence”.
 
 > **Stacks Project, Tag 096H.** In an algebra tower, if the base-to-middle and base-to-top
 > maps identify local rings, then so does the middle-to-top map.

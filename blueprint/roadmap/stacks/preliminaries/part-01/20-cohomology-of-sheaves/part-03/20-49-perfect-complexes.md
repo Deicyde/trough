@@ -38,7 +38,7 @@ def IsPerfect {X : RingedSpace.{u, v}}
 
 [Tag 08CN](https://stacks.math.columbia.edu/tag/08CN) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.isPerfect_of_strictlyPerfect_local_models`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/LocalCriterion.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/LocalCriterion.lean#L59). The attribute's comment: “local_criterion”.
+**`AlgebraicGeometry.RingedSpace.isPerfect_of_strictlyPerfect_local_models`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/LocalCriterion.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/LocalCriterion.lean#L59). The attribute's comment: “local\_criterion”.
 
 > An object of the derived category of `𝒪_X`-modules which is, on an open covering of `X`,
 > isomorphic in the derived category to a strictly perfect complex is perfect.
@@ -63,7 +63,7 @@ theorem isPerfect_of_strictlyPerfect_local_models (X : RingedSpace.{u, u})
     IsPerfect K
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPerfectComplex_of_isPerfect_representation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/RepresentativeIndependence.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/RepresentativeIndependence.lean#L55). The attribute's comment: “representative_independence”.
+**`AlgebraicGeometry.RingedSpace.isPerfectComplex_of_isPerfect_representation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/RepresentativeIndependence.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/RepresentativeIndependence.lean#L55). The attribute's comment: “representative\_independence”.
 
 > **Stacks 08CN.** Every complex representing a perfect object of the derived category of
 > `𝒪_X`-modules is itself a perfect complex.

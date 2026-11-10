@@ -195,7 +195,7 @@ theorem quotientStack_isUniformCategoricalModuliSpace_iff_isUniformCategoricalQu
             (restrictedMorphism_isInvariant G f) a)
 ```
 
-**`AlgebraicGeometry.Stack.quotientStack_isUniformCategoricalModuliSpaceIn_iff_isUniformCategoricalQuotientIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackUniformModuliSpace.lean, line 588](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackUniformModuliSpace.lean#L588). The attribute's comment: “variant: the uniform case in a full subcategory, over every flat Y' ⟶ Y and with the subcategory containing every base change of R and U; the tag is quotientStack_isUniformModuliSpaceIn_iff_isUniformQuotientIn_of_isClosedUnderLimitsOfShape”.
+**`AlgebraicGeometry.Stack.quotientStack_isUniformCategoricalModuliSpaceIn_iff_isUniformCategoricalQuotientIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackUniformModuliSpace.lean, line 588](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuotientStackUniformModuliSpace.lean#L588). The attribute's comment: “variant: the uniform case in a full subcategory, over every flat Y' ⟶ Y and with the subcategory containing every base change of R and U; the tag is quotientStack\_isUniformModuliSpaceIn\_iff\_isUniformQuotientIn\_of\_isClosedUnderLimitsOfShape”.
 
 > The uniform case in a full subcategory. With the same data as
 > `quotientStack_isUniformCategoricalModuliSpace_iff_isUniformCategoricalQuotient` and a full

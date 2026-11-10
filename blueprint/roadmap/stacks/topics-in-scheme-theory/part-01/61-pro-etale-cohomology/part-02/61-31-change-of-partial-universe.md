@@ -105,8 +105,8 @@ theorem smallFunctor_isMorphismOfSites :
 **`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.smallToposRetraction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean#L303). The attribute's comment: “the two morphisms of topoi of the small sites, with `f ∘ g` isomorphic to the identity and `f_* = g^{-1}`”.
 
 > **Stacks 098Y**, the conclusion of Stacks 00XU for the two small pro-étale sites of `S`: the
-> morphisms of topoi `g : Sh(S_proetale) → Sh(S'_proetale)` and `f : Sh(S'_proetale) →
-> Sh(S_proetale)` induced by the inclusion, whose composite is isomorphic to the identity and
+> morphisms of topoi `g : Sh(S_proetale) → Sh(S'_proetale)` and `f : Sh(S'\_proetale) →
+> Sh(S\_proetale)` induced by the inclusion, whose composite is isomorphic to the identity and
 > which satisfy `f_* = g^{-1}`.
 >
 > The direct image of `g` is the cocontinuous pushforward and the direct image of `f` is the

@@ -14,7 +14,7 @@ Section 7.45 of the Stacks Project, [Tag 06UM](https://stacks.math.columbia.edu/
 
 [Tag 06UM](https://stacks.math.columbia.edu/tag/06UM) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.locallyQuasicoherentStructurePullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean#L180). The attribute's comment: “the relative pullback map w_*𝒪_𝒲 ⟶ f_*𝒪_𝒬 at the structure sheaf of the middle stack of a factorization 𝒬 ⟶ 𝒲 ⟶ 𝒳 of algebraic stacks, on LQCoh^fbc, for direct images wStar, fStar and an adjunction adjPr with an identification cmp : prStar ⋙ wStar ≅ fStar”.
+**`AlgebraicGeometry.Stack.locallyQuasicoherentStructurePullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean#L180). The attribute's comment: “the relative pullback map w\_*𝒪\_𝒲 ⟶ f\_*𝒪\_𝒬 at the structure sheaf of the middle stack of a factorization 𝒬 ⟶ 𝒲 ⟶ 𝒳 of algebraic stacks, on LQCoh^fbc, for direct images wStar, fStar and an adjunction adjPr with an identification cmp : prStar ⋙ wStar ≅ fStar”.
 
 > **The relative pullback map on `LQCoh^fbc` at the structure sheaf.**  For a factorization
 > `𝒬 --pr--> 𝒲 --w--> 𝒳` of 1-morphisms of algebraic stacks with direct images `wStar`, `fStar`
@@ -33,7 +33,7 @@ def locallyQuasicoherentStructurePullbackMap :
         (FibredSite.quasicoherentTensorUnit B S hS 𝒬.val.val.p 𝒬.val.property))
 ```
 
-**`AlgebraicGeometry.Stack.quasicoherentRelativePullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean#L221). The attribute's comment: “the relative pullback map w_{QCoh,*}𝒪_𝒲 ⟶ f_{QCoh,*}𝒪_𝒬 in QCoh(𝒪_𝒳), the coherator of Lemma 0778 applied to the map on LQCoh^fbc, over the same data of Proposition 0771 together with the coherator inputs hincX, hclosed, hpres, hls, hlsD, hwp, hsep of Lemma 0778”.
+**`AlgebraicGeometry.Stack.quasicoherentRelativePullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasicoherentTensorPushforward.lean#L221). The attribute's comment: “the relative pullback map w\_\{QCoh,*}𝒪\_𝒲 ⟶ f\_\{QCoh,*}𝒪\_𝒬 in QCoh(𝒪\_𝒳), the coherator of Lemma 0778 applied to the map on LQCoh^fbc, over the same data of Proposition 0771 together with the coherator inputs hincX, hclosed, hpres, hls, hlsD, hwp, hsep of Lemma 0778”.
 
 > **The relative pullback map in `QCoh(𝒪_𝒳)` at the structure sheaf.**  The coherator `Q` of
 > **Lemma 0778** applied to
@@ -57,7 +57,7 @@ def quasicoherentRelativePullbackMap :
           hincP).obj (FibredSite.quasicoherentTensorUnit B S hS 𝒬.val.val.p 𝒬.val.property)))
 ```
 
-**`CategoryTheory.Adjunction.relativePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePullbackMap.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativePullbackMap.lean#L89). The attribute's comment: “the relative pullback map g_*ℱ ⟶ h_*f^{-1}ℱ of a commutative triangle of morphisms of topoi, stated for an adjunction f^{-1} ⊣ f_*, two direct images and an isomorphism f_* ⋙ g_* ≅ h_* in place of the source's equality of functors”.
+**`CategoryTheory.Adjunction.relativePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePullbackMap.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativePullbackMap.lean#L89). The attribute's comment: “the relative pullback map g\_*ℱ ⟶ h\_*f^\{-1}ℱ of a commutative triangle of morphisms of topoi, stated for an adjunction f^\{-1} ⊣ f\_*, two direct images and an isomorphism f\_* ⋙ g\_* ≅ h\_* in place of the source's equality of functors”.
 
 > **The relative pullback map of a commutative triangle.**  For an adjunction
 > `f^{-1} ⊣ f_*` and direct images `g_*`, `h_*` to a third category identified by
@@ -71,7 +71,7 @@ def quasicoherentRelativePullbackMap :
 def relativePullback : gstar ⟶ finv ⋙ hstar
 ```
 
-**`CategoryTheory.Adjunction.relativePullbackMapOfHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePullbackMap.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativePullbackMap.lean#L111). The attribute's comment: “the variant g_*ℱ ⟶ h_*𝒢 of the relative pullback map attached to a morphism f^{-1}ℱ ⟶ 𝒢”.
+**`CategoryTheory.Adjunction.relativePullbackMapOfHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativePullbackMap.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativePullbackMap.lean#L111). The attribute's comment: “the variant g\_*ℱ ⟶ h\_*𝒢 of the relative pullback map attached to a morphism f^\{-1}ℱ ⟶ 𝒢”.
 
 > **The relative pullback map attached to a morphism `f^{-1}ℱ ⟶ 𝒢`.**  The pullback map
 > `g_*ℱ ⟶ h_*f^{-1}ℱ` followed by `h_*φ`.

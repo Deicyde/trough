@@ -108,7 +108,7 @@ theorem closedInclusion_pushforward_full
     (closedInclusionPushforward Z X i).Full
 ```
 
-**`closedInclusion_pushforward_essImage_stalk_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean#L112). References: EGA 0 (3.4.6), “(F)”; EGA 0 (4.2.5), “Ψ_*M is zero outside X”; EGA IV (21.9.1), “special case”; SGA 6 IX (1.1), “Support clause”.
+**`closedInclusion_pushforward_essImage_stalk_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/Abelian.lean#L112). References: EGA 0 (3.4.6), “(F)”; EGA 0 (4.2.5), “Ψ\_*M is zero outside X”; EGA IV (21.9.1), “special case”; SGA 6 IX (1.1), “Support clause”.
 
 > **Stacks 00AG, essential image, forward direction.** If a sheaf `G` of abelian groups on
 > `X` lies in the essential image of the pushforward along a closed embedding `i`, then the stalk
@@ -160,7 +160,7 @@ theorem essImage_pushforward_subsetInclusion_iff (X : TopCat.{u}) (Z : Set X) (h
 
 [Tag 00AI](https://stacks.math.columbia.edu/tag/00AI) in the Stacks Project.
 
-**`ClosedImmersionSheaves.not_preservesColimitsOfShape_sheafPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/NotRightExact.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/NotRightExact.lean#L78). The attribute's comment: “i_* is not right exact as a functor between categories of sheaves of sets”. References: SGA 4 IV (3.1.2), “u_* not right exact”.
+**`ClosedImmersionSheaves.not_preservesColimitsOfShape_sheafPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/NotRightExact.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/NotRightExact.lean#L78). The attribute's comment: “i\_* is not right exact as a functor between categories of sheaves of sets”. References: SGA 4 IV (3.1.2), “u\_* not right exact”.
 
 > **Stacks 00AI, first half.** For `i : Z ⟶ X` a closed embedding and `x ∈ X` outside the image
 > of `i`, the pushforward `i_* : Sh(Z, Type) ⥤ Sh(X, Type)` does not preserve binary coproducts, i.e.
@@ -179,7 +179,7 @@ theorem not_preservesColimitsOfShape_sheafPushforward
     ¬ PreservesColimitsOfShape (Discrete WalkingPair) (Sheaf.pushforward (Type u) i)
 ```
 
-**`ClosedImmersionSheaves.not_isLeftAdjoint_sheafPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/NotRightExact.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/NotRightExact.lean#L111). The attribute's comment: “in particular i_* cannot have a right adjoint”.
+**`ClosedImmersionSheaves.not_isLeftAdjoint_sheafPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/ClosedImmersion/NotRightExact.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/ClosedImmersion/NotRightExact.lean#L111). The attribute's comment: “in particular i\_* cannot have a right adjoint”.
 
 > **Stacks 00AI, second half.** For `i : Z ⟶ X` a closed embedding and `x ∈ X` outside the image
 > of `i`, the pushforward `i_* : Sh(Z, Type) ⥤ Sh(X, Type)` has no right adjoint: a functor with a

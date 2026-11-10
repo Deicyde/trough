@@ -174,7 +174,7 @@ public theorem Module.Flat.rTensor_injective_of_projective_of_injective_mapQ_max
 
 [Tag 05FR](https://stacks.math.columbia.edu/tag/05FR) in the Stacks Project.
 
-**`Stacks.UniversalInjectivity.universallyInjective_lsmul_of_mem_nonZeroSMulDivisors_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalInjectivity.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalInjectivity.lean#L54). The attribute's comment: “elementwise_universal_injectivity”.
+**`Stacks.UniversalInjectivity.universallyInjective_lsmul_of_mem_nonZeroSMulDivisors_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalInjectivity.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalInjectivity.lean#L54). The attribute's comment: “elementwise\_universal\_injectivity”.
 
 > **Stacks Project, Tag 05FR.** An element which acts injectively on the closed fibre of a
 > projective module acts universally injectively on the module over the local base ring.
@@ -198,7 +198,7 @@ theorem universallyInjective_lsmul_of_mem_nonZeroSMulDivisors_quotient
     UniversallyInjective ((LinearMap.lsmul S N s).restrictScalars R)
 ```
 
-**`Stacks.UniversalInjectivity.universallyInjective_localizedModule_mkLinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalInjectivity.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalInjectivity.lean#L103). The attribute's comment: “localization_universal_injectivity”.
+**`Stacks.UniversalInjectivity.universallyInjective_localizedModule_mkLinearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalInjectivity.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/PureModules/UniversalInjectivity.lean#L103). The attribute's comment: “localization\_universal\_injectivity”.
 
 > **Stacks Project, Tag 05FR.** If a module is projective over a local base ring, its
 > canonical map to the localization at the elements acting injectively on its closed fibre is

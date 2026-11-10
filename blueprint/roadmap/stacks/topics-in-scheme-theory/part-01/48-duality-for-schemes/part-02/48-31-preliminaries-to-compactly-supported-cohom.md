@@ -14,7 +14,7 @@ Section 48.31 of the Stacks Project, [Tag 0G4V](https://stacks.math.columbia.edu
 
 [Tag 0G4W](https://stacks.math.columbia.edu/tag/0G4W) in the Stacks Project.
 
-**`CategoryTheory.baseChangeShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/BaseChangeShriek.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/BaseChangeShriek.lean#L111). The attribute's comment: “the Deligne system assignments, the adjunctions Rg_* ⊣ g^! and Rf_* ⊣ f^!, and the compatibility (j')^* ∘ g^! ≅ f^! ∘ j^* coming from Tags 0ATX and 0AU0, supplied as data”.
+**`CategoryTheory.baseChangeShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/BaseChangeShriek.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/BaseChangeShriek.lean#L111). The attribute's comment: “the Deligne system assignments, the adjunctions Rg\_* ⊣ g^! and Rf\_* ⊣ f^!, and the compatibility (j')^* ∘ g^! ≅ f^! ∘ j^* coming from Tags 0ATX and 0AU0, supplied as data”.
 
 > **Stacks Project, Tag 0G4W.** Let `f : X ⟶ Y` be a proper morphism of Noetherian schemes, let
 > `V ⊆ Y` be open and let `U = f^{-1}(V)`, with `j : U ⟶ X`, `j' : V ⟶ Y` the open immersions and
@@ -62,7 +62,7 @@ public def extensionByZeroProperBaseChangeIso {X Y : Scheme.{u}} (f : X ⟶ Y) [
 
 [Tag 0G4X](https://stacks.math.columbia.edu/tag/0G4X) in the Stacks Project.
 
-**`CategoryTheory.compactificationShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/BaseChangeShriek.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/BaseChangeShriek.lean#L133). The attribute's comment: “the Deligne system assignments, the adjunction Rf_* ⊣ f^!, and the compatibility j^* ≅ f^! ∘ (j')^* coming from Tags 0ATX and 0AU0, supplied as data”.
+**`CategoryTheory.compactificationShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/BaseChangeShriek.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactlySupportedCohomology/BaseChangeShriek.lean#L133). The attribute's comment: “the Deligne system assignments, the adjunction Rf\_* ⊣ f^!, and the compatibility j^* ≅ f^! ∘ (j')^* coming from Tags 0ATX and 0AU0, supplied as data”.
 
 > **Stacks Project, Tag 0G4X.** Let `j : U ⟶ X` be an open immersion of Noetherian schemes and
 > let `j' : U ⟶ X'` be a compactification of `U` over `X`, with structure morphism `f : X' ⟶ X`.
@@ -112,7 +112,7 @@ public def extensionByZeroCompactificationIso :
 
 [Tag 0G4Y](https://stacks.math.columbia.edu/tag/0G4Y) in the Stacks Project.
 
-**`CategoryTheory.restrictionHomNatTrans`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroCovariance.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroCovariance.lean#L105). The attribute's comment: “the restriction map Hom_U(K, L|_U) → Hom_{U'}(K|_{U'}, L|_{U'}) of the display, as a transformation functorial in L”.
+**`CategoryTheory.restrictionHomNatTrans`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroCovariance.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroCovariance.lean#L105). The attribute's comment: “the restriction map Hom\_U(K, L|\_U) → Hom\_\{U'}(K|\_\{U'}, L|\_\{U'}) of the display, as a transformation functorial in L”.
 
 > The displayed arrow of [Stacks, Tag 0G4Y]: the restriction map
 >
@@ -128,7 +128,7 @@ public def restrictionHomNatTrans (K : 𝒞) :
     jstar ⋙ coyoneda.obj (op K) ⟶ jstar' ⋙ coyoneda.obj (op (istar.obj K))
 ```
 
-**`CategoryTheory.extensionByZeroCovariance`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroCovariance.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroCovariance.lean#L147). The attribute's comment: “the canonical map Rj'_!(K|_{U'}) ⟶ Rj_! K, with the functoriality in K as its naturality; the Deligne-system assignments on both sides supplied as data”.
+**`CategoryTheory.extensionByZeroCovariance`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroCovariance.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroCovariance.lean#L147). The attribute's comment: “the canonical map Rj'\_!(K|\_\{U'}) ⟶ Rj\_! K, with the functoriality in K as its naturality; the Deligne-system assignments on both sides supplied as data”.
 
 > **Stacks Project, Tag 0G4Y.** Let `X ⊃ U ⊃ U'` be open subschemes of a Noetherian scheme,
 > let `j : U ⟶ X`, `j' : U' ⟶ X` and `i : U' ⟶ U` be the inclusions. There is a canonical map
@@ -149,7 +149,7 @@ public def extensionByZeroCovariance :
     istar ⋙ extensionByZero jstar' A' ⟶ extensionByZero jstar A
 ```
 
-**`CategoryTheory.extensionByZeroHomEquiv_covariance`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroCovariance.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroCovariance.lean#L183). The attribute's comment: “the display: composing with the canonical map is the restriction map Hom_U(K, L|_U) → Hom_{U'}(K|_{U'}, L|_{U'})”.
+**`CategoryTheory.extensionByZeroHomEquiv_covariance`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroCovariance.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroCovariance.lean#L183). The attribute's comment: “the display: composing with the canonical map is the restriction map Hom\_U(K, L|\_U) → Hom\_\{U'}(K|\_\{U'}, L|\_\{U'})”.
 
 > **The characterising property of the canonical map of [Stacks, Tag 0G4Y].** Under the
 > adjointness bijections of [Stacks, Tag 0G4N], composing a morphism `Rj_! K ⟶ L` with the
@@ -185,7 +185,7 @@ public lemma extensionByZeroCovariance_app_eq (K : 𝒞)
     g = (extensionByZeroCovariance jstar jstar' istar e A A').app K
 ```
 
-**`AlgebraicGeometry.extensionByZeroOpenCovariance`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenCovariance.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenCovariance.lean#L113). The attribute's comment: “the canonical map Rj'_!(K|_{U'}) ⟶ Rj_! K, functorial in K”.
+**`AlgebraicGeometry.extensionByZeroOpenCovariance`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenCovariance.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenCovariance.lean#L113). The attribute's comment: “the canonical map Rj'\_!(K|\_\{U'}) ⟶ Rj\_! K, functorial in K”.
 
 > **Stacks Project, Tag 0G4Y.** Let `X ⊃ U ⊃ U'` be open subschemes of a Noetherian scheme `X`
 > and let `j : U ⟶ X`, `j' : U' ⟶ X` be the inclusions. There is a canonical map
@@ -208,7 +208,7 @@ public def extensionByZeroOpenCovariance :
       extensionByZeroOpenImmersion U.ι
 ```
 
-**`AlgebraicGeometry.extensionByZeroOpenHomEquiv_covariance`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenCovariance.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenCovariance.lean#L137). The attribute's comment: “the display: composing with the canonical map is the restriction map Hom_U(K, L|_U) → Hom_{U'}(K|_{U'}, L|_{U'})”.
+**`AlgebraicGeometry.extensionByZeroOpenHomEquiv_covariance`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenCovariance.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenCovariance.lean#L137). The attribute's comment: “the display: composing with the canonical map is the restriction map Hom\_U(K, L|\_U) → Hom\_\{U'}(K|\_\{U'}, L|\_\{U'})”.
 
 > **The display of [Stacks, Tag 0G4Y].** Under the identifications
 > `Hom_{Pro}(Rj_! K, L) = Hom_U(K, L|_U)` of [Stacks, Tag 0G2H], composing with the canonical map
@@ -250,7 +250,7 @@ public lemma extensionByZeroOpenCovariance_app_eq
     g = (extensionByZeroOpenCovariance h).app K
 ```
 
-**`AlgebraicGeometry.extensionByZeroOpenCovariance_conj_eq_ofMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenCovariance.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenCovariance.lean#L353). The attribute's comment: “the explicit construction: the canonical map is given by the maps K'_n = (𝓘')^n 𝓕^• ⟶ 𝓘^n 𝓕^• = K_n coming from the inclusions (𝓘')^n ⊆ 𝓘^n”.
+**`AlgebraicGeometry.extensionByZeroOpenCovariance_conj_eq_ofMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenCovariance.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/ExtensionByZeroOpenCovariance.lean#L353). The attribute's comment: “the explicit construction: the canonical map is given by the maps K'\_n = (𝓘')^n 𝓕^• ⟶ 𝓘^n 𝓕^• = K\_n coming from the inclusions (𝓘')^n ⊆ 𝓘^n”.
 
 > **The explicit construction of [Stacks, Tag 0G4Y].** Let `𝓕^•` be a bounded complex of
 > coherent `𝒪_X`-modules whose restriction to `U` represents `K`, and let `𝓘' ⊆ 𝓘` be quasi-coherent
@@ -286,7 +286,7 @@ public lemma support_sup_eq_left {I I' : X.IdealSheafData} (h : I.support ≤ I'
     (I ⊔ I').support = I.support
 ```
 
-**`AlgebraicGeometry.IdealPowerComplexSystem.compareHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/IdealPowerComplexComparison.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/IdealPowerComplexComparison.lean#L177). The attribute's comment: “the maps K'_n = (𝓘')^n 𝓕^• ⟶ 𝓘^n 𝓕^• = K_n of the explicit construction, induced by the inclusions (𝓘')^n ⊆ 𝓘^n”.
+**`AlgebraicGeometry.IdealPowerComplexSystem.compareHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/IdealPowerComplexComparison.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/IdealPowerComplexComparison.lean#L177). The attribute's comment: “the maps K'\_n = (𝓘')^n 𝓕^• ⟶ 𝓘^n 𝓕^• = K\_n of the explicit construction, induced by the inclusions (𝓘')^n ⊆ 𝓘^n”.
 
 > **The maps `K'_n ⟶ K_n` of the explicit construction in [Stacks, Tag 0G4Y].** For
 > `𝓘' ≤ 𝓘` the inclusions `(𝓘')^n • 𝓕^i ⊆ 𝓘^n • 𝓕^i` assemble into a map of complexes
@@ -301,7 +301,7 @@ public def compareHom (S' : IdealPowerComplexSystem I F) (S : IdealPowerComplexS
     (h : I ≤ J) (n : ℕ) : S'.complex n ⟶ S.complex n
 ```
 
-**`AlgebraicGeometry.IdealPowerComplexSystem.compareHom_comp_inclusion`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/IdealPowerComplexComparison.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/IdealPowerComplexComparison.lean#L203). The attribute's comment: “the maps K'_n ⟶ K_n of the explicit construction are the inclusions read inside 𝓕^•, which is what pins them down”.
+**`AlgebraicGeometry.IdealPowerComplexSystem.compareHom_comp_inclusion`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/IdealPowerComplexComparison.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/IdealPowerComplexComparison.lean#L203). The attribute's comment: “the maps K'\_n ⟶ K\_n of the explicit construction are the inclusions read inside 𝓕^•, which is what pins them down”.
 
 > **The comparison map of [Stacks, Tag 0G4Y] is the inclusion, read inside `𝓕^•`.** Composing
 > `K'_n ⟶ K_n` with the inclusion of `K_n` into `𝓕^•` gives the inclusion of `K'_n`. Since the
@@ -313,7 +313,7 @@ public lemma compareHom_comp_inclusion (S' : IdealPowerComplexSystem I F)
     S'.compareHom S h n ≫ S.inclusion n = S'.inclusion n
 ```
 
-**`AlgebraicGeometry.IdealPowerComplexSystem.compareHom_comp_transition`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/IdealPowerComplexComparison.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/IdealPowerComplexComparison.lean#L213). The attribute's comment: “the maps K'_n ⟶ K_n of the explicit construction commute with the transitions, so they are a map of the inverse systems (K'_n) ⟶ (K_n)”.
+**`AlgebraicGeometry.IdealPowerComplexSystem.compareHom_comp_transition`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/IdealPowerComplexComparison.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ExtensionZeroCoherent/IdealPowerComplexComparison.lean#L213). The attribute's comment: “the maps K'\_n ⟶ K\_n of the explicit construction commute with the transitions, so they are a map of the inverse systems (K'\_n) ⟶ (K\_n)”.
 
 > **The comparison maps of [Stacks, Tag 0G4Y] form a map of inverse systems.** They commute
 > with the transitions `K'_{n+1} ⟶ K'_n` and `K_{n+1} ⟶ K_n` of the two ideal-power

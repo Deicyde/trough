@@ -75,7 +75,7 @@ theorem isLocalization_totalQuotientSheaf_obj_of_isLocallyNoetherian
     IsLocalization Γ(X, U)⁰ (X.totalQuotientSheaf.presheaf.obj (op U))
 ```
 
-**`AlgebraicGeometry.isLocalization_totalQuotientPresheaf_obj_of_isAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Stalks.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Stalks.lean#L57). The attribute's comment: “affine_total_quotient”.
+**`AlgebraicGeometry.isLocalization_totalQuotientPresheaf_obj_of_isAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Stalks.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Stalks.lean#L57). The attribute's comment: “affine\_total\_quotient”.
 
 > On an affine open of a scheme, meromorphic functions form the total quotient ring of the
 > ring of regular functions. No Noetherian hypothesis is needed: the denominator submonoid of
@@ -92,7 +92,7 @@ theorem isLocalization_totalQuotientPresheaf_obj_of_isAffineOpen
       ((X.presheaf.totalQuotientPresheaf).obj (Opposite.op U))
 ```
 
-**`AlgebraicGeometry.regularSectionGerms_eq_nonZeroDivisors_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Stalks.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Stalks.lean#L200). The attribute's comment: “regular_stalk”.
+**`AlgebraicGeometry.regularSectionGerms_eq_nonZeroDivisors_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Stalks.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Stalks.lean#L200). The attribute's comment: “regular\_stalk”.
 
 > At a point of a locally Noetherian scheme, the germs of regular local
 > sections are exactly the non-zero-divisors in the local ring.
@@ -107,7 +107,7 @@ theorem regularSectionGerms_eq_nonZeroDivisors_of_isLocallyNoetherian
       nonZeroDivisors (X.presheaf.stalk x)
 ```
 
-**`AlgebraicGeometry.stalk_totalQuotientPresheaf_isFractionRing_of_isLocallyNoetherian`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Stalks.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Stalks.lean#L227). The attribute's comment: “stalk_total_quotient”. References: EGA IV (21.6.7), “partial”.
+**`AlgebraicGeometry.stalk_totalQuotientPresheaf_isFractionRing_of_isLocallyNoetherian`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Stalks.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/Stalks.lean#L227). The attribute's comment: “stalk\_total\_quotient”. References: EGA IV (21.6.7), “partial”.
 
 > At every point of a locally Noetherian scheme, the stalk of the presheaf of meromorphic
 > functions is the total quotient ring of the local ring.

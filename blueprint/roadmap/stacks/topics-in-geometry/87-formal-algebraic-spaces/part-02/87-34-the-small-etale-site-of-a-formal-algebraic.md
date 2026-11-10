@@ -845,7 +845,7 @@ theorem reductionAffineEtaleComparison_isEquivalence
     (reductionAffineEtaleComparison' B S hS hX).IsEquivalence
 ```
 
-**`AlgebraicGeometry.FormalSpace.reductionAffineEtaleComparison'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/EtaleSiteSupplement.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/EtaleSiteSupplement.lean#L255). The attribute's comment: “the comparison functor from the category of the morphisms satisfying (1) and (2) to the affine étale site of `X`; that it is an equivalence is AlgebraicGeometry.FormalSpace.reductionAffineEtaleComparison_isEquivalence”.
+**`AlgebraicGeometry.FormalSpace.reductionAffineEtaleComparison'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/EtaleSiteSupplement.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/EtaleSiteSupplement.lean#L255). The attribute's comment: “the comparison functor from the category of the morphisms satisfying (1) and (2) to the affine étale site of `X`; that it is an equivalence is AlgebraicGeometry.FormalSpace.reductionAffineEtaleComparison\_isEquivalence”.
 
 > **Stacks 0DEE**, the comparison functor into the affine étale site of `X`. Let `X` be an
 > affine formal algebraic space over `S`. Its reduction `X_red` is the sheaf represented by an
@@ -949,7 +949,7 @@ def mcQuillanAffineEtaleEquivalence (hA : TopologicalRing.IsWeaklyAdmissible A)
 
 [Tag 0DEG](https://stacks.math.columbia.edu/tag/0DEG) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.spacesEtaleComparison_isEquivalence'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/LiftAlongAffineBase.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/LiftAlongAffineBase.lean#L440). The attribute's comment: “the equivalence; full faithfulness and essential surjectivity are both proved, the latter from the source's assertion that `U_{V, ψ}` is a formal algebraic space, which is AlgebraicGeometry.FormalSpace.isFormalAlgebraicSpace_liftAlong”.
+**`AlgebraicGeometry.FormalSpace.spacesEtaleComparison_isEquivalence'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/LiftAlongAffineBase.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/LiftAlongAffineBase.lean#L440). The attribute's comment: “the equivalence; full faithfulness and essential surjectivity are both proved, the latter from the source's assertion that `U_{V, ψ}` is a formal algebraic space, which is AlgebraicGeometry.FormalSpace.isFormalAlgebraicSpace\_liftAlong”.
 
 > **Stacks 0DEG.** The comparison functor from the category of the formal algebraic spaces
 > representable étale over a formal algebraic space `X` to `X_{spaces, étale}` is an equivalence

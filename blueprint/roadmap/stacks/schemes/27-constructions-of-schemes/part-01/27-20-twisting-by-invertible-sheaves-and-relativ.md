@@ -16,13 +16,13 @@ Section 27.20 of the Stacks Project, [Tag 02NB](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`twist`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=twist#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/GradedAlgebraTwist/Basic.lean, line 1285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GradedAlgebraTwist/Basic.lean#L1285) (StacksFrontier): “the twisted graded algebra B_d = A_d ⊗ L^{⊗ d} of the section's setting”.
+- [`twist`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=twist#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/GradedAlgebraTwist/Basic.lean, line 1285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GradedAlgebraTwist/Basic.lean#L1285) (StacksFrontier): “the twisted graded algebra B\_d = A\_d ⊗ L^\{⊗ d} of the section's setting”.
 
 ## Tag 02NC, a lemma
 
 [Tag 02NC](https://stacks.math.columbia.edu/tag/02NC) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeInvertibleTwist.relativeTwist_tag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjInvertibleTwistRelativeTag.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjInvertibleTwistRelativeTag.lean#L77). The attribute's comment: “the canonical isomorphism g from Proj_S(A) to Proj_S(B) over S, with (1) the isomorphisms theta_n from g^*O_P'(n) to O_P(n) tensor pi^*L^n fitting together into an isomorphism of Z-graded algebras theta, and (2) the commuting diagrams on sections over every open V of S, theta being the unique such map”.
+**`Stacks.AlgebraicGeometry.RelativeInvertibleTwist.relativeTwist_tag`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjInvertibleTwistRelativeTag.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjInvertibleTwistRelativeTag.lean#L77). The attribute's comment: “the canonical isomorphism g from Proj\_S(A) to Proj\_S(B) over S, with (1) the isomorphisms theta\_n from g^*O\_P'(n) to O\_P(n) tensor pi^*L^n fitting together into an isomorphism of Z-graded algebras theta, and (2) the commuting diagrams on sections over every open V of S, theta being the unique such map”.
 
 > Let `S` be a scheme, `𝒜` a quasi-coherent graded `𝒪_S`-algebra, `ℒ` an invertible
 > `𝒪_S`-module and `ℬ = ⨁_d 𝒜_d ⊗_{𝒪_S} ℒ^{⊗ d}`, with `π : P = Proj_S(𝒜) ⟶ S` and

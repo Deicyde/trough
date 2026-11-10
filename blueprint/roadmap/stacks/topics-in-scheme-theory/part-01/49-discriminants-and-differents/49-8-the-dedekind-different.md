@@ -14,7 +14,7 @@ Section 49.8 of the Stacks Project, [Tag 0BW0](https://stacks.math.columbia.edu/
 
 [Tag 0BW1](https://stacks.math.columbia.edu/tag/0BW1) in the Stacks Project.
 
-**`Stacks.Discriminant.one_mem_complementaryModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DedekindDifferent/DifferentIdeal.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/DedekindDifferent/DifferentIdeal.lean#L50). The attribute's comment: “trace_iff_one_mem”.
+**`Stacks.Discriminant.one_mem_complementaryModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DedekindDifferent/DifferentIdeal.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/DedekindDifferent/DifferentIdeal.lean#L50). The attribute's comment: “trace\_iff\_one\_mem”.
 
 > One lies in the Dedekind complementary module exactly when the generic-fibre trace of every
 > element of `B` belongs to the canonical image of `A` in its total quotient ring.
@@ -28,7 +28,7 @@ theorem one_mem_complementaryModule_iff (setup : DedekindDifferentSetup A B) :
         Set.range (algebraMap A (FractionRing A))
 ```
 
-**`Stacks.Discriminant.dedekindDifferent_eq_map_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DedekindDifferent/DifferentIdeal.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/DedekindDifferent/DifferentIdeal.lean#L66). The attribute's comment: “one_mem_different_ideal”.
+**`Stacks.Discriminant.dedekindDifferent_eq_map_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DedekindDifferent/DifferentIdeal.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/DedekindDifferent/DifferentIdeal.lean#L66). The attribute's comment: “one\_mem\_different\_ideal”.
 
 > If one lies in the complementary module, the Dedekind different is the
 > image of an ideal of `B`.
@@ -42,7 +42,7 @@ theorem dedekindDifferent_eq_map_ideal
         (dedekindDifferentIdeal setup : Submodule B B)
 ```
 
-**`Stacks.Discriminant.trace_algebraMap_mem_range_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DedekindDifferent/FlatTrace.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/DedekindDifferent/FlatTrace.lean#L141). The attribute's comment: “flat_trace”.
+**`Stacks.Discriminant.trace_algebraMap_mem_range_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DedekindDifferent/FlatTrace.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/DedekindDifferent/FlatTrace.lean#L141). The attribute's comment: “flat\_trace”.
 
 > **Stacks Project, Tag 0BW1 (flat trace).** In the setup for the Dedekind
 > different, if `B` is flat over `A`, then the generic-fibre trace of every
@@ -60,7 +60,7 @@ theorem trace_algebraMap_mem_range_of_flat
       Set.range (algebraMap A (FractionRing A))
 ```
 
-**`Stacks.Discriminant.trace_algebraMap_mem_range_of_isNormalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DedekindDifferent/NormalTrace.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/DedekindDifferent/NormalTrace.lean#L100). The attribute's comment: “normal_trace”.
+**`Stacks.Discriminant.trace_algebraMap_mem_range_of_isNormalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/DedekindDifferent/NormalTrace.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/DedekindDifferent/NormalTrace.lean#L100). The attribute's comment: “normal\_trace”.
 
 > In the setup for the Dedekind different, if `A` is a normal ring, then the generic-fibre
 > trace of every element of `B` belongs to the canonical image of `A` in its total quotient

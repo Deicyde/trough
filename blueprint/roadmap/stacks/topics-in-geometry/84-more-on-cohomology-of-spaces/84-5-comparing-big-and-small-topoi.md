@@ -117,7 +117,7 @@ Declarations registered for the tag:
 
 [Tag 0DG8](https://stacks.math.columbia.edu/tag/0DG8) in the Stacks Project.
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.injective_smallEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean#L176). The attribute's comment: “part (1), injectives restrict along i_f”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.injective_smallEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean#L176). The attribute's comment: “part (1), injectives restrict along i\_f”.
 
 > **Stacks 0DG8, part (1).** The inverse image along `i_f` of an injective abelian sheaf on
 > the big étale site of `X` is an injective abelian sheaf on the spaces-étale site of `Y`.
@@ -139,7 +139,7 @@ theorem injective_bigToSmallEtaleRestriction (X : T.Spaces)
     Injective ((bigToSmallEtaleRestriction T X).obj I)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.isKInjective_smallEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean#L215). The attribute's comment: “part (2), K-injectivity restricts along i_f”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.isKInjective_smallEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleRestriction.lean#L215). The attribute's comment: “part (2), K-injectivity restricts along i\_f”.
 
 > **Stacks 0DG8, part (2).** The inverse image along `i_f` of a K-injective complex of
 > abelian sheaves on the big étale site of `X` is a K-injective complex on the spaces-étale site
@@ -163,7 +163,7 @@ theorem isKInjective_bigToSmallEtaleRestriction (X : T.Spaces)
     ((bigToSmallEtaleRestrictionComplex T X).obj I).IsKInjective
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.injective_spacesEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean#L103). The attribute's comment: “injective_restriction”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.injective_spacesEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean#L103). The attribute's comment: “injective\_restriction”.
 
 > **Stacks Project, Tag 0DG8, part (1)(b).** Restriction of an injective abelian sheaf
 > from the big étale site of `X` to the spaces-étale site of `X` is injective.
@@ -177,7 +177,7 @@ theorem injective_spacesEtaleRestriction (X : T.Spaces)
         (T.bigEtaleTopology X)).obj I)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.injective_spacesEtaleRestrictionAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean#L126). The attribute's comment: “injective_pullback”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.injective_spacesEtaleRestrictionAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean#L126). The attribute's comment: “injective\_pullback”.
 
 > **Stacks Project, Tag 0DG8, part (1)(a).** Restriction of an injective abelian sheaf
 > from the big étale site of `X` to the spaces-étale site of `Y` along a morphism
@@ -192,7 +192,7 @@ theorem injective_spacesEtaleRestrictionAlong {X Y : T.Spaces} (f : Y ⟶ X)
         (T.bigEtaleTopology X)).obj I)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.isKInjective_spacesEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean#L149). The attribute's comment: “kinjective_restriction”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.isKInjective_spacesEtaleRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean#L149). The attribute's comment: “kinjective\_restriction”.
 
 > **Stacks Project, Tag 0DG8, part (2)(b).** Restriction of a K-injective complex of
 > abelian sheaves from the big étale site of `X` to the spaces-étale site of `X` is
@@ -208,7 +208,7 @@ theorem isKInjective_spacesEtaleRestriction (X : T.Spaces)
         (T.bigEtaleTopology X)).mapHomologicalComplex (ComplexShape.up ℤ)).obj I)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.isKInjective_spacesEtaleRestrictionAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean#L177). The attribute's comment: “kinjective_pullback”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.isKInjective_spacesEtaleRestrictionAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigToSmallEtaleKInjective.lean#L177). The attribute's comment: “kinjective\_pullback”.
 
 > **Stacks Project, Tag 0DG8, part (2)(a).** Restriction of a K-injective complex of
 > abelian sheaves from the big étale site of `X` to the spaces-étale site of `Y` along a
@@ -269,7 +269,7 @@ theorem bigSmallEtale_restrictPushforwardModulesIso_hom_app_val_app (f : Y ⟶ X
 
 [Tag 0DGA](https://stacks.math.columbia.edu/tag/0DGA) in the Stacks Project.
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.derivedBigEtaleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean#L118). The attribute's comment: “big_base_change_abelian”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.derivedBigEtaleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean#L118). The attribute's comment: “big\_base\_change\_abelian”.
 
 > For a cartesian square of algebraic spaces of the big étale site, the inverse image along
 > `g_big` of the derived big étale direct image along `f` agrees naturally with the derived big
@@ -290,7 +290,7 @@ def derivedBigEtaleBaseChangeIso {X Y X' Y' : T.Spaces} (f : Y ⟶ X) (g : X' �
               (Sheaf (T.bigEtaleTopology Y') Ab.{u + 1}) (ComplexShape.up ℤ))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.derivedSmallEtaleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean#L159). The attribute's comment: “small_base_change_abelian”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.derivedSmallEtaleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean#L159). The attribute's comment: “small\_base\_change\_abelian”.
 
 > For a cartesian square of algebraic spaces of the big étale site, the restriction to the
 > spaces-étale site of `X'` of the derived big étale direct image along `f` agrees naturally with
@@ -317,7 +317,7 @@ def derivedSmallEtaleBaseChangeIso {X Y X' Y' : T.Spaces} (f : Y ⟶ X) (g : X' 
                   Ab.{u + 1}) (ComplexShape.up ℤ))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.derivedBigEtaleModuleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean#L262). The attribute's comment: “big_base_change_modules”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.derivedBigEtaleModuleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean#L262). The attribute's comment: “big\_base\_change\_modules”.
 
 > For a cartesian square of algebraic spaces of the big étale site, the inverse image of
 > sheaves of `𝒪`-modules along `g_big` of the derived big étale direct image along `f` agrees
@@ -339,7 +339,7 @@ def derivedBigEtaleModuleBaseChangeIso {X Y X' Y' : T.Spaces} (f : Y ⟶ X) (g :
             (SheafOfModules.{u + 1} ((globalRingSheaf T).over Y')) (ComplexShape.up ℤ))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.derivedSmallEtaleModuleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean, line 604](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean#L604). The attribute's comment: “small_base_change_modules”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.derivedSmallEtaleModuleBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean, line 604](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedBaseChange.lean#L604). The attribute's comment: “small\_base\_change\_modules”.
 
 > For a cartesian square of algebraic spaces of the big étale site, the restriction to the
 > spaces-étale site of `X'` of the derived big étale direct image of sheaves of `𝒪`-modules along
@@ -356,7 +356,7 @@ def derivedSmallEtaleModuleBaseChangeIso (f : Y ⟶ X) (g : X' ⟶ X) (g' : Y' �
         derivedPushforward.{u + 1} (smallEtaleRingedSiteHom T f')
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.derivedBigSmallEtalePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedPushforward.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedPushforward.lean#L292). The attribute's comment: “big_small_abelian”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.derivedBigSmallEtalePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedPushforward.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedPushforward.lean#L292). The attribute's comment: “big\_small\_abelian”.
 
 > **Derived direct image commutes with restriction to the small étale site.** Derived big-site
 > direct image followed by restriction to the small étale site agrees naturally with restriction
@@ -382,7 +382,7 @@ public def derivedBigSmallEtalePushforwardIso :
               Ab.{u + 1}) (ComplexShape.up ℤ)))
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.derivedBigSmallEtaleModulePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedPushforwardModules.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedPushforwardModules.lean#L323). The attribute's comment: “big_small_modules”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.derivedBigSmallEtaleModulePushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedPushforwardModules.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleDerivedPushforwardModules.lean#L323). The attribute's comment: “big\_small\_modules”.
 
 > **Stacks Project, Tag 0DGA, part (2).** Derived big étale direct image of sheaves of
 > `𝒪`-modules followed by restriction to the small étale site of `X` agrees naturally with
@@ -398,7 +398,7 @@ def derivedBigSmallEtaleModulePushforwardIso (f : Y ⟶ X) :
 
 Declarations registered for the tag:
 
-- [`Stacks.Cohomology.Localization.derivedOverPushforwardBaseChangeIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/AbelianSheavesOnALocalizedSite.lean#L682), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Simplicial/BigEtaleBaseChange.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/BigEtaleBaseChange.lean#L34) (StacksFrontier): “big_base_change_abelian”.
+- [`Stacks.Cohomology.Localization.derivedOverPushforwardBaseChangeIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/Localization/AbelianSheavesOnALocalizedSite.lean#L682), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Simplicial/BigEtaleBaseChange.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/BigEtaleBaseChange.lean#L34) (StacksFrontier): “big\_base\_change\_abelian”.
 
 ## Tag 0DGB, a lemma
 

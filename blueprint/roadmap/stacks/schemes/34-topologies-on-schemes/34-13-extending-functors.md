@@ -95,7 +95,7 @@ theorem isZariskiSheaf_extension (hP1 : HasAffineOpens P)
 
 [Tag 049N](https://stacks.math.columbia.edu/tag/049N) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isStandardCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringLimitDescent.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringLimitDescent.lean#L75). The attribute's comment: “covering_existence, stated once for AlgebraicGeometry.IsStandardCovering rather than separately in the idiom native to each of the five topologies”.
+**`AlgebraicGeometry.exists_isStandardCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringLimitDescent.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/StandardCoveringLimitDescent.lean#L75). The attribute's comment: “covering\_existence, stated once for AlgebraicGeometry.IsStandardCovering rather than separately in the idiom native to each of the five topologies”.
 
 > **Stacks 049N (1), uniformly in the topology.** Let `T = lim Tᵢ` be an affine scheme written
 > as an inverse limit of a cofiltered system of affine schemes. A standard `τ`-covering of `T` is,
@@ -115,7 +115,7 @@ theorem exists_isStandardCovering_of_isLimit (τ : CoveringTopology)
           Over.mk (f j))
 ```
 
-**`AlgebraicGeometry.exists_standardZariskiCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 743](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L743). The attribute's comment: “covering_existence”.
+**`AlgebraicGeometry.exists_standardZariskiCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 743](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L743). The attribute's comment: “covering\_existence”.
 
 > A finite standard Zariski covering of an affine inverse limit descends to a
 > standard Zariski covering at some stage.
@@ -135,7 +135,7 @@ theorem exists_standardZariskiCovering_of_isLimit
           Over.mk (𝒰.f j))
 ```
 
-**`AlgebraicGeometry.exists_standardEtaleCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 807](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L807). The attribute's comment: “covering_existence”.
+**`AlgebraicGeometry.exists_standardEtaleCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 807](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L807). The attribute's comment: “covering\_existence”.
 
 > A finite standard étale covering of an affine inverse limit descends to a
 > standard étale covering at some stage.
@@ -153,7 +153,7 @@ theorem exists_standardEtaleCovering_of_isLimit
           Over.mk (𝒰.f j))
 ```
 
-**`AlgebraicGeometry.exists_standardSmoothCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 850](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L850). The attribute's comment: “covering_existence”.
+**`AlgebraicGeometry.exists_standardSmoothCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 850](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L850). The attribute's comment: “covering\_existence”.
 
 > A finite standard smooth covering of an affine inverse limit descends to a
 > standard smooth covering at some stage.
@@ -176,7 +176,7 @@ theorem exists_standardSmoothCovering_of_isLimit
             Over.mk (f j))
 ```
 
-**`AlgebraicGeometry.exists_standardSyntomicCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 880](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L880). The attribute's comment: “covering_existence”.
+**`AlgebraicGeometry.exists_standardSyntomicCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 880](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L880). The attribute's comment: “covering\_existence”.
 
 > A finite standard syntomic covering of an affine inverse limit descends to a
 > standard syntomic covering at some stage.
@@ -195,7 +195,7 @@ theorem exists_standardSyntomicCovering_of_isLimit
             Over.mk (f j))
 ```
 
-**`AlgebraicGeometry.exists_standardFppfCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 912](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L912). The attribute's comment: “covering_existence”.
+**`AlgebraicGeometry.exists_standardFppfCovering_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean, line 912](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringExistence.lean#L912). The attribute's comment: “covering\_existence”.
 
 > A finite standard fppf covering of an affine inverse limit descends to a
 > standard fppf covering at some stage.
@@ -214,7 +214,7 @@ theorem exists_standardFppfCovering_of_isLimit
             Over.mk (f j))
 ```
 
-**`AlgebraicGeometry.eventually_familyHom_eq_of_baseChange_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringMorphisms.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringMorphisms.lean#L99). The attribute's comment: “covering_morphism_equality”. References: SGA 3 VIB (10.0), “(i)”; SGA 4 VII (5.2), “a, special case”.
+**`AlgebraicGeometry.eventually_familyHom_eq_of_baseChange_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringMorphisms.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringMorphisms.lean#L99). The attribute's comment: “covering\_morphism\_equality”. References: SGA 3 VIB (10.0), “(i)”; SGA 4 VII (5.2), “a, special case”.
 
 > Equality of morphisms of finite families of affine, flat, finitely presented
 > schemes over a limit holds already at some finite stage.
@@ -232,7 +232,7 @@ theorem eventually_familyHom_eq_of_baseChange_eq
     ∃ (j : I) (e : j ⟶ i), FamilyHom.BaseChangeEq (D.map e) E F f g
 ```
 
-**`AlgebraicGeometry.exists_familyHom_after_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringMorphisms.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringMorphisms.lean#L264). The attribute's comment: “covering_morphisms”.
+**`AlgebraicGeometry.exists_familyHom_after_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringMorphisms.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/CoveringMorphisms.lean#L264). The attribute's comment: “covering\_morphisms”.
 
 > A morphism of finite standard covering families of an affine inverse limit
 > descends to a morphism at a finite stage, with its given index map unchanged.

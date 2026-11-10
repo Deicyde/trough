@@ -204,7 +204,7 @@ noncomputable instance coherentReflexiveModules_hasFiniteBiproducts :
     HasFiniteBiproducts (CoherentReflexiveModules X)
 ```
 
-**`AlgebraicGeometry.CoherentReflexive.internalHomObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentInternalHom.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentInternalHom.lean#L80). The attribute's comment: “internal_hom”.
+**`AlgebraicGeometry.CoherentReflexive.internalHomObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentInternalHom.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentInternalHom.lean#L80). The attribute's comment: “internal\_hom”.
 
 > **Stacks Project, Tag 0EBH.**  The sheaf Hom of two coherent reflexive modules, as a
 > coherent reflexive module: it is coherent by [Stacks, Tag 01Y2] and reflexive by
@@ -274,7 +274,7 @@ noncomputable def tensorObjComm (F G : CoherentReflexiveModules X) :
     tensorObj F G ≅ tensorObj G F
 ```
 
-**`AlgebraicGeometry.CoherentReflexive.tensorHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean#L187). The attribute's comment: “internal_hom”.
+**`AlgebraicGeometry.CoherentReflexive.tensorHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean#L187). The attribute's comment: “internal\_hom”.
 
 > **Stacks Project, Tag 0EBH.**  The internal-Hom adjunction of the category of coherent
 > reflexive modules: morphisms out of the hull tensor product `ℱ ⊗_𝒞 𝒢` are morphisms of `ℱ` into
@@ -285,7 +285,7 @@ noncomputable def tensorHomEquiv (F G H : CoherentReflexiveModules X) :
     (tensorObj F G ⟶ H) ≃ (F ⟶ internalHomObj G H)
 ```
 
-**`AlgebraicGeometry.CoherentReflexive.tensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean#L198). The attribute's comment: “internal_hom”.
+**`AlgebraicGeometry.CoherentReflexive.tensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean#L198). The attribute's comment: “internal\_hom”.
 
 > **Stacks Project, Tag 0EBH.**  The adjunction bijection is the currying map of
 > [Stacks, Tag 01CN], applied after restricting along the canonical map from the ordinary tensor
@@ -322,7 +322,7 @@ theorem isReflexive_reflexiveHull (X : Scheme.{u}) [IsIntegral X] [IsLocallyNoet
     (F : X.Modules) [_root_.SheafOfModules.IsCoherent F] : IsReflexive (reflexiveHull F)
 ```
 
-**`AlgebraicGeometry.not_forall_fiberRank_one_tensorObj_dualObj_iso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneNotInvertible.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneNotInvertible.lean#L209). The attribute's comment: “unit_failure”.
+**`AlgebraicGeometry.not_forall_fiberRank_one_tensorObj_dualObj_iso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneNotInvertible.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneNotInvertible.lean#L209). The attribute's comment: “unit\_failure”.
 
 > On an integral locally Noetherian scheme a coherent reflexive module of rank one at the
 > generic point need not have its dual as a tensor inverse for the hull tensor product.
@@ -335,7 +335,7 @@ theorem not_forall_fiberRank_one_tensorObj_dualObj_iso_unit :
         Nonempty ((tensorObj F (dualObj F)).obj.obj ≅ unitModule X)
 ```
 
-**`AlgebraicGeometry.not_forall_rank_one_sheafHom_iso_dualObj_tensorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneNotInvertible.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneNotInvertible.lean#L224). The attribute's comment: “hom_failure”.
+**`AlgebraicGeometry.not_forall_rank_one_sheafHom_iso_dualObj_tensorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneNotInvertible.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneNotInvertible.lean#L224). The attribute's comment: “hom\_failure”.
 
 > On an integral locally Noetherian scheme the sheaf Hom of two coherent reflexive modules of
 > rank one at every point need not be the hull tensor product of the dual of the first with the

@@ -217,7 +217,7 @@ theorem exists_cechCohomologyToSheafCohomology (hK : IsHypercovering J K) :
         Injective F → IsIso ((β i).app F)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.hypercoverComparisonMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/DerivedComparisonBoundedBelow.lean, line 546](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/DerivedComparisonBoundedBelow.lean#L546). The attribute's comment: “comparison_map”.
+**`Stacks.CategoryTheory.Hypercovering.hypercoverComparisonMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/DerivedComparisonBoundedBelow.lean, line 546](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/DerivedComparisonBoundedBelow.lean#L546). The attribute's comment: “comparison\_map”.
 
 > **The comparison map of Stacks 01GY**: for a hypercovering `K` of `X`, the natural
 > transformation `s(F(K)) ⟶ RΓ(X, F)` in `D⁺(Ab)`.
@@ -232,7 +232,7 @@ def hypercoverComparisonMap (hK : IsHypercovering J K) :
     hypercoverDerivedFunctor J U K ⟶ derivedSectionsFunctor J U
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.hypercoverCohomologyComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/DerivedComparisonBoundedBelow.lean, line 585](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/DerivedComparisonBoundedBelow.lean#L585). The attribute's comment: “cohomology_comparison”.
+**`Stacks.CategoryTheory.Hypercovering.hypercoverCohomologyComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/DerivedComparisonBoundedBelow.lean, line 585](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/DerivedComparisonBoundedBelow.lean#L585). The attribute's comment: “cohomology\_comparison”.
 
 > The natural map from the Čech cohomology of a hypercovering `K` of `X` to sheaf cohomology in
 > degree `i`, induced by the comparison map `hypercoverComparisonMap`.
@@ -280,7 +280,7 @@ def hypercoveringSpectralSequence (hK : IsHypercovering J K) :
     HypercoveringSpectralSequenceData.{w} J X K hK
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.Functorial.hypercoveringCohomologyAbutment`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SpectralSequenceAbutmentIsCohomology.lean, line 941](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/SpectralSequenceAbutmentIsCohomology.lean#L941). The attribute's comment: “spectral_sequence”. References: SGA 4 V (7.4.0), “(7.4.0.3) abutment”.
+**`Stacks.CategoryTheory.Hypercovering.Functorial.hypercoveringCohomologyAbutment`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SpectralSequenceAbutmentIsCohomology.lean, line 941](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/SpectralSequenceAbutmentIsCohomology.lean#L941). The attribute's comment: “spectral\_sequence”. References: SGA 4 V (7.4.0), “(7.4.0.3) abutment”.
 
 > **Clause (3) of [Stacks, Tag 01GY], the functorial abutment**: the hypercovering spectral
 > sequence abuts to `H^{p+q}(X, F)`, functorially in the hypercovering and in the coefficient
@@ -298,7 +298,7 @@ def hypercoveringCohomologyAbutment :
       (fun n ↦ hypercoveringCohomologyFunctor X J n)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.Functorial.hypercoveringPageTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SpectralSequenceSecondPage.lean, line 642](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/SpectralSequenceSecondPage.lean#L642). The attribute's comment: “spectral_sequence”. References: SGA 4 V (7.4.0), “(7.4.0.3) E₂ page”; SGA 4 Vbis (2.5.6), “E_2 term”.
+**`Stacks.CategoryTheory.Hypercovering.Functorial.hypercoveringPageTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SpectralSequenceSecondPage.lean, line 642](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/SpectralSequenceSecondPage.lean#L642). The attribute's comment: “spectral\_sequence”. References: SGA 4 V (7.4.0), “(7.4.0.3) E₂ page”; SGA 4 Vbis (2.5.6), “E\_2 term”.
 
 > **The `pageTwoIso` of clause (3) of [Stacks, Tag 01GY]**: the second page of
 > `Stacks.CategoryTheory.Hypercovering.Functorial.hypercoveringSpectralSequence` at `(p, q)` is
@@ -326,7 +326,7 @@ def hypercoveringPageTwoIso (p q : ℕ) :
       pageTwoHypercovering.{v} X J p q
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.Functorial.hypercoveringSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SpectralSequenceSmallSite.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/SpectralSequenceSmallSite.lean#L395). The attribute's comment: “spectral_sequence”. References: SGA 4 V (7.4.0), “(7.4.0.3)”.
+**`Stacks.CategoryTheory.Hypercovering.Functorial.hypercoveringSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/SpectralSequenceSmallSite.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/SpectralSequenceSmallSite.lean#L395). The attribute's comment: “spectral\_sequence”. References: SGA 4 V (7.4.0), “(7.4.0.3)”.
 
 > **The `sequence` of clause (3) of [Stacks, Tag 01GY]**: the first-quadrant `E₂` cohomological
 > spectral sequence of a hypercovering of `X` and a sheaf of abelian groups, functorial in the

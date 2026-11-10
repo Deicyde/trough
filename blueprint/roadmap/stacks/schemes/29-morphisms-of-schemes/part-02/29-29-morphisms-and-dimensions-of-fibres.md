@@ -30,7 +30,7 @@ theorem topologicalKrullDimAt_fiber_eq_krullDimOfRing_stalk_add_trdeg
           WithBot ℕ∞)
 ```
 
-**`AlgebraicGeometry.topologicalKrullDimAt_fiber_eq_ringKrullDim_stalk_add_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FiniteOverSmoothInputs/FibreDimensionFormula.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FiniteOverSmoothInputs/FibreDimensionFormula.lean#L97). References: EGA IV (17.15.8), “more general”; SGA 1 II (5.8), “n = p + trdeg_k κ(x)”.
+**`AlgebraicGeometry.topologicalKrullDimAt_fiber_eq_ringKrullDim_stalk_add_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FiniteOverSmoothInputs/FibreDimensionFormula.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FiniteOverSmoothInputs/FibreDimensionFormula.lean#L97). References: EGA IV (17.15.8), “more general”; SGA 1 II (5.8), “n = p + trdeg\_k κ(x)”.
 
 > For a morphism locally of finite type, the dimension of the fibre at a point is the Krull
 > dimension of the local ring of the fibre there plus the transcendence degree of the residue field
@@ -111,7 +111,7 @@ public theorem topologicalKrullDimAt_fiber_eq_of_isPullback {X' X S' S : Scheme.
       topologicalKrullDimAt ↥(f.fiber (f (g' x'))) (f.asFiber (g' x'))
 ```
 
-**`AlgebraicGeometry.fiberMap_ringKrullDim_stalk_add_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean#L208). The attribute's comment: “local_ring_differences”.
+**`AlgebraicGeometry.fiberMap_ringKrullDim_stalk_add_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean#L208). The attribute's comment: “local\_ring\_differences”.
 
 > **Stacks Project, Tag 02FY part (2).** In a fibre product diagram with `f` locally of finite
 > type, the dimension of the local ring at `x'` of the fibre of the induced morphism of fibres, plus
@@ -129,7 +129,7 @@ public theorem fiberMap_ringKrullDim_stalk_add_eq (hsq : IsPullback g' f' f g)
       ringKrullDim ((f'.fiber (f' x')).presheaf.stalk (f'.asFiber x'))
 ```
 
-**`AlgebraicGeometry.fiberMap_ringKrullDim_stalk_add_trdeg_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean#L229). The attribute's comment: “local_ring_differences”.
+**`AlgebraicGeometry.fiberMap_ringKrullDim_stalk_add_trdeg_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean#L229). The attribute's comment: “local\_ring\_differences”.
 
 > **Stacks Project, Tag 02FY part (2).** The same dimension is the loss of residue-field
 > transcendence degree: the dimension of the local ring at `x'` of the fibre of the induced
@@ -149,7 +149,7 @@ public theorem fiberMap_ringKrullDim_stalk_add_trdeg_eq (hsq : IsPullback g' f' 
         WithBot ℕ∞)
 ```
 
-**`AlgebraicGeometry.ringKrullDim_stalk_fiber_le_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean#L267). The attribute's comment: “local_ring_differences”.
+**`AlgebraicGeometry.ringKrullDim_stalk_fiber_le_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean#L267). The attribute's comment: “local\_ring\_differences”.
 
 > **Stacks Project, Tag 02FY part (2).** The dimension of the local ring of a fibre cannot drop
 > under base change.
@@ -162,7 +162,7 @@ public theorem ringKrullDim_stalk_fiber_le_of_baseChange (hsq : IsPullback g' f'
       ringKrullDim ((f'.fiber (f' x')).presheaf.stalk (f'.asFiber x'))
 ```
 
-**`AlgebraicGeometry.trdeg_residueField_le_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean#L278). The attribute's comment: “local_ring_differences”.
+**`AlgebraicGeometry.trdeg_residueField_le_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean#L278). The attribute's comment: “local\_ring\_differences”.
 
 > **Stacks Project, Tag 02FY part (2).** The transcendence degree of the residue-field
 > extension cannot grow under base change.
@@ -176,7 +176,7 @@ public theorem trdeg_residueField_le_of_baseChange (hsq : IsPullback g' f' f g)
       Algebra.trdeg ↥(S.residueField (f (g' x'))) ↥(X.residueField (g' x'))
 ```
 
-**`AlgebraicGeometry.exists_pullback_point_preserving_fibre_dimension_and_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean#L358). The attribute's comment: “zero_difference_lift”.
+**`AlgebraicGeometry.exists_pullback_point_preserving_fibre_dimension_and_trdeg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FibreDimensionBaseChange/LocalRing.lean#L358). The attribute's comment: “zero\_difference\_lift”.
 
 > **Stacks Project, Tag 02FY part (3).** In a fibre product diagram with `f` locally of finite
 > type, let `s'` be a point of `S'` and `x` a point of `X` with the same image `s` in `S`. Then
@@ -248,7 +248,7 @@ public lemma isRetrocompact_setOf_fiberDimensionAt_le {X S : Scheme.{u}} (f : X 
 
 [Tag 06RU](https://stacks.math.columbia.edu/tag/06RU) in the Stacks Project.
 
-**`AlgebraicGeometry.topologicalKrullDimAt_fiber_le_of_specialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/Specialization.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/Specialization.lean#L49). The attribute's comment: “fiber_dimension_monotone”.
+**`AlgebraicGeometry.topologicalKrullDimAt_fiber_le_of_specialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/Specialization.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/Specialization.lean#L49). The attribute's comment: “fiber\_dimension\_monotone”.
 
 > Local dimension in a fibre is monotone along a specialization of points with a common
 > image in the base.
@@ -261,7 +261,7 @@ public theorem topologicalKrullDimAt_fiber_le_of_specialization {X S : Scheme.{u
       topologicalKrullDimAt (f.fiber s) ((f.fiberHomeo s).symm ⟨x', hx'⟩)
 ```
 
-**`AlgebraicGeometry.ringKrullDim_fiber_stalk_lt_of_specialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/Specialization.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/Specialization.lean#L61). The attribute's comment: “fiber_local_dimension_strict”.
+**`AlgebraicGeometry.ringKrullDim_fiber_stalk_lt_of_specialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/Specialization.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/Specialization.lean#L61). The attribute's comment: “fiber\_local\_dimension\_strict”.
 
 > A strict specialization inside a fibre of a locally finite type morphism strictly
 > increases the dimension of the fibre's local ring.

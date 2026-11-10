@@ -14,7 +14,7 @@ Section 109.11 of the Stacks Project, [Tag 0E1H](https://stacks.math.columbia.ed
 
 [Tag 0E1I](https://stacks.math.columbia.edu/tag/0E1I) in the Stacks Project.
 
-**`AlgebraicGeometry.curvesGrc1_isOpenSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGrc1OpenSubstack.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGrc1OpenSubstack.lean#L101). The attribute's comment: “the open substack Curves^{grc,1} of Curves”.
+**`AlgebraicGeometry.curvesGrc1_isOpenSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGrc1OpenSubstack.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGrc1OpenSubstack.lean#L101). The attribute's comment: “the open substack Curves^\{grc,1} of Curves”.
 
 > **Stacks 0E1I, the open substack.** `Curves^{grc,1}`, the strictly full subcategory of
 > families of curves whose geometric fibres are reduced, connected and of dimension `1`, is an open
@@ -32,7 +32,7 @@ theorem curvesGrc1_isOpenSubstack :
           isOpenCurvesLocus_isGrc1CurveFamily.prop_of_hom)
 ```
 
-**`AlgebraicGeometry.factors_curvesGrc1_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGrc1OpenSubstack.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGrc1OpenSubstack.lean#L116). The attribute's comment: “part (1): the classifying morphism of a family of curves factors through Curves^{grc,1} iff its geometric fibres are reduced, connected and of dimension 1”.
+**`AlgebraicGeometry.factors_curvesGrc1_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGrc1OpenSubstack.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGrc1OpenSubstack.lean#L116). The attribute's comment: “part (1): the classifying morphism of a family of curves factors through Curves^\{grc,1} iff its geometric fibres are reduced, connected and of dimension 1”.
 
 > **Stacks 0E1I, part (1).** The classifying morphism of a family of curves `X ⟶ S` factors
 > through `Curves^{grc,1}` exactly when the geometric fibres of `X ⟶ S` are reduced, connected and
@@ -48,7 +48,7 @@ theorem factors_curvesGrc1_iff (U : BigFppfOver B integerBase hZ)
       IsGrc1CurveFamily B hZ (y.obj (Over.mk (𝟙 U.left)))
 ```
 
-**`AlgebraicGeometry.factors_curvesGrc1_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGrc1OpenSubstack.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGrc1OpenSubstack.lean#L133). The attribute's comment: “part (2): for a proper scheme of dimension at most one over a field, the classifying morphism factors through Curves^{grc,1} iff the scheme is geometrically reduced, geometrically connected and of dimension 1”.
+**`AlgebraicGeometry.factors_curvesGrc1_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGrc1OpenSubstack.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGrc1OpenSubstack.lean#L133). The attribute's comment: “part (2): for a proper scheme of dimension at most one over a field, the classifying morphism factors through Curves^\{grc,1} iff the scheme is geometrically reduced, geometrically connected and of dimension 1”.
 
 > **Stacks 0E1I, part (2).** Let `X` be a proper scheme of dimension at most one over a field
 > `k` (with `Spec k` in the site, so that the classifying morphism `Spec k ⟶ Curves` of `X`
@@ -70,7 +70,7 @@ theorem factors_curvesGrc1_over_field_iff (k : Type u) [Field k]
         topologicalKrullDim X.left = 1
 ```
 
-**`AlgebraicGeometry.curvesGrc1_isOpenSubstack_and_factors_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGrc1OpenSubstack.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGrc1OpenSubstack.lean#L164). The attribute's comment: “the whole statement: the open substack Curves^{grc,1} and parts (1) and (2)”.
+**`AlgebraicGeometry.curvesGrc1_isOpenSubstack_and_factors_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGrc1OpenSubstack.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGrc1OpenSubstack.lean#L164). The attribute's comment: “the whole statement: the open substack Curves^\{grc,1} and parts (1) and (2)”.
 
 > **Stacks 0E1I.** There is an open substack `Curves^{grc,1} ⊂ Curves` — the strictly full
 > subcategory of families of curves whose geometric fibres are reduced, connected and of dimension
@@ -153,7 +153,7 @@ theorem curvesGrc1_le_curvesH01_isOpenSubstack_and_firstHigherDirectImage :
 
 [Tag 0E1K](https://stacks.math.columbia.edu/tag/0E1K) in the Stacks Project.
 
-**`AlgebraicGeometry.curvesGrcDimOne_genus_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesReducedConnectedGenusDecomposition.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesReducedConnectedGenusDecomposition.lean#L454). The attribute's comment: “the decomposition Curves^{grc,1} = ∐_g Curves^{grc,1}_g into open and closed substacks (each inclusion representable, an open and a closed immersion; on the base of every object the genus loci are clopen, disjoint and covering), with the characterizations (1) and (2)”.
+**`AlgebraicGeometry.curvesGrcDimOne_genus_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesReducedConnectedGenusDecomposition.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesReducedConnectedGenusDecomposition.lean#L454). The attribute's comment: “the decomposition Curves^\{grc,1} = ∐\_g Curves^\{grc,1}\_g into open and closed substacks (each inclusion representable, an open and a closed immersion; on the base of every object the genus loci are clopen, disjoint and covering), with the characterizations (1) and (2)”.
 
 > **Stacks 0E1K.** There is a decomposition into open and closed substacks
 > `Curves^{grc,1} = ∐_{g ≥ 0} Curves^{grc,1}_g`, where `Curves^{grc,1}` is the stack of families

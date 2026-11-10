@@ -34,7 +34,7 @@ abbrev curvesWithFiniteNonSmoothLocusProjection :
     CurvesWithFiniteNonSmoothLocus B hZ ⥤ B.Schemes
 ```
 
-**`AlgebraicGeometry.CurvesPlus`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesFiniteSingularities.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesFiniteSingularities.lean#L81). The attribute's comment: “the_substack_curves”.
+**`AlgebraicGeometry.CurvesPlus`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesFiniteSingularities.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesFiniteSingularities.lean#L81). The attribute's comment: “the\_substack\_curves”.
 
 > **Stacks 0DZW.** The substack `Curves⁺`: the strictly full subcategory of families of
 > curves whose reduced non-smooth locus is finite over the base.
@@ -181,7 +181,7 @@ theorem exists_curvesPlus :
                 ((BigFppfOver.toScheme B integerBase hZ).map g) x}.Finite))
 ```
 
-**`AlgebraicGeometry.curvesPlus_isStrictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusStrictlyFull.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusStrictlyFull.lean#L233). The attribute's comment: “open_substack”.
+**`AlgebraicGeometry.curvesPlus_isStrictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusStrictlyFull.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusStrictlyFull.lean#L233). The attribute's comment: “open\_substack”.
 
 > **Stacks 0DZW.** Membership in the subcategory `Curves⁺` of families of curves whose
 > reduced non-smooth locus is finite over the base is invariant under isomorphism, so `Curves⁺`

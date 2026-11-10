@@ -1125,7 +1125,7 @@ public theorem exact_universalThickeningCompConormalSequence :
 noncomputable def universalThickeningCompMap : Z' ⟶ Y'
 ```
 
-**`AlgebraicGeometry.Space.isUniversalFirstOrderThickening_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean#L272). The attribute's comment: “clause (1): Y ×_{Y'} Z' is the universal first-order thickening of Z over Y, the square-zero condition inside the fibre product being hypothesised”.
+**`AlgebraicGeometry.Space.isUniversalFirstOrderThickening_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean#L272). The attribute's comment: “clause (1): Y ×\_\{Y'} Z' is the universal first-order thickening of Z over Y, the square-zero condition inside the fibre product being hypothesised”.
 
 > **Stacks 06BF, clause (1), the universal first-order thickening of `Z` over `Y`.**  With the
 > morphism `h : Z' ⟶ Y'` of `AlgebraicGeometry.Space.universalThickeningCompMap`, the fibre
@@ -1154,7 +1154,7 @@ theorem isUniversalFirstOrderThickening_comp
       (universalThickeningCompStructure B S hS i hZ hY hfac)
 ```
 
-**`AlgebraicGeometry.Space.epi_conormalMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean#L306). The attribute's comment: “clause (2): exactness at the right term, the canonical map 𝒞_{Z/X} ⟶ 𝒞_{Z/Y} being surjective”.
+**`AlgebraicGeometry.Space.epi_conormalMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean#L306). The attribute's comment: “clause (2): exactness at the right term, the canonical map 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} being surjective”.
 
 > **Stacks 06BF, clause (2), at the right term.**  The canonical map
 > `𝒞_{Z/X} ⟶ 𝒞_{Z/Y}` of Stacks 04CP — the right-hand map of the conormal sequence of the
@@ -1187,7 +1187,7 @@ theorem epi_conormalMap_comp :
         ⟨Z, (IsNthOrderThickening.isThickening B S hS hZ.firstOrder).1⟩))
 ```
 
-**`AlgebraicGeometry.Space.isUniversalFirstOrderThickening_comp'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionComplex.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionComplex.lean#L155). The attribute's comment: “clause (1): Y ×_{Y'} Z' is the universal first-order thickening of Z over Y”.
+**`AlgebraicGeometry.Space.isUniversalFirstOrderThickening_comp'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionComplex.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionComplex.lean#L155). The attribute's comment: “clause (1): Y ×\_\{Y'} Z' is the universal first-order thickening of Z over Y”.
 
 > **Stacks 06BF, clause (1), the universal first-order thickening of `Z` over `Y`.**  With the
 > morphism `h : Z' ⟶ Y'` of `AlgebraicGeometry.Space.universalThickeningCompMap`, the fibre
@@ -1215,7 +1215,7 @@ theorem isUniversalFirstOrderThickening_comp' :
       (universalThickeningCompStructure B S hS i hZ hY hfac)
 ```
 
-**`AlgebraicGeometry.Space.universalThickeningConormalMap_comp_conormalMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionComplex.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionComplex.lean#L236). The attribute's comment: “clause (2): the sequence is a complex, the composite of i^*𝒞_{Y/X} ⟶ 𝒞_{Z/X} and 𝒞_{Z/X} ⟶ 𝒞_{Z/Y} being zero”.
+**`AlgebraicGeometry.Space.universalThickeningConormalMap_comp_conormalMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionComplex.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionComplex.lean#L236). The attribute's comment: “clause (2): the sequence is a complex, the composite of i^*𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X} and 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} being zero”.
 
 > **Stacks 06BF, clause (2): the sequence is a complex.**  The composite of the two maps
 > `i^*𝒞_{Y/X} ⟶ 𝒞_{Z/X} ⟶ 𝒞_{Z/Y}` of the conormal sequence of the composition is zero.
@@ -1274,7 +1274,7 @@ theorem universalThickeningConormalMap_comp_conormalMap_eq_zero :
           ⟨Z, (IsNthOrderThickening.isThickening B S hS hZ.firstOrder).1⟩) = 0
 ```
 
-**`AlgebraicGeometry.Space.exact_and_epi_universalThickeningCompConormalMapSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionExact.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionExact.lean#L89). The attribute's comment: “clause (2): the conormal sequence i^*𝒞_{Y/X} ⟶ 𝒞_{Z/X} ⟶ 𝒞_{Z/Y} ⟶ 0 is exact”.
+**`AlgebraicGeometry.Space.exact_and_epi_universalThickeningCompConormalMapSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionExact.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionExact.lean#L89). The attribute's comment: “clause (2): the conormal sequence i^*𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} ⟶ 0 is exact”.
 
 > **Stacks 06BF, clause (2).**  Let `Z ⟶ Y ⟶ X` be morphisms of algebraic spaces, `Z ⊂ Z'`
 > and `Y ⊂ Y'` universal first-order thickenings over `X`, and `h : Z' ⟶ Y'` the morphism of

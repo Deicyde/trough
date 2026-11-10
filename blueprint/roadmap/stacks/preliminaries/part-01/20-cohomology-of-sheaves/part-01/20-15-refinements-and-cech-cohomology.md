@@ -53,7 +53,7 @@ theorem ι_colimitToCohomology (U : OpenCoverSet X) :
 
 [Tag 01FD](https://stacks.math.columbia.edu/tag/01FD) in the Stacks Project.
 
-**`Stacks.Cohomology.CechRefinement.cechToDerivedGlobalSections_naturality_of_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/CohomologyCompatibility.lean, line 1002](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/CohomologyCompatibility.lean#L1002). The attribute's comment: “derived_compatibility”. References: EGA 0 (12.1.4), “(12.1.4.2)”.
+**`Stacks.Cohomology.CechRefinement.cechToDerivedGlobalSections_naturality_of_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/CohomologyCompatibility.lean, line 1002](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/CohomologyCompatibility.lean#L1002). The attribute's comment: “derived\_compatibility”. References: EGA 0 (12.1.4), “(12.1.4.2)”.
 
 > **[Stacks, Tag 01FD].** Let `f : X ⟶ Y` be a morphism of ringed spaces, let `φ : f^* G ⟶ F`
 > be an `f`-map of sheaves of modules, let `U` be an open covering of `X`, let `V` be an open
@@ -84,7 +84,7 @@ theorem cechToDerivedGlobalSections_naturality_of_refinement :
         derivedModuleGlobalSectionsMap f φ
 ```
 
-**`Stacks.Cohomology.CechRefinement.cechCohomologyToCohomology_naturality_of_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/CohomologyCompatibility.lean, line 1045](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/CohomologyCompatibility.lean#L1045). The attribute's comment: “cohomology_compatibility”. References: EGA 0 (12.1.4), “(12.1.4.2)”.
+**`Stacks.Cohomology.CechRefinement.cechCohomologyToCohomology_naturality_of_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/CohomologyCompatibility.lean, line 1045](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechRefinements/CohomologyCompatibility.lean#L1045). The attribute's comment: “cohomology\_compatibility”. References: EGA 0 (12.1.4), “(12.1.4.2)”.
 
 > **[Stacks, Tag 01FD] on cohomology.** The canonical maps from Čech cohomology to sheaf
 > cohomology of [Stacks, Tag 01EQ] commute with an `f`-map and a refinement of the inverse-image

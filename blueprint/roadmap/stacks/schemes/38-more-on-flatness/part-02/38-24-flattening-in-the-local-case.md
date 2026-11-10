@@ -160,7 +160,7 @@ theorem exists_closedSubscheme_flatOverAt_iff_factors
 
 [Tag 052G](https://stacks.math.columbia.edu/tag/052G) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_idealSheafData_forall_isFlatOverAt_iff_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/CompleteLocalFlattening.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/CompleteLocalFlattening.lean#L311). The attribute's comment: “the closed subscheme of Lemma 05PI for E = X_s over a Noetherian complete local base, constructed from finite affine charts and Lemma 0528”.
+**`AlgebraicGeometry.exists_idealSheafData_forall_isFlatOverAt_iff_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/CompleteLocalFlattening.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/CompleteLocalFlattening.lean#L311). The attribute's comment: “the closed subscheme of Lemma 05PI for E = X\_s over a Noetherian complete local base, constructed from finite affine charts and Lemma 0528”.
 
 > **Stacks Project, Tag 052G.** Let `S = Spec A` be the spectrum of a Noetherian complete local
 > ring with closed point `s`, let `f : X ⟶ S` be of finite type and let `F` be a quasi-coherent

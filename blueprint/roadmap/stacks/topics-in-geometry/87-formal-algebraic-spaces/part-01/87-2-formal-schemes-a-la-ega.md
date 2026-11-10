@@ -14,7 +14,7 @@ Section 87.2 of the Stacks Project, [Tag 0AHY](https://stacks.math.columbia.edu/
 
 [Tag 0AHY](https://stacks.math.columbia.edu/tag/0AHY) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_spfGammaHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumGlobalSectionsIso.lean, line 585](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumGlobalSectionsIso.lean#L585). The attribute's comment: “Γ(Spf A, 𝒪_{Spf A}) = A for an admissible topological ring”.
+**`AlgebraicGeometry.isIso_spfGammaHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumGlobalSectionsIso.lean, line 585](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumGlobalSectionsIso.lean#L585). The attribute's comment: “Γ(Spf A, 𝒪\_\{Spf A}) = A for an admissible topological ring”.
 
 > **Stacks 0AHY**, the source's deferred verification `Γ(D(f) ∩ Spf A, 𝒪_{Spf A}) = A_{\{f\}}`
 > in the case `f = 1`: for an admissible topological ring the canonical map
@@ -29,7 +29,7 @@ theorem isIso_spfGammaHom [IsLinearTopology A A] (hA : IsAdmissible A) :
     IsIso (spfGammaHom A)
 ```
 
-**`AlgebraicGeometry.spfGammaIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumGlobalSectionsIso.lean, line 594](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumGlobalSectionsIso.lean#L594). The attribute's comment: “Γ(Spf A, 𝒪_{Spf A}) = A for an admissible topological ring”.
+**`AlgebraicGeometry.spfGammaIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumGlobalSectionsIso.lean, line 594](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumGlobalSectionsIso.lean#L594). The attribute's comment: “Γ(Spf A, 𝒪\_\{Spf A}) = A for an admissible topological ring”.
 
 > **Stacks 0AHY.** The identification `A = Γ(Spf A, 𝒪_{Spf A})` of topological rings, for an
 > admissible topological ring `A`.
@@ -43,7 +43,7 @@ noncomputable def spfGammaIso [IsLinearTopology A A] (hA : IsAdmissible A) :
 
 [Tag 0AHZ](https://stacks.math.columbia.edu/tag/0AHZ) in the Stacks Project.
 
-**`AlgebraicGeometry.injective_spfLTRSMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumBijection.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumBijection.lean#L396). The attribute's comment: “injectivity of the comparison map Hom_cont(A, B) → Mor_LTRS(Spf B, Spf A)”. References: EGA I (10.4.6), “Affine case X = Spf B”; SGA 3 VIIB (1.1), “partial”.
+**`AlgebraicGeometry.injective_spfLTRSMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumBijection.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumBijection.lean#L396). The attribute's comment: “injectivity of the comparison map Hom\_cont(A, B) → Mor\_LTRS(Spf B, Spf A)”. References: EGA I (10.4.6), “Affine case X = Spf B”; SGA 3 VIIB (1.1), “partial”.
 
 > **Stacks 0AHZ**, injectivity of the comparison map. In the identification
 > `Mor_{LTRS}((Spf B, 𝒪_{Spf B}), (Spf A, 𝒪_{Spf A})) = Hom_cont(A, B)` the map from continuous
@@ -57,7 +57,7 @@ theorem injective_spfLTRSMap [IsLinearTopology B B] [T2Space B] :
     Function.Injective (spfLTRSMap A B hA I₀ hB)
 ```
 
-**`AlgebraicGeometry.surjective_spfLTRSMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumSurjectivity.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumSurjectivity.lean#L382). The attribute's comment: “surjectivity of the comparison map Hom_cont(A, B) → Mor_LTRS(Spf B, Spf A)”. References: EGA I (10.2.2); EGA I (10.4.6), “Affine case X = Spf B”; SGA 3 VIIB (1.1), “partial”.
+**`AlgebraicGeometry.surjective_spfLTRSMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumSurjectivity.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumSurjectivity.lean#L382). The attribute's comment: “surjectivity of the comparison map Hom\_cont(A, B) → Mor\_LTRS(Spf B, Spf A)”. References: EGA I (10.2.2); EGA I (10.4.6), “Affine case X = Spf B”; SGA 3 VIIB (1.1), “partial”.
 
 > **Morphisms of formal spectra come from continuous ring maps.** Every morphism
 > `g : Spf B → Spf A` of locally topologically ringed spaces between the formal spectra of admissible
@@ -69,7 +69,7 @@ theorem injective_spfLTRSMap [IsLinearTopology B B] [T2Space B] :
 theorem surjective_spfLTRSMap : Function.Surjective (spfLTRSMap A B hA.1 I₀ hB.1)
 ```
 
-**`AlgebraicGeometry.bijective_spfLTRSMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumSurjectivity.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumSurjectivity.lean#L400). The attribute's comment: “the full bijection Hom_cont(A, B) = Mor_LTRS(Spf B, Spf A) for admissible A, B”. References: SGA 3 VIIB (1.1), “partial”.
+**`AlgebraicGeometry.bijective_spfLTRSMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumSurjectivity.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FormalSpectrumSurjectivity.lean#L400). The attribute's comment: “the full bijection Hom\_cont(A, B) = Mor\_LTRS(Spf B, Spf A) for admissible A, B”. References: SGA 3 VIIB (1.1), “partial”.
 
 > **Stacks 0AHZ.** For admissible topological rings `A` and `B` the comparison map taking a
 > continuous ring homomorphism `A → B` to the induced morphism `Spf B → Spf A` of locally
@@ -136,7 +136,7 @@ theorem injective_formalSchemeFunctorOfPoints_map {κ : Cardinal.{u}} {X Y : For
     Function.Injective fun f : X ⟶ Y => (formalSchemeFunctorOfPoints κ).map f
 ```
 
-**`AlgebraicGeometry.bijective_formalSchemeFunctorOfPoints_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFull.lean, line 652](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFull.lean#L652). The attribute's comment: “the bijection Mor(𝔛, 𝔜) = Mor(h_𝔛, h_𝔜) for a formal scheme 𝔛 whose size is bounded by the cutoff”.
+**`AlgebraicGeometry.bijective_formalSchemeFunctorOfPoints_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFull.lean, line 652](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFull.lean#L652). The attribute's comment: “the bijection Mor(𝔛, 𝔜) = Mor(h\_𝔛, h\_𝔜) for a formal scheme 𝔛 whose size is bounded by the cutoff”.
 
 > **Morphisms of formal schemes are transformations of functors of points.** For a formal scheme
 > `𝔛` whose size is not too large — the schemes `Spec (A/I_λ)` cut out of its affine formal charts
@@ -161,7 +161,7 @@ theorem exists_formalSchemePointsFunctor_map_eq {X Y : FormalScheme.{u}}
     ∃ f : X ⟶ Y, formalSchemePointsFunctor.map f = φ
 ```
 
-**`AlgebraicGeometry.bijective_formalSchemePointsFunctor_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFullSupplement.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFullSupplement.lean#L96). The attribute's comment: “the bijection Mor(𝔛, 𝔜) = Mor(h_𝔛, h_𝔜) on all schemes, with no size hypothesis”.
+**`AlgebraicGeometry.bijective_formalSchemePointsFunctor_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFullSupplement.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsFullSupplement.lean#L96). The attribute's comment: “the bijection Mor(𝔛, 𝔜) = Mor(h\_𝔛, h\_𝔜) on all schemes, with no size hypothesis”.
 
 > For formal schemes `𝔛` and `𝔜`, the functor of points on the category of all schemes induces
 > a bijection
@@ -484,7 +484,7 @@ theorem isSheafFor_mcQuillanFormalSchemeFunctorOfPoints {κ : Cardinal.{u}}
     Presieve.IsSheafFor ((mcQuillanFormalSchemeFunctorOfPoints κ).obj X) R
 ```
 
-**`AlgebraicGeometry.bijective_mcQuillanFormalSchemeFunctorOfPoints_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakFunctorOfPointsFull.lean, line 596](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakFunctorOfPointsFull.lean#L596). The attribute's comment: “the counterpart of Lemma 87.2.1: the bijection Mor(𝔛, 𝔜) = Mor(h_𝔛, h_𝔜) for a McQuillan formal scheme 𝔛 whose size is bounded by the cutoff”.
+**`AlgebraicGeometry.bijective_mcQuillanFormalSchemeFunctorOfPoints_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/WeakFunctorOfPointsFull.lean, line 596](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/WeakFunctorOfPointsFull.lean#L596). The attribute's comment: “the counterpart of Lemma 87.2.1: the bijection Mor(𝔛, 𝔜) = Mor(h\_𝔛, h\_𝔜) for a McQuillan formal scheme 𝔛 whose size is bounded by the cutoff”.
 
 > **Stacks 0AI3**, the counterpart of Lemma 87.2.1 in McQuillan's setting, in full. For a
 > McQuillan formal scheme `𝔛` whose size is not too large — the schemes `Spec (A/I_λ)` cut out of
@@ -512,7 +512,7 @@ public lemma isWeakIdealOfDefinition_inf_of_isOpen_right {A : Type*} [CommRing A
     (hJ : IsOpen (J : Set A)) : TopologicalRing.IsWeakIdealOfDefinition (I ⊓ J)
 ```
 
-**`TopologicalRing.hasBasis_nhds_zero_isWeakIdealOfDefinition`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean#L233). The attribute's comment: “weak_basis”.
+**`TopologicalRing.hasBasis_nhds_zero_isWeakIdealOfDefinition`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean#L233). The attribute's comment: “weak\_basis”.
 
 > In a weakly admissible linearly topologized ring, its weak ideals of definition form a
 > fundamental system of neighborhoods of zero.
@@ -528,9 +528,9 @@ public lemma hasBasis_nhds_zero_isWeakIdealOfDefinition
 
 Declarations registered for the tag:
 
-- [`TopologicalRing.IsAdmissible`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/AdmissibleRings.lean#L107), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean#L202) (StacksFrontier): “admissible_recall”.
-- [`TopologicalRing.IsWeakIdealOfDefinition`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean#L72), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean#L208) (StacksFrontier): “weak_admissibility”.
-- [`TopologicalRing.IsWeaklyAdmissible`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean#L86), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean#L209) (StacksFrontier): “weak_admissibility”.
+- [`TopologicalRing.IsAdmissible`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/AdmissibleRings.lean#L107), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean#L202) (StacksFrontier): “admissible\_recall”.
+- [`TopologicalRing.IsWeakIdealOfDefinition`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean#L72), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean#L208) (StacksFrontier): “weak\_admissibility”.
+- [`TopologicalRing.IsWeaklyAdmissible`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean#L86), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/WeaklyAdmissible.lean#L209) (StacksFrontier): “weak\_admissibility”.
 
 ## Tag 0AI4, a remark
 
@@ -545,7 +545,7 @@ Declarations registered for the tag:
 public noncomputable abbrev sheafSize (H : Sheaf J TopCat.{w}) : Cardinal.{max u w}
 ```
 
-**`CategoryTheory.TopologicalSheaf.exists_bounded_subsheaf_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TopologicalSheaf.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/TopologicalSheaf.lean#L267). The attribute's comment: “bounded_subsheaf”.
+**`CategoryTheory.TopologicalSheaf.exists_bounded_subsheaf_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/TopologicalSheaf.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/TopologicalSheaf.lean#L267). The attribute's comment: “bounded\_subsheaf”.
 
 > Any map from a fixed presheaf of topological spaces to a sheaf factors through a
 > subsheaf of uniformly bounded size.
@@ -571,8 +571,8 @@ Declarations registered for the tag:
 
 - [`CategoryTheory.Sheaf.hasLimitsOfSize`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Sheaf.hasLimitsOfSize#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/TopologicalSheaf.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/TopologicalSheaf.lean#L55) (StacksFrontier): “limits”. References: EGA 0 (3.2.6), “partial”; SGA 3 IV (4.4.1), “(i)”; SGA 4 I (8.12.9), “partial”; SGA 4 II (4.1), “more general”; SGA 4 II (4.8), “more general”.
 - [`CategoryTheory.Sheaf.createsLimits`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Sheaf.createsLimits#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/TopologicalSheaf.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/TopologicalSheaf.lean#L61) (StacksFrontier): “limits”. References: EGA 0 (3.2.6), “more general”; SGA 3 IV (4.4.1), “more general”; SGA 4 II (4.1), “more general”.
-- [`CategoryTheory.GrothendieckTopology.Point.isSheaf_skyscraperPresheaf`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.Point.isSheaf_skyscraperPresheaf#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/TopologicalSheaf.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/TopologicalSheaf.lean#L70) (StacksFrontier): “point_mapping_sheaf”.
-- [`CategoryTheory.GrothendieckTopology.Point.W_isInvertedBy_presheafFiber`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.Point.W_isInvertedBy_presheafFiber#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/TopologicalSheaf.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/TopologicalSheaf.lean#L443) (StacksFrontier): “stalk_preservation”.
+- [`CategoryTheory.GrothendieckTopology.Point.isSheaf_skyscraperPresheaf`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.Point.isSheaf_skyscraperPresheaf#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/TopologicalSheaf.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/TopologicalSheaf.lean#L70) (StacksFrontier): “point\_mapping\_sheaf”.
+- [`CategoryTheory.GrothendieckTopology.Point.W_isInvertedBy_presheafFiber`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.Point.W_isInvertedBy_presheafFiber#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/TopologicalSheaf.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/TopologicalSheaf.lean#L443) (StacksFrontier): “stalk\_preservation”.
 
 ## Depends on
 

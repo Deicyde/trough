@@ -37,7 +37,7 @@ theorem mem_chowGroup_iff (M : ChowMotive C A) (i : ℤ)
     α ∈ M.chowGroup i ↔ M.projectorAction i α = α
 ```
 
-**`Stacks.WeilCohomology.SmoothProjectiveScheme.ChowMotive.chowGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ChowGroupsOfMotives.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ChowGroupsOfMotives.lean#L251). The attribute's comment: “the i-th Chow group CH^i(M) = p(CH^{i+m}(X) ⊗ Q) of a Chow motive M = (X, p, m) over a field, X smooth projective and p_* the pushforward action of the projector”.
+**`Stacks.WeilCohomology.SmoothProjectiveScheme.ChowMotive.chowGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ChowGroupsOfMotives.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ChowGroupsOfMotives.lean#L251). The attribute's comment: “the i-th Chow group CH^i(M) = p(CH^\{i+m}(X) ⊗ Q) of a Chow motive M = (X, p, m) over a field, X smooth projective and p\_* the pushforward action of the projector”.
 
 > **Stacks Project, Tag 0FGL.** The `i`-th Chow group of a Chow motive `M = (X, p, m)` over a
 > field `k`,
@@ -52,7 +52,7 @@ theorem mem_chowGroup_iff (M : ChowMotive C A) (i : ℤ)
 def chowGroup (i : ℤ) : Submodule ℚ (RationalCodimChowGroup M.X (i + M.twist))
 ```
 
-**`Stacks.WeilCohomology.SmoothProjectiveScheme.ChowMotive.mem_chowGroup_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ChowGroupsOfMotives.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ChowGroupsOfMotives.lean#L257). The attribute's comment: “membership in CH^i(M) = p(CH^{i+m}(X) ⊗ Q)”.
+**`Stacks.WeilCohomology.SmoothProjectiveScheme.ChowMotive.mem_chowGroup_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ChowGroupsOfMotives.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Motives/ChowGroupsOfMotives.lean#L257). The attribute's comment: “membership in CH^i(M) = p(CH^\{i+m}(X) ⊗ Q)”.
 
 > **Stacks Project, Tag 0FGL.** The classes of `CH^i(M)` are the classes `p_*(β)` for
 > `β ∈ CH^{i + m}(X) ⊗ ℚ`.
@@ -66,7 +66,7 @@ theorem mem_chowGroup_iff (i : ℤ) (α : RationalCodimChowGroup M.X (i + M.twis
 
 [Tag 0FGM](https://stacks.math.columbia.edu/tag/0FGM) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ChowMotiveCat.chowGroupEquivHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ChowGroupsOfMotives.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ChowGroupsOfMotives.lean#L459). The attribute's comment: “CH^i(M) = Hom_{M_k}(1(-i), M)”.
+**`Stacks.WeilCohomology.ChowMotiveCat.chowGroupEquivHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ChowGroupsOfMotives.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ChowGroupsOfMotives.lean#L459). The attribute's comment: “CH^i(M) = Hom\_\{M\_k}(1(-i), M)”.
 
 > The functor `CH^i(-)` on the category `M_k` of Chow motives is representable by `𝟏(-i)`: for
 > every motive `M` there is a `ℚ`-linear isomorphism
@@ -81,7 +81,7 @@ theorem mem_chowGroup_iff (i : ℤ) (α : RationalCodimChowGroup M.X (i + M.twis
 def chowGroupEquivHom (M : ChowMotiveCat k) (i : ℤ) : chowGroup M i ≃ₗ[ℚ] (tate k (-i) ⟶ M)
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.chowGroupEquivHom_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ChowGroupsOfMotives.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ChowGroupsOfMotives.lean#L473). The attribute's comment: “CH^i(M) = Hom_{M_k}(1(-i), M) functorially in M”.
+**`Stacks.WeilCohomology.ChowMotiveCat.chowGroupEquivHom_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ChowGroupsOfMotives.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ChowGroupsOfMotives.lean#L473). The attribute's comment: “CH^i(M) = Hom\_\{M\_k}(1(-i), M) functorially in M”.
 
 > The identification `CH^i(M) = Hom_{M_k}(𝟏(-i), M)` is natural in `M`: for a morphism of
 > motives `c : M ⟶ N` it carries `c_* : CH^i(M) ⟶ CH^i(N)` to postcomposition with `c`.
@@ -92,7 +92,7 @@ theorem chowGroupEquivHom_naturality {M N : ChowMotiveCat k} (f : M ⟶ N) (i : 
     chowGroupEquivHom N i (chowMap f i α) = chowGroupEquivHom M i α ≫ f
 ```
 
-**`Stacks.WeilCohomology.ChowMotiveCat.chowFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ChowGroupsOfMotives.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ChowGroupsOfMotives.lean#L482). The attribute's comment: “the functor CH^i(-) on M_k is representable by 1(-i)”.
+**`Stacks.WeilCohomology.ChowMotiveCat.chowFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ChowGroupsOfMotives.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ChowGroupsOfMotives.lean#L482). The attribute's comment: “the functor CH^i(-) on M\_k is representable by 1(-i)”.
 
 > The functor `CH^i(-) : M_k ⥤ ℚ-vector spaces` is representable by `𝟏(-i)`: it is isomorphic
 > to the functor `Hom_{M_k}(𝟏(-i), -)`, functorially in the motive.
@@ -144,7 +144,7 @@ def chowFunctorIso (i : ℤ) : D.chowFunctor i ≅ D.homFunctor i
 
 [Tag 0FGN](https://stacks.math.columbia.edu/tag/0FGN) in the Stacks Project.
 
-**`Stacks.WeilCohomology.ChowMotiveCat.isIso_of_bijective_chowMap_tensorHom_h`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ManinIdentityPrinciple.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ManinIdentityPrinciple.lean#L89). The attribute's comment: “Manin's identity principle, on the category M_k of Chow motives”.
+**`Stacks.WeilCohomology.ChowMotiveCat.isIso_of_bijective_chowMap_tensorHom_h`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ManinIdentityPrinciple.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/WeilCohomology/Concrete/ManinIdentityPrinciple.lean#L89). The attribute's comment: “Manin's identity principle, on the category M\_k of Chow motives”.
 
 > **Stacks Project, Tag 0FGN** (Manin's identity principle). Let `k` be a field and let
 > `c : M ⟶ N` be a morphism of Chow motives over `k`. If for every smooth projective scheme `X` over

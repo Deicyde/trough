@@ -168,7 +168,7 @@ noncomputable def conormalModuleIsoPullbackIdealSheaf (X : AlgebraicSpaces B S h
         (idealSheafOfModules B S hS X Z)
 ```
 
-**`AlgebraicGeometry.Space.pullbackIdealSheafIsoPullbackNegativeDivisorSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfEffectiveCartierDivisor.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfEffectiveCartierDivisor.lean#L99). The attribute's comment: “the restriction of the ideal sheaf is the restriction of the inverse of O_X(D)”.
+**`AlgebraicGeometry.Space.pullbackIdealSheafIsoPullbackNegativeDivisorSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfEffectiveCartierDivisor.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfEffectiveCartierDivisor.lean#L99). The attribute's comment: “the restriction of the ideal sheaf is the restriction of the inverse of O\_X(D)”.
 
 > **The second identification of Stacks 0B4F**, `𝓘_D|_D = 𝒪_X(D)^{⊗ -1}|_D`: for an effective
 > Cartier divisor `D ⊆ X`, the restriction to `D` of the defining ideal sheaf `𝓘_D` agrees with the
@@ -659,7 +659,7 @@ theorem exists_unique_isEffectiveCartierDivisor_iso_canonicalSectionHom_comp
         canonicalSectionHom B S hS X D hD ≫ i'.hom = L.unitHomEquiv.symm s → i' = i
 ```
 
-**`AlgebraicGeometry.Space.effectiveCartierDivisor_regularSectionPair_mutuallyInverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularSectionEffectiveCartierUnique.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularSectionEffectiveCartierUnique.lean#L221). The attribute's comment: “part (3): the constructions D ↦ (𝒪_X(D), 1_D) and (L, s) ↦ Z(s) are mutually inverse, hence a bijection between the effective Cartier divisors and the pairs of an invertible module with a regular global section taken up to isomorphism; with no assumed inputs”.
+**`AlgebraicGeometry.Space.effectiveCartierDivisor_regularSectionPair_mutuallyInverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularSectionEffectiveCartierUnique.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularSectionEffectiveCartierUnique.lean#L221). The attribute's comment: “part (3): the constructions D ↦ (𝒪\_X(D), 1\_D) and (L, s) ↦ Z(s) are mutually inverse, hence a bijection between the effective Cartier divisors and the pairs of an invertible module with a regular global section taken up to isomorphism; with no assumed inputs”.
 
 > **Stacks 0847, part (3).**  The constructions `D ↦ (𝒪_X(D), 1_D)` and `(L, s) ↦ Z(s)` are
 > mutually inverse, so they are a bijection between the effective Cartier divisors on `X` and the
@@ -699,7 +699,7 @@ theorem effectiveCartierDivisor_regularSectionPair_mutuallyInverse :
         zeroScheme B S hS X L s = zeroScheme B S hS X L' s'
 ```
 
-**`AlgebraicGeometry.Space.zeroScheme_canonicalSection_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeOfCanonicalSection.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeOfCanonicalSection.lean#L335). The attribute's comment: “part (2): the construction D ↦ (𝒪_X(D), 1_D) followed by (L, s) ↦ Z(s) is the identity on effective Cartier divisors, with no assumed inputs”.
+**`AlgebraicGeometry.Space.zeroScheme_canonicalSection_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeOfCanonicalSection.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeOfCanonicalSection.lean#L335). The attribute's comment: “part (2): the construction D ↦ (𝒪\_X(D), 1\_D) followed by (L, s) ↦ Z(s) is the identity on effective Cartier divisors, with no assumed inputs”.
 
 > **Stacks 0847 (2): an effective Cartier divisor is the zero scheme of its canonical
 > section.**  This is the assertion of the source that the construction `D ↦ (𝒪_X(D), 1_D)` followed

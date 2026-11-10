@@ -56,7 +56,7 @@ theorem preservesFiniteLimits_ringedSitePullback_of_isFlat
     Limits.PreservesFiniteLimits (ringedSitePullback f)
 ```
 
-**`CategoryTheory.Sites.abelianInverseImage_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InverseImage/AbelianSheaf.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InverseImage/AbelianSheaf.lean#L446). The attribute's comment: “inverse_image_exact”.
+**`CategoryTheory.Sites.abelianInverseImage_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/InverseImage/AbelianSheaf.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/InverseImage/AbelianSheaf.lean#L446). The attribute's comment: “inverse\_image\_exact”.
 
 > The inverse image of a morphism of topoi is exact on ordinary abelian sheaves.
 
@@ -66,7 +66,7 @@ theorem abelianInverseImage_exact :
       (abelianInverseImage f)
 ```
 
-**`Stacks.Sheaves.RingedToposModules.pullbackModules_exact_of_isFlatMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/RingedLocalization/FlatPullbackExact.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/RingedLocalization/FlatPullbackExact.lean#L369). The attribute's comment: “flat_pullback_exact”.
+**`Stacks.Sheaves.RingedToposModules.pullbackModules_exact_of_isFlatMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/RingedLocalization/FlatPullbackExact.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/RingedLocalization/FlatPullbackExact.lean#L369). The attribute's comment: “flat\_pullback\_exact”.
 
 > **Stacks 04JC**, second assertion. Pullback of sheaves of modules along a *flat* morphism
 > of ringed topoi is exact: it preserves finite limits and finite colimits. The first assertion,

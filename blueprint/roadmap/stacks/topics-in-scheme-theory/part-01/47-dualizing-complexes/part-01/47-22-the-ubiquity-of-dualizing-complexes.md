@@ -63,7 +63,7 @@ public theorem isDualizingComplex_extendScalars_of_flat
 
 [Tag 0DWD](https://stacks.math.columbia.edu/tag/0DWD) in the Stacks Project.
 
-**`Dualizing.isDualizingComplex_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/AdicCompletion.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/AdicCompletion.lean#L94). The attribute's comment: “ideal_adic_completion”.
+**`Dualizing.isDualizingComplex_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/AdicCompletion.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/AdicCompletion.lean#L94). The attribute's comment: “ideal\_adic\_completion”.
 
 > **Stacks Project, Tag 0DWD.** The derived base change of a dualizing complex
 > to the completion of a Noetherian ring along any ideal is a dualizing complex.
@@ -137,7 +137,7 @@ theorem isDualizingComplex_completion_henselization
               (algebraMap A Ash)).mapDerivedCategory.obj K))
 ```
 
-**`Dualizing.isDualizingComplex_henselizationPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean#L96). The attribute's comment: “pair_henselization”.
+**`Dualizing.isDualizingComplex_henselizationPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean#L96). The attribute's comment: “pair\_henselization”.
 
 > **Stacks Project, Tag 0DWD, part (1).** The derived base change of a dualizing complex to
 > the henselization `A^h` of a pair `(A, I)` with `A` Noetherian is a dualizing complex.
@@ -161,7 +161,7 @@ public theorem isDualizingComplex_henselizationPair
       ((ModuleCat.extendScalars.{u, w, v} (algebraMap A Ah)).mapDerivedCategory.obj K)
 ```
 
-**`Dualizing.isDualizingComplex_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean#L147). The attribute's comment: “local_henselization”.
+**`Dualizing.isDualizingComplex_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean#L147). The attribute's comment: “local\_henselization”.
 
 > **Stacks Project, Tag 0DWD, part (3), the henselization.** The derived base change of a
 > dualizing complex to the henselization `A^h` of a Noetherian local ring `A` is a dualizing
@@ -180,7 +180,7 @@ public theorem isDualizingComplex_henselization
       ((ModuleCat.extendScalars.{u, w, v} (algebraMap A Ah)).mapDerivedCategory.obj K)
 ```
 
-**`Dualizing.isDualizingComplex_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean#L170). The attribute's comment: “local_strict_henselization”.
+**`Dualizing.isDualizingComplex_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UbiquityDualizingComplexes/Henselization.lean#L170). The attribute's comment: “local\_strict\_henselization”.
 
 > **Stacks Project, Tag 0DWD, part (3), the strict henselization.** The derived base change of
 > a dualizing complex to a henselization `A^{sh}` of a Noetherian local ring `A` along a

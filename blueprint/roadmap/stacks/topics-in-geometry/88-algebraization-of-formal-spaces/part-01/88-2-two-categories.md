@@ -61,7 +61,7 @@ public noncomputable def adicQuotientFunctor (A : Type u) [CommRing A]
 
 [Tag 0AJP](https://stacks.math.columbia.edu/tag/0AJP) in the Stacks Project.
 
-**`Rig.exists_adicCompletion_mvPolynomial_quotient_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean#L77). The attribute's comment: “completed_polynomial_presentation”.
+**`Rig.exists_adicCompletion_mvPolynomial_quotient_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean#L77). The attribute's comment: “completed\_polynomial\_presentation”.
 
 > **Stacks Project, Tag 0AJP.** An adically complete algebra of finite type modulo a
 > finitely generated ideal is a quotient of a completed polynomial algebra in finitely many
@@ -78,7 +78,7 @@ public theorem exists_adicCompletion_mvPolynomial_quotient_equiv
     ∃ J : Ideal P, Nonempty ((P ⧸ J) ≃ₐ[A] B.carrier)
 ```
 
-**`Rig.iAdicallyCompleteRing_adicCompletion_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean#L275). The attribute's comment: “polynomial_completions”.
+**`Rig.iAdicallyCompleteRing_adicCompletion_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean#L275). The attribute's comment: “polynomial\_completions”.
 
 > The completion of a polynomial algebra is complete for the ideal extended
 > from the coefficient ring.
@@ -92,7 +92,7 @@ public theorem iAdicallyCompleteRing_adicCompletion_mvPolynomial (hI : I.FG) :
         (MvPolynomial (Fin r) A))
 ```
 
-**`Rig.finiteType_quotient_adicCompletion_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean#L292). The attribute's comment: “polynomial_completions”.
+**`Rig.finiteType_quotient_adicCompletion_mvPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean#L292). The attribute's comment: “polynomial\_completions”.
 
 > The reduction modulo `I` of a completed polynomial algebra is of finite
 > type over `A ⧸ I`.
@@ -123,7 +123,7 @@ public noncomputable def adicQuotientEquivalence (hI : I.FG) :
 
 [Tag 0AJQ](https://stacks.math.columbia.edu/tag/0AJQ) in the Stacks Project.
 
-**`Rig.isNoetherianRing`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean#L190). The attribute's comment: “noetherian_objects”.
+**`Rig.isNoetherianRing`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean#L190). The attribute's comment: “noetherian\_objects”.
 
 > Every adically complete algebra of finite type modulo an ideal over a Noetherian
 > commutative ring has a Noetherian underlying ring.
@@ -134,7 +134,7 @@ public instance isNoetherianRing {A : Type u} [CommRing A] [IsNoetherianRing A]
     IsNoetherianRing B.carrier
 ```
 
-**`Rig.quotient_isAdicFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean#L229). The attribute's comment: “quotients_remain_objects”.
+**`Rig.quotient_isAdicFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean#L229). The attribute's comment: “quotients\_remain\_objects”.
 
 > Every quotient of an adically complete algebra of finite type modulo an ideal over a
 > Noetherian ring is again an adically complete algebra of finite type modulo that ideal.
@@ -148,7 +148,7 @@ public theorem quotient_isAdicFiniteType {A : Type u} [CommRing A] [IsNoetherian
         ((B.carrier ⧸ J) ⧸ I.map (algebraMap A (B.carrier ⧸ J)))
 ```
 
-**`Rig.iAdicallyCompleteRing_adicCompletion_mvPolynomial_of_isNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean#L322). The attribute's comment: “polynomial_completions”.
+**`Rig.iAdicallyCompleteRing_adicCompletion_mvPolynomial_of_isNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean#L322). The attribute's comment: “polynomial\_completions”.
 
 > The completion of the polynomial ring in `r` variables over a Noetherian ring is
 > complete for the ideal extended from the coefficient ring.
@@ -163,7 +163,7 @@ public theorem iAdicallyCompleteRing_adicCompletion_mvPolynomial_of_isNoetherian
         (MvPolynomial (Fin r) A))
 ```
 
-**`Rig.finiteType_quotient_adicCompletion_mvPolynomial_of_isNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean#L334). The attribute's comment: “polynomial_completions”.
+**`Rig.finiteType_quotient_adicCompletion_mvPolynomial_of_isNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Category/PolynomialPresentation.lean#L334). The attribute's comment: “polynomial\_completions”.
 
 > The reduction modulo `I` of the completed polynomial ring in `r` variables is of
 > finite type over `A ⧸ I`.
@@ -178,7 +178,7 @@ public theorem finiteType_quotient_adicCompletion_mvPolynomial_of_isNoetherianRi
             (MvPolynomial (Fin r) A))))
 ```
 
-**`Rig.adicCompletion_isAdicallyComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FiniteTypeCompletions.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/FiniteTypeCompletions.lean#L37). The attribute's comment: “finite_type_completions”.
+**`Rig.adicCompletion_isAdicallyComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FiniteTypeCompletions.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/FiniteTypeCompletions.lean#L37). The attribute's comment: “finite\_type\_completions”.
 
 > The completion of a finite type algebra over a Noetherian ring is complete for the ideal
 > extended directly from the base ring.
@@ -192,7 +192,7 @@ public theorem adicCompletion_isAdicallyComplete
       (AdicCompletion (I.map (algebraMap A C)) C)
 ```
 
-**`Rig.adicCompletion_finiteType_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FiniteTypeCompletions.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/FiniteTypeCompletions.lean#L54). The attribute's comment: “finite_type_completions”.
+**`Rig.adicCompletion_finiteType_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/FiniteTypeCompletions.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/FiniteTypeCompletions.lean#L54). The attribute's comment: “finite\_type\_completions”.
 
 > The quotient modulo the ideal from the base ring of the completion of a finite type algebra
 > is of finite type over the quotient of the base ring.

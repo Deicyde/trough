@@ -326,7 +326,7 @@ structure Hom (T T' : TorsorsFor hB G P)
 instance instCategory : Category (TorsorsFor hB G P)
 ```
 
-**`AlgebraicGeometry.Space.TorsorsFor.isIso_of_isIso_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L402). The attribute's comment: “the fibre categories of p : G-Principal ⥤ (Sch/S)_fppf are groupoids, by the assertion for an arbitrary trivializing covering property”.
+**`AlgebraicGeometry.Space.TorsorsFor.isIso_of_isIso_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/CategoryOfFppfTorsors.lean#L402). The attribute's comment: “the fibre categories of p : G-Principal ⥤ (Sch/S)\_fppf are groupoids, by the assertion for an arbitrary trivializing covering property”.
 
 > A morphism of torsors whose morphism `f` of the big fppf site is an isomorphism is itself an
 > isomorphism. Every morphism of a fibre category of the functor `p` to the site lies over an
@@ -362,7 +362,7 @@ abbrev PrincipalHomogeneousSpaces.projection :
 
 [Tag 04UP](https://stacks.math.columbia.edu/tag/04UP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PrincipalHomogeneousSpaces.isStackInGroupoids_of_descent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/PrincipalHomogeneousSpacesStack.lean, line 742](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/PrincipalHomogeneousSpacesStack.lean#L742). The attribute's comment: “p : G-Principal ⥤ (Sch/S)_fppf is a stack in groupoids once principal homogeneous spaces descend along fppf coverings as in (1)-(4)”.
+**`AlgebraicGeometry.Space.PrincipalHomogeneousSpaces.isStackInGroupoids_of_descent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/PrincipalHomogeneousSpacesStack.lean, line 742](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/PrincipalHomogeneousSpacesStack.lean#L742). The attribute's comment: “p : G-Principal ⥤ (Sch/S)\_fppf is a stack in groupoids once principal homogeneous spaces descend along fppf coverings as in (1)-(4)”.
 
 > **Stacks 04UP.** If principal homogeneous spaces satisfy effective descent along the
 > coverings of `(Sch/S)_fppf` (items (1)–(4) of the remark,

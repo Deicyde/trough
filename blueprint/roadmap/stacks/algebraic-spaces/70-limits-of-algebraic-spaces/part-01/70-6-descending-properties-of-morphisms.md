@@ -233,7 +233,7 @@ theorem exists_isSeparated_mapAt_of_isSeparated_mapLimit (hf : IsSeparated B S h
 
 [Tag 0852](https://stacks.math.columbia.edu/tag/0852) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isIso_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean#L363). References: EGA IV (8.8.2.5), “f iso ⇒ f_i iso”.
+**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isIso_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean#L363). References: EGA IV (8.8.2.5), “f iso ⇒ f\_i iso”.
 
 > **Stacks 0852**, and **Stacks 084S**. In the situation of Stacks 084W, if the base change
 > `f` of `f₀` to the limit `B` is an isomorphism and `f₀` is locally of finite presentation, then
@@ -269,7 +269,7 @@ theorem exists_mono_mapAt (hf : Mono D.mapLimit)
 
 [Tag 08K0](https://stacks.math.columbia.edu/tag/08K0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isFlatOver_baseChange_of_chartLimitsInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingModuleFlatnessUnbounded.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingModuleFlatnessUnbounded.lean#L115). The attribute's comment: “flatness of a module, with no bound on the index: the 07SD convention in place of the index bound of MorphismDescentSystem, which exists_isFlatOver_mapAt carries”.
+**`AlgebraicGeometry.Space.exists_isFlatOver_baseChange_of_chartLimitsInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingModuleFlatnessUnbounded.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingModuleFlatnessUnbounded.lean#L115). The attribute's comment: “flatness of a module, with no bound on the index: the 07SD convention in place of the index bound of MorphismDescentSystem, which exists\_isFlatOver\_mapAt carries”.
 
 > **Stacks 08K0, flatness of a module, with no bound on the index.** Let `(B_i)` be a
 > cofiltered inverse system of algebraic spaces over `S` with affine transition morphisms, let `i`
@@ -329,7 +329,7 @@ theorem exists_isFlatOver_baseChange_of_chartLimitsInSite
               AlgebraicSpaces B S hS) ⟶ ⟨X.left, hX⟩)).obj F₀)
 ```
 
-**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isFlat_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1290). The attribute's comment: “in particular: flatness of the morphism”. References: EGA IV (11.2.6), “F = O_X case”.
+**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isFlat_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean, line 1290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingMorphismProperties.lean#L1290). The attribute's comment: “in particular: flatness of the morphism”. References: EGA IV (11.2.6), “F = O\_X case”.
 
 > **Stacks 08K0**, flatness of the morphism. In the situation of Stacks 084W, if `f₀` is locally
 > of finite presentation and its base change `f : X ⟶ Y` to the limit is flat, then its base change

@@ -14,7 +14,7 @@ Section 37.30 of the Stacks Project, [Tag 05F6](https://stacks.math.columbia.edu
 
 [Tag 05F7](https://stacks.math.columbia.edu/tag/05F7) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_nonempty_open_fiberDimension_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/GenericConstancy.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/GenericConstancy.lean#L232). References: EGA IV (9.5.6), “dim X_s = n near η”.
+**`AlgebraicGeometry.exists_nonempty_open_fiberDimension_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/GenericConstancy.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/FibreDimension/GenericConstancy.lean#L232). References: EGA IV (9.5.6), “dim X\_s = n near η”.
 
 > **Stacks Project, Tag 05F7.** Let `f : X ⟶ Y` be a morphism of finite type with `Y`
 > irreducible with generic point `η`. If the generic fibre has dimension `n`, then the fibres over

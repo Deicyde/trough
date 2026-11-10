@@ -443,7 +443,7 @@ public theorem isFiniteType_homology_of_isPseudoCoherentFrom
 
 [Tag 09V9](https://stacks.math.columbia.edu/tag/09V9) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_singleFunctor_zero_neg_one_iff_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FinitePresentationDegreeMinusOne.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FinitePresentationDegreeMinusOne.lean#L338). The attribute's comment: “finite_presentation_iff_minus_one_pseudo_coherent”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_singleFunctor_zero_neg_one_iff_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FinitePresentationDegreeMinusOne.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FinitePresentationDegreeMinusOne.lean#L338). The attribute's comment: “finite\_presentation\_iff\_minus\_one\_pseudo\_coherent”.
 
 > Let `X` be a ringed space and let `ℱ` be a sheaf of `𝒪_X`-modules.
 > Then `ℱ`, viewed in degree zero as an object of the derived category of `𝒪_X`-modules, is
@@ -456,7 +456,7 @@ public theorem isPseudoCoherentFrom_singleFunctor_zero_neg_one_iff_isFinitePrese
       SheafOfModules.IsFinitePresentation (R := structureSheafOfRings X) F
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_singleFunctor_zero_iff_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FiniteTypeDegreeZero.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FiniteTypeDegreeZero.lean#L146). The attribute's comment: “finite_type_iff_zero_pseudo_coherent”.
+**`AlgebraicGeometry.RingedSpace.isPseudoCoherentFrom_singleFunctor_zero_iff_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/FiniteTypeDegreeZero.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/FiniteTypeDegreeZero.lean#L146). The attribute's comment: “finite\_type\_iff\_zero\_pseudo\_coherent”.
 
 > Let `X` be a ringed space and let `ℱ` be a sheaf of `𝒪_X`-modules. Then `ℱ`, viewed in degree
 > zero as an object of the derived category of `𝒪_X`-modules, is `0`-pseudo-coherent if and only if

@@ -14,7 +14,7 @@ Section 85.15 of the Stacks Project, [Tag 09WK](https://stacks.math.columbia.edu
 
 [Tag 0D85](https://stacks.math.columbia.edu/tag/0D85) in the Stacks Project.
 
-**`CategoryTheory.SemiRepresentable.LocalizationSites.localizationFunctor_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean#L258). The attribute's comment: “semi_representable_localization_has_p”.
+**`CategoryTheory.SemiRepresentable.LocalizationSites.localizationFunctor_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean#L258). The attribute's comment: “semi\_representable\_localization\_has\_p”.
 
 > **Stacks 0D85.** The componentwise localization functor `C / K ⥤ C` is continuous.
 
@@ -23,7 +23,7 @@ instance localizationFunctor_isContinuous (S : LocalizationSites.{w} C J) :
     S.localizationFunctor.IsContinuous S.sourceTopology J
 ```
 
-**`CategoryTheory.SemiRepresentable.LocalizationSites.localizationFunctor_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean#L301). The attribute's comment: “semi_representable_localization_has_p”.
+**`CategoryTheory.SemiRepresentable.LocalizationSites.localizationFunctor_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean#L301). The attribute's comment: “semi\_representable\_localization\_has\_p”.
 
 > **Stacks 0D85.** The componentwise localization functor `C / K ⥤ C` is cocontinuous.
 
@@ -32,7 +32,7 @@ instance localizationFunctor_isCocontinuous (S : LocalizationSites.{w} C J) :
     S.localizationFunctor.IsCocontinuous S.sourceTopology J
 ```
 
-**`CategoryTheory.SemiRepresentable.LocalizationSites.localizationFunctor_hasCoverPullbacks`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean#L318). The attribute's comment: “semi_representable_localization_has_p”.
+**`CategoryTheory.SemiRepresentable.LocalizationSites.localizationFunctor_hasCoverPullbacks`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean#L318). The attribute's comment: “semi\_representable\_localization\_has\_p”.
 
 > **Stacks 0D85.** The componentwise localization functor has property P under the site's
 > covering-pullback axiom: relative pullbacks of covering families exist and their projections
@@ -56,7 +56,7 @@ lemma localizationFunctor_hasCoverPullbacks (S : LocalizationSites.{w} C J)
               S.sourceTopology.toCoverage U
 ```
 
-**`CategoryTheory.SemiRepresentable.LocalizationSites.relocalizationFunctor_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean#L430). The attribute's comment: “semi_representable_relocalization_has_p”.
+**`CategoryTheory.SemiRepresentable.LocalizationSites.relocalizationFunctor_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean#L430). The attribute's comment: “semi\_representable\_relocalization\_has\_p”.
 
 > **Stacks 0D85.** The componentwise relocalization functor `C / K ⥤ C / L` is continuous.
 
@@ -65,7 +65,7 @@ instance relocalizationFunctor_isContinuous (S : LocalizationSites.{w} C J) :
     S.relocalizationFunctor.IsContinuous S.sourceTopology S.targetTopology
 ```
 
-**`CategoryTheory.SemiRepresentable.LocalizationSites.relocalizationFunctor_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean#L454). The attribute's comment: “semi_representable_relocalization_has_p”.
+**`CategoryTheory.SemiRepresentable.LocalizationSites.relocalizationFunctor_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean#L454). The attribute's comment: “semi\_representable\_relocalization\_has\_p”.
 
 > **Stacks 0D85.** The componentwise relocalization functor `C / K ⥤ C / L` is
 > cocontinuous.
@@ -75,7 +75,7 @@ instance relocalizationFunctor_isCocontinuous (S : LocalizationSites.{w} C J) :
     S.relocalizationFunctor.IsCocontinuous S.sourceTopology S.targetTopology
 ```
 
-**`CategoryTheory.SemiRepresentable.LocalizationSites.relocalizationFunctor_hasCoverPullbacks`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean#L469). The attribute's comment: “semi_representable_relocalization_has_p”.
+**`CategoryTheory.SemiRepresentable.LocalizationSites.relocalizationFunctor_hasCoverPullbacks`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Continuity.lean#L469). The attribute's comment: “semi\_representable\_relocalization\_has\_p”.
 
 > **Stacks 0D85.** The componentwise relocalization functor has property P: covering families
 > admit representable pullbacks, and those pullbacks cover.
@@ -133,7 +133,7 @@ noncomputable def localizationPushforwardPullbackNatIsoSheafHom
 
 [Tag 0D87](https://stacks.math.columbia.edu/tag/0D87) in the Stacks Project.
 
-**`CategoryTheory.SemiRepresentable.componentwiseRelocalization_comp_sheafEquivalence_iso_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Relocalization.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Relocalization.lean#L405). The attribute's comment: “(3): f^{-1} corresponds to base change along F(K)^sharp to F(L)^sharp”.
+**`CategoryTheory.SemiRepresentable.componentwiseRelocalization_comp_sheafEquivalence_iso_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Relocalization.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Relocalization.lean#L405). The attribute's comment: “(3): f^\{-1} corresponds to base change along F(K)^sharp to F(L)^sharp”.
 
 > **Stacks 0D87 part (3).** Under the identifications of part (1), the relocalization inverse
 > image `f^{-1} : Sh(C / L) ⥤ Sh(C / K)` along a morphism `f : K ⟶ L` of semi-representable objects
@@ -154,7 +154,7 @@ theorem componentwiseRelocalization_comp_sheafEquivalence_iso_pullback
           Over.pullback (formalCoproductSheafificationMap J f))
 ```
 
-**`CategoryTheory.SemiRepresentable.isEquivalence_sheafFunctorToOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/SheavesOverSheafification.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/SheavesOverSheafification.lean#L200). The attribute's comment: “(1): the functor j_! is an equivalence Sh(C/K) to Sh(C)/F(K)^sharp”. References: SGA 4 III (5.4), “special case”.
+**`CategoryTheory.SemiRepresentable.isEquivalence_sheafFunctorToOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/SheavesOverSheafification.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/SheavesOverSheafification.lean#L200). The attribute's comment: “(1): the functor j\_! is an equivalence Sh(C/K) to Sh(C)/F(K)^sharp”. References: SGA 4 III (5.4), “special case”.
 
 > **Stacks 0D87 part (1).** The lower shriek functor `j_!` identifies sheaves on the
 > localization of `C` at a semi-representable object `K` with sheaves over the associated sheaf
@@ -180,7 +180,7 @@ noncomputable def sheafEquivalence :
     SheafOverFormalCoproduct J K ≌ Over (formalCoproductSheafification J K)
 ```
 
-**`CategoryTheory.SemiRepresentable.componentwiseRestrictionCompSheafFunctorToOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/SheavesOverSheafification.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/SheavesOverSheafification.lean#L373). The attribute's comment: “(2): j^{-1} corresponds to F maps to (F times F(K)^sharp over F(K)^sharp)”.
+**`CategoryTheory.SemiRepresentable.componentwiseRestrictionCompSheafFunctorToOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/SheavesOverSheafification.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/SheavesOverSheafification.lean#L373). The attribute's comment: “(2): j^\{-1} corresponds to F maps to (F times F(K)^sharp over F(K)^sharp)”.
 
 > **Stacks 0D87 part (2).** Under the identification of part (1), restriction
 > `j^{-1} : Sh(C) ⥤ Sh(C / K)` is `F ↦ (F × F(K)^♯ ⟶ F(K)^♯)`, i.e. Mathlib's
@@ -197,7 +197,7 @@ noncomputable def componentwiseRestrictionCompSheafFunctorToOverIso :
       toOver (formalCoproductSheafification J K)
 ```
 
-**`CategoryTheory.SemiRepresentable.componentwiseRestriction_comp_sheafEquivalence_iso_toOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/SheavesOverSheafification.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/SheavesOverSheafification.lean#L387). The attribute's comment: “(2): under the equivalence of (1), j^{-1} is toOver of F(K)^sharp”.
+**`CategoryTheory.SemiRepresentable.componentwiseRestriction_comp_sheafEquivalence_iso_toOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/SheavesOverSheafification.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/SheavesOverSheafification.lean#L387). The attribute's comment: “(2): under the equivalence of (1), j^\{-1} is toOver of F(K)^sharp”.
 
 > **Stacks 0D87 part (2)**, stated through the equivalence of categories of part (1): under
 > `sheafEquivalence`, componentwise restriction corresponds to `toOver (F(K)^♯)`.
@@ -261,7 +261,7 @@ def componentwiseLocalizationFunctorCompIso {X : C} (K : FormalCoproduct.{w} (Ov
       componentwiseLocalizationFunctor K ≅ Over.map (K.obj i).hom
 ```
 
-**`CategoryTheory.SemiRepresentable.componentwiseLocalization_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean#L195). The attribute's comment: “localization_property”.
+**`CategoryTheory.SemiRepresentable.componentwiseLocalization_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean#L195). The attribute's comment: “localization\_property”.
 
 > **Stacks 0D89.** The componentwise localization functor to `C / X` is continuous.
 
@@ -273,7 +273,7 @@ instance componentwiseLocalization_isContinuous :
   (J.over X)
 ```
 
-**`CategoryTheory.SemiRepresentable.componentwiseLocalization_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean#L211). The attribute's comment: “localization_property”.
+**`CategoryTheory.SemiRepresentable.componentwiseLocalization_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean#L211). The attribute's comment: “localization\_property”.
 
 > **Stacks 0D89.** The componentwise localization functor to `C / X` is cocontinuous.
 
@@ -285,7 +285,7 @@ instance componentwiseLocalization_isCocontinuous :
   (J.over X)
 ```
 
-**`CategoryTheory.SemiRepresentable.componentwiseLocalization_hasCoverPullbacks`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean#L228). The attribute's comment: “localization_property”.
+**`CategoryTheory.SemiRepresentable.componentwiseLocalization_hasCoverPullbacks`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean#L228). The attribute's comment: “localization\_property”.
 
 > **Stacks 0D89.** The componentwise localization functor to `C / X` has property P:
 > pullbacks of covering families along maps out of its image are representable and cover.
@@ -336,7 +336,7 @@ noncomputable def componentwiseRelocalizationMorphismOfTopoi
           (CategoryTheory.Functor.whiskeringLeft _ _ _).obj S.relocalizationFunctor.op }
 ```
 
-**`CategoryTheory.SemiRepresentable.componentwiseRelocalization_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean#L379). The attribute's comment: “relocalization_property”.
+**`CategoryTheory.SemiRepresentable.componentwiseRelocalization_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean#L379). The attribute's comment: “relocalization\_property”.
 
 > **Stacks 0D89.** The componentwise relocalization functor is continuous.
 
@@ -347,7 +347,7 @@ instance componentwiseRelocalization_isContinuous
     S.relocalizationFunctor.IsContinuous S.sourceTopology S.targetTopology
 ```
 
-**`CategoryTheory.SemiRepresentable.componentwiseRelocalization_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean#L387). The attribute's comment: “relocalization_property”.
+**`CategoryTheory.SemiRepresentable.componentwiseRelocalization_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean#L387). The attribute's comment: “relocalization\_property”.
 
 > **Stacks 0D89.** The componentwise relocalization functor is cocontinuous.
 
@@ -358,7 +358,7 @@ instance componentwiseRelocalization_isCocontinuous
     S.relocalizationFunctor.IsCocontinuous S.sourceTopology S.targetTopology
 ```
 
-**`CategoryTheory.SemiRepresentable.componentwiseRelocalization_hasCoverPullbacks`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean#L396). The attribute's comment: “relocalization_property”.
+**`CategoryTheory.SemiRepresentable.componentwiseRelocalization_hasCoverPullbacks`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Over.lean#L396). The attribute's comment: “relocalization\_property”.
 
 > **Stacks 0D89.** The componentwise relocalization functor has property P: pullbacks of
 > covering families along maps out of its image are representable and covering.
@@ -373,7 +373,7 @@ lemma componentwiseRelocalization_hasCoverPullbacks
       (fun 𝒱 ↦ 𝒱.2.presieve₀ ∈ S.targetTopology.toCoverage 𝒱.1)
 ```
 
-**`CategoryTheory.SemiRepresentable.componentwiseLocalizationPushforwardPullbackNatIsoSheafHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/OverPushPull.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/OverPushPull.lean#L260). The attribute's comment: “push_pull”.
+**`CategoryTheory.SemiRepresentable.componentwiseLocalizationPushforwardPullbackNatIsoSheafHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/OverPushPull.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/OverPushPull.lean#L260). The attribute's comment: “push\_pull”.
 
 > **Stacks 0D89.** The localization push-pull on `C / X` at a semi-representable object `K`
 > over `X` is naturally the sheaf internal hom out of the sheafification of the semi-representable
@@ -408,7 +408,7 @@ Declarations registered for the tag:
 
 [Tag 0D9U](https://stacks.math.columbia.edu/tag/0D9U) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.familyLowerShriek_iso_directSum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean#L215). The attribute's comment: “part (3): j_! is the direct sum of the j_{i,!}”.
+**`AlgebraicGeometry.RingedSite.familyLowerShriek_iso_directSum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean#L215). The attribute's comment: “part (3): j\_! is the direct sum of the j\_\{i,!}”.
 
 > **Stacks 0D9U, part (3): the direct-sum formula.** In terms of the product decomposition of
 > part (2), `j_!` sends a family `(F i)` to `⨁ i, j_{i,!} F i`: both are left adjoint to `j^*`.
@@ -418,7 +418,7 @@ noncomputable def familyLowerShriek_iso_directSum :
     familyLowerShriek X K ≅ familyDirectSumLowerShriek X K
 ```
 
-**`AlgebraicGeometry.RingedSite.familyLowerShriek_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean#L241). The attribute's comment: “part (3): j_! is exact”.
+**`AlgebraicGeometry.RingedSite.familyLowerShriek_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean#L241). The attribute's comment: “part (3): j\_! is exact”.
 
 > **Stacks 0D9U, part (3).** The lower shriek `j_!` is exact: it preserves finite colimits
 > because it is a left adjoint, and finite limits because it is the direct sum of the exact
@@ -428,7 +428,7 @@ noncomputable def familyLowerShriek_iso_directSum :
 theorem familyLowerShriek_exact : exactFunctor _ _ (familyLowerShriek X K)
 ```
 
-**`AlgebraicGeometry.RingedSite.lowerShriekModules_iso_familyLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean#L357). The attribute's comment: “part (3): j_! is the left adjoint of the pullback of modules along j”.
+**`AlgebraicGeometry.RingedSite.lowerShriekModules_iso_familyLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean#L357). The attribute's comment: “part (3): j\_! is the left adjoint of the pullback of modules along j”.
 
 > **Stacks 0D9U, part (3).** The lower shriek of the morphism of ringed topoi `j` — the left
 > adjoint of the pullback `j^*` of sheaves of modules, which is what the source means by `j_!` —
@@ -451,7 +451,7 @@ theorem lowerShriekModules_exact (X : RingedSite.{u, u, u}) (K : FormalCoproduct
     exactFunctor _ _ ((familyLocalizationMorphism X K).lowerShriekModules)
 ```
 
-**`AlgebraicGeometry.RingedSite.morphismRestr_isRightAdjoint`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean, line 729](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean#L729). The attribute's comment: “f^* has a left adjoint f_!”.
+**`AlgebraicGeometry.RingedSite.morphismRestr_isRightAdjoint`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean, line 729](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean#L729). The attribute's comment: “f^* has a left adjoint f\_!”.
 
 > **Stacks 0D9U.** `f^*` has a left adjoint `f_!`.
 
@@ -459,7 +459,7 @@ theorem lowerShriekModules_exact (X : RingedSite.{u, u, u}) (K : FormalCoproduct
 instance morphismRestr_isRightAdjoint : (morphismRestr X f).IsRightAdjoint
 ```
 
-**`AlgebraicGeometry.RingedSite.morphismLowerShriek_iso_directSum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean, line 735](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean#L735). The attribute's comment: “f_! is the direct sum of the componentwise lower shrieks”.
+**`AlgebraicGeometry.RingedSite.morphismLowerShriek_iso_directSum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean, line 735](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean#L735). The attribute's comment: “f\_! is the direct sum of the componentwise lower shrieks”.
 
 > **Stacks 0D9U.** In terms of the product decomposition of part (2), `f_!` sends a family
 > `(F i)` to `⨁ i, f_{i,!} F i`: both are left adjoint to `f^*`.
@@ -471,7 +471,7 @@ noncomputable def morphismLowerShriek_iso_directSum :
         piCoproduct (morphismComponentLowerShriek X f)
 ```
 
-**`AlgebraicGeometry.RingedSite.morphismLowerShriek_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean, line 746](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean#L746). The attribute's comment: “f_! is exact”.
+**`AlgebraicGeometry.RingedSite.morphismLowerShriek_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean, line 746](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/DirectSum.lean#L746). The attribute's comment: “f\_! is exact”.
 
 > **Stacks 0D9U.** The lower shriek `f_!` is exact: it preserves finite colimits because it
 > is a left adjoint, and finite limits because it is the direct sum of the exact functors
@@ -481,7 +481,7 @@ noncomputable def morphismLowerShriek_iso_directSum :
 theorem morphismLowerShriek_exact : exactFunctor _ _ (morphismRestr X f).leftAdjoint
 ```
 
-**`AlgebraicGeometry.RingedSite.familyMorphism_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Flat.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Flat.lean#L248). The attribute's comment: “f_flat”.
+**`AlgebraicGeometry.RingedSite.familyMorphism_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Flat.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Flat.lean#L248). The attribute's comment: “f\_flat”.
 
 > **Stacks 0D9U.** The morphism of ringed topoi induced by a morphism of semi-representable
 > objects is flat.
@@ -532,7 +532,7 @@ theorem familyLocalizationMorphism_pullback_exact (X : RingedSite.{u, v, max u v
       (familyLocalizationMorphism X K).toRingedToposModulesHom)
 ```
 
-**`AlgebraicGeometry.RingedSite.familyLocalizationMorphism_pullback_isRightAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Localization.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Localization.lean#L260). The attribute's comment: “part (3): j^* has a left adjoint j_!”.
+**`AlgebraicGeometry.RingedSite.familyLocalizationMorphism_pullback_isRightAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Localization.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Localization.lean#L260). The attribute's comment: “part (3): j^* has a left adjoint j\_!”.
 
 > **Stacks 0D9U.** Pullback of sheaves of modules along the localization morphism has a left
 > adjoint `j_!`, namely `AlgebraicGeometry.RingedToposHom.lowerShriekModules` of that morphism:
@@ -546,7 +546,7 @@ theorem familyLocalizationMorphism_pullback_isRightAdjoint (X : RingedSite.{u, v
     (familyLocalizationMorphism X K).toModulesHom.pullbackModules.IsRightAdjoint
 ```
 
-**`AlgebraicGeometry.RingedSite.familyMorphism_pullback_isRightAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Localization.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Localization.lean#L275). The attribute's comment: “part (3): f^* has a left adjoint f_!”.
+**`AlgebraicGeometry.RingedSite.familyMorphism_pullback_isRightAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Localization.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Localization.lean#L275). The attribute's comment: “part (3): f^* has a left adjoint f\_!”.
 
 > **Stacks 0D9U.** Pullback of sheaves of modules along the morphism of ringed topoi attached
 > to a morphism `f : K ⟶ L` of semi-representable objects has a left adjoint `f_!`, namely
@@ -560,7 +560,7 @@ theorem familyMorphism_pullback_isRightAdjoint (X : RingedSite.{u, v, max u v w}
     (familyMorphism.{w, v, u, u} X f).val.toModulesHom.pullbackModules.IsRightAdjoint
 ```
 
-**`AlgebraicGeometry.RingedSite.familyComponentInclLowerShriek_comp_familyLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Localization.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Localization.lean#L395). The attribute's comment: “part (3): j_! is j_{i,!} on the i-th summand”.
+**`AlgebraicGeometry.RingedSite.familyComponentInclLowerShriek_comp_familyLowerShriek`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Localization.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Localization.lean#L395). The attribute's comment: “part (3): j\_! is j\_\{i,!} on the i-th summand”.
 
 > **Stacks 0D9U, part (3).** On the `i`-th summand of the decomposition
 > `Mod(O_K) = ∏ Mod(O_{U i})` the lower shriek `j_!` is the extension by zero `j_{i,!}` of that
@@ -576,7 +576,7 @@ noncomputable def familyComponentInclLowerShriek_comp_familyLowerShriek
       familyComponentLowerShriek X K i
 ```
 
-**`AlgebraicGeometry.RingedSite.moduleSheavesProductEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/ModuleProduct.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/ModuleProduct.lean#L411). The attribute's comment: “module_product”.
+**`AlgebraicGeometry.RingedSite.moduleSheavesProductEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/ModuleProduct.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/ModuleProduct.lean#L411). The attribute's comment: “module\_product”.
 
 > Modules on the disjoint union of localized ringed sites are componentwise modules, via the
 > canonical componentwise restriction functor.
@@ -590,7 +590,7 @@ noncomputable def moduleSheavesProductEquivalence
       e.functor = componentwiseModuleRestriction X K }
 ```
 
-**`AlgebraicGeometry.RingedSite.moduleSheavesProductEquivalence'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/ModuleProduct.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/ModuleProduct.lean#L467). The attribute's comment: “module_product”.
+**`AlgebraicGeometry.RingedSite.moduleSheavesProductEquivalence'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/ModuleProduct.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/ModuleProduct.lean#L467). The attribute's comment: “module\_product”.
 
 > Modules on the disjoint union of localized ringed sites are componentwise modules, via the
 > canonical componentwise restriction functor.
@@ -604,7 +604,7 @@ noncomputable def moduleSheavesProductEquivalence'
       e.functor = componentwiseModuleRestriction' X K }
 ```
 
-**`AlgebraicGeometry.RingedSite.familyMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Morphism.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Morphism.lean#L104). The attribute's comment: “family_morphism”.
+**`AlgebraicGeometry.RingedSite.familyMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Morphism.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/Morphism.lean#L104). The attribute's comment: “family\_morphism”.
 
 > **Stacks 0D9U.** A morphism of semi-representable objects induces a morphism of the ringed
 > topoi of their componentwise localizations: its inverse image on sheaves of sets is restriction
@@ -629,7 +629,7 @@ noncomputable def familyMorphism (X : RingedSite.{u, v, max u v w r})
       IsIso g.fSharpInverseImage }
 ```
 
-**`AlgebraicGeometry.RingedSite.familyMorphism_pullback_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/PullbackExact.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/PullbackExact.lean#L54). The attribute's comment: “f_flat”.
+**`AlgebraicGeometry.RingedSite.familyMorphism_pullback_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/PullbackExact.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/PullbackExact.lean#L54). The attribute's comment: “f\_flat”.
 
 > **Stacks 0D9U.** Pullback of sheaves of modules along the morphism of ringed topoi induced
 > by a morphism of semi-representable objects is exact.
@@ -654,8 +654,8 @@ theorem familyMorphism_pullback_exact (X : RingedSite.{u, v, max u v w r})
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.RingedSite.localizationStructureSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Ringed.lean#L51), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/PullbackExact.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/PullbackExact.lean#L80) (StacksFrontier): “structure_sheaf_o_k”.
-- [`AlgebraicGeometry.RingedSite.localization`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Ringed.lean#L63), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/PullbackExact.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/PullbackExact.lean#L83) (StacksFrontier): “ringed_site”.
+- [`AlgebraicGeometry.RingedSite.localizationStructureSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Ringed.lean#L51), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/PullbackExact.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/PullbackExact.lean#L80) (StacksFrontier): “structure\_sheaf\_o\_k”.
+- [`AlgebraicGeometry.RingedSite.localization`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Ringed.lean#L63), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/PullbackExact.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/PullbackExact.lean#L83) (StacksFrontier): “ringed\_site”.
 
 ## Tag 0D9V, a remark
 
@@ -812,9 +812,9 @@ theorem familyMorphismOver_pullback_isRightAdjoint (X : RingedSite.{u, v, max u 
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.RingedSite.localizationStructureSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Ringed.lean#L51), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/RingedOver.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/RingedOver.lean#L461) (StacksFrontier): “part (1): the structure sheaf O_K”.
-- [`AlgebraicGeometry.RingedSite.localization`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Ringed.lean#L63), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/RingedOver.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/RingedOver.lean#L464) (StacksFrontier): “part (1): the ringed site (C / K, O_K)”.
-- [`AlgebraicGeometry.RingedSite.moduleSheavesProductEquivalence`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/ModuleProduct.lean#L411), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/RingedOver.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/RingedOver.lean#L467) (StacksFrontier): “part (2): the decomposition of Mod(O_K) into componentwise modules”.
+- [`AlgebraicGeometry.RingedSite.localizationStructureSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Ringed.lean#L51), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/RingedOver.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/RingedOver.lean#L461) (StacksFrontier): “part (1): the structure sheaf O\_K”.
+- [`AlgebraicGeometry.RingedSite.localization`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Ringed.lean#L63), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/RingedOver.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/RingedOver.lean#L464) (StacksFrontier): “part (1): the ringed site (C / K, O\_K)”.
+- [`AlgebraicGeometry.RingedSite.moduleSheavesProductEquivalence`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/Family/ModuleProduct.lean#L411), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/SemiRepresentable/RingedOver.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/SemiRepresentable/RingedOver.lean#L467) (StacksFrontier): “part (2): the decomposition of Mod(O\_K) into componentwise modules”.
 
 ## Depends on
 

@@ -143,7 +143,7 @@ theorem isQuasicoherentOnSite_moduleLowerShriek
 
 [Tag 07B1](https://stacks.math.columbia.edu/tag/07B1) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.FlatFppf.quasicoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfQuasicoherentEquivalence.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfQuasicoherentEquivalence.lean#L125). The attribute's comment: “part (2)(a): g^{-1} and g_! are mutually inverse functors between QCoh(𝒪_𝒳) and QCoh(𝒳_{flat,fppf}, 𝒪_{𝒳_{flat,fppf}})”.
+**`AlgebraicGeometry.Stack.FlatFppf.quasicoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfQuasicoherentEquivalence.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfQuasicoherentEquivalence.lean#L125). The attribute's comment: “part (2)(a): g^\{-1} and g\_! are mutually inverse functors between QCoh(𝒪\_𝒳) and QCoh(𝒳\_\{flat,fppf}, 𝒪\_\{𝒳\_\{flat,fppf}})”.
 
 > For an algebraic stack `𝒳`, the functors `g^{-1}` and `g_!` are mutually inverse equivalences
 > between `QCoh(𝒪_𝒳)` and `QCoh(𝒳_{flat,fppf}, 𝒪_{𝒳_{flat,fppf}})`. The functor of the equivalence
@@ -157,7 +157,7 @@ def quasicoherentEquivalence :
     AlgebraicStacks.quasicoherentModules B S hS 𝒳 ≌ quasicoherentSubsiteModules B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.isQuasicoherentOnSite_modulePullback_of_lqcohSheafFbc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfQuasicoherentEquivalence.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfQuasicoherentEquivalence.lean#L147). The attribute's comment: “part (2)(b): for F in LQCoh^fbc(𝒪_𝒳), g^{-1}F is in QCoh(𝒪_{𝒳_{flat,fppf}})”.
+**`AlgebraicGeometry.Stack.FlatFppf.isQuasicoherentOnSite_modulePullback_of_lqcohSheafFbc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfQuasicoherentEquivalence.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfQuasicoherentEquivalence.lean#L147). The attribute's comment: “part (2)(b): for F in LQCoh^fbc(𝒪\_𝒳), g^\{-1}F is in QCoh(𝒪\_\{𝒳\_\{flat,fppf}})”.
 
 > For `𝓕` in `LQCoh^fbc(𝒪_𝒳)`, the module `g^{-1}𝓕` on the flat-fppf site is quasi-coherent.
 
@@ -167,7 +167,7 @@ theorem isQuasicoherentOnSite_modulePullback_of_lqcohSheafFbc (F : fppfModules B
     ((modulePullback B S hS 𝒳).obj F).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Stack.FlatFppf.coheratorIsoLowerShriekModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfQuasicoherentEquivalence.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfQuasicoherentEquivalence.lean#L200). The attribute's comment: “part (2)(c): Q(F) = g_! g^{-1} F for F in LQCoh^fbc(𝒪_𝒳), Q the coherator of 0778”.
+**`AlgebraicGeometry.Stack.FlatFppf.coheratorIsoLowerShriekModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfQuasicoherentEquivalence.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfQuasicoherentEquivalence.lean#L200). The attribute's comment: “part (2)(c): Q(F) = g\_! g^\{-1} F for F in LQCoh^fbc(𝒪\_𝒳), Q the coherator of 0778”.
 
 > For `𝓕` in `LQCoh^fbc(𝒪_𝒳)`, `Q(𝓕) = g_!g^{-1}𝓕`, naturally in `𝓕`, where
 > `Q : LQCoh^fbc(𝒪_𝒳) ⥤ QCoh(𝒪_𝒳)` is the coherator of **Stacks 0778**
@@ -183,7 +183,7 @@ def coheratorIsoLowerShriekModulePullback :
         moduleLowerShriek B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.quasicoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleQuasicoherentEquivalence.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleQuasicoherentEquivalence.lean#L193). The attribute's comment: “part (1)(a): g^{-1} and g_! are mutually inverse functors between QCoh(𝒪_𝒳) and QCoh(𝒳_{lisse,étale}, 𝒪_{𝒳_{lisse,étale}})”.
+**`AlgebraicGeometry.Stack.LisseEtale.quasicoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleQuasicoherentEquivalence.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleQuasicoherentEquivalence.lean#L193). The attribute's comment: “part (1)(a): g^\{-1} and g\_! are mutually inverse functors between QCoh(𝒪\_𝒳) and QCoh(𝒳\_\{lisse,étale}, 𝒪\_\{𝒳\_\{lisse,étale}})”.
 
 > **Stacks 07B1 (1)(a).** For an algebraic stack `𝒳`, the functors `g^{-1}` and `g_!` are
 > mutually inverse equivalences between `QCoh(𝒪_𝒳)` and
@@ -198,7 +198,7 @@ def quasicoherentEquivalence :
     AlgebraicStacks.quasicoherentModules B S hS 𝒳 ≌ quasicoherentSubsiteModules.{u, w} B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.isQuasicoherentOnSite_modulePullback_of_lqcohSheafFbc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleQuasicoherentEquivalence.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleQuasicoherentEquivalence.lean#L250). The attribute's comment: “part (1)(b): for F in LQCoh^fbc(𝒪_𝒳), g^{-1}F is in QCoh(𝒪_{𝒳_{lisse,étale}})”.
+**`AlgebraicGeometry.Stack.LisseEtale.isQuasicoherentOnSite_modulePullback_of_lqcohSheafFbc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleQuasicoherentEquivalence.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleQuasicoherentEquivalence.lean#L250). The attribute's comment: “part (1)(b): for F in LQCoh^fbc(𝒪\_𝒳), g^\{-1}F is in QCoh(𝒪\_\{𝒳\_\{lisse,étale}})”.
 
 > **Stacks 07B1 (1)(b).** For `𝓕` in `LQCoh^fbc(𝒪_𝒳) ⊆ Mod(𝒳_étale, 𝒪_𝒳)`, the module
 > `g^{-1}𝓕` on the lisse-étale site is quasi-coherent.
@@ -209,7 +209,7 @@ theorem isQuasicoherentOnSite_modulePullback_of_lqcohSheafFbc
     ((modulePullback.{u, w} B S hS 𝒳).obj F).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Stack.LisseEtale.coheratorIsoLowerShriekModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleQuasicoherentEquivalence.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleQuasicoherentEquivalence.lean#L293). The attribute's comment: “part (1)(c): Q(F) = g_! g^{-1} F for F in LQCoh^fbc(𝒪_𝒳), Q the coherator of 0778”.
+**`AlgebraicGeometry.Stack.LisseEtale.coheratorIsoLowerShriekModulePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleQuasicoherentEquivalence.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/LisseEtaleQuasicoherentEquivalence.lean#L293). The attribute's comment: “part (1)(c): Q(F) = g\_! g^\{-1} F for F in LQCoh^fbc(𝒪\_𝒳), Q the coherator of 0778”.
 
 > **Stacks 07B1 (1)(c).** For `𝓕` in `LQCoh^fbc(𝒪_𝒳)`, `Q(𝓕) = g_!g^{-1}𝓕`, naturally in `𝓕`,
 > as objects of `QCoh(𝒪_𝒳)`, where `Q : LQCoh^fbc(𝒪_𝒳) ⥤ QCoh(𝒪_𝒳)` is the coherator of
@@ -228,7 +228,7 @@ def coheratorIsoLowerShriekModulePullback :
 
 [Tag 07B4](https://stacks.math.columbia.edu/tag/07B4) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.FlatFppf.isWeakSerreClass_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfWeakSerre.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfWeakSerre.lean#L242). The attribute's comment: “part (2): QCoh(O_{X_{flat,fppf}}) is a weak Serre subcategory of Mod(O_{X_{flat,fppf}})”.
+**`AlgebraicGeometry.Stack.FlatFppf.isWeakSerreClass_isQuasicoherentOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfWeakSerre.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Quasicoherent/FlatFppfWeakSerre.lean#L242). The attribute's comment: “part (2): QCoh(O\_\{X\_\{flat,fppf}}) is a weak Serre subcategory of Mod(O\_\{X\_\{flat,fppf}})”.
 
 > **Stacks 07B4 (2).** For an algebraic stack `𝒳`, the quasi-coherent modules on the flat-fppf
 > site `𝒳_{flat,fppf}`, ringed by `𝒪_{𝒳_{flat,fppf}}`, form a weak Serre subcategory of

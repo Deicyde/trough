@@ -43,7 +43,7 @@ theorem eq_top_of_isMinimalResolution_of_relativeDualizingModule_iso (A : Type u
     E = ⊤
 ```
 
-**`AlgebraicGeometry.DualizingDivisor.definesRationalSingularity_of_relativeDualizingModule_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DualizingDivisor/RationalSingularity.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DualizingDivisor/RationalSingularity.lean#L380). The attribute's comment: “first sentence: if ω_X ≅ O_X(E) for an effective Cartier divisor E supported on the exceptional fibre of a resolution, then A defines a rational singularity”.
+**`AlgebraicGeometry.DualizingDivisor.definesRationalSingularity_of_relativeDualizingModule_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DualizingDivisor/RationalSingularity.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/DualizingDivisor/RationalSingularity.lean#L380). The attribute's comment: “first sentence: if ω\_X ≅ O\_X(E) for an effective Cartier divisor E supported on the exceptional fibre of a resolution, then A defines a rational singularity”.
 
 > **[Stacks, Tag 0EA2], first sentence.** Let `A` be a Noetherian normal local domain of
 > dimension two which is Nagata, has a dualizing module `ω_A`, and has a resolution of

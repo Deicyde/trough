@@ -172,7 +172,7 @@ theorem bijective_geometricFibreSectionsMap_of_isProper (f : Y ⟶ X)
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.BigEtaleSpaceSite.isIso_spacesEtaleDerivedBaseChange_app_singleFunctor_of_isProper`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleTorsionDerivedPushforwardUnconditional.lean#L78), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperBaseChange.lean, line 15](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperBaseChange.lean#L15) (StacksFrontier): “proper base change for algebraic spaces: g⁻¹ R f_* F ≅ R f'_* (g')⁻¹ F for f proper and F an abelian torsion sheaf”.
+- [`AlgebraicGeometry.BigEtaleSpaceSite.isIso_spacesEtaleDerivedBaseChange_app_singleFunctor_of_isProper`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleTorsionDerivedPushforwardUnconditional.lean#L78), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperBaseChange.lean, line 15](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperBaseChange.lean#L15) (StacksFrontier): “proper base change for algebraic spaces: g⁻¹ R f\_* F ≅ R f'\_* (g')⁻¹ F for f proper and F an abelian torsion sheaf”.
 
 ## Tag 0DG3, a lemma
 
@@ -180,7 +180,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.BigEtaleSpaceSite.isIso_spacesEtaleDerivedBaseChange_app_of_isProper`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleTorsionDerivedPushforwardUnconditional.lean#L64), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperBaseChangeBoundedBelow.lean, line 15](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperBaseChangeBoundedBelow.lean#L15) (StacksFrontier): “proper base change for algebraic spaces: g⁻¹ R f_* E ≅ R f'_* (g')⁻¹ E for f proper and E bounded below with torsion cohomology sheaves”.
+- [`AlgebraicGeometry.BigEtaleSpaceSite.isIso_spacesEtaleDerivedBaseChange_app_of_isProper`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtaleTorsionDerivedPushforwardUnconditional.lean#L64), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperBaseChangeBoundedBelow.lean, line 15](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleProperBaseChangeBoundedBelow.lean#L15) (StacksFrontier): “proper base change for algebraic spaces: g⁻¹ R f\_* E ≅ R f'\_* (g')⁻¹ E for f proper and E bounded below with torsion cohomology sheaves”.
 
 ## Tag 0DG4, a lemma
 

@@ -353,7 +353,7 @@ theorem isLocallyOfFiniteType_and_hasRelativeDimension_iff
       (IsLocallyOfFiniteType B S hS M.f' ∧ HasRelativeDimension d B S hS M.f')
 ```
 
-**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isZero_sheafOfDifferentials_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean#L413). The attribute's comment: “part (5): Ω_{X/Y} = 0 iff Ω_{X'/Y'} = 0, for the sheaves of differentials of Tag 04CT”.
+**`AlgebraicGeometry.Space.CartesianSourceFiniteOrderMorphismOfThickenings.isZero_sheafOfDifferentials_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/SourceFiniteOrderMorphism.lean#L413). The attribute's comment: “part (5): Ω\_\{X/Y} = 0 iff Ω\_\{X'/Y'} = 0, for the sheaves of differentials of Tag 04CT”.
 
 > **Stacks 09ZZ, part (5).** In a cartesian morphism of thickenings of algebraic spaces whose
 > source thickening is of finite order, the sheaf of differentials `Ω_{X/Y}` of the map between
@@ -442,7 +442,7 @@ theorem mono_iff (M : CartesianSourceFiniteOrderMorphismOfThickenings B S hS) :
 
 [Tag 0BPJ](https://stacks.math.columbia.edu/tag/0BPJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_iff_of_cartesianMorphismOfThickenings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean#L110). The attribute's comment: “locally_quasi_finite”.
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_iff_of_cartesianMorphismOfThickenings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean#L110). The attribute's comment: “locally\_quasi\_finite”.
 
 > **Stacks 0BPJ, part (1).** Being locally quasi-finite is invariant under a cartesian
 > morphism of thickenings of algebraic spaces whose two component maps are locally of finite
@@ -454,7 +454,7 @@ theorem isLocallyQuasiFinite_iff_of_cartesianMorphismOfThickenings
     IsLocallyQuasiFinite B S hS T.f ↔ IsLocallyQuasiFinite B S hS T.f'
 ```
 
-**`AlgebraicGeometry.Space.formallyUnramifiedCharts_iff_of_cartesianMorphismOfThickenings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean#L125). The attribute's comment: “vanishing_differentials”.
+**`AlgebraicGeometry.Space.formallyUnramifiedCharts_iff_of_cartesianMorphismOfThickenings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/EtaleLocalProperties.lean#L125). The attribute's comment: “vanishing\_differentials”.
 
 > **Stacks 0BPJ, part (4).** In a cartesian morphism of thickenings of algebraic spaces whose
 > two component maps are locally of finite type, the module of relative differentials of `f`

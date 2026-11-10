@@ -31,7 +31,7 @@ def moduleMultiplicity (hX : IsAlgebraicSpace B S hS X) (F : Modules.{u, u} B S 
     (Z : IntegralClosedSubspace B S hS X) : ℕ∞
 ```
 
-**`AlgebraicGeometry.Space.associatedCycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycle.lean, line 677](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycle.lean#L677). The attribute's comment: “part (2): the k-cycle [F]_k of a coherent module, for a chosen geometric representative of each point; the reading at a point of |X| additionally needs the equivalence of Lemma 0EE1, which is not proved in this library”.
+**`AlgebraicGeometry.Space.associatedCycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycle.lean, line 677](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/CoherentSheafCycle.lean#L677). The attribute's comment: “part (2): the k-cycle [F]\_k of a coherent module, for a chosen geometric representative of each point; the reading at a point of |X| additionally needs the equivalence of Lemma 0EE1, which is not proved in this library”.
 
 > **Stacks 0EEB, part (2).** In Situation 0EDT let `X/B` be good, let `F` be a coherent
 > `𝒪_X`-module and assume `dim_δ(Supp(F)) ≤ k`. The *`k`-cycle associated to `F`* is

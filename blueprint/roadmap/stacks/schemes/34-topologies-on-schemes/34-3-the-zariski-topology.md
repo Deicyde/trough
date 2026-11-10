@@ -539,7 +539,7 @@ public instance preservesTerminal_smallZariskiInclusion :
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.ObjectProperty.fullyFaithfulι`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.ObjectProperty.fullyFaithfulι#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiProjection.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiProjection.lean#L62) (StacksFrontier): “full faithfulness of the small-site inclusion”. References: SGA 3 I (1.1.1), “Hom_C(X,Y) = Hom_D(X,Y)”; SGA 6 II (3.0), “more general”.
+- [`CategoryTheory.ObjectProperty.fullyFaithfulι`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.ObjectProperty.fullyFaithfulι#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiProjection.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiProjection.lean#L62) (StacksFrontier): “full faithfulness of the small-site inclusion”. References: SGA 3 I (1.1.1), “Hom\_C(X,Y) = Hom\_D(X,Y)”; SGA 6 II (3.0), “more general”.
 - [`smallZariskiToBigZariskiFunctor_isCocontinuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=smallZariskiToBigZariskiFunctor_isCocontinuous#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiProjection.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiProjection.lean#L65) (StacksFrontier): “cocontinuity of the small-site inclusion”.
 
 ## Tag 04BS, a definition
@@ -657,7 +657,7 @@ Declarations registered for the tag:
 
 [Tag 0211](https://stacks.math.columbia.edu/tag/0211) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_smallZariskiBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiBaseChange.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiBaseChange.lean#L276). The attribute's comment: “f_small”.
+**`AlgebraicGeometry.exists_smallZariskiBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiBaseChange.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiBaseChange.lean#L276). The attribute's comment: “f\_small”.
 
 > There is a morphism of small Zariski sites from `T` to `S` whose underlying functor, after
 > including both small sites into schemes over `T` and `S`, is naturally isomorphic to base change
@@ -674,7 +674,7 @@ public theorem exists_smallZariskiBaseChange :
         smallSiteInSchemesOver B S ⋙ Over.pullback (B.inclusion.map f))
 ```
 
-**`AlgebraicGeometry.smallZariskiBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiBaseChange.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiBaseChange.lean#L296). The attribute's comment: “f_small”.
+**`AlgebraicGeometry.smallZariskiBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiBaseChange.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiBaseChange.lean#L296). The attribute's comment: “f\_small”.
 
 > The continuous base-change functor on small Zariski sites.
 
@@ -684,7 +684,7 @@ public noncomputable def smallZariskiBaseChange :
       SmallZariski B T.1 T.property
 ```
 
-**`AlgebraicGeometry.smallZariskiBaseChange_isMorphismOfSites_ringUniverse`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiRingedSiteHom.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiRingedSiteHom.lean#L171). The attribute's comment: “f_small on small Zariski sites, at the universe of the structure rings”.
+**`AlgebraicGeometry.smallZariskiBaseChange_isMorphismOfSites_ringUniverse`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiRingedSiteHom.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiRingedSiteHom.lean#L171). The attribute's comment: “f\_small on small Zariski sites, at the universe of the structure rings”.
 
 > **Stacks 0211 at the universe of the structure rings.**  Small Zariski base change along
 > `f` defines a morphism of sites for sheaves of sets valued in the universe `u` of the sections
@@ -700,7 +700,7 @@ public instance smallZariskiBaseChange_isMorphismOfSites_ringUniverse :
       (SmallZariski.topology B S.1 S.property) (SmallZariski.topology B T.1 T.property)
 ```
 
-**`AlgebraicGeometry.smallZariskiPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiSpaceFunctors.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiSpaceFunctors.lean#L146). The attribute's comment: “usual_small_functors”.
+**`AlgebraicGeometry.smallZariskiPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiSpaceFunctors.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiSpaceFunctors.lean#L146). The attribute's comment: “usual\_small\_functors”.
 
 > Under the small-site equivalences, inverse image is the usual inverse image
 > of sheaves on the underlying topological spaces.
@@ -717,7 +717,7 @@ public noncomputable def smallZariskiPullbackIso :
       (smallZariskiSheafEquiv B T.1 T.property).functor
 ```
 
-**`AlgebraicGeometry.smallZariskiPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiSpaceFunctors.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiSpaceFunctors.lean#L177). The attribute's comment: “usual_small_functors”.
+**`AlgebraicGeometry.smallZariskiPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiSpaceFunctors.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/SmallZariskiSpaceFunctors.lean#L177). The attribute's comment: “usual\_small\_functors”.
 
 > Under the small-site equivalences, direct image is the usual direct image
 > of sheaves on the underlying topological spaces.
@@ -735,7 +735,7 @@ public noncomputable def smallZariskiPushforwardIso :
       (smallZariskiSheafEquiv B S.1 S.property).functor
 ```
 
-**`AlgebraicGeometry.smallZariskiBaseChange_comp_inclusionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean#L83). The attribute's comment: “commutative_square”.
+**`AlgebraicGeometry.smallZariskiBaseChange_comp_inclusionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean#L83). The attribute's comment: “commutative\_square”.
 
 > The square of functors underlying the four morphisms of Zariski sites
 > commutes up to a natural isomorphism.
@@ -747,7 +747,7 @@ public noncomputable def smallZariskiBaseChange_comp_inclusionIso :
       SmallZariski.inclusion B S.1 S.property ⋙ Over.pullback f
 ```
 
-**`AlgebraicGeometry.smallZariskiProjection_baseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean#L110). The attribute's comment: “commutative_square”.
+**`AlgebraicGeometry.smallZariskiProjection_baseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean#L110). The attribute's comment: “commutative\_square”.
 
 > The geometric morphisms satisfy `f_small ∘ π_T ≅ π_S ∘ f_big`;
 > the isomorphism of inverse-image functors is natural in sheaves.
@@ -760,7 +760,7 @@ public noncomputable def smallZariskiProjection_baseChangeIso :
       (bigZariskiMorphism B T S f)).inverseImage
 ```
 
-**`AlgebraicGeometry.smallZariskiToBigZariskiMorphism_factor_pushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean#L163). The attribute's comment: “if_factorization”.
+**`AlgebraicGeometry.smallZariskiToBigZariskiMorphism_factor_pushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean#L163). The attribute's comment: “if\_factorization”.
 
 > The direct image of `i_f` agrees naturally with that of `f_big ∘ i_T`.
 
@@ -771,7 +771,7 @@ public noncomputable def smallZariskiToBigZariskiMorphism_factor_pushforwardIso 
         (smallZariskiToBigZariskiMorphism B T T (𝟙 T))).pushforward
 ```
 
-**`AlgebraicGeometry.smallZariskiToBigZariskiMorphism_factor_inverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean#L210). The attribute's comment: “if_factorization”.
+**`AlgebraicGeometry.smallZariskiToBigZariskiMorphism_factor_inverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean#L210). The attribute's comment: “if\_factorization”.
 
 > The inverse image of `i_f` agrees naturally with that of `f_big ∘ i_T`.
 
@@ -782,7 +782,7 @@ public noncomputable def smallZariskiToBigZariskiMorphism_factor_inverseImageIso
         (smallZariskiToBigZariskiMorphism B T T (𝟙 T))).inverseImage
 ```
 
-**`AlgebraicGeometry.smallZariskiMorphismIsoProjectionCompBig`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean#L226). The attribute's comment: “small_factorization”.
+**`AlgebraicGeometry.smallZariskiMorphismIsoProjectionCompBig`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean#L226). The attribute's comment: “small\_factorization”.
 
 > The small-site morphism factors through the two big Zariski topoi.
 
@@ -794,7 +794,7 @@ public noncomputable def smallZariskiMorphismIsoProjectionCompBig :
           (smallZariskiToBigZariskiMorphism B T T (𝟙 T)))).inverseImage
 ```
 
-**`AlgebraicGeometry.smallZariskiMorphismIsoProjectionCompInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean#L255). The attribute's comment: “small_factorization”.
+**`AlgebraicGeometry.smallZariskiMorphismIsoProjectionCompInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/ZariskiFactorization.lean#L255). The attribute's comment: “small\_factorization”.
 
 > The same morphism factors through `i_f` and the projection at `S`.
 

@@ -14,7 +14,7 @@ Section 24.10 of the Stacks Project, [Tag 0FR9](https://stacks.math.columbia.edu
 
 [Tag 0FRA](https://stacks.math.columbia.edu/tag/0FRA) in the Stacks Project.
 
-**`SheafOfModules.gradedExtendHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZero.lean, line 426](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZero.lean#L426). The attribute's comment: “Hom(j_! M, N) = Hom(M, j^* N)”.
+**`SheafOfModules.gradedExtendHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZero.lean, line 426](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZero.lean#L426). The attribute's comment: “Hom(j\_! M, N) = Hom(M, j^* N)”.
 
 > **Tag 0FRA.** The homomorphisms `j_!M ⟶ N` of right graded `A`-modules are the
 > homomorphisms `M ⟶ j^*N` of right graded `A_U`-modules. The bijection is the degreewise
@@ -38,7 +38,7 @@ noncomputable def gradedExtensionByZeroAdjunction :
     gradedExtensionByZeroFunctor.{m} O U A ⊣ GradedModule.overFunctor A U
 ```
 
-**`SheafOfModules.gradedHomOfDegreeExtendEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZero.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZero.lean#L525). The attribute's comment: “Hom(j_! M, N) = Hom(M, j^* N), in each degree”.
+**`SheafOfModules.gradedHomOfDegreeExtendEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZero.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZero.lean#L525). The attribute's comment: “Hom(j\_! M, N) = Hom(M, j^* N), in each degree”.
 
 > **Tag 0FRA.** In every degree `d` the homogeneous homomorphisms `j_!M ⟶ N` of right graded
 > `A`-modules are the homogeneous homomorphisms `M ⟶ j^*N` of right graded `A_U`-modules. The
@@ -52,7 +52,7 @@ noncomputable def gradedHomOfDegreeExtendEquiv (d : ℤ) :
       GradedHomOfDegree M (N.over U) d
 ```
 
-**`SheafOfModules.gradedHomOfDegreeExtendEquiv_naturality_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZero.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZero.lean#L548). The attribute's comment: “naturality of Hom(j_! M, N) = Hom(M, j^* N) in M”.
+**`SheafOfModules.gradedHomOfDegreeExtendEquiv_naturality_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZero.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZero.lean#L548). The attribute's comment: “naturality of Hom(j\_! M, N) = Hom(M, j^* N) in M”.
 
 > **Tag 0FRA, naturality in the source.**
 
@@ -65,7 +65,7 @@ theorem gradedHomOfDegreeExtendEquiv_naturality_left
       GradedHomOfDegree.compLeft g (gradedHomOfDegreeExtendEquiv.{m} O U A d f)
 ```
 
-**`SheafOfModules.gradedHomOfDegreeExtendEquiv_naturality_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZero.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZero.lean#L559). The attribute's comment: “naturality of Hom(j_! M, N) = Hom(M, j^* N) in N”.
+**`SheafOfModules.gradedHomOfDegreeExtendEquiv_naturality_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZero.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZero.lean#L559). The attribute's comment: “naturality of Hom(j\_! M, N) = Hom(M, j^* N) in N”.
 
 > **Tag 0FRA, naturality in the target.**
 
@@ -82,7 +82,7 @@ theorem gradedHomOfDegreeExtendEquiv_naturality_right
 
 [Tag 0FRB](https://stacks.math.columbia.edu/tag/0FRB) in the Stacks Project.
 
-**`SheafOfModules.extendTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZeroTensor.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZeroTensor.lean#L299). The attribute's comment: “j_! M ⊗_A N = j_!(M ⊗_{A_U} N|_U) as graded O-modules”.
+**`SheafOfModules.extendTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZeroTensor.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZeroTensor.lean#L299). The attribute's comment: “j\_! M ⊗\_A N = j\_!(M ⊗\_\{A\_U} N|\_U) as graded O-modules”.
 
 > **Tag 0FRB.** In every degree `n` the relative tensor product of the extension by zero of
 > a right graded `A_U`-module `M` with a left graded `A`-module `N` is the extension by zero of
@@ -97,7 +97,7 @@ noncomputable def extendTensorIso (n : ℤ) :
       (extendSheaf.{m} O U).obj (sliceTensor.{m} O U A M N n)
 ```
 
-**`SheafOfModules.extendTensorHom_naturality_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZeroTensor.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZeroTensor.lean#L311). The attribute's comment: “functoriality of j_! M ⊗_A N = j_!(M ⊗_{A_U} N|_U) in N”.
+**`SheafOfModules.extendTensorHom_naturality_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZeroTensor.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZeroTensor.lean#L311). The attribute's comment: “functoriality of j\_! M ⊗\_A N = j\_!(M ⊗\_\{A\_U} N|\_U) in N”.
 
 > **Tag 0FRB, functoriality in the left graded module.** The identification
 > `j_!M ⊗_A N = j_!(M ⊗_{A_U} N|_U)` commutes with a homomorphism `N ⟶ N'` of left graded
@@ -113,7 +113,7 @@ theorem extendTensorHom_naturality_right {N' : LeftGradedModule.{w, max u v m, m
           (LeftGradedModule.overMap f U) n)
 ```
 
-**`SheafOfModules.extendTensorHom_naturality_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZeroTensor.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZeroTensor.lean#L368). The attribute's comment: “functoriality of j_! M ⊗_A N = j_!(M ⊗_{A_U} N|_U) in M”.
+**`SheafOfModules.extendTensorHom_naturality_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZeroTensor.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/GradedExtensionByZeroTensor.lean#L368). The attribute's comment: “functoriality of j\_! M ⊗\_A N = j\_!(M ⊗\_\{A\_U} N|\_U) in M”.
 
 > **Tag 0FRB, functoriality in the right graded module.** The identification
 > `j_!M ⊗_A N = j_!(M ⊗_{A_U} N|_U)` commutes with a homomorphism `M ⟶ M'` of right graded

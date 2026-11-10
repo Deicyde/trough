@@ -49,7 +49,7 @@ lemma isEtaleCovering_of_isZariskiCovering
 
 [Tag 041F](https://stacks.math.columbia.edu/tag/041F) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEtaleCovering_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleCovering.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleCovering.lean#L75). The attribute's comment: “etale_covering_comp”.
+**`AlgebraicGeometry.Space.isEtaleCovering_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleCovering.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleCovering.lean#L75). The attribute's comment: “etale\_covering\_comp”.
 
 > An étale covering of each member of an étale covering composes to an
 > étale covering of the original algebraic space.
@@ -70,7 +70,7 @@ public theorem isEtaleCovering_comp
       (fun ij => g ij.1 ij.2 ≫ f ij.1)
 ```
 
-**`AlgebraicGeometry.Space.isEtaleCovering_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleCovering.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleCovering.lean#L103). The attribute's comment: “etale_covering_base_change”.
+**`AlgebraicGeometry.Space.isEtaleCovering_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleCovering.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleCovering.lean#L103). The attribute's comment: “etale\_covering\_base\_change”.
 
 > **Stacks 041F**, the base-change clause. The first projections of the presheaf fibre
 > products of an étale covering of an algebraic space over `S` with a morphism `g` into its
@@ -87,7 +87,7 @@ theorem isEtaleCovering_pullback
       (fun i => CategoryTheory.Limits.pullback.fst g (f i))
 ```
 
-**`AlgebraicGeometry.Space.isEtaleCovering_of_isIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleCovering.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleCovering.lean#L134). The attribute's comment: “isomorphism_etale_covering”.
+**`AlgebraicGeometry.Space.isEtaleCovering_of_isIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleCovering.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/EtaleCovering.lean#L134). The attribute's comment: “isomorphism\_etale\_covering”.
 
 > **Stacks 041F**, the isomorphism clause. An isomorphism of algebraic spaces over `S`,
 > regarded as a family indexed by a point, is an étale covering.
@@ -653,7 +653,7 @@ def smallEtaleModulePushforwardBaseChangeIso :
 
 [Tag 0DF9](https://stacks.math.columbia.edu/tag/0DF9) in the Stacks Project.
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.restrictSharp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean#L175). The attribute's comment: “item (3), the structure map of the comparison morphism π_X”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.restrictSharp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean#L175). The attribute's comment: “item (3), the structure map of the comparison morphism π\_X”.
 
 > **Stacks 0DF9, item (3).** The structure map of the comparison morphism `π_X`: the sections
 > of the direct image of the big étale structure sheaf over an algebraic space étale over `X` are
@@ -667,7 +667,7 @@ def restrictSharp (X : T.Spaces) :
         (T.bigEtaleTopology X)).obj (bigEtaleRingSheaf T X)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.bigPullbackSharp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean#L185). The attribute's comment: “item (5), the structure map of the big étale morphism f_big”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.bigPullbackSharp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean#L185). The attribute's comment: “item (5), the structure map of the big étale morphism f\_big”.
 
 > **Stacks 0DF9, item (5).** The structure map of the big étale morphism `f_big`: pullback of
 > global regular functions along the projection of the fibre product `V ×_X Y` to `V`.
@@ -679,7 +679,7 @@ def bigPullbackSharp (f : Y ⟶ X) :
         (T.bigEtaleTopology X) (T.bigEtaleTopology Y)).obj (bigEtaleRingSheaf T Y)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.smallBaseChangeSharp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean#L196). The attribute's comment: “item (4), the structure map of the small étale morphism f_small”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.smallBaseChangeSharp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigSmallEtalePushforwardModules.lean#L196). The attribute's comment: “item (4), the structure map of the small étale morphism f\_small”.
 
 > **Stacks 0DF9, item (4).** The structure map of the small étale morphism `f_small`:
 > pullback of global regular functions along the cartesian projection of the base change of an
@@ -708,7 +708,7 @@ noncomputable def smallToBigRestrictionStructureIso (f : Y ⟶ X) :
       Space.SpacesEtale.structureSheaf T.fppfSite S T.fppf_mem Y
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.smallToBigEtaleStructureIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L101). The attribute's comment: “case (1): the isomorphism i_f⁻¹𝒪 ≅ 𝒪_Y”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.smallToBigEtaleStructureIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L101). The attribute's comment: “case (1): the isomorphism i\_f⁻¹𝒪 ≅ 𝒪\_Y”.
 
 > **Stacks 0DF9, case (1).** The canonical isomorphism from the inverse image along `i_f` of
 > the big étale structure sheaf of `X` to the spaces-étale structure sheaf of `Y`.
@@ -720,7 +720,7 @@ noncomputable def smallToBigEtaleStructureIso (f : Y ⟶ X) :
       (Space.spacesEtaleRingedTopos T.fppfSite S T.fppf_mem Y).O
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.smallToBigEtaleRingedMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L113). The attribute's comment: “case (1): i_f as a morphism of ringed topoi”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.smallToBigEtaleRingedMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L113). The attribute's comment: “case (1): i\_f as a morphism of ringed topoi”.
 
 > **Stacks 0DF9, case (1).** The morphism `i_f` from the spaces-étale topos of `Y` to the big
 > étale topos of `X` as a morphism of ringed topoi: the structure map is the adjunct of the
@@ -732,7 +732,7 @@ noncomputable def smallToBigEtaleRingedMorphism (f : Y ⟶ X) :
       (bigEtaleRingedTopos T X)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.iXEtaleRingedMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L131). The attribute's comment: “case (2): i_X as a morphism of ringed topoi”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.iXEtaleRingedMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L131). The attribute's comment: “case (2): i\_X as a morphism of ringed topoi”.
 
 > **Stacks 0DF9, case (2).** The morphism `i_X` as a morphism of ringed topoi: it is the
 > identity-morphism case `f = 𝟙 X` of `i_f`.
@@ -757,7 +757,7 @@ noncomputable def bigToSmallRestrictionStructureIso (X : T.Spaces) :
           (T.bigEtaleTopology X)).obj (T.structureSheaf X)
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmallEtaleStructureIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L155). The attribute's comment: “case (3): the isomorphism 𝒪_X ≅ π_{X,*}𝒪”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmallEtaleStructureIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L155). The attribute's comment: “case (3): the isomorphism 𝒪\_X ≅ π\_\{X,*}𝒪”.
 
 > **Stacks 0DF9, case (3).** The canonical isomorphism from the spaces-étale structure sheaf
 > of `X` to the direct image along `π_X` of the big étale structure sheaf of `X`.
@@ -769,7 +769,7 @@ noncomputable def bigToSmallEtaleStructureIso (X : T.Spaces) :
         (bigEtaleRingedTopos T X).O
 ```
 
-**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmallEtaleRingedMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L168). The attribute's comment: “case (3): π_X as a morphism of ringed topoi”.
+**`AlgebraicGeometry.BigEtaleSpaceSite.bigToSmallEtaleRingedMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L168). The attribute's comment: “case (3): π\_X as a morphism of ringed topoi”.
 
 > **Stacks 0DF9, case (3).** The morphism `π_X` from the big étale topos of `X` to its
 > spaces-étale topos as a morphism of ringed topoi, with the canonical isomorphism
@@ -787,9 +787,9 @@ Declarations registered for the tag:
 - [`AlgebraicGeometry.BigEtaleSpaceSite.structureSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigEtaleStructureSheaf.lean#L475), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L178) (StacksFrontier): “the structure sheaf of the big étale site”.
 - [`AlgebraicGeometry.Space.SpacesEtale.structurePresheaf_isSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleStructureSheaf.lean#L308), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L180) (StacksFrontier): “the spaces-étale structure presheaf is a sheaf”.
 - [`AlgebraicGeometry.Space.SpacesEtale.structureSheaf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleStructureSheaf.lean#L321), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L182) (StacksFrontier): “the structure sheaf of the spaces-étale site”.
-- [`AlgebraicGeometry.Space.smallEtaleRingedToposHom`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean#L281), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L184) (StacksFrontier): “case (4): f_small as a morphism of ringed topoi”.
-- [`AlgebraicGeometry.BigEtaleSpaceSite.bigEtaleStructureIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigEtaleRingedTopos.lean#L85), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L186) (StacksFrontier): “case (5): the isomorphism f_big⁻¹𝒪₁ ≅ 𝒪₂”.
-- [`AlgebraicGeometry.BigEtaleSpaceSite.bigEtaleRingedMorphism`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigEtaleRingedTopos.lean#L107), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L188) (StacksFrontier): “case (5): f_big as a morphism of ringed topoi”.
+- [`AlgebraicGeometry.Space.smallEtaleRingedToposHom`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHom.lean#L281), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L184) (StacksFrontier): “case (4): f\_small as a morphism of ringed topoi”.
+- [`AlgebraicGeometry.BigEtaleSpaceSite.bigEtaleStructureIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigEtaleRingedTopos.lean#L85), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L186) (StacksFrontier): “case (5): the isomorphism f\_big⁻¹𝒪₁ ≅ 𝒪₂”.
+- [`AlgebraicGeometry.BigEtaleSpaceSite.bigEtaleRingedMorphism`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/BigEtaleRingedTopos.lean#L107), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/EtaleRingedComparison.lean#L188) (StacksFrontier): “case (5): f\_big as a morphism of ringed topoi”.
 
 ## Depends on
 

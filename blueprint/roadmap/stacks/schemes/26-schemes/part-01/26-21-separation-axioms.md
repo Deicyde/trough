@@ -33,7 +33,7 @@ Declarations registered for the tag:
 
 [Tag 01KL](https://stacks.math.columbia.edu/tag/01KL) in the Stacks Project.
 
-**`AlgebraicGeometry.structureMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/DoubledOrigin.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/DoubledOrigin.lean#L193). The attribute's comment: “structure_morphism”.
+**`AlgebraicGeometry.structureMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/DoubledOrigin.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/DoubledOrigin.lean#L193). The attribute's comment: “structure\_morphism”.
 
 > The structure morphism of infinite-dimensional affine space with doubled
 > origin, restricting on both charts to the canonical affine-space morphism.
@@ -47,7 +47,7 @@ public noncomputable def structureMorphism {k : Type u} [CommRing k]
           k →+* MvPolynomial ℕ k)) }
 ```
 
-**`AlgebraicGeometry.diagonal_preimage_mixedCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/DoubledOrigin.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/DoubledOrigin.lean#L363). The attribute's comment: “diagonal_inverse_image”.
+**`AlgebraicGeometry.diagonal_preimage_mixedCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/DoubledOrigin.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/DoubledOrigin.lean#L363). The attribute's comment: “diagonal\_inverse\_image”.
 
 > The diagonal inverse image of the product of the two affine charts is the punctured
 > affine space, embedded in the doubled-origin scheme through its first chart.
@@ -61,7 +61,7 @@ public theorem diagonal_preimage_mixedCharts {k : Type u} [CommRing k]
       Set.range ((puncturedInfiniteAffineSpace k).ι ≫ D.chart 0)
 ```
 
-**`AlgebraicGeometry.structureMorphism_not_quasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/DoubledOrigin.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/DoubledOrigin.lean#L439). The attribute's comment: “not_quasi_separated”.
+**`AlgebraicGeometry.structureMorphism_not_quasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/DoubledOrigin.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/DoubledOrigin.lean#L439). The attribute's comment: “not\_quasi\_separated”.
 
 > The structure morphism of a doubled-origin infinite-dimensional affine
 > space over a field is not quasi-separated.
@@ -72,7 +72,7 @@ public theorem structureMorphism_not_quasiSeparated {k : Type u} [Field k]
     ¬ QuasiSeparated (structureMorphism D).1
 ```
 
-**`AlgebraicGeometry.puncturedSpectrum_not_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/PuncturedAffineSpace.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/PuncturedAffineSpace.lean#L72). The attribute's comment: “punctured_spectrum_not_quasi_compact”.
+**`AlgebraicGeometry.puncturedSpectrum_not_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/PuncturedAffineSpace.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/PuncturedAffineSpace.lean#L72). The attribute's comment: “punctured\_spectrum\_not\_quasi\_compact”.
 
 > The complement of the origin in countably infinite-dimensional affine space over a field is
 > not quasi-compact.
@@ -83,7 +83,7 @@ public theorem puncturedSpectrum_not_isCompact (k : Type*) [Field k] :
       p.asIdeal ≠ Ideal.span (Set.range (MvPolynomial.X : ℕ → MvPolynomial ℕ k))}
 ```
 
-**`AlgebraicGeometry.doubledOriginDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ObstructionIX/DoubledOriginDatum.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ObstructionIX/DoubledOriginDatum.lean#L196). The attribute's comment: “doubled_origin_scheme”.
+**`AlgebraicGeometry.doubledOriginDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/ObstructionIX/DoubledOriginDatum.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/ObstructionIX/DoubledOriginDatum.lean#L196). The attribute's comment: “doubled\_origin\_scheme”.
 
 > **Stacks Project, Tag 01KL.** Countably infinite-dimensional affine space with its origin
 > doubled, as a `DoubledOriginData`: the canonical gluing data of two copies of the affine space,
@@ -95,7 +95,7 @@ public def doubledOriginDatum : DoubledOriginData k
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.isAffineOpen_opensRange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isAffineOpen_opensRange#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/DoubledOrigin.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/DoubledOrigin.lean#L77) (StacksFrontier): “affine_open_charts”.
+- [`AlgebraicGeometry.isAffineOpen_opensRange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isAffineOpen_opensRange#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/DoubledOrigin.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/DoubledOrigin.lean#L77) (StacksFrontier): “affine\_open\_charts”.
 
 ## Tag 01KO, a lemma
 
@@ -262,8 +262,8 @@ theorem quasiCompact_pullbackMapDesc [QuasiSeparated h] :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.IsImmersion.of_comp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsImmersion.of_comp#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L272) (StacksFrontier): “the graph X ⟶ X ×_S Y is an immersion: more general, cancellation for immersions, applied to the graph followed by the first projection, which is 𝟙 X”. References: EGA I (5.3.13); EGA I (5.3.14), “more general”; EGA I (5.5.12), “special case”; EGA IV (8.12.2), “more general”; EGA IV (16.2.3), “more general”; SGA 6 VIII (1.3), “(iv)”; SGA 6 VIII (1.8), “partial”.
-- [`AlgebraicGeometry.IsSeparated.instIsClosedImmersionLiftSchemeId`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsSeparated.instIsClosedImmersionLiftSchemeId#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L275) (StacksFrontier): “the graph is a closed immersion if Y is separated over S”. References: EGA I (5.4.2), “special case”; EGA I (5.4.3); EGA I (5.4.5), “j = id_X”.
+- [`AlgebraicGeometry.IsImmersion.of_comp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsImmersion.of_comp#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L272) (StacksFrontier): “the graph X ⟶ X ×\_S Y is an immersion: more general, cancellation for immersions, applied to the graph followed by the first projection, which is 𝟙 X”. References: EGA I (5.3.13); EGA I (5.3.14), “more general”; EGA I (5.5.12), “special case”; EGA IV (8.12.2), “more general”; EGA IV (16.2.3), “more general”; SGA 6 VIII (1.3), “(iv)”; SGA 6 VIII (1.8), “partial”.
+- [`AlgebraicGeometry.IsSeparated.instIsClosedImmersionLiftSchemeId`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsSeparated.instIsClosedImmersionLiftSchemeId#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L275) (StacksFrontier): “the graph is a closed immersion if Y is separated over S”. References: EGA I (5.4.2), “special case”; EGA I (5.4.3); EGA I (5.4.5), “j = id\_X”.
 - [`AlgebraicGeometry.QuasiCompact.of_comp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.QuasiCompact.of_comp#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L277) (StacksFrontier): “the graph is quasi-compact if Y is quasi-separated over S: more general, cancellation of quasi-compactness against a quasi-separated map, applied to the graph followed by the first projection (quasi-separated as a base change of Y ⟶ S)”. References: EGA I (5.5.12), “(i), special case”; EGA I (6.3.4), “(v)”; EGA I (6.6.4), “more general”; EGA II (8.14.6), “more general”; EGA IV (1.1.2), “more general”; EGA IV (1.2.4); EGA IV (1.5.4), “(v)”; EGA IV (18.12.13), “more general”; SGA 3 VIB (11.1), “partial”; SGA 3 VIB (12.9), “Quasi-compactness of ρ”; SGA 4 VI (1.9.1), “(iv), special case”.
 
 ## Tag 01KT, a lemma
@@ -284,7 +284,7 @@ Declarations registered for the tag:
 
 - [`AlgebraicGeometry.IsSeparated.stableUnderComposition`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsSeparated.stableUnderComposition#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L292) (StacksFrontier): “(1) a composition of separated morphisms is separated”. References: EGA I (10.15.3), “(i), ordinary preschemes”; EGA I (5.5.1).
 - [`AlgebraicGeometry.quasiSeparated_isStableUnderComposition`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.quasiSeparated_isStableUnderComposition#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L294) (StacksFrontier): “(2) a composition of quasi-separated morphisms is quasi-separated”. References: EGA IV (1.2.2); SGA 4 VI (1.8), “(i), special case”; SGA 4 VI (1.9.1), “(i), special case”.
-- [`AlgebraicGeometry.IsSeparated.isStableUnderBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsSeparated.isStableUnderBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L296) (StacksFrontier): “(3) the base change of a separated morphism is separated”. References: EGA I (10.15.3), “(iii), special case”; EGA I (5.5.1); EGA I (5.5.3), “more general”; EGA III (6.9.1), “separatedness of f′_i”; EGA III (7.7.2), “separatedness of f'”; EGA IV (2.7.1), “implication”; SGA 1 IX (2.4), “partial”; SGA 1 IX (4.2), “partial”; SGA 1 VIII (4.8), “partial”; SGA 3 VIB (10.1), “separatedness”.
+- [`AlgebraicGeometry.IsSeparated.isStableUnderBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsSeparated.isStableUnderBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L296) (StacksFrontier): “(3) the base change of a separated morphism is separated”. References: EGA I (10.15.3), “(iii), special case”; EGA I (5.5.1); EGA I (5.5.3), “more general”; EGA III (6.9.1), “separatedness of f′\_i”; EGA III (7.7.2), “separatedness of f'”; EGA IV (2.7.1), “implication”; SGA 1 IX (2.4), “partial”; SGA 1 IX (4.2), “partial”; SGA 1 VIII (4.8), “partial”; SGA 3 VIB (10.1), “separatedness”.
 - [`AlgebraicGeometry.quasiSeparated_isStableUnderBaseChange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.quasiSeparated_isStableUnderBaseChange#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L298) (StacksFrontier): “(4) the base change of a quasi-separated morphism is quasi-separated”. References: EGA IV (1.2.2); EGA IV (2.7.1), “(ii)”; SGA 4 VI (1.8), “(ii), special case”; SGA 4 VI (1.9.1), “(ii), special case”; SGA 4 VIII (5.1), “partial”; SGA 7 VII (1.3.8), “partial”.
 - [`CategoryTheory.MorphismProperty.pullbackMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.pullbackMap#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L300) (StacksFrontier): “(5), (6) a fibre product of (quasi-)separated morphisms is (quasi-)separated: more general, for any morphism property stable under base change and composition”.
 
@@ -336,8 +336,8 @@ public theorem isAffineOpen_inf_of_isSeparated {X S : Scheme.{u}} (f : X ⟶ S)
 > product `U × V`, the product being taken over the terminal scheme.
 >
 > The map exhibiting it is the canonical `prod.lift` of the two inclusions `U ⊓ V ⟶ U` and
-> `U ⊓ V ⟶ V`. It is obtained from the base change `pullback U.ι V.ι ⟶ pullback (U.ι ≫ 𝟙_)
-> (V.ι ≫ 𝟙_)` of the absolute diagonal of `X`, which is a closed immersion because `X` is a
+> `U ⊓ V ⟶ V`. It is obtained from the base change `pullback U.ι V.ι ⟶ pullback (U.ι ≫ 𝟙\_)
+> (V.ι ≫ 𝟙\_)` of the absolute diagonal of `X`, which is a closed immersion because `X` is a
 > separated scheme, by transporting along `(isPullback_opens_inf U V).isoPullback` on the source
 > and `prodIsoPullback` on the target.
 
@@ -360,9 +360,9 @@ public theorem isClosedImmersion_prodLift_of_isSeparated {X S : Scheme.{u}} (f :
 public abbrev generalLinearTwoScheme (k : Type u) [CommRing k] : AlgebraicGeometry.Scheme
 ```
 
-**`AlgebraicGeometry.generalLinearTwoToProjectiveLine`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupProjectiveLine.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupProjectiveLine.lean#L387). The attribute's comment: “gl2_to_projective_line”.
+**`AlgebraicGeometry.generalLinearTwoToProjectiveLine`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupProjectiveLine.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupProjectiveLine.lean#L387). The attribute's comment: “gl2\_to\_projective\_line”.
 
-> **Stacks Project, Tag 01KX (gl2_to_projective_line).** The morphism `[a : b]` from `GL₂` to
+> **Stacks Project, Tag 01KX (gl2\_to\_projective\_line).** The morphism `[a : b]` from `GL₂` to
 > the projective line, glued from `b/a` on `D(a)` and `a/b` on `D(b)`.
 
 ```lean
@@ -370,9 +370,9 @@ noncomputable def generalLinearTwoToProjectiveLine :
     generalLinearTwoScheme k ⟶ projectiveLine k
 ```
 
-**`AlgebraicGeometry.surjective_generalLinearTwoToProjectiveLine`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupProjectiveLine.lean, line 455](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupProjectiveLine.lean#L455). The attribute's comment: “gl2_to_projective_line_surjective”.
+**`AlgebraicGeometry.surjective_generalLinearTwoToProjectiveLine`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupProjectiveLine.lean, line 455](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupProjectiveLine.lean#L455). The attribute's comment: “gl2\_to\_projective\_line\_surjective”.
 
-> **Stacks Project, Tag 01KX (gl2_to_projective_line_surjective).** The morphism `[a : b]` from
+> **Stacks Project, Tag 01KX (gl2\_to\_projective\_line\_surjective).** The morphism `[a : b]` from
 > `GL₂` to the projective line is surjective: over the first chart the matrix `!![1, X; 0, 1]` is a
 > section, and over the second the matrix `!![X, 1; -1, 0]`.
 
@@ -381,9 +381,9 @@ instance surjective_generalLinearTwoToProjectiveLine (k : Type u) [Field k] :
     Surjective (generalLinearTwoToProjectiveLine k)
 ```
 
-**`AlgebraicGeometry.generalLinearTwoToPuncturedPlane`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupPuncturedPlane.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupPuncturedPlane.lean#L203). The attribute's comment: “gl2_to_punctured_plane”.
+**`AlgebraicGeometry.generalLinearTwoToPuncturedPlane`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupPuncturedPlane.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupPuncturedPlane.lean#L203). The attribute's comment: “gl2\_to\_punctured\_plane”.
 
-> **Stacks Project, Tag 01KX (gl2_to_punctured_plane).** The morphism from `GL₂` to the
+> **Stacks Project, Tag 01KX (gl2\_to\_punctured\_plane).** The morphism from `GL₂` to the
 > punctured affine plane `U = Spec k[x, y] ∖ {(x, y)}` determined by `x ↦ a`, `y ↦ b`.
 
 ```lean
@@ -391,9 +391,9 @@ noncomputable def generalLinearTwoToPuncturedPlane :
     generalLinearTwoScheme k ⟶ (puncturedAffinePlaneOf k).puncturedScheme
 ```
 
-**`AlgebraicGeometry.surjective_generalLinearTwoToPuncturedPlane`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupPuncturedPlane.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupPuncturedPlane.lean#L219). The attribute's comment: “gl2_to_punctured_plane_surjective”.
+**`AlgebraicGeometry.surjective_generalLinearTwoToPuncturedPlane`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupPuncturedPlane.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupPuncturedPlane.lean#L219). The attribute's comment: “gl2\_to\_punctured\_plane\_surjective”.
 
-> **Stacks Project, Tag 01KX (gl2_to_punctured_plane_surjective).** The morphism from `GL₂` to
+> **Stacks Project, Tag 01KX (gl2\_to\_punctured\_plane\_surjective).** The morphism from `GL₂` to
 > the punctured affine plane is surjective.
 
 ```lean
@@ -401,9 +401,9 @@ instance surjective_generalLinearTwoToPuncturedPlane :
     Surjective (generalLinearTwoToPuncturedPlane k)
 ```
 
-**`AlgebraicGeometry.not_range_subset_of_isAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupPuncturedPlane.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupPuncturedPlane.lean#L235). The attribute's comment: “image_in_no_affine_open”.
+**`AlgebraicGeometry.not_range_subset_of_isAffineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupPuncturedPlane.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/GeneralLinearGroupPuncturedPlane.lean#L235). The attribute's comment: “image\_in\_no\_affine\_open”.
 
-> **Stacks Project, Tag 01KX (image_in_no_affine_open).** The image of the morphism from `GL₂`
+> **Stacks Project, Tag 01KX (image\_in\_no\_affine\_open).** The image of the morphism from `GL₂`
 > to the punctured affine plane is contained in no affine open of the punctured plane: it is
 > everything, and the punctured plane is not affine.
 
@@ -413,7 +413,7 @@ theorem not_range_subset_of_isAffineOpen
     ¬ Set.range (generalLinearTwoToPuncturedPlane k).base ⊆ (V : Set _)
 ```
 
-**`AlgebraicGeometry.not_isImmersion_to_affine_projectiveLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/ProjectiveLineNoAffineImmersion.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/ProjectiveLineNoAffineImmersion.lean#L59). The attribute's comment: “projective_line_no_immersion_into_affine”.
+**`AlgebraicGeometry.not_isImmersion_to_affine_projectiveLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Separation/ProjectiveLineNoAffineImmersion.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Separation/ProjectiveLineNoAffineImmersion.lean#L59). The attribute's comment: “projective\_line\_no\_immersion\_into\_affine”.
 
 > The projective line over a field admits no immersion into any affine scheme.
 

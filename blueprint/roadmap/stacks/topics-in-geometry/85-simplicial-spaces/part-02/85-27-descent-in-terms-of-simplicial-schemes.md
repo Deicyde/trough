@@ -50,7 +50,7 @@ def simplicialScheme : SimplicialObject Scheme.{u}
 
 [Tag 024B](https://stacks.math.columbia.edu/tag/024B) in the Stacks Project.
 
-**`AlgebraicGeometry.SimplicialScheme.toDescentDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean, line 555](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean#L555). The attribute's comment: “the descent datum (V, φ) attached to a descent datum on (X/S)_•”.
+**`AlgebraicGeometry.SimplicialScheme.toDescentDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean, line 555](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean#L555). The attribute's comment: “the descent datum (V, φ) attached to a descent datum on (X/S)\_•”.
 
 > **The descent datum `(V, φ)` relative to `f : X ⟶ S`** attached to a descent datum on
 > `(X/S)_•`.
@@ -60,7 +60,7 @@ def toDescentDatum (D : Stacks.Simplicial.Descent.DescentDatum (simplicialScheme
     AlgebraicGeometry.DescentDatum f
 ```
 
-**`AlgebraicGeometry.SimplicialScheme.isPullback_cartesianLeft`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean, line 623](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean#L623). The attribute's comment: “the isomorphism V ×_S X ← Y_1 given by (d¹_1, pr_1 ∘ π_1)”.
+**`AlgebraicGeometry.SimplicialScheme.isPullback_cartesianLeft`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean, line 623](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean#L623). The attribute's comment: “the isomorphism V ×\_S X ← Y\_1 given by (d¹\_1, pr\_1 ∘ π\_1)”.
 
 > **`(d¹₁, pr₁ ∘ π₁) : Y₁ ⟶ V ×_S X` is an isomorphism.**
 
@@ -70,7 +70,7 @@ lemma isPullback_cartesianLeft (Y : Stacks.Simplicial.Descent.Cartesian (simplic
       ((descentObj (cartesianDatum Y)).hom ≫ f) f
 ```
 
-**`AlgebraicGeometry.SimplicialScheme.isPullback_cartesianRight`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean, line 632](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean#L632). The attribute's comment: “the isomorphism Y_1 → X ×_S V given by (pr_0 ∘ π_1, d¹_0)”.
+**`AlgebraicGeometry.SimplicialScheme.isPullback_cartesianRight`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean, line 632](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean#L632). The attribute's comment: “the isomorphism Y\_1 → X ×\_S V given by (pr\_0 ∘ π\_1, d¹\_0)”.
 
 > **`(pr₀ ∘ π₁, d¹₀) : Y₁ ⟶ X ×_S V` is an isomorphism.**
 
@@ -80,7 +80,7 @@ lemma isPullback_cartesianRight (Y : Stacks.Simplicial.Descent.Cartesian (simpli
       ((descentObj (cartesianDatum Y)).hom ≫ f)
 ```
 
-**`AlgebraicGeometry.SimplicialScheme.cartesian_actMap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean, line 642](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean#L642). The attribute's comment: “φ is the isomorphism resulting from d¹_0 and π_1”.
+**`AlgebraicGeometry.SimplicialScheme.cartesian_actMap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean, line 642](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean#L642). The attribute's comment: “φ is the isomorphism resulting from d¹\_0 and π\_1”.
 
 > `φ` is the isomorphism induced by `d¹₀` and `π₁`: a point of `V ×_S X` lifted to a point
 > `y` of `Y₁` is sent to the zeroth face of `y`.
@@ -94,7 +94,7 @@ lemma cartesian_actMap (Y : Stacks.Simplicial.Descent.Cartesian (simplicialSchem
     (q ≫ actMap (cartesianDatum Y)).left = y ≫ Y.1.left.δ (0 : Fin 2)
 ```
 
-**`AlgebraicGeometry.SimplicialScheme.cartesianDescentDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean, line 681](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean#L681). The attribute's comment: “(V, φ) is a descent datum relative to X ⟶ S, for cartesian Y over (X/S)_•”.
+**`AlgebraicGeometry.SimplicialScheme.cartesianDescentDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean, line 681](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/DescentViaSimplicialSchemes.lean#L681). The attribute's comment: “(V, φ) is a descent datum relative to X ⟶ S, for cartesian Y over (X/S)\_•”.
 
 > **`(V, φ)` is a descent datum relative to `X ⟶ S`**, for `V = Y₀` over `X` and `φ` the
 > isomorphism `V ×_S X ≅ X ×_S V` induced by `d¹₀`, `d¹₁` and `π₁` on a cartesian simplicial

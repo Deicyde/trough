@@ -14,7 +14,7 @@ Section 58.23 of the Stacks Project, [Tag 0EK7](https://stacks.math.columbia.edu
 
 [Tag 0DXY](https://stacks.math.columbia.edu/tag/0DXY) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.finiteEtaleColimitEquivalence_puncturedSpectrum_of_dualizing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionColimitDualizingEquivalence.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionColimitDualizingEquivalence.lean#L327). The attribute's comment: “the restriction functor colim_{U₀ ⊆ U' ⊆ U} FÉt_{U'} → FÉt_{U₀} is an equivalence: fully faithful, and every finite étale cover of U₀ extends to a neighbourhood”.
+**`Stacks.FundamentalGroup.finiteEtaleColimitEquivalence_puncturedSpectrum_of_dualizing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionColimitDualizingEquivalence.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/RestrictionColimitDualizingEquivalence.lean#L327). The attribute's comment: “the restriction functor colim\_\{U₀ ⊆ U' ⊆ U} FÉt\_\{U'} → FÉt\_\{U₀} is an equivalence: fully faithful, and every finite étale cover of U₀ extends to a neighbourhood”.
 
 > **[Stacks, Tag 0DXY].** In Situation [Stacks, Tag 0BLF] — `(A, 𝔪)` a Noetherian local ring,
 > `f ∈ 𝔪`, `U = Spec(A) ∖ {𝔪}` the punctured spectrum of `A` and `U₀ = U ∩ V(f)` the punctured
@@ -101,7 +101,7 @@ theorem isColimitRestrictionEquivalence (h : S.Hypotheses)
     S.IsColimitRestrictionEquivalence
 ```
 
-**`Stacks.FundamentalGroup.finiteEtaleColimitEquivalence_puncturedSpectrum_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/PuncturedNeighbourhoodEquivalence.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/PuncturedNeighbourhoodEquivalence.lean#L152). The attribute's comment: “the restriction functor colim_{U₀ ⊆ U' ⊆ U} FÉt_{U'} → FÉt_{U₀} is an equivalence: fully faithful, and every finite étale cover of U₀ extends to a neighbourhood”.
+**`Stacks.FundamentalGroup.finiteEtaleColimitEquivalence_puncturedSpectrum_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/PuncturedNeighbourhoodEquivalence.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/PurityLocalCase/PuncturedNeighbourhoodEquivalence.lean#L152). The attribute's comment: “the restriction functor colim\_\{U₀ ⊆ U' ⊆ U} FÉt\_\{U'} → FÉt\_\{U₀} is an equivalence: fully faithful, and every finite étale cover of U₀ extends to a neighbourhood”.
 
 > **[Stacks, Tag 0BLV].** In Situation [Stacks, Tag 0BLF] — `(A, 𝔪)` a Noetherian local ring,
 > `f ∈ 𝔪`, `U = Spec(A) ∖ {𝔪}` the punctured spectrum of `A` and `U₀ = U ∩ V(f)` the punctured

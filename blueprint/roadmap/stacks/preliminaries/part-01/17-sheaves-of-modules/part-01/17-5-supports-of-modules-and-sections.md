@@ -80,7 +80,7 @@ theorem suppSection_map_subset (F G : ModuleSheaf X)
 
 [Tag 01AV](https://stacks.math.columbia.edu/tag/01AV) in the Stacks Project.
 
-**`isClosed_sheafRingSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/SupportStructureSheaf.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/SupportStructureSheaf.lean#L81). References: EGA 0 (5.2.2), “special case”; EGA I (4.1.2), “more general”; EGA IV (19.1.7), “closed support of O_X/J”; SGA 3 VIA (2.1.3), “more general”.
+**`isClosed_sheafRingSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/SupportStructureSheaf.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/SupportStructureSheaf.lean#L81). References: EGA 0 (5.2.2), “special case”; EGA I (4.1.2), “more general”; EGA IV (19.1.7), “closed support of O\_X/J”; SGA 3 VIA (2.1.3), “more general”.
 
 > The support of a sheaf of commutative rings on `X` is a closed subset of `X`.
 

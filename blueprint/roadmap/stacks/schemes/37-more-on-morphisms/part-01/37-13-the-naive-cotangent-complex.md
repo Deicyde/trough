@@ -31,7 +31,7 @@ noncomputable def naiveCotangentComplex :
 
 [Tag 0D0I](https://stacks.math.columbia.edu/tag/0D0I) in the Stacks Project.
 
-**`Stacks.NaiveCotangentAffineQuasiIso.quasiIso_comparisonMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentAffineQuasiIso.lean, line 739](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentAffineQuasiIso.lean#L739). The attribute's comment: “the canonical map (NL_{A/R})~ to NL_{X/Y}|_V is an isomorphism in D(O_V)”.
+**`Stacks.NaiveCotangentAffineQuasiIso.quasiIso_comparisonMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentAffineQuasiIso.lean, line 739](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentAffineQuasiIso.lean#L739). The attribute's comment: “the canonical map (NL\_\{A/R})~ to NL\_\{X/Y}|\_V is an isomorphism in D(O\_V)”.
 
 > If `U` and `V` are affine, the canonical map `comparisonMap f hVU` from the sheaf associated
 > to `NL_{A/R}` to the restriction of `NL_{X/Y}` to `V` is a quasi-isomorphism.
@@ -56,7 +56,7 @@ theorem isZero_homology_naiveCotangentComplex (i : ℤ) (hneg : i ≠ -1) (hzero
     IsZero ((naiveCotangentComplex f).homology i)
 ```
 
-**`AlgebraicGeometry.Scheme.naiveCotangentExtZeroAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentExtZero.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentExtZero.lean#L237). The attribute's comment: “the Ext^0 reading of the degree-zero identification: Ext^0(NL_{X/Y}, G) = Hom(Omega_{X/Y}, G) for a morphism of schemes and an arbitrary sheaf of coefficients, the naive cotangent complex living in cohomological degrees at most zero”. References: SGA 7 VI (4.16), “identification Ext⁰(X₀”.
+**`AlgebraicGeometry.Scheme.naiveCotangentExtZeroAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentExtZero.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentExtZero.lean#L237). The attribute's comment: “the Ext^0 reading of the degree-zero identification: Ext^0(NL\_\{X/Y}, G) = Hom(Omega\_\{X/Y}, G) for a morphism of schemes and an arbitrary sheaf of coefficients, the naive cotangent complex living in cohomological degrees at most zero”. References: SGA 7 VI (4.16), “identification Ext⁰(X₀”.
 
 > **`Ext⁰_{𝒪_X}(NL_{X/Y}, 𝒢) = Hom_{𝒪_X}(Ω_{X/Y}, 𝒢)`.** The naive cotangent complex of a
 > morphism of schemes lives in cohomological degrees `≤ 0`, so `Ext⁰` out of it is the group of
@@ -188,7 +188,7 @@ theorem smooth_iff_isZero_homology_negOne_and_isFiniteLocallyFree :
           (Scheme.Hom.relativeDifferentials f))
 ```
 
-**`Stacks.Smooth.smooth_iff_isZero_homology_negOne_and_isFiniteLocallyFree_homology_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentSmoothCriterion.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentSmoothCriterion.lean#L193). The attribute's comment: “the third clause read on H^0(NL_{X/S}) rather than on Omega_{X/S}”.
+**`Stacks.Smooth.smooth_iff_isZero_homology_negOne_and_isFiniteLocallyFree_homology_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentSmoothCriterion.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentSmoothCriterion.lean#L193). The attribute's comment: “the third clause read on H^0(NL\_\{X/S}) rather than on Omega\_\{X/S}”.
 
 > **Smoothness read on the naive cotangent complex, with the third clause on `H⁰(NL_{X/S})`.**
 > A morphism of schemes `f : X ⟶ S` is smooth if and only if it is locally of finite presentation,
@@ -225,7 +225,7 @@ theorem etale_iff_locallyOfFinitePresentation_and_isZero_naiveCotangentHomology 
 
 [Tag 0FV2](https://stacks.math.columbia.edu/tag/0FV2) in the Stacks Project.
 
-**`Stacks.Conormal.Sites.homologyNegOneIsoConormalSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalComparison/NaiveCotangentImmersionShift.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalComparison/NaiveCotangentImmersionShift.lean#L153). The attribute's comment: “degree -1 clause: H^{-1}(NL_{Z/X}) is the conormal sheaf C_{Z/X}”.
+**`Stacks.Conormal.Sites.homologyNegOneIsoConormalSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalComparison/NaiveCotangentImmersionShift.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalComparison/NaiveCotangentImmersionShift.lean#L153). The attribute's comment: “degree -1 clause: H^\{-1}(NL\_\{Z/X}) is the conormal sheaf C\_\{Z/X}”.
 
 > **Stacks 0FV2, degree `-1` clause.**  For an immersion of schemes `i : Z ⟶ X` the degree
 > `-1` cohomology sheaf of the naive cotangent complex `NL_{Z/X}` is the conormal sheaf
@@ -247,7 +247,7 @@ def homologyNegOneIsoConormalSheaf :
       (Stacks.Conormal.conormalSheaf i : Z.Modules)
 ```
 
-**`Stacks.Conormal.Sites.quasiIso_conormalShiftComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalComparison/NaiveCotangentImmersionShift.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalComparison/NaiveCotangentImmersionShift.lean#L243). The attribute's comment: “shift clause as a quasi-isomorphism of complexes C_{Z/X}[1] ⟶ NL_{Z/X}”.
+**`Stacks.Conormal.Sites.quasiIso_conormalShiftComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalComparison/NaiveCotangentImmersionShift.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalComparison/NaiveCotangentImmersionShift.lean#L243). The attribute's comment: “shift clause as a quasi-isomorphism of complexes C\_\{Z/X}[1] ⟶ NL\_\{Z/X}”.
 
 > **Stacks 0FV2, the shift.**  For an immersion of schemes `i : Z ⟶ X` the canonical chain
 > map from `𝒞_{Z/X}[1]` — the cochain complex with the conormal sheaf of `Z` in `X` in degree
@@ -263,7 +263,7 @@ def homologyNegOneIsoConormalSheaf :
 theorem quasiIso_conormalShiftComparison : QuasiIso (conormalShiftComparison i)
 ```
 
-**`AlgebraicGeometry.Scheme.isZero_homology_zero_naiveCotangentComplex_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentImmersionDegreeZero.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentImmersionDegreeZero.lean#L204). The attribute's comment: “degreewise form of the shift statement, degree 0 clause only: H^0(NL_{Z/X}) = 0; NOT the identification of H^{-1}(NL_{Z/X}) with the conormal sheaf”.
+**`AlgebraicGeometry.Scheme.isZero_homology_zero_naiveCotangentComplex_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentImmersionDegreeZero.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/NaiveCotangentImmersionDegreeZero.lean#L204). The attribute's comment: “degreewise form of the shift statement, degree 0 clause only: H^0(NL\_\{Z/X}) = 0; NOT the identification of H^\{-1}(NL\_\{Z/X}) with the conormal sheaf”.
 
 > **Stacks 0FV2, degree `0` clause.**  Let `i : Z ⟶ X` be an immersion of schemes.  Then the
 > degree `0` cohomology sheaf of the naive cotangent complex `NL_{Z/X}` vanishes.
@@ -284,7 +284,7 @@ theorem isZero_homology_zero_naiveCotangentComplex_of_isImmersion {Z X : Scheme.
 
 [Tag 0E44](https://stacks.math.columbia.edu/tag/0E44) in the Stacks Project.
 
-**`Stacks.NaiveCotangentSixTermSequence.pullbackToTotalMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L346). The attribute's comment: “the canonical map f^*NL_{Y/Z} -> NL_{X/Z}, the chain map inducing the first and fourth arrows of the six term sequence”.
+**`Stacks.NaiveCotangentSixTermSequence.pullbackToTotalMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L346). The attribute's comment: “the canonical map f^*NL\_\{Y/Z} -> NL\_\{X/Z}, the chain map inducing the first and fourth arrows of the six term sequence”.
 
 > **Stacks 0E44, the second arrow.**  The canonical map `f^*NL_{Y/Z} ⟶ NL_{X/Z}` of a pair of
 > composable morphisms of schemes: the canonical map of Stacks 0E1Z of the underlying morphisms of
@@ -295,7 +295,7 @@ noncomputable def pullbackToTotalMap :
     pullbackNaiveCotangentComplex f g ⟶ Scheme.naiveCotangentComplex (f ≫ g)
 ```
 
-**`Stacks.NaiveCotangentSixTermSequence.totalToRelativeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L354). The attribute's comment: “the canonical map NL_{X/Z} -> NL_{X/Y}, the chain map inducing the second and fifth arrows of the six term sequence”.
+**`Stacks.NaiveCotangentSixTermSequence.totalToRelativeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L354). The attribute's comment: “the canonical map NL\_\{X/Z} -> NL\_\{X/Y}, the chain map inducing the second and fifth arrows of the six term sequence”.
 
 > **Stacks 0E44, the third arrow.**  The canonical map `NL_{X/Z} ⟶ NL_{X/Y}` of a pair of
 > composable morphisms of schemes.
@@ -305,7 +305,7 @@ noncomputable def totalToRelativeMap :
     Scheme.naiveCotangentComplex (f ≫ g) ⟶ Scheme.naiveCotangentComplex f
 ```
 
-**`Stacks.NaiveCotangentSixTermSequence.exact_sixTerm_negOne_total`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L432). The attribute's comment: “exactness of the six term sequence at its second term, H^{-1}(NL_{X/Z})”.
+**`Stacks.NaiveCotangentSixTermSequence.exact_sixTerm_negOne_total`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L432). The attribute's comment: “exactness of the six term sequence at its second term, H^\{-1}(NL\_\{X/Z})”.
 
 > **Stacks 0E44, exactness at `H^{-1}(NL_{X/Z})`.**  For morphisms of schemes `f : X ⟶ Y` and
 > `g : Y ⟶ Z` the sequence
@@ -322,7 +322,7 @@ theorem exact_sixTerm_negOne_total :
       (homologyMap_pullbackToTotalMap_comp_totalToRelativeMap f g (-1))).Exact
 ```
 
-**`Stacks.NaiveCotangentSixTermSequence.jacobiZariskiConnecting`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 444](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L444). The attribute's comment: “the connecting map H^{-1}(NL_{X/Y}) -> H^0(f^*NL_{Y/Z}), the third arrow of the six term sequence”.
+**`Stacks.NaiveCotangentSixTermSequence.jacobiZariskiConnecting`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 444](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L444). The attribute's comment: “the connecting map H^\{-1}(NL\_\{X/Y}) -> H^0(f^*NL\_\{Y/Z}), the third arrow of the six term sequence”.
 
 > **Stacks 0E44, the connecting map** `∂ : H^{-1}(NL_{X/Y}) ⟶ H^0(f^*NL_{Y/Z})` of the six
 > term sequence, for morphisms of schemes `f : X ⟶ Y` and `g : Y ⟶ Z`: the connecting map of
@@ -334,7 +334,7 @@ noncomputable def jacobiZariskiConnecting :
       (pullbackNaiveCotangentComplex f g).homology 0
 ```
 
-**`Stacks.NaiveCotangentSixTermSequence.exact_sixTerm_negOne_relative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L484). The attribute's comment: “exactness of the six term sequence at its third term, H^{-1}(NL_{X/Y})”.
+**`Stacks.NaiveCotangentSixTermSequence.exact_sixTerm_negOne_relative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L484). The attribute's comment: “exactness of the six term sequence at its third term, H^\{-1}(NL\_\{X/Y})”.
 
 > **Stacks 0E44, exactness at `H^{-1}(NL_{X/Y})`.**  For morphisms of schemes `f : X ⟶ Y` and
 > `g : Y ⟶ Z` the sequence
@@ -350,7 +350,7 @@ theorem exact_sixTerm_negOne_relative :
       (homologyMap_totalToRelativeMap_comp_connecting f g)).Exact
 ```
 
-**`Stacks.NaiveCotangentSixTermSequence.pullbackHomologyZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 546](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L546). The attribute's comment: “the fourth term: the identification H^0(f^*NL_{Y/Z}) = f^*Omega_{Y/Z} for the inverse-image-then-extend-scalars model of the pullback, the model the first four terms are written over”.
+**`Stacks.NaiveCotangentSixTermSequence.pullbackHomologyZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 546](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L546). The attribute's comment: “the fourth term: the identification H^0(f^*NL\_\{Y/Z}) = f^*Omega\_\{Y/Z} for the inverse-image-then-extend-scalars model of the pullback, the model the first four terms are written over”.
 
 > **Stacks 0E44, the fourth term.**  The degree `0` cohomology sheaf of `f^*NL_{Y/Z}` is
 > `f^*Ω_{Y/Z}`.
@@ -369,7 +369,7 @@ noncomputable def pullbackHomologyZeroIso :
       (Scheme.Modules.pullback f).obj (Scheme.Hom.relativeDifferentials g)
 ```
 
-**`Stacks.NaiveCotangentSixTermSequence.connectingDifferentials`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 556](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L556). The attribute's comment: “the connecting map with its target written as f^*Omega_{Y/Z}”.
+**`Stacks.NaiveCotangentSixTermSequence.connectingDifferentials`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 556](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L556). The attribute's comment: “the connecting map with its target written as f^*Omega\_\{Y/Z}”.
 
 > **Stacks 0E44, the third arrow with its target written as `f^*Ω_{Y/Z}`.**  The connecting
 > map of the six term sequence, read through the identification of its target `H^0(f^*NL_{Y/Z})`
@@ -381,7 +381,7 @@ noncomputable def connectingDifferentials :
       (Scheme.Modules.pullback f).obj (Scheme.Hom.relativeDifferentials g)
 ```
 
-**`Stacks.NaiveCotangentSixTermSequence.exact_sixTerm_zero_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 569](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L569). The attribute's comment: “exactness of the six term sequence at its fourth term, H^0(f^*NL_{Y/Z}) = f^*Omega_{Y/Z}”.
+**`Stacks.NaiveCotangentSixTermSequence.exact_sixTerm_zero_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 569](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L569). The attribute's comment: “exactness of the six term sequence at its fourth term, H^0(f^*NL\_\{Y/Z}) = f^*Omega\_\{Y/Z}”.
 
 > **Stacks 0E44, exactness at `H^0(f^*NL_{Y/Z})`.**  For morphisms of schemes `f : X ⟶ Y` and
 > `g : Y ⟶ Z` the sequence
@@ -397,7 +397,7 @@ theorem exact_sixTerm_zero_pullback :
       (connecting_comp_homologyMap_pullbackToTotalMap f g)).Exact
 ```
 
-**`Stacks.NaiveCotangentSixTermSequence.exact_sixTerm_zero_total`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 588](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L588). The attribute's comment: “exactness of the six term sequence at its fifth term, H^0(NL_{X/Z}) = Omega_{X/Z}”.
+**`Stacks.NaiveCotangentSixTermSequence.exact_sixTerm_zero_total`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 588](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L588). The attribute's comment: “exactness of the six term sequence at its fifth term, H^0(NL\_\{X/Z}) = Omega\_\{X/Z}”.
 
 > **Stacks 0E44, exactness at `H^0(NL_{X/Z})`.**  For morphisms of schemes `f : X ⟶ Y` and
 > `g : Y ⟶ Z` the sequence
@@ -415,7 +415,7 @@ theorem exact_sixTerm_zero_total :
       (homologyMap_pullbackToTotalMap_comp_totalToRelativeMap f g 0)).Exact
 ```
 
-**`Stacks.NaiveCotangentSixTermSequence.epi_homologyMap_totalToRelativeMap_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 600](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L600). The attribute's comment: “the final `-> 0` of the six term sequence, its exactness at H^0(NL_{X/Y}) = Omega_{X/Y}”.
+**`Stacks.NaiveCotangentSixTermSequence.epi_homologyMap_totalToRelativeMap_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean, line 600](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermFirstTerms.lean#L600). The attribute's comment: “the final `-> 0` of the six term sequence, its exactness at H^0(NL\_\{X/Y}) = Omega\_\{X/Y}”.
 
 > **Stacks 0E44, the final `⟶ 0`.**  The canonical map `NL_{X/Z} ⟶ NL_{X/Y}` is surjective on
 > degree `0` cohomology sheaves, that is, the six term sequence is exact at `H^0(NL_{X/Y})`.  With
@@ -426,7 +426,7 @@ theorem epi_homologyMap_totalToRelativeMap_zero :
     Epi (HomologicalComplex.homologyMap (totalToRelativeMap f g) 0)
 ```
 
-**`Stacks.NaiveCotangentSixTermSequence.isZero_homology_modulePullbackNaiveCotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermSequence.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermSequence.lean#L166). The attribute's comment: “the vanishing of H^i(f^*NL_{Y/Z}) outside degrees -1 and 0 only”.
+**`Stacks.NaiveCotangentSixTermSequence.isZero_homology_modulePullbackNaiveCotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermSequence.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermSequence.lean#L166). The attribute's comment: “the vanishing of H^i(f^*NL\_\{Y/Z}) outside degrees -1 and 0 only”.
 
 > **Stacks 0E44, the extent of the sequence.** The cohomology sheaves of `f^*NL_{Y/Z}` vanish
 > outside degrees `-1` and `0`.  Together with the same statement for `NL_{X/Z}` and `NL_{X/Y}`
@@ -440,7 +440,7 @@ theorem isZero_homology_modulePullbackNaiveCotangentComplex (i : ℤ) (hneg : i 
     IsZero ((modulePullbackNaiveCotangentComplex f g).homology i)
 ```
 
-**`Stacks.NaiveCotangentSixTermSequence.modulePullbackNaiveCotangentComplexHomologyZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermSequence.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermSequence.lean#L180). The attribute's comment: “the fourth term for Mathlib's model of the pullback: the identification H^0(f^*NL_{Y/Z}) = f^*Omega_{Y/Z}, which Stacks.NaiveCotangentSixTermSequence.pullbackHomologyZeroIso carries to the model the sequence itself is written over”.
+**`Stacks.NaiveCotangentSixTermSequence.modulePullbackNaiveCotangentComplexHomologyZeroIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermSequence.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentSixTermSequence.lean#L180). The attribute's comment: “the fourth term for Mathlib's model of the pullback: the identification H^0(f^*NL\_\{Y/Z}) = f^*Omega\_\{Y/Z}, which Stacks.NaiveCotangentSixTermSequence.pullbackHomologyZeroIso carries to the model the sequence itself is written over”.
 
 > **Stacks 0E44, the fourth term.** The degree `0` cohomology sheaf of `f^*NL_{Y/Z}` is
 > `f^*Ω_{Y/Z}`.  The pullback of sheaves of modules along `f` is a left adjoint, hence preserves
@@ -476,7 +476,7 @@ theorem differentialsSequence_exact :
 
 [Tag 0FV3](https://stacks.math.columbia.edu/tag/0FV3) in the Stacks Project.
 
-**`Stacks.NaiveCotangentCompositionTriangle.coneMap_comp_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangle.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangle.lean#L150). The attribute's comment: “the canonical map f^*NL_{Y/Z} -> C(NL_{X/Z} -> NL_{X/Y})[-1] of 0E1Z and its compatibility, up to the sign of the cocone projection, with the canonical map f^*NL_{Y/Z} -> NL_{X/Z}; NOT its invertibility, which is where the complete intersection hypothesis enters and which is isIso_Q_map_coneMap_of_lci”.
+**`Stacks.NaiveCotangentCompositionTriangle.coneMap_comp_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangle.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangle.lean#L150). The attribute's comment: “the canonical map f^*NL\_\{Y/Z} -> C(NL\_\{X/Z} -> NL\_\{X/Y})[-1] of 0E1Z and its compatibility, up to the sign of the cocone projection, with the canonical map f^*NL\_\{Y/Z} -> NL\_\{X/Z}; NOT its invertibility, which is where the complete intersection hypothesis enters and which is isIso\_Q\_map\_coneMap\_of\_lci”.
 
 > **Stacks 0FV3**, the comparison.  The canonical map
 > `f^*NL_{Y/Z} ⟶ C(NL_{X/Z} ⟶ NL_{X/Y})[-1]` of Stacks 0E1Z, composed with the projection of the
@@ -490,7 +490,7 @@ theorem coneMap_comp_fst :
       -pulledNaiveCotangentMap f g
 ```
 
-**`Stacks.NaiveCotangentCompositionTriangle.triangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangle.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangle.lean#L182). The attribute's comment: “the distinguished triangle C(NL_{X/Z} -> NL_{X/Y})[-1] -> NL_{X/Z} -> NL_{X/Y} -> C(NL_{X/Z} -> NL_{X/Y})[-1][1] of D(O_X), whose second morphism is the canonical map, together with the canonical map of 0E1Z into its first vertex (coneMap_comp_fst); NOT the invertibility of that comparison, which is where the complete intersection hypothesis enters, and NOT the recovery of the six-term exact sequence of 0E44 -- those two are isIso_Q_map_coneMap_of_lci and lciTriangle_recovers_sixTerm, and the triangle with f^*NL_{Y/Z} as its first vertex is lciTriangle_distinguished”.
+**`Stacks.NaiveCotangentCompositionTriangle.triangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangle.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangle.lean#L182). The attribute's comment: “the distinguished triangle C(NL\_\{X/Z} -> NL\_\{X/Y})[-1] -> NL\_\{X/Z} -> NL\_\{X/Y} -> C(NL\_\{X/Z} -> NL\_\{X/Y})[-1][1] of D(O\_X), whose second morphism is the canonical map, together with the canonical map of 0E1Z into its first vertex (coneMap\_comp\_fst); NOT the invertibility of that comparison, which is where the complete intersection hypothesis enters, and NOT the recovery of the six-term exact sequence of 0E44 -- those two are isIso\_Q\_map\_coneMap\_of\_lci and lciTriangle\_recovers\_sixTerm, and the triangle with f^*NL\_\{Y/Z} as its first vertex is lciTriangle\_distinguished”.
 
 > **Stacks 0FV3**, the triangle.  The triangle on the canonical map `NL_{X/Z} ⟶ NL_{X/Y}`,
 > with the shift by `-1` of its cone as first vertex, is a distinguished triangle of `D(𝒪_X)`.
@@ -499,7 +499,7 @@ theorem coneMap_comp_fst :
 theorem triangle_distinguished : triangle f g ∈ distTriang _
 ```
 
-**`Stacks.NaiveCotangentCompositionTriangle.isIso_Q_map_coneMap_of_lci`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangleLci.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangleLci.lean#L126). The attribute's comment: “the canonical map f^*NL_{Y/Z} -> C(NL_{X/Z} -> NL_{X/Y})[-1] of 0E1Z is an ISOMORPHISM in D(O_X) when X -> Y is a complete intersection morphism, which is the reduction the source's proof makes”.
+**`Stacks.NaiveCotangentCompositionTriangle.isIso_Q_map_coneMap_of_lci`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangleLci.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangleLci.lean#L126). The attribute's comment: “the canonical map f^*NL\_\{Y/Z} -> C(NL\_\{X/Z} -> NL\_\{X/Y})[-1] of 0E1Z is an ISOMORPHISM in D(O\_X) when X -> Y is a complete intersection morphism, which is the reduction the source's proof makes”.
 
 > **Stacks 0FV3, the isomorphism.**  For morphisms of schemes `f : X ⟶ Y` and `g : Y ⟶ Z` with
 > `f` a local complete intersection morphism, the canonical map
@@ -520,7 +520,7 @@ theorem isIso_Q_map_coneMap_of_lci (hf : IsLocalCompleteIntersectionMorphism f) 
       (ringedSpaceNaiveCotangentConeMap f.toLRSHom.toShHom g.toLRSHom.toShHom))
 ```
 
-**`Stacks.NaiveCotangentCompositionTriangle.lciTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangleLci.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangleLci.lean#L170). The attribute's comment: “the canonical distinguished triangle f^*NL_{Y/Z} -> NL_{X/Z} -> NL_{X/Y} -> f^*NL_{Y/Z}[1] of D(O_X) for a complete intersection morphism X -> Y, with its first two morphisms the canonical maps (lciTriangle_mor₁, lciTriangle_mor₂)”. References: SGA 6 VIII (2.6), “more general”.
+**`Stacks.NaiveCotangentCompositionTriangle.lciTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangleLci.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangleLci.lean#L170). The attribute's comment: “the canonical distinguished triangle f^*NL\_\{Y/Z} -> NL\_\{X/Z} -> NL\_\{X/Y} -> f^*NL\_\{Y/Z}[1] of D(O\_X) for a complete intersection morphism X -> Y, with its first two morphisms the canonical maps (lciTriangle\_mor₁, lciTriangle\_mor₂)”. References: SGA 6 VIII (2.6), “more general”.
 
 > **Stacks 0FV3.**  For morphisms of schemes `f : X ⟶ Y` and `g : Y ⟶ Z` with `f` a local
 > complete intersection morphism, the canonical triangle
@@ -537,7 +537,7 @@ theorem lciTriangle_distinguished (hf : IsLocalCompleteIntersectionMorphism f) :
     lciTriangle f g hf ∈ distTriang _
 ```
 
-**`Stacks.NaiveCotangentCompositionTriangle.lciTriangle_recovers_sixTerm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangleLci.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangleLci.lean#L197). The attribute's comment: “the recovery of the six-term exact sequence of 0E44 from lciTriangle: its first two morphisms are the images under Q of the canonical chain maps f^*NL_{Y/Z} -> NL_{X/Z} and NL_{X/Z} -> NL_{X/Y}, and the six-term sequence of the maps those induce on cohomology sheaves, with the connecting morphism of the long exact sequence of the cone, is exact at its four interior terms and ends in `-> 0`”.
+**`Stacks.NaiveCotangentCompositionTriangle.lciTriangle_recovers_sixTerm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangleLci.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentCompositionTriangleLci.lean#L197). The attribute's comment: “the recovery of the six-term exact sequence of 0E44 from lciTriangle: its first two morphisms are the images under Q of the canonical chain maps f^*NL\_\{Y/Z} -> NL\_\{X/Z} and NL\_\{X/Z} -> NL\_\{X/Y}, and the six-term sequence of the maps those induce on cohomology sheaves, with the connecting morphism of the long exact sequence of the cone, is exact at its four interior terms and ends in `-> 0`”.
 
 > **Stacks 0FV3: the triangle recovers the six-term exact sequence of Stacks 0E44.**  The long
 > exact sequence of cohomology sheaves of the triangle
@@ -585,7 +585,7 @@ theorem lciTriangle_recovers_sixTerm (hf : IsLocalCompleteIntersectionMorphism f
         (relativeNaiveCotangentMap f.toLRSHom.toShHom g.toLRSHom.toShHom) 0)
 ```
 
-**`Stacks.NaiveCotangentCompositionTriangle.connecting_comp_homologyMap_eq_homologyδOfTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentLciTriangleSixTerm.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentLciTriangleSixTerm.lean#L142). The attribute's comment: “the connecting map of the six-term sequence of 0E44, read along H^0 of the canonical map of 0E1Z, is the connecting morphism of the long exact sequence of the triangle of the mapping cocone of NL_{X/Z} -> NL_{X/Y}”.
+**`Stacks.NaiveCotangentCompositionTriangle.connecting_comp_homologyMap_eq_homologyδOfTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentLciTriangleSixTerm.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentLciTriangleSixTerm.lean#L142). The attribute's comment: “the connecting map of the six-term sequence of 0E44, read along H^0 of the canonical map of 0E1Z, is the connecting morphism of the long exact sequence of the triangle of the mapping cocone of NL\_\{X/Z} -> NL\_\{X/Y}”.
 
 > **The connecting map of Stacks 0E44 is a triangle connecting morphism.**  Composed with the
 > map induced on `H⁰` by the canonical map of Stacks 0E1Z it is the connecting morphism of the long
@@ -604,7 +604,7 @@ theorem connecting_comp_homologyMap_eq_homologyδOfTriangle :
         (CochainComplex.mappingCocone.triangle (iteratedRelativeMap f g)) (-1) 0 (by omega)
 ```
 
-**`Stacks.NaiveCotangentCompositionTriangle.lciSchemeTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentLciTriangleSixTerm.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentLciTriangleSixTerm.lean#L226). The attribute's comment: “the canonical distinguished triangle f^*NL_{Y/Z} -> NL_{X/Z} -> NL_{X/Y} -> f^*NL_{Y/Z}[1] of D(O_X) for a complete intersection morphism X -> Y, written over the complexes and the two canonical chain maps of the six-term sequence of 0E44 (lciSchemeTriangle_mor₁, lciSchemeTriangle_mor₂)”. References: SGA 6 VIII (2.6), “more general”.
+**`Stacks.NaiveCotangentCompositionTriangle.lciSchemeTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentLciTriangleSixTerm.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentLciTriangleSixTerm.lean#L226). The attribute's comment: “the canonical distinguished triangle f^*NL\_\{Y/Z} -> NL\_\{X/Z} -> NL\_\{X/Y} -> f^*NL\_\{Y/Z}[1] of D(O\_X) for a complete intersection morphism X -> Y, written over the complexes and the two canonical chain maps of the six-term sequence of 0E44 (lciSchemeTriangle\_mor₁, lciSchemeTriangle\_mor₂)”. References: SGA 6 VIII (2.6), “more general”.
 
 > **Stacks 0FV3.**  For morphisms of schemes `f : X ⟶ Y` and `g : Y ⟶ Z` with `f` a local
 > complete intersection morphism, the canonical triangle
@@ -623,7 +623,7 @@ theorem lciSchemeTriangle_distinguished (hf : IsLocalCompleteIntersectionMorphis
     lciSchemeTriangle f g hf ∈ distTriang _
 ```
 
-**`Stacks.NaiveCotangentCompositionTriangle.δ_lciSchemeTriangle_comp_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentLciTriangleSixTerm.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentLciTriangleSixTerm.lean#L262). The attribute's comment: “the connecting morphism of the triangle, read along H^0 of the canonical map of 0E1Z, is the negative of the connecting morphism of the long exact sequence of the triangle of the mapping cocone of NL_{X/Z} -> NL_{X/Y}”.
+**`Stacks.NaiveCotangentCompositionTriangle.δ_lciSchemeTriangle_comp_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentLciTriangleSixTerm.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentLciTriangleSixTerm.lean#L262). The attribute's comment: “the connecting morphism of the triangle, read along H^0 of the canonical map of 0E1Z, is the negative of the connecting morphism of the long exact sequence of the triangle of the mapping cocone of NL\_\{X/Z} -> NL\_\{X/Y}”.
 
 > **The connecting morphism of the triangle of Stacks 0FV3.**  Composed with the map induced on
 > `H⁰` by the canonical map of Stacks 0E1Z it is the negative of the connecting morphism of the
@@ -716,7 +716,7 @@ public theorem Smooth.of_comp_of_etale {X Y Z : Scheme.{u}} (f : X ⟶ Y) (g : Y
 
 [Tag 0FV4](https://stacks.math.columbia.edu/tag/0FV4) in the Stacks Project.
 
-**`Stacks.NaiveCotangentFormallySmoothComparison.quasiIso_naiveCotangentToDifferentialsSingle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentFormallySmoothComparison.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentFormallySmoothComparison.lean#L260). The attribute's comment: “the 0D0L input NL_{P/Y} = Omega_{P/Y} as a quasi-isomorphism of complexes”.
+**`Stacks.NaiveCotangentFormallySmoothComparison.quasiIso_naiveCotangentToDifferentialsSingle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentFormallySmoothComparison.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentFormallySmoothComparison.lean#L260). The attribute's comment: “the 0D0L input NL\_\{P/Y} = Omega\_\{P/Y} as a quasi-isomorphism of complexes”.
 
 > **The 0D0L input of [Stacks Project, Tag 0FV4].**  For a formally smooth morphism of schemes
 > `g : P ⟶ Y` the canonical chain map `NL_{P/Y} ⟶ Ω_{P/Y}[0]` is a quasi-isomorphism: the naive
@@ -746,7 +746,7 @@ theorem quasiIso_naiveCotangentToDifferentialsSingle
     QuasiIso (naiveCotangentToDifferentialsSingle g)
 ```
 
-**`Stacks.NaiveCotangentFormallySmoothComparison.isIso_Q_map_naiveCotangentToDifferentialsSingle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentFormallySmoothComparison.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentFormallySmoothComparison.lean#L285). The attribute's comment: “the 0D0L input: NL_{P/Y} -> Omega_{P/Y}[0] is invertible in D(O_P)”.
+**`Stacks.NaiveCotangentFormallySmoothComparison.isIso_Q_map_naiveCotangentToDifferentialsSingle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentFormallySmoothComparison.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentFormallySmoothComparison.lean#L285). The attribute's comment: “the 0D0L input: NL\_\{P/Y} -> Omega\_\{P/Y}[0] is invertible in D(O\_P)”.
 
 > **The 0D0L input of [Stacks Project, Tag 0FV4], read in `D(𝒪_P)`.**  For a formally smooth
 > morphism of schemes `g : P ⟶ Y` the canonical chain map `NL_{P/Y} ⟶ Ω_{P/Y}[0]` becomes an
@@ -767,7 +767,7 @@ theorem isIso_Q_map_naiveCotangentToDifferentialsSingle
     IsIso (DerivedCategory.Q.map (naiveCotangentToDifferentialsSingle g))
 ```
 
-**`Stacks.NaiveCotangentImmersionFormallySmooth.naiveCotangentIsoConormalDifferentialComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentImmersionFormallySmooth.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentImmersionFormallySmooth.lean#L129). The attribute's comment: “the canonical isomorphism NL_{X/Y} = (C_{X/P} -> i^*Omega_{P/Y}) in D(O_X), with C_{X/P} in degree -1, for f = g . i with i an immersion and g formally smooth”. References: SGA 6 VIII (2.2), “more general”.
+**`Stacks.NaiveCotangentImmersionFormallySmooth.naiveCotangentIsoConormalDifferentialComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentImmersionFormallySmooth.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentImmersionFormallySmooth.lean#L129). The attribute's comment: “the canonical isomorphism NL\_\{X/Y} = (C\_\{X/P} -> i^*Omega\_\{P/Y}) in D(O\_X), with C\_\{X/P} in degree -1, for f = g . i with i an immersion and g formally smooth”. References: SGA 6 VIII (2.2), “more general”.
 
 > **[Stacks Project, Tag 0FV4].**  Let `f : X ⟶ Y` be a morphism of schemes which factors as
 > `f = g ∘ i` with `i : X ⟶ P` an immersion and `g : P ⟶ Y` formally smooth (for example smooth,
@@ -792,7 +792,7 @@ def naiveCotangentIsoConormalDifferentialComplex (f : X ⟶ Y) (hf : f = i ≫ g
       DerivedCategory.Q.obj (Stacks.ConormalSequenceRight.conormalDifferentialComplex i g)
 ```
 
-**`Stacks.NaiveCotangentPullbackFormallySmooth.isZero_homology_negOne_modulePullbackNaiveCotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentPullbackFormallySmooth.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentPullbackFormallySmooth.lean#L339). The attribute's comment: “the pullback step: H^{-1}(i^*NL_{P/Y}) = 0, the detail the source omits”.
+**`Stacks.NaiveCotangentPullbackFormallySmooth.isZero_homology_negOne_modulePullbackNaiveCotangentComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentPullbackFormallySmooth.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentPullbackFormallySmooth.lean#L339). The attribute's comment: “the pullback step: H^\{-1}(i^*NL\_\{P/Y}) = 0, the detail the source omits”.
 
 > **The pullback step of [Stacks Project, Tag 0FV4]: the vanishing `H^{-1}(i^*NL_{P/Y}) = 0`.**
 > For a formally smooth morphism of schemes `g : P ⟶ Y` and an arbitrary morphism `i : X ⟶ P` the
@@ -813,7 +813,7 @@ theorem isZero_homology_negOne_modulePullbackNaiveCotangentComplex
     IsZero ((modulePullbackNaiveCotangentComplex i g).homology (-1))
 ```
 
-**`Stacks.NaiveCotangentPullbackFormallySmooth.quasiIso_pullbackNaiveCotangentToDifferentialsSingle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentPullbackFormallySmooth.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentPullbackFormallySmooth.lean#L385). The attribute's comment: “the pullback step: i^*NL_{P/Y} -> i^*Omega_{P/Y}[0] is a quasi-isomorphism”.
+**`Stacks.NaiveCotangentPullbackFormallySmooth.quasiIso_pullbackNaiveCotangentToDifferentialsSingle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentPullbackFormallySmooth.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentPullbackFormallySmooth.lean#L385). The attribute's comment: “the pullback step: i^*NL\_\{P/Y} -> i^*Omega\_\{P/Y}[0] is a quasi-isomorphism”.
 
 > **The pullback step of [Stacks Project, Tag 0FV4].** For a formally smooth morphism of schemes
 > `g : P ⟶ Y` and an arbitrary morphism `i : X ⟶ P` the canonical chain map
@@ -840,7 +840,7 @@ theorem quasiIso_pullbackNaiveCotangentToDifferentialsSingle
     QuasiIso (pullbackNaiveCotangentToDifferentialsSingle i g)
 ```
 
-**`Stacks.NaiveCotangentPullbackFormallySmooth.isIso_Q_map_pullbackNaiveCotangentToDifferentialsSingle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentPullbackFormallySmooth.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentPullbackFormallySmooth.lean#L415). The attribute's comment: “the pullback step in D(O_X): i^*NL_{P/Y} = i^*Omega_{P/Y}[0]”.
+**`Stacks.NaiveCotangentPullbackFormallySmooth.isIso_Q_map_pullbackNaiveCotangentToDifferentialsSingle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentPullbackFormallySmooth.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/NaiveCotangentPullbackFormallySmooth.lean#L415). The attribute's comment: “the pullback step in D(O\_X): i^*NL\_\{P/Y} = i^*Omega\_\{P/Y}[0]”.
 
 > **The pullback step of [Stacks Project, Tag 0FV4], read in `D(𝒪_X)`.** For a formally smooth
 > morphism of schemes `g : P ⟶ Y` and an arbitrary morphism `i : X ⟶ P` the canonical chain map

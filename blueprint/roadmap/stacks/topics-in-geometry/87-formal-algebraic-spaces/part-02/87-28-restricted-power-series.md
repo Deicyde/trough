@@ -39,7 +39,7 @@ public theorem existsUnique_continuousAlgHom_extends
 
 [Tag 0AL0](https://stacks.math.columbia.edu/tag/0AL0) in the Stacks Project.
 
-**`RestrictedPowerSeries.limitCompleteSpace`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RestrictedPowerSeries.lean, line 799](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RestrictedPowerSeries.lean#L799). The attribute's comment: “limit_completeness”.
+**`RestrictedPowerSeries.limitCompleteSpace`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RestrictedPowerSeries.lean, line 799](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RestrictedPowerSeries.lean#L799). The attribute's comment: “limit\_completeness”.
 
 > Restricted power series are complete for their inverse-limit topology.
 
@@ -51,7 +51,7 @@ public instance limitCompleteSpace {A : Type u} [CommRing A]
     CompleteSpace (RestrictedPowerSeries I σ)
 ```
 
-**`RestrictedPowerSeries.isHomeomorph_adicCompletionEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RestrictedPowerSeries.lean, line 969](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RestrictedPowerSeries.lean#L969). The attribute's comment: “finite_generation_topology”.
+**`RestrictedPowerSeries.isHomeomorph_adicCompletionEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RestrictedPowerSeries.lean, line 969](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RestrictedPowerSeries.lean#L969). The attribute's comment: “finite\_generation\_topology”.
 
 > The canonical completion equivalence is an isomorphism of topological rings when the
 > coefficient ideal is finitely generated.
@@ -69,7 +69,7 @@ public theorem isHomeomorph_adicCompletionEquiv {A : Type u} [CommRing A]
 
 Declarations registered for the tag:
 
-- [`RestrictedPowerSeries.adicCompletionEquiv`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RestrictedPowerSeries.lean#L368), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/RestrictedPowerSeries.lean, line 787](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RestrictedPowerSeries.lean#L787) (StacksFrontier): “ring_identification”.
+- [`RestrictedPowerSeries.adicCompletionEquiv`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RestrictedPowerSeries.lean#L368), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/RestrictedPowerSeries.lean, line 787](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RestrictedPowerSeries.lean#L787) (StacksFrontier): “ring\_identification”.
 
 ## Depends on
 

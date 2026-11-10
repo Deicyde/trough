@@ -401,7 +401,7 @@ theorem constantSheaf_quotientByIdealAction_hom_comp :
 
 [Tag 093N](https://stacks.math.columbia.edu/tag/093N) in the Stacks Project.
 
-**`Stacks.SheafOfModules.Constant.constantModuleSheaf_isFiniteType_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafFiniteness.lean, line 870](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafFiniteness.lean#L870). The attribute's comment: “finite_type”.
+**`Stacks.SheafOfModules.Constant.constantModuleSheaf_isFiniteType_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafFiniteness.lean, line 870](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafFiniteness.lean#L870). The attribute's comment: “finite\_type”.
 
 > **Stacks Project, Tag 093N, part (1).** On a site whose topos is not empty, a constant sheaf
 > of modules is of finite type if and only if its value is a finitely generated module.
@@ -414,7 +414,7 @@ theorem constantModuleSheaf_isFiniteType_iff
     SheafOfModules.IsFiniteType (constantModuleSheaf J M) ↔ ModuleCat.isFG R M
 ```
 
-**`Stacks.SheafOfModules.Constant.constantModuleSheaf_isFinitePresentation_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafFinitePresentation.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafFinitePresentation.lean#L141). The attribute's comment: “finite_presentation”.
+**`Stacks.SheafOfModules.Constant.constantModuleSheaf_isFinitePresentation_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafFinitePresentation.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/ConstantSheafFinitePresentation.lean#L141). The attribute's comment: “finite\_presentation”.
 
 > **Stacks Project, Tag 093N, part (2).** On a site with an object that is not sheaf
 > theoretically empty, a constant sheaf of modules is of finite presentation if and only if its

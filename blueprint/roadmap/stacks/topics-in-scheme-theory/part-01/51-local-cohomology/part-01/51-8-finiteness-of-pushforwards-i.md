@@ -329,7 +329,7 @@ theorem finite_complementCohomologyBase_iff_finite_localCohomology
         ((DerivedCategory.singleFunctor (ModuleCat.{u} A) 0).obj M) ((p + 1 : ℕ) : ℤ))
 ```
 
-**`Stacks.LocalCohomology.exact_lowDegreeSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/CechSectionsComparison.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/LowDegree/CechSectionsComparison.lean#L373). The attribute's comment: “low_degree_sequence”. References: EGA III (1.4.3), “(1.4.3.2), special case”; SGA 2 II (Corollary4), “(4.2)”; SGA 4 V (6.5), “(6.5.3), special case”.
+**`Stacks.LocalCohomology.exact_lowDegreeSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/CechSectionsComparison.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/LowDegree/CechSectionsComparison.lean#L373). The attribute's comment: “low\_degree\_sequence”. References: EGA III (1.4.3), “(1.4.3.2), special case”; SGA 2 II (Corollary4), “(4.2)”; SGA 4 V (6.5), “(6.5.3), special case”.
 
 > **Stacks 0BK0, the low-degree sequence.** Let `I` be a finitely generated ideal of a
 > commutative ring `A`, let `U = Spec A \ V(I)`, let `M` be an `A`-module and let `F` be a sheaf of
@@ -653,7 +653,7 @@ theorem not_isCoherent_pushforward_structureSheaf_of_isAssociatedPrime_completed
     ¬ ((Scheme.Modules.pushforward U.ι).obj (SheafOfModules.unit _)).IsCoherent
 ```
 
-**`Stacks.LocalCohomology.not_isCoherent_pushforward_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CompletedLocalObstruction.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/CompletedLocalObstruction.lean#L402). The attribute's comment: “completed_local_ring_obstruction”. References: EGA IV (7.2.4), “(e) ⇒ (f)”.
+**`Stacks.LocalCohomology.not_isCoherent_pushforward_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/CompletedLocalObstruction.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/CompletedLocalObstruction.lean#L402). The attribute's comment: “completed\_local\_ring\_obstruction”. References: EGA IV (7.2.4), “(e) ⇒ (f)”.
 
 > **[Stacks, Tag 0AWC], the completed-local-ring obstruction to coherence.** Let `j : U ⟶ X` be
 > an open immersion of integral locally Noetherian schemes and suppose some point `z` outside the

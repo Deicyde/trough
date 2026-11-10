@@ -177,7 +177,7 @@ theorem finite_syntomic_iff_isPerfect_and_hasTorAmplitude_naiveCotangentComplex
 
 [Tag 0FKZ](https://stacks.math.columbia.edu/tag/0FKZ) in the Stacks Project.
 
-**`AlgebraicGeometry.universalAlgebraStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/AlgebraAxioms.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/AlgebraAxioms.lean#L79). The attribute's comment: “algebra_axioms”.
+**`AlgebraicGeometry.universalAlgebraStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/AlgebraAxioms.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/AlgebraAxioms.lean#L79). The attribute's comment: “algebra\_axioms”.
 
 > The defining relations on the universal structure constants equip `B_d`
 > with its prescribed commutative `A_d`-algebra structure.
@@ -187,7 +187,7 @@ noncomputable def universalAlgebraStructure (d : ℕ) [NeZero d] :
     UniversalAlgebraStructure d
 ```
 
-**`AlgebraicGeometry.universalFamily_isFiniteLocallyFreeOfRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/Rank.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/Rank.lean#L159). The attribute's comment: “finite_free_rank”.
+**`AlgebraicGeometry.universalFamily_isFiniteLocallyFreeOfRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/Rank.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/Rank.lean#L159). The attribute's comment: “finite\_free\_rank”.
 
 > The universal affine family of rank-`d` commutative algebras is finite
 > locally free of rank `d`.
@@ -198,7 +198,7 @@ theorem universalFamily_isFiniteLocallyFreeOfRank (d : ℕ) [NeZero d] :
       (universalFamily.{u} d (universalAlgebraStructure d)) d
 ```
 
-**`AlgebraicGeometry.UniversalFiniteFreeModule`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean#L96). The attribute's comment: “universal_finite_free_family”.
+**`AlgebraicGeometry.UniversalFiniteFreeModule`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean#L96). The attribute's comment: “universal\_finite\_free\_family”.
 
 > The free carrier `B_d`, written using its coefficients in the distinguished basis.
 
@@ -206,7 +206,7 @@ theorem universalFamily_isFiniteLocallyFreeOfRank (d : ℕ) [NeZero d] :
 structure UniversalFiniteFreeModule (d : ℕ) [NeZero d]
 ```
 
-**`AlgebraicGeometry.universalBasisVector`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean#L103). The attribute's comment: “universal_finite_free_family”.
+**`AlgebraicGeometry.universalBasisVector`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean#L103). The attribute's comment: “universal\_finite\_free\_family”.
 
 > The distinguished basis vector `e_i`.
 
@@ -215,7 +215,7 @@ def universalBasisVector (d : ℕ) [NeZero d] (i : Fin d) :
     UniversalFiniteFreeModule d
 ```
 
-**`AlgebraicGeometry.universalUnit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean#L109). The attribute's comment: “universal_finite_free_family”.
+**`AlgebraicGeometry.universalUnit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean#L109). The attribute's comment: “universal\_finite\_free\_family”.
 
 > The prescribed unit `e_1` (indexed by `0` in `Fin d`).
 
@@ -223,7 +223,7 @@ def universalBasisVector (d : ℕ) [NeZero d] (i : Fin d) :
 def universalUnit (d : ℕ) [NeZero d] : UniversalFiniteFreeModule d
 ```
 
-**`AlgebraicGeometry.universalMultiplication`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean#L114). The attribute's comment: “universal_finite_free_family”.
+**`AlgebraicGeometry.universalMultiplication`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean#L114). The attribute's comment: “universal\_finite\_free\_family”.
 
 > Multiplication on `B_d` prescribed by the universal structure constants.
 
@@ -232,7 +232,7 @@ def universalMultiplication (d : ℕ) [NeZero d]
     (x y : UniversalFiniteFreeModule d) : UniversalFiniteFreeModule d
 ```
 
-**`AlgebraicGeometry.universalTotalScheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean#L153). The attribute's comment: “universal_finite_free_family”.
+**`AlgebraicGeometry.universalTotalScheme`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean#L153). The attribute's comment: “universal\_finite\_free\_family”.
 
 > The affine total space `Y_d = Spec(B_d)`, after equipping the prescribed
 > multiplication table with its commutative-ring structure.
@@ -242,7 +242,7 @@ def universalTotalScheme (d : ℕ) [NeZero d] (s : UniversalAlgebraStructure d) 
     Scheme.{u}
 ```
 
-**`AlgebraicGeometry.universalFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean#L160). The attribute's comment: “universal_finite_free_family”.
+**`AlgebraicGeometry.universalFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean#L160). The attribute's comment: “universal\_finite\_free\_family”.
 
 > The affine morphism `pi_d : Y_d ⟶ X_d` induced by the universal algebra map.
 
@@ -254,8 +254,8 @@ def universalFamily (d : ℕ) [NeZero d] (s : UniversalAlgebraStructure d) :
 
 Declarations registered for the tag:
 
-- [`universalRing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=universalRing#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean#L53) (StacksFrontier): “universal_finite_free_family”.
-- [`scheme`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=scheme#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean#L54) (StacksFrontier): “universal_finite_free_family”.
+- [`universalRing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=universalRing#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean#L53) (StacksFrontier): “universal\_finite\_free\_family”.
+- [`scheme`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=scheme#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalFamily.lean#L54) (StacksFrontier): “universal\_finite\_free\_family”.
 
 ## Tag 0FL0, a lemma
 
@@ -371,7 +371,7 @@ theorem dense_universalEtaleOpen_in_universalSyntomicOpen :
 
 [Tag 0FL3](https://stacks.math.columbia.edu/tag/0FL3) in the Stacks Project.
 
-**`AlgebraicGeometry.universalSyntomicPreimage_smooth_uLift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalSectionSmooth.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalSectionSmooth.lean#L337). The attribute's comment: “the geometric assertion: V_d = pi_d^{-1}(U_d) is smooth over Z, for the open U_d of Tag 0FL0 and the universal finite free family pi_d of Tag 0FKZ. Stated over the terminal scheme Spec(ULift Z) of the universe of the test schemes.”.
+**`AlgebraicGeometry.universalSyntomicPreimage_smooth_uLift`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalSectionSmooth.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalSectionSmooth.lean#L337). The attribute's comment: “the geometric assertion: V\_d = pi\_d^\{-1}(U\_d) is smooth over Z, for the open U\_d of Tag 0FL0 and the universal finite free family pi\_d of Tag 0FKZ. Stated over the terminal scheme Spec(ULift Z) of the universe of the test schemes.”.
 
 > **Stacks Project, Tag 0FL3,** the geometric assertion. The preimage
 > `V_d = pi_d^{-1}(U_d)` of the open of Tag 0FL0 under the universal finite free family of rank `d`
@@ -383,7 +383,7 @@ public instance universalSyntomicPreimage_smooth_uLift (d : ℕ) [NeZero d] :
     Smooth (specULiftZIsTerminal.from (universalSyntomicPreimage.{u} d).toScheme)
 ```
 
-**`AlgebraicGeometry.universalSyntomicPreimage_smooth`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalSectionSmooth.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalSectionSmooth.lean#L366). The attribute's comment: “the geometric assertion: V_d = pi_d^{-1}(U_d) is smooth over Z, for the open U_d of Tag 0FL0 and the universal finite free family pi_d of Tag 0FKZ. Stated over Spec(Z) itself.”.
+**`AlgebraicGeometry.universalSyntomicPreimage_smooth`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalSectionSmooth.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/FiniteSyntomicMorphisms/UniversalSectionSmooth.lean#L366). The attribute's comment: “the geometric assertion: V\_d = pi\_d^\{-1}(U\_d) is smooth over Z, for the open U\_d of Tag 0FL0 and the universal finite free family pi\_d of Tag 0FKZ. Stated over Spec(Z) itself.”.
 
 > **Stacks Project, Tag 0FL3,** the geometric assertion, in the literal form of the source:
 > `V_d = pi_d^{-1}(U_d)` is smooth over the spectrum of the integers themselves.
@@ -393,7 +393,7 @@ public instance universalSyntomicPreimage_smooth (d : ℕ) [NeZero d] :
     Smooth (specZIsTerminal.from (universalSyntomicPreimage d).toScheme)
 ```
 
-**`Algebra.exists_finite_syntomic_section_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/SectionedDeformation.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Syntomic/SectionedDeformation.lean#L400). The attribute's comment: “the deformation problem the remark reduces the smoothness of V_d over Z to, and the remark's solution of it: along a surjection C' → C with nilpotent kernel onto a nonzero artinian ring (a small extension of artinian local rings in particular) a finite syntomic C-algebra with a section lifts to a finite syntomic C'-algebra with a section whose tensor product with C recovers it, the reduction being a surjection B' → B with kernel I·B' that matches the two sections.”.
+**`Algebra.exists_finite_syntomic_section_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Syntomic/SectionedDeformation.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Syntomic/SectionedDeformation.lean#L400). The attribute's comment: “the deformation problem the remark reduces the smoothness of V\_d over Z to, and the remark's solution of it: along a surjection C' → C with nilpotent kernel onto a nonzero artinian ring (a small extension of artinian local rings in particular) a finite syntomic C-algebra with a section lifts to a finite syntomic C'-algebra with a section whose tensor product with C recovers it, the reduction being a surjection B' → B with kernel I·B' that matches the two sections.”.
 
 > **Stacks Project, Tag 0FL3,** the deformation problem the remark reduces the smoothness of
 > `V_d` over `Z` to, and its solution. Along a surjection `C' → C` with nilpotent kernel `I` onto a

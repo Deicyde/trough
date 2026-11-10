@@ -54,7 +54,7 @@ instance unramified_isLocalAtSource :
     MorphismProperty.IsLocalAtSource (@Unramified.{u}) Scheme.etalePrecoverage
 ```
 
-**`AlgebraicGeometry.gUnramified_isLocalAtSource_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/Unramified.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/Unramified.lean#L126). The attribute's comment: “g_unramified”. References: SGA 4 IV (8.5.5), “special case”.
+**`AlgebraicGeometry.gUnramified_isLocalAtSource_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/Unramified.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/Unramified.lean#L126). The attribute's comment: “g\_unramified”. References: SGA 4 IV (8.5.5), “special case”.
 
 > **Stacks Project, Tag 03YV, G-unramified case.** G-unramifiedness of morphisms of schemes
 > is local on the source for the étale topology.

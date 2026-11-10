@@ -43,7 +43,7 @@ Declarations registered for the tag:
 Declarations registered for the tag:
 
 - [`AlgebraicGeometry.FormallyUnramified.instHasRingHomPropertyFormallyUnramified`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.FormallyUnramified.instHasRingHomPropertyFormallyUnramified#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch37.lean, line 33](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch37.lean#L33) (StacksFrontier): “formally unramified is the affine-local property of formally unramified ring maps, hence local on the source and on the target”.
-- [`AlgebraicGeometry.IsZariskiLocalAtSource.resLE`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsZariskiLocalAtSource.resLE#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch37.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch37.lean#L36) (StacksFrontier): “a property local on the source and the target is preserved by restriction f|_U : U → V”.
+- [`AlgebraicGeometry.IsZariskiLocalAtSource.resLE`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.IsZariskiLocalAtSource.resLE#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch37.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch37.lean#L36) (StacksFrontier): “a property local on the source and the target is preserved by restriction f|\_U : U → V”.
 
 ## Tag 02HD, a lemma
 

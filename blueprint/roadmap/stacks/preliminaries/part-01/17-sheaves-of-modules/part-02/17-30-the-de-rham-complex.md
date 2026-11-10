@@ -160,7 +160,7 @@ noncomputable abbrev relativeDeRhamComplex :
 
 [Tag 0G3Z](https://stacks.math.columbia.edu/tag/0G3Z) in the Stacks Project.
 
-**`AlgebraicGeometry.SheafOfModules.deRhamDifferentialHom_isGlobalDiffOpOfOrder_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/DeRhamDifferentialOperator.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/DeRhamDifferentialOperator.lean#L256). The attribute's comment: “the case of a morphism of ringed spaces f : X -> Y, at phi : f^{-1} O_Y -> O_X”.
+**`AlgebraicGeometry.SheafOfModules.deRhamDifferentialHom_isGlobalDiffOpOfOrder_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/DeRhamDifferentialOperator.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/DeRhamDifferentialOperator.lean#L256). The attribute's comment: “the case of a morphism of ringed spaces f : X -> Y, at phi : f^\{-1} O\_Y -> O\_X”.
 
 > **Stacks Project, Tag 0G3Y.** For a morphism `φ : A ⟶ B` of sheaves of commutative rings on
 > a topological space, every differential `d : ⋀ᵖ Ω ⟶ ⋀ᵖ⁺¹ Ω` of the relative de Rham complex is a

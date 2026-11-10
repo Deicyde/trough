@@ -272,7 +272,7 @@ theorem exists_koszulRegular_generators_of_basis (x : X) {r : ℕ}
       IsGeneratedByOn X.toRingedSpace J U (fun i => (fU i).1)
 ```
 
-**`Stacks.AlgebraicGeometry.RegularIdealSheaf.exists_koszulRegular_sections_of_basis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularImmersion/ConormalPermanence.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RegularImmersion/ConormalPermanence.lean#L166). The attribute's comment: “part (3), with the local witness at x in place of Koszul-regularity of J, and assuming J_x is not the whole local ring”. References: SGA 6 VII (1.4), “1.4.2”.
+**`Stacks.AlgebraicGeometry.RegularIdealSheaf.exists_koszulRegular_sections_of_basis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularImmersion/ConormalPermanence.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RegularImmersion/ConormalPermanence.lean#L166). The attribute's comment: “part (3), with the local witness at x in place of Koszul-regularity of J, and assuming J\_x is not the whole local ring”. References: SGA 6 VII (1.4), “1.4.2”.
 
 > **[Stacks Project, Tag 067N] part (3).** Let `J` be an ideal subsheaf of the structure sheaf
 > of a locally ringed space, generated on a neighbourhood of `x` by a sequence that is
@@ -392,7 +392,7 @@ theorem isQuasicoherent_of_isQuasiRegularIdealSheaf
 
 [Tag 063G](https://stacks.math.columbia.edu/tag/063G) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.H1RegularIdealSheaf.isH1RegularIdealSheaf_iff_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/H1RegularIdealSheaf/Affine.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/H1RegularIdealSheaf/Affine.lean#L120). The attribute's comment: “h1_regular”.
+**`Stacks.AlgebraicGeometry.H1RegularIdealSheaf.isH1RegularIdealSheaf_iff_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/H1RegularIdealSheaf/Affine.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/H1RegularIdealSheaf/Affine.lean#L120). The attribute's comment: “h1\_regular”.
 
 > **Stacks Project, Tag 063G (`h1_regular`).** A sheaf of ideals on a scheme is `H₁`-regular if
 > and only if, around each point of the support of its quotient, it is generated on an affine open
@@ -407,7 +407,7 @@ theorem isH1RegularIdealSheaf_iff_affine (X : Scheme.{u})
           IsGeneratedByOn X.toRingedSpace J U.1 f ∧ Koszul.IsH1Regular f
 ```
 
-**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isKoszulRegularIdealSheaf_iff_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/KoszulRegularIdealSheaf/Stalkwise.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/KoszulRegularIdealSheaf/Stalkwise.lean#L104). The attribute's comment: “koszul_regular”.
+**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isKoszulRegularIdealSheaf_iff_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/KoszulRegularIdealSheaf/Stalkwise.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/KoszulRegularIdealSheaf/Stalkwise.lean#L104). The attribute's comment: “koszul\_regular”.
 
 > **Stacks Project, Tag 063G (`koszul_regular`).** A sheaf of ideals on a scheme is
 > Koszul-regular if and only if, around each point of the support of its quotient, it is generated
@@ -422,7 +422,7 @@ theorem isKoszulRegularIdealSheaf_iff_affine (X : Scheme.{u})
           IsGeneratedByOn X.toRingedSpace J U.1 f ∧ Koszul.IsKoszulRegular f
 ```
 
-**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isQuasiRegularIdealSheaf_iff_exists_affine_generators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularIdealSheaf/QuasiRegular.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RegularIdealSheaf/QuasiRegular.lean#L148). The attribute's comment: “quasi_regular”.
+**`Stacks.AlgebraicGeometry.RegularIdealSheaf.isQuasiRegularIdealSheaf_iff_exists_affine_generators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RegularIdealSheaf/QuasiRegular.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RegularIdealSheaf/QuasiRegular.lean#L148). The attribute's comment: “quasi\_regular”.
 
 > A sheaf of ideals on a scheme is quasi-regular
 > if and only if, around each point of the support of its quotient, it is generated on an affine

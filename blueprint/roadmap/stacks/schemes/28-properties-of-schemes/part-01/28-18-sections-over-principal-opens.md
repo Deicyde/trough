@@ -14,7 +14,7 @@ Section 28.18 of the Stacks Project, [Tag 0B5K](https://stacks.math.columbia.edu
 
 [Tag 01P7](https://stacks.math.columbia.edu/tag/01P7) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocalizedModule_restriction_basicOpen_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/PrincipalOpens/Sections.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/PrincipalOpens/Sections.lean#L77). The attribute's comment: “quasi-coherent modules”. References: EGA III (1.4.5), “H⁰, L = 𝒪_X, qcqs”.
+**`AlgebraicGeometry.isLocalizedModule_restriction_basicOpen_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/PrincipalOpens/Sections.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/PrincipalOpens/Sections.lean#L77). The attribute's comment: “quasi-coherent modules”. References: EGA III (1.4.5), “H⁰, L = 𝒪\_X, qcqs”.
 
 > On a quasi-compact, quasi-separated open, restriction of sections of a quasi-coherent
 > module to a principal open is localization at the defining function.
@@ -32,7 +32,7 @@ theorem isLocalizedModule_restriction_basicOpen_of_qcqs {X : Scheme.{u}} (M : X.
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.isLocalization_basicOpen_of_qcqs`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isLocalization_basicOpen_of_qcqs#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Properties/PrincipalOpens/Sections.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/PrincipalOpens/Sections.lean#L93) (StacksFrontier): “the structure sheaf, for a quasi-compact quasi-separated open”. References: EGA I (1.4.1), “special case”; EGA I (9.3.2), “Case L = O”; EGA I (9.3.3), “special case”; EGA III (1.2.2), “special case”; EGA III (1.4.13), “q = 0 and F = O_X”; EGA III (1.4.6), “degree zero, F = O_X”; EGA III (2.1.2), “special case”.
+- [`AlgebraicGeometry.isLocalization_basicOpen_of_qcqs`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isLocalization_basicOpen_of_qcqs#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Properties/PrincipalOpens/Sections.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/PrincipalOpens/Sections.lean#L93) (StacksFrontier): “the structure sheaf, for a quasi-compact quasi-separated open”. References: EGA I (1.4.1), “special case”; EGA I (9.3.2), “Case L = O”; EGA I (9.3.3), “special case”; EGA III (1.2.2), “special case”; EGA III (1.4.13), “q = 0 and F = O\_X”; EGA III (1.4.6), “degree zero, F = O\_X”; EGA III (2.1.2), “special case”.
 
 ## Tag 0B5L, an equation
 

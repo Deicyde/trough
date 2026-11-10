@@ -14,7 +14,7 @@ Section 75.30 of the Stacks Project, [Tag 0H05](https://stacks.math.columbia.edu
 
 [Tag 0H06](https://stacks.math.columbia.edu/tag/0H06) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQC_iff_hasQuasicoherentCohomology_affineEtaleChaotic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerived.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerived.lean#L179). The attribute's comment: “the equivalence of (3) D_QCoh(X_affine, O_X) and (4) QC(X_affine, O_X), as an equality of the two conditions on an object of D(O_X) of the chaotic affine etale site”.
+**`AlgebraicGeometry.Space.isQC_iff_hasQuasicoherentCohomology_affineEtaleChaotic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerived.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerived.lean#L179). The attribute's comment: “the equivalence of (3) D\_QCoh(X\_affine, O\_X) and (4) QC(X\_affine, O\_X), as an equality of the two conditions on an object of D(O\_X) of the chaotic affine etale site”.
 
 > **Categories (3) and (4) of Stacks 0H06 agree.**  On the affine étale charts of an algebraic
 > space with the chaotic topology, an object of the derived category of `𝒪_F`-modules is a
@@ -34,7 +34,7 @@ theorem isQC_iff_hasQuasicoherentCohomology_affineEtaleChaotic
       hasQuasicoherentCohomology.{w} (affineEtaleChaoticRingedSite B S hS F hF) K
 ```
 
-**`AlgebraicGeometry.Space.isQC_eq_hasQuasicoherentCohomology_affineEtaleChaotic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerived.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerived.lean#L194). The attribute's comment: “the equivalence of (3) D_QCoh(X_affine, O_X) and (4) QC(X_affine, O_X), as an equality of object properties on D(O_X) of the chaotic affine etale site”.
+**`AlgebraicGeometry.Space.isQC_eq_hasQuasicoherentCohomology_affineEtaleChaotic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerived.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerived.lean#L194). The attribute's comment: “the equivalence of (3) D\_QCoh(X\_affine, O\_X) and (4) QC(X\_affine, O\_X), as an equality of object properties on D(O\_X) of the chaotic affine etale site”.
 
 > **Categories (3) and (4) of Stacks 0H06 are cut out of `D(𝒪_F)` by the same object
 > property.**  This is the previous result as an equality of object properties, which is the form
@@ -50,7 +50,7 @@ theorem isQC_eq_hasQuasicoherentCohomology_affineEtaleChaotic
       hasQuasicoherentCohomology.{w} (affineEtaleChaoticRingedSite B S hS F hF)
 ```
 
-**`AlgebraicGeometry.Space.derivedCategoryB_isQuasicoherentOnSite_affineEtaleRestriction_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerived.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerived.lean#L391). The attribute's comment: “the equivalence of (1) D_QCoh(O_X) and (2) D_QCoh(X_affine_etale, O_X), at the level of the object properties cutting them out, carrying as the hypothesis hrefl the converse of isQuasicoherentOnSite_affineEtaleModuleRestriction: a module on the small etale site whose restriction to the affine charts is quasi-coherent is quasi-coherent”.
+**`AlgebraicGeometry.Space.derivedCategoryB_isQuasicoherentOnSite_affineEtaleRestriction_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerived.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerived.lean#L391). The attribute's comment: “the equivalence of (1) D\_QCoh(O\_X) and (2) D\_QCoh(X\_affine\_etale, O\_X), at the level of the object properties cutting them out, carrying as the hypothesis hrefl the converse of isQuasicoherentOnSite\_affineEtaleModuleRestriction: a module on the small etale site whose restriction to the affine charts is quasi-coherent is quasi-coherent”.
 
 > **Categories (1) and (2) of Stacks 0H06 agree**, over the single named input `hrefl`.
 >
@@ -82,7 +82,7 @@ theorem derivedCategoryB_isQuasicoherentOnSite_affineEtaleRestriction_iff
           ((Stacks.SheafOfModules.Tensor.ringSheaf (smallEtaleRingedSite B S hS F hF).O))) K
 ```
 
-**`AlgebraicGeometry.Space.quasicoherentDerivedAffineEtaleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerived.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerived.lean#L449). The attribute's comment: “the equivalence of (1) D_QCoh(O_X) and (2) D_QCoh(X_affine_etale, O_X), as an equivalence of categories induced by derived restriction, carrying as the hypothesis hrefl the converse of isQuasicoherentOnSite_affineEtaleModuleRestriction: a module on the small etale site whose restriction to the affine charts is quasi-coherent is quasi-coherent”.
+**`AlgebraicGeometry.Space.quasicoherentDerivedAffineEtaleEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerived.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerived.lean#L449). The attribute's comment: “the equivalence of (1) D\_QCoh(O\_X) and (2) D\_QCoh(X\_affine\_etale, O\_X), as an equivalence of categories induced by derived restriction, carrying as the hypothesis hrefl the converse of isQuasicoherentOnSite\_affineEtaleModuleRestriction: a module on the small etale site whose restriction to the affine charts is quasi-coherent is quasi-coherent”.
 
 > **Categories (1) and (2) of Stacks 0H06 are equivalent**, over the single named input
 > `hrefl`: restriction to the affine étale charts is an exact equivalence
@@ -106,7 +106,7 @@ noncomputable def quasicoherentDerivedAffineEtaleEquivalence
       affineEtaleQuasicoherentDerivedCategory B S hS F hF
 ```
 
-**`AlgebraicGeometry.Space.isQC_iff_hasQuasicoherentCohomology_affineEtaleChartChaotic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean#L405). The attribute's comment: “the equivalence of (3) D_QCoh(X_affine, O_X) and (4) QC(X_affine, O_X), as an equality of the two conditions on an object of D(X_affine, O_X), with O_X the structure sheaf of D_QCoh(O_X) restricted to the affine charts”.
+**`AlgebraicGeometry.Space.isQC_iff_hasQuasicoherentCohomology_affineEtaleChartChaotic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean#L405). The attribute's comment: “the equivalence of (3) D\_QCoh(X\_affine, O\_X) and (4) QC(X\_affine, O\_X), as an equality of the two conditions on an object of D(X\_affine, O\_X), with O\_X the structure sheaf of D\_QCoh(O\_X) restricted to the affine charts”.
 
 > **Categories (3) and (4) of Stacks 0H06 agree.** On the chaotic affine étale site of `F`, an
 > object of the derived category of modules is cartesian in the sense of Stacks 0GYU exactly when
@@ -124,7 +124,7 @@ theorem isQC_iff_hasQuasicoherentCohomology_affineEtaleChartChaotic
       hasQuasicoherentCohomology.{w} (affineEtaleChartChaoticRingedSite B S hS F hF) K
 ```
 
-**`AlgebraicGeometry.Space.affineEtaleChartChaoticQuasicoherentQCEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean#L420). The attribute's comment: “the equivalence of (3) D_QCoh(X_affine, O_X) and (4) QC(X_affine, O_X)”.
+**`AlgebraicGeometry.Space.affineEtaleChartChaoticQuasicoherentQCEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean#L420). The attribute's comment: “the equivalence of (3) D\_QCoh(X\_affine, O\_X) and (4) QC(X\_affine, O\_X)”.
 
 > **The equivalence of categories (3) and (4) of Stacks 0H06**,
 > `D_QCoh(F_{affine}, 𝒪_F) ≌ QC(F_{affine}, 𝒪_F)`: the two are the same full subcategory of
@@ -138,7 +138,7 @@ noncomputable def affineEtaleChartChaoticQuasicoherentQCEquivalence :
       QC.{w} (affineEtaleBaseChangeData.{u, w} B S hS F hF)
 ```
 
-**`AlgebraicGeometry.Space.affineEtaleChartQuasicoherentDerivedChaoticEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean#L474). The attribute's comment: “the equivalence of (2) D_QCoh(X_affine_etale, O_X) and (3) D_QCoh(X_affine, O_X), given by Rε_* for the change of topology ε from the etale to the chaotic topology”.
+**`AlgebraicGeometry.Space.affineEtaleChartQuasicoherentDerivedChaoticEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean#L474). The attribute's comment: “the equivalence of (2) D\_QCoh(X\_affine\_etale, O\_X) and (3) D\_QCoh(X\_affine, O\_X), given by Rε\_* for the change of topology ε from the etale to the chaotic topology”.
 
 > **Categories (2) and (3) of Stacks 0H06 are equivalent**: for the change of topology
 > `ε : (F_{affine,étale}, 𝒪_F) ⟶ (F_{affine}, 𝒪_F)` from the étale to the chaotic topology on the
@@ -162,7 +162,7 @@ noncomputable def affineEtaleChartQuasicoherentDerivedChaoticEquivalence :
       affineEtaleChartChaoticQuasicoherentDerivedCategory.{u, w} B S hS F hF
 ```
 
-**`AlgebraicGeometry.Space.quasicoherentDerivedAffineEtaleChartEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean, line 507](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean#L507). The attribute's comment: “the equivalence of (1) D_QCoh(O_X) and (2) D_QCoh(X_affine_etale, O_X), induced by restriction to the affine charts”.
+**`AlgebraicGeometry.Space.quasicoherentDerivedAffineEtaleChartEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean, line 507](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChain.lean#L507). The attribute's comment: “the equivalence of (1) D\_QCoh(O\_X) and (2) D\_QCoh(X\_affine\_etale, O\_X), induced by restriction to the affine charts”.
 
 > **Categories (1) and (2) of Stacks 0H06 are equivalent**: restriction to the affine étale
 > charts induces an equivalence
@@ -210,7 +210,7 @@ noncomputable def quasicoherentDerivedAffineEtaleChain :
         QC.{w} (affineEtaleBaseChangeData.{u, w} B S hS F hF))
 ```
 
-**`AlgebraicGeometry.Space.isTriangulated_quasicoherentDerivedAffineEtaleChain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean#L383). The attribute's comment: “the four categories (1) D_QCoh(O_X), (2) D_QCoh(X_affine_etale, O_X), (3) D_QCoh(X_affine, O_X) and (4) QC(X_affine, O_X) are full triangulated subcategories of the derived categories they sit in, which is the triangulated structure the tag speaks of”.
+**`AlgebraicGeometry.Space.isTriangulated_quasicoherentDerivedAffineEtaleChain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean#L383). The attribute's comment: “the four categories (1) D\_QCoh(O\_X), (2) D\_QCoh(X\_affine\_etale, O\_X), (3) D\_QCoh(X\_affine, O\_X) and (4) QC(X\_affine, O\_X) are full triangulated subcategories of the derived categories they sit in, which is the triangulated structure the tag speaks of”.
 
 > **The four categories of Stacks 0H06 are full triangulated subcategories** of the derived
 > categories they sit in: in order, `D_QCoh(𝒪_F) ⊆ D(𝒪_F)`,
@@ -242,7 +242,7 @@ theorem isTriangulated_quasicoherentDerivedAffineEtaleChain :
         (IsQC.{w} (affineEtaleBaseChangeData.{u, w} B S hS F hF))
 ```
 
-**`AlgebraicGeometry.Space.commShiftAffineEtaleChartChaoticQuasicoherentQCEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean#L417). The attribute's comment: “the equivalence (3) D_QCoh(X_affine, O_X) ≃ (4) QC(X_affine, O_X) commutes with the translation [1]: half of the tag's assertion that it is exact”.
+**`AlgebraicGeometry.Space.commShiftAffineEtaleChartChaoticQuasicoherentQCEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean#L417). The attribute's comment: “the equivalence (3) D\_QCoh(X\_affine, O\_X) ≃ (4) QC(X\_affine, O\_X) commutes with the translation [1]: half of the tag's assertion that it is exact”.
 
 > **The equivalence of categories (3) and (4) of Stacks 0H06 commutes with the translation.**
 > Its functor, followed by the inclusion of `QC(F_{affine}, 𝒪_F)`, is the inclusion of
@@ -260,7 +260,7 @@ noncomputable instance commShiftAffineEtaleChartChaoticQuasicoherentQCEquivalenc
     (affineEtaleChartChaoticQuasicoherentQCEquivalence.{u, w} B S hS F hF).functor.CommShift ℤ
 ```
 
-**`AlgebraicGeometry.Space.commShiftAffineEtaleChartQuasicoherentDerivedChaoticEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean#L452). The attribute's comment: “the equivalence (2) D_QCoh(X_affine_etale, O_X) ≃ (3) D_QCoh(X_affine, O_X) commutes with the translation [1]: half of the tag's assertion that it is exact”.
+**`AlgebraicGeometry.Space.commShiftAffineEtaleChartQuasicoherentDerivedChaoticEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean#L452). The attribute's comment: “the equivalence (2) D\_QCoh(X\_affine\_etale, O\_X) ≃ (3) D\_QCoh(X\_affine, O\_X) commutes with the translation [1]: half of the tag's assertion that it is exact”.
 
 > **The equivalence of categories (2) and (3) of Stacks 0H06 commutes with the translation.**
 > Its functor, followed by the inclusion of `D_QCoh(F_{affine}, 𝒪_F)`, is the inclusion of
@@ -279,7 +279,7 @@ noncomputable instance commShiftAffineEtaleChartQuasicoherentDerivedChaoticEquiv
       hF).functor.CommShift ℤ
 ```
 
-**`AlgebraicGeometry.Space.commShiftQuasicoherentDerivedAffineEtaleChartEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean#L501). The attribute's comment: “the equivalence (1) D_QCoh(O_X) ≃ (2) D_QCoh(X_affine_etale, O_X) commutes with the translation [1]: half of the tag's assertion that it is exact”.
+**`AlgebraicGeometry.Space.commShiftQuasicoherentDerivedAffineEtaleChartEquivalence`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean#L501). The attribute's comment: “the equivalence (1) D\_QCoh(O\_X) ≃ (2) D\_QCoh(X\_affine\_etale, O\_X) commutes with the translation [1]: half of the tag's assertion that it is exact”.
 
 > **The equivalence of categories (1) and (2) of Stacks 0H06 commutes with the translation.**
 > Its functor, followed by the inclusion of `D_QCoh(F_{affine,étale}, 𝒪_F)`, is the inclusion of
@@ -302,7 +302,7 @@ noncomputable instance commShiftQuasicoherentDerivedAffineEtaleChartEquivalence 
     (quasicoherentDerivedAffineEtaleChartEquivalence.{u, w} B S hS F hF).functor.CommShift ℤ
 ```
 
-**`AlgebraicGeometry.Space.isTriangulated_quasicoherentDerivedAffineEtaleChainEquivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean, line 616](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean#L616). The attribute's comment: “the three equivalences of the chain are exact: (1) D_QCoh(O_X) ≃ (2) D_QCoh(X_affine_etale, O_X), (2) ≃ (3) D_QCoh(X_affine, O_X) and (3) ≃ (4) QC(X_affine, O_X) each carry distinguished triangles to distinguished triangles, over the compatibilities with the translation [1] registered for them under this tag”.
+**`AlgebraicGeometry.Space.isTriangulated_quasicoherentDerivedAffineEtaleChainEquivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean, line 616](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean#L616). The attribute's comment: “the three equivalences of the chain are exact: (1) D\_QCoh(O\_X) ≃ (2) D\_QCoh(X\_affine\_etale, O\_X), (2) ≃ (3) D\_QCoh(X\_affine, O\_X) and (3) ≃ (4) QC(X\_affine, O\_X) each carry distinguished triangles to distinguished triangles, over the compatibilities with the translation [1] registered for them under this tag”.
 
 > **The three equivalences of Stacks 0H06 are exact.**  For an algebraic space `F` over `S`, the
 > canonical equivalences
@@ -344,7 +344,7 @@ theorem isTriangulated_quasicoherentDerivedAffineEtaleChainEquivalences :
         hF).functor.IsTriangulated
 ```
 
-**`AlgebraicGeometry.Space.isTriangulatedEquivalence_quasicoherentDerivedAffineEtaleChain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean, line 709](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean#L709). The attribute's comment: “each of the three equivalences (1) D_QCoh(O_X) ≃ (2) D_QCoh(X_affine_etale, O_X), (2) ≃ (3) D_QCoh(X_affine, O_X) and (3) ≃ (4) QC(X_affine, O_X) is an exact equivalence of triangulated categories: functor and inverse both commute with the translation [1], compatibly on unit and counit, and both preserve distinguished triangles”.
+**`AlgebraicGeometry.Space.isTriangulatedEquivalence_quasicoherentDerivedAffineEtaleChain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean, line 709](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentDerivedChainTriangulated.lean#L709). The attribute's comment: “each of the three equivalences (1) D\_QCoh(O\_X) ≃ (2) D\_QCoh(X\_affine\_etale, O\_X), (2) ≃ (3) D\_QCoh(X\_affine, O\_X) and (3) ≃ (4) QC(X\_affine, O\_X) is an exact equivalence of triangulated categories: functor and inverse both commute with the translation [1], compatibly on unit and counit, and both preserve distinguished triangles”.
 
 > **The three equivalences of Stacks 0H06 are exact equivalences of triangulated categories**,
 > in Mathlib's bundled form: for an algebraic space `F` over `S`, each of
@@ -371,7 +371,7 @@ theorem isTriangulatedEquivalence_quasicoherentDerivedAffineEtaleChain :
       (affineEtaleChartChaoticQuasicoherentQCEquivalence.{u, w} B S hS F hF).IsTriangulated
 ```
 
-**`AlgebraicGeometry.Space.quasicoherentDerivedAffineEtaleRestrictionEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentReflection.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentReflection.lean#L175). The attribute's comment: “the equivalence of (1) D_QCoh(O_X) and (2) D_QCoh(X_affine_etale, O_X), induced by derived restriction, for module sections in the universe of the schemes”.
+**`AlgebraicGeometry.Space.quasicoherentDerivedAffineEtaleRestrictionEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentReflection.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineEtaleQuasicoherentReflection.lean#L175). The attribute's comment: “the equivalence of (1) D\_QCoh(O\_X) and (2) D\_QCoh(X\_affine\_etale, O\_X), induced by derived restriction, for module sections in the universe of the schemes”.
 
 > **Categories (1) and (2) of Stacks 0H06 are equivalent, at the universe of the schemes**:
 > restriction to the affine étale charts is an exact equivalence
@@ -397,7 +397,7 @@ noncomputable def quasicoherentDerivedAffineEtaleRestrictionEquivalence :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Stack.representableQuasiCoherentDerivedEquivalence`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableQC/Equivalence.lean#L112), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableQC/BigAffineSiteTag.lean, line 21](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableQC/BigAffineSiteTag.lean#L21) (StacksFrontier): “the equivalence QC((Aff/X), 𝒪) ≌ D_QCoh(𝒪_X), on the proof of Stacks 0H0K”.
+- [`AlgebraicGeometry.Stack.representableQuasiCoherentDerivedEquivalence`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableQC/Equivalence.lean#L112), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableQC/BigAffineSiteTag.lean, line 21](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Sheaves/RepresentableQC/BigAffineSiteTag.lean#L21) (StacksFrontier): “the equivalence QC((Aff/X), 𝒪) ≌ D\_QCoh(𝒪\_X), on the proof of Stacks 0H0K”.
 
 ## Depends on
 

@@ -92,7 +92,7 @@ public def IsUniversalDifferentialOperatorOfOrderLE (S : Type v) [Semiring S] [A
 
 [Tag 09CM](https://stacks.math.columbia.edu/tag/09CM) in the Stacks Project.
 
-**`diff1EquivDerProd`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean#L177). References: SGA 3 VIIA (1.3.1), “Dev≤1 ≃ O_S ⊕ Der_S”.
+**`diff1EquivDerProd`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/DifferentialOperator/OrderOne.lean#L177). References: SGA 3 VIIA (1.3.1), “Dev≤1 ≃ O\_S ⊕ Der\_S”.
 
 > The `S`-module isomorphism `Diff¹(S, N) ≃ₗ[S] Der_R(S, N) × N` given by `D ↦ (σ_D, D 1)`, where
 > `σ_D g = D g - g · D 1`, with inverse `(σ, x) ↦ σ + λ_x`.

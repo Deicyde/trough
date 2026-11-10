@@ -243,7 +243,7 @@ theorem cotangentExtendScalarsComplexMap_eq_counit :
           (cotangentComplex.{u, u} A' B')
 ```
 
-**`CommAlgCat.overDifferentialsBaseChangeNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIso.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/BaseChangeQuasiIso.lean#L250). The attribute's comment: “the step of the proof the source performs by inspection: extension of scalars along B → B' of i^*Ω_{𝒪/A} is the restriction of i^*Ω_{𝒪'/A'} along the base-change functor of sites of Tag 08QN”.
+**`CommAlgCat.overDifferentialsBaseChangeNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIso.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/BaseChangeQuasiIso.lean#L250). The attribute's comment: “the step of the proof the source performs by inspection: extension of scalars along B → B' of i^*Ω\_\{𝒪/A} is the restriction of i^*Ω\_\{𝒪'/A'} along the base-change functor of sites of Tag 08QN”.
 
 > **`i^*Ω_{𝒪/A} ⊗_B B' = g^{-1}(i^*Ω_{𝒪'/A'})`, the step the source performs by inspection.**
 > Extension of scalars along `B → B'` of the `B`-module of differentials `B ⊗_P Ω[P⁄A]` is the
@@ -277,7 +277,7 @@ theorem quasiIso_cotangentExtendScalarsMooreMap
     QuasiIso (cotangentExtendScalarsMooreMap b)
 ```
 
-**`CommAlgCat.quasiIso_cotangentExtendScalarsComplexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIso.lean, line 607](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/BaseChangeQuasiIso.lean#L607). The attribute's comment: “on the cotangent complexes, under ONE carried hypothesis: Remark 08QI as CommAlgCat.CotangentComputedByEveryResolution, which Tag 08QI discharges; the source's own hypothesis B ⊗_A^L A' = B' and its conclusion on THE functoriality map of 08PN are kept”.
+**`CommAlgCat.quasiIso_cotangentExtendScalarsComplexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIso.lean, line 607](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/BaseChangeQuasiIso.lean#L607). The attribute's comment: “on the cotangent complexes, under ONE carried hypothesis: Remark 08QI as CommAlgCat.CotangentComputedByEveryResolution, which Tag 08QI discharges; the source's own hypothesis B ⊗\_A^L A' = B' and its conclusion on THE functoriality map of 08PN are kept”.
 
 > **Stacks 08QQ.** If the commutative square `A → B`, `A → A'`, `B → B'`, `A' → B'` induces a
 > quasi-isomorphism `B ⊗_A^L A' = B'`, then the functoriality map
@@ -336,7 +336,7 @@ theorem quasiIso_cotangentExtendScalarsMooreMap_unconditional
     QuasiIso (cotangentExtendScalarsMooreMap b)
 ```
 
-**`CommAlgCat.quasiIso_cotangentExtendScalarsComplexMap_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean#L70). The attribute's comment: “on the cotangent complexes, under the source's own hypothesis B ⊗_A^L A' = B' and no other: THE functoriality map of Tag 08PN is a quasi-isomorphism”.
+**`CommAlgCat.quasiIso_cotangentExtendScalarsComplexMap_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/BaseChangeQuasiIsoUnconditional.lean#L70). The attribute's comment: “on the cotangent complexes, under the source's own hypothesis B ⊗\_A^L A' = B' and no other: THE functoriality map of Tag 08PN is a quasi-isomorphism”.
 
 > **Stacks 08QQ.** If the commutative square `A → B`, `A → A'`, `B → B'`, `A' → B'` induces a
 > quasi-isomorphism `B ⊗_A^L A' = B'`, then the functoriality map `L_{B/A} ⊗_B B' ⟶ L_{B'/A'}` of
@@ -379,7 +379,7 @@ def cotangentBaseChangeIsoUnconditional
       DerivedCategory.Q.obj (cotangentComplex.{u, u} A' B')
 ```
 
-**`CommAlgCat.derivedCotangentComplexBaseChangeFunctorialityIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/DerivedPushoutBaseChange.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/DerivedPushoutBaseChange.lean#L395). The attribute's comment: “the lemma, with the arrow the source names: under the source's own hypothesis that the square induce a quasi-isomorphism B ⊗_A^L A' = B' — written out as vanishing of the positive Tor_i^A(A', B) together with bijectivity of A' ⊗_A B → B' — THE functoriality map of Tag 08PN induces an isomorphism L_{B/A} ⊗^L_B B' ≅ L_{B'/A'} in D(B'), the derived tensor product being the chapter's total derived extension-of-scalars functor. That the underlying morphism is that functoriality map is CommAlgCat.derivedCotangentComplexBaseChangeFunctorialityIso_hom below. No hypothesis beyond the source's is carried: Remark 08QI is proved, not assumed (CommAlgCat.cotangentComputedByEveryResolution)”.
+**`CommAlgCat.derivedCotangentComplexBaseChangeFunctorialityIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/DerivedPushoutBaseChange.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/DerivedPushoutBaseChange.lean#L395). The attribute's comment: “the lemma, with the arrow the source names: under the source's own hypothesis that the square induce a quasi-isomorphism B ⊗\_A^L A' = B' — written out as vanishing of the positive Tor\_i^A(A', B) together with bijectivity of A' ⊗\_A B → B' — THE functoriality map of Tag 08PN induces an isomorphism L\_\{B/A} ⊗^L\_B B' ≅ L\_\{B'/A'} in D(B'), the derived tensor product being the chapter's total derived extension-of-scalars functor. That the underlying morphism is that functoriality map is CommAlgCat.derivedCotangentComplexBaseChangeFunctorialityIso\_hom below. No hypothesis beyond the source's is carried: Remark 08QI is proved, not assumed (CommAlgCat.cotangentComputedByEveryResolution)”.
 
 > **[Stacks, Tag 08QQ].** Let
 > ```
@@ -414,7 +414,7 @@ def derivedCotangentComplexBaseChangeFunctorialityIso
       DerivedCategory.Q.obj (cotangentComplex.{u, u} A' B')
 ```
 
-**`CommAlgCat.derivedCotangentComplexBaseChangeFunctorialityIso_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/DerivedPushoutBaseChange.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/DerivedPushoutBaseChange.lean#L412). The attribute's comment: “that the isomorphism is induced by THE functoriality map of Tag 08PN: its underlying morphism in D(B') is the image of the chain-level map CommAlgCat.cotangentExtendScalarsComplexMap, read after the canonical identification of L_{B/A} ⊗^L_B B' with the degreewise base change”.
+**`CommAlgCat.derivedCotangentComplexBaseChangeFunctorialityIso_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/DerivedPushoutBaseChange.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/DerivedPushoutBaseChange.lean#L412). The attribute's comment: “that the isomorphism is induced by THE functoriality map of Tag 08PN: its underlying morphism in D(B') is the image of the chain-level map CommAlgCat.cotangentExtendScalarsComplexMap, read after the canonical identification of L\_\{B/A} ⊗^L\_B B' with the degreewise base change”.
 
 > **The isomorphism of Tag 08QQ is the one the functoriality map induces.** Its underlying
 > morphism is the image in `D(B')` of `CommAlgCat.cotangentExtendScalarsComplexMap` — the

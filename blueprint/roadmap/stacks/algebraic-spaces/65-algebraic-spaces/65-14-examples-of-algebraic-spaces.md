@@ -68,7 +68,7 @@ noncomputable abbrev involutionQuotient (B : BigFppfSite.{u})
     Sheaf (BigFppfOver.topology B (Spec (.of k)) hS) (Type u)
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.isAbsolutelyQuasiSeparated_involutionQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionQuasiSeparated.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionQuasiSeparated.lean#L128). The attribute's comment: “quasi_separated”.
+**`AlgebraicGeometry.AffineLineInvolution.isAbsolutelyQuasiSeparated_involutionQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionQuasiSeparated.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionQuasiSeparated.lean#L128). The attribute's comment: “quasi\_separated”.
 
 > **Stacks 02Z1, quasi-separatedness.** Away from characteristic two, the quotient of the
 > affine line by the punctured graph of negation is a quasi-separated algebraic space.
@@ -89,7 +89,7 @@ theorem isAbsolutelyQuasiSeparated_involutionQuotient (hchar : (2 : k) ≠ 0)
       (involutionQuotient k B hS).obj
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.isEtaleEquivalenceRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionQuotient.lean, line 472](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionQuotient.lean#L472). The attribute's comment: “etale_relation”.
+**`AlgebraicGeometry.AffineLineInvolution.isEtaleEquivalenceRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionQuotient.lean, line 472](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionQuotient.lean#L472). The attribute's comment: “etale\_relation”.
 
 > **Stacks 02Z1.** Away from characteristic two, the involution relation on the affine
 > line is an étale equivalence relation.
@@ -99,7 +99,7 @@ theorem isEtaleEquivalenceRelation [NeZero (2 : k)] :
     Stacks.Groupoids.IsEtaleEquivalenceRelation (involutionRelation k)
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.isAlgebraicSpace_involutionQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionQuotient.lean, line 565](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionQuotient.lean#L565). The attribute's comment: “algebraic_space”.
+**`AlgebraicGeometry.AffineLineInvolution.isAlgebraicSpace_involutionQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionQuotient.lean, line 565](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineInvolutionQuotient.lean#L565). The attribute's comment: “algebraic\_space”.
 
 > **Stacks 02Z1.** Away from characteristic two, the quotient of the affine line by the
 > punctured graph of negation is an algebraic space over the ground field.
@@ -131,7 +131,7 @@ theorem not_isImmersion_involutionRelation :
     ¬ AlgebraicGeometry.IsImmersion ((involutionRelation k).left)
 ```
 
-**`AlgebraicGeometry.AffineLineInvolution.not_isAbsolutelyLocallySeparated_involutionQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/AffineLineInvolutionNotLocallySeparated.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/AffineLineInvolutionNotLocallySeparated.lean#L163). The attribute's comment: “not_locally_separated”.
+**`AlgebraicGeometry.AffineLineInvolution.not_isAbsolutelyLocallySeparated_involutionQuotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Examples/Spaces/AffineLineInvolutionNotLocallySeparated.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Examples/Spaces/AffineLineInvolutionNotLocallySeparated.lean#L163). The attribute's comment: “not\_locally\_separated”.
 
 > **Stacks 02Z1, not locally separated.** Away from characteristic two, the quotient of the
 > affine line by the punctured graph of negation is not a locally separated algebraic space.
@@ -153,7 +153,7 @@ theorem not_isAbsolutelyLocallySeparated_involutionQuotient (hchar : (2 : k) ≠
 
 [Tag 03FN](https://stacks.math.columbia.edu/tag/03FN) in the Stacks Project.
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.quadraticGaloisTwistedDoubledOrigin`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOrigin.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOrigin.lean#L273). The attribute's comment: “quadratic_galois_twisted_doubled_origin”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.quadraticGaloisTwistedDoubledOrigin`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOrigin.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOrigin.lean#L273). The attribute's comment: “quadratic\_galois\_twisted\_doubled\_origin”.
 
 > The quotient `X = U/R` of the affine line over a quadratic Galois extension by the diagonal
 > together with the twisted diagonal away from zero.
@@ -186,7 +186,7 @@ theorem isAlgebraicSpace_quadraticGaloisTwistedDoubledOrigin
       (quadraticGaloisTwistedDoubledOrigin k K hdegree σ hσ B hS).obj
 ```
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.isIso_quadraticGaloisTwistedDoubledOrigin_over_puncturedBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginAwayFromZero.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginAwayFromZero.lean#L497). The attribute's comment: “away_from_zero”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.isIso_quadraticGaloisTwistedDoubledOrigin_over_puncturedBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginAwayFromZero.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginAwayFromZero.lean#L497). The attribute's comment: “away\_from\_zero”.
 
 > **Stacks 03FN.** The quotient `X = U/R` agrees with the base away from the origin: the
 > base change of its structure morphism to the punctured base is an isomorphism.
@@ -243,7 +243,7 @@ theorem isEtale_quotientBaseMap [FiniteDimensional k K] [IsGalois k K]
     Space.IsEtale B (base k) hS (quotientBaseMap k K hdegree σ hσ B hS)
 ```
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.twistedRelation_isEtaleEquivalenceRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginEtaleRelation.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginEtaleRelation.lean#L243). The attribute's comment: “etale_relation”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.twistedRelation_isEtaleEquivalenceRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginEtaleRelation.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginEtaleRelation.lean#L243). The attribute's comment: “etale\_relation”.
 
 > **Stacks 03FN.** The diagonal of the chart together with the twisted diagonal away from
 > the origin is an étale equivalence relation on the chart over the base.
@@ -254,7 +254,7 @@ theorem twistedRelation_isEtaleEquivalenceRelation [FiniteDimensional k K] [IsGa
     Stacks.Groupoids.IsEtaleEquivalenceRelation (twistedRelation k K σ)
 ```
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.quadraticGaloisTwistedDoubledOrigin_not_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginNotScheme.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginNotScheme.lean#L127). The attribute's comment: “not_scheme”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.quadraticGaloisTwistedDoubledOrigin_not_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginNotScheme.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginNotScheme.lean#L127). The attribute's comment: “not\_scheme”.
 
 > **Stacks 03FN.** The quotient `X = U/R` is not represented by a scheme over the base.
 
@@ -322,7 +322,7 @@ theorem not_isSeparatedOver_quadraticGaloisTwistedDoubledOrigin
       (quadraticGaloisTwistedDoubledOrigin k K hdegree σ hσ B hS).obj
 ```
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.baseChange_specExtension_isScheme_and_not_isScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginSpecBase.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginSpecBase.lean#L107). The attribute's comment: “part (7): X over Spec k, with X_{k'} a scheme but X not a scheme”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.baseChange_specExtension_isScheme_and_not_isScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginSpecBase.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginSpecBase.lean#L107). The attribute's comment: “part (7): X over Spec k, with X\_\{k'} a scheme but X not a scheme”.
 
 > **Stacks 03FN, part (7).** Read over `Spec k` rather than over `S`, the base change
 > `X_{k'} = X ×_{Spec k} Spec k'` of the twisted doubled origin is a scheme — the affine line
@@ -347,7 +347,7 @@ theorem baseChange_specExtension_isScheme_and_not_isScheme
           Stacks.Groupoids.points (Over.post B.inclusion) Y)
 ```
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.exists_descentDatum_specExtension_not_isEffective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginSpecNotEffective.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginSpecNotEffective.lean#L276). The attribute's comment: “the descent datum relative to {Spec k' -> Spec k} which is not effective”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.exists_descentDatum_specExtension_not_isEffective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginSpecNotEffective.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginSpecNotEffective.lean#L276). The attribute's comment: “the descent datum relative to \{Spec k' -> Spec k} which is not effective”.
 
 > **Stacks 03FN, the closing claim.** For a degree two Galois extension `k'/k` with nonidentity
 > automorphism `σ` there is a descent datum for schemes relative to the one-member covering
@@ -363,7 +363,7 @@ theorem exists_descentDatum_specExtension_not_isEffective (hdegree : Module.finr
     ∃ D : DescentDatum (specExtension k K), ¬ DescentData.IsEffective D
 ```
 
-**`AlgebraicGeometry.TwistedDoubledOrigin.twistedRelationQuotient_zeroFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginZeroFibre.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginZeroFibre.lean#L386). The attribute's comment: “zero_fibre”.
+**`AlgebraicGeometry.TwistedDoubledOrigin.twistedRelationQuotient_zeroFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginZeroFibre.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TwistedDoubledOriginZeroFibre.lean#L386). The attribute's comment: “zero\_fibre”.
 
 > **Stacks 03FN.** Over the origin the punctured twisted diagonal disappears, so the fibre
 > of the quotient over the origin of the base is the origin of the chart, `Spec K`.
@@ -600,7 +600,7 @@ theorem exists_galois_equivariant_lift_and_existsUnique_quotientPoint
 
 [Tag 02Z6](https://stacks.math.columbia.edu/tag/02Z6) in the Stacks Project.
 
-**`AlgebraicGeometry.RationalGaloisQuotient.galoisAction_nontrivialOnFixedResidueFields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotient.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotient.lean#L169). The attribute's comment: “qbar_quotient_algebraic_space”.
+**`AlgebraicGeometry.RationalGaloisQuotient.galoisAction_nontrivialOnFixedResidueFields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotient.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotient.lean#L169). The attribute's comment: “qbar\_quotient\_algebraic\_space”.
 
 > **Stacks 02Z6.** Every nonidentity element of the absolute Galois group of `ℚ` acts
 > nontrivially on the residue field at the unique point of `Spec ℚ̄`.
@@ -611,7 +611,7 @@ theorem galoisAction_nontrivialOnFixedResidueFields :
       (Space.underlyingOver B hS (siteCover B hS hU)) galoisGroup (galoisAction B hS hU)
 ```
 
-**`AlgebraicGeometry.RationalGaloisQuotient.fieldPoint_algEquiv_algebraicClosure_or_real`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotient.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotient.lean#L227). The attribute's comment: “qbar_quotient_field_points”.
+**`AlgebraicGeometry.RationalGaloisQuotient.fieldPoint_algEquiv_algebraicClosure_or_real`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotient.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/RationalGaloisQuotient.lean#L227). The attribute's comment: “qbar\_quotient\_field\_points”.
 
 > **Stacks 02Z6.** A field algebraic over `ℚ` carrying a point of the Galois quotient of
 > `Spec ℚ̄` is isomorphic over `ℚ` either to `ℚ̄` itself or to the field `algebraicClosure ℚ ℝ`
@@ -636,7 +636,7 @@ theorem fieldPoint_algEquiv_algebraicClosure_or_real
 
 [Tag 02Z7](https://stacks.math.columbia.edu/tag/02Z7) in the Stacks Project.
 
-**`AlgebraicGeometry.AffineLineTranslation.translationAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineTranslation.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineTranslation.lean#L87). The attribute's comment: “translation_quotient”.
+**`AlgebraicGeometry.AffineLineTranslation.translationAction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineTranslation.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineTranslation.lean#L87). The attribute's comment: “translation\_quotient”.
 
 > **Stacks 02Z7.** The action of the integers on the affine line over `k` by
 > translation.
@@ -645,7 +645,7 @@ theorem fieldPoint_algEquiv_algebraicClosure_or_real
 def translationAction : Multiplicative ℤ →* Aut (affineLine k)
 ```
 
-**`AlgebraicGeometry.AffineLineTranslation.translationAction_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineTranslation.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineTranslation.lean#L93). The attribute's comment: “translation_quotient”.
+**`AlgebraicGeometry.AffineLineTranslation.translationAction_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineTranslation.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineTranslation.lean#L93). The attribute's comment: “translation\_quotient”.
 
 > **Stacks 02Z7.** The integer `n` acts on the standard coordinate of the affine line by
 > `x ↦ x + n`.
@@ -658,7 +658,7 @@ theorem translationAction_apply (n : ℤ) :
         (n : Γ(AffineSpace PUnit.{u + 1} (Spec (.of k)), ⊤))
 ```
 
-**`AlgebraicGeometry.AffineLineTranslation.translationQuotient`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineTranslation.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineTranslation.lean#L135). The attribute's comment: “translation_quotient”.
+**`AlgebraicGeometry.AffineLineTranslation.translationQuotient`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLineTranslation.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLineTranslation.lean#L135). The attribute's comment: “translation\_quotient”.
 
 > **Stacks 02Z7.** The fppf sheaf quotient of the affine line over `k` by integer
 > translations.
@@ -775,7 +775,7 @@ theorem not_exists_mono_factorisation_genericQuotientPoint (k : Type u) [Field k
 
 [Tag 02Z8](https://stacks.math.columbia.edu/tag/02Z8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.InfiniteProduct.pow_card_eq_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L171). The attribute's comment: “residue_fields_and_closed_points”.
+**`AlgebraicGeometry.Space.InfiniteProduct.pow_card_eq_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L171). The attribute's comment: “residue\_fields\_and\_closed\_points”.
 
 > **Stacks Project, Tag 02Z8.** Every element of the product of copies of a finite field
 > satisfies `x ^ q = x`, where `q` is the number of elements of the field.
@@ -784,7 +784,7 @@ theorem not_exists_mono_factorisation_genericQuotientPoint (k : Type u) [Field k
 theorem pow_card_eq_self (x : productRing K) : x ^ Nat.card K = x
 ```
 
-**`AlgebraicGeometry.Space.InfiniteProduct.nonempty_algEquiv_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L231). The attribute's comment: “residue_fields_and_closed_points”.
+**`AlgebraicGeometry.Space.InfiniteProduct.nonempty_algEquiv_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L231). The attribute's comment: “residue\_fields\_and\_closed\_points”.
 
 > **Stacks Project, Tag 02Z8.** The residue field at any prime of the product is
 > isomorphic to the factor field, compatibly with its diagonal `K`-algebra structure.
@@ -794,7 +794,7 @@ theorem nonempty_algEquiv_residueField (p : PrimeSpectrum (productRing K)) :
     Nonempty (K ≃ₐ[K] p.asIdeal.ResidueField)
 ```
 
-**`AlgebraicGeometry.Space.InfiniteProduct.isClosed_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L243). The attribute's comment: “residue_fields_and_closed_points”.
+**`AlgebraicGeometry.Space.InfiniteProduct.isClosed_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L243). The attribute's comment: “residue\_fields\_and\_closed\_points”.
 
 > **Stacks Project, Tag 02Z8.** Every point of the spectrum of the product of copies of a
 > finite field is closed.
@@ -803,7 +803,7 @@ theorem nonempty_algEquiv_residueField (p : PrimeSpectrum (productRing K)) :
 theorem isClosed_singleton (x : space K) : IsClosed ({x} : Set (space K))
 ```
 
-**`AlgebraicGeometry.Space.InfiniteProduct.dense_coordinatePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L275). The attribute's comment: “coordinate_points_dense”.
+**`AlgebraicGeometry.Space.InfiniteProduct.dense_coordinatePoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L275). The attribute's comment: “coordinate\_points\_dense”.
 
 > **Stacks Project, Tag 02Z8.** The points of the spectrum of `∏ n : ℕ, k` determined by
 > the coordinate projections form a dense subset.
@@ -813,7 +813,7 @@ theorem dense_coordinatePoints (K : Type u) [Field K] :
     Dense (Set.range (fun n : ℕ ↦ (coordinate K n).base (default : base K)))
 ```
 
-**`AlgebraicGeometry.Space.InfiniteProduct.exists_unit_mul_idempotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L303). The attribute's comment: “clopen_basis”.
+**`AlgebraicGeometry.Space.InfiniteProduct.exists_unit_mul_idempotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L303). The attribute's comment: “clopen\_basis”.
 
 > **Stacks Project, Tag 02Z8.** Every element of a product of copies of a field is a unit
 > times an idempotent.
@@ -824,7 +824,7 @@ theorem exists_unit_mul_idempotent (x : productRing K) :
       IsIdempotentElem e ∧ x = (u : productRing K) * e
 ```
 
-**`AlgebraicGeometry.Space.InfiniteProduct.isTopologicalBasis_isClopen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L321). The attribute's comment: “clopen_basis”.
+**`AlgebraicGeometry.Space.InfiniteProduct.isTopologicalBasis_isClopen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L321). The attribute's comment: “clopen\_basis”.
 
 > **Stacks Project, Tag 02Z8.** The clopen subsets of the spectrum of `∏ n : ℕ, k` form a
 > topological basis.
@@ -834,7 +834,7 @@ theorem isTopologicalBasis_isClopen :
     TopologicalSpace.IsTopologicalBasis {s : Set (space K) | IsClopen s}
 ```
 
-**`AlgebraicGeometry.Space.InfiniteProduct.instTotallyDisconnectedSpace`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L337). The attribute's comment: “clopen_basis”.
+**`AlgebraicGeometry.Space.InfiniteProduct.instTotallyDisconnectedSpace`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L337). The attribute's comment: “clopen\_basis”.
 
 > **Stacks Project, Tag 02Z8.** The spectrum of `∏ n : ℕ, k` is totally disconnected.
 
@@ -842,7 +842,7 @@ theorem isTopologicalBasis_isClopen :
 instance instTotallyDisconnectedSpace : TotallyDisconnectedSpace (space K)
 ```
 
-**`AlgebraicGeometry.Space.InfiniteProduct.isOpen_singleton_iff_coordinate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L362). The attribute's comment: “coordinate_and_other_points”.
+**`AlgebraicGeometry.Space.InfiniteProduct.isOpen_singleton_iff_coordinate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L362). The attribute's comment: “coordinate\_and\_other\_points”.
 
 > **Stacks Project, Tag 02Z8.** The open points of the spectrum of `∏ n : ℕ, k` are
 > precisely the points coming from the coordinate projections.
@@ -853,7 +853,7 @@ theorem isOpen_singleton_iff_coordinate (x : space K) :
       ∃ n : ℕ, x = (coordinate K n).base (default : base K)
 ```
 
-**`AlgebraicGeometry.Space.InfiniteProduct.exists_noncoordinate_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L385). The attribute's comment: “coordinate_and_other_points”.
+**`AlgebraicGeometry.Space.InfiniteProduct.exists_noncoordinate_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L385). The attribute's comment: “coordinate\_and\_other\_points”.
 
 > **Stacks Project, Tag 02Z8.** The spectrum of `∏ n : ℕ, k` has a point not coming from any
 > coordinate projection.
@@ -863,7 +863,7 @@ theorem exists_noncoordinate_point :
     ∃ x : space K, ∀ n : ℕ, x ≠ (coordinate K n).base (default : base K)
 ```
 
-**`AlgebraicGeometry.Space.InfiniteProduct.not_discreteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L410). The attribute's comment: “coordinate_and_other_points”.
+**`AlgebraicGeometry.Space.InfiniteProduct.not_discreteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/InfiniteProduct.lean#L410). The attribute's comment: “coordinate\_and\_other\_points”.
 
 > **Stacks Project, Tag 02Z8.** The spectrum of `∏ n : ℕ, k` is not discrete.
 

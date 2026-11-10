@@ -235,7 +235,7 @@ theorem tangentMap_apply (h : f ≫ q = p) (x : X) [IsIso (f.residueFieldMap x)]
       Spec.map (CommRingCat.ofHom α) ≫ θ.val ≫ f
 ```
 
-**`AlgebraicGeometry.tangentSpaceEquivDualDifferentialFiber_tangentMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/TangentMapDual.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/TangentMapDual.lean#L405). The attribute's comment: “dual to the map Ω_{Y/S,y} ⊗ κ(y) → Ω_{X/S,x} ⊗ κ(x) via the identifications of Tag 0B2D”. References: EGA IV (16.5.13), “partial, special case”.
+**`AlgebraicGeometry.tangentSpaceEquivDualDifferentialFiber_tangentMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/TangentMapDual.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/TangentMapDual.lean#L405). The attribute's comment: “dual to the map Ω\_\{Y/S,y} ⊗ κ(y) → Ω\_\{X/S,x} ⊗ κ(x) via the identifications of Tag 0B2D”. References: EGA IV (16.5.13), “partial, special case”.
 
 > **The tangent map is dual to the map on residue-field fibres.** Let `f : X ⟶ Y` be a morphism
 > of schemes over `S`, let `x` be a point of `X` with `κ(f x) = κ(x)`. Under the identifications
@@ -269,7 +269,7 @@ noncomputable def tangentSpaceProductEquiv {X Y S : Scheme.{u}}
     TangentSpaceProductEquiv f g z
 ```
 
-**`AlgebraicGeometry.tangentSpaceProductFiberEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/TangentProductFibre.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/TangentProductFibre.lean#L404). The attribute's comment: “T_{X ×_S Y/S,(x,y)} = T_{X/S,x} ⊕ T_{Y/S,y} at the unique point (x,y): left to right by the projections, right to left by 1 × y and x × 1 on the fibres via 0BEA”. References: SGA 3 V (4.1.2), “more general”.
+**`AlgebraicGeometry.tangentSpaceProductFiberEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/TangentProductFibre.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/TangentProductFibre.lean#L404). The attribute's comment: “T\_\{X ×\_S Y/S,(x,y)} = T\_\{X/S,x} ⊕ T\_\{Y/S,y} at the unique point (x,y): left to right by the projections, right to left by 1 × y and x × 1 on the fibres via 0BEA”. References: SGA 3 V (4.1.2), “more general”.
 
 > **Stacks Project, Tag 0BEB.** Let `X`, `Y` be schemes over `S` and let `z = (x, y)` be a point
 > of `X ×_S Y` whose projections `x ∈ X`, `y ∈ Y` have residue fields `κ(x) = κ(s) = κ(y)`, where

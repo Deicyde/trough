@@ -373,7 +373,7 @@ public def IsCohenMacaulay (R : Type*) [CommRing R] (M : Type*) [AddCommGroup M]
     [Module R M] : Prop
 ```
 
-**`IsLocallyCohenMacaulayModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 695](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L695). The attribute's comment: “Quantified over Supp M. The source's literal all-primes wording is inconsistent when M_p = 0, since the zero module is not Cohen-Macaulay here; this is a source erratum, and the definition captures 0AAH in full.”. References: EGA 0 (16.5.13).
+**`IsLocallyCohenMacaulayModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean, line 695](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Module/RegularSequenceExtension.lean#L695). The attribute's comment: “Quantified over Supp M. The source's literal all-primes wording is inconsistent when M\_p = 0, since the zero module is not Cohen-Macaulay here; this is a source erratum, and the definition captures 0AAH in full.”. References: EGA 0 (16.5.13).
 
 > **Stacks 0AAH.** Let `R` be a Noetherian ring, not necessarily local, and let `M` be a finite
 > `R`-module. Then `M` is *Cohen-Macaulay* if `M_p` is a Cohen-Macaulay `R_p`-module for every prime

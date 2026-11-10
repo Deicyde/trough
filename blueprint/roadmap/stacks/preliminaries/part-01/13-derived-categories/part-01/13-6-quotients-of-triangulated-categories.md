@@ -66,7 +66,7 @@ theorem isTriangulated_and_isSaturated_homologicalKernel (H : C ⥤ A) [H.IsHomo
 
 [Tag 05RE](https://stacks.math.columbia.edu/tag/05RE) in the Stacks Project.
 
-**`StacksBoundedSubcategories.boundedBelow_strictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 981](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L981). The attribute's comment: “D_H^+ strictly full”.
+**`StacksBoundedSubcategories.boundedBelow_strictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 981](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L981). The attribute's comment: “D\_H^+ strictly full”.
 
 > The property `D_H^+` of being `H`-bounded below is closed under isomorphisms.
 
@@ -75,7 +75,7 @@ theorem boundedBelow_strictlyFull (H : D ⥤ A) [H.IsHomological] :
     (boundedBelow H).IsClosedUnderIsomorphisms
 ```
 
-**`StacksBoundedSubcategories.boundedBelow_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 990](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L990). The attribute's comment: “D_H^+ pre-triangulated”. References: SGA 4½ Etat 0 (1.2.3), “more general”; SGA 6 I (1.1.5), “more general”.
+**`StacksBoundedSubcategories.boundedBelow_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 990](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L990). The attribute's comment: “D\_H^+ pre-triangulated”. References: SGA 4½ Etat 0 (1.2.3), “more general”; SGA 6 I (1.1.5), “more general”.
 
 > `D_H^+` is a pre-triangulated subcategory: it contains a zero object, is stable under every
 > shift `[n]`, and is closed under cones of distinguished triangles with two vertices in `D_H^+`.
@@ -86,7 +86,7 @@ theorem boundedBelow_isTriangulated (H : D ⥤ A) [H.IsHomological]
     (boundedBelow H).IsTriangulated
 ```
 
-**`StacksBoundedSubcategories.boundedBelow_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1000](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1000). The attribute's comment: “D_H^+ saturated”.
+**`StacksBoundedSubcategories.boundedBelow_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1000](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1000). The attribute's comment: “D\_H^+ saturated”.
 
 > `D_H^+` is saturated: if `X ⊞ Y` is bounded below then so are `X` and `Y`, each being a retract
 > of the biproduct.
@@ -96,7 +96,7 @@ theorem boundedBelow_isSaturated (H : D ⥤ A) [H.IsHomological] :
     IsSaturated (boundedBelow H)
 ```
 
-**`StacksBoundedSubcategories.boundedAbove_strictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1007](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1007). The attribute's comment: “D_H^- strictly full”.
+**`StacksBoundedSubcategories.boundedAbove_strictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1007](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1007). The attribute's comment: “D\_H^- strictly full”.
 
 > The property `D_H^-` of being `H`-bounded above is closed under isomorphisms.
 
@@ -105,7 +105,7 @@ theorem boundedAbove_strictlyFull (H : D ⥤ A) [H.IsHomological] :
     (boundedAbove H).IsClosedUnderIsomorphisms
 ```
 
-**`StacksBoundedSubcategories.boundedAbove_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1016](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1016). The attribute's comment: “D_H^- pre-triangulated”. References: SGA 4½ Etat 0 (1.2.3), “more general”; SGA 6 I (1.1.5), “more general”.
+**`StacksBoundedSubcategories.boundedAbove_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1016](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1016). The attribute's comment: “D\_H^- pre-triangulated”. References: SGA 4½ Etat 0 (1.2.3), “more general”; SGA 6 I (1.1.5), “more general”.
 
 > `D_H^-` is a pre-triangulated subcategory: it contains a zero object, is stable under every
 > shift `[n]`, and is closed under cones of distinguished triangles with two vertices in `D_H^-`.
@@ -116,7 +116,7 @@ theorem boundedAbove_isTriangulated (H : D ⥤ A) [H.IsHomological]
     (boundedAbove H).IsTriangulated
 ```
 
-**`StacksBoundedSubcategories.boundedAbove_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1026](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1026). The attribute's comment: “D_H^- saturated”.
+**`StacksBoundedSubcategories.boundedAbove_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1026](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1026). The attribute's comment: “D\_H^- saturated”.
 
 > `D_H^-` is saturated: if `X ⊞ Y` is bounded above then so are `X` and `Y`, each being a retract
 > of the biproduct.
@@ -126,7 +126,7 @@ theorem boundedAbove_isSaturated (H : D ⥤ A) [H.IsHomological] :
     IsSaturated (boundedAbove H)
 ```
 
-**`StacksBoundedSubcategories.bounded_strictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1033](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1033). The attribute's comment: “D_H^b strictly full”.
+**`StacksBoundedSubcategories.bounded_strictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1033](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1033). The attribute's comment: “D\_H^b strictly full”.
 
 > The property `D_H^b` of being `H`-bounded is closed under isomorphisms.
 
@@ -135,7 +135,7 @@ theorem bounded_strictlyFull (H : D ⥤ A) [H.IsHomological] :
     (bounded H).IsClosedUnderIsomorphisms
 ```
 
-**`StacksBoundedSubcategories.bounded_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1042](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1042). The attribute's comment: “D_H^b pre-triangulated”. References: SGA 4½ Etat 0 (1.2.3), “more general”; SGA 6 I (1.1.5), “more general”.
+**`StacksBoundedSubcategories.bounded_isTriangulated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1042](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1042). The attribute's comment: “D\_H^b pre-triangulated”. References: SGA 4½ Etat 0 (1.2.3), “more general”; SGA 6 I (1.1.5), “more general”.
 
 > `D_H^b` is a pre-triangulated subcategory: it contains a zero object, is stable under every
 > shift `[n]`, and is closed under cones of distinguished triangles with two vertices in `D_H^b`.
@@ -146,7 +146,7 @@ theorem bounded_isTriangulated (H : D ⥤ A) [H.IsHomological]
     (bounded H).IsTriangulated
 ```
 
-**`StacksBoundedSubcategories.bounded_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1054](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1054). The attribute's comment: “D_H^b saturated”.
+**`StacksBoundedSubcategories.bounded_isSaturated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1054](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1054). The attribute's comment: “D\_H^b saturated”.
 
 > `D_H^b` is saturated: if `X ⊞ Y` is bounded then so are `X` and `Y`, each being a retract of
 > the biproduct.
@@ -248,7 +248,7 @@ theorem homological_universal_property
         ∃! e : G ≅ H', Functor.whiskerLeft P.trW.Q e.hom ≫ fac.hom = α.hom
 ```
 
-**`VerdierQuotientUniversalProperty.exact_universal_property`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1207). The attribute's comment: “(2)”. References: SGA 4½ Etat 0 (Problem1); SGA 4½ Etat 0 (2.2), “partial”; SGA 4½ Etat 0 (2.3.2), “(A_S”; SGA 4½ Etat 0 (2.3.3), “more general”; SGA 4½ Etat 0 (4.2.3), “(b)”; SGA 4½ Etat 0 (Problem2), “partial”.
+**`VerdierQuotientUniversalProperty.exact_universal_property`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Triangulated/Quotient.lean, line 1207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Triangulated/Quotient.lean#L1207). The attribute's comment: “(2)”. References: SGA 4½ Etat 0 (Problem1); SGA 4½ Etat 0 (2.2), “partial”; SGA 4½ Etat 0 (2.3.2), “(A\_S”; SGA 4½ Etat 0 (2.3.3), “more general”; SGA 4½ Etat 0 (4.2.3), “(b)”; SGA 4½ Etat 0 (Problem2), “partial”.
 
 > **Universal property of the Verdier quotient for exact (triangulated) functors**.
 >

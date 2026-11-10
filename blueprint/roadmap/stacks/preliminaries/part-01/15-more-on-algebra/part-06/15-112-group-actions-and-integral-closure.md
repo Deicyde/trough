@@ -70,7 +70,7 @@ theorem quotientComparison_injective :
 > Proof: by `Algebra.IsIntegral.mk`, fix `b ∈ (R/I)^G`. Take the monic witness `P`
 > over `R^G/I^G` from `compMap_polyWitness b`, with `map φ P = (X - C b)^{|G|}`.
 > Then under the algebra structure `φ.toAlgebra`, `aeval b P = (map φ P).eval b
-> = ((X - C b)^{|G|}).eval b = (b - b)^{|G|} = 0` (using
+> = ((X - C b)^\{|G|}).eval b = (b - b)^\{|G|} = 0` (using
 > `Polynomial.aeval_def`, `Polynomial.eval_map`, `Polynomial.eval_pow`,
 > `Polynomial.eval_sub`, `Polynomial.eval_X`, `Polynomial.eval_C`), and `P` is
 > monic, so `b` is integral.
@@ -185,7 +185,7 @@ theorem invariantComparison_isIntegral [Fintype G] (J : Ideal (FixedPoints.subri
 **`Stacks.Invariant.QuotientComparison.invariantComparison_comap_isHomeomorph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Invariant/Quotient.lean, line 986](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Invariant/Quotient.lean#L986). The attribute's comment: “final statement, homeomorphism on spectra”.
 
 > **(In particular: homeomorphism on spectra.)** `Spec(Φ) : Spec((R / JR)^G) →
-> Spec(R^G / J)` is a homeomorphism.  This is `PrimeSpectrum.isHomeomorph_comap`
+> Spec(R^G / J)` is a homeomorphism.  This is `PrimeSpectrum.isHomeomorph\_comap`
 > (Stacks 0BR8) applied to the two facts extracted from parts (1) and (2): every
 > `b ∈ (R / JR)^G` has `b ^ n` in the range of `Φ` (`exists_apply_eq_pow`), and
 > `ker Φ` is nil (`ker_invariantComparison_le_nilradical`).

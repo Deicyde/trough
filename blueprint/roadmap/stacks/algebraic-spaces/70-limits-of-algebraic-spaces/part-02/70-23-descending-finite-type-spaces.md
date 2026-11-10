@@ -81,7 +81,7 @@ theorem nonempty_goodDiagram (D : NoetherianLimitSystem B S hS hZ I)
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.GoodDiagram`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteTypeModel.lean#L114), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L40) (StacksFrontier): “the diagram: X ⟶ W over B ⟶ B_i, W ⟶ B_i of finite type and X ⟶ B ×_{B_i} W a closed immersion”.
+- [`AlgebraicGeometry.Space.GoodDiagram`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/FiniteTypeModel.lean#L114), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeSection.lean#L40) (StacksFrontier): “the diagram: X ⟶ W over B ⟶ B\_i, W ⟶ B\_i of finite type and X ⟶ B ×\_\{B\_i} W a closed immersion”.
 
 ## Tag 0CP9, a lemma
 
@@ -103,7 +103,7 @@ theorem mono_lift_of_isLimit (G : GoodDiagram B S hS hZ D f) {c : Cone (imageSys
     (hc : IsLimit c) : Mono (hc.lift (imageCone G))
 ```
 
-**`AlgebraicGeometry.Space.GoodDiagram.isLimit_imageCone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeLimitImage.lean, line 765](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeLimitImage.lean#L765). The attribute's comment: “X = lim X_{i'}, for an index type small for the site”.
+**`AlgebraicGeometry.Space.GoodDiagram.isLimit_imageCone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeLimitImage.lean, line 765](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeLimitImage.lean#L765). The attribute's comment: “X = lim X\_\{i'}, for an index type small for the site”.
 
 > **Stacks 0CP9.** In Situation 0CP6, for a diagram as in Stacks 0CP8, the canonical cone
 > from `X` to the inverse system of the scheme-theoretic images `X_{i'}` of
@@ -175,7 +175,7 @@ theorem eventually_eq_systemMorphism (hX : IsAlgebraicSpace B S hS X)
 
 [Tag 0CPB](https://stacks.math.columbia.edu/tag/0CPB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.NoetherianLimitSystem.isEquivalence_limitFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeEquivalence.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeEquivalence.lean#L464). The attribute's comment: “the category of algebraic spaces quasi-separated and of finite type over B is equivalent to the category of the inverse systems over (B_i) that 0CP9 produces from the diagrams (0CP8), up to shrinking the index set”.
+**`AlgebraicGeometry.Space.NoetherianLimitSystem.isEquivalence_limitFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeEquivalence.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendingFiniteTypeEquivalence.lean#L464). The attribute's comment: “the category of algebraic spaces quasi-separated and of finite type over B is equivalent to the category of the inverse systems over (B\_i) that 0CP9 produces from the diagrams (0CP8), up to shrinking the index set”.
 
 > **Stacks 0CPB.** In Situation 0CP6, the category of algebraic spaces quasi-separated and of
 > finite type over `B = lim B_i` is equivalent to the category of the inverse systems of algebraic
