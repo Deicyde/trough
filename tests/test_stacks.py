@@ -244,6 +244,8 @@ def test_quotes_escape_the_underscores_and_braces_of_their_prose_only():
         "The slice of (X/S)\\_cris at u\\_\\{X/S}^\\{-1}h\\_\\{X'}, `(X/S)_cris`, $f_*\\mathcal{O}_X$, an escaped \\_.\n\n"
         "    0 ⟶ h_{X'} ⟶ F\n\n"
         "```\nf_{x}\n\n    g_{y}\n```\nafter\\_\\{all}")
+    assert stacks.literal("for i<n over N<X>, <https://example.org/a_b>, `j<p`") == (
+        "for i`<`n over N`<`X>, <https://example.org/a_b>, `j<p`")
     # A bracket before parentheses that hold no URL reads as text, not as a link.
     assert stacks.comment("g_C = 1 + Σ mᵢ([κᵢ : k](gᵢ - 1))") == "g\\_C = 1 + Σ mᵢ([κᵢ : k\\](gᵢ - 1))"
 
@@ -401,7 +403,7 @@ def test_an_article_has_one_kind_of_front_matter_and_a_block_per_tag(tmp_path):
     assert ("> **Prime avoidance**: an ideal inside a finite union of primes is inside one of them.\n\n"
             "```lean\ntheorem subset_union_prime' (n : ℕ) : n = n\n```") in page
     assert "**`Stacks.frontier_avoid`**, a theorem in StacksFrontier (drafted, not yet reviewed)" in page
-    assert "> A docstring with &lt;angle> brackets and $x < y$." in page
+    assert "> A docstring with `<`angle> brackets and $x < y$." in page
     assert (f"- [`Ideal.subset_union_prime`]({stacks.MATHLIB_DOCS.format('Ideal.subset_union_prime')}) registered with "
             f"`add_to_stacks` in [StacksCore/Algebra/Foo.lean, line 16]({BLOB}/StacksCore/Algebra/Foo.lean#L16) "
             "(StacksCore). References: SGA 3 V (4.1), “more general”.") in page

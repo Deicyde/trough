@@ -55,8 +55,10 @@ SGA_NUMBER = re.compile(r"^(?=.*\d)[A-Za-z0-9()]+(?:\.[A-Za-z0-9()]+)*$")
 EXPOSE = re.compile(r"^(?:0|[IVX][A-Za-z]*)$")
 ESCAPES = {"n": "\n", "t": "\t", "r": "\r", "\\": "\\", '"': '"', "'": "'"}
 FENCE = re.compile(r" {0,3}(`{3,}|~{3,})")
-# A character already escaped, or one the site's Markdown would read as markup in a quote's prose.
-LITERAL = re.compile(r"\\.|[_{]")
+# A character already escaped, or one the site's Markdown would read as markup in a quote's prose, where code,
+# formulas and autolinks are left as they are.
+LITERAL = re.compile(r"\\.|[_{]|<(?=[A-Za-z/!?])")
+VERBATIM = re.compile(OPAQUE.pattern + r"|<https?://[^\s<>]*>")
 
 
 def lean_string(literal: str) -> str:
@@ -510,15 +512,17 @@ def tag_url(tag: str) -> str:
 def literal(markdown: str) -> str:
     """Quoted Markdown with each underscore and brace of its prose escaped, as the repository writes `u_{X/S}` and
     `(X/S)_cris` as plain text: the site's Markdown reads such underscores as emphasis, which drops them, and a
-    brace right after the emphasis as an attribute list, which keeps the page from being published. Code spans,
-    code blocks and formulas are left as they are, and so is a character already escaped."""
+    brace right after the emphasis as an attribute list, which keeps the page from being published. A `<` before
+    a letter, as in `i<n`, is put in code: it could open a tag, and the site publishes no `&lt;`. Code spans, code
+    blocks, formulas and autolinks are left as they are, and so is a character already escaped."""
 
     def mark(char: re.Match) -> str:
-        return char.group() if len(char.group()) == 2 else "\\" + char.group()
+        text = char.group()
+        return text if len(text) == 2 else "`<`" if text == "<" else "\\" + text
 
     def escaped(prose: str) -> str:
         out, last = [], 0
-        for match in OPAQUE.finditer(prose):
+        for match in VERBATIM.finditer(prose):
             out += [LITERAL.sub(mark, prose[last:match.start()]), match.group()]
             last = match.end()
         return "".join(out) + LITERAL.sub(mark, prose[last:])

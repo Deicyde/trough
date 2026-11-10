@@ -359,9 +359,13 @@ declaration proves. The chapter has a part per Stacks Project part, a page per
 chapter and an article per section with a tag that a declaration carries. An
 article has a block per tag, in the Stacks Project's order: the tag's link, each
 declaration carrying it with its Lean statement, docstring, tier, line and the
-attribute's comment, the declarations registered for it, linked to Mathlib's
-documentation, and the EGA and SGA references with their comments. An EGA page
-and an SGA page list each reference with the articles that carry it. The
+attribute's comment, the declarations registered for it, linked to their lines
+when the repository declares them and to Mathlib's documentation otherwise, and
+the EGA and SGA references with their comments. Docstrings and comments are
+quoted with the underscores and braces of their prose escaped, as many write
+notation such as `u_{X/S}` as plain text, which the site would read as
+emphasis and an attribute list. An EGA page and an SGA page list each
+reference with the articles that carry it. The
 Stacks Project is under the GNU Free Documentation License, so its statements
 are not quoted; its parts, chapters and sections give the headings, and each
 block links its tag's page. No Lean runs for this chapter, so its articles have
