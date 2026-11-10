@@ -128,10 +128,12 @@ def coverage(libraries: list[dict], rows: list[tuple[str, str, str]]) -> str:
 
 def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict | None,
                    blueprints: list[tuple[str, str, str, str | None, bool]] = (),
-                   tauceti: tuple[str, str] | None = None, formal_frontier: dict[str, str] | None = None) -> str:
+                   tauceti: tuple[str, str] | None = None, formal_frontier: dict[str, str] | None = None,
+                   formal_conjectures: str | None = None) -> str:
     """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library;
     *tauceti* has the Tau Ceti and roadmap commits, once the chapter is built; *formal_frontier* has the
-    commit each Formal Frontier library's record pins, by library id."""
+    commit each Formal Frontier library's record pins, by library id; *formal_conjectures* is the Formal
+    Conjectures commit read."""
     formal_frontier = formal_frontier or {}
     lines = [
         "# Sources",
@@ -187,14 +189,27 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             "[FormalFrontier](https://github.com/FormalFrontier), Apache-2.0. The declarations are read from the source "
             "text, without Lean.",
         ]
+    if formal_conjectures:
+        lines += [
+            "",
+            "## Formal Conjectures",
+            "",
+            f"- `data/formal-conjectures/problems.json`: each problem file's title and module docstring, its research "
+            "and textbook statements with their categories, subjects, proof links, docstrings and Lean statements, and "
+            "its counts of test and API statements, with the FC100 lists, from "
+            f"[google-deepmind/formal-conjectures at {formal_conjectures[:8]}]"
+            f"(https://github.com/google-deepmind/formal-conjectures/tree/{formal_conjectures}), Apache-2.0. They are "
+            "read from the source text, without Lean.",
+        ]
     lines += ["", "## Libraries", ""]
+    pinned = {**formal_frontier, **({"formal-conjectures": formal_conjectures} if formal_conjectures else {})}
     for group, heading in GROUPS:
         members = [library for library in libraries if library["group"] == group]
         if members:
             lines.append(f"### {heading}")
             lines.append("")
             for library in members:
-                head = formal_frontier[library["id"]][:12] if library["id"] in formal_frontier else library.get("head")
+                head = pinned[library["id"]][:12] if library["id"] in pinned else library.get("head")
                 snapshot = f" at {head}" if head else ""
                 lines.append(f"- [{library['name']}]({repo_url(library)}){snapshot}: {library.get('what', '')}")
             lines.append("")

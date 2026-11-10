@@ -16,13 +16,13 @@ Trough maps Lean formalization libraries: what each one formalizes and how its r
 - [Polynomial Freiman-Ruzsa](pfr/README.md): One article per node of its leanblueprint that is in Lean, with dependencies from its uses.
 - [Equational Theories](equational-theories/README.md): One article per node of its leanblueprint that is in Lean, with dependencies from its uses; the equations and implication classes in the project's data files are left for later.
 - [Strong PNT (Math Inc)](strongpnt/README.md): One article per node of its leanblueprint that is in Lean, with dependencies from its uses. The project gives no license, so the articles link to its statements rather than quote them.
+- [Formal Conjectures](formal-conjectures/README.md): One article per problem file that states a research or textbook statement (1,814), on a page per source folder, with an index by AMS subject and the four FC100 lists; each statement's card says whether it is open, solved (with or without a proof elsewhere), a textbook result, or proved in the repository, and test and API statements are counted in their problem. Most statements are stated without a proof.
 - [Formal Frontier](formal-frontier/README.md): 44 libraries, a part per subject. One article per highlight in a library's formalization.yaml whose declarations the scan finds, and per headline result in its README whose declaration link names a declaration the scan finds in the linked file; the main results its formalization.yaml lists are on a page of their own.
 
 ## Libraries still to map
 
 ### Libraries
 
-- [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (1,999 Lean files): One article per problem file (about 2,000), grouped by source; most are stated without a proof.
 - [Physlib](https://github.com/leanprover-community/physlib) (1,520 Lean files): One article per documented declaration, grouped by physics area; granularity to be checked against a docstring count.
 - [CSLib](https://github.com/leanprover/cslib) (341 Lean files): One article per documented public declaration.
 - [Foundation](https://github.com/FormalizedFormalLogic/Foundation) (320 Lean files): One article per documented declaration; the Zoo's inclusion diagrams between logics as edges.

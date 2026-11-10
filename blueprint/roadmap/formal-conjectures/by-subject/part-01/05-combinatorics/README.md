@@ -1,0 +1,40 @@
+# Combinatorics
+
+The 609 problems with a statement whose `AMS` attribute names 05, Combinatorics, in the Mathematics Subject Classification. A problem with statements in several subjects is listed under each; its article sits in its source folder's part.
+
+## [Erdős Problem 1 to Erdős Problem 1159](part-01/README.md)
+
+- [Erdős Problem 1 to Erdős Problem 59](part-01/part-01/README.md)
+- [Erdős Problem 60 to Erdős Problem 87](part-01/part-02/README.md)
+- [Erdős Problem 88 to Erdős Problem 147](part-01/part-03/README.md)
+- [Erdős Problem 150 to Erdős Problem 172](part-01/part-04/README.md)
+- [Erdős Problem 173 to Erdős Problem 202](part-01/part-05/README.md)
+- [Erdős Problem 203 to Erdős Problem 307](part-01/part-06/README.md)
+- [Erdős Problem 312 to Erdős Problem 447](part-01/part-07/README.md)
+- [Erdős Problem 476 to Erdős Problem 546](part-01/part-08/README.md)
+- [Erdős Problem 547 to Erdős Problem 569](part-01/part-09/README.md)
+- [Erdős Problem 570 to Erdős Problem 602](part-01/part-10/README.md)
+- [Erdős Problem 603 to Erdős Problem 640](part-01/part-11/README.md)
+- [Erdős Problem 641 to Erdős Problem 703](part-01/part-12/README.md)
+- [Erdős Problem 704 to Erdős Problem 734](part-01/part-13/README.md)
+- [Erdős Problem 737 to Erdős Problem 774](part-01/part-14/README.md)
+- [Erdős Problem 775 to Erdős Problem 816](part-01/part-15/README.md)
+- [Erdős Problem 817 to Erdős Problem 877](part-01/part-16/README.md)
+- [Erdős Problem 881 to Erdős Problem 921](part-01/part-17/README.md)
+- [Erdős Problem 922 to Erdős Problem 1017](part-01/part-18/README.md)
+- [Erdős Problem 1020 to Erdős Problem 1068](part-01/part-19/README.md)
+- [Erdős Problem 1069 to Erdős Problem 1159](part-01/part-20/README.md)
+
+## [Erdős Problem 1161 to Open Quantum Problem 35…](part-02/README.md)
+
+- [Erdős Problem 1161 to Erdős Problem 1193](part-02/part-01/README.md)
+- [Erdős Problem 1194 to Hedetniemi's conjecture (1966)](part-02/part-02/README.md)
+- [Komlós conjecture to Union-closed sets conjecture](part-02/part-03/README.md)
+- [Vizing's conjecture (1968) to Ben Green's Open Problem 33](part-02/part-04/README.md)
+- [Green's Open Problem 36 to Ben Green's Open Problem 77](part-02/part-05/README.md)
+- [Green's Open Problem 87 to Written on the Wall II -…](part-02/part-06/README.md)
+- [Written on the Wall II -… to Written on the Wall II -…](part-02/part-07/README.md)
+- [Written on the Wall II -… to Written on the Wall II -…](part-02/part-08/README.md)
+- [Written on the Wall II -… to Monochromatic quantum graphs…](part-02/part-09/README.md)
+- [The 1-2-3 conjecture… to The Balister–Győri–Schelp…](part-02/part-10/README.md)
+- [Optimal monotone families for… to Open Quantum Problem 35…](part-02/part-11/README.md)

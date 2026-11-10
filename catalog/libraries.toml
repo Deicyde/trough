@@ -3,9 +3,10 @@
 # Snapshot fields (head, head_date, toolchain, mathlib, lean_files) were read
 # from GitHub on 2026-11-02, the Formal Frontier libraries' on 2026-11-08, and
 # drift as the libraries move; a Formal Frontier library's commit is the one
-# its data/ff/ record pins, so its entry has no head. map_status is
-# "live" (a chapter of this site), "elsewhere" (mapped on another site) or
-# "planned"; map_unit says what one article will be. A Formal Frontier
+# its data/ff/ record pins, and Formal Conjectures' the one
+# data/formal-conjectures/source.json pins, so their entries have no head.
+# map_status is "live" (a chapter of this site), "elsewhere" (mapped on another
+# site) or "planned"; map_unit says what one article will be. A Formal Frontier
 # library's subject is its part of that chapter, one of SUBJECTS in
 # tools/trough/catalog.py.
 
@@ -167,18 +168,16 @@ name = "Formal Conjectures"
 repo = "google-deepmind/formal-conjectures"
 group = "library"
 homepage = "https://google-deepmind.github.io/formal-conjectures/"
-what = "Statements (mostly sorry'd) of open conjectures: ErdosProblems 1000 files, OEIS 250, Wikipedia 184, WrittenOnTheWallII 64, GreensOpenProblems 61, Paper 52, Arxiv 41, MathOverflow, Kourovka, Books."
-informal_layer = "Module docstrings citing sources. STATEMENTS.md and PROOFS.md are contributor guides, not content. formal_proof attribute for external proofs."
+what = "Statements, mostly without proof, of open and solved problems, a file per problem in a folder per source: the Erdős problems, OEIS, Wikipedia, Green's open problems, Written on the Wall II, papers, arXiv, MathOverflow, books and smaller ones."
+informal_layer = "One @[category] per statement (8,648 at 2055e5ad: 1,873 research open, 3,014 research solved, 249 textbook, 705 API, 2,807 test; 131 of them on an example or an unnamed instance), @[AMS] subject codes, @[formal_proof] links (984 marked lean4, a Lean proof elsewhere; 174 marked formal_conjectures, a proof of the statement as written; 2 marked other_system). Module docstrings with a title and *Reference:* links. The site's data/conjectures.json comes from scripts/extract_names.lean. FormalConjectures/Subsets holds the four FC100 benchmark lists. STATEMENTS.md and PROOFS.md are contributor guides, not content."
 formalization_yaml = "absent"
 license = "Apache-2.0"
 toolchain = "v4.33.1"
 mathlib = "0df444a360ea"
-lean_files = 1999
-head = "d995ef5d3066"
-head_date = "2026-11-01"
-map_status = "planned"
+lean_files = 2117
+map_status = "live"
 map_unit = "problem"
-map_plan = "One article per problem file (about 2,000), grouped by source; most are stated without a proof."
+map_plan = "One article per problem file that states a research or textbook statement (1,814), on a page per source folder, with an index by AMS subject and the four FC100 lists; each statement's card says whether it is open, solved (with or without a proof elsewhere), a textbook result, or proved in the repository, and test and API statements are counted in their problem. Most statements are stated without a proof."
 
 [[library]]
 id = "physlib"

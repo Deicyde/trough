@@ -25,6 +25,10 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 - `data/ff/<name>.json`: for each of the 44 Formal Frontier libraries, the facts, highlights and main results of its formalization.yaml and the headline results of its README, read at the commit the file records, with the line and kind of each named declaration its file declares, from [FormalFrontier](https://github.com/FormalFrontier), Apache-2.0. The declarations are read from the source text, without Lean.
 
+## Formal Conjectures
+
+- `data/formal-conjectures/problems.json`: each problem file's title and module docstring, its research and textbook statements with their categories, subjects, proof links, docstrings and Lean statements, and its counts of test and API statements, with the FC100 lists, from [google-deepmind/formal-conjectures at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0. They are read from the source text, without Lean.
+
 ## Libraries
 
 ### Core library
@@ -46,7 +50,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ### Libraries
 
-- [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) at d995ef5d3066: Statements (mostly sorry'd) of open conjectures: ErdosProblems 1000 files, OEIS 250, Wikipedia 184, WrittenOnTheWallII 64, GreensOpenProblems 61, Paper 52, Arxiv 41, MathOverflow, Kourovka, Books.
+- [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) at 2055e5adadae: Statements, mostly without proof, of open and solved problems, a file per problem in a folder per source: the Erdős problems, OEIS, Wikipedia, Green's open problems, Written on the Wall II, papers, arXiv, MathOverflow, books and smaller ones.
 - [Physlib](https://github.com/leanprover-community/physlib) at 3d3ec913681f: Physics (formerly HepLean/PhysLean): relativity, particles, QFT, quantum mechanics, classical mechanics, electromagnetism, condensed matter, plus quantum information (QuantumInfo lib).
 - [CSLib](https://github.com/leanprover/cslib) at 52897fc2059b: Computer science foundations: computability (110), foundations (82), languages and semantics (45), logics, algorithms, crypto, ML.
 - [Foundation](https://github.com/FormalizedFormalLogic/Foundation) at c3eb37ae896d: Mathematical logic: first-order arithmetic and incompleteness (FirstOrder 177), provability logic (58), propositional and modal logic, second-order.
