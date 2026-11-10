@@ -484,6 +484,8 @@ KIND_WORDS = {"chapter": "the chapter", "section": "the section", "subsection": 
 NO_DEPENDS = ("No dependencies are recorded: this chapter reads the repository's source text without running Lean, "
               "which edges between declarations need.")
 LEAN_NAMES = 8  # the names a card's Lean row shows
+# The bytes of article Markdown a chapter's listing page folds in before its next article starts a page.
+PAGE_BUDGET = 300_000
 
 
 def load(data: Path) -> dict | None:
@@ -810,7 +812,7 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
             page.prose = (f"Chapter {chap['number']} of the Stacks Project, *{escape(chap['title'])}*{named}: {which}. "
                           f"Their {plural(counts['tags'], 'tag')} {'is' if counts['tags'] == 1 else 'are'} carried by "
                           f"{carried(counts)}.")
-            chunk(page)
+            chunk(page, budget=PAGE_BUDGET)
             pages.append(Entry(page))
             stats["chapters"] += 1
         if not pages:

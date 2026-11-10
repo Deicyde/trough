@@ -356,8 +356,10 @@ tag carries `@[stacks TAG]`, with a comment naming the part when it covers only
 part; `add_to_stacks` registers a Mathlib declaration for a tag; and `@[ega]`,
 `@[sga]`, `add_to_ega` and `add_to_sga` record the items of EGA and SGA a
 declaration proves. The chapter has a part per Stacks Project part, a page per
-chapter and an article per section with a tag that a declaration carries. An
-article has a block per tag, in the Stacks Project's order: the tag's link, each
+chapter and an article per section with a tag that a declaration carries. The
+site shows a chapter's articles on its listing pages, so a page takes at most
+20 articles and ends before their Markdown would pass 300 KB; an article over
+that has a page of its own. An article has a block per tag, in the Stacks Project's order: the tag's link, each
 declaration carrying it with its Lean statement, docstring, tier, line and the
 attribute's comment, the declarations registered for it, linked to their lines
 when the repository declares them and to Mathlib's documentation otherwise, and
