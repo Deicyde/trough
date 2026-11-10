@@ -4,12 +4,12 @@ tracks_lean: false
 
 # Trough
 
-Trough maps Lean formalization libraries: what each one formalizes and how its results depend on one another, not what the library may add. Each library gets the article unit that suits it, such as curated concepts for Mathlib, the declarations its roadmaps name for Tau Ceti and blueprint nodes for the research projects. The maps are rendered with [AutoformBot](https://github.com/facebookresearch/autoform-bot).
+Trough maps Lean formalization libraries: what each one formalizes and how its results depend on one another, not what the library may add. Each library gets the article unit that suits it, such as curated concepts for Mathlib, the declarations its roadmaps name and the results its docstrings name for Tau Ceti, and blueprint nodes for the research projects. The maps are rendered with [AutoformBot](https://github.com/facebookresearch/autoform-bot).
 
 ## Chapters
 
 - [Mathlib](mathlib/README.md): One article per concept on Mathlib's four curated lists (overview, undergraduate, Freek's 100, 1000+) that Mathlib has, linked to its declarations, with edges collapsed from Mathlib's declaration graph.
-- [Tau Ceti](tauceti/README.md): One article per declaration a roadmap's status names as a result or notable definition, as Tau Ceti has it: its docstring, signature and dependencies, in a section per roadmap.
+- [Tau Ceti](tauceti/README.md): One article per declaration a roadmap's status names as a result or notable definition, and per result Tau Ceti's docstrings name, the forms of one result together, as Tau Ceti has it: its docstring, signature and dependencies, in a part per top-level area with a section per roadmap or area of modules.
 - [ATLAS](https://github.com/facebookresearch/atlas-lean) (17,683 Lean files): Mapped separately: one article per documented public declaration, at <https://deicyde.github.io/atlas-lean/>.
 - [Fermat's Last Theorem (Imperial)](flt/README.md): One article per node of its leanblueprint that is in Lean, with dependencies from its uses; the Verso blueprint (3 chapters) is left for later.
 - [PNT+](pnt-plus/README.md): One article per node of its LeanArchitect blueprint that is in Lean, with dependencies from its uses; the Blueprint build workflow builds the blueprint weekly with `lake build :blueprint`.

@@ -89,7 +89,7 @@ def short(text: str, limit: int = 32) -> str:
 
 def range_title(group: list[Entry], number: int, total: int) -> str:
     if len(group) == 1:
-        return f"Part {number} of {total}"
+        return short(group[0].text)
     return f"{short(group[0].text)} to {short(group[-1].text)}"
 
 

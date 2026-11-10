@@ -13,7 +13,7 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | Polynomial Freiman-Ruzsa | `DECOMPOSED` | [213 blueprint nodes in Lean](../roadmap/pfr/README.md), one article per node. |
 | Equational Theories | `DECOMPOSED` | [137 blueprint nodes in Lean](../roadmap/equational-theories/README.md), one article per node. |
 | Strong PNT (Math Inc) | `DECOMPOSED` | [615 blueprint nodes in Lean](../roadmap/strongpnt/README.md), one article per node. |
-| Tau Ceti | `DECOMPOSED` | [1,377 declarations its roadmaps name](../roadmap/tauceti/README.md), one article per declaration. |
+| Tau Ceti | `DECOMPOSED` | [2,809 articles on 3,906 declarations](../roadmap/tauceti/README.md) its roadmaps' statuses name or its docstrings name as results, the forms of one result in one article. |
 | ATLAS | `OUT` | Mapped separately: one article per documented public declaration, at <https://deicyde.github.io/atlas-lean/>. |
 | Formal Conjectures | `DEFERRED` | Planned map, by problem: One article per problem file (about 2,000), grouped by source; most are stated without a proof. |
 | Physlib | `DEFERRED` | Planned map, by documented declaration: One article per documented declaration, grouped by physics area; granularity to be checked against a docstring count. |

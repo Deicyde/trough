@@ -119,12 +119,16 @@ def fronts (env : Environment) (index : Std.HashMap Name Nat) (inTauCeti : Name 
         front := front.insert frame.name s
   return front
 
+/-- The listed declarations whose bits are set in `bits` and not in `exclude`, in listed order.
+It visits only the set bits: testing each of thousands of bits copies the number every time. -/
 def names (listed : Array Name) (bits exclude : Nat) : Json := Id.run do
-  let mut out : Array Json := #[]
-  for i in [0:listed.size] do
-    if bits.testBit i && !exclude.testBit i then
-      out := out.push (Json.str listed[i]!.toString)
-  return Json.arr out
+  let mut rest := bits ^^^ (bits &&& exclude)
+  let mut found : Array Nat := #[]
+  while rest != 0 do
+    let i := rest.log2
+    if i < listed.size then found := found.push i
+    rest := rest ^^^ (1 <<< i)
+  return Json.arr (found.reverse.map fun i => Json.str listed[i]!.toString)
 
 def readNames (path : String) : IO (Array Name) := do
   let text ← IO.FS.readFile path
@@ -178,6 +182,7 @@ def run : MetaM Unit := do
     throwError "{theorems} listed theorems, {withProof} with a readable proof: private module data is missing"
   let statementFront := fronts env index inTauCeti statementUses statementStarts
   let proofFront := fronts env index inTauCeti allUses (statementStarts ++ proofStarts)
+  let walked ← IO.monoMsNow
   let mut records : Array (String × Json) := #[]
   let mut incomplete := 0
   for i in [0:listed.size] do
@@ -207,7 +212,7 @@ def run : MetaM Unit := do
       ("sorry", toJson usesSorry),
       ("statement", names listed s self),
       ("proof", names listed p (s ||| self))])
-  let elapsed := (← IO.monoMsNow) - started
+  let finished ← IO.monoMsNow
   let out := Json.mkObj [
     ("schema", "trough-tauceti-deps/v1"),
     ("tauceti_rev", rev),
@@ -223,7 +228,7 @@ def run : MetaM Unit := do
       ("walked_statements", toJson statementFront.size),
       ("walked_proofs", toJson proofFront.size)])]
   IO.FS.writeFile outPath (out.pretty 100 ++ "\n")
-  IO.println s!"{listed.size} of {requested.size} names resolve; {statementFront.size} and {proofFront.size} constants walked in {elapsed} ms"
+  IO.println s!"{listed.size} of {requested.size} names resolve; {statementFront.size} and {proofFront.size} constants walked in {walked - started} ms, records written in {finished - walked} ms"
 
 end TroughTauCeti
 

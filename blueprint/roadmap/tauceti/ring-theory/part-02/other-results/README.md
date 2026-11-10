@@ -1,0 +1,41 @@
+# Other results
+
+Results named in the rest of Tau Ceti's `TauCeti.RingTheory` modules and in no roadmap's section, as Tau Ceti has them at commit [ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145).
+
+## [Algebraic Hartogs principle for… to Krull–Akizuki for Mathlib's…](part-01/README.md)
+
+- [Algebraic Hartogs principle for fractions](part-01/algebraic-hartogs-principle-for-fractions.md)
+- [The Auslander–Buchsbaum formula](part-01/the-auslander-buchsbaum-formula.md)
+- [The Cauchy estimate at unit radius](part-01/the-cauchy-estimate-at-unit-radius.md)
+- [Chase–Harrison–Rosenberg (`TauCeti.Algebra.isFiniteEtaleTorsor_iff`)](part-01/chase-harrison-rosenberg-tauceti-algebra-isfinit.md)
+- [Chase–Harrison–Rosenberg (`TauCeti.MulSemiringAction.tensorToPi_bijective`)](part-01/chase-harrison-rosenberg-tauceti-mulsemiringacti.md)
+- [Chinese Remainder Theorem for `AdjoinRoot`](part-01/chinese-remainder-theorem-for-adjoinroot.md)
+- [Cramer's bound for subalgebras of integral elements](part-01/cramers-bound-for-subalgebras-of-integral-elemen.md)
+- [Dedekind's different theorem, the tame case, as an exponent](part-01/dedekinds-different-theorem-the-tame-case-as-an.md)
+- [Euler's criterion in a finite residue domain](part-01/eulers-criterion-in-a-finite-residue-domain.md)
+- [The Frobenius surjectivity criterion](part-01/the-frobenius-surjectivity-criterion.md)
+- [The graded Nakayama lemma for generators](part-01/the-graded-nakayama-lemma-for-generators.md)
+- [The Hadamard three circles inequality on `𝕎 O[1/(p [ϖ])]`](part-01/the-hadamard-three-circles-inequality-on-w-o-1-p.md)
+- [Hazewinkel's functional equation lemma](part-01/hazewinkels-functional-equation-lemma.md)
+- [Hensel's lemma for the norm](part-01/hensels-lemma-for-the-norm.md)
+- [Hensel's lemma with a derivative dividing `π ^ k`](part-01/hensels-lemma-with-a-derivative-dividing-k.md)
+- [Hensel's lemma without monicity](part-01/hensels-lemma-without-monicity.md)
+- [Jacobi's formula](part-01/jacobis-formula.md)
+- [The Jacobian criterion for étaleness](part-01/the-jacobian-criterion-for-etaleness.md)
+- [Kedlaya's estimate (4.9.1) in the normalisation `λ_ρ(p) = ρ`](part-01/kedlayas-estimate-4-9-1-in-the-normalisation-p.md)
+- [Krull–Akizuki for Mathlib's `integralClosure`](part-01/krull-akizuki-for-mathlibs-integralclosure.md)
+
+## [Krull–Akizuki's length bound to Wedhorn's degree decomposition…](part-02/README.md)
+
+- [Krull–Akizuki's length bound](part-02/krull-akizukis-length-bound.md)
+- [The Kummer–Dedekind irreducibility criterion](part-02/the-kummer-dedekind-irreducibility-criterion.md)
+- [The Leibniz kernel identity from a closed product functional](part-02/the-leibniz-kernel-identity-from-a-closed-produc.md)
+- [Maschke's theorem after base change](part-02/maschkes-theorem-after-base-change.md)
+- [Nakayama's lemma for an idempotent](part-02/nakayamas-lemma-for-an-idempotent.md)
+- [Nakayama's lemma over `ℤ`](part-02/nakayamas-lemma-over-z.md)
+- [The open mapping theorem over a Tate ring](part-02/the-open-mapping-theorem-over-a-tate-ring.md)
+- [Serre's criterion for normality](part-02/serres-criterion-for-normality.md)
+- [Serre's lemma](part-02/serres-lemma.md)
+- [Taylor's formula for polynomials](part-02/taylors-formula-for-polynomials.md)
+- [Universality of Hazewinkel's formal group law over `ℚ`-algebras](part-02/universality-of-hazewinkels-formal-group-law-ove.md)
+- [Wedhorn's degree decomposition, Lemma 8.33(i)](part-02/wedhorns-degree-decomposition-lemma-8-33-i.md)
