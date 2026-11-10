@@ -37,6 +37,10 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 - `data/anthropic-flt/source.json` and `landmarks.json`: the facts of the formalization.yaml, the steps of PROOF-PATH.md, and the landmark theorems of [anthropics/fermats-last-theorem at 6e837e75](https://github.com/anthropics/fermats-last-theorem/tree/6e837e75355538c7f80bab5b956861e86c4eacc2), each with its route stage, aliases and nearest landmarks from html/data/meta.js and html/data/edges.js and its Lean statement from its file under Theorems/, Apache-2.0. Nothing is read with Lean.
 
+## Classification of Finite Simple Groups (Axiom)
+
+- `data/cfsg/proof.json`: the top theorem, the reduction and the theorem its proof gives for each case, each milestone module's declarations, with their Lean statements and lines, the case and milestone files each such file imports, directly or not, through no other, the main results, facts and README opening, and the files and theorems of each folder, from [AxiomMath/CFSG at 69cb972f](https://github.com/AxiomMath/CFSG/tree/69cb972f587a3ecc035e092253167ff2e303c962), Apache-2.0. They are read from the source text, without Lean. `data/cfsg/source.json` records the commit, its Lean toolchain, Mathlib and Tau Ceti.
+
 ## Libraries
 
 ### Core library

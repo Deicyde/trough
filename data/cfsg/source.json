@@ -1,0 +1,8 @@
+{
+ "repo": "AxiomMath/CFSG",
+ "rev": "69cb972f587a3ecc035e092253167ff2e303c962",
+ "date": "2026-10-27T15:07:38Z",
+ "toolchain": "v4.35.0-rc3",
+ "mathlib": "b63f6e8a68d220e3b3bc4f3792bb53650d375f24",
+ "tauceti": "6e0c6acab5f4c6f42e5f5bab9bd5e4e84f74c380"
+}
