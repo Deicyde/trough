@@ -621,8 +621,9 @@ def carried(counts: Counter) -> str:
     declarations = counts["StacksCore"] + counts["StacksFrontier"]
     if declarations:
         tiers = [f"{counts[name]:,} in {name}" for name in TIERS if counts[name]]
-        parts.append(plural(declarations, "declaration") + " of the repository"
-                     + (f" ({' and '.join(tiers)})" if len(tiers) > 1 else f", in {TIERS[0] if counts[TIERS[0]] else TIERS[1]}"))
+        only = TIERS[0] if counts[TIERS[0]] else TIERS[1]
+        parts.append(plural(declarations, "declaration") + " of the repository" + (
+            f" ({' and '.join(tiers)})" if len(tiers) > 1 else f" (all in {only})" if declarations > 1 else f" (in {only})"))
     if counts["registrations"]:
         parts.append(plural(counts["registrations"], "registered declaration"))
     return " and ".join(parts)
@@ -811,8 +812,9 @@ def intro(data: dict, stats: Counter) -> str:
     described = [f"{name} as “{ff.safe(readme['tiers'][name])}”" for name in TIERS if readme.get("tiers", {}).get(name)]
     tiers = f" It describes {' and '.join(described)}" if described else ""
     declarations = stats["StacksCore"] + stats["StacksFrontier"]
-    here = (f", {stats['registered_here']:,} of them declared in the repository itself" if stats["registered_here"] else
-            "")
+    here = (f", {stats['registered_here']:,} of them declared in the repository itself, whose entries link their lines"
+            if stats["registered_here"] else "")
+    distinct = counts.get("declarations_StacksCore", 0) + counts.get("declarations_StacksFrontier", 0)
     site = source.get("site", {})
     site_line = (f"The repository's site, {SITE}, links each tag to its Lean code; each block links the tag's page there."
                  if site.get("tags") else
@@ -834,18 +836,21 @@ def intro(data: dict, stats: Counter) -> str:
         ff.facts(source),
         f"There are {plural(stats['articles'], 'article')}, one for each section of the Stacks Project with a tag that a "
         f"declaration carries, in {plural(stats['chapters'], 'chapter')} and {plural(stats['parts'], 'part')} as the "
-        f"Stacks Project orders them. They hold {plural(stats['tags'], 'tag')}, each a block listing the "
-        f"{plural(declarations, 'declaration')} of the repository that carry it ({stats['StacksCore']:,} in StacksCore, "
-        f"{stats['StacksFrontier']:,} in StacksFrontier) and the {plural(stats['registrations'], 'declaration')} "
-        f"registered for it with `add_to_stacks` or an `attribute` command{here}. The README describes `add_to_stacks` as "
-        "registering a tag that Mathlib already covers on the Mathlib declaration, and the blocks link the others to "
-        "Mathlib's documentation. A declaration carrying several tags is in each tag's block. The repository "
-        f"has {counts.get('files_StacksCore', 0):,} Lean files in StacksCore and {counts.get('files_StacksFrontier', 0):,} "
-        "in StacksFrontier.",
+        f"Stacks Project orders them. They hold {plural(stats['tags'], 'tag')}. A tag's block lists the declarations of "
+        f"the repository that carry it, {declarations:,} entries in all ({stats['StacksCore']:,} in StacksCore, "
+        f"{stats['StacksFrontier']:,} in StacksFrontier): a declaration carrying several tags is in each tag's block, "
+        f"so these are {distinct:,} declarations ({counts.get('declarations_StacksCore', 0):,} and "
+        f"{counts.get('declarations_StacksFrontier', 0):,}). The blocks also list the "
+        f"{plural(stats['registrations'], 'declaration')} registered for their tags with `add_to_stacks` or an "
+        f"`attribute` command{here}. The README describes `add_to_stacks` as registering a tag that Mathlib already "
+        "covers on the Mathlib declaration, and the other registered declarations link to Mathlib's documentation. "
+        f"The repository has {counts.get('files_StacksCore', 0):,} Lean files in StacksCore and "
+        f"{counts.get('files_StacksFrontier', 0):,} in StacksFrontier.",
         "No Lean is run for this chapter. Tags are read from the source text, as the attributes are written: a "
         "declaration carries a tag when the `@[...]` list right before it has `stacks TAG` or `stacks_fixed TAG`, or an "
-        "`attribute [stacks TAG]` command names it; `add_to_stacks TAG name` registers a declaration outside the "
-        "repository, which the block links to Mathlib's documentation. A declaration's name is read under the "
+        "`attribute [stacks TAG]` command names it; `add_to_stacks TAG name` registers a declaration by name, which the "
+        "block links to its line when the repository declares that name and to Mathlib's documentation otherwise. A "
+        "declaration's name is read under the "
         "namespaces it sits in; an instance with no name is shown without one, and a `private` declaration under the "
         "name it is written with. Its Lean statement runs to the `:=` or `where` that starts its value, and its line "
         f"is the line its keyword is on. {sorry} The articles have no dependencies: edges between declarations need "
