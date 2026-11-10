@@ -1,0 +1,725 @@
+{
+ "schema": "trough-anthropic-flt-landmarks/v1",
+ "rev": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+ "counts": {
+  "theorems": 29511,
+  "landmarks": 49,
+  "edges": 106853,
+  "landmark_edges": 76,
+  "definition_modules": 1450
+ },
+ "stages": {
+  "0": "The statement",
+  "1": "Reduction to prime exponents p ≥ 5",
+  "2": "The Frey package",
+  "3": "Irreducibility (Mazur; exponents 5, 7, 11, 13 settled directly)",
+  "4": "Modularity (Wiles, Taylor–Wiles)",
+  "5": "Level lowering (Ribet)",
+  "6": "No weight-2 cusp forms of level 2",
+  "7": "Exact strength of the named theorems"
+ },
+ "landmarks": [
+  {
+   "name": "Algebra.PatchingDatum.nonempty_patchingLevel_bot",
+   "aliases": [
+    "Taylor-Wiles patching",
+    "patching datum"
+   ],
+   "stage": 4,
+   "file": "Theorems/Thm_Algebra_PatchingDatum_nonempty_patchingLevel_bot.lean",
+   "line": 7,
+   "statement": "theorem Algebra.PatchingDatum.nonempty_patchingLevel_bot\n    {𝒪 : Type} [CommRing 𝒪] [IsDomain 𝒪] [IsDiscreteValuationRing 𝒪]\n    [IsAdicComplete (IsLocalRing.maximalIdeal 𝒪) 𝒪] [Finite (IsLocalRing.ResidueField 𝒪)]\n    {ℓ r : ℕ} (hℓ : (ℓ : 𝒪) ∈ IsLocalRing.maximalIdeal 𝒪)\n    {R : Type} [CommRing R] [Algebra 𝒪 R] {M : Type} [AddCommGroup M] [Module R M]\n    (P : Algebra.PatchingDatum 𝒪 ℓ r R M) :\n    Nonempty (Algebra.PatchingLevel 𝒪 r R M ⊥)",
+   "proof_file": "P2M/Sol/S_Algebra_PatchingDatum_nonempty_patchingLevel_bot.lean",
+   "reaches": []
+  },
+  {
+   "name": "AutomorphicForm.exists_weightOne_cuspForm_of_isCusp_viaCompactCuspNotion",
+   "aliases": [],
+   "stage": 4,
+   "file": "Theorems/Thm_AutomorphicForm_exists_weightOne_cuspForm_of_isCusp_viaCompactCuspNotion.lean",
+   "line": 9,
+   "statement": "open CongruenceSubgroup EisensteinWeightOne\nopen scoped MatrixGroups ModularForm\ntheorem AutomorphicForm.exists_weightOne_cuspForm_of_isCusp_viaCompactCuspNotion\n    (Φ : HeckeEigensystem ℚ (ℤ√(-2))) (hΦ : AutomorphicForm.viaCompactCuspNotion.IsCusp ℚ Φ)\n    (T : Finset ℕ) :\n    ∃ (M : ℕ) (_ : NeZero M), 3 ∣ M ∧ (∀ ℓ ∈ T, ℓ ≠ 0 → ℓ ∣ M) ∧\n      ∃ (g : CuspForm (Gamma1 M) 1) (b : ℕ → ℤ√(-2)),\n        (∀ γ : SL(2, ℤ), γ ∈ Gamma0 M →\n          (⇑g) ∣[(1 : ℤ)] γ = ((chiNegThree (((γ 1 1 : ℤ) : ZMod 3).val) : ℤ) : ℂ) • (⇑g)) ∧\n        (∀ n, ModularFormClass.qCoeff (⇑g) n =\n          ((b n).re : ℂ) + ((b n).im : ℂ) * ((Real.sqrt 2 : ℂ) * Complex.I)) ∧\n        b 0 = 0 ∧\n        FormalHecke.IsEigensystem\n          (fun ℓ => if ℓ ∣ M then (0 : ℤ√(-2)) else ((chiNegThree ℓ : ℤ) : ℤ√(-2))) b ∧\n        ∀ (p : ℕ) (hp : p.Prime), ¬ p ∣ 3 * M → b p = Φ.a (AutomorphicForm.ratPrime ⟨p, hp⟩)",
+   "proof_file": "P2M/Sol/S_AutomorphicForm_exists_weightOne_cuspForm_of_isCusp_viaCompactCuspNotion.lean",
+   "reaches": []
+  },
+  {
+   "name": "CuspForm.newformBadPrimeCoeff",
+   "aliases": [],
+   "stage": 5,
+   "file": "Theorems/Thm_CuspForm_newformBadPrimeCoeff.lean",
+   "line": 7,
+   "statement": "set_option autoImplicit false\ntheorem CuspForm.newformBadPrimeCoeff (N : ℕ) :\n    CuspForm.NewformBadPrimeCoeff N",
+   "proof_file": "P2M/Sol/S_CuspForm_newformBadPrimeCoeff.lean",
+   "reaches": []
+  },
+  {
+   "name": "FreyCurve.isPeuRamifieeAt_odd_of_integralForm",
+   "aliases": [
+    "peu ramifiee",
+    "finite at p"
+   ],
+   "stage": 5,
+   "file": "Theorems/Thm_FreyCurve_isPeuRamifieeAt_odd_of_integralForm.lean",
+   "line": 8,
+   "statement": "open FreyPackage\nnamespace FreyCurve\ntheorem isPeuRamifieeAt_odd_of_integralForm (P : FreyPackage) {q : ℕ} [Fact q.Prime]\n    (hq2 : q ≠ 2) : P.freyCurve.IsPeuRamifieeAt P.p q",
+   "proof_file": "P2M/Sol/S_FreyCurve_isPeuRamifieeAt_odd_of_integralForm.lean",
+   "reaches": []
+  },
+  {
+   "name": "FreyPackage.Mazur_Frey",
+   "aliases": [
+    "Mazur",
+    "irreducibility of the mod-p representation"
+   ],
+   "stage": 3,
+   "file": "Theorems/Thm_FreyPackage_Mazur_Frey.lean",
+   "line": 70,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem FreyPackage.Mazur_Frey (P : FreyPackage) : GaloisRepIsIrreducible (K := AlgebraicClosure ℚ) ℚ P.freyCurve P.p",
+   "proof_file": "P2M/Sol/S_FreyPackage_Mazur_Frey.lean",
+   "reaches": [
+    "FreyPackage.Mazur_Frey_of_a_mod_eight",
+    "FreyPackage.frey_no_cofixed_eleven",
+    "FreyPackage.frey_no_cofixed_large",
+    "FreyPackage.frey_no_cofixed_small",
+    "FreyPackage.frey_reducible_hasCofixedLine"
+   ]
+  },
+  {
+   "name": "FreyPackage.Mazur_Frey_of_a_mod_eight",
+   "aliases": [],
+   "stage": 3,
+   "file": "Theorems/Thm_FreyPackage_Mazur_Frey_of_a_mod_eight.lean",
+   "line": 12,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\ntheorem FreyPackage.Mazur_Frey_of_a_mod_eight (P : FreyPackage)\n    (h8 : (P.a : ZMod 8) = 3) :\n    GaloisRepIsIrreducible (K := AlgebraicClosure ℚ) ℚ P.freyCurve P.p",
+   "proof_file": "P2M/Sol/S_FreyPackage_Mazur_Frey_of_a_mod_eight.lean",
+   "reaches": [
+    "FreyPackage.frey_reducible_hasCofixedLine"
+   ]
+  },
+  {
+   "name": "FreyPackage.eigenformResidualAttachmentAtFamily",
+   "aliases": [],
+   "stage": 5,
+   "file": "Theorems/Thm_FreyPackage_eigenformResidualAttachmentAtFamily.lean",
+   "line": 24,
+   "statement": "theorem FreyPackage.eigenformResidualAttachmentAtFamily (P : FreyPackage) :\n    ∀ M : ℕ, 0 < M → P.EigenformResidualAttachmentAt M",
+   "proof_file": "P2M/Sol/S_FreyPackage_eigenformResidualAttachmentAtFamily.lean",
+   "reaches": []
+  },
+  {
+   "name": "FreyPackage.fermatLastTheoremFor_of_five_le",
+   "aliases": [],
+   "stage": 1,
+   "file": "Theorems/Thm_FreyPackage_fermatLastTheoremFor_of_five_le.lean",
+   "line": 136,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem FreyPackage.fermatLastTheoremFor_of_five_le (p : ℕ) (pp : p.Prime) (hp5 : 5 ≤ p) : FermatLastTheoremFor p",
+   "proof_file": "P2M/Sol/S_FreyPackage_fermatLastTheoremFor_of_five_le.lean",
+   "reaches": [
+    "FreyPackage.no_frey_package",
+    "FreyPackage.of_counterexample"
+   ]
+  },
+  {
+   "name": "FreyPackage.freyGaloisRep_isUnramifiedAt",
+   "aliases": [],
+   "stage": 5,
+   "file": "Theorems/Thm_FreyPackage_freyGaloisRep_isUnramifiedAt.lean",
+   "line": 15,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem FreyPackage.freyGaloisRep_isUnramifiedAt (P : FreyPackage) {q : ℕ} (hq : q.Prime) (hq2 : q ≠ 2) (hqp : q ≠ P.p) : P.GaloisRepUnramifiedAt q",
+   "proof_file": "P2M/Sol/S_FreyPackage_freyGaloisRep_isUnramifiedAt.lean",
+   "reaches": []
+  },
+  {
+   "name": "FreyPackage.frey_isModular",
+   "aliases": [
+    "Wiles",
+    "Taylor-Wiles",
+    "modularity of the Frey curve"
+   ],
+   "stage": 4,
+   "file": "Theorems/Thm_FreyPackage_frey_isModular.lean",
+   "line": 131,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem FreyPackage.frey_isModular (P : FreyPackage) : P.freyCurve.IsModular",
+   "proof_file": "P2M/Sol/S_FreyPackage_frey_isModular.lean",
+   "reaches": [
+    "WeierstrassCurve.modularity_of_semistableModel"
+   ]
+  },
+  {
+   "name": "FreyPackage.frey_no_cofixed_eleven",
+   "aliases": [],
+   "stage": 3,
+   "file": "Theorems/Thm_FreyPackage_frey_no_cofixed_eleven.lean",
+   "line": 13,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem FreyPackage.frey_no_cofixed_eleven (P : FreyPackage) (hp : P.p = 11) : ¬ HasGaloisStableCofixedLine (K := AlgebraicClosure ℚ) ℚ P.freyCurve P.p",
+   "proof_file": "P2M/Sol/S_FreyPackage_frey_no_cofixed_eleven.lean",
+   "reaches": [
+    "flt_regular"
+   ]
+  },
+  {
+   "name": "FreyPackage.frey_no_cofixed_large",
+   "aliases": [
+    "Mazur",
+    "Eisenstein ideal",
+    "Eisenstein quotient"
+   ],
+   "stage": 3,
+   "file": "Theorems/Thm_FreyPackage_frey_no_cofixed_large.lean",
+   "line": 70,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem FreyPackage.frey_no_cofixed_large (P : FreyPackage) (hp : 17 ≤ P.p) : ¬ HasGaloisStableCofixedLine (K := AlgebraicClosure ℚ) ℚ P.freyCurve P.p",
+   "proof_file": "P2M/Sol/S_FreyPackage_frey_no_cofixed_large.lean",
+   "reaches": [
+    "WeierstrassCurve.mazurStepThree_not_inZeroComponentAt"
+   ]
+  },
+  {
+   "name": "FreyPackage.frey_no_cofixed_small",
+   "aliases": [],
+   "stage": 3,
+   "file": "Theorems/Thm_FreyPackage_frey_no_cofixed_small.lean",
+   "line": 13,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem FreyPackage.frey_no_cofixed_small (P : FreyPackage) (hp : P.p = 5 ∨ P.p = 7 ∨ P.p = 13) : ¬ HasGaloisStableCofixedLine (K := AlgebraicClosure ℚ) ℚ P.freyCurve P.p",
+   "proof_file": "P2M/Sol/S_FreyPackage_frey_no_cofixed_small.lean",
+   "reaches": [
+    "fermatLastTheoremFive",
+    "fermatLastTheoremSeven",
+    "flt_regular"
+   ]
+  },
+  {
+   "name": "FreyPackage.frey_reducible_hasCofixedLine",
+   "aliases": [
+    "Serre",
+    "cofixed line"
+   ],
+   "stage": 3,
+   "file": "Theorems/Thm_FreyPackage_frey_reducible_hasCofixedLine.lean",
+   "line": 15,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem FreyPackage.frey_reducible_hasCofixedLine (P : FreyPackage) (hred : ¬ GaloisRepIsIrreducible (K := AlgebraicClosure ℚ) ℚ P.freyCurve P.p) : HasGaloisStableCofixedLine (K := AlgebraicClosure ℚ) ℚ P.freyCurve P.p",
+   "proof_file": "P2M/Sol/S_FreyPackage_frey_reducible_hasCofixedLine.lean",
+   "reaches": [
+    "FreyPackage.freyGaloisRep_isUnramifiedAt"
+   ]
+  },
+  {
+   "name": "FreyPackage.level_lowering_at_p_of_conductorLevel",
+   "aliases": [
+    "Mazur-Ribet",
+    "level lowering at p"
+   ],
+   "stage": 5,
+   "file": "Theorems/Thm_FreyPackage_level_lowering_at_p_of_conductorLevel.lean",
+   "line": 70,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem FreyPackage.level_lowering_at_p_of_conductorLevel (P : FreyPackage) {N : ℕ} (hcond : P.IsConductorLevel N) (hpN : P.p ∣ N) (hirr : GaloisRepIsIrreducible (K := AlgebraicClosure ℚ) ℚ P.freyCurve P.p) (hmod : P.ModularRepOfLevel N) : ∃ M : ℕ, M ∣ N ∧ ¬ P.p ∣ M ∧ P.ModularRepOfLevel M",
+   "proof_file": "P2M/Sol/S_FreyPackage_level_lowering_at_p_of_conductorLevel.lean",
+   "reaches": [
+    "CuspForm.newformBadPrimeCoeff",
+    "FreyCurve.isPeuRamifieeAt_odd_of_integralForm",
+    "FreyPackage.eigenformResidualAttachmentAtFamily",
+    "ResidualGaloisRep.isAbsolutelyIrreducible_of_isIrreducible_of_isOdd"
+   ]
+  },
+  {
+   "name": "FreyPackage.level_lowering_odd_prime_of_conductorLevel",
+   "aliases": [
+    "Ribet",
+    "Cerednik-Drinfeld",
+    "Čerednik-Drinfeld"
+   ],
+   "stage": 5,
+   "file": "Theorems/Thm_FreyPackage_level_lowering_odd_prime_of_conductorLevel.lean",
+   "line": 90,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem FreyPackage.level_lowering_odd_prime_of_conductorLevel (P : FreyPackage) {N q : ℕ} (hcond : P.IsConductorLevel N) (hq : q.Prime) (hq2 : q ≠ 2) (hqp : q ≠ P.p) (hqN : q ∣ N) (hirr : GaloisRepIsIrreducible (K := AlgebraicClosure ℚ) ℚ P.freyCurve P.p) (hmod : P.ModularRepOfLevel N) (hunr : P.GaloisRepUnramifiedAt q) : ∃ M : ℕ, M ∣ N ∧ ¬ q ∣ M ∧ P.ModularRepOfLevel M",
+   "proof_file": "P2M/Sol/S_FreyPackage_level_lowering_odd_prime_of_conductorLevel.lean",
+   "reaches": [
+    "FreyPackage.eigenformResidualAttachmentAtFamily",
+    "WeierstrassCurve.isResiduallyModularOfLevel_div_of_isUnramifiedAt_sqf"
+   ]
+  },
+  {
+   "name": "FreyPackage.level_lowering_to_two",
+   "aliases": [
+    "Ribet",
+    "level lowering",
+    "epsilon conjecture"
+   ],
+   "stage": 5,
+   "file": "Theorems/Thm_FreyPackage_level_lowering_to_two.lean",
+   "line": 131,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem FreyPackage.level_lowering_to_two (P : FreyPackage) (hmod : P.freyCurve.IsModular) (hirr : GaloisRepIsIrreducible (K := AlgebraicClosure ℚ) ℚ P.freyCurve P.p) : ∃ f : CuspForm (CongruenceSubgroup.Gamma0 2) 2, f ≠ 0",
+   "proof_file": "P2M/Sol/S_FreyPackage_level_lowering_to_two.lean",
+   "reaches": [
+    "FreyPackage.level_lowering_to_two_of_conductorLevel",
+    "FreyPackage.modularRepOfConductorLevel"
+   ]
+  },
+  {
+   "name": "FreyPackage.level_lowering_to_two_of_conductorLevel",
+   "aliases": [],
+   "stage": 5,
+   "file": "Theorems/Thm_FreyPackage_level_lowering_to_two_of_conductorLevel.lean",
+   "line": 91,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem FreyPackage.level_lowering_to_two_of_conductorLevel (P : FreyPackage) (hirr : GaloisRepIsIrreducible (K := AlgebraicClosure ℚ) ℚ P.freyCurve P.p) {N : ℕ} (hcond : P.IsConductorLevel N) (hmod : P.ModularRepOfLevel N) : ∃ f : CuspForm (CongruenceSubgroup.Gamma0 2) 2, f ≠ 0",
+   "proof_file": "P2M/Sol/S_FreyPackage_level_lowering_to_two_of_conductorLevel.lean",
+   "reaches": [
+    "FreyPackage.freyGaloisRep_isUnramifiedAt",
+    "FreyPackage.level_lowering_at_p_of_conductorLevel",
+    "FreyPackage.level_lowering_odd_prime_of_conductorLevel",
+    "ModularForm.S2_Gamma0_2_eq_zero",
+    "ModularForm.S2_Gamma0_one_eq_zero"
+   ]
+  },
+  {
+   "name": "FreyPackage.modularRepOfConductorLevel",
+   "aliases": [
+    "arises from level N",
+    "conductor level"
+   ],
+   "stage": 5,
+   "file": "Theorems/Thm_FreyPackage_modularRepOfConductorLevel.lean",
+   "line": 131,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem FreyPackage.modularRepOfConductorLevel (P : FreyPackage) : ∃ N : ℕ, P.IsConductorLevel N ∧ P.ModularRepOfLevel N",
+   "proof_file": "P2M/Sol/S_FreyPackage_modularRepOfConductorLevel.lean",
+   "reaches": [
+    "WeierstrassCurve.isResiduallyModularOfLevel_of_switch",
+    "WeierstrassCurve.isResiduallyModular_three_and_noInertiaFixedTorsion_and_not_cube_dvd_of_isSemistableModel",
+    "WeierstrassCurve.modThreeOrFiveIrreducible",
+    "WeierstrassCurve.modularityLiftingAtConductor_threeFive_of_level_of_inertia_moves_torsion_of_eq_three_of_not_cube_dvd",
+    "WeierstrassCurve.modularityLiftingAtConductor_threeFive_of_level_of_not_sq_dvd_of_not_cube_dvd",
+    "WeierstrassCurve.threeFiveSwitchCurve"
+   ]
+  },
+  {
+   "name": "FreyPackage.no_frey_package",
+   "aliases": [
+    "Frey",
+    "Serre",
+    "Ribet",
+    "Wiles",
+    "four-way contradiction"
+   ],
+   "stage": 2,
+   "file": "Theorems/Thm_FreyPackage_no_frey_package.lean",
+   "line": 129,
+   "statement": "theorem FreyPackage.no_frey_package (P : FreyPackage) : False",
+   "proof_file": "P2M/Sol/S_FreyPackage_no_frey_package.lean",
+   "reaches": [
+    "FreyPackage.Mazur_Frey",
+    "FreyPackage.frey_isModular",
+    "FreyPackage.level_lowering_to_two",
+    "ModularForm.S2_Gamma0_2_eq_zero"
+   ]
+  },
+  {
+   "name": "FreyPackage.of_counterexample",
+   "aliases": [
+    "Frey curve",
+    "Frey"
+   ],
+   "stage": 2,
+   "file": "Theorems/Thm_FreyPackage_of_counterexample.lean",
+   "line": 6,
+   "statement": "theorem FreyPackage.of_counterexample (a b c : ℤ) (ha : a ≠ 0) (hb : b ≠ 0) (hc : c ≠ 0) (p : ℕ) (pp : p.Prime) (hp5 : 5 ≤ p) (H : a ^ p + b ^ p = c ^ p) : Nonempty FreyPackage",
+   "proof_file": "P2M/Sol/S_FreyPackage_of_counterexample.lean",
+   "reaches": []
+  },
+  {
+   "name": "GaloisRep.DeformationRingData.exists_surjective_algHom_of_heckeGaloisRepDatum",
+   "aliases": [
+    "R=T",
+    "R = T",
+    "Taylor-Wiles patching",
+    "Diamond"
+   ],
+   "stage": 4,
+   "file": "Theorems/Thm_GaloisRep_DeformationRingData_exists_surjective_algHom_of_heckeGaloisRepDatum.lean",
+   "line": 6,
+   "statement": "theorem GaloisRep.DeformationRingData.exists_surjective_algHom_of_heckeGaloisRepDatum {𝒪 : Type} [CommRing 𝒪] [IsDomain 𝒪] [IsDiscreteValuationRing 𝒪] [IsAdicComplete (IsLocalRing.maximalIdeal 𝒪) 𝒪] {ρbar : ResidualGaloisRep (IsLocalRing.ResidueField 𝒪)} {𝒟 : ∀ ⦃A : Type⦄ [CommRing A] [IsLocalRing A] [Algebra 𝒪 A], GaloisRepAdic A → Prop} (D : GaloisRep.DeformationRingData 𝒪 ρbar 𝒟) {N : ℕ} [NeZero N] {S : Set ℕ} {θ : CuspForm.heckeAlgebra N 2 S →+* IsLocalRing.ResidueField 𝒪} {T : Type} [CommRing T] [IsLocalRing T] [IsNoetherianRing T] [IsAdicComplete (IsLocalRing.maximalIdeal T) T] [Algebra 𝒪 T] [IsLocalHom (algebraMap 𝒪 T)] [Module.Finite 𝒪 T] [Module.Free 𝒪 T] (H : CuspForm.HeckeGaloisRepDatum N S 𝒪 θ T) (hS : ∀ q : ℕ, q.Prime → q ∣ N → q ∈ S) (h𝒟 : 𝒟 H.ρ) (hres : H.ρ.residual.IsEquiv (ρbar.baseChangeAlong (IsLocalRing.ResidueField.map (algebraMap 𝒪 T)))) : ∃ φ : D.R →ₐ[𝒪] T, Function.Surjective φ ∧ ∃ hφ : IsLocalHom (φ : D.R →+* T), (D.ρ.baseChangeAlong (φ : D.R →+* T) hφ).IsEquiv H.ρ",
+   "proof_file": "P2M/Sol/S_GaloisRep_DeformationRingData_exists_surjective_algHom_of_heckeGaloisRepDatum.lean",
+   "reaches": []
+  },
+  {
+   "name": "IsCyclotomicExtension.Rat.seven_pid",
+   "aliases": [],
+   "stage": 3,
+   "file": "Theorems/Thm_IsCyclotomicExtension_Rat_seven_pid.lean",
+   "line": 6,
+   "statement": "open scoped NumberField\ntheorem IsCyclotomicExtension.Rat.seven_pid (K : Type*) [Field K] [NumberField K] [IsCyclotomicExtension {7} ℚ K] : IsPrincipalIdealRing (𝓞 K)",
+   "proof_file": "P2M/Sol/S_IsCyclotomicExtension_Rat_seven_pid.lean",
+   "reaches": []
+  },
+  {
+   "name": "LanglandsTunnell.exists_isWeightOneChiNegThreeRealized_eq_trace_lift",
+   "aliases": [
+    "Langlands-Tunnell",
+    "Tunnell",
+    "octahedral",
+    "weight one form"
+   ],
+   "stage": 4,
+   "file": "Theorems/Thm_LanglandsTunnell_exists_isWeightOneChiNegThreeRealized_eq_trace_lift.lean",
+   "line": 56,
+   "statement": "set_option autoImplicit false\n\nopen AutomorphicForm FLT.ExplicitLift EisensteinWeightOne open WeierstrassCurve hiding cusp\nopen scoped MatrixGroups\n\nlocal notation \"Γℚ\" => (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ)\n\ntheorem LanglandsTunnell.exists_isWeightOneChiNegThreeRealized_eq_trace_lift\n    (ρ : Γℚ →* GL (Fin 2) (ZMod 3)) (hρ : Continuous ρ) (hsurj : Function.Surjective ρ)\n    (hdet : ∀ σ : Γℚ, Matrix.GeneralLinearGroup.det (ρ σ) = modThreeCyclotomicChar σ)\n    (Ψ : GL (Fin 2) (ZMod 3) →* GL (Fin 2) (ℤ√(-2)))\n    (hΨ : ∀ g, Matrix.GeneralLinearGroup.map red (Ψ g) = g) :\n    ∃ (N : ℕ) (_ : NeZero N) (b : ℕ → ℤ√(-2)),\n      FormalHecke.IsEigensystem\n        (fun ℓ => if ℓ ∣ N then 0 else ((chiNegThree ℓ : ℤ) : ℤ√(-2))) b ∧\n      CuspForm.IsWeightOneChiNegThreeRealized N b ∧\n      ∀ p : ℕ, p.Prime → ¬ p ∣ 3 * N →\n        ∀ A : ValuationSubring (AlgebraicClosure ℚ), A.LiesOverPrime p →\n          ∀ σ : Γℚ, A.IsFrobeniusAt σ p →\n            b p = ((Ψ (ρ σ) : GL (Fin 2) (ℤ√(-2))) : Matrix (Fin 2) (Fin 2) (ℤ√(-2))).trace",
+   "proof_file": "P2M/Sol/S_LanglandsTunnell_exists_isWeightOneChiNegThreeRealized_eq_trace_lift.lean",
+   "reaches": [
+    "AutomorphicForm.exists_weightOne_cuspForm_of_isCusp_viaCompactCuspNotion"
+   ]
+  },
+  {
+   "name": "ModularCurve.eisensteinQuotientInvariantsFiniteAt_heckeModuleBar",
+   "aliases": [],
+   "stage": 3,
+   "file": "Theorems/Thm_ModularCurve_eisensteinQuotientInvariantsFiniteAt_heckeModuleBar.lean",
+   "line": 61,
+   "statement": "open ModularCurve AlgebraicCurve\ntheorem ModularCurve.eisensteinQuotientInvariantsFiniteAt_heckeModuleBar (p : ℕ) [Fact p.Prime]\n    (hcomm : HeckeOperatorsCommuteBar p) :\n    EisensteinQuotientInvariantsFiniteAt p (heckeModuleBar p)",
+   "proof_file": "P2M/Sol/S_ModularCurve_eisensteinQuotientInvariantsFiniteAt_heckeModuleBar.lean",
+   "reaches": [
+    "ModularForm.S2_Gamma0_one_eq_zero"
+   ]
+  },
+  {
+   "name": "ModularCurve.mazurQuotientSpecialization_heckeModuleBar",
+   "aliases": [],
+   "stage": 3,
+   "file": "Theorems/Thm_ModularCurve_mazurQuotientSpecialization_heckeModuleBar.lean",
+   "line": 35,
+   "statement": "open ModularCurve AlgebraicCurve\ntheorem ModularCurve.mazurQuotientSpecialization_heckeModuleBar (p : ℕ) [Fact p.Prime]\n    (hcomm : HeckeOperatorsCommuteBar p) :\n    MazurQuotientSpecialization p (heckeModuleBar p)",
+   "proof_file": "P2M/Sol/S_ModularCurve_mazurQuotientSpecialization_heckeModuleBar.lean",
+   "reaches": []
+  },
+  {
+   "name": "ModularForm.S2_Gamma0_2_eq_zero",
+   "aliases": [
+    "S2(Gamma0(2)) = 0",
+    "no weight 2 level 2 cusp forms"
+   ],
+   "stage": 6,
+   "file": "Theorems/Thm_ModularForm_S2_Gamma0_2_eq_zero.lean",
+   "line": 13,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem ModularForm.S2_Gamma0_2_eq_zero (f : CuspForm (CongruenceSubgroup.Gamma0 2) 2) : f = 0",
+   "proof_file": "P2M/Sol/S_ModularForm_S2_Gamma0_2_eq_zero.lean",
+   "reaches": []
+  },
+  {
+   "name": "ModularForm.S2_Gamma0_one_eq_zero",
+   "aliases": [
+    "S2(Gamma0(1)) = 0",
+    "level one"
+   ],
+   "stage": 6,
+   "file": "Theorems/Thm_ModularForm_S2_Gamma0_one_eq_zero.lean",
+   "line": 13,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem ModularForm.S2_Gamma0_one_eq_zero (f : CuspForm (CongruenceSubgroup.Gamma0 1) 2) : f = 0",
+   "proof_file": "P2M/Sol/S_ModularForm_S2_Gamma0_one_eq_zero.lean",
+   "reaches": []
+  },
+  {
+   "name": "ResidualGaloisRep.isAbsolutelyIrreducible_of_isIrreducible_of_isOdd",
+   "aliases": [
+    "absolutely irreducible",
+    "odd"
+   ],
+   "stage": 4,
+   "file": "Theorems/Thm_ResidualGaloisRep_isAbsolutelyIrreducible_of_isIrreducible_of_isOdd.lean",
+   "line": 5,
+   "statement": "theorem ResidualGaloisRep.isAbsolutelyIrreducible_of_isIrreducible_of_isOdd {k : Type} [Field k]\n    (ρ : ResidualGaloisRep k) (h2 : (2 : k) ≠ 0) (hirr : ρ.IsIrreducible) (hodd : ρ.IsOdd) :\n    ρ.IsAbsolutelyIrreducible",
+   "proof_file": "P2M/Sol/S_ResidualGaloisRep_isAbsolutelyIrreducible_of_isIrreducible_of_isOdd.lean",
+   "reaches": []
+  },
+  {
+   "name": "WeierstrassCurve.exists_forall_not_isRoot_Psi3_specialization",
+   "aliases": [],
+   "stage": 4,
+   "file": "Theorems/Thm_WeierstrassCurve_exists_forall_not_isRoot_Psi3_specialization.lean",
+   "line": 6,
+   "statement": "open Polynomial\ntheorem WeierstrassCurve.exists_forall_not_isRoot_Psi3_specialization (a b : Polynomial ℚ) (ha : a.natDegree ≤ 20) (hb : b.natDegree ≤ 30) (hinf : 4 * a.coeff 20 ^ 3 + 27 * b.coeff 30 ^ 2 ≠ 0) (hroot : ∀ g : Polynomial ℚ, (⟨0, 0, 0, a, b⟩ : WeierstrassCurve (Polynomial ℚ)).Ψ₃.eval g ≠ 0) (M : ℕ) (hM : M ≠ 0) (m₀ : ℕ) : ∃ m : ℕ, m₀ ≤ m ∧ ∀ x : ℚ, ¬ (⟨0, 0, 0, a.eval ((M : ℚ) * m), b.eval ((M : ℚ) * m)⟩ : WeierstrassCurve ℚ).Ψ₃.IsRoot x",
+   "proof_file": "P2M/Sol/S_WeierstrassCurve_exists_forall_not_isRoot_Psi3_specialization.lean",
+   "reaches": []
+  },
+  {
+   "name": "WeierstrassCurve.fifteenIsogenyClassification",
+   "aliases": [],
+   "stage": 4,
+   "file": "Theorems/Thm_WeierstrassCurve_fifteenIsogenyClassification.lean",
+   "line": 8,
+   "statement": "open WeierstrassCurve\ntheorem WeierstrassCurve.fifteenIsogenyClassification (W : WeierstrassCurve ℤ) (hΔ : W.Δ ≠ 0) (h3 : ¬ W.ModRepIsIrreducible 3) (h5 : ¬ W.ModRepIsIrreducible 5) : (W.c₄ : ℚ) ^ 3 / (W.Δ : ℚ) = -25 / 2 ∨ (W.c₄ : ℚ) ^ 3 / (W.Δ : ℚ) = -349938025 / 8 ∨ (W.c₄ : ℚ) ^ 3 / (W.Δ : ℚ) = -121945 / 32 ∨ (W.c₄ : ℚ) ^ 3 / (W.Δ : ℚ) = 46969655 / 32768",
+   "proof_file": "P2M/Sol/S_WeierstrassCurve_fifteenIsogenyClassification.lean",
+   "reaches": []
+  },
+  {
+   "name": "WeierstrassCurve.galoisRepIsIrreducible_three_of_forall_eval_Psi3_ne_zero",
+   "aliases": [],
+   "stage": 4,
+   "file": "Theorems/Thm_WeierstrassCurve_galoisRepIsIrreducible_three_of_forall_eval_Psi3_ne_zero.lean",
+   "line": 9,
+   "statement": "open WeierstrassCurve\ntheorem WeierstrassCurve.galoisRepIsIrreducible_three_of_forall_eval_Psi3_ne_zero (V : WeierstrassCurve ℚ) (hΔ : V.Δ ≠ 0) (h : ∀ x : ℚ, V.Ψ₃.eval x ≠ 0) : Affine.Point.GaloisRepIsIrreducible (K := AlgebraicClosure ℚ) ℚ V 3",
+   "proof_file": "P2M/Sol/S_WeierstrassCurve_galoisRepIsIrreducible_three_of_forall_eval_Psi3_ne_zero.lean",
+   "reaches": []
+  },
+  {
+   "name": "WeierstrassCurve.isModularModelOfLevel_conductorLevel_of_not_cube_dvd_of_modRepIsIrreducible_of_not_sq_dvd",
+   "aliases": [],
+   "stage": 4,
+   "file": "Theorems/Thm_WeierstrassCurve_isModularModelOfLevel_conductorLevel_of_not_cube_dvd_of_modRepIsIrreducible_of_not_sq_dvd.lean",
+   "line": 86,
+   "statement": "set_option autoImplicit false\n\ntheorem\nWeierstrassCurve.isModularModelOfLevel_conductorLevel_of_not_cube_dvd_of_modRepIsIrreducible_of_not_sq_dvd\n    (W : WeierstrassCurve ℤ) (hss : W.IsSemistableModel) (N : ℕ)\n    (p : ℕ) [Fact p.Prime] (hp2 : p ≠ 2) (hirr : W.ModRepIsIrreducible p)\n    (hp2N : ¬ p ^ 2 ∣ N)\n    (hN : W.IsModularModelOfLevel N) (hbad : ∀ ℓ : ℕ, ℓ.Prime → (ℓ : ℤ) ∣ W.Δ → ℓ ∣ N)\n    (hN3 : ∀ q : ℕ, q.Prime → ¬ q ^ 3 ∣ N) :\n    W.IsModularModelOfLevel W.conductorLevel",
+   "proof_file": "P2M/Sol/S_WeierstrassCurve_isModularModelOfLevel_conductorLevel_of_not_cube_dvd_of_modRepIsIrreducible_of_not_sq_dvd.lean",
+   "reaches": [
+    "CuspForm.newformBadPrimeCoeff",
+    "ResidualGaloisRep.isAbsolutelyIrreducible_of_isIrreducible_of_isOdd"
+   ]
+  },
+  {
+   "name": "WeierstrassCurve.isModularModelOfLevel_of_patchingDatum",
+   "aliases": [],
+   "stage": 4,
+   "file": "Theorems/Thm_WeierstrassCurve_isModularModelOfLevel_of_patchingDatum.lean",
+   "line": 11,
+   "statement": "open Polynomial\n\ntheorem WeierstrassCurve.isModularModelOfLevel_of_patchingDatum (p : ℕ) (W : WeierstrassCurve ℤ) (hΔ : W.Δ ≠ 0) {𝒪 : Type} [CommRing 𝒪] [IsDomain 𝒪] [IsDiscreteValuationRing 𝒪] [IsAdicComplete (IsLocalRing.maximalIdeal 𝒪) 𝒪] [Finite (IsLocalRing.ResidueField 𝒪)] [CharZero 𝒪] (hp𝒪 : (p : 𝒪) ∈ IsLocalRing.maximalIdeal 𝒪) {ρbar : ResidualGaloisRep (IsLocalRing.ResidueField 𝒪)} {𝒟 : ∀ ⦃A : Type⦄ [CommRing A] [IsLocalRing A] [Algebra 𝒪 A], GaloisRepAdic A → Prop} (D : GaloisRep.DeformationRingData 𝒪 ρbar 𝒟) {N : ℕ} [NeZero N] {S : Finset ℕ} (hSprime : ∀ q ∈ S, q.Prime) (hNS : ∀ q : ℕ, q.Prime → q ∣ N → q ∈ S) (hN : CuspForm.HasIntegralStructure N 2) {θ : CuspForm.heckeAlgebra N 2 (S : Set ℕ) →+* IsLocalRing.ResidueField 𝒪} {T : Type} [CommRing T] [IsLocalRing T] [IsNoetherianRing T] [IsAdicComplete (IsLocalRing.maximalIdeal T) T] [Algebra 𝒪 T] [IsLocalHom (algebraMap 𝒪 T)] [Module.Finite 𝒪 T] [Module.Free 𝒪 T] (H : CuspForm.HeckeGaloisRepDatum N (S : Set ℕ) 𝒪 θ T) (φ : D.R →ₐ[𝒪] T) (hφ : IsLocalHom (φ : D.R →+* T)) (hφρ : (D.ρ.baseChangeAlong (φ : D.R →+* T) hφ).IsEquiv H.ρ) {M : Type} [AddCommGroup M] [Module D.R M] [Module T M] [Nontrivial M] (hcompat : ∀ (x : D.R) (m : M), φ x • m = x • m) {r : ℕ} (P : Algebra.PatchingDatum 𝒪 p r D.R M) (ρW : GaloisRepAdic 𝒪) (h𝒟W : 𝒟 ρW) (hWres : ρW.residual.IsEquiv (ρbar.baseChangeAlong (IsLocalRing.ResidueField.map (algebraMap 𝒪 𝒪)))) (hWfrob : ∀ (ℓ : ℕ), ℓ.Prime → W.IsGoodPrimeFor ℓ → ℓ ∉ S → ∀ A : ValuationSubring (AlgebraicClosure ℚ), A.LiesOverPrime ℓ → ∀ σ : AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ, A.IsFrobeniusAt σ ℓ → LinearMap.charpoly (ρW.ρ σ) = X ^ 2 - C ((W.apOfModel ℓ : ℤ) : 𝒪) * X + C ((ℓ : 𝒪))) :\n    W.IsModularModelOfLevel (N * ∏ q ∈ S.filter (fun q => ¬ q ∣ N), q)",
+   "proof_file": "P2M/Sol/S_WeierstrassCurve_isModularModelOfLevel_of_patchingDatum.lean",
+   "reaches": [
+    "Algebra.PatchingDatum.nonempty_patchingLevel_bot"
+   ]
+  },
+  {
+   "name": "WeierstrassCurve.isResiduallyModularOfLevel_div_of_isUnramifiedAt_sqf",
+   "aliases": [],
+   "stage": 5,
+   "file": "Theorems/Thm_WeierstrassCurve_isResiduallyModularOfLevel_div_of_isUnramifiedAt_sqf.lean",
+   "line": 87,
+   "statement": "set_option autoImplicit false\n\nopen WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\n\ntheorem WeierstrassCurve.isResiduallyModularOfLevel_div_of_isUnramifiedAt_sqf\n    (p : ℕ) [Fact p.Prime] (_hp2 : p ≠ 2) (W : WeierstrassCurve ℤ) (_hΔ : W.Δ ≠ 0)\n    (_hW : W.IsSemistableModel)\n    (hcard₁ : Nat.card (Submodule.torsionBy ℤ\n      ((W.map (Int.castRingHom ℚ))⁄(AlgebraicClosure ℚ)).Point p) = p ^ 2)\n    (hker : GaloisFactorsThroughFiniteLevel\n      (WeierstrassCurve.Affine.Point.galoisRepModuleEnd (K := AlgebraicClosure ℚ) ℚ\n        (W.map (Int.castRingHom ℚ)) p))\n    (_hirr : W.ModRepIsIrreducible p) (M q : ℕ) (hq : q.Prime) (hqp : q ≠ p)\n    (hqM : q ∣ M) (hq2 : ¬ q ^ 2 ∣ M) (hM : Squarefree M)\n    (hunr : ((W.map (Int.castRingHom ℚ)).residualGaloisRepOf p hcard₁ hker).IsUnramifiedAt q)\n    (hres : W.IsResiduallyModularOfLevel p M) :\n    W.IsResiduallyModularOfLevel p (M / q)",
+   "proof_file": "P2M/Sol/S_WeierstrassCurve_isResiduallyModularOfLevel_div_of_isUnramifiedAt_sqf.lean",
+   "reaches": [
+    "ResidualGaloisRep.isAbsolutelyIrreducible_of_isIrreducible_of_isOdd"
+   ]
+  },
+  {
+   "name": "WeierstrassCurve.isResiduallyModularOfLevel_of_switch",
+   "aliases": [
+    "3-5 switch"
+   ],
+   "stage": 4,
+   "file": "Theorems/Thm_WeierstrassCurve_isResiduallyModularOfLevel_of_switch.lean",
+   "line": 5,
+   "statement": "theorem WeierstrassCurve.isResiduallyModularOfLevel_of_switch {W W' : WeierstrassCurve ℤ} {N : ℕ}\n    (hmod : W'.IsModularModelOfLevel N)\n    (hND : ∀ ℓ : ℕ, ℓ.Prime → (ℓ : ℤ) ∣ W'.Δ → ℓ ∣ N)\n    (hcong : ∀ ℓ : ℕ, ℓ.Prime → W.IsGoodPrimeFor ℓ → W'.IsGoodPrimeFor ℓ → ℓ ≠ 5 →\n      (5 : ℤ) ∣ (W'.apOfModel ℓ - W.apOfModel ℓ)) :\n    W.IsResiduallyModularOfLevel 5 N",
+   "proof_file": "P2M/Sol/S_WeierstrassCurve_isResiduallyModularOfLevel_of_switch.lean",
+   "reaches": []
+  },
+  {
+   "name": "WeierstrassCurve.isResiduallyModular_three_and_noInertiaFixedTorsion_and_not_cube_dvd_of_isSemistableModel",
+   "aliases": [
+    "Langlands-Tunnell",
+    "residual modularity mod 3"
+   ],
+   "stage": 4,
+   "file": "Theorems/Thm_WeierstrassCurve_isResiduallyModular_three_and_noInertiaFixedTorsion_and_not_cube_dvd_of_isSemistableModel.lean",
+   "line": 57,
+   "statement": "set_option autoImplicit false\n\nopen WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen scoped WeierstrassCurve.Affine\n\ntheorem WeierstrassCurve.isResiduallyModular_three_and_noInertiaFixedTorsion_and_not_cube_dvd_of_isSemistableModel\n    (W : WeierstrassCurve ℤ) (hΔ : W.Δ ≠ 0) (hW : W.IsSemistableModel)\n    (h3 : W.ModRepIsIrreducible 3) :\n    ∃ M : ℕ, 0 < M ∧ W.IsResiduallyModularOfLevel 3 M ∧\n      (∀ q : ℕ, q.Prime → q ≠ 3 → ¬ q ^ 3 ∣ M) ∧\n      (3 ^ 2 ∣ M →\n        ∀ A : ValuationSubring (AlgebraicClosure ℚ), A.LiesOverPrime 3 →\n          ∀ x : Submodule.torsionBy ℤ\n              ((W.map (Int.castRingHom ℚ))⁄(AlgebraicClosure ℚ)).Point (3 : ℕ),\n            (∀ σ ∈ A.inertiaSubgroupIn ℚ, σ • x = x) → x = 0)",
+   "proof_file": "P2M/Sol/S_WeierstrassCurve_isResiduallyModular_three_and_noInertiaFixedTorsion_and_not_cube_dvd_of_isSemistableModel.lean",
+   "reaches": [
+    "LanglandsTunnell.exists_isWeightOneChiNegThreeRealized_eq_trace_lift"
+   ]
+  },
+  {
+   "name": "WeierstrassCurve.mazurStepThree_not_inZeroComponentAt",
+   "aliases": [
+    "Mazur Step 3"
+   ],
+   "stage": 3,
+   "file": "Theorems/Thm_WeierstrassCurve_mazurStepThree_not_inZeroComponentAt.lean",
+   "line": 65,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine\ntheorem WeierstrassCurve.mazurStepThree_not_inZeroComponentAt\n    {p : ℕ} (hp : p.Prime) (hp' : p ∉ ({2, 3, 5, 7, 13} : Finset ℕ))\n    (W : WeierstrassCurve ℤ) (hΔ : W.Δ ≠ 0)\n    (Q : ((W.map (Int.castRingHom ℚ))⁄(AlgebraicClosure ℚ)).Point)\n    (hQfix : ∀ σ : AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ, σ • Q = Q)\n    (hQord : addOrderOf Q = p)\n    (h2Δ : (2 : ℤ) ∣ W.Δ) (h2c₄ : ¬ (2 : ℤ) ∣ W.c₄)\n    (h2 : ∀ A : ValuationSubring (AlgebraicClosure ℚ), A.LiesOverPrime 2 → ¬ W.InZeroComponentAt A Q)\n    (h3Δ : (3 : ℤ) ∣ W.Δ) (h3c₄ : ¬ (3 : ℤ) ∣ W.c₄)\n    (h3 : ∀ A : ValuationSubring (AlgebraicClosure ℚ), A.LiesOverPrime 3 → ¬ W.InZeroComponentAt A Q)\n    {ℓ : ℕ} (hℓ : ℓ.Prime) (hℓp : ℓ ≠ p) (hℓΔ : (ℓ : ℤ) ∣ W.Δ) (hℓc₄ : ¬ (ℓ : ℤ) ∣ W.c₄)\n    (A : ValuationSubring (AlgebraicClosure ℚ)) (hA : A.LiesOverPrime ℓ) :\n    ¬ W.InZeroComponentAt A Q",
+   "proof_file": "P2M/Sol/S_WeierstrassCurve_mazurStepThree_not_inZeroComponentAt.lean",
+   "reaches": [
+    "ModularCurve.eisensteinQuotientInvariantsFiniteAt_heckeModuleBar",
+    "ModularCurve.mazurQuotientSpecialization_heckeModuleBar"
+   ]
+  },
+  {
+   "name": "WeierstrassCurve.modThreeOrFiveIrreducible",
+   "aliases": [
+    "3-5 trick",
+    "X0(15)",
+    "15-isogeny"
+   ],
+   "stage": 4,
+   "file": "Theorems/Thm_WeierstrassCurve_modThreeOrFiveIrreducible.lean",
+   "line": 15,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem WeierstrassCurve.modThreeOrFiveIrreducible (W : WeierstrassCurve ℤ) (hΔ : W.Δ ≠ 0) (hW : W.IsSemistableModel) : W.ModRepIsIrreducible 3 ∨ W.ModRepIsIrreducible 5",
+   "proof_file": "P2M/Sol/S_WeierstrassCurve_modThreeOrFiveIrreducible.lean",
+   "reaches": [
+    "WeierstrassCurve.fifteenIsogenyClassification"
+   ]
+  },
+  {
+   "name": "WeierstrassCurve.modularityLiftingAtConductor_threeFive_of_level_of_inertia_moves_torsion_of_eq_three_of_not_cube_dvd",
+   "aliases": [
+    "modularity lifting",
+    "R=T",
+    "R = T",
+    "Taylor-Wiles",
+    "p = 3"
+   ],
+   "stage": 4,
+   "file": "Theorems/Thm_WeierstrassCurve_modularityLiftingAtConductor_threeFive_of_level_of_inertia_moves_torsion_of_eq_three_of_not_cube_dvd.lean",
+   "line": 120,
+   "statement": "set_option autoImplicit false\n\nopen scoped WeierstrassCurve.Affine\n\ntheorem WeierstrassCurve.modularityLiftingAtConductor_threeFive_of_level_of_inertia_moves_torsion_of_eq_three_of_not_cube_dvd (p : ℕ) (hp : p = 3)\n    (W : WeierstrassCurve ℤ) (hΔ : W.Δ ≠ 0) (hW : W.IsSemistableModel) (hirr : W.ModRepIsIrreducible p)\n    (M₀ : ℕ) [NeZero M₀] (hres₀ : W.IsResiduallyModularOfLevel p M₀)\n    (hns : p ^ 2 ∣ M₀ →\n      ∀ A : ValuationSubring (AlgebraicClosure ℚ), A.LiesOverPrime p →\n        ∀ x : Submodule.torsionBy ℤ ((W.map (Int.castRingHom ℚ))⁄(AlgebraicClosure ℚ)).Point p,\n          (∀ σ ∈ A.inertiaSubgroupIn ℚ, σ • x = x) → x = 0)\n\n    (hM₀3 : ∀ q : ℕ, q.Prime → q ≠ p → ¬ q ^ 3 ∣ M₀) :\n    Mlc1IsModularModelOfExactConductorLevel W",
+   "proof_file": "P2M/Sol/S_WeierstrassCurve_modularityLiftingAtConductor_threeFive_of_level_of_inertia_moves_torsion_of_eq_three_of_not_cube_dvd.lean",
+   "reaches": [
+    "Algebra.PatchingDatum.nonempty_patchingLevel_bot",
+    "CuspForm.newformBadPrimeCoeff",
+    "GaloisRep.DeformationRingData.exists_surjective_algHom_of_heckeGaloisRepDatum",
+    "ResidualGaloisRep.isAbsolutelyIrreducible_of_isIrreducible_of_isOdd",
+    "WeierstrassCurve.isModularModelOfLevel_conductorLevel_of_not_cube_dvd_of_modRepIsIrreducible_of_not_sq_dvd",
+    "WeierstrassCurve.isModularModelOfLevel_of_patchingDatum",
+    "WeierstrassCurve.isResiduallyModularOfLevel_div_of_isUnramifiedAt_sqf",
+    "WeierstrassCurve.nonempty_deformationRingData_ordinaryCondition_of_isSemistableModel"
+   ]
+  },
+  {
+   "name": "WeierstrassCurve.modularityLiftingAtConductor_threeFive_of_level_of_not_sq_dvd_of_not_cube_dvd",
+   "aliases": [
+    "modularity lifting",
+    "R=T",
+    "R = T",
+    "Taylor-Wiles",
+    "p = 5"
+   ],
+   "stage": 4,
+   "file": "Theorems/Thm_WeierstrassCurve_modularityLiftingAtConductor_threeFive_of_level_of_not_sq_dvd_of_not_cube_dvd.lean",
+   "line": 120,
+   "statement": "set_option autoImplicit false\n\nopen scoped WeierstrassCurve.Affine\n\ntheorem WeierstrassCurve.modularityLiftingAtConductor_threeFive_of_level_of_not_sq_dvd_of_not_cube_dvd (p : ℕ) (hp : p = 3 ∨ p = 5)\n    (W : WeierstrassCurve ℤ) (hΔ : W.Δ ≠ 0) (hW : W.IsSemistableModel) (hirr : W.ModRepIsIrreducible p)\n    (M₀ : ℕ) [NeZero M₀] (hres₀ : W.IsResiduallyModularOfLevel p M₀)\n    (hM₀ : ¬ p ^ 2 ∣ M₀)\n    (hM₀3 : ∀ q : ℕ, q.Prime → q ≠ p → ¬ q ^ 3 ∣ M₀) :\n    Mlc1IsModularModelOfExactConductorLevel W",
+   "proof_file": "P2M/Sol/S_WeierstrassCurve_modularityLiftingAtConductor_threeFive_of_level_of_not_sq_dvd_of_not_cube_dvd.lean",
+   "reaches": [
+    "Algebra.PatchingDatum.nonempty_patchingLevel_bot",
+    "CuspForm.newformBadPrimeCoeff",
+    "GaloisRep.DeformationRingData.exists_surjective_algHom_of_heckeGaloisRepDatum",
+    "ResidualGaloisRep.isAbsolutelyIrreducible_of_isIrreducible_of_isOdd",
+    "WeierstrassCurve.isModularModelOfLevel_conductorLevel_of_not_cube_dvd_of_modRepIsIrreducible_of_not_sq_dvd",
+    "WeierstrassCurve.isModularModelOfLevel_of_patchingDatum",
+    "WeierstrassCurve.isResiduallyModularOfLevel_div_of_isUnramifiedAt_sqf",
+    "WeierstrassCurve.nonempty_deformationRingData_ordinaryCondition_of_isSemistableModel"
+   ]
+  },
+  {
+   "name": "WeierstrassCurve.modularity_of_semistableModel",
+   "aliases": [
+    "Wiles",
+    "Taylor-Wiles",
+    "modularity theorem",
+    "semistable modularity"
+   ],
+   "stage": 4,
+   "file": "Theorems/Thm_WeierstrassCurve_modularity_of_semistableModel.lean",
+   "line": 131,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem WeierstrassCurve.modularity_of_semistableModel (W : WeierstrassCurve ℤ) (hΔ : W.Δ ≠ 0) (hW : W.IsSemistableModel) : (W.map (Int.castRingHom ℚ)).IsModular",
+   "proof_file": "P2M/Sol/S_WeierstrassCurve_modularity_of_semistableModel.lean",
+   "reaches": [
+    "WeierstrassCurve.isResiduallyModularOfLevel_of_switch",
+    "WeierstrassCurve.isResiduallyModular_three_and_noInertiaFixedTorsion_and_not_cube_dvd_of_isSemistableModel",
+    "WeierstrassCurve.modThreeOrFiveIrreducible",
+    "WeierstrassCurve.modularityLiftingAtConductor_threeFive_of_level_of_inertia_moves_torsion_of_eq_three_of_not_cube_dvd",
+    "WeierstrassCurve.modularityLiftingAtConductor_threeFive_of_level_of_not_sq_dvd_of_not_cube_dvd",
+    "WeierstrassCurve.threeFiveSwitchCurve"
+   ]
+  },
+  {
+   "name": "WeierstrassCurve.nonempty_deformationRingData_ordinaryCondition_of_isSemistableModel",
+   "aliases": [],
+   "stage": 4,
+   "file": "Theorems/Thm_WeierstrassCurve_nonempty_deformationRingData_ordinaryCondition_of_isSemistableModel.lean",
+   "line": 21,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\ntheorem WeierstrassCurve.nonempty_deformationRingData_ordinaryCondition_of_isSemistableModel (p : ℕ) [Fact p.Prime] (hp2 : p ≠ 2) (W : WeierstrassCurve ℤ) (hΔ : W.Δ ≠ 0)\n    (hW : W.IsSemistableModel)\n    (hcard₁ : Nat.card (Submodule.torsionBy ℤ\n      ((W.map (Int.castRingHom ℚ))⁄(AlgebraicClosure ℚ)).Point p) = p ^ 2)\n    (hker : GaloisFactorsThroughFiniteLevel\n      (WeierstrassCurve.Affine.Point.galoisRepModuleEnd (K := AlgebraicClosure ℚ) ℚ\n        (W.map (Int.castRingHom ℚ)) p))\n    (S : Finset ℕ) (hS : ∀ q ∈ S, q.Prime) (hpS : p ∈ S)\n    (hbadS : ∀ q : ℕ, q.Prime → (q : ℤ) ∣ W.Δ → q ∈ S)\n    {𝒪 : Type} [CommRing 𝒪] [IsDomain 𝒪] [IsDiscreteValuationRing 𝒪]\n    [IsAdicComplete (IsLocalRing.maximalIdeal 𝒪) 𝒪] [Finite (IsLocalRing.ResidueField 𝒪)]\n    [CharZero 𝒪] (hp𝒪 : (p : 𝒪) ∈ IsLocalRing.maximalIdeal 𝒪)\n    (ι : ZMod p →+* IsLocalRing.ResidueField 𝒪)\n    (habs : (((W.map (Int.castRingHom ℚ)).residualGaloisRepOf p hcard₁ hker).baseChangeAlong\n      ι).IsAbsolutelyIrreducible)\n    (hord : ¬ W.IsGoodPrimeFor p ∨ ¬ (p : ℤ) ∣ W.apOfModel p) :\n    Nonempty (GaloisRep.DeformationRingData 𝒪\n      (((W.map (Int.castRingHom ℚ)).residualGaloisRepOf p hcard₁ hker).baseChangeAlong ι)\n      (GaloisRep.ordinaryCondition 𝒪 p S))",
+   "proof_file": "P2M/Sol/S_WeierstrassCurve_nonempty_deformationRingData_ordinaryCondition_of_isSemistableModel.lean",
+   "reaches": []
+  },
+  {
+   "name": "WeierstrassCurve.threeFiveAuxiliaryCurveExists",
+   "aliases": [
+    "3-5 switch",
+    "Rubin-Silverberg family"
+   ],
+   "stage": 4,
+   "file": "Theorems/Thm_WeierstrassCurve_threeFiveAuxiliaryCurveExists.lean",
+   "line": 8,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\ntheorem WeierstrassCurve.threeFiveAuxiliaryCurveExists (W : WeierstrassCurve ℤ) (hΔ : W.Δ ≠ 0) (hW : W.IsSemistableModel) (h5 : W.ModRepIsIrreducible 5) : ∃ W' : WeierstrassCurve ℤ, W'.Δ ≠ 0 ∧ W'.IsSemistableModel ∧ W'.ModRepIsIrreducible 3 ∧ ∃ φ : Submodule.torsionBy ℤ ((W.map (Int.castRingHom ℚ))⁄(AlgebraicClosure ℚ)).Point (5 : ℕ) ≃ₗ[ZMod 5] Submodule.torsionBy ℤ ((W'.map (Int.castRingHom ℚ))⁄(AlgebraicClosure ℚ)).Point (5 : ℕ), ∀ (σ : AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ) (x : Submodule.torsionBy ℤ ((W.map (Int.castRingHom ℚ))⁄(AlgebraicClosure ℚ)).Point (5 : ℕ)), φ (σ • x) = σ • φ x",
+   "proof_file": "P2M/Sol/S_WeierstrassCurve_threeFiveAuxiliaryCurveExists.lean",
+   "reaches": [
+    "WeierstrassCurve.exists_forall_not_isRoot_Psi3_specialization",
+    "WeierstrassCurve.galoisRepIsIrreducible_three_of_forall_eval_Psi3_ne_zero"
+   ]
+  },
+  {
+   "name": "WeierstrassCurve.threeFiveSwitchCurve",
+   "aliases": [
+    "3-5 switch",
+    "three-five switch",
+    "Wiles"
+   ],
+   "stage": 4,
+   "file": "Theorems/Thm_WeierstrassCurve_threeFiveSwitchCurve.lean",
+   "line": 16,
+   "statement": "open WeierstrassCurve WeierstrassCurve.Affine WeierstrassCurve.Affine.Point\nopen CuspForm ModularFormClass UpperHalfPlane\ntheorem WeierstrassCurve.threeFiveSwitchCurve (W : WeierstrassCurve ℤ) (hΔ : W.Δ ≠ 0) (hW : W.IsSemistableModel) (h5 : W.ModRepIsIrreducible 5) : ∃ W' : WeierstrassCurve ℤ, W'.Δ ≠ 0 ∧ W'.IsSemistableModel ∧ W'.ModRepIsIrreducible 3 ∧ ∀ ℓ : ℕ, ℓ.Prime → W.IsGoodPrimeFor ℓ → W'.IsGoodPrimeFor ℓ → ℓ ≠ 5 → (5 : ℤ) ∣ (W'.apOfModel ℓ - W.apOfModel ℓ)",
+   "proof_file": "P2M/Sol/S_WeierstrassCurve_threeFiveSwitchCurve.lean",
+   "reaches": [
+    "WeierstrassCurve.threeFiveAuxiliaryCurveExists"
+   ]
+  },
+  {
+   "name": "fermatLastTheoremFive",
+   "aliases": [
+    "descent",
+    "exponent 5"
+   ],
+   "stage": 3,
+   "file": "Theorems/Thm_fermatLastTheoremFive.lean",
+   "line": 5,
+   "statement": "theorem fermatLastTheoremFive : FermatLastTheoremFor 5",
+   "proof_file": "P2M/Sol/S_fermatLastTheoremFive.lean",
+   "reaches": []
+  },
+  {
+   "name": "fermatLastTheoremSeven",
+   "aliases": [],
+   "stage": 3,
+   "file": "Theorems/Thm_fermatLastTheoremSeven.lean",
+   "line": 5,
+   "statement": "theorem fermatLastTheoremSeven : FermatLastTheoremFor 7",
+   "proof_file": "P2M/Sol/S_fermatLastTheoremSeven.lean",
+   "reaches": [
+    "IsCyclotomicExtension.Rat.seven_pid",
+    "flt_regular"
+   ]
+  },
+  {
+   "name": "fermat_last_theorem",
+   "aliases": [
+    "Fermat's Last Theorem",
+    "FLT"
+   ],
+   "stage": 0,
+   "file": "Theorems/Thm_fermat_last_theorem.lean",
+   "line": 128,
+   "statement": "theorem fermat_last_theorem (n : ℕ) (hn : 3 ≤ n) (a b c : ℕ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : a ^ n + b ^ n ≠ c ^ n",
+   "proof_file": "P2M/Sol/S_fermat_last_theorem.lean",
+   "reaches": [
+    "FreyPackage.fermatLastTheoremFor_of_five_le"
+   ]
+  },
+  {
+   "name": "flt_regular",
+   "aliases": [
+    "Kummer",
+    "regular primes",
+    "flt-regular"
+   ],
+   "stage": 3,
+   "file": "Theorems/Thm_flt_regular.lean",
+   "line": 6,
+   "statement": "open scoped NumberField\ntheorem flt_regular {p : ℕ} [Fact p.Prime] (hreg : p.Coprime (Fintype.card (ClassGroup (𝓞 (CyclotomicField p ℚ))))) (hodd : p ≠ 2) : FermatLastTheoremFor p",
+   "proof_file": "P2M/Sol/S_flt_regular.lean",
+   "reaches": []
+  }
+ ]
+}

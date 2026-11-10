@@ -130,15 +130,18 @@ def coverage(libraries: list[dict], rows: list[tuple[str, str, str]]) -> str:
 def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict | None,
                    blueprints: list[tuple[str, str, str, str | None, bool]] = (),
                    tauceti: tuple[str, str] | None = None, formal_frontier: dict[str, str] | None = None,
-                   formal_conjectures: str | None = None, lean_pool: str | None = None) -> str:
+                   formal_conjectures: str | None = None, lean_pool: str | None = None,
+                   anthropic_flt: dict | None = None) -> str:
     """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library;
     *tauceti* has the Tau Ceti and roadmap commits, once the chapter is built; *formal_frontier* has the
     commit each Formal Frontier library's record pins, by library id; *formal_conjectures* is the Formal
-    Conjectures commit read, and *lean_pool* the commit Lean Pool's record pins."""
+    Conjectures commit read, *lean_pool* the commit Lean Pool's record pins, and *anthropic_flt* the
+    source record of Anthropic's Fermat's Last Theorem, whose commit it pins."""
     formal_frontier = formal_frontier or {}
     # Every chapter whose data pins a library's commit, by library id; the Libraries list shows that commit.
     pinned = (formal_frontier | ({"formal-conjectures": formal_conjectures} if formal_conjectures else {})
-              | ({"lean-pool": lean_pool} if lean_pool else {}))
+              | ({"lean-pool": lean_pool} if lean_pool else {})
+              | ({"anthropic-flt": anthropic_flt["rev"]} if anthropic_flt else {}))
     lines = [
         "# Sources",
         "",
@@ -217,6 +220,17 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             "module, line and kind of each main "
             "result's declaration, read from the source text without Lean. `data/lean-pool/source.json` records the "
             "commit, its Lean toolchain and Mathlib.",
+        ]
+    if anthropic_flt:
+        lines += [
+            "",
+            "## Fermat's Last Theorem (Anthropic)",
+            "",
+            f"- `data/anthropic-flt/source.json` and `landmarks.json`: the facts of the formalization.yaml, the steps of "
+            f"PROOF-PATH.md, and the landmark theorems of [{anthropic_flt['repo']} at {anthropic_flt['rev'][:8]}]"
+            f"(https://github.com/{anthropic_flt['repo']}/tree/{anthropic_flt['rev']}), each with its route stage, aliases "
+            "and nearest landmarks from html/data/meta.js and html/data/edges.js and its Lean statement from its file "
+            "under Theorems/, Apache-2.0. Nothing is read with Lean.",
         ]
     lines += ["", "## Libraries", ""]
     for group, heading in GROUPS:

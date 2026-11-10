@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import blueprints, catalog, ff, formal_conjectures, lean_pool, links, mathlib, tauceti, wiki
+from trough import anthropic_flt, blueprints, catalog, ff, formal_conjectures, lean_pool, links, mathlib, tauceti, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -57,9 +57,12 @@ def generate() -> dict[Path, str]:
                 heads.setdefault(first, node)
     blueprint_rows, lean_links = [], {}
     projects = blueprints.load_projects(DATA, libraries)
+    imperial = None
     for project in projects:
         built = blueprints.chapter(project, blueprints.load_blueprint(project), heads)
         assign_paths(built.root, ROADMAP / project.id)
+        if project.id == anthropic_flt.IMPERIAL:
+            imperial = built.root
         blueprints.resolve(built, VAULT)
         files.update(render_tree(built.root, VAULT))
         chapters[project.id] = f"{project.id}/README.md"
@@ -171,6 +174,25 @@ def generate() -> dict[Path, str]:
             f"{pool_stats['main_declarations_found']} of {pool_stats['main_declarations']} main declarations found",
             file=sys.stderr,
         )
+    aflt = anthropic_flt.load(DATA)
+    if aflt:
+        aflt_built, aflt_links = anthropic_flt.chapter(*aflt, imperial)
+        assign_paths(aflt_built.root, ROADMAP / "anthropic-flt")
+        blueprints.resolve(aflt_built, VAULT)
+        files.update(render_tree(aflt_built.root, VAULT))
+        chapters["anthropic-flt"] = "anthropic-flt/README.md"
+        lean_links["anthropic-flt"] = dict(sorted(aflt_links.items()))
+        aflt_stats = aflt_built.stats
+        blueprint_rows.append(("Fermat's Last Theorem (Anthropic)", "DECOMPOSED",
+                               f"[{aflt_stats['articles']} landmark theorems](../roadmap/anthropic-flt/README.md) in the "
+                               f"steps of PROOF-PATH.md, one article each; the other "
+                               f"{aflt_stats['theorems'] - aflt_stats['articles']:,} theorems are counted, not mapped."))
+        print(
+            f"anthropic-flt: {aflt_stats['articles']} landmark articles of {aflt_stats['theorems']} theorems in "
+            f"{aflt_stats['parts']} parts; {aflt_stats['landmark_edges']} edges between landmarks of "
+            f"{aflt_stats['edges']}; {aflt_stats['imperial_matches']} names shared with Imperial FLT",
+            file=sys.stderr,
+        )
     files[ROOT / "hooks" / "lean-links.json"] = json.dumps(lean_links, indent=1, ensure_ascii=False) + "\n"
     root = ROADMAP / "README.md"
     previous = root.read_text(encoding="utf-8") if root.is_file() else None
@@ -195,6 +217,7 @@ def generate() -> dict[Path, str]:
         {library["id"]: record["rev"] for library, record in ff_libraries},
         formal_conjectures=fc_data["rev"] if fc_data else None,
         lean_pool=pool[0]["rev"] if pool else None,
+        anthropic_flt=aflt[0] if aflt else None,
     )
     print(
         f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['stated']} stated only, "

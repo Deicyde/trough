@@ -16,8 +16,9 @@ Mathlib is mapped from its curated lists, Tau Ceti from the declarations its
 roadmaps' status files name and the results its docstrings name, five
 research projects from their leanblueprints (Imperial's FLT, PFR, Equational
 Theories, Strong PNT and PNT+), the Formal Frontier libraries from their
-headline results, Formal Conjectures from its problem files, and Lean Pool
-from its project cards.
+headline results, Formal Conjectures from its problem files, Lean Pool from
+its project cards, and Anthropic's FLT from the landmark theorems of its
+proof.
 
 ## The Mathlib map
 
@@ -297,6 +298,53 @@ edges, which need Lean, and no Lean runs for this chapter.
    checkout lacks, or the scan places under half the main results the last
    record placed.
 
+## The Anthropic FLT chapter
+
+[anthropics/fermats-last-theorem](https://github.com/anthropics/fermats-last-theorem),
+by Anthropic, states that it is a Lean proof of Fermat's Last Theorem along the
+route of Frey, Serre, Ribet, Wiles and Taylor-Wiles, derived in part from
+Imperial's FLT project, flt-regular and Mathlib. Its `PROOF-PATH.md` describes
+the route in six steps and a section on the exact strength of the named steps,
+and the data of its web pages list its 29,511 theorems, mark 49 of them as
+landmarks and give the citation graph. The chapter has a part per step, quoting
+it, with an article for each landmark the web pages place there: its Lean
+statement, its aliases and a link to its line at the pinned commit, and under
+"Proof depends on" the landmarks its proof reaches. The other theorems are
+counted, not mapped, and the web pages' English titles and summaries are left
+out, as the repository says they are generated and their references not
+individually verified. No Lean runs: the chapter records what the repository
+states.
+
+1. `tools/refresh_anthropic_flt.py CHECKOUT` writes `data/anthropic-flt/source.json`
+   (the commit, the formalization.yaml's facts and PROOF-PATH.md's steps) and
+   `landmarks.json`. A landmark's stage and aliases come from `html/data/meta.js`;
+   its statement is the text of its `Theorems/Thm_X_y.lean` from the end of the
+   imports and `attribute` lines to the top-level `:=`; and the landmarks its
+   proof reaches are the nearest ones in `html/data/edges.js`, the import lines
+   of the proof modules, passing only through theorems that are not landmarks. A
+   theorem a step opens with, when the web pages place it in that step, takes
+   the step's name as its title; the web pages put `fermat_last_theorem` in a
+   stage before the first step, so it opens part 1. The section on the exact
+   strength of the named steps is quoted by its "Proved:" clauses, cut with …
+   where the text goes on, and by its entries that say neither what is proved
+   nor what is not, whole: the map records what the repository proves, not what
+   it leaves out.
+2. Where a landmark's name, or another declaration its statement file makes, is
+   also a Lean name in the Imperial FLT chapter, its article links that article.
+   The names are compared as written.
+3. The **Anthropic FLT data** workflow (`.github/workflows/anthropic-flt-data.yml`)
+   fetches the repository at the pinned commit, as a blobless sparse checkout of
+   the files the refresh reads, runs the refresh, regenerates the pages and runs
+   the tests; on a pull request it fails when the committed data differ from
+   what the pin gives. The weekly run, or a dispatch with `newest`, moves the
+   pin to the repository's newest commit. The articles link the repository's
+   documentation site only when the run finds that the site serves the
+   landmarks' pages; when the site does not answer at all, the last record's
+   link stays. A refresh writes nothing, and the workflow fails, when the
+   repository is not Apache-2.0, a file the refresh reads is missing from the
+   checkout, a landmark's statement file states another theorem or may be cut
+   short, or the landmarks drop under half the last count.
+
 ## Working on it
 
     uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
@@ -370,3 +418,7 @@ problems' docstrings follow [erdosproblems.com](https://www.erdosproblems.com).
 The text in `data/lean-pool/` comes from the project cards and
 `NOTICE.extra.yml` of [Lean Pool](https://github.com/LeanPool/lean-pool),
 Apache-2.0; each article names its project's authors.
+The text quoted in `data/anthropic-flt/` comes from the PROOF-PATH.md,
+formalization.yaml and `Theorems/` files of
+[anthropics/fermats-last-theorem](https://github.com/anthropics/fermats-last-theorem),
+Apache-2.0.
