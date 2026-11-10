@@ -16,7 +16,8 @@ Mathlib is mapped from its curated lists, Tau Ceti from the declarations its
 roadmaps' status files name and the results its docstrings name, five
 research projects from their leanblueprints (Imperial's FLT, PFR, Equational
 Theories, Strong PNT and PNT+), the Formal Frontier libraries from their
-headline results, and Formal Conjectures from its problem files.
+headline results, Formal Conjectures from its problem files, and Lean Pool
+from its project cards.
 
 ## The Mathlib map
 
@@ -252,6 +253,50 @@ benchmark sets. No Lean runs for this chapter, so its articles have no edges.
    don't close), naming each, or when it keeps under half the statements the
    last record kept.
 
+## The Lean Pool chapter
+
+[Lean Pool](https://github.com/LeanPool/lean-pool) keeps Lean projects outside
+Mathlib's scope, each in a directory of its own under `LeanPool/` with a card,
+`LeanPool/projects/<slug>.yaml`: its title, summary, authors, sources, license,
+provenance, MSC2020 codes and main results, each a declaration with an informal
+statement. The chapter has a section per top-level MSC2020 class, the class of
+the first code a card lists, titled by its MSC2020 name, and an article per
+card, titled by the card's title. An article quotes the card's summary, names
+the project's authors, links its sources (DOI, then arXiv, then URL, then a
+paper, manuscript, proof or problem page the card links), with the card's
+citation, mathematical source, background and notes on them, and its own
+repository at the commit the card gives, says who wrote its Lean proofs as the
+card's provenance does in Lean Pool's words, gives its license, quoting the
+copyright line or note Lean Pool's notice file keeps for a project published
+under MIT, and lists its main results: each informal statement quoted, with its
+declaration linked to Lean Pool's
+[documentation](https://leanpool.github.io/lean-pool/) and to its line at the
+pin when the scan below finds it. A main result the scan does not find keeps
+its statement and says so. The articles show no Lean signatures and have no
+edges, which need Lean, and no Lean runs for this chapter.
+
+1. `tools/refresh_lean_pool.py CHECKOUT` reads a checkout of Lean Pool and
+   writes `data/lean-pool/source.json`, the commit with its Lean toolchain and
+   Mathlib, and `data/lean-pool/projects.json`, the cards with the notes its
+   `NOTICE.extra.yml` keeps for MIT projects. For each main result it looks for
+   the declaration in the project's `.lean` files with `tools/trough/leansource.py`,
+   as the Formal Frontier chapter does, and records its module, line and kind
+   and whether its text holds `sorry`; a name declared in two of the project's
+   files is left out, since the project imports all of them together and Lean
+   would refuse it. Lean Pool's CI checks that each card's main declarations
+   exist, so a main declaration the scan misses is a gap in the scan.
+2. The **Lean Pool data** workflow (`.github/workflows/lean-pool-data.yml`)
+   fetches Lean Pool at the commit `data/lean-pool/source.json` pins, as a
+   blobless sparse checkout of the cards and the `.lean` files, runs the
+   refresh, regenerates the pages and runs the tests; on a pull request it
+   fails when the committed data differ from what the pin gives. The weekly
+   run, or a dispatch with `newest`, moves the pin to Lean Pool's newest main
+   commit whose Lean CI passed. A refresh writes nothing, and the workflow
+   fails, when Lean Pool is not Apache-2.0, a card lacks what the chapter reads,
+   has a license other than Apache-2.0 or MIT or names an entry module the
+   checkout lacks, or the scan places under half the main results the last
+   record placed.
+
 ## Working on it
 
     uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
@@ -322,3 +367,6 @@ docstrings and Lean statements in `data/formal-conjectures/` come from
 [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures)
 (Google DeepMind), Apache-2.0; Formal Conjectures asks that its Erdős
 problems' docstrings follow [erdosproblems.com](https://www.erdosproblems.com).
+The text in `data/lean-pool/` comes from the project cards and
+`NOTICE.extra.yml` of [Lean Pool](https://github.com/LeanPool/lean-pool),
+Apache-2.0; each article names its project's authors.

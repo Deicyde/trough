@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import blueprints, catalog, ff, formal_conjectures, links, mathlib, tauceti, wiki
+from trough import blueprints, catalog, ff, formal_conjectures, lean_pool, links, mathlib, tauceti, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -152,6 +152,25 @@ def generate() -> dict[Path, str]:
             f"{fc_stats['subset_missing']} of {fc_stats['subset_names']} FC100 names without an article",
             file=sys.stderr,
         )
+    pool = lean_pool.load(DATA)
+    if pool:
+        pool_root, pool_stats, pool_parts = lean_pool.chapter(*pool)
+        assign_paths(pool_root, ROADMAP / "lean-pool")
+        files.update(render_tree(pool_root, VAULT))
+        chapters["lean-pool"] = "lean-pool/README.md"
+        for part, names in pool_parts:
+            # Keyed by the part's directory, as a name may be declared in more than one project.
+            if names:
+                lean_links[part.path.parent.relative_to(ROADMAP).as_posix()] = dict(sorted(names.items()))
+        blueprint_rows.append(("Lean Pool", "DECOMPOSED",
+                               f"[{pool_stats['articles']} project cards](../roadmap/lean-pool/README.md), one article "
+                               "per card."))
+        print(
+            f"lean-pool: {pool_stats['articles']} articles in {pool_stats['parts']} parts; "
+            f"{pool_stats['main_results_found']} of {pool_stats['main_results']} main results and "
+            f"{pool_stats['main_declarations_found']} of {pool_stats['main_declarations']} main declarations found",
+            file=sys.stderr,
+        )
     files[ROOT / "hooks" / "lean-links.json"] = json.dumps(lean_links, indent=1, ensure_ascii=False) + "\n"
     root = ROADMAP / "README.md"
     previous = root.read_text(encoding="utf-8") if root.is_file() else None
@@ -174,7 +193,8 @@ def generate() -> dict[Path, str]:
         [(project.id, project.name, project.repo, project.license, project.text) for project in projects],
         (tau.rev, tau.roadmap_rev) if tau and tau.deps else None,
         {library["id"]: record["rev"] for library, record in ff_libraries},
-        fc_data["rev"] if fc_data else None,
+        formal_conjectures=fc_data["rev"] if fc_data else None,
+        lean_pool=pool[0]["rev"] if pool else None,
     )
     print(
         f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['stated']} stated only, "

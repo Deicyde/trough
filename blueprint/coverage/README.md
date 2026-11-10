@@ -59,6 +59,7 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | Formal Frontier / Valuation integers | `DECOMPOSED` | [5 highlights of its formalization.yaml](../roadmap/formal-frontier/number-theory/valuation-integers/README.md) whose declarations the scan finds in the linked file, one article each. |
 | Formal Frontier / Vector bundles | `DECOMPOSED` | [4 highlights of its formalization.yaml and 1 headline result](../roadmap/formal-frontier/topology/vector-bundles/README.md) whose declarations the scan finds in the linked file, one article each. |
 | Formal Conjectures | `DECOMPOSED` | [1,814 problem files](../roadmap/formal-conjectures/README.md) that state a research or textbook statement, one article each, with a card per statement. |
+| Lean Pool | `DECOMPOSED` | [334 project cards](../roadmap/lean-pool/README.md), one article per card. |
 | ATLAS | `OUT` | Mapped separately: one article per documented public declaration, at <https://deicyde.github.io/atlas-lean/>. |
 | Physlib | `DEFERRED` | Planned map, by documented declaration: One article per documented declaration, grouped by physics area; granularity to be checked against a docstring count. |
 | CSLib | `DEFERRED` | Planned map, by documented declaration: One article per documented public declaration. |
@@ -67,4 +68,3 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | Fermat's Last Theorem (Anthropic) | `DEFERRED` | Planned map, by proof step: One article per step of PROOF-PATH.md, linked to the Lean theorem it names. |
 | OpenAI Math | `DEFERRED` | Planned map, by result family: One article per result family in CONTENTS.md, joined to the 208 formalization.yaml main results. |
 | Classification of Finite Simple Groups (Axiom) | `DEFERRED` | Planned map, by milestone: Milestones from the in-Lean CFSG/Blueprint catalog and the formalization.yaml main results. |
-| Lean Pool | `DEFERRED` | Planned map, by project: One article per project in LeanPool/projects (317), with its main_results as statements. |
