@@ -1,0 +1,90 @@
+{
+ "repo": "AxiomMath/Stacks",
+ "rev": "5ed82d14634e8d9576bb844c7bd4e3da66d450e7",
+ "date": "2026-11-06T08:31:32Z",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "mathlib_version": "v4.35.0",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "Stacks",
+  "description": "`Stacks` is a Lean 4 formalization, on top of Mathlib, of statements and proofs of The Stacks Project, indexed by Stacks tag. `StacksCore` is the human-reviewed library; `StacksFrontier` holds drafted formalizations that build and are axiom-clean but are not yet reviewed. The formalization was generated collaboratively between human formalisers at Axiom Math and AxiomProver, their in-house theorem proving system. Community feedback and contributions are welcome!",
+  "authors": [
+   "Kenny Lau",
+   "Brian Nugent",
+   "Ashvin A. Swaminathan",
+   "Yunzhou Xie"
+  ],
+  "maintainers": [
+   "Ashvin A. Swaminathan",
+   "Kenny Lau",
+   "Brian Nugent",
+   "Yunzhou Xie"
+  ]
+ },
+ "review": {
+  "status": "self-assessed",
+  "notes": "StacksCore is human-reviewed. StacksFrontier builds with no sorry and only the standard axioms, and each statement was checked against its Stacks tag, but it has not yet had human review. The development took place in a repository internal to Axiom Math.",
+  "reviewers": [
+   "Kenny Lau",
+   "Brian Nugent",
+   "Yunzhou Xie"
+  ]
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "autonomous",
+    "models": [
+     "AxiomProver"
+    ]
+   },
+   {
+    "method": "manual"
+   }
+  ],
+  "notes": "Foundational definitions and the StacksCore library formalised and reviewed by hand; most of StacksFrontier formalised autonomously"
+ },
+ "sources": [
+  {
+   "title": "The Stacks Project",
+   "authors": [
+    "The Stacks project authors"
+   ],
+   "type": "book",
+   "relationship": "formalizes",
+   "location": "Chapters 1 to 109",
+   "url": "https://stacks.math.columbia.edu"
+  }
+ ],
+ "readme": {
+  "structure": "`import Stacks` brings in both tiers. Every proof in either tier is kernel-checked; the tiers differ in who has reviewed the code.",
+  "tiers": {
+   "StacksCore": "human-reviewed formalizations, checked against the Stacks Project and brought to Mathlib standards of naming, generality and style.",
+   "StacksFrontier": "formalizations written by AI agents."
+  }
+ },
+ "counts": {
+  "declarations_StacksCore": 451,
+  "declarations_StacksFrontier": 37927,
+  "ega_attributes": 9460,
+  "ega_items": 2743,
+  "ega_registrations_StacksCore": 3,
+  "ega_registrations_StacksFrontier": 7566,
+  "files_StacksCore": 445,
+  "files_StacksFrontier": 62527,
+  "registrations_StacksCore": 693,
+  "registrations_StacksFrontier": 2909,
+  "sga_attributes": 10980,
+  "sga_items": 3327,
+  "sga_registrations_StacksCore": 12,
+  "sga_registrations_StacksFrontier": 9116,
+  "sorry": 0,
+  "tags_StacksCore": 507,
+  "tags_StacksFrontier": 15959
+ },
+ "site": {
+  "url": "https://stacks.axiommath.ai/",
+  "tags": false
+ }
+}
