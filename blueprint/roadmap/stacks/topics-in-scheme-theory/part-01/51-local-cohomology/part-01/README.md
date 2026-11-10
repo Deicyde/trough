@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 51.2 Generalities to 51.21 A bit of uniformity, II
+# 51.2 Generalities to 51.14 Finiteness of local…
 
 - [51.2 Generalities](51-2-generalities.md)
 - [51.3 Hartshorne's connectedness lemma](51-3-hartshornes-connectedness-lemma.md)
@@ -17,10 +17,3 @@ navigation: transparent
 - [51.12 Finiteness of pushforwards, II](51-12-finiteness-of-pushforwards-ii.md)
 - [51.13 Annihilators of local cohomology, II](51-13-annihilators-of-local-cohomology-ii.md)
 - [51.14 Finiteness of local cohomology, III](51-14-finiteness-of-local-cohomology-iii.md)
-- [51.15 Improving coherent modules](51-15-improving-coherent-modules.md)
-- [51.16 Hartshorne-Lichtenbaum vanishing](51-16-hartshorne-lichtenbaum-vanishing.md)
-- [51.17 Frobenius action](51-17-frobenius-action.md)
-- [51.18 Structure of certain modules](51-18-structure-of-certain-modules.md)
-- [51.19 Additional structure on local cohomology](51-19-additional-structure-on-local-cohomology.md)
-- [51.20 A bit of uniformity, I](51-20-a-bit-of-uniformity-i.md)
-- [51.21 A bit of uniformity, II](51-21-a-bit-of-uniformity-ii.md)

@@ -2,14 +2,20 @@
 navigation: transparent
 ---
 
-# 101.43 Valuative criterion for… to 101.51 Residual gerbes
+# 101.23 Locally quasi-finite… to 101.37 Proper morphisms
 
-- [101.43 Valuative criterion for properness](101-43-valuative-criterion-for-properness.md)
-- [101.44 Local complete intersection morphisms](101-44-local-complete-intersection-morphisms.md)
-- [101.45 Stabilizer preserving morphisms](101-45-stabilizer-preserving-morphisms.md)
-- [101.46 Normalization](101-46-normalization.md)
-- [101.47 Points and specializations](101-47-points-and-specializations.md)
-- [101.48 Decent algebraic stacks](101-48-decent-algebraic-stacks.md)
-- [101.49 Points on decent stacks](101-49-points-on-decent-stacks.md)
-- [101.50 Integral algebraic stacks](101-50-integral-algebraic-stacks.md)
-- [101.51 Residual gerbes](101-51-residual-gerbes.md)
+- [101.23 Locally quasi-finite morphisms](101-23-locally-quasi-finite-morphisms.md)
+- [101.24 Quasi-finite morphisms](101-24-quasi-finite-morphisms.md)
+- [101.25 Flat morphisms](101-25-flat-morphisms.md)
+- [101.26 Flat at a point](101-26-flat-at-a-point.md)
+- [101.27 Morphisms of finite presentation](101-27-morphisms-of-finite-presentation.md)
+- [101.28 Gerbes](101-28-gerbes.md)
+- [101.29 Stratification by gerbes](101-29-stratification-by-gerbes.md)
+- [101.30 The topological space of an algebraic stack](101-30-the-topological-space-of-an-algebraic-sta.md)
+- [101.31 Existence of residual gerbes](101-31-existence-of-residual-gerbes.md)
+- [101.32 Étale local structure](101-32-etale-local-structure.md)
+- [101.33 Smooth morphisms](101-33-smooth-morphisms.md)
+- [101.34 Types of morphisms étale-smooth local on source-and-target](101-34-types-of-morphisms-etale-smooth-local-on.md)
+- [101.35 Étale morphisms](101-35-etale-morphisms.md)
+- [101.36 Unramified morphisms](101-36-unramified-morphisms.md)
+- [101.37 Proper morphisms](101-37-proper-morphisms.md)

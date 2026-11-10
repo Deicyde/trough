@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 61.2 Some topology to 61.21 Derived completion and…
+# 61.2 Some topology to 61.18 Points of the pro-étale…
 
 - [61.2 Some topology](61-2-some-topology.md)
 - [61.3 Local isomorphisms](61-3-local-isomorphisms.md)
@@ -21,6 +21,3 @@ navigation: transparent
 - [61.16 Comparing topologies](61-16-comparing-topologies.md)
 - [61.17 Comparing big and small topoi](61-17-comparing-big-and-small-topoi.md)
 - [61.18 Points of the pro-étale site](61-18-points-of-the-pro-etale-site.md)
-- [61.19 Comparison with the étale site](61-19-comparison-with-the-etale-site.md)
-- [61.20 Derived completion in the constant Noetherian case](61-20-derived-completion-in-the-constant-noether.md)
-- [61.21 Derived completion and weakly contractible objects](61-21-derived-completion-and-weakly-contractible.md)

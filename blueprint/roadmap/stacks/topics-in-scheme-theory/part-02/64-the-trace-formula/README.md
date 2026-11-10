@@ -2,7 +2,7 @@
 
 Chapter 64 of the Stacks Project, *The Trace Formula*, [Tag 0F5P](https://stacks.math.columbia.edu/tag/0F5P): the 22 sections of its 35 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 76 tags are carried by 213 declarations of the repository (all in StacksFrontier) and 27 registered declarations.
 
-## [64.3 Frobenii to 64.30 Abstract trace formula](part-01/README.md)
+## [64.3 Frobenii to 64.29 Cohomology of curves…](part-01/README.md)
 
 - [64.3 Frobenii](part-01/64-3-frobenii.md)
 - [64.4 Traces](part-01/64-4-traces.md)
@@ -23,9 +23,9 @@ Chapter 64 of the Stacks Project, *The Trace Formula*, [Tag 0F5P](https://stacks
 - [64.27 Fundamental groups](part-01/64-27-fundamental-groups.md)
 - [64.28 Profinite groups, cohomology and homology](part-01/64-28-profinite-groups-cohomology-and-homology.md)
 - [64.29 Cohomology of curves, revisited](part-01/64-29-cohomology-of-curves-revisited.md)
-- [64.30 Abstract trace formula](part-01/64-30-abstract-trace-formula.md)
 
-## [64.31 Automorphic forms and… to 64.34 How many primes decompose…](part-02/README.md)
+## [64.30 Abstract trace formula to 64.34 How many primes decompose…](part-02/README.md)
 
+- [64.30 Abstract trace formula](part-02/64-30-abstract-trace-formula.md)
 - [64.31 Automorphic forms and sheaves](part-02/64-31-automorphic-forms-and-sheaves.md)
 - [64.34 How many primes decompose completely?](part-02/64-34-how-many-primes-decompose-completely.md)

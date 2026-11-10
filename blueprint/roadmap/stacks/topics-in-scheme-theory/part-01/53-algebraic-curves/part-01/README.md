@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 53.2 Curves and function fields to 53.21 Étale local structure of…
+# 53.2 Curves and function fields to 53.14 Pushouts
 
 - [53.2 Curves and function fields](53-2-curves-and-function-fields.md)
 - [53.3 Linear series](53-3-linear-series.md)
@@ -17,10 +17,3 @@ navigation: transparent
 - [53.12 Riemann-Hurwitz](53-12-riemann-hurwitz.md)
 - [53.13 Inseparable maps](53-13-inseparable-maps.md)
 - [53.14 Pushouts](53-14-pushouts.md)
-- [53.15 Glueing and squishing](53-15-glueing-and-squishing.md)
-- [53.16 Multicross and nodal singularities](53-16-multicross-and-nodal-singularities.md)
-- [53.17 Torsion in the Picard group](53-17-torsion-in-the-picard-group.md)
-- [53.18 Genus versus geometric genus](53-18-genus-versus-geometric-genus.md)
-- [53.19 Nodal curves](53-19-nodal-curves.md)
-- [53.20 Families of nodal curves](53-20-families-of-nodal-curves.md)
-- [53.21 Étale local structure of nodal families](53-21-etale-local-structure-of-nodal-families.md)

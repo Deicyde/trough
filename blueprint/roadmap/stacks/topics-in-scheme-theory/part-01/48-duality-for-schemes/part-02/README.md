@@ -2,18 +2,15 @@
 navigation: transparent
 ---
 
-# 48.22 Dualizing modules to 48.34 Lichtenbaum's theorem
+# 48.12 Right adjoint of… to 48.21 Dimension functions
 
-- [48.22 Dualizing modules](48-22-dualizing-modules.md)
-- [48.23 Cohen-Macaulay schemes](48-23-cohen-macaulay-schemes.md)
-- [48.24 Gorenstein schemes](48-24-gorenstein-schemes.md)
-- [48.25 Gorenstein morphisms](48-25-gorenstein-morphisms.md)
-- [48.26 More on dualizing complexes](48-26-more-on-dualizing-complexes.md)
-- [48.27 Duality for proper schemes over fields](48-27-duality-for-proper-schemes-over-fields.md)
-- [48.28 Relative dualizing complexes](48-28-relative-dualizing-complexes.md)
-- [48.29 The fundamental class of an lci morphism](48-29-the-fundamental-class-of-an-lci-morphism.md)
-- [48.30 Extension by zero for coherent modules](48-30-extension-by-zero-for-coherent-modules.md)
-- [48.31 Preliminaries to compactly supported cohomology](48-31-preliminaries-to-compactly-supported-cohom.md)
-- [48.32 Compactly supported cohomology for coherent modules](48-32-compactly-supported-cohomology-for-coheren.md)
-- [48.33 Duality for compactly supported cohomology](48-33-duality-for-compactly-supported-cohomology.md)
-- [48.34 Lichtenbaum's theorem](48-34-lichtenbaums-theorem.md)
+- [48.12 Right adjoint of pushforward for proper flat morphisms](48-12-right-adjoint-of-pushforward-for-proper-fl.md)
+- [48.13 Right adjoint of pushforward for perfect proper morphisms](48-13-right-adjoint-of-pushforward-for-perfect-p.md)
+- [48.14 Right adjoint of pushforward for effective Cartier divisors](48-14-right-adjoint-of-pushforward-for-effective.md)
+- [48.15 Right adjoint of pushforward in examples](48-15-right-adjoint-of-pushforward-in-examples.md)
+- [48.16 Upper shriek functors](48-16-upper-shriek-functors.md)
+- [48.17 Properties of upper shriek functors](48-17-properties-of-upper-shriek-functors.md)
+- [48.18 Base change for upper shriek](48-18-base-change-for-upper-shriek.md)
+- [48.19 A duality theory](48-19-a-duality-theory.md)
+- [48.20 Glueing dualizing complexes](48-20-glueing-dualizing-complexes.md)
+- [48.21 Dimension functions](48-21-dimension-functions.md)

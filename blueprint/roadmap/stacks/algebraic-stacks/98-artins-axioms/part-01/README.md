@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 98.3 Predeformation categories to 98.24 A dual notion
+# 98.3 Predeformation categories to 98.20 Strong formal…
 
 - [98.3 Predeformation categories](98-3-predeformation-categories.md)
 - [98.4 Pushouts and stacks](98-4-pushouts-and-stacks.md)
@@ -20,7 +20,3 @@ navigation: transparent
 - [98.18 Strong Rim-Schlessinger](98-18-strong-rim-schlessinger.md)
 - [98.19 Versality and generalizations](98-19-versality-and-generalizations.md)
 - [98.20 Strong formal effectiveness](98-20-strong-formal-effectiveness.md)
-- [98.21 Infinitesimal deformations](98-21-infinitesimal-deformations.md)
-- [98.22 Obstruction theories](98-22-obstruction-theories.md)
-- [98.23 Naive obstruction theories](98-23-naive-obstruction-theories.md)
-- [98.24 A dual notion](98-24-a-dual-notion.md)

@@ -2,7 +2,7 @@
 
 Chapter 66 of the Stacks Project, *Properties of Algebraic Spaces*, [Tag 03BO](https://stacks.math.columbia.edu/tag/03BO): the 32 sections of its 34 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 158 tags are carried by 498 declarations of the repository (all in StacksFrontier) and 17 registered declarations.
 
-## [66.3 Separation axioms to 66.22 Stalks of the structure…](part-01/README.md)
+## [66.3 Separation axioms to 66.18 The étale site of an…](part-01/README.md)
 
 - [66.3 Separation axioms](part-01/66-3-separation-axioms.md)
 - [66.4 Points of algebraic spaces](part-01/66-4-points-of-algebraic-spaces.md)
@@ -20,13 +20,13 @@ Chapter 66 of the Stacks Project, *Properties of Algebraic Spaces*, [Tag 03BO](h
 - [66.16 Étale morphisms of algebraic spaces](part-01/66-16-etale-morphisms-of-algebraic-spaces.md)
 - [66.17 Spaces and fpqc coverings](part-01/66-17-spaces-and-fpqc-coverings.md)
 - [66.18 The étale site of an algebraic space](part-01/66-18-the-etale-site-of-an-algebraic-space.md)
-- [66.19 Points of the small étale site](part-01/66-19-points-of-the-small-etale-site.md)
-- [66.20 Supports of abelian sheaves](part-01/66-20-supports-of-abelian-sheaves.md)
-- [66.21 The structure sheaf of an algebraic space](part-01/66-21-the-structure-sheaf-of-an-algebraic-space.md)
-- [66.22 Stalks of the structure sheaf](part-01/66-22-stalks-of-the-structure-sheaf.md)
 
-## [66.23 Local irreducibility to 66.34 Quotients by free actions](part-02/README.md)
+## [66.19 Points of the small étale… to 66.33 Morphisms towards schemes](part-02/README.md)
 
+- [66.19 Points of the small étale site](part-02/66-19-points-of-the-small-etale-site.md)
+- [66.20 Supports of abelian sheaves](part-02/66-20-supports-of-abelian-sheaves.md)
+- [66.21 The structure sheaf of an algebraic space](part-02/66-21-the-structure-sheaf-of-an-algebraic-space.md)
+- [66.22 Stalks of the structure sheaf](part-02/66-22-stalks-of-the-structure-sheaf.md)
 - [66.23 Local irreducibility](part-02/66-23-local-irreducibility.md)
 - [66.24 Noetherian spaces](part-02/66-24-noetherian-spaces.md)
 - [66.25 Regular algebraic spaces](part-02/66-25-regular-algebraic-spaces.md)
@@ -38,4 +38,7 @@ Chapter 66 of the Stacks Project, *Properties of Algebraic Spaces*, [Tag 03BO](h
 - [66.31 Locally projective modules](part-02/66-31-locally-projective-modules.md)
 - [66.32 Quasi-coherent sheaves and presentations](part-02/66-32-quasi-coherent-sheaves-and-presentations.md)
 - [66.33 Morphisms towards schemes](part-02/66-33-morphisms-towards-schemes.md)
-- [66.34 Quotients by free actions](part-02/66-34-quotients-by-free-actions.md)
+
+## [66.34 Quotients by free actions](part-03/README.md)
+
+- [66.34 Quotients by free actions](part-03/66-34-quotients-by-free-actions.md)

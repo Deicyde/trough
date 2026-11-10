@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 64.3 Frobenii to 64.30 Abstract trace formula
+# 64.3 Frobenii to 64.29 Cohomology of curves…
 
 - [64.3 Frobenii](64-3-frobenii.md)
 - [64.4 Traces](64-4-traces.md)
@@ -23,4 +23,3 @@ navigation: transparent
 - [64.27 Fundamental groups](64-27-fundamental-groups.md)
 - [64.28 Profinite groups, cohomology and homology](64-28-profinite-groups-cohomology-and-homology.md)
 - [64.29 Cohomology of curves, revisited](64-29-cohomology-of-curves-revisited.md)
-- [64.30 Abstract trace formula](64-30-abstract-trace-formula.md)

@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 50.2 The de Rham complex to 50.21 Chern classes
+# 50.2 The de Rham complex to 50.16 Calculations
 
 - [50.2 The de Rham complex](50-2-the-de-rham-complex.md)
 - [50.3 de Rham cohomology](50-3-de-rham-cohomology.md)
@@ -19,8 +19,3 @@ navigation: transparent
 - [50.14 Projective space bundle formula](50-14-projective-space-bundle-formula.md)
 - [50.15 Log poles along a divisor](50-15-log-poles-along-a-divisor.md)
 - [50.16 Calculations](50-16-calculations.md)
-- [50.17 Blowing up and de Rham cohomology](50-17-blowing-up-and-de-rham-cohomology.md)
-- [50.18 Comparing sheaves of differential forms](50-18-comparing-sheaves-of-differential-forms.md)
-- [50.19 Trace maps on de Rham complexes](50-19-trace-maps-on-de-rham-complexes.md)
-- [50.20 Poincaré duality](50-20-poincare-duality.md)
-- [50.21 Chern classes](50-21-chern-classes.md)

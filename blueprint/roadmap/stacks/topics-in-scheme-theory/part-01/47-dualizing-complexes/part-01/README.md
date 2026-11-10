@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 47.2 Essential surjections and… to 47.22 The ubiquity of dualizing…
+# 47.2 Essential surjections and… to 47.18 The local duality theorem
 
 - [47.2 Essential surjections and injections](47-2-essential-surjections-and-injections.md)
 - [47.3 Injective modules](47-3-injective-modules.md)
@@ -21,6 +21,3 @@ navigation: transparent
 - [47.16 Dualizing complexes over local rings](47-16-dualizing-complexes-over-local-rings.md)
 - [47.17 Dualizing complexes and dimension functions](47-17-dualizing-complexes-and-dimension-function.md)
 - [47.18 The local duality theorem](47-18-the-local-duality-theorem.md)
-- [47.20 Cohen-Macaulay rings](47-20-cohen-macaulay-rings.md)
-- [47.21 Gorenstein rings](47-21-gorenstein-rings.md)
-- [47.22 The ubiquity of dualizing complexes](47-22-the-ubiquity-of-dualizing-complexes.md)

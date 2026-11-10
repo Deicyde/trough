@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 17.3 The abelian category of… to 17.22 Internal Hom
+# 17.3 The abelian category of… to 17.20 Flat morphisms of ringed…
 
 - [17.3 The abelian category of sheaves of modules](17-3-the-abelian-category-of-sheaves-of-modules.md)
 - [17.4 Sections of sheaves of modules](17-4-sections-of-sheaves-of-modules.md)
@@ -22,5 +22,3 @@ navigation: transparent
 - [17.18 Duals](17-18-duals.md)
 - [17.19 Constructible sheaves of sets](17-19-constructible-sheaves-of-sets.md)
 - [17.20 Flat morphisms of ringed spaces](17-20-flat-morphisms-of-ringed-spaces.md)
-- [17.21 Symmetric and exterior powers](17-21-symmetric-and-exterior-powers.md)
-- [17.22 Internal Hom](17-22-internal-hom.md)

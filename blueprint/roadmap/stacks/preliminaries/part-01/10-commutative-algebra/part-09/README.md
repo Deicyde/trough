@@ -2,8 +2,20 @@
 navigation: transparent
 ---
 
-# 10.166 Geometrically regular… to 10.168 Colimits and maps of…
+# 10.154 Filtered colimits of… to 10.168 Colimits and maps of…
 
+- [10.154 Filtered colimits of étale ring maps](10-154-filtered-colimits-of-etale-ring-maps.md)
+- [10.155 Henselization and strict henselization](10-155-henselization-and-strict-henselization.md)
+- [10.156 Henselization and quasi-finite ring maps](10-156-henselization-and-quasi-finite-ring-maps.md)
+- [10.157 Serre's criterion for normality](10-157-serres-criterion-for-normality.md)
+- [10.158 Formal smoothness of fields](10-158-formal-smoothness-of-fields.md)
+- [10.159 Constructing flat ring maps](10-159-constructing-flat-ring-maps.md)
+- [10.160 The Cohen structure theorem](10-160-the-cohen-structure-theorem.md)
+- [10.161 Japanese rings](10-161-japanese-rings.md)
+- [10.162 Nagata rings](10-162-nagata-rings.md)
+- [10.163 Ascending properties](10-163-ascending-properties.md)
+- [10.164 Descending properties](10-164-descending-properties.md)
+- [10.165 Geometrically normal algebras](10-165-geometrically-normal-algebras.md)
 - [10.166 Geometrically regular algebras](10-166-geometrically-regular-algebras.md)
 - [10.167 Geometrically Cohen-Macaulay algebras](10-167-geometrically-cohen-macaulay-algebras.md)
 - [10.168 Colimits and maps of finite presentation, II](10-168-colimits-and-maps-of-finite-presentation.md)

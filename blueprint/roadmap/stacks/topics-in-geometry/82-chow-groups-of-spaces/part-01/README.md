@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 82.2 Setup to 82.21 Intersecting with an…
+# 82.2 Setup to 82.18 Intersecting with an…
 
 - [82.2 Setup](82-2-setup.md)
 - [82.3 Cycles](82-3-cycles.md)
@@ -21,6 +21,3 @@ navigation: transparent
 - [82.16 Rational equivalence and push and pull](82-16-rational-equivalence-and-push-and-pull.md)
 - [82.17 The divisor associated to an invertible sheaf](82-17-the-divisor-associated-to-an-invertible-sh.md)
 - [82.18 Intersecting with an invertible sheaf](82-18-intersecting-with-an-invertible-sheaf.md)
-- [82.19 Intersecting with an invertible sheaf and push and pull](82-19-intersecting-with-an-invertible-sheaf-and.md)
-- [82.20 The key formula](82-20-the-key-formula.md)
-- [82.21 Intersecting with an invertible sheaf and rational equivalence](82-21-intersecting-with-an-invertible-sheaf-and.md)

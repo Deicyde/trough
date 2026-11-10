@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 66.3 Separation axioms to 66.22 Stalks of the structure…
+# 66.3 Separation axioms to 66.18 The étale site of an…
 
 - [66.3 Separation axioms](66-3-separation-axioms.md)
 - [66.4 Points of algebraic spaces](66-4-points-of-algebraic-spaces.md)
@@ -20,7 +20,3 @@ navigation: transparent
 - [66.16 Étale morphisms of algebraic spaces](66-16-etale-morphisms-of-algebraic-spaces.md)
 - [66.17 Spaces and fpqc coverings](66-17-spaces-and-fpqc-coverings.md)
 - [66.18 The étale site of an algebraic space](66-18-the-etale-site-of-an-algebraic-space.md)
-- [66.19 Points of the small étale site](66-19-points-of-the-small-etale-site.md)
-- [66.20 Supports of abelian sheaves](66-20-supports-of-abelian-sheaves.md)
-- [66.21 The structure sheaf of an algebraic space](66-21-the-structure-sheaf-of-an-algebraic-space.md)
-- [66.22 Stalks of the structure sheaf](66-22-stalks-of-the-structure-sheaf.md)

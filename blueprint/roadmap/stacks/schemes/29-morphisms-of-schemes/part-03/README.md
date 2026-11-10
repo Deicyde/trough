@@ -2,22 +2,17 @@
 navigation: transparent
 ---
 
-# 29.43 Valuative criteria to 29.59 Miscellany
+# 29.36 Unramified morphisms to 29.47 Universal homeomorphisms…
 
+- [29.36 Unramified morphisms](29-36-unramified-morphisms.md)
+- [29.37 Étale morphisms](29-37-etale-morphisms.md)
+- [29.38 Relatively ample sheaves](29-38-relatively-ample-sheaves.md)
+- [29.39 Very ample sheaves](29-39-very-ample-sheaves.md)
+- [29.40 Ample and very ample sheaves relative to finite type morphisms](29-40-ample-and-very-ample-sheaves-relative-to-f.md)
+- [29.41 Quasi-projective morphisms](29-41-quasi-projective-morphisms.md)
+- [29.42 Proper morphisms](29-42-proper-morphisms.md)
 - [29.43 Valuative criteria](29-43-valuative-criteria.md)
 - [29.44 Projective morphisms](29-44-projective-morphisms.md)
 - [29.45 Integral and finite morphisms](29-45-integral-and-finite-morphisms.md)
 - [29.46 Universal homeomorphisms](29-46-universal-homeomorphisms.md)
 - [29.47 Universal homeomorphisms of affine schemes](29-47-universal-homeomorphisms-of-affine-schemes.md)
-- [29.48 Absolute weak normalization and seminormalization](29-48-absolute-weak-normalization-and-seminormal.md)
-- [29.49 Finite locally free morphisms](29-49-finite-locally-free-morphisms.md)
-- [29.50 Rational maps](29-50-rational-maps.md)
-- [29.51 Birational morphisms](29-51-birational-morphisms.md)
-- [29.52 Generically finite morphisms](29-52-generically-finite-morphisms.md)
-- [29.53 The dimension formula](29-53-the-dimension-formula.md)
-- [29.54 Relative normalization](29-54-relative-normalization.md)
-- [29.55 Normalization](29-55-normalization.md)
-- [29.56 Weak normalization](29-56-weak-normalization.md)
-- [29.57 Zariski's Main Theorem (algebraic version)](29-57-zariskis-main-theorem-algebraic-version.md)
-- [29.58 Universally bounded fibres](29-58-universally-bounded-fibres.md)
-- [29.59 Miscellany](29-59-miscellany.md)

@@ -2,7 +2,7 @@
 
 Chapter 38 of the Stacks Project, *More on Flatness*, [Tag 057M](https://stacks.math.columbia.edu/tag/057M): the 43 sections of its 44 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 292 tags are carried by 640 declarations of the repository (all in StacksFrontier) and 10 registered declarations.
 
-## [38.2 Lemmas on étale… to 38.21 Flattening stratifications](part-01/README.md)
+## [38.2 Lemmas on étale… to 38.18 A criterion for purity](part-01/README.md)
 
 - [38.2 Lemmas on étale localization](part-01/38-2-lemmas-on-etale-localization.md)
 - [38.3 The local structure of a finite type module](part-01/38-3-the-local-structure-of-a-finite-type-module.md)
@@ -21,12 +21,12 @@ Chapter 38 of the Stacks Project, *More on Flatness*, [Tag 057M](https://stacks.
 - [38.16 Relatively pure modules](part-01/38-16-relatively-pure-modules.md)
 - [38.17 Examples of relatively pure sheaves](part-01/38-17-examples-of-relatively-pure-sheaves.md)
 - [38.18 A criterion for purity](part-01/38-18-a-criterion-for-purity.md)
-- [38.19 How purity is used](part-01/38-19-how-purity-is-used.md)
-- [38.20 Flattening functors](part-01/38-20-flattening-functors.md)
-- [38.21 Flattening stratifications](part-01/38-21-flattening-stratifications.md)
 
-## [38.22 Flattening stratification… to 38.41 Blowing up perfect modules](part-02/README.md)
+## [38.19 How purity is used to 38.33 Nagata compactification](part-02/README.md)
 
+- [38.19 How purity is used](part-02/38-19-how-purity-is-used.md)
+- [38.20 Flattening functors](part-02/38-20-flattening-functors.md)
+- [38.21 Flattening stratifications](part-02/38-21-flattening-stratifications.md)
 - [38.22 Flattening stratification over an Artinian ring](part-02/38-22-flattening-stratification-over-an-artinian.md)
 - [38.23 Flattening a map](part-02/38-23-flattening-a-map.md)
 - [38.24 Flattening in the local case](part-02/38-24-flattening-in-the-local-case.md)
@@ -39,17 +39,20 @@ Chapter 38 of the Stacks Project, *More on Flatness*, [Tag 057M](https://stacks.
 - [38.31 Applications](part-02/38-31-applications.md)
 - [38.32 Compactifications](part-02/38-32-compactifications.md)
 - [38.33 Nagata compactification](part-02/38-33-nagata-compactification.md)
-- [38.34 The h topology](part-02/38-34-the-h-topology.md)
-- [38.35 More on the h topology](part-02/38-35-more-on-the-h-topology.md)
-- [38.36 Blow up squares and the ph topology](part-02/38-36-blow-up-squares-and-the-ph-topology.md)
-- [38.37 Almost blow up squares and the h topology](part-02/38-37-almost-blow-up-squares-and-the-h-topology.md)
-- [38.38 Absolute weak normalization and h coverings](part-02/38-38-absolute-weak-normalization-and-h-covering.md)
-- [38.39 Descent vector bundles in positive characteristic](part-02/38-39-descent-vector-bundles-in-positive-charact.md)
-- [38.40 Blowing up complexes](part-02/38-40-blowing-up-complexes.md)
-- [38.41 Blowing up perfect modules](part-02/38-41-blowing-up-perfect-modules.md)
 
-## [38.42 An operator introduced by… to 38.44 Blowing up complexes, III](part-03/README.md)
+## [38.34 The h topology to 38.42 An operator introduced by…](part-03/README.md)
 
+- [38.34 The h topology](part-03/38-34-the-h-topology.md)
+- [38.35 More on the h topology](part-03/38-35-more-on-the-h-topology.md)
+- [38.36 Blow up squares and the ph topology](part-03/38-36-blow-up-squares-and-the-ph-topology.md)
+- [38.37 Almost blow up squares and the h topology](part-03/38-37-almost-blow-up-squares-and-the-h-topology.md)
+- [38.38 Absolute weak normalization and h coverings](part-03/38-38-absolute-weak-normalization-and-h-covering.md)
+- [38.39 Descent vector bundles in positive characteristic](part-03/38-39-descent-vector-bundles-in-positive-charact.md)
+- [38.40 Blowing up complexes](part-03/38-40-blowing-up-complexes.md)
+- [38.41 Blowing up perfect modules](part-03/38-41-blowing-up-perfect-modules.md)
 - [38.42 An operator introduced by Berthelot and Ogus](part-03/38-42-an-operator-introduced-by-berthelot-and-og.md)
-- [38.43 Blowing up complexes, II](part-03/38-43-blowing-up-complexes-ii.md)
-- [38.44 Blowing up complexes, III](part-03/38-44-blowing-up-complexes-iii.md)
+
+## [38.43 Blowing up complexes, II to 38.44 Blowing up complexes, III](part-04/README.md)
+
+- [38.43 Blowing up complexes, II](part-04/38-43-blowing-up-complexes-ii.md)
+- [38.44 Blowing up complexes, III](part-04/38-44-blowing-up-complexes-iii.md)

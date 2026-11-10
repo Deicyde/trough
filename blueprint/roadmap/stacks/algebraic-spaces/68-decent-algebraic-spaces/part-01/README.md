@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 68.3 Universally bounded fibres to 68.22 Birational morphisms
+# 68.3 Universally bounded fibres to 68.17 Relative conditions
 
 - [68.3 Universally bounded fibres](68-3-universally-bounded-fibres.md)
 - [68.4 Finiteness conditions and points](68-4-finiteness-conditions-and-points.md)
@@ -19,8 +19,3 @@ navigation: transparent
 - [68.15 Locally separated spaces](68-15-locally-separated-spaces.md)
 - [68.16 Valuative criterion](68-16-valuative-criterion.md)
 - [68.17 Relative conditions](68-17-relative-conditions.md)
-- [68.18 Points of fibres](68-18-points-of-fibres.md)
-- [68.19 Monomorphisms](68-19-monomorphisms.md)
-- [68.20 Generic points](68-20-generic-points.md)
-- [68.21 Generically finite morphisms](68-21-generically-finite-morphisms.md)
-- [68.22 Birational morphisms](68-22-birational-morphisms.md)

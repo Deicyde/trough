@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 38.2 Lemmas on étale… to 38.21 Flattening stratifications
+# 38.2 Lemmas on étale… to 38.18 A criterion for purity
 
 - [38.2 Lemmas on étale localization](38-2-lemmas-on-etale-localization.md)
 - [38.3 The local structure of a finite type module](38-3-the-local-structure-of-a-finite-type-module.md)
@@ -21,6 +21,3 @@ navigation: transparent
 - [38.16 Relatively pure modules](38-16-relatively-pure-modules.md)
 - [38.17 Examples of relatively pure sheaves](38-17-examples-of-relatively-pure-sheaves.md)
 - [38.18 A criterion for purity](38-18-a-criterion-for-purity.md)
-- [38.19 How purity is used](38-19-how-purity-is-used.md)
-- [38.20 Flattening functors](38-20-flattening-functors.md)
-- [38.21 Flattening stratifications](38-21-flattening-stratifications.md)

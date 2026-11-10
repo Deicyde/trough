@@ -2,7 +2,7 @@
 
 Chapter 61 of the Stacks Project, *Pro-étale Cohomology*, [Tag 0965](https://stacks.math.columbia.edu/tag/0965): the 30 sections of its 31 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 164 tags are carried by 477 declarations of the repository (all in StacksFrontier) and 55 registered declarations.
 
-## [61.2 Some topology to 61.21 Derived completion and…](part-01/README.md)
+## [61.2 Some topology to 61.18 Points of the pro-étale…](part-01/README.md)
 
 - [61.2 Some topology](part-01/61-2-some-topology.md)
 - [61.3 Local isomorphisms](part-01/61-3-local-isomorphisms.md)
@@ -21,12 +21,12 @@ Chapter 61 of the Stacks Project, *Pro-étale Cohomology*, [Tag 0965](https://st
 - [61.16 Comparing topologies](part-01/61-16-comparing-topologies.md)
 - [61.17 Comparing big and small topoi](part-01/61-17-comparing-big-and-small-topoi.md)
 - [61.18 Points of the pro-étale site](part-01/61-18-points-of-the-pro-etale-site.md)
-- [61.19 Comparison with the étale site](part-01/61-19-comparison-with-the-etale-site.md)
-- [61.20 Derived completion in the constant Noetherian case](part-01/61-20-derived-completion-in-the-constant-noether.md)
-- [61.21 Derived completion and weakly contractible objects](part-01/61-21-derived-completion-and-weakly-contractible.md)
 
-## [61.22 Cohomology of a point to 61.31 Change of partial universe](part-02/README.md)
+## [61.19 Comparison with the étale… to 61.31 Change of partial universe](part-02/README.md)
 
+- [61.19 Comparison with the étale site](part-02/61-19-comparison-with-the-etale-site.md)
+- [61.20 Derived completion in the constant Noetherian case](part-02/61-20-derived-completion-in-the-constant-noether.md)
+- [61.21 Derived completion and weakly contractible objects](part-02/61-21-derived-completion-and-weakly-contractible.md)
 - [61.22 Cohomology of a point](part-02/61-22-cohomology-of-a-point.md)
 - [61.23 Functoriality of the pro-étale site](part-02/61-23-functoriality-of-the-pro-etale-site.md)
 - [61.24 Finite morphisms and pro-étale sites](part-02/61-24-finite-morphisms-and-pro-etale-sites.md)

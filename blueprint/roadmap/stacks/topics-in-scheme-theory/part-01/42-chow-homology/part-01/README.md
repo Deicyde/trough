@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 42.2 Periodic complexes and… to 42.21 Rational equivalence and…
+# 42.2 Periodic complexes and… to 42.18 Principal divisors and…
 
 - [42.2 Periodic complexes and Herbrand quotients](42-2-periodic-complexes-and-herbrand-quotients.md)
 - [42.3 Calculation of some multiplicities](42-3-calculation-of-some-multiplicities.md)
@@ -21,6 +21,3 @@ navigation: transparent
 - [42.16 Preparation for principal divisors](42-16-preparation-for-principal-divisors.md)
 - [42.17 Principal divisors](42-17-principal-divisors.md)
 - [42.18 Principal divisors and pushforward](42-18-principal-divisors-and-pushforward.md)
-- [42.19 Rational equivalence](42-19-rational-equivalence.md)
-- [42.20 Rational equivalence and push and pull](42-20-rational-equivalence-and-push-and-pull.md)
-- [42.21 Rational equivalence and the projective line](42-21-rational-equivalence-and-the-projective-li.md)

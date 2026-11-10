@@ -2,8 +2,12 @@
 navigation: transparent
 ---
 
-# 88.22 Formal algebraic spaces… to 88.30 Application to…
+# 88.18 Rig-smooth morphisms to 88.30 Application to…
 
+- [88.18 Rig-smooth morphisms](88-18-rig-smooth-morphisms.md)
+- [88.19 Rig-étale homomorphisms](88-19-rig-etale-homomorphisms.md)
+- [88.20 Rig-étale morphisms](88-20-rig-etale-morphisms.md)
+- [88.21 Rig-surjective morphisms](88-21-rig-surjective-morphisms.md)
 - [88.22 Formal algebraic spaces over cdvrs](88-22-formal-algebraic-spaces-over-cdvrs.md)
 - [88.23 The completion functor](88-23-the-completion-functor.md)
 - [88.24 Formal modifications](88-24-formal-modifications.md)

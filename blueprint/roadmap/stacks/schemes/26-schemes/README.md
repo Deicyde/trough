@@ -2,7 +2,7 @@
 
 Chapter 26 of the Stacks Project, *Schemes*, [Tag 01H8](https://stacks.math.columbia.edu/tag/01H8): the 22 sections of its 24 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 126 tags are carried by 228 declarations of the repository (all in StacksFrontier) and 198 registered declarations.
 
-## [26.2 Locally ringed spaces to 26.21 Separation axioms](part-01/README.md)
+## [26.2 Locally ringed spaces to 26.20 Valuative criterion for…](part-01/README.md)
 
 - [26.2 Locally ringed spaces](part-01/26-2-locally-ringed-spaces.md)
 - [26.3 Open immersions of locally ringed spaces](part-01/26-3-open-immersions-of-locally-ringed-spaces.md)
@@ -23,9 +23,9 @@ Chapter 26 of the Stacks Project, *Schemes*, [Tag 01H8](https://stacks.math.colu
 - [26.18 Base change in algebraic geometry](part-01/26-18-base-change-in-algebraic-geometry.md)
 - [26.19 Quasi-compact morphisms](part-01/26-19-quasi-compact-morphisms.md)
 - [26.20 Valuative criterion for universal closedness](part-01/26-20-valuative-criterion-for-universal-closedne.md)
-- [26.21 Separation axioms](part-01/26-21-separation-axioms.md)
 
-## [26.23 Monomorphisms to 26.24 Functoriality for…](part-02/README.md)
+## [26.21 Separation axioms to 26.24 Functoriality for…](part-02/README.md)
 
+- [26.21 Separation axioms](part-02/26-21-separation-axioms.md)
 - [26.23 Monomorphisms](part-02/26-23-monomorphisms.md)
 - [26.24 Functoriality for quasi-coherent modules](part-02/26-24-functoriality-for-quasi-coherent-modules.md)

@@ -2,8 +2,15 @@
 navigation: transparent
 ---
 
-# 67.24 Points and geometric… to 67.43 Valuative criterion of…
+# 67.17 Scheme theoretic closure… to 67.33 Relative dimension
 
+- [67.17 Scheme theoretic closure and density](67-17-scheme-theoretic-closure-and-density.md)
+- [67.18 Dominant morphisms](67-18-dominant-morphisms.md)
+- [67.19 Universally injective morphisms](67-19-universally-injective-morphisms.md)
+- [67.20 Affine morphisms](67-20-affine-morphisms.md)
+- [67.21 Quasi-affine morphisms](67-21-quasi-affine-morphisms.md)
+- [67.22 Types of morphisms étale local on source-and-target](67-22-types-of-morphisms-etale-local-on-source-a.md)
+- [67.23 Morphisms of finite type](67-23-morphisms-of-finite-type.md)
 - [67.24 Points and geometric points](67-24-points-and-geometric-points.md)
 - [67.25 Points of finite type](67-25-points-of-finite-type.md)
 - [67.26 Nagata spaces](67-26-nagata-spaces.md)
@@ -14,13 +21,3 @@ navigation: transparent
 - [67.31 Flat modules](67-31-flat-modules.md)
 - [67.32 Generic flatness](67-32-generic-flatness.md)
 - [67.33 Relative dimension](67-33-relative-dimension.md)
-- [67.34 Morphisms and dimensions of fibres](67-34-morphisms-and-dimensions-of-fibres.md)
-- [67.35 The dimension formula](67-35-the-dimension-formula.md)
-- [67.36 Syntomic morphisms](67-36-syntomic-morphisms.md)
-- [67.37 Smooth morphisms](67-37-smooth-morphisms.md)
-- [67.38 Unramified morphisms](67-38-unramified-morphisms.md)
-- [67.39 Étale morphisms](67-39-etale-morphisms.md)
-- [67.40 Proper morphisms](67-40-proper-morphisms.md)
-- [67.41 Valuative criteria](67-41-valuative-criteria.md)
-- [67.42 Valuative criterion for universal closedness](67-42-valuative-criterion-for-universal-closedne.md)
-- [67.43 Valuative criterion of separatedness](67-43-valuative-criterion-of-separatedness.md)

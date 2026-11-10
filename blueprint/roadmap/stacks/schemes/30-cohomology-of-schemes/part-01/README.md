@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 30.2 Čech cohomology of… to 30.21 Applications of the…
+# 30.2 Čech cohomology of… to 30.16 Higher direct images…
 
 - [30.2 Čech cohomology of quasi-coherent sheaves](30-2-cech-cohomology-of-quasi-coherent-sheaves.md)
 - [30.3 Vanishing of cohomology](30-3-vanishing-of-cohomology.md)
@@ -19,8 +19,3 @@ navigation: transparent
 - [30.14 Coherent sheaves on Proj, I](30-14-coherent-sheaves-on-proj-i.md)
 - [30.15 Coherent sheaves on Proj, II](30-15-coherent-sheaves-on-proj-ii.md)
 - [30.16 Higher direct images along projective morphisms](30-16-higher-direct-images-along-projective-morp.md)
-- [30.17 Ample invertible sheaves and cohomology](30-17-ample-invertible-sheaves-and-cohomology.md)
-- [30.18 Chow's Lemma](30-18-chows-lemma.md)
-- [30.19 Higher direct images of coherent sheaves](30-19-higher-direct-images-of-coherent-sheaves.md)
-- [30.20 The theorem on formal functions](30-20-the-theorem-on-formal-functions.md)
-- [30.21 Applications of the theorem on formal functions](30-21-applications-of-the-theorem-on-formal-func.md)

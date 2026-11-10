@@ -2,11 +2,14 @@
 navigation: transparent
 ---
 
-# 42.62 Intersection products to 42.69 Appendix B: Alternative…
+# 42.35 Lemmas on bivariant… to 42.43 The splitting principle
 
-- [42.62 Intersection products](42-62-intersection-products.md)
-- [42.63 Exterior product over Dedekind domains](42-63-exterior-product-over-dedekind-domains.md)
-- [42.64 Intersection products over Dedekind domains](42-64-intersection-products-over-dedekind-domain.md)
-- [42.67 Change of base scheme](42-67-change-of-base-scheme.md)
-- [42.68 Appendix A: Alternative approach to key lemma](42-68-appendix-a-alternative-approach-to-key-lem.md)
-- [42.69 Appendix B: Alternative approaches](42-69-appendix-b-alternative-approaches.md)
+- [42.35 Lemmas on bivariant classes](42-35-lemmas-on-bivariant-classes.md)
+- [42.36 Projective space bundle formula](42-36-projective-space-bundle-formula.md)
+- [42.37 The Chern classes of a vector bundle](42-37-the-chern-classes-of-a-vector-bundle.md)
+- [42.38 Intersecting with Chern classes](42-38-intersecting-with-chern-classes.md)
+- [42.39 Polynomial relations among Chern classes](42-39-polynomial-relations-among-chern-classes.md)
+- [42.40 Additivity of Chern classes](42-40-additivity-of-chern-classes.md)
+- [42.41 Degrees of zero cycles](42-41-degrees-of-zero-cycles.md)
+- [42.42 Cycles of given codimension](42-42-cycles-of-given-codimension.md)
+- [42.43 The splitting principle](42-43-the-splitting-principle.md)

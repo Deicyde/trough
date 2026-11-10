@@ -2,7 +2,7 @@
 
 Chapter 13 of the Stacks Project, *Derived Categories*, [Tag 05QI](https://stacks.math.columbia.edu/tag/05QI): the 40 sections of its 42 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 267 tags are carried by 350 declarations of the repository (all in StacksFrontier) and 61 registered declarations.
 
-## [13.3 The definition of a… to 13.22 Composition of right…](part-01/README.md)
+## [13.3 The definition of a… to 13.17 Triangulated…](part-01/README.md)
 
 - [13.3 The definition of a triangulated category](part-01/13-3-the-definition-of-a-triangulated-category.md)
 - [13.4 Elementary results on triangulated categories](part-01/13-4-elementary-results-on-triangulated-categori.md)
@@ -19,14 +19,14 @@ Chapter 13 of the Stacks Project, *Derived Categories*, [Tag 05QI](https://stack
 - [13.15 Derived functors on derived categories](part-01/13-15-derived-functors-on-derived-categories.md)
 - [13.16 Higher derived functors](part-01/13-16-higher-derived-functors.md)
 - [13.17 Triangulated subcategories of the derived category](part-01/13-17-triangulated-subcategories-of-the-derived.md)
-- [13.18 Injective resolutions](part-01/13-18-injective-resolutions.md)
-- [13.19 Projective resolutions](part-01/13-19-projective-resolutions.md)
-- [13.20 Right derived functors and injective resolutions](part-01/13-20-right-derived-functors-and-injective-resol.md)
-- [13.21 Cartan-Eilenberg resolutions](part-01/13-21-cartan-eilenberg-resolutions.md)
-- [13.22 Composition of right derived functors](part-01/13-22-composition-of-right-derived-functors.md)
 
-## [13.23 Resolution functors to 13.42 Essentially constant…](part-02/README.md)
+## [13.18 Injective resolutions to 13.37 Compact objects](part-02/README.md)
 
+- [13.18 Injective resolutions](part-02/13-18-injective-resolutions.md)
+- [13.19 Projective resolutions](part-02/13-19-projective-resolutions.md)
+- [13.20 Right derived functors and injective resolutions](part-02/13-20-right-derived-functors-and-injective-resol.md)
+- [13.21 Cartan-Eilenberg resolutions](part-02/13-21-cartan-eilenberg-resolutions.md)
+- [13.22 Composition of right derived functors](part-02/13-22-composition-of-right-derived-functors.md)
 - [13.23 Resolution functors](part-02/13-23-resolution-functors.md)
 - [13.24 Functorial injective embeddings and resolution functors](part-02/13-24-functorial-injective-embeddings-and-resolu.md)
 - [13.25 Right derived functors via resolution functors](part-02/13-25-right-derived-functors-via-resolution-func.md)
@@ -42,8 +42,11 @@ Chapter 13 of the Stacks Project, *Derived Categories*, [Tag 05QI](https://stack
 - [13.35 Operations on full subcategories](part-02/13-35-operations-on-full-subcategories.md)
 - [13.36 Generators of triangulated categories](part-02/13-36-generators-of-triangulated-categories.md)
 - [13.37 Compact objects](part-02/13-37-compact-objects.md)
-- [13.38 Brown representability](part-02/13-38-brown-representability.md)
-- [13.39 Brown representability, bis](part-02/13-39-brown-representability-bis.md)
-- [13.40 Admissible subcategories](part-02/13-40-admissible-subcategories.md)
-- [13.41 Postnikov systems](part-02/13-41-postnikov-systems.md)
-- [13.42 Essentially constant systems](part-02/13-42-essentially-constant-systems.md)
+
+## [13.38 Brown representability to 13.42 Essentially constant…](part-03/README.md)
+
+- [13.38 Brown representability](part-03/13-38-brown-representability.md)
+- [13.39 Brown representability, bis](part-03/13-39-brown-representability-bis.md)
+- [13.40 Admissible subcategories](part-03/13-40-admissible-subcategories.md)
+- [13.41 Postnikov systems](part-03/13-41-postnikov-systems.md)
+- [13.42 Essentially constant systems](part-03/13-42-essentially-constant-systems.md)

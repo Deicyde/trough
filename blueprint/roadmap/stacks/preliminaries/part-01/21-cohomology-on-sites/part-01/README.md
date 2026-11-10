@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 21.2 Cohomology of sheaves to 21.21 Localization and…
+# 21.2 Cohomology of sheaves to 21.16 Cohomology and colimits
 
 - [21.2 Cohomology of sheaves](21-2-cohomology-of-sheaves.md)
 - [21.3 Derived functors](21-3-derived-functors.md)
@@ -19,8 +19,3 @@ navigation: transparent
 - [21.14 The Leray spectral sequence](21-14-the-leray-spectral-sequence.md)
 - [21.15 The base change map](21-15-the-base-change-map.md)
 - [21.16 Cohomology and colimits](21-16-cohomology-and-colimits.md)
-- [21.17 Flat resolutions](21-17-flat-resolutions.md)
-- [21.18 Derived pullback](21-18-derived-pullback.md)
-- [21.19 Cohomology of unbounded complexes](21-19-cohomology-of-unbounded-complexes.md)
-- [21.20 Some properties of K-injective complexes](21-20-some-properties-of-k-injective-complexes.md)
-- [21.21 Localization and cohomology](21-21-localization-and-cohomology.md)

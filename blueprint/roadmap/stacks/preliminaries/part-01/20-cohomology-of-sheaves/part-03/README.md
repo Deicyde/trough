@@ -2,19 +2,16 @@
 navigation: transparent
 ---
 
-# 20.42 Internal hom in the… to 20.55 An operator introduced by…
+# 20.34 Cohomology with support… to 20.44 Global derived hom
 
+- [20.34 Cohomology with support in a closed subset, II](20-34-cohomology-with-support-in-a-closed-subset.md)
+- [20.35 Inverse systems and cohomology, I](20-35-inverse-systems-and-cohomology-i.md)
+- [20.36 Inverse systems and cohomology, II](20-36-inverse-systems-and-cohomology-ii.md)
+- [20.37 Derived limits](20-37-derived-limits.md)
+- [20.38 Producing K-injective resolutions](20-38-producing-k-injective-resolutions.md)
+- [20.39 Inverse systems and cohomology, III](20-39-inverse-systems-and-cohomology-iii.md)
+- [20.40 Čech cohomology of unbounded complexes](20-40-cech-cohomology-of-unbounded-complexes.md)
+- [20.41 Hom complexes](20-41-hom-complexes.md)
 - [20.42 Internal hom in the derived category](20-42-internal-hom-in-the-derived-category.md)
 - [20.43 Ext sheaves](20-43-ext-sheaves.md)
 - [20.44 Global derived hom](20-44-global-derived-hom.md)
-- [20.45 Glueing complexes](20-45-glueing-complexes.md)
-- [20.46 Strictly perfect complexes](20-46-strictly-perfect-complexes.md)
-- [20.47 Pseudo-coherent modules](20-47-pseudo-coherent-modules.md)
-- [20.48 Tor dimension](20-48-tor-dimension.md)
-- [20.49 Perfect complexes](20-49-perfect-complexes.md)
-- [20.50 Duals](20-50-duals.md)
-- [20.51 Miscellany](20-51-miscellany.md)
-- [20.52 Invertible objects in the derived category](20-52-invertible-objects-in-the-derived-category.md)
-- [20.53 Compact objects](20-53-compact-objects.md)
-- [20.54 Projection formula](20-54-projection-formula.md)
-- [20.55 An operator introduced by Berthelot and Ogus](20-55-an-operator-introduced-by-berthelot-and-og.md)

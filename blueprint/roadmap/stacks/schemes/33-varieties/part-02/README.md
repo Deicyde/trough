@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 33.23 Separating points and… to 33.42 Finding affine opens
+# 33.23 Separating points and… to 33.38 One dimensional…
 
 - [33.23 Separating points and tangent vectors](33-23-separating-points-and-tangent-vectors.md)
 - [33.24 Closures of products](33-24-closures-of-products.md)
@@ -20,7 +20,3 @@ navigation: transparent
 - [33.36 Frobenii](33-36-frobenii.md)
 - [33.37 Glueing dimension one rings](33-37-glueing-dimension-one-rings.md)
 - [33.38 One dimensional Noetherian schemes](33-38-one-dimensional-noetherian-schemes.md)
-- [33.39 The delta invariant](33-39-the-delta-invariant.md)
-- [33.40 The number of branches](33-40-the-number-of-branches.md)
-- [33.41 Normalization of one dimensional schemes](33-41-normalization-of-one-dimensional-schemes.md)
-- [33.42 Finding affine opens](33-42-finding-affine-opens.md)

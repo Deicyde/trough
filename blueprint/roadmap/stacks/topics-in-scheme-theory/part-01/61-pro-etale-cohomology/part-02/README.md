@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# 61.22 Cohomology of a point to 61.31 Change of partial universe
+# 61.19 Comparison with the étale… to 61.31 Change of partial universe
 
+- [61.19 Comparison with the étale site](61-19-comparison-with-the-etale-site.md)
+- [61.20 Derived completion in the constant Noetherian case](61-20-derived-completion-in-the-constant-noether.md)
+- [61.21 Derived completion and weakly contractible objects](61-21-derived-completion-and-weakly-contractible.md)
 - [61.22 Cohomology of a point](61-22-cohomology-of-a-point.md)
 - [61.23 Functoriality of the pro-étale site](61-23-functoriality-of-the-pro-etale-site.md)
 - [61.24 Finite morphisms and pro-étale sites](61-24-finite-morphisms-and-pro-etale-sites.md)

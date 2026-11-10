@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 59.4 The étale topology to 59.29 Neighborhoods, stalks and…
+# 59.4 The étale topology to 59.27 Étale coverings
 
 - [59.4 The étale topology](59-4-the-etale-topology.md)
 - [59.9 Presheaves](59-9-presheaves.md)
@@ -22,5 +22,3 @@ navigation: transparent
 - [59.24 Picard groups](59-24-picard-groups.md)
 - [59.26 Étale morphisms](59-26-etale-morphisms.md)
 - [59.27 Étale coverings](59-27-etale-coverings.md)
-- [59.28 Kummer theory](59-28-kummer-theory.md)
-- [59.29 Neighborhoods, stalks and points](59-29-neighborhoods-stalks-and-points.md)

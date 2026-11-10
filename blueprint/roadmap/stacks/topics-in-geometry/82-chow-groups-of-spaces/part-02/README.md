@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# 82.22 Intersecting with… to 82.32 Degrees of zero cycles
+# 82.19 Intersecting with an… to 82.32 Degrees of zero cycles
 
+- [82.19 Intersecting with an invertible sheaf and push and pull](82-19-intersecting-with-an-invertible-sheaf-and.md)
+- [82.20 The key formula](82-20-the-key-formula.md)
+- [82.21 Intersecting with an invertible sheaf and rational equivalence](82-21-intersecting-with-an-invertible-sheaf-and.md)
 - [82.22 Intersecting with effective Cartier divisors](82-22-intersecting-with-effective-cartier-diviso.md)
 - [82.23 Gysin homomorphisms](82-23-gysin-homomorphisms.md)
 - [82.24 Relative effective Cartier divisors](82-24-relative-effective-cartier-divisors.md)

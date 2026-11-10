@@ -2,7 +2,7 @@
 
 Chapter 58 of the Stacks Project, *Fundamental Groups of Schemes*, [Tag 0BQ6](https://stacks.math.columbia.edu/tag/0BQ6): the 30 sections of its 32 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 136 tags are carried by 310 declarations of the repository (all in StacksFrontier) and 18 registered declarations.
 
-## [58.2 Schemes étale over a point to 58.22 Finite étale covers of…](part-01/README.md)
+## [58.2 Schemes étale over a point to 58.16 Specialization maps](part-01/README.md)
 
 - [58.2 Schemes étale over a point](part-01/58-2-schemes-etale-over-a-point.md)
 - [58.3 Galois categories](part-01/58-3-galois-categories.md)
@@ -18,15 +18,15 @@ Chapter 58 of the Stacks Project, *Fundamental Groups of Schemes*, [Tag 0BQ6](ht
 - [58.14 Geometric and arithmetic fundamental groups](part-01/58-14-geometric-and-arithmetic-fundamental-group.md)
 - [58.15 Homotopy exact sequence](part-01/58-15-homotopy-exact-sequence.md)
 - [58.16 Specialization maps](part-01/58-16-specialization-maps.md)
-- [58.17 Restriction to a closed subscheme](part-01/58-17-restriction-to-a-closed-subscheme.md)
-- [58.18 Pushouts and fundamental groups](part-01/58-18-pushouts-and-fundamental-groups.md)
-- [58.19 Finite étale covers of punctured spectra, I](part-01/58-19-finite-etale-covers-of-punctured-spectra-i.md)
-- [58.20 Purity in local case, I](part-01/58-20-purity-in-local-case-i.md)
-- [58.21 Purity of branch locus](part-01/58-21-purity-of-branch-locus.md)
-- [58.22 Finite étale covers of punctured spectra, II](part-01/58-22-finite-etale-covers-of-punctured-spectra-i.md)
 
-## [58.23 Finite étale covers of… to 58.32 Tricks in positive…](part-02/README.md)
+## [58.17 Restriction to a closed… to 58.32 Tricks in positive…](part-02/README.md)
 
+- [58.17 Restriction to a closed subscheme](part-02/58-17-restriction-to-a-closed-subscheme.md)
+- [58.18 Pushouts and fundamental groups](part-02/58-18-pushouts-and-fundamental-groups.md)
+- [58.19 Finite étale covers of punctured spectra, I](part-02/58-19-finite-etale-covers-of-punctured-spectra-i.md)
+- [58.20 Purity in local case, I](part-02/58-20-purity-in-local-case-i.md)
+- [58.21 Purity of branch locus](part-02/58-21-purity-of-branch-locus.md)
+- [58.22 Finite étale covers of punctured spectra, II](part-02/58-22-finite-etale-covers-of-punctured-spectra-i.md)
 - [58.23 Finite étale covers of punctured spectra, III](part-02/58-23-finite-etale-covers-of-punctured-spectra-i.md)
 - [58.24 Finite étale covers of punctured spectra, IV](part-02/58-24-finite-etale-covers-of-punctured-spectra-i.md)
 - [58.25 Purity in local case, II](part-02/58-25-purity-in-local-case-ii.md)

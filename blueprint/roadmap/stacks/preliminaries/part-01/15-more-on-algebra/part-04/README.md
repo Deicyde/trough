@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 15.64 Products and Tor to 15.83 Relatively…
+# 15.64 Products and Tor to 15.80 Characterizing perfect…
 
 - [15.64 Products and Tor](15-64-products-and-tor.md)
 - [15.65 Künneth spectral sequence](15-65-kunneth-spectral-sequence.md)
@@ -21,6 +21,3 @@ navigation: transparent
 - [15.78 Splitting complexes](15-78-splitting-complexes.md)
 - [15.79 Recognizing perfect complexes](15-79-recognizing-perfect-complexes.md)
 - [15.80 Characterizing perfect complexes](15-80-characterizing-perfect-complexes.md)
-- [15.81 Strong generators and regular rings](15-81-strong-generators-and-regular-rings.md)
-- [15.82 Relatively finitely presented modules](15-82-relatively-finitely-presented-modules.md)
-- [15.83 Relatively pseudo-coherent modules](15-83-relatively-pseudo-coherent-modules.md)

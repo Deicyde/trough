@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 26.2 Locally ringed spaces to 26.21 Separation axioms
+# 26.2 Locally ringed spaces to 26.20 Valuative criterion for…
 
 - [26.2 Locally ringed spaces](26-2-locally-ringed-spaces.md)
 - [26.3 Open immersions of locally ringed spaces](26-3-open-immersions-of-locally-ringed-spaces.md)
@@ -23,4 +23,3 @@ navigation: transparent
 - [26.18 Base change in algebraic geometry](26-18-base-change-in-algebraic-geometry.md)
 - [26.19 Quasi-compact morphisms](26-19-quasi-compact-morphisms.md)
 - [26.20 Valuative criterion for universal closedness](26-20-valuative-criterion-for-universal-closedne.md)
-- [26.21 Separation axioms](26-21-separation-axioms.md)

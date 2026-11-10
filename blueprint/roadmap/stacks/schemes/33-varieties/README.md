@@ -25,7 +25,7 @@ Chapter 33 of the Stacks Project, *Varieties*, [Tag 0209](https://stacks.math.co
 - [33.21 Complete local rings](part-01/33-21-complete-local-rings.md)
 - [33.22 Global generation](part-01/33-22-global-generation.md)
 
-## [33.23 Separating points and… to 33.42 Finding affine opens](part-02/README.md)
+## [33.23 Separating points and… to 33.38 One dimensional…](part-02/README.md)
 
 - [33.23 Separating points and tangent vectors](part-02/33-23-separating-points-and-tangent-vectors.md)
 - [33.24 Closures of products](part-02/33-24-closures-of-products.md)
@@ -43,13 +43,13 @@ Chapter 33 of the Stacks Project, *Varieties*, [Tag 0209](https://stacks.math.co
 - [33.36 Frobenii](part-02/33-36-frobenii.md)
 - [33.37 Glueing dimension one rings](part-02/33-37-glueing-dimension-one-rings.md)
 - [33.38 One dimensional Noetherian schemes](part-02/33-38-one-dimensional-noetherian-schemes.md)
-- [33.39 The delta invariant](part-02/33-39-the-delta-invariant.md)
-- [33.40 The number of branches](part-02/33-40-the-number-of-branches.md)
-- [33.41 Normalization of one dimensional schemes](part-02/33-41-normalization-of-one-dimensional-schemes.md)
-- [33.42 Finding affine opens](part-02/33-42-finding-affine-opens.md)
 
-## [33.43 Curves to 33.48 Enriques-Severi-Zariski](part-03/README.md)
+## [33.39 The delta invariant to 33.48 Enriques-Severi-Zariski](part-03/README.md)
 
+- [33.39 The delta invariant](part-03/33-39-the-delta-invariant.md)
+- [33.40 The number of branches](part-03/33-40-the-number-of-branches.md)
+- [33.41 Normalization of one dimensional schemes](part-03/33-41-normalization-of-one-dimensional-schemes.md)
+- [33.42 Finding affine opens](part-03/33-42-finding-affine-opens.md)
 - [33.43 Curves](part-03/33-43-curves.md)
 - [33.44 Degrees on curves](part-03/33-44-degrees-on-curves.md)
 - [33.45 Numerical intersections](part-03/33-45-numerical-intersections.md)

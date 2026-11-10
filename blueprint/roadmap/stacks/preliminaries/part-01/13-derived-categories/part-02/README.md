@@ -2,8 +2,13 @@
 navigation: transparent
 ---
 
-# 13.23 Resolution functors to 13.42 Essentially constant…
+# 13.18 Injective resolutions to 13.37 Compact objects
 
+- [13.18 Injective resolutions](13-18-injective-resolutions.md)
+- [13.19 Projective resolutions](13-19-projective-resolutions.md)
+- [13.20 Right derived functors and injective resolutions](13-20-right-derived-functors-and-injective-resol.md)
+- [13.21 Cartan-Eilenberg resolutions](13-21-cartan-eilenberg-resolutions.md)
+- [13.22 Composition of right derived functors](13-22-composition-of-right-derived-functors.md)
 - [13.23 Resolution functors](13-23-resolution-functors.md)
 - [13.24 Functorial injective embeddings and resolution functors](13-24-functorial-injective-embeddings-and-resolu.md)
 - [13.25 Right derived functors via resolution functors](13-25-right-derived-functors-via-resolution-func.md)
@@ -19,8 +24,3 @@ navigation: transparent
 - [13.35 Operations on full subcategories](13-35-operations-on-full-subcategories.md)
 - [13.36 Generators of triangulated categories](13-36-generators-of-triangulated-categories.md)
 - [13.37 Compact objects](13-37-compact-objects.md)
-- [13.38 Brown representability](13-38-brown-representability.md)
-- [13.39 Brown representability, bis](13-39-brown-representability-bis.md)
-- [13.40 Admissible subcategories](13-40-admissible-subcategories.md)
-- [13.41 Postnikov systems](13-41-postnikov-systems.md)
-- [13.42 Essentially constant systems](13-42-essentially-constant-systems.md)

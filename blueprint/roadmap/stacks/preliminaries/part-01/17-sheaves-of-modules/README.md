@@ -2,7 +2,7 @@
 
 Chapter 17 of the Stacks Project, *Sheaves of Modules*, [Tag 01AC](https://stacks.math.columbia.edu/tag/01AC): the 29 sections of its 31 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 166 tags are carried by 459 declarations of the repository (all in StacksFrontier) and 63 registered declarations.
 
-## [17.3 The abelian category of… to 17.22 Internal Hom](part-01/README.md)
+## [17.3 The abelian category of… to 17.20 Flat morphisms of ringed…](part-01/README.md)
 
 - [17.3 The abelian category of sheaves of modules](part-01/17-3-the-abelian-category-of-sheaves-of-modules.md)
 - [17.4 Sections of sheaves of modules](part-01/17-4-sections-of-sheaves-of-modules.md)
@@ -22,11 +22,11 @@ Chapter 17 of the Stacks Project, *Sheaves of Modules*, [Tag 01AC](https://stack
 - [17.18 Duals](part-01/17-18-duals.md)
 - [17.19 Constructible sheaves of sets](part-01/17-19-constructible-sheaves-of-sets.md)
 - [17.20 Flat morphisms of ringed spaces](part-01/17-20-flat-morphisms-of-ringed-spaces.md)
-- [17.21 Symmetric and exterior powers](part-01/17-21-symmetric-and-exterior-powers.md)
-- [17.22 Internal Hom](part-01/17-22-internal-hom.md)
 
-## [17.23 The annihilator of a… to 17.31 The naive cotangent…](part-02/README.md)
+## [17.21 Symmetric and exterior… to 17.30 The de Rham complex](part-02/README.md)
 
+- [17.21 Symmetric and exterior powers](part-02/17-21-symmetric-and-exterior-powers.md)
+- [17.22 Internal Hom](part-02/17-22-internal-hom.md)
 - [17.23 The annihilator of a sheaf of modules](part-02/17-23-the-annihilator-of-a-sheaf-of-modules.md)
 - [17.24 Koszul complexes](part-02/17-24-koszul-complexes.md)
 - [17.25 Invertible modules](part-02/17-25-invertible-modules.md)
@@ -35,4 +35,7 @@ Chapter 17 of the Stacks Project, *Sheaves of Modules*, [Tag 01AC](https://stack
 - [17.28 Modules of differentials](part-02/17-28-modules-of-differentials.md)
 - [17.29 Finite order differential operators](part-02/17-29-finite-order-differential-operators.md)
 - [17.30 The de Rham complex](part-02/17-30-the-de-rham-complex.md)
-- [17.31 The naive cotangent complex](part-02/17-31-the-naive-cotangent-complex.md)
+
+## [17.31 The naive cotangent…](part-03/README.md)
+
+- [17.31 The naive cotangent complex](part-03/17-31-the-naive-cotangent-complex.md)

@@ -2,25 +2,19 @@
 navigation: transparent
 ---
 
-# 15.104 Miscellany to 15.123 A regular local ring is…
+# 15.92 The Beauville-Laszlo… to 15.105 Tricks with double…
 
+- [15.92 The Beauville-Laszlo theorem](15-92-the-beauville-laszlo-theorem.md)
+- [15.93 Derived Completion](15-93-derived-completion.md)
+- [15.94 The category of derived complete modules](15-94-the-category-of-derived-complete-modules.md)
+- [15.95 Derived completion for a principal ideal](15-95-derived-completion-for-a-principal-ideal.md)
+- [15.96 Derived completion for Noetherian rings](15-96-derived-completion-for-noetherian-rings.md)
+- [15.97 An operator introduced by Berthelot and Ogus](15-97-an-operator-introduced-by-berthelot-and-og.md)
+- [15.98 Perfect complexes and the eta operator](15-98-perfect-complexes-and-the-eta-operator.md)
+- [15.99 Taking limits of complexes](15-99-taking-limits-of-complexes.md)
+- [15.100 Some evaluation maps](15-100-some-evaluation-maps.md)
+- [15.101 Base change for derived hom](15-101-base-change-for-derived-hom.md)
+- [15.102 Systems of modules](15-102-systems-of-modules.md)
+- [15.103 Systems of modules, bis](15-103-systems-of-modules-bis.md)
 - [15.104 Miscellany](15-104-miscellany.md)
 - [15.105 Tricks with double complexes](15-105-tricks-with-double-complexes.md)
-- [15.106 Weakly étale ring maps](15-106-weakly-etale-ring-maps.md)
-- [15.107 Weakly étale algebras over fields](15-107-weakly-etale-algebras-over-fields.md)
-- [15.108 Local irreducibility](15-108-local-irreducibility.md)
-- [15.109 Miscellaneous on branches](15-109-miscellaneous-on-branches.md)
-- [15.110 Branches of the completion](15-110-branches-of-the-completion.md)
-- [15.111 Formally catenary rings](15-111-formally-catenary-rings.md)
-- [15.112 Group actions and integral closure](15-112-group-actions-and-integral-closure.md)
-- [15.113 Extensions of discrete valuation rings](15-113-extensions-of-discrete-valuation-rings.md)
-- [15.114 Galois extensions and ramification](15-114-galois-extensions-and-ramification.md)
-- [15.115 Krasner's lemma](15-115-krasners-lemma.md)
-- [15.116 Abhyankar's lemma and tame ramification](15-116-abhyankars-lemma-and-tame-ramification.md)
-- [15.117 Eliminating ramification](15-117-eliminating-ramification.md)
-- [15.118 Eliminating ramification, II](15-118-eliminating-ramification-ii.md)
-- [15.119 Picard groups of rings](15-119-picard-groups-of-rings.md)
-- [15.120 Determinants](15-120-determinants.md)
-- [15.121 Perfect complexes and K-groups](15-121-perfect-complexes-and-k-groups.md)
-- [15.122 Determinants of endomorphisms of finite length modules](15-122-determinants-of-endomorphisms-of-finite-l.md)
-- [15.123 A regular local ring is a UFD](15-123-a-regular-local-ring-is-a-ufd.md)

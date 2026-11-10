@@ -2,7 +2,7 @@
 
 Chapter 82 of the Stacks Project, *Chow Groups of Spaces*, [Tag 0EDQ](https://stacks.math.columbia.edu/tag/0EDQ): the 31 sections of its 32 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 103 tags are carried by 277 declarations of the repository (all in StacksFrontier) and 2 registered declarations.
 
-## [82.2 Setup to 82.21 Intersecting with an…](part-01/README.md)
+## [82.2 Setup to 82.18 Intersecting with an…](part-01/README.md)
 
 - [82.2 Setup](part-01/82-2-setup.md)
 - [82.3 Cycles](part-01/82-3-cycles.md)
@@ -21,12 +21,12 @@ Chapter 82 of the Stacks Project, *Chow Groups of Spaces*, [Tag 0EDQ](https://st
 - [82.16 Rational equivalence and push and pull](part-01/82-16-rational-equivalence-and-push-and-pull.md)
 - [82.17 The divisor associated to an invertible sheaf](part-01/82-17-the-divisor-associated-to-an-invertible-sh.md)
 - [82.18 Intersecting with an invertible sheaf](part-01/82-18-intersecting-with-an-invertible-sheaf.md)
-- [82.19 Intersecting with an invertible sheaf and push and pull](part-01/82-19-intersecting-with-an-invertible-sheaf-and.md)
-- [82.20 The key formula](part-01/82-20-the-key-formula.md)
-- [82.21 Intersecting with an invertible sheaf and rational equivalence](part-01/82-21-intersecting-with-an-invertible-sheaf-and.md)
 
-## [82.22 Intersecting with… to 82.32 Degrees of zero cycles](part-02/README.md)
+## [82.19 Intersecting with an… to 82.32 Degrees of zero cycles](part-02/README.md)
 
+- [82.19 Intersecting with an invertible sheaf and push and pull](part-02/82-19-intersecting-with-an-invertible-sheaf-and.md)
+- [82.20 The key formula](part-02/82-20-the-key-formula.md)
+- [82.21 Intersecting with an invertible sheaf and rational equivalence](part-02/82-21-intersecting-with-an-invertible-sheaf-and.md)
 - [82.22 Intersecting with effective Cartier divisors](part-02/82-22-intersecting-with-effective-cartier-diviso.md)
 - [82.23 Gysin homomorphisms](part-02/82-23-gysin-homomorphisms.md)
 - [82.24 Relative effective Cartier divisors](part-02/82-24-relative-effective-cartier-divisors.md)

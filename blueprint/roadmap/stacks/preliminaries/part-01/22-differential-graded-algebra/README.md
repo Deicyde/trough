@@ -25,7 +25,7 @@ Chapter 22 of the Stacks Project, *Differential Graded Algebra*, [Tag 09JD](http
 - [22.25 Graded categories](part-01/22-25-graded-categories.md)
 - [22.26 Differential graded categories](part-01/22-26-differential-graded-categories.md)
 
-## [22.27 Obtaining triangulated… to 22.38 Resolutions of…](part-02/README.md)
+## [22.27 Obtaining triangulated… to 22.36 Characterizing compact…](part-02/README.md)
 
 - [22.27 Obtaining triangulated categories](part-02/22-27-obtaining-triangulated-categories.md)
 - [22.28 Bimodules](part-02/22-28-bimodules.md)
@@ -37,5 +37,8 @@ Chapter 22 of the Stacks Project, *Differential Graded Algebra*, [Tag 09JD](http
 - [22.34 Composition of derived tensor products](part-02/22-34-composition-of-derived-tensor-products.md)
 - [22.35 Variant of derived tensor product](part-02/22-35-variant-of-derived-tensor-product.md)
 - [22.36 Characterizing compact objects](part-02/22-36-characterizing-compact-objects.md)
-- [22.37 Equivalences of derived categories](part-02/22-37-equivalences-of-derived-categories.md)
-- [22.38 Resolutions of differential graded algebras](part-02/22-38-resolutions-of-differential-graded-algebra.md)
+
+## [22.37 Equivalences of derived… to 22.38 Resolutions of…](part-03/README.md)
+
+- [22.37 Equivalences of derived categories](part-03/22-37-equivalences-of-derived-categories.md)
+- [22.38 Resolutions of differential graded algebras](part-03/22-38-resolutions-of-differential-graded-algebra.md)

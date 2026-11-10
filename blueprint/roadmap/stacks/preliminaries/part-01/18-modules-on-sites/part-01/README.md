@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 18.2 Abelian presheaves to 18.21 Localization of ringed…
+# 18.2 Abelian presheaves to 18.20 Localization of morphisms…
 
 - [18.2 Abelian presheaves](18-2-abelian-presheaves.md)
 - [18.3 Abelian sheaves](18-3-abelian-sheaves.md)
@@ -23,4 +23,3 @@ navigation: transparent
 - [18.18 Intrinsic properties of modules](18-18-intrinsic-properties-of-modules.md)
 - [18.19 Localization of ringed sites](18-19-localization-of-ringed-sites.md)
 - [18.20 Localization of morphisms of ringed sites](18-20-localization-of-morphisms-of-ringed-sites.md)
-- [18.21 Localization of ringed topoi](18-21-localization-of-ringed-topoi.md)
