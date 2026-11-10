@@ -184,22 +184,26 @@ def render_container(node: Container, vault: Path, previous: str | None, front: 
     def link(entry: Entry) -> str:
         return f"- [{link_text(entry.text)}]({rel(here, entry.node.path.relative_to(vault))})"
 
-    if node.entries and all(
-        isinstance(entry.node, Container) and entry.node.navigation == "transparent" for entry in node.entries
-    ):
+    parts = 0
+    while parts < len(node.entries) and isinstance(node.entries[parts].node, Container) and \
+            node.entries[parts].node.navigation == "transparent":
+        parts += 1
+    if parts:
         # Pagination parts read as sections of this page. Each heading still links
         # its part, which keeps the part, and the depth of its children, in the
         # site navigation built from these links.
-        for entry in node.entries:
+        for entry in node.entries[:parts]:
             part = entry.node
             heading = f"[{link_text(part.title)}]({rel(here, part.path.relative_to(vault))})"
             lines += [f"## {heading}", "", *(link(item) for item in part.entries), ""]
         lines.pop()
-    else:
-        for entry in node.entries:
-            if entry.before:
-                lines += ([""] if lines[-1] else []) + [entry.before.strip(), ""]
-            lines.append(link(entry))
+    # Entries after the parts, as a page that chunk() split may add, are lines of their own.
+    for entry in node.entries[parts:]:
+        if entry.before:
+            lines += ([""] if lines[-1] else []) + [entry.before.strip(), ""]
+        elif parts and entry is node.entries[parts]:
+            lines.append("")
+        lines.append(link(entry))
     if node.tail:
         lines += ["", node.tail.strip()]
     return (frontmatter(facts(node), previous) if front else "") + "\n".join(lines).rstrip() + "\n"

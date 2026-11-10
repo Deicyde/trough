@@ -1,0 +1,19 @@
+# Main results
+
+The main results that the formalization.yaml of [FormalFrontier/sheaf-cohomology](https://github.com/FormalFrontier/sheaf-cohomology) lists under `status.main_results` at commit [85cf087f](https://github.com/FormalFrontier/sheaf-cohomology/tree/85cf087ff3e2311834bc8c16cb347f1a513d18e4), each that the scan finds declared in the file the yaml gives, with its line. They are listed here, not made articles: in several Formal Frontier libraries this list is close to the whole API. The notes are the yaml's.
+
+The scan does not find 1 of them; [the library's page](../README.md) names it.
+
+| Declaration | Kind | Where | Note |
+| --- | --- | --- | --- |
+| `SheafCohomology.CompactOpenSections.preservesColimit_sections` | theorem | [SheafCohomology/CompactOpenSections.lean, line 783](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/CompactOpenSections.lean#L783) |  |
+| `TopCat.Sheaf.IsQuasiFlasque.subsingleton_H_succ` | theorem | [SheafCohomology/QuasiFlasqueAcyclicity.lean, line 260](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/QuasiFlasqueAcyclicity.lean#L260) |  |
+| `SheafCohomology.HigherDirectImageFilteredColimit.rightDerivedPushforward_colimitPost_isIso` | theorem | [SheafCohomology/HigherDirectImageFilteredColimit.lean, line 332](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/HigherDirectImageFilteredColimit.lean#L332) |  |
+| `AlgebraicGeometry.SheafedSpace.AbelianForget.preservesCofilteredLimit` | theorem | [SheafCohomology/AbelianForget/LimitPreservation.lean, line 103](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/AbelianForget/LimitPreservation.lean#L103) |  |
+| `AlgebraicGeometry.SheafedSpace.CommRingForget.preservesCofilteredLimit` | theorem | [SheafCohomology/CommRingForget/LimitPreservation.lean, line 112](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/CommRingForget/LimitPreservation.lean#L112) |  |
+| `AlgebraicGeometry.SheafedSpace.isIso_nativeCommRingGlobalSectionsComparison` | theorem | [SheafCohomology/NativeCommRingGlobalSections.lean, line 104](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeCommRingGlobalSections.lean#L104) |  |
+| `AlgebraicGeometry.SheafedSpace.NativeCylinderLimit.isIso_nativeCommRingCylinderSectionsComparison` | theorem | [SheafCohomology/NativeCommRingCylinderSections.lean, line 106](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeCommRingCylinderSections.lean#L106) |  |
+| `AlgebraicGeometry.SheafedSpace.NativeCylinderLimit.cylinderSectionsNaturality` | def | [SheafCohomology/NativeCylinderOpenNaturality.lean, line 331](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeCylinderOpenNaturality.lean#L331) |  |
+| `AlgebraicGeometry.SheafedSpace.NativeCylinderLimit.cylinderSectionsComparison_betweenTail` | theorem | [SheafCohomology/NativeCylinderTailChange.lean, line 253](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/SheafCohomology/NativeCylinderTailChange.lean#L253) |  |
+
+*Quoted from the main results in [formalization.yaml](https://github.com/FormalFrontier/sheaf-cohomology/blob/85cf087ff3e2311834bc8c16cb347f1a513d18e4/formalization.yaml) of [FormalFrontier/sheaf-cohomology](https://github.com/FormalFrontier/sheaf-cohomology) at commit [85cf087f](https://github.com/FormalFrontier/sheaf-cohomology/tree/85cf087ff3e2311834bc8c16cb347f1a513d18e4), Apache-2.0.*

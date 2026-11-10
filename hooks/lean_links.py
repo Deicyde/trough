@@ -4,7 +4,9 @@ AutoformBot looks an article's `lean:` names up only in this repository's Lean
 sources, which hold none of these libraries' declarations, so each card calls
 them "not found in the Lean sources". tools/generate.py writes
 hooks/lean-links.json, each chapter's names and their documentation pages, and
-this hook makes those rows links. scripts/check_site.py fails if one is left.
+this hook makes those rows links. scripts/check_site.py fails if one is left. A key
+names a directory under roadmap/, a chapter or one library of a chapter, and a page
+takes the longest key its path starts with.
 """
 
 from __future__ import annotations
@@ -20,7 +22,8 @@ MISSING = re.compile(r'<code>([^<]*)</code> <span class="bp-missing">not found i
 
 def on_page_content(html_text: str, *, page, config, files) -> str:
     parts = page.file.src_uri.split("/")
-    links = LINKS.get(parts[1], {}) if len(parts) > 1 and parts[0] == "roadmap" else {}
+    keys = ("/".join(parts[1:end]) for end in range(len(parts) - 1, 1, -1)) if parts[0] == "roadmap" else ()
+    links = next((LINKS[key] for key in keys if key in LINKS), {})
     if not links:
         return html_text
 

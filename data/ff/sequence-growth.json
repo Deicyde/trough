@@ -1,0 +1,115 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-sequence-growth",
+ "repo": "FormalFrontier/sequence-growth",
+ "rev": "ccf81c7190cb1da914c71efaa20689c0e1d7ab62",
+ "date": "2026-11-04T15:35:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "Sequence Growth",
+  "description": "Natural-division recurrence bounds and eventual exponential domination for sequences of natural numbers.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "agent-reviewed",
+  "notes": "The two listed recurrence theorems and their documented hypotheses have been independently agent-reviewed; no complete coverage of an external source is asserted.",
+  "reviewers": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "framework": "Codex CLI and Lean",
+    "tool_setup": "Agent-assisted Lean formalization using Mathlib."
+   }
+  ],
+  "notes": "Formal Frontier Agents developed the Lean proofs with AI assistance and reused Mathlib's arithmetic foundations."
+ },
+ "sources": [
+  {
+   "title": "Natural-division lower-recurrence growth bounds (original formalization)",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original-proof",
+   "relationship": "independently-proves"
+  }
+ ],
+ "depends": [],
+ "related": [],
+ "highlights": [],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "`Nat.DivisionGrowth.affine_lower_bound`",
+   "title_from": "declaration",
+   "text": "[`Nat.DivisionGrowth.affine_lower_bound`](https://github.com/FormalFrontier/sequence-growth/blob/ccf81c7190cb1da914c71efaa20689c0e1d7ab62/SequenceGrowth/Data/Nat/DivisionGrowth.lean): if `0 < s < n` and\n`∀ m, n * (u m / s) ≤ u (m + 1)`, then for every `m : ℕ`, with\n`λ = (n : ℚ) / s` and `C = (n : ℚ) * ((s - 1 : ℕ) : ℚ) / ((n : ℚ) - s)`,\n`λ ^ m * ((u 0 : ℚ) - C) + C ≤ (u m : ℚ)`. There is **no** seed condition.",
+   "link": {
+    "text": "Nat.DivisionGrowth.affine_lower_bound",
+    "url": "https://github.com/FormalFrontier/sequence-growth/blob/ccf81c7190cb1da914c71efaa20689c0e1d7ab62/SequenceGrowth/Data/Nat/DivisionGrowth.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Nat.DivisionGrowth.affine_lower_bound",
+    "file": "SequenceGrowth/Data/Nat/DivisionGrowth.lean",
+    "found": {
+     "line": 71,
+     "kind": "theorem",
+     "stated": false
+    }
+   }
+  },
+  {
+   "kind": "item",
+   "title": "`Nat.DivisionGrowth.eventually_dominates`",
+   "title_from": "declaration",
+   "text": "[`Nat.DivisionGrowth.eventually_dominates`](https://github.com/FormalFrontier/sequence-growth/blob/ccf81c7190cb1da914c71efaa20689c0e1d7ab62/SequenceGrowth/Data/Nat/DivisionGrowth.lean): under the same recurrence,\n`0 < s`, `0 < b`, `s * b < n`, and the sufficient natural seed\n`n * (s - 1) < (n - s) * u 0`, for **each** `K : ℕ` there is `M : ℕ`\nsuch that **every** `m ≥ M` satisfies `K * b ^ m < u m`.",
+   "link": {
+    "text": "Nat.DivisionGrowth.eventually_dominates",
+    "url": "https://github.com/FormalFrontier/sequence-growth/blob/ccf81c7190cb1da914c71efaa20689c0e1d7ab62/SequenceGrowth/Data/Nat/DivisionGrowth.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Nat.DivisionGrowth.eventually_dominates",
+    "file": "SequenceGrowth/Data/Nat/DivisionGrowth.lean",
+    "found": {
+     "line": 99,
+     "kind": "theorem",
+     "stated": false
+    }
+   }
+  },
+  {
+   "kind": "prose",
+   "text": "The seed is sufficient, not necessary. See [the mathematical guide](https://github.com/FormalFrontier/sequence-growth/blob/ccf81c7190cb1da914c71efaa20689c0e1d7ab62/docs/DivisionGrowth.md)\nfor the precise Lean signatures, the rational shift, examples and boundary cases."
+  }
+ ],
+ "main_results": [
+  {
+   "name": "Nat.DivisionGrowth.affine_lower_bound",
+   "file": "SequenceGrowth/Data/Nat/DivisionGrowth.lean",
+   "found": {
+    "line": 71,
+    "kind": "theorem",
+    "stated": false
+   },
+   "sorry_count": 0
+  },
+  {
+   "name": "Nat.DivisionGrowth.eventually_dominates",
+   "file": "SequenceGrowth/Data/Nat/DivisionGrowth.lean",
+   "found": {
+    "line": 99,
+    "kind": "theorem",
+    "stated": false
+   },
+   "sorry_count": 0
+  }
+ ]
+}

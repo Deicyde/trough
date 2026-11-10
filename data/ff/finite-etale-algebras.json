@@ -1,0 +1,120 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-finite-etale-algebras",
+ "repo": "FormalFrontier/finite-etale-algebras",
+ "rev": "4627c3ab2479e331c889a374309e62ee1b64a8af",
+ "date": "2026-11-04T13:56:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "finite-etale-algebras",
+  "description": "Finite etale subalgebra constructions over fields, spectrum component bounds over separably closed fields, and literal subalgebra reconstruction along finite Galois, separable-closure and purely inseparable field extensions.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "agent-reviewed",
+  "notes": "Mathematical code, public-module clients and later hypothesis generalization received independent non-author agent review. This is not human review, source-author endorsement or a source-coverage decision. Generated API documentation records historical source bindings, not proof certification.",
+  "reviewers": []
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "tool_setup": "Formal Frontier AI agents used Lean and Lake with pinned mathlib, repository tools and independent non-author agent review."
+   }
+  ],
+  "notes": "AI-assisted development under human project direction. No model identity, expenditure, elapsed-time total or human mathematical review is asserted."
+ },
+ "sources": [
+  {
+   "title": "Algebraic Groups",
+   "authors": [
+    "James S. Milne"
+   ],
+   "type": "book",
+   "relationship": "background",
+   "location": "2017 edition, Propositions 1.29 and 1.30; the separable-closure paragraph in the proof of Proposition 1.30(a) is on printed page 15."
+  },
+  {
+   "title": "Original finite-etale subalgebra and embedded descent APIs",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original-proof",
+   "relationship": "independently-proves"
+  }
+ ],
+ "depends": [],
+ "related": [],
+ "highlights": [],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "Finite etale subalgebras, composites and idempotents",
+   "title_from": "bold",
+   "text": "**Finite etale subalgebras, composites and idempotents.** Over a field `k`,\n[surjective images](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/MaximalSubalgebra.lean#L44) of finite\netale algebras are finite etale, and\n[binary suprema](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/MaximalSubalgebra.lean#L129) of finite\netale subalgebras of a commutative `k`-algebra `R` remain finite etale. A\n*supplied* uniform natural-number bound on their dimensions yields a\n[greatest such subalgebra](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/MaximalSubalgebra.lean#L146);\nthis library does not prove the existence of that bound. Every idempotent\n[lies in a finite etale subalgebra](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/MaximalSubalgebra.lean#L86),\nconstructed from `Fin 2 → k` using `e` and `1 - e`.",
+   "link": {
+    "text": "lies in a finite etale subalgebra",
+    "url": "https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/MaximalSubalgebra.lean#L86",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Spectrum component counts",
+   "title_from": "bold",
+   "text": "**Spectrum component counts.** For a finite etale algebra `S` over a\nseparably closed field `k`, the\n[component-count theorem](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/SpectrumComponents.lean#L38)\nidentifies `Nat.card (ConnectedComponents (PrimeSpectrum S))` with\n`Module.finrank k S`. A continuous surjection `X → PrimeSpectrum S`\n[bounds the dimension](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/SpectrumComponents.lean#L68)\nby the component count of `X` **when `[Finite (ConnectedComponents X)]`**.\nIndependent universes, zero algebras and empty-space cases are retained.",
+   "link": {
+    "text": "bounds the dimension",
+    "url": "https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/SpectrumComponents.lean#L68",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Finite-Galois and separable-closure embedded descent",
+   "title_from": "bold",
+   "text": "**Finite-Galois and separable-closure embedded descent.** For a finite\nGalois extension `L/k`, a subalgebra `P` of `L ⊗[k] R` stable under every\n[coefficientwise automorphism](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/SemilinearDescent.lean)\nis reconstructed from its honest preimage under `r ↦ 1 ⊗ r`. The\n[reconstruction equivalence](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/SemilinearDescent.lean#L420)\nand [range equality](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/SemilinearDescent.lean#L439)\nidentify the *literal ambient* scalar extension with `P`; finite etaleness\n[descends](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/SemilinearDescent.lean#L446) if `P` is finite\netale. For a separable closure `K/k`, the\n[finite-data layer](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/SeparableClosureDescent.lean)\ncaptures an embedded finite-dimensional algebra over a finite Galois\nintermediate field and is coherent under enlargement. Its\n[descent package](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/SeparableClosureDescent.lean#L479)\nreconstructs a finite etale `P` stable under *every* coefficientwise\n`k`-automorphism of `K`, including preimage membership and literal ambient\nrange equality.",
+   "link": {
+    "text": "descent package",
+    "url": "https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/SeparableClosureDescent.lean#L479",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Purely inseparable idempotents and reconstruction",
+   "title_from": "bold",
+   "text": "**Purely inseparable idempotents and reconstruction.** For a purely\ninseparable field extension `K/k`, every idempotent of `K ⊗[k] R` belongs to\nthe [range of the right-factor inclusion](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/PurelyInseparableDescent.lean#L45)\nfrom `R`; [the reversed tensor orientation](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/PurelyInseparableDescent.lean#L35)\nis also available. If `K` is additionally separably closed, the\n[reconstruction package](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/PurelyInseparableDescent.lean#L79)\nrecovers each embedded finite etale `K`-subalgebra from a finite etale\n`k`-subalgebra of `R`, with equivalence and\n[range equality](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/PurelyInseparableDescent.lean#L237)\nagreeing with the literal ambient scalar-extension map. No\nfinite-dimensionality assumption on `K/k` is imposed.",
+   "link": {
+    "text": "range equality",
+    "url": "https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/PurelyInseparableDescent.lean#L237",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Conditional point lifting",
+   "title_from": "bold",
+   "text": "**Conditional point lifting.** Let `R → U → B` be compatible algebra maps\nof commutative rings, with `U` finite as an `R`-module and `B = S⁻¹U`\nflat over `R`. For `I ⊆ Jac(R)`, the\n[point-lifting theorem](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/PointLifting.lean#L278) lifts the\nspecified `R`-algebra map `z : B → R/I` to `s : B → R` with\n`(R → R/I) ∘ s = z`, provided a supplied `ebar ∈ U/IU` has an\nidempotent lift `ε ∈ U` satisfying `z(β(ε)) = 1` and the following\neigencondition: `ebar · (ubar - rbar) = 0` whenever\n`z(β(u)) = r mod I`. Here `β : U → B` is the structural map and\n`ubar`, `rbar` are the images of `u`, `r` in `U/IU`.\nNo etaleness or finite-presentation hypothesis on `B` is required. This\nis conditional on the supplied idempotent; it does not assert that every\nresidue point lifts.",
+   "link": {
+    "text": "point-lifting theorem",
+    "url": "https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/FiniteEtaleAlgebras/PointLifting.lean#L278",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "prose",
+   "text": "For the finite-etale subalgebra, spectrum and descent results above, the\nambient `R` is a commutative algebra over a field; it need not be\nfinite-dimensional, finitely generated, reduced or nontrivial (the zero ring\nis allowed). The point-lifting theorem instead allows arbitrary commutative\nbase rings. These are noncomputable mathematical interfaces, not algorithms\nfor extracting descended algebras or lifted points. This library's\n`IsFiniteEtale` predicate combines mathlib's `Module.Finite` and\n`Algebra.Etale`; mathlib also supplies the tensor-product, Galois, descent,\nspectrum and commutative-algebra infrastructure. This repository develops\nthe subalgebra, component-count, literal reconstruction and conditional\npoint-lifting interfaces described here. See the linked modules for full\nsignatures and the [API reference](https://github.com/FormalFrontier/finite-etale-algebras/blob/4627c3ab2479e331c889a374309e62ee1b64a8af/docs/API.md) for the finite-etale and descent\ninterfaces it covers; source-specific correspondence and coverage belong in\nthe respective source repositories, not this reusable library."
+  }
+ ],
+ "main_results": []
+}

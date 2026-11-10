@@ -1,0 +1,2370 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-homological-algebra",
+ "repo": "FormalFrontier/homological-algebra",
+ "rev": "8bcaebe913c50e1c09e347333d21093646101018",
+ "date": "2026-11-04T14:19:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "Formal Frontier Homological Algebra",
+  "description": "Finite Euler sums for chain and cochain complexes, with native exact-sequence, exact-functor and shift results, plus fixed-arrow relative paths of integer cochain maps in preadditive categories with binary biproducts and pullbacks, and an independent chosen-cokernel quotient-intersection pairing in abelian categories. It also constructs native quadrant bicomplex product totals over arbitrary rings and proves all-integer-degree acyclicity when every horizontal row is acyclic, including exactness at horizontal degree p=0 in each row. Includes admissible layers of chosen quotients, a reversed-lower/forward-upper order, and a lower-cut left-adjoint reflector under subobject/product closure and P(cokernel D.arrow), without quotient closure or endpoint admissibility. Also supplies the two exterior snake-sequence maps and proves the four middle exactness positions for an eight-object sequence in abelian categories; the endpoint universal properties and all six interior exactness positions hold without vanishing of the exterior objects. Also gives the canonical Fitting decomposition for endomorphisms of Noetherian and Artinian objects in arbitrary abelian categories, with kernel nilpotence, image invertibility and module-subobject agreement. These decompositions are natural for arbitrary intertwiners on a common tail; the copairing square at each exponent requires only the indicated kernels, images, image map and two biproducts. In a category with zero morphisms, nilpotent-to-monomorphic and epimorphic-to-nilpotent intertwiners vanish. For indecomposable Noetherian and Artinian objects, every endomorphism is nilpotent or a unit and the canonical, possibly noncommutative endomorphism ring is local. In any preadditive category with binary biproducts, locality of the canonical endomorphism ring implies indecomposability, without chain conditions or a chosen zero object. Separately, either an Artinian or a Noetherian object in a category with zero morphisms and finite biproducts admits a finite indecomposable biproduct decomposition, with an empty family for zero. In an abelian category, an object satisfying both chain conditions admits a finite biproduct decomposition with local canonical endomorphism rings on all factors. Such an object cancels from binary biproducts with arbitrary remaining objects. Finite families with local canonical endomorphism rings and isomorphic biproducts have matching factors, assuming only those two biproducts in a preadditive category. Every endomorphism of a Noetherian and Artinian object in an abelian category has a canonical Drazin inverse, with characteristic equations, unique existence, nilpotent, isomorphism and idempotent comparisons, and an idempotent projector. The kernel and image subobjects of sufficiently high powers equal those of f * drazinInverse f, and f * (1 - f * drazinInverse f) is nilpotent.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "other: theorem statements have complete proofs",
+  "notes": "",
+  "reviewers": []
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "framework": "Codex and Hive",
+    "prompting_notes": "AI-assisted mathematical exposition, Lean formalization and documentation with interactive Lean feedback; Codex and Hive supported the work."
+   }
+  ],
+  "notes": "Project-wide inference cost, elapsed time and peak memory are not measured."
+ },
+ "sources": [
+  {
+   "title": "The K-book",
+   "authors": [
+    "Charles A. Weibel"
+   ],
+   "type": "book",
+   "relationship": "adapts",
+   "location": "Chapter II, Section 6 (additive functions and Euler characteristics)"
+  },
+  {
+   "title": "Cohomology of Number Fields",
+   "authors": [
+    "Jürgen Neukirch",
+    "Alexander Schmidt",
+    "Kay Wingberg"
+   ],
+   "type": "book",
+   "relationship": "adapts",
+   "location": "Corrected second edition, (1.3.1)"
+  },
+  {
+   "title": "Original proof exposition for SES-additive Euler invariants",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original-proof",
+   "relationship": "adapts"
+  },
+  {
+   "title": "Original fixed-arrow cochain relative-path exposition and Lean implementation",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original-proof",
+   "relationship": "adapts"
+  },
+  {
+   "title": "Original chosen-cokernel quotient-intersection construction and Lean implementation",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original-proof",
+   "relationship": "adapts"
+  },
+  {
+   "title": "Original quadrant product-total assembly and Lean implementation",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original-proof",
+   "relationship": "adapts"
+  },
+  {
+   "title": "Original admissible-layer lower-cut reflector and Lean construction",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original-proof",
+   "relationship": "adapts"
+  }
+ ],
+ "depends": [
+  {
+   "name": "stable-range",
+   "rev": "70231e01f5383c3882231f244612ded7283e77c8"
+  }
+ ],
+ "related": [],
+ "highlights": [],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "Uniqueness of finite biproduct factors",
+   "title_from": "bold",
+   "text": "**Uniqueness of finite biproduct factors.** In a preadditive category, two\nfinite families with local canonical, possibly noncommutative endomorphism\nrings and isomorphic biproducts have equivalent index types and matching\nisomorphic factors. Only the two given biproducts are needed, with independent\nobject, morphism and both index universes; no abelian structure, chain\nconditions or idempotent completeness is assumed. Repeated factors are allowed;\nthe matching need not be unique or make the supplied isomorphism diagonal.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#uniqueness-of-finite-biproduct-factors).",
+   "link": {
+    "text": "Statement and module",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#uniqueness-of-finite-biproduct-factors",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Finite indecomposable decompositions",
+   "title_from": "bold",
+   "text": "**Finite indecomposable decompositions.** An Artinian object, or separately\na Noetherian object, in a category with zero morphisms and finite biproducts\nis isomorphic to a finite biproduct of nonzero indecomposables; zero has the\nempty decomposition. No preadditivity, abelian structure, second chain condition or\nidempotent completeness is needed; this is existence, not uniqueness.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#finite-indecomposable-decompositions).",
+   "link": {
+    "text": "Statements and modules",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#finite-indecomposable-decompositions",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Finite-length decompositions with local endomorphism rings",
+   "title_from": "bold",
+   "text": "**Finite-length decompositions with local endomorphism rings.** A Noetherian\n**and** Artinian object in any abelian category is isomorphic to a finite\nbiproduct with local canonical, possibly noncommutative endomorphism rings\non its factors. Object and morphism universes are independent; zero has the\nempty decomposition. This asserts existence and locality, not uniqueness.\nIts local-End factors also satisfy the generic uniqueness theorem above.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#finite-length-decompositions-with-local-endomorphism-rings).",
+   "link": {
+    "text": "Statement and module",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#finite-length-decompositions-with-local-endomorphism-rings",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Cancellation of finite local-End families",
+   "title_from": "bold",
+   "text": "**Cancellation of finite local-End families.** In a preadditive category,\na finite biproduct of objects with local canonical, possibly noncommutative\nendomorphism rings cancels from binary biproducts with arbitrary remaining\nobjects. Only the common full sum and the two binary totals are required;\nno intermediate sums, chain conditions or idempotent completeness are assumed.\nThe object, morphism and index universes are independent, and the empty family\nis allowed. The residual isomorphism is not canonical.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#cancellation-of-finite-local-end-families).",
+   "link": {
+    "text": "Statement and module",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#cancellation-of-finite-local-end-families",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Cancellation of finite-length summands",
+   "title_from": "bold",
+   "text": "**Cancellation of finite-length summands.** In any abelian category, if\n`X` is Noetherian **and** Artinian, `X ⊞ Y ≅ X ⊞ Z` implies\n`Nonempty (Y ≅ Z)` for unrestricted `Y, Z`. No locality of `End X`\nis required; zero is allowed and the isomorphism is not canonical.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#cancellation-of-finite-length-summands).",
+   "link": {
+    "text": "Statement and module",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#cancellation-of-finite-length-summands",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Subobject correspondence and modularity",
+   "title_from": "bold",
+   "text": "**Subobject correspondence and modularity.** Canonical subobject lattices\nin any abelian category are modular. Pullback along an epimorphism identifies\ncodomain subobjects with domain subobjects containing its kernel, with direct\nimage as inverse; the cokernel case is included. No smallness is assumed.\n[Statements and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#subobject-correspondence-and-modularity).",
+   "link": {
+    "text": "Statements and module",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#subobject-correspondence-and-modularity",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Composition series and Jordan–Hölder",
+   "title_from": "bold",
+   "text": "**Composition series and Jordan–Hölder.** A Noetherian **and** Artinian\nobject in any abelian category has a finite composition series from `⊥`\nto `⊤` with simple quotient factors. Any two given series with equal heads\nand lasts have equal lengths and isomorphic factors after a bijection,\nwithout chain conditions or bottom/top assumptions for uniqueness.\n[Statements and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#composition-series-and-jordanhölder).",
+   "link": {
+    "text": "Statements and module",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#composition-series-and-jordanhölder",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Categorical object length",
+   "title_from": "bold",
+   "text": "**Categorical object length.** In any category, `objectLength X : ℕ∞`\nmeasures strict steps in the canonical subobject order and is invariant under\nisomorphisms and monotone under monomorphisms. In an abelian category it is\nadditive on every short exact sequence, including infinite lengths, and is\nfinite exactly for Noetherian **and** Artinian objects. Full composition\nseries compute it; over any ring it agrees with `Module.length`, with\nindependent scalar and carrier universes.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#categorical-object-length).",
+   "link": {
+    "text": "Statements and modules",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#categorical-object-length",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Fitting decomposition and intertwiners",
+   "title_from": "bold",
+   "text": "**Fitting decomposition and intertwiners.** For an endomorphism of a\nNoetherian **and** Artinian object in any abelian category, all sufficiently\nhigh powers have complementary kernels and images, with canonical copairing\nan isomorphism. The original endomorphism has a nilpotent restriction to the\nkernel and an invertible restriction to the image, with a common-tail\nblock-intertwining equation. Arbitrary intertwiners between two such objects\nare block diagonal in these canonical coordinates on one common tail.\nComplementarity agrees with linear-map power kernels and ranges over\narbitrary, possibly noncommutative rings. Separately, generic block-intertwiner\nand mixed-Hom vanishing laws need only zero morphisms and the displayed\nbiproducts, nilpotence and mono/epi conditions, not abelian structure.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#fitting-decomposition).",
+   "link": {
+    "text": "Statements and modules",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#fitting-decomposition",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Canonical finite-length power bounds",
+   "title_from": "bold",
+   "text": "**Canonical finite-length power bounds.** If `objectLength X ≠ ⊤`, put\n`L = (objectLength X).toNat`. Power kernels stabilize by `L` with zero\nmorphisms and kernels; nilpotent endomorphisms satisfy `g ^ L = 0`.\nPower images stabilize by `L` with images and image maps. On a Noetherian\n**and** Artinian object in an abelian category, kernels and images of\n`f ^ n` agree with those of the Drazin projector for every `n ≥ L`;\n`f ^ (L + 1) * drazinInverse f = f ^ L` and\n`(f * (1 - f * drazinInverse f)) ^ L = 0`. Zero length is included;\nthese are uniform mathematical bounds, not least exponents or runtime bounds.\nOver any ring, a module of finite composition length `L` has\n`ker (f ^ n) = ker (f ^ L)` for every endomorphism and every `n ≥ L`;\nfinite generation alone is not the hypothesis.\n[Equations and hypotheses](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#canonical-finite-length-power-bounds).",
+   "link": {
+    "text": "Equations and hypotheses",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#canonical-finite-length-power-bounds",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Canonical Drazin inverses",
+   "title_from": "bold",
+   "text": "**Canonical Drazin inverses.** Every endomorphism of a Noetherian **and**\nArtinian object in an abelian category has a unique commuting Drazin inverse.\nIts characteristic equations, nilpotent and idempotent cases, and\npreservation by arbitrary multiplicative maps and functors are included.\nFor preservation both relevant objects must be Noetherian and Artinian;\nfunctors need not be additive or exact. Intertwiners also intertwine the\ninverses, and taking the inverse respects every natural power, including zero,\nand products of commuting endomorphisms. Double inversion gives the group part\n`f * drazinInverse f * f`, not generally `f`.\n[Equations and hypotheses](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#canonical-drazin-inverses).",
+   "link": {
+    "text": "Equations and hypotheses",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#canonical-drazin-inverses",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Drazin sums, projectors and perturbations",
+   "title_from": "bold",
+   "text": "**Drazin sums, projectors and perturbations.** On a Noetherian **and**\nArtinian object in an abelian category, mutually annihilating endomorphisms\nin **both** product orders have additive Drazin inverses, also on finite\nsupports. A commuting nilpotent perturbation preserves the stable-image\nprojector and has an explicit finite geometric inverse formula; the Drazin\ninverse itself generally changes. The projector has the stable power kernel\nand image; `f * (1 - f * drazinInverse f)` is nilpotent, not necessarily\nthe complementary idempotent itself. These are conditional laws, not general\nadditivity or perturbation invariance of the inverse.\n[Formulas and hypotheses](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#drazin-sums-projectors-and-perturbations).",
+   "link": {
+    "text": "Formulas and hypotheses",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#drazin-sums-projectors-and-perturbations",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Cyclic and triangular Drazin formulas",
+   "title_from": "bold",
+   "text": "**Cyclic and triangular Drazin formulas.** Between two Noetherian **and**\nArtinian objects of an abelian category, arbitrary `a : X ⟶ Y`, `b : Y ⟶ X`\nsatisfy Cline's cyclic-product formula, with a canonical isomorphism between\nthe images of their Drazin projectors. For such `X, Y`, a unit `f : End X`,\nnilpotent `g : End Y` with any witness `g ^ n = 0`, and arbitrary\n`h : X ⟶ Y` give a finite-sum formula for the inverse of\n`Biprod.ofComponents f h 0 g`; no intertwining condition on `h` is imposed.\nThe canonical image of its stable-image projector is isomorphic to `X`,\nwith the isomorphism's inverse given by a graph map.\nThe witness may be zero or nonminimal. Separately, cyclic powers need only\na category, and cyclic nilpotence only zero morphisms.\n[Cyclic formulas](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#cyclic-products-and-projector-images),\n[triangular formula](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#triangular-biproduct-formula).",
+   "link": {
+    "text": "triangular formula",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#triangular-biproduct-formula",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Sylvester equation and invariant graphs",
+   "title_from": "bold",
+   "text": "**Sylvester equation and invariant graphs.** In any preadditive category,\ninvertible `f : X ⟶ X`, nilpotent `g : End Y` and arbitrary `h : X ⟶ Y`\ngive a unique `u : X ⟶ Y` with `f ≫ u = h + u ≫ g`. No biproducts,\nscalar action or chain conditions are needed; object and morphism universes\nare independent. Under the abelian, Noetherian **and** Artinian triangular\nhypotheses above, this identifies the canonical graph slope, including its\nfactor of `f`, and the unique section of the first projection that intertwines\n`f` with the triangular endomorphism.\n[Equation and canonical graph](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#sylvester-equation-and-canonical-invariant-graph).",
+   "link": {
+    "text": "Equation and canonical graph",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#sylvester-equation-and-canonical-invariant-graph",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Nilpotence in short complexes",
+   "title_from": "bold",
+   "text": "**Nilpotence in short complexes.** For a compatible endomorphism of a\nshort exact complex in any category with zero morphisms, the middle component\nis nilpotent exactly when both outer components are. Exactness alone gives\nthe explicit middle exponent `m + n` from outer exponents `m, n`; a monic\nfirst arrow and an epic second arrow reflect a middle exponent to the left\nand right components, respectively, without changing it. All natural\nexponents, including zero, are allowed; no abelian, additive, splitting or\nchain-condition premise is needed.\n[Statements and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#nilpotence-in-short-complexes).",
+   "link": {
+    "text": "Statements and module",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#nilpotence-in-short-complexes",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Local endomorphism rings",
+   "title_from": "bold",
+   "text": "**Local endomorphism rings.** An indecomposable Noetherian **and** Artinian\nobject in any abelian category has a local canonical, possibly noncommutative\nendomorphism ring; every endomorphism is nilpotent or a unit.\nIndecomposability excludes zero, with no extra nontriviality premise.\n[Statements and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#local-endomorphism-rings).",
+   "link": {
+    "text": "Statements and module",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#local-endomorphism-rings",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Indecomposability from locality",
+   "title_from": "bold",
+   "text": "**Indecomposability from locality.** In any preadditive category with binary\nbiproducts, a local canonical ring `End X` implies Mathlib's original\n`Indecomposable X`. No abelian structure, chain conditions, chosen zero\nobject or separate nonzero hypothesis is required; the ring may be\nnoncommutative.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#indecomposability-from-locality).",
+   "link": {
+    "text": "Statement and module",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#indecomposability-from-locality",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Finite Euler identities",
+   "title_from": "bold",
+   "text": "**Finite Euler identities.** In an abelian category, an invariant valued in\nany additive commutative group and additive on every native short exact\nsequence gives finite integer-interval Euler identities for chains and\ncochains with explicit endpoint-image corrections. Quasi-isomorphism\ninvariance requires both complexes to have term support in the same nonempty\ninterval; homology-sum SES additivity for chains requires this of all three\ncomplexes. Cochain LES additivity instead has connecting-image corrections\nremovable by neighboring homology vanishing. Exact-functor transport,\nfinite-support and native-shift formulas, and length for finitely generated\nmodules over a commutative Noetherian Artinian ring are included.\n[Formulas and hypotheses](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#finite-euler-identities),\n[Euler guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/AdditiveEuler.md).",
+   "link": {
+    "text": "Euler guide",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/AdditiveEuler.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Unrestricted Hom complexes and K-objects",
+   "title_from": "bold",
+   "text": "**Unrestricted Hom complexes and K-objects.** For integer cochains in any\npreadditive category, the canonical Hom complex uses unrestricted products\nof **abelian groups**, not products in the coefficient category. Homotopies\nact in both variables; a contraction in either contracts the Hom complex,\nand degree-`n` cohomology vanishes exactly when every map `K ⟶ L⟦n⟧` is\nnull-homotopic. In an **abelian** category, K-projectivity and K-injectivity\nare characterized by acyclicity of Hom complexes against acyclic tests,\neven by vanishing in one fixed degree. They descend along one-sided homotopy\nretracts, are invariant under categorical equivalences, and are detected\ncomponentwise on supplied coproducts and products, respectively, including\nempty families. Hom-complex quasi-isomorphism criteria, diagonal homotopy\ncriteria with evaluation-preservation hypotheses, and canonical preimages\nof supplied homotopy equivalences under fully faithful additive functors\ncomplement these results; no boundedness or enough-projectives/injectives\nassumption is imposed.\n[Detailed statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#hom-complexes-and-k-objects),\n[Hom-complex guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HomComplexHomotopy.md).",
+   "link": {
+    "text": "Hom-complex guide",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HomComplexHomotopy.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Ordinary disks and bounded-below projective chains",
+   "title_from": "bold",
+   "text": "**Ordinary disks and bounded-below projective chains.** In a category with\nzero morphisms and a zero object, an integer cochain identity disk in degrees\n`n,n+1` is ordinarily projective or injective exactly when its coefficient is;\nno preadditivity is required. Separately, in any abelian category, a\nparticular map between integer chain complexes with projective terms and\npossibly different termwise lower bounds is a quasi-isomorphism exactly\nwhen it is the forward map of a homotopy equivalence. There is no upper-bound\nor enough-projectives assumption. Ordinary projectivity is distinct from\nK-projectivity.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#ordinary-disks-and-bounded-below-projective-chains).",
+   "link": {
+    "text": "Statements and modules",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#ordinary-disks-and-bounded-below-projective-chains",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Chain conditions and homology",
+   "title_from": "bold",
+   "text": "**Chain conditions and homology.** A functor between arbitrary categories\npreserving monomorphisms and reflecting isomorphisms reflects Noetherian and,\nseparately, Artinian objects, with four independent universes; fullness and\nfaithfulness are not required. In an abelian category, a short complex with\nNoetherian middle object has Noetherian homology. Epimorphic Noetherian and\nmonomorphic Artinian endomorphisms are isomorphisms. Both module criteria use\nthe original scalar action over any ring, with independent scalar and carrier\nuniverses. No smallness, well-poweredness, Noetherian-ring or whole-category\nchain condition is assumed. In an abelian category, binary biproducts\npreserve each chain condition separately from that condition on both factors.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#noetherian-objects).",
+   "link": {
+    "text": "Statements and modules",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#noetherian-objects",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Quotients, admissible layers and snake sequences",
+   "title_from": "bold",
+   "text": "**Quotients, admissible layers and snake sequences.** In any abelian\ncategory, for subobjects `L ≤ U` of `B` and any `D`, the chosen-cokernel map\n`U/(L ⊓ D) ⟶ (U/L) × (B/D)` is monic, without `L ≤ D`. Layers admissible\nfor a quotient property `P` have reversed lower and forward upper order;\nsubobject and binary-product closure and `P(B/D)` make the lower cut\n`(L,U) ↦ (L ⊓ D,U)` **left** adjoint to inclusion of layers with lower\nendpoint at most `D`. Separately, snake inputs with exact rows, epic upper\nsecond arrow and monic lower first arrow give an eight-object sequence exact\nat all six interior objects.\nNeither exterior object is required to vanish; the four middle exactness\npositions use Mathlib's snake lemma.\n[Statements and modules](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#quotients-admissible-layers-and-snake-sequences),\n[quotient guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/QuotientIntersection.md), [layer guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/AdmissibleLayers.md).",
+   "link": {
+    "text": "layer guide",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/AdmissibleLayers.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Fixed-arrow relative paths",
+   "title_from": "bold",
+   "text": "**Fixed-arrow relative paths.** For integer cochains in a preadditive\ncategory with binary biproducts and **pullbacks**, the pullback of a fixed\n`f : B₁ ⟶ B` along the first native path endpoint has a strict section,\nlifts from chosen homotopies with strict endpoint equations, and a homotopy\nequivalence to `B₁` whose inverse homotopy vanishes over the first projection.\nThe object depends only on `f`; no arbitrary-arrow naturality or new\nquasi-isomorphism instance is asserted.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#fixed-arrow-relative-paths),\n[relative-path guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/CochainRelativePath.md).",
+   "link": {
+    "text": "relative-path guide",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/CochainRelativePath.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Quadrant product totals",
+   "title_from": "bold",
+   "text": "**Quadrant product totals.** For any ring `R`, native quadrant bicomplexes\nin `ModuleCat.{u} R`, with `R : Type u`, have signed unrestricted product\ntotals in integer degrees `p-r`. Acyclic horizontal rows at **every** row\nand horizontal degree, including the boundary `p=0`, imply total acyclicity\nin **all integer degrees**. Chosen elementwise lifts are not linear or\nnatural splittings; this is not an arbitrary-unbounded total theorem.\n[Statement and module](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md#quadrant-product-totals),\n[product-total guide](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/ProductTotalAcyclicity.md).",
+   "link": {
+    "text": "product-total guide",
+    "url": "https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/ProductTotalAcyclicity.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "prose",
+   "text": "The [complete headline catalogue](https://github.com/FormalFrontier/homological-algebra/blob/8bcaebe913c50e1c09e347333d21093646101018/docs/HeadlineResults.md) retains the individual\nresults, signs, universe parameters and qualifications. In particular, object\nand morphism universes are independent in the general categorical results;\nindex universes are independent in the family-limit results."
+  }
+ ],
+ "main_results": [
+  {
+   "name": "CategoryTheory.isNoetherianObject_biprod",
+   "file": "HomologicalAlgebra/Abelian/ChainConditions.lean",
+   "found": {
+    "line": 38,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.isArtinianObject_biprod",
+   "file": "HomologicalAlgebra/Abelian/ChainConditions.lean",
+   "found": {
+    "line": 46,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.Limits.biprod.isIso_map_iff",
+   "file": "HomologicalAlgebra/Abelian/BiproductIntertwiners.lean",
+   "found": {
+    "line": 54,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.Limits.biprod.mapIso_asIso",
+   "file": "HomologicalAlgebra/Abelian/BiproductIntertwiners.lean",
+   "found": {
+    "line": 108,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.biprod_inl_comp_snd_eq_zero",
+   "file": "HomologicalAlgebra/Abelian/BiproductIntertwiners.lean",
+   "found": {
+    "line": 127,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.biprod_inr_comp_fst_eq_zero",
+   "file": "HomologicalAlgebra/Abelian/BiproductIntertwiners.lean",
+   "found": {
+    "line": 142,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.biprod_intertwiner_eq_map",
+   "file": "HomologicalAlgebra/Abelian/BiproductIntertwiners.lean",
+   "found": {
+    "line": 158,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.biprodLeftIso",
+   "file": "HomologicalAlgebra/Abelian/BiproductIntertwiners.lean",
+   "found": {
+    "line": 180,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.biprodRightIso",
+   "file": "HomologicalAlgebra/Abelian/BiproductIntertwiners.lean",
+   "found": {
+    "line": 199,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.biprodLeftIso_hom",
+   "file": "HomologicalAlgebra/Abelian/BiproductIntertwiners.lean",
+   "found": {
+    "line": 218,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.biprodLeftIso_inv",
+   "file": "HomologicalAlgebra/Abelian/BiproductIntertwiners.lean",
+   "found": {
+    "line": 255,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.biprodRightIso_hom",
+   "file": "HomologicalAlgebra/Abelian/BiproductIntertwiners.lean",
+   "found": {
+    "line": 230,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.biprodRightIso_inv",
+   "file": "HomologicalAlgebra/Abelian/BiproductIntertwiners.lean",
+   "found": {
+    "line": 272,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.biprod_mapIso_eq_asIso",
+   "file": "HomologicalAlgebra/Abelian/BiproductIntertwiners.lean",
+   "found": {
+    "line": 241,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.eq_zero_of_isNilpotent_of_mono",
+   "file": "HomologicalAlgebra/Abelian/EndomorphismPowers.lean",
+   "found": {
+    "line": 104,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.eq_zero_of_epi_of_isNilpotent",
+   "file": "HomologicalAlgebra/Abelian/EndomorphismPowers.lean",
+   "found": {
+    "line": 114,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.pow_biprod_desc_naturality",
+   "file": "HomologicalAlgebra/Abelian/EndomorphismPowers.lean",
+   "found": {
+    "line": 126,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.comp_pow_succ",
+   "file": "HomologicalAlgebra/Abelian/EndomorphismCyclicProducts.lean",
+   "found": {
+    "line": 41,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.comp_pow_comp_eq_mul_pow_mul",
+   "file": "HomologicalAlgebra/Abelian/EndomorphismCyclicProducts.lean",
+   "found": {
+    "line": 52,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.isNilpotent_comp_iff",
+   "file": "HomologicalAlgebra/Abelian/EndomorphismCyclicProducts.lean",
+   "found": {
+    "line": 60,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.eventually_exists_pow_biprod_desc_iso_naturality",
+   "file": "HomologicalAlgebra/Abelian/FittingNaturality.lean",
+   "found": {
+    "line": 50,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.drazinInverse",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 203,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.commute_drazinInverse",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 216,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.drazinInverse_mul_self_mul",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 221,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.drazinInverse_comp_self_comp",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 228,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.exists_pow_succ_mul_drazinInverse",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 235,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.eq_drazinInverse_iff",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 242,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.existsUnique_drazinInverse",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 258,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.drazinInverse_eq_zero_iff",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 269,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.drazinInverse_zero",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 286,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.drazinInverse_eq_inv",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 291,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.drazinInverse_of_isIdempotentElem",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 305,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.isIdempotentElem_mul_drazinInverse",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 314,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.map_drazinInverse",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 479,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.Functor.map_drazinInverse",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 513,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.drazinInverse_comp_eq_comp_drazinInverse",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 325,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.drazinInverse_comp_eq_comp_drazinInverse_assoc",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": null
+  },
+  {
+   "name": "Commute.drazinInverse_left",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 378,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.drazinInverse_pow",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 388,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Commute.drazinInverse_mul",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 411,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.drazinInverse_drazinInverse",
+   "file": "HomologicalAlgebra/Abelian/Drazin.lean",
+   "found": {
+    "line": 451,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.drazinInverse_add_of_mul_eq_zero",
+   "file": "HomologicalAlgebra/Abelian/DrazinAdditivity.lean",
+   "found": {
+    "line": 49,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.drazinInverse_sum",
+   "file": "HomologicalAlgebra/Abelian/DrazinAdditivity.lean",
+   "found": {
+    "line": 132,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.drazinInverse_comp",
+   "file": "HomologicalAlgebra/Abelian/DrazinCyclic.lean",
+   "found": {
+    "line": 57,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.mul_drazinInverse_comp",
+   "file": "HomologicalAlgebra/Abelian/DrazinCyclic.lean",
+   "found": {
+    "line": 75,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.imageMulDrazinInverseCompIso",
+   "file": "HomologicalAlgebra/Abelian/DrazinCyclic.lean",
+   "found": {
+    "line": 85,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.imageMulDrazinInverseCompIso_hom_ι",
+   "file": "HomologicalAlgebra/Abelian/DrazinCyclic.lean",
+   "found": {
+    "line": 147,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.imageMulDrazinInverseCompIso_inv_ι",
+   "file": "HomologicalAlgebra/Abelian/DrazinCyclic.lean",
+   "found": {
+    "line": 155,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.imageMulDrazinInverseCompIso_hom_eq_image_map",
+   "file": "HomologicalAlgebra/Abelian/DrazinCyclic.lean",
+   "found": {
+    "line": 164,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.imageMulDrazinInverseCompIso_inv_eq_image_map",
+   "file": "HomologicalAlgebra/Abelian/DrazinCyclic.lean",
+   "found": {
+    "line": 179,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.imageMulDrazinInverseCompIso_hom_naturality",
+   "file": "HomologicalAlgebra/Abelian/DrazinCyclic.lean",
+   "found": {
+    "line": 201,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.eventually_kernelSubobject_pow_eq_mul_drazinInverse",
+   "file": "HomologicalAlgebra/Abelian/DrazinProjector.lean",
+   "found": {
+    "line": 72,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.eventually_imageSubobject_pow_eq_mul_drazinInverse",
+   "file": "HomologicalAlgebra/Abelian/DrazinProjector.lean",
+   "found": {
+    "line": 85,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.isNilpotent_mul_one_sub_mul_drazinInverse",
+   "file": "HomologicalAlgebra/Abelian/DrazinProjector.lean",
+   "found": {
+    "line": 98,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.drazinInverse_add_eq_sum_range",
+   "file": "HomologicalAlgebra/Abelian/DrazinPerturbation.lean",
+   "found": {
+    "line": 165,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.add_mul_drazinInverse_of_isNilpotent",
+   "file": "HomologicalAlgebra/Abelian/DrazinPerturbation.lean",
+   "found": {
+    "line": 196,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.existsUnique_sylvester",
+   "file": "HomologicalAlgebra/Preadditive/Sylvester.lean",
+   "found": {
+    "line": 37,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.eq_comp_inl_drazinInverse_biprod_triangular_snd_iff",
+   "file": "HomologicalAlgebra/Abelian/DrazinTriangular.lean",
+   "found": {
+    "line": 277,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.eq_imageMulDrazinInverseBiprodTriangularIso_inv_ι_iff",
+   "file": "HomologicalAlgebra/Abelian/DrazinTriangular.lean",
+   "found": {
+    "line": 322,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.drazinInverse_biprod_triangular",
+   "file": "HomologicalAlgebra/Abelian/DrazinTriangular.lean",
+   "found": {
+    "line": 74,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.mul_drazinInverse_biprod_triangular",
+   "file": "HomologicalAlgebra/Abelian/DrazinTriangular.lean",
+   "found": {
+    "line": 140,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.imageMulDrazinInverseBiprodTriangularIso",
+   "file": "HomologicalAlgebra/Abelian/DrazinTriangular.lean",
+   "found": {
+    "line": 183,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.imageMulDrazinInverseBiprodTriangularIso_hom",
+   "file": "HomologicalAlgebra/Abelian/DrazinTriangular.lean",
+   "found": {
+    "line": 211,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.imageMulDrazinInverseBiprodTriangularIso_inv_ι",
+   "file": "HomologicalAlgebra/Abelian/DrazinTriangular.lean",
+   "found": {
+    "line": 241,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.factorThruImage_comp_imageMulDrazinInverseBiprodTriangularIso_hom",
+   "file": "HomologicalAlgebra/Abelian/DrazinTriangular.lean",
+   "found": {
+    "line": 261,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.cancel_finite_biproduct_of_isLocalRing_end",
+   "file": "HomologicalAlgebra/Preadditive/FiniteCancellation.lean",
+   "found": {
+    "line": 106,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.nonempty_iso_of_biprod_iso_of_isNoetherianObject_of_isArtinianObject",
+   "file": "HomologicalAlgebra/Abelian/FiniteLengthCancellation.lean",
+   "found": {
+    "line": 46,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.exists_finite_biproduct_isLocalRing_end",
+   "file": "HomologicalAlgebra/Abelian/FiniteLength.lean",
+   "found": {
+    "line": 48,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.exists_equiv_of_iso_biproduct_of_isLocalRing_end",
+   "file": "HomologicalAlgebra/Preadditive/BiproductUniqueness.lean",
+   "found": {
+    "line": 223,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.exists_finite_indecomposable_biproduct_of_isArtinianObject",
+   "file": "HomologicalAlgebra/Indecomposable/Artinian.lean",
+   "found": {
+    "line": 39,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.exists_finite_indecomposable_biproduct_of_isNoetherianObject",
+   "file": "HomologicalAlgebra/Indecomposable/Noetherian.lean",
+   "found": {
+    "line": 192,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.indecomposable_of_isLocalRing_end",
+   "file": "HomologicalAlgebra/Preadditive/Indecomposable.lean",
+   "found": {
+    "line": 45,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.isLocalRing_end_of_indecomposable",
+   "file": "HomologicalAlgebra/Abelian/LocalEndomorphism.lean",
+   "found": {
+    "line": 73,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.isNilpotent_or_isUnit_of_indecomposable",
+   "file": "HomologicalAlgebra/Abelian/LocalEndomorphism.lean",
+   "found": {
+    "line": 50,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ModuleCat.isArtinianObject_iff",
+   "file": "HomologicalAlgebra/ModuleCat/Subobject.lean",
+   "found": {
+    "line": 36,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.eventually_isCompl_kernelSubobject_pow_imageSubobject_pow",
+   "file": "HomologicalAlgebra/Abelian/Fitting.lean",
+   "found": {
+    "line": 245,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.eventually_isIso_biprod_desc_kernel_ι_image_ι_pow",
+   "file": "HomologicalAlgebra/Abelian/Fitting.lean",
+   "found": {
+    "line": 255,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.End.eventually_isIso_imagePowRestriction",
+   "file": "HomologicalAlgebra/Abelian/Fitting.lean",
+   "found": {
+    "line": 267,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "ModuleCat.isCompl_kernelSubobject_pow_imageSubobject_pow_iff",
+   "file": "HomologicalAlgebra/ModuleCat/Subobject.lean",
+   "found": {
+    "line": 75,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.HomComplex.isZero_homology_iff",
+   "file": "HomologicalAlgebra/Cochain/HomComplexVanishing.lean",
+   "found": {
+    "line": 37,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.HomComplex.acyclic_iff",
+   "file": "HomologicalAlgebra/Cochain/HomComplexVanishing.lean",
+   "found": {
+    "line": 84,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.HomComplex.quasiIso_prePostcomp_of_homotopyEquiv",
+   "file": "HomologicalAlgebra/Cochain/HomComplexQuasiIso.lean",
+   "found": {
+    "line": 69,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.HomComplex.quasiIso_prePostcomp_of_isIso_quotient_map",
+   "file": "HomologicalAlgebra/Cochain/HomComplexQuasiIso.lean",
+   "found": {
+    "line": 107,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.IsKProjective.quasiIso_prePostcomp",
+   "file": "HomologicalAlgebra/Cochain/HomComplexQuasiIso.lean",
+   "found": {
+    "line": 134,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.IsKInjective.quasiIso_prePostcomp",
+   "file": "HomologicalAlgebra/Cochain/HomComplexQuasiIso.lean",
+   "found": {
+    "line": 208,
+    "kind": "lemma",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.ShortComplex.SnakeInput.composableArrowsWithEndpoints_middle_exact",
+   "file": "HomologicalAlgebra/Abelian/SnakeLemma.lean",
+   "found": {
+    "line": 139,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.ShortComplex.SnakeInput.kernelToL₀X₁IsKernel",
+   "file": "HomologicalAlgebra/Abelian/SnakeLemma.lean",
+   "found": {
+    "line": 57,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.ShortComplex.SnakeInput.L₃X₃ToCokernelIsCokernel",
+   "file": "HomologicalAlgebra/Abelian/SnakeLemma.lean",
+   "found": {
+    "line": 94,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.ShortComplex.SnakeInput.snake_lemma_with_endpoints",
+   "file": "HomologicalAlgebra/Abelian/SnakeLemma.lean",
+   "found": {
+    "line": 148,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.euler_endpoints",
+   "file": "HomologicalAlgebra/AdditiveEuler.lean",
+   "found": {
+    "line": 169,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.euler_eq_homology_of_bounded",
+   "file": "HomologicalAlgebra/AdditiveEuler.lean",
+   "found": {
+    "line": 205,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.euler_quasiIso",
+   "file": "HomologicalAlgebra/AdditiveEuler.lean",
+   "found": {
+    "line": 227,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.lengthInvariant_ses",
+   "file": "HomologicalAlgebra/AdditiveEuler/Length.lean",
+   "found": {
+    "line": 39,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.term_sum_additive_of_shortExact",
+   "file": "HomologicalAlgebra/AdditiveEuler/Functoriality.lean",
+   "found": {
+    "line": 39,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.homology_sum_additive_of_shortExact",
+   "file": "HomologicalAlgebra/AdditiveEuler/Functoriality.lean",
+   "found": {
+    "line": 53,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.mapHomologyIso",
+   "file": "HomologicalAlgebra/AdditiveEuler/Functoriality.lean",
+   "found": {
+    "line": 99,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.euler_map_bounded",
+   "file": "HomologicalAlgebra/AdditiveEuler/Functoriality.lean",
+   "found": {
+    "line": 132,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.signed_sum_eq_of_support",
+   "file": "HomologicalAlgebra/AdditiveEuler/Shift.lean",
+   "found": {
+    "line": 35,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.signed_sum_translate",
+   "file": "HomologicalAlgebra/AdditiveEuler/Shift.lean",
+   "found": {
+    "line": 55,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.term_sum_eq_of_support",
+   "file": "HomologicalAlgebra/AdditiveEuler/Shift.lean",
+   "found": {
+    "line": 87,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.cochain_shift_term_support",
+   "file": "HomologicalAlgebra/AdditiveEuler/Shift.lean",
+   "found": {
+    "line": 101,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.cochain_shift_term_sum",
+   "file": "HomologicalAlgebra/AdditiveEuler/Shift.lean",
+   "found": {
+    "line": 110,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.cochainShiftHomologyIso",
+   "file": "HomologicalAlgebra/AdditiveEuler/Shift.lean",
+   "found": {
+    "line": 119,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.cochain_shift_homology_sum",
+   "file": "HomologicalAlgebra/AdditiveEuler/Shift.lean",
+   "found": {
+    "line": 135,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.cochain_euler_endpoints",
+   "file": "HomologicalAlgebra/AdditiveEuler/Cochain.lean",
+   "found": {
+    "line": 54,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.cochain_euler_eq_homology",
+   "file": "HomologicalAlgebra/AdditiveEuler/Cochain.lean",
+   "found": {
+    "line": 77,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.cochain_euler_eq_homology_of_bounded",
+   "file": "HomologicalAlgebra/AdditiveEuler/Cochain.lean",
+   "found": {
+    "line": 86,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.cochain_euler_acyclic",
+   "file": "HomologicalAlgebra/AdditiveEuler/Cochain.lean",
+   "found": {
+    "line": 96,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.cochain_euler_quasiIso",
+   "file": "HomologicalAlgebra/AdditiveEuler/Cochain.lean",
+   "found": {
+    "line": 107,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.invariant_exact_pair_images",
+   "file": "HomologicalAlgebra/AdditiveEuler/HomologySupport.lean",
+   "found": {
+    "line": 41,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.cochain_homology_local_additivity",
+   "file": "HomologicalAlgebra/AdditiveEuler/HomologySupport.lean",
+   "found": {
+    "line": 73,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.cochain_homology_euler_endpoints",
+   "file": "HomologicalAlgebra/AdditiveEuler/HomologySupport.lean",
+   "found": {
+    "line": 111,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.cochain_homology_sum_additive_of_endpoints",
+   "file": "HomologicalAlgebra/AdditiveEuler/HomologySupport.lean",
+   "found": {
+    "line": 137,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdditiveEuler.cochain_homology_sum_additive_of_supported",
+   "file": "HomologicalAlgebra/AdditiveEuler/HomologySupport.lean",
+   "found": {
+    "line": 155,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "HomologicalComplex.cylinder.ι₀_comp_πCompι₀Homotopy_hom",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 30,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.path_hom_π₀",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 56,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.obj",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 73,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.fst",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 77,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.snd",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 81,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.toTarget",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 85,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.sectionMap",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 89,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.section_fst",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 92,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.section_snd",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 95,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.section_toTarget",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 99,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.fst_comp",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 104,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.lift",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 109,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.lift_fst",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 113,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.lift_toTarget",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 117,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.isPullbackAt",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 122,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.contraction",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 179,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.contraction_fst_hom",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 208,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.equivalence",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 213,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CochainComplex.RelativePath.comparison",
+   "file": "HomologicalAlgebra/Cochain/RelativePath.lean",
+   "found": {
+    "line": 220,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.Subobject.quotientIntersectionPair",
+   "file": "HomologicalAlgebra/Abelian/QuotientIntersection.lean",
+   "found": {
+    "line": 46,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.Subobject.quotientIntersectionPair_fst",
+   "file": "HomologicalAlgebra/Abelian/QuotientIntersection.lean",
+   "found": {
+    "line": 58,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.Subobject.quotientIntersectionPair_snd",
+   "file": "HomologicalAlgebra/Abelian/QuotientIntersection.lean",
+   "found": {
+    "line": 66,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.Subobject.quotientIntersectionPair_fac",
+   "file": "HomologicalAlgebra/Abelian/QuotientIntersection.lean",
+   "found": {
+    "line": 74,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.Subobject.quotientIntersectionPair_fac_assoc",
+   "file": "HomologicalAlgebra/Abelian/QuotientIntersection.lean",
+   "found": null
+  },
+  {
+   "name": "CategoryTheory.Subobject.mono_quotientIntersectionPair",
+   "file": "HomologicalAlgebra/Abelian/QuotientIntersection.lean",
+   "found": {
+    "line": 129,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.Bicomplex",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 34,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.Diag",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 38,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.firstRow",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 41,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.firstColumn",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 44,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.diagonalIndex",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 47,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.primitiveIndex",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 53,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.diagonalIndex_surjective",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 58,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.primitiveIndex_of_row",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 68,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.cycleIndex",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 81,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.Product",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 87,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.degree",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 91,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.horizontalIndex",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 95,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.verticalIndex",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 99,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.cycleIndex_horizontal",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 102,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.cycleIndex_vertical",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 107,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.horizontal",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 117,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.vertical",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 123,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.horizontalMap",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 130,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.verticalMap",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 134,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.horizontalMap_apply",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 137,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.verticalMap_apply_zero",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 143,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.verticalMap_apply_pos",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 148,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.differential",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 156,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.differential_eq",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 159,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.differential_apply_zero",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 166,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.differential_apply_pos",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 173,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.horizontal_square",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 182,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.vertical_square",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 196,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.horizontal_vertical_comm",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 224,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.differential_square",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 253,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.productTotal",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 269,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.mapDegree",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 297,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.mapDegree_apply",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 301,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.map_horizontal",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 306,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.map_vertical",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 321,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.map_differential",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 344,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.productTotal_d",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 350,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.nextHorizontalIndex",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 355,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.nextVerticalIndex",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 359,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.productTotal_d_apply_zero",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 363,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.productTotal_d_apply_pos",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 373,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.productTotalMap",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 386,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.productTotalMap_f",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 400,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.mapDegree_id",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 403,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.mapDegree_comp",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 408,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.productTotalMap_id",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 414,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.productTotalMap_comp",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 421,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.row_lift",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 431,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.cycle_equation",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 457,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.horizontal_at_zero",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 474,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.first_kernel",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 482,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.residual_kernel",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 503,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.vertical_square_apply",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 520,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.cycle_equation_step",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 529,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.coordinate",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 541,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.LiftState",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 548,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.initialState_exists",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 555,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.nextState_exists",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 570,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.liftStates",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 606,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.liftStates_first",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 613,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.liftStates_step",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 620,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.primitive",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 633,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.primitive_apply_index",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 641,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.primitive_apply_early",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 665,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.nextHorizontalIndex_diag",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 672,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.nextVerticalIndex_diag_succ",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 676,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.nextVerticalIndex_diag_first_early",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 682,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.primitive_boundary_index",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 690,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.QuadrantProductTotal.acyclic_productTotal",
+   "file": "HomologicalAlgebra/Homology/ProductTotalAcyclicity.lean",
+   "found": {
+    "line": 756,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdmissibleLayer",
+   "file": "HomologicalAlgebra/Abelian/AdmissibleLayers.lean",
+   "found": {
+    "line": 40,
+    "kind": "structure",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdmissibleLayer.LowerBounded",
+   "file": "HomologicalAlgebra/Abelian/AdmissibleLayers.lean",
+   "found": {
+    "line": 71,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdmissibleLayer.lowerInclusion",
+   "file": "HomologicalAlgebra/Abelian/AdmissibleLayers.lean",
+   "found": {
+    "line": 75,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdmissibleLayer.lowerInclusion_monotone",
+   "file": "HomologicalAlgebra/Abelian/AdmissibleLayers.lean",
+   "found": {
+    "line": 80,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdmissibleLayer.lowerCut",
+   "file": "HomologicalAlgebra/Abelian/AdmissibleLayers.lean",
+   "found": {
+    "line": 88,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdmissibleLayer.lowerCut_lower",
+   "file": "HomologicalAlgebra/Abelian/AdmissibleLayers.lean",
+   "found": {
+    "line": 100,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdmissibleLayer.lowerCut_upper",
+   "file": "HomologicalAlgebra/Abelian/AdmissibleLayers.lean",
+   "found": {
+    "line": 104,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdmissibleLayer.lowerCut_galoisConnection",
+   "file": "HomologicalAlgebra/Abelian/AdmissibleLayers.lean",
+   "found": {
+    "line": 109,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdmissibleLayer.lowerCut_monotone",
+   "file": "HomologicalAlgebra/Abelian/AdmissibleLayers.lean",
+   "found": {
+    "line": 121,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdmissibleLayer.le_lowerInclusion_lowerCut",
+   "file": "HomologicalAlgebra/Abelian/AdmissibleLayers.lean",
+   "found": {
+    "line": 126,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdmissibleLayer.lowerCut_lowerInclusion",
+   "file": "HomologicalAlgebra/Abelian/AdmissibleLayers.lean",
+   "found": {
+    "line": 133,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "CategoryTheory.AdmissibleLayer.lowerCutAdjunction",
+   "file": "HomologicalAlgebra/Abelian/AdmissibleLayers.lean",
+   "found": {
+    "line": 142,
+    "kind": "def",
+    "stated": false
+   }
+  }
+ ]
+}

@@ -1,0 +1,3226 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-algebraic-groups",
+ "repo": "FormalFrontier/algebraic-groups",
+ "rev": "cad2dc41da14fb003738f0a032601dfa4d203453",
+ "date": "2026-11-05T19:03:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "algebraic-groups",
+  "description": "Reusable Lean formalization of matrix point groups, finite algebraic group schemes and their coordinate algebras. The library covers unitriangular and upper-triangular groups, diagonal products, split kernels, closed unitriangular stages and their underlying affine-space presentations, finite additive products and positive-stage underlying projections and sections, unitriangular scalar base change and coherence, and selected dimension and geometric results. Coalgebra APIs include field subcoalgebras and finite-dimensional containment, right comodules and finitely generated subcomodule containment, coefficient matrix units, counit ranges and idempotent principal ideal constructors; split free presentations give finite tensor coordinates. Precise hypotheses and exclusions are documented in README.md and the focused mathematical guides. This is not a complete formalization of any cited source.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "AI-assisted development with independent agent review of individual contributions; no human mathematical review is claimed.",
+  "notes": "Mathematical scope and third-party credit appear in README.md and CREDITS.md; this metadata does not assert complete source coverage.",
+  "reviewers": []
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "tool_setup": "Formal Frontier AI agents used Lean and Lake with pinned dependencies."
+   }
+  ],
+  "notes": "AI agents developed mathematical proofs and ordinary-import clients."
+ },
+ "sources": [
+  {
+   "title": "Hopf Algebras",
+   "authors": [
+    "Moss E. Sweedler"
+   ],
+   "type": "book",
+   "relationship": "background",
+   "location": "W. A. Benjamin, 1969"
+  },
+  {
+   "title": "Algebraic Groups",
+   "authors": [
+    "James S. Milne"
+   ],
+   "type": "book",
+   "relationship": "background",
+   "location": "2017 edition"
+  },
+  {
+   "title": "Original algebraic-group and affine-localization constructions",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "original project proofs and earlier project research",
+   "relationship": "adapts"
+  }
+ ],
+ "depends": [
+  {
+   "name": "coherent-modules",
+   "rev": "28c82dc803b6ed4b32dc6921b2292de86689b8a9"
+  },
+  {
+   "name": "general-linear-groups",
+   "rev": "a9b20bb169eefda6e76e33c50d098f4870c021f2"
+  },
+  {
+   "name": "group-theory",
+   "rev": "29001ecda5eff8e37c9ddb712f8abb509c31461d"
+  },
+  {
+   "name": "minimal-primes",
+   "rev": "44b23fb524e62c7f91f7cbe7f07db873cb5c1d66"
+  },
+  {
+   "name": "multivariate-polynomials",
+   "rev": "58f7a9d7846189577c2a46ed1b06161ef71975b1"
+  },
+  {
+   "name": "projective-modules",
+   "rev": "031aeecd871f902b936a2d31eba766327eb4f728"
+  },
+  {
+   "name": "scheme-properties",
+   "rev": "6391288bf75a71f8ed04864598ab7e1905339411"
+  },
+  {
+   "name": "smooth-regularity",
+   "rev": "8e054f1f528a37cf793e68d433db9dd568bead18"
+  }
+ ],
+ "related": [
+  {
+   "name": "general-linear-groups",
+   "relationship": "builds-on"
+  },
+  {
+   "name": "group-theory",
+   "relationship": "builds-on"
+  }
+ ],
+ "highlights": [
+  {
+   "title": "Closed linear embeddings of affine algebraic groups",
+   "statement": "Every affine group scheme locally of finite type over a field K admits a group-scheme morphism into GL_n over K for some natural number n whose underlying scheme morphism is a closed immersion. Nonreduced group schemes are included, with no representation or basis supplied.",
+   "declarations": [
+    {
+     "name": "AlgebraicGeometry.exists_generalLinearGroupHom_isClosedImmersion",
+     "file": "AlgebraicGroups/GroupScheme/ComoduleGeneralLinear.lean",
+     "found": {
+      "line": 512,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "Point representations and comodules",
+   "statement": "For a commutative Hopf algebra over a commutative ring and a fixed arbitrary module, natural point representations on the module's scalar extensions, tested on commutative base algebras in any universe containing the Hopf algebra, correspond bijectively to right-comodule structures on that module.",
+   "declarations": [
+    {
+     "name": "AlgebraicGeometry.PointRepresentation.rightComoduleEquiv",
+     "file": "AlgebraicGroups/GroupScheme/RepresentationEquivalence.lean",
+     "found": {
+      "line": 171,
+      "kind": "def",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "Finite-dimensional subcoalgebra containment",
+   "statement": "Every finite subset of a coalgebra over a field is contained in a finite-dimensional subcoalgebra.",
+   "declarations": [
+    {
+     "name": "Coalgebra.exists_finite_subcoalgebra_of_finite",
+     "file": "AlgebraicGroups/Algebra/Coalgebra/Subcoalgebra/Finite.lean",
+     "found": {
+      "line": 75,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "Finite Hopf algebras and right Hopf modules",
+   "statement": "Every finite-dimensional Hopf algebra H over a field K admits a K-linear functional λ whose multiplication pairing (a, x) ↦ λ(a * x) is nondegenerate in both arguments. The Hopf algebra need not be commutative or cocommutative, and no restriction on the characteristic or assumption of antipode bijectivity is required. Over a commutative semiring, a specified right comodule over a possibly noncommutative semiring Hopf algebra with a given compatible right action and scalar tower is linearly equivalent to its coinvariants tensored with that Hopf algebra, without flatness or finiteness assumptions.",
+   "declarations": [
+    {
+     "name": "HopfAlgebra.exists_nondegenerate_mul",
+     "file": "AlgebraicGroups/Algebra/HopfAlgebra/Frobenius.lean",
+     "found": {
+      "line": 68,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "Coalgebra.RightComodule.coinvariantsTensorEquiv",
+     "file": "AlgebraicGroups/Algebra/Coalgebra/RightComodule/HopfModule/Decomposition.lean",
+     "found": {
+      "line": 180,
+      "kind": "def",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "Bidual coactions and the antipode square",
+   "statement": "For a specified right comodule on a finite projective module over a commutative semiring, canonical bidual evaluation identifies its bidual with the original coaction twisted on coefficients by the antipode square. The coefficient Hopf algebra need not be commutative and its antipode need not be invertible. For commutative coefficients the twist is identity.",
+   "declarations": [
+    {
+     "name": "Coalgebra.RightComodule.dual_dual_coaction_eval",
+     "file": "AlgebraicGroups/Algebra/Coalgebra/RightComodule/Bidual.lean",
+     "found": {
+      "line": 48,
+      "kind": "theorem",
+      "stated": false
+     }
+    },
+    {
+     "name": "Coalgebra.RightComodule.dual_dual_eq_transport",
+     "file": "AlgebraicGroups/Algebra/Coalgebra/RightComodule/Bidual.lean",
+     "found": {
+      "line": 83,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  }
+ ],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "Cartier's theorem",
+   "title_from": "bold",
+   "text": "**Cartier's theorem.** Every commutative Hopf algebra over a characteristic-zero\nfield is reduced, and is smooth if it is finite type, for its given coefficient algebra\nstructure and with independent scalar and carrier universes. See\n[Hopf algebra smoothness](https://github.com/FormalFrontier/algebraic-groups/blob/cad2dc41da14fb003738f0a032601dfa4d203453/AlgebraicGroups/Algebra/HopfAlgebra/Smooth.lean).",
+   "link": {
+    "text": "Hopf algebra smoothness",
+    "url": "https://github.com/FormalFrontier/algebraic-groups/blob/cad2dc41da14fb003738f0a032601dfa4d203453/AlgebraicGroups/Algebra/HopfAlgebra/Smooth.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Linear embeddings of affine algebraic groups",
+   "title_from": "bold",
+   "text": "**Linear embeddings of affine algebraic groups.** Every affine group scheme\nlocally of finite type over a field `K` admits a group-scheme morphism\n`G → GLₙ` for some `n : ℕ` whose underlying scheme morphism is a closed\nimmersion. No basis or representation is supplied, and nonreduced group\nschemes are included.\nSee the [closed linear embedding theorem](https://github.com/FormalFrontier/algebraic-groups/blob/cad2dc41da14fb003738f0a032601dfa4d203453/AlgebraicGroups/GroupScheme/ComoduleGeneralLinear.lean).",
+   "link": {
+    "text": "closed linear embedding theorem",
+    "url": "https://github.com/FormalFrontier/algebraic-groups/blob/cad2dc41da14fb003738f0a032601dfa4d203453/AlgebraicGroups/GroupScheme/ComoduleGeneralLinear.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Surjectivity and faithfully flat coordinates",
+   "title_from": "bold",
+   "text": "**Surjectivity and faithfully flat coordinates.** For homomorphisms of\ngiven affine group schemes locally of finite type, dominance over an\nalgebraically closed field implies surjectivity on all scheme points;\nover any field, schematic dominance suffices. Over any field with reduced\ntarget `H`, dominance or injectivity of the compatible coordinate map\n`A → B` gives `Module.FaithfullyFlat A B` for its given algebra structure.\nThe coordinate presentations may have independent universes.\nFor finite-type commutative Hopf algebras over any field, an injective\nmorphism `f : A →ₐc[K] B` with reduced source coordinate algebra `A` satisfies\n`f.toAlgHom.toRingHom.FaithfullyFlat`, by\n[`BialgHom.faithfullyFlat_of_injective_of_isReduced`](https://github.com/FormalFrontier/algebraic-groups/blob/cad2dc41da14fb003738f0a032601dfa4d203453/AlgebraicGroups/Algebra/HopfAlgebra/FaithfullyFlat/Reduced.lean).\nThis uses the given Hopf structures, in independent scalar and carrier universes.\nSee [surjectivity over algebraically closed fields](https://github.com/FormalFrontier/algebraic-groups/blob/cad2dc41da14fb003738f0a032601dfa4d203453/AlgebraicGroups/GroupScheme/Surjective.lean),\n[schematic dominance over fields](https://github.com/FormalFrontier/algebraic-groups/blob/cad2dc41da14fb003738f0a032601dfa4d203453/AlgebraicGroups/GroupScheme/SurjectiveBaseChange.lean), and\n[faithful flatness of coordinates](https://github.com/FormalFrontier/algebraic-groups/blob/cad2dc41da14fb003738f0a032601dfa4d203453/AlgebraicGroups/GroupScheme/FaithfullyFlatCoordinates.lean).",
+   "link": {
+    "text": "BialgHom.faithfullyFlat_of_injective_of_isReduced",
+    "url": "https://github.com/FormalFrontier/algebraic-groups/blob/cad2dc41da14fb003738f0a032601dfa4d203453/AlgebraicGroups/Algebra/HopfAlgebra/FaithfullyFlat/Reduced.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "BialgHom.faithfullyFlat_of_injective_of_isReduced",
+    "file": "AlgebraicGroups/Algebra/HopfAlgebra/FaithfullyFlat/Reduced.lean",
+    "found": {
+     "line": 50,
+     "kind": "theorem",
+     "stated": false
+    }
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Hopf tensor–quotient equivalences",
+   "title_from": "bold",
+   "text": "**Hopf tensor–quotient equivalences.** For a central bialgebra map from a\ncommutative bialgebra `A` over a commutative ring `R` to a possibly\nnoncommutative Hopf algebra `B`, comultiplication gives a first-factor\n`B`-linear equivalence `B ⊗[A] B ≃ₗ[B] B ⊗[R] (B / (ker ε_A)B)`.\nIn this generality the quotient is only a module quotient, and `A` need\nnot have an antipode. When `B` is commutative,\n`HopfAlgebra.tensorQuotientAlgEquiv` refines the same map to a `B`-algebra\nequivalence on the canonical tensor and quotient algebras. The simp equality\n`tensorQuotientAlgEquiv_toLinearEquiv` recovers `tensorQuotientEquiv`, so its\nfinite-comultiplication formulas compute both directions. For a group-like\n`c`, the inverse sends `(b c) ⊗ [c]` to `b ⊗ c`. Mixed scalar extension is\nthe composition of inverse tensor cancellation, congruence with this\nrefinement, and tensor cancellation. Compatible ordinary algebra maps\nand scalar towers suffice; the commutative coefficient algebra needs no\nHopf structure.\nSee [`HopfAlgebra/TensorQuotient`](https://github.com/FormalFrontier/algebraic-groups/blob/cad2dc41da14fb003738f0a032601dfa4d203453/AlgebraicGroups/Algebra/HopfAlgebra/TensorQuotient.lean).",
+   "link": {
+    "text": "HopfAlgebra/TensorQuotient",
+    "url": "https://github.com/FormalFrontier/algebraic-groups/blob/cad2dc41da14fb003738f0a032601dfa4d203453/AlgebraicGroups/Algebra/HopfAlgebra/TensorQuotient.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "HopfAlgebra/TensorQuotient",
+    "file": "AlgebraicGroups/Algebra/HopfAlgebra/TensorQuotient.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Finite Hopf algebras and Hopf modules",
+   "title_from": "bold",
+   "text": "**Finite Hopf algebras and Hopf modules.** Every finite-dimensional Hopf\nalgebra over a field has a linear functional `λ` such that `λ (a * x)`\nis nondegenerate in both arguments. Its left regular module is injective\n(`HopfAlgebra.injective_self`). The algebra need not be commutative or\ncocommutative, and the field may have any characteristic.\nSee [the Frobenius and self-injectivity theorems](https://github.com/FormalFrontier/algebraic-groups/blob/cad2dc41da14fb003738f0a032601dfa4d203453/AlgebraicGroups/Algebra/HopfAlgebra/Frobenius.lean).\nFor decomposition over a commutative semiring `R`, let\n`H` be a possibly noncommutative semiring with full Hopf algebra structure, and\n`X` a specified right comodule on an additive-commutative-monoid `R`-module `M`.\nFor its given right action with `IsScalarTower R Hᵐᵒᵖ M`, an explicit\n`hX : X.IsHopfModule` gives\n`X.coinvariantsTensorEquiv hX : (X.weightSpace (1 : H)) ⊗[R] H ≃ₗ[R] M`.\nThe forward map is the given action. The inverse `X.toCoinvariantsTensor hX`\ncorestricts the antipode contraction to coinvariants before tensoring it with\n`H` and composing with the coaction. Both inverse identities hold, including\nthe tensor-side identity inside coinvariants tensored with `H` itself. Both\nmaps intertwine the given right action with right multiplication on the `H`\nfactor. Universes are independent; no flatness, finiteness or inverse antipode\nis required.\nSee [the decomposition and its API](https://github.com/FormalFrontier/algebraic-groups/blob/cad2dc41da14fb003738f0a032601dfa4d203453/AlgebraicGroups/Algebra/Coalgebra/RightComodule/HopfModule/Decomposition.lean).",
+   "link": {
+    "text": "the decomposition and its API",
+    "url": "https://github.com/FormalFrontier/algebraic-groups/blob/cad2dc41da14fb003738f0a032601dfa4d203453/AlgebraicGroups/Algebra/Coalgebra/RightComodule/HopfModule/Decomposition.lean",
+    "code": false
+   },
+   "declaration": null
+  }
+ ],
+ "main_results": [
+  {
+   "name": "HopfAlgebra.tensorQuotientAlgEquiv",
+   "file": "AlgebraicGroups/Algebra/HopfAlgebra/TensorQuotient.lean",
+   "found": {
+    "line": 571,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "HopfAlgebra.tensorQuotientAlgEquiv_toLinearEquiv",
+   "file": "AlgebraicGroups/Algebra/HopfAlgebra/TensorQuotient.lean",
+   "found": {
+    "line": 582,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "HopfAlgebra.tensorQuotientEquiv",
+   "file": "AlgebraicGroups/Algebra/HopfAlgebra/TensorQuotient.lean",
+   "found": {
+    "line": 440,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "HopfAlgebra.tensorQuotientEquiv_tmul",
+   "file": "AlgebraicGroups/Algebra/HopfAlgebra/TensorQuotient.lean",
+   "found": {
+    "line": 461,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "HopfAlgebra.tensorQuotientEquiv_symm_tmul",
+   "file": "AlgebraicGroups/Algebra/HopfAlgebra/TensorQuotient.lean",
+   "found": {
+    "line": 470,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.groupSchemeClosedPoints_isClosed_iff_mem_nhdsWithin_closure",
+   "file": "AlgebraicGroups/GroupScheme/ClosedPointSubgroup.lean",
+   "found": {
+    "line": 81,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.groupSchemeClosedPoints_isClosed_of_isLocallyClosed",
+   "file": "AlgebraicGroups/GroupScheme/ClosedPointSubgroup.lean",
+   "found": {
+    "line": 119,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Coalgebra.comul_mem_range_mapIncl_span_of_isGroupLikeElem",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/GroupLikeSpan.lean",
+   "found": {
+    "line": 34,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Coalgebra.span_le_span_coefficients",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/Coefficients.lean",
+   "found": {
+    "line": 69,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Coalgebra.comul_coefficient",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/Coefficients.lean",
+   "found": {
+    "line": 106,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Coalgebra.counit_coefficient",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/Coefficients.lean",
+   "found": {
+    "line": 118,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Coalgebra.comul_mem_range_mapIncl_span_coefficients",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/Coefficients.lean",
+   "found": {
+    "line": 131,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Coalgebra.exists_fg_submodule_comul_right_closed_of_finite",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/FiniteSubcoalgebra.lean",
+   "found": {
+    "line": 234,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Coalgebra.exists_basis_comul_coefficients",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/FiniteSubcoalgebra.lean",
+   "found": {
+    "line": 252,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Coalgebra.exists_fg_submodule_comul_closed_of_finite",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/FiniteSubcoalgebra.lean",
+   "found": {
+    "line": 297,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "HopfAlgebra.coefficientMatrix_mul_antipode",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/CoefficientMatrixUnit.lean",
+   "found": {
+    "line": 140,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "HopfAlgebra.antipode_mul_coefficientMatrix",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/CoefficientMatrixUnit.lean",
+   "found": {
+    "line": 153,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "HopfAlgebra.coefficientMatrixUnit",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/CoefficientMatrixUnit.lean",
+   "found": {
+    "line": 166,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Coalgebra.counit_range_mul_self",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/CounitRange.lean",
+   "found": {
+    "line": 104,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Coalgebra.counit_range_smul_top",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/CounitRange.lean",
+   "found": {
+    "line": 131,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "IsIdempotentElem.coalgebraSpan",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/IdempotentIdeal.lean",
+   "found": {
+    "line": 76,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "TensorProduct.equivFinsuppOfBasisRight_lTensor_apply",
+   "file": "AlgebraicGroups/Algebra/TensorProduct/Split.lean",
+   "found": {
+    "line": 48,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "TensorProduct.sum_tmul_eq_of_split",
+   "file": "AlgebraicGroups/Algebra/TensorProduct/Split.lean",
+   "found": {
+    "line": 61,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "TensorProduct.exists_tensor_coefficients_of_split",
+   "file": "AlgebraicGroups/Algebra/TensorProduct/Split.lean",
+   "found": {
+    "line": 89,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.affineSpecHomOverEquiv",
+   "file": "AlgebraicGroups/GroupScheme/AffineHomOver.lean",
+   "found": {
+    "line": 47,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.additiveGroupHomOverEquiv",
+   "file": "AlgebraicGroups/GroupScheme/AffineHomOver.lean",
+   "found": {
+    "line": 122,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.additiveGroupAffineProductFan_isLimit",
+   "file": "AlgebraicGroups/GroupScheme/AdditiveProductAffineSpace.lean",
+   "found": {
+    "line": 154,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.additiveGroupProductUnderlyingSpecIso",
+   "file": "AlgebraicGroups/GroupScheme/AdditiveProductAffineSpace.lean",
+   "found": {
+    "line": 183,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.additiveGroupProductUnderlyingSpecIso_hom_projection",
+   "file": "AlgebraicGroups/GroupScheme/AdditiveProductAffineSpace.lean",
+   "found": {
+    "line": 191,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.additiveGroupProductUnderlyingAffineSpaceIso",
+   "file": "AlgebraicGroups/GroupScheme/AdditiveProductAffineSpace.lean",
+   "found": {
+    "line": 212,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.additiveGroupProductUnderlyingAffineSpaceIso_coordinate",
+   "file": "AlgebraicGroups/GroupScheme/AdditiveProductAffineSpace.lean",
+   "found": {
+    "line": 221,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.stageProductCoordinatePullback_X",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageProjectionBridge.lean",
+   "found": {
+    "line": 100,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageCoordinateMap_underlying_spec",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageProjectionBridge.lean",
+   "found": {
+    "line": 204,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageCoordinateMap_underlying_affineSpace",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageProjectionBridge.lean",
+   "found": {
+    "line": 218,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.stageProductSectionPullback_inclusion",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageProjectionBridge.lean",
+   "found": {
+    "line": 280,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.stageProductSectionPullback_higher",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageProjectionBridge.lean",
+   "found": {
+    "line": 296,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageCoordinateSectionOver_comp",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageProjectionBridge.lean",
+   "found": {
+    "line": 419,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPolynomial.eraseCoordinates",
+   "file": "AlgebraicGroups/Algebra/LocalizedCoordinateQuotient.lean",
+   "found": {
+    "line": 50,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPolynomial.localizedCoordinateIdeal",
+   "file": "AlgebraicGroups/Algebra/LocalizedCoordinateQuotient.lean",
+   "found": {
+    "line": 79,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPolynomial.quotient_killed",
+   "file": "AlgebraicGroups/Algebra/LocalizedCoordinateQuotient.lean",
+   "found": {
+    "line": 83,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPolynomial.localizedCoordinateQuotientEquiv",
+   "file": "AlgebraicGroups/Algebra/LocalizedCoordinateQuotient.lean",
+   "found": {
+    "line": 201,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPolynomial.localizedCoordinateQuotientEquiv_algebraMap",
+   "file": "AlgebraicGroups/Algebra/LocalizedCoordinateQuotient.lean",
+   "found": {
+    "line": 249,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPolynomial.localizedCoordinateQuotientEquiv_symm_algebraMap",
+   "file": "AlgebraicGroups/Algebra/LocalizedCoordinateQuotient.lean",
+   "found": {
+    "line": 259,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPolynomial.ringKrullDim_localizationAway_of_eval_ne_zero",
+   "file": "AlgebraicGroups/Algebra/FinitePolynomialLocalizationDimension.lean",
+   "found": {
+    "line": 59,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "DiagonalCoordinateRing.ideal_eq_localizedCoordinateIdeal",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalDimension.lean",
+   "found": {
+    "line": 55,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "DiagonalCoordinateRing.localizedPolynomialEquiv",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalDimension.lean",
+   "found": {
+    "line": 80,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "DiagonalCoordinateRing.localizedPolynomialEquiv_diagonal",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalDimension.lean",
+   "found": {
+    "line": 103,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "DiagonalCoordinateRing.localizedPolynomialEquiv_symm_diagonal",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalDimension.lean",
+   "found": {
+    "line": 114,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "DiagonalCoordinateRing.erasedDeterminant_eval_one",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalDimension.lean",
+   "found": {
+    "line": 137,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalCoordinateRing_ringKrullDim",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalDimension.lean",
+   "found": {
+    "line": 178,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupUnderlyingScheme_topologicalKrullDim",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalDimension.lean",
+   "found": {
+    "line": 201,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.baseChange",
+   "file": "AlgebraicGroups/Algebra/UnitriangularBaseChange.lean",
+   "found": {
+    "line": 90,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.baseChange_presentation",
+   "file": "AlgebraicGroups/Algebra/UnitriangularBaseChange.lean",
+   "found": {
+    "line": 95,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.baseChange_tmul_freeEquiv",
+   "file": "AlgebraicGroups/Algebra/UnitriangularBaseChange.lean",
+   "found": {
+    "line": 106,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.baseChange_tmul_one",
+   "file": "AlgebraicGroups/Algebra/UnitriangularBaseChange.lean",
+   "found": {
+    "line": 112,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.baseChange_tmul_entry",
+   "file": "AlgebraicGroups/Algebra/UnitriangularBaseChange.lean",
+   "found": {
+    "line": 141,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.baseChange_symm_entry",
+   "file": "AlgebraicGroups/Algebra/UnitriangularBaseChange.lean",
+   "found": {
+    "line": 164,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.baseChange_symm_algebraMap",
+   "file": "AlgebraicGroups/Algebra/UnitriangularBaseChange.lean",
+   "found": {
+    "line": 174,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.baseChange_self",
+   "file": "AlgebraicGroups/Algebra/UnitriangularBaseChangeCoherence.lean",
+   "found": {
+    "line": 48,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.baseChange_tower",
+   "file": "AlgebraicGroups/Algebra/UnitriangularBaseChangeCoherence.lean",
+   "found": {
+    "line": 68,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.ideal_isHopfIdeal",
+   "file": "AlgebraicGroups/Algebra/UnitriangularCoordinateRing.lean",
+   "found": {
+    "line": 249,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.coordinatePolynomialEquiv",
+   "file": "AlgebraicGroups/Algebra/UnitriangularCoordinateRing.lean",
+   "found": {
+    "line": 443,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.polynomialFreeEquiv",
+   "file": "AlgebraicGroups/Algebra/UnitriangularCoordinateRing.lean",
+   "found": {
+    "line": 576,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.freeEquiv",
+   "file": "AlgebraicGroups/Algebra/UnitriangularCoordinateRing.lean",
+   "found": {
+    "line": 586,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.freeEquiv_variable",
+   "file": "AlgebraicGroups/Algebra/UnitriangularCoordinateRing.lean",
+   "found": {
+    "line": 589,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.finiteType",
+   "file": "AlgebraicGroups/Algebra/UnitriangularCoordinateRing.lean",
+   "found": {
+    "line": 624,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularStageCoordinateRing.ideal",
+   "file": "AlgebraicGroups/Algebra/UnitriangularStageCoordinateRing.lean",
+   "found": {
+    "line": 54,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularStageCoordinateRing.CoordinateRing",
+   "file": "AlgebraicGroups/Algebra/UnitriangularStageCoordinateRing.lean",
+   "found": {
+    "line": 60,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularStageCoordinateRing.mem_stage_iff",
+   "file": "AlgebraicGroups/Algebra/UnitriangularStageCoordinateRing.lean",
+   "found": {
+    "line": 78,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularStageCoordinateRing.ideal_isHopfIdeal_proof",
+   "file": "AlgebraicGroups/Algebra/UnitriangularStageCoordinateRing.lean",
+   "found": {
+    "line": 257,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularStageCoordinateRing.quotientBialgHom",
+   "file": "AlgebraicGroups/Algebra/UnitriangularStageCoordinateRing.lean",
+   "found": {
+    "line": 274,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularStageCoordinateRing.successor",
+   "file": "AlgebraicGroups/Algebra/UnitriangularStageCoordinateRing.lean",
+   "found": {
+    "line": 295,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularStageCoordinateRing.SurvivingPair",
+   "file": "AlgebraicGroups/Algebra/UnitriangularStagePolynomial.lean",
+   "found": {
+    "line": 41,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularStageCoordinateRing.polynomialEquiv",
+   "file": "AlgebraicGroups/Algebra/UnitriangularStagePolynomial.lean",
+   "found": {
+    "line": 188,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularStageCoordinateRing.polynomialEquiv_surviving",
+   "file": "AlgebraicGroups/Algebra/UnitriangularStagePolynomial.lean",
+   "found": {
+    "line": 202,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularStageCoordinateRing.polynomialEquiv_forbidden",
+   "file": "AlgebraicGroups/Algebra/UnitriangularStagePolynomial.lean",
+   "found": {
+    "line": 208,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularStageCoordinateRing.polynomialEquiv_symm_X",
+   "file": "AlgebraicGroups/Algebra/UnitriangularStagePolynomial.lean",
+   "found": {
+    "line": 215,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.unitriangularSubgroup",
+   "file": "AlgebraicGroups/GroupScheme/Unitriangular.lean",
+   "found": {
+    "line": 48,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.map",
+   "file": "AlgebraicGroups/GroupScheme/Unitriangular.lean",
+   "found": {
+    "line": 83,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularGroupScheme",
+   "file": "AlgebraicGroups/GroupScheme/Unitriangular.lean",
+   "found": {
+    "line": 129,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularInclusion",
+   "file": "AlgebraicGroups/GroupScheme/Unitriangular.lean",
+   "found": {
+    "line": 139,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularInclusion_isClosedImmersion",
+   "file": "AlgebraicGroups/GroupScheme/Unitriangular.lean",
+   "found": {
+    "line": 150,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularGroupMulEquivAlgHom",
+   "file": "AlgebraicGroups/GroupScheme/Unitriangular.lean",
+   "found": {
+    "line": 219,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularGroupMulEquivPoints",
+   "file": "AlgebraicGroups/GroupScheme/Unitriangular.lean",
+   "found": {
+    "line": 258,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularGroupPointsIso",
+   "file": "AlgebraicGroups/GroupScheme/Unitriangular.lean",
+   "found": {
+    "line": 343,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularFromGL_natural",
+   "file": "AlgebraicGroups/GroupScheme/Unitriangular.lean",
+   "found": {
+    "line": 302,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularInclusion_point",
+   "file": "AlgebraicGroups/GroupScheme/Unitriangular.lean",
+   "found": {
+    "line": 278,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageScheme",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStages.lean",
+   "found": {
+    "line": 51,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageInclusion",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStages.lean",
+   "found": {
+    "line": 57,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageInclusion_isClosedImmersion",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStages.lean",
+   "found": {
+    "line": 66,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageSuccessor",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStages.lean",
+   "found": {
+    "line": 107,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageSuccessor_isClosedImmersion",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStages.lean",
+   "found": {
+    "line": 116,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStagePointMulEquiv",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStages.lean",
+   "found": {
+    "line": 218,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStagePointsIso",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStages.lean",
+   "found": {
+    "line": 341,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageUnderlyingAffineSpaceIso",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageAffineSpace.lean",
+   "found": {
+    "line": 46,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageUnderlyingAffineSpaceIso_preimage_variable",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageAffineSpace.lean",
+   "found": {
+    "line": 68,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageUnderlyingAffineSpaceIso_preimage_inverse",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageAffineSpace.lean",
+   "found": {
+    "line": 87,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageConjugation",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageNormality.lean",
+   "found": {
+    "line": 120,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageConjugation_inclusion",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageNormality.lean",
+   "found": {
+    "line": 131,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageInclusion_normal",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageNormality.lean",
+   "found": {
+    "line": 159,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageConjugation_point",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageNormality.lean",
+   "found": {
+    "line": 166,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularStageCoordinateRing.coordinate_counit",
+   "file": "AlgebraicGroups/Algebra/UnitriangularStageCoordinates.lean",
+   "found": {
+    "line": 75,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularStageCoordinateRing.coordinate_comul",
+   "file": "AlgebraicGroups/Algebra/UnitriangularStageCoordinates.lean",
+   "found": {
+    "line": 95,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularStageCoordinateRing.coordinateBialgHom",
+   "file": "AlgebraicGroups/Algebra/UnitriangularStageCoordinates.lean",
+   "found": {
+    "line": 163,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageCoordinateMap",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageCoordinates.lean",
+   "found": {
+    "line": 71,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageCoordinateMap_point",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageCoordinates.lean",
+   "found": {
+    "line": 196,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageCoordinateMap_point_natural",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageCoordinates.lean",
+   "found": {
+    "line": 214,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageCoordinateMap_successor_zero",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageCoordinates.lean",
+   "found": {
+    "line": 143,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularStageCoordinateRing.coordinateBialgHom_toAlgHom",
+   "file": "AlgebraicGroups/Algebra/UnitriangularStageKernel.lean",
+   "found": {
+    "line": 37,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularStageCoordinateRing.ideal_succ_eq_sup",
+   "file": "AlgebraicGroups/Algebra/UnitriangularStageKernel.lean",
+   "found": {
+    "line": 46,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularStageCoordinateRing.existsUnique_comp_successor",
+   "file": "AlgebraicGroups/Algebra/UnitriangularStageKernel.lean",
+   "found": {
+    "line": 75,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageSuccessor_existsUnique_scheme",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageKernel.lean",
+   "found": {
+    "line": 142,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularStageCoordinateMap_isPullback",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularStageKernel.lean",
+   "found": {
+    "line": 157,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularUnderlyingAffineSpaceIso",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularGeometry.lean",
+   "found": {
+    "line": 63,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularUnderlyingAffineSpaceIso_preimage_variable",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularGeometry.lean",
+   "found": {
+    "line": 85,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularUnderlyingAffineSpaceIso_preimage_inverse",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularGeometry.lean",
+   "found": {
+    "line": 104,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularCoordinateRing_standardSmooth",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularGeometry.lean",
+   "found": {
+    "line": 124,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularCoordinateRing_finitePresentation",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularGeometry.lean",
+   "found": {
+    "line": 129,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularGroupUnderlyingScheme_smooth",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularGeometry.lean",
+   "found": {
+    "line": 135,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularGroupUnderlyingScheme_geometricallyIntegral",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularGeometry.lean",
+   "found": {
+    "line": 145,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularGroupUnderlyingScheme_isIntegral",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularGeometry.lean",
+   "found": {
+    "line": 162,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.card_strictUpperPair",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularGeometry.lean",
+   "found": {
+    "line": 169,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularCoordinateRing_ringKrullDim",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularGeometry.lean",
+   "found": {
+    "line": 181,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularGroupUnderlyingScheme_topologicalKrullDim",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularGeometry.lean",
+   "found": {
+    "line": 193,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularGroupUnderlyingScheme_topologicalKrullDim_fin",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularGeometry.lean",
+   "found": {
+    "line": 203,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalSubgroup",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularCentralFiltration.lean",
+   "found": {
+    "line": 135,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.mem_superdiagonalSubgroup",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularCentralFiltration.lean",
+   "found": {
+    "line": 163,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalSubgroup_one",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularCentralFiltration.lean",
+   "found": {
+    "line": 171,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalSubgroup_zero",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularCentralFiltration.lean",
+   "found": {
+    "line": 177,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalSubgroup_antitone",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularCentralFiltration.lean",
+   "found": {
+    "line": 183,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalSubgroup_succ_le",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularCentralFiltration.lean",
+   "found": {
+    "line": 189,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalSubgroup_end",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularCentralFiltration.lean",
+   "found": {
+    "line": 194,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalSubgroup_normal",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularCentralFiltration.lean",
+   "found": {
+    "line": 209,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalSubgroup_commutator",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularCentralFiltration.lean",
+   "found": {
+    "line": 233,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.descendingSeries",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularCentralFiltration.lean",
+   "found": {
+    "line": 286,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.descendingSeries_isDescendingCentralSeries",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularCentralFiltration.lean",
+   "found": {
+    "line": 292,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.descendingSeries_end",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularCentralFiltration.lean",
+   "found": {
+    "line": 306,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.instIsNilpotent",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularCentralFiltration.lean",
+   "found": {
+    "line": 321,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.nilpotencyClass_le",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularCentralFiltration.lean",
+   "found": {
+    "line": 330,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.map_mem_superdiagonalSubgroup",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularCentralFiltration.lean",
+   "found": {
+    "line": 343,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalSubgroup_map",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularCentralFiltration.lean",
+   "found": {
+    "line": 354,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalIndex",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularSuperdiagonalQuotients.lean",
+   "found": {
+    "line": 41,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalCoordinateHom",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularSuperdiagonalQuotients.lean",
+   "found": {
+    "line": 82,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalCoordinateHom_apply",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularSuperdiagonalQuotients.lean",
+   "found": {
+    "line": 98,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalCoordinateHom_ker",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularSuperdiagonalQuotients.lean",
+   "found": {
+    "line": 107,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalCoordinateHom_surjective",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularSuperdiagonalQuotients.lean",
+   "found": {
+    "line": 157,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalQuotientEquiv",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularSuperdiagonalQuotients.lean",
+   "found": {
+    "line": 197,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalQuotientEquiv_mk",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularSuperdiagonalQuotients.lean",
+   "found": {
+    "line": 206,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalStageMap",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularSuperdiagonalQuotients.lean",
+   "found": {
+    "line": 217,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalCoordinateMap",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularSuperdiagonalQuotients.lean",
+   "found": {
+    "line": 225,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalCoordinateHom_natural",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularSuperdiagonalQuotients.lean",
+   "found": {
+    "line": 240,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalQuotientMap",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularSuperdiagonalQuotients.lean",
+   "found": {
+    "line": 253,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalQuotientEquiv_natural",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularSuperdiagonalQuotients.lean",
+   "found": {
+    "line": 267,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.elementary",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularNilpotencyClass.lean",
+   "found": {
+    "line": 41,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.elementary_gl",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularNilpotencyClass.lean",
+   "found": {
+    "line": 53,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.elementary_coe",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularNilpotencyClass.lean",
+   "found": {
+    "line": 58,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.elementary_commutator",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularNilpotencyClass.lean",
+   "found": {
+    "line": 65,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.nilpotencyClass_eq_of_nontrivial",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularNilpotencyClass.lean",
+   "found": {
+    "line": 118,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.nilpotencyClass_eq_zero_of_subsingleton",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularNilpotencyClass.lean",
+   "found": {
+    "line": 146,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.elementary_mem_lowerCentralSeries_of_distance",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularLowerCentralSeries.lean",
+   "found": {
+    "line": 39,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.elementary_mem_superdiagonalSubgroup",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularLowerCentralSeries.lean",
+   "found": {
+    "line": 61,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalSubgroup_le_of_elementary_mem",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularLowerCentralSeries.lean",
+   "found": {
+    "line": 179,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.lowerCentralSeries_eq_superdiagonalSubgroup",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularLowerCentralSeries.lean",
+   "found": {
+    "line": 225,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalSubgroup_commutator_eq",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularDerivedSeries.lean",
+   "found": {
+    "line": 40,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.derivedSeries_eq_superdiagonalSubgroup",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularDerivedSeries.lean",
+   "found": {
+    "line": 61,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.superdiagonalSubgroup_eq_bot_iff",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularDerivedSeries.lean",
+   "found": {
+    "line": 79,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.derivedSeries_eq_bot_iff",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularDerivedSeries.lean",
+   "found": {
+    "line": 100,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.pow_card_eq_zero_of_upperTriangular_diag_zero",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularExponent.lean",
+   "found": {
+    "line": 46,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.pow_prime_pow_eq_one",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularExponent.lean",
+   "found": {
+    "line": 110,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.exists_pow_ne_one_of_pos_lt",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularExponent.lean",
+   "found": {
+    "line": 138,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.forall_pow_prime_pow_eq_one_iff",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularExponent.lean",
+   "found": {
+    "line": 197,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.exponent_dvd_prime_pow_iff",
+   "file": "AlgebraicGroups/GroupTheory/UnitriangularExponent.lean",
+   "found": {
+    "line": 212,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.diagonalSubgroup",
+   "file": "AlgebraicGroups/GroupTheory/Diagonal.lean",
+   "found": {
+    "line": 52,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DiagonalGroup.unitsEquiv",
+   "file": "AlgebraicGroups/GroupTheory/Diagonal.lean",
+   "found": {
+    "line": 129,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.DiagonalGroup.map",
+   "file": "AlgebraicGroups/GroupTheory/Diagonal.lean",
+   "found": {
+    "line": 166,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "DiagonalCoordinateRing.ideal_isHopfIdeal",
+   "file": "AlgebraicGroups/Algebra/DiagonalCoordinateRing.lean",
+   "found": {
+    "line": 189,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "DiagonalCoordinateRing.universal_detInverse",
+   "file": "AlgebraicGroups/Algebra/DiagonalCoordinateRing.lean",
+   "found": {
+    "line": 94,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "DiagonalCoordinateRing.finiteType",
+   "file": "AlgebraicGroups/Algebra/DiagonalCoordinateRing.lean",
+   "found": {
+    "line": 192,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupScheme",
+   "file": "AlgebraicGroups/GroupScheme/Diagonal.lean",
+   "found": {
+    "line": 66,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalInclusion_isClosedImmersion",
+   "file": "AlgebraicGroups/GroupScheme/Diagonal.lean",
+   "found": {
+    "line": 84,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupMulEquivPoints",
+   "file": "AlgebraicGroups/GroupScheme/Diagonal.lean",
+   "found": {
+    "line": 191,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalInclusion_point",
+   "file": "AlgebraicGroups/GroupScheme/Diagonal.lean",
+   "found": {
+    "line": 203,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupPointsIso",
+   "file": "AlgebraicGroups/GroupScheme/Diagonal.lean",
+   "found": {
+    "line": 266,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupUnitsEquivPoints",
+   "file": "AlgebraicGroups/GroupScheme/Diagonal.lean",
+   "found": {
+    "line": 289,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPolynomial.card_le_card_of_unique_common_zero",
+   "file": "AlgebraicGroups/Algebra/AlgebraicallyClosedCommonZero.lean",
+   "found": {
+    "line": 63,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPolynomial.exists_common_zero_ne",
+   "file": "AlgebraicGroups/Algebra/AlgebraicallyClosedCommonZero.lean",
+   "found": {
+    "line": 95,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPolynomial.exists_nonzero_common_zero_of_isHomogeneous",
+   "file": "AlgebraicGroups/Algebra/AlgebraicallyClosedCommonZero.lean",
+   "found": {
+    "line": 115,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.upperTriangularSubgroup",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 54,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UpperTriangularGroup.map",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 86,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UpperTriangularGroup.isUnit_entry",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 114,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UpperTriangularGroup.diagonal",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 122,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UpperTriangularGroup.diagonalSection",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 157,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UnitriangularGroup.inUpperTriangular",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 192,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UpperTriangularGroup.range_unitriangular",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 215,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UpperTriangularGroup.kernelEquiv",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 236,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UpperTriangularGroup.diagonalAction",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 255,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UpperTriangularGroup.diagonalAction_apply",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 388,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UpperTriangularGroup.unipotentPart",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 276,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UpperTriangularGroup.unipotentPart_apply",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 365,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UpperTriangularGroup.semidirEquiv",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 319,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UpperTriangularGroup.semidirEquiv_mul_formula",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 484,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UpperTriangularGroup.semidirMap",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 451,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UpperTriangularGroup.diagonal_map",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 174,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UpperTriangularGroup.semidirEquiv_map",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 460,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.UpperTriangularGroup.semidirEquiv_symm_map",
+   "file": "AlgebraicGroups/GroupTheory/UpperTriangular.lean",
+   "found": {
+    "line": 467,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UpperTriangularCoordinateRing.CoordinateRing",
+   "file": "AlgebraicGroups/Algebra/UpperTriangularCoordinateRing.lean",
+   "found": {
+    "line": 56,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "UpperTriangularCoordinateRing.ideal",
+   "file": "AlgebraicGroups/Algebra/UpperTriangularCoordinateRing.lean",
+   "found": {
+    "line": 52,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "UpperTriangularCoordinateRing.quotient",
+   "file": "AlgebraicGroups/Algebra/UpperTriangularCoordinateRing.lean",
+   "found": {
+    "line": 59,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "UpperTriangularCoordinateRing.quotient_lower",
+   "file": "AlgebraicGroups/Algebra/UpperTriangularCoordinateRing.lean",
+   "found": {
+    "line": 74,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UpperTriangularCoordinateRing.universal",
+   "file": "AlgebraicGroups/Algebra/UpperTriangularCoordinateRing.lean",
+   "found": {
+    "line": 79,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "UpperTriangularCoordinateRing.universal_detInverse",
+   "file": "AlgebraicGroups/Algebra/UpperTriangularCoordinateRing.lean",
+   "found": {
+    "line": 95,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UpperTriangularCoordinateRing.ideal_isHopfIdeal",
+   "file": "AlgebraicGroups/Algebra/UpperTriangularCoordinateRing.lean",
+   "found": {
+    "line": 184,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "UpperTriangularCoordinateRing.finiteType",
+   "file": "AlgebraicGroups/Algebra/UpperTriangularCoordinateRing.lean",
+   "found": {
+    "line": 187,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularGroupScheme",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangular.lean",
+   "found": {
+    "line": 66,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularInclusion",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangular.lean",
+   "found": {
+    "line": 76,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularInclusion_isClosedImmersion",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangular.lean",
+   "found": {
+    "line": 88,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularToGL",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangular.lean",
+   "found": {
+    "line": 96,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularFromGL",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangular.lean",
+   "found": {
+    "line": 108,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularGroupMulEquivAlgHom",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangular.lean",
+   "found": {
+    "line": 146,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularGroupMulEquivPoints",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangular.lean",
+   "found": {
+    "line": 189,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularInclusion_point",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangular.lean",
+   "found": {
+    "line": 202,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularToGL_natural",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangular.lean",
+   "found": {
+    "line": 217,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularFromGL_natural",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangular.lean",
+   "found": {
+    "line": 226,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularGroupPointsIso",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangular.lean",
+   "found": {
+    "line": 260,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupProjectionCoordinateMap",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalProduct.lean",
+   "found": {
+    "line": 57,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupProjectionBialgHom",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalProduct.lean",
+   "found": {
+    "line": 108,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupProjection",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalProduct.lean",
+   "found": {
+    "line": 125,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupProjection_point",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalProduct.lean",
+   "found": {
+    "line": 136,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupHomUnits",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalProduct.lean",
+   "found": {
+    "line": 184,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.multiplicativeGroupHomUnits",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalProduct.lean",
+   "found": {
+    "line": 194,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupProjection_globalUnit",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalProduct.lean",
+   "found": {
+    "line": 264,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupProductFan_forget_isLimit",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalProduct.lean",
+   "found": {
+    "line": 332,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupProductFan_isLimit",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalProduct.lean",
+   "found": {
+    "line": 341,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupSchemeProductIso",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalProduct.lean",
+   "found": {
+    "line": 347,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupSchemeProductIso_hom_π",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalProduct.lean",
+   "found": {
+    "line": 352,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupSchemeProductIso_inv_projection",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalProduct.lean",
+   "found": {
+    "line": 359,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupSchemeEmptyIsTerminal",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalProduct.lean",
+   "found": {
+    "line": 366,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupSchemeFin0IsTerminal",
+   "file": "AlgebraicGroups/GroupScheme/DiagonalProduct.lean",
+   "found": {
+    "line": 373,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularDiagonalCoordinateMap",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSplitKernel.lean",
+   "found": {
+    "line": 54,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularDiagonalSectionCoordinateMap",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSplitKernel.lean",
+   "found": {
+    "line": 61,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularUnitriangularCoordinateMap",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSplitKernel.lean",
+   "found": {
+    "line": 69,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularDiagonalProjection",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSplitKernel.lean",
+   "found": {
+    "line": 286,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularDiagonalSection",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSplitKernel.lean",
+   "found": {
+    "line": 292,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularToUpperTriangular",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSplitKernel.lean",
+   "found": {
+    "line": 298,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularDiagonal_section",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSplitKernel.lean",
+   "found": {
+    "line": 349,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularToUpperTriangular_isClosedImmersion",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSplitKernel.lean",
+   "found": {
+    "line": 317,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularToUpperTriangular_inclusion",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSplitKernel.lean",
+   "found": {
+    "line": 370,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularDiagonalSection_inclusion",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSplitKernel.lean",
+   "found": {
+    "line": 390,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularDiagonalSquare_isPushout",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSplitKernel.lean",
+   "found": {
+    "line": 469,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularDiagonalSquare_isPullback",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSplitKernel.lean",
+   "found": {
+    "line": 563,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularDiagonalSquare_isPullback_over",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSplitKernel.lean",
+   "found": {
+    "line": 581,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularDiagonalSquare_isPullback_group",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSplitKernel.lean",
+   "found": {
+    "line": 607,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularDiagonalProjection_point",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSplitKernel.lean",
+   "found": {
+    "line": 722,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularDiagonalSection_point",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSplitKernel.lean",
+   "found": {
+    "line": 742,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularToUpperTriangular_point",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSplitKernel.lean",
+   "found": {
+    "line": 762,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularSection_over",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 48,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularDiagonalConj",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 57,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularDiagonalConj_lift_comp_inclusion",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 68,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularSectionFirstIso",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 84,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularCoordinateChange",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 127,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularUFirstIso",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 154,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularUFirstIso_hom",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 161,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularUFirstIso_hom_comp_diagonal",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 183,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularUFirstIso_inv_comp_snd",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 203,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularUFirstIso_inv_fst_comp_inclusion",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 234,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularUFirstIso_mul_lift",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 264,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularUFirstTwistedMul",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 279,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularUFirstTwistedMul_comp_hom",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 301,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularDiagonalConj_point",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 325,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularUFirstIso_point",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 361,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularUFirstIso_inv_point",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 379,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularUFirstIso_inv_fst_point",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 406,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularUFirstIso_inv_snd_point",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularSchemeProduct.lean",
+   "found": {
+    "line": 417,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.multiplicativeGroupUnderlyingScheme_smooth",
+   "file": "AlgebraicGroups/GroupScheme/FiniteTriangularGeometry.lean",
+   "found": {
+    "line": 87,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.multiplicativeGroupUnderlyingScheme_geometricallyIntegral",
+   "file": "AlgebraicGroups/GroupScheme/FiniteTriangularGeometry.lean",
+   "found": {
+    "line": 105,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.multiplicativeGroupUnderlyingScheme_isIntegral",
+   "file": "AlgebraicGroups/GroupScheme/FiniteTriangularGeometry.lean",
+   "found": {
+    "line": 331,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupUnderlyingScheme_smooth",
+   "file": "AlgebraicGroups/GroupScheme/FiniteTriangularGeometry.lean",
+   "found": {
+    "line": 270,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupUnderlyingScheme_geometricallyIntegral",
+   "file": "AlgebraicGroups/GroupScheme/FiniteTriangularGeometry.lean",
+   "found": {
+    "line": 280,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.diagonalGroupUnderlyingScheme_isIntegral",
+   "file": "AlgebraicGroups/GroupScheme/FiniteTriangularGeometry.lean",
+   "found": {
+    "line": 336,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularGroupUnderlyingScheme_smooth",
+   "file": "AlgebraicGroups/GroupScheme/FiniteTriangularGeometry.lean",
+   "found": {
+    "line": 305,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularGroupUnderlyingScheme_geometricallyIntegral",
+   "file": "AlgebraicGroups/GroupScheme/FiniteTriangularGeometry.lean",
+   "found": {
+    "line": 316,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularGroupUnderlyingScheme_isIntegral",
+   "file": "AlgebraicGroups/GroupScheme/FiniteTriangularGeometry.lean",
+   "found": {
+    "line": 344,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.upperTriangularIndicesEquiv",
+   "file": "AlgebraicGroups/LinearAlgebra/Matrix/UpperTriangularIndices.lean",
+   "found": {
+    "line": 46,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.upperTriangularIndicesEquiv_diagonal",
+   "file": "AlgebraicGroups/LinearAlgebra/Matrix/UpperTriangularIndices.lean",
+   "found": {
+    "line": 63,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.upperTriangularIndicesEquiv_strict",
+   "file": "AlgebraicGroups/LinearAlgebra/Matrix/UpperTriangularIndices.lean",
+   "found": {
+    "line": 68,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.upperTriangularIndicesEquiv_symm_inl",
+   "file": "AlgebraicGroups/LinearAlgebra/Matrix/UpperTriangularIndices.lean",
+   "found": {
+    "line": 73,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.upperTriangularIndicesEquiv_symm_inr",
+   "file": "AlgebraicGroups/LinearAlgebra/Matrix/UpperTriangularIndices.lean",
+   "found": {
+    "line": 78,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.upperTriangularIndicesEquiv_coordinates",
+   "file": "AlgebraicGroups/LinearAlgebra/Matrix/UpperTriangularIndices.lean",
+   "found": {
+    "line": 84,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.upperTriangularRetainedEquiv",
+   "file": "AlgebraicGroups/LinearAlgebra/Matrix/UpperTriangularIndices.lean",
+   "found": {
+    "line": 92,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.upperTriangularRetainedEquiv_val",
+   "file": "AlgebraicGroups/LinearAlgebra/Matrix/UpperTriangularIndices.lean",
+   "found": {
+    "line": 97,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.upperTriangularRetainedEquiv_symm_val",
+   "file": "AlgebraicGroups/LinearAlgebra/Matrix/UpperTriangularIndices.lean",
+   "found": {
+    "line": 102,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.upperTriangularRetainedIndicesEquiv",
+   "file": "AlgebraicGroups/LinearAlgebra/Matrix/UpperTriangularIndices.lean",
+   "found": {
+    "line": 109,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.upperTriangularRetainedIndicesEquiv_symm_inl_val",
+   "file": "AlgebraicGroups/LinearAlgebra/Matrix/UpperTriangularIndices.lean",
+   "found": {
+    "line": 114,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.upperTriangularRetainedIndicesEquiv_symm_inr_val",
+   "file": "AlgebraicGroups/LinearAlgebra/Matrix/UpperTriangularIndices.lean",
+   "found": {
+    "line": 119,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.card_upperTriangularIndices",
+   "file": "AlgebraicGroups/LinearAlgebra/Matrix/UpperTriangularIndices.lean",
+   "found": {
+    "line": 128,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Matrix.card_upperTriangularRetainedIndices",
+   "file": "AlgebraicGroups/LinearAlgebra/Matrix/UpperTriangularIndices.lean",
+   "found": {
+    "line": 138,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UpperTriangularCoordinateRing.retainedIndices",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularDimension.lean",
+   "found": {
+    "line": 54,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "UpperTriangularCoordinateRing.ideal_eq_localizedCoordinateIdeal",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularDimension.lean",
+   "found": {
+    "line": 59,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UpperTriangularCoordinateRing.localizedPolynomialEquiv",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularDimension.lean",
+   "found": {
+    "line": 83,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "UpperTriangularCoordinateRing.localizedPolynomialEquiv_entry",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularDimension.lean",
+   "found": {
+    "line": 92,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UpperTriangularCoordinateRing.localizedPolynomialEquiv_symm_entry",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularDimension.lean",
+   "found": {
+    "line": 119,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UpperTriangularCoordinateRing.erasedDeterminant_eval_one",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularDimension.lean",
+   "found": {
+    "line": 132,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularCoordinateRing_ringKrullDim",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularDimension.lean",
+   "found": {
+    "line": 180,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.upperTriangularGroupUnderlyingScheme_topologicalKrullDim",
+   "file": "AlgebraicGroups/GroupScheme/UpperTriangularDimension.lean",
+   "found": {
+    "line": 209,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.comul_entry",
+   "file": "AlgebraicGroups/Algebra/UnitriangularHopfBaseChange.lean",
+   "found": {
+    "line": 76,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.baseChange_counit",
+   "file": "AlgebraicGroups/Algebra/UnitriangularHopfBaseChange.lean",
+   "found": {
+    "line": 91,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.baseChange_comul",
+   "file": "AlgebraicGroups/Algebra/UnitriangularHopfBaseChange.lean",
+   "found": {
+    "line": 115,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.baseChangeBialgEquiv",
+   "file": "AlgebraicGroups/Algebra/UnitriangularHopfBaseChange.lean",
+   "found": {
+    "line": 152,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.baseChangeBialgEquiv_apply",
+   "file": "AlgebraicGroups/Algebra/UnitriangularHopfBaseChange.lean",
+   "found": {
+    "line": 175,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "UnitriangularCoordinateRing.baseChange_antipode",
+   "file": "AlgebraicGroups/Algebra/UnitriangularHopfBaseChange.lean",
+   "found": {
+    "line": 187,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularGroupSchemeBaseChangeIso",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularBaseChange.lean",
+   "found": {
+    "line": 71,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularGroupSchemeBaseChangeIso_hom_left",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularBaseChange.lean",
+   "found": {
+    "line": 96,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularGroupSchemeBaseChangeIso_hom_over",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularBaseChange.lean",
+   "found": {
+    "line": 104,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularBaseMap",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularBaseChangeCoherence.lean",
+   "found": {
+    "line": 62,
+    "kind": "abbrev",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularBaseMap_comp",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularBaseChangeCoherence.lean",
+   "found": {
+    "line": 66,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularBaseMap_self",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularBaseChangeCoherence.lean",
+   "found": {
+    "line": 73,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularGroupSchemeBaseChangeTowerIso",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularBaseChangeCoherence.lean",
+   "found": {
+    "line": 79,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularGroupSchemeBaseChangeSelfIso",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularBaseChangeCoherence.lean",
+   "found": {
+    "line": 95,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularGroupSchemeBaseChangeIso_self",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularBaseChangeCoherence.lean",
+   "found": {
+    "line": 527,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "AlgebraicGeometry.unitriangularGroupSchemeBaseChangeIso_tower",
+   "file": "AlgebraicGroups/GroupScheme/UnitriangularBaseChangeCoherence.lean",
+   "found": {
+    "line": 566,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Subcoalgebra",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/Subcoalgebra.lean",
+   "found": {
+    "line": 42,
+    "kind": "structure",
+    "stated": false
+   }
+  },
+  {
+   "name": "Subcoalgebra.mk'",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/Subcoalgebra.lean",
+   "found": {
+    "line": 134,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Subcoalgebra.coalgebra",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/Subcoalgebra/Coalgebra.lean",
+   "found": {
+    "line": 197,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "Subcoalgebra.subtype",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/Subcoalgebra/Hom.lean",
+   "found": {
+    "line": 100,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CoalgHom.codRestrict",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/Subcoalgebra/Hom.lean",
+   "found": {
+    "line": 145,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "CoalgHom.existsUnique_subtype_comp_iff",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/Subcoalgebra/Hom.lean",
+   "found": {
+    "line": 220,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Coalgebra.exists_finite_subcoalgebra",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/Subcoalgebra/Finite.lean",
+   "found": {
+    "line": 61,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "Coalgebra.exists_finite_subcoalgebra_of_finite",
+   "file": "AlgebraicGroups/Algebra/Coalgebra/Subcoalgebra/Finite.lean",
+   "found": {
+    "line": 75,
+    "kind": "theorem",
+    "stated": false
+   }
+  }
+ ]
+}

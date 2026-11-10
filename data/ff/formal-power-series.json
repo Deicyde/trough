@@ -1,0 +1,1046 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-formal-power-series",
+ "repo": "FormalFrontier/formal-power-series",
+ "rev": "29bdab8c1f57472100a579c97a589effaea11987",
+ "date": "2026-11-04T13:56:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "Formal Power Series",
+  "description": "Integral weighted negative logarithmic derivatives of native formal-power-series units over arbitrary commutative rings, with group laws, naturality and finite coefficient formulas; and coefficientwise ideal-adically restricted native multivariate power series with finite polynomial reductions, regular-principal internal kernels. Polynomial completion over any commutative coefficient ring is the algebra of series over its adic completion with polynomial images at every original quotient precision; coefficient transport recovers the original restricted-series ring equivalence for adically complete coefficients. Ideal-preserving coefficient maps and arbitrary variable maps on these completed-coefficient series give functorial ring maps with finite source-row fiber sums, including infinite fibers. The polynomial-completion comparison is natural in both directions, with completed-scalar compatibility and raw row-kernel containment, without original completeness or finiteness assumptions. The restricted subring also has a coefficient-ring algebra structure, all-level surjective scalar-linear polynomial reductions, and regular-principal module-quotient equivalences, including a separate native-integer API for default module instances. Over adically complete coefficient rings, every polynomial linear endomorphism extends to the restricted series, with finite-level and kernel-preserving uniqueness laws. Independently of completeness, coefficientwise reduction kernels multiply into the kernel at the sum of their levels, including finite-sum laws. For adically complete coefficient rings, units of the restricted subring are detected by the first polynomial reduction or by constant and nonconstant coefficient criteria, with no finite-variable restriction. Over finitely many variables, restrictedness has a degree-cutoff criterion; if the coefficient ideal is finitely generated, every reduction kernel is the intrinsic algebraic image ideal of its corresponding ideal power. Separate restricted-series modules add coefficient content, intrinsic actual-ring leading terms, division under adic/valuation hypotheses and conditional ideal generation by a finite primitive family. A generic support leaf compares cofinal ideal-adic filtrations on arbitrary modules. Change-of-ideal maps and surjective polynomial reduction work for arbitrary ideals and variables. Local-ring polynomial residue is compatible with valuation-domain residue; injective first-variable regrouping has polynomial and finite-variable reindexing interfaces. Intrinsic leading products and singleton division have separate Hausdorff uniqueness and complete primitive-existence interfaces; first-variable division yields finite-polynomial remainders. A supplied division of X₀^d by a divisor with regrouped residue degree d and nonzero scalar top, with actual remainder support below d, gives constant-unit quotient residue; radical equality and completeness reflect it to a unit. With a nonzero principal-adic parameter in the maximal ideal of a commutative valuation domain, radical equality and completeness, a restricted series whose regrouped residue polynomial has degree d and nonzero scalar top coefficient admits a unique unit multiplier and monic first-variable polynomial of degree d, even among competing multipliers not assumed units; coefficient primitivity is derived from the top term.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "The library's Lean mathematics has received independent review. Source correspondence and coverage are separate decisions.",
+  "notes": "Proofs in the checked Lean sources depend only on propext, Classical.choice and Quot.sound, including private declarations. README.md and API.md describe the public API and its limits.",
+  "reviewers": [
+   "Formal Frontier independent mathematical contribution reviewers"
+  ]
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "framework": "OpenAI Codex CLI / Formal Frontier Hive",
+    "tool_setup": "Formal Frontier AI contributors formalized the weighted derivative using mathlib's native power-series APIs and ordinary-import clients. Prism authored the original weighted-derivative proof expression; other contributors adapted its argument, and Folio contributed derivative documentation. Distinct contributors developed the restricted-series carrier, principal kernel, inverse-limit, scalar-linear quotient, linear extension and kernel-filtration proofs; others developed content, selected factorization, leading terms, monic parameters, restricted division, cofinal comparison and conditional primitive ideal generation. The completed-coefficient polynomial comparison reuses the full AdicModules direct-sum completion equivalence and its canonical restriction-of-scalars and completed coefficient-map interfaces. Coefficient change uses Mathlib's coefficientwise power-series maps; arbitrary variable maps use its polynomial renaming and finite dependent direct-sum pushforward, completed through that same whole AdicModules equivalence rather than through the polynomial-completion comparison. Contributors to the finite-variable degree criterion, its infinite-variable counterexample and the finite-generation kernel argument were distinct from those who formalized the results and wrote ordinary-import clients. Further contributors developed and formalized restricted-subring unit detection, using the geometric inverse and kernel-filtration APIs, and wrote its ordinary-import client. The pinned MultivariatePolynomials library supplies polynomial linear-division and monic-lifting algorithms. The antidiagonal multiplication method adapts Jz Pan's Apache-2.0 mathlib argument."
+   }
+  ],
+  "notes": ""
+ },
+ "sources": [
+  {
+   "title": "The K-book: An Introduction to Algebraic K-theory",
+   "authors": [
+    "Charles A. Weibel"
+   ],
+   "type": "book",
+   "relationship": "adapts",
+   "location": "Section II.4 and Exercise 4.6"
+  },
+  {
+   "title": "Foundations of Rigid Geometry I",
+   "authors": [
+    "Kazuhiro Fujiwara",
+    "Fumiharu Kato"
+   ],
+   "type": "book",
+   "relationship": "background"
+  }
+ ],
+ "depends": [
+  {
+   "name": "adic-modules",
+   "rev": "5fbe4fe95f2970d885cbaf98934404b55eb77bd7"
+  },
+  {
+   "name": "coherent-modules",
+   "rev": "3ecdd76a4a629991718f6bf3f4d290fffb81973f"
+  },
+  {
+   "name": "multivariate-polynomials",
+   "rev": "5d58abb977f3281238ee5b4f37303a275b1b2426"
+  }
+ ],
+ "related": [],
+ "highlights": [],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "Weighted unit derivative",
+   "title_from": "heading",
+   "text": "Over an arbitrary commutative ring `R`, for a native unit\n`f : (PowerSeries R)ˣ`, `negXLogDeriv f = -X * f' * f⁻¹`, weighted by\n**negative `X`**. Products become sums, inverses become negatives and integer\npowers become integer multiples, naturally under coefficient-ring homomorphisms.\nIntegral convolution works without normalization; a division-free **forward**\nrecurrence for derivative coefficients requires constant coefficient one.\nLinear factors `1 - C a * X` give signed power sums for finite products,\nincluding inverse factors and the empty family.\n\nThis is neither reconstruction nor injectivity: constant units and, under\n`[CharP R p]`, `p`-th powers lie in the kernel; even normalized nonidentity\nunits can do so. No formal logarithm, lambda/Witt structure, splitting extension\nor Adams operation is asserted. See the [full formulas and limitations](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/RESULTS.md#weighted-unit-derivative)\nand [source](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/UnitLogDerivative.lean).",
+   "link": null,
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Rational Artin–Hasse exponential",
+   "title_from": "heading",
+   "text": "The rational formal construction is defined for every natural `p` and has\nconstant and linear coefficients one. For `2 ≤ p` (composite `p` allowed), it is\n`exp (∑ i ≥ 0, X^(p^i) / p^i)`; the coefficient recurrence together with\n`a_0 = 1` determines it uniquely. The recurrence fails at `p = 1`, degree two.\n\nFor **prime `p` only**, its degree-`k` coefficient equals that of every finite\nEuler product of `(1 - X^n)^(-μ(n)/n)` over positive `n ≤ N` coprime to `p`,\nwhen `k ≤ N`. This is coefficientwise, not an infinite-product or analytic\nconvergence assertion. Prime `p` also gives coefficient p-integrality\n(multiplicative p-adic valuation at most one), by an independent\nDieudonné–Dwork proof using p-adic divided powers, **not** the Euler identity.\nThe rational core does not import p-adic theory. See [details and examples](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/RESULTS.md#rational-artinhasse-exponential),\nthe [rational core](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/ArtinHasse.lean),\n[Euler product](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/ArtinHasseEulerProduct.lean) and\n[separate p-adic module](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/ArtinHasse/Padic.lean).",
+   "link": null,
+   "declaration": null
+  },
+  {
+   "kind": "heading",
+   "title": "Ideal-adically restricted multivariate series"
+  },
+  {
+   "kind": "prose",
+   "text": "For any family `q : ∀ i, C →+* Q i` of homomorphisms between commutative\nsemirings, `MvPowerSeries.polynomialReductionSubalgebra σ q` consists of\nseries whose coefficientwise image under each `q i` is polynomial, equivalently\nhas finite coefficient support. It uses the usual coefficient-`C` algebra and\nneeds no compatibility, surjectivity, nonempty index type or finite variable\ntype. Its polynomial inclusion and finite reductions are homomorphisms;\na surjective row gives a surjective reduction. An empty family gives the whole\nseries algebra, and one identity row gives precisely the polynomial subalgebra,\nwith reduction inverse to inclusion."
+  },
+  {
+   "kind": "prose",
+   "text": "For arbitrary variable types, commutative coefficient rings and ideals `I`,\nrestrictedness requires that, at each `k`, only finitely many **monomial indices**\nhave coefficients outside `I ^ k`. The restricted subring has surjective polynomial reductions, including\n`k = 0`, ideal-change maps, and residue maps for parameters in a local ring's\nmaximal ideal. This subring and its reductions specialize the same construction\nto `q k = Ideal.Quotient.mk (I ^ k)`."
+  },
+  {
+   "kind": "item",
+   "title": "Regrouping and kernels",
+   "title_from": "bold",
+   "text": "**Regrouping and kernels.** First-variable regrouping is injective, not an\nequivalence with all iterated restricted series. Finite variables give a\ndegree-cutoff criterion; with `I.FG` they also identify the intrinsic\nalgebraic reduction kernel at every level. Regular principal ideals admit\ninternal division and scalar-linear quotient equivalences. For arbitrary\nvariables and ideals, coefficientwise reduction kernels multiply from levels\n`n`, `k` into level `n + k`, without completeness or finite generation; this\ndoes **not** identify intrinsic ideal powers or give an arbitrary-ideal\nintrinsic kernel identity.",
+   "link": null,
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Completion and units",
+   "title_from": "bold",
+   "text": "**Completion and units.** For arbitrary `R`, `I` and `σ`,\n`MvPolynomial.adicCompletionEquiv σ I` identifies polynomial completion with\nthe algebra of series over `AdicCompletion I R` that become polynomials under\nevery original quotient evaluation. It uses the named\n`AdicCompletion.extendedAlgebra` on the source, not a new global instance.\nUnder `[IsAdicComplete I R]`, coefficient transport recovers the original\nring equivalence with restricted series over `R`. Neither assertion assumes\nintrinsic completeness of arbitrary polynomial completions. Under coefficient\ncompleteness, a restricted series `f` is a unit exactly when `adicReduction I 1 f` is a unit,\nequivalently when its constant coefficient is a unit and every other\ncoefficient lies in `I.radical`.",
+   "link": null,
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Coefficient and variable maps",
+   "title_from": "bold",
+   "text": "**Coefficient and variable maps.** For commutative rings `R`, `T`, ideals\n`I`, `J`, a homomorphism `f : R →+* T`, `hf : I ≤ J.comap f`, and any variable\nmap `g : σ → τ`, the completed-coefficient series above admit a ring map\n`MvPowerSeries.completedRestrictedMap I J f hf g`. Infinite fibers are\nallowed: at each precision its coefficients are finite sums over the source\npolynomial reduction's support. Coefficient change is coefficientwise along\n`AdicCompletion.mapRingHom I J f hf`; renaming completes a finite direct-sum\npushforward using the whole completion/restricted-product equivalence,\nindependently of the polynomial-completion comparison. Identity, composition,\npolynomial and scalar laws hold, and `MvPolynomial.adicCompletionEquiv`\ncommutes with these maps in both directions on all elements. No completeness,\nseparation, finite generation or finite-variable hypothesis is required.\nSee the [map API](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/API.md#coefficient-change-arbitrary-variable-maps-and-naturality).",
+   "link": {
+    "text": "map API",
+    "url": "https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/API.md#coefficient-change-arbitrary-variable-maps-and-naturality",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Linear extension",
+   "title_from": "bold",
+   "text": "**Linear extension.** Under `[IsAdicComplete I R]`, every polynomial\n`R`-linear endomorphism extends to an `R`-linear restricted-series operator\nwith finite-level equations. Uniqueness needs **both** agreement on\npolynomials and preservation of **every** coefficientwise reduction kernel;\nno ring-homomorphism extension or intrinsic restricted-ring completeness is\nasserted. See the [extension guide](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearExtension/README.md).",
+   "link": {
+    "text": "extension guide",
+    "url": "https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearExtension/README.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Content, leading terms and division",
+   "title_from": "bold",
+   "text": "**Content, leading terms and division.** Separated prevaluation rings give\nselected-coefficient content factorization. Over a valuation domain separated\nfor the principal ideal of a parameter in its maximal ideal, intrinsic\nleading terms are polynomials over the actual ring `R`. Any two supplied\ndivisions by a nonzero singleton divisor with actual-supported remainders\nagree; arbitrary-divisor existence is not asserted. Primitive-divisor\nexistence and conditional ideal generation additionally require a nonzero\nparameter, radical equal to the maximal ideal, and adic completeness.\nUnder those hypotheses, a finite primitive family in a restricted-series\nideal generates it **if** its actual-`R` leading terms generate the full\npolynomial leading-term ideal. No standard-basis existence is asserted;\nconditional quotient-unit reflection does not construct a division.",
+   "link": null,
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "First-variable preparation",
+   "title_from": "bold",
+   "text": "**First-variable preparation.** Over a commutative valuation domain complete\nfor the principal ideal of a nonzero parameter in its maximal ideal, with\nthat ideal's radical equal to the maximal ideal, let a restricted series `f`\nin `Fin (n + 1)` variables have regrouped maximal-ideal residue polynomial\nof degree `d` with nonzero scalar top coefficient `C c`. There is a unique\npair consisting of a restricted unit `u` and a monic first-variable polynomial\n`G` of exact degree `d` with `polynomialRestrictedFinFirst _ n G = u * f`.\nActual-coefficient primitivity follows; uniqueness even allows competing\nmultipliers not assumed units. **`n = 0` and `d = 0` are included**. See the\n[preparation guide](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariablePreparation/README.md).",
+   "link": {
+    "text": "preparation guide",
+    "url": "https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariablePreparation/README.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Generic cofinal support",
+   "title_from": "bold",
+   "text": "**Generic cofinal support.** For any `R`-module, `I ≤ J`, `1 ≤ N` and\n`J ^ N ≤ I` equate separation, precompleteness and completeness for the two\nfiltrations; this separately importable result needs no restricted series.",
+   "link": null,
+   "declaration": null
+  },
+  {
+   "kind": "prose",
+   "text": "See the [complete restricted-series results and limitations](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/RESULTS.md#ideal-adically-restricted-multivariate-series)\nand [module guide](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/README.md).\nThese results do not assert norm/radius or variable-adic restrictions, general\nbase change, standard-basis existence, or source coverage."
+  },
+  {
+   "kind": "prose",
+   "text": "For completed-coefficient maps, choose one of these direct imports; paths are\nrelative to `FormalPowerSeries.MvPowerSeries.IdealAdicRestricted`."
+  },
+  {
+   "kind": "prose",
+   "text": "| Module | Use |\n| --- | --- |\n| [`CompletionMap`](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/CompletionMap.lean) | Canonical map between polynomial completions, quotient squares and completed-scalar compatibility |\n| [`CompletedRename`](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/CompletedRename.lean) | Arbitrary variable maps on series over completed coefficients, including infinite fibers |\n| [`Naturality`](https://github.com/FormalFrontier/formal-power-series/blob/29bdab8c1f57472100a579c97a589effaea11987/FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/Naturality.lean) | Coefficient change, joint maps, functoriality and forward/inverse naturality of the completion comparison |"
+  }
+ ],
+ "main_results": [
+  {
+   "name": "MvPowerSeries.restrictedProductEquivPolynomialReduction",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/InverseLimit.lean",
+   "found": {
+    "line": 117,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPolynomial.adicCompletionMap",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/CompletionMap.lean",
+   "found": {
+    "line": 92,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPolynomial.adicPolynomialLevelEquiv_evalₐ_adicCompletionMap",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/CompletionMap.lean",
+   "found": {
+    "line": 171,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPolynomial.adicCompletionMap_comp_completedCoefficient",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/CompletionMap.lean",
+   "found": {
+    "line": 237,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.completedRestrictedRename",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/CompletedRename.lean",
+   "found": {
+    "line": 230,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.completedRestrictedCoeffMap",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/Naturality.lean",
+   "found": {
+    "line": 76,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.completedRestrictedMap",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/Naturality.lean",
+   "found": {
+    "line": 312,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.coeff_completedRestrictedMap_eval",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/Naturality.lean",
+   "found": {
+    "line": 350,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.completedRestrictedMap_comp",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/Naturality.lean",
+   "found": {
+    "line": 409,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.completedRestrictedMap_comp_algebraMap",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/Naturality.lean",
+   "found": {
+    "line": 508,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.ker_polynomialReduction_le_comap_completedRestrictedMap",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/Naturality.lean",
+   "found": {
+    "line": 566,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPolynomial.adicCompletionEquiv_naturality",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/Naturality.lean",
+   "found": {
+    "line": 687,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPolynomial.adicCompletionEquiv_symm_naturality",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/Naturality.lean",
+   "found": {
+    "line": 816,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.IsAdicallyRestricted.mono",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/IdealChange.lean",
+   "found": {
+    "line": 29,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.restrictAlongIdeal",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/IdealChange.lean",
+   "found": {
+    "line": 45,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.restrictAlongIdeal_trans",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/IdealChange.lean",
+   "found": {
+    "line": 70,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.reductionAtLargerIdeal",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/IdealChange.lean",
+   "found": {
+    "line": 88,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.reductionAtLargerIdeal_surjective",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/IdealChange.lean",
+   "found": {
+    "line": 113,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.restrictedResidueHom",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/ValuationResidue.lean",
+   "found": {
+    "line": 33,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.restrictedResidueHom_apply",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/ValuationResidue.lean",
+   "found": {
+    "line": 64,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.restrictedRenameEquiv",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/Rename.lean",
+   "found": {
+    "line": 46,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.restrictedFirstRegroup",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariableRegrouping.lean",
+   "found": {
+    "line": 76,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.polynomialRestrictedFirst",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariableRegrouping.lean",
+   "found": {
+    "line": 199,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.restrictedFirst_actual_support_iff",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariableRegrouping.lean",
+   "found": {
+    "line": 244,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.restrictedFinSuccEquiv",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariableRegrouping/Fin.lean",
+   "found": {
+    "line": 28,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.restrictedFinFirst_actual_support_iff",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariableRegrouping/Fin.lean",
+   "found": {
+    "line": 140,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.isUnit_adicallyRestricted_iff_adicReduction_one",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/UnitDetection.lean",
+   "found": {
+    "line": 28,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.isUnit_adicallyRestricted_iff_coeff_mod_ideal",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/UnitDetection.lean",
+   "found": {
+    "line": 65,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.isUnit_iff_quotient_of_isAdicComplete",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/UnitDetection.lean",
+   "found": {
+    "line": 77,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.isUnit_adicallyRestricted_iff_coeff_radical",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/UnitDetection.lean",
+   "found": {
+    "line": 85,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.isAdicallyRestricted_iff_degree_cutoff",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/DegreeDecay.lean",
+   "found": {
+    "line": 38,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.exists_restricted_fg_decomposition",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FinitelyGeneratedKernel.lean",
+   "found": {
+    "line": 30,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.ker_adicReduction_fg",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FinitelyGeneratedKernel.lean",
+   "found": {
+    "line": 107,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.adicallyRestrictedAlgebra",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 30,
+    "kind": "instance",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.algebraMap_adicallyRestricted_coe",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 35,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.coe_smul_adicallyRestricted",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 42,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.coeff_smul_adicallyRestricted",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 49,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.algebraAdicReduction",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 56,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.linearAdicReduction",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 63,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.linearAdicReduction_apply",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 68,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.coeff_linearAdicReduction",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 74,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.linearAdicReduction_surjective",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 80,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.principalAdicConstant_mul_eq_smul",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 85,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.ker_linearAdicReduction_principal",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 95,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.principalLinearQuotientEquiv",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 125,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.principalLinearQuotientEquiv_mk",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 137,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.intLinearAdicReduction",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 144,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.intLinearAdicReduction_apply",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 149,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.coeff_intLinearAdicReduction",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 155,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.intLinearAdicReduction_surjective",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 161,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.principalAdicConstant_mul_eq_int_smul",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 166,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.ker_intLinearAdicReduction_principal",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 179,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.principalIntLinearQuotientEquiv",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 209,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.principalIntLinearQuotientEquiv_mk",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearQuotient.lean",
+   "found": {
+    "line": 221,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.polynomialLinearMapMod",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearExtension.lean",
+   "found": {
+    "line": 28,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.polynomialLinearMapMod_map",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearExtension.lean",
+   "found": {
+    "line": 45,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.polynomialLinearMapMod_factorPow",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearExtension.lean",
+   "found": {
+    "line": 60,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.restrictedLinearExtension",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearExtension.lean",
+   "found": {
+    "line": 163,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.adicReduction_restrictedLinearExtension",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearExtension.lean",
+   "found": {
+    "line": 186,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.restrictedLinearExtension_polynomial",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearExtension.lean",
+   "found": {
+    "line": 195,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.restrictedLinearExtension_preserves_ker",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearExtension.lean",
+   "found": {
+    "line": 207,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.restrictedLinearExtension_unique",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LinearExtension.lean",
+   "found": {
+    "line": 218,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.coeff_mul_mem_ideal_mul_ideal",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/KernelFiltration.lean",
+   "found": {
+    "line": 44,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.adicReduction_mul_eq_zero",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/KernelFiltration.lean",
+   "found": {
+    "line": 54,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.adicReduction_sum_mul_eq_zero",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/KernelFiltration.lean",
+   "found": {
+    "line": 75,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.adicReduction_sum_mul_eq_zero_succ",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/KernelFiltration.lean",
+   "found": {
+    "line": 85,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.IsAdicallyRestricted.exists_span_range_eq_span_coeff",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/Content.lean",
+   "found": {
+    "line": 59,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.IsAdicallyRestricted.exists_selected_coeff_factor",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/SelectedFactor.lean",
+   "found": {
+    "line": 68,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MonomialOrder.restrictedLeadingTermIdeal",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LeadingTerm.lean",
+   "found": {
+    "line": 346,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.exists_common_monic_parameter",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/MonicParameter.lean",
+   "found": {
+    "line": 80,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MonomialOrder.restrictedDivisionRemainder",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/PolynomialDivision.lean",
+   "found": {
+    "line": 30,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.restrictedGeometricInverse",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/RestrictedGeometricInverse.lean",
+   "found": {
+    "line": 176,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MonomialOrder.restrictedPerturbedDivisionRemainder",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/PerturbedDivision.lean",
+   "found": {
+    "line": 79,
+    "kind": "def",
+    "stated": false
+   }
+  },
+  {
+   "name": "MonomialOrder.exists_restricted_monic_division",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/MonicDivision.lean",
+   "found": {
+    "line": 30,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.isAdicallyRestricted_iff_of_cofinal",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/Cofinal.lean",
+   "found": {
+    "line": 26,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "isHausdorff_iff_of_cofinal",
+   "file": "FormalPowerSeries/AdicCompletion/Cofinal.lean",
+   "found": {
+    "line": 38,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "isPrecomplete_iff_of_cofinal",
+   "file": "FormalPowerSeries/AdicCompletion/Cofinal.lean",
+   "found": {
+    "line": 51,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "isAdicComplete_iff_of_cofinal",
+   "file": "FormalPowerSeries/AdicCompletion/Cofinal.lean",
+   "found": {
+    "line": 80,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MonomialOrder.exists_restricted_primitive_division",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/ValuationNormalizedDivision.lean",
+   "found": {
+    "line": 35,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MonomialOrder.ideal_eq_span_of_primitive_standardBasis",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/PrimitiveStandardBasis.lean",
+   "found": {
+    "line": 93,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MonomialOrder.restrictedLeadingExponent_mul_of_ne_zero",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/LeadingTerm/Product.lean",
+   "found": {
+    "line": 34,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MonomialOrder.restricted_singleton_division_unique",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/SingletonDivision.lean",
+   "found": {
+    "line": 35,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MonomialOrder.existsUnique_restricted_primitive_singleton_division",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/SingletonDivision.lean",
+   "found": {
+    "line": 86,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.restrictedLeadingExponent_lex_eq_cons_of_scalar_top",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariableDivision.lean",
+   "found": {
+    "line": 31,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.existsUnique_firstVariable_division_of_leadingExponent",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariableDivision.lean",
+   "found": {
+    "line": 50,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.existsUnique_firstVariable_division_of_scalar_top",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariableDivision.lean",
+   "found": {
+    "line": 114,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.exists_firstVariable_monomial_division_of_scalar_top",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariableDivision.lean",
+   "found": {
+    "line": 136,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.isUnit_of_isUnit_restrictedResidueHom",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/UnitDetection/Residue.lean",
+   "found": {
+    "line": 39,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.isUnit_of_isUnit_restrictedResidue",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/UnitDetection/Residue.lean",
+   "found": {
+    "line": 72,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.finSuccEquiv_restrictedResidueHom_polynomialRestrictedFinFirst",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariableUnit.lean",
+   "found": {
+    "line": 38,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.restrictedResidueHom_quotient_of_restrictedFinFirst_division",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariableUnit.lean",
+   "found": {
+    "line": 117,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.isUnit_quotient_of_restrictedFinFirst_divisionHom",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariableUnit.lean",
+   "found": {
+    "line": 181,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.restrictedResidue_quotient_of_restrictedFinFirst_division",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariableUnit.lean",
+   "found": {
+    "line": 210,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.isUnit_quotient_of_restrictedFinFirst_division",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariableUnit.lean",
+   "found": {
+    "line": 234,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.existsUnique_firstVariable_preparation_of_scalar_top_of_primitive",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariablePreparation.lean",
+   "found": {
+    "line": 32,
+    "kind": "theorem",
+    "stated": false
+   }
+  },
+  {
+   "name": "MvPowerSeries.existsUnique_firstVariable_preparation_of_scalar_top",
+   "file": "FormalPowerSeries/MvPowerSeries/IdealAdicRestricted/FirstVariablePreparation.lean",
+   "found": {
+    "line": 102,
+    "kind": "theorem",
+    "stated": false
+   }
+  }
+ ]
+}

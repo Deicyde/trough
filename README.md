@@ -13,9 +13,10 @@ Foundation, the Analysis I companion, the large corpora (Anthropic's FLT, Lean
 Pool, OpenAI Math, Axiom's CFSG) and the 44 Formal Frontier libraries. Each
 gets the article unit that suits it, recorded as `map_unit` and `map_plan`.
 Mathlib is mapped from its curated lists, Tau Ceti from the declarations its
-roadmaps' status files name and the results its docstrings name, and five
-research projects from their leanblueprints: Imperial's FLT, PFR, Equational
-Theories, Strong PNT and PNT+.
+roadmaps' status files name and the results its docstrings name, five
+research projects from their leanblueprints (Imperial's FLT, PFR, Equational
+Theories, Strong PNT and PNT+), and the Formal Frontier libraries from their
+headline results.
 
 ## The Mathlib map
 
@@ -159,6 +160,54 @@ and holds no link.
    its newest main commit whose CI passed, so its cache exists, and the
    roadmaps to their newest commit.
 
+## The Formal Frontier chapter
+
+[Formal Frontier](https://github.com/FormalFrontier) publishes Lean libraries
+written by AI agents, 44 of them in the catalog. Each has a
+[formalization.yaml](https://github.com/mathlib-initiative/formalization.yaml)
+(v0.4) and a README whose "Headline results" section says what it proves. The
+chapter has a part per subject, the catalog's `subject` field, and a page per
+library: its description, review and automation statements quoted from its
+formalization.yaml, the Formal Frontier libraries it builds on and those built
+on it, its headline results, and a page listing the main results its
+formalization.yaml names. An article is a highlight of the formalization.yaml
+whose declarations the scan below finds, or a headline result whose declaration
+link names a declaration the scan finds in the linked file. Any other headline
+result stays as quoted text on the library's page, and the main results, close
+to the whole API in several libraries, are not articles. A library whose
+quoted headline results pass 40 KB has them on a page of their own, and a
+main-results list of more than 100 rows is split into pages. No Lean runs for
+this chapter yet, so its articles have no edges.
+
+1. `tools/refresh_ff.py CHECKOUTS` reads a checkout of each library and writes
+   `data/ff/<name>.json`: the commit, the formalization.yaml's facts,
+   highlights and main results (`tools/trough/formalization.py`), the Formal
+   Frontier libraries its `lake-manifest.json` names, and the README's
+   headline results, split as Formal Frontier's
+   [dashboard](https://formalfrontier.github.io) splits them but each with its
+   whole text as written; an entry that only links into the README or `docs/`
+   belongs to a table of contents and is left out.
+2. For every declaration those name, `tools/trough/leansource.py` reads the
+   named file's source without Lean, with comments, docstrings and strings
+   blanked and scopes followed through `namespace`, `section` and `end`. A
+   name counts as declared only when a declaration command in that file names
+   it in full under the namespaces it sits in, a `private` declaration and
+   anything after `#exit` count as not declared, and a file whose scopes don't
+   close as they open declares nothing: a name the reading can't place is
+   left out rather than guessed. A declaration whose text in the file holds
+   `sorry` (or `sorryAx`, `admit`, a `stop` tactic) is recorded as stated
+   without proof, and its article says so. Each
+   article's Lean name links its line in the library's source at the pin.
+3. The **Formal Frontier data** workflow (`.github/workflows/ff-data.yml`)
+   fetches each library at the commit its data file pins, as a blobless
+   sparse checkout of the files the refresh reads, runs the refresh,
+   regenerates the pages and runs the tests; on a pull request it fails when
+   the committed data differ from what the pins give. The weekly run, or a
+   dispatch with `newest`, moves each pin to its library's newest commit. A
+   refresh writes nothing, and the workflow fails, when a library is not
+   Apache-2.0 or its record finds under half the declarations the last one
+   found.
+
 ## Working on it
 
     uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
@@ -222,4 +271,6 @@ concept with no authored article shows; and
 public domain. `data/tauceti/roadmaps.json` comes from
 [TauCetiRoadmap](https://github.com/TauCetiProject/TauCetiRoadmap) and the
 docstrings and signatures in `data/tauceti/deps.json` from
-[Tau Ceti](https://github.com/TauCetiProject/TauCeti), both Apache-2.0.
+[Tau Ceti](https://github.com/TauCetiProject/TauCeti), both Apache-2.0. The
+text quoted in `data/ff/` comes from the formalization.yaml and README of each
+[Formal Frontier](https://github.com/FormalFrontier) library, Apache-2.0.

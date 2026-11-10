@@ -1,0 +1,318 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-polynomial-root-stability",
+ "repo": "FormalFrontier/polynomial-root-stability",
+ "rev": "efade497a4cf39e72a20ef94fe4028b82fcb5f80",
+ "date": "2026-11-04T14:53:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "Polynomial Root Stability",
+  "description": "Fixed-degree stability of polynomial root-generated intermediate fields inside a common Krasner normed extension, including monic, normalized, and ordinary-coefficient versions with derived nearby separability, plus quantitative Newton lifting with convergence and resultant-controlled factorization over complete ultrametric normed fields, together with polynomial estimates for valuations in linearly ordered commutative value monoids with zero.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "pending",
+  "notes": "",
+  "reviewers": []
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "framework": "Codex CLI",
+    "tool_setup": "AI-assisted Lean proof development, mathematical examples and documentation with repository-pinned Lean and mathlib compilation."
+   }
+  ],
+  "notes": "Automated assistance is not a substitute for proof-term validation, mathematical review or source-correspondence review."
+ },
+ "sources": [
+  {
+   "title": "Fixed-ambient-field root-generated-field stability",
+   "type": "original-proof",
+   "relationship": "other"
+  },
+  {
+   "title": "Cohomology of Number Fields, corrected second edition 2.3",
+   "authors": [
+    "Jürgen Neukirch",
+    "Alexander Schmidt",
+    "Kay Wingberg"
+   ],
+   "type": "book",
+   "relationship": "background",
+   "location": "Section 12.1.1; corrected edition 2.3, May 2020"
+  },
+  {
+   "title": "Local Fields and Their Extensions, second edition",
+   "authors": [
+    "Ivan B. Fesenko",
+    "Sergei V. Vostokov"
+   ],
+   "type": "book",
+   "relationship": "background",
+   "location": "Chapter II, Section 1, Proposition 1.1 (p. 36), Corollary 3 (p. 37), Exercise 1 (p. 38)"
+  }
+ ],
+ "depends": [],
+ "related": [],
+ "highlights": [],
+ "headlines": [
+  {
+   "kind": "prose",
+   "text": "**Root-generated fields are locally constant at fixed degree.** Fix normed\nfields `K`, `L` with a normed algebra structure `L / K` satisfying\n`IsKrasner K L`. For any nonzero separable polynomial `f : K[X]` that splits\nin `L`, there is a radius `ε > 0` such that every polynomial `g : K[X]` with\nthe same `natDegree`, also splitting in `L`, and with\n`‖g.coeff i - f.coeff i‖ < ε` for every coefficient index `i`, is separable\nand generates exactly the same intermediate field over `K` as `f`.\nThe [ordinary-coefficient theorem](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Normalization.lean#L214)\napplies without monicity and derives comparison nonzeroness internally."
+  },
+  {
+   "kind": "prose",
+   "text": "There are also [monic](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Krasner.lean#L565) and\n[scale-invariant normalized-coefficient](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Normalization.lean#L45)\nversions of this result. The normalized version measures closeness after\ndividing each polynomial by its own leading coefficient and requires `g ≠ 0`\nexplicitly; do not interchange the normalized and ordinary coefficient bounds."
+  },
+  {
+   "kind": "prose",
+   "text": "These results let downstream developments perturb coefficients while keeping\nthe root-generated subfield fixed. The ambient extension and both splitting\nassumptions are inputs, not conclusions. Equality is between the subfields\n`IntermediateField.adjoin K (f.rootSet L)` and\n`IntermediateField.adjoin K (g.rootSet L)` inside that fixed `L`, not an\nequivalence of canonical splitting-field objects. Fixed degree is essential;\nno stability for arbitrary variable-degree families or nonseparable references\nis asserted. Mathlib supplies Krasner's lemma and polynomial-root continuity;\nthis library combines them with finite-root estimates and coefficient\nnormalization to obtain the stated local-constancy interfaces. See the\n[historical root-field API reference](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/docs/README.md) and the\n[generic checked-use clients](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStabilityTest/Normalization.lean)."
+  },
+  {
+   "kind": "item",
+   "title": "Polynomial root scaling",
+   "title_from": "heading",
+   "text": "For a fixed polynomial `p : R[X]` over a topological semiring `R`, evaluation\nof Mathlib's root-scaling operation is jointly continuous by\n[`Polynomial.continuous_eval_scaleRoots`](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/ScaleRoots.lean):\n`(t, z) ↦ (p.scaleRoots t).eval z`. The polynomial is fixed; no continuity\nacross changes of degree is asserted, and multiplication need not be commutative.\n\nOver any normed field `K`, suppose `p : K[X]` satisfies\n`∀ w, 1 ≤ ‖w‖ → p.eval w ≠ 0`. If `‖t‖ ≤ ‖z‖` and `z ≠ 0`, then\n[`Polynomial.scaleRoots_eval_ne_zero_of_norm_le`](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/ScaleRoots.lean)\ngives `(p.scaleRoots t).eval z ≠ 0`. In particular this applies when `‖t‖ ≤ 1`\nand `‖z‖ = 1`. The outside condition holds for `X` over every normed field\nand for `X - C (1/2)` over `ℂ`; it implies `p ≠ 0` by evaluation at `1`.\nAt parameter zero the scaled polynomial is `p.leadingCoeff • X ^ p.natDegree`,\nso nonzero constants are included without a positive-degree hypothesis.\nNo completeness, algebraic-closure or nontrivial-norm assumption is needed.",
+   "link": {
+    "text": "Polynomial.continuous_eval_scaleRoots",
+    "url": "https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/ScaleRoots.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Polynomial.continuous_eval_scaleRoots",
+    "file": "PolynomialRootStability/ScaleRoots.lean",
+    "found": {
+     "line": 47,
+     "kind": "theorem",
+     "stated": false
+    }
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Polynomial scaling in valuation balls",
+   "title_from": "heading",
+   "text": "Let `R : Type u` be a commutative ring and `Γ₀ : Type w` a\n`LinearOrderedCommMonoidWithZero`, with independent universes, and let `v : Valuation R Γ₀`.\nFor `f : R[X]`, `M : Γ₀` and `a : R`, assume `∀ n > 0, v (f.coeff n) ≤ M` and `v a ≤ 1`; the constant coefficient is unrestricted.\nSet `D = v (f.derivative.eval a)` and `B = {b | M * v (b - a) < D}`.\n[`Valuation.map_eval_sub_eq_of_mul_map_sub_lt_map_derivative`](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Valuation.lean) gives\n`v (f.eval b - f.eval a) = D * v (b - a)` for `b ∈ B`, and\n[`Valuation.map_derivative_eval_eq_of_mul_map_sub_lt_map_derivative`](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Valuation.lean)\ngives `v (f.derivative.eval b) = D` there. For `b, c ∈ B`,\n[`Valuation.map_eval_sub_eval_eq_of_mul_map_sub_lt_map_derivative`](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Valuation.lean)\ngives `v (f.eval c - f.eval b) = D * v (c - b)`.\nOnly [`Valuation.injOn_eval_of_mul_map_sub_lt_map_derivative`](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Valuation.lean)\nadditionally assumes `v.supp = ⊥` to conclude `Set.InjOn` on `B`; value-zero displacement alone need not identify points.\nThese estimates need no root, domain, field, Henselianity, completeness, rank-one or real-valued realization,\nnormalization, uniformizer, value-one derivative or separate `0 < M` assumption. Value inverses are not required;\nmultiplication in `Γ₀` by positive elements is strict and cancellative. No arbitrary-rank root-existence theorem is asserted.\nThe estimates reuse Mathlib's valuation, Taylor and geometric-sum APIs.",
+   "link": {
+    "text": "Valuation.map_eval_sub_eq_of_mul_map_sub_lt_map_derivative",
+    "url": "https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Valuation.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Valuation.map_eval_sub_eq_of_mul_map_sub_lt_map_derivative",
+    "file": "PolynomialRootStability/Valuation.lean",
+    "found": {
+     "line": 163,
+     "kind": "theorem",
+     "stated": false
+    }
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Local polynomial norm scaling",
+   "title_from": "heading",
+   "text": "Let `R` be an ultrametric commutative seminormed ring with multiplicative\nseminorm. If `f : R[X]` satisfies `∀ n, ‖f.coeff n‖ ≤ M`, `‖a‖ ≤ 1`, and\n`M * ‖b - a‖ < ‖f.derivative.eval a‖`, then\n\n```lean\n‖f.eval b - f.eval a‖ = ‖f.derivative.eval a‖ * ‖b - a‖\n```\n\nThe theorem\n[`Polynomial.norm_eval_sub_eq_of_mul_norm_sub_lt_norm_derivative`](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Ultrametric.lean)\nrequires no root, division, completeness or separated norm. Only the anchor\n`a` is assumed to lie in the unit ball; the bound on `b` follows from the\nhypotheses. Zero seminorm distance is allowed without identifying the points.\nThe [3-adic Newton example](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStabilityTest/NewtonNaturality.lean)\ninstantiates this identity at `a = 1` and `b = 5 / 2` for `X² - 4`, with\nnonzero evaluation-difference norm and displacement norm both equal to `1 / 3`.\n\nThe two-point theorem\n[`Polynomial.norm_eval_sub_eval_eq_of_mul_norm_sub_lt_norm_derivative`](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Ultrametric.lean)\ngives `‖f.eval c - f.eval b‖ = ‖f.derivative.eval a‖ * ‖c - b‖`\nunder the same assumptions on `R`, `f`, `M`, and `a` whenever both\n`M * ‖b - a‖ < ‖f.derivative.eval a‖` and\n`M * ‖c - a‖ < ‖f.derivative.eval a‖`; the derivative factor remains at the\noriginal anchor `a`.\n\nWhen `R` is a normed commutative ring, the same coefficient and anchor bounds\ngive injectivity on this strict ball. The theorem\n[`Polynomial.injOn_eval_of_mul_norm_sub_lt_norm_derivative`](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/RootUniqueness.lean)\nexpresses this as `Set.InjOn`; the anchor need not be a root.",
+   "link": null,
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Root existence and bounds under coefficient perturbation",
+   "title_from": "heading",
+   "text": "For an ultrametric commutative seminormed ring with multiplicative seminorm, assume\n`∀ n, ‖f.coeff n‖ ≤ M`, `‖a‖ ≤ 1`, `f.eval x = 0`, and `g.eval y = 0`.\nIf `M * ‖x - a‖ < ‖f.derivative.eval a‖` and `M * ‖y - a‖ < ‖f.derivative.eval a‖`,\nand `∀ n, ‖f.coeff n - g.coeff n‖ ≤ ε`, then `‖f.derivative.eval a‖ * ‖x - y‖ ≤ ε`.\nThis is a bound on two given roots. No separation or completeness is needed;\n`ε = 0` gives zero seminorm distance, not necessarily equality of roots.\n\nFor local root existence, set `D = ‖f.derivative.eval a‖`. In a complete ultrametric\nnormed commutative ring with multiplicative norm,\n`Polynomial.exists_root_of_norm_coeff_sub_le_of_isUnit` takes the coefficient and\nanchor bounds, the root `x` of `f`, its strict ball inequality `M * ‖x - a‖ < D`,\nthe coefficient-difference bound, `M * ε < D ^ 2`, and a unit original derivative.\nIt constructs a root `y` of `g` in the same original strict derivative ball with\n`D * ‖x - y‖ ≤ ε`. Every root of `g` in that ball equals `y`, whether or not a\nscaled distance bound was supplied for it. No root of `g` is an input.\n\nOver a complete ultrametric normed field,\n`Polynomial.exists_root_of_norm_coeff_sub_le` derives the derivative unit from\nthe strict ball inequality, so only the six coefficient, anchor, original-root,\nstrict-ball, difference, and smallness conditions are inputs. These existential\nconclusions are the root-construction and characterization API, not a chosen-root\nobject: use the witness for existence and its uniqueness clause to identify any\nother root in the original ball. The ring construction requires inverse data in\nthe form of a unit original derivative; it does not assert existence over all\ncomplete ultrametric normed rings without such data.\n\nThe same `ℚ_[3]` model with `f = X² - 4`, `g = X² - 25/4`, `a = 1`, and `x = -2`\nhas `M = D = 1` and positive `ε = 1/9`. The constructed root is `y = 5/2`, and\n`D * ‖x - y‖ = 1/9`, so the bound is sharp. Zero perturbation is also supported:\nwith `g = f` and `ε = 0`, the constructed root equals `x`.\nSee [coefficient perturbation](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/CoefficientPerturbation.lean).",
+   "link": null,
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Root uniqueness in an ultrametric normed ring",
+   "title_from": "heading",
+   "text": "Let `R` be an ultrametric normed commutative ring with multiplicative norm,\nlet `f : R[X]` satisfy `∀ n, ‖f.coeff n‖ ≤ M`, and let `y` be a root with\n`‖y‖ ≤ 1`. Then every root `x` satisfying\n`M * ‖x - y‖ < ‖f.derivative.eval y‖` equals `y`. The criterion\n[`Polynomial.eq_of_eval_eq_zero_of_mul_norm_sub_lt_norm_derivative`](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/RootUniqueness.lean)\nrequires neither division nor completeness, and does not assume `‖x‖ ≤ 1`:\nthe derivative bound and the strict inequality imply that bound. The local norm\nscaling identity forces `‖x - y‖ = 0`, and separation gives equality.\nThe coefficient bound is arbitrary; it need not be one.\n\nThe [3-adic Newton example](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStabilityTest/NewtonNaturality.lean)\nfor `X² - 4` at `1` uses this criterion to identify every source root in the\nstrict radius-one ball with `-2`. The same example retains convergence under\nthe embedding into the 3-adic complex field and uniqueness among all target\nroots in the target ball; the other root `2` lies on the excluded boundary.",
+   "link": {
+    "text": "Polynomial.eq_of_eval_eq_zero_of_mul_norm_sub_lt_norm_derivative",
+    "url": "https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/RootUniqueness.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Polynomial.eq_of_eval_eq_zero_of_mul_norm_sub_lt_norm_derivative",
+    "file": "PolynomialRootStability/RootUniqueness.lean",
+    "found": {
+     "line": 73,
+     "kind": "theorem",
+     "stated": false
+    }
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Quantitative Newton lifting",
+   "title_from": "heading",
+   "text": "For a complete ultrametric normed field `K`, a polynomial `f : K[X]` with\n`∀ n, ‖f.coeff n‖ ≤ 1`, and `‖a₀‖ ≤ 1`, the hypothesis\n`‖f.eval a₀‖ < ‖f.derivative.eval a₀‖²` gives an integral root at exact distance\n`‖f.eval a₀‖ / ‖f.derivative.eval a₀‖`, with derivative-norm stability and\nuniqueness in the open initial-derivative-radius ball. The statement also includes\nconvergence of the explicit iterates `f.newtonMap^[n] a₀`, integrality of all\niterates, nonzero denominators and derivative-norm stability at every iterate. No monicity, characteristic-zero,\nnontrivial-norm, or norm-one derivative hypothesis is imposed. This formulation\nuses a real-valued norm, not an arbitrary higher-rank valuation.\n\nThe theorem [`Polynomial.exists_root_tendsto_iterate_newtonMap`](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/Newton.lean)\nuses coefficient-controlled ultrametric estimates and Mathlib’s Banach fixed\npoint theorem. On the closed ball of radius `δ / d`, where `δ` is the initial\nerror and `d` the initial derivative norm, the Newton map has contraction constant\n`δ / d²`. The proof includes zero initial error and trivially normed fields.\nThe field-target quotient formula and\n[boundary examples](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStabilityTest/NewtonContracts.lean) use the\nstock polynomial Newton map and function iteration.\nThe independent [2-adic input calculation](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStabilityTest/Newton.lean)\nuses `X² - 17` at `1`, with nonzero error of norm `1 / 16` and derivative of norm\n`1 / 2`, a nonunit in `ℤ_[2]`. Its further convergence client applies the general\ntheorem; the input calculation is independent of the root-existence proof.\nThe private [p-adic compatibility clients](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStabilityTest/PadicHensel.lean)\nrecover the complete existing Hensel interface for arbitrary commutative-semiring\ncoefficients and the p-adic polynomial distance estimate, without calling the old\nroot-existence theorem or adding a duplicate public API. The `X² - 1` boundary\ncalculation shows that uniqueness cannot use the closed derivative-radius ball.",
+   "link": null,
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Quantitative resultant-controlled factorization",
+   "title_from": "heading",
+   "text": "Let `K` be a complete ultrametric normed field, and let `f, g₀, h₀ : K[X]`.\nWrite `m = g₀.natDegree`, `n = h₀.natDegree`, `e = f - g₀ * h₀`,\n`δ = e.supNorm` and `r = ‖g₀.resultant h₀‖`, using the natural-degree resultant.\nAssume `g₀.supNorm ≤ 1`, `h₀.supNorm ≤ 1`, `e.degree < (m + n : WithBot ℕ)`\nand `δ < r²`. Then\n[`Polynomial.exists_factorization_of_supNorm_lt_resultant_sq`](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/ResultantFactorization.lean)\ngives `f = g * h`, preserving each initial factor's degree and leading coefficient.\nThe corrections have degrees strictly less than `m` and `n`, both factors have\nsup norm at most one, and both correction sup norms are at most `δ / r`.\n\nThere is no monicity, norm-one-leading-coefficient, characteristic-zero, discreteness,\nnontrivial-norm or positive-factor-degree assumption. The strict degree bounds use\n`WithBot ℕ`, so degree less than zero forces the zero polynomial. In particular,\nboth constant initial factors force zero error, and zero error returns the\ninitial factors. The proof uses the initial Sylvester inverse, finite coefficient\ncoordinates and Mathlib's Banach fixed-point theorem.\n\nThe [5-adic example](https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStabilityTest/ResultantFactorization.lean) uses\n`g₀ = 5X² + 2`, `h₀ = 5X² + 7` and `f = g₀h₀ + 5⁹X`. Its independently proved\ninputs give `r = 5⁻⁴`, `δ = 5⁻⁹` and correction bounds `5⁻⁵`. The full-output client\nproduces degree-two factors with leading coefficients `5` and these correction\nbounds. The leading coefficients and resultant are nonunits in the valuation\ninteger ring, not in the field.",
+   "link": {
+    "text": "Polynomial.exists_factorization_of_supNorm_lt_resultant_sq",
+    "url": "https://github.com/FormalFrontier/polynomial-root-stability/blob/efade497a4cf39e72a20ef94fe4028b82fcb5f80/PolynomialRootStability/ResultantFactorization.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Polynomial.exists_factorization_of_supNorm_lt_resultant_sq",
+    "file": "PolynomialRootStability/ResultantFactorization.lean",
+    "found": {
+     "line": 214,
+     "kind": "theorem",
+     "stated": false
+    }
+   }
+  }
+ ],
+ "main_results": [
+  {
+   "name": "IsKrasner.exists_pos_adjoin_rootSet_eq_of_monic_separable",
+   "file": "PolynomialRootStability/Krasner.lean",
+   "found": {
+    "line": 565,
+    "kind": "theorem",
+    "stated": false
+   },
+   "sorry_count": 0,
+   "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ]
+  },
+  {
+   "name": "IsKrasner.exists_pos_adjoin_rootSet_eq_of_separable_normalized",
+   "file": "PolynomialRootStability/Normalization.lean",
+   "found": {
+    "line": 45,
+    "kind": "theorem",
+    "stated": false
+   },
+   "sorry_count": 0,
+   "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ]
+  },
+  {
+   "name": "IsKrasner.exists_pos_adjoin_rootSet_eq_of_separable",
+   "file": "PolynomialRootStability/Normalization.lean",
+   "found": {
+    "line": 214,
+    "kind": "theorem",
+    "stated": false
+   },
+   "sorry_count": 0,
+   "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ]
+  },
+  {
+   "name": "Valuation.map_eval_sub_eq_of_mul_map_sub_lt_map_derivative",
+   "file": "PolynomialRootStability/Valuation.lean",
+   "found": {
+    "line": 163,
+    "kind": "theorem",
+    "stated": false
+   },
+   "sorry_count": 0,
+   "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ]
+  },
+  {
+   "name": "Valuation.map_derivative_eval_eq_of_mul_map_sub_lt_map_derivative",
+   "file": "PolynomialRootStability/Valuation.lean",
+   "found": {
+    "line": 209,
+    "kind": "theorem",
+    "stated": false
+   },
+   "sorry_count": 0,
+   "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ]
+  },
+  {
+   "name": "Valuation.map_eval_sub_eval_eq_of_mul_map_sub_lt_map_derivative",
+   "file": "PolynomialRootStability/Valuation.lean",
+   "found": {
+    "line": 220,
+    "kind": "theorem",
+    "stated": false
+   },
+   "sorry_count": 0,
+   "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ]
+  },
+  {
+   "name": "Valuation.injOn_eval_of_mul_map_sub_lt_map_derivative",
+   "file": "PolynomialRootStability/Valuation.lean",
+   "found": {
+    "line": 245,
+    "kind": "theorem",
+    "stated": false
+   },
+   "sorry_count": 0,
+   "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ]
+  },
+  {
+   "name": "Polynomial.exists_root_tendsto_iterate_newtonMap",
+   "file": "PolynomialRootStability/Newton.lean",
+   "found": {
+    "line": 261,
+    "kind": "theorem",
+    "stated": false
+   },
+   "sorry_count": 0,
+   "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ]
+  },
+  {
+   "name": "Polynomial.exists_factorization_of_supNorm_lt_resultant_sq",
+   "file": "PolynomialRootStability/ResultantFactorization.lean",
+   "found": {
+    "line": 214,
+    "kind": "theorem",
+    "stated": false
+   },
+   "sorry_count": 0,
+   "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+   ]
+  }
+ ]
+}

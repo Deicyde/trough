@@ -1,0 +1,12 @@
+# Main results
+
+The main results that the formalization.yaml of [FormalFrontier/finite-group-tate-cohomology](https://github.com/FormalFrontier/finite-group-tate-cohomology) lists under `status.main_results` at commit [c0c9d563](https://github.com/FormalFrontier/finite-group-tate-cohomology/tree/c0c9d563d45adfa81bff78821042089f750b1d44), each that the scan finds declared in the file the yaml gives, with its line. They are listed here, not made articles: in several Formal Frontier libraries this list is close to the whole API. The notes are the yaml's.
+
+| Declaration | Kind | Where | Note |
+| --- | --- | --- | --- |
+| `FiniteGroupTateCohomology.normSequence_exact` | lemma | [FiniteGroupTateCohomology/Basic.lean, line 285](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/Basic.lean#L285) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
+| `FiniteGroupTateCohomology.tateCohomologyNegOneNatIsoKernelNorm` | def | [FiniteGroupTateCohomology/Basic.lean, line 352](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/Basic.lean#L352) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
+| `FiniteGroupTateCohomology.tateCohomologyZeroNatIsoCokernelNorm` | def | [FiniteGroupTateCohomology/Basic.lean, line 407](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/Basic.lean#L407) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
+| `FiniteGroupTateCohomology.Cyclic.tateCohomologyPeriodicity` | def | [FiniteGroupTateCohomology/CyclicPeriodicity.lean, line 307](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L307) | Sorry count 0. Axioms: `propext`, `Classical.choice`, `Quot.sound`. |
+
+*Quoted from the main results in [formalization.yaml](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/c0c9d563d45adfa81bff78821042089f750b1d44/formalization.yaml) of [FormalFrontier/finite-group-tate-cohomology](https://github.com/FormalFrontier/finite-group-tate-cohomology) at commit [c0c9d563](https://github.com/FormalFrontier/finite-group-tate-cohomology/tree/c0c9d563d45adfa81bff78821042089f750b1d44), Apache-2.0.*

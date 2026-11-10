@@ -21,6 +21,10 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 - `data/tauceti/roadmaps.json`: each roadmap's title and the declarations its STATUS.md names under its named results and notable definitions, from [TauCetiProject/TauCetiRoadmap at eaf17b10](https://github.com/TauCetiProject/TauCetiRoadmap/tree/eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d), Apache-2.0.
 - `data/tauceti/deps.json`: each named declaration's kind, docstring, signature and nearest named dependencies in [TauCetiProject/TauCeti at ace60277](https://github.com/TauCetiProject/TauCeti/tree/ace60277c4c5ba2166795686bca1af4052290145), Apache-2.0, written by `lean/tauceti/TauCetiDeps.lean` in GitHub Actions.
 
+## Formal Frontier
+
+- `data/ff/<name>.json`: for each of the 44 Formal Frontier libraries, the facts, highlights and main results of its formalization.yaml and the headline results of its README, read at the commit the file records, with the line and kind of each named declaration its file declares, from [FormalFrontier](https://github.com/FormalFrontier), Apache-2.0. The declarations are read from the source text, without Lean.
+
 ## Libraries
 
 ### Core library
@@ -57,47 +61,47 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ### Formal Frontier libraries
 
-- [adic-modules](https://github.com/FormalFrontier/adic-modules) at f8b67c787f71: Ideal-power torsion, adic completions, Henselian pairs and Hensel lifting, valuation-ring completions; background: Fujiwara-Kato, Fesenko-Vostokov, Stacks, Matsumura
-- [algebraic-direct-limits](https://github.com/FormalFrontier/algebraic-direct-limits) at 70dfb18292c4: Directed/filtered limits of modules and rings, tensor products, Mittag-Leffler inverse systems, spectra and Krull dimension of filtered colimits (Stacks 10.86.3 background)
-- [algebraic-groups](https://github.com/FormalFrontier/algebraic-groups) at d9fc50596a5d: Matrix point groups, finite algebraic group schemes, coordinate Hopf algebras, unitriangular groups (background: Milne Algebraic Groups, Hopf algebras)
-- [coherent-modules](https://github.com/FormalFrontier/coherent-modules) at 96b2ee42795b: Coherent rings and modules, finite-presentation criteria, localization/descent, Noetherian ascent (folklore; Fujiwara-Kato background)
-- [complex-analysis](https://github.com/FormalFrontier/complex-analysis) at ec0323f84c5b: Complex Frechet-differentiable maps on finite-dim spaces are analytic, via polydisc Cauchy formula (folklore)
-- [continuous-group-cohomology](https://github.com/FormalFrontier/continuous-group-cohomology) at 61e5e2616b25: Low-degree continuous group cohomology, Tate deflation, compact-group norm-limit sequences; adapts Neukirch-Schmidt-Wingberg Cohomology of Number Fields
-- [dedekind-ideal-arithmetic](https://github.com/FormalFrontier/dedekind-ideal-arithmetic) at 3c83ef9dc8a8: Six results on ideal absolute norms, principal primes from norms, class groups of Dedekind localizations (Weibel K-book background)
-- [finite-etale-algebras](https://github.com/FormalFrontier/finite-etale-algebras) at edb115c15526: Finite etale subalgebras over fields, Galois/separable/purely inseparable descent (Milne Algebraic Groups background)
-- [finite-group-tate-cohomology](https://github.com/FormalFrontier/finite-group-tate-cohomology) at 96ce4463091a: Norms, exceptional Tate degrees, cyclic period-two comparisons for finite-group representations (folklore)
-- [formal-power-series](https://github.com/FormalFrontier/formal-power-series) at d8d03bb6d7fd: Logarithmic derivatives of power-series units, restricted (adic) multivariate power series; adapts Weibel K-book
-- [fundamental-groupoids](https://github.com/FormalFrontier/fundamental-groupoids) at b28cd19d48b4: Fundamental groupoids, descent along open covers, van Kampen for two-open covers; adapts May's Concise Course
-- [general-linear-groups](https://github.com/FormalFrontier/general-linear-groups) at a9b20bb169ee: GL_n over (non)commutative rings: elementary matrices, commutators, Whitehead lemma, Steinberg relations; adapts Weibel K-book, Fesenko-Vostokov
-- [graded-rings](https://github.com/FormalFrontier/graded-rings) at 02b76f2240ac: Graded quotients/localizations, homogeneous primes, symmetric algebras; Vakil Rising Sea 7.4.F-H background
-- [group-rings](https://github.com/FormalFrontier/group-rings) at 14cc9186ae16: Group algebras of free abelian groups as Laurent polynomial algebras, etc.; adapts Weibel K-book
-- [group-theory](https://github.com/FormalFrontier/group-theory) at d8187797d516: Shared topological/algebraic group API (continuous homs, open subgroups, profinite characters); cites May, Neukirch-Schmidt-Wingberg plus many original proofs
-- [homological-algebra](https://github.com/FormalFrontier/homological-algebra) at 6c7f755cf87e: Euler invariants, cochain constructions, double-complex totals; adapts Weibel K-book and Cohomology of Number Fields
-- [ideal-completion](https://github.com/FormalFrontier/ideal-completion) at 7fb1aca4010f: Ideal completions of bounded distributive lattices as coherent frames (folklore; Fujiwara-Kato background)
-- [integral-closure](https://github.com/FormalFrontier/integral-closure) at 8162fe19a81e: Integral-closure and normality descent along retractions and field scalar extensions (original; Rising Sea background)
-- [iwasawa-modules](https://github.com/FormalFrontier/iwasawa-modules) at 887cda208486: Pseudo-null/pseudo-isomorphism calculus and completed group algebras (Cohomology of Number Fields background)
-- [metrization](https://github.com/FormalFrontier/metrization) at 9ecc20de2856: Nagata-Smirnov metrization theorem and its converse, metrizability from locally finite metrizable covers (adapts Nagata 1950 and Smirnov 1951 papers)
-- [minimal-primes](https://github.com/FormalFrontier/minimal-primes) at db21a0ac3837: Minimal primes over principal ideals in UFD semirings, irreducible components (Rising Sea background)
-- [morphism-properties](https://github.com/FormalFrontier/morphism-properties) at 031b99e7900b: Category theory: morphism properties under pullback, over-category transport, density under slicing
-- [multivariate-polynomials](https://github.com/FormalFrontier/multivariate-polynomials) at 616945c1c06d: Infinite-variable ideals, evaluation ideals, block substitution, Taylor expansion of MvPolynomial (mostly original; Rising Sea/Fujiwara-Kato background)
-- [norm-forms](https://github.com/FormalFrontier/norm-forms) at c3d1a3a7c81c: Field and spectral norms over complete ultrametric fields, norm forms, nontrivial zeros of forms, Chevalley-Warning; formalizes parts of Fesenko-Vostokov; BGR background
-- [polynomial-root-stability](https://github.com/FormalFrontier/polynomial-root-stability) at fe1ff972e445: Krasner-type stability of root fields, Newton lifting (Neukirch-Schmidt-Wingberg, Fesenko-Vostokov background)
-- [profinite-groups](https://github.com/FormalFrontier/profinite-groups) at 83b3b2eee8ac: Profinite groups: finite-stage limits, Sylow families, closed subgroups (Cohomology of Number Fields background)
-- [projective-modules](https://github.com/FormalFrontier/projective-modules) at 51a40ea06a9a: Projective modules, Baer criterion and linear systems, K-theory foundations; adapts Weibel K-book
-- [projective-space](https://github.com/FormalFrontier/projective-space) at e9d6d913dd45: Proj of graded rings, standard charts, projective space (original; Rising Sea background)
-- [quadratic-algebras](https://github.com/FormalFrontier/quadratic-algebras) at a36cd9d5b5f3: Quadratic algebras, integral closure criteria, class number of Q(sqrt(-5)) (original)
-- [restricted-product-duality](https://github.com/FormalFrontier/restricted-product-duality) at 2353cdd535d2: Topology of cofinite restricted products, path components, compactness (Cohomology of Number Fields, May background)
-- [ringed-spaces](https://github.com/FormalFrontier/ringed-spaces) at 052015f070ef: Ringed-space restriction and gluing, module presheaf/sheaf scalar extension and inverse image (original; adapts Mathlib)
-- [scheme-properties](https://github.com/FormalFrontier/scheme-properties) at 6391288bf75a: Scheme properties, rational maps and function fields, birational geometry; Rising Sea background, adapts Milne Algebraic Groups and Weibel
-- [sequence-growth](https://github.com/FormalFrontier/sequence-growth) at c472750a1f13: Growth bounds for natural-division lower recurrences (original)
-- [sheaf-cohomology](https://github.com/FormalFrontier/sheaf-cohomology) at 66b27c46e97d: Sheaf cohomology, quasi-flasque acyclicity, derived pushforward, sheafed-space limits (folklore; Fujiwara-Kato background)
-- [simplicial-objects](https://github.com/FormalFrontier/simplicial-objects) at e85333e5a0b0: Decalage of simplicial objects, chain transfers and homology maps (folklore; May background)
-- [simplicial-rings](https://github.com/FormalFrontier/simplicial-rings) at 034080a40765: Central polynomial simplices and simplicial homotopy (Weibel K-book background)
-- [smooth-regularity](https://github.com/FormalFrontier/smooth-regularity) at 760c430ad076: Conormal/Jacobian criteria, smooth implies regular over fields (Stacks background)
-- [spectral-stone-duality](https://github.com/FormalFrontier/spectral-stone-duality) at 582201dc239a: Stone duality between bounded distributive lattices and spectral spaces, cofiltered spectral limits (folklore; Fujiwara-Kato)
-- [sphere-topology](https://github.com/FormalFrontier/sphere-topology) at 3c24c77cbb55: Singular homology of spheres, Brouwer fixed point for the disk, non-retraction (May, Weibel background)
-- [stable-range](https://github.com/FormalFrontier/stable-range) at b3c9bc562219: Bass stable range, cancellation, unimodular rows; adapts Weibel K-book
-- [supernatural-numbers](https://github.com/FormalFrontier/supernatural-numbers) at 6b3cd7604fb5: Supernatural numbers, profinite orders and indices; adapts Neukirch-Schmidt-Wingberg
-- [toric-ideals](https://github.com/FormalFrontier/toric-ideals) at 8b8e3ff3934c: Toric/binomial ideals, fiber normalization, monoid-algebra kernels; adapts Vakil Rising Sea
-- [valuation-integers](https://github.com/FormalFrontier/valuation-integers) at db743a475a4d: Integers of rank-one valuations: power divisibility, Krull dimension bounds; adapts Fesenko-Vostokov
-- [vector-bundles](https://github.com/FormalFrontier/vector-bundles) at c0d03404c969: Hermitian/real fiber metrics, orthogonal subbundles, local coordinates; adapts Hatcher's Vector Bundles and K-Theory
+- [Adic modules](https://github.com/FormalFrontier/adic-modules) at 86f9b35ef35a: Ideal-power torsion, adic completions, Henselian pairs and Hensel lifting, valuation-ring completions; background: Fujiwara-Kato, Fesenko-Vostokov, Stacks, Matsumura
+- [Algebraic direct limits](https://github.com/FormalFrontier/algebraic-direct-limits) at e5d0dea1697c: Directed/filtered limits of modules and rings, tensor products, Mittag-Leffler inverse systems, spectra and Krull dimension of filtered colimits (Stacks 10.86.3 background)
+- [Algebraic groups](https://github.com/FormalFrontier/algebraic-groups) at cad2dc41da14: Matrix point groups, finite algebraic group schemes, coordinate Hopf algebras, unitriangular groups (background: Milne Algebraic Groups, Hopf algebras)
+- [Coherent modules](https://github.com/FormalFrontier/coherent-modules) at b670b34e8741: Coherent rings and modules, finite-presentation criteria, localization/descent, Noetherian ascent (folklore; Fujiwara-Kato background)
+- [Complex analysis](https://github.com/FormalFrontier/complex-analysis) at c22c803e257c: Complex Frechet-differentiable maps on finite-dim spaces are analytic, via polydisc Cauchy formula (folklore)
+- [Continuous group cohomology](https://github.com/FormalFrontier/continuous-group-cohomology) at 4434e3f21530: Low-degree continuous group cohomology, Tate deflation, compact-group norm-limit sequences; adapts Neukirch-Schmidt-Wingberg Cohomology of Number Fields
+- [Dedekind ideal arithmetic](https://github.com/FormalFrontier/dedekind-ideal-arithmetic) at c76307595a11: Six results on ideal absolute norms, principal primes from norms, class groups of Dedekind localizations (Weibel K-book background)
+- [Finite étale algebras](https://github.com/FormalFrontier/finite-etale-algebras) at 4627c3ab2479: Finite etale subalgebras over fields, Galois/separable/purely inseparable descent (Milne Algebraic Groups background)
+- [Finite-group Tate cohomology](https://github.com/FormalFrontier/finite-group-tate-cohomology) at c0c9d563d45a: Norms, exceptional Tate degrees, cyclic period-two comparisons for finite-group representations (folklore)
+- [Formal power series](https://github.com/FormalFrontier/formal-power-series) at 29bdab8c1f57: Logarithmic derivatives of power-series units, restricted (adic) multivariate power series; adapts Weibel K-book
+- [Fundamental groupoids](https://github.com/FormalFrontier/fundamental-groupoids) at ce38a38faef1: Fundamental groupoids, descent along open covers, van Kampen for two-open covers; adapts May's Concise Course
+- [General linear groups](https://github.com/FormalFrontier/general-linear-groups) at a2199cf0d02b: GL_n over (non)commutative rings: elementary matrices, commutators, Whitehead lemma, Steinberg relations; adapts Weibel K-book, Fesenko-Vostokov
+- [Graded rings](https://github.com/FormalFrontier/graded-rings) at 6a459e8e4d20: Graded quotients/localizations, homogeneous primes, symmetric algebras; Vakil Rising Sea 7.4.F-H background
+- [Group rings](https://github.com/FormalFrontier/group-rings) at 8e90e6563300: Group algebras of free abelian groups as Laurent polynomial algebras, etc.; adapts Weibel K-book
+- [Group theory](https://github.com/FormalFrontier/group-theory) at cad97f1a1920: Shared topological/algebraic group API (continuous homs, open subgroups, profinite characters); cites May, Neukirch-Schmidt-Wingberg plus many original proofs
+- [Homological algebra](https://github.com/FormalFrontier/homological-algebra) at 8bcaebe913c5: Euler invariants, cochain constructions, double-complex totals; adapts Weibel K-book and Cohomology of Number Fields
+- [Ideal completion](https://github.com/FormalFrontier/ideal-completion) at e316d02a1c08: Ideal completions of bounded distributive lattices as coherent frames (folklore; Fujiwara-Kato background)
+- [Integral closure](https://github.com/FormalFrontier/integral-closure) at 8f0b15a513bb: Integral-closure and normality descent along retractions and field scalar extensions (original; Rising Sea background)
+- [Iwasawa modules](https://github.com/FormalFrontier/iwasawa-modules) at e71db96b779b: Pseudo-null/pseudo-isomorphism calculus and completed group algebras (Cohomology of Number Fields background)
+- [Metrization](https://github.com/FormalFrontier/metrization) at 9c7cf0d82ab3: Nagata-Smirnov metrization theorem and its converse, metrizability from locally finite metrizable covers (adapts Nagata 1950 and Smirnov 1951 papers)
+- [Minimal primes](https://github.com/FormalFrontier/minimal-primes) at 45952e34e2da: Minimal primes over principal ideals in UFD semirings, irreducible components (Rising Sea background)
+- [Morphism properties](https://github.com/FormalFrontier/morphism-properties) at 1666ed81a5c4: Category theory: morphism properties under pullback, over-category transport, density under slicing
+- [Multivariate polynomials](https://github.com/FormalFrontier/multivariate-polynomials) at 724d9804aa6e: Infinite-variable ideals, evaluation ideals, block substitution, Taylor expansion of MvPolynomial (mostly original; Rising Sea/Fujiwara-Kato background)
+- [Norm forms](https://github.com/FormalFrontier/norm-forms) at 4b2893fb313b: Field and spectral norms over complete ultrametric fields, norm forms, nontrivial zeros of forms, Chevalley-Warning; formalizes parts of Fesenko-Vostokov; BGR background
+- [Polynomial root stability](https://github.com/FormalFrontier/polynomial-root-stability) at efade497a4cf: Krasner-type stability of root fields, Newton lifting (Neukirch-Schmidt-Wingberg, Fesenko-Vostokov background)
+- [Profinite groups](https://github.com/FormalFrontier/profinite-groups) at bf258c54ddbe: Profinite groups: finite-stage limits, Sylow families, closed subgroups (Cohomology of Number Fields background)
+- [Projective modules](https://github.com/FormalFrontier/projective-modules) at 27f95a8b2a06: Projective modules, Baer criterion and linear systems, K-theory foundations; adapts Weibel K-book
+- [Projective space](https://github.com/FormalFrontier/projective-space) at 9dbd208f4275: Proj of graded rings, standard charts, projective space (original; Rising Sea background)
+- [Quadratic algebras](https://github.com/FormalFrontier/quadratic-algebras) at 16a5b4c54c45: Quadratic algebras, integral closure criteria, class number of Q(sqrt(-5)) (original)
+- [Restricted-product duality](https://github.com/FormalFrontier/restricted-product-duality) at df6cc0bb4483: Topology of cofinite restricted products, path components, compactness (Cohomology of Number Fields, May background)
+- [Ringed spaces](https://github.com/FormalFrontier/ringed-spaces) at 052015f070ef: Ringed-space restriction and gluing, module presheaf/sheaf scalar extension and inverse image (original; adapts Mathlib)
+- [Scheme properties](https://github.com/FormalFrontier/scheme-properties) at 09db7d881a2f: Scheme properties, rational maps and function fields, birational geometry; Rising Sea background, adapts Milne Algebraic Groups and Weibel
+- [Sequence growth](https://github.com/FormalFrontier/sequence-growth) at ccf81c7190cb: Growth bounds for natural-division lower recurrences (original)
+- [Sheaf cohomology](https://github.com/FormalFrontier/sheaf-cohomology) at 85cf087ff3e2: Sheaf cohomology, quasi-flasque acyclicity, derived pushforward, sheafed-space limits (folklore; Fujiwara-Kato background)
+- [Simplicial objects](https://github.com/FormalFrontier/simplicial-objects) at e210890fdc17: Decalage of simplicial objects, chain transfers and homology maps (folklore; May background)
+- [Simplicial rings](https://github.com/FormalFrontier/simplicial-rings) at 728785746bd0: Central polynomial simplices and simplicial homotopy (Weibel K-book background)
+- [Smooth regularity](https://github.com/FormalFrontier/smooth-regularity) at fbc0ee825697: Conormal/Jacobian criteria, smooth implies regular over fields (Stacks background)
+- [Spectral Stone duality](https://github.com/FormalFrontier/spectral-stone-duality) at 3d9e22b25e63: Stone duality between bounded distributive lattices and spectral spaces, cofiltered spectral limits (folklore; Fujiwara-Kato)
+- [Sphere topology](https://github.com/FormalFrontier/sphere-topology) at 672d46f90cf5: Singular homology of spheres, Brouwer fixed point for the disk, non-retraction (May, Weibel background)
+- [Stable range](https://github.com/FormalFrontier/stable-range) at 4d01f17954ba: Bass stable range, cancellation, unimodular rows; adapts Weibel K-book
+- [Supernatural numbers](https://github.com/FormalFrontier/supernatural-numbers) at cb444a4051e5: Supernatural numbers, profinite orders and indices; adapts Neukirch-Schmidt-Wingberg
+- [Toric ideals](https://github.com/FormalFrontier/toric-ideals) at 593116e0783d: Toric/binomial ideals, fiber normalization, monoid-algebra kernels; adapts Vakil Rising Sea
+- [Valuation integers](https://github.com/FormalFrontier/valuation-integers) at 212f1a045abb: Integers of rank-one valuations: power divisibility, Krull dimension bounds; adapts Fesenko-Vostokov
+- [Vector bundles](https://github.com/FormalFrontier/vector-bundles) at e3fb9de334c8: Hermitian/real fiber metrics, orthogonal subbundles, local coordinates; adapts Hatcher's Vector Bundles and K-Theory

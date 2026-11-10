@@ -1,0 +1,636 @@
+{
+ "schema": "trough-ff/v1",
+ "id": "ff-toric-ideals",
+ "repo": "FormalFrontier/toric-ideals",
+ "rev": "593116e0783dee84353f7a76ef65001cb814b01e",
+ "date": "2026-11-04T20:40:00Z",
+ "toolchain": "v4.34.0-rc2",
+ "mathlib": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+ "license": "Apache-2.0",
+ "project": {
+  "name": "Toric Ideals",
+  "description": "Reusable Lean theory of coefficient-independent finite binomial kernels for monomial evaluation on finite variable types over arbitrary commutative rings, with any commutative target monoid and independent coefficient, variable and target universes, re-exported GroupRings coefficientwise fiber-normalization criteria for additive monoid algebras over arbitrary rings, gcd-reduced bivariate natural-weight kernel presentations for pairs not both zero and coprime all-coefficient binomial membership over arbitrary possibly noncommutative rings, and the Hankel-minor presentation of the degree-n rational normal curve's monomial-map kernel for positive n over arbitrary commutative rings, with low-degree boundaries, a quotient-to-image equivalence, domain-dependent consequences, all-degree freeness, flatness and faithful flatness of the full Hankel quotient for its canonical coefficient action over arbitrary commutative rings in all coefficient universes, including zero rings and degree zero, all-degree standard-graded homogeneity of the original Hankel ideal, explicit bases indexed by Fin (n*d+1) and finite coordinates for every degree-d component of the full Hankel quotient over arbitrary commutative rings, with basis vectors preserved by arbitrary coefficient homomorphisms in independent universes, all-degree coefficient criteria for domain, reduced, Noetherian and Jacobson Hankel quotient rings, the all-degree criterion that the Hankel quotient is Artinian over itself exactly for zero coefficient rings, finiteness of its canonical coefficient module exactly for zero coefficient rings in every degree, and an arithmetic characterization of the natural exponent image, full-target raw-map surjectivity exactly in degree one or over subsingleton coefficients for arbitrary commutative semirings in every degree, finite type of the raw parametrization over its full source in every degree, module finiteness of its full target over that source exactly when n is nonzero or the coefficient semiring is subsingleton, freeness of the full target over the full raw-map source exactly in degree one or over subsingleton coefficients for arbitrary commutative semirings in every degree, and full-source ring-map flatness exactly in degree one or over subsingleton coefficients for arbitrary commutative rings in every degree, and regularity of every coordinate class in every degree, with an injective coordinate-localization client over arbitrary commutative rings. The split-quadric coordinate algebra has an all-coefficient determinant kernel, an injective quotient parametrization, a range equivalence, coefficient domain and primality criteria, and localization chart comparisons over arbitrary commutative rings.",
+  "authors": [
+   "Formal Frontier Agents"
+  ]
+ },
+ "review": {
+  "status": "agent-reviewed mathematical development",
+  "notes": "Independent agent review covers the Hankel presentation, exponent-image criterion and quotient criteria, including their module and test interfaces.",
+  "reviewers": []
+ },
+ "automation": {
+  "methods": [
+   {
+    "method": "agent",
+    "tool_setup": "AI-assisted Lean development in a pinned Lean 4 and mathlib Lake project."
+   }
+  ],
+  "notes": "AI agents developed the mathematical code and documentation. Independent agent review covers the Hankel presentation, exponent-image criterion and quotient criteria. No human-review claim is made here."
+ },
+ "sources": [
+  {
+   "title": "The Rising Sea: Foundations of Algebraic Geometry",
+   "authors": [
+    "Ravi Vakil"
+   ],
+   "type": "book",
+   "relationship": "adapts",
+   "location": "Exercise 3.6.F"
+  },
+  {
+   "title": "Group Rings: fiber normalization and uniform binomial kernels",
+   "authors": [
+    "Formal Frontier Agents"
+   ],
+   "type": "software",
+   "relationship": "adapts",
+   "url": "https://github.com/FormalFrontier/group-rings"
+  },
+  {
+   "title": "Terminal exponents, exponent images and Hankel quotient criteria",
+   "type": "original-proof",
+   "relationship": "independently-proves"
+  },
+  {
+   "title": "The Rising Sea: Foundations of Algebraic Geometry",
+   "authors": [
+    "Ravi Vakil"
+   ],
+   "type": "book",
+   "relationship": "adapts",
+   "location": "Section 4.4"
+  }
+ ],
+ "depends": [
+  {
+   "name": "coherent-modules",
+   "rev": "b9bb233399aab0f864a2a1a1bb3d414dff530812"
+  },
+  {
+   "name": "group-rings",
+   "rev": "8a10fb8c1285227a36501fa50206a0bed05fc98a"
+  },
+  {
+   "name": "group-theory",
+   "rev": "07948c9888686ade711654c1433c3efb2652e1aa"
+  },
+  {
+   "name": "integral-closure",
+   "rev": "3e89fa94dfa32e9d4f4c43fca8dd15462686201c"
+  },
+  {
+   "name": "minimal-primes",
+   "rev": "537058e2a3f4610d3126f22af057a1f6cd96c886"
+  },
+  {
+   "name": "multivariate-polynomials",
+   "rev": "616945c1c06d1655887100fe8a40e06a4a4a6d76"
+  }
+ ],
+ "related": [],
+ "highlights": [
+  {
+   "title": "Uniform monomial-evaluation kernels",
+   "statement": "For any map from a finite variable type to a commutative monoid, one finite set of same-product exponent pairs gives coefficient-one monomial differences spanning the kernel of monomial evaluation in MvPolynomial over every commutative coefficient ring, including empty variable types and zero rings, with all three universes independent.",
+   "declarations": [
+    {
+     "name": "MvPolynomial.uniform_monomial_kernel",
+     "file": "ToricIdeals/MvPolynomial/UniformMonomialKernel.lean",
+     "found": {
+      "line": 49,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "Monomial conductors",
+   "statement": "Every finitely generated additive submonoid S of finitely supported natural exponent vectors contains c such that c+n belongs to S whenever n is a difference of elements of S and has a positive multiple in S.",
+   "declarations": [
+    {
+     "name": "AddSubmonoid.exists_relative_root_conductor",
+     "file": "ToricIdeals/AddSubmonoid/FiniteRemainder.lean",
+     "found": {
+      "line": 147,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  },
+  {
+   "title": "Own-fraction normalization of monomial algebras",
+   "statement": "For a monomial algebra in arbitrarily many variables over an integrally closed commutative coefficient domain, its normalization in its own fraction ring has canonical polynomial-fraction-field image generated by monomials whose exponents are differences of submonoid elements and have a positive multiple in the submonoid.",
+   "declarations": [
+    {
+     "name": "MvPolynomial.map_integralClosure_adjoin_monomial",
+     "file": "ToricIdeals/MvPolynomial/MonomialNormalization.lean",
+     "found": {
+      "line": 52,
+      "kind": "theorem",
+      "stated": false
+     }
+    }
+   ]
+  }
+ ],
+ "headlines": [
+  {
+   "kind": "item",
+   "title": "Uniform monomial-evaluation kernels",
+   "title_from": "bold",
+   "text": "**Uniform monomial-evaluation kernels.** For a finite variable type `ι` and any\nmap `g : ι → M` to a commutative monoid, there is a finite set\n`E : Finset ((ι →₀ ℕ) × (ι →₀ ℕ))` such that each pair has the same product\nunder `g`, and, for every commutative ring `R`, the kernel of\n`MvPolynomial.aeval (fun i => MonoidAlgebra.single (g i) (1 : R))` is the ideal\nspanned by `monomial d 1 - monomial e 1` for `(d,e) ∈ E`. The source is\n`MvPolynomial ι R`, with its canonical coefficient algebra structure, and\n`E` is chosen before `R`. Coefficient, variable and target universes are\nindependent; empty variable types and zero rings are included. No field,\ndomain, coefficient-Noetherian, target-cancellation, target-finite-generation,\ngeneration-by-images or surjectivity hypothesis is needed. The proof uses GroupRings' uniform\nmonoid-algebra kernel theorem and polynomial evaluation and transport APIs.\nSee [`MvPolynomial.uniform_monomial_kernel`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MvPolynomial/UniformMonomialKernel.lean).",
+   "link": {
+    "text": "MvPolynomial.uniform_monomial_kernel",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MvPolynomial/UniformMonomialKernel.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "MvPolynomial.uniform_monomial_kernel",
+    "file": "ToricIdeals/MvPolynomial/UniformMonomialKernel.lean",
+    "found": {
+     "line": 49,
+     "kind": "theorem",
+     "stated": false
+    }
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Monomial conductors and canonical principal localization",
+   "title_from": "bold",
+   "text": "**Monomial conductors and canonical principal localization.** For a finitely\ngenerated `S : AddSubmonoid (σ →₀ ℕ)`, there is `c ∈ S` such that `c + n ∈ S`\nwhenever `(∃ b ∈ S, b + n ∈ S) ∧ ∃ k > 0, k • n ∈ S`. Its coefficient-one\nmonomial clears every element of the relative-root monomial algebra, not only\nits generators. Inverting this same monomial gives a canonical algebra\nequivalence over the original monomial algebra. Clearing and this comparison\nwork over every commutative semiring, including zero coefficients; for a fixed\nconductor they need no finite generation. For an integrally closed coefficient\ndomain, the own-fraction normalization has a no-finite-generation algebra\ncomparison with the relative-root extension, and localizing it at the same\nimage monomial gives the normalization-side comparison. Both relative exponent\nwitnesses, canonical scalar actions and independent coefficient/variable\nuniverses are retained. Finite generation is sufficient, not claimed necessary.\nSee [`MonomialConductor`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MvPolynomial/MonomialConductor.lean) and\n[`MonomialFinite`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MvPolynomial/MonomialFinite.lean).",
+   "link": {
+    "text": "MonomialConductor",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MvPolynomial/MonomialConductor.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "MonomialConductor",
+    "file": "ToricIdeals/MvPolynomial/MonomialConductor.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Integral closedness of polynomial power subalgebras",
+   "title_from": "bold",
+   "text": "**Integral closedness of polynomial power subalgebras.** For any commutative\nring `R`, the subalgebra generated by `X ^ n` for `n ∈ AddSubmonoid.multiples d`\nis integrally closed iff `R[X]` is when `0 < d`, and iff `R` is when `d = 0`.\nIn particular every degree works over an integrally closed domain, by the existing\n`Polynomial.isIntegrallyClosed_adjoin_X_pow_multiples` in\n[MonomialIntegralClosure.lean](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/MonomialIntegralClosure.lean).\nThe degree-zero coefficient equivalence already works over commutative semirings,\nwithout nontriviality. See\n[MonomialIntegrallyClosed.lean](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/MonomialIntegrallyClosed.lean)\nand [MonomialSubalgebra.lean](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/MonomialSubalgebra.lean).",
+   "link": {
+    "text": "MonomialSubalgebra.lean",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/MonomialSubalgebra.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Finite natural-exponent monomial extensions",
+   "title_from": "bold",
+   "text": "**Finite natural-exponent monomial extensions.** For an additive submonoid\n`S` of `ℕ` and any subset `U`, a finite `E ⊆ U` with `U ⊆ S + E` exists\nexactly when `S ≠ ⊥` or `U` is finite. For a submonoid target `T`, the\ncriterion is `S ≠ ⊥ ∨ T = ⊥`, without requiring `S ≤ T`; these are covers,\nnot equalities. If `S ≤ T` and `R : Type u` is any commutative semiring,\nthe canonical left inclusion module between the coefficient-one monomial\nadjoins for `S` and `T` in `AddMonoidAlgebra R ℕ` is finite exactly when\n`Subsingleton R ∨ S ≠ ⊥ ∨ T = ⊥`. Thus zero coefficients are included,\nwithout a ring, domain, Noetherian, finite-generation or extra positive-generator\nhypothesis. See\n[`NatFiniteRemainder`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/AddSubmonoid/NatFiniteRemainder.lean) and\n[`NatMonomialFinite`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/AddMonoidAlgebra/NatMonomialFinite.lean).",
+   "link": {
+    "text": "NatFiniteRemainder",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/AddSubmonoid/NatFiniteRemainder.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "NatFiniteRemainder",
+    "file": "ToricIdeals/AddSubmonoid/NatFiniteRemainder.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Finite relative-root extensions and normalization",
+   "title_from": "bold",
+   "text": "**Finite relative-root extensions and normalization.** For a finitely generated\n`S : AddSubmonoid (σ →₀ ℕ)`, there is a finite set of relative-root exponents\n`E` such that every exponent satisfying\n`(∃ b ∈ S, b + n ∈ S) ∧ ∃ k > 0, k • n ∈ S` is `s + e` with `s ∈ S`\nand `e ∈ E`. The corresponding coefficient-one monomial adjoin is a finite\nmodule over the original `S`-monomial adjoin, over every commutative semiring,\nfor the canonical inclusion action. For an integrally closed commutative\ndomain of coefficients, `integralClosure A (FractionRing A)` is finite over\nits own `A`. Variables and coefficients have independent universes; variables\nmay be infinite, and there is no coefficient-Noetherian assumption. Both\nrelative exponent witnesses are retained; this is not ambient saturation.\nSee [`FiniteRemainder`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/AddSubmonoid/FiniteRemainder.lean) and\n[`MvPolynomial/MonomialFinite.lean`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MvPolynomial/MonomialFinite.lean).",
+   "link": {
+    "text": "FiniteRemainder",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/AddSubmonoid/FiniteRemainder.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "FiniteRemainder",
+    "file": "ToricIdeals/AddSubmonoid/FiniteRemainder.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Normalization image of multivariate monomial subalgebras",
+   "title_from": "bold",
+   "text": "**Normalization image of multivariate monomial subalgebras.** Let `R : Type u`\nbe an integrally closed commutative domain, `σ : Type v` arbitrary, and\n`S : AddSubmonoid (σ →₀ ℕ)`. Let `A` be the `R`-adjoin of the monomials\n`monomial s 1` for `s ∈ S`. Under the canonical map from `Frac(A)` to\n`Frac(MvPolynomial σ R)`, the image of `integralClosure A (Frac(A))` is the\nimage of the `R`-adjoin of the monomials `monomial n 1` satisfying\n`(∃ b ∈ S, b + n ∈ S) ∧ ∃ k > 0, k • n ∈ S`. The equality is between\n`R`-subalgebras, restricting scalars on the integral closure first. This is\nnormalization in `A`'s own fraction field, not ambient integral closure or\nambient saturation; even exponents remain even. There are no finiteness,\nnonempty-variable, field, Noetherian or characteristic assumptions, and the\nuniverses are independent. See\n[`MvPolynomial/MonomialNormalization.lean`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MvPolynomial/MonomialNormalization.lean).",
+   "link": {
+    "text": "MvPolynomial/MonomialNormalization.lean",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MvPolynomial/MonomialNormalization.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "MvPolynomial/MonomialNormalization.lean",
+    "file": "ToricIdeals/MvPolynomial/MonomialNormalization.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Finite gcd monomial extensions",
+   "title_from": "bold",
+   "text": "**Finite gcd monomial extensions.** For an arbitrary additive submonoid `S` of\n`ℕ` and a commutative semiring `R`, the subalgebra generated by powers of `X`\nwith exponents in `multiples (Nat.setGcd S)` is finite over the exponent\nsubalgebra for `S`, through their canonical inclusion. Over commutative rings\nthe same extension is integral. Gcd zero gives constants; no coefficient-domain,\nNoetherian, finite-generation or positive-gcd hypothesis is required. See\n[`MonomialFinite`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/MonomialFinite.lean).",
+   "link": {
+    "text": "MonomialFinite",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/MonomialFinite.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "MonomialFinite",
+    "file": "ToricIdeals/Polynomial/MonomialFinite.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Fine components of integral polynomials",
+   "title_from": "bold",
+   "text": "**Fine components of integral polynomials.** Over any commutative ring `R`,\nan arbitrary additive submonoid `S` of `σ →₀ ℕ` defines the subalgebra generated\nby `monomial s 1` for `s ∈ S`. If `f` is integral over this subalgebra, then\neach `monomial n (f.coeff n)` is integral over it. An integral monomial with\nnon-nilpotent coefficient has `k • n ∈ S` for some `k > 0`; over a reduced ring this\napplies to every exponent in the support of `f`. Variables and coefficients\nhave independent universes, with no finiteness or characteristic restriction.\nThese are powers of individual monomials, not a claim that some power of `f`\nlies in the subalgebra. See\n[`MvPolynomial/MonomialIntegralClosure.lean`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MvPolynomial/MonomialIntegralClosure.lean).",
+   "link": {
+    "text": "MvPolynomial/MonomialIntegralClosure.lean",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MvPolynomial/MonomialIntegralClosure.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "MvPolynomial/MonomialIntegralClosure.lean",
+    "file": "ToricIdeals/MvPolynomial/MonomialIntegralClosure.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Intrinsic normality of multivariate monomial subalgebras",
+   "title_from": "bold",
+   "text": "**Intrinsic normality of multivariate monomial subalgebras.** Let `R : Type u`\nbe any commutative domain, `σ : Type v` any independently universed variable type,\nand `S` any additive submonoid of `σ →₀ ℕ`. The `R`-subalgebra generated by\n`monomial s 1` for `s ∈ S` is integrally closed in its own fraction field **if\nand only if** `R` is integrally closed and `b ∈ S`, `b + n ∈ S`, `0 < k` and\n`k • n ∈ S` imply `n ∈ S`. Coefficient normality is an output of necessity,\nnot an initial hypothesis. There is no finite-variable, finite-generation,\nfield, Noetherian or characteristic hypothesis. The difference conditions\ndistinguish this relative root closure from ambient saturation; even-exponent\nsubalgebras need not contain the variables. See\n[`MvPolynomial/MonomialIntegralClosure.lean`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MvPolynomial/MonomialIntegralClosure.lean).\nThe accompanying [support API](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MvPolynomial/MonomialSubalgebra.lean)\nidentifies the underlying module with `MvPolynomial.restrictSupport` over every\ncommutative semiring, including the zero semiring.",
+   "link": {
+    "text": "MvPolynomial/MonomialIntegralClosure.lean",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MvPolynomial/MonomialIntegralClosure.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "MvPolynomial/MonomialIntegralClosure.lean",
+    "file": "ToricIdeals/MvPolynomial/MonomialIntegralClosure.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Arithmetic gcd recognition",
+   "title_from": "bold",
+   "text": "**Arithmetic gcd recognition.** For every additive submonoid `S` of `ℕ`, there\nis a unique `d : ℕ` such that every element of `S` is divisible by `d` and only\nfinitely many multiples of `d` are missing from `S`. This `d` is the canonical\n`Nat.setGcd (S : Set ℕ)`. The zero submonoid has `d = 0`; no finite-generation,\npositivity or coprimality hypothesis is needed. The gaps are relative to the\nmultiples of `d`, not the full complement of `S`. See\n[`NumberTheory/FrobeniusNumber.lean`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/NumberTheory/FrobeniusNumber.lean).",
+   "link": {
+    "text": "NumberTheory/FrobeniusNumber.lean",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/NumberTheory/FrobeniusNumber.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "NumberTheory/FrobeniusNumber.lean",
+    "file": "ToricIdeals/NumberTheory/FrobeniusNumber.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Integral closedness forces normal coefficients",
+   "title_from": "bold",
+   "text": "**Integral closedness forces normal coefficients.** Over a commutative domain\n`R`, let `S` be any additive submonoid of `ℕ`. If the subalgebra generated by\n`X ^ s` for `s ∈ S` is integrally closed in its own fraction field, then `R`\nis integrally closed. No base-normality input or positive exponent is needed;\nthe bottom and top submonoids are included. The proof restricts evaluation at\nzero to an `R`-linear scalar retraction. See\n[`Polynomial/MonomialIntegralClosure.lean`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/MonomialIntegralClosure.lean).",
+   "link": {
+    "text": "Polynomial/MonomialIntegralClosure.lean",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/MonomialIntegralClosure.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Polynomial/MonomialIntegralClosure.lean",
+    "file": "ToricIdeals/Polynomial/MonomialIntegralClosure.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Integral closedness of polynomial exponent subalgebras",
+   "title_from": "bold",
+   "text": "**Integral closedness of polynomial exponent subalgebras.** Over an integrally\nclosed commutative domain `R`, the subalgebra generated by `X ^ s` for an arbitrary\nadditive submonoid `S` of `ℕ` is integrally closed if and only if\n`S = AddSubmonoid.multiples d` for some `d : ℕ`. Degree zero gives the constants;\npositive degree gives an algebra isomorphic to `R[X]`. The necessity direction\nholds over every coefficient domain, without base normality. No field,\nfinite-generation, Noetherian or characteristic hypothesis is needed. See\n[`Polynomial/MonomialIntegralClosure.lean`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/MonomialIntegralClosure.lean).\n\nNormality is absolute, in the subalgebra's own fraction ring. For example,\n`ℤ[X²]` is normal but proper in `ℤ[X]`: `X` is absent, although it is integral\nover `ℤ[X²]` by the monic equation `Y² - X²`. Normality therefore does not mean\nintegral closedness inside the ambient polynomial ring.",
+   "link": {
+    "text": "Polynomial/MonomialIntegralClosure.lean",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/MonomialIntegralClosure.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Polynomial/MonomialIntegralClosure.lean",
+    "file": "ToricIdeals/Polynomial/MonomialIntegralClosure.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Monomial gaps obstruct integral closedness",
+   "title_from": "bold",
+   "text": "**Monomial gaps obstruct integral closedness.** Over any commutative domain `R`,\nlet `S` be an additive submonoid of `ℕ`. If the subalgebra generated by `X ^ s`\nfor `s ∈ S` is integrally closed, then `b ∈ S`, `b + n ∈ S`, `0 < k` and\n`k * n ∈ S` imply `n ∈ S`. The contrapositive shows that `R[X², X³]` is not\nintegrally closed, in every characteristic. See\n[`Polynomial/MonomialIntegralClosure.lean`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/MonomialIntegralClosure.lean).",
+   "link": {
+    "text": "Polynomial/MonomialIntegralClosure.lean",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/MonomialIntegralClosure.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Polynomial/MonomialIntegralClosure.lean",
+    "file": "ToricIdeals/Polynomial/MonomialIntegralClosure.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Power-substitution range and equivalence",
+   "title_from": "bold",
+   "text": "**Power-substitution range and equivalence.** Over any commutative semiring `R`,\nthe range of `Polynomial.expand R d` is the existing exponent subalgebra for\n`AddSubmonoid.multiples d`, including `d = 0`. For positive `d`,\n`Polynomial.expandEquivAdjoinXPow` gives the actual `R`-algebra equivalence\nfrom `R[X]`; its forward map is power substitution, and its inverse reads the\ncoefficient at `n * d` for the coefficient at `n`. See\n[`Polynomial/MonomialSubalgebra.lean`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/MonomialSubalgebra.lean).",
+   "link": {
+    "text": "Polynomial/MonomialSubalgebra.lean",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/MonomialSubalgebra.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "Polynomial/MonomialSubalgebra.lean",
+    "file": "ToricIdeals/Polynomial/MonomialSubalgebra.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Monomial exponent subalgebras",
+   "title_from": "bold",
+   "text": "**Monomial exponent subalgebras.** Over any commutative semiring, including the zero\nsemiring, the polynomial subalgebra generated by `X^s` for `s` in an additive\nsubmonoid `S` of `ℕ` has a basis indexed by `S`, with polynomial coefficients as\ncoordinates and a finite reconstruction formula. Its canonical module is free\nby `Module.Free.of_basis`. See\n[MonomialSubalgebra.lean](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/MonomialSubalgebra.lean).",
+   "link": {
+    "text": "MonomialSubalgebra.lean",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/MonomialSubalgebra.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "prose",
+   "text": "Write `Q(R,n) = R[X₀,…,Xₙ]/I(R,n)` for the full quotient by the `2 × 2` Hankel\nminors and `f = rncMap R n : Source R n →+* Target R` for `Xᵢ ↦ U^(n-i)V^i`.\nUnless stated otherwise, `R` is any commutative ring and `n : ℕ` includes zero.\nIn particular, `Q(R,0) = R[X₀]`, **not** the raw parametrization image `R`.\nHere `Subsingleton R` means the zero coefficient ring or semiring."
+  },
+  {
+   "kind": "item",
+   "title": "Two-generator polynomial conductor",
+   "title_from": "bold",
+   "text": "**Two-generator polynomial conductor:** For a commutative semiring `R` and\ncoprime natural numbers `a, b`, the greatest ideal of `R[X]` contained in\nthe canonical subalgebra `R[X^a, X^b]` is `(X^((a - 1)*(b - 1)))`.\nIf `a, b` are not coprime, the greatest contained ambient ideal is zero.\nThese statements concern every ambient polynomial ideal, include exponents\nzero and one (also `(a, b) = (0, 0)`), and permit the zero semiring.\nMembership in the subalgebra is also characterized by the additive submonoid\ncontaining the support. See\n[the conductor theorem](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/Conductor.lean) and its\n[natural-coefficient examples](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdealsTest/PolynomialConductor.lean).",
+   "link": {
+    "text": "natural-coefficient examples",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdealsTest/PolynomialConductor.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Polynomial subalgebras containing a power",
+   "title_from": "bold",
+   "text": "**Polynomial subalgebras containing a power:** For every commutative semiring\n`R : Type u`, `A : Subalgebra R R[X]`, and positive natural number `n` with\n`X ^ n ∈ A`, `Polynomial.span_X_pow_eq_top_of_X_pow_mem` shows that the first\n`n` powers of `X` span `R[X]` for the canonical multiplication action of `A`.\n`Polynomial.moduleFinite_of_X_pow_mem` consequently gives `Module.Finite A R[X]`.\nFor arbitrary `ι : Type v` and `a : ι → ℕ`, `Polynomial.moduleFinite_adjoin_X_pow_iff`\nsays that `R[X]` is finite over `Algebra.adjoin R (Set.range (fun i => X ^ a i))`\nexactly when `(∃ i, 0 < a i) ∨ Subsingleton R`. The index universe is independent\nof the coefficient universe; empty and all-zero families are included.\nNo ring, domain, nontriviality or Noetherian hypothesis is needed, and no basis\nor freeness is asserted. See [finite polynomial subalgebras](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/FiniteSubalgebra.lean).",
+   "link": {
+    "text": "finite polynomial subalgebras",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Polynomial/FiniteSubalgebra.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Coefficient change on full Hankel quotients",
+   "title_from": "bold",
+   "text": "**Coefficient change on full Hankel quotients:** For commutative rings\n`R : Type u`, `S : Type v` in independent universes and any `φ : R →+* S`, the\ninduced stock ideal quotient map `Q(R,n) →+* Q(S,n)` is injective exactly when\n`φ` is injective, and surjective exactly when `φ` is surjective, in every degree.\nNo flatness, domain, nontriviality or `Algebra R S` is assumed. See the\n[coefficient-map criteria](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/CoefficientMap.lean).",
+   "link": {
+    "text": "coefficient-map criteria",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/CoefficientMap.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Coefficientwise normalization and monomial kernels (GroupRings API)",
+   "title_from": "bold",
+   "text": "**Coefficientwise normalization and monomial kernels (GroupRings API):** Over\nany ring, an additive source monoid and an arbitrary index function to a bare\ntype, suppose **every monomial and coefficient** is congruent modulo a left ideal to the term\nat a source exponent chosen by its target index. Elements whose coefficients\nsum to zero along fibers then belong to the ideal, in independent universes.\nAdditive exponent homomorphisms give kernel containment; equality and a\nmembership criterion additionally need the reverse ideal inclusion. No\ncommutativity, section or surjectivity is needed; an arbitrary index function\nneed not induce a ring map. The canonical results are in the root\n`AddMonoidAlgebra` namespace of `GroupRings.MonoidAlgebra.FiberNormalization`.\nThe root `ToricIdeals` import retains their former `ToricIdeals.AddMonoidAlgebra`\nnames as deprecated aliases through the compatibility module. See the\n[normalization contract](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/docs/FiberNormalization.md).",
+   "link": {
+    "text": "normalization contract",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/docs/FiberNormalization.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Coprime weighted fibers",
+   "title_from": "bold",
+   "text": "**Coprime weighted fibers:** In `AddMonoidAlgebra R (Fin 2 →₀ ℕ)` for any\nring `R`, `Nat.Coprime a b` and equal weights\n`b*d(0)+a*d(1) = b*e(0)+a*e(1)` imply that\n`single d c - single e c` belongs to the principal **left** ideal generated\nby `X₀^a - X₁^b`, for every `c : R`. Noncommutative coefficient rings, zero\nrings and the coprime axes `(0,1)` and `(1,0)` are included. See\n[`single_sub_single_mem_span_of_coprime_weight_eq`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MonoidAlgebra/CoprimeWeights.lean).\nThe same module proves\n`ker_mapDomainRingHom_weight_eq_span_of_coprime`: the kernel of the stock\n`Finsupp.weight` pushforward for weights `(b,a)` is exactly this left ideal.\n`mem_span_iff_mapDomain_weight_eq_zero_of_coprime` detects membership by\nvanishing of that image. No full-target surjectivity is asserted: weights\n`(3,2)` miss `1`.",
+   "link": {
+    "text": "single_sub_single_mem_span_of_coprime_weight_eq",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MonoidAlgebra/CoprimeWeights.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "single_sub_single_mem_span_of_coprime_weight_eq",
+    "file": "ToricIdeals/MonoidAlgebra/CoprimeWeights.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Gcd-reduced natural-weight kernels",
+   "title_from": "bold",
+   "text": "**Gcd-reduced natural-weight kernels:** For any `R : Type u` with `[Ring R]`\nand `a,b : ℕ` with `a ≠ 0 ∨ b ≠ 0`, the same stock pushforward for weights\n`(b,a)` has kernel generated as a **left** ideal by\n`X₀^(a / Nat.gcd a b) - X₁^(b / Nat.gcd a b)`.\n[`ker_mapDomainRingHom_weight_eq_span`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MonoidAlgebra/NaturalWeights.lean)\nand `mem_span_iff_mapDomain_weight_eq_zero` include noncommutative rings,\nzero rings and both axes: `(0,b)` gives `1-X₁` for `b ≠ 0`, and `(a,0)`\ngives `X₀-1` for `a ≠ 0`. Weights `(6,4)` give `X₀²-X₁³`.\nThe pair `(0,0)` is excluded; its kernel generally needs both `X₀-1` and\n`X₁-1`. No full-target surjectivity is assumed or asserted.",
+   "link": {
+    "text": "ker_mapDomainRingHom_weight_eq_span",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MonoidAlgebra/NaturalWeights.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "ker_mapDomainRingHom_weight_eq_span",
+    "file": "ToricIdeals/MonoidAlgebra/NaturalWeights.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Hankel presentation",
+   "title_from": "bold",
+   "text": "**Hankel presentation:** For `1 ≤ n`,\n[`hankelIdeal_eq_ker`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve.lean) identifies `I(R,n)`\nwith the kernel of `f` and the quotient with its **image subring**, not the\nfull target. At `n = 0` the inclusion is strict for nontrivial `R`; at `n = 1`\nthe raw map is injective. The module proves energy-decreasing reduction and\nterminal uniqueness; chosen representatives are classical, not executable canonical forms.",
+   "link": {
+    "text": "hankelIdeal_eq_ker",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "hankelIdeal_eq_ker",
+    "file": "ToricIdeals/RationalNormalCurve.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Raw-map injectivity, surjectivity and freeness",
+   "title_from": "bold",
+   "text": "**Raw-map injectivity, surjectivity and freeness:** Over any **commutative\nsemiring** `R`, each holds exactly when `n = 1 ∨ Subsingleton R`\n([injectivity](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/Injectivity.lean),\n[surjectivity](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/MapSurjectivity.lean),\n[freeness](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/Freeness.lean)). Source and target are\nthe full polynomial semirings. Freeness uses `p • q = f(p) * q` and an arbitrary,\nnot necessarily finite, basis. At degree zero `X₀` maps to `1`.",
+   "link": {
+    "text": "freeness",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/Freeness.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Relative finiteness and flatness",
+   "title_from": "bold",
+   "text": "**Relative finiteness and flatness:** Over commutative semirings, the raw map\nis [of finite type in every degree](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/ParametrizationFinite.lean);\nits full target is a finite **source**-module iff `n ≠ 0 ∨ Subsingleton R`.\nOver commutative rings, [raw-map flatness](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/MapFlatness.lean)\nand [formal unramifiedness](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/MapUnramified.lean)\neach hold iff `n = 1 ∨ Subsingleton R`, via `f.toAlgebra`, not coefficient-`R`\nor quotient scalars. The [full-quotient-to-full-target map](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/QuotientMapFlatness.lean)\nhas the same flatness criterion, with action `q • p = quotientMap R n q * p`.",
+   "link": {
+    "text": "full-quotient-to-full-target map",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/QuotientMapFlatness.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Coefficient modules and endpoints",
+   "title_from": "bold",
+   "text": "**Coefficient modules and endpoints:** `Q(R,n)` is\n[free and faithfully flat over `R`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/CoefficientAlgebra.lean)\nin every degree. Coefficient-module finite generation, Noetherianity and\nArtinianity each hold iff `Subsingleton R`. The\n[endpoint map](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/EndpointMap.lean) makes it integral\nand finite over `MvPolynomial (Fin 2) R` in every degree; for `1 ≤ n` it is\ninjective with `Fin n`-indexed basis `1, X₁, …, Xₙ₋₁`, using exactly\n`Algebra.toModule` for `endpointMap.toAlgebra`: `p • q = endpointMap n p * q`.\nThe [augmentation](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/Augmentation.lean) kills **all**\nvariables and retracts `R`; the separate [axis projection](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/AxisProjection.lean)\nretains `X₀`, splits onto `R[X]`, and is an isomorphism at `n = 0`.",
+   "link": {
+    "text": "axis projection",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/AxisProjection.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Ring criteria and regular coordinates",
+   "title_from": "bold",
+   "text": "**Ring criteria and regular coordinates:** In every degree `Q(R,n)` is a\ndomain, reduced, Noetherian or Jacobson iff `R` has the respective property;\nprimality and radicality of `I(R,n)` detect a domain and a reduced ring.\nArtinianity **over itself** holds iff `Subsingleton R`, not merely if `R` is\nArtinian. Every [coordinate class is regular](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/CoordinateRegularity.lean),\neven over nilpotent coefficients and zero rings: both multiplication maps are\ninjective, not a regular-sequence assertion. [Detailed criteria](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/docs/Results.md).",
+   "link": {
+    "text": "Detailed criteria",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/docs/Results.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Integral closedness and dimension",
+   "title_from": "bold",
+   "text": "**Integral closedness and dimension:** For a **commutative domain** `R`,\n[`quotient_isIntegrallyClosed_iff`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/IntegralClosure.lean)\nsays `Q(R,n)` is integrally closed iff `R` is. For a **Noetherian commutative\nring** `R`, [Krull dimension](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/Dimension.lean) is\n`ringKrullDim Q(R,n) = ringKrullDim R + (if n = 0 then 1 else 2)` in `WithBot ℕ∞`,\nincluding zero rings of dimension `⊥` and infinite coefficient dimension.",
+   "link": {
+    "text": "quotient_isIntegrallyClosed_iff",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/IntegralClosure.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "quotient_isIntegrallyClosed_iff",
+    "file": "ToricIdeals/RationalNormalCurve/IntegralClosure.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Formal smoothness over coefficients",
+   "title_from": "bold",
+   "text": "**Formal smoothness over coefficients:** For every commutative ring `R`,\n[`quotient_formallySmooth_iff`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/FormallySmooth.lean)\nstates `Algebra.FormallySmooth R Q(R,n) ↔ n ≤ 1 ∨ Subsingleton R` for the canonical\ncoefficient algebra. This includes `Q(R,0) = R[X₀]`, zero rings and characteristic\ntwo; it is not formal unramifiedness of the raw map over its full source.",
+   "link": {
+    "text": "quotient_formallySmooth_iff",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/FormallySmooth.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "quotient_formallySmooth_iff",
+    "file": "ToricIdeals/RationalNormalCurve/FormallySmooth.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "item",
+   "title": "Grading, homogeneous coordinates and vertex cotangents",
+   "title_from": "bold",
+   "text": "**Grading, homogeneous coordinates and vertex cotangents:** The\n[source Hankel ideal is homogeneous](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/Homogeneous.lean).\nThe full quotient has its standard multiplicative grading and unique finite\nhomogeneous reconstruction. Its degree-`d` component has a coefficient basis\nindexed by `Fin (n*d+1)`; at `n = 0` its vector is `[X₀^d]`. The augmentation\nkernel `J` has cotangent module `J/J²` with a `Fin (n+1)`-indexed coefficient\nbasis of variable classes; coordinates are raw linear coefficients of\nrepresentatives with zero constant coefficient. At `n = 0` its vector is `[X₀]`.\nIndexed bases over zero rings assert no numerical rank. Both\n[GradedAlgebra](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/GradedAlgebra.lean) and\n[Cotangent](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/Cotangent.lean) require **direct imports**.",
+   "link": {
+    "text": "Cotangent",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/Cotangent.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Arbitrary base change",
+   "title_from": "bold",
+   "text": "**Arbitrary base change:** For commutative rings `R`, `S` with `[Algebra R S]`\nin independent universes, [`S ⊗[R] Q(R,n) ≃ₐ[S] Q(S,n)`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/BaseChange.lean)\nin every degree, without flatness or injectivity. [Homogeneous-component bases](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/HomogeneousBasis.lean)\nretain their indices under arbitrary coefficient change; their scalar-extension\nequivalences commute with inclusions into the full quotients and base change.\nZero and nilpotent coefficients are included.",
+   "link": {
+    "text": "Homogeneous-component bases",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/HomogeneousBasis.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Arithmetic exponent image",
+   "title_from": "bold",
+   "text": "**Arithmetic exponent image:** The [coefficient-free criterion](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/ExponentImage.lean)\nfor a target `t : Fin 2 →₀ ℕ` is `n ∣ (t 0 + t 1)`, including `n = 0`,\nwhen only the zero target occurs.",
+   "link": {
+    "text": "coefficient-free criterion",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/RationalNormalCurve/ExponentImage.lean",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "The split quadric",
+   "title_from": "bold",
+   "text": "**The split quadric:** For any commutative ring `A`, substitution\n`(w,x,y,z) ↦ (W,WT,Y,YT)` has kernel `(wz - xy)`; the quotient identifies with\nthe **range**, not the whole target. Its domain/primality criterion is `IsDomain A`.\nThe coefficient-free exponent image is `t ≤ u+v`, with unique reduced\nrepresentatives; the total selector is a preimage only there and is not additive.\nThe `w`- and `W`-charts are equivalent for independent localization models with\nboth `A`-scalar towers, without domain or nontriviality hypotheses. See the\n[split-quadric guide](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/docs/SplitQuadric.md).",
+   "link": {
+    "text": "split-quadric guide",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/docs/SplitQuadric.md",
+    "code": false
+   },
+   "declaration": null
+  },
+  {
+   "kind": "item",
+   "title": "Uniform exponents from finite translate covers",
+   "title_from": "bold",
+   "text": "**Uniform exponents from finite translate covers.** In a cancellative commutative\nmonoid, a cover `T ⊆ S * E` with finite `E ⊆ T` gives `t ^ E.ncard.factorial ∈ S`\nfor every `t ∈ T`, without containment or finite-generation assumptions on the\nsubmonoids. Thus a finite canonical left inclusion module between coefficient-one\nmonomial adjoins forces either subsingleton coefficients or one positive exponent\nworking for every target exponent. Additively, the same positive natural-number\nmultiplier sends every target exponent into the source submonoid. See\n[`FiniteCover`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Submonoid/FiniteCover.lean),\n[`MonoidAlgebra/MonomialFinite`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/MonoidAlgebra/MonomialFinite.lean), and\n[`AddMonoidAlgebra/MonomialFinite`](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/AddMonoidAlgebra/MonomialFinite.lean).",
+   "link": {
+    "text": "FiniteCover",
+    "url": "https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/ToricIdeals/Submonoid/FiniteCover.lean",
+    "code": true
+   },
+   "declaration": {
+    "name": "FiniteCover",
+    "file": "ToricIdeals/Submonoid/FiniteCover.lean",
+    "found": null
+   }
+  },
+  {
+   "kind": "prose",
+   "text": "This library does not classify general toric ideals or prove rational-normal-curve\nresults outside the stated parametrization and hypotheses. Source-passage\ncorrespondence and coverage are tracked separately, not claimed here. See the\n[full result statements and scalar conventions](https://github.com/FormalFrontier/toric-ideals/blob/593116e0783dee84353f7a76ef65001cb814b01e/docs/Results.md)."
+  }
+ ],
+ "main_results": [
+  {
+   "name": "MvPolynomial.uniform_monomial_kernel",
+   "file": "ToricIdeals/MvPolynomial/UniformMonomialKernel.lean",
+   "found": {
+    "line": 49,
+    "kind": "theorem",
+    "stated": false
+   }
+  }
+ ]
+}
