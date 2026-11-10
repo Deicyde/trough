@@ -26,7 +26,7 @@ from pathlib import Path
 
 from . import ff, leansource, tex
 from .blueprints import Built, escape
-from .formal_conjectures import natural, plural, quote
+from .formal_conjectures import OPAQUE, natural, plural, quote, unlink
 from .mathlib import fence
 from .vault import Container, Entry, Leaf, chunk, slugify
 
@@ -54,6 +54,9 @@ NUMBER = re.compile(r"^\d+(?:\.\d+)+$")
 SGA_NUMBER = re.compile(r"^(?=.*\d)[A-Za-z0-9()]+(?:\.[A-Za-z0-9()]+)*$")
 EXPOSE = re.compile(r"^(?:0|[IVX][A-Za-z]*)$")
 ESCAPES = {"n": "\n", "t": "\t", "r": "\r", "\\": "\\", '"': '"', "'": "'"}
+FENCE = re.compile(r" {0,3}(`{3,}|~{3,})")
+# A character already escaped, or one the site's Markdown would read as markup in a quote's prose.
+LITERAL = re.compile(r"\\.|[_{]")
 
 
 def lean_string(literal: str) -> str:
@@ -504,9 +507,48 @@ def tag_url(tag: str) -> str:
     return f"{STACKS_SITE}/tag/{tag}"
 
 
+def literal(markdown: str) -> str:
+    """Quoted Markdown with each underscore and brace of its prose escaped, as the repository writes `u_{X/S}` and
+    `(X/S)_cris` as plain text: the site's Markdown reads such underscores as emphasis, which drops them, and a
+    brace right after the emphasis as an attribute list, which keeps the page from being published. Code spans,
+    code blocks and formulas are left as they are, and so is a character already escaped."""
+
+    def mark(char: re.Match) -> str:
+        return char.group() if len(char.group()) == 2 else "\\" + char.group()
+
+    def escaped(prose: str) -> str:
+        out, last = [], 0
+        for match in OPAQUE.finditer(prose):
+            out += [LITERAL.sub(mark, prose[last:match.start()]), match.group()]
+            last = match.end()
+        return "".join(out) + LITERAL.sub(mark, prose[last:])
+
+    out, prose, fence, indented, blank = [], [], "", False, True
+    for line in markdown.split("\n"):
+        opener = FENCE.match(line)
+        if fence:
+            code = True
+            if opener and opener.group(1).startswith(fence) and not line[opener.end():].strip():
+                fence = ""
+        elif opener:
+            code, fence = True, opener.group(1)
+        else:
+            # An indented code block starts after a blank line and runs to the next line at the margin.
+            indented = (line.startswith("    ") and (indented or blank)) if line.strip() else indented
+            code = indented
+        blank = not line.strip()
+        if code and prose:
+            out.append(escaped("\n".join(prose)))
+            prose = []
+        (out if code else prose).append(line)
+    if prose:
+        out.append(escaped("\n".join(prose)))
+    return "\n".join(out)
+
+
 def comment(text: str) -> str:
     """An attribute's comment, on one line, as the page quotes it."""
-    return ff.safe(" ".join(text.split()))
+    return ff.safe(unlink(literal(" ".join(text.split()))))
 
 
 def reference(work: str, item: dict) -> str:
@@ -548,7 +590,7 @@ def declaration_block(block: dict, source: dict) -> str:
         head += f" The attribute's comment: “{comment(block['comment'])}”."
     parts = [" ".join(filter(None, [head, references(block)]))]
     if block["doc"]:
-        parts.append(quote(block["doc"]))
+        parts.append(quote(literal(block["doc"])))
     parts.append(fence(block["statement"]))
     return "\n\n".join(parts)
 
@@ -697,7 +739,7 @@ def index_pages(work: str, articles: dict[str, tuple[str, Leaf]], tags: list[dic
                 group = heading
             cited = ", ".join(
                 f"[{titles[key]}](trough:{key})"
-                + (" (" + "; ".join(f"“{ff.safe(text)}”" for text in sorted(comments) if text) + ")" if any(comments) else "")
+                + (" (" + "; ".join(f"“{comment(text)}”" for text in sorted(comments) if text) + ")" if any(comments) else "")
                 for key, comments in sorted(found[ref].items(), key=lambda pair: natural(pair[0])))
             lines.append(f"- ({parsed[-1]}): {cited}")
         page = Container(f"{title} {volume}", slugify(f"{work} {volume}"))

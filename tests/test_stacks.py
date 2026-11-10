@@ -235,6 +235,19 @@ def test_lean_strings_decode_escapes_and_gaps():
     assert stacks.lean_string('"\\x41\\u00e9"') == "Aé"
 
 
+def test_quotes_escape_the_underscores_and_braces_of_their_prose_only():
+    # The site would read "_cris at u_" as emphasis and the "{X/S}" after it as an attribute list.
+    doc = ("The slice of (X/S)_cris at u_{X/S}^{-1}h_{X'}, `(X/S)_cris`, $f_*\\mathcal{O}_X$, an escaped \\_.\n\n"
+           "    0 ⟶ h_{X'} ⟶ F\n\n"
+           "```\nf_{x}\n\n    g_{y}\n```\nafter_{all}")
+    assert stacks.literal(doc) == (
+        "The slice of (X/S)\\_cris at u\\_\\{X/S}^\\{-1}h\\_\\{X'}, `(X/S)_cris`, $f_*\\mathcal{O}_X$, an escaped \\_.\n\n"
+        "    0 ⟶ h_{X'} ⟶ F\n\n"
+        "```\nf_{x}\n\n    g_{y}\n```\nafter\\_\\{all}")
+    # A bracket before parentheses that hold no URL reads as text, not as a link.
+    assert stacks.comment("g_C = 1 + Σ mᵢ([κᵢ : k](gᵢ - 1))") == "g\\_C = 1 + Σ mᵢ([κᵢ : k\\](gᵢ - 1))"
+
+
 def test_ega_and_sga_references_read_as_the_attributes_validate_them():
     assert stacks.ega("IV 7.8.3") == ("IV", "7.8.3") and stacks.ega("0 23.1.1") == ("0", "23.1.1")
     assert stacks.ega("V 1.2") is None and stacks.ega("IV 7") is None
