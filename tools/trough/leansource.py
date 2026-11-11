@@ -37,21 +37,36 @@ NAME = rf"{COMPONENT}(?:\.{COMPONENT})*"
 MODIFIERS = r"(?:(?:private|protected|noncomputable|partial|unsafe|nonrec|public|meta|scoped|local)\s+)*"
 # "open Foo in", "set_option x y in": a prefix that scopes one command.
 IN_PREFIX = r"(?:(?:open|set_option|omit|include)\b[^\n]*?\bin\s+)*"
-DECLARATION = re.compile(
-    rf"^[ \t]*{IN_PREFIX}(?P<modifiers>{MODIFIERS})(?:class\s+(?=inductive\b))?(?P<kind>{'|'.join(KINDS)})\b[ \t]*"
-    rf"(?:\(priority\s*:=[^)\n]*\)[ \t]*)?(?P<name>{NAME})?",
-    re.M,
-)
+# Batteries' `proof_wanted`, and the `theorem_wanted` and `def_wanted` commands a library may define: a statement
+# whose proof, or a definition whose value, is deferred. declarations() reads them only when asked.
+WANTED_KINDS = {"proof_wanted": "proof_wanted", "theorem_wanted": "theorem_wanted", "def_wanted": "def_wanted"}
+
+
+def declaration_pattern(kinds: dict[str, str]) -> re.Pattern:
+    return re.compile(
+        rf"^[ \t]*{IN_PREFIX}(?P<modifiers>{MODIFIERS})(?:class\s+(?=inductive\b))?(?P<kind>{'|'.join(kinds)})\b[ \t]*"
+        rf"(?:\(priority\s*:=[^)\n]*\)[ \t]*)?(?P<name>{NAME})?",
+        re.M,
+    )
+
+
+DECLARATION = declaration_pattern(KINDS)
+DECLARATION_WANTED = declaration_pattern(KINDS | WANTED_KINDS)
 NAMESPACE = re.compile(rf"^[ \t]*namespace[ \t]+(?P<name>{NAME})[ \t]*$")
 SECTION = re.compile(rf"^[ \t]*(?:(?:noncomputable|public)[ \t]+)*section(?:[ \t]+(?P<name>{NAME}))?[ \t]*$")
 MUTUAL = re.compile(r"^[ \t]*mutual[ \t]*$")
 END = re.compile(rf"^[ \t]*end(?:[ \t]+(?P<name>{NAME}))?[ \t]*$")
 # A line at column 0 that starts a command ends the declaration before it.
-COMMAND = re.compile(
-    rf"^(?:{IN_PREFIX}{MODIFIERS}(?:{'|'.join(KINDS)}|example|namespace|section|end|open|variable|universe|"
-    r"set_option|attribute|mutual|notation|infix|infixl|infixr|prefix|postfix|macro|macro_rules|syntax|elab|"
-    r"elab_rules|alias|export|initialize|omit|include|deriving|#\w+)\b)"
-)
+def command_pattern(kinds: dict[str, str]) -> re.Pattern:
+    return re.compile(
+        rf"^(?:{IN_PREFIX}{MODIFIERS}(?:{'|'.join(kinds)}|example|namespace|section|end|open|variable|universe|"
+        r"set_option|attribute|mutual|notation|infix|infixl|infixr|prefix|postfix|macro|macro_rules|syntax|elab|"
+        r"elab_rules|alias|export|initialize|omit|include|deriving|#\w+)\b)"
+    )
+
+
+COMMAND = command_pattern(KINDS)
+COMMAND_WANTED = command_pattern(KINDS | WANTED_KINDS)
 SORRY = re.compile(r"(?<![\w.'])(?:sorry|sorryAx|admit)(?![\w'!?])|^[ \t]*(?:·[ \t]*)?stop(?![\w'!?])(?!\s*:=)", re.M)
 EXIT = re.compile(r"^#exit\b")
 RAW_STRING = re.compile(r'r(#*)"')
@@ -180,11 +195,13 @@ def scan(text: str) -> dict[str, Declaration] | None:
     return named
 
 
-def declarations(text: str, relaxed: bool = False) -> list[Declaration] | None:
+def declarations(text: str, relaxed: bool = False, wanted: bool = False) -> list[Declaration] | None:
     """Each declaration the file writes, in order: those scan() gives, the `private` ones under their written
     full names, and the anonymous instances, whose name is ""; None when its scopes don't close as they open.
     With *relaxed*, a name on the line after its keyword counts too, and a modifier on the lines before the
-    keyword's does not stand between the declaration and its attributes."""
+    keyword's does not stand between the declaration and its attributes. With *wanted*, the WANTED_KINDS
+    commands are declarations too, of their own kinds."""
+    declaration, command = (DECLARATION_WANTED, COMMAND_WANTED) if wanted else (DECLARATION, COMMAND)
     found_spans = spans(text)
     code = clear(text, found_spans)
     # Comments go but strings stay, for reading attributes.
@@ -219,7 +236,7 @@ def declarations(text: str, relaxed: bool = False) -> list[Declaration] | None:
     for number, line in enumerate(lines, 1):
         if EXIT.match(line):
             break
-        if open_decl and line[:1].strip() and COMMAND.match(line):
+        if open_decl and line[:1].strip() and command.match(line):
             close()
         if match := NAMESPACE.match(line):
             close()
@@ -249,7 +266,7 @@ def declarations(text: str, relaxed: bool = False) -> list[Declaration] | None:
             elif not scopes or scopes.pop()[1]:
                 return None
             continue
-        if match := DECLARATION.match(line):
+        if match := declaration.match(line):
             close()
             name = match["name"]
             if relaxed and not name and not line[match.end():].strip():
@@ -268,7 +285,7 @@ def declarations(text: str, relaxed: bool = False) -> list[Declaration] | None:
                     [part for kind, part in scopes if kind == "namespace"] + [name])
                 rest = match.end()
             base = offsets[number - 1]
-            open_decl = (full, KINDS[match["kind"]], number, base + match.start("modifiers"), base + rest,
+            open_decl = (full, (KINDS | WANTED_KINDS)[match["kind"]], number, base + match.start("modifiers"), base + rest,
                          [line[rest:]], "private" in match["modifiers"].split())
             continue
         if open_decl:
