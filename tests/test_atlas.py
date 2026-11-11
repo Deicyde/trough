@@ -75,8 +75,6 @@ FILES = {
     # Not read: a test library.
     "MathlibExtTest/Shift.lean": "namespace MathlibExt\n\ntheorem absent : True := trivial\n\nend MathlibExt\n",
 }
-README = ('<p align="center">\n  <strong>Autoformalized Textbook Library At Scale</strong><br />\n'
-          "  A large-scale Lean 4 library of textbook mathematics formalized with LLMs.\n</p>\n")
 LICENSE = ("Codebase is not intended for use to train models\n\n\n                                 Apache License\n"
            "                           Version 2.0, January 2004\n")
 MANIFEST = json.dumps({"packages": [{"name": "mathlib", "rev": "d" * 40, "inputRev": "v4.35.0"}]})
@@ -98,7 +96,7 @@ def git(path: Path, *args: str) -> str:
 
 def checkout(root: Path, files: dict[str, str] = FILES, license_text: str = LICENSE) -> Path:
     # Shaped like the sparse checkout the workflow makes.
-    write(root, files | {"LICENSE": license_text, "README.md": README, "lean-toolchain": "leanprover/lean4:v4.35.0\n",
+    write(root, files | {"LICENSE": license_text, "lean-toolchain": "leanprover/lean4:v4.35.0\n",
                          "lake-manifest.json": MANIFEST})
     git(root, "init", "--quiet")
     git(root, "add", "-A")
@@ -255,8 +253,6 @@ def test_the_refresh_writes_the_source_the_structure_and_the_articles(tmp_path):
     assert (source["repo"], source["branch"], source["rev"], source["date"], source["toolchain"]) == (
         atlas.REPO, atlas.BRANCH, rev, "2026-11-11T06:16:11Z", "v4.35.0")
     assert (source["mathlib"], source["license_notice"]) == ("d" * 40, "Codebase is not intended for use to train models")
-    assert source["readme"] == {"name": "Autoformalized Textbook Library At Scale",
-                                "description": "A large-scale Lean 4 library of textbook mathematics formalized with LLMs."}
     assert source["site"] == {"url": atlas.SITE, "cards": True} and source["counts"]["results"] == 7
     assert sorted(path.name for path in (out / "articles").iterdir()) == ["Analysis.json", "GroupTheory.json"]
     structure = json.loads((out / "structure.json").read_text(encoding="utf-8"))

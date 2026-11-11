@@ -475,8 +475,8 @@ the vault's text point to this chapter's pages. The archived `v1/` is under a
 non-commercial license and is not read.
 
 1. `tools/refresh_atlas.py CHECKOUT` reads a checkout of the fork and writes
-   `data/atlas/`: `source.json`, the commit, its README's description, the
-   LICENSE's own sentence before the Apache License and the counts;
+   `data/atlas/`: `source.json`, the commit, the LICENSE's own sentence before
+   the Apache License and the counts;
    `structure.json`, the vault's areas, subjects and containers in order, with
    their titles and prose; and `articles/<Subject>.json`, each result's title,
    statement and declaration, with the file, line and kind that declare it.

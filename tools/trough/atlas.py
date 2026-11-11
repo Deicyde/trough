@@ -46,7 +46,6 @@ PART = re.compile(r"^## \[(?P<text>.*)\]\((?P<target>(?:part-\d+/)+README\.md)\)
 PART_DIR = re.compile(r"^part-\d+$")
 INLINE_LINK = re.compile(r"(?<!!)\[(?P<text>(?:[^\[\]\n]|\[[^\[\]\n]*\])*)\]\((?P<target>[^()\s]+)\)")
 UNESCAPED_BRACE = re.compile(r"(?<!\\)\{")
-STRONG = re.compile(r"<strong>(?P<name>[^<]+)</strong><br\s*/?>\s*(?P<line>[^<\n]+)")
 
 
 APACHE = "Apache License Version 2.0, January 2004"
@@ -529,8 +528,6 @@ def intro(data: dict, stats: Counter) -> str:
     source = data["source"]
     counts = source["counts"]
     site = source.get("site", {})
-    readme = source.get("readme", {})
-    words = f" Its README calls it “{readme['description']}”" if readme.get("description") else ""
     site_line = (f"The ATLAS site, {SITE}, publishes the vault, a card per result; each block links its card there."
                  if site.get("cards") else
                  f"The ATLAS site, {SITE}, publishes the vault, but its pages did not hold the results' cards when "
@@ -540,8 +537,8 @@ def intro(data: dict, stats: Counter) -> str:
               if counts.get("unread_files") else "")
     return "\n\n".join([
         f"[ATLAS]({GITHUB}/{UPSTREAM}), the Autoformalized Textbook Library At Scale from Meta, is a Lean library of "
-        f"textbook mathematics formalized with LLMs, generated with [AutoformBot]({GITHUB}/facebookresearch/autoform-bot)."
-        f"{words}. Its vault, the roadmap the ATLAS site publishes, is kept on the `{BRANCH}` branch of "
+        f"textbook mathematics formalized with LLMs, generated with [AutoformBot]({GITHUB}/facebookresearch/autoform-bot). "
+        f"Its vault, the roadmap the ATLAS site publishes, is kept on the `{BRANCH}` branch of "
         f"[{source['repo']}]({GITHUB}/{source['repo']}); this chapter maps it as read at commit {at(source)} "
         f"({source['date'][:10]}), Lean toolchain {source['toolchain']}, Mathlib "
         f"{source.get('mathlib_version') or source['mathlib'][:8]}.",

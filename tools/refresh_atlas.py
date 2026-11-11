@@ -6,15 +6,15 @@
 CHECKOUT is a git checkout of Deicyde/atlas-lean at the commit to pin; a sparse
 checkout is enough: blueprint/roadmap/, blueprint/links/, blueprint/atlas.json,
 the Lean under MathlibExt/, CSLibExt/, PhyslibExt/, WantedExt/ and Atlas/,
-README.md, lean-toolchain, lake-manifest.json and LICENSE. This writes
-data/atlas/source.json (the commit, its date, toolchain and Mathlib, the
-README's words and the counts), structure.json (the vault's areas and subjects,
-and its containers in order with their titles and prose) and articles/XX.json,
-the results of subject XX: each one's title, statement and Lean declaration, and
-where the repository's Lean declares it, read by trough.leansource without
-Lean. With --site, the blocks link the results' cards on the ATLAS site when its
-pages hold them; when it does not answer at all, the last record's value is
-kept if its results are the same.
+lean-toolchain, lake-manifest.json and LICENSE. This writes
+data/atlas/source.json (the commit, its date, toolchain and Mathlib, and the
+counts), structure.json (the vault's areas and subjects, and its containers in
+order with their titles and prose) and articles/XX.json, the results of subject
+XX: each one's title, statement and Lean declaration, and where the
+repository's Lean declares it, read by trough.leansource without Lean. With
+--site, the blocks link the results' cards on the ATLAS site when its pages hold
+them; when it does not answer at all, the last record's value is kept if its
+results are the same.
 
 The LICENSE's own words before the Apache License's text are kept, to quote with
 the credit. Nothing is written when the license is not Apache-2.0, when the
@@ -69,12 +69,6 @@ def fetch(url: str, method: str, attempts: int = 3, wait: float = 10.0) -> bytes
     raise atlas.Unreachable(url)
 
 
-def readme_words(text: str) -> dict:
-    """The README's one-line description, under its name."""
-    match = atlas.STRONG.search(text)
-    return {"name": match["name"].strip(), "description": " ".join(match["line"].split())} if match else {}
-
-
 def last_paths(out: Path) -> set[str]:
     return {article["path"] for shard in sorted((out / "articles").glob("*.json"))
             for article in json.loads(shard.read_text(encoding="utf-8"))["articles"]}
@@ -101,7 +95,6 @@ def refresh(checkout: Path, out: Path, site: bool = False, fetcher=fetch) -> lis
     mathlib = next((package for package in json.loads(manifest.read_text(encoding="utf-8")).get("packages", [])
                     if package.get("name") == "mathlib"), {}) if manifest.is_file() else {}
     toolchain = checkout / "lean-toolchain"
-    readme = checkout / "README.md"
     source = {
         "repo": atlas.REPO, "branch": atlas.BRANCH, "rev": rev,
         # In UTC, as git versions print %cI differently.
@@ -109,7 +102,6 @@ def refresh(checkout: Path, out: Path, site: bool = False, fetcher=fetch) -> lis
         "toolchain": toolchain.read_text(encoding="utf-8").strip().split(":")[-1] if toolchain.is_file() else "",
         "mathlib": mathlib.get("rev", ""), "mathlib_version": mathlib.get("inputRev", ""),
         "license": "Apache-2.0", "license_notice": notice,
-        "readme": readme_words(readme.read_text(encoding="utf-8")) if readme.is_file() else {},
         "counts": counts,
     }
     if site:

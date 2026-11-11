@@ -119,7 +119,7 @@ jobs:
           git -C "$dir" remote add origin https://github.com/Deicyde/atlas-lean.git
           git -C "$dir" fetch --quiet --depth 1 --filter=blob:none origin "$REV"
           git -C "$dir" sparse-checkout set --no-cone /blueprint/roadmap/ /blueprint/links/ /blueprint/atlas.json \
-            /MathlibExt/ /CSLibExt/ /PhyslibExt/ /WantedExt/ /Atlas/ /README.md /LICENSE /lean-toolchain /lake-manifest.json
+            /MathlibExt/ /CSLibExt/ /PhyslibExt/ /WantedExt/ /Atlas/ /LICENSE /lean-toolchain /lake-manifest.json
           git -C "$dir" checkout --quiet FETCH_HEAD
           du -sh "$dir"
 
