@@ -14,6 +14,10 @@ hooks:
   # The blueprint libraries' Lean names live in their own repositories: link
   # them to their documentation instead of calling them missing.
   - hooks/lean_links.py
+  # Pygments wraps every token of a code block in a span; the spans of
+  # whitespace and names change nothing on the page, and are half of a page of
+  # Lean statements.
+  - hooks/slim_code.py
 
 # The nav is not listed here. `autoform render` writes it to SUMMARY.md from
 # the vault's own page order, which mkdocs-literate-nav reads, so a project's

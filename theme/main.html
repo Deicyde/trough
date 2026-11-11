@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+{#- hooks/slim_code.py drops the spans of names from code blocks, which Material
+    sets in the name color; AutoformBot sets dark code in another, so a block it
+    marks takes the name color there and a name looks as it did. -#}
+<style>[data-md-color-scheme=slate] .plain-names code{color:var(--md-code-hl-name-color)}</style>
+{% endblock %}
+
 {% block footer %}
 <footer class="md-footer">
   <div class="md-footer-meta md-typeset">
