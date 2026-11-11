@@ -109,4 +109,4 @@ Stated as [`Eq1323.op_Ly_Ry_eq_LSy`](https://teorth.github.io/equational_theorie
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/1323.tex, line 37](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/1323.tex#L37)
+- [Equational Theories blueprint: chapter/1323.tex, line 37](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/1323.tex#L37)

@@ -2,7 +2,7 @@
 
 The arguments here are due to Jyun-Jie Liao.
 
-Previously in [Definition eta-def](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/entropy_pfr.tex#L3) we had set $\eta=1/9$. To implement this chapter, one should refactor the previous arguments so that $\eta$ is now free to be a positive number, though the specific hypothesis $\eta=1/9$ would now need to be added to [$\tau$-decrement](../entropy-version-of-pfr/endgame/de-prop.md).
+Previously in [Definition eta-def](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/entropy_pfr.tex#L3) we had set $\eta=1/9$. To implement this chapter, one should refactor the previous arguments so that $\eta$ is now free to be a positive number, though the specific hypothesis $\eta=1/9$ would now need to be added to [$\tau$-decrement](../entropy-version-of-pfr/endgame/de-prop.md).
 
 Let $X^0_1, X^0_2$ be $G$-valued random variables, and let $X_1, X_2$ be $\tau$-minimizers as defined in [$\tau$-minimizer](../entropy-version-of-pfr/tau-min-def.md).
 

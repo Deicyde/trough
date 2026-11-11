@@ -23,4 +23,4 @@ Stated as [`Law.MagmaLaw.implies_iff_dual`](https://teorth.github.io/equational_
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/general_implications.tex, line 57](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/general_implications.tex#L57)
+- [Equational Theories blueprint: chapter/general_implications.tex, line 57](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/general_implications.tex#L57)

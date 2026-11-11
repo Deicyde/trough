@@ -27,4 +27,4 @@ Stated as [`RelaxedVeryWeakCentralGroupoid.Greedy.exists_extension`](https://teo
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/weak_central_groupoids.tex, line 87](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/weak_central_groupoids.tex#L87)
+- [Equational Theories blueprint: chapter/weak_central_groupoids.tex, line 87](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/weak_central_groupoids.tex#L87)

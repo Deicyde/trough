@@ -23,4 +23,4 @@ Stated as [`Refutation_854.Greedy.exists_extension`](https://teorth.github.io/eq
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/854.tex, line 231](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/854.tex#L231)
+- [Equational Theories blueprint: chapter/854.tex, line 231](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/854.tex#L231)

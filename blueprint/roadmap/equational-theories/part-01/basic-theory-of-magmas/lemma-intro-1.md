@@ -24,4 +24,4 @@ Formalized as [`FreeMagma.elementsOfNumNodesEq_card_eq_catalan_mul_pow`](https:/
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/intro.tex, line 36](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/intro.tex#L36)
+- [Equational Theories blueprint: chapter/intro.tex, line 36](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/intro.tex#L36)

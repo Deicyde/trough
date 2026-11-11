@@ -28,4 +28,4 @@ Formalized as [`weak_PFR_int_sumset`](https://teorth.github.io/pfr/docs/find/#do
 
 ## Sources
 
-- [Polynomial Freiman-Ruzsa blueprint: chapter/weak_pfr.tex, line 234](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/weak_pfr.tex#L234)
+- [Polynomial Freiman-Ruzsa blueprint: chapter/weak_pfr.tex, line 234](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/weak_pfr.tex#L234)

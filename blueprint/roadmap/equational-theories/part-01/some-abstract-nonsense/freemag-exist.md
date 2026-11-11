@@ -23,7 +23,7 @@ Let $\Gamma$ be a theory with alphabet $X$.
 
 ## Proof
 
-For (i), we define $M_{X,\Gamma} = M_X / \sim$, where the equivalence relation $\sim$ is defined by requiring $w \sim w'$ if and only if $\Gamma \models w \simeq w'$; this is an equivalence relation thanks to [Equivalence](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/intro.tex#L142), and from [Birkhoff's completeness theorem](../basic-theory-of-magmas/sound-complete.md) we see that this relation respects the magma operations, so that $M_{X,\Gamma}$ is a magma. The map $\iota_{X,\Gamma}: X \to M_{X,\Gamma}$ is defined by setting $\iota_{X,\Gamma}(x)$ to be the equivalence class of $x$ in $M_{X,\Gamma}$ for each $x \in X$.
+For (i), we define $M_{X,\Gamma} = M_X / \sim$, where the equivalence relation $\sim$ is defined by requiring $w \sim w'$ if and only if $\Gamma \models w \simeq w'$; this is an equivalence relation thanks to [Equivalence](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/intro.tex#L142), and from [Birkhoff's completeness theorem](../basic-theory-of-magmas/sound-complete.md) we see that this relation respects the magma operations, so that $M_{X,\Gamma}$ is a magma. The map $\iota_{X,\Gamma}: X \to M_{X,\Gamma}$ is defined by setting $\iota_{X,\Gamma}(x)$ to be the equivalence class of $x$ in $M_{X,\Gamma}$ for each $x \in X$.
 
 We first check that $M_{X,\Gamma}$ satisfies $\Gamma$. Let $w \simeq w'$ be a law in $\Gamma$, and let $f: X \to M_{X,\Gamma}$ be a function. We may lift this function to a function $\tilde{f}: X \to M_X$. From [Derivation](../basic-theory-of-magmas/derivation-def.md), we have $\Gamma \models w \simeq w'$ and hence $\Gamma \models \varphi_{\tilde{f}}(w) \simeq \varphi_{\tilde{f}}(w')$. By [Birkhoff's completeness theorem](../basic-theory-of-magmas/sound-complete.md), we conclude $\Gamma \models \varphi_{\tilde{f}}(w) \simeq \varphi_{\tilde{f}}(w')$. Quotienting by $\sim$, we conclude that $\varphi_f(w) = \varphi(w')$, giving the claim by [Models](../basic-theory-of-magmas/models-def.md).
 
@@ -35,4 +35,4 @@ Formalized as [`FreeMagma.EvalFreeMagmaWithLawsUniversalProperty`](https://teort
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/abstract_nonsense.tex, line 15](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/abstract_nonsense.tex#L15)
+- [Equational Theories blueprint: chapter/abstract_nonsense.tex, line 15](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/abstract_nonsense.tex#L15)

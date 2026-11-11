@@ -1,6 +1,6 @@
 # Greedy algorithm constructions
 
-In [The Asterix equation](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/infinite_magma_constructions.tex#L33) a magma satisfying one law and refuting another was obtained by using the fact that over translation-invariant magmas, equational laws simplify to univariate functional equations, and solving the resulting equation using a greedy algorithm.
+In [The Asterix equation](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/infinite_magma_constructions.tex#L33) a magma satisfying one law and refuting another was obtained by using the fact that over translation-invariant magmas, equational laws simplify to univariate functional equations, and solving the resulting equation using a greedy algorithm.
 
 One way to construct infinite magmas satisfying specific laws is via a greedy algorithm construction not on a one-variable functional equation, but on the operation table of the magma itself.
 
@@ -84,7 +84,7 @@ $$
 R(y,x,z) \hbox{ and } R(y,x',z) \implies x=x'\qquad\text{(1)}
 $$
 
-simply by starting with a partial solution, say on the natural numbers in which (e.g.) $R(1,2,0)$, $R(1,3,0)$ are the only situations in which $R$ holds. One can easily verify that this satisfies (VLT) and (65), (65'), but not (1), and so any magma constructed by the above greedy construction will not be left-cancellative. Since the Obelix law [E1491](https://teorth.github.io/equational_theories/implications/?1491) forces left-cancellativity, this gives an alternate proof of [Asterix does not imply Obelix](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/infinite_magma_constructions.tex#L180).
+simply by starting with a partial solution, say on the natural numbers in which (e.g.) $R(1,2,0)$, $R(1,3,0)$ are the only situations in which $R$ holds. One can easily verify that this satisfies (VLT) and (65), (65'), but not (1), and so any magma constructed by the above greedy construction will not be left-cancellative. Since the Obelix law [E1491](https://teorth.github.io/equational_theories/implications/?1491) forces left-cancellativity, this gives an alternate proof of [Asterix does not imply Obelix](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/infinite_magma_constructions.tex#L180).
 
 ## Equation 1722
 

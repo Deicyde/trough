@@ -24,4 +24,4 @@ Formalized as [`FiniteModel.Finite.fn_eventually_periodic'`](https://teorth.gith
 
 ## Sources
 
-- [Equational Theories blueprint: chapter/infinite_models.tex, line 105](https://github.com/teorth/equational_theories/blob/2ddb16c4c4c036242ad3e18167579b57cac2a006/blueprint/src/chapter/infinite_models.tex#L105)
+- [Equational Theories blueprint: chapter/infinite_models.tex, line 105](https://github.com/teorth/equational_theories/blob/8b87204d5b201e1cf6c69b8dcabb0558109bee00/blueprint/src/chapter/infinite_models.tex#L105)

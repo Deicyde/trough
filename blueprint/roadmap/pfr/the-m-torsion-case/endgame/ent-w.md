@@ -22,7 +22,7 @@ Its statement uses no other node that has an article here.
 
 ## Proof
 
-Without loss of generality, we may take $X_1,\dots,X_m$ to be independent. Write $S = \sum_{i=1}^m X_i$. Note that for each $j \in \mathbb{Z}/m\mathbb{Z}$, the sum $Q_j$ from [Additional random variables](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/torsion.tex#L594) above has the same distribution as $S$. By [Kaimonovich–Vershik–Madiman inequality](../more-ruzsa-distance-estimates/klm-1.md) we have
+Without loss of generality, we may take $X_1,\dots,X_m$ to be independent. Write $S = \sum_{i=1}^m X_i$. Note that for each $j \in \mathbb{Z}/m\mathbb{Z}$, the sum $Q_j$ from [Additional random variables](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/torsion.tex#L594) above has the same distribution as $S$. By [Kaimonovich–Vershik–Madiman inequality](../more-ruzsa-distance-estimates/klm-1.md) we have
 
 $$
 \begin{aligned}
@@ -56,4 +56,4 @@ Formalized as [`entropy_of_W_le`](https://teorth.github.io/pfr/docs/find/#doc/en
 
 ## Sources
 
-- [Polynomial Freiman-Ruzsa blueprint: chapter/torsion.tex, line 688](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/torsion.tex#L688)
+- [Polynomial Freiman-Ruzsa blueprint: chapter/torsion.tex, line 688](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/torsion.tex#L688)

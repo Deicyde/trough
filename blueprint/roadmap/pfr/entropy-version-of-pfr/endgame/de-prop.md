@@ -58,7 +58,7 @@ k &\leq \Bigl(1+\frac{\eta}{3}\Bigr)\Bigl(6\eta k-\frac{1-5\eta}{1-\eta}(2\eta k
 \end{aligned}
 $$
 
-since the quantity $2 \eta k - I_1$ is non-negative (by [First estimate](../first-estimate/first-estimate.md)), and its coefficient in the above expression is non-positive provided that $\eta(2\eta + 17) \le 3$, which is certainly the case with [Definition eta-def](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/entropy_pfr.tex#L3). Moreover, from [Definition eta-def](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/entropy_pfr.tex#L3) we have $8 \eta + \eta^2 < 1$. It follows that $k=0$, as desired.
+since the quantity $2 \eta k - I_1$ is non-negative (by [First estimate](../first-estimate/first-estimate.md)), and its coefficient in the above expression is non-positive provided that $\eta(2\eta + 17) \le 3$, which is certainly the case with [Definition eta-def](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/entropy_pfr.tex#L3). Moreover, from [Definition eta-def](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/entropy_pfr.tex#L3) we have $8 \eta + \eta^2 < 1$. It follows that $k=0$, as desired.
 
 ## Lean
 
@@ -66,4 +66,4 @@ Formalized as [`tau_strictly_decreases`](https://teorth.github.io/pfr/docs/find/
 
 ## Sources
 
-- [Polynomial Freiman-Ruzsa blueprint: chapter/entropy_pfr.tex, line 382](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/entropy_pfr.tex#L382)
+- [Polynomial Freiman-Ruzsa blueprint: chapter/entropy_pfr.tex, line 382](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/entropy_pfr.tex#L382)

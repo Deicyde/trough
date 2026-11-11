@@ -28,4 +28,4 @@ Formalized as [`tau_minimizer_exists`](https://teorth.github.io/pfr/docs/find/#d
 
 ## Sources
 
-- [Polynomial Freiman-Ruzsa blueprint: chapter/entropy_pfr.tex, line 36](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/blueprint/src/chapter/entropy_pfr.tex#L36)
+- [Polynomial Freiman-Ruzsa blueprint: chapter/entropy_pfr.tex, line 36](https://github.com/teorth/pfr/blob/1ef23c3c5a83db690fe3b3b5c2e8299fae17b81a/blueprint/src/chapter/entropy_pfr.tex#L36)
