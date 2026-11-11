@@ -276,3 +276,9 @@ def test_the_refresh_writes_nothing_from_a_checkout_it_cannot_read(tmp_path):
     last = {"schema": atlas.SCHEMA, "rev": "e" * 40, "articles": [{"path": f"X/{n}.md"} for n in range(20)]}
     (out / "articles" / "X.json").write_text(json.dumps(last), encoding="utf-8")
     assert refresh_atlas.refresh(checkout(tmp_path / "good"), out) == ["7 results, under half the 20 of the last record"]
+
+
+def test_a_result_heading_escapes_its_braces_outside_code_and_formulas():
+    # A heading ending in `{...}` would be read as an attribute list.
+    assert atlas.heading("The gene tree with cherry {0, 2}") == "The gene tree with cherry \\{0, 2}"
+    assert atlas.heading("Sums over $\\{0, 1\\}^n$ and `{x}`") == "Sums over $\\{0, 1\\}^n$ and `{x}`"

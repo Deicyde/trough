@@ -27,7 +27,7 @@ from urllib.parse import quote as percent
 
 from . import leansource
 from .blueprints import Built, escape
-from .formal_conjectures import natural, plural
+from .formal_conjectures import OPAQUE, natural, plural
 from .vault import Container, Entry, Leaf, chunk, slugify
 
 SCHEMA = "trough-atlas/v1"
@@ -45,6 +45,7 @@ ITEM = re.compile(r"^- \[(?P<text>.*)\]\((?P<target>[^()\s]+)\)\s*$")
 PART = re.compile(r"^## \[(?P<text>.*)\]\((?P<target>(?:part-\d+/)+README\.md)\)\s*$")
 PART_DIR = re.compile(r"^part-\d+$")
 INLINE_LINK = re.compile(r"(?<!!)\[(?P<text>(?:[^\[\]\n]|\[[^\[\]\n]*\])*)\]\((?P<target>[^()\s]+)\)")
+UNESCAPED_BRACE = re.compile(r"(?<!\\)\{")
 STRONG = re.compile(r"<strong>(?P<name>[^<]+)</strong><br\s*/?>\s*(?P<line>[^<\n]+)")
 
 
@@ -354,8 +355,18 @@ def relink(text: str, directory: str, targets: set[str], topics: dict[str, str],
     return INLINE_LINK.sub(link, text)
 
 
+def heading(title: str) -> str:
+    """A result's title as a heading, each brace outside code and formulas escaped: a heading that ends in `{...}`,
+    as "cherry {0, 2}" does, would be read as an attribute list, which the site does not publish."""
+    parts, last = [], 0
+    for match in OPAQUE.finditer(title):
+        parts += [UNESCAPED_BRACE.sub(r"\\{", title[last:match.start()]), match.group()]
+        last = match.end()
+    return "".join(parts) + UNESCAPED_BRACE.sub(r"\\{", title[last:])
+
+
 def result_block(article: dict, source: dict, site: bool, relinked: Callable[[str, str], str]) -> str:
-    lines = [f"## {article['title']}", ""]
+    lines = [f"## {heading(article['title'])}", ""]
     if article["statement"]:
         lines += [relinked(article["statement"], posixpath.dirname(article["path"])), ""]
     text = lean_line(article, source)
