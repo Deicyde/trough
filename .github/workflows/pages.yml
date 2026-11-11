@@ -18,6 +18,7 @@ on:
       - "uv.lock"
       - ".github/autoform-ref"
       - ".github/workflows/pages.yml"
+      - "wrangler.jsonc"
   # Every pull request runs, so the site job can be a required check. One that
   # changes none of the paths above skips the build; see the pick job.
   pull_request:
@@ -35,6 +36,8 @@ permissions:
 
 env:
   AUTOFORM_SOURCE: "https://github.com/facebookresearch/autoform-bot.git"
+  # No usage reports from wrangler, the Cloudflare deploy tool.
+  WRANGLER_SEND_METRICS: "false"
 
 # Runs that publish share one group, so no two deploy or pin at once. Each pull
 # request gets a group of its own, where a newer push replaces its run.
@@ -82,7 +85,7 @@ jobs:
           git -c core.quotePath=false diff --no-renames --name-only "$BASE" HEAD > "$RUNNER_TEMP/changed"
           if grep -qE \
             -e '^(blueprint|catalog|data|tools|scripts|theme|hooks|wiki)/' \
-            -e '^(mkdocs\.yml|pyproject\.toml|uv\.lock)$' \
+            -e '^(mkdocs\.yml|pyproject\.toml|uv\.lock|wrangler\.jsonc)$' \
             -e '^\.github/(autoform-ref|workflows/pages\.yml)$' \
             "$RUNNER_TEMP/changed"; then
             echo "skip=false" >> "$GITHUB_OUTPUT"
@@ -148,6 +151,16 @@ jobs:
       - name: Check published routes, anchors, and article cards
         run: python3 scripts/check_site.py site-src site
 
+      - name: Install Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "22"
+
+      # Reads wrangler.jsonc and the built site as the Cloudflare deploy will,
+      # without uploading: a file over Cloudflare's size limit fails here.
+      - name: Check the Cloudflare deploy
+        run: npx --yes wrangler@4.160.0 deploy --dry-run
+
       - name: Upload Pages artifact
         if: >-
           github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
@@ -155,9 +168,9 @@ jobs:
         with:
           path: site
 
-      # A pull request's site, to read before it merges.
+      # A pull request's site, to read before it merges, and main's, for the
+      # Cloudflare deploy.
       - name: Keep the built site
-        if: github.event_name == 'pull_request'
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: site
@@ -197,8 +210,37 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
 
+  # The site's new home, trough.jackmccarthy.org: a Cloudflare Worker that
+  # serves site/ (wrangler.jsonc). A deploy uploads only new or changed files,
+  # so it has no limit like GitHub Pages' 10 minutes per deployment and 1 GB per
+  # site. It needs the CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID secrets.
+  cloudflare:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out project
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Fetch the built site
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: site
+          path: site
+
+      - name: Install Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "22"
+
+      - name: Deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4.160.0 deploy
+
   pin:
-    needs: [pick, build, deploy]
+    needs: [pick, build, deploy, cloudflare]
     if: needs.pick.outputs.new == 'true' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     permissions:
