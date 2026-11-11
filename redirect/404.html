@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Trough has moved</title>
+<script>
+  // An old address is /trough/<path>; the new site serves the same path at its root.
+  var path = location.pathname.replace(/^\/trough(?=\/|$)/, "") || "/";
+  location.replace("https://trough.jackmccarthy.org" + path + location.search + location.hash);
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://trough.jackmccarthy.org/"></noscript>
+</head>
+<body>
+<p>Trough has moved to <a href="https://trough.jackmccarthy.org/">trough.jackmccarthy.org</a>.</p>
+</body>
+</html>
