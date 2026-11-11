@@ -1,0 +1,34 @@
+---
+declaration: theorem
+origin: cited
+lean: RootPairing.demazureOperator_demazureOperator
+statement: formalized
+proof: formalized
+---
+
+# The Demazure operator is idempotent, `Dᵢ² = Dᵢ`
+
+```lean
+RootPairing.demazureOperator_demazureOperator.{u_1, u_2, u_3} {ι : Type u_1} {M : Type u_2}
+  {N : Type u_3} [AddCommGroup M] [AddCommGroup N] (P : RootPairing ι ℤ M N) (i : ι)
+  (f : AddMonoidAlgebra ℤ M) :
+  (P.demazureOperator i) ((P.demazureOperator i) f) = (P.demazureOperator i) f
+```
+
+## Depends on
+
+Its statement uses no other declaration mapped here.
+
+## Proof depends on
+
+- [The localization identity of the Demazure operator](the-localization-identity-of-the-demazure-operat.md)
+
+## Lean
+
+Formalized in Tau Ceti as [`RootPairing.demazureOperator_demazureOperator`](https://taucetiproject.org/docs/TauCeti/LinearAlgebra/RootSystem/Weyl/Demazure/Basic.html#RootPairing.demazureOperator_demazureOperator).
+
+## Sources
+
+- [Tau Ceti documentation: `RootPairing.demazureOperator_demazureOperator`](https://taucetiproject.org/docs/TauCeti/LinearAlgebra/RootSystem/Weyl/Demazure/Basic.html#RootPairing.demazureOperator_demazureOperator)
+- [Source of `RootPairing.demazureOperator_demazureOperator` in TauCeti/LinearAlgebra/RootSystem/Weyl/Demazure/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/LinearAlgebra/RootSystem/Weyl/Demazure/Basic.lean#L230)
+- [Tau Ceti roadmap status: Schubert geometry, Demazure sections and flag K-theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/SchubertGeometry/STATUS.md)

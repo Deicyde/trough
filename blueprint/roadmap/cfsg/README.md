@@ -37,7 +37,7 @@ Its formalization.yaml names 2 main results.
 theorem CFSGComparator.classification : TauCeti.ClassificationStatement.{u}
 ```
 
-It names `TauCeti.ClassificationStatement`, which has [an article](../tauceti/group-theory/stating-the-classification-of-finite-simple-grou/classification-of-finite-simple-groups-statement.md) in the Tau Ceti chapter.
+It names `TauCeti.ClassificationStatement`, which has [an article](../tauceti/part-01/group-theory/stating-the-classification-of-finite-simple-grou/classification-of-finite-simple-groups-statement.md) in the Tau Ceti chapter.
 
 `CFSG.Milestones.cfsg_classification_native_and_realization` (theorem), in [CFSG/Milestones/CFSG_classification.lean, line 4633](https://github.com/AxiomMath/CFSG/blob/69cb972f587a3ecc035e092253167ff2e303c962/CFSG/Milestones/CFSG_classification.lean#L4633). Its milestone has [an article](milestones/part-01/cfsg-classification.md).
 

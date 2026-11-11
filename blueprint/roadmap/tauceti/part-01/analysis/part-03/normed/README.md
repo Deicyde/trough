@@ -1,0 +1,43 @@
+# Normed
+
+Results named in Tau Ceti's `TauCeti.Analysis.Normed` modules and in no roadmap's section, as Tau Ceti has them at commit [a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418).
+
+## [Ambient small perturbation… to The method of continuity…](part-01/README.md)
+
+- [Ambient small perturbation theorem](part-01/ambient-small-perturbation-theorem.md)
+- [Banach's lemma](part-01/banachs-lemma.md)
+- [Banach–Steinhaus theorem (Uniform Boundedness Principle) over a Tate ring](part-01/banach-steinhaus-theorem-uniform-boundedness-pri.md)
+- [Bounded Inverse Theorem](part-01/bounded-inverse-theorem.md)
+- [Closed Graph Theorem for normed modules over a Tate ring](part-01/closed-graph-theorem-for-normed-modules-over-a-t.md)
+- [Cohen's factorization theorem for Banach algebras](part-01/cohens-factorization-theorem-for-banach-algebras.md)
+- [The continuous first isomorphism theorem for Banach algebras](part-01/the-continuous-first-isomorphism-theorem-for-ban.md)
+- [Cramer's rule bound](part-01/cramers-rule-bound.md)
+- [The Duhamel identity for the exponential of a bounded operator](part-01/the-duhamel-identity-for-the-exponential-of-a-bo.md)
+- [Ehrling's inequality](part-01/ehrlings-inequality.md)
+- [Gantmacher's criterion](part-01/gantmachers-criterion.md)
+- [Gantmacher's theorem](part-01/gantmachers-theorem.md)
+- [The Garling–Gordon theorem](part-01/the-garling-gordon-theorem.md)
+- [Gelfand's formula in a nonunital complex Banach algebra](part-01/gelfands-formula-in-a-nonunital-complex-banach-a.md)
+- [Grothendieck's theorem](part-01/grothendiecks-theorem.md)
+- [Hölder's inequality for weak norms](part-01/holders-inequality-for-weak-norms.md)
+- [The Kadec–Snobar theorem](part-01/the-kadec-snobar-theorem.md)
+- [Local Neumann formula for the resolvent](part-01/local-neumann-formula-for-the-resolvent.md)
+- [Mazur's lemma, in sequential form](part-01/mazurs-lemma-in-sequential-form.md)
+- [The method of continuity (Gilbarg–Trudinger, Theorem 5.2)](part-01/the-method-of-continuity-gilbarg-trudinger-theor.md)
+
+## [Neumann series criterion… to Šilov's theorem](part-02/README.md)
+
+- [Neumann series criterion (`TauCeti.IsNormMulUnit.of_norm_sub_lt`)](part-02/neumann-series-criterion-tauceti-isnormmulunit-o.md)
+- [The nilpotent/invertible Riesz decomposition](part-02/the-nilpotent-invertible-riesz-decomposition.md)
+- [Norm double-annihilator theorem](part-02/norm-double-annihilator-theorem.md)
+- [Open Mapping Theorem for normed modules over a Tate ring](part-02/open-mapping-theorem-for-normed-modules-over-a-t.md)
+- [The quadratic Taylor estimate for the exponential](part-02/the-quadratic-taylor-estimate-for-the-exponentia.md)
+- [Quantitative Open Mapping Theorem](part-02/quantitative-open-mapping-theorem.md)
+- [Riesz's lemma, translated form](part-02/rieszs-lemma-translated-form.md)
+- [Schauder's theorem](part-02/schauders-theorem.md)
+- [Schur's theorem (`lp.tendsto_of_tendsto_toWeakSpace_one`)](part-02/schurs-theorem-lp-tendsto-of-tendsto-toweakspace.md)
+- [Sequential Closed Graph Theorem for normed modules over a Tate ring](part-02/sequential-closed-graph-theorem-for-normed-modul.md)
+- [Sinclair's stability lemma](part-02/sinclairs-stability-lemma.md)
+- [Ultrametric Neumann estimate](part-02/ultrametric-neumann-estimate.md)
+- [Young's inequality](part-02/youngs-inequality.md)
+- [Šilov's theorem](part-02/silovs-theorem.md)

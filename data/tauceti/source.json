@@ -1,6 +1,6 @@
 {
- "date": "2026-11-07T00:26:04Z",
+ "date": "2026-11-11T08:00:01Z",
  "repo": "TauCetiProject/TauCeti",
- "rev": "ace60277c4c5ba2166795686bca1af4052290145",
+ "rev": "a6027b1d24fcb935c53bd5b50d11b40991cda418",
  "toolchain": "leanprover/lean4:v4.36.0-rc2"
 }

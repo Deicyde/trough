@@ -1,0 +1,37 @@
+---
+declaration: theorem
+origin: cited
+lean: TauCeti.Contour.isExactOn_of_starConvex
+statement: formalized
+proof: formalized
+---
+
+# Holomorphic functions have primitives on a star-shaped set
+
+If `U` is open and
+star-shaped about some point, then every function holomorphic on `U` has a primitive on `U`.
+
+```lean
+TauCeti.Contour.isExactOn_of_starConvex {U : Set ℂ} {f : ℂ → ℂ} {x : ℂ} (hU : IsOpen U)
+  (hstar : StarConvex ℝ x U) (hf : DifferentiableOn ℂ f U) : Complex.IsExactOn f U
+```
+
+## Depends on
+
+Its statement uses no other declaration mapped here.
+
+## Proof depends on
+
+- [The converse of Cauchy's theorem](the-converse-of-cauchys-theorem.md)
+- [Generalized winding number (HW Def 2.1)](../../../analysis/part-01/contour-integration-and-the-hungerbuhler-wasem-g/generalized-winding-number-hw-def-2-1.md)
+- [The homology Cauchy theorem (roadmap `homologyCauchyTheorem`, Layer 3)](../../../analysis/part-01/contour-integration-and-the-hungerbuhler-wasem-g/the-homology-cauchy-theorem-roadmap-homologycauc.md)
+
+## Lean
+
+Formalized in Tau Ceti as [`TauCeti.Contour.isExactOn_of_starConvex`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/Primitive.html#TauCeti.Contour.isExactOn_of_starConvex).
+
+## Sources
+
+- [Tau Ceti documentation: `TauCeti.Contour.isExactOn_of_starConvex`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/Primitive.html#TauCeti.Contour.isExactOn_of_starConvex)
+- [Source of `TauCeti.Contour.isExactOn_of_starConvex` in TauCeti/Analysis/Contour/Primitive.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Contour/Primitive.lean#L253)
+- [Tau Ceti roadmap status: Bounded Laplace and ordered Dirichlet boundary convergence](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/TauberianBoundaryConvergence/STATUS.md)

@@ -1,28 +1,29 @@
 {
  "schema": "trough-tauceti-roadmaps/v1",
  "repo": "TauCetiProject/TauCetiRoadmap",
- "rev": "eaf17b10d9267c0e3cdd3b62dd5e8983e47c690d",
- "date": "2026-11-07T01:32:20+11:00",
+ "rev": "9f7c032adaf1b838e8183d63ff3cfa886d061cb3",
+ "date": "2026-11-11T14:19:30Z",
  "roadmaps": [
   {
    "id": "AdicSpaces",
    "path": "Completed/AdicSpaces",
    "title": "Foundations of adic spaces",
    "names": [
-    "TauCeti.WittVector.isStronglyNoetherian_intervalRing",
-    "TauCeti.WittVector.isStablySheafyRing_intervalRing",
     "TauCeti.FarguesFontaine.isSheaf_spaYPresheaf",
     "TauCeti.FarguesFontaine.quotientMap_image_window_mem_affinoidOpens",
     "TauCeti.FarguesFontaine.spaXAdicSpaceCongr",
+    "TauCeti.WittVector.isStronglyNoetherian_intervalRing",
+    "TauCeti.WittVector.isStablySheafyRing_intervalRing",
     "TauCeti.Huber.isSheafyRing_of_isStronglyNoetherian",
     "TauCeti.Huber.isTopologicallyFiniteType_algebraMap_iff_isAffinoidAlgebra",
     "TauCeti.ValuationSpectrum.isAdic_presentationLimitPreAdicSpace_of_isAffinoidAlgebra",
     "TauCeti.ValuationSpectrum.exists_eq_classicalPoint_or_discPoint_or_discPointAbove_or_discPointBelow_or_nestedDiscPoint",
+    "TauCeti.ValuationSpectrum.mem_spaRationalFamily_iff_isHoledDiscUnion",
     "TauCeti.PreAdicSpace.isAdic",
-    "TauCeti.AdicSpace.mono_of_isClosedImmersion",
-    "TauCeti.Huber.IsTateRing.isOpenMap",
-    "TauCeti.Huber.IsTateRing.isStrictMap_of_isClosed_range",
-    "TauCeti.Huber.IsHuberRing.subring"
+    "TauCeti.ValuationSpectrum.isOpenImmersion_presentationLimitPreAdicSpaceComap_toCompletionLocHom",
+    "LinearMap.isOpenMap_of_isTateRing",
+    "TauCeti.Huber.IsTateRing.exists_presentation_isStrictMap_isOpenMap",
+    "TauCeti.ValuationSpectrum.exists_mem_spa_le_supp_iff_closure_ne_top"
    ]
   },
   {
@@ -50,12 +51,17 @@
    "path": "Completed/AnalyticToricGeometry",
    "title": "Analytic toric geometry",
    "names": [
+    "TauCeti.Toric.Fan.analyticConeOrbitTorusDiffeomorph",
+    "TauCeti.Toric.Fan.exists_isManifold_closure_analyticConeOrbit_isSmoothEmbedding",
     "TauCeti.Toric.Fan.exists_partialDiffeomorph_analyticBoundaryComponent_normalForm",
     "TauCeti.Toric.FanHom.isProperMap_analyticMap_iff",
     "TauCeti.Toric.Fan.isProperMap_analyticMap_starSubdivisionAlong",
     "TauCeti.Toric.Fan.compactSpace_analyticRealization_iff_isComplete",
     "TauCeti.Toric.Fan.algebraicAnalyticEquiv_smul",
+    "TauCeti.Toric.Fan.algebraicConeOrbitTorusHomeomorph",
+    "TauCeti.Toric.Fan.analyticTorusPartialDiffeomorph",
     "TauCeti.Toric.Fan.algebraicRealizationModObj",
+    "TauCeti.Toric.specMap_smul_eq_lift_comp_affineToricSchemeAction",
     "TauCeti.Toric.Fan.projectiveSpace",
     "TauCeti.Toric.projectiveSpaceDiffeomorph"
    ]
@@ -88,11 +94,11 @@
     "NumberField.Chebotarev.hasNaturalDensity_frobeniusPrimeSet",
     "NumberField.Chebotarev.frobeniusPsi_asymptotic_of_mul_comm",
     "NumberField.Chebotarev.hasDirichletDensity_setOf_map_inertiaDeg_eq",
+    "NumberField.Chebotarev.hasNaturalDensity_setOf_map_inertiaDeg_eq",
     "NumberField.Chebotarev.hasDirichletDensity_primesCongruent",
     "NumberField.Chebotarev.frobeniusPrimeSet",
     "NumberField.Chebotarev.fixedField_frobenius_fiber_card",
-    "TauCeti.NumberField.Chebotarev.crossingConstant",
-    "TauCeti.NumberField.Chebotarev.exists_forall_lt_crossingConstant"
+    "TauCeti.NumberField.Chebotarev.crossingConstant"
    ]
   },
   {
@@ -101,18 +107,13 @@
    "title": "Conformal mapping and the geometric theory of holomorphic functions",
    "names": [
     "TauCeti.riemannMapping",
+    "TauCeti.IsJordanCurve.natCard_connectedComponents_compl_eq_two",
     "TauCeti.exists_homeomorph_closedBall_closure_of_isJordanCurve_frontier",
-    "TauCeti.exists_continuousOn_closedBall_eqOn_iff_locallyConnectedSpace_frontier",
     "TauCeti.exists_bijOn_const_mul_schwarzChristoffelPrimitive_add_of_isJordanCurve_frontier",
-    "TauCeti.exists_bijOn_const_mul_schwarzChristoffelPrimitive_add_of_isJordanCurve_insert_infty",
-    "TauCeti.differentiableOn_schwarzReflection_of_symmetric",
+    "TauCeti.exists_bijOn_const_mul_schwarzChristoffelPrimitive_add_of_polygonal_ends",
     "TauCeti.exists_eqOn_const_mul_add_iff_logDeriv_deriv_eqOn",
-    "TauCeti.PrimeEnd",
-    "TauCeti.exists_bijective_primeEnd_map_unitDiscPrimeEnd_of_isJordanCurve_frontier",
-    "Path.IsCrosscut.natCard_connectedComponents_sdiff_range_eq_two",
-    "TauCeti.IsJordanCurve.not_isPreconnected_compl",
-    "TauCeti.IsJordanCurve.frontier_connectedComponentIn",
-    "TauCeti.natCard_zerothHomotopy_sphere_compl_range_eq_two"
+    "TauCeti.injOn_schwarzChristoffelPrimitive_of_sum_abs_le_one",
+    "TauCeti.schwarzChristoffelCompactifiedBoundary_injective_of_edge_intersections"
    ]
   },
   {
@@ -144,13 +145,15 @@
     "TauCeti.DenseGraphLimits.InfiniteExchangeableGraphLaw.existsUnique_bind_infiniteSampleLawOnSpace",
     "TauCeti.DenseGraphLimits.isDissociated_iff_exists_toRelationalLaw_sampleExchangeableLaw",
     "TauCeti.DenseGraphLimits.tendsto_cutDist_iff_forall_homDensity_tendsto",
+    "TauCeti.DenseGraphLimits.tendsto_cutDist_finiteGraphGraphon_iff_forall_homDensityFin_tendsto",
     "TauCeti.DenseGraphLimits.exists_graphon_tendsto_cutDist_finiteGraphGraphon_iff_forall_homDensityFin_cauchySeq",
     "TauCeti.DenseGraphLimits.GraphonSpace.instCompactSpace",
     "TauCeti.DenseGraphLimits.weak_regularity_frieze_kannan",
+    "TauCeti.DenseGraphLimits.exists_refinement_energy_add_sq_lt",
     "TauCeti.DenseGraphLimits.cutDist",
     "TauCeti.DenseGraphLimits.cutDist_triangle",
     "TauCeti.DenseGraphLimits.Graphon.unitIntervalRepr",
-    "TauCeti.Probability.ExchangeableRelationalLaw",
+    "Measurable.exists_eq_measurable_comp_prodMap",
     "TauCeti.DenseGraphLimits.InfiniteExchangeableGraphLaw.relationalLawEquiv"
    ]
   },
@@ -160,14 +163,12 @@
    "title": "Effective arithmetic bounds and geometry of numbers",
    "names": [
     "NumberField.ncard_setOf_finiteDimensional_abs_discr_le_le",
+    "TauCeti.NumberField.Units.regulatorLowerBound_le_regulator",
+    "TauCeti.NumberField.Units.unitHeightLowerBound_le_logHeight₁",
     "NumberField.card_ideal_absNorm_le",
-    "TauCeti.GeometryOfNumbers.ncard_inter_box_two_le_pow_mul_ncard_inter_box_one",
-    "TauCeti.Polynomial.ncard_biUnion_roots_natDegree_le_abs_intCoeff_le",
-    "TauCeti.finite_setOf_naiveHeight_le",
-    "NumberField.Units.regulator_eq_one_of_rank_eq_zero",
-    "TauCeti.GeometryOfNumbers.box",
-    "NumberField.coeffBoundOfDiscrBdd",
-    "NumberField.hermiteCountBound",
+    "TauCeti.GeometryOfNumbers.ncard_inter_pi_closedBall_two_le_pow_mul_of_discreteTopology",
+    "TauCeti.covolume_fullUnitLattice_fullLogEuclideanVolume",
+    "TauCeti.NumberField.Units.unitPowerCountBound",
     "TauCeti.index_square_le_of_closure_eq_top"
    ]
   },
@@ -177,6 +178,7 @@
    "title": "Exchangeability and de Finetti",
    "names": [
     "TauCeti.Probability.jointlyExchangeable_iff_exists_map_jointArray_eq",
+    "TauCeti.Probability.SeparatelyExchangeable.exists_map_separateArray_eq",
     "TauCeti.Probability.markovExchangeable_iff_mixedMarkovChain",
     "TauCeti.Probability.deFinetti_RyllNardzewski_equivalence",
     "TauCeti.Probability.ExchangeableAt.etvDist_prefixLaw_sampleWithReplacement_le",
@@ -194,14 +196,13 @@
    "names": [
     "TauCeti.GlobalNumberFields.rayClassIdealCount",
     "TauCeti.GlobalNumberFields.HeckeCharacter.isFiniteOrder_iff_exists_rayClassCharacter",
-    "TauCeti.GlobalNumberFields.HeckeCharacter.mem_conductor_infinitePart_iff",
     "TauCeti.GlobalNumberFields.ratModulusEquivGal",
+    "TauCeti.GlobalNumberFields.ratFiniteModulusEquivZMod",
+    "TauCeti.GlobalNumberFields.card_rayClassGroup_eq_iff",
     "TauCeti.GlobalNumberFields.NumberFieldOrder.mem_ker_rayClassToPic",
-    "TauCeti.GlobalNumberFields.NumberFieldOrder.mem_ker_rayClassToNarrowPic",
-    "TauCeti.GlobalNumberFields.NumberFieldOrder.isGorenstein_iff_forall_isUnit",
     "IsDedekindDomain.FiniteAdeleRing.sIntegralAdeles",
-    "TauCeti.GlobalNumberFields.normOneProdEquiv",
-    "TauCeti.GlobalNumberFields.adeleBaseChangeEquiv_tower"
+    "IsDedekindDomain.FiniteAdeleRing.principalParts",
+    "TauCeti.GlobalNumberFields.normOneProdEquiv"
    ]
   },
   {
@@ -209,17 +210,17 @@
    "path": "Completed/HeightsAndUnits",
    "title": "Heights, units and S-units of number fields",
    "names": [
-    "TauCeti.NumberField.Units.exists_fundSystem_prod_absLogHeight₁_le",
-    "TauCeti.NumberField.Units.regulator_le_prod_absLogHeight₁",
-    "ZLattice.prod_successiveMin_mul_measure_le_two_pow_mul_covolume",
+    "Matrix.exists_basis_ker_mulVecLin_prod_norm_le",
     "Matrix.exists_linearIndependent_mulVec_eq_zero_prod_norm_le",
-    "Submodule.two_pow_finrank_le_volume_setOf_forall_abs_le_one",
+    "Matrix.exists_ne_zero_mulVec_eq_zero_norm_le",
+    "TauCeti.NumberField.Units.exists_fundSystem_prod_absLogHeight₁_le",
+    "ZLattice.prod_successiveMin_mul_measure_le_two_pow_mul_covolume",
     "TauCeti.NumberField.SUnit.regulator_eq_abs_det",
-    "TauCeti.absoluteProjectiveTupleHeight_eq_one_iff",
     "ZLattice.successiveMin",
     "ZLattice.exists_basis_mem_smul_successiveMin",
     "Matrix.minorGcd",
     "Matrix.minorGcd_mul_subspaceHeight_ker_mulVecLin",
+    "Submodule.exists_basis_intPoints_prod_norm_le_subspaceHeight",
     "TauCeti.NumberField.SUnit.logEmbeddingEquiv"
    ]
   },
@@ -257,10 +258,11 @@
     "TauCeti.Manifold.isGeodesicallyCompleteAt_of_compactSpace",
     "TauCeti.Manifold.inner_mfderiv_riemannianExp_radial",
     "TauCeti.Manifold.isEnergyCritical_iff_isGeodesicCurveOn",
-    "TauCeti.Manifold.two_mul_apply_deriv_eq_derivBilinearTensor_of_isLeviCivitaConnection",
+    "TauCeti.Manifold.ContMDiffNondegenerateMetricFamily.two_mul_apply_deriv_eq_derivBilinearTensor_of_isLeviCivitaConnection",
     "TauCeti.Manifold.ContMDiffNondegenerateMetric.leviCivitaConnection",
     "TauCeti.Manifold.riemannianExp",
-    "TauCeti.Manifold.ContMDiffNondegenerateMetricFamily"
+    "TauCeti.Manifold.ContMDiffNondegenerateMetricFamily.variation",
+    "TauCeti.Manifold.ContMDiffNondegenerateMetricFamily.contMDiff_covariantDerivative_of_isLeviCivitaConnection"
    ]
   },
   {
@@ -269,24 +271,20 @@
    "title": "Infinitary syntax, back-and-forth, and Scott analysis",
    "names": [
     "TauCeti.scott_isomorphism",
-    "TauCeti.realize_scottSentenceAt_iff",
-    "TauCeti.karp_theorem_at",
     "TauCeti.karp_theorem",
     "TauCeti.countable_infEquivAt_nat_iff_iso",
     "TauCeti.realize_scottFormula_iff_bfEquiv",
     "TauCeti.internalScottRank_lt_omega_one",
     "TauCeti.selfStabilizationOrdinal_eq_iSup_orbitRank",
-    "TauCeti.elementarilyEquivalent_int_sumLex_int",
-    "TauCeti.not_infEquivAt_nat_int_sumLex_int",
-    "TauCeti.exists_dlo_aleph_one_potentialIso_isEmpty_equiv",
+    "TauCeti.exists_sentenceω_realize_iff_nonempty_orderIso",
+    "TauCeti.not_exists_theory_model_iff_nonempty_orderIso",
     "FirstOrder.Language.BoundedFormulaInf",
     "FirstOrder.Language.BoundedFormulaInf.reindex",
-    "FirstOrder.Language.BoundedFormulaInf.freeVarSupport",
     "TauCeti.BFEquiv",
     "TauCeti.PotentialIso",
-    "TauCeti.PotentialIso.trans",
-    "TauCeti.BFEquiv.realize_iff_of_qrank_le",
-    "TauCeti.exists_complete_self_stabilization"
+    "TauCeti.bfEquiv_all_iff_exists_equiv_comp_eq",
+    "TauCeti.PotentialIso.nonempty_equiv_of_cg",
+    "FirstOrder.Language.nonempty_equiv_graphExpansion_iff"
    ]
   },
   {
@@ -298,11 +296,12 @@
     "TauCeti.IntegralLattice.evenIntermediateCarrierOrderIsoIsotropicSubgroup",
     "TauCeti.IntegralLattice.checkerboardDiscriminantQuadraticIsometry",
     "TauCeti.IntegralLattice.IsPosDef.nonempty_isometry_of_isUnimodular_of_finrank_le_nine",
-    "TauCeti.IntegralLattice.IsPosDef.nonempty_isometry_typeE₈RootLattice_of_isEven",
-    "TauCeti.IntegralLattice.weylGroup_typeE₈RootLattice_eq_top",
+    "TauCeti.IntegralLattice.mass_typeE₈RootLattice",
     "TauCeti.IntegralLattice",
     "TauCeti.IntegralLattice.discriminantQuadraticModule",
-    "TauCeti.IntegralLattice.IsPosDef.unitNormDecomposition"
+    "TauCeti.IntegralLattice.mass",
+    "TauCeti.IntegralLattice.properClassNumber",
+    "TauCeti.IntegralLattice.sum_inv_natCard_isometry_eq_mass_iff"
    ]
   },
   {
@@ -311,15 +310,19 @@
    "title": "Local fields and ramification",
    "names": [
     "TauCeti.nonempty_continuousMulEquiv_iwasawaGroup",
+    "TauCeti.exists_marked_tameQuotient_padic_two",
     "TauCeti.LocalFieldsRamification.upperJump_iff_exists_isCyclic_intermediateField",
     "TauCeti.LocalFieldsRamification.map_restrictNormalHom_upperRamificationGroup",
     "TauCeti.DyadicCyclotomicEight.map_restrictSqrtTwo_lowerRamificationGroup_three_ne",
     "TauCeti.quotientWildInertiaSubgroupEquiv",
     "TauCeti.nonempty_continuousMulEquiv_piPadicInt",
-    "TauCeti.exists_topologicalClosure_zpowers_eq_tameInertia",
+    "TauCeti.topologicalClosure_zpowers_toTameQuotient_eq_iff",
     "TauCeti.maximalUnramifiedGaloisGroupEquivZHat",
     "TauCeti.algebraicExtensionNormedField",
     "TauCeti.wildInertiaSubgroup",
+    "TauCeti.mem_wildInertiaSubgroup_iff_forall_restrictNormal_mem_finiteGaloisLowerRamificationGroup",
+    "TauCeti.maximalTameExtension_eq_fixedField_inf_separableClosure",
+    "TauCeti.tameQuotientEquivMaximalTameExtension",
     "TauCeti.PrimeToPTateModule.continuousMulEquivPiPadicTateTwist"
    ]
   },
@@ -332,13 +335,11 @@
     "TauCeti.isDemushkin_absoluteGaloisGroupProP_of_mu",
     "TauCeti.absoluteGaloisGroupProP_two_ratPadic_marked",
     "TauCeti.absoluteGaloisGroupProP_two_ratPadicSqrtNegTwo_marked",
+    "TauCeti.absoluteGaloisGroupProP_marked_of_q_ne_two_finiteExtension",
+    "TauCeti.absoluteGaloisGroupProP_two_marked_of_degree_odd_finiteExtension",
     "TauCeti.absoluteGaloisGroupProP_marked_of_q_ne_two_congr",
-    "TauCeti.absoluteGaloisGroupProP_two_marked_of_degree_odd_congr",
-    "TauCeti.absoluteGaloisGroupProP_two_marked_of_degree_even_congr",
-    "TauCeti.range_localCyclotomicCharacter_eq_of_ringEquiv",
     "TauCeti.ClassFieldTheory.localCyclotomicCharacter_artinMap_unit",
     "TauCeti.padicCompletionUnitsEquivAbelianizationProP",
-    "TauCeti.padicCompletionUnitsNormCokernelEquiv",
     "TauCeti.nonempty_layerTateModule",
     "TauCeti.nonempty_linearEquiv_of_projective_of_tensorRat"
    ]
@@ -369,10 +370,13 @@
     "TauCeti.NumberField.factorizationType_eq_cycleType_isArithFrobAt",
     "TauCeti.semilocalEquiv",
     "IsDedekindDomain.HeightOneSpectrum.multiplicity_differentIdeal_eq_finsum_card_ramificationGroup_sub_one",
+    "IsDedekindDomain.HeightOneSpectrum.ramificationIdx_mul_multiplicity_differentIdeal_fixedField",
     "TauCeti.NumberField.multiplicity_relDiscr_fixedField_eq_sum",
     "TauCeti.NumberField.Units.UnitCandidateEliminationCertificate.sound",
     "Ideal.doubleCosetQuotientEquivPrimesOverOfIsIntegralClosure",
+    "Ideal.card_stabilizer_eq_ramificationIdxIn_mul_inertiaDegIn",
     "TauCeti.relDiscr",
+    "TauCeti.NumberField.mem_ramifiedSupport_iff_exists",
     "TauCeti.NumberFieldArithmetic.artinHomAway"
    ]
   },
@@ -390,7 +394,8 @@
     "TauCeti.bcr_semigroup_bochner",
     "TauCeti.Semigroups.StronglyContinuousSemigroup.ofBounded_resolvent_eq_inv_smul_tsum_pow",
     "TauCeti.Complexification",
-    "TauCeti.laplaceTransform_conv"
+    "TauCeti.laplaceTransform_conv",
+    "TauCeti.bochnerMeasure_mul"
    ]
   },
   {
@@ -423,10 +428,11 @@
     "CliffordAlgebra.evenUnitaryGroup_le_lipschitzGroup",
     "TauCeti.hyperbolicSixSpinEquivSpecialLinear",
     "CliffordAlgebra.exists_spinGroupEquivSymplecticGroup_of_finrank_eq_five",
-    "CliffordAlgebra.exists_injective_spinGroup_symplecticGroup_of_finrank_eq_five",
     "TauCeti.QuadraticMap.isCompact_orthogonalGroup_iff",
     "TauCeti.QuadraticMap.OrthogonalCompactOpens.discreteTopology_range_fullAdelicSpinDiagonal",
     "TauCeti.QuadraticMap.OrthogonalCompactOpens.not_discreteTopology_range_finiteAdelicSpecialOrthogonalDiagonal",
+    "CliffordAlgebra.orthogonalSpinorNorm",
+    "TauCeti.multiplicativeSquareClassEquiv",
     "TauCeti.QuadraticMap.OrthogonalCompactOpens.fullAdelicSpin",
     "TauCeti.QuadraticMap.OrthogonalCompactOpens.awayAdelicSpin",
     "TauCeti.QuadraticMap.OrthogonalCompactOpens.finiteAdelicSpinDoubleCoset"
@@ -442,7 +448,7 @@
     "TauCeti.Peripheral.exists_defect_eq_one_of_forall_exists_mem_level",
     "TauCeti.Peripheral.not_exists_peripheral_identity_two",
     "TauCeti.Peripheral.exists_peripheralAut",
-    "TauCeti.Peripheral.exists_ne_of_apply_eq_conj",
+    "TauCeti.Peripheral.exists_peripheralAut_conj_cusp",
     "TauCeti.Peripheral.IsPeripheralPermAut.unique",
     "TauCeti.Peripheral.permData",
     "TauCeti.Peripheral.exists_isPeripheralPermAut_swap_rank_one",
@@ -451,11 +457,9 @@
     "TauCeti.Peripheral.continuous_exponent",
     "TauCeti.Peripheral.peripheralAut",
     "TauCeti.Peripheral.exponent",
-    "TauCeti.Peripheral.peripheralAut_eq_top_rank_one",
     "TauCeti.Peripheral.level",
-    "TauCeti.Peripheral.exists_mem_level_succ",
     "TauCeti.Peripheral.forall_mem_level_iff",
-    "TauCeti.principalUnitsEquiv"
+    "TauCeti.map_conj_eq_conj_of_map_eq_conj"
    ]
   },
   {
@@ -465,7 +469,7 @@
    "names": [
     "TauCeti.exists_monic_int_polynomial_hasFullSymmetricGaloisGroup",
     "TauCeti.existsUnique_transitiveGroupLabel_five",
-    "Polynomial.Monic.isSquare_discr_iff_sign_eq_one",
+    "Polynomial.Separable.isSquare_discr_iff_sign_eq_one",
     "TauCeti.ResolventSpec.orbitQuotientEquivFactors",
     "TauCeti.isSolvable_gal_iff_exists_isRoot_specialize_quinticF20Spec",
     "TauCeti.ResolventSpec",
@@ -481,21 +485,20 @@
    "names": [
     "TauCeti.IsProP.isProP_ker_mapQuotient_proPFrattini",
     "TauCeti.ContinuousAut.isOpen_ker_mapQuotient_proPFrattini",
-    "TauCeti.IsProP.range_pi_mapQuotient_ker_proPFrattini",
     "TauCeti.freeProP.exteriorSquareEquivLcsGradedPieceOne",
-    "TauCeti.freeProP.lcsDegreeOneBasis",
     "TauCeti.freeProP.finrank_lcsGradedPiece_one",
     "TauCeti.outerAction",
     "TauCeti.continuous_outerAction",
     "TauCeti.zHat.ringEquivPiPadicInt",
     "TauCeti.zHat.unitsEquivPiPadicInt",
-    "TauCeti.freeProP.continuousAutToGL_surjective",
+    "TauCeti.zHat.isIdempotentElem_iff_exists_idemOfSet",
+    "TauCeti.zHat.idemOfSet_mem_range_intCast_iff",
     "TauCeti.zpowHat",
     "TauCeti.zpowHat_eq_padicPow_component",
     "TauCeti.gradedLieHom",
     "TauCeti.IsProP.gradedLieAlgebra",
     "TauCeti.ContinuousAut.compactSpace",
-    "TauCeti.ClosedSubgroupConjClasses"
+    "TauCeti.ContinuousAut.isClosed_isConj"
    ]
   },
   {
@@ -504,7 +507,7 @@
    "title": "Profinite and pro-`p` groups",
    "names": [
     "TauCeti.IsDemushkin.nonempty_continuousMulEquiv_iff",
-    "TauCeti.IsDemushkin.nonempty_continuousMulEquiv_of_even_demushkinRank_of_range_eq_unitsPlusMinus",
+    "TauCeti.freeProP.exists_continuousMulEquiv_apply_eq_demushkinWordTwoOdd_of_odd",
     "TauCeti.IsDemushkin.cohomologicalDimensionAt_eq_two",
     "TauCeti.IsDemushkin.dualityMap1_zModTwist_bijective",
     "TauCeti.IsDemushkin.openSubgroup",
@@ -514,7 +517,8 @@
     "TauCeti.IsDemushkin",
     "TauCeti.freeProP.exists_continuousMulEquiv_apply_eq_of_range_basisModificationDelta_eq_top",
     "TauCeti.profiniteFrattini",
-    "TauCeti.topologicalClosure_closure_eq_top_iff_quotient_profiniteFrattini"
+    "TauCeti.topologicalClosure_closure_eq_top_iff_quotient_profiniteFrattini",
+    "TauCeti.topologicalClosure_closure_range_eq_top_of_ker_le_profiniteFrattini"
    ]
   },
   {
@@ -529,15 +533,13 @@
     "TauCeti.instHasSemialgebraicProjectionsReal",
     "TauCeti.exists_isQF_realize_iff",
     "TauCeti.isSemialgebraic_iff_definable_ring_real",
+    "Polynomial.preimage_derivativeSign_subsingleton_or_eq_Ioo",
     "TauCeti.exists_analytic_delineation_of_orderAt_discr_eq",
     "Finset.IsSquarefreeBasis",
-    "TauCeti.IsMcCallumWellOriented",
     "TauCeti.exists_nullified_mcCallumProjection_orderAt_ne",
     "TauCeti.exists_signInvariant_mcCallumProjection_stackCells_not_signInvariant",
     "TauCeti.nonempty_lazardDelineation_of_lazardProjection",
-    "TauCeti.IsCAD.exists_isCAD_lazardValuation_eq_of_lazardDelineation_reindex",
-    "Finset.integerProjection",
-    "Finset.image_map_integerProjection"
+    "TauCeti.IsCAD.exists_isCAD_lazardValuation_eq_of_lazardDelineation_reindex"
    ]
   },
   {
@@ -550,7 +552,7 @@
     "TauCeti.not_isTopologicalGroup_restrictedProduct_rat_bot",
     "TauCeti.not_continuous_restrictedProductSum_symm",
     "TauCeti.restrictedProductSum",
-    "TauCeti.continuous_restrictedProductSum_symm_of_principal",
+    "TauCeti.continuous_restrictedProductSum_symm_comp_prodMap_inclusion",
     "TauCeti.continuous_rationalDiagonal",
     "TauCeti.continuous_eval_and_not_continuous_rationalDiagonal_range_coeMonoidHom",
     "TauCeti.restrictedProductMap_surjective_iff",
@@ -558,7 +560,7 @@
     "TauCeti.restrictedProductCongr",
     "TauCeti.doubleCosetCongr",
     "TauCeti.addAwayDecomposition",
-    "TauCeti.addRationalDiagonal"
+    "TauCeti.addRestrictedProductSum"
    ]
   },
   {
@@ -581,6 +583,25 @@
    ]
   },
   {
+   "id": "AbhyankarLemma",
+   "path": "TauCetiRoadmap/AbhyankarLemma",
+   "title": "Abhyankar's lemma for a regular divisor",
+   "names": [
+    "TauCeti.Algebra.isUnramifiedWRT_iff_etale",
+    "TauCeti.IsDiscreteValuationRing.integralClosure_eq_adjoin_of_pow_eq_of_irreducible",
+    "TauCeti.IsDiscreteValuationRing.eq_adjoin_pow_finrank_of_pow_eq_of_irreducible",
+    "TauCeti.IsRegularLocalRing.of_quotient_nonZeroDivisor",
+    "Algebra.IsFiniteSplit.of_henselianLocalRing",
+    "AlgebraicGeometry.Scheme.Hom.exists_split_etaleLocally",
+    "TauCeti.Algebra.IsUnramifiedWRT.baseChange",
+    "TauCeti.Algebra.IsTamelyRamifiedWRT",
+    "TauCeti.isTamelyRamifiedWRT_iff_isTamelyRamified",
+    "AlgebraicGeometry.Scheme.Hom.IsTamelyRamifiedInCodimOne",
+    "TauCeti.abhyankarModel",
+    "TauCeti.isIntegralClosure_abhyankarModel"
+   ]
+  },
+  {
    "id": "AdicEtaleGeometry",
    "path": "TauCetiRoadmap/AdicEtaleGeometry",
    "title": "Analytic adic geometry for diamonds",
@@ -600,18 +621,21 @@
    "path": "TauCetiRoadmap/AdicSpacesPartII",
    "title": "Foundations of adic spaces, part II — morphisms and analytification",
    "names": [
-    "TauCeti.cechComplexLocalization_exact",
-    "AddMonoidHom.exact_completion",
+    "TauCeti.AdicSpace.affinoid_isPullback",
+    "TauCeti.AdicSpace.affinoid_isPullback_of_isStablySheafyRing_left",
+    "TauCeti.AdicSpace.ofPairHomEquiv",
     "TauCeti.Huber.PairOfDefinition.isStrictMap_of_isNoetherianRing",
-    "TauCeti.Huber.PairOfDefinition.isClosed_of_isNoetherianRing",
-    "TauCeti.Huber.PairOfDefinition.ofTensorProduct_bijective",
-    "TauCeti.AlgebraicGeometry.submoduleBlowup.isProper_toSpec",
-    "TauCeti.AlgebraicGeometry.submoduleBlowup.basicOpenIsoSpec",
-    "Ideal.isNoetherianRing_of_isAdicComplete",
-    "TauCeti.Huber.IsNoetherianType",
-    "TauCeti.Huber.NoetherianCech.filtration",
-    "TauCeti.Huber.NoetherianCech.completedTerm",
-    "TauCeti.Huber.tensorTopology"
+    "TauCeti.Huber.PairOfDefinition.completionTensorHomeomorph",
+    "TauCeti.AdicSpace.isAdic_iff_mapsTo_analyticPoints",
+    "TauCeti.ValuationSpectrum.spaDirectLimitHomeomorph",
+    "TauCeti.ValuationSpectrum.exists_spaComap_preimage_rationalSubset",
+    "TauCeti.Huber.Pair.completedTensor",
+    "TauCeti.Huber.Pair.uniformCompletedTensor",
+    "TauCeti.AdicSpace.ofPair",
+    "TauCeti.AdicSpace.comapOfPair",
+    "TauCeti.AdicSpace.IsAdic",
+    "TauCeti.AdicSpace.LocallyOfPlusWeaklyFiniteType",
+    "TauCeti.AdicSpace.IsLocallyNoetherian"
    ]
   },
   {
@@ -619,15 +643,22 @@
    "path": "TauCetiRoadmap/AdicSpacesPartIV",
    "title": "Foundations of adic spaces, part IV — étale sites, families and dagger geometry",
    "names": [
-    "TauCeti.Dagger.isUnit_washnitzerAlgebra_iff",
-    "TauCeti.Dagger.washnitzerAlgebra.isUnit_toTate_iff",
-    "TauCeti.Dagger.primitive_mem_washnitzerAlgebra",
-    "MvPowerSeries.exists_gaussNorm_primitive_le",
-    "TauCeti.Dagger.washnitzerAlgebra.exists_triangularEquiv_isDistinguished_isUnit",
-    "TauCeti.Dagger.exists_isDistinguished_isUnit_of_isDistinguished_one",
-    "TauCeti.Dagger.washnitzerAlgebra",
-    "TauCeti.Dagger.washnitzerAlgebra.toTate",
-    "TauCeti.Dagger.washnitzerAlgebra.substEquiv"
+    "TauCeti.Dagger.existsUnique_mul_add_eq_of_isDistinguished",
+    "TauCeti.Dagger.washnitzerAlgebra.existsUnique_isUnit_isMonicOfDegree_mul_eq",
+    "TauCeti.Dagger.washnitzerAlgebra.isNoetherianRing",
+    "TauCeti.Dagger.washnitzerAlgebra.uniqueFactorizationMonoid",
+    "TauCeti.Dagger.washnitzerAlgebra.ringKrullDim_eq_natCard",
+    "TauCeti.Dagger.washnitzerAlgebra.faithfullyFlat_toTate",
+    "TauCeti.Dagger.washnitzerAlgebra.maximalSpectrumComap_toTate_bijective",
+    "TauCeti.Dagger.faithfullyFlat_toCompletion",
+    "TauCeti.Dagger.adicCompletionAlgEquiv",
+    "TauCeti.Dagger.IsDaggerAlgebra.exists_ringKrullDim_eq_finite_injective",
+    "TauCeti.Dagger.IsDaggerAlgebra",
+    "TauCeti.Dagger.completion",
+    "TauCeti.Dagger.FringePresentation",
+    "TauCeti.Dagger.FringePresentation.fringeTopology",
+    "TauCeti.Dagger.Omega",
+    "TauCeti.Dagger.Omega.washnitzerBasis"
    ]
   },
   {
@@ -637,13 +668,19 @@
    "names": [
     "TauCeti.CurrentAlgebra.invariantFormsResidueClassEquiv",
     "TauCeti.CurrentAlgebra.finrank_continuousSecondCohomology_eq_one",
-    "TauCeti.LieAlgebra.LoopAlgebra.twoCocycle_eq_span_killingForm_sup_range_d₁₂",
-    "LieModule.Cohomology.twoCocycle_eq_range_d₁₂",
-    "LieDerivation.IsKilling.exists_eq_inner",
-    "TauCeti.CurrentAlgebra.derivedSeries_ofTwoCocycle_eq_top_iff",
-    "TauCeti.LieAlgebra.exists_eq_smul_killingForm",
-    "TauCeti.CurrentAlgebra.instCompleteSpace",
-    "TauCeti.LieModule.Cohomology.continuousSecondCohomology",
+    "TauCeti.CurrentAlgebra.residueClassEquiv",
+    "TauCeti.CurrentAlgebra.existsUnique_residueExtensionLift",
+    "TauCeti.CurrentAlgebra.continuous_residueExtensionLift",
+    "RootPairing.Base.killingForm_eq_smul_iff_apply_coroot_highestRoot_eq_two",
+    "RootPairing.Base.dualCoxeterNumber",
+    "RootPairing.Base.neg_inv_two_smul_killingForm_eq_neg_smul",
+    "TauCeti.CurrentAlgebra.smoothModulesEquivalence",
+    "TauCeti.CurrentAlgebra.CompletedEnveloping",
+    "TauCeti.CurrentAlgebra.instRingCompletedEnveloping",
+    "TauCeti.CurrentAlgebra.mem_center_iff_forall_commute",
+    "TauCeti.CurrentAlgebra.VacuumModule",
+    "TauCeti.CurrentAlgebra.vacuumPBWEquiv",
+    "TauCeti.CurrentAlgebra.lie_vacuumTranslation_ncoeff_currentField",
     "TauCeti.coinduction",
     "TauCeti.enoughInjectives_smoothModules"
    ]
@@ -653,14 +690,14 @@
    "path": "TauCetiRoadmap/AffineMorseLefschetz",
    "title": "Complex Morse theory, affine topology and weak Lefschetz",
    "names": [
+    "TauCeti.isZero_singularHomology_of_isProperMap_holomorphic_immersion",
+    "TauCeti.isZero_singularHomology_of_isProperMap_of_isManifoldStronglyPseudoconvexAt",
     "TauCeti.IsManifoldStronglyPseudoconvexAt.manifoldMorseIndex_le",
-    "QuadraticForm.isTotallyReal_of_add_comp_posDef",
-    "TauCeti.fderiv_fderiv_norm_sq_sub_comp_add_I_smul",
-    "ContDiffAt.finrank_genEigenspace_shapeOperator_neg",
-    "ContDiffAt.finrank_ker_fderiv_fderiv_norm_sq_sub_sub_comp",
-    "TauCeti.leviForm",
-    "TauCeti.shapeOperator",
-    "TauCeti.complexProjectiveZeroLocus"
+    "TauCeti.finrank_le_of_isManifoldStronglyPseudoconvexAt",
+    "TauCeti.instHasSemialgebraicProjectionsReal",
+    "TauCeti.exists_isMorse_isProperMap_bddBelow_isManifoldStronglyPseudoconvexAt",
+    "TauCeti.isSmoothEmbedding_subtypeVal_complexProjectiveZeroLocus",
+    "TauCeti.LocalCoefficientSystem.borelMooreHomology"
    ]
   },
   {
@@ -670,13 +707,13 @@
    "names": [
     "TauCeti.isRiemannRochDivisor_weilDifferentialDivisor",
     "TauCeti.hurwitz_genus_formula",
-    "TauCeti.AlgebraicGeometry.RegularProperCurveCat.equivFunctionFieldCat",
-    "TauCeti.Place.ramificationIdx_restrict_sup",
-    "TauCeti.genus_eq_of_isHomogeneous",
+    "TauCeti.AlgebraicGeometry.RegularProjectiveCurveCat.equivFunctionFieldCat",
+    "TauCeti.genus_eq_genus_add_finsum_singularityDegree",
+    "TauCeti.AlgebraicGeometry.projectivePlaneCurve.genus_eq",
+    "TauCeti.Place.singularityDegree",
+    "TauCeti.AlgebraicGeometry.projectivePlaneCurve",
     "TauCeti.Divisor.sectionRing",
-    "TauCeti.riemannRochSpace_nsmul_poles_pow_le_pow",
-    "TauCeti.weilDifferentialRepresentation",
-    "TauCeti.Place.exists_completion_ringEquiv_laurentSeries"
+    "AlgebraicGeometry.Scheme.isProjectiveOver_of_isCurveOver"
    ]
   },
   {
@@ -689,11 +726,9 @@
     "HomotopyGroup.bijective_hurewicz",
     "TauCeti.RelHomotopyGroup.bijective_hurewicz_of_subsingleton_homotopyGroup",
     "ContinuousMap.IsWeakHomotopyEquivalence.homotopyEquiv",
-    "TopCat.singularHomologyKunnethUnitSplitting",
-    "TopCat.singularUniversalCoefficientEquiv",
-    "TauCeti.toRelativeCWComplex",
-    "TauCeti.isLimitLocalHomologySystemCone",
-    "TauCeti.ComplexTower.exact_limOneToHomology_homologyToLim"
+    "TauCeti.torusExteriorPowerEquiv",
+    "TopCat.singularRelativeCup",
+    "TopCat.isColimitCompactSupportCohomologyOpensCocone"
    ]
   },
   {
@@ -701,17 +736,15 @@
    "path": "TauCetiRoadmap/AlgebraicVectorBundles",
    "title": "Algebraic vector bundles",
    "names": [
+    "TauCeti.AlgebraicGeometry.linearSpecEquiv",
+    "TauCeti.AlgebraicGeometry.totalSpaceHomIso",
     "TauCeti.AlgebraicGeometry.relativeSpecEquiv",
     "TauCeti.AlgebraicGeometry.relativeSpecBaseChangeIso",
-    "TauCeti.AlgebraicGeometry.relativeSpecPullbackIso_comp",
-    "TauCeti.AlgebraicGeometry.relativeSpecSymmetricAlgebraPullbackHomEquiv",
     "TauCeti.AlgebraicGeometry.QuasicoherentSheaf.nonempty_hasLeftDual_iff_isFiniteLocallyFree",
-    "TauCeti.AlgebraicGeometry.FiniteLocallyFreeSheaf.evalNatIso",
     "TauCeti.AlgebraicGeometry.isIso_pullbackSymmetricPowerComparison_app",
-    "TauCeti.AlgebraicGeometry.FiniteLocallyFreeSheaf.pullbackDeterminantIso",
-    "TauCeti.AlgebraicGeometry.gradedSymmetricAlgebraAdjunction",
-    "TauCeti.AlgebraicGeometry.gradedSymmetricAlgebraEquiv",
-    "TauCeti.AlgebraicGeometry.gradedRelativeSpecEquiv",
+    "TauCeti.AlgebraicGeometry.FiniteLocallyFreeSheaf.pullbackDetIso",
+    "TauCeti.AlgebraicGeometry.FiniteLocallyFreeSheaf.det",
+    "TauCeti.AlgebraicGeometry.modObjRelativeSpecSymmetricAlgebra",
     "TauCeti.AlgebraicGeometry.FiniteLocallyFreeSheaf"
    ]
   },
@@ -720,20 +753,25 @@
    "path": "TauCetiRoadmap/AmenableGroups",
    "title": "Amenable groups",
    "names": [
-    "TauCeti.Amenable.of_hasFoelnerSets",
-    "TauCeti.Amenable.of_tendsto",
-    "TauCeti.amenable_iff_forall_finset_exists",
-    "TauCeti.Amenable.of_directed_of_iSup_eq_top",
-    "TauCeti.Amenable.of_isColimit",
-    "TauCeti.exists_finset_card_smul_symmDiff_lt_of_sum_tsum_lt",
-    "TauCeti.Amenable.of_finite",
-    "TauCeti.Mean.isLeftInvariant_iff_eq_uniform",
+    "TauCeti.amenable_iff_not_paradoxical_univ",
+    "TauCeti.hasFoelnerSets_iff_not_paradoxical_univ",
+    "TauCeti.amenable_iff_hasFoelnerSets",
+    "TauCeti.amenable_iff_exists_sum_tsum_abs_sub_lt",
+    "TauCeti.amenable_iff_exists_finset",
+    "TauCeti.not_amenable_freeGroup",
+    "TauCeti.not_amenable_of_injective_freeGroup",
+    "TauCeti.Amenable.exists_lpTop_invariant",
+    "TauCeti.Amenable.of_lpTop",
+    "TauCeti.Amenable.of_commGroup",
     "TauCeti.Amenable",
-    "TauCeti.UCB.leftTranslation",
     "TauCeti.Mean.instCompactSpace",
-    "Equidecomp.exists_iff_exists_finpartition",
-    "Equidecomp.Equipartition",
-    "TauCeti.hasFoelnerSets_iff"
+    "TauCeti.amenable_iff_exists_invariantContent",
+    "TauCeti.Equidecomposable",
+    "TauCeti.Paradoxical",
+    "TauCeti.EquidecomposableLE.antisymm",
+    "TauCeti.paradoxical_iff_exists_subset",
+    "MeasureTheory.Lp.convolutionUCB",
+    "IsSigmaCompact.exists_openSubgroup"
    ]
   },
   {
@@ -741,14 +779,14 @@
    "path": "TauCetiRoadmap/BanachAlgebras",
    "title": "Banach algebras",
    "names": [
-    "ContinuousLinearMap.exists_apply_eq_of_mem_topologicalClosure_span",
-    "TauCeti.eventuallyConst_separatingSpace",
-    "LinearMap.continuous_iff_separatingSpace_eq_bot",
-    "TauCeti.Ring.mem_jacobson_iff_forall_gelfandRadius_mul_eq_zero",
-    "TauCeti.Contour.Cycle.homologyCauchyTheorem",
-    "LinearMap.separatingSpace",
-    "TauCeti.nonUnitalJacobson",
-    "ContinuousLinearMap.unitizationAction"
+    "AlgebraNorm.exists_le_mul_and_le_mul_of_jacobson_eq_bot",
+    "LinearMap.continuous_of_derivation_of_jacobson_eq_bot",
+    "ContinuousLinearMap.apply_mem_nonUnitalJacobson_of_derivation",
+    "ContinuousLinearMap.exists_apply_apply_eq_of_mem_topologicalClosure_span",
+    "LinearMap.existsUnique_eq_smul_of_isSimpleModule",
+    "Submodule.IsSeparatingIdeal",
+    "TauCeti.PrimitiveSpectrum",
+    "TauCeti.holomorphicGerms"
    ]
   },
   {
@@ -756,17 +794,22 @@
    "path": "TauCetiRoadmap/BanachSpaceTheory",
    "title": "Banach space theory",
    "names": [
+    "Matrix.abs_sum_sum_mul_inner_le_eight_mul",
+    "Matrix.norm_sum_sum_mul_inner_le_sixteen_mul",
+    "LinearMap.abs_sum_apply_apply_le_eight_mul",
+    "LinearIsometry.exists_continuousLinearMap_of_doubleDual",
+    "TauCeti.finitelyRepresentable_doubleDual",
     "ContinuousLinearMap.summingENorm_le_ofReal_iff_exists_isProbabilityMeasure",
-    "ContinuousLinearMap.summingENorm_le_ofReal_iff_exists_eq_comp_codRestrict_topologicalClosure",
-    "ContinuousLinearMap.isClosed_range_precomp_iff",
-    "TauCeti.dense_setOf_exists_norm_apply_eq_norm",
-    "TauCeti.surjective_inclusionInDoubleDual_of_uniformConvexSpace",
-    "MeasureTheory.Lp.norm_add_rpow_add_norm_sub_rpow_le",
-    "SchauderBasis.surjective_inclusionInDoubleDual_iff",
-    "TauCeti.AbsolutelySumming",
-    "TauCeti.HasApproximationProperty",
-    "TauCeti.ProjectiveTensor",
-    "TauCeti.InjectiveTensor"
+    "TauCeti.isCompact_toWeakSpace_iff_isSeqCompact",
+    "TauCeti.isCompact_closure_toWeakSpace_iff",
+    "Convex.isClosed_iff_forall_isClosed_inter_closedBall",
+    "TauCeti.CompletedProjectiveTensor",
+    "TauCeti.CompletedInjectiveTensor",
+    "TauCeti.CompletedInjectiveTensor.range_toOperator",
+    "TauCeti.NuclearOperator",
+    "TauCeti.CompletedProjectiveTensor.injective_toContinuousLinearMap_of_hasApproximationProperty",
+    "TauCeti.HasDunfordPettisProperty",
+    "ZeroAtInftyContinuousMap.hasDunfordPettisProperty"
    ]
   },
   {
@@ -775,15 +818,15 @@
    "title": "Belyi maps, dessins d'enfants, and three-point covers",
    "names": [
     "TauCeti.AnalyticBelyiPair.isoClassEquivConnectedCoverClass",
-    "TauCeti.ConnectedCoverClass.isoClassEquiv",
-    "TauCeti.exists_polynomial_aeval_mem_criticalValues_subset",
-    "TauCeti.exists_polynomial_aeval_mem_range",
-    "TauCeti.AnalyticBelyiPair.nonempty_iso_superelliptic_iff",
-    "TauCeti.RiemannSurface.MeromorphicFunction",
-    "TauCeti.IsAlgebraicBelyiPair",
-    "TauCeti.IsAlgebraicBelyiPair.of_mapRingEquiv",
-    "TauCeti.PermutationTriple.LMFDB.PassportRecord.IsValidAt",
-    "TauCeti.PermutationTriple.LMFDB.BelyiRecord.IsValidFor"
+    "TauCeti.IsFunctionField.exists_isAlgebraicBelyiPair",
+    "TauCeti.AlgebraicBelyiPair.IsoClass.finrank_fieldOfModuli_eq_trueOrbitSize",
+    "TauCeti.AlgebraicBelyiPair.IsoClass.IsDefinedOver.embeddingToOrbit_surjective",
+    "TauCeti.AlgebraicBelyiPair.IsoClass.isDefinedOver_fieldOfModuli",
+    "TauCeti.exists_polynomial_criticalValues_subset_comp_ne_map",
+    "TauCeti.AlgebraicBelyiPair.IsoClass.instMulAction",
+    "TauCeti.AlgebraicBelyiPair.IsoClass.fieldOfModuli",
+    "TauCeti.profiniteCyclotomicCharacter",
+    "TauCeti.RiemannSurface.MeromorphicFunction"
    ]
   },
   {
@@ -807,22 +850,122 @@
    ]
   },
   {
+   "id": "BorelEquivalenceRelations",
+   "path": "TauCetiRoadmap/BorelEquivalenceRelations",
+   "title": "Borel equivalence relations, the G₀ dichotomy and Silver's theorem",
+   "names": [
+    "SimpleGraph.g0_dichotomy",
+    "TauCeti.g0_dichotomy_oriented",
+    "Setoid.hasCantorAntichainOn_range_of_forall_gSGraph_adj",
+    "BaireMeasurableSet.eventually_eventually_left_iff_mem_residual",
+    "TauCeti.not_isSmooth_eZero",
+    "TauCeti.isMeagre_or_mem_residual_of_eZero_invariant",
+    "TauCeti.not_isSmooth_of_borelReducible_eZero",
+    "MeasurableSet.exists_nat_bool_injection_of_not_countable",
+    "SetRel.IsSmallFamily",
+    "SetRel.not_isSmallFamily_comb_cross",
+    "Setoid.HasCantorAntichainOn",
+    "Setoid.BorelReducible",
+    "Setoid.isSmooth_iff_countablySeparated",
+    "Setoid.borelReducibility_trichotomy"
+   ]
+  },
+  {
+   "id": "CFSGBasicProperties",
+   "path": "TauCetiRoadmap/CFSGBasicProperties",
+   "title": "Finiteness and simplicity of the groups on the CFSG list",
+   "names": [
+    "TauCeti.ValidLieTypeIndex.finite",
+    "TauCeti.finite_fixedSubgroup_of_iterate_apply_eq_pow",
+    "TauCeti.ValidLieTypeIndex.isSimpleGroup_A",
+    "Matrix.ProjectiveSpecialLinearGroup.isSimpleGroup_of_three_le_card",
+    "TauCeti.ValidLieTypeIndex.isSimpleGroup_suzuki",
+    "TauCeti.Suzuki.titsSystem",
+    "TauCeti.ValidLieTypeIndex.isSimpleGroup_B_two",
+    "TauCeti.TitsSystem.isSimpleGroup_derivedCentralQuotient",
+    "MulAction.IwasawaStructure.isSimpleGroup_derivedCentralQuotient",
+    "TauCeti.TypeALieIndex.specialUnitaryEquivFixedPoints",
+    "Matrix.unitaryTransvectionSubgroup",
+    "TauCeti.NormalClosureProgram.normalClosure_eq_top_of_check",
+    "TauCeti.CosetTable.index_eq_iff_injective",
+    "Subgroup.presentationEquiv",
+    "TauCeti.SporadicName.natCard_group_M11"
+   ]
+  },
+  {
    "id": "CFSGStatement",
    "path": "TauCetiRoadmap/CFSGStatement",
    "title": "Stating the classification of finite simple groups",
    "names": [
     "TauCeti.ClassificationStatement",
-    "TauCeti.classificationStatement_of_zero",
+    "TauCeti.ClassificationStatement.of_universe",
     "TauCeti.ValidLieTypeIndex.Group",
-    "TauCeti.GraphTwistedIndex.steinberg_eq_graphAut_comp_frobenius",
     "TauCeti.F4ShortRoot.PrimeField.specialIsogeny_specialIsogeny",
     "TauCeti.SporadicName.presentation",
     "TauCeti.TypeALieIndex.carrierEquivPinned",
     "TauCeti.ValidLieTypeIndex.AmbientGroup",
-    "TauCeti.FixedPointCandidate.congrOfFiniteKer",
-    "TauCeti.F4ShortRoot.groupScheme_hom_ext_of_rootSubgroup",
-    "TauCeti.Relator.toWord_toFreeGroup",
-    "TauCeti.GroupPresentation.homEquiv"
+    "TauCeti.FixedPointCandidate.congr_symm",
+    "TauCeti.FixedPointCandidate.congrOfFiniteKer"
+   ]
+  },
+  {
+   "id": "CStarAlgebras",
+   "path": "TauCetiRoadmap/CStarAlgebras",
+   "title": "C*-algebras, operator spaces and approximation",
+   "names": [
+    "IsStarProjection.conjugate_le_iff_commute",
+    "CStarMatrix.nonneg_iff_posSemidef",
+    "Matrix.IsHermitian.posSemidef_iff_trace_nonneg_and_det_nonneg",
+    "TauCeti.MatrixOrderExample.flip_le_diagonal_not_posPart",
+    "TauCeti.MatrixOrderExample.averagingProjection_le_diagonal_not_sq",
+    "TauCeti.MatrixOrderExample.averagingProjection_le_sqrt_diagonal",
+    "TauCeti.star_mul_mul_eq_zero_iff_of_nonneg"
+   ]
+  },
+  {
+   "id": "CharacteristicClasses",
+   "path": "TauCetiRoadmap/CharacteristicClasses",
+   "title": "Characteristic classes and Chern–Weil theory",
+   "names": [
+    "TauCeti.VectorBundleOrientation.thomClass",
+    "TauCeti.VectorBundleOrientation.eq_thomClass_iff",
+    "TauCeti.existsUnique_isThomClass_of_subsingleton_units",
+    "TauCeti.existsUnique_singularCohomology_thomPair_of_iUnion_eq_univ",
+    "TauCeti.VectorBundleOrientation.eulerClass",
+    "TauCeti.VectorBundleOrientation.eulerClass_pullback",
+    "TauCeti.VectorBundleOrientation.eulerClass_neg",
+    "TauCeti.VectorBundleOrientation.two_smul_eulerClass",
+    "TauCeti.VectorBundleOrientation.eulerClass_eq_zero_of_forall_ne_zero",
+    "TauCeti.VectorBundleOrientation.eulerClass_eq_zero_of_finrank_eq_one",
+    "TauCeti.OrthonormalFrameBundle.orientationCoverHomeomorph",
+    "TauCeti.OrthonormalFrameBundle.associatedHomeomorph",
+    "PowerSeries.multiplicativeSequence",
+    "PowerSeries.aeval_multiset_esymm_add_multiplicativeSequence",
+    "PowerSeries.expand_mk_aeval_multiplicativeSequence",
+    "ContinuousLinearMap.metricChangeTransport",
+    "ContinuousLinearMap.metricChangeCompositionCorrection",
+    "TauCeti.VectorBundleOrientationCover.signLocalSystem",
+    "TauCeti.thomMap",
+    "TauCeti.thomMap_singularCup",
+    "TopCat.singularCohomologyPairMayerVietorisδ_singularCup"
+   ]
+  },
+  {
+   "id": "ChevalleyGroups",
+   "path": "TauCetiRoadmap/ChevalleyGroups",
+   "title": "Chevalley groups and the Chevalley–Demazure group schemes",
+   "names": [
+    "TauCeti.DynkinType.span_range_scWeight_eq_top",
+    "TauCeti.DynkinType.instIsFaithfulScModule",
+    "TauCeti.DynkinType.ChevalleyDatum.torusPoints_conj_rootSubgroup",
+    "TauCeti.DynkinType.ChevalleyDatum.weylElement_conj_rootSubgroup",
+    "TauCeti.DynkinType.ChevalleyDatum.rootSubgroup_mem_closure",
+    "TauCeti.DynkinType.exists_geckWeightTorusPoints_eq_mul_inv",
+    "TauCeti.DynkinType.chevalleyGroupScheme",
+    "TauCeti.DynkinType.chevalleyTorus",
+    "TauCeti.DynkinType.scModuleDiagramEquiv",
+    "TauCeti.DynkinType.scToralDiagramAut",
+    "TauCeti.IsCharacterMap"
    ]
   },
   {
@@ -832,16 +975,34 @@
    "names": [
     "TauCeti.ClassFieldTheory.ClassFormation.tateIso",
     "TauCeti.ClassFieldTheory.localWeilArtinEquiv",
-    "TauCeti.ClassFieldTheory.globalArtinEquiv",
-    "TauCeti.ClassFieldTheory.card_ideleClassNormQuotient",
+    "TauCeti.ClassFieldTheory.globalClassFieldCorrespondence",
+    "TauCeti.ClassFieldTheory.globalAbelianExistence",
+    "TauCeti.ClassFieldTheory.kroneckerWeber",
     "TauCeti.ClassFieldTheory.hilbertProductFormula",
-    "TauCeti.ClassFieldTheory.sum_finiteHilbertInvariantAt_add_sum_infiniteHilbertInvariantAt_eq_zero_iff",
     "TauCeti.ClassFieldTheory.globalInv",
-    "TauCeti.ClassFieldTheory.globalInv_injective",
     "TauCeti.ClassFieldTheory.globalClassFormation",
     "TauCeti.ClassFieldTheory.invMap",
     "TauCeti.ClassFieldTheory.localClassFormation",
-    "TauCeti.ClassFieldTheory.exists_abelianLayer_globalNormSubgroup_eq_of_pow_mem"
+    "TauCeti.ClassFieldTheory.rayClassField",
+    "TauCeti.ClassFieldTheory.ringClassField"
+   ]
+  },
+  {
+   "id": "ClassicalArithmeticCompletion",
+   "path": "TauCetiRoadmap/ClassicalArithmeticCompletion",
+   "title": "Classical arithmetic, sequences, polynomials and reciprocity",
+   "names": [
+    "TauCeti.IsPrimaryEisenstein.cubic_reciprocity",
+    "PowerSeries.isAutomatic_coeff_of_isAlgebraic",
+    "PowerSeries.isAlgebraic_of_isAutomatic_coeff",
+    "TauCeti.exists_foldr_markoffVieta_eq",
+    "Matrix.existsUnique_isHermiteNormalForm_range_mulVecLin_eq",
+    "TauCeti.X_pow_sub_C_irreducible_iff_forall_prime",
+    "Ideal.powerResidueSymbolIdeal",
+    "Ideal.stickelbergerPhi",
+    "TauCeti.IsAutomatic",
+    "TauCeti.IntegralOrder.IsOrder",
+    "TauCeti.IntegralOrder.IsMaximalOrder"
    ]
   },
   {
@@ -864,23 +1025,48 @@
    ]
   },
   {
+   "id": "ClusterAlgebras",
+   "path": "TauCetiRoadmap/ClusterAlgebras",
+   "title": "Cluster algebras",
+   "names": [
+    "TauCeti.matrixMutation_involutive",
+    "Matrix.IsSkewSymmetrizer.matrixMutation",
+    "HasUniqueRoots.to_twoUniqueProds",
+    "TauCeti.CoefficientSemifield.instHasUniqueRoots",
+    "TauCeti.CoefficientSemifield",
+    "TauCeti.CoefficientSemifieldHom",
+    "TauCeti.ExchangeMatrix",
+    "TauCeti.ExchangeMatrix.mutation"
+   ]
+  },
+  {
+   "id": "CoboundaryExpansion",
+   "path": "TauCetiRoadmap/CoboundaryExpansion",
+   "title": "Coboundary expansion with group coefficients",
+   "names": [
+    "Equiv.Perm.hammingDist_eq_movedNorm",
+    "Equiv.Perm.movedNorm_parityRetract_le",
+    "GroupNorm.isConjInvariant_iff_dist_mul_right",
+    "Equiv.Perm.movedNorm",
+    "GroupSeminorm.IsConjInvariant",
+    "Equiv.Perm.distErr"
+   ]
+  },
+  {
    "id": "CombinatorialHeegaardFloer",
    "path": "TauCetiRoadmap/CombinatorialHeegaardFloer",
    "title": "Combinatorial Heegaard Floer and grid homology",
    "names": [
-    "TauCeti.GridDiagram.commutationMap_comp_unblockedDifferential",
-    "TauCeti.GridDiagram.unblockedDifferential_commutationHomotopy_add_eq",
-    "TauCeti.GridDiagram.stabilizeXHomologyMap_bijective",
-    "TauCeti.OddComponentGridDiagram.bigradedFullyBlockedHomologyPoincareSeries_stabilizeX",
-    "TauCeti.GridDiagram.two_mul_tau_torusLink",
+    "TauCeti.GridDiagram.IsKnot.unblockedHomologyIsomorphic_of_movesTo",
+    "TauCeti.GridLink.two_mul_tau_toGridLink_torusLink",
+    "TauCeti.GridLink.unknottingNumber_toGridLink_torusLink_le",
     "TauCeti.InternalGrading.exists_isInternal_span_singleton",
     "TauCeti.OddComponentGridDiagram.gradedHomologyEulerChar_eq_smul_T_mul_det_weightMatrix",
+    "TauCeti.OddComponentGridDiagram.gradedHomologyEulerChar_figureEight",
+    "TauCeti.GridLink.IsKnot.tau",
     "TauCeti.GridLink.unknottingNumber",
-    "TauCeti.GridDiagram.commutationBidegree_eq_of_notMem_columnArc",
-    "TauCeti.GridDiagram.IsKnot.tau",
-    "TauCeti.GridDiagram.unblockedHomologyCommutationMap_XMarkingClass",
-    "TauCeti.HeegaardRegionSystem.hatDifferential",
-    "TauCeti.HeegaardRegionSystem.IsNice"
+    "TauCeti.GridDiagram.IsKnot.tau_swapColumns_mem_Icc_of_homotopy",
+    "TauCeti.OddComponentGridDiagram.alexanderFiltration"
    ]
   },
   {
@@ -888,19 +1074,17 @@
    "path": "TauCetiRoadmap/CompactOperators",
    "title": "Compact operators and nonarchimedean Fredholm theory",
    "names": [
-    "ContinuousLinearMap.isRowCompact_iff_isCompletelyContinuous",
-    "ContinuousLinearMap.isRowCompact_iff_hasCompactoidImage",
-    "ContinuousLinearMap.IsRowCompact.isEntire_charPowerSeries",
+    "ContinuousLinearMap.IsRowCompact.charPowerSeries_eq_colemanDEntire",
+    "ContinuousLinearMap.IsRieszProjection.rankAtStalk_range",
+    "ContinuousLinearMap.IsRieszProjection.charPowerSeries_matrixCoeff_eq_pow_mul",
+    "ContinuousLinearMap.IsPrCompact.finrank_ker_pow",
     "ContinuousLinearMap.IsRowCompact.isUnit_one_sub_smul_iff",
-    "ContinuousLinearMap.IsRowCompact.mem_spectrum_iff_evalAt_inv_eq_zero",
+    "ContinuousLinearMap.IsPrCompact.mem_spectrum_iff_evalAt_inv_eq_zero",
     "ContinuousLinearMap.IsCompletelyContinuous.isFredholm_one_sub",
-    "ContinuousLinearMap.IsRowCompact.evalAt_charPowerSeries_eq_zero_iff_hasEigenvalue",
-    "ContinuousLinearMap.IsRowCompact.isRieszProjection_rieszProjection",
+    "ContinuousLinearMap.isRowCompact_iff_isCompletelyContinuous",
+    "ContinuousLinearMap.hasCompactoidImage_iff_isCompletelyContinuous",
     "ContinuousLinearMap.IsRowCompact",
-    "ContinuousLinearMap.IsRowCompact.projective_range_of_isIdempotentElem",
-    "ContinuousLinearMap.charPowerSeries",
-    "ContinuousLinearMap.IsPrCompact.charPowerSeries_eq",
-    "PowerSeries.IsGoodZero"
+    "PowerSeries.colemanDEntire"
    ]
   },
   {
@@ -908,34 +1092,42 @@
    "path": "TauCetiRoadmap/ComplexCurveModuli",
    "title": "Analytic families and moduli of complex curves",
    "names": [
-    "TauCeti.CircleSobolev.isUnit_iff_forall_isUnit",
-    "TauCeti.CircleSobolev.norm_mul_le",
-    "TauCeti.CircleSobolev.analyticOnNhd_nemytskii",
-    "TauCeti.NodalGluing.quotientStalkToNode_bijective",
-    "TauCeti.NodalGluing.quotientStalkBranch_bijective",
-    "TauCeti.DualGraph.arithmeticGenus_smoothing",
-    "TauCeti.DualGraph.sum_arithmeticGenus_cutComponent_add_card",
-    "TauCeti.NodalGluing.GluedCurve",
-    "TauCeti.holomorphicStructureSheaf.quotientSheaf",
-    "TauCeti.NodalGluing.Iso",
-    "TauCeti.NodalGluing.Aut",
-    "TauCeti.NodalGluing.AuxiliaryMarkedCurve.unorderedAuxiliaryIsomorphismGroupoid",
-    "TauCeti.NodalGluing.AuxiliaryMarkedCurve.partitionedAuxiliaryIsomorphismGroupoid",
-    "TauCeti.CircleSobolev.mulFourierSeriesEquiv"
+    "TauCeti.CircleSobolev.exists_analyticAt_hardyGraph",
+    "TauCeti.NodalGluing.existsUnique_iso_gluedCurveHomeomorph_eq_iff",
+    "TauCeti.NodalGluing.existsUnique_iso_sheafedSpaceIso_eq_iff",
+    "TauCeti.NodalGluing.AuxiliaryAut.finite_ordered_iff",
+    "TauCeti.NodalGluing.AuxiliaryAut.finite_ordered_iff_forall_specialPoints_nonempty_of_complexTorus",
+    "TauCeti.holomorphicStructureSheaf.nodeLocalRing.planeNodeEquiv",
+    "TauCeti.holomorphicStructureSheaf.nodeLocalRing.isIntegralClosure_branchFractionMap",
+    "TauCeti.HyperbolicMetric.eq_of_metric_eq_rescale",
+    "Bundle.ContMDiffRiemannianMetric.exists_hyperbolicMetric_metric_eq_rescale_iff",
+    "TauCeti.NodalGluing.locallyRingedSpace",
+    "TauCeti.NodalGluing.isDomain_quotientStalk_iff",
+    "TauCeti.CircleSobolev.neckGraph",
+    "TauCeti.CircleSobolev.neckEvaluationChart",
+    "TauCeti.ComplexStructureFamily.nijenhuis_eq_zero_iff",
+    "TauCeti.ComplexStructureFamily.isPseudoholomorphic_graph_iff"
    ]
   },
   {
    "id": "ComplexKahlerGeometry",
    "path": "TauCetiRoadmap/ComplexKahlerGeometry",
-   "title": "Complex manifolds, Dolbeault theory, and Kähler geometry",
+   "title": "Complex manifolds, Dolbeault theory and Kähler geometry",
    "names": [
+    "TauCeti.exists_contDiffOn_delBarCoeff_eq_of_polydisc",
+    "TauCeti.SmoothAlmostComplexStructure.mextDerivₗ_eq_del_add_delBar_ofComplexManifold",
+    "TauCeti.SmoothAlmostComplexStructure.delBar_delBar_ofComplexManifold",
+    "AnalyticAt.exists_weierstrassPreparation",
     "ContinuousOn.analyticOnNhd_of_differentiableAt_update",
-    "TauCeti.contMDiff_iff_mdifferentiable",
-    "IsManifold.restrictScalars_of_ne_zero",
-    "TauCeti.holomorphicStructureSheaf.isFractionRing_meromorphicGerms",
-    "Projectivization.instIsManifold",
-    "TauCeti.SmoothForm.instModule",
-    "TauCeti.contDiffGroupoid_eq_of_ne_zero"
+    "TauCeti.harmonicForms.toDeRhamCohomology_injective",
+    "TauCeti.dolbeaultCohomology",
+    "TauCeti.dolbeaultCohomology.map",
+    "TauCeti.dolbeaultCohomology.wedgeWith",
+    "TauCeti.dolbeaultCohomology.mkZeroEquiv",
+    "TauCeti.SmoothForm.hodgeStar",
+    "TauCeti.SmoothForm.hodgeLaplacian",
+    "TauCeti.harmonicForms",
+    "TauCeti.IwasawaManifold"
    ]
   },
   {
@@ -943,15 +1135,18 @@
    "path": "TauCetiRoadmap/ComplexManifolds",
    "title": "Complex manifolds: transport, quotients, bundles, and gluing",
    "names": [
-    "OnePoint.instContMDiffConstSMul",
-    "TauCeti.contMDiff_orbitRelQuotientLift_iff",
-    "TauCeti.contMDiff_orbitRelQuotientMap",
-    "MDifferentiableAt.mfderiv_restrictScalars",
-    "ContMDiff.restrictScalars",
-    "Homeomorph.pullbackChartedSpace",
-    "Homeomorph.pullbackDiffeomorph",
-    "Diffeomorph.restrictScalars",
-    "TauCeti.MulAction.orbitRelQuotientLift"
+    "TauCeti.complexManifoldOrientation",
+    "TauCeti.orientationPreservingOn_iff_det_fderiv_ne_zero",
+    "Diffeomorph.isOrientationPreservingAt_complexManifoldOrientation",
+    "TopCat.GlueData.IsCompatible.isManifold",
+    "TopCat.GlueData.IsCompatible.maximalAtlas_chartedSpace_eq",
+    "ContMDiffVectorBundle.exists_trivialization_baseSet_eq_univ_iff_exists_ne_zero",
+    "TauCeti.contMDiff_section_orbitRelQuotientRec_iff",
+    "Bundle.Trivialization.mem_maximalAtlas_contMDiffFiberwiseLinear_iff",
+    "TauCeti.expReTrivialization_notMem_maximalAtlas",
+    "TauCeti.FiniteRankBundleCore.det",
+    "ModelWithCorners.restrictScalars",
+    "TauCeti.complexEuclideanRealModel"
    ]
   },
   {
@@ -959,17 +1154,59 @@
    "path": "TauCetiRoadmap/ComplexTori",
    "title": "Complex tori: varying lattices and logarithmic transforms",
    "names": [
-    "TauCeti.δ_cyclicRepShortComplex_groupCohomologyπOdd_one",
+    "Submodule.orbitRelQuotientHomologyEquiv",
+    "Submodule.isSmoothEmbedding_subtypeVal_ker_orbitRelQuotientMap",
+    "Submodule.orbitRelQuotientComapQuotientEquiv",
+    "AddEquiv.exists_affineEquiv_iterate_apply_eq_self_iff",
+    "AddEquiv.orderOf_affineEquiv_eq_iff",
     "TauCeti.cyclicConnectingEquiv",
-    "TauCeti.map_δ_cyclicRepShortComplex",
-    "AddEquiv.groupCohomologyπOdd_cyclicRep_eq_iff",
-    "TauCeti.groupCohomologyOddEquivTorsionBy",
-    "TauCeti.exists_pos_mul_norm_le_norm_sum_smul_period_of_isCompact",
-    "TauCeti.torusFamilyHomeomorphProd",
-    "AddEquiv.cyclicRep",
-    "TauCeti.torusFamilyProjection",
-    "TauCeti.torusFamilyFiberHomeomorph",
-    "TauCeti.periodBasis"
+    "TauCeti.analyticOrderAt_torusFamilyAffineQuotientLift_rootsOfUnityBall",
+    "TauCeti.isManifold_torusFamily",
+    "TauCeti.isSubmersionOfComplement_torusFamilyProjection",
+    "TauCeti.torusFamilyAffineMulAction",
+    "TauCeti.isCancelSMul_torusFamilyAffineMulAction_iff",
+    "TauCeti.torusFamilyMarking",
+    "TauCeti.torusFamilyMarking_loopClass_eq_of_homotopy"
+   ]
+  },
+  {
+   "id": "ComputabilityTheory",
+   "path": "TauCetiRoadmap/ComputabilityTheory",
+   "title": "Computability theory and finite-injury constructions",
+   "names": [
+    "TauCeti.simple_lowSimpleSet",
+    "TauCeti.low_lowSimpleSet",
+    "TauCeti.exists_simple_low_code",
+    "TauCeti.degree_lowSimpleSet_mem_Ioo",
+    "TauCeti.friedberg_muchnik",
+    "TauCeti.exists_incomparable_ce_turingDegrees_mem_Ioo",
+    "TauCeti.Approximation.computableIn_iff_exists_isModulus_of_rePred",
+    "TauCeti.Approximation.Converges.computableIn_jump",
+    "TauCeti.simple_postSimpleSet",
+    "TauCeti.exists_computablyInseparable_rePred",
+    "TauCeti.Oracle.Single.Code",
+    "TauCeti.Oracle.Single.Code.evaln_eq_some_of_eqOn",
+    "TauCeti.Oracle.Single.Code.exists_code",
+    "Set.jump",
+    "Set.Low",
+    "TauCeti.Priority.injurySet"
+   ]
+  },
+  {
+   "id": "CountableModelCounting",
+   "path": "TauCetiRoadmap/CountableModelCounting",
+   "title": "Counting countable models: Morley's theorem and the Vaught toolkit",
+   "names": [
+    "TauCeti.mk_isoClasses_le_aleph_one_of_countable_levels",
+    "TauCeti.not_hasVaughtDichotomy_iff",
+    "TauCeti.cardinalVaughtConjecture_of_aleph_one_eq_continuum",
+    "TauCeti.cardinalVaughtConjecture_iff_vaughtConjecture",
+    "TauCeti.RelationalConfiguration.exists_limit_of_bfEquiv_chain",
+    "TauCeti.countableModelCount",
+    "TauCeti.exists_language_zero_countableModelCount",
+    "TauCeti.IsIsolatingRank",
+    "TauCeti.isIsolatingRank_scottHeight",
+    "TauCeti.BFScattered"
    ]
   },
   {
@@ -978,18 +1215,21 @@
    "title": "DG and A-infinity algebras, categories, and modules",
    "names": [
     "TauCeti.AInfinityAlgebra.minimalModel",
+    "TauCeti.AInfinityCategory.minimalModel",
+    "TauCeti.AInfinityRightModule.minimalModel",
     "TauCeti.AInfinityAlgebra.isIntrinsicallyFormal_of_forall_hochschildVanishesAt",
     "TauCeti.AInfinityAlgebra.mem_tripleMasseyProduct_iff_sub_minimalModel_m_three_mem",
     "TauCeti.HeisenbergDGA.minimalModel_m_three",
+    "TauCeti.DGTwistedObject.isTriangulated",
+    "TauCeti.DGTwistedObject.isLeast_isoClosure_oneSided",
+    "TauCeti.AInfinityAlgebra.IsDeformationOfOrder.exists_isFormalDeformation",
     "TauCeti.AInfinityAlgebra.transfer",
-    "TauCeti.AInfinityAlgebra.transferHomotopy",
-    "TauCeti.AInfinityCategory.transfer",
-    "TauCeti.AInfinityRightModule.yonedaHomotopyEquiv",
-    "TauCeti.dgYonedaEquiv",
+    "TauCeti.AInfinityRightModule.transfer",
     "TauCeti.AInfinityFunctor",
+    "TauCeti.AInfinityFunctor.IsQuasiEquivalence.isEquivalence_mapHomotopyCategory",
     "TauCeti.AInfinityAlgebra.hochschildDifferential_hochschildDifferential",
-    "TauCeti.DGTwistedObject",
-    "TauCeti.DGTwistedObject.cone"
+    "TauCeti.AInfinityAlgebra.PositiveHochschild.normalizedComplex",
+    "TauCeti.AInfinityCategory.PositiveHochschild.complex"
    ]
   },
   {
@@ -999,16 +1239,19 @@
    "names": [
     "TauCeti.singularCubicalHomologyNatIso",
     "TauCeti.LocalCoefficientSystem.twistedCubicalSingularHomotopyEquiv",
-    "TauCeti.isWeakHomotopyEquivalence_cwApproximationMap",
+    "TauCeti.isWeakHomotopyEquivalence_sigmaCWApproximationMap",
+    "TauCeti.comp_sigmaCWApproximationLift_homotopic",
     "ContinuousMap.IsWeakHomotopyEquivalence.isIso_twistedHomologyMap",
     "TauCeti.MooreLoopSpace.isAspherical_iff_double_singularHomology",
-    "TauCeti.Homologous.homotopyEquiv",
-    "TauCeti.TwistingCocycle.indexSpectralSequenceSecondPageXIso",
+    "TauCeti.SmoothTwoForm.IsNondegenerate.integral_floerEnergyDensity_eq_contractibleLoopAction_sub",
     "TauCeti.CotangentBundle.isLiouvilleDomain_codiscBundle",
+    "TauCeti.CotangentBundle.isLiouvilleCompletion_codiscBundle",
     "TauCeti.loopChainAlgebra",
     "TauCeti.fibrationLocalSystem",
-    "TauCeti.IsLiouvilleDomain",
-    "TauCeti.IsLiouvilleDomain.exists_isRestrictedContactType"
+    "TauCeti.IsLiouvilleCompletion",
+    "TauCeti.IsLinearAtInfinity",
+    "TauCeti.SmoothTwoForm.contractibleHZCapacity",
+    "TauCeti.SmoothTwoForm.relContractibleHZCapacity"
    ]
   },
   {
@@ -1017,42 +1260,52 @@
    "title": "Derived module algebra",
    "names": [
     "DividedPowerAlgebra.homogeneousLawEquiv",
-    "DividedPowerAlgebra.baseChangeEquiv",
-    "DividedPowerAlgebra.baseChangeHomogeneousEquiv",
-    "DividedPowerAlgebra.isInternal_homogeneousSubmodule",
+    "DividedPowerAlgebra.RobyAlgebra.algHomEquiv",
+    "DividedPowerAlgebra.symmetricTensorEquiv",
     "TauCeti.koszulComplex.exactAt_of_isWeaklyRegular",
-    "TauCeti.koszulComplex.homologyZeroEquivSpan",
-    "TauCeti.ModuleTower.subsingleton_limOne_of_isMittagLeffler",
-    "TauCeti.ModuleTower.limOneMultiplicationTowerEquiv",
-    "DividedPowerAlgebra.gamma",
-    "PolynomialLaw.coeff",
-    "PolynomialLaw.IsMultiplicative",
-    "PolynomialLaw.algHomEquiv",
-    "TauCeti.exists_isInjectiveEnvelope"
+    "TauCeti.IsInjectiveEnvelope.bijective_applyₗ_of_finite",
+    "TauCeti.kInjectiveReplacement",
+    "TauCeti.derivedHom",
+    "TauCeti.Exal",
+    "TauCeti.SquareZeroExtension.morphismObstruction_eq_zero_iff",
+    "TauCeti.ModuleTower.derivedLimit",
+    "TauCeti.ModuleTower.derivedLimitIsoLimComplex"
+   ]
+  },
+  {
+   "id": "DiagrammaticCoherence",
+   "path": "TauCetiRoadmap/DiagrammaticCoherence",
+   "title": "Diagrammatic coherence for monoidal categories and duality",
+   "names": [
+    "CategoryTheory.Functor.map_drinfeldIso_hom_comp_mapDoubleRightDualIso_hom",
+    "CategoryTheory.Functor.map_drinfeldIso_inv",
+    "CategoryTheory.Functor.isBalanced_iff_isPivotal",
+    "CategoryTheory.Functor.isPivotal_pivotalOfBalanced_iff",
+    "CategoryTheory.Functor.isPivotal_iff_map_pivotalIsoApp_hom_comp_mapDoubleRightDualIso_hom",
+    "CategoryTheory.Functor.mapDoubleRightDualIso",
+    "CategoryTheory.Functor.mapDoubleRightDualNatIso",
+    "CategoryTheory.Functor.IsBalanced"
    ]
   },
   {
    "id": "DifferentialGeometry",
    "path": "TauCetiRoadmap/DifferentialGeometry",
-   "title": "Differential geometry — forms, de Rham cohomology, flows, and degree",
+   "title": "Differential geometry — forms, Stokes, flows, de Rham cohomology, degree, planar Green and Riemannian calculus",
    "names": [
     "TauCeti.integralTopForm_mextDeriv",
     "TauCeti.Green.green_ac_winding",
+    "TauCeti.Green.green_ac_winding_sum",
+    "TauCeti.finrank_deRhamCohomology_sphere",
     "TauCeti.mayerVietorisShortComplex_shortExact",
-    "TauCeti.deRhamCohomology.mayerVietorisδ_mk_eq_mk_extendByZero",
-    "TauCeti.compactlySupportedMayerVietorisShortComplex_shortExact",
     "TauCeti.deRhamCohomology.map_eq_of_homotopy",
-    "TauCeti.subsingleton_deRhamCohomology_normedSpace",
-    "TauCeti.nontrivial_deRhamCohomology_circle_one",
-    "TauCeti.homotopyOperator",
-    "TauCeti.mextDeriv_homotopyOperator_add_homotopyOperator_mextDeriv",
-    "TauCeti.compactlySupportedDeRhamCohomology",
-    "TauCeti.compactlySupportedDeRhamCohomology.extendByZero",
-    "TauCeti.compactlySupportedDeRhamCohomology.integral",
-    "TauCeti.poincarePairing",
-    "TauCeti.pathIntegral",
-    "TauCeti.pathIntegral_mextDeriv",
-    "TauCeti.integralTopForm_mpullback_Icc_eq_pathIntegral"
+    "TauCeti.compactlySupportedDeRhamCohomologyIntegralEquiv",
+    "TauCeti.IsInvolutiveDistribution.exists_isIntegralManifold",
+    "TauCeti.isInvolutiveDistribution_iff_forall_mextDeriv",
+    "TauCeti.smoothSingularSubcomplex",
+    "TauCeti.SmoothSimplex.integral",
+    "TauCeti.mayerVietoris_induction",
+    "TauCeti.Manifold.OrientationCover.integral_map_proj_eq_zero",
+    "TauCeti.Manifold.OrientationCover.exists_mextDerivₗ_eq_of_mextDerivₗ_eq_mpullback_proj"
    ]
   },
   {
@@ -1063,14 +1316,49 @@
     "IsAlgebraic.finite_setOfPred_abs_sub_le_mulHeight₁_rpow_neg",
     "IsAlgebraic.irrationalityExponent_eq_two",
     "TauCeti.linearIndependent_exp",
-    "TauCeti.algebraicIndependent_exp",
-    "MvPolynomial.IsHomogeneous.exists_pos_mul_max_abs_rpow_le_abs_eval",
-    "TauCeti.kronecker_approximation",
+    "TauCeti.transcendental_rpow",
+    "MvPolynomial.IsHomogeneous.finite_setOf_eval_eq_of_three_le_card_roots",
     "TauCeti.exists_log_normalizedValuationWithZero_zpow_sub_one_le",
-    "TauCeti.log_normalizedValuationWithZero_zpow_sub_one_le",
     "TauCeti.mahlerMeasure",
-    "MvPolynomial.weightedIndex",
-    "TauCeti.sUnitsRatMulEquiv"
+    "TauCeti.NumberField.Units.boundedDivisors",
+    "TauCeti.waldschmidtInterpolationMatrix"
+   ]
+  },
+  {
+   "id": "ECM",
+   "path": "TauCetiRoadmap/ECM",
+   "title": "Elliptic-curve factorization and Montgomery arithmetic",
+   "names": [
+    "TauCeti.Montgomery.double_coordinates",
+    "TauCeti.Montgomery.diffAdd_coordinates",
+    "TauCeti.Montgomery.cross_coordinates_zsmul_eq_zero_iff",
+    "TauCeti.Montgomery.isElliptic_model_suyama_iff",
+    "TauCeti.Montgomery.prime_dvd_gcd_of_pointCount_dvd",
+    "TauCeti.Montgomery.prime_dvd_gcd_of_card_dvd",
+    "TauCeti.Montgomery.model",
+    "TauCeti.Montgomery.coordinates",
+    "TauCeti.Montgomery.projectiveX",
+    "TauCeti.Montgomery.orbitRelQuotientEquivRangeProjectiveX",
+    "TauCeti.Montgomery.toProj_mem_range_projectiveX_iff",
+    "List.prime_dvd_gcd_val_prod_iff"
+   ]
+  },
+  {
+   "id": "EllipticCohomology",
+   "path": "TauCetiRoadmap/EllipticCohomology",
+   "title": "Elliptic cohomology and topological modular forms",
+   "names": [
+    "WeierstrassCurve.isIntegralModularForm_iff",
+    "WeierstrassCurve.ker_aeval_c₄_c₆_Δ",
+    "WeierstrassCurve.Universal.algebraicIndependent_c₄_c₆",
+    "ModularForm.exists_isIntegralModularForm_specialize_tateCurve_eq",
+    "WeierstrassCurve.isIntegralModularForm_iff_rightUnit",
+    "WeierstrassCurve.isSupersingular_iff_height_formalGroup_eq_two_of_char_three",
+    "WeierstrassCurve.height_formalGroup_eq_one_iff",
+    "TauCeti.WeierstrassHopfAlgebroid.coproduct_coassoc",
+    "TauCeti.WeierstrassHopfAlgebroid.smoothOfRelativeDimension_source",
+    "WeierstrassCurve.VariableChange.semidirectProductEquiv",
+    "WeierstrassCurve.Universal.height_span_c₄_Δ"
    ]
   },
   {
@@ -1084,10 +1372,32 @@
     "TauCeti.WorkedExamples.nonempty_addEquiv_int_point_curveX3SubXAddOne",
     "WeierstrassCurve.finite_selmerGroup",
     "WeierstrassCurve.hasPotentialGoodReduction_iff_finite_image_tateModuleGaloisRepresentation",
-    "WeierstrassCurve.HasPotentialGoodReduction.hasGoodReduction_iff_forall_mem_inertiaSubgroup",
-    "WeierstrassCurve.pointedTwistEquivNonabelianH1",
-    "TauCeti.Isogeny.exact_kummerClassMap_kerCoeffInclH1",
-    "WeierstrassCurve.Affine.index_nonsingularReduction_eq_tateLocalIndex"
+    "TauCeti.tateUniformizationEquiv",
+    "TauCeti.tateUniformizationBaseChangeEquiv",
+    "TauCeti.tateUniformizationBaseChangeEquiv_symm_map_algEquiv",
+    "WeierstrassCurve.bsdQuotient",
+    "WeierstrassCurve.minimalRealPeriod",
+    "TauCeti.BirchSwinnertonDyerConjecture",
+    "TauCeti.Isogeny.selmerGroup",
+    "TauCeti.Isogeny.natCard_localCondition_selmerStructure_mul_natCard_localCondition_dual",
+    "TauCeti.Isogeny.localTateKerWeilPairing_bijective",
+    "TauCeti.Isogeny.Hom.finite_sha_iff"
+   ]
+  },
+  {
+   "id": "EllipticIntegrals",
+   "path": "TauCetiRoadmap/EllipticIntegrals",
+   "title": "Elliptic integrals, the AGM, and Jacobi elliptic functions",
+   "names": [
+    "TauCeti.Real.legendre_relation",
+    "TauCeti.Real.legendreK_eq_pi_div_two_mul_agm",
+    "TauCeti.Real.pi_eq_four_mul_agm_sq_div_one_sub_tsum",
+    "TauCeti.Real.lemniscateConstant_eq_pi_div_agm",
+    "WeierstrassCurve.realPeriod_eq_two_mul_pi_div_agm_of_one_real_root",
+    "TauCeti.Real.legendreFOrderIso",
+    "TauCeti.Real.jacobiAm",
+    "TauCeti.agmIntegral",
+    "Complex.carlsonRF"
    ]
   },
   {
@@ -1095,14 +1405,32 @@
    "path": "TauCetiRoadmap/EnhancedDerivedSheaves",
    "title": "Enhanced derived categories of sheaves",
    "names": [
-    "CategoryTheory.Idempotents.DoldKan.laxMonoidalΓ",
-    "CategoryTheory.SimplicialObject.alexanderWhitney_coassoc",
-    "TauCeti.frobeniusRootIdeal_eq_radical",
-    "TauCeti.flat_frobeniusRootIdeal",
-    "TauCeti.ModuleTower.isProZero_multiplicationTower_iff",
+    "TauCeti.dgNerve.quasicategory",
+    "TauCeti.dgNerve.homotopyCategoryEquiv",
+    "TauCeti.KInjectiveDGCategory.dgNerveHomotopyCategoryEquiv",
+    "TauCeti.dgNerve.rightMappingSpaceIsoCochainToSSet",
+    "TauCeti.IsRegularRing.flat_frobenius",
+    "TauCeti.isZero_Tor_succ_of_perfectRing",
+    "TauCeti.DGSimplicialCategory",
+    "SSet.IsLocallySmall",
+    "TauCeti.HasSmallSpaceModel",
     "CategoryTheory.Functor.IsProZero",
-    "CategoryTheory.Functor.proIsomorphisms",
-    "SSet.fullEnhancedSubcategory"
+    "CategoryTheory.Functor.towerDifference"
+   ]
+  },
+  {
+   "id": "EquivariantIntersectionTheory",
+   "path": "TauCetiRoadmap/EquivariantIntersectionTheory",
+   "title": "Equivariant intersection theory and Picard groups of quotient stacks",
+   "names": [
+    "TauCeti.sub_mem_homogeneousUnitDegrees_iff",
+    "TauCeti.eq_map_mulLeft_of_isUnit_mem",
+    "TauCeti.exists_linearEquiv_iff_exists_isUnit_mem",
+    "TauCeti.homogeneousUnitDegrees_gradeBy",
+    "TauCeti.shiftClassGroupLaurentPolynomialEquiv",
+    "TauCeti.homogeneousUnitDegrees",
+    "TauCeti.ShiftClassGroup",
+    "TauCeti.mem_homogeneousUnitDegrees_iff"
    ]
   },
   {
@@ -1123,6 +1451,33 @@
    ]
   },
   {
+   "id": "EtaleMassFormula",
+   "path": "TauCetiRoadmap/EtaleMassFormula",
+   "title": "Bhargava's mass formula for étale algebras over a local field",
+   "names": [
+    "TauCeti.GaloisSet.tsum_isTransitive",
+    "TauCeti.tsum_isTransitive_one_div_natCard_residueField_pow_discriminantExponent",
+    "IntermediateField.inf_maximalUnramifiedExtension",
+    "TauCeti.GaloisSet",
+    "TauCeti.etaleMass",
+    "TauCeti.orbitDiscriminantExponent",
+    "IntermediateField.inertiaDegree"
+   ]
+  },
+  {
+   "id": "FactorRigidity",
+   "path": "TauCetiRoadmap/FactorRigidity",
+   "title": "Approximation, deformation and rigidity of finite factors",
+   "names": [
+    "Subgroup.relativePropertyT_iff_exists_isKazhdanPair",
+    "Subgroup.relativePropertyT_top_of_finite",
+    "Subgroup.isKazhdanPair_top_univ_one",
+    "Subgroup.RelativePropertyT",
+    "ContRepresentation.HasAlmostInvariantVectors",
+    "ContRepresentation.hilbertSum"
+   ]
+  },
+  {
    "id": "FinancialMathematics",
    "path": "TauCetiRoadmap/FinancialMathematics",
    "title": "Financial mathematics: one-factor markets and replication",
@@ -1139,25 +1494,60 @@
    ]
   },
   {
+   "id": "FiniteGroupExtensionSplitting",
+   "path": "TauCetiRoadmap/FiniteGroupExtensionSplitting",
+   "title": "Gaschütz splitting and complements to abelian normal subgroups",
+   "names": [
+    "Subgroup.exists_complement_iff_cohomologyClass_eq_zero",
+    "TauCeti.exists_isMulCocycle₁_eq_of_coprime_index",
+    "Subgroup.quotientSplittingEquiv",
+    "TauCeti.crossedTransfer",
+    "Subgroup.IsLocalComplement",
+    "Subgroup.quotientConjugationAction"
+   ]
+  },
+  {
+   "id": "FiniteSamplingDiscrepancy",
+   "path": "TauCetiRoadmap/FiniteSamplingDiscrepancy",
+   "title": "Sampling with and without replacement, exact discrepancy for finite populations",
+   "names": [
+    "TauCeti.Probability.iSup_sampleWithoutReplacement_sub_sampleWithReplacement_dirac_eq",
+    "TauCeti.Probability.etvDist_sampleWithoutReplacement_sampleWithReplacement_dirac_eq",
+    "TauCeti.Probability.samplePopulation_dirac",
+    "TauCeti.Probability.sampleWithoutReplacement_dirac",
+    "TauCeti.Probability.sampleWithReplacement_dirac"
+   ]
+  },
+  {
+   "id": "FlagVarieties",
+   "path": "TauCetiRoadmap/FlagVarieties",
+   "title": "Classification of parabolic subgroups and projective homogeneous spaces",
+   "names": [
+    "TauCeti.GeneralLinear.isReduced_and_le_upperTriangular_definingHopfIdeal_iff",
+    "TauCeti.GeneralLinear.exists_antitone_eq_weightParabolicDefiningHopfIdeal_of_charZero",
+    "TauCeti.GeneralLinear.exists_antitone_weightParabolicPoints_eq",
+    "TauCeti.HopfIdeal.quotientPointsOrderEmbedding",
+    "TauCeti.GeneralLinear.standardWeight",
+    "CommHopfAlgCat.fppfHomogeneousQuotientMap"
+   ]
+  },
+  {
    "id": "FormalLaurentPuiseux",
    "path": "TauCetiRoadmap/FormalLaurentPuiseux",
    "title": "Formal Laurent fields, Puiseux expansions and continuous differential calculus",
    "names": [
-    "TauCeti.puiseuxField.exists_isRoot_levelEmbedding",
+    "TauCeti.puiseuxField.absoluteGaloisGroupEquivZHat",
     "TauCeti.puiseuxField.instIsAlgClosure",
     "TauCeti.LaurentSeries.Level.algEquivOfFinrankEq",
-    "TauCeti.puiseuxField.mem_level_factorial_of_aeval_eq_zero",
-    "TauCeti.puiseuxField.levelGalEquivRootsOfUnity",
-    "TauCeti.puiseuxField.kummer_injective",
+    "TauCeti.LaurentSeries.Level.ramificationIdx_valuationOfFinrankEq",
+    "TauCeti.LaurentSeries.Level.ContinuousKaehlerDifferential.coeff_neg_one_equivLaurentSeries_trace",
+    "TauCeti.LaurentSeries.Level.residueOfFinrankEq_trace",
     "TauCeti.LaurentSeries.coeff_neg_one_substAlgHom_mul_derivative_eq_nsmul",
-    "TauCeti.continuousDerivationsEquiv",
-    "TauCeti.ContinuousKaehlerDifferential.substEquiv",
     "TauCeti.puiseuxField.levelCoconeIsColimit",
-    "TauCeti.puiseuxField.not_completeSpace",
-    "TauCeti.FormalCoordinate",
-    "TauCeti.FormalCoordinate.jetLimitEquiv",
-    "HahnModule.instLieRing",
-    "LieAlgebra.LoopAlgebra.toHahnModule"
+    "TauCeti.puiseuxField.ContinuousKaehlerDifferential",
+    "HahnModule.residueDualContinuousLinearEquiv",
+    "HahnModule.tensorProductLieEquiv",
+    "LieAlgebra.LoopAlgebra.residuePairing_toHahnModule"
    ]
   },
   {
@@ -1165,17 +1555,15 @@
    "path": "TauCetiRoadmap/FreeGroupsAndLimitGroups",
    "title": "Free groups, equations over groups, and limit groups",
    "names": [
-    "FreeGroup.isConj_iff_isRotated_reduceCyclically",
+    "TauCeti.LimitGroup.isLimitGroup_iff_isFullyResiduallyFree",
+    "TauCeti.LimitGroup.isLimitGroup_iff_forall_isUniversal",
+    "TauCeti.GroupAlgGeom.isEquationallyNoetherian_of_freeGroupBasis",
+    "TauCeti.GroupAlgGeom.isIrreducible_V_iff_isDiscriminatedBy",
+    "TauCeti.GroupAlgGeom.IsEquationallyNoetherian.exists_irreducible_decomposition",
     "IsFreeGroup.isCSA",
-    "IsFreeGroup.maximal_isMulCommutative_iff",
-    "IsFreeGroup.isGDomain_id",
-    "TauCeti.GroupAlgGeom.IsGDomain.of_isCSA",
-    "TauCeti.injective_freeGroup_lift_transvection_two",
-    "TauCeti.exists_injective_freeGroup_SL",
-    "TauCeti.GroupAlgGeom.isEquationallyNoetherian_generalLinearGroup",
-    "TauCeti.GroupAlgGeom.CoordGroup",
-    "TauCeti.GroupAlgGeom.zariskiTopology",
-    "Group.IsPrimitive"
+    "TauCeti.LimitGroup.MarkedGroup",
+    "TauCeti.StallingsGraph.stallingsGraph",
+    "TauCeti.LimitGroup.CentralizerExt"
    ]
   },
   {
@@ -1204,19 +1592,16 @@
    "title": "Fuchsian groups and orbifold Riemann surfaces",
    "names": [
     "TauCeti.ModularGroup.jBiholomorph",
-    "TauCeti.UpperHalfPlane.ConvexPolygon.SidePairing.relatorQuotientTo_bijective",
-    "Subgroup.exists_sidePairing_relatorQuotientTo_bijective_of_compactSpace",
-    "TauCeti.UpperHalfPlane.ConvexPolygon.SidePairing.covolume_eq_two_pi_mul",
-    "TauCeti.UpperHalfPlane.ConvexPolygon.SidePairing.natCard_cuspOrbit",
-    "TauCeti.RiemannSurface.biholomorphOfDegreeEqOne",
-    "Subgroup.degree_compactifiedQuotientMap",
-    "Subgroup.one_le_abs_trace_sq_sub_four_add_abs_trace_commutatorElement_sub_two",
-    "Subgroup.conj_eq_or_conj_eq_inv_of_dist_le",
+    "TauCeti.UpperHalfPlane.ConvexPolygon.SidePairing.isCofinite_of_isParabolic",
+    "Subgroup.IsCofinite.exists_sidePairing_closure_range_map_eq",
+    "TauCeti.TriangleOrder.IsHyperbolic.exists_isCofinite_triangleGroup",
+    "Subgroup.covolume_eq_two_pi_mul_neg_eulerChar_add",
+    "TauCeti.Fuchsian.eulerChar_compactifiedQuotient_eq_index_mul_sub_ramificationDegree_of_compactSpace",
     "Subgroup.CompactifiedQuotient",
-    "Subgroup.compactSpace_compactifiedQuotient_of_isBounded_truncation",
-    "TauCeti.thickPart",
-    "Subgroup.IsCofinite.isCompact_image_thickPart",
-    "TauCeti.IsLocalTiling"
+    "Subgroup.IsCofinite.compactSpace_compactifiedQuotient",
+    "Subgroup.degree_compactifiedQuotientMap",
+    "Subgroup.isCofinite_iff_exists_convexPolygon_carrier_eq_dirichletDomain",
+    "Subgroup.finiteCWType_orbitRel_quotient"
    ]
   },
   {
@@ -1258,15 +1643,17 @@
    "title": "Geometric measure theory: rectifiability, BV, and finite perimeter",
    "names": [
     "LipschitzWith.lintegral_normDet_fderiv_mul_eq_lintegral_tsum",
-    "TauCeti.totalVariationOn_eq_lintegral_perimeter",
-    "ContinuousOn.eVariationOn_eq_lintegral_encard",
-    "TauCeti.euclideanHausdorffMeasure_sphere",
-    "TauCeti.eLpNorm_le_totalVariationOn",
-    "TauCeti.measure_rpow_le_perimeter",
-    "TauCeti.totalVariationOn",
-    "TauCeti.perimeter",
-    "BoundedVariationOn.exists_arclength_factorization",
-    "TauCeti.exists_regular_lineDeriv_ofFun_apply_eq"
+    "MeasureTheory.lintegral_euclideanHausdorffMeasure_inter_preimage_eq_lintegral_normDet_adjoint_fderiv",
+    "TauCeti.integral_divergenceCLM_mul_eq_neg_integral_inner_polarDensity",
+    "TauCeti.exists_hasWeakFDerivOn_iff",
+    "TauCeti.integral_trace_fderiv_mul_indicator_eq_integral_inner_outerNormal",
+    "TauCeti.min_measure_inter_measure_sdiff_rpow_le_perimeter",
+    "TauCeti.variationMeasure",
+    "TauCeti.BV",
+    "TauCeti.BV.instCompleteSpace",
+    "TauCeti.essentialBoundary",
+    "TauCeti.reducedBoundary",
+    "TauCeti.outerNormal"
    ]
   },
   {
@@ -1288,18 +1675,16 @@
   {
    "id": "GeometricTopology",
    "path": "TauCetiRoadmap/GeometricTopology",
-   "title": "Geometric topology and the solved Kirby-list problems",
+   "title": "Geometric topology",
    "names": [
+    "TauCeti.OrientedConnectedSum.nonempty_diffeomorph_sphere",
+    "TauCeti.IsJordanCurve.exists_homeomorph_image_sphere",
+    "TauCeti.HomologicalOrientation.abs_mul_simplicialVolume_le",
     "PreAbstractSimplicialComplex.IsCombinatorialManifold.exists_chartedSpace_hasGroupoid_PLGroupoid",
     "TauCeti.MarkovEquiv.homfly_eq",
-    "TauCeti.natCard_zerothHomotopy_sphere_compl_range_eq_two",
-    "Diffeomorph.isTopologicalGroup",
-    "TauCeti.Nil.semidirectProductIsomMulEquiv",
-    "TauCeti.UpperHalfSpace.hyperbolicMetric",
-    "TauCeti.knotExterior",
-    "TauCeti.IsSolidTorusNeighborhood.framingNumber",
-    "TauCeti.Foliation.eulerClass",
-    "TauCeti.ThurstonEulerClassInequality"
+    "TauCeti.ConnectedSum.nonempty_diffeomorph_of_isOrientationReversingAt",
+    "TauCeti.IsStarImmersion.eventually_isClosedEmbedding_secantMap_edgewiseSubdivision",
+    "TauCeti.prodThomPairSingularCohomologyEquiv"
    ]
   },
   {
@@ -1307,15 +1692,15 @@
    "path": "TauCetiRoadmap/GlobalQuadraticForms",
    "title": "Global quadratic forms over number fields",
    "names": [
+    "TauCeti.NumberField.QuadraticForm.GlobalFormInvariants.IsAdmissible.exists_globalForm_equivalent_at_places",
+    "TauCeti.NumberField.QuadraticForm.GlobalFormInvariants.IsAdmissible.exists_globalForm",
     "TauCeti.NumberField.QuadraticForm.exists_hilbertSymbol_eq_ite",
     "QuadraticForm.globalInvariants_hasseProduct_eq_one",
     "QuadraticForm.not_anisotropic_of_isLocallyIsotropic_quaternary",
-    "QuadraticForm.not_anisotropic_of_isLocallyIsotropic_of_five_le_finrank",
-    "QuadraticForm.locallyEquivalent_iff_finrank_eq_and_discr_eq_and_finiteHasse_eq_and_realPositiveIndex_eq",
-    "QuadraticForm.globalInvariants",
-    "TauCeti.NumberField.QuadraticForm.GlobalFormInvariants",
-    "TauCeti.NumberField.QuadraticForm.sup_range_ideleNormMap_eq_ker_ideleHilbertCharacter",
-    "TauCeti.NumberField.QuadraticForm.GlobalFormInvariants.IsLocalRealization.exists_locallyRepresents_prod"
+    "TauCeti.WittRing.globalToLocal_eq_zero_iff",
+    "TauCeti.NumberField.QuadraticForm.GlobalFormInvariants.prod",
+    "TauCeti.WittRing.globalToLocal",
+    "NumberField.InfinitePlace.equivOfRingEquiv"
    ]
   },
   {
@@ -1324,20 +1709,36 @@
    "title": "Finite graph connectivity and network flows",
    "names": [
     "TauCeti.Flow.exists_val_eq_arrowSum",
-    "TauCeti.BoundedFlow.exists_val_eq_cutBound",
-    "TauCeti.Flow.exists_isMaximum_mem",
-    "TauCeti.exists_pathCycleDecomposition",
-    "TauCeti.Flow.exists_isAcyclic",
-    "TauCeti.BoundedFlow.IsMaximum.minimizersOrderIso",
-    "TauCeti.TerminalCut.exists_isMinimum_forall_not_crosses",
-    "TauCeti.TerminalCut.min_pairMinimumValue_le",
-    "Graph.isBridge_iff_forall_cycle_notMem",
-    "Graph.isBridge_iff_componentCount_deleteEdges_eq_add_one",
+    "Graph.exists_flow_val_eq_edgeCutCapacity",
+    "SimpleGraph.exists_paths_vertexSeparator_card_eq",
+    "SimpleGraph.isVertexConnected_iff_forall_exists_paths",
+    "TauCeti.TerminalCut.exists_isCutTree",
+    "Graph.exists_isCutTree_edgeCutCapacity",
+    "TauCeti.exists_isCirculation_iff",
+    "Graph.exists_orientation_indegree_eq_iff",
+    "Graph.exists_orientation_indegree_mem_Icc_iff",
     "TauCeti.residualUpdate",
-    "TauCeti.ArrowWalk.splitEquiv",
-    "TauCeti.AuxTerminalHom",
-    "Graph.Walk",
-    "SimpleGraph.walkEquivOfSimpleGraph"
+    "Graph.Orientation",
+    "Graph.EarDecomposition",
+    "TauCeti.Network.EarDecomposition"
+   ]
+  },
+  {
+   "id": "GroebnerGeometry",
+   "path": "TauCetiRoadmap/GroebnerGeometry",
+   "title": "Gröbner bases, affine semigroups and algebraic degenerations",
+   "names": [
+    "MonomialOrder.isGroebnerBasis_span_iff_isRemainder_sPolynomial_zero",
+    "MonomialOrder.existsUnique_isReducedGroebnerBasis",
+    "MonomialOrder.IsGroebnerBasis.basisQuotient",
+    "MonomialOrder.IsGroebnerBasis.basisMapWeightedHomogeneousSubmodule",
+    "TauCeti.toricIdeal_eq_span",
+    "TauCeti.exists_finset_toricIdeal_eq_span",
+    "MonomialOrder.isSAGBIBasis_range_iff_forall_exists_aeval_eq",
+    "MonomialOrder.ker_aeval_eq_span",
+    "MonomialOrder.exists_pos_weight_lt_iff_lt",
+    "TauCeti.MvPolynomial.weightReesAlgebra",
+    "TauCeti.Toric.affineToricIntegralModelBaseChangeIso"
    ]
   },
   {
@@ -1347,14 +1748,12 @@
    "names": [
     "TauCeti.ExactStructure.IsResolving.resolutionEquiv",
     "TauCeti.cartanMatrix_det_eq_one_or_neg_one",
-    "TauCeti.gradedCartanMatrix_dualNumber",
-    "TauCeti.gradedCartanEquiv",
+    "TauCeti.exists_gradedCartanMatrix_det_eq_T_or_neg_T_of_le_admitsFiniteResolution",
+    "TauCeti.forall_exists_isLinear_iff_cartan_poincare_maslovEuler",
     "TauCeti.PathAlgebra.gradedExtEulerForm_gradedVertexSimpleClassBasis_eq_inv",
-    "TauCeti.PathAlgebra.laurentSpecialize_gradedExtEulerForm_eq_extEulerPairing",
-    "TauCeti.forall_exists_isLinear_iff_bigradedExtPoincareMatrix_isDiagonal",
-    "TauCeti.cartan_poincare_of_bigradedExtPoincareMatrix_isDiagonal_of_semisimple",
+    "TauCeti.projectiveExtEuler_isPerfPair_iff",
     "TauCeti.gradedCartanMatrix",
-    "TauCeti.gradedIdempotentProjectiveBasis",
+    "TauCeti.bigradedExtPoincarePowerSeries",
     "TauCeti.GradedProjectiveResolution.IsLinear"
    ]
   },
@@ -1363,17 +1762,18 @@
    "path": "TauCetiRoadmap/HamiltonianFloerOperations",
    "title": "Hamiltonian Floer operations: geometric product and multiplicative PSS",
    "names": [
+    "TauCeti.SymplecticForm.lintegral_floerEnergyDensity_pairOfPantsPerturbation_eq",
     "TauCeti.SymplecticForm.integral_floerEnergyDensity",
-    "TauCeti.Floer.CapClass.mk_eq_mk_iff_action_eq_and_index_eq",
-    "TauCeti.Floer.add_sub_add_two_mul_chern_productClass_eq",
-    "TauCeti.Floer.NovikovRing.forall_finite_lt_iff_bddAbove_degree",
-    "TauCeti.Floer.periodGroupComparison_single_eq_iff",
-    "TauCeti.Floer.NovikovRing",
-    "TauCeti.Floer.PeriodGroup",
-    "TauCeti.Floer.coefficientComparison",
+    "TauCeti.SmoothTwoForm.IsNondegenerate.integral_floerEnergyDensity",
+    "TauCeti.SymplecticForm.integral_abs_hamiltonianCurvature_neckStretch_le",
+    "TauCeti.SymplecticForm.isComplexLinearMap_of_tendsto_rescale",
+    "TauCeti.NovikovModule.kernelProduct_kernelProduct_sub_kernelProduct_kernelProduct_mem_coboundaries",
+    "TauCeti.Floer.pairOfPantsPerturbation",
+    "TauCeti.ThricePuncturedSphere.Puncture.plumbingMap_image_union",
+    "ChainComplex.regradeEquivalence",
     "TauCeti.NovikovModule.kernelProduct",
-    "TauCeti.NovikovModule.kernelMatrix_mem_periodFiltration",
-    "TauCeti.NovikovModule.novikovKernelProduct"
+    "TauCeti.NovikovModule.novikovKernelProduct",
+    "TauCeti.NovikovModule.kernelReadout"
    ]
   },
   {
@@ -1382,15 +1782,42 @@
    "title": "Analytic Heegaard Floer homology",
    "names": [
     "TauCeti.isMeagre_image_criticalPoints_of_isFredholm",
-    "ContDiff.addHaar_image_criticalPoints_eq_zero",
-    "TauCeti.WeakDerivStep.isFredholm_trajectoryOperator",
-    "TauCeti.WeakDerivStep.index_trajectoryOperator_eq_finrank_pointSpectralSubspace_sub_finrank",
-    "TauCeti.IsNondegenerateCriticalPoint.exists_stableSet_isManifold",
-    "TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq",
-    "TauCeti.isManifold_symChartedSpace",
+    "TauCeti.isMeagre_image_criticalPoints_of_isFredholm_of_index_le_two",
+    "TauCeti.WeakDerivStep.isFredholm_trajectoryOperator_of_hasLyapunovForm",
+    "IsIntegralCurve.index_trajectoryOperator_hessianOperator",
+    "TauCeti.exists_eLpNorm_fderiv_le_eLpNorm_conjWirtingerDeriv",
+    "TauCeti.exists_eLpNorm_fderiv_le_eLpNorm_conjWirtingerDeriv_add_eLpNorm",
+    "TauCeti.morseChainSeparatedSumEquiv_comp_morseBoundary",
+    "TauCeti.StrandsAlgebra.differential_differential",
     "TauCeti.eventually_residual_exists_isManifold_sectionZero",
-    "TauCeti.mem_residual_setOf_forall_section_ne_zero_of_index_neg",
-    "TauCeti.morseBoundary_comp_morseBoundary_eq_zero_iff"
+    "TauCeti.IsAdaptedPseudoGradient.IsMorseSmale.morseBoundary",
+    "TauCeti.IsAdaptedPseudoGradient.IsMorseSmale.morseBoundary_comp_morseBoundary_eq_zero_iff",
+    "TauCeti.isManifold_symChartedSpace"
+   ]
+  },
+  {
+   "id": "HilbertModules",
+   "path": "TauCetiRoadmap/HilbertModules",
+   "title": "Hilbert C*-modules, Morita equivalence, and continuous trace",
+   "names": [
+    "CStarMatrix.gram_nonneg",
+    "CStarMatrix.nonneg_iff_forall_sum_nonneg",
+    "CStarModule.topologicalClosure_span_range_unop_inner_mulOpposite",
+    "CStarModule.instMulOpposite",
+    "CStarMatrix.gram"
+   ]
+  },
+  {
+   "id": "HopfologicalAlgebra",
+   "path": "TauCetiRoadmap/HopfologicalAlgebra",
+   "title": "Hopfological algebra",
+   "names": [
+    "TauCeti.integralAntipodeEquiv",
+    "MonoidAlgebra.leftIntegral_eq_rightIntegral",
+    "MonoidAlgebra.leftIntegral_ne_bot",
+    "TauCeti.leftIntegral",
+    "TauCeti.rightIntegral",
+    "BialgEquiv.leftIntegralEquiv"
    ]
   },
   {
@@ -1414,16 +1841,20 @@
    "path": "TauCetiRoadmap/ImaginaryQuadraticClassNumber",
    "title": "Imaginary quadratic fields: class numbers, finiteness and class number one",
    "names": [
-    "NumberField.existsUnique_neg_squarefree_algEquiv",
-    "NumberField.nonempty_algEquiv_iff_of_squarefree",
-    "QuadraticAlgebra.ringHom_eq_or_eq_conjugate",
-    "QuadraticAlgebra.nrComplexPlaces_eq_one",
-    "DirichletCharacter.LFunction_apply_one_pos",
-    "TauCeti.BinaryQuadraticForm.posDefProperClassToPic_injective",
-    "QuadraticAlgebra.complexEmbedding",
-    "TauCeti.ModularForm.siegelFunction",
-    "TauCeti.qTheta",
-    "TauCeti.BinaryQuadraticForm.posDefProperClassToPic"
+    "TauCeti.NumberField.classNumber_eq_card_units_mul_LFunction_one",
+    "TauCeti.BinaryQuadraticForm.picClass_primitiveReducedForms_bijective",
+    "TauCeti.NumberField.classNumber_eq_one_of_mem_heegnerDiscriminants",
+    "TauCeti.NumberField.classNumber_eq_one_iff_of_neg_fifty_one_lt_discr",
+    "TauCeti.sq_eq_two_mul_mul_pow_three_add_one_iff",
+    "TauCeti.mem_image_intCast_of_tschirnhausPolynomial_X_pow_four_eq",
+    "TauCeti.ModularForm.exists_siegelFunction_smul_eq_mul",
+    "TauCeti.ModularForm.prod_X_sub_C_siegelFunction_pow_twelve",
+    "TauCeti.ModularForm.gammaTwo_pow_three",
+    "TauCeti.ModularForm.gammaTwo_eq_siegelFunction_zero_half",
+    "TauCeti.GlobalNumberFields.intAddMulOrder",
+    "Subgroup.CompactifiedQuotient.laurentQExpansion",
+    "PeriodPair.weierstrassPoint",
+    "TauCeti.BinaryQuadraticForm.hilbertClassPolynomial"
    ]
   },
   {
@@ -1431,11 +1862,19 @@
    "path": "TauCetiRoadmap/InfinitaryModelExistence",
    "title": "Infinitary model existence, omitting types and interpolation",
    "names": [
-    "FirstOrder.Language.Theoryω",
-    "FirstOrder.Language.Theoryω.Model",
-    "FirstOrder.Language.StrongHomClass.theoryω_model_iff",
-    "FirstOrder.Language.Theoryω.conjunction",
-    "FirstOrder.Language.Theoryω.realize_conjunction_iff"
+    "FirstOrder.Language.ConsistencyProperty.model_existence",
+    "FirstOrder.Language.ConsistencyProperty.model_existence_omitting",
+    "FirstOrder.Language.Theoryω.exists_countable_model_omitting",
+    "FirstOrder.Language.Theoryω.isolatesIn_of_realized_in_every_countable_model",
+    "FirstOrder.Language.craig_interpolation",
+    "FirstOrder.Language.pcSeparation",
+    "FirstOrder.Language.Sentenceω.wellOrder_type_boundedness",
+    "FirstOrder.Language.wellOrdering_undefinable",
+    "FirstOrder.Language.Fragment.generated_countable",
+    "FirstOrder.Language.exists_aElementary_substructure",
+    "FirstOrder.Language.Theoryω.Entails.realize",
+    "FirstOrder.Language.BoundedFormulaInf.relationalize",
+    "FirstOrder.Language.morleyize"
    ]
   },
   {
@@ -1443,16 +1882,20 @@
    "path": "TauCetiRoadmap/IntegralLattices",
    "title": "Integral quadratic forms and lattices",
    "names": [
-    "TauCeti.IntegralLattice.IsPosDef.minimum_le_rpow_mul_determinant_rpow",
-    "TauCeti.IntegralLattice.IsPosDef.finite_genusClasses",
+    "TauCeti.IntegralLattice.IsPosDef.nonempty_isometry_of_isUnimodular_of_finrank_le_nine",
+    "TauCeti.IntegralLattice.weylGroup_typeE₈RootLattice_eq_top",
+    "TauCeti.IntegralLattice.card_isometry_typeE₈RootLattice",
+    "TauCeti.NiemeierType.nonempty_isometry_lattice_iff",
+    "TauCeti.BinaryQuadraticForm.posDefProperClassEquivPic",
+    "TauCeti.BinaryQuadraticForm.posDefProperClassEquivGal",
+    "TauCeti.BinaryQuadraticForm.properClassEquivNarrowPic",
     "TauCeti.IntegralLattice.nonempty_isometry_orthogonalSum_hyperbolicPlane_e8PowLattice",
-    "TauCeti.IntegralLattice.infinite_isometry_of_isIndefinite",
-    "LinearMap.BilinForm.IsSymm.equivalent_iff_isSquare_det_mul_det_and_eight_dvd_of_odd",
-    "TauCeti.IntegralLattice",
     "TauCeti.FiniteQuadraticModule",
-    "TauCeti.IntegralLattice.evenIntermediateCarrierOrderIsoIsotropicSubgroup",
-    "TauCeti.FiniteQuadraticModule.orthogonalGroup",
-    "TauCeti.IntegralLattice.classNumber"
+    "TauCeti.IntegralLattice.mass",
+    "Matrix.localDensity",
+    "TauCeti.conwaySloanePMass_mul_localDensity_toMatrix",
+    "TauCeti.IntegralLattice.StoredClassNumberCertificate",
+    "TauCeti.IntegralLattice.typeE₈StoredClassNumberCertificate"
    ]
   },
   {
@@ -1460,16 +1903,15 @@
    "path": "TauCetiRoadmap/Isoperimetry",
    "title": "Euclidean isoperimetry, sharp inequalities, and rigidity",
    "names": [
-    "TauCeti.hasPrekopaLeindler_volume",
+    "MeasureTheory.NullMeasurableSet.finrank_pow_mul_volume_ball_mul_volume_pow_le_perimeter_pow",
+    "TauCeti.IsJordanCurve.four_pi_mul_volume_real_filledHull_sdiff_eq_iff",
+    "ConvexBody.perimeter_pow_eq_iff_exists_eq_closedBall",
     "TauCeti.volume_rpow_add_volume_rpow_le",
-    "Convex.volume_smul_add_smul_eq_iff",
-    "TauCeti.mul_integral_norm_sq_eq_four_pi_mul_abs_signedArea_iff",
-    "TauCeti.volume_eq_volume_closedBall_diam_div_two_iff_exists_ae_eq",
-    "ConvexBody.hasDerivWithinAt_volume_real_add_smul_closedBall_rpow_iff_exists_eq_closedBall",
-    "TauCeti.steinerSymmetrization",
-    "TauCeti.schwarzRearrangement",
-    "MeasureTheory.Integrable.exists_convexOn_superlinear_integrable",
-    "TauCeti.Real.two_le_perimeter"
+    "TauCeti.eLpNorm_le_inv_mul_totalVariationOn",
+    "TauCeti.perimeter_steinerSymmetrization_le",
+    "TauCeti.forall_steinerSymmetrization_ae_eq_iff_exists_ae_eq_ball",
+    "TauCeti.rectifiableSignedArea",
+    "TauCeti.lintegral_perimeter_lineSection_le"
    ]
   },
   {
@@ -1479,13 +1921,27 @@
    "names": [
     "TauCeti.AlgebraicGeometry.SchemeWeilDivisor.eulerCharBelow_sheaf_eq_relativeDegree_add_one_sub_genus",
     "TauCeti.AlgebraicGeometry.nonempty_cohomologyOneDualEquivCohomologyZero_differentials_tensor_dual",
-    "TauCeti.AlgebraicGeometry.Scheme.CartierDivisor.classGroupAddEquivLineBundleClass",
+    "TauCeti.AlgebraicGeometry.cohomologyBaseChangeLinearEquiv",
     "WeierstrassCurve.pointAddEquivPicZero",
     "TauCeti.AlgebraicGeometry.abelJacobiMap_app_injective_of_genus_pos",
     "TauCeti.AlgebraicGeometry.relativePicardDegreeZeroFunctor",
-    "TauCeti.AlgebraicGeometry.relativePicardFppfSheaf",
     "TauCeti.AlgebraicGeometry.abelJacobiMapToPicZeroFppf",
-    "TauCeti.AlgebraicGeometry.AbelianVariety.IsAlbanese"
+    "WeierstrassCurve.toAbelianVariety"
+   ]
+  },
+  {
+   "id": "KacMoody",
+   "path": "TauCetiRoadmap/KacMoody",
+   "title": "Kac–Moody algebras, integrable modules and path crystals",
+   "names": [
+    "TauCeti.CartanRealization.two_mul_card_le_rank_add_finrank",
+    "Matrix.nonempty_cartanRealization",
+    "TauCeti.CartanRealization.exists_isMinimal_restrict_isCompl",
+    "TauCeti.CartanRealization.cartanCenter_inf_corootSpan",
+    "TauCeti.CartanRealization.isMinimal_iff_cartanCenter_le_corootSpan",
+    "LinearIndependent.finite_pairs_sub_mem_natSpan",
+    "TauCeti.CartanRealization",
+    "LinearIndependent.natSpanHeight"
    ]
   },
   {
@@ -1506,6 +1962,57 @@
    ]
   },
   {
+   "id": "LFunctions",
+   "path": "TauCetiRoadmap/LFunctions",
+   "title": "L-functions — completions and functional equations",
+   "names": [
+    "TauCeti.LFunctions.tendsto_primeSummatory_inv_absNorm_sub_log_log",
+    "TauCeti.LFunctions.isBigO_primeSummatory_log_absNorm_div_sub_log",
+    "TauCeti.NumberField.mixedEmbedding.tsum_idealLattice_eq_tsum_mixedDual_mixedFourier",
+    "TauCeti.NumberField.mixedEmbedding.mixedDual_idealLattice",
+    "TauCeti.LFunctions.latticeTheta_inv",
+    "TauCeti.LFunctions.surfaceHaar_of_isUnitFundamentalDomain",
+    "TauCeti.LFunctions.dirichletData_hasFunctionalEquation",
+    "TauCeti.LFunctions.AnalyticLFunctionData",
+    "TauCeti.LFunctions.AnalyticLFunctionData.ofSeries",
+    "TauCeti.LFunctions.NormalizationTranslation.hasFunctionalEquation_iff",
+    "TauCeti.LFunctions.mellinKernel",
+    "TauCeti.LFunctions.mellinKernel_inv",
+    "TauCeti.LFunctions.exists_norm_latticeTheta_surfaceScale_sub_one_le",
+    "TauCeti.FEPairWithLevel",
+    "TauCeti.meromorphicContinuation",
+    "TauCeti.LFunctions.heckeLFunctionC"
+   ]
+  },
+  {
+   "id": "LieGroupoidsPoisson",
+   "path": "TauCetiRoadmap/LieGroupoidsPoisson",
+   "title": "Lie algebroids, Lie groupoids and Poisson geometry",
+   "names": [
+    "TauCeti.submersion_iff_split_mfderiv",
+    "TauCeti.isDiffSubmersionAt_iff_isRegularPoint",
+    "TauCeti.LieAlgebroid.anchor_bracket",
+    "TauCeti.LieModule.Cohomology.d_d",
+    "TauCeti.LieModule.Cohomology.cohomology",
+    "TauCeti.LieModule.Cohomology.d₂₃_twoCochainEquiv",
+    "TauCeti.LieModule.Cohomology.curryLeft_d_succ",
+    "ContMDiff.isInvolutiveDistribution_ker_mfderiv",
+    "TauCeti.LieAlgebroid",
+    "TauCeti.LieAlgebroid.Sections.instLieRinehartAlgebra",
+    "TauCeti.LieAlgebroid.tangent",
+    "TauCeti.IsDiffSubmersionAt",
+    "TauCeti.LieModule.Cohomology.cochainComplex"
+   ]
+  },
+  {
+   "id": "LinearFormsInLogarithms",
+   "path": "TauCetiRoadmap/LinearFormsInLogarithms",
+   "title": "Linear forms in logarithms, Baker's theorem over `ℂ` and `ℂ_p`",
+   "names": [
+    "TauCeti.hasFPowerSeriesOnBall_tsum"
+   ]
+  },
+  {
    "id": "LocalPurity",
    "path": "TauCetiRoadmap/LocalPurity",
    "title": "Finite étale covers of punctured spectra and local purity",
@@ -1520,19 +2027,39 @@
    ]
   },
   {
+   "id": "LocalVariationalFieldTheory",
+   "path": "TauCetiRoadmap/LocalVariationalFieldTheory",
+   "title": "Local variational field theory",
+   "names": [
+    "TauCeti.diracClifford_spinGroup",
+    "TauCeti.diracVector_smul_mul_diracWeyl",
+    "TauCeti.conjTranspose_diracWeyl_mul_mul",
+    "TauCeti.diracGamma_mul_add_mul_swap",
+    "TauCeti.diracChirality_eq",
+    "TauCeti.complexDescent",
+    "TauCeti.firstJetCoordChange_comp",
+    "TauCeti.firstJetCoordChange",
+    "TauCeti.StarModuleCat",
+    "TauCeti.timeFirstToNative"
+   ]
+  },
+  {
    "id": "MarkovChainsAndRenewal",
    "path": "TauCetiRoadmap/MarkovChainsAndRenewal",
    "title": "Markov chains and renewal processes",
    "names": [
-    "TauCeti.Probability.ae_tendsto_arrival_atTop",
-    "TauCeti.Probability.ae_renewalCount_lt_top",
-    "TauCeti.Probability.lintegral_renewalCount_pow_lt_top",
-    "TauCeti.Probability.measureReal_arrival_le_le_exp_mul_mgf_pow",
-    "MeasureTheory.Measure.eq_markovChainLaw",
-    "MeasureTheory.Measure.markovChainLaw_map_eval",
-    "ProbabilityTheory.Kernel.markovChainKernel",
-    "TauCeti.Probability.renewalCount",
-    "TauCeti.Probability.renewalCount_eq_natCast_iff"
+    "MeasureTheory.Measure.tendsto_renewalFunction_div",
+    "TauCeti.Probability.ae_tendsto_renewalCountNat_div",
+    "TauCeti.Probability.tendstoInDistribution_renewalCountNat_sub_div",
+    "MeasureTheory.Measure.condExp_stoppedValue_shift_iterate_markovChainLaw",
+    "ProbabilityTheory.Kernel.tsum_pow_apply_singleton_self_eq_top_iff",
+    "TauCeti.Probability.integerWalk_isRecurrent_iff",
+    "ProbabilityTheory.HasIndepIncrements.hasLaw_sub_poissonMeasure_iff_stationary_small_time",
+    "MeasureTheory.Measure.renewalMeasure",
+    "TauCeti.Probability.eq_renewalConv_renewalMeasure",
+    "MeasureTheory.Measure.renewalMeasure_Icc_add_le",
+    "MeasureTheory.Measure.countdownKernel",
+    "ProbabilityTheory.Kernel.tendsto_tvDist_pow_comp_of_parallelComp_isRecurrent"
    ]
   },
   {
@@ -1540,23 +2067,32 @@
    "path": "TauCetiRoadmap/MassFormula",
    "title": "Counting totally ramified extensions of a local field, and Serre's mass formula",
    "names": [
+    "TauCeti.tsum_one_div_natCard_residueField_pow_wildExponent",
+    "TauCeti.hasSum_one_div_natCard_residueField_pow_wildExponent",
+    "TauCeti.IsRepresentativeSet.tsum_one_div_natCard_algEquiv_mul_natCard_residueField_pow_wildExponent",
     "TauCeti.ncard_isomorphic_mul_natCard_algEquiv",
-    "TauCeti.IsRepresentativeSet.tsum_one_div_natCard_algEquiv_mul_natCard_residueField_pow_wildExponent_eq_one_iff",
+    "TauCeti.infinite_totallyRamifiedOfDegree_iff",
+    "TauCeti.encard_totallyRamifiedOfDegree_of_not_dvd",
+    "IntermediateField.lintegral_rootCount",
+    "TauCeti.IsTotallyRamified.existsUnique_isRoot_le_addVal_iff",
     "TauCeti.totallyRamifiedOfDegree_two_eq_padicTwo",
-    "TauCeti.tsum_one_div_pow_wildExponent_two_padicTwo",
-    "TauCeti.tsum_one_div_natCard_residueField_pow_wildExponent_two",
     "Polynomial.exists_isRoot_addVal_eval_eq",
-    "TauCeti.exists_card_aroots_eq",
     "MeasureTheory.Measure.addHaar_image_mulVec",
-    "TauCeti.infinite_totallyRamifiedOfDegree",
-    "TauCeti.totallyRamifiedOfDegree",
-    "IntermediateField.wildExponent",
-    "IntermediateField.wildExponent_le_mul_natCastValuation",
     "TauCeti.eisensteinSet",
-    "TauCeti.measure_eisensteinSet",
-    "IntermediateField.rootCount",
-    "TauCeti.tsum_rootCount_eq_of_separable",
-    "Polynomial.card_roots_eq_sum_ite_of_addVal_lt"
+    "TauCeti.ae_tsum_rootCount_eq",
+    "MeasureTheory.Measure.ae_separable_monicOfCoeff"
+   ]
+  },
+  {
+   "id": "McKaySkewGroup",
+   "path": "TauCetiRoadmap/McKaySkewGroup",
+   "title": "McKay correspondence, skew-group algebras and algebraic Weyl functors",
+   "names": [
+    "TauCeti.SU2.binaryDihedralSubgroup",
+    "TauCeti.SU2.binaryDihedralEquiv",
+    "TauCeti.SU2.binaryDihedralHom_injective",
+    "TauCeti.SU2.mem_binaryDihedralSubgroup_iff",
+    "TauCeti.SU2.natCard_binaryDihedralSubgroup"
    ]
   },
   {
@@ -1569,17 +2105,17 @@
     "TauCeti.AlgebraicGeometry.ModuliProblem.gammaOneRepresentableBy",
     "TauCeti.AlgebraicGeometry.ModuliProblem.gammaIsoGammaNaive",
     "TauCeti.AlgebraicGeometry.ModuliProblem.hasProperty_etale_gammaRelRepData",
-    "TauCeti.AlgebraicGeometry.ModuliProblem.isRigid_gamma",
-    "TauCeti.AlgebraicGeometry.ModuliProblem.gammaRelRepData",
-    "TauCeti.AlgebraicGeometry.ModuliProblem.gammaOneRelRepData",
-    "TauCeti.AlgebraicGeometry.EllipticCurveGeom.isogenyOfDegree_intCast",
-    "TauCeti.AlgebraicGeometry.EllipticCurveGeom.etale_torsion_hom_of_forall_intCast_ne_zero",
+    "TauCeti.InvariantQuotient.quotient",
+    "TauCeti.InvariantQuotient.isColimitFppfYonedaCofork",
+    "AlgebraicGeometry.Scheme.Hom.isColimitAffineCoequalizerCofork",
+    "TauCeti.GroupScheme.factorisationDual",
+    "TauCeti.AlgebraicGeometry.EllipticCurveGeom.isogenyOfDegree_factorisationDual",
     "TauCeti.FiniteEtaleScheme.galoisEquivalence",
-    "TauCeti.FiniteEtaleScheme.galoisEquivalenceCommGrp",
-    "TauCeti.AlgebraicGeometry.ModuliProblem.IsRigid.eq_one_of_comp_simultaneousAction_gammaNaiveAction_base_eq",
-    "CategoryTheory.CommMon.invariantSubalgebraPresheaf",
-    "TauCeti.DescentDatum.descended",
-    "TauCeti.StrictHenselization.algebra"
+    "TauCeti.AlgebraicGeometry.ModuliProblem.RelRepData.doubleRepresentableBy",
+    "TauCeti.AlgebraicGeometry.ModuliProblem.RelRepData.doubleEquivalenceRelation",
+    "TauCeti.AlgebraicGeometry.fullSetLocus",
+    "TauCeti.AlgebraicGeometry.fullSetTupleLocus",
+    "Module.Grassmannian.hopfIdealLocusEquivClosedSubgroupScheme"
    ]
   },
   {
@@ -1587,16 +2123,12 @@
    "path": "TauCetiRoadmap/ModularForms",
    "title": "Modular forms — Hecke theory, newforms, and L-functions",
    "names": [
-    "TauCeti.ModularForm.valence_formula_finiteIndex",
-    "HeckeRing.GL2.Newform.heckeUCuspNat_eq_qExpansion_coeff_smul",
-    "HeckeRing.GL2.Newform.L_eulerProduct",
-    "TauCeti.numberField_CoefficientField",
+    "HeckeRing.GLn.polynomialRingEquiv",
     "TauCeti.isCompl_eisensteinSubspace_range_cuspToModFormCharSpace",
-    "TauCeti.ModularSymbols",
-    "TauCeti.ModularSymbols.periodMap",
-    "TauCeti.ModularSymbols.periodMap_injective",
-    "HeckeRing.GL2.Newform.atkinLehnerPseudoEigenvalue",
-    "TauCeti.gamma0CuspOrbitEquiv"
+    "TauCeti.numberField_CoefficientField",
+    "TauCeti.RiemannSurface.divisorSheaf",
+    "TauCeti.RiemannSurface.pointTwistSequence_shortExact",
+    "HeckeRing.GL2.Newform.atkinLehnerPseudoEigenvalue"
    ]
   },
   {
@@ -1604,15 +2136,18 @@
    "path": "TauCetiRoadmap/MorseNovikov",
    "title": "Morse–Novikov homology and dynamical Reidemeister torsion",
    "names": [
-    "TauCeti.NovikovSeries.completionPkg",
-    "TauCeti.NovikovSeries.isDomain_of_fg",
-    "TauCeti.NovikovSeries.expMulEquiv",
+    "TauCeti.NovikovSeries.orbitZeta_eq_mapRingHom_eulerProduct",
+    "Matrix.sign_det_one_sub_pow",
+    "TauCeti.NovikovSeries.algebraNorm_orbitZeta",
     "HomologicalComplex.reidemeisterTorsion_eq_mul_of_shortExact",
-    "HomologicalComplex.reidemeisterTorsion_eq_zero_iff",
-    "HomologicalComplex.reidemeisterTorsion_eq_mul_finprod_det",
-    "TauCeti.NovikovSeries.mapRingHom",
-    "TauCeti.NovikovSeries.toLaurentSeries",
-    "Matrix.continuous_mulVec_extension_iff"
+    "AddMonoidAlgebra.exists_ringEquiv_pi_field_of_isFractionRing",
+    "TauCeti.NovikovSeries.isArtinianRing_of_isFractionRing",
+    "ChainComplex.sum_range_trace_f_eq_sum_range_trace_homologyMap",
+    "HomologicalComplex.componentwiseReidemeisterTorsion",
+    "TauCeti.IsMorseOneForm",
+    "TauCeti.isMorseOneForm_iff_surjective_sectionLinearization",
+    "TauCeti.PeriodCover.apply_deck_apply",
+    "TauCeti.fixedPointDerivative"
    ]
   },
   {
@@ -1620,16 +2155,56 @@
    "path": "TauCetiRoadmap/MorseTheory",
    "title": "Morse functions, sublevel topology and Morse–Bott attachments",
    "names": [
+    "TauCeti.IsMorse.sum_range_neg_one_pow_mul_finrank_singularHomology_le",
+    "TauCeti.IsMorse.exists_morseCellAttachment_deformation",
+    "TauCeti.IsMorse.simplyConnectedSpace_of_manifoldMorseIndex_ne_one",
     "TauCeti.lsCategoryCount_univ_le_totalCriticalCount",
-    "TauCeti.exists_sublevelDeformation",
-    "TauCeti.exists_diffeomorph_sublevel",
-    "TauCeti.IsManifoldNondegenerateCriticalPoint.exists_normalized_morseChart",
-    "TauCeti.exists_riemannianEDist_le_mul_exp_maximalIntegralCurve_neg_mgradient",
-    "TauCeti.IsMorse.exists_tendsto_maximalIntegralCurve_neg_mgradient",
-    "TauCeti.isSmoothEmbedding_coe_scalarRegularLevel",
-    "TauCeti.criticalHessian",
-    "TauCeti.IsMorse.exists_admissible_morseCharts",
-    "TauCeti.exists_inter_quadraticSublevelUnionCell_deformation"
+    "TauCeti.IsMorse.exists_edist_le_exp_of_tendsto_neg_mgradient",
+    "TauCeti.not_exists_riemannianEDist_le_mul_exp_maximalIntegralCurve_neg_mgradient_pow_four",
+    "TauCeti.morseRelCWComplex",
+    "TauCeti.IsMorse.exists_singularHomology_sublevelPair_iso_sigma",
+    "TauCeti.IsMorse.nonempty_filteredSpaceSpectralSequence_page_two_X_iso_sigma",
+    "ContMDiffMap.manifoldStrongWhitneyTopology",
+    "ContMDiffMap.exists_isMorse_mem_ball_sub_compl",
+    "TauCeti.SmoothEmbedding.IsCriticalSubmanifold.negativeNormalSpace",
+    "TauCeti.SmoothEmbedding.IsNondegenerateCriticalSubmanifold.exists_normalized_morseBott_chart"
+   ]
+  },
+  {
+   "id": "Neuromanifolds",
+   "path": "TauCetiRoadmap/Neuromanifolds",
+   "title": "Neuromanifolds, parametrisations, and neurovarieties",
+   "names": [
+    "TauCeti.Neuromanifold.not_isAlgebraicImage_const_sq",
+    "TauCeti.Neuromanifold.polynomialCoefficientMap_eq_iff",
+    "TauCeti.Neuromanifold.realizedFunctions_polynomialRealization",
+    "TauCeti.Neuromanifold.isSemialgebraic_range_polynomialCoefficientCoordinates",
+    "TauCeti.Neuromanifold.MLPSpec.isHomogeneous_inputPolynomial_polynomialRealizeWeights_monomial",
+    "TauCeti.Neuromanifold.MLPSpec.monomial_hiddenSymmetrySetoid_le_parameterSetoid",
+    "TauCeti.Neuromanifold.neurovariety",
+    "TauCeti.Neuromanifold.IsAlgebraicImage",
+    "MvPolynomial.zariskiClosure_image_linearEquiv",
+    "TauCeti.Neuromanifold.neurovariety_extendByZero_comp",
+    "TauCeti.Neuromanifold.polynomialCoefficientMap",
+    "TauCeti.Neuromanifold.exists_polynomialRealization_of_coefficients",
+    "TauCeti.Neuromanifold.MLPSpec"
+   ]
+  },
+  {
+   "id": "NewtonPolygons",
+   "path": "TauCetiRoadmap/NewtonPolygons",
+   "title": "Newton polygons of polynomials and power series",
+   "names": [
+    "Polynomial.newtonSlopes_eq_map_roots_map",
+    "Polynomial.newtonPolygon_mul",
+    "PowerSeries.IsEntire.newtonPolygon_mul",
+    "Polynomial.existsUnique_isPureSlopeFactorization",
+    "Polynomial.irreducible_of_forall_mem_newtonSlopes_eq",
+    "PowerSeries.exists_pow_mul_distinguished_mul_unit",
+    "TauCeti.lowerConvexEnvelope",
+    "TauCeti.FiniteSlopeData",
+    "TauCeti.InfiniteSlopeData",
+    "TauCeti.PowerSeries.IsDiscPreparation"
    ]
   },
   {
@@ -1654,17 +2229,38 @@
    "path": "TauCetiRoadmap/NoncommutativeGeometry",
    "title": "Cyclic cohomology, spectral triples and noncommutative tori",
    "names": [
+    "TauCeti.exact_cyclicTotalHomologyConnesB_cyclicTotalHomologyPeriodicity",
+    "TauCeti.exact_homologyMap_cyclicTotalComplexToHochschild_cyclicTotalHomologyConnesB",
+    "TauCeti.exact_cyclicTotalHomologyPeriodicity_homologyMap_cyclicTotalComplexToHochschild",
     "TauCeti.quasiIso_cyclicCochainComplexToTotal",
-    "TauCeti.cyclicCohomology.selfEquiv",
-    "TauCeti.isZero_cyclicCohomology_self_of_odd",
-    "TauCeti.cyclicCohomology.evenPairing_units_conj",
-    "TauCeti.cyclicCohomology.oddPairing",
-    "TauCeti.cyclicCohomology.oddPairing_matrixExtension_of_val_eq_fromBlocks_one",
-    "TauCeti.cycleCocycle",
-    "TauCeti.relativeCyclicCohomology",
-    "TauCeti.cyclicCohomology.matrixExtension",
-    "TauCeti.continuousCyclicCochains",
-    "TauCeti.continuous_continuousConnesB"
+    "TauCeti.UniversalForms.cycleCocycle_trace",
+    "TauCeti.AlgebraicK1.oddPairing",
+    "TauCeti.cyclicCohomology.evenPairingK0",
+    "TauCeti.linearDixmierTrace",
+    "TauCeti.complexDixmierTrace_comp_comm",
+    "TauCeti.exists_isPositive_mem_logarithmic_not_isDixmierMeasurable",
+    "IsSelfAdjoint.exists_hilbertBasis_forall_apply_eq_smul_of_hasCompactResolvent",
+    "TauCeti.periodicCyclicCohomology",
+    "TauCeti.periodicCyclicCohomology.shiftIso",
+    "TauCeti.periodicCyclicCohomology.isIso_ι_of_isZero_hochschildCohomology",
+    "TauCeti.continuousCyclicCohomology",
+    "TauCeti.continuousRelativeCyclicCohomology",
+    "TauCeti.SmoothNoncommutativeTorus"
+   ]
+  },
+  {
+   "id": "NoncommutativeIntegration",
+   "path": "TauCetiRoadmap/NoncommutativeIntegration",
+   "title": "Noncommutative integration and martingale inequalities",
+   "names": [
+    "MeasureTheory.Measure.lintegral_decreasingRearrangement_enorm_eq_iInf_eLpNorm",
+    "MeasureTheory.Measure.volume_restrict_setOf_lt_decreasingRearrangement",
+    "MeasureTheory.Measure.eLpNorm_decreasingRearrangement",
+    "MeasureTheory.Measure.decreasingRearrangement_add_le",
+    "MeasureTheory.Measure.decreasingRearrangement_mul_le",
+    "TauCeti.CompatibleCouple.KMethodSpace.inclusion",
+    "TauCeti.CompatibleCouple.KMethodSpace.norm_inclusion_le",
+    "MeasureTheory.Measure.decreasingRearrangement"
    ]
   },
   {
@@ -1672,17 +2268,21 @@
    "path": "TauCetiRoadmap/OperatorAlgebraDynamics",
    "title": "Operator-algebra dynamics, crossed products, and equilibrium",
    "names": [
-    "TauCeti.CStarAction.isKMSState_iff_of_dense",
-    "TauCeti.CStarAction.IsKMSState.apply_action",
-    "TauCeti.CStarAction.convex_kmsStates",
-    "TauCeti.CStarAction.isCompact_kmsStates",
-    "TauCeti.CStarAction.IsKMSState.of_tendsto",
-    "TauCeti.CStarAction.CovariantRepresentation.integratedOperator_convolution",
-    "TauCeti.CStarAction.CovariantRepresentation.norm_integratedOperator_le",
-    "TauCeti.CStarAction.ConvolutionAlgebra",
-    "TauCeti.CStarAction.CovariantRepresentation.regular",
-    "TauCeti.CStarAction.entireAnalytic",
-    "TauCeti.CStarAction.dense_entireAnalytic"
+    "TauCeti.CStarAction.isGroundState_iff_norm_apply_mul_entireExtension_le",
+    "TauCeti.CStarAction.isGroundState_iff_neg_I_mul_apply_star_mul_generator_nonneg",
+    "TauCeti.CStarAction.isGroundState_iff_exists_inner_gnsHamiltonian_nonneg",
+    "TauCeti.CStarAction.IsGroundState.of_tendsto_isKMSState",
+    "Matrix.IsHermitian.isKMSState_iff_eq_gibbsState",
+    "Matrix.IsHermitian.tendsto_trace_exp_neg_smul_mul_div",
+    "TauCeti.CStarAction.IsKMSState.eq_zero_of_apply_toPreGNS_one_eq_zero",
+    "TauCeti.CStarAction.FullCrossedProduct.of_injective",
+    "TauCeti.CStarAction.FullCrossedProduct",
+    "TauCeti.CStarAction.FullCrossedProduct.coefficientMultiplier",
+    "TauCeti.CStarAction.FullCrossedProduct.groupMultiplier",
+    "TauCeti.CStarAction.perturbed",
+    "TauCeti.dysonSeries",
+    "TauCeti.CStarAction.regularAlgebra",
+    "TauCeti.CStarAction.RegularCrossedProduct.fourierCoeff"
    ]
   },
   {
@@ -1690,17 +2290,15 @@
    "path": "TauCetiRoadmap/OperatorTheory",
    "title": "Operator theory",
    "names": [
+    "ContinuousLinearMap.borelCalculus_restrict_id",
     "ContinuousLinearMap.polarFactor_comp_modulus",
-    "TauCeti.UnitarilyInvariantSeminorm.mul_map_le_pi_div_two_mul_map_sylvester_apply",
-    "TauCeti.UnitarilyInvariantSeminorm.mul_map_starProjection_comp_starProjection_le_map_sub",
-    "TauCeti.UnitarilyInvariantSeminorm.map_le_of_kyFanSum_le",
+    "TauCeti.UnitarilyInvariantSeminorm.mul_map_starProjection_comp_starProjection_le_pi_div_two_mul_map_sub",
     "IsSelfAdjoint.add_of_isRelativelyBounded",
-    "TauCeti.ProjValMeasure",
-    "TauCeti.ProjValMeasure.integral",
+    "TauCeti.existsUnique_toeplitz_eq_iff_adjoint_comp_comp_eq",
+    "TauCeti.ProjValMeasure.eq_ofRepresentation_iff",
+    "IsSelfAdjoint.tendsto_symmetricYosidaApproximation_apply",
     "TauCeti.OperatorIdealFamily.traceClass",
-    "TauCeti.OperatorIdealFamily.hilbertSchmidt",
-    "ContinuousLinearMap.singularValue",
-    "TauCeti.HaagerupZsido.integral_norm_reciprocalKernel"
+    "TauCeti.SymmetricGauge.extend_eq_of_operatorIdealFamily_eq"
    ]
   },
   {
@@ -1709,13 +2307,14 @@
    "title": "Optimal transport and Wasserstein geometry",
    "names": [
     "TauCeti.exists_isKantorovichOptimalTransportMap_gradient",
+    "TauCeti.mongeCost_eq_transportCost_of_continuous",
     "TauCeti.isLeast_lintegral_isContinuityEquation",
-    "TauCeti.exists_map_IccExtend_eq_lintegral_curveAction_eq",
     "TauCeti.WassersteinSpace.eqOn_of_isGeodesicSegment_of_ae_subsingleton",
-    "TauCeti.internalEnergy_map_smul_add_smul_gradient_le",
-    "TauCeti.convexSection",
+    "TauCeti.isCurveOfMaximalSlope_of_forall_mem_moreauYosidaResolvent",
+    "TauCeti.IsDisplacementInterpolation",
+    "TauCeti.MetricMeasureSpace.ReducedCurvatureDimension",
     "TauCeti.GromovWassersteinSpace",
-    "TauCeti.MetricMeasureSpace.MeasureContraction"
+    "TauCeti.GromovWassersteinSpace.completeSpace_iff"
    ]
   },
   {
@@ -1741,16 +2340,17 @@
    "path": "TauCetiRoadmap/PDE",
    "title": "Partial differential equations",
    "names": [
-    "TauCeti.PDE.UniformlyEllipticOn.existsUnique_isWeakSolutionDirichlet_of_mass_nonneg",
+    "TauCeti.PDE.UniformlyEllipticOn.exists_forall_energyFormH1_eq_iff",
     "TauCeti.PDE.exists_holderOnWith_preciseRepresentative",
     "TauCeti.PDE.exists_ae_ae_value_le_mul_value",
+    "TauCeti.PDE.exists_memLp_gradient_ball_divergence",
+    "TauCeti.PDE.le_add_mul_eLpNorm_negPart_div_det_rpow",
     "TauCeti.exists_fourierMultiplierCLM_eq_and_norm_le_of_norm_iteratedFDeriv_le",
-    "TauCeti.exists_eLpNorm_iteratedFDeriv_two_le_eLpNorm_laplacian",
-    "TauCeti.PDE.exists_mul_lpNorm_iteratedGradient_ball_le_of_sum_mul_inner_eq_of_abs_sub_le",
-    "TauCeti.exists_hasWeakLineDerivOn_gelfandDual",
     "TauCeti.Wkp",
     "TauCeti.W1p.frontierTrace",
-    "TauCeti.CkHolderSpace"
+    "TauCeti.W1p.mem_w1p0Submodule_iff_frontierTrace_compAffineIsometryEquivL_eq_zero",
+    "TauCeti.PDE.existsUnique_frontierTrace_eq_forall_energyFormH1_eq",
+    "TauCeti.ParabolicC2HolderSpace"
    ]
   },
   {
@@ -1775,17 +2375,24 @@
    "path": "TauCetiRoadmap/PadicMeasuresIwasawaAlgebras",
    "title": "p-adic measures, completed group algebras, and characteristic ideals",
    "names": [
+    "TauCeti.Iwasawa.exists_isPseudoIsomorphism_elementary",
+    "TauCeti.Iwasawa.completedCoordinateEquiv",
+    "TauCeti.Iwasawa.completedCoordinateEquiv_eq_powerSeriesCoordinate",
     "AbstractMeasure.completedGroupAlgebraEquiv",
-    "AbstractMeasure.towerCoordinatesEquiv",
-    "AbstractMeasure.existsUnique_finiteProjection_unitsToZModPow_eq",
-    "AbstractMeasure.amiceTransform_weight_id",
-    "PowerSeries.height_eq_one_iff_of_isDiscreteValuationRing",
-    "TauCeti.Iwasawa.ker_levelCoordinate",
-    "TauCeti.Iwasawa.iwasawaCoordinate_injective",
+    "AbstractMeasure.isHomeomorph_toCompletedGroupAlgebra_weak",
+    "AbstractMeasure.unitsMeasureAmiceEquiv",
+    "AbstractMeasure.isHomeomorph_unitsMeasureAmiceEquiv_weak",
+    "AbstractMeasure.unitsPseudomeasures",
+    "ContinuousMonoidHom.unitCharacterEval",
+    "AbstractMeasure.unitCharacterEval_ext",
+    "TauCeti.Iwasawa.charIdeal",
+    "TauCeti.Iwasawa.charDivisor",
+    "TauCeti.Iwasawa.charIdeal_eq_mul_of_exact",
+    "TauCeti.Iwasawa.IsPseudoIsomorphism.charIdeal_eq",
     "TauCeti.FiniteQuotientTower",
-    "TauCeti.FiniteQuotientTower.compatibleFamilies",
-    "PowerSeries.IsWeierstrassFactorizationAt.powerBasis",
-    "AbstractMeasure.extendCoefficients"
+    "AbstractMeasure.isClosedEmbedding_towerCoordinates_weak",
+    "TauCeti.natCard_quotSMulTop_div_natCard_torsionBy_of_exact",
+    "TauCeti.Iwasawa.IsPseudoIsomorphism.natCard_quotSMulTop_div_natCard_torsionBy_eq"
    ]
   },
   {
@@ -1808,21 +2415,62 @@
    ]
   },
   {
+   "id": "Poincare3D",
+   "path": "TauCetiRoadmap/Poincare3D",
+   "title": "Three-dimensional Poincaré through Ricci flow with surgery",
+   "names": [
+    "TauCeti.ricciWidthProfile",
+    "TauCeti.eventually_ricciWidthProfile_neg",
+    "TauCeti.ricciWidth_normalized_le_of_forward_le_of_jump_le",
+    "TauCeti.ricciWidth_time_le_of_forward_le_of_jump_le",
+    "TauCeti.exists_isStandardCapProfile",
+    "TauCeti.IsStandardCapProfile",
+    "TauCeti.HalfSpaceExtension.exists_contDiff_extension_halfSpace",
+    "TauCeti.HasUniformJetBoundsOn",
+    "TauCeti.exists_isometric_ultrafilter_limit"
+   ]
+  },
+  {
+   "id": "PolylogarithmFunctions",
+   "path": "TauCetiRoadmap/PolylogarithmFunctions",
+   "title": "Polylogarithm functions",
+   "names": [
+    "TauCeti.Polylog.polylog",
+    "TauCeti.Polylog.analyticOnNhd_polylog_neg_nat",
+    "TauCeti.Polylog.polylog_neg_one",
+    "TauCeti.Polylog.polylog_one_three"
+   ]
+  },
+  {
    "id": "PositiveScalarCurvature",
    "path": "TauCetiRoadmap/PositiveScalarCurvature",
    "title": "Positive scalar curvature, surgery and bordism",
    "names": [
+    "JoinedIn.concordant",
+    "Bundle.ContMDiffRiemannianMetric.isOpen_setOf_hasPositiveScalarCurvature_chartC2",
+    "IsCompact.exists_pos_forall_le_scalarCurvature_chartC2",
+    "TauCeti.Manifold.exists_pos_forall_le_scalarCurvature_of_eventually_inner_eq",
+    "TauCeti.hasPositiveScalarCurvature_torpedoMetric_prodTangentSpace_sphereRoundMetricOfRadius",
     "Bundle.ContMDiffRiemannianMetric.equivalence_concordant",
     "Bundle.ContMDiffRiemannianMetric.concordant_iff_exists_isCollaredConcordance",
-    "TauCeti.Manifold.exists_pos_forall_le_scalarCurvature",
-    "Bundle.ContMDiffRiemannianMetric.scalarCurvature_prodTangentSpace",
-    "Bundle.ContMDiffRiemannianMetric.exists_pos_hasPositiveScalarCurvature_prodTangentSpace_rescale",
-    "TauCeti.scalarCurvature_sphereRoundMetricOfRadius",
-    "Bundle.ContMDiffRiemannianMetric.HasPositiveScalarCurvature",
+    "Bundle.ContMDiffRiemannianMetric.chartCkTopology",
+    "Bundle.ContMDiffRiemannianMetric.chartCkTopology_eq_induced",
     "TauCeti.Manifold.scalarCurvatureOfJet",
-    "ContinuousAt.scalarCurvatureOfJet",
-    "Bundle.ContMDiffRiemannianMetric.positiveDefiniteSymmetricSectionEquiv",
-    "ContMDiffVectorBundle.symmetricBilinearMaps"
+    "TauCeti.torpedoMetric",
+    "Bundle.ContMDiffRiemannianMetric.connectedSum"
+   ]
+  },
+  {
+   "id": "PrimitivePrimeDivisors",
+   "path": "TauCetiRoadmap/PrimitivePrimeDivisors",
+   "title": "Primitive prime divisors and the Bang–Zsigmondy theorem",
+   "names": [
+    "TauCeti.exists_prime_dvd_sq_sub_sq_iff",
+    "TauCeti.exists_prime_dvd_sub_iff",
+    "TauCeti.not_exists_prime_dvd_two_pow_six_sub_one_pow_six",
+    "Nat.multiplicity_pow_sub_pow_of_dvd_pow_sub_pow",
+    "Nat.Prime.dvd_pow_add_pow_iff_of_orderOf_eq_two_mul",
+    "TauCeti.lt_pow_sub_pow_div_add_pow"
    ]
   },
   {
@@ -1836,12 +2484,75 @@
     "TauCeti.zHat.cohomologicalDimensionAt_eq_one",
     "TauCeti.zHat.h2EquivRatCircle",
     "OpenSubgroup.exact_cor_cup_of_index_two",
-    "TauCeti.cyclicTwoCohomPolynomialEquiv",
-    "TauCeti.ContCohomology.smoothTensorInducedDiagonalClass_eq_graphClass",
+    "OpenSubgroup.evensNorm_trans",
     "TauCeti.ContCohomology.dimensionShiftIso",
-    "TauCeti.ContCohomology.evensNormIndexTwo",
-    "TauCeti.smoothTensorInducedDiagonalClass",
-    "TauCeti.smoothTensorInducedDiagonalClass_trivialF2_changeTransversal"
+    "OpenSubgroup.evensNorm",
+    "OpenSubgroup.evensNormIndexTwo_eq",
+    "TauCeti.ContCohomology.evensNormIndexTwo"
+   ]
+  },
+  {
+   "id": "PseudodifferentialOperators",
+   "path": "TauCetiRoadmap/PseudodifferentialOperators",
+   "title": "Pseudodifferential operators and elliptic analysis on bundles",
+   "names": [
+    "TauCeti.Symbol.exists_quantizeSobolev",
+    "TauCeti.tsupport_quantizeSchwartzValue_subset_iff",
+    "TauCeti.tendsto_integral_cutoff_smul_quantizeSchwartzValue",
+    "TauCeti.exists_derivationEquivSmoothVectorField",
+    "Distribution.waveFrontSet_ofFun_one_map_subtype",
+    "Distribution.waveFrontSet_delta",
+    "TauCeti.Symbol.instTopologicalSpace",
+    "TauCeti.mem_differentialOperators_iff_forall_list_prod",
+    "TauCeti.commutatorSymbol",
+    "TauCeti.CompatibleCouple.KMethodSpace"
+   ]
+  },
+  {
+   "id": "PseudoholomorphicCurveAnalysis",
+   "path": "TauCetiRoadmap/PseudoholomorphicCurveAnalysis",
+   "title": "Elliptic analysis of pseudoholomorphic curves",
+   "names": [
+    "TauCeti.exists_eLpNorm_fderiv_le_eLpNorm_conjWirtingerDeriv",
+    "TauCeti.beurlingLp",
+    "TauCeti.exists_contDiffOn_holderOnWith_fderiv_pi_inv_smul_integral_sub_inv_smul",
+    "TauCeti.HasWeakConjWirtingerDerivOn.exists_differentiableOn_ae_eq",
+    "TauCeti.SmoothTwoForm.IsNondegenerate.IsLagrangianEmbedding.isTotallyRealEmbedding",
+    "TauCeti.ContMDiffAlmostComplexStructure",
+    "TauCeti.ContMDiffAlmostComplexStructureFamily",
+    "TauCeti.MemWkpLoc",
+    "TauCeti.cauchyTransform"
+   ]
+  },
+  {
+   "id": "PurityOfBranchLocus",
+   "path": "TauCetiRoadmap/PurityOfBranchLocus",
+   "title": "Purity of the branch locus",
+   "names": [
+    "TauCeti.isRegularLocalRing_tfae",
+    "TauCeti.IsRegularLocalRing.globalDimension_eq_ringKrullDim",
+    "ModuleCat.projectiveDimension_add_depth_eq_depth",
+    "TauCeti.Algebra.etale_of_isUnramifiedAt_height_eq_one_of_ringKrullDim_le_two",
+    "AlgebraicGeometry.Scheme.Hom.exists_elementaryEtale_finite_of_isolated",
+    "AlgebraicGeometry.Scheme.Hom.ramificationLocus_eq_nonEtaleLocus",
+    "AlgebraicGeometry.Scheme.Hom.ramificationLocus",
+    "AlgebraicGeometry.Scheme.Hom.branchLocus",
+    "TauCeti.globalDimension",
+    "ModuleCat.exists_projectiveResolution_finite_free_minimal"
+   ]
+  },
+  {
+   "id": "QuadraticCharactersAndReduction",
+   "path": "TauCetiRoadmap/QuadraticCharactersAndReduction",
+   "title": "Quadratic characters and finite reduction of quadratic orders",
+   "names": [
+    "QuadraticAlgebra.trichotomy",
+    "FiniteField.quadraticAlgebra_trichotomy",
+    "QuadraticAlgebra.nonempty_algEquiv_prod_iff",
+    "QuadraticAlgebra.isField_iff_not_isSquare",
+    "FiniteField.isEmpty_quadraticAlgebra_algEquiv_prod_of_even_card",
+    "QuadraticAlgebra.algEquivDualNumberOfDoubleRoot",
+    "QuadraticAlgebra.norm_eq_fst_mul_snd_algEquivProdOfSq"
    ]
   },
   {
@@ -1854,11 +2565,25 @@
     "TauCeti.hilbertSymbol_productFormula",
     "TauCeti.brauerCohomologyEquiv",
     "TauCeti.brauer2EquivH2_baseChange",
+    "TauCeti.brauerCohomologyEquiv_uliftEquiv",
     "TauCeti.sw2Class_formClass_traceTransfer_smul_sq",
     "TauCeti.galoisEvens_kummerClass_eq_hilbertSymbol_smul",
-    "TauCeti.RegularFormClass.cliffordInvariant_eq_hasseInvariant_mul",
     "TauCeti.hilbertSymbolForm",
-    "TauCeti.cup_kummerClass_eq_hilbertSymbol_smul"
+    "TauCeti.cup_kummerClass_eq_hilbertSymbol_smul",
+    "TauCeti.unitFiltration_le_quadraticNormSubgroup_iff"
+   ]
+  },
+  {
+   "id": "QuantumEnvelopingAlgebras",
+   "path": "TauCetiRoadmap/QuantumEnvelopingAlgebras",
+   "title": "Quantum enveloping algebras of full root data, integral forms and quantum Frobenius",
+   "names": [
+    "TauCeti.forall_quantumFactorial_ne_zero_iff",
+    "TauCeti.quantumFactorial_ne_zero_iff_lt",
+    "TauCeti.inv_quantumFactorial_smul_add_pow",
+    "TauCeti.quantumBinomial_add_left_eq",
+    "TauCeti.signedLaurentQuantumBinomial",
+    "TauCeti.laurentQuantumFactorial"
    ]
   },
   {
@@ -1866,19 +2591,55 @@
    "path": "TauCetiRoadmap/QuantumGroups",
    "title": "Quantum groups: compact reconstruction and generic rank-one representations",
    "names": [
+    "TauCeti.UqSl2.clebschGordanEquiv",
+    "TauCeti.UqSl2.sixJ_pentagon",
+    "TauCeti.UqSl2.sphericalCategory",
+    "TauCeti.UqSl2.quantumDim_ladderModule",
     "TauCeti.UqSl2.isSemisimpleModule_of_finiteDimensional",
-    "TauCeti.UqSl2.isLocallyFiniteModule_iff_exists_linearEquiv_dfinsupp_ladderModule",
-    "TauCeti.UqSl2.isTypeOne_and_isLocallyFiniteModule_iff_exists_linearEquiv_dfinsupp_ladderModule",
     "TauCeti.UqSl2.existsUnique_linearEquiv_ladderModule",
-    "TauCeti.UqSl2.polynomialAlgEquivCenter",
-    "TauCeti.UqSl2.pbwBasis",
-    "TauCeti.UqSl2.triangularEquiv",
-    "TauCeti.UqSl2.instIsDomain",
-    "TauCeti.OreExtension",
-    "TauCeti.UqSl2.LadderModule",
-    "TauCeti.UqSl2.VermaModule.ladderModuleEquivQuotient",
-    "TauCeti.UqSl2.ladderModuleTensorHomEquiv",
-    "TauCeti.directSumIsotypicTensorEquiv"
+    "TauCeti.FiniteHopfModuleCat",
+    "TauCeti.FiniteHopfModuleCat.rigidCategory",
+    "TauCeti.FiniteHopfModuleCat.pivotalCategory",
+    "TauCeti.FiniteHopfModuleCat.equivalenceFDRep",
+    "LinearMap.IsLeftInvariantIntegral",
+    "TauCeti.Comodule.exists_basis_coefficientMatrix_mem_unitary"
+   ]
+  },
+  {
+   "id": "QuaternionicAnalysis",
+   "path": "TauCetiRoadmap/QuaternionicAnalysis",
+   "title": "Quaternionic analysis",
+   "names": [
+    "TauCeti.leftQuotient_rigidity",
+    "TauCeti.left_cauchy_box",
+    "TauCeti.cauchy_box",
+    "Quaternion.integral_cauchyFueterCutoff_density",
+    "TauCeti.left_cauchyFueter_box_of_notMem",
+    "TauCeti.leftFueterAt_cauchyFueterKernel",
+    "TauCeti.LeftFueterOn.laplacian_eq_zero_of_contDiffOn",
+    "TauCeti.hasLeftQuotientFDerivAt_iff_tendsto_inv_mul",
+    "TauCeti.HasLeftQuotientFDerivAt",
+    "TauCeti.leftFueterAt_star_star_iff",
+    "TauCeti.LeftFueterAt",
+    "ContinuousLinearEquiv.integral_divergence_affineFluxPullback"
+   ]
+  },
+  {
+   "id": "RandomMatrices",
+   "path": "TauCetiRoadmap/RandomMatrices",
+   "title": "Random matrices",
+   "names": [
+    "TauCeti.Probability.marchenkoPastur",
+    "TauCeti.Probability.integral_pow_marchenkoPastur",
+    "TauCeti.Probability.eq_resolventTransform_marchenkoPastur_iff",
+    "MeasureTheory.tendsto_intervalIntegral_im_resolventTransform",
+    "MeasureTheory.Measure.ext_of_resolventTransform",
+    "Matrix.IsHermitian.sum_sq_eigenvalues₀_sub_le_frobenius_norm_sub_sq",
+    "Matrix.sum_sq_singularValues_toEuclideanLin_sub_le_frobenius_norm_sub_sq",
+    "TauCeti.Probability.empiricalFiniteMeasure",
+    "Matrix.tendsto_spectralMeasure_iff_of_rank_sub_div_card_tendsto_zero",
+    "TauCeti.Probability.semicircleReal",
+    "TauCeti.wignerMatrix"
    ]
   },
   {
@@ -1886,17 +2647,19 @@
    "path": "TauCetiRoadmap/Rank24LatticeConstructions",
    "title": "Niemeier glue data and explicit Leech constructions",
    "names": [
-    "TauCeti.leechLattice",
-    "TauCeti.isUnimodular_leechLattice",
-    "TauCeti.isEven_leechLattice",
-    "TauCeti.mem_leechLattice_carrier_iff",
-    "TauCeti.BinaryGolay.thirtyTwo_le_sum_sq",
-    "TauCeti.IntegralLattice.isLeast_form_self_typeADiscriminantGroupEquiv",
-    "TauCeti.IntegralLattice.isLeast_form_self_orthogonalSum",
-    "TauCeti.DynkinType.rootLattice",
-    "TauCeti.DynkinType.rootLatticeIsometryCheckerboard",
-    "TauCeti.ConstructionB.integralLattice",
-    "TauCeti.ConstructionB.four_le_form_self"
+    "TauCeti.RootfulNiemeierType.span_vectorsOfNorm_two_lattice",
+    "TauCeti.mem_leechLattice_carrier_iff_exists",
+    "TauCeti.minimum_leechLattice",
+    "TauCeti.vectorsOfNorm_two_leechLattice",
+    "TauCeti.RootfulNiemeierType.a1TwentyFourthLatticeConstructionAIsometry",
+    "TauCeti.map_d4SixGlueSubgroup_d4SixHexacodeIsometry",
+    "TauCeti.closure_d4SixPrintedDigits_lt_d4SixGlueSubgroup",
+    "TauCeti.map_a2TwelfthGlueSubgroup_eq_ternaryGolay",
+    "TauCeti.RootfulNiemeierType",
+    "TauCeti.RootfulNiemeierType.forall",
+    "TauCeti.RootfulNiemeierType.lattice",
+    "TauCeti.niemeierD24",
+    "TauCeti.DynkinType.isLeast_sum_glueMinimum"
    ]
   },
   {
@@ -1904,19 +2667,17 @@
    "path": "TauCetiRoadmap/RealAnalyticGeometry",
    "title": "Real-analytic geometry and semianalytic triangulation",
    "names": [
-    "AnalyticOnNhd.exists_complexification",
-    "AnalyticOnNhd.exists_complexification_pi",
-    "AnalyticOnNhd.exists_eqOn_of_forall_real",
-    "TauCeti.semianalyticAt_iff_exists_iUnion",
-    "TauCeti.IsSemianalytic.preimage",
-    "Equiv.isSemianalytic_image_iff",
-    "Geometry.SimplicialComplex.space_cone_of_space_eq_intrinsicFrontier",
-    "TauCeti.SemianalyticAt",
-    "TauCeti.IsSemianalytic",
-    "LocallyFinite.isSemianalytic_iUnion",
-    "TauCeti.IsSemialgebraic.isSemianalytic",
-    "Geometry.SimplicialComplex.cone",
-    "Geometry.SimplicialComplex.IsConeApex"
+    "AnalyticAt.exists_weierstrassPreparation_real",
+    "TauCeti.IsNonsingularDirection.isPartiallySemialgebraic",
+    "TauCeti.exists_straightening_graphOn",
+    "Geometry.SimplicialComplex.exists_subdivision_extending",
+    "TauCeti.isNashAt_iff_exists_isSemialgebraicOn",
+    "TauCeti.IsPartiallySemialgebraic",
+    "TauCeti.IsPartiallySemialgebraic.isSemianalytic_image_fst",
+    "TauCeti.IsNashAt",
+    "TauCeti.IsLocallySemialgebraic",
+    "TauCeti.IsMSemianalytic",
+    "TauCeti.IsMAnalyticSubmanifold"
    ]
   },
   {
@@ -1925,14 +2686,31 @@
    "title": "Reductive algebraic groups",
    "names": [
     "TauCeti.HopfIdeal.IsBorelOverAlgClosed.exists_conjugate_eq",
-    "TauCeti.SchemeAction.exists_isClosed_orbit",
-    "TauCeti.Comodule.isIso_fppfHomogeneousQuotientToCoinvariantsPoints_ker_coordinateBialgHom",
-    "TauCeti.AlgebraicGeometry.smooth_of_grpObj_of_charZero",
-    "TauCeti.HopfIdeal.IsParabolic",
-    "BialgHom.parabolicLeviFppfQuotientIso",
-    "BialgHom.algebraEtale_coinvariants_centralizer_normalizer",
-    "BialgHom.smoothCommHopfAlgProperty_quotient_centralizerHopfIdeal",
-    "TauCeti.FiniteField.rationalPointsMulEquivFixedSubgroupGeometricFrobenius"
+    "TauCeti.HopfIdeal.fppfHomogeneousQuotientBaseChangeIso",
+    "BialgHom.normalizerQuotientCentralizerEquiv",
+    "TauCeti.Coalgebra.IsLinearlyReductive.isInternal_simpleCoefficientSubmodules",
+    "TauCeti.SpecialLinear.isAtom_binaryForms_iff_of_charP",
+    "TauCeti.reductiveCommHopfAlgPropertyOver",
+    "TauCeti.CommHopfAlgCat.existsUnique_baseChangeHopfIdeal_eq_iff",
+    "TauCeti.GeneralLinear.expEquivHopfIdealPoints"
+   ]
+  },
+  {
+   "id": "ReductiveGroupsPartII",
+   "path": "TauCetiRoadmap/ReductiveGroupsPartII",
+   "title": "Reductive algebraic groups, part II — local structure and arithmetic models",
+   "names": [
+    "TauCeti.HopfAlgebra.natCard_quotient_congruenceSubgroup_pow_succ",
+    "TauCeti.HopfAlgebra.hasBasis_nhds_one_congruenceSubgroup",
+    "TauCeti.HopfAlgebra.isProP_congruenceSubgroup",
+    "TauCeti.PointTopology.isOpenEmbedding_integralPoints",
+    "TauCeti.Algebra.WeilRestriction.instSmooth",
+    "TauCeti.PointTopology.instTopologicalSpaceWithConv",
+    "TauCeti.PointTopology.isTopologicalGroup",
+    "TauCeti.MaxUnramifiedCompletion.Breve",
+    "TauCeti.MaxUnramifiedCompletion.frobenius",
+    "TauCeti.Algebra.WeilRestriction.mapBialgHom",
+    "TauCeti.Algebra.WeilRestriction.pointsHomeomorph"
    ]
   },
   {
@@ -1976,15 +2754,40 @@
    "title": "Representation theory",
    "names": [
     "TauCeti.harishChandraLinearIso",
-    "TauCeti.vermaCentralCharacter_eq_iff",
-    "LieSubalgebra.lieChevalleyRestrictionIso",
-    "ModuleCat.exists_isAlmostSplit_X₃_eq_iff",
-    "TauCeti.stdPeterWeylBasis",
     "TauCeti.isFiniteRepType_iff_titsForm_posDef",
-    "TauCeti.UniversalEnvelopingAlgebra.reesAlgebra",
-    "TauCeti.UniversalEnvelopingAlgebra.reesZeroFiberEquiv",
-    "TauCeti.UniversalEnvelopingAlgebra.reesOneFiberEquiv",
-    "TauCeti.gelfandTsetlinGenerator"
+    "ModuleCat.exists_isAlmostSplit_X₃_eq_iff",
+    "TauCeti.isRepresentationFinite_of_length_le",
+    "TauCeti.Lie.IsMaximalTorus.exists_map_conj_eq",
+    "TauCeti.Lie.IsMaximalTorus.centralizer_eq",
+    "TauCeti.IsKrullSchmidt",
+    "TauCeti.exists_equiv_iso_of_biproduct_iso_of_isLocalRing",
+    "TauCeti.isKrullSchmidt_iff_isIdempotentComplete_and_isSemiperfectRing_end",
+    "TauCeti.ExactStructure.Ext1",
+    "TauCeti.ExactStructure.Ext1.instAddCommGroup",
+    "TauCeti.IsInjectiveEnvelope.fgModuleCatMatlisDuality"
+   ]
+  },
+  {
+   "id": "RestrictedPowerSeries",
+   "path": "TauCetiRoadmap/RestrictedPowerSeries",
+   "title": "Restricted power series and Tate algebras",
+   "names": [
+    "TauCeti.PowerSeries.IsMulDistinguished.existsUnique_mul_add_eq",
+    "TauCeti.PowerSeries.IsMulDistinguished.gaussNorm_mul_add_eq_max",
+    "TauCeti.MvPowerSeries.existsUnique_isNormMulUnit_isMonicOfDegree_mul_eq_of_isMulDistinguished",
+    "TauCeti.MvPowerSeries.uniqueFactorizationMonoid",
+    "TauCeti.MvPowerSeries.exists_pointNorm_eq_norm",
+    "TauCeti.MvPowerSeries.supSeminorm_eq_norm",
+    "MvPowerSeries.exists_norm_restrictedEval₂_eq_norm",
+    "Ideal.map_comap_polynomialToRestricted_of_isMaximal",
+    "Ideal.finite_quotient_of_isMaximal_restrictedMvPowerSeriesCompletion",
+    "Polynomial.isUnit_entireResultant_iff",
+    "TauCeti.PowerSeries.IsMulDistinguished",
+    "TauCeti.IsNormMulUnit",
+    "TauCeti.MvPowerSeries.restrictedAnalyticSubst",
+    "TauCeti.MvPowerSeries.IsRestrictedFamily",
+    "TauCeti.MvPowerSeries.IsRestrictedFamily.Gauss.piRingLinearIsometryEquiv",
+    "Submodule.restrictedFamilyMkQ_surjective"
    ]
   },
   {
@@ -1992,13 +2795,16 @@
    "path": "TauCetiRoadmap/RiemannianGeometry",
    "title": "Curvature, Jacobi fields, submanifolds, and Bochner geometry",
    "names": [
-    "CovariantDerivative.covariantDerivative_curvatureOperator_cyclic_eq_zero",
-    "CovariantDerivative.IsMetricCompatible.riemannCurvatureTensor_eq_of_forall_linearIndependent",
-    "CovariantDerivative.hasConstantSectionalCurvature_iff_isConstantCurvatureTensor",
-    "Bundle.ContMDiffRiemannianMetric.curvatureOperator_leviCivitaConnection_rescale",
-    "CovariantDerivative.curvatureOperator_addOneForm",
-    "LinearMap.six_mul_apply_eq_of_cyclic_eq_zero",
-    "VectorField.jacobi_identity_mlieBracket_apply"
+    "TauCeti.Manifold.finrank_mul_le_of_laplaceBeltrami_eq_neg_mul",
+    "TauCeti.Manifold.laplaceBeltrami_norm_sq_mgradient",
+    "CovariantDerivative.eq_of_ricciTensor_eq_smul_inner",
+    "TauCeti.Manifold.IsJacobiFieldOn.exists_geodesicVariation_of_isCompact",
+    "TauCeti.Manifold.hasDerivAt_toReal_pathELength",
+    "TauCeti.Manifold.exists_abs_inner_mfderiv_riemannianExp_sub_le",
+    "TauCeti.Manifold.IsJacobiFieldOn",
+    "TauCeti.curvatureCotangent",
+    "TauCeti.Manifold.polarJacobian",
+    "PartialDiffeomorph.setLIntegral_riemannianVolume_eq"
    ]
   },
   {
@@ -2021,24 +2827,50 @@
    ]
   },
   {
+   "id": "SNumbers",
+   "path": "TauCetiRoadmap/SNumbers",
+   "title": "s-numbers and entropy numbers of operators between Banach spaces",
+   "names": [
+    "TauCeti.SNumbers.isStrictSNumberSequence_approximation",
+    "TauCeti.SNumbers.IsSNumberSequence.le_singularValue",
+    "TauCeti.SNumbers.IsSNumberSequence",
+    "TauCeti.SNumbers.SNumberFamily",
+    "TauCeti.SNumbers.IsStrictSNumberSequence",
+    "TauCeti.SNumbers.IsStrictSNumberSequence.of_normalize_of_lt_rank"
+   ]
+  },
+  {
+   "id": "ScatteringDiagrams",
+   "path": "TauCetiRoadmap/ScatteringDiagrams",
+   "title": "Scattering diagrams, wall crossing and theta functions",
+   "names": [
+    "PointedCone.fg_iff_dualFG",
+    "PointedCone.IsFaceOf.isExposed_of_fg",
+    "TauCeti.ExceptionalArrangement.dense_iInter_isGeneric",
+    "SymmetricAlgebra.isPrimitiveElem_iff_mem_range_ι",
+    "CategoryTheory.Limits.limitFiberwiseLimitIso",
+    "TauCeti.PositiveDegrees",
+    "TauCeti.PositiveDegreeMap",
+    "TauCeti.AlgFiltration.completion",
+    "TauCeti.completedGroup",
+    "TauCeti.DirectedWallSpaces"
+   ]
+  },
+  {
    "id": "SchemeAndStackFoundations",
    "path": "TauCetiRoadmap/SchemeAndStackFoundations",
    "title": "Scheme, stack, cohomology and intersection foundations",
    "names": [
-    "TauCeti.Henselization.henselian",
     "TauCeti.Henselization.existsUnique_lift",
-    "TauCeti.Henselization.existsUnique_isLocalHom",
+    "TauCeti.Henselization.integralBaseChangeEquiv",
+    "AlgebraicGeometry.Scheme.bijective_comp_fromPerfection",
+    "TauCeti.AlgebraicGeometry.Scheme.isNisnevichCovering_iff_henselization",
+    "AlgebraicGeometry.Scheme.Modules.isSheaf_bigPresheaf_fpqcTopology",
     "TauCeti.AlgebraicGeometry.isRegular_normalization_fromSpecStalk_genericPoint",
-    "TauCeti.AlgebraicGeometry.isModification_fromNormalization_fromSpecStalk_genericPoint",
-    "Algebra.QuasiFinite.exists_fg_subalgebra_and_span_eq_top",
-    "AlgebraicGeometry.Scheme.universally_isHomeomorph_frobenius",
-    "AlgebraicGeometry.Scheme.isFinite_frobenius",
-    "TauCeti.Ring.IsJapanese",
-    "TauCeti.Ring.IsNagata",
-    "Module.SatisfiesSerreS",
-    "Ring.SatisfiesSerreR",
-    "TauCeti.Excellence.GeometricallyRegular",
-    "TauCeti.Excellence.RegularAlgebraMap"
+    "TauCeti.AlgebraicGeometry.Chow.ChowGroup",
+    "TauCeti.AlgebraicGeometry.Chow.cyclesMap",
+    "AlgebraicGeometry.Scheme.formalCompletion",
+    "CategoryTheory.Sheaf.NonabelianH1.map"
    ]
   },
   {
@@ -2076,23 +2908,94 @@
    ]
   },
   {
+   "id": "SmoothBundlesConnections",
+   "path": "TauCetiRoadmap/SmoothBundlesConnections",
+   "title": "Smooth principal bundles, connections, and holonomy",
+   "names": [
+    "TauCeti.exists_regularFiber_smoothEmbedding",
+    "TauCeti.exists_isManifold_transverseFiberProduct_isSmoothEmbedding",
+    "TauCeti.isSubmersion_fst_transverseFiberProduct",
+    "TauCeti.PrincipalBundle.contMDiff_fiberProductDivision",
+    "TauCeti.PrincipalBundle.actionDiffeomorph",
+    "TauCeti.PrincipalBundle.verticalLinearEquiv",
+    "TauCeti.PrincipalBundle.mlieBracket_rightFundamentalVectorField",
+    "TauCeti.LpSection.instCompleteSpace",
+    "TauCeti.ManifoldTotalSpace",
+    "TauCeti.contMDiffFiberBundle_fiberBundleCoreOfGroupCocycle",
+    "TauCeti.diffeomorphOfCohomologous",
+    "TauCeti.exists_isMeasurableIsometricFrame",
+    "Bundle.Trivialization.orthonormalLpSectionEquiv"
+   ]
+  },
+  {
+   "id": "SobolevPolynomialApproximation",
+   "path": "TauCetiRoadmap/SobolevPolynomialApproximation",
+   "title": "Polynomial approximation in Sobolev spaces",
+   "names": [
+    "TauCeti.finrank_polynomialsDegLE",
+    "TauCeti.polynomialsDegLE",
+    "TauCeti.polynomialEvalₗ",
+    "TauCeti.restrictTotalDegreeEquivPolynomialsDegLE"
+   ]
+  },
+  {
+   "id": "SpecialFunctionsEiLiErfIncompleteGamma",
+   "path": "TauCetiRoadmap/SpecialFunctionsEiLiErfIncompleteGamma",
+   "title": "Exponential, logarithmic, error and incomplete Gamma functions",
+   "names": [
+    "Complex.hasSum_tricomiIncompleteGamma",
+    "Complex.hasSum_tricomiIncompleteGamma_of_ne_neg_natCast",
+    "Complex.tricomiIncompleteGamma_eq_integral",
+    "Complex.tricomiIncompleteGamma_ode",
+    "Complex.differentiable_tricomiIncompleteGamma_left",
+    "Complex.differentiable_tricomiIncompleteGamma",
+    "Complex.hasDerivAt_tricomiIncompleteGamma",
+    "Complex.tricomiIncompleteGamma_neg_natCast",
+    "Complex.tricomiIncompleteGamma_eq_mul_tricomiIncompleteGamma_add_one",
+    "Complex.tricomiIncompleteGamma",
+    "Complex.summable_norm_regularizedHGFun",
+    "Complex.hasSum_deriv_regularizedHGFun",
+    "Complex.norm_inv_Gamma_add_natCast_le"
+   ]
+  },
+  {
    "id": "SpinGeometry",
    "path": "TauCetiRoadmap/SpinGeometry",
    "title": "Clifford bundles, spin structures, and Dirac geometry",
    "names": [
-    "CliffordAlgebra.spinGroupEquivNeg",
-    "CliffordAlgebra.realCliffordSpinGroupEquivNeg",
-    "TauCeti.AlmostComplexStructure.degreeScaling_comp_spinAction_eq_fockAction_comp",
-    "TauCeti.AlmostComplexStructure.fockAction_ι_one_tmul",
-    "TauCeti.isotypicTensorEquivOfBijective",
-    "CliffordAlgebra.trace_mulLeft_eq_two_pow_mul_scalarTrace",
-    "CliffordAlgebra.scalarTrace_reverse_mul_self_nonneg",
-    "CliffordAlgebra.scalarTrace_reverse_mul_self_eq_zero_iff",
-    "TauCeti.AlmostComplexStructure.spinPolarizationData",
-    "LinearMap.BilinForm.sesqComplexification",
-    "TauCeti.SymplecticForm.Invariant.complexAssociatedForm_eq_two_mul_sesqComplexification",
-    "CliffordAlgebra.conjStar",
-    "CliffordAlgebra.scalarTrace"
+    "CliffordAlgebra.exists_sesqForm_map_eq_map_conjStar",
+    "CliffordAlgebra.existsUnique_pos_mul_of_surjective",
+    "CliffordAlgebra.complexVolume",
+    "CliffordAlgebra.isCompl_eigenspace_complexVolume",
+    "TauCeti.AlmostComplexStructure.fockAction_complexVolume",
+    "CliffordAlgebra.baseChangeExteriorAction_complexVolume_of_eq_two_mul",
+    "CliffordAlgebra.scalarTrace_conjStar_mul_self_nonneg",
+    "CliffordAlgebra.scalarTrace_conjStar_mul_self_eq_zero_iff_mem_span_radical",
+    "OrthonormalBasis.isCoveringMap_realCliffordSpinFrameProjection",
+    "TauCeti.CliffordAlgebra.isLocalDiffeomorph_realCliffordSpinToSpecialOrthogonalSmoothRange",
+    "CliffordAlgebra.realCliffordSpecialOrthogonalTwoContinuousMulEquivCircle_spinToSpecialOrthogonal",
+    "AlgHom.cliffordProdTensor",
+    "AlgHom.koszulComm_cliffordProdTensor",
+    "CliffordAlgebra.regularNorm",
+    "CliffordAlgebra.endValuedTensorEquiv_ι_mem_invariants_iff",
+    "CliffordAlgebra.parityTwistedRightAction"
+   ]
+  },
+  {
+   "id": "SporadicOrders",
+   "path": "TauCetiRoadmap/SporadicOrders",
+   "title": "Orders of the sporadic groups from permutation representations",
+   "names": [
+    "Subgroup.prod_ncard_orbit_mul_card_stabilizerChain",
+    "Subgroup.mem_iff_exists_prod_eq",
+    "TauCeti.Sporadic.card_M11",
+    "TauCeti.Sporadic.card_M12",
+    "TauCeti.Sporadic.card_M22",
+    "TauCeti.Sporadic.card_HS",
+    "TauCeti.Sporadic.exists_surjective_M24",
+    "Subgroup.natCard_eq_prod_length_of_siftCheck",
+    "MulAction.isLeast_orbit_closure",
+    "TauCeti.GroupPresentation.exists_surjective_of_closure_range_eq"
    ]
   },
   {
@@ -2101,14 +3004,13 @@
    "title": "Stable, periodic, and curved homological algebra",
    "names": [
     "TauCeti.ExactStructure.IsFrobenius.stableIsTriangulated",
-    "TauCeti.PeriodicComplex.mem_distTriang_iff",
-    "TauCeti.MatrixFactorization.HomotopyCategory.instIsTriangulated",
-    "TauCeti.CurvedDGRightModuleCat.homotopyIsTriangulated",
+    "TauCeti.PeriodicComplex.eq_top_of_essImage_orbitDerivedCompressionFunctor_le",
+    "CategoryTheory.GorensteinProjective.fullyFaithfulToSingularityCategory",
+    "TauCeti.MatrixFactorization.HomotopyCategory.quotientGorensteinProjectiveStableCokernel_isTriangulated",
     "TauCeti.isIndecomposableModule_iff_exists_linearEquiv_quotient_span_op_root_X_pow_pow",
-    "TauCeti.cyclicModuleRootPowProjectiveResolution",
-    "TauCeti.OrbitCategory.lift",
-    "TauCeti.PeriodicComplex.instIsTriangulatedBoundedDerivedCategoryDerivedCompressionFunctor",
-    "TauCeti.CurvedDGRightModuleCat.absolutelyAcyclic"
+    "TauCeti.CurvedDGRightModuleCat.AbsoluteDerivedCategory",
+    "TauCeti.SingularityCategory",
+    "TauCeti.OrbitCategory.lift"
    ]
   },
   {
@@ -2116,14 +3018,14 @@
    "path": "TauCetiRoadmap/StableReduction",
    "title": "Stable reduction of curves and stable maps",
    "names": [
+    "TauCeti.HasNodalReduction.exists_finrank_le_two_of_genus_eq_zero",
+    "AlgebraicGeometry.Scheme.IdealSheafData.existsUnique_comp_blowupToBase_eq_of_isEffectiveCartier",
+    "TauCeti.AlgebraicGeometry.atWorstNodalOfRelativeDimensionOne_iff_flat_and_fiberToSpecResidueField",
     "TauCeti.NumericalType.IsMinimal.isGenusOneMinimalShape",
     "TauCeti.NumericalType.finrank_torsion_le_arithmeticGenus",
-    "TauCeti.HasNodalReduction.of_genus_eq_zero_of_divisor_degree_eq_one",
-    "AlgebraicGeometry.Scheme.exists_split_singularLocus",
-    "AlgebraicGeometry.Scheme.Hom.existsUnique_comp_eq_of_universallyClosed",
     "TauCeti.AlgebraicGeometry.AtWorstNodalOfRelativeDimensionOne",
-    "CategoryTheory.CommMon.isProper_relativeProjToBase",
-    "TauCeti.DualGraph.exists_reflTransGen_stabilizationStep_isStable"
+    "TauCeti.AlgebraicGeometry.LineBundleClass.intersectionNumber",
+    "TauCeti.DualGraph.nonempty_iso_of_reflTransGen_of_isStable"
    ]
   },
   {
@@ -2132,14 +3034,48 @@
    "title": "Standard probability distributions and their elementary theory",
    "names": [
     "TauCeti.Probability.map_choleskyLowerCoordinates_comap_nonsingularWishartMeasure",
-    "TauCeti.Probability.map_coe_apply_inverseWishartMeasure",
-    "TauCeti.Probability.map_orderStatistic_pi_uniformMeasure",
-    "TauCeti.Probability.map_sum_sq_pi_gaussianReal_noncentral",
-    "TauCeti.Probability.noncentralFPDFReal",
-    "MeasureTheory.ProbabilityMeasure.tendsto_haarAddCircle_iff",
-    "TauCeti.integral_posDef_multivariateGamma",
-    "TauCeti.inverseRegularizedGamma",
-    "TauCeti.Probability.vonMisesFisherNaturalMeasure"
+    "TauCeti.Probability.condDistrib_multivariateGaussian",
+    "Real.gaussianLatticeSum_eq_fourier",
+    "TauCeti.exists_probabilityMeasure_of_tendsto_charFun",
+    "TauCeti.setIntegral_comp_correlationCoordinatesOfPartialCorrelation",
+    "TauCeti.Probability.properComplexGaussianMeasure",
+    "TauCeti.Probability.properComplexGaussianMeasure_eq_withDensity",
+    "TauCeti.Probability.discreteGaussianMeasure",
+    "TauCeti.Probability.mgf_intCast_discreteGaussianMeasure",
+    "TauCeti.Probability.gaussianMixtureMeasure_eq_sum_dirac_add_withDensity"
+   ]
+  },
+  {
+   "id": "Subfactors",
+   "path": "TauCetiRoadmap/Subfactors",
+   "title": "Subfactors, Jones index and planar standard invariants",
+   "names": [
+    "TauCeti.TemperleyLieb.star_unique",
+    "TauCeti.TemperleyLieb.isSelfAdjoint_of_star_e",
+    "TauCeti.qInt_two_mul_cos_pos_of_le_floor",
+    "TauCeti.qInt_two_mul_cos_floor_add_one_neg",
+    "TauCeti.qInt_two_mul_cos_pi_div_eq_zero",
+    "TauCeti.TemperleyLieb.instStarRing",
+    "TauCeti.TemperleyLieb.strandIncl_star",
+    "TauCeti.TemperleyLieb.map_star_iff"
+   ]
+  },
+  {
+   "id": "SubspaceTheorem",
+   "path": "TauCetiRoadmap/SubspaceTheorem",
+   "title": "Roth's theorem and the Subspace Theorem over number fields",
+   "names": [
+    "NumberField.exists_evertse",
+    "TauCeti.NumberField.volume_div_covolume_le",
+    "TauCeti.NumberField.le_volume_div_covolume",
+    "NumberField.existsUnique_finitePlace_rpow_inv_eq_of_liesOver",
+    "NumberField.setOf_liesOver_finitePlace_eq_orbit",
+    "NumberField.exists_finset_superset_forall_exists_mulHeight_eq",
+    "IsAlgebraic.mahlerExponent_le",
+    "TauCeti.NumberField.approxDomain",
+    "Submodule.covolume_mixedImage",
+    "Submodule.exists_pseudoBasis",
+    "NumberField.approxProd"
    ]
   },
   {
@@ -2147,7 +3083,33 @@
    "path": "TauCetiRoadmap/SuccessiveMinima",
    "title": "Successive minima and Minkowski's theorems",
    "names": [
-    "OrthonormalBasis.volume_weighted_crosspolytope"
+    "ZLattice.two_pow_div_factorial_mul_covolume_le_prod_successiveMin_mul_measureReal",
+    "ZLattice.prod_successiveMin_mul_measureReal_crosspolytope",
+    "ZLattice.prod_successiveMin_mul_measureReal_box",
+    "Matrix.exists_ne_zero_int_abs_sum_mul_le",
+    "OrthonormalBasis.norm_det_le_prod_norm",
+    "Matrix.re_det_gram_le_prod_norm_sq",
+    "ZLattice.successiveMin_pow_mul_measureReal_le_two_pow_mul_covolume",
+    "MeasureTheory.successiveMin",
+    "MeasureTheory.coe_successiveMin",
+    "ZLattice.exists_basis_gauge_eq_successiveMin",
+    "ZLattice.exists_basis_mem_flag_of_gauge_lt_successiveMin",
+    "ZLattice.exists_basis_span_image_eq_flag",
+    "Convex.addHaar_iUnion_vadd"
+   ]
+  },
+  {
+   "id": "SymplecticFieldTheory",
+   "path": "TauCetiRoadmap/SymplecticFieldTheory",
+   "title": "Contact homology and the symplectic field theory formalism",
+   "names": [
+    "TauCeti.SignedSym.liftEquiv",
+    "TauCeti.SignedSym.gradedLift",
+    "TauCeti.SignedSym.gradedLift_unique",
+    "TauCeti.SignedSym.generator_mul_generator",
+    "TauCeti.SignedSym",
+    "TauCeti.instGradedAlgebraIntTensorAlgebraTensorAlgebraPiece",
+    "TauCeti.instGradedAlgebraIntSignedSymSignedSymPiece"
    ]
   },
   {
@@ -2155,18 +3117,14 @@
    "path": "TauCetiRoadmap/SymplecticGeometry",
    "title": "Symplectic geometry and Hamiltonian mechanics",
    "names": [
+    "TauCeti.SmoothTwoForm.IsSymplectic.measurePreserving_globalFlowDiffeomorph_liouvilleMeasure",
     "TauCeti.CotangentBundle.isSymplectic_symplecticForm",
-    "TauCeti.CotangentBundle.inChartAt_symplecticForm_apply",
-    "TauCeti.CotangentBundle.mpullback_liouvilleForm",
-    "Diffeomorph.mpullback_cotangent_symplecticForm",
-    "TauCeti.CotangentBundle.mpullback_vectorBundleTranslateDiffeomorph_symplecticForm_eq_self_iff",
-    "TauCeti.SymplecticForm.isLagrangian_iff_maximal_isIsotropic",
-    "TauCeti.CotangentBundle",
-    "TauCeti.CotangentBundle.extChartAt_extChartAt_symm",
-    "Bundle.isSubmersion_proj",
-    "TauCeti.SymplecticForm.IsSymplectic",
-    "AddCircle.instIsManifold",
-    "AddCircle.isLocalDiffeomorph_coe"
+    "TauCeti.SmoothForm.isContactForm_iff_wedge_wedgePow_apply_ne_zero",
+    "Matrix.range_re_diag_unitary_mul_diagonal_mul_star",
+    "TauCeti.nonempty_homeomorph_unitAddTorus_keplerBoundPhaseSpace",
+    "TauCeti.Toric.IsDelzant.isManifold_delzantLevel",
+    "TauCeti.Diffeotopy.flux",
+    "TauCeti.SmoothMappingTorus"
    ]
   },
   {
@@ -2193,18 +3151,51 @@
    "path": "TauCetiRoadmap/TaubesGromov",
    "title": "Taubes–Gromov theory",
    "names": [
+    "TauCeti.Vortex.existsUnique_framedGaugeGroup_smul_eq",
+    "TauCeti.Vortex.integral_curvature_eq_of_tendsto_sectionValue_mul_inv_pow",
+    "TauCeti.Vortex.exists_energyDensity_le_mul_exp",
+    "TauCeti.configurationCount_eq_coeff_rayTorusWeightSeries",
+    "LinearMap.BilinForm.pairwise_of_apply_self_eq_zero",
+    "TauCeti.orbitZeta_eq_mapRingHom_tprod_ofPowerSeries_torusWeightSeries",
     "TauCeti.sum_mul_apply_self_sub_apply_canonical_le",
-    "TauCeti.IsGoodCycle.apply_self_eq_zero_of_one_lt_mult",
-    "TauCeti.coeff_rayTorusWeightSeries",
-    "TauCeti.Vortex.temperedVacuumAdjoint_temperedVacuumOperator",
-    "TauCeti.Vortex.temperedVacuumOperatorEquiv",
-    "TauCeti.Vortex.memSobolev_temperedVacuumOperator_iff",
-    "TauCeti.MappingTorus.card_torsion_homology_one_eq_natAbs_det",
-    "TauCeti.X_mul_derivative_torusWeightSeries_of_det_eq_one",
-    "TauCeti.torusWeightSeries",
-    "TemperedDistribution.laplacianResolvent",
-    "TemperedDistribution.memSobolev_add_two_iff_neg_laplacian_add_smul",
-    "TauCeti.IsGoodCycle"
+    "TauCeti.Vortex.framedFieldSpace",
+    "TauCeti.Vortex.sobolevGaugeGroup",
+    "TauCeti.Vortex.exists_pos_mul_integral_norm_sq_le_integral_norm_sq_gaugeFixedAdjoint",
+    "TauCeti.Vortex.exists_exterior_integral_norm_sq_gaugeFixedOperator_ge",
+    "TauCeti.configurationCount"
+   ]
+  },
+  {
+   "id": "TemperleyLieb",
+   "path": "TauCetiRoadmap/TemperleyLieb",
+   "title": "Temperley–Lieb diagrams, categories, and algebras",
+   "names": [
+    "TauCeti.TemperleyLieb.existsUnique_jonesWenzl",
+    "TauCeti.TemperleyLieb.jonesWenzl_add_two_eq_strandIncl_mul",
+    "TauCeti.TemperleyLieb.IsMarkovTrace.apply_jonesWenzl",
+    "TauCeti.TemperleyLieb.span_strandIncl_union_strandIncl_mul_e_last_mul_eq_top",
+    "TauCeti.TemperleyLieb.IsMarkovTrace.eq_markovTrace",
+    "TauCeti.exists_qInt_eq_zero_iff",
+    "TauCeti.PlanarMatching.card_planarMatching",
+    "TauCeti.PlanarMatching.dyckWordEquiv",
+    "TauCeti.MonoidalIdeal",
+    "TauCeti.MonoidalQuotient.instMonoidalLinear",
+    "CategoryTheory.Mat_.instMonoidalCategory",
+    "CategoryTheory.Idempotents.Karoubi.instRigidCategory",
+    "TauCeti.CellularBasis"
+   ]
+  },
+  {
+   "id": "TensorProductCombinatorics",
+   "path": "TauCetiRoadmap/TensorProductCombinatorics",
+   "title": "Hives, honeycombs, puzzles and type-A tensor products",
+   "names": [
+    "TauCeti.Hive.Vertex",
+    "TauCeti.Hive.Vertex.rotate",
+    "TauCeti.Hive.Vertex.reflect",
+    "TauCeti.Hive.IsRhombus",
+    "TauCeti.Hive.Vertex.plane",
+    "TauCeti.Hive.IsRhombus.diagonal_dist_sq"
    ]
   },
   {
@@ -2212,17 +3203,51 @@
    "path": "TauCetiRoadmap/ThetaSeries",
    "title": "Theta series of lattices",
    "names": [
-    "SchwartzMap.tsum_eq_tsum_dual_fourier",
-    "ZLattice.IsEven.qExpansion_thetaSeries_coeff",
-    "ZLattice.IsEven.thetaSeries_slash_T",
-    "ZLattice.IsEven.thetaCoset_one_vadd",
-    "ZLattice.IsIntegral.det_eq_card_discriminantGroup",
-    "ZLattice.IsIntegral.thetaSeries_dual_eq_sum",
-    "ZLattice.thetaSeries",
-    "ZLattice.thetaCoset",
-    "ZLattice.representationNumber",
-    "ZLattice.dual",
-    "ZLattice.IsEven"
+    "ZLattice.thetaForm",
+    "ZLattice.IsEven.eight_dvd_finrank",
+    "ZLattice.thetaSeries_S_smul",
+    "ZLattice.IsIntegral.thetaCoset_S_smul",
+    "TauCeti.IntegralLattice.thetaSeries_realModel_leechLattice_eq_E₄_cube_sub_mul_discriminant",
+    "TauCeti.IntegralLattice.not_forall_exists_map_eq_of_thetaSeries_eq",
+    "ZLattice.IsEven.thetaSeries_slash_eq_gaussSum_smul",
+    "ZLattice.level",
+    "ZLattice.ratModel",
+    "TauCeti.IntegralLattice.realModel",
+    "ZLattice.gaussSum"
+   ]
+  },
+  {
+   "id": "TopologicalKTheory",
+   "path": "TauCetiRoadmap/TopologicalKTheory",
+   "title": "Topological K-theory of vector bundles",
+   "names": [
+    "TauCeti.FiniteRankBundleCore.exists_biprod_iso_trivial",
+    "TauCeti.nonempty_continuousRiemannianMetric",
+    "TauCeti.rangeVectorBundle",
+    "TauCeti.hasLocalSubbundleFrames_ker",
+    "TauCeti.exists_continuous_clm_bundle_extension_isInvertible",
+    "TauCeti.FiniteRankBundleCore",
+    "TauCeti.FiniteRankBundleCore.instSymmetricCategory",
+    "TauCeti.finiteGrassmannian",
+    "TauCeti.infiniteGrassmannian.isColimit",
+    "TauCeti.companionPencil_eq_mul"
+   ]
+  },
+  {
+   "id": "TopologicalSheafCohomology",
+   "path": "TauCetiRoadmap/TopologicalSheafCohomology",
+   "title": "Topological sheaf cohomology and native comparison maps",
+   "names": [
+    "TopCat.Presheaf.isIso_fiberStalkMap",
+    "CategoryTheory.Functor.rightDerivedIsoOfResolution",
+    "CategoryTheory.Sheaf.rightDerivedΓIsoOfIsFlasque",
+    "TauCeti.Topology.rightDerivedΓIsoGodement",
+    "TauCeti.Topology.finiteCechCohomologyIso",
+    "CategoryTheory.ShortComplex.ShortExact.cechCohomologyδ",
+    "CategoryTheory.ShortComplex.ShortExact.isIso_cechCohomologyδ_succ_of_isFlasque",
+    "TauCeti.Topology.cechCohomology",
+    "TauCeti.CategoryTheory.cechCohomologyIso",
+    "TauCeti.CategoryTheory.strictMonoCechComplexHomotopyEquiv"
    ]
   },
   {
@@ -2243,6 +3268,26 @@
    ]
   },
   {
+   "id": "VonNeumannAlgebras",
+   "path": "TauCetiRoadmap/VonNeumannAlgebras",
+   "title": "Von Neumann algebras, factors, and modular theory",
+   "names": [
+    "StarSubalgebra.double_commutant_iff_isClosed_image_ofCLM",
+    "StarSubalgebra.double_commutant_iff_isClosed_image_toPointwiseConvergenceCLM",
+    "TauCeti.isCompact_stateSpace",
+    "TauCeti.closure_convexHull_extremePoints_stateSpace",
+    "ContinuousLinearMapWOT.isCompact_image_ofCLM_closedBall",
+    "VonNeumannAlgebra.isCompact_image_ofCLM_inter_closedBall",
+    "IsStarProjection.of_tendsto_pointwise",
+    "TauCeti.ContinuousLinearMapUltraweak",
+    "TauCeti.ContinuousLinearMapUltrastrong",
+    "TauCeti.ContinuousLinearMapUltraweak.isInducing_restrict_toWOT",
+    "VonNeumannAlgebra.instCompleteLattice",
+    "VonNeumannAlgebra.commutantOrderIso",
+    "VonNeumannAlgebra.image_ofCLM_adjoin_eq_closure"
+   ]
+  },
+  {
    "id": "Yamabe",
    "path": "TauCetiRoadmap/Yamabe",
    "title": "The Yamabe problem and conformal scalar curvature",
@@ -2260,21 +3305,35 @@
    ]
   },
   {
+   "id": "ZerosOfLFunctions",
+   "path": "TauCetiRoadmap/ZerosOfLFunctions",
+   "title": "Zeros of L-functions — growth, zero-free regions, counting, and the explicit formula",
+   "names": [
+    "TauCeti.LFunctions.zetaEntireCompletion",
+    "AnalyticOnNhd.zeroCount_le",
+    "TauCeti.OrderLE.isBigO_sum_divisor",
+    "TauCeti.OrderLE.summable_divisor_mul_norm_rpow",
+    "TauCeti.Contour.argumentPrinciple_rectBoundary",
+    "TauCeti.LFunctions.re_mem_Ioo_of_dirichletData_entireCompletion_eq_zero",
+    "TauCeti.LFunctions.AnalyticLFunctionData.entireCompletion",
+    "TauCeti.zeroCount",
+    "TauCeti.LFunctions.AnalyticLFunctionData.invGammaFactor"
+   ]
+  },
+  {
    "id": "ZigzagPreprojective",
    "path": "TauCetiRoadmap/ZigzagPreprojective",
    "title": "Zigzag, preprojective, and Ginzburg algebras",
    "names": [
     "TauCeti.forall_exists_isLinear_zigzagGradedSimple_iff",
     "TauCeti.finiteDimensional_preprojectiveAlgebra_orientedQuiver_iff",
-    "TauCeti.forall_preprojectiveKoszulLeft_injective_iff",
-    "TauCeti.zigzagBraidArtinAction",
-    "TauCeti.zigzagBraidK0Action",
-    "TauCeti.isFormal_liuWangAffineD4AInfinityAlgebra",
-    "TauCeti.not_hochschildVanishesAt_four_zigzagStrictAInfinityAlgebra",
-    "TauCeti.SkewZigzagParameter.cohomologyClass_eq_iff_exists_vertexFixing_algEquiv",
+    "TauCeti.moduleInjective_preprojectiveAlgebra_of_iso",
+    "TauCeti.not_isIntrinsicallyFormal_zigzagStrictAInfinityAlgebra_of_three_le_degree",
+    "TauCeti.preprojectiveGrade_E8_le_commutatorSubmodule",
+    "TauCeti.zigzagBraidDerivedArtinAction",
     "TauCeti.gradedCartanMatrix_zigzagAlgebra",
-    "TauCeti.zigzagBraidTensorLocalizerMorphism",
-    "TauCeti.zigzagAlgebraGradedProjectiveHomTracePairing_isPerfPair"
+    "TauCeti.signlessNecklaceFunctional",
+    "TauCeti.ZigzagProjectiveTwistedClosure"
    ]
   }
  ]

@@ -13,7 +13,7 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | Polynomial Freiman-Ruzsa | `DECOMPOSED` | [213 blueprint nodes in Lean](../roadmap/pfr/README.md), one article per node. |
 | Equational Theories | `DECOMPOSED` | [137 blueprint nodes in Lean](../roadmap/equational-theories/README.md), one article per node. |
 | Strong PNT (Math Inc) | `DECOMPOSED` | [615 blueprint nodes in Lean](../roadmap/strongpnt/README.md), one article per node. |
-| Tau Ceti | `DECOMPOSED` | [2,809 articles on 3,906 declarations](../roadmap/tauceti/README.md) its roadmaps' statuses name or its docstrings name as results, the forms of one result in one article. |
+| Tau Ceti | `DECOMPOSED` | [3,608 articles on 4,865 declarations](../roadmap/tauceti/README.md) its roadmaps' statuses name or its docstrings name as results, the forms of one result in one article. |
 | Formal Frontier / Adic modules | `DECOMPOSED` | [1 highlight of its formalization.yaml](../roadmap/formal-frontier/commutative-algebra/adic-modules/README.md) whose declarations the scan finds in the linked file, one article each. |
 | Formal Frontier / Algebraic direct limits | `OUT` | Mapped as [a page](../roadmap/formal-frontier/commutative-algebra/algebraic-direct-limits/README.md) without articles: none of its headline results links a declaration the scan finds in the linked file at the pinned commit. |
 | Formal Frontier / Algebraic groups | `DECOMPOSED` | [5 highlights of its formalization.yaml and 1 headline result](../roadmap/formal-frontier/algebraic-geometry/algebraic-groups/README.md) whose declarations the scan finds in the linked file, one article each. |

@@ -1,0 +1,53 @@
+# Calculus
+
+Results named in Tau Ceti's `TauCeti.Analysis.Calculus` modules and in no roadmap's section, as Tau Ceti has them at commit [a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418).
+
+## [Cartan's formula to The Morse–Bott lemma in product…](part-01/README.md)
+
+- [Cartan's formula](part-01/cartans-formula.md)
+- [The constant rank theorem](part-01/the-constant-rank-theorem.md)
+- [Duhamel's formula at a small parameter](part-01/duhamels-formula-at-a-small-parameter.md)
+- [Green's theorem on a rectangle](part-01/greens-theorem-on-a-rectangle.md)
+- [The inverse function theorem produces a `C^n` inverse](part-01/the-inverse-function-theorem-produces-a-c-n-inve.md)
+- [The inverse function theorem, with a `C^n` inverse on the whole target](part-01/the-inverse-function-theorem-with-a-c-n-inverse.md)
+- [Iterated Rolle's theorem](part-01/iterated-rolles-theorem.md)
+- [Jacobi's adjugate formula, valid at singular as well as invertible matrices](part-01/jacobis-adjugate-formula-valid-at-singular-as-we.md)
+- [Jacobi's inverse formula](part-01/jacobis-inverse-formula.md)
+- [The Lagrange identity: `d_t^*` is the formal adjoint of `d_t`](part-01/the-lagrange-identity-d-t-is-the-formal-adjoint.md)
+- [The Lefschetz–Whitehead rank estimate](part-01/the-lefschetz-whitehead-rank-estimate.md)
+- [Liouville's theorem on conformal maps](part-01/liouvilles-theorem-on-conformal-maps.md)
+- [The local Morse lemma](part-01/the-local-morse-lemma.md)
+- [The local parametric Morse lemma](part-01/the-local-parametric-morse-lemma.md)
+- [The Morse criticality lemma](part-01/the-morse-criticality-lemma.md)
+- [The Morse form of the convergence theorem](part-01/the-morse-form-of-the-convergence-theorem.md)
+- [The Morse form of Łojasiewicz's gradient inequality](part-01/the-morse-form-of-ojasiewiczs-gradient-inequalit.md)
+- [The Morse lemma](part-01/the-morse-lemma.md)
+- [The Morse--Sard theorem](part-01/the-morse-sard-theorem.md)
+- [The Morse–Bott lemma in product coordinates](part-01/the-morse-bott-lemma-in-product-coordinates.md)
+
+## [Moser's identity to Uniform first-order Taylor…](part-02/README.md)
+
+- [Moser's identity](part-02/mosers-identity.md)
+- [The Neumann bound for the inverse of a perturbation](part-02/the-neumann-bound-for-the-inverse-of-a-perturbat.md)
+- [Nijenhuis–Lie-derivative identity](part-02/nijenhuis-lie-derivative-identity.md)
+- [The normalized Morse–Bott lemma in product coordinates](part-02/the-normalized-morse-bott-lemma-in-product-coord.md)
+- [Noshiro--Warschawski criterion](part-02/noshiro-warschawski-criterion.md)
+- [The parametric Morse lemma, as a local chart](part-02/the-parametric-morse-lemma-as-a-local-chart.md)
+- [Peano's theorem on mixed partial derivatives, differentiating a time derivative in space](part-02/peanos-theorem-on-mixed-partial-derivatives-diff.md)
+- [Peetre's estimate on punctured balls](part-02/peetres-estimate-on-punctured-balls.md)
+- [Peetre's theorem](part-02/peetres-theorem.md)
+- [The Poincaré lemma](part-02/the-poincare-lemma.md)
+- [Rademacher's theorem for locally Lipschitz functions](part-02/rademachers-theorem-for-locally-lipschitz-functi.md)
+- [The relative Poincaré lemma](part-02/the-relative-poincare-lemma.md)
+- [Rolle's theorem for finitely many zeros](part-02/rolles-theorem-for-finitely-many-zeros.md)
+- [Sard's lemma in equal dimensions](part-02/sards-lemma-in-equal-dimensions.md)
+- [Sard's theorem on the locus where the derivative vanishes](part-02/sards-theorem-on-the-locus-where-the-derivative.md)
+- [Stokes' formula on the boundary of a cube for a closed two-form `ψ` that is C¹ on `(ℝ × ℝ) × ℝ`](part-02/stokes-formula-on-the-boundary-of-a-cube-for-a-c.md)
+- [Stokes' theorem on the standard simplex](part-02/stokes-theorem-on-the-standard-simplex.md)
+- [Taylor's formula to second order](part-02/taylors-formula-to-second-order.md)
+- [Taylor's theorem with a bounded remainder](part-02/taylors-theorem-with-a-bounded-remainder.md)
+- [Uniform first-order Taylor estimate in a parameter](part-02/uniform-first-order-taylor-estimate-in-a-paramet.md)
+
+## [Witten's frame formula](part-03/README.md)
+
+- [Witten's frame formula](part-03/wittens-frame-formula.md)

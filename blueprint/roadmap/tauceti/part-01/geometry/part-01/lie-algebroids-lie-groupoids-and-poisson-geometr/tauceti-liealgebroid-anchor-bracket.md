@@ -1,0 +1,39 @@
+---
+declaration: theorem
+origin: cited
+lean: TauCeti.LieAlgebroid.anchor_bracket
+statement: formalized
+proof: formalized
+---
+
+# TauCeti.LieAlgebroid.anchor_bracket
+
+The anchor maps the bracket of two sections to the Lie bracket of their anchor vector fields:
+`ρ([a, b]) = [ρ(a), ρ(b)]`.
+
+```lean
+TauCeti.LieAlgebroid.anchor_bracket.{u_1, u_2, u_3, u_4, u_5} {E : Type u_1} {H : Type u_2}
+  [NormedAddCommGroup E] [NormedSpace ℝ E] [TopologicalSpace H] {I : ModelWithCorners ℝ E H}
+  {M : Type u_3} [TopologicalSpace M] [ChartedSpace H M] [IsManifold I (↑⊤) M] {F : Type u_4}
+  [NormedAddCommGroup F] [NormedSpace ℝ F] {V : M → Type u_5}
+  [TopologicalSpace (Bundle.TotalSpace F V)] [(x : M) → AddCommGroup (V x)]
+  [(x : M) → _root_.Module ℝ (V x)] [(x : M) → TopologicalSpace (V x)] [FiberBundle F V]
+  [VectorBundle ℝ F V] (A : TauCeti.LieAlgebroid I F V) [FiniteDimensional ℝ E] [T2Space M]
+  [ContMDiffVectorBundle (↑⊤) F V I] (a b : ContMDiffSection I F (↑⊤) V) (x : M) :
+  (A.anchor x) (((A.bracket a) b) x) =
+    VectorField.mlieBracket I (⇑(A.anchorField a)) (⇑(A.anchorField b)) x
+```
+
+## Depends on
+
+- [TauCeti.LieAlgebroid](tauceti-liealgebroid.md)
+
+## Lean
+
+Formalized in Tau Ceti as [`TauCeti.LieAlgebroid.anchor_bracket`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/LieAlgebroid/Basic.html#TauCeti.LieAlgebroid.anchor_bracket).
+
+## Sources
+
+- [Tau Ceti documentation: `TauCeti.LieAlgebroid.anchor_bracket`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/LieAlgebroid/Basic.html#TauCeti.LieAlgebroid.anchor_bracket)
+- [Source of `TauCeti.LieAlgebroid.anchor_bracket` in TauCeti/Geometry/Manifold/LieAlgebroid/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/LieAlgebroid/Basic.lean#L246)
+- [Tau Ceti roadmap status: Lie algebroids, Lie groupoids and Poisson geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/LieGroupoidsPoisson/STATUS.md)

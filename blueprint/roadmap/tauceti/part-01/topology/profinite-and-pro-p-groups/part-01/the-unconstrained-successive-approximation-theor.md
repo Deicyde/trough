@@ -1,0 +1,46 @@
+---
+declaration: theorem
+origin: cited
+lean: TauCeti.freeProP.exists_continuousMulEquiv_apply_eq_of_range_basisModificationDelta_eq_top
+statement: formalized
+proof: formalized
+---
+
+# The unconstrained successive-approximation theorem
+
+Let `r, w ∈ λ_1(F)` be relators of
+the free pro-`p` group `F` on a finite linearly ordered type with the same class `ρ ∈ gr_1(F)`, and
+suppose the basis-modification map `δ_ρ` is onto `gr_{m+1}(F)` for every `m ≥ 1`. Then a continuous
+automorphism of `F` carries `r` to `w`.
+
+```lean
+TauCeti.freeProP.exists_continuousMulEquiv_apply_eq_of_range_basisModificationDelta_eq_top.{u}
+  {p : ℕ} [Fact (Nat.Prime p)] {X : Type u} [Finite X] [LinearOrder X]
+  (r w : ↥(TauCeti.pLowerCentralSeries p (TauCeti.freeProP p X) 1))
+  (h :
+    TauCeti.gradedMk p (TauCeti.freeProP p X) 1 r = TauCeti.gradedMk p (TauCeti.freeProP p X) 1 w)
+  (hspan :
+    ∀ (m : ℕ) (hm : 1 ≤ m),
+      ((TauCeti.freeProP.basisModificationDelta p X hm)
+            (TauCeti.gradedMk p (TauCeti.freeProP p X) 1 r)).range =
+        ⊤) :
+  ∃ e, e ↑r = ↑w
+```
+
+## Depends on
+
+Its statement uses no other declaration mapped here.
+
+## Proof depends on
+
+- [The constrained successive-approximation theorem](the-constrained-successive-approximation-theorem.md)
+
+## Lean
+
+Formalized in Tau Ceti as [`TauCeti.freeProP.exists_continuousMulEquiv_apply_eq_of_range_basisModificationDelta_eq_top`](https://taucetiproject.org/docs/TauCeti/Topology/Algebra/Group/Profinite/Free/SuccessiveApproximation/Basic.html#TauCeti.freeProP.exists_continuousMulEquiv_apply_eq_of_range_basisModificationDelta_eq_top).
+
+## Sources
+
+- [Tau Ceti documentation: `TauCeti.freeProP.exists_continuousMulEquiv_apply_eq_of_range_basisModificationDelta_eq_top`](https://taucetiproject.org/docs/TauCeti/Topology/Algebra/Group/Profinite/Free/SuccessiveApproximation/Basic.html#TauCeti.freeProP.exists_continuousMulEquiv_apply_eq_of_range_basisModificationDelta_eq_top)
+- [Source of `TauCeti.freeProP.exists_continuousMulEquiv_apply_eq_of_range_basisModificationDelta_eq_top` in TauCeti/Topology/Algebra/Group/Profinite/Free/SuccessiveApproximation/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Topology/Algebra/Group/Profinite/Free/SuccessiveApproximation/Basic.lean#L250)
+- [Tau Ceti roadmap status: Profinite and pro-`p` groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/ProfiniteProPGroups/STATUS.md)
