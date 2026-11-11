@@ -16,7 +16,8 @@ Lean. With --site, the blocks link the results' cards on the ATLAS site when its
 pages hold them; when it does not answer at all, the last record's value is
 kept if its results are the same.
 
-Nothing is written when the repository's license is not Apache-2.0, when the
+The LICENSE's own words before the Apache License's text are kept, to quote with
+the credit. Nothing is written when the license is not Apache-2.0, when the
 vault's atlas.json, a container's README, an entry it links or an article's
 title does not read, when a link annotation does not read, or when the results
 drop under half of those the last record has.
@@ -36,7 +37,7 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-from trough import atlas, ff
+from trough import atlas
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "atlas"
@@ -84,7 +85,8 @@ def refresh(checkout: Path, out: Path, site: bool = False, fetcher=fetch) -> lis
     return the problems."""
     rev = git(checkout, "rev-parse", "HEAD")
     license_file = checkout / "LICENSE"
-    if not license_file.is_file() or not ff.is_apache(license_file.read_text(encoding="utf-8")):
+    notice = atlas.license_notice(license_file.read_text(encoding="utf-8")) if license_file.is_file() else None
+    if notice is None:
         return [f"{atlas.REPO} at {rev[:8]}: its LICENSE is not Apache-2.0"]
     structure, articles, counts, problems = atlas.read(checkout)
     previous = last_paths(out) if (out / "articles").is_dir() else set()
@@ -106,7 +108,7 @@ def refresh(checkout: Path, out: Path, site: bool = False, fetcher=fetch) -> lis
         "date": git(checkout, "log", "-1", "--date=format-local:%Y-%m-%dT%H:%M:%SZ", "--format=%cd", "HEAD"),
         "toolchain": toolchain.read_text(encoding="utf-8").strip().split(":")[-1] if toolchain.is_file() else "",
         "mathlib": mathlib.get("rev", ""), "mathlib_version": mathlib.get("inputRev", ""),
-        "license": "Apache-2.0",
+        "license": "Apache-2.0", "license_notice": notice,
         "readme": readme_words(readme.read_text(encoding="utf-8")) if readme.is_file() else {},
         "counts": counts,
     }

@@ -48,6 +48,17 @@ INLINE_LINK = re.compile(r"(?<!!)\[(?P<text>(?:[^\[\]\n]|\[[^\[\]\n]*\])*)\]\((?
 STRONG = re.compile(r"<strong>(?P<name>[^<]+)</strong><br\s*/?>\s*(?P<line>[^<\n]+)")
 
 
+APACHE = "Apache License Version 2.0, January 2004"
+
+
+def license_notice(text: str) -> str | None:
+    """What a LICENSE says before the Apache License 2.0's own text, on one line ("" when nothing), or None when it
+    is not the Apache License 2.0. ATLAS's opens with a sentence of its own."""
+    flat = " ".join(text.split())
+    index = flat.find(APACHE)
+    return flat[:index].strip() if index >= 0 else None
+
+
 # Reading the vault.
 
 def read_container(roadmap: Path, path: str) -> tuple[dict, list[str]]:
@@ -531,5 +542,6 @@ def intro(data: dict, stats: Counter) -> str:
         "edges between its results.",
         "The archived first release, under `v1/`, is under a non-commercial license that also forbids use for "
         "training models, so it is not read. " + site_line,
-        credit(source) + " Each result's line is linked.",
+        credit(source)[:-1] + (" (its LICENSE file adds that the code is not meant for training models)."
+                                if source.get("license_notice") else ".") + " Each result's line is linked.",
     ])
