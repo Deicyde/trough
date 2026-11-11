@@ -3,7 +3,7 @@
 Maps of Lean formalization libraries: what each one formalizes and how its
 results depend on one another, not what the library may add. The maps are AutoformBot
 vaults, rendered with [AutoformBot](https://github.com/facebookresearch/autoform-bot)
-and published at https://deicyde.github.io/trough/. The book shows no Lean
+and published at https://trough.jackmccarthy.org/. The book shows no Lean
 progress: the generated `blueprint/roadmap/README.md` sets `tracks_lean: false`.
 
 `catalog/libraries.toml` lists the 62 libraries trough targets: Mathlib, Tau
@@ -56,9 +56,12 @@ may add.
    annotation in `blueprint/links/mathlib/`, not in the page's front matter.
 4. The **Pages** workflow checks that the committed pages are what the
    generator writes, runs `autoform check` and `autoform audit`, renders the
-   site with the Autoform commit in `.github/autoform-ref`, and deploys it. A
-   daily run tries Autoform's newest main commit and pins it once the site
-   builds.
+   site with the Autoform commit in `.github/autoform-ref`, and deploys it to a
+   Cloudflare Worker that serves the built files (`wrangler.jsonc`). A daily
+   run tries Autoform's newest main commit and pins it once the site builds
+   and deploys. The old address, deicyde.github.io/trough, stays on GitHub
+   Pages as `redirect/` (deployed by the **Redirect** workflow), which sends
+   each old path to the same path at the new address.
 
 ## The blueprint chapters
 
