@@ -1,0 +1,57 @@
+# 36 Derived Categories of Schemes
+
+Chapter 36 of the Stacks Project, *Derived Categories of Schemes*, [Tag 08CU](https://stacks.math.columbia.edu/tag/08CU): the 39 sections of its 41 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 236 tags are carried by 674 declarations of the repository (all in StacksFrontier) and 3 registered declarations.
+
+## [36.3 Derived category of… to 36.9 Koszul complexes](part-01/README.md)
+
+- [36.3 Derived category of quasi-coherent modules](part-01/36-3-derived-category-of-quasi-coherent-modules.md)
+- [36.4 Total direct image](part-01/36-4-total-direct-image.md)
+- [36.5 Affine morphisms](part-01/36-5-affine-morphisms.md)
+- [36.6 Cohomology with support in a closed subset](part-01/36-6-cohomology-with-support-in-a-closed-subset.md)
+- [36.7 The coherator](part-01/36-7-the-coherator.md)
+- [36.8 The coherator for Noetherian schemes](part-01/36-8-the-coherator-for-noetherian-schemes.md)
+- [36.9 Koszul complexes](part-01/36-9-koszul-complexes.md)
+
+## [36.10 Pseudo-coherent and… to 36.21 The coherator revisited](part-02/README.md)
+
+- [36.10 Pseudo-coherent and perfect complexes](part-02/36-10-pseudo-coherent-and-perfect-complexes.md)
+- [36.11 Derived category of coherent modules](part-02/36-11-derived-category-of-coherent-modules.md)
+- [36.12 Descent finiteness properties of complexes](part-02/36-12-descent-finiteness-properties-of-complexes.md)
+- [36.13 Lifting complexes](part-02/36-13-lifting-complexes.md)
+- [36.14 Approximation by perfect complexes](part-02/36-14-approximation-by-perfect-complexes.md)
+- [36.15 Generating derived categories](part-02/36-15-generating-derived-categories.md)
+- [36.16 An example generator](part-02/36-16-an-example-generator.md)
+- [36.17 Compact and perfect objects](part-02/36-17-compact-and-perfect-objects.md)
+- [36.18 Derived categories as module categories](part-02/36-18-derived-categories-as-module-categories.md)
+- [36.19 Characterizing pseudo-coherent complexes, I](part-02/36-19-characterizing-pseudo-coherent-complexes-i.md)
+- [36.20 An example equivalence](part-02/36-20-an-example-equivalence.md)
+- [36.21 The coherator revisited](part-02/36-21-the-coherator-revisited.md)
+
+## [36.22 Cohomology and base… to 36.29 Limits and derived…](part-03/README.md)
+
+- [36.22 Cohomology and base change, IV](part-03/36-22-cohomology-and-base-change-iv.md)
+- [36.23 Künneth formula, II](part-03/36-23-kunneth-formula-ii.md)
+- [36.24 Künneth formula, III](part-03/36-24-kunneth-formula-iii.md)
+- [36.25 Künneth formula for Ext](part-03/36-25-kunneth-formula-for-ext.md)
+- [36.26 Cohomology and base change, V](part-03/36-26-cohomology-and-base-change-v.md)
+- [36.27 Producing perfect complexes](part-03/36-27-producing-perfect-complexes.md)
+- [36.28 A projection formula for Ext](part-03/36-28-a-projection-formula-for-ext.md)
+- [36.29 Limits and derived categories](part-03/36-29-limits-and-derived-categories.md)
+
+## [36.30 Cohomology and base… to 36.38 K-groups](part-04/README.md)
+
+- [36.30 Cohomology and base change, VI](part-04/36-30-cohomology-and-base-change-vi.md)
+- [36.31 Perfect complexes](part-04/36-31-perfect-complexes.md)
+- [36.32 Applications](part-04/36-32-applications.md)
+- [36.33 Other applications](part-04/36-33-other-applications.md)
+- [36.34 Characterizing pseudo-coherent complexes, II](part-04/36-34-characterizing-pseudo-coherent-complexes-i.md)
+- [36.35 Relatively perfect objects](part-04/36-35-relatively-perfect-objects.md)
+- [36.36 The resolution property](part-04/36-36-the-resolution-property.md)
+- [36.37 The resolution property and perfect complexes](part-04/36-37-the-resolution-property-and-perfect-comple.md)
+- [36.38 K-groups](part-04/36-38-k-groups.md)
+
+## [36.39 Determinants of complexes to 36.41 Quasi-coherent objects in…](part-05/README.md)
+
+- [36.39 Determinants of complexes](part-05/36-39-determinants-of-complexes.md)
+- [36.40 Detecting Boundedness](part-05/36-40-detecting-boundedness.md)
+- [36.41 Quasi-coherent objects in the derived category](part-05/36-41-quasi-coherent-objects-in-the-derived-cate.md)

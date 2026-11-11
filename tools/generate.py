@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import anthropic_flt, blueprints, catalog, cfsg, ff, formal_conjectures, lean_pool, links, mathlib, tauceti, wiki
+from trough import anthropic_flt, blueprints, catalog, cfsg, ff, formal_conjectures, lean_pool, links, mathlib, stacks, tauceti, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -214,6 +214,25 @@ def generate() -> dict[Path, str]:
             f"{cfsg_stats['edges']} import edges, {cfsg_stats['tauceti']} linking Tau Ceti",
             file=sys.stderr,
         )
+    stacks_data = stacks.load(DATA)
+    if stacks_data:
+        stacks_built, stacks_links = stacks.chapter(stacks_data)
+        assign_paths(stacks_built.root, ROADMAP / "stacks")
+        blueprints.resolve(stacks_built, VAULT)
+        files.update(render_tree(stacks_built.root, VAULT))
+        chapters["stacks"] = "stacks/README.md"
+        lean_links["stacks"] = stacks_links
+        st = Counter(stacks_built.stats)
+        blueprint_rows.append(("The Stacks Project in Lean (Axiom)", "DECOMPOSED",
+                               f"[{st['articles']:,} sections of the Stacks Project](../roadmap/stacks/README.md) with a "
+                               "tag that a declaration carries, one article each, with a block per tag."))
+        print(
+            f"stacks: {st['articles']} articles in {st['chapters']} chapters and {st['parts']} parts; {st['tags']} tags "
+            f"carried by {st['StacksCore']} StacksCore and {st['StacksFrontier']} StacksFrontier declarations and "
+            f"{st['registrations']} registrations; {st['unplaced']} tags not placed; {st['ega_indexed']} EGA and "
+            f"{st['sga_indexed']} SGA items indexed",
+            file=sys.stderr,
+        )
     files[ROOT / "hooks" / "lean-links.json"] = json.dumps(lean_links, indent=1, ensure_ascii=False) + "\n"
     root = ROADMAP / "README.md"
     previous = root.read_text(encoding="utf-8") if root.is_file() else None
@@ -240,6 +259,7 @@ def generate() -> dict[Path, str]:
         lean_pool=pool[0]["rev"] if pool else None,
         anthropic_flt=aflt[0] if aflt else None,
         cfsg=cfsg_data["rev"] if cfsg_data else None,
+        stacks=stacks_data["source"]["rev"] if stacks_data else None,
     )
     print(
         f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['stated']} stated only, "

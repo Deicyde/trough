@@ -100,21 +100,43 @@ def link_text(text: str) -> str:
                    for index, part in enumerate(parts))
 
 
-def chunk(container: Container, title: Callable[[list[Entry], int, int], str] = range_title) -> Container:
-    """Nest a long listing into transparent parts so no page lists more than MAX_CHILDREN."""
-    entries = container.entries
-    if len(entries) <= MAX_CHILDREN:
+def folded(entry: Entry) -> int:
+    """The bytes of Markdown an entry puts on its listing's page: its line, or an owned leaf's page, which the site
+    shows there in place of the line."""
+    text = entry.before + entry.text
+    if entry.owned and isinstance(entry.node, Leaf):
+        text += entry.node.body + "".join(heading + body for heading, body in entry.node.notes)
+    return len(text.encode())
+
+
+def chunk(container: Container, title: Callable[[list[Entry], int, int], str] = range_title,
+          budget: int | None = None) -> Container:
+    """Nest a long listing into transparent parts so no page lists more than MAX_CHILDREN. With a *budget* in bytes, a
+    page also ends before the Markdown its entries fold onto it (folded()) would pass the budget, and an entry over
+    the budget has a page of its own."""
+    pages: list[list[Entry]] = []
+    weight = 0
+    for entry in container.entries:
+        size = folded(entry) if budget else 0
+        if pages and len(pages[-1]) < MAX_CHILDREN and (not budget or weight + size <= budget):
+            pages[-1].append(entry)
+            weight += size
+        else:
+            pages.append([entry])
+            weight = size
+    if len(pages) <= 1:
         return container
-    size = MAX_CHILDREN
-    while -(-len(entries) // size) > MAX_CHILDREN:
+    # Pages are grouped, a part per group, so no listing has more than MAX_CHILDREN parts either.
+    size = 1
+    while -(-len(pages) // size) > MAX_CHILDREN:
         size *= MAX_CHILDREN
-    groups = [entries[start : start + size] for start in range(0, len(entries), size)]
+    groups = [[entry for page in pages[start : start + size] for entry in page] for start in range(0, len(pages), size)]
     parts = []
     for number, group in enumerate(groups, 1):
         part = Container(title(group, number, len(groups)), f"part-{number:02d}", group, navigation="transparent")
         if number == len(groups):
             part.tail, container.tail = container.tail, ""
-        parts.append(Entry(chunk(part, title)))
+        parts.append(Entry(chunk(part, title, budget)))
     container.entries = parts
     return container
 

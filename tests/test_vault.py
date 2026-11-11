@@ -32,6 +32,22 @@ def test_chunk_keeps_every_page_at_twenty_entries():
     assert container.entries[-1].node.title == "Item 400"
 
 
+def test_chunk_with_a_budget_ends_a_page_before_its_folded_markdown_passes_it():
+    def sized(title: str, size: int) -> Entry:
+        return Entry(Leaf(title, slugify(title), [], "x" * size))
+
+    small = Container("Small", "small", [sized("A", 100), sized("B", 100)])
+    assert chunk(small, budget=250).entries[0].node.title == "A"
+    entries = [sized(f"A{n}", 100) for n in range(3)] + [sized("Big", 500)] + [sized(f"B{n:02d}", 1) for n in range(25)]
+    container = chunk(Container("Sized", "sized", entries), budget=250)
+    assert [[entry.node.title for entry in part.node.entries] for part in container.entries] == [
+        ["A0", "A1"], ["A2"], ["Big"], [f"B{n:02d}" for n in range(20)], [f"B{n:02d}" for n in range(20, 25)]]
+    # More pages than a listing holds are grouped into parts of pages.
+    many = chunk(Container("Many", "many", [sized(f"C{n:02d}", 300) for n in range(30)]), budget=250)
+    assert [len(part.node.entries) for part in many.entries] == [20, 10]
+    assert all(len(page.node.entries) == 1 for part in many.entries for page in part.node.entries)
+
+
 def test_references_stay_out_of_a_containers_directory():
     home = Container("Home", "home", [Entry(leaf("Shared"))])
     other = Container("Other", "other", [Entry(home.entries[0].node, owned=False, label="Shared, listed again")])

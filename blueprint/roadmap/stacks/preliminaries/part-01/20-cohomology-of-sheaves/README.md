@@ -1,0 +1,72 @@
+# 20 Cohomology of Sheaves
+
+Chapter 20 of the Stacks Project, *Cohomology of Sheaves*, [Tag 01DW](https://stacks.math.columbia.edu/tag/01DW): the 54 sections of its 55 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 311 tags are carried by 712 declarations of the repository (all in StacksFrontier) and 35 registered declarations.
+
+## [20.2 Cohomology of sheaves to 20.21 Cohomology with support…](part-01/README.md)
+
+- [20.2 Cohomology of sheaves](part-01/20-2-cohomology-of-sheaves.md)
+- [20.3 Derived functors](part-01/20-3-derived-functors.md)
+- [20.4 First cohomology and torsors](part-01/20-4-first-cohomology-and-torsors.md)
+- [20.5 First cohomology and extensions](part-01/20-5-first-cohomology-and-extensions.md)
+- [20.6 First cohomology and invertible sheaves](part-01/20-6-first-cohomology-and-invertible-sheaves.md)
+- [20.7 Locality of cohomology](part-01/20-7-locality-of-cohomology.md)
+- [20.8 Mayer-Vietoris](part-01/20-8-mayer-vietoris.md)
+- [20.9 The Čech complex and Čech cohomology](part-01/20-9-the-cech-complex-and-cech-cohomology.md)
+- [20.10 Čech cohomology as a functor on presheaves](part-01/20-10-cech-cohomology-as-a-functor-on-presheaves.md)
+- [20.11 Čech cohomology and cohomology](part-01/20-11-cech-cohomology-and-cohomology.md)
+- [20.12 Flasque sheaves](part-01/20-12-flasque-sheaves.md)
+- [20.13 The Leray spectral sequence](part-01/20-13-the-leray-spectral-sequence.md)
+- [20.14 Functoriality of cohomology](part-01/20-14-functoriality-of-cohomology.md)
+- [20.15 Refinements and Čech cohomology](part-01/20-15-refinements-and-cech-cohomology.md)
+- [20.16 Cohomology on Hausdorff quasi-compact spaces](part-01/20-16-cohomology-on-hausdorff-quasi-compact-spac.md)
+- [20.17 The base change map](part-01/20-17-the-base-change-map.md)
+- [20.18 Proper base change in topology](part-01/20-18-proper-base-change-in-topology.md)
+- [20.19 Cohomology and colimits](part-01/20-19-cohomology-and-colimits.md)
+- [20.20 Vanishing on Noetherian topological spaces](part-01/20-20-vanishing-on-noetherian-topological-spaces.md)
+- [20.21 Cohomology with support in a closed subset](part-01/20-21-cohomology-with-support-in-a-closed-subset.md)
+
+## [20.22 Cohomology on spectral… to 20.33 Unbounded Mayer-Vietoris](part-02/README.md)
+
+- [20.22 Cohomology on spectral spaces](part-02/20-22-cohomology-on-spectral-spaces.md)
+- [20.23 The alternating Čech complex](part-02/20-23-the-alternating-cech-complex.md)
+- [20.24 Alternative view of the Čech complex](part-02/20-24-alternative-view-of-the-cech-complex.md)
+- [20.25 Čech cohomology of complexes](part-02/20-25-cech-cohomology-of-complexes.md)
+- [20.26 Flat resolutions](part-02/20-26-flat-resolutions.md)
+- [20.27 Derived pullback](part-02/20-27-derived-pullback.md)
+- [20.28 Cohomology of unbounded complexes](part-02/20-28-cohomology-of-unbounded-complexes.md)
+- [20.29 Cohomology of filtered complexes](part-02/20-29-cohomology-of-filtered-complexes.md)
+- [20.30 Godement resolution](part-02/20-30-godement-resolution.md)
+- [20.31 Cup product](part-02/20-31-cup-product.md)
+- [20.32 Some properties of K-injective complexes](part-02/20-32-some-properties-of-k-injective-complexes.md)
+- [20.33 Unbounded Mayer-Vietoris](part-02/20-33-unbounded-mayer-vietoris.md)
+
+## [20.34 Cohomology with support… to 20.44 Global derived hom](part-03/README.md)
+
+- [20.34 Cohomology with support in a closed subset, II](part-03/20-34-cohomology-with-support-in-a-closed-subset.md)
+- [20.35 Inverse systems and cohomology, I](part-03/20-35-inverse-systems-and-cohomology-i.md)
+- [20.36 Inverse systems and cohomology, II](part-03/20-36-inverse-systems-and-cohomology-ii.md)
+- [20.37 Derived limits](part-03/20-37-derived-limits.md)
+- [20.38 Producing K-injective resolutions](part-03/20-38-producing-k-injective-resolutions.md)
+- [20.39 Inverse systems and cohomology, III](part-03/20-39-inverse-systems-and-cohomology-iii.md)
+- [20.40 Čech cohomology of unbounded complexes](part-03/20-40-cech-cohomology-of-unbounded-complexes.md)
+- [20.41 Hom complexes](part-03/20-41-hom-complexes.md)
+- [20.42 Internal hom in the derived category](part-03/20-42-internal-hom-in-the-derived-category.md)
+- [20.43 Ext sheaves](part-03/20-43-ext-sheaves.md)
+- [20.44 Global derived hom](part-03/20-44-global-derived-hom.md)
+
+## [20.45 Glueing complexes to 20.54 Projection formula](part-04/README.md)
+
+- [20.45 Glueing complexes](part-04/20-45-glueing-complexes.md)
+- [20.46 Strictly perfect complexes](part-04/20-46-strictly-perfect-complexes.md)
+- [20.47 Pseudo-coherent modules](part-04/20-47-pseudo-coherent-modules.md)
+- [20.48 Tor dimension](part-04/20-48-tor-dimension.md)
+- [20.49 Perfect complexes](part-04/20-49-perfect-complexes.md)
+- [20.50 Duals](part-04/20-50-duals.md)
+- [20.51 Miscellany](part-04/20-51-miscellany.md)
+- [20.52 Invertible objects in the derived category](part-04/20-52-invertible-objects-in-the-derived-category.md)
+- [20.53 Compact objects](part-04/20-53-compact-objects.md)
+- [20.54 Projection formula](part-04/20-54-projection-formula.md)
+
+## [20.55 An operator introduced by…](part-05/README.md)
+
+- [20.55 An operator introduced by Berthelot and Ogus](part-05/20-55-an-operator-introduced-by-berthelot-and-og.md)

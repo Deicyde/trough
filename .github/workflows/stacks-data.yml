@@ -1,0 +1,257 @@
+# Reads Axiom's Lean formalization of the Stacks Project at the commit
+# data/stacks/source.json pins (tools/refresh_stacks.py): each Stacks tag's
+# declarations, with their attribute comments, docstrings, Lean statements and
+# EGA and SGA references, and the declarations registered for it, read from the
+# source without Lean; and the parts, chapters and sections of the Stacks
+# Project at the commit data/stacks/structure.json pins, which place each tag.
+# The pages are then regenerated from that data. The checkouts are blobless
+# and sparse: only the files the refresh reads.
+#
+# A push that changes the reader or the data runs it too, so the committed data
+# always match the pins. The repository runs no continuous integration, so the
+# weekly run, or a dispatch with "newest", moves its pin to the newest main
+# commit, and the Stacks Project's to its newest master commit. On main, the
+# commit job records the data and the pages, then starts the Pages and Tests
+# workflows. On a pull request the run fails when the committed data differ
+# from what the pins give, and keeps a patch.
+
+name: Stacks data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/refresh_stacks.py"
+      - "tools/trough/stacks.py"
+      - "tools/trough/leansource.py"
+      - "tools/trough/ff.py"
+      - "tools/trough/formalization.py"
+      - "tools/trough/formal_conjectures.py"
+      - "tools/trough/tex.py"
+      - "tools/trough/blueprints.py"
+      - "tools/trough/bibtex.py"
+      - "tools/trough/leanblueprint.py"
+      - "tools/trough/mathlib.py"
+      - "tools/trough/wiki.py"
+      - "tools/trough/catalog.py"
+      - "tools/trough/vault.py"
+      - "data/stacks/**"
+      - ".github/workflows/stacks-data.yml"
+  pull_request:
+    paths:
+      - "tools/refresh_stacks.py"
+      - "tools/trough/stacks.py"
+      - "tools/trough/leansource.py"
+      - "tools/trough/ff.py"
+      - "tools/trough/formalization.py"
+      - "tools/trough/formal_conjectures.py"
+      - "tools/trough/tex.py"
+      - "tools/trough/blueprints.py"
+      - "tools/trough/bibtex.py"
+      - "tools/trough/leanblueprint.py"
+      - "tools/trough/mathlib.py"
+      - "tools/trough/wiki.py"
+      - "tools/trough/catalog.py"
+      - "tools/trough/vault.py"
+      - "data/stacks/**"
+      - ".github/workflows/stacks-data.yml"
+  workflow_dispatch:
+    inputs:
+      newest:
+        description: Pin the newest commits of the repository and of the Stacks Project
+        type: boolean
+        default: false
+  schedule:
+    - cron: "41 6 * * 5"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: stacks-data-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  SITE: "https://stacks.axiommath.ai/"
+
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    outputs:
+      changed: ${{ steps.compare.outputs.changed }}
+      rev: ${{ steps.pin.outputs.rev }}
+      sha: ${{ steps.head.outputs.sha }}
+    steps:
+      # Outside pull requests, read the branch as it is now rather than the
+      # commit that started the run.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event_name != 'pull_request' && github.ref || '' }}
+          persist-credentials: false
+
+      - name: Record the commit this run reads
+        id: head
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      - name: Choose the commits
+        id: pin
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NEWEST: ${{ github.event_name == 'schedule' || inputs.newest }}
+        run: |
+          set -euo pipefail
+          rev=$(jq -r '.rev // empty' data/stacks/source.json 2>/dev/null || true)
+          project=$(jq -r '.rev // empty' data/stacks/structure.json 2>/dev/null || true)
+          if [ "$NEWEST" = true ] || [ -z "$rev" ]; then
+            rev=$(gh api repos/AxiomMath/Stacks/commits/main --jq .sha)
+          fi
+          if [ "$NEWEST" = true ] || [ -z "$project" ]; then
+            project=$(gh api repos/stacks/stacks-project/commits/master --jq .sha)
+          fi
+          echo "AxiomMath/Stacks $rev, stacks/stacks-project $project"
+          echo "rev=$rev" >> "$GITHUB_OUTPUT"
+          echo "project=$project" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch the repository and the Stacks Project at those commits
+        env:
+          REV: ${{ steps.pin.outputs.rev }}
+          PROJECT: ${{ steps.pin.outputs.project }}
+        run: |
+          set -euo pipefail
+          fetch() {  # directory, repository, commit, sparse patterns...
+            dir="$RUNNER_TEMP/$1"
+            git init --quiet "$dir"
+            git -C "$dir" remote add origin "https://github.com/$2.git"
+            git -C "$dir" fetch --quiet --depth 1 --filter=blob:none origin "$3"
+            git -C "$dir" sparse-checkout set --no-cone "${@:4}"
+            git -C "$dir" checkout --quiet FETCH_HEAD
+            du -sh "$dir"
+          }
+          fetch stacks AxiomMath/Stacks "$REV" /StacksCore/ /StacksFrontier/ /formalization.yaml /README.md \
+            /lean-toolchain /lake-manifest.json /LICENSE
+          fetch stacks-project stacks/stacks-project "$PROJECT" '/*.tex' /tags/tags
+
+      - name: Read the tags
+        run: >-
+          uv run --no-dev python tools/refresh_stacks.py "$RUNNER_TEMP/stacks" "$RUNNER_TEMP/stacks-project"
+          --site "$SITE"
+
+      - name: Regenerate the pages
+        run: uv run --no-dev python tools/generate.py
+
+      - name: Run the tests on the new data
+        run: uv run pytest -q
+
+      - name: Compare with the committed data
+        id: compare
+        run: |
+          git add -A data/stacks blueprint hooks/lean-links.json
+          if git diff --cached --quiet; then
+            echo "The committed data are what the pins give."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git diff --cached --stat | tail -n 20
+          git diff --cached --binary > stacks-data.patch
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          if [ "$GITHUB_EVENT_NAME" = pull_request ]; then
+            base=$(git cat-file -p HEAD | sed -n 's/^parent //p' | head -n 1)
+            echo "::error::The committed data differ from what the pins give. Merge main and apply the patch: git fetch origin ${base} && git merge --no-edit ${base} && gh run download ${GITHUB_RUN_ID} -R ${GITHUB_REPOSITORY} -n stacks-data && git apply stacks-data.patch"
+            exit 1
+          fi
+
+      - name: Keep the patch
+        if: always() && steps.compare.outputs.changed == 'true'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: stacks-data
+          path: stacks-data.patch
+          retention-days: 14
+
+      - name: Keep the data for the commit job
+        if: steps.compare.outputs.changed == 'true' && github.event_name != 'pull_request'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: stacks-data-files
+          path: data/stacks
+          retention-days: 14
+
+  # Records the data in the newest main, regenerating the pages with main's
+  # generator, as the Formal Frontier data workflow does. Data changed
+  # meanwhile win: that push's run records its own.
+  commit:
+    needs: refresh
+    if: >-
+      needs.refresh.outputs.changed == 'true' &&
+      github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Fetch the data
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: stacks-data-files
+          path: ${{ runner.temp }}/data
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      - name: Commit the data and pages
+        env:
+          REV: ${{ needs.refresh.outputs.rev }}
+          READ: ${{ needs.refresh.outputs.sha }}
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          set -euo pipefail
+          # The artifact keeps the files without their common folder, data/stacks.
+          src="$RUNNER_TEMP/data"
+          if (cd "$src" && find . -type f | sed 's|^\./||') | grep -vE '^(source|structure)\.json$|^tags/[0-9A-Z]{2}\.json$'; then
+            echo "::error::The data artifact holds the files listed above."
+            exit 1
+          fi
+          for attempt in 1 2 3; do
+            git fetch --quiet origin main
+            git reset --quiet --hard origin/main
+            if ! git diff --quiet "$READ" HEAD -- data/stacks; then
+              echo "::notice::main has changed data/stacks since ${READ:0:8}; that push's run records the data."
+              exit 0
+            fi
+            git rm --quiet -r --ignore-unmatch data/stacks/tags
+            mkdir -p data/stacks
+            cp -R "$src"/. data/stacks/
+            uv run --no-dev python tools/generate.py
+            git add -A data/stacks blueprint hooks/lean-links.json
+            if git diff --cached --quiet; then
+              echo "main already has this data."
+              exit 0
+            fi
+            git commit --quiet -m "Stacks data at ${REV:0:8}"
+            if git push --quiet origin HEAD:main; then
+              exit 0
+            fi
+          done
+          exit 1
+
+      - name: Rebuild the site and run the tests
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run pages.yml --ref main -R "$GITHUB_REPOSITORY"
+          gh workflow run tests.yml --ref main -R "$GITHUB_REPOSITORY"

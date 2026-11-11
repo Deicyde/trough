@@ -567,8 +567,10 @@ def facts(record: dict) -> str:
             f"- Lean toolchain {record['toolchain']}"
             + (f", Mathlib at [{record['mathlib'][:8]}]({MATHLIB_REPO}/tree/{record['mathlib']})." if record["mathlib"] else "."),
             f"- License: {record['license']}.",
-            f"- Authors: {', '.join(record['project']['authors'])}.",
-            f"- Review status: “{safe(record['review']['status'])}”."]
+            f"- Authors: {', '.join(record['project']['authors'])}."]
+    if record["project"].get("maintainers"):
+        rows.append(f"- Maintainers: {', '.join(record['project']['maintainers'])}.")
+    rows.append(f"- Review status: “{safe(record['review']['status'])}”.")
     if record["review"]["notes"]:
         rows.append(f"- Review notes: “{safe(record['review']['notes'])}”")
     if record["review"].get("reviewers"):

@@ -131,19 +131,21 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
                    blueprints: list[tuple[str, str, str, str | None, bool]] = (),
                    tauceti: tuple[str, str] | None = None, formal_frontier: dict[str, str] | None = None,
                    formal_conjectures: str | None = None, lean_pool: str | None = None,
-                   anthropic_flt: dict | None = None, cfsg: str | None = None) -> str:
+                   anthropic_flt: dict | None = None, cfsg: str | None = None,
+                   stacks: str | None = None) -> str:
     """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library;
     *tauceti* has the Tau Ceti and roadmap commits, once the chapter is built; *formal_frontier* has the
     commit each Formal Frontier library's record pins, by library id; *formal_conjectures* is the Formal
     Conjectures commit read, *lean_pool* the commit Lean Pool's record pins, *anthropic_flt* the
-    source record of Anthropic's Fermat's Last Theorem, whose commit it pins, and *cfsg* the commit Axiom
-    Math's CFSG's record pins."""
+    source record of Anthropic's Fermat's Last Theorem, whose commit it pins, *cfsg* the commit Axiom
+    Math's CFSG's record pins, and *stacks* the commit of Axiom's Stacks Project formalization."""
     formal_frontier = formal_frontier or {}
     # Every chapter whose data pins a library's commit, by library id; the Libraries list shows that commit.
     pinned = (formal_frontier | ({"formal-conjectures": formal_conjectures} if formal_conjectures else {})
               | ({"lean-pool": lean_pool} if lean_pool else {})
               | ({"anthropic-flt": anthropic_flt["rev"]} if anthropic_flt else {})
-              | ({"cfsg": cfsg} if cfsg else {}))
+              | ({"cfsg": cfsg} if cfsg else {})
+              | ({"stacks": stacks} if stacks else {}))
     lines = [
         "# Sources",
         "",
@@ -246,6 +248,20 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             f"theorems of each folder, from [AxiomMath/CFSG at {cfsg[:8]}](https://github.com/AxiomMath/CFSG/tree/{cfsg}), "
             "Apache-2.0. They are read from the source text, without Lean. `data/cfsg/source.json` records the commit, "
             "its Lean toolchain, Mathlib and Tau Ceti.",
+        ]
+    if stacks:
+        lines += [
+            "",
+            "## The Stacks Project in Lean (Axiom)",
+            "",
+            f"- `data/stacks/tags/`: each Stacks tag's declarations, with their tiers, attribute comments, docstrings, "
+            "Lean statements and EGA and SGA references, and the declarations registered for it, from "
+            f"[AxiomMath/Stacks at {stacks[:8]}](https://github.com/AxiomMath/Stacks/tree/{stacks}), Apache-2.0. They are "
+            "read from the source text, without Lean.",
+            "- `data/stacks/structure.json`: the parts, chapters and sections of the "
+            "[Stacks Project](https://github.com/stacks/stacks-project), their numbers and titles, and the section each "
+            "tag is in, at the commit the file records. The Stacks Project is under the GNU Free Documentation License; "
+            "none of its text is copied beyond these titles.",
         ]
     lines += ["", "## Libraries", ""]
     for group, heading in GROUPS:

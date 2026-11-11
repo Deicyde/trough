@@ -1,0 +1,44 @@
+# 66 Properties of Algebraic Spaces
+
+Chapter 66 of the Stacks Project, *Properties of Algebraic Spaces*, [Tag 03BO](https://stacks.math.columbia.edu/tag/03BO): the 32 sections of its 34 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 158 tags are carried by 498 declarations of the repository (all in StacksFrontier) and 17 registered declarations.
+
+## [66.3 Separation axioms to 66.18 The étale site of an…](part-01/README.md)
+
+- [66.3 Separation axioms](part-01/66-3-separation-axioms.md)
+- [66.4 Points of algebraic spaces](part-01/66-4-points-of-algebraic-spaces.md)
+- [66.5 Quasi-compact spaces](part-01/66-5-quasi-compact-spaces.md)
+- [66.6 Special coverings](part-01/66-6-special-coverings.md)
+- [66.7 Properties of Spaces defined by properties of schemes](part-01/66-7-properties-of-spaces-defined-by-properties.md)
+- [66.8 Constructible sets](part-01/66-8-constructible-sets.md)
+- [66.9 Dimension at a point](part-01/66-9-dimension-at-a-point.md)
+- [66.10 Dimension of local rings](part-01/66-10-dimension-of-local-rings.md)
+- [66.11 Generic points](part-01/66-11-generic-points.md)
+- [66.12 Reduced spaces](part-01/66-12-reduced-spaces.md)
+- [66.13 The schematic locus](part-01/66-13-the-schematic-locus.md)
+- [66.14 Obtaining a scheme](part-01/66-14-obtaining-a-scheme.md)
+- [66.15 Points on quasi-separated spaces](part-01/66-15-points-on-quasi-separated-spaces.md)
+- [66.16 Étale morphisms of algebraic spaces](part-01/66-16-etale-morphisms-of-algebraic-spaces.md)
+- [66.17 Spaces and fpqc coverings](part-01/66-17-spaces-and-fpqc-coverings.md)
+- [66.18 The étale site of an algebraic space](part-01/66-18-the-etale-site-of-an-algebraic-space.md)
+
+## [66.19 Points of the small étale… to 66.33 Morphisms towards schemes](part-02/README.md)
+
+- [66.19 Points of the small étale site](part-02/66-19-points-of-the-small-etale-site.md)
+- [66.20 Supports of abelian sheaves](part-02/66-20-supports-of-abelian-sheaves.md)
+- [66.21 The structure sheaf of an algebraic space](part-02/66-21-the-structure-sheaf-of-an-algebraic-space.md)
+- [66.22 Stalks of the structure sheaf](part-02/66-22-stalks-of-the-structure-sheaf.md)
+- [66.23 Local irreducibility](part-02/66-23-local-irreducibility.md)
+- [66.24 Noetherian spaces](part-02/66-24-noetherian-spaces.md)
+- [66.25 Regular algebraic spaces](part-02/66-25-regular-algebraic-spaces.md)
+- [66.26 Sheaves of modules on algebraic spaces](part-02/66-26-sheaves-of-modules-on-algebraic-spaces.md)
+- [66.27 Étale localization](part-02/66-27-etale-localization.md)
+- [66.28 Recovering morphisms](part-02/66-28-recovering-morphisms.md)
+- [66.29 Quasi-coherent sheaves on algebraic spaces](part-02/66-29-quasi-coherent-sheaves-on-algebraic-spaces.md)
+- [66.30 Properties of modules](part-02/66-30-properties-of-modules.md)
+- [66.31 Locally projective modules](part-02/66-31-locally-projective-modules.md)
+- [66.32 Quasi-coherent sheaves and presentations](part-02/66-32-quasi-coherent-sheaves-and-presentations.md)
+- [66.33 Morphisms towards schemes](part-02/66-33-morphisms-towards-schemes.md)
+
+## [66.34 Quotients by free actions](part-03/README.md)
+
+- [66.34 Quotients by free actions](part-03/66-34-quotients-by-free-actions.md)

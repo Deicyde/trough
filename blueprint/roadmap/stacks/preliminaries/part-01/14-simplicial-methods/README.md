@@ -1,0 +1,41 @@
+# 14 Simplicial Methods
+
+Chapter 14 of the Stacks Project, *Simplicial Methods*, [Tag 0162](https://stacks.math.columbia.edu/tag/0162): the 32 sections of its 34 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 162 tags are carried by 158 declarations of the repository (all in StacksFrontier) and 49 registered declarations.
+
+## [14.2 The category of finite… to 14.22 Simplicial objects in…](part-01/README.md)
+
+- [14.2 The category of finite ordered sets](part-01/14-2-the-category-of-finite-ordered-sets.md)
+- [14.3 Simplicial objects](part-01/14-3-simplicial-objects.md)
+- [14.4 Simplicial objects as presheaves](part-01/14-4-simplicial-objects-as-presheaves.md)
+- [14.5 Cosimplicial objects](part-01/14-5-cosimplicial-objects.md)
+- [14.6 Products of simplicial objects](part-01/14-6-products-of-simplicial-objects.md)
+- [14.7 Fibre products of simplicial objects](part-01/14-7-fibre-products-of-simplicial-objects.md)
+- [14.8 Pushouts of simplicial objects](part-01/14-8-pushouts-of-simplicial-objects.md)
+- [14.9 Products of cosimplicial objects](part-01/14-9-products-of-cosimplicial-objects.md)
+- [14.10 Fibre products of cosimplicial objects](part-01/14-10-fibre-products-of-cosimplicial-objects.md)
+- [14.11 Simplicial sets](part-01/14-11-simplicial-sets.md)
+- [14.12 Truncated simplicial objects and skeleton functors](part-01/14-12-truncated-simplicial-objects-and-skeleton.md)
+- [14.13 Products with simplicial sets](part-01/14-13-products-with-simplicial-sets.md)
+- [14.14 Hom from simplicial sets into cosimplicial objects](part-01/14-14-hom-from-simplicial-sets-into-cosimplicial.md)
+- [14.15 Hom from cosimplicial sets into simplicial objects](part-01/14-15-hom-from-cosimplicial-sets-into-simplicial.md)
+- [14.17 Hom from simplicial sets into simplicial objects](part-01/14-17-hom-from-simplicial-sets-into-simplicial-o.md)
+- [14.18 Splitting simplicial objects](part-01/14-18-splitting-simplicial-objects.md)
+- [14.19 Coskeleton functors](part-01/14-19-coskeleton-functors.md)
+- [14.20 Augmentations](part-01/14-20-augmentations.md)
+- [14.21 Left adjoints to the skeleton functors](part-01/14-21-left-adjoints-to-the-skeleton-functors.md)
+- [14.22 Simplicial objects in abelian categories](part-01/14-22-simplicial-objects-in-abelian-categories.md)
+
+## [14.23 Simplicial objects and… to 14.34 Standard resolutions](part-02/README.md)
+
+- [14.23 Simplicial objects and chain complexes](part-02/14-23-simplicial-objects-and-chain-complexes.md)
+- [14.24 Dold-Kan](part-02/14-24-dold-kan.md)
+- [14.25 Dold-Kan for cosimplicial objects](part-02/14-25-dold-kan-for-cosimplicial-objects.md)
+- [14.26 Homotopies](part-02/14-26-homotopies.md)
+- [14.27 Homotopies in abelian categories](part-02/14-27-homotopies-in-abelian-categories.md)
+- [14.28 Homotopies and cosimplicial objects](part-02/14-28-homotopies-and-cosimplicial-objects.md)
+- [14.29 More homotopies in abelian categories](part-02/14-29-more-homotopies-in-abelian-categories.md)
+- [14.30 Trivial Kan fibrations](part-02/14-30-trivial-kan-fibrations.md)
+- [14.31 Kan fibrations](part-02/14-31-kan-fibrations.md)
+- [14.32 A homotopy equivalence](part-02/14-32-a-homotopy-equivalence.md)
+- [14.33 Preparation for standard resolutions](part-02/14-33-preparation-for-standard-resolutions.md)
+- [14.34 Standard resolutions](part-02/14-34-standard-resolutions.md)

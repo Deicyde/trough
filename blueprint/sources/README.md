@@ -41,6 +41,11 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 - `data/cfsg/proof.json`: the top theorem, the reduction and the theorem its proof gives for each case, each milestone module's declarations, with their Lean statements and lines, the case and milestone files each such file imports, directly or not, through no other, the main results, facts and README opening, and the files and theorems of each folder, from [AxiomMath/CFSG at 69cb972f](https://github.com/AxiomMath/CFSG/tree/69cb972f587a3ecc035e092253167ff2e303c962), Apache-2.0. They are read from the source text, without Lean. `data/cfsg/source.json` records the commit, its Lean toolchain, Mathlib and Tau Ceti.
 
+## The Stacks Project in Lean (Axiom)
+
+- `data/stacks/tags/`: each Stacks tag's declarations, with their tiers, attribute comments, docstrings, Lean statements and EGA and SGA references, and the declarations registered for it, from [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7), Apache-2.0. They are read from the source text, without Lean.
+- `data/stacks/structure.json`: the parts, chapters and sections of the [Stacks Project](https://github.com/stacks/stacks-project), their numbers and titles, and the section each tag is in, at the commit the file records. The Stacks Project is under the GNU Free Documentation License; none of its text is copied beyond these titles.
+
 ## Libraries
 
 ### Core library
@@ -74,6 +79,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 - [OpenAI Math](https://github.com/openai/math) at 4eaee8754825: Lean proofs of results from about 721 model-generated research manuscripts (README says ~42% of top-line results are formalized). Includes Hodge for CM abelian varieties, BSD cases, and counterexamples (Hadwiger, Kaplansky).
 - [Classification of Finite Simple Groups (Axiom)](https://github.com/AxiomMath/CFSG) at 69cb972f587a: A sorry-free proof of the Classification of Finite Simple Groups, mostly first-generation, using TauCeti's ClassificationStatement; produced by AxiomProver.
 - [Lean Pool](https://github.com/LeanPool/lean-pool) at 2b205bf90401: A pool of permissively licensed Lean projects outside Mathlib's scope, e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa.
+- [The Stacks Project in Lean (Axiom)](https://github.com/AxiomMath/Stacks) at 5ed82d14634e: A formalization of the Stacks Project, indexed by Stacks tag, in two tiers: StacksCore, human-reviewed, and StacksFrontier, drafted with AxiomProver and not yet reviewed. Declarations also carry the EGA and SGA items they prove.
 
 ### Formal Frontier libraries
 
