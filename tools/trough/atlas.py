@@ -386,6 +386,8 @@ def tally(articles: list[dict]) -> Counter:
 
 def described(counts: Counter) -> str:
     """How many of a topic's or a chapter's results the Lean proves, in words."""
+    if counts["proved"] == counts["results"]:
+        return "proved" if counts["results"] == 1 else "all proved"
     parts = [f"{counts['proved']:,} proved"] if counts["proved"] else []
     if counts["sorry"]:
         parts.append(f"{counts['sorry']:,} with `sorry` in {'its' if counts['sorry'] == 1 else 'their'} value")
@@ -400,16 +402,15 @@ def described(counts: Counter) -> str:
     return parts[0] if parts else "none"
 
 
-def topic(node: dict, trail: list[str], articles: list[dict], data: dict, links: dict[str, str],
-          relinked: Callable[[str, str], str], title: str | None = None) -> Leaf:
+def topic(node: dict, articles: list[dict], data: dict, links: dict[str, str], relinked: Callable[[str, str], str],
+          title: str | None = None) -> Leaf:
     """A topic's article: a line placing it, the topic's prose, and a block per result in the vault's order."""
     source = data["source"]
     site = bool(source.get("site", {}).get("cards"))
     counts = tally(articles)
-    where = " › ".join(trail)
-    opening = (f"A topic of ATLAS's vault, in {where}: {plural(counts['results'], 'result')}, {described(counts)}, "
-               f"quoted from [{source['repo']}]({GITHUB}/{source['repo']}) at commit {at(source)}"
-               + (f", with [its page on the ATLAS site]({page_url(node['path'])})" if site else "") + ".")
+    opening = (f"{plural(counts['results'], 'result')}, {described(counts)}, quoted from "
+               f"[{source['repo']}]({GITHUB}/{source['repo']}) at commit {at(source)}"
+               + (f"; [its page on the ATLAS site]({page_url(node['path'])})" if site else "") + ".")
     parts = [opening]
     if node["prose"]:
         parts.append(relinked(node["prose"], node["path"]))
@@ -462,12 +463,11 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
     def relinked(text: str, directory: str) -> str:
         return relink(text, directory, containers, topics, source)
 
-    def build(node: dict, trail: list[str], top: bool = False) -> Container | Leaf:
-        here = trail + [node["title"]]
+    def build(node: dict, top: bool = False) -> Container | Leaf:
         own = [articles[entry["article"]] for entry in node["entries"] if "article" in entry]
         children = [entry for entry in node["entries"] if "node" in entry]
         if own and not children and not top:
-            leaf = topic(node, here, own, data, links, relinked)
+            leaf = topic(node, own, data, links, relinked)
             targets[key(node["path"])] = leaf
             stats["articles"] += 1
             stats.update(tally(own))
@@ -479,11 +479,11 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
         placed = False
         for entry in node["entries"]:
             if "node" in entry:
-                container.entries.append(Entry(build(entry["node"], here),
+                container.entries.append(Entry(build(entry["node"]),
                                                before=relinked(entry.get("before", ""), node["path"])))
             elif not placed:
                 # The container's own results, together, at the place of the first.
-                leaf = topic(node, here, own, data, links, relinked, title=f"{node['title']}: its own results")
+                leaf = topic(node, own, data, links, relinked, title=f"{node['title']}: its own results")
                 stats["articles"] += 1
                 stats.update(tally(own))
                 container.entries.append(Entry(leaf))
@@ -503,7 +503,7 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
     for area in structure["areas"]:
         subjects = []
         for subject in area["subjects"]:
-            subjects.append(Entry(build(structure["subjects"][subject], [area["title"]], top=True)))
+            subjects.append(Entry(build(structure["subjects"][subject], top=True)))
             stats["subjects"] += 1
         container = Container(escape(area["title"]), slugify(area["title"]), subjects)
         container.prose = "\n\n".join([

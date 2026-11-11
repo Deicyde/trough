@@ -205,8 +205,7 @@ def test_a_topic_has_a_block_per_result_in_the_vaults_order(tmp_path):
                            "statement: formalized\n---\n\n# Unilateral shift\n\n")
     # Not every result is proved, so the proof is not marked formalized.
     assert "proof: formalized" not in page
-    assert ("A topic of ATLAS's vault, in Analysis & Probability › Analysis › Operator theory › Unilateral shift: "
-            "3 results, 1 proved, 1 with `sorry` in its value and 1 stated but not proved") in page
+    assert "# Unilateral shift\n\n3 results, 1 proved, 1 with `sorry` in its value and 1 stated but not proved, quoted" in page
     assert page.index("## The shift is Fredholm") < page.index("## A wanted result") < page.index("## A result with sorry")
     assert "Formalized by `MathlibExt.Shift.isFredholm`, a theorem declared in [MathlibExt/Analysis/Shift.lean, line 7]" in page
     assert "Stated but not proved: `MathlibExt.Shift.wanted` is written with `theorem_wanted` in [WantedExt/Shift.lean, line 5]" in page
@@ -216,7 +215,8 @@ def test_a_topic_has_a_block_per_result_in_the_vaults_order(tmp_path):
     spectral = files[TOPIC.with_name("spectral.md")]
     assert "Formalized by `MathlibExt.absent`, which the repository's Lean, as read here, does not declare." in spectral
     assert "The vault records no Lean declaration for it." in spectral
-    assert "proof: formalized" in files[ROOT / "algebra/group-theory/sylow.md"]
+    sylow = files[ROOT / "algebra/group-theory/sylow.md"]
+    assert "proof: formalized" in sylow and "\n\n1 result, proved, quoted from" in sylow
 
 
 def test_the_vaults_links_point_to_this_chapters_pages(tmp_path):
