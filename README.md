@@ -19,8 +19,9 @@ research projects from their leanblueprints (Imperial's FLT, PFR, Equational
 Theories, Strong PNT and PNT+), the Formal Frontier libraries from their
 headline results, Formal Conjectures from its problem files, Lean Pool from
 its project cards, Anthropic's FLT from the landmark theorems of its proof,
-Axiom's CFSG from its proof's case division and its milestones, and Axiom's
-Stacks Project formalization from its Stacks tags.
+Axiom's CFSG from its proof's case division and its milestones, Axiom's
+Stacks Project formalization from its Stacks tags, and ATLAS from the topics
+of its vault.
 
 ## The Mathlib map
 
@@ -455,6 +456,46 @@ no edges.
    don't close, naming each, when the Stacks Project's checkout gives no parts
    or tags, or when the tags drop under half of those the last record has.
 
+## The ATLAS chapter
+
+[ATLAS](https://github.com/facebookresearch/atlas-lean), Meta's Autoformalized
+Textbook Library At Scale, is a Lean library of textbook mathematics generated
+with AutoformBot. Its vault, on the `wiki/autoform-blueprint` branch of
+[Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean), which
+[the ATLAS site](https://deicyde.github.io/atlas-lean/) publishes, files its
+results by area, subject and topic: each result is an informal statement, and
+the vault's link annotations (`blueprint/links/`) name the Lean declaration
+that formalizes it. The chapter has a part per area, a page per subject and
+per branch, and an article per topic, folded into its listing pages as the
+Stacks chapter's are. An article has a block per result: its statement, its
+declaration linked to its line, and its card on the ATLAS site. A result is
+proved when its declaration's value holds no `sorry`; `theorem_wanted`,
+`def_wanted` and `proof_wanted` state one whose proof is deferred. Links in
+the vault's text point to this chapter's pages. The archived `v1/` is under a
+non-commercial license and is not read.
+
+1. `tools/refresh_atlas.py CHECKOUT` reads a checkout of the fork and writes
+   `data/atlas/`: `source.json`, the commit, its README's description, the
+   LICENSE's own sentence before the Apache License and the counts;
+   `structure.json`, the vault's areas, subjects and containers in order, with
+   their titles and prose; and `articles/<Subject>.json`, each result's title,
+   statement and declaration, with the file, line and kind that declare it.
+   `tools/trough/leansource.py` reads the Lean under `MathlibExt/`,
+   `CSLibExt/`, `PhyslibExt/`, `WantedExt/` and `Atlas/`, with the wanted
+   commands read as declarations; where two files declare a name, the first in
+   that order wins.
+2. The **ATLAS data** workflow (`.github/workflows/atlas-data.yml`) fetches the
+   fork at the commit `source.json` pins, as a blobless sparse checkout, runs
+   the refresh, regenerates the pages and runs the tests; on a pull request it
+   fails when the committed data differ from what the pin gives. The weekly
+   run, or a dispatch with `newest`, moves the pin to the branch's newest
+   commit. The refresh checks that the ATLAS site holds the cards of 30 results
+   and records the answer; the blocks link the cards only when it does. A
+   refresh writes nothing when the license is not Apache-2.0, when the vault's
+   `atlas.json`, a container's README, an entry it links, an article's title or
+   a link annotation does not read, or when the results drop under half the
+   last record's.
+
 ## Working on it
 
     uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
@@ -539,3 +580,6 @@ come from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks), Apache-2.0;
 the titles in `data/stacks/structure.json` come from
 [the Stacks Project](https://github.com/stacks/stacks-project), under the GNU
 Free Documentation License, whose text is otherwise not copied.
+The statements, titles and prose in `data/atlas/` come from ATLAS's vault on
+[Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean), Apache-2.0; its
+LICENSE adds that the code is not meant for training models.

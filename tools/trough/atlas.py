@@ -87,7 +87,7 @@ def read_container(roadmap: Path, path: str) -> tuple[dict, list[str]]:
             continue
         started = True
         target = posixpath.normpath(posixpath.join(path, item["target"]))
-        entry = {"before": "\n".join(before).strip()}
+        entry = {"before": text} if (text := "\n".join(before).strip()) else {}
         before = []
         if target.endswith("/README.md"):
             entry["container"] = target[: -len("/README.md")]
@@ -103,8 +103,10 @@ def read_container(roadmap: Path, path: str) -> tuple[dict, list[str]]:
             problems.append(f"{path}/README.md has an entry that is neither a container nor an article: {item['target']}")
             continue
         entries.append(entry)
-    return {"path": path, "title": title["title"], "prose": "\n".join(prose).strip(), "entries": entries,
-            "tail": "\n".join(before).strip()}, problems
+    node = {"path": path, "title": title["title"], "prose": "\n".join(prose).strip(), "entries": entries}
+    if tail := "\n".join(before).strip():
+        node["tail"] = tail
+    return node, problems
 
 
 def read_article(roadmap: Path, path: str) -> tuple[dict, list[str]]:
@@ -180,7 +182,9 @@ def read_lean(checkout: Path, paths: list[str]) -> tuple[dict[str, dict], Counte
             if not declaration.name or declaration.private:
                 continue
             if declaration.name in declared:
-                counts["names_declared_twice"] += 1
+                # Counted by the roots of the file that wins and of this one.
+                counts[f"names_declared_twice_{declared[declaration.name]['file'].split('/', 1)[0]}_"
+                       f"{path.split('/', 1)[0]}"] += 1
                 continue
             declared[declaration.name] = {"file": path, "line": declaration.line, "kind": declaration.kind,
                                           "sorry": declaration.proof_sorry}
@@ -457,13 +461,15 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
             stats["articles"] += 1
             stats.update(tally(own))
             return leaf
-        container = Container(escape(node["title"]), slugify(posixpath.basename(node["path"]) or node["title"]))
+        # A subject's folder is in CamelCase; its title gives its slug. Below it, the vault's folders are slugs already.
+        container = Container(escape(node["title"]), slugify(node["title"] if top else posixpath.basename(node["path"])))
         targets[key(node["path"])] = container
         stats["containers"] += 1
         placed = False
         for entry in node["entries"]:
             if "node" in entry:
-                container.entries.append(Entry(build(entry["node"], here), before=relinked(entry["before"], node["path"])))
+                container.entries.append(Entry(build(entry["node"], here),
+                                               before=relinked(entry.get("before", ""), node["path"])))
             elif not placed:
                 # The container's own results, together, at the place of the first.
                 leaf = topic(node, here, own, data, links, relinked, title=f"{node['title']}: its own results")
