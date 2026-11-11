@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import anthropic_flt, blueprints, catalog, cfsg, ff, formal_conjectures, lean_pool, links, mathlib, stacks, tauceti, wiki
+from trough import anthropic_flt, atlas, blueprints, catalog, cfsg, ff, formal_conjectures, lean_pool, links, mathlib, stacks, tauceti, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -233,6 +233,24 @@ def generate() -> dict[Path, str]:
             f"{st['sga_indexed']} SGA items indexed",
             file=sys.stderr,
         )
+    atlas_data = atlas.load(DATA)
+    if atlas_data:
+        atlas_built, atlas_links = atlas.chapter(atlas_data)
+        assign_paths(atlas_built.root, ROADMAP / "atlas")
+        blueprints.resolve(atlas_built, VAULT)
+        files.update(render_tree(atlas_built.root, VAULT))
+        chapters["atlas-lean"] = "atlas/README.md"
+        lean_links["atlas"] = atlas_links
+        at = Counter(atlas_built.stats)
+        blueprint_rows.append((atlas.TITLE, "DECOMPOSED",
+                               f"[{at['articles']:,} topics of ATLAS's vault](../roadmap/atlas/README.md), one article "
+                               "each, with a block per result."))
+        print(
+            f"atlas: {at['articles']} topic articles on {at['containers']} pages in {at['subjects']} subjects and "
+            f"{at['parts']} areas; {at['results']} results: {at['proved']} proved, {at['wanted']} wanted, {at['sorry']} "
+            f"with sorry, {at['absent']} not declared, {at['none']} without a declaration",
+            file=sys.stderr,
+        )
     files[ROOT / "hooks" / "lean-links.json"] = json.dumps(lean_links, indent=1, ensure_ascii=False) + "\n"
     root = ROADMAP / "README.md"
     previous = root.read_text(encoding="utf-8") if root.is_file() else None
@@ -260,6 +278,7 @@ def generate() -> dict[Path, str]:
         anthropic_flt=aflt[0] if aflt else None,
         cfsg=cfsg_data["rev"] if cfsg_data else None,
         stacks=stacks_data["source"]["rev"] if stacks_data else None,
+        atlas=atlas_data["source"]["rev"] if atlas_data else None,
     )
     print(
         f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['stated']} stated only, "

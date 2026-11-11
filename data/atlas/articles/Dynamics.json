@@ -1,0 +1,2838 @@
+{
+ "schema": "trough-atlas/v1",
+ "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "articles": [
+  {
+   "path": "Dynamics/complex-dynamics/fatou-julia-dichotomy/filled-julia.md",
+   "title": "Filled Julia set",
+   "statement": "For $c \\in \\mathbb{C}$, let $T_c(z) = z^2 + c$ and let $T_c^n$ be its\n$n$-fold iterate. The filled Julia set $K_c$ is the set of $z \\in \\mathbb{C}$ whose orbit under\n$T_c$ is bounded: there is a real $M$ such that $|T_c^n(z)| \\le M$ for every $n \\ge 0$.",
+   "declaration": "MathlibExt.Analysis.FatouJuliaWanted.ComplexAnalysis.FatouJuliaProblem.FilledJulia",
+   "lean": {
+    "file": "WantedExt/Analysis/FatouJuliaWanted.lean",
+    "line": 72,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/fatou-julia-dichotomy/julia-cantor-dichotomy.md",
+   "title": "Fatou–Julia dichotomy for quadratic polynomials",
+   "statement": "For $c \\in \\mathbb{C}$, let $K_c$ be the\nfilled Julia set of $T_c(z) = z^2 + c$ and let $M$ be the Mandelbrot set. If $c \\in M$, then $K_c$\nis nonempty and connected. If $c \\notin M$, then $K_c$ is homeomorphic to the Cantor space\n$\\{0, 1\\}^{\\mathbb{N}}$ of binary sequences with the product topology.\n\n## Sources\n\n- P. Fatou, *Sur les équations fonctionnelles*, Bull. Soc. Math. France 47 (1919), 161-271; 48 (1920), 33-94, 208-314. G. Julia, *Mémoire sur l'itération des fonctions rationnelles*, J. Math. Pures Appl. 1 (1918), 47-245. Modern statement: A. Douady and J. H. Hubbard, *Étude dynamique des polynômes complexes I, II*, Publ. Math. Orsay 84-02, 85-04. Listed as §62 (additional statement 1) in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `fatou_julia_dichotomy` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Analysis.FatouJuliaWanted.ComplexAnalysis.FatouJuliaProblem.julia_cantor_dichotomy",
+   "lean": {
+    "file": "WantedExt/Analysis/FatouJuliaWanted.lean",
+    "line": 79,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/fatou-julia-dichotomy/mandelbrot.md",
+   "title": "Mandelbrot set of the quadratic family",
+   "statement": "Let $T_c(z) = z^2 + c$ for $c \\in \\mathbb{C}$\nand let $T_c^n$ be its $n$-fold iterate. The Mandelbrot set $M$ is the set of $c \\in \\mathbb{C}$\nfor which the orbit of $0$ under $T_c$ is bounded: there is a real $R$ such that\n$|T_c^n(0)| \\le R$ for every $n \\ge 0$.",
+   "declaration": "MathlibExt.Analysis.FatouJuliaWanted.ComplexAnalysis.FatouJuliaProblem.Mandelbrot",
+   "lean": {
+    "file": "WantedExt/Analysis/FatouJuliaWanted.lean",
+    "line": 68,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/fatou-julia-dichotomy/tc.md",
+   "title": "Quadratic map $T_c$",
+   "statement": "For $c \\in \\mathbb{C}$, $T_c \\colon \\mathbb{C} \\to \\mathbb{C}$ is the\nmap $T_c(z) = z^2 + c$.",
+   "declaration": "MathlibExt.Analysis.FatouJuliaWanted.ComplexAnalysis.FatouJuliaProblem.Tc",
+   "lean": {
+    "file": "WantedExt/Analysis/FatouJuliaWanted.lean",
+    "line": 65,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/mandelbrot-set/mandelbrot-2.md",
+   "title": "Mandelbrot set",
+   "statement": "The Mandelbrot set is the set $M$ of complex numbers $c$ for which the orbit\nof $0$ under the quadratic map $T_c(z) = z^2 + c$ is bounded: there is a real number $R$ with\n$|T_c^n(0)| \\le R$ for every $n \\in \\mathbb{N}$, where $T_c^n$ is the $n$-th iterate of $T_c$ and\n$T_c^0$ is the identity.",
+   "declaration": "MathlibExt.Dynamics.MandelbrotBoundaryWanted.Dynamics.MandelbrotBoundary.Mandelbrot",
+   "lean": {
+    "file": "WantedExt/Dynamics/MandelbrotBoundaryWanted.lean",
+    "line": 62,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/mandelbrot-set/mandelbrot-boundary-dimh.md",
+   "title": "Hausdorff dimension of the Mandelbrot boundary (Shishikura)",
+   "statement": "The boundary of the\nMandelbrot set $M \\subseteq \\mathbb{C}$ has Hausdorff dimension $2$.\n\n## Sources\n\n- M. Shishikura, The Hausdorff dimension of the boundary of the Mandelbrot set and Julia sets, Ann. of Math. 147 (1998). Listed as §260 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Knill, §260. Problem `mandelbrot_boundary_dimh` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.MandelbrotBoundaryWanted.Dynamics.MandelbrotBoundary.mandelbrot_boundary_dimh",
+   "lean": {
+    "file": "WantedExt/Dynamics/MandelbrotBoundaryWanted.lean",
+    "line": 68,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/mandelbrot-set/mandelbrot-connected.md",
+   "title": "The Mandelbrot set is connected (Douady–Hubbard)",
+   "statement": "The Mandelbrot set, the set of all\n$c \\in \\mathbb{C}$ for which the sequence $(T_c^n(0))_{n \\ge 0}$ of iterates of $0$ under\n$T_c(z) = z^2 + c$ is bounded, is a nonempty connected subset of $\\mathbb{C}$.\n\n## Sources\n\n- A. Douady and J. H. Hubbard, *Étude dynamique des polynômes complexes I, II*, Publ. Math. Orsay 84-02, 85-04. Listed as §62 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `mandelbrot_connected` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Analysis.MandelbrotWanted.ComplexAnalysis.MandelbrotProblem.mandelbrot_connected",
+   "lean": {
+    "file": "WantedExt/Analysis/MandelbrotWanted.lean",
+    "line": 66,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/mandelbrot-set/mandelbrot.md",
+   "title": "The Mandelbrot set",
+   "statement": "The Mandelbrot set is the set of all $c \\in \\mathbb{C}$ for which the\norbit of $0$ under $T_c(z) = z^2 + c$ is bounded: there is a real number $M$ with\n$|T_c^n(0)| \\le M$ for every $n \\in \\mathbb{N}$, where $T_c^n$ is the $n$-th iterate of $T_c$\nand $T_c^0$ is the identity.",
+   "declaration": "MathlibExt.Analysis.MandelbrotWanted.ComplexAnalysis.MandelbrotProblem.Mandelbrot",
+   "lean": {
+    "file": "WantedExt/Analysis/MandelbrotWanted.lean",
+    "line": 61,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/mandelbrot-set/tc-2.md",
+   "title": "Quadratic family",
+   "statement": "For each complex number $c$, the map $T_c : \\mathbb{C} \\to \\mathbb{C}$ is\ngiven by $T_c(z) = z^2 + c$.",
+   "declaration": "MathlibExt.Dynamics.MandelbrotBoundaryWanted.Dynamics.MandelbrotBoundary.Tc",
+   "lean": {
+    "file": "WantedExt/Dynamics/MandelbrotBoundaryWanted.lean",
+    "line": 58,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/mandelbrot-set/tc.md",
+   "title": "The quadratic family",
+   "statement": "For $c \\in \\mathbb{C}$, $T_c \\colon \\mathbb{C} \\to \\mathbb{C}$ is the\nmap $T_c(z) = z^2 + c$.",
+   "declaration": "MathlibExt.Analysis.MandelbrotWanted.ComplexAnalysis.MandelbrotProblem.Tc",
+   "lean": {
+    "file": "WantedExt/Analysis/MandelbrotWanted.lean",
+    "line": 58,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/basin-of-zero.md",
+   "title": "Basin of attraction of zero",
+   "statement": "For $\\lambda \\in \\mathbb{C}$, the basin of zero of\n$f_\\lambda(z) = \\lambda z^2 + z^3$ is the set of $z \\in \\mathbb{C}$ whose forward orbit tends to\n$0$, that is, $f_\\lambda^{n}(z) \\to 0$ as $n \\to \\infty$, where $f_\\lambda^{n}$ denotes the\n$n$-th iterate of $f_\\lambda$.\n\n## Sources\n\n- [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.",
+   "declaration": "MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.basinOfZero",
+   "lean": {
+    "file": "WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean",
+    "line": 46,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/conjecture-holds.md",
+   "title": "Roesch's theorem on the boundaries of cubic parameter components",
+   "statement": "For the cubic family\n$f_\\lambda(z) = \\lambda z^2 + z^3$ with $\\lambda \\in \\mathbb{C}$, the boundary of every parameter\ncomponent is a Jordan curve. Here a parameter component is a connected component of the set of\n$\\lambda$ for which every critical point of $f_\\lambda$ lies in the immediate basin of zero of\n$f_\\lambda$.\n\nRoesch (Theorem 2) proves that the boundary of every component of\n$H = \\{a : -a \\text{ lies in the basin of } 0\\}$ for the family $z^{d-1}(z + da/(d-1))$ is a\nJordan curve; at $d = 3$ the linear change $\\lambda = 3a/2$ carries the central component $H_0$\nonto the parameter component.\n\n## Sources\n\n- Pascale Roesch, Hyperbolic components of polynomials with a fixed critical point of maximal order, Ann. Sci. Ecole Norm. Sup. (4) 40 (2007), arXiv:math/0612172, https://arxiv.org/abs/math/0612172.",
+   "declaration": "MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.conjecture_holds",
+   "lean": {
+    "file": "WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean",
+    "line": 85,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/conjecture.md",
+   "title": "McMullen's question on Jordan boundaries of cubic parameter components",
+   "statement": "Let\n$f_\\lambda(z) = \\lambda z^2 + z^3$ for $\\lambda \\in \\mathbb{C}$. The statement is that for every\nparameter component $U$, that is, every connected component of the set of $\\lambda$ for which\nevery critical point of $f_\\lambda$ lies in the immediate basin of zero of $f_\\lambda$, the\nboundary $\\partial U$ of $U$ in $\\mathbb{C}$ is a Jordan curve.\n\nThe source poses this as an open question.\n\n## Sources\n\n- [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.",
+   "declaration": "MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.conjecture",
+   "lean": {
+    "file": "WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean",
+    "line": 73,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/cubic-family.md",
+   "title": "Cubic family",
+   "statement": "For a parameter $\\lambda \\in \\mathbb{C}$, the cubic polynomial map\n$f_\\lambda : \\mathbb{C} \\to \\mathbb{C}$ is given by $f_\\lambda(z) = \\lambda z^2 + z^3$.\n\n## Sources\n\n- [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.",
+   "declaration": "MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.cubicFamily",
+   "lean": {
+    "file": "WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean",
+    "line": 38,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/is-critical-point.md",
+   "title": "Critical points of the cubic family",
+   "statement": "For $\\lambda \\in \\mathbb{C}$, a point\n$c \\in \\mathbb{C}$ is a critical point of $f_\\lambda(z) = \\lambda z^2 + z^3$ when $f_\\lambda$ has\ncomplex derivative $0$ at $c$, that is, $f_\\lambda'(c) = 0$.\n\n## Sources\n\n- [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.",
+   "declaration": "MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.IsCriticalPoint",
+   "lean": {
+    "file": "WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean",
+    "line": 42,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/is-immediate-basin.md",
+   "title": "Immediate basin of zero",
+   "statement": "For $\\lambda \\in \\mathbb{C}$, a set $V \\subseteq \\mathbb{C}$ is\nthe immediate basin of zero of $f_\\lambda(z) = \\lambda z^2 + z^3$ when $0 \\in V$, $V$ is contained\nin the basin of zero of $f_\\lambda$ (the set of $z$ with $f_\\lambda^{n}(z) \\to 0$), $V$ is\nconnected, and every connected set $W \\subseteq \\mathbb{C}$ with $0 \\in W$ that is contained in the\nbasin of zero of $f_\\lambda$ satisfies $W \\subseteq V$. Thus $V$ is the connected component of $0$\nin the basin of zero.\n\n## Sources\n\n- [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.",
+   "declaration": "MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.IsImmediateBasin",
+   "lean": {
+    "file": "WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean",
+    "line": 51,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/is-jordan-curve.md",
+   "title": "Jordan curves in the plane",
+   "statement": "A set $S \\subseteq \\mathbb{C}$ is a Jordan curve when there is\na continuous injective map $f$ from the unit circle $\\{z \\in \\mathbb{C} : |z| = 1\\}$ to\n$\\mathbb{C}$ whose image is exactly $S$.\n\n## Sources\n\n- [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.",
+   "declaration": "MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.IsJordanCurve",
+   "lean": {
+    "file": "WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean",
+    "line": 68,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/is-parameter-component.md",
+   "title": "Parameter components",
+   "statement": "A set $U \\subseteq \\mathbb{C}$ is a parameter component when it is\na connected component of the parameter set, the set of $\\lambda \\in \\mathbb{C}$ for which every\ncritical point of $f_\\lambda(z) = \\lambda z^2 + z^3$ lies in the immediate basin of zero of\n$f_\\lambda$: $U$ is nonempty, contained in the parameter set and connected, and every connected\nset $W \\subseteq \\mathbb{C}$ with $U \\subseteq W$ that is contained in the parameter set equals\n$U$.\n\n## Sources\n\n- [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.",
+   "declaration": "MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.IsParameterComponent",
+   "lean": {
+    "file": "WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean",
+    "line": 62,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/parameter-space-of-cubic-polynomials/parameter-set.md",
+   "title": "Parameters with both critical points in the immediate basin",
+   "statement": "The parameter set is the set\nof $\\lambda \\in \\mathbb{C}$ for which some immediate basin of zero $V$ of\n$f_\\lambda(z) = \\lambda z^2 + z^3$ contains every critical point of $f_\\lambda$.\n\nSince $f_\\lambda'(z) = z(3z + 2\\lambda)$, the critical points of $f_\\lambda$ are $0$ and\n$-2\\lambda/3$ (equal when $\\lambda = 0$), so this asks that both finite critical points lie in\nthe immediate basin of zero.\n\n## Sources\n\n- [AMR-052-0019], Stony Brook open problems (1992), McMullen III.2.",
+   "declaration": "MathlibExt.Dynamics.CubicParameterJordanBoundaryWanted.parameterSet",
+   "lean": {
+    "file": "WantedExt/Dynamics/CubicParameterJordanBoundaryWanted.lean",
+    "line": 57,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/siegel-linearization-theorem/is-diophantine.md",
+   "title": "Diophantine real numbers",
+   "statement": "A real number $\\alpha$ is Diophantine if there are real numbers\n$C > 0$ and $\\tau$ such that $C / |q|^{\\tau} \\le |\\alpha - p/q|$ for all integers $p$ and $q$\nwith $q \\neq 0$.\n\nAny such exponent $\\tau$ is at least $2$, by Dirichlet's approximation theorem. A Diophantine\n$\\alpha$ is irrational, so $e^{2\\pi i \\alpha}$ is not a root of unity.",
+   "declaration": "MathlibExt.Analysis.PoincareSiegelWanted.ComplexAnalysis.IsDiophantine",
+   "lean": {
+    "file": "WantedExt/Analysis/PoincareSiegelWanted.lean",
+    "line": 59,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/siegel-linearization-theorem/poincare-siegel.md",
+   "title": "Poincaré–Siegel linearisation theorem",
+   "statement": "Let $\\alpha$ be a Diophantine real number and let\n$\\lambda = e^{2\\pi i \\alpha}$. If $f : \\mathbb{C} \\to \\mathbb{C}$ is analytic at $0$ with\n$f(0) = 0$ and $f'(0) = \\lambda$, then there is a function $u : \\mathbb{C} \\to \\mathbb{C}$,\nanalytic at $0$ with $u(0) = 0$ and $u'(0) = 1$, such that $f(u(z)) = u(\\lambda z)$ for all $z$\nin some neighbourhood of $0$.\n\n## Sources\n\n- C. L. Siegel, *Iteration of analytic functions*, Annals of Math. 43 (1942), 607-612. Earlier formal-power-series version: H. Poincaré thèse (1879). Listed as §83 (additional statement 1) in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `poincare_siegel_linearisation` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Analysis.PoincareSiegelWanted.ComplexAnalysis.poincare_siegel",
+   "lean": {
+    "file": "WantedExt/Analysis/PoincareSiegelWanted.lean",
+    "line": 68,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/tricorn/mandelbar-not-path-connected.md",
+   "title": "The Mandelbar set is not path-connected",
+   "statement": "The Mandelbar set (tricorn), the set of\n$c \\in \\mathbb{C}$ for which the orbit of $0$ under $z \\mapsto \\bar z^2 + c$ is bounded, is not\npath-connected.\n\nThis is the degree-2 case of the Hubbard–Schleicher theorem that multicorns are not\npath-connected.\n\n## Sources\n\n- John H. Hubbard and Dierk Schleicher, *Multicorns are not Path Connected*, arXiv:1209.1753 (2012); published in *Frontiers in Complex Dynamics* (Princeton University Press, 2014), pp. 73-102. Listed as §62 (additional statement 2) in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `mandelbar_not_path_connected` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Analysis.MandelbarWanted.ComplexAnalysis.mandelbar_not_path_connected",
+   "lean": {
+    "file": "WantedExt/Analysis/MandelbarWanted.lean",
+    "line": 72,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/tricorn/mandelbar.md",
+   "title": "The Mandelbar set (tricorn)",
+   "statement": "The Mandelbar set is the set of $c \\in \\mathbb{C}$ for which\nthe orbit of $0$ under the map $T_c(z) = \\bar z^2 + c$ is bounded: there is a real number $M$\nwith $|T_c^n(0)| \\le M$ for all $n \\ge 0$, where $T_c^n$ is the $n$-th iterate of $T_c$ and\n$T_c^0$ is the identity.\n\nThis set is the connectedness locus of the family $z \\mapsto \\bar z^2 + c$.",
+   "declaration": "MathlibExt.Analysis.MandelbarWanted.ComplexAnalysis.Mandelbar",
+   "lean": {
+    "file": "WantedExt/Analysis/MandelbarWanted.lean",
+    "line": 67,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/complex-dynamics/tricorn/tantibar.md",
+   "title": "The antiholomorphic quadratic map",
+   "statement": "For $c \\in \\mathbb{C}$, the map\n$T_c : \\mathbb{C} \\to \\mathbb{C}$ is $T_c(z) = \\bar z^2 + c$, where $\\bar z$ is the complex\nconjugate of $z$.",
+   "declaration": "MathlibExt.Analysis.MandelbarWanted.ComplexAnalysis.Tantibar",
+   "lean": {
+    "file": "WantedExt/Analysis/MandelbarWanted.lean",
+    "line": 64,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/a.md",
+   "title": "Bilinear polynomial ergodic averages",
+   "statement": "Let $X$ be a measurable space and let\n$T : X \\to X$ be a measurable bijection with measurable inverse. For a real number $N \\ge 0$,\npolynomials $P_1, P_2 \\in \\mathbb{Z}[t]$, functions $f, g : X \\to \\mathbb{C}$ and a point\n$x \\in X$, the bilinear average is the complex number\n\n$$A_N^{P_1, P_2}(f, g)(x) = \\frac{1}{\\lfloor N \\rfloor}\n\\sum_{n=1}^{\\lfloor N \\rfloor} f(T^{P_1(n)} x)\\, g(T^{P_2(n)} x),$$\n\nwhere $T^k$ for $k \\in \\mathbb{Z}$ is the $k$-th power of $T$ in the group of bijections of $X$\n(so negative powers are iterates of $T^{-1}$), and $A_N^{P_1, P_2}(f, g)(x) = 0$ when\n$\\lfloor N \\rfloor = 0$.",
+   "declaration": "MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.A",
+   "lean": {
+    "file": "WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean",
+    "line": 83,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/lacunary.md",
+   "title": "Lacunary sequence",
+   "statement": "For a real number $\\Lambda \\ge 0$, a sequence\n$(a_n)_{n \\in \\mathbb{N}}$ of nonnegative real numbers is $\\Lambda$-lacunary if\n$a_{n+1} / a_n > \\Lambda$ for every $n \\in \\mathbb{N}$, where division by $0$ gives $0$; in\nparticular every term of a $\\Lambda$-lacunary sequence is positive.",
+   "declaration": "MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.Lacunary",
+   "lean": {
+    "file": "WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean",
+    "line": 62,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/theorem-1-17-i.md",
+   "title": "Mean ergodic theorem for bilinear polynomial averages",
+   "statement": "Let $(X, \\mu)$ be a $\\sigma$-finite\nmeasure space and let $T : X \\to X$ be a measurable bijection with measurable inverse that\npreserves $\\mu$. Let $P \\in \\mathbb{Z}[t]$ have degree at least $2$, and let\n$p_1, p_2 \\in (1, \\infty)$ and $p \\in [0, \\infty]$ satisfy $p_1^{-1} + p_2^{-1} = p^{-1}$ and\n$p^{-1} \\le 1$. For a real number $N \\ge 0$, functions $f, g : X \\to \\mathbb{C}$ and $x \\in X$ let\n\n$$A_N(f, g)(x) = \\frac{1}{\\lfloor N \\rfloor}\n\\sum_{n=1}^{\\lfloor N \\rfloor} f(T^n x)\\, g(T^{P(n)} x),$$\n\nwith $A_N(f, g)(x) = 0$ when $\\lfloor N \\rfloor = 0$, where $T^k$ for $k \\in \\mathbb{Z}$ is the\n$k$-th power of $T$ in the group of bijections of $X$. Then for all\n$f \\in L^{p_1}(\\mu)$ and $g \\in L^{p_2}(\\mu)$ with values in $\\mathbb{C}$ there is a function\n$h : X \\to \\mathbb{C}$ in $L^p(\\mu)$ such that $\\|A_N(f, g) - h\\|_{L^p(\\mu)} \\to 0$ as the real\nnumber $N$ tends to $\\infty$.\n\nThis is Theorem 1.17(i) of Krause, Mirek and Tao.\n\n## Sources\n\n- B. Krause, M. Mirek, and T. Tao, `Pointwise ergodic theorems for non-conventional bilinear polynomial averages`, Annals of Math, 195 (3) 2022. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_pointwise_ergodic_theorems` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.theorem_1_17_i",
+   "lean": {
+    "file": "WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean",
+    "line": 104,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/theorem-1-17-ii.md",
+   "title": "Pointwise ergodic theorem for bilinear polynomial averages",
+   "statement": "Let $(X, \\mu)$ be a $\\sigma$-finite\nmeasure space and let $T : X \\to X$ be a measurable bijection with measurable inverse that\npreserves $\\mu$. Let $P \\in \\mathbb{Z}[t]$ have degree at least $2$, and let\n$p_1, p_2 \\in (1, \\infty)$ and $p \\in [0, \\infty]$ satisfy $p_1^{-1} + p_2^{-1} = p^{-1}$ and\n$p^{-1} \\le 1$. For a real number $N \\ge 0$, functions $f, g : X \\to \\mathbb{C}$ and $x \\in X$ let\n\n$$A_N(f, g)(x) = \\frac{1}{\\lfloor N \\rfloor}\n\\sum_{n=1}^{\\lfloor N \\rfloor} f(T^n x)\\, g(T^{P(n)} x),$$\n\nwith $A_N(f, g)(x) = 0$ when $\\lfloor N \\rfloor = 0$, where $T^k$ for $k \\in \\mathbb{Z}$ is the\n$k$-th power of $T$ in the group of bijections of $X$. Then for\nall $f \\in L^{p_1}(\\mu)$ and $g \\in L^{p_2}(\\mu)$ with values in $\\mathbb{C}$ there is a function\n$h : X \\to \\mathbb{C}$ in $L^p(\\mu)$ such that for $\\mu$-almost every $x \\in X$,\n$A_N(f, g)(x) \\to h(x)$ as the real number $N$ tends to $\\infty$.\n\nThis is Theorem 1.17(ii) of Krause, Mirek and Tao.\n\n## Sources\n\n- B. Krause, M. Mirek, and T. Tao, `Pointwise ergodic theorems for non-conventional bilinear polynomial averages`, Annals of Math, 195 (3) 2022. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_pointwise_ergodic_theorems` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.theorem_1_17_ii",
+   "lean": {
+    "file": "WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean",
+    "line": 114,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/theorem-1-17-iii.md",
+   "title": "Maximal inequality for bilinear polynomial averages",
+   "statement": "Let $(X, \\mu)$ be a $\\sigma$-finite\nmeasure space and let $T : X \\to X$ be a measurable bijection with measurable inverse that\npreserves $\\mu$. Let $P \\in \\mathbb{Z}[t]$ have degree at least $2$, and let\n$p_1, p_2 \\in (1, \\infty)$ and $p \\in [0, \\infty]$ satisfy $p_1^{-1} + p_2^{-1} = p^{-1}$ and\n$p^{-1} \\le 1$. For a real number $N \\ge 0$, functions $f, g : X \\to \\mathbb{C}$ and $x \\in X$ let\n\n$$A_N(f, g)(x) = \\frac{1}{\\lfloor N \\rfloor}\n\\sum_{n=1}^{\\lfloor N \\rfloor} f(T^n x)\\, g(T^{P(n)} x),$$\n\nwith $A_N(f, g)(x) = 0$ when $\\lfloor N \\rfloor = 0$, where $T^k$ for $k \\in \\mathbb{Z}$ is the\n$k$-th power of $T$ in the group of bijections of $X$. Then there is\na constant $C \\ge 0$, which may depend on $(X, \\mu, T)$, $P$, $p_1$, $p_2$ and $p$, such that\nfor all $f \\in L^{p_1}(\\mu)$ and $g \\in L^{p_2}(\\mu)$ with values in $\\mathbb{C}$,\n\n$$\\Big\\| \\sup_{N \\in \\mathbb{Z}_{>0}} |A_N(f, g)| \\Big\\|_{L^p(\\mu)} \\le\nC \\, \\|f\\|_{L^{p_1}(\\mu)} \\, \\|g\\|_{L^{p_2}(\\mu)},$$\n\nwhere the supremum is taken pointwise in $[0, \\infty]$.\n\nThis is Theorem 1.17(iii) of Krause, Mirek and Tao.\n\n## Sources\n\n- B. Krause, M. Mirek, and T. Tao, `Pointwise ergodic theorems for non-conventional bilinear polynomial averages`, Annals of Math, 195 (3) 2022. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_pointwise_ergodic_theorems` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.theorem_1_17_iii",
+   "lean": {
+    "file": "WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean",
+    "line": 125,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/theorem-1-17-iv.md",
+   "title": "Long variational inequality for bilinear polynomial averages",
+   "statement": "Let $(X, \\mu)$ be a\n$\\sigma$-finite measure space and let $T : X \\to X$ be a measurable bijection with measurable\ninverse that preserves $\\mu$. Let $P \\in \\mathbb{Z}[t]$ have degree at least $2$, and let\n$p_1, p_2 \\in (1, \\infty)$ and $p \\in [0, \\infty]$ satisfy $p_1^{-1} + p_2^{-1} = p^{-1}$ and\n$p^{-1} \\le 1$. For a real number $N \\ge 0$, functions $f, g : X \\to \\mathbb{C}$ and $x \\in X$ let\n\n$$A_N(f, g)(x) = \\frac{1}{\\lfloor N \\rfloor}\n\\sum_{n=1}^{\\lfloor N \\rfloor} f(T^n x)\\, g(T^{P(n)} x),$$\n\nwith $A_N(f, g)(x) = 0$ when $\\lfloor N \\rfloor = 0$, where $T^k$ for $k \\in \\mathbb{Z}$ is the\n$k$-th power of $T$ in the group of bijections of $X$. Then\nfor all real numbers $r > 2$ and $\\Lambda > 1$ there is a constant $C \\ge 0$, which may depend\non $r$, $\\Lambda$ and all of the data above, such that for all $f \\in L^{p_1}(\\mu)$ and\n$g \\in L^{p_2}(\\mu)$ with values in $\\mathbb{C}$ and every $\\Lambda$-lacunary sequence\n$(a_n)_{n \\in \\mathbb{N}}$ of nonnegative reals (that is, $a_{n+1} / a_n > \\Lambda$ for all $n$)\nwith $a_n \\ge 1$ for all $n$,\n\n$$\\Big\\| x \\mapsto \\big\\| (A_{a_n}(f, g)(x))_{n \\in \\mathbb{N}} \\big\\|_{\\mathbb{V}^r}\n\\Big\\|_{L^p(\\mu)} \\le C \\, \\|f\\|_{L^{p_1}(\\mu)} \\, \\|g\\|_{L^{p_2}(\\mu)},$$\n\nwhere $\\| \\cdot \\|_{\\mathbb{V}^r}$ is the $r$-variational norm of a sequence of complex numbers.\n\nThis is Theorem 1.17(iv) of Krause, Mirek and Tao.\n\n## Sources\n\n- B. Krause, M. Mirek, and T. Tao, `Pointwise ergodic theorems for non-conventional bilinear polynomial averages`, Annals of Math, 195 (3) 2022. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_pointwise_ergodic_theorems` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.theorem_1_17_iv",
+   "lean": {
+    "file": "WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean",
+    "line": 137,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/bilinear-polynomial-ergodic-averages/variational-norm.md",
+   "title": "Variational norm",
+   "statement": "For a real number $r \\ge 0$ and a sequence\n$a = (a_n)_{n \\in \\mathbb{N}}$ of complex numbers, the $r$-variational norm of $a$ is the\nelement of $[0, \\infty]$\n\n$$\\|a\\|_{\\mathbb{V}^r} = \\sup_{n \\in \\mathbb{N}} |a_n| +\n\\sup_{J \\in \\mathbb{N}} \\sup_{N_0 \\le N_1 \\le \\dots \\le N_J}\n\\Big( \\sum_{j=0}^{J-1} |a_{N_{j+1}} - a_{N_j}|^r \\Big)^{1/r},$$\n\nwhere the inner supremum runs over nondecreasing finite sequences of natural numbers\n$N_0 \\le N_1 \\le \\dots \\le N_J$ and the empty sum ($J = 0$) is $0$. For $r = 0$ the whole term\n$\\big( \\sum_{j=0}^{J-1} |a_{N_{j+1}} - a_{N_j}|^r \\big)^{1/r}$ is replaced by the number of\nindices $j < J$ with $a_{N_{j+1}} \\ne a_{N_j}$.",
+   "declaration": "MathlibExt.Dynamics.PointwiseErgodicTheoremsWanted.PointwiseErgodicTheorems.variationalNorm",
+   "lean": {
+    "file": "WantedExt/Dynamics/PointwiseErgodicTheoremsWanted.lean",
+    "line": 68,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/birkhoff-average-le-birkhoff-average.md",
+   "title": "Monotonicity of Birkhoff averages",
+   "statement": "Let $T : \\alpha \\to \\alpha$ be a map. For\n$u : \\alpha \\to \\mathbb{R}$, $n \\ge 1$ and $x \\in \\alpha$, write\n$A_n u(x) = \\frac{1}{n} \\sum_{k=0}^{n-1} u(T^k x)$ for the $n$-th Birkhoff average of $u$ at\n$x$, and $A_0 u(x) = 0$. If $u, v : \\alpha \\to \\mathbb{R}$ satisfy $u(y) \\le v(y)$ for every\n$y \\in \\alpha$, then $A_n u(x) \\le A_n v(x)$ for every $n \\in \\mathbb{N}$ and every\n$x \\in \\alpha$.",
+   "declaration": "MathlibExt.Probability.BirkhoffErgodicL1.birkhoffAverage_le_birkhoffAverage",
+   "lean": {
+    "file": "MathlibExt/Probability/BirkhoffErgodicL1.lean",
+    "line": 130,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/birkhoff-ergodic-theorem-l1.md",
+   "title": "Birkhoff's ergodic theorem in $L^1$ (ergodic case)",
+   "statement": "Let $\\mu$ be a probability measure\non a measurable space $\\alpha$, let $T : \\alpha \\to \\alpha$ be ergodic with respect to $\\mu$ (in\nparticular $T$ preserves $\\mu$), and let $g : \\alpha \\to \\mathbb{R}$ be $\\mu$-integrable. For\n$n \\ge 1$ let $A_n g(x) = \\frac{1}{n} \\sum_{k=0}^{n-1} g(T^k x)$ be the Birkhoff averages of\n$g$. Then $\\int \\left| A_n g(x) - \\int g \\, d\\mu \\right| d\\mu(x) \\to 0$ as $n \\to \\infty$; that\nis, the Birkhoff averages of $g$ converge to the constant $\\int g \\, d\\mu$ in $L^1(\\mu)$.",
+   "declaration": "MathlibExt.Probability.BirkhoffErgodicL1.birkhoff_ergodic_theorem_L1",
+   "lean": {
+    "file": "MathlibExt/Probability/BirkhoffErgodicL1.lean",
+    "line": 231,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/birkhoff-limit-ae-eq-cond-exp.md",
+   "title": "Birkhoff limit is a conditional expectation on invariant sets",
+   "statement": "The Birkhoff limit is the conditional expectation of `f` given the invariant σ-algebra.",
+   "declaration": "StatMech.BirkhoffAE.birkhoffLimit_ae_eq_condExp",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/BirkhoffPointwise.lean",
+    "line": 781,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/birkhoff-limit-ae-eq-integral-of-ergodic.md",
+   "title": "Birkhoff limit of an ergodic map is the space average",
+   "statement": "For ergodic `T` on a probability space the Birkhoff limit is the constant `∫ f dμ`; this is\n`MathlibExt.Dynamics.Ergodic.BirkhoffWanted.birkhoff_pointwise_ergodic` combined with\n`tendsto_birkhoffAverage_ae`.",
+   "declaration": "StatMech.BirkhoffAE.birkhoffLimit_ae_eq_integral_of_ergodic",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/BirkhoffPointwise.lean",
+    "line": 834,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/birkhoff-limit.md",
+   "title": "Birkhoff limit of a function",
+   "statement": "The limit of the Birkhoff averages of `f` (defined as `f*` cast to `ℝ`; it is the limit\nalmost everywhere by `tendsto_birkhoffAverage_ae`).",
+   "declaration": "StatMech.BirkhoffAE.birkhoffLimit",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/BirkhoffPointwise.lean",
+    "line": 553,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/birkhoff-pointwise-ergodic.md",
+   "title": "Birkhoff pointwise ergodic theorem (ergodic case)",
+   "statement": "Let $\\mu$ be a probability measure on a\nmeasurable space $\\alpha$, let $T : \\alpha \\to \\alpha$ be ergodic with respect to $\\mu$ (in\nparticular $T$ preserves $\\mu$), and let $g : \\alpha \\to \\mathbb{R}$ be $\\mu$-integrable. Then for\n$\\mu$-almost every $x \\in \\alpha$, the Birkhoff averages $\\frac{1}{n} \\sum_{k=0}^{n-1} g(T^k x)$\nconverge to $\\int g \\, d\\mu$ as $n \\to \\infty$.\n\n## Sources\n\n- G. D. Birkhoff, Proc. Natl. Acad. Sci. USA 17 (1931); Walters, Intro to Ergodic Theory; Lean states ergodic case for ℝ-valued integrable functions while general theorem gives conditional expectation onto invariant σ-algebra.",
+   "declaration": "MathlibExt.Dynamics.Ergodic.BirkhoffWanted.birkhoff_pointwise_ergodic",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/Birkhoff.lean",
+    "line": 509,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/dick-inv.md",
+   "title": "Invariance of the maximal divergence set",
+   "statement": "Let $\\alpha$ be a measurable space. For every map\n$T : \\alpha \\to \\alpha$, every function $g : \\alpha \\to \\mathbb{R}$ and every real number $c$, the\npreimage under $T$ of the maximal divergence set of $T$, $g$ and $c$ equals that set.",
+   "declaration": "MathlibExt.Dynamics.Ergodic.BirkhoffWanted.dick_inv",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/Birkhoff.lean",
+    "line": 286,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/dick-iter.md",
+   "title": "Invariance of the maximal divergence set under iterates",
+   "statement": "Let $\\alpha$ be a measurable\nspace, $T : \\alpha \\to \\alpha$ a map, $g : \\alpha \\to \\mathbb{R}$ a function and $c$ a real number.\nFor every natural number $k$ and every $x \\in \\alpha$, the point $T^k x$ lies in the maximal\ndivergence set of $T$, $g$ and $c$ if and only if $x$ does.",
+   "declaration": "MathlibExt.Dynamics.Ergodic.BirkhoffWanted.dick_iter",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/Birkhoff.lean",
+    "line": 298,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/dick-measurable.md",
+   "title": "Measurability of the maximal divergence set",
+   "statement": "Let $\\mu$ be a measure on a measurable space\n$\\alpha$, let $T : \\alpha \\to \\alpha$ preserve $\\mu$, and let $g : \\alpha \\to \\mathbb{R}$ be\nmeasurable. Then for every real number $c$, the maximal divergence set of $T$, $g$ and $c$ is a\nmeasurable set.",
+   "declaration": "MathlibExt.Dynamics.Ergodic.BirkhoffWanted.dick_measurable",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/Birkhoff.lean",
+    "line": 199,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/dick-mem.md",
+   "title": "Membership in the maximal divergence set",
+   "statement": "Let $\\alpha$ be a measurable space,\n$T : \\alpha \\to \\alpha$ a map, $g : \\alpha \\to \\mathbb{R}$ a function, $c$ a real number and\n$x \\in \\alpha$. Then $x$ lies in the maximal divergence set of $T$, $g$ and $c$ if and only if\nthere is a rational number $q > c$ such that for every natural number $N$ there is a natural\nnumber $n \\ge N$ with $n q < \\sum_{k=0}^{n-1} g(T^k x)$.",
+   "declaration": "MathlibExt.Dynamics.Ergodic.BirkhoffWanted.dick_mem",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/Birkhoff.lean",
+    "line": 217,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/dick-set.md",
+   "title": "Maximal divergence set",
+   "statement": "Let $\\alpha$ be a measurable space, $T : \\alpha \\to \\alpha$ a map,\n$g : \\alpha \\to \\mathbb{R}$ a function and $c$ a real number. The maximal divergence set of $T$,\n$g$ and $c$ is the set of points $x \\in \\alpha$ for which there is a rational number $q > c$ such\nthat $n q < \\sum_{k=0}^{n-1} g(T^k x)$ for infinitely many natural numbers $n$.",
+   "declaration": "MathlibExt.Dynamics.Ergodic.BirkhoffWanted.DickSet",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/Birkhoff.lean",
+    "line": 193,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/dick-sum-in.md",
+   "title": "Birkhoff sums of a function cut off to an invariant set, inside the set",
+   "statement": "Let $\\alpha$ be a\nmeasurable space, $T : \\alpha \\to \\alpha$ a map, $g : \\alpha \\to \\mathbb{R}$ a function, $c$ a real\nnumber, and $D \\subseteq \\alpha$ a set such that for every natural number $k$ and every\n$x \\in \\alpha$, $T^k x \\in D$ if and only if $x \\in D$. Let $h : \\alpha \\to \\mathbb{R}$ satisfy\n$h(y) = g(y) - c$ for $y \\in D$ and $h(y) = 0$ for $y \\notin D$. Then for every $x \\in D$ and\nevery natural number $n$, $\\sum_{k=0}^{n-1} h(T^k x) = \\sum_{k=0}^{n-1} g(T^k x) - n c$.",
+   "declaration": "MathlibExt.Dynamics.Ergodic.BirkhoffWanted.dick_sum_in",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/Birkhoff.lean",
+    "line": 308,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/dick-sum-out.md",
+   "title": "Birkhoff sums of a function cut off to an invariant set, outside the set",
+   "statement": "Let $\\alpha$ be\na measurable space, $T : \\alpha \\to \\alpha$ a map, $g : \\alpha \\to \\mathbb{R}$ a function, $c$ a\nreal number, and $D \\subseteq \\alpha$ a set such that for every natural number $k$ and every\n$x \\in \\alpha$, $T^k x \\in D$ if and only if $x \\in D$. Let $h : \\alpha \\to \\mathbb{R}$ satisfy\n$h(y) = g(y) - c$ for $y \\in D$ and $h(y) = 0$ for $y \\notin D$. Then for every $x \\notin D$ and\nevery natural number $n$, $\\sum_{k=0}^{n-1} h(T^k x) = 0$.",
+   "declaration": "MathlibExt.Dynamics.Ergodic.BirkhoffWanted.dick_sum_out",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/Birkhoff.lean",
+    "line": 324,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/e-lp-norm-birkhoff-average-le.md",
+   "title": "Birkhoff averages are L1 contractions",
+   "statement": "Birkhoff averages are `L¹`-contractions. See also\n`MathlibExt.Probability.BirkhoffErgodicL1.integral_norm_birkhoffAverage_sub_le`, the same bound\nfor differences, stated with integrals of norms.",
+   "declaration": "StatMech.BirkhoffAE.eLpNorm_birkhoffAverage_le",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/BirkhoffPointwise.lean",
+    "line": 583,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/f-star-comp.md",
+   "title": "Upper limit of Birkhoff averages is invariant",
+   "statement": "The upper limit of the Birkhoff averages is `T`-invariant.",
+   "declaration": "StatMech.BirkhoffAE.fStar_comp",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/BirkhoffPointwise.lean",
+    "line": 273,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/f-star-low.md",
+   "title": "Lower limit of Birkhoff averages",
+   "statement": "The lower limit `liminf_n A_n f x` of the Birkhoff averages, in `EReal`.",
+   "declaration": "StatMech.BirkhoffAE.fStarLow",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/BirkhoffPointwise.lean",
+    "line": 268,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/f-star.md",
+   "title": "Upper limit of Birkhoff averages",
+   "statement": "The upper limit `limsup_n A_n f x` of the Birkhoff averages, in `EReal`.",
+   "declaration": "StatMech.BirkhoffAE.fStar",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/BirkhoffPointwise.lean",
+    "line": 264,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/garsia-maximal-inequality.md",
+   "title": "Maximal ergodic theorem",
+   "statement": "**Maximal ergodic theorem** (E. Hopf, 1954), in the finite form of A. M. Garsia, *A simple\nproof of E. Hopf's maximal ergodic theorem*, 1965: for measure-preserving `T` and integrable `f`,\nthe integral of `f` over `{max_{1 ≤ n ≤ N} S_n f > 0}` is nonnegative. See also\n`MathlibExt.Dynamics.Ergodic.BirkhoffWanted.maximal_ergodic`, the limiting form for measurable\n`f`.",
+   "declaration": "StatMech.GarsiaMax.garsia_maximal_inequality",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/MaximalErgodic.lean",
+    "line": 136,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/integrable-birkhoff-average-of-measure-p.md",
+   "title": "Integrability of Birkhoff averages",
+   "statement": "Let $\\mu$ be a measure on a measurable space\n$\\alpha$, let $T : \\alpha \\to \\alpha$ preserve $\\mu$, and let $g : \\alpha \\to \\mathbb{R}$ be\n$\\mu$-integrable. Then for every $n \\in \\mathbb{N}$ the Birkhoff average\n$x \\mapsto \\frac{1}{n} \\sum_{k=0}^{n-1} g(T^k x)$ is $\\mu$-integrable (for $n = 0$ it is the\nzero function).",
+   "declaration": "MathlibExt.Probability.BirkhoffErgodicL1.integrable_birkhoffAverage_of_measurePreserving",
+   "lean": {
+    "file": "MathlibExt/Probability/BirkhoffErgodicL1.lean",
+    "line": 69,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/integrable-birkhoff-limit.md",
+   "title": "Integrability of the Birkhoff limit",
+   "statement": "The Birkhoff limit of an integrable function is integrable.",
+   "declaration": "StatMech.BirkhoffAE.integrable_birkhoffLimit",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/BirkhoffPointwise.lean",
+    "line": 619,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/integrable-birkhoff-sum-of-measure-prese.md",
+   "title": "Integrability of Birkhoff sums",
+   "statement": "Let $\\mu$ be a measure on a measurable space $\\alpha$,\nlet $T : \\alpha \\to \\alpha$ preserve $\\mu$, and let $g : \\alpha \\to \\mathbb{R}$ be\n$\\mu$-integrable. Then for every $n \\in \\mathbb{N}$ the Birkhoff sum\n$x \\mapsto \\sum_{k=0}^{n-1} g(T^k x)$ is $\\mu$-integrable.",
+   "declaration": "MathlibExt.Probability.BirkhoffErgodicL1.integrable_birkhoffSum_of_measurePreserving",
+   "lean": {
+    "file": "MathlibExt/Probability/BirkhoffErgodicL1.lean",
+    "line": 58,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/integral-birkhoff-average-of-measure-pre.md",
+   "title": "Birkhoff averages preserve the integral",
+   "statement": "Let $\\mu$ be a measure on a measurable space\n$\\alpha$, let $T : \\alpha \\to \\alpha$ preserve $\\mu$, and let $u : \\alpha \\to \\mathbb{R}$ be\n$\\mu$-integrable. Then for every $n \\ge 1$,\n$\\int \\frac{1}{n} \\sum_{k=0}^{n-1} u(T^k x) \\, d\\mu(x) = \\int u \\, d\\mu$.",
+   "declaration": "MathlibExt.Probability.BirkhoffErgodicL1.integral_birkhoffAverage_of_measurePreserving",
+   "lean": {
+    "file": "MathlibExt/Probability/BirkhoffErgodicL1.lean",
+    "line": 91,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/integral-comp-iterate-of-measure-preserv.md",
+   "title": "Invariance of the integral under iterates",
+   "statement": "Let $\\mu$ be a measure on a measurable space\n$\\alpha$, let $T : \\alpha \\to \\alpha$ preserve $\\mu$, and let $u : \\alpha \\to \\mathbb{R}$ be\n$\\mu$-integrable. Then for every $k \\in \\mathbb{N}$, writing $T^k$ for the $k$-th iterate of\n$T$, we have $\\int u(T^k x) \\, d\\mu(x) = \\int u \\, d\\mu$.",
+   "declaration": "MathlibExt.Probability.BirkhoffErgodicL1.integral_comp_iterate_of_measurePreserving",
+   "lean": {
+    "file": "MathlibExt/Probability/BirkhoffErgodicL1.lean",
+    "line": 77,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/integral-norm-birkhoff-average-sub-le.md",
+   "title": "Birkhoff averages are $L^1$-contractions",
+   "statement": "Let $\\mu$ be a measure on a measurable space\n$\\alpha$, let $T : \\alpha \\to \\alpha$ preserve $\\mu$, and let $g, h : \\alpha \\to \\mathbb{R}$ be\n$\\mu$-integrable. For a function $f : \\alpha \\to \\mathbb{R}$ and $n \\ge 1$ write\n$A_n f(x) = \\frac{1}{n} \\sum_{k=0}^{n-1} f(T^k x)$, and $A_0 f = 0$. Then for every\n$n \\in \\mathbb{N}$,\n$\\int |A_n g(x) - A_n h(x)| \\, d\\mu(x) \\le \\int |g(x) - h(x)| \\, d\\mu(x)$.",
+   "declaration": "MathlibExt.Probability.BirkhoffErgodicL1.integral_norm_birkhoffAverage_sub_le",
+   "lean": {
+    "file": "MathlibExt/Probability/BirkhoffErgodicL1.lean",
+    "line": 160,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/is-invariant-set-iff-preimage-eq.md",
+   "title": "Invariant set as a set equal to its preimage",
+   "statement": "`IsInvariantSet T E` is the condition `T ⁻¹' E = E` used by Mathlib's `PreErgodic` and\n`MeasurableSpace.invariants`.",
+   "declaration": "StatMech.BirkhoffAE.isInvariantSet_iff_preimage_eq",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/BirkhoffPointwise.lean",
+    "line": 73,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/is-invariant-set.md",
+   "title": "Invariant set of a map",
+   "statement": "`E` is invariant under `T`: `x ∈ E ↔ T x ∈ E`, i.e. `T ⁻¹' E = E`\n(see `isInvariantSet_iff_preimage_eq`).",
+   "declaration": "StatMech.BirkhoffAE.IsInvariantSet",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/BirkhoffPointwise.lean",
+    "line": 68,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/iterate.md",
+   "title": "Invariant set is invariant under every iterate",
+   "statement": "An invariant set is invariant under every iterate.",
+   "declaration": "StatMech.BirkhoffAE.IsInvariantSet.iterate",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/BirkhoffPointwise.lean",
+    "line": 79,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/level-set.md",
+   "title": "Oscillation set of Birkhoff averages",
+   "statement": "The invariant set `{f_* < a} ∩ {b < f*}` where the Birkhoff averages oscillate across\n`[a, b]`.",
+   "declaration": "StatMech.BirkhoffAE.levelSet",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/BirkhoffPointwise.lean",
+    "line": 406,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/max-partial-sum.md",
+   "title": "Maximal Birkhoff partial sum",
+   "statement": "The maximal Birkhoff sum `max_{1 ≤ n ≤ N} ∑_{k<n} f (T^[k] x)` over the first `N` times.",
+   "declaration": "StatMech.GarsiaMax.maxPartialSum",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/MaximalErgodic.lean",
+    "line": 53,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/maximal-ergodic.md",
+   "title": "Hopf maximal ergodic theorem",
+   "statement": "Let $\\mu$ be a finite measure on a measurable space $\\alpha$,\nlet $T : \\alpha \\to \\alpha$ preserve $\\mu$, and let $f : \\alpha \\to \\mathbb{R}$ be measurable and\n$\\mu$-integrable. For a natural number $n$ write $S_n f(x) = \\sum_{k=0}^{n-1} f(T^k x)$. Then the\nintegral of $f$ with respect to $\\mu$ over the set of points $x \\in \\alpha$ such that\n$S_n f(x) > 0$ for some natural number $n$ is nonnegative.",
+   "declaration": "MathlibExt.Dynamics.Ergodic.BirkhoffWanted.maximal_ergodic",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/Birkhoff.lean",
+    "line": 38,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/measure-level-set-eq-zero.md",
+   "title": "Oscillation set of Birkhoff averages is null",
+   "statement": "For `a < b` the oscillation set `levelSet T f a b` is null.",
+   "declaration": "StatMech.BirkhoffAE.measure_levelSet_eq_zero",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/BirkhoffPointwise.lean",
+    "line": 450,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/norm-birkhoff-average-le-birkhoff-averag.md",
+   "title": "Triangle inequality for Birkhoff averages",
+   "statement": "Let $T : \\alpha \\to \\alpha$ be a map. For\n$f : \\alpha \\to \\mathbb{R}$ and $n \\ge 1$ write $A_n f(x) = \\frac{1}{n} \\sum_{k=0}^{n-1} f(T^k x)$\nfor the $n$-th Birkhoff average of $f$, and $A_0 f = 0$. Then for every\n$u : \\alpha \\to \\mathbb{R}$, every $n \\in \\mathbb{N}$ and every $x \\in \\alpha$, writing $|u|$ for\nthe function $y \\mapsto |u(y)|$, we have $|A_n u(x)| \\le A_n |u|(x)$.",
+   "declaration": "MathlibExt.Probability.BirkhoffErgodicL1.norm_birkhoffAverage_le_birkhoffAverage_norm",
+   "lean": {
+    "file": "MathlibExt/Probability/BirkhoffErgodicL1.lean",
+    "line": 114,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/norm-birkhoff-average-le-of-bounded.md",
+   "title": "Birkhoff averages of a bounded function are bounded",
+   "statement": "Let $T : \\alpha \\to \\alpha$ be a\nmap, let $M \\ge 0$, and let $g : \\alpha \\to \\mathbb{R}$ satisfy $|g(x)| \\le M$ for every\n$x \\in \\alpha$. Then for every $n \\in \\mathbb{N}$ and every $x \\in \\alpha$, the Birkhoff average\n$\\frac{1}{n} \\sum_{k=0}^{n-1} g(T^k x)$ (taken to be $0$ for $n = 0$) has absolute value at\nmost $M$.",
+   "declaration": "MathlibExt.Probability.BirkhoffErgodicL1.norm_birkhoffAverage_le_of_bounded",
+   "lean": {
+    "file": "MathlibExt/Probability/BirkhoffErgodicL1.lean",
+    "line": 145,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/set-integral-birkhoff-limit.md",
+   "title": "Birkhoff limit preserves integrals over invariant sets",
+   "statement": "On every measurable invariant set `E`, `∫_E birkhoffLimit T f dμ = ∫_E f dμ`.",
+   "declaration": "StatMech.BirkhoffAE.setIntegral_birkhoffLimit",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/BirkhoffPointwise.lean",
+    "line": 691,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/set-integral-nonneg-of-invariant.md",
+   "title": "Maximal ergodic inequality on an invariant set",
+   "statement": "The maximal inequality on an invariant set: if every point of the invariant set `E` has\nsome positive Birkhoff sum of `g`, then `∫_E g dμ ≥ 0`.",
+   "declaration": "StatMech.BirkhoffAE.setIntegral_nonneg_of_invariant",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/BirkhoffPointwise.lean",
+    "line": 297,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/tendsto-birkhoff-average-ae.md",
+   "title": "Birkhoff averages converge almost everywhere to the Birkhoff limit",
+   "statement": "The Birkhoff averages of an integrable `f` converge a.e. to `birkhoffLimit T f`.",
+   "declaration": "StatMech.BirkhoffAE.tendsto_birkhoffAverage_ae",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/BirkhoffPointwise.lean",
+    "line": 556,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/tendsto-birkhoff-average-cond-exp-ae.md",
+   "title": "Birkhoff's pointwise ergodic theorem",
+   "statement": "**Birkhoff's pointwise ergodic theorem** (G. D. Birkhoff, *Proof of the ergodic theorem*,\n1931): for `T` preserving a finite measure `μ` and integrable `f`, the averages\n`(1/n) ∑_{k<n} f ∘ T^k` converge `μ`-a.e. to `μ[f | MeasurableSpace.invariants T]`. See also\n`MathlibExt.Dynamics.Ergodic.BirkhoffWanted.birkhoff_pointwise_ergodic`, the ergodic case, and\n`birkhoffLimit_ae_eq_integral_of_ergodic`.",
+   "declaration": "StatMech.BirkhoffAE.tendsto_birkhoffAverage_condExp_ae",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/BirkhoffPointwise.lean",
+    "line": 823,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/birkhoff-ergodic-theorem/tendsto-integral-norm-birkhoff-average-o.md",
+   "title": "Birkhoff's ergodic theorem in $L^1$ for bounded functions",
+   "statement": "Let $\\mu$ be a probability\nmeasure on a measurable space $\\alpha$, let $T : \\alpha \\to \\alpha$ be ergodic with respect to\n$\\mu$ (in particular $T$ preserves $\\mu$), let $M \\ge 0$, and let $g : \\alpha \\to \\mathbb{R}$ be\n$\\mu$-integrable with $|g(x)| \\le M$ for every $x \\in \\alpha$. For $n \\ge 1$ let\n$A_n g(x) = \\frac{1}{n} \\sum_{k=0}^{n-1} g(T^k x)$. Then\n$\\int \\left| A_n g(x) - \\int g \\, d\\mu \\right| d\\mu(x) \\to 0$ as $n \\to \\infty$.\n\nThis follows from the almost-everywhere ergodic theorem and dominated convergence.",
+   "declaration": "MathlibExt.Probability.BirkhoffErgodicL1.tendsto_integral_norm_birkhoffAverage_of_bounded",
+   "lean": {
+    "file": "MathlibExt/Probability/BirkhoffErgodicL1.lean",
+    "line": 193,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/bourgain-s-polynomial-ergodic-theorem/bourgain-polynomial-ergodic.md",
+   "title": "Bourgain's polynomial ergodic theorem",
+   "statement": "Let $(X, \\mu)$ be a probability space, let\n$T : X \\to X$ be a measure-preserving map, let $a : \\mathbb{N} \\to \\mathbb{N}$ be an integer\npolynomial sequence, and let $f : X \\to \\mathbb{R}$ be a function in $L^p(\\mu)$ for some\n$p$ with $1 < p < \\infty$. Then there is a function $F : X \\to \\mathbb{R}$ such that for\n$\\mu$-almost every $x \\in X$ the polynomial ergodic averages\n$\\frac{1}{n} \\sum_{k=0}^{n-1} f(T^{a(k)}(x))$, $n \\ge 1$, where $T^{a(k)}$ is the $a(k)$-fold\niterate of $T$, converge to $F(x)$ as $n \\to \\infty$.\n\n## Sources\n\n- J. Bourgain, *Pointwise ergodic theorems for arithmetic sets*, Publ. Math. IHÉS 69 (1989). Knill, *Some fundamental theorems in mathematics*, §173. Problem `bourgain_polynomial_ergodic` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.BourgainErgodicWanted.Dynamics.BourgainErgodic.bourgain_polynomial_ergodic",
+   "lean": {
+    "file": "WantedExt/Dynamics/BourgainErgodicWanted.lean",
+    "line": 78,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/bourgain-s-polynomial-ergodic-theorem/is-integer-polynomial-sequence.md",
+   "title": "Integer polynomial sequences",
+   "statement": "A sequence $a : \\mathbb{N} \\to \\mathbb{N}$ is an integer\npolynomial sequence if there is a polynomial $P$ with integer coefficients such that\n$P(n) \\ge 0$ and $a(n) = P(n)$ for every $n \\in \\mathbb{N}$.",
+   "declaration": "MathlibExt.Dynamics.BourgainErgodicWanted.Dynamics.BourgainErgodic.IsIntegerPolynomialSequence",
+   "lean": {
+    "file": "WantedExt/Dynamics/BourgainErgodicWanted.lean",
+    "line": 64,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/bourgain-s-polynomial-ergodic-theorem/polynomial-ergodic-average.md",
+   "title": "Polynomial ergodic averages",
+   "statement": "Given a sequence $a : \\mathbb{N} \\to \\mathbb{N}$, a map\n$T : X \\to X$, a function $f : X \\to \\mathbb{R}$, $n \\in \\mathbb{N}$ and $x \\in X$, the $n$-th\npolynomial ergodic average of $f$ at $x$ is\n\n$$\\frac{1}{n} \\sum_{k=0}^{n-1} f\\bigl(T^{a(k)}(x)\\bigr),$$\n\nwhere $T^{a(k)}$ is the $a(k)$-fold iterate of $T$; for $n = 0$ the average is $0$.",
+   "declaration": "MathlibExt.Dynamics.BourgainErgodicWanted.Dynamics.BourgainErgodic.polynomialErgodicAverage",
+   "lean": {
+    "file": "WantedExt/Dynamics/BourgainErgodicWanted.lean",
+    "line": 70,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/furstenberg-multiple-recurrence.md",
+   "title": "Furstenberg multiple recurrence theorem",
+   "statement": "Let $\\mu$ be a probability measure on a measurable\nspace $\\alpha$, let $T : \\alpha \\to \\alpha$ be a measurable map preserving $\\mu$, and let $A$ be a\nmeasurable set with $\\mu(A) > 0$. For $m \\in \\mathbb{N}$ write $T^{-m}(A)$ for the preimage of $A$\nunder the $m$-th iterate of $T$. Then for every integer $k > 0$ there is an integer $n > 0$ such\nthat\n\n$$\\mu\\Big(\\bigcap_{i=0}^{k-1} T^{-i n}(A)\\Big) > 0.$$\n\nProof: We apply the finitary Szemerédi theorem to dense sets of return times in finite orbit\nsegments, using an averaging argument to obtain a positive-measure family of such segments.\n\n## Sources\n\n- H. Furstenberg, J. Analyse Math. 31 (1977) and Recurrence in Ergodic Theory (1981); Lean states one-transformation arithmetic-progression k-term intersection form without ergodicity hypothesis.",
+   "declaration": "MathlibExt.Dynamics.Ergodic.MultipleRecurrenceWanted.furstenberg_multipleRecurrence",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/MultipleRecurrence.lean",
+    "line": 213,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/genericity-of-weak-mixing/automorphism.md",
+   "title": "Measure-preserving automorphism",
+   "statement": "An automorphism of a measure space $(X, m)$ is a\nbijection $e \\colon X \\to X$ such that $e$ and its inverse are measurable and $e$ preserves $m$,\nthat is, $m(e^{-1}(A)) = m(A)$ for every measurable set $A \\subseteq X$.",
+   "declaration": "MathlibExt.Dynamics.HalmosGenericWeakMixingWanted.Dynamics.HalmosGenericWeakMixingProblem.Automorphism",
+   "lean": {
+    "file": "WantedExt/Dynamics/HalmosGenericWeakMixingWanted.lean",
+    "line": 69,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/genericity-of-weak-mixing/generic-weakly-mixing.md",
+   "title": "Halmos's theorem: weak mixing is generic",
+   "statement": "Let $X$ be a standard Borel space and $m$ a\nprobability measure on $X$ for which every singleton has measure $0$. Give the set of\nautomorphisms of $(X, m)$ the weak topology, the topology generated by the sets of\nautomorphisms $T$ with $m(T(A) \\mathbin{\\triangle} T_0(A)) < \\varepsilon$, for each automorphism\n$T_0$, measurable set $A \\subseteq X$ and real number $\\varepsilon > 0$. Then there is a dense\n$G_\\delta$ set of automorphisms all of which are weakly mixing, and every weakly mixing\nautomorphism of $(X, m)$ is ergodic for $m$.\n\n## Sources\n\n- P.R. Halmos, 'In general a measure-preserving transformation is mixing', Ann. of Math. (2) 45 (1944) 786–792, and *Lectures on Ergodic Theory*, Chelsea, 1956. Related Baire-category genericity results in ergodic theory: A. Katok and A. Stepin (1967); J.R. Choksi (1965). Listed as §90 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `halmos_generic_weak_mixing` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.HalmosGenericWeakMixingWanted.Dynamics.HalmosGenericWeakMixingProblem.generic_weakly_mixing",
+   "lean": {
+    "file": "WantedExt/Dynamics/HalmosGenericWeakMixingWanted.lean",
+    "line": 101,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/genericity-of-weak-mixing/is-weakly-mixing.md",
+   "title": "Weakly mixing automorphism",
+   "statement": "Let $(X, m)$ be a measure space. An automorphism $T$ of\n$(X, m)$ is weakly mixing if for all measurable sets $A, B \\subseteq X$,\n\n$$\\frac{1}{n} \\sum_{k=0}^{n-1} \\left| m(T^{-k}(A) \\cap B) - m(A) m(B) \\right| \\to 0$$\n\nas $n \\to \\infty$, where $T^{-k}(A)$ is the preimage of $A$ under the $k$-th iterate of $T$.\n\nMeasures are converted to real numbers here, with an infinite measure counted as $0$.",
+   "declaration": "MathlibExt.Dynamics.HalmosGenericWeakMixingWanted.Dynamics.HalmosGenericWeakMixingProblem.IsWeaklyMixing",
+   "lean": {
+    "file": "WantedExt/Dynamics/HalmosGenericWeakMixingWanted.lean",
+    "line": 88,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/add-coc.md",
+   "title": "Additive cocycle of Birkhoff sums of the first term",
+   "statement": "The additive cocycle `n ↦ ∑_{k<n} X 1 ∘ T^[k]` (the Birkhoff sums of `X 1`).",
+   "declaration": "StatMech.KingmanSigned.addCoc",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned.lean",
+    "line": 64,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/ae-all-subadditive.md",
+   "title": "Cocycle inequality holds for all indices almost everywhere",
+   "statement": "The cocycle inequality holds for all `m, n` simultaneously, almost everywhere.",
+   "declaration": "StatMech.KingmanAE.ae_all_subadditive",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/AE.lean",
+    "line": 65,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/ae-le-birkhoff-sum.md",
+   "title": "Subadditive cocycle bounded by Birkhoff sums of its first term",
+   "statement": "Iterating subadditivity: `X n ≤ ∑_{k<n} X 1 ∘ T^[k]` almost everywhere, for all `n ≥ 1`.",
+   "declaration": "StatMech.Kingman.SubadditiveCocycle.ae_le_birkhoffSum",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Basic.lean",
+    "line": 108,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/ae-le-block-birkhoff-sum.md",
+   "title": "Block decomposition bound for a subadditive cocycle",
+   "statement": "Block decomposition: `X (q k) ≤ ∑_{j<q} X k ∘ T^{j k}` almost everywhere.",
+   "declaration": "StatMech.KingmanAE.ae_le_block_birkhoffSum",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/AE.lean",
+    "line": 74,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/ae-liminf-lt-top.md",
+   "title": "Lower limit of the normalized defect is finite almost everywhere",
+   "statement": "If the time constant is finite, `liminf_n Zc n / n < ∞` almost everywhere (Fatou).",
+   "declaration": "StatMech.KingmanSigned.ae_liminf_lt_top",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned.lean",
+    "line": 230,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/ae-tendsto-x-div.md",
+   "title": "Kingman's theorem: normalized cocycle converges almost everywhere",
+   "statement": "If the time constant is finite, `X n / n` converges almost everywhere.",
+   "declaration": "StatMech.KingmanSigned.ae_tendsto_X_div",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned.lean",
+    "line": 318,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/bad-cost.md",
+   "title": "Cost of a bad step in the greedy decomposition",
+   "statement": "The cost `1_{badSet} X 1` of a bad step.",
+   "declaration": "StatMech.KingmanFilling.badCost",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Filling.lean",
+    "line": 164,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/bad-set.md",
+   "title": "Bad set in the greedy decomposition for Kingman's theorem",
+   "statement": "The bad set: points where `X m x > (gLow x + ε) m` for every block length `1 ≤ m ≤ N`.",
+   "declaration": "StatMech.KingmanFilling.badSet",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Filling.lean",
+    "line": 156,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/bdd-below-of-nonneg.md",
+   "title": "Normalized expectations of a nonnegative cocycle are bounded below",
+   "statement": "For a nonnegative cocycle, `expSeq n / n` is bounded below by `0`.",
+   "declaration": "StatMech.Kingman.SubadditiveCocycle.bddBelow_of_nonneg",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Basic.lean",
+    "line": 171,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/dep.md",
+   "title": "Per-step budget of the greedy decomposition",
+   "statement": "The per-step budget `gLow + ε + 1_{badSet} X 1` of the greedy decomposition.",
+   "declaration": "StatMech.KingmanFilling.dep",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Filling.lean",
+    "line": 160,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/eq-of-le-to-real-eq.md",
+   "title": "Ordered extended reals with equal real parts are equal",
+   "statement": "Two extended reals `x ≤ y` with `x ≠ ⊥`, `y ≠ ⊤` and equal real parts are equal.",
+   "declaration": "StatMech.KingmanFilling.eq_of_le_toReal_eq",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Filling.lean",
+    "line": 94,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/exists-invariant-limit-of-nonneg.md",
+   "title": "Kingman's subadditive ergodic theorem for nonnegative cocycles",
+   "statement": "Kingman's theorem for nonnegative cocycles, with integrable and invariant limit: if `T`\npreserves the finite measure `μ` and `X` is a nonnegative integrable subadditive cocycle, then\n`X n / n` converges a.e. to an integrable `T`-invariant function. This is\n`MathlibExt.Dynamics.Ergodic.KingmanWanted.kingman_subadditive` without its hypotheses that each\n`X n` is measurable and `X 0 = 0`, and for finite rather than probability measures.",
+   "declaration": "StatMech.KingmanSigned.exists_invariant_limit_of_nonneg",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned.lean",
+    "line": 366,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/exp-seq-le-nsmul.md",
+   "title": "Expectation of a subadditive cocycle grows at most linearly",
+   "statement": "`∫ X n dμ ≤ n ∫ X 1 dμ` for `n ≥ 1`.",
+   "declaration": "StatMech.Kingman.SubadditiveCocycle.expSeq_le_nsmul",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Basic.lean",
+    "line": 126,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/exp-seq-subadditive.md",
+   "title": "Expectations of a subadditive cocycle are subadditive",
+   "statement": "The expectations of a subadditive cocycle are subadditive.",
+   "declaration": "StatMech.Kingman.SubadditiveCocycle.expSeq_subadditive",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Basic.lean",
+    "line": 87,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/exp-seq.md",
+   "title": "Expectation sequence of a cocycle",
+   "statement": "The expectation `∫ X n dμ` of the `n`-th term.",
+   "declaration": "StatMech.Kingman.SubadditiveCocycle.expSeq",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Basic.lean",
+    "line": 84,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/g-low.md",
+   "title": "Real lower limit of a normalized cocycle",
+   "statement": "The lower limit `liminf_n X n x / n`, cast to `ℝ`.",
+   "declaration": "StatMech.KingmanFilling.gLow",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Filling.lean",
+    "line": 64,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/g-star-le-g-star-low-ae.md",
+   "title": "Upper and lower limits of a nonnegative cocycle agree",
+   "statement": "For a nonnegative cocycle the upper and lower limits of `X n / n` agree almost everywhere.",
+   "declaration": "StatMech.KingmanFilling.gStar_le_gStarLow_ae",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Filling.lean",
+    "line": 586,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/g-star-le.md",
+   "title": "Upper limit of a cocycle bounded by Birkhoff limits of blocks",
+   "statement": "For each `k ≥ 1`, `limsup X n / n ≤ birkhoffLimit (T^[k]) (X k) / k` almost everywhere.",
+   "declaration": "StatMech.KingmanAE.gStar_le",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/AE.lean",
+    "line": 199,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/g-star-low-le-comp.md",
+   "title": "Lower limit of a cocycle is nondecreasing along the map",
+   "statement": "The lower limit is nondecreasing along `T`: `g_* ≤ g_* ∘ T` almost everywhere.",
+   "declaration": "StatMech.KingmanFilling.gStarLow_le_comp",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Filling.lean",
+    "line": 101,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/g-star-low.md",
+   "title": "Lower limit of a normalized subadditive cocycle",
+   "statement": "The lower limit `liminf_n X n x / n` in `EReal`.",
+   "declaration": "StatMech.KingmanAE.gStarLow",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/AE.lean",
+    "line": 286,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/g-star-lt-top-ae.md",
+   "title": "Upper limit of a normalized cocycle is finite almost everywhere",
+   "statement": "`limsup X n / n < ⊤` almost everywhere.",
+   "declaration": "StatMech.KingmanAE.gStar_lt_top_ae",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/AE.lean",
+    "line": 356,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/g-star.md",
+   "title": "Upper limit of a normalized subadditive cocycle",
+   "statement": "The upper limit `limsup_n X n x / n` in `EReal`. The map `T` is a parameter only so that\nthe notation records the cocycle's base map.",
+   "declaration": "StatMech.KingmanAE.gStar",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/AE.lean",
+    "line": 281,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/gamma-le-div.md",
+   "title": "Time constant is a lower bound for normalized expectations",
+   "statement": "`gamma ≤ expSeq n / n` for every `n ≠ 0`.",
+   "declaration": "StatMech.Kingman.SubadditiveCocycle.gamma_le_div",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Basic.lean",
+    "line": 158,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/gamma-le-exp-seq-one.md",
+   "title": "Time constant is at most the first expectation",
+   "statement": "`gamma ≤ ∫ X 1 dμ`.",
+   "declaration": "StatMech.Kingman.SubadditiveCocycle.gamma_le_expSeq_one",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Basic.lean",
+    "line": 164,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/gamma-le-integral-g-low.md",
+   "title": "Time constant is at most the integral of the lower limit",
+   "statement": "The time constant is at most `∫ g_*`.",
+   "declaration": "StatMech.KingmanFilling.gamma_le_integral_gLow",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Filling.lean",
+    "line": 544,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/gamma.md",
+   "title": "Time constant of a subadditive cocycle",
+   "statement": "The time constant `lim_n (∫ X n dμ) / n = inf_n (∫ X n dμ) / n` (Fekete's lemma); it is\nmeaningful when `expSeq n / n` is bounded below.",
+   "declaration": "StatMech.Kingman.SubadditiveCocycle.gamma",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Basic.lean",
+    "line": 148,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/greedy-windowed.md",
+   "title": "Windowed greedy bound from time zero",
+   "statement": "The greedy bound from time `0`, with the remainder bounded by a sum over the last window.",
+   "declaration": "StatMech.KingmanFilling.greedy_windowed",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Filling.lean",
+    "line": 282,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/greedy.md",
+   "title": "Greedy decomposition along an orbit",
+   "statement": "Greedy decomposition along one orbit: `X n (T^[s] x)` is at most the sum of the budgets\n`dep` over `n` steps plus one remainder term, for every `n` and starting time `s`.",
+   "declaration": "StatMech.KingmanFilling.greedy",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Filling.lean",
+    "line": 180,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/integrable-kingman-limit.md",
+   "title": "Integrability of the Kingman limit for nonnegative cocycles",
+   "statement": "For a nonnegative cocycle, `kingmanLimit` is integrable.",
+   "declaration": "StatMech.KingmanAE.integrable_kingmanLimit",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/AE.lean",
+    "line": 493,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/integral-comp-iterate.md",
+   "title": "Integral is invariant under iterates of a measure-preserving map",
+   "statement": "The integral is invariant under iterates of a measure-preserving map:\n`∫ g ∘ T^[m] dμ = ∫ g dμ` for a.e.-strongly measurable `g`. See also\n`MathlibExt.Probability.BirkhoffErgodicL1.integral_comp_iterate_of_measurePreserving`, which\nassumes `g` integrable.",
+   "declaration": "StatMech.Kingman.integral_comp_iterate",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Basic.lean",
+    "line": 63,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/integral-comp-measure-preserving.md",
+   "title": "Integral is invariant under a measure-preserving map",
+   "statement": "The integral is invariant under a measure-preserving map: `∫ g ∘ T dμ = ∫ g dμ` for\na.e.-strongly measurable `g`.",
+   "declaration": "StatMech.Kingman.integral_comp_measurePreserving",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Basic.lean",
+    "line": 53,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/integral-kingman-limit-le-gamma.md",
+   "title": "Integral of the Kingman limit is at most the time constant",
+   "statement": "For a nonnegative cocycle, `∫ kingmanLimit ≤ gamma`.",
+   "declaration": "StatMech.KingmanAE.integral_kingmanLimit_le_gamma",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/AE.lean",
+    "line": 524,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/kingman-ae-general.md",
+   "title": "Kingman's subadditive ergodic theorem",
+   "statement": "**Kingman's subadditive ergodic theorem** (J. F. C. Kingman, *The ergodic theory of\nsubadditive stochastic processes*, 1968): if `X` is a subadditive cocycle over a map `T`\npreserving the finite measure `μ` and `inf_n (∫ X n dμ) / n > -∞`, then `X n / n` converges\n`μ`-almost everywhere to the finite limit `kingmanLimit T X`. The sign of `X` is arbitrary.\nInvariance and integrability of the limit, and `∫ kingmanLimit = gamma`, are not stated here; for\nnonnegative cocycles see `exists_invariant_limit_of_nonneg`, which contains\n`MathlibExt.Dynamics.Ergodic.KingmanWanted.kingman_subadditive`.",
+   "declaration": "StatMech.KingmanSigned.kingman_ae_general",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned.lean",
+    "line": 355,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/kingman-limit-comp-ae.md",
+   "title": "Invariance of the Kingman limit",
+   "statement": "Under the hypotheses of `tendsto_div_kingmanLimit_ae` and integrability of the limit, the\nlimit is `T`-invariant almost everywhere.",
+   "declaration": "StatMech.KingmanAE.kingmanLimit_comp_ae",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/AE.lean",
+    "line": 431,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/kingman-limit.md",
+   "title": "Kingman limit of a subadditive cocycle",
+   "statement": "The limit `lim X n / n` in Kingman's theorem, defined as `limsup X n / n` cast to `ℝ` (so it is\n`0` where the `limsup` is infinite).",
+   "declaration": "StatMech.KingmanAE.kingmanLimit",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/AE.lean",
+    "line": 367,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/kingman-subadditive.md",
+   "title": "Kingman's subadditive ergodic theorem (nonnegative case)",
+   "statement": "Let $\\mu$ be a probability measure\non a measurable space $\\alpha$ and let $T : \\alpha \\to \\alpha$ preserve $\\mu$. Let\n$(f_n)_{n \\in \\mathbb{N}}$ be functions $\\alpha \\to \\mathbb{R}$, each measurable and\n$\\mu$-integrable, such that for every $n$ the inequality $f_n \\ge 0$ holds $\\mu$-almost\neverywhere, $f_0 = 0$ holds $\\mu$-almost everywhere, and for all natural numbers $m$ and $n$ the\ninequality $f_{m+n}(x) \\le f_m(x) + f_n(T^m x)$ holds for $\\mu$-almost every $x$. Then there is a\n$\\mu$-integrable function $g : \\alpha \\to \\mathbb{R}$ such that $g(T x) = g(x)$ for $\\mu$-almost\nevery $x$ and $f_n(x)/n$ converges to $g(x)$ as $n \\to \\infty$ for $\\mu$-almost every $x$.\n\n## Sources\n\n- J. F. C. Kingman, \"The Ergodic Theory of Subadditive Stochastic Processes\", Journal of the Royal Statistical Society Series B 30 (1968), 499–510, DOI 10.1111/j.2517-6161.1968.tb00749.x.",
+   "declaration": "MathlibExt.Dynamics.Ergodic.KingmanWanted.kingman_subadditive",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/Kingman.lean",
+    "line": 1131,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/rem-dom.md",
+   "title": "Dominating function for remainder terms in Kingman's theorem",
+   "statement": "The integrable dominating function `∑_{r<k} (X r)⁺` for the remainder terms `X r`, `r < k`.",
+   "declaration": "StatMech.KingmanAE.remDom",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/AE.lean",
+    "line": 179,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/sc.md",
+   "title": "Shifted subadditivity defect of a cocycle",
+   "statement": "The shifted defect `X n + M n - addCoc n`, a subadditive cocycle for every `M`.",
+   "declaration": "StatMech.KingmanSigned.Sc",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned.lean",
+    "line": 148,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/subadditive-cocycle.md",
+   "title": "Subadditive cocycle over a measure-preserving map",
+   "statement": "`X` is a subadditive cocycle over `T`: `T` preserves `μ`, every `X n` is integrable, and\n`X (m + n) ≤ X m + X n ∘ T^[m]` almost everywhere.",
+   "declaration": "StatMech.Kingman.SubadditiveCocycle",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Basic.lean",
+    "line": 71,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/subadditive-exp-seq.md",
+   "title": "Expectations of a subadditive cocycle form a subadditive sequence",
+   "statement": "The expectations of a subadditive cocycle form a `Subadditive` sequence.",
+   "declaration": "StatMech.Kingman.SubadditiveCocycle.subadditive_expSeq",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Basic.lean",
+    "line": 104,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/tendsto-comp-div-at-top.md",
+   "title": "Integrable function along an orbit divided by time tends to zero",
+   "statement": "For integrable `g`, `g (T^[m] x) / m → 0` almost everywhere.",
+   "declaration": "StatMech.KingmanAE.tendsto_comp_div_atTop",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/AE.lean",
+    "line": 99,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/tendsto-div-kingman-limit-ae-of-nonneg.md",
+   "title": "Kingman's subadditive ergodic theorem",
+   "statement": "**Kingman's subadditive ergodic theorem** for nonnegative cocycles: `X n / n` converges almost\neverywhere to `kingmanLimit T X` (J. F. C. Kingman, 1968; proof of J. M. Steele, 1989).",
+   "declaration": "StatMech.KingmanFilling.tendsto_div_kingmanLimit_ae_of_nonneg",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Filling.lean",
+    "line": 592,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/tendsto-div-kingman-limit-ae.md",
+   "title": "Almost-everywhere convergence to the Kingman limit",
+   "statement": "If `g* ≤ g_*` and `g* > ⊥` almost everywhere, then `X n / n → kingmanLimit` almost\neverywhere.",
+   "declaration": "StatMech.KingmanAE.tendsto_div_kingmanLimit_ae",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/AE.lean",
+    "line": 371,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/tendsto-exp-seq-div.md",
+   "title": "Fekete's lemma for the expectations of a subadditive cocycle",
+   "statement": "Fekete's lemma for the expectations: `expSeq n / n → gamma` when bounded below.",
+   "declaration": "StatMech.Kingman.SubadditiveCocycle.tendsto_expSeq_div",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned/Basic.lean",
+    "line": 152,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/vc-subadd-cocycle.md",
+   "title": "Truncated defect is a nonnegative subadditive cocycle",
+   "statement": "The truncated defect is a nonnegative subadditive cocycle.",
+   "declaration": "StatMech.KingmanSigned.Vc_subaddCocycle",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned.lean",
+    "line": 174,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/vc.md",
+   "title": "Truncated subadditivity defect of a cocycle",
+   "statement": "The truncated defect `(Sc M n)⁺ = (M n - Zc n)⁺`, a nonnegative subadditive cocycle.",
+   "declaration": "StatMech.KingmanSigned.Vc",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned.lean",
+    "line": 152,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/wc-subadd-cocycle.md",
+   "title": "Negative defect is a subadditive cocycle",
+   "statement": "The negative defect is a subadditive cocycle.",
+   "declaration": "StatMech.KingmanSigned.Wc_subaddCocycle",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned.lean",
+    "line": 115,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/wc.md",
+   "title": "Negative subadditivity defect of a cocycle",
+   "statement": "The negative defect `X n - addCoc n` (`0` at `n = 0`), a nonpositive subadditive cocycle.",
+   "declaration": "StatMech.KingmanSigned.Wc",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned.lean",
+    "line": 72,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/kingman-s-subadditive-ergodic-theorem/zc.md",
+   "title": "Subadditivity defect of a cocycle",
+   "statement": "The subadditivity defect `addCoc n - X n` (`0` at `n = 0`); it is nonnegative a.e.",
+   "declaration": "StatMech.KingmanSigned.Zc",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KingmanSigned.lean",
+    "line": 68,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/krylov-bogolyubov.md",
+   "title": "Krylov–Bogolyubov theorem",
+   "statement": "Every continuous map $T : X \\to X$ of a nonempty compact metric\nspace $X$ to itself has an invariant Borel probability measure: there is a probability measure\n$\\mu$ on the Borel $\\sigma$-algebra of $X$ whose pushforward under $T$ equals $\\mu$.\n\n## Sources\n\n- N. M. Krylov and N. N. Bogolyubov, Ann. Math. 38 (1937), 65-113, DOI 10.2307/1968511.",
+   "declaration": "MathlibExt.Dynamics.Ergodic.KrylovBogolyubovWanted.krylov_bogolyubov",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Ergodic/KrylovBogolyubov.lean",
+    "line": 98,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/lax-approximation-theorem/cube-shift.md",
+   "title": "Coordinate shift between grid cubes",
+   "statement": "Let $n$ and $d$ be natural numbers, let\n$\\sigma$ be a permutation of the index set $\\{0, \\dots, n-1\\}^d$, let $k$ be an index and\nlet $i < d$. The shift along axis $i$ determined by $\\sigma$ and $k$ is the point\n$(\\sigma(k)_i - k_i)/n$ of the circle $\\mathbb{R}/\\mathbb{Z}$, that is, the class modulo $1$\nof this real number.\n\nFor an index $j$, the grid cube with index $j$ is the set of points of the torus\n$(\\mathbb{R}/\\mathbb{Z})^d$ whose $m$-th coordinate is the class of a real number in\n$[j_m/n, (j_m + 1)/n)$ for every $m < d$. For $n > 0$, translating the $m$-th coordinate of\neach point of the grid cube with index $k$ by the shift along axis $m$, for every $m < d$,\ncarries that cube onto the grid cube with index $\\sigma(k)$.",
+   "declaration": "MathlibExt.Dynamics.LaxApproximationWanted.Dynamics.LaxApproximation.cubeShift",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaxApproximationWanted.lean",
+    "line": 100,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/lax-approximation-theorem/cube.md",
+   "title": "Grid cube in the torus",
+   "statement": "Let $n$ and $d$ be natural numbers and let\n$k = (k_0, \\dots, k_{d-1})$ with each $k_i \\in \\{0, \\dots, n-1\\}$. The grid cube with\nindex $k$ is the set of points $x$ of the torus $\\mathbb{T}^d = (\\mathbb{R}/\\mathbb{Z})^d$\nsuch that, for every $i < d$, the coordinate $x_i$ is the class modulo $1$ of some real\nnumber $r$ with $k_i/n \\le r < (k_i + 1)/n$.",
+   "declaration": "MathlibExt.Dynamics.LaxApproximationWanted.Dynamics.LaxApproximation.cube",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaxApproximationWanted.lean",
+    "line": 95,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/lax-approximation-theorem/delta-dist.md",
+   "title": "Essential-supremum distance between volume-preserving maps",
+   "statement": "Let $d$ be a natural\nnumber and let $T$ and $S$ be measurable, invertible, volume-preserving transformations of the\ntorus $\\mathbb{T}^d = (\\mathbb{R}/\\mathbb{Z})^d$. Let $\\rho$ be the distance on $\\mathbb{T}^d$\ngiven by the maximum over the coordinates of the distance on the circle $\\mathbb{R}/\\mathbb{Z}$\n(taken to be $0$ when $d = 0$). The distance $\\delta(T, S) \\in [0, \\infty]$ is the essential\nsupremum, with respect to the volume measure, of the function $x \\mapsto \\rho(T x, S x)$.\n\nThis is Knill's metric $\\delta$.",
+   "declaration": "MathlibExt.Dynamics.LaxApproximationWanted.Dynamics.LaxApproximation.deltaDist",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaxApproximationWanted.lean",
+    "line": 79,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/lax-approximation-theorem/is-cyclic-cube-exchange.md",
+   "title": "Cyclic cube exchange",
+   "statement": "Let $n$ and $d$ be natural numbers. For an index\n$k \\in \\{0, \\dots, n-1\\}^d$, the grid cube with index $k$ is the set of points of the torus\n$\\mathbb{T}^d = (\\mathbb{R}/\\mathbb{Z})^d$ whose $i$-th coordinate is the class of a real\nnumber in $[k_i/n, (k_i + 1)/n)$ for every $i < d$. A measurable, invertible,\nvolume-preserving transformation $T$ of $\\mathbb{T}^d$ is a cyclic cube exchange with $n$\nsubdivisions if $n > 0$ and there is a permutation $\\sigma$ of $\\{0, \\dots, n-1\\}^d$ that is\na single cycle moving every index, such that for every index $k$, every point $x$ of the\ngrid cube with index $k$ and every $i < d$, we have\n$(T x)_i = x_i + (\\sigma(k)_i - k_i)/n$ in $\\mathbb{R}/\\mathbb{Z}$. Thus $T$ translates each\ngrid cube $k$ rigidly onto the grid cube $\\sigma(k)$.",
+   "declaration": "MathlibExt.Dynamics.LaxApproximationWanted.Dynamics.LaxApproximation.IsCyclicCubeExchange",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaxApproximationWanted.lean",
+    "line": 107,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/lax-approximation-theorem/lax-approximation.md",
+   "title": "Lax's approximation theorem",
+   "statement": "Let $d \\ge 1$ be a natural number and let $T$ be a toral\ndynamical system on the torus $\\mathbb{T}^d = (\\mathbb{R}/\\mathbb{Z})^d$, regarded as a\nmeasurable, invertible, volume-preserving transformation of $\\mathbb{T}^d$. Then for every\n$\\varepsilon \\in (0, \\infty]$ there are a natural number $n$ and a measurable, invertible,\nvolume-preserving transformation $S$ of $\\mathbb{T}^d$ such that $S$ is a cyclic cube exchange\nwith $n$ subdivisions and $\\delta(T, S) < \\varepsilon$, where $\\delta$ is the\nessential-supremum distance between volume-preserving maps.\n\n## Sources\n\n- P. D. Lax, *Approximation of measure preserving transformations*, Comm. Pure Appl. Math. 24 (1971). Knill, *Some fundamental theorems in mathematics*, §110. Problem `lax_approximation` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.LaxApproximationWanted.Dynamics.LaxApproximation.lax_approximation",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaxApproximationWanted.lean",
+    "line": 117,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/lax-approximation-theorem/to-volume-preserving-equiv.md",
+   "title": "Toral dynamical systems as volume-preserving transformations",
+   "statement": "Let $d$ be a natural\nnumber. A volume-preserving homeomorphism $T$ of the torus\n$\\mathbb{T}^d = (\\mathbb{R}/\\mathbb{Z})^d$ is regarded as a measurable, invertible,\nvolume-preserving transformation of $\\mathbb{T}^d$: the same map, with its inverse, viewed as\na measurable equivalence.",
+   "declaration": "MathlibExt.Dynamics.LaxApproximationWanted.Dynamics.LaxApproximation.ToralDynamicalSystem.toVolumePreservingEquiv",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaxApproximationWanted.lean",
+    "line": 89,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/lax-approximation-theorem/toral-dynamical-system.md",
+   "title": "Toral dynamical system",
+   "statement": "Let $d$ be a natural number. A toral dynamical system on the\ntorus $\\mathbb{T}^d = (\\mathbb{R}/\\mathbb{Z})^d$ is a homeomorphism of $\\mathbb{T}^d$ that\npreserves the volume measure.",
+   "declaration": "MathlibExt.Dynamics.LaxApproximationWanted.Dynamics.LaxApproximation.ToralDynamicalSystem",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaxApproximationWanted.lean",
+    "line": 83,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/lax-approximation-theorem/torus.md",
+   "title": "Torus",
+   "statement": "For a natural number $d$, the $d$-dimensional torus is\n$\\mathbb{T}^d = (\\mathbb{R}/\\mathbb{Z})^d$, the product of $d$ copies of the circle\n$\\mathbb{R}/\\mathbb{Z}$.",
+   "declaration": "MathlibExt.Dynamics.LaxApproximationWanted.Dynamics.LaxApproximation.Torus",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaxApproximationWanted.lean",
+    "line": 67,
+    "kind": "abbrev",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/lax-approximation-theorem/volume-preserving-equiv.md",
+   "title": "Volume-preserving transformations of the torus",
+   "statement": "Let $d$ be a natural number. A\nvolume-preserving transformation of the torus $\\mathbb{T}^d = (\\mathbb{R}/\\mathbb{Z})^d$ is a\nbijection $T$ of $\\mathbb{T}^d$ such that $T$ and $T^{-1}$ are measurable and $T$ preserves\nthe volume measure.",
+   "declaration": "MathlibExt.Dynamics.LaxApproximationWanted.Dynamics.LaxApproximation.VolumePreservingEquiv",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaxApproximationWanted.lean",
+    "line": 71,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/multiplicative-recurrence-along-pythagorean-pair/conjecture-holds.md",
+   "title": "Multiplicative recurrence along Pythagorean pairs",
+   "statement": "Let $(X, \\mu)$ be a probability space\nand let $(T_a)_{a \\ge 1}$, indexed by the positive integers, be measurable bijections of $X$ with\nmeasurable inverses that preserve $\\mu$, such that $T_1$ is the identity and\n$T_{ab} = T_a \\circ T_b$ for all positive integers $a, b$. Then for every measurable set\n$A \\subseteq X$ with $\\mu(A) > 0$ there exist positive integers $m > n$ such that\n\n$$\\mu\\bigl(T_{2mn}(A) \\cap T_{(m-n)(m+n)}(A)\\bigr) > 0.$$\n\nResolved true: Resolved by Frantzikinakis-Klurman-Moreira, Partition Regularity of Pythagorean\nPairs (arXiv:2309.10636), Theorem 2.1(i): applied with coefficients 1 and 2 to the inverse\nfamily, it yields the two forward-image indices of AMR-047-0034. The statement is retained as a\nresolved target. Source: Frantzikinakis, Klurman, Moreira, Partition Regularity of Pythagorean\nPairs, arXiv:2309.10636, Theorem 2.1(i), https://arxiv.org/abs/2309.10636. Moved from\n`OpenConjectures/Dynamics/MultStructureRecurrence`.",
+   "declaration": "MathlibExt.Dynamics.MultStructureRecurrenceWanted.conjecture_holds",
+   "lean": {
+    "file": "WantedExt/Dynamics/MultStructureRecurrenceWanted.lean",
+    "line": 58,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/multiplicative-recurrence-along-pythagorean-pair/conjecture.md",
+   "title": "Pythagorean-pair recurrence problem (AMR-047-0034)",
+   "statement": "The proposition that for every\nprobability space $(X, \\mu)$ and every family $(T_a)_{a \\ge 1}$, indexed by the positive integers,\nof measurable bijections of $X$ with measurable inverses that preserve $\\mu$, such that $T_1$ is\nthe identity and $T_{ab} = T_a \\circ T_b$ for all positive integers $a, b$, every measurable set\n$A \\subseteq X$ with $\\mu(A) > 0$ admits positive integers $m > n$ with\n\n$$\\mu\\bigl(T_{2mn}(A) \\cap T_{(m-n)(m+n)}(A)\\bigr) > 0.$$",
+   "declaration": "MathlibExt.Dynamics.MultStructureRecurrenceWanted.conjecture",
+   "lean": {
+    "file": "WantedExt/Dynamics/MultStructureRecurrenceWanted.lean",
+    "line": 38,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/rokhlin-lemma/box-shape.md",
+   "title": "Integer box",
+   "statement": "For natural numbers $d$ and $N$, the integer box $[0, N)^d$ is the finite set\nof vectors $v \\in \\mathbb{Z}^d$ with $0 \\le v_i < N$ for every coordinate $i$.",
+   "declaration": "MathlibExt.Dynamics.OrnsteinWeissWanted.Dynamics.boxShape",
+   "lean": {
+    "file": "WantedExt/Dynamics/OrnsteinWeissWanted.lean",
+    "line": 84,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/rokhlin-lemma/is-aperiodic.md",
+   "title": "Aperiodic transformation",
+   "statement": "Let $\\mu$ be a measure on a measurable space $\\Omega$. A map\n$T : \\Omega \\to \\Omega$ is aperiodic with respect to $\\mu$ if the set of periodic points of $T$,\nthe points $x$ with $T^k(x) = x$ for some $k \\ge 1$, where $T^k$ is the $k$-fold iterate of $T$,\nhas (outer) $\\mu$-measure zero. Equivalently, for $\\mu$-almost every $x$, no positive iterate of\n$T$ fixes $x$.",
+   "declaration": "MathlibExt.Dynamics.RokhlinLemmaWanted.Dynamics.IsAperiodic",
+   "lean": {
+    "file": "WantedExt/Dynamics/RokhlinLemmaWanted.lean",
+    "line": 80,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/rokhlin-lemma/is-free-action.md",
+   "title": "Free $\\mathbb{Z}^d$-action",
+   "statement": "Let $d$ be a natural number, let $\\mu$ be a measure on a\nmeasurable space $\\Omega$, and let $T$ assign to each $v \\in \\mathbb{Z}^d$ a map\n$T_v \\colon \\Omega \\to \\Omega$. Then $T$ is free (in the Ornstein–Weiss sense) with respect to\n$\\mu$ if, for every nonzero $v \\in \\mathbb{Z}^d$, the set of points $x \\in \\Omega$ with\n$T_v(x) = x$ has $\\mu$-measure zero.",
+   "declaration": "MathlibExt.Dynamics.OrnsteinWeissWanted.Dynamics.IsFreeAction",
+   "lean": {
+    "file": "WantedExt/Dynamics/OrnsteinWeissWanted.lean",
+    "line": 79,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/rokhlin-lemma/is-rokhlin-tower.md",
+   "title": "Rokhlin tower",
+   "statement": "Let $\\Omega$ be a measurable space, $T : \\Omega \\to \\Omega$ a map and\n$n \\in \\mathbb{N}$. A set $B \\subseteq \\Omega$ is the base of a Rokhlin tower of height $n$\nfor $T$ if $B$ is measurable and the floors $B, T(B), \\dots, T^{n-1}(B)$ are pairwise\ndisjoint, that is, $T^i(B) \\cap T^j(B) = \\emptyset$ for all $i \\ne j$ with $i, j < n$; here\n$T^k(B)$ is the image of $B$ under the $k$-fold iterate of $T$.\n\nOnly the base is required to be measurable. For a non-invertible $T$, the floors need not be\nmeasurable, so evaluating a measure on their union uses its outer measure.",
+   "declaration": "MathlibExt.Dynamics.RokhlinLemmaWanted.Dynamics.IsRokhlinTower",
+   "lean": {
+    "file": "WantedExt/Dynamics/RokhlinLemmaWanted.lean",
+    "line": 99,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/rokhlin-lemma/ornstein-weiss-rokhlin.md",
+   "title": "Ornstein–Weiss Rokhlin lemma for $\\mathbb{Z}^d$-actions",
+   "statement": "Let $d \\ge 1$, let $\\Omega$ be a\nstandard Borel space with a probability measure $\\mu$, and let $T$ assign to each\n$v \\in \\mathbb{Z}^d$ a map $T_v \\colon \\Omega \\to \\Omega$ such that $T_0$ is the identity,\n$T_{u + v} = T_u \\circ T_v$ for all $u, v \\in \\mathbb{Z}^d$, every $T_v$ is measure preserving\nfor $\\mu$, and the action is free (for every $v \\ne 0$ the set of fixed points of $T_v$ has\n$\\mu$-measure zero). Then for every integer $N \\ge 1$ and every $\\varepsilon \\in (0, \\infty]$\nthere is a measurable set $B \\subseteq \\Omega$ such that the images $T_v(B)$, for $v$ in the\ninteger box $[0, N)^d$, are pairwise disjoint and their union has measure at least\n$1 - \\varepsilon$.\n\n## Sources\n\n- D. S. Ornstein and B. Weiss, *Entropy and isomorphism theorems for actions of amenable groups*, J. Anal. Math. 48 (1987), 1-141 — Theorem 5.2 establishes the multidimensional (and amenable-group) Rokhlin lemma. Listed as §109 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). No formalization found in any major prover. Problem `ornstein_weiss_rokhlin` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.OrnsteinWeissWanted.Dynamics.ornstein_weiss_rokhlin",
+   "lean": {
+    "file": "WantedExt/Dynamics/OrnsteinWeissWanted.lean",
+    "line": 95,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/rokhlin-lemma/rokhlin-lemma.md",
+   "title": "Rokhlin lemma for non-invertible maps",
+   "statement": "Let $\\Omega$ be a standard Borel space with a\nprobability measure $\\mu$, and let $T : \\Omega \\to \\Omega$ be a measure-preserving map that is\naperiodic with respect to $\\mu$. Then for every integer $n \\ge 1$ and every\n$\\varepsilon \\in (0, \\infty]$ there is a measurable set $B \\subseteq \\Omega$ such that the\nfloors $B, T(B), \\dots, T^{n-1}(B)$ are pairwise disjoint, where $T^k(B)$ is the image of $B$\nunder the $k$-fold iterate of $T$, and their union $\\bigcup_{k=0}^{n-1} T^k(B)$ has outer\n$\\mu$-measure at least $1 - \\varepsilon$ (truncated subtraction, so the bound is $0$ when\n$\\varepsilon \\ge 1$). No invertibility of $T$ is assumed.\n\n## Sources\n\n- V. A. Rokhlin, *A general measure-preserving transformation is not mixing*, Doklady Akademii Nauk SSSR 60 (1948), 349-351 (original Russian; English translation later); S. Kakutani, *Induced measure-preserving transformations*, Proc. Imp. Acad. Tokyo 19 (1943), 635-641 (independent discovery); S.-M. Heinemann and O. Schmitt, *Rokhlin's lemma for non-invertible maps*, Dynam. Systems Appl. 10 (2001), no. 2, 201-213. The classical form is listed as §109 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `rokhlin_lemma` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.RokhlinLemmaWanted.Dynamics.rokhlin_lemma",
+   "lean": {
+    "file": "WantedExt/Dynamics/RokhlinLemmaWanted.lean",
+    "line": 111,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/rokhlin-lemma/tower-floor.md",
+   "title": "Floor of a Rokhlin tower",
+   "statement": "For a map $T : \\Omega \\to \\Omega$, a set\n$B \\subseteq \\Omega$ and $k \\in \\mathbb{N}$, the level-$k$ floor with base $B$ is the image\n$T^k(B)$ of $B$ under the $k$-fold iterate $T^k$ of $T$; the level-$0$ floor is $B$.",
+   "declaration": "MathlibExt.Dynamics.RokhlinLemmaWanted.Dynamics.towerFloor",
+   "lean": {
+    "file": "WantedExt/Dynamics/RokhlinLemmaWanted.lean",
+    "line": 86,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/ergodic-theory/rokhlin-lemma/tower-union.md",
+   "title": "Union of a Rokhlin tower",
+   "statement": "For a map $T : \\Omega \\to \\Omega$, a set\n$B \\subseteq \\Omega$ and $n \\in \\mathbb{N}$, the union of the tower with base $B$ and height $n$\nis the set $\\bigcup_{k=0}^{n-1} T^k(B)$ of its floors $B, T(B), \\dots, T^{n-1}(B)$, where\n$T^k(B)$ is the image of $B$ under the $k$-fold iterate of $T$. It is empty when $n = 0$, and\nno disjointness of the floors is required.",
+   "declaration": "MathlibExt.Dynamics.RokhlinLemmaWanted.Dynamics.towerUnion",
+   "lean": {
+    "file": "WantedExt/Dynamics/RokhlinLemmaWanted.lean",
+    "line": 91,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/li-yorke-period-three-implies-periods.md",
+   "title": "Li–Yorke theorem: period three implies all periods",
+   "statement": "Let $f \\colon [0, 1] \\to [0, 1]$ be a\ncontinuous map. If some point of $[0, 1]$ has minimal period $3$ under $f$, then for every\npositive integer $n$ some point of $[0, 1]$ has minimal period $n$ under $f$.\n\n## Sources\n\n- T.-Y. Li and J. A. Yorke, Period Three Implies Chaos, Amer. Math. Monthly 82 (1975), 985-992, DOI 10.2307/2318254.",
+   "declaration": "MathlibExt.Dynamics.Periodic.LiYorkeWanted.liYorke_period_three_implies_periods",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Periodic/LiYorke.lean",
+    "line": 471,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/analytic-circle-diffeo.md",
+   "title": "Real-analytic circle diffeomorphisms",
+   "statement": "A real-analytic orientation-preserving\ndiffeomorphism of the circle is given by a lift $F : \\mathbb{R} \\to \\mathbb{R}$ together with an\ninverse lift $G : \\mathbb{R} \\to \\mathbb{R}$, both real-analytic on all of $\\mathbb{R}$, such that\nfor every real $x$ we have $F(x + 1) = F(x) + 1$, $G(x + 1) = G(x) + 1$, $G(F(x)) = x$ and\n$F(G(x)) = x$, and $F$ is strictly increasing.\n\n## Sources\n\n- Hayman (2018), Problem 2.90; https://arxiv.org/abs/1809.07200.",
+   "declaration": "MathlibExt.Analysis.HermanProblem290Wanted.AnalyticCircleDiffeo",
+   "lean": {
+    "file": "WantedExt/Analysis/HermanProblem290Wanted.lean",
+    "line": 61,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/conjecture-holds.md",
+   "title": "Herman's analytic linearization problem has a positive answer",
+   "statement": "There is an irrational real\nnumber $\\alpha$ that is not Diophantine such that, for every real-analytic circle diffeomorphism\nwhose lift $F$ has rotation number $\\alpha$, $F$ is analytically conjugate to the rotation by\n$\\alpha$.\n\nYoccoz characterized the Herman class $\\mathcal{H}$ of rotation numbers $\\alpha$ for which every\nreal-analytic circle diffeomorphism with rotation number $\\alpha$ is analytically linearizable,\nand proved that $\\mathcal{H}$ strictly contains the set of Diophantine numbers; any $\\alpha$ in\n$\\mathcal{H}$ that is not Diophantine has the required property.\n\n## Sources\n\n- H. Eliasson, B. Fayad and R. Krikorian, Jean-Christophe Yoccoz and the theory of circle diffeomorphisms (2018), arXiv:1810.07107 (account of J.-C. Yoccoz, Analytic linearization of circle diffeomorphisms, Lecture Notes in Math. 1784, Springer (2002), 125-173), https://arxiv.org/abs/1810.07107.",
+   "declaration": "MathlibExt.Analysis.HermanProblem290Wanted.conjecture_holds",
+   "lean": {
+    "file": "WantedExt/Analysis/HermanProblem290Wanted.lean",
+    "line": 105,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/conjecture.md",
+   "title": "Herman's analytic linearization problem",
+   "statement": "The statement that there is an irrational real\nnumber $\\alpha$ that is not Diophantine such that, for every real-analytic circle diffeomorphism\nwhose lift $F$ has rotation number $\\alpha$, $F$ is analytically conjugate to the rotation by\n$\\alpha$.\n\nM. R. Herman asked whether such an $\\alpha$ exists; this is Problem 2.90 in Hayman's list.\n\n## Sources\n\n- Hayman (2018), Problem 2.90; https://arxiv.org/abs/1809.07200.",
+   "declaration": "MathlibExt.Analysis.HermanProblem290Wanted.conjecture",
+   "lean": {
+    "file": "WantedExt/Analysis/HermanProblem290Wanted.lean",
+    "line": 90,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/has-rotation-number.md",
+   "title": "Rotation number of a lift",
+   "statement": "Let $F : \\mathbb{R} \\to \\mathbb{R}$ be a function, and for a\nnatural number $n$ write $F^n$ for the $n$-th iterate of $F$. Then $F$ has rotation number\n$\\alpha \\in \\mathbb{R}$ when, for every real $x$, $(F^n(x) - x)/n$ tends to $\\alpha$ as $n$ tends\nto infinity.\n\n## Sources\n\n- Hayman (2018), Problem 2.90; https://arxiv.org/abs/1809.07200.",
+   "declaration": "MathlibExt.Analysis.HermanProblem290Wanted.HasRotationNumber",
+   "lean": {
+    "file": "WantedExt/Analysis/HermanProblem290Wanted.lean",
+    "line": 75,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/is-analytically-conjugate-to-rotation.md",
+   "title": "Analytic conjugacy to a rotation",
+   "statement": "A function $F : \\mathbb{R} \\to \\mathbb{R}$ is\nanalytically conjugate to the rotation by $\\alpha \\in \\mathbb{R}$ when there is a real-analytic\ncircle diffeomorphism with lift $H$ such that $H(F(x)) = H(x) + \\alpha$ for every real $x$.\n\n## Sources\n\n- Hayman (2018), Problem 2.90; https://arxiv.org/abs/1809.07200.",
+   "declaration": "MathlibExt.Analysis.HermanProblem290Wanted.IsAnalyticallyConjugateToRotation",
+   "lean": {
+    "file": "WantedExt/Analysis/HermanProblem290Wanted.lean",
+    "line": 82,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/linearization-of-circle-diffeomorphisms/is-diophantine.md",
+   "title": "Diophantine numbers",
+   "statement": "A real number $\\alpha$ is Diophantine when there are real numbers\n$\\gamma > 0$ and $\\tau \\ge 0$ such that $|\\alpha - p/q| \\ge \\gamma / q^{2 + \\tau}$ for every\ninteger $p$ and every integer $q \\ge 1$.\n\n## Sources\n\n- Hayman (2018), Problem 2.90; https://arxiv.org/abs/1809.07200.",
+   "declaration": "MathlibExt.Analysis.HermanProblem290Wanted.IsDiophantine",
+   "lean": {
+    "file": "WantedExt/Analysis/HermanProblem290Wanted.lean",
+    "line": 51,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/ideal-period-word-count-blocks.md",
+   "title": "Block counts of the ideal period words",
+   "statement": "For every $n \\ge 1$, the ideal period word $d_n$\ncontains exactly $2^{n-1}$ blocks $2, 2$, and the number $c_n$ of its blocks $2, 1, 1$ satisfies\n$3 c_n = 2^n - (-1)^n$; that is, $c_n = (2^n + 1)/3$ for odd $n$ and $c_n = (2^n - 1)/3$ for even\n$n$.\n\nIn this lemma the source names the blocks $a = 2, 2$ and $b = 2, 1, 1$, the reverse of its\nDefinition 7; the counts are stated by block, so the naming does not matter.\n\n## Sources\n\n- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 8.",
+   "declaration": "MetaMathlibExt.idealPeriodWord_count_blocks",
+   "lean": {
+    "file": "WantedExt/Dynamics/NExpansionGapsWanted.lean",
+    "line": 186,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/ideal-period-word-five.md",
+   "title": "The fifth ideal period word",
+   "statement": "Writing $a$ for the block $2, 1, 1$ and $b$ for the block\n$2, 2$ of partial quotients, the ideal period word $d_5$ is $d_4$ followed by the blocks\n$abb\\,ab\\,ab\\,abb\\,ab\\,ab$, in this order.\n\nThis is the second recursion rule applied to $d_4 = [j, abb]$ with $j = [abb, ab, ab, abb]$.\n\n## Sources\n\n- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 7.",
+   "declaration": "MetaMathlibExt.idealPeriodWord_five",
+   "lean": {
+    "file": "WantedExt/Dynamics/NExpansionGapsWanted.lean",
+    "line": 98,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/ideal-period-word-flatten-length-small.md",
+   "title": "Lengths of the first ideal period words",
+   "statement": "The digit strings of the ideal period words\n$d_1, d_2, d_3, d_4, d_5$ have lengths $5, 7, 17, 31, 65$ respectively.\n\n## Sources\n\n- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 7.",
+   "declaration": "MetaMathlibExt.idealPeriodWord_flatten_length_small",
+   "lean": {
+    "file": "WantedExt/Dynamics/NExpansionGapsWanted.lean",
+    "line": 108,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/ideal-period-word-flatten-length.md",
+   "title": "Length of the ideal period words",
+   "statement": "For every $n \\ge 1$, the digit string of the ideal\nperiod word $d_n$ (the concatenation of its blocks of partial quotients) has length\n$|d_n| = 2^{n+1} - (-1)^n$.\n\nThe source derives this from the recursion $|d_n| = 2|d_{n-1}| - 3(-1)^n$.\n\n## Sources\n\n- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 7.",
+   "declaration": "MetaMathlibExt.idealPeriodWord_flatten_length",
+   "lean": {
+    "file": "WantedExt/Dynamics/NExpansionGapsWanted.lean",
+    "line": 174,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/ideal-period-word-point-le-orbit.md",
+   "title": "The ideal periodic point is the least point of its orbit",
+   "statement": "Let $N$ be a natural number,\nlet $\\alpha$ be a real number with $0 < \\alpha \\le \\sqrt N - 1$, and let $T_\\alpha$ be the\n$N$-expansion map on $I_\\alpha = [\\alpha, \\alpha + 1]$. Let $n \\ge 1$, write $|d_n|$ for the\nlength of the digit string of the ideal period word $d_n$, and let $x \\in I_\\alpha$ be such that\nfor every $i \\ge 0$ the digit of $T_\\alpha^i(x)$ is entry $i \\bmod |d_n|$ (counting from $0$) of\nthat digit string, so that the expansion of $x$ is purely periodic with period word $d_n$. Then\n$x \\le T_\\alpha^j(x)$ for every $j \\ge 0$.\n\nThe source assumes Phase I; only the assumption $0 < \\alpha \\le \\sqrt N - 1$ is kept here.\n\n## Sources\n\n- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 5.",
+   "declaration": "MetaMathlibExt.idealPeriodWord_point_le_orbit",
+   "lean": {
+    "file": "WantedExt/Dynamics/NExpansionGapsWanted.lean",
+    "line": 160,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/ideal-period-word-point-lt-iff.md",
+   "title": "The ideal periodic points decrease",
+   "statement": "Let $N$ be a natural number, let $\\alpha$ be a real\nnumber with $0 < \\alpha \\le \\sqrt N - 1$, and let $T_\\alpha$ be the $N$-expansion map on\n$I_\\alpha = [\\alpha, \\alpha + 1]$. For $m \\ge 1$ write $|d_m|$ for the length of the digit string\nof the ideal period word $d_m$. Let $k, \\ell \\ge 1$ and let $x, y \\in I_\\alpha$ be such that for\nevery $i \\ge 0$ the digit of $T_\\alpha^i(x)$ is entry $i \\bmod |d_k|$ (counting from $0$) of the\ndigit string of $d_k$, and the digit of $T_\\alpha^i(y)$ is entry $i \\bmod |d_\\ell|$ of the digit\nstring of $d_\\ell$; that is, the expansions of $x$ and $y$ are purely periodic with period words\n$d_k$ and $d_\\ell$. Then $x < y$ if and only if $\\ell < k$.\n\nThe source works in Phase I; only the assumption $0 < \\alpha \\le \\sqrt N - 1$ is kept here, which\nmakes $T_\\alpha$ expanding, so that a digit sequence determines its point.\n\n## Sources\n\n- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 4.",
+   "declaration": "MetaMathlibExt.idealPeriodWord_point_lt_iff",
+   "lean": {
+    "file": "WantedExt/Dynamics/NExpansionGapsWanted.lean",
+    "line": 143,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/ideal-period-word.md",
+   "title": "Ideal period words",
+   "statement": "For $n \\ge 1$, the ideal period word $d_n$ is a finite list of blocks\nof partial quotients, each block being $a = 2, 1, 1$ or $b = 2, 2$. Writing lists of blocks by\njuxtaposition, with commas between parts, $d_1 = [ab]$, $d_2 = [abb]$, $d_3 = [abb, ab, ab]$ and\n$d_4 = [abb, ab, ab, abb, abb]$; for $n \\ge 5$, if $d_{n-1} = [j, ab, ab]$ for a list $j$ then\n$d_n = [j, ab, ab, j, abb]$, and if $d_{n-1} = [j, abb]$ then $d_n = [j, abb, j, ab, ab]$. The\ndigit string of $d_n$ is the concatenation of its blocks. For $n = 0$ the list is empty, a\nplaceholder.\n\n## Sources\n\n- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 7.",
+   "declaration": "MetaMathlibExt.idealPeriodWord",
+   "lean": {
+    "file": "WantedExt/Dynamics/NExpansionGapsWanted.lean",
+    "line": 79,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/n-expansion-digit-of-ne.md",
+   "title": "The digit away from the left endpoint",
+   "statement": "Let $N$ be a natural number and let $\\alpha$ and\n$x$ be real numbers with $x \\ne \\alpha$. Then the digit of $x$ for the $N$-expansion map on\n$[\\alpha, \\alpha + 1]$ is $\\lfloor N/x - \\alpha \\rfloor$.\n\n## Sources\n\n- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 1.",
+   "declaration": "MetaMathlibExt.nExpansionDigit_of_ne",
+   "lean": {
+    "file": "WantedExt/Dynamics/NExpansionGapsWanted.lean",
+    "line": 40,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/n-expansion-digit.md",
+   "title": "Digit of the N-expansion map",
+   "statement": "Let $N$ be a natural number and $\\alpha$ a real number, and\nwrite $I_\\alpha = [\\alpha, \\alpha + 1]$. The digit of a real number $x$ is\n$d(x) = \\lfloor N/x - \\alpha \\rfloor$, except that when $N/\\alpha - \\alpha$ is an integer, the\ndigit of $\\alpha$ itself is $d(\\alpha) = N/\\alpha - \\alpha - 1$.\n\nWith this choice the $N$-expansion map $T_\\alpha(x) = N/x - d(x)$ sends $\\alpha$ to $\\alpha + 1$\nin the integer case, every other point of $I_\\alpha$ lands in $[\\alpha, \\alpha + 1)$, and no\ncylinder is a single point.\n\n## Sources\n\n- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 1.",
+   "declaration": "MetaMathlibExt.nExpansionDigit",
+   "lean": {
+    "file": "WantedExt/Dynamics/NExpansionGapsWanted.lean",
+    "line": 26,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/n-expansion-map-mem-ico-of-ne.md",
+   "title": "The N-expansion map away from the left endpoint",
+   "statement": "Let $N$ be a natural number and let\n$\\alpha$ and $x$ be real numbers with $x \\ne \\alpha$. Then the $N$-expansion map $T_\\alpha$\nsatisfies $\\alpha \\le T_\\alpha(x) < \\alpha + 1$.\n\nIndeed $T_\\alpha(x) = \\alpha + \\{N/x - \\alpha\\}$, where $\\{\\cdot\\}$ denotes the fractional part.\n\n## Sources\n\n- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 1.",
+   "declaration": "MetaMathlibExt.nExpansionMap_mem_Ico_of_ne",
+   "lean": {
+    "file": "WantedExt/Dynamics/NExpansionGapsWanted.lean",
+    "line": 48,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/n-expansion-map-self-of-int.md",
+   "title": "The left endpoint goes to the right endpoint when $N/\\alpha - \\alpha$ is an integer",
+   "statement": "Let\n$N$ be a natural number and $\\alpha$ a real number such that $N/\\alpha - \\alpha$ is an integer,\nwith the convention $N/0 = 0$. Then the $N$-expansion map $T_\\alpha$ satisfies\n$T_\\alpha(\\alpha) = \\alpha + 1$.\n\n## Sources\n\n- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 1.",
+   "declaration": "MetaMathlibExt.nExpansionMap_self_of_int",
+   "lean": {
+    "file": "WantedExt/Dynamics/NExpansionGapsWanted.lean",
+    "line": 62,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/n-expansion-map.md",
+   "title": "The $N$-expansion map",
+   "statement": "For a natural number $N$ and a real number $\\alpha$, the\n$N$-expansion map is $T_\\alpha(x) = N/x - d_\\alpha(x)$ for real $x$, where $d_\\alpha(x)$ is the\n$N$-expansion digit: $d_\\alpha(x) = \\lfloor N/x - \\alpha \\rfloor$, except that\n$d_\\alpha(\\alpha) = \\lfloor N/\\alpha - \\alpha \\rfloor - 1$ when $N/\\alpha - \\alpha$ is an integer.\nThe map is meant to act on the interval $I_\\alpha = [\\alpha, \\alpha + 1]$, but it is defined for\nevery real $x$, with the convention $N/0 = 0$.\n\n## Sources\n\n- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 1.",
+   "declaration": "MetaMathlibExt.nExpansionMap",
+   "lean": {
+    "file": "WantedExt/Dynamics/NExpansionGapsWanted.lean",
+    "line": 33,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/n-expansion-orbit-gt-iff-odd.md",
+   "title": "Orbits with the same digits alternate in order",
+   "statement": "Let $N$ be a positive integer and let\n$0 < \\alpha < \\alpha'$ be real numbers. Write $T_\\alpha$ for the $N$-expansion map and $d_\\alpha$\nfor the $N$-expansion digit with parameter $\\alpha$, and let $m$ be a natural number. If the\norbits $\\alpha_j = T_\\alpha^j(\\alpha)$ and $\\alpha'_j = T_{\\alpha'}^j(\\alpha')$ satisfy\n$d_\\alpha(\\alpha_j) = d_{\\alpha'}(\\alpha'_j)$ for all $j \\in \\{0, \\dots, m\\}$, then\n$\\alpha'_m < \\alpha_m$ if and only if $m$ is odd. Likewise, if the orbits\n$\\beta_j = T_\\alpha^j(\\alpha + 1)$ and $\\beta'_j = T_{\\alpha'}^j(\\alpha' + 1)$ satisfy\n$d_\\alpha(\\beta_j) = d_{\\alpha'}(\\beta'_j)$ for all $j \\in \\{0, \\dots, m\\}$, then\n$\\beta'_m < \\beta_m$ if and only if $m$ is odd.\n\nThe paper assumes $\\alpha$ and $\\alpha'$ in Phase I (so in particular $\\alpha' \\le \\sqrt N - 1$);\nfor $N > 0$ neither assumption is needed (the orbits stay in $[\\alpha, \\alpha + 1]$ and\n$[\\alpha', \\alpha' + 1]$, where $x \\mapsto N/x$ is strictly decreasing), so both are replaced by\n$N > 0$. For $N = 0$ the claim fails ($\\alpha = 1/5$, $\\alpha' = 3/10$, $m = 1$).\n\n## Sources\n\n- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 2.",
+   "declaration": "MetaMathlibExt.nExpansion_orbit_gt_iff_odd",
+   "lean": {
+    "file": "WantedExt/Dynamics/NExpansionGapsWanted.lean",
+    "line": 123,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/natural-duals-of-m-bius-maps/moebius-dual-central-equations.md",
+   "title": "Central equations for natural duals of Moebius maps",
+   "statement": "Let $\\alpha, \\beta, \\gamma, \\delta$\nand $\\xi$ be real numbers with $\\alpha > 0$, $\\beta < 1$, $\\gamma > -1$ and $\\delta \\ge 0$. Define\nthe dual branches\n$V^\\#_{\\alpha\\gamma}(y) = (\\gamma - 2\\alpha - \\alpha y)/(2\\alpha + 1 + \\alpha y)$,\n$V^\\#_{\\alpha\\delta}(y) = (2\\alpha\\delta - 1 + \\alpha\\delta y)/(2\\alpha + 1 + \\alpha y)$,\n$V^\\#_{\\beta\\gamma}(y) = (2\\beta + \\gamma - 2 + (\\beta + \\gamma - 1) y)/\n(3 - 2\\beta + (2 - \\beta) y)$ and\n$V^\\#_{\\beta\\delta}(y) = (2\\delta - 2\\beta\\delta - 1 + (\\delta - \\beta\\delta - 1) y)/\n(3 - 2\\beta + (2 - \\beta) y)$, and put $\\eta = (-2 + 2\\beta + \\gamma)/(2 - \\beta)$. Suppose that\n$3 - 2\\beta + (2 - \\beta)\\xi \\ne 0$, $2\\alpha + 1 + \\alpha\\xi \\ne 0$,\n$V^\\#_{\\beta\\gamma}(\\xi) = V^\\#_{\\beta\\delta}(\\xi)$ and\n$V^\\#_{\\alpha\\delta}(\\xi) = V^\\#_{\\alpha\\gamma}(\\xi)$. Then\n$\\alpha + \\alpha\\delta + \\delta = \\beta + \\gamma + \\beta\\delta$; and if moreover\n$2\\alpha + 1 + \\alpha\\eta \\ne 0$ and $\\xi = V^\\#_{\\alpha\\gamma}(\\eta)$, then\n$\\alpha^2\\gamma + \\alpha^2\\gamma\\delta + 2\\alpha + \\beta + \\beta\\gamma + 2\\alpha^2 +\n2\\alpha^2\\delta + 4\\alpha\\delta + 2\\alpha\\gamma\\delta = 2 + \\alpha\\gamma^2 + 2\\gamma +\n2\\alpha\\beta + \\alpha\\gamma + \\alpha\\beta\\gamma + \\alpha\\beta\\gamma\\delta + 2\\alpha\\beta\\delta$.\n\n## Sources\n\n- Fritz Schweiger, *A Remark on Singular Duals of Moebius Maps*, INTEGERS 24 (2024), Article A17, Lemma 3.",
+   "declaration": "MetaMathlibExt.moebius_dual_central_equations",
+   "lean": {
+    "file": "WantedExt/Dynamics/MoebiusSingularDualWanted.lean",
+    "line": 64,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/natural-duals-of-m-bius-maps/moebius-dual-endpoint-ne-neg-one.md",
+   "title": "Moebius dual branches disagree at −1",
+   "statement": "Let $\\alpha, \\beta, \\delta$ be real numbers with\n$\\alpha > 0$, $\\beta < 1$ and $\\delta \\ge 0$, and define the dual branches\n$V^\\#_{\\alpha\\delta}(y) = (2\\alpha\\delta - 1 + \\alpha\\delta y)/(2\\alpha + 1 + \\alpha y)$ and\n$V^\\#_{\\beta\\delta}(y) = (2\\delta - 2\\beta\\delta - 1 + (\\delta - \\beta\\delta - 1) y)/\n(3 - 2\\beta + (2 - \\beta) y)$. Then $V^\\#_{\\beta\\delta}(-1) \\ne V^\\#_{\\alpha\\delta}(-1)$.\n\nEquality would force $\\delta = -1$.\n\n## Sources\n\n- Fritz Schweiger, *A Remark on Singular Duals of Moebius Maps*, INTEGERS 24 (2024), Article A17, Lemma 2.",
+   "declaration": "MetaMathlibExt.moebius_dual_endpoint_ne_neg_one",
+   "lean": {
+    "file": "WantedExt/Dynamics/MoebiusSingularDualWanted.lean",
+    "line": 50,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/natural-duals-of-m-bius-maps/moebius-fixed-point-eq-iff.md",
+   "title": "Fixed points of a Moebius dual branch",
+   "statement": "Let $\\beta, \\gamma, \\eta$ be real numbers with\n$\\beta \\ne 2$ and $3 - 2\\beta + (2 - \\beta)\\eta \\ne 0$. Then\n$(-2 + 2\\beta + \\gamma + (-1 + \\beta + \\gamma)\\eta)/(3 - 2\\beta + (2 - \\beta)\\eta) = \\eta$\nif and only if $\\eta = -1$ or $\\eta = (-2 + 2\\beta + \\gamma)/(2 - \\beta)$.\n\nThe paper's further side conditions on $\\beta$ and $\\gamma$ are not used.\n\n## Sources\n\n- Fritz Schweiger, *A Remark on Singular Duals of Moebius Maps*, INTEGERS 24 (2024), Article A17, Lemma 1.",
+   "declaration": "MetaMathlibExt.moebius_fixedPoint_eq_iff",
+   "lean": {
+    "file": "WantedExt/Dynamics/MoebiusSingularDualWanted.lean",
+    "line": 40,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/natural-duals-of-m-bius-maps/moebius-natural-dual-singular.md",
+   "title": "Singularity of natural duals of Moebius maps (algebraic form)",
+   "statement": "Let\n$\\alpha, \\beta, \\gamma, \\delta$ be real numbers with $\\alpha > 0$, $\\beta < 1$, $\\gamma > -1$ and\n$\\delta \\ge 0$. Define the dual branches\n$V^\\#_{\\alpha\\gamma}(y) = (\\gamma - 2\\alpha - \\alpha y)/(2\\alpha + 1 + \\alpha y)$,\n$V^\\#_{\\alpha\\delta}(y) = (2\\alpha\\delta - 1 + \\alpha\\delta y)/(2\\alpha + 1 + \\alpha y)$,\n$V^\\#_{\\beta\\gamma}(y) = (2\\beta + \\gamma - 2 + (\\beta + \\gamma - 1) y)/\n(3 - 2\\beta + (2 - \\beta) y)$ and\n$V^\\#_{\\beta\\delta}(y) = (2\\delta - 2\\beta\\delta - 1 + (\\delta - \\beta\\delta - 1) y)/\n(3 - 2\\beta + (2 - \\beta) y)$, and put $\\eta = (-2 + 2\\beta + \\gamma)/(2 - \\beta)$ and\n$\\xi = V^\\#_{\\alpha\\gamma}(\\eta)$. If $2\\alpha + 1 + \\alpha\\eta \\ne 0$,\n$3 - 2\\beta + (2 - \\beta)\\xi \\ne 0$, $2\\alpha + 1 + \\alpha\\xi \\ne 0$,\n$V^\\#_{\\beta\\gamma}(\\xi) = V^\\#_{\\beta\\delta}(\\xi)$ and\n$V^\\#_{\\alpha\\delta}(\\xi) = V^\\#_{\\alpha\\gamma}(\\xi)$, then $\\xi = \\eta$.\n\nHere $\\eta$ is a fixed point of $V^\\#_{\\beta\\gamma}$, and $\\xi = \\eta$ says that the natural dual\n$[\\eta, \\xi]$ reduces to a single point.\n\n## Sources\n\n- Fritz Schweiger, *A Remark on Singular Duals of Moebius Maps*, INTEGERS 24 (2024), Article A17, Theorem 1.",
+   "declaration": "MetaMathlibExt.moebius_naturalDual_singular",
+   "lean": {
+    "file": "WantedExt/Dynamics/MoebiusSingularDualWanted.lean",
+    "line": 89,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/poincar-bendixson-theorem/plane.md",
+   "title": "The Euclidean plane",
+   "statement": "The ambient space is the plane $\\mathbb{R}^2$ with its Euclidean\ninner product and norm.",
+   "declaration": "MathlibExt.Dynamics.PoincareBendixsonWanted.Dynamics.Plane",
+   "lean": {
+    "file": "WantedExt/Dynamics/PoincareBendixsonWanted.lean",
+    "line": 68,
+    "kind": "abbrev",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/poincar-bendixson-theorem/poincare-bendixson.md",
+   "title": "Poincaré–Bendixson theorem",
+   "statement": "Let $F \\colon \\mathbb{R}^2 \\to \\mathbb{R}^2$ be a continuously\ndifferentiable vector field on the Euclidean plane, and let\n$\\gamma \\colon \\mathbb{R} \\to \\mathbb{R}^2$ be a curve such that for every $t \\ge 0$ the derivative\nof $\\gamma$ at $t$ within $[0, \\infty)$ is $F(\\gamma(t))$. Let\n$\\omega(\\gamma) = \\bigcap_{s \\in \\mathbb{R}} \\overline{\\gamma([s, \\infty))}$ be the $\\omega$-limit\nset of $\\gamma$. Then at least one of the following holds: the forward orbit\n$\\gamma([0, \\infty))$ is unbounded; $\\omega(\\gamma)$ contains a point $x_0$ with $F(x_0) = 0$; or\nthere are a real number $T > 0$ and a curve $\\beta \\colon \\mathbb{R} \\to \\mathbb{R}^2$ with\n$\\beta'(t) = F(\\beta(t))$ and $\\beta(t + T) = \\beta(t)$ for every real $t$ and with\n$F(\\beta(0)) \\ne 0$, such that $\\omega(\\gamma)$ equals the range of $\\beta$.\n\n## Sources\n\n- H. Poincaré, *Mémoire sur les courbes définies par une équation différentielle*, Journal de Mathématiques 7 (1881), 8 (1882), 1 (1885), 2 (1886); I. Bendixson, *Sur les courbes définies par des équations différentielles*, Acta Mathematica 24 (1901), 1-88. Listed as §63 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). The Isabelle/HOL/AFP entry by Fabian Immler and Yong Kiam Tan (https://www.isa-afp.org/entries/Poincare_Bendixson.html) uses John Harrison's Jordan curve theorem. Problem `poincare_bendixson` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.PoincareBendixsonWanted.Dynamics.poincare_bendixson",
+   "lean": {
+    "file": "WantedExt/Dynamics/PoincareBendixsonWanted.lean",
+    "line": 76,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/simplicity-conjecture/homeo.md",
+   "title": "Area-preserving homeomorphisms of the disc supported in the interior",
+   "statement": "Let $\\mathbb{D}$ be\nthe closed unit disc in $\\mathbb{R}^2$ and let $\\omega$ be the restriction of Lebesgue measure to\n$\\mathbb{D}$. $\\mathrm{Homeo}_c(\\mathbb{D}, \\omega)$ is the subgroup of the group of\nhomeomorphisms of $\\mathbb{D}$ consisting of the homeomorphisms $\\phi$ that preserve $\\omega$ and\nwhose support, the closure of $\\{x \\in \\mathbb{D} : \\phi(x) \\neq x\\}$, is contained in the open\nunit disc.",
+   "declaration": "MathlibExt.Dynamics.SimplicityConjectureWanted.SimplicityConjecture.Homeo",
+   "lean": {
+    "file": "WantedExt/Dynamics/SimplicityConjectureWanted.lean",
+    "line": 67,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/low-dimensional-dynamics/simplicity-conjecture/theorem-1-2.md",
+   "title": "Simplicity conjecture",
+   "statement": "Let $\\mathbb{D} \\subseteq \\mathbb{R}^2$ be the closed unit disc and let\n$\\omega$ be the restriction of Lebesgue measure to $\\mathbb{D}$. The group\n$\\mathrm{Homeo}_c(\\mathbb{D}, \\omega)$ of homeomorphisms of $\\mathbb{D}$ that preserve $\\omega$\nand whose support, the closure of the set of non-fixed points, lies in the open unit disc is not\nsimple: it is trivial or it has a normal subgroup other than the trivial subgroup and the whole\ngroup.\n\n## Sources\n\n- D. Cristofaro-Gardiner, V. Humilière, and S. Seyfaddini, `Proof of the simplicity conjecture`, Annals of Math, 199 (1) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_simplicity_conjecture` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.SimplicityConjectureWanted.SimplicityConjecture.theorem_1_2",
+   "lean": {
+    "file": "WantedExt/Dynamics/SimplicityConjectureWanted.lean",
+    "line": 83,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/entropy-dimension-and-lyapunov-exponents/dim-measure.md",
+   "title": "Hausdorff dimension of a measure",
+   "statement": "For a measure $\\mu$ on an extended metric space $M$\nequipped with a σ-algebra, the Hausdorff dimension of $\\mu$ is the infimum, in $[0, \\infty]$, of\nthe Hausdorff dimensions of the measurable sets $s \\subseteq M$ with $\\mu(M \\setminus s) = 0$.",
+   "declaration": "MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.dimMeasure",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaiSangYoungWanted.lean",
+    "line": 75,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/entropy-dimension-and-lyapunov-exponents/entropy-dimension-lyapunov.md",
+   "title": "Young's entropy–dimension–Lyapunov formula (planar case)",
+   "statement": "Let $T$ be a $C^2$\ndiffeomorphism of the Euclidean plane $\\mathbb{R}^2$: $T$ has a two-sided inverse $T^{-1}$ and\nboth $T$ and $T^{-1}$ are $C^2$. Let $K \\subseteq \\mathbb{R}^2$ be a compact set with\n$T(K) = K$, and let $\\mu$ be a Borel probability measure on $\\mathbb{R}^2$ with\n$\\mu(\\mathbb{R}^2 \\setminus K) = 0$ that is $T$-invariant and ergodic for $T$. Let $\\lambda_1$\nand $\\lambda_2$ be the $\\mu$-integrals of the upper and the lower Lyapunov exponent of $T$. Then\nthe Kolmogorov–Sinai entropy of $T$ with respect to $\\mu$ is\n\n$$h_\\mu(T) = \\frac{\\dim(\\mu) \\cdot H}{2},$$\n\nwhere $\\dim(\\mu)$ is the Hausdorff dimension of $\\mu$ and\n$H = \\frac{2 \\lambda_1 (-\\lambda_2)}{\\lambda_1 - \\lambda_2}$ is the harmonic mean of $\\lambda_1$\nand $-\\lambda_2$, taken to be $0$ when $\\lambda_1 = \\lambda_2$.\n\n## Sources\n\n- L.-S. Young, *Dimension, entropy and Lyapunov exponents*, Ergodic Theory Dynam. Systems 2 (1982), 109–124. Knill, *Some fundamental theorems in mathematics*, §103. Problem `entropy_dimension_lyapunov` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.entropy_dimension_lyapunov",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaiSangYoungWanted.lean",
+    "line": 133,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/entropy-dimension-and-lyapunov-exponents/entropy-w.md",
+   "title": "Entropy of a map relative to a partition",
+   "statement": "Let $\\mu$ be a measure on a measurable space\n$M$, let $T : M \\to M$ be a map and let $P$ be a finite family of subsets of $M$. The entropy of\n$T$ relative to $P$ is\n\n$$h_\\mu(T, P) = \\limsup_{n \\to \\infty} \\frac{1}{n} H_\\mu\\Big(\\bigvee_{k=0}^{n-1} T^{-k} P\\Big),$$\n\nwhere $\\bigvee_{k=0}^{n-1} T^{-k} P$ is the iterated join of $P$ under $T$; the Shannon entropy\nof a finite family $Q$ of sets is $H_\\mu(Q) = \\sum_{A \\in Q} -\\mu(A) \\log \\mu(A)$, with\n$0 \\log 0 = 0$ and with $\\mu(A)$ replaced by $0$ when $\\mu(A) = \\infty$; and the limit superior\nis taken to be $0$ when it is $+\\infty$ or $-\\infty$.",
+   "declaration": "MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.entropyW",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaiSangYoungWanted.lean",
+    "line": 101,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/entropy-dimension-and-lyapunov-exponents/euc-plane.md",
+   "title": "Euclidean plane",
+   "statement": "The Euclidean plane $\\mathbb{R}^2$ with its Euclidean inner product and\nnorm. The theorems of this module model a compact surface by a compact invariant subset of\nthis plane.",
+   "declaration": "MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.EucPlane",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaiSangYoungWanted.lean",
+    "line": 71,
+    "kind": "abbrev",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/entropy-dimension-and-lyapunov-exponents/harmonic-mean-lyapunov.md",
+   "title": "Harmonic mean of Lyapunov exponents",
+   "statement": "For real numbers $\\lambda_1$ and $\\lambda_2$, this\nis the harmonic mean $\\frac{2 \\lambda_1 (-\\lambda_2)}{\\lambda_1 - \\lambda_2}$ of $\\lambda_1$ and\n$-\\lambda_2$, taken to be $0$ when $\\lambda_1 = \\lambda_2$.",
+   "declaration": "MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.harmonicMeanLyapunov",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaiSangYoungWanted.lean",
+    "line": 125,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/entropy-dimension-and-lyapunov-exponents/is-measurable-partition.md",
+   "title": "Measurable partition modulo null sets",
+   "statement": "Let $\\mu$ be a measure on a measurable space $M$.\nA finite family $P$ of subsets of $M$ is a measurable partition of $M$ modulo $\\mu$-null sets\nwhen every member of $P$ is measurable, the complement of the union of the members of $P$ has\n$\\mu$-measure $0$, and any two distinct members $A \\ne B$ of $P$ satisfy $\\mu(A \\cap B) = 0$.",
+   "declaration": "MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.IsMeasurablePartition",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaiSangYoungWanted.lean",
+    "line": 81,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/entropy-dimension-and-lyapunov-exponents/iterated-join.md",
+   "title": "Iterated join of a partition",
+   "statement": "For a map $T : M \\to M$, a finite family $P$ of subsets of\n$M$ and $n \\in \\mathbb{N}$, the iterated join $\\bigvee_{k=0}^{n-1} T^{-k} P$ is the finite family\nof all sets $\\bigcap_{k=0}^{n-1} T^{-k}(A_k)$ with $A_0, \\dots, A_{n-1} \\in P$, where $T^{-k}(A)$\nis the preimage of $A$ under the $k$-th iterate $T^k$. For $n = 0$ it is $\\{M\\}$.",
+   "declaration": "MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.iteratedJoin",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaiSangYoungWanted.lean",
+    "line": 94,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/entropy-dimension-and-lyapunov-exponents/kolmogorov-sinai-entropy.md",
+   "title": "Kolmogorov–Sinai entropy",
+   "statement": "Let $\\mu$ be a measure on a measurable space $M$ and let\n$T : M \\to M$ be a map. The Kolmogorov–Sinai entropy $h_\\mu(T)$ is the supremum of the\nentropies $h_\\mu(T, P)$ of $T$ relative to $P$ over all finite measurable partitions $P$ of $M$\nmodulo $\\mu$-null sets, taken to be $0$ when these entropies are not bounded above.",
+   "declaration": "MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.kolmogorovSinaiEntropy",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaiSangYoungWanted.lean",
+    "line": 108,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/entropy-dimension-and-lyapunov-exponents/lyapunov-lower-at.md",
+   "title": "Lower Lyapunov exponent",
+   "statement": "For a map $T : \\mathbb{R}^2 \\to \\mathbb{R}^2$ of the Euclidean\nplane and a point $x \\in \\mathbb{R}^2$, the lower Lyapunov exponent of $T$ at $x$ is\n\n$$\\underline{\\lambda}(T, x) = -\\limsup_{n \\to \\infty} \\frac{1}{n} \\log \\|(D(T^n)_x)^{-1}\\|,$$\n\nwhere $D(T^n)_x$ is the derivative at $x$ of the $n$-th iterate $T^n$, taken to be $0$ when\n$T^n$ is not differentiable at $x$; the inverse $(D(T^n)_x)^{-1}$ is taken to be $0$ when\n$D(T^n)_x$ is not invertible; $\\|\\cdot\\|$ is the operator norm; $\\log 0 = 0$; and the limit\nsuperior is taken to be $0$ when it is $+\\infty$ or $-\\infty$.",
+   "declaration": "MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.lyapunovLowerAt",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaiSangYoungWanted.lean",
+    "line": 119,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/entropy-dimension-and-lyapunov-exponents/lyapunov-upper-at.md",
+   "title": "Upper Lyapunov exponent",
+   "statement": "For a map $T : \\mathbb{R}^2 \\to \\mathbb{R}^2$ of the Euclidean\nplane and a point $x \\in \\mathbb{R}^2$, the upper Lyapunov exponent of $T$ at $x$ is\n\n$$\\overline{\\lambda}(T, x) = \\limsup_{n \\to \\infty} \\frac{1}{n} \\log \\|D(T^n)_x\\|,$$\n\nwhere $D(T^n)_x$ is the derivative at $x$ of the $n$-th iterate $T^n$, taken to be $0$ when\n$T^n$ is not differentiable at $x$; $\\|\\cdot\\|$ is the operator norm; $\\log 0 = 0$; and the\nlimit superior is taken to be $0$ when it is $+\\infty$ or $-\\infty$.",
+   "declaration": "MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.lyapunovUpperAt",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaiSangYoungWanted.lean",
+    "line": 113,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/entropy-dimension-and-lyapunov-exponents/margulis-ruelle.md",
+   "title": "Margulis–Ruelle inequality (planar case)",
+   "statement": "Let $T$ be a $C^2$ diffeomorphism of the\nEuclidean plane $\\mathbb{R}^2$, that is, a $C^2$ map with a $C^2$ two-sided inverse. Let\n$K \\subseteq \\mathbb{R}^2$ be a compact set with $T(K) = K$, and let $\\mu$ be an ergodic\n$T$-invariant Borel probability measure on $\\mathbb{R}^2$ with\n$\\mu(\\mathbb{R}^2 \\setminus K) = 0$. Write $h_\\mu(T)$ for the Kolmogorov–Sinai entropy of $T$\nwith respect to $\\mu$, and $\\lambda_1(x)$ and $\\lambda_2(x)$ for the upper and lower Lyapunov\nexponents of $T$ at $x$. Then\n\n$$h_\\mu(T) \\le \\max(0, \\int \\lambda_1 \\, d\\mu) + \\max(0, \\int \\lambda_2 \\, d\\mu).$$\n\n## Sources\n\n- D. Ruelle, *An inequality for the entropy of differentiable maps*, Bol. Soc. Brasil. Mat. 9 (1978); G. A. Margulis (1968, unpublished). Knill, *Some fundamental theorems in mathematics*, §103. Problem `margulis_ruelle` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.margulis_ruelle",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaiSangYoungWanted.lean",
+    "line": 175,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/entropy-dimension-and-lyapunov-exponents/partition-entropy.md",
+   "title": "Shannon entropy of a finite family of sets",
+   "statement": "For a measure $\\mu$ on a measurable space $M$\nand a finite collection $P$ of subsets of $M$, the entropy of $P$ is\n$H_\\mu(P) = \\sum_{A \\in P} -\\mu(A) \\log \\mu(A)$, where $\\log$ is the natural logarithm, with the\nconvention $0 \\log 0 = 0$. Here $\\mu(A)$ is taken as a real number, so a set of infinite measure\ncontributes $0$.\n\nIt is applied to finite measurable partitions $P$.",
+   "declaration": "MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.partitionEntropy",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaiSangYoungWanted.lean",
+    "line": 89,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/entropy-dimension-and-lyapunov-exponents/pesin-formula.md",
+   "title": "Pesin entropy formula (planar case)",
+   "statement": "Let $T$ be a $C^2$ diffeomorphism of the Euclidean\nplane $\\mathbb{R}^2$, that is, a $C^2$ map with a $C^2$ two-sided inverse. Let\n$K \\subseteq \\mathbb{R}^2$ be a compact set with $T(K) = K$, and let $\\mu$ be an ergodic\n$T$-invariant Borel probability measure on $\\mathbb{R}^2$ with\n$\\mu(\\mathbb{R}^2 \\setminus K) = 0$. Write $h_\\mu(T)$ for the Kolmogorov–Sinai entropy of $T$\nwith respect to $\\mu$, and $\\lambda_1(x)$ and $\\lambda_2(x)$ for the upper and lower Lyapunov\nexponents of $T$ at $x$. Suppose that the Hausdorff dimension of $\\mu$ equals $2$ and that\n$\\int \\lambda_1 \\, d\\mu = -\\int \\lambda_2 \\, d\\mu$. Then $h_\\mu(T) = \\int \\lambda_1 \\, d\\mu$.\n\n## Sources\n\n- Ya. B. Pesin, *Characteristic Lyapunov exponents and smooth ergodic theory*, Russian Math. Surveys 32 (1977). Knill, *Some fundamental theorems in mathematics*, §103. Problem `pesin_formula` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.LaiSangYoungWanted.Dynamics.pesin_formula",
+   "lean": {
+    "file": "WantedExt/Dynamics/LaiSangYoungWanted.lean",
+    "line": 155,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/kolmogorov-arnold-moser-theorem/is-diophantine.md",
+   "title": "Diophantine number",
+   "statement": "A real number $\\alpha$ is Diophantine (with exponent $2$, as used in\nKAM theory) if there is $C > 0$ such that $C / q^2 \\le |\\alpha - p/q|$ for all integers $p$ and\n$q$ with $q \\neq 0$.",
+   "declaration": "MathlibExt.Dynamics.KAMWanted.Dynamics.IsDiophantine",
+   "lean": {
+    "file": "WantedExt/Dynamics/KAMWanted.lean",
+    "line": 70,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/kolmogorov-arnold-moser-theorem/kam-invariant-curve.md",
+   "title": "KAM theorem for twist maps (persistence of an invariant curve)",
+   "statement": "Let $\\alpha$ be a\nDiophantine real number and let $f : \\mathbb{R} \\to \\mathbb{R}$ be real-analytic, $1$-periodic and\nnot constant, with $\\int_0^1 f(x)\\,dx = 0$. Then there is $c_0 > 0$ such that for every real $c$\nwith $|c| < c_0$ there is a $C^\\infty$, strictly increasing function $q : \\mathbb{R} \\to \\mathbb{R}$\nsuch that $t \\mapsto q(t) - t$ is $1$-periodic and, for every real $t$,\n\n$$q(t + \\alpha) - 2q(t) + q(t - \\alpha) = c\\, f(q(t)).$$\n\n## Sources\n\n- A. N. Kolmogorov (1954); V. I. Arnold (1963); J. Moser, *On invariant curves of area-preserving mappings of an annulus*, Nachr. Akad. Wiss. Göttingen (1962). Knill, *Some fundamental theorems in mathematics*, §83. Problem `kam_invariant_curve` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.KAMWanted.Dynamics.kam_invariant_curve",
+   "lean": {
+    "file": "WantedExt/Dynamics/KAMWanted.lean",
+    "line": 81,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/lasalle-s-invariance-principle/exists-forall-eq-of-mem-omega-limit.md",
+   "title": "`V` is constant on the ω-limit set",
+   "statement": "If the forward orbit of `x` lies in a compact set\n`K` and the continuous function `V` is nonincreasing along it, then there is a constant `c`\n(the limit of `V(ϕ t x)`) such that `V(ϕ t y) = c` for every `y ∈ ω⁺(x)` and every `t ≥ 0`.",
+   "declaration": "Flow.exists_forall_eq_of_mem_omegaLimit",
+   "lean": {
+    "file": "MathlibExt/Dynamics/LaSalle.lean",
+    "line": 73,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/lasalle-s-invariance-principle/lasalle.md",
+   "title": "LaSalle's invariance principle",
+   "statement": "**LaSalle's invariance principle** (LaSalle 1960; Khalil 2002, Theorem 4.4). Let the forward\norbit of `x` under the semiflow `ϕ` lie in a compact set `K`, let `V` be continuous and\nnonincreasing along that orbit, and let `E` contain every `y ∈ K` whose orbit keeps `V`\nconstant. Then the ω-limit set `ω⁺(x)` is nonempty and contained in the largest\nforward-invariant subset `M = {y | ∀ t, ϕ t y ∈ E}` of `E`, and the orbit of `x` eventually\nenters every open set containing `M`.",
+   "declaration": "Flow.lasalle",
+   "lean": {
+    "file": "MathlibExt/Dynamics/LaSalle.lean",
+    "line": 101,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/lasalle-s-invariance-principle/omega-limit-singleton-subset-of-is-close.md",
+   "title": "Omega-limit set lies in every closed set containing the orbit",
+   "statement": "The ω-limit set of a point under a semiflow is contained in every closed set that contains\nthe forward orbit.",
+   "declaration": "Flow.omegaLimit_singleton_subset_of_isClosed",
+   "lean": {
+    "file": "MathlibExt/Dynamics/LaSalle.lean",
+    "line": 63,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/shadowing-lemma/e.md",
+   "title": "Euclidean model space for the shadowing lemma",
+   "statement": "For a natural number $d$, $E_d$ is the\nEuclidean space $\\mathbb{R}^d$, the real $d$-tuples with the Euclidean norm.",
+   "declaration": "MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.E",
+   "lean": {
+    "file": "WantedExt/Dynamics/HyperbolicShadowingWanted.lean",
+    "line": 69,
+    "kind": "abbrev",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/shadowing-lemma/has-shadowing.md",
+   "title": "Shadowing property",
+   "statement": "Let $T : \\mathbb{R}^d \\to \\mathbb{R}^d$ be a map, write $T^n$ for its\n$n$-fold iterate, and let $K \\subseteq \\mathbb{R}^d$. The set $K$ has the shadowing property for\n$T$ if there is an open set $U \\subseteq \\mathbb{R}^d$ containing $K$ such that for every\n$\\delta > 0$ there is $\\varepsilon > 0$ with the following property: for every $\\varepsilon$-pseudo\norbit $(x_n)_{n \\in \\mathbb{N}}$ of $T$ with $x_n \\in U$ for all $n$, there is a point\n$y \\in \\mathbb{R}^d$ with $\\|x_n - T^n(y)\\| < \\delta$ for all $n \\in \\mathbb{N}$.",
+   "declaration": "MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.HasShadowing",
+   "lean": {
+    "file": "WantedExt/Dynamics/HyperbolicShadowingWanted.lean",
+    "line": 115,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/shadowing-lemma/hyperbolic-has-shadowing.md",
+   "title": "Anosov–Bowen shadowing lemma",
+   "statement": "Let $T : \\mathbb{R}^d \\to \\mathbb{R}^d$ be a homeomorphism and\nlet $K \\subseteq \\mathbb{R}^d$ be a compact set that is a hyperbolic invariant set for $T$. Then $K$\nhas the shadowing property for $T$.\n\n## Sources\n\n- D.V. Anosov, 'Geodesic flows on closed Riemannian manifolds with negative curvature', Trudy Mat. Inst. Steklov. 90 (1967); R. Bowen, 'ω-limit sets for Axiom A diffeomorphisms', J. Differential Equations 18 (1975) 333–339. Listed as §67 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `anosov_bowen_shadowing` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.hyperbolic_has_shadowing",
+   "lean": {
+    "file": "WantedExt/Dynamics/HyperbolicShadowingWanted.lean",
+    "line": 124,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/shadowing-lemma/hyperbolic-structure.md",
+   "title": "Hyperbolic structure",
+   "statement": "Let $T : \\mathbb{R}^d \\to \\mathbb{R}^d$ be a homeomorphism and let\n$K \\subseteq \\mathbb{R}^d$. Write $DF_x$ for the derivative of a map $F$ at $x$, $T^n$ for the\n$n$-fold iterate of $T$ and $T^{-n}$ for the $n$-fold iterate of $T^{-1}$. A hyperbolic structure\nfor $T$ on $K$ consists of the following: $T$ and $T^{-1}$ are $C^1$; $T(K) = K$; to every\n$x \\in \\mathbb{R}^d$ are assigned linear subspaces $E^s(x)$ and $E^u(x)$ of $\\mathbb{R}^d$ such that\nfor every $x \\in K$ we have $\\mathbb{R}^d = E^s(x) \\oplus E^u(x)$, $DT_x(E^s(x)) = E^s(T(x))$ and\n$DT_x(E^u(x)) = E^u(T(x))$; and there are real numbers $\\lambda$ with $0 < \\lambda < 1$ and\n$C > 0$ such that for every $x \\in K$ and every $n \\in \\mathbb{N}$,\n$\\|D(T^n)_x v\\| \\le C \\lambda^n \\|v\\|$ for all $v \\in E^s(x)$ and\n$\\|D(T^{-n})_x v\\| \\le C \\lambda^n \\|v\\|$ for all $v \\in E^u(x)$.",
+   "declaration": "MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.HyperbolicStructure",
+   "lean": {
+    "file": "WantedExt/Dynamics/HyperbolicShadowingWanted.lean",
+    "line": 80,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/shadowing-lemma/is-hyperbolic.md",
+   "title": "Hyperbolic invariant set",
+   "statement": "Let $T : \\mathbb{R}^d \\to \\mathbb{R}^d$ be a homeomorphism. A set\n$K \\subseteq \\mathbb{R}^d$ is a hyperbolic invariant set for $T$ if there exists a hyperbolic\nstructure for $T$ on $K$.",
+   "declaration": "MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.IsHyperbolic",
+   "lean": {
+    "file": "WantedExt/Dynamics/HyperbolicShadowingWanted.lean",
+    "line": 103,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/shadowing-lemma/is-pseudo-orbit.md",
+   "title": "Pseudo-orbit",
+   "statement": "Let $d$ be a natural number, let $\\mathbb{R}^d$ carry the Euclidean norm,\nlet $T : \\mathbb{R}^d \\to \\mathbb{R}^d$ be a map and let $\\varepsilon$ be a real number. A\nsequence $(x_n)_{n \\in \\mathbb{N}}$ in $\\mathbb{R}^d$ is an $\\varepsilon$-pseudo orbit of $T$\nif $\\|x_{n+1} - T(x_n)\\| < \\varepsilon$ for every $n \\in \\mathbb{N}$.",
+   "declaration": "MathlibExt.Dynamics.HyperbolicShadowingWanted.Dynamics.HyperbolicShadowingProblem.IsPseudoOrbit",
+   "lean": {
+    "file": "WantedExt/Dynamics/HyperbolicShadowingWanted.lean",
+    "line": 108,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/stable-manifold-theorem/complex-eigenvalues.md",
+   "title": "Complex eigenvalues of a real linear map",
+   "statement": "For a continuous linear map $L$ from\n$\\mathbb{R}^n$ to itself, the complex eigenvalues of $L$ form the multiset of complex roots of the\ncharacteristic polynomial of $L$, each counted with its multiplicity as a root.",
+   "declaration": "MathlibExt.Dynamics.StableUnstableManifoldsWanted.Dynamics.StableUnstableManifoldsProblem.complexEigenvalues",
+   "lean": {
+    "file": "WantedExt/Dynamics/StableUnstableManifoldsWanted.lean",
+    "line": 73,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/stable-manifold-theorem/e.md",
+   "title": "Euclidean space $\\mathbb{R}^n$ for local stable and unstable sets",
+   "statement": "For a natural number\n$n$, this is the space $\\mathbb{R}^n$ of real $n$-tuples with the Euclidean inner product and\nnorm.",
+   "declaration": "MathlibExt.Dynamics.StableUnstableManifoldsWanted.Dynamics.StableUnstableManifoldsProblem.E",
+   "lean": {
+    "file": "WantedExt/Dynamics/StableUnstableManifoldsWanted.lean",
+    "line": 70,
+    "kind": "abbrev",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/stable-manifold-theorem/is-hyperbolic-linear.md",
+   "title": "Hyperbolic linear map",
+   "statement": "A continuous linear map $L$ from $\\mathbb{R}^n$ to itself is\nhyperbolic when none of its complex eigenvalues lies on the unit circle, that is, every complex\nroot $\\mu$ of the characteristic polynomial of $L$ satisfies $|\\mu| \\ne 1$.",
+   "declaration": "MathlibExt.Dynamics.StableUnstableManifoldsWanted.Dynamics.StableUnstableManifoldsProblem.IsHyperbolicLinear",
+   "lean": {
+    "file": "WantedExt/Dynamics/StableUnstableManifoldsWanted.lean",
+    "line": 78,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/smooth-dynamics/stable-manifold-theorem/stable-unstable-manifolds-exist.md",
+   "title": "Local stable and unstable sets at a hyperbolic fixed point",
+   "statement": "Let $f : \\mathbb{R}^n \\to\n\\mathbb{R}^n$ be continuously differentiable on a neighbourhood of a point $x_0$ with\n$f(x_0) = x_0$, and suppose that the derivative $Df(x_0)$ is invertible and hyperbolic. Then\nthere is an open set $U$ containing $x_0$ such that the local stable set\n$W^s = \\{x : f^k(x) \\in U \\text{ for all } k \\ge 0 \\text{ and } f^k(x) \\to x_0 \\text{ as }\nk \\to \\infty\\}$ and the local unstable set $W^u$, consisting of the points $x$ for which there\nis a sequence $(y_k)_{k \\ge 0}$ in $U$ with $y_0 = x$, $f(y_{k+1}) = y_k$ for all $k$ and\n$y_k \\to x_0$, satisfy $W^s \\cap W^u = \\{x_0\\}$.\n\nThis is only the set-level part of the Hadamard–Perron theorem: it does not assert that $W^s$\nand $W^u$ are $C^1$ submanifolds tangent to the stable and unstable subspaces of $Df(x_0)$.\n\n## Sources\n\n- J. Hadamard, 'Sur l'itération et les solutions asymptotiques des équations différentielles', Bull. Soc. Math. France 29 (1901); O. Perron, 'Über Stabilität und asymptotisches Verhalten der Integrale von Differentialgleichungssystemen', Math. Z. 29 (1929) 129–160. Listed as §104 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `stable_unstable_manifolds` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.StableUnstableManifoldsWanted.Dynamics.StableUnstableManifoldsProblem.stable_unstable_manifolds_exist",
+   "lean": {
+    "file": "WantedExt/Dynamics/StableUnstableManifoldsWanted.lean",
+    "line": 89,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/binaryrec-realizable-subspace-dim.md",
+   "title": "Realizable span of a nondegenerate binary recurrence",
+   "statement": "Let $B$ and $C$ be integers with\n$C \\neq 0$, and suppose the recurrence is nondegenerate: whenever $\\alpha \\neq \\beta$ are\ncomplex roots of $x^2 - Bx + C$, we have $(\\alpha/\\beta)^n \\neq 1$ for every integer $n \\geq 1$.\nPut $\\Delta = B^2 - 4C$. Let $R$ be the set of complex sequences $(u_n)_{n \\geq 0}$ coming from\ninteger sequences $u$ that satisfy $u_{n+2} = B u_{n+1} - C u_n$ for all $n \\geq 0$ and for\nwhich there are a set $X$ and a map $T \\colon X \\to X$ such that, for every $n \\geq 0$, the set\nof points $x \\in X$ with $T^{n+1}(x) = x$ is finite and has exactly $|u_n|$ elements. Then the\ncomplex linear span of $R$ has dimension $0$ if $\\Delta < 0$, dimension $1$ if $\\Delta = 0$ or\n$\\Delta > 0$ is not the square of an integer, and dimension $2$ if $\\Delta > 0$ is the square\nof an integer.\n\n## Sources\n\n- G. Everest, A. J. van der Poorten, Y. Puri, and T. Ward, \"Integer Sequences and Periodic Points,\" Journal of Integer Sequences 5 (2002), Article 02.2.3, Theorem, lines 243–254, https://cs.uwaterloo.ca/journals/JIS/VOL5/Ward/ward2.tex",
+   "declaration": "MetaMathlibExt.binaryrec_realizable_subspace_dim",
+   "lean": {
+    "file": "WantedExt/Dynamics/Periodic/BinaryRecurrenceRealizableDimensionWanted.lean",
+    "line": 33,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/aperiodic-x.md",
+   "title": "Aperiodic part of the full 2-shift",
+   "statement": "Let $\\sigma$ be the left shift on the full 2-shift\n$X$, given by $(\\sigma x)_i = x_{i+1}$. The aperiodic part of $X$ is the set of all $x \\in X$\nthat are not periodic for $\\sigma$, that is, with $\\sigma^n x \\ne x$ for every $n \\ge 1$.\n\n## Sources\n\n- [AMR-043-0001].",
+   "declaration": "MathlibExt.Dynamics.AMR43Problem1Wanted.AperiodicX",
+   "lean": {
+    "file": "WantedExt/Dynamics/AMR43Problem1Wanted.lean",
+    "line": 37,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/aperiodic-y.md",
+   "title": "Aperiodic part of the 3-colouring shift",
+   "statement": "Let $\\sigma$ be the left shift on the full\n3-shift, given by $(\\sigma y)_i = y_{i+1}$. The aperiodic part of the proper 3-colouring shift\n$Y$ is the set of all $y \\in Y$ that are not periodic for $\\sigma$, that is, with\n$\\sigma^n y \\ne y$ for every $n \\ge 1$.\n\n## Sources\n\n- [AMR-043-0001].",
+   "declaration": "MathlibExt.Dynamics.AMR43Problem1Wanted.AperiodicY",
+   "lean": {
+    "file": "WantedExt/Dynamics/AMR43Problem1Wanted.lean",
+    "line": 41,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/conjecture-refuted.md",
+   "title": "The aperiodic parts of the full 2-shift and the 3-colouring shift are not conjugate",
+   "statement": "Let $X$ be the full 2-shift, $Y$ the proper 3-colouring shift, and $\\sigma$ the left shift on\neach. There is no homeomorphism $e$ from the aperiodic part of $X$ onto the aperiodic part of\n$Y$, each with the subspace topology, such that $e(\\sigma a) = \\sigma(e(a))$ for every $a$ in the\naperiodic part of $X$; that is, Hochman's aperiodic conjugacy question has a negative answer.\n\nSalo proves that every conjugacy between infinite transitive shifts of finite type minus\nperiodic points extends to a conjugacy of the shifts of finite type; since the full 2-shift\nhas fixed points and the proper 3-colouring shift has none, the aperiodic parts are not\nconjugate.\n\n## Sources\n\n- Ville Salo, Conjugacy of transitive SFTs minus periodic points, Proc. London Math. Soc. (accepted; arXiv v3 2023), arXiv:2104.09860, https://arxiv.org/abs/2104.09860.",
+   "declaration": "MathlibExt.Dynamics.AMR43Problem1Wanted.conjecture_refuted",
+   "lean": {
+    "file": "WantedExt/Dynamics/AMR43Problem1Wanted.lean",
+    "line": 89,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/conjecture.md",
+   "title": "Hochman's aperiodic conjugacy question",
+   "statement": "Let $X$ be the full 2-shift and $Y$ the proper\n3-colouring shift, write $X \\setminus \\mathrm{Per}(X)$ and $Y \\setminus \\mathrm{Per}(Y)$ for\ntheir aperiodic parts with the subspace topologies, and let $\\sigma$ be the left shift\n$(\\sigma z)_i = z_{i+1}$ on each. The statement is that there is a homeomorphism\n$e \\colon X \\setminus \\mathrm{Per}(X) \\to Y \\setminus \\mathrm{Per}(Y)$ with\n$e(\\sigma a) = \\sigma(e(a))$ for every $a \\in X \\setminus \\mathrm{Per}(X)$, that is, the two\naperiodic parts are topologically conjugate.\n\n## Sources\n\n- [AMR-043-0001] Hochman problem 1.",
+   "declaration": "MathlibExt.Dynamics.AMR43Problem1Wanted.conjecture",
+   "lean": {
+    "file": "WantedExt/Dynamics/AMR43Problem1Wanted.lean",
+    "line": 77,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/shift-xres.md",
+   "title": "Shift on the aperiodic part of the full 2-shift",
+   "statement": "The left shift $\\sigma$, given by\n$(\\sigma x)_i = x_{i+1}$, maps the aperiodic part of the full 2-shift $X$ into itself; this is\nthe self-map of the aperiodic part of $X$ obtained by restricting $\\sigma$ to it.\n\n## Sources\n\n- [AMR-043-0001].",
+   "declaration": "MathlibExt.Dynamics.AMR43Problem1Wanted.shiftXRes",
+   "lean": {
+    "file": "WantedExt/Dynamics/AMR43Problem1Wanted.lean",
+    "line": 57,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/shift-yres.md",
+   "title": "Shift on the aperiodic part of the 3-colouring shift",
+   "statement": "The left shift $\\sigma$, given by\n$(\\sigma y)_i = y_{i+1}$, maps the aperiodic part of the proper 3-colouring shift $Y$ into\nitself; this is the self-map of the aperiodic part of $Y$ obtained by restricting $\\sigma$\nto it.\n\n## Sources\n\n- [AMR-043-0001].",
+   "declaration": "MathlibExt.Dynamics.AMR43Problem1Wanted.shiftYRes",
+   "lean": {
+    "file": "WantedExt/Dynamics/AMR43Problem1Wanted.lean",
+    "line": 63,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/x.md",
+   "title": "The full 2-shift",
+   "statement": "$X$ is the space of all two-sided sequences\n$x = (x_i)_{i \\in \\mathbb{Z}}$ with every $x_i \\in \\{0, 1\\}$, carrying the product topology.\n\n## Sources\n\n- [AMR-043-0001].",
+   "declaration": "MathlibExt.Dynamics.AMR43Problem1Wanted.X",
+   "lean": {
+    "file": "WantedExt/Dynamics/AMR43Problem1Wanted.lean",
+    "line": 26,
+    "kind": "abbrev",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/y.md",
+   "title": "The proper 3-colouring shift",
+   "statement": "$Y$ is the set of sequences $y = (y_i)_{i \\in \\mathbb{Z}}$\nin the full 3-shift (so every $y_i \\in \\{0, 1, 2\\}$) such that $y_i \\ne y_{i+1}$ for every\n$i \\in \\mathbb{Z}$.\n\nIt is a mixing shift of finite type.\n\n## Sources\n\n- [AMR-043-0001].",
+   "declaration": "MathlibExt.Dynamics.AMR43Problem1Wanted.Y",
+   "lean": {
+    "file": "WantedExt/Dynamics/AMR43Problem1Wanted.lean",
+    "line": 34,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/conjugacy-of-aperiodic-parts-of-shifts/yamb.md",
+   "title": "The full 3-shift",
+   "statement": "The space of all two-sided sequences $y = (y_i)_{i \\in \\mathbb{Z}}$\nwith every $y_i \\in \\{0, 1, 2\\}$, carrying the product topology. It is the ambient space of the\nproper 3-colouring shift.\n\n## Sources\n\n- [AMR-043-0001].",
+   "declaration": "MathlibExt.Dynamics.AMR43Problem1Wanted.YAmb",
+   "lean": {
+    "file": "WantedExt/Dynamics/AMR43Problem1Wanted.lean",
+    "line": 30,
+    "kind": "abbrev",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/curtis-hedlund-lyndon-theorem/curtis-hedlund-lyndon-general.md",
+   "title": "Curtis–Hedlund–Lyndon theorem with an arbitrary discrete output alphabet",
+   "statement": "Let $A$ be a\nfinite set and $B$ any set, both with the discrete topology, and give $A^{\\mathbb{Z}}$ and\n$B^{\\mathbb{Z}}$ the product topology. For $k \\in \\mathbb{Z}$ let $\\sigma^k$ be the shift on\neither space given by $(\\sigma^k x)_n = x_{n+k}$ for all $n \\in \\mathbb{Z}$. A map\n$F : A^{\\mathbb{Z}} \\to B^{\\mathbb{Z}}$ is a sliding block code, that is, there are a radius\n$r \\in \\mathbb{N}$ and a local rule $\\varphi : A^{2r+1} \\to B$ with\n$F(x)_n = \\varphi(x_{n-r}, \\dots, x_{n+r})$ for all $x \\in A^{\\mathbb{Z}}$ and $n \\in \\mathbb{Z}$,\nif and only if $F$ is continuous and commutes with every shift: $F(\\sigma^k x) = \\sigma^k F(x)$\nfor all $x \\in A^{\\mathbb{Z}}$ and $k \\in \\mathbb{Z}$.",
+   "declaration": "MetaMathlibExt.curtis_hedlund_lyndon_general",
+   "lean": {
+    "file": "MathlibExt/Dynamics/CurtisHedlundLyndon.lean",
+    "line": 89,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/curtis-hedlund-lyndon-theorem/curtis-hedlund-lyndon.md",
+   "title": "Curtis–Hedlund–Lyndon theorem",
+   "statement": "Let $A$ and $B$ be finite sets with the discrete\ntopology, and give $A^{\\mathbb{Z}}$ and $B^{\\mathbb{Z}}$ the product topology. For\n$k \\in \\mathbb{Z}$ let $\\sigma^k$ be the shift on either space given by\n$(\\sigma^k x)_n = x_{n+k}$ for all $n \\in \\mathbb{Z}$. A map\n$F : A^{\\mathbb{Z}} \\to B^{\\mathbb{Z}}$ is a sliding block code, that is, there are a radius\n$r \\in \\mathbb{N}$ and a local rule $\\varphi : A^{2r+1} \\to B$ with\n$F(x)_n = \\varphi(x_{n-r}, \\dots, x_{n+r})$ for all $x \\in A^{\\mathbb{Z}}$ and $n \\in \\mathbb{Z}$,\nif and only if $F$ is continuous and commutes with every shift: $F(\\sigma^k x) = \\sigma^k F(x)$\nfor all $x \\in A^{\\mathbb{Z}}$ and $k \\in \\mathbb{Z}$.\n\n## Sources\n\n- https://en.wikipedia.org/wiki/Curtis%E2%80%93Hedlund%E2%80%93Lyndon_theorem (statement id `curtis-hedlund-s1`).",
+   "declaration": "MetaMathlibExt.curtis_hedlund_lyndon",
+   "lean": {
+    "file": "MathlibExt/Dynamics/CurtisHedlundLyndon.lean",
+    "line": 161,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/eventually-periodic-sequences/is-eventually-periodic.md",
+   "title": "Eventually periodic sequences",
+   "statement": "A sequence $u : \\mathbb{N} \\to \\alpha$ with values in a\ntype $\\alpha$ is eventually periodic if there are natural numbers $p > 0$ (a period) and $n_0$\n(a preperiod) such that $u(n + p) = u(n)$ for every natural number $n \\ge n_0$.",
+   "declaration": "MetaMathlibExt.IsEventuallyPeriodic",
+   "lean": {
+    "file": "MathlibExt/Dynamics/EventuallyPeriodicSequence.lean",
+    "line": 24,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/eventually-periodic-sequences/is-ultimately-periodic.md",
+   "title": "Ultimately periodic sequences",
+   "statement": "Let $\\alpha$ be a type. A sequence\n$u : \\mathbb{N} \\to \\alpha$ is called ultimately periodic exactly when it is eventually periodic;\nthe two terms name the same notion.",
+   "declaration": "MetaMathlibExt.IsUltimatelyPeriodic",
+   "lean": {
+    "file": "MathlibExt/Dynamics/EventuallyPeriodicSequence.lean",
+    "line": 59,
+    "kind": "abbrev",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/eventually-periodic-sequences/of-finite-orbit.md",
+   "title": "Orbits in a finite set are eventually periodic",
+   "statement": "Let $S$ be a finite set, $F : S \\to S$ a\nmap and $r : \\mathbb{N} \\to S$ a sequence with $r(n + 1) = F(r(n))$ for every $n \\in \\mathbb{N}$.\nThen $r$ is eventually periodic.",
+   "declaration": "MetaMathlibExt.IsEventuallyPeriodic.of_finite_orbit",
+   "lean": {
+    "file": "MathlibExt/Dynamics/EventuallyPeriodicSequence.lean",
+    "line": 63,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/eventually-periodic-sequences/of-periodic.md",
+   "title": "Periodic sequences are eventually periodic",
+   "statement": "Let $\\alpha$ be a type, let\n$u : \\mathbb{N} \\to \\alpha$ be a sequence and let $p > 0$ be a natural number with\n$u(n + p) = u(n)$ for every $n \\in \\mathbb{N}$. Then $u$ is eventually periodic.",
+   "declaration": "MetaMathlibExt.IsEventuallyPeriodic.of_periodic",
+   "lean": {
+    "file": "MathlibExt/Dynamics/EventuallyPeriodicSequence.lean",
+    "line": 50,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/eventually-periodic-sequences/of-witness.md",
+   "title": "Explicit period and preperiod give eventual periodicity",
+   "statement": "Let $\\alpha$ be a type and\n$u : \\mathbb{N} \\to \\alpha$ a sequence. If there are natural numbers $p > 0$ and $n_0$ such that\n$u(n + p) = u(n)$ for every natural number $n \\ge n_0$, then $u$ is eventually periodic.",
+   "declaration": "MetaMathlibExt.IsEventuallyPeriodic.of_witness",
+   "lean": {
+    "file": "MathlibExt/Dynamics/EventuallyPeriodicSequence.lean",
+    "line": 31,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/eventually-periodic-sequences/witness-spec.md",
+   "title": "Period and preperiod of an eventually periodic sequence",
+   "statement": "Let $\\alpha$ be a type. If a\nsequence $u : \\mathbb{N} \\to \\alpha$ is eventually periodic, then there are natural numbers\n$p > 0$ and $n_0$ such that $u(n + p) = u(n)$ for every natural number $n \\ge n_0$.",
+   "declaration": "MetaMathlibExt.IsEventuallyPeriodic.witness_spec",
+   "lean": {
+    "file": "MathlibExt/Dynamics/EventuallyPeriodicSequence.lean",
+    "line": 40,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/full-shift-and-cellular-automata/automorphism-group.md",
+   "title": "Automorphism group of the full shift",
+   "statement": "The automorphism group of the full shift on $N$\nsymbols is the subgroup of the group of homeomorphisms of $\\{0, \\dots, N-1\\}^{\\mathbb{Z}}$ onto\nitself consisting of the homeomorphisms $\\varphi$ that commute with the unit shift $\\sigma$,\ngiven by $(\\sigma x)_i = x_{i+1}$, that is, $\\varphi \\circ \\sigma = \\sigma \\circ \\varphi$.",
+   "declaration": "SymbolicDynamics.FullShift.automorphismGroup",
+   "lean": {
+    "file": "MathlibExt/Dynamics/SymbolicDynamics/FullShift.lean",
+    "line": 69,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/full-shift-and-cellular-automata/full-shift-space.md",
+   "title": "Full shift space",
+   "statement": "For $N \\in \\mathbb{N}$, the configuration space of the two-sided full\nshift on $N$ symbols is the set $\\{0, \\dots, N-1\\}^{\\mathbb{Z}}$ of all bi-infinite sequences\n$x = (x_i)_{i \\in \\mathbb{Z}}$ of symbols. It carries the product of the discrete topologies.",
+   "declaration": "SymbolicDynamics.FullShift.FullShiftSpace",
+   "lean": {
+    "file": "MathlibExt/Dynamics/SymbolicDynamics/FullShift.lean",
+    "line": 32,
+    "kind": "abbrev",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/full-shift-and-cellular-automata/is-one-dimensional-ca.md",
+   "title": "One-dimensional cellular automaton",
+   "statement": "A map $f$ from the full shift\n$\\{0, \\dots, N-1\\}^{\\mathbb{Z}}$ on $N$ symbols to itself is a one-dimensional cellular\nautomaton if $f$ is continuous and commutes with the unit shift $\\sigma$, given by\n$(\\sigma x)_i = x_{i+1}$, that is, $f \\circ \\sigma = \\sigma \\circ f$.\n\nThis is the Curtis–Hedlund–Lyndon characterization of cellular automata.",
+   "declaration": "SymbolicDynamics.FullShift.IsOneDimensionalCA",
+   "lean": {
+    "file": "MathlibExt/Dynamics/SymbolicDynamics/FullShift.lean",
+    "line": 74,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/full-shift-and-cellular-automata/joint-periodic-count.md",
+   "title": "Joint periodic count",
+   "statement": "For $k \\in \\mathbb{N}$ and a map $f$ from the full shift\n$\\{0, \\dots, N-1\\}^{\\mathbb{Z}}$ on $N$ symbols to itself, $P(f, k)$ is the number of\nconfigurations $x$ with $\\sigma^k(x) = x$, where $\\sigma$ is the unit shift given by\n$(\\sigma x)_i = x_{i+1}$, that are also periodic for $f$, that is, $f^n(x) = x$ for some\n$n \\ge 1$. Here $k$ need not be the least period of $x$ under $\\sigma$.\n\nThe count is the cardinality of a set, taken to be $0$ when the set is infinite, which can\nhappen only for $k = 0$.",
+   "declaration": "SymbolicDynamics.FullShift.jointPeriodicCount",
+   "lean": {
+    "file": "MathlibExt/Dynamics/SymbolicDynamics/FullShift.lean",
+    "line": 96,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/full-shift-and-cellular-automata/joint-periodic-growth-rate.md",
+   "title": "Joint periodic growth rate",
+   "statement": "For a map $f$ from the full shift $S_N$ on $N$ symbols to\nitself, the joint periodic growth rate is the real number\n\n$$\\nu(f, S_N) = \\limsup_{k \\to \\infty} P(f, k)^{1/k},$$\n\nwhere $k$ ranges over the positive integers and $P(f, k)$ is the joint periodic count: the\nnumber of configurations fixed by the $k$-th power of the unit shift that are also periodic\nfor $f$.",
+   "declaration": "SymbolicDynamics.FullShift.jointPeriodicGrowthRate",
+   "lean": {
+    "file": "MathlibExt/Dynamics/SymbolicDynamics/FullShift.lean",
+    "line": 103,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/full-shift-and-cellular-automata/jointly-periodic-points.md",
+   "title": "Jointly periodic points",
+   "statement": "For a map $f$ from the full shift\n$\\{0, \\dots, N-1\\}^{\\mathbb{Z}}$ on $N$ symbols to itself, the jointly periodic points of $f$\nare the configurations $x$ that are periodic for $f$ and periodic for the unit shift $\\sigma$,\ngiven by $(\\sigma x)_i = x_{i+1}$: there are $m \\ge 1$ and $n \\ge 1$ with $f^m(x) = x$ and\n$\\sigma^n(x) = x$.\n\nNo common period for $f$ and $\\sigma$ is required.",
+   "declaration": "SymbolicDynamics.FullShift.jointlyPeriodicPoints",
+   "lean": {
+    "file": "MathlibExt/Dynamics/SymbolicDynamics/FullShift.lean",
+    "line": 83,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/full-shift-and-cellular-automata/shift-homeomorph.md",
+   "title": "The unit shift as a homeomorphism",
+   "statement": "The unit shift $\\sigma$ of the full shift on $N$\nsymbols, given by $(\\sigma x)_i = x_{i+1}$, is a homeomorphism of\n$\\{0, \\dots, N-1\\}^{\\mathbb{Z}}$ onto itself, with inverse given by\n$(\\sigma^{-1} x)_i = x_{i-1}$.",
+   "declaration": "SymbolicDynamics.FullShift.shiftHomeomorph",
+   "lean": {
+    "file": "MathlibExt/Dynamics/SymbolicDynamics/FullShift.lean",
+    "line": 44,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/full-shift-and-cellular-automata/unit-shift.md",
+   "title": "Unit shift",
+   "statement": "The unit shift on the full shift on $N$ symbols is the map $\\sigma$ from\n$\\{0, \\dots, N-1\\}^{\\mathbb{Z}}$ to itself given by $(\\sigma x)_i = x_{i+1}$ for all\n$i \\in \\mathbb{Z}$, the left translation by one step.",
+   "declaration": "SymbolicDynamics.FullShift.unitShift",
+   "lean": {
+    "file": "MathlibExt/Dynamics/SymbolicDynamics/FullShift.lean",
+    "line": 35,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/preperiodic-points-and-grand-orbits/forward-orbit.md",
+   "title": "Forward orbit",
+   "statement": "For a self-map $f$ of a set $X$ and a point $x \\in X$, the forward orbit\nof $x$ under $f$ is the set $\\{f^n(x) : n \\in \\mathbb{N}\\}$ of all iterates of $x$, including\n$f^0(x) = x$.",
+   "declaration": "Function.forwardOrbit",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Preperiodic.lean",
+    "line": 35,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/preperiodic-points-and-grand-orbits/grand-orbit-rel.md",
+   "title": "Grand orbit relation",
+   "statement": "For a self-map $f$ of a set $X$, points $x, y \\in X$ are related,\nthat is, lie in the same grand orbit of $f$, when $f^m(x) = f^n(y)$ for some natural numbers\n$m$ and $n$.",
+   "declaration": "Function.GrandOrbitRel",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Preperiodic.lean",
+    "line": 130,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/preperiodic-points-and-grand-orbits/grand-orbit-setoid.md",
+   "title": "Grand orbit equivalence relation",
+   "statement": "For a self-map $f$ of a set $X$, the relation on $X$ in\nwhich $x \\sim y$ when $f^m(x) = f^n(y)$ for some natural numbers $m$ and $n$ is an equivalence\nrelation; its equivalence classes are the grand orbits of $f$.",
+   "declaration": "Function.grandOrbitSetoid",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Preperiodic.lean",
+    "line": 164,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/preperiodic-points-and-grand-orbits/grand-orbit.md",
+   "title": "Grand orbit",
+   "statement": "For a self-map $f$ of a set $X$ and a point $x \\in X$, the grand orbit of $x$\nis the set of all $y \\in X$ such that $f^m(x) = f^n(y)$ for some natural numbers $m$ and $n$,\nthat is, the equivalence class of $x$ under the grand orbit relation.",
+   "declaration": "Function.grandOrbit",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Preperiodic.lean",
+    "line": 169,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/preperiodic-points-and-grand-orbits/is-preperiodic-pt-of-type.md",
+   "title": "Preperiodic point of a given type",
+   "statement": "Let $f$ be a self-map of a set $X$ and let $m$ and $n$\nbe natural numbers. A point $x \\in X$ is preperiodic of type $(m, n)$ when $n > 0$ and\n$f^{m+n}(x) = f^m(x)$, that is, $f^m(x)$ is periodic with period $n$. Neither $m$ nor $n$ is\nrequired to be minimal.",
+   "declaration": "Function.IsPreperiodicPtOfType",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Preperiodic.lean",
+    "line": 107,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/preperiodic-points-and-grand-orbits/is-preperiodic-pt.md",
+   "title": "Preperiodic point",
+   "statement": "A point $x$ is preperiodic for a self-map $f$ when its forward orbit\n$\\{f^n(x) : n \\in \\mathbb{N}\\}$ under $f$ is a finite set.",
+   "declaration": "Function.IsPreperiodicPt",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Preperiodic.lean",
+    "line": 49,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/preperiodic-points-and-grand-orbits/is-strictly-preperiodic-pt.md",
+   "title": "Strictly preperiodic point",
+   "statement": "A point $x$ is strictly preperiodic for a self-map $f$ when it\nis preperiodic for $f$ but not periodic, that is, there is no $n > 0$ with $f^n(x) = x$.",
+   "declaration": "Function.IsStrictlyPreperiodicPt",
+   "lean": {
+    "file": "MathlibExt/Dynamics/Preperiodic.lean",
+    "line": 97,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/topological-multiple-recurrence/furstenberg-topological-recurrence.md",
+   "title": "Furstenberg–Weiss multiple recurrence for a single homeomorphism",
+   "statement": "Every homeomorphism\n$T$ of a nonempty compact metric space $X$ has a multiply recurrent point: there is a point\n$x \\in X$ such that for every integer $d \\ge 1$ there is a strictly increasing sequence of\nnatural numbers $(n_k)$ with $T^{j n_k}(x) \\to x$ as $k \\to \\infty$ for every integer $j$ with\n$1 \\le j \\le d$, where $T^{m}$ denotes the $m$-th iterate of $T$.\n\n## Sources\n\n- H. Furstenberg and B. Weiss, *Topological dynamics and combinatorial number theory*, Journal d'Analyse Mathématique 34 (1978), 61-85. Listed as §56 (main theorem) in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `furstenberg_topological` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.FurstenbergTopologicalWanted.Dynamics.furstenberg_topological_recurrence",
+   "lean": {
+    "file": "WantedExt/Dynamics/FurstenbergTopologicalWanted.lean",
+    "line": 83,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Dynamics/topological-symbolic-dynamics/topological-multiple-recurrence/is-multiply-recurrent.md",
+   "title": "Multiply recurrent point",
+   "statement": "Let $X$ be a topological space and $T \\colon X \\to X$ a map.\nA point $x \\in X$ is multiply recurrent for $T$ if for every integer $d \\ge 1$ there is a\nstrictly increasing sequence of natural numbers $(n_k)$ such that $T^{j n_k}(x) \\to x$ as\n$k \\to \\infty$ for every integer $j$ with $1 \\le j \\le d$, where $T^{m}$ denotes the $m$-th\niterate of $T$.",
+   "declaration": "MathlibExt.Dynamics.FurstenbergTopologicalWanted.Dynamics.IsMultiplyRecurrent",
+   "lean": {
+    "file": "WantedExt/Dynamics/FurstenbergTopologicalWanted.lean",
+    "line": 72,
+    "kind": "def",
+    "sorry": false
+   }
+  }
+ ]
+}

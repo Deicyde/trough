@@ -1,0 +1,1134 @@
+{
+ "schema": "trough-atlas/v1",
+ "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "articles": [
+  {
+   "path": "SetTheory/cardinal-arithmetic/bounding-number/bounding-number.md",
+   "title": "Bounding number",
+   "statement": "The bounding number $\\mathfrak{b}$ is the infimum of the cardinalities of\nall unbounded families of functions $\\mathbb{N} \\to \\mathbb{N}$.",
+   "declaration": "MetaMathlibExt.boundingNumber",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/Characteristics.lean",
+    "line": 47,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/cardinal-arithmetic/bounding-number/is-unbounded-family.md",
+   "title": "Unbounded family",
+   "statement": "A family $F$ of functions $\\mathbb{N} \\to \\mathbb{N}$ is unbounded if no\nfunction $g : \\mathbb{N} \\to \\mathbb{N}$ bounds every member of $F$, where $g$ bounds $f$ if there\nis an $N$ such that $f(n) \\le g(n)$ for all $n \\ge N$.",
+   "declaration": "MetaMathlibExt.IsUnboundedFamily",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/Characteristics.lean",
+    "line": 39,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/cardinal-arithmetic/continuum-hypothesis/continuum-hypothesis.md",
+   "title": "Continuum hypothesis",
+   "statement": "CH: 2^{ℵ₀}=ℵ₁",
+   "declaration": "MetaMathlibExt.ContinuumHypothesis",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/ContinuumHypothesis.lean",
+    "line": 28,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/cardinal-arithmetic/continuum-hypothesis/equivalent-forms-of-the-continuum-hypoth.md",
+   "title": "Equivalent forms of the continuum hypothesis",
+   "statement": "1. The continuum hypothesis holds if and only if the continuum equals ℵ₁.   2. The continuum\n   hypothesis holds if and only if the continuum is at most ℵ₁.   3. The continuum hypothesis holds\n   if and only if the reals have cardinality ℵ₁, i.e. |ℝ| =      ℵ₁.   4. The continuum hypothesis\n   holds if and only if there is no cardinal strictly between ℵ₀ and the continuum.   5.\n\nThe full informal statement is in the module documentation directly above.",
+   "declaration": "MetaMathlibExt.continuumHypothesis_iff_continuum_eq_aleph_one",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/ContinuumHypothesis.lean",
+    "line": 60,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/cardinal-arithmetic/singular-cardinals-hypothesis.md",
+   "title": "Singular cardinals hypothesis",
+   "statement": "For all singular cardinal $\\kappa$, if $2^{cof(\\kappa)}\\lt \\kappa, then $\\kappa^{cof(\\kappa)} =\n\\kappa^+$.",
+   "declaration": "MetaMathlibExt.SingularCardinalsHypothesis",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/SingularCardinals.lean",
+    "line": 39,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/cardinal-arithmetic/tukey-reducibility-and-cofinal-types/cofinal-type.md",
+   "title": "Cofinal type",
+   "statement": "A cofinal type is an equivalence class of preordered sets under Tukey\nequivalence $\\equiv_T$, where $D \\equiv_T E$ means $D \\le_T E$ and $E \\le_T D$ (Tukey\nreducibility in both directions).",
+   "declaration": "MetaMathlibExt.CofinalType",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Dichotomies/CofinalTypes.lean",
+    "line": 49,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/cardinal-arithmetic/tukey-reducibility-and-cofinal-types/tukey-equiv.md",
+   "title": "Tukey equivalence",
+   "statement": "Preordered sets $D$ and $E$ are Tukey equivalent (cofinally\nequivalent), written $D \\equiv_T E$, if $D \\le_T E$ and $E \\le_T D$, where $\\le_T$ is Tukey\nreducibility.",
+   "declaration": "MetaMathlibExt.TukeyEquiv",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Dichotomies/CofinalTypes.lean",
+    "line": 44,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/cardinal-arithmetic/tukey-reducibility-and-cofinal-types/tukey-le.md",
+   "title": "Tukey reducibility",
+   "statement": "For preordered sets $D$ and $E$, $D$ is Tukey reducible to $E$,\nwritten $D \\le_T E$, if there is a map $f \\colon D \\to E$ that carries unbounded sets to\nunbounded sets: for every $A \\subseteq D$ with no upper bound in $D$, the image $f[A]$ has no\nupper bound in $E$.",
+   "declaration": "MetaMathlibExt.TukeyLE",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Dichotomies/CofinalTypes.lean",
+    "line": 38,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/martin-s-axiom/is-ccc.md",
+   "title": "Countable chain condition",
+   "statement": "A partial order $(P, \\le)$ has the countable chain condition\n(c.c.c.) if every antichain of $P$ is countable, where an antichain is a set of pairwise\nincompatible elements: no two distinct members of it have a common lower bound in $P$.",
+   "declaration": "MetaMathlibExt.IsCCC",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Forcing/ForcingAxioms/MartinAxiom.lean",
+    "line": 40,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/martin-s-axiom/is-sigma-centered.md",
+   "title": "σ-centered partial orders",
+   "statement": "A partial order $P$ is $\\sigma$-centered if there is a map\n$c : P \\to \\mathbb{N}$ such that for every $n \\in \\mathbb{N}$, every finite set of elements $p$\nwith $c(p) = n$ has a common lower bound in $P$. Thus $P$ splits into countably many centered\npieces $c^{-1}(n)$; the empty set is among the finite sets, so $P$ must be nonempty.",
+   "declaration": "MetaMathlibExt.IsSigmaCentered",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Forcing/ForcingAxioms/MartinAxiom.lean",
+    "line": 48,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/martin-s-axiom/martin-axiom-sigma-centered.md",
+   "title": "Martin's axiom for σ-centered partial orders",
+   "statement": "For a cardinal $\\kappa$, this is the\nstatement that for every $\\sigma$-centered partial order $P$, every family $\\mathcal{D}$ of at\nmost $\\kappa$ dense subsets of $P$ and every $p \\in P$, there is a filter $G$ on $P$ with\n$p \\in G$ that meets every member of $\\mathcal{D}$. Here $D \\subseteq P$ is dense if every\nelement of $P$ has an element of $D$ below it, and a filter is a nonempty upward closed subset\nof $P$ any two of whose elements have a common lower bound in it.",
+   "declaration": "MetaMathlibExt.MartinAxiomSigmaCentered",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Forcing/ForcingAxioms/MartinAxiom.lean",
+    "line": 57,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/martin-s-axiom/martin-axiom.md",
+   "title": "Martin's axiom",
+   "statement": "For a cardinal $\\kappa$, $\\mathrm{MA}(\\kappa)$ is the statement that for\nevery partial order $P$ with the countable chain condition, every family $\\mathcal{D}$ of at most\n$\\kappa$ dense subsets of $P$ and every $p \\in P$, there is a filter $G$ on $P$ with $p \\in G$\nthat meets every member of $\\mathcal{D}$. Here $D \\subseteq P$ is dense if every element of $P$\nhas an element of $D$ below it, and a filter is a nonempty upward closed subset of $P$ any two\nof whose elements have a common lower bound in it.",
+   "declaration": "MetaMathlibExt.MartinAxiom",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Forcing/ForcingAxioms/MartinAxiom.lean",
+    "line": 68,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/open-coloring-axiom/is-coloring-free.md",
+   "title": "Free set for a coloring",
+   "statement": "Let $X$ be a set and $K \\subseteq X \\times X$. A set\n$H \\subseteq X$ is $K$-free if $(x, y) \\notin K$ for all $x, y \\in H$.",
+   "declaration": "MetaMathlibExt.IsColoringFree",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Dichotomies/OpenColoring.lean",
+    "line": 49,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/open-coloring-axiom/is-coloring-homogeneous.md",
+   "title": "Homogeneous set for a coloring",
+   "statement": "Let $X$ be a set and $K \\subseteq X \\times X$. A set\n$H \\subseteq X$ is $K$-homogeneous if $(x, y) \\in K$ for all distinct $x, y \\in H$.",
+   "declaration": "MetaMathlibExt.IsColoringHomogeneous",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Dichotomies/OpenColoring.lean",
+    "line": 41,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/open-coloring-axiom/is-open-coloring.md",
+   "title": "Open coloring of a topological space",
+   "statement": "Let $X$ be a topological space. A set\n$K \\subseteq X \\times X$ of ordered pairs is an open coloring of $X$ if $K$ is open in the\nproduct topology, symmetric ($(x, y) \\in K$ implies $(y, x) \\in K$) and irreflexive\n($(x, x) \\notin K$ for every $x \\in X$).",
+   "declaration": "MetaMathlibExt.IsOpenColoring",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Dichotomies/OpenColoring.lean",
+    "line": 33,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/open-coloring-axiom/open-coloring-axiom.md",
+   "title": "Open coloring axiom",
+   "statement": "Todorcevic's Open Coloring Axiom: for every open coloring of a second-countable space,\neither there is an uncountable homogeneous set, or the space is a countable union of free sets.",
+   "declaration": "MetaMathlibExt.OpenColoringAxiom",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Dichotomies/OpenColoring.lean",
+    "line": 57,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/p-ideal-dichotomy/is-orthogonal-to.md",
+   "title": "Orthogonality to a family of sets",
+   "statement": "Let $I$ be a family of subsets of a set $\\alpha$. A\nset $X \\subseteq \\alpha$ is orthogonal to $I$ if $X \\cap a$ is finite for every $a \\in I$.",
+   "declaration": "MetaMathlibExt.IsOrthogonalTo",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Dichotomies/PIdeal.lean",
+    "line": 51,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/p-ideal-dichotomy/is-pideal.md",
+   "title": "P-ideal of countable sets",
+   "statement": "A family $I$ of subsets of a set $\\alpha$ is a P-ideal of\ncountable sets if every member of $I$ is countable, every subset of a member of $I$ is in $I$,\nevery finite subset of $\\alpha$ is in $I$, $I$ is closed under binary unions, and for every\nsequence $(a_n)_{n \\in \\mathbb{N}}$ of members of $I$ there is $b \\in I$ with $a_n \\subseteq^* b$\n(that is, $a_n \\setminus b$ is finite) for every $n$.",
+   "declaration": "MetaMathlibExt.IsPIdeal",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Dichotomies/PIdeal.lean",
+    "line": 41,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/p-ideal-dichotomy/p-ideal-dichotomy.md",
+   "title": "P-ideal dichotomy",
+   "statement": "The P-ideal dichotomy (PID): for every P-ideal I of countable subsets of an uncountable\nset, either some uncountable set has all its countable subsets in I, or the whole set is a\ncountable union of sets orthogonal to I.",
+   "declaration": "MetaMathlibExt.PIdealDichotomy",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Dichotomies/PIdeal.lean",
+    "line": 60,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/p-ideal-dichotomy/subset-mod-finite.md",
+   "title": "Inclusion modulo finite",
+   "statement": "For subsets $a$ and $b$ of a set $\\alpha$, $a \\subseteq^* b$\n($a$ is almost contained in $b$) if the difference $a \\setminus b$ is finite.",
+   "declaration": "MetaMathlibExt.SubsetModFinite",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Dichotomies/PIdeal.lean",
+    "line": 34,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/is-compatible.md",
+   "title": "Compatible conditions",
+   "statement": "Two elements $p$ and $q$ of a partial order $\\mathbb{P}$ are\ncompatible if there is $r \\in \\mathbb{P}$ with $r \\le p$ and $r \\le q$.",
+   "declaration": "MetaMathlibExt.IsCompatible",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean",
+    "line": 45,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/is-generic-for.md",
+   "title": "(M, ℙ)-generic conditions",
+   "statement": "Let $\\mathbb{P}$ be a partial order and $M$ a subset of the\ndisjoint union $\\mathbb{P} \\sqcup \\mathcal{P}(\\mathbb{P})$. Write $M_c$ for the set of\n$p \\in \\mathbb{P}$ whose copy in the disjoint union lies in $M$, and $M_s$ for the set of\n$D \\subseteq \\mathbb{P}$ whose copy lies in $M$. A condition $q \\in \\mathbb{P}$ is\n$(M, \\mathbb{P})$-generic if for every $D \\in M_s$ that is dense in $\\mathbb{P}$ (every element\nof $\\mathbb{P}$ has an element of $D$ below it), the set $D \\cap M_c$ is predense below $q$: for\nevery $r \\le q$ there are $a \\in D \\cap M_c$ and $s \\in \\mathbb{P}$ with $s \\le r$ and $s \\le a$.\n\nNo condition is imposed on $M$ here. In the intended application $M$ is the trace of a countable\nelementary submodel of $H(\\theta)$, for a sufficiently large regular cardinal $\\theta$, that\ncontains $\\mathbb{P}$; genericity depends only on $M_c$ and $M_s$, and the elementarity is\nsupplied by the club in the definition of proper partial orders.",
+   "declaration": "MetaMathlibExt.IsGenericFor",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean",
+    "line": 65,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/is-predense-below.md",
+   "title": "Predense below a condition",
+   "statement": "A set $A \\subseteq \\mathbb{P}$ of elements of a partial order\n$\\mathbb{P}$ is predense below $q \\in \\mathbb{P}$ if for every $r \\le q$ there is $a \\in A$ such\nthat $r$ and $a$ are compatible.",
+   "declaration": "MetaMathlibExt.IsPredenseBelow",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean",
+    "line": 51,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/is-proper-forcing.md",
+   "title": "Proper partial orders",
+   "statement": "Let $\\mathbb{P}$ be a partial order and let $X$ be the disjoint\nunion $\\mathbb{P} \\sqcup \\mathcal{P}(\\mathbb{P})$; for $M \\subseteq X$ write $M_c$ for the set of\n$p \\in \\mathbb{P}$ whose copy in $X$ lies in $M$. Then $\\mathbb{P}$ is proper if there is a club\n$C$ in $[X]^\\omega$ such that for every $M \\in C$ and every $p \\in M_c$ there is an\n$(M, \\mathbb{P})$-generic condition $q \\le p$. Here a club in $[X]^\\omega$ is a family of\ncountable subsets of $X$ such that every countable subset of $X$ is contained in a member of the\nfamily, and the union of every increasing sequence $M_0 \\subseteq M_1 \\subseteq \\cdots$ of\nmembers of the family is again a member.\n\nThe usual requirement $\\mathbb{P} \\in M$ is not imposed: $\\mathbb{P}$ is an element of $X$ (as a\nsubset of itself), and since $C$ is cofinal it has members containing it.",
+   "declaration": "MetaMathlibExt.IsProperForcing",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean",
+    "line": 77,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/model-conds.md",
+   "title": "Conditions in a model",
+   "statement": "Let $\\mathbb{P}$ be a set and $M$ a subset of the disjoint union\n$\\mathbb{P} \\sqcup \\mathcal{P}(\\mathbb{P})$. The conditions in $M$ form the set $M_c$ of those\n$p \\in \\mathbb{P}$ whose copy in the disjoint union belongs to $M$; informally,\n$M_c = M \\cap \\mathbb{P}$.",
+   "declaration": "MetaMathlibExt.modelConds",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean",
+    "line": 35,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/model-sets.md",
+   "title": "Sets of conditions in a model",
+   "statement": "Let $\\mathbb{P}$ be a set and $M$ a subset of the disjoint\nunion $\\mathbb{P} \\sqcup \\mathcal{P}(\\mathbb{P})$. The sets of conditions in $M$ form the family\n$M_s$ of those $D \\subseteq \\mathbb{P}$ whose copy in the disjoint union belongs to $M$;\ninformally, $M_s = M \\cap \\mathcal{P}(\\mathbb{P})$.",
+   "declaration": "MetaMathlibExt.modelSets",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean",
+    "line": 40,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/proper-forcing-axiom.md",
+   "title": "Proper Forcing Axiom",
+   "statement": "For every proper partial order $\\mathbb{P}$, every family\n$\\mathcal{D}$ of at most $\\aleph_1$ dense subsets of $\\mathbb{P}$, and every condition\n$p \\in \\mathbb{P}$, there is a filter $G \\subseteq \\mathbb{P}$ with $p \\in G$ that meets every\nmember of $\\mathcal{D}$, that is, $G \\cap D \\neq \\emptyset$ for every $D \\in \\mathcal{D}$.\n\nHere a set $D \\subseteq \\mathbb{P}$ is dense if for every $q \\in \\mathbb{P}$ there is $d \\in D$\nwith $d \\le q$, and a filter is a nonempty, upward closed subset $G$ of $\\mathbb{P}$ such that\nany two elements of $G$ have a common lower bound in $G$.",
+   "declaration": "MetaMathlibExt.ProperForcingAxiom",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Forcing/ForcingAxioms/ProperForcingAxiom.lean",
+    "line": 40,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/almost-disjoint-families/almost-disjoint-family-of-functions-on-a.md",
+   "title": "Almost disjoint family of functions on a regular cardinal",
+   "statement": "Let κ be a regular cardinal. A family of functions κ → κ is *almost disjoint* if for all f and g\nin the family with f≠ g, |{ α ∣ f(α ) = g(α ) }|<κ..",
+   "declaration": "MetaMathlibExt.IsAlmostDisjointFunFamily",
+   "lean": {
+    "file": "MathlibExt/SetTheory/InfinitaryCombinatorics/AlmostDisjoint.lean",
+    "line": 57,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/almost-disjoint-families/functions-almost-disjoint-modulo-the-non.md",
+   "title": "Functions almost disjoint modulo the nonstationary ideal",
+   "statement": "Functions f, g ∈ ∏_{α<ω₁} A_α are *almost disjoint mod the nonstationary ideal* if the set {  α\n< ω₁ : f(α) = g(α)  } on which they agree is nonstationary in ω₁.",
+   "declaration": "MetaMathlibExt.AlmostDisjointModNS",
+   "lean": {
+    "file": "MathlibExt/SetTheory/InfinitaryCombinatorics/AlmostDisjoint.lean",
+    "line": 48,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/almost-disjoint-families/kappa-almost-disjoint-family-of-sets.md",
+   "title": "$\\kappa$-almost disjoint family of sets",
+   "statement": "A family F ⊆ 𝒫(I) is *κ-almost disjoint* if |A| = κ for every A ∈ F and |A ∩ B| < κ for all\ndistinct A, B ∈ F.",
+   "declaration": "MetaMathlibExt.IsAlmostDisjointFamilyKappa",
+   "lean": {
+    "file": "MathlibExt/SetTheory/InfinitaryCombinatorics/AlmostDisjoint.lean",
+    "line": 39,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/aronszajn-trees/aronszajn-tree.md",
+   "title": "Aronszajn tree",
+   "statement": "An *Aronszajn tree* is a tree of height $\\aleph_1}$ all of whose levels are at most countable\nand which has no uncountable branches.",
+   "declaration": "MetaMathlibExt.IsAronszajnTree",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Tree/Aronszajn.lean",
+    "line": 47,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/aronszajn-trees/kappa-aronszajn-tree.md",
+   "title": "$\\kappa$-Aronszajn tree",
+   "statement": "A κ-Aronszajn tree is a κ-tree such that there are no cofinal branch through the tree.",
+   "declaration": "MetaMathlibExt.IsAronszajnTreeAt",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Tree/Aronszajn.lean",
+    "line": 37,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/aronszajn-trees/omega-1-tree.md",
+   "title": "$\\omega_1$-tree",
+   "statement": "An *ω₁-tree* is a tree of height ω₁ all of whose levels are countable: every node has height <\nω₁, every level Lev_α(T) with α < ω₁ is nonempty, and every such level is countable.",
+   "declaration": "MetaMathlibExt.IsOmega1Tree",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Tree/Aronszajn.lean",
+    "line": 57,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/special-partial-orders/partial-order-that-is-a-union-of-countab.md",
+   "title": "Partial order that is a union of countably many antichains",
+   "statement": "A partial order (P, ≤) is a *union of ω antichains* if P = ⋃_{n<ω} Aₙ where each Aₙ ⊆ P is an\nantichain (a set of pairwise ≤-incomparable elements).",
+   "declaration": "MetaMathlibExt.IsUnionOfOmegaAntichains",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Tree/Special.lean",
+    "line": 37,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/special-partial-orders/special-partial-order.md",
+   "title": "Special partial order",
+   "statement": "A partial order (α,≤) is *special* if there is a map\nf : α → ℚ that is strictly increasing, i.e.\\\nx < y implies f(x) < f(y).  Note that f need not be injective:\nnothing is required of incomparable elements.",
+   "declaration": "MetaMathlibExt.IsSpecial",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Tree/Special.lean",
+    "line": 47,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/suslin-trees/kappa-suslin-tree.md",
+   "title": "$\\kappa$-Suslin tree",
+   "statement": "A κ-Suslin tree is a κ-Aronszajn tree with no antichains of size κ.",
+   "declaration": "MetaMathlibExt.IsSuslinTreeAt",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Tree/Suslin.lean",
+    "line": 38,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/suslin-trees/suslin-tree.md",
+   "title": "Suslin tree",
+   "statement": "A *Suslin tree* is a tree of height $\\aleph_1}$ with no uncountable branches and no uncountable\nantichains.",
+   "declaration": "MetaMathlibExt.IsSuslinTree",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Tree/Suslin.lean",
+    "line": 46,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/trees-in-set-theory/level-of-a-well-founded-partial-order.md",
+   "title": "Level of a well-founded partial order",
+   "statement": "For an ordinal α, the *α-th level* of a well-founded partial order (T, <) is Lev_α(T) = {  x ∈ T\n: ht(x) = α  }, the set of elements whose height equals α.",
+   "declaration": "MetaMathlibExt.level",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Tree/Basic.lean",
+    "line": 46,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/trees-in-set-theory/normal-tree-at-a-cardinal.md",
+   "title": "Normal tree at a cardinal",
+   "statement": "Let κ be a cardinal and (α,≤) a well-founded partial order; for x∈α let rank(x) denote the rank\nof x in the well-founded relation <. α is a *normal tree at κ* if:\n\n\\begin{enumerate}\n  \\item $\\alpha$ is a tree at $\\kappa$, i.e.\n  \\begin{itemize}\n    \\item $\\forall x\\in\\alpha$, $\\{y \\mid y\\lt x\\}$ is a chain,\n    \\item $\\forall x\\in\\alpha,\\ \\exists a\\lt \\kappa.\\mathrm{ord},\\ x\\in\\mathrm{level}_\\alpha(a)$,\n    \\item $\\forall a\\lt \\kappa.\\mathrm{ord},\\ \\mathrm{level}_\\alpha(a)\\neq\\emptyset$\n          and $|\\mathrm{level}_\\alpha(a)|\\lt \\kappa$;\n  \\end{itemize}\n  \\item $\\alpha$ has a root: $\\exists r\\in\\alpha\\ \\forall x\\in\\alpha,\\ r\\le x$;\n  \\item every node can be extended to any higher level below $\\kappa$:\n  \\[\n    \\forall x\\in\\alpha\\ \\forall b\\lt \\kappa.\\mathrm{ord}\\;\n    \\bigl(\\operatorname{rank}(x)\\lt b \\to\n    \\exists y\\in\\alpha\\ (x\\lt y \\land \\operatorname{rank}(y)=b)\\bigr);\n  \\]\n  \\item every node splits:\n  \\[\n    \\forall x\\in\\alpha\\ \\exists y,z\\in\\alpha\\;\n    \\bigl(x\\lt y \\land x\\lt z \\land y\\not\\le z \\land z\\not\\le y\\bigr).\n  \\]\n\\end{enumerate}",
+   "declaration": "MetaMathlibExt.IsNormalTreeAt",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Tree/Basic.lean",
+    "line": 86,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/trees-in-set-theory/tree-set-theory.md",
+   "title": "Tree (set theory)",
+   "statement": "A *tree* is a partially ordered set (T, <) iwith the property that for each x ∈ T, the set {  y\n∈ T : y < x  } of all predecessors of x is well-ordered by <).",
+   "declaration": "MetaMathlibExt.IsTree",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Tree/Basic.lean",
+    "line": 38,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/automorphisms-of-p-fin/eq-mod-finite.md",
+   "title": "Equality modulo finite sets",
+   "statement": "Subsets $A$ and $B$ of $\\mathbb{N}$ are *equal modulo finite*,\nwritten $A =^{\\ast} B$, if their symmetric difference $A \\mathbin{\\triangle} B$ is finite.",
+   "declaration": "MetaMathlibExt.EqModFinite",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Order/PowersetModFinite.lean",
+    "line": 35,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/automorphisms-of-p-fin/is-pow-mod-finite-automorphism.md",
+   "title": "Automorphisms of P(ω)/fin on representatives",
+   "statement": "For subsets $A$, $B$ of $\\mathbb{N}$, write\n$A =^{\\ast} B$ when their symmetric difference is finite. A map $\\Phi$ from subsets of\n$\\mathbb{N}$ to subsets of $\\mathbb{N}$ presents an automorphism of $P(\\omega)/\\mathrm{fin}$ if for\nall subsets $A$, $B$ of $\\mathbb{N}$: it respects $=^{\\ast}$ ($A =^{\\ast} B$ implies\n$\\Phi(A) =^{\\ast} \\Phi(B)$), it preserves meets ($\\Phi(A \\cap B) =^{\\ast} \\Phi(A) \\cap \\Phi(B)$)\nand complements ($\\Phi(\\mathbb{N} \\setminus A) =^{\\ast} \\mathbb{N} \\setminus \\Phi(A)$), it is\none-to-one modulo finite ($\\Phi(A) =^{\\ast} \\Phi(B)$ implies $A =^{\\ast} B$), and it is onto\nmodulo finite (for every $B$ there is $A$ with $\\Phi(A) =^{\\ast} B$).",
+   "declaration": "MetaMathlibExt.IsPowModFiniteAutomorphism",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Order/PowersetModFinite.lean",
+    "line": 43,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/clubs-stationary-sets-and-normal-ideals/closure-points-and-clubs-of-countable-su.md",
+   "title": "Closure points and clubs of countable subsets",
+   "statement": "1. Let F : Finset(α) → α. Then ClosurePointsSeq(λ n : ℕ,, F) =      ClosurePoints(F).   2. For\n   every finitary operation F, ∅ ∉ ClosurePoints(F).   3. Let f : ℕ → 𝒫(α) with each f(n) countable.\n   Then ⋃_{n ∈ ℕ} f(n)      is countable.   4. [α]^ω is club in [α]^ω.   5. ∅ is not stationary in\n   [α]^ω.   6. If S is stationary in [α]^ω then S ≠ ∅.   7.\n\nThe full informal statement is in the module documentation directly above.",
+   "declaration": "MetaMathlibExt.closurePointsSeq_const",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/Cofinality/CountableSubsets.lean",
+    "line": 128,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/clubs-stationary-sets-and-normal-ideals/closure-points-seq.md",
+   "title": "Closure points of a sequence of finitary functions",
+   "statement": "Let $X$ be a set and let\n$(F_n)_{n \\in \\mathbb{N}}$ be a sequence of functions, each assigning an element of $X$ to every\nfinite subset of $X$. The closure points of $(F_n)$ are the countable (finite or countably\ninfinite) sets $x \\subseteq X$ such that $F_n(s) \\in x$ for every $n \\in \\mathbb{N}$ and every\nfinite set $s \\subseteq x$.",
+   "declaration": "MetaMathlibExt.ClosurePointsSeq",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/Cofinality/CountableSubsets.lean",
+    "line": 97,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/clubs-stationary-sets-and-normal-ideals/closure-points.md",
+   "title": "Closure points of a finitary function",
+   "statement": "Let $X$ be a set and let $F$ be a function\nassigning an element of $X$ to every finite subset of $X$. The closure points of $F$ are the\ncountable (finite or countably infinite) sets $a \\subseteq X$ such that $F(s) \\in a$ for every\nfinite set $s \\subseteq a$.",
+   "declaration": "MetaMathlibExt.ClosurePoints",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/Cofinality/CountableSubsets.lean",
+    "line": 89,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/clubs-stationary-sets-and-normal-ideals/club-subset-of-p-kappa-lambda.md",
+   "title": "Club subset of $P_\\kappa(\\lambda)$",
+   "statement": "C ⊆ P_κ(λ) is club iff\n\n1. C is ⊆-cofinal: ∀ x ∈ P_κ(λ)  ∃ y ∈ C  (x ⊆ y), and\n1. C is closed under unions of nonempty ⊆-directed subfamilies of size < κ: for every nonempty\n   ⊆-directed D ⊆ C with |D| < κ, ⋃ D ∈ C.",
+   "declaration": "MetaMathlibExt.IsClubPowersetCardLT",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/Cofinality/PkappaLambda.lean",
+    "line": 47,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/clubs-stationary-sets-and-normal-ideals/countable-subsets-of-a-set.md",
+   "title": "Countable subsets of a set",
+   "statement": "[α]^ω or P_{ω₁}(α) is the set of countable subsets of α",
+   "declaration": "MetaMathlibExt.CountableSubsets",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/Cofinality/CountableSubsets.lean",
+    "line": 68,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/clubs-stationary-sets-and-normal-ideals/family-containing-all-bounded-subsets-of.md",
+   "title": "Family containing all bounded subsets of a cardinal",
+   "statement": "A set X⊆κ is *bounded in κ* if there is some\nβ<κ with α<β for every α∈ X; equivalently,\nX⊆β for some β<κ.\n\nA family I⊆𝒫(κ) *contains all bounded sets*\nif every bounded X⊆κ belongs to I:\n\n∀ X ⊆ κ  [\n    (∃ β < κ ∀ α ∈ X, α < β)\n     ⟶  X ∈ I\n   ].",
+   "declaration": "MetaMathlibExt.ContainsAllBounded",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/Cofinality/Stationary.lean",
+    "line": 49,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/clubs-stationary-sets-and-normal-ideals/is-club-omega.md",
+   "title": "Club families of countable sets",
+   "statement": "Let $X$ be a set. A family $C$ of subsets of $X$ is club\nin the countable subsets of $X$ when every member of $C$ is countable (finite or countably\ninfinite), every countable set $x \\subseteq X$ is contained in some member of $C$, and for every\nsequence $x_0 \\subseteq x_1 \\subseteq x_2 \\subseteq \\cdots$ of members of $C$ the union\n$\\bigcup_{n \\in \\mathbb{N}} x_n$ belongs to $C$.",
+   "declaration": "MetaMathlibExt.IsClubOmega",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/Cofinality/CountableSubsets.lean",
+    "line": 75,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/clubs-stationary-sets-and-normal-ideals/is-regressive.md",
+   "title": "Regressive functions",
+   "statement": "Let $\\kappa$ be a cardinal, identified with its initial ordinal, let\n$S$ be a set of ordinals less than $\\kappa$, and let $f$ be a function from $S$ to the ordinals\nless than $\\kappa$. Then $f$ is regressive if $f(\\alpha) < \\alpha$ for every nonzero\n$\\alpha \\in S$.",
+   "declaration": "MetaMathlibExt.IsRegressive",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/Cofinality/Stationary.lean",
+    "line": 94,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/clubs-stationary-sets-and-normal-ideals/is-stationary-omega.md",
+   "title": "Stationary families of countable sets",
+   "statement": "Let $X$ be a set. A family $S$ of subsets of $X$ is\nstationary in the countable subsets of $X$ when $S$ meets every family $C$ that is club in the\ncountable subsets of $X$, that is, some set belongs to both $S$ and $C$.",
+   "declaration": "MetaMathlibExt.IsStationaryOmega",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/Cofinality/CountableSubsets.lean",
+    "line": 83,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/clubs-stationary-sets-and-normal-ideals/kappa-complete-ideal-on-a-cardinal.md",
+   "title": "$\\kappa$-complete ideal on a cardinal",
+   "statement": "A *κ-complete ideal on κ* is a collection I ⊆ 𝒫(κ) such that:\n\n1. ∅ ∈ I.\n1. If A ∈ I and B ⊆ A, then B ∈ I.\n1. κ ∉ I.\n1. If λ < κ and ⟨ A_α : α < λ ⟩ is a sequence of members of I, then [ ⋃_{α < λ} A_α ∈ I. ]",
+   "declaration": "MetaMathlibExt.IsKappaCompleteIdeal",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/Cofinality/Stationary.lean",
+    "line": 62,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/clubs-stationary-sets-and-normal-ideals/normal-ideal-on-a-cardinal.md",
+   "title": "Normal ideal on a cardinal",
+   "statement": "Let κ be a cardinal, identified with\nκ = Iio(κ.ord) = {α : Ordinal ∣ α < κ.ord},\nand let I⊆𝒫(κ).\n\nI is *normal* if it is closed under diagonal unions: for every\nκ-sequence ⟨ A_ξ : ξ<κ⟩ with A_ξ∈ I,\n\n∇_{ξ<κ} A_ξ := {α<κ ∣ ∃ ξ<α, α∈ A_ξ} ∈ I.\n\nFormally,\n\n∀ A : κ → 𝒫(κ),  (∀ ξ, A_ξ∈ I) →\n  {α∈κ ∣ ∃ ξ∈κ, ξ<α ∧ α∈ A_ξ}∈ I.",
+   "declaration": "MetaMathlibExt.IsNormalIdeal",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/Cofinality/Stationary.lean",
+    "line": 86,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/clubs-stationary-sets-and-normal-ideals/subsets-of-lambda-of-size-less-than-kapp.md",
+   "title": "Subsets of $\\lambda$ of size less than $\\kappa$",
+   "statement": "P_κ(λ) := { x ⊆ λ ∣ |x| < κ }",
+   "declaration": "MetaMathlibExt.powersetCardLT",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/Cofinality/PkappaLambda.lean",
+    "line": 36,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/diamond-principle/diamond-minus-principle.md",
+   "title": "Diamond-minus principle",
+   "statement": "◇⁻_κ holds iff there is a sequence ⟨ 𝒜_α : α < κ⟩ with each 𝒜_α ⊆ 𝒫(α) and |𝒜_α| ≤ |α|, such\nthat for every X ⊆ κ the set {α < κ : X ∩ α ∈ 𝒜_α} is stationary in κ.",
+   "declaration": "MetaMathlibExt.DiamondMinus",
+   "lean": {
+    "file": "MathlibExt/SetTheory/InfinitaryCombinatorics/Diamond.lean",
+    "line": 43,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/diamond-principle/diamond-principle.md",
+   "title": "Diamond principle",
+   "statement": "◇_κ holds iff there is a sequence ⟨ S_α : α < κ⟩ with S_α ⊆ α for all α < κ, such that for every\nX ⊆ κ, {α < κ : X ∩ α = S_α} is stationary in κ.",
+   "declaration": "MetaMathlibExt.Diamond",
+   "lean": {
+    "file": "MathlibExt/SetTheory/InfinitaryCombinatorics/Diamond.lean",
+    "line": 31,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/is-delta-system.md",
+   "title": "Δ-system",
+   "statement": "A family $A$ of subsets of a type $\\alpha$ is a Δ-system with root\n$r \\subseteq \\alpha$ if $s \\cap t = r$ for any two distinct members $s$ and $t$ of $A$.",
+   "declaration": "MetaMathlibExt.IsDeltaSystem",
+   "lean": {
+    "file": "MathlibExt/SetTheory/InfinitaryCombinatorics/DeltaSystem.lean",
+    "line": 34,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/is-ramsey-ultrafilter.md",
+   "title": "Ramsey ultrafilter",
+   "statement": "An ultrafilter $U$ on $\\mathbb{N}$ is *Ramsey* if for every sequence\n$(A_n)_{n \\in \\mathbb{N}}$ of pairwise disjoint subsets of $\\mathbb{N}$ whose union is\n$\\mathbb{N}$ and such that $A_n \\notin U$ for all $n$, there is $X \\in U$ such that\n$X \\cap A_n$ has at most one element for every $n$.",
+   "declaration": "MetaMathlibExt.IsRamseyUltrafilter",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Ultrafilter/Ramsey.lean",
+    "line": 39,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/partition-calculus/aleph-omega-partition-of-cardinal-sum-ho.md",
+   "title": "Shelah's theorem (Erdős Problem 1219)",
+   "statement": "For every strictly increasing sequence\n$n_0 < n_1 < \\cdots$ of natural numbers such that the cardinals $2^{\\aleph_{n_k}}$ are strictly\nincreasing in $k$ and $2^{\\aleph_{n_0}} > \\aleph_\\omega$, the partition relation\n$\\sum_k 2^{\\aleph_{n_k}} \\to (\\aleph_\\omega)^2_2$ holds: for every set $X$ of cardinality\n$\\sum_k 2^{\\aleph_{n_k}}$ and every symmetric colouring of the pairs of elements of $X$ with two\ncolours, some subset of $X$ of cardinality $\\aleph_\\omega$ has all pairs of distinct elements of\nthe same colour.\n\n## Sources\n\n- T. F. Bloom, Erdős Problems, Problem #1219, https://www.erdosproblems.com/1219 (status PROVED); resolution: S. Shelah, Notes on partition calculus, in Infinite and Finite Sets (Colloq. Keszthely, 1973), Colloq. Math. Soc. János Bolyai 10, North-Holland (1975), 1257-1276, erdosproblems.com/1219: proved by Shelah (a problem of Erdős, Hajnal and Rado; P. Komjáth, The Erdős-Hajnal problem list, Bull. Symb. Log. (2025), p. 2).",
+   "declaration": "MathlibExt.Combinatorics.AlephOmegaPartitionSumErdosProblem1219Wanted.alephOmegaPartitionOfCardinalSum_holds",
+   "lean": {
+    "file": "WantedExt/Combinatorics/AlephOmegaPartitionSumErdosProblem1219Wanted.lean",
+    "line": 60,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/partition-calculus/aleph-omega-partition-of-cardinal-sum.md",
+   "title": "Erdős Problem 1219: a partition relation for sums of powers of two",
+   "statement": "The statement that for\nevery strictly increasing sequence $n_0 < n_1 < \\cdots$ of natural numbers such that the cardinals\n$2^{\\aleph_{n_k}}$ are strictly increasing in $k$ and $2^{\\aleph_{n_0}} > \\aleph_\\omega$, the\npartition relation $\\sum_k 2^{\\aleph_{n_k}} \\to (\\aleph_\\omega)^2_2$ holds: for every set $X$ of\ncardinality $\\sum_k 2^{\\aleph_{n_k}}$ and every symmetric colouring of the pairs of elements of $X$\nwith two colours, some subset of $X$ of cardinality $\\aleph_\\omega$ has all pairs of distinct\nelements of the same colour.",
+   "declaration": "MathlibExt.Combinatorics.AlephOmegaPartitionSumErdosProblem1219Wanted.alephOmegaPartitionOfCardinalSum",
+   "lean": {
+    "file": "WantedExt/Combinatorics/AlephOmegaPartitionSumErdosProblem1219Wanted.lean",
+    "line": 46,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/partition-calculus/arrows-pairs.md",
+   "title": "Partition relation for pairs with two colours",
+   "statement": "For cardinals $\\kappa$ and $\\mu$, the\nrelation $\\kappa \\to (\\mu)^2_2$ holds if for every set $X$ of cardinality $\\kappa$ and every\nsymmetric colouring $c$ of the ordered pairs of elements of $X$ with two colours, there are a\nsubset $H \\subseteq X$ of cardinality $\\mu$ and a colour $b$ such that $c(x, y) = b$ for all\ndistinct $x, y \\in H$.",
+   "declaration": "MathlibExt.Combinatorics.AlephOmegaPartitionSumErdosProblem1219Wanted.ArrowsPairs",
+   "lean": {
+    "file": "WantedExt/Combinatorics/AlephOmegaPartitionSumErdosProblem1219Wanted.lean",
+    "line": 40,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/partition-calculus/conjecture-holds.md",
+   "title": "Erdős Problem 591 is true",
+   "statement": "Let $\\alpha = \\omega^{\\omega^2}$. For every red/blue colouring of\nthe edges of the complete graph on the ordinals less than $\\alpha$, that is, every pair of\ncomplementary simple graphs (red and blue) on this set, there is a red clique whose order type\nis $\\alpha$ or a blue clique with exactly $3$ elements. In partition notation,\n$\\alpha \\to (\\alpha, 3)^2$.\n\n## Sources\n\n- Schipperus [Sc10] and Darby, independently, per erdosproblems.com/591, https://www.erdosproblems.com/591.",
+   "declaration": "MathlibExt.Combinatorics.ErdosProblem591Wanted.conjecture_holds",
+   "lean": {
+    "file": "WantedExt/Combinatorics/ErdosProblem591Wanted.lean",
+    "line": 43,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/partition-calculus/conjecture.md",
+   "title": "Erdős Problem 591",
+   "statement": "The statement that, for $\\alpha = \\omega^{\\omega^2}$, every red/blue\ncolouring of the edges of the complete graph on the ordinals less than $\\alpha$ (that is, every\npair of complementary simple graphs, red and blue, on this set) has a red clique whose order\ntype is $\\alpha$ or a blue clique with exactly $3$ elements. In partition notation,\n$\\alpha \\to (\\alpha, 3)^2$.",
+   "declaration": "MathlibExt.Combinatorics.ErdosProblem591Wanted.conjecture",
+   "lean": {
+    "file": "WantedExt/Combinatorics/ErdosProblem591Wanted.lean",
+    "line": 34,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/partition-calculus/is-homogeneous-for.md",
+   "title": "Homogeneous set",
+   "statement": "Let $c$ assign a colour in $\\gamma$ to each finite subset of a type\n$I$, and let $n \\in \\mathbb{N}$. A set $H \\subseteq I$ is homogeneous for $c$ with colour\n$k \\in \\gamma$ if $c(s) = k$ for every $n$-element subset $s$ of $H$.\n\nOnly the values of $c$ on $n$-element sets matter, so $c$ plays the role of a colouring\n$[I]^n \\to \\gamma$ of the $n$-element subsets of $I$.",
+   "declaration": "MetaMathlibExt.IsHomogeneousFor",
+   "lean": {
+    "file": "MathlibExt/SetTheory/InfinitaryCombinatorics/PartitionCalculus.lean",
+    "line": 35,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/partition-calculus/ordinal-cardinal-ramsey.md",
+   "title": "Ordinal–cardinal Ramsey property",
+   "statement": "For ordinals $\\alpha$, $\\beta$ and a cardinal $c$, the\npartition property $\\alpha \\to (\\beta, c)^2$ holds if for every coloring of the edges of the\ncomplete graph on the ordinals less than $\\alpha$ in red and blue, either some set of vertices\nwhose order type is $\\beta$ has all its edges red, or some set of vertices of cardinality exactly\n$c$ has all its edges blue.",
+   "declaration": "OrdinalCardinalRamsey",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/SimpleGraph.lean",
+    "line": 43,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/partition-calculus/partition-ordinal-triangle-implies-cliqu-2.md",
+   "title": "Erdős Problem 118 fails for ordinals",
+   "statement": "There exist an ordinal $\\alpha$ satisfying the partition\nrelation $\\alpha \\to (\\alpha, 3)^2$ and a natural number $n \\ge 3$ such that $\\alpha$ does not\nsatisfy $\\alpha \\to (\\alpha, n)^2$.\n\nSchipperus and Darby independently answered the question in the negative. A concrete\ncounterexample is $\\alpha = \\omega^{\\omega^2}$ with $n = 5$: Schipperus proved\n$\\omega^{\\omega^\\beta} \\to (\\omega^{\\omega^\\beta}, 3)^2$ when $\\beta$ is a sum of two additively\nindecomposable ordinals (here $\\beta = 1 + 1$), and Larson proved\n$\\omega^{\\omega^\\beta} \\not\\to (\\omega^{\\omega^\\beta}, 5)^2$ for every $\\beta$ that is not\nadditively indecomposable.\n\n## Sources\n\n- T. F. Bloom, Erdős Problems, Problem #118, https://www.erdosproblems.com/118 (status DISPROVED); resolution: R. Schipperus, Countable partition ordinals, Ann. Pure Appl. Logic 161 (2010), 1195-1215; C. Darby, Negative partition relations for ordinals ω^{ω^α}, J. Combin. Theory Ser. B 76 (1999), 205-222; J. A. Larson, An ordinal partition avoiding pentagrams, J. Symbolic Logic 65 (2000), 969-978, erdosproblems.com/118: answered no independently by Schipperus and Darby; for α = ω^{ω²}: ω^{ω²} → (ω^{ω²}, 3)² (Schipperus: ω^{ω^β} → (ω^{ω^β}, 3)² when β is a sum of two additively indecomposable ordinals) and ω^{ω²} ↛ (ω^{ω²}, 5)² (Larson, main theorem: ω^{ω^β} ↛ (ω^{ω^β}, 5)² for β not additively indecomposable; zbMATH 0967.03042); Hajnal-Larson, Handbook of Set Theory, Chapter 2.9.",
+   "declaration": "MathlibExt.Combinatorics.PartitionOrdinalTriangleCliqueErdosProblem118Wanted.partitionOrdinalTriangleImpliesClique_refuted",
+   "lean": {
+    "file": "WantedExt/Combinatorics/PartitionOrdinalTriangleCliqueErdosProblem118Wanted.lean",
+    "line": 67,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/partition-calculus/partition-ordinal-triangle-implies-cliqu.md",
+   "title": "Erdős Problem 118 for ordinals",
+   "statement": "The statement that for every ordinal $\\alpha$ satisfying\nthe partition relation $\\alpha \\to (\\alpha, 3)^2$ and every natural number $n \\ge 3$, the ordinal\n$\\alpha$ also satisfies $\\alpha \\to (\\alpha, n)^2$.",
+   "declaration": "MathlibExt.Combinatorics.PartitionOrdinalTriangleCliqueErdosProblem118Wanted.partitionOrdinalTriangleImpliesClique",
+   "lean": {
+    "file": "WantedExt/Combinatorics/PartitionOrdinalTriangleCliqueErdosProblem118Wanted.lean",
+    "line": 49,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/partition-calculus/partition-rel.md",
+   "title": "Ordinal partition relation",
+   "statement": "For an ordinal $\\alpha$ and a natural number $n$, the partition\nrelation $\\alpha \\to (\\alpha, n)^2$ holds when every colouring of the pairs $x < y$ of ordinals\nbelow $\\alpha$ in red and blue has a red set of order type $\\alpha$ or a blue set of size $n$:\neither there is a strictly increasing map $f$ from the ordinals below $\\alpha$ to the ordinals\nbelow $\\alpha$ such that the pair $\\{f(x), f(y)\\}$ is red for all $x < y < \\alpha$, or there is a\nset of $n$ ordinals below $\\alpha$ all of whose pairs are blue.",
+   "declaration": "MathlibExt.Combinatorics.PartitionOrdinalTriangleCliqueErdosProblem118Wanted.PartitionRel",
+   "lean": {
+    "file": "WantedExt/Combinatorics/PartitionOrdinalTriangleCliqueErdosProblem118Wanted.lean",
+    "line": 40,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/square-principle/jensen-s-square-principle.md",
+   "title": "Jensen's square principle",
+   "statement": "□_κ: a □_κ-sequence exists",
+   "declaration": "MetaMathlibExt.Square",
+   "lean": {
+    "file": "MathlibExt/SetTheory/InfinitaryCombinatorics/Square.lean",
+    "line": 50,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/infinitary-combinatorics/square-principle/square-sequence.md",
+   "title": "Square sequence",
+   "statement": "Jensen's square principle sequence:  C = (C_α : α < κ⁺) is a □_κ-sequence: for every limit\n α < κ⁺, C_α is club in α of order type at most κ, and the family coheres —\n C_β = C_α ∩ β whenever β is a limit point of C_α.",
+   "declaration": "MetaMathlibExt.IsSquareSequence",
+   "lean": {
+    "file": "MathlibExt/SetTheory/InfinitaryCombinatorics/Square.lean",
+    "line": 37,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/a-regular-beth-fixed-point-is-inaccessib.md",
+   "title": "A regular beth fixed point is inaccessible",
+   "statement": "Converse to `IsInaccessible.beth_ord`: a regular beth fixed point is\ninaccessible.  Uncountability is derived, not assumed\n(`aleph0_lt_of_isRegular_beth_ord`); for `x < κ`,\n`2 ^ x ≤ 2 ^ ℶ_{x.ord} = ℶ_{succ x.ord} < κ`, using that `κ.ord` is a limit\nordinal.\n\nRegularity is genuinely needed — the first beth fixed point is singular — so\nthis does not promote a bare fixed point.\n\n## Sources\n\n- A regular beth fixed point is inaccessible.",
+   "declaration": "MetaMathlibExt.Cardinal.IsInaccessible.of_isRegular_beth_ord",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 304,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/a-regular-beth-fixed-point-is-uncountabl.md",
+   "title": "A regular beth fixed point is uncountable",
+   "statement": "A regular beth fixed point is uncountable: regularity gives `ℵ₀ ≤ κ`, and\n`κ = ℵ₀` fails the fixed-point equation since `ℶ_ω > ℶ_0 = ℵ₀`.\n\n## Sources\n\n- A regular beth fixed point is uncountable.",
+   "declaration": "MetaMathlibExt.aleph0_lt_of_isRegular_beth_ord",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 282,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/at-most-kappa-inaccessible-cardinals-lie.md",
+   "title": "At most $\\kappa$ inaccessible cardinals lie below $\\kappa$",
+   "statement": "There are at most `κ` inaccessibles below `κ`: the set injects into\n`↥(Set.Iio κ.ord)`, which has size `lift κ`.  The `≤` half of the counting needed\nfor the Mahlo-implies-fixed-point benchmark item.\n\nThe `lift` is forced: the carrier lives in `Type (u+1)`, the same phenomenon as\nthe `lift` in `IsInaccessibleFixedPoint`.\n\n## Sources\n\n- There are at most κ inaccessible cardinals below κ.",
+   "declaration": "MetaMathlibExt.mk_inaccessibleBelow_le",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 110,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/exactly-kappa-inaccessibles-lie-below-an.md",
+   "title": "Exactly $\\kappa$ inaccessibles lie below an inaccessible fixed point",
+   "statement": "The fixed-point equation forces `#(inaccessibleBelow κ) = lift κ`\n(`card_type`): the companion to the upper bound `mk_inaccessibleBelow_le`.\n\n## Sources\n\n- Below an inaccessible fixed point κ there are exactly κ inaccessible cardinals.",
+   "declaration": "MetaMathlibExt.IsInaccessibleFixedPoint.mk_inaccessibleBelow",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 338,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/existence-of-an-inaccessible-with-no-ina.md",
+   "title": "Existence of an inaccessible with no inaccessibles below it",
+   "statement": "If any inaccessible exists, some inaccessible has no inaccessibles below it:\nminimize over the initial ordinals of inaccessible cardinals\n(`WellFounded.has_min`), and any member of `inaccessibleBelow` would give a\nsmaller one.\n\nIn particular the least inaccessible — if one exists — is neither Mahlo (see\n`exists_isInaccessible_not_isMahlo` in `Mahlo.lean`) nor an inaccessible fixed\npoint (`not_isInaccessibleFixedPoint_of_inaccessibleBelow_eq_empty` above).\n\n## Sources\n\n- If any inaccessible cardinal exists, some inaccessible has no inaccessibles below it.",
+   "declaration": "MetaMathlibExt.exists_isInaccessible_inaccessibleBelow_eq_empty",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 220,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/inaccessible-cardinals-are-the-regular-b.md",
+   "title": "Inaccessible cardinals are the regular beth fixed points",
+   "statement": "`κ` is inaccessible iff it is regular and a beth fixed point (uncountability\nis automatic by `aleph0_lt_of_isRegular_beth_ord`): this packages\n`of_isRegular_beth_ord` with Mathlib's `IsInaccessible.beth_ord`.\n\n## Sources\n\n- κ is inaccessible if and only if κ is regular and a beth fixed point.",
+   "declaration": "MetaMathlibExt.Cardinal.isInaccessible_iff_isRegular_beth_ord",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 325,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/inaccessible-fixed-point.md",
+   "title": "Inaccessible fixed point",
+   "statement": "A cardinal κ is an *inaccessible fixed point* if κ is inaccessible and the inaccessibles below κ\nhave order type κ (i.e. κ is the κ-th inaccessible).",
+   "declaration": "MetaMathlibExt.IsInaccessibleFixedPoint",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 75,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/inaccessibles-are-unbounded-below-an-ina.md",
+   "title": "Inaccessibles are unbounded below an inaccessible fixed point",
+   "statement": "Inaccessibles below an inaccessible fixed point are unbounded: if they were\nbounded by `a`, the set would inject into `Iic a.val`, hence have size at most\n`lift (a.val + 1).card < lift κ` — contradicting `mk_inaccessibleBelow`.\n\n## Sources\n\n- Inaccessibles below an inaccessible fixed point are unbounded.",
+   "declaration": "MetaMathlibExt.IsInaccessibleFixedPoint.exists_gt",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 353,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/limit-cardinals-are-unbounded-below-a-we.md",
+   "title": "Limit cardinals are unbounded below a weakly inaccessible cardinal",
+   "statement": "Limit cardinals are unbounded below a weakly inaccessible `κ`: the sup of\nthe `ω`-chain `μ 0 = succ (max a ℵ₀)`, `μ (n+1) = succ (μ n)` stays below `κ`\n(`sum_lt_of_isRegular`), exceeds `a`, and is a limit since every `x < σ`\nlies below some `μ n` (`exists_lt_of_lt_ciSup`).\n\n## Sources\n\n- Above any a < κ with κ weakly inaccessible sits a limit cardinal below κ.",
+   "declaration": "MetaMathlibExt.IsWeaklyInaccessible.exists_isSuccLimit_between",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 392,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/regular-cardinals-are-unbounded-below-an.md",
+   "title": "Regular cardinals are unbounded below an uncountable limit cardinal",
+   "statement": "Regular cardinals are unbounded below an uncountable limit cardinal `κ` (in\nparticular a weakly inaccessible one): above any `a < κ` sits\n`succ (max a ℵ₀)`, regular by `isRegular_succ` and below `κ` since `κ` is a\nlimit.\n\n## Sources\n\n- Regular cardinals are unbounded below any uncountable limit cardinal.",
+   "declaration": "MetaMathlibExt.exists_regular_between",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 122,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/set-of-inaccessible-cardinals-below-a-ca.md",
+   "title": "Set of inaccessible cardinals below a cardinal",
+   "statement": "InAccBelow κ is the set of all inaccessible cardinals below κ.",
+   "declaration": "MetaMathlibExt.inaccessibleBelow",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 67,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/set-of-regular-cardinals-below-a-cardina.md",
+   "title": "Set of regular cardinals below a cardinal",
+   "statement": "The **regular cardinals below `κ`**, carried as initial ordinals — parallel to\n`inaccessibleBelow`, and definitionally the stationary set in `IsWeaklyMahlo`.\nSpelled with Mathlib's `Ordinal.IsInitial`.\n\n## Sources\n\n- regularBelow κ is the set of initial ordinals below κ whose cardinals are regular.",
+   "declaration": "MetaMathlibExt.regularBelow",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 274,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/strong-limit-cardinals-are-closed-under.md",
+   "title": "Strong limit cardinals are closed under exponentiation",
+   "statement": "A strong limit `κ` is closed under cardinal exponentiation: `x ^ y ≤ 2 ^ (x * y)`\n(via `cantor` and `power_mul`), and `x * y < κ` by `mul_lt_of_lt`.  No\ninfiniteness hypothesis is needed — it is automatic by `IsStrongLimit.aleph0_le`.\n\n## Sources\n\n- Below a strong limit κ, x < κ and y < κ imply x ^ y < κ.",
+   "declaration": "Cardinal.IsStrongLimit.power_lt",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 158,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/strong-limits-are-unbounded-below-an-ina.md",
+   "title": "Strong limits are unbounded below an inaccessible cardinal",
+   "statement": "Strong limits are unbounded below an inaccessible `κ`: above any `a < κ` sits\n`ℶ_{a.ord + ω}`, a strong limit by `isStrongLimit_beth` since `a.ord + ω` is a\nlimit ordinal (`isSuccLimit_add`), and below `κ` since\n`(a.ord + ω).card = a.ord.card + ℵ₀ < κ` (`add_lt_of_lt`).\n\n## Sources\n\n- Above any a < κ with κ inaccessible sits a strong limit cardinal below κ.",
+   "declaration": "MetaMathlibExt.Cardinal.IsInaccessible.exists_isStrongLimit_between",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 253,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/supremum-of-a-bounded-set-of-initial-ord.md",
+   "title": "Supremum of a bounded set of initial ordinals is initial",
+   "statement": "The sup of a bounded set of initial ordinals is initial: if\n`σ.card.ord < σ` then some member exceeds `σ.card.ord`, trapping it strictly\nbetween itself and its own initial ordinal.\n\n## Sources\n\n- The supremum of a bounded set of initial ordinals is initial.",
+   "declaration": "MetaMathlibExt.sSup_initial_of_forall_initial",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 444,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/the-aleph-hierarchy-stays-below-an-inacc.md",
+   "title": "The aleph hierarchy stays below an inaccessible cardinal",
+   "statement": "Below an inaccessible `κ`, the aleph hierarchy stays below `κ`: same argument\nvia `IsInaccessible.aleph_ord`.\n\n## Sources\n\n- Below an inaccessible κ, each ℵ_o with o < κ.ord lies below κ.",
+   "declaration": "MetaMathlibExt.Cardinal.IsInaccessible.aleph_lt",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 96,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/the-beth-hierarchy-stays-below-an-inacce.md",
+   "title": "The beth hierarchy stays below an inaccessible cardinal",
+   "statement": "Below an inaccessible `κ`, the beth hierarchy stays below `κ`: `κ` is a beth\nfixed point (`IsInaccessible.beth_ord`) and `beth` is strictly monotone.\n\n## Sources\n\n- Below an inaccessible κ, each ℶ_o with o < κ.ord lies below κ.",
+   "declaration": "Cardinal.IsInaccessible.beth_lt",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 86,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/under-gch-weakly-inaccessible-cardinals.md",
+   "title": "Under GCH, weakly inaccessible cardinals are inaccessible",
+   "statement": "Under (local) GCH, weakly inaccessible implies strongly inaccessible: for\ninfinite `μ < κ`, `2 ^ μ = succ μ < κ` by the limit property, and the finite\ncase is `power_lt_aleph0`.\n\n`GCH` is spelled inline and localized below `κ`, following the\n`singularCardinalsHypothesis_of_gch` precedent (Mathlib has no `GCH` identifier);\nthe `ℵ₀ ≤ μ` restriction is load-bearing for the same reason as there.\n\n## Sources\n\n- Under GCH below κ, a weakly inaccessible κ is inaccessible.",
+   "declaration": "MetaMathlibExt.IsWeaklyInaccessible.isInaccessible_of_gch",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 139,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/weak-power-below-a-strong-limit-cardinal.md",
+   "title": "Weak power below a strong limit cardinal equals the cardinal",
+   "statement": "For `2 ≤ x < κ` with `κ` a strong limit, `x ^< κ = κ`: every smaller power is\nbelow `κ` (`IsStrongLimit.power_lt`), while every `y < κ` sits below\n`2 ^ y ≤ x ^< κ`.  No infiniteness hypothesis is needed — it is automatic by\n`IsStrongLimit.aleph0_le`.\n\n## Sources\n\n- For 2 ≤ x < κ with κ a strong limit, x ^< κ = κ.",
+   "declaration": "MetaMathlibExt.Cardinal.IsStrongLimit.powerlt_eq_self",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 234,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/inaccessible-cardinals/weakly-inaccessible-cardinal.md",
+   "title": "Weakly inaccessible cardinal",
+   "statement": "A cardinal κ is *weakly inaccessible* if it is an uncountable, regular limit cardinal.",
+   "declaration": "MetaMathlibExt.IsWeaklyInaccessible",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean",
+    "line": 61,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/is-weakly-compact.md",
+   "title": "Weakly compact cardinal",
+   "statement": "A cardinal $\\kappa$ is *weakly compact* if $\\aleph_0 < \\kappa$\nand $\\kappa \\to (\\kappa)^2_2$: for every set $I$ of cardinality $\\kappa$ and every colouring $c$\nof the finite subsets of $I$ with two colours, there are a subset $H \\subseteq I$ of cardinality\n$\\kappa$ and a colour $k$ such that $c(s) = k$ for every two-element subset $s \\subseteq H$.",
+   "declaration": "MetaMathlibExt.IsWeaklyCompact",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/WeaklyCompact.lean",
+    "line": 39,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/mahlo-cardinals/mahlo-cardinal.md",
+   "title": "Mahlo cardinal",
+   "statement": "A cardinal κ is *Mahlo* if κ is inaccessible and the set {  λ < κ : λ  is inaccessible  } of\ninaccessibles below κ is stationary in κ.",
+   "declaration": "MetaMathlibExt.IsMahlo",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Mahlo.lean",
+    "line": 38,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/mahlo-cardinals/weakly-mahlo-cardinal.md",
+   "title": "Weakly Mahlo cardinal",
+   "statement": "A cardinal κ is *weakly Mahlo* if κ is weakly inaccessible and {  λ < κ : λ  is a regular\ncardinal  } is stationary in κ.",
+   "declaration": "MetaMathlibExt.IsWeaklyMahlo",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Mahlo.lean",
+    "line": 46,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "SetTheory/large-cardinals/measurable-cardinal.md",
+   "title": "Measurable cardinal",
+   "statement": "A cardinal κ is *measurable* if κ > ℵ₀ and there is a\nset I with |I| = κ carrying an ultrafilter U on I which is\n\n1. *κ-complete*: for every family 𝒮 ⊆ U with |𝒮| < κ we have ⋂ 𝒮 ∈ U; and\n1. *nonprincipal*: every cofinite subset of I belongs to U --- equivalently, since U is an\n   ultrafilter, no finite subset of I belongs to U.",
+   "declaration": "MetaMathlibExt.IsMeasurable",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Cardinal/LargeCardinal/Measurable.lean",
+    "line": 44,
+    "kind": "def",
+    "sorry": false
+   }
+  }
+ ]
+}

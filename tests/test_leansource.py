@@ -263,3 +263,12 @@ def test_the_relaxed_reading_takes_a_name_on_the_next_line_and_modifiers_before_
     assert relaxed[0].statement == "public theorem\n    wrapped (n : Nat) :\n    n = n"
     assert relaxed[2].statement == "instance\n    [Inhabited Nat] : Inhabited Nat"
 
+
+
+def test_wanted_commands_are_declarations_only_when_asked():
+    text = ("namespace A\n\ntheorem proved : True := trivial\n\ntheorem_wanted deferred : 1 = 1\n\n"
+            "proof_wanted open_question (n : Nat) : n = n\n\ndef_wanted missing : Nat\n\nend A\n")
+    assert [item.name for item in leansource.declarations(text)] == ["A.proved"]
+    assert [(item.name, item.kind, item.line) for item in leansource.declarations(text, wanted=True)] == [
+        ("A.proved", "theorem", 3), ("A.deferred", "theorem_wanted", 5), ("A.open_question", "proof_wanted", 7),
+        ("A.missing", "def_wanted", 9)]

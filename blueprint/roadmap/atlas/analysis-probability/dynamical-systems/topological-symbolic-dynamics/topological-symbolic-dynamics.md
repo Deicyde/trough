@@ -1,0 +1,40 @@
+---
+declaration: section
+origin: cited
+lean: MetaMathlibExt.binaryrec_realizable_subspace_dim
+statement: formalized
+---
+
+# Topological and symbolic dynamics: its own results
+
+1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/index.html).
+
+Topological dynamics studies continuous maps of topological spaces through orbits, periodic points and recurrence, and symbolic dynamics studies shift spaces and cellular automata on sequences of symbols.
+
+## Realizable span of a nondegenerate binary recurrence
+
+Let $B$ and $C$ be integers with
+$C \neq 0$, and suppose the recurrence is nondegenerate: whenever $\alpha \neq \beta$ are
+complex roots of $x^2 - Bx + C$, we have $(\alpha/\beta)^n \neq 1$ for every integer $n \geq 1$.
+Put $\Delta = B^2 - 4C$. Let $R$ be the set of complex sequences $(u_n)_{n \geq 0}$ coming from
+integer sequences $u$ that satisfy $u_{n+2} = B u_{n+1} - C u_n$ for all $n \geq 0$ and for
+which there are a set $X$ and a map $T \colon X \to X$ such that, for every $n \geq 0$, the set
+of points $x \in X$ with $T^{n+1}(x) = x$ is finite and has exactly $|u_n|$ elements. Then the
+complex linear span of $R$ has dimension $0$ if $\Delta < 0$, dimension $1$ if $\Delta = 0$ or
+$\Delta > 0$ is not the square of an integer, and dimension $2$ if $\Delta > 0$ is the square
+of an integer.
+
+## Sources
+
+- G. Everest, A. J. van der Poorten, Y. Puri, and T. Ward, "Integer Sequences and Periodic Points," Journal of Integer Sequences 5 (2002), Article 02.2.3, Theorem, lines 243–254, https://cs.uwaterloo.ca/journals/JIS/VOL5/Ward/ward2.tex
+
+Stated but not proved: `MetaMathlibExt.binaryrec_realizable_subspace_dim` is written with `theorem_wanted` in [WantedExt/Dynamics/Periodic/BinaryRecurrenceRealizableDimensionWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/Periodic/BinaryRecurrenceRealizableDimensionWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/index.html#binaryrec-realizable-subspace-dim).
+
+## Depends on
+
+No dependencies are recorded: this chapter reads the vault and the repository's source text without running Lean, and the vault records no edges between its results.
+
+## Sources
+
+- [ATLAS: Topological and symbolic dynamics](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/index.html)
+- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Dynamics/topological-symbolic-dynamics)

@@ -1,0 +1,42 @@
+{
+ "schema": "trough-atlas/v1",
+ "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "articles": [
+  {
+   "path": "CategoryTheory/monoidal-categories/nonempty-iso-of-tensor-iso-tensor-unit.md",
+   "title": "Tensor inverses are unique up to isomorphism in braided categories",
+   "statement": "In a braided monoidal category, tensoring with the unit is cancellative\nup to isomorphism: if `M ⊗ N ≅ 𝟙`, `M' ⊗ N' ≅ 𝟙`, and `M ≅ M'`, then\n`N ≅ N'`.",
+   "declaration": "CategoryTheory.MonoidalCategory.nonempty_iso_of_tensor_iso_tensorUnit",
+   "lean": {
+    "file": "MathlibExt/CategoryTheory/Monoidal/Braided.lean",
+    "line": 50,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "CategoryTheory/topos-theory/elementary-toposes/fundamental-topos-theory.md",
+   "title": "Fundamental theorem of topos theory",
+   "statement": "If $E$ is an elementary topos and $X$ is an object\nof $E$, then the slice category $E/X$ of objects of $E$ over $X$ is again an elementary topos.\n\n## Sources\n\n- F. W. Lawvere & M. Tierney (elementary topos, 1970); see S. Mac Lane & I. Moerdijk, *Sheaves in Geometry and Logic*, IV.7. Knill, *Some fundamental theorems in mathematics*, §54. Problem `fundamental_topos_theory` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.CategoryTheory.FundamentalToposWanted.ToposTheory.fundamental_topos_theory",
+   "lean": {
+    "file": "WantedExt/CategoryTheory/FundamentalToposWanted.lean",
+    "line": 73,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "CategoryTheory/topos-theory/elementary-toposes/is-topos.md",
+   "title": "Elementary topos",
+   "statement": "A category $E$ is an elementary topos if it has all finite limits, it\nadmits a cartesian monoidal structure for which it is monoidal closed (that is, $E$ is cartesian\nclosed), and it has a subobject classifier.",
+   "declaration": "MathlibExt.CategoryTheory.FundamentalToposWanted.ToposTheory.IsTopos",
+   "lean": {
+    "file": "WantedExt/CategoryTheory/FundamentalToposWanted.lean",
+    "line": 63,
+    "kind": "def",
+    "sorry": false
+   }
+  }
+ ]
+}

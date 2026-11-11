@@ -46,6 +46,10 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 - `data/stacks/tags/`: each Stacks tag's declarations, with their tiers, attribute comments, docstrings, Lean statements and EGA and SGA references, and the declarations registered for it, from [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7), Apache-2.0. They are read from the source text, without Lean.
 - `data/stacks/structure.json`: the parts, chapters and sections of the [Stacks Project](https://github.com/stacks/stacks-project), their numbers and titles, and the section each tag is in, at the commit the file records. The Stacks Project is under the GNU Free Documentation License; none of its text is copied beyond these titles.
 
+## ATLAS (Meta)
+
+- `data/atlas/articles/`: each result of ATLAS's vault, its title, statement and Lean declaration, and where the repository's Lean declares it, read from the source text without Lean; `data/atlas/structure.json`: the vault's areas, subjects and containers, with their titles and prose. From [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d), the `wiki/autoform-blueprint` branch, Apache-2.0. The archived `v1/`, under a non-commercial license, is not read.
+
 ## Libraries
 
 ### Core library

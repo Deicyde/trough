@@ -1,0 +1,114 @@
+{
+ "schema": "trough-atlas/v1",
+ "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "articles": [
+  {
+   "path": "QuantumInformation/quantum-foundations/gleason-s-theorem/frame-function.md",
+   "title": "Frame function on projections",
+   "statement": "Let $H$ be a complex Hilbert space. A frame function on\nthe projection lattice of $H$ is a function $\\mu$ from the continuous linear operators on $H$ to\n$\\mathbb{R}$ such that $\\mu(P) \\ge 0$ for every orthogonal projection $P$ on $H$,\n$\\mu(P + Q) = \\mu(P) + \\mu(Q)$ for all orthogonal projections $P$ and $Q$ on $H$ with $PQ = 0$,\nand $\\mu(I) = 1$ for the identity operator $I$ on $H$.\n\nOnly the values of $\\mu$ on orthogonal projections are constrained. In finite dimensions every\northogonal family of nonzero projections is finite, so additivity on orthogonal pairs already\nyields countable additivity.",
+   "declaration": "MathlibExt.Analysis.GleasonWanted.Analysis.FrameFunction",
+   "lean": {
+    "file": "WantedExt/Analysis/GleasonWanted.lean",
+    "line": 78,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "QuantumInformation/quantum-foundations/gleason-s-theorem/gleason-theorem-finite.md",
+   "title": "Gleason's theorem in finite dimensions",
+   "statement": "Let $H$ be a finite-dimensional complex Hilbert\nspace of dimension at least $3$, write $\\operatorname{tr}$ for the trace of a $\\mathbb{C}$-linear\nmap on $H$, and let $\\mu$ be a frame function on the projection lattice of $H$. Then there is a\nunique continuous linear operator $\\rho$ on $H$ such that $\\rho$ is positive,\n$\\operatorname{Re} \\operatorname{tr}(\\rho) = 1$, and\n$\\mu(P) = \\operatorname{Re} \\operatorname{tr}(\\rho P)$ for every orthogonal projection $P$ on $H$.\n\n## Sources\n\n- A. M. Gleason, Measures on the closed subspaces of a Hilbert space, J. Math. Mech. 6 (1957), 885-893. Problem `gleason_theorem_finite` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Analysis.GleasonWanted.Analysis.gleason_theorem_finite",
+   "lean": {
+    "file": "WantedExt/Analysis/GleasonWanted.lean",
+    "line": 95,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "QuantumInformation/quantum-foundations/gleason-s-theorem/gleason-theorem-separable.md",
+   "title": "Gleason's theorem for separable Hilbert spaces",
+   "statement": "Let $H$ be a separable complex Hilbert\nspace whose dimension over $\\mathbb{C}$ is at least $3$, and let $f$ be a frame function on the\nunit sphere of $H$. Then there is a positive continuous linear operator $\\rho$ on $H$ such that\n$f(x) = \\operatorname{Re} \\langle x, \\rho x \\rangle$ for every unit vector $x$ in $H$.\n\nThe statement does not assert that $\\rho$ is trace class with trace $1$, nor that $\\rho$ is\nunique.\n\n## Sources\n\n- A. M. Gleason, Measures on the closed subspaces of a Hilbert space, J. Math. Mech. 6 (1957), 885-893. Problem `gleason_theorem_separable` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Analysis.GleasonWanted.Analysis.gleason_theorem_separable",
+   "lean": {
+    "file": "WantedExt/Analysis/GleasonWanted.lean",
+    "line": 123,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "QuantumInformation/quantum-foundations/gleason-s-theorem/is-orth-proj.md",
+   "title": "Orthogonal projection",
+   "statement": "A continuous linear operator $P$ on a complex Hilbert space $H$ is\nan orthogonal projection if it is idempotent, $P^2 = P$, and self-adjoint, $P^* = P$.",
+   "declaration": "MathlibExt.Analysis.GleasonWanted.Analysis.IsOrthProj",
+   "lean": {
+    "file": "WantedExt/Analysis/GleasonWanted.lean",
+    "line": 72,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "QuantumInformation/quantum-foundations/gleason-s-theorem/re-tr.md",
+   "title": "Real part of the trace",
+   "statement": "For a continuous linear operator $A$ on a finite-dimensional\ncomplex Hilbert space $H$, let $\\operatorname{tr}(A) \\in \\mathbb{C}$ be the trace of $A$ as a\n$\\mathbb{C}$-linear map on $H$. The real part of the trace of $A$ is the real number\n$\\operatorname{Re} \\operatorname{tr}(A)$.",
+   "declaration": "MathlibExt.Analysis.GleasonWanted.Analysis.reTr",
+   "lean": {
+    "file": "WantedExt/Analysis/GleasonWanted.lean",
+    "line": 88,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "QuantumInformation/quantum-foundations/gleason-s-theorem/sphere-frame-function.md",
+   "title": "Frame function on the unit sphere",
+   "statement": "Let $H$ be a complex Hilbert space. A frame function\non the unit sphere of $H$ is a function $f$ from the unit vectors of $H$ to $\\mathbb{R}$ such that\n$f(x) \\ge 0$ for every unit vector $x$ in $H$ and, for every Hilbert basis $(b_i)_{i \\in \\iota}$\nof $H$, the family $(f(b_i))_{i \\in \\iota}$ is unconditionally summable with sum $1$.\n\nThis is Gleason's 1957 notion of a frame function, normalized to weight $1$ and required to be\nnon-negative.",
+   "declaration": "MathlibExt.Analysis.GleasonWanted.Analysis.SphereFrameFunction",
+   "lean": {
+    "file": "WantedExt/Analysis/GleasonWanted.lean",
+    "line": 108,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "QuantumInformation/quantum-foundations/kochen-specker-finite-real-three.md",
+   "title": "Kochen–Specker theorem in $\\mathbb{R}^3$",
+   "statement": "There exist a natural number $N$ and unit vectors\n$v_1, \\dots, v_N \\in \\mathbb{R}^3$ such that no function $c : \\{1, \\dots, N\\} \\to \\{0, 1\\}$\nsatisfies both of the following: $c(i) + c(j) \\le 1$ whenever $v_i$ and $v_j$ are orthogonal, and\n$c(i) + c(j) + c(k) = 1$ whenever $(v_i, v_j, v_k)$ is an orthonormal triple.\n\n## Sources\n\n- S. Kochen, E. P. Specker, The Problem of Hidden Variables in Quantum Mechanics, J. Math. Mech. 17 (1967), 59-87, DOI 10.1512/iumj.1968.17.17004.",
+   "declaration": "MathlibExt.QuantumInformation.Finite.KochenSpeckerWanted.kochen_specker_finite_real_three",
+   "lean": {
+    "file": "MathlibExt/QuantumInformation/Finite/KochenSpecker.lean",
+    "line": 114,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "QuantumInformation/quantum-foundations/tsirelson-bound-tight.md",
+   "title": "Tsirelson's bound is attained",
+   "statement": "There exist $4 \\times 4$ complex matrices $A_0, A_1, B_0, B_1$\nsuch that each of them is Hermitian and squares to the identity matrix, each $A_i$ commutes with\neach $B_j$, and the CHSH operator $A_0 B_0 + A_0 B_1 + A_1 B_0 - A_1 B_1$ has $2\\sqrt{2}$ as an\neigenvalue.\n\nThis shows that the upper bound $2\\sqrt{2}$ in Tsirelson's inequality for CHSH tuples is sharp.\n\n## Sources\n\n- B. S. Cirel'son/Tsirelson, \"Quantum generalizations of Bell's inequality\", Lett. Math. Phys. 4 (1980), 93-100, DOI 10.1007/BF00417500.",
+   "declaration": "MathlibExt.QuantumInformation.Finite.TsirelsonTight.tsirelson_bound_tight",
+   "lean": {
+    "file": "MathlibExt/QuantumInformation/Finite/TsirelsonTight.lean",
+    "line": 227,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "QuantumInformation/quantum-operations/no-cloning-two-state.md",
+   "title": "No-cloning theorem for two states",
+   "statement": "Let $H$ be a complex inner product space and let\n$\\psi, \\varphi, b \\in H$ be unit vectors with $0 < |\\langle \\psi, \\varphi \\rangle| < 1$. Then there\nis no $\\mathbb{C}$-linear isometric isomorphism $U$ of $H \\otimes_{\\mathbb{C}} H$ onto itself with\n$U(\\psi \\otimes b) = \\psi \\otimes \\psi$ and $U(\\varphi \\otimes b) = \\varphi \\otimes \\varphi$.\n\n## Sources\n\n- W. K. Wootters and W. H. Zurek, \"A single quantum cannot be cloned\", Nature 299 (1982), 802-803, DOI 10.1038/299802a0.",
+   "declaration": "MathlibExt.QuantumInformation.Finite.NoCloning.no_cloning_two_state",
+   "lean": {
+    "file": "MathlibExt/QuantumInformation/Finite/NoCloning.lean",
+    "line": 51,
+    "kind": "theorem",
+    "sorry": false
+   }
+  }
+ ]
+}
