@@ -1,0 +1,2490 @@
+{
+ "schema": "trough-atlas/v1",
+ "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "articles": [
+  {
+   "path": "MeasureTheory/geometric-measure-theory/dimension-functions-for-hausdorff-measures/continuous.md",
+   "title": "Continuity of a Hausdorff dimension function",
+   "statement": "Every Hausdorff dimension function\n$\\psi : [0,\\infty) \\to [0,\\infty)$ is continuous.",
+   "declaration": "HausdorffDimensionFunction.continuous",
+   "lean": {
+    "file": "MathlibExt/Topology/MetricSpace/HausdorffDimensionFunction.lean",
+    "line": 59,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/dimension-functions-for-hausdorff-measures/hausdorff-dimension-function.md",
+   "title": "Hausdorff dimension function",
+   "statement": "A Hausdorff dimension function (gauge) is a continuous,\nnon-decreasing function $\\psi : [0,\\infty) \\to [0,\\infty)$ with $\\psi(0) = 0$ and $\\psi(r) > 0$\nfor every $r > 0$. In particular $\\psi(r) \\to 0$ as $r \\to 0^+$.\n\n## Sources\n\n- Das and Simmons, arXiv:2305.11829v1, line 211; the source gauge on $(0,\\infty)$ is extended by $\\psi(0) = 0$, and \"increasing\" is read as non-decreasing.",
+   "declaration": "HausdorffDimensionFunction",
+   "lean": {
+    "file": "MathlibExt/Topology/MetricSpace/HausdorffDimensionFunction.lean",
+    "line": 36,
+    "kind": "structure",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/dimension-functions-for-hausdorff-measures/map-eq-zero-iff.md",
+   "title": "A Hausdorff dimension function vanishes only at zero",
+   "statement": "If $\\psi$ is a Hausdorff dimension\nfunction and $r \\ge 0$, then $\\psi(r) = 0$ if and only if $r = 0$.",
+   "declaration": "HausdorffDimensionFunction.map_eq_zero_iff",
+   "lean": {
+    "file": "MathlibExt/Topology/MetricSpace/HausdorffDimensionFunction.lean",
+    "line": 76,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/dimension-functions-for-hausdorff-measures/map-pos.md",
+   "title": "A Hausdorff dimension function is positive at positive radii",
+   "statement": "If $\\psi$ is a Hausdorff\ndimension function and $r > 0$ is a real number, then $\\psi(r) > 0$.",
+   "declaration": "HausdorffDimensionFunction.map_pos",
+   "lean": {
+    "file": "MathlibExt/Topology/MetricSpace/HausdorffDimensionFunction.lean",
+    "line": 72,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/dimension-functions-for-hausdorff-measures/map-zero.md",
+   "title": "A Hausdorff dimension function vanishes at zero",
+   "statement": "Every Hausdorff dimension function\n$\\psi$ satisfies $\\psi(0) = 0$.",
+   "declaration": "HausdorffDimensionFunction.map_zero",
+   "lean": {
+    "file": "MathlibExt/Topology/MetricSpace/HausdorffDimensionFunction.lean",
+    "line": 68,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/dimension-functions-for-hausdorff-measures/monotone.md",
+   "title": "Monotonicity of a Hausdorff dimension function",
+   "statement": "Every Hausdorff dimension function\n$\\psi : [0,\\infty) \\to [0,\\infty)$ is non-decreasing: if $r \\le s$ then $\\psi(r) \\le \\psi(s)$.",
+   "declaration": "HausdorffDimensionFunction.monotone",
+   "lean": {
+    "file": "MathlibExt/Topology/MetricSpace/HausdorffDimensionFunction.lean",
+    "line": 63,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/dimension-functions-for-hausdorff-measures/tendsto-zero.md",
+   "title": "A Hausdorff dimension function tends to zero at zero",
+   "statement": "Every Hausdorff dimension function\n$\\psi$ satisfies $\\psi(r) \\to 0$ as $r \\to 0^+$, that is, as $r$ tends to $0$ through positive\nvalues.",
+   "declaration": "HausdorffDimensionFunction.tendsto_zero",
+   "lean": {
+    "file": "MathlibExt/Topology/MetricSpace/HausdorffDimensionFunction.lean",
+    "line": 87,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/admissible-planar-threshold.md",
+   "title": "Admissible planar threshold",
+   "statement": "An extended nonnegative real $s$ is an admissible planar\nthreshold when $0 \\le s \\le 2$ and $s$ has the planar threshold property: every compact set\n$E \\subseteq \\mathbb{R}^2$ with Hausdorff dimension $\\dim_H E > s$ has a distance set of\npositive one-dimensional Lebesgue measure.\n\n## Sources\n\n- the defining infimum in optimization catalogue C34a.",
+   "declaration": "FalconerDistanceSet.admissiblePlanarThreshold",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 44,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/admissible-planar-thresholds-nonempty.md",
+   "title": "Admissible planar thresholds exist",
+   "statement": "There is an admissible planar threshold, that is, the\nset of admissible planar thresholds is nonempty.",
+   "declaration": "FalconerDistanceSet.admissiblePlanarThresholds_nonempty",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 109,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/dim-h-plane-le-two.md",
+   "title": "Subsets of the plane have Hausdorff dimension at most two",
+   "statement": "Every subset $E$ of the\nEuclidean plane $\\mathbb{R}^2$ satisfies $\\dim_H E \\le 2$.",
+   "declaration": "FalconerDistanceSet.dimH_plane_le_two",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 97,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/distance-set-empty.md",
+   "title": "Distance set of the empty set",
+   "statement": "For every $d$, the distance set of the empty subset of\n$\\mathbb{R}^d$ is empty.",
+   "declaration": "FalconerDistanceSet.distanceSet_empty",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 61,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/distance-set-is-compact.md",
+   "title": "Distance sets of compact sets are compact",
+   "statement": "If $E \\subseteq \\mathbb{R}^d$ is compact,\nthen the distance set of $E$ is a compact subset of $\\mathbb{R}$.",
+   "declaration": "FalconerDistanceSet.distanceSet_isCompact",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 72,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/distance-set-measurable-set.md",
+   "title": "Distance sets of compact sets are Borel",
+   "statement": "If $E \\subseteq \\mathbb{R}^d$ is compact, then\nthe distance set of $E$ is a Borel measurable subset of $\\mathbb{R}$.",
+   "declaration": "FalconerDistanceSet.distanceSet_measurableSet",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 86,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/distance-set-singleton.md",
+   "title": "Distance set of a singleton",
+   "statement": "For every point $x \\in \\mathbb{R}^d$, the distance set of\n$\\{x\\}$ is $\\{0\\}$.",
+   "declaration": "FalconerDistanceSet.distanceSet_singleton",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 66,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/distance-set-subset-nonnegative.md",
+   "title": "Distances are nonnegative",
+   "statement": "For every set $E \\subseteq \\mathbb{R}^d$, the distance set of\n$E$ is contained in $[0, \\infty)$.",
+   "declaration": "FalconerDistanceSet.distanceSet_subset_nonnegative",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 55,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/distance-set.md",
+   "title": "Euclidean distance set",
+   "statement": "For a set $E \\subseteq \\mathbb{R}^d$, the distance set of $E$ is\n$\\Delta(E) = \\{\\lvert x - y \\rvert : x, y \\in E\\}$, the set of Euclidean distances between pairs\nof points of $E$.\n\n## Sources\n\n- Guth, Iosevich, Ou, and Wang, arXiv:1808.09346v1, introduction.",
+   "declaration": "FalconerDistanceSet.distanceSet",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 31,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/falconer1985-general-sufficiency-holds.md",
+   "title": "Falconer's distance set theorem",
+   "statement": "For every integer $d \\ge 2$ and every compact set\n$E \\subseteq \\mathbb{R}^d$ whose Hausdorff dimension is strictly greater than $(d+1)/2$, the\ndistance set $\\{\\|x - y\\| : x, y \\in E\\}$ has positive one-dimensional Lebesgue measure.\n\n## Sources\n\n- GIOW, arXiv:1808.09346v1, line 76, reporting Falconer (1985).",
+   "declaration": "FalconerDistanceSetWanted.falconer1985GeneralSufficiency_holds",
+   "lean": {
+    "file": "WantedExt/Geometry/FalconerDistanceSetWanted.lean",
+    "line": 83,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/falconer1985-general-sufficiency.md",
+   "title": "Statement of Falconer's distance set theorem",
+   "statement": "This is the proposition that for every\ninteger $d \\ge 2$ and every compact set $E \\subseteq \\mathbb{R}^d$ whose Hausdorff dimension is\nstrictly greater than $(d+1)/2$, the distance set $\\{\\|x - y\\| : x, y \\in E\\}$ has positive\none-dimensional Lebesgue measure.\n\n## Sources\n\n- GIOW, arXiv:1808.09346v1, introduction line 76, reporting Falconer (1985).",
+   "declaration": "FalconerDistanceSetWanted.falconer1985GeneralSufficiency",
+   "lean": {
+    "file": "WantedExt/Geometry/FalconerDistanceSetWanted.lean",
+    "line": 33,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/falconer1985-lattice-examples-holds.md",
+   "title": "Falconer's measure-zero distance set examples",
+   "statement": "For every integer $d \\ge 2$ and every\n$s$ with $0 \\le s \\le d/2$, there is a compact set $E \\subseteq \\mathbb{R}^d$ of Hausdorff\ndimension exactly $s$ whose distance set $\\{\\|x - y\\| : x, y \\in E\\}$ has one-dimensional\nLebesgue measure zero.\n\n## Sources\n\n- GIOW, arXiv:1808.09346v1, endpoint-inclusive lattice report, line 76.",
+   "declaration": "FalconerDistanceSetWanted.falconer1985LatticeExamples_holds",
+   "lean": {
+    "file": "WantedExt/Geometry/FalconerDistanceSetWanted.lean",
+    "line": 93,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/falconer1985-lattice-examples.md",
+   "title": "Statement of Falconer's measure-zero distance set examples",
+   "statement": "This is the proposition\nthat for every integer $d \\ge 2$ and every $s$ with $0 \\le s \\le d/2$, there is a compact set\n$E \\subseteq \\mathbb{R}^d$ of Hausdorff dimension exactly $s$ whose distance set\n$\\{\\|x - y\\| : x, y \\in E\\}$ has one-dimensional Lebesgue measure zero.\n\n## Sources\n\n- GIOW, arXiv:1808.09346v1, introduction line 76. Dimensions use actual Hausdorff dimension and distance sets use actual one-dimensional Lebesgue measure.",
+   "declaration": "FalconerDistanceSetWanted.falconer1985LatticeExamples",
+   "lean": {
+    "file": "WantedExt/Geometry/FalconerDistanceSetWanted.lean",
+    "line": 53,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/guth-iosevich-ou-wang2018-planar-suffici-2.md",
+   "title": "Guth–Iosevich–Ou–Wang planar distance set theorem",
+   "statement": "Every compact set\n$E \\subseteq \\mathbb{R}^2$ whose Hausdorff dimension is strictly greater than $5/4$ has a\ndistance set $\\{\\|x - y\\| : x, y \\in E\\}$ of positive one-dimensional Lebesgue measure.\n\n## Sources\n\n- GIOW, arXiv:1808.09346v1, Theorem 1.1, lines 80-81.",
+   "declaration": "FalconerDistanceSetWanted.guthIosevichOuWang2018PlanarSufficiency_holds",
+   "lean": {
+    "file": "WantedExt/Geometry/FalconerDistanceSetWanted.lean",
+    "line": 89,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/guth-iosevich-ou-wang2018-planar-suffici.md",
+   "title": "Statement of the Guth–Iosevich–Ou–Wang planar distance set theorem",
+   "statement": "This is the\nproposition that $5/4$ has the planar threshold property: every compact set\n$E \\subseteq \\mathbb{R}^2$ whose Hausdorff dimension is strictly greater than $5/4$ has a\ndistance set $\\{\\|x - y\\| : x, y \\in E\\}$ of positive one-dimensional Lebesgue measure.\n\n## Sources\n\n- Guth, Iosevich, Ou, and Wang, arXiv:1808.09346v1, Theorem 1.1, lines 80-81.",
+   "declaration": "FalconerDistanceSetWanted.guthIosevichOuWang2018PlanarSufficiency",
+   "lean": {
+    "file": "WantedExt/Geometry/FalconerDistanceSetWanted.lean",
+    "line": 46,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/is-least-admissible-planar-thresholds.md",
+   "title": "The planar distance threshold is attained",
+   "statement": "The planar distance threshold is the least\nadmissible planar threshold: it is itself an admissible planar threshold, and it is at most every\nadmissible planar threshold.",
+   "declaration": "FalconerDistanceSet.isLeast_admissiblePlanarThresholds",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 172,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/le-planar-distance-threshold-of-zero-mea.md",
+   "title": "Zero-measure distance sets give lower bounds for the planar distance threshold",
+   "statement": "Let\n$t \\in [0, \\infty]$. If $E$ is a compact subset of the Euclidean plane $\\mathbb{R}^2$ whose\nHausdorff dimension $\\dim_H E$ satisfies $t \\le \\dim_H E$ and whose distance set has Lebesgue\nmeasure zero, then $t$ is at most the planar distance threshold.",
+   "declaration": "FalconerDistanceSet.le_planarDistanceThreshold_of_zeroMeasureWitness",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 138,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/lower-bound-falconer1985-holds.md",
+   "title": "Falconer's lower bound for the planar distance threshold",
+   "statement": "The planar distance\nthreshold, the infimum of all $s \\in [0, 2]$ such that every compact set\n$E \\subseteq \\mathbb{R}^2$ of Hausdorff dimension strictly greater than $s$ has a distance set\n$\\{\\|x - y\\| : x, y \\in E\\}$ of positive one-dimensional Lebesgue measure, is at least $1$.\n\n## Sources\n\n- optimization catalogue C34a and GIOW, arXiv:1808.09346v1, line 76.",
+   "declaration": "FalconerDistanceSetWanted.lowerBound_Falconer1985_holds",
+   "lean": {
+    "file": "WantedExt/Geometry/FalconerDistanceSetWanted.lean",
+    "line": 105,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/lower-bound-falconer1985.md",
+   "title": "Statement of the lower bound $1$ for the planar distance threshold",
+   "statement": "This is the\nproposition that the planar distance threshold, the infimum of all $s \\in [0, 2]$ such that\nevery compact set $E \\subseteq \\mathbb{R}^2$ of Hausdorff dimension strictly greater than $s$\nhas a distance set $\\{\\|x - y\\| : x, y \\in E\\}$ of positive one-dimensional Lebesgue measure,\nis at least $1$.\n\n## Sources\n\n- optimization catalogue C34a and GIOW's endpoint lattice examples, line 76.",
+   "declaration": "FalconerDistanceSetWanted.lowerBound_Falconer1985",
+   "lean": {
+    "file": "WantedExt/Geometry/FalconerDistanceSetWanted.lean",
+    "line": 79,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/of-real-admissible-planar-threshold-iff.md",
+   "title": "Real form of admissible planar thresholds",
+   "statement": "For every real number $s \\ge 0$, $s$ is an\nadmissible planar threshold (as an element of $[0, \\infty]$) if and only if $s \\in [0, 2]$ and\n$s$ has the planar threshold property.",
+   "declaration": "FalconerDistanceSet.ofReal_admissiblePlanarThreshold_iff",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 148,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/planar-distance-threshold-admissible.md",
+   "title": "The planar distance threshold is admissible",
+   "statement": "The planar distance threshold is an\nadmissible planar threshold: it lies in $[0, 2]$ and has the planar threshold property.",
+   "declaration": "FalconerDistanceSet.planarDistanceThreshold_admissible",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 168,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/planar-distance-threshold-le-of-admissib.md",
+   "title": "Admissible thresholds bound the planar distance threshold",
+   "statement": "For every $s \\in [0, \\infty]$\nthat is an admissible planar threshold, the planar distance threshold is at most $s$.",
+   "declaration": "FalconerDistanceSet.planarDistanceThreshold_le_of_admissible",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 113,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/planar-distance-threshold-le-of-property.md",
+   "title": "Thresholds up to two with the planar threshold property bound the planar distance threshold",
+   "statement": "**Thresholds up to two with the planar threshold property bound the planar distance\nthreshold.** For every $s \\in [0, \\infty]$ with $s \\le 2$ that has the planar threshold\nproperty, the planar distance threshold is at most $s$.",
+   "declaration": "FalconerDistanceSet.planarDistanceThreshold_le_of_property",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 133,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/planar-distance-threshold-le-two.md",
+   "title": "The planar distance threshold is at most two",
+   "statement": "The planar distance threshold is at most\n$2$.",
+   "declaration": "FalconerDistanceSet.planarDistanceThreshold_le_two",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 117,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/planar-distance-threshold-ne-top.md",
+   "title": "The planar distance threshold is finite",
+   "statement": "The planar distance threshold, an element of\n$[0, \\infty]$, is not $\\infty$.",
+   "declaration": "FalconerDistanceSet.planarDistanceThreshold_ne_top",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 121,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/planar-distance-threshold-of-real-to-rea.md",
+   "title": "Real round trip of the planar distance threshold",
+   "statement": "Let $\\tau \\in [0, \\infty]$ be the planar\ndistance threshold and let $\\tau_{\\mathbb{R}}$ be its value as a real number (with the convention\nthat $\\infty$ goes to $0$). Viewing $\\tau_{\\mathbb{R}}$ again as an element of $[0, \\infty]$\ngives back $\\tau$.",
+   "declaration": "FalconerDistanceSet.planarDistanceThreshold_ofReal_toReal",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 125,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/planar-distance-threshold-to-real-eq-rea.md",
+   "title": "The planar distance threshold as a real infimum",
+   "statement": "The value of the planar distance\nthreshold as a real number (with the convention that $\\infty$ goes to $0$) equals the infimum\nin $\\mathbb{R}$ of the set of real numbers $r \\in [0, 2]$ that, as elements of $[0, \\infty]$,\nhave the planar threshold property.",
+   "declaration": "FalconerDistanceSet.planarDistanceThreshold_toReal_eq_real_sInf",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 193,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/planar-distance-threshold.md",
+   "title": "Planar distance threshold",
+   "statement": "The planar distance threshold is the infimum, taken in\n$[0, \\infty]$, of the admissible planar thresholds, that is, of all $s \\in [0, 2]$ such that\nevery compact subset $E$ of the Euclidean plane $\\mathbb{R}^2$ with Hausdorff dimension greater\nthan $s$ has a distance set of positive Lebesgue measure.\n\n## Sources\n\n- optimization catalogue C34a. The finite ENNReal representation retains the source's order and measure; finiteness and the real roundtrip are proved below.",
+   "declaration": "FalconerDistanceSet.planarDistanceThreshold",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 51,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/planar-threshold-property-mono.md",
+   "title": "The planar threshold property is upward closed",
+   "statement": "Let $s \\le t$ be elements of\n$[0, \\infty]$. If $s$ has the planar threshold property, that is, every compact set\n$E \\subseteq \\mathbb{R}^2$ with Hausdorff dimension $\\dim_H E > s$ has a distance set of\npositive one-dimensional Lebesgue measure, then $t$ has the planar threshold property.",
+   "declaration": "FalconerDistanceSet.planarThresholdProperty_mono",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 91,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/planar-threshold-property-planar-distanc.md",
+   "title": "The planar distance threshold is itself a threshold",
+   "statement": "Let $s_0 \\in [0, \\infty]$ be the\nplanar distance threshold, the infimum of the admissible planar thresholds. Every compact set\n$E \\subseteq \\mathbb{R}^2$ with Hausdorff dimension $\\dim_H E > s_0$ has a distance set of\npositive one-dimensional Lebesgue measure.",
+   "declaration": "FalconerDistanceSet.planarThresholdProperty_planarDistanceThreshold",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 161,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/planar-threshold-property.md",
+   "title": "Planar Falconer threshold property",
+   "statement": "An element $s \\in [0, \\infty]$ has the planar\nthreshold property when every compact set $E \\subseteq \\mathbb{R}^2$ with Hausdorff dimension\n$\\dim_H E > s$ has a distance set $\\{|x - y| : x, y \\in E\\}$ of positive one-dimensional\nLebesgue measure.\n\n## Sources\n\n- the planar Falconer threshold in optimization catalogue C34a.",
+   "declaration": "FalconerDistanceSet.planarThresholdProperty",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 37,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/real-threshold-family-eq-to-real-image.md",
+   "title": "Real form of the admissible threshold family",
+   "statement": "The set of real numbers $r \\in [0, 2]$\nsuch that $r$, viewed as an element of $[0, \\infty]$, has the planar threshold property equals\nthe image of the set of admissible planar thresholds under the map $[0, \\infty] \\to \\mathbb{R}$\nthat is the identity on finite values and sends $\\infty$ to $0$.",
+   "declaration": "FalconerDistanceSet.realThresholdFamily_eq_toReal_image",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 177,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/trivial-lower-bound.md",
+   "title": "Trivial lower bound for the planar distance threshold",
+   "statement": "The planar distance threshold is\nat least $0$.",
+   "declaration": "FalconerDistanceSet.trivialLowerBound",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 130,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/two-admissible-planar-threshold.md",
+   "title": "Two is an admissible planar threshold",
+   "statement": "The number $2$ is an admissible planar threshold:\n$2 \\in [0, 2]$, and every compact set $E \\subseteq \\mathbb{R}^2$ with Hausdorff dimension\n$\\dim_H E > 2$ has a distance set of positive Lebesgue measure. This holds vacuously, since no\nsubset of the plane has Hausdorff dimension greater than $2$.",
+   "declaration": "FalconerDistanceSet.two_admissiblePlanarThreshold",
+   "lean": {
+    "file": "MathlibExt/Geometry/FalconerDistanceSet.lean",
+    "line": 103,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/upper-bound-falconer1985-holds.md",
+   "title": "Falconer's upper bound for the planar distance threshold",
+   "statement": "The planar distance\nthreshold, the infimum of all $s \\in [0, 2]$ such that every compact set\n$E \\subseteq \\mathbb{R}^2$ of Hausdorff dimension strictly greater than $s$ has a distance set\n$\\{\\|x - y\\| : x, y \\in E\\}$ of positive one-dimensional Lebesgue measure, is at most $3/2$.\n\n## Sources\n\n- optimization catalogue C34a, Falconer (1985) upper row.",
+   "declaration": "FalconerDistanceSetWanted.upperBound_Falconer1985_holds",
+   "lean": {
+    "file": "WantedExt/Geometry/FalconerDistanceSetWanted.lean",
+    "line": 96,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/upper-bound-falconer1985.md",
+   "title": "Statement of the upper bound $3/2$ for the planar distance threshold",
+   "statement": "This is the\nproposition that the planar distance threshold, the infimum of all $s \\in [0, 2]$ such that\nevery compact set $E \\subseteq \\mathbb{R}^2$ of Hausdorff dimension strictly greater than $s$\nhas a distance set $\\{\\|x - y\\| : x, y \\in E\\}$ of positive one-dimensional Lebesgue measure,\nis at most $3/2$.\n\n## Sources\n\n- optimization catalogue C34a, Falconer (1985) upper row.",
+   "declaration": "FalconerDistanceSetWanted.upperBound_Falconer1985",
+   "lean": {
+    "file": "WantedExt/Geometry/FalconerDistanceSetWanted.lean",
+    "line": 61,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/upper-bound-giow2018-holds.md",
+   "title": "Guth–Iosevich–Ou–Wang upper bound for the planar Falconer threshold",
+   "statement": "The planar Falconer\ndistance threshold, the infimum of the $s \\in [0, 2]$ such that every compact set\n$E \\subseteq \\mathbb{R}^2$ with Hausdorff dimension greater than $s$ has a distance set\n$\\{|x - y| : x, y \\in E\\}$ of positive Lebesgue measure, is at most $5/4$.\n\n## Sources\n\n- optimization catalogue C34a, GIOW (2018) upper row.",
+   "declaration": "FalconerDistanceSetWanted.upperBound_GIOW2018_holds",
+   "lean": {
+    "file": "WantedExt/Geometry/FalconerDistanceSetWanted.lean",
+    "line": 102,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/upper-bound-giow2018.md",
+   "title": "The Guth–Iosevich–Ou–Wang bound, as a proposition",
+   "statement": "The proposition that the planar\nFalconer distance threshold is at most $5/4$. Here the planar Falconer distance threshold is the\ninfimum of the $s \\in [0, 2]$ such that every compact set $E \\subseteq \\mathbb{R}^2$ with\nHausdorff dimension greater than $s$ has a distance set $\\{|x - y| : x, y \\in E\\}$ of positive\nLebesgue measure.\n\n## Sources\n\n- optimization catalogue C34a, GIOW (2018) upper row.",
+   "declaration": "FalconerDistanceSetWanted.upperBound_GIOW2018",
+   "lean": {
+    "file": "WantedExt/Geometry/FalconerDistanceSetWanted.lean",
+    "line": 73,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/upper-bound-wolff1999-holds.md",
+   "title": "Wolff's upper bound for the planar Falconer threshold",
+   "statement": "The planar Falconer distance\nthreshold, the infimum of the $s \\in [0, 2]$ such that every compact set\n$E \\subseteq \\mathbb{R}^2$ with Hausdorff dimension greater than $s$ has a distance set\n$\\{|x - y| : x, y \\in E\\}$ of positive Lebesgue measure, is at most $4/3$.\n\n## Sources\n\n- optimization catalogue C34a, Wolff (1999) upper row.",
+   "declaration": "FalconerDistanceSetWanted.upperBound_Wolff1999_holds",
+   "lean": {
+    "file": "WantedExt/Geometry/FalconerDistanceSetWanted.lean",
+    "line": 99,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/upper-bound-wolff1999.md",
+   "title": "The Wolff bound, as a proposition",
+   "statement": "The proposition that the planar Falconer distance\nthreshold is at most $4/3$. Here the planar Falconer distance threshold is the infimum of the\n$s \\in [0, 2]$ such that every compact set $E \\subseteq \\mathbb{R}^2$ with Hausdorff dimension\ngreater than $s$ has a distance set $\\{|x - y| : x, y \\in E\\}$ of positive Lebesgue measure.\n\n## Sources\n\n- optimization catalogue C34a, Wolff (1999) upper row.",
+   "declaration": "FalconerDistanceSetWanted.upperBound_Wolff1999",
+   "lean": {
+    "file": "WantedExt/Geometry/FalconerDistanceSetWanted.lean",
+    "line": 67,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/wolff1999-planar-sufficiency-holds.md",
+   "title": "Wolff's planar distance set theorem",
+   "statement": "Every compact set $E \\subseteq \\mathbb{R}^2$ with\nHausdorff dimension greater than $4/3$ has a distance set $\\{|x - y| : x, y \\in E\\}$ of positive\nLebesgue measure.\n\n## Sources\n\n- GIOW, arXiv:1808.09346v1, line 78, reporting Wolff (1999).",
+   "declaration": "FalconerDistanceSetWanted.wolff1999PlanarSufficiency_holds",
+   "lean": {
+    "file": "WantedExt/Geometry/FalconerDistanceSetWanted.lean",
+    "line": 86,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/falconer-distance-set-problem/wolff1999-planar-sufficiency.md",
+   "title": "Wolff's planar distance set condition, as a proposition",
+   "statement": "The proposition that every\ncompact set $E \\subseteq \\mathbb{R}^2$ with Hausdorff dimension greater than $4/3$ has a distance\nset $\\{|x - y| : x, y \\in E\\}$ of positive Lebesgue measure.\n\n## Sources\n\n- GIOW, arXiv:1808.09346v1, introduction line 78, reporting Wolff (1999).",
+   "declaration": "FalconerDistanceSetWanted.wolff1999PlanarSufficiency",
+   "lean": {
+    "file": "WantedExt/Geometry/FalconerDistanceSetWanted.lean",
+    "line": 40,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/hausdorff-codimension/eq-empty-of-lt.md",
+   "title": "Sets of codimension larger than the dimension are empty",
+   "statement": "Let $S$ be a subset of an\nextended metric space and let $n < c$ be natural numbers. If $S$ has Hausdorff codimension at\nleast $c$ in dimension $n$, then $S$ is empty.",
+   "declaration": "Set.HasHausdorffCodimAtLeast.eq_empty_of_lt",
+   "lean": {
+    "file": "MathlibExt/Topology/MetricSpace/HausdorffCodimension.lean",
+    "line": 50,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/hausdorff-codimension/has-hausdorff-codim-at-least-empty.md",
+   "title": "The empty set has every codimension",
+   "statement": "In an extended metric space, the empty set has\nHausdorff codimension at least $c$ in dimension $n$ for all natural numbers $n$ and $c$.",
+   "declaration": "Set.hasHausdorffCodimAtLeast_empty",
+   "lean": {
+    "file": "MathlibExt/Topology/MetricSpace/HausdorffCodimension.lean",
+    "line": 37,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/hausdorff-codimension/has-hausdorff-codim-at-least-iff.md",
+   "title": "Characterization of Hausdorff codimension",
+   "statement": "Let $S$ be a subset of an extended metric\nspace and let $n, c$ be natural numbers. Then $S$ has Hausdorff codimension at least $c$ in\ndimension $n$ if and only if either $S$ is empty, or both $c \\le n$ and the Hausdorff\ndimension of $S$ satisfies $\\dim_H S \\le n - c$.",
+   "declaration": "Set.hasHausdorffCodimAtLeast_iff",
+   "lean": {
+    "file": "MathlibExt/Topology/MetricSpace/HausdorffCodimension.lean",
+    "line": 70,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/hausdorff-codimension/has-hausdorff-codim-at-least-of-dim-h-le.md",
+   "title": "A dimension bound gives a codimension bound",
+   "statement": "Let $S$ be a subset of an extended metric\nspace and let $c \\le n$ be natural numbers. If the Hausdorff dimension of $S$ satisfies\n$\\dim_H S \\le n - c$, then $S$ has Hausdorff codimension at least $c$ in dimension $n$.",
+   "declaration": "Set.hasHausdorffCodimAtLeast_of_dimH_le",
+   "lean": {
+    "file": "MathlibExt/Topology/MetricSpace/HausdorffCodimension.lean",
+    "line": 60,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/hausdorff-codimension/has-hausdorff-codim-at-least.md",
+   "title": "Lower bound on Hausdorff codimension",
+   "statement": "Let $S$ be a subset of an extended metric space\nand let $n, c$ be natural numbers. The set $S$ has Hausdorff codimension at least $c$ in\ndimension $n$ if $S$ is empty or its Hausdorff dimension satisfies $\\dim_H S + c \\le n$, the\ninequality being taken in $[0, \\infty]$.\n\nThe empty-set case plays the role of the convention $\\dim_H \\emptyset = -\\infty$.",
+   "declaration": "Set.HasHausdorffCodimAtLeast",
+   "lean": {
+    "file": "MathlibExt/Topology/MetricSpace/HausdorffCodimension.lean",
+    "line": 33,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/hausdorff-codimension/mono.md",
+   "title": "Subsets inherit a codimension bound",
+   "statement": "Let $T \\subseteq S$ be subsets of an extended\nmetric space and let $n, c$ be natural numbers. If $S$ has Hausdorff codimension at least $c$\nin dimension $n$, then so does $T$.",
+   "declaration": "Set.HasHausdorffCodimAtLeast.mono",
+   "lean": {
+    "file": "MathlibExt/Topology/MetricSpace/HausdorffCodimension.lean",
+    "line": 42,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/hausdorff-dimension-of-self-similar-sets/is-affine-symmetric-ifs.md",
+   "title": "Affine-symmetric iterated function system",
+   "statement": "Let $(f_i)_{i < n}$ be a finite family of maps\n$f_i \\colon \\mathbb{R}^d \\to \\mathbb{R}^d$ on Euclidean space. The family is affine-symmetric with\ncommon contraction factor $\\lambda$ if $0 < \\lambda < 1$ and there are linear isometries\n$A_i \\colon \\mathbb{R}^d \\to \\mathbb{R}^d$ (orthogonal transformations) and vectors\n$\\beta_i \\in \\mathbb{R}^d$ such that $f_i(x) = \\lambda A_i(x) + \\beta_i$ for every $i < n$ and every\n$x \\in \\mathbb{R}^d$.",
+   "declaration": "MathlibExt.Dynamics.MoranDimensionWanted.Dynamics.IsAffineSymmetricIFS",
+   "lean": {
+    "file": "WantedExt/Dynamics/MoranDimensionWanted.lean",
+    "line": 77,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/hausdorff-dimension-of-self-similar-sets/is-attractor.md",
+   "title": "Attractor of an iterated function system",
+   "statement": "Let $X$ be a topological space and let\n$(f_i)_{i < n}$ be a finite family of maps $X \\to X$. A set $S \\subseteq X$ is an attractor of the\nfamily if it is nonempty and compact and is fixed by the Hutchinson operator, that is,\n$S = \\bigcup_{i < n} f_i(S)$.",
+   "declaration": "MathlibExt.Dynamics.MoranDimensionWanted.Dynamics.IsAttractor",
+   "lean": {
+    "file": "WantedExt/Dynamics/MoranDimensionWanted.lean",
+    "line": 70,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/hausdorff-dimension-of-self-similar-sets/moran-equality-affine.md",
+   "title": "Moran's equality for affine-symmetric iterated function systems",
+   "statement": "Let $n \\ge 1$ and let\n$(f_i)_{i < n}$ be an affine-symmetric iterated function system on $\\mathbb{R}^d$ with common\ncontraction factor $\\lambda \\in (0,1)$ that satisfies the open set condition. Then every attractor\n$S \\subseteq \\mathbb{R}^d$ of the system has Hausdorff dimension\n\n$$\\dim_H S = -\\frac{\\log n}{\\log \\lambda}.$$\n\n## Sources\n\n- P. A. P. Moran, *Additive functions of intervals and Hausdorff measure*, Proc. Cambridge Philos. Soc. 42 (1946); J. E. Hutchinson, *Fractals and self similarity*, Indiana Univ. Math. J. 30 (1981). Knill, *Some fundamental theorems in mathematics*, §105. Problem `moran_equality_affine` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Dynamics.MoranDimensionWanted.Dynamics.moran_equality_affine",
+   "lean": {
+    "file": "WantedExt/Dynamics/MoranDimensionWanted.lean",
+    "line": 98,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/geometric-measure-theory/hausdorff-dimension-of-self-similar-sets/open-set-condition.md",
+   "title": "Open set condition",
+   "statement": "A finite family of maps $f_i \\colon \\mathbb{R}^d \\to \\mathbb{R}^d$,\n$i < n$, satisfies the open set condition if there is a nonempty open set $G \\subseteq \\mathbb{R}^d$\nsuch that $f_i(G) \\subseteq G$ for every $i < n$ and the images $f_i(G)$ and $f_j(G)$ are disjoint\nwhenever $i \\neq j$.",
+   "declaration": "MathlibExt.Dynamics.MoranDimensionWanted.Dynamics.OpenSetCondition",
+   "lean": {
+    "file": "WantedExt/Dynamics/MoranDimensionWanted.lean",
+    "line": 87,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/haar-measure/bruhat-functions/exists-continuous-cutoff-of-is-closed-em.md",
+   "title": "Continuous cutoff for a closed-embedding homomorphism",
+   "statement": "A continuous nonnegative compactly supported cutoff normalized on every\nleft orbit meeting `K`, for a closed-embedding homomorphism `ι`. The measure\nmay have any scale. No Hausdorff or countability hypotheses are required.",
+   "declaration": "MeasureTheory.exists_continuous_cutoff_of_isClosedEmbedding",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Group/BruhatSection.lean",
+    "line": 90,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/haar-measure/bruhat-functions/exists-continuous-cutoff-of-subset-mul.md",
+   "title": "Continuous Bruhat cutoff for a closed subgroup",
+   "statement": "A continuous nonnegative compactly supported Bruhat cutoff for a closed\nsubgroup, normalized on any subset of the saturation of a compact set.",
+   "declaration": "MeasureTheory.exists_continuous_cutoff_of_subset_mul",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Group/BruhatSection.lean",
+    "line": 140,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/haar-measure/bruhat-functions/exists-has-compact-support-integral-subg.md",
+   "title": "Existence of a Bruhat section for a closed subgroup",
+   "statement": "A Bruhat section: given a closed subgroup `T` of a locally compact group\nand a set `E` contained in `T * C` for compact `C`, there is a compactly\nsupported nonnegative measurable function `w` whose integral over each\n`T`-translate meeting `E` equals `1`.\n\nUse `exists_continuous_cutoff_of_subset_mul` when continuity or boundedness is\nneeded. These functions normalize subgroup integrals; they are not sections\nof the quotient map.",
+   "declaration": "MeasureTheory.exists_hasCompactSupport_integral_subgroup_translate_eq_one_of_subset_mul",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Group/BruhatSection.lean",
+    "line": 164,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/haar-measure/bruhat-functions/exists-is-locally-constant-integral-subg.md",
+   "title": "Existence of a locally constant normalized subgroup cutoff",
+   "statement": "A compact set in a topological group with a compact open subgroup has a\nnonnegative locally constant cutoff whose integral over every left\n`T`-orbit meeting that set is one, for a closed commutative subgroup `T`.\nThe same compactly supported function works simultaneously on all of\n`T * Ω`. The Haar measure need not have any prescribed normalization.",
+   "declaration": "MeasureTheory.exists_isLocallyConstant_integral_subgroup_mul_eq_one",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Group/LocallyConstantCutoff.lean",
+    "line": 66,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/haar-measure/bruhat-functions/exists-pos-integral-cutoff-of-cocompact.md",
+   "title": "Positive common integral of cocompact subgroup cutoffs",
+   "statement": "A compact cocompactness witness gives a continuous normalized cutoff and\na positive common integral for all nonnegative measurable compactly supported\nnormalized cutoffs. Every such cutoff is genuinely integrable, even when it\nis not bounded. Neither the ambient group nor the subgroup must be Hausdorff.",
+   "declaration": "MeasureTheory.exists_pos_integral_cutoff_of_cocompact",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Group/CutoffMass.lean",
+    "line": 51,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/haar-measure/bruhat-functions/integrable-mul-iff-of-normalized-smul.md",
+   "title": "Integrability is independent of the orbit-normalized weight",
+   "statement": "Integrability of an invariant complex function times a nonnegative real\nweight is independent of the weight when both orbit averages are one on the\nfunction's support. Neither weighted function is required to be integrable.",
+   "declaration": "MeasureTheory.integrable_mul_iff_of_normalized_smul",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Group/ActionCutoff.lean",
+    "line": 123,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/haar-measure/bruhat-functions/integrable-mul-of-integral-subgroup-tran.md",
+   "title": "Bounded invariant functions are integrable against normalized cutoffs",
+   "statement": "A bounded measurable `T`-invariant complex function is integrable against\nany nonnegative measurable compactly supported weight whose `T`-average is\none wherever the function is nonzero. The weight need not be bounded.",
+   "declaration": "MeasureTheory.integrable_mul_of_integral_subgroup_translate_eq_one",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Group/CutoffIndependence.lean",
+    "line": 219,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/haar-measure/bruhat-functions/integral-mul-eq-integral-mul-of-integral.md",
+   "title": "Cutoff independence of integrals of bounded invariant functions",
+   "statement": "The integral of a bounded measurable `T`-invariant complex function\nagainst a nonnegative measurable compactly supported cutoff does not depend\non the cutoff, when each cutoff has subgroup integral one on the support of\nthat function. Normalization is not required outside its support.\n\nThe more general `integral_mul_eq_of_normalized_subgroup` does not require\nboundedness or compact support; the hypotheses here also guarantee\nintegrability by `integrable_mul_of_integral_subgroup_translate_eq_one`.",
+   "declaration": "MeasureTheory.integral_mul_eq_integral_mul_of_integral_subgroup_translate_eq_one",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Group/CutoffIndependence.lean",
+    "line": 242,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/haar-measure/bruhat-functions/integral-mul-eq-of-normalized-smul.md",
+   "title": "Orbit-normalized cutoffs give equal complex integrals",
+   "statement": "Weighted integrals of an invariant complex function agree for nonnegative\norbit-normalized cutoffs. If one weighted function is not integrable, neither\nis the other, and both Bochner integrals are zero.",
+   "declaration": "MeasureTheory.integral_mul_eq_of_normalized_smul",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Group/ActionCutoff.lean",
+    "line": 189,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/haar-measure/bruhat-functions/integral-mul-eq-of-normalized-subgroup.md",
+   "title": "Subgroup-normalized weights give equal integrals",
+   "statement": "Subgroup-normalized nonnegative weights give the same integral of an\ninvariant complex function. This measure-theoretic statement requires neither\na closed subgroup nor compact supports nor a bounded function.",
+   "declaration": "MeasureTheory.integral_mul_eq_of_normalized_subgroup",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Group/ActionCutoff.lean",
+    "line": 234,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/haar-measure/bruhat-functions/lintegral-mul-eq-of-normalized-smul.md",
+   "title": "Orbit-normalized weights give equal nonnegative integrals",
+   "statement": "Nonnegative integrals of an invariant function agree for orbit-normalized\nweights. Normalization is needed only where the function is nonzero, and the\ncommon integral is allowed to be infinite.",
+   "declaration": "MeasureTheory.lintegral_mul_eq_of_normalized_smul",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Group/ActionCutoff.lean",
+    "line": 63,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/haar-measure/fundamental-domains/exists-measurable-set-is-fundamental-dom.md",
+   "title": "Measurable fundamental domains for discrete subgroups",
+   "statement": "Every discrete subgroup of a second-countable Hausdorff topological group\nadmits a measurable fundamental domain for the opposite action, simultaneously\nfor every measure.",
+   "declaration": "MeasureTheory.exists_measurableSet_isFundamentalDomain_op_of_discreteTopology",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Group/FundamentalDomainExists.lean",
+    "line": 168,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/haar-measure/fundamental-domains/i-union-inv-smul-of-left-coset-represent.md",
+   "title": "Fundamental domain for a subgroup of countable index",
+   "statement": "From a fundamental domain for `Γ₁`, a countable union of inverse\ncoset-representative translates gives a fundamental domain for a subgroup\n`Γ₂ ≤ Γ₁` of countable index.",
+   "declaration": "MeasureTheory.IsFundamentalDomain.iUnion_inv_smul_of_leftCosetRepresentatives",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Group/FundamentalDomain.lean",
+    "line": 61,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/haar-measure/fundamental-domains/set-lintegral-i-union-inv-smul-eq-and-se.md",
+   "title": "Integrals over a subgroup fundamental domain as sums over cosets",
+   "statement": "If `𝓕` is a fundamental domain for `Γ₁` and `R` is a system of\nrepresentatives for the left cosets of `Γ₂` in `Γ₁`, then integrals over\nthe union of the translates `((R i)⁻¹) • 𝓕` unfold into sums over `i` of\nintegrals over `𝓕`, for both `ℝ≥0∞`-valued and Bochner integrals.",
+   "declaration": "MeasureTheory.IsFundamentalDomain.setLIntegral_iUnion_inv_smul_eq_and_setIntegral_eq_of_leftCosetRepresentatives",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Group/FundamentalDomainIntegral.lean",
+    "line": 98,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/haar-measure/unimodular-groups/is-inv-invariant-of-is-mul-right-invaria.md",
+   "title": "Right-invariant Haar measures are inversion-invariant",
+   "statement": "A right-invariant Haar measure is invariant under inversion.",
+   "declaration": "MeasureTheory.Measure.isInvInvariant_of_isMulRightInvariant",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/IsInvInvariant.lean",
+    "line": 50,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/haar-measure/unimodular-groups/is-mul-right-invariant-and-is-inv-invari.md",
+   "title": "Haar measures on GL(2, F) are right- and inversion-invariant",
+   "statement": "Every Haar measure on `GL (2, F)` is right-invariant and inversion-invariant.",
+   "declaration": "Matrix.GeneralLinearGroup.isMulRightInvariant_and_isInvInvariant_of_isHaarMeasure_fin_two",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Group/GL2Haar.lean",
+    "line": 346,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/haar-measure/unimodular-groups/modular-character-fin-two-eq-one.md",
+   "title": "GL(2, F) is unimodular",
+   "statement": "The modular character of `GL (2, F)` is trivial: `GL (2, F)` is unimodular.",
+   "declaration": "Matrix.GeneralLinearGroup.modularCharacter_fin_two_eq_one",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Group/GL2Haar.lean",
+    "line": 339,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/almost-everywhere-convergence/ae-tendsto-rpow-neg-mul-comp-mul-zero.md",
+   "title": "Decay of dilates of an integrable function",
+   "statement": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be\nLebesgue integrable and let $\\lambda > 0$. Then for almost every $x \\in \\mathbb{R}$,\n$n^{-\\lambda} f(nx) \\to 0$ as $n \\to \\infty$ through the positive integers.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_37`.",
+   "declaration": "MathlibExt.MeasureTheory.DilatedL1FunctionDecayAeWanted.ae_tendsto_rpow_neg_mul_comp_mul_zero",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/DilatedL1FunctionDecayAeWanted.lean",
+    "line": 51,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/almost-everywhere-convergence/exists-tendsto-abs-at-top-and-ae-tendsto.md",
+   "title": "Unbounded multipliers preserving almost-everywhere convergence to zero",
+   "statement": "Let\n$(f_n)_{n \\in \\mathbb{N}}$ be a sequence of Borel measurable functions $f_n : \\mathbb{R} \\to\n\\mathbb{R}$ such that $f_n(x) \\to 0$ for almost every $x \\in [0, 1]$. Then there is a sequence of\nreal numbers $(c_n)_{n \\in \\mathbb{N}}$ with $|c_n| \\to \\infty$ such that $c_n f_n(x) \\to 0$ for\nalmost every $x \\in [0, 1]$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_38`.",
+   "declaration": "MathlibExt.MeasureTheory.AeNullSequenceUnboundedMultipliersWanted.exists_tendsto_abs_atTop_and_ae_tendsto_mul_zero",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/AeNullSequenceUnboundedMultipliersWanted.lean",
+    "line": 54,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/approximation-by-simple-functions/eapprox-sub-lt-of-le.md",
+   "title": "The standard simple approximations converge uniformly where the function is bounded",
+   "statement": "Let $\\alpha$ be a measurable space and $f : \\alpha \\to [0, \\infty]$ a measurable function. Let\n$r_0, r_1, \\ldots$ be the fixed enumeration of $\\mathbb{Q}$ by natural-number codes ($r_k = 0$ when\n$k$ codes no rational), put $q_k = \\max(r_k, 0)$, and let\n$\\varphi_n(a) = \\max(\\{0\\} \\cup \\{q_k : k < n,\\ q_k \\le f(a)\\})$ be the $n$-th standard simple\napproximation of $f$. Then for every $B \\in [0, \\infty)$ and every $\\varepsilon \\in (0, \\infty]$\nthere is $N \\in \\mathbb{N}$ such that $f(a) - \\varphi_n(a) < \\varepsilon$ for all $n \\ge N$ and\nall $a \\in \\alpha$ with $f(a) \\le B$, where subtraction in $[0, \\infty]$ is truncated at $0$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.SimpleFuncUniformApprox.eapprox_sub_lt_of_le",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/SimpleFuncUniformApprox.lean",
+    "line": 42,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/approximation-by-simple-functions/exists-monotone-tendsto.md",
+   "title": "Approximation of nonnegative measurable functions by simple functions",
+   "statement": "Let $\\alpha$ be a\nmeasurable space and $f : \\alpha \\to [0, \\infty]$ a measurable function. There is a sequence of\nsimple functions $\\varphi_n : \\alpha \\to [0, \\infty]$ ($n \\in \\mathbb{N}$) such that:\n(a) $\\varphi_0 \\le \\varphi_1 \\le \\cdots \\le f$ pointwise; (b) $\\varphi_n(a) \\to f(a)$ for every\n$a \\in \\alpha$; and (c) for every $B \\in [0, \\infty)$ and every $\\varepsilon \\in (0, \\infty]$ there\nis $N \\in \\mathbb{N}$ such that $f(a) - \\varphi_n(a) < \\varepsilon$ for all $n \\ge N$ and all\n$a \\in \\alpha$ with $f(a) \\le B$, where the subtraction in $[0, \\infty]$ is truncated at $0$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.SimpleFuncUniformApprox.exists_monotone_tendsto",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/SimpleFuncUniformApprox.lean",
+    "line": 116,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/bounded-convergence-theorem/tendsto-integral-norm-sub-of-bounded-con.md",
+   "title": "Bounded convergence theorem, $L^1$ form",
+   "statement": "Let $\\mu$ be a finite measure on a measurable\nspace $\\alpha$, let $G$ be a real normed space, let $C$ be a real number, and let\n$F_n : \\alpha \\to G$ for $n \\in \\mathbb{N}$ and $f : \\alpha \\to G$ be functions. Suppose that each\n$F_n$ is almost everywhere strongly measurable, that for every $n$ we have $\\|F_n(a)\\| \\le C$ for\n$\\mu$-almost every $a$, and that $F_n \\to f$ in $\\mu$-measure. Then\n$\\int_\\alpha \\|F_n(a) - f(a)\\| \\, d\\mu(a) \\to 0$ as $n \\to \\infty$.",
+   "declaration": "MeasureTheory.tendsto_integral_norm_sub_of_bounded_convergence",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/BoundedConvergence.lean",
+    "line": 72,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/bounded-convergence-theorem/tendsto-integral-of-bounded-convergence.md",
+   "title": "Bounded convergence theorem",
+   "statement": "Let $\\mu$ be a finite measure on a measurable space $\\alpha$,\nlet $G$ be a real normed space, let $C$ be a real number, and let $F_n : \\alpha \\to G$ for\n$n \\in \\mathbb{N}$ and $f : \\alpha \\to G$ be functions. Suppose that each $F_n$ is almost\neverywhere strongly measurable, that for every $n$ we have $\\|F_n(a)\\| \\le C$ for $\\mu$-almost\nevery $a$, and that $F_n \\to f$ in $\\mu$-measure (in probability). Then\n$\\int_\\alpha F_n \\, d\\mu \\to \\int_\\alpha f \\, d\\mu$ as $n \\to \\infty$.",
+   "declaration": "MeasureTheory.tendsto_integral_of_bounded_convergence",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/BoundedConvergence.lean",
+    "line": 108,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/convergence-in-measure/l0-pseudo-metric.md",
+   "title": "The $L^0$ pseudometric on $(0,1)$",
+   "statement": "For Borel measurable functions\n$f, g : \\mathbb{R} \\to \\mathbb{R}$,\n\n$$\nd(f,g) = \\int_{[0,1]} \\frac{|f(x) - g(x)|}{1 + |f(x) - g(x)|}\\,dx,\n$$\n\nthe integral being with respect to Lebesgue measure on $[0,1]$.\n\nThis is a pseudometric: functions that agree almost everywhere on $[0,1]$ are at distance $0$,\nand on the almost-everywhere classes it is the usual metric of $L^0([0,1])$.",
+   "declaration": "MathlibExt.MeasureTheory.L0MetricTendstoInMeasureWanted.L0PseudoMetric",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/L0MetricTendstoInMeasureWanted.lean",
+    "line": 56,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/convergence-in-measure/l0-unit-interval.md",
+   "title": "Measurable functions representing $L^0((0,1))$",
+   "statement": "The type of Borel measurable functions\n$f : \\mathbb{R} \\to \\mathbb{R}$, used as representatives of the elements of $L^0([0,1])$.\n\nThe pseudometric and the convergence in measure built on them depend only on the restriction\nof $f$ to $[0,1]$ up to a null set.",
+   "declaration": "MathlibExt.MeasureTheory.L0MetricTendstoInMeasureWanted.L0UnitInterval",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/L0MetricTendstoInMeasureWanted.lean",
+    "line": 51,
+    "kind": "abbrev",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/convergence-in-measure/tendsto-l0-pseudo-metric-zero-iff-tendst.md",
+   "title": "Convergence in the $L^0$ pseudometric is convergence in measure",
+   "statement": "Let $f$ and\n$f_0, f_1, f_2, \\ldots$ be Borel measurable functions $\\mathbb{R} \\to \\mathbb{R}$, and let $d$ be\nthe pseudometric\n\n$$\nd(g,h) = \\int_{[0,1]} \\frac{|g(x) - h(x)|}{1 + |g(x) - h(x)|}\\,dx\n$$\n\non such functions, the integral being with respect to Lebesgue measure. Then\n$d(f_n, f) \\to 0$ as $n \\to \\infty$ if and only if $f_n \\to f$ in measure with respect to\nLebesgue measure on $[0,1]$: for every $\\varepsilon > 0$, the Lebesgue measure of\n$\\{x \\in [0,1] : |f_n(x) - f(x)| \\ge \\varepsilon\\}$ tends to $0$ as $n \\to \\infty$.\n\nThe source states this for $L^0([0,1])$, on which $d$ is a metric; here it is stated for\nrepresentatives, on which $d$ is only a pseudometric. Both sides depend only on the\nalmost-everywhere classes of the functions on $[0,1]$, so the two statements say the same thing.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l2_07`, with the change above.",
+   "declaration": "MathlibExt.MeasureTheory.L0MetricTendstoInMeasureWanted.tendsto_L0PseudoMetric_zero_iff_tendstoInMeasure",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/L0MetricTendstoInMeasureWanted.lean",
+    "line": 75,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/convolution/integrable-comp-sub-mul-of-integrable-fi.md",
+   "title": "Integrability of the convolution integrand",
+   "statement": "Let $d \\in \\mathbb{N}$ and let\n$f, g : \\mathbb{R}^d \\to \\mathbb{R}$ be Lebesgue integrable. Identify $\\mathbb{R}^{2d}$ with\n$\\mathbb{R}^d \\times \\mathbb{R}^d$ by writing a point as $(x, y)$, where $x$ consists of its first\n$d$ coordinates and $y$ of its last $d$ coordinates. Then the function\n$(x, y) \\mapsto f(x - y)\\, g(y)$ is Lebesgue integrable on $\\mathbb{R}^{2d}$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Measure and integration; Classical measure theory), problem `ma_proofbench_l1_72`.",
+   "declaration": "MathlibExt.MeasureTheory.ConvolutionIntegrandIntegrableEuclideanWanted.integrable_comp_sub_mul_of_integrable_fin_append",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ConvolutionIntegrandIntegrableEuclideanWanted.lean",
+    "line": 53,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/convolution/tendsto-mul-integral-integral-exp-neg-tw.md",
+   "title": "Exponential kernel approximate identity",
+   "statement": "For every function $f : \\mathbb{R} \\to \\mathbb{R}$\nin $L^2(\\mathbb{R})$,\n\n$$\n\\lim_{n\\to\\infty} n\\int_{\\mathbb{R}}\\int_{\\mathbb{R}} f(x)f(y)e^{-2n|x-y|}\\,dy\\,dx\n= \\int_{\\mathbb{R}} f(x)^2\\,dx,\n$$\n\nwhere $n$ runs through the natural numbers and the integrals are with respect to Lebesgue measure.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_96`.",
+   "declaration": "MathlibExt.MeasureTheory.ExponentialKernelApproxIdentityWanted.tendsto_mul_integral_integral_exp_neg_two_mul_abs_sub",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ExponentialKernelApproxIdentityWanted.lean",
+    "line": 53,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/convolution/uniform-continuous-convolution-integrabl.md",
+   "title": "Convolution of an integrable and a bounded function is uniformly continuous",
+   "statement": "Let\n$d \\in \\mathbb{N}$, let $f : \\mathbb{R}^d \\to \\mathbb{R}$ be Lebesgue integrable, and let\n$g : \\mathbb{R}^d \\to \\mathbb{R}$ be Borel measurable and bounded. Then the convolution\n\n$$\n(f * g)(x) = \\int_{\\mathbb{R}^d} f(x - y)\\, g(y)\\, dy\n$$\n\nis uniformly continuous on $\\mathbb{R}^d$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l1_15`.",
+   "declaration": "MathlibExt.MeasureTheory.ConvolutionIntegrableBoundedUniformWanted.uniformContinuous_convolution_integrable_bounded",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ConvolutionIntegrableBoundedUniformWanted.lean",
+    "line": 55,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/differentiation-under-the-integral-sign/cont-diff-integral-smul-comp-of-cont-dif.md",
+   "title": "Smoothness of compactly supported parameter integrals",
+   "statement": "The integral `p ↦ ∫ x, w x • Ψ (c x, p) ∂μ` of a smooth compactly\nsupported function is smooth in the parameter `p`.",
+   "declaration": "MeasureTheory.contDiff_integral_smul_comp_of_contDiff_of_hasCompactSupport",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/ParamSmooth.lean",
+    "line": 133,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/differentiation-under-the-integral-sign/exists-has-deriv-at-integral-tsum-ae.md",
+   "title": "Differentiating an integral of a series term by term",
+   "statement": "Let $d \\in \\mathbb{N}$, let $\\Omega$\nbe an open subset of $\\mathbb{R}^d$, let $a < c < b$ be real numbers, and for each\n$n \\in \\mathbb{N}$ let $f_n : \\mathbb{R}^d \\times \\mathbb{R} \\to \\mathbb{C}$ be almost everywhere\nmeasurable on $\\Omega \\times (a, b)$ with respect to Lebesgue measure. Write\n$\\partial_y f_n(x, y)$ for the derivative of $t \\mapsto f_n(x, t)$ at $y$, taken to be $0$ where\nthis derivative does not exist, and give every series that does not converge absolutely the\nsum $0$. Assume that:\n(1) for each $n$ and almost every $x \\in \\Omega$, the function $y \\mapsto f_n(x, y)$ is\nabsolutely continuous on $[a, b]$;\n(2) each $\\partial_y f_n$ is almost everywhere measurable on $\\Omega \\times (a, b)$, the series\n$\\sum_n |\\partial_y f_n(x, y)|$ converges for almost every $(x, y) \\in \\Omega \\times (a, b)$,\nand its sum is integrable on $\\Omega \\times (a, b)$;\n(3) the series $\\sum_n |f_n(x, c)|$ converges for almost every $x \\in \\Omega$, and its sum is\nintegrable on $\\Omega$.\nThen there is a function $F : \\mathbb{R} \\to \\mathbb{C}$ such that for almost every\n$y \\in (a, b)$ the function $x \\mapsto \\sum_n f_n(x, y)$ is integrable on $\\Omega$,\n$F(y) = \\int_\\Omega \\sum_n f_n(x, y)\\, dx$, and $F$ is differentiable at $y$ with\n\n$$\nF'(y) = \\sum_n \\int_\\Omega \\partial_y f_n(x, y)\\, dx.\n$$\n\nThe joint measurability of each $f_n$ is a hypothesis of the source that the first formalization\ndropped. It is needed: for $d \\ge 1$ and nonempty bounded $\\Omega$, a non-measurable $f_0$ of\nmodulus one that does not depend on $y$, with $f_n = 0$ for $n \\ge 1$, satisfies the other\nhypotheses but not the conclusion.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_50`, with the change above.",
+   "declaration": "MathlibExt.MeasureTheory.DerivIntegralSeriesAbsContWanted.exists_hasDerivAt_integral_tsum_ae",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/DerivIntegralSeriesAbsContWanted.lean",
+    "line": 82,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/exists-measure-lt-tendsto-uniformly-on-c.md",
+   "title": "Egorov's theorem on the real line under integrable domination",
+   "statement": "Let\n$f : \\mathbb{R} \\to \\mathbb{R}$ be any function and let $f_n : \\mathbb{R} \\to \\mathbb{R}$,\n$n \\in \\mathbb{N}$, be Borel measurable functions with $f_n(x) \\to f(x)$ for almost every\n$x \\in \\mathbb{R}$. Let $g : \\mathbb{R} \\to \\mathbb{R}$ be Lebesgue integrable with\n$|f_n(x)| \\le g(x)$ for all $n$ and all $x \\in \\mathbb{R}$. Then for every $\\varepsilon > 0$ there\nis a Borel set $E \\subseteq \\mathbb{R}$ of Lebesgue measure less than $\\varepsilon$ such that\n$f_n \\to f$ uniformly on $\\mathbb{R} \\setminus E$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_43`.",
+   "declaration": "MathlibExt.MeasureTheory.EgorovDominatedRealLineWanted.exists_measure_lt_tendstoUniformlyOn_compl_of_ae_tendsto_of_abs_le",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/EgorovDominatedRealLineWanted.lean",
+    "line": 61,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/jensen-s-inequality-for-integrals/set-integral-log-le-measure-mul-log-inv.md",
+   "title": "Upper bound for the integral of the logarithm of a probability density over a set",
+   "statement": "Let\n$\\mu$ be a measure on a measurable space $X$ and let $f : X \\to \\mathbb{R}$ be integrable with\nrespect to $\\mu$, with $f(x) > 0$ for every $x \\in X$ and $\\int_X f\\,d\\mu = 1$. Then for every\nmeasurable set $E \\subseteq X$ with $0 < \\mu(E) < \\infty$ such that $\\log f$ is integrable on $E$,\n\n$$\n\\int_E \\log f\\,d\\mu \\le \\mu(E)\\log\\frac{1}{\\mu(E)}.\n$$\n\nThe integrability of $\\log f$ on $E$ is assumed so that the statement is real-valued: the\npositive part of $\\log f$ is integrable on $E$ (since $(\\log f)^{+}\\le f$), so if $\\log f$\nis not integrable on $E$ then $\\int_E(\\log f)\\,d\\mu=-\\infty$ and the inequality holds in\n$\\mathbb{R}\\cup\\{-\\infty\\}$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Measure and integration; Classical measure theory), problem `ma_proofbench_l1_82`.",
+   "declaration": "MathlibExt.MeasureTheory.SetIntegralLogDensityBoundWanted.setIntegral_log_le_measure_mul_log_inv_measure",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/SetIntegralLogDensityBoundWanted.lean",
+    "line": 68,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/jensen-s-inequality-for-integrals/sqrt-one-add-sq-integral-le-and-le-one-a.md",
+   "title": "Two-sided bound for the integral of the square root of one plus a square",
+   "statement": "Let $\\mu$ be a\nprobability measure on a measurable space $\\Omega$ and let $h : \\Omega \\to [0,\\infty)$ be a\nmeasurable function with $\\int_\\Omega h\\,d\\mu < \\infty$. If $A = \\int_\\Omega h\\,d\\mu$, then\n\n$$\n\\sqrt{1+A^2}\\le \\int_\\Omega \\sqrt{1+h^2}\\,d\\mu \\le 1+A.\n$$\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Measure and integration; Classical measure theory), problem `ma_proofbench_l1_66`.",
+   "declaration": "MathlibExt.MeasureTheory.SqrtOnePlusSqIntegralBoundsWanted.sqrt_one_add_sq_integral_le_and_le_one_add",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/SqrtOnePlusSqIntegralBoundsWanted.lean",
+    "line": 60,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/lusin.md",
+   "title": "Lusin's theorem",
+   "statement": "Let $X$ be a locally compact Hausdorff topological space with its Borel\n$\\sigma$-algebra, and let $\\mu$ be a finite measure on $X$ that is regular: finite on compact\nsets, outer regular, and inner regular on open sets by compact sets. Let $Y$ be a\nsecond-countable topological space with its Borel $\\sigma$-algebra, and let $f : X \\to Y$ be\nmeasurable. Then for every real $\\varepsilon > 0$ there is a compact set $K \\subseteq X$ with\n$\\mu(X \\setminus K) < \\varepsilon$ such that $f$ is continuous on $K$.\n\n## Sources\n\n- G. B. Folland, Real Analysis, 2nd ed., Lusin's theorem.",
+   "declaration": "MathlibExt.MeasureTheory.Function.Lusin.lusin",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/Lusin.lean",
+    "line": 30,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/products-of-measures-with-densities/lintegral-fintype-prod-eq-prod.md",
+   "title": "Tonelli for products",
+   "statement": "Let $\\mu_i$ be σ-finite measures on measurable spaces $X_i$,\nindexed by a finite type $\\iota$, and let $g_i : X_i \\to [0, \\infty]$ be measurable functions.\nThen the integral of $y \\mapsto \\prod_{i \\in \\iota} g_i(y_i)$ with respect to the product measure\n$\\prod_i \\mu_i$ equals $\\prod_{i \\in \\iota} \\int g_i \\, d\\mu_i$.",
+   "declaration": "MeasureTheory.lintegral_fintype_prod_eq_prod",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/PiWithDensity.lean",
+    "line": 77,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/products-of-measures-with-densities/lmarginal-prod.md",
+   "title": "Iterated integrals of a product of one-variable functions",
+   "statement": "Let $\\mu_i$ be σ-finite\nmeasures on measurable spaces $X_i$, indexed by a finite type $\\iota$, and let\n$g_i : X_i \\to [0, \\infty]$ be measurable functions. For a finite set $s \\subseteq \\iota$ and a\npoint $x \\in \\prod_i X_i$, integrating $y \\mapsto \\prod_{i \\in \\iota} g_i(y_i)$ over the\ncoordinates $y_i$ with $i \\in s$, each against $\\mu_i$, while the other coordinates are fixed to\nthose of $x$, gives $\\left(\\prod_{i \\in s} \\int g_i \\, d\\mu_i\\right) \\cdot\n\\prod_{i \\notin s} g_i(x_i)$.",
+   "declaration": "MeasureTheory.lmarginal_prod",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/PiWithDensity.lean",
+    "line": 45,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/products-of-measures-with-densities/pi-with-density.md",
+   "title": "A product of measures with densities",
+   "statement": "Let $\\mu_i$ be σ-finite measures on measurable\nspaces $X_i$, indexed by a finite type $\\iota$, and let $f_i : X_i \\to [0, \\infty]$ be measurable\nfunctions such that, for each $i$, the measure $f_i \\mu_i$ with density $f_i$ with respect to\n$\\mu_i$ is σ-finite. Then the product measure $\\prod_i f_i \\mu_i$ equals the measure with density\n$y \\mapsto \\prod_{i \\in \\iota} f_i(y_i)$ with respect to the product measure $\\prod_i \\mu_i$.\n\nThe σ-finiteness of the weighted measures guarantees that their product measure is characterized\non boxes.",
+   "declaration": "MeasureTheory.Measure.pi_withDensity",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/PiWithDensity.lean",
+    "line": 92,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/scheff-s-lemma/scheffe-lemma.md",
+   "title": "Scheffé's lemma",
+   "statement": "Let $\\mu$ be a measure on a measurable space $\\alpha$, let\n$f_n : \\alpha \\to \\mathbb{R}$ ($n \\in \\mathbb{N}$) be $\\mu$-almost everywhere strongly measurable,\nand let $g : \\alpha \\to \\mathbb{R}$ be in $L^1(\\mu)$. Write\n$\\|h\\|_1 = \\int |h| \\, d\\mu \\in [0, \\infty]$ for the $L^1$ seminorm. If $f_n(x) \\to g(x)$ for\n$\\mu$-almost every $x$ and $\\|f_n\\|_1 \\to \\|g\\|_1$ in $[0, \\infty]$, then $\\|f_n - g\\|_1 \\to 0$,\nthat is, $f_n \\to g$ in $L^1(\\mu)$.",
+   "declaration": "MeasureTheory.scheffe_lemma",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/ScheffeLemma.lean",
+    "line": 127,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/scheff-s-lemma/tendsto-e-lp-norm-one-of-tendsto-in-meas.md",
+   "title": "Scheffé's lemma for convergence in measure",
+   "statement": "Let $\\mu$ be a measure on a measurable space\n$\\alpha$, let $f_n : \\alpha \\to \\mathbb{R}$ ($n \\in \\mathbb{N}$) and $g : \\alpha \\to \\mathbb{R}$ be\nin $L^1(\\mu)$, and write $\\|h\\|_1 = \\int |h| \\, d\\mu$. If $f_n \\to g$ in $\\mu$-measure (for every\n$\\varepsilon > 0$, $\\mu\\{x : |f_n(x) - g(x)| \\ge \\varepsilon\\} \\to 0$) and $\\|f_n\\|_1 \\to \\|g\\|_1$,\nthen $\\|f_n - g\\|_1 \\to 0$, that is, $f_n \\to g$ in $L^1(\\mu)$.\n\nThe proof applies Scheffé's lemma along a further subsequence, extracted from every subsequence by\nconvergence in measure.",
+   "declaration": "MeasureTheory.tendsto_eLpNorm_one_of_tendstoInMeasure_of_tendsto_eLpNorm",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/ScheffeLemma.lean",
+    "line": 221,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/scheff-s-lemma/tendsto-integral-abs-sub-of-ae-tendsto-o.md",
+   "title": "Scheffé's lemma on the real line",
+   "statement": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be integrable and\nlet $(f_n)_{n \\in \\mathbb{N}}$ be a sequence of integrable real functions $f_n$ on $\\mathbb{R}$\nsuch that $f_n(x) \\to f(x)$ for almost every $x \\in \\mathbb{R}$. If\n$\\int_{\\mathbb{R}} |f_n| \\to \\int_{\\mathbb{R}} |f|$ as $n \\to \\infty$, then\n$\\int_{\\mathbb{R}} |f_n - f| \\to 0$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_76`.",
+   "declaration": "MathlibExt.MeasureTheory.ScheffeL1ConvergenceWanted.tendsto_integral_abs_sub_of_ae_tendsto_of_tendsto_integral_abs",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ScheffeL1ConvergenceWanted.lean",
+    "line": 54,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/scheff-s-lemma/uniform-integrable-of-tendsto-in-measure.md",
+   "title": "Convergence in measure with converging L¹ norms implies uniform integrability",
+   "statement": "Let $\\mu$\nbe a measure on a measurable space $\\alpha$, let $f_n : \\alpha \\to \\mathbb{R}$ ($n \\in \\mathbb{N}$)\nand $g : \\alpha \\to \\mathbb{R}$ be in $L^1(\\mu)$, and write $\\|h\\|_1 = \\int |h| \\, d\\mu$. If\n$f_n \\to g$ in $\\mu$-measure (for every $\\varepsilon > 0$,\n$\\mu\\{x : |f_n(x) - g(x)| \\ge \\varepsilon\\} \\to 0$) and $\\|f_n\\|_1 \\to \\|g\\|_1$, then the family\n$(f_n)$ is uniformly integrable: $\\sup_n \\|f_n\\|_1 < \\infty$, and the supremum of\n$\\int_s |f_n| \\, d\\mu$ over all $n$ and all sets $s \\subseteq \\alpha$ with $\\mu(s) \\le \\delta$\ntends to $0$ as $\\delta \\to 0$.\n\nThe proof combines the $L^1$ convergence $\\|f_n - g\\|_1 \\to 0$ given by Scheffé's lemma for\nconvergence in measure with the Vitali convergence theorem.",
+   "declaration": "MeasureTheory.uniformIntegrable_of_tendstoInMeasure_of_tendsto_eLpNorm",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/ScheffeLemma.lean",
+    "line": 239,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/integration/scheff-s-lemma/uniform-integrable-tfae-of-tendsto-in-me.md",
+   "title": "Uniform integrability equivalences",
+   "statement": "Let $\\mu$ be a finite measure on a measurable space\n$\\alpha$, let $f_n : \\alpha \\to \\mathbb{R}$ ($n \\in \\mathbb{N}$) and $g : \\alpha \\to \\mathbb{R}$ be\nin $L^1(\\mu)$, write $\\|h\\|_1 = \\int |h| \\, d\\mu$, and suppose that $f_n \\to g$ in $\\mu$-measure\n(for every $\\varepsilon > 0$, $\\mu\\{x : |f_n(x) - g(x)| \\ge \\varepsilon\\} \\to 0$). Then the\nfollowing are equivalent: (1) the family $(f_n)$ is uniformly integrable, that is,\n$\\sup_n \\|f_n\\|_1 < \\infty$ and the supremum of $\\int_s |f_n| \\, d\\mu$ over all $n$ and all sets\n$s \\subseteq \\alpha$ with $\\mu(s) \\le \\delta$ tends to $0$ as $\\delta \\to 0$; (2) $f_n \\to g$ in\n$L^1(\\mu)$, that is, $\\|f_n - g\\|_1 \\to 0$; (3) $\\|f_n\\|_1 \\to \\|g\\|_1$.\n\nThe equivalence of (1) and (2) is the Vitali convergence theorem; (3) implies (2) by Scheffé's\nlemma for convergence in measure, and (2) implies (3) by the reverse triangle inequality.",
+   "declaration": "MeasureTheory.uniformIntegrable_tfae_of_tendstoInMeasure",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/ScheffeLemma.lean",
+    "line": 257,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lebesgue-measure/exists-add-mem-and-sub-mem-of-volume-pos.md",
+   "title": "Sets of positive measure contain three-term arithmetic progressions",
+   "statement": "For every Borel set\n$A \\subseteq \\mathbb{R}$ of positive Lebesgue measure there exist $x \\in A$ and $y > 0$ such that\n$x + y \\in A$ and $x - y \\in A$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_75`.",
+   "declaration": "MathlibExt.MeasureTheory.PositiveMeasureThreeTermProgressionWanted.exists_add_mem_and_sub_mem_of_volume_pos",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/PositiveMeasureThreeTermProgressionWanted.lean",
+    "line": 53,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lebesgue-measure/exists-gt-not-mem-of-volume-lt-top.md",
+   "title": "Sets of finite Lebesgue measure contain no right half-line",
+   "statement": "Let $E \\subseteq \\mathbb{R}$\nhave finite Lebesgue outer measure ($E$ need not be measurable). Then for every real $X$ there\nis a real $x > X$ with $x \\notin E$; that is, $E$ contains no half-line $(X, \\infty)$.",
+   "declaration": "MeasureTheory.exists_gt_not_mem_of_volume_lt_top",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/Lebesgue/Finite.lean",
+    "line": 28,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lebesgue-measure/null-sets/measurable-set-and-volume-eq-zero-graph.md",
+   "title": "The graph of a measurable function is a null set",
+   "statement": "Let $d \\ge 0$ be an integer and let\n$f : \\mathbb{R}^d \\to \\mathbb{R}$ be Borel measurable. Identify $\\mathbb{R}^d \\times \\mathbb{R}$\nwith $\\mathbb{R}^{d+1}$ by taking the last coordinate as $y$. Then the graph\n$\\Gamma = \\{(x, y) \\in \\mathbb{R}^d \\times \\mathbb{R} : y = f(x)\\}$ is a Borel measurable subset\nof $\\mathbb{R}^{d+1}$ and has Lebesgue measure $0$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Measure and integration; Classical measure theory), problem `ma_proofbench_l1_38`.",
+   "declaration": "MathlibExt.MeasureTheory.GraphMeasurableNullWanted.measurableSet_and_volume_eq_zero_graph",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/GraphMeasurableNullWanted.lean",
+    "line": 54,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lebesgue-measure/null-sets/measure-image-null-of-locally-null.md",
+   "title": "Sets with locally null image have null image",
+   "statement": "Let $X$ be a second-countable topological\nspace, $Y$ a measurable space with a measure $\\mu$, $f : X \\to Y$ a function and $s \\subseteq X$.\nIf every point $x \\in s$ has a neighbourhood $V$ with $\\mu(f(V \\cap s)) = 0$, then\n$\\mu(f(s)) = 0$.\n\nHere $\\mu$ is evaluated as an outer measure, so the images need not be measurable.",
+   "declaration": "MathlibExt.MeasureTheory.measure_image_null_of_locally_null",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/ImageNull.lean",
+    "line": 33,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lebesgue-measure/null-sets/measure-set-of-eval-eq-zero-of-ne-zero.md",
+   "title": "Nonzero polynomials over nondiscrete fields have Haar-null zero sets",
+   "statement": "A nonzero multivariate polynomial over a nondiscrete locally compact\nsecond-countable Hausdorff topological field has an additive Haar-null zero set.\nThis includes the empty variable type.",
+   "declaration": "MvPolynomial.measure_setOf_eval_eq_zero_of_ne_zero",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Polynomial.lean",
+    "line": 112,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lebesgue-measure/volumes-of-polytopes/to-real-volume-convex-hull-triangle.md",
+   "title": "Determinant formula for the area of a triangle",
+   "statement": "Write $x = (x_1, x_2)$ for the\ncoordinates of a point $x$ of the Euclidean plane $\\mathbb{R}^2$. For all points $a, b, c$ in\n$\\mathbb{R}^2$, the Lebesgue measure (area) of the convex hull of $\\{a, b, c\\}$, as a real\nnumber, equals $\\frac{1}{2}\\,\\lvert (b_1 - a_1)(c_2 - a_2) - (b_2 - a_2)(c_1 - a_1) \\rvert$.",
+   "declaration": "MeasureTheory.toReal_volume_convexHull_triangle",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/Lebesgue/TriangleArea.lean",
+    "line": 326,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lebesgue-measure/volumes-of-polytopes/volume-coordinate-cross-polytope.md",
+   "title": "Volume of the cross-polytope",
+   "statement": "For every integer $n \\ge 1$, the cross-polytope\n$\\{x \\in \\mathbb{R}^n : |x_1| + \\dots + |x_n| \\le 1\\}$ in the Euclidean space $\\mathbb{R}^n$ has\nvolume $2^n / n!$.\n\n## Sources\n\n- optimizationproblems `constants/25a.md`, line 44 (the polar-volume identity).",
+   "declaration": "MetaMathlibExt.volume_coordinateCrossPolytope",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/CoordinateCrossPolytope.lean",
+    "line": 38,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lebesgue-measure/volumes-of-polytopes/volume-coordinate-cube.md",
+   "title": "Volume of the coordinate cube",
+   "statement": "For every $n \\in \\mathbb{N}$, the coordinate cube\n$[-1, 1]^n$ in the Euclidean space $\\mathbb{R}^n$ has volume $2^n$.\n\n## Sources\n\n- optimizationproblems `constants/25a.md`, line 44 (the cube-volume identity).",
+   "declaration": "MetaMathlibExt.volume_coordinateCube",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/CoordinateCube.lean",
+    "line": 27,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lebesgue-measure/volumes-of-polytopes/volume-unit-square.md",
+   "title": "Area of the unit square",
+   "statement": "The closed unit square\n$\\{x \\in \\mathbb{R}^2 : 0 \\le x_1 \\le 1 \\text{ and } 0 \\le x_2 \\le 1\\}$ in the Euclidean plane has\nLebesgue measure (area) $1$.",
+   "declaration": "MeasureTheory.volume_unitSquare",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/Lebesgue/TriangleArea.lean",
+    "line": 345,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/borel-sets-in-lp-spaces/measurable-set-vanishing-integral-set.md",
+   "title": "$L^p$ functions whose integrals over $(0, L)$ tend to $0$ form a Borel set",
+   "statement": "Let\n$1 \\le p \\le \\infty$. The set of real-valued $f \\in L^p(\\mathbb{R})$ (with respect to Lebesgue\nmeasure) such that $\\int_0^L f(x)\\,dx \\to 0$ as $L \\to +\\infty$ is a Borel subset of\n$L^p(\\mathbb{R})$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Set functions, measures and integrals with values in abstract spaces), problem `ma_proofbench_l2_25`.",
+   "declaration": "MathlibExt.MeasureTheory.LpVanishingHalfLineIntegralBorelWanted.measurableSet_vanishingIntegralSet",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/LpVanishingHalfLineIntegralBorelWanted.lean",
+    "line": 65,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/borel-sets-in-lp-spaces/vanishing-integral-set.md",
+   "title": "Functions with vanishing integrals over $(0, L)$",
+   "statement": "For $0 \\le p \\le \\infty$, this is the set\nof real-valued $f \\in L^p(\\mathbb{R})$ (with respect to Lebesgue measure) such that\n$\\int_{[0, L]} f(x)\\,dx \\to 0$ as $L \\to +\\infty$, where the integral of a function that is not\nintegrable on $[0, L]$ counts as $0$.",
+   "declaration": "MathlibExt.MeasureTheory.LpVanishingHalfLineIntegralBorelWanted.vanishingIntegralSet",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/LpVanishingHalfLineIntegralBorelWanted.lean",
+    "line": 47,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/criteria-for-lp-membership/is-partition01.md",
+   "title": "Partitions of the unit interval",
+   "statement": "For a natural number $n$, real numbers\n$t_0, t_1, \\dots, t_n$ form a partition of $[0, 1]$ when $0 = t_0 < t_1 < \\dots < t_n = 1$.",
+   "declaration": "MathlibExt.MeasureTheory.LpCharacterizationPartitionAveragesWanted.IsPartition01",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/LpCharacterizationPartitionAveragesWanted.lean",
+    "line": 49,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/criteria-for-lp-membership/lintegral-eq-i-sup-lintegral-icc-inter.md",
+   "title": "Lebesgue integrals over truncations of a set",
+   "statement": "Let $\\lambda$ be Lebesgue measure on\n$\\mathbb{R}$, let $S \\subseteq \\mathbb{R}$ be measurable, and let $g : \\mathbb{R} \\to [0, \\infty]$\nbe measurable. Then\n\n$$\\int_S g \\, d\\lambda = \\sup_{n \\in \\mathbb{N}} \\int_{[-n, n] \\cap S} g \\, d\\lambda.$$\n\nThis is monotone convergence applied to the indicators of the truncations.",
+   "declaration": "MathlibExt.MeasureTheory.Function.MemLpTruncation.lintegral_eq_iSup_lintegral_Icc_inter",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/MemLpTruncation.lean",
+    "line": 41,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/criteria-for-lp-membership/mem-lp-iff-bdd-above-partition-average-s.md",
+   "title": "$L^p$ on $(0,1)$ via averages over partitions",
+   "statement": "Let $f : \\mathbb{R} \\to \\mathbb{R}$ be in\n$L^1([0, 1])$ and let $p > 1$ be a real number. Then $f \\in L^p([0, 1])$ if and only if there is\na real number $C$ such that\n\n$$\\sum_{i=0}^{n-1} (t_{i+1} - t_i)\n\\left(\\frac{1}{t_{i+1} - t_i} \\int_{t_i}^{t_{i+1}} |f(x)|\\,dx\\right)^p \\le C$$\n\nfor every partition $0 = t_0 < t_1 < \\dots < t_n = 1$ of $[0, 1]$. Here $L^1([0, 1])$ and\n$L^p([0, 1])$ are taken with respect to Lebesgue measure restricted to $[0, 1]$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_02`.",
+   "declaration": "MathlibExt.MeasureTheory.LpCharacterizationPartitionAveragesWanted.memLp_iff_bddAbove_partitionAverageSum",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/LpCharacterizationPartitionAveragesWanted.lean",
+    "line": 70,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/criteria-for-lp-membership/mem-lp-iff-i-sup-lintegral-icc-inter-lt.md",
+   "title": "Characterization of $L^p$ membership via truncated integrals",
+   "statement": "Let $\\lambda$ be Lebesgue\nmeasure on $\\mathbb{R}$, let $F$ be a second-countable normed additive commutative group with its\nBorel $\\sigma$-algebra, let $0 < p < \\infty$, let $S \\subseteq \\mathbb{R}$ be measurable, and let\n$f : \\mathbb{R} \\to F$ be measurable. Then $f$ belongs to $L^p$ of $\\lambda$ restricted to $S$ if\nand only if\n\n$$\\sup_{n \\in \\mathbb{N}} \\int_{[-n, n] \\cap S} \\|f(x)\\|^p \\, d\\lambda(x) < \\infty,$$\n\nwhere the integrals are taken in $[0, \\infty]$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.MemLpTruncation.memLp_iff_iSup_lintegral_Icc_inter_lt_top",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/MemLpTruncation.lean",
+    "line": 83,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/criteria-for-lp-membership/mem-lp-of-polynomial-decay-ae.md",
+   "title": "Polynomial decay implies $L^p$ membership",
+   "statement": "Let $E$ be a normed additive commutative group\nand let $f : \\mathbb{R} \\to E$ be almost everywhere strongly measurable. Suppose there are real\nnumbers $C \\ge 0$ and $q > 1$ such that $\\|f(x)\\| \\le C (1 + |x|)^{-q}$ for almost every\n$x \\in \\mathbb{R}$. Then $f \\in L^p(\\mathbb{R})$, with respect to Lebesgue measure, for every\n$p \\in [1, \\infty]$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.PolynomialDecay.memLp_of_polynomial_decay_ae",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/PolynomialDecayMemLp.lean",
+    "line": 40,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/criteria-for-lp-membership/mem-lp-of-polynomial-decay.md",
+   "title": "Pointwise polynomial decay implies $L^p$ membership",
+   "statement": "Let $E$ be a normed additive\ncommutative group and let $f : \\mathbb{R} \\to E$ be almost everywhere strongly measurable. Suppose\nthere are real numbers $C \\ge 0$ and $q > 1$ such that $\\|f(x)\\| \\le C (1 + |x|)^{-q}$ for every\n$x \\in \\mathbb{R}$. Then $f \\in L^p(\\mathbb{R})$, with respect to Lebesgue measure, for every\n$p \\in [1, \\infty]$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.PolynomialDecay.memLp_of_polynomial_decay",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/PolynomialDecayMemLp.lean",
+    "line": 103,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/criteria-for-lp-membership/partition-average-sum.md",
+   "title": "Partition average sum",
+   "statement": "For a function $f : \\mathbb{R} \\to \\mathbb{R}$, a real number $p$\nand real numbers $t_0, t_1, \\dots, t_n$, the partition average sum is\n\n$$\\sum_{i=0}^{n-1} (t_{i+1} - t_i)\n\\left(\\frac{1}{t_{i+1} - t_i} \\int_{[t_i, t_{i+1}]} |f(x)|\\,dx\\right)^p,$$\n\nwhere the integrals are Lebesgue integrals over the closed intervals $[t_i, t_{i+1}]$ (empty when\n$t_{i+1} < t_i$), the integral of a function that is not integrable there counts as $0$, $1/0 = 0$,\nand $0^p$ is taken to be $1$ when $p = 0$ and $0$ when $p \\ne 0$.",
+   "declaration": "MathlibExt.MeasureTheory.LpCharacterizationPartitionAveragesWanted.partitionAverageSum",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/LpCharacterizationPartitionAveragesWanted.lean",
+    "line": 54,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/dense-subspaces-of-lp-spaces/cutoff-approx-continuous.md",
+   "title": "Continuity of the cutoff approximants",
+   "statement": "Let $a, b \\in \\mathbb{R}$, let $E$ be a real\nnormed space and let $g_0 : \\mathbb{R} \\to E$ be continuous. Then for every $n \\in \\mathbb{N}$\nthe $n$-th cutoff approximant of $g_0$ with endpoints $a$ and $b$ is continuous.",
+   "declaration": "MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.cutoffApprox_continuous",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/VanishingEndpointsDenseLp.lean",
+    "line": 96,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/dense-subspaces-of-lp-spaces/cutoff-approx-eq-zero-left.md",
+   "title": "Cutoff approximants vanish at the left endpoint",
+   "statement": "Let $a, b \\in \\mathbb{R}$, let $E$ be a\nreal normed space and let $g_0 : \\mathbb{R} \\to E$ be any function. For every $n \\in \\mathbb{N}$,\nthe $n$-th cutoff approximant of $g_0$ with endpoints $a$ and $b$ takes the value $0$ at $a$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.cutoffApprox_eq_zero_left",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/VanishingEndpointsDenseLp.lean",
+    "line": 102,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/dense-subspaces-of-lp-spaces/cutoff-approx-eq-zero-right.md",
+   "title": "Cutoff approximants vanish at the right endpoint",
+   "statement": "Let $a, b \\in \\mathbb{R}$, let $E$ be a\nreal normed space and let $g_0 : \\mathbb{R} \\to E$ be any function. For every $n \\in \\mathbb{N}$,\nthe $n$-th cutoff approximant of $g_0$ with endpoints $a$ and $b$ takes the value $0$ at $b$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.cutoffApprox_eq_zero_right",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/VanishingEndpointsDenseLp.lean",
+    "line": 107,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/dense-subspaces-of-lp-spaces/cutoff-approx-mem-lp.md",
+   "title": "Cutoff approximants stay in $L^p$",
+   "statement": "Let $E$ be a real normed space, let $\\mu$ be a measure\non $\\mathbb{R}$, let $p \\in [0, \\infty]$, and let $g_0 : \\mathbb{R} \\to E$ be continuous with\n$g_0 \\in L^p(\\mu)$. Then for all $a, b \\in \\mathbb{R}$ and $n \\in \\mathbb{N}$, the $n$-th cutoff\napproximant of $g_0$ with endpoints $a$ and $b$ lies in $L^p(\\mu)$.\n\nThe approximant is pointwise dominated by $\\|g_0\\|$, since the cutoff factor takes values in\n$[0, 1]$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.cutoffApprox_memLp",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/VanishingEndpointsDenseLp.lean",
+    "line": 114,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/dense-subspaces-of-lp-spaces/cutoff-approx.md",
+   "title": "Cutoff approximants",
+   "statement": "Let $a, b \\in \\mathbb{R}$, let $E$ be a real normed space, let\n$g_0 : \\mathbb{R} \\to E$ and $n \\in \\mathbb{N}$, and put $\\delta_n = (b - a)/(n + 1)$. The $n$-th\ncutoff approximant of $g_0$ with endpoints $a$ and $b$ is the function\n$x \\mapsto \\varphi(x)\\, g_0(x)$, where $\\varphi$ is the vanishing cutoff factor with endpoints $a$,\n$b$ and width $\\delta_n$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.cutoffApprox",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/VanishingEndpointsDenseLp.lean",
+    "line": 92,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/dense-subspaces-of-lp-spaces/exists-continuous-vanishing-endpoints-e.md",
+   "title": "Continuous functions vanishing at the endpoints are dense in $L^p$ of a compact interval",
+   "statement": "Let $a < b$ be real numbers, let $1 \\le p < \\infty$ and let $E$ be a real normed space. Write\n$L^p([a, b])$ for $L^p$ with respect to Lebesgue measure restricted to $[a, b]$. For every\n$f : \\mathbb{R} \\to E$ in $L^p([a, b])$ and every $\\varepsilon \\in (0, \\infty]$, there is a\ncontinuous $g : \\mathbb{R} \\to E$ with $g(a) = g(b) = 0$, $g \\in L^p([a, b])$ and\n$\\|f - g\\|_{L^p([a, b])} < \\varepsilon$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.exists_continuous_vanishing_endpoints_eLpNorm_sub_lt",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/VanishingEndpointsDenseLp.lean",
+    "line": 143,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/dense-subspaces-of-lp-spaces/norm-sub-cutoff-approx-le.md",
+   "title": "Pointwise bound on the cutoff error",
+   "statement": "Let $a, b \\in \\mathbb{R}$, let $E$ be a real normed\nspace and let $g_0 : \\mathbb{R} \\to E$. If $g_n$ denotes the $n$-th cutoff approximant of $g_0$\nwith endpoints $a$ and $b$, then $\\|g_0(x) - g_n(x)\\| \\le \\|g_0(x)\\|$ for every\n$n \\in \\mathbb{N}$ and every $x \\in \\mathbb{R}$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.norm_sub_cutoffApprox_le",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/VanishingEndpointsDenseLp.lean",
+    "line": 125,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/dense-subspaces-of-lp-spaces/vanishing-cutoff-continuous.md",
+   "title": "Continuity of the vanishing cutoff factor",
+   "statement": "For all $a, b, \\delta \\in \\mathbb{R}$, the\nvanishing cutoff factor with endpoints $a$, $b$ and width $\\delta$ is a continuous function\n$\\mathbb{R} \\to \\mathbb{R}$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.vanishingCutoff_continuous",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/VanishingEndpointsDenseLp.lean",
+    "line": 66,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/dense-subspaces-of-lp-spaces/vanishing-cutoff-eq-one.md",
+   "title": "The vanishing cutoff factor equals one on its plateau",
+   "statement": "Let $a, b \\in \\mathbb{R}$ and\n$\\delta > 0$. For every real $x$ with $a + \\delta \\le x \\le b - \\delta$, the vanishing cutoff\nfactor with endpoints $a$, $b$ and width $\\delta$ takes the value $1$ at $x$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.vanishingCutoff_eq_one",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/VanishingEndpointsDenseLp.lean",
+    "line": 81,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/dense-subspaces-of-lp-spaces/vanishing-cutoff-eq-zero-left.md",
+   "title": "The vanishing cutoff factor vanishes at the left endpoint",
+   "statement": "For all\n$a, b, \\delta \\in \\mathbb{R}$, the vanishing cutoff factor with endpoints $a$, $b$ and width\n$\\delta$ takes the value $0$ at $a$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.vanishingCutoff_eq_zero_left",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/VanishingEndpointsDenseLp.lean",
+    "line": 71,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/dense-subspaces-of-lp-spaces/vanishing-cutoff-eq-zero-right.md",
+   "title": "The vanishing cutoff factor vanishes at the right endpoint",
+   "statement": "For all real numbers $a$, $b$ and $\\delta$, the vanishing cutoff factor with endpoints $a$, $b$\nand width $\\delta$ takes the value $0$ at $b$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.vanishingCutoff_eq_zero_right",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/VanishingEndpointsDenseLp.lean",
+    "line": 76,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/dense-subspaces-of-lp-spaces/vanishing-cutoff-le-one.md",
+   "title": "The vanishing cutoff factor is at most one",
+   "statement": "For all real numbers $a$, $b$, $\\delta$\nand $x$, the value at $x$ of the vanishing cutoff factor with endpoints $a$, $b$ and width\n$\\delta$ is at most $1$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.vanishingCutoff_le_one",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/VanishingEndpointsDenseLp.lean",
+    "line": 61,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/dense-subspaces-of-lp-spaces/vanishing-cutoff-nonneg.md",
+   "title": "The vanishing cutoff factor is nonnegative",
+   "statement": "For all real numbers $a$, $b$, $\\delta$\nand $x$, the value at $x$ of the vanishing cutoff factor with endpoints $a$, $b$ and width\n$\\delta$ is at least $0$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.vanishingCutoff_nonneg",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/VanishingEndpointsDenseLp.lean",
+    "line": 56,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/dense-subspaces-of-lp-spaces/vanishing-cutoff.md",
+   "title": "Vanishing cutoff factor",
+   "statement": "For real numbers $a$, $b$, $\\delta$ and $x$, the value at $x$\nof the vanishing cutoff factor with endpoints $a$, $b$ and width $\\delta$ is\n$\\max\\bigl(0, \\min\\bigl(1, \\min((x - a)/\\delta, (b - x)/\\delta)\\bigr)\\bigr)$, where division\nby $0$ is read as $0$.\n\nIt vanishes at $a$ and at $b$. For $\\delta > 0$ it equals $1$ on $[a + \\delta, b - \\delta]$,\nan interval that is nonempty when $2\\delta \\le b - a$. At $\\delta = 0$ it is identically\nzero.",
+   "declaration": "MathlibExt.MeasureTheory.Function.VanishingEndpointsDenseLp.vanishingCutoff",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/VanishingEndpointsDenseLp.lean",
+    "line": 52,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/essential-supremum/e-lp-norm-ess-sup-eq-enorm-continuous-ma.md",
+   "title": "Essential supremum of a continuous map",
+   "statement": "Let $\\alpha$ be a compact topological space with\nits Borel $\\sigma$-algebra, let $\\mu$ be a measure on $\\alpha$ that is positive on every nonempty\nopen set, let $E$ be a seminormed additive commutative group, and let $f : \\alpha \\to E$ be\ncontinuous. Then the essential supremum of $\\|f\\|$ with respect to $\\mu$ equals the supremum norm\n$\\sup_{x \\in \\alpha} \\|f(x)\\|$ of $f$, as an equality in $[0, \\infty]$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.EssSupContinuousMap.eLpNormEssSup_eq_enorm_continuousMap",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/EssSupContinuousMap.lean",
+    "line": 42,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/essential-supremum/e-lp-norm-top-eq-enorm-continuous-map.md",
+   "title": "The $L^\\infty$ norm of a continuous map is its supremum norm",
+   "statement": "Let $\\alpha$ be a compact\ntopological space with its Borel $\\sigma$-algebra, let $\\mu$ be a measure on $\\alpha$ that is\npositive on every nonempty open set, let $E$ be a seminormed additive commutative group such that\n$\\alpha$ or $E$ is second-countable, and let $f : \\alpha \\to E$ be continuous. Then\n$\\|f\\|_{L^\\infty(\\mu)} = \\sup_{x \\in \\alpha} \\|f(x)\\|$, as an equality in $[0, \\infty]$.",
+   "declaration": "MathlibExt.MeasureTheory.Function.EssSupContinuousMap.eLpNorm_top_eq_enorm_continuousMap",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Function/EssSupContinuousMap.lean",
+    "line": 69,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/essential-supremum/e-lp-norm-top-le-of-forall-one-le-e-lp-n.md",
+   "title": "Uniform $L^p$ bounds on $(0,1)$ give the same $L^\\infty$ bound",
+   "statement": "Let $M$ be a real number,\nwrite $M^+ = \\max(M, 0)$, and let $f_0, f_1, f_2, \\dots : \\mathbb{R} \\to \\mathbb{R}$ be functions\nthat are almost everywhere strongly measurable with respect to Lebesgue measure restricted to\n$[0,1]$. If $\\|f_n\\|_{L^p[0,1]} \\le M^+$ for every $n$ and every real $p \\ge 1$, then\n$\\|f_n\\|_{L^\\infty[0,1]} \\le M^+$ for every $n$. All norms are taken with respect to Lebesgue\nmeasure restricted to $[0,1]$ and may be infinite.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l2_52`.",
+   "declaration": "MathlibExt.MeasureTheory.LinftyNormLeSupLpNormUnitIntervalWanted.eLpNorm_top_le_of_forall_one_le_eLpNorm_le",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/LinftyNormLeSupLpNormUnitIntervalWanted.lean",
+    "line": 56,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/essential-supremum/tendsto-e-lp-norm-at-top-e-lp-norm-top-o.md",
+   "title": "The $L^p$ norm tends to the $L^\\infty$ norm",
+   "statement": "Let $\\mu$ be a finite measure on a measurable\nspace $\\alpha$ and let $f \\colon \\alpha \\to \\mathbb{R}$ be essentially bounded,\n$f \\in L^\\infty(\\mu)$. Then $\\|f\\|_{L^p(\\mu)} \\to \\|f\\|_{L^\\infty(\\mu)}$ as the real exponent\n$p$ tends to $\\infty$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l1_42`.",
+   "declaration": "MathlibExt.Analysis.FunctionalAnalysis.LpNormTendstoEssSupWanted.tendsto_eLpNorm_atTop_eLpNorm_top_of_isFiniteMeasure",
+   "lean": {
+    "file": "WantedExt/Analysis/FunctionalAnalysis/LpNormTendstoEssSupWanted.lean",
+    "line": 53,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/inclusions-between-lp-spaces/mem-lp-of-mem-lp-of-lintegral-rpow-lt-to.md",
+   "title": "An $L^p$ function with finite $L^q$ mass on finite-measure sets is in $L^q$",
+   "statement": "Let\n$1 \\le p < q < \\infty$ and let $f : \\mathbb{R} \\to \\mathbb{R}$ belong to $L^p(\\mathbb{R})$. If\n$\\int_A |f|^q < \\infty$ for every Borel set $A \\subseteq \\mathbb{R}$ of finite Lebesgue measure,\nthen $f \\in L^q(\\mathbb{R})$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l2_24`.",
+   "declaration": "MathlibExt.MeasureTheory.MemLpOfLqIntegrableOnFiniteMeasureSetsWanted.memLp_of_memLp_of_lintegral_rpow_lt_top_of_measure_lt_top",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/MemLpOfLqIntegrableOnFiniteMeasureSetsWanted.lean",
+    "line": 52,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/inclusions-between-lp-spaces/mem-lp-two-and-e-lp-norm-two-le-of-bound.md",
+   "title": "A bounded integrable function is square integrable",
+   "statement": "Let $d$ be a natural number, let\n$M \\ge 0$, and let $f \\colon \\mathbb{R}^d \\to \\mathbb{R}$ satisfy $|f(x)| \\le M$ for every\n$x \\in \\mathbb{R}^d$. If $f \\in L^1(\\mathbb{R}^d)$, then $f \\in L^2(\\mathbb{R}^d)$ and\n\n$$\\|f\\|_{L^2(\\mathbb{R}^d)} \\le M^{1/2} \\, \\|f\\|_{L^1(\\mathbb{R}^d)}^{1/2},$$\n\nwhere the spaces and norms are taken with respect to Lebesgue measure.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l1_41`.",
+   "declaration": "MathlibExt.Analysis.FunctionalAnalysis.BoundedL1MemL2NormBoundWanted.memLp_two_and_eLpNorm_two_le_of_bounded_of_memLp_one",
+   "lean": {
+    "file": "WantedExt/Analysis/FunctionalAnalysis/BoundedL1MemL2NormBoundWanted.lean",
+    "line": 55,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/inclusions-between-lp-spaces/not-mem-lp-two-subset-one-and-not-mem-lp.md",
+   "title": "$L^1(\\mathbb{R}^d)$ and $L^2(\\mathbb{R}^d)$ are incomparable",
+   "statement": "Let $d \\ge 1$. With respect\nto Lebesgue measure on $\\mathbb{R}^d$, there is a function $f : \\mathbb{R}^d \\to \\mathbb{R}$ in\n$L^2(\\mathbb{R}^d)$ that is not in $L^1(\\mathbb{R}^d)$, and there is a function\n$g : \\mathbb{R}^d \\to \\mathbb{R}$ in $L^1(\\mathbb{R}^d)$ that is not in $L^2(\\mathbb{R}^d)$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l1_97`.",
+   "declaration": "MathlibExt.MeasureTheory.LpTwoLpOneIncomparableWanted.not_memLp_two_subset_one_and_not_memLp_one_subset_two",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/LpTwoLpOneIncomparableWanted.lean",
+    "line": 51,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/integral-abs-rpow-sub-rpow-le-integral-r.md",
+   "title": "An integral inequality for $p$-th powers with $0 < p < 1$",
+   "statement": "Let $\\mu$ be a measure on a\nmeasurable space and let $0 < p < 1$. Then for all real-valued $f, g \\in L^p(\\mu)$,\n\n$$\\int \\bigl||f|^p - |g|^p\\bigr|\\,d\\mu \\le \\int |f - g|^p\\,d\\mu.$$\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l1_53`.",
+   "declaration": "MathlibExt.MeasureTheory.LpSubadditivePowLtOneWanted.integral_abs_rpow_sub_rpow_le_integral_rpow_abs_sub",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/LpSubadditivePowLtOneWanted.lean",
+    "line": 57,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/reverse-h-lder-inequality/exists-tendsto-at-top-inf-measure-level.md",
+   "title": "Uniformly large level sets under a reverse Hölder bound",
+   "statement": "Let $\\mu$ be Lebesgue measure\non $[0,1]$, and let $f_0, f_1, f_2, \\ldots : \\mathbb{R} \\to \\mathbb{R}$ lie in $L^2(\\mu)$ with\n$\\|f_n\\|_{L^2(\\mu)} \\le 2024\\,\\|f_n\\|_{L^1(\\mu)}$ for every $n$ and\n$\\|f_n\\|_{L^1(\\mu)} \\to \\infty$ as $n \\to \\infty$. Then there is a sequence of real numbers\n$y_n \\to \\infty$ such that\n\n$$\n\\inf_n \\mu(\\{x : |f_n(x)| \\ge y_n\\}) > 0.\n$$\n\nThe divergence hypothesis is the limit $\\|f_n\\|_{L^1(\\mu)} \\to \\infty$ in $[0,\\infty]$; the\nformal source instead required $\\|f_n\\|_{L^1(\\mu)} = \\infty$ for all large $n$, which no function\nin $L^2(\\mu)$ satisfies, so its statement was vacuous.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_04`, with the change above.",
+   "declaration": "MathlibExt.MeasureTheory.LargeLevelSetReverseHolderWanted.exists_tendsto_atTop_inf_measure_levelSet_pos",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/LargeLevelSetReverseHolderWanted.lean",
+    "line": 69,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/reverse-h-lder-inequality/icc01.md",
+   "title": "Lebesgue measure on the unit interval",
+   "statement": "The measure on $\\mathbb{R}$ that assigns to each\nset $A \\subseteq \\mathbb{R}$ the Lebesgue measure of $A \\cap [0,1]$.",
+   "declaration": "MathlibExt.MeasureTheory.LargeLevelSetReverseHolderWanted.μIcc01",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/LargeLevelSetReverseHolderWanted.lean",
+    "line": 50,
+    "kind": "abbrev",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/weak-convergence-in-lp-spaces/ae-nonneg-of-weak-tendsto-of-ae-nonneg.md",
+   "title": "Weak $L^p$ limits of nonnegative functions are nonnegative",
+   "statement": "Let $1 < p < \\infty$\nand write $L^p([0,1])$ for the Lebesgue space of real functions on $[0,1]$ with Lebesgue measure.\nLet $(f_n)_{n \\in \\mathbb{N}}$ be a sequence in $L^p([0,1])$ such that for each $n$,\n$f_n(x) \\ge 0$ for almost every $x \\in [0,1]$, and let $f \\in L^p([0,1])$. If $f_n$ converges\nweakly to $f$, that is, $\\ell(f_n) \\to \\ell(f)$ for every continuous linear functional\n$\\ell : L^p([0,1]) \\to \\mathbb{R}$, then $f(x) \\ge 0$ for almost every $x \\in [0,1]$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Normed linear spaces and Banach spaces; Banach lattices), problem `ma_proofbench_l2_16`.",
+   "declaration": "MathlibExt.Analysis.FunctionalAnalysis.WeakLimitOfNonnegLpNonnegWanted.ae_nonneg_of_weak_tendsto_of_ae_nonneg",
+   "lean": {
+    "file": "WantedExt/Analysis/FunctionalAnalysis/WeakLimitOfNonnegLpNonnegWanted.lean",
+    "line": 56,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/weak-convergence-in-lp-spaces/i01.md",
+   "title": "Lebesgue measure on $(0,1)$",
+   "statement": "The measure on $\\mathbb{R}$ obtained by restricting\nLebesgue measure to the open interval $(0, 1)$.",
+   "declaration": "MathlibExt.Analysis.FunctionalAnalysis.WeakConvergenceOfBoundedAeNullLpWanted.μI01",
+   "lean": {
+    "file": "WantedExt/Analysis/FunctionalAnalysis/WeakConvergenceOfBoundedAeNullLpWanted.lean",
+    "line": 48,
+    "kind": "abbrev",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/weak-convergence-in-lp-spaces/tendsto-integral-mul-of-ae-tendsto-of-e.md",
+   "title": "Bounded almost everywhere convergent sequences in $L^p$, $1 < p < \\infty$, converge weakly",
+   "statement": "**Bounded almost everywhere convergent sequences in $L^p$, $1 < p < \\infty$, converge\nweakly.** Let $1 < p < \\infty$ and let $q$ be the conjugate exponent, $1/p + 1/q = 1$. Let $f$\nand $f_0, f_1, f_2, \\dots$ be real-valued functions in $L^p(\\mathbb{R})$ such that $f_n \\to f$\nalmost everywhere and $\\sup_n \\|f_n\\|_{L^p} < \\infty$. Then $f_n$ converges weakly to $f$: for\nevery $g \\in L^q(\\mathbb{R})$,\n\n$$\n\\lim_{n\\to\\infty}\\int_{\\mathbb{R}} f_n g\\,dx=\\int_{\\mathbb{R}} f g\\,dx.\n$$\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Normed linear spaces and Banach spaces; Banach lattices), problem `ma_proofbench_l2_82`.",
+   "declaration": "MathlibExt.MeasureTheory.WeakLpConvergenceOfAeConvergenceWanted.tendsto_integral_mul_of_ae_tendsto_of_eLpNorm_bounded",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/WeakLpConvergenceOfAeConvergenceWanted.lean",
+    "line": 57,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/lp-spaces/weak-convergence-in-lp-spaces/tendsto-integral-mul-of-ae-tendsto-zero.md",
+   "title": "Bounded a.e.-null sequences in $L^p(0,1)$ converge weakly to zero",
+   "statement": "Let $1 < p < \\infty$\nand let $q$ be the conjugate exponent, so that $1/p + 1/q = 1$. Write $L^p(0,1)$ and $L^q(0,1)$\nfor the Lebesgue spaces of real functions on $(0,1)$ with Lebesgue measure. Let\n$(f_n)_{n \\in \\mathbb{N}}$ be a sequence in $L^p(0,1)$ with $\\|f_n\\|_{L^p} \\le 1$ for every $n$\nand $f_n(x) \\to 0$ for almost every $x \\in (0,1)$. Then for every $g \\in L^q(0,1)$,\n\n$$\n\\int_0^1 f_n(x)\\, g(x)\\, dx \\to 0 \\quad (n \\to \\infty).\n$$\n\nSince $L^q(0,1)$ is the dual of $L^p(0,1)$, this says that $(f_n)$ converges weakly to $0$ in\n$L^p(0,1)$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Normed linear spaces and Banach spaces; Banach lattices), problem `ma_proofbench_l2_10`.",
+   "declaration": "MathlibExt.Analysis.FunctionalAnalysis.WeakConvergenceOfBoundedAeNullLpWanted.tendsto_integral_mul_of_ae_tendsto_zero_of_eLpNorm_le_one",
+   "lean": {
+    "file": "WantedExt/Analysis/FunctionalAnalysis/WeakConvergenceOfBoundedAeNullLpWanted.lean",
+    "line": 58,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/atomless-measures/is-atomless-exists-subset-measure-eq.md",
+   "title": "Sierpiński's theorem on atomless measures",
+   "statement": "Let $\\mu$ be a finite atomless measure. For\nevery measurable set $s$ and every $t \\in [0, \\infty]$ with $t \\le \\mu(s)$, there is a measurable\nset $u \\subseteq s$ with $\\mu(u) = t$.",
+   "declaration": "MeasureTheory.isAtomless_exists_subset_measure_eq",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/Atomless.lean",
+    "line": 248,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/atomless-measures/is-atomless-restrict.md",
+   "title": "Restriction of an atomless measure",
+   "statement": "The restriction of an atomless measure to a\nmeasurable set is atomless.",
+   "declaration": "MeasureTheory.isAtomless_restrict",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/Atomless.lean",
+    "line": 37,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/atomless-measures/is-atomless.md",
+   "title": "Atomless measure",
+   "statement": "A measure $\\mu$ on a measurable space is atomless when every\nmeasurable set $s$ with $\\mu(s) > 0$ contains a measurable subset $t \\subseteq s$ with\n$0 < \\mu(t) < \\mu(s)$.",
+   "declaration": "MeasureTheory.IsAtomless",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/Atomless.lean",
+    "line": 32,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/banach-tarski-paradox/banach-tarski-closed-ball-unit.md",
+   "title": "Banach–Tarski paradox for the closed unit ball",
+   "statement": "In three-dimensional Euclidean space\n$\\mathbb{R}^3$, write $\\bar B(c, r)$ for the closed ball of radius $r$ about $c$. There are points\n$c_1, c_2 \\in \\mathbb{R}^3$ such that $\\bar B(c_1, 1)$ and $\\bar B(c_2, 1)$ are disjoint and the\nclosed unit ball $\\bar B(0, 1)$ is finitely equidecomposable by isometries with\n$\\bar B(c_1, 1) \\cup \\bar B(c_2, 1)$.\n\n## Sources\n\n- S. Banach and A. Tarski, Fund. Math. 6 (1924) 244–277 original paradox; S. Wagon, The Banach–Tarski Paradox, Cambridge Univ. Press (1993); Lean states closed unit ball duplication specialization in ℝ³ with ambient `≃ᵢ` equidecomposability.",
+   "declaration": "MathlibExt.MeasureTheory.Geometry.BanachTarskiWanted.banach_tarski_closedBall_unit",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Geometry/BanachTarski.lean",
+    "line": 2423,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/banach-tarski-paradox/finitely-equidecomposable-by-isometries-2.md",
+   "title": "Equidecomposability via piecewise-isometric bijections",
+   "statement": "Let $A$ and $B$ be subsets of a\nmetric space $X$. Then $A$ is finitely equidecomposable by isometries with $B$ if and only if\nthere are a map $f : X \\to X$ and a finite set $S$ of isometric bijections of $X$ onto itself\nsuch that $f$ restricts to a bijection from $A$ onto $B$ and for every $x \\in A$ there is\n$g \\in S$ with $f(x) = g(x)$.",
+   "declaration": "MathlibExt.MeasureTheory.Geometry.BanachTarskiWanted.finitelyEquidecomposableByIsometries_iff_bijOn",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Geometry/BanachTarski.lean",
+    "line": 2366,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/banach-tarski-paradox/finitely-equidecomposable-by-isometries.md",
+   "title": "Finite equidecomposability by isometries",
+   "statement": "Let $X$ be a metric space. Subsets $A$ and $B$\nof $X$ are finitely equidecomposable by isometries if there are a natural number $n$, sets\n$A_1, \\dots, A_n$ and $B_1, \\dots, B_n$ in $X$, and isometric bijections $g_1, \\dots, g_n$ of\n$X$ onto itself such that the sets $A_i$ are pairwise disjoint, the sets $B_i$ are pairwise\ndisjoint, $A = A_1 \\cup \\dots \\cup A_n$, $B = B_1 \\cup \\dots \\cup B_n$, and $g_i(A_i) = B_i$\nfor every $i$.",
+   "declaration": "MathlibExt.MeasureTheory.Geometry.BanachTarskiWanted.FinitelyEquidecomposableByIsometries",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Geometry/BanachTarski.lean",
+    "line": 2201,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/banach-tarski-paradox/image-isometry-equiv.md",
+   "title": "Equidecomposability of a set with its isometric image",
+   "statement": "Let $g$ be an isometric bijection\nof a metric space $X$ onto itself. Then every subset $A$ of $X$ is finitely equidecomposable by\nisometries with its image $g(A)$.",
+   "declaration": "MathlibExt.MeasureTheory.Geometry.BanachTarskiWanted.FinitelyEquidecomposableByIsometries.image_isometryEquiv",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Geometry/BanachTarski.lean",
+    "line": 2406,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/banach-tarski-paradox/refl.md",
+   "title": "Finite equidecomposability by isometries is reflexive",
+   "statement": "Every subset $A$ of a metric\nspace $X$ is finitely equidecomposable by isometries with itself.",
+   "declaration": "MathlibExt.MeasureTheory.Geometry.BanachTarskiWanted.FinitelyEquidecomposableByIsometries.refl",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Geometry/BanachTarski.lean",
+    "line": 2380,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/banach-tarski-paradox/symm.md",
+   "title": "Finite equidecomposability by isometries is symmetric",
+   "statement": "Let $A$ and $B$ be subsets of a\nmetric space $X$. If $A$ is finitely equidecomposable by isometries with $B$, then $B$ is\nfinitely equidecomposable by isometries with $A$.",
+   "declaration": "MathlibExt.MeasureTheory.Geometry.BanachTarskiWanted.FinitelyEquidecomposableByIsometries.symm",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Geometry/BanachTarski.lean",
+    "line": 2385,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/banach-tarski-paradox/trans.md",
+   "title": "Finite equidecomposability by isometries is transitive",
+   "statement": "Let $A$, $B$ and $C$ be subsets\nof a metric space $X$. If $A$ is finitely equidecomposable by isometries with $B$ and $B$ is\nfinitely equidecomposable by isometries with $C$, then $A$ is finitely equidecomposable by\nisometries with $C$.",
+   "declaration": "MathlibExt.MeasureTheory.Geometry.BanachTarskiWanted.FinitelyEquidecomposableByIsometries.trans",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Geometry/BanachTarski.lean",
+    "line": 2391,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/banach-tarski-paradox/union.md",
+   "title": "Finite equidecomposability by isometries respects disjoint unions",
+   "statement": "Let $A_1$, $A_2$,\n$B_1$ and $B_2$ be subsets of a metric space $X$ with $A_1 \\cap A_2 = \\emptyset$ and\n$B_1 \\cap B_2 = \\emptyset$. If $A_1$ is finitely equidecomposable by isometries with $B_1$ and\n$A_2$ is finitely equidecomposable by isometries with $B_2$, then $A_1 \\cup A_2$ is finitely\nequidecomposable by isometries with $B_1 \\cup B_2$.",
+   "declaration": "MathlibExt.MeasureTheory.Geometry.BanachTarskiWanted.FinitelyEquidecomposableByIsometries.union",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Geometry/BanachTarski.lean",
+    "line": 2398,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/carath-odory-s-extension-theorem/caratheodory-extension-theorem.md",
+   "title": "Carathéodory extension theorem",
+   "statement": "Let $\\mathcal{A}$ be an algebra of sets on $\\alpha$ and\nlet $\\mu_0$ be an additive content on $\\mathcal{A}$ with values in $[0, \\infty]$ that is\n$\\sigma$-subadditive: whenever $s_0, s_1, \\dots \\in \\mathcal{A}$ and\n$\\bigcup_i s_i \\in \\mathcal{A}$, we have $\\mu_0(\\bigcup_i s_i) \\le \\sum_i \\mu_0(s_i)$. Suppose\nthere are sets $B_0, B_1, \\dots \\in \\mathcal{A}$ with $\\bigcup_i B_i = \\alpha$ and\n$\\mu_0(B_i) < \\infty$ for every $i$. Then there is exactly one measure $\\mu$ on the\n$\\sigma$-algebra $\\sigma(\\mathcal{A})$ generated by $\\mathcal{A}$ such that\n$\\mu(s) = \\mu_0(s)$ for every $s \\in \\mathcal{A}$.",
+   "declaration": "MeasureTheory.caratheodory_extension_theorem",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/CaratheodoryExtension.lean",
+    "line": 96,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/carath-odory-s-extension-theorem/exists-measure-extension.md",
+   "title": "Existence of the Carathéodory extension",
+   "statement": "Let $\\mathcal{A}$ be an algebra of sets on\n$\\alpha$ and let $\\mu_0$ be an additive content on $\\mathcal{A}$ with values in $[0, \\infty]$\nthat is $\\sigma$-subadditive: whenever $s_0, s_1, \\dots \\in \\mathcal{A}$ and\n$\\bigcup_i s_i \\in \\mathcal{A}$, we have $\\mu_0(\\bigcup_i s_i) \\le \\sum_i \\mu_0(s_i)$. Then there\nis a measure $\\mu$ on the $\\sigma$-algebra $\\sigma(\\mathcal{A})$ generated by $\\mathcal{A}$ such\nthat $\\mu(s) = \\mu_0(s)$ for every $s \\in \\mathcal{A}$.",
+   "declaration": "MeasureTheory.exists_measure_extension",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/CaratheodoryExtension.lean",
+    "line": 82,
+    "kind": "lemma",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/carath-odory-s-extension-theorem/is-set-algebra-is-pi-system.md",
+   "title": "Every algebra of sets is a π-system",
+   "statement": "If $\\mathcal{A}$ is an algebra of sets on $\\alpha$,\nthen $\\mathcal{A}$ is a $\\pi$-system: for all $s, t \\in \\mathcal{A}$ with $s \\cap t$ nonempty, we\nhave $s \\cap t \\in \\mathcal{A}$.",
+   "declaration": "MeasureTheory.isSetAlgebra_isPiSystem",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/CaratheodoryExtension.lean",
+    "line": 76,
+    "kind": "lemma",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/carath-odory-s-extension-theorem/is-set-semiring-of-is-set-algebra.md",
+   "title": "Every algebra of sets is a semiring of sets",
+   "statement": "If $\\mathcal{A}$ is an algebra of sets on\n$\\alpha$, then $\\mathcal{A}$ is a semiring of sets: $\\emptyset \\in \\mathcal{A}$, $s \\cap t \\in\n\\mathcal{A}$ for all $s, t \\in \\mathcal{A}$, and for all $s, t \\in \\mathcal{A}$ the difference\n$s \\setminus t$ is the union of finitely many pairwise disjoint members of $\\mathcal{A}$.",
+   "declaration": "MeasureTheory.isSetSemiring_of_isSetAlgebra",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/CaratheodoryExtension.lean",
+    "line": 69,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/are-congruent.md",
+   "title": "Congruent plane sets",
+   "statement": "Two sets $E$ and $F$ in the Euclidean plane $\\mathbb{R}^2$ are\ncongruent when some isometry of the plane onto itself maps $E$ onto $F$.",
+   "declaration": "MathlibExt.MeasureTheory.ScottishBook169Wanted.AreCongruent",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ScottishBook169Wanted.lean",
+    "line": 29,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/countably-additive-congruence-claim.md",
+   "title": "Problem of a congruence-invariant countably additive plane measure",
+   "statement": "The countably additive reading of Problem 169: there is a function\n`μ`, defined for all plane sets, equal on congruent sets, countably\nadditive, extending the Caratheodory linear measure (read as Lebesgue\nvolume on measurable sets), with values in `[0, +∞]` (automatic for\n`ENNReal`).",
+   "declaration": "MathlibExt.MeasureTheory.ScottishBook169Wanted.CountablyAdditiveCongruenceClaim",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ScottishBook169Wanted.lean",
+    "line": 48,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/is-congruence-invariant.md",
+   "title": "Congruence-invariant set functions on the plane",
+   "statement": "A function $\\mu$ that assigns to every\nsubset of the Euclidean plane $\\mathbb{R}^2$ a value in $[0, \\infty]$ is congruence invariant when\n$\\mu(E) = \\mu(F)$ for all congruent plane sets $E$ and $F$.",
+   "declaration": "MathlibExt.MeasureTheory.ScottishBook169Wanted.IsCongruenceInvariant",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ScottishBook169Wanted.lean",
+    "line": 33,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/is-countably-additive.md",
+   "title": "Countably additive set function",
+   "statement": "`μ` is countably additive on pairwise-disjoint families. This is the\ncountably-additive reading of \"additive\" in Problem 169; the typescript\ndoes not say whether finite or countable additivity is meant.",
+   "declaration": "MathlibExt.MeasureTheory.ScottishBook169Wanted.IsCountablyAdditive",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ScottishBook169Wanted.lean",
+    "line": 39,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/no-countably-additive-congruence-measure.md",
+   "title": "No countably additive congruence-invariant measure on all plane sets",
+   "statement": "The countably additive reading is false in ZFC. Sketch: let\n`V₀ ⊆ [0,1]` meet each `ℚ`-coset of `ℝ` exactly once (Vitali selector)\nand put `V = V₀ × [0,1]`. Enumerating `ℚ ∩ [-1,1]` as `(qₙ)`, the\ntranslates `Tₙ = V + (qₙ, 0)` are pairwise disjoint, each congruent to\n`V`, so all have the same mass `c = μ V`. Their union contains the unit\nsquare `Q = [0,1] × [0,1]` and lies in the strip `[-1,2] × [0,1]` of\nvolume 3, so countable additivity and monotonicity give\n`1 = μ Q ≤ μ U ≤ 3`, while countable additivity also gives\n`μ U = ∑'ₙ c`, which is `0` if `c = 0` and `+∞` if `c > 0`, a\ncontradiction. Hence no such `μ` exists. This refutes the countably\nadditive formalization only. The typescript says bare \"additive\"; the\nfinite-additivity reading is Banach's 1923 theorem (a Banach measure: a\nfinitely additive, isometry-invariant function on all plane sets\nextending Lebesgue measure), not this claim, and is not asserted here.\n\n## Sources\n\n- E. Szpilrajn, Problem 169 of the Scottish Book; typescript PDF p.78, printed p.75. Banach, Fund. Math. 4 (1923), 7-33.",
+   "declaration": "MathlibExt.MeasureTheory.ScottishBook169Wanted.no_countably_additive_congruence_measure",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ScottishBook169Wanted.lean",
+    "line": 72,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/independent-bases-of-atomless-measures/is-base.md",
+   "title": "Base of a measure",
+   "statement": "Let $\\mu$ be a measure on a measurable space $X$. A class $B$ of\nsubsets of $X$ is a base of $\\mu$ if every set in $B$ is measurable, $B$ is stochastically\nindependent with respect to $\\mu$, and every measurable set $A \\subseteq X$ agrees up to a null\nset with a set $C$ in the $\\sigma$-algebra generated by $B$, that is, $\\mu(A \\triangle C) = 0$.",
+   "declaration": "MathlibExt.MeasureTheory.ScottishBook191Wanted.IsBase",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ScottishBook191Wanted.lean",
+    "line": 39,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/independent-bases-of-atomless-measures/is-convex-measure.md",
+   "title": "Convex measure",
+   "statement": "A measure $\\mu$ on a measurable space $X$ is convex (in Fréchet's sense,\n\"sans singularités\") if $\\mu(X) = 1$ and every measurable set $A$ with $\\mu(A) > 0$ contains a\nmeasurable subset $B$ with $0 < \\mu(B) < \\mu(A)$.",
+   "declaration": "MathlibExt.MeasureTheory.ScottishBook191Wanted.IsConvexMeasure",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ScottishBook191Wanted.lean",
+    "line": 22,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/independent-bases-of-atomless-measures/is-independent-class.md",
+   "title": "Stochastically independent class of sets",
+   "statement": "Let $\\mu$ be a measure on a measurable space\n$X$. A class $B$ of subsets of $X$ is stochastically independent with respect to $\\mu$ if for\nevery finite collection of distinct sets $A_1, \\dots, A_n$ in $B$, including the empty one,\n$\\mu(A_1 \\cap \\dots \\cap A_n) = \\mu(A_1) \\cdots \\mu(A_n)$. The empty intersection is $X$ and the\nempty product is $1$, so this forces $\\mu(X) = 1$. The sets in $B$ need not be measurable; on\nsuch sets $\\mu$ is the outer measure.",
+   "declaration": "MathlibExt.MeasureTheory.ScottishBook191Wanted.IsIndependentClass",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ScottishBook191Wanted.lean",
+    "line": 30,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/independent-bases-of-atomless-measures/scottish-book-problem191-claim.md",
+   "title": "The claim of Szpilrajn's Problem 191",
+   "statement": "The proposition, Szpilrajn's Problem 191 from the\nScottish Book in its original form, that for every measurable space $X$, every convex measure\n$\\mu$ on $X$ has a base, that is, some class $B$ of subsets of $X$ is a base of $\\mu$.",
+   "declaration": "MathlibExt.MeasureTheory.ScottishBook191Wanted.ScottishBookProblem191Claim",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ScottishBook191Wanted.lean",
+    "line": 48,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/independent-bases-of-atomless-measures/szpilrajn191-refuted.md",
+   "title": "Szpilrajn's Problem 191 has a negative answer",
+   "statement": "The claim of Szpilrajn's Problem 191 is false:\nnot every convex measure possesses a base. That is, there are a measurable space $X$ and a convex\nmeasure $\\mu$ on $X$ such that no class of subsets of $X$ is a base of $\\mu$.\n\nA non-atomic (convex) measure has a base if and only if its\nmeasure algebra is homogeneous, and the direct sum of Lebesgue measure\nspaces gives a counterexample whose measure algebra is not homogeneous.\n\n## Sources\n\n- E. Szpilrajn, Problem 191 of the Scottish Book; the sets `B n` of numbers in `[0, 1]` whose `n`-th binary digit is `1` form a base for Lebesgue measure on `[0, 1]`. See the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).",
+   "declaration": "MathlibExt.MeasureTheory.ScottishBook191Wanted.szpilrajn191_refuted",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ScottishBook191Wanted.lean",
+    "line": 62,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/lyapunov-convexity-theorem/lyapunov-convexity.md",
+   "title": "Lyapunov convexity theorem",
+   "statement": "Let $\\mu$ be a finite atomless measure on a measurable space\n$\\alpha$, let $E$ be a finite-dimensional real normed space, and let $f : \\alpha \\to E$ be Bochner\nintegrable with respect to $\\mu$. Then the Lyapunov range of $f$ with respect to $\\mu$, the set of\nintegrals $\\int_s f \\, d\\mu$ over measurable sets $s \\subseteq \\alpha$, is compact and convex.\n\n## Sources\n\n- A. Lyapunov, Izv. Akad. Nauk SSSR 4 (1940) 465–478; Diestel-Uhl, Vector Measures; Lean states atomless finite measure case with Bochner integrable finite-dim integrand, infinite-dim fails.",
+   "declaration": "MathlibExt.MeasureTheory.Integral.LyapunovConvexityWanted.lyapunov_convexity",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Integral/LyapunovConvexity.lean",
+    "line": 1802,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/lyapunov-convexity-theorem/lyapunov-range.md",
+   "title": "Lyapunov range",
+   "statement": "For a measure $\\mu$ on a measurable space $\\alpha$ and a function\n$f : \\alpha \\to E$ into a real normed space $E$, the Lyapunov range of $f$ with respect to $\\mu$ is\nthe set $\\lbrace \\int_s f \\, d\\mu : s \\subseteq \\alpha \\text{ measurable} \\rbrace$ of integrals of\n$f$ over measurable subsets of $\\alpha$.\n\nHere $\\int_s f \\, d\\mu$ is the Bochner integral, which is $0$ when $f$ is not integrable on $s$\nor when $E$ is not complete.",
+   "declaration": "MathlibExt.MeasureTheory.Integral.LyapunovConvexityWanted.lyapunovRange",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Integral/LyapunovConvexity.lean",
+    "line": 47,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/measures-on-complete-boolean-algebras/is-von-neumann-measure.md",
+   "title": "Von Neumann measures on a complete Boolean algebra",
+   "statement": "A real-valued function $\\mu$ on a\ncomplete Boolean algebra $B$ is a measure in von Neumann's sense when $\\mu(\\bot) = 0$,\n$\\mu(a) > 0$ for every $a \\ne \\bot$, and $\\mu$ is countably additive: for every sequence\n$(a_i)_{i \\in \\mathbb{N}}$ of pairwise disjoint elements of $B$ (that is, $a_i \\wedge a_j = \\bot$\nwhenever $i \\ne j$), the series $\\sum_i \\mu(a_i)$ converges and\n$\\mu(\\bigvee_i a_i) = \\sum_i \\mu(a_i)$.\n\nVon Neumann's conditions (1)-(4) are the axioms of a complete Boolean algebra.",
+   "declaration": "MathlibExt.MeasureTheory.ScottishBook163Wanted.IsVonNeumannMeasure",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ScottishBook163Wanted.lean",
+    "line": 27,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/measures-on-complete-boolean-algebras/satisfies-countable-chain-condition.md",
+   "title": "The countable chain condition for complete Boolean algebras",
+   "statement": "A complete Boolean algebra\n$B$ satisfies the countable chain condition (von Neumann's condition (5)) when every subset\n$S \\subseteq B$ whose distinct elements are pairwise disjoint (that is, $a \\wedge b = \\bot$ for\nall distinct $a, b \\in S$) is at most countable.",
+   "declaration": "MathlibExt.MeasureTheory.ScottishBook163Wanted.SatisfiesCountableChainCondition",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ScottishBook163Wanted.lean",
+    "line": 34,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/measures-on-complete-boolean-algebras/satisfies-generalized-distributivity.md",
+   "title": "Von Neumann's generalized distributivity law",
+   "statement": "A complete Boolean algebra $B$ satisfies\nthe generalized distributivity law (von Neumann's condition (6)) when, for every double sequence\n$(a_{i,j})_{i, j \\in \\mathbb{N}}$ of elements of $B$ that is increasing in $j$ for each fixed $i$\n(that is, $a_{i,0} \\le a_{i,1} \\le \\cdots$ for every $i$),\n\n$$\\bigwedge_{i} \\bigvee_{j} a_{i,j} = \\bigvee_{f} \\bigwedge_{i} a_{i,f(i)},$$\n\nwhere $f$ ranges over all functions $\\mathbb{N} \\to \\mathbb{N}$.",
+   "declaration": "MathlibExt.MeasureTheory.ScottishBook163Wanted.SatisfiesGeneralizedDistributivity",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ScottishBook163Wanted.lean",
+    "line": 41,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/measures-on-complete-boolean-algebras/von-neumann-conditions-not-sufficient.md",
+   "title": "Von Neumann's conditions do not guarantee a measure",
+   "statement": "There is a complete Boolean algebra that\nsatisfies the countable chain condition and the generalized distributivity law but carries no\nmeasure in von Neumann's sense; that is, von Neumann's sufficiency claim is false. This answers\nProblem 163 of the Scottish Book in the negative, in its stated form.\n\nThe typescript's complement clause prints its two constants swapped relative to its own usage\nelsewhere; it is read here as the standard complement laws, with bottom $\\bot$ and top $\\top$.\n\n## Sources\n\n- J. von Neumann, Problem 163 of the Scottish Book; refuted by M. Talagrand, \"Maharam's problem\", arXiv:math/0601689 (2006), who constructed an exhaustive submeasure not equivalent to a measure, solving the problems of J. von Neumann (1937) and D. Maharam (1947).",
+   "declaration": "MathlibExt.MeasureTheory.ScottishBook163Wanted.vonNeumannConditionsNotSufficient",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ScottishBook163Wanted.lean",
+    "line": 66,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/measures-on-complete-boolean-algebras/von-neumann-sufficiency-claim.md",
+   "title": "Von Neumann's sufficiency claim",
+   "statement": "The statement that every complete Boolean algebra\nsatisfying the countable chain condition and the generalized distributivity law carries a\nmeasure in von Neumann's sense.",
+   "declaration": "MathlibExt.MeasureTheory.ScottishBook163Wanted.VonNeumannSufficiencyClaim",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ScottishBook163Wanted.lean",
+    "line": 48,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/szpilrajn170-homeomorphic-images-measura.md",
+   "title": "Szpilrajn's Problem 170: plane sets with measurable homeomorphic copies",
+   "statement": "Let $S$ be a subset\nof the plane $\\mathbb{R}^2$ such that every subset $T$ of $\\mathbb{R}^2$ homeomorphic to $S$ (as\na subspace) is Lebesgue measurable, that is, Carathéodory measurable with respect to Lebesgue\nouter measure on $\\mathbb{R}^2$. Then $S$ is absolutely measurable: for every measure $\\mu$ on\nthe Borel $\\sigma$-algebra of $\\mathbb{R}^2$, the set $S$ is Carathéodory measurable with respect\nto the outer measure induced by $\\mu$.\n\nThe hypothesis concerns every subset of the plane homeomorphic to $S$, not only the images of $S$\nunder homeomorphisms of the whole plane.\n\n## Sources\n\n- E. Szpilrajn, Problem 170 of the Scottish Book; the affirmative answer follows from an unpublished result of J. von Neumann, as recorded in Ad 170 of the typescript. See the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015). Lebesgue measurability is stated as Carathéodory measurability with respect to `volume`; the case of linear sets, and the analogue for generalized homeomorphisms in the sense of Kuratowski, were already known.",
+   "declaration": "MathlibExt.MeasureTheory.ScottishBook170Wanted.szpilrajn170_homeomorphic_images_measurable_imp_absolute",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ScottishBook170Wanted.lean",
+    "line": 39,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/uniqueness-of-measures-on-euclidean-space/c-ioc-pi.md",
+   "title": "Nonempty bounded half-open intervals",
+   "statement": "The family of all intervals\n$(l, u] \\subseteq \\mathbb{R}$ with real endpoints $l < u$. It is used as a generating π-system for\nthe Borel σ-algebra on $\\mathbb{R}$.",
+   "declaration": "MeasureTheory.C_Ioc_pi",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/UniquenessOnRd.lean",
+    "line": 165,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/uniqueness-of-measures-on-euclidean-space/eq-of-forall-ioc-eq.md",
+   "title": "Rectangle uniqueness for measures on $\\mathbb{R}^d$",
+   "statement": "Let $\\mu_1$ and $\\mu_2$ be finite\nmeasures on $\\mathbb{R}^d$. If $\\mu_1((a, b]) = \\mu_2((a, b])$ for all $a, b \\in \\mathbb{R}^d$ with\n$a_i \\le b_i$ for every $i$, where $(a, b] = \\prod_{i=1}^d (a_i, b_i]$, then $\\mu_1 = \\mu_2$.\n\nThe finiteness hypothesis is essential: for $d \\ge 1$, counting measure and twice counting measure\nagree on every rectangle (both give $\\infty$ on every nonempty rectangle and $0$ on every empty\none) but are distinct.",
+   "declaration": "MeasureTheory.Measure.eq_of_forall_Ioc_eq",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/UniquenessOnRd.lean",
+    "line": 245,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/uniqueness-of-measures-on-euclidean-space/eq-of-forall-rectangle-value-eq.md",
+   "title": "Uniqueness from rectangle values",
+   "statement": "Let $F : \\mathbb{R}^d \\to \\mathbb{R}$, and let $\\mu_1$\nand $\\mu_2$ be measures on $\\mathbb{R}^d$. Suppose that for all $a, b \\in \\mathbb{R}^d$ with\n$a_i \\le b_i$ for every $i$, both $\\mu_1$ and $\\mu_2$ assign the rectangle\n$(a, b] = \\prod_{i=1}^d (a_i, b_i]$ the mass $\\max(\\Delta_{a,b} F, 0)$, where $\\Delta_{a,b} F$\nis the rectangle value of $F$ at $a, b$. Then $\\mu_1 = \\mu_2$.\n\nThis is the uniqueness half of the characterization of measures on $\\mathbb{R}^d$ by a\ndistribution function. No finiteness hypothesis is needed: the rectangle formula itself forces\nthe measures to be finite on every rectangle $(a, b]$.",
+   "declaration": "MeasureTheory.Measure.eq_of_forall_rectangleValue_eq",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/UniquenessOnRd.lean",
+    "line": 259,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/uniqueness-of-measures-on-euclidean-space/ext-of-iic-pi.md",
+   "title": "Quadrant uniqueness for measures on $\\mathbb{R}^d$",
+   "statement": "Let $\\mu$ and $\\nu$ be finite measures\non $\\mathbb{R}^d$. If $\\mu(\\{x : x \\le a\\}) = \\nu(\\{x : x \\le a\\})$ for every $a \\in \\mathbb{R}^d$,\nwhere $x \\le a$ means $x_i \\le a_i$ for every $i$, then $\\mu = \\nu$.\n\nThis is the multivariate analogue of a CDF determining a probability measure.",
+   "declaration": "MeasureTheory.Measure.ext_of_Iic_pi",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/UniquenessOnRd.lean",
+    "line": 129,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/uniqueness-of-measures-on-euclidean-space/generate-from-c-ioc-pi.md",
+   "title": "Half-open intervals generate the Borel σ-algebra on $\\mathbb{R}$",
+   "statement": "The Borel σ-algebra on\n$\\mathbb{R}$ is the σ-algebra generated by the nonempty bounded half-open intervals $(l, u]$\nwith $l < u$.",
+   "declaration": "MeasureTheory.generateFrom_C_Ioc_pi",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/UniquenessOnRd.lean",
+    "line": 176,
+    "kind": "lemma",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/uniqueness-of-measures-on-euclidean-space/generate-from-pi-iic.md",
+   "title": "Lower orthants generate the product σ-algebra on $\\mathbb{R}^d$",
+   "statement": "The product σ-algebra on\n$\\mathbb{R}^d$, built from the Borel σ-algebra on each coordinate, is generated by the boxes\n$\\prod_{i=1}^d (-\\infty, a_i]$ for $a \\in \\mathbb{R}^d$.",
+   "declaration": "MeasureTheory.generateFrom_piIic",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/UniquenessOnRd.lean",
+    "line": 119,
+    "kind": "lemma",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/uniqueness-of-measures-on-euclidean-space/is-countably-spanning-c-ioc-pi.md",
+   "title": "Half-open intervals countably span $\\mathbb{R}$",
+   "statement": "There is a sequence of nonempty bounded\nhalf-open intervals $(l, u]$ with $l < u$ whose union is $\\mathbb{R}$; for example, the intervals\n$(-n - 1, n + 1]$ for $n \\in \\mathbb{N}$.",
+   "declaration": "MeasureTheory.isCountablySpanning_C_Ioc_pi",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/UniquenessOnRd.lean",
+    "line": 184,
+    "kind": "lemma",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/uniqueness-of-measures-on-euclidean-space/is-pi-system-c-ioc-pi.md",
+   "title": "Nonempty bounded half-open intervals form a π-system",
+   "statement": "If two intervals $(l, u]$ and\n$(l', u']$ in $\\mathbb{R}$ with $l < u$ and $l' < u'$ intersect, then their intersection is again\nan interval $(l'', u'']$ with $l'' < u''$.",
+   "declaration": "MeasureTheory.isPiSystem_C_Ioc_pi",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/UniquenessOnRd.lean",
+    "line": 169,
+    "kind": "lemma",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/uniqueness-of-measures-on-euclidean-space/is-pi-system-pi-iic.md",
+   "title": "Lower orthants form a π-system",
+   "statement": "For $a \\in \\mathbb{R}^d$ let\n$L_a = \\prod_{i=1}^d (-\\infty, a_i]$. If two such boxes $L_a$ and $L_b$ intersect, then their\nintersection is $L_c$ for some $c \\in \\mathbb{R}^d$.",
+   "declaration": "MeasureTheory.isPiSystem_piIic",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/UniquenessOnRd.lean",
+    "line": 113,
+    "kind": "lemma",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/uniqueness-of-measures-on-euclidean-space/rectangle-value.md",
+   "title": "Rectangle value of a function",
+   "statement": "For $F : \\mathbb{R}^d \\to \\mathbb{R}$ and arbitrary\n$a, b \\in \\mathbb{R}^d$, the rectangle value of $F$ at $a, b$ is\n\n$$\\Delta_{a,b} F = \\sum_{S \\subseteq \\{1, \\dots, d\\}} (-1)^{|S|} F(v_S),$$\n\nwhere $v_S \\in \\mathbb{R}^d$ is the vertex with $(v_S)_i = a_i$ for $i \\in S$ and $(v_S)_i = b_i$\nfor $i \\notin S$.\n\nWrite $(a, b] = \\prod_{i=1}^d (a_i, b_i]$. When $a_i \\le b_i$ for every $i$ and $F$ is a\ndistribution function on $\\mathbb{R}^d$, this signed inclusion–exclusion sum equals the mass\n$\\mu((a, b])$ of the associated measure $\\mu$.",
+   "declaration": "MeasureTheory.rectangleValue",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/UniquenessOnRd.lean",
+    "line": 92,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/uniqueness-of-measures-on-euclidean-space/rectangle-vertex.md",
+   "title": "Vertex of a rectangle",
+   "statement": "Let $d$ be a natural number, let $a, b \\in \\mathbb{R}^d$, and let\n$S$ be a finite set of coordinate indices in $\\{0, \\dots, d-1\\}$. The vertex of the rectangle\n$(a, b]$ selected by $S$ is the point $v \\in \\mathbb{R}^d$ with $v_i = a_i$ for $i \\in S$ and\n$v_i = b_i$ for $i \\notin S$.\n\nAs $S$ ranges over all $2^d$ subsets of indices, these points are the vertices used in\ninclusion-exclusion sums over the rectangle.",
+   "declaration": "MeasureTheory.rectangleVertex",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/UniquenessOnRd.lean",
+    "line": 86,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/measures/vitali-nonmeasurable.md",
+   "title": "Vitali's theorem",
+   "statement": "There exists a subset of $\\mathbb{R}$ that is not Lebesgue measurable.\n\n## Sources\n\n- G. Vitali, Sul problema della misura dei gruppi di punti di una retta, Tipografia Gamberini e Parmeggiani, Bologna (1905). Here `NullMeasurableSet` w.r.t. `volume` is the Lebesgue-measurability notion, i.e. measurability for the completion of Lebesgue measure.",
+   "declaration": "MeasureTheory.vitali_nonmeasurable",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/Measure/VitaliNonmeasurable.lean",
+    "line": 166,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/optimal-transport/kantorovich-duality/dual-feasible.md",
+   "title": "Dual feasible pair of potentials",
+   "statement": "Let $X$ and $Y$ be topological spaces and let\n$c : X \\times Y \\to \\mathbb{R}$. A pair of functions $\\varphi : X \\to \\mathbb{R}$ and\n$\\psi : Y \\to \\mathbb{R}$ is dual feasible for the cost $c$ when $\\varphi$ and $\\psi$ are\ncontinuous and $\\varphi(x) + \\psi(y) \\le c(x, y)$ for all $x \\in X$ and $y \\in Y$.",
+   "declaration": "MathlibExt.MeasureTheory.OptimalTransport.KantorovichWanted.DualFeasible",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/OptimalTransport/Kantorovich.lean",
+    "line": 60,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/optimal-transport/kantorovich-duality/is-coupling.md",
+   "title": "Coupling of two probability measures",
+   "statement": "Let $\\mu$ and $\\nu$ be probability measures on\nmeasurable spaces $X$ and $Y$. A probability measure $\\pi$ on $X \\times Y$ is a coupling of\n$\\mu$ and $\\nu$ when its marginals are $\\mu$ and $\\nu$, that is, when the pushforward of $\\pi$\nunder the projection $X \\times Y \\to X$ is $\\mu$ and the pushforward of $\\pi$ under the\nprojection $X \\times Y \\to Y$ is $\\nu$.",
+   "declaration": "MathlibExt.MeasureTheory.OptimalTransport.KantorovichWanted.IsCoupling",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/OptimalTransport/Kantorovich.lean",
+    "line": 46,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/optimal-transport/kantorovich-duality/kantorovich-duality-compact.md",
+   "title": "Kantorovich duality on compact metric spaces",
+   "statement": "Let $X$ and $Y$ be nonempty compact metric\nspaces, each carrying its Borel $\\sigma$-algebra, let $\\mu$ and $\\nu$ be probability measures on\n$X$ and $Y$, and let $c : X \\times Y \\to \\mathbb{R}$ be continuous. Then the infimum of\n$\\int c \\, d\\pi$ over all couplings $\\pi$ of $\\mu$ and $\\nu$ equals the supremum of\n$\\int \\varphi \\, d\\mu + \\int \\psi \\, d\\nu$ over all pairs of continuous functions\n$\\varphi : X \\to \\mathbb{R}$ and $\\psi : Y \\to \\mathbb{R}$ such that\n$\\varphi(x) + \\psi(y) \\le c(x, y)$ for all $x \\in X$ and $y \\in Y$.\n\n## Sources\n\n- L. V. Kantorovich, On the Translocation of Masses (1942); English transl. J. Math. Sci. 133 (2006), 1381-1382, DOI 10.1007/S10958-006-0049-2; modern ref C. Villani, Topics in Optimal Transportation (2003).",
+   "declaration": "MathlibExt.MeasureTheory.OptimalTransport.KantorovichWanted.kantorovich_duality_compact",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/OptimalTransport/Kantorovich.lean",
+    "line": 1039,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/optimal-transport/kantorovich-duality/primal-values.md",
+   "title": "Values of the transport cost over couplings",
+   "statement": "Let $\\mu$ and $\\nu$ be probability measures\non measurable spaces $X$ and $Y$, and let $c : X \\times Y \\to \\mathbb{R}$. The primal values of\n$c$ for $\\mu$ and $\\nu$ form the set of real numbers $\\int c \\, d\\pi$, where $\\pi$ ranges over\nthe couplings of $\\mu$ and $\\nu$.\n\nHere $\\int c \\, d\\pi$ is the Bochner integral, which is $0$ when $c$ is not $\\pi$-integrable.",
+   "declaration": "MathlibExt.MeasureTheory.OptimalTransport.KantorovichWanted.primalValues",
+   "lean": {
+    "file": "MathlibExt/MeasureTheory/OptimalTransport/Kantorovich.lean",
+    "line": 53,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/optimal-transport/monge-kantorovich-existence-theorem/couplings.md",
+   "title": "Couplings",
+   "statement": "Let $X$ and $Y$ be measurable spaces, $P$ a measure on $X$ and $Q$ a measure\non $Y$. A coupling of $P$ and $Q$ is a probability measure $\\pi$ on $X \\times Y$ whose marginals\nare $P$ and $Q$: the pushforward of $\\pi$ under the projection $X \\times Y \\to X$ is $P$, and its\npushforward under the projection $X \\times Y \\to Y$ is $Q$. The set of couplings is written\n$\\Pi(P, Q)$.",
+   "declaration": "MathlibExt.Analysis.OptimalTransportWanted.Analysis.Couplings",
+   "lean": {
+    "file": "WantedExt/Analysis/OptimalTransportWanted.lean",
+    "line": 67,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/optimal-transport/monge-kantorovich-existence-theorem/kantorovich-cost.md",
+   "title": "Kantorovich cost",
+   "statement": "Let $X$ and $Y$ be measurable spaces and\n$c \\colon X \\times Y \\to [0, \\infty]$ a cost function. The Kantorovich cost of a measure $\\pi$ on\n$X \\times Y$ is $I(\\pi) = \\int_{X \\times Y} c \\, d\\pi \\in [0, \\infty]$, the Lebesgue integral of\n$c$ against $\\pi$ (for a non-measurable $c$, the lower Lebesgue integral).",
+   "declaration": "MathlibExt.Analysis.OptimalTransportWanted.Analysis.kantorovichCost",
+   "lean": {
+    "file": "WantedExt/Analysis/OptimalTransportWanted.lean",
+    "line": 72,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/optimal-transport/monge-kantorovich-existence-theorem/monge-kantorovich-exists.md",
+   "title": "Monge–Kantorovich existence theorem",
+   "statement": "Let $X$ and $Y$ be Polish spaces with their Borel\n$\\sigma$-algebras, let $P$ and $Q$ be probability measures on $X$ and $Y$, and let\n$c \\colon X \\times Y \\to [0, \\infty]$ be continuous. Then there is a coupling $\\pi$ of $P$ and $Q$\nwhose Kantorovich cost $\\int c \\, d\\pi$ is at most the Kantorovich cost $\\int c \\, d\\pi'$ of every\ncoupling $\\pi'$ of $P$ and $Q$: the Kantorovich cost attains its minimum on the set of couplings\nof $P$ and $Q$.\n\n## Sources\n\n- L. V. Kantorovich (1942), after G. Monge (1781). Listed as §73 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `monge_kantorovich` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.Analysis.OptimalTransportWanted.Analysis.monge_kantorovich_exists",
+   "lean": {
+    "file": "WantedExt/Analysis/OptimalTransportWanted.lean",
+    "line": 82,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/real-functions/absolutely-continuous-functions/absolutely-continuous-on-interval-and-e.md",
+   "title": "A $1$-Lipschitz function on $(a,b)$ is absolutely continuous with essentially bounded derivative",
+   "statement": "**A $1$-Lipschitz function on $[a,b]$ is absolutely continuous with essentially bounded\nderivative.** Let $a \\le b$ be real numbers and let $f : \\mathbb{R} \\to \\mathbb{R}$ satisfy\n$|f(x) - f(y)| \\le |x - y|$ for all $x, y \\in [a, b]$. Then $f$ is absolutely continuous on\n$[a, b]$, and its derivative $f'$, taken to be $0$ at points where $f$ is not differentiable, has\nfinite norm $\\|f'\\|_{L^\\infty[a,b]}$, the essential supremum with respect to Lebesgue measure on\n$[a, b]$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of one variable), problem `ma_proofbench_l1_34`.",
+   "declaration": "MathlibExt.MeasureTheory.LipschitzOneAbsContDerivLinftyWanted.absolutelyContinuousOnInterval_and_eLpNorm_deriv_lt_top_of_lipschitzOnWith",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/LipschitzOneAbsContDerivLinftyWanted.lean",
+    "line": 52,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/real-functions/absolutely-continuous-functions/lipschitz-with-iff-absolutely-continuous.md",
+   "title": "Lipschitz functions are the absolutely continuous functions with bounded derivative",
+   "statement": "Let\n$f : \\mathbb{R} \\to \\mathbb{R}$ and let $M \\ge 0$ be a real number. Then\n$|f(x) - f(y)| \\le M|x - y|$ for all $x, y \\in \\mathbb{R}$ if and only if $f$ is absolutely\ncontinuous on every closed bounded interval and $|f'(x)| \\le M$ for almost every $x \\in \\mathbb{R}$\n(with respect to Lebesgue measure), where $f'(x)$ is taken to be $0$ at points where $f$ is not\ndifferentiable.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of one variable), problem `ma_proofbench_l1_62`.",
+   "declaration": "MathlibExt.MeasureTheory.LipschitzIffAbsContBoundedDerivWanted.lipschitzWith_iff_absolutelyContinuous_and_ae_norm_deriv_le",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/LipschitzIffAbsContBoundedDerivWanted.lean",
+    "line": 56,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/real-functions/absolutely-continuous-functions/volume-image-eq-zero-of-absolutely-conti.md",
+   "title": "Absolutely continuous functions have the Lusin N property",
+   "statement": "Let $f : \\mathbb{R} \\to\n\\mathbb{R}$ be absolutely continuous on every closed bounded interval $[a, b]$. Then $f$ maps\nLebesgue null sets to null sets: for every set $s \\subseteq \\mathbb{R}$ of Lebesgue outer measure\nzero, the image $f(s)$ has Lebesgue outer measure zero.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of one variable), problem `ma_proofbench_l1_75`.",
+   "declaration": "MathlibExt.MeasureTheory.AbsContLusinNPropertyWanted.volume_image_eq_zero_of_absolutelyContinuous",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/AbsContLusinNPropertyWanted.lean",
+    "line": 50,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/real-functions/exists-continuous-monotone-sub-of-bounde.md",
+   "title": "Jordan decomposition of a continuous function of bounded variation",
+   "statement": "Let\n$F : \\mathbb{R} \\to \\mathbb{R}$ be continuous and of bounded variation on all of $\\mathbb{R}$.\nThen there are continuous non-decreasing functions $F_1, F_2 : \\mathbb{R} \\to \\mathbb{R}$ such\nthat $F = F_1 - F_2$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of one variable), problem `ma_proofbench_l1_33`.",
+   "declaration": "MathlibExt.MeasureTheory.ContinuousBVDiffContinuousMonotoneWanted.exists_continuous_monotone_sub_of_boundedVariationOn",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/ContinuousBVDiffContinuousMonotoneWanted.lean",
+    "line": 50,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/real-functions/hardy-littlewood-maximal-function/ae-tendsto-maximal-zero-of-ae-tendsto-ze.md",
+   "title": "Maximal functions of bounded a.e.-null sequences tend to zero a.e",
+   "statement": "Let\n$(f_n)_{n \\in \\mathbb{N}}$ be a sequence of functions $f_n : \\mathbb{R} \\to \\mathbb{R}$, each\nLebesgue measurable on $[0,1]$, such that $f_n(x) \\in [0,1]$ for every $n$ and every\n$x \\in [0,1]$, and $f_n(x) \\to 0$ as $n \\to \\infty$ for almost every $x \\in [0,1]$. For\n$x \\in [0,1]$ let\n\n$$Mf_n(x) = \\sup_I \\frac{1}{|I|} \\int_I |f_n(y)|\\,dy,$$\n\nwhere the supremum is taken over all closed intervals $I = [a,b]$ with $a < b$ and\n$x \\in I \\subseteq [0,1]$, and $|I| = b - a$. Then $Mf_n(x) \\to 0$ as $n \\to \\infty$ for almost\nevery $x \\in [0,1]$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_74`.",
+   "declaration": "MathlibExt.MeasureTheory.MaximalFunctionAeTendstoZeroWanted.ae_tendsto_maximal_zero_of_ae_tendsto_zero_of_bounded",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/MaximalFunctionAeTendstoZeroWanted.lean",
+    "line": 58,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/real-functions/hardy-littlewood-maximal-function/measure-set-of-maximal-function-lt-top-e.md",
+   "title": "The maximal function of a singular measure is infinite almost everywhere for that measure",
+   "statement": "**The maximal function of a singular measure is infinite almost everywhere for that\nmeasure.** Let $n$ be a natural number and let $\\mu$ be a Borel measure on $\\mathbb{R}^n$ that is\nmutually singular with respect to Lebesgue measure $m_n$. Write $B(x, r)$ for the open ball of\nradius $r$ about $x$ and define $M_\\mu : \\mathbb{R}^n \\to [0, \\infty]$ by\n\n$$\nM_\\mu(x) = \\sup_{r>0} \\frac{\\mu(B(x, r))}{m_n(B(x, r))}.\n$$\n\nThen $\\mu(\\{x \\in \\mathbb{R}^n : M_\\mu(x) < \\infty\\}) = 0$.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_44`.",
+   "declaration": "MathlibExt.MeasureTheory.SingularMeasureMaximalFunctionWanted.measure_setOf_maximalFunction_lt_top_eq_zero_of_mutuallySingular",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/SingularMeasureMaximalFunctionWanted.lean",
+    "line": 55,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "MeasureTheory/real-functions/not-exists-continuous-ae-eq-indicator-ic.md",
+   "title": "No continuous function agrees a.e. with the indicator of $(0,1)$",
+   "statement": "Let $\\chi_{[0,1]}$ be\nthe characteristic function of $[0,1]$. There is no continuous function\n$f : \\mathbb{R} \\to \\mathbb{R}$ such that $f(x) = \\chi_{[0,1]}(x)$ for almost every\n$x \\in \\mathbb{R}$ with respect to Lebesgue measure.\n\n## Sources\n\n- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Measure and integration; Classical measure theory), problem `ma_proofbench_l1_28`.",
+   "declaration": "MathlibExt.MeasureTheory.IndicatorIccNotAEContinuousWanted.not_exists_continuous_ae_eq_indicator_Icc",
+   "lean": {
+    "file": "WantedExt/MeasureTheory/IndicatorIccNotAEContinuousWanted.lean",
+    "line": 55,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  }
+ ]
+}

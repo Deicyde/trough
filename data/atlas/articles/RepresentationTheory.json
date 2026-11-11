@@ -1,0 +1,774 @@
+{
+ "schema": "trough-atlas/v1",
+ "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "articles": [
+  {
+   "path": "RepresentationTheory/finite-group-representations/characters-of-representations/char-charpoly-roots-pow-eq-one.md",
+   "title": "Characteristic roots of $\\rho(g)$ are $|G|$-th roots of unity",
+   "statement": "Let $\\rho$ be a\nrepresentation of a finite group $G$ on a finite-dimensional complex vector space $V$, and let\n$g \\in G$. Every root $\\mu$ of the characteristic polynomial of the matrix of $\\rho(g)$ in a fixed\nbasis of $V$ satisfies $\\mu^{|G|} = 1$.",
+   "declaration": "CharacterTheory.char_charpoly_roots_pow_eq_one",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/CharacterRootsOfUnity.lean",
+    "line": 89,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/characters-of-representations/char-dual-eq-conj.md",
+   "title": "Character of the dual representation",
+   "statement": "Let $\\rho$ be a representation of a finite group\n$G$ on a finite-dimensional complex vector space $V$, and let $\\rho^*$ be its dual representation.\nFor every $g \\in G$, the character of $\\rho^*$ at $g$ is the complex conjugate of the character of\n$\\rho$ at $g$: $\\chi_{\\rho^*}(g) = \\overline{\\chi_\\rho(g)}$.",
+   "declaration": "CharacterTheory.char_dual_eq_conj",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/CharacterInvEqConj.lean",
+    "line": 132,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/characters-of-representations/char-inv-eq-conj.md",
+   "title": "Character values at inverses are complex conjugates",
+   "statement": "Let $\\rho$ be a representation of a\nfinite group $G$ on a finite-dimensional complex vector space $V$, with character $\\chi_\\rho$.\nFor every $g \\in G$, $\\chi_\\rho(g^{-1}) = \\overline{\\chi_\\rho(g)}$.",
+   "declaration": "CharacterTheory.char_inv_eq_conj",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/CharacterInvEqConj.lean",
+    "line": 54,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/characters-of-representations/character-self-pairing-eq-sum-sq.md",
+   "title": "Parseval / sum-of-squares for characters",
+   "statement": "If `χ` is a combination\nof the characters of pairwise non-equivalent irreducible representations\nwith coefficients `n i`, then the self-pairing of `χ` is the sum of the\nsquares of the coefficients. In particular, for a single irreducible\n`ρ`, taking `χ = χ_ρ` gives self-pairing `1`, and for the regular\ncharacter the formula recovers `∑ (dim ρ_i) ^ 2 = |G|` once the regular\ncharacter is expanded in irreducibles.",
+   "declaration": "CharacterTheory.character_selfPairing_eq_sum_sq",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/CharacterSumOfSquares.lean",
+    "line": 60,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/characters-of-representations/class-inner-product.md",
+   "title": "Class inner product",
+   "statement": "Let $G$ be a finite group and $k$ a field in which $|G|$ is\ninvertible. For functions $f_1, f_2 \\colon G \\to k$, their class inner product is\n$\\langle f_1, f_2 \\rangle = |G|^{-1} \\sum_{g \\in G} f_1(g) f_2(g^{-1})$.",
+   "declaration": "CharacterTheory.classInnerProduct",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/CharacterIrreducibleCriterion.lean",
+    "line": 51,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/characters-of-representations/has-eigenvalue-pow-card-eq-one.md",
+   "title": "Eigenvalues of $\\rho(g)$ are $|G|$-th roots of unity",
+   "statement": "Let $\\rho$ be a representation of a\nfinite group $G$ on a finite-dimensional complex vector space $V$, and let $g \\in G$. Every\neigenvalue $\\mu$ of $\\rho(g)$ satisfies $\\mu^{|G|} = 1$.\n\nThis follows because the order of $g$ divides $|G|$.",
+   "declaration": "CharacterTheory.hasEigenvalue_pow_card_eq_one",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/CharacterRootsOfUnity.lean",
+    "line": 78,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/characters-of-representations/has-eigenvalue-pow-order-of-eq-one.md",
+   "title": "Eigenvalues of $\\rho(g)$ are roots of unity of order dividing that of $g$",
+   "statement": "Let $\\rho$ be a\nrepresentation of a finite group $G$ on a finite-dimensional complex vector space $V$, let\n$g \\in G$, and let $\\operatorname{ord}(g)$ be the order of $g$. Every eigenvalue $\\mu$ of $\\rho(g)$\nsatisfies $\\mu^{\\operatorname{ord}(g)} = 1$.\n\nThe minimal polynomial of $\\rho(g)$ divides $X^{\\operatorname{ord}(g)} - 1$, and $\\mu$ is a root of\nthe minimal polynomial.",
+   "declaration": "CharacterTheory.hasEigenvalue_pow_orderOf_eq_one",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/CharacterRootsOfUnity.lean",
+    "line": 54,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/characters-of-representations/irreducible-iff-class-inner-product-self.md",
+   "title": "Character criterion for irreducibility",
+   "statement": "A finite-dimensional\nrepresentation `σ` of a finite group over an algebraically closed field of\ncharacteristic zero is irreducible if and only if the self-pairing of its\ncharacter is `1`.",
+   "declaration": "CharacterTheory.irreducible_iff_classInnerProduct_self_eq_one",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/CharacterIrreducibleCriterion.lean",
+    "line": 167,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/characters-of-representations/wedderburn-sum-sq-eq-card.md",
+   "title": "Sum of squares of the Wedderburn block sizes",
+   "statement": "If `|G|` is nonzero in\nan algebraically closed field, the group algebra of a finite group is a product\nof matrix algebras with nonzero block sizes whose squares sum to `|G|`.",
+   "declaration": "CharacterTheory.wedderburn_sum_sq_eq_card",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/CharacterSumOfSquares.lean",
+    "line": 107,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/irred-dim-dvd-card.md",
+   "title": "Dimension of an irreducible representation divides the group order",
+   "statement": "If `ρ` is an irreducible representation of a finite group `G` over an\nalgebraically closed field `k` of characteristic zero, then\n`dim_k ρ ∣ |G|`. In particular, over `ℂ`, every irreducible degree divides\nthe order of the group.",
+   "declaration": "CharacterTheory.irred_dim_dvd_card",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/IrreducibleDimension.lean",
+    "line": 314,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/maschke-decomposition.md",
+   "title": "Maschke's theorem",
+   "statement": "Every finite-dimensional complex representation $\\sigma$ of a finite\ngroup is equivalent to the direct sum of a finite family of irreducible subrepresentations of\n$\\sigma$.",
+   "declaration": "MathlibExt.GroupTheory.MaschkeDecomposition.maschke_decomposition",
+   "lean": {
+    "file": "MathlibExt/GroupTheory/MaschkeDecomposition.lean",
+    "line": 219,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/representations-of-finite-abelian-groups/abelian-hom-is-simple-char.md",
+   "title": "Every homomorphism of a finite abelian group to the complex numbers is a simple character",
+   "statement": "Let $G$ be a finite abelian group and let $\\varphi : G \\to \\mathbb{C}$ be a monoid homomorphism.\nThen there is a simple finite-dimensional complex representation $V$ of $G$ whose character\nequals $\\varphi$.\n\nProof: Let each $g \\in G$ act on the one-dimensional space $\\mathbb{C}$ by the scalar\n$\\varphi(g)$; its trace is $\\varphi(g)$. One-dimensional modules are simple. Wikipedia,\n“Representation theory of finite groups”, notes that the irreducible characters of an abelian\ngroup are its homomorphisms to $\\mathbb{C}^\\times$.\n\n## Sources\n\n- J.-P. Serre, Linear Representations of Finite Groups, GTM 42, Ch. I (one-dimensional representations from characters).",
+   "declaration": "MathlibExt.GroupTheory.AbelianRepresentationWanted.abelian_hom_is_simple_char",
+   "lean": {
+    "file": "MathlibExt/GroupTheory/AbelianRepresentation.lean",
+    "line": 251,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/representations-of-finite-abelian-groups/abelian-simple-char-is-hom.md",
+   "title": "Characters of simple representations of a finite abelian group are homomorphisms",
+   "statement": "Let $G$\nbe a finite abelian group and let $V$ be a simple finite-dimensional complex representation of\n$G$. Then there is a monoid homomorphism $\\varphi : G \\to \\mathbb{C}$ such that the character of\n$V$ equals $\\varphi$.\n\nProof: Simplicity of $V$ makes it irreducible, and complex irreducible representations of an\nabelian group are one-dimensional (the corollary in Wikipedia, “Schur's lemma”), so $V$ is\none-dimensional. Endomorphisms of a one-dimensional space are scalars, and their traces give the\nmultiplicative character.\n\n## Sources\n\n- J.-P. Serre, Linear Representations of Finite Groups, GTM 42, §2.8 (degree-one characters of abelian groups).",
+   "declaration": "MathlibExt.GroupTheory.AbelianRepresentationWanted.abelian_simple_char_is_hom",
+   "lean": {
+    "file": "MathlibExt/GroupTheory/AbelianRepresentation.lean",
+    "line": 231,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/representations-of-finite-abelian-groups/abelian-simple-iso-of-char-eq.md",
+   "title": "Characters determine simple representations of a finite abelian group",
+   "statement": "Let $G$ be a finite\nabelian group and let $V$ and $W$ be simple finite-dimensional complex representations of $G$,\nwith characters $\\chi_V$ and $\\chi_W$. If $\\chi_V = \\chi_W$, then $V$ and $W$ are isomorphic.\n\nProof: For functions $\\chi, \\psi : G \\to \\mathbb{C}$ write\n$\\langle \\chi, \\psi \\rangle = \\frac{1}{|G|} \\sum_{g \\in G} \\chi(g)\\,\\psi(g^{-1})$, where $|G|$ is\nthe order of $G$. The orthonormality of irreducible characters gives\n$\\langle \\chi_V, \\chi_V \\rangle = 1$. Replacing the second character by the equal character\n$\\chi_W$ gives $\\langle \\chi_V, \\chi_W \\rangle = 1$, which forces $V \\cong W$. This is the\northonormality of irreducible characters in Wikipedia, “Character theory”.\n\n## Sources\n\n- J.-P. Serre, Linear Representations of Finite Groups, GTM 42, §2.8 (characters determine representations of abelian groups).",
+   "declaration": "MathlibExt.GroupTheory.AbelianRepresentationWanted.abelian_simple_iso_of_char_eq",
+   "lean": {
+    "file": "MathlibExt/GroupTheory/AbelianRepresentation.lean",
+    "line": 289,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/representations-of-finite-abelian-groups/character-monoid-hom.md",
+   "title": "The character of a simple representation as a monoid homomorphism",
+   "statement": "Let $k$ be an\nalgebraically closed field, let $G$ be a commutative monoid, and let $V$ be a finite-dimensional\nrepresentation of $G$ over $k$ that is simple as an object of the category of finite-dimensional\nrepresentations of $G$ over $k$. The character $\\chi_V : G \\to k$ of $V$, where $\\chi_V(g)$ is the\ntrace of the action of $g$ on $V$, satisfies $\\chi_V(1) = 1$ and $\\chi_V(gh) = \\chi_V(g)\\,\\chi_V(h)$\nfor all $g, h \\in G$; this is $\\chi_V$ regarded as a monoid homomorphism from $G$ to $k$.",
+   "declaration": "FDRep.characterMonoidHom",
+   "lean": {
+    "file": "MathlibExt/GroupTheory/AbelianRepresentation.lean",
+    "line": 142,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/representations-of-finite-abelian-groups/character-mul-of-simple.md",
+   "title": "Characters of simple representations of commutative monoids are multiplicative",
+   "statement": "Let $k$\nbe an algebraically closed field, let $G$ be a commutative monoid, and let $V$ be a\nfinite-dimensional representation of $G$ over $k$ that is simple as an object of the category of\nfinite-dimensional representations of $G$ over $k$. Let $\\chi_V : G \\to k$ be the character of\n$V$, where $\\chi_V(g)$ is the trace of the action of $g$ on $V$. Then\n$\\chi_V(gh) = \\chi_V(g)\\,\\chi_V(h)$ for all $g, h \\in G$.",
+   "declaration": "FDRep.character_mul_of_simple",
+   "lean": {
+    "file": "MathlibExt/GroupTheory/AbelianRepresentation.lean",
+    "line": 125,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/representations-of-finite-abelian-groups/coe-character-monoid-hom.md",
+   "title": "The character homomorphism has the character as its underlying function",
+   "statement": "Let $k$ be an\nalgebraically closed field, let $G$ be a commutative monoid, and let $V$ be a finite-dimensional\nrepresentation of $G$ over $k$ that is simple as an object of the category of finite-dimensional\nrepresentations of $G$ over $k$. The character of $V$, regarded as a monoid homomorphism from $G$\nto $k$, has the character $\\chi_V : G \\to k$ of $V$ as its underlying function, where $\\chi_V(g)$\nis the trace of the action of $g$ on $V$.",
+   "declaration": "FDRep.coe_characterMonoidHom",
+   "lean": {
+    "file": "MathlibExt/GroupTheory/AbelianRepresentation.lean",
+    "line": 151,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/representations-of-finite-abelian-groups/finrank-eq-one-of-is-mul-commutative.md",
+   "title": "Simple finite-dimensional representations of commutative monoids are one-dimensional",
+   "statement": "Let $k$ be an algebraically closed field and let $G$ be a commutative monoid. Every\nfinite-dimensional representation $V$ of $G$ over $k$ that is simple as an object of the category\nof finite-dimensional representations of $G$ over $k$ has dimension $1$ over $k$.",
+   "declaration": "FDRep.finrank_eq_one_of_isMulCommutative",
+   "lean": {
+    "file": "MathlibExt/GroupTheory/AbelianRepresentation.lean",
+    "line": 102,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/representations-of-finite-abelian-groups/is-irreducible-of-simple.md",
+   "title": "Simple finite-dimensional representations of a monoid are irreducible",
+   "statement": "Let $k$ be a\nfield and let $G$ be a monoid. If a finite-dimensional representation $V$ of $G$ over $k$ is\nsimple as an object of the category of finite-dimensional representations of $G$ over $k$, then\n$V$ is irreducible as a representation: $V \\ne 0$, and the only subrepresentations of $V$ are $0$\nand $V$.",
+   "declaration": "FDRep.isIrreducible_of_simple",
+   "lean": {
+    "file": "MathlibExt/GroupTheory/AbelianRepresentation.lean",
+    "line": 43,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/representations-of-finite-abelian-groups/of-monoid-hom-2.md",
+   "title": "The action in the one-dimensional representation of a homomorphism",
+   "statement": "Let $k$ be a field,\nlet $G$ be a monoid, let $\\varphi : G \\to k$ be a monoid homomorphism, and let $k_\\varphi$ be the\none-dimensional representation of $G$ on $k$ defined by $\\varphi$. For every $g \\in G$, the action\nof $g$ on $k_\\varphi$ is $\\varphi(g)$ times the identity map of $k$.",
+   "declaration": "FDRep.ofMonoidHom_ρ",
+   "lean": {
+    "file": "MathlibExt/GroupTheory/AbelianRepresentation.lean",
+    "line": 171,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/representations-of-finite-abelian-groups/of-monoid-hom-character.md",
+   "title": "The character of the representation of a homomorphism is the homomorphism",
+   "statement": "Let $k$ be a\nfield, let $G$ be a monoid, let $\\varphi : G \\to k$ be a monoid homomorphism, and let $k_\\varphi$\nbe the one-dimensional representation of $G$ on $k$ in which each $g \\in G$ acts by multiplication\nby $\\varphi(g)$. The character of $k_\\varphi$ is $\\varphi$: the trace of the action of each\n$g \\in G$ on $k_\\varphi$ is $\\varphi(g)$.",
+   "declaration": "FDRep.ofMonoidHom_character",
+   "lean": {
+    "file": "MathlibExt/GroupTheory/AbelianRepresentation.lean",
+    "line": 185,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/representations-of-finite-abelian-groups/of-monoid-hom-finrank.md",
+   "title": "The representation of a homomorphism is one-dimensional",
+   "statement": "Let $k$ be a field, let $G$ be\na monoid, let $\\varphi : G \\to k$ be a monoid homomorphism, and let $k_\\varphi$ be the\nrepresentation of $G$ on $k$ in which each $g \\in G$ acts by multiplication by $\\varphi(g)$. Then\n$k_\\varphi$ has dimension $1$ over $k$.",
+   "declaration": "FDRep.ofMonoidHom_finrank",
+   "lean": {
+    "file": "MathlibExt/GroupTheory/AbelianRepresentation.lean",
+    "line": 178,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/representations-of-finite-abelian-groups/of-monoid-hom-simple.md",
+   "title": "The representation of a homomorphism is simple",
+   "statement": "Let $k$ be a field, let $G$ be a monoid,\nlet $\\varphi : G \\to k$ be a monoid homomorphism, and let $k_\\varphi$ be the one-dimensional\nrepresentation of $G$ on $k$ in which each $g \\in G$ acts by multiplication by $\\varphi(g)$. Then\n$k_\\varphi$ is a simple object of the category of finite-dimensional representations of $G$ over\n$k$.",
+   "declaration": "FDRep.ofMonoidHom_simple",
+   "lean": {
+    "file": "MathlibExt/GroupTheory/AbelianRepresentation.lean",
+    "line": 192,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/representations-of-finite-abelian-groups/of-monoid-hom.md",
+   "title": "The one-dimensional representation of a homomorphism",
+   "statement": "Let $k$ be a field, let $G$ be a\nmonoid, and let $\\varphi : G \\to k$ be a monoid homomorphism. This is the finite-dimensional\nrepresentation $k_\\varphi$ of $G$ on the one-dimensional space $k$ in which each $g \\in G$ acts by\nmultiplication by $\\varphi(g)$, that is, by the linear map $x \\mapsto \\varphi(g)\\,x$.",
+   "declaration": "FDRep.ofMonoidHom",
+   "lean": {
+    "file": "MathlibExt/GroupTheory/AbelianRepresentation.lean",
+    "line": 157,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/representations-of-finite-abelian-groups/rho-eq-character-smul-of-simple.md",
+   "title": "Simple representations of commutative monoids act by scalars",
+   "statement": "Let $k$ be an\nalgebraically closed field, $G$ a monoid with commutative multiplication, and $V$ a simple\nfinite-dimensional representation of $G$ over $k$ (a simple object of the category of\nfinite-dimensional representations), with action $\\rho$ and character\n$\\chi_V(g) = \\operatorname{tr} \\rho(g)$. Then for every $g \\in G$ the map $\\rho(g)$ is scalar\nmultiplication by $\\chi_V(g)$, that is, $\\rho(g) = \\chi_V(g) \\cdot \\mathrm{id}_V$.",
+   "declaration": "FDRep.rho_eq_character_smul_of_simple",
+   "lean": {
+    "file": "MathlibExt/GroupTheory/AbelianRepresentation.lean",
+    "line": 110,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/schur-s-lemma-and-multiplicities/finrank-intertwining-map-eq-one-or-zero.md",
+   "title": "Schur's lemma, dimension form",
+   "statement": "Let $G$ be a finite group, $k$ an algebraically closed\nfield, and $\\rho$, $\\sigma$ irreducible representations of $G$ on finite-dimensional $k$-vector\nspaces. Then the space $\\operatorname{Hom}_G(\\rho, \\sigma)$ of intertwining maps from $\\rho$ to\n$\\sigma$ has dimension $1$ over $k$ if $\\sigma$ and $\\rho$ are equivalent, and dimension $0$\notherwise.",
+   "declaration": "CharacterTheory.finrank_intertwiningMap_eq_one_or_zero",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/RepresentationMultiplicity.lean",
+    "line": 55,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/schur-s-lemma-and-multiplicities/multiplicity-eq-finrank-intertwining-map.md",
+   "title": "Multiplicity equals the dimension of the intertwining space",
+   "statement": "Let $G$ be a finite group,\n$k$ an algebraically closed field, and $(\\rho_i)_{i \\in I}$ a family, indexed by a finite set $I$,\nof irreducible representations of $G$ on finite-dimensional $k$-vector spaces that are pairwise\nnon-equivalent: $\\rho_i$ and $\\rho_j$ are not equivalent whenever $i \\ne j$. Let $\\sigma$ be a\nrepresentation of $G$ on a finite-dimensional $k$-vector space, and let $(d_i)_{i \\in I}$ be\nnatural numbers such that $\\sigma$ is equivalent to the direct sum of $d_i$ copies of $\\rho_i$ over\nall $i \\in I$. Then for every $i \\in I$, $d_i$ equals the dimension over $k$ of the space\n$\\operatorname{Hom}_G(\\rho_i, \\sigma)$ of intertwining maps from $\\rho_i$ to $\\sigma$.",
+   "declaration": "CharacterTheory.multiplicity_eq_finrank_intertwiningMap",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/RepresentationMultiplicity.lean",
+    "line": 85,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/wedderburn-decomposition-of-the-group-algebra/wedderburn-alg-hom.md",
+   "title": "Algebra map of a Wedderburn block",
+   "statement": "Let $k$ be an algebraically closed field, $G$ a finite\ngroup whose order is nonzero in $k$, and $e \\colon k[G] \\to \\prod_{j < n} M_{d_j}(k)$ an\nisomorphism of $k$-algebras from the group algebra onto a product of full matrix algebras. For\n$i < n$, this is the $k$-algebra homomorphism $k[G] \\to \\operatorname{End}_k(k^{d_i})$ that sends\n$a \\in k[G]$ to the linear map $v \\mapsto e(a)_i \\, v$, where $e(a)_i$ is the $i$-th component of\n$e(a)$.",
+   "declaration": "CharacterTheory.wedderburnAlgHom",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/WedderburnIrrep.lean",
+    "line": 54,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/wedderburn-decomposition-of-the-group-algebra/wedderburn-irrep-is-irreducible.md",
+   "title": "Wedderburn blocks are irreducible",
+   "statement": "Let $k$ be an algebraically closed field, $G$ a finite\ngroup whose order is nonzero in $k$, and $e \\colon k[G] \\to \\prod_{j < n} M_{d_j}(k)$ an\nisomorphism of $k$-algebras from the group algebra $k[G]$ onto a product of full matrix algebras\n$M_{d_j}(k)$ of $d_j \\times d_j$ matrices over $k$. For every $i < n$ with $d_i \\ne 0$, the\nrepresentation of $G$ on $k^{d_i}$ in which $g \\in G$ acts by $v \\mapsto e(g)_i \\, v$, where $g$\nis viewed as an element of $k[G]$ and $e(g)_i$ is the $i$-th component of $e(g)$, is\nirreducible.",
+   "declaration": "CharacterTheory.wedderburnIrrep_isIrreducible",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/WedderburnIrrep.lean",
+    "line": 77,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/finite-group-representations/wedderburn-decomposition-of-the-group-algebra/wedderburn-irrep.md",
+   "title": "Representation of a Wedderburn block",
+   "statement": "Let $k$ be an algebraically closed field, $G$ a\nfinite group whose order is nonzero in $k$, and $e \\colon k[G] \\to \\prod_{j < n} M_{d_j}(k)$ an\nisomorphism of $k$-algebras from the group algebra $k[G]$ onto a product of full matrix algebras\n$M_{d_j}(k)$ of $d_j \\times d_j$ matrices over $k$. For $i < n$, this is the representation of $G$\non $k^{d_i}$ in which $g \\in G$ acts by $v \\mapsto e(g)_i \\, v$, where $g$ is viewed as an element\nof $k[G]$ and $e(g)_i$ is the $i$-th component of $e(g)$.",
+   "declaration": "CharacterTheory.wedderburnIrrep",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/WedderburnIrrep.lean",
+    "line": 66,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/group-homology-and-cohomology/biprod-iso-hom-fst.md",
+   "title": "Direct-sum isomorphism in group homology and the first projection",
+   "statement": "Let $k$ be a\ncommutative ring, $G$ a group, $A$ and $B$ representations of $G$ over $k$, and $n \\in \\mathbb{N}$,\nand write $H_n(G, M)$ for the $n$th group homology of a representation $M$. The isomorphism\n$H_n(G, A \\oplus B) \\cong H_n(G, A) \\oplus H_n(G, B)$ followed by the projection onto $H_n(G, A)$\nequals the map $H_n(G, A \\oplus B) \\to H_n(G, A)$ induced by the projection $A \\oplus B \\to A$.",
+   "declaration": "groupHomology.biprodIso_hom_fst",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/GroupHomology/Biproduct.lean",
+    "line": 118,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/group-homology-and-cohomology/biprod-iso-hom-snd.md",
+   "title": "Direct-sum isomorphism in group homology and the second projection",
+   "statement": "Let $k$ be a\ncommutative ring, $G$ a group, $A$ and $B$ representations of $G$ over $k$, and $n \\in \\mathbb{N}$,\nand write $H_n(G, M)$ for the $n$th group homology of a representation $M$. The isomorphism\n$H_n(G, A \\oplus B) \\cong H_n(G, A) \\oplus H_n(G, B)$ followed by the projection onto $H_n(G, B)$\nequals the map $H_n(G, A \\oplus B) \\to H_n(G, B)$ induced by the projection $A \\oplus B \\to B$.",
+   "declaration": "groupHomology.biprodIso_hom_snd",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/GroupHomology/Biproduct.lean",
+    "line": 126,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/group-homology-and-cohomology/biprod-iso-hom.md",
+   "title": "Forward map of the direct-sum isomorphism in group homology",
+   "statement": "Let $k$ be a commutative\nring, $G$ a group, $A$ and $B$ representations of $G$ over $k$, and $n \\in \\mathbb{N}$, and write\n$H_n(G, M)$ for the $n$th group homology of a representation $M$. The forward map of the\nisomorphism $H_n(G, A \\oplus B) \\cong H_n(G, A) \\oplus H_n(G, B)$ is the map into the biproduct\nwhose components are the maps $H_n(G, A \\oplus B) \\to H_n(G, A)$ and\n$H_n(G, A \\oplus B) \\to H_n(G, B)$ induced by the projections $A \\oplus B \\to A$ and\n$A \\oplus B \\to B$.",
+   "declaration": "groupHomology.biprodIso_hom",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/GroupHomology/Biproduct.lean",
+    "line": 103,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/group-homology-and-cohomology/biprod-iso-inv-inl.md",
+   "title": "Direct-sum isomorphism in group homology and the first inclusion",
+   "statement": "Let $k$ be a\ncommutative ring, $G$ a group, $A$ and $B$ representations of $G$ over $k$, and $n \\in \\mathbb{N}$,\nand write $H_n(G, M)$ for the $n$th group homology of a representation $M$. The inclusion of\n$H_n(G, A)$ into $H_n(G, A) \\oplus H_n(G, B)$ followed by the inverse of the isomorphism\n$H_n(G, A \\oplus B) \\cong H_n(G, A) \\oplus H_n(G, B)$ equals the map\n$H_n(G, A) \\to H_n(G, A \\oplus B)$ induced by the inclusion $A \\to A \\oplus B$.",
+   "declaration": "groupHomology.biprodIso_inv_inl",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/GroupHomology/Biproduct.lean",
+    "line": 134,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/group-homology-and-cohomology/biprod-iso-inv-inr.md",
+   "title": "Direct-sum isomorphism in group homology and the second inclusion",
+   "statement": "Let $k$ be a\ncommutative ring, $G$ a group, $A$ and $B$ representations of $G$ over $k$, and $n \\in \\mathbb{N}$,\nand write $H_n(G, M)$ for the $n$th group homology of a representation $M$. The inclusion of\n$H_n(G, B)$ into $H_n(G, A) \\oplus H_n(G, B)$ followed by the inverse of the isomorphism\n$H_n(G, A \\oplus B) \\cong H_n(G, A) \\oplus H_n(G, B)$ equals the map\n$H_n(G, B) \\to H_n(G, A \\oplus B)$ induced by the inclusion $B \\to A \\oplus B$.",
+   "declaration": "groupHomology.biprodIso_inv_inr",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/GroupHomology/Biproduct.lean",
+    "line": 141,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/group-homology-and-cohomology/biprod-iso-inv.md",
+   "title": "Inverse map of the direct-sum isomorphism in group homology",
+   "statement": "Let $k$ be a commutative\nring, $G$ a group, $A$ and $B$ representations of $G$ over $k$, and $n \\in \\mathbb{N}$, and write\n$H_n(G, M)$ for the $n$th group homology of a representation $M$. The inverse map of the\nisomorphism $H_n(G, A \\oplus B) \\cong H_n(G, A) \\oplus H_n(G, B)$ is the map out of the biproduct\nwhose components are the maps $H_n(G, A) \\to H_n(G, A \\oplus B)$ and\n$H_n(G, B) \\to H_n(G, A \\oplus B)$ induced by the inclusions $A \\to A \\oplus B$ and\n$B \\to A \\oplus B$.",
+   "declaration": "groupHomology.biprodIso_inv",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/GroupHomology/Biproduct.lean",
+    "line": 111,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/group-homology-and-cohomology/biprod-iso.md",
+   "title": "Group homology of a direct sum",
+   "statement": "Let $k$ be a commutative ring, $G$ a group, $A$ and $B$\nrepresentations of $G$ over $k$, and $n \\in \\mathbb{N}$, and write $H_n(G, M)$ for the $n$th group\nhomology of a representation $M$. This is the isomorphism\n$H_n(G, A \\oplus B) \\cong H_n(G, A) \\oplus H_n(G, B)$ obtained by applying the $n$th group homology\nfunctor, which is additive, to the biproduct $A \\oplus B$.\n\n## Sources\n\n- NumberTheoryI, Section 23.4, Corollary 23.22.",
+   "declaration": "groupHomology.biprodIso",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/GroupHomology/Biproduct.lean",
+    "line": 96,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/group-homology-and-cohomology/nonempty-linear-equiv-of-iso-res-mul-equ.md",
+   "title": "Invariance of group cohomology under group isomorphism",
+   "statement": "Group cohomology is invariant under group isomorphism.",
+   "declaration": "groupCohomology.nonempty_linearEquiv_of_iso_res_mulEquiv",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/GroupCohomology/Invariance.lean",
+    "line": 52,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/herbrand-finite.md",
+   "title": "Finiteness hypothesis for the Herbrand quotient",
+   "statement": "Let $G$ be a finite group, $R$ a\ncommutative ring and $M$ an $R$-linear representation of $G$. The representation $M$ satisfies\nthe Herbrand finiteness hypothesis when its Tate cohomology groups $\\hat H^0(G, M)$ and\n$\\hat H^{-1}(G, M)$ are both finite.",
+   "declaration": "TateCohomology.HerbrandFinite",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean",
+    "line": 55,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/herbrand-quotient-congr.md",
+   "title": "Herbrand quotients agree when Tate cohomology in degrees $0$ and $-1$ is in bijection",
+   "statement": "Let $G$ be a finite group, $R$ a commutative ring and $M$, $N$ two $R$-linear representations\nof $G$ whose Tate cohomology groups $\\hat H^0(G, M)$, $\\hat H^{-1}(G, M)$, $\\hat H^0(G, N)$ and\n$\\hat H^{-1}(G, N)$ are finite. If there are bijections between the underlying sets of\n$\\hat H^0(G, M)$ and $\\hat H^0(G, N)$ and between those of $\\hat H^{-1}(G, M)$ and\n$\\hat H^{-1}(G, N)$, then the Herbrand quotients of $M$ and $N$ are equal.",
+   "declaration": "TateCohomology.herbrandQuotient_congr",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean",
+    "line": 89,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/herbrand-quotient-den-ne-zero.md",
+   "title": "The denominator of the Herbrand quotient is nonzero",
+   "statement": "Let $G$ be a finite group, $R$ a\ncommutative ring and $M$ an $R$-linear representation of $G$ whose Tate cohomology groups\n$\\hat H^0(G, M)$ and $\\hat H^{-1}(G, M)$ are finite. Then the number of elements of\n$\\hat H^{-1}(G, M)$ is nonzero.",
+   "declaration": "TateCohomology.herbrandQuotient_den_ne_zero",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean",
+    "line": 76,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/herbrand-quotient-den-pos.md",
+   "title": "The denominator of the Herbrand quotient is positive",
+   "statement": "Let $G$ be a finite group, $R$ a\ncommutative ring and $M$ an $R$-linear representation of $G$ whose Tate cohomology groups\n$\\hat H^0(G, M)$ and $\\hat H^{-1}(G, M)$ are finite. Then the number of elements of\n$\\hat H^{-1}(G, M)$ is positive.",
+   "declaration": "TateCohomology.herbrandQuotient_den_pos",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean",
+    "line": 70,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/herbrand-quotient-eq.md",
+   "title": "Herbrand quotient as a ratio of orders",
+   "statement": "Let $G$ be a finite group, $R$ a commutative\nring and $M$ an $R$-linear representation of $G$ whose Tate cohomology groups $\\hat H^0(G, M)$\nand $\\hat H^{-1}(G, M)$ are finite. Then the Herbrand quotient of $M$ equals the rational number\n$|\\hat H^0(G, M)| / |\\hat H^{-1}(G, M)|$, where $|X|$ is the number of elements of $X$.",
+   "declaration": "TateCohomology.herbrandQuotient_eq",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean",
+    "line": 65,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/herbrand-quotient-pos.md",
+   "title": "Positivity of the Herbrand quotient",
+   "statement": "Let $G$ be a finite group, $R$ a commutative ring\nand $M$ an $R$-linear representation of $G$ whose Tate cohomology groups $\\hat H^0(G, M)$ and\n$\\hat H^{-1}(G, M)$ are finite. Then the Herbrand quotient of $M$ is strictly positive.",
+   "declaration": "TateCohomology.herbrandQuotient_pos",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean",
+    "line": 81,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/herbrand-quotient.md",
+   "title": "Herbrand quotient",
+   "statement": "Let $G$ be a finite group, $R$ a commutative ring and $M$ an\n$R$-linear representation of $G$ whose Tate cohomology groups $\\hat H^0(G, M)$ and\n$\\hat H^{-1}(G, M)$ are finite. The Herbrand quotient of $M$ is the rational number\n$h(M) = |\\hat H^0(G, M)| / |\\hat H^{-1}(G, M)|$, where $|X|$ is the number of elements of $X$.",
+   "declaration": "TateCohomology.herbrandQuotient",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean",
+    "line": 59,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/nonempty-periodicity-iso.md",
+   "title": "Periodicity of Tate cohomology for finite cyclic groups",
+   "statement": "Let $R$ be a commutative ring,\n$G$ a finite cyclic group and $A$ a representation of $G$ over $R$. Then for every integer $n$,\nthe Tate cohomology groups $\\hat{H}^n(G, A)$ and $\\hat{H}^{n+2}(G, A)$ are isomorphic as\n$R$-modules.",
+   "declaration": "TateCohomology.nonempty_periodicityIso",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/TateCohomology/FiniteCyclic.lean",
+    "line": 227,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/tate-cohomology-card-eq-nat-cast.md",
+   "title": "Cardinality of finite Tate cohomology as a natural number",
+   "statement": "Let $G$ be a finite group, $R$\na commutative ring, $M$ an $R$-linear representation of $G$ and $n$ an integer such that the Tate\ncohomology group $\\hat H^n(G, M)$ is finite. Then the cardinality of $\\hat H^n(G, M)$ equals its\nnumber of elements, a natural number viewed as a cardinal number.",
+   "declaration": "TateCohomology.tateCohomologyCard_eq_natCast",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean",
+    "line": 49,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/tate-cohomology-card.md",
+   "title": "Cardinality of Tate cohomology",
+   "statement": "Let $G$ be a finite group, $R$ a commutative ring, $M$ an\n$R$-linear representation of $G$ and $n$ an integer. This is the cardinality of the Tate\ncohomology group $\\hat H^n(G, M)$, as a cardinal number (possibly infinite).",
+   "declaration": "TateCohomology.tateCohomologyCard",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean",
+    "line": 37,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/tate-homology-card-zero.md",
+   "title": "Cardinality of Tate homology in degree zero",
+   "statement": "Let $G$ be a finite group, $R$ a commutative\nring and $M$ an $R$-linear representation of $G$. The cardinality of the degree-$0$ Tate homology\nof $M$ equals the cardinality of the Tate cohomology group $\\hat H^{-1}(G, M)$.\n\nThe cardinality of Tate homology in degree $n$ is defined as that of $\\hat H^{-n-1}(G, M)$, so\nthis holds by definition.",
+   "declaration": "TateCohomology.tateHomologyCard_zero",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean",
+    "line": 45,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/group-cohomology/tate-cohomology-and-the-herbrand-quotient/tate-homology-card.md",
+   "title": "Cardinality of Tate homology",
+   "statement": "Let $G$ be a finite group, $R$ a commutative ring\nand $M$ an $R$-linear representation of $G$. For an integer $n$, the cardinality $h_n(M)$\nof the degree-$n$ Tate homology of $M$ is defined as the cardinal number of the Tate\ncohomology group $\\hat H^{-n-1}(G, M)$, following the convention $\\hat H_n = \\hat H^{-n-1}$.",
+   "declaration": "TateCohomology.tateHomologyCard",
+   "lean": {
+    "file": "MathlibExt/RepresentationTheory/Homological/TateCohomology/HerbrandQuotient.lean",
+    "line": 41,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/lie-and-topological-representations/groups-with-one-irreducible-representation-in-ea/has-unique-irreducible-rep-of-each-dim.md",
+   "title": "Groups with exactly one irreducible representation of each dimension",
+   "statement": "A group $G$ has\nexactly one irreducible complex representation of each dimension when for every $n \\ge 1$ there\nis an irreducible homomorphism $G \\to \\mathrm{GL}_n(\\mathbb{C})$ and any two irreducible\nhomomorphisms $G \\to \\mathrm{GL}_n(\\mathbb{C})$ are equivalent. Representations are arbitrary\nhomomorphisms of the abstract group $G$; no continuity is required.",
+   "declaration": "MathlibExt.GroupTheory.UniqueIrreducibleRepresentationsSU2Kourovka16Problem58Wanted.HasUniqueIrreducibleRepOfEachDim",
+   "lean": {
+    "file": "WantedExt/GroupTheory/UniqueIrreducibleRepresentationsSU2Kourovka16Problem58Wanted.lean",
+    "line": 53,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/lie-and-topological-representations/groups-with-one-irreducible-representation-in-ea/is-equivalent-rep.md",
+   "title": "Equivalent representations into $\\mathrm{GL}_n(\\mathbb{C})$",
+   "statement": "Let $G$ be a group. Two\nhomomorphisms $\\rho, \\sigma \\colon G \\to \\mathrm{GL}_n(\\mathbb{C})$ are equivalent when there is a\nmatrix $P \\in \\mathrm{GL}_n(\\mathbb{C})$ with $\\sigma(g) = P \\rho(g) P^{-1}$ for all $g \\in G$.",
+   "declaration": "MathlibExt.GroupTheory.UniqueIrreducibleRepresentationsSU2Kourovka16Problem58Wanted.IsEquivalentRep",
+   "lean": {
+    "file": "WantedExt/GroupTheory/UniqueIrreducibleRepresentationsSU2Kourovka16Problem58Wanted.lean",
+    "line": 47,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/lie-and-topological-representations/groups-with-one-irreducible-representation-in-ea/is-irreducible-rep.md",
+   "title": "Irreducible representations into $\\mathrm{GL}_n(\\mathbb{C})$",
+   "statement": "Let $G$ be a group and\n$\\rho \\colon G \\to \\mathrm{GL}_n(\\mathbb{C})$ a homomorphism. Then $\\rho$ is irreducible when\n$n \\ge 1$ and the only subspaces $W$ of $\\mathbb{C}^n$ with $\\rho(g)v \\in W$ for all $g \\in G$ and\n$v \\in W$ are $0$ and $\\mathbb{C}^n$.",
+   "declaration": "MathlibExt.GroupTheory.UniqueIrreducibleRepresentationsSU2Kourovka16Problem58Wanted.IsIrreducibleRep",
+   "lean": {
+    "file": "WantedExt/GroupTheory/UniqueIrreducibleRepresentationsSU2Kourovka16Problem58Wanted.lean",
+    "line": 41,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/lie-and-topological-representations/groups-with-one-irreducible-representation-in-ea/su2-only-group-with-unique-irreducible-r-2.md",
+   "title": "McKay's question 16.58 has a negative answer",
+   "statement": "It is not the case that a group has exactly\none irreducible complex representation of each dimension $n \\ge 1$, up to equivalence, if and only\nif it is isomorphic to $\\mathrm{SU}_2(\\mathbb{C})$. Here a representation of dimension $n$ is any\nhomomorphism to $\\mathrm{GL}_n(\\mathbb{C})$ of abstract groups, with no continuity required.\n\nApplying a field automorphism $\\varphi$ of $\\mathbb{C}$ to matrix entries gives irreducible\n$2$-dimensional representations $x \\mapsto x^\\varphi$ of the abstract group\n$\\mathrm{SU}_2(\\mathbb{C})$, infinitely many of them pairwise non-equivalent (von Neumann), so\n$\\mathrm{SU}_2(\\mathbb{C})$ itself lacks the property. It does have it if only unitary\nrepresentations are counted, as these are continuous (Cartan).\n\n## Sources\n\n- E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 16.58 (J. McKay); resolution: V. P. Burichenko, letter of 16 July 2013, as recorded in the Kourovka Archive (observation of J. von Neumann), Kourovka Archive, Problem 16.58 (No: for field automorphisms φ of ℂ the representations x ↦ x^φ of SU₂(ℂ) are irreducible and infinitely many are pairwise non-equivalent, so SU₂(ℂ) itself lacks the property; it has it for unitary representations, which are continuous by É. Cartan).",
+   "declaration": "MathlibExt.GroupTheory.UniqueIrreducibleRepresentationsSU2Kourovka16Problem58Wanted.su2OnlyGroupWithUniqueIrreducibleReps_refuted",
+   "lean": {
+    "file": "WantedExt/GroupTheory/UniqueIrreducibleRepresentationsSU2Kourovka16Problem58Wanted.lean",
+    "line": 78,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/lie-and-topological-representations/groups-with-one-irreducible-representation-in-ea/su2-only-group-with-unique-irreducible-r.md",
+   "title": "McKay's question on $\\mathrm{SU}_2(\\mathbb{C})$ (Kourovka 16.58)",
+   "statement": "A group $G$ has exactly\none irreducible complex representation of each dimension $n = 1, 2, \\dots$, up to equivalence, if\nand only if $G$ is isomorphic to $\\mathrm{SU}_2(\\mathbb{C})$. Here a representation of dimension\n$n$ is any homomorphism $G \\to \\mathrm{GL}_n(\\mathbb{C})$ of abstract groups, with no continuity\nrequired.",
+   "declaration": "MathlibExt.GroupTheory.UniqueIrreducibleRepresentationsSU2Kourovka16Problem58Wanted.su2OnlyGroupWithUniqueIrreducibleReps",
+   "lean": {
+    "file": "WantedExt/GroupTheory/UniqueIrreducibleRepresentationsSU2Kourovka16Problem58Wanted.lean",
+    "line": 61,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/lie-and-topological-representations/is-continuous-semilinear-representation.md",
+   "title": "Continuous semilinear representation",
+   "statement": "Let $G$ be a topological group, $R$ a topological\nring and $M$ a topological abelian group that is a finite free $R$-module. Suppose that $G$ acts\non $R$ by ring automorphisms and on $M$ by additive automorphisms, and that the actions of $G$ on\n$R$, of $G$ on $M$ and of $R$ on $M$ are jointly continuous. This is a continuous semilinear\nrepresentation of $G$ on $M$ when $g \\cdot (r x) = (g \\cdot r)(g \\cdot x)$ for all $g \\in G$,\n$r \\in R$ and $x \\in M$, and the coordinate map $M \\to R^n$ of a fixed basis of $M$ over $R$,\nwhere $n$ is the size of the basis, is a homeomorphism onto $R^n$ with the product topology.\n\n## Sources\n\n- arXiv:2608.00845, Definition `defsemilinrep` (lines 1947–1950); this class records its object-level content.",
+   "declaration": "IsContinuousSemilinearRepresentation",
+   "lean": {
+    "file": "MathlibExt/Topology/Algebra/ContinuousSemilinearRepresentation.lean",
+    "line": 33,
+    "kind": "class",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/lie-and-topological-representations/representations-of-compact-groups/compact-group-semisimple.md",
+   "title": "Representations of compact groups are semisimple",
+   "statement": "Let $G$ be a compact topological group\nand let $\\rho$ be a representation of $G$ on a finite-dimensional real normed space $V$ such that\nthe action map $G \\times V \\to V$, $(g, v) \\mapsto \\rho(g)(v)$, is continuous. Then $\\rho$ is\nsemisimple: every subrepresentation of $\\rho$ has a complementary subrepresentation.\n\n## Sources\n\n- H. Weyl, *Theorie der Darstellung kontinuierlicher halb-einfacher Gruppen durch lineare Transformationen* (1925–26); Peter–Weyl (1927). Knill, *Some fundamental theorems in mathematics*, §21. Problem `compact_group_semisimple` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.GroupTheory.CompactGroupSemisimpleWanted.RepresentationTheory.CompactGroupSemisimple.compact_group_semisimple",
+   "lean": {
+    "file": "WantedExt/GroupTheory/CompactGroupSemisimpleWanted.lean",
+    "line": 70,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/lie-and-topological-representations/representations-of-compact-groups/peter-weyl-point-separation.md",
+   "title": "Peter–Weyl theorem: unitary representations separate points",
+   "statement": "Let $G$ be a compact Hausdorff\ntopological group and let $x \\ne y$ be elements of $G$. Then there are an integer $n > 0$ and a\ncontinuous map $\\rho$ from $G$ to the complex $n \\times n$ matrices such that $\\rho(1) = 1$,\n$\\rho(gh) = \\rho(g)\\rho(h)$ for all $g, h \\in G$, the matrix $\\rho(g)$ is unitary for every\n$g \\in G$, and $\\rho(x) \\ne \\rho(y)$.\n\n## Sources\n\n- F. Peter and H. Weyl, Math. Ann. 97 (1927), 737–755; Folland, A Course in Abstract Harmonic Analysis 2nd ed.; Knapp, Lie Groups Beyond an Introduction 2nd ed.",
+   "declaration": "MathlibExt.Topology.Algebra.PeterWeylWanted.peter_weyl_point_separation",
+   "lean": {
+    "file": "MathlibExt/Topology/Algebra/PeterWeyl.lean",
+    "line": 805,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/lie-and-topological-representations/schur-weyl-duality/gl-action-range-eq-centralizer-sym-actio.md",
+   "title": "Schur–Weyl duality: the general linear side",
+   "statement": "Let $R$ be a field, $M$ a finite-dimensional\nvector space over $R$, and $k$ a natural number such that $k!$ is invertible in $R$. In the\nalgebra of $R$-linear endomorphisms of the tensor power $M^{\\otimes k}$, the subalgebra generated\nby the image of the diagonal action $g \\mapsto g^{\\otimes k}$ of $\\mathrm{GL}(M)$ equals the\ncentralizer of the image of the action of the symmetric group $S_k$ by permuting tensor factors.\n\n## Sources\n\n- H. Weyl, The Classical Groups, 1939; I. Schur, Über die rationalen Darstellungen der allgemeinen linearen Gruppe, 1927. Problem `glAction_range_eq_centralizer_symAction` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.GroupTheory.SchurWeylWanted.RepresentationTheory.glAction_range_eq_centralizer_symAction",
+   "lean": {
+    "file": "WantedExt/GroupTheory/SchurWeylWanted.lean",
+    "line": 97,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/lie-and-topological-representations/schur-weyl-duality/gl-action.md",
+   "title": "Diagonal action of the general linear group on tensor powers",
+   "statement": "Let $R$ be a commutative\nsemiring, $M$ an $R$-module and $k$ a natural number. Write $\\mathrm{GL}(M)$ for the group of\ninvertible $R$-linear endomorphisms of $M$. The diagonal action of $\\mathrm{GL}(M)$ on the $k$-th\ntensor power $M^{\\otimes k}$ is the monoid homomorphism from $\\mathrm{GL}(M)$ to the\n$R$-linear endomorphisms of $M^{\\otimes k}$ that sends $g$ to $g^{\\otimes k}$, so that\n$g \\cdot (v_1 \\otimes \\cdots \\otimes v_k) = g v_1 \\otimes \\cdots \\otimes g v_k$.",
+   "declaration": "MathlibExt.GroupTheory.SchurWeylWanted.RepresentationTheory.glAction",
+   "lean": {
+    "file": "WantedExt/GroupTheory/SchurWeylWanted.lean",
+    "line": 77,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/lie-and-topological-representations/schur-weyl-duality/sym-action-range-eq-centralizer-gl-actio.md",
+   "title": "Schur–Weyl duality: the symmetric group side",
+   "statement": "Let $R$ be a field, $M$ a finite-dimensional\nvector space over $R$, and $k$ a natural number such that $k!$ is invertible in $R$. In the\nalgebra of $R$-linear endomorphisms of the tensor power $M^{\\otimes k}$, the subalgebra generated\nby the image of the action of the symmetric group $S_k$ by permuting tensor factors equals the\ncentralizer of the image of the diagonal action $g \\mapsto g^{\\otimes k}$ of $\\mathrm{GL}(M)$.\n\n## Sources\n\n- H. Weyl, The Classical Groups, 1939; I. Schur, Über die rationalen Darstellungen der allgemeinen linearen Gruppe, 1927. Problem `symAction_range_eq_centralizer_glAction` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.GroupTheory.SchurWeylWanted.RepresentationTheory.symAction_range_eq_centralizer_glAction",
+   "lean": {
+    "file": "WantedExt/GroupTheory/SchurWeylWanted.lean",
+    "line": 87,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/lie-and-topological-representations/schur-weyl-duality/sym-action.md",
+   "title": "Permutation action of the symmetric group on tensor powers",
+   "statement": "Let $R$ be a commutative\nsemiring, $M$ an $R$-module and $k$ a natural number. The symmetric group $S_k$ of permutations of\n$\\{1, \\dots, k\\}$ acts on the $k$-th tensor power $M^{\\otimes k}$ by permuting tensor factors: this\nis the monoid homomorphism from $S_k$ to the $R$-linear endomorphisms of $M^{\\otimes k}$ that sends\n$\\sigma$ to the map $v_1 \\otimes \\cdots \\otimes v_k \\mapsto\nv_{\\sigma^{-1}(1)} \\otimes \\cdots \\otimes v_{\\sigma^{-1}(k)}$.",
+   "declaration": "MathlibExt.GroupTheory.SchurWeylWanted.RepresentationTheory.symAction",
+   "lean": {
+    "file": "WantedExt/GroupTheory/SchurWeylWanted.lean",
+    "line": 61,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/lie-and-topological-representations/tensor-squares-of-exceptional-lie-algebra-repres/e8-irrep-tensor-square-decomp.md",
+   "title": "Tensor square of an irreducible $\\mathfrak{e}_8$-representation of dimension $779247$",
+   "statement": "There exist a complex vector space $V$ and a representation of the exceptional Lie algebra\n$\\mathfrak{e}_8$ over $\\mathbb{C}$ on $V$ such that $V$ has dimension $779247$ over $\\mathbb{C}$,\n$V$ is irreducible, and the tensor square $V \\otimes_{\\mathbb{C}} V$, with the representation\n$x \\cdot (v \\otimes w) = (x \\cdot v) \\otimes w + v \\otimes (x \\cdot w)$ viewed as a module over the\nuniversal enveloping algebra of $\\mathfrak{e}_8$, has exactly $40$ isotypic components.\n\n## Sources\n\n- Classical: representation theory of the exceptional Lie algebra e₈. Problem `e8_irrep_tensor_square_decomp` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.GroupTheory.ExceptionalLieTensorSquareWanted.RepresentationTheory.e8_irrep_tensor_square_decomp",
+   "lean": {
+    "file": "WantedExt/GroupTheory/ExceptionalLieTensorSquareWanted.lean",
+    "line": 93,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  },
+  {
+   "path": "RepresentationTheory/lie-and-topological-representations/tensor-squares-of-exceptional-lie-algebra-repres/g2-irrep-tensor-square-decomp.md",
+   "title": "Tensor square of an irreducible $\\mathfrak{g}_2$-representation of dimension $64$",
+   "statement": "There exist a complex vector space $V$ and a representation of the exceptional Lie algebra\n$\\mathfrak{g}_2$ over $\\mathbb{C}$ on $V$ such that $V$ has dimension $64$ over $\\mathbb{C}$,\n$V$ is irreducible, and the tensor square $V \\otimes_{\\mathbb{C}} V$, with the representation\n$x \\cdot (v \\otimes w) = (x \\cdot v) \\otimes w + v \\otimes (x \\cdot w)$ viewed as a module over the\nuniversal enveloping algebra of $\\mathfrak{g}_2$, has exactly $14$ isotypic components.\n\n## Sources\n\n- Classical: representation theory of the exceptional Lie algebra g₂. Problem `g2_irrep_tensor_square_decomp` of the lean-eval benchmark.",
+   "declaration": "MathlibExt.GroupTheory.ExceptionalLieTensorSquareWanted.RepresentationTheory.g2_irrep_tensor_square_decomp",
+   "lean": {
+    "file": "WantedExt/GroupTheory/ExceptionalLieTensorSquareWanted.lean",
+    "line": 84,
+    "kind": "theorem_wanted",
+    "sorry": false
+   }
+  }
+ ]
+}

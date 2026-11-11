@@ -1,0 +1,486 @@
+{
+ "schema": "trough-atlas/v1",
+ "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "articles": [
+  {
+   "path": "Order/fixed-points-domain-theory/least-and-greatest-fixed-points-on-finite-sets/gfp-fin-fixed.md",
+   "title": "Finite iteration from the whole type reaches a fixed point",
+   "statement": "Let $\\alpha$ be a finite type\nwith $|\\alpha|$ elements, let $f$ be a map from subsets of $\\alpha$ to subsets of $\\alpha$ that is\nmonotone for inclusion, and let $\\mathrm{gfp}_{\\mathrm{fin}}(f) = f^{|\\alpha|}(\\alpha)$ be the\nresult of applying $f$ to $\\alpha$ $|\\alpha|$ times. Then $\\mathrm{gfp}_{\\mathrm{fin}}(f)$ is a\nfixed point of $f$, that is, $f(\\mathrm{gfp}_{\\mathrm{fin}}(f)) = \\mathrm{gfp}_{\\mathrm{fin}}(f)$.\n\nThe iterates of $f$ from $\\alpha$ form a decreasing chain, and until it stabilizes each step\nstrictly decreases the cardinality.",
+   "declaration": "Finset.gfpFin_fixed",
+   "lean": {
+    "file": "MathlibExt/Order/FixedPoints/Finset.lean",
+    "line": 111,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/least-and-greatest-fixed-points-on-finite-sets/gfp-fin.md",
+   "title": "Greatest fixed point of a finset map by finite iteration",
+   "statement": "Let $\\alpha$ be a finite type\nwith $|\\alpha|$ elements, let $f$ map subsets of $\\alpha$ to subsets of $\\alpha$, and write $f^n$\nfor the $n$-fold iterate of $f$. Then $\\mathrm{gfp}_{\\mathrm{fin}}(f)$ is the set\n$f^{|\\alpha|}(\\alpha)$, obtained by applying $f$ to the whole of $\\alpha$ $|\\alpha|$ times.\n\nFor monotone $f$ the iteration has stabilized after $|\\alpha|$ steps, and the result is the\ngreatest fixed point of $f$.",
+   "declaration": "Finset.gfpFin",
+   "lean": {
+    "file": "MathlibExt/Order/FixedPoints/Finset.lean",
+    "line": 56,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/least-and-greatest-fixed-points-on-finite-sets/le-gfp-fin.md",
+   "title": "Every post-fixed point lies in the finite greatest fixed point",
+   "statement": "Let $\\alpha$ be a finite\ntype with $|\\alpha|$ elements, let $f$ be a map from subsets of $\\alpha$ to subsets of $\\alpha$\nthat is monotone for inclusion, and let $\\mathrm{gfp}_{\\mathrm{fin}}(f) = f^{|\\alpha|}(\\alpha)$ be\nthe result of applying $f$ to $\\alpha$ $|\\alpha|$ times. If $Z \\subseteq \\alpha$ satisfies\n$Z \\subseteq f(Z)$, then $Z \\subseteq \\mathrm{gfp}_{\\mathrm{fin}}(f)$.\n\n$Z$ is contained in every iterate of $f$ from $\\alpha$, by induction.",
+   "declaration": "Finset.le_gfpFin",
+   "lean": {
+    "file": "MathlibExt/Order/FixedPoints/Finset.lean",
+    "line": 173,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/least-and-greatest-fixed-points-on-finite-sets/lfp-fin-fixed.md",
+   "title": "Finite iteration from the empty set reaches a fixed point",
+   "statement": "Let $\\alpha$ be a finite type\nwith $|\\alpha|$ elements, let $f$ be a map from subsets of $\\alpha$ to subsets of $\\alpha$ that is\nmonotone for inclusion, and let $\\mathrm{lfp}_{\\mathrm{fin}}(f) = f^{|\\alpha|}(\\emptyset)$ be the\nresult of applying $f$ to $\\emptyset$ $|\\alpha|$ times. Then $\\mathrm{lfp}_{\\mathrm{fin}}(f)$ is a\nfixed point of $f$, that is, $f(\\mathrm{lfp}_{\\mathrm{fin}}(f)) = \\mathrm{lfp}_{\\mathrm{fin}}(f)$.\n\nThe iterates of $f$ from $\\emptyset$ form an increasing chain, and until it stabilizes each step\nstrictly increases the cardinality, which is bounded by $|\\alpha|$.",
+   "declaration": "Finset.lfpFin_fixed",
+   "lean": {
+    "file": "MathlibExt/Order/FixedPoints/Finset.lean",
+    "line": 63,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/least-and-greatest-fixed-points-on-finite-sets/lfp-fin-le.md",
+   "title": "The finite least fixed point lies in every pre-fixed point",
+   "statement": "Let $\\alpha$ be a finite type\nwith $|\\alpha|$ elements, let $f$ be a map from subsets of $\\alpha$ to subsets of $\\alpha$ that is\nmonotone for inclusion, and let $\\mathrm{lfp}_{\\mathrm{fin}}(f) = f^{|\\alpha|}(\\emptyset)$ be the\nresult of applying $f$ to $\\emptyset$ $|\\alpha|$ times. If $Z \\subseteq \\alpha$ satisfies\n$f(Z) \\subseteq Z$, then $\\mathrm{lfp}_{\\mathrm{fin}}(f) \\subseteq Z$.\n\nEvery iterate of $f$ from $\\emptyset$ is contained in $Z$, by induction.",
+   "declaration": "Finset.lfpFin_le",
+   "lean": {
+    "file": "MathlibExt/Order/FixedPoints/Finset.lean",
+    "line": 160,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/least-and-greatest-fixed-points-on-finite-sets/lfp-fin.md",
+   "title": "Least fixed point of a finset map by finite iteration",
+   "statement": "Let $\\alpha$ be a finite type with\n$|\\alpha|$ elements, let $f$ map subsets of $\\alpha$ to subsets of $\\alpha$, and write $f^n$ for the\n$n$-fold iterate of $f$. Then $\\mathrm{lfp}_{\\mathrm{fin}}(f)$ is the set $f^{|\\alpha|}(\\emptyset)$,\nobtained by applying $f$ to the empty set $|\\alpha|$ times.\n\nFor monotone $f$ the iteration has stabilized after $|\\alpha|$ steps, and the result is the least\nfixed point of $f$.",
+   "declaration": "Finset.lfpFin",
+   "lean": {
+    "file": "MathlibExt/Order/FixedPoints/Finset.lean",
+    "line": 49,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/least-and-greatest-fixed-points-on-finite-sets/mem-finset-iterate-iff.md",
+   "title": "Finset and predicate iterations from the bottom agree",
+   "statement": "Let $\\alpha$ be a type, let $f$ map\nfinite subsets of $\\alpha$ to finite subsets of $\\alpha$, and let $F$ map predicates on $\\alpha$\nto predicates on $\\alpha$. For a finite set $Z \\subseteq \\alpha$ write $P_Z$ for the predicate\n$t \\mapsto t \\in Z$, and suppose that for every finite $Z \\subseteq \\alpha$ and every\n$s \\in \\alpha$, $s \\in f(Z)$ if and only if $F(P_Z)(s)$ holds. Write $f^n$ and $F^n$ for the\n$n$-fold iterates and $\\bot$ for the predicate that is false everywhere. Then for every\n$n \\in \\mathbb{N}$ and every $s \\in \\alpha$, $s \\in f^n(\\emptyset)$ if and only if $F^n(\\bot)(s)$\nholds.",
+   "declaration": "Finset.mem_finset_iterate_iff",
+   "lean": {
+    "file": "MathlibExt/Order/FixedPoints/Finset.lean",
+    "line": 193,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/least-and-greatest-fixed-points-on-finite-sets/mem-finset-iterate-univ-iff.md",
+   "title": "Finset and predicate iterations from the top agree",
+   "statement": "Let $\\alpha$ be a finite type, let $f$\nmap subsets of $\\alpha$ to subsets of $\\alpha$, and let $F$ map predicates on $\\alpha$ to\npredicates on $\\alpha$. For $Z \\subseteq \\alpha$ write $P_Z$ for the predicate\n$t \\mapsto t \\in Z$, and suppose that for every $Z \\subseteq \\alpha$ and every $s \\in \\alpha$,\n$s \\in f(Z)$ if and only if $F(P_Z)(s)$ holds. Write $f^n$ and $F^n$ for the $n$-fold iterates\nand $\\top$ for the predicate that is true everywhere. Then for every $n \\in \\mathbb{N}$ and every\n$s \\in \\alpha$, $s \\in f^n(\\alpha)$ if and only if $F^n(\\top)(s)$ holds.",
+   "declaration": "Finset.mem_finset_iterate_univ_iff",
+   "lean": {
+    "file": "MathlibExt/Order/FixedPoints/Finset.lean",
+    "line": 217,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/least-and-greatest-fixed-points-on-finite-sets/mem-gfp-fin-iff-gfp.md",
+   "title": "Finite iteration computes the greatest fixed point",
+   "statement": "Let $\\alpha$ be a finite type with\n$|\\alpha|$ elements, let $f$ be a map from subsets of $\\alpha$ to subsets of $\\alpha$ that is\nmonotone for inclusion, and let $\\mathrm{gfp}_{\\mathrm{fin}}(f) = f^{|\\alpha|}(\\alpha)$ be the\nresult of applying $f$ to $\\alpha$ $|\\alpha|$ times. Let $F$ be a map from predicates on $\\alpha$\nto predicates on $\\alpha$ that is monotone for the pointwise order. For $Z \\subseteq \\alpha$\nwrite $P_Z$ for the predicate $t \\mapsto t \\in Z$, and suppose that for every $Z \\subseteq \\alpha$\nand every $s \\in \\alpha$, $s \\in f(Z)$ if and only if $F(P_Z)(s)$ holds. Then for every\n$s \\in \\alpha$, $s \\in \\mathrm{gfp}_{\\mathrm{fin}}(f)$ if and only if $s$ satisfies the greatest\nfixed point of $F$ in the complete lattice of predicates on $\\alpha$.\n\nThis is dual to the corresponding statement for least fixed points.",
+   "declaration": "Finset.mem_gfpFin_iff_gfp",
+   "lean": {
+    "file": "MathlibExt/Order/FixedPoints/Finset.lean",
+    "line": 290,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/least-and-greatest-fixed-points-on-finite-sets/mem-lfp-fin-iff-lfp.md",
+   "title": "Finite iteration computes the least fixed point",
+   "statement": "Let $\\alpha$ be a finite type with\n$|\\alpha|$ elements, let $f$ be a map from subsets of $\\alpha$ to subsets of $\\alpha$ that is\nmonotone for inclusion, and let $\\mathrm{lfp}_{\\mathrm{fin}}(f) = f^{|\\alpha|}(\\emptyset)$ be the\nresult of applying $f$ to $\\emptyset$ $|\\alpha|$ times. Let $F$ be a map from predicates on $\\alpha$\nto predicates on $\\alpha$ that is monotone for the pointwise order. For $Z \\subseteq \\alpha$\nwrite $P_Z$ for the predicate $t \\mapsto t \\in Z$, and suppose that for every $Z \\subseteq \\alpha$\nand every $s \\in \\alpha$, $s \\in f(Z)$ if and only if $F(P_Z)(s)$ holds. Then for every\n$s \\in \\alpha$, $s \\in \\mathrm{lfp}_{\\mathrm{fin}}(f)$ if and only if $s$ satisfies the least\nfixed point of $F$ in the complete lattice of predicates on $\\alpha$.\n\nOne inclusion is iteration into the fixed point; the other is Park induction: the\n$|\\alpha|$-th iterate of $F$ from the everywhere-false predicate is pre-fixed because the\ncorresponding iterate of $f$ has stabilized, transported through the hypothesis relating $f$\nand $F$.",
+   "declaration": "Finset.mem_lfpFin_iff_lfp",
+   "lean": {
+    "file": "MathlibExt/Order/FixedPoints/Finset.lean",
+    "line": 241,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/scott-continuous-maps-and-least-fixed-points/curry.md",
+   "title": "Currying of Scott-continuous maps",
+   "statement": "Let $\\alpha$, $\\beta$, $\\gamma$ be ω-complete partial\norders and let $f : \\alpha \\times \\beta \\to \\gamma$ be a Scott-continuous map, that is, a map that\nis monotone and preserves suprema of ω-chains. Its currying is the Scott-continuous map from\n$\\alpha$ to the ω-complete partial order of Scott-continuous maps $\\beta \\to \\gamma$, ordered\npointwise, that sends $a$ to the map $b \\mapsto f(a, b)$.",
+   "declaration": "OmegaCompletePartialOrder.ContinuousHom.curry",
+   "lean": {
+    "file": "MathlibExt/Order/OmegaCompletePartialOrder/ContinuousHom.lean",
+    "line": 71,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/scott-continuous-maps-and-least-fixed-points/lfp-eq.md",
+   "title": "The least fixed point is a fixed point",
+   "statement": "Let $D$ be an ω-complete partial order with a\nleast element $\\bot$, and let $f : D \\to D$ be Scott-continuous, that is, monotone and preserving\nsuprema of ω-chains. Then the least fixed point $\\operatorname{lfp} f$ of $f$ satisfies\n$f(\\operatorname{lfp} f) = \\operatorname{lfp} f$.",
+   "declaration": "OmegaCompletePartialOrder.ContinuousHom.lfp_eq",
+   "lean": {
+    "file": "MathlibExt/Order/OmegaCompletePartialOrder/ContinuousHom.lean",
+    "line": 88,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/scott-continuous-maps-and-least-fixed-points/lfp-hom.md",
+   "title": "The least-fixed-point operator as a Scott-continuous map",
+   "statement": "Let $D$ be an ω-complete\npartial order with a least element $\\bot$. The least-fixed-point operator, sending a\nScott-continuous map $f : D \\to D$ to its least fixed point $\\operatorname{lfp} f$, bundled as a\nScott-continuous map from the ω-complete partial order of Scott-continuous maps $D \\to D$,\nordered pointwise, to $D$.",
+   "declaration": "OmegaCompletePartialOrder.ContinuousHom.lfpHom",
+   "lean": {
+    "file": "MathlibExt/Order/OmegaCompletePartialOrder/ContinuousHom.lean",
+    "line": 122,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/scott-continuous-maps-and-least-fixed-points/lfp-le.md",
+   "title": "The least fixed point lies below every prefixed point",
+   "statement": "Let $D$ be an ω-complete partial\norder with a least element $\\bot$, let $f : D \\to D$ be Scott-continuous, that is, monotone and\npreserving suprema of ω-chains, and let $\\operatorname{lfp} f$ be the supremum of the Kleene\nchain $\\bot \\le f(\\bot) \\le f(f(\\bot)) \\le \\cdots$. If $a \\in D$ satisfies $f(a) \\le a$, then\n$\\operatorname{lfp} f \\le a$.\n\nTogether with $f(\\operatorname{lfp} f) = \\operatorname{lfp} f$, this makes $\\operatorname{lfp} f$\nthe least fixed point of $f$.",
+   "declaration": "OmegaCompletePartialOrder.ContinuousHom.lfp_le",
+   "lean": {
+    "file": "MathlibExt/Order/OmegaCompletePartialOrder/ContinuousHom.lean",
+    "line": 92,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/scott-continuous-maps-and-least-fixed-points/lfp-scott-continuous.md",
+   "title": "Scott continuity of the least-fixed-point operator",
+   "statement": "Let $D$ be an ω-complete partial\norder with a least element $\\bot$. For a Scott-continuous map $f : D \\to D$, that is, one that is\nmonotone and preserves suprema of ω-chains, let $\\operatorname{lfp} f$ be its least fixed point.\nThe map $f \\mapsto \\operatorname{lfp} f$, from the ω-complete partial order of Scott-continuous\nmaps $D \\to D$, ordered pointwise, to $D$, is Scott-continuous.",
+   "declaration": "OmegaCompletePartialOrder.ContinuousHom.lfp_ωScottContinuous",
+   "lean": {
+    "file": "MathlibExt/Order/OmegaCompletePartialOrder/ContinuousHom.lean",
+    "line": 102,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/scott-continuous-maps-and-least-fixed-points/lfp.md",
+   "title": "Least fixed point of a Scott-continuous map",
+   "statement": "Let $D$ be an ω-complete partial order with\na least element $\\bot$, and let $f : D \\to D$ be Scott-continuous, that is, monotone and\npreserving suprema of ω-chains. The least fixed point $\\operatorname{lfp} f$ of $f$ is the\nsupremum of the Kleene chain $\\bot \\le f(\\bot) \\le f(f(\\bot)) \\le \\cdots$, whose $n$-th term is\nthe $n$-fold iterate $f^n(\\bot)$.",
+   "declaration": "OmegaCompletePartialOrder.ContinuousHom.lfp",
+   "lean": {
+    "file": "MathlibExt/Order/OmegaCompletePartialOrder/ContinuousHom.lean",
+    "line": 83,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/scott-continuous-maps-and-least-fixed-points/scott-continuous-of-apply.md",
+   "title": "Scott continuity into a function space is checked pointwise",
+   "statement": "Let $\\alpha$, $\\beta$,\n$\\gamma$ be ω-complete partial orders, and let $g$ be a map from $\\alpha$ to the ω-complete\npartial order of Scott-continuous maps $\\beta \\to \\gamma$, ordered pointwise. If for every\n$b \\in \\beta$ the map $a \\mapsto g(a)(b)$ is Scott-continuous, then $g$ is Scott-continuous.\nHere a map is Scott-continuous when it is monotone and preserves suprema of ω-chains.",
+   "declaration": "OmegaCompletePartialOrder.ContinuousHom.ωScottContinuous_of_apply",
+   "lean": {
+    "file": "MathlibExt/Order/OmegaCompletePartialOrder/ContinuousHom.lean",
+    "line": 63,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/transitive-closure-of-finite-relations/decidable-refl-trans-gen.md",
+   "title": "Decidability of the reflexive-transitive closure on a finite type",
+   "statement": "Let $\\alpha$ be a\nfinite type with decidable equality and let $r$ be a decidable relation on $\\alpha$. Then the\nreflexive-transitive closure of $r$ is decidable: for all $a, t \\in \\alpha$ it is decidable\nwhether $t$ is reachable from $a$ in zero or more $r$-steps.",
+   "declaration": "Relation.decidableReflTransGen",
+   "lean": {
+    "file": "MathlibExt/Logic/Relation/FiniteReachability.lean",
+    "line": 115,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/transitive-closure-of-finite-relations/decidable-trans-gen.md",
+   "title": "Decidability of the transitive closure on a finite type",
+   "statement": "Let $\\alpha$ be a finite type\nwith decidable equality and let $r$ be a decidable relation on $\\alpha$. Then the transitive\nclosure of $r$ is decidable: for all $a, t \\in \\alpha$ it is decidable whether $t$ is reachable\nfrom $a$ in one or more $r$-steps.\n\nThe decision is membership of $t$ in the finite set of elements reachable from $a$.",
+   "declaration": "Relation.decidableTransGen",
+   "lean": {
+    "file": "MathlibExt/Logic/Relation/FiniteReachability.lean",
+    "line": 110,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/transitive-closure-of-finite-relations/mem-trans-gen-fin-from.md",
+   "title": "Membership in the set reachable from finitely many sources",
+   "statement": "Let $\\alpha$ be a finite type\nwith decidable equality, let $r$ be a decidable relation on $\\alpha$, and let $A \\subseteq \\alpha$\nbe a finite set. An element $t \\in \\alpha$ lies in the finite set of elements reachable from $A$\nin one or more $r$-steps (computed as a finite least fixed point) if and only if there is some\n$a \\in A$ such that $(a, t)$ lies in the transitive closure of $r$.",
+   "declaration": "Relation.mem_transGenFinFrom",
+   "lean": {
+    "file": "MathlibExt/Logic/Relation/FiniteReachability.lean",
+    "line": 74,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/transitive-closure-of-finite-relations/mem-trans-gen-fin.md",
+   "title": "Membership in the set reachable from a point",
+   "statement": "Let $\\alpha$ be a finite type with\ndecidable equality, let $r$ be a decidable relation on $\\alpha$, and let $a \\in \\alpha$. An\nelement $t \\in \\alpha$ lies in the finite set of elements reachable from $a$ in one or more\n$r$-steps (computed as a finite least fixed point) if and only if $(a, t)$ lies in the transitive\nclosure of $r$.",
+   "declaration": "Relation.mem_transGenFin",
+   "lean": {
+    "file": "MathlibExt/Logic/Relation/FiniteReachability.lean",
+    "line": 102,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/transitive-closure-of-finite-relations/post-fin.md",
+   "title": "Successors of a finite set",
+   "statement": "Let $\\alpha$ be a finite type and let $r$ be a decidable\nrelation on $\\alpha$. For a finite set $Z \\subseteq \\alpha$, the set of $r$-successors of $Z$ is\nthe finite set $\\mathrm{post}_r(Z) = \\{t \\in \\alpha \\mid r(z, t) \\text{ for some } z \\in Z\\}$.",
+   "declaration": "Relation.postFin",
+   "lean": {
+    "file": "MathlibExt/Logic/Relation/FiniteReachability.lean",
+    "line": 38,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/transitive-closure-of-finite-relations/trans-gen-fin-from.md",
+   "title": "Elements reachable from a finite set of sources",
+   "statement": "Let $\\alpha$ be a finite type with\ndecidable equality, let $r$ be a decidable relation on $\\alpha$, and let $A \\subseteq \\alpha$ be a\nfinite set. Write $\\mathrm{post}_r(Z)$ for the set of $r$-successors of elements of a finite set\n$Z \\subseteq \\alpha$, and let $f$ be the step map\n$f(Z) = \\mathrm{post}_r(A) \\cup \\mathrm{post}_r(Z)$. The finite set of elements reachable from\n$A$ is $f^{|\\alpha|}(\\emptyset)$, obtained by applying $f$ to the empty set $|\\alpha|$ times,\nwhere $|\\alpha|$ is the number of elements of $\\alpha$.\n\nSince $f$ is monotone, this is the least fixed point of $f$; it consists of the elements\nreachable from some element of $A$ in one or more $r$-steps.",
+   "declaration": "Relation.transGenFinFrom",
+   "lean": {
+    "file": "MathlibExt/Logic/Relation/FiniteReachability.lean",
+    "line": 63,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/transitive-closure-of-finite-relations/trans-gen-fin.md",
+   "title": "Elements reachable from a point",
+   "statement": "Let $\\alpha$ be a finite type with decidable equality,\nlet $r$ be a decidable relation on $\\alpha$, and let $a \\in \\alpha$. The finite set of elements\nreachable from $a$ is the finite set of elements reachable from the source set $\\{a\\}$, that is,\nthe elements reachable from $a$ in one or more $r$-steps.",
+   "declaration": "Relation.transGenFin",
+   "lean": {
+    "file": "MathlibExt/Logic/Relation/FiniteReachability.lean",
+    "line": 67,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/fixed-points-domain-theory/transitive-closure-of-finite-relations/trans-gen-step.md",
+   "title": "One step of the reachability iteration",
+   "statement": "Let $\\alpha$ be a finite type with decidable\nequality, let $r$ be a decidable relation on $\\alpha$, and write $\\mathrm{post}_r(Z)$ for the set\nof $r$-successors of elements of a finite set $Z \\subseteq \\alpha$. For a finite set\n$A \\subseteq \\alpha$, the step map sends a finite set $Z \\subseteq \\alpha$ to\n$\\mathrm{post}_r(A) \\cup \\mathrm{post}_r(Z)$.\n\nIts least fixed point is the set of elements reachable from $A$ in one or more $r$-steps.",
+   "declaration": "Relation.transGenStep",
+   "lean": {
+    "file": "MathlibExt/Logic/Relation/FiniteReachability.lean",
+    "line": 55,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/lattices-boolean-algebras/lattice-valuations-and-the-jaccard-distance/gilbert-condition-iff.md",
+   "title": "Characterization of the Gilbert condition",
+   "statement": "A function $f \\colon L \\to \\mathbb{R}$\non a lattice $L$ satisfies the Gilbert condition if and only if $f$ is a modular valuation\nand is monotone, that is, $X \\le Y$ implies $f(X) \\le f(Y)$.",
+   "declaration": "JaccardLattice.gilbertCondition_iff",
+   "lean": {
+    "file": "MathlibExt/Combinatorics/JaccardLattice.lean",
+    "line": 125,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/lattices-boolean-algebras/lattice-valuations-and-the-jaccard-distance/gilbert-condition.md",
+   "title": "Gilbert condition",
+   "statement": "A function $f \\colon L \\to \\mathbb{R}$ on a lattice $L$, with join\n$\\vee$ and meet $\\wedge$, satisfies the Gilbert condition when\n$f(X \\vee Z) + f(Z \\vee Y) + f(X \\wedge Y) \\ge\nf(X \\wedge Z) + f(Z \\wedge Y) + f(X \\vee Y \\vee Z)$ for all $X, Y, Z \\in L$.",
+   "declaration": "JaccardLattice.GilbertCondition",
+   "lean": {
+    "file": "MathlibExt/Combinatorics/JaccardLattice.lean",
+    "line": 42,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/lattices-boolean-algebras/lattice-valuations-and-the-jaccard-distance/is-modular-valuation.md",
+   "title": "Modular valuation",
+   "statement": "A function $f \\colon L \\to \\mathbb{R}$ on a lattice $L$, with join\n$\\vee$ and meet $\\wedge$, is a modular valuation when\n$f(X) + f(Y) = f(X \\vee Y) + f(X \\wedge Y)$ for all $X, Y \\in L$.",
+   "declaration": "JaccardLattice.IsModularValuation",
+   "lean": {
+    "file": "MathlibExt/Combinatorics/JaccardLattice.lean",
+    "line": 34,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/lattices-boolean-algebras/lattice-valuations-and-the-jaccard-distance/is-strictly-positive.md",
+   "title": "Strictly positive valuation",
+   "statement": "A function $f \\colon L \\to \\mathbb{R}$ on a lattice\n$L$ is strictly positive when $f(X) > 0$ for every $X \\in L$.",
+   "declaration": "JaccardLattice.IsStrictlyPositive",
+   "lean": {
+    "file": "MathlibExt/Combinatorics/JaccardLattice.lean",
+    "line": 38,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/lattices-boolean-algebras/lattice-valuations-and-the-jaccard-distance/jaccard-dist-eq-div.md",
+   "title": "Jaccard distance as a single quotient",
+   "statement": "Let $f \\colon L \\to \\mathbb{R}$ be a strictly\npositive function on a lattice $L$, with join $\\vee$ and meet $\\wedge$. Then for all\n$X, Y \\in L$ the Jaccard distance of $X$ and $Y$ with respect to $f$ is\n$d_f(X, Y) = (f(X \\vee Y) - f(X \\wedge Y)) / f(X \\vee Y)$.",
+   "declaration": "JaccardLattice.jaccardDist_eq_div",
+   "lean": {
+    "file": "MathlibExt/Combinatorics/JaccardLattice.lean",
+    "line": 131,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/lattices-boolean-algebras/lattice-valuations-and-the-jaccard-distance/jaccard-dist-triangle-of-gilbert-conditi.md",
+   "title": "Jaccard triangle inequality under the Gilbert condition",
+   "statement": "Let\n$f \\colon L \\to \\mathbb{R}$ be a strictly positive function on a lattice $L$ that satisfies\nthe Gilbert condition, and let $d_f$ be the Jaccard distance of $f$. Then\n$d_f(U, W) + d_f(W, V) \\ge d_f(U, V)$ for all $U, V, W \\in L$.",
+   "declaration": "JaccardLattice.jaccardDist_triangle_of_gilbertCondition",
+   "lean": {
+    "file": "MathlibExt/Combinatorics/JaccardLattice.lean",
+    "line": 138,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/lattices-boolean-algebras/lattice-valuations-and-the-jaccard-distance/jaccard-dist-triangle.md",
+   "title": "Triangle inequality for the generalized Jaccard distance",
+   "statement": "Let\n$f \\colon L \\to \\mathbb{R}$ be a strictly positive, monotone modular valuation on a lattice\n$L$, and let $d_f$ be the Jaccard distance of $f$. Then\n$d_f(U, W) + d_f(W, V) \\ge d_f(U, V)$ for all $U, V, W \\in L$.",
+   "declaration": "JaccardLattice.jaccardDist_triangle",
+   "lean": {
+    "file": "MathlibExt/Combinatorics/JaccardLattice.lean",
+    "line": 182,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/lattices-boolean-algebras/lattice-valuations-and-the-jaccard-distance/jaccard-dist.md",
+   "title": "Generalized Jaccard distance",
+   "statement": "For a function $f \\colon L \\to \\mathbb{R}$ on a lattice\n$L$ with join $\\vee$ and meet $\\wedge$, the Jaccard distance of $X, Y \\in L$ is\n$d_f(X, Y) = 1 - f(X \\wedge Y) / f(X \\vee Y)$.\n\nDivision by zero is taken to give $0$, so $d_f(X, Y) = 1$ when $f(X \\vee Y) = 0$.",
+   "declaration": "JaccardLattice.jaccardDist",
+   "lean": {
+    "file": "MathlibExt/Combinatorics/JaccardLattice.lean",
+    "line": 47,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/lattices-boolean-algebras/stone-representation-theorem.md",
+   "title": "Stone representation theorem",
+   "statement": "Every Boolean algebra $B$ embeds in a power set algebra: there\nare a set $X$ and an injective map $f$ from $B$ to the power set of $X$ such that\n$f(a \\sqcup b) = f(a) \\cup f(b)$ and $f(a \\sqcap b) = f(a) \\cap f(b)$ for all $a, b \\in B$,\n$f(\\top) = X$ and $f(\\bot) = \\emptyset$.\n\nSuch a map automatically preserves complements: $f(a^c) = X \\setminus f(a)$ for all $a \\in B$.\n\n## Sources\n\n- M. H. Stone, The Theory of Representation for Boolean Algebras, Trans. Amer. Math. Soc. 40 (1936), 37–111, DOI 10.2307/1989664.",
+   "declaration": "MathlibExt.Order.BooleanAlgebra.StoneRepresentation.stone_representation_theorem",
+   "lean": {
+    "file": "MathlibExt/Order/BooleanAlgebra/StoneRepresentation.lean",
+    "line": 79,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/ordered-sets/is-dense-linear-order-without-endpoints.md",
+   "title": "Dense linear order without endpoints",
+   "statement": "A relation $R$ on a type $\\alpha$ is a *dense linear\norder without endpoints* if it is a strict total order (irreflexive, transitive, and\ntrichotomous: for all $a, b$, at least one of $R(a,b)$, $a = b$, $R(b,a)$ holds), it is dense\n(whenever $R(a,b)$, there is $c$ with $R(a,c)$ and $R(c,b)$), and it has no endpoints (for every\n$a$ there are $b$ and $b'$ with $R(b,a)$ and $R(a,b')$).",
+   "declaration": "MetaMathlibExt.IsDenseLinearOrderWithoutEndpoints",
+   "lean": {
+    "file": "MathlibExt/SetTheory/Order/DenseLinearOrder.lean",
+    "line": 28,
+    "kind": "def",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/ordered-sets/monotone-sequences/antitone-nat-iff-succ-le.md",
+   "title": "Successor criterion for antitone sequences",
+   "statement": "Let $\\alpha$ be a preordered set. A sequence\n$f : \\mathbb{N} \\to \\alpha$ is antitone (that is, $f(n) \\le f(m)$ whenever $m \\le n$)\nif and only if $f(n+1) \\le f(n)$ for every $n \\in \\mathbb{N}$.",
+   "declaration": "antitone_nat_iff_succ_le",
+   "lean": {
+    "file": "MathlibExt/Order/Monotone/Nat.lean",
+    "line": 47,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/ordered-sets/monotone-sequences/monotone-nat-iff-le-succ.md",
+   "title": "Successor criterion for monotone sequences",
+   "statement": "Let $\\alpha$ be a preordered set. A sequence\n$f : \\mathbb{N} \\to \\alpha$ is monotone (that is, $f(m) \\le f(n)$ whenever $m \\le n$)\nif and only if $f(n) \\le f(n+1)$ for every $n \\in \\mathbb{N}$.",
+   "declaration": "monotone_nat_iff_le_succ",
+   "lean": {
+    "file": "MathlibExt/Order/Monotone/Nat.lean",
+    "line": 37,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/ordered-sets/monotone-sequences/monotone-or-antitone-nat-iff.md",
+   "title": "Successor criterion for monotone or antitone sequences",
+   "statement": "Let $\\alpha$ be a preordered set\nand let $f : \\mathbb{N} \\to \\alpha$ be a sequence. Then $f$ is monotone ($f(m) \\le f(n)$ whenever\n$m \\le n$) or antitone ($f(n) \\le f(m)$ whenever $m \\le n$) if and only if either\n$f(n) \\le f(n+1)$ for every $n \\in \\mathbb{N}$, or $f(n+1) \\le f(n)$ for every $n \\in \\mathbb{N}$.",
+   "declaration": "monotone_or_antitone_nat_iff",
+   "lean": {
+    "file": "MathlibExt/Order/Monotone/Nat.lean",
+    "line": 61,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/ordered-sets/strict-total-orders/ext.md",
+   "title": "Strict total orders are determined by their relation",
+   "statement": "Two strict total orders on a\ntype $\\alpha$ with the same relation are equal.",
+   "declaration": "MathlibExt.Order.StrictTotalOrder.ext",
+   "lean": {
+    "file": "MathlibExt/Order/StrictTotalOrder.lean",
+    "line": 41,
+    "kind": "theorem",
+    "sorry": false
+   }
+  },
+  {
+   "path": "Order/ordered-sets/strict-total-orders/strict-total-order.md",
+   "title": "Strict total order",
+   "statement": "A strict total order on a type $\\alpha$ consists of a binary\nrelation $<$ on $\\alpha$ that is irreflexive (no $a < a$), transitive ($a < b$ and $b < c$\nimply $a < c$) and total on distinct elements (if $a \\ne b$, then $a < b$ or $b < a$). It\nmodels strict preference.",
+   "declaration": "MathlibExt.Order.StrictTotalOrder",
+   "lean": {
+    "file": "MathlibExt/Order/StrictTotalOrder.lean",
+    "line": 24,
+    "kind": "structure",
+    "sorry": false
+   }
+  }
+ ]
+}

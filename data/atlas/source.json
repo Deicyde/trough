@@ -1,0 +1,32 @@
+{
+ "repo": "Deicyde/atlas-lean",
+ "branch": "wiki/autoform-blueprint",
+ "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "date": "2026-11-11T06:16:11Z",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "mathlib_version": "v4.35.0",
+ "license": "Apache-2.0",
+ "license_notice": "Codebase is not intended for use to train, fine-tune, distill, evaluate, or otherwise develop ML models",
+ "counts": {
+  "annotations_without_article": 0,
+  "areas": 6,
+  "lean_files": 13276,
+  "names_declared_twice_Atlas_Atlas": 9,
+  "names_declared_twice_CSLibExt_Atlas": 435,
+  "names_declared_twice_MathlibExt_Atlas": 3764,
+  "names_declared_twice_MathlibExt_MathlibExt": 3,
+  "names_declared_twice_PhyslibExt_Atlas": 7177,
+  "names_declared_twice_WantedExt_WantedExt": 1,
+  "results": 45879,
+  "results_none": 8,
+  "results_proved": 37870,
+  "results_sorry": 3,
+  "results_wanted": 7998,
+  "subjects": 27
+ },
+ "site": {
+  "url": "https://deicyde.github.io/atlas-lean/",
+  "cards": true
+ }
+}
