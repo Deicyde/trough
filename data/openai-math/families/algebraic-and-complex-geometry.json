@@ -1,0 +1,1239 @@
+{
+ "schema": "trough-openai-math/v1",
+ "rev": "4eaee87548250b2682affda7d05d947c05554bae",
+ "families": [
+  {
+   "number": "032",
+   "title": "The rational Hodge conjecture for CM abelian varieties",
+   "description": "Proves the rational Hodge conjecture for every complex CM abelian variety, in every dimension and codimension. Through Milne's theorems, this also gives the Tate conjecture for all abelian varieties over finite fields and the Hodge standard conjecture for abelian varieties in every characteristic.",
+   "doc": "lean/docs/032.md",
+   "manuscripts": [
+    {
+     "title": "The rational Hodge conjecture for CM abelian varieties",
+     "path": "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the rational Hodge conjecture for complex abelian varieties with complex multiplication: every rational Hodge class on such a variety is a rational linear combination of algebraic cycle classes. As consequences, we obtain the generalized Hodge conjecture for CM abelian varieties, the Tate conjecture for abelian varieties over finite fields, and the Hodge standard conjecture for abelian varieties in arbitrary characteristic."
+    },
+    {
+     "title": "Algebraic Kuga–Satake correspondences and Hodge conjectures on a K3 quadratic locus",
+     "path": "preprints/Algebraic-Kuga-Satake-correspondences-and-Hodge-conjectures-on-a-K3-quadratic-locus-September-30-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the rational Hodge and generalized Hodge conjectures in every cohomological degree of every self-power of a projective complex K3 surface whose transcendental quadratic space, with its cup-product form, admits a rational isometric embedding in $\\mathbb U_{\\mathbb Q}^{\\oplus2}\\perp\\langle-1\\rangle^4$. This includes every ample *P*-polarized K3 surface, including all Picard jumps, for $P=\\mathbb U\\oplus D_8(-1)\\oplus D_4(-1)$. On this locus we construct algebraic correspondences inducing every prescribed standard even-Clifford Kuga–Satake tensor. More generally, for any projective complex K3 surface, algebraicity of one exact standard even-Clifford Kuga–Satake tensor implies both conjectures for every self-power."
+    },
+    {
+     "title": "Weil classes and Hodge classes on abelian powers",
+     "path": "preprints/Weil-classes-and-Hodge-classes-on-abelian-powers-October-6-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the rational Hodge conjecture in every codimension on every self-power of a complex abelian sixfold with an imaginary-quadratic action and a compatible polarization whose rational homological Hermitian form is hyperbolic of signature $(3,3)$. We also prove it in every codimension on every self-power of a complex abelian variety of dimension at most five admitting an imaginary-quadratic action. Both results include nonsimple varieties and special periods with additional endomorphisms. The proof uses the companion theorem on the rational Hodge conjecture for CM abelian varieties."
+    },
+    {
+     "title": "Abelian covers, Gale correspondences, and the Hodge conjecture for powers",
+     "path": "preprints/Abelian-covers-Gale-correspondences-and-the-Hodge-conjecture-for-powers-October-6-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the rational Hodge conjecture on every self-power of the Jacobian at each tensor Hodge-generic point of the full marked variation of a connected abelian cover of curves. This holds in every base genus and for every compatible branching pattern. For any CM abelian variety, the conclusion also holds for every self-power of its product with the Jacobian, on the same Hodge-generic locus. We also prove the conjecture on every self-power of a very general member of the full smooth labelled family of diagonal complete intersections cut out by at most two equations of a common degree, in every dimension and every degree at least two."
+    },
+    {
+     "title": "A Conditional Reduction for Algebraic Kuga–Satake Correspondences",
+     "path": "preprints/A-Conditional-Reduction-for-Algebraic-Kuga-Satake-Correspondences-September-10-2026/paper.pdf",
+     "note": "",
+     "abstract": "For a polarized K3 surface whose primitive cohomology has full orthogonal Hodge group, one algebraic correspondence inducing a nonzero map from that cohomology to the second cohomology of an abelian variety suffices to recover the prescribed full Kuga–Satake correspondence. We give an equivalent condition using holomorphic one-forms on a generically finite surface cover. If this input holds very generally in a polarized component, the prescribed correspondence is algebraic throughout that component, for every choice of standard data on the transcendental part. The existence of the initial correspondence remains a hypothesis."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/032.md",
+    "title": "The rational Hodge conjecture for CM abelian varieties",
+    "papers": [
+     "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves that every rational Hodge class on a complex CM abelian variety is algebraic. For a smooth integral projective group scheme $X$ over $\\mathbb C$ with the stated complex-multiplication data and every $p\\ge0$, each rational Hodge class of degree $2p$ is a rational linear combination of cycle classes of codimension-$p$ algebraic subvarieties. The result applies in every dimension and codimension.\n\nThe complex-multiplication hypothesis is expressed on geometric rational $H^1$: it is a finite direct sum of rank-one vector spaces over CM number fields, and their diagonal action preserves the holomorphic Hodge filtration under the rational-to-de Rham comparison. The fields may differ among the summands.\n\nThe paper's consequences for the Tate conjecture over finite fields and the Hodge standard conjecture in arbitrary characteristic are outside this selected statement.\n\nWe thank the contributors to [HodgeConjecture](https://github.com/Paul-Lez/HodgeConjecture) (which itself adapts [sphere-six-complex](https://github.com/deancureton/sphere-six-complex) and [mathlib4](https://github.com/leanprover-community/mathlib4)) for their Lean statement of the Hodge conjecture, which was used for the Comparator challenge.",
+    "results": [
+     {
+      "label": "Rational Hodge classes on CM abelian varieties are algebraic",
+      "challenge": "lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/Challenge.lean",
+      "config": "lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/main.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "HodgeCM.hodge_conjecture_for_cm_abelian_varieties",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 38,
+        "statement": "theorem hodge_conjecture_for_cm_abelian_varieties\n    (X : Over (Spec ↧ℂ)) [IsIntegral X.left] [Smooth X.hom]\n    [_root_.OAI.AlgebraicGeometry.Foundations.ProjectiveSpaceIs.IsProjective X.hom] [GrpObj X]\n    (hCM : _root_.OAI.AlgebraicGeometry.ComplexMultiplication.Definitions.HasComplexMultiplication X) (p : ℕ) :\n    Hdg^p(X; ℚ) ≤ _root_.OAI.AlgebraicGeometry.ComplexPoint.Basic.ComplexSchemePoint.algebraicCycleClassSpan X p",
+        "proof": {
+         "file": "lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/Solution.lean",
+         "line": 11,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/Solution.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "033",
+   "title": "Iitaka subadditivity, variation, and logarithmic additivity",
+   "description": "Proves Campana's orbifold Iitaka subadditivity conjecture for smooth Fujiki-class-$\\mathcal C$ manifolds with rational simple-normal-crossing boundaries. For projective fibrations $f:U\\to V$ of smooth complex quasi-projective varieties with connected fibers, general fiber *F*, and $\\bar\\kappa(V)\\ge0$, proves Popa's inequality $\\bar\\kappa(U)\\ge\\kappa(F)+\\max\\{\\bar\\kappa(V),\\mathop{\\mathrm{Var}}\\nolimits (f)\\}$, where variation measures the whole geometric generic fiber.",
+   "doc": "lean/docs/033.md",
+   "manuscripts": [
+    {
+     "title": "Orbifold and logarithmic Iitaka subadditivity",
+     "path": "preprints/Orbifold-and-logarithmic-Iitaka-subadditivity-September-26-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove Campana's orbifold Iitaka subadditivity conjecture for rational simple normal crossing boundaries on compact manifolds in Fujiki class $\\mathcal C$, including coefficient one. Ordinary and logarithmic subadditivity follow."
+    },
+    {
+     "title": "Logarithmic Kodaira dimension and whole-fiber variation",
+     "path": "preprints/Logarithmic-Kodaira-dimension-and-whole-fiber-variation-September-26-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the logarithmic Iitaka–Viehweg inequality for projective surjective morphisms with connected fibers between smooth complex quasi-projective varieties whose base has nonnegative logarithmic Kodaira dimension. The variation measures the birational field of definition of the whole geometric generic fiber. This resolves Popa's logarithmic variation conjecture positively."
+    },
+    {
+     "title": "The reverse logarithmic Kodaira inequality and additivity",
+     "path": "preprints/The-reverse-logarithmic-Kodaira-inequality-and-additivity-September-26-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the reverse logarithmic Kodaira inequality for a surjective connected-fiber morphism $f:(X,E)\\to(Y,D)$ of smooth projective reduced simple-normal-crossing pairs, with $\\mathop{\\mathrm{Supp}}\\nolimits (f^*D)\\subseteq\\mathop{\\mathrm{Supp}}\\nolimits E$, such that *X* and every boundary stratum are smooth over $Y\\setminus\\mathop{\\mathrm{Supp}}\\nolimits D$. Together with logarithmic subadditivity, the inequality gives additivity, including both negative-infinity cases. This resolves Popa's logarithmic additivity conjecture positively in the projective reduced-SNC, stratum-smooth setting."
+    },
+    {
+     "title": "Projective Hodge lines and ordinary Iitaka subadditivity",
+     "path": "preprints/Projective-Hodge-lines-and-ordinary-Iitaka-subadditivity-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the ordinary Iitaka subadditivity conjecture for surjective projective morphisms with connected fibers between smooth connected projective varieties over algebraically closed fields of characteristic zero. If *F* is the geometric generic fiber of $f:X\\to Z$, then $\\kappa(X)\\geq\\kappa(F)+\\kappa(Z)$."
+    },
+    {
+     "title": "B-semiampleness for compact log-smooth Kähler fibrations",
+     "path": "preprints/B-semiampleness-for-compact-log-smooth-Kahler-fibrations-September-10-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the compact log-smooth Kähler case of b-semiampleness. Let $f:Y\\to X$ be a surjective holomorphic map with connected fibers between smooth compact connected Kähler manifolds, and let Δ be an effective rational divisor with simple normal crossing support and coefficients in $[0,1]$, with $K_Y+\\Delta\\sim_{\\mathbb Q}f^*L$ for $L\\in\\mathop{\\mathrm{Pic}}\\nolimits (X)_{\\mathbb Q}$. There is a smooth compact Kähler modification $S\\to X$ for which the threshold-moduli line satisfies $M_{S_1}=\\nu^*M_S$ in $\\mathop{\\mathrm{Pic}}\\nolimits (S_1)_{\\mathbb Q}$ for every smooth compact Kähler modification $\\nu:S_1\\to S$, and some positive multiple of $M_{S}$ is represented by a holomorphic line bundle generated by global sections. Horizontal components of coefficient one are allowed; neither projectivity nor a Campana orbifold Iitaka hypothesis is assumed."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/033.md",
+    "title": "Iitaka subadditivity, variation, and logarithmic additivity",
+    "papers": [
+     "preprints/The-reverse-logarithmic-Kodaira-inequality-and-additivity-September-26-2026/paper.pdf"
+    ],
+    "scope": "The paper studies logarithmic Kodaira additivity for connected-fiber morphisms of smooth projective reduced simple-normal-crossing pairs that are smooth on all boundary strata away from the base boundary. The linked formalization proves the negative-fiber branch: for a very general base point, if the logarithmic Kodaira dimension of the fiber is $-\\infty$, then the total logarithmic Kodaira dimension equals the sum of the base and fiber dimensions and is $-\\infty$. Every positive-degree logarithmic pluriform section on the total space then vanishes.\n\nThe finite-dimension and negative-base branches of the paper's additivity theorem are outside this selected statement.",
+    "results": [
+     {
+      "label": "Logarithmic Kodaira additivity in the negative-fiber branch",
+      "challenge": "lean/ComparatorChallenges/LogKodairaFiberNegative.lean",
+      "config": "lean/ComparatorChallenges/LogKodairaFiberNegative.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.ReverseLogKodaira.SmoothProjectiveVariety.veryGenerally_fiber_negative_branch",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 233,
+        "statement": "theorem veryGenerally_fiber_negative_branch\n    {X Y : SmoothProjectiveVariety} {E : X.ReducedSNCBoundary} {D : Y.ReducedSNCBoundary}\n    (f : StratumSmoothFibration X Y E D) :\n    VeryGenerally Y fun y => y.point ∈ D.complement ∧\n      ∀ F : FiberModel f.toBoundaryFibration y, F.boundary.kodaira = ⊥ →\n        E.kodaira = D.kodaira + F.boundary.kodaira ∧\n        ∀ (m : ℕ), 0 < m → ∀ s : X.RationalPluriform m, s ∈ E.sections m → s = 0",
+        "proof": {
+         "file": "lean/OAI/AlgebraicGeometry/LogKodaira/FiberNegative.lean",
+         "line": 53,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/AlgebraicGeometry/LogKodaira/FiberNegative.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "034",
+   "title": "Log abundance for compact Kähler spaces under logarithmic Iitaka subadditivity",
+   "description": "Using logarithmic Iitaka subadditivity, proves log abundance in every dimension for normal compact Kähler log canonical pairs with effective rational boundary: an analytically nef ℚ-Cartier adjoint is semiample. It also proves projective log abundance over every algebraically closed field of characteristic zero and the effective Iitaka fibration conjecture for smooth projective varieties of nonnegative Kodaira dimension in that setting. A further result resolves the finite-rational-coefficient index conjecture for connected projective semi-log-canonical log Calabi–Yau pairs over such fields in each fixed dimension and for each fixed finite set of rational boundary coefficients, with a uniform index independent of the number of components.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Log abundance for compact Kähler spaces under logarithmic Iitaka subadditivity",
+     "path": "preprints/Log-abundance-for-compact-Kahler-spaces-under-logarithmic-Iitaka-subadditivity-October-6-2026/main.pdf",
+     "note": "",
+     "abstract": "Assume logarithmic Iitaka subadditivity for surjective morphisms with connected fibers between smooth projective complex varieties with compatible reduced simple normal crossing boundaries. We prove log abundance for normal irreducible compact Kähler spaces in every dimension: for a log canonical pair $(X,\\Delta)$ with effective rational boundary and $K_X+\\Delta$ ℚ-Cartier, analytic nefness of $K_X+\\Delta$ implies semiampleness."
+    },
+    {
+     "title": "Uniform indices for semi-log-canonical log Calabi–Yau pairs",
+     "path": "preprints/Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026/uniform-slc-index.pdf",
+     "note": "",
+     "abstract": "We prove a uniform index theorem for connected projective semi-log-canonical log Calabi–Yau pairs in every fixed dimension at least four over an algebraically closed field of characteristic zero. For boundary coefficients in a fixed finite rational set, a single multiple of the log canonical divisor is Cartier and linearly trivial. The multiple depends only on the dimension and coefficient set, not on the number of irreducible components. Together with the established theorem in dimensions at most three, this resolves the finite-rational-coefficient semi-log-canonical index conjecture."
+    },
+    {
+     "title": "Conditional good minimal models for compact Kähler fourfolds",
+     "path": "preprints/Conditional-good-minimal-models-for-compact-Kahler-fourfolds-October-6-2026/paper.pdf",
+     "note": "",
+     "abstract": "Assuming orbifold Iitaka subadditivity and abundance for nef fourfold adjoints of nonnegative Kodaira dimension, we prove the existence of good minimal models for globally strongly ℚ-factorial compact Kähler klt fourfold pairs with effective rational boundary and analytically pseudo-effective actual ℚ-Cartier adjoint. The ordinary fourfold minimal model program supplies the nef endpoint. We prove nonvanishing by fibration arguments and, in algebraic dimension zero, by singular metrics, holomorphic foliations, and extension from a reduced boundary. The projective abundance argument used in the proof is included in full."
+    },
+    {
+     "title": "Log abundance in characteristic zero",
+     "path": "preprints/Log-abundance-in-characteristic-zero-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the rational-boundary log abundance conjecture in every dimension over algebraically closed fields of characteristic zero: every nef ℚ-Cartier log canonical divisor on a projective log canonical pair with effective rational boundary is semiample. Over ℂ, the proof also establishes canonical nonvanishing for smooth projective varieties in every dimension."
+    },
+    {
+     "title": "Minimal metrics and interior injectivity for nef adjoints",
+     "path": "preprints/Minimal-metrics-and-interior-injectivity-for-nef-adjoints-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "Let $(H,\\Theta)$ be a projective complex klt pair with effective rational boundary and nef ℚ-Cartier adjoint. On any projective log resolution, minimal semipositive metrics on the pulled-back adjoint exist and have zero Lelong numbers everywhere. On smooth projective complex varieties, we also prove an $H^{1}$-injectivity theorem for rational interior boundaries with simple-normal-crossing support when both endpoint bundles carry zero-Lelong semipositive metrics."
+    },
+    {
+     "title": "Fourfold nonvanishing by minimal metrics and moving jets",
+     "path": "preprints/Fourfold-nonvanishing-by-minimal-metrics-and-moving-jets-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove canonical nonvanishing for smooth connected projective complex fourfolds: if $K_{X}$ is pseudo-effective, then $H^0(X,mK_X)\\ne0$ for some positive integer *m*."
+    },
+    {
+     "title": "Lifting sections from the reduced support of an adjoint",
+     "path": "preprints/Lifting-sections-from-the-reduced-support-of-an-adjoint-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "For a projective ℚ-factorial dlt pair with effective rational boundary over an algebraically closed field of characteristic zero, we prove that the adjoint has positive Iitaka dimension whenever a nonzero effective Cartier multiple is supported on the coefficient-one boundary and restricts to a semiample line bundle on its whole reduced support. This gives log abundance after nonvanishing in dimension at most four over ℂ."
+    },
+    {
+     "title": "Schnell fiber spaces and good canonical models",
+     "path": "preprints/Schnell-fiber-spaces-and-good-canonical-models-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the Campana–Peternell inequality $\\kappa(X)\\geq\\kappa(D)$ for a smooth connected projective complex variety *X* and an effective Cartier divisor *D* whenever $m_0K_X-D$ is pseudo-effective for some positive integer $m_{0}$. For an algebraic fiber space $f\\colon X\\to Y$ between smooth connected projective complex varieties, the hypothesis that $m_0K_X-f^*H$ is pseudo-effective with *H* ample Cartier gives $\\kappa(X)=\\kappa(F)+\\dim Y$ for a very general smooth fiber *F*, as well as nonzero sections of $mK_X-f^*H$ for all sufficiently large divisible *m*."
+    },
+    {
+     "title": "Uniform log Iitaka fibrations and bounded moduli denominators",
+     "path": "preprints/Uniform-log-Iitaka-fibrations-and-bounded-moduli-denominators-October-4-2026/uniform-log-iitaka.pdf",
+     "note": "",
+     "abstract": "For normal projective log canonical pairs over algebraically closed fields of characteristic zero, of fixed dimension *d* ≥ 5 and with effective boundary coefficients in a fixed finite rational set, we prove that one complete rounded pluricanonical system generates the full Iitaka field whenever the ℚ-Cartier log canonical divisor has nonnegative Kodaira dimension. Its degree depends only on the dimension and coefficient set. For the paper's normalized canonical bundle formulae over ℂ, we also bound the Cartier denominators of the moduli divisors on smooth projective determining models in terms of the dimension and coefficient set."
+    },
+    {
+     "title": "Uniform Pluricanonical Iitaka Fibrations",
+     "path": "preprints/Uniform-Pluricanonical-Iitaka-Fibrations-October-3-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the effective Iitaka fibration conjecture in characteristic zero. For each dimension, one pluricanonical degree defines the Iitaka fibration of every smooth integral projective variety of that dimension and nonnegative Kodaira dimension over an algebraically closed field. The associated sections generate the full Iitaka function field."
+    },
+    {
+     "title": "Relative denominators and effective systems for log Calabi-Yau fibrations",
+     "path": "preprints/Relative-denominators-and-effective-systems-for-log-Calabi-Yau-fibrations-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove uniform denominator and effective-system bounds for log Calabi-Yau fibrations from projective log canonical complex pairs of dimension at most four onto positive-dimensional bases, with boundary coefficients in a fixed finite rational set. The bounds give a uniform trivializing degree and a uniform b-Cartier multiple of the moduli b-divisor. When the base divisor is big, a uniform complete rounded adjoint system has section ratios generating the full base function field."
+    },
+    {
+     "title": "Arithmetic Stein-degree bounds for log Calabi–Yau pairs",
+     "path": "preprints/Arithmetic-Stein-degree-bounds-for-log-Calabi-Yau-pairs-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "Fix *d* ≥ 1 and *t* > 0. Let $(X,B)$ be an ordinary projective log canonical ℚ-pair of dimension *d* over a characteristic-zero field *k*, with *X* normal and integral, $H^0(X,\\mathcal O_X)=k$, *B* effective, and $K_X+B\\sim_{\\mathbb Q}0$. We prove that every prime component *S* of *B* with coefficient at least *t* satisfies $[k_S:k]\\leq N(d,t)$, where $k_{S}$ is the relative algebraic closure of *k* in $k(S)$. This also bounds the Stein degree of *S* over *k*, proving the contraction-to-a-point formulation of Birkar's Stein-degree conjecture for ordinary ℚ-pairs."
+    },
+    {
+     "title": "Uniform effective log Iitaka fibrations for fourfolds",
+     "path": "preprints/Uniform-effective-log-Iitaka-fibrations-for-fourfolds-September-26-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the finite-rational-coefficient case of the effective log Iitaka conjecture in dimension four. For normal projective log canonical complex fourfolds with boundary coefficients in a fixed finite rational set and pseudo-effective rational Cartier adjoint, one uniform degree makes the complete rounded reflexive system nonempty and its section ratios generate the full Iitaka field. We also prove a uniform canonical index bound for projective klt complex fourfolds with rationally trivial canonical divisor."
+    },
+    {
+     "title": "Abundance after nonvanishing for compact Kähler fourfolds",
+     "path": "preprints/Abundance-after-nonvanishing-for-compact-Kahler-fourfolds-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove semiampleness of the actual ℚ-Cartier adjoint $K_X+\\Delta$ of a normal connected compact Kähler klt fourfold whenever it is analytically nef and some positive Cartier multiple has a nonzero section. The boundary is effective and rational; the fourfold need not be projective or ℚ-factorial. In Iitaka dimension zero, a positive Cartier multiple is the trivial holomorphic line bundle."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "035",
+   "title": "Log-canonical threefold abundance in numerical dimension one",
+   "description": "Proves log abundance for projective log canonical threefold pairs over algebraically closed fields of characteristic *p* > 3 when the effective boundary is rational and the ℚ-Cartier adjoint is nef of numerical dimension one. The adjoint is semiample, without requiring the original variety to be terminal or ℚ-factorial.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Log abundance in numerical dimension one for threefolds in positive characteristic",
+     "path": "preprints/Log-abundance-in-numerical-dimension-one-for-threefolds-in-positive-characteristic-October-5-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the numerical-dimension-one case of log abundance for threefolds over algebraically closed fields of characteristic *p* > 3. If $(X,B)$ is a projective log canonical threefold pair with effective rational boundary, and $K_X+B$ is ℚ-Cartier, nef, and of numerical dimension one, then $K_X+B$ is semiample. Neither terminality nor ℚ-factoriality of *X* is required."
+    },
+    {
+     "title": "Abundance in numerical dimension one for terminal threefolds in positive characteristic",
+     "path": "preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "Let *X* be a projective ℚ-factorial terminal threefold over an algebraically closed field of characteristic *p* > 3. We prove the numerical-dimension-one case of abundance: if $K_{X}$ is nef with $\\nu(K_X)=1$, then $K_{X}$ is semiample and $\\kappa(X,K_X)=1$."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "036",
+   "title": "Numerical semiampleness and generalized minimal models",
+   "description": "Proves numerical semiampleness for nef adjoints $K_X+B+M$ with $K_X+B$ pseudo-effective and *M* nef rational, for projective klt rational pairs over algebraically closed characteristic-zero fields and smooth compact Kähler rational klt simple-normal-crossing pairs, using Bott–Chern cohomology in the latter case. Separately, projective generalized log canonical rational pairs over such fields admit minimal models for pseudo-effective adjoints and Mori fiber spaces otherwise, with nef b-data fixed.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Numerical semiampleness of nef adjoint classes on compact Kähler manifolds",
+     "path": "preprints/Numerical-semiampleness-of-nef-adjoint-classes-on-compact-Kahler-manifolds-October-6-2026/numerical-generalized-abundance.pdf",
+     "note": "",
+     "abstract": "Let *X* be a smooth connected compact Kähler manifold, let *B* be an effective rational simple normal crossing divisor with coefficients less than one, and let *M* be a nef rational holomorphic line bundle on *X*. If $K_X+B$ is pseudo-effective and $K_X+B+M$ is nef, we prove that its first Chern class in real Bott–Chern cohomology is represented by a semiample rational line bundle. This numerical statement allows a flat change of line bundle; it does not assert semiampleness of the original adjoint."
+    },
+    {
+     "title": "Numerical Semiampleness of Nef Adjoint Divisors",
+     "path": "preprints/Numerical-Semiampleness-of-Nef-Adjoint-Divisors-October-3-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the Generalised Abundance Conjecture: if $(X,B)$ is a projective klt ℚ-pair over an algebraically closed field of characteristic zero, $K_X+B$ is pseudo-effective, *M* is a nef ℚ-Cartier divisor on *X*, and $K_X+B+M$ is nef, then $K_X+B+M$ is numerically equivalent to a semiample ℚ-Cartier divisor on *X*."
+    },
+    {
+     "title": "Minimal models and Mori fibre spaces for generalized log canonical Q-pairs",
+     "path": "preprints/Minimal-models-and-Mori-fibre-spaces-for-generalized-log-canonical-Q-pairs-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We resolve the existence form of the minimal-model conjecture for projective generalized log canonical ℚ-pairs over algebraically closed fields of characteristic zero. Such a pair admits a minimal model when its adjoint divisor is pseudo-effective, and a Mori fibre space otherwise, while keeping the nef ℚ-Cartier b-divisor fixed. Taking the nef part to be zero gives the corresponding result for ordinary log canonical ℚ-pairs."
+    },
+    {
+     "title": "Minimal models in numerical dimension one",
+     "path": "preprints/Minimal-models-in-numerical-dimension-one-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We resolve the numerical-dimension-one case of the minimal-model conjecture for smooth connected complex projective varieties of dimension at least three. If $K_{X}$ is pseudo-effective and $\\kappa_\\sigma(X,K_X)=1$, with $κ_{σ}$ defined by section growth with a fixed ample twist, then *X* admits a projective ℚ-factorial terminal minimal model."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "037",
+   "title": "The ordinary-double-point volume gap",
+   "description": "Proves the ordinary-double-point volume-gap conjecture: every singular complex algebraic klt germ of dimension *n* ≥ 2, with zero boundary, has normalized volume at most $2(n-1)^n$. Equality holds precisely for an analytic ordinary double point.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "The ordinary-double-point gap in every dimension",
+     "path": "preprints/The-ordinary-double-point-gap-in-every-dimension-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the ordinary-double-point gap conjecture for boundary-zero complex algebraic klt germs in every dimension: a singular *n*-dimensional germ has normalized volume at most $2(n-1)^n$, with equality precisely at an analytic ordinary double point."
+    },
+    {
+     "title": "The normalized-volume gap in dimension four",
+     "path": "preprints/The-normalized-volume-gap-in-dimension-four-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every singular complex algebraic klt fourfold germ with zero boundary has normalized volume at most 162, with equality precisely for an analytic ordinary double point. This resolves the ordinary-double-point volume-gap conjecture in dimension four."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "038",
+   "title": "Fujita’s freeness conjecture",
+   "description": "Proves Fujita's freeness conjecture at its sharp bound in every dimension: for a smooth projective complex variety *X* of dimension *n* and an ample line bundle *L*, the adjoint $K_X+mL$ is globally generated for every integer $m\\ge n+1$.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Fujita's freeness conjecture",
+     "path": "preprints/Fujitas-freeness-conjecture-September-23-2026/Fujitas-freeness-conjecture-September-23-2026.pdf",
+     "note": "",
+     "abstract": "We prove Fujita's freeness conjecture. If *X* is a smooth complex projective variety of dimension *n* and *L* is an ample line bundle, then $K_X+mL$ is globally generated for every integer $m\\geq n+1$."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "039",
+   "title": "Nagata’s conjecture and maximal Seshadri constants",
+   "description": "Proves Nagata's strict inequality $\\sum_i m_i\\lt d\\sqrt r$ for every nonzero effective plane curve of degree *d* through *r* ≥ 10 very general complex points, with arbitrary multiplicities $m_{i}$. It also proves maximal multipoint Seshadri constants $(L^n/r)^{1/n}$ for every smooth polarized projective variety of dimension *n* ≥ 2 and all sufficiently large *r*: at very general points over ℂ, and at the geometric generic tuple over any algebraically closed field of positive characteristic.",
+   "doc": "lean/docs/039.md",
+   "manuscripts": [
+    {
+     "title": "Nagata's conjecture for plane curves",
+     "path": "preprints/Nagatas-Conjecture-for-Plane-Curves-September-23-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove that a nonzero effective plane curve of degree *d* at *r* ≥ 10 very general complex points has total multiplicity strictly less than $d\\sqrt r$. The inequality holds simultaneously for all curves, including reducible and nonreduced curves, and establishes Nagata's conjecture in its strict, nonhomogeneous form."
+    },
+    {
+     "title": "Maximal Seshadri constants on arbitrary polarized surfaces",
+     "path": "preprints/Maximal-Seshadri-Constants-on-Arbitrary-Polarized-Surfaces-September-23-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove that, for every smooth integral complex projective surface *S* and every ample line bundle *L*, the multipoint Seshadri constant at *r* very general points equals $\\sqrt{L^2/r}$ for every sufficiently large integer *r*. This resolves positively the qualitative Nagata–Biran conjecture for surfaces."
+    },
+    {
+     "title": "Maximal Multipoint Seshadri Constants in Higher Dimensions",
+     "path": "preprints/Maximal-Multipoint-Seshadri-Constants-in-Higher-Dimensions-October-5-2026/main.pdf",
+     "note": "",
+     "abstract": "Let *L* be an ample line bundle on a smooth integral complex projective variety *X* of dimension *n* ≥ 3. We prove that there is a threshold $r_0=r_0(X,L)$ such that for every integer $r\\ge r_0$, the ordinary multipoint Seshadri constant at *r* very general points equals the volume bound $(L^n/r)^{1/n}$. This establishes the qualitative Nagata–Biran–Szemberg assertion in these dimensions."
+    },
+    {
+     "title": "Maximal multipoint Seshadri constants in positive characteristic",
+     "path": "preprints/Maximal-multipoint-Seshadri-constants-in-positive-characteristic-October-5-2026/seshadri-positive-characteristic.pdf",
+     "note": "",
+     "abstract": "Let *L* be an ample line bundle on a smooth integral projective variety *X* over an algebraically closed field of positive characteristic, with $\\dim X=n\\ge3$. We prove that there is a threshold $r_0=r_0(X,L)$ such that for every integer $r\\ge r_0$, the ordinary multipoint Seshadri constant at the geometric generic tuple of *r* points equals the volume bound $(L^n/r)^{1/n}$. The same conclusion holds in dimension two. This establishes the positive-characteristic form of the qualitative Nagata–Biran–Szemberg assertion at geometric generic tuples."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/039.md",
+    "title": "Nagata’s conjecture and maximal Seshadri constants",
+    "papers": [
+     "preprints/Nagatas-Conjecture-for-Plane-Curves-September-23-2026/main.pdf",
+     "preprints/Maximal-Seshadri-Constants-on-Arbitrary-Polarized-Surfaces-September-23-2026/main.pdf"
+    ],
+    "scope": "Nagata's conjecture asserts that a nonzero effective plane curve of degree $d$, with multiplicities at least $m_i$ at $r\\ge10$ very general points, satisfies $\\sum_i m_i<d\\sqrt r$.\n\nThe formalization establishes this inequality simultaneously for all curves and multiplicity vectors outside one countable union of proper Zariski-closed exceptional sets with nonempty complement. Reducible curves, repeated components, and unequal multiplicities are included, in both effective-curve and homogeneous-polynomial formulations. The formalization also includes the passage from homogeneous effective cycles to equations.\n\nThe maximality question asks whether the multipoint Seshadri constant reaches the upper bound $\\sqrt{L^2/r}$ at very general points once $r$ is sufficiently large. The formalized result establishes this for every smooth integral complex projective surface $S$ and ample line bundle $L$.\n\nFor every $r$ above a threshold depending on $(S,L)$, it gives a countable union of proper closed exceptional sets with nonempty complement. Outside it, the constant is $\\sqrt{L^2/r}$ and the boundary class defining this Seshadri constant on the point blowup is nef. The threshold is not explicit or uniform over all surfaces.",
+    "results": [
+     {
+      "label": "Nagata's conjecture",
+      "challenge": "lean/ComparatorChallenges/Nagata.lean",
+      "config": "lean/ComparatorChallenges/Nagata.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Nagata.Workers.W30.exists_positive_degree_equation_of_homogeneous_cycle",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 174,
+        "statement": "theorem exists_positive_degree_equation_of_homogeneous_cycle\n    (cycle : Ideal TernaryPolynomial →₀ ℕ) (nonzero : cycle ≠ 0)\n    (homogeneous : ∀ ideal ∈ cycle.support,\n      ideal.IsPrime ∧ ideal ≠ ⊥ ∧ ideal.IsPrincipal ∧\n        ideal.IsHomogeneous (MvPolynomial.homogeneousSubmodule (Fin 3) ℂ)) :\n    ∃ polynomial : TernaryPolynomial,\n      polynomial ≠ 0 ∧ polynomial.IsHomogeneous polynomial.totalDegree ∧\n        0 < polynomial.totalDegree ∧ equationIdealCycle polynomial = cycle",
+        "proof": null,
+        "module": "lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean"
+       },
+       {
+        "name": "OAI.Nagata.nagata_conjecture",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 352,
+        "statement": "theorem nagata_conjecture :\n    ∀ count : ℕ, 10 ≤ count →\n      ∃ exceptional : ℕ → Set (OrderedDistinctPoints count),\n        (∀ index, IsConfigurationZariskiClosed (exceptional index) ∧\n          exceptional index ≠ Set.univ) ∧\n        (∃ points : OrderedDistinctPoints count, ∀ index, points ∉ exceptional index) ∧\n        ∀ points : OrderedDistinctPoints count, (∀ index, points ∉ exceptional index) →\n          ∀ curve : Workers.W10.EffectivePlaneCurve, ∀ multiplicities : Fin count → ℕ,\n            (∀ index, multiplicities index ≤ W15.curveOrdinaryMultiplicity curve (points.val index)) →\n            (∑ index, (multiplicities index : ℝ)) <\n              (Workers.W10.curveDegree curve : ℝ) * Real.sqrt (count : ℝ)",
+        "proof": {
+         "file": "lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean",
+         "line": 148,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean"
+       },
+       {
+        "name": "OAI.Nagata.nagata_conjecture_coordinates",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 365,
+        "statement": "theorem nagata_conjecture_coordinates : FullNagata",
+        "proof": {
+         "file": "lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean",
+         "line": 162,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean"
+       }
+      ]
+     },
+     {
+      "label": "Eventual maximal Seshadri constants",
+      "challenge": "lean/ComparatorChallenges/MaximalSeshadriConstants.lean",
+      "config": "lean/ComparatorChallenges/MaximalSeshadriConstants.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.MaximalSeshadri.Geometry.maximalSeshadriConstants",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 408,
+        "statement": "theorem maximalSeshadriConstants (S : Surface) (L : LineBundle S.scheme)\n    (hL : LineBundle.IsAmple S.scheme L) : EventualMaximalSeshadri S L",
+        "proof": {
+         "file": "lean/OAI/AlgebraicGeometry/Seshadri/Main.lean",
+         "line": 25,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/AlgebraicGeometry/Seshadri/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "040",
+   "title": "Bloch’s conjecture for complex surfaces",
+   "description": "Proves Bloch's conjecture: for every smooth connected projective complex surface *S* with $p_g(S)=0$, the Albanese map $\\mathrm{CH}_0(S)^0\\to\\mathrm{Alb}(S)(\\mathbb C)$ on integral degree-zero zero-cycles is an isomorphism. This combines the new $p_g=q=0$ theorem with the classical theorem of Bloch, Kas, and Lieberman.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Bloch’s conjecture for surfaces with p_g=0",
+     "path": "preprints/Blochs-Conjecture-for-Surfaces-with-pg-equals-q-equals-0-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove Bloch's conjecture for smooth connected projective complex surfaces with $p_g=0$: the Albanese homomorphism on integral degree-zero zero-cycles is an isomorphism."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "041",
+   "title": "Hyperkähler SYZ and projective-space bases",
+   "description": "Proves the strong hyperkähler SYZ conjecture: every holomorphic line bundle with nonzero nef isotropic first Chern class on a compact irreducible holomorphic symplectic Kähler manifold is semiample. It also proves that every projective Lagrangian fibration with normal projective base has projective space as its base, in every dimension and deformation type.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Projective-space bases of Lagrangian fibrations",
+     "path": "preprints/Projective-Space-Bases-of-Lagrangian-Fibrations-September-23-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove that the normal projective base of a projective Lagrangian fibration from a compact irreducible holomorphic symplectic Kähler manifold is projective space. This resolves the projective-space base conjecture for such fibrations in every dimension and deformation type."
+    },
+    {
+     "title": "The strong hyperkähler SYZ conjecture",
+     "path": "preprints/The-Strong-Hyperkahler-SYZ-Conjecture-September-23-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove the strong hyperkähler SYZ conjecture: every holomorphic line bundle with nonzero nef isotropic first Chern class on a compact irreducible holomorphic symplectic Kähler manifold is semiample."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "042",
+   "title": "Oka classification for minimal compact complex surfaces: Kodaira dimension zero and class VII",
+   "description": "Proves that every complex K3 surface is Oka, including nonprojective surfaces. More generally, every connected minimal compact complex surface of Kodaira dimension zero is Oka; a connected minimal compact complex surface of class VII is Oka exactly when it is a Hopf or Enoki surface.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Every complex K3 surface is Oka",
+     "path": "preprints/Every-complex-K3-surface-is-Oka-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every complex K3 surface *X* is Oka, resolving the K3 Oka conjecture. Equivalently, for every *m* ≥ 1, every holomorphic map to *X* from a neighborhood of a compact convex set in ℂ$^{m}$ can be approximated uniformly on that set by entire maps $\\mathbb C^m\\to X$."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "043",
+   "title": "*P* = *W* for fixed-determinant SL$_{n}$ moduli spaces",
+   "description": "Proves $P_k=W_{2k}=W_{2k+1}$ on the full rational cohomology of smooth coprime fixed-determinant, trace-free Higgs moduli spaces and their character varieties for composite ranks over smooth projective complex curves of genus at least two. This includes variant cohomology and, together with the known prime-rank theorems, establishes the fixed-determinant *P* = *W* conjecture in every coprime rank.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "P=W in composite rank for fixed determinant",
+     "path": "preprints/P-equals-W-in-composite-rank-for-fixed-determinant-September-24-2026/P-equals-W-in-composite-rank-for-fixed-determinant-September-24-2026.pdf",
+     "note": "",
+     "abstract": "We prove the *P* = *W* conjecture on the full rational cohomology of fixed-determinant, trace-free Higgs moduli spaces in composite rank and coprime degree, for smooth projective complex curves of genus at least two. Together with the established prime-rank cases, this gives the equality in every coprime rank."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "044",
+   "title": "The equivariant cohomological Hikita conjecture",
+   "description": "Proves the equivariant cohomological Hikita correspondence for every finite quiver, including loops and multiple arrows, with arbitrary dimension and framing vectors and commuting flavor torus. When every semistable point is stable and the gauge action is free, the equivariant cohomology of the Nakajima variety is canonically the coordinate ring of the scheme-theoretic cocharacter-fixed locus of its flavor-deformed Coulomb branch.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "The equivariant cohomological Hikita conjecture for arbitrary quivers",
+     "path": "preprints/The-equivariant-cohomological-Hikita-conjecture-for-arbitrary-quivers-September-24-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove the equivariant cohomological Hikita conjecture for arbitrary finite quivers, including loops and multiple arrows. For any dimension and framing vectors, any commuting flavor torus, and a stability character whose semistable locus is stable and has free gauge action, the equivariant cohomology of the Nakajima variety is canonically isomorphic to the coordinate ring of the scheme-theoretic fixed locus of the stability cocharacter on the flavor-deformed Coulomb branch. This is an isomorphism of graded algebras over the common coefficient ring, retaining nilpotents and including the empty case."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "046",
+   "title": "Shafarevich counterexamples in dimension two and with large fundamental group",
+   "description": "Constructs a smooth projective complex fourfold with large fundamental group whose universal cover contains no positive-dimensional compact analytic subvariety but is neither Stein nor holomorphically convex. A separate smooth projective complex surface already disproves unrestricted Shafarevich holomorphic convexity in dimension two.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "A projective fourfold with large fundamental group and non-Stein universal cover",
+     "path": "preprints/A-projective-fourfold-with-large-fundamental-group-and-non-Stein-universal-cover-October-5-2026/large-fundamental-group-non-stein.pdf",
+     "note": "",
+     "abstract": "We construct a smooth projective complex fourfold with large fundamental group whose universal cover is not Stein. The universal cover contains no positive-dimensional compact complex-analytic subvariety, so this disproves Shafarevich's holomorphic-convexity conjecture even under the large-fundamental-group hypothesis."
+    },
+    {
+     "title": "A surface counterexample to Shafarevich holomorphic convexity",
+     "path": "preprints/A-surface-counterexample-to-Shafarevich-holomorphic-convexity-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a smooth connected projective complex surface whose universal cover is not holomorphically convex. This disproves the Shafarevich conjecture on holomorphic convexity in complex dimension two."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "047",
+   "title": "Zariski cancellation and affine fibrations over the complex numbers",
+   "description": "Constructs an integral complex affine fourfold $X\\not\\cong\\mathbb A^4$ with $X\\times\\mathbb A^1\\cong\\mathbb A^5$, disproving affine-space cancellation over ℂ in dimension four. It also disproves the Dolgachev–Weisfeiler affine-fibration conjecture: smooth surjections $X\\to\\mathbb A^1$ and $\\mathbb A^5\\to\\mathbb A^2$ have every residue-field fiber isomorphic to affine three-space but are not Zariski-locally trivial.",
+   "doc": "lean/docs/047.md",
+   "manuscripts": [
+    {
+     "title": "An explicit failure of complex affine-space cancellation",
+     "path": "preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct an explicit integral complex affine fourfold *X* with $X\\times\\mathbb A^1\\cong\\mathbb A^5$ but $X\\not\\cong\\mathbb A^4$. This gives a negative answer to Zariski's affine-space cancellation problem over ℂ in dimension four. The same construction disproves the Stable Coordinate Conjecture in ambient dimension five and yields smooth 𝔸$^{3}$-fibrations over 𝔸$^{1}$ and 𝔸$^{2}$ that are not Zariski-locally trivial. These fibrations disprove the Dolgachev–Weisfeiler affine-fibration conjecture over these bases."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/047.md",
+    "title": "Zariski cancellation and affine fibrations over the complex numbers",
+    "papers": [
+     "preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/paper.pdf"
+    ],
+    "scope": "Affine-space cancellation asks whether $X\\times\\mathbb A^1\\cong\\mathbb A^{n+1}$ forces $X\\cong\\mathbb A^n$. The formalized result gives an explicit finite-type complex domain $A$ of Krull dimension four with $A[w]\\cong\\mathbb C[x_1,\\ldots,x_5]$ but $A\\not\\cong\\mathbb C[x_1,\\ldots,x_4]$. Thus adjoining one variable erases a genuine algebraic distinction.\n\nThe separate stable-coordinate and general line-bundle lifting consequences are not included.",
+    "results": [
+     {
+      "label": "Complex affine-space cancellation counterexample",
+      "challenge": "lean/ComparatorChallenges/ComplexCancellation.lean",
+      "config": "lean/ComparatorChallenges/ComplexCancellation.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.ComplexCancellation.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 25,
+        "statement": "theorem main : MainStatement",
+        "proof": {
+         "file": "lean/OAI/Algebra/AffineCancellation/Main.lean",
+         "line": 32,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Algebra/AffineCancellation/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "048",
+   "title": "A characteristic-zero counterexample to Lipman–Zariski",
+   "description": "Constructs a singular normal affine complex surface with free rank-two tangent sheaf, disproving the characteristic-zero Lipman–Zariski conjecture.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "A singular normal affine surface with free tangent sheaf",
+     "path": "preprints/A-singular-normal-affine-surface-with-free-tangent-sheaf-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a singular normal affine complex surface whose tangent sheaf is free of rank two. This disproves the Lipman–Zariski conjecture in characteristic zero."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "049",
+   "title": "A stable-coordinate counterexample in four variables",
+   "description": "Constructs a polynomial in four complex variables that is not a coordinate but becomes one after adjoining a single variable, disproving the Stable Coordinate conjecture in four variables. Every fiber is affine three-space, yet none of its embeddings is rectifiable, also disproving the Abhyankar–Sathaye conjecture even when all fibers are affine spaces.",
+   "doc": "lean/docs/049.md",
+   "manuscripts": [
+    {
+     "title": "A stable coordinate that is not a coordinate in four variables",
+     "path": "preprints/A-stable-coordinate-that-is-not-a-coordinate-in-four-variables-October-5-2026/stable-coordinate-four-variables.pdf",
+     "note": "",
+     "abstract": "We construct an explicit degree-five polynomial over $\\mathbf C$ that is not a coordinate in four variables but becomes one after adjoining a single variable. This gives a counterexample to the stable coordinate conjecture in four variables. Every fiber is isomorphic to affine three-space, yet its embedding in affine four-space is not rectifiable. Thus the example also disproves the Abhyankar–Sathaye embedding conjecture in ambient dimension four."
+    },
+    {
+     "title": "An explicit noncoordinate polynomial with affine three-space zero fibre",
+     "path": "preprints/An-explicit-noncoordinate-polynomial-with-affine-three-space-zero-fibre-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct an explicit counterexample to the Abhyankar–Sathaye conjecture: a noncoordinate polynomial in four complex variables whose zero fibre is affine three-space. Adjoining variables gives counterexamples in every ambient dimension at least four."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/049.md",
+    "title": "A stable-coordinate counterexample in four variables",
+    "papers": [
+     "preprints/An-explicit-noncoordinate-polynomial-with-affine-three-space-zero-fibre-September-24-2026/paper.pdf",
+     "preprints/A-stable-coordinate-that-is-not-a-coordinate-in-four-variables-October-5-2026/stable-coordinate-four-variables.pdf"
+    ],
+    "scope": "The stable coordinate conjecture predicts that a polynomial that becomes a coordinate after adjoining variables was already a coordinate. The formalization gives an explicit degree-five polynomial in four complex variables that becomes a coordinate after adjoining one variable but is not a coordinate in four variables. Every fiber is isomorphic to affine three-space, yet no fiber can be carried to a coordinate hyperplane by an ambient polynomial automorphism.\n\nThe Abhyankar–Sathaye conjecture predicts that a polynomial defining an affine-space quotient must be an ambient coordinate. For every $n\\ge4$, the formalized counterexample gives $F\\in\\mathbb C[x_1,\\ldots,x_n]$ with quotient $\\mathbb C[x_1,\\ldots,x_n]/(F)\\cong\\mathbb C[y_1,\\ldots,y_{n-1}]$, although $F$ is not a coordinate.\n\nA companion gives $n-1$ commuting, locally nilpotent derivations, linearly independent over the polynomial ring, whose common kernel is generated by the construction's explicit polynomial and contains no ambient coordinate. The extra $n-4$ derivations are ordinary partial derivatives in the added variables. The three-variable case is not covered.",
+    "results": [
+     {
+      "label": "Noncoordinate polynomial in every dimension at least four",
+      "challenge": "lean/ComparatorChallenges/AbhyankarSathaye.lean",
+      "config": "lean/ComparatorChallenges/AbhyankarSathaye.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.AbhyankarSathaye.exists_noncoordinate_polynomial",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 11,
+        "statement": "theorem exists_noncoordinate_polynomial (n : ℕ) (hn : 4 ≤ n) :\n    ∃ F : MvPolynomial (Fin n) ℂ,\n      Nonempty ((MvPolynomial (Fin n) ℂ ⧸ Ideal.span {F}) ≃ₐ[ℂ]\n        MvPolynomial (Fin (n - 1)) ℂ) ∧\n      ¬ ∃ (equiv : MvPolynomial (Fin n) ℂ ≃ₐ[ℂ] MvPolynomial (Fin n) ℂ)\n        (index : Fin n), equiv (MvPolynomial.X index) = F",
+        "proof": {
+         "file": "lean/OAI/AlgebraicGeometry/AbhyankarSathaye/Counterexample.lean",
+         "line": 35,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/AlgebraicGeometry/AbhyankarSathaye/Counterexample.lean"
+       }
+      ]
+     },
+     {
+      "label": "Commuting locally nilpotent derivations",
+      "challenge": "lean/ComparatorChallenges/CommutingDerivations.lean",
+      "config": "lean/ComparatorChallenges/CommutingDerivations.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.AbhyankarSathaye.CommutingDerivations.commuting_derivations_with_ordinary_extras",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 54,
+        "statement": "theorem commuting_derivations_with_ordinary_extras (n : ℕ) (hn : 4 ≤ n) :\n    ∃ d : Fin (n-1) → Derivation ℂ (MvPolynomial (Fin n) ℂ) (MvPolynomial (Fin n) ℂ),\n      (∀ i, d i (extendedF hn + 1) = 0) ∧\n      (∀ i j p, d i (d j p) = d j (d i p)) ∧\n      (∀ i, LocallyNilpotent (d i)) ∧\n      LinearIndependent (MvPolynomial (Fin n) ℂ) d ∧\n      (∀ p, (∀ i, d i p = 0) ↔\n        p ∈ Algebra.adjoin ℂ ({extendedF hn} : Set (MvPolynomial (Fin n) ℂ))) ∧\n      (∀ g, (∀ i, d i g = 0) →\n        ¬ ∃ (e : MvPolynomial (Fin n) ℂ ≃ₐ[ℂ] MvPolynomial (Fin n) ℂ) (j : Fin n),\n          e (X j) = g) ∧\n      (∀ i : Fin (n-4), d (blocksToOutput hn (Sum.inl i)) =\n        pderiv (blocksToAmbient hn (Sum.inl i)))",
+        "proof": {
+         "file": "lean/OAI/AlgebraicGeometry/CommutingDerivations/OrdinaryExtraMain.lean",
+         "line": 25,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/AlgebraicGeometry/CommutingDerivations/OrdinaryExtraMain.lean"
+       }
+      ]
+     },
+     {
+      "label": "Degree-five stable noncoordinate with nonrectifiable affine-space fibers",
+      "challenge": "lean/ComparatorChallenges/StableCoordinateFour.lean",
+      "config": "lean/ComparatorChallenges/StableCoordinateFour.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.StableCoordinate.principal_package",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 49,
+        "statement": "theorem principal_package : PrincipalPackage",
+        "proof": {
+         "file": "lean/OAI/AlgebraicGeometry/StableCoordinate/Principal.lean",
+         "line": 31,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/AlgebraicGeometry/StableCoordinate/Principal.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "050",
+   "title": "A counterexample to Griffiths’ positivity conjecture",
+   "description": "Constructs ample rank-two bundles on $\\mathbb P^1\\times\\mathbb P^1$ with no smooth Hermitian metric of strictly Griffiths-positive curvature, disproving Griffiths' positivity conjecture already on the quadric surface.",
+   "doc": "lean/docs/050.md",
+   "manuscripts": [
+    {
+     "title": "Ample rank-two bundles on the quadric surface without Griffiths-positive metrics",
+     "path": "preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We give counterexamples to Griffiths' conjecture in rank two on the quadric surface $\\mathbb P^1\\times\\mathbb P^1$. We construct an explicit bundle *G* whose coordinatewise power pullbacks, tensored with $\\mathcal O(1,1)$, are ample for every positive power, but admit no smooth strictly Griffiths-positive Hermitian metric for all sufficiently large powers."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/050.md",
+    "title": "A counterexample to Griffiths’ positivity conjecture",
+    "papers": [
+     "preprints/ample-rank-two-bundles-on-the-quadric-surface-without-griffiths-positive-metrics-September-24-2026/paper.pdf"
+    ],
+    "scope": "Griffiths' positivity conjecture predicts that every ample holomorphic vector bundle on a smooth complex projective variety admits a smooth Hermitian metric with strictly Griffiths-positive curvature. The formalized counterexample starts with a rank-two algebraic bundle $G$ on $\\mathbb P^1\\times\\mathbb P^1$. Its coordinatewise power pullbacks, tensored with $\\mathcal O(1,1)$, are ample for every positive power but admit no such metric for all sufficiently large powers.\n\nThe separate very-ampleness result for all admissible even exponents is not included.",
+    "results": [
+     {
+      "label": "Ample bundles without Griffiths-positive metrics",
+      "challenge": "lean/ComparatorChallenges/QuadricBundles.lean",
+      "config": "lean/ComparatorChallenges/QuadricBundles.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.QuadricCounterexample.main_theorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 174,
+        "statement": "theorem main_theorem : SourceMainTheorem",
+        "proof": {
+         "file": "lean/OAI/Geometry/QuadricBundles/Main.lean",
+         "line": 10,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/QuadricBundles/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "051",
+   "title": "Kobayashi’s canonical-ampleness conjecture",
+   "description": "Every compact connected Kähler manifold of positive complex dimension with no nonconstant entire curve has ample canonical bundle and is therefore projective. This proves Kobayashi's canonical-ampleness conjecture in the smooth compact Kähler setting.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Canonical ampleness of compact hyperbolic Kähler manifolds",
+     "path": "preprints/Canonical-ampleness-of-compact-hyperbolic-Kahler-manifolds-September-23-2026/canonical-ampleness.pdf",
+     "note": "",
+     "abstract": "We prove that every compact connected Kähler manifold of positive complex dimension containing no nonconstant entire curve has ample canonical bundle and is projective. This resolves positively Kobayashi's canonical-ampleness conjecture in the smooth compact Kähler category."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "052",
+   "title": "Tangent splittings and product decompositions",
+   "description": "A splitting of the tangent bundle of a compact Kähler manifold into two integrable holomorphic subbundles induces a compatible product decomposition of its universal cover, proving the two-summand form of Beauville's splitting conjecture. On smooth rationally connected projective manifolds, both summands are automatically integrable, establishing Höring's conjecture and the corresponding product decomposition.",
+   "doc": "lean/docs/052.md",
+   "manuscripts": [
+    {
+     "title": "Universal-cover splitting for compact Kähler manifolds",
+     "path": "preprints/Universal-cover-splitting-for-compact-Kahler-manifolds-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the two-summand form of Beauville's compatible splitting conjecture. If the tangent bundle of a compact connected Kähler manifold decomposes into two integrable holomorphic subbundles of positive rank, then its ordinary universal cover admits a product decomposition whose factor tangent bundles are the lifted specified summands."
+    },
+    {
+     "title": "Integrability of split tangent bundles on rationally connected manifolds",
+     "path": "preprints/Integrability-of-split-tangent-bundles-on-rationally-connected-manifolds-September-23-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove that both summands of every specified holomorphic splitting of the tangent bundle of a smooth rationally connected projective complex manifold into two positive-rank subbundles are integrable. This proves Höring's conjecture on rationally connected projective manifolds. Höring's product theorem then gives a product decomposition compatible with the specified splitting."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/052.md",
+    "title": "Tangent splittings and product decompositions",
+    "papers": [
+     "preprints/Universal-cover-splitting-for-compact-Kahler-manifolds-September-23-2026/paper.pdf",
+     "preprints/Integrability-of-split-tangent-bundles-on-rationally-connected-manifolds-September-23-2026/main.pdf"
+    ],
+    "scope": "The splitting question asks whether a holomorphic decomposition of the tangent bundle comes from a product decomposition of the universal cover. The formalized result gives an affirmative answer for a compact connected Kähler manifold whose tangent bundle splits into two positive-rank, integrable holomorphic subbundles. The universal cover is a product of connected simply connected complex manifolds of the prescribed dimensions, and the differential identifies the two tangent factors with the original summands.\n\nBoth integrability assumptions are required. Automatic integrability and the paper's additional corollaries are not included.\n\nThe formalization proves integrability of both summands in a holomorphic splitting of the tangent bundle of a rationally connected projective manifold. More precisely, for a compact connected complex manifold of dimension at least two with a projective embedding witnessing rational connectedness, each positive-rank summand of a holomorphic tangent-bundle splitting is integrable. The paper's compatible product decomposition is a separate consequence, outside this selected statement.",
+    "results": [
+     {
+      "label": "Universal-cover product splitting",
+      "challenge": "lean/ComparatorChallenges/KahlerSplitting.lean",
+      "config": "lean/ComparatorChallenges/KahlerSplitting.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.UniversalCoverSplitting.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 124,
+        "statement": "theorem main (X : ComplexManifold.{u} n) [CompactSpace X.Carrier]\n    [ConnectedSpace X.Carrier] (hn : 2 ≤ n) (hr₁ : 0 < r₁) (hr₂ : 0 < r₂)\n    (g : KahlerMetric X) (S : HolomorphicSplitting X r₁ r₂)\n    (h₁ : Integrable S.projection) (h₂ : Integrable (complementaryProjection S))\n    (Z : ComplexManifold.{v} n) (π : OrdinaryUniversalCover X Z) :\n    ∃ (Y₁ : ComplexManifold.{v} r₁) (Y₂ : ComplexManifold.{v} r₂),\n      ConnectedSpace Y₁.Carrier ∧ ConnectedSpace Y₂.Carrier ∧\n      SimplyConnectedSpace Y₁.Carrier ∧ SimplyConnectedSpace Y₂.Carrier ∧\n      CompatibleProduct S π Y₁ Y₂",
+        "proof": {
+         "file": "lean/OAI/Geometry/KahlerSplitting/Main.lean",
+         "line": 14,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/KahlerSplitting/Main.lean"
+       }
+      ]
+     },
+     {
+      "label": "Integrability of both holomorphic tangent summands",
+      "challenge": "lean/ComparatorChallenges/SplitTangentIntegrability.lean",
+      "config": "lean/ComparatorChallenges/SplitTangentIntegrability.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.SplitTangent.integrability_main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 135,
+        "statement": "theorem integrability_main : IntegrabilityStatement.{u}",
+        "proof": {
+         "file": "lean/OAI/Geometry/SplitTangent/RationalVariation.lean",
+         "line": 188,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/SplitTangent/RationalVariation.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "053",
+   "title": "A counterexample to Pixton completeness in Chow",
+   "description": "Constructs a tautological relation on a moduli space of stable pointed curves that vanishes in rational Chow, hence in rational cohomology, but lies outside Pixton's original relation span. This disproves the Chow and rational-cohomological forms of his original completeness conjecture.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "A high-arity counterexample to Pixton completeness in Chow",
+     "path": "preprints/A-high-arity-counterexample-to-Pixton-completeness-in-Chow-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We disprove the Chow and rational-cohomological forms of Pixton's completeness conjecture for his original relation system. We construct a formal tautological class outside the original Pixton relation span whose image is zero in the Chow ring and in rational cohomology. The example has genus $10^{60}$ and $3\\binom{10^{60}}3$ markings."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "054",
+   "title": "Irrational cubic fourfolds with Hodge-theoretic and categorical K3 associations",
+   "description": "For every sufficiently large admissible Hassett discriminant, a very general smooth complex cubic fourfold is irrational despite having both an untwisted geometric K3 category and an integral Hodge-theoretic K3 association. This disproves Kuznetsov's rationality conjecture and the sufficiency of the associated-K3 criterion for rationality; the discriminant threshold is ineffective.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Irrational cubic fourfolds with geometric K3 categories",
+     "path": "preprints/Irrational-cubic-fourfolds-with-geometric-K3-categories-September-24-2026/Irrational-cubic-fourfolds-with-geometric-K3-categories-September-24-2026.pdf",
+     "note": "",
+     "abstract": "For every sufficiently large admissible Hassett discriminant, we prove that a very general cubic fourfold of that discriminant is irrational, although its Kuznetsov component is equivalent to the ordinary derived category of a projective K3 surface. The discriminant threshold is ineffective. This disproves Kuznetsov's rationality conjecture. The same cubics have associated untwisted polarized K3 surfaces in the Hodge-theoretic sense, so they also disprove the sufficiency direction of the associated-K3 rationality prediction."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "055",
+   "title": "Gepner symmetry and large-volume stability on threefolds",
+   "description": "Proves Toda's Gepner conjecture for every smooth complex quintic threefold, constructing a numerical Bridgeland stability condition with the prescribed phase shift 2/5. Also constructs numerical Bridgeland stability conditions at every sufficiently large volume on all smooth projective complex threefolds with trivial canonical bundle, with the exact ordinary and square-root-Todd central charges.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "A Gepner stability condition on every smooth quintic threefold",
+     "path": "preprints/A-Gepner-stability-condition-on-every-smooth-quintic-threefold-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove Toda's normalized quintic Gepner conjecture. On every smooth complex quintic threefold, we construct a numerical Bridgeland stability condition for which tensoring by the hyperplane bundle, followed by the spherical twist at the structure sheaf, increases phase by 2/5."
+    },
+    {
+     "title": "Prescribed large-volume charges on threefolds with trivial canonical bundle",
+     "path": "preprints/Prescribed-large-volume-charges-on-threefolds-with-trivial-canonical-bundle-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "Let *X* be a smooth projective complex threefold with trivial canonical bundle. We construct numerical Bridgeland stability conditions with the exact ordinary and square-root-Todd central charges at every sufficiently large volume. One volume threshold works on an open set of real twists and ample directions. The resulting stability conditions have the support property on the full numerical Grothendieck group and stable point sheaves. Separately, on every smooth projective complex threefold we prove a strong tilt inequality above a volume threshold uniform in the object and twist along a fixed polarization."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "056",
+   "title": "Termination of projective and Kähler fourfold minimal model programs",
+   "description": "Proves termination of every existing generalized log canonical flip sequence on globally Weil ℚ-factorial compact Kähler fourfolds, with rational boundary, fixed rational analytically nef b-data, and projective small flip diagrams with the prescribed ample signs. Also proves termination of arbitrary permitted minimal model programs for projective log canonical fourfolds with rational boundary in characteristic zero.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Termination of generalized log canonical flips on compact Kähler fourfolds",
+     "path": "preprints/Termination-of-generalized-log-canonical-flips-on-compact-Kahler-fourfolds-October-7-2026/termination-generalized-lc-kahler-fourfolds.pdf",
+     "note": "",
+     "abstract": "Every sequence of generalized log canonical flips on a normal irreducible globally Weil ℚ-factorial compact Kähler fourfold terminates, provided the flips are projective small diagrams with the stated opposite ample signs. The boundary is rational, and the nef b-divisor is fixed and represented by an analytically nef ℚ-Cartier divisor on a projective modification. No scaling rule or pseudo-effectivity assumption is required. The theorem concerns existing flip sequences; it does not assert the existence of all contractions or flips."
+    },
+    {
+     "title": "Termination of generalized-canonical flips on compact Kähler fourfolds",
+     "path": "preprints/Termination-of-generalized-canonical-flips-on-compact-Kahler-fourfolds-October-6-2026/termination-generalized-terminal-flips-compact-kahler-fourfolds.pdf",
+     "note": "",
+     "abstract": "Every sequence of generalized-canonical flips on compact Kähler fourfolds with rational boundary and fixed rational analytically nef b-divisor terminates when the small morphisms are projective. We prove this for normal globally Weil ℚ-factorial models with boundary coefficients less than one, allowing exceptional log discrepancies equal to one. No scaling rule or pseudo-effectivity assumption is required. The theorem applies to existing projective small diagrams with the specified opposite ample signs."
+    },
+    {
+     "title": "Termination for projective log canonical fourfolds with rational boundary",
+     "path": "preprints/Termination-for-projective-log-canonical-fourfolds-with-rational-boundary-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every permitted minimal model program for a projective log canonical fourfold with rational boundary over an algebraically closed field of characteristic zero terminates. The result allows arbitrary negative extremal rays and mixed birational steps on the given models, without pseudo-effectivity or initial ℚ-factoriality."
+    },
+    {
+     "title": "Finite ordinary minimal model programs on compact Kähler fourfolds",
+     "path": "preprints/Finite-ordinary-minimal-model-programs-on-compact-Kahler-fourfolds-October-6-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every maximal ordinary negative-ray program starting from a compact Kähler klt fourfold pair with effective rational boundary in the global Weil-divisor ℚ-factorial category terminates. It ends at a nef model when the adjoint is pseudo-effective and at a projective Mori fibre space otherwise."
+    },
+    {
+     "title": "Finite ordinary minimal model programs on compact Kähler fourfolds",
+     "path": "preprints/Finite-ordinary-minimal-model-programs-on-compact-Kahler-fourfolds-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that a globally Weil-ℚ-factorial compact Kähler klt fourfold pair with effective rational boundary and canonical rational line bundle admits a finite ordinary minimal model program starting on the given pair. It ends at a nef model when the adjoint class is pseudo-effective and at a Mori fibre space otherwise."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "057",
+   "title": "Fundamental groups of special complex varieties and root orbifolds",
+   "description": "Proves Campana's abelianity conjecture: special compact Kähler manifolds have virtually abelian fundamental groups. Using this theorem, establishes the same conclusion for order-two root orbifolds of smooth projective complex fourfolds along one nonempty smooth connected divisor, when special in the stated differential-line sense. For smooth special complex quasi-projective varieties, proves that every finite-dimensional complex linear representation of the fundamental group has virtually nilpotent image of class at most two.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "The abelianity conjecture for special compact Kähler manifolds",
+     "path": "preprints/The-abelianity-conjecture-for-special-compact-Kahler-manifolds-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that the fundamental group of every special compact Kähler manifold is virtually abelian, resolving Campana's abelianity conjecture in all dimensions. In particular, every smooth compact connected Kähler manifold of Kodaira dimension zero has virtually abelian ordinary fundamental group."
+    },
+    {
+     "title": "Two-step monodromy of special quasi-projective varieties",
+     "path": "preprints/Two-step-monodromy-of-special-quasi-projective-varieties-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We give an independent proof that every complex linear representation of the ordinary fundamental group of a connected smooth special complex quasi-projective variety has virtually nilpotent image of class at most two. This conclusion was previously announced by Cao–Deng–Hacon–Păun. We also construct special open surfaces whose general quasi-Albanese fibres are not special."
+    },
+    {
+     "title": "A conditional abelianity theorem for special fourfold pairs with a half-weight divisor",
+     "path": "preprints/A-conditional-abelianity-theorem-for-special-fourfold-pairs-with-a-half-weight-divisor-October-5-2026/main.pdf",
+     "note": "",
+     "abstract": "Using the abelianity theorem for special compact Kähler manifolds in every dimension, we prove virtual abelianity of the entire orbifold fundamental group of the special order-two root orbifold associated with a pair $(X,\\tfrac12D)$, where *X* is a smooth projective fourfold and *D* is a nonempty smooth connected divisor. We construct a special smooth projective eightfold whose fundamental group surjects onto the required group."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "058",
+   "title": "Semialgebraic universal covers and bounded domains",
+   "description": "Proves the Kollár–Pardon conjecture: the semialgebraic universal covers of connected normal projective complex varieties are exactly products $D\\times\\mathbb C^m\\times F$, with *D* bounded symmetric and *F* simply connected, normal, and projective. A universal cover is quasi-projective exactly when the bounded symmetric factor is absent. In particular, a smooth projective variety covered by ℂ$^{n}$ has a finite étale cover by an abelian variety.",
+   "doc": "lean/docs/058.md",
+   "manuscripts": [
+    {
+     "title": "Semialgebraic universal covers of normal projective varieties",
+     "path": "preprints/Semialgebraic-universal-covers-of-normal-projective-varieties-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the Kollár–Pardon conjecture: the universal cover of a connected normal projective complex variety is biholomorphic to a semialgebraic open subset of a projective variety if and only if it is a product of a bounded symmetric domain, a complex affine space, and a simply connected normal projective variety."
+    },
+    {
+     "title": "Symmetry of semialgebraic bounded domains with compact quotient",
+     "path": "preprints/Symmetry-of-semialgebraic-bounded-domains-with-compact-quotient-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "Every nonempty connected semialgebraic bounded open subset of a complex affine variety admitting a properly discontinuous cocompact group of biholomorphisms is smooth and biholomorphic to a bounded symmetric domain. This answers the bounded-domain question of Kollár and Pardon affirmatively."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/058.md",
+    "title": "Semialgebraic universal covers and bounded domains",
+    "papers": [
+     "preprints/Symmetry-of-semialgebraic-bounded-domains-with-compact-quotient-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalized result answers the paper's symmetry question affirmatively. A nonempty connected bounded semialgebraic subset, relatively open in a complex affine algebraic set, is smooth and biholomorphic to a bounded symmetric domain whenever a discrete group acts properly and holomorphically with compact quotient.\n\nThe action need not be free, and the ambient algebraic set may be singular.",
+    "results": [
+     {
+      "label": "Symmetry of semialgebraic bounded domains",
+      "challenge": "lean/ComparatorChallenges/SymmetricDomains.lean",
+      "config": "lean/ComparatorChallenges/SymmetricDomains.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Release061.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 47,
+        "statement": "theorem main {n : ℕ} (V U : Set (Affine n))\n    (hV : IsAffineAlgebraic V) (hUV : U ⊆ V)\n    (hopen : IsOpen ((Subtype.val : V → Affine n) ⁻¹' U))\n    (hconn : IsConnected U) (hsa : IsSemialgebraic U)\n    (hbounded : Bornology.IsBounded U)\n    (Γ : Type*) [Group Γ] [TopologicalSpace Γ] [DiscreteTopology Γ]\n    [MulAction Γ U] [ProperSMul Γ U]\n    [CompactSpace (Quotient (MulAction.orbitRel Γ U))]\n    (hhol : ∀ γ : Γ, HolomorphicOnSubset U (fun p => (γ • p : U).val)) :\n    IsSmooth U ∧ ∃ (m : ℕ) (D : Set (Affine m)),\n      IsBoundedSymmetricDomain D ∧ Nonempty (Biholomorph U D)",
+        "proof": {
+         "file": "lean/OAI/Analysis/SymmetricDomains/Main.lean",
+         "line": 55,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/SymmetricDomains/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "059",
+   "title": "Counterexamples to Zariski’s multiplicity conjecture",
+   "description": "Disproves Zariski's multiplicity conjecture by constructing reduced holomorphic hypersurface germs that are ambiently homeomorphic but have different multiplicities. The examples include hypersurfaces in ℂ$^{4}$ with isolated critical points and multiplicities four and five.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Ambiently homeomorphic isolated hypersurfaces of multiplicities two and three",
+     "path": "preprints/Ambiently-homeomorphic-isolated-hypersurfaces-of-multiplicities-two-and-three-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We give a negative answer to the embedded Zariski multiplicity conjecture. We construct two reduced hypersurface germs that are ambiently homeomorphic but have multiplicities two and three. Both have isolated singularities and lie in a common complex affine space of dimension divisible by eight. Their defining function germs are also topologically right equivalent, and the same examples answer Arnold's corank problem negatively for ambient topological equivalence."
+    },
+    {
+     "title": "Ambiently homeomorphic isolated hypersurface germs in ℂ⁴ with multiplicities four and five",
+     "path": "preprints/Ambiently-homeomorphic-isolated-hypersurface-germs-in-C4-with-multiplicities-four-and-five-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "We give a negative answer to Zariski's multiplicity question in four complex variables. We construct two reduced convergent holomorphic function germs with isolated critical points and multiplicities four and five whose zero-set germs are ambiently homeomorphic."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "060",
+   "title": "The Global Spherical Shell conjecture",
+   "description": "Every connected minimal compact complex surface of class VII with $b_2\\gt 0$ contains a global spherical shell, proving the positive-$b_{2}$ Global Spherical Shell conjecture. Such a shell is a holomorphically embedded neighborhood of the standard three-sphere in $\\mathbb C^2\\setminus\\{0\\}$ whose complement is connected.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Global Spherical Shells on Minimal Surfaces of Class VII",
+     "path": "preprints/Global-Spherical-Shells-on-Minimal-Surfaces-of-Class-VII-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the Global Spherical Shell conjecture: every connected minimal compact complex surface of class VII with positive second Betti number contains a global spherical shell. This is a holomorphically embedded neighborhood of the standard three-sphere in $\\mathbb C^2\\setminus\\{0\\}$ whose complement is connected."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "062",
+   "title": "Projective contact classification and the LeBrun–Salamon conjecture",
+   "description": "Proves the LeBrun–Salamon conjecture: every closed connected positive quaternionic-Kähler manifold of real dimension at least eight is homothetic to a compact symmetric Wolf space. It also proves contact-Fano homogeneity and classifies smooth connected complex projective contact manifolds of complex dimension at least three: those with $b_2=1$ are adjoint varieties with their canonical contact structures, while those with $b_2\\ge2$ have underlying manifold $\\mathbb P(T^*Z)$ for a smooth projective variety *Z*.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Contact Fano manifolds and the LeBrun–Salamon conjecture",
+     "path": "preprints/Contact-Fano-manifolds-and-the-LeBrun-Salamon-conjecture-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We resolve the contact-Fano homogeneity conjecture and the Riemannian LeBrun–Salamon conjecture positively. Every smooth connected complex projective contact Fano manifold of complex dimension at least three, with its given contact distribution, is contact-isomorphic to the adjoint variety of a simple complex Lie algebra. Consequently, every closed connected smooth positive quaternionic-Kähler manifold of real dimension $4m\\geq8$ is homothetic to a compact symmetric Wolf space."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "063",
+   "title": "The generalized Mukai conjecture",
+   "description": "Proves the generalized Mukai conjecture: every positive-dimensional smooth complex projective Fano manifold of dimension *n*, Picard number *ρ* and pseudoindex *ι* satisfies $\\rho(\\iota-1)\\le n$, with equality exactly for $(\\mathbb P^{\\iota-1})^\\rho$. Here the pseudoindex is the least anticanonical degree of a rational curve.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "The generalized Mukai conjecture",
+     "path": "preprints/The-Generalized-Mukai-Conjecture-September-24-2026/article.pdf",
+     "note": "",
+     "abstract": "We prove the generalized Mukai conjecture: every positive-dimensional smooth complex Fano manifold of dimension *n*, Picard number *ρ*, and pseudoindex *ι* satisfies $\\rho(\\iota-1)\\le n$. Equality holds precisely for the product of *ρ* copies of $\\mathbb P^{\\iota-1}$."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "064",
+   "title": "Topological triviality of *μ*-constant surface singularities",
+   "description": "Proves topological right-triviality for every holomorphic one-parameter family of isolated hypersurface singularities in ℂ$^{3}$ with constant Milnor number, resolving the surface case of the *μ*-constant problem. After shrinking the parameter disk and representatives, ambient homeomorphisms vary jointly continuously, fix the origin section and preserve the defining functions.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Topological triviality of mu-constant families of surface singularities",
+     "path": "preprints/Topological-triviality-of-mu-constant-families-of-surface-singularities-September-24-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove that every holomorphic one-parameter family of isolated hypersurface singularities in ℂ$^{3}$ with constant Milnor number is topologically right-trivial. This gives a positive answer to the surface case of the *μ*-constant problem. The trivialization fixes the parameter and the origin section, and preserves the defining functions."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "065",
+   "title": "Virasoro constraints for complete intersections and projective-bundle towers",
+   "description": "Proves the full ordinary unreduced descendant Virasoro conjecture for smooth complete intersections in complex projective space, in every genus and curve class with arbitrary cohomology insertions. The constraints also pass from any smooth projective complex base satisfying them to the projectivization of every algebraic vector bundle of rank at least two, and hence to projective-bundle towers.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Virasoro Constraints under Projectivization",
+     "path": "preprints/Virasoro-Constraints-under-Projectivization-October-5-2026/virasoro-constraints-under-projectivization.pdf",
+     "note": "",
+     "abstract": "We prove that full ordinary descendant Virasoro constraints pass from a smooth projective complex base to the projectivization of any algebraic vector bundle of rank at least two. The bundle need not split and satisfies no positivity requirement. Assuming the full constraints on the base, the conclusion includes every genus, each individual integral curve class, and all cohomology insertions, including primitive and odd classes. The result also applies successively to towers of projective bundles."
+    },
+    {
+     "title": "Virasoro Constraints for Projective Complete Intersections",
+     "path": "preprints/Virasoro-Constraints-for-Projective-Complete-Intersections-September-24-2026/article.pdf",
+     "note": "",
+     "abstract": "We prove the Virasoro conjecture for the ordinary descendant Gromov–Witten theory of smooth complete intersections in projective space, in every genus and curve class and with arbitrary cohomology insertions. This includes primitive and odd cohomology classes, with no semisimplicity assumption."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "066",
+   "title": "Bounded klt complements for Fano contractions",
+   "description": "Proves the finite-rational-coefficient form of Shokurov’s bounded-klt-complement conjecture for *ϵ*-lc complex Fano-type pairs with nef anti-log-canonical divisor. For *ϵ*-lc Fano contractions over any algebraically closed characteristic-zero field, it gives klt complements near every base point, with index bounded only by dimension and positive rational *ϵ*.",
+   "doc": "lean/docs/066.md",
+   "manuscripts": [
+    {
+     "title": "Bounded klt complements for Fano contractions",
+     "path": "preprints/Bounded-klt-complements-for-Fano-contractions-September-25-2026/Bounded-klt-complements-for-Fano-contractions-September-25-2026.pdf",
+     "note": "",
+     "abstract": "For fixed dimension *d* and positive rational *ϵ*, we prove that every *ϵ*-log-canonical Fano contraction over an algebraically closed field of characteristic zero admits, near each closed base point, a klt complement of index bounded only by *d* and *ϵ*. Over ℂ, we also obtain monotone klt complements for Fano type pairs with nef anti-log-canonical divisor and coefficients in a fixed finite rational set. This proves the finite-rational-coefficient form of Shokurov's bounded-klt-complement conjecture."
+    },
+    {
+     "title": "Uniform Cartier sections for Fano type contractions",
+     "path": "preprints/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026.pdf",
+     "note": "",
+     "abstract": "We prove the Cartier-divisor conjecture of Birkar and Shokurov for rational boundaries in characteristic zero and for real boundaries over ℂ. For an *ϵ*-lc Fano type contraction with positive-dimensional base and nef negative log canonical class, a Cartier divisor through any prescribed base point can be chosen with pullback log canonical threshold bounded below in terms of the dimension and *ϵ* alone."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/066.md",
+    "title": "Bounded klt complements for Fano contractions",
+    "papers": [
+     "preprints/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026.pdf"
+    ],
+    "scope": "The paper develops uniform Cartier sections for Fano-type contractions as a step toward bounded klt complements. The linked formalization proves a local compactness result: for positive numbers $a_i$, the chart-field retractions indexed by nonnegative weights satisfying $\\sum_i a_iw_i=1$ form a compact set in the pointwise topology on the fraction field.\n\nThe chart is built over an algebraically closed field from the localization of a polynomial ring at its origin. Its local domain is Noetherian, essentially of finite type and formally unramified over that localization, and formally étale over the polynomial ring.\n\nThis compactness result applies to one such chart. It does not construct a Cartier divisor through a prescribed base point whose pullback has a positive log-canonical-threshold bound along the whole fibre depending only on dimension and discrepancy, as required by the paper's uniform Cartier-section theorem. Bounded klt complements and the paper's real-boundary and companion conclusions are also outside this comparison.",
+    "results": [
+     {
+      "label": "Compactness of normalized chart-field retractions",
+      "challenge": "lean/ComparatorChallenges/CartierChartCompactnessSupport.lean",
+      "config": "lean/ComparatorChallenges/CartierChartCompactnessSupport.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.CartierSections.isCompact_closedChartFieldRetraction_cone",
+        "role": "theorem",
+        "kind": "lemma",
+        "line": 25,
+        "statement": "lemma isCompact_closedChartFieldRetraction_cone\n    (a : σ → NNReal) (ha : ∀ i, 0 < a i) :\n    IsCompact ((fun w : σ → NNReal => fun x : K =>\n      closedChartFieldRetraction (σ := σ) (k := k) (R := R) (A := A) w x) ''\n      normalizedWeights a)",
+        "proof": {
+         "file": "lean/OAI/AlgebraicGeometry/CartierSections/ChartCompactness.lean",
+         "line": 47,
+         "kind": "lemma",
+         "sorry": false
+        },
+        "module": "lean/OAI/AlgebraicGeometry/CartierSections/ChartCompactness.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "067",
+   "title": "The Campana–Peternell conjecture in dimension six",
+   "description": "Proves the Campana–Peternell conjecture in complex dimension six: every smooth connected complex projective Fano sixfold with nef tangent bundle is rational homogeneous.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "The Campana–Peternell conjecture in dimension six",
+     "path": "preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove that every smooth connected complex projective Fano sixfold with nef tangent bundle is rational homogeneous, resolving the Campana–Peternell conjecture in complex dimension six. As a consequence, a connected compact Kähler manifold *X* with nef holomorphic tangent bundle and $\\dim_{\\mathbb C}X-\\widetilde q(X)\\leq6$ has ordinary universal cover $F\\times\\mathbb C^{\\widetilde q(X)}$, where *F* is a rational homogeneous manifold and $\\widetilde q(X)$ is the maximal irregularity of a connected finite étale cover."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "068",
+   "title": "Anticanonical nonvanishing in every dimension",
+   "description": "If *X* is a smooth connected complex projective variety and $-K_X$ admits a smooth Hermitian metric with nonnegative curvature, then $H^0(X,-mK_X)\\ne0$ for some *m* > 0. Thus smooth semipositivity forces a nonzero section of a positive tensor power of the anticanonical bundle in every dimension.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Anticanonical nonvanishing from smooth semipositivity",
+     "path": "preprints/Anticanonical-nonvanishing-from-smooth-semipositivity-September-26-2026/main.pdf",
+     "note": "",
+     "abstract": "Every smooth connected projective complex variety with smoothly semipositive anticanonical bundle has a nonzero section of some positive anticanonical power."
+    },
+    {
+     "title": "Invariant anticanonical indices and conversion of twisted differentials",
+     "path": "preprints/Invariant-anticanonical-indices-and-conversion-of-twisted-differentials-September-26-2026/main.pdf",
+     "note": "",
+     "abstract": "For a holomorphic action of a compact torus on a compact complex manifold, we prove that the invariant Euler characteristic of naturally linearized anticanonical powers is polynomial on a divisible progression, with its actual value at exponent zero. Independently, on a smooth projective variety with smoothly semipositive anticanonical bundle, we remove a fixed pseudoeffective error from an unbounded sequence of effective twists. These results convert invariant cohomology into twisted differential forms and prove anticanonical nonvanishing on smooth projective varieties with smoothly semipositive anticanonical bundle, by descending the forms before conversion."
+    },
+    {
+     "title": "Bounded anticanonical metrics on klt pairs and torus quotients",
+     "path": "preprints/Bounded-anticanonical-metrics-on-klt-pairs-and-torus-quotients-September-26-2026/main.pdf",
+     "note": "",
+     "abstract": "Let $(W,D)$ be a projective ℚ-factorial klt pair with effective rational boundary. We prove that a positive Cartier multiple of $-(K_W+D)$ has a nonzero section if this divisor is nef, its pullback to a resolution admits a semipositive metric with locally bounded weights, and the resolution has nonzero structure-sheaf Euler characteristic. Consequently a smooth rationally connected projective variety with smoothly semipositive anticanonical bundle has a nonzero naturally invariant anticanonical plurisection for every algebraic torus action."
+    },
+    {
+     "title": "Cohomological transfer and equivariant anticanonical sections",
+     "path": "preprints/Cohomological-transfer-and-equivariant-anticanonical-sections-September-26-2026/main.pdf",
+     "note": "",
+     "abstract": "Let *X* be a smooth projective complex variety with smoothly semipositive anticanonical bundle. For any torus linearization of that bundle, we show that invariant sections in unbounded degrees with one fixed negative pseudoeffective error yield an invariant section in a positive untwisted degree. Combining the natural invariant index with compact-monodromy structure, we deduce that every such *X* has a nonzero section of some positive anticanonical power."
+    },
+    {
+     "title": "Metric descent and rank-preserving contractions",
+     "path": "preprints/Metric-descent-and-rank-preserving-contractions-September-26-2026/main.pdf",
+     "note": "",
+     "abstract": "From a smooth semipositive anticanonical metric on a smooth projective complex variety, we construct an unweighted integrable semipositive metric on a corrected anticanonical line of a smooth base, using a normal equidimensional toroidal model and full generic adjoint rank one at exponent zero. The explicit rational boundary correction pulls back to an exceptional divisor. On varieties without positive-degree holomorphic forms, two-metric transfer gives sections with prescribed boundary poles from a finite-volume log-anticanonical metric and a target line with bounded semipositive weights. In particular, a smooth projective complex variety with a smoothly semipositive anticanonical bundle and no such forms has a nonzero invariant section of a positive anticanonical multiple for every torus action with its natural linearization. On this class of varieties, generic section and adjoint-rank hypotheses give contractions of invariant fibrations that preserve both conditions unless an invariant global section already exists."
+    },
+    {
+     "title": "Integrable metrics and effectivity with controlled boundary",
+     "path": "preprints/Integrable-metrics-and-effectivity-with-controlled-boundary-September-26-2026/main.pdf",
+     "note": "",
+     "abstract": "Let *Y* be smooth projective and let *C* be an effective integral divisor. If $-K_Y+C$ admits a metric with a global strict curvature lower bound for which the canonical section of *C* is locally square integrable, every pseudoeffective rational divisor becomes rationally effective after an effective correction supported on *C*. For a smooth projective *X* with smoothly semipositive $L=-K_X$, sections of $m_jL-P$ at unbounded positive exponents, with any fixed pseudoeffective Cartier error *P*, yield a section of a positive multiple of *L*."
+    },
+    {
+     "title": "Exact orders and invariant anticanonical linear systems",
+     "path": "preprints/Exact-orders-and-invariant-anticanonical-linear-systems-September-26-2026/main.pdf",
+     "note": "",
+     "abstract": "On a smooth connected projective complex variety with smoothly semipositive anticanonical bundle, we prove that asymptotically zero valuation on the curvature-null face is attained by an effective rational anticanonical divisor. The fixed auxiliary line bundle is arbitrary."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "069",
+   "title": "Global quantum geometric Langlands at irrational level",
+   "description": "Proves the unramified de Rham quantum geometric Langlands equivalence for every connected simple complex algebraic group on every smooth projective connected complex curve, at every shifted level $c\\in\\mathbb C\\setminus\\mathbb Q$. It identifies the full derived categories of twisted *D*-modules for the group and its Langlands dual, retaining all global forms and connected components.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Global quantum geometric Langlands at irrational level",
+     "path": "preprints/Global-quantum-geometric-Langlands-at-irrational-level-October-4-2026/quantum-langlands.pdf",
+     "note": "",
+     "abstract": "We prove the unramified quantum geometric Langlands equivalence for every connected simple complex algebraic group *G* and every level $c\\in\\mathbb C\\setminus\\mathbb Q$, including non-real levels. For every smooth projective connected complex curve *X*, it identifies the full twisted *D*-module categories on $\\mathop{\\mathrm{Bun}}\\nolimits _G(X)$ and $\\mathop{\\mathrm{Bun}}\\nolimits _{G^\\vee}(X)$ at the dual shifted levels *c* and $-1/(rc)$, where *r* is the lacing number. The equivalence uses the given global forms and includes all connected components."
+    }
+   ],
+   "lean": null
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "repo": "openai/math",
+ "rev": "4eaee87548250b2682affda7d05d947c05554bae",
+ "date": "2026-10-30T00:35:35Z",
+ "toolchain": "v4.34.1",
+ "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+ "mathlib_version": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+ "license": "Apache-2.0",
+ "counts": {
+  "families": 373,
+  "families_with_lean": 245,
+  "lean_files": 3333,
+  "main_results": 192,
+  "main_results_unlinked": 0,
+  "manuscripts": 721,
+  "proofs_found": 528,
+  "proofs_not_found": 33,
+  "proofs_with_sorry": 0,
+  "results": 434,
+  "results_main": 199,
+  "statements": 561,
+  "subjects": 17,
+  "unread_files": 0
+ }
+}

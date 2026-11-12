@@ -64,8 +64,8 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | Classification of Finite Simple Groups (Axiom) | `DECOMPOSED` | [The top theorem, its reduction to 9 cases and the theorem for each case, and 110 milestone modules](../roadmap/cfsg/README.md), one article each, with their Lean statements. |
 | The Stacks Project in Lean (Axiom) | `DECOMPOSED` | [2,898 sections of the Stacks Project](../roadmap/stacks/README.md) with a tag that a declaration carries, one article each, with a block per tag. |
 | ATLAS: textbook mathematics in Lean (Meta) | `DECOMPOSED` | [3,605 topics of ATLAS's vault](../roadmap/atlas/README.md), one article each, with a block per result. |
+| OpenAI Math: a model's research manuscripts and their Lean (OpenAI) | `DECOMPOSED` | [373 result families](../roadmap/openai-math/README.md), one article each, with a block per manuscript and per formalized result. |
 | Physlib | `DEFERRED` | Planned map, by documented declaration: One article per documented declaration, grouped by physics area; granularity to be checked against a docstring count. |
 | CSLib | `DEFERRED` | Planned map, by documented declaration: One article per documented public declaration. |
 | Foundation | `DEFERRED` | Planned map, by documented declaration: One article per documented declaration; the Zoo's inclusion diagrams between logics as edges. |
 | Analysis I companion | `DEFERRED` | Planned map, by textbook section: One article per textbook section (the Section_X_Y modules). |
-| OpenAI Math | `DEFERRED` | Planned map, by result family: One article per result family in CONTENTS.md, joined to the 208 formalization.yaml main results. |

@@ -1,0 +1,946 @@
+{
+ "schema": "trough-openai-math/v1",
+ "rev": "4eaee87548250b2682affda7d05d947c05554bae",
+ "families": [
+  {
+   "number": "071",
+   "title": "Koebe’s circle-domain conjecture",
+   "description": "Resolves the existence part of Koebe's circle-domain conjecture: every domain in the Riemann sphere is conformally equivalent to a domain whose complementary components are round disks or points. It also proves that circle domains with conformally removable boundary are rigid, meaning every conformal equivalence to another circle domain is Möbius, establishing this direction of the He–Schramm conjecture.",
+   "doc": "lean/docs/071.md",
+   "manuscripts": [
+    {
+     "title": "Removable Boundaries and Rigidity of Circle Domains",
+     "path": "preprints/Removable-Boundaries-and-Rigidity-of-Circle-Domains-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that a circle domain with conformally removable boundary is conformally rigid, with no restriction on the number of complementary components. This establishes the removability-to-rigidity direction of the He–Schramm Conjecture."
+    },
+    {
+     "title": "Koebe's Circle-Domain Conjecture",
+     "path": "preprints/Koebes-Circle-Domain-Conjecture-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every domain in the Riemann sphere is conformally equivalent to a circle domain, resolving Koebe's circle-domain conjecture positively."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/071.md",
+    "title": "Koebe’s circle-domain conjecture",
+    "papers": [
+     "preprints/Removable-Boundaries-and-Rigidity-of-Circle-Domains-September-23-2026/paper.pdf",
+     "preprints/Koebes-Circle-Domain-Conjecture-September-23-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves the removability-to-rigidity direction of the He–Schramm conjecture. If a circle domain has conformally removable boundary, then every conformal equivalence from it to another circle domain agrees on the source with a Möbius transformation. There is no bound on the number of complementary components.\n\nThe same Comparator file also states Koebe's circle-domain theorem, which gives a circle-domain representative for every domain in the Riemann sphere.\n\nKoebe's circle-domain conjecture asks whether every domain in the Riemann sphere is conformally equivalent to a circle domain, whose complementary components are round disks or points. The formalization proves this for every domain. It also proves rigidity under a separate hypothesis: a conformal equivalence between circle domains is a Möbius transformation when the source boundary is conformally removable.",
+    "results": [
+     {
+      "label": "Removable-boundary rigidity and the circle-domain theorem",
+      "challenge": "lean/ComparatorChallenges/KoebeCircleDomains.lean",
+      "config": "lean/ComparatorChallenges/KoebeCircleDomains.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Problem047.koebe_circle_domain",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 62,
+        "statement": "theorem koebe_circle_domain :\n    ∀ U : Set Sphere, IsOpen U → IsConnected U →\n      ∃ (V : Set Sphere) (f : Sphere → Sphere),\n        IsCircleDomain V ∧ IsConformalEquivalence f U V",
+        "proof": {
+         "file": "lean/OAI/Analysis/CircleDomains/Main.lean",
+         "line": 10,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/CircleDomains/Main.lean"
+       },
+       {
+        "name": "OAI.Problem047.removability_implies_rigidity",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 68,
+        "statement": "theorem removability_implies_rigidity :\n    ∀ (U V : Set Sphere) (f : Sphere → Sphere),\n      IsCircleDomain U → IsCircleDomain V →\n      IsConformallyRemovable (frontier U) → IsConformalEquivalence f U V →\n      ∃ M : Mobius, ∀ p ∈ U, f p = M • p",
+        "proof": {
+         "file": "lean/OAI/Analysis/CircleDomains/Main.lean",
+         "line": 16,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/CircleDomains/Main.lean"
+       }
+      ]
+     },
+     {
+      "label": "Koebe's circle-domain theorem and removable-boundary rigidity",
+      "challenge": "lean/ComparatorChallenges/KoebeCircleDomains.lean",
+      "config": "lean/ComparatorChallenges/KoebeCircleDomains.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Problem047.koebe_circle_domain",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 62,
+        "statement": "theorem koebe_circle_domain :\n    ∀ U : Set Sphere, IsOpen U → IsConnected U →\n      ∃ (V : Set Sphere) (f : Sphere → Sphere),\n        IsCircleDomain V ∧ IsConformalEquivalence f U V",
+        "proof": {
+         "file": "lean/OAI/Analysis/CircleDomains/Main.lean",
+         "line": 10,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/CircleDomains/Main.lean"
+       },
+       {
+        "name": "OAI.Problem047.removability_implies_rigidity",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 68,
+        "statement": "theorem removability_implies_rigidity :\n    ∀ (U V : Set Sphere) (f : Sphere → Sphere),\n      IsCircleDomain U → IsCircleDomain V →\n      IsConformallyRemovable (frontier U) → IsConformalEquivalence f U V →\n      ∃ M : Mobius, ∀ p ∈ U, f p = M • p",
+        "proof": {
+         "file": "lean/OAI/Analysis/CircleDomains/Main.lean",
+         "line": 16,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/CircleDomains/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "072",
+   "title": "Brennan's conjecture and the integral-means spectrum",
+   "description": "Proves Brennan's conjecture: for every conformal bijection *ϕ* from a simply connected plane domain onto the disk, $|\\phi'|^s$ is area-integrable for $4/3\\lt s\\lt 4$. The sharp universal integral-means identity is $B_{\\mathcal S}(t)=|t|-1$ for *t* ≤ −2. A strict bound $B_b(-1)\\lt 1/4$ for bounded univalent functions disproves Kraetzer's prediction at that parameter.",
+   "doc": "lean/docs/072.md",
+   "manuscripts": [
+    {
+     "title": "Brennan's conjecture and sharp inverse-square integral means",
+     "path": "preprints/Brennans-conjecture-and-sharp-inverse-square-integral-means-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove Brennan's conjecture: if a simply connected plane domain admits a conformal bijection *φ* onto the unit disk, then $|\\varphi'|^s$ is area-integrable for every $4/3\\lt s\\lt 4$. We also prove the sharp inverse-square integral-means exponent $B_{\\mathcal S}(-2)=1$ for the normalized schlicht class $\\mathcal S$."
+    },
+    {
+     "title": "A strict inverse-first-power bound for univalent functions",
+     "path": "preprints/A-strict-inverse-first-power-bound-for-univalent-functions-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove a uniform upper bound for inverse-first-power integral means of normalized univalent disk maps with exponent strictly below 1/4. Consequently, the bounded universal integral-means spectrum satisfies $B_b(-1)\\lt 1/4$, disproving Kraetzer's conjectured spectrum at *p* = −1."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/072.md",
+    "title": "Brennan's conjecture and the integral-means spectrum",
+    "papers": [
+     "preprints/Brennans-conjecture-and-sharp-inverse-square-integral-means-September-24-2026/paper.pdf",
+     "preprints/A-strict-inverse-first-power-bound-for-univalent-functions-September-24-2026/paper.pdf"
+    ],
+    "scope": "Brennan's conjecture asserts that $|\\phi'|^s$ is area-integrable for $4/3<s<4$ when $\\phi$ conformally maps a simply connected plane domain with nontrivial spherical boundary onto the disk. The formalization establishes this interval, along with area integrability of $|f'|^t$ for univalent disk maps when $-2<t<2/3$.\n\nIt also gives the uniform inverse-square radial-mean bound with exponent $-1-\\varepsilon$ for every $\\varepsilon>0$ and the spectrum value $B_{\\mathcal S}(-2)=1$. The Koebe map and its inverse give divergence at all four boundary exponents.\n\nKraetzer's proposed integral-means spectrum predicts $B_b(-1)=1/4$ for bounded univalent maps. The formalized result proves $B_b(-1)<1/4$, contradicting that prediction.\n\nThe underlying estimate gives constants $0<\\varepsilon<1/4$ and $C<\\infty$ such that the normalized circular mean of $|f'|^{-1}$ is at most $C(1-r)^{-1/4+\\varepsilon}$ for every normalized univalent disk map and $1/2\\le r<1$. The bound requires neither bounded image nor boundary regularity, and no numerical value of $\\varepsilon$ is specified.",
+    "results": [
+     {
+      "label": "Brennan and inverse-square integral-means bounds",
+      "challenge": "lean/ComparatorChallenges/Brennan.lean",
+      "config": "lean/ComparatorChallenges/Brennan.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Brennan.main_theorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 47,
+        "statement": "theorem main_theorem : MainStatement",
+        "proof": {
+         "file": "lean/OAI/Analysis/IntegralMeans/Main.lean",
+         "line": 10,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/IntegralMeans/Main.lean"
+       }
+      ]
+     },
+     {
+      "label": "Sharp endpoint divergence",
+      "challenge": "lean/ComparatorChallenges/BrennanSharp.lean",
+      "config": "lean/ComparatorChallenges/BrennanSharp.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Brennan.Sharp.sharp_endpoints",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 36,
+        "statement": "theorem sharp_endpoints : SharpEndpointStatement",
+        "proof": {
+         "file": "lean/OAI/Analysis/IntegralMeans/SharpEndpoints.lean",
+         "line": 23,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/IntegralMeans/SharpEndpoints.lean"
+       }
+      ]
+     },
+     {
+      "label": "Strict inverse-first-power bound and consequences",
+      "challenge": "lean/ComparatorChallenges/StrictMeans.lean",
+      "config": "lean/ComparatorChallenges/StrictMeans.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.StrictInverseFirstPower.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 34,
+        "statement": "theorem main :\n    (∃ ε C : ℝ, 0 < ε ∧ ε < 1 / 4 ∧\n      ∀ (f : ℂ → ℂ), NormalizedUnivalent f →\n        ∀ r : ℝ, 1 / 2 ≤ r → r < 1 →\n          integralMean (-1) f r ≤ C * (1 - r) ^ (-(1 / 4 : ℝ) + ε)) ∧\n    boundedSpectrum (-1) < (1 / 4 : EReal) ∧\n    (¬ ∀ p : ℝ, boundedSpectrum p = kraetzerPrediction p)",
+        "proof": {
+         "file": "lean/OAI/Analysis/StrictMeans/Main.lean",
+         "line": 7,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/StrictMeans/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "073",
+   "title": "The Falconer distance conjecture",
+   "description": "Resolves the Falconer distance conjecture in every dimension *d* ≥ 2: every compact set $E\\subset\\mathbb R^d$ with Hausdorff dimension greater than $d/2$ determines a set of Euclidean distances of positive Lebesgue measure.",
+   "doc": "lean/docs/073.md",
+   "manuscripts": [
+    {
+     "title": "The Falconer distance conjecture in all dimensions",
+     "path": "preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We resolve the Falconer distance conjecture in every dimension. For every integer *d* ≥ 2, a compact subset of ℝ$^{d}$ with Hausdorff dimension greater than $d/2$ determines a set of Euclidean distances of positive Lebesgue measure."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/073.md",
+    "title": "The Falconer distance conjecture",
+    "papers": [
+     "preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves the Falconer distance conjecture in every dimension. For every integer $d\\ge2$ and compact set $E\\subset\\mathbb R^d$ with Hausdorff dimension greater than $d/2$, the set $\\{\\lVert x-y\\rVert:x,y\\in E\\}$ has positive Lebesgue measure. The linked statements include both this all-dimensional result and the earlier planar case.",
+    "results": [
+     {
+      "label": "Planar Falconer distance theorem",
+      "challenge": "lean/ComparatorChallenges/PlanarFalconer.lean",
+      "config": "lean/ComparatorChallenges/PlanarFalconer.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.PlanarFalconer.mainTarget_proved",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 20,
+        "statement": "theorem mainTarget_proved : MainTarget",
+        "proof": {
+         "file": "lean/OAI/MeasureTheory/Falconer/Main.lean",
+         "line": 50,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MeasureTheory/Falconer/Main.lean"
+       }
+      ]
+     },
+     {
+      "label": "Falconer distance theorem in every dimension",
+      "challenge": "lean/ComparatorChallenges/FalconerAllDimensions.lean",
+      "config": "lean/ComparatorChallenges/FalconerAllDimensions.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Falconer.falconer_distance_conjecture",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 11,
+        "statement": "theorem falconer_distance_conjecture :\n    ∀ (d : ℕ), 2 ≤ d → ∀ E : Set (EuclideanSpace ℝ (Fin d)), IsCompact E →\n      (d : ℝ≥0∞) / 2 < dimH E →\n        0 < volume {r : ℝ | ∃ x ∈ E, ∃ y ∈ E, dist x y = r}",
+        "proof": {
+         "file": "lean/OAI/MeasureTheory/Falconer/Campaign123PlanarFurstenbergProof.lean",
+         "line": 47,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MeasureTheory/Falconer/Campaign123PlanarFurstenbergProof.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "074",
+   "title": "Kakeya in three and four dimensions",
+   "description": "Resolves the Kakeya maximal conjecture in three dimensions and the Hausdorff-dimension conjecture in four. In three dimensions, the radius-*δ* tube maximal operator maps $L^3(\\mathbb R^3)$ to $L^3(S^2)$ with norm $O_\\varepsilon(\\delta^{-\\varepsilon})$ for every *ε* > 0. In four dimensions, every set containing a unit segment in every direction has Hausdorff dimension four.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "The Kakeya maximal conjecture in three dimensions",
+     "path": "preprints/The-Kakeya-maximal-conjecture-in-three-dimensions-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the Kakeya maximal conjecture in three dimensions. For every *ε* > 0, the maximal average over unit tubes of radius *δ* maps $L^3(\\mathbb R^3)$ to $L^3(S^2)$ with norm at most $C_\\varepsilon\\delta^{-\\varepsilon}$."
+    },
+    {
+     "title": "Every four-dimensional Kakeya set has full Hausdorff dimension",
+     "path": "preprints/Every-four-dimensional-Kakeya-set-has-full-Hausdorff-dimension-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the four-dimensional Hausdorff-dimension Kakeya conjecture: every subset of ℝ$^{4}$ containing a unit line segment in every direction has Hausdorff dimension four. No compactness or regularity assumption is imposed on the set or its witnessing line family."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "075",
+   "title": "The $L\\log L$ Fourier-convergence conjecture",
+   "description": "Proves that the ordinary symmetric Fourier partial sums of every complex-valued function in $L\\log L(\\mathbb T)$ converge almost everywhere along the full sequence. This resolves the classical sufficiency conjecture at the $L\\log L$ scale.",
+   "doc": "lean/docs/075.md",
+   "manuscripts": [
+    {
+     "title": "Almost-everywhere Fourier convergence in L log L",
+     "path": "preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that the ordinary symmetric Fourier partial sums of every complex-valued function in $L\\log L$ on the circle converge almost everywhere to the function along the full sequence. This establishes the classical $L\\log L$ sufficiency conjecture."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/075.md",
+    "title": "The $`L\\log L`$ Fourier-convergence conjecture",
+    "papers": [
+     "preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/paper.pdf"
+    ],
+    "scope": "The $L\\log L$ Fourier-convergence conjecture asks whether ordinary symmetric Fourier partial sums converge almost everywhere at this integrability scale. The formalization proves this for every measurable complex-valued function on $\\mathbb T=\\mathbb R/(2\\pi\\mathbb Z)$ satisfying $\\int_{\\mathbb T}|f|\\log(2+|f|)<\\infty$. Outside one measurable null set,\n$\\sum_{k=-N}^{N}\\widehat f(k)e^{ikx}\\to f(x)$ along the full sequence $N\\to\\infty$.",
+    "results": [
+     {
+      "label": "Almost-everywhere convergence of full symmetric Fourier partial sums",
+      "challenge": "lean/ComparatorChallenges/FourierLLogL.lean",
+      "config": "lean/ComparatorChallenges/FourierLLogL.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.FourierLLogL.paperMain",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 12,
+        "statement": "theorem paperMain (f : AddCircle (2 * Real.pi) → ℂ)\n    (hfm : AEStronglyMeasurable f AddCircle.haarAddCircle)\n    (hfi : Integrable (fun x ↦ ‖f x‖ * Real.log (2 + ‖f x‖))\n      AddCircle.haarAddCircle) :\n    ∃ E : Set (AddCircle (2 * Real.pi)),\n      MeasurableSet E ∧ AddCircle.haarAddCircle E = 0 ∧ ∀ x ∉ E,\n        Tendsto\n          (fun N : ℕ ↦\n            ∑ k ∈ Finset.Icc (-(N : ℤ)) (N : ℤ), fourierCoeff f k * fourier k x)\n          atTop (𝓝 (f x))",
+        "proof": {
+         "file": "lean/OAI/Analysis/FourierLLogL/PaperMain.lean",
+         "line": 8,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/FourierLLogL/PaperMain.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "076",
+   "title": "Real ultraflat Littlewood polynomials and unbounded binary merit factors",
+   "description": "Constructs polynomials with *N* consecutive coefficients in $\\{-1,1\\}$ whose modulus is $(1+o(1))\\sqrt N$ uniformly on the entire unit circle, for every sufficiently large integer length *N*. Thus real Littlewood polynomials are ultraflat, including at the real endpoints. Their binary merit factors tend to infinity, disproving Turyn's bounded-merit-factor conjecture.",
+   "doc": "lean/docs/076.md",
+   "manuscripts": [
+    {
+     "title": "Ultraflat real Littlewood polynomials",
+     "path": "preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/ultraflat-real-littlewood-polynomials.pdf",
+     "note": "",
+     "abstract": "For every $\\varepsilon\\in(0,1)$ and every sufficiently large integer *N*, there is a polynomial of length *N* with coefficients in $\\{-1,1\\}$ whose modulus lies between $(1-\\varepsilon)\\sqrt N$ and $(1+\\varepsilon)\\sqrt N$ everywhere on the unit circle. Thus real Littlewood polynomials can be ultraflat through every sufficiently large integer length. The signs may be chosen separately at each length."
+    },
+    {
+     "title": "Nearly minimal maxima and positive minima of Littlewood polynomials",
+     "path": "preprints/Nearly-minimal-maxima-and-positive-minima-of-Littlewood-polynomials-October-5-2026/littlewood-lower-envelope.pdf",
+     "note": "",
+     "abstract": "For every *η* > 0 and every sufficiently large integer *N*, there is a polynomial with *N* consecutive coefficients in $\\{-1,1\\}$ whose modulus lies between $\\sqrt N/16$ and $(1+\\eta)\\sqrt N$ everywhere on the unit circle."
+    },
+    {
+     "title": "Asymptotically minimal maxima of real Littlewood polynomials",
+     "path": "preprints/Asymptotically-minimal-maxima-of-real-Littlewood-polynomials-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that the minimum possible maximum modulus on the unit circle of a polynomial with *N* consecutive real coefficients in $\\{-1,1\\}$ is $(1+o(1))\\sqrt N$, as *N* tends to infinity through all integers. This disproves the real-sign analogue of Erdős's fixed relative-gap conjecture. As a consequence, the largest binary merit factor at length *N* tends to infinity through all integer lengths, disproving Turyn's conjecture."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/076.md",
+    "title": "Real ultraflat Littlewood polynomials and unbounded binary merit factors",
+    "papers": [
+     "preprints/Asymptotically-minimal-maxima-of-real-Littlewood-polynomials-September-23-2026/paper.pdf"
+    ],
+    "scope": "The formalization gives real Littlewood polynomials of every sufficiently large length whose maximum modulus on the unit circle is at most $(1+\\eta)\\sqrt N$ for any fixed $\\eta>0$. Thus the smallest possible maximum is asymptotically minimal through all integer lengths.\n\nA further statement chooses one family of real sign polynomials for all lengths such that, for every fixed finite $p>0$, the $L^p$ mean of $\\bigl||P_N(z)|/\\sqrt N-1\\bigr|$ on the unit circle tends to zero. The results are existential and do not give an effective convergence rate or a signing algorithm.",
+    "results": [
+     {
+      "label": "Asymptotically minimal Littlewood maximum",
+      "challenge": "lean/ComparatorChallenges/AsymptoticallyMinimalLittlewood.lean",
+      "config": "lean/ComparatorChallenges/AsymptoticallyMinimalLittlewood.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.AsymptoticallyMinimalLittlewood.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 18,
+        "statement": "theorem main : MainStatement",
+        "proof": {
+         "file": "lean/OAI/Analysis/Littlewood/Main.lean",
+         "line": 187,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Littlewood/Main.lean"
+       }
+      ]
+     },
+     {
+      "label": "Finite-exponent flatness of one all-length Littlewood family",
+      "challenge": "lean/ComparatorChallenges/LittlewoodFiniteFlatness.lean",
+      "config": "lean/ComparatorChallenges/LittlewoodFiniteFlatness.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.AsymptoticallyMinimalLittlewoodFiniteFlatness.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 34,
+        "statement": "theorem main : MainStatement",
+        "proof": {
+         "file": "lean/OAI/Analysis/Littlewood/FiniteFlatness.lean",
+         "line": 14,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Littlewood/FiniteFlatness.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "077",
+   "title": "Fourier restriction for positively curved surfaces",
+   "description": "Proves the diagonal Fourier extension conjecture for positively curved surfaces in three dimensions. For every compact smooth positively curved surface $\\Sigma\\subset\\mathbb R^3$, including surfaces with boundary, the extension operator is bounded from $L^p(\\Sigma)$ to $L^p(\\mathbb R^3)$ for every *p* > 3.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Elliptic capacity propagation and Fourier restriction to the sphere",
+     "path": "preprints/Elliptic-capacity-propagation-and-Fourier-restriction-to-the-sphere-September-24-2026/Elliptic-capacity-propagation-and-Fourier-restriction-to-the-sphere-September-24-2026.pdf",
+     "note": "",
+     "abstract": "We prove the bounded-data Fourier restriction conjecture for the sphere in three dimensions: the Fourier extension operator maps $L^\\infty(S^2)$ boundedly into $L^p(\\mathbb R^3)$ for every *p* > 3. This is the full conjectured open range, and the threshold *p* = 3 is sharp."
+    },
+    {
+     "title": "Diagonal Fourier extension for positively curved surfaces in three dimensions",
+     "path": "preprints/Diagonal-Fourier-extension-for-positively-curved-surfaces-in-three-dimensions-September-24-2026/Diagonal-Fourier-extension-for-positively-curved-surfaces-in-three-dimensions-September-24-2026.pdf",
+     "note": "",
+     "abstract": "We prove the diagonal Fourier extension conjecture for compact smooth positively curved surfaces $\\Sigma\\subset\\mathbb R^3$, including surfaces with smooth boundary. For every $3\\lt p\\lt \\infty$, the extension operator maps $L^p(\\Sigma)$ boundedly into $L^p(\\mathbb R^3)$. The compact paraboloid case also yields free Schrödinger local smoothing in two spatial dimensions for every $3\\lt p\\lt \\infty$ and Sobolev order $s\\gt 2-6/p$."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "078",
+   "title": "The three-dimensional Bochner–Riesz conjecture",
+   "description": "Resolves the three-dimensional Bochner–Riesz conjecture in its strict range: the Bochner–Riesz multipliers of order *δ* are bounded on $L^p(\\mathbb R^3)$ for every $1\\le p\\le\\infty$ whenever $\\delta\\gt \\max\\{3|1/p-1/2|-1/2,0\\}$.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Bochner–Riesz multipliers in three dimensions",
+     "path": "preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026.pdf",
+     "note": "",
+     "abstract": "We prove the three-dimensional Bochner–Riesz conjecture in its strict-order formulation. The main result is boundedness of the Bochner–Riesz multipliers on $L^3(\\mathbb R^3)$ for every positive order. Interpolation and duality then give the full conjectured strict range."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "079",
+   "title": "Local smoothing for the Euclidean wave equation",
+   "description": "Proves Sogge’s local smoothing conjecture in every spatial dimension $n\\ge2$, with arbitrarily small loss above the sharp Sobolev threshold. The wave estimate yields the Bochner–Riesz conjecture and, for $2\\le p\\lt\\infty$, maximal bounds for these means and sharp bounds for Stein’s square function. It also gives Fourier restriction throughout the interior of the conjectured range for the sphere, compact paraboloid, and truncated cone, and local smoothing for the Schrödinger equation. The Kakeya and Nikodym maximal conjectures follow. In particular, every Euclidean Kakeya set has full Hausdorff dimension.",
+   "doc": "lean/docs/079.md",
+   "manuscripts": [
+    {
+     "title": "Local smoothing for the Euclidean wave equation",
+     "path": "preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove Sogge’s local smoothing conjecture for the Euclidean wave equation in every spatial dimension at least two. We deduce the Bochner–Riesz conjecture, maximal estimates for these means, and sharp bounds for Stein’s square function. We obtain Fourier restriction estimates for the sphere, the compact paraboloid, and the truncated cone throughout the interior of the conjectured range, as well as local smoothing for the Schrödinger equation. We also prove the Kakeya and Nikodym maximal conjectures. In particular, every Euclidean Kakeya set has full Hausdorff dimension."
+    },
+    {
+     "title": "Critical local smoothing for the three-dimensional wave equation",
+     "path": "preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the critical $L^{3}$ local smoothing estimate for the wave equation in three spatial dimensions, with every positive Sobolev loss. This resolves Sogge's Euclidean local smoothing conjecture in dimension three."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/079.md",
+    "title": "Local smoothing for the Euclidean wave equation",
+    "papers": [
+     "preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf",
+     "preprints/Critical-local-smoothing-for-the-three-dimensional-wave-equation-September-24-2026/paper.pdf"
+    ],
+    "scope": "For every dimension $n\\ge 2$ and every $2\\le p<\\infty$, the formalization bounds the $L^p(\\mathbb R^n\\times[1,2])$ norm of the Euclidean half-wave by a constant times the $W^{s,p}(\\mathbb R^n)$ norm of its Schwartz initial data. The Sobolev order is $s=\\max(0,(n-1)/2-n/p)+\\varepsilon$ for every $\\varepsilon>0$, and $s=0$ is allowed at $p=2$. In dimension three this gives the critical $L^3$ estimate with arbitrarily small positive Sobolev loss.\n\nThe formalization also gives uniform Bochner–Riesz multiplier bounds, spherical extension estimates, and Stein square-function bounds in their strict ranges. The Kakeya maximal operator satisfies an $L^n$ bound with loss $\\delta^{-\\varepsilon}$ for every $\\varepsilon>0$ at tube radii $0<\\delta\\le 1$. Every subset of $\\mathbb R^n$ containing a unit segment in each direction has Hausdorff dimension $n$.\n\nThe development also proves a logarithmic lower bound for the volume occupied by tubes. In dimension three, at least $\\delta^{-2}$ unit-length tubes of radius $\\delta$ with $\\delta$-separated directions have union volume at least $c/(1+\\log(1/\\delta))^{66}$, uniformly over their centers and $0<\\delta\\le 1$.",
+    "results": [
+     {
+      "label": "Euclidean half-wave local smoothing",
+      "challenge": "lean/ComparatorChallenges/LocalSmoothing.lean",
+      "line": 84,
+      "config": "lean/ComparatorChallenges/LocalSmoothing.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Analysis.Fourier.LocalSmoothing.Comparator.euclidean_local_smoothing",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 84,
+        "statement": "theorem euclidean_local_smoothing :\n    ∀ n : ℕ, 2 ≤ n → ∀ p ε : ℝ, 2 ≤ p → (0 < ε ∨ (p = 2 ∧ ε = 0)) →\n      ∃ C : ℝ, 0 < C ∧ ∀ f : SchwartzMap (Space n) ℂ,\n        MemLp (besselPotential (max 0 (((n : ℝ) - 1) / 2 - n / p) + ε) f)\n          (ENNReal.ofReal p) ∧\n        MemLp (fun z : Space n × ℝ ↦ halfWaveIntegral z.2 f z.1)\n          (ENNReal.ofReal p) (observationMeasure n) ∧\n        eLpNorm (fun z : Space n × ℝ ↦ halfWaveIntegral z.2 f z.1)\n          (ENNReal.ofReal p) (observationMeasure n) ≤\n        ENNReal.ofReal C *\n          eLpNorm (besselPotential (max 0 (((n : ℝ) - 1) / 2 - n / p) + ε) f)\n            (ENNReal.ofReal p) volume",
+        "proof": {
+         "file": "lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean",
+         "line": 85,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean"
+       }
+      ]
+     },
+     {
+      "label": "Bochner–Riesz multiplier bounds uniform in the radius",
+      "challenge": "lean/ComparatorChallenges/LocalSmoothing.lean",
+      "line": 99,
+      "config": "lean/ComparatorChallenges/LocalSmoothing.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Analysis.Fourier.LocalSmoothing.Comparator.bochner_riesz",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 99,
+        "statement": "theorem bochner_riesz :\n    ∀ n : ℕ, 2 ≤ n → ∀ p : ℝ≥0∞, 1 ≤ p → ∀ δ : ℝ,\n      max ((n : ℝ) * |(p⁻¹).toReal - 1 / 2| - 1 / 2) 0 < δ →\n      ∃ C : ℝ, 0 < C ∧ ∀ R : ℝ, 0 < R → ∀ f : SchwartzMap (Space n) ℂ,\n        MemLp (bochnerRiesz δ R f) p ∧\n        eLpNorm (bochnerRiesz δ R f) p volume ≤\n          ENNReal.ofReal C * eLpNorm f p volume",
+        "proof": {
+         "file": "lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean",
+         "line": 100,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean"
+       }
+      ]
+     },
+     {
+      "label": "Spherical restriction in extension form",
+      "challenge": "lean/ComparatorChallenges/LocalSmoothing.lean",
+      "line": 109,
+      "config": "lean/ComparatorChallenges/LocalSmoothing.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Analysis.Fourier.LocalSmoothing.Comparator.spherical_restriction",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 109,
+        "statement": "theorem spherical_restriction :\n    ∀ n : ℕ, 2 ≤ n → ∀ a : ℝ≥0∞, 1 < a → ∀ b : ℝ,\n      2 * (n : ℝ) / (n - 1) < b →\n      ((n : ℝ) + 1) / ((n : ℝ) - 1) * conjugateExponent a < b →\n      ∃ C : ℝ, 0 < C ∧ ∀ g : Space n → ℂ, MemLp g a (sphereMeasure n) →\n        MemLp (sphericalExtension g) (ENNReal.ofReal b) ∧\n        eLpNorm (sphericalExtension g) (ENNReal.ofReal b) volume ≤\n          ENNReal.ofReal C * eLpNorm g a (sphereMeasure n)",
+        "proof": {
+         "file": "lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean",
+         "line": 110,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean"
+       }
+      ]
+     },
+     {
+      "label": "Kakeya maximal estimate",
+      "challenge": "lean/ComparatorChallenges/LocalSmoothing.lean",
+      "line": 120,
+      "config": "lean/ComparatorChallenges/LocalSmoothing.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Analysis.Fourier.LocalSmoothing.Comparator.kakeya_maximal",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 120,
+        "statement": "theorem kakeya_maximal :\n    ∀ n : ℕ, 2 ≤ n → ∀ ε : ℝ, 0 < ε → ∃ C : ℝ, 0 < C ∧\n      ∀ δ : ℝ, 0 < δ → δ ≤ 1 → ∀ f : Space n → ℂ, MemLp f n →\n        MemLp (kakeyaMaximal δ f) n (sphereMeasure n) ∧\n        eLpNorm (kakeyaMaximal δ f) n (sphereMeasure n) ≤\n          ENNReal.ofReal (C * δ ^ (-ε)) * eLpNorm f n volume",
+        "proof": {
+         "file": "lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean",
+         "line": 121,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean"
+       }
+      ]
+     },
+     {
+      "label": "Full Hausdorff dimension of Euclidean Kakeya sets",
+      "challenge": "lean/ComparatorChallenges/LocalSmoothing.lean",
+      "line": 129,
+      "config": "lean/ComparatorChallenges/LocalSmoothing.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Analysis.Fourier.LocalSmoothing.Comparator.kakeya",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 129,
+        "statement": "theorem kakeya :\n    ∀ n : ℕ, 2 ≤ n → ∀ F : Set (Space n), IsKakeyaSet F → dimH F = n",
+        "proof": {
+         "file": "lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean",
+         "line": 130,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean"
+       }
+      ]
+     },
+     {
+      "label": "Stein square-function estimate",
+      "challenge": "lean/ComparatorChallenges/LocalSmoothing.lean",
+      "line": 134,
+      "config": "lean/ComparatorChallenges/LocalSmoothing.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Analysis.Fourier.LocalSmoothing.Comparator.stein_square",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 134,
+        "statement": "theorem stein_square :\n    ∀ n : ℕ, 2 ≤ n → ∀ p α : ℝ, 2 ≤ p →\n      max (1 / 2) ((n : ℝ) * (1 / 2 - 1 / p)) < α →\n      ∃ C : ℝ, 0 < C ∧ ∀ f : SchwartzMap (Space n) ℂ,\n        MemLp (Stein.literalSteinSquareFunction α f) (ENNReal.ofReal p) volume ∧\n        eLpNorm (Stein.literalSteinSquareFunction α f) (ENNReal.ofReal p) volume ≤\n          ENNReal.ofReal C * eLpNorm f (ENNReal.ofReal p) volume",
+        "proof": {
+         "file": "lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean",
+         "line": 135,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "080",
+   "title": "The exact Sobolev endpoint for Schrödinger convergence",
+   "description": "Proves almost-everywhere convergence $e^{it\\Delta}f\\to f$ as $t\\downarrow0$ for every $f\\in H^{n/(2(n+1))}(\\mathbb R^n)$ and every dimension *n* ≥ 2. This attains the sharp Sobolev equality case of Carleson's Schrödinger convergence problem, including the planar endpoint $H^{1/3}$.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Endpoint convergence for the planar Schrodinger equation",
+     "path": "preprints/Endpoint-convergence-for-the-planar-Schrodinger-equation-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We resolve the planar Sobolev endpoint of Carleson's convergence problem: for initial data in $H^{1/3}(\\mathbb R^2)$, the Schrödinger evolution converges almost everywhere to the initial data as $t\\downarrow0$. The evolution is defined by taking the Gaussian regularization limit first; on one full-measure spatial set, this limit exists for every $0\\lt t\\lt 1$, and the resulting evolution is continuous at *t* = 0."
+    },
+    {
+     "title": "Endpoint pointwise convergence for the Schrodinger equation in higher dimensions",
+     "path": "preprints/Endpoint-pointwise-convergence-for-the-Schrodinger-equation-in-higher-dimensions-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We resolve the Sobolev endpoint of Carleson's pointwise convergence problem in every dimension *n* ≥ 3. For initial data in $H^{n/(2(n+1))}(\\mathbb R^n)$, the free Schrödinger evolution converges almost everywhere to the initial data as $t\\downarrow0$. The evolution is defined by removing Gaussian regularization on one full-measure spatial set, uniformly over the interval $0\\lt t\\lt 1$."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "081",
+   "title": "Riesz transforms and rectifiability in higher codimension",
+   "description": "Resolves the remaining higher-codimension Riesz-transform rectifiability problem: for *d* ≥ 4 and $2\\le n\\le d-2$, an *n*-Ahlfors–David regular Radon measure on ℝ$^{d}$ is uniformly *n*-rectifiable whenever its *n*-dimensional Riesz transform is uniformly $L^{2}$-bounded over all positive hard truncations. The rectifiability bounds depend only on dimension, regularity and operator bounds.",
+   "doc": "lean/docs/081.md",
+   "manuscripts": [
+    {
+     "title": "Riesz transforms and uniform rectifiability in higher codimension",
+     "path": "preprints/Riesz-transforms-and-uniform-rectifiability-in-higher-codimension-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that an *n*-Ahlfors–David regular Radon measure on ℝ$^{d}$ is uniformly *n*-rectifiable if its *n*-dimensional Riesz transform is uniformly bounded from scalar $L^2(\\mu)$ to vector-valued $L^2(\\mu)$ over all positive hard truncations, for integers *d* ≥ 4 and $2\\le n\\le d-2$. This gives a positive answer to the David–Semmes Riesz-transform question in its remaining higher-codimension range. The conclusion gives uniform big pieces of Lipschitz images of Euclidean balls."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/081.md",
+    "title": "Riesz transforms and rectifiability in higher codimension",
+    "papers": [
+     "preprints/Riesz-transforms-and-uniform-rectifiability-in-higher-codimension-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalized result proves that bounded Riesz transforms force quantitative uniform rectifiability in higher codimension. For $d\\ge4$ and $2\\le n\\le d-2$, an $n$-Ahlfors–David regular measure whose positive hard truncations have one uniform $L^2$ operator bound has big pieces of Lipschitz images. The mass fraction and Lipschitz constant depend only on the dimensions and the stated regularity and operator bounds, and work at every support point and admissible radius, including unbounded support. The variation and principal-value corollary is not included.",
+    "results": [
+     {
+      "label": "Quantitative higher-codimension Riesz rectifiability",
+      "challenge": "lean/ComparatorChallenges/RieszQuantitative.lean",
+      "config": "lean/ComparatorChallenges/RieszQuantitative.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.RieszRectifiability.quantitative_higher_codimension_riesz_rectifiability",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 57,
+        "statement": "theorem quantitative_higher_codimension_riesz_rectifiability : QuantitativeFullStatement",
+        "proof": {
+         "file": "lean/OAI/Analysis/RieszRectifiability/Uniformity/Rectifiability.lean",
+         "line": 89,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/RieszRectifiability/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "082",
+   "title": "Annular variation and dyadic absolute bounds for the triangular Hilbert transform",
+   "description": "Proves maximal and annular *r*-variation bounds, for every *r* > 2, from complex $L^3(\\mathbb R^2)\\times L^3(\\mathbb R^2)$ to $L^{3/2}(\\mathbb R^2)$. The maximal estimate controls both hard truncation endpoints and gives almost-everywhere and norm convergence. Pairing with a third input settles the triangular Hilbert transform estimate at the symmetric $L^3\\times L^3\\times L^3$ point.",
+   "doc": "lean/docs/082.md",
+   "manuscripts": [
+    {
+     "title": "Annular variation of the triangular Hilbert transform at the symmetric point",
+     "path": "preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/annular-variation.pdf",
+     "note": "",
+     "abstract": "We prove the annular *r*-variation estimate for the triangular Hilbert transform from complex $L^3\\times L^3$ to $L^{3/2}$ for every *r* > 2. The partitions may depend on the output point and range over all positive scales. The estimate yields the two-endpoint maximal bound and joint almost-everywhere and norm principal values, and resolves the symmetric scalar triangular Hilbert transform problem."
+    },
+    {
+     "title": "An L³ bound for the dyadic triangular Hilbert form",
+     "path": "preprints/An-L3-bound-for-the-dyadic-triangular-Hilbert-form-October-5-2026/dyadic-triangular-hilbert.pdf",
+     "note": "",
+     "abstract": "We prove a uniform $L^3\\times L^3\\times L^3$ estimate for the dyadic triangular Hilbert form with unrestricted real inputs. The sum of the absolute local contributions over any finite set of scales is bounded by forty times the product of the input norms. In particular, the bound allows coefficients of modulus at most one to vary independently among admissible interval triples."
+    },
+    {
+     "title": "The maximal triangular Hilbert transform at the symmetric point",
+     "path": "preprints/The-maximal-triangular-Hilbert-transform-at-the-symmetric-point-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "For arbitrary complex inputs in $L^3(\\mathbb R^2)$, we prove the pointwise maximal $L^3\\times L^3\\to L^{3/2}$ estimate for the triangular Hilbert transform, with the supremum over both hard truncation endpoints. The estimate yields joint almost-everywhere and $L^{3/2}$ convergence as the lower endpoint tends to zero and the upper endpoint tends to infinity. This also proves the conjectured scalar estimate at the symmetric point."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/082.md",
+    "title": "Annular variation and dyadic absolute bounds for the triangular Hilbert transform",
+    "papers": [
+     "preprints/The-maximal-triangular-Hilbert-transform-at-the-symmetric-point-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalized result proves the symmetric maximal estimate for the triangular Hilbert transform: for arbitrary complex $F,G\\in L^3(\\mathbb R^2)$, the $L^{3/2}$ norm of the supremum over all finite hard-truncation intervals is at most $C\\|F\\|_3\\|G\\|_3$ for one absolute constant $C$. It also establishes a common full-measure set on which the truncated integrals are defined and almost-everywhere measurability of the maximal output.",
+    "results": [
+     {
+      "label": "Maximal triangular Hilbert transform bound",
+      "challenge": "lean/ComparatorChallenges/TriangularHilbert.lean",
+      "config": "lean/ComparatorChallenges/TriangularHilbert.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.TriangularHilbert.main_estimate",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 50,
+        "statement": "theorem main_estimate : MainEstimate",
+        "proof": {
+         "file": "lean/OAI/Analysis/TriangularHilbert/Main.lean",
+         "line": 38,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TriangularHilbert/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "083",
+   "title": "Hilbert transforms along Lipschitz directions",
+   "description": "Proves a uniform strong $L^{2}$ bound for the planar Hilbert transform along any Lipschitz unit vector field, at integration lengths bounded by an absolute multiple of its reciprocal Lipschitz constant. The estimate is uniform over inner truncations and yields an $L^{2}$-bounded principal-value operator, establishing Stein's weak-type conjecture at this short scale.",
+   "doc": "lean/docs/083.md",
+   "manuscripts": [
+    {
+     "title": "A uniform Hilbert transform estimate for Lipschitz directions",
+     "path": "preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove a uniform $L^{2}$ bound for the Hilbert transform along a Lipschitz unit vector field in the plane, with integration restricted to a fixed absolute multiple of the reciprocal Lipschitz seminorm. The bound is uniform in the inner truncation and holds for fields depending on both coordinates. This gives an affirmative answer to Stein's weak-$(2,2)$ conjecture."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/083.md",
+    "title": "Hilbert transforms along Lipschitz directions",
+    "papers": [
+     "preprints/A-uniform-Hilbert-transform-estimate-for-Lipschitz-directions-September-25-2026/main.pdf"
+    ],
+    "scope": "The formalization proves uniform $L^2$ bounds for short Hilbert transforms along Lipschitz unit vector fields in the plane, including fields depending on both coordinates. For Lipschitz constant $K>0$, every hard truncation with $0<\\varepsilon\\le R\\le1/(10^6K)$ has one universal $L^2$ bound on Schwartz functions, independent of the inner cutoff.\n\nAt a fixed short scale for $1$-Lipschitz fields, the formalization also gives principal-value and weak-$(2,2)$ estimates and bounded extensions to all of $L^2$. These results establish the stated short-scale form of Stein's question.",
+    "results": [
+     {
+      "label": "Uniform short Hilbert-transform bounds for Lipschitz directions",
+      "challenge": "lean/ComparatorChallenges/LipschitzHilbert.lean",
+      "config": "lean/ComparatorChallenges/LipschitzHilbert.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.LipschitzHilbert.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 63,
+        "statement": "theorem main :\n    ∃ a : ℝ, a∈Ioo 0 (1/2) ∧ ∃ C : ℝ≥0, 0<C ∧ ShortHilbertConclusion a C",
+        "proof": {
+         "file": "lean/OAI/Analysis/LipschitzHilbert/Main.lean",
+         "line": 17,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/LipschitzHilbert/Main.lean"
+       },
+       {
+        "name": "OAI.LipschitzHilbert.uniform_truncation",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 68,
+        "statement": "theorem uniform_truncation :\n    ∃ C : ℝ, 0<C ∧ ∀ K : ℝ≥0, 0<K → ∀ epsilon R : ℝ,\n      0<epsilon → epsilon≤R → R≤1/(1000000*(K:ℝ)) →\n      ∀ v : Plane → Plane, LipschitzWith K v → (∀ x, ‖v x‖=1) →\n      ∀ f : SchwartzMap Plane ℂ,\n        eLpNorm (shortTransform v epsilon R f) 2 volume≤ENNReal.ofReal (C*‖f.toLp 2 volume‖)",
+        "proof": {
+         "file": "lean/OAI/Analysis/LipschitzHilbert/Main.lean",
+         "line": 23,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/LipschitzHilbert/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "084",
+   "title": "The geometric case of the Erdős similarity conjecture",
+   "description": "For every fixed $q\\in(0,1)$, constructs compact subsets of $[0,1]$ with measure arbitrarily close to one containing no translated and nontrivially dilated copy of $\\{q^n:n\\ge1\\}$, with dilations of either sign. This resolves the geometric-progression case of the Erdős similarity conjecture for every ratio.",
+   "doc": "lean/docs/084.md",
+   "manuscripts": [
+    {
+     "title": "The geometric case of the Erdős similarity conjecture",
+     "path": "preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/geometric-erdos-similarity.pdf",
+     "note": "",
+     "abstract": "We prove the geometric-progression case of the Erdős similarity conjecture. For every fixed $q\\in(0,1)$ and every $\\eta\\in(0,1)$, we construct a compact set $E_{q,\\eta}\\subseteq[0,1]$ of measure greater than $1-\\eta$ containing no nontrivial affine copy of $\\{q^n:n\\ge1\\}$, for any translation and either sign of nonzero dilation. The set may depend on *q*; the result makes no simultaneous assertion for different ratios."
+    },
+    {
+     "title": "The dyadic case of the Erdős similarity conjecture",
+     "path": "preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a compact subset of the unit interval, of measure arbitrarily close to one, that contains no affine copy of the dyadic sequence $\\{2^{-n}:n\\ge1\\}$. The conclusion holds for every translation and every nonzero real dilation, of either sign, proving the dyadic case of the Erdős similarity conjecture."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/084.md",
+    "title": "The geometric case of the Erdős similarity conjecture",
+    "papers": [
+     "preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves the dyadic case of the Erdős similarity conjecture. For every $0<\\eta<1$, it constructs a compact set $E\\subset[0,1]$ of measure greater than $1-\\eta$ that contains no affine copy of $\\{2^{-n}:n\\ge1\\}$. Explicitly, for every translation $x$ and every nonzero real dilation $s$, some point $x+s2^{-n}$ lies outside $E$. Both signs of $s$ are included.",
+    "results": [
+     {
+      "label": "Positive-measure avoidance of every affine dyadic sequence",
+      "challenge": "lean/ComparatorChallenges/DyadicAvoidance.lean",
+      "config": "lean/ComparatorChallenges/DyadicAvoidance.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Problem310.dyadic_affine_avoidance",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 12,
+        "statement": "theorem dyadic_affine_avoidance :\n    ∀ η : ℝ, 0 < η → η < 1 → ∃ E : Set ℝ,\n      E ⊆ Set.Icc (0 : ℝ) 1 ∧ IsCompact E ∧\n      MeasureTheory.volume E > ENNReal.ofReal (1 - η) ∧\n      ∀ x s : ℝ, s ≠ 0 → ∃ n : ℕ, 1 ≤ n ∧\n        x + s * dyadicPoint n ∉ E",
+        "proof": {
+         "file": "lean/OAI/MeasureTheory/DyadicAvoidance/Main.lean",
+         "line": 103,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MeasureTheory/DyadicAvoidance/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "085",
+   "title": "Endpoint Sobolev regularity of centered disk averages",
+   "description": "Resolves the planar centered-disk case of the Hajłasz–Onninen maximal-function regularity problem. For every real $f\\in W^{1,1}(\\mathbb R^2)$, the centered disk maximal function satisfies $\\|\\nabla Mf\\|_1\\le C\\|\\nabla f\\|_1$ with an absolute constant. It belongs locally to $W^{1,1}$ and has a globally integrable weak gradient.",
+   "doc": "lean/docs/085.md",
+   "manuscripts": [
+    {
+     "title": "An Endpoint Gradient Bound for the Centered Disk Maximal Operator",
+     "path": "preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/article.pdf",
+     "note": "",
+     "abstract": "We prove the endpoint gradient bound $\\|\\nabla Mf\\|_1\\le C\\|\\nabla f\\|_1$ for every real-valued $f\\in W^{1,1}(\\mathbb R^2)$, where $Mf(x)$ is the supremum of the averages of $|f|$ over disks centered at *x*, and *C* is an absolute constant. The maximal function belongs to $W^{1,1}_{\\mathrm{loc}}(\\mathbb R^2)$ and has a globally integrable weak gradient. This gives a positive resolution of the planar centered-disk case of the endpoint question of Hajłasz and Onninen."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/085.md",
+    "title": "Endpoint Sobolev regularity of centered disk averages",
+    "papers": [
+     "preprints/An-Endpoint-Gradient-Bound-for-the-Centered-Disk-Maximal-Operator-September-26-2026/article.pdf"
+    ],
+    "scope": "The centered disk maximal operator takes the supremum of averages of $|f|$ over disks centered at each point. The formalization proves that every real $f\\in W^{1,1}(\\mathbb R^2)$ has a maximal function that is finite almost everywhere, belongs to $W^{1,1}_{\\mathrm{loc}}$, and has a globally integrable weak gradient satisfying $\\|\\nabla Mf\\|_1\\le C\\|\\nabla f\\|_1$ for one absolute constant $C$.\n\nThe earlier signed finite-band estimate for smooth compactly supported functions is also retained. The general endpoint statement covers the Sobolev setting of the paper; a BV extension is outside these statements.",
+    "results": [
+     {
+      "label": "Signed finite-band disk-maximal gradient bound",
+      "challenge": "lean/ComparatorChallenges/SignedFiniteBand.lean",
+      "config": "lean/ComparatorChallenges/SignedFiniteBand.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.SignedDisk.CenteredDiskEndpoint.main_signed_finite_band",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 45,
+        "statement": "theorem main_signed_finite_band : SignedFiniteBandStatement",
+        "proof": {
+         "file": "lean/OAI/Analysis/SignedDisk/Main.lean",
+         "line": 296,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/SignedDisk/Main.lean"
+       }
+      ]
+     },
+     {
+      "label": "Endpoint gradient bound for the centered disk maximal operator",
+      "challenge": "lean/ComparatorChallenges/DiskMaximal.lean",
+      "config": "lean/ComparatorChallenges/DiskMaximal.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.CenteredDiskEndpoint.main_endpoint",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 56,
+        "statement": "theorem main_endpoint : EndpointStatement",
+        "proof": {
+         "file": "lean/OAI/Analysis/DiskMaximal/Main.lean",
+         "line": 144,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/DiskMaximal/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "086",
+   "title": "An $L^{3}$ bound for the trilinear Hilbert transform",
+   "description": "Proves that the principal-value trilinear Hilbert transform with shifts $x-t$, $x-2t$, $x-3t$ is bounded from $L^3(\\mathbb R)^3$ to $L^1(\\mathbb R)$. This resolves the $L^{3}$ exponent case of the standard conjecture for slopes 1, 2, 3.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "An $L^{3}$ bound for the trilinear Hilbert transform",
+     "path": "preprints/An-L3-bound-for-the-trilinear-Hilbert-transform-October-5-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that the trilinear Hilbert transform with fixed slopes 1, 2, 3 maps $L^3(\\mathbb R)\\times L^3(\\mathbb R)\\times L^3(\\mathbb R)$ to $L^1(\\mathbb R)$, resolving this case of the trilinear Hilbert transform conjecture."
+    }
+   ],
+   "lean": null
+  }
+ ]
+}

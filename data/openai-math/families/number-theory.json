@@ -1,0 +1,1607 @@
+{
+ "schema": "trough-openai-math/v1",
+ "rev": "4eaee87548250b2682affda7d05d947c05554bae",
+ "families": [
+  {
+   "number": "001",
+   "title": "Milne’s rationality conjecture and algebraic specialization",
+   "description": "Proves Milne's rationality conjecture for abelian varieties over $\\overline{\\mathbb Q}$ with good reduction: specialized Hodge classes pair rationally with complementary divisor products, independently of cohomology theory. Together with result 032, every specialized Hodge class is represented by a single rational algebraic cycle simultaneously in all prime-to-*p* and crystalline realizations, for every residue characteristic *p*.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Milne's rationality conjecture for abelian varieties",
+     "path": "preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove Milne's rationality conjecture for abelian varieties, including residue characteristic 2. After good reduction, the pairing of a rational Hodge class with any complementary product of divisor classes on the reduction is the same rational number in every prime-to-*p* realization and in crystalline cohomology. Using the Hodge theorem for CM abelian varieties, we also show that every such specialized Hodge class is represented by a single rational algebraic cycle in all these realizations."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "002",
+   "title": "The full BSD formula from low Selmer corank",
+   "description": "Proves the full Birch–Swinnerton-Dyer leading-term formula for every elliptic curve over ℚ whose full *q*-power Selmer group has corank zero or one for some prime *q*, including finiteness of the Tate–Shafarevich group. With result 006, this gives full BSD for a density-one set of quadratic twists of every elliptic curve over ℚ.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Exact Birch–Swinnerton-Dyer Formula from Low Selmer Corank",
+     "path": "preprints/Exact-Birch-Swinnerton-Dyer-Formula-from-Low-Selmer-Corank-October-7-2026/exact-bsd-low-selmer-corank.pdf",
+     "note": "",
+     "abstract": "We prove the full Birch–Swinnerton-Dyer leading-term formula for every elliptic curve over ℚ whose full *q*-power Selmer group has corank zero or one at some prime *q*. The analytic and Mordell–Weil ranks equal that corank, and the Tate–Shafarevich group is finite. The formula includes all prime factors and requires no additional hypotheses on reduction, rational torsion, isogenies, complex multiplication, or residual Galois representations."
+    },
+    {
+     "title": "The Selmer converse for elliptic curves at every prime",
+     "path": "preprints/The-Selmer-converse-for-elliptic-curves-at-every-prime-October-7-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove the Selmer converse in coranks zero and one for every elliptic curve over ℚ and every prime *p*: if the full *p*-power Selmer group has ℤ$_{p}$-corank $r\\in\\{0,1\\}$, then the analytic and Mordell–Weil ranks both equal *r*, and the entire Tate–Shafarevich group is finite. As an application at the additive prime 3, we prove that for every prime $\\ell\\equiv4,7,8\\pmod9$, the cubic $X^3+Y^3=\\ell Z^3$ has analytic and Mordell–Weil rank one and finite Tate–Shafarevich group. In particular, every such *ℓ* is a sum of two rational cubes."
+    },
+    {
+     "title": "The two-primary Birch–Swinnerton-Dyer formula in Selmer corank at most one",
+     "path": "preprints/The-two-primary-Birch-Swinnerton-Dyer-formula-in-Selmer-corank-at-most-one-October-6-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the two-primary Birch and Swinnerton-Dyer leading-term formula for every elliptic curve over the rationals whose two-power Selmer group has corank at most one. In this range, the algebraic rank, analytic rank, and Selmer corank are equal, and the Tate–Shafarevich group is finite. Combined with the quadratic-twist Selmer distribution, this gives the exact two-primary formula for a density-one set of signed squarefree twists of each fixed curve, ordered by absolute value; the common rank is zero or one, with each value having density one half."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "003",
+   "title": "The quasi-Riemann hypothesis",
+   "description": "Proves that every Dirichlet *L*-function, including $\\zeta(s)$, is zero-free in $\\Re s\\gt 7/8$, resolving the quasi-Riemann hypothesis. The same half-plane is zero-free for every finite-order Hecke *L*-function over $\\mathbb Q(\\sqrt{-3})$. A companion gives a different proof of the zero-free half-plane $\\Re s\\gt 11/12$.",
+   "doc": "lean/docs/003.md",
+   "manuscripts": [
+    {
+     "title": "The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane $\\Re s\\gt 7/8$",
+     "path": "preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that all finite-order Hecke *L*-functions over $\\mathbb Q(\\sqrt{-3})$ and all Dirichlet *L*-functions are zero-free in the half-plane $\\Re s\\gt 7/8$, with the principal pole at *s* = 1 allowed. In particular, the Riemann zeta function is zero-free in this half-plane, proving the quasi-Riemann hypothesis."
+    },
+    {
+     "title": "The Quasi-Riemann Hypothesis (alternate 11/12 proof)",
+     "path": "preprints/The-Quasi-Riemann-Hypothesis-October-5-2026/paper2.pdf",
+     "note": "",
+     "abstract": "We establish the quasi-Riemann hypothesis by proving that every Dirichlet *L*-function, including Riemann's zeta function, has no zeros in the half-plane $\\mathop{\\mathrm{Re}}\\nolimits s\\gt 11/12$. More generally, we prove the same zero-free half-plane for every finite-order Hecke *L*-function over $K=\\mathbb Q(\\sqrt{-3})$. In particular, this rules out the existence of Landau–Siegel zeros."
+    },
+    {
+     "title": "Uniform exclusion of Landau–Siegel zeros",
+     "path": "preprints/Uniform-exclusion-of-Landau-Siegel-zeros-October-1-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the uniform exclusion of Landau–Siegel zeros. There is an absolute constant *c* > 0 such that every real zero $\\beta\\in(0,1)$ of every primitive nonprincipal real Dirichlet *L*-function of conductor *q* ≥ 3 satisfies $(1-\\beta)\\log q\\ge c$."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/003.md",
+    "title": "The quasi-Riemann hypothesis",
+    "papers": [
+     "preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf",
+     "preprints/Uniform-exclusion-of-Landau-Siegel-zeros-October-1-2026/paper.pdf"
+    ],
+    "scope": "The quasi-Riemann hypothesis asks for a fixed zero-free half-plane $\\Re s>\\theta$ with $\\theta<1$. The formalization gives $\\theta=7/8$ for the Riemann zeta function and every Dirichlet $L$-function, uniformly over all positive moduli and all characters. It also establishes the same bound for finite-order Hecke $L$-functions over $\\mathbb Q(\\sqrt{-3})$.\n\nThe principal-character poles at $s=1$ are excluded in the Dirichlet and Hecke statements. The paper's later applications are not included.\n\nThe formalized result gives a uniform logarithmic exclusion region for Landau–Siegel zeros. There is one constant $c>0$ such that every primitive nonprincipal real Dirichlet character of conductor $q\\ge3$ and every real zero $0<\\beta<1$ of its $L$-function satisfy $1-\\beta\\ge c/\\log q$.\n\nBoth character parities are included. No explicit value of $c$ is given. This excludes real zeros in $1-c/\\log q<\\beta<1$, but does not rule out real zeros elsewhere in $(0,1)$.",
+    "results": [
+     {
+      "label": "Riemann zeta $7/8$ bound",
+      "challenge": "lean/ComparatorChallenges/QuasiRiemannHypothesis.lean",
+      "config": "lean/ComparatorChallenges/QuasiRiemannHypothesis.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 5,
+        "statement": "theorem riemannZeta_ne_zero_of_seven_eighths_lt_re\n    {s : ℂ} (hs : (7 / 8 : ℝ) < s.re) : riemannZeta s ≠ 0",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean",
+         "line": 29,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean"
+       }
+      ]
+     },
+     {
+      "label": "Dirichlet $L$-function $7/8$ bound",
+      "challenge": "lean/ComparatorChallenges/DirichletSevenEighths.lean",
+      "config": "lean/ComparatorChallenges/DirichletSevenEighths.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.DirichletCharacter.LFunction_ne_zero_of_seven_eighths_lt_re",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 8,
+        "statement": "theorem LFunction_ne_zero_of_seven_eighths_lt_re\n    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) {s : ℂ}\n    (hs : (7 / 8 : ℝ) < s.re) (hpole : ¬ (χ = 1 ∧ s = 1)) :\n    _root_.DirichletCharacter.LFunction χ s ≠ 0",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean",
+         "line": 19,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean"
+       }
+      ]
+     },
+     {
+      "label": "Finite-order Hecke $L$-function $7/8$ bound",
+      "challenge": "lean/ComparatorChallenges/HeckeSevenEighths.lean",
+      "config": "lean/ComparatorChallenges/HeckeSevenEighths.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.SevenEighths.HeckeFamily.LFunction_ne_zero_of_seven_eighths_lt_re",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 237,
+        "statement": "theorem LFunction_ne_zero_of_seven_eighths_lt_re\n    (χ : Character) {s : ℂ} (hs : (7 / 8 : ℝ) < s.re)\n    (hpole : ¬ (χ.residue = 1 ∧ s = 1)) : LFunction χ s ≠ 0",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/DirichletL/Hecke/Nonvanishing.lean",
+         "line": 13,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/DirichletL/Hecke/Nonvanishing.lean"
+       }
+      ]
+     },
+     {
+      "label": "Uniform real-zero gap",
+      "challenge": "lean/ComparatorChallenges/SiegelZeros.lean",
+      "config": "lean/ComparatorChallenges/SiegelZeros.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.SiegelZeros.WeightedTorusJets.exists_absolute_real_zero_gap",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 8,
+        "statement": "theorem exists_absolute_real_zero_gap :\n    ∃ c : ℝ, 0 < c ∧\n      ∀ (q : ℕ) [NeZero q], 3 ≤ q →\n      ∀ χ : DirichletCharacter ℂ q,\n        χ.IsPrimitive → χ ≠ 1 → (∀ a : ZMod q, (χ a).im = 0) →\n        ∀ β : ℝ, 0 < β → β < 1 → χ.LFunction (β : ℂ) = 0 →\n          c ≤ (1 - β) * Real.log (q : ℝ)",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/SiegelZeros/Conclusions/Theorem.lean",
+         "line": 11,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/SiegelZeros/Main.lean"
+       },
+       {
+        "name": "OAI.SiegelZeros.WeightedTorusJets.dirichletRealZeroBound_proof",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 19,
+        "statement": "theorem WeightedTorusJets.dirichletRealZeroBound_proof :\n    ∃ c : ℝ, 0 < c ∧ ∀ (q : ℕ) [NeZero q], 3 ≤ q →\n      ∀ χ : DirichletCharacter ℂ q,\n        χ.IsPrimitive → χ ≠ 1 → (∀ a : ZMod q, (χ a).im = 0) →\n        ∀ β : ℝ,\n          (0 < β ∧ β < 1 ∧ DirichletCharacter.LFunction χ (β : ℂ) = 0) →\n            c ≤ (1 - β) * Real.log (q : ℝ)",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/SiegelZeros/Characters/DirichletRealZeroBoundProof.lean",
+         "line": 17,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/SiegelZeros/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "004",
+   "title": "Hilbert’s tenth problem over ℚ",
+   "description": "Proves that no algorithm decides whether an integer-coefficient polynomial in an arbitrary number of variables has a rational zero, resolving Hilbert's tenth problem over ℚ negatively.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Hilbert’s tenth problem over the rational numbers",
+     "path": "preprints/Hilberts-tenth-problem-over-the-rational-numbers-October-6-2026/main.pdf",
+     "note": "",
+     "abstract": "We give a negative answer to Hilbert's tenth problem over the rational numbers: no algorithm decides whether a polynomial with integer coefficients has a rational zero. The number of variables is part of the input."
+    },
+    {
+     "title": "A pointwise 2-converse for elliptic curves with rational two-torsion",
+     "path": "preprints/A-pointwise-2-converse-for-elliptic-curves-with-rational-two-torsion-October-7-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove a pointwise 2-converse for elliptic curves over $\\mathbf Q$ with nonzero rational two-torsion: if the $2^\\infty$-Selmer corank is zero or one, then the analytic rank and Mordell–Weil rank equal that corank, and the Shafarevich–Tate group is finite. The result allows arbitrary reduction at 2."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "005",
+   "title": "Irrationality of Catalan’s constant",
+   "description": "Proves that Catalan's constant $G=\\sum_{j\\ge0}(-1)^j/(2j+1)^2$ is irrational.",
+   "doc": "lean/docs/005.md",
+   "manuscripts": [
+    {
+     "title": "Catalan's constant is irrational",
+     "path": "preprints/Catalans-constant-is-irrational-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that Catalan's constant $G=\\sum_{j\\geq0}(-1)^j/(2j+1)^2$ is irrational."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/005.md",
+    "title": "Irrationality of Catalan’s constant",
+    "papers": [
+     "preprints/Catalans-constant-is-irrational-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves that Catalan's constant $G=\\sum_{j=0}^{\\infty}(-1)^j/(2j+1)^2$ is irrational. This is the mathematical assertion in the paper's title.",
+    "results": [
+     {
+      "label": "Irrationality of Catalan's constant",
+      "challenge": "lean/ComparatorChallenges/Catalan.lean",
+      "config": "lean/ComparatorChallenges/Catalan.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.InternalCatalan.catalan_irrational",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 7,
+        "statement": "theorem catalan_irrational :\n    Irrational (∑' j : ℕ, (-1 : ℝ) ^ j / ((2 * j + 1 : ℕ) : ℝ) ^ 2)",
+        "proof": null,
+        "module": "lean/OAI/NumberTheory/Catalan/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "006",
+   "title": "Goldfeld’s conjecture: densities and mean analytic rank",
+   "description": "Proves Goldfeld's conjecture for quadratic twists of every elliptic curve over ℚ: analytic ranks zero and one each have density 1/2, and the mean analytic rank tends to 1/2. Both statements order signed squarefree twist parameters by absolute value.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Goldfeld's analytic density conjecture and the 2-converse for elliptic curves",
+     "path": "preprints/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove Goldfeld's analytic density conjecture: for every elliptic curve *E* over ℚ, the quadratic twists of *E* with analytic rank zero and one each have density 1/2 among signed squarefree twist parameters ordered by absolute value. We also prove the low-corank 2-converse: if the $2^\\infty$-Selmer corank of *E* is zero or one, then it equals the analytic and Mordell–Weil ranks, and the Tate–Shafarevich group is finite."
+    },
+    {
+     "title": "The mean analytic rank of quadratic twists of elliptic curves",
+     "path": "preprints/The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-October-6-2026/paper.pdf",
+     "note": "",
+     "abstract": "For every elliptic curve over ℚ, we prove that the average analytic rank of its quadratic twists tends to 1/2 when signed squarefree twist parameters are ordered by absolute value. This resolves Goldfeld's mean analytic-rank conjecture in this counting convention."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "007",
+   "title": "Ordinary two-point correlations and the corrected Elliott conjecture",
+   "description": "Proves the ordinary two-point Chowla conjecture, with a bound $O(X/(\\log X)^c)$ for Liouville correlation sums along fixed nonproportional affine forms, where *c* > 0 is absolute. More generally, proves the binary corrected Elliott conjecture for complex multiplicative functions bounded by one when one factor is uniformly nonpretentious against each fixed Dirichlet character times $n^{it}$ for $|t|\\le X$.",
+   "doc": "lean/docs/007.md",
+   "manuscripts": [
+    {
+     "title": "Ordinary two-point correlations of multiplicative functions",
+     "path": "preprints/Ordinary-two-point-correlations-of-multiplicative-functions-September-24-2026/final.pdf",
+     "note": "",
+     "abstract": "We prove the ordinary two-point Chowla conjecture. For every fixed pair of nonproportional affine forms, the Liouville correlation has a power-of-logarithm saving at every cutoff, with an absolute exponent. We also prove the binary corrected Elliott conjecture for ordinary averages of complex multiplicative functions of modulus at most one, under uniform nonpretentiousness of at least one original factor. This qualitative conclusion holds in fixed residue classes and for fixed nonproportional affine forms."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/007.md",
+    "title": "Ordinary two-point correlations and the corrected Elliott conjecture",
+    "papers": [
+     "preprints/Ordinary-two-point-correlations-of-multiplicative-functions-September-24-2026/final.pdf"
+    ],
+    "scope": "The formalization proves ordinary two-point cancellation for multiplicative functions. For the Liouville function on every fixed pair of nonproportional affine forms, the correlation sum up to $X$ is $O(X/(\\log X)^c)$ for an absolute $c>0$, with the implied constant depending on the forms.\n\nFor two one-bounded multiplicative functions, if at least one is uniformly nonpretentious against all Dirichlet-character twists with frequency $|t|\\le N$, then their shifted and nonproportional affine correlation sums divided by $N$ tend to zero. These are ordinary averages, with no logarithmic averaging.",
+    "results": [
+     {
+      "label": "Ordinary Elliott cancellation under uniform nonpretentiousness",
+      "challenge": "lean/ComparatorChallenges/OrdinaryElliott.lean",
+      "config": "lean/ComparatorChallenges/OrdinaryElliott.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.OrdinaryCorrelations.binary_corrected_elliott",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 33,
+        "statement": "theorem binary_corrected_elliott\n    (f₁ f₂ : ℕ → ℂ) (hf₁ : OneBounded f₁) (hf₂ : OneBounded f₂)\n    (hm₁ : Multiplicative f₁) (hm₂ : Multiplicative f₂)\n    (hNP : UniformlyNonpretentious f₁ ∨ UniformlyNonpretentious f₂)\n    (h₁ h₂ : ℕ) (hne : h₁ ≠ h₂) :\n    Tendsto (shiftAverage f₁ f₂ h₁ h₂) atTop (nhds 0)",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/OrdinaryCorrelations/Elliott/BinaryCorrectedElliott.lean",
+         "line": 37,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/OrdinaryCorrelations/Elliott/Main.lean"
+       }
+      ]
+     },
+     {
+      "label": "Ordinary Liouville and multiplicative two-point correlations",
+      "challenge": "lean/ComparatorChallenges/OrdinaryTwoPointCorrelations.lean",
+      "config": "lean/ComparatorChallenges/OrdinaryTwoPointCorrelations.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.OrdinaryTwoPointCorrelations.liouville_log_saving",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 43,
+        "statement": "theorem liouville_log_saving :\n    ∃ c : ℝ, 0 < c ∧ ∀ a₁ a₂ b₁ b₂ : ℕ,\n      0 < a₁ → 0 < a₂ → a₁ * b₂ ≠ a₂ * b₁ →\n      ∃ C : ℝ, 0 < C ∧ ∀ X : ℝ, 3 ≤ X →\n        ‖affineSum liouville liouville a₁ a₂ b₁ b₂ ⌊X⌋₊‖ ≤\n          C * X / Real.rpow (Real.log X) c",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean",
+         "line": 10,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean"
+       },
+       {
+        "name": "OAI.OrdinaryTwoPointCorrelations.binary_corrected_elliott",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 51,
+        "statement": "theorem binary_corrected_elliott :\n    ∀ f₁ f₂ : ℕ → ℂ, Multiplicative f₁ → Multiplicative f₂ →\n      OneBounded f₁ → OneBounded f₂ →\n      (UniformlyNonpretentious f₁ ∨ UniformlyNonpretentious f₂) →\n      ∀ h₁ h₂ : ℕ, h₁ ≠ h₂ →\n        Tendsto (fun N : ℕ => correlationSum f₁ f₂ h₁ h₂ N / (N : ℂ)) atTop (nhds 0)",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean",
+         "line": 18,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean"
+       },
+       {
+        "name": "OAI.OrdinaryTwoPointCorrelations.affine_corrected_elliott",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 59,
+        "statement": "theorem affine_corrected_elliott :\n    ∀ f₁ f₂ : ℕ → ℂ, Multiplicative f₁ → Multiplicative f₂ →\n      OneBounded f₁ → OneBounded f₂ →\n      (UniformlyNonpretentious f₁ ∨ UniformlyNonpretentious f₂) →\n      ∀ a₁ a₂ b₁ b₂ : ℕ, 0 < a₁ → 0 < a₂ → a₁ * b₂ ≠ a₂ * b₁ →\n        Tendsto (fun N : ℕ => affineSum f₁ f₂ a₁ a₂ b₁ b₂ N / (N : ℂ)) atTop (nhds 0)",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean",
+         "line": 26,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "008",
+   "title": "The Deligne–Drinfeld conjecture",
+   "description": "Proves that the rational Grothendieck–Teichmüller Lie algebra, with the Ihara bracket, is freely generated by one element in each odd weight 3, 5, 7, …, resolving the Deligne–Drinfeld conjecture.",
+   "doc": "lean/docs/008.md",
+   "manuscripts": [
+    {
+     "title": "The Deligne-Drinfeld conjecture",
+     "path": "preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the Deligne–Drinfeld conjecture: the rational Grothendieck–Teichmüller Lie algebra is freely generated by one element in every odd weight at least three, with the corresponding isomorphism after weight completion."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/008.md",
+    "title": "The Deligne–Drinfeld conjecture",
+    "papers": [
+     "preprints/The-Deligne-Drinfeld-conjecture-September-23-2026/paper.pdf"
+    ],
+    "scope": "The Deligne–Drinfeld conjecture predicts that the rational Grothendieck–Teichmüller Lie algebra is freely generated by one element in each odd weight $3,5,7,\\ldots$. The formalization establishes this for the rational solution space of antisymmetry, the three-term equation, and the four-strand pentagon with the Ihara bracket. It also gives the corresponding continuous isomorphism after completion by weight.\n\nThe regularized-transport proposition and graph-complex consequences are not included.",
+    "results": [
+     {
+      "label": "Deligne–Drinfeld main statement",
+      "challenge": "lean/ComparatorChallenges/DeligneDrinfeld.lean",
+      "config": "lean/ComparatorChallenges/DeligneDrinfeld.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.DeligneDrinfeld.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 189,
+        "statement": "theorem main : MainStatement",
+        "proof": {
+         "file": "lean/OAI/Algebra/Drinfeld/Completion.lean",
+         "line": 559,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Algebra/Drinfeld/Completion.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "009",
+   "title": "Function-field reconstruction from Milnor K-theory and Galois data",
+   "description": "Reconstructs function fields of transcendence degree at least two over algebraically closed constants from $K^{\\mathrm M}_1/\\ell$, $K^{\\mathrm M}_2/\\ell$, and their product. These data recover the perfect closure and constants when *ℓ* differs from the characteristic, and the original field and its named base in equal characteristic. Also proves Bogomolov–Pop reconstruction from abelian-by-central pro-*ℓ* Galois data away from the characteristic.",
+   "doc": "lean/docs/009.md",
+   "manuscripts": [
+    {
+     "title": "Reconstruction of Function Fields from Mod-ℓ Milnor K-Theory",
+     "path": "preprints/Reconstruction-of-Function-Fields-from-Mod-ell-Milnor-K-Theory-October-5-2026/mod-ell-bogomolov-pop.pdf",
+     "note": "",
+     "abstract": "We prove a mod-*ℓ* Bogomolov–Pop reconstruction theorem for function fields of transcendence degree at least two over arbitrary algebraically closed fields of characteristic different from *ℓ*. The groups $K^{\\mathrm M}_1/\\ell$ and $K^{\\mathrm M}_2/\\ell$, together with their full bilinear product, determine the perfect closure and its constant field. Every compatible isomorphism of these data is induced by a field isomorphism up to a single scalar in $\\mathbb F_\\ell^\\times$, with only Frobenius ambiguity in the field isomorphism in positive characteristic."
+    },
+    {
+     "title": "Reconstruction from Milnor K-theory modulo the characteristic",
+     "path": "preprints/Reconstruction-from-Milnor-K-theory-modulo-the-characteristic-October-5-2026/paper.pdf",
+     "note": "",
+     "abstract": "Let *K* and *L* be finitely generated extensions of transcendence degree at least two over algebraically closed fields of characteristic *p*. We prove that every isomorphism of their first Milnor *K*-groups modulo *p* preserving the degree-two Steinberg relations is a nonzero scalar multiple of the map induced by a unique field isomorphism. The proof recovers projective lines over the subfields of *p*th powers by an elementary calculation with derivations."
+    },
+    {
+     "title": "The Bogomolov-Pop reconstruction theorem",
+     "path": "preprints/The-Bogomolov-Pop-reconstruction-theorem-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the Bogomolov–Pop reconstruction conjecture for function fields of transcendence degree at least two over arbitrary algebraically closed fields of characteristic different from *ℓ*. The pro-*ℓ* abelian-by-central datum determines the perfect closure and its constant field, with precisely the Frobenius and *ℓ*-adic unit ambiguities."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/009.md",
+    "title": "Function-field reconstruction from Milnor K-theory and Galois data",
+    "papers": [
+     "preprints/The-Bogomolov-Pop-reconstruction-theorem-September-23-2026/paper.pdf"
+    ],
+    "scope": "The Bogomolov–Pop reconstruction conjecture concerns recovering a function field and its constants from pro-$\\ell$ abelian-by-central Galois data. The linked formalization proves injectivity of the reconstruction correspondence for function fields of transcendence degree at least two over algebraically closed fields of characteristic different from the prime $\\ell$.\n\nIf two isomorphisms of perfect closures preserving the constant fields induce the same Galois-data isomorphism modulo $\\ell$-adic unit scaling, then they agree modulo Frobenius. The selected statement proves this uniqueness; existence of a field isomorphism for every admissible Galois-data isomorphism is outside it.",
+    "results": [
+     {
+      "label": "Injectivity of Bogomolov–Pop reconstruction modulo the stated ambiguities",
+      "challenge": "lean/ComparatorChallenges/BogomolovPopInjectivity.lean",
+      "config": "lean/ComparatorChallenges/BogomolovPopInjectivity.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.BogomolovPop.main_graph_injective",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 117,
+        "statement": "theorem main_graph_injective (ell : ℕ) [Fact ell.Prime]\n    (k K l L : Type*) [Field k] [Field K] [Field l] [Field L]\n    [IsAlgClosed k] [IsAlgClosed l] [Algebra k K] [Algebra l L]\n    [Algebra.EssFiniteType k K] [Algebra.EssFiniteType l L]\n    (hk : (ell : k) ≠ 0) (hl : (ell : l) ≠ 0)\n    (hK : 2 ≤ Algebra.trdeg k K) (hL : 2 ≤ Algebra.trdeg l L) :\n    ∀ (a a' : IsomF k K l L) (b : IsomCUnits ell K L),\n      PhiGraph a b → PhiGraph a' b → a = a'",
+        "proof": {
+         "file": "lean/OAI/Algebra/BogomolovPop/Injectivity.lean",
+         "line": 305,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Algebra/BogomolovPop/Injectivity.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "010",
+   "title": "Unrestricted pro-modularity at the prime two",
+   "description": "Every continuous odd absolutely irreducible two-dimensional 2-adic representation of $G_{\\mathbb Q}$ unramified outside finitely many primes occurs in a completed Hecke algebra at some odd tame level. Also proves classical modularity up to Tate twist for irreducible odd representations with these finiteness conditions that are de Rham at 2 with distinct Hodge–Tate weights, resolving the dyadic Fontaine–Mazur case without residual restrictions.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Unrestricted pro-modularity at the prime two",
+     "path": "preprints/Unrestricted-pro-modularity-at-the-prime-two-October-6-2026/two-adic-promodularity.pdf",
+     "note": "",
+     "abstract": "Every continuous, odd, absolutely irreducible two-dimensional 2-adic representation of $G_{\\mathbb Q}$ that is unramified outside finitely many finite primes occurs in the full completed Hecke algebra at some odd tame level. The level may contain auxiliary tame primes, and scalar and reducible residual representations are included. This is a completed-Hecke occurrence result, with no de Rham hypothesis; it does not assert classical modularity."
+    },
+    {
+     "title": "The Dimension of the Two-Adic Hecke Algebra at Odd Level",
+     "path": "preprints/The-Dimension-of-the-Two-Adic-Hecke-Algebra-at-Odd-Level-October-5-2026/two-adic-hecke.pdf",
+     "note": "",
+     "abstract": "For every odd positive integer *N*, every irreducible component of the full two-adic Hecke algebra of level $\\Gamma_1(N)$ has Krull dimension four. This proves the *p* = 2 case of Emerton's dimension conjecture, including all residual components."
+    },
+    {
+     "title": "Fontaine–Mazur modularity at the prime 2",
+     "path": "preprints/Fontaine-Mazur-modularity-at-the-prime-2-October-6-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every continuous, irreducible, odd two-dimensional 2-adic representation of $G_{\\mathbb Q}$, unramified outside finitely many primes and de Rham at 2 with distinct Hodge–Tate weights, is modular up to Tate twist. This resolves the odd, regular two-dimensional Fontaine–Mazur conjecture over ℚ at 2, including all residual representations."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "011",
+   "title": "Prime-factor statistics of $p-1$",
+   "description": "Proves that the normalized ordered logarithms of the prime factors of $p-1$, counted with multiplicity, converge jointly to the Poisson–Dirichlet law $\\mathrm{PD}(1)$ as *p* ranges uniformly over primes up to *x* and $x\\to\\infty$. This resolves the Ford–Konyagin–Luca conjecture. It also proves that infinitely many integers *n* have more than $n^{1-\\varepsilon}$ totient preimages, for every *ε* > 0.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Weighted dilation graphs, smooth shifted primes and totient fibers",
+     "path": "preprints/Weighted-Dilation-Graphs-Smooth-Shifted-Primes-and-Totient-Fibers-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove Erdős's conjecture on the largest fibers of Euler's totient function: for every *ε* > 0, infinitely many positive integers *n* have more than $n^{1-\\varepsilon }$ preimages. We also show that, for every fixed *δ* > 0, there are at least $x^{1-o(1)}$ primes *p* in $2x\\lt p\\le5x$ whose predecessors have no prime factor exceeding $x^{δ}$."
+    },
+    {
+     "title": "The Poisson-Dirichlet law for prime predecessors",
+     "path": "preprints/The-Poisson-Dirichlet-Law-for-Prime-Predecessors-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "For a prime *p* chosen uniformly from $3\\le p\\le x$, list the prime factors of $p-1$ in decreasing order, with multiplicity. As $x\\to\\infty$, their logarithms, divided by $\\log(p-1)$, converge in every finite joint distribution to the Poisson–Dirichlet distribution with parameter one. This proves the conjecture of Ford, Konyagin and Luca."
+    },
+    {
+     "title": "Prime Predecessors with an Even Number of Prime Factors",
+     "path": "preprints/Prime-Predecessors-with-an-Even-Number-of-Prime-Factors-September-17-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that there are infinitely many primes *p* for which $p-1$ is squarefree and has an even number of prime factors. Equivalently, there are infinitely many primes *p* with $\\mu(p-1)=1$."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "012",
+   "title": "Independent largest prime factors of consecutive integers",
+   "description": "Resolves the Erdős–Pomerance joint Dickman conjecture: the logarithmic sizes of the largest prime factors of *n* and $n+1$ are asymptotically independent in ordinary natural density. In particular, the integers satisfying $P^+(n)\\lt P^+(n+1)$ have density 1/2.",
+   "doc": "lean/docs/012.md",
+   "manuscripts": [
+    {
+     "title": "The joint Dickman law for consecutive integers",
+     "path": "preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "Let $P^+(n)$ denote the largest prime factor of *n*. We prove that $\\log P^+(n)/\\log n$ and $\\log P^+(n+1)/\\log n$ are asymptotically independent in ordinary natural density, with Dickman marginals. This resolves the Erdős–Pomerance joint Dickman conjecture positively and implies that the ordering $P^+(n)\\lt P^+(n+1)$ has natural density 1/2."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/012.md",
+    "title": "Independent largest prime factors of consecutive integers",
+    "papers": [
+     "preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/paper.pdf"
+    ],
+    "scope": "Let $P^+(n)$ be the largest prime factor of $n$. The formalization proves the joint Dickman law in ordinary natural density: for every $0<a,b<1$, the density of integers satisfying $P^+(n)\\le n^a$ and $P^+(n+1)\\le n^b$ tends to $\\rho(1/a)\\rho(1/b)$, where $\\rho$ is the Dickman function.\n\nIt also proves that each of the orderings $P^+(n)<P^+(n+1)$ and $P^+(n+1)<P^+(n)$ has natural density $1/2$.",
+    "results": [
+     {
+      "label": "Joint Dickman law and equal ordering densities for consecutive integers",
+      "challenge": "lean/ComparatorChallenges/JointDickman.lean",
+      "config": "lean/ComparatorChallenges/JointDickman.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.JointDickmanPaper.joint_law",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 44,
+        "statement": "theorem joint_law (a b : ℝ) (ha : 0 < a) (ha1 : a < 1) (hb : 0 < b) (hb1 : b < 1) :\n    Tendsto (realDensity (fun n =>\n      (n.maxPrimeFac : ℝ) ≤ (n : ℝ) ^ a ∧ ((n + 1).maxPrimeFac : ℝ) ≤ (n : ℝ) ^ b))\n      atTop (𝓝 (Erdos970.NumberTheoryLean.Dickman.rho (1 / a) *\n        Erdos970.NumberTheoryLean.Dickman.rho (1 / b)))",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/JointDickman/PaperMain.lean",
+         "line": 13,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/JointDickman/PaperMain.lean"
+       },
+       {
+        "name": "OAI.JointDickmanPaper.increasing_order",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 52,
+        "statement": "theorem increasing_order :\n    Tendsto (realDensity (fun n => n.maxPrimeFac < (n + 1).maxPrimeFac))\n      atTop (𝓝 (1 / 2))",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/JointDickman/PaperMain.lean",
+         "line": 21,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/JointDickman/PaperMain.lean"
+       },
+       {
+        "name": "OAI.JointDickmanPaper.decreasing_order",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 58,
+        "statement": "theorem decreasing_order :\n    Tendsto (realDensity (fun n => (n + 1).maxPrimeFac < n.maxPrimeFac))\n      atTop (𝓝 (1 / 2))",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/JointDickman/PaperMain.lean",
+         "line": 27,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/JointDickman/PaperMain.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "013",
+   "title": "Ostmann’s inverse Goldbach conjecture",
+   "description": "Proves that no finite modification of the primes can be written as $A+B$ with $A,B\\subseteq\\mathbb Z_{\\ge0}$ each containing at least two elements. This resolves Ostmann's inverse Goldbach conjecture on additive indecomposability.",
+   "doc": "lean/docs/013.md",
+   "manuscripts": [
+    {
+     "title": "The additive indecomposability of the primes",
+     "path": "preprints/the-additive-indecomposability-of-the-primes-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove Ostmann's inverse Goldbach conjecture: no set differing from the primes by finitely many elements can be written as $A+B$, where *A* and *B* are sets of nonnegative integers with at least two elements each."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/013.md",
+    "title": "Ostmann’s inverse Goldbach conjecture",
+    "papers": [
+     "preprints/the-additive-indecomposability-of-the-primes-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves Ostmann's inverse Goldbach conjecture. For any two sets $A,B$ of nonnegative integers, each containing at least two elements, the symmetric difference between their sumset $A+B$ and the set of primes is infinite. Thus no set differing from the primes by only finitely many elements can be decomposed as such a sumset. The linked statements include the full result and its two-infinite-summands case.",
+    "results": [
+     {
+      "label": "Ostmann's inverse Goldbach theorem and the infinite-summands case",
+      "challenge": "lean/ComparatorChallenges/OstmannComplete.lean",
+      "config": "lean/ComparatorChallenges/OstmannComplete.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Ostmann.inverseGoldbach",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 30,
+        "statement": "theorem inverseGoldbach : InverseGoldbach",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/Ostmann/Complete.lean",
+         "line": 21,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/Ostmann/Complete.lean"
+       },
+       {
+        "name": "OAI.Ostmann.twoInfiniteSummandsImpossible",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 33,
+        "statement": "theorem twoInfiniteSummandsImpossible : TwoInfiniteSummandsImpossible",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/Ostmann/Complete.lean",
+         "line": 16,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/Ostmann/Complete.lean"
+       }
+      ]
+     },
+     {
+      "label": "Additive indecomposability of the primes up to finite changes",
+      "challenge": "lean/ComparatorChallenges/OstmannPrimes.lean",
+      "config": "lean/ComparatorChallenges/OstmannPrimes.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Ostmann.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 9,
+        "statement": "theorem main : ∀ A B : Set ℕ, A.Nontrivial → B.Nontrivial →\n    Set.Infinite ((A + B) ∆ {n : ℕ | Nat.Prime n})",
+        "proof": null,
+        "module": "lean/OAI/NumberTheory/Ostmann/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "014",
+   "title": "Restricted geometric Langlands, global Arthur enhancements, and generic Ramanujan",
+   "description": "Proves the restricted geometric Langlands equivalence for connected reductive groups on smooth projective connected curves over $\\overline{\\mathbb F}_q$ under the four stated Lie-theoretic characteristic hypotheses. Over arbitrary algebraically closed fields of characteristic *p* > 0, the same conclusion holds assuming additionally that *p* is very good for the group and $p\\nmid |W_G|$. Over global function fields, proves Ramanujan at every place for globally generic cuspidal representations of split adjoint absolutely simple exceptional groups, without characteristic or ramification-depth restrictions, and at every unramified place for cuspidal representations of split adjoint absolutely simple groups with a generic unramified component. Assuming the finite-level Ramanujan–Arthur decomposition, constructs global Arthur enhancements of occurring cuspidal excursion parameters for split connected semisimple groups at full finite level, recovering the given parameters by diagonal specialization on the entire Weil group, including inertia.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Global Arthur Enhancements of Cuspidal Excursion Parameters",
+     "path": "preprints/Global-Arthur-Enhancements-of-Cuspidal-Excursion-Parameters-October-5-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "Under the finite-level Ramanujan–Arthur decomposition stated in Theorem 1.1, we construct a global Arthur enhancement for every occurring cuspidal excursion parameter at a specified full finite level for a split connected semisimple group over a global function field. A single algebraic SL$_{2}$ and a commuting Weil centralizer map recover the given parameter by diagonal specialization on the entire Weil group, including inertia. The result does not assert ellipticity, Arthur-packet classification, or a multiplicity formula."
+    },
+    {
+     "title": "Rationality of the Canonical Unramified Arthur Filtration",
+     "path": "preprints/Rationality-of-the-Canonical-Unramified-Arthur-Filtration-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "Under the characteristic hypotheses of restricted geometric Langlands theory, we prove that the canonical Arthur filtration on finitely supported unramified automorphic functions is defined over ℚ for split connected semisimple groups. The result includes the noncuspidal part and every closed invariant nilpotent support, establishing the rationality conjecture of Gaitsgory–Lafforgue–Raskin in this setting."
+    },
+    {
+     "title": "Ramanujan-Arthur Decompositions of Cuspidal Functions at Full Finite Level",
+     "path": "preprints/Ramanujan-Arthur-Decompositions-of-Cuspidal-Functions-at-Full-Finite-Level-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove rational and $\\overline{\\mathbb Q}_\\ell$ decompositions of cuspidal automorphic functions for split semisimple groups over global function fields into subspaces indexed by nilpotent orbits of the dual group. The decompositions hold at every full finite level, with arbitrary divisor multiplicities. Each summand is governed by the same orbit at every unramified place and every complex embedding. At trivial level this proves Conjectures 3.4.5 and 3.4.6 of Gaitsgory–Lafforgue–Raskin. For split connected adjoint absolutely simple groups, we also prove that a cuspidal automorphic representation with one generic unramified local component is tempered at every unramified place. Thus globally generic cuspidal representations in this scope satisfy the unramified part of the generalized Ramanujan conjecture."
+    },
+    {
+     "title": "Temperedness at ramified places for globally generic exceptional groups",
+     "path": "preprints/Temperedness-at-ramified-places-for-globally-generic-exceptional-groups-October-5-2026/ramified-ramanujan.pdf",
+     "note": "",
+     "abstract": "We prove the generalized Ramanujan conjecture for globally generic cuspidal automorphic representations of split connected adjoint exceptional groups over global function fields. Every local component is tempered, without restrictions on characteristic or ramification depth. The proof extends the unramified Ramanujan theorem of a companion paper to all ramified places."
+    },
+    {
+     "title": "The Restricted Geometric Langlands Equivalence in Positive Characteristic",
+     "path": "preprints/The-Restricted-Geometric-Langlands-Equivalence-in-Positive-Characteristic-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the $\\overline{\\mathbb Q}_\\ell$-linear restricted geometric Langlands equivalence for smooth projective connected curves and connected reductive groups in characteristic *p* > 0, with *ℓ* ≠ *p*, in two regimes. Over $\\overline{\\mathbb F}_q$, we assume the four characteristic conditions of the restricted theory stated below. Over arbitrary algebraically closed fields, we assume these conditions and additionally that *p* is very good and does not divide the Weyl-group order. This proves Gaitsgory–Raskin's full-support conjecture [[12, Conjecture 1.3.10]](https://arxiv.org/abs/2508.02237v1) in these regimes."
+    },
+    {
+     "title": "Constructible tame Hecke eigensheaves in positive characteristic",
+     "path": "preprints/Constructible-tame-Hecke-eigensheaves-in-positive-characteristic-October-5-2026/constructible-tame-hecke-eigensheaves-positive-characteristic.pdf",
+     "note": "",
+     "abstract": "We construct nonzero locally constructible perverse Hecke eigensheaves with Borel level at one marked point on a smooth projective curve of genus at least two over an algebraic closure of a finite field. The parameter is a Zariski-dense geometric *ℓ*-adic local system with tame regular-unipotent monodromy. The group is simple and simply connected and satisfies four explicit Lie-theoretic characteristic hypotheses. The eigensheaves have parabolic nilpotent singular support, and their eigenisomorphisms are compatible with tensor products, permutations, and fusion."
+    },
+    {
+     "title": "Tame Hecke Eigensheaves with Several Marked Points",
+     "path": "preprints/Tame-Hecke-Eigensheaves-with-Several-Marked-Points-October-5-2026/Tame-Hecke-Eigensheaves-with-Several-Marked-Points.pdf",
+     "note": "",
+     "abstract": "For SL$_{n}$ in characteristic *p* > *n*, we construct nonzero locally constructible perverse Hecke eigensheaves with Borel level at two or more marked points on a smooth projective curve of genus at least two over an algebraic closure of a finite field. The parameter is a Zariski-dense geometric *ℓ*-adic PGL$_{n}$-local system with unipotent tame monodromy; its nilpotent logarithms may have any Jordan type, including zero. The eigensheaves have parabolic nilpotent singular support, and their eigenisomorphisms retain the full tensor and fusion structure."
+    },
+    {
+     "title": "Frobenius Structures on Tame Hecke Eigensheaves",
+     "path": "preprints/Frobenius-Structures-on-Tame-Hecke-Eigensheaves-October-5-2026/tame-hecke-frobenius.pdf",
+     "note": "",
+     "abstract": "We construct nonzero perverse Weil Hecke eigensheaves for SL$_{n}$ with Borel level at one marked point, after a finite extension of the field of constants. The parameter is a geometrically dense arithmetic PGL$_{n}$-local system with tame regular-unipotent monodromy on a once-punctured curve of genus at least two over a finite field of characteristic *p* > *n*. The full multi-leg eigenstructure is Frobenius compatible with the prescribed arithmetic eigenvalue, and the geometric sheaf has parabolic nilpotent singular support."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "015",
+   "title": "Torus-packet equidistribution in prime, quartic, and sextic degrees",
+   "description": "Proves Haar equidistribution without escape of mass for complete volume-weighted torus packets from totally real fields: arbitrary lattices and prescribed local types in fixed prime degree at least five, arbitrary-order Picard packets in primitive quartic fields, and maximal-order ideal-class packets in primitive sextic fields. Here primitive means having no proper intermediate field; the relevant order or field discriminant tends to infinity.",
+   "doc": "lean/docs/015.md",
+   "manuscripts": [
+    {
+     "title": "Equidistribution of Prime-Degree Torus Packets with Arbitrary Local Type",
+     "path": "preprints/Equidistribution-of-Prime-Degree-Torus-Packets-with-Arbitrary-Local-Type-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the packet form of the higher-dimensional Duke equidistribution problem for totally real fields of any fixed prime degree at least five, allowing arbitrary local homothety types of full lattices. As the multiplier-order discriminant tends to infinity, the volume-weighted packet measures converge to Haar probability measure, with no escape of mass."
+    },
+    {
+     "title": "Equidistribution of primitive quartic torus packets for arbitrary orders",
+     "path": "preprints/Equidistribution-of-Primitive-Quartic-Torus-Packets-for-Arbitrary-Orders-October-5-2026/quartic-torus-packets.pdf",
+     "note": "",
+     "abstract": "Let *K* range over totally real quartic fields with no proper intermediate field, and let $\\mathcal O$ be any order in *K*. We prove that the packets of periodic diagonal orbits attached to invertible $\\mathcal O$-ideal classes, weighted by orbit volume, equidistribute with no escape of mass as $|\\mathop{\\mathrm{Disc}}\\nolimits (\\mathcal O)|$ tends to infinity. The proof combines measure rigidity with a cubic-resolvent estimate that remains uniform at primes dividing the order index."
+    },
+    {
+     "title": "Equidistribution of Primitive Sextic Torus Packets",
+     "path": "preprints/Equidistribution-of-Primitive-Sextic-Torus-Packets-October-5-2026/primitive-sextic-torus-packets.pdf",
+     "note": "",
+     "abstract": "We prove that the complete ideal-class packets of maximal orders in totally real sextic fields with no proper intermediate fields become equidistributed, with no escape of mass, in the space of unimodular lattices as their field discriminants tend to infinity. The limit is Haar probability measure. Each packet includes all coordinate-sign translates and is weighted by diagonal-orbit volume."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/015.md",
+    "title": "Torus-packet equidistribution in prime, quartic, and sextic degrees",
+    "papers": [
+     "preprints/Equidistribution-of-Prime-Degree-Torus-Packets-with-Arbitrary-Local-Type-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves equidistribution of volume-weighted torus packets for totally real number fields of every fixed prime degree at least five. For any sequence of full lattices whose multiplier-order discriminants tend to infinity, the packet measures converge weakly to Haar probability measure and form a tight family, so no mass escapes. Arbitrary local homothety types are allowed, and the fields may vary along the sequence.",
+    "results": [
+     {
+      "label": "Equidistribution of prime-degree torus packets",
+      "challenge": "lean/ComparatorChallenges/DukePrimeDegree.lean",
+      "config": "lean/ComparatorChallenges/DukePrimeDegree.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.DukePrimeDegree.prime_degree_packet_measure_equidistribution_unconditional",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 200,
+        "statement": "theorem prime_degree_packet_measure_equidistribution_unconditional\n    (d : ℕ) (hprime : Nat.Prime (d+1)) (hfive : 5 ≤ d+1)\n    (K : ℕ → Type u) [∀ i, Field (K i)] [∀ i, NumberField (K i)]\n    [∀ i, NumberField.IsTotallyReal (K i)]\n    (M : ∀ i, PrimeDegreePackets.FullLattice (d+1) (K i))\n    (σ : ∀ i, OrderedEmbeddings (d+1) (K i))\n    (hn : ∀ i, Module.finrank ℚ (K i)=d+1)\n    (hD : Tendsto (fun i => PrimeDegreePackets.multiplierDiscriminant (M i)) atTop atTop) :\n    ∃ ν : Measure (X (d+1)), IsHaarProbability ν ∧\n      WeakProbabilityConvergence (fun i => packetMeasure (M i) (σ i)) ν ∧\n      IsTightMeasureSet (Set.range (fun i => packetMeasure (M i) (σ i)))",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/DukePrimeDegree/MainUnconditional.lean",
+         "line": 60,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/DukePrimeDegree/MainUnconditional.lean"
+       },
+       {
+        "name": "OAI.DukePrimeDegree.prime_degree_packet_measures_tendsto_haar_unconditional",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 215,
+        "statement": "theorem prime_degree_packet_measures_tendsto_haar_unconditional\n    (d : ℕ) (hprime : Nat.Prime (d+1)) (hfive : 5 ≤ d+1)\n    (K : ℕ → Type u) [∀ i, Field (K i)] [∀ i, NumberField (K i)]\n    [∀ i, NumberField.IsTotallyReal (K i)]\n    (M : ∀ i, PrimeDegreePackets.FullLattice (d+1) (K i))\n    (σ : ∀ i, OrderedEmbeddings (d+1) (K i))\n    (hn : ∀ i, Module.finrank ℚ (K i)=d+1)\n    (hD : Tendsto (fun i => PrimeDegreePackets.multiplierDiscriminant (M i)) atTop atTop)\n    (m : ProbabilityMeasure (X (d+1)))\n    (hm : IsHaarProbability (m : Measure (X (d+1)))) :\n    WeakProbabilityConvergence (fun i => packetMeasure (M i) (σ i))\n      (m : Measure (X (d+1)))",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/DukePrimeDegree/MainUnconditional.lean",
+         "line": 80,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/DukePrimeDegree/MainUnconditional.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "016",
+   "title": "Zilber–Pink in abelian varieties and the Siegel threefold",
+   "description": "Proves the abelian Zilber–Pink conjecture over $\\overline{\\mathbb Q}$: every irreducible subvariety has finitely many maximal atypical subvarieties relative to its smallest containing torsion coset. It also proves the full curve case in the Siegel threefold $\\mathcal A_2$ for Hodge-generic curves defined over $\\overline{\\mathbb Q}$, without boundary or reduction assumptions.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "The abelian Zilber–Pink conjecture",
+     "path": "preprints/The-Abelian-Zilber-Pink-Conjecture-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the abelian Zilber–Pink conjecture over $\\overline{\\mathbb Q}$. Every irreducible subvariety of an abelian variety has only finitely many maximal atypical subvarieties, where atypicality is measured inside its smallest containing torsion coset."
+    },
+    {
+     "title": "The E×CM component of Zilber–Pink for curves in A2",
+     "path": "preprints/The-E-times-CM-Component-of-Zilber-Pink-for-Curves-in-A2-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the $E\\times\\mathrm{CM}$ component of Zilber–Pink for Hodge-generic algebraic curves in $\\mathcal A_2$ over $\\overline{\\mathbb Q}$. Each such curve contains only finitely many points whose abelian surface is isogenous to a product of elliptic curves with at least one factor having complex multiplication."
+    },
+    {
+     "title": "Quaternionic division points on curves in the Siegel threefold",
+     "path": "preprints/Quaternionic-Division-Points-on-Curves-in-the-Siegel-Threefold-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the quaternionic-division component of Zilber–Pink for curves in $\\mathcal A_2$ over $\\overline{\\mathbb Q}$. A Hodge-generic algebraic curve contains only finitely many points whose full geometric rational endomorphism algebra is an indefinite quaternion division algebra over ℚ. No boundary or reduction hypothesis is required."
+    },
+    {
+     "title": "Elliptic squares and Zilber–Pink for curves in A2",
+     "path": "preprints/Elliptic-Squares-and-Zilber-Pink-for-Curves-in-A2-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every Hodge-generic algebraic curve in $\\mathcal A_2$ over $\\overline{\\mathbb Q}$ contains only finitely many points whose abelian surface is isogenous to the square of an elliptic curve without complex multiplication (CM). Combining this result with the companion $E\\times\\mathrm{CM}$ and quaternionic-division finiteness theorems, we prove the curve case of Zilber–Pink in $\\mathcal A_2$ over $\\overline{\\mathbb Q}$, without a boundary hypothesis."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "017",
+   "title": "The irrationality exponent of *π* is 2",
+   "description": "Proves that the irrationality exponent of *π* is exactly 2: for every *ε* > 0 and all sufficiently large denominators *q*, every rational $p/q$ satisfies $|\\pi-p/q|\\ge q^{-2-\\varepsilon}$. This also proves convergence of the Flint–Hills series $\\sum_{n\\ge1}1/(n^3\\sin^2 n)$, with angles in radians.",
+   "doc": "lean/docs/017.md",
+   "manuscripts": [
+    {
+     "title": "The irrationality exponent of pi is 2",
+     "path": "preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the conjecture that the irrationality exponent of *π* is 2. As a consequence, the classical Flint–Hills series $\\sum_{n\\ge1}1/(n^3\\sin^2 n)$ converges, with angles in radians."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/017.md",
+    "title": "The irrationality exponent of <i>π</i> is 2",
+    "papers": [
+     "preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves that the irrationality exponent of $\\pi$ is exactly two. For every $\\nu>2$, all sufficiently large positive denominators $q$ satisfy $|\\pi-p/q|\\ge q^{-\\nu}$ for every integer numerator $p$. It also states the exact supremum characterization using infinitely many rational approximations.\n\nThe paper's convergence consequence for the Flint–Hills series is outside this selected statement.",
+    "results": [
+     {
+      "label": "The irrationality exponent of $\\pi$ equals two",
+      "challenge": "lean/ComparatorChallenges/PiExponent.lean",
+      "config": "lean/ComparatorChallenges/PiExponent.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.PiExponent.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 7,
+        "statement": "theorem main :\n  (∀ ν : ℝ, 2 < ν → ∃ Q : ℤ, 2 ≤ Q ∧\n    ∀ p q : ℤ, Q ≤ q →\n      (q : ℝ) ^ (-ν) ≤ |Real.pi - (p : ℝ) / (q : ℝ)|) ∧\n  sSup {ν : ℝ | 0 < ν ∧\n    Set.Infinite {r : ℚ | 2 ≤ r.den ∧\n      0 < |Real.pi - (r : ℝ)| ∧\n      |Real.pi - (r : ℝ)| < (r.den : ℝ) ^ (-ν)}} = 2",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/PiExponent/Main.lean",
+         "line": 17,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/PiExponent/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "018",
+   "title": "The Margulis–Platonov conjecture over global fields",
+   "description": "Proves the Margulis–Platonov conjecture over every global field, including function fields of characteristic two. For an absolutely almost simple simply connected algebraic group *G* over *k*, every noncentral abstract normal subgroup of $G(k)$ is the inverse image of an open normal subgroup in the finite product of its anisotropic nonarchimedean local groups.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "The Margulis–Platonov conjecture over global function fields",
+     "path": "preprints/The-Margulis-Platonov-conjecture-over-global-function-fields-October-5-2026/margulis-platonov-global-function-fields.pdf",
+     "note": "",
+     "abstract": "We prove the Margulis–Platonov conjecture over every global function field, including characteristic two. For an absolutely almost simple simply connected algebraic group, every noncentral abstract normal subgroup of its rational points is the inverse image of an open normal subgroup of the finite product of its anisotropic local groups."
+    },
+    {
+     "title": "The Margulis–Platonov conjecture over number fields",
+     "path": "preprints/The-Margulis-Platonov-conjecture-over-number-fields-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the Margulis–Platonov conjecture over number fields. For an absolutely almost simple simply connected group, every noncentral abstract normal subgroup of its rational points is the inverse image of an open normal subgroup of the product of its anisotropic nonarchimedean local groups."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "019",
+   "title": "The local *p*-adic section conjecture and global consequences",
+   "description": "Proves that rational points on every smooth proper geometrically connected curve of genus at least two over a finite extension of ℚ$_{p}$ correspond bijectively to conjugacy classes of sections of its full arithmetic étale fundamental group. It also proves Grothendieck's section conjecture over ℚ for the modular curves $X_0(N)$ and $X_1(N)$ of genus at least two.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Étale covers with a prescribed exterior sheet",
+     "path": "preprints/Etale-covers-with-a-prescribed-exterior-sheet-September-24-2026/main.pdf",
+     "note": "",
+     "abstract": "Let *X* be a smooth proper hyperbolic curve over an algebraic closure of a *p*-adic local field. Given finitely many disjoint small open disks, we construct one connected finite étale cover with a sheet isomorphic to their entire exterior and with degree divisible by *p* on every connected component above each disk."
+    },
+    {
+     "title": "The p-adic section conjecture",
+     "path": "preprints/The-p-adic-section-conjecture-October-6-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove the local *p*-adic section conjecture for smooth proper geometrically connected curves of genus at least two, over every finite extension of ℚ$_{p}$. Combined with established finite-descent theorems, this also yields the global section conjecture for smooth proper geometrically connected curves of genus at least two over number fields when their finite-cover descent locus equals their rational points; this includes $X_0(N)$ and $X_1(N)$ of genus at least two over ℚ."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "020",
+   "title": "Squarefree quartics and power-free polynomial values",
+   "description": "Proves the squarefree-values conjecture for irreducible integer quartics with no fixed prime-square divisor: squarefree values on positive integers have the predicted positive Euler-product density. More generally, establishes the $(d-2)$-power-free density for irreducible integer polynomials of degrees four through eight under the necessary local condition; together with Browning's higher-degree theorem, this covers every *d* ≥ 4.",
+   "doc": "lean/docs/020.md",
+   "manuscripts": [
+    {
+     "title": "Squarefree values of quartics and power-free values of polynomials",
+     "path": "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "We prove that every irreducible integer quartic with no fixed prime-square divisor takes squarefree values with the predicted positive Euler-product density. More generally, we obtain the corresponding $(d-2)$-power-free density in degrees $4\\le d\\le8$. The proof combines number-field factorization, determinant estimates with adaptive auxiliary primes, and explicit low-degree geometry. Together with Browning's theorem for higher degrees, this gives the $(d-2)$-power-free density for every *d* ≥ 4."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/020.md",
+    "title": "Squarefree quartics and power-free polynomial values",
+    "papers": [
+     "preprints/Squarefree-values-of-quartics-and-power-free-values-of-polynomials-September-24-2026/manuscript.pdf"
+    ],
+    "scope": "The formalized result proves positive-density power-free values for every integer polynomial $f$ irreducible over $\\mathbb Q$ of degree $d\\ge4$. Put $k=d-2$ and assume no prime $k$th power divides every value of $f$. Then the number of positive integers $n\\le X$ for which $f(n)$ is $k$-free is $c_fX+o_f(X)$, where $c_f>0$ is the convergent product of local factors. Negative values are allowed and zero is excluded. No monicity, primitivity, or coefficient-height restriction is imposed.",
+    "results": [
+     {
+      "label": "Positive density of power-free polynomial values",
+      "challenge": "lean/ComparatorChallenges/PowerFreeValues.lean",
+      "config": "lean/ComparatorChallenges/PowerFreeValues.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.QuarticPowerFree.allDegrees",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 37,
+        "statement": "theorem allDegrees (f : Polynomial ℤ)\n    (hirr : Irreducible (f.map (Int.castRingHom ℚ)))\n    (hdeglo : 4 ≤ f.natDegree)\n    (hlocal : LocallyAdmissible f (f.natDegree - 2)) :\n    DensityStatement f (f.natDegree - 2)",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/PowerFree/Main.lean",
+         "line": 144,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/PowerFree/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "021",
+   "title": "A quadratic bound for Jacobsthal’s function",
+   "description": "Answers Jacobsthal's quadratic-bound question: every interval of $Ck^2$ consecutive integers contains an integer coprime to any prescribed positive integer with at most *k* distinct prime divisors, for an absolute constant *C*. The bound is uniform over prime sets and interval positions and removes the classical logarithmic loss.",
+   "doc": "lean/docs/021.md",
+   "manuscripts": [
+    {
+     "title": "A quadratic bound for Jacobsthal's function",
+     "path": "preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "Let $h(k)$ be the least integer such that every interval of $h(k)$ consecutive integers contains an integer coprime to any prescribed positive integer having at most *k* distinct prime divisors. We prove $h(k)\\ll k^2/(\\log\\log(3k))^2$, giving an affirmative answer to Jacobsthal's quadratic-bound question."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/021.md",
+    "title": "A quadratic bound for Jacobsthal’s function",
+    "papers": [
+     "preprints/A-quadratic-bound-for-Jacobsthals-function-September-25-2026/paper.pdf"
+    ],
+    "scope": "Let $h(k)$ be the least interval length that guarantees an integer coprime to any prescribed positive modulus with at most $k$ distinct prime factors. The formalization proves the paper's strengthened Jacobsthal bound $h(k)\\le Ck^2/(\\log\\log(3k))^2$ for one absolute $C>0$ and every $k\\ge1$. Intervals may begin at any signed integer. The earlier quadratic bound is also retained as a separate statement; the optimal order of growth is not determined.",
+    "results": [
+     {
+      "label": "Quadratic Jacobsthal bound",
+      "challenge": "lean/ComparatorChallenges/Jacobsthal.lean",
+      "config": "lean/ComparatorChallenges/Jacobsthal.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Erdos970.Erdos970Final.erdos_970_quadratic",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 24,
+        "statement": "theorem erdos_970_quadratic : NumberTheoryLean.Targets.JacobsthalQuadratic",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/Jacobsthal/Conclusions/QuadraticBound.lean",
+         "line": 13,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/Jacobsthal/Main.lean"
+       }
+      ]
+     },
+     {
+      "label": "Jacobsthal bound with an iterated-logarithm saving",
+      "challenge": "lean/ComparatorChallenges/JacobsthalImproved.lean",
+      "config": "lean/ComparatorChallenges/JacobsthalImproved.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Erdos970.Erdos970Final.erdos_970_iterated_log",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 22,
+        "statement": "theorem erdos_970_iterated_log : NumberTheoryLean.Targets.JacobsthalIteratedLog",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/Jacobsthal/Conclusions/IteratedLogBound.lean",
+         "line": 59,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/Jacobsthal/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "022",
+   "title": "The weak inhomogeneous Duffin–Schaeffer conjecture",
+   "description": "Proves that for every real shift *γ* and finite-valued $\\psi:\\mathbb N\\to[0,\\infty)$, divergence of $\\sum_q\\phi(q)\\psi(q)/q$ implies $\\|qx-\\gamma\\|\\lt \\psi(q)$ for infinitely many *q*, for almost every *x*. Here *ϕ* is Euler's totient and the norm is distance to the nearest integer. Numerators are unrestricted; no monotonicity or Diophantine condition on *γ* is needed.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "The Weak Inhomogeneous Duffin–Schaeffer Conjecture",
+     "path": "preprints/The-weak-inhomogeneous-Duffin-Schaeffer-conjecture-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the weak inhomogeneous Duffin–Schaeffer conjecture. For every fixed *γ* ∈ ℝ and finite-valued $\\psi:\\mathbb N\\to[0,\\infty)$, divergence of $\\sum_{q\\ge1}\\phi(q)\\psi(q)/q$ implies $\\|qx-\\gamma\\|\\lt \\psi(q)$ for infinitely many *q*, for almost every *x*. Here *ϕ* is Euler's totient and $\\|\\cdot\\|$ is distance to the nearest integer. Numerators need not be reduced, and the shift satisfies no Diophantine restriction."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "023",
+   "title": "Patterson's first moment for cubic Gauss sums",
+   "description": "Proves unconditionally the all-primary-prime form of Patterson’s first-moment asymptotic: normalized cubic Gauss sums over primary Eisenstein primes of norm at most *X*, including both conjugates, have an explicit positive main term of order $X^{5/6}/\\log X$. Every fixed nonzero prime-angle Fourier mode has smaller order.",
+   "doc": "lean/docs/023.md",
+   "manuscripts": [
+    {
+     "title": "An unconditional first moment for cubic Gauss sums",
+     "path": "preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove Patterson's first-moment conjecture for normalized cubic Gauss sums over all primary Eisenstein primes, unconditionally. The sharp-cutoff main term is $(6/5)c_*X^{5/6}/\\log X$, where $c_*=(2\\pi)^{2/3}/(3\\Gamma(2/3))$. For every fixed nonzero angular Fourier mode of the prime argument, we also prove cancellation at the first-moment scale."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/023.md",
+    "title": "Patterson's first moment for cubic Gauss sums",
+    "papers": [
+     "preprints/An-unconditional-first-moment-for-cubic-Gauss-sums-September-25-2026/paper.pdf"
+    ],
+    "scope": "Patterson's first-moment conjecture concerns the average of normalized cubic Gauss sums over primary Eisenstein primes. The formalization proves the sharp-cutoff asymptotic with main term $\\frac65c_*X^{5/6}/\\log X$, where $c_*=(2\\pi)^{2/3}/(3\\Gamma(2/3))$. It also proves the corresponding angular comparison for every integer Fourier mode and cancellation of order $o(X^{5/6}/\\log X)$ for each fixed nonzero mode. All primary Eisenstein primes are included, without an extra conjectural premise.",
+    "results": [
+     {
+      "label": "Patterson first moment and angular cancellation",
+      "challenge": "lean/ComparatorChallenges/PattersonFirstMoment.lean",
+      "config": "lean/ComparatorChallenges/PattersonFirstMoment.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.CubicFirstMoment.patterson_firstMoment",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 84,
+        "statement": "theorem patterson_firstMoment : FirstMomentStatement",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean",
+         "line": 17,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean"
+       },
+       {
+        "name": "OAI.CubicFirstMoment.patterson_angularComparison",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 88,
+        "statement": "theorem patterson_angularComparison : AngularComparisonStatement",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean",
+         "line": 10,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean"
+       },
+       {
+        "name": "OAI.CubicFirstMoment.patterson_angularCancellation",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 92,
+        "statement": "theorem patterson_angularCancellation : AngularCancellationStatement",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean",
+         "line": 13,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "024",
+   "title": "An asymptotic formula for the number of totients",
+   "description": "Gives an asymptotic equivalent for the number $V(x)$ of distinct totient values up to *x*, with a positive bounded phase-dependent factor determined by convergent arithmetic approximations. In particular, $V(cx)/V(x)\\to c$ for every fixed *c* > 0, answering Erdős and Hall’s scaling question.",
+   "doc": "lean/docs/024.md",
+   "manuscripts": [
+    {
+     "title": "An asymptotic formula for the number of totients",
+     "path": "preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/An-asymptotic-formula-for-the-number-of-totients-September-25-2026.pdf",
+     "note": "",
+     "abstract": "Let $V(x)$ count the distinct values of Euler's totient function up to *x*. We give an explicit asymptotic equivalent for $V(x)$. Its coefficient is a uniform limit of functions defined from finite arithmetic data. We also prove that $V(cx)/V(x)\\to c$ as $x\\to\\infty$ for every fixed *c* > 0, answering a question of Erdős and Hall."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/024.md",
+    "title": "An asymptotic formula for the number of totients",
+    "papers": [
+     "preprints/An-asymptotic-formula-for-the-number-of-totients-September-25-2026/An-asymptotic-formula-for-the-number-of-totients-September-25-2026.pdf"
+    ],
+    "scope": "Let $V(x)$ count the distinct values of Euler's totient function up to $x$. The formalization constructs the paper's explicit positive main term from finite arithmetic approximants and proves that their ratio tends to one. In particular, $V(cx)/V(x)\\to c$ for every fixed $c>0$, answering the Erdős–Hall regular-variation question.\n\nThe formalization also gives asymptotics for totients $v\\le x$ whose least preimage $\\ell(v)=\\min\\{n\\ge1:\\varphi(n)=v\\}$ lies between $kx$ and $(k+1)x$. The associated coefficient is positive under the stated existence condition; when no totient $d$ satisfies $kd<\\ell(d)$, the count and coefficient are identically zero. The cases $k=1,2$ have positive coefficients.",
+    "results": [
+     {
+      "label": "Totient-count asymptotics and regular variation",
+      "challenge": "lean/ComparatorChallenges/TotientAsymptotic.lean",
+      "config": "lean/ComparatorChallenges/TotientAsymptotic.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.TotientAsymptotic.totient_asymptotic_formula",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 118,
+        "statement": "theorem totient_asymptotic_formula\n    :\n    TendstoUniformlyOn (fun H => AH H (fun _ => 1)) (A (fun _ => 1))\n      atTop (Set.Ico (0 : ℝ) 1) ∧\n    (∃ cMinus cPlus : ℝ, 0 < cMinus ∧ ∀ s ∈ Set.Ico (0 : ℝ) 1,\n      cMinus ≤ A (fun _ => 1) s ∧ A (fun _ => 1) s ≤ cPlus) ∧\n    Tendsto (fun x => V x/mainTerm x) atTop (nhds 1) ∧\n    ∀ c : ℝ, 0 < c → Tendsto (fun x => V (c*x)/V x) atTop (nhds c)",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean",
+         "line": 12,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean"
+       },
+       {
+        "name": "OAI.TotientAsymptotic.weighted_totient_asymptotic",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 128,
+        "statement": "theorem weighted_totient_asymptotic\n    (k : ℕ) (hk : 1≤k) :\n    TendstoUniformlyOn (fun H => AH H (fk k)) (A (fk k)) atTop (Set.Ico (0 : ℝ) 1) ∧\n    Tendsto (fun x => normalizedCount (N k) x-A (fk k) (theta x)) atTop (nhds 0) ∧\n    ((∃ d : ℕ, IsTotient d ∧ k*d<ell d) →\n      ∃ cMinus cPlus : ℝ, 0<cMinus ∧ 0<cPlus ∧\n        (∀ s∈Set.Ico (0 : ℝ) 1, cMinus≤A (fk k) s ∧ A (fk k) s≤cPlus) ∧\n        Tendsto (fun x => N k x/(tupleNormalization x*A (fk k) (theta x))) atTop (nhds 1) ∧\n        ∀ᶠ x : ℝ in atTop, (cMinus/cPlus)*V x≤N k x ∧ N k x≤V x) ∧\n    ((¬∃ d : ℕ, IsTotient d ∧ k*d<ell d) →\n      (∀ x : ℝ, 0<x → N k x=0) ∧ (∀ s∈Set.Ico (0 : ℝ) 1, A (fk k) s=0))",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean",
+         "line": 23,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean"
+       },
+       {
+        "name": "OAI.TotientAsymptotic.weighted_totient_one_two",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 141,
+        "statement": "theorem weighted_totient_one_two\n    :\n    ∀ k∈({1,2} : Finset ℕ), ∃ c : ℝ, 0<c ∧\n      ∀ s∈Set.Ico (0 : ℝ) 1, c≤A (fk k) s",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean",
+         "line": 37,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean"
+       },
+       {
+        "name": "OAI.TotientAsymptotic.coefficient_nonnegative",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 147,
+        "statement": "theorem coefficient_nonnegative (H : ℕ) {s : ℝ}\n    (hs : s ∈ Set.Ico (0 : ℝ) 1) : 0 ≤ AH H (fun _ => 1) s",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean",
+         "line": 44,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean"
+       }
+      ]
+     },
+     {
+      "label": "Exact zero case for the companion totient counts",
+      "challenge": "lean/ComparatorChallenges/TotientCompanionZero.lean",
+      "config": "lean/ComparatorChallenges/TotientCompanionZero.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.TotientAsymptotic.companion_zero_case",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 95,
+        "statement": "theorem companion_zero_case (k : ℕ) (_hk : 0 < k)\n    (hno : ¬ ∃ d : ℕ, IsTotient d ∧ k*d < ell d) :\n    (∀ x : ℝ, 0 < x → N k x = 0) ∧\n    (∀ s ∈ Set.Ico (0 : ℝ) 1, A (fk k) s = 0)",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/TotientAsymptotic/Companion.lean",
+         "line": 87,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/TotientAsymptotic/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "025",
+   "title": "Short Egyptian fractions",
+   "description": "Every rational $a/b$ with $1\\le a\\lt b$ is a sum of $O(\\log\\log b)$ distinct positive unit fractions. The worst-case minimum number of terms has the same order, resolving Erdős’s conjecture on short Egyptian fractions.",
+   "doc": "lean/docs/025.md",
+   "manuscripts": [
+    {
+     "title": "Short Egyptian fractions",
+     "path": "preprints/Short-Egyptian-fractions-September-25-2026/Short-Egyptian-fractions-September-25-2026.pdf",
+     "note": "",
+     "abstract": "We prove a conjecture of Erdős: for every sufficiently large integer *b*, every rational number $a/b$ with $1\\le a\\lt b$ is a sum of $O(\\log\\log b)$ distinct positive unit fractions, with an absolute implied constant. This order is best possible when the numerator varies. We also show that both the number of expansions of 1 with exactly *k* distinct terms and the least integer at least 2 that never occurs as a denominator in such an expansion grow doubly exponentially in *k*: their double logarithms have order *k*."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/025.md",
+    "title": "Short Egyptian fractions",
+    "papers": [
+     "preprints/Short-Egyptian-fractions-September-25-2026/Short-Egyptian-fractions-September-25-2026.pdf"
+    ],
+    "scope": "An Egyptian-fraction expansion writes a rational number as a sum of distinct unit fractions. The formalization proves that every $a/b$ with $1\\le a<b$ has such an expansion and that the largest minimum length at denominator $b$ is $\\Theta(\\log\\log b)$. If $F(k)$ counts exact $k$-term expansions of $1$, it also proves $\\log\\log F(k)=\\Theta(k)$ and bounds every denominator in such an expansion.\n\nEvery integer $m\\ge2$ occurs as a denominator in an expansion of $1$, with length eventually at most $(257/\\log2+\\varepsilon)\\log\\log m$ for every $\\varepsilon>0$; padding can preserve that denominator. If $v(k)$ is the least integer at least $2$ absent from all exact $k$-term expansions of $1$, then eventually $e^{e^{k/600}}\\le v(k)\\le1+k^{2^{k-1}}$, and $\\liminf_{k\\to\\infty}\\log\\log v(k)/k\\ge\\log2/257$.",
+    "results": [
+     {
+      "label": "Short expansions, counting, and prescribed denominators",
+      "challenge": "lean/ComparatorChallenges/EgyptianFractions.lean",
+      "config": "lean/ComparatorChallenges/EgyptianFractions.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Problem337.egyptian_length_is_minimum",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 48,
+        "statement": "theorem egyptian_length_is_minimum :\n    ∀ a b : ℕ, 1 ≤ a → a < b →\n  (∃ n : Fin (egyptianLength a b) → ℕ,\n    IsEgyptianExpansion ((a : ℚ) / (b : ℚ)) n) ∧\n  (∀ k : ℕ, (∃ n : Fin k → ℕ,\n    IsEgyptianExpansion ((a : ℚ) / (b : ℚ)) n) →\n    egyptianLength a b ≤ k)",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+         "line": 27,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+       },
+       {
+        "name": "OAI.Problem337.main_double_log_order",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 57,
+        "statement": "theorem main_double_log_order :\n    ∃ c1 c2 : ℝ, 0 < c1 ∧ 0 < c2 ∧ ∃ b0 : ℕ,\n  ∀ b : ℕ, b0 ≤ b →\n    c1 * Real.log (Real.log (b : ℝ)) ≤ (maxEgyptianLength b : ℝ) ∧\n    (maxEgyptianLength b : ℝ) ≤ c2 * Real.log (Real.log (b : ℝ))",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+         "line": 40,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+       },
+       {
+        "name": "OAI.Problem337.one_expansions_finite_and_bounded",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 64,
+        "statement": "theorem one_expansions_finite_and_bounded :\n    (∀ k : ℕ, Set.Finite (OneExpansions k) ∧\n    F k ≤ k ^ (2 ^ k - 1)) ∧\n  (∀ k : ℕ, ∀ n : Fin k → ℕ, IsOneExpansion n →\n    ∀ i : Fin k, n i ≤ k ^ (2 ^ i.val))",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+         "line": 61,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+       },
+       {
+        "name": "OAI.Problem337.counting_double_log_order",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 71,
+        "statement": "theorem counting_double_log_order :\n    ∃ c C : ℝ, 0 < c ∧ 0 < C ∧ ∃ k0 : ℕ,\n  ∀ k : ℕ, k0 ≤ k →\n    c * (k : ℝ) ≤ Real.log (Real.log (F k : ℝ)) ∧\n    Real.log (Real.log (F k : ℝ)) ≤ C * (k : ℝ)",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+         "line": 120,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+       },
+       {
+        "name": "OAI.Problem337.exact_marker_padding",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 78,
+        "statement": "theorem exact_marker_padding :\n    ∀ r : ℕ, 3 ≤ r → ∀ n : Fin r → ℕ, IsOneExpansion n →\n  ∀ m : ℕ, (∃ i : Fin r, n i = m) →\n    ∃ n' : Fin (r + 1) → ℕ,\n      IsOneExpansion n' ∧ ∃ i : Fin (r + 1), n' i = m",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+         "line": 73,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+       },
+       {
+        "name": "OAI.Problem337.every_exact_marker_occurs",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 85,
+        "statement": "theorem every_exact_marker_occurs :\n    ∀ m : ℕ, 2 ≤ m → ∃ k : ℕ, m ∈ D k",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+         "line": 80,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+       },
+       {
+        "name": "OAI.Problem337.quantitative_marked_length",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 89,
+        "statement": "theorem quantitative_marked_length :\n    ∀ ε : ℝ, 0 < ε → ∃ mε : ℕ, 2 ≤ mε ∧\n  ∀ m : ℕ, mε ≤ m →\n    ∃ k : ℕ, ∃ n : Fin k → ℕ,\n      IsOneExpansion n ∧\n      (∃ i : Fin k, n i = m) ∧\n      (k : ℝ) ≤ (257 / Real.log 2 + ε) * Real.log (Real.log (m : ℝ))",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+         "line": 84,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+       },
+       {
+        "name": "OAI.Problem337.missing_denominator_semantics",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 98,
+        "statement": "theorem missing_denominator_semantics :\n    ∀ k : ℕ,\n  Set.Finite (D k) ∧\n  (∃ m : ℕ, m ∈ missingDenominators k) ∧\n  2 ≤ v k ∧ v k ∉ D k ∧\n  (∀ m : ℕ, 2 ≤ m → m < v k → m ∈ D k) ∧\n  (1 ≤ k → v k ≤ 1 + k ^ (2 ^ (k - 1)))",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+         "line": 93,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+       },
+       {
+        "name": "OAI.Problem337.prescribed_denominator_corollary",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 107,
+        "statement": "theorem prescribed_denominator_corollary :\n    (∃ k0 : ℕ, ∀ k : ℕ, k0 ≤ k →\n    Real.exp (Real.exp ((k : ℝ) / 600)) ≤ (v k : ℝ) ∧\n    v k ≤ 1 + k ^ (2 ^ (k - 1))) ∧\n  (Real.log 2 / 257 ≤ Filter.liminf prescribedSlope Filter.atTop ∧\n    Filter.liminf prescribedSlope Filter.atTop ≤\n      Filter.limsup prescribedSlope Filter.atTop ∧\n    Filter.limsup prescribedSlope Filter.atTop ≤ Real.log 2) ∧\n  (∀ c : ℝ, c < Real.log 2 / 257 → ∃ k0 : ℕ,\n    ∀ k : ℕ, k0 ≤ k →\n      Real.exp (Real.exp (c * (k : ℝ))) ≤ (v k : ℝ))",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+         "line": 103,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+       }
+      ]
+     },
+     {
+      "label": "Optimal order of the shortest Egyptian-fraction expansions",
+      "challenge": "lean/ComparatorChallenges/ShortEgyptianFractions.lean",
+      "config": "lean/ComparatorChallenges/ShortEgyptianFractions.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.ShortEgyptian.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 17,
+        "statement": "theorem main :\n    (∀ a b : ℕ, 1 ≤ a → a < b → ∃ ns : List ℕ, IsExpansion a b ns) ∧\n    ∃ c₁ c₂ : ℝ, 0 < c₁ ∧ 0 < c₂ ∧ ∃ b₀ : ℕ, 2 ≤ b₀ ∧\n      ∀ b : ℕ, b₀ ≤ b →\n        c₁ * Real.log (Real.log (b : ℝ)) ≤ (maxMinLength b : ℝ) ∧\n        (maxMinLength b : ℝ) ≤ c₂ * Real.log (Real.log (b : ℝ))",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/ShortEgyptian/Main.lean",
+         "line": 33,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/ShortEgyptian/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "026",
+   "title": "Positive lower density of large prime gaps",
+   "description": "For every fixed *C* > 0, a positive proportion of consecutive prime gaps exceed $C\\log p_n$, throughout every sufficiently large initial segment of the primes. The proportion may depend on *C*. Consequently, the indices where $p_n/n$ increases have positive lower density, answering Erdős and Prachar.",
+   "doc": "lean/docs/026.md",
+   "manuscripts": [
+    {
+     "title": "Positive lower density of large prime gaps",
+     "path": "preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/main.pdf",
+     "note": "",
+     "abstract": "For every fixed *C* > 0, we prove that a positive proportion of consecutive prime gaps exceed $C\\log p$, where *p* is the smaller prime. The proportion is bounded below for every sufficiently large initial segment of the prime sequence, with a constant depending on *C*. It follows that the indices at which $p_n/n$ increases have positive lower asymptotic density, answering a question of Erdős and Prachar."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/026.md",
+    "title": "Positive lower density of large prime gaps",
+    "papers": [
+     "preprints/Positive-lower-density-of-large-prime-gaps-September-25-2026/main.pdf"
+    ],
+    "scope": "The formalized supplement proves that the indices $n$ for which $p_n/n<p_{n+1}/(n+1)$ have positive lower asymptotic density, where $p_n$ is the $n$th prime. Thus the normalized prime sequence has a positive-density set of increases. This is the prime-ratio corollary associated with the paper's theorem on a positive lower density of large prime gaps.",
+    "results": [
+     {
+      "label": "Positive lower density of prime-ratio increases",
+      "challenge": "lean/ComparatorChallenges/PrimeGaps.lean",
+      "config": "lean/ComparatorChallenges/PrimeGaps.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Problem344.large_gaps_and_ratio_density",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 36,
+        "statement": "theorem large_gaps_and_ratio_density :\n    (∀ C : ℝ, 0 < C →\n      ∃ c : ℝ, 0 < c ∧ ∃ N₀ : ℕ, ∀ N : ℕ, N₀ ≤ N →\n        c * (N : ℝ) ≤ ((LargePrimeGaps.largeGapIndices C N).card : ℝ)) ∧\n    0 < lowerAsymptoticDensity ratioIncreaseIndices",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/PrimeGaps/RatioCorollary.lean",
+         "line": 30,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/PrimeGaps/RatioCorollary.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "027",
+   "title": "Potential integral density on curve character varieties",
+   "description": "Resolves the determinant-one curve case of Litt's integral-density question. For every smooth connected complex algebraic curve and every rank, integral points become Zariski dense in every component of its SL$_{r}$ character variety over the full ring of integers of one number field. Prescribed quasi-unipotent boundary conjugacy classes are allowed, including nonsemisimple classes.",
+   "doc": "lean/docs/027.md",
+   "manuscripts": [
+    {
+     "title": "Integral points on character varieties of curves",
+     "path": "preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove potential Zariski density of integral points on SL$_{r}$-character varieties of smooth complex curves in every rank. The result allows prescribed quasi-unipotent boundary monodromy, including exact nonsemisimple conjugacy classes, and holds on every component over the full ring of integers of one finite extension. Here integrality is measured in the ambient character variety, while the exact boundary conditions are imposed on the complex representation."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/027.md",
+    "title": "Potential integral density on curve character varieties",
+    "papers": [
+     "preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/paper.pdf"
+    ],
+    "scope": "The integral-density question asks whether integral points become Zariski dense in every component of a curve character variety after one finite extension of the number field. The linked formalization proves a supporting compatibility result for its marked-surface construction. Given a proper diagram with finitely many vertices, a chosen seam with maximal adjacent facet rank and a positive-genus parent, puncture data, an existing solution over a field, and a chosen boundary occurrence, the produced marked values satisfy every seam equation.\n\nExistence of integral points and Zariski density are not established. The paper's main theorem—potential integral density for $\\mathrm{SL}_r$ curve character varieties over one finite extension, including prescribed quasi-unipotent boundary data and every irreducible component—is outside this comparison.",
+    "results": [
+     {
+      "label": "Compatibility of the produced marked solution with every seam equation",
+      "challenge": "lean/ComparatorChallenges/CharacterVarietiesAllSeamsSupport.lean",
+      "config": "lean/ComparatorChallenges/CharacterVarietiesAllSeamsSupport.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.IntegralCharacterVarieties.SurfacePresentation.Diagram.producedMarkedValues_allSeams",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 17,
+        "statement": "theorem producedMarkedValues_allSeams :\n    D.ProducedMarkedSeamEquations q hproper hmax hg P x b0 i0",
+        "proof": {
+         "file": "lean/OAI/AlgebraicGeometry/CharacterVarieties/Seams/ProducedSolution.lean",
+         "line": 37,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/AlgebraicGeometry/CharacterVarieties/Seams/ProducedSolution.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "028",
+   "title": "Uniformly bounded components of Gaussian-prime graphs",
+   "description": "Proves the Gaussian moat conjecture: no infinite walk through distinct Gaussian primes can have uniformly bounded steps. More strongly, for every distance bound *D*, the graph joining Gaussian primes at distance at most *D* has uniformly bounded finite component sizes, depending only on *D*, including primes on the coordinate axes.",
+   "doc": "lean/docs/028.md",
+   "manuscripts": [
+    {
+     "title": "Bounded-Step Walks on Gaussian Primes",
+     "path": "preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the Gaussian moat conjecture: no infinite walk through distinct Gaussian primes can have bounded steps. More strongly, for each fixed finite step bound, the connected components of the Gaussian-prime graph have uniformly bounded size. This bound applies to every starting prime, including primes on the coordinate axes, and is nonexplicit. The proof constructs a finite periodic sieve obstruction using geometric sampling and information-theoretic estimates."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/028.md",
+    "title": "Uniformly bounded components of Gaussian-prime graphs",
+    "papers": [
+     "preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/paper.pdf"
+    ],
+    "scope": "The Gaussian moat problem asks whether an infinite walk through distinct Gaussian primes can have bounded step lengths. The formalized result gives a negative answer for every real step bound $D$. More strongly, one finite bound depending only on $D$ limits the size of every connected component of the bounded-step graph and the length of every injective bounded-step walk. Axis primes and all associates are included. No explicit function of $D$ is supplied.",
+    "results": [
+     {
+      "label": "Uniform bounds for bounded-step Gaussian-prime walks",
+      "challenge": "lean/ComparatorChallenges/GaussianMoat.lean",
+      "config": "lean/ComparatorChallenges/GaussianMoat.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.GaussianMoat.fullMain",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 36,
+        "statement": "theorem fullMain : MainEndpoint ∧ UniformEndpoint",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/GaussianMoat/Main.lean",
+         "line": 102,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/GaussianMoat/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "029",
+   "title": "Primitive roots for every admissible integer base",
+   "description": "Proves the infinitude assertion in Artin's primitive root conjecture for every integer *a* that is neither −1 nor a square. For each such base, at least $c_a x/(\\log x)^2$ primes in every sufficiently large interval $(x,2x)$ have primitive root *a*, with $c_a\\gt 0$.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Primitive roots for every admissible integer base",
+     "path": "preprints/Primitive-roots-for-every-admissible-integer-base-October-4-2026/primitive-roots-all-integer-bases.pdf",
+     "note": "",
+     "abstract": "We prove the infinitude assertion in Artin's primitive root conjecture: for every integer *a* that is neither −1 nor a square, there are at least $c_a x/(\\log x)^2$ primes in $(x,2x)$ with primitive root *a*, for some $c_a\\gt 0$ and every sufficiently large *x*."
+    },
+    {
+     "title": "Simultaneous primitive roots: a conditional lower bound for prime bases",
+     "path": "preprints/Simultaneous-primitive-roots-a-conditional-lower-bound-for-prime-bases-October-4-2026/simultaneous-primitive-roots-conditional-lower-bound-prime-bases.pdf",
+     "note": "",
+     "abstract": "For every fixed finite set of distinct positive primes, we prove that at least $cx/(\\log x)^2$ primes in $(x,2x)$ have every member of the set as a primitive root, for some *c* > 0 and all sufficiently large *x*. The result assumes four explicitly stated analytic and sieve inputs from the companion paper on primitive roots for admissible integer bases."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "030",
+   "title": "Modularity of elliptic curves over imaginary quadratic fields",
+   "description": "Proves the modularity conjecture for elliptic curves over imaginary quadratic fields: every elliptic curve over every imaginary quadratic field is modular, with matching local parameters at every place.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Modularity of elliptic curves over imaginary quadratic fields",
+     "path": "preprints/Modularity-of-elliptic-curves-over-imaginary-quadratic-fields-October-4-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the modularity conjecture for elliptic curves over imaginary quadratic fields: every such curve is modular, with matching local parameters at every place."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "031",
+   "title": "Uchida’s conjecture for open homomorphisms of Galois groups",
+   "description": "Proves Uchida's conjecture: every continuous open homomorphism between Galois groups of possibly infinite solvably closed Galois extensions of number fields comes from a unique equivariant field embedding in the opposite direction. No restriction on the kernel or separate cyclotomic-compatibility assumption is needed.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Open Homomorphisms of Global Solvably Closed Galois Groups",
+     "path": "preprints/Open-Homomorphisms-of-Global-Solvably-Closed-Galois-Groups-October-5-2026/open-homomorphisms-solvably-closed-galois-groups.pdf",
+     "note": "",
+     "abstract": "We prove Uchida's conjecture on open homomorphisms of Galois groups. Every continuous open homomorphism between Galois groups of solvably closed Galois extensions of number fields is induced by a unique equivariant field embedding in the opposite direction. No restriction on the kernel or additional compatibility hypothesis is required."
+    }
+   ],
+   "lean": null
+  }
+ ]
+}

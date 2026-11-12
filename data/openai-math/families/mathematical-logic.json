@@ -1,0 +1,339 @@
+{
+ "schema": "trough-openai-math/v1",
+ "rev": "4eaee87548250b2682affda7d05d947c05554bae",
+ "families": [
+  {
+   "number": "240",
+   "title": "Shelah's eventual categoricity and the prescribed-threshold obstruction",
+   "description": "Proves Shelah's eventual categoricity conjecture in ZFC: for each bound on the Löwenheim–Skolem number, a uniform threshold makes categoricity of an abstract elementary class in one cardinal above that threshold imply categoricity throughout the same tail. Categoricity means uniqueness up to isomorphism at a given cardinality. Under the continuum hypothesis, a proposed specific Hanf threshold need not suffice.",
+   "doc": "lean/docs/240.md",
+   "manuscripts": [
+    {
+     "title": "A CH obstruction to a prescribed categoricity threshold",
+     "path": "preprints/A-CH-Obstruction-to-a-Prescribed-Categoricity-Threshold-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "Assuming the continuum hypothesis, we construct an abstract elementary class with Löwenheim–Skolem number ℵ$_{0}$ that is categorical in every sufficiently large cardinal but has at least two nonisomorphic models of cardinality $\\beth_{\\omega_2}$. Thus categoricity does not transfer down to the proposed bound $\\beth_{(2^{\\aleph_0})^+}$, which equals $\\beth_{\\omega_2}$ under CH. Consequently, if ZFC is consistent, the prescribed-threshold form of Shelah's categoricity conjecture is not provable in ZFC."
+    },
+    {
+     "title": "Eventual categoricity for abstract elementary classes",
+     "path": "preprints/Eventual-Categoricity-for-Abstract-Elementary-Classes-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove Shelah's eventual categoricity conjecture for abstract elementary classes in ZFC. For each infinite bound on the Löwenheim–Skolem number there is a uniform threshold such that categoricity in any one cardinal at or above that threshold implies categoricity in every cardinal at or above the same threshold."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/240.md",
+    "title": "Shelah's eventual categoricity and the prescribed-threshold obstruction",
+    "papers": [
+     "preprints/A-CH-Obstruction-to-a-Prescribed-Categoricity-Threshold-September-24-2026/paper.pdf"
+    ],
+    "scope": "Under the continuum hypothesis, the formalized result refutes the proposed transfer of categoricity down to the Hanf threshold. It gives an abstract elementary class in a countable relational language, with Löwenheim–Skolem number $\\aleph_0$, that has two nonisomorphic models at $\\beth_{\\omega_2}=h(\\aleph_0)$ but is categorical in every cardinal at least $\\beth_{(2^{\\aleph_1})^+}$.\n\nNo amalgamation, joint embedding, tameness, or absence-of-maximal-models assumption is imposed. The later canonical-point obstruction and the separate eventual-categoricity theorem are not included.",
+    "results": [
+     {
+      "label": "CH categoricity-threshold obstruction",
+      "challenge": "lean/ComparatorChallenges/CHObstruction.lean",
+      "config": "lean/ComparatorChallenges/CHObstruction.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.CHObstruction.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 96,
+        "statement": "theorem main (hCH : CH.{u}) :\n    ∃ (L : ℕ → Type), Countable (Σ n, L n) ∧\n      ∃ K : ClassData.{u} L, K.IsAEC ∧ K.HasLSNumber ℵ₀ ∧\n        endpoint = hanf (ℵ₀ : Cardinal.{u}) ∧ K.TwoModels endpoint ∧\n        ∀ μ, tailThreshold ≤ μ → K.Categorical μ",
+        "proof": {
+         "file": "lean/OAI/ModelTheory/Categoricity/Main.lean",
+         "line": 233,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/ModelTheory/Categoricity/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "241",
+   "title": "Rigidity of the Turing degrees",
+   "description": "Every order automorphism of the Turing degrees is the identity, resolving their rigidity problem. Thus no nontrivial relabeling of degrees preserves the ordering by relative computability.",
+   "doc": "lean/docs/241.md",
+   "manuscripts": [
+    {
+     "title": "Rigidity of the Turing degrees",
+     "path": "preprints/Rigidity-of-the-Turing-degrees-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every order automorphism of the full partial order of Turing degrees is the identity, resolving the rigidity conjecture for the Turing degrees positively."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/241.md",
+    "title": "Rigidity of the Turing degrees",
+    "papers": [
+     "preprints/Rigidity-of-the-Turing-degrees-September-24-2026/paper.pdf"
+    ],
+    "scope": "The rigidity problem asks whether the ordering of Turing degrees by relative computability has any nontrivial automorphism. The formalized result gives a negative answer: every order automorphism of the full Turing degrees of subsets of $\\mathbb N$ fixes every degree, with no definability or genericity assumption. The additional representation corollaries are not included.",
+    "results": [
+     {
+      "label": "Rigidity of the Turing degrees",
+      "challenge": "lean/ComparatorChallenges/DegreeRigidity.lean",
+      "config": "lean/ComparatorChallenges/DegreeRigidity.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.TuringRigidity.ManuscriptMain.rigidity",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 38,
+        "statement": "theorem rigidity : MainTheorem",
+        "proof": {
+         "file": "lean/OAI/Computability/DegreeRigidity/Main.lean",
+         "line": 27,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Computability/DegreeRigidity/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "242",
+   "title": "Single-fold Diophantine representations and undecidability under an at-most-one-solution promise",
+   "description": "Every recursively enumerable set of tuples of natural numbers has a Diophantine representation with exactly one auxiliary solution for each member and none for nonmembers. This proves the single-fold conjecture and hence the finite-fold conjecture. Diophantine solvability over the nonnegative integers remains undecidable even with an at-most-one-solution promise.",
+   "doc": "lean/docs/242.md",
+   "manuscripts": [
+    {
+     "title": "Single-fold Diophantine representations",
+     "path": "preprints/Single-fold-Diophantine-representations-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "Every recursively enumerable set of natural-number tuples has a polynomial Diophantine representation with exactly one complete auxiliary tuple for each member. This proves the single-fold conjecture and, consequently, the finite-fold conjecture."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/242.md",
+    "title": "Single-fold Diophantine representations and undecidability under an at-most-one-solution promise",
+    "papers": [
+     "preprints/Single-fold-Diophantine-representations-September-24-2026/paper.pdf"
+    ],
+    "scope": "The single-fold Diophantine conjecture asks whether every recursively enumerable set has a polynomial representation with a unique auxiliary witness for each member. The formalization establishes this for every recursively enumerable subset of $\\mathbb N^n$, $n\\ge1$: an integer polynomial has exactly one complete natural-number witness tuple for members and none for nonmembers.\n\nThe consequence that solvability remains undecidable under an at-most-one-solution promise is not separately formalized.",
+    "results": [
+     {
+      "label": "Single-fold Diophantine representations",
+      "challenge": "lean/ComparatorChallenges/SingleFold.lean",
+      "config": "lean/ComparatorChallenges/SingleFold.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.SingleFold.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 24,
+        "statement": "theorem main : MainStatement",
+        "proof": {
+         "file": "lean/OAI/NumberTheory/SingleFold/Main.lean",
+         "line": 21,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/NumberTheory/SingleFold/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "243",
+   "title": "Separating choiceless counting from polynomial time and witnessed choice",
+   "description": "Confirms the Blass–Gurevich–Shelah noncapture conjecture: consistency of a linear system over 𝔽$_{3}$ defines a polynomial-time query on unordered finite structures that choiceless polynomial time with counting cannot express. A separate result shows that adding witnessed symmetric choice strictly increases expressive power. Both separations hold for the full counting formalism, allowing hereditarily finite sets of arbitrary finite rank.",
+   "doc": "lean/docs/243.md",
+   "manuscripts": [
+    {
+     "title": "Choiceless polynomial time with counting does not capture polynomial time",
+     "path": "preprints/Choiceless-polynomial-time-with-counting-does-not-capture-polynomial-time-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that choiceless polynomial time with counting does not capture polynomial time on unordered finite structures, confirming the noncapture conjecture of Blass, Gurevich and Shelah. A linear-consistency query over 𝔽$_{3}$ in a fixed binary vocabulary is decidable in polynomial time but not in the full counting formalism."
+    },
+    {
+     "title": "Witnessed symmetric choice is strictly stronger than choiceless polynomial time with counting",
+     "path": "preprints/Witnessed-symmetric-choice-is-strictly-stronger-than-choiceless-polynomial-time-with-counting-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that witnessed symmetric choice strictly increases the expressive power of choiceless polynomial time with counting. A fixed sentence with one witnessed-choice occurrence defines a Boolean query on every finite input that is not definable in the original counting formalism."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/243.md",
+    "title": "Separating choiceless counting from polynomial time and witnessed choice",
+    "papers": [
+     "preprints/Choiceless-polynomial-time-with-counting-does-not-capture-polynomial-time-September-23-2026/paper.pdf",
+     "preprints/Witnessed-symmetric-choice-is-strictly-stronger-than-choiceless-polynomial-time-with-counting-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalized result separates polynomial time from choiceless polynomial time with counting. It gives an explicit query on finite structures with eight relations that is invariant under isomorphism and decidable in polynomial time, but is not definable in the stated hereditarily finite-set language with cardinality and polynomial bounds on stages and intermediate objects. The query applies to all finite inputs without a promise. The separate witnessed-symmetric-choice result is not included.\n\nThe formalization proves that witnessed symmetric choice strictly increases the expressive power of choiceless polynomial time with counting. It constructs one fixed sentence with exactly one witnessed-choice occurrence that gives a Boolean answer on every finite input, while no sentence of the original counting formalism defines the same class of inputs.",
+    "results": [
+     {
+      "label": "Polynomial-time query outside choiceless polynomial time",
+      "challenge": "lean/ComparatorChallenges/ChoicelessPolynomialTime.lean",
+      "config": "lean/ComparatorChallenges/ChoicelessPolynomialTime.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.CPTSeparation.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 549,
+        "statement": "theorem main :\n    (∀ (A B : Type) [Fintype A] [Fintype B] (S : Input A) (T : Input B),\n      S.Iso T → (S.query ↔ T.query)) ∧\n    OrdinaryPolynomialTime ∧\n    ¬ FullCPT.EvaluationDefinable (fun {_} [_] I => I.query)",
+        "proof": {
+         "file": "lean/OAI/ModelTheory/Choiceless/Separation.lean",
+         "line": 7,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/ModelTheory/Choiceless/Separation.lean"
+       }
+      ]
+     },
+     {
+      "label": "Strict expressive gain from one witnessed symmetric choice",
+      "challenge": "lean/ComparatorChallenges/WitnessedChoice.lean",
+      "config": "lean/ComparatorChallenges/WitnessedChoice.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.WitnessedChoice.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 469,
+        "statement": "theorem WitnessedChoice.main : WitnessedChoice.BGS.MainStatement",
+        "proof": {
+         "file": "lean/OAI/Computability/WitnessedChoice/Main.lean",
+         "line": 12,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Computability/WitnessedChoice/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "244",
+   "title": "The Partition Principle does not imply Choice",
+   "description": "Assuming ZF is consistent, constructs a model in which every surjective image of a set injects into that set, yet the axiom of choice fails. Choice for ordinal-indexed families still holds. From any countable transitive model of ZFC, a separate construction gives a transitive symmetric extension with these properties and no new countable sequences of ground-model elements.",
+   "doc": "lean/docs/244.md",
+   "manuscripts": [
+    {
+     "title": "The Partition Principle does not imply Choice",
+     "path": "preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/partition-principle-without-choice.pdf",
+     "note": "",
+     "abstract": "We prove that the Partition Principle does not imply the Axiom of Choice: if ZF is consistent, then so is ZF with the Partition Principle, Choice for ordinal-indexed families, and the negation of the Axiom of Choice. Separately, over every countable transitive model of ZFC, we construct a transitive symmetric model of this theory with the same ordinals and no new countable sequences of ground elements."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/244.md",
+    "title": "The Partition Principle does not imply Choice",
+    "papers": [
+     "preprints/The-Partition-Principle-does-not-imply-Choice-September-24-2026/partition-principle-without-choice.pdf"
+    ],
+    "scope": "The Partition Principle says that every surjection admits an injection in the reverse direction. The formalization proves the relative-consistency implication: if ZF is consistent, then so is ZF with the Partition Principle, Choice for ordinal-indexed families, and failure of the Axiom of Choice.\n\nThe linked model-construction result also constructs a transitive model of the Partition Principle without Choice from an externally countable transitive ground model satisfying the stated axioms, including Choice, and containing an internal strongly inaccessible cardinal. The paper's stronger transitive-model preservation assertions are outside that selected construction.",
+    "results": [
+     {
+      "label": "Partition Principle without Choice from a ground model",
+      "challenge": "lean/ComparatorChallenges/PartitionPrinciple.lean",
+      "config": "lean/ComparatorChallenges/PartitionPrinciple.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.PartitionPilot.Forcing.TransitiveGround.exists_model_partitionPrinciple_without_choice",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 262,
+        "statement": "theorem exists_model_partitionPrinciple_without_choice\n    (pairing : Realize M.sets SetFormula.pairing Fin.elim0)\n    (unions : Realize M.sets SetFormula.union Fin.elim0)\n    (powers : Realize M.sets powerSet Fin.elim0) (separation : SeparationSchema M.sets)\n    (collection : CollectionSchema M.sets) (infinite : Realize M.sets infinity Fin.elim0)\n    (choice : Realize M.sets SetFormula.choice Fin.elim0)\n    (small : M.sets.Countable)\n    {K : ZFSet.{u}} (hK : K ∈ M.sets) (standard : GroundStandardInaccessible M K) :\n    ∃ N : TransitiveGround.{u}, M.sets ⊆ N.sets ∧ ZFRealization N.sets ∧\n      Realize N.sets partitionPrinciple Fin.elim0 ∧\n      ¬ Realize N.sets SetFormula.choice Fin.elim0",
+        "proof": {
+         "file": "lean/OAI/SetTheory/PartitionPrinciple/Models/Separation.lean",
+         "line": 34,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/SetTheory/PartitionPrinciple/Main.lean"
+       }
+      ]
+     },
+     {
+      "label": "Relative consistency of the Partition Principle with ordinal Choice and failure of Choice",
+      "challenge": "lean/ComparatorChallenges/PartitionConsistency.lean",
+      "config": "lean/ComparatorChallenges/PartitionConsistency.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.PartitionConsistency.main_consistency",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 318,
+        "statement": "theorem main_consistency :\n    Consistent SetLanguage.ZF → Consistent SetLanguage.targetTheory",
+        "proof": {
+         "file": "lean/OAI/SetTheory/PartitionConsistency/Main.lean",
+         "line": 181,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/SetTheory/PartitionConsistency/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "245",
+   "title": "Weak normalization implies strong normalization in pure type systems",
+   "description": "Proves that weak normalization implies strong normalization for every pure type system: if every legal expression in every valid context has a *β*-normal form, every *β*-reduction sequence terminates. This resolves the *β*-Barendregt–Geuvers–Klop conjecture, including nonfunctional rules and open contexts.",
+   "doc": "lean/docs/245.md",
+   "manuscripts": [
+    {
+     "title": "Weak and strong normalization in pure type systems",
+     "path": "preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every weakly *β*-normalizing pure type system is strongly *β*-normalizing. Both properties quantify over all legal expressions in all valid contexts, and reduction acts inside type annotations. No functionality hypothesis is required. This resolves the *β*-Barendregt–Geuvers–Klop conjecture."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/245.md",
+    "title": "Weak normalization implies strong normalization in pure type systems",
+    "papers": [
+     "preprints/Weak-and-strong-normalization-in-pure-type-systems-September-25-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves the $\\beta$-Barendregt–Geuvers–Klop conjecture for pure type systems: if every legal expression in every valid context has some terminating $\\beta$-reduction sequence, then every $\\beta$-reduction sequence from every such expression terminates. Reduction is allowed inside type annotations, and the specification may have arbitrary sorts and nonfunctional axioms or rules.",
+    "results": [
+     {
+      "label": "Weak normalization implies strong normalization in every pure type system",
+      "challenge": "lean/ComparatorChallenges/TypeSystemNormalization.lean",
+      "config": "lean/ComparatorChallenges/TypeSystemNormalization.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.PureTypeSystem.weak_implies_strong",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 116,
+        "statement": "theorem weak_implies_strong {S : Type u} (P : Specification S)\n    (h : SystemWeaklyNormalizing P) : SystemStronglyNormalizing P",
+        "proof": {
+         "file": "lean/OAI/Computability/TypeSystem/Normalization.lean",
+         "line": 82,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Computability/TypeSystem/Normalization.lean"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

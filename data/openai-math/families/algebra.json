@@ -1,0 +1,810 @@
+{
+ "schema": "trough-openai-math/v1",
+ "rev": "4eaee87548250b2682affda7d05d947c05554bae",
+ "families": [
+  {
+   "number": "193",
+   "title": "Serre’s intersection-multiplicity conjecture",
+   "description": "Proves strict positivity of Serre's intersection multiplicity $\\chi^R(M,N)$ for nonzero finitely generated modules over any regular local ring, provided $M\\otimes_R N$ has finite length and $\\dim M+\\dim N=\\dim R$. This resolves the positivity conjecture, including ramified mixed characteristic.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Positivity of Serre's Intersection Multiplicity",
+     "path": "preprints/Positivity-of-Serres-Intersection-Multiplicity-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove Serre's positivity conjecture, including ramified mixed characteristic. If two nonzero finitely generated modules over a regular local ring have tensor product of finite length and complementary dimensions, then their intersection multiplicity is strictly positive."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "194",
+   "title": "Lech’s multiplicity conjecture",
+   "description": "Proves $e(R)\\le e(S)$ for every flat local homomorphism of nonzero Noetherian local rings, where *e* is Hilbert–Samuel multiplicity. This resolves Lech's conjecture in every dimension and characteristic.",
+   "doc": "lean/docs/194.md",
+   "manuscripts": [
+    {
+     "title": "Lech's multiplicity conjecture",
+     "path": "preprints/Lechs-multiplicity-conjecture-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove Lech's multiplicity conjecture: Hilbert–Samuel multiplicity cannot decrease under a flat local homomorphism of nonzero Noetherian local rings. The result holds in arbitrary dimension, with no restrictions on the residue fields or characteristics."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/194.md",
+    "title": "Lech’s multiplicity conjecture",
+    "papers": [
+     "preprints/Lechs-multiplicity-conjecture-September-23-2026/paper.pdf"
+    ],
+    "scope": "Lech's multiplicity conjecture compares Hilbert–Samuel multiplicities across flat local maps. The linked formalization covers a supporting characteristic-$p$ comparison over a complete Noetherian local domain $D$: for a complex satisfying the stated short-complex and finite-length homology conditions, its Frobenius multiplicity sequence converges to its Dutta multiplicity, and the Hilbert–Samuel multiplicity of $D$ is at most that Dutta multiplicity.\n\nThis selected statement is the complete-domain Dutta comparison. The paper's full flat-local result in arbitrary characteristic is outside it.",
+    "results": [
+     {
+      "label": "Complete-domain Dutta multiplicity comparison",
+      "challenge": "lean/ComparatorChallenges/DuttaDomain.lean",
+      "config": "lean/ComparatorChallenges/DuttaDomain.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Lech.dutta_domain",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 74,
+        "statement": "theorem dutta_domain : DuttaDomainClaim.{u}",
+        "proof": {
+         "file": "lean/OAI/RingTheory/Multiplicity/DuttaDomain.lean",
+         "line": 46,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/RingTheory/Multiplicity/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "195",
+   "title": "A counterexample to the small Cohen–Macaulay module conjecture",
+   "description": "Constructs a three-dimensional complete Noetherian normal local domain over ℂ with no nonzero finitely generated maximal Cohen–Macaulay module. A three-dimensional local domain essentially of finite type over ℂ has the same property, disproving the domain form of the small Cohen–Macaulay module conjecture.",
+   "doc": "lean/docs/195.md",
+   "manuscripts": [
+    {
+     "title": "A Complete Local Domain without a Small Cohen–Macaulay Module",
+     "path": "preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a three-dimensional complete Noetherian normal local domain containing ℂ, with residue field ℂ, that has no nonzero finitely generated maximal Cohen–Macaulay module. This disproves the domain form of the small Cohen–Macaulay module conjecture."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/195.md",
+    "title": "A counterexample to the small Cohen–Macaulay module conjecture",
+    "papers": [
+     "preprints/A-Complete-Local-Domain-Without-a-Small-Cohen-Macaulay-Module-September-23-2026/paper.pdf"
+    ],
+    "scope": "The small Cohen–Macaulay module conjecture asks whether every complete Noetherian local domain has a nonzero finitely generated maximal Cohen–Macaulay module. The linked formalization verifies only the ring-theoretic candidate: there exists a three-dimensional complete Noetherian integrally closed local domain over $\\mathbb C$ whose residue field is $\\mathbb C$.\n\nThe proof uses a constructed completed surface cone. The resulting existence statement gives only the ring properties above; it does not assert the absence of small Cohen–Macaulay modules.\n\nThe paper's main counterexample requires that no nonzero finitely generated module over the ring has depth three. That conclusion, the numerical obstruction used to prove it, and the counterexample essentially of finite type are outside this comparison. The candidate's ring properties alone do not establish the counterexample.",
+    "results": [
+     {
+      "label": "Ring-theoretic properties of the completed surface-cone candidate",
+      "challenge": "lean/ComparatorChallenges/SurfaceConeCandidateSupport.lean",
+      "config": "lean/ComparatorChallenges/SurfaceConeCandidateSupport.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.SmallCM.candidate_ring_properties",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 8,
+        "statement": "theorem candidate_ring_properties :\n    ∃ (R : Type) (_ : CommRing R) (_ : IsDomain R) (_ : IsNoetherianRing R)\n      (_ : IsIntegrallyClosed R) (_ : IsLocalRing R) (_ : Algebra ℂ R),\n      IsAdicComplete (IsLocalRing.maximalIdeal R) R ∧\n      ringKrullDim R = 3 ∧\n      Function.Bijective (algebraMap ℂ (IsLocalRing.ResidueField R))",
+        "proof": {
+         "file": "lean/OAI/AlgebraicGeometry/SurfaceCones/CandidateRing.lean",
+         "line": 16,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/AlgebraicGeometry/SurfaceCones/CandidateRing.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "196",
+   "title": "A counterexample to Kaplansky’s zero-divisor conjecture",
+   "description": "Constructs a finitely presented torsion-free group *G* whose group algebra $\\mathbb F_2[G]$ has nonzero zero divisors, disproving Kaplansky's zero-divisor conjecture. The group has a finite two-dimensional classifying space.",
+   "doc": "lean/docs/196.md",
+   "manuscripts": [
+    {
+     "title": "A Torsion-Free Group Algebra with Zero Divisors",
+     "path": "preprints/A-Torsion-Free-Group-Algebra-with-Zero-Divisors-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We disprove Kaplansky's zero-divisor conjecture by constructing a finitely presented torsion-free group *G* for which $\\mathbb F_2[G]$ has nonzero zero divisors. The group admits a finite two-dimensional classifying space."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/196.md",
+    "title": "A counterexample to Kaplansky’s zero-divisor conjecture",
+    "papers": [
+     "preprints/A-Torsion-Free-Group-Algebra-with-Zero-Divisors-September-23-2026/paper.pdf"
+    ],
+    "scope": "Kaplansky's zero-divisor conjecture asserts that the group algebra of a torsion-free group over a field has no zero divisors. The formalized result constructs a finitely presented torsion-free group $G$ and nonzero elements $\\alpha,\\beta\\in\\mathbb F_2[G]$ with $\\alpha\\beta=0$, giving a counterexample.\n\nThe same group admits a finite two-dimensional classifying space $K(G,1)$.",
+    "results": [
+     {
+      "label": "Torsion-free group-algebra counterexample",
+      "challenge": "lean/ComparatorChallenges/TorsionFreeZeroDivisors.lean",
+      "config": "lean/ComparatorChallenges/TorsionFreeZeroDivisors.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.TorsionFreeZeroDivisors.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 35,
+        "statement": "theorem main : MainTheorem",
+        "proof": {
+         "file": "lean/OAI/Algebra/GroupRing/Main.lean",
+         "line": 13,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Algebra/GroupRing/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "197",
+   "title": "A torsion-free group algebra that is not directly finite",
+   "description": "Constructs a finitely presented torsion-free nonsofic group whose group algebra over 𝔽$_{2}$ is not directly finite, disproving Kaplansky's conjecture even without torsion. Companion examples give injective nonsurjective cellular automata on all configurations, refuting Gottschalk's surjunctivity conjecture. Another counterexample is an integral group-ring matrix, invertible over the rational group ring, with Fuglede–Kadison determinant strictly between zero and one, disproving the unrestricted Determinant Conjecture.",
+   "doc": "lean/docs/197.md",
+   "manuscripts": [
+    {
+     "title": "A Torsion-Free Group Algebra That Is Not Directly Finite",
+     "path": "preprints/A-Torsion-Free-Group-Algebra-That-Is-Not-Directly-Finite-October-4-2026/direct-finiteness.pdf",
+     "note": "",
+     "abstract": "We construct a finitely presented torsion-free counterexample to Kaplansky's direct finiteness conjecture over the field of two elements. The group admits a finite two-dimensional classifying complex."
+    },
+    {
+     "title": "A Counterexample to Kaplansky's Direct-Finiteness Conjecture in Characteristic Two",
+     "path": "preprints/A-Counterexample-to-Kaplanskys-Direct-Finiteness-Conjecture-in-Characteristic-Two-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We disprove Kaplansky's direct-finiteness conjecture by constructing a finite field *K* of characteristic two, a finitely presented group *G*, and finite sums $a,b\\in K[G]$ with $ab=1$ but $ba\\ne1$. The group *G* is nonsofic. The same elements define a cellular automaton on $K^{G}$ that is injective but not surjective, disproving Gottschalk's surjunctivity conjecture."
+    },
+    {
+     "title": "A Counterexample to the Group-Ring Determinant Conjecture",
+     "path": "preprints/A-Counterexample-to-the-Group-Ring-Determinant-Conjecture-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We disprove the unrestricted group-ring Determinant Conjecture. We construct a finitely generated group *G* and a square matrix over $\\mathbb Z[G]$ that is invertible over $\\mathbb Q[G]$ and has Fuglede–Kadison determinant strictly between zero and one. The logarithmic integral defining the determinant is finite."
+    },
+    {
+     "title": "A Counterexample to Kaplansky's Direct-Finiteness Conjecture in Odd Characteristic",
+     "path": "preprints/A-Counterexample-to-Kaplanskys-Direct-Finiteness-Conjecture-in-Odd-Characteristic-September-26-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a counterexample to Kaplansky's direct-finiteness conjecture in odd characteristic. For one specified odd prime *p*, we obtain a field *K* of order $p^{4}$, a finitely generated group *G* containing torsion, and finite sums $a,b\\in K[G]$ with $ab=1$ but $ba\\ne1$. The same elements define a cellular automaton on $K^{G}$ that is injective but not surjective."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/197.md",
+    "title": "A torsion-free group algebra that is not directly finite",
+    "papers": [
+     "preprints/A-Counterexample-to-Kaplanskys-Direct-Finiteness-Conjecture-in-Characteristic-Two-September-23-2026/paper.pdf",
+     "preprints/A-Counterexample-to-the-Group-Ring-Determinant-Conjecture-September-23-2026/paper.pdf",
+     "preprints/A-Counterexample-to-Kaplanskys-Direct-Finiteness-Conjecture-in-Odd-Characteristic-September-26-2026/paper.pdf"
+    ],
+    "scope": "Kaplansky's direct-finiteness conjecture asserts that $ab=1$ implies $ba=1$ for $a,b\\in K[G]$, for every field $K$ and group $G$. The formalized results construct a finite field of characteristic two and a group algebra violating this implication. One statement records the counterexample for a finitely generated group; the more detailed construction gives a finitely presented group with an element of odd prime order.\n\nThe detailed construction also gives a precise recipe for choosing the data and proves that the required search terminates. The further conclusion that the group is nonsofic is outside these statements.\n\nA nonsingular integer matrix has absolute determinant at least $1$. The group-ring Determinant Conjecture extends this bound to matrices over $\\mathbb Z[G]$ for every discrete group $G$. If $T_A$ is the operator induced by such a matrix $A$ on finite direct sums of $\\ell^2(G)$, and $\\mu_A$ is the spectral measure of $T_A^*T_A$ with respect to the group trace, the conjecture asserts\n\n$\\displaystyle \\int_{(0,\\infty)}\\log t\\,d\\mu_A(t)\\ge0,$\n\nwith the zero spectral atom omitted. For an invertible square matrix, this is equivalent to its Fuglede–Kadison determinant being at least $1$.\n\nThe formalized result contradicts that bound. It gives a finitely generated group $G$ and an $n\\times n$ matrix over $\\mathbb Z[G]$, with $n\\ge1$, that is invertible over $\\mathbb Q[G]$. Its bounded left-regular operator is invertible and has determinant strictly between $0$ and $1$.\n\nThe formalization uses the trace of $\\log(T^*T)$ to define the determinant for the invertible operator $T$. The paper's additional spectral-measure integral conclusion is not included.\n\nKaplansky's direct-finiteness conjecture asserts that $ab=1$ implies $ba=1$ in every group algebra over a field. Let $p$ be the smallest prime divisor of $\\bigl(\\binom{1200}{600}!\\bigr)^2+1$; this prime is odd. The formalized result constructs a field $K$ of order $p^4$, a finitely generated group $G$ with torsion, and elements $a,b$ violating this implication. The associated cellular automaton on all configurations $K^G$ is injective but not surjective.\n\nThe formalization also contains fixed-field transfer results, separate from the statement linked below.",
+    "results": [
+     {
+      "label": "Finitely presented characteristic-two counterexample",
+      "challenge": "lean/ComparatorChallenges/KaplanskyFinitelyPresented.lean",
+      "config": "lean/ComparatorChallenges/KaplanskyFinitelyPresented.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.KaplanskyCounterexample.finitelyPresented_counterexample",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 7,
+        "statement": "theorem finitelyPresented_counterexample :\n    ∃ (K : Type) (_ : Field K) (_ : Fintype K) (_ : CharP K 2),\n      ∃ (G : Type) (_ : Group G) (_ : Group.IsFinitelyPresented G),\n        (∃ (ℓ : ℕ) (_ : ℓ.Prime) (_ : Odd ℓ) (g : G), orderOf g = ℓ) ∧\n        ∃ a_out b_out : MonoidAlgebra K G, a_out * b_out = 1 ∧ b_out * a_out ≠ 1",
+        "proof": {
+         "file": "lean/OAI/RingTheory/DirectFiniteness/FinitelyPresented.lean",
+         "line": 35,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/RingTheory/DirectFiniteness/FinitelyPresented.lean"
+       }
+      ]
+     },
+     {
+      "label": "Characteristic-two direct-finiteness counterexample",
+      "challenge": "lean/ComparatorChallenges/KaplanskyDirectFiniteness.lean",
+      "config": "lean/ComparatorChallenges/KaplanskyDirectFiniteness.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.KaplanskyCounterexample.main_theorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 12,
+        "statement": "theorem main_theorem : MainClaim",
+        "proof": {
+         "file": "lean/OAI/RingTheory/DirectFiniteness/Main.lean",
+         "line": 9,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/RingTheory/DirectFiniteness/Main.lean"
+       }
+      ]
+     },
+     {
+      "label": "Group-ring determinant counterexample",
+      "challenge": "lean/ComparatorChallenges/GroupRingDeterminant.lean",
+      "config": "lean/ComparatorChallenges/GroupRingDeterminant.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.GroupRingDeterminant.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 52,
+        "statement": "theorem main : MainStatement",
+        "proof": {
+         "file": "lean/OAI/Analysis/GroupDeterminants/Main.lean",
+         "line": 13,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/GroupDeterminants/Main.lean"
+       }
+      ]
+     },
+     {
+      "label": "Prescribed odd-characteristic counterexample",
+      "challenge": "lean/ComparatorChallenges/OddKaplansky.lean",
+      "config": "lean/ComparatorChallenges/OddKaplansky.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.OddKaplansky.main_theorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 26,
+        "statement": "theorem main_theorem : MainClaim",
+        "proof": {
+         "file": "lean/OAI/Algebra/OddKaplansky/Main.lean",
+         "line": 81,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Algebra/OddKaplansky/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "198",
+   "title": "A counterexample to finitistic-dimension finiteness",
+   "description": "Constructs a finite-dimensional complex algebra whose finite-dimensional modules have unbounded finite projective dimensions. This disproves the little finitistic-dimension conjecture.",
+   "doc": "lean/docs/198.md",
+   "manuscripts": [
+    {
+     "title": "An algebra of infinite little finitistic dimension",
+     "path": "preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a finite-dimensional complex algebra whose finite-dimensional modules have unbounded finite projective dimensions. This disproves the little finitistic-dimension conjecture."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/198.md",
+    "title": "A counterexample to finitistic-dimension finiteness",
+    "papers": [
+     "preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/paper.pdf"
+    ],
+    "scope": "The little finitistic-dimension conjecture predicts that finitely generated modules of finite projective dimension over a fixed finite-dimensional algebra have bounded projective dimensions. The formalized counterexample is a finite-dimensional complex algebra with a finitely generated module of projective dimension at least $2m-2$ and still finite for every $m\\ge1$.\n\nA separate formalized result gives a finite-dimensional complex algebra whose little and big finitistic dimensions are infinite on the left and zero on the right. Injectives fail to generate its unbounded derived category on the left and generate it on the right.",
+    "results": [
+     {
+      "label": "Infinite little finitistic dimension",
+      "challenge": "lean/ComparatorChallenges/LittleFinitistic.lean",
+      "config": "lean/ComparatorChallenges/LittleFinitistic.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.LittleFinitistic.Main.exists_counterexample",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 23,
+        "statement": "theorem exists_counterexample :\n    ∃ (A : Type) (_ : Ring A) (_ : Algebra ℂ A),\n      FiniteDimensional ℂ A ∧ littleFinitisticDimension A = ⊤ ∧\n        ∀ m : ℕ, 0 < m → ∃ N : ModuleCat.{0} A, Module.Finite A N ∧\n          ((2*m-2 : ℕ) : WithBot ℕ∞) ≤ projectiveDimension N ∧\n            projectiveDimension N < ⊤",
+        "proof": {
+         "file": "lean/OAI/Algebra/Finitistic/Main.lean",
+         "line": 44,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Algebra/Finitistic/Main.lean"
+       }
+      ]
+     },
+     {
+      "label": "Left/right finitistic-dimension asymmetry",
+      "challenge": "lean/ComparatorChallenges/FinitisticAsymmetry.lean",
+      "config": "lean/ComparatorChallenges/FinitisticAsymmetry.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.LittleFinitistic.extreme_left_right_asymmetry",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 29,
+        "statement": "theorem extreme_left_right_asymmetry :\n    ∃ (Λ : Type) (_ : Ring Λ) (_ : Algebra ℂ Λ),\n      FiniteDimensional ℂ Λ ∧\n      littleFinitisticDimension Λ = ⊤ ∧ bigFinitisticDimension Λ = ⊤ ∧\n      littleFinitisticDimension Λᵐᵒᵖ = 0 ∧ bigFinitisticDimension Λᵐᵒᵖ = 0 ∧\n      ¬ InjectivesGenerate Λ ∧ InjectivesGenerate Λᵐᵒᵖ",
+        "proof": {
+         "file": "lean/OAI/Algebra/FinitisticAsymmetry/Main.lean",
+         "line": 48,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Algebra/FinitisticAsymmetry/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "199",
+   "title": "Counterexamples to Auslander–Reiten, Tachikawa and related homological conjectures",
+   "description": "Constructs finite-dimensional algebras over a characteristic-two rational-function field that disprove the Auslander–Reiten and Gorenstein-projective conjectures, and Tachikawa's second conjecture. An associated endomorphism algebra also disproves the classical, generalized and strong Nakayama conjectures, the Auslander–Gorenstein conjecture, and the Wakamatsu tilting conjecture. The counterexamples persist under every extension of the base field.",
+   "doc": "lean/docs/199.md",
+   "manuscripts": [
+    {
+     "title": "An explicit counterexample to the Auslander-Reiten conjecture",
+     "path": "preprints/An-explicit-counterexample-to-the-Auslander-Reiten-conjecture-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We disprove the Auslander–Reiten conjecture for Artin algebras. We construct a finite-dimensional algebra Λ over $k=\\mathbb F_2(q,H_1,H_2)$ and a finite-dimensional nonprojective left module *Z* such that $\\mathop{\\mathrm{Ext}}\\nolimits ^i_\\Lambda(Z,Z)=\\mathop{\\mathrm{Ext}}\\nolimits ^i_\\Lambda(Z,\\Lambda)=0$ for every *i* > 0. The module is Gorenstein-projective, so the same example also disproves the Gorenstein-projective conjecture. Both counterexamples persist after every extension of *k*."
+    },
+    {
+     "title": "A counterexample to Tachikawa's second conjecture",
+     "path": "preprints/A-counterexample-to-Tachikawas-second-conjecture-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We disprove Tachikawa's second conjecture by constructing a finite-dimensional symmetric algebra over $k=\\mathbb F_2(q,H_1,H_2)$ with a finite-dimensional nonprojective module whose self-extension groups vanish in every positive degree. The associated endomorphism algebra also gives counterexamples to the classical, generalized, and strong Nakayama conjectures, the Auslander–Gorenstein conjecture, and the Wakamatsu tilting conjecture. These conclusions persist after every extension of *k*."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/199.md",
+    "title": "Counterexamples to Auslander–Reiten, Tachikawa and related homological conjectures",
+    "papers": [
+     "preprints/An-explicit-counterexample-to-the-Auslander-Reiten-conjecture-September-23-2026/paper.pdf",
+     "preprints/A-counterexample-to-Tachikawas-second-conjecture-September-23-2026/paper.pdf"
+    ],
+    "scope": "The Auslander–Reiten conjecture predicts that a finitely generated module $M$ over an Artin algebra $A$ is projective if $\\mathrm{Ext}^i_A(M,M\\oplus A)=0$ for every $i>0$. The formalized counterexample is a finite-dimensional algebra over $k=\\mathbb F_2(q,H_1,H_2)$ and a finite-dimensional nonprojective Gorenstein-projective module with this vanishing.\n\nIt also establishes $A/\\mathrm{rad}\\,A\\cong k^8$, $(\\mathrm{rad}\\,A)^4\\ne0$, and preservation of the listed properties after every field extension. The Tachikawa companion is separate.\n\nTachikawa's second conjecture predicts that a finite-dimensional module over a finite-dimensional self-injective algebra is projective if all its positive-degree self-Ext groups vanish. The formalized counterexample gives a finite-dimensional symmetric algebra over $\\mathbb F_2(q,H_1,H_2)$ and a finite-dimensional nonprojective module $M$ with $\\mathrm{Ext}^i(M,M)=0$ for every $i>0$. Symmetric algebras are self-injective, so this contradicts the conjecture.\n\nThe later field-extension, endomorphism-algebra, and related homological consequences are not included.",
+    "results": [
+     {
+      "label": "Auslander–Reiten counterexample",
+      "challenge": "lean/ComparatorChallenges/AuslanderReiten.lean",
+      "config": "lean/ComparatorChallenges/AuslanderReiten.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.ArExplicit.Statement.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 70,
+        "statement": "theorem main : FullStatement.{v}",
+        "proof": {
+         "file": "lean/OAI/Algebra/AuslanderReiten/All.lean",
+         "line": 738,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Algebra/AuslanderReiten/All.lean"
+       }
+      ]
+     },
+     {
+      "label": "Tachikawa counterexample",
+      "challenge": "lean/ComparatorChallenges/Tachikawa.lean",
+      "config": "lean/ComparatorChallenges/Tachikawa.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Tachikawa.main_theorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 32,
+        "statement": "theorem main_theorem : Counterexample",
+        "proof": {
+         "file": "lean/OAI/RingTheory/Tachikawa/Counterexample.lean",
+         "line": 293,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/RingTheory/Tachikawa/Counterexample.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "200",
+   "title": "Eisenbud–Green–Harris and lex-plus-powers",
+   "description": "Proves the Eisenbud–Green–Harris and lex-plus-powers conjectures over every characteristic-zero field. Any homogeneous ideal containing a regular sequence, of arbitrary length and degrees at least two, admits a lex-plus-powers ideal with the same Hilbert function and no smaller graded Betti numbers.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "The Artinian Lex-Plus-Powers Betti Theorem",
+     "path": "preprints/The-Artinian-Lex-Plus-Powers-Betti-Theorem-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the Eisenbud–Green–Harris and lex-plus-powers conjectures over every characteristic-zero field for homogeneous regular sequences of any positive length, with degrees at least two. For every homogeneous ideal containing such a sequence, the corresponding lex-plus-powers ideal has the same Hilbert function and at least as large a graded Betti number in every homological and internal degree."
+    },
+    {
+     "title": "Commuting Division-Coefficient Forms and the Artinian Eisenbud--Green--Harris Conjecture",
+     "path": "preprints/Commuting-Division-Coefficient-Forms-and-the-Artinian-Eisenbud-Green-Harris-Conjecture-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the Eisenbud–Green–Harris conjecture over every characteristic-zero field for homogeneous regular sequences of any positive length, with degrees at least two. Thus every homogeneous ideal containing such a sequence has the Hilbert function of a monomial ideal containing the corresponding pure powers."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "201",
+   "title": "A counterexample to Kurosh’s division-ring problem",
+   "description": "Constructs a countable characteristic-zero division ring that is algebraic over its center and generated by two elements over that center, but has infinite dimension over it. This answers Kurosh's division-ring problem on local finiteness negatively.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "A Counterexample to Kurosh’s Division-Ring Problem",
+     "path": "preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a countable division ring of characteristic zero that is algebraic over its center, generated by two elements as an algebra over that center, and infinite-dimensional over it. This gives a negative answer to the Kurosh problem for division rings."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "202",
+   "title": "The blockwise Alperin weight conjecture",
+   "description": "Proves the numerical blockwise Alperin weight conjecture for every prime and every finite group: the number of irreducible Brauer characters in a block equals the number of conjugacy classes of its weights.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "The Blockwise Alperin Weight Conjecture",
+     "path": "preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the numerical blockwise Alperin weight conjecture for every finite group and every prime *p*. For each *p*-block *B*, the number of irreducible Brauer characters in *B* equals the number of conjugacy classes of *B*-weights."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "203",
+   "title": "Donovan's conjecture over fields and complete mixed-characteristic DVRs",
+   "description": "Proves Donovan's conjecture: over each fixed algebraically closed field of characteristic *p*, blocks of finite groups with bounded defect-group order have only finitely many Morita-equivalence classes, for every prime *p*. Also proves the integral form over each fixed complete mixed-characteristic discrete valuation ring with algebraically closed residue field.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Donovan's Conjecture over Algebraically Closed Fields",
+     "path": "preprints/Donovans-Conjecture-over-Algebraic-Closures-of-Prime-Fields-September-24-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove Donovan's conjecture over every algebraically closed field *K* of characteristic *p* > 0. For each fixed *K* and bound on defect-group order, blocks of finite groups represent only finitely many *K*-linear Morita equivalence classes. The defect groups need not be abelian, and the result includes *p* = 2."
+    },
+    {
+     "title": "Integral Donovan Finiteness over Witt Vectors",
+     "path": "preprints/Integral-Donovan-Finiteness-over-Witt-Vectors-September-25-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove integral Donovan finiteness: for every prime *p* and positive integer *M*, the blocks of all finite groups with defect groups of order at most *M* have only finitely many Morita equivalence classes over $W(\\overline{\\mathbb F}_p)$. The defect groups need not be abelian, and the result includes *p* = 2. The same bounded-defect finiteness holds over each fixed complete discrete valuation ring of characteristic zero with algebraically closed residue field of characteristic *p*, including ramified rings."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "204",
+   "title": "Tensor saturation for even spin groups",
+   "description": "Proves saturation factor one for $\\mathop{\\mathrm{Spin}}\\nolimits (2n)$, *n* ≥ 2: for three dominant integral weights whose sum lies in the root lattice, an invariant at any common positive integral dilation already gives an invariant at the original weights. This resolves the type-*D* part of the simply-laced saturation conjecture.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Tensor saturation for even spin groups",
+     "path": "preprints/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026/Tensor-Saturation-for-Even-Spin-Groups-September-24-2026.pdf",
+     "note": "",
+     "abstract": "We prove the saturation conjecture for $\\mathop{\\mathrm{Spin}}\\nolimits (2n)$, *n* ≥ 2. If three dominant integral weights sum to an element of the root lattice, then the existence of a nonzero tensor invariant after a positive integral dilation implies the existence of one at the original weights."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "205",
+   "title": "Saxl’s conjecture and universal tensor squares",
+   "description": "Proves Saxl's conjecture: the tensor square of every staircase representation contains every irreducible complex representation of the corresponding symmetric group. More generally, every $S_{n}$ with $n\\notin\\{2,4,9\\}$ has an irreducible representation whose tensor square contains all irreducibles.",
+   "doc": "lean/docs/205.md",
+   "manuscripts": [
+    {
+     "title": "Universal Tensor Squares for Symmetric Groups",
+     "path": "preprints/Universal-Tensor-Squares-for-Symmetric-Groups-September-24-2026/main.pdf",
+     "note": "",
+     "abstract": "For every positive integer *n* other than 2, 4, and 9, we prove that some irreducible complex representation of $S_{n}$ has a tensor square containing every irreducible representation. This resolves the tensor square conjecture for symmetric groups affirmatively."
+    },
+    {
+     "title": "A Cyclic Polytabloid Proof of Saxl's Conjecture",
+     "path": "preprints/A-Cyclic-Polytabloid-Proof-of-Saxls-Conjecture-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "For every staircase partition, we prove that the tensor square of the corresponding irreducible complex representation of the symmetric group contains every irreducible representation of that group. This proves Saxl's conjecture."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/205.md",
+    "title": "Saxl’s conjecture and universal tensor squares",
+    "papers": [
+     "preprints/Universal-Tensor-Squares-for-Symmetric-Groups-September-24-2026/main.pdf",
+     "preprints/A-Cyclic-Polytabloid-Proof-of-Saxls-Conjecture-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves the universal tensor-square conjecture for symmetric groups in the stated range. For every positive integer $n\\notin\\{2,4,9\\}$, it constructs an irreducible complex representation of $S_n$ whose tensor square contains every irreducible complex representation of $S_n$. Equivalently, all corresponding Kronecker coefficients are positive. The statement also supplies injective intertwining maps for arbitrary finite-dimensional irreducible representations.\n\nSaxl's conjecture asserts that the tensor square of each staircase Specht module contains every irreducible representation of the corresponding symmetric group. The formalization establishes this for every $m\\ge1$: if $\\rho_m=(m,m-1,\\ldots,1)$, then $g(\\rho_m,\\rho_m,\\mu)>0$ for every partition $\\mu$ of $m(m+1)/2$.\n\nThe stronger claim that every constituent appears in the orbit span of one prescribed tensor is not included.",
+    "results": [
+     {
+      "label": "Universal irreducible tensor squares for symmetric groups",
+      "challenge": "lean/ComparatorChallenges/UniversalTensorSquares.lean",
+      "config": "lean/ComparatorChallenges/UniversalTensorSquares.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.UniversalTensorSquares.universal_tensor_square",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 91,
+        "statement": "theorem universal_tensor_square\n    (n : ℕ) (hn : 0 < n) (h2 : n ≠ 2) (h4 : n ≠ 4) (h9 : n ≠ 9) :\n    ∃ (lam : YoungDiagram) (hlam : lam.card = n),\n      (∀ (ν : YoungDiagram) (hν : ν.card = n),\n        0 < Saxl.kronecker (Saxl.canonicalTableau lam hlam)\n          (Saxl.canonicalTableau lam hlam) (Saxl.canonicalTableau ν hν)) ∧\n      Representation.IsIrreducible (Saxl.spechtRep (Saxl.canonicalTableau lam hlam)) ∧\n      ∀ (V : Type u) [AddCommGroup V] [Module ℂ V] [Module.Finite ℂ V]\n        (ρ : Representation ℂ (Equiv.Perm (Fin n)) V) [Representation.IsIrreducible ρ],\n        ∃ F : Representation.IntertwiningMap ρ\n          ((Saxl.spechtRep (Saxl.canonicalTableau lam hlam)).tprod\n            (Saxl.spechtRep (Saxl.canonicalTableau lam hlam))),\n          Function.Injective F",
+        "proof": {
+         "file": "lean/OAI/RepresentationTheory/UniversalSquare/Main.lean",
+         "line": 205,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/RepresentationTheory/UniversalSquare/Main.lean"
+       }
+      ]
+     },
+     {
+      "label": "Saxl's conjecture",
+      "challenge": "lean/ComparatorChallenges/Saxl.lean",
+      "config": "lean/ComparatorChallenges/Saxl.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Saxl.saxl_conjecture",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 112,
+        "statement": "theorem saxl_conjecture : SaxlConjecture",
+        "proof": {
+         "file": "lean/OAI/RepresentationTheory/Saxl/Main.lean",
+         "line": 88,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/RepresentationTheory/Saxl/Main.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "206",
+   "title": "Finite lattice representation and undecidability",
+   "description": "Some finite lattices are not congruence lattices of any finite algebra, answering the finite lattice representation problem negatively. Moreover, no algorithm decides whether a finite lattice has such a representation, or whether it is a full subgroup interval of a finite group.",
+   "doc": "lean/docs/206.md",
+   "manuscripts": [
+    {
+     "title": "Finite congruence lattices: characterization and undecidability",
+     "path": "preprints/Finite-Congruence-Lattices-Characterization-and-Undecidability-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We give an explicit colored-graph characterization of the finite nonempty lattices that occur as full congruence lattices of finite algebras, and prove that deciding this representation property is undecidable. In particular, the finite lattice representation problem has a negative answer. We also prove that recognition of full subgroup intervals in finite groups is undecidable."
+    },
+    {
+     "title": "A negative solution to the finite lattice representation problem",
+     "path": "preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We give a negative solution to the finite lattice representation problem. We prove that there is a finite nonempty lattice that is not the full congruence lattice of any finite nonempty algebra of any finite signature."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/206.md",
+    "title": "Finite lattice representation and undecidability",
+    "papers": [
+     "preprints/Finite-Congruence-Lattices-Characterization-and-Undecidability-September-24-2026/paper.pdf"
+    ],
+    "scope": "The finite lattice representation problem asks which finite lattices occur as the full congruence lattice of a finite algebra. The formalization proves the paper's colored-graph characterization: a finite nonempty lattice is representable exactly when it admits the specified finite nonempty graph witness, whose edge colors encode the required congruence relations. This selected theorem is the equivalence with the graph criterion; the paper's undecidability and subgroup-interval conclusions are outside it.",
+    "results": [
+     {
+      "label": "Colored-graph criterion for finite congruence lattices",
+      "challenge": "lean/ComparatorChallenges/FiniteCongruenceGraph.lean",
+      "config": "lean/ComparatorChallenges/FiniteCongruenceGraph.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.FiniteCongruence.graph_criterion",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 57,
+        "statement": "theorem graph_criterion (Lat : Type) [Fintype Lat] [Lattice Lat] [OrderBot Lat] :\n    Representable Lat ↔ HasGraphWitness Lat",
+        "proof": {
+         "file": "lean/OAI/Algebra/Universal/GraphCriterion.lean",
+         "line": 291,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Algebra/Universal/GraphCriterion.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "207",
+   "title": "The ℓ¹-Bass conjecture for all discrete groups",
+   "description": "Proves the $ℓ^{1}$-Bass conjecture for every discrete group: Hattori–Stallings traces of idempotent matrices over $\\ell^1(G)$ are supported on finitely many finite-order conjugacy classes. The algebraic companion proves the integral Bass trace conjecture and Kaplansky's idempotent conjecture for torsion-free groups over every commutative unital characteristic-zero domain.",
+   "doc": "lean/docs/207.md",
+   "manuscripts": [
+    {
+     "title": "The ℓ¹-Bass Conjecture for Discrete Groups",
+     "path": "preprints/The-l1-Bass-Conjecture-for-Discrete-Groups-October-5-2026/l1-bass-conjecture.pdf",
+     "note": "",
+     "abstract": "We prove the $ℓ^{1}$-Bass conjecture for every discrete group. The Hattori–Stallings trace of every idempotent matrix over the complex $ℓ^{1}$ group algebra is supported on finitely many conjugacy classes of finite-order elements."
+    },
+    {
+     "title": "The Bass trace conjecture and the characteristic-zero Kaplansky idempotent conjecture",
+     "path": "preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026.pdf",
+     "note": "",
+     "abstract": "We prove the complex group-ring Bass trace conjecture for every discrete group: the Hattori–Stallings trace of a finitely generated projective module over its complex group ring is supported on conjugacy classes of finite-order elements. As a consequence, for every torsion-free group *G* and every commutative unital domain *R* of characteristic zero, the only idempotents in $RG$ are 0 and 1. This proves Kaplansky's idempotent conjecture in characteristic zero."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/207.md",
+    "title": "The ℓ¹-Bass conjecture for all discrete groups",
+    "papers": [
+     "preprints/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026/The-Bass-trace-conjecture-for-complex-group-rings-September-24-2026.pdf"
+    ],
+    "scope": "The formalization proves the complex Bass trace conjecture for every group: the Hattori–Stallings trace of each virtual class of finitely generated projective right $\\mathbb C[G]$-modules vanishes on conjugacy classes of infinite-order elements. No finiteness, countability, or geometric hypothesis on $G$ is imposed.\n\nFor torsion-free $G$, it identifies the trace on $K_0(\\mathbb C[G])$ with the integral augmentation rank and proves the characteristic-zero Kaplansky idempotent conjecture: for every commutative unital domain $R$ of characteristic zero, an idempotent in $R[G]$ is $0$ or $1$.",
+    "results": [
+     {
+      "label": "Complex Bass trace vanishing and support",
+      "challenge": "lean/ComparatorChallenges/BassTrace.lean",
+      "config": "lean/ComparatorChallenges/BassTrace.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.BassTrace.RightProjective.bassTraceModules_vanishing_and_support",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 470,
+        "statement": "theorem bassTraceModules_vanishing_and_support {G : Type u} [_root_.Group G]\n    (x : ModuleK0.{u,v} (MonoidAlgebra ℂ G)) :\n    (∀ g : G, ¬IsOfFinOrder g → HattoriStallings x (ConjClasses.mk g) = 0) ∧\n      ↑(HattoriStallings x).support ⊆\n        {c | ∃ g : G, IsOfFinOrder g ∧ ConjClasses.mk g = c}",
+        "proof": {
+         "file": "lean/OAI/RingTheory/BassTrace/Main.lean",
+         "line": 23,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/RingTheory/BassTrace/Main.lean"
+       }
+      ]
+     },
+     {
+      "label": "Trace rank and characteristic-zero Kaplansky idempotents for torsion-free groups",
+      "challenge": "lean/ComparatorChallenges/BassTorsionFree.lean",
+      "config": "lean/ComparatorChallenges/BassTorsionFree.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.TorsionFreeBass.torsion_free_corollary",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 299,
+        "statement": "theorem torsion_free_corollary (G : Type*) [Group G] (hG : TorsionFree G) :\n    ((∀ (q : ℕ), 1 ≤ q →\n      ∀ e : Matrix (Fin q) (Fin q) (MonoidAlgebra ℂ G), e ^ 2 = e →\n        matrixTrace e = ((augmentedMatrix e).rank : ℂ)) ∧\n      traceK0 (G := G) = (Int.castAddHom ℂ).comp augmentationRank ∧\n      Set.range (traceK0 (G := G)) = Set.range (fun z : ℤ => (z : ℂ))) ∧\n    (∀ (R : Type*) [CommRing R] [IsDomain R] [CharZero R]\n      (e : MonoidAlgebra R G), e ^ 2 = e → e = 0 ∨ e = 1)",
+        "proof": {
+         "file": "lean/OAI/RingTheory/BassTrace/TorsionFree.lean",
+         "line": 50,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/RingTheory/BassTrace/TorsionFree.lean"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "208",
+   "title": "Finite symmetric tensor categories and the Verlinde tower",
+   "description": "Proves that every finite symmetric tensor category over an algebraically closed field *k* of characteristic *p* > 0 admits a *k*-linear exact faithful strong symmetric monoidal fiber functor to a higher Verlinde category $\\mathrm{Ver}_{p^n}$. The level may depend on the category, and the theorem includes characteristic two, resolving the finite case of the Benson–Etingof–Ostrik conjecture.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Fiber functors for finite symmetric tensor categories in positive characteristic",
+     "path": "preprints/Fiber-functors-for-finite-symmetric-tensor-categories-in-positive-characteristic-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the finite case of the Benson–Etingof–Ostrik conjecture: every finite symmetric tensor category over an algebraically closed field *k* of characteristic *p* > 0 admits a *k*-linear exact faithful strong symmetric monoidal functor to a finite higher Verlinde category $\\mathop{\\mathrm{Ver}}\\nolimits _{p^n}(k)$. The result includes characteristic two, and the level *n* may depend on the category."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "209",
+   "title": "Integral counterexamples to Gersten’s conjecture",
+   "description": "Disproves unrestricted integral Gersten injectivity in degrees 3 and 5. Two explicit two-dimensional ramified regular local rings of mixed characteristic $(0,5)$ have nonzero integral *K*-theory classes that vanish over their fraction fields.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "An integral counterexample to Gersten's conjecture",
+     "path": "preprints/An-Integral-Counterexample-to-Gerstens-Conjecture-September-25-2026/An-Integral-Counterexample-to-Gerstens-Conjecture-September-25-2026.pdf",
+     "note": "",
+     "abstract": "We construct a two-dimensional ramified regular local ring *A* of mixed characteristic $(0,5)$ for which $K_5(A)\\to K_5(\\mathop{\\mathrm{Frac}}\\nolimits A)$ has a nonzero kernel. This disproves Gersten's conjecture in its unrestricted integral form."
+    },
+    {
+     "title": "An integral degree-three Gersten counterexample",
+     "path": "preprints/An-Integral-Degree-Three-Gersten-Counterexample-September-26-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a two-dimensional ramified regular local ring *A* in mixed characteristic $(0,5)$ for which the integral map $K_3(A)\\to K_3(\\mathop{\\mathrm{Frac}}\\nolimits A)$ has nonzero kernel. This gives a negative answer to the unrestricted integral Gersten conjecture."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "210",
+   "title": "Foulkes' conjecture for sixth powers and quadratic stabilization",
+   "description": "Proves the sixth case of Foulkes’ conjecture: $\\mathop{\\mathrm{Sym}}\\nolimits ^6(\\mathop{\\mathrm{Sym}}\\nolimits ^bV)$ embeds equivariantly in $\\mathop{\\mathrm{Sym}}\\nolimits ^b(\\mathop{\\mathrm{Sym}}\\nolimits ^6V)$ for every *b* ≥ 6 and finite-dimensional complex *V*. More generally, the canonical multiplication map $\\mathop{\\mathrm{Sym}}\\nolimits ^b(\\mathop{\\mathrm{Sym}}\\nolimits ^aV)\\to\\mathop{\\mathrm{Sym}}\\nolimits ^a(\\mathop{\\mathrm{Sym}}\\nolimits ^bV)$ is surjective for *a* ≥ 2 and $b\\ge a(a-1)$, giving dimension-independent quadratic stabilization.",
+   "doc": "lean/docs/210.md",
+   "manuscripts": [
+    {
+     "title": "Foulkes' conjecture for the sixth symmetric power",
+     "path": "preprints/Foulkes-Conjecture-for-the-Sixth-Symmetric-Power-September-25-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove the sixth-symmetric-power case of Foulkes' conjecture. For every integer *b* ≥ 6 and every finite-dimensional complex vector space *V*, there is a $\\mathop{\\mathrm{GL}}\\nolimits (V)$-equivariant injection $\\mathop{\\mathrm{Sym}}\\nolimits ^6(\\mathop{\\mathrm{Sym}}\\nolimits ^b V)\\hookrightarrow\\mathop{\\mathrm{Sym}}\\nolimits ^b(\\mathop{\\mathrm{Sym}}\\nolimits ^6 V)$."
+    },
+    {
+     "title": "Quadratic stabilization of the canonical Foulkes--Howe map",
+     "path": "preprints/Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "For every finite-dimensional complex vector space *V*, we prove that the canonical Foulkes–Howe map $\\mathop{\\mathrm{Sym}}\\nolimits ^b(\\mathop{\\mathrm{Sym}}\\nolimits ^a V)\\longrightarrow\\mathop{\\mathrm{Sym}}\\nolimits ^a(\\mathop{\\mathrm{Sym}}\\nolimits ^b V)$ is surjective whenever *a* ≥ 2 and $b\\ge a(a-1)$. This gives a quadratic stabilization bound independent of $\\dim V$."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/210.md",
+    "title": "Foulkes' conjecture for sixth powers and quadratic stabilization",
+    "papers": [
+     "preprints/Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026/paper.pdf"
+    ],
+    "scope": "The formalized result proves surjectivity of the canonical averaged Foulkes–Howe map $\\mathrm{Sym}^b(\\mathrm{Sym}^a\\,V)\\to\\mathrm{Sym}^a(\\mathrm{Sym}^b\\,V)$ for every finite-dimensional complex vector space, $a\\ge2$, and $b\\ge a(a-1)$. It also covers the bijective $a=1$ case, the vanishing-on-products consequence, and the corresponding equivariant embedding in the reverse direction. The sixth-power specialization is covered for $b\\ge30$; the companion's full range $b\\ge6$ is not included.",
+    "results": [
+     {
+      "label": "Quadratic stabilization of the canonical Foulkes–Howe map",
+      "challenge": "lean/ComparatorChallenges/FoulkesHowe.lean",
+      "config": "lean/ComparatorChallenges/FoulkesHowe.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Problem346.canonical_foulkes_howe_surjective",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 42,
+        "statement": "theorem canonical_foulkes_howe_surjective :\n    ∀ (V : Type u) [AddCommGroup V] [Module ℂ V] [FiniteDimensional ℂ V] (a b : ℕ), 2 ≤ a → a * (a - 1) ≤ b → ∃ μ : SymPow b (SymPow a V) →ₗ[ℂ] SymPow a (SymPow b V), IsFoulkesMap a b V μ ∧ Function.Surjective μ ∧ ∀ ν : SymPow b (SymPow a V) →ₗ[ℂ] SymPow a (SymPow b V), IsFoulkesMap a b V ν → ν = μ",
+        "proof": {
+         "file": "lean/OAI/RepresentationTheory/FoulkesHowe/Stabilization.lean",
+         "line": 15,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/RepresentationTheory/FoulkesHowe/Stabilization.lean"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
