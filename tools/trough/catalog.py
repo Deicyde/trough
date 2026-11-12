@@ -132,21 +132,23 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
                    tauceti: tuple[str, str] | None = None, formal_frontier: dict[str, str] | None = None,
                    formal_conjectures: str | None = None, lean_pool: str | None = None,
                    anthropic_flt: dict | None = None, cfsg: str | None = None,
-                   stacks: str | None = None, atlas: str | None = None) -> str:
+                   stacks: str | None = None, atlas: str | None = None, physlib: str | None = None) -> str:
     """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library;
     *tauceti* has the Tau Ceti and roadmap commits, once the chapter is built; *formal_frontier* has the
     commit each Formal Frontier library's record pins, by library id; *formal_conjectures* is the Formal
     Conjectures commit read, *lean_pool* the commit Lean Pool's record pins, *anthropic_flt* the
     source record of Anthropic's Fermat's Last Theorem, whose commit it pins, *cfsg* the commit Axiom
-    Math's CFSG's record pins, *stacks* the commit of Axiom's Stacks Project formalization, and *atlas* the
-    commit of ATLAS's vault, on its fork's wiki/autoform-blueprint branch."""
+    Math's CFSG's record pins, *stacks* the commit of Axiom's Stacks Project formalization, *atlas* the
+    commit of ATLAS's vault, on its fork's wiki/autoform-blueprint branch, and *physlib* the commit of Physlib
+    its record pins."""
     formal_frontier = formal_frontier or {}
     # Every chapter whose data pins a library's commit, by library id; the Libraries list shows that commit.
     pinned = (formal_frontier | ({"formal-conjectures": formal_conjectures} if formal_conjectures else {})
               | ({"lean-pool": lean_pool} if lean_pool else {})
               | ({"anthropic-flt": anthropic_flt["rev"]} if anthropic_flt else {})
               | ({"cfsg": cfsg} if cfsg else {})
-              | ({"stacks": stacks} if stacks else {}))
+              | ({"stacks": stacks} if stacks else {})
+              | ({"physlib": physlib} if physlib else {}))
     lines = [
         "# Sources",
         "",
@@ -274,6 +276,21 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             "the vault's areas, subjects and containers, with their titles and prose. From "
             f"[Deicyde/atlas-lean at {atlas[:8]}](https://github.com/Deicyde/atlas-lean/tree/{atlas}), the "
             "`wiki/autoform-blueprint` branch, Apache-2.0. The archived `v1/`, under a non-commercial license, is not read.",
+        ]
+    if physlib:
+        lines += [
+            "",
+            "## Physlib",
+            "",
+            f"- `data/physlib/modules/`: each module's title, module docstring and section docstrings, and its "
+            "declarations with their docstrings and Lean statements, read from the source text without Lean; "
+            "`data/physlib/api-maps.json`: the content and references of each API map; `data/physlib/source.json`: the "
+            "commit, the README's words on the project and the significant results scripts/lint/exemptions/Theorems.txt "
+            f"lists. From [leanprover-community/physlib at {physlib[:8]}]"
+            f"(https://github.com/leanprover-community/physlib/tree/{physlib}), Apache-2.0.",
+            "- `data/physlib/deps.json`: the modules whose declarations each module's statements and proofs use, and "
+            "the names read from the source that Lean does not have, written by `lean/physlib/PhyslibDeps.lean` in "
+            "GitHub Actions.",
         ]
     lines += ["", "## Libraries", ""]
     for group, heading in GROUPS:

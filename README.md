@@ -20,8 +20,8 @@ Theories, Strong PNT and PNT+), the Formal Frontier libraries from their
 headline results, Formal Conjectures from its problem files, Lean Pool from
 its project cards, Anthropic's FLT from the landmark theorems of its proof,
 Axiom's CFSG from its proof's case division and its milestones, Axiom's
-Stacks Project formalization from its Stacks tags, and ATLAS from the topics
-of its vault.
+Stacks Project formalization from its Stacks tags, ATLAS from the topics
+of its vault, and Physlib from its modules.
 
 ## The Mathlib map
 
@@ -496,6 +496,68 @@ non-commercial license and is not read.
    a link annotation does not read, or when the results drop under half the
    last record's.
 
+## The Physlib chapter
+
+[Physlib](https://github.com/leanprover-community/physlib) digitalises results
+from physics in Lean, on Mathlib. Its repository holds three libraries, as its
+README presents them: Physlib, the reviewed core; PhyslibAlpha, downstream of it
+under a lighter review; and QuantumInfo, quantum information theory with
+conventions of its own. Its handbook organizes a file around one definition and
+names it after it, and every Physlib and PhyslibAlpha module carries a module
+docstring, so the chapter has an article per module with a declaration, in a
+part per library, on a page per area, per folder below it and per deeper folder
+with an API map; a module in another deeper folder is on the page of the nearest
+folder above, under a line naming its folder. An article quotes the module's
+docstring and section docstrings, their headings shown as the article's and the
+table of contents left out, and shows each declaration in file order: its name,
+kind and line, its docstring and its Lean statement. An instance with no name is
+shown without one; `private` declarations are counted, not shown. The
+repository keeps the keyword `theorem` for what
+`scripts/lint/exemptions/Theorems.txt` lists as significant results, and their
+blocks say so and lead their cards' Lean rows. An API map, the repository's own
+account of an area with numbered citations of the declarations that formalize
+it, is quoted on its folder's page without the sentences it marks `[TODO]`, and
+each citation links the article of the module it names. Informal results
+(`informal_lemma`, `informal_definition`, `semiformal_result`) and TODO items
+are not mapped, and the parts of a docstring that mention a TODO item are left
+out, each cut marked with …. An article depends on the modules whose
+declarations its statements use, and its proof on those that only its proofs
+use, each without what another of them reaches.
+
+1. `tools/refresh_physlib.py CHECKOUT` reads a checkout and writes
+   `data/physlib/`: `source.json`, the commit, its date, toolchain and Mathlib,
+   the README's words on the project and its maintainers, the names
+   Theorems.txt lists and the counts; `api-maps.json`, each API map's title,
+   content and references; and `modules/<library>.<area>.json`, each module's
+   title, module docstring, section docstrings and declarations.
+   `tools/trough/leansource.py` reads each file as it does for the Stacks
+   chapter, so a statement keeps the indentation its lines have in the file; a
+   structure, class or inductive type shows its whole text, its fields or
+   constructors. A module docstring is the first `/-!` comment when it comes
+   before the first declaration, and the later ones are section docstrings. A
+   link in a docstring to one of the repository's files points at that module's
+   article, or else at the file at the pin.
+2. Physlib publishes a build cache for each commit of its `master` branch whose
+   build passes, so Lean runs for this chapter. After the refresh, the **Physlib
+   data** workflow (`.github/workflows/physlib-data.yml`) fetches that cache
+   with Mathlib's, builds the three libraries, which compiles nothing, and runs
+   `lean/physlib/PhyslibDeps.lean` below an import of every module. It writes
+   `data/physlib/deps.json`: for each module, the other modules whose
+   declarations its own declarations use in a statement (a type, a definition's
+   value, a structure's fields) or in a proof, and the names read from the
+   source that are not public declarations Lean has, such as a declaration
+   private to its module. Those are left out of the articles, and the generator
+   refuses a dump of another commit than `source.json` pins.
+3. The workflow runs weekly, on a dispatch and on pull requests that touch its
+   paths; it regenerates the pages and runs the tests, and on a pull request it
+   fails when the committed data differ from what the pin gives. The weekly
+   run, or a dispatch with `newest`, moves the pin to the newest `master` commit
+   whose build passed and whose build cache was published. A refresh writes
+   nothing, and the workflow fails, when the repository is not Apache-2.0, a
+   file the commit lists is not checked out, a module's scopes don't close, the
+   README no longer describes each library, or the declarations drop under half
+   the last record's.
+
 ## Working on it
 
     uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
@@ -583,3 +645,5 @@ Free Documentation License, whose text is otherwise not copied.
 The statements, titles and prose in `data/atlas/` come from ATLAS's vault on
 [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean), Apache-2.0; its
 LICENSE adds that the code is not meant for training models.
+The docstrings, Lean statements and API maps quoted in `data/physlib/` come from
+[Physlib](https://github.com/leanprover-community/physlib), Apache-2.0.
