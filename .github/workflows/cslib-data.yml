@@ -1,0 +1,256 @@
+# Reads CSLib at the commit data/cslib/source.json pins: each module's
+# docstrings and public declarations, read from the source without Lean
+# (tools/refresh_cslib.py), then, with CSLib built on Mathlib's cache, the
+# modules each module's statements and proofs use (lean/cslib/CslibDeps.lean).
+# The pages are then regenerated from that data.
+#
+# A push that changes the reader, the dump or the data runs it too, so the
+# committed data always match the pin. The weekly run, or a dispatch with
+# "newest", moves the pin to the newest main commit whose CI passed. On main,
+# the commit job records the data and the pages, then starts the Pages and
+# Tests workflows. On a pull request the run fails when the committed data
+# differ from what the pin gives, and keeps a patch.
+
+name: CSLib data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/refresh_cslib.py"
+      - "tools/trough/cslib.py"
+      - "tools/trough/leansource.py"
+      - "tools/trough/formal_conjectures.py"
+      - "tools/trough/ff.py"
+      - "lean/cslib/**"
+      - "data/cslib/**"
+      - ".github/workflows/cslib-data.yml"
+  pull_request:
+    paths:
+      - "tools/refresh_cslib.py"
+      - "tools/trough/cslib.py"
+      - "tools/trough/leansource.py"
+      - "tools/trough/formal_conjectures.py"
+      - "tools/trough/ff.py"
+      - "lean/cslib/**"
+      - "data/cslib/**"
+      - ".github/workflows/cslib-data.yml"
+  workflow_dispatch:
+    inputs:
+      newest:
+        description: Pin the newest CSLib commit whose CI passed
+        type: boolean
+        default: false
+  schedule:
+    - cron: "37 6 * * 6"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cslib-data-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    outputs:
+      changed: ${{ steps.compare.outputs.changed }}
+      rev: ${{ steps.pin.outputs.rev }}
+      sha: ${{ steps.head.outputs.sha }}
+    steps:
+      # Outside pull requests, read the branch as it is now rather than the
+      # commit that started the run.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event_name != 'pull_request' && github.ref || '' }}
+          persist-credentials: false
+
+      - name: Record the commit this run reads
+        id: head
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Install elan v4.2.4
+        run: |
+          set -euo pipefail
+          installer_dir="${RUNNER_TEMP}/elan-installer"
+          archive="${installer_dir}/elan-x86_64-unknown-linux-gnu.tar.gz"
+          mkdir -p "$installer_dir"
+          curl --fail --silent --show-error --location \
+            --proto '=https' --tlsv1.2 \
+            https://github.com/leanprover/elan/releases/download/v4.2.4/elan-x86_64-unknown-linux-gnu.tar.gz \
+            --output "$archive"
+          echo "42b94d4244e8353142c456ec0e4ca6528fd898a6c604d4059f494e706e431f63  $archive" \
+            | sha256sum --check --strict
+          tar xzf "$archive" -C "$installer_dir"
+          "$installer_dir/elan-init" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      - name: Choose the CSLib commit
+        id: pin
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NEWEST: ${{ github.event_name == 'schedule' || inputs.newest }}
+        run: |
+          set -euo pipefail
+          rev=$(jq -r '.rev // empty' data/cslib/source.json 2>/dev/null || true)
+          if [ "$NEWEST" = true ] || [ -z "$rev" ]; then
+            rev=$(gh api "repos/leanprover/cslib/actions/workflows/lean_action_ci.yml/runs?branch=main&event=push&status=success&per_page=1" \
+              --jq '.workflow_runs[0].head_sha')
+          fi
+          echo "CSLib $rev"
+          echo "rev=$rev" >> "$GITHUB_OUTPUT"
+
+      # The whole repository, about 12 MB: lake builds it, and the refresh reads
+      # the files under Cslib/ with the README, GOVERNANCE.md and LICENSE.
+      - name: Fetch CSLib at that commit
+        env:
+          REV: ${{ steps.pin.outputs.rev }}
+        run: |
+          set -euo pipefail
+          dir="$RUNNER_TEMP/cslib"
+          git init --quiet "$dir"
+          git -C "$dir" fetch --quiet --depth 1 https://github.com/leanprover/cslib.git "$REV"
+          git -C "$dir" checkout --quiet FETCH_HEAD
+
+      - name: Read the modules
+        run: uv run --no-dev python tools/refresh_cslib.py "$RUNNER_TEMP/cslib"
+
+      # Mathlib's oleans come from its cache; `lake build` compiles CSLib itself.
+      - name: Build CSLib
+        working-directory: ${{ runner.temp }}/cslib
+        run: |
+          set -euo pipefail
+          lake exe cache get
+          /usr/bin/time -v lake build
+
+      - name: Read which modules each module uses
+        working-directory: ${{ runner.temp }}/cslib
+        env:
+          TROUGH_OUT: ${{ github.workspace }}/data/cslib/deps.json
+          TROUGH_CSLIB_REV: ${{ steps.pin.outputs.rev }}
+        run: |
+          set -euo pipefail
+          cp "$GITHUB_WORKSPACE/lean/cslib/CslibDeps.lean" TroughCslibDeps.lean
+          /usr/bin/time -v lake env lean TroughCslibDeps.lean
+
+      - name: Regenerate the pages
+        run: uv run --no-dev python tools/generate.py
+
+      - name: Run the tests on the new data
+        run: uv run pytest -q
+
+      - name: Compare with the committed data
+        id: compare
+        run: |
+          git add -A data/cslib blueprint hooks/lean-links.json
+          if git diff --cached --quiet; then
+            echo "The committed data are what the pin gives."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git diff --cached --stat | tail -n 20
+          git diff --cached --binary > cslib-data.patch
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          if [ "$GITHUB_EVENT_NAME" = pull_request ]; then
+            base=$(git cat-file -p HEAD | sed -n 's/^parent //p' | head -n 1)
+            echo "::error::The committed data differ from what the pin gives. Merge main and apply the patch: git fetch origin ${base} && git merge --no-edit ${base} && gh run download ${GITHUB_RUN_ID} -R ${GITHUB_REPOSITORY} -n cslib-data && git apply cslib-data.patch"
+            exit 1
+          fi
+
+      - name: Keep the patch
+        if: always() && steps.compare.outputs.changed == 'true'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: cslib-data
+          path: cslib-data.patch
+          retention-days: 14
+
+      - name: Keep the data for the commit job
+        if: steps.compare.outputs.changed == 'true' && github.event_name != 'pull_request'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: cslib-data-files
+          path: |
+            data/cslib/deps.json
+            data/cslib/library.json
+            data/cslib/source.json
+          retention-days: 14
+
+  # Records the data in the newest main, regenerating the pages with main's
+  # generator, as the CFSG data workflow does. Data changed meanwhile win: that
+  # push's run records its own.
+  commit:
+    needs: refresh
+    if: >-
+      needs.refresh.outputs.changed == 'true' &&
+      github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Fetch the data
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: cslib-data-files
+          path: ${{ runner.temp }}/data
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      - name: Commit the data and pages
+        env:
+          REV: ${{ needs.refresh.outputs.rev }}
+          READ: ${{ needs.refresh.outputs.sha }}
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          set -euo pipefail
+          # The artifact keeps the files without their common folder, data/cslib.
+          src="$RUNNER_TEMP/data"
+          if (cd "$src" && find . -type f | sed 's|^\./||') | grep -vE '^(deps|library|source)\.json$'; then
+            echo "::error::The data artifact holds the files listed above."
+            exit 1
+          fi
+          for attempt in 1 2 3; do
+            git fetch --quiet origin main
+            git reset --quiet --hard origin/main
+            if ! git diff --quiet "$READ" HEAD -- data/cslib; then
+              echo "::notice::main has changed data/cslib since ${READ:0:8}; that push's run records the data."
+              exit 0
+            fi
+            cp "$src"/*.json data/cslib/
+            uv run --no-dev python tools/generate.py
+            git add -A data/cslib blueprint hooks/lean-links.json
+            if git diff --cached --quiet; then
+              echo "main already has this data."
+              exit 0
+            fi
+            git commit --quiet -m "CSLib data at ${REV:0:8}"
+            if git push --quiet origin HEAD:main; then
+              exit 0
+            fi
+          done
+          exit 1
+
+      - name: Rebuild the site and run the tests
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run pages.yml --ref main -R "$GITHUB_REPOSITORY"
+          gh workflow run tests.yml --ref main -R "$GITHUB_REPOSITORY"

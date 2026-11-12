@@ -17,8 +17,11 @@ from collections import Counter
 from pathlib import Path
 
 from . import leansource
+from .blueprints import Built, escape
 from .ff import is_apache
-from .formal_conjectures import module_name
+from .formal_conjectures import OPAQUE, module_name, quote
+from .mathlib import fence
+from .vault import Container, Entry, Leaf, chunk, slugify
 
 SCHEMA = "trough-cslib/v1"
 REPO = "leanprover/cslib"
@@ -30,8 +33,10 @@ COPYRIGHT = re.compile(r"^Copyright \(c\) \d{4}(?:[-–]\d{4})? (?P<holders>.+?)
 AUTHORS = re.compile(r"^Authors?:[ \t]*(?P<authors>.+(?:\n(?![A-Z][a-z]+:)[ \t]*\S.*)*)", re.M)
 # A section of a README or docstring that says what the library plans, not what it has.
 PLANS = re.compile(r"^(?:plans?|future work|todo|roadmap)\b", re.I)
+PLANNED = re.compile(r"\b(?:plan(?:s|ned)?|placeholder|upstream(?:ing)?)\b", re.I)
 HEADING = re.compile(r"^(#{1,6})[ \t]+(.+?)[ \t]*#*[ \t]*$")
 TODO_LINE = re.compile(r"^[ \t]*(?:[-*][ \t]+)?TODO\b")
+CUT = "\x00"  # where without_plans() cut, until it writes …
 # Definitions whose whole text is shown: their fields or constructors say what they are.
 WHOLE = ("structure", "class", "inductive")
 
@@ -52,16 +57,13 @@ def without_plans(markdown: str) -> str:
             continue
         if heading and PLANS.match(heading.group(2).strip("*_ ")):
             skipping = len(heading.group(1))
-            out.append("…")
-            continue
-        if not fence and TODO_LINE.match(line):
-            out.append("…")
-            continue
-        out.append(line)
-    text = "\n".join(out)
-    # Consecutive cuts are one, and a cut at the end of the text is no mark.
-    text = re.sub(r"…(?:\s*\n\s*…)+", "…", text)
-    return re.sub(r"(?:\s*\n)*\s*…\s*\Z", "", text).strip()
+            out.append(CUT)
+        elif not fence and TODO_LINE.match(line):
+            out.append(CUT)
+        else:
+            out.append(line)
+    # Consecutive cuts are one.
+    return re.sub(rf"{CUT}(?:\s*{CUT})+", CUT, "\n".join(out)).strip().replace(CUT, "…")
 
 
 def header(text: str) -> dict:
@@ -75,10 +77,13 @@ def header(text: str) -> dict:
 
 
 def readme_text(text: str) -> str:
-    """A README's text after its copyright block and title, without its plans."""
+    """A README's opening paragraph after its copyright block and title, which says what the folder holds; nothing
+    when it speaks of plans, as a placeholder for later work does. Its other sections give principles for
+    contributors and plans, and are left out."""
     text = re.sub(r"(?s)\A\s*<pre>.*?</pre>\s*", "", text)
-    text = re.sub(r"\A\s*#[ \t]+[^\n]*\n", "", text)
-    return without_plans(text)
+    text = re.sub(r"\A\s*#[ \t]+[^\n]*\n", "", text).strip()
+    opening = re.split(r"\n\s*\n", text, maxsplit=1)[0].strip()
+    return "" if HEADING.match(opening) or PLANNED.search(opening) else opening
 
 
 def statement_of(text: str, declaration: leansource.Declaration) -> str:
@@ -190,7 +195,8 @@ def read(checkout: Path, paths: list[str]) -> tuple[dict, list[str]]:
     for path in readmes:
         folder = path.removesuffix("/README.md")
         if any(module["file"].startswith(folder + "/") for module in modules):
-            folders[folder] = readme_text((checkout / path).read_text(encoding="utf-8"))
+            if text := readme_text((checkout / path).read_text(encoding="utf-8")):
+                folders[folder] = text
     record = {
         "schema": SCHEMA,
         "readme": readme_description((checkout / "README.md").read_text(encoding="utf-8")),
@@ -214,8 +220,252 @@ def counts(modules: list[dict]) -> Counter:
 
 
 def load(data: Path) -> dict | None:
-    """data/cslib/'s source and library, when both are there."""
-    source, library = data / "cslib" / "source.json", data / "cslib" / "library.json"
+    """data/cslib/'s source and library, when both are there, with the Lean dump's edges when they are of the same
+    commit."""
+    source, library, deps = (data / "cslib" / name for name in ("source.json", "library.json", "deps.json"))
     if not (source.is_file() and library.is_file()):
         return None
-    return json.loads(source.read_text(encoding="utf-8")) | json.loads(library.read_text(encoding="utf-8"))
+    loaded = json.loads(source.read_text(encoding="utf-8")) | json.loads(library.read_text(encoding="utf-8"))
+    dump = json.loads(deps.read_text(encoding="utf-8")) if deps.is_file() else None
+    return loaded | {"deps": dump if dump and dump.get("rev") == loaded["rev"] else None}
+
+
+# The chapter, from the data.
+
+TITLE = "CSLib: the Lean Computer Science Library"
+# The bytes of article Markdown a folder's page folds in before its next article starts a page.
+PAGE_BUDGET = 200_000
+KIND_WORDS = {"theorem": "theorem", "lemma": "lemma", "def": "definition", "abbrev": "abbreviation",
+              "instance": "instance", "structure": "structure", "class": "class", "inductive": "inductive type",
+              "opaque": "opaque constant", "axiom": "axiom", "alias": "alias"}
+
+
+def blob(rev: str, path: str, line: int | None = None) -> str:
+    return f"{GITHUB}/{REPO}/blob/{rev}/{path}" + (f"#L{line}" if line else "")
+
+
+def at(rev: str) -> str:
+    return f"[{rev[:8]}]({GITHUB}/{REPO}/tree/{rev})"
+
+
+def plural(count: int, word: str, words: str | None = None) -> str:
+    return f"{count:,} {word if count == 1 else words or word + 's'}"
+
+
+def listing(parts: list[str]) -> str:
+    return ", ".join(parts[:-1]) + " and " + parts[-1] if len(parts) > 1 else "".join(parts)
+
+
+def title_text(title: str) -> str:
+    """A docstring's title as a page title: Markdown escaped outside its code spans and formulas."""
+    parts, last = [], 0
+    for match in OPAQUE.finditer(title):
+        parts += [escape(title[last:match.start()]), match.group()]
+        last = match.end()
+    return "".join(parts) + escape(title[last:])
+
+
+def stem(module: dict) -> str:
+    return module["file"].rsplit("/", 1)[-1].removesuffix(".lean")
+
+
+def titles(modules: list[dict]) -> dict[str, str]:
+    """Each module's title: its docstring's, with its file name after it where other modules share it, or its file
+    name when its docstring has none."""
+    shared = Counter(module["title"] for module in modules if module["title"])
+    return {module["module"]: (f"{module['title']} ({stem(module)})" if shared[module["title"]] > 1 else module["title"])
+            if module["title"] else stem(module) for module in modules}
+
+
+def declarations(module: dict) -> list[dict]:
+    return [item for item in module["items"] if "name" in item]
+
+
+def block(item: dict, file: str, rev: str) -> str:
+    """A declaration's name, kind and line, its docstring and its Lean statement; or a note the module writes there."""
+    if "note" in item:
+        return quote(item["note"])
+    where = f"[line {item['line']}]({blob(rev, file, item['line'])})"
+    head = f"`{item['name']}` ({KIND_WORDS.get(item['kind'], item['kind'])}, {where})"
+    if item["sorry"]:
+        head += ". Its value holds `sorry`."
+    return "\n\n".join([head] + ([quote(item["doc"])] if item["doc"] else []) + [fence(item["statement"])])
+
+
+def article(module: dict, title: str, rev: str, links: dict[str, str]) -> Leaf:
+    """A module's article: where it is and who wrote it, its docstring, and a block per public declaration and per
+    later note, in file order."""
+    names = [item["name"] for item in declarations(module)]
+    authors = module["authors"] or module["copyright"]
+    opening = f"`{module['module']}`, in [{module['file']}]({blob(rev, module['file'])})" + (f", by {authors}." if authors else ".")
+    if not names:
+        opening += " It declares nothing public by name."
+    parts = [opening] + ([quote(module["doc"])] if module["doc"] else [])
+    parts += [block(item, module["file"], rev) for item in module["items"]]
+    fields = [("catalog", "module")]
+    if names:
+        fields += [("lean", ", ".join(names)), ("statement", "formalized")]
+        if not any(item["sorry"] for item in declarations(module)):
+            fields.append(("proof", "formalized"))
+    for item in declarations(module):
+        links.setdefault(item["name"], blob(rev, module["file"], item["line"]))
+    leaf = Leaf(title_text(title), slugify(stem(module)), fields, "\n\n".join(parts))
+    leaf.sources = [(f"{module['file']} at {rev[:8]}", blob(rev, module["file"]))]
+    return leaf
+
+
+def tree(modules: list[dict]) -> dict:
+    """The folders under Cslib/ as nested {"modules", "folders"}, by name."""
+    root: dict = {"modules": [], "folders": {}}
+    for module in modules:
+        node = root
+        for part in module["file"].split("/")[1:-1]:
+            node = node["folders"].setdefault(part, {"modules": [], "folders": {}})
+        node["modules"].append(module)
+    return root
+
+
+def every(node: dict) -> list[dict]:
+    return node["modules"] + [module for child in node["folders"].values() for module in every(child)]
+
+
+def credit(rev: str) -> str:
+    return (f"The docstrings, Lean statements and README text are quoted from [{REPO}]({GITHUB}/{REPO}) at commit "
+            f"{at(rev)}, under its Apache-2.0 license.")
+
+
+def chapter(data: dict) -> tuple[Built, dict[str, str]]:
+    """The chapter's root, with its articles and counts, and each declaration's source line (for
+    hooks/lean-links.json). A part per area, a page per folder below it and an article per module."""
+    rev, modules = data["rev"], data["modules"]
+    named = titles(modules)
+    stats: Counter = Counter()
+    targets: dict[str, Leaf | Container] = {}
+    links: dict[str, str] = {}
+    leaves: dict[str, Leaf] = {}
+
+    def build(name: str, node: dict, path: str, part: bool) -> Container:
+        entries = []
+        # By name, as Cslib.lean imports them, a module before the folder of the same name.
+        children = sorted([(stem(module), 0, module) for module in node["modules"]]
+                          + [(folder, 1, child) for folder, child in node["folders"].items()], key=lambda row: row[:2])
+        for child_name, is_folder, child in children:
+            if is_folder:
+                entries.append(Entry(build(child_name, child, f"{path}/{child_name}", False)))
+            else:
+                leaf = article(child, named[child["module"]], rev, links)
+                leaves[child["module"]] = leaf
+                targets[f"cslib-{child['module']}"] = leaf
+                stats["articles"] += 1
+                entries.append(Entry(leaf))
+        container = Container(escape(name), slugify(name), entries)
+        inside = every(node)
+        tally = counts(inside)
+        lines = [f"{plural(len(inside), 'module')} under `{path}/`, with {plural(tally['declarations'], 'public declaration')}."]
+        if path in data["folders"]:
+            lines.append(f"Its README opens:\n\n{quote(data['folders'][path])}")
+        if part:
+            lines.append(credit(rev))
+        container.prose = "\n\n".join(lines)
+        targets[f"cslib-{path}"] = container
+        stats["folders"] += 1
+        return chunk(container, budget=PAGE_BUDGET)
+
+    top = tree(modules)
+    parts = [Entry(build(name, child, f"{LIBRARY}/{name}", True)) for name, child in sorted(top["folders"].items())]
+    stats["parts"] = len(parts)
+    for module in top["modules"]:
+        leaf = article(module, named[module["module"]], rev, links)
+        leaves[module["module"]] = leaf
+        targets[f"cslib-{module['module']}"] = leaf
+        stats["articles"] += 1
+        parts.append(Entry(leaf))
+    edges(data, leaves, stats)
+    stats.update(counts(modules))
+    root = Container(TITLE, "cslib", parts)
+    root.prose = intro(data, stats)
+    return Built(root, targets, {}, dict(stats), Counter()), dict(sorted(links.items()))
+
+
+def edges(data: dict, leaves: dict[str, Leaf], stats: Counter) -> None:
+    """Each article's edges from the Lean dump, when there is one: the modules whose declarations its statements use
+    under "Depends on", and those only its proofs use under "Proof depends on". A statement dependency already
+    reached through another statement dependency, or a proof dependency reached through any other dependency, is
+    left out."""
+    if data.get("deps") is None:
+        for leaf in leaves.values():
+            leaf.no_depends = "No dependencies are recorded: the Lean dump that gives them has not been read."
+        return
+    deps = data["deps"].get("modules", {})
+    stmt = {module: set(deps.get(module, {}).get("statement", [])) & leaves.keys() - {module} for module in leaves}
+    proof = {module: set(deps.get(module, {}).get("proof", [])) & leaves.keys() - {module} - stmt[module]
+             for module in leaves}
+    reach_stmt: dict[str, set[str]] = {}
+    reach_all: dict[str, set[str]] = {}
+
+    def walk_from(module: str) -> None:
+        # Modules import one another without cycles, so a depth-first walk ends; each set is its node's closure.
+        stack = [(module, False)]
+        while stack:
+            node, done = stack.pop()
+            if node in reach_all:
+                continue
+            if done:
+                reach_stmt[node] = set().union(*(reach_stmt[child] | {child} for child in stmt[node]))
+                reach_all[node] = set().union(*(reach_all[child] | {child} for child in stmt[node] | proof[node]))
+                continue
+            stack.append((node, True))
+            stack.extend((child, False) for child in stmt[node] | proof[node] if child not in reach_all)
+
+    for module in sorted(leaves):
+        walk_from(module)
+    for module, leaf in leaves.items():
+        kept_stmt = {child for child in stmt[module]
+                     if not any(child in reach_stmt[other] for other in stmt[module] - {child})}
+        kept_proof = {child for child in proof[module]
+                      if not any(child in reach_all[other] for other in (stmt[module] | proof[module]) - {child})}
+        leaf.depends = [leaves[child] for child in sorted(kept_stmt)]
+        leaf.proof_depends = [leaves[child] for child in sorted(kept_proof)]
+        leaf.no_depends = "Its statements use no other CSLib module's declarations."
+        stats["statement_edges"] += len(leaf.depends)
+        stats["proof_edges"] += len(leaf.proof_depends)
+
+
+def intro(data: dict, stats: Counter) -> str:
+    rev = data["rev"]
+    roles = [f"{listing(role['names'])} as {role['role'][0].lower() + role['role'][1:]}" for role in data["maintainers"]]
+    theorems = stats["theorem"] + stats["lemma"]
+    definitions = sum(stats[kind] for kind in ("def", "abbrev", "structure", "class", "inductive", "opaque"))
+    others = stats["declarations"] - theorems - definitions
+    empty = sum(1 for module in data["modules"] if not declarations(module))
+    deps = data.get("deps")
+    edges_text = (
+        "Edges come from Lean: a GitHub Actions run builds CSLib at this commit and reads, for each module, which "
+        "other modules' declarations its own use. “Depends on” lists the modules its statements use, the types of its "
+        "declarations and the values of its definitions, and “Proof depends on” those only its proofs use; a "
+        f"dependency reached through another is left out. That gives {plural(stats['statement_edges'], 'statement edge')} "
+        f"and {plural(stats['proof_edges'], 'proof edge')}." if deps else
+        "The articles have no edges yet: they come from a Lean run over CSLib, which this commit has not had.")
+    return "\n\n".join(part for part in [
+        f"[{REPO}]({GITHUB}/{REPO}), the Lean Computer Science Library, says in its README:",
+        quote("\n\n".join(data["readme"])),
+        f"Its GOVERNANCE.md names {listing(roles)}." if roles else "",
+        f"This chapter maps CSLib at commit {at(rev)} ({data['date'][:10]}), the newest commit of its main branch whose "
+        f"CI passed, with Lean toolchain {data['toolchain']} and Mathlib {data['mathlib'][:8]}. Its "
+        f"{plural(stats['articles'], 'module')} under `{LIBRARY}/` have an article each, in a part per folder of "
+        f"`{LIBRARY}/` and a page per folder below, with {plural(stats['declarations'], 'public declaration')}: "
+        + listing([plural(count, word, words) for count, word, words in (
+            (theorems, "theorem", None), (definitions, "definition", None),
+            (others, "instance or alias", "instances and aliases")) if count])
+        + f"; {stats['documented']:,} have a docstring"
+        + (f", and {plural(empty, 'module declares', 'modules declare')} nothing public by name." if empty else "."),
+        "An article is titled by its module docstring's title, and gives the module's authors as its header names "
+        "them, the docstring, and a block per public declaration in file order: its docstring and its Lean "
+        "statement, the text up to the `:=` or `where` that starts its value, or the whole text of a structure, "
+        "class or inductive type. The module's later `/-!` notes stand where it writes them. These are read from the "
+        "source text, without Lean; private declarations and unnamed instances are left out, and so are sections on "
+        "plans or TODOs and lines that start with TODO, each cut marked …"
+        + ("" if stats["sorry"] else ". No declaration's value holds `sorry`."),
+        edges_text,
+        credit(rev),
+    ] if part)
