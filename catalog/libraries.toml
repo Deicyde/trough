@@ -290,9 +290,9 @@ mathlib = "d13f23b723b8"
 lean_files = 163097
 head = "4eaee8754825"
 head_date = "2026-10-30"
-map_status = "planned"
+map_status = "live"
 map_unit = "result family"
-map_plan = "One article per result family in CONTENTS.md, joined to the 208 formalization.yaml main results."
+map_plan = "One article per result family of CONTENTS.md, in a part per subject of overview.tex, with a block per manuscript and, for a family with Lean, a block per result its Lean page links: the statement as the statement file writes it and the line where the repository's Lean proves it."
 
 [[library]]
 id = "cfsg"
