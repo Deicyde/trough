@@ -20,8 +20,8 @@ Theories, Strong PNT and PNT+), the Formal Frontier libraries from their
 headline results, Formal Conjectures from its problem files, Lean Pool from
 its project cards, Anthropic's FLT from the landmark theorems of its proof,
 Axiom's CFSG from its proof's case division and its milestones, Axiom's
-Stacks Project formalization from its Stacks tags, and ATLAS from the topics
-of its vault.
+Stacks Project formalization from its Stacks tags, ATLAS from the topics
+of its vault, and CSLib from its modules.
 
 ## The Mathlib map
 
@@ -496,6 +496,49 @@ non-commercial license and is not read.
    a link annotation does not read, or when the results drop under half the
    last record's.
 
+## The CSLib chapter
+
+[CSLib](https://github.com/leanprover/cslib), the Lean Computer Science
+Library, keeps its Lean in a folder per area under `Cslib/` (Foundations,
+Computability, Languages, Logics, Algorithms, Crypto and smaller ones) and
+documents each module as Mathlib does: a module docstring with a title, its
+main definitions and statements, and a docstring on each definition. The
+chapter has a part per area, a page per folder below it and an article per
+module, titled by its module docstring's title, with the module's file name
+after it where other modules share the title. An article names the authors the
+file's header gives, quotes the module docstring and has a block per public
+declaration in file order: its kind and line at the pin, its docstring and its
+Lean statement, or the whole text of a structure, class or inductive type. The
+module's later `/-!` notes stand where it writes them. A folder's page quotes
+the opening paragraph of its README, the folder's description; the READMEs'
+principles for contributors and their plans are left out, and so are a
+docstring's sections on plans or TODOs and its lines that start with TODO, each
+cut marked with …. An edge means that a module's declarations use another
+module's: "Depends on" lists the modules its statements use, the types of its
+declarations and the values of its definitions, and "Proof depends on" those
+only its proofs use; a dependency reached through another is left out.
+
+1. `tools/refresh_cslib.py CHECKOUT` reads a checkout and writes
+   `data/cslib/source.json`, the commit, its date, toolchain and Mathlib, and
+   `library.json`: each module's title, docstrings, authors and public
+   declarations, read with `tools/trough/leansource.py` as for Formal
+   Conjectures, private declarations and unnamed instances left out; the
+   opening of each folder's README, unless it speaks of plans; the README's
+   description; and the maintainers GOVERNANCE.md names.
+2. The **CSLib data** workflow (`.github/workflows/cslib-data.yml`) fetches
+   CSLib at the commit `source.json` pins, runs the refresh, builds CSLib on
+   Mathlib's cache and runs `lean/cslib/CslibDeps.lean` below an
+   import of every module, which writes `data/cslib/deps.json`: for each module,
+   the other modules whose declarations its statements use and those only its
+   proofs use, where what Lean generates for a declaration, and private helpers,
+   serve its proofs. Then it regenerates the pages and runs the tests; on a pull
+   request it fails when the committed data differ from what the pin gives. The
+   weekly run, or a dispatch with `newest`, moves the pin to the newest main
+   commit whose CI passed. A refresh writes nothing, and the workflow fails,
+   when the repository is not Apache-2.0, a file the commit lists under
+   `Cslib/` is not checked out, a module's scopes don't close, or the
+   declarations drop under half the last record's.
+
 ## Working on it
 
     uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
@@ -583,3 +626,6 @@ Free Documentation License, whose text is otherwise not copied.
 The statements, titles and prose in `data/atlas/` come from ATLAS's vault on
 [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean), Apache-2.0; its
 LICENSE adds that the code is not meant for training models.
+The docstrings, Lean statements and README text in `data/cslib/` come from
+[CSLib](https://github.com/leanprover/cslib), Apache-2.0; each article names its
+module's authors as the file's header does.

@@ -101,7 +101,7 @@ def whole(text: str, line: int, header_only: bool = False) -> str:
     lines = leansource.blank_attributes(leansource.blank(text)).split("\n")
     source = text.split("\n")
     column = len(lines[line - 1]) - len(lines[line - 1].lstrip())
-    kept = [source[line - 1][column:]]
+    end = line
     for number in range(line, len(lines)):
         code = lines[number]
         stripped = code.strip()
@@ -109,8 +109,10 @@ def whole(text: str, line: int, header_only: bool = False) -> str:
             break
         if stripped and len(code) - len(code.lstrip()) <= column and not stripped.startswith("deriving"):
             break
-        kept.append(source[number])
-    return leansource.dedent("\n".join(kept).rstrip(), column)
+        if stripped:
+            end = number + 1
+    # It ends at its last line of code: a comment or docstring after it belongs to what follows.
+    return leansource.dedent("\n".join([source[line - 1][column:]] + source[line:end]).rstrip(), column)
 
 
 def read_module(text: str, path: str) -> dict:
@@ -272,9 +274,11 @@ def stem(module: dict) -> str:
 def titles(modules: list[dict]) -> dict[str, str]:
     """Each module's title: its docstring's, with its file name after it where other modules share it, or its file
     name when its docstring has none."""
-    shared = Counter(module["title"] for module in modules if module["title"])
-    return {module["module"]: (f"{module['title']} ({stem(module)})" if shared[module["title"]] > 1 else module["title"])
-            if module["title"] else stem(module) for module in modules}
+    # A title is a heading, so a full stop that ends it as a sentence goes.
+    plain = {module["module"]: re.sub(r"(?<!\.)\.$", "", module["title"]) for module in modules}
+    shared = Counter(title for title in plain.values() if title)
+    return {module: (f"{title} ({stem(by_name)})" if shared[title] > 1 else title) if title else stem(by_name)
+            for (module, title), by_name in zip(plain.items(), modules)}
 
 
 def declarations(module: dict) -> list[dict]:
@@ -451,21 +455,20 @@ def intro(data: dict, stats: Counter) -> str:
         quote("\n\n".join(data["readme"])),
         f"Its GOVERNANCE.md names {listing(roles)}." if roles else "",
         f"This chapter maps CSLib at commit {at(rev)} ({data['date'][:10]}), the newest commit of its main branch whose "
-        f"CI passed, with Lean toolchain {data['toolchain']} and Mathlib {data['mathlib'][:8]}. Its "
-        f"{plural(stats['articles'], 'module')} under `{LIBRARY}/` have an article each, in a part per folder of "
-        f"`{LIBRARY}/` and a page per folder below, with {plural(stats['declarations'], 'public declaration')}: "
+        f"CI passed, with Lean toolchain {data['toolchain']} and Mathlib {data['mathlib'][:8]}. It has an article for "
+        f"each of the {plural(stats['articles'], 'module')} under `{LIBRARY}/`, in a part per folder of `{LIBRARY}/` and "
+        f"a page per folder below. They hold {plural(stats['declarations'], 'public declaration')}, "
         + listing([plural(count, word, words) for count, word, words in (
             (theorems, "theorem", None), (definitions, "definition", None),
             (others, "instance or alias", "instances and aliases")) if count])
-        + f"; {stats['documented']:,} have a docstring"
-        + (f", and {plural(empty, 'module declares', 'modules declare')} nothing public by name." if empty else "."),
-        "An article is titled by its module docstring's title, and gives the module's authors as its header names "
-        "them, the docstring, and a block per public declaration in file order: its docstring and its Lean "
-        "statement, the text up to the `:=` or `where` that starts its value, or the whole text of a structure, "
-        "class or inductive type. The module's later `/-!` notes stand where it writes them. These are read from the "
-        "source text, without Lean; private declarations and unnamed instances are left out, and so are sections on "
-        "plans or TODOs and lines that start with TODO, each cut marked …"
-        + ("" if stats["sorry"] else ". No declaration's value holds `sorry`."),
+        + f", {stats['documented']:,} of them with a docstring"
+        + (f"; {plural(empty, 'module declares', 'modules declare')} nothing public by name." if empty else "."),
+        "An article is titled by its module docstring and gives the module's authors as its header names them, its "
+        "docstrings, and a block per public declaration in file order with its Lean statement: the text up to the `:=` "
+        "or `where` that starts its value, or the whole text of a structure, class or inductive type. These are read "
+        "from the source text, without Lean. Private declarations and unnamed instances are left out, and so are "
+        "docstring sections on plans or TODOs and lines that start with TODO; an ellipsis marks each cut."
+        + ("" if stats["sorry"] else " No declaration's value holds `sorry`."),
         edges_text,
         credit(rev),
     ] if part)

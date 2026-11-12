@@ -123,6 +123,8 @@ inductive Term where
   | var : Nat → Term
   | app : Term → Term → Term
   deriving DecidableEq
+/-- Application. -/
+def app : Term → Term → Term := Term.app
 
 end Cslib.LambdaCalculus
 """
@@ -211,7 +213,8 @@ FILES = {
     "Cslib/Foundations/Semantics/LTS/Basic.lean": LTS,
     "Cslib/Foundations/Semantics/LTS/Bisimulation.lean": BISIMULATION,
     "Cslib/Languages/LambdaCalculus/Named.lean": LAMBDA,
-    "Cslib/Languages/LambdaCalculus/LocallyNameless.lean": LAMBDA.replace("The untyped", "The locally nameless"),
+    "Cslib/Languages/LambdaCalculus/LocallyNameless.lean": LAMBDA.replace("The untyped", "The locally nameless").replace(
+        "Cslib.LambdaCalculus", "Cslib.LambdaCalculus.LocallyNameless"),
     "Cslib/Languages/Mech/Basic.lean": LAMBDA.replace("# λ-calculus", "# Mech").replace("LambdaCalculus", "Mech"),
     "Cslib/Init.lean": INIT,
     "Cslib/Foundations/README.md": FOUNDATIONS_README,
@@ -322,8 +325,8 @@ def test_the_refresh_writes_the_source_and_the_library(tmp_path):
     assert record["folders"] == {"Cslib/Foundations": "This directory covers **common foundations** for the rest of CSLib."}
     assert record["readme"][0] == "The Lean library for Computer Science."
     assert record["maintainers"][0] == {"role": "Lead maintainer", "names": ["Fabrizio Montesi"]}
-    assert cslib.counts(record["modules"]) == {"declarations": 9, "structure": 1, "def": 3, "theorem": 2, "inductive": 3,
-                                               "documented": 7, "sorry": 1}
+    assert cslib.counts(record["modules"]) == {"declarations": 12, "structure": 1, "def": 6, "theorem": 2, "inductive": 3,
+                                               "documented": 10, "sorry": 1}
 
 
 def test_the_refresh_writes_nothing_from_a_checkout_it_cannot_read_in_full(tmp_path):
@@ -346,10 +349,10 @@ def test_the_refresh_refuses_a_record_that_reads_under_half_the_last_declaration
     out = tmp_path / "out"
     out.mkdir()
     last = {"modules": [{"items": [{"name": f"x{index}", "kind": "theorem", "doc": "", "sorry": False}
-                                   for index in range(19)]}]}
+                                   for index in range(25)]}]}
     (out / "library.json").write_text(json.dumps(last), encoding="utf-8")
     assert refresh_cslib.refresh(checkout(tmp_path / "cslib"), out) == [
-        "reads 9 declarations, under half the 19 the last record read"]
+        "reads 12 declarations, under half the 25 the last record read"]
     assert json.loads((out / "library.json").read_text(encoding="utf-8")) == last
     assert not (out / "source.json").exists()
 
@@ -390,7 +393,7 @@ def test_the_chapter_has_a_part_per_area_a_page_per_folder_and_an_article_per_mo
     assert f"at commit [{rev[:8]}](https://github.com/leanprover/cslib/tree/{rev})" in foundations
     assert "commit" not in pages["foundations/semantics/README.md"]
     assert links["Cslib.LTS.terminal_iff"] == f"https://github.com/leanprover/cslib/blob/{rev}/Cslib/Foundations/Semantics/LTS/Basic.lean#L48"
-    assert len(links) == 9
+    assert len(links) == 12
 
 
 def test_an_article_shows_its_module_its_authors_its_docstring_and_a_block_per_declaration(tmp_path):
@@ -421,6 +424,10 @@ def test_titles_shared_by_modules_take_their_file_names(tmp_path):
     assert "# λ-calculus (Named)\n" in pages["languages/lambdacalculus/named.md"]
     assert "# λ-calculus (LocallyNameless)\n" in pages["languages/lambdacalculus/locallynameless.md"]
     assert "# Mech\n" in pages["languages/mech/basic.md"]
+    # A full stop that ends a title goes; an ellipsis stays.
+    assert cslib.titles([{"module": "A", "title": "Total LTS.", "file": "Cslib/A.lean"},
+                         {"module": "B", "title": "And so on...", "file": "Cslib/B.lean"}]) == {
+        "A": "Total LTS", "B": "And so on..."}
 
 
 def test_edges_come_from_the_dump_reduced(tmp_path):
@@ -462,8 +469,9 @@ def test_the_front_page_quotes_the_readme_names_the_maintainers_and_gives_the_co
     assert "> The Lean library for Computer Science.\n>\n> CSLib aims at formalising" in root
     assert "Its GOVERNANCE.md names Fabrizio Montesi as lead maintainer and Ching-Tsun Chou and Chris Henson as area " \
            "maintainers." in root
-    assert ("Its 6 modules under `Cslib/` have an article each, in a part per folder of `Cslib/` and a page per folder "
-            "below, with 9 public declarations: 2 theorems and 7 definitions; 7 have a docstring, and 1 module declares nothing public by name.") in root
+    assert ("It has an article for each of the 6 modules under `Cslib/`, in a part per folder of `Cslib/` and a page "
+            "per folder below. They hold 12 public declarations, 2 theorems and 10 definitions, 10 of them with a "
+            "docstring; 1 module declares nothing public by name.") in root
     assert "Aims" not in root and "Offer APIs" not in root
 
 
