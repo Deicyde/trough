@@ -19,6 +19,7 @@ on:
       - ".github/autoform-ref"
       - ".github/workflows/pages.yml"
       - "wrangler.jsonc"
+      - "worker.js"
   # Every pull request runs, so the site job can be a required check. One that
   # changes none of the paths above skips the build; see the pick job.
   pull_request:
@@ -85,7 +86,7 @@ jobs:
           git -c core.quotePath=false diff --no-renames --name-only "$BASE" HEAD > "$RUNNER_TEMP/changed"
           if grep -qE \
             -e '^(blueprint|catalog|data|tools|scripts|theme|hooks|wiki)/' \
-            -e '^(mkdocs\.yml|pyproject\.toml|uv\.lock|wrangler\.jsonc)$' \
+            -e '^(mkdocs\.yml|pyproject\.toml|uv\.lock|wrangler\.jsonc|worker\.js)$' \
             -e '^\.github/(autoform-ref|workflows/pages\.yml)$' \
             "$RUNNER_TEMP/changed"; then
             echo "skip=false" >> "$GITHUB_OUTPUT"
@@ -186,10 +187,10 @@ jobs:
           [ "$PICK" = success ] && { [ "$BUILD" = success ] || [ "$BUILD" = skipped ]; }
 
   # The site's home, trough.jackmccarthy.org: a Cloudflare Worker that serves
-  # site/ (wrangler.jsonc). A deploy uploads only new or changed files, so it
-  # has no limit like GitHub Pages' 10 minutes per deployment and 1 GB per site.
-  # It needs the CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID secrets. The old
-  # address redirects here (redirect.yml).
+  # site/ (wrangler.jsonc, worker.js). A deploy uploads only new or changed
+  # files, so it has no limit like GitHub Pages' 10 minutes per deployment and
+  # 1 GB per site. It needs the CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID
+  # secrets. The old address redirects here (redirect.yml).
   cloudflare:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: build

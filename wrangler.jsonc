@@ -1,16 +1,19 @@
-// The site's home: a Cloudflare Worker that only serves the files mkdocs builds
-// into site/, as WikiLean's Worker serves its own. A deploy uploads only the
-// files that changed. The Pages workflow's cloudflare job deploys it from main.
+// The site's home: a Cloudflare Worker that serves the files mkdocs builds into
+// site/, as WikiLean's Worker serves its own. A deploy uploads only the files
+// that changed. The Pages workflow's cloudflare job deploys it from main.
 {
   "name": "trough",
+  "main": "worker.js",
   "compatibility_date": "2026-11-11",
   "assets": {
     "directory": "./site",
-    // A folder's index.html is served at the folder with a trailing slash, so
-    // the site's relative links resolve as they did on GitHub Pages; foo.html
-    // is served at /foo.
-    "html_handling": "auto-trailing-slash",
-    "not_found_handling": "404-page"
+    "binding": "ASSETS",
+    // Every file is served exactly at its own address, foo.html at /foo.html, as
+    // GitHub Pages served it. AutoformBot's reader fetches an article's .html
+    // address and checks the page's own link against the address it got, so the
+    // default redirect from /foo.html to /foo made it report a loop. An address
+    // that names no file, such as a folder's, goes to worker.js.
+    "html_handling": "none"
   },
   "routes": [{ "pattern": "trough.jackmccarthy.org", "custom_domain": true }],
   "workers_dev": false,
