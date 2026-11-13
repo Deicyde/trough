@@ -11,7 +11,7 @@ Modules in [OneDimension/](https://github.com/leanprover-community/physlib/tree/
 - [Hilbert space for one dimension quantum mechanics](onedimension-basic.md)
 - [Gaussians and the hilbert space](onedimension-gaussians.md)
 - [Plane waves](onedimension-planewaves.md)
-- [Position states](onedimension-positionstates.md)
+- [Position states (OneDimension/PositionStates)](onedimension-positionstates.md)
 - [Schwartz submodule of the Hilbert space](onedimension-schwartzsubmodule.md)
 - [SpaceD](spaced/README.md)
 - [TensorProducts](tensorproducts/README.md)

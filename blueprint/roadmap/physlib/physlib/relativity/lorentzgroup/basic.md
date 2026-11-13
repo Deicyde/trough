@@ -330,7 +330,13 @@ instance : IsTopologicalGroup (LorentzGroup d)
 > embedding into the ambient matrix space (`isClosedEmbedding_val`) to the level of the general
 > linear group, and is the structural prerequisite for a Lie group structure on the Lorentz group.
 >
-> …
+> The remaining step of that plan, endowing `LorentzGroup d` with a Lie group structure as a closed
+> subgroup of the Lie group `GL (Fin 1 ⊕ Fin d) ℝ` and thereby deriving its Lie algebra, needs the
+> closed subgroup theorem (Cartan's theorem: a closed subgroup of a Lie group is an embedded Lie
+> subgroup). That theorem is not yet available in Mathlib: there is no `LieSubgroup`, and no
+> `ChartedSpace`/`IsManifold` instance is produced from a closed embedding (only
+> `IsOpenEmbedding.singletonChartedSpace`, for open embeddings). The Lie group instance and the
+> Lorentz algebra therefore remain open; …
 
 **`LorentzGroup.range_toGL`**, a lemma, [line 364](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/LorentzGroup/Basic.lean#L364).
 

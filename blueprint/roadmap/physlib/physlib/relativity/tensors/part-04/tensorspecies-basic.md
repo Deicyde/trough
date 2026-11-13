@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Tensor species
+# Tensor species (Basic)
 
 The module `Physlib.Relativity.Tensors.TensorSpecies.Basic`, [Physlib/Relativity/Tensors/TensorSpecies/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/TensorSpecies/Basic.lean): 17 declarations, 11 with a docstring.
 

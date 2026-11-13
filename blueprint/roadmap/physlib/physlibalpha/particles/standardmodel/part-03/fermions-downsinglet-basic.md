@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Down-type singlets
+# Down-type singlets (PhyslibAlpha)
 
 The module `PhyslibAlpha.Particles.StandardModel.Fermions.DownSinglet.Basic`, [PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean): 24 declarations (2 instances with no name), 22 with a docstring.
 
@@ -364,7 +364,7 @@ lemma downSinglet_repLorentzGroup_boostAxis_two_basis (t : ℝ) (ht : t ≠ 0)
 
 ## Depends on
 
-- [Down-type singlets](../../../../physlib/particles/standardmodel/fermions-downsinglet.md)
+- [Down-type singlets (Physlib)](../../../../physlib/particles/standardmodel/fermions-downsinglet.md)
 - [Gauge weight decompositions](../part-04/gaugegroup-gaugeweight.md)
 - [The jet gauge group](../part-04/gaugegroup-jetgaugegroup-basic.md)
 - [The boost weights of a Weyl spinor](../../../relativity/fermions/weyl-boostweight.md)

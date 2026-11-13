@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The metric space of states
+# The metric space of states (PhyslibAlpha)
 
 The module `PhyslibAlpha.ProbabilisticTheory.State.Metric`, [PhyslibAlpha/ProbabilisticTheory/State/Metric.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Metric.lean): 18 declarations (2 instances with no name), 12 with a docstring.
 
@@ -181,7 +181,7 @@ lemma lipschitzWith_distToPure : LipschitzWith 1 (distToPure (E := E))
 ## Depends on
 
 - [The metric space of effects](../../../physlib/probabilistictheory/effect/metric.md)
-- [Convex state spaces](convex.md)
+- [Convex state spaces (PhyslibAlpha)](convex.md)
 
 ## Sources
 

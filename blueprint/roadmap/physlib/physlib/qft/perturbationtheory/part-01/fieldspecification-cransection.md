@@ -421,7 +421,7 @@ lemma sum_eraseIdxEquiv (n : ℕ) (φs : List 𝓕.FieldOp) (hn : n < φs.length
 
 ## Proof depends on
 
-- [List lemmas](../../../mathematics/formathlib/list.md)
+- [List lemmas (List)](../../../mathematics/formathlib/list.md)
 
 ## Sources
 

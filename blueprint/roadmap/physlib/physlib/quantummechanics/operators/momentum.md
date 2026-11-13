@@ -134,7 +134,7 @@ lemma momentumSqOperator_domain_eq : momentumSqOperator.domain = SchwartzSubmodu
 ## Depends on
 
 - [Schwartz submodule](../hilbertspaces/spaced/schwartzsubmodule.md)
-- [Unbounded operators](unbounded.md)
+- [Unbounded operators (Operators/Unbounded)](unbounded.md)
 - [Planck's constant](../planckconstant.md)
 - [Derivatives on Space](../../spaceandtime/space/part-01/derivatives-basic.md)
 

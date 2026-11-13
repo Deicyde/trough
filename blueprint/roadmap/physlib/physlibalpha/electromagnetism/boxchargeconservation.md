@@ -197,7 +197,7 @@ lemma boxOutwardCurrent_eq_zero_of_steady (t : Time) (a b : Fin 3 → ℝ) (hle 
 
 ## Depends on
 
-- [Extrema of the Lagrangian density](../../physlib/electromagnetism/dynamics/isextrema.md)
+- [Extrema of the Lagrangian density (Electromagnetism/Dynamics/IsExtrema)](../../physlib/electromagnetism/dynamics/isextrema.md)
 
 ## Proof depends on
 

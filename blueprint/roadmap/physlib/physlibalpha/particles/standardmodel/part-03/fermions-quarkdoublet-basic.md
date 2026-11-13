@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The type corresponding to quark doublets
+# The type corresponding to quark doublets (PhyslibAlpha)
 
 The module `PhyslibAlpha.Particles.StandardModel.Fermions.QuarkDoublet.Basic`, [PhyslibAlpha/Particles/StandardModel/Fermions/QuarkDoublet/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/QuarkDoublet/Basic.lean): 30 declarations (2 instances with no name), 25 with a docstring.
 
@@ -384,7 +384,7 @@ lemma quarkDoublet_repLorentzGroup_boostAxis_two_basis (t : ℝ) (ht : t ≠ 0)
 
 ## Depends on
 
-- [The type corresponding to quark doublets](../../../../physlib/particles/standardmodel/fermions-quarkdoublet.md)
+- [The type corresponding to quark doublets (Physlib)](../../../../physlib/particles/standardmodel/fermions-quarkdoublet.md)
 - [Gauge weight decompositions](../part-04/gaugegroup-gaugeweight.md)
 - [The jet gauge group](../part-04/gaugegroup-jetgaugegroup-basic.md)
 - [The boost weights of a Weyl spinor](../../../relativity/fermions/weyl-boostweight.md)

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Time contractions
+# Time contractions (StaticContract)
 
 The module `Physlib.QFT.PerturbationTheory.WickContraction.StaticContract`, [Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean): 5 declarations, 3 with a docstring.
 

@@ -7,7 +7,7 @@ The folder [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/](https://github.co
 - [Jordan order-unit spaces](part-01/basic.md)
 - [Compatible observables](part-01/compatibility.md)
 - [Conditioning a state on a projection](part-01/conditioning.md)
-- [Covariance](part-01/covariance.md)
+- [Covariance (PhyslibAlpha)](part-01/covariance.md)
 - [Trace and determinant of finite-rank Jordan algebras](part-01/finiterank.md)
 - [Jordan homomorphisms](part-01/hom.md)
 - [Lüders operations](part-01/lueders.md)

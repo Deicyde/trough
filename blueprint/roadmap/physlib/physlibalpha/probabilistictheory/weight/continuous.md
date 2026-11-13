@@ -76,7 +76,7 @@ lemma toOrderUnitContinuousLinearMap_apply_of_nonneg {w : Weight E} (hw : w.IsFi
 ## Depends on
 
 - [The canonical normed copy of an order-unit space](../orderunit/normed.md)
-- [Extending finite weights](extension.md)
+- [Extending finite weights (PhyslibAlpha)](extension.md)
 
 ## Sources
 

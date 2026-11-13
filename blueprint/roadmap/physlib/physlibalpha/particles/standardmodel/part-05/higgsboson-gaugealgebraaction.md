@@ -231,7 +231,7 @@ lemma gaugeAlgebraAction_comm_repLorentz (c : GaugeAlgebra) (Λ : SL(2,ℂ)) (v 
 ## Depends on
 
 - [The Standard Model gauge group as local gauge data](../part-04/gaugegroup-localgaugedata.md)
-- [The jet algebra of the Higgs field](higgsboson-jetalgebra-basic.md)
+- [The jet algebra of the Higgs field (Basic)](higgsboson-jetalgebra-basic.md)
 
 ## Sources
 

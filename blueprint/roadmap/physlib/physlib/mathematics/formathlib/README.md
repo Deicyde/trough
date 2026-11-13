@@ -9,7 +9,7 @@ The folder [Physlib/Mathematics/ForMathlib/](https://github.com/leanprover-commu
 - [Functions of temperate growth](hastemperategrowth.md)
 - [Linear maps](linearmaps.md)
 - [LinearPMap](linearpmap.md)
-- [List lemmas](list.md)
+- [List lemmas (List)](list.md)
 - [Orthogonal matrices and the dot product](orthogonalmatrix.md)
 - [Schur triangulation](schurtriangulation.md)
 - [Positive-definite sesquilinear forms](sesquilinearform.md)
@@ -28,8 +28,8 @@ Modules in [Integration/](https://github.com/leanprover-community/physlib/tree/2
 
 Modules in [List/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/ForMathlib/List):
 
-- [List lemmas](list-insertidx.md)
-- [List lemmas](list-insertionsort.md)
+- [List lemmas (InsertIdx)](list-insertidx.md)
+- [List lemmas (InsertionSort)](list-insertionsort.md)
 
 Modules in [OneParameterSubgroups/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/ForMathlib/OneParameterSubgroups):
 

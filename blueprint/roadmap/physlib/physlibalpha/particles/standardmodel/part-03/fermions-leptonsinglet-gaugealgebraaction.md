@@ -179,7 +179,7 @@ lemma gaugeAlgebraAction_comm_repLorentzGroup (c : GaugeAlgebra) (Λ : SL(2,ℂ)
 
 ## Depends on
 
-- [Charged-lepton singlets](fermions-leptonsinglet-basic.md)
+- [Charged-lepton singlets (PhyslibAlpha)](fermions-leptonsinglet-basic.md)
 - [The Standard Model gauge group as local gauge data](../part-04/gaugegroup-localgaugedata.md)
 
 ## Sources

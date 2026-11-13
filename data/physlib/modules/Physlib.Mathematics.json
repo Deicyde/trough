@@ -274,7 +274,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Calculus/Divergence.lean",
@@ -372,7 +373,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Calculus/Gradient.lean",
@@ -539,7 +541,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Calculus/ParametricIntegration.lean",
@@ -605,7 +608,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Calculus/PartialDerivatives.lean",
@@ -656,7 +660,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Calculus/Wirtinger/Basic.lean",
@@ -999,7 +1004,8 @@
      "sorry": false
     }
    ],
-   "private": 8
+   "private": 8,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean",
@@ -1374,7 +1380,8 @@
      "sorry": false
     }
    ],
-   "private": 6
+   "private": 6,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean",
@@ -1577,7 +1584,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Distribution/PowMul.lean",
@@ -1611,7 +1619,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Distribution/TemperedDistribution.lean",
@@ -1890,7 +1899,8 @@
      "sorry": false
     }
    ],
-   "private": 3
+   "private": 3,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/ComplexLinear.lean",
@@ -1945,7 +1955,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/Contraction.lean",
@@ -2028,7 +2039,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean",
@@ -2203,7 +2215,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/FDerivCurry.lean",
@@ -2405,7 +2418,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/Fin.lean",
@@ -2711,7 +2725,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/Fin/Involutions.lean",
@@ -2906,7 +2921,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/HasTemperateGrowth.lean",
@@ -2924,7 +2940,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/Integration/Basic.lean",
@@ -2947,7 +2964,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/LinearMaps.lean",
@@ -3285,7 +3303,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/LinearPMap.lean",
@@ -3760,7 +3779,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/List.lean",
@@ -4234,7 +4254,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/List/InsertIdx.lean",
@@ -4356,7 +4377,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/List/InsertionSort.lean",
@@ -4587,7 +4609,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean",
@@ -4645,7 +4668,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Unitary.lean",
@@ -4799,7 +4823,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/OrthogonalMatrix.lean",
@@ -4817,7 +4842,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/SchurTriangulation.lean",
@@ -4952,7 +4978,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/SesquilinearForm.lean",
@@ -5015,7 +5042,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/Trigonometry/SinSq.lean",
@@ -5046,7 +5074,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/Trigonometry/Tanh.lean",
@@ -5176,7 +5205,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Groups/SO3/Basic.lean",
@@ -5362,7 +5392,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean",
@@ -5577,7 +5608,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Basic.lean",
@@ -5912,7 +5944,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Contractions.lean",
@@ -6159,7 +6192,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean",
@@ -6234,7 +6268,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean",
@@ -6301,7 +6336,7 @@
      "kind": "inductive",
      "line": 80,
      "doc": "The indexing type of the Gell-Mann matrices.",
-     "statement": "inductive GellMannIndex (n : ℕ)\n  | symm (p : Fin n) (q : Fin n) (h : p < q) : GellMannIndex n\n  | antisymm (p : Fin n) (q : Fin n) (h : p < q) : GellMannIndex n\n  | diag (l : Fin (n - 1)) : GellMannIndex n",
+     "statement": "inductive GellMannIndex (n : ℕ)\n  | symm (p : Fin n) (q : Fin n) (h : p < q) : GellMannIndex n\n  | antisymm (p : Fin n) (q : Fin n) (h : p < q) : GellMannIndex n\n  | diag (l : Fin (n - 1)) : GellMannIndex n\nderiving DecidableEq, Repr, Fintype",
      "sorry": false
     },
     {
@@ -6553,7 +6588,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean",
@@ -6604,7 +6640,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/KillingForm.lean",
@@ -6647,7 +6684,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/InnerProductSpace/Adjoint.lean",
@@ -6809,7 +6847,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/InnerProductSpace/Basic.lean",
@@ -7196,7 +7235,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/InnerProductSpace/Calculus.lean",
@@ -7246,7 +7286,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/InnerProductSpace/Gaussian.lean",
@@ -7333,7 +7374,8 @@
      "sorry": false
     }
    ],
-   "private": 2
+   "private": 2,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/InnerProductSpace/Submodule.lean",
@@ -7399,7 +7441,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/KroneckerDelta/Basic.lean",
@@ -7614,7 +7657,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/KroneckerDelta/Contraction.lean",
@@ -7737,7 +7781,8 @@
      "sorry": false
     }
    ],
-   "private": 3
+   "private": 3,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/LeviCivita/Basic.lean",
@@ -7848,7 +7893,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Modules/ConjModule.lean",
@@ -7930,7 +7976,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Modules/CrossProduct.lean",
@@ -7964,7 +8011,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Modules/CrossProductMatrix.lean",
@@ -8022,7 +8070,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean",
@@ -8177,7 +8226,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/SpecialFunctions/PhysHermite.lean",
@@ -8648,7 +8698,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Tensors/Color.lean",
@@ -8671,7 +8722,7 @@
      "kind": "structure",
      "line": 65,
      "doc": "The variance of an index, up (contravariant, `v^μ`) or down (covariant, `w_μ`).",
-     "statement": "structure Variance where\n  /-- Whether the index is up. -/\n  isUp : Bool\n  /-- Whether the index is down. -/\n  isDown : Bool\n  /-- An index is either up or down. -/\n  ne : isUp ≠ isDown",
+     "statement": "structure Variance where\n  /-- Whether the index is up. -/\n  isUp : Bool\n  /-- Whether the index is down. -/\n  isDown : Bool\n  /-- An index is either up or down. -/\n  ne : isUp ≠ isDown\nderiving DecidableEq",
      "sorry": false
     },
     {
@@ -8703,7 +8754,7 @@
      "kind": "structure",
      "line": 97,
      "doc": "A color `⟨κ, v⟩`, made of a kind of index `κ : K` and its variance `v`.",
-     "statement": "structure Color (K : Type) where\n  /-- The kind of index, such as a Lorentz vector index or a left-handed Weyl spinor index. -/\n  kind : K\n  /-- Whether the index is up or down. -/\n  variance : Variance",
+     "statement": "structure Color (K : Type) where\n  /-- The kind of index, such as a Lorentz vector index or a left-handed Weyl spinor index. -/\n  kind : K\n  /-- Whether the index is up or down. -/\n  variance : Variance\nderiving DecidableEq",
      "sorry": false
     },
     {
@@ -8723,7 +8774,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/Tensors/Species.lean",
@@ -8906,7 +8958,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/VariationalCalculus/Basic.lean",
@@ -8932,7 +8985,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/VariationalCalculus/HasVarAdjDeriv.lean",
@@ -9206,7 +9260,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/VariationalCalculus/HasVarAdjoint.lean",
@@ -9440,7 +9495,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean",
@@ -9506,7 +9562,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/VariationalCalculus/Interval.lean",
@@ -9529,7 +9586,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/VariationalCalculus/IsLocalizedfunctionTransform.lean",
@@ -9699,7 +9757,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Mathematics/VariationalCalculus/IsTestFunction.lean",
@@ -9997,7 +10056,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

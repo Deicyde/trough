@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The metric space of states
+# The metric space of states (Physlib)
 
 The module `Physlib.ProbabilisticTheory.State.Metric`, [Physlib/ProbabilisticTheory/State/Metric.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Metric.lean): 18 declarations, 16 with a docstring.
 
@@ -187,7 +187,7 @@ lemma distToPure_eq_zero_of_isPure {ω : 𝓢[ℝ, E]} (h : IsPure ω) : distToP
 ## Depends on
 
 - [The metric space of effects](../effect/metric.md)
-- [Convex state spaces](convex.md)
+- [Convex state spaces (Physlib)](convex.md)
 
 ## Sources
 

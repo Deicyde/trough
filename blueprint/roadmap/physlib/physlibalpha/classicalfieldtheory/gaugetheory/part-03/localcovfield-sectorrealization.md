@@ -338,7 +338,7 @@ lemma restrict_restrictCovSector {S' : Finset FieldCategory} (hS : S ⊆ S') :
 
 ## Depends on
 
-- [Realizations of the covariant field algebra](../part-02/localcovfield-realization.md)
+- [Realizations of the covariant field algebra (LocalCovField/Realization)](../part-02/localcovfield-realization.md)
 - [The covariant sector algebras of the local field algebra](localcovfield-sector.md)
 
 ## Sources

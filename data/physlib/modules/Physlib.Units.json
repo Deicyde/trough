@@ -407,7 +407,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/Constants.lean",
@@ -434,7 +435,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/Dimension.lean",
@@ -677,7 +679,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/Examples.lean",
@@ -892,7 +895,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/Exponent.lean",
@@ -923,7 +927,7 @@
      "kind": "structure",
      "line": 42,
      "doc": "A rational dimension exponent with reducible arithmetic.",
-     "statement": "structure Exponent where\n  /-- The rational number represented by the exponent. -/\n  toRat : ℚ",
+     "statement": "structure Exponent where\n  /-- The rational number represented by the exponent. -/\n  toRat : ℚ\nderiving DecidableEq",
      "sorry": false
     },
     {
@@ -1343,7 +1347,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/FDeriv.lean",
@@ -1377,7 +1382,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/Integral.lean",
@@ -1411,7 +1417,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/ISQBridge.lean",
@@ -1525,7 +1532,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/ISQDimensionBase.lean",
@@ -1539,7 +1547,7 @@
      "kind": "inductive",
      "line": 44,
      "doc": "The seven ISQ base quantities (ISO/IEC 80000-1; VIM 3rd edition). Unlike\n`LTMCTDimensionBase`, electric current is the electromagnetic base quantity (so\ncharge is derived), and amount of substance and luminous intensity are further\nbase quantities.",
-     "statement": "inductive ISQDimensionBase where\n  /-- The length base quantity. -/\n  | length\n  /-- The mass base quantity. -/\n  | mass\n  /-- The time base quantity. -/\n  | time\n  /-- The electric-current base quantity. -/\n  | current\n  /-- The thermodynamic-temperature base quantity. -/\n  | temperature\n  /-- The amount-of-substance base quantity. -/\n  | amount\n  /-- The luminous-intensity base quantity. -/\n  | luminousIntensity",
+     "statement": "inductive ISQDimensionBase where\n  /-- The length base quantity. -/\n  | length\n  /-- The mass base quantity. -/\n  | mass\n  /-- The time base quantity. -/\n  | time\n  /-- The electric-current base quantity. -/\n  | current\n  /-- The thermodynamic-temperature base quantity. -/\n  | temperature\n  /-- The amount-of-substance base quantity. -/\n  | amount\n  /-- The luminous-intensity base quantity. -/\n  | luminousIntensity\nderiving DecidableEq",
      "sorry": false
     },
     {
@@ -1615,7 +1623,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/LTMCTDimensionBase.lean",
@@ -1638,7 +1647,7 @@
      "kind": "inductive",
      "line": 34,
      "doc": "PhysLib's default basis of base dimensions — `length`, `time`, `mass`,\n`charge`, `temperature`. Note this is *charge*-based, so it is not the SI/ISQ\nbase-quantity set; see `Dimension`.",
-     "statement": "inductive LTMCTDimensionBase where\n  /-- The length base dimension. -/\n  | length\n  /-- The time base dimension. -/\n  | time\n  /-- The mass base dimension. -/\n  | mass\n  /-- The charge base dimension. -/\n  | charge\n  /-- The temperature base dimension. -/\n  | temperature",
+     "statement": "inductive LTMCTDimensionBase where\n  /-- The length base dimension. -/\n  | length\n  /-- The time base dimension. -/\n  | time\n  /-- The mass base dimension. -/\n  | mass\n  /-- The charge base dimension. -/\n  | charge\n  /-- The temperature base dimension. -/\n  | temperature\nderiving DecidableEq",
      "sorry": false
     },
     {
@@ -2282,7 +2291,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/ParametricDimensionExamples.lean",
@@ -2329,7 +2339,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/ParametricUnits.lean",
@@ -2400,7 +2411,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/PositiveRealUnit.lean",
@@ -2623,7 +2635,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/SIUnitChoices.lean",
@@ -2778,7 +2791,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/UnitDependent.lean",
@@ -3193,7 +3207,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/UnitSystem.lean",
@@ -3296,7 +3311,8 @@
      "sorry": false
     }
    ],
-   "private": 5
+   "private": 5,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/WithDim/Analysis.lean",
@@ -3419,7 +3435,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/WithDim/Area.lean",
@@ -3554,7 +3571,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/WithDim/Basic.lean",
@@ -3977,7 +3995,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/WithDim/Energy.lean",
@@ -4027,7 +4046,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/WithDim/Mass.lean",
@@ -4036,7 +4056,8 @@
    "doc": "In this module we define the type `Mass`, which represents the mass of a particle,\nin an arbitrary (but given) set of units.",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/WithDim/Momentum.lean",
@@ -4054,7 +4075,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/WithDim/Pressure.lean",
@@ -4120,7 +4142,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/WithDim/Speed.lean",
@@ -4239,7 +4262,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Units/WithDim/Velocity.lean",
@@ -4248,7 +4272,8 @@
    "doc": "In this module we define the type `Velocity`, which represents the velocity of a particle\nin `d`-dimensional space, in an arbitrary (but given) set of units.",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

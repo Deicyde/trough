@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The jet algebra of the Standard Model is a Standard Model
+# The jet algebra of the Standard Model is a Standard Model (AlgebraRealization)
 
 The module `PhyslibAlpha.Particles.StandardModel.JetAlgebra.AlgebraRealization`, [PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean): 10 declarations, 10 with a docstring; 1 private, not shown.
 

@@ -261,7 +261,7 @@ lemma gaugeAlgebraAction_comm_repLorentzGroup (c : GaugeAlgebra) (Λ : SL(2,ℂ)
 
 ## Depends on
 
-- [Down-type singlets](fermions-downsinglet-basic.md)
+- [Down-type singlets (PhyslibAlpha)](fermions-downsinglet-basic.md)
 - [The Standard Model gauge group as local gauge data](../part-04/gaugegroup-localgaugedata.md)
 
 ## Proof depends on

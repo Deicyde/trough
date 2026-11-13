@@ -81,9 +81,9 @@ lemma positionOperatorUnbounded_isSymmetric :
 ## Depends on
 
 - [Physlib.Mathematics.Distribution.PowMul](../../mathematics/distribution/powmul.md)
-- [Position states](../hilbertspaces/onedimension-positionstates.md)
+- [Position states (OneDimension/PositionStates)](../hilbertspaces/onedimension-positionstates.md)
 - [Schwartz submodule of the Hilbert space](../hilbertspaces/onedimension-schwartzsubmodule.md)
-- [Unbounded operators](onedimension-unbounded.md)
+- [Unbounded operators (OneDimension/Unbounded)](onedimension-unbounded.md)
 
 ## Sources
 

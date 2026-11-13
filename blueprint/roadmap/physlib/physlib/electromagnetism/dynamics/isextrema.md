@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Extrema of the Lagrangian density
+# Extrema of the Lagrangian density (Electromagnetism/Dynamics/IsExtrema)
 
 The module `Physlib.Electromagnetism.Dynamics.IsExtrema`, [Physlib/Electromagnetism/Dynamics/IsExtrema.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/IsExtrema.lean): 9 declarations, 1 with a docstring.
 
@@ -179,7 +179,7 @@ lemma time_deriv_time_deriv_electricField_of_isExtrema {A : ElectromagneticPoten
 
 ## Depends on
 
-- [The Lagrangian in electromagnetism](lagrangian.md)
+- [The Lagrangian in electromagnetism (Electromagnetism/Dynamics/Lagrangian)](lagrangian.md)
 
 ## Sources
 

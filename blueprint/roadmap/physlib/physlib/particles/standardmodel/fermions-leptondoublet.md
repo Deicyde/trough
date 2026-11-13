@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Lepton doublets
+# Lepton doublets (Physlib)
 
 The module `Physlib.Particles.StandardModel.Fermions.LeptonDoublet`, [Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean): 18 declarations (2 instances with no name), 12 with a docstring.
 

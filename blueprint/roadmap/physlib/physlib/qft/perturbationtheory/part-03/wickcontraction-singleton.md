@@ -126,9 +126,9 @@ lemma singleton_staticContract {φs : List 𝓕.FieldOp} {i j : Fin φs.length} 
 ## Depends on
 
 - [Sign associated with a contraction](wickcontraction-sign-basic.md)
-- [Time contractions](wickcontraction-staticcontract.md)
+- [Time contractions (StaticContract)](wickcontraction-staticcontract.md)
 - [Sub contractions](wickcontraction-subcontraction.md)
-- [Time contractions](wickcontraction-timecontract.md)
+- [Time contractions (TimeContract)](wickcontraction-timecontract.md)
 
 ## Sources
 

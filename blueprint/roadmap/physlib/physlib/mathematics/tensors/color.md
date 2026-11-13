@@ -58,6 +58,7 @@ structure Variance where
   isDown : Bool
   /-- An index is either up or down. -/
   ne : isUp ≠ isDown
+deriving DecidableEq
 ```
 
 **`Tensor.Variance.up`**, an abbrev, [line 78](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Tensors/Color.lean#L78).
@@ -97,6 +98,7 @@ structure Color (K : Type) where
   kind : K
   /-- Whether the index is up or down. -/
   variance : Variance
+deriving DecidableEq
 ```
 
 **`Tensor.Color.dual`**, an abbrev, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Tensors/Color.lean#L105).

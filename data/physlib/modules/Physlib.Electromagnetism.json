@@ -74,7 +74,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Charge/ChargeUnit.lean",
@@ -121,7 +122,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Current/CircularCoil.lean",
@@ -135,7 +137,8 @@
     }
    ],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Current/InfiniteWire.lean",
@@ -290,7 +293,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Distributional/Basic.lean",
@@ -361,7 +365,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Dynamics/Basic.lean",
@@ -456,7 +461,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Dynamics/CurrentDensity.lean",
@@ -639,7 +645,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Dynamics/Hamiltonian.lean",
@@ -742,7 +749,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Dynamics/IsExtrema.lean",
@@ -861,7 +869,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Dynamics/KineticTerm.lean",
@@ -1120,7 +1129,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Dynamics/Lagrangian.lean",
@@ -1339,7 +1349,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Kinematics/Boosts.lean",
@@ -1406,7 +1417,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Kinematics/ElectricField.lean",
@@ -1557,7 +1569,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Kinematics/EMPotential.lean",
@@ -2096,7 +2109,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Kinematics/FieldStrength.lean",
@@ -2387,7 +2401,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Kinematics/GaugeTransformation.lean",
@@ -2586,7 +2601,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Kinematics/MagneticField.lean",
@@ -2837,7 +2853,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Kinematics/ScalarPotential.lean",
@@ -2960,7 +2977,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Kinematics/VectorPotential.lean",
@@ -3143,7 +3161,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/PointParticle/OneDimension.lean",
@@ -3290,7 +3309,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/PointParticle/ThreeDimension.lean",
@@ -3449,7 +3469,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/Basic.lean",
@@ -3564,7 +3585,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/Dynamics/CurrentDensity.lean",
@@ -3611,7 +3633,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean",
@@ -3698,7 +3721,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean",
@@ -3765,7 +3789,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean",
@@ -3868,7 +3893,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/ElectricField.lean",
@@ -3899,7 +3925,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean",
@@ -4058,7 +4085,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean",
@@ -4133,7 +4161,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/ScalarPotential.lean",
@@ -4156,7 +4185,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/VectorPotential.lean",
@@ -4179,7 +4209,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/ThreeDimension/Basic.lean",
@@ -4210,7 +4241,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean",
@@ -4252,7 +4284,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Vacuum/Constant.lean",
@@ -4371,7 +4404,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Vacuum/HarmonicWave.lean",
@@ -4646,7 +4680,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean",
@@ -4909,7 +4944,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

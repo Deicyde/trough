@@ -9,7 +9,8 @@
    "doc": "This directory is currently a place holder.\nPlease feel free to contribute!\n\nSome directories which are NOT currently place holders are:\n- Mathematics\n- Meta\n- Particles\n- QFT\n- Quantum Mechanics\n- Relativity",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Optics/Frequency.lean",
@@ -32,7 +33,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Optics/Polarization/Basic.lean",
@@ -41,7 +43,8 @@
    "doc": "In this file the real representation is used to develop representations of polarizations\nsuch as the polarization ellipse, Stokes parameters and the Poincaré sphere for monochromatic\ntime-harmonic electromagnetic plane waves.\n\nMore general definitions that can be applied to a wider range of situations will be shown to\nbe equivalent to the definitions in this file where appropriate.\n\nThe material that was in this file has been moved to\n`Physlib.Electromagnetism.Vacuum.HarmonicWave` for better organization.\nThis file is kept because there is still some material to be added here in the future.",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Optics/Wavelength.lean",
@@ -192,7 +195,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

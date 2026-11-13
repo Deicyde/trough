@@ -19,7 +19,8 @@ The module `Physlib.QuantumMechanics.Hydrogen.Rydberg`, [Physlib/QuantumMechanic
 > photon emitted in a transition between two levels, together with the Lyman, Balmer and Paschen
 > series and their series limits.
 >
-> …
+> The statement that these values are the point spectrum of the hydrogen Hamiltonian is not
+> proved here; …
 
 ## ii. Key results
 

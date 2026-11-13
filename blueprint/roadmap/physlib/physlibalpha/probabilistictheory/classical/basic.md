@@ -54,7 +54,7 @@ lemma OrderUnitLattice.isClassical (E : Type*) [OrderUnitLattice E] : IsClassica
 ## Depends on
 
 - [The Riesz–Kantorovich formula](../../mathematics/part-02/order/positivedual-rieszkantorovich.md)
-- [Lattice-ordered observables](../orderunit/lattice.md)
+- [Lattice-ordered observables (Lattice)](../orderunit/lattice.md)
 - [The unit of an order-unit space as an order unit](../orderunit/positivedual.md)
 
 ## Sources

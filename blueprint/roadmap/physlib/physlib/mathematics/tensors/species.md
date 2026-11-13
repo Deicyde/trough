@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Tensor species
+# Tensor species (Species)
 
 The module `Physlib.Mathematics.Tensors.Species`, [Physlib/Mathematics/Tensors/Species.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Tensors/Species.lean): 20 declarations, 20 with a docstring.
 

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The Field Strength Tensor
+# The Field Strength Tensor (Kinematics/FieldStrength)
 
 The module `Physlib.Electromagnetism.Kinematics.FieldStrength`, [Physlib/Electromagnetism/Kinematics/FieldStrength.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/FieldStrength.lean): 30 declarations, 9 with a docstring.
 
@@ -365,7 +365,7 @@ lemma toFieldStrength_smul {d} (c : ℝ) (A : ElectromagneticPotential d)
 
 ## Depends on
 
-- [The Electromagnetic Potential](empotential.md)
+- [The Electromagnetic Potential (EMPotential)](empotential.md)
 
 ## Sources
 

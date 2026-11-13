@@ -23,7 +23,7 @@ Modules in [GaugeBoson/LocalGauge/](https://github.com/leanprover-community/phys
 Modules in [GaugeBoson/LocalGaugeCov/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGaugeCov):
 
 - [The covariant field algebra of the gauge bosons](gaugeboson-localgaugecov-basic.md)
-- [Realizations of the covariant field algebra](gaugeboson-localgaugecov-realization.md)
+- [Realizations of the covariant field algebra (LocalGaugeCov/Realization)](gaugeboson-localgaugecov-realization.md)
 
 Modules in [GaugeBoson/Realization/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization):
 

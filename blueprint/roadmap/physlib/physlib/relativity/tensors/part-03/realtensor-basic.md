@@ -25,6 +25,7 @@ inductive Color
   | up : Color
   /-- The color associated with covariant Lorentz vectors. -/
   | down : Color
+deriving Fintype
 ```
 
 **An instance with no name**, [line 38](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/Basic.lean#L38).

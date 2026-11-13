@@ -20,6 +20,7 @@ The module `Physlib.QFT.PerturbationTheory.CreateAnnihilate`, [Physlib/QFT/Pertu
 inductive CreateAnnihilate where
   | create : CreateAnnihilate
   | annihilate : CreateAnnihilate
+deriving Inhabited, BEq, DecidableEq
 ```
 
 **An instance with no name**, [line 29](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/CreateAnnihilate.lean#L29).

@@ -787,7 +787,7 @@ lemma repLorentz_kineticTerm (Λ : SL(2,ℂ)) :
 
 - [Families of colour and isospin components and their invariants](../part-04/gaugegroup-invariants-basic.md)
 - [Invariant reduction for the gauge and Lorentz groups](../part-01/invariantreduction.md)
-- [The invariants below mass weight eight](../part-06/isfermionsector-massweight-massdimlteight.md)
+- [The invariants below mass weight eight (IsFermionSector/MassWeight/MassDimLTEight)](../part-06/isfermionsector-massweight-massdimlteight.md)
 
 ## Sources
 

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Up-type singlets
+# Up-type singlets (Physlib)
 
 The module `Physlib.Particles.StandardModel.Fermions.UpSinglet`, [Physlib/Particles/StandardModel/Fermions/UpSinglet.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/UpSinglet.lean): 18 declarations (2 instances with no name), 7 with a docstring.
 

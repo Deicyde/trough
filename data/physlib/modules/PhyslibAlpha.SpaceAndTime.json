@@ -171,7 +171,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean",
@@ -326,7 +327,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/Ring.lean",
@@ -485,7 +487,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean",
@@ -616,7 +619,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean",
@@ -747,7 +751,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalCylinder.lean",
@@ -866,7 +871,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean",
@@ -969,7 +975,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/Fields.lean",
@@ -1075,7 +1082,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean",
@@ -1330,7 +1338,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Jacobi.lean",
@@ -1365,7 +1374,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean",
@@ -1580,7 +1590,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean",
@@ -1651,7 +1662,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean",
@@ -2210,7 +2222,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

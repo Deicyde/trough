@@ -9,7 +9,8 @@
    "doc": "The Georgi-Glashow model is a grand unified theory that unifies the Standard Model gauge group into\n`SU(5)`.\n\nThis file currently contains informal-results about the Georgi-Glashow group.\n\n## References\n\n* Baez's Grand Unified Theories notes, cited throughout below. [ref: baez_guts_notes]",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/PatiSalam/Basic.lean",
@@ -23,7 +24,8 @@
     }
    ],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/Basic.lean",
@@ -321,7 +323,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/FamilyMaps.lean",
@@ -507,7 +510,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/NoGrav/Basic.lean",
@@ -605,7 +609,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/Ordinary/Basic.lean",
@@ -711,7 +716,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/Ordinary/DimSevenPlane.lean",
@@ -953,7 +959,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/Ordinary/FamilyMaps.lean",
@@ -987,7 +994,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/Permutations.lean",
@@ -1093,7 +1101,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/Basic.lean",
@@ -1215,7 +1224,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BMinusL.lean",
@@ -1313,7 +1323,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BoundPlaneDim.lean",
@@ -1347,7 +1358,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/FamilyMaps.lean",
@@ -1381,7 +1393,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/HyperCharge.lean",
@@ -1519,7 +1532,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/PlaneNonSols.lean",
@@ -1817,7 +1831,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/QuadSol.lean",
@@ -1979,7 +1994,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/QuadSolToSol.lean",
@@ -2149,7 +2165,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/Spin10/Basic.lean",
@@ -2158,7 +2175,8 @@
    "doc": "Note: By physicists this is usually called SO(10). However, the true gauge group involved\nis Spin(10).\n\n## References\n\n* Baez's Grand Unified Theories notes, cited throughout below. [ref: baez_guts_notes]",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean",
@@ -2225,7 +2243,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/TwoHDM/GramMatrix.lean",
@@ -2544,7 +2563,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/TwoHDM/Potential.lean",
@@ -3079,7 +3099,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/FlavorPhysics/CKMMatrix/Basic.lean",
@@ -3449,7 +3470,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean",
@@ -3499,7 +3521,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/FlavorPhysics/CKMMatrix/PhaseFreedom.lean",
@@ -3637,7 +3660,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/FlavorPhysics/CKMMatrix/Relations.lean",
@@ -3943,7 +3967,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/FlavorPhysics/CKMMatrix/Rows.lean",
@@ -4185,7 +4210,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean",
@@ -4259,7 +4285,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/StandardParameters.lean",
@@ -4789,7 +4816,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/NeutrinoPhysics/Basic.lean",
@@ -4911,7 +4939,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean",
@@ -5137,7 +5166,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/AnomalyCancellation/FamilyMaps.lean",
@@ -5203,7 +5233,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean",
@@ -5293,7 +5324,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean",
@@ -5335,7 +5367,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/LinearParameterization.lean",
@@ -5561,7 +5594,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/AnomalyCancellation/Permutations.lean",
@@ -5667,7 +5701,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/Fermions/DownSinglet.lean",
@@ -5846,7 +5881,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean",
@@ -6025,7 +6061,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean",
@@ -6204,7 +6241,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean",
@@ -6375,7 +6413,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/Fermions/UpSinglet.lean",
@@ -6546,7 +6585,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/GaugeGroup/Basic.lean",
@@ -7293,7 +7333,7 @@
      "kind": "inductive",
      "line": 601,
      "doc": "Specifies the allowed quotients of `SU(3) x SU(2) x U(1)` which give a valid\ngauge group of the Standard Model.",
-     "statement": "inductive GaugeGroupQuot : Type\n  /-- The element of `GaugeGroupQuot` corresponding to the quotient of the full SM gauge group\n    by the sub-group `ℤ₆`. -/\n  | ℤ₆ : GaugeGroupQuot\n  /-- The element of `GaugeGroupQuot` corresponding to the quotient of the full SM gauge group\n    by the sub-group `ℤ₂`. -/\n  | ℤ₂ : GaugeGroupQuot\n  /-- The element of `GaugeGroupQuot` corresponding to the quotient of the full SM gauge group\n    by the sub-group `ℤ₃`. -/\n  | ℤ₃ : GaugeGroupQuot\n  /-- The element of `GaugeGroupQuot` corresponding to the full SM gauge group. -/\n  | I : GaugeGroupQuot",
+     "statement": "inductive GaugeGroupQuot : Type\n  /-- The element of `GaugeGroupQuot` corresponding to the quotient of the full SM gauge group\n    by the sub-group `ℤ₆`. -/\n  | ℤ₆ : GaugeGroupQuot\n  /-- The element of `GaugeGroupQuot` corresponding to the quotient of the full SM gauge group\n    by the sub-group `ℤ₂`. -/\n  | ℤ₂ : GaugeGroupQuot\n  /-- The element of `GaugeGroupQuot` corresponding to the quotient of the full SM gauge group\n    by the sub-group `ℤ₃`. -/\n  | ℤ₃ : GaugeGroupQuot\n  /-- The element of `GaugeGroupQuot` corresponding to the full SM gauge group. -/\n  | I : GaugeGroupQuot\nderiving Fintype, DecidableEq",
      "sorry": false
     },
     {
@@ -7401,7 +7441,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean",
@@ -7456,7 +7497,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/HiggsBoson/Basic.lean",
@@ -8075,7 +8117,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/HiggsBoson/EffectivePotential.lean",
@@ -8262,7 +8305,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/HiggsBoson/Potential.lean",
@@ -8565,7 +8609,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/Representations.lean",
@@ -8607,7 +8652,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean",
@@ -8649,7 +8695,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Basic.lean",
@@ -9059,7 +9106,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/HyperCharge.lean",
@@ -9085,7 +9133,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean",
@@ -9159,7 +9208,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean",
@@ -9265,7 +9315,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/PlaneWithY3B3.lean",
@@ -9475,7 +9526,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/ToSols.lean",
@@ -9877,7 +9929,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Permutations.lean",
@@ -10007,7 +10060,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean",
@@ -10049,7 +10103,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/N1/Basic.lean",
@@ -10100,7 +10155,7 @@
      "kind": "inductive",
      "line": 81,
      "doc": "The four colours of a chiral-sector index: holomorphy (`chiral` or `anti`) crossed with\nvariance (`up` or `down`).",
-     "statement": "inductive ChiralColor | chiralUp | chiralDown | antiUp | antiDown",
+     "statement": "inductive ChiralColor | chiralUp | chiralDown | antiUp | antiDown\nderiving DecidableEq",
      "sorry": false
     },
     {
@@ -10352,7 +10407,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/N1/Superpotential.lean",
@@ -10403,7 +10459,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean",
@@ -10670,7 +10727,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Basic.lean",
@@ -11073,7 +11131,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean",
@@ -11256,7 +11315,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Map.lean",
@@ -11539,7 +11599,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean",
@@ -11686,7 +11747,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/FinsetTerms.lean",
@@ -11801,7 +11863,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean",
@@ -12004,7 +12067,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimalSuperSet.lean",
@@ -12167,7 +12231,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfFieldLabel.lean",
@@ -12254,7 +12319,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean",
@@ -12445,7 +12511,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean",
@@ -12632,7 +12699,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean",
@@ -12823,7 +12891,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean",
@@ -12978,7 +13047,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean",
@@ -13093,7 +13163,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/FieldLabels.lean",
@@ -13116,7 +13187,7 @@
      "kind": "inductive",
      "line": 56,
      "doc": "The types of field present in an SU(5) GUT.",
-     "statement": "inductive FieldLabel\n  | fiveBarHu\n  | fiveHu\n  | fiveBarHd\n  | fiveHd\n  | fiveBarMatter\n  | fiveMatter\n  | tenMatter",
+     "statement": "inductive FieldLabel\n  | fiveBarHu\n  | fiveHu\n  | fiveBarHd\n  | fiveHd\n  | fiveBarMatter\n  | fiveMatter\n  | tenMatter\nderiving DecidableEq",
      "sorry": false
     },
     {
@@ -13136,7 +13207,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/Potential.lean",
@@ -13179,7 +13251,7 @@
      "kind": "inductive",
      "line": 70,
      "doc": "Relevant terms part of the superpotential and Kahler potential of the `SU(5)` SUSY GUT.",
-     "statement": "inductive PotentialTerm\n  /-- The term `μ 5Hu 5̄Hd` appearing in the super-potential. -/\n  | μ : PotentialTerm\n  /-- The term `𝛽ᵢ 5̄Mⁱ5Hu` appearing in the super-potential. -/\n  | β : PotentialTerm\n  /-- The term `𝜆ᵢⱼₖ 5̄Mⁱ 5̄Mʲ 10ᵏ` appearing in the super-potential. -/\n  | Λ : PotentialTerm\n  /-- The term `W¹ᵢⱼₖₗ 10ⁱ 10ʲ 10ᵏ 5̄Mˡ` appearing in the super-potential. -/\n  | W1 : PotentialTerm\n  /-- The term `W²ᵢⱼₖ 10ⁱ 10ʲ 10ᵏ 5̄Hd` appearing in the super-potential. -/\n  | W2 : PotentialTerm\n  /-- The term `W³ᵢⱼ 5̄Mⁱ 5̄Mʲ 5Hu 5Hu` appearing in the super-potential. -/\n  | W3 : PotentialTerm\n  /-- The term `W⁴ᵢ 5̄Mⁱ 5̄Hd 5Hu 5Hu` appearing in the super-potential. -/\n  | W4 : PotentialTerm\n  /-- The term `K¹ᵢⱼₖ 10ⁱ 10ʲ 5Mᵏ` appearing in the Kahler potential. -/\n  | K1 : PotentialTerm\n  /-- The term `K²ᵢ 5̄Hu 5̄Hd 10ⁱ` appearing in the Kahler potential. -/\n  | K2 : PotentialTerm\n  /-- The term `λᵗᵢⱼ 10ⁱ 10ʲ 5Hu` appearing in the super-potential. -/\n  | topYukawa : PotentialTerm\n  /-- The term `λᵇᵢⱼ 10ⁱ 5̄Mʲ 5̄Hd` appearing in the super-potential. -/\n  | bottomYukawa : PotentialTerm",
+     "statement": "inductive PotentialTerm\n  /-- The term `μ 5Hu 5̄Hd` appearing in the super-potential. -/\n  | μ : PotentialTerm\n  /-- The term `𝛽ᵢ 5̄Mⁱ5Hu` appearing in the super-potential. -/\n  | β : PotentialTerm\n  /-- The term `𝜆ᵢⱼₖ 5̄Mⁱ 5̄Mʲ 10ᵏ` appearing in the super-potential. -/\n  | Λ : PotentialTerm\n  /-- The term `W¹ᵢⱼₖₗ 10ⁱ 10ʲ 10ᵏ 5̄Mˡ` appearing in the super-potential. -/\n  | W1 : PotentialTerm\n  /-- The term `W²ᵢⱼₖ 10ⁱ 10ʲ 10ᵏ 5̄Hd` appearing in the super-potential. -/\n  | W2 : PotentialTerm\n  /-- The term `W³ᵢⱼ 5̄Mⁱ 5̄Mʲ 5Hu 5Hu` appearing in the super-potential. -/\n  | W3 : PotentialTerm\n  /-- The term `W⁴ᵢ 5̄Mⁱ 5̄Hd 5Hu 5Hu` appearing in the super-potential. -/\n  | W4 : PotentialTerm\n  /-- The term `K¹ᵢⱼₖ 10ⁱ 10ʲ 5Mᵏ` appearing in the Kahler potential. -/\n  | K1 : PotentialTerm\n  /-- The term `K²ᵢ 5̄Hu 5̄Hd 10ⁱ` appearing in the Kahler potential. -/\n  | K2 : PotentialTerm\n  /-- The term `λᵗᵢⱼ 10ⁱ 10ʲ 5Hu` appearing in the super-potential. -/\n  | topYukawa : PotentialTerm\n  /-- The term `λᵇᵢⱼ 10ⁱ 5̄Mʲ 5̄Hd` appearing in the super-potential. -/\n  | bottomYukawa : PotentialTerm\nderiving DecidableEq, Fintype",
      "sorry": false
     },
     {
@@ -13255,7 +13327,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

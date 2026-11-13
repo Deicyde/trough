@@ -623,6 +623,10 @@ theorem sandwichedRenyiEntropy_mono_traceLeft [Nonempty dA]
 
 **`prep_append_eq_tensor_pure`**, a theorem, [line 1327](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/Entropy/DPI.lean#L1327). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
 
+> Helper: The Stinespring preparation `prep ∘ append` equals tensoring with a fixed pure state.
+> `append = ofEquiv (Equiv.prodPUnit d₁).symm`.
+> …
+
 ```lean
 theorem prep_append_eq_tensor_pure [Inhabited d₂] (ρ : MState d₁) :
     let ψ₀ : Ket (d₂ × d₂) := Ket.basis default

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The generalized Gell-Mann matrices
+# The generalized Gell-Mann matrices (PhyslibAlpha)
 
 The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.SU.GellMann`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/GellMann.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/GellMann.lean): 33 declarations, 29 with a docstring; 6 private, not shown.
 

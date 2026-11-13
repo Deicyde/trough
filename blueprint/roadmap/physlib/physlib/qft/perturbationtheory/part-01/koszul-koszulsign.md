@@ -179,7 +179,7 @@ lemma koszulSign_perm_eq [IsTrans 𝓕 le] (φ : 𝓕) : (φs1 φs φs' φs2 : L
 
 ## Proof depends on
 
-- [List lemmas](../../../mathematics/formathlib/list-insertionsort.md)
+- [List lemmas (InsertionSort)](../../../mathematics/formathlib/list-insertionsort.md)
 
 ## Sources
 

@@ -42,7 +42,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Meta/Basic.lean",
@@ -277,7 +278,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Meta/Informal/Basic.lean",
@@ -308,7 +310,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Meta/Informal/Post.lean",
@@ -390,7 +393,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Meta/Informal/SemiFormal.lean",
@@ -432,7 +436,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Meta/Linters/DefsWithUnderscore.lean",
@@ -482,7 +487,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Meta/Linters/Pseudo.lean",
@@ -517,7 +523,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Meta/Notes/Basic.lean",
@@ -548,7 +555,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Meta/Notes/HTMLNote.lean",
@@ -590,7 +598,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Meta/Notes/NoteFile.lean",
@@ -616,7 +625,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Meta/Notes/ToHTML.lean",
@@ -714,7 +724,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Meta/Pseudo.lean",
@@ -841,7 +852,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Meta/Remark/Basic.lean",
@@ -867,7 +879,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Meta/Remark/Properties.lean",
@@ -909,7 +922,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Meta/TODO/Basic.lean",
@@ -935,7 +949,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Meta/TODO/Global.lean",
@@ -944,7 +959,8 @@
    "doc": "This module contains global TODO items, which are not specific to any particular module,\nbut are still important for the development of Physlib.",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Meta/TransverseTactics.lean",
@@ -986,7 +1002,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

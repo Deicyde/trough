@@ -108,7 +108,7 @@ lemma gellMannBasis_repr_adjoint {n : ℕ} (g : specialUnitaryGroup (Fin n) ℂ)
 
 ## Depends on
 
-- [The generalized Gell-Mann matrices](specialunitary-liealgebra-gellmann-basic.md)
+- [The generalized Gell-Mann matrices (Physlib)](specialunitary-liealgebra-gellmann-basic.md)
 
 ## Sources
 

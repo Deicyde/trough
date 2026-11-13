@@ -759,7 +759,7 @@ lemma isLorentzCovDerivTransforms_of {V : Type} [AddCommGroup V] [Module ℂ V]
 ## Depends on
 
 - [Representations acting by algebra maps](../../../mathematics/part-01/algebrarepresentation.md)
-- [The jet algebra of the Standard Model is a Standard Model](jetalgebra-realization.md)
+- [The jet algebra of the Standard Model is a Standard Model (Realization)](jetalgebra-realization.md)
 - [From the jet Standard Model to its covariant form](../part-10/realization-covstandardmodel.md)
 
 ## Sources

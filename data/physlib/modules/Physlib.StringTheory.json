@@ -9,7 +9,8 @@
    "doc": "This directory is currently a place holder.\nPlease feel free to contribute!\n\nSome directories which are NOT currently place holders are:\n- Mathematics\n- Meta\n- Particles\n- QFT\n- Quantum Mechanics\n- Relativity",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StringTheory/FTheory/SU5/Basic.lean",
@@ -18,7 +19,8 @@
    "doc": "This module contains the details of F-theory with a SU(5) gauge group, with possible\nadditional charges. This should be compared to the directory:\n\n- `Physlib.Particles.SuperSymmetry.SU5`\n\nwhich contains the details of the SUSY SU(5) gauge group not in F-theory. Many of the\nresults here use results from that directory.\n\n## Data structures\n\nThe main data structures part of this theory are:\n- `PotentialTerm`: An inductive type containing the terms in the super and\n  Kahler potential of the theory. This can be found in\n  `Physlib.Particles.SuperSymmetry.SU5.Potential`, as not specific to F-theory.\n- `Fluxes`: Contains the fluxes associated with each representation present in the theory.\n- `Charges`: Contains the charges associated with each representation present in the theory.\n  This can be found in `Physlib.Particles.SuperSymmetry.SU5.Potential`, as not specific to\n  F-theory.\n- `Quanta`: Contains the fluxes and charges of each representation present in the theory.\n\n## Propositions\n\nThere are a number of important propositions in the theory.\n- `Charges.AllowsTerm`: For a given potential term, determines whether an element of `Charges`\n  allows that term.\n- `Charges.IsPhenoConstrained`: Is true when the charges permit a term that is phenomenologically\n  constrained, such as the four-dimension proton decay coupling.\n- `Fluxes.NoExotics`: Is true when the fluxes lead to no exotic particles.\n- `Quanta.IsViable`: Is true when the quanta is phenomenologically viable, meaning it satisfies\n  a number of conditions, such as anomaly cancellation, no exotic particles, and allowing the top\n  Yukawa coupling.\n\nThe charges are additionally constrained by the configuration `CodimensionOneConfig`,\nof the zero-section (`σ₀`) and the additional rational section (`σ₁`).\nThis is detailed in the paper `arxiv:1504.05593` [ref: lawrie_schafer_nameki_wong_2015]. In\nimplemented here using\n- `Charges.ofFinset S5 S10`: which gives the finite set of charges where the 5-bar charges\n  must live in the set `S5` and the 10-bar charges must live in the set `S10`.\n\n## Important results\n\n- `isViable_iff_mem_viableElems`: Enumerates all the viable `Quanta` for a given\n  `CodimensionOneConfig`.\n\n## References\n\n* Froggatt-Nielsen meets Mordell-Weil: A Phenomenological Survey of Global F-theory GUTs\n  with U(1)s (arxiv:1507.05961). [ref: arxiv_1507_05961]",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StringTheory/FTheory/SU5/Charges/AnomalyFree.lean",
@@ -77,7 +79,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StringTheory/FTheory/SU5/Charges/OfRationalSection.lean",
@@ -116,7 +119,7 @@
      "kind": "inductive",
      "line": 74,
      "doc": "The distinct codimension one configurations of the\nzero-section (`σ₀`) relativity to the additional rational section (`σ₁`s).",
-     "statement": "inductive CodimensionOneConfig\n  /-- `σ₀` and `σ₁` intersect the same `ℙ¹` of the `I₅` Kodaira fiber.\n    This is sometimes denoted `I₅^{(01)}` -/\n  | same : CodimensionOneConfig\n  /-- `σ₀` and `σ₁` intersect the nearest neighbor `ℙ¹`s of the `I₅` Kodaira fiber.\n    This is sometimes denoted `I₅^{(0|1)}` -/\n  | nearestNeighbor : CodimensionOneConfig\n  /-- `σ₀` and `σ₁` intersect the next to nearest neighbor `ℙ¹`s of the `I₅` Kodaira fiber.\n    This is sometimes denoted `I₅^{(0||1)}` -/\n  | nextToNearestNeighbor : CodimensionOneConfig",
+     "statement": "inductive CodimensionOneConfig\n  /-- `σ₀` and `σ₁` intersect the same `ℙ¹` of the `I₅` Kodaira fiber.\n    This is sometimes denoted `I₅^{(01)}` -/\n  | same : CodimensionOneConfig\n  /-- `σ₀` and `σ₁` intersect the nearest neighbor `ℙ¹`s of the `I₅` Kodaira fiber.\n    This is sometimes denoted `I₅^{(0|1)}` -/\n  | nearestNeighbor : CodimensionOneConfig\n  /-- `σ₀` and `σ₁` intersect the next to nearest neighbor `ℙ¹`s of the `I₅` Kodaira fiber.\n    This is sometimes denoted `I₅^{(0||1)}` -/\n  | nextToNearestNeighbor : CodimensionOneConfig\nderiving DecidableEq",
      "sorry": false
     },
     {
@@ -160,7 +163,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StringTheory/FTheory/SU5/Charges/Viable.lean",
@@ -491,7 +495,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StringTheory/FTheory/SU5/Fluxes/Basic.lean",
@@ -658,7 +663,7 @@
      "kind": "structure",
      "line": 142,
      "doc": "The data of the fluxes carried by a matter field.",
-     "statement": "structure Fluxes where\n  /-- The chirality flux. -/\n  M : ℤ\n  /-- The hypercharge flux. -/\n  N : ℤ",
+     "statement": "structure Fluxes where\n  /-- The chirality flux. -/\n  M : ℤ\n  /-- The hypercharge flux. -/\n  N : ℤ\nderiving DecidableEq",
      "sorry": false
     },
     {
@@ -974,7 +979,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/ChiralIndices.lean",
@@ -1205,7 +1211,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Completeness.lean",
@@ -1408,7 +1415,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StringTheory/FTheory/SU5/Fluxes/NoExotics/Elems.lean",
@@ -1619,7 +1627,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StringTheory/FTheory/SU5/Quanta/Basic.lean",
@@ -1838,7 +1847,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StringTheory/FTheory/SU5/Quanta/FiveQuanta.lean",
@@ -2389,7 +2399,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StringTheory/FTheory/SU5/Quanta/IsViable.lean",
@@ -2528,7 +2539,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StringTheory/FTheory/SU5/Quanta/TenQuanta.lean",
@@ -3103,7 +3115,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

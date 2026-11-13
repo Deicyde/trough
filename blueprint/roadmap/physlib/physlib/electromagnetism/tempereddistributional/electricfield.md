@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The Electric Field
+# The Electric Field (TemperedDistributional/ElectricField)
 
 The module `Physlib.Electromagnetism.TemperedDistributional.ElectricField`, [Physlib/Electromagnetism/TemperedDistributional/ElectricField.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/ElectricField.lean): 2 declarations, 1 with a docstring.
 
@@ -49,9 +49,9 @@ lemma electricField_eq_fieldStrength {d} {c : SpeedOfLight}
 
 ## Depends on
 
-- [The Field Strength Tensor](fieldstrength.md)
-- [The Scalar Potential](scalarpotential.md)
-- [The vector Potential](vectorpotential.md)
+- [The Field Strength Tensor (TemperedDistributional/FieldStrength)](fieldstrength.md)
+- [The Scalar Potential (TemperedDistributional/ScalarPotential)](scalarpotential.md)
+- [The vector Potential (TemperedDistributional/VectorPotential)](vectorpotential.md)
 
 ## Sources
 

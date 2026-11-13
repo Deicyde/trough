@@ -478,7 +478,7 @@ lemma mem_maxTensorCone_iff_rslice {z : E ⊗[ℝ] F} :
 
 ## Proof depends on
 
-- [Separation by states](../state/separation.md)
+- [Separation by states (PhyslibAlpha)](../state/separation.md)
 
 ## Sources
 

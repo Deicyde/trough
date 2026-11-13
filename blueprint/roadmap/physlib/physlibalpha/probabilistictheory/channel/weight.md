@@ -95,7 +95,7 @@ lemma IsState.comp {w : Weight F₁} (hw : w.IsState) (φ : Channel F₂ F₁) :
 ## Depends on
 
 - [Channels](basic.md)
-- [Weights](../weight/basic.md)
+- [Weights (PhyslibAlpha)](../weight/basic.md)
 
 ## Sources
 

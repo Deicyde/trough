@@ -54,7 +54,7 @@ The module `PhyslibAlpha.CondensedMatter.Crystal.Symmetry`, [PhyslibAlpha/Conden
 > translations `G`: `(A, σ, b)` sends site `i` of cell `n` to site `σ i` of cell `A n + b i`.
 
 ```lean
-@[ext] structure CellSymmetry (G F : Type*) [AddCommGroup G] where
+structure CellSymmetry (G F : Type*) [AddCommGroup G] where
   /-- The action on cell indices. -/
   linear : G ≃+ G
   /-- The permutation of the labels within a unit cell. -/

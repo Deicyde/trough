@@ -23,7 +23,7 @@ Modules in [Unbounded/Existence/](https://github.com/leanprover-community/physli
 - [Gårding vectors](unbounded-existence-gardingvectors.md)
 - [Gårding vectors are analytic](unbounded-existence-gardingvectorwitness.md)
 - [Growth of the derivatives of the heat kernel](unbounded-existence-gaussiankernelgrowth.md)
-- [The unitary group preserves the domain of its generator](unbounded-existence-generatorinvariance.md)
+- [The unitary group preserves the domain of its generator (GeneratorInvariance)](unbounded-existence-generatorinvariance.md)
 - [Gårding vectors of smooth kernels](unbounded-existence-genericgardingkernel.md)
 - [Pointwise bounds on the derivatives of the heat kernel](unbounded-existence-iteratedkernelgrowth.md)
 - [Stone's theorem: existence of the generator](unbounded-existence-stonegenerator.md)
@@ -33,7 +33,7 @@ Modules in [Unbounded/Flow/](https://github.com/leanprover-community/physlib/tre
 
 - [The unitary group of a self-adjoint operator](unbounded-flow-stone.md)
 - [The generator of the unitary group](unbounded-flow-stoneapi.md)
-- [The unitary group preserves the domain of its generator](unbounded-flow-stoneinvariance.md)
+- [The unitary group preserves the domain of its generator (StoneInvariance)](unbounded-flow-stoneinvariance.md)
 
 Modules in [Unbounded/SpectralIntegral/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral):
 

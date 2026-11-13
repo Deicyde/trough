@@ -224,6 +224,8 @@ theorem HPMap.inner_hermDual (B : HermitianMat dOut ℂ) :
 
 **`HPMap.inner_hermDual'`**, a theorem, [line 441](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/Channels/Dual.lean#L441). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
 
+> Version of `HPMap.inner_hermDual` that uses HermitiaMat.inner directly. …
+
 ```lean
 theorem HPMap.inner_hermDual' (B : HermitianMat dOut ℂ) :
     ⟪f A, B⟫ = ⟪A, f.hermDual B⟫

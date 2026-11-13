@@ -145,7 +145,7 @@ lemma stoneCandidateGenerator_isSymmetric :
 
 ## Depends on
 
-- [Unbounded operators](../../../../physlib/quantummechanics/operators/unbounded.md)
+- [Unbounded operators (Operators/Unbounded)](../../../../physlib/quantummechanics/operators/unbounded.md)
 
 ## Sources
 

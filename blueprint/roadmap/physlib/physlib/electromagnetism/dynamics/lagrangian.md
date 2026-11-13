@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The Lagrangian in electromagnetism
+# The Lagrangian in electromagnetism (Electromagnetism/Dynamics/Lagrangian)
 
 The module `Physlib.Electromagnetism.Dynamics.Lagrangian`, [Physlib/Electromagnetism/Dynamics/Lagrangian.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/Lagrangian.lean): 18 declarations, 5 with a docstring.
 
@@ -19,7 +19,7 @@ The module `Physlib.Electromagnetism.Dynamics.Lagrangian`, [Physlib/Electromagne
 > The lagrangian density is given by
 > `L = -1/(4 μ₀) F_{μν} F^{μν} - A_μ J^μ`
 >
-> …
+> In this implementation we set `μ₀ = 1`. …
 
 ## ii. Key results
 
@@ -265,8 +265,8 @@ lemma gradLagrangian_eq_tensor {𝓕 : FreeSpace}
 
 ## Depends on
 
-- [The Lorentz Current Density](currentdensity.md)
-- [The kinetic term](kineticterm.md)
+- [The Lorentz Current Density (Electromagnetism/Dynamics/CurrentDensity)](currentdensity.md)
+- [The kinetic term (Electromagnetism/Dynamics/KineticTerm)](kineticterm.md)
 
 ## Sources
 

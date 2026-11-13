@@ -314,7 +314,7 @@ lemma evalPotential_maxwellTerm_gaugeTransform (A : ElectromagneticPotential 3)
 
 ## Depends on
 
-- [Extrema of the Lagrangian density](../../../physlib/electromagnetism/dynamics/isextrema.md)
+- [Extrema of the Lagrangian density (Electromagnetism/Dynamics/IsExtrema)](../../../physlib/electromagnetism/dynamics/isextrema.md)
 - [Gauge Transformations of the Electromagnetic Potential](../../../physlib/electromagnetism/kinematics/gaugetransformation.md)
 - [The fields of quantum electrodynamics](fields.md)
 

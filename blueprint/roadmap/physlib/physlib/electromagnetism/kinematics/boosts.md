@@ -104,7 +104,7 @@ lemma magneticFieldMatrix_apply_x_boost_succ_succ {d : ℕ} {c : SpeedOfLight} (
 
 ## Depends on
 
-- [The Magnetic Field](magneticfield.md)
+- [The Magnetic Field (Kinematics/MagneticField)](magneticfield.md)
 - [Boosts in the Lorentz group](../../relativity/lorentzgroup/boosts-basic.md)
 
 ## Proof depends on

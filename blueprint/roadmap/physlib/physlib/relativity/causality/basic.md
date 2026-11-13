@@ -21,6 +21,8 @@ inductive CausalCharacter
   | timeLike
   | lightLike
   | spaceLike
+
+deriving DecidableEq
 ```
 
 **`Lorentz.Vector.causalCharacter`**, a def, [line 39](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Causality/Basic.lean#L39).

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Charged-lepton singlets
+# Charged-lepton singlets (Physlib)
 
 The module `Physlib.Particles.StandardModel.Fermions.LeptonSinglet`, [Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean): 18 declarations (2 instances with no name), 12 with a docstring.
 

@@ -61,7 +61,7 @@ The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.AmplitudePhas
 > `toInitialConditions` function.
 
 ```lean
-@[ext] structure AmplitudePhase where
+structure AmplitudePhase where
   /-- The amplitude of the oscillation. -/
   A : ℝ
   /-- The phase offset of the oscillation. -/

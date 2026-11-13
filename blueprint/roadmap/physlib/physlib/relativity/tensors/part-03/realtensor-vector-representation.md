@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Representation of the Lorentz group on Lorentz vectors
+# Representation of the Lorentz group on Lorentz vectors (Vector/Representation)
 
 The module `Physlib.Relativity.Tensors.RealTensor.Vector.Representation`, [Physlib/Relativity/Tensors/RealTensor/Vector/Representation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/Vector/Representation.lean): 10 declarations, 1 with a docstring.
 

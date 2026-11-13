@@ -151,7 +151,7 @@ lemma koszulSignInsert_eq_remove_same_stat_append {ψ φ φ' : 𝓕} [IsTrans �
 
 ## Depends on
 
-- [List lemmas](../../../mathematics/formathlib/list.md)
+- [List lemmas (List)](../../../mathematics/formathlib/list.md)
 - [Exchange sign for field statistics](fieldstatistics-exchangesign.md)
 
 ## Sources

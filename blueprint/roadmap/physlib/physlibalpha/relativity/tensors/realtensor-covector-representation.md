@@ -59,7 +59,7 @@ lemma sl2Rep_dual_dualBasis (Λ : SL(2,ℂ)) (μ : Fin 1 ⊕ Fin 3) :
 ## Depends on
 
 - [The group SL(2, ℂ) and it's relation to the Lorentz group](../../../physlib/relativity/sl2c/basic.md)
-- [Representation of the Lorentz group on Lorentz vectors](../../../physlib/relativity/tensors/part-03/realtensor-covector-representation.md)
+- [Representation of the Lorentz group on Lorentz vectors (CoVector/Representation)](../../../physlib/relativity/tensors/part-03/realtensor-covector-representation.md)
 
 ## Proof depends on
 

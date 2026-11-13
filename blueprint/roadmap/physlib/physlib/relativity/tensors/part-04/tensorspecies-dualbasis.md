@@ -174,7 +174,7 @@ lemma contr_tmul_basis_eq_dualBasis (c : C) (x : basisIdx (S.τ c)) (v : V c) :
 
 ## Depends on
 
-- [Tensor species](tensorspecies-basic.md)
+- [Tensor species (Basic)](tensorspecies-basic.md)
 
 ## Sources
 

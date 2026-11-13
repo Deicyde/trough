@@ -314,7 +314,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/States/Entanglement.lean",
@@ -500,7 +501,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/States/Mixed/Fidelity.lean",
@@ -574,7 +576,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/States/Mixed/MState.lean",
@@ -1640,7 +1643,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/States/Mixed/TraceDistance.lean",
@@ -1698,7 +1702,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/States/Pure/BargmannInvariant.lean",
@@ -1797,7 +1802,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/States/Pure/BlochSphere.lean",
@@ -1872,7 +1878,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/States/Pure/Braket.lean",
@@ -1891,7 +1898,7 @@
      "kind": "structure",
      "line": 40,
      "doc": "A ket as a vector of unit norm. We follow the convention in `Matrix` of vectors as simple functions\nfrom a Fintype. Kets are distinctly not a vector space in our notion, as they represent only normalized\nstates and so cannot (in general) be added or scaled.",
-     "statement": "structure Ket where\n  vec : d → ℂ\n  normalized' : ∑ x, ‖vec x‖ ^ 2 = 1\n  --TODO: change to `vec : EuclideanSpace ℂ d` / `normalized' : ‖vec‖ = 1`",
+     "statement": "structure Ket where\n  vec : d → ℂ\n  normalized' : ∑ x, ‖vec x‖ ^ 2 = 1",
      "sorry": false
     },
     {
@@ -2391,7 +2398,8 @@
      "sorry": false
     }
    ],
-   "private": 3
+   "private": 3,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/States/Pure/Qubit.lean",
@@ -2674,7 +2682,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

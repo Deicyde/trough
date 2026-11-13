@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Lattice-ordered observables
+# Lattice-ordered observables (LatticeObservables)
 
 The module `PhyslibAlpha.ProbabilisticTheory.Classical.LatticeObservables`, [PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean): 31 declarations (2 instances with no name), 15 with a docstring.
 
@@ -280,7 +280,7 @@ lemma isBauerSimplexStateSpace : IsBauerSimplexStateSpace (FiniteClassicalSystem
 ## Depends on
 
 - [Observables of a sample space](boundedmeasurable.md)
-- [Finite classical systems](finitesystem.md)
+- [Finite classical systems (FiniteSystem)](finitesystem.md)
 - [Classical systems: unique decomposition into pure states](simplexstatespace.md)
 
 ## Proof depends on

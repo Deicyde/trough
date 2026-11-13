@@ -24,6 +24,6 @@ Its references:
 - [The Fourier transform on `SpaceDHilbertSpace`](fourier.md)
 - [Momentum states](momentumstates.md)
 - [Polynomially-bounded Schwartz submodules](polybddschwartzsubmodule.md)
-- [Position states](positionstates.md)
+- [Position states (SpaceD/PositionStates)](positionstates.md)
 - [Schwartz submodule](schwartzsubmodule.md)
 - [Sobolev submodules of `SpaceDHilbertSpace`](sobolevsubmodule.md)

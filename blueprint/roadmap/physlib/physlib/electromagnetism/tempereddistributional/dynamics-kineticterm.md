@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The kinetic term
+# The kinetic term (TemperedDistributional/Dynamics/KineticTerm)
 
 The module `Physlib.Electromagnetism.TemperedDistributional.Dynamics.KineticTerm`, [Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean): 6 declarations, 1 with a docstring.
 
@@ -19,7 +19,7 @@ The module `Physlib.Electromagnetism.TemperedDistributional.Dynamics.KineticTerm
 > In particular the variational gradient `gradKineticTerm` of the kinetic term
 > is directly related to Gauss's law and the Ampere law.
 >
-> …
+> In this implementation we have set `μ₀ = 1`. …
 
 ## ii. Key results
 
@@ -102,8 +102,8 @@ lemma gradKineticTerm_eq_distTensorDeriv {d} {𝓕 : FreeSpace}
 ## Depends on
 
 - [Free space](../dynamics/basic.md)
-- [The Electric Field](electricfield.md)
-- [The Magnetic Field](magneticfield.md)
+- [The Electric Field (TemperedDistributional/ElectricField)](electricfield.md)
+- [The Magnetic Field (TemperedDistributional/MagneticField)](magneticfield.md)
 
 ## Sources
 

@@ -9,7 +9,8 @@
    "doc": "This module provides a home for the theory of Bloch Hamiltonians and states, band projectors,\nenergy bands and gaps, and band geometry. Generic quantum-mechanical infrastructure should be\nreused from Physlib rather than redefined here.",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/CondensedMatter/Basic.lean",
@@ -18,7 +19,8 @@
    "doc": "Condensed matter physics studies the collective behavior of matter, from crystalline structure\nand lattice models to interacting phases, topology, and material response.\n\n## A.1. Scope\n\n- `Crystal` covers crystal structures, reciprocal-space descriptions, symmetries, and dynamics.\n- `LatticeModels` covers Hamiltonian models whose degrees of freedom live on lattices.\n- `BandTheory` covers Bloch descriptions, energy bands, gaps, and band geometry.\n- `ManyBody` covers correlations, quasiparticles, Green functions, and interacting matter.\n- `Topology` covers topological phases and invariants in condensed matter systems.\n- `Response` covers transport and the linear, optical, and nonlinear response of materials.\n\n## A.2. Existing modules\n\nExisting condensed-matter modules currently include `TightBindingChain` and `Thermoelectric`.\nThey remain in their existing locations and have not been reorganized into the scopes above.",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/CondensedMatter/Crystal/Basic.lean",
@@ -69,7 +71,7 @@
      "kind": "structure",
      "line": 93,
      "doc": "A site of `C`, with label `i` in cell `n`.",
-     "statement": "@[ext] structure Site (C : Crystal G) where\n  /-- The cell containing this site. -/\n  cell : G\n  /-- The label of this site within its cell. -/\n  label : C.UnitCell",
+     "statement": "structure Site (C : Crystal G) where\n  /-- The cell containing this site. -/\n  cell : G\n  /-- The label of this site within its cell. -/\n  label : C.UnitCell",
      "sorry": false
     },
     {
@@ -193,7 +195,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/CondensedMatter/Crystal/Bonds.lean",
@@ -264,7 +267,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/CondensedMatter/Crystal/Bravais/Basic.lean",
@@ -335,7 +339,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/CondensedMatter/Crystal/Embedding.lean",
@@ -434,7 +439,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/CondensedMatter/Crystal/PeriodicGraph.lean",
@@ -645,7 +651,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/CondensedMatter/LatticeModels/Basic.lean",
@@ -654,7 +661,8 @@
    "doc": "This module provides a home for hopping Hamiltonians, tight-binding and Hubbard-type models,\nand spin lattice models. A future design issue is the relation between real-space lattice\nHamiltonians and momentum-space Bloch Hamiltonians.",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/CondensedMatter/ManyBody/Basic.lean",
@@ -663,7 +671,8 @@
    "doc": "This module provides a home for correlation functions, quasiparticles, Green functions,\nmean-field descriptions, and interacting quantum matter.",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/CondensedMatter/Response/Basic.lean",
@@ -672,7 +681,8 @@
    "doc": "This module provides a home for electrical and thermal transport, linear and thermoelectric\nresponse, optical response, and nonlinear response.",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/CondensedMatter/Thermoelectric/Basic.lean",
@@ -783,7 +793,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/CondensedMatter/TightBindingChain/Basic.lean",
@@ -1170,7 +1181,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/CondensedMatter/Topology/Basic.lean",
@@ -1179,7 +1191,8 @@
    "doc": "This module provides a home for topological invariants of bands, Chern and topological\ninsulators, Weyl and nodal semimetals, topological superconductors, symmetry-protected phases,\nand interacting topological phases. It distinguishes local band geometry from global\ntopological invariants.",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

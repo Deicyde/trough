@@ -56,7 +56,7 @@ lemma quarkDoublet_rep_mat (U : JetGaugeGroupI) :
 
 ## Depends on
 
-- [The type corresponding to quark doublets](../part-03/fermions-quarkdoublet-basic.md)
+- [The type corresponding to quark doublets (PhyslibAlpha)](../part-03/fermions-quarkdoublet-basic.md)
 - [The Standard Model gauge group as local gauge data](../part-04/gaugegroup-localgaugedata.md)
 
 ## Sources

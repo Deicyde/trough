@@ -64,7 +64,7 @@ def ComponentIdx.cast {n m : ℕ} {c : Fin n → C} {cm : Fin m → C}
 
 ## Depends on
 
-- [Tensor species](../part-04/tensorspecies-basic.md)
+- [Tensor species (Basic)](../part-04/tensorspecies-basic.md)
 
 ## Sources
 

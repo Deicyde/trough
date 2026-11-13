@@ -78,7 +78,7 @@ theorem faradayLaw (t : Time) (x : Space) (hV : ContDiff ℝ ∞ V) :
 
 ## Depends on
 
-- [Extrema of the Lagrangian density](../dynamics/isextrema.md)
+- [Extrema of the Lagrangian density (Electromagnetism/Dynamics/IsExtrema)](../dynamics/isextrema.md)
 
 ## Proof depends on
 

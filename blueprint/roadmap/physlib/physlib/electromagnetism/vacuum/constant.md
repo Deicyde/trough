@@ -138,7 +138,7 @@ lemma constantEB_isExtrema {𝓕 : FreeSpace}
 
 ## Depends on
 
-- [Extrema of the Lagrangian density](../dynamics/isextrema.md)
+- [Extrema of the Lagrangian density (Electromagnetism/Dynamics/IsExtrema)](../dynamics/isextrema.md)
 
 ## Sources
 

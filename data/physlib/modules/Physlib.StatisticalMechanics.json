@@ -131,7 +131,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StatisticalMechanics/CanonicalEnsemble/Basic.lean",
@@ -994,7 +995,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StatisticalMechanics/CanonicalEnsemble/Finite.lean",
@@ -1325,7 +1327,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean",
@@ -1556,7 +1559,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StatisticalMechanics/CanonicalEnsemble/TwoState.lean",
@@ -1670,7 +1674,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean",
@@ -1720,7 +1725,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StatisticalMechanics/MicroCanonicalEnsemble/IdealGas.lean",
@@ -1770,7 +1776,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean",
@@ -1892,7 +1899,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   }
  ]
 }

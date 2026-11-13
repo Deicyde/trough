@@ -11,7 +11,7 @@ Modules in [WickAlgebra/](https://github.com/leanprover-community/physlib/tree/2
 - [Static Wick's terms](wickalgebra-staticwickterm.md)
 - [Static Wick's theorem](wickalgebra-staticwicktheorem.md)
 - [SuperCommute on Field operator algebra](wickalgebra-supercommute.md)
-- [Time contractions](wickalgebra-timecontraction.md)
+- [Time contractions (TimeContraction)](wickalgebra-timecontraction.md)
 - [Time Ordering on Field operator algebra](wickalgebra-timeorder.md)
 - [Universality properties of WickAlgebra](wickalgebra-universality.md)
 - [Wick's theorem](wickalgebra-wickstheorem.md)

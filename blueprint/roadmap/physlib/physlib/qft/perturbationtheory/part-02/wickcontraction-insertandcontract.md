@@ -281,7 +281,7 @@ lemma stat_ofFinset_of_insertAndContractLiftFinset (φ : 𝓕.FieldOp) (φs : Li
 
 ## Depends on
 
-- [List lemmas](../../../mathematics/formathlib/list-insertidx.md)
+- [List lemmas (InsertIdx)](../../../mathematics/formathlib/list-insertidx.md)
 - [Field statistics of a finite set.](../part-01/fieldstatistics-offinset.md)
 - [List of uncontracted elements of a Wick contraction](../part-03/wickcontraction-uncontractedlist.md)
 

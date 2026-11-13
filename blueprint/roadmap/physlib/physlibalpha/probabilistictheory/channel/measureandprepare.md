@@ -48,7 +48,7 @@ def IsMeasureAndPrepare (Φ : Channel E₂ E₁) : Prop
 
 ## Depends on
 
-- [Finite classical systems](../classical/finitesystem.md)
+- [Finite classical systems (FiniteSystem)](../classical/finitesystem.md)
 
 ## Sources
 

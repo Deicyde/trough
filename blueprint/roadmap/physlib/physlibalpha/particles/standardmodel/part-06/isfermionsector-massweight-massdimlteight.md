@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The invariants below mass weight eight
+# The invariants below mass weight eight (IsFermionSector/MassWeight/MassDimLTEight)
 
 The module `PhyslibAlpha.Particles.StandardModel.IsFermionSector.MassWeight.MassDimLTEight`, [PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean): 41 declarations, 41 with a docstring.
 

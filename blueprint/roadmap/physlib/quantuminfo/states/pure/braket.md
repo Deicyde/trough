@@ -31,7 +31,6 @@ The module `QuantumInfo.States.Pure.Braket`, [QuantumInfo/States/Pure/Braket.lea
 structure Ket where
   vec : d → ℂ
   normalized' : ∑ x, ‖vec x‖ ^ 2 = 1
-  --TODO: change to `vec : EuclideanSpace ℂ d` / `normalized' : ‖vec‖ = 1`
 ```
 
 **`Bra`**, a structure, [line 47](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/States/Pure/Braket.lean#L47).

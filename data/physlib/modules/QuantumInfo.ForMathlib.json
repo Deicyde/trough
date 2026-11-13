@@ -82,7 +82,8 @@
      "sorry": false
     }
    ],
-   "private": 8
+   "private": 8,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/ContinuousLinearMap.lean",
@@ -108,7 +109,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/ContinuousSup.lean",
@@ -278,7 +280,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/ExchangeRelations.lean",
@@ -345,7 +348,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Filter.lean",
@@ -371,7 +375,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean",
@@ -557,7 +562,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean",
@@ -671,7 +677,8 @@
      "sorry": false
     }
    ],
-   "private": 13
+   "private": 13,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/HilbertSchmidtOperatorSpace.lean",
@@ -1121,7 +1128,8 @@
      "sorry": false
     }
    ],
-   "private": 6
+   "private": 6,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequality.lean",
@@ -1195,7 +1203,8 @@
      "sorry": false
     }
    ],
-   "private": 9
+   "private": 9,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean",
@@ -1285,7 +1294,8 @@
      "sorry": false
     }
    ],
-   "private": 30
+   "private": 30,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIVtoV.lean",
@@ -1351,7 +1361,8 @@
      "sorry": false
     }
    ],
-   "private": 6
+   "private": 6,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean",
@@ -1473,7 +1484,8 @@
      "sorry": false
     }
    ],
-   "private": 21
+   "private": 21,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean",
@@ -1827,7 +1839,8 @@
      "sorry": false
     }
    ],
-   "private": 24
+   "private": 24,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzTheorem.lean",
@@ -2117,7 +2130,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/OperatorGeometricMean.lean",
@@ -2151,7 +2165,8 @@
      "sorry": false
     }
    ],
-   "private": 4
+   "private": 4,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat.lean",
@@ -2160,7 +2175,8 @@
    "doc": "",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Basic.lean",
@@ -3210,7 +3226,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/CFC.lean",
@@ -3961,7 +3978,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean",
@@ -4003,7 +4021,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Inner.lean",
@@ -4418,7 +4437,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Jordan.lean",
@@ -4580,7 +4600,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean",
@@ -4683,7 +4704,8 @@
      "sorry": false
     }
    ],
-   "private": 11
+   "private": 11,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/LogExp.lean",
@@ -5029,7 +5051,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/NonSingular.lean",
@@ -5311,7 +5334,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Order.lean",
@@ -5822,7 +5846,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Peierls.lean",
@@ -5872,7 +5897,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Proj.lean",
@@ -6394,7 +6420,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Reindex.lean",
@@ -6529,7 +6556,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Rpow.lean",
@@ -6952,7 +6980,8 @@
      "sorry": false
     }
    ],
-   "private": 19
+   "private": 19,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Schatten.lean",
@@ -7083,7 +7112,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Sqrt.lean",
@@ -7173,7 +7203,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Trace.lean",
@@ -7495,7 +7526,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Unitary.lean",
@@ -7601,7 +7633,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean",
@@ -7651,7 +7684,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Isometry.lean",
@@ -7997,7 +8031,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/LimSupInf.lean",
@@ -8111,7 +8146,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/LinearEquiv.lean",
@@ -8210,7 +8246,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Majorization.lean",
@@ -8573,7 +8610,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Matrix.lean",
@@ -9335,7 +9373,8 @@
      "sorry": false
     }
    ],
-   "private": 2
+   "private": 2,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/MatrixNorm/TraceNorm.lean",
@@ -9529,7 +9568,8 @@
      "sorry": false
     }
    ],
-   "private": 3
+   "private": 3,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Minimax.lean",
@@ -9603,7 +9643,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Misc.lean",
@@ -9685,7 +9726,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/SionMinimax.lean",
@@ -9932,7 +9974,8 @@
      "sorry": false
     }
    ],
-   "private": 3
+   "private": 3,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Superadditive.lean",
@@ -9982,7 +10025,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Tactic/Commutes.lean",
@@ -9991,7 +10035,8 @@
    "doc": "This tactic uses `aesop` to discharge goals relating to the `Commute` relation. It mostly\ntries to do straightforward recursion on expressions, along with some basic normalization\nof ring operations.",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Tactic/Commutes/Attribute.lean",
@@ -10000,7 +10045,8 @@
    "doc": "This module defines the `Commutes` Aesop rule set which is used by the\n`commutes` tactic. Aesop rule sets only become visible once the file in which\nthey're declared is imported, so we must put this declaration into its own file.",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/ULift.lean",
@@ -10098,7 +10144,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Unitary.lean",
@@ -10148,7 +10195,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

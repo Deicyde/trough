@@ -35,7 +35,12 @@ The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.PeriodFormula`, [
 > proved — and the upper bound quantifies how it grows as the amplitude approaches the inverted
 > position.
 >
-> …
+> What this module does not do is identify `periodFormula θ₀` with the period of a solution of
+> the nonlinear equation of motion released from rest at `θ₀`. That identification is the
+> theorem the formula is named for, and its formalization — the quarter period as a first hitting
+> time, the quadrature of the energy first integral, the substitution, and their assembly, on top
+> of the uniqueness of solutions and the time-reversal symmetry of the equation of motion
+> (formalized in the companion module `SimplePendulum/Solution.lean`) — is not yet carried out; …
 
 ## ii. Key results
 
@@ -91,6 +96,10 @@ The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.PeriodFormula`, [
 > so nothing is claimed there.
 
 **`ClassicalMechanics.SimplePendulum.periodFormula`**, a def, [line 137](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L137).
+
+> The classical formula `4 √(ℓ/g) K(sin² (θ₀/2))` for the period of libration of the simple
+> gravity pendulum with amplitude `θ₀` (Landau & Lifshitz, §11, Problem 1, where it is written
+> `T = 4 √(l/g) K(sin ½φ₀)` in the modulus convention). …
 
 ```lean
 noncomputable def periodFormula (θ₀ : ℝ) : ℝ
@@ -168,6 +177,9 @@ lemma periodFormula_tendsto_smallAnglePeriod :
 > of `K`. Both are restated as bundled `MonotoneOn` and `StrictMonoOn` facts on `[0, π)`.
 
 **`ClassicalMechanics.SimplePendulum.periodFormula_mono`**, a lemma, [line 239](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean#L239).
+
+> The period formula is increasing in the amplitude on `[0, π)`: for `0 ≤ θ₁ ≤ θ₂ < π`,
+> `periodFormula θ₁ ≤ periodFormula θ₂`. …
 
 ```lean
 lemma periodFormula_mono {θ₁ θ₂ : ℝ} (h0 : 0 ≤ θ₁) (h12 : θ₁ ≤ θ₂) (hπ : θ₂ < Real.pi) :

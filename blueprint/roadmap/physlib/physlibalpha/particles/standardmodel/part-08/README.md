@@ -5,7 +5,7 @@ navigation: transparent
 # The mass-weight polynomial on… to The transformation law of the…
 
 - [The mass-weight polynomial on the jet algebra of the Standard Model](jetalgebra-massweightpoly.md)
-- [The jet algebra of the Standard Model is a Standard Model](jetalgebra-realization.md)
+- [The jet algebra of the Standard Model is a Standard Model (Realization)](jetalgebra-realization.md)
 - [The transformation laws of the field symbols of the jet algebra](jetalgebra-transformsin.md)
 
 Modules in [JetAlgebra/CovJetAlgebra/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra):

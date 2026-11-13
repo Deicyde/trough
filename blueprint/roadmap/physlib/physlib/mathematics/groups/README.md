@@ -15,6 +15,6 @@ Modules in [SpecialUnitary/LieAlgebra/](https://github.com/leanprover-community/
 
 Modules in [SpecialUnitary/LieAlgebra/GellMann/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann):
 
-- [The generalized Gell-Mann matrices](specialunitary-liealgebra-gellmann-basic.md)
+- [The generalized Gell-Mann matrices (Physlib)](specialunitary-liealgebra-gellmann-basic.md)
 - [The adjoint action in the Gell-Mann basis](specialunitary-liealgebra-gellmann-adjoint.md)
 - [The Pauli and Gell-Mann matrices](specialunitary-liealgebra-gellmann-specialcases.md)

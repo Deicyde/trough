@@ -231,7 +231,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean",
@@ -574,7 +575,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean",
@@ -640,7 +642,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCoefficients.lean",
@@ -1031,7 +1034,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean",
@@ -1378,7 +1382,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/CouplingSchemes.lean",
@@ -1761,7 +1766,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/MultipoleSumRule.lean",
@@ -1792,7 +1798,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean",
@@ -1839,7 +1846,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/NormalizedBasis.lean",
@@ -1990,7 +1998,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean",
@@ -2165,7 +2174,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean",
@@ -2296,7 +2306,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean",
@@ -2547,7 +2558,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean",
@@ -2874,7 +2886,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean",
@@ -2969,7 +2982,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean",
@@ -3308,7 +3322,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean",
@@ -3403,7 +3418,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartIrreducible.lean",
@@ -3558,7 +3574,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean",
@@ -3637,7 +3654,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Blackbody/RayleighJeans.lean",
@@ -3764,7 +3782,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean",
@@ -3819,7 +3838,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Foundations/PBR/Phases.lean",
@@ -3894,7 +3914,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/HarmonicOscillator/LadderSystem.lean",
@@ -3925,7 +3946,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/HarmonicOscillator/Vacuum.lean",
@@ -4092,7 +4114,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean",
@@ -4135,7 +4158,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean",
@@ -4266,7 +4290,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean",
@@ -4541,7 +4566,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/BoundStatesL2.lean",
@@ -4664,7 +4690,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/Degeneracy.lean",
@@ -5047,7 +5074,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/Eigenfunctions.lean",
@@ -5246,7 +5274,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean",
@@ -5349,7 +5378,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean",
@@ -5516,7 +5546,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean",
@@ -5735,7 +5766,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/PolyBounded.lean",
@@ -5922,7 +5954,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean",
@@ -6069,7 +6102,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean",
@@ -6328,7 +6362,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean",
@@ -6619,7 +6654,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/QuantumHarmonicOscillator.lean",
@@ -6830,7 +6866,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/QubitGates.lean",
@@ -6885,7 +6922,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/StinespringDilation.lean",
@@ -7380,7 +7418,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

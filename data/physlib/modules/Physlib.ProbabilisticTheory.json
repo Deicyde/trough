@@ -23,7 +23,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Channel/Basic.lean",
@@ -370,7 +371,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Channel/Covariant.lean",
@@ -445,7 +447,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Channel/Norm.lean",
@@ -500,7 +503,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Channel/Reversible.lean",
@@ -731,7 +735,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean",
@@ -790,7 +795,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Effect/Basic.lean",
@@ -869,7 +875,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Effect/Complement.lean",
@@ -948,7 +955,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Effect/Convex.lean",
@@ -987,7 +995,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Effect/Metric.lean",
@@ -1062,7 +1071,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Effect/Sharp.lean",
@@ -1117,7 +1127,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/LocalNet/Basic.lean",
@@ -1300,7 +1311,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean",
@@ -1367,7 +1379,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean",
@@ -1490,7 +1503,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean",
@@ -1689,7 +1703,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean",
@@ -1984,7 +1999,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/OrderUnit/Basic.lean",
@@ -2059,7 +2075,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/OrderUnit/Cone.lean",
@@ -2122,7 +2139,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/StarAlgebra/State.lean",
@@ -2225,7 +2243,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/StarAlgebra/Traciality.lean",
@@ -2260,7 +2279,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/State/Basic.lean",
@@ -2311,7 +2331,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/State/Convex.lean",
@@ -2430,7 +2451,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/State/Discrimination.lean",
@@ -2565,7 +2587,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/State/Local.lean",
@@ -2684,7 +2707,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/State/Metric.lean",
@@ -2851,7 +2875,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/State/Pairing.lean",
@@ -2938,7 +2963,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/State/Separation.lean",
@@ -3029,7 +3055,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/State/WeightEquivalence.lean",
@@ -3108,7 +3135,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Weight/Basic.lean",
@@ -3239,7 +3267,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Weight/Extension.lean",
@@ -3354,7 +3383,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

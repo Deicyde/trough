@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Covariance
+# Covariance (Physlib)
 
 The module `Physlib.QuantumMechanics.Operators.Covariance`, [Physlib/QuantumMechanics/Operators/Covariance.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Covariance.lean): 5 declarations, 4 with a docstring.
 

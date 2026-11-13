@@ -278,7 +278,7 @@ lemma toFieldStrength_bareGradient_ne_zero {d : ℕ} (i : Fin d)
 
 ## Depends on
 
-- [The Field Strength Tensor](fieldstrength.md)
+- [The Field Strength Tensor (Kinematics/FieldStrength)](fieldstrength.md)
 
 ## Sources
 

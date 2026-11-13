@@ -51,6 +51,7 @@ inductive FieldCategory where
   | gauge : FieldCategory
   /-- The bosonic species. -/
   | scalar : FieldCategory
+deriving DecidableEq
 ```
 
 **An instance with no name**, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean#L75).

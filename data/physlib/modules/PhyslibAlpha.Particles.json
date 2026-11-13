@@ -35,7 +35,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/EffectivePotential.lean",
@@ -86,7 +87,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeSlice.lean",
@@ -221,7 +223,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/GaugeTorus.lean",
@@ -268,7 +271,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/Invariants.lean",
@@ -755,7 +759,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/Module.lean",
@@ -882,7 +887,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/OrbitRepresentative.lean",
@@ -993,7 +999,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/SwapDoublet.lean",
@@ -1108,7 +1115,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/QED/Basic.lean",
@@ -2435,7 +2443,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/QED/CurrentCoupling.lean",
@@ -2502,7 +2511,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/QED/Evaluation.lean",
@@ -2689,7 +2699,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/QED/FermionStatistics.lean",
@@ -2792,7 +2803,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/QED/Fields.lean",
@@ -2915,7 +2927,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/QED/FieldStrength.lean",
@@ -3030,7 +3043,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/QED/GammaMatrices.lean",
@@ -3133,7 +3147,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/QED/GaugeInvariance.lean",
@@ -3376,7 +3391,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/QED/JetCompleteness.lean",
@@ -3479,7 +3495,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/QED/Lagrangian.lean",
@@ -3598,7 +3615,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/QED/LorentzInvariance.lean",
@@ -3841,7 +3859,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/QED/MassDimension.lean",
@@ -4024,7 +4043,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Basic.lean",
@@ -4167,7 +4187,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/Basic.lean",
@@ -4958,7 +4979,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/Basic.lean",
@@ -5025,7 +5047,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/FermionGaugeSector/MassWeight.lean",
@@ -5080,7 +5103,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/Basic.lean",
@@ -5159,7 +5183,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/GaugeHiggsSector/MassWeight.lean",
@@ -5338,7 +5363,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean",
@@ -5373,7 +5399,7 @@
      "kind": "inductive",
      "line": 75,
      "doc": "The abstract index of a single covariant generator of the field algebra: one of\nthe covariant-derivative towers of the field strength, of the Higgs and its\nconjugate, or of the three families of each fermion species and their conjugates,\napplied to a member of the dual basis of its value space. Only basis indices are\nstored, so for a fixed tower length the generators of a given mass weight form a\nfinite type. The evaluation in `B` is `generatorVal`.",
-     "statement": "inductive Generators where\n  /-- The Higgs tower `∇_l H` applied to a dual basis vector. -/\n  | H : (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 → Generators\n  /-- The conjugate-Higgs tower `∇_l H̄` applied to a dual basis vector. -/\n  | barH : (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 → Generators\n  /-- The field-strength tower `∇_l F_μν` applied to a dual basis vector. -/\n  | F : (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → (Fin 1 ⊕ Fin 3) → (Fin 1 ⊕ Fin 3) →\n      (Fin 8 ⊕ Fin 3 ⊕ Fin 1) → Generators\n  /-- The fermion tower `∇_l d` of the `i`-th family applied to a dual basis vector. -/\n  | d : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 × Fin 3 → Generators\n  /-- The fermion tower `∇_l bard` of the `i`-th family applied to a dual basis vector. -/\n  | bard : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 × Fin 3 → Generators\n  /-- The fermion tower `∇_l u` of the `i`-th family applied to a dual basis vector. -/\n  | u : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 × Fin 3 → Generators\n  /-- The fermion tower `∇_l baru` of the `i`-th family applied to a dual basis vector. -/\n  | baru : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 × Fin 3 → Generators\n  /-- The fermion tower `∇_l Q` of the `i`-th family applied to a dual basis vector. -/\n  | Q : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 × Fin 3 × Fin 2 → Generators\n  /-- The fermion tower `∇_l barQ` of the `i`-th family applied to a dual basis vector. -/\n  | barQ : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 × Fin 3 × Fin 2 → Generators\n  /-- The fermion tower `∇_l L` of the `i`-th family applied to a dual basis vector. -/\n  | L : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 × Fin 2 → Generators\n  /-- The fermion tower `∇_l barL` of the `i`-th family applied to a dual basis vector. -/\n  | barL : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 × Fin 2 → Generators\n  /-- The fermion tower `∇_l e` of the `i`-th family applied to a dual basis vector. -/\n  | e : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 → Generators\n  /-- The fermion tower `∇_l bare` of the `i`-th family applied to a dual basis vector. -/\n  | bare : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 → Generators",
+     "statement": "inductive Generators where\n  /-- The Higgs tower `∇_l H` applied to a dual basis vector. -/\n  | H : (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 → Generators\n  /-- The conjugate-Higgs tower `∇_l H̄` applied to a dual basis vector. -/\n  | barH : (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 → Generators\n  /-- The field-strength tower `∇_l F_μν` applied to a dual basis vector. -/\n  | F : (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → (Fin 1 ⊕ Fin 3) → (Fin 1 ⊕ Fin 3) →\n      (Fin 8 ⊕ Fin 3 ⊕ Fin 1) → Generators\n  /-- The fermion tower `∇_l d` of the `i`-th family applied to a dual basis vector. -/\n  | d : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 × Fin 3 → Generators\n  /-- The fermion tower `∇_l bard` of the `i`-th family applied to a dual basis vector. -/\n  | bard : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 × Fin 3 → Generators\n  /-- The fermion tower `∇_l u` of the `i`-th family applied to a dual basis vector. -/\n  | u : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 × Fin 3 → Generators\n  /-- The fermion tower `∇_l baru` of the `i`-th family applied to a dual basis vector. -/\n  | baru : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 × Fin 3 → Generators\n  /-- The fermion tower `∇_l Q` of the `i`-th family applied to a dual basis vector. -/\n  | Q : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 × Fin 3 × Fin 2 → Generators\n  /-- The fermion tower `∇_l barQ` of the `i`-th family applied to a dual basis vector. -/\n  | barQ : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 × Fin 3 × Fin 2 → Generators\n  /-- The fermion tower `∇_l L` of the `i`-th family applied to a dual basis vector. -/\n  | L : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 × Fin 2 → Generators\n  /-- The fermion tower `∇_l barL` of the `i`-th family applied to a dual basis vector. -/\n  | barL : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 × Fin 2 → Generators\n  /-- The fermion tower `∇_l e` of the `i`-th family applied to a dual basis vector. -/\n  | e : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 → Generators\n  /-- The fermion tower `∇_l bare` of the `i`-th family applied to a dual basis vector. -/\n  | bare : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 → Generators\nderiving DecidableEq",
      "sorry": false
     },
     {
@@ -5413,7 +5439,7 @@
      "kind": "inductive",
      "line": 159,
      "doc": "The three classes of covariant generator.",
-     "statement": "inductive GeneratorClass where\n  /-- The gauge class: the field-strength towers. -/\n  | gauge : GeneratorClass\n  /-- The Higgs class: the Higgs towers and their conjugates. -/\n  | higgs : GeneratorClass\n  /-- The fermion class: the fermion towers and their conjugates. -/\n  | fermion : GeneratorClass",
+     "statement": "inductive GeneratorClass where\n  /-- The gauge class: the field-strength towers. -/\n  | gauge : GeneratorClass\n  /-- The Higgs class: the Higgs towers and their conjugates. -/\n  | higgs : GeneratorClass\n  /-- The fermion class: the fermion towers and their conjugates. -/\n  | fermion : GeneratorClass\nderiving DecidableEq",
      "sorry": false
     },
     {
@@ -5713,7 +5739,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight.lean",
@@ -5996,7 +6023,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Filtration.lean",
@@ -6223,7 +6251,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/MassWeight/Invariants.lean",
@@ -6526,7 +6555,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/MixedSector/Basic.lean",
@@ -6585,7 +6615,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/Sectors.lean",
@@ -7016,7 +7047,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Basic.lean",
@@ -7107,7 +7139,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/BarHiggs.lean",
@@ -7706,7 +7739,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Higgs.lean",
@@ -8289,7 +8323,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/Families/Symbols.lean",
@@ -8896,7 +8931,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/GaugeWeight.lean",
@@ -9015,7 +9051,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimEight.lean",
@@ -9478,7 +9515,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/CovRealization/YukawaSector/MassDimLTEight.lean",
@@ -9541,7 +9579,8 @@
      "sorry": false
     }
    ],
-   "private": 2
+   "private": 2,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/Basic.lean",
@@ -9788,7 +9827,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Fermions/DownSinglet/GaugeAlgebraAction.lean",
@@ -9979,7 +10019,8 @@
      "sorry": false
     }
    ],
-   "private": 8
+   "private": 8,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Fermions/JetAlgebra/Basic.lean",
@@ -10426,7 +10467,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Fermions/JetAlgebra/Species.lean",
@@ -10757,7 +10799,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/Basic.lean",
@@ -11088,7 +11131,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Fermions/LeptonDoublet/GaugeAlgebraAction.lean",
@@ -11271,7 +11315,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean",
@@ -11498,7 +11543,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/GaugeAlgebraAction.lean",
@@ -11613,7 +11659,8 @@
      "sorry": false
     }
    ],
-   "private": 3
+   "private": 3,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Fermions/MatterField.lean",
@@ -11964,7 +12011,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Fermions/QuarkDoublet/Basic.lean",
@@ -12251,7 +12299,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Fermions/QuarkDoublet/GaugeAlgebraAction.lean",
@@ -12442,7 +12491,8 @@
      "sorry": false
     }
    ],
-   "private": 7
+   "private": 7,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Fermions/UpSinglet/Basic.lean",
@@ -12681,7 +12731,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Fermions/UpSinglet/GaugeAlgebraAction.lean",
@@ -12872,7 +12923,8 @@
      "sorry": false
     }
    ],
-   "private": 7
+   "private": 7,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/FieldData.lean",
@@ -12903,7 +12955,7 @@
      "kind": "inductive",
      "line": 78,
      "doc": "The fifteen fermion species of the Standard Model: each of the five fermion types in\neach of the three generations, the generation `i : Fin 3` carried by the constructor.\nTwo generations of one type share a representation package but are distinct species.",
-     "statement": "inductive FermionType where\n  /-- The lepton doublet of generation `i`, `(1, 2)_{-3}`. -/\n  | leptonDoublet (i : Fin 3) : FermionType\n  /-- The charged-lepton singlet of generation `i`, `(1, 1)_{-6}`. -/\n  | leptonSinglet (i : Fin 3) : FermionType\n  /-- The quark doublet of generation `i`, `(3, 2)_{1}`. -/\n  | quarkDoublet (i : Fin 3) : FermionType\n  /-- The up-type quark singlet of generation `i`, `(3, 1)_{4}`. -/\n  | upSinglet (i : Fin 3) : FermionType\n  /-- The down-type quark singlet of generation `i`, `(3, 1)_{-2}`. -/\n  | downSinglet (i : Fin 3) : FermionType",
+     "statement": "inductive FermionType where\n  /-- The lepton doublet of generation `i`, `(1, 2)_{-3}`. -/\n  | leptonDoublet (i : Fin 3) : FermionType\n  /-- The charged-lepton singlet of generation `i`, `(1, 1)_{-6}`. -/\n  | leptonSinglet (i : Fin 3) : FermionType\n  /-- The quark doublet of generation `i`, `(3, 2)_{1}`. -/\n  | quarkDoublet (i : Fin 3) : FermionType\n  /-- The up-type quark singlet of generation `i`, `(3, 1)_{4}`. -/\n  | upSinglet (i : Fin 3) : FermionType\n  /-- The down-type quark singlet of generation `i`, `(3, 1)_{-2}`. -/\n  | downSinglet (i : Fin 3) : FermionType\n\nderiving DecidableEq, Fintype",
      "sorry": false
     },
     {
@@ -13123,7 +13175,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/GaugeAlgebra/Basic.lean",
@@ -13430,7 +13483,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/GaugeAlgebra/Basis.lean",
@@ -14081,7 +14135,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/GaugeAlgebra/JetGaugeAlgebra.lean",
@@ -14792,7 +14847,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/GaugeAlgebra/RootDecomposition.lean",
@@ -15267,7 +15323,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/GaugeGroup/AdjointMatrix.lean",
@@ -15350,7 +15407,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/GaugeGroup/Basic.lean",
@@ -15413,7 +15471,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/GaugeGroup/GaugeWeight.lean",
@@ -15948,7 +16007,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Adjoint.lean",
@@ -16311,7 +16371,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/Basic.lean",
@@ -16722,7 +16783,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/GaugeGroup/Invariants/IsU1BiAdjoint.lean",
@@ -16805,7 +16867,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Basic.lean",
@@ -17000,7 +17063,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/GaugeGroup/JetGaugeGroup/Truncation.lean",
@@ -17075,7 +17139,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/GaugeGroup/LocalGaugeData.lean",
@@ -17234,7 +17299,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/GaugeGroup/MaurerCartan/Basic.lean",
@@ -17353,7 +17419,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/GaugeGroup/SU2Conjugation.lean",
@@ -17468,7 +17535,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/HiggsBoson/GaugeAlgebraAction.lean",
@@ -17643,7 +17711,8 @@
      "sorry": false
     }
    ],
-   "private": 7
+   "private": 7,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean",
@@ -17746,7 +17815,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Basic.lean",
@@ -17865,7 +17935,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/HiggsBoson/MatterField.lean",
@@ -17944,7 +18015,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/InvariantReduction.lean",
@@ -18191,7 +18263,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/IsFermionSector/Basic.lean",
@@ -18254,7 +18327,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/IsFermionSector/Components.lean",
@@ -18641,7 +18715,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/Centre.lean",
@@ -18748,7 +18823,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/IsFermionSector/Deriv/GaugeWeight.lean",
@@ -19051,7 +19127,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/Basic.lean",
@@ -19238,7 +19315,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/GaugeWeight.lean",
@@ -19597,7 +19675,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticFamilies.lean",
@@ -20096,7 +20175,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/KineticTerms.lean",
@@ -20923,7 +21003,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimEight.lean",
@@ -21630,7 +21711,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/IsFermionSector/MassWeight/MassDimLTEight.lean",
@@ -22001,7 +22083,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Basic.lean",
@@ -22124,7 +22207,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/Centre.lean",
@@ -22167,7 +22251,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/IsGaugeSector/Deriv/GaugeWeight.lean",
@@ -22358,7 +22443,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/Basic.lean",
@@ -22545,7 +22631,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/GaugeWeight.lean",
@@ -22764,7 +22851,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimEight.lean",
@@ -23807,7 +23895,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean",
@@ -23994,7 +24083,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/JetAlgebra/AlgebraRealization.lean",
@@ -24105,7 +24195,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/JetAlgebra/Basic.lean",
@@ -24224,7 +24315,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Basic.lean",
@@ -24823,7 +24915,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Higgs.lean",
@@ -25134,7 +25227,8 @@
      "sorry": false
     }
    ],
-   "private": 2
+   "private": 2,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/JetAlgebra/CovJetAlgebra/Sectors.lean",
@@ -25429,7 +25523,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/JetAlgebra/FieldAlgebra.lean",
@@ -25740,7 +25835,8 @@
      "sorry": false
     }
    ],
-   "private": 3
+   "private": 3,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/JetAlgebra/GaugeAction.lean",
@@ -25871,7 +25967,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/JetAlgebra/Generators.lean",
@@ -26482,7 +26579,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/JetAlgebra/Invariants.lean",
@@ -26569,7 +26667,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/JetAlgebra/JetDeriv.lean",
@@ -26748,7 +26847,8 @@
      "sorry": false
     }
    ],
-   "private": 10
+   "private": 10,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/JetAlgebra/LorentzAction.lean",
@@ -26899,7 +26999,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/JetAlgebra/MassWeightPoly.lean",
@@ -27222,7 +27323,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/JetAlgebra/Realization.lean",
@@ -27245,7 +27347,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Basic.lean",
@@ -27568,7 +27671,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/JetAlgebra/SectorEquiv/Structure.lean",
@@ -27795,7 +27899,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/JetAlgebra/TransformsIn.lean",
@@ -28022,7 +28127,8 @@
      "sorry": false
     }
    ],
-   "private": 5
+   "private": 5,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/Basic.lean",
@@ -28153,7 +28259,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/GaugeAction.lean",
@@ -28288,7 +28395,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/JetDeriv.lean",
@@ -28483,7 +28591,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/LorentzAction.lean",
@@ -28586,7 +28695,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassDim.lean",
@@ -28653,7 +28763,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/MassWeightPoly.lean",
@@ -28840,7 +28951,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/Prod.lean",
@@ -28863,7 +28975,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Matter/Bosonic/TransformsIn.lean",
@@ -28922,7 +29035,8 @@
      "sorry": false
     }
    ],
-   "private": 2
+   "private": 2,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/Basic.lean",
@@ -29061,7 +29175,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/GaugeAction.lean",
@@ -29196,7 +29311,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/JetDeriv.lean",
@@ -29455,7 +29571,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/LorentzAction.lean",
@@ -29558,7 +29675,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassDim.lean",
@@ -29625,7 +29743,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/MassWeightPoly.lean",
@@ -29848,7 +29967,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/Prod.lean",
@@ -29887,7 +30007,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Matter/Fermionic/TransformsIn.lean",
@@ -29946,7 +30067,8 @@
      "sorry": false
     }
    ],
-   "private": 2
+   "private": 2,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Model/Consistency.lean",
@@ -29977,7 +30099,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Model/LeptonDoublet.lean",
@@ -30000,7 +30123,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Realization/Basic.lean",
@@ -30347,7 +30471,8 @@
      "sorry": false
     }
    ],
-   "private": 2
+   "private": 2,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Realization/Commutations.lean",
@@ -31090,7 +31215,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Realization/CovariantDeriv.lean",
@@ -32029,7 +32155,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Realization/CovFieldAlgebra/Basic.lean",
@@ -32116,7 +32243,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Realization/CovStandardModel.lean",
@@ -33535,7 +33663,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/Basic.lean",
@@ -34174,7 +34303,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/Basic.lean",
@@ -34261,7 +34391,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/Centre.lean",
@@ -34304,7 +34435,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/DerivSubmodule/GaugeWeight.lean",
@@ -34335,7 +34467,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/Basic.lean",
@@ -34406,7 +34539,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/GaugeWeight.lean",
@@ -35005,7 +35139,8 @@
      "sorry": false
     }
    ],
-   "private": 3
+   "private": 3,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimEight.lean",
@@ -35184,7 +35319,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Realization/HiggsCov/MassWeight/MassDimLTEight.lean",
@@ -35367,7 +35503,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Realization/MassWeight/Basic.lean",
@@ -35486,7 +35623,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Particles/StandardModel/Realization/MassWeight/Filtration.lean",
@@ -35709,7 +35847,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

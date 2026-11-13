@@ -15,8 +15,8 @@ Modules in [HiggsBoson/](https://github.com/leanprover-community/physlib/tree/2a
 
 Modules in [HiggsBoson/JetAlgebra/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra):
 
-- [The jet algebra of the Higgs field](higgsboson-jetalgebra-basic.md)
-- [The jet algebra of the Higgs field](higgsboson-jetalgebra-algebra.md)
+- [The jet algebra of the Higgs field (Basic)](higgsboson-jetalgebra-basic.md)
+- [The jet algebra of the Higgs field (Algebra)](higgsboson-jetalgebra-algebra.md)
 
 Modules in [IsFermionSector/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsFermionSector):
 

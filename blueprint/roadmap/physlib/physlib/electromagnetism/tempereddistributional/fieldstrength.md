@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The Field Strength Tensor
+# The Field Strength Tensor (TemperedDistributional/FieldStrength)
 
 The module `Physlib.Electromagnetism.TemperedDistributional.FieldStrength`, [Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean): 16 declarations, 2 with a docstring.
 
@@ -191,7 +191,7 @@ lemma fieldStrength_equivariant {d} (A : TempDistElectromagneticPotential d)
 
 ## Depends on
 
-- [The Electromagnetic Potential](basic.md)
+- [The Electromagnetic Potential (TemperedDistributional/Basic)](basic.md)
 
 ## Sources
 

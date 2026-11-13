@@ -271,7 +271,7 @@ lemma adjContr_flip_injective :
 ## Depends on
 
 - [The local gauge data of `SU(n)`](localgaugedata-su-basic.md)
-- [The generalized Gell-Mann matrices](localgaugedata-su-gellmann.md)
+- [The generalized Gell-Mann matrices (PhyslibAlpha)](localgaugedata-su-gellmann.md)
 
 ## Sources
 

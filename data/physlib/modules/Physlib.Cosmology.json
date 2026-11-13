@@ -9,7 +9,8 @@
    "doc": "This directory is currently a place holder.\nPlease feel free to contribute!\n\nSome directories which are NOT currently place holders are:\n- Mathematics\n- Meta\n- Particles\n- QFT\n- Quantum Mechanics\n- Relativity",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/Age.lean",
@@ -40,7 +41,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/Basic.lean",
@@ -351,7 +353,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/ConformalTime.lean",
@@ -360,7 +363,8 @@
    "doc": "Placeholder file collecting TODO items for the conformal time and the conformal\nHubble factor of a Friedmann-Lemaître-Robertson-Walker model. This file contains\nonly TODO items; no definitions or lemmas are formalized yet.",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/DensityParameters.lean",
@@ -443,7 +447,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/DeSitter.lean",
@@ -562,7 +567,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/Distances.lean",
@@ -737,7 +743,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/EnergyConditions.lean",
@@ -812,7 +819,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/FriedmannSolution.lean",
@@ -923,7 +931,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/MatterContent.lean",
@@ -1102,7 +1111,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/ReducedHubble.lean",
@@ -1189,7 +1199,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/Solutions.lean",
@@ -1448,7 +1459,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/SpecificCases/EinsteinDeSitter.lean",
@@ -1487,7 +1499,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/SpecificCases/PowerLaw.lean",
@@ -1530,7 +1543,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/SpecificCases/RadiationDominated.lean",
@@ -1569,7 +1583,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

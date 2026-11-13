@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The invariants below mass weight eight
+# The invariants below mass weight eight (IsGaugeSector/MassWeight/MassDimLTEight)
 
 The module `PhyslibAlpha.Particles.StandardModel.IsGaugeSector.MassWeight.MassDimLTEight`, [PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/IsGaugeSector/MassWeight/MassDimLTEight.lean): 18 declarations, 18 with a docstring.
 

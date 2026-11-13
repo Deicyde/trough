@@ -240,7 +240,7 @@ lemma gaugeAlgebraAction_comm_repLorentzGroup (c : GaugeAlgebra) (Λ : SL(2,ℂ)
 
 ## Depends on
 
-- [Lepton doublets](fermions-leptondoublet-basic.md)
+- [Lepton doublets (PhyslibAlpha)](fermions-leptondoublet-basic.md)
 - [The Standard Model gauge group as local gauge data](../part-04/gaugegroup-localgaugedata.md)
 
 ## Sources

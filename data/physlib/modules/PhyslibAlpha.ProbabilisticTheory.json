@@ -151,7 +151,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Algebra/Derivation.lean",
@@ -210,7 +211,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Algebra/NuclearInvolution.lean",
@@ -317,7 +319,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Algebra/Statistics.lean",
@@ -416,7 +419,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Channel/Basic.lean",
@@ -579,7 +583,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Channel/MeasureAndPrepare.lean",
@@ -602,7 +607,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Channel/Normal.lean",
@@ -677,7 +683,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Channel/Operation.lean",
@@ -864,7 +871,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Channel/Symmetry.lean",
@@ -1163,7 +1171,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Channel/Weight.lean",
@@ -1234,7 +1243,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Classical/Basic.lean",
@@ -1265,7 +1275,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Classical/BauerSimplex.lean",
@@ -1308,7 +1319,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Classical/BoundedMeasurable.lean",
@@ -1375,7 +1387,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Classical/Channel.lean",
@@ -1530,7 +1543,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Classical/Compatibility.lean",
@@ -1877,7 +1891,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Classical/EnsembleRefinement.lean",
@@ -1960,7 +1975,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean",
@@ -2059,7 +2075,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Classical/FiniteSystem.lean",
@@ -2230,7 +2247,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Classical/LatticeObservables.lean",
@@ -2521,7 +2539,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Classical/NamiokaPhelps.lean",
@@ -2644,7 +2663,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Classical/NormalStates.lean",
@@ -2803,7 +2823,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Classical/Nuclear.lean",
@@ -3026,7 +3047,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Classical/PureState.lean",
@@ -3173,7 +3195,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Classical/SeparableObservables.lean",
@@ -3272,7 +3295,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Classical/SimplexStateSpace.lean",
@@ -3423,7 +3447,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Classical/UniqueDecomposition.lean",
@@ -3738,7 +3763,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Composite/CompletePositivity.lean",
@@ -3825,7 +3851,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Composite/TensorCone.lean",
@@ -4248,7 +4275,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Automorphism.lean",
@@ -4539,7 +4567,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Commutative.lean",
@@ -4650,7 +4679,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/ConjugationSymmetry.lean",
@@ -4813,7 +4843,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNS.lean",
@@ -4908,7 +4939,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSAutomorphism.lean",
@@ -5075,7 +5107,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/GNSSpectral.lean",
@@ -5142,7 +5175,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/JordanDecomposition.lean",
@@ -5217,7 +5251,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/MatrixComposite.lean",
@@ -5580,7 +5615,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Projection.lean",
@@ -5655,7 +5691,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/QuantumChannel.lean",
@@ -5730,7 +5767,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SharpEffect.lean",
@@ -5781,7 +5819,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/SpectralMeasure.lean",
@@ -5972,7 +6011,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Stinespring/Dilation.lean",
@@ -6487,7 +6527,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Stinespring/Kernel.lean",
@@ -6686,7 +6727,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/Uncertainty.lean",
@@ -7013,7 +7055,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Dynamics/Generator.lean",
@@ -7044,7 +7087,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Dynamics/GeneratorIsDerivation.lean",
@@ -7067,7 +7111,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Dynamics/OneParameterGroup.lean",
@@ -7114,7 +7159,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Effect/Basic.lean",
@@ -7153,7 +7199,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Examples/GBit.lean",
@@ -7244,7 +7291,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Examples/NormCone.lean",
@@ -7739,7 +7787,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Examples/Qubit.lean",
@@ -7846,7 +7895,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Examples/Square.lean",
@@ -8173,7 +8223,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Automorphism.lean",
@@ -8284,7 +8335,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Dynamics/Hamiltonian.lean",
@@ -8519,7 +8571,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/JointSpectral/Basic.lean",
@@ -8674,7 +8727,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/OrthonormalMeasurement.lean",
@@ -8817,7 +8871,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Density.lean",
@@ -8848,7 +8903,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/DensityUncertainty.lean",
@@ -8919,7 +8975,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/Vector.lean",
@@ -8982,7 +9039,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/State/VectorUncertainty.lean",
@@ -9073,7 +9131,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Trace.lean",
@@ -9140,7 +9199,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Banach.lean",
@@ -9327,7 +9387,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Basic.lean",
@@ -9546,7 +9607,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralIdeal.lean",
@@ -9613,7 +9675,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/GeneralProduct.lean",
@@ -9680,7 +9743,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/HilbertSchmidt.lean",
@@ -9927,7 +9991,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/IdealNorm.lean",
@@ -10014,7 +10079,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Pairing.lean",
@@ -10133,7 +10199,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/Polar.lean",
@@ -10344,7 +10411,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean",
@@ -10391,7 +10459,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/TraceAlgebra.lean",
@@ -10434,7 +10503,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Basic.lean",
@@ -10993,7 +11063,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Local.lean",
@@ -11308,7 +11379,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/AnalyticVector/Nelson.lean",
@@ -11447,7 +11519,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Basic.lean",
@@ -11638,7 +11711,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegral.lean",
@@ -11889,7 +11963,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralAlgebra.lean",
@@ -12072,7 +12147,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedIntegralCommute.lean",
@@ -12123,7 +12199,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/BoundedSelfAdjointData.lean",
@@ -12174,7 +12251,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Basic.lean",
@@ -12405,7 +12483,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Certificate.lean",
@@ -12496,7 +12575,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Inverse.lean",
@@ -12731,7 +12811,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Cayley/Measure.lean",
@@ -12822,7 +12903,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/Basic.lean",
@@ -13093,7 +13175,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/CayleySpectralData/SpecTheorem.lean",
@@ -13276,7 +13359,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Conjugation.lean",
@@ -13387,7 +13471,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/ContinuousCalculus.lean",
@@ -13466,7 +13551,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Closed.lean",
@@ -13489,7 +13575,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Defs.lean",
@@ -13520,7 +13607,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Smul.lean",
@@ -13603,7 +13691,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/WeakCompact.lean",
@@ -13638,7 +13727,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/EssentialSpectrum/Weyl.lean",
@@ -13709,7 +13799,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/CandidateGenerator.lean",
@@ -13836,7 +13927,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectors.lean",
@@ -14027,7 +14119,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GardingVectorWitness.lean",
@@ -14070,7 +14163,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GaussianKernelGrowth.lean",
@@ -14185,7 +14279,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GeneratorInvariance.lean",
@@ -14252,7 +14347,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/GenericGardingKernel.lean",
@@ -14295,7 +14391,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/IteratedKernelGrowth.lean",
@@ -14398,7 +14495,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneGenerator.lean",
@@ -14433,7 +14531,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Existence/StoneReconstruction.lean",
@@ -14512,7 +14611,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/Stone.lean",
@@ -14583,7 +14683,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneAPI.lean",
@@ -14626,7 +14727,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneInvariance.lean",
@@ -14669,7 +14771,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/RealAnalytic.lean",
@@ -14728,7 +14831,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/ScalarMeasure.lean",
@@ -14919,7 +15023,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SelfAdjointSpectralTheorem.lean",
@@ -15130,7 +15235,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/Construction.lean",
@@ -15685,7 +15791,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralIntegral/SpecTheorem.lean",
@@ -16092,7 +16199,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/SpectralPointMass.lean",
@@ -16363,7 +16471,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Commutant.lean",
@@ -16418,7 +16527,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/Functional.lean",
@@ -16521,7 +16631,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/SesquilinearForm.lean",
@@ -16940,7 +17051,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StarHomSpec/SpectralMeasure.lean",
@@ -17327,7 +17439,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Stone.lean",
@@ -17478,7 +17591,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean",
@@ -17681,7 +17795,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SesquilinearForm.lean",
@@ -18424,7 +18539,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/UnitaryInfra/SpectralMeasure.lean",
@@ -18843,7 +18959,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/WeakIntegral.lean",
@@ -18910,7 +19027,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Basic.lean",
@@ -18945,7 +19063,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Compatibility.lean",
@@ -19008,7 +19127,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Conditioning.lean",
@@ -19095,7 +19215,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Covariance.lean",
@@ -19154,7 +19275,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Basic.lean",
@@ -19281,7 +19403,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/CFC.lean",
@@ -19356,7 +19479,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Compatibility.lean",
@@ -19379,7 +19503,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Positivity.lean",
@@ -19438,7 +19563,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Special.lean",
@@ -19509,7 +19635,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/CStarAlgebra/Statistics.lean",
@@ -19560,7 +19687,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Examples/SpinFactor.lean",
@@ -19823,7 +19951,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/FiniteRank.lean",
@@ -19906,7 +20035,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Hom.lean",
@@ -20045,7 +20175,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Basic.lean",
@@ -20272,7 +20403,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Dynamics.lean",
@@ -20367,7 +20499,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/CFC.lean",
@@ -21002,7 +21135,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/Closed.lean",
@@ -21181,7 +21315,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/Effect.lean",
@@ -21212,7 +21347,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/Inherited.lean",
@@ -21279,7 +21415,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/PosInvertibility.lean",
@@ -21498,7 +21635,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/Spectrum.lean",
@@ -21685,7 +21823,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/SqrtUniqueness.lean",
@@ -21792,7 +21931,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/GeneratedByOne/Uniform.lean",
@@ -21831,7 +21971,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JB/Order.lean",
@@ -21854,7 +21995,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/Basic.lean",
@@ -21913,7 +22055,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/JBW/ProjectionResolution.lean",
@@ -21972,7 +22115,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Lueders.lean",
@@ -22107,7 +22251,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Observable.lean",
@@ -22342,7 +22487,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Operator.lean",
@@ -22821,7 +22967,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Associative.lean",
@@ -22904,7 +23051,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Generated.lean",
@@ -23119,7 +23267,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/GeneratedByOne.lean",
@@ -23178,7 +23327,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Quadratic.lean",
@@ -23225,7 +23375,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Power/Ring.lean",
@@ -23376,7 +23527,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/ProjectionResolution.lean",
@@ -23551,7 +23703,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Fundamental.lean",
@@ -23858,7 +24011,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Operational.lean",
@@ -23889,7 +24043,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Order.lean",
@@ -23964,7 +24119,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Projection.lean",
@@ -24191,7 +24347,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Quadratic/Triple.lean",
@@ -24298,7 +24455,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/StructureAlgebra.lean",
@@ -24533,7 +24691,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Measurement/Basic.lean",
@@ -24700,7 +24859,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Measurement/Binary.lean",
@@ -24755,7 +24915,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Measurement/BornRule.lean",
@@ -24858,7 +25019,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedIntegral.lean",
@@ -25205,7 +25367,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Measurement/BoundedScalarization.lean",
@@ -25256,7 +25419,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Measurement/Compatibility.lean",
@@ -25479,7 +25643,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Measurement/EffectValuedMeasure.lean",
@@ -25686,7 +25851,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Measurement/Finite.lean",
@@ -25805,7 +25971,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Measurement/Instrument.lean",
@@ -25876,7 +26043,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Measurement/Integral.lean",
@@ -26019,7 +26187,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Measurement/Postprocessing.lean",
@@ -26154,7 +26323,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Measurement/Pushforward.lean",
@@ -26221,7 +26391,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/OrderUnit/Bidual.lean",
@@ -26304,7 +26475,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/OrderUnit/Interpolation.lean",
@@ -26411,7 +26583,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/OrderUnit/Lattice.lean",
@@ -26442,7 +26615,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/OrderUnit/MonotoneComplete.lean",
@@ -26509,7 +26683,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/OrderUnit/Normed.lean",
@@ -26692,7 +26867,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/OrderUnit/PositiveDual.lean",
@@ -26735,7 +26911,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/QuasiLocal/AlgebraNet.lean",
@@ -26818,7 +26995,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/QuasiLocal/Limit.lean",
@@ -26945,7 +27123,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/QuasiLocal/State.lean",
@@ -27004,7 +27183,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Representation/AbelianSpectral.lean",
@@ -27155,7 +27335,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Representation/Bands.lean",
@@ -27214,7 +27395,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Representation/Commutant.lean",
@@ -27353,7 +27535,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Basic.lean",
@@ -27440,7 +27623,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Representation/Covariance/Outcome.lean",
@@ -27575,7 +27759,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Representation/Floquet.lean",
@@ -27802,7 +27987,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Representation/Hopping.lean",
@@ -27897,7 +28083,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Representation/Koopman.lean",
@@ -28016,7 +28203,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Representation/MomentumSectors.lean",
@@ -28219,7 +28407,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Representation/Orthogonality.lean",
@@ -28294,7 +28483,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Representation/PointCovariance.lean",
@@ -28425,7 +28615,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Representation/PVM.lean",
@@ -28520,7 +28711,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Representation/Schur.lean",
@@ -28567,7 +28759,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Representation/SectorReduction.lean",
@@ -28718,7 +28911,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Representation/StructureFactor.lean",
@@ -28785,7 +28979,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Representation/VectorMeasure.lean",
@@ -28860,7 +29055,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/StarAlgebra/ComplexExtension.lean",
@@ -28931,7 +29127,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceForm.lean",
@@ -29102,7 +29299,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/StarAlgebra/CovarianceFormUnitalMap.lean",
@@ -29253,7 +29451,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/StarAlgebra/GNS.lean",
@@ -29560,7 +29759,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Invariant.lean",
@@ -29783,7 +29983,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Jordan.lean",
@@ -30034,7 +30235,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Lie.lean",
@@ -30209,7 +30411,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Observable.lean",
@@ -30264,7 +30467,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Restrict.lean",
@@ -30367,7 +30571,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/StarAlgebra/SelfAdjoint.lean",
@@ -30490,7 +30695,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/StarAlgebra/StateUncertainty.lean",
@@ -30677,7 +30883,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Statistics.lean",
@@ -30840,7 +31047,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/StarAlgebra/Traciality.lean",
@@ -30891,7 +31099,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/State/Barycenter.lean",
@@ -30934,7 +31143,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/State/Basic.lean",
@@ -30948,7 +31158,8 @@
     }
    ],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/State/Convex.lean",
@@ -31059,7 +31270,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/State/Discrimination.lean",
@@ -31202,7 +31414,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/State/Metric.lean",
@@ -31369,7 +31582,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/State/NormalEquivalence.lean",
@@ -31392,7 +31606,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/State/Pairing.lean",
@@ -31479,7 +31694,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/State/Preparation.lean",
@@ -31678,7 +31894,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/State/PureMeasurement.lean",
@@ -31861,7 +32078,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/State/Separation.lean",
@@ -31996,7 +32214,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/State/StateSpace.lean",
@@ -32235,7 +32454,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/State/WeightEquivalence.lean",
@@ -32306,7 +32526,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Weight/Basic.lean",
@@ -32445,7 +32666,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Weight/Continuous.lean",
@@ -32504,7 +32726,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean",
@@ -32651,7 +32874,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Basic.lean",
@@ -32782,7 +33006,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/BoundedSesquilinearForm.lean",
@@ -32857,7 +33082,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Concrete.lean",
@@ -32904,7 +33130,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/ConjSpace.lean",
@@ -33079,7 +33306,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/Mathlib.lean",
@@ -33218,7 +33446,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/RankOnePairing.lean",
@@ -33253,7 +33482,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingNorm.lean",
@@ -33352,7 +33582,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/TracePairingSurjectivity.lean",
@@ -33527,7 +33758,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

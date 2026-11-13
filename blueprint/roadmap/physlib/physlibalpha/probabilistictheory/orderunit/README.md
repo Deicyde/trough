@@ -4,7 +4,7 @@ The folder [PhyslibAlpha/ProbabilisticTheory/OrderUnit/](https://github.com/lean
 
 - [The bidual of a system](bidual.md)
 - [Interpolation of complete observables](interpolation.md)
-- [Lattice-ordered observables](lattice.md)
+- [Lattice-ordered observables (Lattice)](lattice.md)
 - [Monotone-complete ordered spaces](monotonecomplete.md)
 - [The canonical normed copy of an order-unit space](normed.md)
 - [The unit of an order-unit space as an order unit](positivedual.md)

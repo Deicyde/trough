@@ -319,7 +319,7 @@ lemma electricField_eq_propogator_cross_magneticFieldMatrix {d : ℕ}
 ## Depends on
 
 - [Wave equation](../../classicalmechanics/waveequation/basic.md)
-- [Extrema of the Lagrangian density](../dynamics/isextrema.md)
+- [Extrema of the Lagrangian density (Electromagnetism/Dynamics/IsExtrema)](../dynamics/isextrema.md)
 
 ## Sources
 

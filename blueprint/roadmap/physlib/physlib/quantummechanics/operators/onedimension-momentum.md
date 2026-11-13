@@ -104,7 +104,7 @@ lemma momentumOperatorUnbounded_isSymmetric : momentumOperatorUnbounded.IsSymmet
 
 - [Plane waves](../hilbertspaces/onedimension-planewaves.md)
 - [Schwartz submodule of the Hilbert space](../hilbertspaces/onedimension-schwartzsubmodule.md)
-- [Unbounded operators](onedimension-unbounded.md)
+- [Unbounded operators (OneDimension/Unbounded)](onedimension-unbounded.md)
 - [Planck's constant](../planckconstant.md)
 
 ## Sources

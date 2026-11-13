@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Extending finite weights
+# Extending finite weights (Physlib)
 
 The module `Physlib.ProbabilisticTheory.Weight.Extension`, [Physlib/ProbabilisticTheory/Weight/Extension.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/Weight/Extension.lean): 12 declarations, 6 with a docstring.
 
@@ -117,7 +117,7 @@ lemma IsFinite.toLinearMap_coe (hw : w.IsFinite) (A : PosCone E) :
 
 ## Depends on
 
-- [Weights](basic.md)
+- [Weights (Physlib)](basic.md)
 
 ## Sources
 

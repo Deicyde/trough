@@ -146,7 +146,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean",
@@ -261,7 +262,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Fermions/Weyl/BoostWeight.lean",
@@ -300,7 +302,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Fermions/Weyl/Metric.lean",
@@ -391,7 +394,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean",
@@ -886,7 +890,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/IsLorentzDeriv.lean",
@@ -1005,7 +1010,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LightConeDeriv.lean",
@@ -1092,7 +1098,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Basic.lean",
@@ -1115,7 +1122,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Boosts/Axis.lean",
@@ -1138,7 +1146,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean",
@@ -1213,7 +1222,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean",
@@ -1344,7 +1354,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean",
@@ -1535,7 +1546,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean",
@@ -1618,7 +1630,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean",
@@ -1805,7 +1818,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean",
@@ -1884,7 +1898,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean",
@@ -2171,7 +2186,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean",
@@ -2290,7 +2306,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/LorentzCovariance.lean",
@@ -2493,7 +2510,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean",
@@ -2928,7 +2946,8 @@
      "sorry": false
     }
    ],
-   "private": 2
+   "private": 2,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean",
@@ -3015,7 +3034,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean",
@@ -3110,7 +3130,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean",
@@ -3229,7 +3250,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzMix.lean",
@@ -3404,7 +3426,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/MinkowskiMatrix.lean",
@@ -3475,7 +3498,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/PauliMatrices/Anticommuting.lean",
@@ -3570,7 +3594,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean",
@@ -3617,7 +3642,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/PauliMatrices/ToTensor.lean",
@@ -3656,7 +3682,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Poincare/Basic.lean",
@@ -3882,7 +3909,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Poincare/Causality.lean",
@@ -3980,7 +4008,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Poincare/Distributions.lean",
@@ -4102,7 +4131,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Poincare/Fields.lean",
@@ -4200,7 +4230,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/SL2C/AxisRotations.lean",
@@ -4363,7 +4394,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/SL2C/Basic.lean",
@@ -4446,7 +4478,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Tensors/ComplexTensor/Vector/Basic.lean",
@@ -4469,7 +4502,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Tensors/Equivariant.lean",
@@ -4704,7 +4738,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Tensors/RealTensor/CoVector/Representation.lean",
@@ -4735,7 +4770,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

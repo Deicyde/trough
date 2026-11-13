@@ -12,7 +12,23 @@ The module `Physlib.Cosmology.FLRW.MatterContent`, [Physlib/Cosmology/FLRW/Matte
 
 ## i. Overview
 
-> …
+> This file describes the matter content of a Friedmann-Lemaître-Robertson-Walker universe
+> through the continuity equation `∂ₜ ρ + 3 H (ρ + p / c²) = 0` of the cosmic fluid and its
+> relation to the two Friedmann equations of `Physlib.Cosmology.FLRW.Basic`: the continuity
+> equation follows from the first-order equation (holding at all times near the instant
+> considered) and the second-order equation, and conversely the second-order equation follows
+> from the first-order equation and the continuity equation whenever `∂ₜ a ≠ 0`. The three
+> equations are therefore not independent, but not symmetrically so: where `∂ₜ a = 0` the
+> first-order and the continuity equations leave `p` unconstrained, while the second-order
+> equation still fixes `ρ + 3 p / c²` (the Einstein static universe of
+> `Physlib.Cosmology.FLRW.Solutions`). The two Friedmann equations are the primitive pair, and
+> the continuity equation is derived from them; accordingly, the proposition
+> `FLRW.FriedmannSolution` consists of the two Friedmann equations, and the continuity equation is
+> the lemma `FLRW.FriedmannSolution.continuityEquation`. For a barotropic equation of state
+> `p = w ρ c²` with
+> constant `w`, the continuity equation gives the density scaling law `ρ ∝ a^(-3(1+w))`,
+> specialised to dust, radiation and vacuum energy; and the cosmological constant is equivalent
+> to a `w = -1` fluid of density `ρ_Λ = Λ c² / (8 π G)`. …
 >
 > Time derivatives of curves `Time → ℝ` are computed through the bridge
 > `Time.hasDerivAt_mk_of_differentiableAt` to Mathlib's `HasDerivAt` on `ℝ`.

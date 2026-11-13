@@ -105,8 +105,8 @@ lemma CoVector.contract_rep (Λ : LorentzGroup d) (φ : CoVector d) (ψ : Vector
 
 ## Depends on
 
-- [Representation of the Lorentz group on Lorentz vectors](realtensor-covector-representation.md)
-- [Representation of the Lorentz group on Lorentz vectors](realtensor-vector-representation.md)
+- [Representation of the Lorentz group on Lorentz vectors (CoVector/Representation)](realtensor-covector-representation.md)
+- [Representation of the Lorentz group on Lorentz vectors (Vector/Representation)](realtensor-vector-representation.md)
 
 ## Sources
 

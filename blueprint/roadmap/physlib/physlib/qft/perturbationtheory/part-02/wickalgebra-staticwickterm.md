@@ -102,7 +102,7 @@ lemma mul_staticWickTerm_eq_sum (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp)
 ## Depends on
 
 - [Sign associated with a contraction](../part-03/wickcontraction-sign-basic.md)
-- [Time contractions](../part-03/wickcontraction-staticcontract.md)
+- [Time contractions (StaticContract)](../part-03/wickcontraction-staticcontract.md)
 
 ## Proof depends on
 

@@ -360,7 +360,7 @@ lemma mem_sectorMassWeight_gauge_higgs_lt_nine_sup_and_gauge_lorentz_invariant_i
 ## Proof depends on
 
 - [The mixed gauge-Higgs sector](covrealization-gaugehiggssector-basic.md)
-- [The invariants below mass weight eight](../part-07/isgaugesector-massweight-massdimlteight.md)
+- [The invariants below mass weight eight (IsGaugeSector/MassWeight/MassDimLTEight)](../part-07/isgaugesector-massweight-massdimlteight.md)
 
 ## Sources
 

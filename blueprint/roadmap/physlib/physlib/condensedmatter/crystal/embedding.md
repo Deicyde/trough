@@ -138,7 +138,7 @@ lemma IsSpaceFilling.finrank_eq_rank (h : R.IsSpaceFilling) {ι : Type*} [Fintyp
 
 ## Depends on
 
-- [Crystals, cells and sites](basic.md)
+- [Crystals, cells and sites (Physlib)](basic.md)
 
 ## Sources
 

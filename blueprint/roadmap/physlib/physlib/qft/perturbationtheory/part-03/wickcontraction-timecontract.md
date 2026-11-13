@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Time contractions
+# Time contractions (TimeContract)
 
 The module `Physlib.QFT.PerturbationTheory.WickContraction.TimeContract`, [Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean): 7 declarations, 5 with a docstring.
 
@@ -127,7 +127,7 @@ lemma timeContract_of_not_gradingCompliant (φs : List 𝓕.FieldOp)
 ## Depends on
 
 - [Basic properties of normal ordering](../part-02/wickalgebra-normalorder-lemmas.md)
-- [Time contractions](../part-02/wickalgebra-timecontraction.md)
+- [Time contractions (TimeContraction)](../part-02/wickalgebra-timecontraction.md)
 - [Inserting an element into a contraction based on a list](../part-02/wickcontraction-insertandcontract.md)
 
 ## Sources

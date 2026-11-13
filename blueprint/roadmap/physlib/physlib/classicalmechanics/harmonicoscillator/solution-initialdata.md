@@ -47,7 +47,7 @@ The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.InitialData`,
 > initial positions and initial velocities are equal.
 
 ```lean
-@[ext] structure InitialConditions where
+structure InitialConditions where
   /-- The initial position of the harmonic oscillator. -/
   x₀ : EuclideanSpace ℝ (Fin 1)
   /-- The initial velocity of the harmonic oscillator. -/
@@ -104,7 +104,7 @@ The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.InitialData`,
 > using the `toInitialConditions` function.
 
 ```lean
-@[ext] structure InitialConditionsAtTime where
+structure InitialConditionsAtTime where
   /-- The time at which the initial conditions are specified. -/
   t₀ : Time
   /-- The position at time t₀. -/
@@ -160,7 +160,7 @@ noncomputable def toInitialConditions (S : HarmonicOscillator)
 > using the `toInitialConditions` function.
 
 ```lean
-@[ext] structure InitialConditionsFromTwoPositions where
+structure InitialConditionsFromTwoPositions where
   /-- The first measurement time. -/
   t₁ : Time
   /-- The position at time `t₁`. -/
@@ -212,7 +212,7 @@ noncomputable def toInitialConditions (S : HarmonicOscillator)
 > using the `toInitialConditions` function.
 
 ```lean
-@[ext] structure InitialConditionsFromTwoVelocities where
+structure InitialConditionsFromTwoVelocities where
   /-- The first measurement time. -/
   t₁ : Time
   /-- The velocity at time `t₁`. -/

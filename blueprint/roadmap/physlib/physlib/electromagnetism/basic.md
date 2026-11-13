@@ -28,11 +28,7 @@ The module `Physlib.Electromagnetism.Basic`, [Physlib/Electromagnetism/Basic.lea
 > The abbreviations in this file remain useful as shared entry points while those APIs continue to
 > converge.
 
-## A.3. Future work
-
-> Charge and current densities should be generalized to signed measures while remaining convenient
-> for integration and tensor notation. As the specialized APIs stabilize, overlapping legacy
-> interfaces should be consolidated without breaking the physical meaning of existing declarations.
+…
 
 **`Electromagnetism.ElectricField`**, an abbrev, [line 44](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Basic.lean#L44).
 

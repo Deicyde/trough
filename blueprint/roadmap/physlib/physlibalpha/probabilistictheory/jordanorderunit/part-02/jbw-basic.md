@@ -91,7 +91,7 @@ lemma exists_normal_finite_weight_ne_zero {x : E} (hx : 0 ≤ x) (hxne : x ≠ 0
 - [Normal channels](../../channel/normal.md)
 - [Normed Jordan algebras and JB-algebras](../part-01/jb-basic.md)
 - [Monotone-complete ordered spaces](../../orderunit/monotonecomplete.md)
-- [Weights](../../weight/basic.md)
+- [Weights (PhyslibAlpha)](../../weight/basic.md)
 
 ## Proof depends on
 

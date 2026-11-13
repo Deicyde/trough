@@ -479,7 +479,8 @@
      "sorry": false
     }
    ],
-   "private": 18
+   "private": 18,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/Entropy/Relative.lean",
@@ -921,7 +922,8 @@
      "sorry": false
     }
    ],
-   "private": 70
+   "private": 70,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/Entropy/SSA.lean",
@@ -1284,7 +1286,8 @@
      "sorry": false
     }
    ],
-   "private": 36
+   "private": 36,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/Entropy/VonNeumann.lean",
@@ -1486,7 +1489,8 @@
      "sorry": false
     }
    ],
-   "private": 10
+   "private": 10,
+   "aliases": 0
   }
  ]
 }

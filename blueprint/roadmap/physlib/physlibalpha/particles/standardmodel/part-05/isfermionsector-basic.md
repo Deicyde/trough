@@ -424,11 +424,11 @@ lemma derivSubmodule_mul_comm (n m : ℕ) :
 
 ## Depends on
 
-- [Down-type singlets](../../../../physlib/particles/standardmodel/fermions-downsinglet.md)
-- [Charged-lepton singlets](../../../../physlib/particles/standardmodel/fermions-leptonsinglet.md)
-- [The type corresponding to quark doublets](../../../../physlib/particles/standardmodel/fermions-quarkdoublet.md)
-- [Up-type singlets](../../../../physlib/particles/standardmodel/fermions-upsinglet.md)
-- [Lepton doublets](../part-03/fermions-leptondoublet-basic.md)
+- [Down-type singlets (Physlib)](../../../../physlib/particles/standardmodel/fermions-downsinglet.md)
+- [Charged-lepton singlets (Physlib)](../../../../physlib/particles/standardmodel/fermions-leptonsinglet.md)
+- [The type corresponding to quark doublets (Physlib)](../../../../physlib/particles/standardmodel/fermions-quarkdoublet.md)
+- [Up-type singlets (Physlib)](../../../../physlib/particles/standardmodel/fermions-upsinglet.md)
+- [Lepton doublets (PhyslibAlpha)](../part-03/fermions-leptondoublet-basic.md)
 
 ## Sources
 

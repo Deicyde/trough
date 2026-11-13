@@ -469,11 +469,11 @@ lemma supCone_mem_effect_iff {m : ℕ} {z : NormCone (Fin m → ℝ)} :
 
 - [Effects](../../../physlib/probabilistictheory/effect/basic.md)
 - [Hölder duality in finite dimensions](../../mathematics/part-01/analysis/normed-holderdual.md)
-- [Convex state spaces](../state/convex.md)
+- [Convex state spaces (PhyslibAlpha)](../state/convex.md)
 
 ## Proof depends on
 
-- [The metric space of states](../state/metric.md)
+- [The metric space of states (PhyslibAlpha)](../state/metric.md)
 
 ## Sources
 

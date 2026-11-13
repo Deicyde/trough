@@ -1569,7 +1569,7 @@ lemma jetDeriv_mul (ρ : Fin 1 ⊕ Fin 3) (x y : JetAlgebra) :
 
 ## Depends on
 
-- [The Electromagnetic Potential](../../../physlib/electromagnetism/kinematics/empotential.md)
+- [The Electromagnetic Potential (EMPotential)](../../../physlib/electromagnetism/kinematics/empotential.md)
 - [The group SL(2, ℂ) and it's relation to the Lorentz group](../../../physlib/relativity/sl2c/basic.md)
 
 ## Proof depends on

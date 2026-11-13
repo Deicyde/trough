@@ -37,7 +37,7 @@ The module `Physlib.ClassicalMechanics.Lagrangian.Basic`, [Physlib/ClassicalMech
 > A smooth time-dependent Lagrangian on `TM`, depending on first-order derivatives only.
 
 ```lean
-@[ext] structure LagrangianSystem where
+structure LagrangianSystem where
   /-- `L(t, q, q̇)`. -/
   toFun : Time × TangentBundle I M → ℝ
   /-- `L` is smooth. -/

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Extending finite weights
+# Extending finite weights (PhyslibAlpha)
 
 The module `PhyslibAlpha.ProbabilisticTheory.Weight.Extension`, [PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Weight/Extension.lean): 16 declarations, 15 with a docstring.
 
@@ -166,7 +166,7 @@ lemma toPositiveLinearMap_apply_of_nonneg (hw : w.IsFinite) (A : PosCone E) :
 
 ## Depends on
 
-- [Weights](basic.md)
+- [Weights (PhyslibAlpha)](basic.md)
 
 ## Sources
 

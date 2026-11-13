@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Charged-lepton singlets
+# Charged-lepton singlets (PhyslibAlpha)
 
 The module `PhyslibAlpha.Particles.StandardModel.Fermions.LeptonSinglet.Basic`, [PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/LeptonSinglet/Basic.lean): 22 declarations (2 instances with no name), 20 with a docstring.
 
@@ -314,7 +314,7 @@ lemma leptonSinglet_repLorentzGroup_boostAxis_two_basis (t : ℝ) (ht : t ≠ 0)
 
 ## Depends on
 
-- [Charged-lepton singlets](../../../../physlib/particles/standardmodel/fermions-leptonsinglet.md)
+- [Charged-lepton singlets (Physlib)](../../../../physlib/particles/standardmodel/fermions-leptonsinglet.md)
 - [Gauge weight decompositions](../part-04/gaugegroup-gaugeweight.md)
 - [The jet gauge group](../part-04/gaugegroup-jetgaugegroup-basic.md)
 - [The boost weights of a Weyl spinor](../../../relativity/fermions/weyl-boostweight.md)

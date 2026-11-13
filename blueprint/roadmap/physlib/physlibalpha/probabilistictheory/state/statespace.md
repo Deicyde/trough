@@ -239,11 +239,11 @@ lemma isPure_iff_mem_extremePoints (ω : stateSpace E) :
 ## Depends on
 
 - [Archimedean order-unit spaces](../../../physlib/probabilistictheory/orderunit/archimedean.md)
-- [Convex state spaces](convex.md)
+- [Convex state spaces (PhyslibAlpha)](convex.md)
 
 ## Proof depends on
 
-- [Separation by states](separation.md)
+- [Separation by states (PhyslibAlpha)](separation.md)
 
 ## Sources
 

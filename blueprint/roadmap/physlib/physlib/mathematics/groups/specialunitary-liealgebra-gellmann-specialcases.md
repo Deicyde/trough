@@ -81,7 +81,7 @@ lemma gellMannMatrices_three :
 
 ## Depends on
 
-- [The generalized Gell-Mann matrices](specialunitary-liealgebra-gellmann-basic.md)
+- [The generalized Gell-Mann matrices (Physlib)](specialunitary-liealgebra-gellmann-basic.md)
 - [Physlib.Relativity.PauliMatrices.Basic](../../relativity/paulimatrices/basic.md)
 
 ## Sources

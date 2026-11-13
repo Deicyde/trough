@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Position states
+# Position states (OneDimension/PositionStates)
 
 The module `Physlib.QuantumMechanics.HilbertSpaces.OneDimension.PositionStates`, [Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PositionStates.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PositionStates.lean): 3 declarations, 2 with a docstring.
 

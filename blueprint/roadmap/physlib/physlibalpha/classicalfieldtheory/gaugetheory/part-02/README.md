@@ -22,4 +22,4 @@ Modules in [LocalCovField/](https://github.com/leanprover-community/physlib/tree
 - [The covariant field algebra of a gauge theory](localcovfield-basic.md)
 - [The covariant gauge sector as the complexified covariant gauge-only algebra](localcovfield-gaugesector.md)
 - [Realizations of the covariant gauge sector](localcovfield-gaugesectorrealization.md)
-- [Realizations of the covariant field algebra](localcovfield-realization.md)
+- [Realizations of the covariant field algebra (LocalCovField/Realization)](localcovfield-realization.md)

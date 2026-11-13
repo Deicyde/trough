@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Extrema of the Lagrangian density
+# Extrema of the Lagrangian density (TemperedDistributional/Dynamics/IsExtrema)
 
 The module `Physlib.Electromagnetism.TemperedDistributional.Dynamics.IsExtrema`, [Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean): 7 declarations, 1 with a docstring.
 
@@ -153,7 +153,7 @@ lemma isExterma_equivariant {𝓕 : FreeSpace}
 
 ## Depends on
 
-- [The Lagrangian in electromagnetism](dynamics-lagrangian.md)
+- [The Lagrangian in electromagnetism (TemperedDistributional/Dynamics/Lagrangian)](dynamics-lagrangian.md)
 
 ## Sources
 

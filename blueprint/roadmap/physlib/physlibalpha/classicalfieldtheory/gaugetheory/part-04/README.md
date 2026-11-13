@@ -25,4 +25,4 @@ Modules in [LocalGaugeData/SU/](https://github.com/leanprover-community/physlib/
 - [The local gauge data of `SU(n)`](localgaugedata-su-basic.md)
 - [The adjoint representation of `SU(N)`](localgaugedata-su-adjoint.md)
 - [The Lie algebra `su(n)` over a `*`-algebra](localgaugedata-su-algebra.md)
-- [The generalized Gell-Mann matrices](localgaugedata-su-gellmann.md)
+- [The generalized Gell-Mann matrices (PhyslibAlpha)](localgaugedata-su-gellmann.md)

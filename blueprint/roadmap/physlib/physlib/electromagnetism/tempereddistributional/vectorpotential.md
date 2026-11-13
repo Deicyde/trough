@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The vector Potential
+# The vector Potential (TemperedDistributional/VectorPotential)
 
 The module `Physlib.Electromagnetism.TemperedDistributional.VectorPotential`, [Physlib/Electromagnetism/TemperedDistributional/VectorPotential.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/VectorPotential.lean): 1 declaration, 1 with a docstring.
 
@@ -44,7 +44,7 @@ noncomputable def vectorPotential {d} (c : SpeedOfLight) :
 
 ## Depends on
 
-- [The Electromagnetic Potential](basic.md)
+- [The Electromagnetic Potential (TemperedDistributional/Basic)](basic.md)
 
 ## Sources
 

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Time contractions
+# Time contractions (TimeCond)
 
 The module `Physlib.QFT.PerturbationTheory.WickContraction.TimeCond`, [Physlib/QFT/PerturbationTheory/WickContraction/TimeCond.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/TimeCond.lean): 34 declarations (2 instances with no name), 7 with a docstring.
 

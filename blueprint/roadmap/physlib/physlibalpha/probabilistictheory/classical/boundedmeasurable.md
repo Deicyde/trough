@@ -80,7 +80,7 @@ noncomputable def outcomeMeasurement : EffectValuedMeasure Ω (BoundedMeasurable
 
 - [Bounded measurable functions](../../mathematics/part-02/measuretheory/boundedmeasurable.md)
 - [Effect-valued measures](../measurement/effectvaluedmeasure.md)
-- [Lattice-ordered observables](../orderunit/lattice.md)
+- [Lattice-ordered observables (Lattice)](../orderunit/lattice.md)
 
 ## Sources
 

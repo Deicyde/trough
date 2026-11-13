@@ -385,7 +385,7 @@ lemma mulOperator_smul_eq
 ## Depends on
 
 - [Schwartz submodule](../hilbertspaces/spaced/schwartzsubmodule.md)
-- [Unbounded operators](unbounded.md)
+- [Unbounded operators (Operators/Unbounded)](unbounded.md)
 
 ## Sources
 

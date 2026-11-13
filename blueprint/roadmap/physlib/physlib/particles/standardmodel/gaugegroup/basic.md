@@ -719,6 +719,7 @@ inductive GaugeGroupQuot : Type
   | ℤ₃ : GaugeGroupQuot
   /-- The element of `GaugeGroupQuot` corresponding to the full SM gauge group. -/
   | I : GaugeGroupQuot
+deriving Fintype, DecidableEq
 ```
 
 **`StandardModel.GaugeGroup`**, a def, [line 621](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/GaugeGroup/Basic.lean#L621).

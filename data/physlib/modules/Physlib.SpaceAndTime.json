@@ -443,7 +443,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/ReferenceFrame.lean",
@@ -674,7 +675,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Basic.lean",
@@ -933,7 +935,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/ConstantSliceDist.lean",
@@ -1156,7 +1159,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/CrossProduct.lean",
@@ -1211,7 +1215,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/Basic.lean",
@@ -1630,7 +1635,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/Curl.lean",
@@ -1905,7 +1911,8 @@
      "sorry": false
     }
    ],
-   "private": 10
+   "private": 10,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/DerivativeIndex.lean",
@@ -1968,7 +1975,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/Div.lean",
@@ -2103,7 +2111,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/Grad.lean",
@@ -2526,7 +2535,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/Iterated.lean",
@@ -2629,7 +2639,8 @@
      "sorry": false
     }
    ],
-   "private": 5
+   "private": 5,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean",
@@ -2720,7 +2731,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean",
@@ -2803,7 +2815,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/MultiIndex.lean",
@@ -2834,7 +2847,7 @@
      "kind": "structure",
      "line": 53,
      "doc": "A multi-index on `d` source coordinates.",
-     "statement": "structure MultiIndex (d : ℕ) where\n  /-- The coordinates of the multi-index. -/\n  toFun : Fin d → ℕ",
+     "statement": "structure MultiIndex (d : ℕ) where\n  /-- The coordinates of the multi-index. -/\n  toFun : Fin d → ℕ\nderiving DecidableEq",
      "sorry": false
     },
     {
@@ -3022,7 +3035,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/DistConst.lean",
@@ -3081,7 +3095,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/DistOfFunction.lean",
@@ -3200,7 +3215,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/EuclideanGroup/Action.lean",
@@ -3295,7 +3311,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean",
@@ -3410,7 +3427,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/EuclideanGroup/Basic.lean",
@@ -3705,7 +3723,8 @@
      "sorry": false
     }
    ],
-   "private": 2
+   "private": 2,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Integrals/Basic.lean",
@@ -3836,7 +3855,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Integrals/NormPow.lean",
@@ -3910,7 +3930,8 @@
      "sorry": false
     }
    ],
-   "private": 2
+   "private": 2,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean",
@@ -4061,7 +4082,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/IsDistBounded.lean",
@@ -4668,7 +4690,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/LengthUnit.lean",
@@ -4879,7 +4902,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Module.lean",
@@ -5710,7 +5734,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Norm/Basic.lean",
@@ -6181,7 +6206,8 @@
      "sorry": false
     }
    ],
-   "private": 3
+   "private": 3,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Norm/IteratedLaplacian.lean",
@@ -6220,7 +6246,8 @@
      "sorry": false
     }
    ],
-   "private": 3
+   "private": 3,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Norm/Regularized.lean",
@@ -6283,7 +6310,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Origin.lean",
@@ -6357,7 +6385,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Slice.lean",
@@ -6512,7 +6541,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/SmoothFunctions.lean",
@@ -6538,7 +6568,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Translations.lean",
@@ -6617,7 +6648,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/Basic.lean",
@@ -7048,7 +7080,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/Boosts.lean",
@@ -7079,7 +7112,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/Derivatives.lean",
@@ -7498,7 +7532,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean",
@@ -7629,7 +7664,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean",
@@ -7828,7 +7864,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean",
@@ -7939,7 +7976,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean",
@@ -8006,7 +8044,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean",
@@ -8089,7 +8128,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Basic.lean",
@@ -8248,7 +8288,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/TimeSlice.lean",
@@ -8395,7 +8436,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Time/Basic.lean",
@@ -8554,7 +8596,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Time/Derivatives.lean",
@@ -8917,7 +8960,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Time/InnerProductSpace.lean",
@@ -9472,7 +9516,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Time/ManifoldCurves.lean",
@@ -9547,7 +9592,8 @@
      "sorry": false
     }
    ],
-   "private": 2
+   "private": 2,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Time/MatrixDerivatives.lean",
@@ -9589,7 +9635,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Time/TimeMan.lean",
@@ -9724,7 +9771,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Time/TimeUnit.lean",
@@ -9919,7 +9967,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/TimeAndSpace/Basic.lean",
@@ -10290,7 +10339,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/TimeAndSpace/ConstantTimeDist.lean",
@@ -10577,7 +10627,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean",
@@ -10700,7 +10751,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean",
@@ -10771,7 +10823,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/WaveVectorSpace/Basic.lean",
@@ -11162,7 +11215,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/SpaceAndTime/WaveVectorSpace/DualPairing.lean",
@@ -11237,7 +11291,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

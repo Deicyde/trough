@@ -71,6 +71,7 @@ inductive PotentialTerm
   | topYukawa : PotentialTerm
   /-- The term `λᵇᵢⱼ 10ⁱ 5̄Mʲ 5̄Hd` appearing in the super-potential. -/
   | bottomYukawa : PotentialTerm
+deriving DecidableEq, Fintype
 ```
 
 ## B. Relation to field labels

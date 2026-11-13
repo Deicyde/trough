@@ -23,10 +23,10 @@ Its references:
 > - \{3\} J. D. Jackson, *Classical Electrodynamics*, 3rd ed., Sections 6.2-6.3, on vector and scalar potentials and gauge transformations.
 
 - [Boosts on the electric and magnetic fields](boosts.md)
-- [The Electric Field](electricfield.md)
-- [The Electromagnetic Potential](empotential.md)
-- [The Field Strength Tensor](fieldstrength.md)
+- [The Electric Field (Kinematics/ElectricField)](electricfield.md)
+- [The Electromagnetic Potential (EMPotential)](empotential.md)
+- [The Field Strength Tensor (Kinematics/FieldStrength)](fieldstrength.md)
 - [Gauge Transformations of the Electromagnetic Potential](gaugetransformation.md)
-- [The Magnetic Field](magneticfield.md)
-- [The Scalar Potential](scalarpotential.md)
-- [The vector Potential](vectorpotential.md)
+- [The Magnetic Field (Kinematics/MagneticField)](magneticfield.md)
+- [The Scalar Potential (Kinematics/ScalarPotential)](scalarpotential.md)
+- [The vector Potential (Kinematics/VectorPotential)](vectorpotential.md)

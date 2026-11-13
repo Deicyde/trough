@@ -94,12 +94,7 @@ The module `Physlib.StatisticalMechanics.CanonicalEnsemble.Basic`, [Physlib/Stat
 >   - https://www.damtp.cam.ac.uk/user/tong/statphys/one.pdf [ref: tong\_statphys\_notes\_one]
 >   - https://www.damtp.cam.ac.uk/user/tong/statphys/two.pdf [ref: tong\_statphys\_notes\_two]
 
-## 9. Roadmap
-
-> Subsequent files (`Lemmas.lean`) prove:
-> * Relations among entropies and free energies.
-> * Fundamental identity `F = U - T S`.
-> * Derivative (response) formulas: `U = -∂_β log Z`.
+…
 
 **`CanonicalEnsemble`**, a structure, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/StatisticalMechanics/CanonicalEnsemble/Basic.lean#L113).
 

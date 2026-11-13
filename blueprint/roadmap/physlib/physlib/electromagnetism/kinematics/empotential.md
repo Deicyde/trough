@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The Electromagnetic Potential
+# The Electromagnetic Potential (EMPotential)
 
 The module `Physlib.Electromagnetism.Kinematics.EMPotential`, [Physlib/Electromagnetism/Kinematics/EMPotential.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/EMPotential.lean): 59 declarations (10 instances with no name), 14 with a docstring.
 

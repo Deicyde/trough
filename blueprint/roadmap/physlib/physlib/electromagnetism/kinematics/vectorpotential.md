@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The vector Potential
+# The vector Potential (Kinematics/VectorPotential)
 
 The module `Physlib.Electromagnetism.Kinematics.VectorPotential`, [Physlib/Electromagnetism/Kinematics/VectorPotential.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/VectorPotential.lean): 19 declarations, 2 with a docstring.
 
@@ -210,7 +210,7 @@ lemma vectorPotential_differentiable_time {d} {c : SpeedOfLight} (A : Electromag
 
 ## Depends on
 
-- [The Electromagnetic Potential](empotential.md)
+- [The Electromagnetic Potential (EMPotential)](empotential.md)
 
 ## Sources
 

@@ -115,7 +115,7 @@ lemma mul_wickTerm_eq_sum (φ : 𝓕.FieldOp) (φs : List 𝓕.FieldOp) (i : Fin
 ## Depends on
 
 - [Sign associated with a contraction](../part-03/wickcontraction-sign-basic.md)
-- [Time contractions](../part-03/wickcontraction-timecontract.md)
+- [Time contractions (TimeContract)](../part-03/wickcontraction-timecontract.md)
 
 ## Proof depends on
 

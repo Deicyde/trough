@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Convex state spaces
+# Convex state spaces (PhyslibAlpha)
 
 The module `PhyslibAlpha.ProbabilisticTheory.State.Convex`, [PhyslibAlpha/ProbabilisticTheory/State/Convex.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Convex.lean): 11 declarations, 11 with a docstring.
 

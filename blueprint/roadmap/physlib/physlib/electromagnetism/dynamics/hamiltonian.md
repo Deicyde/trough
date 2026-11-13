@@ -141,7 +141,7 @@ lemma hamiltonian_eq_electricField_magneticField (A : ElectromagneticPotential d
 
 ## Depends on
 
-- [The Lagrangian in electromagnetism](lagrangian.md)
+- [The Lagrangian in electromagnetism (Electromagnetism/Dynamics/Lagrangian)](lagrangian.md)
 
 ## Sources
 

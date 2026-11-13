@@ -626,7 +626,7 @@ lemma resolvent_sub' {T : H →ₗ.[ℂ] H} (z₁ z₂ : ℂ) (hz₁ : z₁ ∈ 
 
 ## Depends on
 
-- [Unbounded operators](../unbounded.md)
+- [Unbounded operators (Operators/Unbounded)](../unbounded.md)
 
 ## Sources
 

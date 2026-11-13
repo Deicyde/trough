@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The Lorentz Current Density
+# The Lorentz Current Density (Electromagnetism/Dynamics/CurrentDensity)
 
 The module `Physlib.Electromagnetism.Dynamics.CurrentDensity`, [Physlib/Electromagnetism/Dynamics/CurrentDensity.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/CurrentDensity.lean): 17 declarations, 3 with a docstring.
 

@@ -142,7 +142,7 @@ lemma covGaugeSectorRealizationEquiv_restrictCovSector
 
 ## Depends on
 
-- [Realizations of the covariant field algebra](../part-01/gaugeboson-localgaugecov-realization.md)
+- [Realizations of the covariant field algebra (LocalGaugeCov/Realization)](../part-01/gaugeboson-localgaugecov-realization.md)
 - [The covariant gauge sector as the complexified covariant gauge-only algebra](localcovfield-gaugesector.md)
 - [Realizations of the covariant sector algebras](../part-03/localcovfield-sectorrealization.md)
 - [Realizations of the ordinary gauge sector](../part-03/localfield-gaugesectorrealization.md)

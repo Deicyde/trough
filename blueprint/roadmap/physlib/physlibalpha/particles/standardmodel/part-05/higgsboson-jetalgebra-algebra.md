@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The jet algebra of the Higgs field
+# The jet algebra of the Higgs field (Algebra)
 
 The module `PhyslibAlpha.Particles.StandardModel.HiggsBoson.JetAlgebra.Algebra`, [PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsBoson/JetAlgebra/Algebra.lean): 9 declarations, 9 with a docstring.
 

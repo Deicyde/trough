@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The Magnetic Field
+# The Magnetic Field (TemperedDistributional/MagneticField)
 
 The module `Physlib.Electromagnetism.TemperedDistributional.MagneticField`, [Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean): 6 declarations, 1 with a docstring.
 
@@ -101,8 +101,8 @@ lemma magneticFieldMatrix_one_dim_eq_zero {c : SpeedOfLight}
 
 ## Depends on
 
-- [The Field Strength Tensor](fieldstrength.md)
-- [The vector Potential](vectorpotential.md)
+- [The Field Strength Tensor (TemperedDistributional/FieldStrength)](fieldstrength.md)
+- [The vector Potential (TemperedDistributional/VectorPotential)](vectorpotential.md)
 
 ## Sources
 

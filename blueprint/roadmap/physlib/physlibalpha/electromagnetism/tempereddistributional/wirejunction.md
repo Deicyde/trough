@@ -170,7 +170,7 @@ lemma IsWireJunction.sum_currents_eq_zero {d} {𝓕 : FreeSpace} {J : TempDistLo
 
 ## Depends on
 
-- [Extrema of the Lagrangian density](../../../physlib/electromagnetism/tempereddistributional/dynamics-isextrema.md)
+- [Extrema of the Lagrangian density (TemperedDistributional/Dynamics/IsExtrema)](../../../physlib/electromagnetism/tempereddistributional/dynamics-isextrema.md)
 
 ## Sources
 

@@ -32,7 +32,7 @@ The module `PhyslibAlpha.QuantumMechanics.Hydrogen.Eigenfunctions`, [PhyslibAlph
 >
 > The equation is proved pointwise away from the nucleus, where `ψ` is smooth. It does not say
 > that these are all eigenfunctions, nor that they lie in the domain of the self-adjoint
-> Hamiltonian; the spectral statements are the TODOs of `Physlib.QuantumMechanics.Hydrogen.Basic`.
+> Hamiltonian; …
 
 ## ii. Key results
 

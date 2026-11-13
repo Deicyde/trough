@@ -9,10 +9,10 @@ navigation: transparent
 - [Join of contractions](wickcontraction-join.md)
 - [Permutations of Wick contractions](wickcontraction-perm.md)
 - [Singleton of contractions](wickcontraction-singleton.md)
-- [Time contractions](wickcontraction-staticcontract.md)
+- [Time contractions (StaticContract)](wickcontraction-staticcontract.md)
 - [Sub contractions](wickcontraction-subcontraction.md)
-- [Time contractions](wickcontraction-timecond.md)
-- [Time contractions](wickcontraction-timecontract.md)
+- [Time contractions (TimeCond)](wickcontraction-timecond.md)
+- [Time contractions (TimeContract)](wickcontraction-timecontract.md)
 - [Uncontracted elements](wickcontraction-uncontracted.md)
 - [List of uncontracted elements of a Wick contraction](wickcontraction-uncontractedlist.md)
 

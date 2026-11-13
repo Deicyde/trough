@@ -63,7 +63,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/FluidDynamics/CauchyFlow/Basic.lean",
@@ -86,7 +87,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/FluidDynamics/CauchyFlow/BodyForce.lean",
@@ -117,7 +119,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/FluidDynamics/CauchyFlow/Inviscid.lean",
@@ -156,7 +159,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/FluidDynamics/CauchyFlow/Momentum.lean",
@@ -199,7 +203,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/FluidDynamics/CauchyFlow/NavierStokes.lean",
@@ -242,7 +247,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/FluidDynamics/CauchyFlow/Newtonian.lean",
@@ -265,7 +271,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/FluidDynamics/Euler/Basic.lean",
@@ -308,7 +315,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/FluidDynamics/FluidFlow/Basic.lean",
@@ -331,7 +339,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/FluidDynamics/FluidFlow/Continuity.lean",
@@ -378,7 +387,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/FluidDynamics/FluidFlow/Incompressible.lean",
@@ -425,7 +435,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/FluidDynamics/FluidFlow/Kinematics.lean",
@@ -456,7 +467,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/FluidDynamics/FluidFlow/Momentum.lean",
@@ -547,7 +559,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/FluidDynamics/FluidFlow/Newtonian.lean",
@@ -578,7 +591,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/FluidDynamics/ThermodynamicCauchyFlow/Basic.lean",
@@ -601,7 +615,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/FluidDynamics/ThermodynamicCauchyFlow/Bernoulli.lean",
@@ -644,7 +659,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/FluidDynamics/ThermodynamicCauchyFlow/Isentropic.lean",
@@ -667,7 +683,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

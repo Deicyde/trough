@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Lattice-ordered observables
+# Lattice-ordered observables (Lattice)
 
 The module `PhyslibAlpha.ProbabilisticTheory.OrderUnit.Lattice`, [PhyslibAlpha/ProbabilisticTheory/OrderUnit/Lattice.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/OrderUnit/Lattice.lean): 2 declarations, 2 with a docstring.
 

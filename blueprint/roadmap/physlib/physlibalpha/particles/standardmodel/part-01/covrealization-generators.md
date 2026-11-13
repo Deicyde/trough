@@ -75,6 +75,7 @@ inductive Generators where
   | e : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 → Generators
   /-- The fermion tower `∇_l bare` of the `i`-th family applied to a dual basis vector. -/
   | bare : Fin 3 → (n : ℕ) → (Fin n → Fin 1 ⊕ Fin 3) → Fin 2 → Generators
+deriving DecidableEq
 ```
 
 **`StandardModel.CovAlgebraRealization.Generators.IsFermionic`**, a def, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L108).
@@ -124,6 +125,7 @@ inductive GeneratorClass where
   | higgs : GeneratorClass
   /-- The fermion class: the fermion towers and their conjugates. -/
   | fermion : GeneratorClass
+deriving DecidableEq
 ```
 
 **`StandardModel.CovAlgebraRealization.instFintypeGeneratorClass`**, an instance, [line 171](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/CovRealization/Generators.lean#L171).

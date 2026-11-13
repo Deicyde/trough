@@ -438,7 +438,7 @@ lemma angularMomentum_commutation_positionDotMomentum : ⁅𝐋 i j, 𝐱[d] ⬝
 
 ## Proof depends on
 
-- [Commutation relations](commutation.md)
+- [Commutation relations (Operators/Commutation)](commutation.md)
 
 ## Sources
 

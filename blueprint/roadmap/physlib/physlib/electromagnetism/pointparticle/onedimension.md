@@ -155,7 +155,7 @@ lemma oneDimPointParticle_isExterma (𝓕 : FreeSpace) (q : ℝ) (r₀ : Space 1
 
 ## Depends on
 
-- [Extrema of the Lagrangian density](../tempereddistributional/dynamics-isextrema.md)
+- [Extrema of the Lagrangian density (TemperedDistributional/Dynamics/IsExtrema)](../tempereddistributional/dynamics-isextrema.md)
 - [Translations on space](../../spaceandtime/space/part-01/translations.md)
 
 ## Proof depends on

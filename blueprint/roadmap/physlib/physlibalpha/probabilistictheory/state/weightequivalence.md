@@ -83,7 +83,7 @@ noncomputable def stateEquiv : {w : Weight E // w.IsState} ≃ 𝓢[ℝ, E]
 ## Depends on
 
 - [Channels](../channel/basic.md)
-- [Extending finite weights](../weight/extension.md)
+- [Extending finite weights (PhyslibAlpha)](../weight/extension.md)
 
 ## Sources
 

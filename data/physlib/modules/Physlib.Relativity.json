@@ -51,7 +51,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Bispinors/Pauli/Basic.lean",
@@ -117,7 +118,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Bispinors/Pauli/Relations.lean",
@@ -212,7 +214,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Bispinors/Pauli/ToTensor.lean",
@@ -479,7 +482,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Causality/Basic.lean",
@@ -493,7 +497,7 @@
      "kind": "inductive",
      "line": 26,
      "doc": "Classification of lorentz vectors based on their causal character.",
-     "statement": "inductive CausalCharacter\n  | timeLike\n  | lightLike\n  | spaceLike",
+     "statement": "inductive CausalCharacter\n  | timeLike\n  | lightLike\n  | spaceLike\n\nderiving DecidableEq",
      "sorry": false
     },
     {
@@ -633,7 +637,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Causality/CausallyFollows.lean",
@@ -724,7 +729,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Causality/LightLike.lean",
@@ -774,7 +780,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Causality/TimeLike.lean",
@@ -864,7 +871,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/CliffordAlgebra.lean",
@@ -1315,7 +1323,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Dirac/Basic.lean",
@@ -1474,7 +1483,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean",
@@ -1733,7 +1743,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Dirac/Slash.lean",
@@ -1831,7 +1842,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/Contraction.lean",
@@ -2186,7 +2198,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/DualLeftHanded.lean",
@@ -2425,7 +2438,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/DualRightHanded.lean",
@@ -2664,7 +2678,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/Duals.lean",
@@ -2735,7 +2750,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/LeftHanded.lean",
@@ -2974,7 +2990,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/Metric.lean",
@@ -3225,7 +3242,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/RightHanded.lean",
@@ -3464,7 +3482,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/Two.lean",
@@ -3823,7 +3842,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/Unit.lean",
@@ -4034,7 +4054,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/LorentzAlgebra/Basic.lean",
@@ -4108,7 +4129,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/LorentzAlgebra/Basis.lean",
@@ -4203,7 +4225,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/LorentzAlgebra/ExponentialMap.lean",
@@ -4301,7 +4324,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Basic.lean",
@@ -4796,7 +4820,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Boosts/Apply.lean",
@@ -4838,7 +4863,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Boosts/Axis.lean",
@@ -4941,7 +4967,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Boosts/Basic.lean",
@@ -5204,7 +5231,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Boosts/Generalized.lean",
@@ -5471,7 +5499,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Orthochronous/Basic.lean",
@@ -5713,7 +5742,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Proper.lean",
@@ -5883,7 +5913,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Restricted/Basic.lean",
@@ -5925,7 +5956,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Restricted/FromBoostRotation.lean",
@@ -5991,7 +6023,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Rotations.lean",
@@ -6065,7 +6098,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/ToVector.lean",
@@ -6163,7 +6197,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/MinkowskiMatrix.lean",
@@ -6458,7 +6493,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/PauliMatrices/Basic.lean",
@@ -6817,7 +6853,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/PauliMatrices/CliffordAlgebra.lean",
@@ -6851,7 +6888,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/PauliMatrices/SelfAdjoint.lean",
@@ -7134,7 +7172,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/SL2C/AxisRotations.lean",
@@ -7224,7 +7263,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/SL2C/Basic.lean",
@@ -7407,7 +7447,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/SL2C/CayleyKlein.lean",
@@ -7474,7 +7515,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/SL2C/Cover.lean",
@@ -7517,7 +7559,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/SL2C/SelfAdjoint.lean",
@@ -7580,7 +7623,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Special/ProperTime.lean",
@@ -7622,7 +7666,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Special/TwinParadox/Basic.lean",
@@ -7733,7 +7778,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/SpeedOfLight.lean",
@@ -7908,7 +7954,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Basic.lean",
@@ -8643,7 +8690,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Basic.lean",
@@ -8657,7 +8705,7 @@
      "kind": "inductive",
      "line": 27,
      "doc": "The colors associated with complex representations of SL(2, ℂ) of interest to physics.",
-     "statement": "inductive Color\n  /-- The color associated with Left handed fermions. -/\n  | upL : Color\n  /-- The color associated with dual-Left handed fermions. -/\n  | downL : Color\n  /-- The color associated with Right handed fermions. -/\n  | upR : Color\n  /-- The color associated with dual-Right handed fermions. -/\n  | downR : Color\n  /-- The color associated with contravariant Lorentz vectors. -/\n  | up : Color\n  /-- The color associated with covariant Lorentz vectors. -/\n  | down : Color",
+     "statement": "inductive Color\n  /-- The color associated with Left handed fermions. -/\n  | upL : Color\n  /-- The color associated with dual-Left handed fermions. -/\n  | downL : Color\n  /-- The color associated with Right handed fermions. -/\n  | upR : Color\n  /-- The color associated with dual-Right handed fermions. -/\n  | downR : Color\n  /-- The color associated with contravariant Lorentz vectors. -/\n  | up : Color\n  /-- The color associated with covariant Lorentz vectors. -/\n  | down : Color\nderiving Fintype",
      "sorry": false
     },
     {
@@ -8821,7 +8869,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Lemmas.lean",
@@ -8839,7 +8888,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean",
@@ -8986,7 +9036,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Metrics/Basic.lean",
@@ -9385,7 +9436,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean",
@@ -9504,7 +9556,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean",
@@ -9599,7 +9652,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean",
@@ -9673,7 +9727,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Units/Basic.lean",
@@ -10072,7 +10127,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Units/Pre.lean",
@@ -10203,7 +10259,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean",
@@ -10266,7 +10323,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Vector/Basic.lean",
@@ -10537,7 +10595,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean",
@@ -10648,7 +10707,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Vector/Modules.lean",
@@ -10866,7 +10926,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComponentIdx/Basic.lean",
@@ -10905,7 +10966,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComponentIdx/Contraction.lean",
@@ -11020,7 +11082,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComponentIdx/Insert.lean",
@@ -11059,7 +11122,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComponentIdx/Pair.lean",
@@ -11106,7 +11170,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComponentIdx/Product.lean",
@@ -11177,7 +11242,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComponentIdx/Single.lean",
@@ -11216,7 +11282,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Conjugation/Basic.lean",
@@ -11551,7 +11618,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Conjugation/Inverse.lean",
@@ -11666,7 +11734,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Constructors.lean",
@@ -12041,7 +12110,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/Basic.lean",
@@ -12120,7 +12190,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/Basis.lean",
@@ -12178,7 +12249,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean",
@@ -12293,7 +12365,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean",
@@ -12380,7 +12453,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/Products.lean",
@@ -12451,7 +12525,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/Pure.lean",
@@ -12706,7 +12781,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/RankTwo.lean",
@@ -12797,7 +12873,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/SuccSuccAbove.lean",
@@ -13172,7 +13249,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean",
@@ -13255,7 +13333,8 @@
      "sorry": false
     }
    ],
-   "private": 3
+   "private": 3,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Dual.lean",
@@ -13378,7 +13457,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Elab.lean",
@@ -13721,7 +13801,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Evaluation.lean",
@@ -13940,7 +14021,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/LeviCivita/Basic.lean",
@@ -14043,7 +14125,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/LeviCivita/Complex.lean",
@@ -14090,7 +14173,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/LeviCivita/Contractions.lean",
@@ -14201,7 +14285,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/MetricTensor.lean",
@@ -14283,7 +14368,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/OfInt.lean",
@@ -14325,7 +14411,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Product.lean",
@@ -14692,7 +14779,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Basic.lean",
@@ -14719,7 +14807,7 @@
      "kind": "inductive",
      "line": 30,
      "doc": "The colors associated with real representations of O(1, 3) of interest to physics.",
-     "statement": "inductive Color\n  /-- The color associated with contravariant Lorentz vectors. -/\n  | up : Color\n  /-- The color associated with covariant Lorentz vectors. -/\n  | down : Color",
+     "statement": "inductive Color\n  /-- The color associated with contravariant Lorentz vectors. -/\n  | up : Color\n  /-- The color associated with covariant Lorentz vectors. -/\n  | down : Color\nderiving Fintype",
      "sorry": false
     },
     {
@@ -14859,7 +14947,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Contraction/CrossToEnd.lean",
@@ -14882,7 +14971,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/CoVector/Basic.lean",
@@ -15105,7 +15195,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/CoVector/Representation.lean",
@@ -15192,7 +15283,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/CoVector/Tensorial.lean",
@@ -15359,7 +15451,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Matrix/Pre.lean",
@@ -15506,7 +15599,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Metrics/Basic.lean",
@@ -15633,7 +15727,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean",
@@ -15744,7 +15839,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Representation/Contraction.lean",
@@ -15851,7 +15947,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/ToComplex.lean",
@@ -16246,7 +16343,8 @@
      "sorry": false
     }
    ],
-   "private": 2
+   "private": 2,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Units/Basic.lean",
@@ -16269,7 +16367,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean",
@@ -16384,7 +16483,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Vector/Basic.lean",
@@ -16959,7 +17059,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Vector/MinkowskiProduct.lean",
@@ -17238,7 +17339,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Vector/Pre/Basic.lean",
@@ -17417,7 +17519,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Vector/Pre/Contraction.lean",
@@ -17776,7 +17879,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Vector/Pre/Modules.lean",
@@ -18271,7 +18375,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Vector/Representation.lean",
@@ -18366,7 +18471,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Vector/Tensorial.lean",
@@ -18589,7 +18695,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Velocity/Basic.lean",
@@ -18808,7 +18915,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Velocity/Deriv.lean",
@@ -18843,7 +18951,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Reindexing.lean",
@@ -19242,7 +19351,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Tensorial.lean",
@@ -19529,7 +19639,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/TensorSpecies/Basic.lean",
@@ -19684,7 +19795,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean",
@@ -19803,7 +19915,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/UnitTensor.lean",
@@ -19933,7 +20046,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

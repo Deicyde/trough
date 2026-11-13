@@ -113,7 +113,7 @@ lemma inner_centered_state_eq_zero (T : H →ₗ.[ℂ] H) (hT : T.IsSymmetric)
 
 ## Depends on
 
-- [Unbounded operators](unbounded.md)
+- [Unbounded operators (Operators/Unbounded)](unbounded.md)
 
 ## Sources
 

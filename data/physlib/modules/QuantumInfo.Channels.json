@@ -507,7 +507,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/Channels/CPTP.lean",
@@ -1021,7 +1022,8 @@
      "sorry": false
     }
    ],
-   "private": 9
+   "private": 9,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/Channels/DegradableOrder.lean",
@@ -1039,7 +1041,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/Channels/Dual.lean",
@@ -1321,7 +1324,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/Channels/MatrixMap.lean",
@@ -1603,7 +1607,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/Channels/Pinching.lean",
@@ -1805,7 +1810,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/Channels/Unbundled.lean",
@@ -2311,7 +2317,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Unbounded operators
+# Unbounded operators (Operators/Unbounded)
 
 The module `Physlib.QuantumMechanics.Operators.Unbounded`, [Physlib/QuantumMechanics/Operators/Unbounded.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Unbounded.lean): 111 declarations, 35 with a docstring, 1 listed as significant.
 

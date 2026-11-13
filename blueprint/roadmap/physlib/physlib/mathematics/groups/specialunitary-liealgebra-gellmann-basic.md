@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The generalized Gell-Mann matrices
+# The generalized Gell-Mann matrices (Physlib)
 
 The module `Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.GellMann.Basic`, [Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean): 32 declarations, 17 with a docstring.
 
@@ -54,6 +54,7 @@ inductive GellMannIndex (n : ℕ)
   | symm (p : Fin n) (q : Fin n) (h : p < q) : GellMannIndex n
   | antisymm (p : Fin n) (q : Fin n) (h : p < q) : GellMannIndex n
   | diag (l : Fin (n - 1)) : GellMannIndex n
+deriving DecidableEq, Repr, Fintype
 ```
 
 ### A.1. The cardinality of `GellMannIndex`

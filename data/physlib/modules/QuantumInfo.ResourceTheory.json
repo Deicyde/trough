@@ -386,7 +386,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ResourceTheory/HypothesisTesting.lean",
@@ -564,7 +565,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "QuantumInfo/ResourceTheory/SteinsLemma.lean",
@@ -694,7 +696,8 @@
      "sorry": false
     }
    ],
-   "private": 44
+   "private": 44,
+   "aliases": 0
   }
  ]
 }

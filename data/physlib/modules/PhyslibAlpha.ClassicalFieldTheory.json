@@ -155,7 +155,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean",
@@ -222,7 +223,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/FieldStrength.lean",
@@ -469,7 +471,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeAction.lean",
@@ -788,7 +791,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/GaugeField.lean",
@@ -835,7 +839,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/JetDeriv.lean",
@@ -1074,7 +1079,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/LorentzAction.lean",
@@ -1261,7 +1267,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassDim.lean",
@@ -1348,7 +1355,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/MassWeightPoly.lean",
@@ -1511,7 +1519,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Realization.lean",
@@ -1730,7 +1739,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGaugeCov/Basic.lean",
@@ -2061,7 +2071,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGaugeCov/Realization.lean",
@@ -2276,7 +2287,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Basic.lean",
@@ -2355,7 +2367,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/FieldStrength.lean",
@@ -2458,7 +2471,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/GaugeLaw.lean",
@@ -2877,7 +2891,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/Symmetrized.lean",
@@ -3480,7 +3495,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/Realization/TransformsAdjoint.lean",
@@ -3583,7 +3599,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/Basic.lean",
@@ -3646,7 +3663,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonGenerators.lean",
@@ -3905,7 +3923,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonMatterField.lean",
@@ -4080,7 +4099,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/BosonModule.lean",
@@ -4175,7 +4195,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionGenerators.lean",
@@ -4434,7 +4455,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionMatterField.lean",
@@ -4609,7 +4631,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeFieldData/FermionModule.lean",
@@ -4704,7 +4727,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/Basic.lean",
@@ -5143,7 +5167,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSector.lean",
@@ -5290,7 +5315,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/GaugeSectorRealization.lean",
@@ -5377,7 +5403,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/Realization.lean",
@@ -5772,7 +5799,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/Sector.lean",
@@ -6163,7 +6191,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/SectorRealization.lean",
@@ -6438,7 +6467,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Basic.lean",
@@ -7137,7 +7167,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/CovariantDeriv.lean",
@@ -7456,7 +7487,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeAction.lean",
@@ -7643,7 +7675,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSector.lean",
@@ -7806,7 +7839,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/GaugeSectorRealization.lean",
@@ -7881,7 +7915,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Jet.lean",
@@ -8152,7 +8187,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/JetRep.lean",
@@ -8319,7 +8355,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/LorentzAction.lean",
@@ -8506,7 +8543,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/MassWeight.lean",
@@ -8745,7 +8783,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Realization.lean",
@@ -9032,7 +9071,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/Sector.lean",
@@ -9075,7 +9115,7 @@
      "kind": "inductive",
      "line": 65,
      "doc": "The categories of fields a sector may select.",
-     "statement": "inductive FieldCategory where\n  /-- The fermionic species. -/\n  | fermion : FieldCategory\n  /-- The gauge bosons. -/\n  | gauge : FieldCategory\n  /-- The bosonic species. -/\n  | scalar : FieldCategory",
+     "statement": "inductive FieldCategory where\n  /-- The fermionic species. -/\n  | fermion : FieldCategory\n  /-- The gauge bosons. -/\n  | gauge : FieldCategory\n  /-- The bosonic species. -/\n  | scalar : FieldCategory\nderiving DecidableEq",
      "sorry": false
     },
     {
@@ -9351,7 +9391,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/SectorRealization.lean",
@@ -9558,7 +9599,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalField/TransformsIn.lean",
@@ -9833,7 +9875,8 @@
      "sorry": false
     }
    ],
-   "private": 2
+   "private": 2,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/AdjointCoeff.lean",
@@ -10012,7 +10055,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean",
@@ -10091,7 +10135,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Factor.lean",
@@ -10182,7 +10227,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MatrixJets.lean",
@@ -10509,7 +10555,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/MaurerCartan.lean",
@@ -10632,7 +10679,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/OfFactors.lean",
@@ -11007,7 +11055,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Prod.lean",
@@ -11162,7 +11211,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Adjoint.lean",
@@ -11401,7 +11451,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Algebra.lean",
@@ -11548,7 +11599,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Basic.lean",
@@ -11923,7 +11975,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/GellMann.lean",
@@ -12218,7 +12271,8 @@
      "sorry": false
     }
    ],
-   "private": 6
+   "private": 6,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/Adjoint.lean",
@@ -12405,7 +12459,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/Basic.lean",
@@ -12880,7 +12935,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/BiFund.lean",
@@ -13195,7 +13251,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/FundAnti.lean",
@@ -13318,7 +13375,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/Invariants/QuadFund.lean",
@@ -13501,7 +13559,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/SU/TensorSpecies.lean",
@@ -13832,7 +13891,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Truncation.lean",
@@ -14103,7 +14163,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/U1.lean",
@@ -14438,7 +14499,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Basic.lean",
@@ -14481,7 +14543,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Charge.lean",
@@ -14568,7 +14631,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/CovariantDeriv.lean",
@@ -14907,7 +14971,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/InfinitesimalAction.lean",
@@ -15050,7 +15115,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/Basic.lean",
@@ -15365,7 +15431,8 @@
      "sorry": false
     }
    ],
-   "private": 2
+   "private": 2,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/GaugeAction.lean",
@@ -15476,7 +15543,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/JetComponent/TransformsIn.lean",
@@ -15571,7 +15639,8 @@
      "sorry": false
     }
    ],
-   "private": 3
+   "private": 3,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/LorentzCovariantDeriv.lean",
@@ -15722,7 +15791,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Basic.lean",
@@ -16281,7 +16351,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Constructions.lean",
@@ -16380,7 +16451,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Factors.lean",
@@ -16435,7 +16507,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/MatrixRep/Table.lean",
@@ -17010,7 +17083,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Pi.lean",
@@ -17185,7 +17259,8 @@
      "sorry": false
     }
    ],
-   "private": 4
+   "private": 4,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/Prod.lean",
@@ -17324,7 +17399,8 @@
      "sorry": false
     }
    ],
-   "private": 2
+   "private": 2,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/MatterField/TransformsIn.lean",
@@ -17387,7 +17463,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Basic.lean",
@@ -17533,7 +17610,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GreenOperator/CausalPropagator.lean",
@@ -17719,7 +17797,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Localization.lean",
@@ -17993,7 +18072,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GreenOperator/SmoothFields.lean",
@@ -18083,7 +18163,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/GreenOperator/Uniqueness.lean",
@@ -18237,7 +18318,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Basic.lean",
@@ -18287,7 +18369,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassDeformation.lean",
@@ -18345,7 +18428,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveLine.lean",
@@ -18379,7 +18463,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveRadial.lean",
@@ -18421,7 +18506,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MassiveSpace.lean",
@@ -18455,7 +18541,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessLine.lean",
@@ -18489,7 +18576,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/ClosedForm/MasslessSpace.lean",
@@ -18539,7 +18627,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Coordinates.lean",
@@ -18693,7 +18782,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/CausalKernel.lean",
@@ -18735,7 +18825,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Distributions.lean",
@@ -18881,7 +18972,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Fourier.lean",
@@ -19051,7 +19143,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/Operators.lean",
@@ -19141,7 +19234,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Covariance/SolutionSpace.lean",
@@ -19231,7 +19325,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/CutoffResponse.lean",
@@ -19345,7 +19440,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Descent.lean",
@@ -19363,7 +19459,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/RadialLift.lean",
@@ -19453,7 +19550,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Retarded.lean",
@@ -19495,7 +19593,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/Rotation.lean",
@@ -19529,7 +19628,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SineEvolution.lean",
@@ -19547,7 +19647,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DimensionRaising/SpaceSplit.lean",
@@ -19637,7 +19738,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/DistributionSources.lean",
@@ -19943,7 +20045,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FinitePropagation.lean",
@@ -20209,7 +20312,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FourierRepresentation.lean",
@@ -20243,7 +20347,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/FreeEvolution.lean",
@@ -20445,7 +20550,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/GreenOperators.lean",
@@ -20727,7 +20833,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Multiplier.lean",
@@ -20897,7 +21004,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/BoundaryValue.lean",
@@ -21091,7 +21199,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Convolution.lean",
@@ -21141,7 +21250,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/DistributionSource.lean",
@@ -21255,7 +21365,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/FourierForm.lean",
@@ -21433,7 +21544,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/PointSource.lean",
@@ -21459,7 +21571,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedKernel/Tempered.lean",
@@ -21557,7 +21670,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/RetardedSolution.lean",
@@ -21847,7 +21961,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Smoothness.lean",
@@ -21945,7 +22060,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/SmoothSources.lean",
@@ -21987,7 +22103,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/Solution.lean",
@@ -22253,7 +22370,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/KleinGordon/TemperedSlice.lean",
@@ -22327,7 +22445,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/Action.lean",
@@ -22494,7 +22613,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrange.lean",
@@ -22573,7 +22693,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/EulerLagrangeEquation.lean",
@@ -22640,7 +22761,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/FirstOrder.lean",
@@ -22819,7 +22941,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean",
@@ -22862,7 +22985,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Basic.lean",
@@ -22933,7 +23057,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Criterion.lean",
@@ -23000,7 +23125,8 @@
      "sorry": false
     }
    ],
-   "private": 16
+   "private": 16,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Density.lean",
@@ -23107,7 +23233,8 @@
      "sorry": false
     }
    ],
-   "private": 3
+   "private": 3,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/IntegrationByParts.lean",
@@ -23174,7 +23301,8 @@
      "sorry": false
     }
    ],
-   "private": 4
+   "private": 4,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Regularity.lean",
@@ -23241,7 +23369,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean",
@@ -23344,7 +23473,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/JetPoint.lean",
@@ -23543,7 +23673,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/JetPointFiber.lean",
@@ -23750,7 +23881,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/JetPointRegularity.lean",
@@ -23801,7 +23933,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/Lagrangian.lean",
@@ -23936,7 +24069,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/TotalDerivative.lean",
@@ -24019,7 +24153,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergence.lean",
@@ -24094,7 +24229,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/TotalDivergenceEquivalence.lean",
@@ -24253,7 +24389,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/Local/Variation.lean",
@@ -24276,7 +24413,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Basic.lean",
@@ -24342,7 +24480,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Phase.lean",
@@ -24432,7 +24571,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Propagator.lean",
@@ -24563,7 +24703,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/Setting.lean",
@@ -24622,7 +24763,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Kirchhoff/SphericalMean.lean",
@@ -24697,7 +24839,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "PhyslibAlpha/ClassicalFieldTheory/WaveEquation/Poincare.lean",
@@ -24763,7 +24906,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

@@ -27,7 +27,7 @@ The module `PhyslibAlpha.ClassicalMechanics.LiouvilleIntegrable.Basic`, [Physlib
 > conditions on an open *domain* `U` of phase space, which must be dense so that the conditions hold
 > generically. Without density the empty domain would make every Hamiltonian integrable.
 >
-> …
+> These are the integrability conditions used in the Liouville–Arnold theorem. …
 >
 > With one degree of freedom the conditions collapse: the Hamiltonian is the only conserved quantity,
 > involution is automatic, and independence says only that the gradient of the Hamiltonian does not

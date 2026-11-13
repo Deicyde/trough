@@ -12,7 +12,11 @@ The module `Physlib.Cosmology.FLRW.Solutions`, [Physlib/Cosmology/FLRW/Solutions
 
 ## i. Overview
 
-> …
+> This file collects the standard closed-form solutions of the Friedmann equations
+> (`FirstOrderFriedmann` and `SecondOrderFriedmann` of `Physlib.Cosmology.FLRW.Basic`) and
+> proves that they solve them: the spatially flat power-law solutions (radiation-dominated
+> and Einstein-de Sitter), the Milne model, and the equilibrium relations of the Einstein static
+> universe. The de Sitter solution is in `Physlib.Cosmology.FLRW.DeSitter`. …
 >
 > The flat power-law solutions are also given as FLRW models: `FLRW.powerLaw` in
 > `Physlib.Cosmology.FLRW.SpecificCases.PowerLaw`, `FLRW.radiationDominated` in

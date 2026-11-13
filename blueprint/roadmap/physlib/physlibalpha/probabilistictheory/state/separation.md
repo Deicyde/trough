@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Separation by states
+# Separation by states (PhyslibAlpha)
 
 The module `PhyslibAlpha.ProbabilisticTheory.State.Separation`, [PhyslibAlpha/ProbabilisticTheory/State/Separation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/State/Separation.lean): 13 declarations, 12 with a docstring.
 
@@ -164,7 +164,7 @@ lemma norm_toOrderUnitContinuousLinearMap [Nontrivial E] (ω : 𝓢[ℝ, E]) :
 
 ## Proof depends on
 
-- [The metric space of states](metric.md)
+- [The metric space of states (PhyslibAlpha)](metric.md)
 
 ## Sources
 

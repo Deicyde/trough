@@ -15,7 +15,7 @@ The folder [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/](https://github.com/l
 - [The mass-weight polynomial on the gauge-boson jet algebra](part-01/gaugeboson-localgauge-massweightpoly.md)
 - [Realizations of the local gauge field algebra](part-01/gaugeboson-localgauge-realization.md)
 - [The covariant field algebra of the gauge bosons](part-01/gaugeboson-localgaugecov-basic.md)
-- [Realizations of the covariant field algebra](part-01/gaugeboson-localgaugecov-realization.md)
+- [Realizations of the covariant field algebra (LocalGaugeCov/Realization)](part-01/gaugeboson-localgaugecov-realization.md)
 - [Realizations of the gauge-boson jet algebra](part-01/gaugeboson-realization-basic.md)
 - [The field strength](part-01/gaugeboson-realization-fieldstrength.md)
 - [The gauge law on brackets and iterated derivatives](part-01/gaugeboson-realization-gaugelaw.md)
@@ -34,7 +34,7 @@ The folder [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/](https://github.com/l
 - [The covariant field algebra of a gauge theory](part-02/localcovfield-basic.md)
 - [The covariant gauge sector as the complexified covariant gauge-only algebra](part-02/localcovfield-gaugesector.md)
 - [Realizations of the covariant gauge sector](part-02/localcovfield-gaugesectorrealization.md)
-- [Realizations of the covariant field algebra](part-02/localcovfield-realization.md)
+- [Realizations of the covariant field algebra (LocalCovField/Realization)](part-02/localcovfield-realization.md)
 
 ## [The covariant sector algebras… to Realizations of the local field…](part-03/README.md)
 
@@ -68,7 +68,7 @@ The folder [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/](https://github.com/l
 - [The local gauge data of `SU(n)`](part-04/localgaugedata-su-basic.md)
 - [The adjoint representation of `SU(N)`](part-04/localgaugedata-su-adjoint.md)
 - [The Lie algebra `su(n)` over a `*`-algebra](part-04/localgaugedata-su-algebra.md)
-- [The generalized Gell-Mann matrices](part-04/localgaugedata-su-gellmann.md)
+- [The generalized Gell-Mann matrices (PhyslibAlpha)](part-04/localgaugedata-su-gellmann.md)
 
 ## [The complex tensor species of… to The jet component space of a…](part-05/README.md)
 

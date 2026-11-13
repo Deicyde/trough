@@ -319,7 +319,7 @@ lemma PeriodicGraph.card_neighbors_cell {G F : Type*} [AddGroup G] [Finite F]
 
 ## Depends on
 
-- [Crystals, cells and sites](basic.md)
+- [Crystals, cells and sites (PhyslibAlpha)](basic.md)
 
 ## Sources
 

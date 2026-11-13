@@ -528,7 +528,7 @@ def normTimeOrderList (φs : List 𝓕.CrAnFieldOp) : List 𝓕.CrAnFieldOp
 
 ## Depends on
 
-- [List lemmas](../../../mathematics/formathlib/list-insertionsort.md)
+- [List lemmas (InsertionSort)](../../../mathematics/formathlib/list-insertionsort.md)
 - [Creation and annihilation sections](fieldspecification-cransection.md)
 - [Normal Ordering of states](fieldspecification-normalorder.md)
 

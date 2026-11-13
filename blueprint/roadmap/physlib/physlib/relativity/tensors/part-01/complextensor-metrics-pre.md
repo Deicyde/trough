@@ -112,7 +112,7 @@ lemma ComplexCoVector.contr_metric :
 
 ## Depends on
 
-- [Unit for complex Lorentz vectors](../part-02/complextensor-units-pre.md)
+- [Unit for complex Lorentz vectors (ComplexTensor/Units/Pre)](../part-02/complextensor-units-pre.md)
 
 ## Sources
 

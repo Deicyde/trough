@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The Magnetic Field
+# The Magnetic Field (Kinematics/MagneticField)
 
 The module `Physlib.Electromagnetism.Kinematics.MagneticField`, [Physlib/Electromagnetism/Kinematics/MagneticField.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/MagneticField.lean): 23 declarations, 4 with a docstring.
 
@@ -303,7 +303,7 @@ lemma curl_magneticFieldMatrix_eq_electricField_toFieldStrength_eval {d : ℕ} {
 
 ## Depends on
 
-- [The Electric Field](electricfield.md)
+- [The Electric Field (Kinematics/ElectricField)](electricfield.md)
 
 ## Sources
 

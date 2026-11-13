@@ -192,7 +192,7 @@ lemma infiniteWire_isExterma {𝓕 : FreeSpace} {I : ℝ} :
 
 ## Depends on
 
-- [Extrema of the Lagrangian density](../tempereddistributional/dynamics-isextrema.md)
+- [Extrema of the Lagrangian density (TemperedDistributional/Dynamics/IsExtrema)](../tempereddistributional/dynamics-isextrema.md)
 - [Constant slice distributions](../../spaceandtime/space/part-01/constantslicedist.md)
 
 ## Proof depends on

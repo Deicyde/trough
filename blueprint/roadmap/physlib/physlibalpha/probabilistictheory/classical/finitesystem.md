@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Finite classical systems
+# Finite classical systems (FiniteSystem)
 
 The module `PhyslibAlpha.ProbabilisticTheory.Classical.FiniteSystem`, [PhyslibAlpha/ProbabilisticTheory/Classical/FiniteSystem.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteSystem.lean): 18 declarations (2 instances with no name), 10 with a docstring.
 
@@ -181,7 +181,7 @@ lemma Effect.isSharp_iff_eq_zero_or_eq_one {e : Effect ℝ} :
 
 - [Sharp effects](../../../physlib/probabilistictheory/effect/sharp.md)
 - [Simplices](../../mathematics/part-02/geometry/simplex.md)
-- [Convex state spaces](../state/convex.md)
+- [Convex state spaces (PhyslibAlpha)](../state/convex.md)
 
 ## Sources
 

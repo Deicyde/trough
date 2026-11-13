@@ -9,7 +9,8 @@
    "doc": "Classical mechanics describes the motion of physical systems using trajectories, forces,\nenergies, and variational principles. Physlib develops both general formulations of the subject\nand formally verified examples of mechanical systems.\n\n## A.1. Scope\n\nThe general infrastructure includes the Euler–Lagrange equations, Hamilton's equations, and\nrelations between equivalent Lagrangian descriptions. Concrete models cover free particles,\nharmonic and damped oscillators, pendula, rigid bodies, orbital mechanics, scattering, vibrations,\nand wave equations.\n\n## A.2. Current status\n\nThis module is an overview and currently introduces no declarations. The definitions and results\nfor each topic live in the corresponding submodules under `Physlib.ClassicalMechanics`.\n\n## A.3. Future work\n\nShared declarations should be added here only when they apply across several areas of classical\nmechanics. Definitions and results specific to one physical system should remain in its dedicated\nmodule so that the library stays navigable.",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/ConfigurationSpace/Basic.lean",
@@ -40,7 +41,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean",
@@ -91,7 +93,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/DampedHarmonicOscillator/Basic.lean",
@@ -730,7 +733,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean",
@@ -913,7 +917,8 @@
      "sorry": false
     }
    ],
-   "private": 12
+   "private": 12,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/EulerLagrange.lean",
@@ -995,7 +1000,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Force.lean",
@@ -1061,7 +1067,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/FreeParticle/Basic.lean",
@@ -1159,7 +1166,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean",
@@ -1201,7 +1209,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean",
@@ -1336,7 +1345,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Basic.lean",
@@ -1895,7 +1905,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean",
@@ -2074,7 +2085,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean",
@@ -2197,7 +2209,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Trajectory.lean",
@@ -2284,7 +2297,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean",
@@ -2315,7 +2329,7 @@
      "kind": "structure",
      "line": 79,
      "doc": "Initial conditions for the harmonic oscillator specified by an amplitude `A` and a phase\noffset `φ`, describing the solution `x(t) = A cos (ω t - φ)`.\n\nThe conditions can be converted to the standard `InitialConditions` format using the\n`toInitialConditions` function.",
-     "statement": "@[ext] structure AmplitudePhase where\n  /-- The amplitude of the oscillation. -/\n  A : ℝ\n  /-- The phase offset of the oscillation. -/\n  φ : ℝ",
+     "statement": "structure AmplitudePhase where\n  /-- The amplitude of the oscillation. -/\n  A : ℝ\n  /-- The phase offset of the oscillation. -/\n  φ : ℝ",
      "sorry": false
     },
     {
@@ -2359,7 +2373,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Basic.lean",
@@ -2474,7 +2489,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean",
@@ -2557,7 +2573,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Energy.lean",
@@ -2580,7 +2597,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean",
@@ -2627,7 +2645,7 @@
      "kind": "structure",
      "line": 71,
      "doc": "The initial conditions for the harmonic oscillator specified by an initial position,\n  and an initial velocity.\n\nThe `@[ext]` attribute provides an extensionality lemma for `InitialConditions`.\nThat is, a lemma which states that two initial conditions are equal if their\ninitial positions and initial velocities are equal.",
-     "statement": "@[ext] structure InitialConditions where\n  /-- The initial position of the harmonic oscillator. -/\n  x₀ : EuclideanSpace ℝ (Fin 1)\n  /-- The initial velocity of the harmonic oscillator. -/\n  v₀ : EuclideanSpace ℝ (Fin 1)",
+     "statement": "structure InitialConditions where\n  /-- The initial position of the harmonic oscillator. -/\n  x₀ : EuclideanSpace ℝ (Fin 1)\n  /-- The initial velocity of the harmonic oscillator. -/\n  v₀ : EuclideanSpace ℝ (Fin 1)",
      "sorry": false
     },
     {
@@ -2635,7 +2653,7 @@
      "kind": "structure",
      "line": 131,
      "doc": "Initial conditions for the harmonic oscillator specified at an arbitrary time `t₀`.\n\nThis structure allows specifying the position and velocity at any time `t₀`, not necessarily\nat `t=0`. This is useful for problems where the natural reference time is not zero.\n\nThe conditions can be converted to the standard `InitialConditions` format (at `t=0`)\nusing the `toInitialConditions` function.",
-     "statement": "@[ext] structure InitialConditionsAtTime where\n  /-- The time at which the initial conditions are specified. -/\n  t₀ : Time\n  /-- The position at time t₀. -/\n  xT₀ : EuclideanSpace ℝ (Fin 1)\n  /-- The velocity at time t₀. -/\n  vT₀ : EuclideanSpace ℝ (Fin 1)",
+     "statement": "structure InitialConditionsAtTime where\n  /-- The time at which the initial conditions are specified. -/\n  t₀ : Time\n  /-- The position at time t₀. -/\n  xT₀ : EuclideanSpace ℝ (Fin 1)\n  /-- The velocity at time t₀. -/\n  vT₀ : EuclideanSpace ℝ (Fin 1)",
      "sorry": false
     },
     {
@@ -2651,7 +2669,7 @@
      "kind": "structure",
      "line": 190,
      "doc": "Initial conditions for the harmonic oscillator specified by two positions\n`xT₁` and `xT₂` measured at two times `t₁` and `t₂` respectively.\n\nThe conditions can be converted to the standard `InitialConditions` format\nusing the `toInitialConditions` function.",
-     "statement": "@[ext] structure InitialConditionsFromTwoPositions where\n  /-- The first measurement time. -/\n  t₁ : Time\n  /-- The position at time `t₁`. -/\n  xT₁ : EuclideanSpace ℝ (Fin 1)\n  /-- The second measurement time. -/\n  t₂ : Time\n  /-- The position at time `t₂`. -/\n  xT₂ : EuclideanSpace ℝ (Fin 1)",
+     "statement": "structure InitialConditionsFromTwoPositions where\n  /-- The first measurement time. -/\n  t₁ : Time\n  /-- The position at time `t₁`. -/\n  xT₁ : EuclideanSpace ℝ (Fin 1)\n  /-- The second measurement time. -/\n  t₂ : Time\n  /-- The position at time `t₂`. -/\n  xT₂ : EuclideanSpace ℝ (Fin 1)",
      "sorry": false
     },
     {
@@ -2667,7 +2685,7 @@
      "kind": "structure",
      "line": 245,
      "doc": "Initial conditions for the harmonic oscillator specified by two velocities\n`vT₁` and `vT₂` measured at two times `t₁` and `t₂` respectively.\n\nThe conditions can be converted to the standard `InitialConditions` format\nusing the `toInitialConditions` function.",
-     "statement": "@[ext] structure InitialConditionsFromTwoVelocities where\n  /-- The first measurement time. -/\n  t₁ : Time\n  /-- The velocity at time `t₁`. -/\n  vT₁ : EuclideanSpace ℝ (Fin 1)\n  /-- The second measurement time. -/\n  t₂ : Time\n  /-- The velocity at time `t₂`. -/\n  vT₂ : EuclideanSpace ℝ (Fin 1)",
+     "statement": "structure InitialConditionsFromTwoVelocities where\n  /-- The first measurement time. -/\n  t₁ : Time\n  /-- The velocity at time `t₁`. -/\n  vT₁ : EuclideanSpace ℝ (Fin 1)\n  /-- The second measurement time. -/\n  t₂ : Time\n  /-- The velocity at time `t₂`. -/\n  vT₂ : EuclideanSpace ℝ (Fin 1)",
      "sorry": false
     },
     {
@@ -2703,7 +2721,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean",
@@ -2766,7 +2785,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean",
@@ -2849,7 +2869,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Uniqueness.lean",
@@ -2872,7 +2893,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean",
@@ -2963,7 +2985,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Lagrangian/Basic.lean",
@@ -2994,7 +3017,7 @@
      "kind": "structure",
      "line": 60,
      "doc": "A smooth time-dependent Lagrangian on `TM`, depending on first-order derivatives only.",
-     "statement": "@[ext] structure LagrangianSystem where\n  /-- `L(t, q, q̇)`. -/\n  toFun : Time × TangentBundle I M → ℝ\n  /-- `L` is smooth. -/\n  contMDiff : ContMDiff (𝓘(ℝ, ℝ).prod I.tangent) 𝓘(ℝ, ℝ) ∞ toFun",
+     "statement": "structure LagrangianSystem where\n  /-- `L(t, q, q̇)`. -/\n  toFun : Time × TangentBundle I M → ℝ\n  /-- `L` is smooth. -/\n  contMDiff : ContMDiff (𝓘(ℝ, ℝ).prod I.tangent) 𝓘(ℝ, ℝ) ∞ toFun",
      "sorry": false
     },
     {
@@ -3062,7 +3085,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean",
@@ -3121,7 +3145,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean",
@@ -3180,7 +3205,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean",
@@ -3275,7 +3301,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Mass/MassUnit.lean",
@@ -3438,7 +3465,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/OrbitalMechanics/VisViva.lean",
@@ -3480,7 +3508,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/CoplanarDoublePendulum.lean",
@@ -3489,7 +3518,8 @@
    "doc": "### Tag: LnL_1.5.1\n## Source:\n* Textbook: Landau and Lifshitz, Mechanics, 3rd Edition\n* Chapter: 1 The Equations of motion\n* Section: 5 The Lagrangian for a system of particles\n* Problem: 1 Coplanar Double Pendulum\n\nDescription: This problem involves:\na) identifying the appropriate Degrees of Freedom or generalized coordinates\nand their relation to cartesian coordinates\n\nb) and using them to write down the Lagrangian for\n\na coplanar double pendulum made up of two\npoint masses $m_1$ and $m_2$. Mass $m_1$ is attached to the pivot and $m_2$ is attached\nto $m_1$ via strings of length $l_1$ and $l_2$ respectively.\n\nSolution:\n\nThe Cartesian coordinates $(x_1, y_1)$ for mass $m_1$ and $(x_2, y_2)$ for mass $m_2$ can be\nexpressed in terms of the two angles $\\phi_1$ and $\\phi_2$ made by the strings with the vertical:\n$$\n\\begin{aligned}\nx_1 &= l_1\\sin\\phi_1\\\\\ny_1 &= -l_1\\cos\\phi_1\\\\\nx_2 &= l_1\\sin\\phi_1 + l_2\\sin\\phi_2\\\\\ny_2 &= -l_1\\cos\\phi_1 - l_2\\cos\\phi_2\n\\end{aligned}\n$$\n\nb) The Lagrangian is obtained by writing down the kinetic and potential energies\nfirst in terms of cartesian coordinates and their time derivates and then substituting\nthe coordinates and derivatives with transformations obtained in a) :\n\n$$\\mathcal{L} = T_1 + T_2 - V_1 - V_2$$ where $T$ denotes the kinetic energy and $V$\nthe potential energy\n$$\n\\begin{aligned}\nT_1 &= \\tfrac{1}{2}m_1(\\dot{x}_1^2 + \\dot{y}_1^2) = \\tfrac{1}{2}m_1 l_1^2\\dot{\\phi}_1^2\\\\\nV_1 &= m_1 g y_1 = -m_1 g l_1\\cos\\phi_1\\\\\nT_2 &= \\tfrac{1}{2}m_2(\\dot{x}_2^2 + \\dot{y}_2^2)\n    = \\tfrac{1}{2}m_2\\bigl(l_1^2\\dot{\\phi}_1^2 + l_2^2\\dot{\\phi}_2^2\n      + 2l_1 l_2\\dot{\\phi}_1\\dot{\\phi}_2\\cos(\\phi_1 - \\phi_2)\\bigr)\\\\\nV_2 &= m_2 g y_2 = -m_2 g\\bigl(l_1\\cos\\phi_1 + l_2\\cos\\phi_2\\bigr)\n\\end{aligned}\n$$\n\nso that the Lagrangian becomes:\n    $$\n\\mathcal{L} = \\tfrac{1}{2}(m_1 + m_2)l_1^2\\dot{\\phi}_1^2 + \\tfrac{1}{2}m_2 l_2^2\\dot{\\phi}_2^2+\n  m_2 l_1 l_2\\dot{\\phi}_1\\dot{\\phi}_2\\cos(\\phi_1 - \\phi_2)+\n  (m_1 + m_2)g l_1\\cos\\phi_1 + m_2 g l_2\\cos\\phi_2\n$$",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/MiscellaneousPendulumPivotMotions.lean",
@@ -3498,7 +3528,8 @@
    "doc": "### Tag: LnL_1.5.3\n## Source:\n* Textbook: Landau and Lifshitz, Mechanics, 3rd Edition\n* Chapter 1 The Equations of motion\n* Section 5 The Lagrangian for a system of particles\n* Problem 3: Pendulum with a moving suspension point\n\nIn all three cases described below, the point of support moves in the same plane as the pendulum as\nper a given function of time. The lagrangian of the pendulum is to be found.\n\n## Part a)\nDescription: The pendulum moves uniformally in a vertical circle of radius $a$ and angular velocity\n$\\gamma$\n\nSolution:\nThe coordinates of m can be expressed as:\n$$\n\\begin{aligned}\nx &= a\\cos(\\gamma t) + l\\sin\\phi\\\\\ny &= a\\sin(\\gamma t) - l\\cos\\phi\n\\end{aligned}\n$$\n(where generalized coordinate, $\\phi$, is the angle the string makes\nwith vertical, $\\gamma$ is angle with horizontal)\n\n$$\\mathcal{L} = T-V$$ where\nKinetic and potential energies:\n$$\n\\begin{aligned}\nT &= \\tfrac{1}{2}m(\\dot{x}^2 + \\dot{y}^2)\n= \\tfrac{1}{2}m\\bigl(l^2\\dot{\\phi}^2 + 2al\\gamma\\sin(\\phi-\\gamma t)\\dot{\\phi} + a^2\\gamma^2\\bigr)\\\\\nV &= mg y = mg\\bigl(a\\sin(\\gamma t) - l\\cos\\phi\\bigr)\n\\end{aligned}\n$$\n\nWe can ignore the constant term $\\tfrac{1}{2}ma^2\\gamma^2$ in $T$ as it does not affect the\nequations of motion.\nLike wise, $mg a\\sin(\\gamma t)$ in $V$ can be ignored since its contribution to action is constant\nLet us note that the total derivative of $a l \\cos(\\phi - \\gamma t)$ is:\n$$\n\\frac{d}{dt}\\bigl[al\\cos(\\phi-\\gamma t)\\bigr]\n= -al\\sin(\\phi-\\gamma t)\\dot{\\phi} + al\\gamma\\sin(\\phi-\\gamma t)\n$$\n\nRearraging the terms, the lagrangian can be written as:\n$$\nL = \\tfrac{1}{2}m l^{2}\\dot{\\phi}^{2} + m a l \\gamma^{2}\\sin(\\phi-\\gamma t) + m g l \\cos\\phi-\n  m\\gamma\\frac{d}{dt}\\bigl[al\\cos(\\phi-\\gamma t)\\bigr]\n$$\nSince lagrangians differing by a total time derivate lead to the same equations of motion\nwe can ignore the last term. So that the final lagrangian becomes:\n$$\nL = \\tfrac{1}{2}m l^2\\dot{\\phi}^2 + m a l \\gamma^2 \\sin(\\phi-\\gamma t) + m g l \\cos\\phi\n$$\n\n## Part b)\nDescription: The point of support oscillates horizontally according to the law $x = a\\cos(\\gamma t)$\n\nSolution:\nThe coordinates of $m$ can be expressed as:\n$$\n\\begin{aligned}\nx &= a\\cos(\\gamma t) + l\\sin\\phi\\\\\ny &= -l\\cos\\phi\n\\end{aligned}\n$$\n(where generalized coordinate, $\\phi$, is the angle the string makes with vertical)\nso that $\\dot{x} = -a\\gamma\\sin(\\gamma t) + l\\dot{\\phi}\\cos\\phi$ and $\\dot{y} = l\\dot{\\phi}\\sin\\phi$\n$\\mathcal{L} = T - V$ where\n\n$$\n\\begin{aligned}\nT &= \\tfrac{1}{2}m(\\dot{x}^2 + \\dot{y}^2)\n  = \\tfrac{1}{2}m\\bigl(l^2\\dot{\\phi}^2 + a^2\\gamma^2\\sin^2(\\gamma t)\n    - 2 a l \\gamma\\sin(\\gamma t)\\dot{\\phi}\\cos\\phi\\bigr)\\\\\nV &= m g y = - m g l \\cos\\phi\n\\end{aligned}\n$$\nWe can ignore the constant term $\\tfrac{1}{2}m a^2\\gamma^2\\sin^2(\\gamma t)$ in $T$ again.\nThe derivative of $\\sin\\phi\\sin(\\gamma t)$ is\n$$\n\\frac{d}{dt}\\bigl[\\sin\\phi\\sin(\\gamma t)\\bigr]\n= \\dot{\\phi}\\cos\\phi\\sin(\\gamma t) + \\gamma\\sin\\phi\\cos(\\gamma t)\n$$\nsubstituting this in the lagrangian, we get:\n$$\nL = \\tfrac{1}{2} m l^2\\dot{\\phi}^2 + m a l \\gamma^2 \\sin\\phi\\cos(\\gamma t) + m g l \\cos\\phi-\n  m a l \\gamma\\frac{d}{dt}\\bigl[\\sin\\phi\\sin(\\gamma t)\\bigr]\n$$\n\nIgnoring the total time derivate term, the final lagrangian becomes:\n$$\nL = \\tfrac{1}{2} m l^2\\dot{\\phi}^2 + m a l \\gamma^2 \\sin\\phi\\cos(\\gamma t) + m g l \\cos\\phi\n$$\n## Part c)\nDescription: The point of support oscillates vertically according to the law $y = a\\cos(\\gamma t)$\n\nSolution:\nThe coordinates of m can be expressed as:\n$$\n\\begin{aligned}\nx &= l\\sin\\phi\\\\\ny &= a\\cos(\\gamma t) - l\\cos\\phi\n\\end{aligned}\n$$\n(where generalized coordinate, $\\phi$, is angle string makes with vertical)\n$L = T - V$ where\n$$\n\\begin{aligned}\nT &= \\tfrac{1}{2}m(\\dot{x}^2 + \\dot{y}^2)\n  = \\tfrac{1}{2}m\\bigl(l^2\\dot{\\phi}^2 + a^2\\gamma^2\\sin^2(\\gamma t)\n    - 2 a l \\gamma\\sin(\\gamma t)\\dot{\\phi}\\sin\\phi\\bigr)\\\\\nV &= m g y = m g\\bigl(a\\cos(\\gamma t) - l\\cos\\phi\\bigr)\n\\end{aligned}\n$$\n\nWe can ignore the constant term $\\tfrac{1}{2}m a^2\\gamma^2\\sin^2(\\gamma t)$ in $T$ as it does not\nlead to variation.\nLikewise, $m g a\\cos(\\gamma t)$ in $V$ can be ignored since its contribution to action is constant.\nThe time derivative of $\\cos\\phi\\sin(\\gamma t)$ is:\n$$\n\\frac{d}{dt}\\bigl[\\cos\\phi\\sin(\\gamma t)\\bigr]\n= -\\dot{\\phi}\\sin\\phi\\sin(\\gamma t) + \\gamma\\cos\\phi\\cos(\\gamma t)\n$$\nsubstituting this in the lagrangian, we get:\n$$\nL = \\tfrac{1}{2} m l^2\\dot{\\phi}^2 + m g l \\cos\\phi -\n  m a l \\gamma^2 \\cos\\phi\\cos(\\gamma t) +\n  m a l \\gamma\\frac{d}{dt}\\bigl[\\cos\\phi\\cos(\\gamma t)\\bigr]\n$$\nIgnoring the total time derivate term, the final lagrangian becomes:\n$$\nL = \\tfrac{1}{2} m l^2\\dot{\\phi}^2 + m g l \\cos\\phi - m a l \\gamma^2 \\cos\\phi\\cos(\\gamma t)\n$$",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean",
@@ -4073,7 +4104,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean",
@@ -4240,7 +4272,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean",
@@ -4647,7 +4680,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean",
@@ -4782,7 +4816,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean",
@@ -4893,7 +4928,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean",
@@ -5032,7 +5068,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean",
@@ -5119,7 +5156,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean",
@@ -5266,7 +5304,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean",
@@ -5365,7 +5404,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean",
@@ -5676,7 +5716,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean",
@@ -5827,7 +5868,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SlidingPendulum.lean",
@@ -5850,7 +5892,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/PointParticle/Basic.lean",
@@ -5908,7 +5951,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean",
@@ -6175,7 +6219,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/RigidBody/AngularMomentum.lean",
@@ -6201,7 +6246,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/RigidBody/AngularVelocity.lean",
@@ -6395,7 +6441,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/RigidBody/Basic.lean",
@@ -6517,7 +6564,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/RigidBody/KineticEnergy.lean",
@@ -6599,7 +6647,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/RigidBody/Motion.lean",
@@ -6809,7 +6858,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/RigidBody/SolidSphere.lean",
@@ -6843,7 +6893,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Scattering/RigidSphere.lean",
@@ -6852,7 +6903,8 @@
    "doc": "## References\n\n* Landau and Lifshitz, Mechanics, page 50, Section 18, Problem 1. [ref: landau_mechanics]",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Vibrations/LinearTriatomic.lean",
@@ -6861,7 +6913,8 @@
    "doc": "## References\n\n* Landau and Lifshitz, Mechanics, page 72, Section 24, Problem 1. [ref: landau_mechanics]",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/WaveEquation/Basic.lean",
@@ -7076,7 +7129,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean",
@@ -7126,7 +7180,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

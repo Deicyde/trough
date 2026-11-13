@@ -205,7 +205,7 @@ lemma loweringOperator_isFormalAdjoint_raisingOperator :
 
 ## Proof depends on
 
-- [Commutation relations](../operators/commutation.md)
+- [Commutation relations (Operators/Commutation)](../operators/commutation.md)
 
 ## Sources
 

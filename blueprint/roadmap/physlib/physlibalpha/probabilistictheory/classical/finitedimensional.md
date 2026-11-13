@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Finite classical systems
+# Finite classical systems (FiniteDimensional)
 
 The module `PhyslibAlpha.ProbabilisticTheory.Classical.FiniteDimensional`, [PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Classical/FiniteDimensional.lean): 10 declarations, 10 with a docstring.
 

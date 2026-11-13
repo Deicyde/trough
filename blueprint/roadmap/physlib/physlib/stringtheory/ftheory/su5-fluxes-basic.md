@@ -94,6 +94,7 @@ structure Fluxes where
   M : ℤ
   /-- The hypercharge flux. -/
   N : ℤ
+deriving DecidableEq
 ```
 
 ### A.1. Repr instance on `Fluxes`

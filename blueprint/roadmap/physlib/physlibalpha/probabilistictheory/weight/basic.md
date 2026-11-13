@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Weights
+# Weights (PhyslibAlpha)
 
 The module `PhyslibAlpha.ProbabilisticTheory.Weight.Basic`, [PhyslibAlpha/ProbabilisticTheory/Weight/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/Weight/Basic.lean): 15 declarations, 13 with a docstring.
 

@@ -10,7 +10,7 @@ proof: formalized
 
 The module `Physlib.Mathematics.SpecialFunctions.PhysHermite`, [Physlib/Mathematics/SpecialFunctions/PhysHermite.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/PhysHermite.lean): 53 declarations (1 instance with no name), 7 with a docstring.
 
-> This file may eventually be upstreamed to Mathlib.
+> …
 
 ## i. Overview
 

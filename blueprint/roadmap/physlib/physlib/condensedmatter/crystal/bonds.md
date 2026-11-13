@@ -95,7 +95,7 @@ instance [DecidableEq G] [DecidableEq C.UnitCell] (b : Bond C) : DecidableRel b.
 
 ## Depends on
 
-- [Crystals, cells and sites](basic.md)
+- [Crystals, cells and sites (Physlib)](basic.md)
 
 ## Sources
 

@@ -70,6 +70,8 @@ inductive FermionType where
   | upSinglet (i : Fin 3) : FermionType
   /-- The down-type quark singlet of generation `i`, `(3, 1)_{-2}`. -/
   | downSinglet (i : Fin 3) : FermionType
+
+deriving DecidableEq, Fintype
 ```
 
 **`StandardModel.FermionType.matterField`**, a def, [line 96](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/FieldData.lean#L96).

@@ -434,7 +434,7 @@ lemma Jsq_eq_smul [FiniteDimensional ℂ V] (ρ : AngularMomentumRepresentation 
 
 > Magnetic-weight ladder vectors: given a primitive vector
 > `v₀` of weight `n` for the triple `(2Jz, J+, J-)`, this defines `(J-)ᵏ v₀` for
-> `k = 0,…,n`. A basis theorem and reindexing by `m = n/2 - k` remain to be added.
+> `k = 0,…,n`. …
 
 ```lean
 def magneticBasisVec (ρ : AngularMomentumRepresentation V) (hz : ρ.Jz ≠ 0) {n : ℕ} {v₀ : V}

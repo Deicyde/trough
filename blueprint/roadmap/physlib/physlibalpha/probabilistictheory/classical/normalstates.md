@@ -178,11 +178,11 @@ noncomputable def normalStateEquiv :
 
 - [Observables of a sample space](boundedmeasurable.md)
 - [The Born rule for effect-valued measures](../measurement/bornrule.md)
-- [Convex state spaces](../state/convex.md)
+- [Convex state spaces (PhyslibAlpha)](../state/convex.md)
 
 ## Proof depends on
 
-- [Lattice-ordered observables](latticeobservables.md)
+- [Lattice-ordered observables (LatticeObservables)](latticeobservables.md)
 
 ## Sources
 

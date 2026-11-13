@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Crystals, cells and sites
+# Crystals, cells and sites (PhyslibAlpha)
 
 The module `PhyslibAlpha.CondensedMatter.Crystal.Basic`, [PhyslibAlpha/CondensedMatter/Crystal/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Crystal/Basic.lean): 6 declarations (3 instances with no name), 6 with a docstring.
 
@@ -71,7 +71,7 @@ structure Crystal (G : Type u) [AddGroup G] where
 > The address `⟨n, i⟩` of site `i` in the cell indexed by `n`.
 
 ```lean
-@[ext] structure CellSite (G : Type u) (F : Type v) where
+structure CellSite (G : Type u) (F : Type v) where
   /-- Translation from the reference cell to this cell. -/
   cell : G
   /-- Which site of the unit cell is being copied. -/

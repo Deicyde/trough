@@ -151,7 +151,7 @@ instance QuantumSystemSetoid : Setoid QuantumSystem
 
 ## Depends on
 
-- [Unbounded operators](../operators/unbounded.md)
+- [Unbounded operators (Operators/Unbounded)](../operators/unbounded.md)
 
 ## Sources
 

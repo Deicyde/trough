@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The unitary group preserves the domain of its generator
+# The unitary group preserves the domain of its generator (StoneInvariance)
 
 The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.Flow.StoneInvariance`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneInvariance.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/Flow/StoneInvariance.lean): 3 declarations, 3 with a docstring.
 

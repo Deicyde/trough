@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Crystals, cells and sites
+# Crystals, cells and sites (Physlib)
 
 The module `Physlib.CondensedMatter.Crystal.Basic`, [Physlib/CondensedMatter/Crystal/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/CondensedMatter/Crystal/Basic.lean): 18 declarations (6 instances with no name), 18 with a docstring.
 
@@ -82,7 +82,7 @@ abbrev ofUnitCell (G : Type*) (F : Type*) [AddCommGroup G] [AddGroup.FG G]
 > A site of `C`, with label `i` in cell `n`.
 
 ```lean
-@[ext] structure Site (C : Crystal G) where
+structure Site (C : Crystal G) where
   /-- The cell containing this site. -/
   cell : G
   /-- The label of this site within its cell. -/

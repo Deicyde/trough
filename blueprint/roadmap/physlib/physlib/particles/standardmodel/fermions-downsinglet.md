@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Down-type singlets
+# Down-type singlets (Physlib)
 
 The module `Physlib.Particles.StandardModel.Fermions.DownSinglet`, [Physlib/Particles/StandardModel/Fermions/DownSinglet.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions/DownSinglet.lean): 18 declarations (2 instances with no name), 12 with a docstring.
 

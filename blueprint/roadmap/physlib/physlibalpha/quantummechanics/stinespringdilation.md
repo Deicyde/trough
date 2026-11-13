@@ -22,7 +22,7 @@ The module `PhyslibAlpha.QuantumMechanics.StinespringDilation`, [PhyslibAlpha/Qu
 > state. A trace non-increasing family is completed to a trace-preserving one by adding one extra
 > Kraus operator.
 >
-> …
+> There is a different version of the Stinespring dilation in `QuantumInfo.Channels.CPTP`; …
 
 ## ii. Key results
 

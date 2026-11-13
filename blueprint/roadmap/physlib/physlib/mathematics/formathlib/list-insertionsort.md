@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# List lemmas
+# List lemmas (InsertionSort)
 
 The module `Physlib.Mathematics.ForMathlib.List.InsertionSort`, [Physlib/Mathematics/ForMathlib/List/InsertionSort.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/ForMathlib/List/InsertionSort.lean): 27 declarations, 1 with a docstring.
 
@@ -269,7 +269,7 @@ lemma insertionSort_of_takeWhile_filter {α : Type} (r : α → α → Prop) [De
 
 ## Depends on
 
-- [List lemmas](list.md)
+- [List lemmas (List)](list.md)
 
 ## Sources
 

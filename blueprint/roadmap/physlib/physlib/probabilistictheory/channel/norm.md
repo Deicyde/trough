@@ -77,7 +77,7 @@ lemma toContinuousLinearMap_apply (T : E →ₚ₁[ℝ] F) (x : E) :
 ## Proof depends on
 
 - [States](../state/basic.md)
-- [Separation by states](../state/separation.md)
+- [Separation by states (Physlib)](../state/separation.md)
 
 ## Sources
 

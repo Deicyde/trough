@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Separation by states
+# Separation by states (Physlib)
 
 The module `Physlib.ProbabilisticTheory.State.Separation`, [Physlib/ProbabilisticTheory/State/Separation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Separation.lean): 8 declarations, 8 with a docstring.
 
@@ -115,7 +115,7 @@ lemma ext_of_forall_apply_eq {A B : E} (h : ∀ ω : 𝓢[ℝ, E], ω A = ω B) 
 
 ## Proof depends on
 
-- [The metric space of states](metric.md)
+- [The metric space of states (Physlib)](metric.md)
 
 ## Sources
 

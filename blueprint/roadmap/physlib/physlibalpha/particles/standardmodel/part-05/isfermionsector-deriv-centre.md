@@ -158,10 +158,10 @@ lemma derivSubmodule_le_centreEigenspace (n : ℕ) :
 
 ## Proof depends on
 
-- [Down-type singlets](../part-03/fermions-downsinglet-basic.md)
-- [Charged-lepton singlets](../part-03/fermions-leptonsinglet-basic.md)
-- [The type corresponding to quark doublets](../part-03/fermions-quarkdoublet-basic.md)
-- [Up-type singlets](../part-03/fermions-upsinglet-basic.md)
+- [Down-type singlets (PhyslibAlpha)](../part-03/fermions-downsinglet-basic.md)
+- [Charged-lepton singlets (PhyslibAlpha)](../part-03/fermions-leptonsinglet-basic.md)
+- [The type corresponding to quark doublets (PhyslibAlpha)](../part-03/fermions-quarkdoublet-basic.md)
+- [Up-type singlets (PhyslibAlpha)](../part-03/fermions-upsinglet-basic.md)
 
 ## Sources
 

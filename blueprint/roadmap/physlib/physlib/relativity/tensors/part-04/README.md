@@ -19,5 +19,5 @@ Modules in [RealTensor/Velocity/](https://github.com/leanprover-community/physli
 
 Modules in [TensorSpecies/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/TensorSpecies):
 
-- [Tensor species](tensorspecies-basic.md)
+- [Tensor species (Basic)](tensorspecies-basic.md)
 - [Species whose bases at dual colors are dual bases](tensorspecies-dualbasis.md)

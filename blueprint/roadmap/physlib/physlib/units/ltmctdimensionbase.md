@@ -42,6 +42,7 @@ inductive LTMCTDimensionBase where
   | charge
   /-- The temperature base dimension. -/
   | temperature
+deriving DecidableEq
 ```
 
 **An instance with no name**, [line 49](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/LTMCTDimensionBase.lean#L49).

@@ -80,6 +80,9 @@ theorem exp_pos [i : Nonempty d] (A : HermitianMat d 𝕜) : 0 < A.exp
 
 **`HermitianMat.evalHermitianMatExp`**, a def, [line 87](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HermitianMat/LogExp.lean#L87).
 
+> Positivity extension for `HermitianMat.exp`: always strictly positive if `Nonempty d`.
+> …
+
 ```lean
 meta def evalHermitianMatExp : PositivityExt
 ```

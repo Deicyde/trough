@@ -54,12 +54,12 @@ Its references:
 > - \{10\} E. Schrödinger, *Zum Heisenbergschen Unschärfeprinzip*, Sitzungsberichte der Preussischen Akademie der Wissenschaften 19, 296 (1930).
 
 - [Angular momentum operator](angularmomentum.md)
-- [Commutation relations](commutation.md)
-- [Covariance](covariance.md)
+- [Commutation relations (Operators/Commutation)](commutation.md)
+- [Covariance (Physlib)](covariance.md)
 - [Momentum operators](momentum.md)
 - [Multiplication operators on `SpaceDHilbertSpace`](multiplication.md)
 - [Position operators](position.md)
-- [Unbounded operators](unbounded.md)
+- [Unbounded operators (Operators/Unbounded)](unbounded.md)
 - [Uncertainty bounds for partial linear maps](uncertainty.md)
 
 Modules in [AngularMomentum/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/AngularMomentum):
@@ -68,11 +68,11 @@ Modules in [AngularMomentum/](https://github.com/leanprover-community/physlib/tr
 
 Modules in [OneDimension/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/OneDimension):
 
-- [Commutation relations](onedimension-commutation.md)
+- [Commutation relations (OneDimension/Commutation)](onedimension-commutation.md)
 - [Momentum operator](onedimension-momentum.md)
 - [Parity operator](onedimension-parity.md)
 - [Position operator](onedimension-position.md)
-- [Unbounded operators](onedimension-unbounded.md)
+- [Unbounded operators (OneDimension/Unbounded)](onedimension-unbounded.md)
 
 Modules in [StateObservables/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/StateObservables):
 

@@ -44,7 +44,7 @@ theorem magneticField_eq_3D :
 
 ## Depends on
 
-- [The Magnetic Field](../kinematics/magneticfield.md)
+- [The Magnetic Field (Kinematics/MagneticField)](../kinematics/magneticfield.md)
 
 ## Sources
 

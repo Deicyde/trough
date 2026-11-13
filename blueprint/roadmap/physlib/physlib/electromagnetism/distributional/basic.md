@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The Electromagnetic Potential
+# The Electromagnetic Potential (Distributional/Basic)
 
 The module `Physlib.Electromagnetism.Distributional.Basic`, [Physlib/Electromagnetism/Distributional/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Distributional/Basic.lean): 6 declarations (2 instances with no name), 4 with a docstring.
 

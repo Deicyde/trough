@@ -407,7 +407,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/AnomalyCancellation/GroupActions.lean",
@@ -513,7 +514,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/CreateAnnihilate.lean",
@@ -527,7 +529,7 @@
      "kind": "inductive",
      "line": 21,
      "doc": "The type `CreateAnnihilate` is the type containing two elements `create` and `annihilate`.\nThis type is used to specify if an operator is a creation, or annihilation, operator\nor the sum thereof or integral thereof etc.",
-     "statement": "inductive CreateAnnihilate where\n  | create : CreateAnnihilate\n  | annihilate : CreateAnnihilate",
+     "statement": "inductive CreateAnnihilate where\n  | create : CreateAnnihilate\n  | annihilate : CreateAnnihilate\nderiving Inhabited, BEq, DecidableEq",
      "sorry": false
     },
     {
@@ -603,7 +605,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FeynmanDiagrams/Basic.lean",
@@ -612,7 +615,8 @@
    "doc": "Feynman diagrams form a type into which permissible Wick contractions\nembed.\n\nA permissible Wick contraction is one which does not contribute zero to\nthe vacuum expectation value.\n\nFeynman diagrams are based on multisets of `FieldOp`. This should be contrasted\nwith Wick contractions which are based on lists of `FieldOp`.\n\nIn particular a Feynman diagram is a partition of a Multiset into\ndisjoint pairs.\n\n## Note\n\nThis directory is currently a work in progress.\n(Contact JTS before working in this directory.)",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/Basic.lean",
@@ -883,7 +887,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/Grading.lean",
@@ -1085,7 +1090,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean",
@@ -1396,7 +1402,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormTimeOrder.lean",
@@ -1427,7 +1434,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/SuperCommute.lean",
@@ -1854,7 +1862,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean",
@@ -2049,7 +2058,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean",
@@ -2099,7 +2109,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean",
@@ -2181,7 +2192,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnSection.lean",
@@ -2567,7 +2579,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean",
@@ -2673,7 +2686,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldSpecification/NormalOrder.lean",
@@ -2996,7 +3010,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldSpecification/TimeOrder.lean",
@@ -3467,7 +3482,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldStatistics/Basic.lean",
@@ -3486,7 +3502,7 @@
      "kind": "inductive",
      "line": 26,
      "doc": "The type `FieldStatistic` is the type containing two elements `bosonic` and `fermionic`.\nThis type is used to specify if a field or operator obeys bosonic or fermionic statistics.",
-     "statement": "inductive FieldStatistic : Type where\n  | bosonic : FieldStatistic\n  | fermionic : FieldStatistic",
+     "statement": "inductive FieldStatistic : Type where\n  | bosonic : FieldStatistic\n  | fermionic : FieldStatistic\nderiving DecidableEq",
      "sorry": false
     },
     {
@@ -3826,7 +3842,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldStatistics/ExchangeSign.lean",
@@ -3916,7 +3933,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldStatistics/OfFinset.lean",
@@ -4014,7 +4032,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean",
@@ -4189,7 +4208,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/Koszul/KoszulSignInsert.lean",
@@ -4343,7 +4363,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/Basic.lean",
@@ -4838,7 +4859,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/Grading.lean",
@@ -5169,7 +5191,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean",
@@ -5308,7 +5331,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Lemmas.lean",
@@ -5639,7 +5663,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/WickContractions.lean",
@@ -5670,7 +5695,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean",
@@ -5720,7 +5746,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTheorem.lean",
@@ -5738,7 +5765,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/SuperCommute.lean",
@@ -6185,7 +6213,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/TimeContraction.lean",
@@ -6307,7 +6336,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean",
@@ -6510,7 +6540,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean",
@@ -6560,7 +6591,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheorem.lean",
@@ -6595,7 +6627,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean",
@@ -6661,7 +6694,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/WickTerm.lean",
@@ -6711,7 +6745,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Basic.lean",
@@ -7174,7 +7209,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Card.lean",
@@ -7296,7 +7332,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Erase.lean",
@@ -7362,7 +7399,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean",
@@ -7452,7 +7490,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean",
@@ -7667,7 +7706,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContractNat.lean",
@@ -7974,7 +8014,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Involutions.lean",
@@ -8048,7 +8089,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/IsFull.lean",
@@ -8106,7 +8148,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Join.lean",
@@ -8465,7 +8508,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean",
@@ -8507,7 +8551,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean",
@@ -8549,7 +8594,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertNone.lean",
@@ -8639,7 +8685,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean",
@@ -8806,7 +8853,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean",
@@ -8936,7 +8984,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Singleton.lean",
@@ -9066,7 +9115,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean",
@@ -9116,7 +9166,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/SubContraction.lean",
@@ -9222,7 +9273,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/TimeCond.lean",
@@ -9504,7 +9556,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean",
@@ -9570,7 +9623,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Uncontracted.lean",
@@ -9676,7 +9730,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/UncontractedList.lean",
@@ -10187,7 +10242,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Basic.lean",
@@ -10301,7 +10357,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/BasisLinear.lean",
@@ -10383,7 +10440,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/ConstAbs.lean",
@@ -10649,7 +10707,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Even/BasisLinear.lean",
@@ -11476,7 +11535,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean",
@@ -11590,7 +11650,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Even/Parameterization.lean",
@@ -11712,7 +11773,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/LineInPlaneCond.lean",
@@ -11810,7 +11872,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/LowDim/One.lean",
@@ -11828,7 +11891,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean",
@@ -11878,7 +11942,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/LowDim/Two.lean",
@@ -11896,7 +11961,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Odd/BasisLinear.lean",
@@ -12763,7 +12829,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Odd/LineInCubic.lean",
@@ -12869,7 +12936,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean",
@@ -12991,7 +13059,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Permutations.lean",
@@ -13249,7 +13318,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Sorts.lean",
@@ -13339,7 +13409,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/VectorLike.lean",
@@ -13373,7 +13444,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

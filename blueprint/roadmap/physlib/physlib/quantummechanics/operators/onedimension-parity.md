@@ -59,7 +59,7 @@ lemma parityOperatorUnbounded_isSymmetric :
 ## Depends on
 
 - [Schwartz submodule of the Hilbert space](../hilbertspaces/onedimension-schwartzsubmodule.md)
-- [Unbounded operators](onedimension-unbounded.md)
+- [Unbounded operators (OneDimension/Unbounded)](onedimension-unbounded.md)
 
 ## Sources
 

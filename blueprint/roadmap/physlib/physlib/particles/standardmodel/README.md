@@ -21,10 +21,10 @@ Modules in [AnomalyCancellation/NoGrav/One/](https://github.com/leanprover-commu
 
 Modules in [Fermions/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Particles/StandardModel/Fermions):
 
-- [Down-type singlets](fermions-downsinglet.md)
-- [Lepton doublets](fermions-leptondoublet.md)
-- [Charged-lepton singlets](fermions-leptonsinglet.md)
-- [The type corresponding to quark doublets](fermions-quarkdoublet.md)
-- [Up-type singlets](fermions-upsinglet.md)
+- [Down-type singlets (Physlib)](fermions-downsinglet.md)
+- [Lepton doublets (Physlib)](fermions-leptondoublet.md)
+- [Charged-lepton singlets (Physlib)](fermions-leptonsinglet.md)
+- [The type corresponding to quark doublets (Physlib)](fermions-quarkdoublet.md)
+- [Up-type singlets (Physlib)](fermions-upsinglet.md)
 - [GaugeGroup](gaugegroup/README.md)
 - [HiggsBoson](higgsboson/README.md)

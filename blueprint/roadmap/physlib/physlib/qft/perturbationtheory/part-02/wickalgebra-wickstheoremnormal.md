@@ -138,7 +138,7 @@ theorem wicks_theorem_normal_order : (φs : List 𝓕.FieldOp) →
 ## Depends on
 
 - [Wick term](wickalgebra-wickterm.md)
-- [Time contractions](../part-03/wickcontraction-timecond.md)
+- [Time contractions (TimeCond)](../part-03/wickcontraction-timecond.md)
 
 ## Proof depends on
 

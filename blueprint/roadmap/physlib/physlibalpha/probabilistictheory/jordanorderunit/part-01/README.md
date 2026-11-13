@@ -7,7 +7,7 @@ navigation: transparent
 - [Jordan order-unit spaces](basic.md)
 - [Compatible observables](compatibility.md)
 - [Conditioning a state on a projection](conditioning.md)
-- [Covariance](covariance.md)
+- [Covariance (PhyslibAlpha)](covariance.md)
 - [Trace and determinant of finite-rank Jordan algebras](finiterank.md)
 - [Jordan homomorphisms](hom.md)
 - [Lüders operations](lueders.md)

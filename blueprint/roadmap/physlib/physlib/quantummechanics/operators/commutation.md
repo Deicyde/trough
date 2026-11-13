@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Commutation relations
+# Commutation relations (Operators/Commutation)
 
 The module `Physlib.QuantumMechanics.Operators.Commutation`, [Physlib/QuantumMechanics/Operators/Commutation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/Commutation.lean): 23 declarations, 5 with a docstring.
 

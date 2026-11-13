@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Commutation relations
+# Commutation relations (OneDimension/Commutation)
 
 The module `Physlib.QuantumMechanics.Operators.OneDimension.Commutation`, [Physlib/QuantumMechanics/Operators/OneDimension/Commutation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/OneDimension/Commutation.lean): 3 declarations, 0 with a docstring.
 

@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The Electric Field
+# The Electric Field (Kinematics/ElectricField)
 
 The module `Physlib.Electromagnetism.Kinematics.ElectricField`, [Physlib/Electromagnetism/Kinematics/ElectricField.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/ElectricField.lean): 14 declarations, 3 with a docstring.
 
@@ -182,8 +182,8 @@ lemma div_electricField_eq_toFieldStrength_eval {d} {A : ElectromagneticPotentia
 ## Depends on
 
 - [A. Electromagnetism](../basic.md)
-- [The Field Strength Tensor](fieldstrength.md)
-- [The Scalar Potential](scalarpotential.md)
+- [The Field Strength Tensor (Kinematics/FieldStrength)](fieldstrength.md)
+- [The Scalar Potential (Kinematics/ScalarPotential)](scalarpotential.md)
 
 ## Sources
 

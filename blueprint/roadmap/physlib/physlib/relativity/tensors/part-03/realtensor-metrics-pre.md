@@ -123,7 +123,7 @@ lemma CoMod.contr_metric {d : ℕ} :
 
 ## Depends on
 
-- [Unit for complex Lorentz vectors](realtensor-units-pre.md)
+- [Unit for complex Lorentz vectors (RealTensor/Units/Pre)](realtensor-units-pre.md)
 
 ## Sources
 

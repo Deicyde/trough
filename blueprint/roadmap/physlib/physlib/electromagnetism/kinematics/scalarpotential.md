@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The Scalar Potential
+# The Scalar Potential (Kinematics/ScalarPotential)
 
 The module `Physlib.Electromagnetism.Kinematics.ScalarPotential`, [Physlib/Electromagnetism/Kinematics/ScalarPotential.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/ScalarPotential.lean): 12 declarations, 1 with a docstring.
 
@@ -143,7 +143,7 @@ lemma scalarPotential_differentiable {d} (c : SpeedOfLight) (A : Electromagnetic
 
 ## Depends on
 
-- [The vector Potential](vectorpotential.md)
+- [The vector Potential (Kinematics/VectorPotential)](vectorpotential.md)
 
 ## Sources
 

@@ -95,7 +95,7 @@ noncomputable instance instOrderUnitLattice [Fact (HasLatticeDualCone E)] :
 ## Depends on
 
 - [The bidual as a lattice](../../mathematics/part-02/order/positivedual-biduallattice.md)
-- [Lattice-ordered observables](lattice.md)
+- [Lattice-ordered observables (Lattice)](lattice.md)
 - [The unit of an order-unit space as an order unit](positivedual.md)
 
 ## Sources

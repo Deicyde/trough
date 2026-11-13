@@ -473,7 +473,7 @@ lemma higgsAlgebraEquiv_jetDeriv (μ : Fin 1 ⊕ Fin 3) (h : HiggsJetAlgebra) :
 - [The local field algebra of a gauge theory and its universal property](../../../classicalfieldtheory/gaugetheory/part-03/localfield-basic.md)
 - [The fermionic jet algebra of the Standard Model](../part-03/fermions-jetalgebra-basic.md)
 - [The field data of the Standard Model](../part-01/fielddata.md)
-- [The jet algebra of the Higgs field](../part-05/higgsboson-jetalgebra-algebra.md)
+- [The jet algebra of the Higgs field (Algebra)](../part-05/higgsboson-jetalgebra-algebra.md)
 
 ## Sources
 

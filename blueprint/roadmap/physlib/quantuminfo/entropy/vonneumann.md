@@ -116,6 +116,8 @@ theorem Sᵥₙ_relabel (ρ : MState d₁) (e : d₂ ≃ d₁) :
 
 **`Sᵥₙ_of_SWAP_eq`**, a theorem, [line 147](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/Entropy/VonNeumann.lean#L147). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
 
+> Von Neumann entropy is unchanged under SWAP. …
+
 ```lean
 theorem Sᵥₙ_of_SWAP_eq (ρ : MState (d₁ × d₂)) : Sᵥₙ ρ.SWAP = Sᵥₙ ρ
 ```

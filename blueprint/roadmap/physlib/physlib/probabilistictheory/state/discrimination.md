@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# State discrimination
+# State discrimination (Physlib)
 
 The module `Physlib.ProbabilisticTheory.State.Discrimination`, [Physlib/ProbabilisticTheory/State/Discrimination.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Discrimination.lean): 14 declarations, 14 with a docstring.
 
@@ -173,7 +173,7 @@ lemma optimalSuccessProb_half_half_eq (ω₀ ω₁ : 𝓢[ℝ, E]) :
 ## Depends on
 
 - [Complementary effects](../effect/complement.md)
-- [The metric space of states](metric.md)
+- [The metric space of states (Physlib)](metric.md)
 
 ## Sources
 

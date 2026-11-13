@@ -9,7 +9,8 @@
    "doc": "This module is a stub and a starting point for lattice QFT.\n\n## A.1 References\n\n- External repositories looking at lattice QFT.\n- `Physlib.QFT`\n- `Physlib.CondensedMatter.LatticeModels`",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

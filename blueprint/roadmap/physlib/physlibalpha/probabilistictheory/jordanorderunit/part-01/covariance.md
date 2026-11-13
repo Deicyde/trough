@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Covariance
+# Covariance (PhyslibAlpha)
 
 The module `PhyslibAlpha.ProbabilisticTheory.JordanOrderUnit.Covariance`, [PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Covariance.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/JordanOrderUnit/Covariance.lean): 5 declarations, 5 with a docstring.
 

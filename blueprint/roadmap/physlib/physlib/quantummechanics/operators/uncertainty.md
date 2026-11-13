@@ -184,7 +184,7 @@ lemma state_uncertainty_of_raw_commutator :
 
 ## Depends on
 
-- [Covariance](covariance.md)
+- [Covariance (Physlib)](covariance.md)
 
 ## Sources
 

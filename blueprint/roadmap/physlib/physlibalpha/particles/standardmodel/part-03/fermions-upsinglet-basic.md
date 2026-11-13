@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Up-type singlets
+# Up-type singlets (PhyslibAlpha)
 
 The module `PhyslibAlpha.Particles.StandardModel.Fermions.UpSinglet.Basic`, [PhyslibAlpha/Particles/StandardModel/Fermions/UpSinglet/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/Fermions/UpSinglet/Basic.lean): 24 declarations (2 instances with no name), 22 with a docstring.
 
@@ -320,7 +320,7 @@ lemma upSinglet_repLorentzGroup_boostAxis_two_basis (t : ℝ) (ht : t ≠ 0)
 
 ## Depends on
 
-- [Up-type singlets](../../../../physlib/particles/standardmodel/fermions-upsinglet.md)
+- [Up-type singlets (Physlib)](../../../../physlib/particles/standardmodel/fermions-upsinglet.md)
 - [Gauge weight decompositions](../part-04/gaugegroup-gaugeweight.md)
 - [The jet gauge group](../part-04/gaugegroup-jetgaugegroup-basic.md)
 - [The boost weights of a Weyl spinor](../../../relativity/fermions/weyl-boostweight.md)

@@ -9,7 +9,8 @@
    "doc": "This directory is currently a place holder.\nPlease feel free to contribute!\n\nSome directories which are NOT currently place holders are:\n- Mathematics\n- Meta\n- Particles\n- QFT\n- Quantum Mechanics\n- Relativity",
    "sections": [],
    "declarations": [],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Thermodynamics/IdealGas/Basic.lean",
@@ -43,7 +44,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   },
   {
    "file": "Physlib/Thermodynamics/Temperature/Basic.lean",
@@ -318,7 +320,8 @@
      "sorry": false
     }
    ],
-   "private": 1
+   "private": 1,
+   "aliases": 0
   },
   {
    "file": "Physlib/Thermodynamics/Temperature/TemperatureUnits.lean",
@@ -389,7 +392,8 @@
      "sorry": false
     }
    ],
-   "private": 0
+   "private": 0,
+   "aliases": 0
   }
  ]
 }

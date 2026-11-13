@@ -25,7 +25,7 @@ Modules in [RealTensor/Contraction/](https://github.com/leanprover-community/phy
 Modules in [RealTensor/CoVector/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/CoVector):
 
 - [Lorentz co vectors](realtensor-covector-basic.md)
-- [Representation of the Lorentz group on Lorentz vectors](realtensor-covector-representation.md)
+- [Representation of the Lorentz group on Lorentz vectors (CoVector/Representation)](realtensor-covector-representation.md)
 - [Tensorial nature of Lorentz covectors](realtensor-covector-tensorial.md)
 
 Modules in [RealTensor/Matrix/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/Matrix):
@@ -44,10 +44,10 @@ Modules in [RealTensor/Representation/](https://github.com/leanprover-community/
 Modules in [RealTensor/Units/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/Units):
 
 - [Unit tensors for real Lorentz tensors](realtensor-units-basic.md)
-- [Unit for complex Lorentz vectors](realtensor-units-pre.md)
+- [Unit for complex Lorentz vectors (RealTensor/Units/Pre)](realtensor-units-pre.md)
 
 Modules in [RealTensor/Vector/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/RealTensor/Vector):
 
 - [Lorentz Vectors](realtensor-vector-basic.md)
 - [Minkowski product on Lorentz vectors](realtensor-vector-minkowskiproduct.md)
-- [Representation of the Lorentz group on Lorentz vectors](realtensor-vector-representation.md)
+- [Representation of the Lorentz group on Lorentz vectors (Vector/Representation)](realtensor-vector-representation.md)

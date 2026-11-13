@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The state–effect pairing
+# The state–effect pairing (Physlib)
 
 The module `Physlib.ProbabilisticTheory.State.Pairing`, [Physlib/ProbabilisticTheory/State/Pairing.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ProbabilisticTheory/State/Pairing.lean): 8 declarations, 8 with a docstring.
 
@@ -121,7 +121,7 @@ lemma injective_apply_state :
 
 ## Proof depends on
 
-- [Separation by states](separation.md)
+- [Separation by states (Physlib)](separation.md)
 
 ## Sources
 

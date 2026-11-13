@@ -21,6 +21,7 @@ The module `Physlib.QFT.PerturbationTheory.FieldStatistics.Basic`, [Physlib/QFT/
 inductive FieldStatistic : Type where
   | bosonic : FieldStatistic
   | fermionic : FieldStatistic
+deriving DecidableEq
 ```
 
 **An instance with no name**, [line 43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/FieldStatistics/Basic.lean#L43).
@@ -319,7 +320,7 @@ Its declarations' statements use no declaration of another module with an articl
 
 ## Proof depends on
 
-- [List lemmas](../../../mathematics/formathlib/list-insertidx.md)
+- [List lemmas (InsertIdx)](../../../mathematics/formathlib/list-insertidx.md)
 
 ## Sources
 

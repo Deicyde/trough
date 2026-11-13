@@ -118,8 +118,8 @@ lemma stoneCandidateGenerator_reconstruction (x : H) (t : ℝ) :
 ## Proof depends on
 
 - [The spectral theorem for unbounded self-adjoint operators](unbounded-cayleyspectraldata-spectheorem.md)
-- [The unitary group preserves the domain of its generator](unbounded-existence-generatorinvariance.md)
-- [The unitary group preserves the domain of its generator](unbounded-flow-stoneinvariance.md)
+- [The unitary group preserves the domain of its generator (GeneratorInvariance)](unbounded-existence-generatorinvariance.md)
+- [The unitary group preserves the domain of its generator (StoneInvariance)](unbounded-flow-stoneinvariance.md)
 
 ## Sources
 

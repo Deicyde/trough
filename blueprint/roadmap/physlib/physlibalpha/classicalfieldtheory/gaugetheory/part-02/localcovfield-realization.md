@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# Realizations of the covariant field algebra
+# Realizations of the covariant field algebra (LocalCovField/Realization)
 
 The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.LocalCovField.Realization`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/Realization.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/LocalCovField/Realization.lean): 46 declarations, 22 with a docstring.
 

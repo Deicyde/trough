@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# The kinetic term
+# The kinetic term (Electromagnetism/Dynamics/KineticTerm)
 
 The module `Physlib.Electromagnetism.Dynamics.KineticTerm`, [Physlib/Electromagnetism/Dynamics/KineticTerm.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Dynamics/KineticTerm.lean): 23 declarations, 2 with a docstring.
 
@@ -19,7 +19,7 @@ The module `Physlib.Electromagnetism.Dynamics.KineticTerm`, [Physlib/Electromagn
 > In particular the variational gradient `gradKineticTerm` of the kinetic term
 > is directly related to Gauss's law and the Ampere law.
 >
-> …
+> In this implementation we have set `μ₀ = 1`. …
 
 ## ii. Key results
 
@@ -321,7 +321,7 @@ lemma gradKineticTerm_eq_tensorDeriv {d} {𝓕 : FreeSpace}
 ## Depends on
 
 - [Free space](basic.md)
-- [The Magnetic Field](../kinematics/magneticfield.md)
+- [The Magnetic Field (Kinematics/MagneticField)](../kinematics/magneticfield.md)
 - [Variational gradient](../../mathematics/variationalcalculus/hasvargradient.md)
 
 ## Sources

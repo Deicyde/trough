@@ -39,6 +39,7 @@ The module `Physlib.SpaceAndTime.Space.Derivatives.MultiIndex`, [Physlib/SpaceAn
 structure MultiIndex (d : ℕ) where
   /-- The coordinates of the multi-index. -/
   toFun : Fin d → ℕ
+deriving DecidableEq
 ```
 
 **An instance with no name**, [line 62](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/Space/Derivatives/MultiIndex.lean#L62).
