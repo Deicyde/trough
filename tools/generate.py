@@ -260,7 +260,7 @@ def generate() -> dict[Path, str]:
         chapters["cslib"] = "cslib/README.md"
         lean_links["cslib"] = cslib_links
         cs = Counter(cslib_built.stats)
-        blueprint_rows.append(("CSLib", "DECOMPOSED",
+        blueprint_rows.append(("CSLib", "INVENTORIED",
                                f"[{cs['articles']:,} modules](../roadmap/cslib/README.md), one article each, with a "
                                "block per public declaration."))
         print(
