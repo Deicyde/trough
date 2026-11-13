@@ -22,7 +22,6 @@ from pathlib import Path
 
 from . import leansource
 from .blueprints import Built, escape
-from .cfsg import declaration_text
 from .ff import is_apache
 from .formal_conjectures import OPAQUE, module_name, natural, plural, quote, title_and_doc
 from .mathlib import fence
@@ -36,7 +35,16 @@ LIBRARIES = ("Physlib", "PhyslibAlpha", "QuantumInfo")
 THEOREMS = "scripts/lint/exemptions/Theorems.txt"
 API_MAP = "API-map.md"
 HEADING = re.compile(r"^(#{1,6})[ \t]+(.+?)[ \t]*#*[ \t]*$")
-TODO = re.compile(r"\bTODO\b")
+TODO = re.compile(r"\bTODOs?\b")
+# A sentence about what is planned or would be welcome, not about what the library has.
+PLANS = re.compile(r"\b(?:underway|under way|planned|we plan|plans? to|would be welcome|reserved for future work|"
+                   r"future work on|future design work|be upstreamed|will follow|to be added)\b", re.I)
+# A heading over plans, after its section number if it has one.
+PLAN_HEADING = re.compile(r"^(?:[A-Za-z0-9]+(?:\.[A-Za-z0-9]+)*\.[ \t]+)?(?:plans?|future work|todos?|roadmap)\b", re.I)
+# A line of a structure, class or inductive type that starts at its command's column without ending it.
+CONTINUES = re.compile(r"\||deriving\b(?![ \t]+instance\b)")
+# `alias ⟨mp, mpr⟩ := ...`, which names the two directions of an equivalence; leansource does not read it.
+ALIAS_PAIR = re.compile(r"^[ \t]*(?:@\[[^\n]*?\][ \t]*)?(?:(?:protected|public|nonrec)[ \t]+)*alias[ \t]+⟨", re.M)
 # A Lean reference of an API map: its number, the file and the names it lists, wrapped over lines.
 REFERENCE = re.compile(r"^(\d+)\.[ \t]+(\S+\.lean)[ \t]+—[ \t]+(.*?)(?=^\d+\.[ \t]|\Z)", re.M | re.S)
 LITERATURE = re.compile(r"^(\d+)\.[ \t]+(.*?)(?=^\d+\.[ \t]|\Z)", re.M | re.S)
@@ -56,6 +64,24 @@ def doc_spans(text: str) -> list[tuple[int, str]]:
             for start, end, kind in leansource.spans(text) if kind == "module doc"]
 
 
+def whole(source: list[str], code: list[str], keywords: list[str], line: int) -> str:
+    """The whole text of the structure, class or inductive type whose keyword is on *line*, from its modifiers or
+    keyword: its lines while they are indented past the command's column or start a constructor's `|` or a `deriving`
+    clause, up to its last line of code, so the comments between its lines stay and those after it go. *code* is the
+    text's lines with comments blanked, *keywords* the same with attribute lists blanked too."""
+    column = len(source[line - 1]) - len(source[line - 1].lstrip(" "))
+    last = line - 1
+    for number in range(line, len(code)):
+        row = code[number].strip()
+        if not row:
+            continue
+        if len(code[number]) - len(code[number].lstrip()) <= column and not CONTINUES.match(row):
+            break
+        last = number
+    start = len(keywords[line - 1]) - len(keywords[line - 1].lstrip())
+    return leansource.dedent("\n".join([source[line - 1][start:], *source[line:last + 1]]).rstrip(), column)
+
+
 def read_module(text: str, path: str) -> dict | None:
     """A module's record: its title and module docstring, its section docstrings, and its declarations in file order
     with their docstrings and Lean statements, an instance with no name under the name ""; None when its scopes don't
@@ -63,7 +89,7 @@ def read_module(text: str, path: str) -> dict | None:
     the others are section docstrings. The reading is leansource's relaxed one, so a statement keeps the indentation
     its lines have in the file. A structure, class or inductive type keeps its whole text, its fields or
     constructors; a declaration whose statement has no `:=` or `where` keeps its header. `private` declarations are
-    counted, not kept."""
+    counted, not kept, and so are the `alias ⟨...⟩` commands leansource does not read."""
     found = leansource.declarations(text, relaxed=True)
     if found is None:
         return None
@@ -72,17 +98,22 @@ def read_module(text: str, path: str) -> dict | None:
     opening = docs[0] if docs and (first is None or docs[0][0] < first) else None
     title, doc = title_and_doc(opening[1]) if opening else ("", "")
     kept = [declaration for declaration in found if not declaration.private]
+    blanked = leansource.blank(text)
+    code = blanked.split("\n")
+    keywords = leansource.blank_attributes(blanked).split("\n")
+    source = text.split("\n")
     return {
         "file": path, "module": module_name(path), "title": title, "doc": doc,
         "sections": [{"line": line, "text": words} for line, words in (docs[1:] if opening else docs)],
         "declarations": [{"name": declaration.name, "kind": declaration.kind, "line": declaration.line,
                           "doc": declaration.doc,
-                          "statement": declaration_text(text, declaration.line) if declaration.kind in WHOLE
+                          "statement": whole(source, code, keywords, declaration.line) if declaration.kind in WHOLE
                           else declaration.statement if declaration.statement is not None
                           else header(text, declaration.line),
                           "sorry": declaration.proof_sorry if declaration.statement is not None else declaration.sorry}
                          for declaration in kept],
         "private": sum(declaration.private for declaration in found),
+        "aliases": len(ALIAS_PAIR.findall(blanked)),
     }
 
 
@@ -223,7 +254,9 @@ LEAN_NAMES = 8  # the names a card's Lean row shows
 PAGE_BUDGET = 250_000
 NO_DEPENDS = "Its declarations' statements use no declaration of another module with an article here."
 NO_DEPENDS_UNREAD = "No dependencies are recorded: they come from Lean's reading of the modules, which the data lack."
-PLANS = re.compile(r"\b(?:underway|under way|planned|plans? to|will be|in the future)\b", re.I)
+NO_RECORD = "The Lean dump has no record of this module, so its dependencies are unknown."
+SENTENCE_END = re.compile(r"(?<=[.!?])\s+")
+ABBREVIATION = re.compile(r"\b(?:e\.g|i\.e|cf|resp|vs)\.$")
 LIST_ITEM = re.compile(r"^[ \t]*[-*+][ \t]")
 FENCE = re.compile(r"^ {0,3}(?:`{3,}|~{3,})")
 CITATIONS = re.compile(r"((?:\s*\[(?:\d+|TODO)\])+)")
@@ -270,12 +303,44 @@ def without_plans(text: str) -> str:
     return " ".join(kept) + (" …" if len(kept) < len(clauses) else "")
 
 
+def sentences(paragraph: str) -> list[str]:
+    """A paragraph's sentences, each with the space after it, so that they join to the paragraph; a sentence does not
+    end at an abbreviation such as e.g."""
+    pieces, start = [], 0
+    for match in SENTENCE_END.finditer(paragraph):
+        if not ABBREVIATION.search(paragraph[start:match.start()]):
+            pieces.append(paragraph[start:match.end()])
+            start = match.end()
+    return pieces + ([paragraph[start:]] if start < len(paragraph) else [])
+
+
+def without_cut_sentences(paragraph: str) -> str:
+    """A paragraph without its sentences about plans, and without what follows the start of the sentence, or of the
+    clause after a semicolon, that mentions a TODO item, each cut marked with …."""
+    kept, marked = "", False
+    for sentence in sentences(paragraph):
+        todo = TODO.search(sentence)
+        clauses = [match.start() for match in re.finditer(r";\s", sentence[:todo.start()])] if todo else []
+        if clauses:
+            return kept + sentence[:clauses[-1] + 1] + " …"
+        if todo or PLANS.search(sentence):
+            if not marked:
+                kept, marked = kept + "… ", True
+            if todo:
+                break
+            continue
+        kept, marked = kept + sentence, False
+    return kept.strip()
+
+
 def without_todos(markdown: str) -> str:
-    """Quoted Markdown without what mentions a TODO item: each list item that does, or else the paragraph, the cut
-    marked with …. The map records what the library has, not what it plans."""
+    """Quoted Markdown without its TODO notes and its sentences about plans, each cut marked with …: a list item that
+    mentions a TODO item or plans goes whole, and in a paragraph a sentence about plans goes, and so does a sentence
+    that mentions a TODO item with the rest of its paragraph. The map records what the library has, not what it
+    plans."""
     out = []
     for block in re.split(r"\n[ \t]*\n", markdown.strip()):
-        if not TODO.search(block):
+        if not (TODO.search(block) or PLANS.search(block)):
             out.append(block)
             continue
         items: list[list[str]] = []
@@ -285,10 +350,11 @@ def without_todos(markdown: str) -> str:
             else:
                 items[-1].append(line)
         if len(items) > 1 and all(LIST_ITEM.match(item[0]) for item in items):
-            kept = [line for item in items if not TODO.search("\n".join(item)) for line in item]
+            kept = [line for item in items if not (TODO.search(text := "\n".join(item)) or PLANS.search(text))
+                    for line in item]
             out.append("\n".join(kept) + "\n\n…" if kept else "…")
         else:
-            out.append("…")
+            out.append(without_cut_sentences(block))
     return re.sub(r"…(?:\n\n…)+", "…", "\n\n".join(out)).strip()
 
 
@@ -326,8 +392,9 @@ def quoted_prose(markdown: str, here: str = "", source: dict | None = None, keys
 
 def doc_markdown(text: str, quoted=quoted_prose) -> list[str]:
     """A docstring as an article shows it: its headings as the article's, from `##` down, and its prose quoted. A
-    table of contents, which the article's own headings give, is left out, and so is a section headed by a TODO and
-    what else mentions a TODO item, each such cut marked with …."""
+    table of contents, which the article's own headings give, is left out, and so is a section headed by a TODO or by
+    plans (Future work, Roadmap), with the TODO notes and sentences about plans without_todos cuts, each such cut
+    marked with …."""
     parts: list[str] = []
     prose: list[str] = []
     skipping, fenced = 0, False
@@ -350,8 +417,9 @@ def doc_markdown(text: str, quoted=quoted_prose) -> list[str]:
         if skipping and level > skipping:
             continue
         flush()
-        skipping = level if "table of contents" in words.casefold() or TODO.search(words) else 0
-        if TODO.search(words):
+        planned = bool(TODO.search(words) or PLAN_HEADING.match(words))
+        skipping = level if "table of contents" in words.casefold() or planned else 0
+        if planned:
             parts.append("…")
         elif not skipping:
             parts.append("#" * min(max(level, 2), 6) + " " + comment(words))
@@ -385,6 +453,28 @@ def declaration_block(declaration: dict, module: dict, source: dict, listed: set
     return "\n\n".join(parts)
 
 
+def titles(modules: list[dict]) -> dict[str, str]:
+    """Each module's title, by file: its module docstring's, or else its module name. Modules that share a title are
+    told apart by the library when it differs, and else by the shortest end of the path no other of them has, as in
+    “Weights (PhyslibAlpha)” and “Position states (SpaceD/PositionStates)”."""
+    plain = {module["file"]: module["title"] or module["module"] for module in modules}
+    groups: dict[str, list[list[str]]] = defaultdict(list)
+    for file, title in plain.items():
+        groups[title].append(file.removesuffix(".lean").split("/"))
+    out = dict(plain)
+    for title, paths in groups.items():
+        if len(paths) < 2:
+            continue
+        for path in paths:
+            same = [other for other in paths if other is not path and other[0] == path[0]]
+            words = [path[0]] if len(same) < len(paths) - 1 else []
+            if same:
+                ends = next(size for size in range(1, len(path) + 1) if all(other[-size:] != path[-size:] for other in same))
+                words.append("/".join(path[-ends:]))
+            out["/".join(path) + ".lean"] = f"{title} ({', '.join(words)})"
+    return out
+
+
 def lean_names(module: dict, listed: set[str]) -> list[str]:
     """The names a card's Lean row shows: the significant results first, then the others in file order."""
     names = [declaration["name"] for declaration in module["declarations"] if declaration["name"]]
@@ -392,9 +482,9 @@ def lean_names(module: dict, listed: set[str]) -> list[str]:
 
 
 def article(module: dict, source: dict, listed: set[str], links: dict[str, str], slug: str,
-            keys: dict[str, str]) -> Leaf:
-    """A module's article: where it is, its module docstring, then its declarations in file order under its own
-    section headings."""
+            keys: dict[str, str], title: str) -> Leaf:
+    """A module's article, under *title*: where it is, its module docstring, then its declarations in file order
+    under its own section headings."""
     declarations = module["declarations"]
     anonymous = sum(not declaration["name"] for declaration in declarations)
     named = sum(declaration["name"] in listed for declaration in declarations)
@@ -425,7 +515,7 @@ def article(module: dict, source: dict, listed: set[str], links: dict[str, str],
     lines = {declaration["name"]: declaration["line"] for declaration in declarations}
     for name in names:
         links[name] = blob(source, module["file"], lines[name])
-    leaf = Leaf(comment(module["title"]) if module["title"] else escape(module["module"]), slug, fields,
+    leaf = Leaf(comment(title) if module["title"] else escape(title), slug, fields,
                 "\n\n".join(parts), no_depends=NO_DEPENDS)
     leaf.sources = [(f"{module['file']} at {source['rev'][:8]}", blob(source, module["file"]))]
     return leaf
@@ -561,6 +651,7 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
     for module in data["modules"]:
         kept = [declaration for declaration in module["declarations"] if declaration["name"] not in missing]
         stats["unresolved"] += len(module["declarations"]) - len(kept)
+        stats["aliases"] += module["aliases"]
         if kept:
             modules.append({**module, "declarations": kept})
         else:
@@ -592,12 +683,13 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
 
     articles: dict[str, Leaf] = {}
     keys = {module["file"]: f"physlib-{module['module']}" for module in modules}  # each article's key, by file
+    named = titles(modules)
     placed: dict[str, list[dict]] = defaultdict(list)  # the modules on each page, or directly in a library's part
     for module in sorted(modules, key=order):
         home = page_of(module["file"])
         placed[home].append(module)
         slug = slugify(module["file"][len(home) + 1:].removesuffix(".lean").replace("/", " "))
-        leaf = article(module, source, listed, links, slug, keys)
+        leaf = article(module, source, listed, links, slug, keys, named[module["file"]])
         articles[module["module"]] = leaf
         targets[keys[module["file"]]] = leaf
         library = module["file"].split("/")[0]
@@ -612,6 +704,10 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
     if deps:
         statement, proof = edges(deps, set(articles))
         for module, leaf in articles.items():
+            if module not in deps["modules"]:
+                leaf.no_depends = NO_RECORD
+                stats["unrecorded"] += 1
+                continue
             leaf.depends = [articles[target] for target in statement[module]]
             leaf.proof_depends = [articles[target] for target in proof[module]]
             stats["statement_edges"] += len(leaf.depends)
@@ -701,7 +797,9 @@ def intro(data: dict, stats: Counter) -> str:
             "declaration of the other, not which one. The same reading checks the names read from the source: a "
             "declaration whose name Lean does not have, such as one private to its module, is left out"
             + (f", {plural(stats['unresolved'], 'declaration')} at this commit." if stats["unresolved"] else
-               ", and none is at this commit."))
+               ", and none is at this commit.")
+            + (f" The dump has no record of {plural(stats['unrecorded'], 'module')}, whose dependencies are unknown."
+               if stats["unrecorded"] else ""))
     else:
         reading = "No dependencies are recorded here: they come from Lean's reading of the modules, which the data lack."
     unshown = stats["unshown"]
@@ -712,7 +810,7 @@ def intro(data: dict, stats: Counter) -> str:
         "downstream of it under a lighter review; and QuantumInfo, quantum information theory in a codebase of its "
         f"own. The README names the project's maintainers: {listing(readme['maintainers'])}.",
         f"- Repository: [{source['repo']}]({GITHUB}/{source['repo']}), read at commit {at(source)} "
-        f"({source['date'][:10]}), the newest commit of its `master` branch whose build passed.\n"
+        f"({source['date'][:10]}).\n"
         f"- Lean toolchain {source['toolchain']}, Mathlib "
         + (f"{source['mathlib_version']}, " if source.get("mathlib_version") else "")
         + f"[{source['mathlib'][:8]}]({MATHLIB_REPO}/tree/{source['mathlib']}).\n"
@@ -721,7 +819,8 @@ def intro(data: dict, stats: Counter) -> str:
         f"the map has an article per module with a declaration: {plural(stats['articles'], 'article')}, {sizes}. A part "
         f"per library has a page per area, per folder below it and per deeper folder with an API map, "
         f"{plural(stats['pages'], 'folder page')} in all; a module in another deeper folder is on the page of the "
-        "nearest folder above, under a line naming its folder.",
+        "nearest folder above, under a line naming its folder. An article takes its title from the module docstring, "
+        "or else the module's name, and where titles would repeat it adds its library or the end of its path.",
         f"An article quotes the module's docstring and its section docstrings, their headings shown as the article's "
         f"and a table of contents left out, and shows each declaration in file order: its name, kind and line, its "
         f"docstring and its Lean statement (the text up to the `:=` or `where` that starts its value, or the whole text "
@@ -738,13 +837,16 @@ def intro(data: dict, stats: Counter) -> str:
            "`sorry`; each block says so."),
         "The API maps, the repository's own accounts of an area with citations of the declarations that formalize it, "
         "are quoted on the pages of their folders, without the sentences they mark as not yet formalized. Informal "
-        "results (`informal_lemma`, `informal_definition`, `semiformal_result`) and TODO items are not mapped, and the "
-        "parts of a docstring that mention a TODO item are left out, each cut marked with …: the map records what the "
-        "library has, not what it plans."
+        "results (`informal_lemma`, `informal_definition`, `semiformal_result`) and TODO items are not mapped, and a "
+        "docstring is quoted without its TODO notes, its sections on future work and its sentences about plans or "
+        "inviting work, each cut marked with …: the map records what the library has, not what it plans."
         + (f" {plural(unshown, 'module')} {'holds' if unshown == 1 else 'hold'} nothing else, only such text or "
            f"private declarations, and {'has' if unshown == 1 else 'have'} no article." if unshown else ""),
         "The text is read from the source without Lean, by the reading trough uses for other libraries: a "
         "declaration's name is read under the namespaces it sits in, and its line is the line its keyword is on. "
+        + (f"It does not read an `alias ⟨mp, mpr⟩ := …` command, which names the two directions of an equivalence: "
+           f"{plural(stats['aliases'], 'such command')} {'is' if stats['aliases'] == 1 else 'are'} not shown. "
+           if stats["aliases"] else "")
         + reading,
         credit(source),
     ] if part)

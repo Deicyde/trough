@@ -507,10 +507,12 @@ names it after it, and every Physlib and PhyslibAlpha module carries a module
 docstring, so the chapter has an article per module with a declaration, in a
 part per library, on a page per area, per folder below it and per deeper folder
 with an API map; a module in another deeper folder is on the page of the nearest
-folder above, under a line naming its folder. An article quotes the module's
-docstring and section docstrings, their headings shown as the article's and the
-table of contents left out, and shows each declaration in file order: its name,
-kind and line, its docstring and its Lean statement. An instance with no name is
+folder above, under a line naming its folder. An article is titled by its
+module docstring, or else by its module's name, with its library or the end of
+its path added where titles would repeat. It quotes the module's docstring and
+section docstrings, their headings shown as the article's and the table of
+contents left out, and shows each declaration in file order: its name, kind and
+line, its docstring and its Lean statement. An instance with no name is
 shown without one; `private` declarations are counted, not shown. The
 repository keeps the keyword `theorem` for what
 `scripts/lint/exemptions/Theorems.txt` lists as significant results, and their
@@ -519,24 +521,27 @@ account of an area with numbered citations of the declarations that formalize
 it, is quoted on its folder's page without the sentences it marks `[TODO]`, and
 each citation links the article of the module it names. Informal results
 (`informal_lemma`, `informal_definition`, `semiformal_result`) and TODO items
-are not mapped, and the parts of a docstring that mention a TODO item are left
-out, each cut marked with …. An article depends on the modules whose
+are not mapped, and a docstring is quoted without its TODO notes, its sections
+on future work and its sentences about plans or inviting work, each cut marked
+with …. An article depends on the modules whose
 declarations its statements use, and its proof on those that only its proofs
 use, each without what another of them reaches.
 
 1. `tools/refresh_physlib.py CHECKOUT` reads a checkout and writes
    `data/physlib/`: `source.json`, the commit, its date, toolchain and Mathlib,
-   the README's words on the project and its maintainers, the names
-   Theorems.txt lists and the counts; `api-maps.json`, each API map's title,
-   content and references; and `modules/<library>.<area>.json`, each module's
-   title, module docstring, section docstrings and declarations.
-   `tools/trough/leansource.py` reads each file as it does for the Stacks
-   chapter, so a statement keeps the indentation its lines have in the file; a
-   structure, class or inductive type shows its whole text, its fields or
-   constructors. A module docstring is the first `/-!` comment when it comes
-   before the first declaration, and the later ones are section docstrings. A
-   link in a docstring to one of the repository's files points at that module's
-   article, or else at the file at the pin.
+   the README's words on the project and its maintainers, the names Theorems.txt
+   lists and the counts; `api-maps.json`, each API map's title, content and
+   references; and `modules/<library>.<area>.json`, each module's title, module
+   docstring, section docstrings and declarations. `tools/trough/leansource.py`
+   reads each file as it does for the Stacks chapter, so a statement keeps the
+   indentation its lines have in the file; a structure, class or inductive type
+   shows its whole text, its fields or constructors. It does not read `alias
+   ⟨mp, mpr⟩ := …`, which names the two directions of an equivalence; the record
+   counts those commands, and the front page says how many are not shown. A
+   module docstring is the first `/-!` comment when it comes before the first
+   declaration, and the later ones are section docstrings. A link in a docstring
+   to one of the repository's files points at that module's article, or else at
+   the file at the pin.
 2. Physlib publishes a build cache for each commit of its `master` branch whose
    build passes, so Lean runs for this chapter. After the refresh, the **Physlib
    data** workflow (`.github/workflows/physlib-data.yml`) fetches that cache

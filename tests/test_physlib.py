@@ -150,6 +150,8 @@ namespace ClassicalMechanics
 /-- The configuration space. -/
 abbrev ConfigurationSpace : Type := ℝ
 
+alias ⟨configuration_mp, configuration_mpr⟩ := Iff.rfl
+
 end ClassicalMechanics
 """
 
@@ -382,6 +384,10 @@ def test_a_module_keeps_its_docstrings_and_its_declarations_in_file_order():
     assert theorem["doc"] == "Energy is conserved.\n\nTODO: extend this to the damped oscillator."
     # The private lemma is counted, not kept.
     assert record["private"] == 1
+    # An `alias ⟨mp, mpr⟩` is not read, only counted.
+    geometric = physlib.read_module(GEOMETRIC, "Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean")
+    assert record["aliases"] == 0 and geometric["aliases"] == 1
+    assert [item["name"] for item in geometric["declarations"]] == ["ClassicalMechanics.ConfigurationSpace"]
     assert physlib.read_module("namespace A\nend B\n", "Physlib/X.lean") is None
 
 
@@ -407,6 +413,121 @@ def test_what_mentions_a_todo_is_cut_and_marked():
     assert physlib.without_todos("Keep this.\n\n- one\n- TODO two\n- three\n\nTODO para\n\nTODO again\n\nEnd.") == (
         "Keep this.\n\n- one\n- three\n\n…\n\nEnd.")
     assert physlib.without_todos("TODO: everything.") == "…"
+    # From PhyslibAlpha/QuantumMechanics/Hydrogen/Eigenfunctions.lean: TODOs count as a TODO.
+    assert physlib.without_todos("The spectral statements are the TODOs of `Hydrogen.Basic`.") == "…"
+    # A TODO cuts its sentence and the rest of its paragraph, and keeps the sentences before it
+    # (Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean).
+    assert physlib.without_todos(
+        "The period is defined here, and the\n`TODO` after the definition lists the milestones. The rest follows.\n\n"
+        "Next paragraph.") == "…\n\nNext paragraph."
+    assert physlib.without_todos("Substitution of a term.\nTODO: substitution of a context. More.") == (
+        "Substitution of a term.\n…")
+    # After a semicolon, the cut starts at the clause (PhyslibAlpha/QuantumMechanics/Hydrogen/Eigenfunctions.lean).
+    assert physlib.without_todos(
+        "It holds away from the nucleus. It does not say that these are all eigenfunctions;\nthe spectral statements "
+        "are the TODOs of `Hydrogen.Basic`.") == (
+        "It holds away from the nucleus. It does not say that these are all eigenfunctions; …")
+    # A sentence does not end at e.g.
+    assert physlib.without_todos("Kept. See e.g. the TODO below.") == "Kept. …"
+
+
+def test_sentences_about_plans_go_and_what_bounds_the_library_stays():
+    # Physlib/Mathematics/ForMathlib/Trigonometry/SinSq.lean and Physlib/Optics/Polarization/Basic.lean.
+    assert physlib.without_todos(
+        "This file may eventually be upstreamed to Mathlib.\n\nThis file records the strict bound. It is used for "
+        "the pendulum.") == "…\n\nThis file records the strict bound. It is used for the pendulum."
+    assert physlib.without_todos(
+        "The material moved to `HarmonicWave`.\nThis file is kept because there is still some material to be added "
+        "here in the future. Contributions would be welcome.") == "The material moved to `HarmonicWave`.\n…"
+    assert physlib.without_todos("- `a` : one.\n- `b` : planned for later.\n- `c` : three.") == (
+        "- `a` : one.\n- `c` : three.\n\n…")
+    # What says what the library does not have, or uses words of time, stays.
+    for kept in ["Support in the future of one compact set is included in the full past-compact class.",
+                 "The time of a solution of the nonlinear equation of motion is not yet formalized.",
+                 "We state the constraints and leave the proof and derivation of these constraints to future work.",
+                 "This file is a temporary copy of results intended for Mathlib.",
+                 "Gauge fields live here, upstream of `MatterField`."]:
+        assert physlib.without_todos(kept) == kept
+    # A section on future work goes, under a numbered heading too (Physlib/ClassicalMechanics/Basic.lean); a section
+    # on limitations stays.
+    assert physlib.doc_markdown("## A.3. Future work\n\nShared declarations should be added here.\n\n"
+                                "## A.4. Limitations\n\nOnly finite systems.") == [
+        "…", "## A.4. Limitations", "> Only finite systems."]
+    assert physlib.doc_markdown("## Roadmap\n\nNext.\n\n### Later\n\nMore.\n\n## Done\n\nDone.") == [
+        "…", "## Done", "> Done."]
+
+
+def test_a_structure_class_or_inductive_type_keeps_its_whole_command_and_no_more():
+    text = """namespace A
+
+/-- Colors. -/
+inductive Color
+| red
+| green
+deriving DecidableEq, Repr
+
+/-- Red is not green. -/
+@[simp] theorem red_ne_green : Color.red ≠ Color.green := by
+  decide
+
+class HasStar (α : Type) where
+  star : α → α
+  -- a comment between fields
+  twice : α → α
+@[inherit_doc] scoped infixr:70 " ⋆ " => HasStar.star
+
+@[ext] structure P where
+  x : ℕ
+  y : ℕ
+  -- the next declaration's comment
+
+/-- The origin. -/
+def origin : P := ⟨0, 0⟩
+
+  structure Indented where
+    z : ℕ
+  /-- After it. -/
+  @[simp] theorem indented : True := trivial
+
+deriving instance Repr for P
+
+end A
+"""
+    record = physlib.read_module(text, "Physlib/A.lean")
+    statements = {item["name"]: item["statement"] for item in record["declarations"]}
+    assert statements["A.Color"] == "inductive Color\n| red\n| green\nderiving DecidableEq, Repr"
+    assert statements["A.HasStar"] == (
+        "class HasStar (α : Type) where\n  star : α → α\n  -- a comment between fields\n  twice : α → α")
+    # The statement starts at the keyword, as others do, and the fields keep their indentation.
+    assert statements["A.P"] == "structure P where\n  x : ℕ\n  y : ℕ"
+    assert statements["A.Indented"] == "structure Indented where\n  z : ℕ"
+    assert statements["A.red_ne_green"] == "theorem red_ne_green : Color.red ≠ Color.green"
+
+
+def test_a_statement_keeps_its_indentation_when_an_attribute_shares_its_keyword_line():
+    text = "namespace A\n\n@[simp] theorem long (x : ℕ)\n    (h : x = x) :\n    x + 0 = x := by\n  simp\n\nend A\n"
+    record = physlib.read_module(text, "Physlib/A.lean")
+    assert record["declarations"][0]["statement"] == "theorem long (x : ℕ)\n    (h : x = x) :\n    x + 0 = x"
+
+
+def test_modules_that_share_a_title_are_told_apart():
+    def module(file: str, title: str) -> dict:
+        return {"file": file, "module": file.removesuffix(".lean").replace("/", "."), "title": title}
+
+    modules = [module("Physlib/ProbabilisticTheory/Weight/Basic.lean", "Weights"),
+               module("PhyslibAlpha/ProbabilisticTheory/Weight/Basic.lean", "Weights"),
+               module("Physlib/QuantumMechanics/OneDimension/PositionStates.lean", "Position states"),
+               module("Physlib/QuantumMechanics/SpaceD/PositionStates.lean", "Position states"),
+               module("Physlib/Electromagnetism/Distributional/Basic.lean", "The potential"),
+               module("Physlib/Electromagnetism/TemperedDistributional/Basic.lean", "The potential"),
+               module("PhyslibAlpha/Electromagnetism/Potential.lean", "The potential"),
+               module("Physlib/Optics/Basic.lean", ""),
+               module("Physlib/Optics/Lens.lean", "Lenses")]
+    assert list(physlib.titles(modules).values()) == [
+        "Weights (Physlib)", "Weights (PhyslibAlpha)",
+        "Position states (OneDimension/PositionStates)", "Position states (SpaceD/PositionStates)",
+        "The potential (Physlib, Distributional/Basic)", "The potential (Physlib, TemperedDistributional/Basic)",
+        "The potential (PhyslibAlpha)", "Physlib.Optics.Basic", "Lenses"]
 
 
 def test_an_api_map_reads_its_content_and_its_references():
@@ -654,6 +775,16 @@ def test_edges_come_from_lean_and_without_it_there_are_none(tmp_path):
     assert "No dependencies are recorded here" in bare.root.prose
 
 
+def test_a_module_the_dump_has_no_record_of_is_said_to_have_unknown_dependencies(tmp_path):
+    partial = {**DEPS, "modules": {module: uses for module, uses in DEPS["modules"].items()
+                                   if module != "Physlib.SpaceAndTime.Time.Deep.Units"}}
+    result, links, pages = built(tmp_path, partial)
+    leaf = result.targets["physlib-Physlib.SpaceAndTime.Time.Deep.Units"]
+    assert leaf.depends == [] and leaf.no_depends == physlib.NO_RECORD
+    assert result.stats["unrecorded"] == 1 and "The dump has no record of 1 module" in result.root.prose
+    assert "The dump has no record" not in built(tmp_path / "full")[0].root.prose
+
+
 def test_a_dump_of_another_commit_is_refused(tmp_path):
     loaded = data(tmp_path, DEPS)
     loaded["deps"]["rev"] = "c" * 40
@@ -672,6 +803,9 @@ def test_the_front_page_quotes_the_repository_and_says_how_the_map_is_read(tmp_p
     assert "1 module holds nothing else" in front
     assert "Lean toolchain v4.35.0, Mathlib v4.35.0, [bbbbbbbb]" in front
     assert "—" not in front
+    # The pin is named, not described as the newest of anything: that stops being true.
+    assert "newest" not in front and f"read at commit [{REV[:8]}]" in front
+    assert "names the two directions of an equivalence: 1 such command is not shown." in front
 
 
 def test_the_committed_data_build_the_chapter():
@@ -683,4 +817,5 @@ def test_the_committed_data_build_the_chapter():
     assert len(leaves) == result.stats["articles"] > 1000
     assert set(links) >= {name for leaf in leaves for name in dict(leaf.fields).get("lean", "").split(", ") if name}
     assert all(dict(leaf.fields)["declaration"] == "module" for leaf in leaves)
+    assert len({leaf.title for leaf in leaves}) == len(leaves)
     assert all(len(node.children) <= 20 for node in walk(result.root) if isinstance(node, Container))
